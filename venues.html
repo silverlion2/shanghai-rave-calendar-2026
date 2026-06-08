@@ -1,0 +1,921 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shanghai Techno Venues & Crews 2026</title>
+  <meta name="description" content="Guide to notable Shanghai techno venues, clubs, organizers, and crews behind the 2026 rave calendar, with source links and vibe filters.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#c6ff3b">
+  <link rel="canonical" href="https://shanghai-rave-calendar-2026.vercel.app/venues">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shanghai Rave Calendar">
+  <meta property="og:title" content="Shanghai Techno Venues & Crews 2026">
+  <meta property="og:description" content="A sourced guide to the Shanghai clubs, venues, and crews behind the 2026 techno and rave calendar.">
+  <meta property="og:url" content="https://shanghai-rave-calendar-2026.vercel.app/venues">
+  <meta property="og:image" content="https://shanghai-rave-calendar-2026.vercel.app/og-image.png">
+  <meta property="og:image:alt" content="Preview of the Shanghai rave calendar">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Shanghai Techno Venues & Crews 2026",
+    "url": "https://shanghai-rave-calendar-2026.vercel.app/venues",
+    "description": "Sourced guide to notable Shanghai electronic music venues, clubs, organizers, and crews appearing in the 2026 rave calendar.",
+    "inLanguage": "en",
+    "isAccessibleForFree": true
+  }
+  </script>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f2f0e8;
+      --muted: #aaa59a;
+      --dim: #7c776d;
+      --void: #080806;
+      --panel: #11110e;
+      --line: #302f28;
+      --acid: #c6ff3b;
+      --ember: #ff6a2a;
+      --cyan: #41d7ff;
+      --rose: #ff4f8b;
+      --gold: #ffd166;
+      --radius: 8px;
+      --shadow: 0 24px 80px rgba(0, 0, 0, .42);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px) 0 0 / 36px 36px,
+        linear-gradient(0deg, rgba(255,255,255,.018) 1px, transparent 1px) 0 0 / 36px 36px,
+        radial-gradient(circle at 50% -10%, rgba(255,106,42,.18), transparent 38%),
+        #080806;
+      color: var(--ink);
+      font-family: "Aptos", "Segoe UI", sans-serif;
+      letter-spacing: 0;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      opacity: .42;
+      background-image:
+        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+        repeating-linear-gradient(90deg, transparent 0 17px, rgba(198,255,59,.045) 18px, transparent 19px);
+      background-size: 100% 5px, 100% 100%;
+      mix-blend-mode: screen;
+    }
+
+    a { color: inherit; }
+    button, input, select { font: inherit; }
+
+    .shell {
+      width: min(1480px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 24px 0 56px;
+    }
+
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 18px;
+      color: var(--muted);
+    }
+
+    .nav-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .nav-link,
+    .tag {
+      display: inline-flex;
+      min-height: 34px;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--line);
+      background: rgba(17,17,14,.84);
+      padding: 7px 11px;
+      border-radius: 999px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--void);
+      background: var(--acid);
+      border-color: var(--acid);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 360px;
+      gap: 22px;
+      align-items: start;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 24px;
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--acid);
+      font-size: 13px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .kicker::before {
+      content: "";
+      width: 34px;
+      height: 2px;
+      background: var(--acid);
+      box-shadow: 0 0 18px rgba(198,255,59,.7);
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: 58px;
+      line-height: .96;
+      letter-spacing: 0;
+      max-width: 920px;
+    }
+
+    .subhead {
+      max-width: 780px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.5;
+    }
+
+    .hero-panel {
+      min-height: 320px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: var(--radius);
+      background:
+        linear-gradient(135deg, rgba(198,255,59,.82), rgba(255,106,42,.68) 42%, rgba(65,215,255,.55)),
+        #17140f;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+      padding: 18px;
+      display: grid;
+      align-content: end;
+    }
+
+    .hero-panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        repeating-linear-gradient(-16deg, transparent 0 19px, rgba(8,8,6,.28) 20px, transparent 21px),
+        radial-gradient(circle at 70% 20%, rgba(8,8,6,.44), transparent 38%);
+    }
+
+    .hero-panel b,
+    .hero-panel span {
+      position: relative;
+      z-index: 1;
+      display: block;
+    }
+
+    .hero-panel b {
+      color: var(--void);
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: 46px;
+      line-height: .96;
+    }
+
+    .hero-panel span {
+      margin-top: 10px;
+      color: var(--void);
+      font-weight: 900;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin: 22px 0;
+    }
+
+    .stat {
+      min-height: 92px;
+      border: 1px solid var(--line);
+      background: rgba(17,17,14,.76);
+      border-radius: var(--radius);
+      padding: 14px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stat::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--acid), var(--ember), var(--cyan));
+    }
+
+    .stat b {
+      display: block;
+      font-size: 28px;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: minmax(240px, 1fr) minmax(160px, 220px);
+      gap: 10px;
+      margin: 18px 0 14px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(8,8,6,.72);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(14px);
+    }
+
+    .search,
+    .select {
+      width: 100%;
+      min-height: 44px;
+      border: 1px solid var(--line);
+      color: var(--ink);
+      background: #151510;
+      border-radius: 6px;
+      padding: 0 12px;
+      outline: none;
+    }
+
+    .search:focus,
+    .select:focus {
+      border-color: var(--acid);
+      box-shadow: 0 0 0 3px rgba(198,255,59,.14);
+    }
+
+    .section-heading {
+      margin: 28px 0 12px;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 16px;
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: 32px;
+      letter-spacing: 0;
+    }
+
+    .section-heading p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      max-width: 700px;
+      line-height: 1.45;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .card {
+      min-height: 420px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(17,17,14,.9);
+      overflow: hidden;
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr);
+    }
+
+    .card-visual {
+      min-height: 136px;
+      padding: 14px;
+      background:
+        linear-gradient(135deg, var(--accent), rgba(255,255,255,.04) 48%, rgba(8,8,6,.86)),
+        repeating-linear-gradient(90deg, transparent 0 17px, rgba(255,255,255,.12) 18px, transparent 19px);
+      border-bottom: 1px solid rgba(255,255,255,.12);
+      display: grid;
+      align-content: space-between;
+      gap: 20px;
+    }
+
+    .card-visual strong {
+      color: var(--void);
+      font-size: 13px;
+      font-weight: 900;
+      background: var(--ink);
+      border-radius: 999px;
+      padding: 5px 8px;
+      width: max-content;
+      max-width: 100%;
+    }
+
+    .card-visual span {
+      color: var(--void);
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: 36px;
+      font-weight: 800;
+      line-height: .98;
+      text-shadow: 0 1px 0 rgba(255,255,255,.24);
+    }
+
+    .card-body {
+      padding: 14px;
+      display: grid;
+      gap: 10px;
+      align-content: start;
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 22px;
+      line-height: 1.14;
+    }
+
+    .meta {
+      color: var(--cyan);
+      font-weight: 800;
+      line-height: 1.35;
+    }
+
+    .copy {
+      color: var(--muted);
+      line-height: 1.45;
+      margin: 0;
+    }
+
+    .why {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 6px;
+    }
+
+    .why li {
+      color: var(--muted);
+      line-height: 1.35;
+      border-left: 2px solid var(--accent);
+      padding-left: 9px;
+      font-size: 14px;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 2px;
+    }
+
+    .chip {
+      border: 1px solid rgba(255,255,255,.12);
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 5px 8px;
+      font-size: 12px;
+      background: rgba(255,255,255,.035);
+    }
+
+    .source-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .source-link {
+      min-height: 34px;
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 7px 9px;
+      text-decoration: none;
+      color: var(--ink);
+      background: rgba(255,255,255,.03);
+      font-size: 13px;
+    }
+
+    .source-link:hover {
+      border-color: var(--acid);
+      color: var(--acid);
+    }
+
+    .matrix {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .matrix-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(17,17,14,.72);
+      padding: 13px;
+    }
+
+    .matrix-card b {
+      display: block;
+      color: var(--acid);
+      margin-bottom: 7px;
+    }
+
+    .matrix-card span {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.38;
+    }
+
+    .footnotes {
+      margin-top: 38px;
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+      color: var(--dim);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .hidden { display: none !important; }
+
+    @media (max-width: 1180px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-panel { min-height: 240px; }
+      .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .matrix { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 860px) {
+      .shell {
+        width: calc(100vw - 44px);
+        max-width: calc(100vw - 44px);
+        overflow: hidden;
+      }
+      h1 { font-size: 34px; overflow-wrap: break-word; }
+      .subhead { font-size: 16px; }
+      .stats,
+      .cards,
+      .matrix,
+      .controls {
+        grid-template-columns: 1fr;
+      }
+      .controls { position: static; }
+      .section-heading { display: block; }
+      .hero-panel b { font-size: 34px; }
+    }
+
+    @media (max-width: 480px) {
+      .shell,
+      .hero,
+      .subhead,
+      .site-nav,
+      .controls,
+      .section-heading {
+        width: min(320px, calc(100vw - 44px));
+        max-width: min(320px, calc(100vw - 44px));
+      }
+      h1 {
+        font-size: 31px;
+      }
+      .hero-panel {
+        max-width: min(320px, calc(100vw - 44px));
+        min-height: 240px;
+      }
+      .hero-panel b {
+        font-size: 31px;
+      }
+      .hero-panel span {
+        font-size: 14px;
+      }
+      .section-heading h2 {
+        font-size: 28px;
+      }
+      .card-visual span {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <nav class="site-nav" aria-label="Site navigation">
+      <div class="nav-group">
+        <a class="nav-link" href="index.html">Calendar</a>
+        <a class="nav-link active" href="venues.html">Venues & crews</a>
+      </div>
+      <div class="nav-group">
+        <span class="tag">Verified as of June 8, 2026</span>
+        <span class="tag">Source-linked</span>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div>
+        <div class="kicker">Shanghai electronic music field guide</div>
+        <h1>Venues, clubs, crews, and promoters</h1>
+        <p class="subhead">A practical guide to the rooms and organizations behind the 2026 calendar. The page is not a complete directory: it prioritizes places and crews that appeared in sourced 2026 listings or credible current venue coverage.</p>
+      </div>
+      <aside class="hero-panel" aria-label="Venue guide summary">
+        <b>Pick the room before the night.</b>
+        <span>Hard techno, basement machine music, rooftops, warehouse pop-ups, and community-led club culture all sit in different Shanghai spaces.</span>
+      </aside>
+    </header>
+
+    <section class="stats" aria-label="Venue guide statistics">
+      <div class="stat"><b>10</b><span>venue and location cards</span></div>
+      <div class="stat"><b>6</b><span>organizer and crew cards</span></div>
+      <div class="stat"><b>4</b><span>strong date-night starting points</span></div>
+      <div class="stat"><b>1</b><span>rule: verify WeChat or ticket links before going</span></div>
+    </section>
+
+    <section class="controls" aria-label="Venue filters">
+      <input class="search" id="searchInput" type="search" placeholder="Search venue, crew, district, sound, note">
+      <select class="select" id="vibeFilter" aria-label="Vibe filter">
+        <option value="all">All vibes</option>
+        <option value="hard">Hard techno</option>
+        <option value="underground">Underground</option>
+        <option value="date">Date-friendly</option>
+        <option value="bass">Bass / club</option>
+        <option value="warehouse">Warehouse</option>
+        <option value="experimental">Experimental</option>
+      </select>
+    </section>
+
+    <section>
+      <div class="section-heading">
+        <div>
+          <h2>Notable Venues & Clubs</h2>
+          <p>Start here when choosing a night. The same DJ can feel very different depending on the room, crowd, door policy, and after-midnight transport plan.</p>
+        </div>
+      </div>
+      <div class="cards" id="venueCards"></div>
+    </section>
+
+    <section>
+      <div class="section-heading">
+        <div>
+          <h2>Organizations & Crews</h2>
+          <p>Shanghai’s rave ecosystem is also shaped by mobile crews, promoters, labels, and recurring party concepts. These are useful search terms when calendars look empty.</p>
+        </div>
+      </div>
+      <div class="cards" id="crewCards"></div>
+    </section>
+
+    <section>
+      <div class="section-heading">
+        <div>
+          <h2>How To Choose</h2>
+          <p>Fast shortcut for date planning when you do not want to read every listing.</p>
+        </div>
+      </div>
+      <div class="matrix">
+        <div class="matrix-card"><b>Hardest room</b><span>Abyss first. It is the clearest current hard-techno signal in the calendar.</span></div>
+        <div class="matrix-card"><b>Deep basement</b><span>EXIT when the bill says Detroit, EBM, electro, industrial, or VACUUM/VOID.</span></div>
+        <div class="matrix-card"><b>Most date-friendly</b><span>Bund rooftops, Sukhothai/Edition hotel nights, or a day-to-night warehouse event before going heavier.</span></div>
+        <div class="matrix-card"><b>Late-year research</b><span>Watch RA, SmartShanghai, venue WeChat accounts, and promoter posts. Shanghai lineups often appear close to the date.</span></div>
+      </div>
+    </section>
+
+    <footer class="footnotes">
+      Source notes: venue status and descriptions can change quickly. This guide uses current source links and the same June 8, 2026 verification basis as the calendar. For app-only WeChat listings, treat the page as a planning guide and verify final details directly with the venue or ticketing channel.
+    </footer>
+  </main>
+
+  <script>
+    const venues = [
+      {
+        name: "Abyss Club",
+        type: "Club",
+        district: "Huangpu / TX Huaihai",
+        vibe: ["hard", "underground"],
+        accent: "#c6ff3b",
+        short: "The clearest hard-techno anchor in the 2026 calendar.",
+        intro: "Best for high-BPM techno, hard groove, hard electro, industrial moods, and late weekend pressure. SmartShanghai's current venue page places Abyss at TX Huaihai and frames it as a heavy electronic music home base rather than a bottle-service club.",
+        bestFor: ["Hard techno date if she wants intensity", "International hard-techno bookings", "Late night after a softer rooftop opener"],
+        sources: [
+          ["SmartShanghai venue", "https://www.smartshanghai.com/venue/22902/map"],
+          ["Santa K x TURBO", "https://ra.co/events/2458037"],
+          ["Caroline Roxy", "https://ra.co/events/2458079"]
+        ]
+      },
+      {
+        name: "POTENT",
+        type: "Club",
+        district: "Huangpu / TX Huaihai",
+        vibe: ["underground", "date"],
+        accent: "#41d7ff",
+        short: "Two-room TX Huaihai club with techno, house, electro, and stronger sound than its mall setting suggests.",
+        intro: "POTENT is useful when you want serious club music without going straight to the harshest room. Its 2026 listings include anniversary programming, international techno/house bookings, and late 23:59-06:00 nights.",
+        bestFor: ["Rolling techno and house", "A stylish but still club-focused date", "Checking late-night lineups at TX Huaihai"],
+        sources: [
+          ["POTENT 5-Year Anniversary", "https://ra.co/events/2388890"],
+          ["Milo Raad + Cosmjn", "https://ra.co/events/2461478"],
+          ["Time Out venue note", "https://www.timeoutshanghai.com/venue/Nightlife-Clubs/89047/POTENT.html"]
+        ]
+      },
+      {
+        name: "EXIT",
+        type: "Basement club",
+        district: "Changning / Jing'an edge",
+        vibe: ["underground", "experimental"],
+        accent: "#ff6a2a",
+        short: "Basement room for Detroit techno, electro, EBM, machine funk, and local underground crews.",
+        intro: "EXIT shows up repeatedly in the calendar for VOID/VACUUM, Synth Crush, Detroit-focused nights, and underground festival programming. It is the best page entry when she likes darker, weirder machine music rather than straightforward commercial clubbing.",
+        bestFor: ["Detroit techno and electro nights", "Local-scene credibility", "EBM, industrial, IDM, and basement energy"],
+        sources: [
+          ["Techno-logical World", "https://www.smartshanghai.com/event/techno-logical-world-detroit-techno-2026-03-13"],
+          ["Techno Worlds x VACUUM", "https://ra.co/events/2448375"],
+          ["Synth Crush", "https://ra.co/events/2458269"]
+        ]
+      },
+      {
+        name: "Heim / Heim Sauna",
+        type: "Community club",
+        district: "Former French Concession area",
+        vibe: ["underground", "date", "bass"],
+        accent: "#ff4f8b",
+        short: "Community-led electronic refuge: less brute-force, more social and exploratory.",
+        intro: "Heim is useful when the brief is electronic music with more community feeling than pure punishment. SmartShanghai's June guide says Heim was back near its original Changle Lu / Shaanxi Nan Lu area at Green Station, and the calendar includes Heim/Heim Sauna and Heim x ALTER. leads.",
+        bestFor: ["Approachable underground dates", "House, bass, and club hybrids", "Checking promoter collaborations"],
+        sources: [
+          ["SmartShanghai June guide", "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026"],
+          ["Heim x ALTER.", "https://www.smartshanghai.com/event/heim-x-alter-up-2-u-warehouse-party-techno-house-2026-05-23"],
+          ["Mixmag Heim background", "https://mixmag.asia/read/heim-shanghai-new-electronic-club-local"]
+        ]
+      },
+      {
+        name: "Reactor Shanghai",
+        type: "Club / multi-room",
+        district: "Changning",
+        vibe: ["bass", "experimental", "underground"],
+        accent: "#ffd166",
+        short: "Good for two-room rave formats, bass, hybrid club music, and forward electronic bookings.",
+        intro: "Reactor appears in 2026 through RUI HO, HOTL4B Reloaded, and House of Visions programming. It is a stronger pick when the listing mentions multiple rooms, bass, or hybrid club sounds.",
+        bestFor: ["Bass and techno crossovers", "Two-room nights", "Forward club music beyond four-four"],
+        sources: [
+          ["RUI HO", "https://ra.co/events/2425673"],
+          ["HOTL4B Reloaded", "https://ra.co/events/2447943"],
+          ["Noizar & Soyo", "https://ra.co/events/2417152"]
+        ]
+      },
+      {
+        name: "Dirty House / INS",
+        type: "Club inside INS Land",
+        district: "Huangpu",
+        vibe: ["bass", "underground"],
+        accent: "#41d7ff",
+        short: "More chaotic club impact: bass, techno tags, UKG, dubstep, baile funk, and INS energy.",
+        intro: "Dirty House is useful when she wants a heavier club night without demanding pure techno. The KOLLIN listing carries techno and bass tags, while INS Land is a wider entertainment complex, so check the exact room and party before going.",
+        bestFor: ["Bass-forward nights", "Younger club energy", "INS complex hopping"],
+        sources: [
+          ["KOLLIN at Dirty House", "https://ra.co/events/2460995"],
+          ["INS Land overview", "https://en.wikipedia.org/wiki/INS_Land"],
+          ["SmartShanghai June guide", "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026"]
+        ]
+      },
+      {
+        name: "ILLUM",
+        type: "Club",
+        district: "Changning",
+        vibe: ["bass", "experimental"],
+        accent: "#ff4f8b",
+        short: "KNOT-style hyperpop, trance, hard dance, club color, and less traditional techno.",
+        intro: "ILLUM appears as the home for KNOT's high-energy party lane in the 2026 watchlist. Treat it as a strong option when the night says hyperpop, trance, hard dance, or colorful club-rave rather than straight techno.",
+        bestFor: ["Hyperpop and hard dance", "Colorful high-BPM nights", "A less serious but high-energy date"],
+        sources: [
+          ["KNOT: Truth and Lies lead", "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026"],
+          ["CAM GIRL at ILLUM", "https://ra.co/events/2422723"]
+        ]
+      },
+      {
+        name: "Wigwam",
+        type: "Bar / club room",
+        district: "Changning",
+        vibe: ["underground", "experimental", "date"],
+        accent: "#c6ff3b",
+        short: "Smaller, looser option for deep, ambient, and underground electronic sessions.",
+        intro: "Wigwam is not the hard-rave pick; it is the useful lower-friction room when the listing leans ambient, deep techno, or free-entry underground music.",
+        bestFor: ["Lower-pressure dates", "Ambient and deep techno", "Testing the scene without committing to a big club night"],
+        sources: [
+          ["TOMO at Wigwam", "https://ra.co/events/2455848"],
+          ["RA Shanghai calendar", "https://ra.co/events/cn/shanghai"]
+        ]
+      },
+      {
+        name: "EKA Tianwu",
+        type: "Warehouse / event site",
+        district: "Pudong / Jinqiao",
+        vibe: ["warehouse", "date", "underground"],
+        accent: "#ffd166",
+        short: "Day-to-night warehouse and rooftop potential for larger, more social electronic events.",
+        intro: "The Heim x ALTER. Up 2 U listing makes EKA Tianwu one of the best examples of a date-friendly warehouse approach: multiple stages, rooftop daylight, food, drinks, and a wide house/techno/bass lineup.",
+        bestFor: ["All-day warehouse dates", "Rooftop-to-night progression", "Friends plus girlfriend plan"],
+        sources: [
+          ["Heim x ALTER. Up 2 U", "https://www.smartshanghai.com/event/heim-x-alter-up-2-u-warehouse-party-techno-house-2026-05-23"]
+        ]
+      },
+      {
+        name: "Bund rooftops & hotel rooms",
+        type: "Rooftop / hotel club",
+        district: "The Bund / Huangpu",
+        vibe: ["date"],
+        accent: "#ff6a2a",
+        short: "Best first stop before deciding whether to go harder after midnight.",
+        intro: "Pop Bar, Fosun Art Foundation, The Shanghai Edition, and The Sukhothai appear through more polished techno/house events. These are not the rawest rave rooms, but they solve the date-night problem: skyline, drinks, early arrival, and an easy exit.",
+        bestFor: ["Sunset opener", "Romantic skyline before Abyss/EXIT/POTENT", "Friends who are not rave-hardcore yet"],
+        sources: [
+          ["Horizon Rooftop", "https://ra.co/events/2459595"],
+          ["SUNKISSED Rooftop", "https://ra.co/events/2457326"],
+          ["Siam After Dark", "https://ra.co/events/2417150"]
+        ]
+      }
+    ];
+
+    const crews = [
+      {
+        name: "VOID",
+        type: "Techno crew",
+        district: "Shanghai",
+        vibe: ["underground"],
+        accent: "#c6ff3b",
+        short: "Long-running Shanghai techno crew; useful search term for serious local techno.",
+        intro: "VOID appears in the calendar through EXIT and Detroit/machine-funk programming. When VOID, Shanghai Ultra, NAXIN, or related names appear, the event is usually closer to underground techno than generic club night.",
+        bestFor: ["Local techno credibility", "Detroit and machine-funk references", "Deep-room nights"],
+        sources: [
+          ["Techno-logical World", "https://www.smartshanghai.com/event/techno-logical-world-detroit-techno-2026-03-13"],
+          ["VOID x VACUUM x EXIT", "https://ra.co/events/2371792"]
+        ]
+      },
+      {
+        name: "VACUUM",
+        type: "Label / techno crew",
+        district: "Shanghai / touring",
+        vibe: ["hard", "underground"],
+        accent: "#41d7ff",
+        short: "Techno-focused crew/label tied to Techno Worlds and EXIT programming.",
+        intro: "VACUUM's 2026 listings point toward refined techno programming and collaboration-heavy events rather than casual party branding.",
+        bestFor: ["Techno Worlds events", "Focused lineups", "Checking national-tour stops"],
+        sources: [
+          ["Techno Worlds x VACUUM", "https://ra.co/events/2448375"],
+          ["VOID x VACUUM x EXIT", "https://ra.co/events/2371792"]
+        ]
+      },
+      {
+        name: "KNOT",
+        type: "Party series",
+        district: "Shanghai",
+        vibe: ["bass", "experimental"],
+        accent: "#ff4f8b",
+        short: "High-color club-rave lane: hyperpop, trance, hard dance, jersey club, and rave nostalgia.",
+        intro: "KNOT is a useful watch term if she likes internet-era club music and high-energy genre collision more than purist techno.",
+        bestFor: ["High-BPM but playful nights", "Hyperpop and trance", "ILLUM watchlist"],
+        sources: [
+          ["CAM GIRL", "https://ra.co/events/2422723"],
+          ["SmartShanghai June guide", "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026"]
+        ]
+      },
+      {
+        name: "Space Panda",
+        type: "Promoter",
+        district: "Shanghai",
+        vibe: ["date"],
+        accent: "#ffd166",
+        short: "Rooftop and hotel-club promoter lane for approachable techno/house dates.",
+        intro: "Space Panda appears through SUNKISSED, NIGHTWAVE, and Horizon-style bookings. It is a good search term when you want a polished entry point into electronic music.",
+        bestFor: ["Skyline parties", "House/techno without harshness", "Date-night opener"],
+        sources: [
+          ["NIGHTWAVE", "https://ra.co/events/2457307"],
+          ["SUNKISSED", "https://ra.co/events/2457326"],
+          ["Horizon Rooftop", "https://ra.co/events/2459595"]
+        ]
+      },
+      {
+        name: "Heim x ALTER.",
+        type: "Promoter collaboration",
+        district: "Shanghai",
+        vibe: ["warehouse", "date", "underground"],
+        accent: "#ff6a2a",
+        short: "The best current model for a bigger social warehouse plan.",
+        intro: "The Up 2 U event shows how a collaboration can turn a rave into a broader date-friendly environment: multiple zones, food, rooftops, and different energy levels.",
+        bestFor: ["Warehouse dates", "Mixed friend groups", "Afternoon-to-night progression"],
+        sources: [
+          ["Heim x ALTER. Up 2 U", "https://www.smartshanghai.com/event/heim-x-alter-up-2-u-warehouse-party-techno-house-2026-05-23"]
+        ]
+      },
+      {
+        name: "SYSTEM pop-ups",
+        type: "Organizer / pop-up",
+        district: "Shanghai",
+        vibe: ["warehouse", "underground"],
+        accent: "#41d7ff",
+        short: "Watchlist organizer rather than a guaranteed fixed venue.",
+        intro: "The 2026 calendar treats SYSTEM as a watchlist signal because listings point to pop-ups and secret-location style events. Good when she likes the idea of something less fixed, but verify details directly before going.",
+        bestFor: ["Pop-up energy", "Secret-location style planning", "Late-year watchlist"],
+        sources: [
+          ["System Secret Party", "https://www.smartshanghai.com/event/system-secret-party-techno-bass-club-music-2026-05-16"],
+          ["SmartShanghai June guide", "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026"]
+        ]
+      }
+    ];
+
+    const searchInput = document.getElementById("searchInput");
+    const vibeFilter = document.getElementById("vibeFilter");
+    const venueCards = document.getElementById("venueCards");
+    const crewCards = document.getElementById("crewCards");
+
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, char => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#039;"
+      }[char]));
+    }
+
+    function matches(item) {
+      const query = searchInput.value.trim().toLowerCase();
+      const vibe = vibeFilter.value;
+      const text = [item.name, item.type, item.district, item.short, item.intro, item.bestFor.join(" "), item.vibe.join(" ")].join(" ").toLowerCase();
+      if (vibe !== "all" && !item.vibe.includes(vibe)) return false;
+      if (query && !text.includes(query)) return false;
+      return true;
+    }
+
+    function renderCard(item) {
+      return `
+        <article class="card" style="--accent: ${item.accent}">
+          <div class="card-visual">
+            <strong>${escapeHtml(item.type)}</strong>
+            <span>${escapeHtml(item.name)}</span>
+          </div>
+          <div class="card-body">
+            <h3>${escapeHtml(item.name)}</h3>
+            <div class="meta">${escapeHtml(item.district)}</div>
+            <p class="copy">${escapeHtml(item.intro)}</p>
+            <ul class="why">
+              ${item.bestFor.map(point => `<li>${escapeHtml(point)}</li>`).join("")}
+            </ul>
+            <div class="chips">
+              ${item.vibe.map(vibe => `<span class="chip">${escapeHtml(vibe)}</span>`).join("")}
+            </div>
+            <div class="source-row">
+              ${item.sources.map(([label, href]) => `<a class="source-link" href="${href}" target="_blank" rel="noreferrer">${escapeHtml(label)}</a>`).join("")}
+            </div>
+          </div>
+        </article>
+      `;
+    }
+
+    function render() {
+      venueCards.innerHTML = venues.filter(matches).map(renderCard).join("");
+      crewCards.innerHTML = crews.filter(matches).map(renderCard).join("");
+      if (!venueCards.innerHTML) venueCards.innerHTML = `<p class="copy">No venues match the current filters.</p>`;
+      if (!crewCards.innerHTML) crewCards.innerHTML = `<p class="copy">No crews match the current filters.</p>`;
+    }
+
+    searchInput.addEventListener("input", render);
+    vibeFilter.addEventListener("change", render);
+    render();
+  </script>
+</body>
+</html>
