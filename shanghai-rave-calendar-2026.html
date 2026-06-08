@@ -411,8 +411,9 @@
 
     .calendar-grid {
       display: grid;
-      grid-template-columns: repeat(7, minmax(0, 1fr));
-      gap: 6px;
+      grid-template-columns: repeat(var(--calendar-columns, 7), minmax(0, 1fr));
+      gap: 4px;
+      width: min(100%, var(--calendar-width, 812px));
       margin: 0 0 14px;
     }
 
@@ -425,11 +426,11 @@
     }
 
     .calendar-day {
-      min-height: 92px;
+      min-height: 74px;
       border: 1px solid var(--line);
       border-radius: 6px;
       background: rgba(17,17,14,.62);
-      padding: 8px;
+      padding: 6px;
       overflow: hidden;
     }
 
@@ -448,19 +449,19 @@
       align-items: center;
       justify-content: space-between;
       color: var(--dim);
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 900;
-      margin-bottom: 6px;
+      margin-bottom: 5px;
     }
 
     .calendar-events {
       display: grid;
-      gap: 4px;
+      gap: 3px;
     }
 
     .calendar-event {
       width: 100%;
-      min-height: 27px;
+      min-height: 24px;
       display: grid;
       gap: 2px;
       border: 1px solid rgba(198,255,59,.18);
@@ -468,9 +469,9 @@
       background: rgba(198,255,59,.1);
       color: var(--ink);
       cursor: pointer;
-      padding: 4px 6px;
+      padding: 4px 5px;
       text-align: left;
-      font-size: 11px;
+      font-size: 10px;
       line-height: 1.25;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -1267,11 +1268,11 @@
         grid-template-columns: repeat(4, 1fr);
       }
       .calendar-grid {
-        grid-template-columns: repeat(7, minmax(0, 1fr));
+        grid-template-columns: repeat(var(--calendar-columns, 7), minmax(0, 1fr));
         gap: 4px;
       }
       .calendar-day {
-        min-height: 70px;
+        min-height: 58px;
         padding: 4px;
       }
       .calendar-day-name,
@@ -1359,7 +1360,8 @@
 
     <section class="controls" aria-label="Calendar controls">
       <div class="quick-actions" aria-label="Date and export shortcuts">
-        <button class="quick-filter active" type="button" data-window="all">All Dates</button>
+        <button class="quick-filter active" type="button" data-window="future">Future</button>
+        <button class="quick-filter" type="button" data-window="all">All Dates</button>
         <button class="quick-filter" type="button" data-window="tonight">Tonight</button>
         <button class="quick-filter" type="button" data-window="weekend">This Weekend</button>
         <button class="quick-filter" type="button" data-window="next30">Next 30 Days</button>
@@ -1475,7 +1477,7 @@
       const [year, month, day] = verified.split("-").map(Number);
       return new Date(year, month - 1, day);
     })();
-    let dateWindow = "all";
+    let dateWindow = "future";
     const months = [
       ["Jan", "January"], ["Feb", "February"], ["Mar", "March"], ["Apr", "April"],
       ["May", "May"], ["Jun", "June"], ["Jul", "July"], ["Aug", "August"],
@@ -2432,6 +2434,7 @@
     function dateWindowMatches(event) {
       const date = eventDate(event);
       if (!date) return true;
+      if (dateWindow === "future") return date >= today;
       if (dateWindow === "tonight") return sameDay(date, today);
       if (dateWindow === "weekend") {
         const [start, end] = thisWeekendRange();
@@ -2806,30 +2809,41 @@
       const startOffset = (firstDay.getDay() + 6) % 7;
       const daysInMonth = new Date(2026, index + 1, 0).getDate();
       const weekdayLabels = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
-      const cells = weekdayLabels.map(day => `<div class="calendar-day-name">${day}</div>`);
+      const weekdayHasEvent = weekdayLabels.map((_, weekdayIndex) => monthEvents.some(event => {
+        const date = eventDate(event);
+        return date && ((date.getDay() + 6) % 7) === weekdayIndex;
+      }));
+      const visibleWeekdayIndexes = weekdayLabels
+        .map((_, weekdayIndex) => weekdayIndex)
+        .filter(weekdayIndex => weekdayIndex >= 4 || weekdayHasEvent[weekdayIndex]);
+      const cells = visibleWeekdayIndexes.map(weekdayIndex => `<div class="calendar-day-name">${weekdayLabels[weekdayIndex]}</div>`);
+      const calendarWidth = Math.min(visibleWeekdayIndexes.length * 116, 812);
 
-      for (let i = 0; i < startOffset; i += 1) {
-        cells.push(`<div class="calendar-day empty" aria-hidden="true"></div>`);
-      }
-
-      for (let day = 1; day <= daysInMonth; day += 1) {
-        const dayEvents = monthEvents.filter(event => eventDay(event) === day);
-        cells.push(`
-          <div class="calendar-day ${dayEvents.length ? "has-event" : ""}">
-            <div class="calendar-date"><span>${day}</span><span>${dayEvents.length ? dayEvents.length : ""}</span></div>
-            <div class="calendar-events">
-              ${dayEvents.map(event => `
-                <button class="calendar-event ${event.status === "watch" ? "watch" : ""}" type="button" data-id="${event.id}" title="${escapeHtml(`${event.title} / Organizer: ${organizerFor(event)}`)}">
-                  <span class="calendar-event-title">${escapeHtml(event.title)}</span>
-                  <span class="calendar-event-organizer">${escapeHtml(organizerFor(event))}</span>
-                </button>
-              `).join("")}
+      for (let weekStart = 1 - startOffset; weekStart <= daysInMonth; weekStart += 7) {
+        visibleWeekdayIndexes.forEach(weekdayIndex => {
+          const day = weekStart + weekdayIndex;
+          if (day < 1 || day > daysInMonth) {
+            cells.push(`<div class="calendar-day empty" aria-hidden="true"></div>`);
+            return;
+          }
+          const dayEvents = monthEvents.filter(event => eventDay(event) === day);
+          cells.push(`
+            <div class="calendar-day ${dayEvents.length ? "has-event" : ""}">
+              <div class="calendar-date"><span>${day}</span><span>${dayEvents.length ? dayEvents.length : ""}</span></div>
+              <div class="calendar-events">
+                ${dayEvents.map(event => `
+                  <button class="calendar-event ${event.status === "watch" ? "watch" : ""}" type="button" data-id="${event.id}" title="${escapeHtml(`${event.title} / Organizer: ${organizerFor(event)}`)}">
+                    <span class="calendar-event-title">${escapeHtml(event.title)}</span>
+                    <span class="calendar-event-organizer">${escapeHtml(organizerFor(event))}</span>
+                  </button>
+                `).join("")}
+              </div>
             </div>
-          </div>
-        `);
+          `);
+        });
       }
 
-      return `<div class="calendar-grid" aria-label="${code} 2026 clickable event calendar">${cells.join("")}</div>`;
+      return `<div class="calendar-grid" style="--calendar-columns: ${visibleWeekdayIndexes.length}; --calendar-width: ${calendarWidth}px;" aria-label="${code} 2026 clickable event calendar">${cells.join("")}</div>`;
     }
 
     function posterSvg(event) {
@@ -2917,14 +2931,14 @@
       const monthEvents = events.filter(event => event.month === code).sort((a, b) => a.sortDate.localeCompare(b.sortDate));
       const visibleEvents = monthEvents.filter(eventMatches);
       const watch = watchMonths[code];
-      const showWatch = watch && dateWindow === "all" && (statusFilter.value === "all" || statusFilter.value === "watch") && (vibeFilter.value === "all") && (venueFilter.value === "all");
+      const showWatch = watch && (dateWindow === "all" || dateWindow === "future") && (statusFilter.value === "all" || statusFilter.value === "watch") && (vibeFilter.value === "all") && (venueFilter.value === "all");
       calendarEl.innerHTML = `
         <section class="month-section" id="month-${code}">
           <div class="month-header">
             <div class="month-code">${code}</div>
             <div>
               <h2>${name}</h2>
-              <p>${monthCopy(code, monthEvents.length, watch)}</p>
+              <p>${monthCopy(code, visibleEvents.length, watch)}</p>
             </div>
             <div class="count-badge">${visibleEvents.length}${showWatch ? " + watchlist" : ""}</div>
           </div>
@@ -2952,9 +2966,10 @@
     }
 
     function monthCopy(code, count, watch) {
-      if (count > 0) return `${count} sourced event${count === 1 ? "" : "s"} in the 2026 archive or live shortlist.`;
-      if (watch) return "No reliable public techno/rave calendar yet; monitor short-notice listings.";
-      return "No sourced entries in this research pass.";
+      if (count > 0) return `${count} matching sourced event${count === 1 ? "" : "s"} in this view.`;
+      if (watch && (dateWindow === "all" || dateWindow === "future")) return "No reliable public techno/rave calendar yet; monitor short-notice listings.";
+      if (dateWindow === "future") return "No future entries match the current filters.";
+      return "No entries match the current filters.";
     }
 
     function renderCard(event) {
@@ -3163,22 +3178,26 @@
       if (nextMonth) activeMonth = nextMonth[0];
     }
 
+    function setDateWindow(nextWindow) {
+      dateWindow = nextWindow;
+      document.querySelectorAll(".quick-filter[data-window]").forEach(item => {
+        item.classList.toggle("active", item.dataset.window === dateWindow);
+      });
+    }
+
     function setupControls() {
+      const handleControlChange = () => {
+        if (statusFilter.value === "past" && dateWindow === "future") setDateWindow("all");
+        syncActiveMonthToMatches();
+        renderCalendar();
+      };
       [searchInput, statusFilter, vibeFilter, venueFilter].forEach(control => {
-        control.addEventListener("input", () => {
-          syncActiveMonthToMatches();
-          renderCalendar();
-        });
-        control.addEventListener("change", () => {
-          syncActiveMonthToMatches();
-          renderCalendar();
-        });
+        control.addEventListener("input", handleControlChange);
+        control.addEventListener("change", handleControlChange);
       });
       document.querySelectorAll(".quick-filter[data-window]").forEach(button => {
         button.addEventListener("click", () => {
-          dateWindow = button.dataset.window;
-          document.querySelectorAll(".quick-filter[data-window]").forEach(item => item.classList.remove("active"));
-          button.classList.add("active");
+          setDateWindow(button.dataset.window);
           syncActiveMonthToMatches();
           renderCalendar();
         });
@@ -3242,6 +3261,8 @@
       if (!eventId) return false;
       const event = events.find(item => item.id === eventId);
       if (!event) return false;
+      const date = eventDate(event);
+      if (date && date < today && dateWindow === "future") setDateWindow("all");
       activeMonth = event.month || monthCodeFromSortDate(event.sortDate);
       renderCalendar();
       window.setTimeout(() => openModal(event), 0);
