@@ -1,0 +1,42 @@
+name: Scrape events
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "10 23 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Refresh static event data
+        env:
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          TWITTER_BEARER_TOKEN: ${{ secrets.TWITTER_BEARER_TOKEN }}
+        run: npm run scrape
+
+      - name: Validate site
+        run: npm run check
+
+      - name: Commit refreshed data
+        run: |
+          if git diff --quiet -- data/events.json; then
+            echo "No event data changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/events.json
+          git commit -m "Refresh event data"
+          git push

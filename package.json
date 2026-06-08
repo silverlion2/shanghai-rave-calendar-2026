@@ -5,6 +5,7 @@
   "description": "Interactive 2026 Shanghai techno and rave calendar.",
   "scripts": {
     "start": "npx serve .",
-    "check": "node scripts/check.js"
+    "scrape": "node scripts/scrape-events.js",
+    "check": "node --check scripts/check.js && node --check scripts/scrape-events.js && node scripts/check.js"
   }
 }

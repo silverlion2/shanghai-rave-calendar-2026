@@ -1,0 +1,1302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shanghai 2026 DJ Database</title>
+  <meta name="description" content="A DJ and performer database paired with the Shanghai 2026 rave calendar, with appearances, set-time status, venue links, and calendar deep links.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#c6ff3b">
+  <link rel="canonical" href="https://shanghai-rave-calendar-2026.vercel.app/djs">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shanghai Rave Calendar">
+  <meta property="og:title" content="Shanghai 2026 DJ Database">
+  <meta property="og:description" content="Performer profiles paired with the Shanghai 2026 rave calendar: event appearances, DJ notes, set-time status, venues, and source links.">
+  <meta property="og:url" content="https://shanghai-rave-calendar-2026.vercel.app/djs">
+  <meta property="og:image" content="https://shanghai-rave-calendar-2026.vercel.app/og-image.png">
+  <meta property="og:image:alt" content="Preview of the Shanghai rave calendar">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Shanghai 2026 DJ Database",
+    "url": "https://shanghai-rave-calendar-2026.vercel.app/djs",
+    "description": "DJ and performer profiles paired with the Shanghai 2026 rave calendar.",
+    "inLanguage": "en",
+    "isAccessibleForFree": true
+  }
+  </script>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f2f0e8;
+      --muted: #aaa59a;
+      --dim: #7c776d;
+      --void: #080806;
+      --panel: #11110e;
+      --line: #302f28;
+      --acid: #c6ff3b;
+      --ember: #ff6a2a;
+      --cyan: #41d7ff;
+      --rose: #ff4f8b;
+      --gold: #ffd166;
+      --radius: 8px;
+      --shadow: 0 24px 80px rgba(0,0,0,.42);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px) 0 0 / 36px 36px,
+        linear-gradient(0deg, rgba(255,255,255,.018) 1px, transparent 1px) 0 0 / 36px 36px,
+        radial-gradient(circle at 20% -10%, rgba(65,215,255,.14), transparent 38%),
+        radial-gradient(circle at 86% 4%, rgba(255,106,42,.16), transparent 34%),
+        #080806;
+      color: var(--ink);
+      font-family: "Aptos", "Segoe UI", sans-serif;
+      letter-spacing: 0;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      opacity: .42;
+      background-image:
+        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+        repeating-linear-gradient(90deg, transparent 0 17px, rgba(198,255,59,.045) 18px, transparent 19px);
+      background-size: 100% 5px, 100% 100%;
+      mix-blend-mode: screen;
+    }
+
+    a { color: inherit; }
+    button, input, select { font: inherit; }
+
+    .shell {
+      width: min(1480px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 24px 0 56px;
+    }
+
+    .site-nav,
+    .nav-group,
+    .source-note,
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .site-nav {
+      justify-content: space-between;
+      margin-bottom: 18px;
+      color: var(--muted);
+    }
+
+    .nav-link,
+    .tag,
+    .pill {
+      display: inline-flex;
+      min-height: 34px;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: 1px solid var(--line);
+      background: rgba(17,17,14,.84);
+      padding: 7px 11px;
+      border-radius: 999px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 13px;
+      line-height: 1.15;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--void);
+      background: var(--acid);
+      border-color: var(--acid);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 390px);
+      gap: 22px;
+      align-items: stretch;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 24px;
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--acid);
+      font-size: 13px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .kicker::before {
+      content: "";
+      width: 34px;
+      height: 2px;
+      background: var(--acid);
+      box-shadow: 0 0 18px rgba(198,255,59,.7);
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: clamp(42px, 5.7vw, 86px);
+      line-height: .96;
+      letter-spacing: 0;
+      max-width: 920px;
+    }
+
+    .subhead {
+      max-width: 800px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.45;
+      margin: 18px 0 0;
+    }
+
+    .source-note { margin-top: 18px; }
+
+    .hero-picture {
+      min-height: 280px;
+      margin: 0;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: #161612;
+      box-shadow: var(--shadow);
+      position: relative;
+    }
+
+    .hero-picture img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: saturate(1.08) contrast(1.08);
+    }
+
+    .hero-picture::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, transparent 36%, rgba(8,8,6,.88)),
+        repeating-linear-gradient(0deg, rgba(255,255,255,.08) 0 1px, transparent 1px 12px);
+      pointer-events: none;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin: 18px 0;
+    }
+
+    .stat,
+    .directory,
+    .profile-panel,
+    .roster-section {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(17,17,14,.9);
+      box-shadow: 0 18px 48px rgba(0,0,0,.24);
+    }
+
+    .stat {
+      padding: 14px;
+      min-height: 94px;
+    }
+
+    .stat b {
+      display: block;
+      color: var(--acid);
+      font-size: 34px;
+      line-height: 1;
+      font-family: "Georgia", "Times New Roman", serif;
+    }
+
+    .stat span {
+      display: block;
+      color: var(--muted);
+      line-height: 1.35;
+      margin-top: 8px;
+      font-size: 13px;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: minmax(260px, 1.2fr) repeat(3, minmax(150px, .6fr));
+      gap: 8px;
+      margin: 18px 0;
+    }
+
+    .search,
+    .select,
+    .clear-button {
+      min-height: 46px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: rgba(17,17,14,.9);
+      color: var(--ink);
+      padding: 10px 12px;
+      outline: none;
+    }
+
+    .search:focus,
+    .select:focus {
+      border-color: var(--acid);
+      box-shadow: 0 0 0 3px rgba(198,255,59,.12);
+    }
+
+    .database-layout {
+      display: grid;
+      grid-template-columns: minmax(260px, 340px) minmax(0, 1fr);
+      gap: 14px;
+      align-items: start;
+    }
+
+    .directory {
+      position: sticky;
+      top: 18px;
+      max-height: calc(100vh - 36px);
+      overflow: hidden;
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr);
+    }
+
+    .directory-head,
+    .section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 14px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .directory-head h2,
+    .section-head h2 {
+      margin: 0;
+      font-size: 19px;
+      font-family: "Georgia", "Times New Roman", serif;
+    }
+
+    .count-pill,
+    .chip,
+    .status-pill {
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 999px;
+      padding: 5px 8px;
+      color: var(--muted);
+      background: rgba(255,255,255,.035);
+      font-size: 12px;
+      line-height: 1.1;
+    }
+
+    .count-pill {
+      border-color: rgba(198,255,59,.45);
+      color: var(--acid);
+      white-space: nowrap;
+    }
+
+    .directory-list {
+      overflow: auto;
+      padding: 8px;
+      display: grid;
+      gap: 6px;
+    }
+
+    .directory-row {
+      width: 100%;
+      min-height: 58px;
+      display: grid;
+      grid-template-columns: 38px minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: center;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      background: transparent;
+      color: var(--ink);
+      cursor: pointer;
+      padding: 8px;
+      text-align: left;
+    }
+
+    .directory-row:hover,
+    .directory-row.active,
+    .dj-card:hover,
+    .dj-card.active {
+      border-color: rgba(198,255,59,.58);
+      background: rgba(198,255,59,.075);
+    }
+
+    .avatar-small,
+    .profile-avatar,
+    .card-avatar {
+      display: block;
+      border-radius: 6px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: #151510;
+    }
+
+    .avatar-small {
+      width: 38px;
+      height: 38px;
+    }
+
+    .directory-row b,
+    .dj-card b {
+      overflow-wrap: anywhere;
+      line-height: 1.15;
+    }
+
+    .directory-row span {
+      display: block;
+      color: var(--dim);
+      font-size: 12px;
+      margin-top: 3px;
+    }
+
+    .row-count {
+      color: var(--cyan);
+      font-weight: 900;
+      font-size: 13px;
+      font-style: normal;
+    }
+
+    .content-stack {
+      display: grid;
+      gap: 14px;
+    }
+
+    .profile-panel { overflow: hidden; }
+
+    .profile-hero {
+      display: grid;
+      grid-template-columns: 150px minmax(0, 1fr);
+      gap: 18px;
+      padding: 18px;
+      background:
+        linear-gradient(120deg, rgba(198,255,59,.11), transparent 38%),
+        linear-gradient(18deg, rgba(255,106,42,.13), transparent 58%),
+        #11110e;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .profile-avatar {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .profile-title h2 {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 52px);
+      line-height: 1;
+      font-family: "Georgia", "Times New Roman", serif;
+      overflow-wrap: anywhere;
+    }
+
+    .profile-summary {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.45;
+      margin: 10px 0 0;
+      max-width: 850px;
+    }
+
+    .chips { margin-top: 12px; }
+
+    .status-official,
+    .status-exact {
+      color: var(--void);
+      background: var(--acid);
+      border-color: var(--acid);
+    }
+
+    .status-secondary {
+      color: var(--void);
+      background: var(--gold);
+      border-color: var(--gold);
+    }
+
+    .status-watchlist,
+    .status-tba {
+      color: var(--gold);
+      border-color: rgba(255,209,102,.6);
+      background: transparent;
+    }
+
+    .profile-body {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 14px;
+      padding: 14px;
+    }
+
+    .notes,
+    .facts,
+    .appearances {
+      display: grid;
+      gap: 8px;
+    }
+
+    .panel-title {
+      margin: 0 0 8px;
+      color: var(--acid);
+      font-size: 13px;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .note-row,
+    .fact,
+    .event-row {
+      border: 1px solid rgba(255,255,255,.09);
+      border-radius: 6px;
+      background: rgba(0,0,0,.18);
+      padding: 11px;
+    }
+
+    .note-row {
+      color: var(--muted);
+      line-height: 1.42;
+    }
+
+    .facts {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .fact span {
+      display: block;
+      color: var(--dim);
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    .fact b {
+      font-size: 15px;
+      overflow-wrap: anywhere;
+    }
+
+    .event-row {
+      display: grid;
+      grid-template-columns: 92px minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: start;
+    }
+
+    .event-date b,
+    .event-date span {
+      display: block;
+    }
+
+    .event-date b { color: var(--acid); }
+    .event-date span { color: var(--dim); font-size: 12px; margin-top: 3px; }
+
+    .event-main h3 {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.15;
+      overflow-wrap: anywhere;
+    }
+
+    .event-main p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      line-height: 1.4;
+      font-size: 13px;
+    }
+
+    .set-slot {
+      margin-top: 8px;
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 7px;
+      border: 1px solid rgba(65,215,255,.35);
+      border-radius: 999px;
+      color: var(--cyan);
+      padding: 5px 8px;
+      font-size: 12px;
+    }
+
+    .event-actions {
+      display: grid;
+      gap: 6px;
+      min-width: 132px;
+    }
+
+    .mini-link,
+    .copy-link {
+      min-height: 34px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #151510;
+      color: var(--ink);
+      text-decoration: none;
+      padding: 7px 10px;
+      font-size: 12px;
+      font-weight: 900;
+      cursor: pointer;
+      text-align: center;
+      line-height: 1.15;
+    }
+
+    .mini-link.primary {
+      color: var(--void);
+      border-color: var(--acid);
+      background: var(--acid);
+    }
+
+    .mini-link.secondary,
+    .copy-link {
+      color: var(--cyan);
+      border-color: rgba(65,215,255,.42);
+      background: rgba(65,215,255,.08);
+    }
+
+    .mini-link:hover,
+    .copy-link:hover {
+      transform: translateY(-1px);
+    }
+
+    .roster-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+      padding: 14px;
+    }
+
+    .dj-card {
+      min-height: 164px;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 8px;
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 6px;
+      background: rgba(0,0,0,.18);
+      color: var(--ink);
+      cursor: pointer;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .card-top {
+      display: grid;
+      grid-template-columns: 54px minmax(0, 1fr);
+      gap: 10px;
+      align-items: center;
+    }
+
+    .card-avatar {
+      width: 54px;
+      height: 54px;
+    }
+
+    .dj-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.35;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .empty-state {
+      padding: 20px;
+      color: var(--muted);
+      border: 1px dashed rgba(255,255,255,.2);
+      border-radius: 6px;
+      margin: 14px;
+    }
+
+    .footnotes {
+      color: var(--dim);
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+      margin-top: 24px;
+      line-height: 1.5;
+      font-size: 13px;
+    }
+
+    @media (max-width: 1120px) {
+      .hero,
+      .database-layout,
+      .profile-body {
+        grid-template-columns: 1fr;
+      }
+      .directory {
+        position: static;
+        max-height: none;
+      }
+      .directory-list { max-height: 420px; }
+      .roster-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .controls,
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 720px) {
+      .shell {
+        width: min(100% - 22px, 1480px);
+        padding-top: 14px;
+      }
+      .site-nav,
+      .nav-group,
+      .source-note {
+        align-items: stretch;
+      }
+      .nav-link,
+      .tag,
+      .pill {
+        width: 100%;
+      }
+      h1 { font-size: 40px; }
+      .subhead { font-size: 16px; }
+      .controls,
+      .stats,
+      .facts,
+      .profile-hero,
+      .event-row,
+      .roster-grid {
+        grid-template-columns: 1fr;
+      }
+      .profile-avatar {
+        width: 118px;
+        height: 118px;
+      }
+      .event-actions {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <nav class="site-nav" aria-label="Site navigation">
+      <div class="nav-group">
+        <a class="nav-link" href="index.html">Calendar</a>
+        <a class="nav-link" href="venues.html">Venue & crew guide</a>
+        <a class="nav-link active" href="djs.html">DJ database</a>
+      </div>
+      <span class="tag" id="checkedTag">Checked June 8, 2026</span>
+    </nav>
+
+    <header class="hero">
+      <div>
+        <div class="kicker">Paired performer database</div>
+        <h1>Shanghai 2026 DJ database</h1>
+        <p class="subhead">A searchable performer layer for the rave calendar, pairing each DJ with appearances, source status, venue context, and published set-time slots when they exist.</p>
+        <div class="source-note">
+          <span class="pill">Calendar-linked profiles</span>
+          <span class="pill">Exact slots flagged</span>
+          <span class="pill">Official / secondary / watchlist source layers</span>
+          <span class="pill">Generated profile artwork, not official press photos</span>
+        </div>
+      </div>
+      <figure class="hero-picture" aria-label="Shanghai night visual">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Shanghai_Bund_at_night_20260417_%282%29.jpg" alt="Shanghai Bund skyline at night">
+      </figure>
+    </header>
+
+    <section class="stats" aria-label="DJ database statistics">
+      <div class="stat"><b id="statDjs">0</b><span>DJ and performer profiles from the calendar lineups</span></div>
+      <div class="stat"><b id="statAppearances">0</b><span>calendar appearances linked back to event details</span></div>
+      <div class="stat"><b id="statExact">0</b><span>profiles with published set-time slots</span></div>
+      <div class="stat"><b id="statUpcoming">0</b><span>profiles appearing in upcoming or watchlist entries</span></div>
+    </section>
+
+    <section class="controls" aria-label="DJ database filters">
+      <input class="search" id="djSearch" type="search" placeholder="Search DJ, event, venue, sound">
+      <select class="select" id="soundFilter" aria-label="Sound filter">
+        <option value="all">All sounds</option>
+        <option value="techno">Techno</option>
+        <option value="hard">Hard / industrial</option>
+        <option value="experimental">Experimental</option>
+        <option value="bass">Bass / club</option>
+        <option value="date">Date-friendly</option>
+        <option value="live">Live / A/V</option>
+      </select>
+      <select class="select" id="monthFilter" aria-label="Month filter">
+        <option value="all">All months</option>
+      </select>
+      <select class="select" id="statusFilter" aria-label="Status filter">
+        <option value="all">All statuses</option>
+        <option value="upcoming">Upcoming</option>
+        <option value="watch">Watchlist</option>
+        <option value="past">Past archive</option>
+        <option value="exact">Exact set time</option>
+      </select>
+    </section>
+
+    <section class="database-layout">
+      <aside class="directory" aria-label="DJ directory">
+        <div class="directory-head">
+          <h2>Directory</h2>
+          <span class="count-pill" id="resultCount">0 shown</span>
+        </div>
+        <div class="directory-list" id="directoryList"></div>
+      </aside>
+
+      <div class="content-stack">
+        <section class="profile-panel" id="profilePanel" aria-live="polite"></section>
+        <section class="roster-section">
+          <div class="section-head">
+            <h2>Filtered roster</h2>
+            <button class="copy-link" id="clearFilters" type="button">Clear filters</button>
+          </div>
+          <div class="roster-grid" id="rosterGrid"></div>
+        </section>
+      </div>
+    </section>
+
+    <footer class="footnotes">
+      DJ notes are paired from the calendar's event lineups and should be treated as planning context, not artist biographies. Use the linked event source or ticket page before planning around a specific slot.
+    </footer>
+  </main>
+
+  <script src="data/dj-data.js"></script>
+  <script>
+    const sourceData = window.DJ_SOURCE_DATA || { events: [], lineups: {}, externalDataPath: "data/events.json" };
+    const verified = "2026-06-08";
+    const monthPairs = [["Jan", "January"], ["Feb", "February"], ["Mar", "March"], ["Apr", "April"], ["May", "May"], ["Jun", "June"], ["Jul", "July"], ["Aug", "August"], ["Sep", "September"], ["Oct", "October"], ["Nov", "November"], ["Dec", "December"]];
+    const monthNames = Object.fromEntries(monthPairs);
+    const themeColors = {
+      acid: ["#c6ff3b", "#41d7ff", "#080806"],
+      ember: ["#ff6a2a", "#ffd166", "#080806"],
+      cyan: ["#41d7ff", "#ff4f8b", "#080806"],
+      rose: ["#ff4f8b", "#c6ff3b", "#080806"],
+      gold: ["#ffd166", "#41d7ff", "#080806"]
+    };
+    let profiles = [];
+    let selectedSlug = "";
+
+    const controls = {
+      search: document.getElementById("djSearch"),
+      sound: document.getElementById("soundFilter"),
+      month: document.getElementById("monthFilter"),
+      status: document.getElementById("statusFilter")
+    };
+    const directoryList = document.getElementById("directoryList");
+    const rosterGrid = document.getElementById("rosterGrid");
+    const profilePanel = document.getElementById("profilePanel");
+    const resultCount = document.getElementById("resultCount");
+    const clearFilters = document.getElementById("clearFilters");
+
+    function escapeHtml(value) {
+      return String(value == null ? "" : value).replace(/[&<>"']/g, char => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#039;"
+      }[char]));
+    }
+
+    function slugify(value) {
+      return String(value || "dj").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "dj";
+    }
+
+    function splitPerformerNames(name) {
+      const value = String(name || "").trim();
+      if (!value) return [];
+      if (value.indexOf(" / ") === -1) return [value];
+      return value.split(" / ").map(item => item.trim()).filter(Boolean);
+    }
+
+    function unique(values) {
+      return Array.from(new Set(values.filter(Boolean)));
+    }
+
+    function sourceStatusFor(event) {
+      if (event.sourceStatus) return event.sourceStatus;
+      if (Array.isArray(event.sources) && event.sources[0] && event.sources[0].status) return event.sources[0].status;
+      return event.status === "watch" ? "watchlist" : "secondary";
+    }
+
+    function sourceStatusLabel(status) {
+      if (status === "official") return "Official";
+      if (status === "watchlist") return "Watchlist";
+      return "Secondary";
+    }
+
+    function sourceCountFor(event) {
+      return Array.isArray(event.sources) && event.sources.length ? event.sources.length : 1;
+    }
+
+    function lastCheckedFor(event) {
+      if (event.lastChecked) return event.lastChecked;
+      if (Array.isArray(event.sources)) {
+        const checked = event.sources.map(source => source.lastChecked).filter(Boolean).sort().pop();
+        if (checked) return checked;
+      }
+      return verified;
+    }
+
+    function normalizeSlot(slot, event) {
+      return {
+        name: slot.name || slot.dj || slot.artist || "TBA",
+        start: slot.start || slot.startTime || "",
+        end: slot.end || slot.endTime || "",
+        status: slot.status || (slot.start || slot.end ? "exact" : "not-published"),
+        source: slot.source || event.source,
+        sourceLabel: slot.sourceLabel || event.sourceLabel
+      };
+    }
+
+    function setTimeRange(slot) {
+      if (slot.start && slot.end) return `${slot.start}-${slot.end}`;
+      if (slot.start) return slot.start;
+      if (slot.end) return `until ${slot.end}`;
+      return "Set time TBA";
+    }
+
+    function timeToMinutes(value) {
+      const match = String(value || "").match(/(\d{1,2}):(\d{2})/);
+      if (!match) return Number.MAX_SAFE_INTEGER;
+      let minutes = Number(match[1]) * 60 + Number(match[2]);
+      if (minutes < 720) minutes += 1440;
+      return minutes;
+    }
+
+    function eventSourceUrl(event) {
+      return event.detailsUrl || event.source || "#";
+    }
+
+    function eventTicketUrl(event) {
+      return event.ticketUrl || event.ticket || event.source || "#";
+    }
+
+    function eventLineup(event) {
+      if (Array.isArray(event.lineup) && event.lineup.length) {
+        return event.lineup.map(item => {
+          if (typeof item === "string") return { name: item, note: "Lineup listed by the event source; exact set time may still need venue confirmation." };
+          return { name: item.name || item.dj || item.artist || event.title, note: item.note || "Lineup listed by the event source." };
+        });
+      }
+      if (sourceData.lineups && sourceData.lineups[event.id]) return sourceData.lineups[event.id];
+      return [{ name: event.title, note: "Lineup detail was limited in public sources; use the event source link before planning around a specific DJ." }];
+    }
+
+    function familyTagsFor(profile) {
+      const text = [profile.name, profile.genres.join(" "), profile.vibes.join(" "), profile.notes.join(" ")].join(" ").toLowerCase();
+      const tags = [];
+      if (text.includes("techno") || text.includes("electro") || text.includes("machine")) tags.push("techno");
+      if (text.includes("hard") || text.includes("industrial") || text.includes("hardcore") || text.includes("rave") || text.includes("trance")) tags.push("hard");
+      if (text.includes("experimental") || text.includes("ambient") || text.includes("idm") || text.includes("a/v") || text.includes("radio")) tags.push("experimental");
+      if (text.includes("bass") || text.includes("club") || text.includes("ukg") || text.includes("dubstep") || text.includes("ghettotech") || text.includes("hyperpop")) tags.push("bass");
+      if (text.includes("date") || text.includes("house") || text.includes("rooftop") || text.includes("melodic") || text.includes("disco")) tags.push("date");
+      if (text.includes("live") || text.includes("a/v") || text.includes("visual") || text.includes("show")) tags.push("live");
+      return unique(tags.length ? tags : ["techno"]);
+    }
+
+    function appearanceStatus(event) {
+      if (event.status === "watch") return "watch";
+      if (event.status === "upcoming") return "upcoming";
+      return "past";
+    }
+
+    function buildProfiles(events) {
+      const map = new Map();
+      function profileFor(name, event) {
+        const slug = slugify(name);
+        if (!map.has(slug)) {
+          map.set(slug, {
+            slug,
+            name,
+            notes: [],
+            appearances: [],
+            vibes: [],
+            genres: [],
+            months: [],
+            venues: [],
+            sourceStatuses: [],
+            imageTheme: event.imageTheme || "acid",
+            exactSlotCount: 0,
+            sourceCount: 0,
+            lastChecked: verified
+          });
+        }
+        return map.get(slug);
+      }
+
+      function addNote(profile, note) {
+        const clean = String(note || "").trim();
+        if (clean && !profile.notes.includes(clean)) profile.notes.push(clean);
+      }
+
+      function addAppearance(profile, event, note, slot) {
+        let appearance = profile.appearances.find(item => item.id === event.id);
+        if (!appearance) {
+          appearance = {
+            id: event.id,
+            month: event.month,
+            sortDate: event.sortDate,
+            date: event.date,
+            time: event.time,
+            title: event.title,
+            venue: event.venue,
+            district: event.district,
+            genre: event.genre,
+            vibe: Array.isArray(event.vibe) ? event.vibe : [],
+            confidence: event.confidence,
+            status: appearanceStatus(event),
+            sourceStatus: sourceStatusFor(event),
+            sourceStatusLabel: sourceStatusLabel(sourceStatusFor(event)),
+            sourceCount: sourceCountFor(event),
+            lastChecked: lastCheckedFor(event),
+            source: eventSourceUrl(event),
+            ticket: eventTicketUrl(event),
+            slots: [],
+            note: note || ""
+          };
+          profile.appearances.push(appearance);
+        }
+        if (note) addNote(profile, note);
+        if (slot && (slot.start || slot.end)) {
+          const normalized = normalizeSlot(slot, event);
+          const exists = appearance.slots.some(existing => existing.name === normalized.name && existing.start === normalized.start && existing.end === normalized.end);
+          if (!exists) appearance.slots.push(normalized);
+        }
+      }
+
+      events.forEach(event => {
+        eventLineup(event).forEach(item => {
+          splitPerformerNames(item.name).forEach(name => {
+            addAppearance(profileFor(name, event), event, item.note, null);
+          });
+        });
+        if (Array.isArray(event.setTimes)) {
+          event.setTimes.forEach(slot => {
+            splitPerformerNames(slot.name || slot.dj || slot.artist).forEach(name => {
+              addAppearance(profileFor(name, event), event, slot.note || "Published DJ set time listed by the event source.", slot);
+            });
+          });
+        }
+      });
+
+      return Array.from(map.values()).map(profile => {
+        profile.appearances.sort((a, b) => {
+          const dateSort = String(a.sortDate).localeCompare(String(b.sortDate));
+          if (dateSort) return dateSort;
+          return timeToMinutes(a.time) - timeToMinutes(b.time);
+        });
+        profile.vibes = unique(profile.appearances.flatMap(app => app.vibe));
+        profile.genres = unique(profile.appearances.flatMap(app => String(app.genre || "").split(",").map(item => item.trim()))).slice(0, 10);
+        profile.months = unique(profile.appearances.map(app => app.month));
+        profile.venues = unique(profile.appearances.map(app => app.venue));
+        profile.sourceStatuses = unique(profile.appearances.map(app => app.sourceStatus));
+        profile.exactSlotCount = profile.appearances.reduce((total, app) => total + app.slots.length, 0);
+        profile.sourceCount = unique(profile.appearances.map(app => app.source)).length;
+        profile.lastChecked = profile.appearances.map(app => app.lastChecked).filter(Boolean).sort().pop() || verified;
+        profile.upcomingCount = profile.appearances.filter(app => app.status === "upcoming").length;
+        profile.watchCount = profile.appearances.filter(app => app.status === "watch").length;
+        profile.pastCount = profile.appearances.filter(app => app.status === "past").length;
+        profile.soundFamilies = familyTagsFor(profile);
+        profile.summary = profile.notes[0] || `Appears across ${profile.appearances.length} Shanghai 2026 calendar ${profile.appearances.length === 1 ? "entry" : "entries"}.`;
+        profile.searchText = [profile.name, profile.notes.join(" "), profile.appearances.map(app => [app.title, app.venue, app.genre, app.date].join(" ")).join(" ")].join(" ").toLowerCase();
+        return profile;
+      }).sort((a, b) => {
+        const scoreA = a.upcomingCount * 30 + a.watchCount * 12 + a.exactSlotCount * 8 + a.appearances.length;
+        const scoreB = b.upcomingCount * 30 + b.watchCount * 12 + b.exactSlotCount * 8 + b.appearances.length;
+        if (scoreA !== scoreB) return scoreB - scoreA;
+        return a.name.localeCompare(b.name);
+      });
+    }
+
+    function filteredProfiles() {
+      const q = controls.search.value.trim().toLowerCase();
+      const sound = controls.sound.value;
+      const month = controls.month.value;
+      const status = controls.status.value;
+      return profiles.filter(profile => {
+        if (q && !profile.searchText.includes(q)) return false;
+        if (sound !== "all" && !profile.soundFamilies.includes(sound)) return false;
+        if (month !== "all" && !profile.months.includes(month)) return false;
+        if (status === "exact" && profile.exactSlotCount === 0) return false;
+        if (status === "upcoming" && profile.upcomingCount === 0) return false;
+        if (status === "watch" && profile.watchCount === 0) return false;
+        if (status === "past" && profile.pastCount === 0) return false;
+        return true;
+      });
+    }
+
+    function initials(name) {
+      const parts = String(name || "DJ").replace(/[^a-zA-Z0-9\s]/g, " ").split(/\s+/).filter(Boolean);
+      return (parts.slice(0, 2).map(part => part[0]).join("") || "DJ").toUpperCase();
+    }
+
+    function avatarSvg(profile) {
+      const colors = themeColors[profile.imageTheme] || themeColors.acid;
+      const text = initials(profile.name);
+      const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${colors[0]}"/><stop offset=".58" stop-color="${colors[1]}"/><stop offset="1" stop-color="${colors[2]}"/></linearGradient><pattern id="p" width="14" height="14" patternUnits="userSpaceOnUse"><path d="M0 7h14M7 0v14" stroke="rgba(8,8,6,.36)" stroke-width="1"/></pattern></defs><rect width="160" height="160" fill="url(#g)"/><rect width="160" height="160" fill="url(#p)"/><path d="M18 118 C48 92 60 138 91 103 S126 68 146 89" fill="none" stroke="rgba(8,8,6,.62)" stroke-width="8"/><circle cx="124" cy="34" r="18" fill="rgba(8,8,6,.72)"/><text x="18" y="90" fill="#080806" font-family="Segoe UI, Arial, sans-serif" font-weight="900" font-size="44" letter-spacing="0">${escapeHtml(text)}</text></svg>`;
+      return `data:image/svg+xml,${encodeURIComponent(svg)}`;
+    }
+
+    function statusClass(status) {
+      return status === "official" ? "status-official" : status === "watchlist" ? "status-watchlist" : "status-secondary";
+    }
+
+    function slotStatusClass(hasSlot) {
+      return hasSlot ? "status-exact" : "status-tba";
+    }
+
+    function calendarUrl(app) {
+      return `index.html?event=${encodeURIComponent(app.id)}`;
+    }
+
+    function renderStats() {
+      const appearances = profiles.reduce((total, profile) => total + profile.appearances.length, 0);
+      document.getElementById("statDjs").textContent = profiles.length;
+      document.getElementById("statAppearances").textContent = appearances;
+      document.getElementById("statExact").textContent = profiles.filter(profile => profile.exactSlotCount > 0).length;
+      document.getElementById("statUpcoming").textContent = profiles.filter(profile => profile.upcomingCount || profile.watchCount).length;
+      const checked = profiles.map(profile => profile.lastChecked).filter(Boolean).sort().pop() || verified;
+      document.getElementById("checkedTag").textContent = `Checked ${checked}`;
+    }
+
+    function renderMonthOptions() {
+      const activeMonths = unique(profiles.flatMap(profile => profile.months));
+      controls.month.innerHTML = '<option value="all">All months</option>' + monthPairs
+        .filter(pair => activeMonths.includes(pair[0]))
+        .map(pair => `<option value="${pair[0]}">${pair[1]}</option>`)
+        .join("");
+    }
+
+    function renderDirectory(list) {
+      resultCount.textContent = `${list.length} shown`;
+      if (!list.length) {
+        directoryList.innerHTML = '<div class="empty-state">No DJs match these filters.</div>';
+        return;
+      }
+      directoryList.innerHTML = list.map(profile => `
+        <button class="directory-row ${profile.slug === selectedSlug ? "active" : ""}" type="button" data-profile="${escapeHtml(profile.slug)}">
+          <img class="avatar-small" src="${avatarSvg(profile)}" alt="">
+          <span>
+            <b>${escapeHtml(profile.name)}</b>
+            <span>${profile.appearances.length} event${profile.appearances.length === 1 ? "" : "s"} / ${profile.venues.slice(0, 2).map(escapeHtml).join(", ")}</span>
+          </span>
+          <em class="row-count">${profile.exactSlotCount}</em>
+        </button>
+      `).join("");
+    }
+
+    function noteRows(profile) {
+      return profile.notes.slice(0, 5).map(note => `<div class="note-row">${escapeHtml(note)}</div>`).join("")
+        || '<div class="note-row">No specific DJ note is available yet. Check linked event sources before planning around the artist.</div>';
+    }
+
+    function factRows(profile) {
+      const statusText = [];
+      if (profile.upcomingCount) statusText.push(`${profile.upcomingCount} upcoming`);
+      if (profile.watchCount) statusText.push(`${profile.watchCount} watchlist`);
+      if (profile.pastCount) statusText.push(`${profile.pastCount} past`);
+      return [
+        ["Appearances", String(profile.appearances.length)],
+        ["Exact slots", String(profile.exactSlotCount)],
+        ["Months", profile.months.map(month => monthNames[month] || month).join(", ")],
+        ["Venues", profile.venues.slice(0, 5).join(", ")],
+        ["Status mix", statusText.join(", ") || "TBA"],
+        ["Last checked", profile.lastChecked],
+        ["Source count", String(profile.sourceCount)],
+        ["Sounds", profile.soundFamilies.join(", ")]
+      ].map(([label, value]) => `<div class="fact"><span>${escapeHtml(label)}</span><b>${escapeHtml(value)}</b></div>`).join("");
+    }
+
+    function slotText(app) {
+      if (!app.slots.length) return "Set time TBA";
+      return app.slots.map(slot => setTimeRange(slot)).join(", ");
+    }
+
+    function renderAppearances(profile) {
+      return profile.appearances.map(app => {
+        const hasSlot = app.slots.length > 0;
+        return `
+          <article class="event-row">
+            <div class="event-date"><b>${escapeHtml(app.date)}</b><span>${escapeHtml(app.time)}</span></div>
+            <div class="event-main">
+              <h3>${escapeHtml(app.title)}</h3>
+              <p>${escapeHtml(`${app.venue}, ${app.district} / ${app.genre}`)}</p>
+              <div class="chips">
+                <span class="status-pill ${statusClass(app.sourceStatus)}">${escapeHtml(app.sourceStatusLabel)}</span>
+                <span class="status-pill">${escapeHtml(app.confidence || app.status)}</span>
+                <span class="status-pill">${app.sourceCount} source${app.sourceCount === 1 ? "" : "s"}</span>
+                <span class="status-pill">Checked ${escapeHtml(app.lastChecked)}</span>
+              </div>
+              <span class="set-slot"><span class="status-pill ${slotStatusClass(hasSlot)}">${hasSlot ? "Exact" : "TBA"}</span>${escapeHtml(slotText(app))}</span>
+            </div>
+            <div class="event-actions">
+              <a class="mini-link primary" href="${calendarUrl(app)}">Open in calendar</a>
+              <a class="mini-link secondary" href="${escapeHtml(app.source)}" target="_blank" rel="noopener noreferrer">Details</a>
+              <a class="mini-link secondary" href="${escapeHtml(app.ticket)}" target="_blank" rel="noopener noreferrer">Tickets</a>
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function renderProfile() {
+      const profile = profiles.find(item => item.slug === selectedSlug) || filteredProfiles()[0] || profiles[0];
+      if (!profile) {
+        profilePanel.innerHTML = '<div class="empty-state">No DJ profiles available.</div>';
+        return;
+      }
+      selectedSlug = profile.slug;
+      const chips = unique(profile.vibes.concat(profile.genres.slice(0, 5))).slice(0, 9).map(tag => `<span class="chip">${escapeHtml(tag)}</span>`).join("");
+      profilePanel.innerHTML = `
+        <div class="profile-hero">
+          <img class="profile-avatar" src="${avatarSvg(profile)}" alt="Generated profile artwork for ${escapeHtml(profile.name)}">
+          <div class="profile-title">
+            <h2>${escapeHtml(profile.name)}</h2>
+            <p class="profile-summary">${escapeHtml(profile.summary)}</p>
+            <div class="chips">${chips}</div>
+            <div class="chips">
+              <button class="copy-link" type="button" id="copyProfileLink">Copy profile link</button>
+              <a class="mini-link secondary" href="index.html">Open calendar</a>
+            </div>
+          </div>
+        </div>
+        <div class="profile-body">
+          <div>
+            <h3 class="panel-title">Calendar appearances</h3>
+            <div class="appearances">${renderAppearances(profile)}</div>
+          </div>
+          <aside>
+            <h3 class="panel-title">DJ notes</h3>
+            <div class="notes">${noteRows(profile)}</div>
+            <h3 class="panel-title" style="margin-top:14px">Profile facts</h3>
+            <div class="facts">${factRows(profile)}</div>
+          </aside>
+        </div>
+      `;
+      const copy = document.getElementById("copyProfileLink");
+      copy.addEventListener("click", () => {
+        const link = `${window.location.href.split("#")[0]}#${profile.slug}`;
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(link).then(() => { copy.textContent = "Copied"; });
+        } else {
+          copy.textContent = `#${profile.slug}`;
+        }
+        setTimeout(() => { copy.textContent = "Copy profile link"; }, 1600);
+      });
+    }
+
+    function renderRoster(list) {
+      if (!list.length) {
+        rosterGrid.innerHTML = '<div class="empty-state">No profiles match the current filters.</div>';
+        return;
+      }
+      rosterGrid.innerHTML = list.slice(0, 42).map(profile => {
+        const tags = profile.soundFamilies.slice(0, 3).map(tag => `<span class="chip">${escapeHtml(tag)}</span>`).join("");
+        return `
+          <button class="dj-card ${profile.slug === selectedSlug ? "active" : ""}" type="button" data-profile="${escapeHtml(profile.slug)}">
+            <div class="card-top"><img class="card-avatar" src="${avatarSvg(profile)}" alt=""><b>${escapeHtml(profile.name)}</b></div>
+            <p>${escapeHtml(profile.summary)}</p>
+            <div class="chips">${tags}<span class="chip">${profile.appearances.length} events</span></div>
+          </button>
+        `;
+      }).join("");
+    }
+
+    function renderApp() {
+      const list = filteredProfiles();
+      if (!selectedSlug || !profiles.some(profile => profile.slug === selectedSlug)) {
+        selectedSlug = (list[0] || profiles[0] || {}).slug || "";
+      }
+      if (selectedSlug && !list.some(profile => profile.slug === selectedSlug) && list[0]) {
+        selectedSlug = list[0].slug;
+      }
+      renderStats();
+      renderDirectory(list);
+      renderProfile();
+      renderRoster(list);
+    }
+
+    function selectProfile(slug, updateHash) {
+      selectedSlug = slug;
+      if (updateHash) history.replaceState(null, "", `#${slug}`);
+      renderApp();
+      profilePanel.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function hydrateEvents(events) {
+      const activeEvents = Array.isArray(events) && events.length ? events : sourceData.events;
+      profiles = buildProfiles(activeEvents);
+      const hashSlug = decodeURIComponent(window.location.hash.replace(/^#/, ""));
+      selectedSlug = profiles.some(profile => profile.slug === hashSlug) ? hashSlug : (profiles[0] ? profiles[0].slug : "");
+      renderMonthOptions();
+      renderApp();
+    }
+
+    async function loadExternalEvents() {
+      if (window.location.protocol === "file:") return null;
+      try {
+        const response = await fetch(sourceData.externalDataPath, { cache: "no-store" });
+        if (!response.ok) return null;
+        const payload = await response.json();
+        const events = Array.isArray(payload) ? payload : payload.events;
+        return Array.isArray(events) && events.length ? events : null;
+      } catch (error) {
+        return null;
+      }
+    }
+
+    function setupEvents() {
+      Object.values(controls).forEach(control => {
+        control.addEventListener("input", renderApp);
+        control.addEventListener("change", renderApp);
+      });
+      clearFilters.addEventListener("click", () => {
+        controls.search.value = "";
+        controls.sound.value = "all";
+        controls.month.value = "all";
+        controls.status.value = "all";
+        renderApp();
+      });
+      document.addEventListener("click", event => {
+        const button = event.target.closest("[data-profile]");
+        if (button) selectProfile(button.dataset.profile, true);
+      });
+      window.addEventListener("hashchange", () => {
+        const slug = decodeURIComponent(window.location.hash.replace(/^#/, ""));
+        if (profiles.some(profile => profile.slug === slug)) {
+          selectedSlug = slug;
+          renderApp();
+        }
+      });
+    }
+
+    async function boot() {
+      setupEvents();
+      hydrateEvents(sourceData.events);
+      const loaded = await loadExternalEvents();
+      if (loaded) hydrateEvents(loaded);
+    }
+
+    boot();
+  </script>
+</body>
+</html>

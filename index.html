@@ -267,7 +267,7 @@
 
     .controls {
       display: grid;
-      grid-template-columns: minmax(240px, 1fr) repeat(2, minmax(160px, 220px));
+      grid-template-columns: minmax(220px, 1fr) repeat(3, minmax(150px, 210px));
       gap: 10px;
       margin: 18px 0 14px;
       padding: 12px;
@@ -278,6 +278,50 @@
       top: 0;
       z-index: 20;
       backdrop-filter: blur(14px);
+    }
+
+    .quick-actions {
+      grid-column: 1 / -1;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .quick-filter {
+      min-height: 36px;
+      border: 1px solid var(--line);
+      color: var(--muted);
+      background: #151510;
+      border-radius: 999px;
+      padding: 7px 11px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1.1;
+      text-align: center;
+      transition: transform .18s ease, border-color .18s ease, color .18s ease, background .18s ease;
+    }
+
+    .quick-filter:hover,
+    .quick-filter.active {
+      transform: translateY(-1px);
+      color: var(--void);
+      border-color: var(--acid);
+      background: var(--acid);
+    }
+
+    .export-button {
+      margin-left: auto;
+      color: var(--cyan);
+      border-color: rgba(65,215,255,.45);
+      background: rgba(65,215,255,.08);
+    }
+
+    .export-button:hover {
+      color: var(--void);
+      border-color: var(--cyan);
+      background: var(--cyan);
     }
 
     .search,
@@ -316,12 +360,34 @@
       transition: transform .18s ease, border-color .18s ease, color .18s ease, background .18s ease;
     }
 
+    .month-button span {
+      display: block;
+      font-weight: 900;
+    }
+
+    .month-button b {
+      display: block;
+      margin-top: 2px;
+      color: var(--dim);
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .month-button.has-match {
+      border-color: rgba(198,255,59,.28);
+    }
+
     .month-button:hover,
     .month-button.active {
       transform: translateY(-1px);
       color: var(--void);
       background: var(--acid);
       border-color: var(--acid);
+    }
+
+    .month-button.active b,
+    .month-button:hover b {
+      color: var(--void);
     }
 
     .layout {
@@ -431,6 +497,8 @@
     .calendar-event {
       width: 100%;
       min-height: 27px;
+      display: grid;
+      gap: 2px;
       border: 1px solid rgba(198,255,59,.18);
       border-radius: 5px;
       background: rgba(198,255,59,.1);
@@ -444,10 +512,32 @@
       text-overflow: ellipsis;
     }
 
+    .calendar-event-title,
+    .calendar-event-organizer {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .calendar-event-title {
+      font-weight: 800;
+    }
+
+    .calendar-event-organizer {
+      color: var(--muted);
+      font-size: 10px;
+      line-height: 1.15;
+    }
+
     .calendar-event:hover {
       border-color: var(--acid);
       color: var(--void);
       background: var(--acid);
+    }
+
+    .calendar-event:hover .calendar-event-organizer {
+      color: rgba(8,8,6,.72);
     }
 
     .calendar-event.watch {
@@ -527,6 +617,26 @@
       overflow-wrap: anywhere;
     }
 
+    .organizer-line {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      align-items: baseline;
+      margin-top: -4px;
+      color: var(--dim);
+      font-size: 12px;
+      font-weight: 900;
+      line-height: 1.25;
+      text-transform: uppercase;
+    }
+
+    .organizer-line b {
+      color: var(--acid);
+      font-size: 13px;
+      overflow-wrap: anywhere;
+      text-transform: none;
+    }
+
     .venue {
       color: var(--cyan);
       font-weight: 700;
@@ -555,6 +665,184 @@
 
     .lineup-preview b {
       color: var(--ink);
+    }
+
+    .set-preview {
+      display: grid;
+      gap: 7px;
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 6px;
+      padding: 9px;
+      background: rgba(0,0,0,.2);
+    }
+
+    .set-preview-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      align-items: center;
+      color: var(--dim);
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+
+    .set-preview-top b {
+      color: var(--ink);
+      text-align: right;
+    }
+
+    .set-times-list {
+      display: grid;
+      gap: 7px;
+    }
+
+    .set-time-row,
+    .set-plan-row {
+      display: grid;
+      grid-template-columns: 92px minmax(0, 1fr) auto;
+      gap: 8px;
+      align-items: center;
+      min-height: 44px;
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 6px;
+      padding: 8px;
+      background: rgba(255,255,255,.025);
+    }
+
+    .set-times-list.compact .set-time-row {
+      grid-template-columns: 72px minmax(0, 1fr);
+      min-height: 34px;
+      padding: 6px;
+    }
+
+    .set-times-list.compact .set-status {
+      grid-column: 1 / -1;
+      width: max-content;
+    }
+
+    .set-time {
+      color: var(--acid);
+      font-weight: 900;
+      font-size: 12px;
+      line-height: 1.15;
+      white-space: nowrap;
+    }
+
+    .set-time-main {
+      display: grid;
+      gap: 2px;
+      min-width: 0;
+    }
+
+    .set-time-main b {
+      color: var(--ink);
+      font-size: 13px;
+      overflow-wrap: anywhere;
+    }
+
+    .set-time-main span {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.3;
+      overflow-wrap: anywhere;
+    }
+
+    .set-status {
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 999px;
+      padding: 5px 7px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .set-exact {
+      color: var(--void);
+      border-color: var(--acid);
+      background: var(--acid);
+    }
+
+    .set-tba {
+      color: var(--gold);
+      border-color: rgba(255,209,102,.55);
+      background: rgba(255,209,102,.06);
+    }
+
+    .set-more {
+      color: var(--dim);
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 2px;
+    }
+
+    .source-pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--dim);
+      background: rgba(255,255,255,.03);
+      padding: 4px 7px;
+      font-size: 11px;
+      font-weight: 800;
+      line-height: 1.1;
+    }
+
+    .source-official {
+      color: var(--void);
+      border-color: var(--cyan);
+      background: var(--cyan);
+    }
+
+    .source-secondary {
+      color: var(--void);
+      border-color: var(--gold);
+      background: var(--gold);
+    }
+
+    .source-watchlist {
+      color: var(--gold);
+      border-color: rgba(255,209,102,.6);
+      background: transparent;
+    }
+
+    .card-actions {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 6px;
+      margin-top: 2px;
+    }
+
+    .card-link {
+      min-height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      color: var(--ink);
+      background: #151510;
+      padding: 8px 9px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 900;
+      line-height: 1.15;
+      overflow-wrap: anywhere;
+      transition: transform .18s ease, border-color .18s ease, color .18s ease, background .18s ease;
+    }
+
+    .card-link:hover {
+      transform: translateY(-1px);
     }
 
     .chips {
@@ -688,6 +976,29 @@
       padding-left: 12px;
     }
 
+    .set-planner {
+      display: grid;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .set-plan-row {
+      width: 100%;
+      color: inherit;
+      cursor: pointer;
+      text-align: left;
+      font-family: inherit;
+    }
+
+    .set-plan-row:hover {
+      border-color: var(--acid);
+      background: rgba(198,255,59,.07);
+    }
+
+    .set-plan-row .set-time-main span {
+      color: var(--dim);
+    }
+
     .source-grid {
       display: grid;
       gap: 8px;
@@ -787,6 +1098,10 @@
       color: var(--acid);
     }
 
+    .lineup-section .set-times-list {
+      margin-bottom: 14px;
+    }
+
     .lineup-list {
       display: grid;
       gap: 8px;
@@ -810,6 +1125,21 @@
     .dj-note b {
       color: var(--ink);
       font-size: 14px;
+    }
+
+    .dj-profile-link {
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(198,255,59,.45);
+    }
+
+    .dj-profile-link:hover {
+      color: var(--acid);
+    }
+
+    .dj-separator {
+      color: var(--dim);
+      margin: 0 4px;
     }
 
     .dj-note span {
@@ -864,11 +1194,32 @@
       cursor: pointer;
     }
 
-    .button-link.primary {
+    .button-link.primary,
+    .card-link.primary {
       color: var(--void);
       border-color: var(--acid);
       background: var(--acid);
       font-weight: 900;
+    }
+
+    .button-link.secondary,
+    .card-link.secondary {
+      color: var(--cyan);
+      border-color: rgba(65,215,255,.45);
+      background: rgba(65,215,255,.08);
+    }
+
+    .button-link.secondary:hover,
+    .card-link.secondary:hover {
+      color: var(--void);
+      border-color: var(--cyan);
+      background: var(--cyan);
+    }
+
+    .card-link.primary:hover {
+      color: var(--void);
+      border-color: var(--acid);
+      background: var(--acid);
     }
 
     .footnotes {
@@ -939,6 +1290,15 @@
         grid-template-columns: 1fr;
         position: static;
       }
+      .quick-actions {
+        grid-column: auto;
+      }
+      .quick-filter {
+        flex: 1 1 auto;
+      }
+      .export-button {
+        margin-left: 0;
+      }
       .month-rail {
         grid-template-columns: repeat(4, 1fr);
       }
@@ -958,6 +1318,14 @@
         min-height: 22px;
         padding: 3px;
         font-size: 9px;
+      }
+      .set-time-row,
+      .set-plan-row {
+        grid-template-columns: 78px minmax(0, 1fr);
+      }
+      .set-status {
+        grid-column: 1 / -1;
+        width: max-content;
       }
       .cards {
         grid-template-columns: 1fr;
@@ -1005,11 +1373,12 @@
         <h1>Shanghai 2026 rave calendar</h1>
         <p class="subhead">A sourced, full-year presentation for techno, rave, warehouse, industrial, bass, trance, and serious underground electronic nights around Shanghai. Late-year listings are shown as watchlist months because promoters have not announced most July-December programming yet.</p>
         <div class="source-note">
-          <span class="pill">RA + SmartShanghai + official artist pages</span>
+          <span class="pill">RA + SmartShanghai + official/ticket pages</span>
           <span class="pill">Asia/Shanghai dates</span>
           <span class="pill">Generated visual posters, not official flyers</span>
           <span class="pill">Hero photo: Shanghai Bund, CC0</span>
           <a class="pill" href="venues.html">Venue & crew guide</a>
+          <a class="pill" href="djs.html">DJ database</a>
         </div>
       </div>
       <figure class="hero-picture" aria-label="Shanghai night visual">
@@ -1025,6 +1394,14 @@
     </section>
 
     <section class="controls" aria-label="Calendar controls">
+      <div class="quick-actions" aria-label="Date and export shortcuts">
+        <button class="quick-filter active" type="button" data-window="all">All Dates</button>
+        <button class="quick-filter" type="button" data-window="tonight">Tonight</button>
+        <button class="quick-filter" type="button" data-window="weekend">This Weekend</button>
+        <button class="quick-filter" type="button" data-window="next30">Next 30 Days</button>
+        <button class="quick-filter" type="button" data-window="new">Newly Added</button>
+        <button class="quick-filter export-button" type="button" id="downloadFiltered">Export filtered .ics</button>
+      </div>
       <input class="search" id="searchInput" type="search" placeholder="Search event, venue, genre, promoter">
       <select class="select" id="statusFilter" aria-label="Status filter">
         <option value="all">All statuses</option>
@@ -1040,6 +1417,21 @@
         <option value="experimental">Experimental</option>
         <option value="bass">Bass / club</option>
         <option value="warehouse">Warehouse</option>
+      </select>
+      <select class="select" id="venueFilter" aria-label="Venue and promoter filter">
+        <option value="all">All venues / crews</option>
+        <option value="abyss">Abyss</option>
+        <option value="exit">EXIT</option>
+        <option value="heim">Heim</option>
+        <option value="potent">POTENT</option>
+        <option value="reactor">Reactor</option>
+        <option value="space-panda">Space Panda</option>
+        <option value="alter">ALTER</option>
+        <option value="dirty">Dirty House / INS</option>
+        <option value="illum">ILLUM / KNOT</option>
+        <option value="wigwam">Wigwam</option>
+        <option value="system">System</option>
+        <option value="void-vacuum">VOID / VACUUM</option>
       </select>
     </section>
 
@@ -1061,22 +1453,29 @@
         </section>
 
         <section class="panel">
+          <h2>Set-time planner</h2>
+          <p>Public DJ set times only. Missing slots stay flagged until the venue or promoter publishes them.</p>
+          <div class="set-planner" id="setPlanner"></div>
+        </section>
+
+        <section class="panel">
           <h2>Best current picks</h2>
           <div class="source-grid" id="bestPicks"></div>
         </section>
 
         <section class="panel">
           <h2>Keep watching</h2>
-          <p>Shanghai club listings often land one or two weeks out. For the back half of 2026, monitor Abyss, POTENT, EXIT, Heim, ILLUM, Reactor, Dirty House, Wigwam, System, SmartShanghai, and RA.</p>
+          <p>Shanghai club listings often land one or two weeks out. For the back half of 2026, monitor Abyss, POTENT, EXIT, Heim, ILLUM, Reactor, Dirty House, Wigwam, Specters, System, SmartShanghai, and RA.</p>
           <div class="source-grid">
             <a class="source-link" href="venues.html"><span>Open venue & crew guide</span><span>Guide</span></a>
+            <a class="source-link" href="djs.html"><span>Open DJ database</span><span>DJs</span></a>
           </div>
         </section>
       </aside>
     </section>
 
     <footer class="footnotes">
-      Sources are linked on each card. Resident Advisor pages and SmartShanghai editorial listings were checked during the June 8, 2026 research pass; official Anyma pages were used for the May 2 show. For venue context, see the <a href="venues.html">venue and crew guide</a>. Event art in this file is procedurally generated for presentation purposes, not official promotional artwork.
+      Sources are linked on each card. Resident Advisor pages, SmartShanghai event pages, and the June 2026 SmartShanghai clubbing guide were checked during the June 8, 2026 source refresh; official Anyma pages were used for the May 2 show. For venue context, see the <a href="venues.html">venue and crew guide</a>; for performer context, see the <a href="djs.html">DJ database</a>. Event art in this file is procedurally generated for presentation purposes, not official promotional artwork.
     </footer>
   </main>
 
@@ -1099,13 +1498,28 @@
 
   <script>
     const verified = "2026-06-08";
+    const dayMs = 24 * 60 * 60 * 1000;
+    const today = (() => {
+      const now = new Date();
+      const parts = Object.fromEntries(new Intl.DateTimeFormat("en-US", {
+        timeZone: "Asia/Shanghai",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit"
+      }).formatToParts(now).filter(part => part.type !== "literal").map(part => [part.type, part.value]));
+      if (Number(parts.year) === 2026) return new Date(Number(parts.year), Number(parts.month) - 1, Number(parts.day));
+      const [year, month, day] = verified.split("-").map(Number);
+      return new Date(year, month - 1, day);
+    })();
+    let dateWindow = "all";
     const months = [
       ["Jan", "January"], ["Feb", "February"], ["Mar", "March"], ["Apr", "April"],
       ["May", "May"], ["Jun", "June"], ["Jul", "July"], ["Aug", "August"],
       ["Sep", "September"], ["Oct", "October"], ["Nov", "November"], ["Dec", "December"]
     ];
+    let activeMonth = months[today.getMonth()] ? months[today.getMonth()][0] : "Jun";
 
-    const events = [
+    const fallbackEvents = [
       {
         id: "love-bang", month: "Jan", sortDate: "2026-01-02", date: "Jan 2", time: "22:00-04:00",
         title: "Love Bang: Baby Dance Machine", venue: "C's Bar", district: "Changning",
@@ -1413,6 +1827,15 @@
         description: "Dirty House / INS entry with techno and bass tags; more chaotic club energy than purist techno."
       },
       {
+        id: "cltx-abyss", month: "Jun", sortDate: "2026-06-12", date: "Jun 12", time: "Check Abyss",
+        title: "CLTX", venue: "Abyss Shanghai", district: "Huangpu",
+        vibe: ["hard", "underground"], genre: "hard techno, rave",
+        confidence: "Watch", status: "watch", price: "Check venue", age: "Check venue",
+        source: "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026", sourceLabel: "SmartShanghai",
+        imageTheme: "ember",
+        description: "SmartShanghai lead for one of Abyss's harder June bookings. Treat as single-source until the venue/ticket post is checked."
+      },
+      {
         id: "santa-k", month: "Jun", sortDate: "2026-06-13", date: "Jun 13", time: "22:30-06:00",
         title: "Santa K x TURBO", venue: "Abyss Shanghai", district: "Huangpu",
         vibe: ["hard", "underground"], genre: "hard techno, new trance",
@@ -1420,6 +1843,15 @@
         source: "https://ra.co/events/2458037", sourceLabel: "Resident Advisor",
         imageTheme: "ember",
         description: "Best current hard/fast pick: Santa K, DISCIPLINE, LaGlory, PASHRAWBOI, and NAKIN at Abyss."
+      },
+      {
+        id: "matisa-limsum", month: "Jun", sortDate: "2026-06-13", date: "Jun 13", time: "23:59-06:00",
+        title: "Matisa + Limsum", venue: "POTENT", district: "Huangpu",
+        vibe: ["underground", "date"], genre: "house, techno-adjacent",
+        confidence: "High", status: "upcoming", price: "120 RMB", age: "18+",
+        source: "https://ra.co/events/2461476", sourceLabel: "Resident Advisor",
+        imageTheme: "gold",
+        description: "Late POTENT booking with Matisa, Limsum, and Max Shen. More bright and rolling than hard, but a strong club pick."
       },
       {
         id: "synth-crush", month: "Jun", sortDate: "2026-06-13", date: "Jun 13", time: "22:00-04:30",
@@ -1431,6 +1863,24 @@
         description: "Machine-music night with Altieri3000 live, Velvet Robot live, Hello Shitty, Ruima, and Illsee."
       },
       {
+        id: "the-woods", month: "Jun", sortDate: "2026-06-13", date: "Jun 13", time: "Check venue",
+        title: "Love Bang: The Woods", venue: "Specters", district: "Changning",
+        vibe: ["experimental", "underground"], genre: "goth, darkwave, industrial, EBM",
+        confidence: "Watch", status: "watch", price: "Check venue", age: "Check venue",
+        source: "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026", sourceLabel: "SmartShanghai",
+        imageTheme: "rose",
+        description: "Single-source lead for Love Bang's darker Specters night: goth, darkwave, dark italo, industrial, post-punk, EBM, and witch house."
+      },
+      {
+        id: "fengyun-5", month: "Jun", sortDate: "2026-06-13", date: "Jun 13", time: "22:00-06:00",
+        title: "FENGYUN Vol. 5", venue: "M101 Room", district: "Huangpu",
+        vibe: ["experimental", "underground"], genre: "club, experimental electronic",
+        confidence: "Medium", status: "upcoming", price: "120 RMB", age: "18+",
+        source: "https://ra.co/events/2460549", sourceLabel: "Resident Advisor",
+        imageTheme: "cyan",
+        description: "Heim-administered RA listing with Mamayo, Gooooose, COLA REN, DJ TRUCK, and meer. Good underground lead, but genre detail is broad."
+      },
+      {
         id: "horizon", month: "Jun", sortDate: "2026-06-13", date: "Jun 13", time: "15:00-00:00",
         title: "Horizon Rooftop feat. Erik Hagleton", venue: "Pop Bar", district: "The Bund",
         vibe: ["date"], genre: "techno, house",
@@ -1438,6 +1888,39 @@
         source: "https://ra.co/events/2459595", sourceLabel: "Resident Advisor",
         imageTheme: "gold",
         description: "Outdoor Bund rooftop party. This is the smoothest date-friendly pick before a harder afterparty."
+      },
+      {
+        id: "nosaj-thing", month: "Jun", sortDate: "2026-06-13", date: "Jun 13", time: "22:00-05:00",
+        title: "REACTOR pres. Nosaj Thing", venue: "Reactor Shanghai", district: "Changning",
+        vibe: ["experimental", "bass", "underground"], genre: "experimental, future beats, hip-hop",
+        confidence: "High", status: "upcoming", price: "148 RMB", age: "18+",
+        source: "https://ra.co/events/2453279", sourceLabel: "Resident Advisor",
+        imageTheme: "acid",
+        description: "C-Park electronic pick with DJ LOVERBOY, DJ EBP, Nosaj Thing, and GaoQiao. Not techno, but a credible experimental late-night option.",
+        setTimes: [
+          { name: "DJ LOVERBOY", start: "22:00", end: "23:30", status: "exact", sourceLabel: "Resident Advisor", source: "https://ra.co/events/2453279" },
+          { name: "DJ EBP", start: "23:30", end: "01:00", status: "exact", sourceLabel: "Resident Advisor", source: "https://ra.co/events/2453279" },
+          { name: "Nosaj Thing", start: "01:00", end: "03:00", status: "exact", sourceLabel: "Resident Advisor", source: "https://ra.co/events/2453279" },
+          { name: "GaoQiao", start: "03:00", end: "05:00", status: "exact", sourceLabel: "Resident Advisor", source: "https://ra.co/events/2453279" }
+        ]
+      },
+      {
+        id: "system-popup", month: "Jun", sortDate: "2026-06-13", date: "Jun 13-Aug", time: "Saturday nights",
+        title: "System summer pop-up", venue: "Arcane / Shanghai Hotel", district: "Jing'an",
+        vibe: ["warehouse", "underground"], genre: "techno, club, multi-room pop-up",
+        confidence: "Watch", status: "watch", price: "Check System", age: "Check promoter",
+        source: "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026", sourceLabel: "SmartShanghai",
+        imageTheme: "ember",
+        description: "SmartShanghai reports System returning to the Shanghai Hotel e-sports arena on Saturdays until early August. Lineups need promoter confirmation."
+      },
+      {
+        id: "alter-pavillon", month: "Jun", sortDate: "2026-06-18", date: "Jun 18", time: "15:00-02:00",
+        title: "ALTER. Pavillon", venue: "Beaufort Terrace", district: "Huangpu",
+        vibe: ["date", "experimental"], genre: "electronic, live acoustic-electronic, radio stream",
+        confidence: "High", status: "upcoming", price: "128-198 RMB", age: "Not listed",
+        source: "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15", sourceLabel: "SmartShanghai",
+        imageTheme: "gold",
+        description: "Long-form Yu Garden-adjacent session by ALTER. and byyb with DJs, a radio livestream, and Wang Meng + Yu Miao live."
       },
       {
         id: "mrd", month: "Jun", sortDate: "2026-06-19", date: "Jun 19", time: "Check venue",
@@ -1458,6 +1941,42 @@
         description: "Single-source lead for a textured Heim night joining Dutch producer/DJ Jasmin with Knopha."
       },
       {
+        id: "liminal-dreams", month: "Jun", sortDate: "2026-06-20", date: "Jun 20", time: "Check Wigwam",
+        title: "Liminal Dreams", venue: "Wigwam", district: "Changning",
+        vibe: ["experimental", "date"], genre: "ambient, outer music, electronic",
+        confidence: "Watch", status: "watch", price: "Check Wigwam", age: "Check venue",
+        source: "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026", sourceLabel: "SmartShanghai",
+        imageTheme: "cyan",
+        description: "SmartShanghai lead for an ambient and outer-music night across Asia. More listening-session than rave."
+      },
+      {
+        id: "botox-fatale", month: "Jun", sortDate: "2026-06-26", date: "Jun 26", time: "Check Abyss",
+        title: "Botox Fatale", venue: "Abyss Shanghai", district: "Huangpu",
+        vibe: ["hard", "underground"], genre: "hard techno, rave",
+        confidence: "Watch", status: "watch", price: "Check venue", age: "Check venue",
+        source: "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026", sourceLabel: "SmartShanghai",
+        imageTheme: "ember",
+        description: "SmartShanghai lead for another harder-end Abyss booking. Needs official venue/ticket confirmation before planning around it."
+      },
+      {
+        id: "devils-dancers", month: "Jun", sortDate: "2026-06-26", date: "Jun 26", time: "Check venue",
+        title: "The Devil's Dancers", venue: "Specters", district: "Changning",
+        vibe: ["experimental", "underground"], genre: "post-punk, cold wave, minimal wave, dark wave, shoegaze",
+        confidence: "Watch", status: "watch", price: "Check venue", age: "Check venue",
+        source: "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026", sourceLabel: "SmartShanghai",
+        imageTheme: "rose",
+        description: "Darker dance-adjacent Specters lead. Lower techno fit, but useful for goth and wave-oriented nights."
+      },
+      {
+        id: "cyber-buddha", month: "Jun", sortDate: "2026-06-26", date: "Jun 26", time: "20:00",
+        title: "Cyber Buddha: Electronic Nomads of Isan", venue: "Star@ Culture Center", district: "Putuo",
+        vibe: ["experimental", "date"], genre: "electronic, acid folk, ambient, psychedelic",
+        confidence: "High", status: "upcoming", price: "168-288 RMB", age: "Not listed",
+        source: "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1", sourceLabel: "SmartShanghai",
+        imageTheme: "gold",
+        description: "Electronic-world-music live show with The Hymmapan Electron, Taiga, and MICO. Not a club rave, but a strong experimental electronic listing."
+      },
+      {
         id: "anika-kunst", month: "Jun", sortDate: "2026-06-27", date: "Jun 27", time: "Check venue",
         title: "Anika Kunst", venue: "POTENT", district: "Huangpu",
         vibe: ["underground", "date"], genre: "techno, house",
@@ -1476,6 +1995,15 @@
         description: "SmartShanghai lead with QQBBG and Liu Qoo; high-color KNOT club-rave direction."
       },
       {
+        id: "hexscape", month: "Jun", sortDate: "2026-06-27", date: "Jun 27", time: "Check EXIT",
+        title: "Hexscape pres. Bi-NON & chillchillshit", venue: "EXIT", district: "Changning",
+        vibe: ["experimental", "underground"], genre: "A/V live, hypermodern club, electronic",
+        confidence: "Watch", status: "watch", price: "Check EXIT", age: "Check venue",
+        source: "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026", sourceLabel: "SmartShanghai",
+        imageTheme: "cyan",
+        description: "Single-source SmartShanghai lead for an immersive A/V live set at EXIT with Chuan, Na$ty, and Toyn on support."
+      },
+      {
         id: "jaal", month: "Jun", sortDate: "2026-06-27", date: "Jun 27", time: "Check venue",
         title: "JAAL The Machine live acid techno", venue: "Fenrir", district: "Changning",
         vibe: ["experimental", "hard"], genre: "acid techno, metal crossover",
@@ -1483,8 +2011,19 @@
         source: "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026", sourceLabel: "SmartShanghai",
         imageTheme: "ember",
         description: "Single-source lead for live acid techno paired with metal bands at Fenrir."
+      },
+      {
+        id: "youshan-warmup", month: "Jun", sortDate: "2026-06-27", date: "Jun 27", time: "Check Wigwam",
+        title: "Youshan Festival warmup", venue: "Wigwam", district: "Changning",
+        vibe: ["underground", "experimental"], genre: "house, downtempo, minimal, ambient, techno, bass, trance",
+        confidence: "Watch", status: "watch", price: "Check Wigwam", age: "Check venue",
+        source: "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026", sourceLabel: "SmartShanghai",
+        imageTheme: "acid",
+        description: "Warmup lead for a July secret-forest festival. Lineup was still TBA in the public guide, so keep it on watch only."
       }
     ];
+    let events = fallbackEvents;
+    const externalDataPath = "data/events.json";
 
     const lineupProfiles = {
       "love-bang": [
@@ -1639,19 +2178,51 @@
       "kollin": [
         { name: "KOLLIN", note: "Dirty House headliner for a bass and techno-tagged INS night; expect club impact rather than purist techno." }
       ],
+      "cltx-abyss": [
+        { name: "CLTX", note: "Harder-end Abyss lead from SmartShanghai's June guide; verify through Abyss or ticketing before treating details as final." },
+        { name: "Abyss", note: "TX Huaihai club repeatedly framed as Shanghai's harder, faster techno room." }
+      ],
       "santa-k": [
         { name: "Santa K", note: "Hard techno and new-trance focused artist; the strongest current pick for fast rave pressure." },
         { name: "PASHRAWBOI", note: "Support on the TURBO bill, likely in the same high-speed club/rave lane." },
         { name: "NAKIN / DISCIPLINE / LaGlory", note: "Local and support names rounding out the Abyss hard-techno night." }
+      ],
+      "matisa-limsum": [
+        { name: "Matisa", note: "Milan-based artist listed by RA and SmartShanghai; expect bright, emotional, house-forward club energy." },
+        { name: "Limsum", note: "Philippines-linked support on the POTENT bill." },
+        { name: "Max Shen", note: "POTENT-associated selector rounding out the late-night room." }
       ],
       "synth-crush": [
         { name: "Altieri3000", note: "Live act on the EXIT bill; the event points toward electro, EBM, industrial, techno, and IDM." },
         { name: "Velvet Robot", note: "Live machine-music support; good sign for a darker, less commercial night." },
         { name: "Hello Shitty / Ruima / Illsee", note: "Local selectors for the Synth Crush underground program." }
       ],
+      "the-woods": [
+        { name: "Love Bang", note: "Long-running Shanghai party crew taking a darker lane here." },
+        { name: "Specters", note: "C-Park-adjacent underground bar/club context; verify the poster or venue post for time and ticket details." }
+      ],
+      "fengyun-5": [
+        { name: "Gooooose", note: "Shanghai experimental electronic artist; a strong signal that this is more than a generic club booking." },
+        { name: "Mamayo / COLA REN", note: "RA-listed lineup names for the M101 room event." },
+        { name: "DJ TRUCK / meer.", note: "Additional selectors on the Heim-administered FENGYUN listing." }
+      ],
       "horizon": [
         { name: "Erik Hagleton", note: "French house/techno DJ booked for a scenic Bund rooftop event." },
         { name: "Space Panda support", note: "The setup is built for an easy date-night opener rather than all-night basement intensity." }
+      ],
+      "nosaj-thing": [
+        { name: "Nosaj Thing", note: "LA electronic producer tied to atmospheric beats and experimental club-adjacent sound." },
+        { name: "DJ EBP / GaoQiao", note: "Shanghai selectors bridging the international headliner into the local Reactor room." },
+        { name: "DJ LOVERBOY", note: "Opening slot on the RA schedule; check Reactor for exact set-time changes." }
+      ],
+      "system-popup": [
+        { name: "System", note: "Shanghai club institution returning as a temporary Saturday pop-up according to SmartShanghai." },
+        { name: "Arcane / Shanghai Hotel", note: "Reported location for the June-to-August run; treat specific rooms and themes as promoter-confirmation items." }
+      ],
+      "alter-pavillon": [
+        { name: "Chingyi / Chuan", note: "Two of the DJs listed for the long afternoon-to-night Pavilion session." },
+        { name: "Xiaolaba / Golgol / Chiyokoo / Pei", note: "Additional DJs on the SmartShanghai event page." },
+        { name: "Wang Meng + Yu Miao", note: "Live acoustic-electronic performance connecting the garden setting to electronic sound." }
       ],
       "mrd": [
         { name: "MRD", note: "Norwegian artist associated with eurodance, trance, and techno; verify the Dirty House listing before planning." }
@@ -1659,6 +2230,21 @@
       "jasmin-knopha": [
         { name: "Jasmin", note: "Dutch producer/DJ lead listed by SmartShanghai; framed around a techno-dubstep hybrid." },
         { name: "Knopha", note: "China-based electronic artist/DJ known for leftfield club, house, and textured electronic records." }
+      ],
+      "liminal-dreams": [
+        { name: "Liminal Dreams", note: "Ambient and outer-music focused Wigwam lead, better for listening and atmosphere than hard dancing." }
+      ],
+      "botox-fatale": [
+        { name: "Botox Fatale", note: "SmartShanghai flags this as one of Abyss's harder June bookings; details remain single-source." },
+        { name: "Abyss", note: "Use venue WeChat or ticketing to confirm time, price, and support lineup." }
+      ],
+      "devils-dancers": [
+        { name: "The Devil's Dancers", note: "Dark-wave and post-punk-leaning Specters lead; lower techno fit but useful for darker dance nights." }
+      ],
+      "cyber-buddha": [
+        { name: "The Hymmapan Electron", note: "Thai ensemble blending Isan folk with electronic rhythms." },
+        { name: "Taiga", note: "Chengdu-linked duo mixing nomadic traditions with psychedelic electronic sound." },
+        { name: "MICO", note: "Ambient and IDM-influenced electronic traveler on the bill." }
       ],
       "anika-kunst": [
         { name: "Anika Kunst", note: "Spanish techno/house DJ; a likely tasteful POTENT pick if the single-source listing is confirmed." },
@@ -1668,10 +2254,18 @@
         { name: "QQBBG", note: "KNOT-listed artist for a hyperpop, trance, and techno-leaning ILLUM night." },
         { name: "Liu Qoo", note: "Artist on the KNOT bill; likely part of the colorful high-energy club-rave lane." }
       ],
+      "hexscape": [
+        { name: "Bi-NON & chillchillshit", note: "A/V live pairing described by SmartShanghai as intense and immersive." },
+        { name: "Chuan / Na$ty / Toyn", note: "DJ support listed in the June guide; confirm through EXIT before relying on set times." }
+      ],
       "jaal": [
         { name: "JAAL The Machine", note: "Live acid-techno lead listed by SmartShanghai, paired with heavier crossover acts." }
       ]
-    };
+,
+      "youshan-warmup": [
+        { name: "Youshan Festival", note: "Secret-forest festival warmup lead with broad house, downtempo, ambient, techno, bass, and trance framing." },
+        { name: "Wigwam", note: "C-Park club context; lineup was still TBA in the public guide." }
+      ]    };
 
     const watchMonths = {
       Jul: {
@@ -1709,18 +2303,18 @@
     const routes = {
       easy: {
         title: "Skyline first, bass later",
-        body: "Start at Horizon Rooftop or another Bund rooftop around sunset, then decide after midnight whether to move to POTENT, EXIT, or Abyss. Lowest friction for a girlfriend date because it begins scenic and only gets heavier if the mood is right.",
-        picks: ["horizon", "milo-cosmjn", "synth-crush"]
+        body: "Start at Horizon Rooftop or ALTER. Pavillon, then decide after midnight whether to move to POTENT, EXIT, or Abyss. Lowest friction for a girlfriend date because it begins scenic or garden-like and only gets heavier if the mood is right.",
+        picks: ["horizon", "alter-pavillon", "matisa-limsum"]
       },
       deep: {
         title: "Underground without overload",
-        body: "Aim for Synth Crush at EXIT or a Heim/POTENT night. This route keeps the music interesting without going straight to punishing hard techno.",
-        picks: ["synth-crush", "milo-cosmjn", "anika-kunst"]
+        body: "Aim for Synth Crush, FENGYUN, or Reactor's Nosaj Thing night. This route keeps the music interesting without going straight to punishing hard techno.",
+        picks: ["synth-crush", "fengyun-5", "nosaj-thing"]
       },
       hard: {
         title: "Full rave pressure",
-        body: "Go to Abyss after 23:30. Santa K x TURBO is the clearest current hard/fast option, with Techno Worlds and Caroline Roxy as the strongest recent references.",
-        picks: ["santa-k", "caroline-roxy", "techno-worlds"]
+        body: "Go to Abyss after 23:30. Santa K x TURBO is the clearest current hard/fast option; CLTX and Botox Fatale stay on the watchlist until venue/ticket details are public.",
+        picks: ["santa-k", "cltx-abyss", "botox-fatale"]
       }
     };
 
@@ -1729,9 +2323,70 @@
     const searchInput = document.getElementById("searchInput");
     const statusFilter = document.getElementById("statusFilter");
     const vibeFilter = document.getElementById("vibeFilter");
+    const venueFilter = document.getElementById("venueFilter");
+    const downloadFiltered = document.getElementById("downloadFiltered");
     const modal = document.getElementById("eventModal");
     const routeCard = document.getElementById("routeCard");
     const bestPicks = document.getElementById("bestPicks");
+    const setPlanner = document.getElementById("setPlanner");
+
+    const organizerOverrides = {
+      "love-bang": "Love Bang",
+      "byyb-conceptual": "byyb Radio",
+      "techno-basics": "Abyss Shanghai",
+      "lorenzo-senni": "Antigen",
+      "void-vacuum": "VOID / VACUUM / EXIT",
+      "exxx-plural": "EXXX",
+      "motor-city": "Tech-no-logical World",
+      "potent-five": "POTENT",
+      "tempio-potent": "TEMPIO / POTENT",
+      "schwartz": "Schwartz",
+      "noizar-soyo": "House of Visions",
+      "xulalit": "Siam After Dark",
+      "lacchesi": "The Rite",
+      "cam-girl": "KNOT",
+      "rui-ho": "A.T.M",
+      "anyma": "Anyma",
+      "dark-haze": "EDK / DARK HAZE",
+      "abibas": "ABIBAS CLUB",
+      "linear-system": "POTENT",
+      "system-secret": "System",
+      "cocarde": "Cocarde",
+      "up-2-u": "Heim / ALTER.",
+      "captain25": "MET Underground",
+      "hotl4b": "HOTL4B / onefortyasia",
+      "body-loop": "BODY LOOP",
+      "tomo": "egregore.ttte",
+      "nightwave": "Space Panda",
+      "janein": "POTENT",
+      "tham": "Abyss Shanghai",
+      "techno-worlds": "Techno Worlds / VACUUM",
+      "caroline-roxy": "FaQ",
+      "sunkissed": "Space Panda",
+      "milo-cosmjn": "POTENT",
+      "kollin": "Dirty House",
+      "cltx-abyss": "Abyss Shanghai",
+      "santa-k": "Abyss Shanghai / TURBO",
+      "matisa-limsum": "POTENT",
+      "synth-crush": "EXIT",
+      "the-woods": "Love Bang",
+      "fengyun-5": "FENGYUN / Heim",
+      "horizon": "Space Panda",
+      "nosaj-thing": "Reactor Shanghai",
+      "system-popup": "System",
+      "alter-pavillon": "ALTER. / byyb",
+      "mrd": "Dirty House",
+      "jasmin-knopha": "Heim",
+      "liminal-dreams": "Wigwam",
+      "botox-fatale": "Abyss Shanghai",
+      "devils-dancers": "Specters",
+      "cyber-buddha": "Cyber Buddha",
+      "anika-kunst": "POTENT",
+      "truth-lies": "KNOT",
+      "hexscape": "Hexscape",
+      "jaal": "Fenrir",
+      "youshan-warmup": "Youshan / Wigwam"
+    };
 
     function escapeHtml(value) {
       return String(value).replace(/[&<>"']/g, char => ({
@@ -1743,7 +2398,24 @@
       }[char]));
     }
 
+    function djSlug(name) {
+      return String(name || "dj").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "dj";
+    }
+
+    function djProfileUrl(name) {
+      return `djs.html#${djSlug(name)}`;
+    }
+
+    function djProfileLinksHtml(name) {
+      const names = splitPerformerNames(name);
+      if (names.length <= 1) return `<a class="dj-profile-link" href="${djProfileUrl(name)}">${escapeHtml(name)}</a>`;
+      return names.map(item => `<a class="dj-profile-link" href="${djProfileUrl(item)}">${escapeHtml(item)}</a>`).join('<span class="dj-separator">/</span>');
+    }
+
     function lineupFor(event) {
+      if (Array.isArray(event.lineup) && event.lineup.length) {
+        return event.lineup.map(item => typeof item === "string" ? { name: item, note: "Lineup listed by the event source; exact set time may still need venue confirmation." } : item);
+      }
       return lineupProfiles[event.id] || [
         { name: event.title, note: "Lineup detail was limited in public sources; use the event source link for confirmation before planning around a specific DJ." }
       ];
@@ -1751,6 +2423,409 @@
 
     function lineupText(event) {
       return lineupFor(event).map(item => `${item.name} ${item.note}`).join(" ");
+    }
+
+    function parseIsoDate(value) {
+      const [year, month, day] = String(value).slice(0, 10).split("-").map(Number);
+      if (!year || !month || !day) return null;
+      return new Date(year, month - 1, day);
+    }
+
+    function addDays(date, days) {
+      const next = new Date(date);
+      next.setDate(next.getDate() + days);
+      return next;
+    }
+
+    function sameDay(first, second) {
+      return first.getFullYear() === second.getFullYear()
+        && first.getMonth() === second.getMonth()
+        && first.getDate() === second.getDate();
+    }
+
+    function eventDate(event) {
+      return parseIsoDate(event.sortDate);
+    }
+
+    function thisWeekendRange() {
+      const mondayOffset = (today.getDay() + 6) % 7;
+      const friday = addDays(today, 4 - mondayOffset);
+      return [friday, addDays(friday, 2)];
+    }
+
+    function addedAtFor(event) {
+      return event.addedAt || (event.status === "past" ? "archive build" : verified);
+    }
+
+    function isNewlyAdded(event) {
+      if (!event.addedAt) return event.status !== "past";
+      const added = parseIsoDate(event.addedAt);
+      if (!added) return false;
+      const ageInDays = Math.floor((today - added) / dayMs);
+      return ageInDays >= 0 && ageInDays <= 14;
+    }
+
+    function dateWindowMatches(event) {
+      const date = eventDate(event);
+      if (!date) return true;
+      if (dateWindow === "tonight") return sameDay(date, today);
+      if (dateWindow === "weekend") {
+        const [start, end] = thisWeekendRange();
+        return date >= start && date <= end;
+      }
+      if (dateWindow === "next30") return date >= today && date <= addDays(today, 30);
+      if (dateWindow === "new") return isNewlyAdded(event);
+      return true;
+    }
+
+    function organizerFor(event) {
+      const explicit = event.organizer || event.organiser || event.promoter || event.crew || event.collective;
+      if (explicit) return String(explicit).trim();
+      if (organizerOverrides[event.id]) return organizerOverrides[event.id];
+      const title = String(event.title || "").trim();
+      const presMatch = title.match(/^(.+?)\s+(?:pres\.|presents)\s+/i);
+      if (presMatch) return presMatch[1].trim();
+      const colonMatch = title.match(/^([^:]{2,36}):/);
+      if (colonMatch) return colonMatch[1].trim();
+      const xMatch = title.match(/^(.+?)\s+x\s+(.+?)(?:\s|:|$)/i);
+      if (xMatch) return `${xMatch[1].trim()} / ${xMatch[2].trim()}`;
+      return event.venue || "Organizer TBA";
+    }
+
+    function sourceCountFor(event) {
+      return Array.isArray(event.sources) && event.sources.length ? event.sources.length : 1;
+    }
+
+    function sourceStatusFor(event) {
+      if (event.sourceStatus) return event.sourceStatus;
+      if (event.status === "watch" || event.confidence === "Watch") return "watchlist";
+      const sourceText = [event.source, event.sourceLabel].join(" ").toLowerCase();
+      if (sourceText.includes("official") || sourceText.includes("anyma.com")) return "official";
+      return "secondary";
+    }
+
+    function sourceStatusLabel(event) {
+      const status = sourceStatusFor(event);
+      if (status === "official") return "Official";
+      if (status === "watchlist") return "Watchlist";
+      return "Secondary";
+    }
+
+    function sourceStatusClass(event) {
+      return `source-${sourceStatusFor(event)}`;
+    }
+
+    function lastCheckedFor(event) {
+      return event.lastChecked || verified;
+    }
+
+    function sourceMetaHtml(event) {
+      const count = sourceCountFor(event);
+      return `
+        <div class="source-meta">
+          <span class="source-pill">Checked ${escapeHtml(lastCheckedFor(event))}</span>
+          <span class="source-pill">${count} source${count === 1 ? "" : "s"}</span>
+          <span class="source-pill ${sourceStatusClass(event)}">${escapeHtml(sourceStatusLabel(event))}</span>
+        </div>
+      `;
+    }
+
+    function eventDetailsUrl(event) {
+      return event.detailsUrl || event.source;
+    }
+
+    function eventTicketUrl(event) {
+      return event.ticketUrl || event.ticket || event.source;
+    }
+
+    function ticketLabelFor(event) {
+      if (event.status === "watch" || sourceStatusFor(event) === "watchlist") return "Verify tickets";
+      if (sourceStatusFor(event) === "official") return "Buy tickets";
+      return "Tickets / buying info";
+    }
+
+    function eventActionLinksHtml(event, mode = "card") {
+      const linkClass = mode === "modal" ? "button-link" : "card-link";
+      return `
+        <a class="${linkClass} secondary event-link" href="${escapeHtml(eventDetailsUrl(event))}" target="_blank" rel="noopener noreferrer" aria-label="Open details for ${escapeHtml(event.title)}">Details</a>
+        <a class="${linkClass} primary event-link" href="${escapeHtml(eventTicketUrl(event))}" target="_blank" rel="noopener noreferrer" aria-label="Open ticket or buying information for ${escapeHtml(event.title)}">${escapeHtml(ticketLabelFor(event))}</a>
+      `;
+    }
+
+    function splitPerformerNames(name) {
+      const value = String(name || "").trim();
+      if (!value) return [];
+      if (!/\s\/\s/.test(value)) return [value];
+      return value.split(/\s+\/\s+/).map(item => item.trim()).filter(Boolean);
+    }
+
+    function normalizeSetTime(slot, event) {
+      const start = slot.start || slot.startTime || "";
+      const end = slot.end || slot.endTime || "";
+      return {
+        name: slot.name || slot.dj || slot.artist || "TBA",
+        start,
+        end,
+        stage: slot.stage || "",
+        note: slot.note || "",
+        status: slot.status || (start || end ? "exact" : "not-published"),
+        source: slot.source || event.source,
+        sourceLabel: slot.sourceLabel || event.sourceLabel
+      };
+    }
+
+    function expandedLineupFor(event) {
+      return lineupFor(event).flatMap(item => {
+        const names = splitPerformerNames(item.name);
+        return names.length ? names.map(name => ({ name, note: item.note || "" })) : [{ name: item.name, note: item.note || "" }];
+      });
+    }
+
+    function timeToMinutes(value) {
+      const match = String(value || "").match(/(\d{1,2}):(\d{2})/);
+      if (!match) return Number.MAX_SAFE_INTEGER;
+      let minutes = Number(match[1]) * 60 + Number(match[2]);
+      if (minutes < 12 * 60) minutes += 24 * 60;
+      return minutes;
+    }
+
+    function hasPublishedSetTime(slot) {
+      return Boolean(slot.start || slot.end);
+    }
+
+    function setTimesFor(event) {
+      const explicit = Array.isArray(event.setTimes) ? event.setTimes.map(slot => normalizeSetTime(slot, event)) : [];
+      if (explicit.length) return explicit.sort((a, b) => timeToMinutes(a.start || a.end) - timeToMinutes(b.start || b.end));
+      return expandedLineupFor(event).map(item => ({
+        name: item.name,
+        start: "",
+        end: "",
+        stage: "",
+        note: item.note,
+        status: "not-published",
+        source: event.source,
+        sourceLabel: event.sourceLabel
+      }));
+    }
+
+    function setTimeRange(slot, fallback = "TBA") {
+      if (slot.start && slot.end) return `${slot.start}-${slot.end}`;
+      if (slot.start) return `${slot.start}`;
+      if (slot.end) return `until ${slot.end}`;
+      return fallback;
+    }
+
+    function setTimeStatusLabel(slot) {
+      return hasPublishedSetTime(slot) ? "Exact" : "Not published";
+    }
+
+    function setTimeStatusClass(slot) {
+      return hasPublishedSetTime(slot) ? "set-exact" : "set-tba";
+    }
+
+    function setTimeSummary(event) {
+      const exact = setTimesFor(event).filter(hasPublishedSetTime).length;
+      if (exact) return `${exact} exact DJ slot${exact === 1 ? "" : "s"}`;
+      return "DJ slots not published";
+    }
+
+    function setTimesText(event) {
+      return setTimesFor(event).map(slot => `${setTimeRange(slot)} ${slot.name} (${setTimeStatusLabel(slot)})`).join("; ");
+    }
+
+    function renderSetTimeRows(event, limit = Infinity, compact = false) {
+      const slots = setTimesFor(event);
+      const visible = slots.slice(0, limit);
+      const rows = visible.map(slot => `
+        <div class="set-time-row">
+          <div class="set-time">${escapeHtml(setTimeRange(slot))}</div>
+          <div class="set-time-main">
+            <b>${escapeHtml(slot.name)}</b>
+            <span>${escapeHtml(slot.note || slot.stage || `${slot.sourceLabel || event.sourceLabel} schedule status`)}</span>
+          </div>
+          <span class="set-status ${setTimeStatusClass(slot)}">${escapeHtml(setTimeStatusLabel(slot))}</span>
+        </div>
+      `).join("");
+      const more = slots.length > visible.length ? `<div class="set-more">+${slots.length - visible.length} more DJ${slots.length - visible.length === 1 ? "" : "s"}</div>` : "";
+      return `<div class="set-times-list ${compact ? "compact" : ""}">${rows}${more}</div>`;
+    }
+
+    function monthCodeFromSortDate(value) {
+      const month = Number(String(value || "").slice(5, 7));
+      return months[month - 1] ? months[month - 1][0] : "Jun";
+    }
+
+    function arrayFromData(value, fallback = []) {
+      if (Array.isArray(value)) return value.map(item => String(item).trim()).filter(Boolean);
+      if (typeof value === "string") return value.split(",").map(item => item.trim()).filter(Boolean);
+      return fallback;
+    }
+
+    function normalizeExternalEvent(event) {
+      if (!event || !event.id || !event.sortDate || !event.title || !event.source) return null;
+      const fallback = fallbackEvents.find(item => item.id === event.id) || {};
+      const normalized = {
+        ...fallback,
+        ...event,
+        id: String(event.id),
+        month: event.month || fallback.month || monthCodeFromSortDate(event.sortDate),
+        date: event.date || fallback.date || event.sortDate,
+        time: event.time || fallback.time || "Check source",
+        venue: event.venue || fallback.venue || "Check source",
+        district: event.district || fallback.district || "Shanghai",
+        vibe: arrayFromData(event.vibe, fallback.vibe || ["underground"]),
+        genre: event.genre || fallback.genre || "electronic, club",
+        confidence: event.confidence || fallback.confidence || "Watch",
+        status: event.status || fallback.status || "watch",
+        price: event.price || fallback.price || "Check source",
+        age: event.age || fallback.age || "Check venue",
+        sourceLabel: event.sourceLabel || fallback.sourceLabel || "Source",
+        imageTheme: event.imageTheme || fallback.imageTheme || "acid",
+        description: event.description || fallback.description || "Public event listing; confirm details at the source before planning.",
+        sources: Array.isArray(event.sources) ? event.sources : fallback.sources,
+        sourceStatus: event.sourceStatus || fallback.sourceStatus,
+        lastChecked: event.lastChecked || fallback.lastChecked,
+        addedAt: event.addedAt || fallback.addedAt,
+        lineup: Array.isArray(event.lineup) ? event.lineup : fallback.lineup,
+        setTimes: Array.isArray(event.setTimes) ? event.setTimes : fallback.setTimes
+      };
+      return normalized;
+    }
+
+    async function loadExternalEvents() {
+      if (!window.fetch) return null;
+      try {
+        const response = await fetch(externalDataPath, { cache: "no-store" });
+        if (!response.ok) return null;
+        const payload = await response.json();
+        const rawEvents = Array.isArray(payload) ? payload : payload.events;
+        if (!Array.isArray(rawEvents) || rawEvents.length === 0) return null;
+        const loaded = rawEvents.map(normalizeExternalEvent).filter(Boolean);
+        return loaded.length ? loaded : null;
+      } catch (_) {
+        return null;
+      }
+    }
+
+    function searchableText(event) {
+      return [event.title, organizerFor(event), event.venue, event.district, event.genre, event.description, event.sourceLabel, event.source, lineupText(event)].join(" ").toLowerCase();
+    }
+
+    function eventVenueGroupMatches(event, group) {
+      if (group === "all") return true;
+      const text = searchableText(event);
+      const has = (...terms) => terms.some(term => text.includes(term.toLowerCase()));
+      const id = event.id;
+      if (group === "abyss") return has("abyss");
+      if (group === "exit") return has("exit");
+      if (group === "heim") return has("heim");
+      if (group === "potent") return has("potent");
+      if (group === "reactor") return has("reactor");
+      if (group === "space-panda") return ["nightwave", "sunkissed", "horizon"].includes(id) || has("space panda");
+      if (group === "alter") return ["up-2-u", "alter-pavillon"].includes(id) || has("alter");
+      if (group === "dirty") return has("dirty house", "ins ");
+      if (group === "illum") return has("illum", "knot");
+      if (group === "wigwam") return has("wigwam");
+      if (group === "system") return has("system");
+      if (group === "void-vacuum") return has("void", "vacuum");
+      return true;
+    }
+
+    function parseEventDateTime(event) {
+      const start = eventDate(event) || parseIsoDate(verified);
+      const timeText = String(event.time || "");
+      const matches = Array.from(timeText.matchAll(/(\d{1,2}):(\d{2})/g), match => [Number(match[1]), Number(match[2])]);
+      const startTime = matches[0];
+      if (startTime) start.setHours(startTime[0], startTime[1], 0, 0);
+      else if (/evening/i.test(timeText)) start.setHours(20, 0, 0, 0);
+      else if (/afternoon/i.test(timeText)) start.setHours(15, 0, 0, 0);
+      else start.setHours(22, 0, 0, 0);
+
+      const end = new Date(start);
+      const endTime = matches[1];
+      if (endTime) {
+        end.setHours(endTime[0], endTime[1], 0, 0);
+        if (end <= start) end.setDate(end.getDate() + 1);
+      } else {
+        end.setTime(start.getTime() + 4 * 60 * 60 * 1000);
+      }
+      return { start, end };
+    }
+
+    function pad2(value) {
+      return String(value).padStart(2, "0");
+    }
+
+    function formatIcsLocal(date) {
+      return `${date.getFullYear()}${pad2(date.getMonth() + 1)}${pad2(date.getDate())}T${pad2(date.getHours())}${pad2(date.getMinutes())}00`;
+    }
+
+    function formatIcsStamp(date) {
+      return date.toISOString().replace(/[-:]/g, "").replace(/\.\d{3}Z$/, "Z");
+    }
+
+    function escapeIcs(value) {
+      return String(value)
+        .replace(/\\/g, "\\\\")
+        .replace(/\r?\n/g, "\\n")
+        .replace(/,/g, "\\,")
+        .replace(/;/g, "\\;");
+    }
+
+    function foldIcsLine(line) {
+      const chunks = [];
+      let rest = line;
+      while (rest.length > 74) {
+        chunks.push(rest.slice(0, 74));
+        rest = ` ${rest.slice(74)}`;
+      }
+      chunks.push(rest);
+      return chunks.join("\r\n");
+    }
+
+    function icsForEvents(eventList) {
+      const dtstamp = formatIcsStamp(new Date());
+      const lines = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        "PRODID:-//Shanghai Rave Calendar 2026//EN",
+        "CALSCALE:GREGORIAN",
+        "METHOD:PUBLISH",
+        "X-WR-CALNAME:Shanghai Rave Calendar 2026",
+        "X-WR-TIMEZONE:Asia/Shanghai"
+      ];
+
+      eventList.forEach(event => {
+        const { start, end } = parseEventDateTime(event);
+        lines.push(
+          "BEGIN:VEVENT",
+          `UID:${event.id}@shanghai-rave-calendar-2026`,
+          `DTSTAMP:${dtstamp}`,
+          `DTSTART;TZID=Asia/Shanghai:${formatIcsLocal(start)}`,
+          `DTEND;TZID=Asia/Shanghai:${formatIcsLocal(end)}`,
+          `SUMMARY:${escapeIcs(event.title)}`,
+          `LOCATION:${escapeIcs(`${event.venue}, ${event.district}, Shanghai`)}`,
+          `DESCRIPTION:${escapeIcs(`${event.description}\nDJ set times: ${setTimesText(event)}\nDJ notes: ${lineupText(event)}\nSource layer: ${sourceStatusLabel(event)}\nLast checked: ${lastCheckedFor(event)}\nSource count: ${sourceCountFor(event)}\nSource: ${event.source}`)}`,
+          `URL:${event.source}`,
+          `STATUS:${event.status === "watch" ? "TENTATIVE" : "CONFIRMED"}`,
+          "END:VEVENT"
+        );
+      });
+
+      lines.push("END:VCALENDAR");
+      return `${lines.map(foldIcsLine).join("\r\n")}\r\n`;
+    }
+
+    function downloadIcs(eventList, filename) {
+      const blob = new Blob([icsForEvents(eventList)], { type: "text/calendar;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
     }
 
     function eventDay(event) {
@@ -1780,8 +2855,9 @@
             <div class="calendar-date"><span>${day}</span><span>${dayEvents.length ? dayEvents.length : ""}</span></div>
             <div class="calendar-events">
               ${dayEvents.map(event => `
-                <button class="calendar-event ${event.status === "watch" ? "watch" : ""}" type="button" data-id="${event.id}" title="${escapeHtml(event.title)}">
-                  ${escapeHtml(event.title)}
+                <button class="calendar-event ${event.status === "watch" ? "watch" : ""}" type="button" data-id="${event.id}" title="${escapeHtml(`${event.title} / Organizer: ${organizerFor(event)}`)}">
+                  <span class="calendar-event-title">${escapeHtml(event.title)}</span>
+                  <span class="calendar-event-organizer">${escapeHtml(organizerFor(event))}</span>
                 </button>
               `).join("")}
             </div>
@@ -1844,9 +2920,12 @@
       const query = searchInput.value.trim().toLowerCase();
       const status = statusFilter.value;
       const vibe = vibeFilter.value;
-      const haystack = [event.title, event.venue, event.district, event.genre, event.description, event.sourceLabel, lineupText(event)].join(" ").toLowerCase();
+      const venue = venueFilter.value;
+      const haystack = searchableText(event);
+      if (!dateWindowMatches(event)) return false;
       if (status !== "all" && event.status !== status) return false;
       if (vibe !== "all" && !event.vibe.includes(vibe)) return false;
+      if (!eventVenueGroupMatches(event, venue)) return false;
       if (query && !haystack.includes(query)) return false;
       return true;
     }
@@ -1858,38 +2937,40 @@
     }
 
     function renderRail() {
-      railEl.innerHTML = months.map(([code]) => `<button class="month-button" data-month="${code}">${code}</button>`).join("");
+      railEl.innerHTML = months.map(([code]) => `<button class="month-button" data-month="${code}" type="button"><span>${code}</span><b>0</b></button>`).join("");
       railEl.querySelectorAll("button").forEach(button => {
         button.addEventListener("click", () => {
-          document.getElementById(`month-${button.dataset.month}`).scrollIntoView({ behavior: "smooth", block: "start" });
+          activeMonth = button.dataset.month;
+          renderCalendar();
+          calendarEl.scrollIntoView({ behavior: "smooth", block: "start" });
         });
       });
     }
 
     function renderCalendar() {
-      calendarEl.innerHTML = months.map(([code, name]) => {
-        const monthEvents = events.filter(event => event.month === code).sort((a, b) => a.sortDate.localeCompare(b.sortDate));
-        const visibleEvents = monthEvents.filter(eventMatches);
-        const watch = watchMonths[code];
-        const showWatch = watch && (statusFilter.value === "all" || statusFilter.value === "watch") && (vibeFilter.value === "all");
-        return `
-          <section class="month-section" id="month-${code}">
-            <div class="month-header">
-              <div class="month-code">${code}</div>
-              <div>
-                <h2>${name}</h2>
-                <p>${monthCopy(code, monthEvents.length, watch)}</p>
-              </div>
-              <div class="count-badge">${visibleEvents.length}${showWatch ? " + watchlist" : ""}</div>
+      const month = months.find(([code]) => code === activeMonth) || months[0];
+      const [code, name] = month;
+      const monthEvents = events.filter(event => event.month === code).sort((a, b) => a.sortDate.localeCompare(b.sortDate));
+      const visibleEvents = monthEvents.filter(eventMatches);
+      const watch = watchMonths[code];
+      const showWatch = watch && dateWindow === "all" && (statusFilter.value === "all" || statusFilter.value === "watch") && (vibeFilter.value === "all") && (venueFilter.value === "all");
+      calendarEl.innerHTML = `
+        <section class="month-section" id="month-${code}">
+          <div class="month-header">
+            <div class="month-code">${code}</div>
+            <div>
+              <h2>${name}</h2>
+              <p>${monthCopy(code, monthEvents.length, watch)}</p>
             </div>
-            ${renderMonthGrid(code, visibleEvents)}
-            <div class="cards">
-              ${visibleEvents.map(renderCard).join("")}
-              ${showWatch ? renderWatchPanel(watch) : ""}
-            </div>
-          </section>
-        `;
-      }).join("");
+            <div class="count-badge">${visibleEvents.length}${showWatch ? " + watchlist" : ""}</div>
+          </div>
+          ${renderMonthGrid(code, visibleEvents)}
+          <div class="cards">
+            ${visibleEvents.map(renderCard).join("")}
+            ${showWatch ? renderWatchPanel(watch) : ""}
+          </div>
+        </section>
+      `;
       calendarEl.querySelectorAll(".event-card").forEach(card => {
         card.addEventListener("click", () => openModal(events.find(event => event.id === card.dataset.id)));
       });
@@ -1899,7 +2980,11 @@
           openModal(events.find(item => item.id === button.dataset.id));
         });
       });
+      calendarEl.querySelectorAll(".event-link").forEach(link => {
+        link.addEventListener("click", event => event.stopPropagation());
+      });
       updateStats();
+      renderSetPlanner();
     }
 
     function monthCopy(code, count, watch) {
@@ -1918,10 +3003,19 @@
           <div class="card-body">
             <div class="card-top"><span>${escapeHtml(event.date)}</span><span>${escapeHtml(event.time)}</span></div>
             <h3>${escapeHtml(event.title)}</h3>
+            <div class="organizer-line"><span>Organizer</span><b>${escapeHtml(organizerFor(event))}</b></div>
             <div class="venue">${escapeHtml(event.venue)} · ${escapeHtml(event.district)}</div>
             <p class="description">${escapeHtml(event.description)}</p>
             <div class="lineup-preview">
               ${lineupFor(event).slice(0, 2).map(item => `<span><b>${escapeHtml(item.name)}</b>: ${escapeHtml(item.note)}</span>`).join("")}
+            </div>
+            <div class="set-preview">
+              <div class="set-preview-top"><span>DJ set times</span><b>${escapeHtml(setTimeSummary(event))}</b></div>
+              ${renderSetTimeRows(event, 2, true)}
+            </div>
+            ${sourceMetaHtml(event)}
+            <div class="card-actions">
+              ${eventActionLinksHtml(event)}
             </div>
             <div class="chips">
               <span class="chip ${confidenceClass(event)}">${escapeHtml(event.confidence)}</span>
@@ -1953,17 +3047,23 @@
       document.getElementById("modalMeta").textContent = `${event.date}, ${event.time} · ${event.venue}, ${event.district}`;
       document.getElementById("modalDescription").textContent = event.description;
       document.getElementById("modalFacts").innerHTML = [
+        ["Organizer", organizerFor(event)],
         ["Sound", event.genre],
         ["Price", event.price],
         ["Age / ID", event.age],
-        ["Status", `${event.status} · ${event.confidence} confidence`]
+        ["Status", `${event.status} · ${event.confidence} confidence`],
+        ["Last checked", lastCheckedFor(event)],
+        ["Source count", `${sourceCountFor(event)} source${sourceCountFor(event) === 1 ? "" : "s"}`],
+        ["Source layer", sourceStatusLabel(event)]
       ].map(([label, value]) => `<div class="fact"><span>${escapeHtml(label)}</span><b>${escapeHtml(value)}</b></div>`).join("");
       document.getElementById("modalLineup").innerHTML = `
+        <h3>DJ set times</h3>
+        ${renderSetTimeRows(event)}
         <h3>DJ notes</h3>
         <ul class="lineup-list">
           ${lineupFor(event).map(item => `
             <li class="dj-note">
-              <b>${escapeHtml(item.name)}</b>
+              <b>${djProfileLinksHtml(item.name)}</b>
               <span>${escapeHtml(item.note)}</span>
             </li>
           `).join("")}
@@ -1971,10 +3071,12 @@
       `;
       document.getElementById("modalChips").innerHTML = event.vibe.map(vibe => `<span class="chip">${escapeHtml(vibe)}</span>`).join("");
       document.getElementById("modalActions").innerHTML = `
-        <a class="button-link primary" href="${event.source}" target="_blank" rel="noreferrer">Open ${escapeHtml(event.sourceLabel)}</a>
+        ${eventActionLinksHtml(event, "modal")}
+        <button class="button-link secondary ics-event" type="button">Download .ics</button>
         <button class="close" type="button">Close</button>
       `;
       modal.classList.add("open");
+      modal.querySelector(".ics-event").addEventListener("click", () => downloadIcs([event], `${event.id}.ics`));
       modal.querySelector(".close").addEventListener("click", closeModal);
     }
 
@@ -2006,10 +3108,65 @@
       });
     }
 
+    function eventWindowLabel(event) {
+      return `${event.date} ${event.time}`;
+    }
+
+    function planningSortValue(row) {
+      const { start } = parseEventDateTime(row.event);
+      const slotMinutes = hasPublishedSetTime(row.slot) ? timeToMinutes(row.slot.start || row.slot.end) : timeToMinutes(String(row.event.time).match(/(\d{1,2}:\d{2})/)?.[1]);
+      return start.getTime() + (Number.isFinite(slotMinutes) ? slotMinutes : 0);
+    }
+
+    function renderSetPlanner() {
+      if (!setPlanner) return;
+      const planningEvents = events
+        .filter(eventMatches)
+        .filter(event => event.month === activeMonth)
+        .filter(event => dateWindow !== "all" || eventDate(event) >= today)
+        .sort((a, b) => parseEventDateTime(a).start - parseEventDateTime(b).start)
+        .slice(0, 10);
+
+      const rows = planningEvents.flatMap(event => {
+        const slots = setTimesFor(event);
+        const exactSlots = slots.filter(hasPublishedSetTime);
+        if (exactSlots.length) return exactSlots.map(slot => ({ event, slot }));
+        return [{
+          event,
+          slot: {
+            name: "Lineup order TBA",
+            start: "",
+            end: "",
+            note: `Event window: ${event.time}`,
+            status: "not-published",
+            sourceLabel: event.sourceLabel
+          }
+        }];
+      }).sort((a, b) => planningSortValue(a) - planningSortValue(b)).slice(0, 14);
+
+      if (!rows.length) {
+        setPlanner.innerHTML = `<p>No matching upcoming set-time rows.</p>`;
+        return;
+      }
+
+      setPlanner.innerHTML = rows.map(({ event, slot }) => `
+        <button class="set-plan-row" type="button" data-id="${event.id}">
+          <div class="set-time">${escapeHtml(hasPublishedSetTime(slot) ? setTimeRange(slot) : eventWindowLabel(event))}</div>
+          <div class="set-time-main">
+            <b>${escapeHtml(slot.name)}</b>
+            <span>${escapeHtml(`${event.title} · ${event.venue}`)}</span>
+          </div>
+          <span class="set-status ${setTimeStatusClass(slot)}">${escapeHtml(setTimeStatusLabel(slot))}</span>
+        </button>
+      `).join("");
+      setPlanner.querySelectorAll(".set-plan-row").forEach(button => {
+        button.addEventListener("click", () => openModal(events.find(event => event.id === button.dataset.id)));
+      });
+    }
+
     function renderBestPicks() {
-      const pickIds = ["santa-k", "synth-crush", "horizon", "milo-cosmjn", "up-2-u"];
-      bestPicks.innerHTML = pickIds.map(id => {
-        const event = events.find(item => item.id === id);
+      const pickIds = ["santa-k", "synth-crush", "matisa-limsum", "alter-pavillon", "horizon"];
+      bestPicks.innerHTML = pickIds.map(id => events.find(item => item.id === id)).filter(Boolean).map(event => {
         return `
           <a class="source-link" href="${event.source}" target="_blank" rel="noreferrer">
             <span>${escapeHtml(event.date)} · ${escapeHtml(event.title)}</span>
@@ -2028,14 +3185,42 @@
       document.getElementById("statTop").textContent = top;
       document.querySelectorAll(".month-button").forEach(button => {
         const count = visible.filter(event => event.month === button.dataset.month).length;
-        button.classList.toggle("active", count > 0);
+        button.classList.toggle("active", button.dataset.month === activeMonth);
+        button.classList.toggle("has-match", count > 0);
+        const countEl = button.querySelector("b");
+        if (countEl) countEl.textContent = `${count}`;
       });
     }
 
+    function syncActiveMonthToMatches() {
+      const activeHasMatches = events.some(event => event.month === activeMonth && eventMatches(event));
+      if (activeHasMatches) return;
+      const nextMonth = months.find(([code]) => events.some(event => event.month === code && eventMatches(event)));
+      if (nextMonth) activeMonth = nextMonth[0];
+    }
+
     function setupControls() {
-      [searchInput, statusFilter, vibeFilter].forEach(control => {
-        control.addEventListener("input", renderCalendar);
-        control.addEventListener("change", renderCalendar);
+      [searchInput, statusFilter, vibeFilter, venueFilter].forEach(control => {
+        control.addEventListener("input", () => {
+          syncActiveMonthToMatches();
+          renderCalendar();
+        });
+        control.addEventListener("change", () => {
+          syncActiveMonthToMatches();
+          renderCalendar();
+        });
+      });
+      document.querySelectorAll(".quick-filter[data-window]").forEach(button => {
+        button.addEventListener("click", () => {
+          dateWindow = button.dataset.window;
+          document.querySelectorAll(".quick-filter[data-window]").forEach(item => item.classList.remove("active"));
+          button.classList.add("active");
+          syncActiveMonthToMatches();
+          renderCalendar();
+        });
+      });
+      downloadFiltered.addEventListener("click", () => {
+        downloadIcs(events.filter(eventMatches), `shanghai-rave-calendar-${dateWindow}-filtered.ics`);
       });
       document.querySelectorAll(".route-button").forEach(button => {
         button.addEventListener("click", () => {
@@ -2080,12 +3265,45 @@
       frame();
     }
 
-    renderRail();
-    setupControls();
-    renderCalendar();
-    renderRoute();
-    renderBestPicks();
-    drawSignal();
+    function requestedEventId() {
+      try {
+        return new URLSearchParams(window.location.search).get("event") || "";
+      } catch (error) {
+        return "";
+      }
+    }
+
+    function openRequestedEvent() {
+      const eventId = requestedEventId();
+      if (!eventId) return false;
+      const event = events.find(item => item.id === eventId);
+      if (!event) return false;
+      activeMonth = event.month || monthCodeFromSortDate(event.sortDate);
+      renderCalendar();
+      window.setTimeout(() => openModal(event), 0);
+      return true;
+    }
+
+    async function bootCalendar() {
+      renderRail();
+      setupControls();
+      renderCalendar();
+      renderRoute();
+      renderBestPicks();
+      openRequestedEvent();
+      drawSignal();
+
+      const loadedEvents = await loadExternalEvents();
+      if (loadedEvents) {
+        events = loadedEvents;
+        renderCalendar();
+        renderRoute();
+        renderBestPicks();
+        openRequestedEvent();
+      }
+    }
+
+    bootCalendar();
   </script>
 </body>
 </html>

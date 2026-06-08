@@ -1,0 +1,2186 @@
+{
+  "generatedAt": "2026-06-08T06:07:21.530Z",
+  "verified": "2026-06-08",
+  "timezone": "Asia/Shanghai",
+  "sourcePriority": [
+    "Direct venue, promoter, ticketing, or official artist pages",
+    "Resident Advisor event pages and city listings",
+    "SmartShanghai event pages and monthly clubbing guide",
+    "Public social posts and app-only references as discovery leads only"
+  ],
+  "sources": [
+    {
+      "label": "Resident Advisor Shanghai",
+      "url": "https://ra.co/events/cn/shanghai",
+      "kind": "listing",
+      "sourceStatus": "secondary",
+      "checkedAt": "2026-06-08",
+      "ok": false,
+      "status": 403,
+      "eventLinks": 0
+    },
+    {
+      "label": "SmartShanghai June 2026 clubbing guide",
+      "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+      "kind": "guide",
+      "sourceStatus": "secondary",
+      "checkedAt": "2026-06-08",
+      "ok": false,
+      "status": null,
+      "eventLinks": 0,
+      "error": "This operation was aborted"
+    },
+    {
+      "label": "SmartShanghai clubbing listings",
+      "url": "https://www.smartshanghai.com/events/clubbing/",
+      "kind": "listing",
+      "sourceStatus": "secondary",
+      "checkedAt": "2026-06-08",
+      "ok": false,
+      "status": null,
+      "eventLinks": 0,
+      "error": "This operation was aborted"
+    },
+    {
+      "label": "X/Twitter keyword: \"Shanghai\" techno",
+      "url": "https://x.com/search?q=%22Shanghai%22%20techno%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "publicSearchUrl": "https://x.com/search?q=%22Shanghai%22%20techno%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "kind": "social-keyword",
+      "sourceStatus": "social-lead",
+      "access": "requires-token",
+      "checkedAt": "2026-06-08",
+      "ok": false,
+      "status": null,
+      "links": 0,
+      "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+    },
+    {
+      "label": "X/Twitter keyword: \"Shanghai\" rave",
+      "url": "https://x.com/search?q=%22Shanghai%22%20rave%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "publicSearchUrl": "https://x.com/search?q=%22Shanghai%22%20rave%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "kind": "social-keyword",
+      "sourceStatus": "social-lead",
+      "access": "requires-token",
+      "checkedAt": "2026-06-08",
+      "ok": false,
+      "status": null,
+      "links": 0,
+      "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+    },
+    {
+      "label": "X/Twitter keyword: \"Shanghai\" underground electronic",
+      "url": "https://x.com/search?q=%22Shanghai%22%20underground%20electronic%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "publicSearchUrl": "https://x.com/search?q=%22Shanghai%22%20underground%20electronic%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "kind": "social-keyword",
+      "sourceStatus": "social-lead",
+      "access": "requires-token",
+      "checkedAt": "2026-06-08",
+      "ok": false,
+      "status": null,
+      "links": 0,
+      "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+    },
+    {
+      "label": "X/Twitter keyword: \"Shanghai\" warehouse party",
+      "url": "https://x.com/search?q=%22Shanghai%22%20warehouse%20party%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "publicSearchUrl": "https://x.com/search?q=%22Shanghai%22%20warehouse%20party%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "kind": "social-keyword",
+      "sourceStatus": "social-lead",
+      "access": "requires-token",
+      "checkedAt": "2026-06-08",
+      "ok": false,
+      "status": null,
+      "links": 0,
+      "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+    },
+    {
+      "label": "X/Twitter keyword: \"Abyss Shanghai\" techno",
+      "url": "https://x.com/search?q=%22Abyss%20Shanghai%22%20techno%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "publicSearchUrl": "https://x.com/search?q=%22Abyss%20Shanghai%22%20techno%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "kind": "social-keyword",
+      "sourceStatus": "social-lead",
+      "access": "requires-token",
+      "checkedAt": "2026-06-08",
+      "ok": false,
+      "status": null,
+      "links": 0,
+      "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+    },
+    {
+      "label": "X/Twitter keyword: \"POTENT Shanghai\"",
+      "url": "https://x.com/search?q=%22POTENT%20Shanghai%22%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "publicSearchUrl": "https://x.com/search?q=%22POTENT%20Shanghai%22%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "kind": "social-keyword",
+      "sourceStatus": "social-lead",
+      "access": "requires-token",
+      "checkedAt": "2026-06-08",
+      "ok": false,
+      "status": null,
+      "links": 0,
+      "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+    },
+    {
+      "label": "X/Twitter keyword: \"EXIT Shanghai\" techno",
+      "url": "https://x.com/search?q=%22EXIT%20Shanghai%22%20techno%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "publicSearchUrl": "https://x.com/search?q=%22EXIT%20Shanghai%22%20techno%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "kind": "social-keyword",
+      "sourceStatus": "social-lead",
+      "access": "requires-token",
+      "checkedAt": "2026-06-08",
+      "ok": false,
+      "status": null,
+      "links": 0,
+      "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+    },
+    {
+      "label": "X/Twitter keyword: \"Heim Shanghai\" electronic",
+      "url": "https://x.com/search?q=%22Heim%20Shanghai%22%20electronic%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "publicSearchUrl": "https://x.com/search?q=%22Heim%20Shanghai%22%20electronic%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "kind": "social-keyword",
+      "sourceStatus": "social-lead",
+      "access": "requires-token",
+      "checkedAt": "2026-06-08",
+      "ok": false,
+      "status": null,
+      "links": 0,
+      "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+    },
+    {
+      "label": "X/Twitter keyword: \"System Shanghai\" club",
+      "url": "https://x.com/search?q=%22System%20Shanghai%22%20club%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "publicSearchUrl": "https://x.com/search?q=%22System%20Shanghai%22%20club%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "kind": "social-keyword",
+      "sourceStatus": "social-lead",
+      "access": "requires-token",
+      "checkedAt": "2026-06-08",
+      "ok": false,
+      "status": null,
+      "links": 0,
+      "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+    },
+    {
+      "label": "X/Twitter keyword: \"ILLUM Shanghai\"",
+      "url": "https://x.com/search?q=%22ILLUM%20Shanghai%22%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "publicSearchUrl": "https://x.com/search?q=%22ILLUM%20Shanghai%22%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "kind": "social-keyword",
+      "sourceStatus": "social-lead",
+      "access": "requires-token",
+      "checkedAt": "2026-06-08",
+      "ok": false,
+      "status": null,
+      "links": 0,
+      "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+    },
+    {
+      "label": "X/Twitter keyword: \"Reactor Shanghai\" electronic",
+      "url": "https://x.com/search?q=%22Reactor%20Shanghai%22%20electronic%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "publicSearchUrl": "https://x.com/search?q=%22Reactor%20Shanghai%22%20electronic%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "kind": "social-keyword",
+      "sourceStatus": "social-lead",
+      "access": "requires-token",
+      "checkedAt": "2026-06-08",
+      "ok": false,
+      "status": null,
+      "links": 0,
+      "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+    },
+    {
+      "label": "X/Twitter keyword: \"Wigwam Shanghai\"",
+      "url": "https://x.com/search?q=%22Wigwam%20Shanghai%22%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "publicSearchUrl": "https://x.com/search?q=%22Wigwam%20Shanghai%22%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "kind": "social-keyword",
+      "sourceStatus": "social-lead",
+      "access": "requires-token",
+      "checkedAt": "2026-06-08",
+      "ok": false,
+      "status": null,
+      "links": 0,
+      "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+    },
+    {
+      "label": "X/Twitter keyword: \"上海\" techno",
+      "url": "https://x.com/search?q=%22%E4%B8%8A%E6%B5%B7%22%20techno%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "publicSearchUrl": "https://x.com/search?q=%22%E4%B8%8A%E6%B5%B7%22%20techno%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "kind": "social-keyword",
+      "sourceStatus": "social-lead",
+      "access": "requires-token",
+      "checkedAt": "2026-06-08",
+      "ok": false,
+      "status": null,
+      "links": 0,
+      "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+    },
+    {
+      "label": "X/Twitter keyword: \"上海\" rave",
+      "url": "https://x.com/search?q=%22%E4%B8%8A%E6%B5%B7%22%20rave%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "publicSearchUrl": "https://x.com/search?q=%22%E4%B8%8A%E6%B5%B7%22%20rave%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "kind": "social-keyword",
+      "sourceStatus": "social-lead",
+      "access": "requires-token",
+      "checkedAt": "2026-06-08",
+      "ok": false,
+      "status": null,
+      "links": 0,
+      "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+    },
+    {
+      "label": "X/Twitter keyword: \"上海\" 电子音乐",
+      "url": "https://x.com/search?q=%22%E4%B8%8A%E6%B5%B7%22%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "publicSearchUrl": "https://x.com/search?q=%22%E4%B8%8A%E6%B5%B7%22%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "kind": "social-keyword",
+      "sourceStatus": "social-lead",
+      "access": "requires-token",
+      "checkedAt": "2026-06-08",
+      "ok": false,
+      "status": null,
+      "links": 0,
+      "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+    },
+    {
+      "label": "X/Twitter keyword: \"上海\" 地下电子",
+      "url": "https://x.com/search?q=%22%E4%B8%8A%E6%B5%B7%22%20%E5%9C%B0%E4%B8%8B%E7%94%B5%E5%AD%90%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "publicSearchUrl": "https://x.com/search?q=%22%E4%B8%8A%E6%B5%B7%22%20%E5%9C%B0%E4%B8%8B%E7%94%B5%E5%AD%90%20(Shanghai%20OR%20%E4%B8%8A%E6%B5%B7)%20(techno%20OR%20rave%20OR%20electronic%20OR%20%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90)&src=typed_query&f=live",
+      "kind": "social-keyword",
+      "sourceStatus": "social-lead",
+      "access": "requires-token",
+      "checkedAt": "2026-06-08",
+      "ok": false,
+      "status": null,
+      "links": 0,
+      "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+    }
+  ],
+  "events": [
+    {
+      "id": "love-bang",
+      "month": "Jan",
+      "sortDate": "2026-01-02",
+      "date": "Jan 2",
+      "time": "22:00-04:00",
+      "title": "Love Bang: Baby Dance Machine",
+      "venue": "C's Bar",
+      "district": "Changning",
+      "vibe": [
+        "underground",
+        "bass"
+      ],
+      "genre": "club, hip-hop, ghettotech, house, techno",
+      "confidence": "Medium",
+      "status": "past",
+      "price": "Free",
+      "age": "18+",
+      "source": "https://ra.co/events/2334751",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "cyan",
+      "description": "Basement dive-bar release party energy with club music, house, techno, ghettotech, and rough-edged local flavor.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2334751",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "byyb-conceptual",
+      "month": "Jan",
+      "sortDate": "2026-01-13",
+      "date": "Jan 13",
+      "time": "16:00-17:00",
+      "title": "Byyb Radio Shanghai w/ CONCEPTUAL",
+      "venue": "byyb Radio",
+      "district": "Huangpu",
+      "vibe": [
+        "experimental",
+        "underground"
+      ],
+      "genre": "techno radio session",
+      "confidence": "Medium",
+      "status": "past",
+      "price": "Free",
+      "age": "Not listed",
+      "source": "https://ra.co/events/2336303",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "acid",
+      "description": "A compact afternoon techno transmission rather than a club night, useful as an early-year scene marker.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2336303",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "lorenzo-senni",
+      "month": "Jan",
+      "sortDate": "2026-01-30",
+      "date": "Jan 30",
+      "time": "22:00-04:30",
+      "title": "Antigen pres. Lorenzo Senni",
+      "venue": "Heim Shanghai",
+      "district": "Huangpu",
+      "vibe": [
+        "experimental",
+        "underground"
+      ],
+      "genre": "experimental, club, trance-adjacent",
+      "confidence": "Medium",
+      "status": "past",
+      "price": "Not listed",
+      "age": "Not listed",
+      "source": "https://ra.co/events/2352920",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "rose",
+      "description": "Experimental electronic night with Lorenzo Senni, Soft Cou live, Devil's Hole, DJ EBP, and local late-night support.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2352920",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "techno-basics",
+      "month": "Jan",
+      "sortDate": "2026-01-30",
+      "date": "Jan 30",
+      "time": "22:30-05:00",
+      "title": "Techno Basics",
+      "venue": "Abyss Shanghai",
+      "district": "Huangpu",
+      "vibe": [
+        "hard",
+        "underground"
+      ],
+      "genre": "techno, trance",
+      "confidence": "High",
+      "status": "past",
+      "price": "120 RMB",
+      "age": "18+",
+      "source": "https://ra.co/events/2355282",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "ember",
+      "description": "Ma Haiping, Liquid Mechanics, Shukai, and Okkultative at Abyss. One of the cleanest early-2026 techno entries.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2355282",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "void-vacuum",
+      "month": "Feb",
+      "sortDate": "2026-02-20",
+      "date": "Feb 20",
+      "time": "Fri 22:00-Sun 04:00",
+      "title": "VOID x VACUUM x EXIT",
+      "venue": "EXIT",
+      "district": "Changning",
+      "vibe": [
+        "hard",
+        "underground"
+      ],
+      "genre": "techno",
+      "confidence": "High",
+      "status": "past",
+      "price": "120 RMB",
+      "age": "Not listed",
+      "source": "https://ra.co/events/2371792",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "acid",
+      "description": "Shanghai techno crews VOID and VACUUM together at EXIT; deep, hypnotic, raw local pressure.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2371792",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "exxx-plural",
+      "month": "Feb",
+      "sortDate": "2026-02-28",
+      "date": "Feb 28",
+      "time": "22:00-05:00",
+      "title": "EXXX: Plural Body",
+      "venue": "EXIT",
+      "district": "Changning",
+      "vibe": [
+        "underground",
+        "bass"
+      ],
+      "genre": "techno, bass",
+      "confidence": "High",
+      "status": "past",
+      "price": "100 RMB",
+      "age": "Not listed",
+      "source": "https://ra.co/events/2381686",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "cyan",
+      "description": "Techno and bass at EXIT with Empress CC!, HeShang, Illsee, and Wax9; flexible, self-defined underground energy.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2381686",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "motor-city",
+      "month": "Mar",
+      "sortDate": "2026-03-13",
+      "date": "Mar 13",
+      "time": "22:00-05:00",
+      "title": "Tech-no-logical World: Motor City Machine Funk",
+      "venue": "EXIT",
+      "district": "Changning",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "genre": "Detroit techno, electro, machine funk",
+      "confidence": "High",
+      "status": "past",
+      "price": "70-100 RMB",
+      "age": "Not listed",
+      "source": "https://www.smartshanghai.com/event/techno-logical-world-detroit-techno-2026-03-13",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "gold",
+      "description": "Detroit-techno-focused night with Shanghai Ultra, NAXIN, Nik HilP, and DJ Doggy.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/techno-logical-world-detroit-techno-2026-03-13",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "potent-five",
+      "month": "Mar",
+      "sortDate": "2026-03-20",
+      "date": "Mar 20-22",
+      "time": "23:59-06:00",
+      "title": "POTENT 5-Year Anniversary",
+      "venue": "POTENT",
+      "district": "Huangpu",
+      "vibe": [
+        "underground",
+        "date"
+      ],
+      "genre": "techno, house",
+      "confidence": "High",
+      "status": "past",
+      "price": "100 RMB",
+      "age": "18+",
+      "source": "https://ra.co/events/2388890",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "rose",
+      "description": "Two-night anniversary with Audrey Danza, Angioma, Boris, Temple Rat, Max Shen, and Stefano Dvt.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2388890",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "tempio-potent",
+      "month": "Mar",
+      "sortDate": "2026-03-27",
+      "date": "Mar 27",
+      "time": "23:00-05:00",
+      "title": "TEMPIO x POTENT Shanghai",
+      "venue": "POTENT",
+      "district": "Huangpu",
+      "vibe": [
+        "underground"
+      ],
+      "genre": "electronic culture, techno-adjacent",
+      "confidence": "Medium",
+      "status": "past",
+      "price": "Not listed",
+      "age": "18+",
+      "source": "https://ra.co/events/2397186",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "cyan",
+      "description": "Tempio's China tour stop with Elisa Bee, Industrial Romantico, Urban Danging Prophets, and Gaoqiao.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2397186",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "schwartz",
+      "month": "Mar",
+      "sortDate": "2026-03-28",
+      "date": "Mar 28",
+      "time": "Late night",
+      "title": "Schwartz Reignited",
+      "venue": "EXIT",
+      "district": "Changning",
+      "vibe": [
+        "hard",
+        "underground"
+      ],
+      "genre": "industrial, dark hypnotic, acid, rave, experimental techno",
+      "confidence": "Medium",
+      "status": "past",
+      "price": "Not listed",
+      "age": "Not listed",
+      "source": "https://www.smartshanghai.com/event/schwartz-reignited-techno-2026-03-28",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "ember",
+      "description": "Pure techno with industrial, acid, dark, and experimental tone in EXIT's basement room.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/schwartz-reignited-techno-2026-03-28",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "noizar-soyo",
+      "month": "Apr",
+      "sortDate": "2026-04-17",
+      "date": "Apr 17",
+      "time": "22:00-06:00",
+      "title": "House of Visions pres. Noizar & Soyo",
+      "venue": "Reactor Shanghai",
+      "district": "Changning",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "genre": "techno-informed club music",
+      "confidence": "Medium",
+      "status": "past",
+      "price": "138 RMB",
+      "age": "Not listed",
+      "source": "https://ra.co/events/2417152",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "acid",
+      "description": "Two-room Reactor night with Noizar and Soyo, built around precision, rhythm, and East Asian underground texture.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2417152",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "xulalit",
+      "month": "Apr",
+      "sortDate": "2026-04-24",
+      "date": "Apr 24",
+      "time": "20:00-02:00",
+      "title": "Siam After Dark feat. XULALIT",
+      "venue": "The Sukhothai Shanghai",
+      "district": "Jing'an",
+      "vibe": [
+        "date"
+      ],
+      "genre": "techno, house",
+      "confidence": "High",
+      "status": "past",
+      "price": "128-168 RMB",
+      "age": "18+",
+      "source": "https://ra.co/events/2417150",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "gold",
+      "description": "Polished hotel anniversary night with Thai artist XULALIT. More sleek date night than warehouse rave.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2417150",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "cam-girl",
+      "month": "Apr",
+      "sortDate": "2026-04-25",
+      "date": "Apr 25",
+      "time": "22:00-05:00",
+      "title": "KNOT pres. CAM GIRL",
+      "venue": "ILLUM Shanghai",
+      "district": "Changning",
+      "vibe": [
+        "bass",
+        "experimental"
+      ],
+      "genre": "trance, club, hyperpop, hard dance",
+      "confidence": "Medium",
+      "status": "past",
+      "price": "10 RMB",
+      "age": "18+",
+      "source": "https://ra.co/events/2422723",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "rose",
+      "description": "KNOT's high-energy club lane: trance, hyperpop, hard dance, baile funk, jersey club, and rave nostalgia.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2422723",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "lacchesi",
+      "month": "Apr",
+      "sortDate": "2026-04-25",
+      "date": "Apr 25",
+      "time": "22:30-05:00",
+      "title": "The Rite w. Lacchesi",
+      "venue": "Abyss Shanghai",
+      "district": "Huangpu",
+      "vibe": [
+        "hard",
+        "underground"
+      ],
+      "genre": "warehouse techno, trance, industrial rave",
+      "confidence": "High",
+      "status": "past",
+      "price": "130 RMB",
+      "age": "18+",
+      "source": "https://ra.co/events/2422389",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "ember",
+      "description": "Maison Close artist Lacchesi at Abyss with fast, high-energy, warehouse-influenced techno.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2422389",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "rui-ho",
+      "month": "Apr",
+      "sortDate": "2026-04-30",
+      "date": "Apr 30",
+      "time": "22:00-04:30",
+      "title": "A.T.M pres. RUI HO",
+      "venue": "Reactor Shanghai",
+      "district": "Changning",
+      "vibe": [
+        "bass",
+        "experimental"
+      ],
+      "genre": "techno, bass",
+      "confidence": "High",
+      "status": "past",
+      "price": "118 RMB",
+      "age": "18+",
+      "source": "https://ra.co/events/2425673",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "cyan",
+      "description": "Forward club music with RUI HO, SAN CHUAN, and Oil Nature at Reactor.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2425673",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "anyma",
+      "month": "May",
+      "sortDate": "2026-05-02",
+      "date": "May 2",
+      "time": "Evening",
+      "title": "Anyma presents ÆDEN",
+      "venue": "Sunland Boundless Park",
+      "district": "Pudong",
+      "vibe": [
+        "date"
+      ],
+      "genre": "melodic techno, audiovisual show",
+      "confidence": "High",
+      "status": "past",
+      "price": "Sold out on official tour page",
+      "age": "Check ticketing",
+      "source": "https://www.anyma.com/china",
+      "sourceLabel": "Anyma official",
+      "imageTheme": "gold",
+      "description": "Major open-air audiovisual show with Prospa, Ben Bohmer, Kolsch, Kasia, and Stylo support.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Anyma official",
+          "url": "https://www.anyma.com/china",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "dark-haze",
+      "month": "May",
+      "sortDate": "2026-05-03",
+      "date": "May 3",
+      "time": "22:30-05:00",
+      "title": "EDK x DARK HAZE: Death Descends",
+      "venue": "Abyss Shanghai",
+      "district": "Huangpu",
+      "vibe": [
+        "hard",
+        "experimental"
+      ],
+      "genre": "techno, hardcore, black metal crossover",
+      "confidence": "High",
+      "status": "past",
+      "price": "158 RMB",
+      "age": "18+",
+      "source": "https://ra.co/events/2427816",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "ember",
+      "description": "A dark hard-techno and black-metal crossover night at Abyss.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2427816",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "abibas",
+      "month": "May",
+      "sortDate": "2026-05-08",
+      "date": "May 8",
+      "time": "22:30-05:00",
+      "title": "ABIBAS CLUB: SLAV DEAD HOUSE",
+      "venue": "Abyss Shanghai",
+      "district": "Huangpu",
+      "vibe": [
+        "hard",
+        "underground"
+      ],
+      "genre": "techno, hardcore, hardbass, hard trance",
+      "confidence": "High",
+      "status": "past",
+      "price": "120 RMB",
+      "age": "18+",
+      "source": "https://ra.co/events/2438256",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "rose",
+      "description": "Industrial, hardbass, hardcore, electro, jumpstyle, and slavic punk collision at Abyss.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2438256",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "linear-system",
+      "month": "May",
+      "sortDate": "2026-05-09",
+      "date": "May 9",
+      "time": "23:59-06:00",
+      "title": "Linear System",
+      "venue": "POTENT",
+      "district": "Huangpu",
+      "vibe": [
+        "hard",
+        "underground"
+      ],
+      "genre": "techno",
+      "confidence": "High",
+      "status": "past",
+      "price": "100 RMB",
+      "age": "18+",
+      "source": "https://ra.co/events/2431319",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "acid",
+      "description": "Straight POTENT techno booking with Bambi and Linear System.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2431319",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "system-secret",
+      "month": "May",
+      "sortDate": "2026-05-16",
+      "date": "May 16",
+      "time": "22:00-05:00",
+      "title": "System Secret Party",
+      "venue": "SmSh Territory",
+      "district": "Central Shanghai",
+      "vibe": [
+        "warehouse",
+        "underground"
+      ],
+      "genre": "techno, bass, club music",
+      "confidence": "Medium",
+      "status": "past",
+      "price": "198 RMB via System WeChat",
+      "age": "Check promoter",
+      "source": "https://www.smartshanghai.com/event/system-secret-party-techno-bass-club-music-2026-05-16",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "cyan",
+      "description": "Limited-capacity secret-location party described as industrial, underground, and high-tech.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/system-secret-party-techno-bass-club-music-2026-05-16",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "cocarde",
+      "month": "May",
+      "sortDate": "2026-05-21",
+      "date": "May 21",
+      "time": "22:00-03:00",
+      "title": "Cocarde Revival Night",
+      "venue": "EXIT",
+      "district": "Changning",
+      "vibe": [
+        "date",
+        "underground"
+      ],
+      "genre": "techno, house, tech house",
+      "confidence": "High",
+      "status": "past",
+      "price": "60 RMB",
+      "age": "Not listed",
+      "source": "https://ra.co/events/2445498",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "gold",
+      "description": "French electronic crew reunion at EXIT with house, tech house, and techno.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2445498",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "up-2-u",
+      "month": "May",
+      "sortDate": "2026-05-23",
+      "date": "May 23",
+      "time": "14:00-06:00",
+      "title": "Heim x ALTER.: Up 2 U Warehouse Rave",
+      "venue": "EKA Tianwu",
+      "district": "Pudong",
+      "vibe": [
+        "warehouse",
+        "date",
+        "underground"
+      ],
+      "genre": "house, techno, bass",
+      "confidence": "High",
+      "status": "past",
+      "price": "188 presale / 258 door",
+      "age": "Check promoter",
+      "source": "https://www.smartshanghai.com/event/heim-x-alter-up-2-u-warehouse-party-techno-house-2026-05-23",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "acid",
+      "description": "All-day warehouse-style mini-festival across rooftop and indoor stages with food, drinks, and about 20 DJs.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/heim-x-alter-up-2-u-warehouse-party-techno-house-2026-05-23",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "captain25",
+      "month": "May",
+      "sortDate": "2026-05-23",
+      "date": "May 23",
+      "time": "22:00-05:00",
+      "title": "MET Underground Festival with CAPTAIN25",
+      "venue": "EXIT",
+      "district": "Changning",
+      "vibe": [
+        "underground",
+        "date"
+      ],
+      "genre": "techno, house, minimal, nu-disco",
+      "confidence": "High",
+      "status": "past",
+      "price": "148 RMB",
+      "age": "Not listed",
+      "source": "https://ra.co/events/2445501",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "rose",
+      "description": "Tokyo underground selector CAPTAIN25 brings global dancefloor fluency to EXIT.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2445501",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "body-loop",
+      "month": "May",
+      "sortDate": "2026-05-29",
+      "date": "May 29",
+      "time": "22:00-05:00",
+      "title": "BODY LOOP: From Rhythm to Machines",
+      "venue": "EXIT",
+      "district": "Changning",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "genre": "techno, funk/soul lineage",
+      "confidence": "High",
+      "status": "past",
+      "price": "118 RMB",
+      "age": "Not listed",
+      "source": "https://ra.co/events/2449213",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "gold",
+      "description": "A dancefloor history session moving from funk and industrial into house and techno.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2449213",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "hotl4b",
+      "month": "May",
+      "sortDate": "2026-05-29",
+      "date": "May 29",
+      "time": "22:00-04:30",
+      "title": "HOTL4B Reloaded: 2-Hall Rave Night",
+      "venue": "Reactor Shanghai",
+      "district": "Changning",
+      "vibe": [
+        "bass",
+        "warehouse",
+        "underground"
+      ],
+      "genre": "techno, bass",
+      "confidence": "High",
+      "status": "past",
+      "price": "158 RMB",
+      "age": "18+",
+      "source": "https://ra.co/events/2447943",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "ember",
+      "description": "Two-hall Reactor rave with HOTL4B and onefortyasia rooms.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2447943",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "tomo",
+      "month": "May",
+      "sortDate": "2026-05-30",
+      "date": "May 30",
+      "time": "22:00-02:00+",
+      "title": "egregore.ttte presents TOMO",
+      "venue": "Wigwam",
+      "district": "Changning",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "genre": "ambient, deep techno",
+      "confidence": "High",
+      "status": "past",
+      "price": "Free entry",
+      "age": "Not listed",
+      "source": "https://ra.co/events/2455848",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "cyan",
+      "description": "Free Wigwam night leaning deep, ambient, and techno with TOMO, Chingyi, and Rainsoft.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2455848",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "janein",
+      "month": "Jun",
+      "sortDate": "2026-06-05",
+      "date": "Jun 5",
+      "time": "Late night",
+      "title": "JANEIN (DE)",
+      "venue": "POTENT",
+      "district": "Huangpu",
+      "vibe": [
+        "hard",
+        "underground"
+      ],
+      "genre": "techno",
+      "confidence": "Medium",
+      "status": "past",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://ra.co/events/cn/shanghai?startDate=2026-06-05",
+      "sourceLabel": "RA Shanghai listings",
+      "imageTheme": "acid",
+      "description": "RA guide/listing lead for JANEIN at POTENT with Stefano Dvt and Peyotl noted in search listings.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "RA Shanghai listings",
+          "url": "https://ra.co/events/cn/shanghai?startDate=2026-06-05",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "nightwave",
+      "month": "Jun",
+      "sortDate": "2026-06-05",
+      "date": "Jun 5",
+      "time": "21:00-02:00",
+      "title": "NIGHTWAVE feat. Juliano Allgayer",
+      "venue": "The Shanghai Edition",
+      "district": "Huangpu",
+      "vibe": [
+        "date"
+      ],
+      "genre": "techno, house",
+      "confidence": "High",
+      "status": "past",
+      "price": "108-158 RMB",
+      "age": "18+",
+      "source": "https://ra.co/events/2457307",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "gold",
+      "description": "Sleek hotel-club night from Space Panda. Good for polished pre-midnight energy.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2457307",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "tham",
+      "month": "Jun",
+      "sortDate": "2026-06-05",
+      "date": "Jun 5",
+      "time": "Late night",
+      "title": "On The Cutting Edge w. Tham",
+      "venue": "Abyss Shanghai",
+      "district": "Huangpu",
+      "vibe": [
+        "hard",
+        "underground"
+      ],
+      "genre": "techno",
+      "confidence": "Medium",
+      "status": "past",
+      "price": "Check venue",
+      "age": "Check venue",
+      "source": "https://ra.co/dj/tham",
+      "sourceLabel": "RA artist/listing lead",
+      "imageTheme": "ember",
+      "description": "Harder-edge Abyss booking surfaced by RA guide and Tham artist listings.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "RA artist/listing lead",
+          "url": "https://ra.co/dj/tham",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "caroline-roxy",
+      "month": "Jun",
+      "sortDate": "2026-06-06",
+      "date": "Jun 6",
+      "time": "22:30-05:00",
+      "title": "FaQ pres. Caroline Roxy",
+      "venue": "Abyss Shanghai",
+      "district": "Huangpu",
+      "vibe": [
+        "hard",
+        "underground"
+      ],
+      "genre": "techno, hardcore",
+      "confidence": "High",
+      "status": "past",
+      "price": "130 RMB",
+      "age": "18+",
+      "source": "https://ra.co/events/2458079",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "rose",
+      "description": "Hard techno and hardcore at Abyss with Caroline Roxy, LOD, Fischmonger, SHU, and XDISTR.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2458079",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "sunkissed",
+      "month": "Jun",
+      "sortDate": "2026-06-06",
+      "date": "Jun 6",
+      "time": "15:00-02:00",
+      "title": "SUNKISSED Rooftop feat. Tom Price",
+      "venue": "Fosun Art Foundation",
+      "district": "Huangpu",
+      "vibe": [
+        "date"
+      ],
+      "genre": "techno, house",
+      "confidence": "High",
+      "status": "past",
+      "price": "128-188 RMB",
+      "age": "18+",
+      "source": "https://ra.co/events/2457326",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "gold",
+      "description": "Rooftop Space Panda event on the Bund; strongest for easy date-night scenery.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2457326",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "techno-worlds",
+      "month": "Jun",
+      "sortDate": "2026-06-06",
+      "date": "Jun 6",
+      "time": "22:00-06:00",
+      "title": "Techno Worlds x VACUUM: Final Sampling",
+      "venue": "EXIT",
+      "district": "Changning",
+      "vibe": [
+        "hard",
+        "underground",
+        "experimental"
+      ],
+      "genre": "techno",
+      "confidence": "High",
+      "status": "past",
+      "price": "80-120 RMB",
+      "age": "Not listed",
+      "source": "https://ra.co/events/2448375",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "acid",
+      "description": "A high-fit techno head pick: ECILO, Ma Haiping, NAXIN, RO, IXWELE, and VJ Ada at EXIT.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2448375",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "cltx-abyss",
+      "month": "Jun",
+      "sortDate": "2026-06-12",
+      "date": "Jun 12",
+      "time": "Check Abyss",
+      "title": "CLTX",
+      "venue": "Abyss Shanghai",
+      "district": "Huangpu",
+      "vibe": [
+        "hard",
+        "underground"
+      ],
+      "genre": "hard techno, rave",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "Check venue",
+      "age": "Check venue",
+      "source": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "ember",
+      "description": "SmartShanghai lead for one of Abyss's harder June bookings. Treat as single-source until the venue/ticket post is checked.",
+      "sourceStatus": "watchlist",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "kollin",
+      "month": "Jun",
+      "sortDate": "2026-06-12",
+      "date": "Jun 12",
+      "time": "22:00-05:00",
+      "title": "KOLLIN",
+      "venue": "Dirty House",
+      "district": "Huangpu",
+      "vibe": [
+        "bass",
+        "underground"
+      ],
+      "genre": "techno, bass, UKG, dubstep, baile funk",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "WeChat mini-program",
+      "age": "18+",
+      "source": "https://ra.co/events/2460995",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "rose",
+      "description": "Dirty House / INS entry with techno and bass tags; more chaotic club energy than purist techno.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2460995",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "milo-cosmjn",
+      "month": "Jun",
+      "sortDate": "2026-06-12",
+      "date": "Jun 12",
+      "time": "23:59-06:00",
+      "title": "Milo Raad + Cosmjn",
+      "venue": "POTENT",
+      "district": "Huangpu",
+      "vibe": [
+        "underground",
+        "date"
+      ],
+      "genre": "techno, house",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "100 RMB",
+      "age": "18+",
+      "source": "https://ra.co/events/2461478",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "cyan",
+      "description": "Proper late-night POTENT booking with Cosmjn, Milo Raad, and GaoQiao.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2461478",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "fengyun-5",
+      "month": "Jun",
+      "sortDate": "2026-06-13",
+      "date": "Jun 13",
+      "time": "22:00-06:00",
+      "title": "FENGYUN Vol. 5",
+      "venue": "M101 Room",
+      "district": "Huangpu",
+      "vibe": [
+        "experimental",
+        "underground"
+      ],
+      "genre": "club, experimental electronic",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "120 RMB",
+      "age": "18+",
+      "source": "https://ra.co/events/2460549",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "cyan",
+      "description": "Heim-administered RA listing with Mamayo, Gooooose, COLA REN, DJ TRUCK, and meer. Good underground lead, but genre detail is broad.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2460549",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "horizon",
+      "month": "Jun",
+      "sortDate": "2026-06-13",
+      "date": "Jun 13",
+      "time": "15:00-00:00",
+      "title": "Horizon Rooftop feat. Erik Hagleton",
+      "venue": "Pop Bar",
+      "district": "The Bund",
+      "vibe": [
+        "date"
+      ],
+      "genre": "techno, house",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "138-178 RMB",
+      "age": "18+",
+      "source": "https://ra.co/events/2459595",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "gold",
+      "description": "Outdoor Bund rooftop party. This is the smoothest date-friendly pick before a harder afterparty.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2459595",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "the-woods",
+      "month": "Jun",
+      "sortDate": "2026-06-13",
+      "date": "Jun 13",
+      "time": "Check venue",
+      "title": "Love Bang: The Woods",
+      "venue": "Specters",
+      "district": "Changning",
+      "vibe": [
+        "experimental",
+        "underground"
+      ],
+      "genre": "goth, darkwave, industrial, EBM",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "Check venue",
+      "age": "Check venue",
+      "source": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "rose",
+      "description": "Single-source lead for Love Bang's darker Specters night: goth, darkwave, dark italo, industrial, post-punk, EBM, and witch house.",
+      "sourceStatus": "watchlist",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "matisa-limsum",
+      "month": "Jun",
+      "sortDate": "2026-06-13",
+      "date": "Jun 13",
+      "time": "23:59-06:00",
+      "title": "Matisa + Limsum",
+      "venue": "POTENT",
+      "district": "Huangpu",
+      "vibe": [
+        "underground",
+        "date"
+      ],
+      "genre": "house, techno-adjacent",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "120 RMB",
+      "age": "18+",
+      "source": "https://ra.co/events/2461476",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "gold",
+      "description": "Late POTENT booking with Matisa, Limsum, and Max Shen. More bright and rolling than hard, but a strong club pick.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2461476",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "nosaj-thing",
+      "month": "Jun",
+      "sortDate": "2026-06-13",
+      "date": "Jun 13",
+      "time": "22:00-05:00",
+      "title": "REACTOR pres. Nosaj Thing",
+      "venue": "Reactor Shanghai",
+      "district": "Changning",
+      "vibe": [
+        "experimental",
+        "bass",
+        "underground"
+      ],
+      "genre": "experimental, future beats, hip-hop",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "148 RMB",
+      "age": "18+",
+      "source": "https://ra.co/events/2453279",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "acid",
+      "description": "C-Park electronic pick with DJ LOVERBOY, DJ EBP, Nosaj Thing, and GaoQiao. Not techno, but a credible experimental late-night option.",
+      "setTimes": [
+        {
+          "name": "DJ LOVERBOY",
+          "start": "22:00",
+          "end": "23:30",
+          "status": "exact",
+          "sourceLabel": "Resident Advisor",
+          "source": "https://ra.co/events/2453279"
+        },
+        {
+          "name": "DJ EBP",
+          "start": "23:30",
+          "end": "01:00",
+          "status": "exact",
+          "sourceLabel": "Resident Advisor",
+          "source": "https://ra.co/events/2453279"
+        },
+        {
+          "name": "Nosaj Thing",
+          "start": "01:00",
+          "end": "03:00",
+          "status": "exact",
+          "sourceLabel": "Resident Advisor",
+          "source": "https://ra.co/events/2453279"
+        },
+        {
+          "name": "GaoQiao",
+          "start": "03:00",
+          "end": "05:00",
+          "status": "exact",
+          "sourceLabel": "Resident Advisor",
+          "source": "https://ra.co/events/2453279"
+        }
+      ],
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2453279",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "santa-k",
+      "month": "Jun",
+      "sortDate": "2026-06-13",
+      "date": "Jun 13",
+      "time": "22:30-06:00",
+      "title": "Santa K x TURBO",
+      "venue": "Abyss Shanghai",
+      "district": "Huangpu",
+      "vibe": [
+        "hard",
+        "underground"
+      ],
+      "genre": "hard techno, new trance",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "120 RMB",
+      "age": "Check source",
+      "source": "https://ra.co/events/2458037",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "ember",
+      "description": "Best current hard/fast pick: Santa K, DISCIPLINE, LaGlory, PASHRAWBOI, and NAKIN at Abyss.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2458037",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "synth-crush",
+      "month": "Jun",
+      "sortDate": "2026-06-13",
+      "date": "Jun 13",
+      "time": "22:00-04:30",
+      "title": "Synth Crush",
+      "venue": "EXIT",
+      "district": "Changning",
+      "vibe": [
+        "experimental",
+        "underground"
+      ],
+      "genre": "electro, EBM, industrial, techno, IDM",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "118 RMB",
+      "age": "Not listed",
+      "source": "https://ra.co/events/2458269",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "acid",
+      "description": "Machine-music night with Altieri3000 live, Velvet Robot live, Hello Shitty, Ruima, and Illsee.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2458269",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "system-popup",
+      "month": "Jun",
+      "sortDate": "2026-06-13",
+      "date": "Jun 13-Aug",
+      "time": "Saturday nights",
+      "title": "System summer pop-up",
+      "venue": "Arcane / Shanghai Hotel",
+      "district": "Jing'an",
+      "vibe": [
+        "warehouse",
+        "underground"
+      ],
+      "genre": "techno, club, multi-room pop-up",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "Check System",
+      "age": "Check promoter",
+      "source": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "ember",
+      "description": "SmartShanghai reports System returning to the Shanghai Hotel e-sports arena on Saturdays until early August. Lineups need promoter confirmation.",
+      "sourceStatus": "watchlist",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "alter-pavillon",
+      "month": "Jun",
+      "sortDate": "2026-06-18",
+      "date": "Jun 18",
+      "time": "15:00-02:00",
+      "title": "ALTER. Pavillon",
+      "venue": "Beaufort Terrace",
+      "district": "Huangpu",
+      "vibe": [
+        "date",
+        "experimental"
+      ],
+      "genre": "electronic, live acoustic-electronic, radio stream",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "128-198 RMB",
+      "age": "Not listed",
+      "source": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "gold",
+      "description": "Long-form Yu Garden-adjacent session by ALTER. and byyb with DJs, a radio livestream, and Wang Meng + Yu Miao live.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "mrd",
+      "month": "Jun",
+      "sortDate": "2026-06-19",
+      "date": "Jun 19",
+      "time": "Check venue",
+      "title": "MRD",
+      "venue": "Dirty House",
+      "district": "Huangpu",
+      "vibe": [
+        "bass",
+        "underground"
+      ],
+      "genre": "eurodance, trance, techno",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "Check venue",
+      "age": "Check venue",
+      "source": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "cyan",
+      "description": "SmartShanghai lead: fast but not hard eurodance, trance, and techno at Dirty House. Verify before planning.",
+      "sourceStatus": "watchlist",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "jasmin-knopha",
+      "month": "Jun",
+      "sortDate": "2026-06-20",
+      "date": "Jun 20",
+      "time": "Check venue",
+      "title": "Jasmin + Knopha",
+      "venue": "Heim Sauna",
+      "district": "Huangpu",
+      "vibe": [
+        "bass",
+        "underground"
+      ],
+      "genre": "techno-dubstep hybrid, house, club music",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "Check Heim",
+      "age": "Check venue",
+      "source": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "rose",
+      "description": "Single-source lead for a textured Heim night joining Dutch producer/DJ Jasmin with Knopha.",
+      "sourceStatus": "watchlist",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "liminal-dreams",
+      "month": "Jun",
+      "sortDate": "2026-06-20",
+      "date": "Jun 20",
+      "time": "Check Wigwam",
+      "title": "Liminal Dreams",
+      "venue": "Wigwam",
+      "district": "Changning",
+      "vibe": [
+        "experimental",
+        "date"
+      ],
+      "genre": "ambient, outer music, electronic",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "Check Wigwam",
+      "age": "Check venue",
+      "source": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "cyan",
+      "description": "SmartShanghai lead for an ambient and outer-music night across Asia. More listening-session than rave.",
+      "sourceStatus": "watchlist",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "botox-fatale",
+      "month": "Jun",
+      "sortDate": "2026-06-26",
+      "date": "Jun 26",
+      "time": "Check Abyss",
+      "title": "Botox Fatale",
+      "venue": "Abyss Shanghai",
+      "district": "Huangpu",
+      "vibe": [
+        "hard",
+        "underground"
+      ],
+      "genre": "hard techno, rave",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "Check venue",
+      "age": "Check venue",
+      "source": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "ember",
+      "description": "SmartShanghai lead for another harder-end Abyss booking. Needs official venue/ticket confirmation before planning around it.",
+      "sourceStatus": "watchlist",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "cyber-buddha",
+      "month": "Jun",
+      "sortDate": "2026-06-26",
+      "date": "Jun 26",
+      "time": "20:00",
+      "title": "Cyber Buddha: Electronic Nomads of Isan",
+      "venue": "Star@ Culture Center",
+      "district": "Putuo",
+      "vibe": [
+        "experimental",
+        "date"
+      ],
+      "genre": "electronic, acid folk, ambient, psychedelic",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "168-288 RMB",
+      "age": "Not listed",
+      "source": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "gold",
+      "description": "Electronic-world-music live show with The Hymmapan Electron, Taiga, and MICO. Not a club rave, but a strong experimental electronic listing.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "devils-dancers",
+      "month": "Jun",
+      "sortDate": "2026-06-26",
+      "date": "Jun 26",
+      "time": "Check venue",
+      "title": "The Devil's Dancers",
+      "venue": "Specters",
+      "district": "Changning",
+      "vibe": [
+        "experimental",
+        "underground"
+      ],
+      "genre": "post-punk, cold wave, minimal wave, dark wave, shoegaze",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "Check venue",
+      "age": "Check venue",
+      "source": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "rose",
+      "description": "Darker dance-adjacent Specters lead. Lower techno fit, but useful for goth and wave-oriented nights.",
+      "sourceStatus": "watchlist",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "anika-kunst",
+      "month": "Jun",
+      "sortDate": "2026-06-27",
+      "date": "Jun 27",
+      "time": "Check venue",
+      "title": "Anika Kunst",
+      "venue": "POTENT",
+      "district": "Huangpu",
+      "vibe": [
+        "underground",
+        "date"
+      ],
+      "genre": "techno, house",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "Check POTENT",
+      "age": "Check venue",
+      "source": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "gold",
+      "description": "SmartShanghai lead: Spanish techno/house DJ Anika Kunst with 10000 and DJ EBP.",
+      "sourceStatus": "watchlist",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "hexscape",
+      "month": "Jun",
+      "sortDate": "2026-06-27",
+      "date": "Jun 27",
+      "time": "Check EXIT",
+      "title": "Hexscape pres. Bi-NON & chillchillshit",
+      "venue": "EXIT",
+      "district": "Changning",
+      "vibe": [
+        "experimental",
+        "underground"
+      ],
+      "genre": "A/V live, hypermodern club, electronic",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "Check EXIT",
+      "age": "Check venue",
+      "source": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "cyan",
+      "description": "Single-source SmartShanghai lead for an immersive A/V live set at EXIT with Chuan, Na$ty, and Toyn on support.",
+      "sourceStatus": "watchlist",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "jaal",
+      "month": "Jun",
+      "sortDate": "2026-06-27",
+      "date": "Jun 27",
+      "time": "Check venue",
+      "title": "JAAL The Machine live acid techno",
+      "venue": "Fenrir",
+      "district": "Changning",
+      "vibe": [
+        "experimental",
+        "hard"
+      ],
+      "genre": "acid techno, metal crossover",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "Check venue",
+      "age": "Check venue",
+      "source": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "ember",
+      "description": "Single-source lead for live acid techno paired with metal bands at Fenrir.",
+      "sourceStatus": "watchlist",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "truth-lies",
+      "month": "Jun",
+      "sortDate": "2026-06-27",
+      "date": "Jun 27",
+      "time": "Check venue",
+      "title": "KNOT: Truth and Lies Vol. 4",
+      "venue": "ILLUM",
+      "district": "Changning",
+      "vibe": [
+        "bass",
+        "experimental"
+      ],
+      "genre": "hyperpop, trance, techno",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "Check ILLUM",
+      "age": "Check venue",
+      "source": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "rose",
+      "description": "SmartShanghai lead with QQBBG and Liu Qoo; high-color KNOT club-rave direction.",
+      "sourceStatus": "watchlist",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "youshan-warmup",
+      "month": "Jun",
+      "sortDate": "2026-06-27",
+      "date": "Jun 27",
+      "time": "Check Wigwam",
+      "title": "Youshan Festival warmup",
+      "venue": "Wigwam",
+      "district": "Changning",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "genre": "house, downtempo, minimal, ambient, techno, bass, trance",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "Check Wigwam",
+      "age": "Check venue",
+      "source": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "acid",
+      "description": "Warmup lead for a July secret-forest festival. Lineup was still TBA in the public guide, so keep it on watch only.",
+      "sourceStatus": "watchlist",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    }
+  ],
+  "socialLeads": [],
+  "discovered": [
+    {
+      "url": "https://ra.co/events/2461478",
+      "title": "Milo Raad + Cosmjn",
+      "sourceLabel": "Resident Advisor",
+      "status": 403,
+      "parsed": false
+    },
+    {
+      "url": "https://ra.co/events/2460995",
+      "title": "KOLLIN",
+      "sourceLabel": "Resident Advisor",
+      "status": 403,
+      "parsed": false
+    },
+    {
+      "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+      "title": "Youshan Festival warmup",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false
+    },
+    {
+      "url": "https://ra.co/events/2458037",
+      "title": "Santa K x TURBO",
+      "sourceLabel": "Resident Advisor",
+      "status": 403,
+      "parsed": false
+    },
+    {
+      "url": "https://ra.co/events/2461476",
+      "title": "Matisa + Limsum",
+      "sourceLabel": "Resident Advisor",
+      "status": 403,
+      "parsed": false
+    },
+    {
+      "url": "https://ra.co/events/2458269",
+      "title": "Synth Crush",
+      "sourceLabel": "Resident Advisor",
+      "status": 403,
+      "parsed": false
+    },
+    {
+      "url": "https://ra.co/events/2460549",
+      "title": "FENGYUN Vol. 5",
+      "sourceLabel": "Resident Advisor",
+      "status": 403,
+      "parsed": false
+    },
+    {
+      "url": "https://ra.co/events/2459595",
+      "title": "Horizon Rooftop feat. Erik Hagleton",
+      "sourceLabel": "Resident Advisor",
+      "status": 403,
+      "parsed": false
+    },
+    {
+      "url": "https://ra.co/events/2453279",
+      "title": "REACTOR pres. Nosaj Thing",
+      "sourceLabel": "Resident Advisor",
+      "status": 403,
+      "parsed": false
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
+      "title": "ALTER. Pavillon",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false,
+      "error": "This operation was aborted"
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
+      "title": "Cyber Buddha: Electronic Nomads of Isan",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false,
+      "error": "This operation was aborted"
+    }
+  ],
+  "notes": [
+    "This v1 scraper keeps curated embedded events as the seed dataset, refreshes source metadata, and adds parsable public event pages as watch/secondary entries.",
+    "Events from listing/editorial pages remain watch-level until a direct venue, promoter, ticketing, or event page confirms details.",
+    "X keyword searches are discovery-only social leads and never promote an event into the calendar without confirmation from a stronger source."
+  ]
+}

@@ -1,8 +1,9 @@
 const fs = require("fs");
 
 const scriptPattern = new RegExp("<script>([\\s\\S]*?)</script>", "g");
-const htmlFiles = ["index.html", "venues.html"];
+const htmlFiles = ["index.html", "venues.html", "djs.html"];
 const syntaxOnlyHtmlFiles = ["shanghai-rave-calendar-2026.html"];
+const externalJsFiles = ["data/dj-data.js"];
 let scriptCount = 0;
 
 for (const file of [...htmlFiles, ...syntaxOnlyHtmlFiles]) {
@@ -30,10 +31,74 @@ for (const file of [...htmlFiles, ...syntaxOnlyHtmlFiles]) {
   }
 }
 
+for (const file of externalJsFiles) {
+  if (!fs.existsSync(file)) {
+    throw new Error(`${file} is required for the DJ database page`);
+  }
+  new Function(fs.readFileSync(file, "utf8"));
+}
+
 const mainScript = fs.readFileSync("index.html", "utf8").match(scriptPattern)[1];
 const archiveScript = fs.readFileSync("shanghai-rave-calendar-2026.html", "utf8").match(scriptPattern)[1];
 if (mainScript !== archiveScript) {
   throw new Error("calendar scripts differ between index.html and shanghai-rave-calendar-2026.html");
+}
+
+if (fs.existsSync("data/events.json")) {
+  const payload = JSON.parse(fs.readFileSync("data/events.json", "utf8"));
+  const events = Array.isArray(payload) ? payload : payload.events;
+  if (!Array.isArray(events) || events.length === 0) {
+    throw new Error("data/events.json must contain a non-empty events array");
+  }
+
+  const requiredFields = [
+    "id",
+    "month",
+    "sortDate",
+    "date",
+    "time",
+    "title",
+    "venue",
+    "district",
+    "vibe",
+    "genre",
+    "confidence",
+    "status",
+    "price",
+    "age",
+    "source",
+    "sourceLabel",
+    "imageTheme",
+    "description",
+  ];
+  const ids = new Set();
+  for (const event of events) {
+    if (ids.has(event.id)) {
+      throw new Error(`duplicate event id in data/events.json: ${event.id}`);
+    }
+    ids.add(event.id);
+    for (const field of requiredFields) {
+      if (event[field] === undefined || event[field] === null || event[field] === "") {
+        throw new Error(`event ${event.id} missing required field in data/events.json: ${field}`);
+      }
+    }
+    if (!Array.isArray(event.vibe) || event.vibe.length === 0) {
+      throw new Error(`event ${event.id} must have at least one vibe in data/events.json`);
+    }
+  }
+}
+
+if (fs.existsSync("config/scrape-keywords.json")) {
+  const config = JSON.parse(fs.readFileSync("config/scrape-keywords.json", "utf8"));
+  const keywords = config.x?.keywords;
+  if (!Array.isArray(keywords) || keywords.length === 0) {
+    throw new Error("config/scrape-keywords.json must define x.keywords as a non-empty array");
+  }
+  for (const keyword of keywords) {
+    if (!String(keyword).trim()) {
+      throw new Error("config/scrape-keywords.json contains an empty X/Twitter keyword");
+    }
+  }
 }
 
 console.log(`inline scripts syntax OK: ${scriptCount} scripts across ${htmlFiles.length + syntaxOnlyHtmlFiles.length} HTML files`);
