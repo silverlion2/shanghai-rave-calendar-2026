@@ -1,6 +1,6 @@
 # Project Memory
 
-Last updated: 2026-06-08 20:04 Asia/Shanghai
+Last updated: 2026-06-08 20:06 Asia/Shanghai
 
 ## Project
 
@@ -112,8 +112,10 @@ GitHub state:
 - Visibility: public
 - Default branch: `main`
 - Remote: `origin` -> `https://github.com/silverlion2/shanghai-rave-calendar-2026.git`
-- Latest pushed commit before this memory update: `bf0b3a7 Expand calendar cells across available width`
+- Latest pushed functional commit before this memory-only correction: `b5fefdd Refine calendar navigation and itinerary planning`
 - Recent calendar UI commits:
+  - `b5fefdd Refine calendar navigation and itinerary planning`
+  - `b418477 Add project memory`
   - `f30578b Focus calendar on future events`
   - `bf0b3a7 Expand calendar cells across available width`
 - `gh` is authenticated as `silverlion2`.
