@@ -431,6 +431,12 @@
       border-color: var(--acid);
     }
 
+    .status-estimated {
+      color: var(--cyan);
+      background: rgba(65,215,255,.08);
+      border-color: rgba(65,215,255,.55);
+    }
+
     .status-secondary {
       color: var(--void);
       background: var(--gold);
@@ -698,7 +704,7 @@
   <main class="shell">
     <nav class="site-nav" aria-label="Site navigation">
       <div class="nav-group">
-        <a class="nav-link" href="index.html">Calendar</a>
+        <a class="nav-link" href="index.html">Rave calendar</a>
         <a class="nav-link" href="venues.html">Venue & crew guide</a>
         <a class="nav-link active" href="djs.html">DJ database</a>
       </div>
@@ -709,10 +715,10 @@
       <div>
         <div class="kicker">Paired performer database</div>
         <h1>Shanghai 2026 DJ database</h1>
-        <p class="subhead">A searchable performer layer for the rave calendar, pairing each DJ with appearances, source status, venue context, and published set-time slots when they exist.</p>
+        <p class="subhead">A searchable performer layer for the rave calendar, pairing each DJ with appearances, source status, venue context, and exact or estimated set-time slots.</p>
         <div class="source-note">
           <span class="pill">Calendar-linked profiles</span>
-          <span class="pill">Exact slots flagged</span>
+          <span class="pill">Exact and estimated slots flagged</span>
           <span class="pill">Official / secondary / watchlist source layers</span>
           <span class="pill">Generated profile artwork, not official press photos</span>
         </div>
@@ -749,6 +755,7 @@
         <option value="watch">Watchlist</option>
         <option value="past">Past archive</option>
         <option value="exact">Exact set time</option>
+        <option value="estimated">Estimated set time</option>
       </select>
     </section>
 
@@ -775,6 +782,7 @@
 
     <footer class="footnotes">
       DJ notes are paired from the calendar's event lineups and should be treated as planning context, not artist biographies. Use the linked event source or ticket page before planning around a specific slot.
+      Estimated slots divide the listed event window across the known lineup order and are not published running orders.
     </footer>
   </main>
 
@@ -856,12 +864,69 @@
       return verified;
     }
 
+    function clockToMinutes(parts) {
+      return Number(parts[0]) * 60 + Number(parts[1]);
+    }
+
+    function parseEventTimeWindow(event) {
+      const timeText = String(event.time || "");
+      const matches = Array.from(timeText.matchAll(/(\d{1,2}):(\d{2})/g), match => [Number(match[1]), Number(match[2])]);
+      if (matches.length < 2) return null;
+      const startMinutes = clockToMinutes(matches[0]);
+      let endMinutes = clockToMinutes(matches[1]);
+      const dayNames = { mon: 0, tue: 1, wed: 2, thu: 3, fri: 4, sat: 5, sun: 6 };
+      const days = Array.from(timeText.matchAll(/\b(mon(?:day)?|tue(?:sday)?|wed(?:nesday)?|thu(?:rsday)?|fri(?:day)?|sat(?:urday)?|sun(?:day)?)\b/ig), match => match[1].slice(0, 3).toLowerCase());
+      if (days.length >= 2 && dayNames[days[0]] !== undefined && dayNames[days[1]] !== undefined) {
+        const daySpan = (dayNames[days[1]] - dayNames[days[0]] + 7) % 7;
+        if (daySpan > 0) endMinutes += daySpan * 24 * 60;
+      }
+      if (endMinutes <= startMinutes) endMinutes += 24 * 60;
+      const durationMinutes = endMinutes - startMinutes;
+      if (!Number.isFinite(durationMinutes) || durationMinutes <= 0) return null;
+      return { startMinutes, endMinutes, durationMinutes };
+    }
+
+    function formatClock(totalMinutes) {
+      const normalized = ((Math.round(totalMinutes) % (24 * 60)) + (24 * 60)) % (24 * 60);
+      return `${String(Math.floor(normalized / 60)).padStart(2, "0")}:${String(normalized % 60).padStart(2, "0")}`;
+    }
+
+    function expandedEventLineup(event) {
+      return eventLineup(event).flatMap(item => {
+        const names = splitPerformerNames(item.name);
+        return names.length ? names.map(name => ({ name, note: item.note || "" })) : [{ name: item.name, note: item.note || "" }];
+      });
+    }
+
+    function estimateSetTimes(event) {
+      const window = parseEventTimeWindow(event);
+      const lineup = expandedEventLineup(event);
+      if (!window || !lineup.length) return [];
+      const roundedBoundary = index => {
+        if (index === 0) return window.startMinutes;
+        if (index === lineup.length) return window.endMinutes;
+        return Math.round((window.startMinutes + (window.durationMinutes * index / lineup.length)) / 5) * 5;
+      };
+      return lineup.map((item, index) => ({
+        name: item.name,
+        start: formatClock(roundedBoundary(index)),
+        end: formatClock(roundedBoundary(index + 1)),
+        note: item.note || "Estimated from event window and lineup order; verify exact set time with the venue or promoter.",
+        status: "estimated",
+        source: event.source,
+        sourceLabel: "Event-window estimate"
+      }));
+    }
+
     function normalizeSlot(slot, event) {
+      const start = slot.start || slot.startTime || "";
+      const end = slot.end || slot.endTime || "";
       return {
         name: slot.name || slot.dj || slot.artist || "TBA",
-        start: slot.start || slot.startTime || "",
-        end: slot.end || slot.endTime || "",
-        status: slot.status || (slot.start || slot.end ? "exact" : "not-published"),
+        start,
+        end,
+        note: slot.note || "",
+        status: slot.status || (start || end ? "exact" : "not-published"),
         source: slot.source || event.source,
         sourceLabel: slot.sourceLabel || event.sourceLabel
       };
@@ -872,6 +937,20 @@
       if (slot.start) return slot.start;
       if (slot.end) return `until ${slot.end}`;
       return "Set time TBA";
+    }
+
+    function hasSetTime(slot) {
+      return Boolean(slot.start || slot.end);
+    }
+
+    function hasPublishedSetTime(slot) {
+      return hasSetTime(slot) && slot.status !== "estimated";
+    }
+
+    function slotStatusLabel(slot) {
+      if (hasPublishedSetTime(slot)) return "Exact";
+      if (slot.status === "estimated" && hasSetTime(slot)) return "Estimated";
+      return "TBA";
     }
 
     function timeToMinutes(value) {
@@ -936,6 +1015,7 @@
             sourceStatuses: [],
             imageTheme: event.imageTheme || "acid",
             exactSlotCount: 0,
+            estimatedSlotCount: 0,
             sourceCount: 0,
             lastChecked: verified
           });
@@ -976,8 +1056,9 @@
           profile.appearances.push(appearance);
         }
         if (note) addNote(profile, note);
-        if (slot && (slot.start || slot.end)) {
+        if (slot) {
           const normalized = normalizeSlot(slot, event);
+          if (!hasSetTime(normalized)) return;
           const exists = appearance.slots.some(existing => existing.name === normalized.name && existing.start === normalized.start && existing.end === normalized.end);
           if (!exists) appearance.slots.push(normalized);
         }
@@ -989,10 +1070,16 @@
             addAppearance(profileFor(name, event), event, item.note, null);
           });
         });
-        if (Array.isArray(event.setTimes)) {
+        if (Array.isArray(event.setTimes) && event.setTimes.length) {
           event.setTimes.forEach(slot => {
             splitPerformerNames(slot.name || slot.dj || slot.artist).forEach(name => {
               addAppearance(profileFor(name, event), event, slot.note || "Published DJ set time listed by the event source.", slot);
+            });
+          });
+        } else {
+          estimateSetTimes(event).forEach(slot => {
+            splitPerformerNames(slot.name).forEach(name => {
+              addAppearance(profileFor(name, event), event, slot.note, slot);
             });
           });
         }
@@ -1009,7 +1096,8 @@
         profile.months = unique(profile.appearances.map(app => app.month));
         profile.venues = unique(profile.appearances.map(app => app.venue));
         profile.sourceStatuses = unique(profile.appearances.map(app => app.sourceStatus));
-        profile.exactSlotCount = profile.appearances.reduce((total, app) => total + app.slots.length, 0);
+        profile.exactSlotCount = profile.appearances.reduce((total, app) => total + app.slots.filter(hasPublishedSetTime).length, 0);
+        profile.estimatedSlotCount = profile.appearances.reduce((total, app) => total + app.slots.filter(slot => slot.status === "estimated").length, 0);
         profile.sourceCount = unique(profile.appearances.map(app => app.source)).length;
         profile.lastChecked = profile.appearances.map(app => app.lastChecked).filter(Boolean).sort().pop() || verified;
         profile.upcomingCount = profile.appearances.filter(app => app.status === "upcoming").length;
@@ -1020,8 +1108,8 @@
         profile.searchText = [profile.name, profile.notes.join(" "), profile.appearances.map(app => [app.title, app.venue, app.genre, app.date].join(" ")).join(" ")].join(" ").toLowerCase();
         return profile;
       }).sort((a, b) => {
-        const scoreA = a.upcomingCount * 30 + a.watchCount * 12 + a.exactSlotCount * 8 + a.appearances.length;
-        const scoreB = b.upcomingCount * 30 + b.watchCount * 12 + b.exactSlotCount * 8 + b.appearances.length;
+        const scoreA = a.upcomingCount * 30 + a.watchCount * 12 + a.exactSlotCount * 8 + a.estimatedSlotCount * 3 + a.appearances.length;
+        const scoreB = b.upcomingCount * 30 + b.watchCount * 12 + b.exactSlotCount * 8 + b.estimatedSlotCount * 3 + b.appearances.length;
         if (scoreA !== scoreB) return scoreB - scoreA;
         return a.name.localeCompare(b.name);
       });
@@ -1037,6 +1125,7 @@
         if (sound !== "all" && !profile.soundFamilies.includes(sound)) return false;
         if (month !== "all" && !profile.months.includes(month)) return false;
         if (status === "exact" && profile.exactSlotCount === 0) return false;
+        if (status === "estimated" && profile.estimatedSlotCount === 0) return false;
         if (status === "upcoming" && profile.upcomingCount === 0) return false;
         if (status === "watch" && profile.watchCount === 0) return false;
         if (status === "past" && profile.pastCount === 0) return false;
@@ -1061,7 +1150,9 @@
     }
 
     function slotStatusClass(hasSlot) {
-      return hasSlot ? "status-exact" : "status-tba";
+      if (hasSlot === "Exact") return "status-exact";
+      if (hasSlot === "Estimated") return "status-estimated";
+      return "status-tba";
     }
 
     function calendarUrl(app) {
@@ -1099,7 +1190,7 @@
             <b>${escapeHtml(profile.name)}</b>
             <span>${profile.appearances.length} event${profile.appearances.length === 1 ? "" : "s"} / ${profile.venues.slice(0, 2).map(escapeHtml).join(", ")}</span>
           </span>
-          <em class="row-count">${profile.exactSlotCount}</em>
+          <em class="row-count">${profile.exactSlotCount + profile.estimatedSlotCount}</em>
         </button>
       `).join("");
     }
@@ -1117,6 +1208,7 @@
       return [
         ["Appearances", String(profile.appearances.length)],
         ["Exact slots", String(profile.exactSlotCount)],
+        ["Estimated slots", String(profile.estimatedSlotCount)],
         ["Months", profile.months.map(month => monthNames[month] || month).join(", ")],
         ["Venues", profile.venues.slice(0, 5).join(", ")],
         ["Status mix", statusText.join(", ") || "TBA"],
@@ -1131,9 +1223,15 @@
       return app.slots.map(slot => setTimeRange(slot)).join(", ");
     }
 
+    function appearanceSlotStatus(app) {
+      if (app.slots.some(hasPublishedSetTime)) return "Exact";
+      if (app.slots.some(slot => slot.status === "estimated" && hasSetTime(slot))) return "Estimated";
+      return "TBA";
+    }
+
     function renderAppearances(profile) {
       return profile.appearances.map(app => {
-        const hasSlot = app.slots.length > 0;
+        const slotStatus = appearanceSlotStatus(app);
         return `
           <article class="event-row">
             <div class="event-date"><b>${escapeHtml(app.date)}</b><span>${escapeHtml(app.time)}</span></div>
@@ -1146,7 +1244,7 @@
                 <span class="status-pill">${app.sourceCount} source${app.sourceCount === 1 ? "" : "s"}</span>
                 <span class="status-pill">Checked ${escapeHtml(app.lastChecked)}</span>
               </div>
-              <span class="set-slot"><span class="status-pill ${slotStatusClass(hasSlot)}">${hasSlot ? "Exact" : "TBA"}</span>${escapeHtml(slotText(app))}</span>
+              <span class="set-slot"><span class="status-pill ${slotStatusClass(slotStatus)}">${slotStatus}</span>${escapeHtml(slotText(app))}</span>
             </div>
             <div class="event-actions">
               <a class="mini-link primary" href="${calendarUrl(app)}">Open in calendar</a>

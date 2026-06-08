@@ -1,6 +1,6 @@
 # Project Memory
 
-Last updated: 2026-06-08 19:40 Asia/Shanghai
+Last updated: 2026-06-08 20:04 Asia/Shanghai
 
 ## Project
 
@@ -87,8 +87,16 @@ Later work expanded the static site beyond the original scraper/calendar:
 - Added `djs.html` and `data/dj-data.js` as a DJ database generated from the event lineups and paired back to calendar events.
 - Calendar event cards now include organizer/promoter context under each event name.
 - Calendar month cells show event title plus organizer.
+- Calendar default view now focuses on future events. Past events are hidden on first load but remain accessible through `Past archive`, `All Dates`, and direct `?event=...` links.
+- Calendar grids hide empty Monday-Thursday columns when those weekdays have no visible events in the current filtered month.
+- Visible calendar columns now expand across the available horizontal space, so fewer visible weekday columns produce wider cells on desktop while still fitting mobile.
 - Event modals include organizer facts, source count, last checked, source layer, DJ set times, DJ notes, details/tickets links, profile links, and individual `.ics` export.
 - The calendar supports Tonight, This Weekend, Next 30 Days, Newly Added, venue/promoter filters, status filters, vibe filters, and filtered `.ics` export.
+- Set-time planning now estimates missing parseable DJ slots from event windows and lineup order, clearly marks estimated slots, lets users select itinerary rows, persists selected slots in `localStorage`, and exports selected itinerary `.ics` or PNG images.
+- The DJ database now includes estimated set-time status, estimated-slot filtering, and profile counts for exact versus estimated slots.
+- The calendar hero no longer presents a top-level `RA + SmartShanghai + official/ticket pages` source pill. It retains `Asia/Shanghai dates`, generated visual-poster labeling, Shanghai Bund CC0 hero-photo attribution, the venue and crew guide link, and the DJ database link.
+- `venues.html` and `djs.html` include an explicit `Rave calendar` return link.
+- `shanghai-rave-calendar-2026.html` includes the same itinerary controls as `index.html`, and `scripts/check.js` validates those itinerary markers on both calendar copies.
 - `index.html` and `shanghai-rave-calendar-2026.html` must keep their calendar inline scripts identical; `scripts/check.js` enforces this.
 
 Current public URLs:
@@ -104,7 +112,10 @@ GitHub state:
 - Visibility: public
 - Default branch: `main`
 - Remote: `origin` -> `https://github.com/silverlion2/shanghai-rave-calendar-2026.git`
-- Last pushed commit before this memory update: `ed3ea5e Expand Shanghai rave calendar site`
+- Latest pushed commit before this memory update: `bf0b3a7 Expand calendar cells across available width`
+- Recent calendar UI commits:
+  - `f30578b Focus calendar on future events`
+  - `bf0b3a7 Expand calendar cells across available width`
 - `gh` is authenticated as `silverlion2`.
 - `gh` token scopes include `gist`, `read:org`, `repo`, and `workflow`.
 
@@ -124,5 +135,9 @@ Recent verification:
 
 - `npm run check` passed after adding organizer display.
 - Local browser check confirmed organizer text in month cells, event cards, and modal facts.
+- `npm run check` passed after hiding past events by default, hiding empty weekday columns, and widening available calendar cells.
+- Browser checks confirmed default `Future` filter, no past cards on load, archive/deep-link access for past events, compressed Thu-Sun June grid, desktop cells expanding to available width, and no mobile horizontal overflow at 390px.
+- `npm run check` passed after adding estimated set-time planning, itinerary export validation, hero source-label cleanup, archive itinerary parity, and `Rave calendar` return links.
+- Local browser verification on `http://127.0.0.1:4879` confirmed the hero pills, retained guide links, venue/DJ return navigation, and no console errors. The temporary server was stopped after verification.
 - Vercel production was redeployed after the organizer update.
 - GitHub repo was created, all project files were committed, and `main` was pushed.

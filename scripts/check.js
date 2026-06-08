@@ -44,6 +44,28 @@ if (mainScript !== archiveScript) {
   throw new Error("calendar scripts differ between index.html and shanghai-rave-calendar-2026.html");
 }
 
+const itineraryRequirements = [
+  { file: "index.html", text: 'id="selectedItinerary"', label: "selected itinerary panel" },
+  { file: "index.html", text: 'id="exportItineraryImage"', label: "image export button" },
+  { file: "index.html", text: 'id="downloadItineraryIcs"', label: "selected itinerary .ics export" },
+  { file: "index.html", text: 'data-slot-key', label: "selectable slot key markup" },
+  { file: "index.html", text: "function slotKey(", label: "stable itinerary slot keys" },
+  { file: "index.html", text: "function toggleItinerarySlot(", label: "slot selection toggle" },
+  { file: "index.html", text: "function exportItineraryImage(", label: "PNG itinerary export" },
+  { file: "index.html", text: "canvas.toBlob", label: "canvas image save path" },
+  { file: "index.html", text: "window.localStorage", label: "itinerary persistence" },
+  { file: "shanghai-rave-calendar-2026.html", text: 'id="selectedItinerary"', label: "archive selected itinerary panel" },
+  { file: "shanghai-rave-calendar-2026.html", text: 'id="exportItineraryImage"', label: "archive image export button" },
+  { file: "shanghai-rave-calendar-2026.html", text: 'id="downloadItineraryIcs"', label: "archive selected itinerary .ics export" },
+];
+
+for (const requirement of itineraryRequirements) {
+  const html = fs.readFileSync(requirement.file, "utf8");
+  if (!html.includes(requirement.text)) {
+    throw new Error(`${requirement.file} missing itinerary feature marker: ${requirement.label}`);
+  }
+}
+
 if (fs.existsSync("data/events.json")) {
   const payload = JSON.parse(fs.readFileSync("data/events.json", "utf8"));
   const events = Array.isArray(payload) ? payload : payload.events;
