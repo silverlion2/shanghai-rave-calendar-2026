@@ -413,7 +413,7 @@
       display: grid;
       grid-template-columns: repeat(var(--calendar-columns, 7), minmax(0, 1fr));
       gap: 4px;
-      width: min(100%, var(--calendar-width, 812px));
+      width: 100%;
       margin: 0 0 14px;
     }
 
@@ -2817,7 +2817,6 @@
         .map((_, weekdayIndex) => weekdayIndex)
         .filter(weekdayIndex => weekdayIndex >= 4 || weekdayHasEvent[weekdayIndex]);
       const cells = visibleWeekdayIndexes.map(weekdayIndex => `<div class="calendar-day-name">${weekdayLabels[weekdayIndex]}</div>`);
-      const calendarWidth = Math.min(visibleWeekdayIndexes.length * 116, 812);
 
       for (let weekStart = 1 - startOffset; weekStart <= daysInMonth; weekStart += 7) {
         visibleWeekdayIndexes.forEach(weekdayIndex => {
@@ -2843,7 +2842,7 @@
         });
       }
 
-      return `<div class="calendar-grid" style="--calendar-columns: ${visibleWeekdayIndexes.length}; --calendar-width: ${calendarWidth}px;" aria-label="${code} 2026 clickable event calendar">${cells.join("")}</div>`;
+      return `<div class="calendar-grid" style="--calendar-columns: ${visibleWeekdayIndexes.length};" aria-label="${code} 2026 clickable event calendar">${cells.join("")}</div>`;
     }
 
     function posterSvg(event) {
