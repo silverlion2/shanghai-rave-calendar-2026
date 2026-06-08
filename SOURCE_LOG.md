@@ -25,7 +25,16 @@ Collection method is separate from confirmation strength: Chrome + Computer Use 
 - Ticketing apps: 秀动, 大麦, 票星球, and mini-program ticket flows.
 - DJ/label accounts: Instagram, Weibo, WeChat, and Bandcamp tour or label-night announcements.
 
-Each Computer Use item should capture title, absolute date, start time, venue, lineup, ticket/source reference, source publication date, and screenshot/post reference when no public URL exists.
+Each Computer Use item should capture the full event record, not only the listing summary:
+
+- Time and place: title, event series, absolute date, doors/start/end time, timezone, venue, room/floor, district, full address, and map/search hint.
+- Lineup: full lineup, B2B notes, set order, set times, live/DJ format, promoter, venue host, label, and organizing crew.
+- Poster evidence: poster/flyer image source, screenshot reference, OCR text, and any image-only ticket/time/venue details.
+- Artist context: short sourced artist introductions, origin/city, genres, labels, notable releases, aliases, and official profile links.
+- Future city tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available.
+- Ticketing status: platform, URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist state, refund rules, purchase cutoff, and age/ID policy.
+- Deep links: open second-layer event, ticketing, venue, promoter, artist, label, poster-image, and related tour-announcement links instead of stopping at listing cards.
+- Provenance: source publication date, last checked date, confidence, and whether each detail is official, ticketing, social, or image-derived.
 
 ## 2026-06-08 Refresh
 
@@ -44,6 +53,19 @@ Added or upgraded in the calendar:
 - ALTER. Pavillon at Beaufort Terrace, Jun 18, 2026, SmartShanghai ticket page.
 - Cyber Buddha: Electronic Nomads of Isan, Jun 26, 2026, SmartShanghai ticket page.
 - CLTX at Abyss, Love Bang: The Woods, System summer pop-up, Liminal Dreams, Botox Fatale, The Devil's Dancers, Hexscape, and Youshan Festival warmup as watch-level SmartShanghai leads.
+
+## 2026-06-08 Browser/Computer Use Refresh
+
+Direct `fetch` still returns 403 for the RA Shanghai city listing, so current RA event details were collected through browser/Computer Use style inspection and preserved in `config/curated-events.json`. The scraper now merges that file after each automated refresh.
+
+Added or upgraded in the calendar:
+
+- FRUITYGROOVE Meets Soul Navigator at Reactor Shanghai, Jun 12, 2026, RA confirmed with full running order, address, price, age, lineup, and flyer evidence.
+- Milo Raad + Cosmjn, Matisa + Limsum, Santa K x TURBO, Synth Crush, FENGYUN Vol. 5, and REACTOR pres. Nosaj Thing were upgraded with lineup, address, organizer, poster evidence, ticket status, and artist/context notes where available.
+- Nova Events Sunset Sessions at Flair, Jun 13, 2026, SmartShanghai confirmed as an upcoming date-night club lead with price tiers, venue address, 9-DJ note, and ticket route.
+- Night at the Museum: Back to the 90s Disco Night, A Full Afrowave Takeover, Nova Summer Splash Pool Party, and Sunset Sundays were added as watch-level SmartShanghai club/date leads because they are lower techno fit or have incomplete lineup/ticket details.
+
+`data/events.json` now reports `curatedEventsApplied` so `scripts/check.js` can fail if the browser-confirmed updates stop merging.
 
 ## Watch-Only Rules
 

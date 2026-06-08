@@ -5,6 +5,28 @@ const htmlFiles = ["index.html", "venues.html", "djs.html", "planner.html", "ops
 const syntaxOnlyHtmlFiles = ["shanghai-rave-calendar-2026.html"];
 const externalJsFiles = ["data/dj-data.js"];
 let scriptCount = 0;
+const requiredCuratedEventIds = [
+  "milo-cosmjn",
+  "fruitygroove-soul-navigator",
+  "matisa-limsum",
+  "santa-k",
+  "synth-crush",
+  "fengyun-5",
+  "nosaj-thing",
+  "nova-sunset-sessions-flair",
+  "night-at-museum-90s-disco",
+  "afrowave-takeover-la-burg",
+  "nova-summer-splash-pool-party",
+  "sunset-sundays-dome",
+];
+const requiredPublishedCuratedEventIds = [
+  "fruitygroove-soul-navigator",
+  "nova-sunset-sessions-flair",
+  "night-at-museum-90s-disco",
+  "afrowave-takeover-la-burg",
+  "nova-summer-splash-pool-party",
+  "sunset-sundays-dome",
+];
 
 for (const file of [...htmlFiles, ...syntaxOnlyHtmlFiles]) {
   const html = fs.readFileSync(file, "utf8");
@@ -128,6 +150,21 @@ if (fs.existsSync("data/events.json")) {
     }
   }
 
+  if (fs.existsSync("config/curated-events.json")) {
+    if (typeof payload.curatedEventsApplied !== "number" || payload.curatedEventsApplied < requiredCuratedEventIds.length) {
+      throw new Error("data/events.json must report all curated event updates as applied");
+    }
+    for (const id of requiredPublishedCuratedEventIds) {
+      if (!ids.has(id)) {
+        throw new Error(`data/events.json missing curated published event: ${id}`);
+      }
+    }
+    const fruitygroove = events.find(event => event.id === "fruitygroove-soul-navigator");
+    if (!Array.isArray(fruitygroove?.setTimes) || fruitygroove.setTimes.length < 6) {
+      throw new Error("fruitygroove-soul-navigator must include the RA running order");
+    }
+  }
+
   const computerUseQueue = payload.computerUseQueue;
   if (!Array.isArray(computerUseQueue) || computerUseQueue.length === 0) {
     throw new Error("data/events.json must contain a non-empty computerUseQueue");
@@ -164,6 +201,18 @@ if (fs.existsSync("data/events.json")) {
     if (!Array.isArray(source.evidence) || source.evidence.length === 0) {
       throw new Error(`computerUseQueue source ${source.label} must define evidence requirements`);
     }
+    if (!Array.isArray(source.collectionChecklist) || source.collectionChecklist.length < 10) {
+      throw new Error(`computerUseQueue source ${source.label} must define a complete collectionChecklist`);
+    }
+    if (!Array.isArray(source.deepCollectionRules) || source.deepCollectionRules.length < 4) {
+      throw new Error(`computerUseQueue source ${source.label} must define deepCollectionRules`);
+    }
+    const checklistText = source.collectionChecklist.join(" ").toLowerCase();
+    for (const requiredTerm of ["poster", "artist introductions", "future tour", "ticketing status", "second-layer links"]) {
+      if (!checklistText.includes(requiredTerm)) {
+        throw new Error(`computerUseQueue source ${source.label} checklist missing ${requiredTerm}`);
+      }
+    }
   }
 }
 
@@ -176,6 +225,95 @@ if (fs.existsSync("config/scrape-keywords.json")) {
   for (const keyword of keywords) {
     if (!String(keyword).trim()) {
       throw new Error("config/scrape-keywords.json contains an empty X/Twitter keyword");
+    }
+  }
+}
+
+if (fs.existsSync("config/curated-events.json")) {
+  const curatedPayload = JSON.parse(fs.readFileSync("config/curated-events.json", "utf8"));
+  const curatedEvents = Array.isArray(curatedPayload) ? curatedPayload : curatedPayload.events;
+  if (!Array.isArray(curatedEvents) || curatedEvents.length === 0) {
+    throw new Error("config/curated-events.json must contain a non-empty events array");
+  }
+
+  const seenCuratedIds = new Set();
+  const fullEventRequiredFields = [
+    "id",
+    "month",
+    "sortDate",
+    "date",
+    "time",
+    "title",
+    "venue",
+    "district",
+    "vibe",
+    "genre",
+    "confidence",
+    "status",
+    "price",
+    "age",
+    "source",
+    "sourceLabel",
+    "imageTheme",
+    "description",
+  ];
+
+  for (const event of curatedEvents) {
+    if (!event.id || !String(event.id).trim()) {
+      throw new Error("every curated event update must define an id");
+    }
+    if (seenCuratedIds.has(event.id)) {
+      throw new Error(`duplicate event id in config/curated-events.json: ${event.id}`);
+    }
+    seenCuratedIds.add(event.id);
+
+    if (event.title || event.sortDate) {
+      for (const field of fullEventRequiredFields) {
+        if (event[field] === undefined || event[field] === null || event[field] === "") {
+          throw new Error(`curated full event ${event.id} missing required field: ${field}`);
+        }
+      }
+    }
+
+    if (event.lineup !== undefined) {
+      if (!Array.isArray(event.lineup) || event.lineup.length === 0) {
+        throw new Error(`curated event ${event.id} must define a non-empty lineup array when lineup is present`);
+      }
+      for (const lineupItem of event.lineup) {
+        const name = typeof lineupItem === "string" ? lineupItem : lineupItem?.name;
+        if (!String(name || "").trim()) {
+          throw new Error(`curated event ${event.id} has a lineup item without a name`);
+        }
+      }
+    }
+
+    if (event.setTimes !== undefined) {
+      if (!Array.isArray(event.setTimes) || event.setTimes.length === 0) {
+        throw new Error(`curated event ${event.id} must define a non-empty setTimes array when setTimes is present`);
+      }
+      for (const slot of event.setTimes) {
+        if (!slot.name || !slot.start || !slot.end || !slot.source) {
+          throw new Error(`curated event ${event.id} has an incomplete set time`);
+        }
+      }
+    }
+
+    if (event.posterEvidence !== undefined && (!event.posterEvidence.source || !event.posterEvidence.url)) {
+      throw new Error(`curated event ${event.id} posterEvidence must include source and url`);
+    }
+
+    if (event.ticketStatus !== undefined && !String(event.ticketStatus).trim()) {
+      throw new Error(`curated event ${event.id} ticketStatus must not be empty`);
+    }
+
+    if (event.futureTourPlan !== undefined && !Array.isArray(event.futureTourPlan)) {
+      throw new Error(`curated event ${event.id} futureTourPlan must be an array when present`);
+    }
+  }
+
+  for (const id of requiredCuratedEventIds) {
+    if (!seenCuratedIds.has(id)) {
+      throw new Error(`config/curated-events.json missing required update: ${id}`);
     }
   }
 }

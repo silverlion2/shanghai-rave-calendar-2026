@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rave Calendar Ops Console</title>
+  <title>Shanghai Rave Index Ops Console</title>
   <meta name="description" content="Operations console for AI event intake, human review, WeChat and Xiaohongshu publishing copy, ticket routing, promoter exposure, and reports.">
   <meta name="robots" content="noindex,nofollow">
   <meta name="theme-color" content="#c6ff3b">
   <link rel="canonical" href="https://shanghai-rave-calendar-2026.vercel.app/ops">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Shanghai Rave Calendar">
-  <meta property="og:title" content="Rave Calendar Ops Console">
+  <meta property="og:site_name" content="Shanghai Rave Index">
+  <meta property="og:title" content="Shanghai Rave Index Ops Console">
   <meta property="og:description" content="Review scraped event leads, prepare social distribution, manage ticket links, paid promoter exposure, and reports.">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Rave Calendar Ops Console",
+    "name": "Shanghai Rave Index Ops Console",
     "applicationCategory": "BusinessApplication",
     "isAccessibleForFree": true,
     "inLanguage": "zh-CN"
@@ -629,7 +629,7 @@
   <main class="shell">
     <header class="topbar">
       <div>
-        <div class="kicker">Ops workflow / Shanghai Rave Calendar</div>
+        <div class="kicker">Ops workflow / Shanghai Rave Index</div>
         <h1>活动运营控制台</h1>
         <p class="subhead">把 AI 抓取结果、人工审核、微信/小红书分发、导票链接、promoter 付费曝光和数据报表放在同一个静态工作台里。审核、导票和曝光状态保存在当前浏览器，导出后再进入 GitHub 数据流。</p>
       </div>
@@ -984,6 +984,8 @@
     function normalizeComputerUseLead(item, index) {
       const queryText = Array.isArray(item.queries) ? item.queries.join(" / ") : "";
       const evidenceText = Array.isArray(item.evidence) ? item.evidence.join(", ") : "";
+      const checklistText = Array.isArray(item.collectionChecklist) ? item.collectionChecklist.join("; ") : "";
+      const rulesText = Array.isArray(item.deepCollectionRules) ? item.deepCollectionRules.join(" ") : "";
       return {
         key: leadKey("computer-use", item.label || index),
         type: "computer-use",
@@ -1004,7 +1006,9 @@
         description: [
           item.trigger || "Use Chrome + Computer Use for this source.",
           item.collectionGoal || "",
-          evidenceText ? `Evidence: ${evidenceText}` : ""
+          evidenceText ? `Evidence: ${evidenceText}` : "",
+          checklistText ? `Collect completely: ${checklistText}` : "",
+          rulesText ? `Deep collection rules: ${rulesText}` : ""
         ].filter(Boolean).join(" "),
         price: "Check source",
         age: "Check venue",

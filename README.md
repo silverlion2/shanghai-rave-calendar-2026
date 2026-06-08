@@ -1,6 +1,6 @@
-# Shanghai Rave Calendar 2026
+# Shanghai Rave Index
 
-Interactive static calendar for Shanghai techno, rave, warehouse, industrial, bass, and underground electronic events in 2026. It includes a paired DJ database generated from the event lineups, with performer profiles, source status, set-time status, and event deep links.
+Interactive static index for Shanghai techno, rave, warehouse, industrial, bass, and underground electronic events in 2026. It includes a paired DJ database generated from the event lineups, with performer profiles, source status, set-time status, and event deep links.
 
 ## Local preview
 
@@ -35,8 +35,9 @@ V1 uses GitHub only:
 2. `scripts/scrape-events.js` refreshes public RA and SmartShanghai source data.
 3. It checks X/Twitter keyword searches from `config/scrape-keywords.json` as discovery-only social leads.
 4. It writes a `computerUseQueue` for known anti-bot, logged-in, app-only, poster/image, and mini-program sources that the agent should inspect with Chrome + Computer Use.
-5. The script writes `data/events.json`.
-6. The workflow commits the changed JSON back to the repository.
+5. It merges agent-collected, browser-verified event updates from `config/curated-events.json`.
+6. The script writes `data/events.json`.
+7. The workflow commits the changed JSON back to the repository.
 
 No database is required for this version.
 
@@ -45,6 +46,10 @@ X/Twitter leads are stored under `socialLeads` in `data/events.json`. They do no
 For reliable X/Twitter collection, add either `X_BEARER_TOKEN` or `TWITTER_BEARER_TOKEN` as a GitHub repository secret. Without a token, the workflow records the configured keyword searches but does not collect posts by default. To attempt unauthenticated public HTML search, set `SCRAPE_X_PUBLIC_SEARCH=true`, but expect frequent empty or blocked responses from X/Twitter.
 
 Known anti-bot or app-bound sources are not scraped with plain `fetch`. They are queued for agent-operated Chrome + Computer Use in `computerUseQueue`: RA Shanghai when blocked, SmartShanghai when fetch is incomplete, Xiaohongshu, WeChat official accounts/groups, venue official accounts, promoter posters, ShowStart/Damai/PiaoPlanet/mini-program ticketing, and DJ/label Instagram, Weibo, WeChat, or Bandcamp pages. Treat these as discovery or verification tasks until the agent captures a shareable official/ticket/source reference or screenshot evidence.
+
+Computer Use collection should be complete, not just a title scrape. For each event, follow second-layer links and extract image/poster text when needed to capture time, venue/address, lineup and set times, poster evidence, artist introductions, future city tour dates, ticket platform/price/availability, age/ID rules, source publication dates, and whether each detail came from official, ticketing, social, or image-derived evidence.
+
+`config/curated-events.json` is the persistent handoff for those agent-collected details. Use it for browser-confirmed RA, SmartShanghai, WeChat, Xiaohongshu, mini-program, poster, or social-account details that should survive every automated refresh without adding brittle anti-bot scraping logic to GitHub Actions.
 
 ## Deploy
 

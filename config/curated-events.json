@@ -1,0 +1,648 @@
+{
+  "updatedAt": "2026-06-08",
+  "timezone": "Asia/Shanghai",
+  "collectionMethod": "Agent-operated Chrome/Computer Use style browser verification for anti-bot, image-heavy, ticketing, and second-layer event pages; public source URLs are preserved when available.",
+  "events": [
+    {
+      "id": "milo-cosmjn",
+      "address": "L3 TX Huaihai, 523 Huaihai Middle Road, Shanghai, China",
+      "organizer": "POTENT",
+      "detailsUrl": "https://ra.co/events/2461478",
+      "ticketUrl": "https://ra.co/events/2461478",
+      "lineup": [
+        {
+          "name": "Cosmjn",
+          "note": "RA-listed Romanian artist on the POTENT lineup; exact set time was not published."
+        },
+        {
+          "name": "Milo Raad",
+          "note": "RA-listed Serbian artist on the POTENT lineup; exact set time was not published."
+        },
+        {
+          "name": "GaoQiao",
+          "note": "Shanghai support on the RA-listed POTENT lineup; exact set time was not published."
+        }
+      ],
+      "posterEvidence": {
+        "type": "flyer",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2461478",
+        "status": "Flyer image is visible on the RA detail page."
+      },
+      "ticketStatus": "RA lists cost at 100 RMB and minimum age 18+. Final ticket route should be checked before publishing a direct purchase CTA.",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2461478",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "fruitygroove-soul-navigator",
+      "month": "Jun",
+      "sortDate": "2026-06-12",
+      "date": "Jun 12",
+      "time": "22:00-06:00",
+      "title": "FRUITYGROOVE Meets Soul Navigator",
+      "venue": "Reactor Shanghai",
+      "district": "Changning",
+      "vibe": [
+        "underground",
+        "bass"
+      ],
+      "genre": "house, hip-hop, groove, club",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "128 RMB",
+      "age": "18+",
+      "source": "https://ra.co/events/2454518",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "rose",
+      "description": "REACTOR Shanghai hosts FRUITYGROOVE Meets Soul Navigator at C-PARK, with house and hip-hop leaning selectors and a published running order through late night.",
+      "sourceStatus": "secondary",
+      "address": "D-L1-03, B1, C-PARK, No. 638 Zhaohua Road, Changning District, Shanghai",
+      "organizer": "REACTOR Shanghai",
+      "detailsUrl": "https://ra.co/events/2454518",
+      "ticketUrl": "https://ra.co/events/2454518",
+      "lineup": [
+        {
+          "name": "KaleidoJazzlegs",
+          "note": "Opening selector on RA's published running order."
+        },
+        {
+          "name": "Dada (ES)",
+          "note": "RA-linked artist on the 23:30-00:30 slot."
+        },
+        {
+          "name": "Soul Navigator",
+          "note": "Named event collaborator and midnight slot on the RA running order."
+        },
+        {
+          "name": "Dreaming",
+          "note": "RA-listed 01:30-02:30 slot."
+        },
+        {
+          "name": "gkamkbns",
+          "note": "RA-listed 02:30-03:30 slot."
+        },
+        {
+          "name": "B2B",
+          "note": "RA lists a 03:30-late B2B closing slot without individual names."
+        }
+      ],
+      "setTimes": [
+        {
+          "name": "KaleidoJazzlegs",
+          "start": "22:00",
+          "end": "23:30",
+          "status": "exact",
+          "sourceLabel": "Resident Advisor",
+          "source": "https://ra.co/events/2454518"
+        },
+        {
+          "name": "Dada (ES)",
+          "start": "23:30",
+          "end": "00:30",
+          "status": "exact",
+          "sourceLabel": "Resident Advisor",
+          "source": "https://ra.co/events/2454518"
+        },
+        {
+          "name": "Soul Navigator",
+          "start": "00:30",
+          "end": "01:30",
+          "status": "exact",
+          "sourceLabel": "Resident Advisor",
+          "source": "https://ra.co/events/2454518"
+        },
+        {
+          "name": "Dreaming",
+          "start": "01:30",
+          "end": "02:30",
+          "status": "exact",
+          "sourceLabel": "Resident Advisor",
+          "source": "https://ra.co/events/2454518"
+        },
+        {
+          "name": "gkamkbns",
+          "start": "02:30",
+          "end": "03:30",
+          "status": "exact",
+          "sourceLabel": "Resident Advisor",
+          "source": "https://ra.co/events/2454518"
+        },
+        {
+          "name": "B2B",
+          "start": "03:30",
+          "end": "late",
+          "status": "exact",
+          "sourceLabel": "Resident Advisor",
+          "source": "https://ra.co/events/2454518"
+        }
+      ],
+      "posterEvidence": {
+        "type": "flyer",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2454518",
+        "status": "Flyer image is visible on the RA detail page."
+      },
+      "ticketStatus": "RA lists cost at 128 RMB and minimum age 18+. Final checkout availability should be checked before purchase.",
+      "addedAt": "2026-06-08",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2454518",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "matisa-limsum",
+      "address": "L3 TX Huaihai, 523 Huaihai Middle Road, Shanghai, China",
+      "organizer": "POTENT",
+      "detailsUrl": "https://ra.co/events/2461476",
+      "ticketUrl": "https://ra.co/events/2461476",
+      "lineup": [
+        {
+          "name": "Limsum",
+          "note": "RA-listed artist on the POTENT lineup; exact set time was not published."
+        },
+        {
+          "name": "Matisa",
+          "note": "RA-listed Italian headliner on the POTENT lineup; exact set time was not published."
+        },
+        {
+          "name": "Max Shen",
+          "note": "Shanghai support on the RA-listed POTENT lineup; exact set time was not published."
+        }
+      ],
+      "posterEvidence": {
+        "type": "flyer",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2461476",
+        "status": "Flyer image is visible on the RA detail page."
+      },
+      "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+. Final ticket route should be checked before publishing a direct purchase CTA.",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2461476",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "santa-k",
+      "address": "B1, TX Huaihai Youth Center, No.523-527 Huaihai Road, Huangpu District, Shanghai, China",
+      "organizer": "TURBO",
+      "detailsUrl": "https://ra.co/events/2458037",
+      "ticketUrl": "https://ra.co/events/2458037",
+      "lineup": [
+        {
+          "name": "Santa K",
+          "note": "RA describes Santa K as a DJ and model fusing hard techno and new trance, with Ibiza nightlife roots and a growing international underground profile."
+        },
+        {
+          "name": "DISCIPLINE",
+          "note": "RA-linked lineup artist for TURBO's Abyss booking."
+        },
+        {
+          "name": "LaGlory",
+          "note": "RA-listed lineup artist; exact set time was not published."
+        },
+        {
+          "name": "PASHRAWBOI",
+          "note": "RA-listed lineup artist; exact set time was not published."
+        },
+        {
+          "name": "NAKIN",
+          "note": "RA-linked lineup artist for TURBO's Abyss booking."
+        }
+      ],
+      "posterEvidence": {
+        "type": "flyer",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2458037",
+        "status": "Flyer image is visible on the RA detail page."
+      },
+      "promotionalLinks": [
+        {
+          "label": "Santa K Instagram",
+          "url": "https://www.instagram.com/",
+          "note": "RA exposes an Instagram promotional link; platform session/login may be required to inspect the final profile."
+        }
+      ],
+      "ticketStatus": "RA lists cost at 120 RMB. Minimum age was not exposed in the fetched RA text, so confirm door policy with Abyss/TURBO before publishing.",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2458037",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "synth-crush",
+      "address": "298 Xingfu Road, Changning District, Shanghai",
+      "organizer": "Illsee / Synth Crush",
+      "detailsUrl": "https://ra.co/events/2458269",
+      "ticketUrl": "https://ra.co/events/2458269",
+      "lineup": [
+        {
+          "name": "Altieri3000 [Live]",
+          "note": "Italian producer, sound artist, and DJ invited by Synth Crush; RA lists a live format."
+        },
+        {
+          "name": "Velvet Robot [Live]",
+          "note": "RA-listed live act on the Synth Crush lineup."
+        },
+        {
+          "name": "Hello Shitty",
+          "note": "Founder of Uptown Records Tokyo/Shanghai, described by RA as a selector spanning overlooked dancefloor artifacts, cosmic electronics, and machine funk."
+        },
+        {
+          "name": "Ruima",
+          "note": "RA-listed lineup artist; exact set time was not published."
+        },
+        {
+          "name": "Illsee",
+          "note": "RA-linked event admin and lineup artist; exact set time was not published."
+        }
+      ],
+      "posterEvidence": {
+        "type": "flyer",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2458269",
+        "status": "Flyer image is visible on the RA detail page."
+      },
+      "ticketStatus": "RA lists cost at 118 RMB. Age rule was not visible in the fetched RA text.",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2458269",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "fengyun-5",
+      "address": "M101 Room, No. 462 Changle Road, Huangpu District, Shanghai",
+      "organizer": "Heimshanghai",
+      "detailsUrl": "https://ra.co/events/2460549",
+      "ticketUrl": "https://ra.co/events/2460549",
+      "lineup": [
+        {
+          "name": "Mamayo",
+          "note": "RA-linked lineup artist for FENGYUN Vol. 5."
+        },
+        {
+          "name": "Gooooose",
+          "note": "RA-listed lineup artist; exact set time was not published."
+        },
+        {
+          "name": "COLA REN",
+          "note": "RA-linked lineup artist for FENGYUN Vol. 5."
+        },
+        {
+          "name": "DJ TRUCK",
+          "note": "RA-linked lineup artist for FENGYUN Vol. 5."
+        },
+        {
+          "name": "meer.",
+          "note": "RA-listed lineup artist; exact set time was not published."
+        }
+      ],
+      "posterEvidence": {
+        "type": "flyer",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2460549",
+        "status": "Flyer image is visible on the RA detail page."
+      },
+      "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+.",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2460549",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "nosaj-thing",
+      "address": "D-L1-03, B1, C-PARK, No. 638 Zhaohua Road, Changning District, Shanghai",
+      "organizer": "REACTOR Shanghai",
+      "detailsUrl": "https://ra.co/events/2453279",
+      "ticketUrl": "https://ra.co/events/2453279",
+      "lineup": [
+        {
+          "name": "DJ LOVERBOY",
+          "note": "RA lists DJ LOVERBOY from 22:00 to 23:30."
+        },
+        {
+          "name": "DJ EBP",
+          "note": "RA-linked artist listed from 23:30 to 01:00."
+        },
+        {
+          "name": "Nosaj Thing",
+          "note": "RA frames Nosaj Thing through the Los Angeles beat scene, atmospheric electronic music, experimental beats, lo-fi hip-hop, and future beats."
+        },
+        {
+          "name": "GaoQiao",
+          "note": "RA-linked closing artist listed from 03:00 to 05:00."
+        }
+      ],
+      "posterEvidence": {
+        "type": "flyer",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2453279",
+        "status": "Flyer image is visible on the RA detail page."
+      },
+      "ticketStatus": "RA lists cost at 148 RMB and minimum age 18+.",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2453279",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "nova-sunset-sessions-flair",
+      "month": "Jun",
+      "sortDate": "2026-06-13",
+      "date": "Jun 13",
+      "time": "16:00-02:00",
+      "title": "Nova Events Presents: Sunset Sessions - Flair Rooftop Party",
+      "venue": "Flair Rooftop Restaurant & Bar",
+      "district": "Pudong",
+      "vibe": [
+        "date"
+      ],
+      "genre": "rooftop club, DJ sets",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "188 early bird / 228 presale / 258 door, includes 1 drink",
+      "age": "Not listed",
+      "source": "https://www.smartshanghai.com/event/nova-events-presents-sunset-sessions-flair-rooftop-party-2026-06-13-2",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "gold",
+      "description": "Nova Events' 12-hour rooftop session at Flair, The Ritz-Carlton Shanghai, with panoramic Bund views and 9 DJs performing from sunset into late night.",
+      "sourceStatus": "secondary",
+      "address": "Ritz-Carlton Pudong, 58/F, 8 Shiji Da Dao, near Lujiazui Huan Lu, Pudong District",
+      "organizer": "Nova Events",
+      "detailsUrl": "https://www.smartshanghai.com/event/nova-events-presents-sunset-sessions-flair-rooftop-party-2026-06-13-2",
+      "ticketUrl": "https://www.smartshanghai.com/event/nova-events-presents-sunset-sessions-flair-rooftop-party-2026-06-13-2",
+      "lineup": [
+        {
+          "name": "9 DJs TBA",
+          "note": "SmartShanghai says 9 DJs perform continuously; individual names were not published on the accessible detail page."
+        }
+      ],
+      "posterEvidence": {
+        "type": "event images",
+        "source": "SmartShanghai event page",
+        "url": "https://www.smartshanghai.com/event/nova-events-presents-sunset-sessions-flair-rooftop-party-2026-06-13-2",
+        "status": "Event images and WeChat/App ticket QR references are visible on the detail page."
+      },
+      "ticketStatus": "SmartShanghai lists tickets from 188 RMB and shows web, app, and WeChat buying routes.",
+      "addedAt": "2026-06-08",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/nova-events-presents-sunset-sessions-flair-rooftop-party-2026-06-13-2",
+          "status": "secondary",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "night-at-museum-90s-disco",
+      "month": "Jun",
+      "sortDate": "2026-06-18",
+      "date": "Jun 18",
+      "time": "21:00-late",
+      "title": "Night at the Museum: Back to the 90s Disco Night",
+      "venue": "Fotografiska",
+      "district": "Jing'an",
+      "vibe": [
+        "date"
+      ],
+      "genre": "disco, retro club, DJ sets",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "120 RMB including ticket and 1 drink",
+      "age": "Not listed",
+      "source": "https://www.smartshanghai.com/event/night-at-the-museum-back-to-the-90s-disco-night-2026-06-18",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "rose",
+      "description": "Fotografiska's 90s-themed late-night disco event uses multi-floor DJ sets and museum space; it is useful as a date-night club lead but is not a high-fit techno pick.",
+      "sourceStatus": "watchlist",
+      "address": "127 Guangfu Lu, near Jinyuan Lu, Jing'an District",
+      "organizer": "Fotografiska",
+      "detailsUrl": "https://www.smartshanghai.com/event/night-at-the-museum-back-to-the-90s-disco-night-2026-06-18",
+      "ticketUrl": "https://www.smartshanghai.com/event/night-at-the-museum-back-to-the-90s-disco-night-2026-06-18",
+      "lineup": [
+        {
+          "name": "Multi-floor DJs TBA",
+          "note": "SmartShanghai confirms DJ sets across multiple floors; individual names were not published on the accessible detail page."
+        }
+      ],
+      "posterEvidence": {
+        "type": "event images",
+        "source": "SmartShanghai event page",
+        "url": "https://www.smartshanghai.com/event/night-at-the-museum-back-to-the-90s-disco-night-2026-06-18",
+        "status": "Event images and WeChat/App ticket QR references are visible on the detail page."
+      },
+      "ticketStatus": "SmartShanghai lists tickets from 120 RMB and shows a buy-ticket route.",
+      "addedAt": "2026-06-08",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/night-at-the-museum-back-to-the-90s-disco-night-2026-06-18",
+          "status": "watchlist",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "afrowave-takeover-la-burg",
+      "month": "Jun",
+      "sortDate": "2026-06-20",
+      "date": "Jun 20",
+      "time": "22:00",
+      "title": "A Full Afrowave Takeover",
+      "venue": "La Burg",
+      "district": "Putuo",
+      "vibe": [
+        "bass",
+        "date"
+      ],
+      "genre": "amapiano, afrobeats, club",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "330 RMB",
+      "age": "Not listed",
+      "source": "https://www.smartshanghai.com/event/a-full-afrowave-takeover-at-la-burg",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "ember",
+      "description": "International Amapiano artist NJELIC brings the Afrowave China tour to La Burg after a Guangzhou stop; low techno fit but useful as a broader club/tour listing.",
+      "sourceStatus": "watchlist",
+      "address": "5/F, Gate 2, YueXing Home Mall, 168 Aomen Lu, near Moganshan Lu, Putuo District",
+      "organizer": "Afrowave / La Burg",
+      "detailsUrl": "https://www.smartshanghai.com/event/a-full-afrowave-takeover-at-la-burg",
+      "ticketUrl": "https://www.smartshanghai.com/event/a-full-afrowave-takeover-at-la-burg",
+      "lineup": [
+        {
+          "name": "NJELIC",
+          "note": "SmartShanghai identifies NJELIC as an international Amapiano artist playing the China tour's Shanghai stop."
+        }
+      ],
+      "futureTourPlan": [
+        {
+          "city": "Guangzhou",
+          "date": "2026-06-19",
+          "source": "SmartShanghai event description"
+        },
+        {
+          "city": "Shanghai",
+          "date": "2026-06-20",
+          "source": "SmartShanghai event description"
+        }
+      ],
+      "posterEvidence": {
+        "type": "event image",
+        "source": "SmartShanghai event page",
+        "url": "https://www.smartshanghai.com/event/a-full-afrowave-takeover-at-la-burg",
+        "status": "Event image is visible on the detail page."
+      },
+      "ticketStatus": "SmartShanghai says tickets are not currently available on SmartShanghai and points to QR-code availability in the event description.",
+      "addedAt": "2026-06-08",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/a-full-afrowave-takeover-at-la-burg",
+          "status": "watchlist",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "nova-summer-splash-pool-party",
+      "month": "Jun",
+      "sortDate": "2026-06-27",
+      "date": "Jun 27",
+      "time": "12:00-20:00",
+      "title": "Nova Events Presents: Summer Splash Pool Party",
+      "venue": "Radisson Blu Forest Manor Hongqiao",
+      "district": "Minhang",
+      "vibe": [
+        "date"
+      ],
+      "genre": "pool party, DJ music",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "198 early bird / 238 presale / 288 door, includes 1 drink",
+      "age": "Not listed",
+      "source": "https://www.smartshanghai.com/event/nova-events-presents-summer-splash-pool-party-2026-06-27",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "cyan",
+      "description": "Nova Events and Viva host a daytime poolside event with swimming, games, and DJ music at Radisson Blu Forest Manor Hongqiao; low techno fit but relevant for summer club listings.",
+      "sourceStatus": "watchlist",
+      "address": "839 Jinfeng Lu, near Tianshan Xi Lu, Minhang District",
+      "organizer": "Nova Events / Viva",
+      "detailsUrl": "https://www.smartshanghai.com/event/nova-events-presents-summer-splash-pool-party-2026-06-27",
+      "ticketUrl": "https://www.smartshanghai.com/event/nova-events-presents-summer-splash-pool-party-2026-06-27",
+      "lineup": [
+        {
+          "name": "DJ music TBA",
+          "note": "SmartShanghai confirms DJ music throughout the event; individual DJs were not published on the accessible detail page."
+        }
+      ],
+      "posterEvidence": {
+        "type": "event images",
+        "source": "SmartShanghai event page",
+        "url": "https://www.smartshanghai.com/event/nova-events-presents-summer-splash-pool-party-2026-06-27",
+        "status": "Event images and WeChat/App ticket QR references are visible on the detail page."
+      },
+      "ticketStatus": "SmartShanghai lists tickets from 198 RMB and shows web, app, and WeChat buying routes.",
+      "addedAt": "2026-06-08",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/nova-events-presents-summer-splash-pool-party-2026-06-27",
+          "status": "watchlist",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "sunset-sundays-dome",
+      "month": "Jun",
+      "sortDate": "2026-06-14",
+      "date": "Sundays to Jun 28",
+      "time": "17:30",
+      "title": "Sunset Sundays",
+      "venue": "The Dome",
+      "district": "Huangpu",
+      "vibe": [
+        "date"
+      ],
+      "genre": "curated music, rooftop lounge",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "Not listed",
+      "age": "Not listed",
+      "source": "https://www.smartshanghai.com/event/sunset-sundays-skyline-dome-at-the-dome",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "gold",
+      "description": "The Dome runs a Sunday sunset series with DJ Rain, curated music, cocktails, shisha, and a Bund skyline view through June 28; useful as a low-intensity date-night lead.",
+      "sourceStatus": "watchlist",
+      "address": "5/F, 1 Yan'an Dong Lu, near Zhongshan Dong Yi Lu, Huangpu District",
+      "organizer": "The Dome",
+      "detailsUrl": "https://www.smartshanghai.com/event/sunset-sundays-skyline-dome-at-the-dome",
+      "ticketUrl": "https://www.smartshanghai.com/event/sunset-sundays-skyline-dome-at-the-dome",
+      "lineup": [
+        {
+          "name": "DJ Rain",
+          "note": "SmartShanghai lists music by DJ Rain for the Sunday series."
+        }
+      ],
+      "recurrence": {
+        "frequency": "weekly",
+        "day": "Sunday",
+        "until": "2026-06-28",
+        "source": "SmartShanghai"
+      },
+      "posterEvidence": {
+        "type": "event image",
+        "source": "SmartShanghai event page",
+        "url": "https://www.smartshanghai.com/event/sunset-sundays-skyline-dome-at-the-dome",
+        "status": "Event image is visible on the detail page."
+      },
+      "ticketStatus": "SmartShanghai says tickets are currently not available on SmartShanghai.",
+      "addedAt": "2026-06-08",
+      "lastChecked": "2026-06-08",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/sunset-sundays-skyline-dome-at-the-dome",
+          "status": "watchlist",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    }
+  ]
+}

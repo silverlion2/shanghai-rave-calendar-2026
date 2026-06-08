@@ -7,6 +7,7 @@ const INDEX_HTML = path.join(ROOT, "index.html");
 const DATA_DIR = path.join(ROOT, "data");
 const DATA_FILE = path.join(DATA_DIR, "events.json");
 const KEYWORD_CONFIG_FILE = path.join(ROOT, "config", "scrape-keywords.json");
+const CURATED_EVENTS_FILE = path.join(ROOT, "config", "curated-events.json");
 const TIME_ZONE = "Asia/Shanghai";
 const CURRENT_YEAR = 2026;
 const USER_AGENT = "ShanghaiRaveCalendar/1.0 (+https://github.com/) public-event-refresh";
@@ -53,6 +54,30 @@ const SOURCE_PAGES = [
     kind: "listing",
     sourceStatus: "secondary",
   },
+];
+
+const COMPUTER_USE_COLLECTION_CHECKLIST = [
+  "event title and series name",
+  "absolute date, doors time, start time, end time, and timezone",
+  "venue name, room/floor, city, district, full address, and map/search hint",
+  "promoter, venue host, label, or organizing crew",
+  "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+  "poster or flyer image source, screenshot reference, and OCR text from image-only details",
+  "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+  "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+  "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+  "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+  "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+  "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived",
+];
+
+const COMPUTER_USE_DEEP_COLLECTION_RULES = [
+  "Open and inspect second-layer links instead of stopping at a listing card or search result.",
+  "If key details are inside images, posters, stories, or screenshots, capture the image reference and OCR/transcribe the relevant text.",
+  "For every lineup artist, open official or high-signal profile links when available and collect a short sourced artist intro.",
+  "For touring artists, look for future city/date announcements beyond Shanghai and record source links or screenshot references.",
+  "For ticketing, inspect the final ticket page or mini-program reference, not only the promoter CTA.",
+  "Keep app-only, group-only, or screenshot-only claims at watch level until corroborated by official, ticketing, venue/promoter, RA, SmartShanghai, artist, or label evidence.",
 ];
 
 const COMPUTER_USE_SOURCES = [
@@ -196,6 +221,14 @@ function readKeywordConfig() {
         : DEFAULT_X_KEYWORDS,
     },
   };
+}
+
+function readCuratedEvents() {
+  if (!fs.existsSync(CURATED_EVENTS_FILE)) return [];
+  const payload = JSON.parse(readText(CURATED_EVENTS_FILE));
+  if (Array.isArray(payload)) return payload;
+  if (Array.isArray(payload.events)) return payload.events;
+  return [];
 }
 
 function readText(file) {
@@ -565,16 +598,9 @@ function buildComputerUseQueue(checkedAt) {
     checkedAt,
     parsed: false,
     confirmationRule: "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
-    requiredFields: [
-      "title",
-      "absolute date",
-      "start time",
-      "venue",
-      "city/district",
-      "lineup",
-      "ticket/source URL or shareable app reference",
-      "source publication date",
-    ],
+    collectionChecklist: COMPUTER_USE_COLLECTION_CHECKLIST,
+    deepCollectionRules: COMPUTER_USE_DEEP_COLLECTION_RULES,
+    requiredFields: COMPUTER_USE_COLLECTION_CHECKLIST,
   }));
 }
 
@@ -763,9 +789,60 @@ function isDuplicateOfSeed(event, seedEvents) {
   });
 }
 
+function curatedMatchIndex(events, curated) {
+  if (curated.id) {
+    const idIndex = events.findIndex(event => event.id === curated.id);
+    if (idIndex !== -1) return idIndex;
+  }
+  const curatedSource = normalizeUrl(curated.source);
+  if (curatedSource) {
+    const sourceIndex = events.findIndex(event => normalizeUrl(event.source) === curatedSource);
+    if (sourceIndex !== -1) return sourceIndex;
+  }
+  return events.findIndex(event => {
+    if (event.sortDate !== curated.sortDate) return false;
+    const titleScore = tokenOverlapScore(event.title, curated.title);
+    const combinedScore = tokenOverlapScore(`${event.title} ${event.venue}`, `${curated.title} ${curated.venue}`);
+    return titleScore >= 0.62 || combinedScore >= 0.68;
+  });
+}
+
+function mergeSourceLists(first = [], second = []) {
+  const merged = [];
+  const seen = new Set();
+  for (const source of [...first, ...second]) {
+    if (!source || !source.url) continue;
+    const key = normalizeUrl(source.url);
+    if (seen.has(key)) continue;
+    seen.add(key);
+    merged.push(source);
+  }
+  return merged;
+}
+
+function applyCuratedEvents(events, curatedEvents, sourceChecks) {
+  const next = [...events];
+  for (const curated of curatedEvents) {
+    const index = curatedMatchIndex(next, curated);
+    if (index === -1) {
+      next.push(normalizeEvent(curated, sourceChecks));
+      continue;
+    }
+    const existing = next[index];
+    const merged = {
+      ...existing,
+      ...curated,
+      sources: mergeSourceLists(existing.sources, curated.sources),
+    };
+    next[index] = normalizeEvent(merged, sourceChecks);
+  }
+  return next.sort((a, b) => a.sortDate.localeCompare(b.sortDate) || a.title.localeCompare(b.title));
+}
+
 async function main() {
   const seedEvents = extractEmbeddedEvents();
   const keywordConfig = readKeywordConfig();
+  const curatedEvents = readCuratedEvents();
   const sourceChecks = new Map();
   const sourceReports = [];
   const detailLinks = new Map();
@@ -887,7 +964,7 @@ async function main() {
     .filter(event => event.status !== "past")
     .filter(isCalendarFit)
     .map(event => normalizeEvent(event, sourceChecks));
-  const events = mergeEvents(normalizedSeeds, normalizedScraped);
+  const events = applyCuratedEvents(mergeEvents(normalizedSeeds, normalizedScraped), curatedEvents, sourceChecks);
 
   fs.mkdirSync(DATA_DIR, { recursive: true });
   const payload = {
@@ -906,16 +983,19 @@ async function main() {
     socialLeads: socialLeads.slice(0, 80),
     discovered: discovered.slice(0, 80),
     computerUseQueue,
+    curatedEventsApplied: curatedEvents.length,
     notes: [
       "This v1 scraper keeps curated embedded events as the seed dataset, refreshes source metadata, and adds parsable public event pages as watch/secondary entries.",
+      "Computer Use collected event updates in config/curated-events.json are merged after the automated source refresh.",
       "Events from listing/editorial pages remain watch-level until a direct venue, promoter, ticketing, or event page confirms details.",
       "X keyword searches are discovery-only social leads and never promote an event into the calendar without confirmation from a stronger source.",
       "Known anti-bot or app-only sources are queued for agent-operated Chrome + Computer Use collection instead of being scraped with plain fetch.",
+      "Computer Use collection must follow second-layer links and image/poster text to capture time, venue, lineup, poster evidence, artist introductions, future tour dates, and ticketing status.",
     ],
   };
 
   fs.writeFileSync(DATA_FILE, `${JSON.stringify(payload, null, 2)}\n`);
-  console.log(`Wrote ${path.relative(ROOT, DATA_FILE)} with ${events.length} events, ${payload.discovered.length} discovered links, ${payload.socialLeads.length} social leads, and ${payload.computerUseQueue.length} Computer Use sources.`);
+  console.log(`Wrote ${path.relative(ROOT, DATA_FILE)} with ${events.length} events, ${payload.discovered.length} discovered links, ${payload.socialLeads.length} social leads, ${payload.computerUseQueue.length} Computer Use sources, and ${payload.curatedEventsApplied} curated updates.`);
 }
 
 main()

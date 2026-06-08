@@ -1,7 +1,7 @@
 {
-  "name": "Shanghai Rave Calendar 2026",
-  "short_name": "SH Raves 2026",
-  "description": "Interactive 2026 Shanghai techno and rave calendar.",
+  "name": "Shanghai Rave Index",
+  "short_name": "Shanghai Rave Index",
+  "description": "Interactive 2026 Shanghai techno and rave index.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#080806",

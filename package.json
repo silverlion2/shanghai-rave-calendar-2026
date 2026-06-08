@@ -1,8 +1,8 @@
 {
-  "name": "shanghai-rave-calendar-2026",
+  "name": "shanghai-rave-index",
   "version": "1.0.0",
   "private": true,
-  "description": "Interactive 2026 Shanghai techno and rave calendar.",
+  "description": "Interactive Shanghai Rave Index for 2026 techno and rave events.",
   "scripts": {
     "start": "npx serve .",
     "scrape": "node scripts/scrape-events.js",

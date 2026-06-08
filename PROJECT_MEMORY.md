@@ -1,10 +1,10 @@
 # Project Memory
 
-Last updated: 2026-06-08 21:00 Asia/Shanghai
+Last updated: 2026-06-08 21:30 Asia/Shanghai
 
 ## Project
 
-Shanghai Rave Calendar 2026 is a static website for sourced Shanghai techno, rave, warehouse, industrial, bass, trance, and underground electronic events. The current architecture is intentionally GitHub-only for v1: no database, no backend service, and no user-specific data.
+Shanghai Rave Index is a static website for sourced Shanghai techno, rave, warehouse, industrial, bass, trance, and underground electronic events. The current architecture is intentionally GitHub-only for v1: no database, no backend service, and no user-specific data.
 
 ## Dialogue Recap
 
@@ -27,8 +27,9 @@ The user finally asked to create a project memory and save the dialogue. This fi
 - `ops.html` is a static operations console for AI intake review, WeChat/Xiaohongshu copy, ticket routing exports, promoter paid-exposure tracking, and ops reports. It stores operator state in browser `localStorage` and exports JSON/CSV for review.
 - `data/events.json` is the generated static data file used by the website in deployed or local-server mode.
 - `scripts/scrape-events.js` seeds from embedded events, refreshes source metadata, scrapes public SmartShanghai pages, best-effort checks RA, records X/Twitter keyword searches, and writes `computerUseQueue` for anti-bot/app-only sources that the agent should inspect with Chrome + Computer Use.
+- `config/curated-events.json` stores browser/Computer Use collected event updates, including blocked RA details, poster evidence, lineup, set-time, artist-note, tour-plan, and ticket-status fields that should persist across automated refreshes.
 - `.github/workflows/scrape-events.yml` runs the scraper daily and commits changed `data/events.json` back to GitHub.
-- `scripts/check.js` validates inline script syntax, parity between the main and archive calendar scripts, SEO markers, `data/events.json`, and `config/scrape-keywords.json`.
+- `scripts/check.js` validates inline script syntax, parity between the main and archive calendar scripts, SEO markers, `data/events.json`, `config/scrape-keywords.json`, and `config/curated-events.json`.
 - `config/scrape-keywords.json` is the editable X/Twitter keyword list.
 
 ## Source Rules
@@ -53,7 +54,7 @@ X/Twitter support is keyword-based and discovery-only.
 
 ## Computer Use Collection Queue
 
-`data/events.json.computerUseQueue` is generated on each scrape run and surfaced in `ops.html` as `computer-use` leads. It covers RA Shanghai, SmartShanghai, Xiaohongshu, WeChat official accounts/groups, venue official accounts, promoter posters, ShowStart/Damai/PiaoPlanet/mini-program ticketing, and DJ/label Instagram, Weibo, WeChat, or Bandcamp pages. These are agent-operated Chrome + Computer Use collection tasks and should capture source URL or screenshot reference, title, absolute date, start time, venue, lineup, ticket route, source publication date, and evidence type.
+`data/events.json.computerUseQueue` is generated on each scrape run and surfaced in `ops.html` as `computer-use` leads. It covers RA Shanghai, SmartShanghai, Xiaohongshu, WeChat official accounts/groups, venue official accounts, promoter posters, ShowStart/Damai/PiaoPlanet/mini-program ticketing, and DJ/label Instagram, Weibo, WeChat, or Bandcamp pages. These are agent-operated Chrome + Computer Use collection tasks and should capture the complete event record: time, venue/address, lineup/set times, poster and OCR evidence, artist introductions, future city tour dates, ticket platform/price/availability, age/ID and entry rules, second-layer links, source publication date, last checked date, and evidence type.
 
 ## Known Caveats
 
@@ -106,12 +107,13 @@ Later work expanded the static site beyond the original scraper/calendar:
 - The DJ database now includes estimated set-time status, estimated-slot filtering, and profile counts for exact versus estimated slots.
 - The calendar hero no longer presents a top-level `RA + SmartShanghai + official/ticket pages` source pill. It retains `Asia/Shanghai dates`, generated visual-poster labeling, Shanghai Bund CC0 hero-photo attribution, the venue and crew guide link, and the DJ database link.
 - `venues.html` and `djs.html` include an explicit `Rave calendar` return link.
-- `shanghai-rave-calendar-2026.html` includes the same itinerary controls as `index.html`, and `scripts/check.js` validates those itinerary markers on both calendar copies.
+- `index.html` and `shanghai-rave-calendar-2026.html` link to `planner.html` instead of embedding the itinerary controls; `scripts/check.js` validates the planner page markers and navigation links.
 - `index.html` and `shanghai-rave-calendar-2026.html` must keep their calendar inline scripts identical; `scripts/check.js` enforces this.
 
 Current public URLs:
 
 - Production site: https://shanghai-rave-calendar-2026.vercel.app
+- Set-time planner: https://shanghai-rave-calendar-2026.vercel.app/planner
 - DJ database: https://shanghai-rave-calendar-2026.vercel.app/djs
 - Example event deep link: https://shanghai-rave-calendar-2026.vercel.app/?event=nosaj-thing
 - Example DJ deep link: https://shanghai-rave-calendar-2026.vercel.app/djs#dj-ebp
@@ -151,6 +153,8 @@ Recent verification:
 - `npm run check` passed after hiding past events by default, hiding empty weekday columns, and widening available calendar cells.
 - Browser checks confirmed default `Future` filter, no past cards on load, archive/deep-link access for past events, compressed Thu-Sun June grid, desktop cells expanding to available width, and no mobile horizontal overflow at 390px.
 - `npm run check` passed after adding estimated set-time planning, itinerary export validation, hero source-label cleanup, archive itinerary parity, and `Rave calendar` return links.
+- `npm run check` passed after moving the set-time planner to standalone `planner.html`; local HTTP and DOM smoke checks confirmed the planner page returned 200 and rendered exact plus estimated rows from real data.
 - Local browser verification on `http://127.0.0.1:4879` confirmed the hero pills, retained guide links, venue/DJ return navigation, and no console errors. The temporary server was stopped after verification.
+- `npm run scrape` and `npm run check` passed after adding the 2026-06-08 browser/Computer Use curated refresh. Local Playwright verification on `http://localhost:4177` confirmed FRUITYGROOVE deep-link modal details and Sunset Sundays watch-card rendering; the temporary server was stopped after verification.
 - Vercel production was redeployed after the organizer update.
 - GitHub repo was created, all project files were committed, and `main` was pushed.
