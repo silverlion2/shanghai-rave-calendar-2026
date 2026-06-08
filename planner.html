@@ -1,0 +1,1451 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shanghai DJ Set-Time Planner 2026</title>
+  <meta name="description" content="Plan Shanghai 2026 rave and techno DJ set times with exact published slots, estimated lineup-order slots, itinerary selection, .ics export, and image export.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#c6ff3b">
+  <link rel="canonical" href="https://shanghai-rave-calendar-2026.vercel.app/planner">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shanghai Rave Calendar">
+  <meta property="og:title" content="Shanghai DJ Set-Time Planner 2026">
+  <meta property="og:description" content="Build a Shanghai rave itinerary from exact and estimated DJ set times.">
+  <meta property="og:url" content="https://shanghai-rave-calendar-2026.vercel.app/planner">
+  <meta property="og:image" content="https://shanghai-rave-calendar-2026.vercel.app/og-image.png">
+  <meta property="og:image:alt" content="Preview of the Shanghai rave calendar">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Shanghai DJ Set-Time Planner 2026",
+    "url": "https://shanghai-rave-calendar-2026.vercel.app/planner",
+    "applicationCategory": "LifestyleApplication",
+    "operatingSystem": "Any",
+    "description": "Plan Shanghai 2026 rave and techno DJ set times with exact published slots and estimated lineup-order slots.",
+    "inLanguage": "en",
+    "isAccessibleForFree": true
+  }
+  </script>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f2f0e8;
+      --muted: #aaa59a;
+      --dim: #7c776d;
+      --void: #080806;
+      --panel: #11110e;
+      --panel-2: #181814;
+      --line: #302f28;
+      --acid: #c6ff3b;
+      --ember: #ff6a2a;
+      --cyan: #41d7ff;
+      --rose: #ff4f8b;
+      --gold: #ffd166;
+      --radius: 8px;
+      --shadow: 0 24px 80px rgba(0,0,0,.42);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px) 0 0 / 36px 36px,
+        linear-gradient(0deg, rgba(255,255,255,.018) 1px, transparent 1px) 0 0 / 36px 36px,
+        radial-gradient(circle at 52% -12%, rgba(255,106,42,.18), transparent 38%),
+        #080806;
+      color: var(--ink);
+      font-family: "Aptos", "Segoe UI", sans-serif;
+      letter-spacing: 0;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      pointer-events: none;
+      opacity: .36;
+      background-image:
+        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+        repeating-linear-gradient(90deg, transparent 0 17px, rgba(198,255,59,.045) 18px, transparent 19px);
+      background-size: 100% 5px, 100% 100%;
+      mix-blend-mode: screen;
+    }
+
+    a { color: inherit; }
+    button, input, select { font: inherit; }
+
+    .shell {
+      width: min(1500px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 24px 0 58px;
+    }
+
+    .site-nav,
+    .nav-group,
+    .source-note,
+    .quick-actions,
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .site-nav {
+      justify-content: space-between;
+      margin-bottom: 18px;
+      color: var(--muted);
+    }
+
+    .nav-link,
+    .tag,
+    .pill,
+    .chip {
+      display: inline-flex;
+      min-height: 34px;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: 1px solid var(--line);
+      background: rgba(17,17,14,.84);
+      padding: 7px 11px;
+      border-radius: 999px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 13px;
+      line-height: 1.15;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--void);
+      background: var(--acid);
+      border-color: var(--acid);
+    }
+
+    .planner-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(280px, .6fr);
+      gap: 18px;
+      align-items: stretch;
+      margin-bottom: 16px;
+    }
+
+    .headline {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, rgba(17,17,14,.92), rgba(24,24,20,.78));
+      box-shadow: var(--shadow);
+      padding: clamp(18px, 3vw, 34px);
+      min-height: 250px;
+      display: grid;
+      align-content: end;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .headline::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(110deg, transparent 0 56%, rgba(65,215,255,.16) 56% 57%, transparent 57%),
+        linear-gradient(150deg, transparent 0 70%, rgba(198,255,59,.18) 70% 71%, transparent 71%);
+    }
+
+    .kicker {
+      color: var(--acid);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 860px;
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: clamp(42px, 8vw, 96px);
+      line-height: .9;
+      letter-spacing: 0;
+    }
+
+    .subhead {
+      margin: 14px 0 0;
+      max-width: 820px;
+      color: var(--muted);
+      font-size: clamp(16px, 2vw, 20px);
+      line-height: 1.42;
+    }
+
+    .source-note {
+      margin-top: 16px;
+    }
+
+    .hero-picture {
+      position: relative;
+      min-height: 250px;
+      margin: 0;
+      overflow: hidden;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: #11110e;
+    }
+
+    .hero-picture img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: saturate(1.05) contrast(1.08);
+    }
+
+    .hero-picture figcaption {
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      color: var(--ink);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+      background: rgba(8,8,6,.66);
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 6px;
+      padding: 7px 9px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin: 12px 0;
+    }
+
+    .stat {
+      min-height: 86px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(17,17,14,.86);
+      padding: 14px;
+      display: grid;
+      gap: 6px;
+    }
+
+    .stat b {
+      color: var(--acid);
+      font-size: 30px;
+      font-family: "Georgia", "Times New Roman", serif;
+      line-height: 1;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.3;
+    }
+
+    .controls {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      display: grid;
+      grid-template-columns: minmax(250px, 1.5fr) repeat(3, minmax(150px, .7fr));
+      gap: 10px;
+      margin: 12px 0 16px;
+      padding: 10px;
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: var(--radius);
+      background: rgba(8,8,6,.9);
+      backdrop-filter: blur(16px);
+    }
+
+    .quick-actions {
+      grid-column: 1 / -1;
+    }
+
+    .quick-filter,
+    .action-button,
+    .mini-link,
+    .remove-button {
+      min-height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #151510;
+      color: var(--muted);
+      padding: 8px 10px;
+      font-size: 13px;
+      font-weight: 900;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .quick-filter:hover,
+    .quick-filter.active,
+    .action-button:hover:not(:disabled),
+    .mini-link:hover,
+    .remove-button:hover {
+      color: var(--void);
+      border-color: var(--acid);
+      background: var(--acid);
+    }
+
+    .action-button.primary {
+      color: var(--void);
+      background: var(--cyan);
+      border-color: var(--cyan);
+    }
+
+    .action-button:disabled {
+      cursor: not-allowed;
+      opacity: .5;
+      color: var(--dim);
+    }
+
+    .search,
+    .select {
+      width: 100%;
+      min-height: 42px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #151510;
+      color: var(--ink);
+      padding: 10px 11px;
+      outline: none;
+    }
+
+    .search:focus,
+    .select:focus {
+      border-color: var(--acid);
+      box-shadow: 0 0 0 3px rgba(198,255,59,.12);
+    }
+
+    .planner-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+      gap: 14px;
+      align-items: start;
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(17,17,14,.88);
+      padding: 14px;
+      box-shadow: 0 12px 38px rgba(0,0,0,.22);
+    }
+
+    .panel h2 {
+      margin: 0 0 10px;
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: 22px;
+      letter-spacing: 0;
+    }
+
+    .panel p {
+      color: var(--muted);
+      line-height: 1.45;
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .planner-tools {
+      position: sticky;
+      top: 122px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .toolbar {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .count-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 10px;
+      color: var(--dim);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .slot-list,
+    .itinerary-list,
+    .watch-list {
+      display: grid;
+      gap: 8px;
+    }
+
+    .slot-row,
+    .itinerary-row,
+    .watch-row {
+      display: grid;
+      grid-template-columns: 110px minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: center;
+      min-height: 74px;
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 6px;
+      background: rgba(255,255,255,.025);
+      padding: 10px;
+    }
+
+    .slot-row.selected {
+      border-color: rgba(65,215,255,.76);
+      background: rgba(65,215,255,.08);
+    }
+
+    .slot-button {
+      display: contents;
+      color: inherit;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .slot-time {
+      color: var(--acid);
+      font-weight: 900;
+      font-size: 13px;
+      line-height: 1.15;
+      white-space: nowrap;
+    }
+
+    .slot-main {
+      display: grid;
+      gap: 3px;
+      min-width: 0;
+    }
+
+    .slot-main b {
+      color: var(--ink);
+      font-size: 15px;
+      overflow-wrap: anywhere;
+    }
+
+    .slot-main span {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+      overflow-wrap: anywhere;
+    }
+
+    .slot-actions {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 8px;
+      align-items: center;
+      justify-items: end;
+    }
+
+    .status-pill,
+    .add-state {
+      display: inline-flex;
+      min-height: 28px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 999px;
+      padding: 5px 8px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 900;
+      white-space: nowrap;
+      text-transform: uppercase;
+    }
+
+    .status-exact {
+      color: var(--void);
+      border-color: var(--acid);
+      background: var(--acid);
+    }
+
+    .status-estimated {
+      color: var(--cyan);
+      border-color: rgba(65,215,255,.62);
+      background: rgba(65,215,255,.08);
+    }
+
+    .status-tba {
+      color: var(--gold);
+      border-color: rgba(255,209,102,.55);
+      background: rgba(255,209,102,.06);
+    }
+
+    .slot-row.selected .add-state {
+      color: var(--void);
+      border-color: var(--cyan);
+      background: var(--cyan);
+    }
+
+    .itinerary-row {
+      grid-template-columns: 96px minmax(0, 1fr) auto;
+      min-height: 64px;
+    }
+
+    .remove-button {
+      min-height: 32px;
+    }
+
+    .empty-state {
+      border: 1px dashed rgba(255,255,255,.18);
+      border-radius: 6px;
+      color: var(--dim);
+      padding: 14px;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .footnotes {
+      margin-top: 34px;
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+      color: var(--dim);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    @media (max-width: 1180px) {
+      .planner-head,
+      .planner-layout {
+        grid-template-columns: 1fr;
+      }
+      .planner-tools {
+        position: static;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 860px) {
+      .shell {
+        width: calc(100vw - 32px);
+        max-width: calc(100vw - 32px);
+      }
+      .site-nav,
+      .planner-tools {
+        grid-template-columns: 1fr;
+      }
+      .hero-picture {
+        min-height: 180px;
+      }
+      h1 {
+        font-size: 42px;
+        overflow-wrap: break-word;
+      }
+      .stats,
+      .controls {
+        grid-template-columns: 1fr;
+      }
+      .quick-actions {
+        grid-column: auto;
+      }
+      .quick-filter {
+        flex: 1 1 auto;
+      }
+      .slot-row,
+      .itinerary-row,
+      .watch-row {
+        grid-template-columns: 82px minmax(0, 1fr);
+      }
+      .slot-actions {
+        grid-column: 1 / -1;
+        grid-template-columns: repeat(2, minmax(0, max-content));
+        justify-content: start;
+      }
+      .toolbar {
+        grid-template-columns: 1fr;
+      }
+      .remove-button {
+        grid-column: 1 / -1;
+        width: max-content;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <nav class="site-nav" aria-label="Site navigation">
+      <div class="nav-group">
+        <a class="nav-link" href="index.html">Rave calendar</a>
+        <a class="nav-link active" href="planner.html">Set-time planner</a>
+        <a class="nav-link" href="venues.html">Venue & crew guide</a>
+        <a class="nav-link" href="djs.html">DJ database</a>
+      </div>
+      <span class="tag" id="checkedTag">Checked June 8, 2026</span>
+    </nav>
+
+    <header class="planner-head">
+      <section class="headline">
+        <div>
+          <div class="kicker">Exact slots + duration estimates</div>
+          <h1>Shanghai DJ set-time planner</h1>
+          <p class="subhead">Build a practical night plan from published running orders and clearly labeled estimates divided from the event window and lineup order.</p>
+          <div class="source-note">
+            <span class="pill">Asia/Shanghai</span>
+            <span class="pill">Local itinerary storage</span>
+            <span class="pill">.ics + PNG export</span>
+          </div>
+        </div>
+      </section>
+      <figure class="hero-picture" aria-label="Shanghai night visual">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Shanghai_Bund_at_night_20260417_%282%29.jpg" alt="Shanghai Bund skyline at night">
+        <figcaption>Planning tool / not official running order artwork</figcaption>
+      </figure>
+    </header>
+
+    <section class="stats" aria-label="Set-time planner statistics">
+      <div class="stat"><b id="statRows">0</b><span>visible DJ slot rows</span></div>
+      <div class="stat"><b id="statExact">0</b><span>published exact slots in the current view</span></div>
+      <div class="stat"><b id="statEstimated">0</b><span>estimated slots from lineup order</span></div>
+      <div class="stat"><b id="statSelected">0</b><span>selected itinerary slots</span></div>
+    </section>
+
+    <section class="controls" aria-label="Planner controls">
+      <div class="quick-actions" aria-label="Date shortcuts">
+        <button class="quick-filter active" type="button" data-window="future">Future</button>
+        <button class="quick-filter" type="button" data-window="all">All Dates</button>
+        <button class="quick-filter" type="button" data-window="tonight">Tonight</button>
+        <button class="quick-filter" type="button" data-window="weekend">This Weekend</button>
+        <button class="quick-filter" type="button" data-window="next30">Next 30 Days</button>
+      </div>
+      <input class="search" id="searchInput" type="search" placeholder="Search DJ, event, venue, genre">
+      <select class="select" id="monthFilter" aria-label="Month filter">
+        <option value="all">All months</option>
+      </select>
+      <select class="select" id="slotStatusFilter" aria-label="Set-time status filter">
+        <option value="all">All slot statuses</option>
+        <option value="exact">Exact only</option>
+        <option value="estimated">Estimated only</option>
+        <option value="tba">TBA only</option>
+      </select>
+      <select class="select" id="venueFilter" aria-label="Venue and promoter filter">
+        <option value="all">All venues / crews</option>
+        <option value="abyss">Abyss</option>
+        <option value="exit">EXIT</option>
+        <option value="heim">Heim</option>
+        <option value="potent">POTENT</option>
+        <option value="reactor">Reactor</option>
+        <option value="space-panda">Space Panda</option>
+        <option value="alter">ALTER</option>
+        <option value="dirty">Dirty House / INS</option>
+        <option value="illum">ILLUM / KNOT</option>
+        <option value="wigwam">Wigwam</option>
+        <option value="system">System</option>
+        <option value="void-vacuum">VOID / VACUUM</option>
+      </select>
+    </section>
+
+    <section class="planner-layout">
+      <section class="panel" aria-labelledby="slotsHeading">
+        <div class="count-line"><h2 id="slotsHeading">Set-time rows</h2><span id="resultCount">0 shown</span></div>
+        <div class="slot-list" id="slotList"></div>
+      </section>
+
+      <aside class="planner-tools" aria-label="Selected itinerary">
+        <section class="panel">
+          <div class="count-line"><h2>Selected itinerary</h2><span id="itineraryCount">0 selected</span></div>
+          <p>Selections stay in this browser. Estimated rows are planning guesses until the venue, promoter, or ticket page publishes a running order.</p>
+          <div class="toolbar">
+            <button class="action-button primary" type="button" id="downloadItineraryIcs" disabled>Export .ics</button>
+            <button class="action-button" type="button" id="exportItineraryImage" disabled>Save image</button>
+            <button class="action-button" type="button" id="clearItinerary" disabled>Clear</button>
+          </div>
+          <div class="itinerary-list" id="selectedItinerary"></div>
+        </section>
+
+        <section class="panel">
+          <h2>Needs confirmation</h2>
+          <p>Rows without a parseable event window remain TBA. Use the linked event source before planning around them.</p>
+          <div class="watch-list" id="watchList"></div>
+        </section>
+      </aside>
+    </section>
+
+    <footer class="footnotes">
+      Exact slots are copied from event sources when available. Estimated slots divide the listed event duration across the known lineup order and are not published running orders. Event details were checked during the June 8, 2026 source refresh.
+    </footer>
+  </main>
+
+  <script src="data/dj-data.js"></script>
+  <script>
+    const sourceData = window.DJ_SOURCE_DATA || { events: [], lineups: {}, externalDataPath: "data/events.json" };
+    const verified = sourceData.generatedAt || "2026-06-08";
+    const externalDataPath = sourceData.externalDataPath || "data/events.json";
+    const dayMs = 24 * 60 * 60 * 1000;
+    const monthPairs = [
+      ["Jan", "January"], ["Feb", "February"], ["Mar", "March"], ["Apr", "April"],
+      ["May", "May"], ["Jun", "June"], ["Jul", "July"], ["Aug", "August"],
+      ["Sep", "September"], ["Oct", "October"], ["Nov", "November"], ["Dec", "December"]
+    ];
+    const today = (() => {
+      const now = new Date();
+      const parts = Object.fromEntries(new Intl.DateTimeFormat("en-US", {
+        timeZone: "Asia/Shanghai",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit"
+      }).formatToParts(now).filter(part => part.type !== "literal").map(part => [part.type, part.value]));
+      if (Number(parts.year) === 2026) return new Date(Number(parts.year), Number(parts.month) - 1, Number(parts.day));
+      const [year, month, day] = verified.split("-").map(Number);
+      return new Date(year, month - 1, day);
+    })();
+
+    let events = Array.isArray(sourceData.events) ? sourceData.events : [];
+    let dateWindow = "future";
+    const itineraryStorageKey = "shanghai-rave-calendar-itinerary-v1";
+    let itinerarySlotKeys = new Set(loadItinerarySlotKeys());
+
+    const controls = {
+      search: document.getElementById("searchInput"),
+      month: document.getElementById("monthFilter"),
+      slotStatus: document.getElementById("slotStatusFilter"),
+      venue: document.getElementById("venueFilter")
+    };
+    const slotList = document.getElementById("slotList");
+    const selectedItinerary = document.getElementById("selectedItinerary");
+    const watchList = document.getElementById("watchList");
+    const resultCount = document.getElementById("resultCount");
+    const itineraryCount = document.getElementById("itineraryCount");
+    const downloadItineraryIcs = document.getElementById("downloadItineraryIcs");
+    const exportItineraryImageButton = document.getElementById("exportItineraryImage");
+    const clearItineraryButton = document.getElementById("clearItinerary");
+
+    function escapeHtml(value) {
+      return String(value ?? "").replace(/[&<>"']/g, char => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#039;"
+      }[char]));
+    }
+
+    function unique(values) {
+      return Array.from(new Set(values.filter(Boolean)));
+    }
+
+    function pad2(value) {
+      return String(value).padStart(2, "0");
+    }
+
+    function splitPerformerNames(name) {
+      const value = String(name || "").trim();
+      if (!value) return [];
+      if (!/\s\/\s/.test(value)) return [value];
+      return value.split(/\s+\/\s+/).map(item => item.trim()).filter(Boolean);
+    }
+
+    function djSlug(name) {
+      return String(name || "dj").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "dj";
+    }
+
+    function monthCodeFromSortDate(value) {
+      const month = Number(String(value || "").slice(5, 7));
+      return monthPairs[month - 1] ? monthPairs[month - 1][0] : "Jun";
+    }
+
+    function arrayFromData(value, fallback = []) {
+      if (Array.isArray(value)) return value.map(item => String(item).trim()).filter(Boolean);
+      if (typeof value === "string") return value.split(",").map(item => item.trim()).filter(Boolean);
+      return fallback;
+    }
+
+    function normalizeExternalEvent(event) {
+      if (!event || !event.id || !event.sortDate || !event.title || !event.source) return null;
+      const fallback = events.find(item => item.id === event.id) || {};
+      return {
+        ...fallback,
+        ...event,
+        id: String(event.id),
+        month: event.month || fallback.month || monthCodeFromSortDate(event.sortDate),
+        date: event.date || fallback.date || event.sortDate,
+        time: event.time || fallback.time || "Check source",
+        venue: event.venue || fallback.venue || "Check source",
+        district: event.district || fallback.district || "Shanghai",
+        vibe: arrayFromData(event.vibe, fallback.vibe || ["underground"]),
+        genre: event.genre || fallback.genre || "electronic, club",
+        confidence: event.confidence || fallback.confidence || "Watch",
+        status: event.status || fallback.status || "watch",
+        price: event.price || fallback.price || "Check source",
+        age: event.age || fallback.age || "Check venue",
+        sourceLabel: event.sourceLabel || fallback.sourceLabel || "Source",
+        imageTheme: event.imageTheme || fallback.imageTheme || "acid",
+        description: event.description || fallback.description || "Public event listing; confirm details at the source before planning.",
+        sources: Array.isArray(event.sources) ? event.sources : fallback.sources,
+        sourceStatus: event.sourceStatus || fallback.sourceStatus,
+        lastChecked: event.lastChecked || fallback.lastChecked,
+        addedAt: event.addedAt || fallback.addedAt,
+        lineup: Array.isArray(event.lineup) ? event.lineup : fallback.lineup,
+        setTimes: Array.isArray(event.setTimes) ? event.setTimes : fallback.setTimes
+      };
+    }
+
+    async function loadExternalEvents() {
+      if (!window.fetch) return null;
+      try {
+        const response = await fetch(externalDataPath, { cache: "no-store" });
+        if (!response.ok) return null;
+        const payload = await response.json();
+        const rawEvents = Array.isArray(payload) ? payload : payload.events;
+        if (!Array.isArray(rawEvents) || rawEvents.length === 0) return null;
+        const loaded = rawEvents.map(normalizeExternalEvent).filter(Boolean);
+        return loaded.length ? loaded : null;
+      } catch (_) {
+        return null;
+      }
+    }
+
+    function eventLineup(event) {
+      if (Array.isArray(event.lineup) && event.lineup.length) {
+        return event.lineup.map(item => {
+          if (typeof item === "string") return { name: item, note: "Lineup listed by the event source; exact set time may still need venue confirmation." };
+          return { name: item.name || item.dj || item.artist || event.title, note: item.note || "Lineup listed by the event source." };
+        });
+      }
+      if (sourceData.lineups && sourceData.lineups[event.id]) return sourceData.lineups[event.id];
+      return [{ name: event.title, note: "Lineup detail was limited in public sources; use the event source link before planning around a specific DJ." }];
+    }
+
+    function expandedEventLineup(event) {
+      return eventLineup(event).flatMap(item => {
+        const names = splitPerformerNames(item.name);
+        return names.length ? names.map(name => ({ name, note: item.note || "" })) : [{ name: item.name, note: item.note || "" }];
+      });
+    }
+
+    function normalizeSlot(slot, event) {
+      const start = slot.start || slot.startTime || "";
+      const end = slot.end || slot.endTime || "";
+      return {
+        name: slot.name || slot.dj || slot.artist || "TBA",
+        start,
+        end,
+        stage: slot.stage || "",
+        note: slot.note || "",
+        status: slot.status || (start || end ? "exact" : "not-published"),
+        source: slot.source || event.source,
+        sourceLabel: slot.sourceLabel || event.sourceLabel
+      };
+    }
+
+    function clockToMinutes(parts) {
+      return Number(parts[0]) * 60 + Number(parts[1]);
+    }
+
+    function parseEventTimeWindow(event) {
+      const timeText = String(event.time || "");
+      const matches = Array.from(timeText.matchAll(/(\d{1,2}):(\d{2})/g), match => [Number(match[1]), Number(match[2])]);
+      if (matches.length < 2) return null;
+      const startMinutes = clockToMinutes(matches[0]);
+      let endMinutes = clockToMinutes(matches[1]);
+      const dayNames = { mon: 0, tue: 1, wed: 2, thu: 3, fri: 4, sat: 5, sun: 6 };
+      const days = Array.from(timeText.matchAll(/\b(mon(?:day)?|tue(?:sday)?|wed(?:nesday)?|thu(?:rsday)?|fri(?:day)?|sat(?:urday)?|sun(?:day)?)\b/ig), match => match[1].slice(0, 3).toLowerCase());
+      if (days.length >= 2 && dayNames[days[0]] !== undefined && dayNames[days[1]] !== undefined) {
+        const daySpan = (dayNames[days[1]] - dayNames[days[0]] + 7) % 7;
+        if (daySpan > 0) endMinutes += daySpan * 24 * 60;
+      }
+      if (endMinutes <= startMinutes) endMinutes += 24 * 60;
+      const durationMinutes = endMinutes - startMinutes;
+      if (!Number.isFinite(durationMinutes) || durationMinutes <= 0) return null;
+      return { startMinutes, endMinutes, durationMinutes };
+    }
+
+    function formatClock(totalMinutes) {
+      const normalized = ((Math.round(totalMinutes) % (24 * 60)) + (24 * 60)) % (24 * 60);
+      return `${pad2(Math.floor(normalized / 60))}:${pad2(normalized % 60)}`;
+    }
+
+    function estimateSetTimes(event) {
+      const window = parseEventTimeWindow(event);
+      const lineup = expandedEventLineup(event);
+      if (!window || !lineup.length) return [];
+      const roundedBoundary = index => {
+        if (index === 0) return window.startMinutes;
+        if (index === lineup.length) return window.endMinutes;
+        return Math.round((window.startMinutes + (window.durationMinutes * index / lineup.length)) / 5) * 5;
+      };
+      return lineup.map((item, index) => ({
+        name: item.name,
+        start: formatClock(roundedBoundary(index)),
+        end: formatClock(roundedBoundary(index + 1)),
+        stage: "",
+        note: item.note || "Estimated from event window and lineup order; verify exact set time with the venue or promoter.",
+        status: "estimated",
+        source: event.source,
+        sourceLabel: "Event-window estimate"
+      }));
+    }
+
+    function timeToMinutes(value) {
+      const match = String(value || "").match(/(\d{1,2}):(\d{2})/);
+      if (!match) return Number.MAX_SAFE_INTEGER;
+      let minutes = Number(match[1]) * 60 + Number(match[2]);
+      if (minutes < 12 * 60) minutes += 24 * 60;
+      return minutes;
+    }
+
+    function hasSetTime(slot) {
+      return Boolean(slot.start || slot.end);
+    }
+
+    function hasPublishedSetTime(slot) {
+      return hasSetTime(slot) && slot.status !== "estimated";
+    }
+
+    function setTimesFor(event) {
+      const explicit = Array.isArray(event.setTimes) ? event.setTimes.map(slot => normalizeSlot(slot, event)) : [];
+      if (explicit.length) return explicit.sort((a, b) => timeToMinutes(a.start || a.end) - timeToMinutes(b.start || b.end));
+      const estimated = estimateSetTimes(event);
+      if (estimated.length) return estimated;
+      return expandedEventLineup(event).map(item => ({
+        name: item.name,
+        start: "",
+        end: "",
+        stage: "",
+        note: item.note,
+        status: "not-published",
+        source: event.source,
+        sourceLabel: event.sourceLabel
+      }));
+    }
+
+    function setTimeRange(slot, fallback = "TBA") {
+      if (slot.start && slot.end) return `${slot.start}-${slot.end}`;
+      if (slot.start) return slot.start;
+      if (slot.end) return `until ${slot.end}`;
+      return fallback;
+    }
+
+    function setTimeStatusLabel(slot) {
+      if (hasPublishedSetTime(slot)) return "Exact";
+      if (slot.status === "estimated" && hasSetTime(slot)) return "Estimated";
+      return "TBA";
+    }
+
+    function setTimeStatusClass(slot) {
+      if (hasPublishedSetTime(slot)) return "status-exact";
+      if (slot.status === "estimated" && hasSetTime(slot)) return "status-estimated";
+      return "status-tba";
+    }
+
+    function parseIsoDate(value) {
+      const match = String(value || "").match(/^(\d{4})-(\d{2})-(\d{2})/);
+      if (!match) return null;
+      return new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]));
+    }
+
+    function eventDate(event) {
+      return parseIsoDate(event.sortDate);
+    }
+
+    function parseEventDateTime(event) {
+      const start = eventDate(event) || parseIsoDate(verified);
+      const timeText = String(event.time || "");
+      const window = parseEventTimeWindow(event);
+      if (window) {
+        start.setHours(Math.floor(window.startMinutes / 60) % 24, window.startMinutes % 60, 0, 0);
+        const end = new Date(start);
+        end.setTime(start.getTime() + window.durationMinutes * 60 * 1000);
+        return { start, end };
+      }
+      const match = timeText.match(/(\d{1,2}):(\d{2})/);
+      if (match) start.setHours(Number(match[1]), Number(match[2]), 0, 0);
+      else if (/evening/i.test(timeText)) start.setHours(20, 0, 0, 0);
+      else if (/afternoon/i.test(timeText)) start.setHours(15, 0, 0, 0);
+      else start.setHours(22, 0, 0, 0);
+      const end = new Date(start);
+      end.setTime(start.getTime() + 4 * 60 * 60 * 1000);
+      return { start, end };
+    }
+
+    function addDays(date, days) {
+      const next = new Date(date);
+      next.setDate(next.getDate() + days);
+      return next;
+    }
+
+    function dateWindowMatches(event) {
+      const date = eventDate(event);
+      if (!date) return dateWindow === "all";
+      if (dateWindow === "all") return true;
+      if (dateWindow === "future") return date >= today;
+      if (dateWindow === "tonight") return date.getTime() === today.getTime();
+      if (dateWindow === "next30") return date >= today && date <= addDays(today, 30);
+      if (dateWindow === "weekend") {
+        const mondayOffset = (today.getDay() + 6) % 7;
+        const friday = addDays(today, 4 - mondayOffset);
+        const sunday = addDays(friday, 2);
+        return date >= friday && date <= sunday;
+      }
+      return true;
+    }
+
+    function eventVenueGroupMatches(event, group) {
+      if (group === "all") return true;
+      const text = [event.title, event.venue, event.district, event.genre, event.description, event.sourceLabel, event.source, eventLineup(event).map(item => item.name).join(" ")].join(" ").toLowerCase();
+      const has = (...terms) => terms.some(term => text.includes(term.toLowerCase()));
+      const id = event.id;
+      if (group === "abyss") return has("abyss");
+      if (group === "exit") return has("exit");
+      if (group === "heim") return has("heim");
+      if (group === "potent") return has("potent");
+      if (group === "reactor") return has("reactor");
+      if (group === "space-panda") return ["nightwave", "sunkissed", "horizon"].includes(id) || has("space panda");
+      if (group === "alter") return ["up-2-u", "alter-pavillon"].includes(id) || has("alter");
+      if (group === "dirty") return has("dirty house", "ins ");
+      if (group === "illum") return has("illum", "knot");
+      if (group === "wigwam") return has("wigwam");
+      if (group === "system") return has("system");
+      if (group === "void-vacuum") return has("void", "vacuum");
+      return true;
+    }
+
+    function slotKey(event, slot) {
+      return [event.id, djSlug(slot.name), slot.start || "tba", slot.end || "tba", slot.status || "slot"].join("__");
+    }
+
+    function slotRowsForEvents(eventList) {
+      return eventList.flatMap(event => setTimesFor(event).map(slot => ({
+        event,
+        slot,
+        key: slotKey(event, slot)
+      })));
+    }
+
+    function planningSortValue(row) {
+      const { start } = parseEventDateTime(row.event);
+      const slotMinutes = hasSetTime(row.slot) ? timeToMinutes(row.slot.start || row.slot.end) : timeToMinutes(String(row.event.time).match(/(\d{1,2}:\d{2})/)?.[1]);
+      return start.getTime() + (Number.isFinite(slotMinutes) ? slotMinutes : 0);
+    }
+
+    function slotSearchText(row) {
+      const { event, slot } = row;
+      return [slot.name, slot.note, event.title, event.venue, event.district, event.genre, event.description, event.sourceLabel, event.source].join(" ").toLowerCase();
+    }
+
+    function rowMatches(row) {
+      const query = controls.search.value.trim().toLowerCase();
+      const month = controls.month.value;
+      const status = controls.slotStatus.value;
+      if (!dateWindowMatches(row.event)) return false;
+      if (month !== "all" && row.event.month !== month) return false;
+      if (!eventVenueGroupMatches(row.event, controls.venue.value)) return false;
+      if (query && !slotSearchText(row).includes(query)) return false;
+      if (status === "exact" && !hasPublishedSetTime(row.slot)) return false;
+      if (status === "estimated" && !(row.slot.status === "estimated" && hasSetTime(row.slot))) return false;
+      if (status === "tba" && hasSetTime(row.slot)) return false;
+      return true;
+    }
+
+    function filteredRows() {
+      return slotRowsForEvents(events)
+        .filter(rowMatches)
+        .sort((a, b) => planningSortValue(a) - planningSortValue(b));
+    }
+
+    function loadItinerarySlotKeys() {
+      try {
+        const raw = window.localStorage ? window.localStorage.getItem(itineraryStorageKey) : "";
+        const parsed = raw ? JSON.parse(raw) : [];
+        return Array.isArray(parsed) ? parsed.filter(Boolean) : [];
+      } catch (_) {
+        return [];
+      }
+    }
+
+    function saveItinerarySlotKeys() {
+      try {
+        if (window.localStorage) window.localStorage.setItem(itineraryStorageKey, JSON.stringify(Array.from(itinerarySlotKeys)));
+      } catch (_) {}
+    }
+
+    function selectedItineraryRows() {
+      return slotRowsForEvents(events)
+        .filter(row => itinerarySlotKeys.has(row.key))
+        .sort((a, b) => planningSortValue(a) - planningSortValue(b));
+    }
+
+    function itinerarySlotLabel(row) {
+      return `${row.event.date} ${setTimeRange(row.slot, row.event.time)}`;
+    }
+
+    function toggleItinerarySlot(event, slot) {
+      const key = slotKey(event, slot);
+      if (itinerarySlotKeys.has(key)) itinerarySlotKeys.delete(key);
+      else itinerarySlotKeys.add(key);
+      saveItinerarySlotKeys();
+      renderPlanner();
+      renderItinerary();
+    }
+
+    function removeItinerarySlot(key) {
+      itinerarySlotKeys.delete(key);
+      saveItinerarySlotKeys();
+      renderPlanner();
+      renderItinerary();
+    }
+
+    function setActionDisabled(disabled) {
+      [downloadItineraryIcs, exportItineraryImageButton, clearItineraryButton].forEach(button => {
+        if (button) button.disabled = disabled;
+      });
+    }
+
+    function calendarUrl(event) {
+      return `index.html?event=${encodeURIComponent(event.id)}`;
+    }
+
+    function renderMonthOptions() {
+      const activeMonths = unique(events.map(event => event.month));
+      controls.month.innerHTML = '<option value="all">All months</option>' + monthPairs
+        .filter(pair => activeMonths.includes(pair[0]))
+        .map(pair => `<option value="${pair[0]}">${pair[1]}</option>`)
+        .join("");
+    }
+
+    function renderStats(rows) {
+      document.getElementById("statRows").textContent = rows.length;
+      document.getElementById("statExact").textContent = rows.filter(row => hasPublishedSetTime(row.slot)).length;
+      document.getElementById("statEstimated").textContent = rows.filter(row => row.slot.status === "estimated" && hasSetTime(row.slot)).length;
+      document.getElementById("statSelected").textContent = itinerarySlotKeys.size;
+      const checked = events.map(event => event.lastChecked).filter(Boolean).sort().pop() || verified;
+      document.getElementById("checkedTag").textContent = `Checked ${checked}`;
+    }
+
+    function renderPlanner() {
+      const rows = filteredRows();
+      renderStats(rows);
+      resultCount.textContent = `${rows.length} shown`;
+      if (!rows.length) {
+        slotList.innerHTML = `<div class="empty-state">No set-time rows match the current filters.</div>`;
+        renderWatchList([]);
+        return;
+      }
+      slotList.innerHTML = rows.slice(0, 160).map(row => {
+        const selected = itinerarySlotKeys.has(row.key);
+        return `
+          <article class="slot-row ${selected ? "selected" : ""}">
+            <button class="slot-button" type="button" data-slot-key="${escapeHtml(row.key)}" aria-pressed="${selected ? "true" : "false"}">
+              <div class="slot-time">${escapeHtml(setTimeRange(row.slot, row.event.time))}</div>
+              <div class="slot-main">
+                <b>${escapeHtml(row.slot.name)}</b>
+                <span>${escapeHtml(`${row.event.date} / ${row.event.title} / ${row.event.venue}`)}</span>
+                <span>${escapeHtml(row.slot.note || row.slot.stage || row.event.genre)}</span>
+              </div>
+            </button>
+            <div class="slot-actions">
+              <span class="status-pill ${setTimeStatusClass(row.slot)}">${escapeHtml(setTimeStatusLabel(row.slot))}</span>
+              <span class="add-state">${selected ? "Added" : "Add"}</span>
+              <a class="mini-link" href="${calendarUrl(row.event)}">Event</a>
+            </div>
+          </article>
+        `;
+      }).join("");
+      slotList.querySelectorAll("[data-slot-key]").forEach(button => {
+        const row = rows.find(item => item.key === button.dataset.slotKey);
+        if (row) button.addEventListener("click", () => toggleItinerarySlot(row.event, row.slot));
+      });
+      renderWatchList(rows);
+    }
+
+    function renderWatchList(rows) {
+      const tbaRows = rows.filter(row => !hasSetTime(row.slot)).slice(0, 6);
+      if (!tbaRows.length) {
+        watchList.innerHTML = `<div class="empty-state">No TBA rows in the current view.</div>`;
+        return;
+      }
+      watchList.innerHTML = tbaRows.map(row => `
+        <article class="watch-row">
+          <div class="slot-time">${escapeHtml(row.event.time)}</div>
+          <div class="slot-main">
+            <b>${escapeHtml(row.slot.name)}</b>
+            <span>${escapeHtml(`${row.event.date} / ${row.event.title}`)}</span>
+          </div>
+          <a class="mini-link" href="${escapeHtml(row.event.source)}" target="_blank" rel="noopener noreferrer">Source</a>
+        </article>
+      `).join("");
+    }
+
+    function renderItinerary() {
+      const rows = selectedItineraryRows();
+      itineraryCount.textContent = `${rows.length} selected`;
+      setActionDisabled(rows.length === 0);
+      document.getElementById("statSelected").textContent = rows.length;
+      if (!rows.length) {
+        selectedItinerary.innerHTML = `<div class="empty-state">No DJ slots selected yet.</div>`;
+        return;
+      }
+      selectedItinerary.innerHTML = rows.map(row => `
+        <article class="itinerary-row" data-slot-key="${escapeHtml(row.key)}">
+          <div class="slot-time">${escapeHtml(itinerarySlotLabel(row))}</div>
+          <div class="slot-main">
+            <b>${escapeHtml(row.slot.name)}</b>
+            <span>${escapeHtml(`${row.event.title} / ${row.event.venue} / ${setTimeStatusLabel(row.slot)}`)}</span>
+          </div>
+          <button class="remove-button" type="button" data-remove-slot="${escapeHtml(row.key)}">Remove</button>
+        </article>
+      `).join("");
+      selectedItinerary.querySelectorAll("[data-remove-slot]").forEach(button => {
+        button.addEventListener("click", () => removeItinerarySlot(button.dataset.removeSlot));
+      });
+    }
+
+    function formatIcsLocal(date) {
+      return `${date.getFullYear()}${pad2(date.getMonth() + 1)}${pad2(date.getDate())}T${pad2(date.getHours())}${pad2(date.getMinutes())}00`;
+    }
+
+    function formatIcsStamp(date) {
+      return date.toISOString().replace(/[-:]/g, "").replace(/\.\d{3}Z$/, "Z");
+    }
+
+    function escapeIcs(value) {
+      return String(value)
+        .replace(/\\/g, "\\\\")
+        .replace(/\r?\n/g, "\\n")
+        .replace(/,/g, "\\,")
+        .replace(/;/g, "\\;");
+    }
+
+    function foldIcsLine(line) {
+      const chunks = [];
+      let rest = line;
+      while (rest.length > 74) {
+        chunks.push(rest.slice(0, 74));
+        rest = ` ${rest.slice(74)}`;
+      }
+      chunks.push(rest);
+      return chunks.join("\r\n");
+    }
+
+    function slotClockOffset(eventStart, clockValue) {
+      const match = String(clockValue || "").match(/(\d{1,2}):(\d{2})/);
+      if (!match) return 0;
+      let slotMinutes = Number(match[1]) * 60 + Number(match[2]);
+      if (slotMinutes < 12 * 60) slotMinutes += 24 * 60;
+      let eventMinutes = eventStart.getHours() * 60 + eventStart.getMinutes();
+      if (eventMinutes < 12 * 60) eventMinutes += 24 * 60;
+      while (slotMinutes < eventMinutes - 6 * 60) slotMinutes += 24 * 60;
+      return slotMinutes - eventMinutes;
+    }
+
+    function slotDateTimes(event, slot) {
+      const eventWindow = parseEventDateTime(event);
+      if (!hasSetTime(slot)) return eventWindow;
+      let start = slot.start ? new Date(eventWindow.start.getTime() + slotClockOffset(eventWindow.start, slot.start) * 60 * 1000) : new Date(eventWindow.start);
+      let end = slot.end ? new Date(eventWindow.start.getTime() + slotClockOffset(eventWindow.start, slot.end) * 60 * 1000) : new Date(start.getTime() + 90 * 60 * 1000);
+      if (end <= start) end.setDate(end.getDate() + 1);
+      return { start, end };
+    }
+
+    function icsForItineraryRows(rows) {
+      const dtstamp = formatIcsStamp(new Date());
+      const lines = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        "PRODID:-//Shanghai Rave Calendar 2026//Set-Time Planner//EN",
+        "CALSCALE:GREGORIAN",
+        "METHOD:PUBLISH",
+        "X-WR-CALNAME:Shanghai DJ Itinerary",
+        "X-WR-TIMEZONE:Asia/Shanghai"
+      ];
+      rows.forEach(row => {
+        const { start, end } = slotDateTimes(row.event, row.slot);
+        lines.push(
+          "BEGIN:VEVENT",
+          `UID:${row.key}@shanghai-rave-calendar-2026`,
+          `DTSTAMP:${dtstamp}`,
+          `DTSTART;TZID=Asia/Shanghai:${formatIcsLocal(start)}`,
+          `DTEND;TZID=Asia/Shanghai:${formatIcsLocal(end)}`,
+          `SUMMARY:${escapeIcs(`${row.slot.name} at ${row.event.title}`)}`,
+          `LOCATION:${escapeIcs(`${row.event.venue}, ${row.event.district}, Shanghai`)}`,
+          `DESCRIPTION:${escapeIcs(`DJ slot: ${setTimeRange(row.slot, row.event.time)}\nStatus: ${setTimeStatusLabel(row.slot)}\nEvent: ${row.event.title}\nLast checked: ${row.event.lastChecked || verified}\nSource: ${row.event.source}`)}`,
+          `URL:${row.event.source}`,
+          `STATUS:${row.event.status === "watch" ? "TENTATIVE" : "CONFIRMED"}`,
+          "END:VEVENT"
+        );
+      });
+      lines.push("END:VCALENDAR");
+      return `${lines.map(foldIcsLine).join("\r\n")}\r\n`;
+    }
+
+    function downloadSelectedItineraryIcs() {
+      const rows = selectedItineraryRows();
+      if (!rows.length) return;
+      const blob = new Blob([icsForItineraryRows(rows)], { type: "text/calendar;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "shanghai-dj-itinerary.ics";
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
+
+    function clippedCanvasText(ctx, text, maxWidth) {
+      let output = String(text || "");
+      while (output.length > 4 && ctx.measureText(output).width > maxWidth) {
+        output = output.slice(0, -4).trimEnd() + "...";
+      }
+      return output;
+    }
+
+    function drawWrappedCanvasText(ctx, text, x, y, maxWidth, lineHeight, maxLines) {
+      const words = String(text || "").split(/\s+/).filter(Boolean);
+      const lines = [];
+      let line = "";
+      words.forEach(word => {
+        const testLine = line ? `${line} ${word}` : word;
+        if (ctx.measureText(testLine).width > maxWidth && line) {
+          lines.push(line);
+          line = word;
+        } else {
+          line = testLine;
+        }
+      });
+      if (line) lines.push(line);
+      const visible = lines.slice(0, maxLines);
+      if (lines.length > visible.length) visible[visible.length - 1] = clippedCanvasText(ctx, `${visible[visible.length - 1]}...`, maxWidth);
+      visible.forEach((item, index) => ctx.fillText(clippedCanvasText(ctx, item, maxWidth), x, y + index * lineHeight));
+      return y + visible.length * lineHeight;
+    }
+
+    function exportItineraryImage() {
+      const rows = selectedItineraryRows();
+      if (!rows.length) return;
+      const width = 1200;
+      const rowHeight = 126;
+      const height = 260 + rows.length * rowHeight + 56;
+      const scale = Math.min(window.devicePixelRatio || 2, 3);
+      const canvas = document.createElement("canvas");
+      canvas.width = width * scale;
+      canvas.height = height * scale;
+      canvas.style.width = `${width}px`;
+      canvas.style.height = `${height}px`;
+      const ctx = canvas.getContext("2d");
+      ctx.scale(scale, scale);
+
+      ctx.fillStyle = "#080806";
+      ctx.fillRect(0, 0, width, height);
+      ctx.strokeStyle = "rgba(242,240,232,.12)";
+      ctx.lineWidth = 1;
+      for (let x = 0; x < width; x += 40) {
+        ctx.beginPath();
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, height);
+        ctx.stroke();
+      }
+      ctx.fillStyle = "#c6ff3b";
+      ctx.fillRect(0, 0, 20, height);
+      ctx.fillStyle = "#ff6a2a";
+      ctx.fillRect(width - 118, 0, 118, 118);
+      ctx.fillStyle = "#41d7ff";
+      ctx.fillRect(width - 78, 78, 78, 180);
+
+      ctx.fillStyle = "#f2f0e8";
+      ctx.font = "700 56px Georgia, serif";
+      ctx.fillText("Shanghai DJ itinerary", 70, 92);
+      ctx.font = "900 22px Aptos, Segoe UI, sans-serif";
+      ctx.fillStyle = "#c6ff3b";
+      ctx.fillText(`${rows.length} selected slot${rows.length === 1 ? "" : "s"} / verified ${verified}`, 74, 136);
+      ctx.font = "500 20px Aptos, Segoe UI, sans-serif";
+      ctx.fillStyle = "#a7a39a";
+      ctx.fillText("Exact slots use published set times. Estimated slots are planning guesses from event windows.", 74, 174);
+
+      let y = 226;
+      rows.forEach((row, index) => {
+        ctx.fillStyle = index % 2 ? "rgba(255,255,255,.028)" : "rgba(255,255,255,.052)";
+        ctx.fillRect(70, y - 28, width - 140, rowHeight - 12);
+        ctx.strokeStyle = row.slot.status === "estimated" ? "rgba(65,215,255,.58)" : "rgba(198,255,59,.52)";
+        ctx.strokeRect(70, y - 28, width - 140, rowHeight - 12);
+        ctx.font = "900 24px Aptos, Segoe UI, sans-serif";
+        ctx.fillStyle = "#c6ff3b";
+        ctx.fillText(clippedCanvasText(ctx, itinerarySlotLabel(row), 180), 98, y + 12);
+        ctx.font = "700 30px Georgia, serif";
+        ctx.fillStyle = "#f2f0e8";
+        drawWrappedCanvasText(ctx, row.slot.name, 300, y + 10, 520, 34, 2);
+        ctx.font = "700 19px Aptos, Segoe UI, sans-serif";
+        ctx.fillStyle = "#a7a39a";
+        drawWrappedCanvasText(ctx, `${row.event.title} / ${row.event.venue}`, 300, y + 78, 610, 24, 1);
+        const status = setTimeStatusLabel(row.slot);
+        ctx.font = "900 18px Aptos, Segoe UI, sans-serif";
+        const pillWidth = Math.max(112, ctx.measureText(status).width + 34);
+        ctx.fillStyle = status === "Estimated" ? "#41d7ff" : "#c6ff3b";
+        ctx.fillRect(width - 98 - pillWidth, y + 12, pillWidth, 38);
+        ctx.fillStyle = "#080806";
+        ctx.fillText(status.toUpperCase(), width - 81 - pillWidth, y + 37);
+        y += rowHeight;
+      });
+      ctx.font = "700 17px Aptos, Segoe UI, sans-serif";
+      ctx.fillStyle = "#747066";
+      ctx.fillText("Generated by Shanghai Rave Calendar 2026", 74, height - 34);
+      canvas.toBlob(blob => {
+        if (!blob) return;
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = "shanghai-dj-itinerary.png";
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+      }, "image/png");
+    }
+
+    function bindControls() {
+      controls.search.addEventListener("input", renderPlanner);
+      [controls.month, controls.slotStatus, controls.venue].forEach(control => {
+        control.addEventListener("change", renderPlanner);
+      });
+      document.querySelectorAll("[data-window]").forEach(button => {
+        button.addEventListener("click", () => {
+          dateWindow = button.dataset.window;
+          document.querySelectorAll("[data-window]").forEach(item => item.classList.toggle("active", item === button));
+          renderPlanner();
+        });
+      });
+      downloadItineraryIcs.addEventListener("click", downloadSelectedItineraryIcs);
+      exportItineraryImageButton.addEventListener("click", exportItineraryImage);
+      clearItineraryButton.addEventListener("click", () => {
+        itinerarySlotKeys.clear();
+        saveItinerarySlotKeys();
+        renderPlanner();
+        renderItinerary();
+      });
+    }
+
+    async function bootPlanner() {
+      renderMonthOptions();
+      renderPlanner();
+      renderItinerary();
+      bindControls();
+      const loadedEvents = await loadExternalEvents();
+      if (loadedEvents) {
+        events = loadedEvents;
+        renderMonthOptions();
+        renderPlanner();
+        renderItinerary();
+      }
+    }
+
+    bootPlanner();
+  </script>
+</body>
+</html>

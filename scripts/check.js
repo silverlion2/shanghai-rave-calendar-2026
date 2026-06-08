@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 const scriptPattern = new RegExp("<script>([\\s\\S]*?)</script>", "g");
-const htmlFiles = ["index.html", "venues.html", "djs.html"];
+const htmlFiles = ["index.html", "venues.html", "djs.html", "planner.html"];
 const syntaxOnlyHtmlFiles = ["shanghai-rave-calendar-2026.html"];
 const externalJsFiles = ["data/dj-data.js"];
 let scriptCount = 0;
@@ -45,24 +45,26 @@ if (mainScript !== archiveScript) {
 }
 
 const itineraryRequirements = [
-  { file: "index.html", text: 'id="selectedItinerary"', label: "selected itinerary panel" },
-  { file: "index.html", text: 'id="exportItineraryImage"', label: "image export button" },
-  { file: "index.html", text: 'id="downloadItineraryIcs"', label: "selected itinerary .ics export" },
-  { file: "index.html", text: 'data-slot-key', label: "selectable slot key markup" },
-  { file: "index.html", text: "function slotKey(", label: "stable itinerary slot keys" },
-  { file: "index.html", text: "function toggleItinerarySlot(", label: "slot selection toggle" },
-  { file: "index.html", text: "function exportItineraryImage(", label: "PNG itinerary export" },
-  { file: "index.html", text: "canvas.toBlob", label: "canvas image save path" },
-  { file: "index.html", text: "window.localStorage", label: "itinerary persistence" },
-  { file: "shanghai-rave-calendar-2026.html", text: 'id="selectedItinerary"', label: "archive selected itinerary panel" },
-  { file: "shanghai-rave-calendar-2026.html", text: 'id="exportItineraryImage"', label: "archive image export button" },
-  { file: "shanghai-rave-calendar-2026.html", text: 'id="downloadItineraryIcs"', label: "archive selected itinerary .ics export" },
+  { file: "index.html", text: 'href="planner.html"', label: "calendar planner link" },
+  { file: "shanghai-rave-calendar-2026.html", text: 'href="planner.html"', label: "archive planner link" },
+  { file: "djs.html", text: 'href="planner.html"', label: "DJ database planner link" },
+  { file: "venues.html", text: 'href="planner.html"', label: "venue guide planner link" },
+  { file: "planner.html", text: 'id="selectedItinerary"', label: "selected itinerary panel" },
+  { file: "planner.html", text: 'id="exportItineraryImage"', label: "image export button" },
+  { file: "planner.html", text: 'id="downloadItineraryIcs"', label: "selected itinerary .ics export" },
+  { file: "planner.html", text: 'data-slot-key', label: "selectable slot key markup" },
+  { file: "planner.html", text: "function estimateSetTimes(", label: "duration-based set-time estimates" },
+  { file: "planner.html", text: "function slotKey(", label: "stable itinerary slot keys" },
+  { file: "planner.html", text: "function toggleItinerarySlot(", label: "slot selection toggle" },
+  { file: "planner.html", text: "function exportItineraryImage(", label: "PNG itinerary export" },
+  { file: "planner.html", text: "canvas.toBlob", label: "canvas image save path" },
+  { file: "planner.html", text: "window.localStorage", label: "itinerary persistence" },
 ];
 
 for (const requirement of itineraryRequirements) {
   const html = fs.readFileSync(requirement.file, "utf8");
   if (!html.includes(requirement.text)) {
-    throw new Error(`${requirement.file} missing itinerary feature marker: ${requirement.label}`);
+    throw new Error(`${requirement.file} missing feature marker: ${requirement.label}`);
   }
 }
 
