@@ -112,7 +112,7 @@ GitHub state:
 - Visibility: public
 - Default branch: `main`
 - Remote: `origin` -> `https://github.com/silverlion2/shanghai-rave-calendar-2026.git`
-- Latest pushed functional commit before this memory-only correction: `b5fefdd Refine calendar navigation and itinerary planning`
+- Current feature push is titled `Refine calendar navigation and itinerary planning`.
 - Recent calendar UI commits:
   - `b5fefdd Refine calendar navigation and itinerary planning`
   - `b418477 Add project memory`
