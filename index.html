@@ -1,0 +1,2080 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shanghai Rave Calendar 2026</title>
+  <meta name="description" content="Interactive 2026 Shanghai techno and rave calendar with clickable events, DJ notes, sources, date-night routes, and late-year watchlists.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#c6ff3b">
+  <link rel="canonical" href="https://shanghai-rave-calendar-2026.vercel.app/">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shanghai Rave Calendar">
+  <meta property="og:title" content="Shanghai Rave Calendar 2026">
+  <meta property="og:description" content="Clickable 2026 calendar for Shanghai techno, rave, warehouse, industrial, bass, and underground electronic nights.">
+  <meta property="og:url" content="https://shanghai-rave-calendar-2026.vercel.app/">
+  <meta property="og:image" content="https://shanghai-rave-calendar-2026.vercel.app/og-image.png">
+  <meta property="og:image:alt" content="Preview of an interactive Shanghai 2026 rave calendar">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Shanghai Rave Calendar 2026",
+    "url": "https://shanghai-rave-calendar-2026.vercel.app/",
+    "description": "Interactive 2026 Shanghai techno and rave calendar with clickable events, DJ notes, source links, date-night routes, and watchlists.",
+    "inLanguage": "en",
+    "about": [
+      "Shanghai techno events",
+      "Shanghai rave calendar",
+      "Shanghai electronic music",
+      "Shanghai nightlife"
+    ],
+    "isAccessibleForFree": true
+  }
+  </script>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f2f0e8;
+      --muted: #a7a39a;
+      --dim: #747066;
+      --void: #080806;
+      --panel: #11110e;
+      --panel-2: #181814;
+      --line: #302f28;
+      --acid: #c6ff3b;
+      --ember: #ff6a2a;
+      --cyan: #41d7ff;
+      --rose: #ff4f8b;
+      --gold: #ffd166;
+      --ok: #85ff94;
+      --warn: #ffd166;
+      --radius: 8px;
+      --shadow: 0 24px 80px rgba(0, 0, 0, .42);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px) 0 0 / 36px 36px,
+        linear-gradient(0deg, rgba(255,255,255,.018) 1px, transparent 1px) 0 0 / 36px 36px,
+        radial-gradient(circle at 50% -10%, rgba(255,106,42,.18), transparent 38%),
+        #080806;
+      color: var(--ink);
+      font-family: "Aptos", "Segoe UI", sans-serif;
+      letter-spacing: 0;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      pointer-events: none;
+      opacity: .42;
+      background-image:
+        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+        repeating-linear-gradient(90deg, transparent 0 17px, rgba(198,255,59,.045) 18px, transparent 19px);
+      background-size: 100% 5px, 100% 100%;
+      mix-blend-mode: screen;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    button,
+    input,
+    select {
+      font: inherit;
+    }
+
+    .signal-canvas {
+      position: fixed;
+      inset: auto 0 0 0;
+      width: 100%;
+      height: 180px;
+      z-index: -1;
+      opacity: .58;
+      pointer-events: none;
+    }
+
+    .shell {
+      width: min(1480px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 24px 0 56px;
+    }
+
+    .topbar {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 18px;
+      align-items: start;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 22px;
+    }
+
+    .topbar > * {
+      min-width: 0;
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--acid);
+      font-size: 13px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .kicker::before {
+      content: "";
+      width: 34px;
+      height: 2px;
+      background: var(--acid);
+      box-shadow: 0 0 18px rgba(198,255,59,.7);
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: 58px;
+      line-height: .96;
+      font-weight: 700;
+      max-width: 780px;
+      letter-spacing: 0;
+    }
+
+    .subhead {
+      max-width: 760px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.5;
+    }
+
+    .source-note {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+      color: var(--dim);
+      font-size: 13px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 30px;
+      border: 1px solid var(--line);
+      background: rgba(17,17,14,.84);
+      padding: 6px 10px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .hero-picture {
+      width: 340px;
+      aspect-ratio: 4 / 5;
+      margin: 0;
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,.12);
+      background: #16140f;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-picture img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: .78;
+      filter: contrast(1.08) saturate(1.05);
+    }
+
+    .hero-picture::after {
+      content: "2026 SIGNAL / SHANGHAI";
+      position: absolute;
+      inset: auto 12px 12px 12px;
+      padding: 10px 12px;
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(8,8,6,.72);
+      color: var(--acid);
+      font-weight: 800;
+      font-size: 13px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin: 22px 0;
+    }
+
+    .stat {
+      min-height: 92px;
+      border: 1px solid var(--line);
+      background: rgba(17,17,14,.76);
+      border-radius: var(--radius);
+      padding: 14px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stat::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--acid), var(--ember), var(--cyan));
+    }
+
+    .stat b {
+      display: block;
+      font-size: 28px;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: minmax(240px, 1fr) repeat(2, minmax(160px, 220px));
+      gap: 10px;
+      margin: 18px 0 14px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(8,8,6,.72);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(14px);
+    }
+
+    .search,
+    .select {
+      width: 100%;
+      min-height: 44px;
+      border: 1px solid var(--line);
+      color: var(--ink);
+      background: #151510;
+      border-radius: 6px;
+      padding: 0 12px;
+      outline: none;
+    }
+
+    .search:focus,
+    .select:focus {
+      border-color: var(--acid);
+      box-shadow: 0 0 0 3px rgba(198,255,59,.14);
+    }
+
+    .month-rail {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 6px;
+      margin-bottom: 22px;
+    }
+
+    .month-button {
+      min-width: 0;
+      min-height: 44px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: rgba(17,17,14,.86);
+      color: var(--muted);
+      cursor: pointer;
+      transition: transform .18s ease, border-color .18s ease, color .18s ease, background .18s ease;
+    }
+
+    .month-button:hover,
+    .month-button.active {
+      transform: translateY(-1px);
+      color: var(--void);
+      background: var(--acid);
+      border-color: var(--acid);
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 360px;
+      gap: 22px;
+      align-items: start;
+    }
+
+    .month-section {
+      scroll-margin-top: 96px;
+      margin-bottom: 30px;
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+    }
+
+    .month-header {
+      display: grid;
+      grid-template-columns: 92px minmax(0, 1fr) auto;
+      gap: 14px;
+      align-items: end;
+      margin-bottom: 14px;
+    }
+
+    .month-code {
+      color: var(--void);
+      background: var(--ink);
+      border-radius: 6px;
+      min-height: 58px;
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      font-size: 28px;
+    }
+
+    .month-header h2 {
+      margin: 0;
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: 30px;
+      letter-spacing: 0;
+    }
+
+    .month-header p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .count-badge {
+      color: var(--dim);
+      font-size: 13px;
+      border: 1px solid var(--line);
+      padding: 7px 10px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 6px;
+      margin: 0 0 14px;
+    }
+
+    .calendar-day-name {
+      color: var(--dim);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 0 4px 3px;
+    }
+
+    .calendar-day {
+      min-height: 92px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: rgba(17,17,14,.62);
+      padding: 8px;
+      overflow: hidden;
+    }
+
+    .calendar-day.has-event {
+      border-color: rgba(198,255,59,.2);
+      background: rgba(17,17,14,.82);
+    }
+
+    .calendar-day.empty {
+      background: rgba(255,255,255,.018);
+      border-color: rgba(255,255,255,.055);
+    }
+
+    .calendar-date {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--dim);
+      font-size: 12px;
+      font-weight: 900;
+      margin-bottom: 6px;
+    }
+
+    .calendar-events {
+      display: grid;
+      gap: 4px;
+    }
+
+    .calendar-event {
+      width: 100%;
+      min-height: 27px;
+      border: 1px solid rgba(198,255,59,.18);
+      border-radius: 5px;
+      background: rgba(198,255,59,.1);
+      color: var(--ink);
+      cursor: pointer;
+      padding: 4px 6px;
+      text-align: left;
+      font-size: 11px;
+      line-height: 1.25;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .calendar-event:hover {
+      border-color: var(--acid);
+      color: var(--void);
+      background: var(--acid);
+    }
+
+    .calendar-event.watch {
+      border-color: rgba(255,209,102,.28);
+      background: rgba(255,209,102,.1);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .event-card {
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr);
+      min-height: 430px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: rgba(17,17,14,.92);
+      cursor: pointer;
+      transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+    }
+
+    .event-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(198,255,59,.6);
+      box-shadow: 0 16px 42px rgba(0,0,0,.32);
+    }
+
+    .poster {
+      position: relative;
+      aspect-ratio: 16 / 11;
+      background: #16140f;
+      overflow: hidden;
+    }
+
+    .poster img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .poster .tag {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: var(--void);
+      background: var(--acid);
+      border-radius: 999px;
+      padding: 5px 9px;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 14px;
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .event-card h3 {
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.14;
+      overflow-wrap: anywhere;
+    }
+
+    .venue {
+      color: var(--cyan);
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .description {
+      color: var(--muted);
+      line-height: 1.42;
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .lineup-preview {
+      display: grid;
+      gap: 5px;
+      padding: 8px 0 0;
+      border-top: 1px solid rgba(255,255,255,.08);
+    }
+
+    .lineup-preview span {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+
+    .lineup-preview b {
+      color: var(--ink);
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: auto;
+    }
+
+    .chip {
+      border: 1px solid rgba(255,255,255,.12);
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 5px 8px;
+      font-size: 12px;
+      background: rgba(255,255,255,.035);
+    }
+
+    .confidence-high {
+      color: var(--void);
+      background: var(--ok);
+      border-color: var(--ok);
+    }
+
+    .confidence-medium {
+      color: var(--void);
+      background: var(--warn);
+      border-color: var(--warn);
+    }
+
+    .confidence-watch {
+      color: var(--ink);
+      background: transparent;
+      border-color: var(--ember);
+    }
+
+    .watch-panel {
+      border: 1px dashed rgba(255,255,255,.22);
+      border-radius: var(--radius);
+      min-height: 220px;
+      padding: 18px;
+      background:
+        repeating-linear-gradient(-10deg, rgba(255,106,42,.08) 0 1px, transparent 1px 12px),
+        rgba(17,17,14,.82);
+    }
+
+    .watch-panel h3 {
+      margin: 0 0 10px;
+      color: var(--gold);
+      font-size: 20px;
+    }
+
+    .watch-panel p {
+      margin: 0 0 12px;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .watch-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .watch-list li {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 9px;
+      color: var(--ink);
+      background: rgba(0,0,0,.24);
+      font-size: 13px;
+    }
+
+    .side {
+      position: sticky;
+      top: 92px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(17,17,14,.88);
+      padding: 16px;
+      box-shadow: 0 12px 38px rgba(0,0,0,.22);
+    }
+
+    .panel h2 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      font-family: "Georgia", "Times New Roman", serif;
+      letter-spacing: 0;
+    }
+
+    .panel p,
+    .panel li {
+      color: var(--muted);
+      line-height: 1.45;
+      font-size: 14px;
+    }
+
+    .route-buttons {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      margin: 12px 0;
+    }
+
+    .route-button {
+      min-height: 42px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      background: #151510;
+      color: var(--muted);
+      cursor: pointer;
+    }
+
+    .route-button.active,
+    .route-button:hover {
+      color: var(--void);
+      border-color: var(--ember);
+      background: var(--ember);
+    }
+
+    .route-card {
+      border-left: 3px solid var(--ember);
+      padding-left: 12px;
+    }
+
+    .source-grid {
+      display: grid;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .source-link {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+      min-height: 38px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 8px 10px;
+      color: var(--ink);
+      text-decoration: none;
+      background: rgba(255,255,255,.03);
+    }
+
+    .source-link:hover {
+      border-color: var(--acid);
+      color: var(--acid);
+    }
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      z-index: 50;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 22px;
+      background: rgba(0,0,0,.72);
+    }
+
+    .modal.open {
+      display: flex;
+    }
+
+    .modal-card {
+      width: min(940px, 100%);
+      max-height: min(820px, 92vh);
+      overflow: auto;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: var(--radius);
+      background: #10100d;
+      box-shadow: var(--shadow);
+    }
+
+    .modal-hero {
+      display: grid;
+      grid-template-columns: 320px minmax(0, 1fr);
+      gap: 0;
+      min-height: 320px;
+    }
+
+    .modal-hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      background: #17140f;
+    }
+
+    .modal-content {
+      padding: 22px;
+    }
+
+    .modal-content h2 {
+      margin: 0 0 8px;
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: 34px;
+      line-height: 1;
+      letter-spacing: 0;
+      overflow-wrap: anywhere;
+    }
+
+    .modal-meta {
+      color: var(--muted);
+      line-height: 1.45;
+      margin-bottom: 14px;
+    }
+
+    .lineup-section {
+      margin: 14px 0;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: rgba(255,255,255,.025);
+      padding: 12px;
+    }
+
+    .lineup-section h3 {
+      margin: 0 0 10px;
+      font-size: 15px;
+      text-transform: uppercase;
+      color: var(--acid);
+    }
+
+    .lineup-list {
+      display: grid;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .dj-note {
+      display: grid;
+      gap: 2px;
+      border-bottom: 1px solid rgba(255,255,255,.075);
+      padding-bottom: 8px;
+    }
+
+    .dj-note:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .dj-note b {
+      color: var(--ink);
+      font-size: 14px;
+    }
+
+    .dj-note span {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.38;
+    }
+
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+      margin: 14px 0;
+    }
+
+    .fact {
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 10px;
+      background: rgba(255,255,255,.03);
+    }
+
+    .fact span {
+      display: block;
+      color: var(--dim);
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .fact b {
+      overflow-wrap: anywhere;
+      font-size: 14px;
+    }
+
+    .modal-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .button-link,
+    .close {
+      min-height: 42px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #151510;
+      color: var(--ink);
+      padding: 10px 12px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .button-link.primary {
+      color: var(--void);
+      border-color: var(--acid);
+      background: var(--acid);
+      font-weight: 900;
+    }
+
+    .footnotes {
+      margin-top: 38px;
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+      color: var(--dim);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    @media (max-width: 1180px) {
+      .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .layout {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .side {
+        position: static;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 860px) {
+      .shell {
+        width: calc(100vw - 44px);
+        max-width: calc(100vw - 44px);
+        overflow: hidden;
+      }
+      .topbar {
+        grid-template-columns: 1fr;
+        width: calc(100vw - 44px);
+      }
+      h1 {
+        font-size: 34px;
+        overflow-wrap: break-word;
+      }
+      .subhead {
+        width: calc(100vw - 44px);
+        max-width: calc(100vw - 44px);
+        font-size: 16px;
+        overflow-wrap: break-word;
+      }
+      .source-note {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: calc(100vw - 44px);
+      }
+      .pill {
+        width: fit-content;
+        max-width: calc(100vw - 44px);
+        white-space: normal;
+      }
+      .hero-picture {
+        width: 100%;
+        aspect-ratio: 16 / 8;
+      }
+      .stats,
+      .side {
+        grid-template-columns: 1fr;
+      }
+      .controls {
+        grid-template-columns: 1fr;
+        position: static;
+      }
+      .month-rail {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .calendar-grid {
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+        gap: 4px;
+      }
+      .calendar-day {
+        min-height: 70px;
+        padding: 4px;
+      }
+      .calendar-day-name,
+      .calendar-date {
+        font-size: 9px;
+      }
+      .calendar-event {
+        min-height: 22px;
+        padding: 3px;
+        font-size: 9px;
+      }
+      .cards {
+        grid-template-columns: 1fr;
+      }
+      .month-header {
+        grid-template-columns: 70px minmax(0, 1fr);
+      }
+      .count-badge {
+        grid-column: 1 / -1;
+        width: max-content;
+      }
+      .modal-hero {
+        grid-template-columns: 1fr;
+      }
+      .modal-hero img {
+        aspect-ratio: 16 / 10;
+      }
+      .facts {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .topbar,
+      .subhead,
+      .source-note {
+        width: min(320px, calc(100vw - 44px));
+        max-width: min(320px, calc(100vw - 44px));
+      }
+      .hero-picture {
+        max-width: min(320px, calc(100vw - 44px));
+      }
+      .month-rail {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas class="signal-canvas" id="signalCanvas" aria-hidden="true"></canvas>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <div class="kicker">Verified as of June 8, 2026</div>
+        <h1>Shanghai 2026 rave calendar</h1>
+        <p class="subhead">A sourced, full-year presentation for techno, rave, warehouse, industrial, bass, trance, and serious underground electronic nights around Shanghai. Late-year listings are shown as watchlist months because promoters have not announced most July-December programming yet.</p>
+        <div class="source-note">
+          <span class="pill">RA + SmartShanghai + official artist pages</span>
+          <span class="pill">Asia/Shanghai dates</span>
+          <span class="pill">Generated visual posters, not official flyers</span>
+          <span class="pill">Hero photo: Shanghai Bund, CC0</span>
+        </div>
+      </div>
+      <figure class="hero-picture" aria-label="Shanghai night visual">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Shanghai_Bund_at_night_20260417_%282%29.jpg" alt="Shanghai Bund skyline at night">
+      </figure>
+    </header>
+
+    <section class="stats" aria-label="Calendar statistics">
+      <div class="stat"><b id="statEvents">0</b><span>sourced events and leads across 2026</span></div>
+      <div class="stat"><b id="statUpcoming">0</b><span>upcoming confirmed or single-source entries after June 8</span></div>
+      <div class="stat"><b id="statTop">0</b><span>high-confidence techno or rave picks</span></div>
+      <div class="stat"><b>6</b><span>late-year watchlist months without reliable full calendars yet</span></div>
+    </section>
+
+    <section class="controls" aria-label="Calendar controls">
+      <input class="search" id="searchInput" type="search" placeholder="Search event, venue, genre, promoter">
+      <select class="select" id="statusFilter" aria-label="Status filter">
+        <option value="all">All statuses</option>
+        <option value="upcoming">Upcoming</option>
+        <option value="past">Past archive</option>
+        <option value="watch">Watchlist leads</option>
+      </select>
+      <select class="select" id="vibeFilter" aria-label="Vibe filter">
+        <option value="all">All vibes</option>
+        <option value="hard">Hard techno</option>
+        <option value="underground">Underground</option>
+        <option value="date">Date-friendly</option>
+        <option value="experimental">Experimental</option>
+        <option value="bass">Bass / club</option>
+        <option value="warehouse">Warehouse</option>
+      </select>
+    </section>
+
+    <nav class="month-rail" id="monthRail" aria-label="Jump to month"></nav>
+
+    <section class="layout">
+      <div id="calendar"></div>
+
+      <aside class="side">
+        <section class="panel">
+          <h2>Date-night route</h2>
+          <p>Pick a mood and the plan adapts to the strongest sourced options.</p>
+          <div class="route-buttons">
+            <button class="route-button active" data-route="easy">Easy</button>
+            <button class="route-button" data-route="deep">Deep</button>
+            <button class="route-button" data-route="hard">Hard</button>
+          </div>
+          <div class="route-card" id="routeCard"></div>
+        </section>
+
+        <section class="panel">
+          <h2>Best current picks</h2>
+          <div class="source-grid" id="bestPicks"></div>
+        </section>
+
+        <section class="panel">
+          <h2>Keep watching</h2>
+          <p>Shanghai club listings often land one or two weeks out. For the back half of 2026, monitor Abyss, POTENT, EXIT, Heim, ILLUM, Reactor, Dirty House, Wigwam, System, SmartShanghai, and RA.</p>
+        </section>
+      </aside>
+    </section>
+
+    <footer class="footnotes">
+      Sources are linked on each card. Resident Advisor pages and SmartShanghai editorial listings were checked during the June 8, 2026 research pass; official Anyma pages were used for the May 2 show. Event art in this file is procedurally generated for presentation purposes, not official promotional artwork.
+    </footer>
+  </main>
+
+  <div class="modal" id="eventModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <div class="modal-hero">
+        <img id="modalPoster" alt="">
+        <div class="modal-content">
+          <h2 id="modalTitle"></h2>
+          <div class="modal-meta" id="modalMeta"></div>
+          <p class="description" id="modalDescription"></p>
+          <div class="facts" id="modalFacts"></div>
+          <div class="lineup-section" id="modalLineup"></div>
+          <div class="chips" id="modalChips"></div>
+          <div class="modal-actions" id="modalActions"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const verified = "2026-06-08";
+    const months = [
+      ["Jan", "January"], ["Feb", "February"], ["Mar", "March"], ["Apr", "April"],
+      ["May", "May"], ["Jun", "June"], ["Jul", "July"], ["Aug", "August"],
+      ["Sep", "September"], ["Oct", "October"], ["Nov", "November"], ["Dec", "December"]
+    ];
+
+    const events = [
+      {
+        id: "love-bang", month: "Jan", sortDate: "2026-01-02", date: "Jan 2", time: "22:00-04:00",
+        title: "Love Bang: Baby Dance Machine", venue: "C's Bar", district: "Changning",
+        vibe: ["underground", "bass"], genre: "club, hip-hop, ghettotech, house, techno",
+        confidence: "Medium", status: "past", price: "Free", age: "18+",
+        source: "https://ra.co/events/2334751", sourceLabel: "Resident Advisor",
+        imageTheme: "cyan",
+        description: "Basement dive-bar release party energy with club music, house, techno, ghettotech, and rough-edged local flavor."
+      },
+      {
+        id: "byyb-conceptual", month: "Jan", sortDate: "2026-01-13", date: "Jan 13", time: "16:00-17:00",
+        title: "Byyb Radio Shanghai w/ CONCEPTUAL", venue: "byyb Radio", district: "Huangpu",
+        vibe: ["experimental", "underground"], genre: "techno radio session",
+        confidence: "Medium", status: "past", price: "Free", age: "Not listed",
+        source: "https://ra.co/events/2336303", sourceLabel: "Resident Advisor",
+        imageTheme: "acid",
+        description: "A compact afternoon techno transmission rather than a club night, useful as an early-year scene marker."
+      },
+      {
+        id: "techno-basics", month: "Jan", sortDate: "2026-01-30", date: "Jan 30", time: "22:30-05:00",
+        title: "Techno Basics", venue: "Abyss Shanghai", district: "Huangpu",
+        vibe: ["hard", "underground"], genre: "techno, trance",
+        confidence: "High", status: "past", price: "120 RMB", age: "18+",
+        source: "https://ra.co/events/2355282", sourceLabel: "Resident Advisor",
+        imageTheme: "ember",
+        description: "Ma Haiping, Liquid Mechanics, Shukai, and Okkultative at Abyss. One of the cleanest early-2026 techno entries."
+      },
+      {
+        id: "lorenzo-senni", month: "Jan", sortDate: "2026-01-30", date: "Jan 30", time: "22:00-04:30",
+        title: "Antigen pres. Lorenzo Senni", venue: "Heim Shanghai", district: "Huangpu",
+        vibe: ["experimental", "underground"], genre: "experimental, club, trance-adjacent",
+        confidence: "Medium", status: "past", price: "Not listed", age: "Not listed",
+        source: "https://ra.co/events/2352920", sourceLabel: "Resident Advisor",
+        imageTheme: "rose",
+        description: "Experimental electronic night with Lorenzo Senni, Soft Cou live, Devil's Hole, DJ EBP, and local late-night support."
+      },
+      {
+        id: "void-vacuum", month: "Feb", sortDate: "2026-02-20", date: "Feb 20", time: "Fri 22:00-Sun 04:00",
+        title: "VOID x VACUUM x EXIT", venue: "EXIT", district: "Changning",
+        vibe: ["hard", "underground"], genre: "techno",
+        confidence: "High", status: "past", price: "120 RMB", age: "Not listed",
+        source: "https://ra.co/events/2371792", sourceLabel: "Resident Advisor",
+        imageTheme: "acid",
+        description: "Shanghai techno crews VOID and VACUUM together at EXIT; deep, hypnotic, raw local pressure."
+      },
+      {
+        id: "exxx-plural", month: "Feb", sortDate: "2026-02-28", date: "Feb 28", time: "22:00-05:00",
+        title: "EXXX: Plural Body", venue: "EXIT", district: "Changning",
+        vibe: ["underground", "bass"], genre: "techno, bass",
+        confidence: "High", status: "past", price: "100 RMB", age: "Not listed",
+        source: "https://ra.co/events/2381686", sourceLabel: "Resident Advisor",
+        imageTheme: "cyan",
+        description: "Techno and bass at EXIT with Empress CC!, HeShang, Illsee, and Wax9; flexible, self-defined underground energy."
+      },
+      {
+        id: "motor-city", month: "Mar", sortDate: "2026-03-13", date: "Mar 13", time: "22:00-05:00",
+        title: "Tech-no-logical World: Motor City Machine Funk", venue: "EXIT", district: "Changning",
+        vibe: ["underground", "experimental"], genre: "Detroit techno, electro, machine funk",
+        confidence: "High", status: "past", price: "70-100 RMB", age: "Not listed",
+        source: "https://www.smartshanghai.com/event/techno-logical-world-detroit-techno-2026-03-13", sourceLabel: "SmartShanghai",
+        imageTheme: "gold",
+        description: "Detroit-techno-focused night with Shanghai Ultra, NAXIN, Nik HilP, and DJ Doggy."
+      },
+      {
+        id: "potent-five", month: "Mar", sortDate: "2026-03-20", date: "Mar 20-22", time: "23:59-06:00",
+        title: "POTENT 5-Year Anniversary", venue: "POTENT", district: "Huangpu",
+        vibe: ["underground", "date"], genre: "techno, house",
+        confidence: "High", status: "past", price: "100 RMB", age: "18+",
+        source: "https://ra.co/events/2388890", sourceLabel: "Resident Advisor",
+        imageTheme: "rose",
+        description: "Two-night anniversary with Audrey Danza, Angioma, Boris, Temple Rat, Max Shen, and Stefano Dvt."
+      },
+      {
+        id: "tempio-potent", month: "Mar", sortDate: "2026-03-27", date: "Mar 27", time: "23:00-05:00",
+        title: "TEMPIO x POTENT Shanghai", venue: "POTENT", district: "Huangpu",
+        vibe: ["underground"], genre: "electronic culture, techno-adjacent",
+        confidence: "Medium", status: "past", price: "Not listed", age: "18+",
+        source: "https://ra.co/events/2397186", sourceLabel: "Resident Advisor",
+        imageTheme: "cyan",
+        description: "Tempio's China tour stop with Elisa Bee, Industrial Romantico, Urban Danging Prophets, and Gaoqiao."
+      },
+      {
+        id: "schwartz", month: "Mar", sortDate: "2026-03-28", date: "Mar 28", time: "Late night",
+        title: "Schwartz Reignited", venue: "EXIT", district: "Changning",
+        vibe: ["hard", "underground"], genre: "industrial, dark hypnotic, acid, rave, experimental techno",
+        confidence: "Medium", status: "past", price: "Not listed", age: "Not listed",
+        source: "https://www.smartshanghai.com/event/schwartz-reignited-techno-2026-03-28", sourceLabel: "SmartShanghai",
+        imageTheme: "ember",
+        description: "Pure techno with industrial, acid, dark, and experimental tone in EXIT's basement room."
+      },
+      {
+        id: "noizar-soyo", month: "Apr", sortDate: "2026-04-17", date: "Apr 17", time: "22:00-06:00",
+        title: "House of Visions pres. Noizar & Soyo", venue: "Reactor Shanghai", district: "Changning",
+        vibe: ["underground", "experimental"], genre: "techno-informed club music",
+        confidence: "Medium", status: "past", price: "138 RMB", age: "Not listed",
+        source: "https://ra.co/events/2417152", sourceLabel: "Resident Advisor",
+        imageTheme: "acid",
+        description: "Two-room Reactor night with Noizar and Soyo, built around precision, rhythm, and East Asian underground texture."
+      },
+      {
+        id: "xulalit", month: "Apr", sortDate: "2026-04-24", date: "Apr 24", time: "20:00-02:00",
+        title: "Siam After Dark feat. XULALIT", venue: "The Sukhothai Shanghai", district: "Jing'an",
+        vibe: ["date"], genre: "techno, house",
+        confidence: "High", status: "past", price: "128-168 RMB", age: "18+",
+        source: "https://ra.co/events/2417150", sourceLabel: "Resident Advisor",
+        imageTheme: "gold",
+        description: "Polished hotel anniversary night with Thai artist XULALIT. More sleek date night than warehouse rave."
+      },
+      {
+        id: "lacchesi", month: "Apr", sortDate: "2026-04-25", date: "Apr 25", time: "22:30-05:00",
+        title: "The Rite w. Lacchesi", venue: "Abyss Shanghai", district: "Huangpu",
+        vibe: ["hard", "underground"], genre: "warehouse techno, trance, industrial rave",
+        confidence: "High", status: "past", price: "130 RMB", age: "18+",
+        source: "https://ra.co/events/2422389", sourceLabel: "Resident Advisor",
+        imageTheme: "ember",
+        description: "Maison Close artist Lacchesi at Abyss with fast, high-energy, warehouse-influenced techno."
+      },
+      {
+        id: "cam-girl", month: "Apr", sortDate: "2026-04-25", date: "Apr 25", time: "22:00-05:00",
+        title: "KNOT pres. CAM GIRL", venue: "ILLUM Shanghai", district: "Changning",
+        vibe: ["bass", "experimental"], genre: "trance, club, hyperpop, hard dance",
+        confidence: "Medium", status: "past", price: "10 RMB", age: "18+",
+        source: "https://ra.co/events/2422723", sourceLabel: "Resident Advisor",
+        imageTheme: "rose",
+        description: "KNOT's high-energy club lane: trance, hyperpop, hard dance, baile funk, jersey club, and rave nostalgia."
+      },
+      {
+        id: "rui-ho", month: "Apr", sortDate: "2026-04-30", date: "Apr 30", time: "22:00-04:30",
+        title: "A.T.M pres. RUI HO", venue: "Reactor Shanghai", district: "Changning",
+        vibe: ["bass", "experimental"], genre: "techno, bass",
+        confidence: "High", status: "past", price: "118 RMB", age: "18+",
+        source: "https://ra.co/events/2425673", sourceLabel: "Resident Advisor",
+        imageTheme: "cyan",
+        description: "Forward club music with RUI HO, SAN CHUAN, and Oil Nature at Reactor."
+      },
+      {
+        id: "anyma", month: "May", sortDate: "2026-05-02", date: "May 2", time: "Evening",
+        title: "Anyma presents ÆDEN", venue: "Sunland Boundless Park", district: "Pudong",
+        vibe: ["date"], genre: "melodic techno, audiovisual show",
+        confidence: "High", status: "past", price: "Sold out on official tour page", age: "Check ticketing",
+        source: "https://www.anyma.com/china", sourceLabel: "Anyma official",
+        imageTheme: "gold",
+        description: "Major open-air audiovisual show with Prospa, Ben Bohmer, Kolsch, Kasia, and Stylo support."
+      },
+      {
+        id: "dark-haze", month: "May", sortDate: "2026-05-03", date: "May 3", time: "22:30-05:00",
+        title: "EDK x DARK HAZE: Death Descends", venue: "Abyss Shanghai", district: "Huangpu",
+        vibe: ["hard", "experimental"], genre: "techno, hardcore, black metal crossover",
+        confidence: "High", status: "past", price: "158 RMB", age: "18+",
+        source: "https://ra.co/events/2427816", sourceLabel: "Resident Advisor",
+        imageTheme: "ember",
+        description: "A dark hard-techno and black-metal crossover night at Abyss."
+      },
+      {
+        id: "abibas", month: "May", sortDate: "2026-05-08", date: "May 8", time: "22:30-05:00",
+        title: "ABIBAS CLUB: SLAV DEAD HOUSE", venue: "Abyss Shanghai", district: "Huangpu",
+        vibe: ["hard", "underground"], genre: "techno, hardcore, hardbass, hard trance",
+        confidence: "High", status: "past", price: "120 RMB", age: "18+",
+        source: "https://ra.co/events/2438256", sourceLabel: "Resident Advisor",
+        imageTheme: "rose",
+        description: "Industrial, hardbass, hardcore, electro, jumpstyle, and slavic punk collision at Abyss."
+      },
+      {
+        id: "linear-system", month: "May", sortDate: "2026-05-09", date: "May 9", time: "23:59-06:00",
+        title: "Linear System", venue: "POTENT", district: "Huangpu",
+        vibe: ["hard", "underground"], genre: "techno",
+        confidence: "High", status: "past", price: "100 RMB", age: "18+",
+        source: "https://ra.co/events/2431319", sourceLabel: "Resident Advisor",
+        imageTheme: "acid",
+        description: "Straight POTENT techno booking with Bambi and Linear System."
+      },
+      {
+        id: "system-secret", month: "May", sortDate: "2026-05-16", date: "May 16", time: "22:00-05:00",
+        title: "System Secret Party", venue: "SmSh Territory", district: "Central Shanghai",
+        vibe: ["warehouse", "underground"], genre: "techno, bass, club music",
+        confidence: "Medium", status: "past", price: "198 RMB via System WeChat", age: "Check promoter",
+        source: "https://www.smartshanghai.com/event/system-secret-party-techno-bass-club-music-2026-05-16", sourceLabel: "SmartShanghai",
+        imageTheme: "cyan",
+        description: "Limited-capacity secret-location party described as industrial, underground, and high-tech."
+      },
+      {
+        id: "cocarde", month: "May", sortDate: "2026-05-21", date: "May 21", time: "22:00-03:00",
+        title: "Cocarde Revival Night", venue: "EXIT", district: "Changning",
+        vibe: ["date", "underground"], genre: "techno, house, tech house",
+        confidence: "High", status: "past", price: "60 RMB", age: "Not listed",
+        source: "https://ra.co/events/2445498", sourceLabel: "Resident Advisor",
+        imageTheme: "gold",
+        description: "French electronic crew reunion at EXIT with house, tech house, and techno."
+      },
+      {
+        id: "up-2-u", month: "May", sortDate: "2026-05-23", date: "May 23", time: "14:00-06:00",
+        title: "Heim x ALTER.: Up 2 U Warehouse Rave", venue: "EKA Tianwu", district: "Pudong",
+        vibe: ["warehouse", "date", "underground"], genre: "house, techno, bass",
+        confidence: "High", status: "past", price: "188 presale / 258 door", age: "Check promoter",
+        source: "https://www.smartshanghai.com/event/heim-x-alter-up-2-u-warehouse-party-techno-house-2026-05-23", sourceLabel: "SmartShanghai",
+        imageTheme: "acid",
+        description: "All-day warehouse-style mini-festival across rooftop and indoor stages with food, drinks, and about 20 DJs."
+      },
+      {
+        id: "captain25", month: "May", sortDate: "2026-05-23", date: "May 23", time: "22:00-05:00",
+        title: "MET Underground Festival with CAPTAIN25", venue: "EXIT", district: "Changning",
+        vibe: ["underground", "date"], genre: "techno, house, minimal, nu-disco",
+        confidence: "High", status: "past", price: "148 RMB", age: "Not listed",
+        source: "https://ra.co/events/2445501", sourceLabel: "Resident Advisor",
+        imageTheme: "rose",
+        description: "Tokyo underground selector CAPTAIN25 brings global dancefloor fluency to EXIT."
+      },
+      {
+        id: "hotl4b", month: "May", sortDate: "2026-05-29", date: "May 29", time: "22:00-04:30",
+        title: "HOTL4B Reloaded: 2-Hall Rave Night", venue: "Reactor Shanghai", district: "Changning",
+        vibe: ["bass", "warehouse", "underground"], genre: "techno, bass",
+        confidence: "High", status: "past", price: "158 RMB", age: "18+",
+        source: "https://ra.co/events/2447943", sourceLabel: "Resident Advisor",
+        imageTheme: "ember",
+        description: "Two-hall Reactor rave with HOTL4B and onefortyasia rooms."
+      },
+      {
+        id: "body-loop", month: "May", sortDate: "2026-05-29", date: "May 29", time: "22:00-05:00",
+        title: "BODY LOOP: From Rhythm to Machines", venue: "EXIT", district: "Changning",
+        vibe: ["underground", "experimental"], genre: "techno, funk/soul lineage",
+        confidence: "High", status: "past", price: "118 RMB", age: "Not listed",
+        source: "https://ra.co/events/2449213", sourceLabel: "Resident Advisor",
+        imageTheme: "gold",
+        description: "A dancefloor history session moving from funk and industrial into house and techno."
+      },
+      {
+        id: "tomo", month: "May", sortDate: "2026-05-30", date: "May 30", time: "22:00-02:00+",
+        title: "egregore.ttte presents TOMO", venue: "Wigwam", district: "Changning",
+        vibe: ["underground", "experimental"], genre: "ambient, deep techno",
+        confidence: "High", status: "past", price: "Free entry", age: "Not listed",
+        source: "https://ra.co/events/2455848", sourceLabel: "Resident Advisor",
+        imageTheme: "cyan",
+        description: "Free Wigwam night leaning deep, ambient, and techno with TOMO, Chingyi, and Rainsoft."
+      },
+      {
+        id: "nightwave", month: "Jun", sortDate: "2026-06-05", date: "Jun 5", time: "21:00-02:00",
+        title: "NIGHTWAVE feat. Juliano Allgayer", venue: "The Shanghai Edition", district: "Huangpu",
+        vibe: ["date"], genre: "techno, house",
+        confidence: "High", status: "past", price: "108-158 RMB", age: "18+",
+        source: "https://ra.co/events/2457307", sourceLabel: "Resident Advisor",
+        imageTheme: "gold",
+        description: "Sleek hotel-club night from Space Panda. Good for polished pre-midnight energy."
+      },
+      {
+        id: "janein", month: "Jun", sortDate: "2026-06-05", date: "Jun 5", time: "Late night",
+        title: "JANEIN (DE)", venue: "POTENT", district: "Huangpu",
+        vibe: ["hard", "underground"], genre: "techno",
+        confidence: "Medium", status: "past", price: "Check source", age: "Check venue",
+        source: "https://ra.co/events/cn/shanghai?startDate=2026-06-05", sourceLabel: "RA Shanghai listings",
+        imageTheme: "acid",
+        description: "RA guide/listing lead for JANEIN at POTENT with Stefano Dvt and Peyotl noted in search listings."
+      },
+      {
+        id: "tham", month: "Jun", sortDate: "2026-06-05", date: "Jun 5", time: "Late night",
+        title: "On The Cutting Edge w. Tham", venue: "Abyss Shanghai", district: "Huangpu",
+        vibe: ["hard", "underground"], genre: "techno",
+        confidence: "Medium", status: "past", price: "Check venue", age: "Check venue",
+        source: "https://ra.co/dj/tham", sourceLabel: "RA artist/listing lead",
+        imageTheme: "ember",
+        description: "Harder-edge Abyss booking surfaced by RA guide and Tham artist listings."
+      },
+      {
+        id: "techno-worlds", month: "Jun", sortDate: "2026-06-06", date: "Jun 6", time: "22:00-06:00",
+        title: "Techno Worlds x VACUUM: Final Sampling", venue: "EXIT", district: "Changning",
+        vibe: ["hard", "underground", "experimental"], genre: "techno",
+        confidence: "High", status: "past", price: "80-120 RMB", age: "Not listed",
+        source: "https://ra.co/events/2448375", sourceLabel: "Resident Advisor",
+        imageTheme: "acid",
+        description: "A high-fit techno head pick: ECILO, Ma Haiping, NAXIN, RO, IXWELE, and VJ Ada at EXIT."
+      },
+      {
+        id: "caroline-roxy", month: "Jun", sortDate: "2026-06-06", date: "Jun 6", time: "22:30-05:00",
+        title: "FaQ pres. Caroline Roxy", venue: "Abyss Shanghai", district: "Huangpu",
+        vibe: ["hard", "underground"], genre: "techno, hardcore",
+        confidence: "High", status: "past", price: "130 RMB", age: "18+",
+        source: "https://ra.co/events/2458079", sourceLabel: "Resident Advisor",
+        imageTheme: "rose",
+        description: "Hard techno and hardcore at Abyss with Caroline Roxy, LOD, Fischmonger, SHU, and XDISTR."
+      },
+      {
+        id: "sunkissed", month: "Jun", sortDate: "2026-06-06", date: "Jun 6", time: "15:00-02:00",
+        title: "SUNKISSED Rooftop feat. Tom Price", venue: "Fosun Art Foundation", district: "Huangpu",
+        vibe: ["date"], genre: "techno, house",
+        confidence: "High", status: "past", price: "128-188 RMB", age: "18+",
+        source: "https://ra.co/events/2457326", sourceLabel: "Resident Advisor",
+        imageTheme: "gold",
+        description: "Rooftop Space Panda event on the Bund; strongest for easy date-night scenery."
+      },
+      {
+        id: "milo-cosmjn", month: "Jun", sortDate: "2026-06-12", date: "Jun 12", time: "23:59-06:00",
+        title: "Milo Raad + Cosmjn", venue: "POTENT", district: "Huangpu",
+        vibe: ["underground", "date"], genre: "techno, house",
+        confidence: "High", status: "upcoming", price: "100 RMB", age: "18+",
+        source: "https://ra.co/events/2461478", sourceLabel: "Resident Advisor",
+        imageTheme: "cyan",
+        description: "Proper late-night POTENT booking with Cosmjn, Milo Raad, and GaoQiao."
+      },
+      {
+        id: "kollin", month: "Jun", sortDate: "2026-06-12", date: "Jun 12", time: "22:00-05:00",
+        title: "KOLLIN", venue: "Dirty House", district: "Huangpu",
+        vibe: ["bass", "underground"], genre: "techno, bass, UKG, dubstep, baile funk",
+        confidence: "High", status: "upcoming", price: "WeChat mini-program", age: "18+",
+        source: "https://ra.co/events/2460995", sourceLabel: "Resident Advisor",
+        imageTheme: "rose",
+        description: "Dirty House / INS entry with techno and bass tags; more chaotic club energy than purist techno."
+      },
+      {
+        id: "santa-k", month: "Jun", sortDate: "2026-06-13", date: "Jun 13", time: "22:30-06:00",
+        title: "Santa K x TURBO", venue: "Abyss Shanghai", district: "Huangpu",
+        vibe: ["hard", "underground"], genre: "hard techno, new trance",
+        confidence: "High", status: "upcoming", price: "120 RMB", age: "Check source",
+        source: "https://ra.co/events/2458037", sourceLabel: "Resident Advisor",
+        imageTheme: "ember",
+        description: "Best current hard/fast pick: Santa K, DISCIPLINE, LaGlory, PASHRAWBOI, and NAKIN at Abyss."
+      },
+      {
+        id: "synth-crush", month: "Jun", sortDate: "2026-06-13", date: "Jun 13", time: "22:00-04:30",
+        title: "Synth Crush", venue: "EXIT", district: "Changning",
+        vibe: ["experimental", "underground"], genre: "electro, EBM, industrial, techno, IDM",
+        confidence: "High", status: "upcoming", price: "118 RMB", age: "Not listed",
+        source: "https://ra.co/events/2458269", sourceLabel: "Resident Advisor",
+        imageTheme: "acid",
+        description: "Machine-music night with Altieri3000 live, Velvet Robot live, Hello Shitty, Ruima, and Illsee."
+      },
+      {
+        id: "horizon", month: "Jun", sortDate: "2026-06-13", date: "Jun 13", time: "15:00-00:00",
+        title: "Horizon Rooftop feat. Erik Hagleton", venue: "Pop Bar", district: "The Bund",
+        vibe: ["date"], genre: "techno, house",
+        confidence: "High", status: "upcoming", price: "138-178 RMB", age: "18+",
+        source: "https://ra.co/events/2459595", sourceLabel: "Resident Advisor",
+        imageTheme: "gold",
+        description: "Outdoor Bund rooftop party. This is the smoothest date-friendly pick before a harder afterparty."
+      },
+      {
+        id: "mrd", month: "Jun", sortDate: "2026-06-19", date: "Jun 19", time: "Check venue",
+        title: "MRD", venue: "Dirty House", district: "Huangpu",
+        vibe: ["bass", "underground"], genre: "eurodance, trance, techno",
+        confidence: "Watch", status: "watch", price: "Check venue", age: "Check venue",
+        source: "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026", sourceLabel: "SmartShanghai",
+        imageTheme: "cyan",
+        description: "SmartShanghai lead: fast but not hard eurodance, trance, and techno at Dirty House. Verify before planning."
+      },
+      {
+        id: "jasmin-knopha", month: "Jun", sortDate: "2026-06-20", date: "Jun 20", time: "Check venue",
+        title: "Jasmin + Knopha", venue: "Heim Sauna", district: "Huangpu",
+        vibe: ["bass", "underground"], genre: "techno-dubstep hybrid, house, club music",
+        confidence: "Watch", status: "watch", price: "Check Heim", age: "Check venue",
+        source: "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026", sourceLabel: "SmartShanghai",
+        imageTheme: "rose",
+        description: "Single-source lead for a textured Heim night joining Dutch producer/DJ Jasmin with Knopha."
+      },
+      {
+        id: "anika-kunst", month: "Jun", sortDate: "2026-06-27", date: "Jun 27", time: "Check venue",
+        title: "Anika Kunst", venue: "POTENT", district: "Huangpu",
+        vibe: ["underground", "date"], genre: "techno, house",
+        confidence: "Watch", status: "watch", price: "Check POTENT", age: "Check venue",
+        source: "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026", sourceLabel: "SmartShanghai",
+        imageTheme: "gold",
+        description: "SmartShanghai lead: Spanish techno/house DJ Anika Kunst with 10000 and DJ EBP."
+      },
+      {
+        id: "truth-lies", month: "Jun", sortDate: "2026-06-27", date: "Jun 27", time: "Check venue",
+        title: "KNOT: Truth and Lies Vol. 4", venue: "ILLUM", district: "Changning",
+        vibe: ["bass", "experimental"], genre: "hyperpop, trance, techno",
+        confidence: "Watch", status: "watch", price: "Check ILLUM", age: "Check venue",
+        source: "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026", sourceLabel: "SmartShanghai",
+        imageTheme: "rose",
+        description: "SmartShanghai lead with QQBBG and Liu Qoo; high-color KNOT club-rave direction."
+      },
+      {
+        id: "jaal", month: "Jun", sortDate: "2026-06-27", date: "Jun 27", time: "Check venue",
+        title: "JAAL The Machine live acid techno", venue: "Fenrir", district: "Changning",
+        vibe: ["experimental", "hard"], genre: "acid techno, metal crossover",
+        confidence: "Watch", status: "watch", price: "Check venue", age: "Check venue",
+        source: "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026", sourceLabel: "SmartShanghai",
+        imageTheme: "ember",
+        description: "Single-source lead for live acid techno paired with metal bands at Fenrir."
+      }
+    ];
+
+    const lineupProfiles = {
+      "love-bang": [
+        { name: "Heatwolves", note: "Love Bang founder and long-running Shanghai selector; expect loose club, hip-hop, house, and rave edits." },
+        { name: "D A N D I", note: "Local party support on this bill; useful for the night-out energy rather than a purist techno set." },
+        { name: "MMQ", note: "Shanghai club support listed for the Baby Dance Machine release night." }
+      ],
+      "byyb-conceptual": [
+        { name: "CONCEPTUAL", note: "Radio-session artist listed by byyb; framed here as a compact techno signal rather than a full club night." }
+      ],
+      "techno-basics": [
+        { name: "Ma Haiping", note: "Shanghai techno veteran associated with machine-driven, hardware-leaning Chinese electronic music." },
+        { name: "Liquid Mechanics", note: "Abyss lineup support for a trance-and-techno room; likely functional late-night pressure." },
+        { name: "Shukai", note: "Local selector listed on the RA bill; useful for the Shanghai underground context." }
+      ],
+      "lorenzo-senni": [
+        { name: "Lorenzo Senni", note: "Italian experimental producer known for deconstructing trance euphoria into sharp, synthetic patterns." },
+        { name: "Soft Cou", note: "Live support on the Heim bill; positioned in the experimental side of the night." },
+        { name: "DJ EBP", note: "Shanghai selector appearing across several underground club bills in 2026." }
+      ],
+      "void-vacuum": [
+        { name: "Ma Haiping", note: "Key Shanghai techno figure; a good sign when you want local credibility over generic EDM." },
+        { name: "Shanghai Ultra", note: "Local project/DJ name seen on Detroit and underground-techno focused Shanghai bills." },
+        { name: "NAXIN", note: "Shanghai underground selector repeatedly appearing on techno-focused EXIT programming." }
+      ],
+      "exxx-plural": [
+        { name: "Empress CC!", note: "Club and bass-facing DJ on the EXIT lineup, good for a less rigid techno night." },
+        { name: "HeShang", note: "Shanghai selector frequently listed around underground club and warehouse-style bills." },
+        { name: "Illsee", note: "Local DJ name seen on multiple EXIT and machine-music lineups." }
+      ],
+      "motor-city": [
+        { name: "Shanghai Ultra", note: "Listed for a Detroit-techno tribute night; expect machine funk rather than festival EDM." },
+        { name: "NAXIN", note: "Recurring EXIT techno selector with a taste for deeper underground rooms." },
+        { name: "Nik HilP", note: "Shanghai selector linked to techno, electro, and dancefloor-history programming." }
+      ],
+      "potent-five": [
+        { name: "Boris", note: "Long-running New York techno DJ/producer, best known for big-room drive and marathon club sets." },
+        { name: "Audrey Danza", note: "Swiss selector associated with trippy, high-detail techno, house, and psychedelic club records." },
+        { name: "Angioma", note: "Berlin-connected techno artist; a strong signal for a serious POTENT anniversary lineup." },
+        { name: "Temple Rat", note: "China-based electronic artist who brings Chinese instrumental texture into club contexts." }
+      ],
+      "tempio-potent": [
+        { name: "Elisa Bee", note: "Italian DJ/producer linked with techno, breaks, and high-energy club hybrids." },
+        { name: "Industrial Romantico", note: "Tempio-linked artist name; expect darker electronic culture rather than a simple house night." },
+        { name: "Gaoqiao", note: "Shanghai/POTENT support listed across several 2026 club bills." }
+      ],
+      "schwartz": [
+        { name: "Schwartz crew", note: "SmartShanghai described the night around industrial, dark hypnotic, acid, rave, and experimental techno." }
+      ],
+      "noizar-soyo": [
+        { name: "Noizar", note: "Ukrainian selector connected with leftfield house, techno, and minimal club records." },
+        { name: "Soyo", note: "Korea-linked selector on the Reactor lineup; framed around East Asian underground texture." },
+        { name: "House of Visions", note: "Promoter context for a two-room Reactor night rather than a single-headliner rave." }
+      ],
+      "xulalit": [
+        { name: "XULALIT", note: "Thai artist booked for a polished hotel-club night; better for sleek date energy than warehouse intensity." },
+        { name: "MUUN", note: "Space Panda-connected support on the Sukhothai anniversary bill." }
+      ],
+      "lacchesi": [
+        { name: "Lacchesi", note: "French DJ/producer associated with fast, warehouse-influenced techno and trance pressure." },
+        { name: "Abyss residents", note: "The support context points toward a harder late-night room at Abyss." }
+      ],
+      "cam-girl": [
+        { name: "CAM GIRL", note: "Club-rave artist listed by KNOT; expect hyperpop, hard dance, trance, and internet-era club energy." },
+        { name: "KNOT", note: "Shanghai party/promoter context known here for colorful, high-BPM, genre-colliding bookings." }
+      ],
+      "rui-ho": [
+        { name: "RUI HO", note: "Berlin/China-connected producer and DJ known for bright, hybrid club music across bass, techno, and pop edges." },
+        { name: "SAN CHUAN", note: "Local support on the A.T.M/Reactor bill." },
+        { name: "Oil Nature", note: "Support listed for the Reactor event; check source before treating as a headliner." }
+      ],
+      "anyma": [
+        { name: "Anyma", note: "Melodic-techno audiovisual project from Matteo Milleri, built around cinematic visuals and big open-air production." },
+        { name: "Ben Bohmer", note: "German melodic house/techno artist; softer and more romantic than hard rave programming." },
+        { name: "Kolsch", note: "Danish producer/DJ known for emotional, festival-scale melodic techno." },
+        { name: "Prospa", note: "UK duo bringing rave, house, and euphoric club energy to a larger-stage bill." }
+      ],
+      "dark-haze": [
+        { name: "EDK", note: "Promoter/artist context for the Abyss crossover night." },
+        { name: "DARK HAZE", note: "The bill is framed around hard techno, hardcore, and black-metal crossover intensity." }
+      ],
+      "abibas": [
+        { name: "ABIBAS CLUB", note: "Party concept leaning hardbass, hardcore, electro, and slavic-punk rave aesthetics." },
+        { name: "SLAV DEAD HOUSE", note: "Theme note rather than a single DJ: go expecting abrasive, unserious, high-speed rave energy." }
+      ],
+      "linear-system": [
+        { name: "Linear System", note: "Techno artist booked at POTENT; good fit for direct, focused club pressure." },
+        { name: "Bambi", note: "POTENT support listed on the RA event." }
+      ],
+      "system-secret": [
+        { name: "System selectors", note: "Secret-location party context; SmartShanghai framed the sound as techno, bass, and club music." },
+        { name: "Huizit / Cocoonics / Queenie / Situ / Xiwi", note: "Listed support names in the System orbit; verify set times through WeChat before going." }
+      ],
+      "cocarde": [
+        { name: "Cocarde crew", note: "French electronic reunion night built around house, tech house, and techno rather than a single marquee headliner." }
+      ],
+      "up-2-u": [
+        { name: "Heim x ALTER.", note: "Promoter collaboration behind the warehouse-style mini-festival at EKA Tianwu." },
+        { name: "Call A Taxi", note: "Shanghai party/DJ name on the multi-stage bill; likely accessible dancefloor energy." },
+        { name: "DJ EBP", note: "Recurring Shanghai underground selector; useful sign for local scene credibility." },
+        { name: "HeShang", note: "Local selector appearing across underground, EXIT, and warehouse-style bills." }
+      ],
+      "captain25": [
+        { name: "CAPTAIN25", note: "Tokyo underground selector; Smart RA framing points toward techno, house, minimal, and nu-disco fluency." },
+        { name: "MET Underground Festival", note: "Festival context at EXIT, better for curious dancing than pure hard-techno punishment." }
+      ],
+      "hotl4b": [
+        { name: "HOTL4B", note: "Two-hall Reactor rave concept with techno and bass rooms." },
+        { name: "LOMOROOM / echocatcher / EnRed", note: "Listed room support; check event page for exact set order." },
+        { name: "onefortyasia room", note: "Bass-focused room context, useful if she likes club weight beyond four-four techno." }
+      ],
+      "body-loop": [
+        { name: "DADA", note: "Listed for a dancefloor-history event moving from funk and industrial toward house and techno." },
+        { name: "Thee Baron", note: "Shanghai selector on the BODY LOOP bill." },
+        { name: "Illsee / Nik HilP / Chuan", note: "Local support connecting the night to EXIT's deeper electronic programming." }
+      ],
+      "tomo": [
+        { name: "TOMO", note: "Artist booked for a deep, ambient, and techno-leaning Wigwam night." },
+        { name: "Chingyi / Rainsoft", note: "Support names for a quieter free-entry underground session." }
+      ],
+      "nightwave": [
+        { name: "Juliano Allgayer", note: "Booked for a Space Panda hotel-club night; expect polished house/techno rather than raw warehouse sound." },
+        { name: "Space Panda", note: "Promoter context for the NIGHTWAVE and rooftop-style Shanghai events." }
+      ],
+      "janein": [
+        { name: "JANEIN", note: "German techno DJ/producer associated with direct, fast club pressure." },
+        { name: "Stefano Dvt", note: "POTENT-linked support name appearing across Shanghai techno listings." },
+        { name: "Peyotl", note: "Support listed in RA search context; verify on the venue page before planning around the set." }
+      ],
+      "tham": [
+        { name: "THAM", note: "Berlin hard-techno artist associated with fast, muscular, contemporary warehouse sound." },
+        { name: "Abyss support", note: "Abyss booking context points to a high-intensity late-night room." }
+      ],
+      "techno-worlds": [
+        { name: "ECILO", note: "Indonesian techno artist with a hypnotic, functional, late-night sound." },
+        { name: "Ma Haiping", note: "Shanghai techno veteran and one of the strongest local credibility markers on the bill." },
+        { name: "NAXIN / RO / IXWELE", note: "Local and regional support completing the EXIT/VACUUM techno program." }
+      ],
+      "caroline-roxy": [
+        { name: "Caroline Roxy", note: "Hard-techno and high-BPM artist booked for Abyss; a strong fit for a heavy rave night." },
+        { name: "LOD / Fischmonger / SHU / XDISTR", note: "Support lineup for a techno and hardcore room; check source for set times." }
+      ],
+      "sunkissed": [
+        { name: "Tom Price", note: "Headliner for a Space Panda rooftop event; likely more open-air house/techno than basement rave." },
+        { name: "Space Panda support", note: "The event is designed around sunset-to-night Bund energy." }
+      ],
+      "milo-cosmjn": [
+        { name: "Milo Raad", note: "Techno/house selector on a proper 23:59-06:00 POTENT booking." },
+        { name: "Cosmjn", note: "Romanian minimal/house-adjacent DJ; good for a deeper, rolling late-night groove." },
+        { name: "GaoQiao", note: "Shanghai/POTENT support listed on multiple local club bills." }
+      ],
+      "kollin": [
+        { name: "KOLLIN", note: "Dirty House headliner for a bass and techno-tagged INS night; expect club impact rather than purist techno." }
+      ],
+      "santa-k": [
+        { name: "Santa K", note: "Hard techno and new-trance focused artist; the strongest current pick for fast rave pressure." },
+        { name: "PASHRAWBOI", note: "Support on the TURBO bill, likely in the same high-speed club/rave lane." },
+        { name: "NAKIN / DISCIPLINE / LaGlory", note: "Local and support names rounding out the Abyss hard-techno night." }
+      ],
+      "synth-crush": [
+        { name: "Altieri3000", note: "Live act on the EXIT bill; the event points toward electro, EBM, industrial, techno, and IDM." },
+        { name: "Velvet Robot", note: "Live machine-music support; good sign for a darker, less commercial night." },
+        { name: "Hello Shitty / Ruima / Illsee", note: "Local selectors for the Synth Crush underground program." }
+      ],
+      "horizon": [
+        { name: "Erik Hagleton", note: "French house/techno DJ booked for a scenic Bund rooftop event." },
+        { name: "Space Panda support", note: "The setup is built for an easy date-night opener rather than all-night basement intensity." }
+      ],
+      "mrd": [
+        { name: "MRD", note: "Norwegian artist associated with eurodance, trance, and techno; verify the Dirty House listing before planning." }
+      ],
+      "jasmin-knopha": [
+        { name: "Jasmin", note: "Dutch producer/DJ lead listed by SmartShanghai; framed around a techno-dubstep hybrid." },
+        { name: "Knopha", note: "China-based electronic artist/DJ known for leftfield club, house, and textured electronic records." }
+      ],
+      "anika-kunst": [
+        { name: "Anika Kunst", note: "Spanish techno/house DJ; a likely tasteful POTENT pick if the single-source listing is confirmed." },
+        { name: "10000 / DJ EBP", note: "Support listed by SmartShanghai; confirm through POTENT before buying." }
+      ],
+      "truth-lies": [
+        { name: "QQBBG", note: "KNOT-listed artist for a hyperpop, trance, and techno-leaning ILLUM night." },
+        { name: "Liu Qoo", note: "Artist on the KNOT bill; likely part of the colorful high-energy club-rave lane." }
+      ],
+      "jaal": [
+        { name: "JAAL The Machine", note: "Live acid-techno lead listed by SmartShanghai, paired with heavier crossover acts." }
+      ]
+    };
+
+    const watchMonths = {
+      Jul: {
+        title: "July monitor",
+        text: "System's Saturday pop-up was reported as running from June 13 until early August, but July lineups were not reliably public in this research pass.",
+        tags: ["System", "Abyss", "POTENT", "EXIT", "RA weekly"]
+      },
+      Aug: {
+        title: "August monitor",
+        text: "Expect short-notice club programming. Check C-Park, TX Huaihai, INS, Heim, and promoter WeChat accounts closer to the month.",
+        tags: ["C-Park", "TX Huaihai", "Heim", "Dirty House", "SmartShanghai"]
+      },
+      Sep: {
+        title: "September monitor",
+        text: "Autumn festival and off-venue announcements usually need fresh checks. No credible September techno/rave date was confirmed yet.",
+        tags: ["off-venue", "warehouse", "festival watch", "RA"]
+      },
+      Oct: {
+        title: "October monitor",
+        text: "Golden Week can produce special parties, but reliable 2026 Shanghai techno listings were not available yet.",
+        tags: ["Golden Week", "Abyss", "Reactor", "ILLUM", "System"]
+      },
+      Nov: {
+        title: "November monitor",
+        text: "Late autumn touring acts should appear much closer to the date. Keep this month open for international bookings.",
+        tags: ["touring acts", "POTENT", "EXIT", "Wigwam", "Heim"]
+      },
+      Dec: {
+        title: "December monitor",
+        text: "NYE lineups are likely the big late-year target, but December 2026 listings are not public enough to recommend yet.",
+        tags: ["NYE", "Abyss", "POTENT", "The Bund", "RA"]
+      }
+    };
+
+    const routes = {
+      easy: {
+        title: "Skyline first, bass later",
+        body: "Start at Horizon Rooftop or another Bund rooftop around sunset, then decide after midnight whether to move to POTENT, EXIT, or Abyss. Lowest friction for a girlfriend date because it begins scenic and only gets heavier if the mood is right.",
+        picks: ["horizon", "milo-cosmjn", "synth-crush"]
+      },
+      deep: {
+        title: "Underground without overload",
+        body: "Aim for Synth Crush at EXIT or a Heim/POTENT night. This route keeps the music interesting without going straight to punishing hard techno.",
+        picks: ["synth-crush", "milo-cosmjn", "anika-kunst"]
+      },
+      hard: {
+        title: "Full rave pressure",
+        body: "Go to Abyss after 23:30. Santa K x TURBO is the clearest current hard/fast option, with Techno Worlds and Caroline Roxy as the strongest recent references.",
+        picks: ["santa-k", "caroline-roxy", "techno-worlds"]
+      }
+    };
+
+    const calendarEl = document.getElementById("calendar");
+    const railEl = document.getElementById("monthRail");
+    const searchInput = document.getElementById("searchInput");
+    const statusFilter = document.getElementById("statusFilter");
+    const vibeFilter = document.getElementById("vibeFilter");
+    const modal = document.getElementById("eventModal");
+    const routeCard = document.getElementById("routeCard");
+    const bestPicks = document.getElementById("bestPicks");
+
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, char => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#039;"
+      }[char]));
+    }
+
+    function lineupFor(event) {
+      return lineupProfiles[event.id] || [
+        { name: event.title, note: "Lineup detail was limited in public sources; use the event source link for confirmation before planning around a specific DJ." }
+      ];
+    }
+
+    function lineupText(event) {
+      return lineupFor(event).map(item => `${item.name} ${item.note}`).join(" ");
+    }
+
+    function eventDay(event) {
+      return Number(event.sortDate.slice(8, 10));
+    }
+
+    function monthIndex(code) {
+      return months.findIndex(([monthCode]) => monthCode === code);
+    }
+
+    function renderMonthGrid(code, monthEvents) {
+      const index = monthIndex(code);
+      const firstDay = new Date(2026, index, 1);
+      const startOffset = (firstDay.getDay() + 6) % 7;
+      const daysInMonth = new Date(2026, index + 1, 0).getDate();
+      const weekdayLabels = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+      const cells = weekdayLabels.map(day => `<div class="calendar-day-name">${day}</div>`);
+
+      for (let i = 0; i < startOffset; i += 1) {
+        cells.push(`<div class="calendar-day empty" aria-hidden="true"></div>`);
+      }
+
+      for (let day = 1; day <= daysInMonth; day += 1) {
+        const dayEvents = monthEvents.filter(event => eventDay(event) === day);
+        cells.push(`
+          <div class="calendar-day ${dayEvents.length ? "has-event" : ""}">
+            <div class="calendar-date"><span>${day}</span><span>${dayEvents.length ? dayEvents.length : ""}</span></div>
+            <div class="calendar-events">
+              ${dayEvents.map(event => `
+                <button class="calendar-event ${event.status === "watch" ? "watch" : ""}" type="button" data-id="${event.id}" title="${escapeHtml(event.title)}">
+                  ${escapeHtml(event.title)}
+                </button>
+              `).join("")}
+            </div>
+          </div>
+        `);
+      }
+
+      return `<div class="calendar-grid" aria-label="${code} 2026 clickable event calendar">${cells.join("")}</div>`;
+    }
+
+    function posterSvg(event) {
+      const palettes = {
+        acid: ["#c6ff3b", "#080806", "#41d7ff", "#f2f0e8"],
+        ember: ["#ff6a2a", "#0d0c09", "#c6ff3b", "#f2f0e8"],
+        cyan: ["#41d7ff", "#090a0a", "#ff4f8b", "#f2f0e8"],
+        rose: ["#ff4f8b", "#0c090b", "#ffd166", "#f2f0e8"],
+        gold: ["#ffd166", "#0f0d08", "#41d7ff", "#080806"]
+      };
+      const p = palettes[event.imageTheme] || palettes.acid;
+      const safeTitle = escapeHtml(event.title).slice(0, 62);
+      const safeVenue = escapeHtml(event.venue).slice(0, 38);
+      const svg = `
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760">
+          <defs>
+            <filter id="noise">
+              <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
+              <feColorMatrix type="saturate" values="0"/>
+              <feComponentTransfer><feFuncA type="table" tableValues="0 .16"/></feComponentTransfer>
+            </filter>
+            <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+              <path d="M48 0H0v48" fill="none" stroke="${p[3]}" stroke-opacity=".12" stroke-width="1"/>
+            </pattern>
+          </defs>
+          <rect width="1200" height="760" fill="${p[1]}"/>
+          <rect width="1200" height="760" fill="url(#grid)"/>
+          <g opacity=".9">
+            <path d="M-40 570 L560 100 L1260 248 L660 720 Z" fill="${p[0]}" fill-opacity=".86"/>
+            <path d="M-70 228 L460 42 L1270 690 L820 718 Z" fill="${p[2]}" fill-opacity=".48"/>
+            <path d="M60 720 L1110 70" stroke="${p[3]}" stroke-opacity=".58" stroke-width="10"/>
+            <path d="M126 76 H1074 V684 H126 Z" fill="none" stroke="${p[3]}" stroke-opacity=".72" stroke-width="3"/>
+          </g>
+          <g transform="translate(88 92)">
+            <text x="0" y="0" fill="${p[3]}" font-size="28" font-family="Segoe UI, sans-serif" font-weight="800">SHANGHAI / ${escapeHtml(event.date)} / ${escapeHtml(event.genre.split(",")[0].toUpperCase())}</text>
+            <text x="0" y="118" fill="${p[3]}" font-size="66" font-family="Georgia, serif" font-weight="700">${safeTitle}</text>
+            <text x="0" y="172" fill="${p[3]}" font-size="32" font-family="Segoe UI, sans-serif" font-weight="700">${safeVenue}</text>
+          </g>
+          <g transform="translate(92 594)" fill="${p[1]}">
+            <rect x="0" y="0" width="426" height="62" fill="${p[3]}"/>
+            <text x="20" y="41" font-size="30" font-family="Segoe UI, sans-serif" font-weight="900">CONFIDENCE: ${escapeHtml(event.confidence.toUpperCase())}</text>
+          </g>
+          <g transform="translate(860 552)" stroke="${p[3]}" stroke-width="8" opacity=".78">
+            <path d="M0 0 v110 M24 0 v110 M48 0 v110 M92 0 v110 M132 0 v110 M164 0 v110 M226 0 v110"/>
+          </g>
+          <rect width="1200" height="760" filter="url(#noise)"/>
+        </svg>`;
+      return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+    }
+
+    function eventMatches(event) {
+      const query = searchInput.value.trim().toLowerCase();
+      const status = statusFilter.value;
+      const vibe = vibeFilter.value;
+      const haystack = [event.title, event.venue, event.district, event.genre, event.description, event.sourceLabel, lineupText(event)].join(" ").toLowerCase();
+      if (status !== "all" && event.status !== status) return false;
+      if (vibe !== "all" && !event.vibe.includes(vibe)) return false;
+      if (query && !haystack.includes(query)) return false;
+      return true;
+    }
+
+    function confidenceClass(event) {
+      if (event.confidence === "High") return "confidence-high";
+      if (event.confidence === "Medium") return "confidence-medium";
+      return "confidence-watch";
+    }
+
+    function renderRail() {
+      railEl.innerHTML = months.map(([code]) => `<button class="month-button" data-month="${code}">${code}</button>`).join("");
+      railEl.querySelectorAll("button").forEach(button => {
+        button.addEventListener("click", () => {
+          document.getElementById(`month-${button.dataset.month}`).scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      });
+    }
+
+    function renderCalendar() {
+      calendarEl.innerHTML = months.map(([code, name]) => {
+        const monthEvents = events.filter(event => event.month === code).sort((a, b) => a.sortDate.localeCompare(b.sortDate));
+        const visibleEvents = monthEvents.filter(eventMatches);
+        const watch = watchMonths[code];
+        const showWatch = watch && (statusFilter.value === "all" || statusFilter.value === "watch") && (vibeFilter.value === "all");
+        return `
+          <section class="month-section" id="month-${code}">
+            <div class="month-header">
+              <div class="month-code">${code}</div>
+              <div>
+                <h2>${name}</h2>
+                <p>${monthCopy(code, monthEvents.length, watch)}</p>
+              </div>
+              <div class="count-badge">${visibleEvents.length}${showWatch ? " + watchlist" : ""}</div>
+            </div>
+            ${renderMonthGrid(code, visibleEvents)}
+            <div class="cards">
+              ${visibleEvents.map(renderCard).join("")}
+              ${showWatch ? renderWatchPanel(watch) : ""}
+            </div>
+          </section>
+        `;
+      }).join("");
+      calendarEl.querySelectorAll(".event-card").forEach(card => {
+        card.addEventListener("click", () => openModal(events.find(event => event.id === card.dataset.id)));
+      });
+      calendarEl.querySelectorAll(".calendar-event").forEach(button => {
+        button.addEventListener("click", event => {
+          event.stopPropagation();
+          openModal(events.find(item => item.id === button.dataset.id));
+        });
+      });
+      updateStats();
+    }
+
+    function monthCopy(code, count, watch) {
+      if (count > 0) return `${count} sourced event${count === 1 ? "" : "s"} in the 2026 archive or live shortlist.`;
+      if (watch) return "No reliable public techno/rave calendar yet; monitor short-notice listings.";
+      return "No sourced entries in this research pass.";
+    }
+
+    function renderCard(event) {
+      return `
+        <article class="event-card" data-id="${event.id}">
+          <div class="poster">
+            <img src="${posterSvg(event)}" alt="${escapeHtml(event.title)} visual poster">
+            <span class="tag">${escapeHtml(event.status.toUpperCase())}</span>
+          </div>
+          <div class="card-body">
+            <div class="card-top"><span>${escapeHtml(event.date)}</span><span>${escapeHtml(event.time)}</span></div>
+            <h3>${escapeHtml(event.title)}</h3>
+            <div class="venue">${escapeHtml(event.venue)} · ${escapeHtml(event.district)}</div>
+            <p class="description">${escapeHtml(event.description)}</p>
+            <div class="lineup-preview">
+              ${lineupFor(event).slice(0, 2).map(item => `<span><b>${escapeHtml(item.name)}</b>: ${escapeHtml(item.note)}</span>`).join("")}
+            </div>
+            <div class="chips">
+              <span class="chip ${confidenceClass(event)}">${escapeHtml(event.confidence)}</span>
+              ${event.vibe.slice(0, 3).map(vibe => `<span class="chip">${escapeHtml(vibe)}</span>`).join("")}
+              <span class="chip">${escapeHtml(event.genre.split(",")[0])}</span>
+            </div>
+          </div>
+        </article>
+      `;
+    }
+
+    function renderWatchPanel(watch) {
+      return `
+        <article class="watch-panel">
+          <h3>${escapeHtml(watch.title)}</h3>
+          <p>${escapeHtml(watch.text)}</p>
+          <ul class="watch-list">
+            ${watch.tags.map(tag => `<li>${escapeHtml(tag)}</li>`).join("")}
+          </ul>
+        </article>
+      `;
+    }
+
+    function openModal(event) {
+      if (!event) return;
+      document.getElementById("modalPoster").src = posterSvg(event);
+      document.getElementById("modalPoster").alt = `${event.title} visual poster`;
+      document.getElementById("modalTitle").textContent = event.title;
+      document.getElementById("modalMeta").textContent = `${event.date}, ${event.time} · ${event.venue}, ${event.district}`;
+      document.getElementById("modalDescription").textContent = event.description;
+      document.getElementById("modalFacts").innerHTML = [
+        ["Sound", event.genre],
+        ["Price", event.price],
+        ["Age / ID", event.age],
+        ["Status", `${event.status} · ${event.confidence} confidence`]
+      ].map(([label, value]) => `<div class="fact"><span>${escapeHtml(label)}</span><b>${escapeHtml(value)}</b></div>`).join("");
+      document.getElementById("modalLineup").innerHTML = `
+        <h3>DJ notes</h3>
+        <ul class="lineup-list">
+          ${lineupFor(event).map(item => `
+            <li class="dj-note">
+              <b>${escapeHtml(item.name)}</b>
+              <span>${escapeHtml(item.note)}</span>
+            </li>
+          `).join("")}
+        </ul>
+      `;
+      document.getElementById("modalChips").innerHTML = event.vibe.map(vibe => `<span class="chip">${escapeHtml(vibe)}</span>`).join("");
+      document.getElementById("modalActions").innerHTML = `
+        <a class="button-link primary" href="${event.source}" target="_blank" rel="noreferrer">Open ${escapeHtml(event.sourceLabel)}</a>
+        <button class="close" type="button">Close</button>
+      `;
+      modal.classList.add("open");
+      modal.querySelector(".close").addEventListener("click", closeModal);
+    }
+
+    function closeModal() {
+      modal.classList.remove("open");
+    }
+
+    modal.addEventListener("click", event => {
+      if (event.target === modal) closeModal();
+    });
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape") closeModal();
+    });
+
+    function renderRoute(routeKey = "easy") {
+      const route = routes[routeKey];
+      routeCard.innerHTML = `
+        <h3>${escapeHtml(route.title)}</h3>
+        <p>${escapeHtml(route.body)}</p>
+        <div class="chips">
+          ${route.picks.map(id => {
+            const event = events.find(item => item.id === id);
+            return event ? `<button class="chip route-pick" data-id="${event.id}" type="button">${escapeHtml(event.date)} · ${escapeHtml(event.title)}</button>` : "";
+          }).join("")}
+        </div>
+      `;
+      routeCard.querySelectorAll(".route-pick").forEach(button => {
+        button.addEventListener("click", () => openModal(events.find(event => event.id === button.dataset.id)));
+      });
+    }
+
+    function renderBestPicks() {
+      const pickIds = ["santa-k", "synth-crush", "horizon", "milo-cosmjn", "up-2-u"];
+      bestPicks.innerHTML = pickIds.map(id => {
+        const event = events.find(item => item.id === id);
+        return `
+          <a class="source-link" href="${event.source}" target="_blank" rel="noreferrer">
+            <span>${escapeHtml(event.date)} · ${escapeHtml(event.title)}</span>
+            <span>${escapeHtml(event.confidence)}</span>
+          </a>
+        `;
+      }).join("");
+    }
+
+    function updateStats() {
+      const visible = events.filter(eventMatches);
+      const upcoming = events.filter(event => event.status === "upcoming" || event.status === "watch").length;
+      const top = events.filter(event => event.confidence === "High" && (event.vibe.includes("hard") || event.vibe.includes("underground"))).length;
+      document.getElementById("statEvents").textContent = events.length;
+      document.getElementById("statUpcoming").textContent = upcoming;
+      document.getElementById("statTop").textContent = top;
+      document.querySelectorAll(".month-button").forEach(button => {
+        const count = visible.filter(event => event.month === button.dataset.month).length;
+        button.classList.toggle("active", count > 0);
+      });
+    }
+
+    function setupControls() {
+      [searchInput, statusFilter, vibeFilter].forEach(control => {
+        control.addEventListener("input", renderCalendar);
+        control.addEventListener("change", renderCalendar);
+      });
+      document.querySelectorAll(".route-button").forEach(button => {
+        button.addEventListener("click", () => {
+          document.querySelectorAll(".route-button").forEach(item => item.classList.remove("active"));
+          button.classList.add("active");
+          renderRoute(button.dataset.route);
+        });
+      });
+    }
+
+    function drawSignal() {
+      const canvas = document.getElementById("signalCanvas");
+      const ctx = canvas.getContext("2d");
+      const dpr = window.devicePixelRatio || 1;
+      function resize() {
+        canvas.width = Math.floor(canvas.clientWidth * dpr);
+        canvas.height = Math.floor(canvas.clientHeight * dpr);
+      }
+      resize();
+      window.addEventListener("resize", resize);
+      let t = 0;
+      function frame() {
+        const w = canvas.width;
+        const h = canvas.height;
+        ctx.clearRect(0, 0, w, h);
+        ctx.lineWidth = 2 * dpr;
+        for (let layer = 0; layer < 4; layer++) {
+          ctx.beginPath();
+          ctx.strokeStyle = ["rgba(198,255,59,.42)", "rgba(255,106,42,.32)", "rgba(65,215,255,.3)", "rgba(255,79,139,.22)"][layer];
+          const amp = (18 + layer * 9) * dpr;
+          const base = h * (.42 + layer * .1);
+          for (let x = 0; x <= w; x += 10 * dpr) {
+            const y = base + Math.sin((x / (80 * dpr)) + t + layer) * amp + Math.sin((x / (31 * dpr)) - t * 1.4) * amp * .26;
+            if (x === 0) ctx.moveTo(x, y);
+            else ctx.lineTo(x, y);
+          }
+          ctx.stroke();
+        }
+        t += .018;
+        requestAnimationFrame(frame);
+      }
+      frame();
+    }
+
+    renderRail();
+    setupControls();
+    renderCalendar();
+    renderRoute();
+    renderBestPicks();
+    drawSignal();
+  </script>
+</body>
+</html>
