@@ -55,6 +55,97 @@ const SOURCE_PAGES = [
   },
 ];
 
+const COMPUTER_USE_SOURCES = [
+  {
+    label: "RA Shanghai",
+    platform: "Resident Advisor",
+    url: "https://ra.co/events/cn/shanghai",
+    priority: 1,
+    cadence: "Daily; repeat Thu/Fri before the weekend",
+    trigger: "Use Chrome + Computer Use when fetch returns 403, empty listings, or stale results.",
+    collectionGoal: "Confirm event pages, dates, lineup, venue, price, and ticket links.",
+    queries: ["Shanghai", "techno", "rave", "warehouse", "Shanghai events"],
+    evidence: ["public event URL", "event title", "absolute date/time", "venue", "ticket/source link"],
+  },
+  {
+    label: "SmartShanghai nightlife",
+    platform: "SmartShanghai",
+    url: "https://www.smartshanghai.com/events/clubbing/",
+    priority: 1,
+    cadence: "Daily; repeat after monthly clubbing guide updates",
+    trigger: "Use Chrome + Computer Use when public fetch times out, returns incomplete markup, or misses event cards.",
+    collectionGoal: "Collect clubbing listings, monthly guide leads, venue pages, ticket links, and English descriptions.",
+    queries: ["clubbing", "nightlife", "techno", "electronic", "rave"],
+    evidence: ["listing URL", "event URL", "guide URL", "date/time", "venue", "ticket/source link"],
+  },
+  {
+    label: "Xiaohongshu searches",
+    platform: "Xiaohongshu",
+    url: "https://www.xiaohongshu.com/search_result?keyword=%E4%B8%8A%E6%B5%B7%20techno",
+    priority: 2,
+    cadence: "Daily discovery; stronger pass Thu/Fri",
+    trigger: "Use Chrome + Computer Use with logged-in search; do not rely on unauthenticated fetch.",
+    collectionGoal: "Discover local posts, poster screenshots, comments asking for links, and short-notice parties.",
+    queries: ["上海 techno", "上海 rave", "上海 电子音乐", "上海 club", "上海 周末去哪", "上海 地下电子"],
+    evidence: ["post URL or screenshot reference", "poster image", "publisher handle", "publish date", "claimed event date"],
+  },
+  {
+    label: "WeChat official accounts and groups",
+    platform: "WeChat",
+    url: "weixin://",
+    priority: 1,
+    cadence: "Daily for known accounts; urgent checks when leads mention ticket QR or set times",
+    trigger: "Use Chrome + Computer Use or phone-side capture; WeChat articles, groups, and mini-programs are app/session bound.",
+    collectionGoal: "Confirm official announcements, ticket QR codes, set times, lineup changes, and cancellation notices.",
+    queries: ["venue account names", "promoter account names", "上海电子音乐", "活动名称", "DJ name"],
+    evidence: ["account name", "article title", "article URL when shareable", "screenshot reference", "publish date", "ticket QR or mini-program name"],
+  },
+  {
+    label: "Venue official accounts",
+    platform: "Venue WeChat/Instagram/Weibo",
+    url: "https://www.google.com/search?q=Shanghai+techno+venue+official+account",
+    priority: 1,
+    cadence: "Daily for active venues; repeat on event day",
+    trigger: "Use Chrome + Computer Use when venue content is only in social feeds, stories, or app-only posts.",
+    collectionGoal: "Confirm venue-posted event details, address, door policy, age/ID rules, and last-minute updates.",
+    queries: ["Abyss Shanghai", "POTENT Shanghai", "EXIT Shanghai", "Heim Shanghai", "System Shanghai", "Wigwam Shanghai", "Reactor Shanghai"],
+    evidence: ["official account handle", "post URL or screenshot reference", "event poster", "address", "age/ID note"],
+  },
+  {
+    label: "Promoter posters",
+    platform: "Promoter social/poster",
+    url: "https://www.google.com/search?q=Shanghai+rave+promoter+poster",
+    priority: 1,
+    cadence: "Daily discovery; OCR/extract whenever a new poster appears",
+    trigger: "Use Chrome + Computer Use to inspect image posts, stories, reposts, and posters that expose details only in the image.",
+    collectionGoal: "Extract event name, date, start time, venue, lineup, ticket channel, and organizer from posters.",
+    queries: ["Shanghai rave poster", "上海 rave 海报", "上海 techno 海报", "厂牌 上海 电子"],
+    evidence: ["poster image reference", "source post URL", "OCR text", "organizer", "ticket channel"],
+  },
+  {
+    label: "Ticketing apps and mini-programs",
+    platform: "ShowStart/Damai/PiaoPlanet/mini-programs",
+    url: "https://www.showstart.com/",
+    priority: 1,
+    cadence: "Daily; repeat before publishing any ticket CTA",
+    trigger: "Use Chrome + Computer Use for app-only flows, mini-program tickets, captchas, login walls, or JS-rendered ticket pages.",
+    collectionGoal: "Verify ticket availability, price tiers, doors time, refund policy, venue address, and purchase route.",
+    queries: ["秀动 上海 techno", "大麦 上海 电子音乐", "票星球 上海 rave", "活动名称 票务"],
+    evidence: ["ticket URL or mini-program name", "price tier", "sale status", "doors time", "ticket platform"],
+  },
+  {
+    label: "DJ and label accounts",
+    platform: "Instagram/Weibo/WeChat/Bandcamp",
+    url: "https://www.instagram.com/explore/search/keyword/?q=Shanghai%20techno",
+    priority: 2,
+    cadence: "Every 2-3 days; daily for touring DJs already on the calendar",
+    trigger: "Use Chrome + Computer Use for logged-in social feeds, stories, reposts, and platform search that blocks simple fetch.",
+    collectionGoal: "Find tour announcements, label nights, release-party context, lineup confirmation, and artist-posted ticket links.",
+    queries: ["DJ name Shanghai", "label name Shanghai", "厂牌 上海", "Bandcamp Shanghai techno"],
+    evidence: ["artist/label handle", "post URL or screenshot reference", "tour date", "event title", "ticket/source link"],
+  },
+];
+
 const REQUIRED_EVENT_FIELDS = [
   "id",
   "month",
@@ -465,6 +556,44 @@ function sourceLabelFor(url) {
   }
 }
 
+function buildComputerUseQueue(checkedAt) {
+  return COMPUTER_USE_SOURCES.map(source => ({
+    ...source,
+    kind: "computer-use-source",
+    sourceStatus: "computer-use",
+    access: "chrome-computer-use",
+    checkedAt,
+    parsed: false,
+    confirmationRule: "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
+    requiredFields: [
+      "title",
+      "absolute date",
+      "start time",
+      "venue",
+      "city/district",
+      "lineup",
+      "ticket/source URL or shareable app reference",
+      "source publication date",
+    ],
+  }));
+}
+
+function computerUseSourceReports(computerUseQueue) {
+  return computerUseQueue.map(source => ({
+    label: source.label,
+    url: source.url,
+    kind: source.kind,
+    sourceStatus: source.sourceStatus,
+    access: source.access,
+    checkedAt: source.checkedAt,
+    ok: null,
+    status: "computer-use",
+    priority: source.priority,
+    cadence: source.cadence,
+    trigger: source.trigger,
+  }));
+}
+
 function inferGenre(title, description) {
   const text = `${title} ${description}`.toLowerCase();
   const terms = [];
@@ -642,6 +771,7 @@ async function main() {
   const detailLinks = new Map();
   const discovered = [];
   const socialLeads = [];
+  const computerUseQueue = buildComputerUseQueue(shanghaiDateString());
 
   for (const source of SOURCE_PAGES) {
     await sleep(REQUEST_DELAY_MS);
@@ -765,24 +895,27 @@ async function main() {
     verified: shanghaiDateString(),
     timezone: TIME_ZONE,
     sourcePriority: [
+      "Chrome + Computer Use for anti-bot, logged-in, app-only, image/poster, and mini-program sources",
       "Direct venue, promoter, ticketing, or official artist pages",
       "Resident Advisor event pages and city listings",
       "SmartShanghai event pages and monthly clubbing guide",
       "Public social posts and app-only references as discovery leads only",
     ],
-    sources: sourceReports,
+    sources: [...sourceReports, ...computerUseSourceReports(computerUseQueue)],
     events,
     socialLeads: socialLeads.slice(0, 80),
     discovered: discovered.slice(0, 80),
+    computerUseQueue,
     notes: [
       "This v1 scraper keeps curated embedded events as the seed dataset, refreshes source metadata, and adds parsable public event pages as watch/secondary entries.",
       "Events from listing/editorial pages remain watch-level until a direct venue, promoter, ticketing, or event page confirms details.",
       "X keyword searches are discovery-only social leads and never promote an event into the calendar without confirmation from a stronger source.",
+      "Known anti-bot or app-only sources are queued for agent-operated Chrome + Computer Use collection instead of being scraped with plain fetch.",
     ],
   };
 
   fs.writeFileSync(DATA_FILE, `${JSON.stringify(payload, null, 2)}\n`);
-  console.log(`Wrote ${path.relative(ROOT, DATA_FILE)} with ${events.length} events, ${payload.discovered.length} discovered links, and ${payload.socialLeads.length} social leads.`);
+  console.log(`Wrote ${path.relative(ROOT, DATA_FILE)} with ${events.length} events, ${payload.discovered.length} discovered links, ${payload.socialLeads.length} social leads, and ${payload.computerUseQueue.length} Computer Use sources.`);
 }
 
 main()

@@ -1,0 +1,1508 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rave Calendar Ops Console</title>
+  <meta name="description" content="Operations console for AI event intake, human review, WeChat and Xiaohongshu publishing copy, ticket routing, promoter exposure, and reports.">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#c6ff3b">
+  <link rel="canonical" href="https://shanghai-rave-calendar-2026.vercel.app/ops">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shanghai Rave Calendar">
+  <meta property="og:title" content="Rave Calendar Ops Console">
+  <meta property="og:description" content="Review scraped event leads, prepare social distribution, manage ticket links, paid promoter exposure, and reports.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Rave Calendar Ops Console",
+    "applicationCategory": "BusinessApplication",
+    "isAccessibleForFree": true,
+    "inLanguage": "zh-CN"
+  }
+  </script>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f3f0e8;
+      --muted: #a9a397;
+      --dim: #797367;
+      --void: #080806;
+      --panel: #11110e;
+      --panel-2: #191913;
+      --line: #302f28;
+      --acid: #c6ff3b;
+      --ember: #ff6a2a;
+      --cyan: #41d7ff;
+      --rose: #ff4f8b;
+      --gold: #ffd166;
+      --ok: #85ff94;
+      --danger: #ff5c62;
+      --radius: 8px;
+      --shadow: 0 22px 70px rgba(0, 0, 0, .38);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px) 0 0 / 34px 34px,
+        linear-gradient(0deg, rgba(255,255,255,.018) 1px, transparent 1px) 0 0 / 34px 34px,
+        radial-gradient(circle at 18% 0, rgba(65,215,255,.16), transparent 28%),
+        radial-gradient(circle at 86% 12%, rgba(255,106,42,.18), transparent 30%),
+        #080806;
+      color: var(--ink);
+      font-family: "Aptos", "Segoe UI", "Microsoft YaHei", sans-serif;
+      letter-spacing: 0;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    .shell {
+      width: min(1500px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 22px 0 48px;
+    }
+
+    .topbar {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 18px;
+      align-items: end;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 18px;
+      margin-bottom: 16px;
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--acid);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .kicker::before {
+      content: "";
+      width: 34px;
+      height: 2px;
+      background: var(--acid);
+      box-shadow: 0 0 16px rgba(198,255,59,.7);
+    }
+
+    h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 42px;
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .subhead {
+      max-width: 880px;
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.48;
+    }
+
+    .top-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+
+    .button,
+    .ghost,
+    .small-button,
+    .review-button,
+    .tab-button {
+      min-height: 38px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #151510;
+      color: var(--ink);
+      padding: 9px 11px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: 900;
+      font-size: 13px;
+      line-height: 1.1;
+      transition: transform .18s ease, border-color .18s ease, background .18s ease, color .18s ease;
+    }
+
+    .button:hover,
+    .ghost:hover,
+    .small-button:hover,
+    .review-button:hover,
+    .tab-button:hover,
+    .tab-button.active {
+      transform: translateY(-1px);
+      color: var(--void);
+      border-color: var(--acid);
+      background: var(--acid);
+    }
+
+    .button.primary {
+      color: var(--void);
+      border-color: var(--acid);
+      background: var(--acid);
+    }
+
+    .ghost {
+      color: var(--cyan);
+      border-color: rgba(65,215,255,.48);
+      background: rgba(65,215,255,.08);
+    }
+
+    .small-button {
+      min-height: 32px;
+      padding: 7px 9px;
+      font-size: 12px;
+    }
+
+    .status-bar {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 8px;
+      margin: 16px 0;
+    }
+
+    .metric {
+      min-height: 92px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(17,17,14,.82);
+      padding: 12px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .metric::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 3px;
+      background: linear-gradient(90deg, var(--acid), var(--cyan), var(--ember));
+    }
+
+    .metric b {
+      display: block;
+      font-size: 27px;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+
+    .workflow {
+      display: grid;
+      grid-template-columns: minmax(300px, 370px) minmax(0, 1fr) minmax(320px, 410px);
+      gap: 14px;
+      align-items: start;
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(17,17,14,.9);
+      box-shadow: 0 12px 38px rgba(0,0,0,.2);
+      overflow: hidden;
+    }
+
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      padding: 13px 14px;
+      background: rgba(255,255,255,.025);
+    }
+
+    .panel-header h2,
+    .panel-header h3 {
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.15;
+    }
+
+    .panel-header span {
+      color: var(--dim);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .panel-body {
+      padding: 14px;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: 1fr 128px;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .controls .wide {
+      grid-column: 1 / -1;
+    }
+
+    .input,
+    .select,
+    .textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #151510;
+      color: var(--ink);
+      padding: 0 10px;
+      outline: none;
+    }
+
+    .input,
+    .select {
+      min-height: 40px;
+    }
+
+    .textarea {
+      min-height: 220px;
+      padding: 10px;
+      resize: vertical;
+      line-height: 1.45;
+    }
+
+    .input:focus,
+    .select:focus,
+    .textarea:focus {
+      border-color: var(--acid);
+      box-shadow: 0 0 0 3px rgba(198,255,59,.14);
+    }
+
+    .lead-list {
+      display: grid;
+      gap: 7px;
+      max-height: 760px;
+      overflow: auto;
+      padding-right: 4px;
+    }
+
+    .lead-row {
+      width: 100%;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 8px;
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 6px;
+      background: rgba(255,255,255,.025);
+      color: var(--ink);
+      text-align: left;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .lead-row:hover,
+    .lead-row.active {
+      border-color: var(--acid);
+      background: rgba(198,255,59,.08);
+    }
+
+    .lead-title {
+      display: grid;
+      gap: 4px;
+      min-width: 0;
+    }
+
+    .lead-title b {
+      overflow-wrap: anywhere;
+      line-height: 1.2;
+    }
+
+    .lead-title span {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.32;
+      overflow-wrap: anywhere;
+    }
+
+    .badge-column {
+      display: grid;
+      gap: 5px;
+      justify-items: end;
+      align-content: start;
+    }
+
+    .badge,
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 999px;
+      color: var(--muted);
+      background: rgba(255,255,255,.035);
+      padding: 5px 8px;
+      font-size: 11px;
+      font-weight: 900;
+      line-height: 1.1;
+      white-space: nowrap;
+    }
+
+    .badge.approved,
+    .chip.approved {
+      color: var(--void);
+      border-color: var(--ok);
+      background: var(--ok);
+    }
+
+    .badge.pending {
+      color: var(--void);
+      border-color: var(--gold);
+      background: var(--gold);
+    }
+
+    .badge.needs-check,
+    .chip.needs-check {
+      color: var(--gold);
+      border-color: rgba(255,209,102,.66);
+      background: transparent;
+    }
+
+    .badge.rejected,
+    .chip.rejected {
+      color: var(--danger);
+      border-color: rgba(255,92,98,.7);
+      background: rgba(255,92,98,.08);
+    }
+
+    .badge.paid,
+    .chip.paid {
+      color: var(--void);
+      border-color: var(--rose);
+      background: var(--rose);
+    }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .fact {
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 6px;
+      background: rgba(255,255,255,.025);
+      padding: 10px;
+      min-height: 68px;
+    }
+
+    .fact span {
+      display: block;
+      color: var(--dim);
+      font-size: 11px;
+      font-weight: 900;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+    }
+
+    .fact b {
+      display: block;
+      font-size: 13px;
+      line-height: 1.28;
+      overflow-wrap: anywhere;
+    }
+
+    .review-actions,
+    .copy-actions,
+    .form-row,
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      margin: 10px 0;
+    }
+
+    .review-button[data-status="approved"] {
+      border-color: rgba(133,255,148,.55);
+      color: var(--ok);
+    }
+
+    .review-button[data-status="needs-check"] {
+      border-color: rgba(255,209,102,.55);
+      color: var(--gold);
+    }
+
+    .review-button[data-status="rejected"] {
+      border-color: rgba(255,92,98,.58);
+      color: var(--danger);
+    }
+
+    .review-button.active,
+    .review-button:hover {
+      color: var(--void);
+    }
+
+    .summary {
+      color: var(--muted);
+      line-height: 1.48;
+      margin: 0 0 12px;
+    }
+
+    .source-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 10px 0;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .publish-card,
+    .route-card,
+    .report-card {
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 6px;
+      background: rgba(0,0,0,.22);
+      padding: 12px;
+    }
+
+    .publish-card h3,
+    .route-card h3,
+    .report-card h3 {
+      margin: 0 0 8px;
+      font-size: 15px;
+    }
+
+    .route-card label {
+      display: grid;
+      gap: 6px;
+      color: var(--dim);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      width: 100%;
+    }
+
+    .bar-list {
+      display: grid;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .bar-row {
+      display: grid;
+      grid-template-columns: 112px minmax(0, 1fr) 34px;
+      gap: 8px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .bar-track {
+      height: 9px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.08);
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      width: var(--w, 0%);
+      background: linear-gradient(90deg, var(--acid), var(--cyan));
+    }
+
+    .source-table {
+      display: grid;
+      gap: 7px;
+      max-height: 280px;
+      overflow: auto;
+    }
+
+    .source-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 8px;
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 6px;
+      padding: 9px;
+      background: rgba(255,255,255,.02);
+    }
+
+    .source-row b {
+      font-size: 12px;
+      overflow-wrap: anywhere;
+    }
+
+    .source-row span {
+      color: var(--dim);
+      font-size: 11px;
+    }
+
+    .notice {
+      border: 1px dashed rgba(255,209,102,.5);
+      border-radius: 6px;
+      padding: 10px;
+      color: var(--gold);
+      background: rgba(255,209,102,.05);
+      line-height: 1.42;
+      font-size: 13px;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    @media (max-width: 1220px) {
+      .workflow {
+        grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+      }
+      .right-column {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+      .status-bar {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 780px) {
+      .shell {
+        width: calc(100vw - 28px);
+      }
+      .topbar,
+      .workflow,
+      .right-column,
+      .split,
+      .detail-grid,
+      .status-bar {
+        grid-template-columns: 1fr;
+      }
+      h1 {
+        font-size: 32px;
+      }
+      .top-actions {
+        justify-content: flex-start;
+      }
+      .lead-list {
+        max-height: 420px;
+      }
+      .bar-row {
+        grid-template-columns: 86px minmax(0, 1fr) 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <div class="kicker">Ops workflow / Shanghai Rave Calendar</div>
+        <h1>活动运营控制台</h1>
+        <p class="subhead">把 AI 抓取结果、人工审核、微信/小红书分发、导票链接、promoter 付费曝光和数据报表放在同一个静态工作台里。审核、导票和曝光状态保存在当前浏览器，导出后再进入 GitHub 数据流。</p>
+      </div>
+      <div class="top-actions">
+        <a class="ghost" href="index.html">打开日历</a>
+        <button class="button primary" type="button" id="exportOpsJson">导出审核 JSON</button>
+        <button class="button" type="button" id="exportReportCsv">导出报表 CSV</button>
+      </div>
+    </header>
+
+    <section class="status-bar" aria-label="Ops metrics">
+      <div class="metric"><b id="metricEvents">0</b><span>AI 整理后的活动与线索</span></div>
+      <div class="metric"><b id="metricPending">0</b><span>等待人工审核</span></div>
+      <div class="metric"><b id="metricApproved">0</b><span>已批准可分发</span></div>
+      <div class="metric"><b id="metricNoTicket">0</b><span>缺少独立导票链接</span></div>
+      <div class="metric"><b id="metricPaid">0</b><span>付费曝光档位</span></div>
+      <div class="metric"><b id="metricSources">0</b><span>本次抓取源/关键词</span></div>
+    </section>
+
+    <section class="workflow">
+      <section class="panel">
+        <div class="panel-header">
+          <h2>AI 抓取 / 审核队列</h2>
+          <span id="payloadStamp">loading</span>
+        </div>
+        <div class="panel-body">
+          <div class="controls">
+            <input class="input wide" id="leadSearch" type="search" placeholder="搜索活动、场地、promoter、来源">
+            <select class="select" id="reviewFilter" aria-label="Review filter">
+              <option value="all">全部审核状态</option>
+              <option value="pending">待审核</option>
+              <option value="approved">已批准</option>
+              <option value="needs-check">需补充确认</option>
+              <option value="rejected">已拒绝</option>
+            </select>
+            <select class="select" id="leadTypeFilter" aria-label="Lead type filter">
+              <option value="all">全部来源层</option>
+              <option value="event">活动数据</option>
+              <option value="discovered">发现链接</option>
+              <option value="social">社媒线索</option>
+              <option value="computer-use">Computer Use</option>
+              <option value="watch">watchlist</option>
+            </select>
+          </div>
+          <div class="notice hidden" id="loadNotice"></div>
+          <div class="lead-list" id="leadList" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2 id="detailTitle">选择一个活动</h2>
+          <span id="detailStatus">no selection</span>
+        </div>
+        <div class="panel-body">
+          <p class="summary" id="detailSummary">左侧队列会把 `data/events.json` 里的活动、discovered links 和 social leads 合并成审核对象。</p>
+          <div class="detail-grid" id="detailFacts"></div>
+          <div class="source-strip" id="detailChips"></div>
+          <div class="review-actions" id="reviewActions"></div>
+
+          <div class="split">
+            <section class="publish-card">
+              <h3>微信 / 小红书分发</h3>
+              <div class="tabs">
+                <button class="tab-button active" type="button" data-channel="wechat">微信</button>
+                <button class="tab-button" type="button" data-channel="xhs">小红书</button>
+              </div>
+              <textarea class="textarea" id="publishCopy" spellcheck="false"></textarea>
+              <div class="copy-actions">
+                <button class="small-button" type="button" id="copyPublish">复制文案</button>
+                <button class="small-button" type="button" id="markPublished">标记已分发</button>
+                <button class="small-button" type="button" id="exportDistribution">导出分发 CSV</button>
+              </div>
+            </section>
+
+            <section class="route-card">
+              <h3>导票链接</h3>
+              <label>
+                ticket / mini-program / official link
+                <input class="input" id="ticketInput" type="url" placeholder="https://...">
+              </label>
+              <div class="copy-actions">
+                <button class="small-button" type="button" id="saveTicket">保存导票链接</button>
+                <button class="small-button" type="button" id="copyTicket">复制带追踪链接</button>
+                <a class="small-button" id="openTicket" href="#" target="_blank" rel="noopener noreferrer">打开链接</a>
+              </div>
+              <p class="summary" id="ticketRouteText"></p>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <div class="right-column">
+        <section class="panel">
+          <div class="panel-header">
+            <h2>Promoter 付费曝光</h2>
+            <span id="promoStatus">no package</span>
+          </div>
+          <div class="panel-body">
+            <div class="route-card">
+              <label>
+                曝光档位
+                <select class="select" id="promoPackage">
+                  <option value="">不曝光</option>
+                  <option value="spotlight">首页 Spotlight</option>
+                  <option value="social-bundle">微信 + 小红书分发</option>
+                  <option value="ticket-boost">导票转化 Boost</option>
+                  <option value="full-stack">Spotlight + 分发 + 报表</option>
+                </select>
+              </label>
+              <div class="form-row">
+                <input class="input" id="promoBudget" type="number" min="0" step="100" placeholder="预算 RMB">
+                <input class="input" id="promoUntil" type="date">
+              </div>
+              <textarea class="textarea" id="promoNote" placeholder="promoter 需求、素材、发票备注" style="min-height: 86px"></textarea>
+              <div class="copy-actions">
+                <button class="small-button" type="button" id="savePromo">保存曝光</button>
+                <button class="small-button" type="button" id="copyPromoBrief">复制报价说明</button>
+              </div>
+            </div>
+            <div class="bar-list" id="promoList"></div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <h2>数据报表</h2>
+            <span id="reportStamp">ready</span>
+          </div>
+          <div class="panel-body">
+            <div class="report-card">
+              <h3>活动供给分布</h3>
+              <div class="bar-list" id="venueBars"></div>
+            </div>
+            <div class="report-card" style="margin-top: 10px">
+              <h3>抓取源健康</h3>
+              <div class="source-table" id="sourceTable"></div>
+            </div>
+            <div class="copy-actions">
+              <button class="small-button" type="button" id="copyDailyBrief">复制日报</button>
+              <button class="small-button" type="button" id="exportTicketsCsv">导出导票 CSV</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const dataPath = "data/events.json";
+    const reviewStorageKey = "shanghai-rave-calendar-review-v1";
+    const ticketStorageKey = "shanghai-rave-calendar-ticket-routes-v1";
+    const promoStorageKey = "shanghai-rave-calendar-promoter-exposure-v1";
+    const distributionStorageKey = "shanghai-rave-calendar-distribution-v1";
+    const verifiedFallback = "2026-06-08";
+
+    const state = {
+      payload: null,
+      leads: [],
+      selectedKey: "",
+      channel: "wechat",
+      review: readStore(reviewStorageKey, {}),
+      tickets: readStore(ticketStorageKey, {}),
+      promos: readStore(promoStorageKey, {}),
+      distribution: readStore(distributionStorageKey, {})
+    };
+
+    const els = {
+      metricEvents: document.getElementById("metricEvents"),
+      metricPending: document.getElementById("metricPending"),
+      metricApproved: document.getElementById("metricApproved"),
+      metricNoTicket: document.getElementById("metricNoTicket"),
+      metricPaid: document.getElementById("metricPaid"),
+      metricSources: document.getElementById("metricSources"),
+      payloadStamp: document.getElementById("payloadStamp"),
+      loadNotice: document.getElementById("loadNotice"),
+      leadList: document.getElementById("leadList"),
+      leadSearch: document.getElementById("leadSearch"),
+      reviewFilter: document.getElementById("reviewFilter"),
+      leadTypeFilter: document.getElementById("leadTypeFilter"),
+      detailTitle: document.getElementById("detailTitle"),
+      detailStatus: document.getElementById("detailStatus"),
+      detailSummary: document.getElementById("detailSummary"),
+      detailFacts: document.getElementById("detailFacts"),
+      detailChips: document.getElementById("detailChips"),
+      reviewActions: document.getElementById("reviewActions"),
+      publishCopy: document.getElementById("publishCopy"),
+      copyPublish: document.getElementById("copyPublish"),
+      markPublished: document.getElementById("markPublished"),
+      exportDistribution: document.getElementById("exportDistribution"),
+      ticketInput: document.getElementById("ticketInput"),
+      saveTicket: document.getElementById("saveTicket"),
+      copyTicket: document.getElementById("copyTicket"),
+      openTicket: document.getElementById("openTicket"),
+      ticketRouteText: document.getElementById("ticketRouteText"),
+      promoPackage: document.getElementById("promoPackage"),
+      promoBudget: document.getElementById("promoBudget"),
+      promoUntil: document.getElementById("promoUntil"),
+      promoNote: document.getElementById("promoNote"),
+      savePromo: document.getElementById("savePromo"),
+      copyPromoBrief: document.getElementById("copyPromoBrief"),
+      promoStatus: document.getElementById("promoStatus"),
+      promoList: document.getElementById("promoList"),
+      venueBars: document.getElementById("venueBars"),
+      sourceTable: document.getElementById("sourceTable"),
+      reportStamp: document.getElementById("reportStamp"),
+      copyDailyBrief: document.getElementById("copyDailyBrief"),
+      exportTicketsCsv: document.getElementById("exportTicketsCsv"),
+      exportOpsJson: document.getElementById("exportOpsJson"),
+      exportReportCsv: document.getElementById("exportReportCsv")
+    };
+
+    function readStore(key, fallback) {
+      try {
+        const raw = window.localStorage ? window.localStorage.getItem(key) : "";
+        return raw ? JSON.parse(raw) : fallback;
+      } catch (_) {
+        return fallback;
+      }
+    }
+
+    function writeStore(key, value) {
+      if (!window.localStorage) return;
+      window.localStorage.setItem(key, JSON.stringify(value));
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    function clean(value) {
+      return String(value || "").replace(/\s+/g, " ").trim();
+    }
+
+    function todayString() {
+      const parts = Object.fromEntries(new Intl.DateTimeFormat("en-CA", {
+        timeZone: "Asia/Shanghai",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit"
+      }).formatToParts(new Date()).filter(part => part.type !== "literal").map(part => [part.type, part.value]));
+      return `${parts.year}-${parts.month}-${parts.day}`;
+    }
+
+    function organizerFor(event) {
+      const explicit = event.organizer || event.organiser || event.promoter || event.crew || event.collective;
+      if (explicit) return clean(explicit);
+      const title = clean(event.title);
+      const presMatch = title.match(/^(.+?)\s+(?:pres\.|presents)\s+/i);
+      if (presMatch) return presMatch[1].trim();
+      const colonMatch = title.match(/^([^:]{2,36}):/);
+      if (colonMatch) return colonMatch[1].trim();
+      const xMatch = title.match(/^(.+?)\s+x\s+(.+?)(?:\s|:|$)/i);
+      if (xMatch) return `${xMatch[1].trim()} / ${xMatch[2].trim()}`;
+      return event.venue || "Organizer TBA";
+    }
+
+    function sourceStatusFor(event) {
+      if (event.sourceStatus) return event.sourceStatus;
+      if (event.status === "watch" || event.confidence === "Watch") return "watchlist";
+      return "secondary";
+    }
+
+    function leadKey(type, value) {
+      return `${type}:${value}`;
+    }
+
+    function normalizeEventLead(event) {
+      return {
+        key: leadKey("event", event.id),
+        type: "event",
+        id: event.id,
+        title: event.title || "Untitled event",
+        date: event.sortDate || "",
+        displayDate: event.date || event.sortDate || "Date TBA",
+        time: event.time || "Time TBA",
+        venue: event.venue || "Venue TBA",
+        district: event.district || "Shanghai",
+        organizer: organizerFor(event),
+        genre: event.genre || "electronic",
+        confidence: event.confidence || "Watch",
+        status: event.status || "watch",
+        source: event.source || "",
+        sourceLabel: event.sourceLabel || "Source",
+        sourceStatus: sourceStatusFor(event),
+        description: event.description || "No description yet.",
+        price: event.price || "Check source",
+        age: event.age || "Check venue",
+        lineup: Array.isArray(event.lineup) ? event.lineup : [],
+        raw: event
+      };
+    }
+
+    function normalizeDiscoveredLead(item, index) {
+      const url = item.url || "";
+      return {
+        key: leadKey("discovered", url || index),
+        type: "discovered",
+        id: `discovered-${index + 1}`,
+        title: item.title || "Discovered event link",
+        date: "",
+        displayDate: "Needs parse",
+        time: "Needs parse",
+        venue: "Needs parse",
+        district: "Shanghai",
+        organizer: item.sourceLabel || "Source lead",
+        genre: "Needs AI整理",
+        confidence: item.parsed ? "Medium" : "Watch",
+        status: "watch",
+        source: url,
+        sourceLabel: item.sourceLabel || "Discovered",
+        sourceStatus: "watchlist",
+        description: item.error ? `Scrape error: ${item.error}` : "Discovered by the scraper and waiting for source confirmation.",
+        price: "Check source",
+        age: "Check venue",
+        lineup: [],
+        raw: item
+      };
+    }
+
+    function normalizeSocialLead(item, index) {
+      return {
+        key: leadKey("social", item.url || index),
+        type: "social",
+        id: `social-${index + 1}`,
+        title: item.title || item.snippet || "Social lead",
+        date: item.createdAt ? String(item.createdAt).slice(0, 10) : "",
+        displayDate: item.createdAt ? String(item.createdAt).slice(0, 10) : "Social lead",
+        time: "Needs verify",
+        venue: "Needs verify",
+        district: "Shanghai",
+        organizer: item.platform || "Social",
+        genre: item.keyword || "Shanghai electronic music",
+        confidence: "Watch",
+        status: "watch",
+        source: item.url || item.searchUrl || "",
+        sourceLabel: item.sourceLabel || item.platform || "Social",
+        sourceStatus: "social-lead",
+        description: item.snippet || "Social post collected as discovery-only lead. Confirm with venue, promoter, ticketing, RA, or SmartShanghai before publishing.",
+        price: "Check source",
+        age: "Check venue",
+        lineup: [],
+        raw: item
+      };
+    }
+
+    function normalizeComputerUseLead(item, index) {
+      const queryText = Array.isArray(item.queries) ? item.queries.join(" / ") : "";
+      const evidenceText = Array.isArray(item.evidence) ? item.evidence.join(", ") : "";
+      return {
+        key: leadKey("computer-use", item.label || index),
+        type: "computer-use",
+        id: `computer-use-${index + 1}`,
+        title: item.label || "Computer Use source",
+        date: "",
+        displayDate: item.cadence || "Computer Use collection",
+        time: "Chrome + Computer Use",
+        venue: "Needs browser review",
+        district: "Shanghai",
+        organizer: item.platform || "Computer Use source",
+        genre: queryText || "Shanghai electronic music",
+        confidence: "Watch",
+        status: "watch",
+        source: item.url || "",
+        sourceLabel: item.platform || item.label || "Computer Use source",
+        sourceStatus: item.sourceStatus || "computer-use",
+        description: [
+          item.trigger || "Use Chrome + Computer Use for this source.",
+          item.collectionGoal || "",
+          evidenceText ? `Evidence: ${evidenceText}` : ""
+        ].filter(Boolean).join(" "),
+        price: "Check source",
+        age: "Check venue",
+        lineup: [],
+        raw: item
+      };
+    }
+
+    function buildLeads(payload) {
+      const events = Array.isArray(payload.events) ? payload.events.map(normalizeEventLead) : [];
+      const discovered = Array.isArray(payload.discovered) ? payload.discovered.map(normalizeDiscoveredLead) : [];
+      const social = Array.isArray(payload.socialLeads) ? payload.socialLeads.map(normalizeSocialLead) : [];
+      const computerUse = Array.isArray(payload.computerUseQueue) ? payload.computerUseQueue.map(normalizeComputerUseLead) : [];
+      return [...events, ...discovered, ...social, ...computerUse].sort((a, b) => {
+        const aDate = a.date || "9999-99-99";
+        const bDate = b.date || "9999-99-99";
+        return aDate.localeCompare(bDate) || a.title.localeCompare(b.title);
+      });
+    }
+
+    function selectedLead() {
+      return state.leads.find(lead => lead.key === state.selectedKey) || state.leads[0] || null;
+    }
+
+    function reviewStatus(lead) {
+      return state.review[lead.key]?.status || "pending";
+    }
+
+    function ticketUrl(lead) {
+      return state.tickets[lead.key] || lead.raw?.ticketUrl || lead.raw?.ticket || lead.source || "";
+    }
+
+    function routedTicketUrl(lead) {
+      const url = ticketUrl(lead);
+      if (!/^https?:\/\//i.test(url)) return url;
+      try {
+        const parsed = new URL(url);
+        parsed.searchParams.set("utm_source", "shanghai_rave_calendar");
+        parsed.searchParams.set("utm_medium", "ticket_router");
+        parsed.searchParams.set("utm_campaign", lead.id || lead.key.replace(/[^a-z0-9]+/gi, "-"));
+        return parsed.href;
+      } catch (_) {
+        return url;
+      }
+    }
+
+    function sourceLayerLabel(lead) {
+      if (lead.sourceStatus === "official") return "official";
+      if (lead.sourceStatus === "computer-use") return "computer-use";
+      if (lead.sourceStatus === "social-lead") return "social";
+      if (lead.sourceStatus === "watchlist" || lead.confidence === "Watch") return "watch";
+      return "secondary";
+    }
+
+    function leadMatches(lead) {
+      const query = els.leadSearch.value.trim().toLowerCase();
+      const status = els.reviewFilter.value;
+      const type = els.leadTypeFilter.value;
+      const haystack = [lead.title, lead.venue, lead.organizer, lead.genre, lead.description, lead.sourceLabel, lead.source].join(" ").toLowerCase();
+      if (query && !haystack.includes(query)) return false;
+      if (status !== "all" && reviewStatus(lead) !== status) return false;
+      if (type === "watch") return sourceLayerLabel(lead) === "watch" || lead.type === "social" || lead.type === "discovered" || lead.type === "computer-use";
+      if (type !== "all" && lead.type !== type) return false;
+      return true;
+    }
+
+    function statusText(status) {
+      return {
+        pending: "待审核",
+        approved: "已批准",
+        "needs-check": "需确认",
+        rejected: "已拒绝"
+      }[status] || status;
+    }
+
+    function channelName(channel) {
+      return channel === "xhs" ? "小红书" : "微信";
+    }
+
+    function lineUpText(lead) {
+      if (!lead.lineup.length) return "";
+      return lead.lineup.slice(0, 5).map(item => item.name || item).filter(Boolean).join(" / ");
+    }
+
+    function publishCopy(lead, channel) {
+      const ticket = routedTicketUrl(lead);
+      const lineup = lineUpText(lead);
+      if (channel === "xhs") {
+        return [
+          `${lead.title}`,
+          "",
+          `${lead.displayDate} ${lead.time}`,
+          `${lead.venue} / ${lead.district}`,
+          `风格：${lead.genre}`,
+          lineup ? `阵容：${lineup}` : "阵容：以官方发布为准",
+          `票务：${ticket || "待确认"}`,
+          "",
+          lead.sourceStatus === "watchlist" || lead.type !== "event" ? "备注：这条还在 watchlist，需要 promoter/场地/票务二次确认。" : "备注：已进入人工审核后的发布队列。",
+          "",
+          "#上海电子音乐 #上海周末去哪儿 #上海夜生活 #techno #rave #livehouse #clubnight"
+        ].join("\n");
+      }
+      return [
+        `【${lead.displayDate}】${lead.title}`,
+        "",
+        `时间：${lead.time}`,
+        `地点：${lead.venue}（${lead.district}）`,
+        `Promoter：${lead.organizer}`,
+        `风格：${lead.genre}`,
+        lineup ? `阵容：${lineup}` : "阵容：以官方发布为准",
+        `票价：${lead.price}`,
+        `购票/详情：${ticket || "待确认"}`,
+        "",
+        lead.description,
+        "",
+        `来源：${lead.sourceLabel}${lead.source ? ` ${lead.source}` : ""}`,
+        `审核状态：${statusText(reviewStatus(lead))}`
+      ].join("\n");
+    }
+
+    function promoBrief(lead) {
+      const promo = state.promos[lead.key] || {};
+      const ticket = routedTicketUrl(lead) || "待补导票链接";
+      return [
+        `Promoter paid exposure brief`,
+        `Event: ${lead.title}`,
+        `Date: ${lead.displayDate} ${lead.time}`,
+        `Venue: ${lead.venue}`,
+        `Package: ${promo.package || "not selected"}`,
+        `Budget: ${promo.budget ? `${promo.budget} RMB` : "TBD"}`,
+        `Run until: ${promo.paidUntil || "TBD"}`,
+        `Ticket route: ${ticket}`,
+        `Deliverables: calendar spotlight, channel copy, ticket click export, post-campaign report.`,
+        promo.note ? `Notes: ${promo.note}` : ""
+      ].filter(Boolean).join("\n");
+    }
+
+    function reportRows() {
+      return state.leads.map(lead => {
+        const promo = state.promos[lead.key] || {};
+        const distribution = state.distribution[lead.key] || {};
+        return {
+          key: lead.key,
+          type: lead.type,
+          title: lead.title,
+          date: lead.displayDate,
+          venue: lead.venue,
+          organizer: lead.organizer,
+          review_status: reviewStatus(lead),
+          source_layer: sourceLayerLabel(lead),
+          ticket_url: ticketUrl(lead),
+          routed_ticket_url: routedTicketUrl(lead),
+          promo_package: promo.package || "",
+          promo_budget_rmb: promo.budget || "",
+          promo_until: promo.paidUntil || "",
+          wechat_published_at: distribution.wechat || "",
+          xhs_published_at: distribution.xhs || "",
+          source: lead.source
+        };
+      });
+    }
+
+    function csvEscape(value) {
+      const text = String(value ?? "");
+      return /[",\n]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text;
+    }
+
+    function toCsv(rows) {
+      if (!rows.length) return "";
+      const headers = Object.keys(rows[0]);
+      return [headers.join(","), ...rows.map(row => headers.map(header => csvEscape(row[header])).join(","))].join("\n");
+    }
+
+    function downloadFile(filename, content, type) {
+      const blob = new Blob([content], { type });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
+
+    async function copyText(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return;
+      }
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.setAttribute("readonly", "");
+      textarea.style.position = "fixed";
+      textarea.style.opacity = "0";
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand("copy");
+      textarea.remove();
+    }
+
+    function renderLeadList() {
+      const leads = state.leads.filter(leadMatches);
+      if (!leads.length) {
+        els.leadList.innerHTML = `<p class="summary">没有匹配的审核对象。</p>`;
+        return;
+      }
+      if (!state.selectedKey || !leads.some(lead => lead.key === state.selectedKey)) {
+        state.selectedKey = leads[0].key;
+      }
+      els.leadList.innerHTML = leads.slice(0, 140).map(lead => {
+        const status = reviewStatus(lead);
+        const promo = state.promos[lead.key]?.package;
+        return `
+          <button class="lead-row ${lead.key === state.selectedKey ? "active" : ""}" type="button" data-key="${escapeHtml(lead.key)}">
+            <span class="lead-title">
+              <b>${escapeHtml(lead.title)}</b>
+              <span>${escapeHtml(`${lead.displayDate} / ${lead.venue} / ${lead.organizer}`)}</span>
+              <span>${escapeHtml(`${lead.sourceLabel} / ${sourceLayerLabel(lead)}`)}</span>
+            </span>
+            <span class="badge-column">
+              <span class="badge ${status}">${escapeHtml(statusText(status))}</span>
+              ${promo ? `<span class="badge paid">paid</span>` : ""}
+            </span>
+          </button>
+        `;
+      }).join("");
+      els.leadList.querySelectorAll(".lead-row").forEach(button => {
+        button.addEventListener("click", () => {
+          state.selectedKey = button.dataset.key;
+          renderAll();
+        });
+      });
+    }
+
+    function renderDetails() {
+      const lead = selectedLead();
+      if (!lead) return;
+      const status = reviewStatus(lead);
+      const promo = state.promos[lead.key] || {};
+      const ticket = ticketUrl(lead);
+      const routed = routedTicketUrl(lead);
+      const distribution = state.distribution[lead.key] || {};
+
+      els.detailTitle.textContent = lead.title;
+      els.detailStatus.textContent = statusText(status);
+      els.detailSummary.textContent = lead.description;
+      els.detailFacts.innerHTML = [
+        ["日期", `${lead.displayDate} ${lead.time}`],
+        ["场地", `${lead.venue} / ${lead.district}`],
+        ["Promoter", lead.organizer],
+        ["风格", lead.genre],
+        ["票价", lead.price],
+        ["来源", lead.sourceLabel],
+        ["年龄/ID", lead.age],
+        ["数据层", sourceLayerLabel(lead)],
+        ["分发", `微信 ${distribution.wechat ? "已发" : "未发"} / 小红书 ${distribution.xhs ? "已发" : "未发"}`]
+      ].map(([label, value]) => `<div class="fact"><span>${escapeHtml(label)}</span><b>${escapeHtml(value)}</b></div>`).join("");
+      els.detailChips.innerHTML = [
+        `<span class="chip ${status}">${escapeHtml(statusText(status))}</span>`,
+        `<span class="chip">${escapeHtml(lead.confidence)}</span>`,
+        `<span class="chip">${escapeHtml(lead.type)}</span>`,
+        promo.package ? `<span class="chip paid">${escapeHtml(promo.package)}</span>` : "",
+        lead.source ? `<a class="chip" href="${escapeHtml(lead.source)}" target="_blank" rel="noopener noreferrer">打开来源</a>` : ""
+      ].filter(Boolean).join("");
+      els.reviewActions.innerHTML = ["approved", "needs-check", "rejected", "pending"].map(next => `
+        <button class="review-button ${status === next ? "active" : ""}" data-status="${next}" type="button">${escapeHtml(statusText(next))}</button>
+      `).join("");
+      els.reviewActions.querySelectorAll(".review-button").forEach(button => {
+        button.addEventListener("click", () => {
+          state.review[lead.key] = {
+            status: button.dataset.status,
+            updatedAt: new Date().toISOString()
+          };
+          writeStore(reviewStorageKey, state.review);
+          renderAll();
+        });
+      });
+
+      els.publishCopy.value = publishCopy(lead, state.channel);
+      els.ticketInput.value = ticket;
+      els.openTicket.href = routed || lead.source || "#";
+      els.ticketRouteText.textContent = routed ? `当前导票追踪链接：${routed}` : "还没有可用导票链接，保存 ticketUrl 后可复制追踪链接。";
+      els.promoPackage.value = promo.package || "";
+      els.promoBudget.value = promo.budget || "";
+      els.promoUntil.value = promo.paidUntil || "";
+      els.promoNote.value = promo.note || "";
+      els.promoStatus.textContent = promo.package ? `${promo.package}${promo.budget ? ` / ${promo.budget} RMB` : ""}` : "no package";
+    }
+
+    function renderMetrics() {
+      const rows = state.leads;
+      const pending = rows.filter(lead => reviewStatus(lead) === "pending").length;
+      const approved = rows.filter(lead => reviewStatus(lead) === "approved").length;
+      const noTicket = rows.filter(lead => lead.type === "event" && !state.tickets[lead.key] && !(lead.raw?.ticketUrl || lead.raw?.ticket)).length;
+      const paid = Object.values(state.promos).filter(item => item.package).length;
+      els.metricEvents.textContent = rows.length;
+      els.metricPending.textContent = pending;
+      els.metricApproved.textContent = approved;
+      els.metricNoTicket.textContent = noTicket;
+      els.metricPaid.textContent = paid;
+      els.metricSources.textContent = Array.isArray(state.payload?.sources) ? state.payload.sources.length : 0;
+      els.reportStamp.textContent = todayString();
+    }
+
+    function countBy(items, getKey) {
+      const counts = new Map();
+      items.forEach(item => {
+        const key = getKey(item) || "Unknown";
+        counts.set(key, (counts.get(key) || 0) + 1);
+      });
+      return Array.from(counts.entries()).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+    }
+
+    function renderBars() {
+      const eventLeads = state.leads.filter(lead => lead.type === "event");
+      const counts = countBy(eventLeads, lead => lead.venue).slice(0, 8);
+      const max = Math.max(1, ...counts.map(item => item[1]));
+      els.venueBars.innerHTML = counts.map(([label, count]) => `
+        <div class="bar-row">
+          <span>${escapeHtml(label)}</span>
+          <span class="bar-track"><span class="bar-fill" style="--w:${Math.round(count / max * 100)}%"></span></span>
+          <b>${count}</b>
+        </div>
+      `).join("") || `<p class="summary">暂无活动数据。</p>`;
+
+      const promos = Object.entries(state.promos).filter(([, promo]) => promo.package);
+      els.promoList.innerHTML = promos.length ? promos.slice(0, 8).map(([key, promo]) => {
+        const lead = state.leads.find(item => item.key === key);
+        return `
+          <div class="source-row">
+            <b>${escapeHtml(lead?.title || key)}</b>
+            <span>${escapeHtml(`${promo.package}${promo.budget ? ` / ${promo.budget} RMB` : ""}`)}</span>
+          </div>
+        `;
+      }).join("") : `<p class="summary">还没有保存付费曝光档位。</p>`;
+    }
+
+    function renderSourceHealth() {
+      const sources = Array.isArray(state.payload?.sources) ? state.payload.sources : [];
+      els.sourceTable.innerHTML = sources.slice(0, 20).map(source => {
+        const status = source.ok ? "ok" : (source.status || source.error || "blocked");
+        return `
+          <div class="source-row">
+            <b>${escapeHtml(source.label || source.url || "Source")}</b>
+            <span>${escapeHtml(`${source.kind || source.sourceStatus || "source"} / ${status}`)}</span>
+          </div>
+        `;
+      }).join("") || `<p class="summary">抓取源会在 data/events.json 生成后显示。</p>`;
+    }
+
+    function renderAll() {
+      renderMetrics();
+      renderLeadList();
+      renderDetails();
+      renderBars();
+      renderSourceHealth();
+    }
+
+    function exportOpsJson() {
+      const payload = {
+        exportedAt: new Date().toISOString(),
+        generatedFrom: dataPath,
+        review: state.review,
+        ticketRoutes: state.tickets,
+        promoterExposure: state.promos,
+        distribution: state.distribution,
+        approvedEvents: state.leads
+          .filter(lead => lead.type === "event" && reviewStatus(lead) === "approved")
+          .map(lead => ({
+            ...lead.raw,
+            reviewStatus: "approved",
+            ticketUrl: ticketUrl(lead),
+            promoterExposure: state.promos[lead.key] || null,
+            distribution: state.distribution[lead.key] || null
+          }))
+      };
+      downloadFile("rave-calendar-ops-export.json", `${JSON.stringify(payload, null, 2)}\n`, "application/json;charset=utf-8");
+    }
+
+    function dailyBrief() {
+      const rows = reportRows();
+      const approved = rows.filter(row => row.review_status === "approved").length;
+      const pending = rows.filter(row => row.review_status === "pending").length;
+      const needs = rows.filter(row => row.review_status === "needs-check").length;
+      const paid = rows.filter(row => row.promo_package).length;
+      const noTicket = rows.filter(row => row.type === "event" && !row.ticket_url).length;
+      return [
+        `上海 Rave Calendar 运营日报 ${todayString()}`,
+        `AI 抓取/整理：${rows.length} 条活动与线索`,
+        `人工审核：已批准 ${approved}，待审核 ${pending}，需确认 ${needs}`,
+        `分发：微信 ${rows.filter(row => row.wechat_published_at).length}，小红书 ${rows.filter(row => row.xhs_published_at).length}`,
+        `导票：${noTicket} 个活动缺少独立 ticketUrl`,
+        `Promoter 付费曝光：${paid} 个档位生效`,
+        `数据源：${Array.isArray(state.payload?.sources) ? state.payload.sources.length : 0} 个 source/keyword`
+      ].join("\n");
+    }
+
+    function bindControls() {
+      [els.leadSearch, els.reviewFilter, els.leadTypeFilter].forEach(control => {
+        control.addEventListener("input", renderAll);
+        control.addEventListener("change", renderAll);
+      });
+      document.querySelectorAll(".tab-button").forEach(button => {
+        button.addEventListener("click", () => {
+          state.channel = button.dataset.channel;
+          document.querySelectorAll(".tab-button").forEach(item => item.classList.toggle("active", item.dataset.channel === state.channel));
+          renderDetails();
+        });
+      });
+      els.copyPublish.addEventListener("click", () => copyText(els.publishCopy.value));
+      els.markPublished.addEventListener("click", () => {
+        const lead = selectedLead();
+        if (!lead) return;
+        const current = state.distribution[lead.key] || {};
+        state.distribution[lead.key] = { ...current, [state.channel]: new Date().toISOString() };
+        writeStore(distributionStorageKey, state.distribution);
+        renderAll();
+      });
+      els.exportDistribution.addEventListener("click", () => {
+        const rows = reportRows().filter(row => row.wechat_published_at || row.xhs_published_at || row.review_status === "approved");
+        downloadFile("rave-calendar-distribution.csv", `${toCsv(rows)}\n`, "text/csv;charset=utf-8");
+      });
+      els.saveTicket.addEventListener("click", () => {
+        const lead = selectedLead();
+        if (!lead) return;
+        const value = els.ticketInput.value.trim();
+        if (value) state.tickets[lead.key] = value;
+        else delete state.tickets[lead.key];
+        writeStore(ticketStorageKey, state.tickets);
+        renderAll();
+      });
+      els.copyTicket.addEventListener("click", () => {
+        const lead = selectedLead();
+        if (lead) copyText(routedTicketUrl(lead));
+      });
+      els.savePromo.addEventListener("click", () => {
+        const lead = selectedLead();
+        if (!lead) return;
+        const value = {
+          package: els.promoPackage.value,
+          budget: els.promoBudget.value,
+          paidUntil: els.promoUntil.value,
+          note: els.promoNote.value.trim(),
+          updatedAt: new Date().toISOString()
+        };
+        if (value.package) state.promos[lead.key] = value;
+        else delete state.promos[lead.key];
+        writeStore(promoStorageKey, state.promos);
+        renderAll();
+      });
+      els.copyPromoBrief.addEventListener("click", () => {
+        const lead = selectedLead();
+        if (lead) copyText(promoBrief(lead));
+      });
+      els.copyDailyBrief.addEventListener("click", () => copyText(dailyBrief()));
+      els.exportTicketsCsv.addEventListener("click", () => {
+        const rows = reportRows().filter(row => row.type === "event").map(row => ({
+          key: row.key,
+          title: row.title,
+          date: row.date,
+          venue: row.venue,
+          organizer: row.organizer,
+          review_status: row.review_status,
+          ticket_url: row.ticket_url,
+          routed_ticket_url: row.routed_ticket_url,
+          source: row.source
+        }));
+        downloadFile("rave-calendar-ticket-routes.csv", `${toCsv(rows)}\n`, "text/csv;charset=utf-8");
+      });
+      els.exportOpsJson.addEventListener("click", exportOpsJson);
+      els.exportReportCsv.addEventListener("click", () => {
+        downloadFile("rave-calendar-ops-report.csv", `${toCsv(reportRows())}\n`, "text/csv;charset=utf-8");
+      });
+    }
+
+    async function loadPayload() {
+      try {
+        const response = await fetch(dataPath, { cache: "no-store" });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const payload = await response.json();
+        state.payload = payload;
+        state.leads = buildLeads(payload);
+        state.selectedKey = state.leads[0]?.key || "";
+        const stamp = payload.generatedAt ? new Date(payload.generatedAt).toLocaleString("zh-CN", { timeZone: "Asia/Shanghai" }) : (payload.verified || verifiedFallback);
+        els.payloadStamp.textContent = stamp;
+      } catch (error) {
+        state.payload = { events: [], sources: [] };
+        state.leads = [];
+        els.payloadStamp.textContent = "load failed";
+        els.loadNotice.classList.remove("hidden");
+        els.loadNotice.textContent = `无法加载 ${dataPath}。请用 npx serve . 或 npm run start 启动本地 HTTP 服务后打开 /ops.html。错误：${error.message}`;
+      }
+      renderAll();
+    }
+
+    bindControls();
+    loadPayload();
+  </script>
+</body>
+</html>

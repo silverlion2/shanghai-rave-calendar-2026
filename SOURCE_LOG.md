@@ -4,10 +4,28 @@ Last refreshed: 2026-06-08, Asia/Shanghai.
 
 ## Source Priority
 
-1. Direct venue, promoter, ticketing, or official artist pages.
-2. Resident Advisor event pages and city listings.
-3. SmartShanghai event pages and monthly clubbing guide.
-4. Public social posts, WeChat mini-program references, Xiaohongshu, Douyin, Instagram, and reposts as discovery leads only.
+1. Chrome + Computer Use for known anti-bot, logged-in, app-only, poster/image, or mini-program sources.
+2. Direct venue, promoter, ticketing, or official artist pages.
+3. Resident Advisor event pages and city listings.
+4. SmartShanghai event pages and monthly clubbing guide.
+5. Public social posts, WeChat mini-program references, Xiaohongshu, Douyin, Instagram, and reposts as discovery leads only.
+
+Collection method is separate from confirmation strength: Chrome + Computer Use can discover or verify a source, but an event still needs a shareable official, ticketing, venue/promoter, RA, SmartShanghai, or artist/label reference before it is promoted from watch-level to upcoming.
+
+## Computer Use Collection Queue
+
+`scripts/scrape-events.js` writes `computerUseQueue` to `data/events.json` on every run. The queue is for sources where plain HTTP fetch is blocked, incomplete, login-bound, app-only, or image-first. These are agent-operated Chrome + Computer Use collection tasks, not human manual scraping:
+
+- RA Shanghai: use Chrome when city listing fetch returns 403, empty, or stale results.
+- SmartShanghai: use Chrome when listing/guide fetch times out or misses rendered event cards.
+- Xiaohongshu: logged-in search for `上海 techno`, `上海 rave`, `上海电子音乐`, `上海 club`, and poster/comment leads.
+- WeChat official accounts/groups: official announcements, ticket QR codes, set times, lineup changes, and cancellations.
+- Venue official accounts: WeChat, Instagram, Weibo, and other official venue feeds.
+- Promoter posters: image posts, stories, reposts, and OCR/extraction from posters.
+- Ticketing apps: 秀动, 大麦, 票星球, and mini-program ticket flows.
+- DJ/label accounts: Instagram, Weibo, WeChat, and Bandcamp tour or label-night announcements.
+
+Each Computer Use item should capture title, absolute date, start time, venue, lineup, ticket/source reference, source publication date, and screenshot/post reference when no public URL exists.
 
 ## 2026-06-08 Refresh
 
@@ -48,3 +66,4 @@ Use status: "watch" when a lead has only a calendar/editorial mention, missing t
 - Database requirement: none for V1. Add a database only when the project needs moderation queues, saved users, notifications, or high-frequency change history.
 - RA listing fetches are best-effort because RA may return 403 to automated requests. Existing RA event URLs remain stored as sources, while SmartShanghai public pages currently provide the reliable automated discovery layer.
 - X/Twitter searches are discovery-only. They are useful for venue/promoter chatter and short-notice leads, but they do not confirm calendar entries by themselves. Use `X_BEARER_TOKEN` or `TWITTER_BEARER_TOKEN` in GitHub Secrets for reliable recent-search collection.
+- Known anti-bot/app-only sources are queued under `computerUseQueue` and surfaced in `ops.html` as `computer-use` leads for agent-operated Chrome + Computer Use collection.

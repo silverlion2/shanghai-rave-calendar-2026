@@ -1,8 +1,9 @@
 {
-  "generatedAt": "2026-06-08T06:07:21.530Z",
+  "generatedAt": "2026-06-08T13:02:48.405Z",
   "verified": "2026-06-08",
   "timezone": "Asia/Shanghai",
   "sourcePriority": [
+    "Chrome + Computer Use for anti-bot, logged-in, app-only, image/poster, and mini-program sources",
     "Direct venue, promoter, ticketing, or official artist pages",
     "Resident Advisor event pages and city listings",
     "SmartShanghai event pages and monthly clubbing guide",
@@ -36,10 +37,9 @@
       "kind": "listing",
       "sourceStatus": "secondary",
       "checkedAt": "2026-06-08",
-      "ok": false,
-      "status": null,
-      "eventLinks": 0,
-      "error": "This operation was aborted"
+      "ok": true,
+      "status": 200,
+      "eventLinks": 10
     },
     {
       "label": "X/Twitter keyword: \"Shanghai\" techno",
@@ -248,6 +248,110 @@
       "status": null,
       "links": 0,
       "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+    },
+    {
+      "label": "RA Shanghai",
+      "url": "https://ra.co/events/cn/shanghai",
+      "kind": "computer-use-source",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-08",
+      "ok": null,
+      "status": "computer-use",
+      "priority": 1,
+      "cadence": "Daily; repeat Thu/Fri before the weekend",
+      "trigger": "Use Chrome + Computer Use when fetch returns 403, empty listings, or stale results."
+    },
+    {
+      "label": "SmartShanghai nightlife",
+      "url": "https://www.smartshanghai.com/events/clubbing/",
+      "kind": "computer-use-source",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-08",
+      "ok": null,
+      "status": "computer-use",
+      "priority": 1,
+      "cadence": "Daily; repeat after monthly clubbing guide updates",
+      "trigger": "Use Chrome + Computer Use when public fetch times out, returns incomplete markup, or misses event cards."
+    },
+    {
+      "label": "Xiaohongshu searches",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=%E4%B8%8A%E6%B5%B7%20techno",
+      "kind": "computer-use-source",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-08",
+      "ok": null,
+      "status": "computer-use",
+      "priority": 2,
+      "cadence": "Daily discovery; stronger pass Thu/Fri",
+      "trigger": "Use Chrome + Computer Use with logged-in search; do not rely on unauthenticated fetch."
+    },
+    {
+      "label": "WeChat official accounts and groups",
+      "url": "weixin://",
+      "kind": "computer-use-source",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-08",
+      "ok": null,
+      "status": "computer-use",
+      "priority": 1,
+      "cadence": "Daily for known accounts; urgent checks when leads mention ticket QR or set times",
+      "trigger": "Use Chrome + Computer Use or phone-side capture; WeChat articles, groups, and mini-programs are app/session bound."
+    },
+    {
+      "label": "Venue official accounts",
+      "url": "https://www.google.com/search?q=Shanghai+techno+venue+official+account",
+      "kind": "computer-use-source",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-08",
+      "ok": null,
+      "status": "computer-use",
+      "priority": 1,
+      "cadence": "Daily for active venues; repeat on event day",
+      "trigger": "Use Chrome + Computer Use when venue content is only in social feeds, stories, or app-only posts."
+    },
+    {
+      "label": "Promoter posters",
+      "url": "https://www.google.com/search?q=Shanghai+rave+promoter+poster",
+      "kind": "computer-use-source",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-08",
+      "ok": null,
+      "status": "computer-use",
+      "priority": 1,
+      "cadence": "Daily discovery; OCR/extract whenever a new poster appears",
+      "trigger": "Use Chrome + Computer Use to inspect image posts, stories, reposts, and posters that expose details only in the image."
+    },
+    {
+      "label": "Ticketing apps and mini-programs",
+      "url": "https://www.showstart.com/",
+      "kind": "computer-use-source",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-08",
+      "ok": null,
+      "status": "computer-use",
+      "priority": 1,
+      "cadence": "Daily; repeat before publishing any ticket CTA",
+      "trigger": "Use Chrome + Computer Use for app-only flows, mini-program tickets, captchas, login walls, or JS-rendered ticket pages."
+    },
+    {
+      "label": "DJ and label accounts",
+      "url": "https://www.instagram.com/explore/search/keyword/?q=Shanghai%20techno",
+      "kind": "computer-use-source",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-08",
+      "ok": null,
+      "status": "computer-use",
+      "priority": 2,
+      "cadence": "Every 2-3 days; daily for touring DJs already on the calendar",
+      "trigger": "Use Chrome + Computer Use for logged-in social feeds, stories, reposts, and platform search that blocks simple fetch."
     }
   ],
   "events": [
@@ -2102,6 +2206,72 @@
   "socialLeads": [],
   "discovered": [
     {
+      "url": "https://www.smartshanghai.com/event/nova-events-presents-sunset-sessions-flair-rooftop-party-2026-06-13-2",
+      "title": "",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false,
+      "error": "This operation was aborted"
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/horizon-rooftop-party-ft-erik-hagleton-fr-at-pop-american-brasserie",
+      "title": "Space Panda Presents: Horizon Rooftop Party ft. Erik Hagleton (FR)",
+      "parsed": true
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/sunset-sundays-skyline-dome-at-the-dome",
+      "title": "Sunset Sundays",
+      "parsed": true
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
+      "title": "ALTER. Pavillon",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false,
+      "error": "This operation was aborted"
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
+      "title": "Cyber Buddha: Electronic Nomads of Isan",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false,
+      "error": "This operation was aborted"
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/night-at-the-museum-back-to-the-90s-disco-night-2026-06-18",
+      "title": "",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false,
+      "error": "This operation was aborted"
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/nova-events-presents-summer-splash-pool-party-2026-06-27",
+      "title": "",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false,
+      "error": "This operation was aborted"
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/girls-night-out-skyline-dome-at-the-dome",
+      "title": "",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false,
+      "error": "This operation was aborted"
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/disco-ball-fridays-skyline-dome-at-the-dome",
+      "title": "",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false,
+      "error": "This operation was aborted"
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/a-full-afrowave-takeover-at-la-burg",
+      "title": "",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false,
+      "error": "This operation was aborted"
+    },
+    {
       "url": "https://ra.co/events/2461478",
       "title": "Milo Raad + Cosmjn",
       "sourceLabel": "Resident Advisor",
@@ -2119,7 +2289,8 @@
       "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
       "title": "Youshan Festival warmup",
       "sourceLabel": "SmartShanghai",
-      "parsed": false
+      "parsed": false,
+      "error": "This operation was aborted"
     },
     {
       "url": "https://ra.co/events/2458037",
@@ -2155,32 +2326,328 @@
       "sourceLabel": "Resident Advisor",
       "status": 403,
       "parsed": false
-    },
+    }
+  ],
+  "computerUseQueue": [
     {
-      "url": "https://ra.co/events/2453279",
-      "title": "REACTOR pres. Nosaj Thing",
-      "sourceLabel": "Resident Advisor",
-      "status": 403,
-      "parsed": false
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
-      "title": "ALTER. Pavillon",
-      "sourceLabel": "SmartShanghai",
+      "label": "RA Shanghai",
+      "platform": "Resident Advisor",
+      "url": "https://ra.co/events/cn/shanghai",
+      "priority": 1,
+      "cadence": "Daily; repeat Thu/Fri before the weekend",
+      "trigger": "Use Chrome + Computer Use when fetch returns 403, empty listings, or stale results.",
+      "collectionGoal": "Confirm event pages, dates, lineup, venue, price, and ticket links.",
+      "queries": [
+        "Shanghai",
+        "techno",
+        "rave",
+        "warehouse",
+        "Shanghai events"
+      ],
+      "evidence": [
+        "public event URL",
+        "event title",
+        "absolute date/time",
+        "venue",
+        "ticket/source link"
+      ],
+      "kind": "computer-use-source",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-08",
       "parsed": false,
-      "error": "This operation was aborted"
+      "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
+      "requiredFields": [
+        "title",
+        "absolute date",
+        "start time",
+        "venue",
+        "city/district",
+        "lineup",
+        "ticket/source URL or shareable app reference",
+        "source publication date"
+      ]
     },
     {
-      "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
-      "title": "Cyber Buddha: Electronic Nomads of Isan",
-      "sourceLabel": "SmartShanghai",
+      "label": "SmartShanghai nightlife",
+      "platform": "SmartShanghai",
+      "url": "https://www.smartshanghai.com/events/clubbing/",
+      "priority": 1,
+      "cadence": "Daily; repeat after monthly clubbing guide updates",
+      "trigger": "Use Chrome + Computer Use when public fetch times out, returns incomplete markup, or misses event cards.",
+      "collectionGoal": "Collect clubbing listings, monthly guide leads, venue pages, ticket links, and English descriptions.",
+      "queries": [
+        "clubbing",
+        "nightlife",
+        "techno",
+        "electronic",
+        "rave"
+      ],
+      "evidence": [
+        "listing URL",
+        "event URL",
+        "guide URL",
+        "date/time",
+        "venue",
+        "ticket/source link"
+      ],
+      "kind": "computer-use-source",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-08",
       "parsed": false,
-      "error": "This operation was aborted"
+      "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
+      "requiredFields": [
+        "title",
+        "absolute date",
+        "start time",
+        "venue",
+        "city/district",
+        "lineup",
+        "ticket/source URL or shareable app reference",
+        "source publication date"
+      ]
+    },
+    {
+      "label": "Xiaohongshu searches",
+      "platform": "Xiaohongshu",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=%E4%B8%8A%E6%B5%B7%20techno",
+      "priority": 2,
+      "cadence": "Daily discovery; stronger pass Thu/Fri",
+      "trigger": "Use Chrome + Computer Use with logged-in search; do not rely on unauthenticated fetch.",
+      "collectionGoal": "Discover local posts, poster screenshots, comments asking for links, and short-notice parties.",
+      "queries": [
+        "上海 techno",
+        "上海 rave",
+        "上海 电子音乐",
+        "上海 club",
+        "上海 周末去哪",
+        "上海 地下电子"
+      ],
+      "evidence": [
+        "post URL or screenshot reference",
+        "poster image",
+        "publisher handle",
+        "publish date",
+        "claimed event date"
+      ],
+      "kind": "computer-use-source",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-08",
+      "parsed": false,
+      "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
+      "requiredFields": [
+        "title",
+        "absolute date",
+        "start time",
+        "venue",
+        "city/district",
+        "lineup",
+        "ticket/source URL or shareable app reference",
+        "source publication date"
+      ]
+    },
+    {
+      "label": "WeChat official accounts and groups",
+      "platform": "WeChat",
+      "url": "weixin://",
+      "priority": 1,
+      "cadence": "Daily for known accounts; urgent checks when leads mention ticket QR or set times",
+      "trigger": "Use Chrome + Computer Use or phone-side capture; WeChat articles, groups, and mini-programs are app/session bound.",
+      "collectionGoal": "Confirm official announcements, ticket QR codes, set times, lineup changes, and cancellation notices.",
+      "queries": [
+        "venue account names",
+        "promoter account names",
+        "上海电子音乐",
+        "活动名称",
+        "DJ name"
+      ],
+      "evidence": [
+        "account name",
+        "article title",
+        "article URL when shareable",
+        "screenshot reference",
+        "publish date",
+        "ticket QR or mini-program name"
+      ],
+      "kind": "computer-use-source",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-08",
+      "parsed": false,
+      "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
+      "requiredFields": [
+        "title",
+        "absolute date",
+        "start time",
+        "venue",
+        "city/district",
+        "lineup",
+        "ticket/source URL or shareable app reference",
+        "source publication date"
+      ]
+    },
+    {
+      "label": "Venue official accounts",
+      "platform": "Venue WeChat/Instagram/Weibo",
+      "url": "https://www.google.com/search?q=Shanghai+techno+venue+official+account",
+      "priority": 1,
+      "cadence": "Daily for active venues; repeat on event day",
+      "trigger": "Use Chrome + Computer Use when venue content is only in social feeds, stories, or app-only posts.",
+      "collectionGoal": "Confirm venue-posted event details, address, door policy, age/ID rules, and last-minute updates.",
+      "queries": [
+        "Abyss Shanghai",
+        "POTENT Shanghai",
+        "EXIT Shanghai",
+        "Heim Shanghai",
+        "System Shanghai",
+        "Wigwam Shanghai",
+        "Reactor Shanghai"
+      ],
+      "evidence": [
+        "official account handle",
+        "post URL or screenshot reference",
+        "event poster",
+        "address",
+        "age/ID note"
+      ],
+      "kind": "computer-use-source",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-08",
+      "parsed": false,
+      "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
+      "requiredFields": [
+        "title",
+        "absolute date",
+        "start time",
+        "venue",
+        "city/district",
+        "lineup",
+        "ticket/source URL or shareable app reference",
+        "source publication date"
+      ]
+    },
+    {
+      "label": "Promoter posters",
+      "platform": "Promoter social/poster",
+      "url": "https://www.google.com/search?q=Shanghai+rave+promoter+poster",
+      "priority": 1,
+      "cadence": "Daily discovery; OCR/extract whenever a new poster appears",
+      "trigger": "Use Chrome + Computer Use to inspect image posts, stories, reposts, and posters that expose details only in the image.",
+      "collectionGoal": "Extract event name, date, start time, venue, lineup, ticket channel, and organizer from posters.",
+      "queries": [
+        "Shanghai rave poster",
+        "上海 rave 海报",
+        "上海 techno 海报",
+        "厂牌 上海 电子"
+      ],
+      "evidence": [
+        "poster image reference",
+        "source post URL",
+        "OCR text",
+        "organizer",
+        "ticket channel"
+      ],
+      "kind": "computer-use-source",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-08",
+      "parsed": false,
+      "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
+      "requiredFields": [
+        "title",
+        "absolute date",
+        "start time",
+        "venue",
+        "city/district",
+        "lineup",
+        "ticket/source URL or shareable app reference",
+        "source publication date"
+      ]
+    },
+    {
+      "label": "Ticketing apps and mini-programs",
+      "platform": "ShowStart/Damai/PiaoPlanet/mini-programs",
+      "url": "https://www.showstart.com/",
+      "priority": 1,
+      "cadence": "Daily; repeat before publishing any ticket CTA",
+      "trigger": "Use Chrome + Computer Use for app-only flows, mini-program tickets, captchas, login walls, or JS-rendered ticket pages.",
+      "collectionGoal": "Verify ticket availability, price tiers, doors time, refund policy, venue address, and purchase route.",
+      "queries": [
+        "秀动 上海 techno",
+        "大麦 上海 电子音乐",
+        "票星球 上海 rave",
+        "活动名称 票务"
+      ],
+      "evidence": [
+        "ticket URL or mini-program name",
+        "price tier",
+        "sale status",
+        "doors time",
+        "ticket platform"
+      ],
+      "kind": "computer-use-source",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-08",
+      "parsed": false,
+      "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
+      "requiredFields": [
+        "title",
+        "absolute date",
+        "start time",
+        "venue",
+        "city/district",
+        "lineup",
+        "ticket/source URL or shareable app reference",
+        "source publication date"
+      ]
+    },
+    {
+      "label": "DJ and label accounts",
+      "platform": "Instagram/Weibo/WeChat/Bandcamp",
+      "url": "https://www.instagram.com/explore/search/keyword/?q=Shanghai%20techno",
+      "priority": 2,
+      "cadence": "Every 2-3 days; daily for touring DJs already on the calendar",
+      "trigger": "Use Chrome + Computer Use for logged-in social feeds, stories, reposts, and platform search that blocks simple fetch.",
+      "collectionGoal": "Find tour announcements, label nights, release-party context, lineup confirmation, and artist-posted ticket links.",
+      "queries": [
+        "DJ name Shanghai",
+        "label name Shanghai",
+        "厂牌 上海",
+        "Bandcamp Shanghai techno"
+      ],
+      "evidence": [
+        "artist/label handle",
+        "post URL or screenshot reference",
+        "tour date",
+        "event title",
+        "ticket/source link"
+      ],
+      "kind": "computer-use-source",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-08",
+      "parsed": false,
+      "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
+      "requiredFields": [
+        "title",
+        "absolute date",
+        "start time",
+        "venue",
+        "city/district",
+        "lineup",
+        "ticket/source URL or shareable app reference",
+        "source publication date"
+      ]
     }
   ],
   "notes": [
     "This v1 scraper keeps curated embedded events as the seed dataset, refreshes source metadata, and adds parsable public event pages as watch/secondary entries.",
     "Events from listing/editorial pages remain watch-level until a direct venue, promoter, ticketing, or event page confirms details.",
-    "X keyword searches are discovery-only social leads and never promote an event into the calendar without confirmation from a stronger source."
+    "X keyword searches are discovery-only social leads and never promote an event into the calendar without confirmation from a stronger source.",
+    "Known anti-bot or app-only sources are queued for agent-operated Chrome + Computer Use collection instead of being scraped with plain fetch."
   ]
 }

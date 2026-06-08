@@ -1,6 +1,6 @@
 # Project Memory
 
-Last updated: 2026-06-08 20:06 Asia/Shanghai
+Last updated: 2026-06-08 21:00 Asia/Shanghai
 
 ## Project
 
@@ -23,8 +23,10 @@ The user finally asked to create a project memory and save the dialogue. This fi
 ## Current Architecture
 
 - `index.html` and `shanghai-rave-calendar-2026.html` contain embedded fallback event data and load `data/events.json` when served over HTTP.
+- `planner.html` is the standalone set-time planner and personal itinerary surface. It estimates missing parseable slots, stores selected itinerary rows in browser `localStorage`, and exports selected slots as `.ics` or PNG.
+- `ops.html` is a static operations console for AI intake review, WeChat/Xiaohongshu copy, ticket routing exports, promoter paid-exposure tracking, and ops reports. It stores operator state in browser `localStorage` and exports JSON/CSV for review.
 - `data/events.json` is the generated static data file used by the website in deployed or local-server mode.
-- `scripts/scrape-events.js` seeds from embedded events, refreshes source metadata, scrapes public SmartShanghai pages, best-effort checks RA, and records X/Twitter keyword searches.
+- `scripts/scrape-events.js` seeds from embedded events, refreshes source metadata, scrapes public SmartShanghai pages, best-effort checks RA, records X/Twitter keyword searches, and writes `computerUseQueue` for anti-bot/app-only sources that the agent should inspect with Chrome + Computer Use.
 - `.github/workflows/scrape-events.yml` runs the scraper daily and commits changed `data/events.json` back to GitHub.
 - `scripts/check.js` validates inline script syntax, parity between the main and archive calendar scripts, SEO markers, `data/events.json`, and `config/scrape-keywords.json`.
 - `config/scrape-keywords.json` is the editable X/Twitter keyword list.
@@ -36,6 +38,7 @@ The user finally asked to create a project memory and save the dialogue. This fi
 3. SmartShanghai event pages, clubbing listings, and editorial guides are reliable public discovery and context sources.
 4. WeChat official accounts and mini-programs are often the final ticket/set-time source, but are not reliably linkable from the static scraper.
 5. X/Twitter, Xiaohongshu, Douyin, Instagram, Weibo, reposts, and app-only content are discovery leads unless independently confirmed.
+6. RA Shanghai when blocked, SmartShanghai when rendered/incomplete, Xiaohongshu, WeChat accounts/groups, venue accounts, promoter posters, ShowStart/Damai/PiaoPlanet/mini-program ticketing, and DJ/label Instagram/Weibo/WeChat/Bandcamp are queued for Chrome + Computer Use instead of plain fetch.
 
 ## X/Twitter Integration
 
@@ -48,13 +51,19 @@ X/Twitter support is keyword-based and discovery-only.
 - To attempt public HTML search, set `SCRAPE_X_PUBLIC_SEARCH=true`, but expect blocked or empty responses.
 - Results, when available, are written to `data/events.json.socialLeads`.
 
+## Computer Use Collection Queue
+
+`data/events.json.computerUseQueue` is generated on each scrape run and surfaced in `ops.html` as `computer-use` leads. It covers RA Shanghai, SmartShanghai, Xiaohongshu, WeChat official accounts/groups, venue official accounts, promoter posters, ShowStart/Damai/PiaoPlanet/mini-program ticketing, and DJ/label Instagram, Weibo, WeChat, or Bandcamp pages. These are agent-operated Chrome + Computer Use collection tasks and should capture source URL or screenshot reference, title, absolute date, start time, venue, lineup, ticket route, source publication date, and evidence type.
+
 ## Known Caveats
 
 - RA city listing fetches currently return 403 to automated requests. Existing RA event URLs remain stored as event sources, but RA listing discovery is best-effort.
 - SmartShanghai public pages are currently the reliable automated discovery layer.
 - X/Twitter collection needs an API bearer token for reliable results.
+- Anti-bot, logged-in, app-only, mini-program, and poster/image-first sources should be handled through the generated Computer Use queue; do not add captcha/login bypass logic to the GitHub Action scraper.
 - Social leads should not be promoted into calendar cards without confirmation from RA, SmartShanghai, venue/promoter, ticketing, or another stronger source.
 - The site is static, so live user features, moderation queues, notifications, or saved events would require a later database-backed version.
+- The ops console provides a local/export workflow for review, publishing copy, ticket routes, promoter packages, and reports, but it does not replace a real backend for multi-user moderation, payment processing, direct social posting, or durable analytics.
 
 ## Verification History
 
@@ -92,7 +101,8 @@ Later work expanded the static site beyond the original scraper/calendar:
 - Visible calendar columns now expand across the available horizontal space, so fewer visible weekday columns produce wider cells on desktop while still fitting mobile.
 - Event modals include organizer facts, source count, last checked, source layer, DJ set times, DJ notes, details/tickets links, profile links, and individual `.ics` export.
 - The calendar supports Tonight, This Weekend, Next 30 Days, Newly Added, venue/promoter filters, status filters, vibe filters, and filtered `.ics` export.
-- Set-time planning now estimates missing parseable DJ slots from event windows and lineup order, clearly marks estimated slots, lets users select itinerary rows, persists selected slots in `localStorage`, and exports selected itinerary `.ics` or PNG images.
+- `planner.html` now handles set-time planning as a standalone page. It estimates missing parseable DJ slots from event windows and lineup order, clearly marks estimated slots, lets users select itinerary rows, persists selected slots in `localStorage`, and exports selected itinerary `.ics` or PNG images.
+- `ops.html` adds the requested operator workflow: AI scrape intake, human review, WeChat/Xiaohongshu publishing copy, ticket-route overrides, promoter paid-exposure package tracking, and data report exports.
 - The DJ database now includes estimated set-time status, estimated-slot filtering, and profile counts for exact versus estimated slots.
 - The calendar hero no longer presents a top-level `RA + SmartShanghai + official/ticket pages` source pill. It retains `Asia/Shanghai dates`, generated visual-poster labeling, Shanghai Bund CC0 hero-photo attribution, the venue and crew guide link, and the DJ database link.
 - `venues.html` and `djs.html` include an explicit `Rave calendar` return link.
@@ -112,9 +122,10 @@ GitHub state:
 - Visibility: public
 - Default branch: `main`
 - Remote: `origin` -> `https://github.com/silverlion2/shanghai-rave-calendar-2026.git`
-- Current feature push is titled `Refine calendar navigation and itinerary planning`.
+- Current feature push is titled `Add ops console and Computer Use queue`.
 - Recent calendar UI commits:
   - `b5fefdd Refine calendar navigation and itinerary planning`
+  - `ee2c89a Move set-time planner to standalone page`
   - `b418477 Add project memory`
   - `f30578b Focus calendar on future events`
   - `bf0b3a7 Expand calendar cells across available width`
