@@ -1,6 +1,6 @@
 # Project Memory
 
-Last updated: 2026-06-08 21:30 Asia/Shanghai
+Last updated: 2026-06-08 23:44 Asia/Shanghai
 
 ## Project
 
@@ -124,8 +124,12 @@ GitHub state:
 - Visibility: public
 - Default branch: `main`
 - Remote: `origin` -> `https://github.com/silverlion2/shanghai-rave-calendar-2026.git`
-- Current feature push is titled `Add ops console and Computer Use queue`.
+- Latest pushed commit: `1cec13a Refresh curated event data`.
+- Previous feature push was titled `Add ops console and Computer Use queue`.
+- Current local worktree after that push is clean except for untracked `SOCIAL_MEDIA_ACQUISITION_PLAN.md`, which was intentionally not included because it is an unrelated, encoding-corrupted acquisition-plan draft.
 - Recent calendar UI commits:
+  - `1cec13a Refresh curated event data`
+  - `a303c56 Add ops console and Computer Use queue`
   - `b5fefdd Refine calendar navigation and itinerary planning`
   - `ee2c89a Move set-time planner to standalone page`
   - `b418477 Add project memory`
@@ -156,5 +160,6 @@ Recent verification:
 - `npm run check` passed after moving the set-time planner to standalone `planner.html`; local HTTP and DOM smoke checks confirmed the planner page returned 200 and rendered exact plus estimated rows from real data.
 - Local browser verification on `http://127.0.0.1:4879` confirmed the hero pills, retained guide links, venue/DJ return navigation, and no console errors. The temporary server was stopped after verification.
 - `npm run scrape` and `npm run check` passed after adding the 2026-06-08 browser/Computer Use curated refresh. Local Playwright verification on `http://localhost:4177` confirmed FRUITYGROOVE deep-link modal details and Sunset Sundays watch-card rendering; the temporary server was stopped after verification.
+- Commit `1cec13a Refresh curated event data` was pushed to `origin/main` after staging the curated event refresh, generated data, scraper/check updates, and related website/documentation changes.
 - Vercel production was redeployed after the organizer update.
 - GitHub repo was created, all project files were committed, and `main` was pushed.
