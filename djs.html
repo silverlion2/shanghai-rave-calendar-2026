@@ -735,15 +735,18 @@
     .roster-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-auto-rows: 8px;
       gap: 8px;
+      align-items: start;
       padding: 14px;
     }
 
     .dj-card {
-      min-height: 164px;
       display: grid;
-      grid-template-rows: auto 1fr auto;
+      grid-template-rows: auto auto auto;
       gap: 8px;
+      width: 100%;
+      min-width: 0;
       border: 1px solid rgba(255,255,255,.1);
       border-radius: 6px;
       background: rgba(0,0,0,.18);
@@ -782,6 +785,10 @@
       border: 1px dashed rgba(255,255,255,.2);
       border-radius: 6px;
       margin: 14px;
+    }
+
+    .roster-grid > .empty-state {
+      grid-column: 1 / -1;
     }
 
     .footnotes {
@@ -995,6 +1002,7 @@
     const resultCount = document.getElementById("resultCount");
     const djSummary = document.getElementById("djSummary");
     const clearFilters = document.getElementById("clearFilters");
+    let masonryFrame = 0;
 
     function escapeHtml(value) {
       return String(value == null ? "" : value).replace(/[&<>"']/g, char => ({
@@ -1788,6 +1796,7 @@
     function renderRoster(list) {
       if (!list.length) {
         rosterGrid.innerHTML = '<div class="empty-state">No profiles match the current filters.</div>';
+        scheduleMasonryLayout();
         return;
       }
       rosterGrid.innerHTML = list.slice(0, 42).map(profile => {
@@ -1801,6 +1810,29 @@
           </button>
         `;
       }).join("");
+      scheduleMasonryLayout();
+    }
+
+    function applyMasonryLayout() {
+      const style = getComputedStyle(rosterGrid);
+      const rowHeight = parseFloat(style.gridAutoRows) || 8;
+      const rowGap = parseFloat(style.rowGap) || 0;
+      const items = rosterGrid.querySelectorAll(".dj-card");
+      items.forEach(item => {
+        item.style.gridRowEnd = "";
+      });
+      items.forEach(item => {
+        const span = Math.max(1, Math.ceil((item.scrollHeight + rowGap) / (rowHeight + rowGap)));
+        item.style.gridRowEnd = `span ${span}`;
+      });
+    }
+
+    function scheduleMasonryLayout() {
+      if (masonryFrame) cancelAnimationFrame(masonryFrame);
+      masonryFrame = requestAnimationFrame(() => {
+        applyMasonryLayout();
+        masonryFrame = 0;
+      });
     }
 
     function renderApp() {
@@ -1874,6 +1906,7 @@
           renderApp();
         }
       });
+      window.addEventListener("resize", scheduleMasonryLayout);
     }
 
     async function boot() {
