@@ -163,3 +163,31 @@ Recent verification:
 - Commit `1cec13a Refresh curated event data` was pushed to `origin/main` after staging the curated event refresh, generated data, scraper/check updates, and related website/documentation changes.
 - Vercel production was redeployed after the organizer update.
 - GitHub repo was created, all project files were committed, and `main` was pushed.
+
+## 2026-06-11 DJ Entity Audit Refresh
+
+The user asked to update the automatic review mechanism for DJs, organizers, and venues because some organizers/venues were appearing in the DJ database.
+
+Implemented changes:
+
+- `scripts/scrape-events.js` now audits performer entities before writing generated data. It filters placeholder entries such as `9 DJs TBA`, `Multi-floor DJs TBA`, and `DJ music TBA`, venue aliases such as `Abyss`, `Specters`, and `Wigwam`, and obvious organizer/crew/stage/room context names unless the item has explicit performer evidence.
+- `scripts/scrape-events.js` now rewrites `data/dj-data.js` alongside `data/events.json`, so the DJ fallback data stays in sync with every scrape.
+- `djs.html` has a runtime defensive filter for the same DJ/organizer/venue classification problem, so stale or externally loaded data cannot easily create venue/organizer profiles.
+- `scripts/check.js` validates both `data/events.json` and `data/dj-data.js` to block non-performer lineup entries from returning.
+- `.github/workflows/scrape-events.yml` now commits both generated files: `data/events.json` and `data/dj-data.js`.
+
+Refresh and verification:
+
+- `npm run scrape` completed on 2026-06-11 and wrote 61 events, 11 discovered links, 0 social leads, 8 Computer Use sources, and 12 curated updates.
+- Generated data reports 29 current `upcoming` or `watch` events, `verified: 2026-06-11`, and 61 DJ fallback events.
+- `npm run check` passed after the new entity-audit validation.
+- Data spot checks confirmed the generated event lineups no longer contain the known placeholder, venue, or organizer names that previously polluted the DJ layer. Remaining keyword matches such as `Linear System` and `LOMOROOM` are legitimate artist names.
+
+Local preview:
+
+- `http://localhost:4881/djs.html` returned HTTP content successfully from a local `serve` process.
+- The in-app Browser plugin blocked localhost/file navigation with client policy, so final UI verification used local HTTP and generated-data checks instead of Browser DOM inspection.
+
+Working tree caution:
+
+- Separate uncommitted/untracked tracker/acquisition-plan files existed during this work (`README.md`, `SOURCE_LOG.md`, `SOCIAL_MEDIA_ACQUISITION_PLAN.md`, and `data/tracked-dj-itineraries.js`). Do not assume those belong to the DJ entity-audit refresh unless explicitly requested.

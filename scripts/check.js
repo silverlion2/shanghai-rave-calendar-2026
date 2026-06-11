@@ -28,6 +28,128 @@ const requiredPublishedCuratedEventIds = [
   "sunset-sundays-dome",
 ];
 
+const knownNonPerformerNames = new Set([
+  "abibas club",
+  "abyss",
+  "abyss residents",
+  "abyss support",
+  "arcane",
+  "arcane shanghai hotel",
+  "cocarde crew",
+  "heim x alter",
+  "hotl4b",
+  "house of visions",
+  "knot",
+  "love bang",
+  "met underground festival",
+  "onefortyasia room",
+  "shanghai hotel",
+  "space panda",
+  "space panda support",
+  "specters",
+  "system",
+  "system selectors",
+  "wigwam",
+  "youshan festival",
+]);
+
+function normalizeEntityName(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim()
+    .replace(/\s+/g, " ");
+}
+
+function splitEntityNames(value) {
+  return String(value || "")
+    .split(/\s+\/\s+/)
+    .map(item => item.trim())
+    .filter(Boolean);
+}
+
+function performerNameFromLineupItem(item) {
+  if (typeof item === "string") return item;
+  return item?.name || item?.dj || item?.artist || "";
+}
+
+function lineupItemNote(item) {
+  return item && typeof item === "object" ? String(item.note || item.description || "") : "";
+}
+
+function lineupItemRole(item) {
+  return item && typeof item === "object" ? normalizeEntityName(item.entityType || item.role || item.type || "") : "";
+}
+
+function isPlaceholderPerformerName(name) {
+  const normalized = normalizeEntityName(name);
+  return !normalized
+    || /\btba\b/.test(normalized)
+    || /\b\d+\s*djs?\b/.test(normalized)
+    || /\bmulti\s*floor\s*djs?\b/.test(normalized)
+    || /\bdj\s*music\b/.test(normalized);
+}
+
+function venueAliases(event = {}) {
+  const aliases = new Set();
+  const add = value => {
+    const normalized = normalizeEntityName(value);
+    if (normalized && normalized.length >= 3) aliases.add(normalized);
+  };
+  add(event.venue);
+  splitEntityNames(event.venue).forEach(add);
+  const venue = normalizeEntityName(event.venue);
+  if (venue.endsWith(" shanghai")) add(venue.replace(/\s+shanghai$/, ""));
+  if (venue.startsWith("the ")) add(venue.replace(/^the\s+/, ""));
+  return aliases;
+}
+
+function hasPerformerEvidence(name, item) {
+  const role = lineupItemRole(item);
+  if (/^(artist|dj|performer|live|live act|live set|musician)$/.test(role)) return true;
+  const text = `${normalizeEntityName(name)} ${normalizeEntityName(lineupItemNote(item))}`;
+  return /\b(dj|producer|artist|selector|performer|headliner|live act|live set|opening slot|closing artist|lineup artist|booked|listed artist|listed from)\b/.test(text);
+}
+
+function hasNonPerformerRole(item) {
+  return /^(organizer|organiser|venue|crew|promoter|label|room|stage|placeholder|context)$/.test(lineupItemRole(item));
+}
+
+function isNonPerformerName(name, item, event = {}) {
+  const normalized = normalizeEntityName(name);
+  if (isPlaceholderPerformerName(name)) return true;
+  if (knownNonPerformerNames.has(normalized)) return true;
+  if (venueAliases(event).has(normalized)) return true;
+  if (hasNonPerformerRole(item)) return true;
+
+  const organizer = normalizeEntityName(event.organizer);
+  if (organizer && organizer === normalized && !hasPerformerEvidence(name, item)) return true;
+
+  const note = normalizeEntityName(lineupItemNote(item));
+  const nonPerformerNameCue = /\b(crew|promoter|organizer|organiser|collective|festival|room|stage|floor|venue|support|residents?|selectors?|hosts?)\b/.test(normalized);
+  const nonPerformerNoteCue = /\b(promoter context|festival context|party concept|theme note|room context|support context|venue context|organizer|organiser|rather than a single|club institution)\b/.test(note);
+  return (nonPerformerNameCue || nonPerformerNoteCue) && !hasPerformerEvidence(name, item);
+}
+
+function assertNoNonPerformerLineups(events, lineups = {}) {
+  for (const event of events) {
+    const items = [
+      ...(Array.isArray(event.lineup) ? event.lineup : []),
+      ...(Array.isArray(lineups[event.id]) ? lineups[event.id] : []),
+    ];
+
+    for (const item of items) {
+      const name = performerNameFromLineupItem(item);
+      for (const part of splitEntityNames(name)) {
+        if (isNonPerformerName(part, item, event)) {
+          throw new Error(`venue/organizer entered DJ lineup for ${event.id}: ${part}`);
+        }
+      }
+    }
+  }
+}
+
 for (const file of [...htmlFiles, ...syntaxOnlyHtmlFiles]) {
   const html = fs.readFileSync(file, "utf8");
   const scripts = Array.from(html.matchAll(scriptPattern), match => match[1]);
@@ -58,6 +180,17 @@ for (const file of externalJsFiles) {
     throw new Error(`${file} is required for the DJ database page`);
   }
   new Function(fs.readFileSync(file, "utf8"));
+}
+
+let djSourceData = null;
+if (fs.existsSync("data/dj-data.js")) {
+  const context = { window: {} };
+  new Function("window", fs.readFileSync("data/dj-data.js", "utf8"))(context.window);
+  djSourceData = context.window.DJ_SOURCE_DATA || null;
+  if (!djSourceData || !Array.isArray(djSourceData.events)) {
+    throw new Error("data/dj-data.js must expose window.DJ_SOURCE_DATA.events");
+  }
+  assertNoNonPerformerLineups(djSourceData.events, djSourceData.lineups || {});
 }
 
 const mainScript = fs.readFileSync("index.html", "utf8").match(scriptPattern)[1];
@@ -149,6 +282,7 @@ if (fs.existsSync("data/events.json")) {
       throw new Error(`event ${event.id} must have at least one vibe in data/events.json`);
     }
   }
+  assertNoNonPerformerLineups(events);
 
   if (fs.existsSync("config/curated-events.json")) {
     if (typeof payload.curatedEventsApplied !== "number" || payload.curatedEventsApplied < requiredCuratedEventIds.length) {

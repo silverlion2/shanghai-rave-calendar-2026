@@ -6,6 +6,7 @@ const ROOT = path.resolve(__dirname, "..");
 const INDEX_HTML = path.join(ROOT, "index.html");
 const DATA_DIR = path.join(ROOT, "data");
 const DATA_FILE = path.join(DATA_DIR, "events.json");
+const DJ_DATA_FILE = path.join(DATA_DIR, "dj-data.js");
 const KEYWORD_CONFIG_FILE = path.join(ROOT, "config", "scrape-keywords.json");
 const CURATED_EVENTS_FILE = path.join(ROOT, "config", "curated-events.json");
 const TIME_ZONE = "Asia/Shanghai";
@@ -329,6 +330,128 @@ function stripTags(value) {
 
 function cleanText(value) {
   return stripTags(value).replace(/\s+/g, " ").trim();
+}
+
+const KNOWN_NON_PERFORMER_NAMES = new Set([
+  "abibas club",
+  "abyss",
+  "abyss residents",
+  "abyss support",
+  "arcane",
+  "arcane shanghai hotel",
+  "cocarde crew",
+  "heim x alter",
+  "hotl4b",
+  "house of visions",
+  "knot",
+  "love bang",
+  "met underground festival",
+  "onefortyasia room",
+  "shanghai hotel",
+  "space panda",
+  "space panda support",
+  "specters",
+  "system",
+  "system selectors",
+  "wigwam",
+  "youshan festival",
+]);
+
+function normalizeEntityName(value) {
+  return cleanText(value)
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim()
+    .replace(/\s+/g, " ");
+}
+
+function splitEntityNames(value) {
+  return String(value || "")
+    .split(/\s+\/\s+/)
+    .map(item => item.trim())
+    .filter(Boolean);
+}
+
+function lineupItemName(item) {
+  if (typeof item === "string") return item;
+  return item?.name || item?.dj || item?.artist || "";
+}
+
+function lineupItemNote(item) {
+  return typeof item === "object" && item ? cleanText(item.note || item.description || "") : "";
+}
+
+function lineupItemRole(item) {
+  if (!item || typeof item !== "object") return "";
+  return normalizeEntityName(item.entityType || item.role || item.type || "");
+}
+
+function isPlaceholderPerformerName(name) {
+  const normalized = normalizeEntityName(name);
+  return !normalized
+    || /\btba\b/.test(normalized)
+    || /\b\d+\s*djs?\b/.test(normalized)
+    || /\bmulti\s*floor\s*djs?\b/.test(normalized)
+    || /\bdj\s*music\b/.test(normalized);
+}
+
+function venueAliases(event = {}) {
+  const aliases = new Set();
+  const add = value => {
+    const normalized = normalizeEntityName(value);
+    if (normalized && normalized.length >= 3) aliases.add(normalized);
+  };
+  add(event.venue);
+  for (const part of splitEntityNames(event.venue)) add(part);
+  const venue = normalizeEntityName(event.venue);
+  if (venue.endsWith(" shanghai")) add(venue.replace(/\s+shanghai$/, ""));
+  if (venue.startsWith("the ")) add(venue.replace(/^the\s+/, ""));
+  return aliases;
+}
+
+function hasPerformerEvidence(name, item) {
+  const role = lineupItemRole(item);
+  if (/^(artist|dj|performer|live|live act|live set|musician)$/.test(role)) return true;
+  const text = `${normalizeEntityName(name)} ${normalizeEntityName(lineupItemNote(item))}`;
+  return /\b(dj|producer|artist|selector|performer|headliner|live act|live set|opening slot|closing artist|lineup artist|booked|listed artist|listed from)\b/.test(text);
+}
+
+function hasNonPerformerRole(item) {
+  return /^(organizer|organiser|venue|crew|promoter|label|room|stage|placeholder|context)$/.test(lineupItemRole(item));
+}
+
+function isNonPerformerName(name, item, event = {}) {
+  const normalized = normalizeEntityName(name);
+  if (isPlaceholderPerformerName(name)) return true;
+  if (KNOWN_NON_PERFORMER_NAMES.has(normalized)) return true;
+  if (venueAliases(event).has(normalized)) return true;
+  if (hasNonPerformerRole(item)) return true;
+
+  const organizer = normalizeEntityName(event.organizer);
+  if (organizer && organizer === normalized && !hasPerformerEvidence(name, item)) return true;
+
+  const note = normalizeEntityName(lineupItemNote(item));
+  const nonPerformerNameCue = /\b(crew|promoter|organizer|organiser|collective|festival|room|stage|floor|venue|support|residents?|selectors?|hosts?)\b/.test(normalized);
+  const nonPerformerNoteCue = /\b(promoter context|festival context|party concept|theme note|room context|support context|venue context|organizer|organiser|rather than a single|club institution)\b/.test(note);
+  return (nonPerformerNameCue || nonPerformerNoteCue) && !hasPerformerEvidence(name, item);
+}
+
+function auditedLineupItems(items, event = {}) {
+  if (!Array.isArray(items)) return [];
+  return items.flatMap(item => {
+    const note = lineupItemNote(item);
+    return splitEntityNames(lineupItemName(item))
+      .filter(name => !isNonPerformerName(name, item, event))
+      .map(name => (typeof item === "string" ? name : { ...item, name, note }));
+  });
+}
+
+function auditedSetTimes(items, event = {}) {
+  if (!Array.isArray(items)) return [];
+  return items.flatMap(item => splitEntityNames(lineupItemName(item))
+    .filter(name => !isNonPerformerName(name, item, event))
+    .map(name => ({ ...item, name })));
 }
 
 function metaContent(html, property) {
@@ -721,6 +844,22 @@ function normalizeEvent(event, sourceChecks) {
     status: normalized.sourceStatus,
     lastChecked: normalized.lastChecked,
   }];
+  if (normalized.lineup !== undefined) {
+    const lineup = auditedLineupItems(normalized.lineup, normalized);
+    if (lineup.length) {
+      normalized.lineup = lineup;
+    } else {
+      delete normalized.lineup;
+    }
+  }
+  if (normalized.setTimes !== undefined) {
+    const setTimes = auditedSetTimes(normalized.setTimes, normalized);
+    if (setTimes.length) {
+      normalized.setTimes = setTimes;
+    } else {
+      delete normalized.setTimes;
+    }
+  }
   for (const field of REQUIRED_EVENT_FIELDS) {
     if (normalized[field] === undefined || normalized[field] === null || normalized[field] === "") {
       throw new Error(`Event ${normalized.id} missing required field: ${field}`);
@@ -837,6 +976,39 @@ function applyCuratedEvents(events, curatedEvents, sourceChecks) {
     next[index] = normalizeEvent(merged, sourceChecks);
   }
   return next.sort((a, b) => a.sortDate.localeCompare(b.sortDate) || a.title.localeCompare(b.title));
+}
+
+function readExistingDjSourceData() {
+  if (!fs.existsSync(DJ_DATA_FILE)) return { events: [], lineups: {} };
+  const context = { window: {} };
+  try {
+    vm.runInNewContext(readText(DJ_DATA_FILE), context, { timeout: 1000 });
+    return context.window.DJ_SOURCE_DATA || { events: [], lineups: {} };
+  } catch (_) {
+    return { events: [], lineups: {} };
+  }
+}
+
+function writeDjSourceData(events) {
+  const existing = readExistingDjSourceData();
+  const eventById = new Map(events.map(event => [event.id, event]));
+  const existingEventById = new Map((existing.events || []).map(event => [event.id, event]));
+  const lineups = {};
+
+  for (const [eventId, items] of Object.entries(existing.lineups || {})) {
+    const event = eventById.get(eventId) || existingEventById.get(eventId) || { id: eventId };
+    const audited = auditedLineupItems(items, event);
+    if (audited.length) lineups[eventId] = audited;
+  }
+
+  const payload = {
+    generatedAt: shanghaiDateString(),
+    externalDataPath: "data/events.json",
+    calendarPath: "index.html",
+    events,
+    lineups,
+  };
+  fs.writeFileSync(DJ_DATA_FILE, `window.DJ_SOURCE_DATA = ${JSON.stringify(payload)};\n`);
 }
 
 async function main() {
@@ -995,7 +1167,8 @@ async function main() {
   };
 
   fs.writeFileSync(DATA_FILE, `${JSON.stringify(payload, null, 2)}\n`);
-  console.log(`Wrote ${path.relative(ROOT, DATA_FILE)} with ${events.length} events, ${payload.discovered.length} discovered links, ${payload.socialLeads.length} social leads, ${payload.computerUseQueue.length} Computer Use sources, and ${payload.curatedEventsApplied} curated updates.`);
+  writeDjSourceData(events);
+  console.log(`Wrote ${path.relative(ROOT, DATA_FILE)} and ${path.relative(ROOT, DJ_DATA_FILE)} with ${events.length} events, ${payload.discovered.length} discovered links, ${payload.socialLeads.length} social leads, ${payload.computerUseQueue.length} Computer Use sources, and ${payload.curatedEventsApplied} curated updates.`);
 }
 
 main()

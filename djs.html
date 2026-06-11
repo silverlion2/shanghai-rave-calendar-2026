@@ -835,6 +835,107 @@
       if (value.indexOf(" / ") === -1) return [value];
       return value.split(" / ").map(item => item.trim()).filter(Boolean);
     }
+    const knownNonPerformerNames = new Set([
+      "abibas club",
+      "abyss",
+      "abyss residents",
+      "abyss support",
+      "arcane",
+      "arcane shanghai hotel",
+      "cocarde crew",
+      "heim x alter",
+      "hotl4b",
+      "house of visions",
+      "knot",
+      "love bang",
+      "met underground festival",
+      "onefortyasia room",
+      "shanghai hotel",
+      "space panda",
+      "space panda support",
+      "specters",
+      "system",
+      "system selectors",
+      "wigwam",
+      "youshan festival"
+    ]);
+
+    function normalizeEntityName(value) {
+      return String(value || "")
+        .toLowerCase()
+        .replace(/<[^>]*>/g, " ")
+        .replace(/&/g, " and ")
+        .replace(/[^a-z0-9]+/g, " ")
+        .trim()
+        .replace(/\s+/g, " ");
+    }
+
+    function lineupItemName(item) {
+      if (typeof item === "string") return item;
+      return item && (item.name || item.dj || item.artist) || "";
+    }
+
+    function lineupItemNote(item) {
+      return item && typeof item === "object" ? String(item.note || item.description || "") : "";
+    }
+
+    function lineupItemRole(item) {
+      return item && typeof item === "object" ? normalizeEntityName(item.entityType || item.role || item.type || "") : "";
+    }
+
+    function isPlaceholderPerformerName(name) {
+      const normalized = normalizeEntityName(name);
+      return !normalized
+        || /\btba\b/.test(normalized)
+        || /\b\d+\s*djs?\b/.test(normalized)
+        || /\bmulti\s*floor\s*djs?\b/.test(normalized)
+        || /\bdj\s*music\b/.test(normalized);
+    }
+
+    function venueAliases(event) {
+      const aliases = new Set();
+      const add = value => {
+        const normalized = normalizeEntityName(value);
+        if (normalized && normalized.length >= 3) aliases.add(normalized);
+      };
+      add(event.venue);
+      splitPerformerNames(event.venue).forEach(add);
+      const venue = normalizeEntityName(event.venue);
+      if (venue.endsWith(" shanghai")) add(venue.replace(/\s+shanghai$/, ""));
+      if (venue.startsWith("the ")) add(venue.replace(/^the\s+/, ""));
+      return aliases;
+    }
+
+    function hasPerformerEvidence(name, item) {
+      const role = lineupItemRole(item);
+      if (/^(artist|dj|performer|live|live act|live set|musician)$/.test(role)) return true;
+      const text = normalizeEntityName(name) + " " + normalizeEntityName(lineupItemNote(item));
+      return /\b(dj|producer|artist|selector|performer|headliner|live act|live set|opening slot|closing artist|lineup artist|booked|listed artist|listed from)\b/.test(text);
+    }
+
+    function hasNonPerformerRole(item) {
+      return /^(organizer|organiser|venue|crew|promoter|label|room|stage|placeholder|context)$/.test(lineupItemRole(item));
+    }
+
+    function isNonPerformerName(name, item, event) {
+      const normalized = normalizeEntityName(name);
+      if (isPlaceholderPerformerName(name)) return true;
+      if (knownNonPerformerNames.has(normalized)) return true;
+      if (venueAliases(event).has(normalized)) return true;
+      if (hasNonPerformerRole(item)) return true;
+
+      const organizer = normalizeEntityName(event.organizer);
+      if (organizer && organizer === normalized && !hasPerformerEvidence(name, item)) return true;
+
+      const note = normalizeEntityName(lineupItemNote(item));
+      const nonPerformerNameCue = /\b(crew|promoter|organizer|organiser|collective|festival|room|stage|floor|venue|support|residents?|selectors?|hosts?)\b/.test(normalized);
+      const nonPerformerNoteCue = /\b(promoter context|festival context|party concept|theme note|room context|support context|venue context|organizer|organiser|rather than a single|club institution)\b/.test(note);
+      return (nonPerformerNameCue || nonPerformerNoteCue) && !hasPerformerEvidence(name, item);
+    }
+
+    function auditedPerformerNames(item, event) {
+      return splitPerformerNames(lineupItemName(item)).filter(name => !isNonPerformerName(name, item, event));
+    }
 
     function unique(values) {
       return Array.from(new Set(values.filter(Boolean)));
@@ -971,14 +1072,22 @@
     }
 
     function eventLineup(event) {
+      let rawLineup = [];
       if (Array.isArray(event.lineup) && event.lineup.length) {
-        return event.lineup.map(item => {
+        rawLineup = event.lineup.map(item => {
           if (typeof item === "string") return { name: item, note: "Lineup listed by the event source; exact set time may still need venue confirmation." };
           return { name: item.name || item.dj || item.artist || event.title, note: item.note || "Lineup listed by the event source." };
         });
+      } else if (sourceData.lineups && sourceData.lineups[event.id]) {
+        rawLineup = sourceData.lineups[event.id];
+      } else {
+        rawLineup = [{ name: event.title, note: "Lineup detail was limited in public sources; use the event source link before planning around a specific DJ." }];
       }
-      if (sourceData.lineups && sourceData.lineups[event.id]) return sourceData.lineups[event.id];
-      return [{ name: event.title, note: "Lineup detail was limited in public sources; use the event source link before planning around a specific DJ." }];
+
+      return rawLineup.flatMap(item => {
+        const note = item.note || "Lineup listed by the event source.";
+        return auditedPerformerNames(item, event).map(name => ({ name, note }));
+      });
     }
 
     function familyTagsFor(profile) {
@@ -1073,7 +1182,7 @@
         });
         if (Array.isArray(event.setTimes) && event.setTimes.length) {
           event.setTimes.forEach(slot => {
-            splitPerformerNames(slot.name || slot.dj || slot.artist).forEach(name => {
+            auditedPerformerNames(slot, event).forEach(name => {
               addAppearance(profileFor(name, event), event, slot.note || "Published DJ set time listed by the event source.", slot);
             });
           });
