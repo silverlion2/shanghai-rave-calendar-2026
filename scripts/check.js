@@ -150,6 +150,36 @@ function assertNoNonPerformerLineups(events, lineups = {}) {
   }
 }
 
+function assertLocalPosterAsset(event, contextLabel) {
+  if (event.posterEvidence === undefined) return;
+
+  const posterUrl = String(event.posterUrl || "").trim();
+  if (!posterUrl) {
+    throw new Error(`${contextLabel} ${event.id} has posterEvidence but no local posterUrl`);
+  }
+  if (!/^assets\/posters\/[^/]+\.(?:jpe?g|png|webp)$/i.test(posterUrl)) {
+    throw new Error(`${contextLabel} ${event.id} posterUrl must point to a local assets/posters image: ${posterUrl}`);
+  }
+  if (/^https?:\/\//i.test(posterUrl) || /images\.ra\.co/i.test(posterUrl)) {
+    throw new Error(`${contextLabel} ${event.id} posterUrl must not use a remote or RA-blocked image URL: ${posterUrl}`);
+  }
+  if (!fs.existsSync(posterUrl)) {
+    throw new Error(`${contextLabel} ${event.id} posterUrl file does not exist: ${posterUrl}`);
+  }
+
+  const bytes = fs.readFileSync(posterUrl);
+  if (bytes.length < 1024) {
+    throw new Error(`${contextLabel} ${event.id} posterUrl file is too small to be a real poster: ${posterUrl}`);
+  }
+  const signature = bytes.subarray(0, 8).toString("hex");
+  const isJpeg = signature.startsWith("ffd8");
+  const isPng = signature === "89504e470d0a1a0a";
+  const isWebp = bytes.subarray(0, 4).toString("ascii") === "RIFF" && bytes.subarray(8, 12).toString("ascii") === "WEBP";
+  if (!isJpeg && !isPng && !isWebp) {
+    throw new Error(`${contextLabel} ${event.id} posterUrl is not a valid local JPEG, PNG, or WebP image: ${posterUrl}`);
+  }
+}
+
 for (const file of [...htmlFiles, ...syntaxOnlyHtmlFiles]) {
   const html = fs.readFileSync(file, "utf8");
   const scripts = Array.from(html.matchAll(scriptPattern), match => match[1]);
@@ -201,13 +231,19 @@ if (fs.existsSync("data/tracked-dj-itineraries.js")) {
     throw new Error("data/tracked-dj-itineraries.js must define at least one worldwide itinerary overlay");
   }
   for (const [slug, profile] of Object.entries(trackedData)) {
-    if (!profile?.name || !Array.isArray(profile.itinerary) || profile.itinerary.length === 0) {
-      throw new Error(`tracked itinerary ${slug} must define a name and non-empty itinerary`);
+    if (!profile?.name) {
+      throw new Error(`tracked itinerary ${slug} must define a name`);
     }
     if (!Array.isArray(profile.sources) || profile.sources.length === 0) {
       throw new Error(`tracked itinerary ${slug} must include source records`);
     }
-    for (const row of profile.itinerary) {
+    for (const source of profile.sources) {
+      if (!String(source.url || "").trim() || !String(source.label || "").trim()) {
+        throw new Error(`tracked itinerary ${slug} source records must include label and url`);
+      }
+    }
+    const itinerary = Array.isArray(profile.itinerary) ? profile.itinerary : [];
+    for (const row of itinerary) {
       for (const field of ["date", "title", "city", "country", "venue", "source", "sourceLabel", "sourceStatus"]) {
         if (!String(row[field] || "").trim()) {
           throw new Error(`tracked itinerary ${slug} row missing ${field}: ${row.title || row.date || "(unknown)"}`);
@@ -320,6 +356,7 @@ if (fs.existsSync("data/events.json")) {
     if (!Array.isArray(event.vibe) || event.vibe.length === 0) {
       throw new Error(`event ${event.id} must have at least one vibe in data/events.json`);
     }
+    assertLocalPosterAsset(event, "event");
   }
   assertNoNonPerformerLineups(events);
 
@@ -474,6 +511,7 @@ if (fs.existsSync("config/curated-events.json")) {
     if (event.posterEvidence !== undefined && (!event.posterEvidence.source || !event.posterEvidence.url)) {
       throw new Error(`curated event ${event.id} posterEvidence must include source and url`);
     }
+    assertLocalPosterAsset(event, "curated event");
 
     if (event.ticketStatus !== undefined && !String(event.ticketStatus).trim()) {
       throw new Error(`curated event ${event.id} ticketStatus must not be empty`);

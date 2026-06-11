@@ -1,6 +1,6 @@
 # Source Log
 
-Last refreshed: 2026-06-08, Asia/Shanghai.
+Last refreshed: 2026-06-11, Asia/Shanghai.
 
 ## Source Priority
 
@@ -36,6 +36,7 @@ Each Computer Use item should capture the full event record, not only the listin
 - Time and place: title, event series, absolute date, doors/start/end time, timezone, venue, room/floor, district, full address, and map/search hint.
 - Lineup: full lineup, B2B notes, set order, set times, live/DJ format, promoter, venue host, label, and organizing crew.
 - Poster evidence: poster/flyer image source, screenshot reference, OCR text, and any image-only ticket/time/venue details.
+- Local poster asset: when poster evidence exists, download the flyer into `assets/posters/`, add a local `posterUrl`, and do not rely on remote `images.ra.co` or hotlinked image URLs for the public UI.
 - Artist context: short sourced artist introductions, origin/city, genres, labels, notable releases, aliases, and official profile links.
 - Future city tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available.
 - Ticketing status: platform, URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist state, refund rules, purchase cutoff, and age/ID policy.
@@ -72,6 +73,21 @@ Added or upgraded in the calendar:
 - Night at the Museum: Back to the 90s Disco Night, A Full Afrowave Takeover, Nova Summer Splash Pool Party, and Sunset Sundays were added as watch-level SmartShanghai club/date leads because they are lower techno fit or have incomplete lineup/ticket details.
 
 `data/events.json` now reports `curatedEventsApplied` so `scripts/check.js` can fail if the browser-confirmed updates stop merging.
+
+## 2026-06-11 Poster Asset Routine
+
+After the poster rendering issue, the daily scrape/Computer Use routine treats poster collection as a two-step handoff:
+
+1. Record `posterEvidence` with the public event page or screenshot source, including source URL and evidence status.
+2. Download the actual flyer into `assets/posters/` and set `posterUrl` to that local file in `config/curated-events.json`; generated `data/events.json` must carry the same local path.
+
+Do not use remote `images.ra.co` URLs in the UI. RA image hosts can block browsers or load inconsistently, which makes cards look like black/default posters. If a direct image download is slow or blocked, use Chrome/Computer Use, the source page image, or a verified source-hosted image and save the final file locally.
+
+Validation added to the routine:
+
+- `scripts/check.js` fails when any event or curated event has `posterEvidence` but no valid downloaded local `assets/posters/...` image.
+- `scripts/audit-events.js` performs the same poster check during daily event audits.
+- `npm run check` now includes the event audit, so daily scrape updates should not be published while poster evidence is missing a local asset.
 
 ## Watch-Only Rules
 

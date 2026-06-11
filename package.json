@@ -6,6 +6,7 @@
   "scripts": {
     "start": "npx serve .",
     "scrape": "node scripts/scrape-events.js",
-    "check": "node --check scripts/check.js && node --check scripts/scrape-events.js && node scripts/check.js"
+    "audit": "node scripts/audit-events.js",
+    "check": "node --check scripts/check.js && node --check scripts/scrape-events.js && node --check scripts/audit-events.js && node scripts/check.js && node scripts/audit-events.js"
   }
 }

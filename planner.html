@@ -897,7 +897,7 @@
     async function loadExternalEvents() {
       if (!window.fetch) return null;
       try {
-        const response = await fetch(externalDataPath, { cache: "no-store" });
+        const response = await fetch(externalDataPath);
         if (!response.ok) return null;
         const payload = await response.json();
         const rawEvents = Array.isArray(payload) ? payload : payload.events;

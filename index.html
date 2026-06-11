@@ -2888,7 +2888,6 @@
       "milo-cosmjn": "assets/posters/milo-cosmjn.jpg",
       "fruitygroove-soul-navigator": "assets/posters/fruitygroove-soul-navigator.png",
       "matisa-limsum": "assets/posters/matisa-limsum.jpg",
-      "fengyun-5": "assets/posters/fengyun-5.jpg",
       "kollin": "assets/posters/kollin.jpg",
       "horizon": "assets/posters/horizon.jpg",
       "nosaj-thing": "assets/posters/nosaj-thing.png",
@@ -2903,6 +2902,23 @@
       "dark-room": "assets/posters/dark-room.jpg",
       "nova-summer-splash-pool-party": "assets/posters/nova-summer-splash-pool-party.jpg",
       "sunset-sundays-dome": "assets/posters/sunset-sundays-dome.jpg"
+    };
+    const optimizedPosterUrlOverrides = {
+      "assets/posters/alter-pavillon.png": "assets/posters/alter-pavillon-optimized.jpg",
+      "assets/posters/cltx-abyss.jpg": "assets/posters/cltx-abyss-optimized.jpg",
+      "assets/posters/cyber-buddha.jpg": "assets/posters/cyber-buddha-optimized.jpg",
+      "assets/posters/dark-room.jpg": "assets/posters/dark-room-optimized.jpg",
+      "assets/posters/fruitygroove-soul-navigator.png": "assets/posters/fruitygroove-soul-navigator-optimized.jpg",
+      "assets/posters/horizon.jpg": "assets/posters/horizon-optimized.jpg",
+      "assets/posters/kollin.jpg": "assets/posters/kollin-optimized.jpg",
+      "assets/posters/matisa-limsum.jpg": "assets/posters/matisa-limsum-optimized.jpg",
+      "assets/posters/milo-cosmjn.jpg": "assets/posters/milo-cosmjn-optimized.jpg",
+      "assets/posters/mrd.png": "assets/posters/mrd-optimized.jpg",
+      "assets/posters/nosaj-thing.png": "assets/posters/nosaj-thing-optimized.jpg",
+      "assets/posters/photocult-mask-desire-auction.png": "assets/posters/photocult-mask-desire-auction-optimized.jpg",
+      "assets/posters/santa-k.png": "assets/posters/santa-k-optimized.jpg",
+      "assets/posters/synth-crush.jpg": "assets/posters/synth-crush-optimized.jpg",
+      "assets/posters/the-woods.jpg": "assets/posters/the-woods-optimized.jpg"
     };
 
     function escapeHtml(value) {
@@ -3545,7 +3561,7 @@
     async function loadExternalEvents() {
       if (!window.fetch) return null;
       try {
-        const response = await fetch(externalDataPath, { cache: "no-store" });
+        const response = await fetch(externalDataPath);
         if (!response.ok) return null;
         const payload = await response.json();
         const rawEvents = Array.isArray(payload) ? payload : payload.events;
@@ -3785,7 +3801,11 @@
         event.posterEvidence,
         event.images,
         event.media
-      ]);
+      ].map(optimizedPosterUrl));
+    }
+
+    function optimizedPosterUrl(url) {
+      return typeof url === "string" ? (optimizedPosterUrlOverrides[url] || url) : url;
     }
 
     function eventVisual(event) {
@@ -3927,11 +3947,11 @@
     function renderCard(event) {
       const visual = eventVisual(event);
       const organizer = knownOrganizerFor(event);
-      const loading = visual.hasPoster ? "eager" : "lazy";
+      const loading = "lazy";
       return `
         <article class="event-card ${visual.hasPoster ? "has-event-poster" : "has-default-poster"}" data-id="${event.id}">
           <div class="poster">
-            <img src="${escapeHtml(visual.src)}" alt="${escapeHtml(visual.alt)}" loading="${loading}" decoding="async">
+            <img src="${escapeHtml(visual.src)}" alt="${escapeHtml(visual.alt)}" loading="${loading}" decoding="async" fetchpriority="low">
             <span class="tag">${escapeHtml(event.status.toUpperCase())}</span>
           </div>
           <div class="card-body">

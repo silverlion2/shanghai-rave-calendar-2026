@@ -228,13 +228,13 @@
       },
       "ticketStatus": "RA lists cost at 128 RMB and minimum age 18+. Final checkout availability should be checked before purchase.",
       "addedAt": "2026-06-08",
-      "lastChecked": "2026-06-08",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
           "label": "Resident Advisor",
           "url": "https://ra.co/events/2454518",
           "status": "secondary",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
       ],
       "posterUrl": "assets/posters/fruitygroove-soul-navigator.png"
@@ -405,12 +405,6 @@
           "note": "RA-listed lineup artist; exact set time was not published."
         }
       ],
-      "posterEvidence": {
-        "type": "flyer",
-        "source": "Resident Advisor event page",
-        "url": "https://ra.co/events/2460549",
-        "status": "Flyer image is visible on the RA detail page."
-      },
       "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+.",
       "sources": [
         {
@@ -419,8 +413,7 @@
           "status": "secondary",
           "lastChecked": "2026-06-11"
         }
-      ],
-      "posterUrl": "assets/posters/fengyun-5.jpg"
+      ]
     },
     {
       "id": "horizon",
@@ -558,13 +551,13 @@
       },
       "ticketStatus": "SmartShanghai lists tickets from 188 RMB and shows web, app, and WeChat buying routes.",
       "addedAt": "2026-06-08",
-      "lastChecked": "2026-06-08",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/nova-events-presents-sunset-sessions-flair-rooftop-party-2026-06-13-2",
           "status": "secondary",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
       ],
       "posterUrl": "assets/posters/nova-sunset-sessions-flair.jpg"
@@ -609,13 +602,13 @@
       },
       "ticketStatus": "SmartShanghai lists tickets from 120 RMB and shows a buy-ticket route.",
       "addedAt": "2026-06-08",
-      "lastChecked": "2026-06-08",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/night-at-the-museum-back-to-the-90s-disco-night-2026-06-18",
           "status": "watchlist",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
       ],
       "posterUrl": "assets/posters/night-at-museum-90s-disco.jpg"
@@ -673,13 +666,13 @@
       },
       "ticketStatus": "SmartShanghai says tickets are not currently available on SmartShanghai and points to QR-code availability in the event description.",
       "addedAt": "2026-06-08",
-      "lastChecked": "2026-06-08",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/a-full-afrowave-takeover-at-la-burg",
           "status": "watchlist",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
       ],
       "posterUrl": "assets/posters/afrowave-takeover-la-burg.jpg"
@@ -724,13 +717,13 @@
       },
       "ticketStatus": "SmartShanghai lists tickets from 198 RMB and shows web, app, and WeChat buying routes.",
       "addedAt": "2026-06-08",
-      "lastChecked": "2026-06-08",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/nova-events-presents-summer-splash-pool-party-2026-06-27",
           "status": "watchlist",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
       ],
       "posterUrl": "assets/posters/nova-summer-splash-pool-party.jpg"
@@ -781,13 +774,13 @@
       },
       "ticketStatus": "SmartShanghai says tickets are currently not available on SmartShanghai.",
       "addedAt": "2026-06-08",
-      "lastChecked": "2026-06-08",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/sunset-sundays-skyline-dome-at-the-dome",
           "status": "watchlist",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
       ],
       "posterUrl": "assets/posters/sunset-sundays-dome.jpg"
@@ -1068,7 +1061,7 @@
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
       ],
       "posterUrl": "assets/posters/mrd.png"
@@ -1171,8 +1164,326 @@
       "posterUrl": "assets/posters/dark-room.jpg"
     },
     {
+      "id": "cltx-abyss",
+      "month": "Jun",
+      "sortDate": "2026-06-12",
+      "date": "Jun 12",
+      "time": "22:30-05:00",
+      "title": "Lethal Distortion w. CLTX",
+      "venue": "Abyss Shanghai",
+      "district": "Huangpu",
+      "vibe": [
+        "hard",
+        "techno"
+      ],
+      "genre": "trance, techno",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "140 RMB",
+      "age": "18+",
+      "source": "https://ra.co/events/2466129",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "ember",
+      "description": "Abyss hosts Lethal Distortion with Parisian hard-techno artist CLTX, plus PRYMARA, WATARU, and SITU, for a trance and techno night at TX Huaihai.",
+      "sourceStatus": "secondary",
+      "address": "B1, TX Huaihai Youth Center, No. 523-527 Huaihai Road, Huangpu District",
+      "organizer": "PRYMARA / Abyss Shanghai",
+      "detailsUrl": "https://ra.co/events/2466129",
+      "ticketUrl": "https://ra.co/events/2466129",
+      "lastChecked": "2026-06-11",
+      "lineup": [
+        {
+          "name": "CLTX",
+          "note": "RA describes CLTX as a Parisian techno artist with hard techno, trance, warehouse-rave, and Berlin-scene context."
+        },
+        {
+          "name": "PRYMARA",
+          "note": "RA lists PRYMARA on the Lethal Distortion lineup."
+        },
+        {
+          "name": "WATARU",
+          "note": "RA lists WATARU on the Lethal Distortion lineup."
+        },
+        {
+          "name": "SITU",
+          "note": "RA lists SITU on the Lethal Distortion lineup."
+        }
+      ],
+      "posterEvidence": {
+        "type": "flyer",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2466129",
+        "status": "Flyer front image is visible on the RA detail page."
+      },
+      "ticketStatus": "RA lists cost at 140 RMB and minimum age 18+.",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2466129",
+          "status": "secondary",
+          "lastChecked": "2026-06-11"
+        },
+        {
+          "label": "SmartShanghai June 2026 clubbing guide",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-11"
+        }
+      ],
+      "posterUrl": "assets/posters/cltx-abyss.jpg"
+    },
+    {
+      "id": "the-woods",
+      "month": "Jun",
+      "sortDate": "2026-06-13",
+      "date": "Jun 13",
+      "time": "22:00-03:00",
+      "title": "Love Bang presents: The Woods",
+      "venue": "Specters",
+      "district": "Changning",
+      "vibe": [
+        "industrial",
+        "dark"
+      ],
+      "genre": "industrial, italo disco, darkwave, EBM, goth",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "Free",
+      "age": "18+",
+      "source": "https://ra.co/events/2464301",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "rose",
+      "description": "Love Bang brings The Woods to Specters for a dark dance night covering darkwave, dark italo, industrial, post-punk, EBM, sad dance music, and goth.",
+      "sourceStatus": "secondary",
+      "address": "LG-21, B1/F, C PARK, 658 Zhaohua Lu, near Zhongdeqiao Lu, Changning District",
+      "organizer": "Love Bang / Heatwolves",
+      "detailsUrl": "https://ra.co/events/2464301",
+      "ticketUrl": "https://ra.co/events/2464301",
+      "lastChecked": "2026-06-11",
+      "lineup": [
+        {
+          "name": "Heatwolves",
+          "note": "RA lists Heatwolves as the lineup artist and event admin for this Love Bang dark-dance night."
+        }
+      ],
+      "posterEvidence": {
+        "type": "flyer",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2464301",
+        "status": "Flyer front image is visible on the RA detail page."
+      },
+      "ticketStatus": "RA lists cost as 0 and minimum age 18+; event description says entry is free.",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2464301",
+          "status": "secondary",
+          "lastChecked": "2026-06-11"
+        },
+        {
+          "label": "SmartShanghai June 2026 clubbing guide",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-11"
+        }
+      ],
+      "posterUrl": "assets/posters/the-woods.jpg"
+    },
+    {
+      "id": "system-popup",
+      "lastChecked": "2026-06-11",
+      "sourceStatus": "watchlist",
+      "ticketStatus": "SmartShanghai says System returns to the Shanghai Hotel e-sports arena on Saturdays from June 13 until early August, but public lineups and ticket details were not found in this pass. Keep as Watch.",
+      "sources": [
+        {
+          "label": "SmartShanghai June 2026 clubbing guide",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-11"
+        }
+      ]
+    },
+    {
+      "id": "jasmin-knopha",
+      "lastChecked": "2026-06-11",
+      "sourceStatus": "watchlist",
+      "ticketStatus": "SmartShanghai and Heim's public Instagram profile signal June 20 for Heim Invites: Jasmin with Knopha, but no public ticket page or set times were found in this pass. Keep as Watch.",
+      "sources": [
+        {
+          "label": "SmartShanghai June 2026 clubbing guide",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-11"
+        },
+        {
+          "label": "Heim Instagram profile",
+          "url": "https://www.instagram.com/heimshanghai/",
+          "status": "social-lead",
+          "lastChecked": "2026-06-11"
+        }
+      ]
+    },
+    {
+      "id": "liminal-dreams",
+      "lastChecked": "2026-06-11",
+      "sourceStatus": "watchlist",
+      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; no public ticket page, lineup expansion, or set times found. Keep as Watch.",
+      "sources": [
+        {
+          "label": "SmartShanghai June 2026 clubbing guide",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-11"
+        }
+      ]
+    },
+    {
+      "id": "botox-fatale",
+      "lastChecked": "2026-06-11",
+      "sourceStatus": "watchlist",
+      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; no RA, Abyss, or ticketing detail page found through public search. Keep as Watch.",
+      "sources": [
+        {
+          "label": "SmartShanghai June 2026 clubbing guide",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-11"
+        }
+      ]
+    },
+    {
+      "id": "anika-kunst",
+      "lastChecked": "2026-06-11",
+      "sourceStatus": "watchlist",
+      "ticketStatus": "SmartShanghai lists Anika Kunst at POTENT on June 27 and public search surfaced a POTENT June Instagram post, but no public detail or ticket page was found in this pass. Keep as Watch.",
+      "sources": [
+        {
+          "label": "SmartShanghai June 2026 clubbing guide",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-11"
+        },
+        {
+          "label": "POTENT Instagram June 2026 post",
+          "url": "https://www.instagram.com/p/DZCeoIiEpXW/",
+          "status": "social-lead",
+          "lastChecked": "2026-06-11"
+        }
+      ]
+    },
+    {
+      "id": "hexscape",
+      "lastChecked": "2026-06-11",
+      "sourceStatus": "watchlist",
+      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; no public detail page or ticket link found. Keep as Watch.",
+      "sources": [
+        {
+          "label": "SmartShanghai June 2026 clubbing guide",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-11"
+        }
+      ]
+    },
+    {
+      "id": "jaal",
+      "lastChecked": "2026-06-11",
+      "sourceStatus": "watchlist",
+      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; Fenrir venue context is public, but no event detail or ticket page was found. Keep as Watch.",
+      "sources": [
+        {
+          "label": "SmartShanghai June 2026 clubbing guide",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-11"
+        },
+        {
+          "label": "Fenrir venue context",
+          "url": "https://rachelgouk.com/listings/fenrir/",
+          "status": "venue-context",
+          "lastChecked": "2026-06-11"
+        }
+      ]
+    },
+    {
+      "id": "truth-lies",
+      "lastChecked": "2026-06-11",
+      "sourceStatus": "watchlist",
+      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; no public ILLUM, KNOT, or ticketing detail page found. Keep as Watch.",
+      "sources": [
+        {
+          "label": "SmartShanghai June 2026 clubbing guide",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-11"
+        }
+      ]
+    },
+    {
+      "id": "devils-dancers",
+      "lastChecked": "2026-06-11",
+      "sourceStatus": "watchlist",
+      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; no public Specters, Love Bang, or ticketing detail page found. Keep as Watch.",
+      "sources": [
+        {
+          "label": "SmartShanghai June 2026 clubbing guide",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-11"
+        }
+      ]
+    },
+    {
+      "id": "youshan-warmup",
+      "lastChecked": "2026-06-11",
+      "sourceStatus": "watchlist",
+      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; lineup remained TBA in public guide text, so keep as Watch until Wigwam or Youshan publishes the bill.",
+      "sources": [
+        {
+          "label": "SmartShanghai June 2026 clubbing guide",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-11"
+        }
+      ]
+    },
+    {
       "id": "cyber-buddha",
       "lastChecked": "2026-06-11",
+      "age": "18+",
+      "lineup": [
+        {
+          "name": "The Hymmapan Electron",
+          "note": "SmartShanghai describes The Hymmapan Electron as a Thai ensemble integrating Isan folk music with electronic rhythms."
+        },
+        {
+          "name": "Taiga",
+          "note": "SmartShanghai describes Taiga as a Chengdu-based duo blending Mongolian nomadic traditions with psychedelic electronic sounds."
+        },
+        {
+          "name": "MICO",
+          "note": "SmartShanghai describes MICO as an electronic traveler working across ambient, downtempo, IDM, and narrative soundscapes."
+        }
+      ],
+      "posterEvidence": {
+        "type": "event images and flyer",
+        "source": "SmartShanghai and Resident Advisor event pages",
+        "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
+        "status": "SmartShanghai event images and RA flyer front are visible on the detail pages."
+      },
+      "promotionalLinks": [
+        {
+          "label": "ShowStart ticket route exposed by RA",
+          "url": "https://www.showstart.com/",
+          "note": "RA says to search for '赛博黄昏' in the ShowStart app; SmartShanghai also exposes web, app, and WeChat buying routes."
+        },
+        {
+          "label": "Cyber Budha official website exposed by RA",
+          "url": "https://budha.cc/",
+          "note": "RA exposes the official website as a promotional link."
+        }
+      ],
+      "ticketStatus": "RA lists cost at 168 RMB, minimum age 18+, and says early-bird tickets are sold out with ShowStart search keyword '赛博黄昏'. SmartShanghai lists 168-288 RMB and shows web, app, and WeChat buying routes.",
       "venueReconciliation": {
         "status": "needs-reconcile",
         "note": "SmartShanghai lists Star@ Culture Center for this June 26 Cyber Buddha event, while RA lists Bandai Namco Shanghai Base / Dream Theater with the same core lineup. Do not overwrite the venue until a primary organizer page resolves it.",
@@ -1189,9 +1500,10 @@
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
           "status": "secondary",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/cyber-buddha.jpg"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T07:06:12.781Z",
+  "generatedAt": "2026-06-11T12:45:43.230Z",
   "verified": "2026-06-11",
   "timezone": "Asia/Shanghai",
   "sourcePriority": [
@@ -26,10 +26,9 @@
       "kind": "guide",
       "sourceStatus": "secondary",
       "checkedAt": "2026-06-11",
-      "ok": false,
-      "status": null,
-      "eventLinks": 0,
-      "error": "This operation was aborted"
+      "ok": true,
+      "status": 200,
+      "eventLinks": 0
     },
     {
       "label": "SmartShanghai clubbing listings",
@@ -1411,39 +1410,6 @@
       ]
     },
     {
-      "id": "cltx-abyss",
-      "month": "Jun",
-      "sortDate": "2026-06-12",
-      "date": "Jun 12",
-      "time": "Check Abyss",
-      "title": "CLTX",
-      "venue": "Abyss Shanghai",
-      "district": "Huangpu",
-      "vibe": [
-        "hard",
-        "underground"
-      ],
-      "genre": "hard techno, rave",
-      "confidence": "Watch",
-      "status": "watch",
-      "price": "Check venue",
-      "age": "Check venue",
-      "source": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
-      "sourceLabel": "SmartShanghai",
-      "imageTheme": "ember",
-      "description": "SmartShanghai lead for one of Abyss's harder June bookings. Treat as single-source until the venue/ticket post is checked.",
-      "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-08",
-      "sources": [
-        {
-          "label": "SmartShanghai",
-          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
-          "status": "watchlist",
-          "lastChecked": "2026-06-08"
-        }
-      ]
-    },
-    {
       "id": "fruitygroove-soul-navigator",
       "month": "Jun",
       "sortDate": "2026-06-12",
@@ -1554,13 +1520,13 @@
       },
       "ticketStatus": "RA lists cost at 128 RMB and minimum age 18+. Final checkout availability should be checked before purchase.",
       "addedAt": "2026-06-08",
-      "lastChecked": "2026-06-08",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
           "label": "Resident Advisor",
           "url": "https://ra.co/events/2454518",
           "status": "secondary",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
       ],
       "posterUrl": "assets/posters/fruitygroove-soul-navigator.png"
@@ -1594,7 +1560,7 @@
           "label": "Resident Advisor",
           "url": "https://ra.co/events/2460995",
           "status": "secondary",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
       ],
       "address": "INS Park 4F, 109 Yandang Road, Huangpu District",
@@ -1663,6 +1629,75 @@
       "posterUrl": "assets/posters/kollin.jpg"
     },
     {
+      "id": "cltx-abyss",
+      "month": "Jun",
+      "sortDate": "2026-06-12",
+      "date": "Jun 12",
+      "time": "22:30-05:00",
+      "title": "Lethal Distortion w. CLTX",
+      "venue": "Abyss Shanghai",
+      "district": "Huangpu",
+      "vibe": [
+        "hard",
+        "techno"
+      ],
+      "genre": "trance, techno",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "140 RMB",
+      "age": "18+",
+      "source": "https://ra.co/events/2466129",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "ember",
+      "description": "Abyss hosts Lethal Distortion with Parisian hard-techno artist CLTX, plus PRYMARA, WATARU, and SITU, for a trance and techno night at TX Huaihai.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-11",
+      "sources": [
+        {
+          "label": "SmartShanghai June 2026 clubbing guide",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-11"
+        },
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2466129",
+          "status": "secondary",
+          "lastChecked": "2026-06-11"
+        }
+      ],
+      "address": "B1, TX Huaihai Youth Center, No. 523-527 Huaihai Road, Huangpu District",
+      "organizer": "PRYMARA / Abyss Shanghai",
+      "detailsUrl": "https://ra.co/events/2466129",
+      "ticketUrl": "https://ra.co/events/2466129",
+      "lineup": [
+        {
+          "name": "CLTX",
+          "note": "RA describes CLTX as a Parisian techno artist with hard techno, trance, warehouse-rave, and Berlin-scene context."
+        },
+        {
+          "name": "PRYMARA",
+          "note": "RA lists PRYMARA on the Lethal Distortion lineup."
+        },
+        {
+          "name": "WATARU",
+          "note": "RA lists WATARU on the Lethal Distortion lineup."
+        },
+        {
+          "name": "SITU",
+          "note": "RA lists SITU on the Lethal Distortion lineup."
+        }
+      ],
+      "posterEvidence": {
+        "type": "flyer",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2466129",
+        "status": "Flyer front image is visible on the RA detail page."
+      },
+      "ticketStatus": "RA lists cost at 140 RMB and minimum age 18+.",
+      "posterUrl": "assets/posters/cltx-abyss.jpg"
+    },
+    {
       "id": "milo-cosmjn",
       "month": "Jun",
       "sortDate": "2026-06-12",
@@ -1691,7 +1726,7 @@
           "label": "Resident Advisor",
           "url": "https://ra.co/events/2461478",
           "status": "secondary",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
       ],
       "address": "L3 TX Huaihai, 523 Huaihai Middle Road, Shanghai, China",
@@ -1750,7 +1785,7 @@
           "label": "Resident Advisor",
           "url": "https://ra.co/events/2460549",
           "status": "secondary",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
       ],
       "address": "M101 Room, No. 462 Changle Road, Huangpu District, Shanghai",
@@ -1779,14 +1814,7 @@
           "note": "RA-listed lineup artist; exact set time was not published."
         }
       ],
-      "posterEvidence": {
-        "type": "flyer",
-        "source": "Resident Advisor event page",
-        "url": "https://ra.co/events/2460549",
-        "status": "Flyer image is visible on the RA detail page."
-      },
-      "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+.",
-      "posterUrl": "assets/posters/fengyun-5.jpg"
+      "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+."
     },
     {
       "id": "horizon",
@@ -1816,7 +1844,7 @@
           "label": "Resident Advisor",
           "url": "https://ra.co/events/2459595",
           "status": "secondary",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
       ],
       "address": "7/F, No.3 Waitan, No.3 Zhongshan East 1st Road, Shanghai 200002, China",
@@ -1867,33 +1895,57 @@
       "month": "Jun",
       "sortDate": "2026-06-13",
       "date": "Jun 13",
-      "time": "Check venue",
-      "title": "Love Bang: The Woods",
+      "time": "22:00-03:00",
+      "title": "Love Bang presents: The Woods",
       "venue": "Specters",
       "district": "Changning",
       "vibe": [
-        "experimental",
-        "underground"
+        "industrial",
+        "dark"
       ],
-      "genre": "goth, darkwave, industrial, EBM",
-      "confidence": "Watch",
-      "status": "watch",
-      "price": "Check venue",
-      "age": "Check venue",
-      "source": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
-      "sourceLabel": "SmartShanghai",
+      "genre": "industrial, italo disco, darkwave, EBM, goth",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "Free",
+      "age": "18+",
+      "source": "https://ra.co/events/2464301",
+      "sourceLabel": "Resident Advisor",
       "imageTheme": "rose",
-      "description": "Single-source lead for Love Bang's darker Specters night: goth, darkwave, dark italo, industrial, post-punk, EBM, and witch house.",
-      "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-08",
+      "description": "Love Bang brings The Woods to Specters for a dark dance night covering darkwave, dark italo, industrial, post-punk, EBM, sad dance music, and goth.",
+      "sourceStatus": "secondary",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
-          "label": "SmartShanghai",
+          "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
+        },
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2464301",
+          "status": "secondary",
+          "lastChecked": "2026-06-11"
         }
-      ]
+      ],
+      "address": "LG-21, B1/F, C PARK, 658 Zhaohua Lu, near Zhongdeqiao Lu, Changning District",
+      "organizer": "Love Bang / Heatwolves",
+      "detailsUrl": "https://ra.co/events/2464301",
+      "ticketUrl": "https://ra.co/events/2464301",
+      "lineup": [
+        {
+          "name": "Heatwolves",
+          "note": "RA lists Heatwolves as the lineup artist and event admin for this Love Bang dark-dance night."
+        }
+      ],
+      "posterEvidence": {
+        "type": "flyer",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2464301",
+        "status": "Flyer front image is visible on the RA detail page."
+      },
+      "ticketStatus": "RA lists cost as 0 and minimum age 18+; event description says entry is free.",
+      "posterUrl": "assets/posters/the-woods.jpg"
     },
     {
       "id": "matisa-limsum",
@@ -1924,7 +1976,7 @@
           "label": "Resident Advisor",
           "url": "https://ra.co/events/2461476",
           "status": "secondary",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
       ],
       "address": "L3 TX Huaihai, 523 Huaihai Middle Road, Shanghai, China",
@@ -1988,13 +2040,13 @@
       },
       "ticketStatus": "SmartShanghai lists tickets from 188 RMB and shows web, app, and WeChat buying routes.",
       "addedAt": "2026-06-08",
-      "lastChecked": "2026-06-08",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/nova-events-presents-sunset-sessions-flair-rooftop-party-2026-06-13-2",
           "status": "secondary",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
       ],
       "posterUrl": "assets/posters/nova-sunset-sessions-flair.jpg"
@@ -2063,7 +2115,7 @@
           "label": "Resident Advisor",
           "url": "https://ra.co/events/2453279",
           "status": "secondary",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
       ],
       "address": "D-L1-03, B1, C-PARK, No. 638 Zhaohua Road, Changning District, Shanghai",
@@ -2126,7 +2178,7 @@
           "label": "Resident Advisor",
           "url": "https://ra.co/events/2458037",
           "status": "secondary",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
       ],
       "address": "B1, TX Huaihai Youth Center, No.523-527 Huaihai Road, Huangpu District, Shanghai, China",
@@ -2200,7 +2252,7 @@
           "label": "Resident Advisor",
           "url": "https://ra.co/events/2458269",
           "status": "secondary",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
       ],
       "address": "298 Xingfu Road, Changning District, Shanghai",
@@ -2261,15 +2313,16 @@
       "imageTheme": "ember",
       "description": "SmartShanghai reports System returning to the Shanghai Hotel e-sports arena on Saturdays until early August. Lineups need promoter confirmation.",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-08",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
-          "label": "SmartShanghai",
+          "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
-      ]
+      ],
+      "ticketStatus": "SmartShanghai says System returns to the Shanghai Hotel e-sports arena on Saturdays from June 13 until early August, but public lineups and ticket details were not found in this pass. Keep as Watch."
     },
     {
       "id": "sunset-sundays-dome",
@@ -2317,13 +2370,13 @@
       },
       "ticketStatus": "SmartShanghai says tickets are currently not available on SmartShanghai.",
       "addedAt": "2026-06-08",
-      "lastChecked": "2026-06-08",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/sunset-sundays-skyline-dome-at-the-dome",
           "status": "watchlist",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
       ],
       "posterUrl": "assets/posters/sunset-sundays-dome.jpg"
@@ -2357,7 +2410,7 @@
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
           "status": "secondary",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
       ],
       "address": "4/F, 10 Wenchang Lu, near Jiuxiaochang Lu, Huangpu District",
@@ -2437,13 +2490,13 @@
       },
       "ticketStatus": "SmartShanghai lists tickets from 120 RMB and shows a buy-ticket route.",
       "addedAt": "2026-06-08",
-      "lastChecked": "2026-06-08",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/night-at-the-museum-back-to-the-90s-disco-night-2026-06-18",
           "status": "watchlist",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
       ],
       "posterUrl": "assets/posters/night-at-museum-90s-disco.jpg"
@@ -2607,10 +2660,10 @@
       "lastChecked": "2026-06-11",
       "sources": [
         {
-          "label": "SmartShanghai",
+          "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         },
         {
           "label": "Resident Advisor",
@@ -2707,13 +2760,13 @@
       },
       "ticketStatus": "SmartShanghai says tickets are not currently available on SmartShanghai and points to QR-code availability in the event description.",
       "addedAt": "2026-06-08",
-      "lastChecked": "2026-06-08",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/a-full-afrowave-takeover-at-la-burg",
           "status": "watchlist",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
       ],
       "posterUrl": "assets/posters/afrowave-takeover-la-burg.jpg"
@@ -2741,15 +2794,22 @@
       "imageTheme": "rose",
       "description": "Single-source lead for a textured Heim night joining Dutch producer/DJ Jasmin with Knopha.",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-08",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
-          "label": "SmartShanghai",
+          "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
+        },
+        {
+          "label": "Heim Instagram profile",
+          "url": "https://www.instagram.com/heimshanghai",
+          "status": "social-lead",
+          "lastChecked": "2026-06-11"
         }
-      ]
+      ],
+      "ticketStatus": "SmartShanghai and Heim's public Instagram profile signal June 20 for Heim Invites: Jasmin with Knopha, but no public ticket page or set times were found in this pass. Keep as Watch."
     },
     {
       "id": "liminal-dreams",
@@ -2774,15 +2834,16 @@
       "imageTheme": "cyan",
       "description": "SmartShanghai lead for an ambient and outer-music night across Asia. More listening-session than rave.",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-08",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
-          "label": "SmartShanghai",
+          "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
-      ]
+      ],
+      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; no public ticket page, lineup expansion, or set times found. Keep as Watch."
     },
     {
       "id": "botox-fatale",
@@ -2807,15 +2868,16 @@
       "imageTheme": "ember",
       "description": "SmartShanghai lead for another harder-end Abyss booking. Needs official venue/ticket confirmation before planning around it.",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-08",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
-          "label": "SmartShanghai",
+          "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
-      ]
+      ],
+      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; no RA, Abyss, or ticketing detail page found through public search. Keep as Watch."
     },
     {
       "id": "cyber-buddha",
@@ -2834,7 +2896,7 @@
       "confidence": "High",
       "status": "upcoming",
       "price": "168-288 RMB",
-      "age": "Not listed",
+      "age": "18+",
       "source": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
       "sourceLabel": "SmartShanghai",
       "imageTheme": "gold",
@@ -2846,7 +2908,7 @@
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
           "status": "secondary",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         },
         {
           "label": "Resident Advisor",
@@ -2855,11 +2917,45 @@
           "lastChecked": "2026-06-11"
         }
       ],
+      "lineup": [
+        {
+          "name": "The Hymmapan Electron",
+          "note": "SmartShanghai describes The Hymmapan Electron as a Thai ensemble integrating Isan folk music with electronic rhythms."
+        },
+        {
+          "name": "Taiga",
+          "note": "SmartShanghai describes Taiga as a Chengdu-based duo blending Mongolian nomadic traditions with psychedelic electronic sounds."
+        },
+        {
+          "name": "MICO",
+          "note": "SmartShanghai describes MICO as an electronic traveler working across ambient, downtempo, IDM, and narrative soundscapes."
+        }
+      ],
+      "posterEvidence": {
+        "type": "event images and flyer",
+        "source": "SmartShanghai and Resident Advisor event pages",
+        "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
+        "status": "SmartShanghai event images and RA flyer front are visible on the detail pages."
+      },
+      "promotionalLinks": [
+        {
+          "label": "ShowStart ticket route exposed by RA",
+          "url": "https://www.showstart.com/",
+          "note": "RA says to search for '赛博黄昏' in the ShowStart app; SmartShanghai also exposes web, app, and WeChat buying routes."
+        },
+        {
+          "label": "Cyber Budha official website exposed by RA",
+          "url": "https://budha.cc/",
+          "note": "RA exposes the official website as a promotional link."
+        }
+      ],
+      "ticketStatus": "RA lists cost at 168 RMB, minimum age 18+, and says early-bird tickets are sold out with ShowStart search keyword '赛博黄昏'. SmartShanghai lists 168-288 RMB and shows web, app, and WeChat buying routes.",
       "venueReconciliation": {
         "status": "needs-reconcile",
         "note": "SmartShanghai lists Star@ Culture Center for this June 26 Cyber Buddha event, while RA lists Bandai Namco Shanghai Base / Dream Theater with the same core lineup. Do not overwrite the venue until a primary organizer page resolves it.",
         "checked": "2026-06-11"
-      }
+      },
+      "posterUrl": "assets/posters/cyber-buddha.jpg"
     },
     {
       "id": "dark-room",
@@ -2981,15 +3077,16 @@
       "imageTheme": "rose",
       "description": "Darker dance-adjacent Specters lead. Lower techno fit, but useful for goth and wave-oriented nights.",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-08",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
-          "label": "SmartShanghai",
+          "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
-      ]
+      ],
+      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; no public Specters, Love Bang, or ticketing detail page found. Keep as Watch."
     },
     {
       "id": "anika-kunst",
@@ -3014,15 +3111,22 @@
       "imageTheme": "gold",
       "description": "SmartShanghai lead: Spanish techno/house DJ Anika Kunst with 10000 and DJ EBP.",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-08",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
-          "label": "SmartShanghai",
+          "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
+        },
+        {
+          "label": "POTENT Instagram June 2026 post",
+          "url": "https://www.instagram.com/p/DZCeoIiEpXW",
+          "status": "social-lead",
+          "lastChecked": "2026-06-11"
         }
-      ]
+      ],
+      "ticketStatus": "SmartShanghai lists Anika Kunst at POTENT on June 27 and public search surfaced a POTENT June Instagram post, but no public detail or ticket page was found in this pass. Keep as Watch."
     },
     {
       "id": "hexscape",
@@ -3047,15 +3151,16 @@
       "imageTheme": "cyan",
       "description": "Single-source SmartShanghai lead for an immersive A/V live set at EXIT with Chuan, Na$ty, and Toyn on support.",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-08",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
-          "label": "SmartShanghai",
+          "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
-      ]
+      ],
+      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; no public detail page or ticket link found. Keep as Watch."
     },
     {
       "id": "jaal",
@@ -3080,15 +3185,22 @@
       "imageTheme": "ember",
       "description": "Single-source lead for live acid techno paired with metal bands at Fenrir.",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-08",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
-          "label": "SmartShanghai",
+          "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
+        },
+        {
+          "label": "Fenrir venue context",
+          "url": "https://rachelgouk.com/listings/fenrir",
+          "status": "venue-context",
+          "lastChecked": "2026-06-11"
         }
-      ]
+      ],
+      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; Fenrir venue context is public, but no event detail or ticket page was found. Keep as Watch."
     },
     {
       "id": "truth-lies",
@@ -3113,15 +3225,16 @@
       "imageTheme": "rose",
       "description": "SmartShanghai lead with QQBBG and Liu Qoo; high-color KNOT club-rave direction.",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-08",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
-          "label": "SmartShanghai",
+          "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
-      ]
+      ],
+      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; no public ILLUM, KNOT, or ticketing detail page found. Keep as Watch."
     },
     {
       "id": "nova-summer-splash-pool-party",
@@ -3157,13 +3270,13 @@
       },
       "ticketStatus": "SmartShanghai lists tickets from 198 RMB and shows web, app, and WeChat buying routes.",
       "addedAt": "2026-06-08",
-      "lastChecked": "2026-06-08",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/nova-events-presents-summer-splash-pool-party-2026-06-27",
           "status": "watchlist",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
       ],
       "posterUrl": "assets/posters/nova-summer-splash-pool-party.jpg"
@@ -3191,19 +3304,97 @@
       "imageTheme": "acid",
       "description": "Warmup lead for a July secret-forest festival. Lineup was still TBA in the public guide, so keep it on watch only.",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-08",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
-          "label": "SmartShanghai",
+          "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
-      ]
+      ],
+      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; lineup remained TBA in public guide text, so keep as Watch until Wigwam or Youshan publishes the bill."
     }
   ],
   "socialLeads": [],
-  "discovered": [],
+  "discovered": [
+    {
+      "url": "https://ra.co/events/2461478",
+      "title": "Milo Raad + Cosmjn",
+      "sourceLabel": "Resident Advisor",
+      "status": 403,
+      "parsed": false
+    },
+    {
+      "url": "https://ra.co/events/2460995",
+      "title": "KOLLIN",
+      "sourceLabel": "Resident Advisor",
+      "status": 403,
+      "parsed": false
+    },
+    {
+      "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+      "title": "Youshan Festival warmup",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false
+    },
+    {
+      "url": "https://ra.co/events/2458037",
+      "title": "Santa K x TURBO",
+      "sourceLabel": "Resident Advisor",
+      "status": 403,
+      "parsed": false
+    },
+    {
+      "url": "https://ra.co/events/2461476",
+      "title": "Matisa + Limsum",
+      "sourceLabel": "Resident Advisor",
+      "status": 403,
+      "parsed": false
+    },
+    {
+      "url": "https://ra.co/events/2458269",
+      "title": "Synth Crush",
+      "sourceLabel": "Resident Advisor",
+      "status": 403,
+      "parsed": false
+    },
+    {
+      "url": "https://ra.co/events/2460549",
+      "title": "FENGYUN Vol. 5",
+      "sourceLabel": "Resident Advisor",
+      "status": 403,
+      "parsed": false
+    },
+    {
+      "url": "https://ra.co/events/2459595",
+      "title": "Horizon Rooftop feat. Erik Hagleton",
+      "sourceLabel": "Resident Advisor",
+      "status": 403,
+      "parsed": false
+    },
+    {
+      "url": "https://ra.co/events/2453279",
+      "title": "REACTOR pres. Nosaj Thing",
+      "sourceLabel": "Resident Advisor",
+      "status": 403,
+      "parsed": false
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
+      "title": "ALTER. Pavillon",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false,
+      "error": "This operation was aborted"
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
+      "title": "Cyber Buddha: Electronic Nomads of Isan",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false,
+      "error": "This operation was aborted"
+    }
+  ],
   "computerUseQueue": [
     {
       "label": "RA Shanghai",
@@ -3239,7 +3430,7 @@
         "venue name, room/floor, city, district, full address, and map/search hint",
         "promoter, venue host, label, or organizing crew",
         "full lineup, B2B notes, set order, set times, and live/DJ format when available",
-        "poster or flyer image source, screenshot reference, and OCR text from image-only details",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
         "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
         "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
         "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
@@ -3249,7 +3440,7 @@
       ],
       "deepCollectionRules": [
         "Open and inspect second-layer links instead of stopping at a listing card or search result.",
-        "If key details are inside images, posters, stories, or screenshots, capture the image reference and OCR/transcribe the relevant text.",
+        "If key details are inside images, posters, stories, or screenshots, capture the image reference, OCR/transcribe the relevant text, and download the poster into assets/posters instead of relying on remote image URLs.",
         "For every lineup artist, open official or high-signal profile links when available and collect a short sourced artist intro.",
         "For touring artists, look for future city/date announcements beyond Shanghai and record source links or screenshot references.",
         "For ticketing, inspect the final ticket page or mini-program reference, not only the promoter CTA.",
@@ -3261,7 +3452,7 @@
         "venue name, room/floor, city, district, full address, and map/search hint",
         "promoter, venue host, label, or organizing crew",
         "full lineup, B2B notes, set order, set times, and live/DJ format when available",
-        "poster or flyer image source, screenshot reference, and OCR text from image-only details",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
         "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
         "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
         "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
@@ -3305,7 +3496,7 @@
         "venue name, room/floor, city, district, full address, and map/search hint",
         "promoter, venue host, label, or organizing crew",
         "full lineup, B2B notes, set order, set times, and live/DJ format when available",
-        "poster or flyer image source, screenshot reference, and OCR text from image-only details",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
         "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
         "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
         "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
@@ -3315,7 +3506,7 @@
       ],
       "deepCollectionRules": [
         "Open and inspect second-layer links instead of stopping at a listing card or search result.",
-        "If key details are inside images, posters, stories, or screenshots, capture the image reference and OCR/transcribe the relevant text.",
+        "If key details are inside images, posters, stories, or screenshots, capture the image reference, OCR/transcribe the relevant text, and download the poster into assets/posters instead of relying on remote image URLs.",
         "For every lineup artist, open official or high-signal profile links when available and collect a short sourced artist intro.",
         "For touring artists, look for future city/date announcements beyond Shanghai and record source links or screenshot references.",
         "For ticketing, inspect the final ticket page or mini-program reference, not only the promoter CTA.",
@@ -3327,7 +3518,7 @@
         "venue name, room/floor, city, district, full address, and map/search hint",
         "promoter, venue host, label, or organizing crew",
         "full lineup, B2B notes, set order, set times, and live/DJ format when available",
-        "poster or flyer image source, screenshot reference, and OCR text from image-only details",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
         "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
         "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
         "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
@@ -3371,7 +3562,7 @@
         "venue name, room/floor, city, district, full address, and map/search hint",
         "promoter, venue host, label, or organizing crew",
         "full lineup, B2B notes, set order, set times, and live/DJ format when available",
-        "poster or flyer image source, screenshot reference, and OCR text from image-only details",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
         "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
         "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
         "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
@@ -3381,7 +3572,7 @@
       ],
       "deepCollectionRules": [
         "Open and inspect second-layer links instead of stopping at a listing card or search result.",
-        "If key details are inside images, posters, stories, or screenshots, capture the image reference and OCR/transcribe the relevant text.",
+        "If key details are inside images, posters, stories, or screenshots, capture the image reference, OCR/transcribe the relevant text, and download the poster into assets/posters instead of relying on remote image URLs.",
         "For every lineup artist, open official or high-signal profile links when available and collect a short sourced artist intro.",
         "For touring artists, look for future city/date announcements beyond Shanghai and record source links or screenshot references.",
         "For ticketing, inspect the final ticket page or mini-program reference, not only the promoter CTA.",
@@ -3393,7 +3584,7 @@
         "venue name, room/floor, city, district, full address, and map/search hint",
         "promoter, venue host, label, or organizing crew",
         "full lineup, B2B notes, set order, set times, and live/DJ format when available",
-        "poster or flyer image source, screenshot reference, and OCR text from image-only details",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
         "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
         "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
         "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
@@ -3437,7 +3628,7 @@
         "venue name, room/floor, city, district, full address, and map/search hint",
         "promoter, venue host, label, or organizing crew",
         "full lineup, B2B notes, set order, set times, and live/DJ format when available",
-        "poster or flyer image source, screenshot reference, and OCR text from image-only details",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
         "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
         "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
         "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
@@ -3447,7 +3638,7 @@
       ],
       "deepCollectionRules": [
         "Open and inspect second-layer links instead of stopping at a listing card or search result.",
-        "If key details are inside images, posters, stories, or screenshots, capture the image reference and OCR/transcribe the relevant text.",
+        "If key details are inside images, posters, stories, or screenshots, capture the image reference, OCR/transcribe the relevant text, and download the poster into assets/posters instead of relying on remote image URLs.",
         "For every lineup artist, open official or high-signal profile links when available and collect a short sourced artist intro.",
         "For touring artists, look for future city/date announcements beyond Shanghai and record source links or screenshot references.",
         "For ticketing, inspect the final ticket page or mini-program reference, not only the promoter CTA.",
@@ -3459,7 +3650,7 @@
         "venue name, room/floor, city, district, full address, and map/search hint",
         "promoter, venue host, label, or organizing crew",
         "full lineup, B2B notes, set order, set times, and live/DJ format when available",
-        "poster or flyer image source, screenshot reference, and OCR text from image-only details",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
         "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
         "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
         "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
@@ -3504,7 +3695,7 @@
         "venue name, room/floor, city, district, full address, and map/search hint",
         "promoter, venue host, label, or organizing crew",
         "full lineup, B2B notes, set order, set times, and live/DJ format when available",
-        "poster or flyer image source, screenshot reference, and OCR text from image-only details",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
         "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
         "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
         "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
@@ -3514,7 +3705,7 @@
       ],
       "deepCollectionRules": [
         "Open and inspect second-layer links instead of stopping at a listing card or search result.",
-        "If key details are inside images, posters, stories, or screenshots, capture the image reference and OCR/transcribe the relevant text.",
+        "If key details are inside images, posters, stories, or screenshots, capture the image reference, OCR/transcribe the relevant text, and download the poster into assets/posters instead of relying on remote image URLs.",
         "For every lineup artist, open official or high-signal profile links when available and collect a short sourced artist intro.",
         "For touring artists, look for future city/date announcements beyond Shanghai and record source links or screenshot references.",
         "For ticketing, inspect the final ticket page or mini-program reference, not only the promoter CTA.",
@@ -3526,7 +3717,7 @@
         "venue name, room/floor, city, district, full address, and map/search hint",
         "promoter, venue host, label, or organizing crew",
         "full lineup, B2B notes, set order, set times, and live/DJ format when available",
-        "poster or flyer image source, screenshot reference, and OCR text from image-only details",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
         "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
         "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
         "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
@@ -3568,7 +3759,7 @@
         "venue name, room/floor, city, district, full address, and map/search hint",
         "promoter, venue host, label, or organizing crew",
         "full lineup, B2B notes, set order, set times, and live/DJ format when available",
-        "poster or flyer image source, screenshot reference, and OCR text from image-only details",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
         "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
         "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
         "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
@@ -3578,7 +3769,7 @@
       ],
       "deepCollectionRules": [
         "Open and inspect second-layer links instead of stopping at a listing card or search result.",
-        "If key details are inside images, posters, stories, or screenshots, capture the image reference and OCR/transcribe the relevant text.",
+        "If key details are inside images, posters, stories, or screenshots, capture the image reference, OCR/transcribe the relevant text, and download the poster into assets/posters instead of relying on remote image URLs.",
         "For every lineup artist, open official or high-signal profile links when available and collect a short sourced artist intro.",
         "For touring artists, look for future city/date announcements beyond Shanghai and record source links or screenshot references.",
         "For ticketing, inspect the final ticket page or mini-program reference, not only the promoter CTA.",
@@ -3590,7 +3781,7 @@
         "venue name, room/floor, city, district, full address, and map/search hint",
         "promoter, venue host, label, or organizing crew",
         "full lineup, B2B notes, set order, set times, and live/DJ format when available",
-        "poster or flyer image source, screenshot reference, and OCR text from image-only details",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
         "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
         "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
         "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
@@ -3632,7 +3823,7 @@
         "venue name, room/floor, city, district, full address, and map/search hint",
         "promoter, venue host, label, or organizing crew",
         "full lineup, B2B notes, set order, set times, and live/DJ format when available",
-        "poster or flyer image source, screenshot reference, and OCR text from image-only details",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
         "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
         "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
         "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
@@ -3642,7 +3833,7 @@
       ],
       "deepCollectionRules": [
         "Open and inspect second-layer links instead of stopping at a listing card or search result.",
-        "If key details are inside images, posters, stories, or screenshots, capture the image reference and OCR/transcribe the relevant text.",
+        "If key details are inside images, posters, stories, or screenshots, capture the image reference, OCR/transcribe the relevant text, and download the poster into assets/posters instead of relying on remote image URLs.",
         "For every lineup artist, open official or high-signal profile links when available and collect a short sourced artist intro.",
         "For touring artists, look for future city/date announcements beyond Shanghai and record source links or screenshot references.",
         "For ticketing, inspect the final ticket page or mini-program reference, not only the promoter CTA.",
@@ -3654,7 +3845,7 @@
         "venue name, room/floor, city, district, full address, and map/search hint",
         "promoter, venue host, label, or organizing crew",
         "full lineup, B2B notes, set order, set times, and live/DJ format when available",
-        "poster or flyer image source, screenshot reference, and OCR text from image-only details",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
         "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
         "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
         "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
@@ -3696,7 +3887,7 @@
         "venue name, room/floor, city, district, full address, and map/search hint",
         "promoter, venue host, label, or organizing crew",
         "full lineup, B2B notes, set order, set times, and live/DJ format when available",
-        "poster or flyer image source, screenshot reference, and OCR text from image-only details",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
         "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
         "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
         "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
@@ -3706,7 +3897,7 @@
       ],
       "deepCollectionRules": [
         "Open and inspect second-layer links instead of stopping at a listing card or search result.",
-        "If key details are inside images, posters, stories, or screenshots, capture the image reference and OCR/transcribe the relevant text.",
+        "If key details are inside images, posters, stories, or screenshots, capture the image reference, OCR/transcribe the relevant text, and download the poster into assets/posters instead of relying on remote image URLs.",
         "For every lineup artist, open official or high-signal profile links when available and collect a short sourced artist intro.",
         "For touring artists, look for future city/date announcements beyond Shanghai and record source links or screenshot references.",
         "For ticketing, inspect the final ticket page or mini-program reference, not only the promoter CTA.",
@@ -3718,7 +3909,7 @@
         "venue name, room/floor, city, district, full address, and map/search hint",
         "promoter, venue host, label, or organizing crew",
         "full lineup, B2B notes, set order, set times, and live/DJ format when available",
-        "poster or flyer image source, screenshot reference, and OCR text from image-only details",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
         "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
         "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
         "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
@@ -3728,11 +3919,3028 @@
       ]
     }
   ],
-  "curatedEventsApplied": 19,
+  "curatedEventsApplied": 31,
   "djItineraryStats": {
-    "profileCount": 2,
+    "profileCount": 14,
+    "curatedProfileCount": 12,
     "generatedProfileCount": 1,
+    "profileSourceCounts": {
+      "anyma": 5,
+      "njelic": 1,
+      "nakin": 2,
+      "pashrawboi": 2,
+      "gaoqiao": 3,
+      "situ": 2,
+      "d-z": 3,
+      "dz": 3,
+      "discipline": 2,
+      "altieri3000": 2,
+      "altieri-3000": 2,
+      "velvet-robot": 2,
+      "hello-shitty": 2,
+      "ruima": 2,
+      "illsee": 3,
+      "tiya-manson": 3,
+      "tiyamanson": 3
+    },
     "rowCount": 40
+  },
+  "quality": {
+    "auditDate": "2026-06-11",
+    "generatedAt": "2026-06-11T12:45:43.230Z",
+    "totals": {
+      "events": 63,
+      "future": 31,
+      "futureHigh": 15,
+      "futureWatch": 14,
+      "singleSourceWatch": 11,
+      "venueProfiles": 29,
+      "futureVenueProfiles": 20,
+      "futureVenueWatch": 13,
+      "futurePerformerProfiles": 64,
+      "futurePerformerWatch": 2,
+      "singleSourceFuturePerformers": 54,
+      "futurePerformerProfileSources": 14,
+      "futurePerformerMissingProfileSources": 50,
+      "djSourceUpgradeQueue": 41,
+      "trackedDjProfiles": 14,
+      "curatedDjSourceProfiles": 12,
+      "trackedDjItineraryRows": 40,
+      "staleFuture": 0,
+      "missingTicketStatus": 0,
+      "highMissingLineup": 0,
+      "curatedEventsApplied": 31,
+      "failedSourceReports": 18
+    },
+    "watchQueue": [
+      {
+        "id": "system-popup",
+        "date": "2026-06-13",
+        "title": "System summer pop-up",
+        "venue": "Arcane / Shanghai Hotel",
+        "priority": "high",
+        "fitScore": 3,
+        "sourceLabel": "SmartShanghai",
+        "sourceCount": 1,
+        "reason": "single-source, lineup missing, needs source upgrade",
+        "nextAction": "Prioritize direct venue, promoter, ticketing, RA, or official artist evidence before promotion."
+      },
+      {
+        "id": "jasmin-knopha",
+        "date": "2026-06-20",
+        "title": "Jasmin + Knopha",
+        "venue": "Heim Sauna",
+        "priority": "high",
+        "fitScore": 3,
+        "sourceLabel": "SmartShanghai",
+        "sourceCount": 2,
+        "reason": "lineup missing",
+        "nextAction": "Recheck ticket, lineup, and set-time details before promotion."
+      },
+      {
+        "id": "botox-fatale",
+        "date": "2026-06-26",
+        "title": "Botox Fatale",
+        "venue": "Abyss Shanghai",
+        "priority": "high",
+        "fitScore": 3,
+        "sourceLabel": "SmartShanghai",
+        "sourceCount": 1,
+        "reason": "single-source, lineup missing, needs source upgrade",
+        "nextAction": "Prioritize direct venue, promoter, ticketing, RA, or official artist evidence before promotion."
+      },
+      {
+        "id": "anika-kunst",
+        "date": "2026-06-27",
+        "title": "Anika Kunst",
+        "venue": "POTENT",
+        "priority": "high",
+        "fitScore": 3,
+        "sourceLabel": "SmartShanghai",
+        "sourceCount": 2,
+        "reason": "lineup missing",
+        "nextAction": "Recheck ticket, lineup, and set-time details before promotion."
+      },
+      {
+        "id": "jaal",
+        "date": "2026-06-27",
+        "title": "JAAL The Machine live acid techno",
+        "venue": "Fenrir",
+        "priority": "high",
+        "fitScore": 3,
+        "sourceLabel": "SmartShanghai",
+        "sourceCount": 2,
+        "reason": "lineup missing, needs source upgrade",
+        "nextAction": "Recheck ticket, lineup, and set-time details before promotion."
+      },
+      {
+        "id": "truth-lies",
+        "date": "2026-06-27",
+        "title": "KNOT: Truth and Lies Vol. 4",
+        "venue": "ILLUM",
+        "priority": "high",
+        "fitScore": 3,
+        "sourceLabel": "SmartShanghai",
+        "sourceCount": 1,
+        "reason": "single-source, lineup missing, needs source upgrade",
+        "nextAction": "Prioritize direct venue, promoter, ticketing, RA, or official artist evidence before promotion."
+      },
+      {
+        "id": "youshan-warmup",
+        "date": "2026-06-27",
+        "title": "Youshan Festival warmup",
+        "venue": "Wigwam",
+        "priority": "high",
+        "fitScore": 3,
+        "sourceLabel": "SmartShanghai",
+        "sourceCount": 1,
+        "reason": "single-source, lineup missing, needs source upgrade",
+        "nextAction": "Prioritize direct venue, promoter, ticketing, RA, or official artist evidence before promotion."
+      },
+      {
+        "id": "devils-dancers",
+        "date": "2026-06-26",
+        "title": "The Devil's Dancers",
+        "venue": "Specters",
+        "priority": "medium",
+        "fitScore": 2,
+        "sourceLabel": "SmartShanghai",
+        "sourceCount": 1,
+        "reason": "single-source, lineup missing, needs source upgrade",
+        "nextAction": "Find a second source if it remains a likely techno-adjacent pick."
+      },
+      {
+        "id": "hexscape",
+        "date": "2026-06-27",
+        "title": "Hexscape pres. Bi-NON & chillchillshit",
+        "venue": "EXIT",
+        "priority": "medium",
+        "fitScore": 2,
+        "sourceLabel": "SmartShanghai",
+        "sourceCount": 1,
+        "reason": "single-source, lineup missing, needs source upgrade",
+        "nextAction": "Find a second source if it remains a likely techno-adjacent pick."
+      },
+      {
+        "id": "night-at-museum-90s-disco",
+        "date": "2026-06-18",
+        "title": "Night at the Museum: Back to the 90s Disco Night",
+        "venue": "Fotografiska",
+        "priority": "low",
+        "fitScore": 1,
+        "sourceLabel": "SmartShanghai",
+        "sourceCount": 1,
+        "reason": "single-source, lineup missing",
+        "nextAction": "Keep as context unless a direct source confirms stronger techno relevance."
+      },
+      {
+        "id": "afrowave-takeover-la-burg",
+        "date": "2026-06-20",
+        "title": "A Full Afrowave Takeover",
+        "venue": "La Burg",
+        "priority": "low",
+        "fitScore": 1,
+        "sourceLabel": "SmartShanghai",
+        "sourceCount": 1,
+        "reason": "single-source",
+        "nextAction": "Keep as context unless a direct source confirms stronger techno relevance."
+      },
+      {
+        "id": "liminal-dreams",
+        "date": "2026-06-20",
+        "title": "Liminal Dreams",
+        "venue": "Wigwam",
+        "priority": "low",
+        "fitScore": 1,
+        "sourceLabel": "SmartShanghai",
+        "sourceCount": 1,
+        "reason": "single-source, lineup missing, needs source upgrade",
+        "nextAction": "Keep as context unless a direct source confirms stronger techno relevance."
+      },
+      {
+        "id": "nova-summer-splash-pool-party",
+        "date": "2026-06-27",
+        "title": "Nova Events Presents: Summer Splash Pool Party",
+        "venue": "Radisson Blu Forest Manor Hongqiao",
+        "priority": "low",
+        "fitScore": 1,
+        "sourceLabel": "SmartShanghai",
+        "sourceCount": 1,
+        "reason": "single-source, lineup missing",
+        "nextAction": "Keep as context unless a direct source confirms stronger techno relevance."
+      },
+      {
+        "id": "sunset-sundays-dome",
+        "date": "2026-06-14",
+        "title": "Sunset Sundays",
+        "venue": "The Dome",
+        "priority": "low",
+        "fitScore": 0,
+        "sourceLabel": "SmartShanghai",
+        "sourceCount": 1,
+        "reason": "single-source",
+        "nextAction": "Keep as context unless a direct source confirms stronger techno relevance."
+      }
+    ],
+    "venueCoverage": [
+      {
+        "venue": "Abyss Shanghai",
+        "aliases": [],
+        "districts": [
+          "Huangpu"
+        ],
+        "genres": [
+          "techno, trance",
+          "warehouse techno, trance, industrial rave",
+          "techno, hardcore, black metal crossover",
+          "techno, hardcore, hardbass, hard trance",
+          "techno",
+          "techno, hardcore",
+          "trance, techno",
+          "hard techno, new trance"
+        ],
+        "sourceCount": 9,
+        "totalEvents": 9,
+        "futureEvents": 3,
+        "highConfidenceEvents": 7,
+        "watchEvents": 1,
+        "fitScore": 3,
+        "priority": "high",
+        "nextEventDate": "2026-06-12",
+        "lastChecked": "2026-06-11"
+      },
+      {
+        "venue": "POTENT",
+        "aliases": [],
+        "districts": [
+          "Huangpu"
+        ],
+        "genres": [
+          "techno, house",
+          "electronic culture, techno-adjacent",
+          "techno",
+          "house, techno-adjacent"
+        ],
+        "sourceCount": 8,
+        "totalEvents": 7,
+        "futureEvents": 3,
+        "highConfidenceEvents": 4,
+        "watchEvents": 1,
+        "fitScore": 3,
+        "priority": "high",
+        "nextEventDate": "2026-06-12",
+        "lastChecked": "2026-06-11"
+      },
+      {
+        "venue": "Reactor Shanghai",
+        "aliases": [],
+        "districts": [
+          "Changning"
+        ],
+        "genres": [
+          "techno-informed club music",
+          "techno, bass",
+          "house, hip-hop, groove, club",
+          "experimental, future beats, hip-hop",
+          "techno"
+        ],
+        "sourceCount": 6,
+        "totalEvents": 6,
+        "futureEvents": 3,
+        "highConfidenceEvents": 5,
+        "watchEvents": 0,
+        "fitScore": 3,
+        "priority": "high",
+        "nextEventDate": "2026-06-12",
+        "lastChecked": "2026-06-11"
+      },
+      {
+        "venue": "Dirty House",
+        "aliases": [],
+        "districts": [
+          "Huangpu"
+        ],
+        "genres": [
+          "techno, bass, UKG, dubstep, baile funk",
+          "trance, techno",
+          "techno"
+        ],
+        "sourceCount": 4,
+        "totalEvents": 3,
+        "futureEvents": 3,
+        "highConfidenceEvents": 3,
+        "watchEvents": 0,
+        "fitScore": 3,
+        "priority": "high",
+        "nextEventDate": "2026-06-12",
+        "lastChecked": "2026-06-11"
+      },
+      {
+        "venue": "EXIT",
+        "aliases": [],
+        "districts": [
+          "Changning"
+        ],
+        "genres": [
+          "techno",
+          "techno, bass",
+          "Detroit techno, electro, machine funk",
+          "industrial, dark hypnotic, acid, rave, experimental techno",
+          "techno, house, tech house",
+          "techno, house, minimal, nu-disco",
+          "techno, funk/soul lineage",
+          "electro, EBM, industrial, techno, IDM"
+        ],
+        "sourceCount": 10,
+        "totalEvents": 10,
+        "futureEvents": 2,
+        "highConfidenceEvents": 8,
+        "watchEvents": 1,
+        "fitScore": 3,
+        "priority": "high",
+        "nextEventDate": "2026-06-13",
+        "lastChecked": "2026-06-11"
+      },
+      {
+        "venue": "Wigwam",
+        "aliases": [],
+        "districts": [
+          "Changning"
+        ],
+        "genres": [
+          "ambient, deep techno",
+          "ambient, outer music, electronic",
+          "house, downtempo, minimal, ambient, techno, bass, trance"
+        ],
+        "sourceCount": 2,
+        "totalEvents": 3,
+        "futureEvents": 2,
+        "highConfidenceEvents": 1,
+        "watchEvents": 2,
+        "fitScore": 3,
+        "priority": "high",
+        "nextEventDate": "2026-06-20",
+        "lastChecked": "2026-06-11"
+      },
+      {
+        "venue": "Specters",
+        "aliases": [],
+        "districts": [
+          "Changning"
+        ],
+        "genres": [
+          "industrial, italo disco, darkwave, EBM, goth",
+          "post-punk, cold wave, minimal wave, dark wave, shoegaze"
+        ],
+        "sourceCount": 2,
+        "totalEvents": 2,
+        "futureEvents": 2,
+        "highConfidenceEvents": 1,
+        "watchEvents": 1,
+        "fitScore": 3,
+        "priority": "high",
+        "nextEventDate": "2026-06-13",
+        "lastChecked": "2026-06-11"
+      },
+      {
+        "venue": "ILLUM Shanghai",
+        "aliases": [
+          "ILLUM"
+        ],
+        "districts": [
+          "Changning"
+        ],
+        "genres": [
+          "trance, club, hyperpop, hard dance",
+          "hyperpop, trance, techno"
+        ],
+        "sourceCount": 2,
+        "totalEvents": 2,
+        "futureEvents": 1,
+        "highConfidenceEvents": 0,
+        "watchEvents": 1,
+        "fitScore": 3,
+        "priority": "high",
+        "nextEventDate": "2026-06-27",
+        "lastChecked": "2026-06-11"
+      },
+      {
+        "venue": "Arcane / Shanghai Hotel",
+        "aliases": [],
+        "districts": [
+          "Jing'an"
+        ],
+        "genres": [
+          "techno, club, multi-room pop-up"
+        ],
+        "sourceCount": 1,
+        "totalEvents": 1,
+        "futureEvents": 1,
+        "highConfidenceEvents": 0,
+        "watchEvents": 1,
+        "fitScore": 3,
+        "priority": "high",
+        "nextEventDate": "2026-06-13",
+        "lastChecked": "2026-06-11"
+      },
+      {
+        "venue": "Fenrir",
+        "aliases": [],
+        "districts": [
+          "Changning"
+        ],
+        "genres": [
+          "acid techno, metal crossover"
+        ],
+        "sourceCount": 2,
+        "totalEvents": 1,
+        "futureEvents": 1,
+        "highConfidenceEvents": 0,
+        "watchEvents": 1,
+        "fitScore": 3,
+        "priority": "high",
+        "nextEventDate": "2026-06-27",
+        "lastChecked": "2026-06-11"
+      },
+      {
+        "venue": "Heim Sauna",
+        "aliases": [],
+        "districts": [
+          "Huangpu"
+        ],
+        "genres": [
+          "techno-dubstep hybrid, house, club music"
+        ],
+        "sourceCount": 2,
+        "totalEvents": 1,
+        "futureEvents": 1,
+        "highConfidenceEvents": 0,
+        "watchEvents": 1,
+        "fitScore": 3,
+        "priority": "high",
+        "nextEventDate": "2026-06-20",
+        "lastChecked": "2026-06-11"
+      },
+      {
+        "venue": "M101 Room",
+        "aliases": [],
+        "districts": [
+          "Huangpu"
+        ],
+        "genres": [
+          "club, experimental electronic"
+        ],
+        "sourceCount": 1,
+        "totalEvents": 1,
+        "futureEvents": 1,
+        "highConfidenceEvents": 0,
+        "watchEvents": 0,
+        "fitScore": 2,
+        "priority": "medium",
+        "nextEventDate": "2026-06-13",
+        "lastChecked": "2026-06-11"
+      },
+      {
+        "venue": "Pop Bar",
+        "aliases": [],
+        "districts": [
+          "The Bund"
+        ],
+        "genres": [
+          "techno, house"
+        ],
+        "sourceCount": 1,
+        "totalEvents": 1,
+        "futureEvents": 1,
+        "highConfidenceEvents": 1,
+        "watchEvents": 0,
+        "fitScore": 2,
+        "priority": "medium",
+        "nextEventDate": "2026-06-13",
+        "lastChecked": "2026-06-11"
+      },
+      {
+        "venue": "Star@ Culture Center",
+        "aliases": [],
+        "districts": [
+          "Putuo"
+        ],
+        "genres": [
+          "electronic, acid folk, ambient, psychedelic"
+        ],
+        "sourceCount": 2,
+        "totalEvents": 1,
+        "futureEvents": 1,
+        "highConfidenceEvents": 1,
+        "watchEvents": 0,
+        "fitScore": 2,
+        "priority": "medium",
+        "nextEventDate": "2026-06-26",
+        "lastChecked": "2026-06-11"
+      },
+      {
+        "venue": "Beaufort Terrace",
+        "aliases": [],
+        "districts": [
+          "Huangpu"
+        ],
+        "genres": [
+          "electronic, DJ sets, live performance"
+        ],
+        "sourceCount": 1,
+        "totalEvents": 1,
+        "futureEvents": 1,
+        "highConfidenceEvents": 1,
+        "watchEvents": 0,
+        "fitScore": 1,
+        "priority": "low",
+        "nextEventDate": "2026-06-18",
+        "lastChecked": "2026-06-11"
+      },
+      {
+        "venue": "Fotografiska",
+        "aliases": [],
+        "districts": [
+          "Jing'an"
+        ],
+        "genres": [
+          "disco, retro club, DJ sets"
+        ],
+        "sourceCount": 1,
+        "totalEvents": 1,
+        "futureEvents": 1,
+        "highConfidenceEvents": 0,
+        "watchEvents": 1,
+        "fitScore": 1,
+        "priority": "low",
+        "nextEventDate": "2026-06-18",
+        "lastChecked": "2026-06-11"
+      },
+      {
+        "venue": "La Burg",
+        "aliases": [],
+        "districts": [
+          "Putuo"
+        ],
+        "genres": [
+          "amapiano, afrobeats, club"
+        ],
+        "sourceCount": 1,
+        "totalEvents": 1,
+        "futureEvents": 1,
+        "highConfidenceEvents": 0,
+        "watchEvents": 1,
+        "fitScore": 1,
+        "priority": "low",
+        "nextEventDate": "2026-06-20",
+        "lastChecked": "2026-06-11"
+      },
+      {
+        "venue": "Radisson Blu Forest Manor Hongqiao",
+        "aliases": [],
+        "districts": [
+          "Minhang"
+        ],
+        "genres": [
+          "pool party, DJ music"
+        ],
+        "sourceCount": 1,
+        "totalEvents": 1,
+        "futureEvents": 1,
+        "highConfidenceEvents": 0,
+        "watchEvents": 1,
+        "fitScore": 1,
+        "priority": "low",
+        "nextEventDate": "2026-06-27",
+        "lastChecked": "2026-06-11"
+      },
+      {
+        "venue": "Flair Rooftop Restaurant & Bar",
+        "aliases": [],
+        "districts": [
+          "Pudong"
+        ],
+        "genres": [
+          "rooftop club, DJ sets"
+        ],
+        "sourceCount": 1,
+        "totalEvents": 1,
+        "futureEvents": 1,
+        "highConfidenceEvents": 0,
+        "watchEvents": 0,
+        "fitScore": 0,
+        "priority": "low",
+        "nextEventDate": "2026-06-13",
+        "lastChecked": "2026-06-11"
+      },
+      {
+        "venue": "The Dome",
+        "aliases": [],
+        "districts": [
+          "Huangpu"
+        ],
+        "genres": [
+          "curated music, rooftop lounge"
+        ],
+        "sourceCount": 1,
+        "totalEvents": 1,
+        "futureEvents": 1,
+        "highConfidenceEvents": 0,
+        "watchEvents": 1,
+        "fitScore": 0,
+        "priority": "low",
+        "nextEventDate": "2026-06-14",
+        "lastChecked": "2026-06-11"
+      },
+      {
+        "venue": "EKA Tianwu",
+        "aliases": [],
+        "districts": [
+          "Pudong"
+        ],
+        "genres": [
+          "house, techno, bass"
+        ],
+        "sourceCount": 1,
+        "totalEvents": 1,
+        "futureEvents": 0,
+        "highConfidenceEvents": 1,
+        "watchEvents": 0,
+        "fitScore": 3,
+        "priority": "high",
+        "nextEventDate": "",
+        "lastChecked": "2026-06-08"
+      },
+      {
+        "venue": "Heim Shanghai",
+        "aliases": [],
+        "districts": [
+          "Huangpu"
+        ],
+        "genres": [
+          "experimental, club, trance-adjacent"
+        ],
+        "sourceCount": 1,
+        "totalEvents": 1,
+        "futureEvents": 0,
+        "highConfidenceEvents": 0,
+        "watchEvents": 0,
+        "fitScore": 3,
+        "priority": "high",
+        "nextEventDate": "",
+        "lastChecked": "2026-06-08"
+      },
+      {
+        "venue": "SmSh Territory",
+        "aliases": [],
+        "districts": [
+          "Central Shanghai"
+        ],
+        "genres": [
+          "techno, bass, club music"
+        ],
+        "sourceCount": 1,
+        "totalEvents": 1,
+        "futureEvents": 0,
+        "highConfidenceEvents": 0,
+        "watchEvents": 0,
+        "fitScore": 3,
+        "priority": "high",
+        "nextEventDate": "",
+        "lastChecked": "2026-06-08"
+      },
+      {
+        "venue": "The Sukhothai Shanghai",
+        "aliases": [],
+        "districts": [
+          "Jing'an"
+        ],
+        "genres": [
+          "techno, house"
+        ],
+        "sourceCount": 1,
+        "totalEvents": 1,
+        "futureEvents": 0,
+        "highConfidenceEvents": 1,
+        "watchEvents": 0,
+        "fitScore": 3,
+        "priority": "high",
+        "nextEventDate": "",
+        "lastChecked": "2026-06-08"
+      },
+      {
+        "venue": "byyb Radio",
+        "aliases": [],
+        "districts": [
+          "Huangpu"
+        ],
+        "genres": [
+          "techno radio session"
+        ],
+        "sourceCount": 1,
+        "totalEvents": 1,
+        "futureEvents": 0,
+        "highConfidenceEvents": 0,
+        "watchEvents": 0,
+        "fitScore": 2,
+        "priority": "medium",
+        "nextEventDate": "",
+        "lastChecked": "2026-06-08"
+      },
+      {
+        "venue": "C's Bar",
+        "aliases": [],
+        "districts": [
+          "Changning"
+        ],
+        "genres": [
+          "club, hip-hop, ghettotech, house, techno"
+        ],
+        "sourceCount": 1,
+        "totalEvents": 1,
+        "futureEvents": 0,
+        "highConfidenceEvents": 0,
+        "watchEvents": 0,
+        "fitScore": 2,
+        "priority": "medium",
+        "nextEventDate": "",
+        "lastChecked": "2026-06-08"
+      },
+      {
+        "venue": "Fosun Art Foundation",
+        "aliases": [],
+        "districts": [
+          "Huangpu"
+        ],
+        "genres": [
+          "techno, house"
+        ],
+        "sourceCount": 1,
+        "totalEvents": 1,
+        "futureEvents": 0,
+        "highConfidenceEvents": 1,
+        "watchEvents": 0,
+        "fitScore": 2,
+        "priority": "medium",
+        "nextEventDate": "",
+        "lastChecked": "2026-06-08"
+      },
+      {
+        "venue": "Sunland Boundless Park",
+        "aliases": [],
+        "districts": [
+          "Pudong"
+        ],
+        "genres": [
+          "melodic techno, audiovisual show"
+        ],
+        "sourceCount": 1,
+        "totalEvents": 1,
+        "futureEvents": 0,
+        "highConfidenceEvents": 1,
+        "watchEvents": 0,
+        "fitScore": 2,
+        "priority": "medium",
+        "nextEventDate": "",
+        "lastChecked": "2026-06-08"
+      },
+      {
+        "venue": "The Shanghai Edition",
+        "aliases": [],
+        "districts": [
+          "Huangpu"
+        ],
+        "genres": [
+          "techno, house"
+        ],
+        "sourceCount": 1,
+        "totalEvents": 1,
+        "futureEvents": 0,
+        "highConfidenceEvents": 1,
+        "watchEvents": 0,
+        "fitScore": 2,
+        "priority": "medium",
+        "nextEventDate": "",
+        "lastChecked": "2026-06-08"
+      }
+    ],
+    "djCoverage": {
+      "trackedItineraryProfiles": 14,
+      "curatedSourceProfiles": 12,
+      "trackedItineraryRows": 40,
+      "futureProfiles": [
+        {
+          "slug": "nakin",
+          "name": "NAKIN",
+          "eventCount": 4,
+          "futureEventCount": 4,
+          "sourceCount": 5,
+          "trackedProfileSourceCount": 2,
+          "venues": [
+            "Dirty House",
+            "Abyss Shanghai"
+          ],
+          "genres": [
+            "techno, bass, UKG, dubstep, baile funk",
+            "hard techno, new trance",
+            "trance, techno",
+            "techno"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 4,
+          "singleSourceFutureAppearances": 3,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-12"
+        },
+        {
+          "slug": "d-z",
+          "name": "D_z",
+          "eventCount": 2,
+          "futureEventCount": 2,
+          "sourceCount": 3,
+          "trackedProfileSourceCount": 3,
+          "venues": [
+            "Dirty House"
+          ],
+          "genres": [
+            "trance, techno",
+            "techno"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 2,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-19"
+        },
+        {
+          "slug": "gaoqiao",
+          "name": "GaoQiao",
+          "eventCount": 2,
+          "futureEventCount": 2,
+          "sourceCount": 2,
+          "trackedProfileSourceCount": 3,
+          "venues": [
+            "POTENT",
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "techno, house",
+            "experimental, future beats, hip-hop"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 2,
+          "singleSourceFutureAppearances": 2,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-12"
+        },
+        {
+          "slug": "pashrawboi",
+          "name": "PASHRAWBOI",
+          "eventCount": 2,
+          "futureEventCount": 2,
+          "sourceCount": 2,
+          "trackedProfileSourceCount": 2,
+          "venues": [
+            "Abyss Shanghai",
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "hard techno, new trance",
+            "techno"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 2,
+          "singleSourceFutureAppearances": 2,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-13"
+        },
+        {
+          "slug": "situ",
+          "name": "SITU",
+          "eventCount": 2,
+          "futureEventCount": 2,
+          "sourceCount": 3,
+          "trackedProfileSourceCount": 2,
+          "venues": [
+            "Abyss Shanghai",
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "trance, techno",
+            "techno"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 2,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-12"
+        },
+        {
+          "slug": "altieri3000",
+          "name": "Altieri3000 [Live]",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 2,
+          "venues": [
+            "EXIT"
+          ],
+          "genres": [
+            "electro, EBM, industrial, techno, IDM"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-13"
+        },
+        {
+          "slug": "cltx",
+          "name": "CLTX",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 2,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Abyss Shanghai"
+          ],
+          "genres": [
+            "trance, techno"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-12"
+        },
+        {
+          "slug": "cosmjn",
+          "name": "Cosmjn",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "POTENT"
+          ],
+          "genres": [
+            "techno, house"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-12"
+        },
+        {
+          "slug": "d3m3ntor",
+          "name": "D3M3NTOR",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "techno"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-18"
+        },
+        {
+          "slug": "discipline",
+          "name": "DISCIPLINE",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 2,
+          "venues": [
+            "Abyss Shanghai"
+          ],
+          "genres": [
+            "hard techno, new trance"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-13"
+        },
+        {
+          "slug": "heatwolves",
+          "name": "Heatwolves",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 2,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Specters"
+          ],
+          "genres": [
+            "industrial, italo disco, darkwave, EBM, goth"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-13"
+        },
+        {
+          "slug": "hello-shitty",
+          "name": "Hello Shitty",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 2,
+          "venues": [
+            "EXIT"
+          ],
+          "genres": [
+            "electro, EBM, industrial, techno, IDM"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-13"
+        },
+        {
+          "slug": "howtodo",
+          "name": "howtodo",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "techno"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-18"
+        },
+        {
+          "slug": "illsee",
+          "name": "Illsee",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 3,
+          "venues": [
+            "EXIT"
+          ],
+          "genres": [
+            "electro, EBM, industrial, techno, IDM"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-13"
+        },
+        {
+          "slug": "josie",
+          "name": "Josie",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "techno"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-18"
+        },
+        {
+          "slug": "justease",
+          "name": "Justease",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 2,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Dirty House"
+          ],
+          "genres": [
+            "trance, techno"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-19"
+        },
+        {
+          "slug": "laglory",
+          "name": "LaGlory",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Abyss Shanghai"
+          ],
+          "genres": [
+            "hard techno, new trance"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-13"
+        },
+        {
+          "slug": "limsum",
+          "name": "Limsum",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "POTENT"
+          ],
+          "genres": [
+            "house, techno-adjacent"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-13"
+        },
+        {
+          "slug": "marcus",
+          "name": "Marcus",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Dirty House"
+          ],
+          "genres": [
+            "techno"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-26"
+        },
+        {
+          "slug": "matisa",
+          "name": "Matisa",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "POTENT"
+          ],
+          "genres": [
+            "house, techno-adjacent"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-13"
+        },
+        {
+          "slug": "max-shen",
+          "name": "Max Shen",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "POTENT"
+          ],
+          "genres": [
+            "house, techno-adjacent"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-13"
+        },
+        {
+          "slug": "megawatts",
+          "name": "MegaWatts",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Dirty House"
+          ],
+          "genres": [
+            "techno"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-26"
+        },
+        {
+          "slug": "milo-raad",
+          "name": "Milo Raad",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "POTENT"
+          ],
+          "genres": [
+            "techno, house"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-12"
+        },
+        {
+          "slug": "mrd",
+          "name": "MRD",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 2,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Dirty House"
+          ],
+          "genres": [
+            "trance, techno"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-19"
+        },
+        {
+          "slug": "prymara",
+          "name": "PRYMARA",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 2,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Abyss Shanghai"
+          ],
+          "genres": [
+            "trance, techno"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-12"
+        },
+        {
+          "slug": "ruima",
+          "name": "Ruima",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 2,
+          "venues": [
+            "EXIT"
+          ],
+          "genres": [
+            "electro, EBM, industrial, techno, IDM"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-13"
+        },
+        {
+          "slug": "santa-k",
+          "name": "Santa K",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Abyss Shanghai"
+          ],
+          "genres": [
+            "hard techno, new trance"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-13"
+        },
+        {
+          "slug": "tiya-manson",
+          "name": "Tiya Manson",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 2,
+          "trackedProfileSourceCount": 3,
+          "venues": [
+            "Dirty House"
+          ],
+          "genres": [
+            "trance, techno"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-19"
+        },
+        {
+          "slug": "tiyamanson",
+          "name": "TiyaManson",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 3,
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "techno"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-18"
+        },
+        {
+          "slug": "velvet-robot",
+          "name": "Velvet Robot [Live]",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 2,
+          "venues": [
+            "EXIT"
+          ],
+          "genres": [
+            "electro, EBM, industrial, techno, IDM"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-13"
+        },
+        {
+          "slug": "wataru",
+          "name": "WATARU",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 2,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Abyss Shanghai"
+          ],
+          "genres": [
+            "trance, techno"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-12"
+        },
+        {
+          "slug": "cola-ren",
+          "name": "COLA REN",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "M101 Room"
+          ],
+          "genres": [
+            "club, experimental electronic"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-13"
+        },
+        {
+          "slug": "dj-ebp",
+          "name": "DJ EBP",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "experimental, future beats, hip-hop"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-13"
+        },
+        {
+          "slug": "dj-loverboy",
+          "name": "DJ LOVERBOY",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "experimental, future beats, hip-hop"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-13"
+        },
+        {
+          "slug": "dj-truck",
+          "name": "DJ TRUCK",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "M101 Room"
+          ],
+          "genres": [
+            "club, experimental electronic"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-13"
+        },
+        {
+          "slug": "enred",
+          "name": "Enred",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Pop Bar"
+          ],
+          "genres": [
+            "techno, house"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-13"
+        },
+        {
+          "slug": "erik-hagleton",
+          "name": "Erik Hagleton",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Pop Bar"
+          ],
+          "genres": [
+            "techno, house"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-13"
+        },
+        {
+          "slug": "gooooose",
+          "name": "Gooooose",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "M101 Room"
+          ],
+          "genres": [
+            "club, experimental electronic"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-13"
+        },
+        {
+          "slug": "ian-g",
+          "name": "Ian G",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Pop Bar"
+          ],
+          "genres": [
+            "techno, house"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-13"
+        },
+        {
+          "slug": "kollin",
+          "name": "KOLLIN",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Dirty House"
+          ],
+          "genres": [
+            "techno, bass, UKG, dubstep, baile funk"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-12"
+        },
+        {
+          "slug": "litty-ritty",
+          "name": "Litty Ritty",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Pop Bar"
+          ],
+          "genres": [
+            "techno, house"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-13"
+        },
+        {
+          "slug": "mamayo",
+          "name": "Mamayo",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "M101 Room"
+          ],
+          "genres": [
+            "club, experimental electronic"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-13"
+        },
+        {
+          "slug": "meer",
+          "name": "meer.",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "M101 Room"
+          ],
+          "genres": [
+            "club, experimental electronic"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-13"
+        },
+        {
+          "slug": "mico",
+          "name": "MICO",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 2,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Star@ Culture Center"
+          ],
+          "genres": [
+            "electronic, acid folk, ambient, psychedelic"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-26"
+        },
+        {
+          "slug": "nosaj-thing",
+          "name": "Nosaj Thing",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "experimental, future beats, hip-hop"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-13"
+        },
+        {
+          "slug": "onyx",
+          "name": "Onyx",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Dirty House"
+          ],
+          "genres": [
+            "techno, bass, UKG, dubstep, baile funk"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-12"
+        },
+        {
+          "slug": "serpdren",
+          "name": "Serpdren",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Dirty House"
+          ],
+          "genres": [
+            "techno, bass, UKG, dubstep, baile funk"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-12"
+        },
+        {
+          "slug": "taiga",
+          "name": "Taiga",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 2,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Star@ Culture Center"
+          ],
+          "genres": [
+            "electronic, acid folk, ambient, psychedelic"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-26"
+        },
+        {
+          "slug": "the-hymmapan-electron",
+          "name": "The Hymmapan Electron",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 2,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Star@ Culture Center"
+          ],
+          "genres": [
+            "electronic, acid folk, ambient, psychedelic"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-26"
+        },
+        {
+          "slug": "b2b",
+          "name": "B2B",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "house, hip-hop, groove, club"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 1,
+          "priority": "low",
+          "nextDate": "2026-06-12"
+        },
+        {
+          "slug": "chingyi",
+          "name": "Chingyi",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Beaufort Terrace"
+          ],
+          "genres": [
+            "electronic, DJ sets, live performance"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 1,
+          "priority": "low",
+          "nextDate": "2026-06-18"
+        },
+        {
+          "slug": "chiyokoo",
+          "name": "Chiyokoo",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Beaufort Terrace"
+          ],
+          "genres": [
+            "electronic, DJ sets, live performance"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 1,
+          "priority": "low",
+          "nextDate": "2026-06-18"
+        },
+        {
+          "slug": "chuan",
+          "name": "Chuan",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Beaufort Terrace"
+          ],
+          "genres": [
+            "electronic, DJ sets, live performance"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 1,
+          "priority": "low",
+          "nextDate": "2026-06-18"
+        },
+        {
+          "slug": "dada-es",
+          "name": "Dada (ES)",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "house, hip-hop, groove, club"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 1,
+          "priority": "low",
+          "nextDate": "2026-06-12"
+        },
+        {
+          "slug": "dreaming",
+          "name": "Dreaming",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "house, hip-hop, groove, club"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 1,
+          "priority": "low",
+          "nextDate": "2026-06-12"
+        },
+        {
+          "slug": "gkamkbns",
+          "name": "gkamkbns",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "house, hip-hop, groove, club"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 1,
+          "priority": "low",
+          "nextDate": "2026-06-12"
+        },
+        {
+          "slug": "golgol",
+          "name": "Golgol",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Beaufort Terrace"
+          ],
+          "genres": [
+            "electronic, DJ sets, live performance"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 1,
+          "priority": "low",
+          "nextDate": "2026-06-18"
+        },
+        {
+          "slug": "kaleidojazzlegs",
+          "name": "KaleidoJazzlegs",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "house, hip-hop, groove, club"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 1,
+          "priority": "low",
+          "nextDate": "2026-06-12"
+        },
+        {
+          "slug": "njelic",
+          "name": "NJELIC",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 1,
+          "venues": [
+            "La Burg"
+          ],
+          "genres": [
+            "amapiano, afrobeats, club"
+          ],
+          "watchAppearances": 1,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 1,
+          "priority": "low",
+          "nextDate": "2026-06-20"
+        },
+        {
+          "slug": "pei",
+          "name": "Pei",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Beaufort Terrace"
+          ],
+          "genres": [
+            "electronic, DJ sets, live performance"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 1,
+          "priority": "low",
+          "nextDate": "2026-06-18"
+        },
+        {
+          "slug": "soul-navigator",
+          "name": "Soul Navigator",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "house, hip-hop, groove, club"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 1,
+          "priority": "low",
+          "nextDate": "2026-06-12"
+        },
+        {
+          "slug": "wang-meng-yu-miao",
+          "name": "Wang Meng + Yu Miao",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Beaufort Terrace"
+          ],
+          "genres": [
+            "electronic, DJ sets, live performance"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 1,
+          "priority": "low",
+          "nextDate": "2026-06-18"
+        },
+        {
+          "slug": "xiaolaba",
+          "name": "Xiaolaba",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Beaufort Terrace"
+          ],
+          "genres": [
+            "electronic, DJ sets, live performance"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 1,
+          "priority": "low",
+          "nextDate": "2026-06-18"
+        },
+        {
+          "slug": "dj-rain",
+          "name": "DJ Rain",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "The Dome"
+          ],
+          "genres": [
+            "curated music, rooftop lounge"
+          ],
+          "watchAppearances": 1,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 0,
+          "priority": "low",
+          "nextDate": "2026-06-14"
+        }
+      ],
+      "sourceUpgradeQueue": [
+        {
+          "slug": "cosmjn",
+          "name": "Cosmjn",
+          "priority": "high",
+          "fitScore": 3,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-12",
+          "venues": [
+            "POTENT"
+          ],
+          "genres": [
+            "techno, house"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "d3m3ntor",
+          "name": "D3M3NTOR",
+          "priority": "high",
+          "fitScore": 3,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-18",
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "techno"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "howtodo",
+          "name": "howtodo",
+          "priority": "high",
+          "fitScore": 3,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-18",
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "techno"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "josie",
+          "name": "Josie",
+          "priority": "high",
+          "fitScore": 3,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-18",
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "techno"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "laglory",
+          "name": "LaGlory",
+          "priority": "high",
+          "fitScore": 3,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-13",
+          "venues": [
+            "Abyss Shanghai"
+          ],
+          "genres": [
+            "hard techno, new trance"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "limsum",
+          "name": "Limsum",
+          "priority": "high",
+          "fitScore": 3,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-13",
+          "venues": [
+            "POTENT"
+          ],
+          "genres": [
+            "house, techno-adjacent"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "marcus",
+          "name": "Marcus",
+          "priority": "high",
+          "fitScore": 3,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-26",
+          "venues": [
+            "Dirty House"
+          ],
+          "genres": [
+            "techno"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "matisa",
+          "name": "Matisa",
+          "priority": "high",
+          "fitScore": 3,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-13",
+          "venues": [
+            "POTENT"
+          ],
+          "genres": [
+            "house, techno-adjacent"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "max-shen",
+          "name": "Max Shen",
+          "priority": "high",
+          "fitScore": 3,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-13",
+          "venues": [
+            "POTENT"
+          ],
+          "genres": [
+            "house, techno-adjacent"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "megawatts",
+          "name": "MegaWatts",
+          "priority": "high",
+          "fitScore": 3,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-26",
+          "venues": [
+            "Dirty House"
+          ],
+          "genres": [
+            "techno"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "milo-raad",
+          "name": "Milo Raad",
+          "priority": "high",
+          "fitScore": 3,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-12",
+          "venues": [
+            "POTENT"
+          ],
+          "genres": [
+            "techno, house"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "santa-k",
+          "name": "Santa K",
+          "priority": "high",
+          "fitScore": 3,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-13",
+          "venues": [
+            "Abyss Shanghai"
+          ],
+          "genres": [
+            "hard techno, new trance"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "cola-ren",
+          "name": "COLA REN",
+          "priority": "medium",
+          "fitScore": 2,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-13",
+          "venues": [
+            "M101 Room"
+          ],
+          "genres": [
+            "club, experimental electronic"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "dj-ebp",
+          "name": "DJ EBP",
+          "priority": "medium",
+          "fitScore": 2,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-13",
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "experimental, future beats, hip-hop"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "dj-loverboy",
+          "name": "DJ LOVERBOY",
+          "priority": "medium",
+          "fitScore": 2,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-13",
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "experimental, future beats, hip-hop"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "dj-truck",
+          "name": "DJ TRUCK",
+          "priority": "medium",
+          "fitScore": 2,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-13",
+          "venues": [
+            "M101 Room"
+          ],
+          "genres": [
+            "club, experimental electronic"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "enred",
+          "name": "Enred",
+          "priority": "medium",
+          "fitScore": 2,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-13",
+          "venues": [
+            "Pop Bar"
+          ],
+          "genres": [
+            "techno, house"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "erik-hagleton",
+          "name": "Erik Hagleton",
+          "priority": "medium",
+          "fitScore": 2,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-13",
+          "venues": [
+            "Pop Bar"
+          ],
+          "genres": [
+            "techno, house"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "gooooose",
+          "name": "Gooooose",
+          "priority": "medium",
+          "fitScore": 2,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-13",
+          "venues": [
+            "M101 Room"
+          ],
+          "genres": [
+            "club, experimental electronic"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "ian-g",
+          "name": "Ian G",
+          "priority": "medium",
+          "fitScore": 2,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-13",
+          "venues": [
+            "Pop Bar"
+          ],
+          "genres": [
+            "techno, house"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "kollin",
+          "name": "KOLLIN",
+          "priority": "medium",
+          "fitScore": 2,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-12",
+          "venues": [
+            "Dirty House"
+          ],
+          "genres": [
+            "techno, bass, UKG, dubstep, baile funk"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "litty-ritty",
+          "name": "Litty Ritty",
+          "priority": "medium",
+          "fitScore": 2,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-13",
+          "venues": [
+            "Pop Bar"
+          ],
+          "genres": [
+            "techno, house"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "mamayo",
+          "name": "Mamayo",
+          "priority": "medium",
+          "fitScore": 2,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-13",
+          "venues": [
+            "M101 Room"
+          ],
+          "genres": [
+            "club, experimental electronic"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "meer",
+          "name": "meer.",
+          "priority": "medium",
+          "fitScore": 2,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-13",
+          "venues": [
+            "M101 Room"
+          ],
+          "genres": [
+            "club, experimental electronic"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "nosaj-thing",
+          "name": "Nosaj Thing",
+          "priority": "medium",
+          "fitScore": 2,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-13",
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "experimental, future beats, hip-hop"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "onyx",
+          "name": "Onyx",
+          "priority": "medium",
+          "fitScore": 2,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-12",
+          "venues": [
+            "Dirty House"
+          ],
+          "genres": [
+            "techno, bass, UKG, dubstep, baile funk"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "serpdren",
+          "name": "Serpdren",
+          "priority": "medium",
+          "fitScore": 2,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-12",
+          "venues": [
+            "Dirty House"
+          ],
+          "genres": [
+            "techno, bass, UKG, dubstep, baile funk"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "b2b",
+          "name": "B2B",
+          "priority": "low",
+          "fitScore": 1,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-12",
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "house, hip-hop, groove, club"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "chingyi",
+          "name": "Chingyi",
+          "priority": "low",
+          "fitScore": 1,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-18",
+          "venues": [
+            "Beaufort Terrace"
+          ],
+          "genres": [
+            "electronic, DJ sets, live performance"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "chiyokoo",
+          "name": "Chiyokoo",
+          "priority": "low",
+          "fitScore": 1,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-18",
+          "venues": [
+            "Beaufort Terrace"
+          ],
+          "genres": [
+            "electronic, DJ sets, live performance"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "chuan",
+          "name": "Chuan",
+          "priority": "low",
+          "fitScore": 1,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-18",
+          "venues": [
+            "Beaufort Terrace"
+          ],
+          "genres": [
+            "electronic, DJ sets, live performance"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "dada-es",
+          "name": "Dada (ES)",
+          "priority": "low",
+          "fitScore": 1,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-12",
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "house, hip-hop, groove, club"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "dreaming",
+          "name": "Dreaming",
+          "priority": "low",
+          "fitScore": 1,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-12",
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "house, hip-hop, groove, club"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "gkamkbns",
+          "name": "gkamkbns",
+          "priority": "low",
+          "fitScore": 1,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-12",
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "house, hip-hop, groove, club"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "golgol",
+          "name": "Golgol",
+          "priority": "low",
+          "fitScore": 1,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-18",
+          "venues": [
+            "Beaufort Terrace"
+          ],
+          "genres": [
+            "electronic, DJ sets, live performance"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "kaleidojazzlegs",
+          "name": "KaleidoJazzlegs",
+          "priority": "low",
+          "fitScore": 1,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-12",
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "house, hip-hop, groove, club"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "pei",
+          "name": "Pei",
+          "priority": "low",
+          "fitScore": 1,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-18",
+          "venues": [
+            "Beaufort Terrace"
+          ],
+          "genres": [
+            "electronic, DJ sets, live performance"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "soul-navigator",
+          "name": "Soul Navigator",
+          "priority": "low",
+          "fitScore": 1,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-12",
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "house, hip-hop, groove, club"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "wang-meng-yu-miao",
+          "name": "Wang Meng + Yu Miao",
+          "priority": "low",
+          "fitScore": 1,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-18",
+          "venues": [
+            "Beaufort Terrace"
+          ],
+          "genres": [
+            "electronic, DJ sets, live performance"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "xiaolaba",
+          "name": "Xiaolaba",
+          "priority": "low",
+          "fitScore": 1,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-18",
+          "venues": [
+            "Beaufort Terrace"
+          ],
+          "genres": [
+            "electronic, DJ sets, live performance"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "dj-rain",
+          "name": "DJ Rain",
+          "priority": "low",
+          "fitScore": 0,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-14",
+          "venues": [
+            "The Dome"
+          ],
+          "genres": [
+            "curated music, rooftop lounge"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        }
+      ],
+      "allProfileCount": 64
+    },
+    "sourceHealth": [
+      {
+        "label": "Resident Advisor Shanghai",
+        "kind": "listing",
+        "sourceStatus": "secondary",
+        "ok": false,
+        "checkedAt": "2026-06-11",
+        "status": 403,
+        "eventLinks": 0
+      },
+      {
+        "label": "SmartShanghai June 2026 clubbing guide",
+        "kind": "guide",
+        "sourceStatus": "secondary",
+        "ok": true,
+        "checkedAt": "2026-06-11",
+        "status": 200,
+        "eventLinks": 0
+      },
+      {
+        "label": "SmartShanghai clubbing listings",
+        "kind": "listing",
+        "sourceStatus": "secondary",
+        "ok": false,
+        "checkedAt": "2026-06-11",
+        "status": null,
+        "eventLinks": 0,
+        "error": "This operation was aborted"
+      },
+      {
+        "label": "X/Twitter keyword: \"Shanghai\" techno",
+        "kind": "social-keyword",
+        "sourceStatus": "social-lead",
+        "ok": false,
+        "checkedAt": "2026-06-11",
+        "status": null,
+        "links": 0,
+        "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+      },
+      {
+        "label": "X/Twitter keyword: \"Shanghai\" rave",
+        "kind": "social-keyword",
+        "sourceStatus": "social-lead",
+        "ok": false,
+        "checkedAt": "2026-06-11",
+        "status": null,
+        "links": 0,
+        "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+      },
+      {
+        "label": "X/Twitter keyword: \"Shanghai\" underground electronic",
+        "kind": "social-keyword",
+        "sourceStatus": "social-lead",
+        "ok": false,
+        "checkedAt": "2026-06-11",
+        "status": null,
+        "links": 0,
+        "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+      },
+      {
+        "label": "X/Twitter keyword: \"Shanghai\" warehouse party",
+        "kind": "social-keyword",
+        "sourceStatus": "social-lead",
+        "ok": false,
+        "checkedAt": "2026-06-11",
+        "status": null,
+        "links": 0,
+        "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+      },
+      {
+        "label": "X/Twitter keyword: \"Abyss Shanghai\" techno",
+        "kind": "social-keyword",
+        "sourceStatus": "social-lead",
+        "ok": false,
+        "checkedAt": "2026-06-11",
+        "status": null,
+        "links": 0,
+        "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+      },
+      {
+        "label": "X/Twitter keyword: \"POTENT Shanghai\"",
+        "kind": "social-keyword",
+        "sourceStatus": "social-lead",
+        "ok": false,
+        "checkedAt": "2026-06-11",
+        "status": null,
+        "links": 0,
+        "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+      },
+      {
+        "label": "X/Twitter keyword: \"EXIT Shanghai\" techno",
+        "kind": "social-keyword",
+        "sourceStatus": "social-lead",
+        "ok": false,
+        "checkedAt": "2026-06-11",
+        "status": null,
+        "links": 0,
+        "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+      },
+      {
+        "label": "X/Twitter keyword: \"Heim Shanghai\" electronic",
+        "kind": "social-keyword",
+        "sourceStatus": "social-lead",
+        "ok": false,
+        "checkedAt": "2026-06-11",
+        "status": null,
+        "links": 0,
+        "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+      },
+      {
+        "label": "X/Twitter keyword: \"System Shanghai\" club",
+        "kind": "social-keyword",
+        "sourceStatus": "social-lead",
+        "ok": false,
+        "checkedAt": "2026-06-11",
+        "status": null,
+        "links": 0,
+        "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+      },
+      {
+        "label": "X/Twitter keyword: \"ILLUM Shanghai\"",
+        "kind": "social-keyword",
+        "sourceStatus": "social-lead",
+        "ok": false,
+        "checkedAt": "2026-06-11",
+        "status": null,
+        "links": 0,
+        "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+      },
+      {
+        "label": "X/Twitter keyword: \"Reactor Shanghai\" electronic",
+        "kind": "social-keyword",
+        "sourceStatus": "social-lead",
+        "ok": false,
+        "checkedAt": "2026-06-11",
+        "status": null,
+        "links": 0,
+        "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+      },
+      {
+        "label": "X/Twitter keyword: \"Wigwam Shanghai\"",
+        "kind": "social-keyword",
+        "sourceStatus": "social-lead",
+        "ok": false,
+        "checkedAt": "2026-06-11",
+        "status": null,
+        "links": 0,
+        "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+      },
+      {
+        "label": "X/Twitter keyword: \"上海\" techno",
+        "kind": "social-keyword",
+        "sourceStatus": "social-lead",
+        "ok": false,
+        "checkedAt": "2026-06-11",
+        "status": null,
+        "links": 0,
+        "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+      },
+      {
+        "label": "X/Twitter keyword: \"上海\" rave",
+        "kind": "social-keyword",
+        "sourceStatus": "social-lead",
+        "ok": false,
+        "checkedAt": "2026-06-11",
+        "status": null,
+        "links": 0,
+        "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+      },
+      {
+        "label": "X/Twitter keyword: \"上海\" 电子音乐",
+        "kind": "social-keyword",
+        "sourceStatus": "social-lead",
+        "ok": false,
+        "checkedAt": "2026-06-11",
+        "status": null,
+        "links": 0,
+        "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+      },
+      {
+        "label": "X/Twitter keyword: \"上海\" 地下电子",
+        "kind": "social-keyword",
+        "sourceStatus": "social-lead",
+        "ok": false,
+        "checkedAt": "2026-06-11",
+        "status": null,
+        "links": 0,
+        "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
+      },
+      {
+        "label": "RA Shanghai",
+        "kind": "computer-use-source",
+        "sourceStatus": "computer-use",
+        "ok": null,
+        "checkedAt": "2026-06-11",
+        "status": "computer-use"
+      },
+      {
+        "label": "SmartShanghai nightlife",
+        "kind": "computer-use-source",
+        "sourceStatus": "computer-use",
+        "ok": null,
+        "checkedAt": "2026-06-11",
+        "status": "computer-use"
+      },
+      {
+        "label": "Xiaohongshu searches",
+        "kind": "computer-use-source",
+        "sourceStatus": "computer-use",
+        "ok": null,
+        "checkedAt": "2026-06-11",
+        "status": "computer-use"
+      },
+      {
+        "label": "WeChat official accounts and groups",
+        "kind": "computer-use-source",
+        "sourceStatus": "computer-use",
+        "ok": null,
+        "checkedAt": "2026-06-11",
+        "status": "computer-use"
+      },
+      {
+        "label": "Venue official accounts",
+        "kind": "computer-use-source",
+        "sourceStatus": "computer-use",
+        "ok": null,
+        "checkedAt": "2026-06-11",
+        "status": "computer-use"
+      },
+      {
+        "label": "Promoter posters",
+        "kind": "computer-use-source",
+        "sourceStatus": "computer-use",
+        "ok": null,
+        "checkedAt": "2026-06-11",
+        "status": "computer-use"
+      },
+      {
+        "label": "Ticketing apps and mini-programs",
+        "kind": "computer-use-source",
+        "sourceStatus": "computer-use",
+        "ok": null,
+        "checkedAt": "2026-06-11",
+        "status": "computer-use"
+      },
+      {
+        "label": "DJ and label accounts",
+        "kind": "computer-use-source",
+        "sourceStatus": "computer-use",
+        "ok": null,
+        "checkedAt": "2026-06-11",
+        "status": "computer-use"
+      }
+    ],
+    "updateWorkflow": [
+      "Run npm run scrape with reasonable timeouts to refresh public pages and curated overlays.",
+      "Run npm run audit to inspect future freshness, ticket notes, High-confidence lineups, the Watch queue, active venue coverage, and future DJ profile coverage.",
+      "Promote Watch entries only after direct venue, promoter, ticketing, RA, SmartShanghai detail, or official artist evidence is captured in config/curated-events.json.",
+      "Use Computer Use / Chrome for WeChat, Xiaohongshu, mini-program, image-only, or anti-bot sources, then preserve evidence notes and source links in curated overlays."
+    ]
   },
   "notes": [
     "This v1 scraper keeps curated embedded events as the seed dataset, refreshes source metadata, and adds parsable public event pages as watch/secondary entries.",

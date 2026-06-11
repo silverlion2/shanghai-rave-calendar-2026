@@ -214,3 +214,131 @@ Refresh and verification:
 Source rule:
 
 - Do not fabricate worldwide tour rows. The all-DJ itinerary uses confirmed calendar appearances by default, and worldwide overlay rows require official, ticketing, venue/promoter, SmartShanghai/RA, Songkick/Bandsintown, or similarly high-signal sourced data.
+
+## 2026-06-11 World-Class UI/UX Upgrade and Push
+
+The user asked to upgrade the website UI/UX, content, and storyline until it could reasonably be regarded as a high-quality, user-friendly website. The work was turned into an explicit Codex goal and completed.
+
+Implemented site-wide UI/UX changes:
+
+- `index.html` and `shanghai-rave-calendar-2026.html` remain mirrored and now use a clearer public calendar narrative, primary navigation, trust notes, main CTAs, planning shortcut cards, labeled filters, and a live result summary.
+- `planner.html` now has consistent five-page navigation, stronger route-builder copy, labeled filters, and a live slot summary showing total, exact, estimated, and date-window state.
+- `venues.html` now has consistent five-page navigation, stronger venue decision copy, labeled filters, a live venue/crew summary, and one visible punctuation/encoding cleanup in the crew section.
+- `djs.html` now has consistent five-page navigation, stronger performer-discovery copy, labeled filters, a live profile summary, and tighter mobile navigation.
+- `ops.html` now has consistent five-page navigation, an operator workflow strip, labeled queue filters, and tighter mobile navigation while preserving the static local-storage/export workflow.
+
+Verification:
+
+- `npm run check` passed after the cross-page UI/UX changes.
+- Browser checks on `http://127.0.0.1:4173/` covered `index.html`, `planner.html`, `venues.html`, `djs.html`, and `ops.html`.
+- Desktop and 390px mobile checks confirmed shared navigation, live summaries, no console errors, and no horizontal overflow.
+- Additional visual spot checks confirmed the planner desktop layout and DJ mobile layout were coherent after the nav tightening.
+
+Git state:
+
+- Branch created and pushed: `codex/world-class-ui-ux`.
+- Commit pushed: `fe195b4 Upgrade website UI and UX`.
+- Remote: `origin` at `https://github.com/silverlion2/shanghai-rave-calendar-2026.git`.
+- PR creation URL: `https://github.com/silverlion2/shanghai-rave-calendar-2026/pull/new/codex/world-class-ui-ux`.
+- `SOCIAL_MEDIA_ACQUISITION_PLAN.md` remained untracked and was intentionally not staged or pushed with the UI/UX commit.
+
+## 2026-06-11 Card Masonry Layouts and Push
+
+The user asked for event and venue cards to size naturally based on content, with lower cards filling vertical gaps instead of forcing three equal-height cards in one row.
+
+Implemented layout changes:
+
+- `index.html` and `shanghai-rave-calendar-2026.html` now use masonry-style event card layout. Event cards no longer have a fixed minimum height; a lightweight `grid-auto-rows` + measured `gridRowEnd` pass lets shorter cards leave less empty space while preserving responsive 3/2/1 column behavior.
+- `venues.html` applies the same masonry behavior to venue cards and crew cards. Empty states span the full grid width.
+- `djs.html` applies the same behavior to the DJ roster cards without changing the directory, profile detail panel, planner rows, or operational form/list layouts.
+- `ops.html` and `planner.html` were inspected and intentionally left unchanged because their fixed-height elements are primarily forms, facts, and row lists rather than variable content card grids.
+
+Verification:
+
+- Browser checks covered desktop and 390px mobile for `index.html`, `venues.html`, and `djs.html`.
+- Confirmed 3-column desktop masonry behavior where card top positions stagger by shortest available column.
+- Confirmed single-column mobile behavior with no horizontal overflow.
+- Confirmed no browser console errors in the checked pages.
+- Ran JavaScript syntax checks with `node --check scripts/check.js` and `node --check scripts/scrape-events.js`.
+- `git diff --check` passed for the touched HTML files.
+
+Git state:
+
+- Branch created and pushed: `codex/card-masonry-layouts`.
+- Commit pushed: `bc27a6d Add masonry card layouts`.
+- Remote: `origin` at `https://github.com/silverlion2/shanghai-rave-calendar-2026.git`.
+- Only `index.html`, `shanghai-rave-calendar-2026.html`, `venues.html`, and `djs.html` were staged and committed for this push.
+- Existing uncommitted memory/planning/poster files were intentionally left out of the commit.
+
+## 2026-06-11 Poster Rendering Assets Fix and Main Push
+
+The user reported that event posters looked pitch black after the poster/card update, and explicitly said poster downloads via Chrome or computer use were acceptable.
+
+Root cause and fix:
+
+- Several events had `posterEvidence` but no local `posterUrl`, so they fell back to the site's dark generated default card instead of a real flyer.
+- Direct `images.ra.co` URLs are unreliable in-browser because they can be blocked, so real flyers should be downloaded into `assets/posters/` and referenced locally.
+- Early screenshots also exposed a loading-state problem: lazy-loaded real poster cards could briefly show a pure black background. Real poster cards now use eager loading and a muted non-black loading background.
+- `index.html` and `shanghai-rave-calendar-2026.html` now let real poster images render at natural full height instead of forcing a cropped poster frame. Default generated cards remain only for events with no poster.
+- Added local poster assets for `kollin`, `horizon`, `nosaj-thing`, `santa-k`, `synth-crush`, `alter-pavillon`, `photocult-mask-desire-auction`, `mrd`, and `dark-room`.
+- Added matching `posterUrl` fields in `config/curated-events.json` and `data/events.json`, and matching `posterUrlOverrides` in both mirrored HTML pages.
+
+Verification:
+
+- `npm run check` passed.
+- A Node data check confirmed all 18 `posterEvidence` events have existing local poster files.
+- Playwright screenshot verification on `http://localhost:4173/index.html#month-Jun` confirmed Milo/Fengyun/Horizon/KOLLIN and nearby cards render real posters without black blocks or overlapping cards.
+- Temporary screenshot artifacts under `output/` were removed before commit.
+
+Git state:
+
+- Commit pushed to `origin/main`: `178b942 Fix poster rendering assets`.
+- Previous main commit was `c9fbbe1 Show event posters and venue-first calendar labels`.
+- `PROJECT_MEMORY.md` remained locally modified for memory updates.
+- `SOCIAL_MEDIA_ACQUISITION_PLAN.md` remained untracked and should not be staged unless explicitly requested.
+
+## 2026-06-11 Scraping Routine Poster Handoff Update
+
+The user asked to update the corresponding daily scraping routine based on the poster-blackout conversation.
+
+Routine change:
+
+- Any event with `posterEvidence` must also have a valid downloaded local `posterUrl` under `assets/posters/`.
+- Do not use remote `images.ra.co` URLs in the public UI; RA-hosted images can be blocked or load inconsistently.
+- Chrome/Computer Use collection should capture the poster source, OCR/image-only details, and download the actual flyer locally.
+- `README.md` and `SOURCE_LOG.md` now document this as part of the daily scrape / Computer Use handoff.
+- `scripts/scrape-events.js` Computer Use checklist now explicitly asks for a downloaded local poster asset when `posterEvidence` exists.
+- `scripts/check.js` and `scripts/audit-events.js` now validate that `posterEvidence` implies a valid local JPEG/PNG/WebP poster file.
+
+Current poster data cleanup:
+
+- Added local poster assets for newly collected poster-evidence events: `cltx-abyss`, `the-woods`, and `cyber-buddha`.
+- Updated `config/curated-events.json` and `data/events.json` with matching local `posterUrl` paths.
+
+Working tree caution:
+
+- This update is layered on top of existing uncommitted scrape/audit/data changes, including `scripts/audit-events.js` and package `audit` wiring.
+- `SOCIAL_MEDIA_ACQUISITION_PLAN.md` remains unrelated unless the user explicitly asks to include it.
+
+## 2026-06-11 DJ Profile Source-Coverage Upgrade
+
+The user asked to make the best Shanghai techno venue/DJ database an ongoing goal.
+
+Database-quality change:
+
+- Added a durable `quality.djCoverage.sourceUpgradeQueue` for future performers who appear in single-source future event rows but still lack profile-level sources.
+- Normalized performer profile keys across scraper and audit so format suffixes like `[Live]` do not split source coverage.
+- Added alias-aware profile-source counting so variants like `TiyaManson` and `Tiya Manson` are covered by one curated source profile.
+- Expanded `config/tracked-dj-profiles.json` from 4 to 12 curated source profiles, adding D_z, DISCIPLINE, Altieri3000, Velvet Robot, Hello Shitty, Ruima, Illsee, and Tiya Manson.
+- Regenerated `data/events.json` and `data/tracked-dj-itineraries.js`.
+
+Verification:
+
+- `npm run scrape` completed on 2026-06-11 and wrote 63 events, 11 discovered links, 0 social leads, 8 Computer Use sources, 31 curated updates, and 40 tracked DJ itinerary rows.
+- `npm run audit` passed with 14 tracked DJ profiles, 12 curated source profiles, 14 future performer profiles with source coverage, and 41 remaining DJ source-upgrade targets.
+- `npm run check` passed.
+
+Remaining database gaps:
+
+- The highest-priority source-upgrade queue still includes Cosmjn, D3M3NTOR, howtodo, Josie, LaGlory, Limsum, Marcus, Matisa, Max Shen, MegaWatts, Milo Raad, Santa K, and other single-source future performers.
+- Keep using RA, SmartShanghai, LocalHub, venue/promoter channels, artist pages, radio/label pages, and ticketing pages before promoting a performer profile as high-confidence.

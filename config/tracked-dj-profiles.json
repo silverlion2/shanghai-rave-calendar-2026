@@ -1,0 +1,344 @@
+{
+  "profiles": [
+    {
+      "slug": "nakin",
+      "name": "NAKIN",
+      "trackedAt": "2026-06-11",
+      "checkedByTimezone": "Asia/Shanghai",
+      "scope": "Shanghai local DJ source profile",
+      "imageTheme": "ember",
+      "genres": ["techno", "hard techno", "club"],
+      "summary": "Recurring Shanghai club DJ profile preserved for source context across Abyss, Dirty House, and Reactor-linked listings.",
+      "sourceNote": "Profile-level sources confirm recurring Shanghai techno/club appearances. Event-specific tickets, running order, and lineup status still come from the calendar event rows.",
+      "sources": [
+        {
+          "label": "LocalHub Abyss Shanghai event history",
+          "url": "https://localhub.to/shanghai/venue/abyss-shanghai/?lang=en",
+          "status": "venue-context",
+          "checked": "2026-06-11"
+        },
+        {
+          "label": "RA Shanghai techno listings",
+          "url": "https://ra.co/events/cn/shanghai/techno",
+          "status": "secondary",
+          "checked": "2026-06-11"
+        }
+      ],
+      "itinerary": []
+    },
+    {
+      "slug": "pashrawboi",
+      "name": "PASHRAWBOI",
+      "trackedAt": "2026-06-11",
+      "checkedByTimezone": "Asia/Shanghai",
+      "scope": "Shanghai local DJ source profile",
+      "imageTheme": "acid",
+      "genres": ["hard techno", "hardcore", "high-energy electronic"],
+      "summary": "Shanghai high-energy electronic DJ profile preserved for source context across Abyss, Reactor, and local radio appearances.",
+      "sourceNote": "Profile-level sources confirm Shanghai origin or recurring DJ activity; use event rows for exact upcoming event confidence and ticket status.",
+      "sources": [
+        {
+          "label": "byyb.radio PASHRAWBOI set",
+          "url": "https://byyb.live/set/pashrawboi-chaos-radio-radio-takeover-2026-06-06",
+          "status": "secondary",
+          "checked": "2026-06-11"
+        },
+        {
+          "label": "RA Slav Club lineup",
+          "url": "https://ra.co/events/2071862",
+          "status": "secondary",
+          "checked": "2026-06-11"
+        }
+      ],
+      "itinerary": []
+    },
+    {
+      "slug": "gaoqiao",
+      "name": "GaoQiao",
+      "trackedAt": "2026-06-11",
+      "checkedByTimezone": "Asia/Shanghai",
+      "scope": "Shanghai local DJ source profile",
+      "imageTheme": "cyan",
+      "genres": ["techno", "house", "electronic"],
+      "summary": "Shanghai electronic producer/DJ profile preserved for source context across POTENT, Reactor, and Abyss-linked listings.",
+      "sourceNote": "Profile-level sources confirm recurring Shanghai club appearances; exact event details remain attached to source-backed event rows.",
+      "sources": [
+        {
+          "label": "RA Club Night with Max Shen & GaoQiao",
+          "url": "https://ra.co/events/2333737",
+          "status": "secondary",
+          "checked": "2026-06-11"
+        },
+        {
+          "label": "RA TEMPIO x POTENT Shanghai",
+          "url": "https://ra.co/events/2397186",
+          "status": "secondary",
+          "checked": "2026-06-11"
+        },
+        {
+          "label": "LocalHub Abyss Shanghai event history",
+          "url": "https://localhub.to/shanghai/venue/abyss-shanghai/?lang=en",
+          "status": "venue-context",
+          "checked": "2026-06-11"
+        }
+      ],
+      "itinerary": []
+    },
+    {
+      "slug": "situ",
+      "name": "SITU",
+      "trackedAt": "2026-06-11",
+      "checkedByTimezone": "Asia/Shanghai",
+      "scope": "Shanghai local DJ source profile",
+      "imageTheme": "rose",
+      "genres": ["techno", "trance", "hard club"],
+      "summary": "Shanghai/Abyss-linked DJ profile preserved for source context across current and historical hard-techno listings.",
+      "sourceNote": "Profile-level sources confirm SITU on techno/trance lineups; upcoming-event confidence remains governed by the event sources.",
+      "sources": [
+        {
+          "label": "RA Ray-Ver pres. Nikolina lineup",
+          "url": "https://ra.co/events/1958253",
+          "status": "secondary",
+          "checked": "2026-06-11"
+        },
+        {
+          "label": "RA Lethal Distortion w. CLTX",
+          "url": "https://ra.co/events/2466129",
+          "status": "secondary",
+          "checked": "2026-06-11"
+        }
+      ],
+      "itinerary": []
+    },
+    {
+      "slug": "d-z",
+      "name": "D_z",
+      "aliases": ["D z", "Dz"],
+      "trackedAt": "2026-06-11",
+      "checkedByTimezone": "Asia/Shanghai",
+      "scope": "Shanghai local DJ source profile",
+      "imageTheme": "cyan",
+      "genres": ["techno", "trance", "club"],
+      "summary": "Dirty House and PLAYGROUND-linked Shanghai club DJ profile preserved for source context across techno and underground electronic lineups.",
+      "sourceNote": "Profile-level sources confirm recurring Shanghai club appearances; exact set times and tickets remain governed by event rows.",
+      "sources": [
+        {
+          "label": "RA MRD x TURBO lineup",
+          "url": "https://ra.co/events/2461531",
+          "status": "secondary",
+          "checked": "2026-06-11"
+        },
+        {
+          "label": "RA Dark RoOm running order",
+          "url": "https://ra.co/events/2462792",
+          "status": "secondary",
+          "checked": "2026-06-11"
+        },
+        {
+          "label": "SmartShanghai DJ YangFan666 lineup context",
+          "url": "https://www.smartshanghai.com/event/dj-yangfan666-bloodzboi-2026-01-31",
+          "status": "secondary",
+          "checked": "2026-06-11"
+        }
+      ],
+      "itinerary": []
+    },
+    {
+      "slug": "discipline",
+      "name": "DISCIPLINE",
+      "trackedAt": "2026-06-11",
+      "checkedByTimezone": "Asia/Shanghai",
+      "scope": "Shanghai/Abyss DJ source profile",
+      "imageTheme": "steel",
+      "genres": ["techno", "hard techno", "club"],
+      "summary": "China-based DJ profile with RA artist-page evidence and repeated Abyss Shanghai appearances.",
+      "sourceNote": "Profile-level sources confirm RA artist stats and venue history; event rows remain authoritative for upcoming dates and ticketing.",
+      "sources": [
+        {
+          "label": "RA DISCIPLINE artist profile",
+          "url": "https://ra.co/dj/discipline",
+          "status": "artist-profile",
+          "checked": "2026-06-11"
+        },
+        {
+          "label": "LocalHub Abyss Shanghai event history",
+          "url": "https://localhub.to/shanghai/venue/abyss-shanghai/?lang=en",
+          "status": "venue-context",
+          "checked": "2026-06-11"
+        }
+      ],
+      "itinerary": []
+    },
+    {
+      "slug": "altieri3000",
+      "name": "Altieri3000",
+      "aliases": ["Altieri 3000", "Altieri3000 [Live]"],
+      "trackedAt": "2026-06-11",
+      "checkedByTimezone": "Asia/Shanghai",
+      "scope": "Synth Crush / Shanghai guest artist source profile",
+      "imageTheme": "acid",
+      "genres": ["electro", "techno", "machine music", "live electronic"],
+      "summary": "Synth Crush guest profile preserved for source context around live machine-music appearances in Shanghai.",
+      "sourceNote": "Profile-level sources confirm the Synth Crush booking and live-set format; exact event details remain attached to the event row.",
+      "sources": [
+        {
+          "label": "RA Synth Crush lineup",
+          "url": "https://ra.co/events/2458269",
+          "status": "secondary",
+          "checked": "2026-06-11"
+        },
+        {
+          "label": "SmartShanghai Synth Crush listing",
+          "url": "https://www.smartshanghai.com/event/synth-crush-electro-italo-disco-techno-2026-06-13",
+          "status": "secondary",
+          "checked": "2026-06-11"
+        }
+      ],
+      "itinerary": []
+    },
+    {
+      "slug": "velvet-robot",
+      "name": "Velvet Robot",
+      "aliases": ["Velvet Robot [Live]"],
+      "trackedAt": "2026-06-11",
+      "checkedByTimezone": "Asia/Shanghai",
+      "scope": "Synth Crush / Shanghai live electronic source profile",
+      "imageTheme": "violet",
+      "genres": ["electro", "techno", "machine music", "live electronic"],
+      "summary": "Synth Crush founder/live performer profile preserved for source context across Shanghai machine-music listings.",
+      "sourceNote": "Profile-level sources confirm Velvet Robot on the Synth Crush lineup and live-set framing; event rows remain authoritative for ticketing and timing.",
+      "sources": [
+        {
+          "label": "RA Synth Crush lineup",
+          "url": "https://ra.co/events/2458269",
+          "status": "secondary",
+          "checked": "2026-06-11"
+        },
+        {
+          "label": "SmartShanghai Synth Crush listing",
+          "url": "https://www.smartshanghai.com/event/synth-crush-electro-italo-disco-techno-2026-06-13",
+          "status": "secondary",
+          "checked": "2026-06-11"
+        }
+      ],
+      "itinerary": []
+    },
+    {
+      "slug": "hello-shitty",
+      "name": "Hello Shitty",
+      "trackedAt": "2026-06-11",
+      "checkedByTimezone": "Asia/Shanghai",
+      "scope": "Synth Crush / Shanghai OG selector source profile",
+      "imageTheme": "amber",
+      "genres": ["electro", "italo disco", "techno", "machine funk"],
+      "summary": "Uptown Records-linked Shanghai selector profile preserved for source context around Synth Crush and machine-music lineups.",
+      "sourceNote": "Profile-level sources confirm the Synth Crush booking and Shanghai/Uptown Records context; event rows remain authoritative for exact event details.",
+      "sources": [
+        {
+          "label": "RA Synth Crush lineup",
+          "url": "https://ra.co/events/2458269",
+          "status": "secondary",
+          "checked": "2026-06-11"
+        },
+        {
+          "label": "SmartShanghai Synth Crush listing",
+          "url": "https://www.smartshanghai.com/event/synth-crush-electro-italo-disco-techno-2026-06-13",
+          "status": "secondary",
+          "checked": "2026-06-11"
+        }
+      ],
+      "itinerary": []
+    },
+    {
+      "slug": "ruima",
+      "name": "Ruima",
+      "trackedAt": "2026-06-11",
+      "checkedByTimezone": "Asia/Shanghai",
+      "scope": "Synth Crush / Shanghai DJ source profile",
+      "imageTheme": "green",
+      "genres": ["electro", "italo disco", "techno", "club"],
+      "summary": "Synth Crush lineup profile preserved for Shanghai electro/techno source coverage.",
+      "sourceNote": "Profile-level sources confirm the Synth Crush booking; event rows remain authoritative for exact event details.",
+      "sources": [
+        {
+          "label": "RA Synth Crush lineup",
+          "url": "https://ra.co/events/2458269",
+          "status": "secondary",
+          "checked": "2026-06-11"
+        },
+        {
+          "label": "SmartShanghai Synth Crush listing",
+          "url": "https://www.smartshanghai.com/event/synth-crush-electro-italo-disco-techno-2026-06-13",
+          "status": "secondary",
+          "checked": "2026-06-11"
+        }
+      ],
+      "itinerary": []
+    },
+    {
+      "slug": "illsee",
+      "name": "Illsee",
+      "trackedAt": "2026-06-11",
+      "checkedByTimezone": "Asia/Shanghai",
+      "scope": "Shanghai DJ/promoter source profile",
+      "imageTheme": "cyan",
+      "genres": ["electro", "industrial", "techno", "machine music"],
+      "summary": "Shanghai DJ and promoter profile preserved for source context across Synth Crush, Aqualung, Cosign, and NTS activity.",
+      "sourceNote": "Profile-level sources confirm Shanghai promoter/DJ context and the Synth Crush booking; event rows remain authoritative for ticketing and timing.",
+      "sources": [
+        {
+          "label": "NTS Illsee artist page",
+          "url": "https://www.nts.live/shows/illsee",
+          "status": "artist-profile",
+          "checked": "2026-06-11"
+        },
+        {
+          "label": "RA Synth Crush lineup",
+          "url": "https://ra.co/events/2458269",
+          "status": "secondary",
+          "checked": "2026-06-11"
+        },
+        {
+          "label": "SmartShanghai Synth Crush listing",
+          "url": "https://www.smartshanghai.com/event/synth-crush-electro-italo-disco-techno-2026-06-13",
+          "status": "secondary",
+          "checked": "2026-06-11"
+        }
+      ],
+      "itinerary": []
+    },
+    {
+      "slug": "tiya-manson",
+      "name": "Tiya Manson",
+      "aliases": ["TiyaManson"],
+      "trackedAt": "2026-06-11",
+      "checkedByTimezone": "Asia/Shanghai",
+      "scope": "Shanghai local DJ source profile",
+      "imageTheme": "rose",
+      "genres": ["techno", "trance", "club"],
+      "summary": "Shanghai club DJ profile preserved for source context across Reactor and Dirty House lineups where spelling varies between TiyaManson and Tiya Manson.",
+      "sourceNote": "Profile-level sources confirm multiple Shanghai electronic lineups; aliases keep coverage from fragmenting across spelling variants.",
+      "sources": [
+        {
+          "label": "RA PHOTOCULT lineup",
+          "url": "https://ra.co/events/2464178",
+          "status": "secondary",
+          "checked": "2026-06-11"
+        },
+        {
+          "label": "RA MRD x TURBO lineup",
+          "url": "https://ra.co/events/2461531",
+          "status": "secondary",
+          "checked": "2026-06-11"
+        },
+        {
+          "label": "ShanghaiCityRadio Tiya Manson set",
+          "url": "https://www.youtube.com/watch?v=oQXUflhnSyk",
+          "status": "secondary",
+          "checked": "2026-06-11"
+        }
+      ],
+      "itinerary": []
+    }
+  ]
+}

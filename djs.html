@@ -1841,7 +1841,7 @@
     async function loadExternalEvents() {
       if (window.location.protocol === "file:") return null;
       try {
-        const response = await fetch(sourceData.externalDataPath, { cache: "no-store" });
+        const response = await fetch(sourceData.externalDataPath);
         if (!response.ok) return null;
         const payload = await response.json();
         const events = Array.isArray(payload) ? payload : payload.events;

@@ -40,8 +40,9 @@ V1 uses GitHub only:
 3. It checks X/Twitter keyword searches from `config/scrape-keywords.json` as discovery-only social leads.
 4. It writes a `computerUseQueue` for known anti-bot, logged-in, app-only, poster/image, and mini-program sources that the agent should inspect with Chrome + Computer Use.
 5. It merges agent-collected, browser-verified event updates from `config/curated-events.json`.
-6. The script writes `data/events.json`, `data/dj-data.js`, and `data/tracked-dj-itineraries.js`.
-7. The workflow commits the changed data files back to the repository.
+6. For any event with `posterEvidence`, the collector must download the flyer into `assets/posters/`, add a local `posterUrl`, and avoid using remote `images.ra.co` URLs in the UI.
+7. The script writes `data/events.json`, `data/dj-data.js`, and `data/tracked-dj-itineraries.js`.
+8. The workflow commits the changed data files back to the repository.
 
 No database is required for this version.
 
@@ -51,9 +52,11 @@ For reliable X/Twitter collection, add either `X_BEARER_TOKEN` or `TWITTER_BEARE
 
 Known anti-bot or app-bound sources are not scraped with plain `fetch`. They are queued for agent-operated Chrome + Computer Use in `computerUseQueue`: RA Shanghai when blocked, SmartShanghai when fetch is incomplete, Xiaohongshu, WeChat official accounts/groups, venue official accounts, promoter posters, ShowStart/Damai/PiaoPlanet/mini-program ticketing, and DJ/label Instagram, Weibo, WeChat, or Bandcamp pages. Treat these as discovery or verification tasks until the agent captures a shareable official/ticket/source reference or screenshot evidence.
 
-Computer Use collection should be complete, not just a title scrape. For each event, follow second-layer links and extract image/poster text when needed to capture time, venue/address, lineup and set times, poster evidence, artist introductions, future city tour dates, ticket platform/price/availability, age/ID rules, source publication dates, and whether each detail came from official, ticketing, social, or image-derived evidence.
+Computer Use collection should be complete, not just a title scrape. For each event, follow second-layer links and extract image/poster text when needed to capture time, venue/address, lineup and set times, poster evidence, artist introductions, future city tour dates, ticket platform/price/availability, age/ID rules, source publication dates, and whether each detail came from official, ticketing, social, or image-derived evidence. Poster evidence is not complete until the poster image has been saved under `assets/posters/` and referenced through a local `posterUrl`.
 
 `config/curated-events.json` is the persistent handoff for those agent-collected details. Use it for browser-confirmed RA, SmartShanghai, WeChat, Xiaohongshu, mini-program, poster, or social-account details that should survive every automated refresh without adding brittle anti-bot scraping logic to GitHub Actions.
+
+`npm run check` and `npm run audit` enforce the poster handoff rule: any event with `posterEvidence` must have a valid downloaded local `assets/posters/...` image. If this fails, use Chrome/Computer Use or `curl` to download the flyer, then update `config/curated-events.json`, generated `data/events.json`, and the mirrored calendar poster override map when needed.
 
 ## Deploy
 
