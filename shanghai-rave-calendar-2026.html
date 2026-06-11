@@ -708,12 +708,18 @@
       text-overflow: ellipsis;
     }
 
+    .calendar-event-venue,
     .calendar-event-title,
     .calendar-event-organizer {
       display: block;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+    }
+
+    .calendar-event-venue {
+      color: var(--cyan);
+      font-weight: 900;
     }
 
     .calendar-event-title {
@@ -732,6 +738,7 @@
       background: var(--acid);
     }
 
+    .calendar-event:hover .calendar-event-venue,
     .calendar-event:hover .calendar-event-organizer {
       color: rgba(8,8,6,.72);
     }
@@ -777,6 +784,17 @@
       height: 100%;
       display: block;
       object-fit: cover;
+    }
+
+    .event-card.has-event-poster .poster {
+      aspect-ratio: 4 / 5;
+      display: grid;
+      place-items: center;
+      background: #070706;
+    }
+
+    .event-card.has-event-poster .poster img {
+      object-fit: contain;
     }
 
     .poster .tag {
@@ -1392,6 +1410,18 @@
       background: #17140f;
     }
 
+    .modal.has-event-poster .modal-hero {
+      grid-template-columns: minmax(360px, 430px) minmax(0, 1fr);
+      align-items: stretch;
+    }
+
+    .modal.has-event-poster .modal-hero img {
+      height: min(78vh, 720px);
+      object-fit: contain;
+      object-position: center;
+      background: #070706;
+    }
+
     .modal-content {
       padding: 22px;
     }
@@ -1716,6 +1746,14 @@
       .modal-hero img {
         aspect-ratio: 16 / 10;
       }
+      .modal.has-event-poster .modal-hero {
+        grid-template-columns: 1fr;
+      }
+      .modal.has-event-poster .modal-hero img {
+        height: auto;
+        max-height: 70vh;
+        aspect-ratio: 3 / 4;
+      }
       .facts {
         grid-template-columns: 1fr;
       }
@@ -1771,7 +1809,7 @@
         </div>
       </div>
       <figure class="hero-picture" aria-label="Shanghai night visual">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Shanghai_Bund_at_night_20260417_%282%29.jpg" alt="Shanghai Bund skyline at night">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Shanghai_Bund_at_night_20260417_%282%29.jpg" alt="Shanghai Bund skyline at night" loading="lazy" decoding="async">
       </figure>
     </header>
 
@@ -2840,6 +2878,18 @@
       "youshan-warmup": "Youshan / Wigwam"
     };
 
+    const posterUrlOverrides = {
+      "milo-cosmjn": "assets/posters/milo-cosmjn.jpg",
+      "fruitygroove-soul-navigator": "assets/posters/fruitygroove-soul-navigator.png",
+      "matisa-limsum": "assets/posters/matisa-limsum.jpg",
+      "fengyun-5": "assets/posters/fengyun-5.jpg",
+      "nova-sunset-sessions-flair": "assets/posters/nova-sunset-sessions-flair.jpg",
+      "night-at-museum-90s-disco": "assets/posters/night-at-museum-90s-disco.jpg",
+      "afrowave-takeover-la-burg": "assets/posters/afrowave-takeover-la-burg.jpg",
+      "nova-summer-splash-pool-party": "assets/posters/nova-summer-splash-pool-party.jpg",
+      "sunset-sundays-dome": "assets/posters/sunset-sundays-dome.jpg"
+    };
+
     function escapeHtml(value) {
       return String(value).replace(/[&<>"']/g, char => ({
         "&": "&amp;",
@@ -2931,7 +2981,7 @@
       return true;
     }
 
-    function organizerFor(event) {
+    function knownOrganizerFor(event) {
       const explicit = event.organizer || event.organiser || event.promoter || event.crew || event.collective;
       if (explicit) return String(explicit).trim();
       if (organizerOverrides[event.id]) return organizerOverrides[event.id];
@@ -2942,6 +2992,12 @@
       if (colonMatch) return colonMatch[1].trim();
       const xMatch = title.match(/^(.+?)\s+x\s+(.+?)(?:\s|:|$)/i);
       if (xMatch) return `${xMatch[1].trim()} / ${xMatch[2].trim()}`;
+      return "";
+    }
+
+    function organizerFor(event) {
+      const known = knownOrganizerFor(event);
+      if (known) return known;
       return event.venue || "Organizer TBA";
     }
 
@@ -3642,12 +3698,18 @@
             <div class="calendar-day ${dayEvents.length ? "has-event" : ""}">
               <div class="calendar-date"><span>${day}</span><span>${dayEvents.length ? dayEvents.length : ""}</span></div>
               <div class="calendar-events">
-                ${dayEvents.map(event => `
-                  <button class="calendar-event ${event.status === "watch" ? "watch" : ""}" type="button" data-id="${event.id}" title="${escapeHtml(`${event.title} / Organizer: ${organizerFor(event)}`)}">
-                    <span class="calendar-event-title">${escapeHtml(event.title)}</span>
-                    <span class="calendar-event-organizer">${escapeHtml(organizerFor(event))}</span>
-                  </button>
-                `).join("")}
+                ${dayEvents.map(event => {
+                  const organizer = knownOrganizerFor(event);
+                  const titleParts = [`Venue: ${event.venue}`, event.title];
+                  if (organizer) titleParts.push(`Organizer: ${organizer}`);
+                  return `
+                    <button class="calendar-event ${event.status === "watch" ? "watch" : ""}" type="button" data-id="${event.id}" title="${escapeHtml(titleParts.join(" / "))}">
+                      <span class="calendar-event-venue">${escapeHtml(event.venue)}</span>
+                      <span class="calendar-event-title">${escapeHtml(event.title)}</span>
+                      ${organizer ? `<span class="calendar-event-organizer">Organizer: ${escapeHtml(organizer)}</span>` : ""}
+                    </button>
+                  `;
+                }).join("")}
               </div>
             </div>
           `);
@@ -3655,6 +3717,69 @@
       }
 
       return `<div class="calendar-grid" style="--calendar-columns: ${visibleWeekdayIndexes.length};" aria-label="${code} 2026 clickable event calendar">${cells.join("")}</div>`;
+    }
+
+    function isLikelyImageUrl(value) {
+      const url = String(value || "").trim();
+      if (!url) return false;
+      if (/^data:image\//i.test(url)) return true;
+      if (/^https:\/\/images\.ra\.co\//i.test(url)) return false;
+      const hasImageExtension = /\.(?:avif|gif|jpe?g|png|webp)(?:[?#].*)?$/i.test(url);
+      if (/^(https?:\/\/|\/|\.\/|\.\.\/)/i.test(url)) return hasImageExtension || /\/(?:image|images|imgproxy)\b/i.test(url);
+      return hasImageExtension;
+    }
+
+    function firstImageUrlFrom(value) {
+      if (!value) return "";
+      if (typeof value === "string") return isLikelyImageUrl(value) ? value.trim() : "";
+      if (Array.isArray(value)) {
+        for (const item of value) {
+          const url = firstImageUrlFrom(item);
+          if (url) return url;
+        }
+        return "";
+      }
+      if (typeof value === "object") {
+        const orderedKeys = ["posterUrl", "posterImageUrl", "posterImage", "flyerUrl", "flyerImageUrl", "flyerImage", "imageUrl", "image", "coverUrl", "coverImage", "thumbnailUrl", "contentUrl", "url", "src"];
+        for (const key of orderedKeys) {
+          const url = firstImageUrlFrom(value[key]);
+          if (url) return url;
+        }
+      }
+      return "";
+    }
+
+    function eventPosterUrl(event) {
+      return firstImageUrlFrom([
+        posterUrlOverrides[event.id],
+        event.posterUrl,
+        event.posterURL,
+        event.posterImageUrl,
+        event.posterImage,
+        event.flyerUrl,
+        event.flyerImageUrl,
+        event.flyerImage,
+        event.imageUrl,
+        event.imageURL,
+        event.image,
+        event.coverUrl,
+        event.coverImage,
+        event.photoUrl,
+        event.thumbnailUrl,
+        event.poster,
+        event.posterEvidence,
+        event.images,
+        event.media
+      ]);
+    }
+
+    function eventVisual(event) {
+      const posterUrl = eventPosterUrl(event);
+      return {
+        hasPoster: Boolean(posterUrl),
+        src: posterUrl || posterSvg(event),
+        alt: `${event.title} ${posterUrl ? "event poster" : "default visual card"}`
+      };
     }
 
     function posterSvg(event) {
@@ -3785,16 +3910,18 @@
     }
 
     function renderCard(event) {
+      const visual = eventVisual(event);
+      const organizer = knownOrganizerFor(event);
       return `
-        <article class="event-card" data-id="${event.id}">
+        <article class="event-card ${visual.hasPoster ? "has-event-poster" : "has-default-poster"}" data-id="${event.id}">
           <div class="poster">
-            <img src="${posterSvg(event)}" alt="${escapeHtml(event.title)} visual poster">
+            <img src="${escapeHtml(visual.src)}" alt="${escapeHtml(visual.alt)}" loading="lazy" decoding="async">
             <span class="tag">${escapeHtml(event.status.toUpperCase())}</span>
           </div>
           <div class="card-body">
             <div class="card-top"><span>${escapeHtml(event.date)}</span><span>${escapeHtml(event.time)}</span></div>
             <h3>${escapeHtml(event.title)}</h3>
-            <div class="organizer-line"><span>Organizer</span><b>${escapeHtml(organizerFor(event))}</b></div>
+            ${organizer ? `<div class="organizer-line"><span>Organizer</span><b>${escapeHtml(organizer)}</b></div>` : ""}
             <div class="venue">${escapeHtml(event.venue)} · ${escapeHtml(event.district)}</div>
             <p class="description">${escapeHtml(event.description)}</p>
             <div class="lineup-preview">
@@ -3832,8 +3959,10 @@
 
     function openModal(event) {
       if (!event) return;
-      document.getElementById("modalPoster").src = posterSvg(event);
-      document.getElementById("modalPoster").alt = `${event.title} visual poster`;
+      const visual = eventVisual(event);
+      modal.classList.toggle("has-event-poster", visual.hasPoster);
+      document.getElementById("modalPoster").src = visual.src;
+      document.getElementById("modalPoster").alt = visual.alt;
       document.getElementById("modalTitle").textContent = event.title;
       document.getElementById("modalMeta").textContent = `${event.date}, ${event.time} · ${event.venue}, ${event.district}`;
       document.getElementById("modalDescription").textContent = event.description;

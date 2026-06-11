@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-08",
+  "updatedAt": "2026-06-11",
   "timezone": "Asia/Shanghai",
   "collectionMethod": "Agent-operated Chrome/Computer Use style browser verification for anti-bot, image-heavy, ticketing, and second-layer event pages; public source URLs are preserved when available.",
   "events": [
@@ -9,6 +9,7 @@
       "organizer": "POTENT",
       "detailsUrl": "https://ra.co/events/2461478",
       "ticketUrl": "https://ra.co/events/2461478",
+      "lastChecked": "2026-06-11",
       "lineup": [
         {
           "name": "Cosmjn",
@@ -35,7 +36,83 @@
           "label": "Resident Advisor",
           "url": "https://ra.co/events/2461478",
           "status": "secondary",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
+        }
+      ],
+      "posterUrl": "assets/posters/milo-cosmjn.jpg"
+    },
+    {
+      "id": "kollin",
+      "address": "INS Park 4F, 109 Yandang Road, Huangpu District",
+      "organizer": "PLAYGROUND",
+      "detailsUrl": "https://ra.co/events/2460995",
+      "ticketUrl": "https://ra.co/events/2460995",
+      "lastChecked": "2026-06-11",
+      "lineup": [
+        {
+          "name": "Onyx",
+          "note": "RA lists Onyx from 22:00 to 00:00 for the Dirty House opening slot."
+        },
+        {
+          "name": "NAKIN",
+          "note": "RA-linked artist listed from 00:00 to 01:30."
+        },
+        {
+          "name": "KOLLIN",
+          "note": "RA-linked headliner listed from 01:30 to 03:00 for a techno and bass-tagged PLAYGROUND night."
+        },
+        {
+          "name": "Serpdren",
+          "note": "RA lists Serpdren from 03:00 to end."
+        }
+      ],
+      "setTimes": [
+        {
+          "name": "Onyx",
+          "start": "22:00",
+          "end": "00:00",
+          "status": "exact",
+          "sourceLabel": "Resident Advisor",
+          "source": "https://ra.co/events/2460995"
+        },
+        {
+          "name": "NAKIN",
+          "start": "00:00",
+          "end": "01:30",
+          "status": "exact",
+          "sourceLabel": "Resident Advisor",
+          "source": "https://ra.co/events/2460995"
+        },
+        {
+          "name": "KOLLIN",
+          "start": "01:30",
+          "end": "03:00",
+          "status": "exact",
+          "sourceLabel": "Resident Advisor",
+          "source": "https://ra.co/events/2460995"
+        },
+        {
+          "name": "Serpdren",
+          "start": "03:00",
+          "end": "late",
+          "status": "exact",
+          "sourceLabel": "Resident Advisor",
+          "source": "https://ra.co/events/2460995"
+        }
+      ],
+      "posterEvidence": {
+        "type": "flyer",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2460995",
+        "status": "Flyer front and back images are visible on the RA detail page."
+      },
+      "ticketStatus": "RA says to scan the WeChat mini-program code to purchase tickets and lists minimum age 18+.",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2460995",
+          "status": "secondary",
+          "lastChecked": "2026-06-11"
         }
       ]
     },
@@ -158,7 +235,8 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/fruitygroove-soul-navigator.png"
     },
     {
       "id": "matisa-limsum",
@@ -166,6 +244,7 @@
       "organizer": "POTENT",
       "detailsUrl": "https://ra.co/events/2461476",
       "ticketUrl": "https://ra.co/events/2461476",
+      "lastChecked": "2026-06-11",
       "lineup": [
         {
           "name": "Limsum",
@@ -192,9 +271,10 @@
           "label": "Resident Advisor",
           "url": "https://ra.co/events/2461476",
           "status": "secondary",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/matisa-limsum.jpg"
     },
     {
       "id": "santa-k",
@@ -202,6 +282,7 @@
       "organizer": "TURBO",
       "detailsUrl": "https://ra.co/events/2458037",
       "ticketUrl": "https://ra.co/events/2458037",
+      "lastChecked": "2026-06-11",
       "lineup": [
         {
           "name": "Santa K",
@@ -243,7 +324,7 @@
           "label": "Resident Advisor",
           "url": "https://ra.co/events/2458037",
           "status": "secondary",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
       ]
     },
@@ -253,6 +334,7 @@
       "organizer": "Illsee / Synth Crush",
       "detailsUrl": "https://ra.co/events/2458269",
       "ticketUrl": "https://ra.co/events/2458269",
+      "lastChecked": "2026-06-11",
       "lineup": [
         {
           "name": "Altieri3000 [Live]",
@@ -287,7 +369,7 @@
           "label": "Resident Advisor",
           "url": "https://ra.co/events/2458269",
           "status": "secondary",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
       ]
     },
@@ -297,6 +379,7 @@
       "organizer": "Heimshanghai",
       "detailsUrl": "https://ra.co/events/2460549",
       "ticketUrl": "https://ra.co/events/2460549",
+      "lastChecked": "2026-06-11",
       "lineup": [
         {
           "name": "Mamayo",
@@ -331,7 +414,61 @@
           "label": "Resident Advisor",
           "url": "https://ra.co/events/2460549",
           "status": "secondary",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
+        }
+      ],
+      "posterUrl": "assets/posters/fengyun-5.jpg"
+    },
+    {
+      "id": "horizon",
+      "address": "7/F, No.3 Waitan, No.3 Zhongshan East 1st Road, Shanghai 200002, China",
+      "organizer": "Spacepanda",
+      "detailsUrl": "https://ra.co/events/2459595",
+      "ticketUrl": "https://www.smartshanghai.com/event/horizon-rooftop-party-ft-erik-hagleton-fr-at-pop-american-brasserie",
+      "lastChecked": "2026-06-11",
+      "lineup": [
+        {
+          "name": "Erik Hagleton",
+          "note": "RA-linked French headliner for the Space Panda Horizon rooftop event."
+        },
+        {
+          "name": "Litty Ritty",
+          "note": "RA-linked support artist on the Pop Bar rooftop lineup."
+        },
+        {
+          "name": "Enred",
+          "note": "RA-listed support artist; exact set time was not published."
+        },
+        {
+          "name": "Ian G",
+          "note": "RA-listed support artist; exact set time was not published."
+        }
+      ],
+      "posterEvidence": {
+        "type": "flyer",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2459595",
+        "status": "Flyer front and back images are visible on the RA detail page."
+      },
+      "promotionalLinks": [
+        {
+          "label": "SmartShanghai ticket link exposed by RA",
+          "url": "https://www.smartshanghai.com/event/horizon-rooftop-party-ft-erik-hagleton-fr-at-pop-american-brasserie",
+          "note": "RA exposes a SmartShanghai ticket link; verify final checkout route before publishing."
+        },
+        {
+          "label": "WeChat event details exposed by RA",
+          "url": "https://mp.weixin.qq.com/",
+          "note": "RA exposes a WeChat event-details link; platform access may require a session."
+        }
+      ],
+      "ticketStatus": "RA lists tickets at 138-178 RMB with one drink, minimum age 18+, and SmartShanghai/WeChat promotional links.",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2459595",
+          "status": "secondary",
+          "lastChecked": "2026-06-11"
         }
       ]
     },
@@ -341,6 +478,7 @@
       "organizer": "REACTOR Shanghai",
       "detailsUrl": "https://ra.co/events/2453279",
       "ticketUrl": "https://ra.co/events/2453279",
+      "lastChecked": "2026-06-11",
       "lineup": [
         {
           "name": "DJ LOVERBOY",
@@ -371,7 +509,7 @@
           "label": "Resident Advisor",
           "url": "https://ra.co/events/2453279",
           "status": "secondary",
-          "lastChecked": "2026-06-08"
+          "lastChecked": "2026-06-11"
         }
       ]
     },
@@ -423,7 +561,8 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/nova-sunset-sessions-flair.jpg"
     },
     {
       "id": "night-at-museum-90s-disco",
@@ -473,7 +612,8 @@
           "status": "watchlist",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/night-at-museum-90s-disco.jpg"
     },
     {
       "id": "afrowave-takeover-la-burg",
@@ -536,7 +676,8 @@
           "status": "watchlist",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/afrowave-takeover-la-burg.jpg"
     },
     {
       "id": "nova-summer-splash-pool-party",
@@ -586,7 +727,8 @@
           "status": "watchlist",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/nova-summer-splash-pool-party.jpg"
     },
     {
       "id": "sunset-sundays-dome",
@@ -640,6 +782,404 @@
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/sunset-sundays-skyline-dome-at-the-dome",
           "status": "watchlist",
+          "lastChecked": "2026-06-08"
+        }
+      ],
+      "posterUrl": "assets/posters/sunset-sundays-dome.jpg"
+    },
+    {
+      "id": "alter-pavillon",
+      "month": "Jun",
+      "sortDate": "2026-06-18",
+      "date": "Jun 18",
+      "time": "15:00-02:00",
+      "title": "ALTER. Pavillon",
+      "venue": "Beaufort Terrace",
+      "district": "Huangpu",
+      "vibe": [
+        "open-air",
+        "experimental"
+      ],
+      "genre": "electronic, DJ sets, live performance",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "128 early bird / 158 presale / 198 door, includes 1 drink",
+      "age": "Not listed",
+      "source": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "gold",
+      "description": "ALTER. and byyb return to Yuyuan Garden for an 11-hour garden event at Beaufort Terrace with DJ sets, a Wang Meng + Yu Miao live performance, and a byyb.radio livestream.",
+      "sourceStatus": "secondary",
+      "address": "4/F, 10 Wenchang Lu, near Jiuxiaochang Lu, Huangpu District",
+      "organizer": "ALTER. / byyb",
+      "detailsUrl": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
+      "ticketUrl": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
+      "lastChecked": "2026-06-11",
+      "lineup": [
+        {
+          "name": "Chingyi",
+          "note": "SmartShanghai lists Chingyi among the DJs for the Pavilion program."
+        },
+        {
+          "name": "Chuan",
+          "note": "SmartShanghai lists Chuan among the DJs for the Pavilion program."
+        },
+        {
+          "name": "Xiaolaba",
+          "note": "SmartShanghai lists Xiaolaba among the DJs for the Pavilion program."
+        },
+        {
+          "name": "Golgol",
+          "note": "SmartShanghai lists Golgol among the DJs for the Pavilion program."
+        },
+        {
+          "name": "Chiyokoo",
+          "note": "SmartShanghai lists Chiyokoo among the DJs for the Pavilion program."
+        },
+        {
+          "name": "Pei",
+          "note": "SmartShanghai lists Pei among the DJs for the Pavilion program."
+        },
+        {
+          "name": "Wang Meng + Yu Miao",
+          "note": "SmartShanghai lists a one-hour acoustic-electronic live performance by Wang Meng + Yu Miao."
+        }
+      ],
+      "posterEvidence": {
+        "type": "event images",
+        "source": "SmartShanghai event page",
+        "url": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
+        "status": "Event images are visible on the SmartShanghai detail page."
+      },
+      "ticketStatus": "SmartShanghai lists early bird, presale, and door tickets from 128 RMB with web, app, and WeChat buying routes.",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
+          "status": "secondary",
+          "lastChecked": "2026-06-11"
+        }
+      ]
+    },
+    {
+      "id": "photocult-mask-desire-auction",
+      "month": "Jun",
+      "sortDate": "2026-06-18",
+      "date": "Jun 18",
+      "time": "22:00-04:00",
+      "title": "PHOTOCULT Pres. Mask. Desire. Auction",
+      "venue": "Reactor Shanghai",
+      "district": "Changning",
+      "vibe": [
+        "techno",
+        "underground"
+      ],
+      "genre": "techno",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "168 RMB",
+      "age": "18+",
+      "source": "https://ra.co/events/2464178",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "acid",
+      "description": "REACTOR Shanghai hosts PHOTOCULT's two-room Mask. Desire. Auction program at Reactor Shanghai, with DOME and POCKET room DJ sets plus desire-auction interludes.",
+      "sourceStatus": "secondary",
+      "address": "D-L1-03, B1, C-PARK, No. 638 Zhaohua Road, Changning District",
+      "organizer": "REACTOR Shanghai",
+      "detailsUrl": "https://ra.co/events/2464178",
+      "ticketUrl": "https://ra.co/events/2464178",
+      "lastChecked": "2026-06-11",
+      "lineup": [
+        {
+          "name": "Josie",
+          "note": "RA lists Josie in the DOME room from 22:50 to 00:20."
+        },
+        {
+          "name": "PASHRAWBOI",
+          "note": "RA lists PASHRAWBOI in the DOME room from 00:35 to 02:00."
+        },
+        {
+          "name": "howtodo",
+          "note": "RA lists howtodo in the DOME room from 02:20 to 03:50."
+        },
+        {
+          "name": "TiyaManson",
+          "note": "RA lists TiyaManson in the POCKET room from 22:00 to 00:20."
+        },
+        {
+          "name": "SITU",
+          "note": "RA lists SITU in the POCKET room from 00:20 to 02:00."
+        },
+        {
+          "name": "D3M3NTOR",
+          "note": "RA lists D3M3NTOR in the POCKET room from 02:05 to 04:00."
+        }
+      ],
+      "setTimes": [
+        {
+          "name": "Josie",
+          "start": "22:50",
+          "end": "00:20",
+          "status": "exact",
+          "room": "DOME",
+          "sourceLabel": "Resident Advisor",
+          "source": "https://ra.co/events/2464178"
+        },
+        {
+          "name": "PASHRAWBOI",
+          "start": "00:35",
+          "end": "02:00",
+          "status": "exact",
+          "room": "DOME",
+          "sourceLabel": "Resident Advisor",
+          "source": "https://ra.co/events/2464178"
+        },
+        {
+          "name": "howtodo",
+          "start": "02:20",
+          "end": "03:50",
+          "status": "exact",
+          "room": "DOME",
+          "sourceLabel": "Resident Advisor",
+          "source": "https://ra.co/events/2464178"
+        },
+        {
+          "name": "TiyaManson",
+          "start": "22:00",
+          "end": "00:20",
+          "status": "exact",
+          "room": "POCKET",
+          "sourceLabel": "Resident Advisor",
+          "source": "https://ra.co/events/2464178"
+        },
+        {
+          "name": "SITU",
+          "start": "00:20",
+          "end": "02:00",
+          "status": "exact",
+          "room": "POCKET",
+          "sourceLabel": "Resident Advisor",
+          "source": "https://ra.co/events/2464178"
+        },
+        {
+          "name": "D3M3NTOR",
+          "start": "02:05",
+          "end": "04:00",
+          "status": "exact",
+          "room": "POCKET",
+          "sourceLabel": "Resident Advisor",
+          "source": "https://ra.co/events/2464178"
+        }
+      ],
+      "programNotes": [
+        {
+          "name": "Desire Auction interludes",
+          "note": "RA lists three desire-auction interludes in the DOME room between DJ sets."
+        }
+      ],
+      "posterEvidence": {
+        "type": "flyer",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2464178",
+        "status": "Flyer front image is visible on the RA detail page."
+      },
+      "ticketStatus": "RA lists cost at 168 RMB and minimum age 18+.",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2464178",
+          "status": "secondary",
+          "lastChecked": "2026-06-11"
+        }
+      ]
+    },
+    {
+      "id": "mrd",
+      "month": "Jun",
+      "sortDate": "2026-06-19",
+      "date": "Jun 19",
+      "time": "22:00-05:00",
+      "title": "MRD x TURBO",
+      "venue": "Dirty House",
+      "district": "Huangpu",
+      "vibe": [
+        "techno",
+        "hard"
+      ],
+      "genre": "trance, techno",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "128 RMB",
+      "age": "18+",
+      "source": "https://ra.co/events/2461531",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "ember",
+      "description": "TURBO brings Norwegian artist MRD to Dirty House for a trance and techno night with D_z, Tiya Manson, NAKIN, and Justease.",
+      "sourceStatus": "secondary",
+      "address": "INS Park 4F, 109 Yandang Road, Huangpu District",
+      "organizer": "TURBO",
+      "detailsUrl": "https://ra.co/events/2461531",
+      "ticketUrl": "https://ra.co/events/2461531",
+      "lastChecked": "2026-06-11",
+      "lineup": [
+        {
+          "name": "MRD",
+          "note": "RA lists MRD (NO) as the headliner for TURBO at Dirty House."
+        },
+        {
+          "name": "D_z",
+          "note": "RA lists D_z on the MRD x TURBO lineup."
+        },
+        {
+          "name": "Tiya Manson",
+          "note": "RA lists Tiya Manson on the MRD x TURBO lineup."
+        },
+        {
+          "name": "NAKIN",
+          "note": "RA lists NAKIN on the MRD x TURBO lineup."
+        },
+        {
+          "name": "Justease",
+          "note": "RA lists Justease on the MRD x TURBO lineup."
+        }
+      ],
+      "posterEvidence": {
+        "type": "flyer",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2461531",
+        "status": "Flyer front image is visible on the RA detail page."
+      },
+      "ticketStatus": "RA lists cost at 128 RMB and minimum age 18+.",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2461531",
+          "status": "secondary",
+          "lastChecked": "2026-06-11"
+        },
+        {
+          "label": "SmartShanghai June 2026 clubbing guide",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist",
+          "lastChecked": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "dark-room",
+      "month": "Jun",
+      "sortDate": "2026-06-26",
+      "date": "Jun 26",
+      "time": "22:00-05:00",
+      "title": "Dark RoOm",
+      "venue": "Dirty House",
+      "district": "Huangpu",
+      "vibe": [
+        "techno",
+        "underground"
+      ],
+      "genre": "techno",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "WeChat mini-program ticket",
+      "age": "18+",
+      "source": "https://ra.co/events/2462792",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "rose",
+      "description": "PLAYGROUND presents Dark RoOm at Dirty House with an RA-published techno running order from D_z through MegaWatts, NAKIN, and Marcus.",
+      "sourceStatus": "secondary",
+      "address": "INS Park 4F, 109 Yandang Road, Huangpu District",
+      "organizer": "PLAYGROUND",
+      "detailsUrl": "https://ra.co/events/2462792",
+      "ticketUrl": "https://ra.co/events/2462792",
+      "lastChecked": "2026-06-11",
+      "lineup": [
+        {
+          "name": "D_z",
+          "note": "RA lists D_z from 22:00 to 00:15."
+        },
+        {
+          "name": "MegaWatts",
+          "note": "RA lists MegaWatts from 00:15 to 01:15."
+        },
+        {
+          "name": "NAKIN",
+          "note": "RA lists NAKIN from 01:15 to 03:00."
+        },
+        {
+          "name": "Marcus",
+          "note": "RA lists Marcus from 03:00 to end."
+        }
+      ],
+      "setTimes": [
+        {
+          "name": "D_z",
+          "start": "22:00",
+          "end": "00:15",
+          "status": "exact",
+          "sourceLabel": "Resident Advisor",
+          "source": "https://ra.co/events/2462792"
+        },
+        {
+          "name": "MegaWatts",
+          "start": "00:15",
+          "end": "01:15",
+          "status": "exact",
+          "sourceLabel": "Resident Advisor",
+          "source": "https://ra.co/events/2462792"
+        },
+        {
+          "name": "NAKIN",
+          "start": "01:15",
+          "end": "03:00",
+          "status": "exact",
+          "sourceLabel": "Resident Advisor",
+          "source": "https://ra.co/events/2462792"
+        },
+        {
+          "name": "Marcus",
+          "start": "03:00",
+          "end": "late",
+          "status": "exact",
+          "sourceLabel": "Resident Advisor",
+          "source": "https://ra.co/events/2462792"
+        }
+      ],
+      "posterEvidence": {
+        "type": "flyer",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2462792",
+        "status": "Flyer front and back images are visible on the RA detail page."
+      },
+      "ticketStatus": "RA says to scan the WeChat mini-program code to purchase tickets and lists minimum age 18+.",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2462792",
+          "status": "secondary",
+          "lastChecked": "2026-06-11"
+        }
+      ]
+    },
+    {
+      "id": "cyber-buddha",
+      "lastChecked": "2026-06-11",
+      "venueReconciliation": {
+        "status": "needs-reconcile",
+        "note": "SmartShanghai lists Star@ Culture Center for this June 26 Cyber Buddha event, while RA lists Bandai Namco Shanghai Base / Dream Theater with the same core lineup. Do not overwrite the venue until a primary organizer page resolves it.",
+        "checked": "2026-06-11"
+      },
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2429023",
+          "status": "secondary",
+          "lastChecked": "2026-06-11"
+        },
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
+          "status": "secondary",
           "lastChecked": "2026-06-08"
         }
       ]

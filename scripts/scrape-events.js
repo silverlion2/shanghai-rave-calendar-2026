@@ -527,6 +527,31 @@ function absoluteUrl(href, baseUrl) {
   }
 }
 
+function imageUrlFromValue(value, baseUrl) {
+  if (!value) return "";
+  if (Array.isArray(value)) {
+    for (const item of value) {
+      const url = imageUrlFromValue(item, baseUrl);
+      if (url) return url;
+    }
+    return "";
+  }
+  if (typeof value === "object") {
+    return imageUrlFromValue(value.url || value.contentUrl || value.thumbnailUrl || value.src, baseUrl);
+  }
+
+  const url = normalizeUrl(absoluteUrl(String(value).trim(), baseUrl));
+  if (!/^https?:\/\//i.test(url)) return "";
+  return /\.(?:avif|gif|jpe?g|png|webp)(?:[?#].*)?$/i.test(url) || /\/(?:image|images|imgproxy)\b/i.test(url) ? url : "";
+}
+
+function posterUrlFromHtml(html, baseUrl, jsonLd = null) {
+  return imageUrlFromValue(jsonLd?.image, baseUrl)
+    || imageUrlFromValue(metaContent(html, "og:image"), baseUrl)
+    || imageUrlFromValue(metaContent(html, "twitter:image"), baseUrl)
+    || imageUrlFromValue(html.match(/<img\b[^>]+(?:src|data-src|data-original)=["']([^"']+)["'][^>]*>/i)?.[1], baseUrl);
+}
+
 function extractEventLinks(html, baseUrl) {
   const links = [];
   const seen = new Set();
@@ -790,6 +815,7 @@ function parseEventPage(url, html, linkTitle = "") {
   const sourceLabel = sourceLabelFor(url);
   const confidence = sourceLabel === "Resident Advisor" ? "Medium" : "Watch";
   const venue = locationName(jsonLd?.location) || "Check source";
+  const posterUrl = posterUrlFromHtml(html, url, jsonLd);
 
   return {
     id: slugify(`${sortDate}-${title}`),
@@ -809,6 +835,7 @@ function parseEventPage(url, html, linkTitle = "") {
     source: normalizeUrl(url),
     sourceLabel,
     imageTheme: imageThemeFor(title),
+    ...(posterUrl ? { posterUrl } : {}),
     description: description || `Public event listing from ${sourceLabel}.`,
     sourceStatus: confidence === "Watch" ? "watchlist" : "secondary",
     addedAt: shanghaiDateString(),
@@ -995,11 +1022,29 @@ function writeDjSourceData(events) {
   const eventById = new Map(events.map(event => [event.id, event]));
   const existingEventById = new Map((existing.events || []).map(event => [event.id, event]));
   const lineups = {};
+  const mergeLineupItems = (first, second) => {
+    const merged = [];
+    const seen = new Set();
+    for (const item of [...first, ...second]) {
+      const name = lineupItemName(item);
+      const key = normalizeEntityName(name);
+      if (!key || seen.has(key)) continue;
+      seen.add(key);
+      merged.push(item);
+    }
+    return merged;
+  };
 
   for (const [eventId, items] of Object.entries(existing.lineups || {})) {
     const event = eventById.get(eventId) || existingEventById.get(eventId) || { id: eventId };
     const audited = auditedLineupItems(items, event);
     if (audited.length) lineups[eventId] = audited;
+  }
+
+  for (const event of events) {
+    const audited = auditedLineupItems(event.lineup || [], event);
+    if (!audited.length) continue;
+    lineups[event.id] = mergeLineupItems(lineups[event.id] || [], audited);
   }
 
   const payload = {
