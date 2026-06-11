@@ -191,3 +191,26 @@ Local preview:
 Working tree caution:
 
 - Separate uncommitted/untracked tracker/acquisition-plan files existed during this work (`README.md`, `SOURCE_LOG.md`, `SOCIAL_MEDIA_ACQUISITION_PLAN.md`, and `data/tracked-dj-itineraries.js`). Do not assume those belong to the DJ entity-audit refresh unless explicitly requested.
+
+## 2026-06-11 DJ Itinerary Tracking and Scrape Integration
+
+The user clarified that profile tracking should cover all DJs in the current system, not only a single DJ. The DJ database now gives every generated profile a past/future itinerary surface:
+
+- `djs.html` renders a `Past / future itinerary` panel for every DJ profile.
+- Calendar-derived itinerary rows are built from each DJ's current Shanghai Rave Index appearances, so every profile has at least one itinerary row.
+- `data/tracked-dj-itineraries.js` is the worldwide overlay file. It preserves curated global rows such as Anyma and now also receives source-backed generated rows from event `futureTourPlan` fields.
+- `scripts/scrape-events.js` writes `data/events.json`, `data/dj-data.js`, and `data/tracked-dj-itineraries.js` during `npm run scrape`.
+- `data/events.json.djItineraryStats` records the generated itinerary overlay stats.
+- `.github/workflows/scrape-events.yml` now commits `data/tracked-dj-itineraries.js` with the other generated data.
+- `scripts/check.js` validates the DJ itinerary UI markers, overlay schema, scrape writer markers, workflow commit target, and `djItineraryStats`.
+
+Refresh and verification:
+
+- `npm run scrape` completed on 2026-06-11 and wrote 63 events, 18 discovered links, 0 social leads, 8 Computer Use sources, 12 curated updates, and 40 tracked DJ itinerary rows.
+- `npm run check` passed after the itinerary scrape integration.
+- Render audit confirmed 135 DJ profiles, all with itinerary rows; 68 profiles had future/watch itinerary dates; 2 profiles had worldwide overlays.
+- Anyma retained 38 curated worldwide rows. NJELIC gained 2 source-backed worldwide rows from `futureTourPlan`, including Guangzhou and Shanghai.
+
+Source rule:
+
+- Do not fabricate worldwide tour rows. The all-DJ itinerary uses confirmed calendar appearances by default, and worldwide overlay rows require official, ticketing, venue/promoter, SmartShanghai/RA, Songkick/Bandsintown, or similarly high-signal sourced data.

@@ -3,7 +3,7 @@ const fs = require("fs");
 const scriptPattern = new RegExp("<script>([\\s\\S]*?)</script>", "g");
 const htmlFiles = ["index.html", "venues.html", "djs.html", "planner.html", "ops.html"];
 const syntaxOnlyHtmlFiles = ["shanghai-rave-calendar-2026.html"];
-const externalJsFiles = ["data/dj-data.js"];
+const externalJsFiles = ["data/dj-data.js", "data/tracked-dj-itineraries.js"];
 let scriptCount = 0;
 const requiredCuratedEventIds = [
   "milo-cosmjn",
@@ -193,6 +193,30 @@ if (fs.existsSync("data/dj-data.js")) {
   assertNoNonPerformerLineups(djSourceData.events, djSourceData.lineups || {});
 }
 
+if (fs.existsSync("data/tracked-dj-itineraries.js")) {
+  const context = { window: {} };
+  new Function("window", fs.readFileSync("data/tracked-dj-itineraries.js", "utf8"))(context.window);
+  const trackedData = context.window.DJ_ITINERARY_DATA;
+  if (!trackedData || typeof trackedData !== "object" || !Object.keys(trackedData).length) {
+    throw new Error("data/tracked-dj-itineraries.js must define at least one worldwide itinerary overlay");
+  }
+  for (const [slug, profile] of Object.entries(trackedData)) {
+    if (!profile?.name || !Array.isArray(profile.itinerary) || profile.itinerary.length === 0) {
+      throw new Error(`tracked itinerary ${slug} must define a name and non-empty itinerary`);
+    }
+    if (!Array.isArray(profile.sources) || profile.sources.length === 0) {
+      throw new Error(`tracked itinerary ${slug} must include source records`);
+    }
+    for (const row of profile.itinerary) {
+      for (const field of ["date", "title", "city", "country", "venue", "source", "sourceLabel", "sourceStatus"]) {
+        if (!String(row[field] || "").trim()) {
+          throw new Error(`tracked itinerary ${slug} row missing ${field}: ${row.title || row.date || "(unknown)"}`);
+        }
+      }
+    }
+  }
+}
+
 const mainScript = fs.readFileSync("index.html", "utf8").match(scriptPattern)[1];
 const archiveScript = fs.readFileSync("shanghai-rave-calendar-2026.html", "utf8").match(scriptPattern)[1];
 if (mainScript !== archiveScript) {
@@ -214,6 +238,10 @@ const itineraryRequirements = [
   { file: "planner.html", text: "function exportItineraryImage(", label: "PNG itinerary export" },
   { file: "planner.html", text: "canvas.toBlob", label: "canvas image save path" },
   { file: "planner.html", text: "window.localStorage", label: "itinerary persistence" },
+  { file: "djs.html", text: "data/tracked-dj-itineraries.js", label: "tracked DJ itinerary data" },
+  { file: "djs.html", text: "Past / future itinerary", label: "all-DJ itinerary panel" },
+  { file: "djs.html", text: "function renderArtistItinerary(", label: "all-DJ itinerary renderer" },
+  { file: "djs.html", text: "function calendarItineraryRows(", label: "calendar-derived DJ itinerary rows" },
 ];
 
 const opsRequirements = [
@@ -233,7 +261,15 @@ const opsRequirements = [
   { file: "ops.html", text: "window.localStorage", label: "local review workflow persistence" },
 ];
 
-for (const requirement of [...itineraryRequirements, ...opsRequirements]) {
+const scrapeRequirements = [
+  { file: "scripts/scrape-events.js", text: "DJ_ITINERARY_FILE", label: "scraper tracked itinerary output path" },
+  { file: "scripts/scrape-events.js", text: "function writeDjItineraryData(", label: "scraper tracked itinerary writer" },
+  { file: "scripts/scrape-events.js", text: "function normalizeFutureTourRows(", label: "futureTourPlan to DJ itinerary conversion" },
+  { file: "scripts/scrape-events.js", text: "djItineraryStats", label: "scrape payload itinerary stats" },
+  { file: ".github/workflows/scrape-events.yml", text: "data/tracked-dj-itineraries.js", label: "workflow commits tracked itinerary data" },
+];
+
+for (const requirement of [...itineraryRequirements, ...opsRequirements, ...scrapeRequirements]) {
   const html = fs.readFileSync(requirement.file, "utf8");
   if (!html.includes(requirement.text)) {
     throw new Error(`${requirement.file} missing feature marker: ${requirement.label}`);
@@ -245,6 +281,9 @@ if (fs.existsSync("data/events.json")) {
   const events = Array.isArray(payload) ? payload : payload.events;
   if (!Array.isArray(events) || events.length === 0) {
     throw new Error("data/events.json must contain a non-empty events array");
+  }
+  if (!Array.isArray(payload) && (!payload.djItineraryStats || typeof payload.djItineraryStats.rowCount !== "number")) {
+    throw new Error("data/events.json must include djItineraryStats from the scraper");
   }
 
   const requiredFields = [

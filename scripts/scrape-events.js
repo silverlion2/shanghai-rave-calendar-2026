@@ -7,6 +7,7 @@ const INDEX_HTML = path.join(ROOT, "index.html");
 const DATA_DIR = path.join(ROOT, "data");
 const DATA_FILE = path.join(DATA_DIR, "events.json");
 const DJ_DATA_FILE = path.join(DATA_DIR, "dj-data.js");
+const DJ_ITINERARY_FILE = path.join(DATA_DIR, "tracked-dj-itineraries.js");
 const KEYWORD_CONFIG_FILE = path.join(ROOT, "config", "scrape-keywords.json");
 const CURATED_EVENTS_FILE = path.join(ROOT, "config", "curated-events.json");
 const TIME_ZONE = "Asia/Shanghai";
@@ -1011,6 +1012,170 @@ function writeDjSourceData(events) {
   fs.writeFileSync(DJ_DATA_FILE, `window.DJ_SOURCE_DATA = ${JSON.stringify(payload)};\n`);
 }
 
+function readExistingDjItineraryData() {
+  if (!fs.existsSync(DJ_ITINERARY_FILE)) return {};
+  const context = { window: {} };
+  try {
+    vm.runInNewContext(readText(DJ_ITINERARY_FILE), context, { timeout: 1000 });
+    return context.window.DJ_ITINERARY_DATA || {};
+  } catch (_) {
+    return {};
+  }
+}
+
+function inferCountryForCity(city) {
+  const normalized = normalizeEntityName(city);
+  const chinaCities = new Set(["shanghai", "guangzhou", "beijing", "shenzhen", "chengdu", "hangzhou", "nanjing", "wuhan", "xian", "chongqing"]);
+  if (chinaCities.has(normalized)) return "China";
+  return "Check source";
+}
+
+function tourSourceUrl(item, event) {
+  const direct = normalizeUrl(item.url || item.sourceUrl || "");
+  if (direct) return direct;
+  const source = String(item.source || "").trim();
+  if (/^https?:\/\//i.test(source)) return normalizeUrl(source);
+  return normalizeUrl(event.detailsUrl || event.source);
+}
+
+function tourSourceLabel(item, event, url) {
+  if (item.sourceLabel) return cleanText(item.sourceLabel);
+  const sourceText = cleanText(item.source || "");
+  if (sourceText && !/^https?:\/\//i.test(sourceText)) return sourceText;
+  return event.sourceLabel || sourceLabelFor(url);
+}
+
+function artistNamesForTourItem(item, event) {
+  const explicit = splitEntityNames(item.artist || item.name || item.dj || item.performer || item.artistName);
+  if (explicit.length) return explicit.filter(name => !isNonPerformerName(name, item, event));
+  const lineup = auditedLineupItems(event.lineup || [], event);
+  if (lineup.length === 1) return splitEntityNames(lineupItemName(lineup[0]));
+  return [];
+}
+
+function normalizeFutureTourRows(events, checkedAt) {
+  const generated = {};
+
+  for (const event of events) {
+    if (!Array.isArray(event.futureTourPlan) || !event.futureTourPlan.length) continue;
+
+    for (const item of event.futureTourPlan) {
+      const date = String(item.date || item.sortDate || item.startDate || "").match(/\d{4}-\d{2}-\d{2}/)?.[0] || "";
+      const city = cleanText(item.city || item.location || "");
+      if (!date || !city) continue;
+
+      const artistNames = artistNamesForTourItem(item, event);
+      if (!artistNames.length) continue;
+
+      const source = tourSourceUrl(item, event);
+      if (!source) continue;
+
+      const sourceLabel = tourSourceLabel(item, event, source);
+      const country = cleanText(item.country || item.region || inferCountryForCity(city));
+      const venue = cleanText(item.venue || item.venueName || (normalizeEntityName(city) === "shanghai" ? event.venue : "TBA"));
+
+      for (const artistName of artistNames) {
+        const slug = slugify(artistName);
+        if (!generated[slug]) {
+          generated[slug] = {
+            slug,
+            name: artistName,
+            trackedAt: checkedAt,
+            checkedByTimezone: TIME_ZONE,
+            scope: "Worldwide itinerary rows generated from scraped and curated event data",
+            imageTheme: event.imageTheme || imageThemeFor(artistName),
+            genres: ensureArray(event.genre),
+            summary: `Source-backed itinerary overlay for ${artistName}, generated from scraped event future-tour data.`,
+            sourceNote: "Rows in this overlay come from event-level futureTourPlan fields collected by the scraper or Computer Use handoff. Keep rows source-backed; do not infer tour stops from unsourced social chatter.",
+            sources: [],
+            itinerary: [],
+          };
+        }
+
+        generated[slug].sources.push({
+          label: sourceLabel,
+          url: source,
+          status: item.sourceStatus || event.sourceStatus || "secondary",
+          checked: item.checked || event.lastChecked || checkedAt,
+        });
+        generated[slug].itinerary.push({
+          date,
+          title: cleanText(item.title || event.title || `${artistName} tour stop`),
+          city,
+          country,
+          venue,
+          sourceLabel,
+          source,
+          sourceStatus: item.sourceStatus || event.sourceStatus || "secondary",
+          status: item.status || (event.status === "watch" ? "watch" : undefined),
+          note: cleanText(item.note || `Future-tour row captured from ${event.title}.`),
+        });
+      }
+    }
+  }
+
+  for (const profile of Object.values(generated)) {
+    profile.genres = Array.from(new Set(profile.genres)).slice(0, 12);
+    profile.sources = mergeSourceLists(profile.sources, []);
+    const seenRows = new Set();
+    profile.itinerary = profile.itinerary
+      .filter(row => {
+        const key = [row.date, normalizeEntityName(row.city), normalizeEntityName(row.country), normalizeEntityName(row.title)].join("|");
+        if (seenRows.has(key)) return false;
+        seenRows.add(key);
+        return true;
+      })
+      .sort((a, b) => String(a.date).localeCompare(String(b.date)) || String(a.city).localeCompare(String(b.city)));
+  }
+
+  return generated;
+}
+
+function mergeItineraryProfiles(existingProfile = {}, generatedProfile = {}) {
+  const merged = {
+    ...existingProfile,
+    ...generatedProfile,
+    sources: mergeSourceLists(existingProfile.sources || [], generatedProfile.sources || []),
+  };
+  const rows = [];
+  const seenRows = new Set();
+  for (const row of [...(existingProfile.itinerary || []), ...(generatedProfile.itinerary || [])]) {
+    if (!row || !row.date || !row.city || !row.source) continue;
+    const key = [
+      row.date,
+      normalizeEntityName(row.city),
+      normalizeEntityName(row.country),
+      normalizeEntityName(row.title || merged.name),
+      normalizeUrl(row.source),
+    ].join("|");
+    if (seenRows.has(key)) continue;
+    seenRows.add(key);
+    rows.push(row);
+  }
+  merged.itinerary = rows.sort((a, b) => String(a.date).localeCompare(String(b.date)) || String(a.city || "").localeCompare(String(b.city || "")));
+  merged.genres = Array.from(new Set([...(existingProfile.genres || []), ...(generatedProfile.genres || [])].filter(Boolean))).slice(0, 12);
+  merged.trackedAt = generatedProfile.trackedAt || existingProfile.trackedAt || shanghaiDateString();
+  return merged;
+}
+
+function writeDjItineraryData(events) {
+  const checkedAt = shanghaiDateString();
+  const existing = readExistingDjItineraryData();
+  const generated = normalizeFutureTourRows(events, checkedAt);
+  const merged = { ...existing };
+
+  for (const [slug, profile] of Object.entries(generated)) {
+    merged[slug] = mergeItineraryProfiles(existing[slug], profile);
+  }
+
+  fs.writeFileSync(DJ_ITINERARY_FILE, `window.DJ_ITINERARY_DATA = ${JSON.stringify(merged, null, 2)};\n`);
+  return {
+    profileCount: Object.keys(merged).length,
+    generatedProfileCount: Object.keys(generated).length,
+    rowCount: Object.values(merged).reduce((total, profile) => total + (Array.isArray(profile.itinerary) ? profile.itinerary.length : 0), 0),
+  };
+}
+
 async function main() {
   const seedEvents = extractEmbeddedEvents();
   const keywordConfig = readKeywordConfig();
@@ -1139,6 +1304,7 @@ async function main() {
   const events = applyCuratedEvents(mergeEvents(normalizedSeeds, normalizedScraped), curatedEvents, sourceChecks);
 
   fs.mkdirSync(DATA_DIR, { recursive: true });
+  const djItineraryStats = writeDjItineraryData(events);
   const payload = {
     generatedAt: new Date().toISOString(),
     verified: shanghaiDateString(),
@@ -1156,6 +1322,7 @@ async function main() {
     discovered: discovered.slice(0, 80),
     computerUseQueue,
     curatedEventsApplied: curatedEvents.length,
+    djItineraryStats,
     notes: [
       "This v1 scraper keeps curated embedded events as the seed dataset, refreshes source metadata, and adds parsable public event pages as watch/secondary entries.",
       "Computer Use collected event updates in config/curated-events.json are merged after the automated source refresh.",
@@ -1163,12 +1330,13 @@ async function main() {
       "X keyword searches are discovery-only social leads and never promote an event into the calendar without confirmation from a stronger source.",
       "Known anti-bot or app-only sources are queued for agent-operated Chrome + Computer Use collection instead of being scraped with plain fetch.",
       "Computer Use collection must follow second-layer links and image/poster text to capture time, venue, lineup, poster evidence, artist introductions, future tour dates, and ticketing status.",
+      "DJ itinerary overlays are regenerated from source-backed futureTourPlan fields while preserving curated worldwide overlays in data/tracked-dj-itineraries.js.",
     ],
   };
 
   fs.writeFileSync(DATA_FILE, `${JSON.stringify(payload, null, 2)}\n`);
   writeDjSourceData(events);
-  console.log(`Wrote ${path.relative(ROOT, DATA_FILE)} and ${path.relative(ROOT, DJ_DATA_FILE)} with ${events.length} events, ${payload.discovered.length} discovered links, ${payload.socialLeads.length} social leads, ${payload.computerUseQueue.length} Computer Use sources, and ${payload.curatedEventsApplied} curated updates.`);
+  console.log(`Wrote ${path.relative(ROOT, DATA_FILE)}, ${path.relative(ROOT, DJ_DATA_FILE)}, and ${path.relative(ROOT, DJ_ITINERARY_FILE)} with ${events.length} events, ${payload.discovered.length} discovered links, ${payload.socialLeads.length} social leads, ${payload.computerUseQueue.length} Computer Use sources, ${payload.curatedEventsApplied} curated updates, and ${djItineraryStats.rowCount} tracked DJ itinerary rows.`);
 }
 
 main()

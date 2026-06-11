@@ -12,6 +12,12 @@ Last refreshed: 2026-06-08, Asia/Shanghai.
 
 Collection method is separate from confirmation strength: Chrome + Computer Use can discover or verify a source, but an event still needs a shareable official, ticketing, venue/promoter, RA, SmartShanghai, or artist/label reference before it is promoted from watch-level to upcoming.
 
+## 2026-06-11 DJ Itinerary Tracking
+
+Added all-profile itinerary tracking to `djs.html`. Every DJ profile lists its past, upcoming, and watch-level Shanghai Rave Index appearances as itinerary rows. `scripts/scrape-events.js` also writes `data/tracked-dj-itineraries.js`: it preserves curated worldwide overlays and regenerates source-backed rows from event `futureTourPlan` fields.
+
+Rules for worldwide overlay rows: official artist pages win for city/date confirmation; Songkick or Bandsintown can fill exact residency dates and venue names when the official page provides only a date range or city; cancellation or venue details should remain labeled secondary unless confirmed by the artist, venue, promoter, or ticketing page. Do not fabricate worldwide tour rows for local or low-signal DJs; keep their itinerary to confirmed calendar appearances until a source-backed global row is available.
+
 ## Computer Use Collection Queue
 
 `scripts/scrape-events.js` writes `computerUseQueue` to `data/events.json` on every run. The queue is for sources where plain HTTP fetch is blocked, incomplete, login-bound, app-only, or image-first. These are agent-operated Chrome + Computer Use collection tasks, not human manual scraping:
