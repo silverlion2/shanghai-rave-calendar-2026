@@ -752,12 +752,13 @@
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 12px;
+      align-items: start;
     }
 
     .event-card {
-      display: grid;
-      grid-template-rows: auto minmax(0, 1fr);
-      min-height: 430px;
+      display: block;
+      width: 100%;
+      min-width: 0;
       border: 1px solid var(--line);
       border-radius: var(--radius);
       overflow: hidden;
@@ -787,14 +788,17 @@
     }
 
     .event-card.has-event-poster .poster {
-      aspect-ratio: 4 / 5;
-      display: grid;
-      place-items: center;
-      background: #070706;
+      aspect-ratio: auto;
+      display: block;
+      background:
+        linear-gradient(135deg, rgba(198,255,59,.08), rgba(65,215,255,.05)),
+        #151510;
     }
 
     .event-card.has-event-poster .poster img {
+      height: auto;
       object-fit: contain;
+      object-position: center;
     }
 
     .poster .tag {
@@ -1069,7 +1073,6 @@
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
-      margin-top: auto;
     }
 
     .chip {
@@ -1100,6 +1103,9 @@
     }
 
     .watch-panel {
+      display: block;
+      width: 100%;
+      min-width: 0;
       border: 1px dashed rgba(255,255,255,.22);
       border-radius: var(--radius);
       min-height: 220px;
@@ -2883,9 +2889,18 @@
       "fruitygroove-soul-navigator": "assets/posters/fruitygroove-soul-navigator.png",
       "matisa-limsum": "assets/posters/matisa-limsum.jpg",
       "fengyun-5": "assets/posters/fengyun-5.jpg",
+      "kollin": "assets/posters/kollin.jpg",
+      "horizon": "assets/posters/horizon.jpg",
+      "nosaj-thing": "assets/posters/nosaj-thing.png",
+      "santa-k": "assets/posters/santa-k.png",
+      "synth-crush": "assets/posters/synth-crush.jpg",
       "nova-sunset-sessions-flair": "assets/posters/nova-sunset-sessions-flair.jpg",
+      "alter-pavillon": "assets/posters/alter-pavillon.png",
       "night-at-museum-90s-disco": "assets/posters/night-at-museum-90s-disco.jpg",
+      "photocult-mask-desire-auction": "assets/posters/photocult-mask-desire-auction.png",
+      "mrd": "assets/posters/mrd.png",
       "afrowave-takeover-la-burg": "assets/posters/afrowave-takeover-la-burg.jpg",
+      "dark-room": "assets/posters/dark-room.jpg",
       "nova-summer-splash-pool-party": "assets/posters/nova-summer-splash-pool-party.jpg",
       "sunset-sundays-dome": "assets/posters/sunset-sundays-dome.jpg"
     };
@@ -3912,10 +3927,11 @@
     function renderCard(event) {
       const visual = eventVisual(event);
       const organizer = knownOrganizerFor(event);
+      const loading = visual.hasPoster ? "eager" : "lazy";
       return `
         <article class="event-card ${visual.hasPoster ? "has-event-poster" : "has-default-poster"}" data-id="${event.id}">
           <div class="poster">
-            <img src="${escapeHtml(visual.src)}" alt="${escapeHtml(visual.alt)}" loading="lazy" decoding="async">
+            <img src="${escapeHtml(visual.src)}" alt="${escapeHtml(visual.alt)}" loading="${loading}" decoding="async">
             <span class="tag">${escapeHtml(event.status.toUpperCase())}</span>
           </div>
           <div class="card-body">

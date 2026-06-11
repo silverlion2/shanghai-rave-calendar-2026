@@ -1659,7 +1659,8 @@
         "url": "https://ra.co/events/2460995",
         "status": "Flyer front and back images are visible on the RA detail page."
       },
-      "ticketStatus": "RA says to scan the WeChat mini-program code to purchase tickets and lists minimum age 18+."
+      "ticketStatus": "RA says to scan the WeChat mini-program code to purchase tickets and lists minimum age 18+.",
+      "posterUrl": "assets/posters/kollin.jpg"
     },
     {
       "id": "milo-cosmjn",
@@ -1858,7 +1859,8 @@
           "note": "RA exposes a WeChat event-details link; platform access may require a session."
         }
       ],
-      "ticketStatus": "RA lists tickets at 138-178 RMB with one drink, minimum age 18+, and SmartShanghai/WeChat promotional links."
+      "ticketStatus": "RA lists tickets at 138-178 RMB with one drink, minimum age 18+, and SmartShanghai/WeChat promotional links.",
+      "posterUrl": "assets/posters/horizon.jpg"
     },
     {
       "id": "the-woods",
@@ -2092,7 +2094,8 @@
         "url": "https://ra.co/events/2453279",
         "status": "Flyer image is visible on the RA detail page."
       },
-      "ticketStatus": "RA lists cost at 148 RMB and minimum age 18+."
+      "ticketStatus": "RA lists cost at 148 RMB and minimum age 18+.",
+      "posterUrl": "assets/posters/nosaj-thing.png"
     },
     {
       "id": "santa-k",
@@ -2165,7 +2168,8 @@
           "note": "RA exposes an Instagram promotional link; platform session/login may be required to inspect the final profile."
         }
       ],
-      "ticketStatus": "RA lists cost at 120 RMB. Minimum age was not exposed in the fetched RA text, so confirm door policy with Abyss/TURBO before publishing."
+      "ticketStatus": "RA lists cost at 120 RMB. Minimum age was not exposed in the fetched RA text, so confirm door policy with Abyss/TURBO before publishing.",
+      "posterUrl": "assets/posters/santa-k.png"
     },
     {
       "id": "synth-crush",
@@ -2231,7 +2235,8 @@
         "url": "https://ra.co/events/2458269",
         "status": "Flyer image is visible on the RA detail page."
       },
-      "ticketStatus": "RA lists cost at 118 RMB. Age rule was not visible in the fetched RA text."
+      "ticketStatus": "RA lists cost at 118 RMB. Age rule was not visible in the fetched RA text.",
+      "posterUrl": "assets/posters/synth-crush.jpg"
     },
     {
       "id": "system-popup",
@@ -2395,7 +2400,8 @@
         "url": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
         "status": "Event images are visible on the SmartShanghai detail page."
       },
-      "ticketStatus": "SmartShanghai lists early bird, presale, and door tickets from 128 RMB with web, app, and WeChat buying routes."
+      "ticketStatus": "SmartShanghai lists early bird, presale, and door tickets from 128 RMB with web, app, and WeChat buying routes.",
+      "posterUrl": "assets/posters/alter-pavillon.png"
     },
     {
       "id": "night-at-museum-90s-disco",
@@ -2572,7 +2578,8 @@
           "status": "secondary",
           "lastChecked": "2026-06-11"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/photocult-mask-desire-auction.png"
     },
     {
       "id": "mrd",
@@ -2644,7 +2651,8 @@
         "url": "https://ra.co/events/2461531",
         "status": "Flyer front image is visible on the RA detail page."
       },
-      "ticketStatus": "RA lists cost at 128 RMB and minimum age 18+."
+      "ticketStatus": "RA lists cost at 128 RMB and minimum age 18+.",
+      "posterUrl": "assets/posters/mrd.png"
     },
     {
       "id": "afrowave-takeover-la-burg",
@@ -2947,7 +2955,8 @@
           "status": "secondary",
           "lastChecked": "2026-06-11"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/dark-room.jpg"
     },
     {
       "id": "devils-dancers",

@@ -114,7 +114,8 @@
           "status": "secondary",
           "lastChecked": "2026-06-11"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/kollin.jpg"
     },
     {
       "id": "fruitygroove-soul-navigator",
@@ -326,7 +327,8 @@
           "status": "secondary",
           "lastChecked": "2026-06-11"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/santa-k.png"
     },
     {
       "id": "synth-crush",
@@ -371,7 +373,8 @@
           "status": "secondary",
           "lastChecked": "2026-06-11"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/synth-crush.jpg"
     },
     {
       "id": "fengyun-5",
@@ -470,7 +473,8 @@
           "status": "secondary",
           "lastChecked": "2026-06-11"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/horizon.jpg"
     },
     {
       "id": "nosaj-thing",
@@ -511,7 +515,8 @@
           "status": "secondary",
           "lastChecked": "2026-06-11"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/nosaj-thing.png"
     },
     {
       "id": "nova-sunset-sessions-flair",
@@ -859,7 +864,8 @@
           "status": "secondary",
           "lastChecked": "2026-06-11"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/alter-pavillon.png"
     },
     {
       "id": "photocult-mask-desire-auction",
@@ -991,7 +997,8 @@
           "status": "secondary",
           "lastChecked": "2026-06-11"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/photocult-mask-desire-auction.png"
     },
     {
       "id": "mrd",
@@ -1063,7 +1070,8 @@
           "status": "watchlist",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/mrd.png"
     },
     {
       "id": "dark-room",
@@ -1159,7 +1167,8 @@
           "status": "secondary",
           "lastChecked": "2026-06-11"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/dark-room.jpg"
     },
     {
       "id": "cyber-buddha",
