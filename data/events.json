@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-10T01:31:00.554Z",
-  "verified": "2026-06-10",
+  "generatedAt": "2026-06-11T01:37:27.887Z",
+  "verified": "2026-06-11",
   "timezone": "Asia/Shanghai",
   "sourcePriority": [
     "Chrome + Computer Use for anti-bot, logged-in, app-only, image/poster, and mini-program sources",
@@ -15,7 +15,7 @@
       "url": "https://ra.co/events/cn/shanghai",
       "kind": "listing",
       "sourceStatus": "secondary",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": false,
       "status": 403,
       "eventLinks": 0
@@ -25,7 +25,7 @@
       "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
       "kind": "guide",
       "sourceStatus": "secondary",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": true,
       "status": 200,
       "eventLinks": 0
@@ -35,10 +35,10 @@
       "url": "https://www.smartshanghai.com/events/clubbing/",
       "kind": "listing",
       "sourceStatus": "secondary",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": true,
       "status": 200,
-      "eventLinks": 16
+      "eventLinks": 26
     },
     {
       "label": "X/Twitter keyword: \"Shanghai\" techno",
@@ -47,7 +47,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": false,
       "status": null,
       "links": 0,
@@ -60,7 +60,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": false,
       "status": null,
       "links": 0,
@@ -73,7 +73,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": false,
       "status": null,
       "links": 0,
@@ -86,7 +86,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": false,
       "status": null,
       "links": 0,
@@ -99,7 +99,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": false,
       "status": null,
       "links": 0,
@@ -112,7 +112,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": false,
       "status": null,
       "links": 0,
@@ -125,7 +125,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": false,
       "status": null,
       "links": 0,
@@ -138,7 +138,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": false,
       "status": null,
       "links": 0,
@@ -151,7 +151,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": false,
       "status": null,
       "links": 0,
@@ -164,7 +164,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": false,
       "status": null,
       "links": 0,
@@ -177,7 +177,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": false,
       "status": null,
       "links": 0,
@@ -190,7 +190,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": false,
       "status": null,
       "links": 0,
@@ -203,7 +203,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": false,
       "status": null,
       "links": 0,
@@ -216,7 +216,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": false,
       "status": null,
       "links": 0,
@@ -229,7 +229,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": false,
       "status": null,
       "links": 0,
@@ -242,7 +242,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": false,
       "status": null,
       "links": 0,
@@ -254,7 +254,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -267,7 +267,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -280,7 +280,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": null,
       "status": "computer-use",
       "priority": 2,
@@ -293,7 +293,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -306,7 +306,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -319,7 +319,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -332,7 +332,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -345,7 +345,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "ok": null,
       "status": "computer-use",
       "priority": 2,
@@ -1409,6 +1409,74 @@
       ]
     },
     {
+      "id": "2026-06-11-sympathy-fm-w-love-bang-dark-dance-mu",
+      "month": "Jun",
+      "sortDate": "2026-06-11",
+      "date": "Jun 11",
+      "time": "00:00",
+      "title": "Sympathy FM w/Love Bang (Dark Dance Music, Italo Disco, Electro, J-Pop)",
+      "venue": "Sympathy Angel",
+      "district": "Shanghai",
+      "vibe": [
+        "experimental"
+      ],
+      "genre": "electro, house",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://www.smartshanghai.com/event/sympathy-fm-w-love-bang-dark-dance-music-italo-disco-electro-j-pop-2026-06-11",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "rose",
+      "description": "DJ Heatwolves from Shanghai-based label Love Bang does a long set at this surreal C-Park bar. Expect dark-but-cute, cute-but-dark sounds ranging from Italo Disco to Electro, from Chicago House to goth, from J-Pop to Cantopop, and more. Keepin it tough and melodic. Free entry.",
+      "sourceStatus": "watchlist",
+      "addedAt": "2026-06-11",
+      "lastChecked": "2026-06-11",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/sympathy-fm-w-love-bang-dark-dance-music-italo-disco-electro-j-pop-2026-06-11",
+          "status": "watchlist",
+          "lastChecked": "2026-06-11"
+        }
+      ]
+    },
+    {
+      "id": "2026-06-12-99-god-live-hip-hop-trap-bass",
+      "month": "Jun",
+      "sortDate": "2026-06-12",
+      "date": "Jun 12",
+      "time": "00:00",
+      "title": "99 God (Live Hip Hop, Trap, Bass)",
+      "venue": "Illum",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental",
+        "bass"
+      ],
+      "genre": "bass, club",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://www.smartshanghai.com/event/99-god-live-hip-hop-trap-bass-2026-06-12",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "ember",
+      "description": "NYC-based underground rapper 99 God headlines the night at this C-Park club, with support from a bunch of DJs in the hip hop/beats/bass/club music scene, including Warlock from Preme, 647, Kongbb, and more.",
+      "sourceStatus": "watchlist",
+      "addedAt": "2026-06-11",
+      "lastChecked": "2026-06-11",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/99-god-live-hip-hop-trap-bass-2026-06-12",
+          "status": "watchlist",
+          "lastChecked": "2026-06-11"
+        }
+      ]
+    },
+    {
       "id": "cltx-abyss",
       "month": "Jun",
       "sortDate": "2026-06-12",
@@ -1431,13 +1499,48 @@
       "imageTheme": "ember",
       "description": "SmartShanghai lead for one of Abyss's harder June bookings. Treat as single-source until the venue/ticket post is checked.",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-10",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-10"
+          "lastChecked": "2026-06-11"
+        }
+      ]
+    },
+    {
+      "id": "2026-06-12-fruitygroove-house-of-visions-hip-hop",
+      "month": "Jun",
+      "sortDate": "2026-06-12",
+      "date": "Jun 12",
+      "time": "00:00",
+      "title": "FRUITYGROOVE + House of Visions (Hip Hop, Funk Soul, Jazz, House)",
+      "venue": "Reactor",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental",
+        "bass"
+      ],
+      "genre": "techno, electro, house, club",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://www.smartshanghai.com/event/fruitygroove-house-of-visions-hip-hop-funk-soul-jazz-house-2026-06-12",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "gold",
+      "description": "Double headliner night at C-Park club Reactor, with house and techno downstairs and hip hop, funk, soul, and more upstairs. FRUITYGROOVE are taking over the second floor, with DJs Soul Navigator, KaleidoJazzlegs, dada, Dreaming, and gkamkbns. Down in the main room, House of Visions has Javier Carballo, a pioneer of Spanish underground electronic music, making his China debut. Richie Hawtin, Seth Troxler, and others have long supported his work, and his sound has resonated at venues such as Fa...",
+      "sourceStatus": "watchlist",
+      "addedAt": "2026-06-11",
+      "lastChecked": "2026-06-11",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/fruitygroove-house-of-visions-hip-hop-funk-soul-jazz-house-2026-06-12",
+          "status": "watchlist",
+          "lastChecked": "2026-06-11"
         }
       ]
     },
@@ -1563,6 +1666,40 @@
       ]
     },
     {
+      "id": "2026-06-12-guest-dj-cedar-cn",
+      "month": "Jun",
+      "sortDate": "2026-06-12",
+      "date": "Jun 12",
+      "time": "00:00",
+      "title": "Guest DJ: Cedar (CN)",
+      "venue": "La Barra",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "genre": "electro, house",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://www.smartshanghai.com/event/guest-dj-cedar-china-at-la-barra-1",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "ember",
+      "description": "CEDAR is a rising DJ from China, known for her groovy, deep house sets that keep the dancefloor moving. Mixing underground sounds with modern electronic vibes, she creates a nonstop, energetic atmosphere from start to finish.",
+      "sourceStatus": "watchlist",
+      "addedAt": "2026-06-11",
+      "lastChecked": "2026-06-11",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/guest-dj-cedar-china-at-la-barra-1",
+          "status": "watchlist",
+          "lastChecked": "2026-06-11"
+        }
+      ]
+    },
+    {
       "id": "kollin",
       "month": "Jun",
       "sortDate": "2026-06-12",
@@ -1585,13 +1722,13 @@
       "imageTheme": "rose",
       "description": "Dirty House / INS entry with techno and bass tags; more chaotic club energy than purist techno.",
       "sourceStatus": "secondary",
-      "lastChecked": "2026-06-10",
+      "lastChecked": "2026-06-08",
       "sources": [
         {
           "label": "Resident Advisor",
           "url": "https://ra.co/events/2460995",
           "status": "secondary",
-          "lastChecked": "2026-06-10"
+          "lastChecked": "2026-06-08"
         }
       ]
     },
@@ -1618,13 +1755,13 @@
       "imageTheme": "cyan",
       "description": "Proper late-night POTENT booking with Cosmjn, Milo Raad, and GaoQiao.",
       "sourceStatus": "secondary",
-      "lastChecked": "2026-06-10",
+      "lastChecked": "2026-06-08",
       "sources": [
         {
           "label": "Resident Advisor",
           "url": "https://ra.co/events/2461478",
           "status": "secondary",
-          "lastChecked": "2026-06-10"
+          "lastChecked": "2026-06-08"
         }
       ],
       "address": "L3 TX Huaihai, 523 Huaihai Middle Road, Shanghai, China",
@@ -1774,13 +1911,13 @@
       "imageTheme": "rose",
       "description": "Single-source lead for Love Bang's darker Specters night: goth, darkwave, dark italo, industrial, post-punk, EBM, and witch house.",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-10",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-10"
+          "lastChecked": "2026-06-11"
         }
       ]
     },
@@ -1841,6 +1978,39 @@
         "status": "Flyer image is visible on the RA detail page."
       },
       "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+. Final ticket route should be checked before publishing a direct purchase CTA."
+    },
+    {
+      "id": "2026-06-13-new-writing-supermarket-grand-reopeni",
+      "month": "Jun",
+      "sortDate": "2026-06-13",
+      "date": "Jun 13",
+      "time": "00:00",
+      "title": "New Writing Supermarket Grand Reopening Party \"2m² Art Supermarket\"",
+      "venue": "SmSh Territory",
+      "district": "Shanghai",
+      "vibe": [
+        "underground"
+      ],
+      "genre": "electronic, club",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://www.smartshanghai.com/event/new-writing-supermarket-grand-reopening-party-2m2-2026-06-13",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "ember",
+      "description": "The New Writing Supermarket, the DIY gang of boundlessly creative theater kids that have thrown some of the most fun parties of recent years, has a brand new home up in Putuo at 889 Plaza. This is their grand opening theme, and it's looking like beautiful chaos as usual. They've turned the first floor of this plaza into an art supermarket, and given a few dozen people two square meters each to do whatever they like. Expect a lot of eccentric and fun artists and surprises (e.g., cat tarot), pl...",
+      "sourceStatus": "watchlist",
+      "addedAt": "2026-06-11",
+      "lastChecked": "2026-06-11",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/new-writing-supermarket-grand-reopening-party-2m2-2026-06-13",
+          "status": "watchlist",
+          "lastChecked": "2026-06-11"
+        }
+      ]
     },
     {
       "id": "nova-sunset-sessions-flair",
@@ -2151,13 +2321,13 @@
       "imageTheme": "ember",
       "description": "SmartShanghai reports System returning to the Shanghai Hotel e-sports arena on Saturdays until early August. Lineups need promoter confirmation.",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-10",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-10"
+          "lastChecked": "2026-06-11"
         }
       ]
     },
@@ -2240,13 +2410,13 @@
       "imageTheme": "gold",
       "description": "Long-form Yu Garden-adjacent session by ALTER. and byyb with DJs, a radio livestream, and Wang Meng + Yu Miao live.",
       "sourceStatus": "secondary",
-      "lastChecked": "2026-06-10",
+      "lastChecked": "2026-06-08",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
           "status": "secondary",
-          "lastChecked": "2026-06-10"
+          "lastChecked": "2026-06-08"
         }
       ]
     },
@@ -2323,13 +2493,13 @@
       "imageTheme": "cyan",
       "description": "SmartShanghai lead: fast but not hard eurodance, trance, and techno at Dirty House. Verify before planning.",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-10",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-10"
+          "lastChecked": "2026-06-11"
         }
       ]
     },
@@ -2419,13 +2589,13 @@
       "imageTheme": "rose",
       "description": "Single-source lead for a textured Heim night joining Dutch producer/DJ Jasmin with Knopha.",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-10",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-10"
+          "lastChecked": "2026-06-11"
         }
       ]
     },
@@ -2452,13 +2622,13 @@
       "imageTheme": "cyan",
       "description": "SmartShanghai lead for an ambient and outer-music night across Asia. More listening-session than rave.",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-10",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-10"
+          "lastChecked": "2026-06-11"
         }
       ]
     },
@@ -2485,13 +2655,13 @@
       "imageTheme": "ember",
       "description": "SmartShanghai lead for another harder-end Abyss booking. Needs official venue/ticket confirmation before planning around it.",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-10",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-10"
+          "lastChecked": "2026-06-11"
         }
       ]
     },
@@ -2518,13 +2688,13 @@
       "imageTheme": "gold",
       "description": "Electronic-world-music live show with The Hymmapan Electron, Taiga, and MICO. Not a club rave, but a strong experimental electronic listing.",
       "sourceStatus": "secondary",
-      "lastChecked": "2026-06-10",
+      "lastChecked": "2026-06-08",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
           "status": "secondary",
-          "lastChecked": "2026-06-10"
+          "lastChecked": "2026-06-08"
         }
       ]
     },
@@ -2551,13 +2721,13 @@
       "imageTheme": "rose",
       "description": "Darker dance-adjacent Specters lead. Lower techno fit, but useful for goth and wave-oriented nights.",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-10",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-10"
+          "lastChecked": "2026-06-11"
         }
       ]
     },
@@ -2584,13 +2754,13 @@
       "imageTheme": "gold",
       "description": "SmartShanghai lead: Spanish techno/house DJ Anika Kunst with 10000 and DJ EBP.",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-10",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-10"
+          "lastChecked": "2026-06-11"
         }
       ]
     },
@@ -2617,13 +2787,13 @@
       "imageTheme": "cyan",
       "description": "Single-source SmartShanghai lead for an immersive A/V live set at EXIT with Chuan, Na$ty, and Toyn on support.",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-10",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-10"
+          "lastChecked": "2026-06-11"
         }
       ]
     },
@@ -2650,13 +2820,13 @@
       "imageTheme": "ember",
       "description": "Single-source lead for live acid techno paired with metal bands at Fenrir.",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-10",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-10"
+          "lastChecked": "2026-06-11"
         }
       ]
     },
@@ -2683,13 +2853,13 @@
       "imageTheme": "rose",
       "description": "SmartShanghai lead with QQBBG and Liu Qoo; high-color KNOT club-rave direction.",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-10",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-10"
+          "lastChecked": "2026-06-11"
         }
       ]
     },
@@ -2766,13 +2936,13 @@
       "imageTheme": "acid",
       "description": "Warmup lead for a July secret-forest festival. Lineup was still TBA in the public guide, so keep it on watch only.",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-10",
+      "lastChecked": "2026-06-11",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-10"
+          "lastChecked": "2026-06-11"
         }
       ]
     }
@@ -2781,14 +2951,22 @@
   "discovered": [
     {
       "url": "https://www.smartshanghai.com/event/4-years-strong-drinkery-wuding-four-year-anniversary-2026-06-11",
-      "title": "",
-      "sourceLabel": "SmartShanghai",
-      "parsed": false,
-      "error": "This operation was aborted"
+      "title": "\"4 Years Strong\" - Drinkery Wuding Four Year Anniversary",
+      "parsed": true
     },
     {
       "url": "https://www.smartshanghai.com/event/tipsy-nomads-bar-crawl-2026-06-11",
       "title": "Tipsy Nomads Bar Crawl",
+      "parsed": true
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/sympathy-fm-w-love-bang-dark-dance-music-italo-disco-electro-j-pop-2026-06-11",
+      "title": "Sympathy FM w/Love Bang (Dark Dance Music, Italo Disco, Electro, J-Pop)",
+      "parsed": true
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/the-temple-at-la-barra-3",
+      "title": "The Temple",
       "parsed": true
     },
     {
@@ -2797,15 +2975,33 @@
       "parsed": true
     },
     {
-      "url": "https://www.smartshanghai.com/event/nova-events-presents-sunset-sessions-flair-rooftop-party-2026-06-13-2",
-      "title": "",
-      "sourceLabel": "SmartShanghai",
-      "parsed": false,
-      "error": "This operation was aborted"
+      "url": "https://www.smartshanghai.com/event/99-god-live-hip-hop-trap-bass-2026-06-12",
+      "title": "99 God (Live Hip Hop, Trap, Bass)",
+      "parsed": true
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/fruitygroove-house-of-visions-hip-hop-funk-soul-jazz-house-2026-06-12",
+      "title": "FRUITYGROOVE + House of Visions (Hip Hop, Funk Soul, Jazz, House)",
+      "parsed": true
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/19xx-w-ben-huang-tofu-house-disco-2026-06-12",
+      "title": "19XX w/Ben Huang & Tofu (House, Disco)",
+      "parsed": true
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/guest-dj-cedar-china-at-la-barra-1",
+      "title": "Guest DJ: Cedar (CN)",
+      "parsed": true
     },
     {
       "url": "https://www.smartshanghai.com/event/horizon-rooftop-party-ft-erik-hagleton-fr-at-pop-american-brasserie",
       "title": "Space Panda Presents: Horizon Rooftop Party ft. Erik Hagleton (FR)",
+      "parsed": true
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/nova-events-presents-sunset-sessions-flair-rooftop-party-2026-06-13-2",
+      "title": "Nova Events Presents: Sunset Sessions - Flair Rooftop Party",
       "parsed": true
     },
     {
@@ -2819,63 +3015,29 @@
       "parsed": true
     },
     {
+      "url": "https://www.smartshanghai.com/event/new-writing-supermarket-grand-reopening-party-2m2-2026-06-13",
+      "title": "New Writing Supermarket Grand Reopening Party \"2m² Art Supermarket\"",
+      "parsed": true
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/nosaj-thing-bass-beats-hip-hop-2026-06-13",
+      "title": "Nosaj Thing (Hip Hop, Bass, Beats)",
+      "parsed": true
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/la-barra-five-year-anniversary-cinqo-2026-06-13",
+      "title": "La Barra Five-Year Anniversary: \"Cinco\"",
+      "parsed": true
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/turbo-w-santa-k-hard-techno-hard-trance-2026-06-13",
+      "title": "Turbo w/Santa K (Hard Techno, Hard Trance)",
+      "parsed": true
+    },
+    {
       "url": "https://www.smartshanghai.com/event/sunset-sundays-skyline-dome-at-the-dome",
       "title": "Sunset Sundays",
       "parsed": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/house-of-zup-club-meets-kitchen-house-disco-2026-06-14",
-      "title": "House of Zup: Club Meets Kitchen (House, Disco)",
-      "parsed": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
-      "title": "ALTER. Pavillon 亭",
-      "parsed": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/night-at-the-museum-back-to-the-90s-disco-night-2026-06-18",
-      "title": "Night at the Museum: Back to the 90s Disco Night",
-      "parsed": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/girls-night-out-skyline-dome-at-the-dome",
-      "title": "Girls Night Out",
-      "parsed": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
-      "title": "Cyber Budha Special Vol: Twilight in the Forbidden City with The Hymmapan Electron (TH), Taiga, and MICO",
-      "parsed": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/nova-events-presents-summer-splash-pool-party-2026-06-27",
-      "title": "Nova Events Presents: Summer Splash Pool Party",
-      "parsed": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/disco-ball-fridays-skyline-dome-at-the-dome",
-      "title": "Disco Ball Fridays",
-      "parsed": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/a-full-afrowave-takeover-at-la-burg",
-      "title": "A Full Afrowave Takeover",
-      "parsed": true
-    },
-    {
-      "url": "https://ra.co/events/2461478",
-      "title": "Milo Raad + Cosmjn",
-      "sourceLabel": "Resident Advisor",
-      "status": 403,
-      "parsed": false
-    },
-    {
-      "url": "https://ra.co/events/2460995",
-      "title": "KOLLIN",
-      "sourceLabel": "Resident Advisor",
-      "status": 403,
-      "parsed": false
     }
   ],
   "computerUseQueue": [
@@ -2904,7 +3066,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -2970,7 +3132,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -3036,7 +3198,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -3102,7 +3264,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -3169,7 +3331,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -3233,7 +3395,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -3297,7 +3459,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -3361,7 +3523,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-10",
+      "checkedAt": "2026-06-11",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
