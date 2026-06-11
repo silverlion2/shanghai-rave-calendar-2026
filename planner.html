@@ -8,6 +8,7 @@
   <meta name="theme-color" content="#c6ff3b">
   <link rel="canonical" href="https://shanghai-rave-calendar-2026.vercel.app/planner">
   <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" href="/og-image.png" type="image/png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Shanghai Rave Index">
   <meta property="og:title" content="Shanghai Rave Index DJ Set-Time Planner">
@@ -268,8 +269,67 @@
       backdrop-filter: blur(16px);
     }
 
+    .control-header {
+      grid-column: 1 / -1;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .control-kicker,
+    .filter-field span {
+      color: var(--dim);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .control-kicker {
+      display: block;
+      color: var(--acid);
+      margin-bottom: 4px;
+    }
+
+    .control-title {
+      margin: 0;
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: 22px;
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    .filter-summary {
+      min-height: 34px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(65,215,255,.35);
+      border-radius: 999px;
+      color: var(--cyan);
+      background: rgba(65,215,255,.07);
+      padding: 7px 11px;
+      font-size: 12px;
+      font-weight: 900;
+      line-height: 1.15;
+      text-align: right;
+      white-space: nowrap;
+    }
+
     .quick-actions {
       grid-column: 1 / -1;
+    }
+
+    .filter-field {
+      display: grid;
+      gap: 6px;
+      min-width: 0;
+    }
+
+    .filter-field:focus-within span {
+      color: var(--acid);
     }
 
     .quick-filter,
@@ -553,6 +613,15 @@
       .controls {
         grid-template-columns: 1fr;
       }
+      .control-header {
+        display: grid;
+        align-items: start;
+      }
+      .filter-summary {
+        justify-content: start;
+        text-align: left;
+        white-space: normal;
+      }
       .quick-actions {
         grid-column: auto;
       }
@@ -583,12 +652,13 @@
   <main class="shell">
     <nav class="site-nav" aria-label="Site navigation">
       <div class="nav-group">
-        <a class="nav-link" href="index.html">Shanghai Rave Index</a>
-        <a class="nav-link active" href="planner.html">Set-time planner</a>
-        <a class="nav-link" href="venues.html">Venue & crew guide</a>
-        <a class="nav-link" href="djs.html">DJ database</a>
+        <a class="nav-link" href="index.html">Calendar</a>
+        <a class="nav-link active" href="planner.html">Planner</a>
+        <a class="nav-link" href="venues.html">Venues</a>
+        <a class="nav-link" href="djs.html">DJs</a>
+        <a class="nav-link" href="ops.html">Ops</a>
       </div>
-      <span class="tag" id="checkedTag">Checked June 8, 2026</span>
+      <span class="tag" id="checkedTag">Checked 2026-06-11</span>
     </nav>
 
     <header class="planner-head">
@@ -596,7 +666,7 @@
         <div>
           <div class="kicker">Exact slots + duration estimates</div>
           <h1>Shanghai DJ set-time planner</h1>
-          <p class="subhead">Build a practical night plan from published running orders and clearly labeled estimates divided from the event window and lineup order.</p>
+          <p class="subhead">Turn the calendar into a realistic route: compare exact running orders, treat estimates as provisional, and export only the slots that are worth planning around.</p>
           <div class="source-note">
             <span class="pill">Asia/Shanghai</span>
             <span class="pill">Local itinerary storage</span>
@@ -618,38 +688,57 @@
     </section>
 
     <section class="controls" aria-label="Planner controls">
+      <div class="control-header">
+        <div>
+          <span class="control-kicker">Route builder</span>
+          <h2 class="control-title">Find playable slots, not just events</h2>
+        </div>
+        <div class="filter-summary" id="filterSummary" aria-live="polite">Loading slots</div>
+      </div>
       <div class="quick-actions" aria-label="Date shortcuts">
-        <button class="quick-filter active" type="button" data-window="future">Future</button>
-        <button class="quick-filter" type="button" data-window="all">All Dates</button>
+        <button class="quick-filter active" type="button" data-window="future">Upcoming</button>
+        <button class="quick-filter" type="button" data-window="all">Full 2026</button>
         <button class="quick-filter" type="button" data-window="tonight">Tonight</button>
         <button class="quick-filter" type="button" data-window="weekend">This Weekend</button>
         <button class="quick-filter" type="button" data-window="next30">Next 30 Days</button>
       </div>
-      <input class="search" id="searchInput" type="search" placeholder="Search DJ, event, venue, genre">
-      <select class="select" id="monthFilter" aria-label="Month filter">
-        <option value="all">All months</option>
-      </select>
-      <select class="select" id="slotStatusFilter" aria-label="Set-time status filter">
-        <option value="all">All slot statuses</option>
-        <option value="exact">Exact only</option>
-        <option value="estimated">Estimated only</option>
-        <option value="tba">TBA only</option>
-      </select>
-      <select class="select" id="venueFilter" aria-label="Venue and promoter filter">
-        <option value="all">All venues / crews</option>
-        <option value="abyss">Abyss</option>
-        <option value="exit">EXIT</option>
-        <option value="heim">Heim</option>
-        <option value="potent">POTENT</option>
-        <option value="reactor">Reactor</option>
-        <option value="space-panda">Space Panda</option>
-        <option value="alter">ALTER</option>
-        <option value="dirty">Dirty House / INS</option>
-        <option value="illum">ILLUM / KNOT</option>
-        <option value="wigwam">Wigwam</option>
-        <option value="system">System</option>
-        <option value="void-vacuum">VOID / VACUUM</option>
-      </select>
+      <label class="filter-field">
+        <span>Search</span>
+        <input class="search" id="searchInput" type="search" placeholder="DJ, event, venue, genre">
+      </label>
+      <label class="filter-field">
+        <span>Month</span>
+        <select class="select" id="monthFilter" aria-label="Month filter">
+          <option value="all">All months</option>
+        </select>
+      </label>
+      <label class="filter-field">
+        <span>Slot status</span>
+        <select class="select" id="slotStatusFilter" aria-label="Set-time status filter">
+          <option value="all">All slot statuses</option>
+          <option value="exact">Exact only</option>
+          <option value="estimated">Estimated only</option>
+          <option value="tba">TBA only</option>
+        </select>
+      </label>
+      <label class="filter-field">
+        <span>Room / crew</span>
+        <select class="select" id="venueFilter" aria-label="Venue and promoter filter">
+          <option value="all">All venues / crews</option>
+          <option value="abyss">Abyss</option>
+          <option value="exit">EXIT</option>
+          <option value="heim">Heim</option>
+          <option value="potent">POTENT</option>
+          <option value="reactor">Reactor</option>
+          <option value="space-panda">Space Panda</option>
+          <option value="alter">ALTER</option>
+          <option value="dirty">Dirty House / INS</option>
+          <option value="illum">ILLUM / KNOT</option>
+          <option value="wigwam">Wigwam</option>
+          <option value="system">System</option>
+          <option value="void-vacuum">VOID / VACUUM</option>
+        </select>
+      </label>
     </section>
 
     <section class="planner-layout">
@@ -679,14 +768,14 @@
     </section>
 
     <footer class="footnotes">
-      Exact slots are copied from event sources when available. Estimated slots divide the listed event duration across the known lineup order and are not published running orders. Event details were checked during the June 8, 2026 source refresh.
+      Exact slots are copied from event sources when available. Estimated slots divide the listed event duration across the known lineup order and are not published running orders. Event details use the per-source checked dates stored in the latest generated data.
     </footer>
   </main>
 
   <script src="data/dj-data.js"></script>
   <script>
     const sourceData = window.DJ_SOURCE_DATA || { events: [], lineups: {}, externalDataPath: "data/events.json" };
-    const verified = sourceData.generatedAt || "2026-06-08";
+    const verified = sourceData.generatedAt || "2026-06-11";
     const externalDataPath = sourceData.externalDataPath || "data/events.json";
     const dayMs = 24 * 60 * 60 * 1000;
     const monthPairs = [
@@ -709,6 +798,13 @@
 
     let events = Array.isArray(sourceData.events) ? sourceData.events : [];
     let dateWindow = "future";
+    const dateWindowLabels = {
+      future: "upcoming",
+      all: "full 2026",
+      tonight: "tonight",
+      weekend: "this weekend",
+      next30: "next 30 days"
+    };
     const itineraryStorageKey = "shanghai-rave-calendar-itinerary-v1";
     let itinerarySlotKeys = new Set(loadItinerarySlotKeys());
 
@@ -722,6 +818,7 @@
     const selectedItinerary = document.getElementById("selectedItinerary");
     const watchList = document.getElementById("watchList");
     const resultCount = document.getElementById("resultCount");
+    const filterSummary = document.getElementById("filterSummary");
     const itineraryCount = document.getElementById("itineraryCount");
     const downloadItineraryIcs = document.getElementById("downloadItineraryIcs");
     const exportItineraryImageButton = document.getElementById("exportItineraryImage");
@@ -1133,6 +1230,11 @@
       const rows = filteredRows();
       renderStats(rows);
       resultCount.textContent = `${rows.length} shown`;
+      if (filterSummary) {
+        const exact = rows.filter(row => hasPublishedSetTime(row.slot)).length;
+        const estimated = rows.filter(row => row.slot.status === "estimated" && hasSetTime(row.slot)).length;
+        filterSummary.textContent = `${rows.length} rows / ${exact} exact / ${estimated} estimated / ${dateWindowLabels[dateWindow] || "current view"}`;
+      }
       if (!rows.length) {
         slotList.innerHTML = `<div class="empty-state">No set-time rows match the current filters.</div>`;
         renderWatchList([]);

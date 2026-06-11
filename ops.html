@@ -8,6 +8,7 @@
   <meta name="robots" content="noindex,nofollow">
   <meta name="theme-color" content="#c6ff3b">
   <link rel="canonical" href="https://shanghai-rave-calendar-2026.vercel.app/ops">
+  <link rel="icon" href="/og-image.png" type="image/png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Shanghai Rave Index">
   <meta property="og:title" content="Shanghai Rave Index Ops Console">
@@ -77,6 +78,51 @@
       width: min(1500px, calc(100% - 32px));
       margin: 0 auto;
       padding: 22px 0 48px;
+    }
+
+    .site-nav,
+    .nav-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .site-nav {
+      justify-content: space-between;
+      margin-bottom: 18px;
+      color: var(--muted);
+    }
+
+    .nav-link,
+    .tag {
+      min-height: 34px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      color: var(--muted);
+      background: rgba(17,17,14,.72);
+      padding: 7px 10px;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      line-height: 1.1;
+      transition: transform .18s ease, border-color .18s ease, color .18s ease, background .18s ease;
+    }
+
+    .tag {
+      text-transform: none;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      transform: translateY(-1px);
+      color: var(--void);
+      border-color: var(--ink);
+      background: var(--ink);
     }
 
     .topbar {
@@ -187,6 +233,46 @@
       margin: 16px 0;
     }
 
+    .operator-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+      margin: 16px 0;
+    }
+
+    .operator-card {
+      min-height: 96px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.045), rgba(255,255,255,.012)),
+        rgba(17,17,14,.82);
+      padding: 12px;
+    }
+
+    .operator-card span {
+      display: block;
+      color: var(--acid);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 7px;
+    }
+
+    .operator-card b {
+      display: block;
+      font-size: 16px;
+      line-height: 1.18;
+    }
+
+    .operator-card small {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+      margin-top: 7px;
+    }
+
     .metric {
       min-height: 92px;
       border: 1px solid var(--line);
@@ -271,6 +357,23 @@
 
     .controls .wide {
       grid-column: 1 / -1;
+    }
+
+    .control-field {
+      display: grid;
+      gap: 6px;
+      min-width: 0;
+    }
+
+    .control-field span {
+      color: var(--dim);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .control-field:focus-within span {
+      color: var(--acid);
     }
 
     .input,
@@ -607,8 +710,20 @@
       .right-column,
       .split,
       .detail-grid,
+      .operator-strip,
       .status-bar {
         grid-template-columns: 1fr;
+      }
+      .site-nav,
+      .nav-group {
+        align-items: stretch;
+      }
+      .tag {
+        width: 100%;
+      }
+      .site-nav .nav-link {
+        flex: 1 1 calc(33.333% - 8px);
+        width: auto;
       }
       h1 {
         font-size: 32px;
@@ -627,6 +742,17 @@
 </head>
 <body>
   <main class="shell">
+    <nav class="site-nav" aria-label="Site navigation">
+      <div class="nav-group">
+        <a class="nav-link" href="index.html">Calendar</a>
+        <a class="nav-link" href="planner.html">Planner</a>
+        <a class="nav-link" href="venues.html">Venues</a>
+        <a class="nav-link" href="djs.html">DJs</a>
+        <a class="nav-link active" href="ops.html">Ops</a>
+      </div>
+      <span class="tag">Local operator console</span>
+    </nav>
+
     <header class="topbar">
       <div>
         <div class="kicker">Ops workflow / Shanghai Rave Index</div>
@@ -639,6 +765,13 @@
         <button class="button" type="button" id="exportReportCsv">导出报表 CSV</button>
       </div>
     </header>
+
+    <section class="operator-strip" aria-label="Operator workflow">
+      <div class="operator-card"><span>01 Intake</span><b>AI leads stay separated by source layer</b><small>Event data, social leads, and browser-review queues remain auditable.</small></div>
+      <div class="operator-card"><span>02 Review</span><b>Approve only what can be published</b><small>Pending, needs-check, rejected, and approved states stay in local storage.</small></div>
+      <div class="operator-card"><span>03 Route</span><b>Ticket links get tracked exports</b><small>Operator-entered URLs can become routed links and CSV rows.</small></div>
+      <div class="operator-card"><span>04 Report</span><b>Distribution and paid exposure roll up</b><small>Briefs, promoter packages, and source health export cleanly.</small></div>
+    </section>
 
     <section class="status-bar" aria-label="Ops metrics">
       <div class="metric"><b id="metricEvents">0</b><span>AI 整理后的活动与线索</span></div>
@@ -657,22 +790,31 @@
         </div>
         <div class="panel-body">
           <div class="controls">
-            <input class="input wide" id="leadSearch" type="search" placeholder="搜索活动、场地、promoter、来源">
-            <select class="select" id="reviewFilter" aria-label="Review filter">
-              <option value="all">全部审核状态</option>
-              <option value="pending">待审核</option>
-              <option value="approved">已批准</option>
-              <option value="needs-check">需补充确认</option>
-              <option value="rejected">已拒绝</option>
-            </select>
-            <select class="select" id="leadTypeFilter" aria-label="Lead type filter">
-              <option value="all">全部来源层</option>
-              <option value="event">活动数据</option>
-              <option value="discovered">发现链接</option>
-              <option value="social">社媒线索</option>
-              <option value="computer-use">Computer Use</option>
-              <option value="watch">watchlist</option>
-            </select>
+            <label class="control-field wide">
+              <span>Search</span>
+              <input class="input" id="leadSearch" type="search" placeholder="搜索活动、场地、promoter、来源">
+            </label>
+            <label class="control-field">
+              <span>Review</span>
+              <select class="select" id="reviewFilter" aria-label="Review filter">
+                <option value="all">全部审核状态</option>
+                <option value="pending">待审核</option>
+                <option value="approved">已批准</option>
+                <option value="needs-check">需补充确认</option>
+                <option value="rejected">已拒绝</option>
+              </select>
+            </label>
+            <label class="control-field">
+              <span>Source</span>
+              <select class="select" id="leadTypeFilter" aria-label="Lead type filter">
+                <option value="all">全部来源层</option>
+                <option value="event">活动数据</option>
+                <option value="discovered">发现链接</option>
+                <option value="social">社媒线索</option>
+                <option value="computer-use">Computer Use</option>
+                <option value="watch">watchlist</option>
+              </select>
+            </label>
           </div>
           <div class="notice hidden" id="loadNotice"></div>
           <div class="lead-list" id="leadList" aria-live="polite"></div>
@@ -784,7 +926,7 @@
     const ticketStorageKey = "shanghai-rave-calendar-ticket-routes-v1";
     const promoStorageKey = "shanghai-rave-calendar-promoter-exposure-v1";
     const distributionStorageKey = "shanghai-rave-calendar-distribution-v1";
-    const verifiedFallback = "2026-06-08";
+    const verifiedFallback = "2026-06-11";
 
     const state = {
       payload: null,

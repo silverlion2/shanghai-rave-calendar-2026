@@ -9,6 +9,7 @@
   <meta name="theme-color" content="#c6ff3b">
   <link rel="canonical" href="https://shanghai-rave-calendar-2026.vercel.app/venues">
   <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" href="/og-image.png" type="image/png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Shanghai Rave Index">
   <meta property="og:title" content="Shanghai Rave Index Venues & Crews">
@@ -268,6 +269,65 @@
       backdrop-filter: blur(14px);
     }
 
+    .control-header {
+      grid-column: 1 / -1;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .control-kicker,
+    .filter-field span {
+      color: var(--dim);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .control-kicker {
+      display: block;
+      color: var(--acid);
+      margin-bottom: 4px;
+    }
+
+    .control-title {
+      margin: 0;
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: 22px;
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    .filter-summary {
+      min-height: 34px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(65,215,255,.35);
+      border-radius: 999px;
+      color: var(--cyan);
+      background: rgba(65,215,255,.07);
+      padding: 7px 11px;
+      font-size: 12px;
+      font-weight: 900;
+      line-height: 1.15;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .filter-field {
+      display: grid;
+      gap: 6px;
+      min-width: 0;
+    }
+
+    .filter-field:focus-within span {
+      color: var(--acid);
+    }
+
     .search,
     .select {
       width: 100%;
@@ -499,6 +559,15 @@
         grid-template-columns: 1fr;
       }
       .controls { position: static; }
+      .control-header {
+        display: grid;
+        align-items: start;
+      }
+      .filter-summary {
+        justify-content: start;
+        text-align: left;
+        white-space: normal;
+      }
       .section-heading { display: block; }
       .hero-panel b { font-size: 34px; }
     }
@@ -539,12 +608,14 @@
   <main class="shell">
     <nav class="site-nav" aria-label="Site navigation">
       <div class="nav-group">
-        <a class="nav-link" href="index.html">Shanghai Rave Index</a>
-        <a class="nav-link" href="planner.html">Set-time planner</a>
-        <a class="nav-link active" href="venues.html">Venues & crews</a>
+        <a class="nav-link" href="index.html">Calendar</a>
+        <a class="nav-link" href="planner.html">Planner</a>
+        <a class="nav-link active" href="venues.html">Venues</a>
+        <a class="nav-link" href="djs.html">DJs</a>
+        <a class="nav-link" href="ops.html">Ops</a>
       </div>
       <div class="nav-group">
-        <span class="tag">Verified as of June 8, 2026</span>
+        <span class="tag">Verified as of June 11, 2026</span>
         <span class="tag">Source-linked</span>
       </div>
     </nav>
@@ -553,7 +624,7 @@
       <div>
         <div class="kicker">Shanghai electronic music field guide</div>
         <h1>Venues, clubs, crews, and promoters</h1>
-        <p class="subhead">A practical guide to the rooms and organizations behind the 2026 calendar. The page is not a complete directory: it prioritizes places and crews that appeared in sourced 2026 listings or credible current venue coverage.</p>
+        <p class="subhead">A field guide to the rooms and crews that shape the calendar. Use it to understand where a booking will actually feel good: hard basement pressure, skyline warmups, warehouse pop-ups, or community-led club nights.</p>
       </div>
       <aside class="hero-panel" aria-label="Venue guide summary">
         <b>Pick the room before the night.</b>
@@ -569,16 +640,29 @@
     </section>
 
     <section class="controls" aria-label="Venue filters">
-      <input class="search" id="searchInput" type="search" placeholder="Search venue, crew, district, sound, note">
-      <select class="select" id="vibeFilter" aria-label="Vibe filter">
-        <option value="all">All vibes</option>
-        <option value="hard">Hard techno</option>
-        <option value="underground">Underground</option>
-        <option value="date">Date-friendly</option>
-        <option value="bass">Bass / club</option>
-        <option value="warehouse">Warehouse</option>
-        <option value="experimental">Experimental</option>
-      </select>
+      <div class="control-header">
+        <div>
+          <span class="control-kicker">Room logic</span>
+          <h2 class="control-title">Match the venue to the night you want</h2>
+        </div>
+        <div class="filter-summary" id="venueSummary" aria-live="polite">Loading venues</div>
+      </div>
+      <label class="filter-field">
+        <span>Search</span>
+        <input class="search" id="searchInput" type="search" placeholder="Venue, crew, district, sound, note">
+      </label>
+      <label class="filter-field">
+        <span>Vibe</span>
+        <select class="select" id="vibeFilter" aria-label="Vibe filter">
+          <option value="all">All vibes</option>
+          <option value="hard">Hard techno</option>
+          <option value="underground">Underground</option>
+          <option value="date">Date-friendly</option>
+          <option value="bass">Bass / club</option>
+          <option value="warehouse">Warehouse</option>
+          <option value="experimental">Experimental</option>
+        </select>
+      </label>
     </section>
 
     <section>
@@ -595,7 +679,7 @@
       <div class="section-heading">
         <div>
           <h2>Organizations & Crews</h2>
-          <p>Shanghai’s rave ecosystem is also shaped by mobile crews, promoters, labels, and recurring party concepts. These are useful search terms when calendars look empty.</p>
+          <p>Shanghai's rave ecosystem is also shaped by mobile crews, promoters, labels, and recurring party concepts. These are useful search terms when calendars look empty.</p>
         </div>
       </div>
       <div class="cards" id="crewCards"></div>
@@ -617,7 +701,7 @@
     </section>
 
     <footer class="footnotes">
-      Source notes: venue status and descriptions can change quickly. This guide uses current source links and the same June 8, 2026 verification basis as the calendar. For app-only WeChat listings, treat the page as a planning guide and verify final details directly with the venue or ticketing channel.
+      Source notes: venue status and descriptions can change quickly. This guide uses current source links and the same June 11, 2026 verification basis as the calendar. For app-only WeChat listings, treat the page as a planning guide and verify final details directly with the venue or ticketing channel.
     </footer>
   </main>
 
@@ -862,6 +946,7 @@
     const vibeFilter = document.getElementById("vibeFilter");
     const venueCards = document.getElementById("venueCards");
     const crewCards = document.getElementById("crewCards");
+    const venueSummary = document.getElementById("venueSummary");
 
     function escapeHtml(value) {
       return String(value).replace(/[&<>"']/g, char => ({
@@ -908,8 +993,13 @@
     }
 
     function render() {
-      venueCards.innerHTML = venues.filter(matches).map(renderCard).join("");
-      crewCards.innerHTML = crews.filter(matches).map(renderCard).join("");
+      const matchingVenues = venues.filter(matches);
+      const matchingCrews = crews.filter(matches);
+      venueCards.innerHTML = matchingVenues.map(renderCard).join("");
+      crewCards.innerHTML = matchingCrews.map(renderCard).join("");
+      if (venueSummary) {
+        venueSummary.textContent = `${matchingVenues.length} venues / ${matchingCrews.length} crews`;
+      }
       if (!venueCards.innerHTML) venueCards.innerHTML = `<p class="copy">No venues match the current filters.</p>`;
       if (!crewCards.innerHTML) crewCards.innerHTML = `<p class="copy">No crews match the current filters.</p>`;
     }

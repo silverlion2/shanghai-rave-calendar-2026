@@ -9,6 +9,7 @@
   <meta name="theme-color" content="#c6ff3b">
   <link rel="canonical" href="https://shanghai-rave-calendar-2026.vercel.app/djs">
   <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" href="/og-image.png" type="image/png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Shanghai Rave Index">
   <meta property="og:title" content="Shanghai Rave Index DJ Database">
@@ -245,6 +246,67 @@
       grid-template-columns: minmax(260px, 1.2fr) repeat(3, minmax(150px, .6fr));
       gap: 8px;
       margin: 18px 0;
+    }
+
+    .control-header {
+      grid-column: 1 / -1;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(8,8,6,.74);
+    }
+
+    .control-kicker,
+    .filter-field span {
+      color: var(--dim);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .control-kicker {
+      display: block;
+      color: var(--acid);
+      margin-bottom: 4px;
+    }
+
+    .control-title {
+      margin: 0;
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: 22px;
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    .filter-summary {
+      min-height: 34px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(65,215,255,.35);
+      border-radius: 999px;
+      color: var(--cyan);
+      background: rgba(65,215,255,.07);
+      padding: 7px 11px;
+      font-size: 12px;
+      font-weight: 900;
+      line-height: 1.15;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .filter-field {
+      display: grid;
+      gap: 6px;
+      min-width: 0;
+    }
+
+    .filter-field:focus-within span {
+      color: var(--acid);
     }
 
     .search,
@@ -757,10 +819,13 @@
       .source-note {
         align-items: stretch;
       }
-      .nav-link,
       .tag,
       .pill {
         width: 100%;
+      }
+      .site-nav .nav-link {
+        flex: 1 1 calc(33.333% - 8px);
+        width: auto;
       }
       h1 { font-size: 40px; }
       .subhead { font-size: 16px; }
@@ -773,6 +838,15 @@
       .world-itinerary-row,
       .roster-grid {
         grid-template-columns: 1fr;
+      }
+      .control-header {
+        display: grid;
+        align-items: start;
+      }
+      .filter-summary {
+        justify-content: start;
+        text-align: left;
+        white-space: normal;
       }
       .profile-avatar {
         width: 118px;
@@ -788,19 +862,20 @@
   <main class="shell">
     <nav class="site-nav" aria-label="Site navigation">
       <div class="nav-group">
-        <a class="nav-link" href="index.html">Shanghai Rave Index</a>
-        <a class="nav-link" href="planner.html">Set-time planner</a>
-        <a class="nav-link" href="venues.html">Venue & crew guide</a>
-        <a class="nav-link active" href="djs.html">DJ database</a>
+        <a class="nav-link" href="index.html">Calendar</a>
+        <a class="nav-link" href="planner.html">Planner</a>
+        <a class="nav-link" href="venues.html">Venues</a>
+        <a class="nav-link active" href="djs.html">DJs</a>
+        <a class="nav-link" href="ops.html">Ops</a>
       </div>
-      <span class="tag" id="checkedTag">Checked June 8, 2026</span>
+      <span class="tag" id="checkedTag">Checked 2026-06-11</span>
     </nav>
 
     <header class="hero">
       <div>
         <div class="kicker">Paired performer database</div>
         <h1>Shanghai Rave Index DJ database</h1>
-        <p class="subhead">A searchable performer layer for the rave calendar, pairing each DJ with appearances, source status, venue context, and exact or estimated set-time slots.</p>
+        <p class="subhead">A performer layer for deciding who is worth crossing town for. Profiles connect each DJ to Shanghai appearances, itinerary context, source confidence, and exact or estimated set-time slots.</p>
         <div class="source-note">
           <span class="pill">Calendar-linked profiles</span>
           <span class="pill">Exact and estimated slots flagged</span>
@@ -821,27 +896,46 @@
     </section>
 
     <section class="controls" aria-label="DJ database filters">
-      <input class="search" id="djSearch" type="search" placeholder="Search DJ, event, venue, sound">
-      <select class="select" id="soundFilter" aria-label="Sound filter">
-        <option value="all">All sounds</option>
-        <option value="techno">Techno</option>
-        <option value="hard">Hard / industrial</option>
-        <option value="experimental">Experimental</option>
-        <option value="bass">Bass / club</option>
-        <option value="date">Date-friendly</option>
-        <option value="live">Live / A/V</option>
-      </select>
-      <select class="select" id="monthFilter" aria-label="Month filter">
-        <option value="all">All months</option>
-      </select>
-      <select class="select" id="statusFilter" aria-label="Status filter">
-        <option value="all">All statuses</option>
-        <option value="upcoming">Upcoming</option>
-        <option value="watch">Watchlist</option>
-        <option value="past">Past archive</option>
-        <option value="exact">Exact set time</option>
-        <option value="estimated">Estimated set time</option>
-      </select>
+      <div class="control-header">
+        <div>
+          <span class="control-kicker">Performer map</span>
+          <h2 class="control-title">Find artists by sound, timing, and confidence</h2>
+        </div>
+        <div class="filter-summary" id="djSummary" aria-live="polite">Loading profiles</div>
+      </div>
+      <label class="filter-field">
+        <span>Search</span>
+        <input class="search" id="djSearch" type="search" placeholder="DJ, event, venue, sound">
+      </label>
+      <label class="filter-field">
+        <span>Sound</span>
+        <select class="select" id="soundFilter" aria-label="Sound filter">
+          <option value="all">All sounds</option>
+          <option value="techno">Techno</option>
+          <option value="hard">Hard / industrial</option>
+          <option value="experimental">Experimental</option>
+          <option value="bass">Bass / club</option>
+          <option value="date">Date-friendly</option>
+          <option value="live">Live / A/V</option>
+        </select>
+      </label>
+      <label class="filter-field">
+        <span>Month</span>
+        <select class="select" id="monthFilter" aria-label="Month filter">
+          <option value="all">All months</option>
+        </select>
+      </label>
+      <label class="filter-field">
+        <span>Status</span>
+        <select class="select" id="statusFilter" aria-label="Status filter">
+          <option value="all">All statuses</option>
+          <option value="upcoming">Upcoming</option>
+          <option value="watch">Watchlist</option>
+          <option value="past">Past archive</option>
+          <option value="exact">Exact set time</option>
+          <option value="estimated">Estimated set time</option>
+        </select>
+      </label>
     </section>
 
     <section class="database-layout">
@@ -876,7 +970,7 @@
   <script>
     const sourceData = window.DJ_SOURCE_DATA || { events: [], lineups: {}, externalDataPath: "data/events.json" };
     const trackedProfiles = window.DJ_ITINERARY_DATA || sourceData.trackedProfiles || {};
-    const verified = "2026-06-08";
+    const verified = "2026-06-11";
     const monthPairs = [["Jan", "January"], ["Feb", "February"], ["Mar", "March"], ["Apr", "April"], ["May", "May"], ["Jun", "June"], ["Jul", "July"], ["Aug", "August"], ["Sep", "September"], ["Oct", "October"], ["Nov", "November"], ["Dec", "December"]];
     const monthNames = Object.fromEntries(monthPairs);
     const themeColors = {
@@ -899,6 +993,7 @@
     const rosterGrid = document.getElementById("rosterGrid");
     const profilePanel = document.getElementById("profilePanel");
     const resultCount = document.getElementById("resultCount");
+    const djSummary = document.getElementById("djSummary");
     const clearFilters = document.getElementById("clearFilters");
 
     function escapeHtml(value) {
@@ -1717,6 +1812,11 @@
         selectedSlug = list[0].slug;
       }
       renderStats();
+      if (djSummary) {
+        const exact = list.filter(profile => profile.exactSlotCount > 0).length;
+        const future = list.filter(profile => profile.itineraryFutureCount > 0).length;
+        djSummary.textContent = `${list.length} profiles / ${exact} exact slots / ${future} future`;
+      }
       renderDirectory(list);
       renderProfile();
       renderRoster(list);
