@@ -904,8 +904,8 @@ input:focus {
   .source-note,
   .controls,
   .section-heading {
-    width: min(342px, calc(100vw - 28px)) !important;
-    max-width: min(342px, calc(100vw - 28px)) !important;
+    width: calc(100vw - 32px) !important;
+    max-width: calc(100vw - 32px) !important;
   }
 
   .month-rail {
@@ -914,6 +914,253 @@ input:focus {
 
   #calendar .cards {
     grid-auto-columns: minmax(212px, 82vw);
+  }
+}
+
+@media (max-width: 640px) {
+  .calendar-shell {
+    overflow: visible !important;
+    padding-top: 12px !important;
+  }
+
+  .calendar-shell > .primary-nav {
+    gap: 6px;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+  }
+
+  .calendar-shell > .primary-nav::before {
+    min-height: 30px;
+    font-size: 25px;
+  }
+
+  .calendar-shell > .primary-nav .nav-link {
+    min-height: 32px;
+    padding: 6px 9px;
+    font-size: 13px !important;
+  }
+
+  .calendar-shell .topbar {
+    gap: 14px;
+    padding-bottom: 16px;
+  }
+
+  .calendar-shell .kicker {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .calendar-shell h1 {
+    font-size: clamp(54px, 15.6vw, 66px) !important;
+    line-height: .84 !important;
+  }
+
+  .calendar-shell .dispatch-strip {
+    margin: 10px 0 14px;
+    font-size: 15px;
+  }
+
+  .calendar-shell .subhead {
+    font-size: 15px !important;
+    line-height: 1.45;
+  }
+
+  .calendar-shell .hero-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 7px;
+    margin-top: 16px;
+  }
+
+  .calendar-shell .hero-button {
+    width: 100%;
+    min-height: 40px;
+    padding: 8px 9px;
+    font-size: 13px !important;
+  }
+
+  .calendar-shell .hero-picture {
+    max-width: none !important;
+    aspect-ratio: 16 / 6 !important;
+  }
+
+  .calendar-shell .hero-picture::after {
+    inset: auto 8px 8px 8px;
+    padding: 7px 9px;
+    font-size: 12px;
+  }
+
+  .calendar-shell .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+    margin: 16px 0 18px !important;
+  }
+
+  .calendar-shell .stat {
+    min-height: 104px;
+    border-width: 1px !important;
+    padding: 12px;
+  }
+
+  .calendar-shell .stat b {
+    margin-bottom: 7px;
+    font-size: 34px !important;
+  }
+
+  .calendar-shell .stat span {
+    font-size: 11px !important;
+    line-height: 1.22;
+  }
+
+  .calendar-shell .highlight-heading {
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .calendar-shell .highlight-heading span {
+    min-height: 38px;
+    padding: 8px 12px;
+    font-size: 21px;
+  }
+
+  .calendar-shell .highlight-view-all {
+    min-width: 74px;
+    font-size: 13px;
+    line-height: 1.05;
+    text-align: right;
+  }
+
+  .calendar-shell .highlight-heading::after {
+    content: none;
+  }
+
+  .calendar-shell .highlight-list {
+    grid-template-columns: none !important;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(230px, 76vw);
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    padding-bottom: 8px;
+  }
+
+  .calendar-shell .highlight-list,
+  .calendar-shell .quick-actions,
+  .calendar-shell .month-rail {
+    scrollbar-color: rgba(54, 199, 231, .78) rgba(229, 222, 209, .12);
+    scrollbar-width: thin;
+  }
+
+  .calendar-shell .highlight-list::-webkit-scrollbar,
+  .calendar-shell .quick-actions::-webkit-scrollbar,
+  .calendar-shell .month-rail::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .calendar-shell .highlight-list::-webkit-scrollbar-track,
+  .calendar-shell .quick-actions::-webkit-scrollbar-track,
+  .calendar-shell .month-rail::-webkit-scrollbar-track {
+    background: rgba(229, 222, 209, .12);
+  }
+
+  .calendar-shell .highlight-list::-webkit-scrollbar-thumb,
+  .calendar-shell .quick-actions::-webkit-scrollbar-thumb,
+  .calendar-shell .month-rail::-webkit-scrollbar-thumb {
+    background: rgba(54, 199, 231, .78);
+  }
+
+  .calendar-shell .highlight-card {
+    min-height: 318px;
+    scroll-snap-align: start;
+  }
+
+  .calendar-shell .highlight-card b {
+    font-size: 25px;
+  }
+
+  .calendar-shell .paper-route {
+    margin-top: 10px;
+    padding: 14px;
+  }
+
+  .calendar-shell .paper-route > p {
+    margin-bottom: 8px;
+  }
+
+  .calendar-shell .controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px;
+    margin: 14px 0 12px;
+    padding: 10px !important;
+  }
+
+  .calendar-shell .control-header {
+    grid-column: 1 / -1;
+    gap: 10px;
+    padding-bottom: 8px;
+  }
+
+  .calendar-shell .control-title {
+    font-size: 21px;
+  }
+
+  .calendar-shell .filter-summary {
+    min-height: 30px;
+    padding: 6px 8px;
+    font-size: 11px;
+  }
+
+  .calendar-shell .quick-actions {
+    grid-column: 1 / -1;
+    flex-wrap: nowrap;
+    gap: 6px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    padding-bottom: 4px;
+  }
+
+  .calendar-shell .quick-filter {
+    flex: 0 0 auto;
+    min-height: 33px;
+    padding: 7px 10px;
+    font-size: 12px !important;
+    white-space: nowrap;
+  }
+
+  .calendar-shell .filter-field {
+    gap: 4px;
+  }
+
+  .calendar-shell .filter-field:first-of-type,
+  .calendar-shell .controls .filter-field:nth-of-type(4) {
+    grid-column: 1 / -1;
+  }
+
+  .calendar-shell .filter-field span {
+    font-size: 10px;
+  }
+
+  .calendar-shell .search,
+  .calendar-shell .select {
+    min-height: 40px;
+    padding: 0 9px;
+    font-size: 12px;
+  }
+
+  .calendar-shell .month-rail {
+    grid-template-columns: none !important;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(70px, 22vw);
+    gap: 6px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    margin-bottom: 16px;
+    padding-bottom: 4px;
+  }
+
+  .calendar-shell .month-button {
+    min-height: 40px !important;
+    font-size: 17px !important;
   }
 }
 
