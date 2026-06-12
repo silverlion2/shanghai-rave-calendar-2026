@@ -1429,7 +1429,28 @@
     }
 
     .modal-content {
+      position: relative;
       padding: 22px;
+    }
+
+    .modal-back-button {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      width: max-content;
+      min-height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: -2px 0 14px;
+      border: 1px solid var(--cyan);
+      border-radius: 6px;
+      color: var(--void);
+      background: var(--cyan);
+      padding: 10px 14px;
+      font-weight: 900;
+      text-transform: uppercase;
+      cursor: pointer;
     }
 
     .modal-content h2 {
@@ -1798,7 +1819,6 @@
       <a class="nav-link" href="planner.html">Planner</a>
       <a class="nav-link" href="venues.html">Venues</a>
       <a class="nav-link" href="djs.html">DJs</a>
-      <a class="nav-link" href="ops.html">Ops</a>
     </nav>
 
     <header class="topbar">
@@ -1929,6 +1949,25 @@
 
     <section class="home-poster-rail" id="homePosterRail" aria-label="Poster-only event strip"></section>
 
+    <section class="bottom-stat-stack" aria-label="Calendar totals">
+      <div class="bottom-stat-row">
+        <b id="bottomStatEvents">0</b>
+        <span>Sourced events and leads across 2026</span>
+      </div>
+      <div class="bottom-stat-row">
+        <b id="bottomStatUpcoming">0</b>
+        <span>Upcoming confirmed or single-source entries after June 11</span>
+      </div>
+      <div class="bottom-stat-row">
+        <b id="bottomStatTop">0</b>
+        <span>High-confidence techno or rave picks</span>
+      </div>
+      <div class="bottom-stat-row">
+        <b>6</b>
+        <span>Late-year watchlist months without reliable full calendars yet</span>
+      </div>
+    </section>
+
     <footer class="footnotes bottom-dispatch-bar" aria-label="Basement Dispatch status">
       <div class="bar-cell update-cell">
         <span class="footer-alert-mark" aria-hidden="true">!</span>
@@ -1947,6 +1986,10 @@
         <span>Information is aggregated from public sources and may change.</span>
         <span>Support the scene. Go out. Be kind.</span>
       </div>
+      <a class="bar-cell ops-cell" href="ops.html" aria-label="Open Ops desk">
+        <span>Ops desk</span>
+        <b>Review queue -></b>
+      </a>
       <div class="bar-cell source-cell">
         <span>Source first</span>
         <span>Rave second</span>
@@ -1959,6 +2002,7 @@
       <div class="modal-hero">
         <img id="modalPoster" src="assets/posters/santa-k-optimized.jpg" alt="">
         <div class="modal-content">
+          <button class="modal-back-button" type="button" aria-label="Back to calendar">&lt;- Back to calendar</button>
           <h2 id="modalTitle"></h2>
           <div class="modal-meta" id="modalMeta"></div>
           <p class="description" id="modalDescription"></p>
@@ -4104,6 +4148,7 @@
       modal.classList.remove("open");
     }
 
+    modal.querySelector(".modal-back-button").addEventListener("click", closeModal);
     modal.addEventListener("click", event => {
       if (event.target === modal) closeModal();
     });
@@ -4261,6 +4306,9 @@
       document.getElementById("statEvents").textContent = events.length;
       document.getElementById("statUpcoming").textContent = upcoming;
       document.getElementById("statTop").textContent = top;
+      document.getElementById("bottomStatEvents").textContent = events.length;
+      document.getElementById("bottomStatUpcoming").textContent = upcoming;
+      document.getElementById("bottomStatTop").textContent = top;
       if (filterSummary) {
         const entryLabel = visible.length === 1 ? "entry" : "entries";
         const activeMonthCount = activeMonth ? visible.filter(event => event.month === activeMonth).length : visible.length;

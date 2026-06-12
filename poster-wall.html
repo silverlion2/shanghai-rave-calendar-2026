@@ -386,10 +386,31 @@
     }
 
     .modal-body {
+      position: relative;
       padding: 22px;
       display: grid;
       gap: 14px;
       align-content: start;
+    }
+
+    .modal-back-button {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      width: max-content;
+      min-height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--cyan);
+      color: var(--void);
+      background: var(--cyan);
+      padding: 9px 12px;
+      font-family: var(--font-display);
+      font-size: 15px;
+      font-weight: 900;
+      text-transform: uppercase;
+      cursor: pointer;
     }
 
     .modal-body h2 {
@@ -531,6 +552,7 @@
     <div class="modal-card">
       <img id="modalPoster" src="assets/posters/santa-k-optimized.jpg" alt="">
       <div class="modal-body">
+        <button class="modal-back-button" type="button" id="posterModalBack" aria-label="Back to wall">&lt;- Back to wall</button>
         <h2 id="modalTitle"></h2>
         <p id="modalCopy"></p>
         <div class="modal-facts" id="modalFacts"></div>
@@ -743,6 +765,7 @@
       control.addEventListener("input", render);
       control.addEventListener("change", render);
     });
+    document.getElementById("posterModalBack").addEventListener("click", closeModal);
     document.getElementById("closeModal").addEventListener("click", closeModal);
     modal.addEventListener("click", event => {
       if (event.target === modal) closeModal();
