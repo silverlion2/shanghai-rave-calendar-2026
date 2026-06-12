@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Poster Wall | Shanghai Rave Index</title>
+  <meta name="description" content="A waterfall event-card wall for sourced Shanghai rave, techno, club, and underground electronic events.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#36c7e7">
+  <link rel="canonical" href="https://raveindexsh.top/poster-wall.html">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" href="/og-image.png" type="image/png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shanghai Rave Index">
+  <meta property="og:title" content="Poster Wall | Shanghai Rave Index">
+  <meta property="og:description" content="Waterfall event-card wall for Shanghai underground electronic events.">
+  <meta property="og:url" content="https://raveindexsh.top/poster-wall.html">
+  <meta property="og:image" content="https://raveindexsh.top/og-image.png">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;900&family=IBM+Plex+Mono:wght@400;500;700&display=swap");
+
+    :root {
+      color-scheme: dark;
+      --ink: #ece8dd;
+      --paper: #e5ded1;
+      --muted: #aaa59b;
+      --void: #050606;
+      --panel: #090b0b;
+      --line: #3a3d3b;
+      --cyan: #36c7e7;
+      --gold: #d7a928;
+      --ember: #ff552f;
+      --font-display: "Barlow Condensed", "Impact", "Haettenschweiler", sans-serif;
+      --font-mono: "IBM Plex Mono", "Cascadia Mono", "Consolas", monospace;
+    }
+
+    * { box-sizing: border-box; letter-spacing: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 38% 3%, rgba(255, 255, 255, .045), transparent 26%),
+        repeating-linear-gradient(0deg, rgba(255, 255, 255, .026) 0 1px, transparent 1px 5px),
+        repeating-linear-gradient(90deg, rgba(255, 255, 255, .018) 0 1px, transparent 1px 34px),
+        #050606;
+      color: var(--ink);
+      font-family: var(--font-mono);
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      opacity: .36;
+      background:
+        radial-gradient(circle at 20% 12%, rgba(255, 255, 255, .08), transparent 18%),
+        repeating-linear-gradient(110deg, rgba(255, 255, 255, .035) 0 1px, transparent 1px 17px);
+      mix-blend-mode: screen;
+    }
+
+    a { color: inherit; }
+
+    button,
+    input,
+    select { font: inherit; }
+
+    .shell {
+      width: min(1480px, calc(100% - 44px));
+      margin: 0 auto;
+      padding: 16px 0 48px;
+    }
+
+    .primary-nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 26px;
+      margin: 0 0 22px;
+      padding: 0 0 8px;
+    }
+
+    .nav-link {
+      min-height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 0;
+      border-bottom: 2px solid transparent;
+      color: var(--paper);
+      background: transparent;
+      padding: 0 2px;
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 1;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--cyan);
+      border-bottom-color: var(--cyan);
+    }
+
+    .wall-head {
+      display: grid;
+      grid-template-columns: minmax(280px, 390px) minmax(0, 1fr);
+      gap: 24px;
+      align-items: end;
+      margin-bottom: 20px;
+    }
+
+    .kicker {
+      margin: 0 0 12px;
+      color: var(--cyan);
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 390px;
+      margin: 0;
+      color: var(--paper);
+      font-family: var(--font-display);
+      font-size: clamp(64px, 9vw, 132px);
+      font-weight: 900;
+      line-height: .78;
+      text-transform: uppercase;
+    }
+
+    .dispatch-strip {
+      display: inline-block;
+      margin: 10px 0 0;
+      padding: 6px 10px;
+      color: var(--void);
+      background: var(--paper);
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+      transform: rotate(-1deg);
+    }
+
+    .wall-copy {
+      max-width: 760px;
+      margin: 0;
+      color: var(--paper);
+      font-size: 15px;
+      line-height: 1.45;
+    }
+
+    .wall-controls {
+      display: grid;
+      grid-template-columns: minmax(280px, 1fr) 220px 190px;
+      gap: 14px;
+      margin: 22px 0 20px;
+    }
+
+    .search,
+    .select {
+      width: 100%;
+      min-height: 46px;
+      border: 1px solid rgba(229, 222, 209, .35);
+      border-radius: 0;
+      color: var(--paper);
+      background: rgba(5, 6, 6, .78);
+      padding: 0 12px;
+      outline: none;
+    }
+
+    .search:focus,
+    .select:focus {
+      border-color: var(--cyan);
+      box-shadow: 0 0 0 2px rgba(54, 199, 231, .18);
+    }
+
+    .wall-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 12px;
+      border-top: 1px solid rgba(229, 222, 209, .22);
+      padding-top: 12px;
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    .wall-meta b {
+      color: var(--cyan);
+      font-family: var(--font-display);
+      font-size: 26px;
+      line-height: 1;
+    }
+
+    .poster-waterfall {
+      columns: 260px 5;
+      column-gap: 12px;
+    }
+
+    .wall-card {
+      width: 100%;
+      display: inline-block;
+      break-inside: avoid;
+      margin: 0 0 12px;
+      overflow: hidden;
+      border: 1px solid rgba(229, 222, 209, .24);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, .024), rgba(0, 0, 0, .14)),
+        #070808;
+      color: var(--paper);
+      cursor: pointer;
+    }
+
+    .wall-card:hover,
+    .wall-card:focus-visible {
+      border-color: var(--cyan);
+      outline: 0;
+    }
+
+    .wall-card-poster {
+      position: relative;
+      aspect-ratio: 3 / 4;
+      border-bottom: 1px solid rgba(229, 222, 209, .16);
+      background: #020303;
+    }
+
+    .wall-card-poster img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      filter: grayscale(.2) contrast(1.14) brightness(.82);
+    }
+
+    .wall-card:nth-child(2n) .wall-card-poster img {
+      filter: grayscale(.42) sepia(.26) hue-rotate(330deg) saturate(1.35) contrast(1.22) brightness(.72);
+    }
+
+    .wall-card:hover .wall-card-poster img,
+    .wall-card:focus-visible .wall-card-poster img {
+      filter: contrast(1.2) brightness(.96);
+    }
+
+    .status-pin {
+      position: absolute;
+      right: 0;
+      top: 0;
+      min-width: 52px;
+      min-height: 34px;
+      display: grid;
+      place-items: center;
+      color: var(--void);
+      background: var(--cyan);
+      font-family: var(--font-display);
+      font-size: 15px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .wall-card-body {
+      display: grid;
+      gap: 8px;
+      padding: 12px;
+    }
+
+    .wall-card-top,
+    .wall-source {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.15;
+      text-transform: uppercase;
+    }
+
+    .wall-card h2 {
+      margin: 0;
+      color: var(--paper);
+      font-family: var(--font-display);
+      font-size: 28px;
+      font-weight: 900;
+      line-height: .92;
+      text-transform: uppercase;
+    }
+
+    .wall-venue,
+    .wall-description {
+      margin: 0;
+      line-height: 1.35;
+    }
+
+    .wall-venue {
+      color: var(--cyan);
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    .wall-description {
+      display: -webkit-box;
+      overflow: hidden;
+      color: var(--muted);
+      font-size: 12px;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+    }
+
+    .wall-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .wall-chip {
+      border: 1px solid rgba(229, 222, 209, .2);
+      color: var(--paper);
+      padding: 4px 6px;
+      font-size: 10px;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .wall-chip.confidence {
+      border-color: var(--cyan);
+      color: var(--cyan);
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .wall-source {
+      border-top: 1px solid rgba(229, 222, 209, .14);
+      padding-top: 8px;
+    }
+
+    .empty {
+      border: 1px solid rgba(229, 222, 209, .24);
+      padding: 28px;
+      color: var(--muted);
+      background: rgba(5, 6, 6, .72);
+    }
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      z-index: 50;
+      display: none;
+      place-items: center;
+      padding: 22px;
+      background: rgba(0, 0, 0, .78);
+    }
+
+    .modal.open { display: grid; }
+
+    .modal-card {
+      width: min(980px, 100%);
+      max-height: min(92vh, 920px);
+      display: grid;
+      grid-template-columns: minmax(260px, .88fr) minmax(260px, .72fr);
+      overflow: auto;
+      border: 1px solid rgba(229, 222, 209, .32);
+      background: #070808;
+    }
+
+    .modal-card img {
+      width: 100%;
+      height: 100%;
+      min-height: 420px;
+      object-fit: contain;
+      background: #020303;
+    }
+
+    .modal-body {
+      padding: 22px;
+      display: grid;
+      gap: 14px;
+      align-content: start;
+    }
+
+    .modal-body h2 {
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: clamp(34px, 4vw, 58px);
+      line-height: .88;
+      text-transform: uppercase;
+    }
+
+    .modal-body p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .modal-facts {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .fact {
+      border: 1px solid rgba(229, 222, 209, .18);
+      padding: 9px;
+    }
+
+    .fact span {
+      display: block;
+      color: var(--dim, #77746c);
+      font-size: 10px;
+      text-transform: uppercase;
+    }
+
+    .fact b {
+      color: var(--paper);
+      font-size: 13px;
+      line-height: 1.2;
+    }
+
+    .modal-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .button {
+      min-height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(229, 222, 209, .3);
+      color: var(--paper);
+      background: transparent;
+      padding: 9px 12px;
+      font-family: var(--font-display);
+      font-size: 15px;
+      font-weight: 900;
+      text-decoration: none;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .button.primary {
+      color: var(--void);
+      border-color: var(--cyan);
+      background: var(--cyan);
+    }
+
+    @media (max-width: 1180px) {
+      .poster-waterfall { column-count: 4; }
+    }
+
+    @media (max-width: 820px) {
+      .shell { width: min(100% - 28px, 720px); }
+      .primary-nav { justify-content: flex-start; gap: 15px; overflow-x: auto; }
+      .wall-head { grid-template-columns: 1fr; }
+      .wall-controls { grid-template-columns: 1fr; }
+      .poster-waterfall { column-count: 2; column-gap: 10px; }
+      .modal-card { grid-template-columns: 1fr; }
+      .modal-card img { min-height: 0; }
+    }
+
+    @media (max-width: 460px) {
+      h1 { font-size: 64px; }
+      .poster-waterfall { column-count: 1; }
+      .modal-facts { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <nav class="primary-nav" aria-label="Primary">
+      <a class="nav-link" href="index.html">Calendar</a>
+      <a class="nav-link active" href="poster-wall.html">Wall</a>
+      <a class="nav-link" href="planner.html">Planner</a>
+      <a class="nav-link" href="venues.html">Venues</a>
+      <a class="nav-link" href="djs.html">DJs</a>
+      <a class="nav-link" href="ops.html">Ops</a>
+    </nav>
+
+    <header class="wall-head">
+      <div>
+        <p class="kicker">Waterfall event guide</p>
+        <h1>Poster Wall</h1>
+        <p class="dispatch-strip">Basement Dispatch / full event cards</p>
+      </div>
+      <p class="wall-copy">A standalone waterfall of sourced Shanghai club events. Each card keeps the poster, date, venue, sound, status, and source confidence visible for fast scanning.</p>
+    </header>
+
+    <section class="wall-controls" aria-label="Event wall filters">
+      <input class="search" id="searchInput" type="search" placeholder="Filter event wall">
+      <select class="select" id="statusFilter" aria-label="Status filter">
+        <option value="upcoming">Upcoming events</option>
+        <option value="all">All event dates</option>
+        <option value="past">Past archive</option>
+      </select>
+      <select class="select" id="vibeFilter" aria-label="Vibe filter">
+        <option value="all">All vibes</option>
+        <option value="hard">Hard techno</option>
+        <option value="underground">Underground</option>
+        <option value="date">Date-friendly</option>
+        <option value="experimental">Experimental</option>
+        <option value="bass">Bass / club</option>
+        <option value="warehouse">Warehouse</option>
+      </select>
+    </section>
+
+    <div class="wall-meta" aria-live="polite">
+      <span><b id="posterCount">0</b> event cards</span>
+      <span id="posterScope">loading</span>
+    </div>
+
+    <section class="poster-waterfall" id="posterWall" aria-label="Event-card waterfall"></section>
+  </main>
+
+  <div class="modal" id="posterModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <img id="modalPoster" src="assets/posters/santa-k-optimized.jpg" alt="">
+      <div class="modal-body">
+        <h2 id="modalTitle"></h2>
+        <p id="modalCopy"></p>
+        <div class="modal-facts" id="modalFacts"></div>
+        <div class="modal-actions">
+          <a class="button primary" id="modalSource" href="#" target="_blank" rel="noreferrer">Source</a>
+          <button class="button" type="button" id="closeModal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const verified = "2026-06-11";
+    const today = (() => {
+      const [year, month, day] = verified.split("-").map(Number);
+      return new Date(year, month - 1, day);
+    })();
+
+    const posterUrlOverrides = {
+      "milo-cosmjn": "assets/posters/milo-cosmjn.jpg",
+      "fruitygroove-soul-navigator": "assets/posters/fruitygroove-soul-navigator.png",
+      "matisa-limsum": "assets/posters/matisa-limsum.jpg",
+      "kollin": "assets/posters/kollin.jpg",
+      "horizon": "assets/posters/horizon.jpg",
+      "nosaj-thing": "assets/posters/nosaj-thing.png",
+      "santa-k": "assets/posters/santa-k.png",
+      "synth-crush": "assets/posters/synth-crush.jpg",
+      "nova-sunset-sessions-flair": "assets/posters/nova-sunset-sessions-flair.jpg",
+      "alter-pavillon": "assets/posters/alter-pavillon.png",
+      "night-at-museum-90s-disco": "assets/posters/night-at-museum-90s-disco.jpg",
+      "photocult-mask-desire-auction": "assets/posters/photocult-mask-desire-auction.png",
+      "mrd": "assets/posters/mrd.png",
+      "afrowave-takeover-la-burg": "assets/posters/afrowave-takeover-la-burg.jpg",
+      "dark-room": "assets/posters/dark-room.jpg",
+      "nova-summer-splash-pool-party": "assets/posters/nova-summer-splash-pool-party.jpg",
+      "sunset-sundays-dome": "assets/posters/sunset-sundays-dome.jpg"
+    };
+
+    const optimizedPosterUrlOverrides = {
+      "assets/posters/alter-pavillon.png": "assets/posters/alter-pavillon-optimized.jpg",
+      "assets/posters/cltx-abyss.jpg": "assets/posters/cltx-abyss-optimized.jpg",
+      "assets/posters/cyber-buddha.jpg": "assets/posters/cyber-buddha-optimized.jpg",
+      "assets/posters/dark-room.jpg": "assets/posters/dark-room-optimized.jpg",
+      "assets/posters/fruitygroove-soul-navigator.png": "assets/posters/fruitygroove-soul-navigator-optimized.jpg",
+      "assets/posters/horizon.jpg": "assets/posters/horizon-optimized.jpg",
+      "assets/posters/kollin.jpg": "assets/posters/kollin-optimized.jpg",
+      "assets/posters/matisa-limsum.jpg": "assets/posters/matisa-limsum-optimized.jpg",
+      "assets/posters/milo-cosmjn.jpg": "assets/posters/milo-cosmjn-optimized.jpg",
+      "assets/posters/mrd.png": "assets/posters/mrd-optimized.jpg",
+      "assets/posters/nosaj-thing.png": "assets/posters/nosaj-thing-optimized.jpg",
+      "assets/posters/photocult-mask-desire-auction.png": "assets/posters/photocult-mask-desire-auction-optimized.jpg",
+      "assets/posters/santa-k.png": "assets/posters/santa-k-optimized.jpg",
+      "assets/posters/synth-crush.jpg": "assets/posters/synth-crush-optimized.jpg",
+      "assets/posters/the-woods.jpg": "assets/posters/the-woods-optimized.jpg"
+    };
+
+    let events = [];
+    const wall = document.getElementById("posterWall");
+    const searchInput = document.getElementById("searchInput");
+    const statusFilter = document.getElementById("statusFilter");
+    const vibeFilter = document.getElementById("vibeFilter");
+    const posterCount = document.getElementById("posterCount");
+    const posterScope = document.getElementById("posterScope");
+    const modal = document.getElementById("posterModal");
+
+    function escapeHtml(value) {
+      return String(value ?? "").replace(/[&<>"']/g, char => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#039;"
+      }[char]));
+    }
+
+    function posterUrl(event) {
+      const raw = posterUrlOverrides[event.id] || event.posterUrl || event.posterImageUrl || event.imageUrl || "";
+      return optimizedPosterUrlOverrides[raw] || raw;
+    }
+
+    function svgText(value, max = 80) {
+      return escapeHtml(String(value ?? "").slice(0, max));
+    }
+
+    function posterSvg(event) {
+      const palettes = {
+        acid: ["#36c7e7", "#050606", "#d7a928", "#ece8dd"],
+        ember: ["#ff552f", "#050606", "#36c7e7", "#ece8dd"],
+        cyan: ["#36c7e7", "#050606", "#ff552f", "#ece8dd"],
+        rose: ["#ff552f", "#070507", "#d7a928", "#ece8dd"],
+        gold: ["#d7a928", "#050606", "#36c7e7", "#ece8dd"]
+      };
+      const p = palettes[event.imageTheme] || palettes.cyan;
+      const svg = `
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200">
+          <rect width="900" height="1200" fill="${p[1]}"/>
+          <path d="M0 190h900M0 420h900M0 780h900M120 0v1200M480 0v1200M770 0v1200" stroke="${p[3]}" stroke-opacity=".14" stroke-width="3"/>
+          <rect x="54" y="58" width="792" height="1084" fill="none" stroke="${p[0]}" stroke-width="8"/>
+          <rect x="92" y="96" width="250" height="58" fill="${p[0]}"/>
+          <text x="114" y="136" fill="${p[1]}" font-family="Arial Black, Impact, sans-serif" font-size="34">BASEMENT</text>
+          <text x="90" y="280" fill="${p[3]}" font-family="Arial Black, Impact, sans-serif" font-size="78">${svgText(event.title, 42)}</text>
+          <text x="92" y="392" fill="${p[0]}" font-family="Consolas, monospace" font-size="34">${svgText(event.date)} / ${svgText(event.time)}</text>
+          <text x="92" y="462" fill="${p[2]}" font-family="Consolas, monospace" font-size="32">${svgText(event.venue, 36)}</text>
+          <text x="92" y="1034" fill="${p[3]}" font-family="Consolas, monospace" font-size="28">${svgText(event.genre, 48)}</text>
+          <text x="92" y="1082" fill="${p[0]}" font-family="Arial Black, Impact, sans-serif" font-size="34">${svgText(event.confidence)} CONFIDENCE</text>
+        </svg>
+      `;
+      return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
+    }
+
+    function eventVisual(event) {
+      const url = posterUrl(event);
+      return {
+        src: url || posterSvg(event),
+        alt: `${event.title} ${url ? "poster" : "generated poster"}`,
+        hasPoster: Boolean(url)
+      };
+    }
+
+    function eventDate(event) {
+      const [year, month, day] = event.sortDate.split("-").map(Number);
+      return new Date(year, month - 1, day);
+    }
+
+    function searchable(event) {
+      return [event.title, event.venue, event.district, event.genre, event.date, event.time, ...(event.vibe || [])].join(" ").toLowerCase();
+    }
+
+    function filteredEvents() {
+      const query = searchInput.value.trim().toLowerCase();
+      const status = statusFilter.value;
+      const vibe = vibeFilter.value;
+      return events
+        .filter(event => {
+          if (status === "upcoming" && eventDate(event) < today) return false;
+          if (status === "past" && eventDate(event) >= today) return false;
+          if (vibe !== "all" && !(event.vibe || []).includes(vibe)) return false;
+          if (query && !searchable(event).includes(query)) return false;
+          return true;
+        })
+        .sort((a, b) => a.sortDate.localeCompare(b.sortDate));
+    }
+
+    function render() {
+      const cards = filteredEvents();
+      posterCount.textContent = cards.length;
+      posterScope.textContent = `${statusFilter.options[statusFilter.selectedIndex].text} / ${vibeFilter.options[vibeFilter.selectedIndex].text}`;
+      if (!cards.length) {
+        wall.innerHTML = `<div class="empty">No event cards match this filter.</div>`;
+        return;
+      }
+      wall.innerHTML = cards.map(event => {
+        const visual = eventVisual(event);
+        return `
+          <article class="wall-card ${visual.hasPoster ? "has-event-poster" : "has-default-poster"}" data-id="${escapeHtml(event.id)}" tabindex="0" role="button" aria-label="${escapeHtml(`Open ${event.title}, ${event.date}, ${event.venue}`)}">
+            <div class="wall-card-poster">
+              <img src="${escapeHtml(visual.src)}" alt="${escapeHtml(visual.alt)}" loading="lazy" decoding="async">
+              <span class="status-pin">${escapeHtml(event.status)}</span>
+            </div>
+            <div class="wall-card-body">
+              <div class="wall-card-top"><span>${escapeHtml(event.date)}</span><span>${escapeHtml(event.time)}</span></div>
+              <h2>${escapeHtml(event.title)}</h2>
+              <p class="wall-venue">${escapeHtml(event.venue)} / ${escapeHtml(event.district)}</p>
+              <p class="wall-description">${escapeHtml(event.description || "")}</p>
+              <div class="wall-chips">
+                <span class="wall-chip confidence">${escapeHtml(event.confidence)}</span>
+                ${(event.vibe || []).slice(0, 3).map(vibe => `<span class="wall-chip">${escapeHtml(vibe)}</span>`).join("")}
+                <span class="wall-chip">${escapeHtml(String(event.genre || "electronic").split(",")[0])}</span>
+              </div>
+              <div class="wall-source"><span>${escapeHtml(event.sourceLabel || "Source")}</span><span>${escapeHtml(event.price || "Check source")}</span></div>
+            </div>
+          </article>
+        `;
+      }).join("");
+      wall.querySelectorAll(".wall-card").forEach(card => {
+        card.addEventListener("click", () => openModal(events.find(event => event.id === card.dataset.id)));
+        card.addEventListener("keydown", event => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openModal(events.find(item => item.id === card.dataset.id));
+          }
+        });
+      });
+    }
+
+    function openModal(event) {
+      if (!event) return;
+      const visual = eventVisual(event);
+      document.getElementById("modalPoster").src = visual.src;
+      document.getElementById("modalPoster").alt = visual.alt;
+      document.getElementById("modalTitle").textContent = event.title;
+      document.getElementById("modalCopy").textContent = event.description || "";
+      document.getElementById("modalFacts").innerHTML = [
+        ["Date", `${event.date} / ${event.time}`],
+        ["Venue", `${event.venue} / ${event.district}`],
+        ["Sound", event.genre],
+        ["Status", `${event.status} / ${event.confidence}`]
+      ].map(([label, value]) => `<div class="fact"><span>${escapeHtml(label)}</span><b>${escapeHtml(value)}</b></div>`).join("");
+      const source = document.getElementById("modalSource");
+      source.href = event.source || "#";
+      source.style.display = event.source ? "inline-flex" : "none";
+      modal.classList.add("open");
+    }
+
+    function closeModal() {
+      modal.classList.remove("open");
+    }
+
+    [searchInput, statusFilter, vibeFilter].forEach(control => {
+      control.addEventListener("input", render);
+      control.addEventListener("change", render);
+    });
+    document.getElementById("closeModal").addEventListener("click", closeModal);
+    modal.addEventListener("click", event => {
+      if (event.target === modal) closeModal();
+    });
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape") closeModal();
+    });
+
+    fetch("data/events.json")
+      .then(response => response.json())
+      .then(data => {
+        events = data.events || [];
+        render();
+      })
+      .catch(() => {
+        wall.innerHTML = `<div class="empty">Could not load poster data.</div>`;
+      });
+  </script>
+</body>
+</html>
