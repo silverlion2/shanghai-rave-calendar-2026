@@ -7,15 +7,37 @@
   <meta name="description" content="A waterfall event-card wall for sourced Shanghai rave, techno, club, and underground electronic events.">
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#36c7e7">
-  <link rel="canonical" href="https://raveindexsh.top/poster-wall.html">
+  <link rel="canonical" href="https://raveindexsh.top/poster-wall">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" href="/og-image.png" type="image/png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Shanghai Rave Index">
   <meta property="og:title" content="Poster Wall | Shanghai Rave Index">
   <meta property="og:description" content="Waterfall event-card wall for Shanghai underground electronic events.">
-  <meta property="og:url" content="https://raveindexsh.top/poster-wall.html">
+  <meta property="og:url" content="https://raveindexsh.top/poster-wall">
   <meta property="og:image" content="https://raveindexsh.top/og-image.png">
+  <meta property="og:image:alt" content="Preview of the Shanghai Rave Index poster wall">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Poster Wall | Shanghai Rave Index",
+    "url": "https://raveindexsh.top/poster-wall",
+    "description": "A waterfall event-card wall for sourced Shanghai rave, techno, club, and underground electronic events.",
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Shanghai Rave Index",
+      "url": "https://raveindexsh.top/"
+    },
+    "about": [
+      "Shanghai rave posters",
+      "Shanghai techno events",
+      "Shanghai underground electronic music"
+    ]
+  }
+  </script>
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;900&family=IBM+Plex+Mono:wght@400;500;700&display=swap");
 
@@ -506,6 +528,7 @@
   <main class="shell">
     <nav class="primary-nav" aria-label="Primary">
       <a class="nav-link" href="index.html">Calendar</a>
+      <a class="nav-link" href="events/index.html">Events</a>
       <a class="nav-link active" href="poster-wall.html">Wall</a>
       <a class="nav-link" href="planner.html">Planner</a>
       <a class="nav-link" href="venues.html">Venues</a>
@@ -557,6 +580,7 @@
         <p id="modalCopy"></p>
         <div class="modal-facts" id="modalFacts"></div>
         <div class="modal-actions">
+          <a class="button" id="modalEventPage" href="#">Event page</a>
           <a class="button primary" id="modalSource" href="#" target="_blank" rel="noreferrer">Source</a>
           <button class="button" type="button" id="closeModal">Close</button>
         </div>
@@ -751,6 +775,7 @@
         ["Sound", event.genre],
         ["Status", `${event.status} / ${event.confidence}`]
       ].map(([label, value]) => `<div class="fact"><span>${escapeHtml(label)}</span><b>${escapeHtml(value)}</b></div>`).join("");
+      document.getElementById("modalEventPage").href = `events/${encodeURIComponent(event.id)}.html`;
       const source = document.getElementById("modalSource");
       source.href = event.source || "#";
       source.style.display = event.source ? "inline-flex" : "none";

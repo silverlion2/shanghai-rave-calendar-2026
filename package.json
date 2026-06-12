@@ -5,8 +5,9 @@
   "description": "Interactive Shanghai Rave Index for 2026 techno and rave events.",
   "scripts": {
     "start": "npx serve .",
-    "scrape": "node scripts/scrape-events.js",
+    "seo": "node scripts/generate-seo-pages.js",
+    "scrape": "node scripts/scrape-events.js && node scripts/generate-seo-pages.js",
     "audit": "node scripts/audit-events.js",
-    "check": "node --check scripts/check.js && node --check scripts/scrape-events.js && node --check scripts/audit-events.js && node scripts/check.js && node scripts/audit-events.js"
+    "check": "node --check scripts/check.js && node --check scripts/scrape-events.js && node --check scripts/audit-events.js && node --check scripts/generate-seo-pages.js && node scripts/check.js && node scripts/audit-events.js"
   }
 }
