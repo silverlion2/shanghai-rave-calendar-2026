@@ -381,6 +381,12 @@
       padding: 18px;
     }
 
+    .room-discussion-empty-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
     .room-discussion-empty a {
       color: var(--cyan);
       font-weight: 900;
@@ -413,7 +419,7 @@
   <link rel="stylesheet" href="assets/basement-dispatch.css?v=xhs-contact-20260613c">
   <script src="assets/love-wall-supabase-config.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="assets/live-room-realtime.js?v=room-filter-20260614"></script>
+  <script src="assets/live-room-realtime.js?v=room-noon-close-20260614"></script>
 </head>
 <body data-current-date="2026-06-13">
   <main class="shell dispatch-shell room-discussion-page">
@@ -439,10 +445,12 @@
           <p class="kicker">Anonymous / tonight only</p>
           <h1 id="roomDiscussionTitle">Room Discussion</h1>
           <span class="dispatch-strip" id="roomDiscussionMeta">Pick a room from Tonight Rooms</span>
-          <p id="roomDiscussionIntro">Room talk is anonymous, room-scoped, and closed when the event ends.</p>
+          <p id="roomDiscussionIntro">Room talk is anonymous, room-scoped, and closes at 12:00 noon the next day.</p>
           <aside class="room-discussion-promise" aria-label="Room privacy rule">
             <strong>What happens in this room stays in this room.</strong>
-            <span>Anonymous signals stay inside this room. This room closes automatically when the event ends. Cherish the moment.</span>
+            <span>Anonymous signals stay inside this room. This room closes automatically at 12:00 noon the next day. Cherish the moment.</span>
+            <span>Contact info and social links are welcome. Sharing your page, crew, afters, rides, tickets, or phone number is okay.</span>
+            <span>Politics, obvious ads, and harmful content are soft-blocked. If it looks risky, it stays out of the room.</span>
           </aside>
         </div>
       </header>
@@ -620,6 +628,13 @@
       return eventLiveRooms.find(room => room.eventId === activeEventLiveRoomId) || null;
     }
 
+    function archiveRoomForEventId(eventId) {
+      if (!eventId || !liveRoomHelper || typeof liveRoomHelper.eventLiveRoomFromEvent !== "function") return null;
+      const sourceEvent = events.find(event => String(event && event.id || "") === String(eventId));
+      const room = liveRoomHelper.eventLiveRoomFromEvent(sourceEvent, today);
+      return room && liveRoomClosed(room) ? room : null;
+    }
+
     function eventLiveRoomMessagesFor(eventId) {
       return Array.isArray(eventLiveRoomMessages[eventId]) ? eventLiveRoomMessages[eventId] : [];
     }
@@ -768,18 +783,18 @@
       roomDiscussionTitle.textContent = room ? room.title : "Room Discussion";
       roomDiscussionMeta.textContent = room ? `${room.venue} / ${room.time}` : "Pick a room from Tonight Rooms";
       roomDiscussionIntro.textContent = room
-        ? "Anonymous room talk is only for this event room."
+        ? "Anonymous room talk closes at 12:00 noon the next day."
         : "Open a tonight room first, then enter discussion.";
       discussionEventLink.href = room ? `events/${encodeURIComponent(room.eventId)}.html` : "live-room.html";
       discussionEventLink.textContent = room ? "Event page" : "Tonight rooms";
       if (!room) {
         roomDiscussionStatus.textContent = "No room selected";
+      } else if (liveRoomClosed(room)) {
+        roomDiscussionStatus.textContent = "Room closed / archived";
       } else if (eventLiveRoomMode === "live") {
         roomDiscussionStatus.textContent = `${Math.max(1, eventLiveRoomPresence)} online / ${room.title}`;
       } else if (eventLiveRoomMode === "connecting") {
         roomDiscussionStatus.textContent = `Syncing / ${room.title}`;
-      } else if (liveRoomClosed(room)) {
-        roomDiscussionStatus.textContent = "Room closed / archived";
       } else {
         roomDiscussionStatus.textContent = `Local discussion / ${room.title}`;
       }
@@ -817,6 +832,18 @@
           `;
         }).join("")
         : `<article class="room-discussion-message"><p>No anonymous messages yet.</p></article>`;
+      const closedArchivePrompt = closed
+        ? `
+          <div class="room-discussion-empty" aria-label="Closed room next steps">
+            <p>This room link stays available as a closed archive. Return to the homepage for future events, or browse other content.</p>
+            <div class="room-discussion-empty-links">
+              <a href="index.html">Future events</a>
+              <a href="poster-wall.html">Browse other content</a>
+              <a href="venues.html">Venues</a>
+            </div>
+          </div>
+        `
+        : "";
       roomDiscussionMount.innerHTML = `
         <section class="room-discussion-talk" aria-label="Anonymous room talk">
           <div class="room-discussion-talk-head">
@@ -827,10 +854,11 @@
             <label for="${escapeHtml(inputId)}">Message</label>
             <textarea id="${escapeHtml(inputId)}" data-live-room-message-input="${escapeHtml(room.eventId)}" maxlength="220" placeholder="${closed ? "Room closed. Read only." : "Say it before the room closes."}" ${closed ? "disabled" : ""}></textarea>
             <div class="room-discussion-talk-row">
-              <span>${closed ? "This room closed when the event ended." : "Anonymous, room-scoped, auto-closed after the event."}</span>
+              <span>${closed ? "This room closed at 12:00 noon the next day." : "Anonymous, room-scoped, closes at 12:00 noon tomorrow."}</span>
               <button class="room-discussion-submit" type="submit" ${closed ? "disabled" : ""}>${closed ? "Closed" : "Send"}</button>
             </div>
           </form>
+          ${closedArchivePrompt}
           <div class="room-discussion-messages" aria-live="polite">${messageRows}</div>
         </section>
       `;
@@ -883,11 +911,12 @@
         return;
       }
       activeEventLiveRoomId = room.eventId;
-      eventLiveRoomMode = eventLiveRealtime ? "connecting" : "local";
+      const closed = liveRoomClosed(room);
+      eventLiveRoomMode = closed || !eventLiveRealtime ? "local" : "connecting";
       eventLiveRoomPresence = 0;
       syncDiscussionUrl(room.eventId);
       renderDiscussion();
-      if (!eventLiveRealtime) return;
+      if (!eventLiveRealtime || closed) return;
       eventLiveRealtime.join("event", { id: room.eventId, title: room.title, eventId: room.eventId }, { page: "live-room-discussion" }).catch(() => {
         eventLiveRoomMode = "local";
         renderDiscussion();
@@ -1040,10 +1069,14 @@
         events = Array.isArray(data.events) ? data.events : [];
         today = shanghaiToday(data.verified);
         eventLiveRooms = liveRoomHelper && typeof liveRoomHelper.todayEventRooms === "function"
-          ? liveRoomHelper.todayEventRooms(events, today)
+          ? liveRoomHelper.todayEventRooms(events, today, new Date())
           : [];
         const requested = roomDiscussionEventId();
-        const room = eventLiveRooms.find(item => item.eventId === requested) || null;
+        let room = eventLiveRooms.find(item => item.eventId === requested) || null;
+        if (!room && requested) {
+          room = archiveRoomForEventId(requested);
+          if (room) eventLiveRooms = [...eventLiveRooms, room];
+        }
         if (!room) {
           activeEventLiveRoomId = "";
           renderDiscussion();

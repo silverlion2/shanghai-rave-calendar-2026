@@ -2,7 +2,9 @@ const test = require("node:test");
 const assert = require("node:assert/strict");
 
 const {
+  adminClosedEventRooms,
   createLiveRoomTopic,
+  eventLiveRoomFromEvent,
   eventRoomSignalOptions,
   liveRoomAccessState,
   loveWallSignalForNote,
@@ -35,6 +37,54 @@ test("todayEventRooms opens a room for every non-past event on the selected day"
   assert.deepEqual(rooms.map(room => room.eventId), ["santa-k", "system-popup"]);
   assert.equal(rooms[0].topic, "live-room:event:santa-k");
   assert.equal(rooms[1].status, "watch");
+});
+
+test("todayEventRooms carries previous-night rooms until next-day noon", () => {
+  const events = [
+    { id: "santa-k", sortDate: "2026-06-13", title: "Santa K", venue: "Abyss", time: "22:30", status: "past", confidence: "High" },
+    { id: "day-party", sortDate: "2026-06-14", title: "Day Party", venue: "Dome", time: "15:00", status: "upcoming", confidence: "Medium" },
+  ];
+
+  const beforeNoon = todayEventRooms(events, "2026-06-14", "2026-06-14T11:30:00+08:00");
+  assert.deepEqual(beforeNoon.map(room => room.eventId), ["santa-k", "day-party"]);
+
+  const atNoon = todayEventRooms(events, "2026-06-14", "2026-06-14T12:00:00+08:00");
+  assert.deepEqual(atNoon.map(room => room.eventId), ["day-party"]);
+});
+
+test("eventLiveRoomFromEvent keeps closed room links renderable as archives", () => {
+  const room = eventLiveRoomFromEvent({
+    id: "santa-k",
+    sortDate: "2026-06-13",
+    title: "Santa K",
+    venue: "Abyss",
+    time: "22:30-04:00",
+    status: "past",
+    confidence: "High",
+  }, "2026-06-14");
+
+  assert.equal(room.eventId, "santa-k");
+  assert.equal(room.title, "Santa K");
+  assert.equal(room.closesAt, "2026-06-14T12:00:00+08:00");
+  assert.equal(roomIsClosed(room, "2026-06-14T12:01:00+08:00"), true);
+});
+
+test("adminClosedEventRooms exposes sealed rooms only to admins", () => {
+  const events = [
+    { id: "closed", sortDate: "2026-06-12", title: "Closed Room", venue: "Abyss", time: "22:00", status: "past" },
+    { id: "still-open", sortDate: "2026-06-13", title: "Still Open", venue: "Dome", time: "22:00", status: "past" },
+    { id: "future", sortDate: "2026-06-14", title: "Future Room", venue: "Dome", time: "15:00", status: "upcoming" },
+  ];
+
+  assert.deepEqual(
+    adminClosedEventRooms(events, "2026-06-14", "2026-06-14T11:30:00+08:00", { isAdmin: false }),
+    [],
+  );
+
+  const adminRooms = adminClosedEventRooms(events, "2026-06-14", "2026-06-14T11:30:00+08:00", { isAdmin: true });
+  assert.deepEqual(adminRooms.map(room => room.eventId), ["closed"]);
+  assert.equal(adminRooms[0].title, "Closed Room");
+  assert.equal(adminRooms[0].closesAt, "2026-06-13T12:00:00+08:00");
 });
 
 test("loveWallSignalForNote broadcasts only moderation-safe metadata", () => {
@@ -168,13 +218,14 @@ test("roomMessagesAfterBroadcast refuses soft-blocked room talk", () => {
   }), current);
 });
 
-test("roomClosesAt and roomIsClosed infer end times from listed ranges", () => {
+test("roomClosesAt and roomIsClosed keep rooms open until next-day noon", () => {
   const room = { eventId: "santa-k", sortDate: "2026-06-13", time: "22:30-04:00" };
-  assert.equal(roomClosesAt(room), "2026-06-14T04:00:00+08:00");
-  assert.equal(roomIsClosed(room, "2026-06-14T03:59:00+08:00"), false);
-  assert.equal(roomIsClosed(room, "2026-06-14T04:01:00+08:00"), true);
+  assert.equal(roomClosesAt(room), "2026-06-14T12:00:00+08:00");
+  assert.equal(roomIsClosed(room, "2026-06-14T11:59:00+08:00"), false);
+  assert.equal(roomIsClosed(room, "2026-06-14T12:00:00+08:00"), true);
+  assert.equal(roomIsClosed({ ...room, status: "past" }, "2026-06-14T11:59:00+08:00"), false);
 
-  assert.equal(roomClosesAt({ sortDate: "2026-06-14", time: "16:00-17:00" }), "2026-06-14T17:00:00+08:00");
+  assert.equal(roomClosesAt({ sortDate: "2026-06-14", time: "16:00-17:00" }), "2026-06-15T12:00:00+08:00");
 });
 
 test("roomShareUrl builds a stable hash link without leaking query noise", () => {

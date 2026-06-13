@@ -15,6 +15,9 @@ test("live room has a dedicated page outside the calendar layout", () => {
   const archive = readSiteFile("shanghai-rave-calendar-2026.html");
 
   assert.match(liveRoom, /id="todayLiveRooms"/);
+  assert.match(liveRoom, /id="adminClosedRooms"/);
+  assert.match(liveRoom, /data-admin-closed-room-panel hidden/);
+  assert.match(liveRoom, /assets\/account-system\.js/);
   assert.match(liveRoom, /assets\/live-room-realtime\.js/);
   assert.match(liveRoom, /event-room-signal/);
   assert.doesNotMatch(liveRoom, /event-room-message/);
@@ -22,13 +25,17 @@ test("live room has a dedicated page outside the calendar layout", () => {
   assert.match(liveRoom, /Copy link/);
   assert.match(liveRoom, /Join room/);
   assert.match(liveRoom, /Enter discussion/);
+  assert.match(liveRoom, /Closed room admin access/);
+  assert.match(liveRoom, /adminClosedEventRooms/);
+  assert.match(liveRoom, /RaveAccountSystem/);
+  assert.match(liveRoom, /profiles/);
   assert.match(liveRoom, /live-room-discussion\.html\?room=/);
   assert.match(liveRoom, /Event page/);
   assert.match(liveRoom, /data-live-room-help/);
   assert.doesNotMatch(liveRoom, /data-live-room-talk-form/);
   assert.doesNotMatch(liveRoom, /data-live-room-message-input/);
   assert.match(liveRoom, /What happens in this room stays in this room\./);
-  assert.match(liveRoom, /This room closes automatically when the event ends\./);
+  assert.match(liveRoom, /This room closes automatically at 12:00 noon the next day\./);
   assert.match(liveRoom, /Cherish the moment\./);
 
   assert.match(index, /href="live-room\.html"/);
@@ -63,7 +70,13 @@ test("room discussion lives on a separate anonymous page", () => {
   assert.match(discussion, /Message not posted\. Keep this room social, event-related, and safe\./);
   assert.match(discussion, /roomMessageModerationState/);
   assert.match(discussion, /What happens in this room stays in this room\./);
-  assert.match(discussion, /This room closes automatically when the event ends\./);
+  assert.match(discussion, /This room closes automatically at 12:00 noon the next day\./);
+  assert.match(discussion, /Contact info and social links are welcome\./);
+  assert.match(discussion, /Politics, obvious ads, and harmful content are soft-blocked\./);
+  assert.match(discussion, /eventLiveRoomFromEvent/);
+  assert.match(discussion, /This room link stays available as a closed archive\./);
+  assert.match(discussion, /Return to the homepage for future events/);
+  assert.match(discussion, /Browse other content/);
   assert.match(discussion, /Cherish the moment\./);
   assert.match(discussion, /href="live-room\.html"/);
 });

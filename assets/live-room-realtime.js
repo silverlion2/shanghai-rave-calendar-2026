@@ -48,27 +48,56 @@
     return "";
   }
 
-  function todayEventRooms(events, today) {
+  function eventLiveRoomFromEvent(event, fallbackDate) {
+    const fallbackIso = isoDateForDay(fallbackDate);
+    const sortDate = String(event && (event.sortDate || fallbackIso) || "");
+    if (!event || !event.id || !sortDate) return null;
+    const room = {
+      id: `event:${event.id}`,
+      eventId: String(event.id),
+      topic: createLiveRoomTopic("event", event),
+      title: String(event.title || "Untitled event"),
+      venue: String(event.venue || "Venue TBA"),
+      time: String(event.time || "Time TBA"),
+      date: String(event.date || sortDate),
+      sortDate,
+      confidence: String(event.confidence || ""),
+      status: String(event.status || "upcoming"),
+    };
+    room.closesAt = roomClosesAt(room);
+    return room;
+  }
+
+  function todayEventRooms(events, today, now) {
     const todayIso = isoDateForDay(today);
+    const nowTime = now === undefined ? NaN : (now instanceof Date ? now.getTime() : new Date(now).getTime());
     return (Array.isArray(events) ? events : [])
       .filter(event => {
         if (!event || !event.id || !event.sortDate) return false;
-        if (String(event.status || "").toLowerCase() === "past") return false;
-        return String(event.sortDate).slice(0, 10) === todayIso;
+        const eventIso = String(event.sortDate).slice(0, 10);
+        const isPastStatus = String(event.status || "").toLowerCase() === "past";
+        if (eventIso === todayIso) {
+          return !isPastStatus || (Number.isFinite(nowTime) && !roomIsClosed(event, now));
+        }
+        return Number.isFinite(nowTime) && eventIso < todayIso && !roomIsClosed(event, now);
       })
-      .map(event => ({
-        id: `event:${event.id}`,
-        eventId: String(event.id),
-        topic: createLiveRoomTopic("event", event),
-        title: String(event.title || "Untitled event"),
-        venue: String(event.venue || "Venue TBA"),
-        time: String(event.time || "Time TBA"),
-        date: String(event.date || event.sortDate || todayIso),
-        sortDate: String(event.sortDate || todayIso),
-        closesAt: roomClosesAt(event),
-        confidence: String(event.confidence || ""),
-        status: String(event.status || "upcoming"),
-      }));
+      .map(event => eventLiveRoomFromEvent(event, todayIso))
+      .filter(Boolean);
+  }
+
+  function adminClosedEventRooms(events, today, now, options = {}) {
+    const settings = typeof options === "boolean" ? { isAdmin: options } : (options || {});
+    if (!settings.isAdmin) return [];
+    const limit = Math.max(1, Math.min(100, Number(settings.limit) || 24));
+    const todayIso = isoDateForDay(today);
+    return (Array.isArray(events) ? events : [])
+      .map(event => eventLiveRoomFromEvent(event, todayIso))
+      .filter(room => room && roomIsClosed(room, now))
+      .sort((a, b) => (
+        String(b.sortDate || "").localeCompare(String(a.sortDate || ""))
+        || String(a.title || "").localeCompare(String(b.title || ""))
+      ))
+      .slice(0, limit);
   }
 
   function presenceCountFromState(state) {
@@ -218,42 +247,20 @@
     return `${shifted.toISOString().slice(0, 19)}+08:00`;
   }
 
-  function minutesForTimeMatch(match) {
-    const hour = Math.min(23, Math.max(0, Number(match[1]) || 0));
-    const minute = Math.min(59, Math.max(0, Number(match[2]) || 0));
-    return (hour * 60) + minute;
-  }
-
   function roomClosesAt(room) {
     const sortDate = isoDateForDay(room && (room.sortDate || room.date));
     if (!sortDate) return "";
-    const timeText = String(room && room.time || "");
-    const matches = [...timeText.matchAll(/(\d{1,2})(?::(\d{2}))?/g)];
-    let closeMinutes = 12 * 60;
-    let addDays = 1;
-    if (matches.length >= 2) {
-      const startMinutes = minutesForTimeMatch(matches[0]);
-      closeMinutes = minutesForTimeMatch(matches[matches.length - 1]);
-      addDays = closeMinutes <= startMinutes ? 1 : 0;
-    } else if (matches.length === 1) {
-      closeMinutes = minutesForTimeMatch(matches[0]) + (4 * 60);
-      addDays = closeMinutes >= (24 * 60) ? 1 : 0;
-      closeMinutes %= 24 * 60;
-    }
-    const closeHour = String(Math.floor(closeMinutes / 60)).padStart(2, "0");
-    const closeMinute = String(closeMinutes % 60).padStart(2, "0");
-    const closeDate = new Date(`${sortDate}T${closeHour}:${closeMinute}:00+08:00`);
-    closeDate.setUTCDate(closeDate.getUTCDate() + addDays);
+    const closeDate = new Date(`${sortDate}T12:00:00+08:00`);
+    closeDate.setUTCDate(closeDate.getUTCDate() + 1);
     return shanghaiOffsetIso(closeDate);
   }
 
   function roomIsClosed(room, now = new Date()) {
-    if (String(room && room.status || "").toLowerCase() === "past") return true;
     const closesAt = roomClosesAt(room);
-    if (!closesAt) return false;
+    if (!closesAt) return String(room && room.status || "").toLowerCase() === "past";
     const closeTime = new Date(closesAt).getTime();
     const nowTime = now instanceof Date ? now.getTime() : new Date(now).getTime();
-    return Number.isFinite(closeTime) && Number.isFinite(nowTime) && nowTime > closeTime;
+    return Number.isFinite(closeTime) && Number.isFinite(nowTime) && nowTime >= closeTime;
   }
 
   function roomShareUrl(baseUrl, eventId) {
@@ -466,9 +473,11 @@
   }
 
   return {
+    adminClosedEventRooms,
     createLiveRoomRealtime,
     createLiveRoomTopic,
     createSupabaseClient,
+    eventLiveRoomFromEvent,
     eventRoomSignalOptions,
     liveRoomAccessState,
     loveWallSignalForNote,

@@ -1,6 +1,6 @@
 # Project Memory
 
-Last updated: 2026-06-13 16:22 Asia/Shanghai
+Last updated: 2026-06-14 Asia/Shanghai
 
 ## Project
 
@@ -807,3 +807,22 @@ Known state:
 
 - Full `npm run check` still fails at `scripts/audit-events.js` only after syntax/tests/structure/link checks pass.
 - The remaining audit failure is event-data freshness, not UI flow: stale `lastChecked: 2026-06-11` event/DJ source timestamps relative to June 13, 2026, plus two same-day scraped listings missing ticket-status notes.
+
+## 2026-06-14 Anonymous Room Discussion Rules
+
+The user asked for anonymous room discussion, conservative soft-block filtering, dedicated room discussion pages, sharing tools, and clear closure rules.
+
+Implemented state:
+
+- `live-room.html` remains the Tonight Rooms index and sends users into `live-room-discussion.html?room=<eventId>#live-room` for actual discussion.
+- Room discussion is anonymous, scoped to the event room, not posted to the public wall, and closed at 12:00 noon Asia/Shanghai on the day after the event date.
+- Rooms stay open even when an event has `status: "past"` until that fixed noon cutoff.
+- Closed room links remain readable as local archives, with prompts to return to the homepage for future events or browse other content.
+- Logged-in Supabase users with `profiles.role = admin` see a hidden-by-default `Closed room admin access` panel listing sealed room archives.
+- Public users and non-admin accounts do not see already-closed rooms in the Tonight list.
+- Contact info, social links, phone numbers, rides, afters, tickets, and personal pages are allowed. Politics, obvious ads, unsafe spam, and harmful content are conservatively soft-blocked.
+
+Verification:
+
+- Focused room/page tests pass.
+- Browser checks confirmed current 2026-06-13 rooms remain open before the June 14 noon cutoff, closed archive links render read-only, and non-admin public view keeps the admin closed-room panel hidden.
