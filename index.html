@@ -4618,6 +4618,7 @@
     function joinEventLiveRoom(eventId) {
       const room = eventLiveRooms.find(item => item.eventId === eventId);
       if (!room) return;
+      eventLiveRoomHashHandled = true;
       activeEventLiveRoomId = room.eventId;
       eventLiveRoomMode = eventLiveRealtime ? "connecting" : "local";
       eventLiveRoomPresence = 0;

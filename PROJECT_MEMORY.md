@@ -727,3 +727,27 @@ Verification:
 - Repo scan found no `info@shanghairaveindex.com`, `mailto:`, `contactEmail`, old `IG @shanghairaveindex`, or `example.com` email placeholders.
 - Browser checks confirmed the footer contact cell fits on desktop and mobile, the QR thumbnail loads, and there is no horizontal overflow.
 - `npm run check` passed after the cleanup.
+
+## 2026-06-13 Supabase Realtime Rooms Beta
+
+The user decided to try Supabase Realtime, implement Love Wall first, then add live rooms for each same-day event.
+
+Implemented state:
+
+- `assets/live-room-realtime.js` is the shared realtime/local fallback helper for Love Wall and event rooms.
+- Love Wall has live dancer presence, safe metadata broadcasts, and a pulse feed.
+- The calendar and archive pages expose a `Tonight live rooms` panel that opens one room per non-past event on the current selected day.
+- Event rooms use canned, moderation-safe signals instead of free-text chat: `Inside`, `Heat`, `Queue`, `Set now`, `Water`, `Leaving`, and `After?`.
+- Joined event rooms show an activity feed, `Details`, and `Copy room`; room links use `#live-room=<eventId>`.
+- Visiting a page with a live-room hash auto-joins that event room.
+- Supabase Realtime is optional: when unavailable or not configured, the UI remains usable in explicit local mode.
+
+Verification:
+
+- `npm run check` passed with 23 Node tests.
+- Browser desktop smoke test confirmed 9 same-day rooms, join, signals, feed, event details modal, hash room links, and no console errors.
+- Browser mobile smoke test at `390x844` confirmed no horizontal overflow and no room control layout offenders.
+
+Implementation note:
+
+- Manual room join now marks the hash as already handled before writing `#live-room=...`, preventing a duplicate auto-join cycle.
