@@ -595,6 +595,26 @@
       color: var(--void);
     }
 
+    .live-dispatch-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1.12fr) minmax(320px, .88fr);
+      gap: 12px;
+      align-items: stretch;
+      margin: 0 0 22px;
+    }
+
+    .live-dispatch-row .dispatch-panel {
+      min-width: 0;
+      height: 100%;
+    }
+
+    .live-dispatch-row .live-room-panel {
+      border-color: rgba(65,215,255,.3);
+      background:
+        linear-gradient(135deg, rgba(65,215,255,.08), rgba(198,255,59,.035)),
+        rgba(17,17,14,.9);
+    }
+
     .layout {
       display: grid;
       grid-template-columns: minmax(0, 1fr) 360px;
@@ -1779,6 +1799,9 @@
     }
 
     @media (max-width: 1180px) {
+      .live-dispatch-row {
+        grid-template-columns: minmax(0, 1fr);
+      }
       .decision-strip {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
@@ -2083,28 +2106,31 @@
       </label>
     </section>
 
+    <section class="live-dispatch-row" aria-label="Tonight dispatch and live rooms">
+      <section class="panel dispatch-panel">
+        <div class="dispatch-panel-head">
+          <h2>Tonight</h2>
+          <span id="tonightStamp">Today</span>
+          <button type="button" data-window-shortcut="tonight">Details -></button>
+        </div>
+        <div class="dispatch-list" id="tonightPanel"></div>
+      </section>
+
+      <section class="panel dispatch-panel live-room-panel" aria-label="Tonight live rooms">
+        <div class="dispatch-panel-head">
+          <h2>Tonight rooms</h2>
+          <span id="todayLiveRoomStatus">Local until joined</span>
+        </div>
+        <div class="live-room-list" id="todayLiveRooms"></div>
+      </section>
+    </section>
+
     <nav class="month-rail" id="monthRail" aria-label="Jump to month"></nav>
 
     <section class="layout">
       <div id="calendar"></div>
 
       <aside class="side dispatch-panels">
-        <section class="panel dispatch-panel">
-          <div class="dispatch-panel-head">
-            <h2>Tonight</h2>
-            <span id="tonightStamp">Today</span>
-            <button type="button" data-window-shortcut="tonight">Details -></button>
-          </div>
-          <div class="dispatch-list" id="tonightPanel"></div>
-        </section>
-
-        <section class="panel dispatch-panel live-room-panel" aria-label="Tonight live rooms">
-          <div class="dispatch-panel-head">
-            <h2>Tonight rooms</h2>
-            <span id="todayLiveRoomStatus">Local until joined</span>
-          </div>
-          <div class="live-room-list" id="todayLiveRooms"></div>
-        </section>
 
         <section class="panel dispatch-panel">
           <div class="dispatch-panel-head">

@@ -366,19 +366,45 @@ function eventUrl(event) {
 }
 
 function imageUrl(event) {
-  const poster = event.posterUrl || "";
-  if (/^assets\/posters\/[^/]+\.(?:jpe?g|png|webp)$/i.test(poster)) {
+  const poster = bestDisplayPosterAsset(event);
+  if (poster) {
     return `${SITE_URL}/${poster}`;
   }
   return `${SITE_URL}/og-image.png`;
 }
 
 function relativeImagePath(event) {
-  const poster = event.posterUrl || "";
-  if (/^assets\/posters\/[^/]+\.(?:jpe?g|png|webp)$/i.test(poster) && fs.existsSync(path.join(ROOT, poster))) {
+  const poster = bestDisplayPosterAsset(event);
+  if (poster) {
     return `../${poster}`;
   }
   return "../og-image.png";
+}
+
+function bestDisplayPosterAsset(event) {
+  const poster = normalizePosterAsset(event.posterUrl || "");
+  if (!poster) return "";
+
+  const posterFile = path.join(ROOT, poster);
+  if (!fs.existsSync(posterFile)) return "";
+
+  const optimized = optimizedPosterAsset(poster);
+  const optimizedFile = path.join(ROOT, optimized);
+  if (!fs.existsSync(optimizedFile)) return poster;
+
+  const sourceBytes = fs.statSync(posterFile).size;
+  const optimizedBytes = fs.statSync(optimizedFile).size;
+  return optimizedBytes <= sourceBytes ? optimized : poster;
+}
+
+function normalizePosterAsset(asset) {
+  const normalized = String(asset || "").trim().replace(/\\/g, "/");
+  return /^assets\/posters\/[^/]+\.(?:jpe?g|png|webp)$/i.test(normalized) ? normalized : "";
+}
+
+function optimizedPosterAsset(asset) {
+  const parsed = path.posix.parse(asset);
+  return path.posix.join(parsed.dir, `${parsed.name}-optimized.jpg`);
 }
 
 function startDate(event) {

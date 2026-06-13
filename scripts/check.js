@@ -1,4 +1,5 @@
 const fs = require("fs");
+const path = require("path");
 const {
   readWebsiteStructure,
   assertWebsiteStructure,
@@ -24,6 +25,7 @@ const secondaryDispatchHtmlFiles = trackedSecondaryDispatchHtmlFiles(websiteStru
 const homepageCalendarHtmlFiles = trackedHomepageCalendarHtmlFiles(websiteStructure);
 const externalJsFiles = trackedExternalJsFiles(websiteStructure);
 const siteUrl = websiteStructure.site.baseUrl;
+const ROOT = process.cwd();
 let scriptCount = 0;
 const requiredCuratedEventIds = [
   "milo-cosmjn",
@@ -449,6 +451,10 @@ function assertGeneratedSeoPages(events) {
     if (!html.includes(`<link rel="canonical" href="${siteUrl}/events/${event.id}">`)) {
       throw new Error(`${file} missing clean canonical URL`);
     }
+    const displayPoster = bestDisplayPosterAsset(event);
+    if (displayPoster && !html.includes(`src="../${displayPoster}"`)) {
+      throw new Error(`${file} must use smallest local display poster asset: ${displayPoster}`);
+    }
     const nodes = generatedEventPageGraph(file, html);
     const eventUrl = `${siteUrl}/events/${event.id}`;
     if (isPublicSeoEvent(event)) {
@@ -475,7 +481,195 @@ function assertGeneratedSeoPages(events) {
   }
 }
 
+function bestDisplayPosterAsset(event) {
+  const poster = normalizePosterAsset(event.posterUrl || "");
+  if (!poster) return "";
+
+  const posterFile = path.join(ROOT, poster);
+  if (!fs.existsSync(posterFile)) return "";
+
+  const optimized = optimizedPosterAsset(poster);
+  const optimizedFile = path.join(ROOT, optimized);
+  if (!fs.existsSync(optimizedFile)) return poster;
+
+  const sourceBytes = fs.statSync(posterFile).size;
+  const optimizedBytes = fs.statSync(optimizedFile).size;
+  return optimizedBytes <= sourceBytes ? optimized : poster;
+}
+
+function normalizePosterAsset(asset) {
+  const normalized = String(asset || "").trim().replace(/\\/g, "/");
+  return /^assets\/posters\/[^/]+\.(?:jpe?g|png|webp)$/i.test(normalized) ? normalized : "";
+}
+
+function optimizedPosterAsset(asset) {
+  const parsed = path.posix.parse(asset);
+  return path.posix.join(parsed.dir, `${parsed.name}-optimized.jpg`);
+}
+
+function projectFiles(dir = ROOT, skipDirs = new Set(["node_modules", ".git", ".vercel", "output"])) {
+  const files = [];
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (skipDirs.has(entry.name)) continue;
+    const fullPath = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      files.push(...projectFiles(fullPath, skipDirs));
+    } else {
+      files.push(fullPath);
+    }
+  }
+  return files;
+}
+
+function projectPath(file) {
+  return path.relative(ROOT, file).replace(/\\/g, "/");
+}
+
+function isInsideProject(file) {
+  const resolvedRoot = path.resolve(ROOT);
+  const resolvedFile = path.resolve(file);
+  return resolvedFile === resolvedRoot || resolvedFile.startsWith(`${resolvedRoot}${path.sep}`);
+}
+
+function htmlFragmentIds(html) {
+  const ids = new Set();
+  for (const match of html.matchAll(/\s(?:id|name)\s*=\s*(["'])(.*?)\1/gi)) {
+    ids.add(match[2]);
+  }
+  return ids;
+}
+
+function decodeFragment(value) {
+  try {
+    return decodeURIComponent(value);
+  } catch {
+    return value;
+  }
+}
+
+function isExternalReference(value) {
+  return /^(?:https?:)?\/\//i.test(value);
+}
+
+function shouldSkipReference(value) {
+  if (!value) return true;
+  if (value === "#" || value.startsWith("#")) return false;
+  if (value.includes("${") || value.startsWith("{{")) return true;
+  if (/^(?:data:|mailto:|tel:|javascript:|blob:|sms:|whatsapp:|weixin:)/i.test(value)) return true;
+  return /^[a-z][a-z0-9+.-]*:/i.test(value) && !isExternalReference(value);
+}
+
+function stripQueryAndHash(value) {
+  return value.replace(/[?#].*$/, "");
+}
+
+function referenceHash(value) {
+  const hashIndex = value.indexOf("#");
+  if (hashIndex === -1) return "";
+  return value.slice(hashIndex + 1).split(/[?&]/)[0];
+}
+
+function absoluteRouteCandidates(route) {
+  const cleanRoute = route.replace(/^\/+/, "");
+  const candidates = [cleanRoute || "index.html"];
+  if (cleanRoute && !/\.[a-z0-9]+$/i.test(cleanRoute)) {
+    candidates.push(`${cleanRoute}.html`);
+    candidates.push(path.join(cleanRoute, "index.html"));
+  }
+  return candidates.map(candidate => path.normalize(path.join(ROOT, candidate)));
+}
+
+function relativeRouteCandidates(fromFile, route) {
+  const baseDir = path.dirname(fromFile);
+  const candidates = [path.normalize(path.join(baseDir, route))];
+  if (!/\.[a-z0-9]+$/i.test(route)) {
+    candidates.push(path.normalize(path.join(baseDir, `${route}.html`)));
+    candidates.push(path.normalize(path.join(baseDir, route, "index.html")));
+  }
+  return candidates;
+}
+
+function assertLocalLinkIntegrity() {
+  const files = projectFiles();
+  const htmlCandidates = files.filter(file => /\.html$/i.test(file));
+  const cssCandidates = files.filter(file => /\.css$/i.test(file));
+  const htmlIdCache = new Map(htmlCandidates.map(file => [path.resolve(file), htmlFragmentIds(fs.readFileSync(file, "utf8"))]));
+  const references = [];
+  const attrPattern = /\s(href|src|action|poster|data-src|data-href)\s*=\s*(["'])(.*?)\2/gi;
+  const srcsetPattern = /\ssrcset\s*=\s*(["'])(.*?)\1/gi;
+  const cssUrlPattern = /url\(\s*(["']?)(?!data:)([^"')]+)\1\s*\)/gi;
+
+  function addReference(fromFile, rawValue, kind) {
+    const value = String(rawValue || "").trim();
+    if (shouldSkipReference(value) || isExternalReference(value)) return;
+    references.push({ fromFile, from: projectPath(fromFile), value, kind });
+  }
+
+  for (const file of htmlCandidates) {
+    const html = fs.readFileSync(file, "utf8");
+    for (const match of html.matchAll(attrPattern)) {
+      addReference(file, match[3], match[1].toLowerCase());
+    }
+    for (const match of html.matchAll(srcsetPattern)) {
+      for (const item of match[2].split(",")) {
+        addReference(file, item.trim().split(/\s+/)[0], "srcset");
+      }
+    }
+  }
+
+  for (const file of cssCandidates) {
+    const css = fs.readFileSync(file, "utf8");
+    for (const match of css.matchAll(cssUrlPattern)) {
+      addReference(file, match[2], "css-url");
+    }
+  }
+
+  for (const reference of references) {
+    const targetPath = stripQueryAndHash(reference.value);
+    const hash = referenceHash(reference.value);
+    let candidates;
+    if (!targetPath) {
+      candidates = [reference.fromFile];
+    } else if (targetPath.startsWith("/")) {
+      candidates = absoluteRouteCandidates(targetPath);
+    } else {
+      candidates = relativeRouteCandidates(reference.fromFile, targetPath);
+    }
+
+    const existing = candidates.find(candidate => isInsideProject(candidate) && fs.existsSync(candidate));
+    if (!existing) {
+      throw new Error(`${reference.from} has dead local ${reference.kind} link: ${reference.value}`);
+    }
+    if (hash && /\.html$/i.test(existing)) {
+      const fragmentIds = htmlIdCache.get(path.resolve(existing)) || htmlFragmentIds(fs.readFileSync(existing, "utf8"));
+      if (!fragmentIds.has(decodeFragment(hash))) {
+        throw new Error(`${reference.from} links to missing fragment #${hash}: ${reference.value}`);
+      }
+    }
+  }
+
+  return {
+    files: htmlCandidates.length + cssCandidates.length,
+    references: references.length,
+  };
+}
+
+function assertStaticDataFetchCaching() {
+  const files = projectFiles()
+    .filter(file => /\.(?:html|js)$/i.test(file));
+  const staticDataCacheBypassPattern = /fetch\(\s*(["'])data\/(?:events|poster-archive)\.json\1\s*,\s*\{[^}]*cache\s*:\s*(["'])no-(?:store|cache)\2/;
+
+  for (const file of files) {
+    const text = fs.readFileSync(file, "utf8");
+    if (staticDataCacheBypassPattern.test(text)) {
+      throw new Error(`${projectPath(file)} must not bypass cache for static JSON data`);
+    }
+  }
+}
+
 assertWebsiteStructure();
+const localLinkSummary = assertLocalLinkIntegrity();
+assertStaticDataFetchCaching();
 
 for (const file of homepageCalendarHtmlFiles) {
   assertHomepageStatsPlacement(file, fs.readFileSync(file, "utf8"));
@@ -1025,6 +1219,9 @@ if (fs.existsSync("data/events.json")) {
     if (source.sourceStatus !== "computer-use") {
       throw new Error(`computerUseQueue source ${source.label} must be computer-use`);
     }
+    if (/xiaohongshu\.com\/search_result/i.test(source.url) && !/[?&]source=web_explore_feed(?:&|$)/.test(source.url)) {
+      throw new Error(`computerUseQueue source ${source.label} must use the live Xiaohongshu search URL format`);
+    }
     if (!Array.isArray(source.evidence) || source.evidence.length === 0) {
       throw new Error(`computerUseQueue source ${source.label} must define evidence requirements`);
     }
@@ -1146,4 +1343,5 @@ if (fs.existsSync("config/curated-events.json")) {
   }
 }
 
+console.log(`local link integrity OK: ${localLinkSummary.references} local links across ${localLinkSummary.files} HTML/CSS files`);
 console.log(`inline scripts syntax OK: ${scriptCount} scripts across ${htmlFiles.length + syntaxOnlyHtmlFiles.length} HTML files`);

@@ -673,7 +673,7 @@
   async function fetchEvents(win = typeof window !== "undefined" ? window : undefined) {
     if (win && Array.isArray(win.SHANGHAI_RAVE_EVENTS)) return win.SHANGHAI_RAVE_EVENTS;
     if (!win || typeof win.fetch !== "function") return [];
-    const response = await win.fetch("data/events.json", { cache: "no-store" });
+    const response = await win.fetch("data/events.json");
     if (!response.ok) throw new Error(`events ${response.status}`);
     const payload = await response.json();
     return Array.isArray(payload) ? payload : (Array.isArray(payload.events) ? payload.events : []);

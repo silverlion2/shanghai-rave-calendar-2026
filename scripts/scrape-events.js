@@ -109,7 +109,7 @@ const COMPUTER_USE_SOURCES = [
   {
     label: "Xiaohongshu searches",
     platform: "Xiaohongshu",
-    url: "https://www.xiaohongshu.com/search_result?keyword=%E4%B8%8A%E6%B5%B7%20techno",
+    url: "https://www.xiaohongshu.com/search_result?keyword=%E4%B8%8A%E6%B5%B7%20techno&source=web_explore_feed",
     priority: 2,
     cadence: "Daily discovery; stronger pass Thu/Fri",
     trigger: "Use Chrome + Computer Use with logged-in search; do not rely on unauthenticated fetch.",

@@ -74,7 +74,7 @@
 
   async function loadArchive() {
     try {
-      const response = await fetch("data/poster-archive.json", { cache: "no-cache" });
+      const response = await fetch("data/poster-archive.json");
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       state.archive = await response.json();
       state.posters = Array.isArray(state.archive.posters) ? state.archive.posters : [];

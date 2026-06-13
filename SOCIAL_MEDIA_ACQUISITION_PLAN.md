@@ -307,6 +307,6 @@ Shanghai Rave Index 的核心增长机会不是做泛夜生活账号，而是成
 - CNNIC：《第 56 次中国互联网络发展状况统计报告》，2025-07。报告显示，截至 2025 年 6 月，中国社交网络用户规模达 11.07 亿，短视频用户规模达 10.68 亿。https://www.cnnic.net.cn/NMediaFile/2025/0730/MAIN1753846666507QEK67ZS9DH.pdf
 - DataReportal: Digital 2026 China，显示 2025 年底中国活跃社交媒体用户身份约 12.8 亿，并提示该指标不等同于去重自然人。https://datareportal.com/reports/digital-2026-china
 - 巨量引擎营销产品页：抖音支持搜索营销、本地生活、线索留资、中小自助投放和自然内容协同。https://www.oceanengine.com/products
-- 小红书商业化产品页：小红书支持蒲公英、聚光平台、专业号、薯条、搜索信息流、留资页、私信等产品。https://e.xiaohongshu.com/product
+- 小红书商业化产品页：小红书支持蒲公英、聚光平台、专业号、薯条、搜索信息流、留资页、私信等产品。https://e.xiaohongshu.com/m/product
 - 腾讯广告微信公众号广告位说明：公众号广告支持公众号关注、移动应用下载、卡券分发、品牌活动等推广形式。https://tencentads.com/faqlist/detail?id=374
 - 腾讯广告微信小店广告链路介绍，2025-05：微信广告全场景覆盖视频号、朋友圈、公众号、小程序、搜一搜。https://training.tencentads.com/uploads/202505/lZTqucgB_bYZPU4.pdf
