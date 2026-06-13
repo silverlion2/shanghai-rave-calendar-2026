@@ -74,13 +74,19 @@ function renderGoogleTag(googleTagId) {
 }
 
 function renderPrimaryNav(structure, { prefix = "", activeId = "", includeUtility = false, trailingHtml = "" } = {}) {
+  const basePages = primaryNavPages(structure);
   const pages = includeUtility
-    ? [...primaryNavPages(structure), ...utilityPages(structure)]
-    : primaryNavPages(structure);
+    ? [
+        ...basePages.filter(page => !page.badge),
+        ...utilityPages(structure),
+        ...basePages.filter(page => page.badge),
+      ]
+    : basePages;
   const items = pages
     .map(page => {
       const active = page.id === activeId ? " active" : "";
-      return `<a class="nav-link${active}" href="${escapeAttr(prefix + page.file)}">${escapeHtml(page.label)}</a>`;
+      const badge = page.badge ? ` <small class="nav-beta">${escapeHtml(page.badge)}</small>` : "";
+      return `<a class="nav-link${active}" href="${escapeAttr(prefix + page.file)}">${escapeHtml(page.label)}${badge}</a>`;
     })
     .join("\n        ");
   const trailing = trailingHtml || `<span>${escapeHtml(structure.site.navTagline || "")}</span>`;

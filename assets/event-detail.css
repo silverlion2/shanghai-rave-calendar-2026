@@ -98,6 +98,19 @@ a {
   border-color: var(--acid);
 }
 
+.nav-beta {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 4px;
+  color: inherit;
+  font-family: var(--font-mono);
+  font-size: .62em;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: lowercase;
+  opacity: .72;
+}
+
 .button.secondary:hover {
   color: var(--ink);
   border-color: var(--ink);

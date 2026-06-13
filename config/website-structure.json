@@ -20,12 +20,12 @@
     "calendar",
     "poster-wall",
     "love-wall",
-    "live-room",
-    "planner",
-    "rave-everywhere",
     "venues",
     "djs",
-    "account"
+    "account",
+    "live-room",
+    "planner",
+    "rave-everywhere"
   ],
   "pages": [
     {
@@ -62,6 +62,7 @@
     {
       "id": "live-room",
       "label": "Tonight",
+      "badge": "beta",
       "file": "live-room.html",
       "route": "/live-room",
       "shell": "dispatch-shell",
@@ -84,6 +85,7 @@
     {
       "id": "planner",
       "label": "Planner",
+      "badge": "beta",
       "file": "planner.html",
       "route": "/planner",
       "shell": "dispatch-shell",
@@ -94,6 +96,7 @@
     {
       "id": "rave-everywhere",
       "label": "Everywhere",
+      "badge": "beta",
       "file": "rave-everywhere.html",
       "route": "/rave-everywhere",
       "shell": "dispatch-shell",
