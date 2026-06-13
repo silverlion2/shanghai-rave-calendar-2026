@@ -666,11 +666,15 @@ const scrapeRequirements = [
   { file: "scripts/scrape-events.js", text: "djItineraryStats", label: "scrape payload itinerary stats" },
   { file: ".github/workflows/scrape-events.yml", text: "data/tracked-dj-itineraries.js", label: "workflow commits tracked itinerary data" },
   { file: ".github/workflows/scrape-events.yml", text: "data/poster-archive.json", label: "workflow commits poster archive data" },
+  { file: ".github/workflows/scrape-events.yml", text: "assets/posters", label: "workflow commits optimized poster assets" },
   { file: ".github/workflows/scrape-events.yml", text: "events sitemap.xml", label: "workflow commits generated SEO pages" },
   { file: "package.json", text: "\"seo\": \"node scripts/generate-seo-pages.js\"", label: "SEO generator script" },
-  { file: "package.json", text: "\"poster-archive\": \"node scripts/generate-poster-archive.js\"", label: "poster archive generator script" },
+  { file: "package.json", text: "\"poster-archive\": \"npm run posters:prepare\"", label: "poster archive prepare script" },
+  { file: "package.json", text: "\"posters:prepare\": \"node scripts/optimize-posters.js --archive --all --allow-larger\"", label: "poster optimizer archive script" },
+  { file: "package.json", text: "\"posters:upload\": \"npm run posters:prepare && npm run supabase:import\"", label: "poster Supabase upload script" },
   { file: "package.json", text: "scripts/generate-seo-pages.js", label: "SEO generator syntax check" },
   { file: "package.json", text: "scripts/generate-poster-archive.js", label: "poster archive generator syntax check" },
+  { file: "package.json", text: "scripts/optimize-posters.js", label: "poster optimizer syntax check" },
   { file: "scripts/generate-seo-pages.js", text: "MusicEvent", label: "generated event structured data" },
   { file: "scripts/generate-seo-pages.js", text: "BreadcrumbList", label: "generated breadcrumb structured data" },
   { file: "scripts/generate-seo-pages.js", text: "sitemap.xml", label: "generated sitemap writer" },
@@ -725,10 +729,40 @@ const loveWallRequirements = [
   { file: "love-wall.html", text: "Rave Love Wall", label: "Love Wall page title" },
   { file: "love-wall.html", text: "window.localStorage", label: "Love Wall local note persistence" },
   { file: "love-wall.html", text: 'id="loveWall"', label: "Love Wall note renderer" },
+  { file: "love-wall.html", text: "emojiOptions", label: "Love Wall emoji reaction options" },
+  { file: "love-wall.html", text: "submitRemoteReaction", label: "Love Wall Supabase emoji reaction writer" },
+  { file: "assets/love-wall-supabase-config.js", text: 'reactionTable: "love_wall_reactions"', label: "Love Wall reaction table config" },
+  { file: "supabase/migrations/202606130002_love_wall_reactions.sql", text: "love_wall_reactions", label: "Love Wall reaction migration" },
   { file: "sitemap.xml", text: `${siteUrl}/love-wall`, label: "Love Wall sitemap URL" },
 ];
 
-for (const requirement of [...itineraryRequirements, ...opsRequirements, ...scrapeRequirements, ...posterArchiveRequirements, ...everywhereRequirements, ...loveWallRequirements]) {
+const accountRequirements = [
+  { file: "index.html", text: 'href="account.html"', label: "calendar Account link" },
+  { file: "shanghai-rave-calendar-2026.html", text: 'href="account.html"', label: "archive Account link" },
+  { file: "poster-wall.html", text: 'href="account.html"', label: "wall Account link" },
+  { file: "love-wall.html", text: 'href="account.html"', label: "Love Wall Account link" },
+  { file: "poster-archive.html", text: 'href="account.html"', label: "poster archive Account link" },
+  { file: "planner.html", text: 'href="account.html"', label: "planner Account link" },
+  { file: "rave-everywhere.html", text: 'href="account.html"', label: "Rave Everywhere Account link" },
+  { file: "venues.html", text: 'href="account.html"', label: "venues Account link" },
+  { file: "djs.html", text: 'href="account.html"', label: "DJ database Account link" },
+  { file: "ops.html", text: 'href="account.html"', label: "ops Account link" },
+  { file: "account.html", text: "Personal Dispatch", label: "account page title" },
+  { file: "account.html", text: "data-account-app", label: "account app mount" },
+  { file: "account.html", text: "assets/account-system.js", label: "account browser module" },
+  { file: "account.html", text: "assets/account-system.css", label: "account styles" },
+  { file: "account.html", text: "assets/love-wall-supabase-config.js", label: "account Supabase public config" },
+  { file: "index.html", text: 'id="personalizedDispatch"', label: "calendar personalized dispatch panel" },
+  { file: "index.html", text: "syncAccountPersonalization", label: "calendar personalization bridge" },
+  { file: "assets/account-system.js", text: "function normalizePreferences(", label: "account preference normalizer" },
+  { file: "assets/account-system.js", text: "function rankEvents(", label: "account event ranking" },
+  { file: "assets/account-system.js", text: "function enhanceCalendarPage(", label: "calendar account enhancement" },
+  { file: "supabase/migrations/202606130001_full_backend_schema.sql", text: "create table if not exists public.user_event_preferences", label: "account preferences table" },
+  { file: "supabase/migrations/202606130001_full_backend_schema.sql", text: "create table if not exists public.saved_events", label: "saved events table" },
+  { file: "sitemap.xml", text: `${siteUrl}/account`, label: "Account sitemap URL" },
+];
+
+for (const requirement of [...itineraryRequirements, ...opsRequirements, ...scrapeRequirements, ...posterArchiveRequirements, ...everywhereRequirements, ...loveWallRequirements, ...accountRequirements]) {
   const html = fs.readFileSync(requirement.file, "utf8");
   if (!html.includes(requirement.text)) {
     throw new Error(`${requirement.file} missing feature marker: ${requirement.label}`);

@@ -231,7 +231,7 @@ function buildRows() {
       source_status: event.sourceStatus || null,
       last_checked: asDate(event.lastChecked),
       event_url: event.eventUrl || `events/${event.id}.html`,
-      poster_url: event.posterUrl || poster?.image?.display || null,
+      poster_url: poster?.image?.display || event.posterUrl || null,
       image_theme: event.imageTheme || null,
       vibe: event.vibe || [],
       tags: event.tags || [],

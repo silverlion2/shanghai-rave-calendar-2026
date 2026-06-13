@@ -4,7 +4,7 @@ Last updated: 2026-06-13 15:55 Asia/Shanghai
 
 ## Project
 
-Shanghai Rave Index is a static website for sourced Shanghai techno, rave, warehouse, industrial, bass, trance, and underground electronic events. The current architecture is intentionally GitHub-only for v1: no database, no backend service, and no user-specific data.
+Shanghai Rave Index is a static-first website for sourced Shanghai techno, rave, warehouse, industrial, bass, trance, and underground electronic events. The public event/venue/DJ guide remains generated and Vercel-hosted, while the web product now also has a deployed Supabase database/backend layer for durable community and Love Wall workflows.
 
 ## Dialogue Recap
 
@@ -26,6 +26,8 @@ The user finally asked to create a project memory and save the dialogue. This fi
 - `planner.html` is the standalone set-time planner and personal itinerary surface. It estimates missing parseable slots, stores selected itinerary rows in browser `localStorage`, and exports selected slots as `.ics` or PNG.
 - `ops.html` is a static operations console for AI intake review, WeChat/Xiaohongshu copy, ticket routing exports, promoter paid-exposure tracking, and ops reports. It stores operator state in browser `localStorage` and exports JSON/CSV for review.
 - `data/events.json` is the generated static data file used by the website in deployed or local-server mode.
+- `supabase/` contains the database schema and setup documentation for the deployed Supabase backend. Treat Supabase as the durable backend for approved user/community workflows, not as the default source for generated event inventory unless that migration is explicitly requested.
+- `assets/love-wall-supabase-config.js` is the public client configuration for Love Wall submissions using the Supabase anon key. Public writes should remain pending/moderated; admin operations require server-side credentials or the Supabase dashboard.
 - `scripts/scrape-events.js` seeds from embedded events, refreshes source metadata, scrapes public SmartShanghai pages, best-effort checks RA, records X/Twitter keyword searches, and writes `computerUseQueue` for anti-bot/app-only sources that the agent should inspect with Chrome + Computer Use.
 - `config/curated-events.json` stores browser/Computer Use collected event updates, including blocked RA details, poster evidence, lineup, set-time, artist-note, tour-plan, and ticket-status fields that should persist across automated refreshes.
 - `.github/workflows/scrape-events.yml` runs the scraper daily and commits changed `data/events.json` back to GitHub.
@@ -63,7 +65,7 @@ X/Twitter support is keyword-based and discovery-only.
 - X/Twitter collection needs an API bearer token for reliable results.
 - Anti-bot, logged-in, app-only, mini-program, and poster/image-first sources should be handled through the generated Computer Use queue; do not add captcha/login bypass logic to the GitHub Action scraper.
 - Social leads should not be promoted into calendar cards without confirmation from RA, SmartShanghai, venue/promoter, ticketing, or another stronger source.
-- The site is static, so live user features, moderation queues, notifications, or saved events would require a later database-backed version.
+- The public site is still static-first, but a Supabase database is now deployed for durable web/community workflows. New live user features, moderation queues, notifications, or saved events should build on the deployed backend rather than restarting the old "no database" decision.
 - The ops console provides a local/export workflow for review, publishing copy, ticket routes, promoter packages, and reports, but it does not replace a real backend for multi-user moderation, payment processing, direct social posting, or durable analytics.
 
 ## Verification History
@@ -558,3 +560,75 @@ Implemented state:
 - `supabase/README.md` documents environment variables and the install sequence: `npm run supabase:migrate`, `npm run supabase:import`, and `npm run supabase:configure-client`.
 - Public Love Wall submissions insert as `pending`; public reads return only approved posts through RLS. Moderation/admin operations must use server-side credentials or the Supabase dashboard.
 - Mini-program/CloudBase work is intentionally deferred until the web funnel and community interaction model are clearer.
+
+## 2026-06-13 Database Deployment and Performance Repeatability
+
+The user confirmed that the database has already been deployed. Future agents should treat the Supabase backend as an active deployed part of the web product, while still preserving the static-first public site architecture.
+
+Database/product interpretation:
+
+- Supabase is the durable backend layer for web-first community features such as Love Wall submissions, approval/moderation, and future saved/community workflows.
+- Generated event, venue, DJ, SEO, and scrape-refresh surfaces remain static-file driven unless the user explicitly asks to migrate those inventories into Supabase.
+- Do not repeat the old "no database exists/no backend" assumption. The correct current framing is static-first frontend plus deployed Supabase backend.
+- A database should not be treated as the default fix for slow page load. For static pages, first optimize assets, caching, generated data size, and render behavior.
+
+Performance-repeatability note:
+
+- A reusable local Codex skill was created at `C:\Users\T480S\.codex\skills\static-site-performance-repeatability\SKILL.md`.
+- Its helper script is `C:\Users\T480S\.codex\skills\static-site-performance-repeatability\scripts\optimize-posters.ps1`.
+- The skill captures the poster optimization/cache-header workflow used on this project: measure large assets, generate `*-optimized.jpg` derivatives without deleting originals, remove static-data `cache: "no-store"` fetches where appropriate, add bounded Vercel cache headers, lazy-load repeated poster/card images, and verify with `npm run check` plus browser smoke tests.
+- Future new poster assets should rerun that helper or an equivalent project script, then wire new optimized paths into the rendering layer before deployment.
+
+## 2026-06-13 Poster Compression Readability Review
+
+The user asked to compare optimized poster readability against original poster assets and save the conclusion to project history.
+
+Review scope:
+
+- Compared all 15 `assets/posters/*-optimized.jpg` files against their original `.jpg` / `.png` source files.
+- Generated temporary local comparison sheets:
+  - `C:\Users\T480S\AppData\Local\Temp\poster-readability-full.png`
+  - `C:\Users\T480S\AppData\Local\Temp\poster-readability-bottom-crops.png`
+  - `C:\Users\T480S\AppData\Local\Temp\poster-readability-text-heavy.png`
+- Did not copy those diagnostic PNGs into the project because they are large temporary QA artifacts and would work against the free-tier/static-asset budget.
+
+Measured result:
+
+- The optimized poster set keeps the same pixel dimensions as the originals; it changes encoding/quality rather than resizing.
+- Combined source size for optimized-pair originals: about 16.61 MB.
+- Combined optimized display payload: about 3.68 MB.
+- Individual reductions ranged from about 34% to 92%.
+- Highest compression cases were `alter-pavillon`, `photocult-mask-desire-auction`, `mrd`, `santa-k`, `matisa-limsum`, `cltx-abyss`, `milo-cosmjn`, and `cyber-buddha`.
+
+Readability conclusion:
+
+- Current optimized images are appropriate for the poster wall and poster archive browsing surfaces.
+- Main poster information such as title, date, venue, artist names, and strong visual identity remains readable in the optimized versions.
+- Very small ticketing text, QR codes, fine texture, and tiny footer details remain the risky areas. In many cases those details were already marginal in the original when viewed at wall/card size.
+- Text-heavy assets such as `fruitygroove-soul-navigator`, `kollin`, `horizon`, and `dark-room` remain readable after compression; their compression ratios are lower and visual damage is limited.
+- High-frequency/dark/noisy assets such as `mrd` and `santa-k` show more JPEG noise, but still preserve the primary poster message.
+
+Decision:
+
+- Keep using optimized poster files as the default `thumbnail` / `display` assets for archive and wall UI.
+- Do not default-load originals in browsing surfaces.
+- If poster collection, provenance, QR scanning, or high-res download becomes a product feature, add a separate `Open original` / `High-res` link in the modal while keeping optimized images as the default page payload.
+
+## 2026-06-13 Poster Compression and Supabase Upload Workflow
+
+The user asked to compress the remaining posters, upload all poster metadata to Supabase, and make the workflow recallable as part of scraping.
+
+Current workflow:
+
+- Save raw downloaded poster files under `assets/posters/` and reference that raw local path in event data as `posterUrl`.
+- Run `npm run posters:prepare` to generate `assets/posters/*-optimized.jpg` for every poster source and regenerate `data/poster-archive.json`.
+- Run `npm run posters:upload` to prepare posters and then run `npm run supabase:import`.
+- `npm run scrape` now runs the same poster preparation step after refreshing event data and SEO pages.
+- `.github/workflows/scrape-events.yml` commits `assets/posters` alongside generated event data, poster archive metadata, generated event pages, and `sitemap.xml`.
+- Supabase imports optimized poster display paths into both `poster_archive.image.display` / `image.thumbnail` and `events.poster_url`.
+
+Future recall command:
+
+```bash
+npm run posters:upload
+```

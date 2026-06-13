@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T01:57:59.816Z",
+  "generatedAt": "2026-06-13T07:57:22.984Z",
   "sourceData": "data/events.json",
   "storagePolicy": {
     "mode": "static-json-plus-local-optimized-assets",
@@ -12,10 +12,10 @@
       2026
     ],
     "venues": 14,
-    "optimizedCount": 15,
-    "displayBytes": 3859796,
+    "optimizedCount": 20,
+    "displayBytes": 3828943,
     "sourceBytes": 17413652,
-    "displayMegabytes": 3.68,
+    "displayMegabytes": 3.65,
     "sourceMegabytes": 16.61,
     "freeTierSoftCapBytes": 83886080,
     "freeTierSoftCapMegabytes": 80
@@ -52,12 +52,12 @@
         "posterEvidenceStatus": "Event images and WeChat/App ticket QR references are visible on the detail page."
       },
       "image": {
-        "thumbnail": "assets/posters/nova-summer-splash-pool-party.jpg",
-        "display": "assets/posters/nova-summer-splash-pool-party.jpg",
+        "thumbnail": "assets/posters/nova-summer-splash-pool-party-optimized.jpg",
+        "display": "assets/posters/nova-summer-splash-pool-party-optimized.jpg",
         "sourceAsset": "assets/posters/nova-summer-splash-pool-party.jpg",
-        "displayBytes": 49495,
+        "displayBytes": 40690,
         "sourceBytes": 49495,
-        "optimized": false,
+        "optimized": true,
         "mime": "image/jpeg"
       },
       "eventUrl": "events/nova-summer-splash-pool-party.html",
@@ -184,12 +184,12 @@
         "posterEvidenceStatus": "Event image is visible on the detail page."
       },
       "image": {
-        "thumbnail": "assets/posters/afrowave-takeover-la-burg.jpg",
-        "display": "assets/posters/afrowave-takeover-la-burg.jpg",
+        "thumbnail": "assets/posters/afrowave-takeover-la-burg-optimized.jpg",
+        "display": "assets/posters/afrowave-takeover-la-burg-optimized.jpg",
         "sourceAsset": "assets/posters/afrowave-takeover-la-burg.jpg",
-        "displayBytes": 37370,
+        "displayBytes": 42200,
         "sourceBytes": 37370,
-        "optimized": false,
+        "optimized": true,
         "mime": "image/jpeg"
       },
       "eventUrl": "events/afrowave-takeover-la-burg.html",
@@ -315,12 +315,12 @@
         "posterEvidenceStatus": "Event images and WeChat/App ticket QR references are visible on the detail page."
       },
       "image": {
-        "thumbnail": "assets/posters/night-at-museum-90s-disco.jpg",
-        "display": "assets/posters/night-at-museum-90s-disco.jpg",
+        "thumbnail": "assets/posters/night-at-museum-90s-disco-optimized.jpg",
+        "display": "assets/posters/night-at-museum-90s-disco-optimized.jpg",
         "sourceAsset": "assets/posters/night-at-museum-90s-disco.jpg",
-        "displayBytes": 32529,
+        "displayBytes": 38348,
         "sourceBytes": 32529,
-        "optimized": false,
+        "optimized": true,
         "mime": "image/jpeg"
       },
       "eventUrl": "events/night-at-museum-90s-disco.html",
@@ -399,12 +399,12 @@
         "posterEvidenceStatus": "Event image is visible on the detail page."
       },
       "image": {
-        "thumbnail": "assets/posters/sunset-sundays-dome.jpg",
-        "display": "assets/posters/sunset-sundays-dome.jpg",
+        "thumbnail": "assets/posters/sunset-sundays-dome-optimized.jpg",
+        "display": "assets/posters/sunset-sundays-dome-optimized.jpg",
         "sourceAsset": "assets/posters/sunset-sundays-dome.jpg",
-        "displayBytes": 64854,
+        "displayBytes": 39018,
         "sourceBytes": 64854,
-        "optimized": false,
+        "optimized": true,
         "mime": "image/jpeg"
       },
       "eventUrl": "events/sunset-sundays-dome.html",
@@ -575,12 +575,12 @@
         "posterEvidenceStatus": "Event images and WeChat/App ticket QR references are visible on the detail page."
       },
       "image": {
-        "thumbnail": "assets/posters/nova-sunset-sessions-flair.jpg",
-        "display": "assets/posters/nova-sunset-sessions-flair.jpg",
+        "thumbnail": "assets/posters/nova-sunset-sessions-flair-optimized.jpg",
+        "display": "assets/posters/nova-sunset-sessions-flair-optimized.jpg",
         "sourceAsset": "assets/posters/nova-sunset-sessions-flair.jpg",
-        "displayBytes": 38798,
+        "displayBytes": 31937,
         "sourceBytes": 38798,
-        "optimized": false,
+        "optimized": true,
         "mime": "image/jpeg"
       },
       "eventUrl": "events/nova-sunset-sessions-flair.html",

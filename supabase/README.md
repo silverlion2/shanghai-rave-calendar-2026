@@ -9,8 +9,10 @@ This project has a Supabase-backed schema for the static Shanghai Rave Index dat
 - `poster_archive`, `source_checks`, `site_pages`
 - `love_wall_posts`
 - `profiles` for authenticated moderator/admin roles
+- `user_event_preferences`, `saved_events` for authenticated account personalization
 
 All tables have Row Level Security enabled. Public visitors can read published calendar data and approved Love Wall posts. Anonymous visitors can insert only pending Love Wall submissions. Imports and moderation use server-side credentials only.
+Authenticated account users can read and update only their own preference profile and saved event shortlist.
 
 ## Local Env
 
@@ -39,6 +41,16 @@ npm run supabase:migrate
 npm run supabase:import
 npm run supabase:configure-client
 ```
+
+## Poster Archive Upload
+
+After adding or replacing local poster files, run:
+
+```bash
+npm run posters:upload
+```
+
+This compresses every poster source into `assets/posters/*-optimized.jpg`, regenerates `data/poster-archive.json`, and upserts the updated metadata into Supabase. Supabase stores poster paths and metadata in `poster_archive` and imports optimized display paths into `events.poster_url`; image files are deployed from the static site.
 
 ## Love Wall Client Config
 

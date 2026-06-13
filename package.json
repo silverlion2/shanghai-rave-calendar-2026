@@ -5,12 +5,16 @@
   "description": "Interactive Shanghai Rave Index for 2026 techno and rave events.",
   "scripts": {
     "start": "npx serve .",
+    "test:account": "node --test tests/account-system.test.js",
     "seo": "node scripts/generate-seo-pages.js",
-    "poster-archive": "node scripts/generate-poster-archive.js",
-    "scrape": "node scripts/scrape-events.js && node scripts/generate-seo-pages.js && node scripts/generate-poster-archive.js",
+    "poster-archive": "npm run posters:prepare",
+    "posters:optimize": "node scripts/optimize-posters.js",
+    "posters:prepare": "node scripts/optimize-posters.js --archive --all --allow-larger",
+    "posters:upload": "npm run posters:prepare && npm run supabase:import",
+    "scrape": "node scripts/scrape-events.js && node scripts/generate-seo-pages.js && npm run posters:prepare",
     "structure": "node scripts/check-site-structure.js",
     "audit": "node scripts/audit-events.js",
-    "check": "node --check scripts/check.js && node --check scripts/site-structure.js && node --check scripts/site-components.js && node --check scripts/check-site-structure.js && node --check scripts/scrape-events.js && node --check scripts/audit-events.js && node --check scripts/generate-seo-pages.js && node --check scripts/generate-poster-archive.js && node --check scripts/apply-supabase-migrations.js && node --check scripts/import-supabase-data.js && node --check scripts/write-love-wall-config.js && node --check assets/poster-archive.js && node scripts/check-site-structure.js && node scripts/check.js && node scripts/audit-events.js",
+    "check": "node --check scripts/check.js && node --check scripts/site-structure.js && node --check scripts/site-components.js && node --check scripts/check-site-structure.js && node --check scripts/scrape-events.js && node --check scripts/audit-events.js && node --check scripts/generate-seo-pages.js && node --check scripts/generate-poster-archive.js && node --check scripts/optimize-posters.js && node --check scripts/apply-supabase-migrations.js && node --check scripts/import-supabase-data.js && node --check scripts/write-love-wall-config.js && node --check assets/poster-archive.js && node --check assets/account-system.js && node --test tests/account-system.test.js && node scripts/check-site-structure.js && node scripts/check.js && node scripts/audit-events.js",
     "supabase:migrate": "node scripts/apply-supabase-migrations.js",
     "supabase:import": "node scripts/import-supabase-data.js",
     "supabase:configure-client": "node scripts/write-love-wall-config.js",
@@ -19,6 +23,7 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.108.1",
-    "postgres": "^3.4.9"
+    "postgres": "^3.4.9",
+    "sharp": "^0.35.1"
   }
 }

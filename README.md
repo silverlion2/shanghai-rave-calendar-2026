@@ -15,6 +15,10 @@ npx serve .
 
 When served over HTTP, the calendar reads `data/events.json`. If that file is missing or blocked by a direct `file://` preview, the embedded fallback events in the HTML are used.
 
+## Account dispatch
+
+`account.html` provides a personal dispatch system for saved sounds, venues, budget mode, timing, source confidence, and event shortlists. It works locally through `localStorage` without sign-in, and can sync across devices through Supabase Auth after the account migration is applied. The homepage reads the same preference profile into the `For you` dispatch panel.
+
 ## DJ tracking
 
 `djs.html` builds local performer profiles from Shanghai calendar lineups and gives every DJ a past/future itinerary surface. Each profile always lists its known Shanghai Rave Index appearances, while `data/tracked-dj-itineraries.js` adds curated worldwide tour rows when official or high-signal sources are available. `npm run scrape` preserves curated overlays and regenerates source-backed rows from event `futureTourPlan` fields, then records `djItineraryStats` in `data/events.json`.
@@ -41,11 +45,29 @@ V1 uses GitHub only:
 3. It checks X/Twitter keyword searches from `config/scrape-keywords.json` as discovery-only social leads.
 4. It writes a `computerUseQueue` for known anti-bot, logged-in, app-only, poster/image, and mini-program sources that the agent should inspect with Chrome + Computer Use.
 5. It merges agent-collected, browser-verified event updates from `config/curated-events.json`.
-6. For any event with `posterEvidence`, the collector must download the flyer into `assets/posters/`, add a local `posterUrl`, and avoid using remote `images.ra.co` URLs in the UI.
+6. For any event with `posterEvidence`, the collector must download the flyer into `assets/posters/`, add a local `posterUrl`, run the poster preparation pipeline, and avoid using remote `images.ra.co` URLs in the UI.
 7. The script writes `data/events.json`, `data/dj-data.js`, and `data/tracked-dj-itineraries.js`.
 8. The workflow commits the changed data files back to the repository.
 
-No database is required for this version.
+Static browsing does not require a database. Supabase is used when configured for backend tables, Love Wall submissions, account personalization, and imported poster archive metadata.
+
+## Poster compression and upload
+
+Save raw poster files under `assets/posters/` and reference the raw local path in the event `posterUrl`, for example `assets/posters/event-slug.png`.
+
+```bash
+npm run posters:prepare
+```
+
+That command writes compressed display files as `assets/posters/event-slug-optimized.jpg` for every poster source, then regenerates `data/poster-archive.json` so `image.display` and `image.thumbnail` point at the optimized asset. `npm run scrape` runs this same preparation step after refreshing event data.
+
+To push the updated poster metadata into Supabase:
+
+```bash
+npm run posters:upload
+```
+
+Supabase stores the poster paths and metadata in `poster_archive` and uses the optimized display path for imported `events.poster_url`; the actual images stay in the repo and are served as static assets after deployment. Use `npm run posters:optimize -- --force --all --allow-larger` to rebuild existing optimized files.
 
 ## Website structure and theme
 
