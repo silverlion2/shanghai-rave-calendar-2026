@@ -682,8 +682,10 @@
       }
     }
   </style>
-  <link rel="stylesheet" href="assets/basement-dispatch.css">
+  <link rel="stylesheet" href="assets/basement-dispatch.css?v=admin-corner-20260613b">
+  <link rel="stylesheet" href="assets/account-system.css">
   <script src="assets/love-wall-supabase-config.js"></script>
+  <script src="assets/account-system.js" defer></script>
 </head>
 <body>
   <main class="shell dispatch-shell love-page">
@@ -698,7 +700,6 @@
         <a class="nav-link" href="venues.html">Venues</a>
         <a class="nav-link" href="djs.html">DJs</a>
         <a class="nav-link" href="account.html">Account</a>
-        <a class="nav-link" href="ops.html">Ops</a>
       </div>
       <span class="tag">Local audience notes</span>
     </nav>
@@ -803,6 +804,8 @@
       <textarea class="share-box" id="shareBox" tabindex="-1" aria-hidden="true"></textarea>
     </section>
 
+    <section class="account-public-guide-shell" data-account-guide="love" aria-label="Account guidance"></section>
+
     <footer class="footnotes bottom-dispatch-bar" aria-label="Basement Dispatch status">
       <div class="bar-cell update-cell">
         <span class="footer-alert-mark" aria-hidden="true">!</span>
@@ -821,15 +824,12 @@
         <span>A public submission wall needs moderation and spam control.</span>
         <span>This version is ready for product and design review.</span>
       </div>
-      <a class="bar-cell ops-cell" href="ops.html" aria-label="Open Ops desk">
-        <span>Ops desk</span>
-        <b>Review queue -></b>
-      </a>
       <div class="bar-cell source-cell">
         <span>Care first</span>
         <span>Bass second</span>
       </div>
     </footer>
+    <a class="admin-corner" data-admin-corner href="ops.html" aria-label="Admin sign in">admin</a>
   </main>
 
   <script>

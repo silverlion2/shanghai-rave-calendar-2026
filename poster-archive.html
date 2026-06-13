@@ -10,7 +10,8 @@
   <link rel="canonical" href="https://raveindexsh.top/poster-archive">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" href="/og-image.png" type="image/png">
-  <link rel="stylesheet" href="assets/basement-dispatch.css">
+  <link rel="stylesheet" href="assets/basement-dispatch.css?v=admin-corner-20260613b">
+  <link rel="stylesheet" href="assets/account-system.css">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HP6NQ3VZB9"></script>
   <script>
@@ -650,6 +651,7 @@
       }
     }
   </style>
+  <script src="assets/account-system.js" defer></script>
 </head>
 <body>
   <main class="shell dispatch-shell">
@@ -663,7 +665,6 @@
       <a class="nav-link" href="venues.html">Venues</a>
       <a class="nav-link" href="djs.html">DJs</a>
       <a class="nav-link" href="account.html">Account</a>
-      <a class="nav-link" href="ops.html">Ops</a>
     </nav>
 
     <header class="archive-head">
@@ -733,6 +734,8 @@
       </section>
     </section>
 
+    <section class="account-public-guide-shell" data-account-guide="archive" aria-label="Account guidance"></section>
+
     <footer class="footnotes bottom-dispatch-bar" aria-label="Basement Dispatch status">
       <div class="bar-cell update-cell">
         <span>Archive seed</span>
@@ -750,15 +753,12 @@
         <span>Source layer</span>
         <b>Event evidence kept</b>
       </div>
-      <a class="bar-cell ops-cell" href="ops.html" aria-label="Open Ops desk">
-        <span>Ops desk</span>
-        <b>Review queue -></b>
-      </a>
       <div class="bar-cell source-cell">
         <span>Free tier</span>
         <span>Storage aware</span>
       </div>
     </footer>
+    <a class="admin-corner" data-admin-corner href="ops.html" aria-label="Admin sign in">admin</a>
   </main>
 
   <div class="poster-modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">

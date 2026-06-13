@@ -7,7 +7,9 @@ const {
   savedEventIdsAfterToggle,
   personalizedSummary,
   accountAccessState,
+  adminAccessState,
   accountFeatureCatalog,
+  publicAccountGuide,
 } = require("../assets/account-system.js");
 
 const sampleEvents = [
@@ -176,6 +178,42 @@ test("accountAccessState gates account tools behind Supabase Auth", () => {
   });
 });
 
+test("adminAccessState only unlocks ops for Supabase admin profiles", () => {
+  assert.deepEqual(adminAccessState({ loading: true }), {
+    mode: "loading",
+    label: "Checking admin",
+    action: "loading",
+  });
+  assert.deepEqual(adminAccessState({ hasSupabase: false }), {
+    mode: "unavailable",
+    label: "Supabase required",
+    action: "configure",
+  });
+  assert.deepEqual(adminAccessState({ hasSupabase: true, session: null }), {
+    mode: "gated",
+    label: "Admin sign in required",
+    action: "authenticate",
+  });
+  assert.deepEqual(adminAccessState({
+    hasSupabase: true,
+    session: { user: { id: "user-1" } },
+    role: "contributor",
+  }), {
+    mode: "denied",
+    label: "Admin role required",
+    action: "sign-out",
+  });
+  assert.deepEqual(adminAccessState({
+    hasSupabase: true,
+    session: { user: { id: "admin-1" } },
+    role: "admin",
+  }), {
+    mode: "unlocked",
+    label: "Admin verified",
+    action: "enter",
+  });
+});
+
 test("accountFeatureCatalog lists live Supabase features and account expansion paths", () => {
   const features = accountFeatureCatalog();
   const ids = features.map(feature => feature.id);
@@ -192,6 +230,22 @@ test("accountFeatureCatalog lists live Supabase features and account expansion p
     "moderation-role",
   ]);
   assert.ok(features.filter(feature => feature.status === "live").length >= 4);
-  assert.ok(features.every(feature => feature.title && feature.description && feature.storage));
+  assert.ok(features.every(feature => feature.title && feature.hook && feature.payoff && feature.description && feature.storage));
+  assert.ok(features.find(feature => feature.id === "for-you-ranking").hook.includes("radar"));
+  assert.ok(features.find(feature => feature.id === "source-alerts").payoff.includes("Drop"));
   assert.ok(features.find(feature => feature.id === "saved-events").storage.includes("saved_events"));
+});
+
+test("publicAccountGuide tailors account prompts for non-login pages", () => {
+  const plannerGuide = publicAccountGuide("planner");
+  const loveGuide = publicAccountGuide("love");
+  const defaultGuide = publicAccountGuide("unknown-page");
+
+  assert.equal(plannerGuide.title, "Route memory");
+  assert.ok(plannerGuide.description.includes("itinerary"));
+  assert.ok(plannerGuide.benefits.includes("Keep saved nights and route intent together"));
+  assert.equal(loveGuide.title, "Floor name");
+  assert.ok(loveGuide.benefits.includes("Carry one display name across public notes"));
+  assert.equal(defaultGuide.title, "Claim your radar");
+  assert.equal(defaultGuide.href, "account.html");
 });

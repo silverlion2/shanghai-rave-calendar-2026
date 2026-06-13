@@ -3,6 +3,8 @@ const {
   rootThemeHref,
 } = require("./site-structure");
 
+const THEME_STYLESHEET_VERSION = "admin-corner-20260613b";
+
 function renderHtmlDocument({ head, body }) {
   return `<!doctype html>
 <html lang="en">
@@ -30,6 +32,7 @@ function renderSeoHead(structure, {
   stylesheets = [],
 }) {
   const resolvedStylesheets = (stylesheets.length ? stylesheets : [rootThemeHref(structure)]).filter(Boolean);
+  const themeHref = rootThemeHref(structure);
   return `  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${escapeHtml(title)}</title>
@@ -50,7 +53,11 @@ ${renderGoogleTag(structure.site.googleTagId)}
   <script type="application/ld+json">
 ${jsonLd(schema)}
   </script>
-${resolvedStylesheets.map(href => `  <link rel="stylesheet" href="${escapeAttr(assetPrefix + href)}">`).join("\n")}`;
+${resolvedStylesheets.map(href => `  <link rel="stylesheet" href="${escapeAttr(assetPrefix + versionedStylesheetHref(href, themeHref))}">`).join("\n")}`;
+}
+
+function versionedStylesheetHref(href, themeHref) {
+  return href === themeHref ? `${href}?v=${THEME_STYLESHEET_VERSION}` : href;
 }
 
 function renderGoogleTag(googleTagId) {
@@ -99,8 +106,6 @@ function renderBottomDispatchFooter(structure, {
     "Watchlist leads stay noindexed until stronger evidence lands.",
   ],
   actionHref = "ops.html",
-  actionLabel = "Ops desk",
-  actionText = "Review queue ->",
   badge = ["Source first", "Rave second"],
 } = {}) {
   return `
@@ -120,14 +125,11 @@ function renderBottomDispatchFooter(structure, {
       <div class="bar-cell">
         ${disclaimer.map(line => `<span>${escapeHtml(line)}</span>`).join("\n        ")}
       </div>
-      <a class="bar-cell ops-cell" href="${escapeAttr(prefix + actionHref)}" aria-label="Open Ops desk">
-        <span>${escapeHtml(actionLabel)}</span>
-        <b>${escapeHtml(actionText)}</b>
-      </a>
       <div class="bar-cell source-cell">
         ${badge.map(line => `<span>${escapeHtml(line)}</span>`).join("\n        ")}
       </div>
     </footer>
+    <a class="admin-corner" data-admin-corner href="${escapeAttr(prefix + actionHref)}" aria-label="Admin sign in">admin</a>
   `;
 }
 

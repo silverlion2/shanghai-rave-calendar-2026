@@ -334,7 +334,7 @@ function assertGoogleTracking(file, html) {
 }
 
 function assertRootDispatchFormat(file, html) {
-  if (!html.includes('href="assets/basement-dispatch.css"')) {
+  if (!hasStylesheet(html, "assets/basement-dispatch.css")) {
     throw new Error(`${file} must load the shared Basement Dispatch stylesheet`);
   }
   if (!html.includes("bottom-dispatch-bar")) {
@@ -349,7 +349,7 @@ function assertGeneratedDispatchFormat(file, html) {
   if (websiteStructure.site.eventDetailStylesheet && !html.includes(`href="../${websiteStructure.site.eventDetailStylesheet}"`)) {
     throw new Error(`${file} must load the generated event detail stylesheet`);
   }
-  if (!html.includes('href="../assets/basement-dispatch.css"')) {
+  if (!hasStylesheet(html, "../assets/basement-dispatch.css")) {
     throw new Error(`${file} must load the shared Basement Dispatch stylesheet`);
   }
   if (!/<main\s+class="[^"]*\bdispatch-shell\b[^"]*"/.test(html)) {
@@ -358,6 +358,14 @@ function assertGeneratedDispatchFormat(file, html) {
   if (!html.includes("bottom-dispatch-bar")) {
     throw new Error(`${file} must use the shared Basement Dispatch footer format`);
   }
+}
+
+function hasStylesheet(html, href) {
+  return new RegExp(`<link\\s+rel="stylesheet"\\s+href="${escapeRegExp(href)}(?:\\?[^"]*)?">`).test(html);
+}
+
+function escapeRegExp(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
 function assertNoDuplicateEventsIndexLinks(file, html) {
@@ -642,9 +650,20 @@ const itineraryRequirements = [
   { file: "djs.html", text: "data-listen-source", label: "DJ listening source links" },
 ];
 
+const publicAdminCornerFiles = [
+  "index.html",
+  "shanghai-rave-calendar-2026.html",
+  "poster-wall.html",
+  "love-wall.html",
+  "poster-archive.html",
+  "planner.html",
+  "rave-everywhere.html",
+  "venues.html",
+  "djs.html",
+  "account.html",
+];
+
 const opsRequirements = [
-  { file: "index.html", text: 'href="ops.html"', label: "calendar ops console link" },
-  { file: "shanghai-rave-calendar-2026.html", text: 'href="ops.html"', label: "archive ops console link" },
   { file: "ops.html", text: 'id="leadList"', label: "AI intake and review queue" },
   { file: "ops.html", text: 'option value="computer-use"', label: "Computer Use source filter" },
   { file: "ops.html", text: 'id="publishCopy"', label: "WeChat/Xiaohongshu copy editor" },
@@ -657,7 +676,19 @@ const opsRequirements = [
   { file: "ops.html", text: "function routedTicketUrl(", label: "ticket routing URL builder" },
   { file: "ops.html", text: "function dailyBrief(", label: "daily report generator" },
   { file: "ops.html", text: "window.localStorage", label: "local review workflow persistence" },
+  { file: "ops.html", text: 'data-ops-admin-gate', label: "ops admin gate mount" },
+  { file: "ops.html", text: 'data-ops-private hidden', label: "ops private console hidden by default" },
+  { file: "ops.html", text: "assets/love-wall-supabase-config.js", label: "ops Supabase config" },
+  { file: "ops.html", text: "assets/ops-admin-gate.js", label: "ops admin gate script" },
+  { file: "assets/ops-admin-gate.js", text: "adminAccessState", label: "ops admin role gate" },
+  { file: "assets/account-system.js", text: "function adminAccessState(", label: "account admin access state" },
 ];
+
+const adminCornerRequirements = publicAdminCornerFiles.map(file => ({
+  file,
+  text: "data-admin-corner",
+  label: `${file} small admin corner`,
+}));
 
 const scrapeRequirements = [
   { file: "scripts/scrape-events.js", text: "DJ_ITINERARY_FILE", label: "scraper tracked itinerary output path" },
@@ -748,7 +779,7 @@ const accountRequirements = [
   { file: "djs.html", text: 'href="account.html"', label: "DJ database Account link" },
   { file: "ops.html", text: 'href="account.html"', label: "ops Account link" },
   { file: "account.html", text: "Personal Dispatch", label: "account page title" },
-  { file: "account.html", text: "Supabase Auth gate", label: "account Supabase Auth gate copy" },
+  { file: "account.html", text: "Your rave signal lives here", label: "account value proposition copy" },
   { file: "account.html", text: "data-account-app", label: "account app mount" },
   { file: "account.html", text: "assets/account-system.js", label: "account browser module" },
   { file: "account.html", text: "assets/account-system.css", label: "account styles" },
@@ -765,10 +796,36 @@ const accountRequirements = [
   { file: "sitemap.xml", text: `${siteUrl}/account`, label: "Account sitemap URL" },
 ];
 
-for (const requirement of [...itineraryRequirements, ...opsRequirements, ...scrapeRequirements, ...posterArchiveRequirements, ...everywhereRequirements, ...loveWallRequirements, ...accountRequirements]) {
+const accountGuidePages = [
+  { file: "index.html", context: "calendar" },
+  { file: "shanghai-rave-calendar-2026.html", context: "calendar" },
+  { file: "poster-wall.html", context: "wall" },
+  { file: "love-wall.html", context: "love" },
+  { file: "poster-archive.html", context: "archive" },
+  { file: "planner.html", context: "planner" },
+  { file: "rave-everywhere.html", context: "everywhere" },
+  { file: "venues.html", context: "venues" },
+  { file: "djs.html", context: "djs" },
+];
+
+const accountGuideRequirements = accountGuidePages.flatMap(page => [
+  { file: page.file, text: `data-account-guide="${page.context}"`, label: `${page.file} public account guide mount` },
+  { file: page.file, text: "assets/account-system.css", label: `${page.file} public account guide styles` },
+  { file: page.file, text: "assets/account-system.js", label: `${page.file} public account guide script` },
+]);
+
+for (const requirement of [...itineraryRequirements, ...opsRequirements, ...adminCornerRequirements, ...scrapeRequirements, ...posterArchiveRequirements, ...everywhereRequirements, ...loveWallRequirements, ...accountRequirements, ...accountGuideRequirements]) {
   const html = fs.readFileSync(requirement.file, "utf8");
   if (!html.includes(requirement.text)) {
     throw new Error(`${requirement.file} missing feature marker: ${requirement.label}`);
+  }
+}
+
+for (const file of publicAdminCornerFiles) {
+  const html = fs.readFileSync(file, "utf8");
+  const navBlocks = Array.from(html.matchAll(/<nav\b[\s\S]*?<\/nav>/gi)).map(match => match[0]);
+  if (navBlocks.some(block => block.includes('href="ops.html"'))) {
+    throw new Error(`${file} must keep admin out of public navigation`);
   }
 }
 

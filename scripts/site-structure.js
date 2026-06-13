@@ -169,7 +169,7 @@ function assertTrackedPage(root, structure, page, options = {}) {
   assertFile(file, `tracked page ${page.file}`);
   const html = fs.readFileSync(file, "utf8");
   const themeHref = rootThemeHref(structure);
-  if (!html.includes(`href="${themeHref}"`)) {
+  if (!hasStylesheet(html, themeHref)) {
     throw new Error(`${page.file} must load the tracked theme stylesheet: ${themeHref}`);
   }
   if (page.shell && !new RegExp(`<main\\s+class="[^"]*\\b${escapeRegExp(page.shell)}\\b[^"]*"`).test(html)) {
@@ -188,6 +188,10 @@ function assertTrackedPage(root, structure, page, options = {}) {
       }
     }
   }
+}
+
+function hasStylesheet(html, href) {
+  return new RegExp(`<link\\s+rel="stylesheet"\\s+href="${escapeRegExp(href)}(?:\\?[^"]*)?">`).test(html);
 }
 
 function assertFile(file, label) {

@@ -702,6 +702,99 @@
       display: none !important;
     }
 
+    [data-ops-private][hidden] {
+      display: none !important;
+    }
+
+    .ops-admin-gate {
+      min-height: 620px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255, 106, 42, .42);
+      background:
+        repeating-linear-gradient(-8deg, rgba(255, 106, 42, .08) 0 1px, transparent 1px 13px),
+        linear-gradient(135deg, rgba(65, 215, 255, .09), rgba(255, 106, 42, .12)),
+        rgba(8, 8, 6, .9);
+      padding: clamp(18px, 4vw, 44px);
+    }
+
+    .ops-admin-card {
+      width: min(920px, 100%);
+      display: grid;
+      grid-template-columns: minmax(260px, .92fr) minmax(280px, 1.08fr);
+      gap: 14px;
+      align-items: stretch;
+    }
+
+    .ops-admin-panel {
+      border: 1px solid rgba(243, 240, 232, .2);
+      background: rgba(8, 8, 6, .82);
+      padding: 16px;
+    }
+
+    .ops-admin-panel strong {
+      display: block;
+      color: var(--ember);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(46px, 8vw, 94px);
+      font-weight: 700;
+      line-height: .86;
+      text-transform: uppercase;
+    }
+
+    .ops-admin-panel span,
+    .ops-admin-form span {
+      color: var(--cyan);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .ops-admin-panel p,
+    .ops-admin-note {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .ops-admin-form {
+      display: grid;
+      gap: 10px;
+      border: 1px solid rgba(65, 215, 255, .32);
+      background: rgba(8, 8, 6, .72);
+      padding: 16px;
+    }
+
+    .ops-admin-form h2 {
+      margin: 0;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(30px, 5vw, 52px);
+      line-height: .96;
+    }
+
+    .ops-admin-field {
+      display: grid;
+      gap: 6px;
+    }
+
+    .ops-admin-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .ops-admin-error {
+      border: 1px solid rgba(255, 92, 98, .55);
+      color: var(--ink);
+      background: rgba(255, 92, 98, .1);
+      padding: 10px;
+      font-size: 12px;
+      line-height: 1.4;
+    }
+
     @media (max-width: 1220px) {
       .workflow {
         grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
@@ -753,9 +846,17 @@
       .bar-row {
         grid-template-columns: 86px minmax(0, 1fr) 30px;
       }
+      .ops-admin-card {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
-  <link rel="stylesheet" href="assets/basement-dispatch.css">
+  <link rel="stylesheet" href="assets/basement-dispatch.css?v=admin-corner-20260613b">
+  <link rel="stylesheet" href="assets/account-system.css">
+  <script src="assets/love-wall-supabase-config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="assets/account-system.js" defer></script>
+  <script src="assets/ops-admin-gate.js" defer></script>
 </head>
 <body>
   <main class="shell dispatch-shell">
@@ -775,6 +876,22 @@
       <span class="tag">Local operator console</span>
     </nav>
 
+    <section class="ops-admin-gate" data-ops-admin-gate aria-live="polite">
+      <div class="ops-admin-card">
+        <div class="ops-admin-panel">
+          <span>Admin only</span>
+          <strong>LOCKED</strong>
+          <p>Ops is not a public account feature. Sign in with a Supabase user whose profile role is set to admin.</p>
+        </div>
+        <div class="ops-admin-form">
+          <span>Checking access</span>
+          <h2>Verifying admin role</h2>
+          <p class="ops-admin-note">The console stays hidden until Supabase Auth and profiles.role both pass.</p>
+        </div>
+      </div>
+    </section>
+
+    <div data-ops-private hidden>
     <header class="topbar">
       <div>
         <div class="kicker">Basement Dispatch ops</div>
@@ -967,6 +1084,7 @@
         <span>Publish second</span>
       </div>
     </footer>
+    </div>
   </main>
 
   <script>

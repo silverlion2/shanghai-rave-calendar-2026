@@ -946,7 +946,9 @@
       }
     }
   </style>
-  <link rel="stylesheet" href="assets/basement-dispatch.css">
+  <link rel="stylesheet" href="assets/basement-dispatch.css?v=admin-corner-20260613b">
+  <link rel="stylesheet" href="assets/account-system.css">
+  <script src="assets/account-system.js" defer></script>
 </head>
 <body>
   <main class="shell dispatch-shell">
@@ -961,7 +963,6 @@
         <a class="nav-link" href="venues.html">Venues</a>
         <a class="nav-link active" href="djs.html">DJs</a>
         <a class="nav-link" href="account.html">Account</a>
-        <a class="nav-link" href="ops.html">Ops</a>
       </div>
       <span class="tag" id="checkedTag">Checked 2026-06-11</span>
     </nav>
@@ -1054,6 +1055,8 @@
       </div>
     </section>
 
+    <section class="account-public-guide-shell" data-account-guide="djs" aria-label="Account guidance"></section>
+
     <footer class="footnotes bottom-dispatch-bar" aria-label="Basement Dispatch status">
       <div class="bar-cell update-cell">
         <span class="footer-alert-mark" aria-hidden="true">!</span>
@@ -1072,15 +1075,12 @@
         <span>Estimated slots divide event windows across lineup order.</span>
         <span>Use linked sources before planning around a specific artist.</span>
       </div>
-      <a class="bar-cell ops-cell" href="ops.html" aria-label="Open Ops desk">
-        <span>Ops desk</span>
-        <b>Review queue -></b>
-      </a>
       <div class="bar-cell source-cell">
         <span>Source first</span>
         <span>Rave second</span>
       </div>
     </footer>
+    <a class="admin-corner" data-admin-corner href="ops.html" aria-label="Admin sign in">admin</a>
   </main>
 
   <script src="data/dj-data.js"></script>

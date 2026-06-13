@@ -16,68 +16,192 @@
   const accountFeatures = [
     {
       id: "auth-profile",
-      title: "Auth profile",
+      title: "Night passport",
       status: "live",
       storage: "Supabase Auth + profiles",
+      hook: "One identity for every room you care about.",
+      payoff: "Walk back in with your signal intact.",
       description: "Email/password and magic-link identity with a display name tied to the existing profile row.",
     },
     {
       id: "preference-sync",
-      title: "Preference sync",
+      title: "Sound memory",
       status: "live",
       storage: "user_event_preferences",
+      hook: "Your account remembers hard, bass, date, warehouse, and the rooms you trust.",
+      payoff: "No more rebuilding filters every weekend.",
       description: "Favorite sounds, rooms, source mode, timing, and budget rules follow the signed-in account.",
     },
     {
       id: "saved-events",
-      title: "Saved events",
+      title: "Night vault",
       status: "live",
       storage: "saved_events",
+      hook: "Lock the nights that made your pulse jump.",
+      payoff: "Your shortlist moves with your account.",
       description: "Shortlist event IDs across devices without treating saves as attendance records.",
     },
     {
       id: "for-you-ranking",
-      title: "For You ranking",
+      title: "Rave radar",
       status: "live",
       storage: "local events + account preferences",
+      hook: "A private radar that pulls the right chaos out of the calendar.",
+      payoff: "The homepage starts with your strongest matches.",
       description: "The homepage dispatch panel ranks upcoming events against the signed-in preference profile.",
     },
     {
       id: "itinerary-sync",
-      title: "Itinerary sync",
+      title: "Route blackbox",
       status: "next",
       storage: "future account_itinerary_slots",
+      hook: "Save the night route before the door time panic.",
+      payoff: "Turn set times into an account-owned route.",
       description: "Move selected set-time routes from browser-only storage into an account-owned itinerary table.",
     },
     {
       id: "love-wall-identity",
-      title: "Love Wall identity",
+      title: "Floor name",
       status: "next",
       storage: "love_wall_posts + profiles",
+      hook: "Keep a stable name when you leave notes on the wall.",
+      payoff: "Show up as yourself without losing moderation.",
       description: "Let signed-in users post under a stable display name while keeping moderation in place.",
     },
     {
       id: "source-alerts",
-      title: "Source alerts",
+      title: "Drop alerts",
       status: "next",
       storage: "future user_alert_rules",
+      hook: "Watch venues, sounds, and saved nights without doom-scrolling.",
+      payoff: "Drop alerts when tickets, sources, or details move.",
       description: "Notify users when watched venues, sounds, or saved events get ticket/source changes.",
     },
     {
       id: "privacy-export",
-      title: "Privacy export",
+      title: "Data eject",
       status: "live",
       storage: "browser export + Supabase-owned rows",
+      hook: "Your preferences should never feel trapped.",
+      payoff: "Export the account map as JSON whenever needed.",
       description: "Export local account preferences and saved event IDs as a portable JSON file.",
     },
     {
       id: "moderation-role",
-      title: "Moderator role",
+      title: "Operator pass",
       status: "admin",
       storage: "profiles.role",
+      hook: "Trusted accounts can graduate from listener to source operator.",
+      payoff: "Role-gated review and contribution workflows.",
       description: "Reuse profile roles for Love Wall review and future trusted-source contribution workflows.",
     },
   ];
+
+  const publicGuideBase = {
+    eyebrow: "Account signal",
+    title: "Claim your radar",
+    description: "Turn public browsing into a private dispatch: saved nights, remembered rooms, sound preferences, and exportable account data.",
+    benefits: [
+      "Save sounds, rooms, and source mode once",
+      "Carry your shortlist across devices",
+      "Open the calendar with your strongest matches first",
+    ],
+    href: "account.html",
+    cta: "Open account",
+  };
+
+  const publicGuideByContext = {
+    calendar: {
+      eyebrow: "Personal dispatch",
+      title: "Tune the calendar",
+      description: "Create an account so the public list starts with your sound, rooms, budget, timing, and trusted-source mode.",
+      benefits: [
+        "Rank events by your saved profile",
+        "Keep shortlist saves attached to your account",
+        "Export your preference map any time",
+      ],
+    },
+    wall: {
+      eyebrow: "Poster wall upgrade",
+      title: "Save the nights that hit",
+      description: "Use an account as a night vault while scanning posters, then bring those saves back into the calendar radar.",
+      benefits: [
+        "Keep poster finds from getting lost",
+        "Move saved events into your For You queue",
+        "Remember rooms that keep pulling you back",
+      ],
+    },
+    archive: {
+      eyebrow: "Archive memory",
+      title: "Build your pattern",
+      description: "Use account preferences to turn the archive into a memory layer for sounds, rooms, and recurring source habits.",
+      benefits: [
+        "Track the rooms you keep choosing",
+        "Export saved-event context with your account",
+        "Use old patterns to tune future recommendations",
+      ],
+    },
+    planner: {
+      eyebrow: "Planner upgrade",
+      title: "Route memory",
+      description: "The planner is local today; your account connects itinerary intent with saved nights, rooms, and future route sync.",
+      benefits: [
+        "Keep saved nights and route intent together",
+        "Prepare for account-owned itinerary slots",
+        "Carry trusted timing preferences into the calendar",
+      ],
+    },
+    love: {
+      eyebrow: "Love Wall identity",
+      title: "Floor name",
+      description: "Claim an account before the wall grows public: one display name, moderation-ready identity, and portable account data.",
+      benefits: [
+        "Carry one display name across public notes",
+        "Keep the wall ready for role-based moderation",
+        "Export your account profile when needed",
+      ],
+    },
+    everywhere: {
+      eyebrow: "Travel signal",
+      title: "Take the radar with you",
+      description: "When you jump between cities, the account keeps your sound profile and trusted-source habits from resetting.",
+      benefits: [
+        "Keep hard, bass, warehouse, and date-friendly defaults",
+        "Compare travel ideas against your Shanghai signal",
+        "Bring saved nights back to one account map",
+      ],
+    },
+    venues: {
+      eyebrow: "Room memory",
+      title: "Remember your rooms",
+      description: "Use an account to turn venue browsing into a room memory system for saved places, preferred sounds, and future alerts.",
+      benefits: [
+        "Keep favorite rooms attached to your profile",
+        "Tune event ranking around venues you trust",
+        "Prepare for venue and source-change alerts",
+      ],
+    },
+    djs: {
+      eyebrow: "Artist signal",
+      title: "Follow the sound",
+      description: "Use account preferences to connect artist discovery with the sounds and rooms that should surface first.",
+      benefits: [
+        "Keep sound preferences from DJ research",
+        "Push matching events higher in For You",
+        "Prepare for future source and lineup alerts",
+      ],
+    },
+    ops: {
+      eyebrow: "Operator layer",
+      title: "Earn the operator pass",
+      description: "Accounts let trusted contributors move from listener to source operator without exposing public tools to everyone.",
+      benefits: [
+        "Separate public browsing from review workflows",
+        "Reuse profile roles for moderation",
+        "Keep source work behind authenticated accounts",
+      ],
+    },
+  };
 
   function normalizePreferences(input = {}) {
     const source = input && typeof input === "object" ? input : {};
@@ -259,8 +383,81 @@
     };
   }
 
+  function adminAccessState({ loading = false, hasSupabase = false, session = null, role = "" } = {}) {
+    if (loading) {
+      return {
+        mode: "loading",
+        label: "Checking admin",
+        action: "loading",
+      };
+    }
+    if (!hasSupabase) {
+      return {
+        mode: "unavailable",
+        label: "Supabase required",
+        action: "configure",
+      };
+    }
+    if (!session || !session.user) {
+      return {
+        mode: "gated",
+        label: "Admin sign in required",
+        action: "authenticate",
+      };
+    }
+    if (String(role || "").toLowerCase() !== "admin") {
+      return {
+        mode: "denied",
+        label: "Admin role required",
+        action: "sign-out",
+      };
+    }
+    return {
+      mode: "unlocked",
+      label: "Admin verified",
+      action: "enter",
+    };
+  }
+
   function accountFeatureCatalog() {
     return accountFeatures.map(feature => ({ ...feature }));
+  }
+
+  function publicAccountGuide(context = "default") {
+    const key = String(context || "default").toLowerCase();
+    const guide = publicGuideByContext[key] || {};
+    return {
+      ...publicGuideBase,
+      ...guide,
+      benefits: Array.isArray(guide.benefits) ? [...guide.benefits] : [...publicGuideBase.benefits],
+    };
+  }
+
+  function renderPublicAccountGuide(context) {
+    const guide = publicAccountGuide(context);
+    return `
+      <div class="account-public-guide-card">
+        <div class="account-public-guide-main">
+          <span>${escapeHtml(guide.eyebrow)}</span>
+          <h2>${escapeHtml(guide.title)}</h2>
+          <p>${escapeHtml(guide.description)}</p>
+        </div>
+        <div class="account-public-guide-benefits" aria-label="Account benefits">
+          ${guide.benefits.slice(0, 3).map(benefit => `<span>${escapeHtml(benefit)}</span>`).join("")}
+        </div>
+        <a class="account-public-guide-link" href="${escapeHtml(guide.href)}">${escapeHtml(guide.cta)}</a>
+      </div>
+    `;
+  }
+
+  function enhancePublicAccountGuides(win = typeof window !== "undefined" ? window : undefined) {
+    const doc = win && win.document;
+    if (!win || !doc) return;
+    doc.querySelectorAll("[data-account-guide]").forEach(mount => {
+      const context = mount.getAttribute("data-account-guide") || doc.body.dataset.accountGuide || "default";
+      mount.classList.add("account-public-guide");
+      mount.innerHTML = renderPublicAccountGuide(context);
+    });
   }
 
   function isPastEvent(event, today) {
@@ -575,17 +772,23 @@
           <aside class="account-panel account-auth-wall">
             <div class="account-panel-head">
               <span>${escapeHtml(access.label)}</span>
-              <h2>Register / sign in</h2>
-              <p>Account-only tools are behind Supabase Auth. Sign in to sync preferences, saved events, privacy export, and future alert workflows.</p>
+              <h2>Claim your radar</h2>
+              <p>The public calendar shows the city. Your account turns it into your private night signal.</p>
             </div>
             <div class="account-lock-readout">
-              <b>LOCKED</b>
-              <span>Personal dispatch requires an authenticated Supabase session.</span>
+              <b>UNLOCK</b>
+              <span>Save your sound, remember your rooms, and let the calendar chase the right nights first.</span>
+            </div>
+            <div class="account-why-stack" aria-label="Account benefits">
+              <span>Stop rebuilding filters every weekend</span>
+              <span>Carry saved nights across devices</span>
+              <span>Turn the homepage into your rave radar</span>
+              <span>Export your account map any time</span>
             </div>
             ${state.error ? `<div class="account-error">${escapeHtml(state.error)}</div>` : ""}
             ${canAuthenticate ? renderAuthForm(prefs) : renderSupabaseUnavailable()}
           </aside>
-          ${renderFeatureCatalogPanel("Account unlocks", "These are the account-backed surfaces this system can support. Live rows are already wired to Supabase or browser export; next rows are product-ready extension points.")}
+          ${renderFeatureCatalogPanel("What your account unlocks", "Not another profile page. This is a control room for finding better nights faster.")}
         </section>
       `;
     }
@@ -610,7 +813,7 @@
             <button class="button" type="button" data-account-action="sign-in">Sign in</button>
             <button class="button" type="button" data-account-action="magic-link">Email link</button>
           </div>
-          <span class="account-form-note">Password auth and magic-link auth both use the configured Supabase project.</span>
+          <span class="account-form-note">Supabase keeps the lock. Basement Dispatch keeps the signal sharp.</span>
         </form>
       `;
     }
@@ -709,7 +912,7 @@
           </section>
         </section>
 
-        ${renderFeatureCatalogPanel("Account feature map", "Use this as the product roadmap for account-backed surfaces.")}
+        ${renderFeatureCatalogPanel("Your account stack", "Live tools are active now. Next tools show where this account can grow.")}
 
         <section class="account-results-grid">
           <section class="account-panel">
@@ -755,7 +958,9 @@
                   <span>${escapeHtml(feature.status)}</span>
                   <h3>${escapeHtml(feature.title)}</h3>
                 </div>
+                <strong>${escapeHtml(feature.hook)}</strong>
                 <p>${escapeHtml(feature.description)}</p>
+                <em>${escapeHtml(feature.payoff)}</em>
                 <b>${escapeHtml(feature.storage)}</b>
               </article>
             `).join("")}
@@ -1028,6 +1233,7 @@
   function bootBrowser() {
     if (typeof window === "undefined" || !window.document) return;
     bootstrapAccountPage(window);
+    enhancePublicAccountGuides(window);
     window.addEventListener("rave:events-loaded", event => {
       enhanceCalendarPage({
         events: event.detail && event.detail.events,
@@ -1050,7 +1256,10 @@
     savedEventIdsAfterToggle,
     personalizedSummary,
     accountAccessState,
+    adminAccessState,
     accountFeatureCatalog,
+    publicAccountGuide,
+    enhancePublicAccountGuides,
     loadLocalPreferences,
     saveLocalPreferences,
     createSupabaseClient,

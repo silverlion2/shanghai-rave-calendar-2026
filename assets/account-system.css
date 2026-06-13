@@ -189,6 +189,29 @@
   line-height: 1.45;
 }
 
+.account-why-stack {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.account-why-stack span {
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(54, 199, 231, .28);
+  color: var(--paper);
+  background:
+    linear-gradient(135deg, rgba(54, 199, 231, .14), rgba(255, 85, 47, .08)),
+    rgba(5, 6, 6, .58);
+  padding: 10px;
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 900;
+  line-height: .95;
+  text-transform: uppercase;
+}
+
 .account-status-line {
   grid-template-columns: auto minmax(0, 1fr);
   align-items: center;
@@ -368,6 +391,24 @@
   line-height: 1.42;
 }
 
+.account-feature-card strong {
+  color: var(--paper);
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 900;
+  line-height: .98;
+  text-transform: uppercase;
+}
+
+.account-feature-card em {
+  border-left: 3px solid var(--gold);
+  color: var(--paper);
+  padding-left: 9px;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 1.35;
+}
+
 .account-empty,
 .account-loading {
   border: 1px solid rgba(229, 222, 209, .16);
@@ -398,6 +439,91 @@
   text-align: center;
 }
 
+.account-public-guide {
+  margin: 18px 0;
+}
+
+.account-public-guide-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, .9fr) auto;
+  gap: 14px;
+  align-items: stretch;
+  border: 1px solid rgba(54, 199, 231, .36);
+  background:
+    linear-gradient(90deg, rgba(54, 199, 231, .12), rgba(255, 85, 47, .08) 48%, rgba(215, 169, 40, .1)),
+    rgba(6, 7, 7, .84);
+  padding: 14px;
+}
+
+.account-public-guide-main {
+  min-width: 0;
+  display: grid;
+  gap: 7px;
+}
+
+.account-public-guide-main span,
+.account-public-guide-benefits span,
+.account-public-guide-link {
+  font-family: var(--font-display, "Aptos", "Segoe UI", sans-serif);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.account-public-guide-main span {
+  color: var(--cyan, #41d7ff);
+  font-size: 12px;
+  line-height: 1;
+}
+
+.account-public-guide-main h2 {
+  margin: 0;
+  color: var(--paper, var(--ink, #f2f0e8));
+  font-family: var(--font-display, "Aptos", "Segoe UI", sans-serif);
+  font-size: clamp(28px, 4vw, 46px);
+  font-weight: 900;
+  line-height: .9;
+  text-transform: uppercase;
+}
+
+.account-public-guide-main p {
+  max-width: 760px;
+  margin: 0;
+  color: var(--muted, #a7a39a);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.account-public-guide-benefits {
+  display: grid;
+  gap: 8px;
+}
+
+.account-public-guide-benefits span {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(229, 222, 209, .18);
+  color: var(--paper, var(--ink, #f2f0e8));
+  background: rgba(5, 6, 6, .46);
+  padding: 9px;
+  font-size: 13px;
+  line-height: 1.05;
+}
+
+.account-public-guide-link {
+  min-width: 126px;
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--cyan, #41d7ff);
+  color: var(--void, #080806);
+  background: var(--cyan, #41d7ff);
+  padding: 12px;
+  font-size: 13px;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+}
+
 @media (max-width: 980px) {
   .account-hero,
   .account-login-wall,
@@ -411,9 +537,21 @@
   .account-hero-media {
     min-height: 420px;
   }
+
+  .account-public-guide-card {
+    grid-template-columns: 1fr;
+  }
+
+  .account-public-guide-link {
+    min-height: 44px;
+  }
 }
 
 @media (max-width: 560px) {
+  .account-why-stack {
+    grid-template-columns: 1fr;
+  }
+
   .account-event-card {
     grid-template-columns: 58px minmax(0, 1fr);
   }
