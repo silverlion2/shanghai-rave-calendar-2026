@@ -802,7 +802,7 @@
           </label>
           <label class="account-field">
             <span>Email</span>
-            <input class="input" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+            <input class="input" name="email" type="email" autocomplete="email" placeholder="Email address">
           </label>
           <label class="account-field">
             <span>Password</span>

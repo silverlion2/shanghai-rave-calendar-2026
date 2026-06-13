@@ -11,14 +11,15 @@
     "staticLastmod": "2026-06-12",
     "timezoneOffset": "+08:00",
     "navTagline": "Basement Dispatch / source-first calendar",
-    "contactEmail": "info@shanghairaveindex.com",
-    "socialLabel": "IG @shanghairaveindex"
+    "contactChannel": "RED",
+    "contactHandle": "980793145",
+    "contactCardImage": "assets/social/xhs-contact-card.jpg",
+    "socialLabel": "RED / Xiaohongshu 980793145"
   },
   "primaryNav": [
     "calendar",
     "poster-wall",
     "love-wall",
-    "poster-archive",
     "planner",
     "rave-everywhere",
     "venues",
@@ -55,16 +56,6 @@
       "includeInSitemap": true,
       "changefreq": "weekly",
       "priority": "0.93"
-    },
-    {
-      "id": "poster-archive",
-      "label": "Archive",
-      "file": "poster-archive.html",
-      "route": "/poster-archive",
-      "shell": "dispatch-shell",
-      "includeInSitemap": true,
-      "changefreq": "weekly",
-      "priority": "0.92"
     },
     {
       "id": "planner",
@@ -154,7 +145,6 @@
       "data/dj-data.js",
       "data/tracked-dj-itineraries.js",
       "assets/dj-trial-listen.js",
-      "assets/poster-archive.js",
       "assets/rave-everywhere.js"
     ]
   }

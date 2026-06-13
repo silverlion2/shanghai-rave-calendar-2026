@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rave Everywhere Beta | Shanghai Rave Index</title>
-  <meta name="description" content="Generate a beta virtual rave event, fictional location, and downloadable poster from the DJs collected by Shanghai Rave Index.">
+  <title>Rave Everywhere Preview Room | Shanghai Rave Index</title>
+  <meta name="description" content="Turn collected DJs into a China-accessible preview room with listening links, a fictional location, and a downloadable poster.">
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#c6ff3b">
   <link rel="canonical" href="https://raveindexsh.top/rave-everywhere">
@@ -22,8 +22,8 @@
   </script>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Shanghai Rave Index">
-  <meta property="og:title" content="Rave Everywhere Beta">
-  <meta property="og:description" content="Generate a beta virtual rave event, fictional location, and poster from collected DJ profiles.">
+  <meta property="og:title" content="Rave Everywhere Preview Room">
+  <meta property="og:description" content="Turn collected DJ profiles into a China-accessible preview room, fictional location, and poster.">
   <meta property="og:url" content="https://raveindexsh.top/rave-everywhere">
   <meta property="og:image" content="https://raveindexsh.top/og-image.png">
   <meta property="og:image:alt" content="Shanghai Rave Index beta poster generator preview">
@@ -31,16 +31,16 @@
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Rave Everywhere Beta",
+    "name": "Rave Everywhere Preview Room",
     "url": "https://raveindexsh.top/rave-everywhere",
     "applicationCategory": "LifestyleApplication",
     "operatingSystem": "Any",
-    "description": "Generate a beta virtual rave event, fictional location, and downloadable poster from collected DJ profiles.",
+    "description": "Turn collected DJ profiles into a China-accessible preview room, fictional location, and downloadable poster.",
     "inLanguage": "en",
     "isAccessibleForFree": true
   }
   </script>
-  <link rel="stylesheet" href="assets/basement-dispatch.css?v=admin-corner-20260613b">
+  <link rel="stylesheet" href="assets/basement-dispatch.css?v=xhs-contact-20260613c">
   <link rel="stylesheet" href="assets/account-system.css">
   <style>
     :root {
@@ -445,6 +445,127 @@
       gap: 12px;
     }
 
+    .preview-room,
+    .listening-deck {
+      display: grid;
+      gap: 10px;
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 12px;
+    }
+
+    .room-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .room-readout {
+      min-height: 76px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 6px;
+      padding: 10px;
+      display: grid;
+      align-content: space-between;
+      gap: 8px;
+      background: rgba(255,255,255,.026);
+    }
+
+    .room-readout b {
+      color: var(--accent, var(--acid));
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: 28px;
+      line-height: 1;
+      overflow-wrap: anywhere;
+    }
+
+    .room-readout span,
+    .policy-note,
+    .listen-card span {
+      color: var(--dim);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+      line-height: 1.25;
+    }
+
+    .preview-room h2,
+    .listening-deck h2 {
+      margin: 3px 0 0;
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    .reaction-row,
+    .listen-link-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .reaction-button,
+    .listen-link {
+      min-height: 34px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 999px;
+      padding: 7px 10px;
+      color: var(--ink);
+      background: rgba(255,255,255,.026);
+      font-size: 12px;
+      font-weight: 900;
+      line-height: 1.15;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .reaction-button:hover,
+    .listen-link:hover {
+      color: var(--void);
+      background: var(--acid);
+      border-color: var(--acid);
+    }
+
+    .listen-card {
+      display: grid;
+      gap: 8px;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .listen-card:last-child {
+      border-bottom: 0;
+    }
+
+    .listen-card-head {
+      display: grid;
+      gap: 3px;
+    }
+
+    .listen-card b {
+      color: var(--ink);
+      font-size: 14px;
+      overflow-wrap: anywhere;
+    }
+
+    .listen-link.direct {
+      color: var(--void);
+      background: var(--gold);
+      border-color: var(--gold);
+    }
+
+    .listen-link.china {
+      border-color: rgba(65,215,255,.45);
+      color: var(--cyan);
+    }
+
+    .listen-link.global {
+      color: var(--dim);
+    }
+
     .virtual-badge {
       width: max-content;
       color: var(--void);
@@ -604,6 +725,7 @@
         max-width: calc(100% - 32px) !important;
       }
       .signal-readout,
+      .room-grid,
       .action-row,
       .fact-row {
         grid-template-columns: 1fr;
@@ -626,7 +748,6 @@
         <a class="nav-link" href="index.html">Calendar</a>
         <a class="nav-link" href="poster-wall.html">Wall</a>
         <a class="nav-link" href="love-wall.html">Love</a>
-        <a class="nav-link" href="poster-archive.html">Archive</a>
         <a class="nav-link" href="planner.html">Planner</a>
         <a class="nav-link active" href="rave-everywhere.html">Everywhere</a>
         <a class="nav-link" href="venues.html">Venues</a>
@@ -641,10 +762,10 @@
         <div>
           <div class="kicker">Rave Everywhere beta</div>
           <h1>Rave Everywhere</h1>
-          <p class="subhead">Build a fictional one-night signal from collected DJs, then export the generated poster and concept location without adding anything to the verified calendar.</p>
+          <p class="subhead">Turn collected DJs into a China-accessible preview room with platform listening links, local reactions, a fictional location, and an exportable poster.</p>
           <div class="tag-row">
             <span class="tag virtual-badge">Virtual event, not a verified listing</span>
-            <span class="tag">Local browser generation</span>
+            <span class="tag">China Listening Deck</span>
             <span class="tag">Poster PNG export</span>
           </div>
         </div>
@@ -652,7 +773,7 @@
       <aside class="signal-panel" aria-label="Rave Everywhere beta status">
         <div>
           <div class="kicker">Beta console</div>
-          <p class="subhead">Generated output is a creative draft. Real venue, ticketing, permission, age, and safety checks still live outside this mode.</p>
+          <p class="subhead">No audio is hosted here. The room opens legal platform links and keeps the real calendar separate from creative previews.</p>
         </div>
         <div class="signal-readout">
           <div class="readout" style="--accent: var(--acid)">
@@ -719,6 +840,33 @@
           <div class="meta-strip" id="eventMeta"></div>
         </div>
 
+        <section class="preview-room" id="previewRoom" aria-label="Preview Room">
+          <div>
+            <span class="panel-note">Pre-party layer</span>
+            <h2>Preview Room</h2>
+          </div>
+          <div class="room-grid">
+            <div class="room-readout" style="--accent: var(--acid)">
+              <b id="roomCrowdCount">00</b>
+              <span>local beta crowd</span>
+            </div>
+            <div class="room-readout" style="--accent: var(--cyan)">
+              <b id="roomHeat">--</b>
+              <span>room pulse</span>
+            </div>
+            <div class="room-readout" style="--accent: var(--gold)">
+              <b id="roomRoute">CN</b>
+              <span>music route</span>
+            </div>
+          </div>
+          <div class="reaction-row" aria-label="Local preview room reactions">
+            <button class="reaction-button" type="button" data-room-reaction="locked">Locked <span data-reaction-count="locked">0</span></button>
+            <button class="reaction-button" type="button" data-room-reaction="heat">Heat <span data-reaction-count="heat">0</span></button>
+            <button class="reaction-button" type="button" data-room-reaction="again">Again <span data-reaction-count="again">0</span></button>
+          </div>
+          <p class="policy-note">Local beta reactions only. Use CloudBase/WebSocket later if the room needs real remote presence.</p>
+        </section>
+
         <div class="event-facts" id="eventFacts"></div>
 
         <section class="location-card" aria-label="Generated location">
@@ -732,6 +880,15 @@
         </section>
 
         <div class="lineup-list" id="lineupList" aria-label="Generated lineup"></div>
+
+        <section class="listening-deck" aria-label="China Listening Deck">
+          <div>
+            <span class="panel-note">Links-only playback route</span>
+            <h2>China Listening Deck</h2>
+          </div>
+          <p class="policy-note">No audio is hosted here. QQ Music, NetEase Cloud Music, and Bilibili open in their own platform pages; overseas links stay as fallback.</p>
+          <div id="listeningDeck"></div>
+        </section>
 
         <label class="field-stack">
           <span class="field-label">Share copy</span>
@@ -765,10 +922,15 @@
         <span>Rave Everywhere creates fictional drafts only.</span>
         <span>It does not publish to the real calendar.</span>
       </div>
-      <address class="bar-cell">
-        <span>Questions or updates?</span>
-        <a href="mailto:info@shanghairaveindex.com">info@shanghairaveindex.com</a>
-        <span>IG @shanghairaveindex</span>
+      <address class="bar-cell contact-cell">
+        <a class="contact-card-link" href="assets/social/xhs-contact-card.jpg" aria-label="Open RED Xiaohongshu contact QR card">
+          <span class="contact-copy">
+            <span>Contact / updates</span>
+            <b>RED</b>
+            <em>ID 980793145</em>
+          </span>
+          <img src="assets/social/xhs-contact-card.jpg" alt="" loading="lazy" decoding="async">
+        </a>
       </address>
       <div class="bar-cell">
         <span>Real-world plans still need permission, tickets, safety, and source checks.</span>
@@ -785,10 +947,12 @@
   <script src="data/dj-data.js"></script>
   <script src="data/tracked-dj-itineraries.js"></script>
   <script src="assets/rave-everywhere.js"></script>
+  <script src="assets/dj-trial-listen.js"></script>
   <script>
     const sourceData = window.DJ_SOURCE_DATA || { events: [], lineups: {} };
     const trackedProfiles = window.DJ_ITINERARY_DATA || {};
     const generator = window.RAVE_EVERYWHERE;
+    const listeningHelper = window.DJ_TRIAL_LISTENER;
     const profiles = generator.profileSeedsFromSourceData(sourceData, trackedProfiles);
     const sourceEvents = Array.isArray(sourceData.events) ? sourceData.events : [];
     const selectedSlugs = new Set();
@@ -805,12 +969,17 @@
       djPicker: document.getElementById("djPicker"),
       eventTitle: document.getElementById("eventTitle"),
       eventMeta: document.getElementById("eventMeta"),
+      previewRoom: document.getElementById("previewRoom"),
+      roomCrowdCount: document.getElementById("roomCrowdCount"),
+      roomHeat: document.getElementById("roomHeat"),
+      roomRoute: document.getElementById("roomRoute"),
       eventFacts: document.getElementById("eventFacts"),
       locationName: document.getElementById("locationName"),
       locationAddress: document.getElementById("locationAddress"),
       locationScene: document.getElementById("locationScene"),
       locationAccess: document.getElementById("locationAccess"),
       lineupList: document.getElementById("lineupList"),
+      listeningDeck: document.getElementById("listeningDeck"),
       shareCopy: document.getElementById("shareCopy"),
       copyShare: document.getElementById("copyShare"),
       posterCanvas: document.getElementById("posterCanvas"),
@@ -912,8 +1081,79 @@
       return `<article class="fact-row"><b>${escapeHtml(label)}</b><span>${escapeHtml(value)}</span></article>`;
     }
 
+    function roomStorageKey(event) {
+      return `rave-everywhere-room:${event && event.id || "draft"}`;
+    }
+
+    function readRoomReactions(event) {
+      try {
+        const parsed = JSON.parse(window.localStorage.getItem(roomStorageKey(event)) || "{}");
+        return {
+          locked: Number(parsed.locked) || 0,
+          heat: Number(parsed.heat) || 0,
+          again: Number(parsed.again) || 0,
+        };
+      } catch (_) {
+        return { locked: 0, heat: 0, again: 0 };
+      }
+    }
+
+    function writeRoomReactions(event, reactions) {
+      try {
+        window.localStorage.setItem(roomStorageKey(event), JSON.stringify(reactions));
+      } catch (_) {}
+    }
+
+    function renderPreviewRoom(event, rows) {
+      const crowd = 12 + (generator.hashString(event.id) % 76);
+      const pulse = (event.vibe || [dominantMood(rows)]).slice(0, 1).join("").toUpperCase().slice(0, 6) || "ROOM";
+      const reactions = readRoomReactions(event);
+      els.roomCrowdCount.textContent = String(crowd).padStart(2, "0");
+      els.roomHeat.textContent = pulse;
+      els.roomRoute.textContent = "CN";
+      Object.entries(reactions).forEach(([name, count]) => {
+        const target = els.previewRoom.querySelector(`[data-reaction-count="${name}"]`);
+        if (target) target.textContent = count;
+      });
+    }
+
+    function linkMarkup(link, mode) {
+      return `
+        <a class="listen-link ${escapeHtml(mode)}" href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer" data-listen-source="${escapeHtml(link.provider || link.label || mode)}">
+          ${escapeHtml(link.label)}
+        </a>
+      `;
+    }
+
+    function renderListeningDeck(rows) {
+      if (!listeningHelper || typeof listeningHelper.listeningDeckFor !== "function") {
+        els.listeningDeck.innerHTML = `<article class="listen-card"><span>Listening helper unavailable.</span></article>`;
+        return;
+      }
+      const deckProfiles = rows.length ? rows : [{ name: currentEvent?.lineup?.[0]?.name || "Basement Dispatch Residents", genres: ["electronic"] }];
+      els.listeningDeck.innerHTML = deckProfiles.slice(0, 6).map(profile => {
+        const deck = listeningHelper.listeningDeckFor(profile);
+        const query = listeningHelper.searchQueryFor(profile);
+        const directLinks = (deck.directLinks || []).slice(0, 2).map(link => linkMarkup(link, "direct")).join("");
+        const chinaLinks = (deck.chinaLinks || []).map(link => linkMarkup(link, "china")).join("");
+        const globalLinks = (deck.globalFallbackLinks || []).slice(0, 2).map(link => linkMarkup(link, "global")).join("");
+        return `
+          <article class="listen-card">
+            <div class="listen-card-head">
+              <b>${escapeHtml(profile.name)}</b>
+              <span>${escapeHtml(query)} / ${escapeHtml(deck.policy)}</span>
+            </div>
+            <div class="listen-link-row">
+              ${directLinks}${chinaLinks}${globalLinks}
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
     function renderVirtualEvent(event) {
       currentEvent = event;
+      const rows = selectedProfiles();
       els.eventTitle.textContent = event.title;
       els.eventMeta.innerHTML = [
         event.date,
@@ -937,7 +1177,9 @@
           <span>${escapeHtml(item.note)}</span>
         </article>
       `).join("");
-      els.shareCopy.value = generator.eventCopy(event);
+      renderPreviewRoom(event, rows);
+      renderListeningDeck(rows);
+      els.shareCopy.value = `${generator.eventCopy(event)}\nPreview room: China listening links ready. No audio is hosted here.`;
       els.posterPalette.innerHTML = event.poster.palette.map(color => `<span class="swatch" style="background:${escapeHtml(color)}"></span>`).join("");
       drawVirtualPoster(event);
     }
@@ -1094,6 +1336,14 @@
         renderSelected();
         renderDjPicker();
         generateEverywhereEvent();
+      });
+      els.previewRoom.addEventListener("click", event => {
+        const button = event.target.closest("[data-room-reaction]");
+        if (!button || !currentEvent) return;
+        const reactions = readRoomReactions(currentEvent);
+        reactions[button.dataset.roomReaction] = (reactions[button.dataset.roomReaction] || 0) + 1;
+        writeRoomReactions(currentEvent, reactions);
+        renderPreviewRoom(currentEvent, selectedProfiles());
       });
       document.querySelectorAll("[data-mood]").forEach(button => {
         button.addEventListener("click", () => autoPickMood(button.dataset.mood));

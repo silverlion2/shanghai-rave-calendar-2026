@@ -8,6 +8,16 @@
       "permanent": true
     },
     {
+      "source": "/poster-archive",
+      "destination": "/poster-wall",
+      "permanent": true
+    },
+    {
+      "source": "/poster-archive.html",
+      "destination": "/poster-wall",
+      "permanent": true
+    },
+    {
       "source": "/events",
       "destination": "/poster-wall",
       "permanent": true

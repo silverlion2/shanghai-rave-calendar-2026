@@ -374,6 +374,13 @@ function assertNoDuplicateEventsIndexLinks(file, html) {
   }
 }
 
+function assertNoPosterArchiveLinks(file, html) {
+  if (file === "poster-archive.html") return;
+  if (html.includes('href="poster-archive.html"') || html.includes('href="../poster-archive.html"')) {
+    throw new Error(`${file} must keep Wall as the single poster surface; remove poster-archive navigation links`);
+  }
+}
+
 function assertHomepageStatsPlacement(file, html) {
   const statsIndex = html.indexOf('<section class="stats" aria-label="Calendar statistics">');
   const highlightIndex = html.indexOf('<section class="highlight-wall"');
@@ -438,6 +445,7 @@ function assertGeneratedSeoPages(events) {
     assertGoogleTracking(file, html);
     assertGeneratedDispatchFormat(file, html);
     assertNoDuplicateEventsIndexLinks(file, html);
+    assertNoPosterArchiveLinks(file, html);
     if (!html.includes(`<link rel="canonical" href="${siteUrl}/events/${event.id}">`)) {
       throw new Error(`${file} missing clean canonical URL`);
     }
@@ -489,6 +497,7 @@ for (const file of [...htmlFiles, ...syntaxOnlyHtmlFiles]) {
 
   assertSeoHeadMarkers(file, html);
   assertNoDuplicateEventsIndexLinks(file, html);
+  assertNoPosterArchiveLinks(file, html);
 }
 
 for (const file of googleTrackedHtmlFiles) {
@@ -500,6 +509,7 @@ for (const file of sharedDispatchHtmlFiles) {
   const html = fs.readFileSync(file, "utf8");
   assertRootDispatchFormat(file, html);
   assertNoDuplicateEventsIndexLinks(file, html);
+  assertNoPosterArchiveLinks(file, html);
   if (homepageCalendarHtmlFiles.includes(file)) {
     assertHomepageStatsPlacement(file, html);
   }
@@ -513,7 +523,13 @@ for (const file of externalJsFiles) {
 }
 
 const djTrialListener = require("../assets/dj-trial-listen.js");
-if (!djTrialListener || typeof djTrialListener.listenLinksFor !== "function" || typeof djTrialListener.directAudioLinksFor !== "function") {
+if (
+  !djTrialListener
+  || typeof djTrialListener.listenLinksFor !== "function"
+  || typeof djTrialListener.directAudioLinksFor !== "function"
+  || typeof djTrialListener.chinaListenLinksFor !== "function"
+  || typeof djTrialListener.listeningDeckFor !== "function"
+) {
   throw new Error("assets/dj-trial-listen.js must export links-only DJ listening helpers");
 }
 if (typeof djTrialListener.previewPlanFor === "function") {
@@ -539,6 +555,20 @@ if (!listenLinks.some(link => link.label === "SoundCloud" && link.url.includes("
 }
 if (!listenLinks.some(link => link.label === "YouTube" && link.url.includes("PASHRAWBOI%20hard%20techno"))) {
   throw new Error("DJ listening links must include encoded YouTube artist/genre search");
+}
+const chinaListenLinks = djTrialListener.chinaListenLinksFor({ name: "PASHRAWBOI", genres: ["hard techno"] });
+if (!chinaListenLinks.some(link => link.label === "QQ Music" && link.url.includes("y.qq.com") && link.url.includes("PASHRAWBOI%20hard%20techno"))) {
+  throw new Error("China listening links must include QQ Music artist/genre search");
+}
+if (!chinaListenLinks.some(link => link.label === "NetEase Cloud Music" && link.url.includes("music.163.com") && link.url.includes("PASHRAWBOI%20hard%20techno"))) {
+  throw new Error("China listening links must include NetEase Cloud Music artist/genre search");
+}
+if (!chinaListenLinks.some(link => link.label === "Bilibili sets" && link.url.includes("search.bilibili.com") && link.url.includes("DJ%20set"))) {
+  throw new Error("China listening links must include Bilibili DJ set/video search");
+}
+const listeningDeck = djTrialListener.listeningDeckFor({ name: "PASHRAWBOI", genres: ["hard techno"] });
+if (listeningDeck.policy !== "links-only" || !Array.isArray(listeningDeck.chinaLinks) || !Array.isArray(listeningDeck.globalFallbackLinks)) {
+  throw new Error("DJ listening deck must expose a links-only China-first listening plan");
 }
 const djPageHtml = fs.readFileSync("djs.html", "utf8");
 for (const forbidden of ["id=\"trialListenNow\"", "function playTrialListen(", "AudioContext", "Synthetic soundcheck", "trial-meter"]) {
@@ -655,7 +685,6 @@ const publicAdminCornerFiles = [
   "shanghai-rave-calendar-2026.html",
   "poster-wall.html",
   "love-wall.html",
-  "poster-archive.html",
   "planner.html",
   "rave-everywhere.html",
   "venues.html",
@@ -713,20 +742,8 @@ const scrapeRequirements = [
 ];
 
 const posterArchiveRequirements = [
-  { file: "index.html", text: 'href="poster-archive.html"', label: "calendar poster archive link" },
-  { file: "shanghai-rave-calendar-2026.html", text: 'href="poster-archive.html"', label: "archive poster archive link" },
-  { file: "poster-wall.html", text: 'href="poster-archive.html"', label: "wall poster archive link" },
-  { file: "planner.html", text: 'href="poster-archive.html"', label: "planner poster archive link" },
-  { file: "venues.html", text: 'href="poster-archive.html"', label: "venues poster archive link" },
-  { file: "djs.html", text: 'href="poster-archive.html"', label: "DJ database poster archive link" },
-  { file: "ops.html", text: 'href="poster-archive.html"', label: "ops poster archive link" },
-  { file: "poster-archive.html", text: "Rave Poster Archive", label: "poster archive page title" },
-  { file: "poster-archive.html", text: 'id="archiveGrid"', label: "poster archive grid" },
-  { file: "poster-archive.html", text: 'id="budgetFill"', label: "poster archive static budget meter" },
-  { file: "poster-archive.html", text: "assets/poster-archive.js", label: "poster archive renderer module" },
-  { file: "assets/poster-archive.js", text: "data/poster-archive.json", label: "poster archive data fetch" },
   { file: "scripts/generate-poster-archive.js", text: "FREE_TIER_SOFT_CAP_BYTES", label: "poster archive free-tier soft cap" },
-  { file: "sitemap.xml", text: `${siteUrl}/poster-archive`, label: "poster archive sitemap URL" },
+  { file: "package.json", text: "\"poster-archive\": \"npm run posters:prepare\"", label: "poster archive metadata prepare script" },
 ];
 
 const everywhereRequirements = [
@@ -742,6 +759,12 @@ const everywhereRequirements = [
   { file: "rave-everywhere.html", text: 'id="generateEverywhere"', label: "Rave Everywhere generate action" },
   { file: "rave-everywhere.html", text: 'id="downloadPoster"', label: "Rave Everywhere poster export" },
   { file: "rave-everywhere.html", text: "assets/rave-everywhere.js", label: "Rave Everywhere generation module" },
+  { file: "rave-everywhere.html", text: "assets/dj-trial-listen.js", label: "Rave Everywhere China listening module" },
+  { file: "rave-everywhere.html", text: "Preview Room", label: "Rave Everywhere preview room panel" },
+  { file: "rave-everywhere.html", text: 'id="previewRoom"', label: "Rave Everywhere preview room mount" },
+  { file: "rave-everywhere.html", text: "China Listening Deck", label: "Rave Everywhere China listening deck label" },
+  { file: "rave-everywhere.html", text: 'id="listeningDeck"', label: "Rave Everywhere listening deck mount" },
+  { file: "rave-everywhere.html", text: "No audio is hosted here", label: "Rave Everywhere links-only music policy" },
   { file: "rave-everywhere.html", text: "drawVirtualPoster(", label: "Rave Everywhere canvas poster renderer" },
   { file: "rave-everywhere.html", text: "Virtual event, not a verified listing", label: "Rave Everywhere virtual disclaimer" },
   { file: "sitemap.xml", text: `${siteUrl}/rave-everywhere`, label: "Rave Everywhere sitemap URL" },
@@ -755,7 +778,6 @@ const loveWallRequirements = [
   { file: "venues.html", text: 'href="love-wall.html"', label: "venues Love Wall link" },
   { file: "djs.html", text: 'href="love-wall.html"', label: "DJ database Love Wall link" },
   { file: "ops.html", text: 'href="love-wall.html"', label: "ops Love Wall link" },
-  { file: "poster-archive.html", text: 'href="love-wall.html"', label: "poster archive Love Wall link" },
   { file: "rave-everywhere.html", text: 'href="love-wall.html"', label: "Rave Everywhere Love Wall link" },
   { file: "love-wall.html", text: "Rave Love Wall", label: "Love Wall page title" },
   { file: "love-wall.html", text: "window.localStorage", label: "Love Wall local note persistence" },
@@ -772,7 +794,6 @@ const accountRequirements = [
   { file: "shanghai-rave-calendar-2026.html", text: 'href="account.html"', label: "archive Account link" },
   { file: "poster-wall.html", text: 'href="account.html"', label: "wall Account link" },
   { file: "love-wall.html", text: 'href="account.html"', label: "Love Wall Account link" },
-  { file: "poster-archive.html", text: 'href="account.html"', label: "poster archive Account link" },
   { file: "planner.html", text: 'href="account.html"', label: "planner Account link" },
   { file: "rave-everywhere.html", text: 'href="account.html"', label: "Rave Everywhere Account link" },
   { file: "venues.html", text: 'href="account.html"', label: "venues Account link" },
@@ -801,7 +822,6 @@ const accountGuidePages = [
   { file: "shanghai-rave-calendar-2026.html", context: "calendar" },
   { file: "poster-wall.html", context: "wall" },
   { file: "love-wall.html", context: "love" },
-  { file: "poster-archive.html", context: "archive" },
   { file: "planner.html", context: "planner" },
   { file: "rave-everywhere.html", context: "everywhere" },
   { file: "venues.html", context: "venues" },

@@ -3,7 +3,7 @@ const {
   rootThemeHref,
 } = require("./site-structure");
 
-const THEME_STYLESHEET_VERSION = "admin-corner-20260613b";
+const THEME_STYLESHEET_VERSION = "xhs-contact-20260613c";
 
 function renderHtmlDocument({ head, body }) {
   return `<!doctype html>
@@ -108,6 +108,10 @@ function renderBottomDispatchFooter(structure, {
   actionHref = "ops.html",
   badge = ["Source first", "Rave second"],
 } = {}) {
+  const contactChannel = structure.site.contactChannel || "RED";
+  const contactHandle = structure.site.contactHandle || structure.site.socialLabel || "";
+  const contactCardImage = structure.site.contactCardImage || "";
+  const contactCardHref = contactCardImage ? `${prefix}${contactCardImage}` : "";
   return `
     <footer class="footnotes bottom-dispatch-bar" aria-label="Basement Dispatch status">
       <div class="bar-cell update-cell">
@@ -117,10 +121,15 @@ function renderBottomDispatchFooter(structure, {
       <div class="bar-cell">
         ${lines.map(line => `<span>${escapeHtml(line)}</span>`).join("\n        ")}
       </div>
-      <address class="bar-cell">
-        <span>Questions or updates?</span>
-        <a href="mailto:${escapeAttr(structure.site.contactEmail)}">${escapeHtml(structure.site.contactEmail)}</a>
-        <span>${escapeHtml(structure.site.socialLabel)}</span>
+      <address class="bar-cell contact-cell">
+        <a class="contact-card-link" href="${escapeAttr(contactCardHref)}" aria-label="Open RED Xiaohongshu contact QR card">
+          <span class="contact-copy">
+            <span>Contact / updates</span>
+            <b>${escapeHtml(contactChannel)}</b>
+            <em>ID ${escapeHtml(contactHandle)}</em>
+          </span>
+          <img src="${escapeAttr(contactCardHref)}" alt="" loading="lazy" decoding="async">
+        </a>
       </address>
       <div class="bar-cell">
         ${disclaimer.map(line => `<span>${escapeHtml(line)}</span>`).join("\n        ")}

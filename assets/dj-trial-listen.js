@@ -36,6 +36,38 @@
     ];
   }
 
+  function chinaListenLinksFor(profile) {
+    const query = searchQueryFor(profile);
+    const encoded = encodeURIComponent(query);
+    const setQuery = encodeURIComponent(`${query} DJ set`);
+    return [
+      {
+        label: "QQ Music",
+        provider: "qq-music",
+        url: `https://y.qq.com/n/ryqq/search?w=${encoded}`,
+        kind: "china-search",
+        access: "mainland",
+        note: "Licensed catalog search. Best first stop for domestic playback.",
+      },
+      {
+        label: "NetEase Cloud Music",
+        provider: "netease-cloud-music",
+        url: `https://music.163.com/#/search/m/?s=${encoded}`,
+        kind: "china-search",
+        access: "mainland",
+        note: "Domestic catalog and playlist search fallback.",
+      },
+      {
+        label: "Bilibili sets",
+        provider: "bilibili",
+        url: `https://search.bilibili.com/all?keyword=${setQuery}`,
+        kind: "china-video-search",
+        access: "mainland",
+        note: "Live set, interview, and event-video search fallback.",
+      },
+    ];
+  }
+
   function explicitAudioLinks(profile) {
     const tracked = profile && profile.tracked;
     return []
@@ -86,8 +118,21 @@
     return rows.slice(0, 6);
   }
 
+  function listeningDeckFor(profile) {
+    return {
+      policy: "links-only",
+      primaryRegion: "mainland-china",
+      notice: "No audio is hosted here. Open official platforms, embedded players, or licensed apps for playback.",
+      directLinks: directAudioLinksFor(profile),
+      chinaLinks: chinaListenLinksFor(profile),
+      globalFallbackLinks: listenLinksFor(profile),
+    };
+  }
+
   return {
+    chinaListenLinksFor,
     directAudioLinksFor,
+    listeningDeckFor,
     listenLinksFor,
     searchQueryFor,
   };

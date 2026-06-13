@@ -170,7 +170,7 @@ test("accountAccessState gates account tools behind Supabase Auth", () => {
   });
   assert.deepEqual(accountAccessState({
     hasSupabase: true,
-    session: { user: { id: "user-1", email: "front@example.com" } },
+    session: { user: { id: "user-1", email: "" } },
   }), {
     mode: "dashboard",
     label: "Account connected",

@@ -18,7 +18,6 @@ This project is a static, source-first event site. The tracked structure lives i
 | `calendar` | `index.html` | `/` | `calendar-shell` | yes |
 | `poster-wall` | `poster-wall.html` | `/poster-wall` | `dispatch-shell` | yes |
 | `love-wall` | `love-wall.html` | `/love-wall` | `dispatch-shell` | yes |
-| `poster-archive` | `poster-archive.html` | `/poster-archive` | `dispatch-shell` | yes |
 | `planner` | `planner.html` | `/planner` | `dispatch-shell` | yes |
 | `rave-everywhere` | `rave-everywhere.html` | `/rave-everywhere` | `dispatch-shell` | yes |
 | `djs` | `djs.html` | `/djs` | `dispatch-shell` | yes |
@@ -27,6 +26,8 @@ This project is a static, source-first event site. The tracked structure lives i
 | `ops` | `ops.html` | `/ops` | `dispatch-shell` | no |
 
 `shanghai-rave-calendar-2026.html` is tracked as a legacy calendar mirror. It is syntax-checked and must keep the shared theme and homepage stats placement, but it is not a separate sitemap route.
+
+`poster-wall.html` is the single public poster/event browsing surface. The legacy `/poster-archive` route redirects to `/poster-wall`; `data/poster-archive.json` remains as generated poster metadata for compression and Supabase import workflows.
 
 ## Generated Collections
 

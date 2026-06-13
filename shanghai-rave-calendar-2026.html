@@ -1818,7 +1818,7 @@
       }
     }
   </style>
-  <link rel="stylesheet" href="assets/basement-dispatch.css?v=admin-corner-20260613b">
+  <link rel="stylesheet" href="assets/basement-dispatch.css?v=xhs-contact-20260613c">
   <link rel="stylesheet" href="assets/account-system.css">
   <script src="assets/love-wall-supabase-config.js"></script>
   <script src="assets/account-system.js"></script>
@@ -1830,7 +1830,6 @@
       <a class="nav-link active" href="index.html">Calendar</a>
       <a class="nav-link" href="poster-wall.html">Wall</a>
       <a class="nav-link" href="love-wall.html">Love</a>
-      <a class="nav-link" href="poster-archive.html">Archive</a>
       <a class="nav-link" href="planner.html">Planner</a>
       <a class="nav-link" href="rave-everywhere.html">Everywhere</a>
       <a class="nav-link" href="venues.html">Venues</a>
@@ -1961,25 +1960,6 @@
 
     <section class="home-poster-rail" id="homePosterRail" aria-label="Poster-only event strip"></section>
 
-    <section class="bottom-stat-stack" aria-label="Calendar totals">
-      <div class="bottom-stat-row">
-        <b id="bottomStatEvents">0</b>
-        <span>Sourced events and leads across 2026</span>
-      </div>
-      <div class="bottom-stat-row">
-        <b id="bottomStatUpcoming">0</b>
-        <span>Upcoming confirmed or single-source entries after June 11</span>
-      </div>
-      <div class="bottom-stat-row">
-        <b id="bottomStatTop">0</b>
-        <span>High-confidence techno or rave picks</span>
-      </div>
-      <div class="bottom-stat-row">
-        <b>6</b>
-        <span>Late-year watchlist months without reliable full calendars yet</span>
-      </div>
-    </section>
-
     <section class="stats" aria-label="Calendar statistics">
       <div class="stat"><b id="statEvents">0</b><span>sourced events and leads across 2026</span></div>
       <div class="stat"><b id="statUpcoming">0</b><span>upcoming confirmed or single-source entries after June 11</span></div>
@@ -1998,10 +1978,15 @@
         <span>New listings and changes land daily.</span>
         <span>Follow socials and check back.</span>
       </div>
-      <address class="bar-cell">
-        <span>Questions or updates?</span>
-        <a href="mailto:info@shanghairaveindex.com">info@shanghairaveindex.com</a>
-        <span>IG @shanghairaveindex</span>
+      <address class="bar-cell contact-cell">
+        <a class="contact-card-link" href="assets/social/xhs-contact-card.jpg" aria-label="Open RED Xiaohongshu contact QR card">
+          <span class="contact-copy">
+            <span>Contact / updates</span>
+            <b>RED</b>
+            <em>ID 980793145</em>
+          </span>
+          <img src="assets/social/xhs-contact-card.jpg" alt="" loading="lazy" decoding="async">
+        </a>
       </address>
       <div class="bar-cell">
         <span>Information is aggregated from public sources and may change.</span>
@@ -4341,9 +4326,6 @@
       document.getElementById("statEvents").textContent = events.length;
       document.getElementById("statUpcoming").textContent = upcoming;
       document.getElementById("statTop").textContent = top;
-      document.getElementById("bottomStatEvents").textContent = events.length;
-      document.getElementById("bottomStatUpcoming").textContent = upcoming;
-      document.getElementById("bottomStatTop").textContent = top;
       if (filterSummary) {
         const entryLabel = visible.length === 1 ? "entry" : "entries";
         const activeMonthCount = activeMonth ? visible.filter(event => event.month === activeMonth).length : visible.length;

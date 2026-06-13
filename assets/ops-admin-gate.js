@@ -53,7 +53,7 @@
           ${access.mode === "gated" ? `
             <label class="ops-admin-field">
               <span>Email</span>
-              <input class="input" name="email" type="email" autocomplete="email" placeholder="admin@example.com">
+              <input class="input" name="email" type="email" autocomplete="email" placeholder="Admin email address">
             </label>
             <label class="ops-admin-field">
               <span>Password</span>

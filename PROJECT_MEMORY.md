@@ -680,3 +680,50 @@ Verification:
 - The audit covered tracked root pages, `shanghai-rave-calendar-2026.html`, `account.html`, and all generated event detail pages.
 - Mobile event-detail overflow was fixed by adding `min-width: 0`, responsive image constraints, and safe wrapping to the shared event detail stylesheet.
 - `npm run check` passed after the final theme changes with 6 account-system tests passing, structure tracking OK, inline scripts OK, and event-audit warnings empty.
+
+## 2026-06-13 Poster Wall and Archive Consolidation
+
+The user noted that Wall and Archive duplicate the same purpose, and decided to keep `Wall` as the only public poster/event browsing surface.
+
+Implemented state:
+
+- `poster-wall.html` remains the public poster/event entry point.
+- Public navigation no longer shows `Archive` on root pages or generated event detail pages.
+- `config/website-structure.json` no longer tracks `poster-archive` as a public page, primary navigation item, shared script, or sitemap route.
+- `sitemap.xml` no longer lists `/poster-archive`.
+- `vercel.json` permanently redirects `/poster-archive` and `/poster-archive.html` to `/poster-wall`.
+- `poster-archive.html` was reduced to a lightweight local fallback redirect page pointing to `poster-wall.html`, so old local links still land on Wall instead of a duplicate UI.
+- `data/poster-archive.json` remains part of the poster compression and Supabase metadata workflow; only the public duplicate browsing page was removed.
+- `docs/WEBSITE_STRUCTURE.md` now states that `poster-wall.html` is the single public poster/event browsing surface and that the legacy archive route redirects to Wall.
+- `scripts/check.js` now rejects reintroduced `poster-archive.html` navigation links outside the legacy redirect page.
+
+Verification:
+
+- `npm run structure` passed with 9 tracked pages, 1 mirror, 8 static sitemap routes, and 1 generated collection.
+- Browser smoke test confirmed `poster-wall` navigation contains Calendar, Wall, Love, Planner, Everywhere, Venues, DJs, and Account, with no Archive link.
+- Browser smoke test confirmed `poster-wall` renders 31 event cards.
+- Browser smoke test confirmed opening `poster-archive.html` lands on `poster-wall.html`.
+- A static archive-consolidation check confirmed no public `poster-archive.html` navigation links remain and `/poster-archive` is absent from `sitemap.xml`.
+
+Known unrelated state:
+
+- Full `npm run check` is currently blocked by an existing incomplete China listening feature check: `rave-everywhere.html missing feature marker: Rave Everywhere China listening module`.
+- That failure comes from pre-existing `assets/dj-trial-listen.js` / `scripts/check.js` work and is not caused by the Wall/Archive consolidation.
+
+## 2026-06-13 RED / Xiaohongshu Contact Cleanup
+
+The user asked to replace the fake public contact email with the real Xiaohongshu/RED contact surface and remove fake email content.
+
+Implemented state:
+
+- The shared Basement Dispatch footer now uses RED as the public contact channel with ID `980793145`.
+- The uploaded Xiaohongshu contact card is stored at `assets/social/xhs-contact-card.jpg` and linked from the footer thumbnail.
+- `config/website-structure.json` no longer exposes the old fake `contactEmail` field.
+- Static root pages and generated event pages now render the RED contact card instead of the old email/IG footer copy.
+- Visible fake email placeholders were removed from account and ops forms; they now use neutral placeholders.
+
+Verification:
+
+- Repo scan found no `info@shanghairaveindex.com`, `mailto:`, `contactEmail`, old `IG @shanghairaveindex`, or `example.com` email placeholders.
+- Browser checks confirmed the footer contact cell fits on desktop and mobile, the QR thumbnail loads, and there is no horizontal overflow.
+- `npm run check` passed after the cleanup.
