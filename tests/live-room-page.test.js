@@ -56,19 +56,41 @@ test("room discussion lives on a separate anonymous page", () => {
   assert.match(discussion, /event-room-report/);
   assert.match(discussion, /data-live-room-talk-form/);
   assert.match(discussion, /data-live-room-message-input/);
+  assert.match(discussion, /rows="2" maxlength="220"/);
+  assert.match(discussion, /height: 72px/);
+  assert.match(discussion, /max-height: clamp\(220px, 36vh, 360px\)/);
+  assert.match(discussion, /overflow-y: auto/);
   assert.match(discussion, /data-live-room-report/);
   assert.match(discussion, /Anonymous room talk/);
+  assert.match(discussion, /room-discussion-nav-actions/);
+  assert.match(discussion, /grid-template-columns: repeat\(3, minmax\(0, 1fr\)\)/);
   assert.match(discussion, /Share this room/);
+  assert.match(discussion, /id="discussionSharePopup"/);
+  assert.match(discussion, /aria-modal="true"/);
+  assert.match(discussion, /id="openDiscussionShare"/);
+  assert.match(discussion, /room-discussion-share-actions/);
+  assert.match(discussion, /grid-template-columns: repeat\(4, minmax\(0, 1fr\)\)/);
+  assert.match(discussion, />System share</);
+  assert.match(discussion, />Copy</);
+  assert.match(discussion, />Text link</);
+  assert.match(discussion, />Save card</);
   assert.match(discussion, /data-room-discussion-share/);
+  assert.match(discussion, /data-room-discussion-share-close/);
   assert.match(discussion, /data-room-discussion-copy/);
   assert.match(discussion, /id="discussionSmsLink"/);
   assert.match(discussion, /sms:\?&body=/);
   assert.match(discussion, /id="roomDiscussionShareCard"/);
   assert.match(discussion, /drawDiscussionShareCard/);
+  assert.match(discussion, /assets\/qrcode-generator\.js/);
+  assert.match(discussion, /window\.qrcode\(0, "M"\)/);
   assert.match(discussion, /navigator\.share/);
   assert.match(discussion, /toBlob/);
+  assert.match(discussion, /aria-label="\$\{isReported \? "Message reported" : "Report anonymous message"\}"/);
+  assert.match(discussion, /&#9873;/);
   assert.match(discussion, /Message not posted\. Keep this room social, event-related, and safe\./);
   assert.match(discussion, /roomMessageModerationState/);
+  assert.match(discussion, /room-discussion-policy/);
+  assert.match(discussion, /Room intro/);
   assert.match(discussion, /What happens in this room stays in this room\./);
   assert.match(discussion, /This room closes automatically at 12:00 noon the next day\./);
   assert.match(discussion, /Contact info and social links are welcome\./);
@@ -79,6 +101,11 @@ test("room discussion lives on a separate anonymous page", () => {
   assert.match(discussion, /Browse other content/);
   assert.match(discussion, /Cherish the moment\./);
   assert.match(discussion, /href="live-room\.html"/);
+  assert.ok(
+    discussion.indexOf('<div class="room-discussion-messages" aria-live="polite">${messageRows}</div>') <
+      discussion.indexOf('<form class="room-discussion-talk-form"'),
+    "message feed should render above the message composer"
+  );
 });
 
 test("event detail pages keep a clear path back to their live room", () => {

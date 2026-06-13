@@ -826,3 +826,25 @@ Verification:
 
 - Focused room/page tests pass.
 - Browser checks confirmed current 2026-06-13 rooms remain open before the June 14 noon cutoff, closed archive links render read-only, and non-admin public view keeps the admin closed-room panel hidden.
+
+## 2026-06-14 Live Room Discussion UI Cleanup
+
+The user iterated on the room discussion page to make the discussion flow denser, easier to share, and usable on the discussion page without taking over the layout.
+
+Implemented state:
+
+- `live-room-discussion.html` keeps room status, online count, and sync/live mode in one compact centered row.
+- Back-to-rooms, event page, and share-room actions are grouped in one row.
+- Sharing now opens a modal popup instead of occupying the discussion page.
+- Room share cards render a real QR code using local `assets/qrcode-generator.js`; the previous decorative pseudo-code pattern was removed.
+- Share popup actions are fixed in one row: System share, Copy, Text link, and Save card.
+- The persistent room-policy panel was removed from the hero. The policy now appears as the first message in the room feed.
+- Report controls are compact flag buttons with accessible labels.
+- The message feed appears above the composer, is independently scrollable, and the message composer is a two-row textarea.
+- The discussion header label was simplified to `Room-only`.
+
+Verification:
+
+- `npm run test:live-room-page` passed.
+- `npm run test:live-room` passed.
+- In-app browser checks confirmed the share popup opens, the local QR renders visually, centered status readouts align to their containers, action rows stay on one line, the message feed is above the composer, and `.room-discussion-messages` uses `overflow-y: auto` with a bounded max height.
