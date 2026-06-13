@@ -492,3 +492,20 @@ Verification:
 
 - `npm run check` passed with `inline scripts syntax OK: 19 scripts across 10 HTML files`.
 - Browser verification on `http://127.0.0.1:4173/index.html` confirmed the moved stats strip is full-width above the footer on desktop, the highlight wall moved up, and the 390px mobile layout keeps the two-column stats format with no horizontal overflow.
+
+## 2026-06-13 DJ Direct Listening Links
+
+The user asked for a DJ song trial listening feature, then chose the easiest implementation: separate links to individual audio files or set pages instead of generated preview audio.
+
+Implementation:
+
+- Added `assets/dj-trial-listen.js` as a links-only listening helper for DJ profiles.
+- `djs.html` now renders a `Direct listening links` panel on each profile, showing explicit `audioLinks` / `listenLinks` and source-backed radio, set, or audio links first.
+- The same panel keeps SoundCloud, YouTube, and Bandcamp search fallbacks for DJs that do not yet have pinned individual listening links.
+- The PASHRAWBOI profile surfaces the byyb.radio set link directly from tracked source data.
+- `scripts/check.js` now validates the DJ listening helper, requires the direct-link panel, and rejects the old synthetic preview/Web Audio path.
+
+Verification:
+
+- `npm run check` passed after the links-only DJ listening changes.
+- Browser verification on `http://127.0.0.1:4174/djs.html#pashrawboi` confirmed the direct byyb.radio link appears before search links, the preview button is gone, and mobile layout has no page-level horizontal overflow.
