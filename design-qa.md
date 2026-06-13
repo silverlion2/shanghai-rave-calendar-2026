@@ -10,14 +10,16 @@ focused region comparison evidence: mobile nav rails, calendar panel header acti
 **Findings**
 - No actionable P0/P1/P2 design findings remain.
 - P3 residual: desktop calendar event markers remain intentionally small dot indicators in the compact month grid. They have parallel event rows nearby, so this is accepted as an existing density constraint.
-- Non-design caveat: `npm run check` currently fails only at `scripts/audit-events.js` because event and DJ source timestamps are stale for June 13, 2026. Syntax checks, 25 node tests, structure validation, local link integrity, and inline script syntax all passed before that data freshness gate.
+- Non-design caveat: `npm run check` currently fails only at `scripts/audit-events.js` because event/DJ source timestamps are stale for June 13, 2026 and two scraped same-day listings are missing ticket-status notes. Syntax checks, 25 node tests, structure validation, local link integrity, and inline script syntax all passed before that data freshness gate.
+- Customer-flow pass: primary navigation now uses task labels (`Events`, `Tonight`, `Planner`, `Account`) across tracked pages and generated event details. Homepage CTAs are visible again in the desktop calendar rail and map to `See upcoming events` and `Plan your night`.
+- Event-detail flow pass: generated breadcrumbs now return through `Events`; event actions avoid duplicate source buttons when no separate ticket URL exists; same-day room handoff is labeled `Tonight room`.
 
 **Required Fidelity Surfaces**
 - Fonts and typography: Basement Dispatch display/mono pairing and uppercase controls are preserved; small source controls now read as deliberate targets.
 - Spacing and layout rhythm: no measured horizontal overflow on checked desktop/mobile routes; nested planner notes now size to their panel instead of the viewport.
 - Colors and visual tokens: reused the existing black, paper, cyan, gold, ember, and muted tokens; no new visual system or palette was introduced.
 - Image quality and asset fidelity: screenshot metrics report no broken images on checked routes; poster imagery remains real local assets.
-- Copy and content: no product copy or route structure was changed.
+- Copy and content: customer-facing metaphors were reduced where they blocked intent. `Wall` became `Events`, `Live` became `Tonight`, account prompts now say `Save your picks`, and planner copy now references the event list.
 
 **Patches Made Since Previous QA**
 - `assets/basement-dispatch.css`: extended shared control sizing to live-room actions, DJ source controls, calendar shortcuts, and panel header links; raised mobile calendar nav/quick-filter/action floors; hid the share fallback textarea without measurable layout; normalized non-checkbox form input height; fixed planner nested note width; enlarged the admin utility target.
@@ -26,8 +28,10 @@ focused region comparison evidence: mobile nav rails, calendar panel header acti
 
 **Verification**
 - `npm run structure`: passed.
+- `npm run seo`: passed; regenerated 71 event detail pages and `sitemap.xml`.
 - In-app browser metrics: no horizontal overflow or broken images on checked tracked pages, legacy mirror, and event detail.
+- In-app browser customer-flow audit: checked Home, Events, generated Event Detail, Tonight Rooms, Planner, and Account at 1280 x 720; nav labels/actions were consistent, homepage primary CTA measured 285 x 42, event detail had no duplicate source action, and checked routes had no broken images or horizontal overflow.
 - Playwright screenshot metrics: no horizontal overflow or broken images on the six saved screenshots listed above.
-- `npm run check`: blocked by unrelated stale event-source data in `scripts/audit-events.js`, after the code syntax/tests/site checks had passed.
+- `npm run check`: blocked by unrelated event-data freshness/ticket-status audit issues in `scripts/audit-events.js`, after the code syntax/tests/site checks had passed.
 
 final result: passed

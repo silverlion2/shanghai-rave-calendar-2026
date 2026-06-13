@@ -779,3 +779,31 @@ Known state:
 
 - `npm run audit` is still blocked by pre-existing stale `lastChecked: 2026-06-11` future rows and tracked DJ profile source freshness gaps relative to the current date, June 13, 2026.
 - Do not fake-update those source dates without actually rechecking the source pages.
+
+## 2026-06-13 Product Design Customer Flow Cleanup
+
+The user asked for a Product Design pass focused on customer flow, making sure the website UI/UX does its job and does not puzzle customers.
+
+Implemented state:
+
+- Primary navigation now uses customer task labels: `Events` replaces public `Wall` wording, and `Tonight` replaces public `Live` wording.
+- `live-room.html` is customer-facing as `Tonight Rooms`, with copy explaining that users can join same-day event rooms, copy a room link, or open the event page before going.
+- `poster-wall.html` is customer-facing as `Events`, while still preserving the poster-backed browsing format and source-first card density.
+- Homepage primary CTAs are visible in the desktop calendar rail again: `See upcoming events` and `Plan your night`.
+- Account copy now frames the flow as `Save Your Picks`, with public prompts for saving events, rooms, sound preferences, source mode, and budget/timing preferences.
+- Planner hero copy now says it turns the event list into a route instead of referring to the wall.
+- Generated event detail pages now breadcrumb through `Events`, include `Account` in generated navigation, label same-day room handoff as `Tonight room`, and avoid duplicate source actions when there is no separate ticket URL.
+- `docs/WEBSITE_STRUCTURE.md` and `design-qa.md` document the customer-facing navigation contract and flow-verification result.
+
+Verification:
+
+- `npm run seo` regenerated 71 event detail pages and `sitemap.xml`.
+- `npm run structure` passed.
+- `node scripts/check.js` passed with local link integrity and inline script syntax checks.
+- Focused node tests passed: `tests/account-system.test.js`, `tests/preview-room-realtime.test.js`, `tests/live-room-realtime.test.js`, `tests/live-room-page.test.js`, and `tests/social-fusion.test.js` all passed, 25 tests total.
+- In-app browser DOM audit checked Home, Events, generated Event Detail, Tonight Rooms, Planner, and Account at `1280x720`; labels/actions were consistent, the homepage primary CTA measured `285x42`, event detail had no duplicate source action, and checked routes had no broken images or horizontal overflow.
+
+Known state:
+
+- Full `npm run check` still fails at `scripts/audit-events.js` only after syntax/tests/structure/link checks pass.
+- The remaining audit failure is event-data freshness, not UI flow: stale `lastChecked: 2026-06-11` event/DJ source timestamps relative to June 13, 2026, plus two same-day scraped listings missing ticket-status notes.
