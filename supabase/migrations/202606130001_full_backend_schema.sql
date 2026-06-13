@@ -20,6 +20,32 @@ create table if not exists public.profiles (
   updated_at timestamptz not null default now()
 );
 
+create table if not exists public.user_event_preferences (
+  user_id uuid primary key references auth.users(id) on delete cascade,
+  display_name text,
+  preferred_vibes text[] not null default '{}'::text[],
+  preferred_venues text[] not null default '{}'::text[],
+  budget text not null default 'any'
+    check (budget in ('any', 'free', 'low')),
+  timing text not null default 'any'
+    check (timing in ('any', 'early', 'late')),
+  discovery_mode text not null default 'balanced'
+    check (discovery_mode in ('balanced', 'trusted', 'open')),
+  hide_watchlist boolean not null default false,
+  profile jsonb not null default '{}'::jsonb,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+create table if not exists public.saved_events (
+  user_id uuid not null references auth.users(id) on delete cascade,
+  event_id text not null check (char_length(event_id) > 0),
+  notes text,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+  primary key (user_id, event_id)
+);
+
 create or replace function public.handle_new_user()
 returns trigger
 language plpgsql
@@ -307,9 +333,21 @@ create index if not exists love_wall_posts_public_feed_idx
 create index if not exists love_wall_posts_review_queue_idx
   on public.love_wall_posts (status, created_at asc)
   where status = 'pending';
+create index if not exists user_event_preferences_vibes_gin_idx
+  on public.user_event_preferences using gin (preferred_vibes);
+create index if not exists user_event_preferences_venues_gin_idx
+  on public.user_event_preferences using gin (preferred_venues);
+create index if not exists saved_events_event_id_idx
+  on public.saved_events (event_id);
 
 drop trigger if exists profiles_set_updated_at on public.profiles;
 create trigger profiles_set_updated_at before update on public.profiles
+  for each row execute function public.set_updated_at();
+drop trigger if exists user_event_preferences_set_updated_at on public.user_event_preferences;
+create trigger user_event_preferences_set_updated_at before update on public.user_event_preferences
+  for each row execute function public.set_updated_at();
+drop trigger if exists saved_events_set_updated_at on public.saved_events;
+create trigger saved_events_set_updated_at before update on public.saved_events
   for each row execute function public.set_updated_at();
 drop trigger if exists venues_set_updated_at on public.venues;
 create trigger venues_set_updated_at before update on public.venues
@@ -360,6 +398,8 @@ from public.love_wall_posts
 where status = 'approved';
 
 alter table public.profiles enable row level security;
+alter table public.user_event_preferences enable row level security;
+alter table public.saved_events enable row level security;
 alter table public.venues enable row level security;
 alter table public.events enable row level security;
 alter table public.event_sources enable row level security;
@@ -390,6 +430,50 @@ create policy "Admins can view profiles"
   on public.profiles for select
   to authenticated
   using (public.current_user_has_role(array['admin']));
+
+drop policy if exists "Users can view own event preferences" on public.user_event_preferences;
+create policy "Users can view own event preferences"
+  on public.user_event_preferences for select
+  to authenticated
+  using (auth.uid() = user_id);
+
+drop policy if exists "Users can insert own event preferences" on public.user_event_preferences;
+create policy "Users can insert own event preferences"
+  on public.user_event_preferences for insert
+  to authenticated
+  with check (auth.uid() = user_id);
+
+drop policy if exists "Users can update own event preferences" on public.user_event_preferences;
+create policy "Users can update own event preferences"
+  on public.user_event_preferences for update
+  to authenticated
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
+
+drop policy if exists "Users can view own saved events" on public.saved_events;
+create policy "Users can view own saved events"
+  on public.saved_events for select
+  to authenticated
+  using (auth.uid() = user_id);
+
+drop policy if exists "Users can insert own saved events" on public.saved_events;
+create policy "Users can insert own saved events"
+  on public.saved_events for insert
+  to authenticated
+  with check (auth.uid() = user_id);
+
+drop policy if exists "Users can update own saved events" on public.saved_events;
+create policy "Users can update own saved events"
+  on public.saved_events for update
+  to authenticated
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
+
+drop policy if exists "Users can delete own saved events" on public.saved_events;
+create policy "Users can delete own saved events"
+  on public.saved_events for delete
+  to authenticated
+  using (auth.uid() = user_id);
 
 drop policy if exists "Public can read venues" on public.venues;
 create policy "Public can read venues"
@@ -513,5 +597,6 @@ grant select on public.venues, public.events, public.event_sources, public.artis
   public.dj_itinerary_stops, public.source_checks, public.site_pages
   to anon, authenticated;
 grant select, insert on public.love_wall_posts to anon, authenticated;
+grant select, insert, update, delete on public.user_event_preferences, public.saved_events to authenticated;
 grant all on all tables in schema public to service_role;
 grant all on all routines in schema public to service_role;

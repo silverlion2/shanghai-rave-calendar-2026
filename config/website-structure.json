@@ -107,6 +107,16 @@
       "priority": "0.8"
     },
     {
+      "id": "account",
+      "label": "Account",
+      "file": "account.html",
+      "route": "/account",
+      "shell": "dispatch-shell",
+      "includeInSitemap": true,
+      "changefreq": "weekly",
+      "priority": "0.78"
+    },
+    {
       "id": "ops",
       "label": "Ops",
       "file": "ops.html",

@@ -23,6 +23,7 @@ This project is a static, source-first event site. The tracked structure lives i
 | `rave-everywhere` | `rave-everywhere.html` | `/rave-everywhere` | `dispatch-shell` | yes |
 | `djs` | `djs.html` | `/djs` | `dispatch-shell` | yes |
 | `venues` | `venues.html` | `/venues` | `dispatch-shell` | yes |
+| `account` | `account.html` | `/account` | `dispatch-shell` | yes |
 | `ops` | `ops.html` | `/ops` | `dispatch-shell` | no |
 
 `shanghai-rave-calendar-2026.html` is tracked as a legacy calendar mirror. It is syntax-checked and must keep the shared theme and homepage stats placement, but it is not a separate sitemap route.

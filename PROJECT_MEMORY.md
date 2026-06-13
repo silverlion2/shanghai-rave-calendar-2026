@@ -1,6 +1,6 @@
 # Project Memory
 
-Last updated: 2026-06-13 15:55 Asia/Shanghai
+Last updated: 2026-06-13 16:22 Asia/Shanghai
 
 ## Project
 
@@ -658,3 +658,25 @@ Operational notes:
 - Live Supabase reaction sync still requires applying the new migration; this machine does not currently have `SUPABASE_DB_URL` or `DATABASE_URL` configured for `npm run supabase:migrate`.
 - Full `npm run check` is currently blocked by unrelated account-system sitemap state for `/account`.
 - Love Wall inline JavaScript checks passed, and browser smoke testing confirmed the emoji rail renders, click state updates, and desktop/mobile layouts do not overflow.
+
+## 2026-06-13 Website Structure Tracking and Theme Unification
+
+The user asked to refactor the website, establish website structure tracking, document the theme, and unify all pages with the front page theme.
+
+Implemented state:
+
+- `config/website-structure.json` is the canonical page/route/navigation registry for the static site.
+- `docs/WEBSITE_STRUCTURE.md` documents tracked root pages, the legacy calendar mirror, generated event pages, sitemap rules, shared assets, and validation rules.
+- `docs/WEBSITE_THEME.md` documents the Basement Dispatch theme: dark gritty grid background, sharp rectangular controls, `Barlow Condensed` display type, `IBM Plex Mono` body type, shared tokens, shell rules, component rules, and the new-page checklist.
+- `scripts/site-structure.js`, `scripts/site-components.js`, and `scripts/check-site-structure.js` support shared SEO/head/nav/footer rendering and structure validation.
+- `scripts/generate-seo-pages.js` uses the shared site component helpers for generated event detail pages.
+- `assets/event-detail.css` was aligned with the front page theme tokens, typography, nav controls, event panels, and responsive event hero behavior.
+- `rave-everywhere.html` had local theme-token drift corrected to match the front page.
+- `account.html` is tracked as a public `dispatch-shell` page in the structure registry and structure docs.
+
+Verification:
+
+- Browser audit checked all 74 HTML pages against the front page at desktop `1440x1000` and mobile `390x844`; final result had `0` mismatches.
+- The audit covered tracked root pages, `shanghai-rave-calendar-2026.html`, `account.html`, and all generated event detail pages.
+- Mobile event-detail overflow was fixed by adding `min-width: 0`, responsive image constraints, and safe wrapping to the shared event detail stylesheet.
+- `npm run check` passed after the final theme changes with 6 account-system tests passing, structure tracking OK, inline scripts OK, and event-audit warnings empty.

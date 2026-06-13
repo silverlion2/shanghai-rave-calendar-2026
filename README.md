@@ -17,7 +17,7 @@ When served over HTTP, the calendar reads `data/events.json`. If that file is mi
 
 ## Account dispatch
 
-`account.html` provides a personal dispatch system for saved sounds, venues, budget mode, timing, source confidence, and event shortlists. It works locally through `localStorage` without sign-in, and can sync across devices through Supabase Auth after the account migration is applied. The homepage reads the same preference profile into the `For you` dispatch panel.
+`account.html` provides a Supabase Auth registration/login wall for saved sounds, venues, budget mode, timing, source confidence, and event shortlists. Account tools require sign-in; the public calendar remains open. After login, the homepage reads the same preference profile into the `For you` dispatch panel.
 
 ## DJ tracking
 

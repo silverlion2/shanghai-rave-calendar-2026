@@ -1819,8 +1819,11 @@
     }
   </style>
   <link rel="stylesheet" href="assets/basement-dispatch.css">
+  <link rel="stylesheet" href="assets/account-system.css">
+  <script src="assets/love-wall-supabase-config.js"></script>
+  <script src="assets/account-system.js"></script>
 </head>
-<body>
+<body data-current-date="2026-06-13">
   <canvas class="signal-canvas" id="signalCanvas" aria-hidden="true"></canvas>
   <main class="shell calendar-shell">
     <nav class="primary-nav" aria-label="Primary">
@@ -1832,6 +1835,7 @@
       <a class="nav-link" href="rave-everywhere.html">Everywhere</a>
       <a class="nav-link" href="venues.html">Venues</a>
       <a class="nav-link" href="djs.html">DJs</a>
+      <a class="nav-link" href="account.html">Account</a>
     </nav>
 
     <header class="topbar">
@@ -1950,6 +1954,8 @@
           </div>
           <div class="dispatch-list" id="weekendPanel"></div>
         </section>
+
+        <section class="panel dispatch-panel" id="personalizedDispatch" aria-label="Personalized event dispatch"></section>
       </aside>
     </section>
 
@@ -3994,6 +4000,17 @@
       renderDispatchPanels();
       renderSetPlanner();
       renderItinerary();
+      syncAccountPersonalization();
+    }
+
+    function syncAccountPersonalization() {
+      window.SHANGHAI_RAVE_EVENTS = events;
+      if (window.RaveAccountSystem && typeof window.RaveAccountSystem.enhanceCalendarPage === "function") {
+        window.RaveAccountSystem.enhanceCalendarPage({ events, openEvent: openModal });
+      }
+      window.dispatchEvent(new CustomEvent("rave:events-loaded", {
+        detail: { events, openEvent: openModal }
+      }));
     }
 
     function monthCopy(code, count, watch) {

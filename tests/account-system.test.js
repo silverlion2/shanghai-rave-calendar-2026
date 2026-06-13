@@ -1,0 +1,197 @@
+const test = require("node:test");
+const assert = require("node:assert/strict");
+
+const {
+  normalizePreferences,
+  rankEvents,
+  savedEventIdsAfterToggle,
+  personalizedSummary,
+  accountAccessState,
+  accountFeatureCatalog,
+} = require("../assets/account-system.js");
+
+const sampleEvents = [
+  {
+    id: "hard-basement",
+    title: "Abyss Hard Room",
+    sortDate: "2026-06-14",
+    date: "Jun 14",
+    time: "23:00-late",
+    venue: "Abyss",
+    district: "Huangpu",
+    vibe: ["hard", "underground"],
+    genre: "hard techno, rave",
+    price: "120 RMB",
+    confidence: "High",
+    status: "upcoming",
+    sourceStatus: "official",
+    posterUrl: "assets/posters/santa-k-optimized.jpg",
+  },
+  {
+    id: "soft-rooftop",
+    title: "Bund Sunset House",
+    sortDate: "2026-06-15",
+    date: "Jun 15",
+    time: "18:00-23:00",
+    venue: "The Dome",
+    district: "Bund",
+    vibe: ["date"],
+    genre: "house, rooftop",
+    price: "Free entry",
+    confidence: "Medium",
+    status: "upcoming",
+    sourceStatus: "secondary",
+  },
+  {
+    id: "saved-bass",
+    title: "Bass Tunnel",
+    sortDate: "2026-06-16",
+    date: "Jun 16",
+    time: "22:00-late",
+    venue: "System",
+    district: "Jing'an",
+    vibe: ["bass", "underground"],
+    genre: "bass, club",
+    price: "80 RMB",
+    confidence: "Medium",
+    status: "upcoming",
+    sourceStatus: "secondary",
+  },
+  {
+    id: "watch-lead",
+    title: "Secret Warehouse Lead",
+    sortDate: "2026-06-17",
+    date: "Jun 17",
+    time: "TBA",
+    venue: "TBA",
+    district: "TBA",
+    vibe: ["warehouse", "hard"],
+    genre: "warehouse techno",
+    price: "TBA",
+    confidence: "Watch",
+    status: "watch",
+    sourceStatus: "watchlist",
+  },
+];
+
+test("normalizePreferences keeps only supported values and sensible defaults", () => {
+  const preferences = normalizePreferences({
+    displayName: "  Front Left  ",
+    vibes: ["hard", "noise", "bass", "hard"],
+    venues: ["Abyss", "", "System", "Abyss"],
+    budget: "free",
+    timing: "late",
+    discoveryMode: "trusted",
+    hideWatchlist: true,
+    savedEventIds: ["saved-bass", "", "saved-bass"],
+  });
+
+  assert.deepEqual(preferences, {
+    displayName: "Front Left",
+    vibes: ["hard", "bass"],
+    venues: ["Abyss", "System"],
+    budget: "free",
+    timing: "late",
+    discoveryMode: "trusted",
+    hideWatchlist: true,
+    savedEventIds: ["saved-bass"],
+  });
+});
+
+test("rankEvents prioritizes matching sound, venue, saved events, and trusted sources", () => {
+  const preferences = normalizePreferences({
+    vibes: ["hard", "underground"],
+    venues: ["Abyss"],
+    timing: "late",
+    discoveryMode: "trusted",
+    hideWatchlist: true,
+    savedEventIds: ["saved-bass"],
+  });
+
+  const ranked = rankEvents(sampleEvents, preferences, {
+    today: "2026-06-13",
+    limit: 3,
+  });
+
+  assert.deepEqual(ranked.map(item => item.event.id), [
+    "hard-basement",
+    "saved-bass",
+    "soft-rooftop",
+  ]);
+  assert.ok(ranked[0].score > ranked[1].score);
+  assert.ok(ranked[0].reasons.includes("sound match: hard"));
+  assert.ok(ranked[0].reasons.includes("room match: Abyss"));
+  assert.ok(!ranked.some(item => item.event.id === "watch-lead"));
+});
+
+test("savedEventIdsAfterToggle returns stable saved ids without mutation", () => {
+  const original = ["hard-basement"];
+  const added = savedEventIdsAfterToggle(original, "saved-bass");
+  const removed = savedEventIdsAfterToggle(added, "hard-basement");
+
+  assert.deepEqual(original, ["hard-basement"]);
+  assert.deepEqual(added, ["hard-basement", "saved-bass"]);
+  assert.deepEqual(removed, ["saved-bass"]);
+});
+
+test("personalizedSummary describes the active account display", () => {
+  const summary = personalizedSummary(normalizePreferences({
+    displayName: "front left",
+    vibes: ["bass", "underground"],
+    venues: ["System"],
+    budget: "any",
+    timing: "late",
+    savedEventIds: ["saved-bass"],
+  }));
+
+  assert.equal(summary.title, "front left dispatch");
+  assert.equal(summary.savedCount, 1);
+  assert.match(summary.description, /bass \/ underground/);
+  assert.match(summary.description, /System/);
+});
+
+test("accountAccessState gates account tools behind Supabase Auth", () => {
+  assert.deepEqual(accountAccessState({ loading: true }), {
+    mode: "loading",
+    label: "Checking account",
+    action: "loading",
+  });
+  assert.deepEqual(accountAccessState({ hasSupabase: false, session: null }), {
+    mode: "unavailable",
+    label: "Supabase required",
+    action: "configure",
+  });
+  assert.deepEqual(accountAccessState({ hasSupabase: true, session: null }), {
+    mode: "gated",
+    label: "Sign in required",
+    action: "authenticate",
+  });
+  assert.deepEqual(accountAccessState({
+    hasSupabase: true,
+    session: { user: { id: "user-1", email: "front@example.com" } },
+  }), {
+    mode: "dashboard",
+    label: "Account connected",
+    action: "manage",
+  });
+});
+
+test("accountFeatureCatalog lists live Supabase features and account expansion paths", () => {
+  const features = accountFeatureCatalog();
+  const ids = features.map(feature => feature.id);
+
+  assert.deepEqual(ids, [
+    "auth-profile",
+    "preference-sync",
+    "saved-events",
+    "for-you-ranking",
+    "itinerary-sync",
+    "love-wall-identity",
+    "source-alerts",
+    "privacy-export",
+    "moderation-role",
+  ]);
+  assert.ok(features.filter(feature => feature.status === "live").length >= 4);
+  assert.ok(features.every(feature => feature.title && feature.description && feature.storage));
+  assert.ok(features.find(feature => feature.id === "saved-events").storage.includes("saved_events"));
+});
