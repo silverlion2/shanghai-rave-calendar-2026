@@ -1,6 +1,6 @@
 # Project Memory
 
-Last updated: 2026-06-13 09:56 Asia/Shanghai
+Last updated: 2026-06-13 15:55 Asia/Shanghai
 
 ## Project
 
@@ -533,3 +533,28 @@ Important implementation notes:
 - `scripts/scrape-events.js` and `scripts/audit-events.js` use a shared performer-profile key strategy that strips format suffixes like `[Live]` and supports alias-aware profile-source coverage.
 - `config/tracked-dj-profiles.json` is the durable curated source layer for DJ profile evidence.
 - The next database improvement pass should work down `quality.djCoverage.sourceUpgradeQueue`, starting with high-fit single-source future performers such as Cosmjn, D3M3NTOR, howtodo, Josie, LaGlory, Limsum, Marcus, Matisa, Max Shen, MegaWatts, Milo Raad, and Santa K.
+
+## 2026-06-13 Static vs Dynamic Site Decision Note
+
+The user asked about the difference between a static site and a dynamic site.
+
+Decision context for this project:
+
+- The current `rave calendar` / `Basement Dispatch` site remains a static site for v1: HTML, CSS, JavaScript, generated JSON, generated SEO pages, local assets, GitHub/Vercel deployment, and no runtime database requirement.
+- Static is still the right default while the main product is a public event/venue/DJ guide with scrape-generated data, crawlable event pages, and mostly read-only user flows.
+- Dynamic/database-backed architecture becomes relevant only when the product needs durable multi-user features such as login, saved events, moderation queues, backend publishing, real-time content updates, notifications, payments, or analytics beyond third-party tracking.
+- For now, keep using the GitHub-only workflow: scrape/generate data, validate with `npm run check`, commit generated files, and deploy the static output.
+
+## 2026-06-13 Web-First Supabase Backend
+
+The user decided to focus on the web product first, defer mini-program work, connect Supabase, push to `main`, and save the decision in project history.
+
+Implemented state:
+
+- `main` is aligned with `origin/main` at `6af7449` (`Install Supabase backend and refresh site`).
+- The static web product now has Supabase backend scaffolding for durable data and Love Wall submissions while preserving static HTML deployment.
+- `assets/love-wall-supabase-config.js` enables the Love Wall client against the Supabase project with the public anon key only.
+- `supabase/migrations/202606130001_full_backend_schema.sql` defines the full backend schema; `supabase/love-wall.sql` documents the focused Love Wall table/RLS path.
+- `supabase/README.md` documents environment variables and the install sequence: `npm run supabase:migrate`, `npm run supabase:import`, and `npm run supabase:configure-client`.
+- Public Love Wall submissions insert as `pending`; public reads return only approved posts through RLS. Moderation/admin operations must use server-side credentials or the Supabase dashboard.
+- Mini-program/CloudBase work is intentionally deferred until the web funnel and community interaction model are clearer.
