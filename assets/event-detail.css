@@ -278,6 +278,29 @@ figcaption {
   margin-top: 18px;
 }
 
+.decision-block p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.decision-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.decision-tags span {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, .045);
+  color: var(--paper);
+  padding: 8px 10px;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
 .lineup-list,
 .source-list {
   display: grid;

@@ -234,7 +234,7 @@ function buildRows() {
       poster_url: poster?.image?.display || event.posterUrl || null,
       image_theme: event.imageTheme || null,
       vibe: event.vibe || [],
-      tags: event.tags || [],
+      tags: Array.from(new Set([...(event.tags || []), ...(event.soundTags || []), ...(event.decisionTags || [])].filter(Boolean))),
       sources: event.sources || [],
       lineup: event.lineup || [],
       set_times: event.setTimes || [],

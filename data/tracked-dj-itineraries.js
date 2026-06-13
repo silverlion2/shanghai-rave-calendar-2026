@@ -484,7 +484,7 @@ window.DJ_ITINERARY_DATA = {
   "njelic": {
     "slug": "njelic",
     "name": "NJELIC",
-    "trackedAt": "2026-06-13",
+    "trackedAt": "2026-06-14",
     "checkedByTimezone": "Asia/Shanghai",
     "scope": "Worldwide itinerary rows generated from scraped and curated event data",
     "imageTheme": "ember",

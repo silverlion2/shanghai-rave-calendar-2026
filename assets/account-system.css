@@ -515,7 +515,7 @@
 .account-public-guide-link {
   min-width: 0;
   width: 100%;
-  min-height: 100%;
+  min-height: 44px;
   display: grid;
   place-items: center;
   border: 1px solid var(--cyan, #41d7ff);
@@ -526,6 +526,18 @@
   line-height: 1;
   text-align: center;
   text-decoration: none;
+}
+
+.account-public-guide-actions {
+  display: grid;
+  gap: 8px;
+  min-width: 132px;
+}
+
+.account-public-guide-link.secondary {
+  border-color: rgba(229, 222, 209, .24);
+  background: rgba(5, 6, 6, .54);
+  color: var(--paper, var(--ink, #f2f0e8));
 }
 
 .calendar-shell .account-public-guide-card {

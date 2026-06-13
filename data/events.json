@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-13T15:06:12.909Z",
-  "verified": "2026-06-13",
+  "generatedAt": "2026-06-13T16:04:33.835Z",
+  "verified": "2026-06-14",
   "timezone": "Asia/Shanghai",
   "sourcePriority": [
     "Chrome + Computer Use for anti-bot, logged-in, app-only, image/poster, and mini-program sources",
@@ -15,7 +15,7 @@
       "url": "https://ra.co/events/cn/shanghai",
       "kind": "listing",
       "sourceStatus": "secondary",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": 403,
       "eventLinks": 0
@@ -25,7 +25,7 @@
       "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
       "kind": "guide",
       "sourceStatus": "secondary",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "eventLinks": 0,
@@ -36,10 +36,10 @@
       "url": "https://www.smartshanghai.com/events/clubbing/",
       "kind": "listing",
       "sourceStatus": "secondary",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": true,
       "status": 200,
-      "eventLinks": 19
+      "eventLinks": 10
     },
     {
       "label": "X/Twitter keyword: \"Shanghai\" techno",
@@ -48,7 +48,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -61,7 +61,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -74,7 +74,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -87,7 +87,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -100,7 +100,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -113,7 +113,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -126,7 +126,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -139,7 +139,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -152,7 +152,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -165,7 +165,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -178,7 +178,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -191,7 +191,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -204,7 +204,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -217,7 +217,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -230,7 +230,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -243,7 +243,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -255,7 +255,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -268,7 +268,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -281,7 +281,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": null,
       "status": "computer-use",
       "priority": 2,
@@ -294,7 +294,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -307,7 +307,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -320,7 +320,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -333,7 +333,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -346,7 +346,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "ok": null,
       "status": "computer-use",
       "priority": 2,
@@ -387,7 +387,30 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "industrial",
+        "bass-hybrid",
+        "groovy"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "high intensity",
+        "late room",
+        "ticket path"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "solid",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "byyb-conceptual",
@@ -421,7 +444,30 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "live-av",
+        "industrial",
+        "groovy"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "high intensity",
+        "listening/live angle",
+        "ticket path"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "solid",
+        "lateRoom": false,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "lorenzo-senni",
@@ -455,7 +501,31 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "trance-adjacent",
+        "live-av",
+        "industrial"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "high intensity",
+        "listening/live angle",
+        "late room"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "solid",
+        "lateRoom": true,
+        "ticketReady": false,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "ticket unclear",
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "techno-basics",
@@ -489,7 +559,30 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "hard-techno",
+        "trance-adjacent"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "high intensity",
+        "late room",
+        "ticket path",
+        "trusted source"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "void-vacuum",
@@ -523,7 +616,30 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "hypnotic",
+        "hard-techno"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "high intensity",
+        "late room",
+        "ticket path",
+        "trusted source"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "exxx-plural",
@@ -557,7 +673,29 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "bass-hybrid",
+        "groovy"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "late room",
+        "ticket path",
+        "trusted source"
+      ],
+      "decisionProfile": {
+        "intensity": "high",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "motor-city",
@@ -591,7 +729,32 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "industrial",
+        "groovy",
+        "live-av"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "high intensity",
+        "listening/live angle",
+        "late room",
+        "ticket path",
+        "trusted source"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "solid",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "potent-five",
@@ -625,7 +788,30 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "rooftop",
+        "groovy"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "date route",
+        "late room",
+        "ticket path",
+        "trusted source"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "tempio-potent",
@@ -658,7 +844,29 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "industrial",
+        "groovy"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "high intensity",
+        "late room"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "solid",
+        "lateRoom": true,
+        "ticketReady": false,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "ticket unclear",
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "schwartz",
@@ -692,7 +900,31 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "industrial",
+        "hypnotic",
+        "acid",
+        "hard-techno"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "high intensity",
+        "late room"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "solid",
+        "lateRoom": true,
+        "ticketReady": false,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "ticket unclear",
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "noizar-soyo",
@@ -726,7 +958,32 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "bass-hybrid",
+        "industrial",
+        "live-av",
+        "groovy"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "high intensity",
+        "listening/live angle",
+        "late room",
+        "ticket path"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "solid",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "xulalit",
@@ -759,7 +1016,32 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "warehouse",
+        "rooftop",
+        "groovy"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "date route",
+        "warehouse signal",
+        "late room",
+        "ticket path",
+        "trusted source"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "cam-girl",
@@ -793,7 +1075,33 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "groovy",
+        "trance-adjacent",
+        "bass-hybrid",
+        "industrial",
+        "live-av"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "high intensity",
+        "listening/live angle",
+        "late room",
+        "ticket path"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "solid",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "lacchesi",
@@ -827,7 +1135,33 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "hard-techno",
+        "industrial",
+        "trance-adjacent",
+        "warehouse"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "high intensity",
+        "warehouse signal",
+        "late room",
+        "ticket path",
+        "trusted source"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "rui-ho",
@@ -861,7 +1195,33 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "bass-hybrid",
+        "industrial",
+        "live-av",
+        "groovy"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "high intensity",
+        "listening/live angle",
+        "late room",
+        "ticket path",
+        "trusted source"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "anyma",
@@ -894,7 +1254,32 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "melodic",
+        "live-av",
+        "rooftop",
+        "groovy"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "date route",
+        "listening/live angle",
+        "ticket path",
+        "trusted source"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "solid",
+        "lateRoom": false,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "dark-haze",
@@ -928,7 +1313,32 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "hard-techno",
+        "industrial",
+        "live-av"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "high intensity",
+        "listening/live angle",
+        "late room",
+        "ticket path",
+        "trusted source"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "abibas",
@@ -962,7 +1372,34 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "hard-techno",
+        "industrial",
+        "trance-adjacent",
+        "bass-hybrid",
+        "live-av"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "high intensity",
+        "listening/live angle",
+        "late room",
+        "ticket path",
+        "trusted source"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "linear-system",
@@ -996,7 +1433,31 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "warehouse",
+        "hard-techno"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "high intensity",
+        "warehouse signal",
+        "late room",
+        "ticket path",
+        "trusted source"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "system-secret",
@@ -1030,7 +1491,32 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "industrial",
+        "bass-hybrid",
+        "warehouse",
+        "groovy"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "high intensity",
+        "warehouse signal",
+        "late room",
+        "ticket path"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "solid",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "cocarde",
@@ -1064,7 +1550,30 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "groovy",
+        "rooftop"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "date route",
+        "late room",
+        "ticket path",
+        "trusted source"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "up-2-u",
@@ -1099,7 +1608,33 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "bass-hybrid",
+        "warehouse",
+        "rooftop",
+        "groovy"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "date route",
+        "warehouse signal",
+        "late room",
+        "ticket path",
+        "trusted source"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "captain25",
@@ -1133,7 +1668,31 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "minimal",
+        "rooftop",
+        "groovy"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "date route",
+        "late room",
+        "ticket path",
+        "trusted source"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "body-loop",
@@ -1167,7 +1726,32 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "industrial",
+        "groovy",
+        "live-av"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "high intensity",
+        "listening/live angle",
+        "late room",
+        "ticket path",
+        "trusted source"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "solid",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "hotl4b",
@@ -1202,7 +1786,31 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "bass-hybrid",
+        "warehouse",
+        "groovy"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "warehouse signal",
+        "late room",
+        "ticket path",
+        "trusted source"
+      ],
+      "decisionProfile": {
+        "intensity": "high",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "tomo",
@@ -1236,7 +1844,33 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "hypnotic",
+        "industrial",
+        "live-av",
+        "groovy"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "high intensity",
+        "listening/live angle",
+        "late room",
+        "ticket path",
+        "trusted source"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "janein",
@@ -1270,7 +1904,28 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "hard-techno"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "high intensity",
+        "late room"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "solid",
+        "lateRoom": true,
+        "ticketReady": false,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "ticket unclear",
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "nightwave",
@@ -1303,7 +1958,30 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "rooftop",
+        "groovy"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "date route",
+        "late room",
+        "ticket path",
+        "trusted source"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "solid",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "tham",
@@ -1337,7 +2015,28 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "hard-techno"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "high intensity",
+        "late room"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "solid",
+        "lateRoom": true,
+        "ticketReady": false,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "ticket unclear",
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "caroline-roxy",
@@ -1371,7 +2070,29 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "hard-techno"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "high intensity",
+        "late room",
+        "ticket path",
+        "trusted source"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "shanghai-tonight-night-festival-2026",
@@ -1430,7 +2151,30 @@
           "status": "watchlist",
           "lastChecked": "2026-06-13"
         }
-      ]
+      ],
+      "soundTags": [
+        "live-av",
+        "rooftop"
+      ],
+      "decisionTags": [
+        "low techno fit",
+        "date route",
+        "listening/live angle",
+        "ticket path",
+        "verify first"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "unconfirmed",
+        "lateRoom": false,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "watchlist",
+          "lineup limited"
+        ]
+      }
     },
     {
       "id": "sunkissed",
@@ -1463,7 +2207,30 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "rooftop",
+        "groovy"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "date route",
+        "late room",
+        "ticket path",
+        "trusted source"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "solid",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "techno-worlds",
@@ -1498,7 +2265,33 @@
           "status": "secondary",
           "lastChecked": "2026-06-08"
         }
-      ]
+      ],
+      "soundTags": [
+        "hypnotic",
+        "hard-techno",
+        "industrial",
+        "live-av"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "high intensity",
+        "listening/live angle",
+        "late room",
+        "ticket path",
+        "trusted source"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "fruitygroove-soul-navigator",
@@ -1621,7 +2414,27 @@
         }
       ],
       "posterUrl": "assets/posters/fruitygroove-soul-navigator.png",
-      "kind": "event"
+      "kind": "event",
+      "soundTags": [
+        "groovy",
+        "bass-hybrid"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "late room",
+        "ticket path",
+        "trusted source",
+        "lineup visible"
+      ],
+      "decisionProfile": {
+        "intensity": "high",
+        "credibility": "solid",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": []
+      }
     },
     {
       "id": "kollin",
@@ -1719,7 +2532,27 @@
         "status": "Flyer front and back images are visible on the RA detail page."
       },
       "ticketStatus": "RA says to scan the WeChat mini-program code to purchase tickets and lists minimum age 18+.",
-      "posterUrl": "assets/posters/kollin.jpg"
+      "posterUrl": "assets/posters/kollin.jpg",
+      "soundTags": [
+        "groovy",
+        "bass-hybrid"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "late room",
+        "ticket path",
+        "trusted source",
+        "lineup visible"
+      ],
+      "decisionProfile": {
+        "intensity": "high",
+        "credibility": "solid",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": []
+      }
     },
     {
       "id": "cltx-abyss",
@@ -1789,7 +2622,30 @@
         "status": "Flyer front image is visible on the RA detail page."
       },
       "ticketStatus": "RA lists cost at 140 RMB and minimum age 18+.",
-      "posterUrl": "assets/posters/cltx-abyss.jpg"
+      "posterUrl": "assets/posters/cltx-abyss.jpg",
+      "soundTags": [
+        "hard-techno",
+        "trance-adjacent",
+        "warehouse"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "high intensity",
+        "warehouse signal",
+        "late room",
+        "ticket path",
+        "trusted source",
+        "lineup visible"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": []
+      }
     },
     {
       "id": "milo-cosmjn",
@@ -1849,7 +2705,28 @@
         "status": "Flyer image is visible on the RA detail page."
       },
       "ticketStatus": "RA lists cost at 100 RMB and minimum age 18+. Final ticket route should be checked before publishing a direct purchase CTA.",
-      "posterUrl": "assets/posters/milo-cosmjn.jpg"
+      "posterUrl": "assets/posters/milo-cosmjn.jpg",
+      "soundTags": [
+        "rooftop",
+        "groovy"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "date route",
+        "late room",
+        "ticket path",
+        "trusted source",
+        "lineup visible"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": []
+      }
     },
     {
       "id": "fengyun-5",
@@ -1910,7 +2787,28 @@
           "note": "RA-listed lineup artist; exact set time was not published."
         }
       ],
-      "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+."
+      "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+.",
+      "soundTags": [
+        "industrial",
+        "live-av"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "high intensity",
+        "listening/live angle",
+        "late room",
+        "ticket path",
+        "lineup visible"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "solid",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": false,
+        "riskFlags": []
+      }
     },
     {
       "id": "horizon",
@@ -1985,7 +2883,28 @@
         }
       ],
       "ticketStatus": "RA lists tickets at 138-178 RMB with one drink, minimum age 18+, and SmartShanghai/WeChat promotional links.",
-      "posterUrl": "assets/posters/horizon.jpg"
+      "posterUrl": "assets/posters/horizon.jpg",
+      "soundTags": [
+        "rooftop",
+        "groovy"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "date route",
+        "late room",
+        "ticket path",
+        "trusted source",
+        "lineup visible"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "solid",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": []
+      }
     },
     {
       "id": "the-woods",
@@ -2043,7 +2962,27 @@
         "status": "Flyer front image is visible on the RA detail page."
       },
       "ticketStatus": "RA lists cost as 0 and minimum age 18+; event description says entry is free.",
-      "posterUrl": "assets/posters/the-woods.jpg"
+      "posterUrl": "assets/posters/the-woods.jpg",
+      "soundTags": [
+        "industrial"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "high intensity",
+        "late room",
+        "ticket path",
+        "trusted source",
+        "lineup visible"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": []
+      }
     },
     {
       "id": "matisa-limsum",
@@ -2103,42 +3042,28 @@
         "status": "Flyer image is visible on the RA detail page."
       },
       "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+. Final ticket route should be checked before publishing a direct purchase CTA.",
-      "posterUrl": "assets/posters/matisa-limsum.jpg"
-    },
-    {
-      "id": "2026-06-13-new-writing-supermarket-grand-reopeni",
-      "month": "Jun",
-      "sortDate": "2026-06-13",
-      "date": "Jun 13",
-      "time": "00:00",
-      "title": "New Writing Supermarket Grand Reopening Party \"2m² Art Supermarket\"",
-      "venue": "889 GLO",
-      "district": "Shanghai",
-      "vibe": [
-        "underground"
+      "posterUrl": "assets/posters/matisa-limsum.jpg",
+      "soundTags": [
+        "groovy",
+        "rooftop"
       ],
-      "genre": "electronic, club",
-      "confidence": "Watch",
-      "status": "watch",
-      "price": "Check source",
-      "age": "Check venue",
-      "source": "https://www.smartshanghai.com/event/new-writing-supermarket-grand-reopening-party-2m2-2026-06-13",
-      "sourceLabel": "SmartShanghai",
-      "imageTheme": "ember",
-      "posterUrl": "https://images.smartshanghai.com.cn/uploads/repository/2026/06/10/2ce27e49-4ac5-48e1-bbff-fbd67c714f00.jpg",
-      "description": "The New Writing Supermarket, the DIY gang of boundlessly creative theater kids that have thrown some of the most fun parties of recent years, has a brand new home up in Jing'an at 889 Plaza. This is their grand opening theme, and it's looking like beautiful chaos as usual. They've turned the first floor of this plaza into an art supermarket, and given a few dozen people two square meters each to do whatever they like. Expect a lot of eccentric and fun artists and surprises (e.g., cat tarot), ...",
-      "sourceStatus": "watchlist",
-      "addedAt": "2026-06-13",
-      "lastChecked": "2026-06-13",
-      "sources": [
-        {
-          "label": "SmartShanghai",
-          "url": "https://www.smartshanghai.com/event/new-writing-supermarket-grand-reopening-party-2m2-2026-06-13",
-          "status": "watchlist",
-          "lastChecked": "2026-06-13"
-        }
+      "decisionTags": [
+        "strong techno fit",
+        "date route",
+        "late room",
+        "ticket path",
+        "trusted source",
+        "lineup visible"
       ],
-      "kind": "event"
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": []
+      }
     },
     {
       "id": "nova-sunset-sessions-flair",
@@ -2184,7 +3109,28 @@
         }
       ],
       "posterUrl": "assets/posters/nova-sunset-sessions-flair.jpg",
-      "kind": "event"
+      "kind": "event",
+      "soundTags": [
+        "melodic",
+        "rooftop"
+      ],
+      "decisionTags": [
+        "low techno fit",
+        "date route",
+        "late room",
+        "ticket path"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "loose",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": true,
+        "riskFlags": [
+          "lineup limited"
+        ]
+      }
     },
     {
       "id": "nosaj-thing",
@@ -2283,42 +3229,31 @@
         "status": "Flyer image is visible on the RA detail page."
       },
       "ticketStatus": "RA lists cost at 148 RMB and minimum age 18+.",
-      "posterUrl": "assets/posters/nosaj-thing.png"
-    },
-    {
-      "id": "2026-06-13-riink-s-8th-rollerversary",
-      "month": "Jun",
-      "sortDate": "2026-06-13",
-      "date": "Jun 13",
-      "time": "00:00",
-      "title": "RIINK's 8th Rollerversary",
-      "venue": "RIINK",
-      "district": "Shanghai",
-      "vibe": [
-        "underground"
+      "posterUrl": "assets/posters/nosaj-thing.png",
+      "soundTags": [
+        "bass-hybrid",
+        "industrial",
+        "live-av",
+        "groovy"
       ],
-      "genre": "electronic, club",
-      "confidence": "Watch",
-      "status": "watch",
-      "price": "Check source",
-      "age": "Check venue",
-      "source": "https://www.smartshanghai.com/event/riink-s-8th-rollerversary-at-riink",
-      "sourceLabel": "SmartShanghai",
-      "imageTheme": "gold",
-      "posterUrl": "https://images.smartshanghai.com.cn/uploads/repository/2026/06/08/9a68cec5-e198-45e8-87f0-a17b54030e32.png",
-      "description": "RIINK is turning 8, marked by eight wheels, eight years, and a new color that reflects every glide, stumble, and comeback along the way. The 8th color represents courage, grit, and possibility, a symbol of persistence and evolution. On Saturday, the anniversary will be celebrated with music, food, drinks, games, and activities, including skating the figure‑8 and creative color play. Visitors are encouraged to wear white, and those with June birthdays can enjoy free skating with any food or dr...",
-      "sourceStatus": "watchlist",
-      "addedAt": "2026-06-13",
-      "lastChecked": "2026-06-13",
-      "sources": [
-        {
-          "label": "SmartShanghai",
-          "url": "https://www.smartshanghai.com/event/riink-s-8th-rollerversary-at-riink",
-          "status": "watchlist",
-          "lastChecked": "2026-06-13"
-        }
+      "decisionTags": [
+        "techno-adjacent",
+        "high intensity",
+        "listening/live angle",
+        "late room",
+        "ticket path",
+        "trusted source",
+        "lineup visible"
       ],
-      "kind": "event"
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "solid",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": []
+      }
     },
     {
       "id": "santa-k",
@@ -2393,7 +3328,28 @@
         }
       ],
       "ticketStatus": "RA lists cost at 120 RMB. Minimum age was not exposed in the fetched RA text, so confirm door policy with Abyss/TURBO before publishing.",
-      "posterUrl": "assets/posters/santa-k.png"
+      "posterUrl": "assets/posters/santa-k.png",
+      "soundTags": [
+        "hard-techno",
+        "trance-adjacent"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "high intensity",
+        "late room",
+        "ticket path",
+        "trusted source",
+        "lineup visible"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": []
+      }
     },
     {
       "id": "synth-crush",
@@ -2461,7 +3417,30 @@
         "status": "Flyer image is visible on the RA detail page."
       },
       "ticketStatus": "RA lists cost at 118 RMB. Age rule was not visible in the fetched RA text.",
-      "posterUrl": "assets/posters/synth-crush.jpg"
+      "posterUrl": "assets/posters/synth-crush.jpg",
+      "soundTags": [
+        "industrial",
+        "groovy",
+        "live-av"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "high intensity",
+        "listening/live angle",
+        "late room",
+        "ticket path",
+        "trusted source",
+        "lineup visible"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "solid",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": []
+      }
     },
     {
       "id": "system-popup",
@@ -2496,7 +3475,30 @@
           "lastChecked": "2026-06-11"
         }
       ],
-      "ticketStatus": "SmartShanghai says System returns to the Shanghai Hotel e-sports arena on Saturdays from June 13 until early August, but public lineups and ticket details were not found in this pass. Keep as Watch."
+      "ticketStatus": "SmartShanghai says System returns to the Shanghai Hotel e-sports arena on Saturdays from June 13 until early August, but public lineups and ticket details were not found in this pass. Keep as Watch.",
+      "soundTags": [
+        "warehouse",
+        "groovy"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "warehouse signal",
+        "verify first"
+      ],
+      "decisionProfile": {
+        "intensity": "medium",
+        "credibility": "unconfirmed",
+        "lateRoom": false,
+        "ticketReady": false,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "watchlist",
+          "ticket unclear",
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "sunset-sundays-dome",
@@ -2554,7 +3556,29 @@
         }
       ],
       "posterUrl": "assets/posters/sunset-sundays-dome.jpg",
-      "kind": "event"
+      "kind": "event",
+      "soundTags": [
+        "melodic",
+        "rooftop"
+      ],
+      "decisionTags": [
+        "low techno fit",
+        "date route",
+        "ticket path",
+        "lineup visible",
+        "verify first"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "unconfirmed",
+        "lateRoom": false,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": [
+          "watchlist"
+        ]
+      }
     },
     {
       "id": "alter-pavillon",
@@ -2630,7 +3654,31 @@
         "status": "Event images are visible on the SmartShanghai detail page."
       },
       "ticketStatus": "SmartShanghai lists early bird, presale, and door tickets from 128 RMB with web, app, and WeChat buying routes.",
-      "posterUrl": "assets/posters/alter-pavillon.png"
+      "posterUrl": "assets/posters/alter-pavillon.png",
+      "soundTags": [
+        "live-av",
+        "rooftop",
+        "industrial"
+      ],
+      "decisionTags": [
+        "low techno fit",
+        "high intensity",
+        "date route",
+        "listening/live angle",
+        "late room",
+        "ticket path",
+        "trusted source",
+        "lineup visible"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "loose",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": []
+      }
     },
     {
       "id": "night-at-museum-90s-disco",
@@ -2676,7 +3724,30 @@
         }
       ],
       "posterUrl": "assets/posters/night-at-museum-90s-disco.jpg",
-      "kind": "event"
+      "kind": "event",
+      "soundTags": [
+        "rooftop",
+        "groovy"
+      ],
+      "decisionTags": [
+        "low techno fit",
+        "date route",
+        "late room",
+        "ticket path",
+        "verify first"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "unconfirmed",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": true,
+        "riskFlags": [
+          "watchlist",
+          "lineup limited"
+        ]
+      }
     },
     {
       "id": "photocult-mask-desire-auction",
@@ -2810,7 +3881,26 @@
         }
       ],
       "posterUrl": "assets/posters/photocult-mask-desire-auction.png",
-      "kind": "event"
+      "kind": "event",
+      "soundTags": [
+        "groovy"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "late room",
+        "ticket path",
+        "trusted source",
+        "lineup visible"
+      ],
+      "decisionProfile": {
+        "intensity": "medium",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": []
+      }
     },
     {
       "id": "mrd",
@@ -2884,7 +3974,28 @@
         "status": "Flyer front image is visible on the RA detail page."
       },
       "ticketStatus": "RA lists cost at 128 RMB and minimum age 18+.",
-      "posterUrl": "assets/posters/mrd.png"
+      "posterUrl": "assets/posters/mrd.png",
+      "soundTags": [
+        "hard-techno",
+        "trance-adjacent"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "high intensity",
+        "late room",
+        "ticket path",
+        "trusted source",
+        "lineup visible"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": []
+      }
     },
     {
       "id": "afrowave-takeover-la-burg",
@@ -2949,7 +4060,31 @@
         }
       ],
       "posterUrl": "assets/posters/afrowave-takeover-la-burg.jpg",
-      "kind": "event"
+      "kind": "event",
+      "soundTags": [
+        "bass-hybrid",
+        "rooftop",
+        "groovy"
+      ],
+      "decisionTags": [
+        "low techno fit",
+        "date route",
+        "late room",
+        "ticket path",
+        "lineup visible",
+        "verify first"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "unconfirmed",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": [
+          "watchlist"
+        ]
+      }
     },
     {
       "id": "jasmin-knopha",
@@ -2990,7 +4125,30 @@
           "lastChecked": "2026-06-11"
         }
       ],
-      "ticketStatus": "SmartShanghai and Heim's public Instagram profile signal June 20 for Heim Invites: Jasmin with Knopha, but no public ticket page or set times were found in this pass. Keep as Watch."
+      "ticketStatus": "SmartShanghai and Heim's public Instagram profile signal June 20 for Heim Invites: Jasmin with Knopha, but no public ticket page or set times were found in this pass. Keep as Watch.",
+      "soundTags": [
+        "bass-hybrid",
+        "groovy"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "verify first",
+        "details need check"
+      ],
+      "decisionProfile": {
+        "intensity": "high",
+        "credibility": "unconfirmed",
+        "lateRoom": false,
+        "ticketReady": false,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "watchlist",
+          "ticket unclear",
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "liminal-dreams",
@@ -3025,7 +4183,33 @@
           "lastChecked": "2026-06-11"
         }
       ],
-      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; no public ticket page, lineup expansion, or set times found. Keep as Watch."
+      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; no public ticket page, lineup expansion, or set times found. Keep as Watch.",
+      "soundTags": [
+        "industrial",
+        "live-av",
+        "rooftop"
+      ],
+      "decisionTags": [
+        "low techno fit",
+        "high intensity",
+        "date route",
+        "listening/live angle",
+        "verify first"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "unconfirmed",
+        "lateRoom": false,
+        "ticketReady": false,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "watchlist",
+          "ticket unclear",
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "botox-fatale",
@@ -3060,7 +4244,30 @@
           "lastChecked": "2026-06-11"
         }
       ],
-      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; no RA, Abyss, or ticketing detail page found through public search. Keep as Watch."
+      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; no RA, Abyss, or ticketing detail page found through public search. Keep as Watch.",
+      "soundTags": [
+        "hard-techno"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "high intensity",
+        "verify first",
+        "details need check"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "unconfirmed",
+        "lateRoom": false,
+        "ticketReady": false,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "watchlist",
+          "ticket unclear",
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "cyber-buddha",
@@ -3139,7 +4346,34 @@
         "note": "SmartShanghai lists Star@ Culture Center for this June 26 Cyber Buddha event, while RA lists Bandai Namco Shanghai Base / Dream Theater with the same core lineup. Do not overwrite the venue until a primary organizer page resolves it.",
         "checked": "2026-06-11"
       },
-      "posterUrl": "assets/posters/cyber-buddha.jpg"
+      "posterUrl": "assets/posters/cyber-buddha.jpg",
+      "soundTags": [
+        "minimal",
+        "acid",
+        "live-av",
+        "industrial",
+        "rooftop"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "high intensity",
+        "date route",
+        "listening/live angle",
+        "ticket path",
+        "trusted source",
+        "lineup visible"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "solid",
+        "lateRoom": false,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": [
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "dark-room",
@@ -3237,7 +4471,26 @@
         }
       ],
       "posterUrl": "assets/posters/dark-room.jpg",
-      "kind": "event"
+      "kind": "event",
+      "soundTags": [
+        "groovy"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "late room",
+        "ticket path",
+        "trusted source",
+        "lineup visible"
+      ],
+      "decisionProfile": {
+        "intensity": "medium",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": []
+      }
     },
     {
       "id": "devils-dancers",
@@ -3272,7 +4525,33 @@
           "lastChecked": "2026-06-11"
         }
       ],
-      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; no public Specters, Love Bang, or ticketing detail page found. Keep as Watch."
+      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; no public Specters, Love Bang, or ticketing detail page found. Keep as Watch.",
+      "soundTags": [
+        "industrial",
+        "minimal",
+        "live-av",
+        "groovy"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "high intensity",
+        "listening/live angle",
+        "verify first"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "unconfirmed",
+        "lateRoom": false,
+        "ticketReady": false,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "watchlist",
+          "ticket unclear",
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "shanghai-mushroom-music-carnival-2026",
@@ -3350,7 +4629,29 @@
           "status": "watchlist",
           "lastChecked": "2026-06-13"
         }
-      ]
+      ],
+      "soundTags": [
+        "rooftop",
+        "groovy"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "date route",
+        "ticket path",
+        "verify first"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "unconfirmed",
+        "lateRoom": false,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "watchlist",
+          "lineup limited"
+        ]
+      }
     },
     {
       "id": "anika-kunst",
@@ -3391,7 +4692,30 @@
           "lastChecked": "2026-06-11"
         }
       ],
-      "ticketStatus": "SmartShanghai lists Anika Kunst at POTENT on June 27 and public search surfaced a POTENT June Instagram post, but no public detail or ticket page was found in this pass. Keep as Watch."
+      "ticketStatus": "SmartShanghai lists Anika Kunst at POTENT on June 27 and public search surfaced a POTENT June Instagram post, but no public detail or ticket page was found in this pass. Keep as Watch.",
+      "soundTags": [
+        "rooftop",
+        "groovy"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "date route",
+        "verify first"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "unconfirmed",
+        "lateRoom": false,
+        "ticketReady": false,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "watchlist",
+          "ticket unclear",
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "hexscape",
@@ -3426,7 +4750,32 @@
           "lastChecked": "2026-06-11"
         }
       ],
-      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; no public detail page or ticket link found. Keep as Watch."
+      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; no public detail page or ticket link found. Keep as Watch.",
+      "soundTags": [
+        "live-av",
+        "industrial"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "high intensity",
+        "listening/live angle",
+        "verify first",
+        "details need check"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "unconfirmed",
+        "lateRoom": false,
+        "ticketReady": false,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "watchlist",
+          "ticket unclear",
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "jaal",
@@ -3467,7 +4816,34 @@
           "lastChecked": "2026-06-11"
         }
       ],
-      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; Fenrir venue context is public, but no event detail or ticket page was found. Keep as Watch."
+      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; Fenrir venue context is public, but no event detail or ticket page was found. Keep as Watch.",
+      "soundTags": [
+        "industrial",
+        "acid",
+        "live-av",
+        "hard-techno"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "high intensity",
+        "listening/live angle",
+        "verify first",
+        "details need check"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "unconfirmed",
+        "lateRoom": false,
+        "ticketReady": false,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "watchlist",
+          "ticket unclear",
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "truth-lies",
@@ -3502,7 +4878,34 @@
           "lastChecked": "2026-06-11"
         }
       ],
-      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; no public ILLUM, KNOT, or ticketing detail page found. Keep as Watch."
+      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; no public ILLUM, KNOT, or ticketing detail page found. Keep as Watch.",
+      "soundTags": [
+        "trance-adjacent",
+        "bass-hybrid",
+        "industrial",
+        "live-av",
+        "groovy"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "high intensity",
+        "listening/live angle",
+        "verify first"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "unconfirmed",
+        "lateRoom": false,
+        "ticketReady": false,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "watchlist",
+          "ticket unclear",
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "nova-summer-splash-pool-party",
@@ -3548,7 +4951,29 @@
         }
       ],
       "posterUrl": "assets/posters/nova-summer-splash-pool-party.jpg",
-      "kind": "event"
+      "kind": "event",
+      "soundTags": [
+        "rooftop",
+        "groovy"
+      ],
+      "decisionTags": [
+        "low techno fit",
+        "date route",
+        "ticket path",
+        "verify first"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "unconfirmed",
+        "lateRoom": false,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": true,
+        "riskFlags": [
+          "watchlist",
+          "lineup limited"
+        ]
+      }
     },
     {
       "id": "youshan-warmup",
@@ -3583,7 +5008,36 @@
           "lastChecked": "2026-06-11"
         }
       ],
-      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; lineup remained TBA in public guide text, so keep as Watch until Wigwam or Youshan publishes the bill."
+      "ticketStatus": "Only the SmartShanghai June guide was found in this pass; lineup remained TBA in public guide text, so keep as Watch until Wigwam or Youshan publishes the bill.",
+      "soundTags": [
+        "minimal",
+        "trance-adjacent",
+        "bass-hybrid",
+        "industrial",
+        "live-av",
+        "groovy"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "high intensity",
+        "listening/live angle",
+        "verify first",
+        "details need check"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "unconfirmed",
+        "lateRoom": false,
+        "ticketReady": false,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "watchlist",
+          "ticket unclear",
+          "lineup limited",
+          "address/source check"
+        ]
+      }
     },
     {
       "id": "shenwave-music-festival-2026",
@@ -3638,7 +5092,29 @@
           "status": "watchlist",
           "lastChecked": "2026-06-13"
         }
-      ]
+      ],
+      "soundTags": [
+        "rooftop"
+      ],
+      "decisionTags": [
+        "low techno fit",
+        "date route",
+        "ticket path",
+        "verify first",
+        "details need check"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "unconfirmed",
+        "lateRoom": false,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "watchlist",
+          "lineup limited"
+        ]
+      }
     },
     {
       "id": "misa-shanghai-summer-music-festival-2026",
@@ -3697,7 +5173,32 @@
           "status": "watchlist",
           "lastChecked": "2026-06-13"
         }
-      ]
+      ],
+      "soundTags": [
+        "live-av",
+        "rooftop",
+        "industrial"
+      ],
+      "decisionTags": [
+        "low techno fit",
+        "high intensity",
+        "date route",
+        "listening/live angle",
+        "ticket path",
+        "verify first"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "unconfirmed",
+        "lateRoom": false,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "watchlist",
+          "lineup limited"
+        ]
+      }
     },
     {
       "id": "west-bund-dream-center-waterfront-music-festival-2026",
@@ -3752,7 +5253,29 @@
           "status": "watchlist",
           "lastChecked": "2026-06-13"
         }
-      ]
+      ],
+      "soundTags": [
+        "rooftop"
+      ],
+      "decisionTags": [
+        "low techno fit",
+        "date route",
+        "ticket path",
+        "verify first",
+        "details need check"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "unconfirmed",
+        "lateRoom": false,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "watchlist",
+          "lineup limited"
+        ]
+      }
     },
     {
       "id": "the-magic-of-tomorrowland-shanghai-2026-watch",
@@ -3827,68 +5350,33 @@
           "status": "previous-edition-context",
           "lastChecked": "2026-06-13"
         }
-      ]
+      ],
+      "soundTags": [
+        "rooftop"
+      ],
+      "decisionTags": [
+        "low techno fit",
+        "date route",
+        "ticket path",
+        "verify first",
+        "details need check"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "unconfirmed",
+        "lateRoom": false,
+        "ticketReady": true,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "watchlist",
+          "lineup limited"
+        ]
+      }
     }
   ],
   "socialLeads": [],
   "discovered": [
-    {
-      "url": "https://www.smartshanghai.com/event/nova-events-presents-sunset-sessions-flair-rooftop-party-2026-06-13-2",
-      "title": "",
-      "sourceLabel": "SmartShanghai",
-      "parsed": false,
-      "error": "This operation was aborted"
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/horizon-rooftop-party-ft-erik-hagleton-fr-at-pop-american-brasserie",
-      "title": "Space Panda Presents: Horizon Rooftop Party ft. Erik Hagleton (FR)",
-      "parsed": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/love-bang-presents-the-woods-goth-witch-house-dark-italo-electro-2026-06-13",
-      "title": "",
-      "sourceLabel": "SmartShanghai",
-      "parsed": false,
-      "error": "This operation was aborted"
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/synth-crush-electro-italo-disco-techno-2026-06-13",
-      "title": "",
-      "sourceLabel": "SmartShanghai",
-      "parsed": false,
-      "error": "This operation was aborted"
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/new-writing-supermarket-grand-reopening-party-2m2-2026-06-13",
-      "title": "New Writing Supermarket Grand Reopening Party \"2m² Art Supermarket\"",
-      "parsed": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/nosaj-thing-bass-beats-hip-hop-2026-06-13",
-      "title": "",
-      "sourceLabel": "SmartShanghai",
-      "parsed": false,
-      "error": "This operation was aborted"
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/la-barra-five-year-anniversary-cinqo-2026-06-13",
-      "title": "",
-      "sourceLabel": "SmartShanghai",
-      "parsed": false,
-      "error": "This operation was aborted"
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/turbo-w-santa-k-hard-techno-hard-trance-2026-06-13",
-      "title": "",
-      "sourceLabel": "SmartShanghai",
-      "parsed": false,
-      "error": "This operation was aborted"
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/riink-s-8th-rollerversary-at-riink",
-      "title": "RIINK's 8th Rollerversary",
-      "parsed": true
-    },
     {
       "url": "https://www.smartshanghai.com/event/sunset-sundays-skyline-dome-at-the-dome",
       "title": "",
@@ -3933,10 +5421,8 @@
     },
     {
       "url": "https://www.smartshanghai.com/event/disco-ball-fridays-skyline-dome-at-the-dome",
-      "title": "",
-      "sourceLabel": "SmartShanghai",
-      "parsed": false,
-      "error": "This operation was aborted"
+      "title": "Disco Ball Fridays",
+      "parsed": true
     },
     {
       "url": "https://www.smartshanghai.com/event/a-full-afrowave-takeover-at-la-burg",
@@ -3951,6 +5437,68 @@
       "sourceLabel": "SmartShanghai",
       "parsed": false,
       "error": "This operation was aborted"
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/nova-events-presents-summer-splash-pool-party-2026-06-27",
+      "title": "",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false,
+      "error": "This operation was aborted"
+    },
+    {
+      "url": "https://ra.co/events/2461478",
+      "title": "Milo Raad + Cosmjn",
+      "sourceLabel": "Resident Advisor",
+      "status": 403,
+      "parsed": false
+    },
+    {
+      "url": "https://ra.co/events/2460995",
+      "title": "KOLLIN",
+      "sourceLabel": "Resident Advisor",
+      "status": 403,
+      "parsed": false
+    },
+    {
+      "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+      "title": "Youshan Festival warmup",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false
+    },
+    {
+      "url": "https://ra.co/events/2458037",
+      "title": "Santa K x TURBO",
+      "sourceLabel": "Resident Advisor",
+      "status": 403,
+      "parsed": false
+    },
+    {
+      "url": "https://ra.co/events/2461476",
+      "title": "Matisa + Limsum",
+      "sourceLabel": "Resident Advisor",
+      "status": 403,
+      "parsed": false
+    },
+    {
+      "url": "https://ra.co/events/2458269",
+      "title": "Synth Crush",
+      "sourceLabel": "Resident Advisor",
+      "status": 403,
+      "parsed": false
+    },
+    {
+      "url": "https://ra.co/events/2460549",
+      "title": "FENGYUN Vol. 5",
+      "sourceLabel": "Resident Advisor",
+      "status": 403,
+      "parsed": false
+    },
+    {
+      "url": "https://ra.co/events/2459595",
+      "title": "Horizon Rooftop feat. Erik Hagleton",
+      "sourceLabel": "Resident Advisor",
+      "status": 403,
+      "parsed": false
     }
   ],
   "computerUseQueue": [
@@ -3979,7 +5527,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -4045,7 +5593,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -4111,7 +5659,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -4177,7 +5725,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -4244,7 +5792,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -4308,7 +5856,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -4372,7 +5920,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -4436,7 +5984,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-13",
+      "checkedAt": "2026-06-14",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -4479,8 +6027,8 @@
   ],
   "curatedEventsApplied": 37,
   "djItineraryStats": {
-    "profileCount": 14,
-    "curatedProfileCount": 12,
+    "profileCount": 18,
+    "curatedProfileCount": 16,
     "generatedProfileCount": 1,
     "profileSourceCounts": {
       "anyma": 5,
@@ -4499,50 +6047,42 @@
       "ruima": 2,
       "illsee": 3,
       "tiya-manson": 3,
-      "tiyamanson": 3
+      "tiyamanson": 3,
+      "soundTags": 0,
+      "event": 0,
+      "decisionTags": 0,
+      "decisionProfile": 0
     },
     "rowCount": 40
   },
   "quality": {
-    "auditDate": "2026-06-13",
-    "generatedAt": "2026-06-13T15:06:12.909Z",
+    "auditDate": "2026-06-14",
+    "generatedAt": "2026-06-13T16:04:33.835Z",
     "totals": {
-      "events": 71,
-      "future": 34,
-      "futureHigh": 11,
-      "futureWatch": 21,
-      "singleSourceWatch": 17,
-      "venueProfiles": 37,
-      "futureVenueProfiles": 27,
-      "futureVenueWatch": 20,
-      "futurePerformerProfiles": 50,
+      "events": 69,
+      "future": 23,
+      "futureHigh": 5,
+      "futureWatch": 18,
+      "singleSourceWatch": 14,
+      "venueProfiles": 35,
+      "futureVenueProfiles": 21,
+      "futureVenueWatch": 17,
+      "futurePerformerProfiles": 25,
       "futurePerformerWatch": 2,
-      "singleSourceFuturePerformers": 43,
-      "futurePerformerProfileSources": 14,
-      "futurePerformerMissingProfileSources": 36,
-      "djSourceUpgradeQueue": 30,
-      "trackedDjProfiles": 14,
-      "curatedDjSourceProfiles": 12,
+      "singleSourceFuturePerformers": 19,
+      "futurePerformerProfileSources": 7,
+      "futurePerformerMissingProfileSources": 18,
+      "djSourceUpgradeQueue": 13,
+      "trackedDjProfiles": 18,
+      "curatedDjSourceProfiles": 16,
       "trackedDjItineraryRows": 40,
-      "staleFuture": 27,
-      "missingTicketStatus": 2,
+      "staleFuture": 23,
+      "missingTicketStatus": 0,
       "highMissingLineup": 0,
       "curatedEventsApplied": 37,
       "failedSourceReports": 18
     },
     "watchQueue": [
-      {
-        "id": "system-popup",
-        "date": "2026-06-13",
-        "title": "System summer pop-up",
-        "venue": "Arcane / Shanghai Hotel",
-        "priority": "high",
-        "fitScore": 3,
-        "sourceLabel": "SmartShanghai",
-        "sourceCount": 1,
-        "reason": "single-source, lineup missing, needs source upgrade",
-        "nextAction": "Prioritize direct venue, promoter, ticketing, RA, or official artist evidence before promotion."
-      },
       {
         "id": "jasmin-knopha",
         "date": "2026-06-20",
@@ -4700,30 +6240,6 @@
         "nextAction": "Keep as context unless a direct source confirms stronger techno relevance."
       },
       {
-        "id": "2026-06-13-new-writing-supermarket-grand-reopeni",
-        "date": "2026-06-13",
-        "title": "New Writing Supermarket Grand Reopening Party \"2m² Art Supermarket\"",
-        "venue": "889 GLO",
-        "priority": "low",
-        "fitScore": 0,
-        "sourceLabel": "SmartShanghai",
-        "sourceCount": 1,
-        "reason": "single-source, lineup missing, ticket status missing",
-        "nextAction": "Keep as context unless a direct source confirms stronger techno relevance."
-      },
-      {
-        "id": "2026-06-13-riink-s-8th-rollerversary",
-        "date": "2026-06-13",
-        "title": "RIINK's 8th Rollerversary",
-        "venue": "RIINK",
-        "priority": "low",
-        "fitScore": 0,
-        "sourceLabel": "SmartShanghai",
-        "sourceCount": 1,
-        "reason": "single-source, lineup missing, ticket status missing",
-        "nextAction": "Keep as context unless a direct source confirms stronger techno relevance."
-      },
-      {
         "id": "sunset-sundays-dome",
         "date": "2026-06-14",
         "title": "Sunset Sundays",
@@ -4780,108 +6296,11 @@
         "fitScore": 0,
         "sourceLabel": "Shanghai Municipal Commission of Commerce",
         "sourceCount": 3,
-        "reason": "watch-level festival confidence",
+        "reason": "watch-level confidence",
         "nextAction": "Confirm exact dates, program, ticketing, and a direct official festival source before promotion."
       }
     ],
     "venueCoverage": [
-      {
-        "venue": "EXIT",
-        "aliases": [],
-        "districts": [
-          "Changning"
-        ],
-        "genres": [
-          "techno",
-          "techno, bass",
-          "Detroit techno, electro, machine funk",
-          "industrial, dark hypnotic, acid, rave, experimental techno",
-          "techno, house, tech house",
-          "techno, house, minimal, nu-disco",
-          "techno, funk/soul lineage",
-          "electro, EBM, industrial, techno, IDM"
-        ],
-        "sourceCount": 10,
-        "totalEvents": 10,
-        "futureEvents": 2,
-        "highConfidenceEvents": 8,
-        "watchEvents": 1,
-        "fitScore": 3,
-        "priority": "high",
-        "nextEventDate": "2026-06-13",
-        "lastChecked": "2026-06-11"
-      },
-      {
-        "venue": "Abyss Shanghai",
-        "aliases": [],
-        "districts": [
-          "Huangpu"
-        ],
-        "genres": [
-          "techno, trance",
-          "warehouse techno, trance, industrial rave",
-          "techno, hardcore, black metal crossover",
-          "techno, hardcore, hardbass, hard trance",
-          "techno",
-          "techno, hardcore",
-          "trance, techno",
-          "hard techno, new trance"
-        ],
-        "sourceCount": 9,
-        "totalEvents": 9,
-        "futureEvents": 2,
-        "highConfidenceEvents": 7,
-        "watchEvents": 1,
-        "fitScore": 3,
-        "priority": "high",
-        "nextEventDate": "2026-06-13",
-        "lastChecked": "2026-06-11"
-      },
-      {
-        "venue": "POTENT",
-        "aliases": [],
-        "districts": [
-          "Huangpu"
-        ],
-        "genres": [
-          "techno, house",
-          "electronic culture, techno-adjacent",
-          "techno",
-          "house, techno-adjacent"
-        ],
-        "sourceCount": 8,
-        "totalEvents": 7,
-        "futureEvents": 2,
-        "highConfidenceEvents": 4,
-        "watchEvents": 1,
-        "fitScore": 3,
-        "priority": "high",
-        "nextEventDate": "2026-06-13",
-        "lastChecked": "2026-06-11"
-      },
-      {
-        "venue": "Reactor Shanghai",
-        "aliases": [],
-        "districts": [
-          "Changning"
-        ],
-        "genres": [
-          "techno-informed club music",
-          "techno, bass",
-          "house, hip-hop, groove, club",
-          "experimental, future beats, hip-hop",
-          "techno"
-        ],
-        "sourceCount": 6,
-        "totalEvents": 6,
-        "futureEvents": 2,
-        "highConfidenceEvents": 5,
-        "watchEvents": 0,
-        "fitScore": 3,
-        "priority": "high",
-        "nextEventDate": "2026-06-13",
-        "lastChecked": "2026-06-11"
-      },
       {
         "venue": "Dirty House",
         "aliases": [],
@@ -4925,23 +6344,100 @@
         "lastChecked": "2026-06-11"
       },
       {
-        "venue": "Specters",
+        "venue": "EXIT",
         "aliases": [],
         "districts": [
           "Changning"
         ],
         "genres": [
-          "industrial, italo disco, darkwave, EBM, goth",
-          "post-punk, cold wave, minimal wave, dark wave, shoegaze"
+          "techno",
+          "techno, bass",
+          "Detroit techno, electro, machine funk",
+          "industrial, dark hypnotic, acid, rave, experimental techno",
+          "techno, house, tech house",
+          "techno, house, minimal, nu-disco",
+          "techno, funk/soul lineage",
+          "electro, EBM, industrial, techno, IDM"
         ],
-        "sourceCount": 2,
-        "totalEvents": 2,
-        "futureEvents": 2,
-        "highConfidenceEvents": 1,
+        "sourceCount": 10,
+        "totalEvents": 10,
+        "futureEvents": 1,
+        "highConfidenceEvents": 8,
         "watchEvents": 1,
         "fitScore": 3,
         "priority": "high",
-        "nextEventDate": "2026-06-13",
+        "nextEventDate": "2026-06-27",
+        "lastChecked": "2026-06-11"
+      },
+      {
+        "venue": "Abyss Shanghai",
+        "aliases": [],
+        "districts": [
+          "Huangpu"
+        ],
+        "genres": [
+          "techno, trance",
+          "warehouse techno, trance, industrial rave",
+          "techno, hardcore, black metal crossover",
+          "techno, hardcore, hardbass, hard trance",
+          "techno",
+          "techno, hardcore",
+          "trance, techno",
+          "hard techno, new trance"
+        ],
+        "sourceCount": 9,
+        "totalEvents": 9,
+        "futureEvents": 1,
+        "highConfidenceEvents": 7,
+        "watchEvents": 1,
+        "fitScore": 3,
+        "priority": "high",
+        "nextEventDate": "2026-06-26",
+        "lastChecked": "2026-06-11"
+      },
+      {
+        "venue": "POTENT",
+        "aliases": [],
+        "districts": [
+          "Huangpu"
+        ],
+        "genres": [
+          "techno, house",
+          "electronic culture, techno-adjacent",
+          "techno",
+          "house, techno-adjacent"
+        ],
+        "sourceCount": 8,
+        "totalEvents": 7,
+        "futureEvents": 1,
+        "highConfidenceEvents": 4,
+        "watchEvents": 1,
+        "fitScore": 3,
+        "priority": "high",
+        "nextEventDate": "2026-06-27",
+        "lastChecked": "2026-06-11"
+      },
+      {
+        "venue": "Reactor Shanghai",
+        "aliases": [],
+        "districts": [
+          "Changning"
+        ],
+        "genres": [
+          "techno-informed club music",
+          "techno, bass",
+          "house, hip-hop, groove, club",
+          "experimental, future beats, hip-hop",
+          "techno"
+        ],
+        "sourceCount": 6,
+        "totalEvents": 6,
+        "futureEvents": 1,
+        "highConfidenceEvents": 5,
+        "watchEvents": 0,
+        "fitScore": 3,
+        "priority": "high",
+        "nextEventDate": "2026-06-18",
         "lastChecked": "2026-06-11"
       },
       {
@@ -4967,22 +6463,23 @@
         "lastChecked": "2026-06-11"
       },
       {
-        "venue": "Arcane / Shanghai Hotel",
+        "venue": "Specters",
         "aliases": [],
         "districts": [
-          "Jing'an"
+          "Changning"
         ],
         "genres": [
-          "techno, club, multi-room pop-up"
+          "industrial, italo disco, darkwave, EBM, goth",
+          "post-punk, cold wave, minimal wave, dark wave, shoegaze"
         ],
-        "sourceCount": 1,
-        "totalEvents": 1,
+        "sourceCount": 2,
+        "totalEvents": 2,
         "futureEvents": 1,
-        "highConfidenceEvents": 0,
+        "highConfidenceEvents": 1,
         "watchEvents": 1,
         "fitScore": 3,
         "priority": "high",
-        "nextEventDate": "2026-06-13",
+        "nextEventDate": "2026-06-26",
         "lastChecked": "2026-06-11"
       },
       {
@@ -5021,44 +6518,6 @@
         "fitScore": 3,
         "priority": "high",
         "nextEventDate": "2026-06-20",
-        "lastChecked": "2026-06-11"
-      },
-      {
-        "venue": "M101 Room",
-        "aliases": [],
-        "districts": [
-          "Huangpu"
-        ],
-        "genres": [
-          "club, experimental electronic"
-        ],
-        "sourceCount": 1,
-        "totalEvents": 1,
-        "futureEvents": 1,
-        "highConfidenceEvents": 0,
-        "watchEvents": 0,
-        "fitScore": 2,
-        "priority": "medium",
-        "nextEventDate": "2026-06-13",
-        "lastChecked": "2026-06-11"
-      },
-      {
-        "venue": "Pop Bar",
-        "aliases": [],
-        "districts": [
-          "The Bund"
-        ],
-        "genres": [
-          "techno, house"
-        ],
-        "sourceCount": 1,
-        "totalEvents": 1,
-        "futureEvents": 1,
-        "highConfidenceEvents": 1,
-        "watchEvents": 0,
-        "fitScore": 2,
-        "priority": "medium",
-        "nextEventDate": "2026-06-13",
         "lastChecked": "2026-06-11"
       },
       {
@@ -5176,44 +6635,6 @@
         "lastChecked": "2026-06-11"
       },
       {
-        "venue": "889 GLO",
-        "aliases": [],
-        "districts": [
-          "Shanghai"
-        ],
-        "genres": [
-          "electronic, club"
-        ],
-        "sourceCount": 1,
-        "totalEvents": 1,
-        "futureEvents": 1,
-        "highConfidenceEvents": 0,
-        "watchEvents": 1,
-        "fitScore": 0,
-        "priority": "low",
-        "nextEventDate": "2026-06-13",
-        "lastChecked": "2026-06-13"
-      },
-      {
-        "venue": "Flair Rooftop Restaurant & Bar",
-        "aliases": [],
-        "districts": [
-          "Pudong"
-        ],
-        "genres": [
-          "rooftop club, DJ sets"
-        ],
-        "sourceCount": 1,
-        "totalEvents": 1,
-        "futureEvents": 1,
-        "highConfidenceEvents": 0,
-        "watchEvents": 0,
-        "fitScore": 0,
-        "priority": "low",
-        "nextEventDate": "2026-06-13",
-        "lastChecked": "2026-06-11"
-      },
-      {
         "venue": "Gate M West Bund Dream Center",
         "aliases": [],
         "districts": [
@@ -5249,25 +6670,6 @@
         "fitScore": 0,
         "priority": "low",
         "nextEventDate": "2026-10-01",
-        "lastChecked": "2026-06-13"
-      },
-      {
-        "venue": "RIINK",
-        "aliases": [],
-        "districts": [
-          "Shanghai"
-        ],
-        "genres": [
-          "electronic, club"
-        ],
-        "sourceCount": 1,
-        "totalEvents": 1,
-        "futureEvents": 1,
-        "highConfidenceEvents": 0,
-        "watchEvents": 1,
-        "fitScore": 0,
-        "priority": "low",
-        "nextEventDate": "2026-06-13",
         "lastChecked": "2026-06-13"
       },
       {
@@ -5325,6 +6727,25 @@
         "fitScore": 0,
         "priority": "low",
         "nextEventDate": "2026-06-14",
+        "lastChecked": "2026-06-11"
+      },
+      {
+        "venue": "Arcane / Shanghai Hotel",
+        "aliases": [],
+        "districts": [
+          "Jing'an"
+        ],
+        "genres": [
+          "techno, club, multi-room pop-up"
+        ],
+        "sourceCount": 1,
+        "totalEvents": 1,
+        "futureEvents": 0,
+        "highConfidenceEvents": 0,
+        "watchEvents": 1,
+        "fitScore": 3,
+        "priority": "high",
+        "nextEventDate": "",
         "lastChecked": "2026-06-11"
       },
       {
@@ -5461,6 +6882,44 @@
         "lastChecked": "2026-06-08"
       },
       {
+        "venue": "M101 Room",
+        "aliases": [],
+        "districts": [
+          "Huangpu"
+        ],
+        "genres": [
+          "club, experimental electronic"
+        ],
+        "sourceCount": 1,
+        "totalEvents": 1,
+        "futureEvents": 0,
+        "highConfidenceEvents": 0,
+        "watchEvents": 0,
+        "fitScore": 2,
+        "priority": "medium",
+        "nextEventDate": "",
+        "lastChecked": "2026-06-11"
+      },
+      {
+        "venue": "Pop Bar",
+        "aliases": [],
+        "districts": [
+          "The Bund"
+        ],
+        "genres": [
+          "techno, house"
+        ],
+        "sourceCount": 1,
+        "totalEvents": 1,
+        "futureEvents": 0,
+        "highConfidenceEvents": 1,
+        "watchEvents": 0,
+        "fitScore": 2,
+        "priority": "medium",
+        "nextEventDate": "",
+        "lastChecked": "2026-06-11"
+      },
+      {
         "venue": "Sunland Boundless Park",
         "aliases": [],
         "districts": [
@@ -5516,18 +6975,37 @@
         "priority": "low",
         "nextEventDate": "",
         "lastChecked": "2026-06-13"
+      },
+      {
+        "venue": "Flair Rooftop Restaurant & Bar",
+        "aliases": [],
+        "districts": [
+          "Pudong"
+        ],
+        "genres": [
+          "rooftop club, DJ sets"
+        ],
+        "sourceCount": 1,
+        "totalEvents": 1,
+        "futureEvents": 0,
+        "highConfidenceEvents": 0,
+        "watchEvents": 0,
+        "fitScore": 0,
+        "priority": "low",
+        "nextEventDate": "",
+        "lastChecked": "2026-06-11"
       }
     ],
     "djCoverage": {
-      "trackedItineraryProfiles": 14,
-      "curatedSourceProfiles": 12,
+      "trackedItineraryProfiles": 18,
+      "curatedSourceProfiles": 16,
       "trackedItineraryRows": 40,
       "futureProfiles": [
         {
           "slug": "nakin",
           "name": "NAKIN",
           "eventCount": 4,
-          "futureEventCount": 3,
+          "futureEventCount": 2,
           "sourceCount": 5,
           "trackedProfileSourceCount": 2,
           "venues": [
@@ -5542,10 +7020,10 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 4,
-          "singleSourceFutureAppearances": 2,
+          "singleSourceFutureAppearances": 1,
           "fitScore": 3,
           "priority": "high",
-          "nextDate": "2026-06-13"
+          "nextDate": "2026-06-19"
         },
         {
           "slug": "d-z",
@@ -5572,7 +7050,7 @@
           "slug": "pashrawboi",
           "name": "PASHRAWBOI",
           "eventCount": 2,
-          "futureEventCount": 2,
+          "futureEventCount": 1,
           "sourceCount": 2,
           "trackedProfileSourceCount": 2,
           "venues": [
@@ -5585,32 +7063,10 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 2,
-          "singleSourceFutureAppearances": 2,
-          "fitScore": 3,
-          "priority": "high",
-          "nextDate": "2026-06-13"
-        },
-        {
-          "slug": "gaoqiao",
-          "name": "GaoQiao",
-          "eventCount": 2,
-          "futureEventCount": 1,
-          "sourceCount": 2,
-          "trackedProfileSourceCount": 3,
-          "venues": [
-            "POTENT",
-            "Reactor Shanghai"
-          ],
-          "genres": [
-            "techno, house",
-            "experimental, future beats, hip-hop"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 2,
           "singleSourceFutureAppearances": 1,
           "fitScore": 3,
           "priority": "high",
-          "nextDate": "2026-06-13"
+          "nextDate": "2026-06-18"
         },
         {
           "slug": "situ",
@@ -5635,26 +7091,6 @@
           "nextDate": "2026-06-18"
         },
         {
-          "slug": "altieri3000",
-          "name": "Altieri3000 [Live]",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 2,
-          "venues": [
-            "EXIT"
-          ],
-          "genres": [
-            "electro, EBM, industrial, techno, IDM"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 3,
-          "priority": "high",
-          "nextDate": "2026-06-13"
-        },
-        {
           "slug": "d3m3ntor",
           "name": "D3M3NTOR",
           "eventCount": 1,
@@ -5675,66 +7111,6 @@
           "nextDate": "2026-06-18"
         },
         {
-          "slug": "discipline",
-          "name": "DISCIPLINE",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 2,
-          "venues": [
-            "Abyss Shanghai"
-          ],
-          "genres": [
-            "hard techno, new trance"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 3,
-          "priority": "high",
-          "nextDate": "2026-06-13"
-        },
-        {
-          "slug": "heatwolves",
-          "name": "Heatwolves",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 2,
-          "trackedProfileSourceCount": 0,
-          "venues": [
-            "Specters"
-          ],
-          "genres": [
-            "industrial, italo disco, darkwave, EBM, goth"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 0,
-          "fitScore": 3,
-          "priority": "high",
-          "nextDate": "2026-06-13"
-        },
-        {
-          "slug": "hello-shitty",
-          "name": "Hello Shitty",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 2,
-          "venues": [
-            "EXIT"
-          ],
-          "genres": [
-            "electro, EBM, industrial, techno, IDM"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 3,
-          "priority": "high",
-          "nextDate": "2026-06-13"
-        },
-        {
           "slug": "howtodo",
           "name": "howtodo",
           "eventCount": 1,
@@ -5753,26 +7129,6 @@
           "fitScore": 3,
           "priority": "high",
           "nextDate": "2026-06-18"
-        },
-        {
-          "slug": "illsee",
-          "name": "Illsee",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 3,
-          "venues": [
-            "EXIT"
-          ],
-          "genres": [
-            "electro, EBM, industrial, techno, IDM"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 3,
-          "priority": "high",
-          "nextDate": "2026-06-13"
         },
         {
           "slug": "josie",
@@ -5815,46 +7171,6 @@
           "nextDate": "2026-06-19"
         },
         {
-          "slug": "laglory",
-          "name": "LaGlory",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 0,
-          "venues": [
-            "Abyss Shanghai"
-          ],
-          "genres": [
-            "hard techno, new trance"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 3,
-          "priority": "high",
-          "nextDate": "2026-06-13"
-        },
-        {
-          "slug": "limsum",
-          "name": "Limsum",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 0,
-          "venues": [
-            "POTENT"
-          ],
-          "genres": [
-            "house, techno-adjacent"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 3,
-          "priority": "high",
-          "nextDate": "2026-06-13"
-        },
-        {
           "slug": "marcus",
           "name": "Marcus",
           "eventCount": 1,
@@ -5873,46 +7189,6 @@
           "fitScore": 3,
           "priority": "high",
           "nextDate": "2026-06-26"
-        },
-        {
-          "slug": "matisa",
-          "name": "Matisa",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 0,
-          "venues": [
-            "POTENT"
-          ],
-          "genres": [
-            "house, techno-adjacent"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 3,
-          "priority": "high",
-          "nextDate": "2026-06-13"
-        },
-        {
-          "slug": "max-shen",
-          "name": "Max Shen",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 0,
-          "venues": [
-            "POTENT"
-          ],
-          "genres": [
-            "house, techno-adjacent"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 3,
-          "priority": "high",
-          "nextDate": "2026-06-13"
         },
         {
           "slug": "megawatts",
@@ -5955,46 +7231,6 @@
           "nextDate": "2026-06-19"
         },
         {
-          "slug": "ruima",
-          "name": "Ruima",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 2,
-          "venues": [
-            "EXIT"
-          ],
-          "genres": [
-            "electro, EBM, industrial, techno, IDM"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 3,
-          "priority": "high",
-          "nextDate": "2026-06-13"
-        },
-        {
-          "slug": "santa-k",
-          "name": "Santa K",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 0,
-          "venues": [
-            "Abyss Shanghai"
-          ],
-          "genres": [
-            "hard techno, new trance"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 3,
-          "priority": "high",
-          "nextDate": "2026-06-13"
-        },
-        {
           "slug": "tiya-manson",
           "name": "Tiya Manson",
           "eventCount": 1,
@@ -6035,246 +7271,6 @@
           "nextDate": "2026-06-18"
         },
         {
-          "slug": "velvet-robot",
-          "name": "Velvet Robot [Live]",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 2,
-          "venues": [
-            "EXIT"
-          ],
-          "genres": [
-            "electro, EBM, industrial, techno, IDM"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 3,
-          "priority": "high",
-          "nextDate": "2026-06-13"
-        },
-        {
-          "slug": "cola-ren",
-          "name": "COLA REN",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 0,
-          "venues": [
-            "M101 Room"
-          ],
-          "genres": [
-            "club, experimental electronic"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 0,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 2,
-          "priority": "medium",
-          "nextDate": "2026-06-13"
-        },
-        {
-          "slug": "dj-ebp",
-          "name": "DJ EBP",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 0,
-          "venues": [
-            "Reactor Shanghai"
-          ],
-          "genres": [
-            "experimental, future beats, hip-hop"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 2,
-          "priority": "medium",
-          "nextDate": "2026-06-13"
-        },
-        {
-          "slug": "dj-loverboy",
-          "name": "DJ LOVERBOY",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 0,
-          "venues": [
-            "Reactor Shanghai"
-          ],
-          "genres": [
-            "experimental, future beats, hip-hop"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 2,
-          "priority": "medium",
-          "nextDate": "2026-06-13"
-        },
-        {
-          "slug": "dj-truck",
-          "name": "DJ TRUCK",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 0,
-          "venues": [
-            "M101 Room"
-          ],
-          "genres": [
-            "club, experimental electronic"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 0,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 2,
-          "priority": "medium",
-          "nextDate": "2026-06-13"
-        },
-        {
-          "slug": "enred",
-          "name": "Enred",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 0,
-          "venues": [
-            "Pop Bar"
-          ],
-          "genres": [
-            "techno, house"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 2,
-          "priority": "medium",
-          "nextDate": "2026-06-13"
-        },
-        {
-          "slug": "erik-hagleton",
-          "name": "Erik Hagleton",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 0,
-          "venues": [
-            "Pop Bar"
-          ],
-          "genres": [
-            "techno, house"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 2,
-          "priority": "medium",
-          "nextDate": "2026-06-13"
-        },
-        {
-          "slug": "gooooose",
-          "name": "Gooooose",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 0,
-          "venues": [
-            "M101 Room"
-          ],
-          "genres": [
-            "club, experimental electronic"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 0,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 2,
-          "priority": "medium",
-          "nextDate": "2026-06-13"
-        },
-        {
-          "slug": "ian-g",
-          "name": "Ian G",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 0,
-          "venues": [
-            "Pop Bar"
-          ],
-          "genres": [
-            "techno, house"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 2,
-          "priority": "medium",
-          "nextDate": "2026-06-13"
-        },
-        {
-          "slug": "litty-ritty",
-          "name": "Litty Ritty",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 0,
-          "venues": [
-            "Pop Bar"
-          ],
-          "genres": [
-            "techno, house"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 2,
-          "priority": "medium",
-          "nextDate": "2026-06-13"
-        },
-        {
-          "slug": "mamayo",
-          "name": "Mamayo",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 0,
-          "venues": [
-            "M101 Room"
-          ],
-          "genres": [
-            "club, experimental electronic"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 0,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 2,
-          "priority": "medium",
-          "nextDate": "2026-06-13"
-        },
-        {
-          "slug": "meer",
-          "name": "meer.",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 0,
-          "venues": [
-            "M101 Room"
-          ],
-          "genres": [
-            "club, experimental electronic"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 0,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 2,
-          "priority": "medium",
-          "nextDate": "2026-06-13"
-        },
-        {
           "slug": "mico",
           "name": "MICO",
           "eventCount": 1,
@@ -6293,26 +7289,6 @@
           "fitScore": 2,
           "priority": "medium",
           "nextDate": "2026-06-26"
-        },
-        {
-          "slug": "nosaj-thing",
-          "name": "Nosaj Thing",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 0,
-          "venues": [
-            "Reactor Shanghai"
-          ],
-          "genres": [
-            "experimental, future beats, hip-hop"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 2,
-          "priority": "medium",
-          "nextDate": "2026-06-13"
         },
         {
           "slug": "taiga",
@@ -6585,38 +7561,6 @@
           "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
         },
         {
-          "slug": "laglory",
-          "name": "LaGlory",
-          "priority": "high",
-          "fitScore": 3,
-          "futureEventCount": 1,
-          "singleSourceFutureAppearances": 1,
-          "nextDate": "2026-06-13",
-          "venues": [
-            "Abyss Shanghai"
-          ],
-          "genres": [
-            "hard techno, new trance"
-          ],
-          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
-        },
-        {
-          "slug": "limsum",
-          "name": "Limsum",
-          "priority": "high",
-          "fitScore": 3,
-          "futureEventCount": 1,
-          "singleSourceFutureAppearances": 1,
-          "nextDate": "2026-06-13",
-          "venues": [
-            "POTENT"
-          ],
-          "genres": [
-            "house, techno-adjacent"
-          ],
-          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
-        },
-        {
           "slug": "marcus",
           "name": "Marcus",
           "priority": "high",
@@ -6633,38 +7577,6 @@
           "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
         },
         {
-          "slug": "matisa",
-          "name": "Matisa",
-          "priority": "high",
-          "fitScore": 3,
-          "futureEventCount": 1,
-          "singleSourceFutureAppearances": 1,
-          "nextDate": "2026-06-13",
-          "venues": [
-            "POTENT"
-          ],
-          "genres": [
-            "house, techno-adjacent"
-          ],
-          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
-        },
-        {
-          "slug": "max-shen",
-          "name": "Max Shen",
-          "priority": "high",
-          "fitScore": 3,
-          "futureEventCount": 1,
-          "singleSourceFutureAppearances": 1,
-          "nextDate": "2026-06-13",
-          "venues": [
-            "POTENT"
-          ],
-          "genres": [
-            "house, techno-adjacent"
-          ],
-          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
-        },
-        {
           "slug": "megawatts",
           "name": "MegaWatts",
           "priority": "high",
@@ -6677,214 +7589,6 @@
           ],
           "genres": [
             "techno"
-          ],
-          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
-        },
-        {
-          "slug": "santa-k",
-          "name": "Santa K",
-          "priority": "high",
-          "fitScore": 3,
-          "futureEventCount": 1,
-          "singleSourceFutureAppearances": 1,
-          "nextDate": "2026-06-13",
-          "venues": [
-            "Abyss Shanghai"
-          ],
-          "genres": [
-            "hard techno, new trance"
-          ],
-          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
-        },
-        {
-          "slug": "cola-ren",
-          "name": "COLA REN",
-          "priority": "medium",
-          "fitScore": 2,
-          "futureEventCount": 1,
-          "singleSourceFutureAppearances": 1,
-          "nextDate": "2026-06-13",
-          "venues": [
-            "M101 Room"
-          ],
-          "genres": [
-            "club, experimental electronic"
-          ],
-          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
-        },
-        {
-          "slug": "dj-ebp",
-          "name": "DJ EBP",
-          "priority": "medium",
-          "fitScore": 2,
-          "futureEventCount": 1,
-          "singleSourceFutureAppearances": 1,
-          "nextDate": "2026-06-13",
-          "venues": [
-            "Reactor Shanghai"
-          ],
-          "genres": [
-            "experimental, future beats, hip-hop"
-          ],
-          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
-        },
-        {
-          "slug": "dj-loverboy",
-          "name": "DJ LOVERBOY",
-          "priority": "medium",
-          "fitScore": 2,
-          "futureEventCount": 1,
-          "singleSourceFutureAppearances": 1,
-          "nextDate": "2026-06-13",
-          "venues": [
-            "Reactor Shanghai"
-          ],
-          "genres": [
-            "experimental, future beats, hip-hop"
-          ],
-          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
-        },
-        {
-          "slug": "dj-truck",
-          "name": "DJ TRUCK",
-          "priority": "medium",
-          "fitScore": 2,
-          "futureEventCount": 1,
-          "singleSourceFutureAppearances": 1,
-          "nextDate": "2026-06-13",
-          "venues": [
-            "M101 Room"
-          ],
-          "genres": [
-            "club, experimental electronic"
-          ],
-          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
-        },
-        {
-          "slug": "enred",
-          "name": "Enred",
-          "priority": "medium",
-          "fitScore": 2,
-          "futureEventCount": 1,
-          "singleSourceFutureAppearances": 1,
-          "nextDate": "2026-06-13",
-          "venues": [
-            "Pop Bar"
-          ],
-          "genres": [
-            "techno, house"
-          ],
-          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
-        },
-        {
-          "slug": "erik-hagleton",
-          "name": "Erik Hagleton",
-          "priority": "medium",
-          "fitScore": 2,
-          "futureEventCount": 1,
-          "singleSourceFutureAppearances": 1,
-          "nextDate": "2026-06-13",
-          "venues": [
-            "Pop Bar"
-          ],
-          "genres": [
-            "techno, house"
-          ],
-          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
-        },
-        {
-          "slug": "gooooose",
-          "name": "Gooooose",
-          "priority": "medium",
-          "fitScore": 2,
-          "futureEventCount": 1,
-          "singleSourceFutureAppearances": 1,
-          "nextDate": "2026-06-13",
-          "venues": [
-            "M101 Room"
-          ],
-          "genres": [
-            "club, experimental electronic"
-          ],
-          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
-        },
-        {
-          "slug": "ian-g",
-          "name": "Ian G",
-          "priority": "medium",
-          "fitScore": 2,
-          "futureEventCount": 1,
-          "singleSourceFutureAppearances": 1,
-          "nextDate": "2026-06-13",
-          "venues": [
-            "Pop Bar"
-          ],
-          "genres": [
-            "techno, house"
-          ],
-          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
-        },
-        {
-          "slug": "litty-ritty",
-          "name": "Litty Ritty",
-          "priority": "medium",
-          "fitScore": 2,
-          "futureEventCount": 1,
-          "singleSourceFutureAppearances": 1,
-          "nextDate": "2026-06-13",
-          "venues": [
-            "Pop Bar"
-          ],
-          "genres": [
-            "techno, house"
-          ],
-          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
-        },
-        {
-          "slug": "mamayo",
-          "name": "Mamayo",
-          "priority": "medium",
-          "fitScore": 2,
-          "futureEventCount": 1,
-          "singleSourceFutureAppearances": 1,
-          "nextDate": "2026-06-13",
-          "venues": [
-            "M101 Room"
-          ],
-          "genres": [
-            "club, experimental electronic"
-          ],
-          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
-        },
-        {
-          "slug": "meer",
-          "name": "meer.",
-          "priority": "medium",
-          "fitScore": 2,
-          "futureEventCount": 1,
-          "singleSourceFutureAppearances": 1,
-          "nextDate": "2026-06-13",
-          "venues": [
-            "M101 Room"
-          ],
-          "genres": [
-            "club, experimental electronic"
-          ],
-          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
-        },
-        {
-          "slug": "nosaj-thing",
-          "name": "Nosaj Thing",
-          "priority": "medium",
-          "fitScore": 2,
-          "futureEventCount": 1,
-          "singleSourceFutureAppearances": 1,
-          "nextDate": "2026-06-13",
-          "venues": [
-            "Reactor Shanghai"
-          ],
-          "genres": [
-            "experimental, future beats, hip-hop"
           ],
           "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
         },
@@ -7025,7 +7729,7 @@
         "kind": "listing",
         "sourceStatus": "secondary",
         "ok": false,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": 403,
         "eventLinks": 0
       },
@@ -7034,7 +7738,7 @@
         "kind": "guide",
         "sourceStatus": "secondary",
         "ok": false,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": null,
         "eventLinks": 0,
         "error": "This operation was aborted"
@@ -7044,16 +7748,16 @@
         "kind": "listing",
         "sourceStatus": "secondary",
         "ok": true,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": 200,
-        "eventLinks": 19
+        "eventLinks": 10
       },
       {
         "label": "X/Twitter keyword: \"Shanghai\" techno",
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -7063,7 +7767,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -7073,7 +7777,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -7083,7 +7787,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -7093,7 +7797,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -7103,7 +7807,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -7113,7 +7817,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -7123,7 +7827,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -7133,7 +7837,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -7143,7 +7847,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -7153,7 +7857,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -7163,7 +7867,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -7173,7 +7877,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -7183,7 +7887,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -7193,7 +7897,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -7203,7 +7907,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -7213,7 +7917,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": "computer-use"
       },
       {
@@ -7221,7 +7925,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": "computer-use"
       },
       {
@@ -7229,7 +7933,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": "computer-use"
       },
       {
@@ -7237,7 +7941,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": "computer-use"
       },
       {
@@ -7245,7 +7949,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": "computer-use"
       },
       {
@@ -7253,7 +7957,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": "computer-use"
       },
       {
@@ -7261,7 +7965,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": "computer-use"
       },
       {
@@ -7269,7 +7973,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-13",
+        "checkedAt": "2026-06-14",
         "status": "computer-use"
       }
     ],
@@ -7278,7 +7982,11 @@
       "Run npm run audit to inspect future freshness, ticket notes, High-confidence lineups, the Watch queue, active venue coverage, and future DJ profile coverage.",
       "Promote Watch entries only after direct venue, promoter, ticketing, RA, SmartShanghai detail, or official artist evidence is captured in config/curated-events.json.",
       "Use Computer Use / Chrome for WeChat, Xiaohongshu, mini-program, image-only, or anti-bot sources, then preserve evidence notes and source links in curated overlays."
-    ]
+    ],
+    "taxonomy": {
+      "soundTags": 69,
+      "decisionTags": 69
+    }
   },
   "notes": [
     "This v1 scraper keeps curated embedded events as the seed dataset, refreshes source metadata, and adds parsable public event pages as watch/secondary entries.",

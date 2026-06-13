@@ -19,6 +19,12 @@ When served over HTTP, the calendar reads `data/events.json`. If that file is mi
 
 `account.html` provides a Supabase Auth registration/login wall for saved sounds, venues, budget mode, timing, source confidence, and event shortlists. Account tools require sign-in; the public calendar remains open. After login, the homepage reads the same preference profile into the `For you` dispatch panel.
 
+## Alerts and subscriptions
+
+`subscribe.html` is the English-first bilingual alert profile flow for Xiaohongshu-first distribution, email/newsletter intent, and future WeChat/Instagram activation. Submissions save locally immediately and can insert pending rows into the Supabase `subscriptions` table after `supabase/migrations/202606130003_subscriptions.sql` is applied.
+
+The event data model now includes derived `soundTags`, `decisionTags`, and `decisionProfile` fields from `scripts/techno-taxonomy.js`. Public pages and `ops.html` use simple tags for sound, room context, ticket/source status, and source-check needs; there is no A/B/C grading layer.
+
 ## DJ tracking
 
 `djs.html` builds local performer profiles from Shanghai calendar lineups and gives every DJ a past/future itinerary surface. Each profile always lists its known Shanghai Rave Index appearances, while `data/tracked-dj-itineraries.js` adds curated worldwide tour rows when official or high-signal sources are available. `npm run scrape` preserves curated overlays and regenerates source-backed rows from event `futureTourPlan` fields, then records `djItineraryStats` in `data/events.json`.

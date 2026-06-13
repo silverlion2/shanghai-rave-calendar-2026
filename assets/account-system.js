@@ -9,7 +9,7 @@
 })(typeof globalThis !== "undefined" ? globalThis : this, function accountSystemFactory() {
   const STORAGE_PREFERENCES = "rave-account-preferences-v1";
   const STORAGE_SAVED_EVENTS = "rave-account-saved-events-v1";
-  const supportedVibes = ["hard", "underground", "date", "experimental", "bass", "warehouse"];
+  const supportedVibes = ["hard-techno", "industrial", "groovy", "hypnotic", "minimal", "melodic", "acid", "trance-adjacent", "bass-hybrid", "live-av", "warehouse", "rooftop", "hard", "underground", "date", "experimental", "bass"];
   const supportedBudgets = ["any", "free", "low"];
   const supportedTimings = ["any", "early", "late"];
   const supportedDiscoveryModes = ["balanced", "trusted", "open"];
@@ -73,9 +73,9 @@
       title: "Event alerts",
       status: "next",
       storage: "future user_alert_rules",
-      hook: "Watch venues, sounds, and saved nights without doom-scrolling.",
+      hook: "Watch venues, refined sounds, and saved nights without doom-scrolling.",
       payoff: "Get alerts when tickets, sources, or details move.",
-      description: "Notify users when watched venues, sounds, or saved events get ticket/source changes.",
+      description: "Notify users when watched venues, sound tags, saved events, or newsletter topics get ticket/source changes.",
     },
     {
       id: "privacy-export",
@@ -108,6 +108,8 @@
     ],
     href: "account.html",
     cta: "Create account",
+    secondaryHref: "subscribe.html",
+    secondaryCta: "Get alerts",
   };
 
   const publicGuideByContext = {
@@ -239,6 +241,24 @@
     return result;
   }
 
+  const preferenceLabelMap = {
+    "hard-techno": "hard techno",
+    industrial: "industrial",
+    groovy: "groovy",
+    hypnotic: "hypnotic",
+    minimal: "minimal",
+    melodic: "melodic",
+    acid: "acid",
+    "trance-adjacent": "trance-adjacent",
+    "bass-hybrid": "bass hybrid",
+    "live-av": "live / A/V",
+    rooftop: "rooftop",
+  };
+
+  function preferenceLabel(value) {
+    return preferenceLabelMap[value] || String(value || "").replace(/-/g, " ");
+  }
+
   function savedEventIdsAfterToggle(savedIds, eventId) {
     const current = uniqueValues(savedIds);
     const id = String(eventId || "").trim();
@@ -269,6 +289,7 @@
     let score = 0;
     const reasons = [];
     const eventVibes = Array.isArray(event.vibe) ? event.vibe.map(String) : [];
+    const eventSoundTags = Array.isArray(event.soundTags) ? event.soundTags.map(String) : [];
     const normalizedVenue = normalizeToken(event.venue);
     const normalizedOrganizer = normalizeToken(event.organizer || event.promoter || event.crew);
     const date = parseDate(event.sortDate);
@@ -279,7 +300,7 @@
     }
 
     for (const vibe of prefs.vibes) {
-      if (eventVibes.includes(vibe) || normalizeToken(event.genre).includes(normalizeToken(vibe))) {
+      if (eventVibes.includes(vibe) || eventSoundTags.includes(vibe) || normalizeToken(event.genre).includes(normalizeToken(vibe))) {
         score += 18;
         reasons.push(`sound match: ${vibe}`);
       }
@@ -445,7 +466,10 @@
         <div class="account-public-guide-benefits" aria-label="Account benefits">
           ${guide.benefits.slice(0, 3).map(benefit => `<span>${escapeHtml(benefit)}</span>`).join("")}
         </div>
-        <a class="account-public-guide-link" href="${escapeHtml(guide.href)}">${escapeHtml(guide.cta)}</a>
+        <div class="account-public-guide-actions">
+          <a class="account-public-guide-link" href="${escapeHtml(guide.href)}">${escapeHtml(guide.cta)}</a>
+          <a class="account-public-guide-link secondary" href="${escapeHtml(guide.secondaryHref || "subscribe.html")}">${escapeHtml(guide.secondaryCta || "Get alerts")}</a>
+        </div>
       </div>
     `;
   }
@@ -892,7 +916,7 @@
             <div class="account-choice-block">
               <span>Sound preference</span>
               <div class="account-chip-row" data-choice-group="vibes">
-                ${supportedVibes.map(vibe => `<button class="route-button ${prefs.vibes.includes(vibe) ? "active" : ""}" type="button" data-pref-value="${escapeHtml(vibe)}">${escapeHtml(vibe)}</button>`).join("")}
+                ${supportedVibes.map(vibe => `<button class="route-button ${prefs.vibes.includes(vibe) ? "active" : ""}" type="button" data-pref-value="${escapeHtml(vibe)}">${escapeHtml(preferenceLabel(vibe))}</button>`).join("")}
               </div>
             </div>
             <div class="account-choice-block">

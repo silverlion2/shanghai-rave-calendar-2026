@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Opening Ticket Link | Shanghai Rave Index</title>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#c6ff3b">
+  <link rel="icon" href="/og-image.png" type="image/png">
+  <link rel="stylesheet" href="assets/basement-dispatch.css?v=xhs-contact-20260613c">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HP6NQ3VZB9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-HP6NQ3VZB9");
+  </script>
+  <style>
+    .ticket-shell {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: #080806;
+      color: #f3f0e8;
+    }
+
+    .ticket-card {
+      width: min(560px, 100%);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(17, 17, 14, .92);
+      box-shadow: var(--shadow);
+      padding: 24px;
+    }
+
+    .ticket-card h1 {
+      margin: 0 0 10px;
+      font-size: clamp(30px, 8vw, 58px);
+      line-height: .95;
+      text-transform: uppercase;
+    }
+
+    .ticket-card p {
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .ticket-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+  </style>
+</head>
+<body>
+  <main class="ticket-shell">
+    <section class="ticket-card">
+      <p class="kicker">Ticket route / click tracking</p>
+      <h1>Opening ticket link.</h1>
+      <p id="ticketStatus">Routing you to the source. If it does not open, use the button below.</p>
+      <div class="ticket-actions">
+        <a class="button primary" id="ticketDestination" href="index.html" rel="noopener noreferrer">Open destination</a>
+        <a class="button secondary" href="index.html">Back to calendar</a>
+      </div>
+    </section>
+  </main>
+  <script>
+    (function routeTicketClick() {
+      const params = new URLSearchParams(window.location.search);
+      const eventId = params.get("event") || "unknown";
+      const rawDestination = params.get("to") || "";
+      const status = document.getElementById("ticketStatus");
+      const link = document.getElementById("ticketDestination");
+
+      function safeDestination(value) {
+        try {
+          const parsed = new URL(value);
+          if (parsed.protocol === "http:" || parsed.protocol === "https:") return parsed.href;
+        } catch (_) {
+          return "";
+        }
+        return "";
+      }
+
+      const destination = safeDestination(rawDestination);
+      if (!destination) {
+        status.textContent = "The ticket destination was missing or invalid. Return to the calendar and open the source link.";
+        return;
+      }
+
+      link.href = destination;
+      try {
+        const rows = JSON.parse(window.localStorage.getItem("rave-ticket-clicks-v1") || "[]");
+        rows.unshift({
+          eventId,
+          destination,
+          clickedAt: new Date().toISOString(),
+          referrer: document.referrer || "",
+        });
+        window.localStorage.setItem("rave-ticket-clicks-v1", JSON.stringify(rows.slice(0, 200)));
+      } catch (_) {}
+
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "ticket_click", {
+          event_category: "ticket",
+          event_label: eventId,
+          transport_type: "beacon",
+        });
+      }
+
+      status.textContent = "Click recorded locally. Opening the ticket or source page now.";
+      window.setTimeout(() => {
+        window.location.href = destination;
+      }, 420);
+    })();
+  </script>
+</body>
+</html>

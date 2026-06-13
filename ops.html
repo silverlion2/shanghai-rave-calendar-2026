@@ -1049,9 +1049,18 @@
               <h3>抓取源健康</h3>
               <div class="source-table" id="sourceTable"></div>
             </div>
+            <div class="report-card" style="margin-top: 10px">
+              <h3>Coverage and internal tracking</h3>
+              <div class="source-table" id="coverageGrid"></div>
+            </div>
+            <div class="report-card" style="margin-top: 10px">
+              <h3>Local ticket click ledger</h3>
+              <div class="source-table" id="ticketClickTable"></div>
+            </div>
             <div class="copy-actions">
               <button class="small-button" type="button" id="copyDailyBrief">复制日报</button>
               <button class="small-button" type="button" id="exportTicketsCsv">导出导票 CSV</button>
+              <button class="small-button" type="button" id="exportTicketClicksCsv">Export click CSV</button>
             </div>
           </div>
         </section>
@@ -1149,9 +1158,12 @@
       promoList: document.getElementById("promoList"),
       venueBars: document.getElementById("venueBars"),
       sourceTable: document.getElementById("sourceTable"),
+      coverageGrid: document.getElementById("coverageGrid"),
+      ticketClickTable: document.getElementById("ticketClickTable"),
       reportStamp: document.getElementById("reportStamp"),
       copyDailyBrief: document.getElementById("copyDailyBrief"),
       exportTicketsCsv: document.getElementById("exportTicketsCsv"),
+      exportTicketClicksCsv: document.getElementById("exportTicketClicksCsv"),
       exportOpsJson: document.getElementById("exportOpsJson"),
       exportReportCsv: document.getElementById("exportReportCsv")
     };
@@ -1473,6 +1485,8 @@
           organizer: lead.organizer,
           review_status: reviewStatus(lead),
           source_layer: sourceLayerLabel(lead),
+          sound_tags: Array.isArray(lead.raw?.soundTags) ? lead.raw.soundTags.join("|") : "",
+          simple_tags: Array.isArray(lead.raw?.decisionTags) ? lead.raw.decisionTags.join("|") : "",
           ticket_url: ticketUrl(lead),
           routed_ticket_url: routedTicketUrl(lead),
           promo_package: promo.package || "",
@@ -1574,6 +1588,8 @@
         ["日期", `${lead.displayDate} ${lead.time}`],
         ["场地", `${lead.venue} / ${lead.district}`],
         ["Promoter", lead.organizer],
+        ["Sound tags", Array.isArray(lead.raw?.soundTags) ? lead.raw.soundTags.join(", ") : ""],
+        ["Simple tags", Array.isArray(lead.raw?.decisionTags) ? lead.raw.decisionTags.join(", ") : ""],
         ["风格", lead.genre],
         ["票价", lead.price],
         ["来源", lead.sourceLabel],
@@ -1585,6 +1601,7 @@
         `<span class="chip ${status}">${escapeHtml(statusText(status))}</span>`,
         `<span class="chip">${escapeHtml(lead.confidence)}</span>`,
         `<span class="chip">${escapeHtml(lead.type)}</span>`,
+        ...(Array.isArray(lead.raw?.decisionTags) ? lead.raw.decisionTags.slice(0, 4).map(tag => `<span class="chip">${escapeHtml(tag)}</span>`) : []),
         promo.package ? `<span class="chip paid">${escapeHtml(promo.package)}</span>` : "",
         lead.source ? `<a class="chip" href="${escapeHtml(lead.source)}" target="_blank" rel="noopener noreferrer">打开来源</a>` : ""
       ].filter(Boolean).join("");
@@ -1674,12 +1691,64 @@
       }).join("") || `<p class="summary">抓取源会在 data/events.json 生成后显示。</p>`;
     }
 
+    function percent(count, total) {
+      if (!total) return "0%";
+      return `${Math.round(count / total * 100)}%`;
+    }
+
+    function readTicketClicks() {
+      return readStore("rave-ticket-clicks-v1", []);
+    }
+
+    function simpleTagsForLead(lead) {
+      return [
+        ...(Array.isArray(lead.raw?.soundTags) ? lead.raw.soundTags : []),
+        ...(Array.isArray(lead.raw?.decisionTags) ? lead.raw.decisionTags : []),
+      ].filter(Boolean);
+    }
+
+    function renderCoverageTracking() {
+      const eventLeads = state.leads.filter(lead => lead.type === "event");
+      const future = eventLeads.filter(lead => lead.raw?.status !== "past");
+      const withTicket = future.filter(lead => ticketUrl(lead)).length;
+      const withLineup = future.filter(lead => Array.isArray(lead.raw?.lineup) && lead.raw.lineup.length).length;
+      const withTags = future.filter(lead => simpleTagsForLead(lead).length).length;
+      const highOrOfficial = future.filter(lead => lead.raw?.confidence === "High" || lead.raw?.sourceStatus === "official").length;
+      const qualityTotals = state.payload?.quality?.totals || {};
+      const tagMix = countBy(eventLeads.flatMap(simpleTagsForLead), tag => tag).slice(0, 8).map(([label, count]) => `${label}: ${count}`).join(" / ");
+      const rows = [
+        ["Future event coverage", `${future.length} future rows`],
+        ["Ticket-link coverage", `${withTicket}/${future.length} (${percent(withTicket, future.length)})`],
+        ["Lineup coverage", `${withLineup}/${future.length} (${percent(withLineup, future.length)})`],
+        ["Tag coverage", `${withTags}/${future.length} (${percent(withTags, future.length)})`],
+        ["High/official future", `${highOrOfficial}/${future.length} (${percent(highOrOfficial, future.length)})`],
+        ["Top simple tags", tagMix || "No tags yet"],
+        ["Watch queue", `${qualityTotals.futureWatch ?? "n/a"} future watch / ${qualityTotals.singleSourceWatch ?? "n/a"} single-source`],
+        ["Failed source reports", String(qualityTotals.failedSourceReports ?? "n/a")],
+      ];
+      els.coverageGrid.innerHTML = rows.map(([label, value]) => `
+        <div class="source-row">
+          <b>${escapeHtml(label)}</b>
+          <span>${escapeHtml(value)}</span>
+        </div>
+      `).join("");
+
+      const clicks = readTicketClicks();
+      els.ticketClickTable.innerHTML = clicks.slice(0, 12).map(click => `
+        <div class="source-row">
+          <b>${escapeHtml(click.eventId || "unknown")}</b>
+          <span>${escapeHtml(`${click.clickedAt || ""} / ${click.destination || ""}`)}</span>
+        </div>
+      `).join("") || `<p class="summary">No local ticket clicks recorded in this browser yet.</p>`;
+    }
+
     function renderAll() {
       renderMetrics();
       renderLeadList();
       renderDetails();
       renderBars();
       renderSourceHealth();
+      renderCoverageTracking();
     }
 
     function exportOpsJson() {
@@ -1792,6 +1861,15 @@
           source: row.source
         }));
         downloadFile("rave-calendar-ticket-routes.csv", `${toCsv(rows)}\n`, "text/csv;charset=utf-8");
+      });
+      els.exportTicketClicksCsv.addEventListener("click", () => {
+        const rows = readTicketClicks().map(row => ({
+          event_id: row.eventId || "",
+          destination: row.destination || "",
+          clicked_at: row.clickedAt || "",
+          referrer: row.referrer || ""
+        }));
+        downloadFile("rave-calendar-ticket-clicks.csv", `${toCsv(rows)}\n`, "text/csv;charset=utf-8");
       });
       els.exportOpsJson.addEventListener("click", exportOpsJson);
       els.exportReportCsv.addEventListener("click", () => {

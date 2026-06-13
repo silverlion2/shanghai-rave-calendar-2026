@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const vm = require("vm");
+const { enrichEvent } = require("./techno-taxonomy");
 
 const ROOT = path.resolve(__dirname, "..");
 const INDEX_HTML = path.join(ROOT, "index.html");
@@ -962,7 +963,7 @@ function normalizeEvent(event, sourceChecks) {
       throw new Error(`Event ${normalized.id} missing required field: ${field}`);
     }
   }
-  return normalized;
+  return enrichEvent(normalized);
 }
 
 function mergeEvents(seedEvents, scrapedEvents) {
@@ -1474,10 +1475,31 @@ function readExistingDjItineraryData() {
   const context = { window: {} };
   try {
     vm.runInNewContext(readText(DJ_ITINERARY_FILE), context, { timeout: 1000 });
-    return context.window.DJ_ITINERARY_DATA || {};
+    return sanitizeDjItineraryData(context.window.DJ_ITINERARY_DATA || {});
   } catch (_) {
     return {};
   }
+}
+
+function sanitizeDjItineraryData(data) {
+  if (!data || typeof data !== "object" || Array.isArray(data)) return {};
+  const profiles = {};
+  for (const [slug, profile] of Object.entries(data)) {
+    if (!profile || typeof profile !== "object" || Array.isArray(profile)) continue;
+    const name = cleanText(profile.name || profile.artist || "");
+    if (!name) continue;
+    const key = slugify(profile.slug || slug || name) || performerProfileSlug(name);
+    profiles[key] = {
+      ...profile,
+      slug: profile.slug ? slugify(profile.slug) : key,
+      name,
+      sources: Array.isArray(profile.sources) ? profile.sources : [],
+      itinerary: Array.isArray(profile.itinerary) ? profile.itinerary : [],
+      genres: ensureArray(profile.genres),
+      aliases: ensureArray(profile.aliases),
+    };
+  }
+  return profiles;
 }
 
 function inferCountryForCity(city) {

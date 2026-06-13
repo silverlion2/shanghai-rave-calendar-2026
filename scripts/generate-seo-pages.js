@@ -22,6 +22,10 @@ const {
   eventSocialLinks,
   socialLinksForEntity,
 } = require("../assets/social-fusion.js");
+const {
+  enrichEvent,
+  soundTagLabels,
+} = require("./techno-taxonomy");
 
 const ROOT = path.resolve(__dirname, "..");
 const DATA_FILE = path.join(ROOT, "data", "events.json");
@@ -54,7 +58,7 @@ for (const file of fs.readdirSync(EVENTS_DIR)) {
 
 const normalizedEvents = events
   .filter(event => event && event.id && event.title && event.sortDate)
-  .map(event => ({ ...event, lineup: normalizedLineup(event) }))
+  .map(event => enrichEvent({ ...event, lineup: normalizedLineup(event) }))
   .sort((a, b) => String(a.sortDate).localeCompare(String(b.sortDate)) || String(a.title).localeCompare(String(b.title)));
 
 for (const event of normalizedEvents) {
@@ -114,7 +118,7 @@ function renderEventPage(event) {
   const canonical = eventUrl(event);
   const image = imageUrl(event);
   const liveRoomHref = `../live-room.html?room=${encodeURIComponent(event.id)}#live-room`;
-  const primaryActionHref = event.ticketUrl || event.detailsUrl || event.source || "#";
+  const primaryActionHref = trackedTicketUrl(event, "../");
   const sourceActionHref = event.detailsUrl || event.source || "";
   const showSourceAction = Boolean(event.ticketUrl && sourceActionHref && sourceActionHref !== primaryActionHref);
   const schemaNodes = [
@@ -181,6 +185,7 @@ function renderEventPage(event) {
           <section class="facts" aria-label="Event facts">
             ${festival ? festivalFacts(event) : eventFacts(event)}
           </section>
+          ${tagHtml(event)}
           <section class="copy-block">
             <h2>${festival ? "Festival Program" : "Lineup and Notes"}</h2>
             ${festival ? festivalProgramHtml(event) : event.lineup.length ? `
@@ -247,7 +252,24 @@ function eventFacts(event) {
     fact("Price", event.price || "Check source"),
     fact("Age / ID", event.age || "Check venue"),
     fact("Source layer", event.sourceStatus || event.confidence || "source checked"),
+    fact("Intensity", event.decisionProfile?.intensity || "medium"),
+    fact("Credibility", event.decisionProfile?.credibility || "source checked"),
   ].join("");
+}
+
+function tagHtml(event) {
+  const soundTags = soundTagLabels(event.soundTags || []).slice(0, 6);
+  const decisionTags = Array.isArray(event.decisionTags) ? event.decisionTags.slice(0, 6) : [];
+  if (!soundTags.length && !decisionTags.length) return "";
+  return `
+          <section class="copy-block decision-block">
+            <h2>Event Tags</h2>
+            <p>Simple tags for sound, room context, ticket/source status, and details that still need a source check.</p>
+            <div class="decision-tags">
+              ${soundTags.map(tag => `<span>${escapeHtml(tag)}</span>`).join("")}
+              ${decisionTags.map(tag => `<span>${escapeHtml(tag)}</span>`).join("")}
+            </div>
+          </section>`;
 }
 
 function festivalFacts(event) {
@@ -436,6 +458,13 @@ function imageUrl(event) {
     return `${SITE_URL}/${poster}`;
   }
   return `${SITE_URL}/og-image.png`;
+}
+
+function trackedTicketUrl(event, prefix = "") {
+  const destination = event.ticketUrl || event.ticket || event.source || "";
+  if (!destination) return "#";
+  if (!/^https?:\/\//i.test(destination)) return destination;
+  return `${prefix}ticket.html?event=${encodeURIComponent(event.id)}&to=${encodeURIComponent(destination)}`;
 }
 
 function relativeImagePath(event) {
