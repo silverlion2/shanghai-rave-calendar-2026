@@ -191,6 +191,33 @@
       padding: 8px;
     }
 
+    .live-room-promise {
+      display: grid;
+      gap: 6px;
+      border: 1px solid rgba(54, 199, 231, .36);
+      background:
+        linear-gradient(90deg, rgba(54, 199, 231, .16), rgba(255, 85, 47, .08)),
+        rgba(5, 6, 6, .66);
+      padding: 12px;
+    }
+
+    .live-room-promise strong {
+      color: var(--cyan);
+      font-family: var(--font-display);
+      font-size: clamp(24px, 2.8vw, 36px);
+      font-weight: 900;
+      line-height: .9;
+      text-transform: uppercase;
+    }
+
+    .live-room-promise span {
+      color: var(--paper);
+      font-size: 12px;
+      font-weight: 900;
+      line-height: 1.35;
+      text-transform: uppercase;
+    }
+
     .live-room-toolbar a,
     .live-room-action,
     .live-room-signal {
@@ -339,7 +366,7 @@
   <link rel="stylesheet" href="assets/basement-dispatch.css?v=xhs-contact-20260613c">
   <script src="assets/love-wall-supabase-config.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="assets/live-room-realtime.js"></script>
+  <script src="assets/live-room-realtime.js?v=room-filter-20260614"></script>
 </head>
 <body data-current-date="2026-06-13">
   <main class="shell dispatch-shell live-room-page">
@@ -366,6 +393,10 @@
           <h1>Tonight Rooms</h1>
           <span class="dispatch-strip">Basement Dispatch / same-day updates</span>
           <p>Join tonight's sourced event rooms, copy a room link, or open the event page before you go.</p>
+          <aside class="live-room-promise" aria-label="Room privacy rule">
+            <strong>What happens in this room stays in this room.</strong>
+            <span>Anonymous signals stay inside this room. This room closes automatically when the event ends. Cherish the moment.</span>
+          </aside>
         </div>
       </header>
 
@@ -533,8 +564,15 @@
       return eventLiveRooms.find(room => room.eventId === activeEventLiveRoomId) || null;
     }
 
+    function liveRoomClosed(room) {
+      return liveRoomHelper && typeof liveRoomHelper.roomIsClosed === "function"
+        ? liveRoomHelper.roomIsClosed(room, new Date())
+        : false;
+    }
+
     function liveRoomStateText(room) {
       if (!room || room.eventId !== activeEventLiveRoomId) return "Tap join";
+      if (liveRoomClosed(room)) return "Room closed / archived";
       if (eventLiveRoomMode === "live") return `In room / ${Math.max(1, eventLiveRoomPresence)} online`;
       if (eventLiveRoomMode === "connecting") return "Syncing";
       return "In room / local mode";
@@ -542,6 +580,7 @@
 
     function liveRoomHelpText(room) {
       if (room && room.eventId === activeEventLiveRoomId) {
+        if (liveRoomClosed(room)) return "This room is sealed. You can read the archive, but posting is closed.";
         return "Room selected. The URL now points here; updates post to this room only.";
       }
       return "Join selects the event room and updates the share URL. It is not a ticket or RSVP.";
@@ -566,6 +605,10 @@
       return liveRoomHelper && typeof liveRoomHelper.roomShareUrl === "function"
         ? liveRoomHelper.roomShareUrl(cleanPageUrl, eventId)
         : `${cleanPageUrl}#live-room=${encodeURIComponent(eventId)}`;
+    }
+
+    function roomDiscussionLinkFor(eventId) {
+      return `live-room-discussion.html?room=${encodeURIComponent(eventId)}#live-room`;
     }
 
     function liveRoomHashEventId() {
@@ -637,6 +680,7 @@
             </div>
             <div class="live-room-side">
               <button class="live-room-action ${active ? "active" : ""}" type="button" data-live-room-id="${escapeHtml(room.eventId)}" aria-pressed="${active ? "true" : "false"}" aria-label="${active ? "In room" : "Join room"}: ${escapeHtml(room.title)}">${active ? "In room" : "Join room"}</button>
+              <a class="live-room-action" data-live-room-discussion="${escapeHtml(room.eventId)}" href="${roomDiscussionLinkFor(room.eventId)}" aria-label="Enter discussion for ${escapeHtml(room.title)}">Enter discussion</a>
               <a class="live-room-action" href="events/${escapeHtml(room.eventId)}.html" aria-label="Open event page for ${escapeHtml(room.title)}">Event page</a>
               <button class="live-room-action" type="button" data-live-room-copy="${escapeHtml(room.eventId)}">Copy link</button>
             </div>

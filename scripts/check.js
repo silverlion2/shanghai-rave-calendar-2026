@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const vm = require("vm");
 const {
   readWebsiteStructure,
   assertWebsiteStructure,
@@ -283,6 +284,42 @@ function assertPosterArchiveData() {
   }
   if (!stats.freeTierSoftCapBytes || displayBytes > stats.freeTierSoftCapBytes) {
     throw new Error("poster archive display payload must stay under the free-tier soft cap");
+  }
+}
+
+function assertRaVenueDirectoryData() {
+  const venueFile = "data/ra-venues.js";
+  if (!fs.existsSync(venueFile)) {
+    throw new Error("data/ra-venues.js must exist");
+  }
+  const context = { window: {} };
+  vm.runInNewContext(fs.readFileSync(venueFile, "utf8"), context, { filename: venueFile, timeout: 1000 });
+  const payload = context.window.RA_VENUE_DIRECTORY;
+  if (!payload || !Array.isArray(payload.venues)) {
+    throw new Error("data/ra-venues.js must expose window.RA_VENUE_DIRECTORY.venues");
+  }
+  if (payload.sourceUrl !== "https://ra.co/clubs/cn/shanghai") {
+    throw new Error("RA venue directory sourceUrl must stay tied to the Shanghai clubs directory");
+  }
+  if (payload.venues.length < 250 || payload.venueCount !== payload.venues.length) {
+    throw new Error(`RA venue directory import is unexpectedly small or miscounted: ${payload.venues.length}`);
+  }
+  const popularNames = new Set(payload.popularNames || []);
+  for (const name of ["POTENT", "Wigwam", "EXIT", "Bandai Namco Shanghai Base", "Dirty House", "Reactor Shanghai", "ZUP Pizza Bar"]) {
+    if (!popularNames.has(name)) {
+      throw new Error(`RA venue directory missing popular venue marker: ${name}`);
+    }
+  }
+  for (const name of ["Abyss Shanghai", "POTENT", "EXIT", "Reactor Shanghai", "Wigwam", "System"]) {
+    const match = payload.venues.find(venue => venue.name === name && venue.address);
+    if (!match) {
+      throw new Error(`RA venue directory missing imported venue row: ${name}`);
+    }
+  }
+  for (const venue of payload.venues) {
+    if (!venue.id || !venue.name || !venue.address || !venue.sourceUrl || !venue.capturedAt) {
+      throw new Error(`RA venue directory row is incomplete: ${venue.name || "(missing name)"}`);
+    }
   }
 }
 
@@ -1027,6 +1064,8 @@ const scrapeRequirements = [
   { file: "scripts/generate-seo-pages.js", text: "MusicEvent", label: "generated event structured data" },
   { file: "scripts/generate-seo-pages.js", text: "BreadcrumbList", label: "generated breadcrumb structured data" },
   { file: "scripts/generate-seo-pages.js", text: "sitemap.xml", label: "generated sitemap writer" },
+  { file: "venues.html", text: "data/ra-venues.js", label: "venue guide RA directory data import" },
+  { file: "venues.html", text: "window.RA_VENUE_DIRECTORY", label: "venue guide RA directory consumer" },
   { file: "poster-wall.html", text: 'id="modalEventPage"', label: "poster wall event page link" },
 ];
 
@@ -1098,7 +1137,18 @@ const liveRoomRequirements = [
   { file: "live-room.html", text: "event-room-signal", label: "Tonight Rooms signal broadcast" },
   { file: "live-room.html", text: "event-room-reaction", label: "Tonight Rooms reaction broadcast" },
   { file: "live-room.html", text: "Copy link", label: "Tonight Rooms share action" },
+  { file: "live-room.html", text: "Enter discussion", label: "Tonight Rooms discussion entry" },
+  { file: "live-room.html", text: "live-room-discussion.html?room=", label: "Tonight Rooms discussion page links" },
   { file: "live-room.html", text: "data/events.json", label: "Tonight Rooms event data loader" },
+  { file: "live-room-discussion.html", text: "Room Discussion", label: "Room Discussion page title" },
+  { file: "live-room-discussion.html", text: "event-room-message", label: "Room Discussion message broadcast" },
+  { file: "live-room-discussion.html", text: "event-room-report", label: "Room Discussion report broadcast" },
+  { file: "live-room-discussion.html", text: "data-live-room-talk-form", label: "Room Discussion anonymous form" },
+  { file: "live-room-discussion.html", text: "roomMessageModerationState", label: "Room Discussion soft block filter" },
+  { file: "live-room-discussion.html", text: "Share this room", label: "Room Discussion share panel" },
+  { file: "live-room-discussion.html", text: "data-room-discussion-share", label: "Room Discussion native share action" },
+  { file: "live-room-discussion.html", text: "sms:?&body=", label: "Room Discussion text-message share fallback" },
+  { file: "live-room-discussion.html", text: "roomDiscussionShareCard", label: "Room Discussion share card canvas" },
   { file: "sitemap.xml", text: `${siteUrl}/live-room`, label: "Tonight Rooms sitemap URL" },
 ];
 
@@ -1163,6 +1213,7 @@ for (const file of publicAdminCornerFiles) {
 }
 
 assertPosterArchiveData();
+assertRaVenueDirectoryData();
 
 if (fs.existsSync("data/events.json")) {
   const payload = JSON.parse(fs.readFileSync("data/events.json", "utf8"));

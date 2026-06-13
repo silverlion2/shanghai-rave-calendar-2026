@@ -71,6 +71,17 @@
       "priority": "0.92"
     },
     {
+      "id": "live-room-discussion",
+      "label": "Room Discussion",
+      "file": "live-room-discussion.html",
+      "route": "/live-room-discussion",
+      "shell": "dispatch-shell",
+      "includeInSitemap": false,
+      "lastmod": "2026-06-14",
+      "changefreq": "daily",
+      "priority": "0.1"
+    },
+    {
       "id": "planner",
       "label": "Planner",
       "file": "planner.html",
@@ -119,6 +130,16 @@
       "includeInSitemap": true,
       "changefreq": "weekly",
       "priority": "0.78"
+    },
+    {
+      "id": "subscribe",
+      "label": "Alerts",
+      "file": "subscribe.html",
+      "route": "/subscribe",
+      "shell": "dispatch-shell",
+      "includeInSitemap": true,
+      "changefreq": "weekly",
+      "priority": "0.76"
     },
     {
       "id": "ops",

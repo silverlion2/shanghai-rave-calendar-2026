@@ -21,6 +21,7 @@
     { key: "leaving", label: "Leaving" },
     { key: "after", label: "After?" },
   ];
+  const ROOM_MESSAGE_SOFT_BLOCK = "Message not posted. Keep this room social, event-related, and safe.";
 
   function slugify(value) {
     const slug = String(value || "main")
@@ -63,6 +64,8 @@
         venue: String(event.venue || "Venue TBA"),
         time: String(event.time || "Time TBA"),
         date: String(event.date || event.sortDate || todayIso),
+        sortDate: String(event.sortDate || todayIso),
+        closesAt: roomClosesAt(event),
         confidence: String(event.confidence || ""),
         status: String(event.status || "upcoming"),
       }));
@@ -110,6 +113,147 @@
       targetId,
     };
     return [nextItem, ...(Array.isArray(feed) ? feed : [])].slice(0, options.limit || 6);
+  }
+
+  function normalizeRoomMessageText(value, limit = 220) {
+    return String(value || "")
+      .replace(/[\u0000-\u001f\u007f]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, limit);
+  }
+
+  function normalizeModerationText(value) {
+    const normalized = String(value || "")
+      .normalize("NFKC")
+      .replace(/[\u0000-\u001f\u007f\u200b-\u200f\ufeff]/g, " ")
+      .toLowerCase()
+      .replace(/\s+/g, " ")
+      .trim();
+    return {
+      compact: normalized.replace(/[\s._+\-*/\\|，。,.!！?？:：;；'"`~()[\]{}<>《》【】]+/g, ""),
+      normalized,
+    };
+  }
+
+  function textIncludesAny(text, terms) {
+    return terms.some(term => text.includes(term));
+  }
+
+  function textMatchesAny(text, patterns) {
+    return patterns.some(pattern => pattern.test(text));
+  }
+
+  function roomMessageModerationState(value) {
+    const message = normalizeRoomMessageText(value, 500);
+    if (!message) return { allowed: true, action: "allow", message: "" };
+    const { compact, normalized } = normalizeModerationText(message);
+    const unsafe = (
+      textIncludesAny(compact, [
+        "博彩", "下注", "网赌", "赌场", "贷款", "刷单", "返利", "稳赚", "保证收益", "币圈拉盘", "卖课", "医美",
+        "色情服务", "裸聊", "援交", "先转押金", "保真票源", "内部票源", "批量票", "大量出票", "黄牛批量",
+        "卖药", "找货", "k粉", "氯胺酮", "摇头丸", "冰毒", "麻古", "大麻", "送到场", "带刀", "带枪", "约架",
+        "报复他", "报复她", "弄死", "打死", "人肉", "曝光住址", "曝光身份证", "未成年约", "自杀方法", "自残方法",
+        "政治", "政党", "选举", "政府", "抗议", "示威", "游行", "政治口号", "政治动员", "政党宣传", "敏感事件", "示威游行",
+      ]) ||
+      textMatchesAny(normalized, [
+        /\b(gambling|casino|sportsbook|loan shark|payday loan|guaranteed profit|pump and dump)\b/,
+        /\b(fake tickets?|ticket scam|deposit first|wire first|phishing)\b/,
+        /\b(sell|buy|need|deliver)\s+(weed|coke|cocaine|ketamine|mdma|lsd|pills?|molly)\b/,
+        /\b(knife|gun|weapon)\s+(at|to|for)\s+(the\s+)?(door|club|venue|room)\b/,
+        /\b(kill you|beat him|beat her|revenge)\b/,
+        /\b(doxx|dox|home address|id card)\b/,
+        /\b(politics?|political|election|campaign|government|protest|rally|political slogan|protest slogan)\b/,
+        /\b(suicide method|self-harm method)\b/,
+      ]) ||
+      (
+        textIncludesAny(compact, ["曝光", "人肉"]) &&
+        textIncludesAny(compact, ["住址", "身份证", "手机号", "电话", "照片", "真实姓名"])
+      )
+    );
+    return unsafe
+      ? { allowed: false, action: "soft-block", message: ROOM_MESSAGE_SOFT_BLOCK }
+      : { allowed: true, action: "allow", message: "" };
+  }
+
+  function roomMessageId(targetId, text, at, providedId) {
+    const existing = normalizeRoomMessageText(providedId, 96);
+    if (existing) return existing;
+    return `room-message:${slugify(targetId)}:${slugify(at)}:${slugify(text).slice(0, 32)}`;
+  }
+
+  function roomMessagesAfterBroadcast(messages, payload, options = {}) {
+    const targetId = String(payload && (payload.targetId || payload.eventId || payload.roomId) || "");
+    const text = normalizeRoomMessageText(payload && (payload.text || payload.message || payload.content), options.maxLength || 220);
+    const current = Array.isArray(messages) ? messages : [];
+    const limit = options.limit || 24;
+    const moderation = roomMessageModerationState(text);
+    if (!moderation.allowed) return current.slice(0, limit).map(message => ({ ...message }));
+    if (!targetId || !text) return current.slice(0, limit).map(message => ({ ...message }));
+    const at = String(payload.sentAt || payload.at || options.now || new Date().toISOString());
+    const nextItem = {
+      id: roomMessageId(targetId, text, at, payload && payload.id),
+      targetId,
+      text,
+      at,
+      reports: Math.max(0, Number(payload && payload.reports) || 0),
+    };
+    return [nextItem, ...current.map(message => ({ ...message }))].slice(0, limit);
+  }
+
+  function roomMessagesAfterReport(messages, payload) {
+    const targetId = String(payload && (payload.targetId || payload.eventId || payload.roomId) || "");
+    const messageId = String(payload && (payload.messageId || payload.id) || "");
+    return (Array.isArray(messages) ? messages : []).map(message => {
+      const next = { ...message };
+      if (targetId && messageId && String(message.targetId) === targetId && String(message.id) === messageId) {
+        next.reports = Math.max(0, Number(next.reports) || 0) + 1;
+      }
+      return next;
+    });
+  }
+
+  function shanghaiOffsetIso(date) {
+    const shifted = new Date(date.getTime() + (8 * 60 * 60 * 1000));
+    return `${shifted.toISOString().slice(0, 19)}+08:00`;
+  }
+
+  function minutesForTimeMatch(match) {
+    const hour = Math.min(23, Math.max(0, Number(match[1]) || 0));
+    const minute = Math.min(59, Math.max(0, Number(match[2]) || 0));
+    return (hour * 60) + minute;
+  }
+
+  function roomClosesAt(room) {
+    const sortDate = isoDateForDay(room && (room.sortDate || room.date));
+    if (!sortDate) return "";
+    const timeText = String(room && room.time || "");
+    const matches = [...timeText.matchAll(/(\d{1,2})(?::(\d{2}))?/g)];
+    let closeMinutes = 12 * 60;
+    let addDays = 1;
+    if (matches.length >= 2) {
+      const startMinutes = minutesForTimeMatch(matches[0]);
+      closeMinutes = minutesForTimeMatch(matches[matches.length - 1]);
+      addDays = closeMinutes <= startMinutes ? 1 : 0;
+    } else if (matches.length === 1) {
+      closeMinutes = minutesForTimeMatch(matches[0]) + (4 * 60);
+      addDays = closeMinutes >= (24 * 60) ? 1 : 0;
+      closeMinutes %= 24 * 60;
+    }
+    const closeHour = String(Math.floor(closeMinutes / 60)).padStart(2, "0");
+    const closeMinute = String(closeMinutes % 60).padStart(2, "0");
+    const closeDate = new Date(`${sortDate}T${closeHour}:${closeMinute}:00+08:00`);
+    closeDate.setUTCDate(closeDate.getUTCDate() + addDays);
+    return shanghaiOffsetIso(closeDate);
+  }
+
+  function roomIsClosed(room, now = new Date()) {
+    if (String(room && room.status || "").toLowerCase() === "past") return true;
+    const closesAt = roomClosesAt(room);
+    if (!closesAt) return false;
+    const closeTime = new Date(closesAt).getTime();
+    const nowTime = now instanceof Date ? now.getTime() : new Date(now).getTime();
+    return Number.isFinite(closeTime) && Number.isFinite(nowTime) && nowTime > closeTime;
   }
 
   function roomShareUrl(baseUrl, eventId) {
@@ -330,7 +474,12 @@
     loveWallSignalForNote,
     presenceCountFromState,
     reactionCountsAfterBroadcast,
+    roomClosesAt,
     roomFeedAfterSignal,
+    roomIsClosed,
+    roomMessageModerationState,
+    roomMessagesAfterBroadcast,
+    roomMessagesAfterReport,
     roomShareUrl,
     todayEventRooms,
   };

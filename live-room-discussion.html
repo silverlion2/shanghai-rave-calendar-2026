@@ -1,0 +1,1078 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Room Discussion | Shanghai Rave Index</title>
+  <meta name="description" content="Anonymous, room-scoped discussion for tonight-only Shanghai Rave Index event rooms.">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#36c7e7">
+  <link rel="canonical" href="https://raveindexsh.top/live-room-discussion">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" href="/og-image.png" type="image/png">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HP6NQ3VZB9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-HP6NQ3VZB9");
+  </script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shanghai Rave Index">
+  <meta property="og:title" content="Room Discussion | Shanghai Rave Index">
+  <meta property="og:description" content="Anonymous, room-scoped discussion for tonight-only event rooms.">
+  <meta property="og:url" content="https://raveindexsh.top/live-room-discussion">
+  <meta property="og:image" content="https://raveindexsh.top/og-image.png">
+  <meta property="og:image:alt" content="Preview of Shanghai Rave Index room discussion">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Room Discussion | Shanghai Rave Index",
+    "url": "https://raveindexsh.top/live-room-discussion",
+    "description": "Anonymous, room-scoped discussion for tonight-only Shanghai Rave Index event rooms.",
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Shanghai Rave Index",
+      "url": "https://raveindexsh.top/"
+    }
+  }
+  </script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .room-discussion-page {
+      display: grid;
+      gap: 18px;
+    }
+
+    .room-discussion-shell {
+      display: grid;
+      grid-template-columns: minmax(280px, .72fr) minmax(0, 1fr);
+      gap: 18px;
+      align-items: stretch;
+      border-bottom: 1px solid rgba(229, 222, 209, .18);
+      padding-bottom: 18px;
+    }
+
+    .room-discussion-hero,
+    .room-discussion-console,
+    .room-discussion-share,
+    .room-discussion-message,
+    .room-discussion-empty {
+      border: 1px solid rgba(229, 222, 209, .2);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, .028), rgba(0, 0, 0, .08)),
+        rgba(8, 10, 9, .88);
+    }
+
+    .room-discussion-hero {
+      position: relative;
+      min-height: 620px;
+      display: grid;
+      align-content: end;
+      overflow: hidden;
+      padding: clamp(20px, 4vw, 36px);
+    }
+
+    .room-discussion-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(180deg, transparent 4%, rgba(5, 6, 6, .52) 48%, rgba(5, 6, 6, .98)),
+        repeating-linear-gradient(90deg, rgba(255, 255, 255, .08) 0 1px, transparent 1px 12px);
+      z-index: 1;
+    }
+
+    .room-discussion-hero img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(.65) contrast(1.35) brightness(.58);
+    }
+
+    .room-discussion-copy {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      gap: 12px;
+      max-width: 620px;
+    }
+
+    .room-discussion-copy h1 {
+      margin: 0;
+      color: var(--paper);
+      font-family: var(--font-display);
+      font-size: clamp(54px, 8vw, 110px);
+      font-weight: 900;
+      line-height: .82;
+      text-transform: uppercase;
+      text-shadow: 0 2px 0 rgba(0, 0, 0, .88);
+    }
+
+    .room-discussion-copy p,
+    .room-discussion-empty p,
+    .room-discussion-message p {
+      margin: 0;
+      color: var(--paper);
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .room-discussion-promise {
+      display: grid;
+      gap: 6px;
+      border: 1px solid rgba(54, 199, 231, .36);
+      background:
+        linear-gradient(90deg, rgba(54, 199, 231, .16), rgba(255, 85, 47, .08)),
+        rgba(5, 6, 6, .66);
+      padding: 12px;
+    }
+
+    .room-discussion-promise strong {
+      color: var(--cyan);
+      font-family: var(--font-display);
+      font-size: clamp(24px, 2.8vw, 36px);
+      font-weight: 900;
+      line-height: .9;
+      text-transform: uppercase;
+    }
+
+    .room-discussion-promise span,
+    .room-discussion-meta,
+    .room-discussion-status,
+    .room-discussion-talk-head span,
+    .room-discussion-talk-row span,
+    .room-discussion-message-top span {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 900;
+      line-height: 1.22;
+      text-transform: uppercase;
+    }
+
+    .room-discussion-console {
+      min-height: 620px;
+      display: grid;
+      grid-template-rows: auto auto auto minmax(0, 1fr);
+      gap: 12px;
+      padding: 14px;
+    }
+
+    .room-discussion-readouts {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .room-discussion-readout {
+      min-height: 104px;
+      display: grid;
+      align-content: space-between;
+      border: 1px solid rgba(229, 222, 209, .18);
+      background: rgba(5, 6, 6, .54);
+      padding: 12px;
+    }
+
+    .room-discussion-readout b {
+      color: var(--accent, var(--cyan));
+      font-family: var(--font-display);
+      font-size: clamp(34px, 5vw, 58px);
+      font-weight: 900;
+      line-height: .82;
+      text-transform: uppercase;
+      overflow-wrap: anywhere;
+    }
+
+    .room-discussion-toolbar,
+    .room-discussion-share-head,
+    .room-discussion-share-actions,
+    .room-discussion-talk-head,
+    .room-discussion-message-top,
+    .room-discussion-talk-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .room-discussion-toolbar {
+      border: 1px solid rgba(229, 222, 209, .16);
+      background: rgba(5, 6, 6, .5);
+      padding: 8px;
+    }
+
+    .room-discussion-share {
+      display: grid;
+      gap: 10px;
+      border-color: rgba(54, 199, 231, .28);
+      background:
+        linear-gradient(135deg, rgba(54, 199, 231, .12), rgba(255, 217, 102, .08)),
+        rgba(5, 6, 6, .66);
+      padding: 12px;
+    }
+
+    .room-discussion-share-head b {
+      color: var(--gold);
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .room-discussion-share-head span {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 900;
+      line-height: 1.22;
+      text-transform: uppercase;
+    }
+
+    .room-discussion-share input {
+      width: 100%;
+      border: 1px solid rgba(229, 222, 209, .18);
+      border-radius: 0;
+      color: var(--paper);
+      background: rgba(5, 6, 6, .82);
+      padding: 10px;
+      font: 700 12px/1.35 var(--font-mono);
+    }
+
+    .room-discussion-share-card {
+      width: 100%;
+      max-width: 640px;
+      aspect-ratio: 16 / 9;
+      border: 1px solid rgba(229, 222, 209, .18);
+      background: rgba(5, 6, 6, .82);
+    }
+
+    .room-discussion-toolbar a,
+    .room-discussion-share a,
+    .room-discussion-action,
+    .room-discussion-submit,
+    .room-discussion-report {
+      min-height: 34px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(229, 222, 209, .22);
+      color: var(--paper);
+      background: rgba(5, 6, 6, .82);
+      padding: 8px 10px;
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 1;
+      text-decoration: none;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .room-discussion-toolbar a:hover,
+    .room-discussion-share a:hover,
+    .room-discussion-action:hover,
+    .room-discussion-submit:hover,
+    .room-discussion-report:hover {
+      color: var(--void);
+      border-color: var(--cyan);
+      background: var(--cyan);
+    }
+
+    .room-discussion-submit:disabled,
+    .room-discussion-action:disabled,
+    .room-discussion-report:disabled {
+      color: var(--dim);
+      border-color: rgba(229, 222, 209, .12);
+      background: rgba(5, 6, 6, .52);
+      cursor: not-allowed;
+    }
+
+    .room-discussion-talk {
+      display: grid;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .room-discussion-talk-head b,
+    .room-discussion-message-top b {
+      color: var(--cyan);
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .room-discussion-talk-form {
+      display: grid;
+      gap: 8px;
+    }
+
+    .room-discussion-talk-form label {
+      color: var(--paper);
+      font-family: var(--font-display);
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .room-discussion-talk-form textarea {
+      width: 100%;
+      min-height: 128px;
+      resize: vertical;
+      border: 1px solid rgba(229, 222, 209, .22);
+      border-radius: 0;
+      color: var(--paper);
+      background: rgba(5, 6, 6, .82);
+      padding: 12px;
+      font: 500 15px/1.48 var(--font-mono);
+    }
+
+    .room-discussion-talk-form textarea:disabled {
+      color: var(--dim);
+      border-color: rgba(229, 222, 209, .12);
+      cursor: not-allowed;
+    }
+
+    .room-discussion-messages {
+      display: grid;
+      gap: 8px;
+    }
+
+    .room-discussion-message {
+      display: grid;
+      gap: 8px;
+      border-left: 2px solid rgba(54, 199, 231, .5);
+      padding: 12px 0 12px 12px;
+    }
+
+    .room-discussion-message p {
+      font-size: 13px;
+      overflow-wrap: anywhere;
+    }
+
+    .room-discussion-message.reported p {
+      color: var(--muted);
+    }
+
+    .room-discussion-empty {
+      display: grid;
+      gap: 10px;
+      padding: 18px;
+    }
+
+    .room-discussion-empty a {
+      color: var(--cyan);
+      font-weight: 900;
+    }
+
+    @media (max-width: 980px) {
+      .room-discussion-shell {
+        grid-template-columns: 1fr;
+      }
+
+      .room-discussion-hero,
+      .room-discussion-console {
+        min-height: auto;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .room-discussion-readouts {
+        grid-template-columns: 1fr;
+      }
+
+      .room-discussion-toolbar a,
+      .room-discussion-share a,
+      .room-discussion-action,
+      .room-discussion-submit {
+        width: 100%;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="assets/basement-dispatch.css?v=xhs-contact-20260613c">
+  <script src="assets/love-wall-supabase-config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="assets/live-room-realtime.js?v=room-filter-20260614"></script>
+</head>
+<body data-current-date="2026-06-13">
+  <main class="shell dispatch-shell room-discussion-page">
+    <nav class="site-nav" aria-label="Site navigation">
+      <div class="nav-group">
+        <a class="nav-link" href="index.html">Calendar</a>
+        <a class="nav-link" href="poster-wall.html">Events</a>
+        <a class="nav-link" href="love-wall.html">Love</a>
+        <a class="nav-link active" href="live-room.html">Tonight</a>
+        <a class="nav-link" href="planner.html">Planner</a>
+        <a class="nav-link" href="rave-everywhere.html">Everywhere</a>
+        <a class="nav-link" href="venues.html">Venues</a>
+        <a class="nav-link" href="djs.html">DJs</a>
+        <a class="nav-link" href="account.html">Account</a>
+      </div>
+      <span class="tag">Room discussion</span>
+    </nav>
+
+    <section class="room-discussion-shell" id="live-room" aria-label="Room discussion">
+      <header class="room-discussion-hero">
+        <img src="assets/posters/santa-k-optimized.jpg" alt="" loading="eager" decoding="async" fetchpriority="high">
+        <div class="room-discussion-copy">
+          <p class="kicker">Anonymous / tonight only</p>
+          <h1 id="roomDiscussionTitle">Room Discussion</h1>
+          <span class="dispatch-strip" id="roomDiscussionMeta">Pick a room from Tonight Rooms</span>
+          <p id="roomDiscussionIntro">Room talk is anonymous, room-scoped, and closed when the event ends.</p>
+          <aside class="room-discussion-promise" aria-label="Room privacy rule">
+            <strong>What happens in this room stays in this room.</strong>
+            <span>Anonymous signals stay inside this room. This room closes automatically when the event ends. Cherish the moment.</span>
+          </aside>
+        </div>
+      </header>
+
+      <section class="room-discussion-console" aria-label="Anonymous room talk panel">
+        <div class="room-discussion-readouts" aria-live="polite">
+          <div class="room-discussion-readout" style="--accent: var(--cyan)">
+            <b id="discussionRoomState">--</b>
+            <span>room</span>
+          </div>
+          <div class="room-discussion-readout" style="--accent: var(--gold)">
+            <b id="discussionOnlineCount">--</b>
+            <span>online</span>
+          </div>
+          <div class="room-discussion-readout" style="--accent: var(--ember)">
+            <b id="discussionMode">Local</b>
+            <span>mode</span>
+          </div>
+        </div>
+
+        <div class="room-discussion-toolbar">
+          <a href="live-room.html">Back to rooms</a>
+          <a id="discussionEventLink" href="live-room.html">Event page</a>
+          <span class="room-discussion-status" id="roomDiscussionStatus">Loading room</span>
+        </div>
+
+        <section class="room-discussion-share" aria-label="Share this room">
+          <div class="room-discussion-share-head">
+            <b>Share this room</b>
+            <span id="discussionShareHint">Room link / invite</span>
+          </div>
+          <input id="discussionShareUrl" type="text" readonly aria-label="Discussion share link" value="">
+          <div class="room-discussion-share-actions">
+            <button class="room-discussion-action" type="button" id="shareDiscussionLink" data-room-discussion-share>Share</button>
+            <button class="room-discussion-action" type="button" id="copyDiscussionLink" data-room-discussion-copy>Copy link</button>
+            <a class="room-discussion-action" id="discussionSmsLink" href="sms:?&body=">Text link</a>
+            <button class="room-discussion-action" type="button" id="downloadDiscussionCard">Save card</button>
+          </div>
+          <canvas class="room-discussion-share-card" id="roomDiscussionShareCard" width="640" height="360" aria-label="Room share card preview"></canvas>
+        </section>
+
+        <div class="room-discussion-talk" id="roomDiscussionMount" aria-live="polite"></div>
+      </section>
+    </section>
+
+    <footer class="footnotes bottom-dispatch-bar" aria-label="Basement Dispatch status">
+      <div class="bar-cell update-cell">
+        <span class="footer-alert-mark" aria-hidden="true">!</span>
+        <strong>Room discussion<br>anonymous only</strong>
+      </div>
+      <div class="bar-cell">
+        <span>Discussion is room-scoped and not posted to the public wall.</span>
+        <span>Closed rooms stay readable as a local archive.</span>
+      </div>
+      <address class="bar-cell contact-cell">
+        <a class="contact-card-link" href="assets/social/xhs-contact-card.jpg" aria-label="Open RED Xiaohongshu contact QR card">
+          <span class="contact-copy">
+            <span>Contact / updates</span>
+            <b>RED</b>
+            <em>ID 980793145</em>
+          </span>
+          <img src="assets/social/xhs-contact-card.jpg" alt="" loading="lazy" decoding="async">
+        </a>
+      </address>
+      <div class="bar-cell">
+        <span>Contacts, tickets, rides, afters, and social routing are allowed.</span>
+        <span>Political, unsafe, spam, and harmful content is soft blocked.</span>
+      </div>
+      <div class="bar-cell source-cell">
+        <span>Tonight only</span>
+        <span>Asia/Shanghai</span>
+      </div>
+    </footer>
+    <a class="admin-corner" data-admin-corner href="ops.html" aria-label="Admin sign in">admin</a>
+  </main>
+
+  <script>
+    const liveRoomHelper = window.LIVE_ROOM_REALTIME;
+    const eventLiveRoomMessageStorageKey = "shanghai-rave-event-live-room-messages-v1";
+    const eventLiveRoomReportedStorageKey = "shanghai-rave-event-live-room-reported-v1";
+    const eventLiveRoomSoftBlockMessage = "Message not posted. Keep this room social, event-related, and safe.";
+    const roomDiscussionTitle = document.getElementById("roomDiscussionTitle");
+    const roomDiscussionMeta = document.getElementById("roomDiscussionMeta");
+    const roomDiscussionIntro = document.getElementById("roomDiscussionIntro");
+    const roomDiscussionStatus = document.getElementById("roomDiscussionStatus");
+    const roomDiscussionMount = document.getElementById("roomDiscussionMount");
+    const discussionRoomState = document.getElementById("discussionRoomState");
+    const discussionOnlineCount = document.getElementById("discussionOnlineCount");
+    const discussionMode = document.getElementById("discussionMode");
+    const discussionEventLink = document.getElementById("discussionEventLink");
+    const shareDiscussionLink = document.getElementById("shareDiscussionLink");
+    const copyDiscussionLink = document.getElementById("copyDiscussionLink");
+    const discussionSmsLink = document.getElementById("discussionSmsLink");
+    const discussionShareUrl = document.getElementById("discussionShareUrl");
+    const discussionShareHint = document.getElementById("discussionShareHint");
+    const downloadDiscussionCard = document.getElementById("downloadDiscussionCard");
+    const roomDiscussionShareCard = document.getElementById("roomDiscussionShareCard");
+    let events = [];
+    let today = dateForIso(document.body.dataset.currentDate || "2026-06-13");
+    let eventLiveRooms = [];
+    let activeEventLiveRoomId = "";
+    let eventLiveRoomMode = "local";
+    let eventLiveRoomPresence = 0;
+    let eventLiveRoomMessages = loadEventLiveRoomMessages();
+    let eventLiveRoomReportedMessages = loadEventLiveRoomReportedMessages();
+    const eventLiveRealtime = liveRoomHelper && typeof liveRoomHelper.createLiveRoomRealtime === "function"
+      ? liveRoomHelper.createLiveRoomRealtime({
+        broadcastEvents: ["event-room-message", "event-room-report"],
+        onBroadcast: handleEventLiveRoomBroadcast,
+        onPresence: handleEventLiveRoomPresence,
+        onStatus: handleEventLiveRoomStatus
+      })
+      : null;
+
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, char => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#039;"
+      }[char]));
+    }
+
+    function dateForIso(value) {
+      const [year, month, day] = String(value || "").slice(0, 10).split("-").map(Number);
+      return new Date(year || 2026, (month || 6) - 1, day || 13);
+    }
+
+    function shanghaiToday(fallbackIso) {
+      const now = new Date();
+      const parts = Object.fromEntries(new Intl.DateTimeFormat("en-US", {
+        timeZone: "Asia/Shanghai",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit"
+      }).formatToParts(now).filter(part => part.type !== "literal").map(part => [part.type, part.value]));
+      if (Number(parts.year) === 2026) return new Date(Number(parts.year), Number(parts.month) - 1, Number(parts.day));
+      const pinned = document.body.dataset.currentDate;
+      if (pinned) return dateForIso(pinned);
+      return dateForIso(fallbackIso || "2026-06-13");
+    }
+
+    function loadEventLiveRoomMessages() {
+      try {
+        const parsed = JSON.parse(window.localStorage.getItem(eventLiveRoomMessageStorageKey) || "{}");
+        return parsed && typeof parsed === "object" ? parsed : {};
+      } catch (_) {
+        return {};
+      }
+    }
+
+    function saveEventLiveRoomMessages() {
+      try {
+        window.localStorage.setItem(eventLiveRoomMessageStorageKey, JSON.stringify(eventLiveRoomMessages));
+      } catch (_) {}
+    }
+
+    function loadEventLiveRoomReportedMessages() {
+      try {
+        const parsed = JSON.parse(window.localStorage.getItem(eventLiveRoomReportedStorageKey) || "{}");
+        return parsed && typeof parsed === "object" ? parsed : {};
+      } catch (_) {
+        return {};
+      }
+    }
+
+    function saveEventLiveRoomReportedMessages() {
+      try {
+        window.localStorage.setItem(eventLiveRoomReportedStorageKey, JSON.stringify(eventLiveRoomReportedMessages));
+      } catch (_) {}
+    }
+
+    function activeLiveRoom() {
+      return eventLiveRooms.find(room => room.eventId === activeEventLiveRoomId) || null;
+    }
+
+    function eventLiveRoomMessagesFor(eventId) {
+      return Array.isArray(eventLiveRoomMessages[eventId]) ? eventLiveRoomMessages[eventId] : [];
+    }
+
+    function eventLiveRoomReportedSet(eventId) {
+      return new Set(Array.isArray(eventLiveRoomReportedMessages[eventId]) ? eventLiveRoomReportedMessages[eventId] : []);
+    }
+
+    function liveRoomClosed(room) {
+      return liveRoomHelper && typeof liveRoomHelper.roomIsClosed === "function"
+        ? liveRoomHelper.roomIsClosed(room, new Date())
+        : false;
+    }
+
+    function roomDiscussionEventId() {
+      const query = new URLSearchParams(window.location.search || "");
+      const queryRoom = query.get("room") || query.get("live-room");
+      if (queryRoom) return queryRoom;
+      const match = String(window.location.hash || "").match(/live-room=([^&]+)/);
+      return match ? decodeURIComponent(match[1]) : "";
+    }
+
+    function roomDiscussionLinkFor(eventId) {
+      const cleanPageUrl = `${window.location.origin}${window.location.pathname}`;
+      return `${cleanPageUrl}?room=${encodeURIComponent(eventId)}#live-room`;
+    }
+
+    function roomListLinkFor(eventId) {
+      return `live-room.html?room=${encodeURIComponent(eventId)}#live-room`;
+    }
+
+    function syncDiscussionUrl(eventId) {
+      const next = roomDiscussionLinkFor(eventId);
+      if (window.history && typeof window.history.replaceState === "function") {
+        window.history.replaceState(null, "", next);
+      }
+    }
+
+    function formatLiveFeedTime(value) {
+      const date = new Date(value);
+      if (Number.isNaN(date.getTime())) return "now";
+      return date.toLocaleTimeString("en-US", {
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: false,
+        timeZone: "Asia/Shanghai"
+      });
+    }
+
+    function discussionSharePayload(room) {
+      const url = room ? roomDiscussionLinkFor(room.eventId) : "";
+      const title = room ? `${room.title} room` : "Room Discussion";
+      const text = room
+        ? `${room.title} / ${room.venue} / anonymous room discussion`
+        : "Anonymous room discussion";
+      return { title, text, url };
+    }
+
+    function updateDiscussionShare(room) {
+      const payload = discussionSharePayload(room);
+      const disabled = !room;
+      discussionShareUrl.value = payload.url;
+      discussionShareHint.textContent = room ? "Room link / invite" : "Open a room first";
+      discussionSmsLink.href = room ? `sms:?&body=${encodeURIComponent(`${payload.text} ${payload.url}`)}` : "sms:?&body=";
+      discussionSmsLink.setAttribute("aria-disabled", disabled ? "true" : "false");
+      [shareDiscussionLink, copyDiscussionLink, downloadDiscussionCard].forEach(button => {
+        button.disabled = disabled;
+      });
+      drawDiscussionShareCard(room);
+    }
+
+    function drawDiscussionShareCard(room) {
+      const canvas = roomDiscussionShareCard;
+      if (!canvas || typeof canvas.getContext !== "function") return;
+      const ctx = canvas.getContext("2d");
+      if (!ctx) return;
+      const payload = discussionSharePayload(room);
+      const width = canvas.width;
+      const height = canvas.height;
+      ctx.fillStyle = "#050606";
+      ctx.fillRect(0, 0, width, height);
+      ctx.fillStyle = "#0f1514";
+      ctx.fillRect(18, 18, width - 36, height - 36);
+      ctx.strokeStyle = "#36c7e7";
+      ctx.lineWidth = 4;
+      ctx.strokeRect(18, 18, width - 36, height - 36);
+      ctx.fillStyle = "#36c7e7";
+      ctx.font = "900 24px sans-serif";
+      ctx.fillText("SHANGHAI RAVE INDEX", 42, 58);
+      ctx.fillStyle = "#e5ded1";
+      ctx.font = "900 48px sans-serif";
+      wrapCanvasText(ctx, payload.title.toUpperCase(), 42, 120, 360, 50, 2);
+      ctx.fillStyle = "#ffd966";
+      ctx.font = "900 18px monospace";
+      wrapCanvasText(ctx, payload.text, 42, 222, 360, 24, 2);
+      ctx.fillStyle = "#e5ded1";
+      ctx.font = "700 14px monospace";
+      wrapCanvasText(ctx, payload.url || "Open Tonight Rooms", 42, 294, 548, 19, 2);
+      drawSharePattern(ctx, payload.url || "room-discussion", width - 190, 92, 130);
+      ctx.fillStyle = "#ff552f";
+      ctx.font = "900 16px sans-serif";
+      ctx.fillText("WHAT HAPPENS IN THIS ROOM STAYS IN THIS ROOM", 42, height - 34);
+    }
+
+    function wrapCanvasText(ctx, text, x, y, maxWidth, lineHeight, maxLines) {
+      const words = String(text || "").split(/\s+/).filter(Boolean);
+      let line = "";
+      let lines = 0;
+      words.forEach(word => {
+        const next = line ? `${line} ${word}` : word;
+        if (ctx.measureText(next).width > maxWidth && line) {
+          if (lines < maxLines) ctx.fillText(line, x, y + (lines * lineHeight));
+          line = word;
+          lines += 1;
+        } else {
+          line = next;
+        }
+      });
+      if (line && lines < maxLines) ctx.fillText(line, x, y + (lines * lineHeight));
+    }
+
+    function drawSharePattern(ctx, seed, x, y, size) {
+      const cells = 13;
+      const cell = Math.floor(size / cells);
+      ctx.fillStyle = "#e5ded1";
+      ctx.fillRect(x, y, cell * cells, cell * cells);
+      ctx.fillStyle = "#050606";
+      for (let row = 0; row < cells; row += 1) {
+        for (let col = 0; col < cells; col += 1) {
+          const edge = (row < 3 && col < 3) || (row < 3 && col > cells - 4) || (row > cells - 4 && col < 3);
+          const code = seed.charCodeAt((row * cells + col) % seed.length) || 0;
+          if (edge || ((code + row * 17 + col * 31) % 5 < 2)) {
+            ctx.fillRect(x + col * cell, y + row * cell, cell, cell);
+          }
+        }
+      }
+      ctx.strokeStyle = "#36c7e7";
+      ctx.lineWidth = 3;
+      ctx.strokeRect(x - 8, y - 8, cell * cells + 16, cell * cells + 16);
+    }
+
+    function updateDiscussionHeader(room) {
+      discussionRoomState.textContent = room ? (liveRoomClosed(room) ? "Closed" : "Open") : "--";
+      discussionOnlineCount.textContent = room && eventLiveRoomMode === "live" ? String(Math.max(1, eventLiveRoomPresence)) : "--";
+      discussionMode.textContent = eventLiveRoomMode === "connecting" ? "Sync" : eventLiveRoomMode === "live" ? "Live" : "Local";
+      roomDiscussionTitle.textContent = room ? room.title : "Room Discussion";
+      roomDiscussionMeta.textContent = room ? `${room.venue} / ${room.time}` : "Pick a room from Tonight Rooms";
+      roomDiscussionIntro.textContent = room
+        ? "Anonymous room talk is only for this event room."
+        : "Open a tonight room first, then enter discussion.";
+      discussionEventLink.href = room ? `events/${encodeURIComponent(room.eventId)}.html` : "live-room.html";
+      discussionEventLink.textContent = room ? "Event page" : "Tonight rooms";
+      if (!room) {
+        roomDiscussionStatus.textContent = "No room selected";
+      } else if (eventLiveRoomMode === "live") {
+        roomDiscussionStatus.textContent = `${Math.max(1, eventLiveRoomPresence)} online / ${room.title}`;
+      } else if (eventLiveRoomMode === "connecting") {
+        roomDiscussionStatus.textContent = `Syncing / ${room.title}`;
+      } else if (liveRoomClosed(room)) {
+        roomDiscussionStatus.textContent = "Room closed / archived";
+      } else {
+        roomDiscussionStatus.textContent = `Local discussion / ${room.title}`;
+      }
+      updateDiscussionShare(room);
+    }
+
+    function renderDiscussion() {
+      const room = activeLiveRoom();
+      updateDiscussionHeader(room);
+      if (!room) {
+        roomDiscussionMount.innerHTML = `
+          <div class="room-discussion-empty">
+            <p>No discussion room is selected for tonight.</p>
+            <a href="live-room.html">Open Tonight Rooms</a>
+          </div>
+        `;
+        return;
+      }
+      const closed = liveRoomClosed(room);
+      const messages = eventLiveRoomMessagesFor(room.eventId);
+      const reported = eventLiveRoomReportedSet(room.eventId);
+      const inputId = `live-room-message-${room.eventId}`;
+      const messageRows = messages.length
+        ? messages.map(message => {
+          const isReported = reported.has(message.id);
+          return `
+            <article class="room-discussion-message ${isReported ? "reported" : ""}" data-live-room-message="${escapeHtml(message.id)}">
+              <div class="room-discussion-message-top">
+                <b>Anonymous</b>
+                <span>${escapeHtml(formatLiveFeedTime(message.at))}${Number(message.reports || 0) ? ` / ${Number(message.reports || 0)} report${Number(message.reports || 0) === 1 ? "" : "s"}` : ""}</span>
+              </div>
+              <p>${escapeHtml(message.text)}</p>
+              <button class="room-discussion-report" type="button" data-live-room-report="${escapeHtml(message.id)}" data-live-room-id="${escapeHtml(room.eventId)}" ${isReported ? "disabled" : ""}>${isReported ? "Reported" : "Report"}</button>
+            </article>
+          `;
+        }).join("")
+        : `<article class="room-discussion-message"><p>No anonymous messages yet.</p></article>`;
+      roomDiscussionMount.innerHTML = `
+        <section class="room-discussion-talk" aria-label="Anonymous room talk">
+          <div class="room-discussion-talk-head">
+            <b>Anonymous room talk</b>
+            <span>${closed ? "Closed archive" : "Room-only / no public wall"}</span>
+          </div>
+          <form class="room-discussion-talk-form" data-live-room-talk-form="${escapeHtml(room.eventId)}">
+            <label for="${escapeHtml(inputId)}">Message</label>
+            <textarea id="${escapeHtml(inputId)}" data-live-room-message-input="${escapeHtml(room.eventId)}" maxlength="220" placeholder="${closed ? "Room closed. Read only." : "Say it before the room closes."}" ${closed ? "disabled" : ""}></textarea>
+            <div class="room-discussion-talk-row">
+              <span>${closed ? "This room closed when the event ended." : "Anonymous, room-scoped, auto-closed after the event."}</span>
+              <button class="room-discussion-submit" type="submit" ${closed ? "disabled" : ""}>${closed ? "Closed" : "Send"}</button>
+            </div>
+          </form>
+          <div class="room-discussion-messages" aria-live="polite">${messageRows}</div>
+        </section>
+      `;
+      const form = roomDiscussionMount.querySelector("[data-live-room-talk-form]");
+      if (form) {
+        form.addEventListener("submit", event => {
+          event.preventDefault();
+          const input = form.querySelector("[data-live-room-message-input]");
+          addEventLiveRoomMessage(form.dataset.liveRoomTalkForm, input ? input.value : "");
+        });
+      }
+      roomDiscussionMount.querySelectorAll("[data-live-room-report]").forEach(button => {
+        button.addEventListener("click", () => reportEventLiveRoomMessage(button.dataset.liveRoomId, button.dataset.liveRoomReport));
+      });
+    }
+
+    function handleEventLiveRoomStatus(status, count) {
+      eventLiveRoomMode = status || "local";
+      eventLiveRoomPresence = Number(count) || 0;
+      renderDiscussion();
+    }
+
+    function handleEventLiveRoomPresence(count) {
+      eventLiveRoomPresence = Number(count) || 0;
+      renderDiscussion();
+    }
+
+    function handleEventLiveRoomBroadcast(eventName, payload) {
+      const eventId = String(payload && (payload.targetId || payload.eventId || payload.roomId) || "");
+      if (eventId && eventId !== activeEventLiveRoomId) return;
+      if (eventName === "event-room-message" && liveRoomHelper && typeof liveRoomHelper.roomMessagesAfterBroadcast === "function") {
+        if (!eventId) return;
+        eventLiveRoomMessages[eventId] = liveRoomHelper.roomMessagesAfterBroadcast(eventLiveRoomMessagesFor(eventId), payload || {});
+        saveEventLiveRoomMessages();
+        renderDiscussion();
+        return;
+      }
+      if (eventName === "event-room-report" && liveRoomHelper && typeof liveRoomHelper.roomMessagesAfterReport === "function") {
+        if (!eventId) return;
+        eventLiveRoomMessages[eventId] = liveRoomHelper.roomMessagesAfterReport(eventLiveRoomMessagesFor(eventId), payload || {});
+        saveEventLiveRoomMessages();
+        renderDiscussion();
+      }
+    }
+
+    function joinDiscussionRoom(room) {
+      if (!room) {
+        activeEventLiveRoomId = "";
+        renderDiscussion();
+        return;
+      }
+      activeEventLiveRoomId = room.eventId;
+      eventLiveRoomMode = eventLiveRealtime ? "connecting" : "local";
+      eventLiveRoomPresence = 0;
+      syncDiscussionUrl(room.eventId);
+      renderDiscussion();
+      if (!eventLiveRealtime) return;
+      eventLiveRealtime.join("event", { id: room.eventId, title: room.title, eventId: room.eventId }, { page: "live-room-discussion" }).catch(() => {
+        eventLiveRoomMode = "local";
+        renderDiscussion();
+      });
+    }
+
+    function addEventLiveRoomMessage(eventId, text) {
+      const room = eventLiveRooms.find(item => item.eventId === eventId);
+      if (!room) return;
+      if (liveRoomClosed(room)) {
+        roomDiscussionStatus.textContent = "Room closed";
+        renderDiscussion();
+        return;
+      }
+      if (!liveRoomHelper || typeof liveRoomHelper.roomMessagesAfterBroadcast !== "function") return;
+      const moderation = typeof liveRoomHelper.roomMessageModerationState === "function"
+        ? liveRoomHelper.roomMessageModerationState(text)
+        : { allowed: true, message: "" };
+      if (!moderation.allowed) {
+        roomDiscussionStatus.textContent = moderation.message || eventLiveRoomSoftBlockMessage;
+        return;
+      }
+      const before = eventLiveRoomMessagesFor(eventId);
+      const next = liveRoomHelper.roomMessagesAfterBroadcast(before, {
+        targetId: eventId,
+        text,
+        sentAt: new Date().toISOString()
+      });
+      if (next.length === before.length) {
+        roomDiscussionStatus.textContent = "Message needs text";
+        return;
+      }
+      eventLiveRoomMessages[eventId] = next;
+      saveEventLiveRoomMessages();
+      renderDiscussion();
+      if (eventLiveRealtime) {
+        eventLiveRealtime.send("event-room-message", {
+          id: next[0].id,
+          targetId: eventId,
+          text: next[0].text
+        });
+      }
+    }
+
+    function reportEventLiveRoomMessage(eventId, messageId) {
+      if (!eventId || !messageId || !liveRoomHelper || typeof liveRoomHelper.roomMessagesAfterReport !== "function") return;
+      const reported = eventLiveRoomReportedSet(eventId);
+      if (reported.has(messageId)) return;
+      reported.add(messageId);
+      eventLiveRoomReportedMessages[eventId] = [...reported];
+      eventLiveRoomMessages[eventId] = liveRoomHelper.roomMessagesAfterReport(eventLiveRoomMessagesFor(eventId), {
+        targetId: eventId,
+        messageId
+      });
+      saveEventLiveRoomReportedMessages();
+      saveEventLiveRoomMessages();
+      renderDiscussion();
+      if (eventLiveRealtime) {
+        eventLiveRealtime.send("event-room-report", {
+          targetId: eventId,
+          messageId
+        });
+      }
+    }
+
+    async function copyDiscussionUrl(url) {
+      try {
+        await navigator.clipboard.writeText(url);
+        return true;
+      } catch (_) {
+        if (discussionShareUrl) {
+          discussionShareUrl.focus();
+          discussionShareUrl.select();
+        }
+        return false;
+      }
+    }
+
+    async function shareActiveDiscussionLink() {
+      const room = activeLiveRoom();
+      if (!room) {
+        roomDiscussionStatus.textContent = "No room selected";
+        return;
+      }
+      const payload = discussionSharePayload(room);
+      if (navigator.share) {
+        try {
+          await navigator.share(payload);
+          roomDiscussionStatus.textContent = "Share sheet opened";
+          return;
+        } catch (error) {
+          if (error && error.name === "AbortError") return;
+        }
+      }
+      const copied = await copyDiscussionUrl(payload.url);
+      roomDiscussionStatus.textContent = copied ? "Discussion link copied" : "Discussion link selected";
+    }
+
+    async function copyActiveDiscussionLink() {
+      const room = activeLiveRoom();
+      if (!room) {
+        roomDiscussionStatus.textContent = "No room selected";
+        return;
+      }
+      const url = roomDiscussionLinkFor(room.eventId);
+      const copied = await copyDiscussionUrl(url);
+      roomDiscussionStatus.textContent = copied ? "Discussion link copied" : "Discussion link selected";
+    }
+
+    function downloadActiveDiscussionCard() {
+      const room = activeLiveRoom();
+      if (!room) {
+        roomDiscussionStatus.textContent = "No room selected";
+        return;
+      }
+      drawDiscussionShareCard(room);
+      const filename = `${room.eventId}-room-share.png`;
+      const saveBlob = blob => {
+        if (!blob) {
+          saveDataUrl(roomDiscussionShareCard.toDataURL("image/png"), filename);
+          return;
+        }
+        const url = URL.createObjectURL(blob);
+        saveDataUrl(url, filename);
+        window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+      };
+      if (typeof roomDiscussionShareCard.toBlob === "function") {
+        roomDiscussionShareCard.toBlob(saveBlob, "image/png");
+      } else {
+        saveBlob(null);
+      }
+      roomDiscussionStatus.textContent = "Share card ready";
+    }
+
+    function saveDataUrl(url, filename) {
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+    }
+
+    async function loadDiscussionRoom() {
+      roomDiscussionStatus.textContent = "Loading room";
+      try {
+        const response = await fetch("data/events.json");
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        events = Array.isArray(data.events) ? data.events : [];
+        today = shanghaiToday(data.verified);
+        eventLiveRooms = liveRoomHelper && typeof liveRoomHelper.todayEventRooms === "function"
+          ? liveRoomHelper.todayEventRooms(events, today)
+          : [];
+        const requested = roomDiscussionEventId();
+        const room = eventLiveRooms.find(item => item.eventId === requested) || null;
+        if (!room) {
+          activeEventLiveRoomId = "";
+          renderDiscussion();
+          return;
+        }
+        joinDiscussionRoom(room);
+      } catch (_) {
+        events = [];
+        eventLiveRooms = [];
+        activeEventLiveRoomId = "";
+        renderDiscussion();
+        roomDiscussionMount.innerHTML = `
+          <div class="room-discussion-empty">
+            <p>Discussion room data did not load.</p>
+            <a href="live-room.html">Open Tonight Rooms</a>
+          </div>
+        `;
+      }
+    }
+
+    shareDiscussionLink.addEventListener("click", shareActiveDiscussionLink);
+    copyDiscussionLink.addEventListener("click", copyActiveDiscussionLink);
+    downloadDiscussionCard.addEventListener("click", downloadActiveDiscussionCard);
+    window.addEventListener("hashchange", () => {
+      const requested = roomDiscussionEventId();
+      const room = eventLiveRooms.find(item => item.eventId === requested) || null;
+      joinDiscussionRoom(room);
+    });
+    loadDiscussionRoom();
+  </script>
+</body>
+</html>
