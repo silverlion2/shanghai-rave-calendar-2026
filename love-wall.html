@@ -541,6 +541,55 @@
       color: var(--love-ember);
     }
 
+    .emoji-rail {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 6px;
+      border-top: 1px solid rgba(229, 222, 209, .14);
+      padding-top: 10px;
+    }
+
+    .emoji-button {
+      min-width: 0;
+      min-height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      border: 1px solid rgba(229, 222, 209, .22);
+      border-radius: 0;
+      color: var(--love-paper);
+      background: rgba(5, 6, 6, .62);
+      cursor: pointer;
+    }
+
+    .emoji-button:hover,
+    .emoji-button:focus-visible,
+    .emoji-button.active {
+      border-color: var(--pulse-color, var(--love-cyan));
+      color: var(--love-void);
+      background: var(--pulse-color, var(--love-cyan));
+      outline: 0;
+    }
+
+    .emoji-button[aria-busy="true"] {
+      opacity: .62;
+      pointer-events: none;
+    }
+
+    .emoji-symbol {
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    .emoji-count {
+      min-width: 14px;
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 1;
+    }
+
     .love-empty {
       padding: 24px;
       color: var(--love-muted);
@@ -784,7 +833,16 @@
 
   <script>
     const storageKey = "rave-love-wall-notes-v1";
+    const reactionStorageKey = "rave-love-wall-reactions-v1";
+    const reactionVisitorStorageKey = "rave-love-wall-visitor-v1";
     const supabaseConfig = window.LOVE_WALL_SUPABASE || {};
+    const emojiOptions = [
+      { emoji: "🔥", label: "heat" },
+      { emoji: "🖤", label: "love" },
+      { emoji: "💧", label: "water" },
+      { emoji: "⚡", label: "energy" },
+      { emoji: "🌙", label: "afterglow" }
+    ];
     const pulseLabels = {
       bass: "Bass",
       sweat: "Sweat",
@@ -892,7 +950,11 @@
     let activeFilter = "all";
     let localNotes = loadLocalNotes();
     let remoteNotes = [];
+    let remoteReactionCounts = {};
+    let reactionState = loadReactionState();
+    const visitorId = loadVisitorId();
     let remoteState = "local";
+    let remoteReactionState = "local";
 
     function hasSupabaseConfig() {
       return Boolean(
@@ -904,7 +966,15 @@
     }
 
     function supabaseBaseUrl() {
-      return `${String(supabaseConfig.url || "").replace(/\/+$/, "")}/rest/v1/${encodeURIComponent(supabaseConfig.table || "love_wall_posts")}`;
+      return supabaseTableUrl(supabaseConfig.table || "love_wall_posts");
+    }
+
+    function supabaseReactionUrl() {
+      return supabaseTableUrl(supabaseConfig.reactionTable || "love_wall_reactions");
+    }
+
+    function supabaseTableUrl(tableName) {
+      return `${String(supabaseConfig.url || "").replace(/\/+$/, "")}/rest/v1/${encodeURIComponent(tableName)}`;
     }
 
     function supabaseHeaders(extra = {}) {
@@ -926,6 +996,10 @@
         createdAt: String(item.created_at || "").slice(0, 10) || "supabase",
         remote: true
       };
+    }
+
+    function isValidEmoji(value) {
+      return emojiOptions.some(option => option.emoji === value);
     }
 
     function escapeHtml(value) {
@@ -966,6 +1040,32 @@
       window.localStorage.setItem(storageKey, JSON.stringify(localNotes));
     }
 
+    function loadReactionState() {
+      try {
+        const parsed = JSON.parse(window.localStorage.getItem(reactionStorageKey) || "{}");
+        return {
+          counts: parsed && typeof parsed.counts === "object" ? parsed.counts : {},
+          mine: parsed && typeof parsed.mine === "object" ? parsed.mine : {}
+        };
+      } catch (_) {
+        return { counts: {}, mine: {} };
+      }
+    }
+
+    function saveReactionState() {
+      window.localStorage.setItem(reactionStorageKey, JSON.stringify(reactionState));
+    }
+
+    function loadVisitorId() {
+      const existing = window.localStorage.getItem(reactionVisitorStorageKey);
+      if (existing && existing.length >= 16) return existing;
+      const value = window.crypto && typeof window.crypto.randomUUID === "function"
+        ? window.crypto.randomUUID()
+        : `visitor-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 14)}`;
+      window.localStorage.setItem(reactionVisitorStorageKey, value);
+      return value;
+    }
+
     function dedupeKey(note) {
       return `${String(note.author).toLowerCase()}::${String(note.message).toLowerCase()}`;
     }
@@ -978,6 +1078,34 @@
 
     function noteText(note) {
       return [note.author, note.pulse, note.message, note.source].join(" ").toLowerCase();
+    }
+
+    function noteReactionCounts(note) {
+      if (note.remote) return remoteReactionCounts[note.id] || {};
+      return reactionState.counts[note.id] || {};
+    }
+
+    function noteMineReactions(note) {
+      return Array.isArray(reactionState.mine[note.id]) ? reactionState.mine[note.id] : [];
+    }
+
+    function renderEmojiRail(note) {
+      const counts = noteReactionCounts(note);
+      const mine = new Set(noteMineReactions(note));
+      return `
+        <div class="emoji-rail" data-note-id="${escapeHtml(note.id)}" data-remote="${note.remote ? "true" : "false"}" aria-label="Emoji reactions">
+          ${emojiOptions.map(option => {
+            const count = Number(counts[option.emoji] || 0);
+            const active = mine.has(option.emoji);
+            return `
+              <button class="emoji-button ${active ? "active" : ""}" type="button" data-emoji="${escapeHtml(option.emoji)}" title="${escapeHtml(option.label)}" aria-label="${escapeHtml(`React ${option.label}`)}">
+                <span class="emoji-symbol" aria-hidden="true">${escapeHtml(option.emoji)}</span>
+                <span class="emoji-count">${count}</span>
+              </button>
+            `;
+          }).join("")}
+        </div>
+      `;
     }
 
     function filteredNotes() {
@@ -1015,6 +1143,7 @@
             <span class="note-author ${note.local ? "note-local" : ""}">${escapeHtml(note.author)}</span>
             <span class="note-meta">${escapeHtml(note.source)}</span>
           </div>
+          ${renderEmojiRail(note)}
         </article>
       `).join("");
     }
@@ -1105,6 +1234,48 @@
       }, 1100);
     }
 
+    function markReaction(noteId, emoji, { remote = false, inserted = true } = {}) {
+      if (!reactionState.mine[noteId]) reactionState.mine[noteId] = [];
+      if (!reactionState.mine[noteId].includes(emoji)) {
+        reactionState.mine[noteId].push(emoji);
+      }
+
+      const target = remote ? remoteReactionCounts : reactionState.counts;
+      if (!target[noteId]) target[noteId] = {};
+      if (inserted) target[noteId][emoji] = Number(target[noteId][emoji] || 0) + 1;
+      saveReactionState();
+    }
+
+    async function reactToNote(button) {
+      const rail = button.closest(".emoji-rail");
+      const noteId = rail?.dataset.noteId || "";
+      const emoji = button.dataset.emoji || "";
+      const remote = rail?.dataset.remote === "true";
+      if (!noteId || !isValidEmoji(emoji)) return;
+
+      const mine = new Set(reactionState.mine[noteId] || []);
+      if (mine.has(emoji)) {
+        els.formStatus.textContent = "Emoji already counted for this browser.";
+        return;
+      }
+
+      button.setAttribute("aria-busy", "true");
+      try {
+        if (remote && hasSupabaseConfig()) {
+          const inserted = await submitRemoteReaction(noteId, emoji);
+          markReaction(noteId, emoji, { remote: true, inserted });
+          els.formStatus.textContent = inserted ? "Emoji saved to Supabase." : "Emoji was already counted upstream.";
+        } else {
+          markReaction(noteId, emoji, { remote: false, inserted: true });
+          els.formStatus.textContent = "Emoji saved locally.";
+        }
+        renderWall();
+      } catch (error) {
+        els.formStatus.textContent = `Emoji save failed. ${error.message || ""}`.trim();
+        button.removeAttribute("aria-busy");
+      }
+    }
+
     async function fetchRemoteNotes() {
       if (!hasSupabaseConfig()) {
         remoteState = "local";
@@ -1131,9 +1302,53 @@
       }
       const data = await response.json();
       remoteNotes = Array.isArray(data) ? data.map(normalizeRemoteNote) : [];
+      try {
+        await fetchRemoteReactions(remoteNotes);
+        if (remoteReactionState !== "idle") remoteReactionState = "connected";
+      } catch (_) {
+        remoteReactionCounts = {};
+        remoteReactionState = "unavailable";
+      }
       remoteState = "connected";
-      els.formStatus.textContent = "Supabase connected. New posts go to review before public display.";
+      els.formStatus.textContent = remoteReactionState === "connected"
+        ? "Supabase connected. Posts go to review; emoji reactions sync online."
+        : remoteReactionState === "idle"
+          ? "Supabase connected. Emoji sync starts when approved posts are on the wall."
+          : "Supabase connected for posts. Emoji reactions are local until the reaction migration runs.";
       renderWall();
+    }
+
+    async function fetchRemoteReactions(notes = remoteNotes) {
+      const ids = notes
+        .filter(note => note.remote)
+        .map(note => note.id)
+        .filter(Boolean);
+      if (!hasSupabaseConfig()) {
+        remoteReactionCounts = {};
+        remoteReactionState = "local";
+        return;
+      }
+      if (!ids.length) {
+        remoteReactionCounts = {};
+        remoteReactionState = "idle";
+        return;
+      }
+      const query = [
+        "select=post_id,emoji",
+        `post_id=${encodeURIComponent(`in.(${ids.join(",")})`)}`,
+        "limit=1000"
+      ].join("&");
+      const response = await fetch(`${supabaseReactionUrl()}?${query}`, {
+        headers: supabaseHeaders()
+      });
+      if (!response.ok) throw new Error(`reaction read ${response.status}`);
+      const rows = await response.json();
+      remoteReactionCounts = {};
+      (Array.isArray(rows) ? rows : []).forEach(row => {
+        if (!row.post_id || !isValidEmoji(row.emoji)) return;
+        if (!remoteReactionCounts[row.post_id]) remoteReactionCounts[row.post_id] = {};
+        remoteReactionCounts[row.post_id][row.emoji] = Number(remoteReactionCounts[row.post_id][row.emoji] || 0) + 1;
+      });
     }
 
     async function submitRemoteNote(note) {
@@ -1161,11 +1376,40 @@
       }
     }
 
+    async function submitRemoteReaction(noteId, emoji) {
+      const response = await fetch(supabaseReactionUrl(), {
+        method: "POST",
+        headers: supabaseHeaders({
+          "Content-Type": "application/json",
+          Prefer: "return=minimal"
+        }),
+        body: JSON.stringify({
+          post_id: noteId,
+          emoji,
+          visitor_id: visitorId
+        })
+      });
+      if (response.status === 409) return false;
+      if (!response.ok) {
+        let detail = "";
+        try {
+          const payload = await response.json();
+          detail = payload.message || payload.details || "";
+        } catch (_) {}
+        throw new Error(`reaction write ${response.status}${detail ? `: ${detail}` : ""}`);
+      }
+      return true;
+    }
+
     els.form.addEventListener("submit", addNote);
     els.promptButton.addEventListener("click", usePrompt);
     els.clearButton.addEventListener("click", clearLocalNotes);
     els.copyButton.addEventListener("click", copyWallText);
     els.searchInput.addEventListener("input", renderWall);
+    els.wall.addEventListener("click", event => {
+      const button = event.target.closest(".emoji-button");
+      if (button) reactToNote(button);
+    });
     document.querySelectorAll("[data-filter]").forEach(button => {
       button.addEventListener("click", () => {
         activeFilter = button.dataset.filter || "all";

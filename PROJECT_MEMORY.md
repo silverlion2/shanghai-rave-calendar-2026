@@ -640,3 +640,21 @@ Result saved:
 - Five small posters that previously used raw paths now have optimized files: `afrowave-takeover-la-burg`, `night-at-museum-90s-disco`, `nova-summer-splash-pool-party`, `nova-sunset-sessions-flair`, and `sunset-sundays-dome`.
 - The poster workflow was committed and pushed to `main` in commit `1d7431c` (`Automate poster compression upload workflow`).
 - `npm run check` passed after the workflow and upload changes.
+
+## 2026-06-13 Love Wall Emoji Reaction System
+
+The user asked to add an emoji system to the Love Wall, push it to `main`, and save the implementation state in project history.
+
+Implemented state:
+
+- Love Wall cards now render five fixed reaction options: fire, black heart, water drop, lightning, and moon.
+- Local starter notes and pending browser notes persist reaction counts and per-browser "already reacted" state in `localStorage`.
+- Approved Supabase Love Wall posts are ready to persist reactions in `love_wall_reactions` using anonymous insert and public read RLS.
+- `supabase/migrations/202606130002_love_wall_reactions.sql` creates the reaction table, uniqueness guard, indexes, RLS policies, and grants.
+- `supabase/love-wall.sql`, `assets/love-wall-supabase-config.js`, and `scripts/write-love-wall-config.js` now include the reaction table contract.
+
+Operational notes:
+
+- Live Supabase reaction sync still requires applying the new migration; this machine does not currently have `SUPABASE_DB_URL` or `DATABASE_URL` configured for `npm run supabase:migrate`.
+- Full `npm run check` is currently blocked by unrelated account-system sitemap state for `/account`.
+- Love Wall inline JavaScript checks passed, and browser smoke testing confirmed the emoji rail renders, click state updates, and desktop/mobile layouts do not overflow.
