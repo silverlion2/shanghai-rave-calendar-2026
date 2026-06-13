@@ -1,15 +1,31 @@
 const fs = require("fs");
 const path = require("path");
+const {
+  readWebsiteStructure,
+  staticSitemapRoutes,
+} = require("./site-structure");
+const {
+  renderHtmlDocument,
+  renderSeoHead,
+  renderPrimaryNav,
+  renderBottomDispatchFooter,
+  websiteSchema,
+  graph,
+  compact,
+  escapeHtml,
+  escapeAttr,
+  escapeXml,
+} = require("./site-components");
 
 const ROOT = path.resolve(__dirname, "..");
 const DATA_FILE = path.join(ROOT, "data", "events.json");
 const EVENTS_DIR = path.join(ROOT, "events");
 const SITEMAP_FILE = path.join(ROOT, "sitemap.xml");
-const SITE_URL = "https://raveindexsh.top";
-const SITE_NAME = "Shanghai Rave Index";
-const STATIC_LASTMOD = "2026-06-12";
-const TIMEZONE_OFFSET = "+08:00";
-const GOOGLE_TAG_ID = "G-HP6NQ3VZB9";
+const siteStructure = readWebsiteStructure();
+const SITE_URL = siteStructure.site.baseUrl;
+const SITE_NAME = siteStructure.site.name;
+const STATIC_LASTMOD = siteStructure.site.staticLastmod;
+const TIMEZONE_OFFSET = siteStructure.site.timezoneOffset;
 
 const payload = JSON.parse(fs.readFileSync(DATA_FILE, "utf8"));
 const events = Array.isArray(payload) ? payload : payload.events;
@@ -67,7 +83,7 @@ function renderEventPage(event) {
   const canonical = eventUrl(event);
   const image = imageUrl(event);
   const schemaNodes = [
-    websiteSchema(),
+    websiteSchema(siteStructure),
     {
       "@type": "WebPage",
       "@id": `${canonical}#webpage`,
@@ -159,182 +175,33 @@ function renderEventPage(event) {
 }
 
 function pageShell({ title, description, canonical, ogTitle, ogDescription, ogImage, ogAlt, robots, schema, body }) {
-  return `<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>${escapeHtml(title)}</title>
-  <meta name="description" content="${escapeAttr(description)}">
-  <meta name="robots" content="${escapeAttr(robots)}">
-  <meta name="theme-color" content="#c6ff3b">
-  <link rel="canonical" href="${escapeAttr(canonical)}">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="icon" href="/og-image.png" type="image/png">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=${GOOGLE_TAG_ID}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "${GOOGLE_TAG_ID}");
-  </script>
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="${SITE_NAME}">
-  <meta property="og:title" content="${escapeAttr(ogTitle)}">
-  <meta property="og:description" content="${escapeAttr(ogDescription)}">
-  <meta property="og:url" content="${escapeAttr(canonical)}">
-  <meta property="og:image" content="${escapeAttr(ogImage)}">
-  <meta property="og:image:alt" content="${escapeAttr(ogAlt)}">
-  <script type="application/ld+json">
-${jsonLd(schema)}
-  </script>
-  <style>
-    :root {
-      color-scheme: dark;
-      --ink: #f2f0e8;
-      --muted: #aaa59a;
-      --void: #080806;
-      --panel: #11110e;
-      --panel-2: #181814;
-      --line: #302f28;
-      --acid: #c6ff3b;
-      --ember: #ff6a2a;
-      --cyan: #41d7ff;
-      --radius: 8px;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      min-height: 100vh;
-      background:
-        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px) 0 0 / 36px 36px,
-        linear-gradient(0deg, rgba(255,255,255,.018) 1px, transparent 1px) 0 0 / 36px 36px,
-        radial-gradient(circle at 50% -10%, rgba(255,106,42,.16), transparent 38%),
-        #080806;
-      color: var(--ink);
-      font-family: "Aptos", "Segoe UI", sans-serif;
-      letter-spacing: 0;
-    }
-    a { color: inherit; }
-    .shell { width: min(1220px, calc(100% - 32px)); margin: 0 auto; padding: 24px 0 56px; }
-    .site-nav, .nav-group, .action-row, .stat-grid { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-    .site-nav { justify-content: space-between; margin-bottom: 20px; color: var(--muted); }
-    .nav-link, .button {
-      min-height: 34px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid var(--line);
-      border-radius: 6px;
-      background: rgba(17,17,14,.78);
-      padding: 7px 11px;
-      color: var(--muted);
-      text-decoration: none;
-      font-size: 12px;
-      font-weight: 900;
-      text-transform: uppercase;
-      line-height: 1.1;
-    }
-    .nav-link:hover, .nav-link.active, .button.primary { color: var(--void); background: var(--acid); border-color: var(--acid); }
-    .button.secondary:hover { color: var(--ink); border-color: var(--ink); }
-    .hero, .event-detail { border-top: 1px solid var(--line); padding-top: 28px; }
-    .kicker { margin: 0 0 12px; color: var(--acid); font-size: 13px; font-weight: 900; text-transform: uppercase; }
-    h1, h2 { margin: 0; font-family: "Georgia", "Times New Roman", serif; }
-    h1 { max-width: 900px; font-size: clamp(42px, 7vw, 86px); line-height: .95; }
-    h2 { margin-bottom: 14px; font-size: 28px; }
-    .lede { max-width: 850px; color: var(--muted); font-size: 18px; line-height: 1.55; }
-    .stat-grid { margin-top: 22px; }
-    .stat, .fact, .event-card, .copy-block {
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: rgba(17,17,14,.78);
-      padding: 14px;
-    }
-    .stat b { display: block; color: var(--acid); font-size: 28px; }
-    .stat span, .fact span, .event-meta, .source-list, .lineup-list span, figcaption, .watch-note { color: var(--muted); }
-    .event-section { margin-top: 34px; }
-    .event-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 12px; }
-    .event-card { display: grid; gap: 10px; text-decoration: none; }
-    .event-card:hover { border-color: var(--acid); }
-    .event-card h3 { margin: 0; font-size: 20px; line-height: 1.15; }
-    .event-meta { font-size: 13px; line-height: 1.4; }
-    .event-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, 360px); gap: 24px; align-items: start; }
-    figure { margin: 0; }
-    img { width: 100%; border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel-2); object-fit: cover; }
-    figcaption { margin-top: 8px; font-size: 12px; }
-    .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin-top: 24px; }
-    .fact b { display: block; margin-top: 5px; font-size: 15px; }
-    .copy-block { margin-top: 18px; }
-    .lineup-list, .source-list { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
-    .lineup-list li { display: grid; gap: 4px; }
-    .crumbs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; color: var(--muted); font-size: 13px; }
-    .watch-detail { border-color: rgba(255, 209, 102, .35); }
-    @media (max-width: 780px) {
-      .event-hero { grid-template-columns: 1fr; }
-      .site-nav { align-items: flex-start; }
-    }
-  </style>
-  <link rel="stylesheet" href="../assets/basement-dispatch.css">
-</head>
-<body>
-${body}
-</body>
-</html>
-`;
+  return renderHtmlDocument({
+    head: renderSeoHead(siteStructure, {
+      title,
+      description,
+      canonical,
+      ogTitle,
+      ogDescription,
+      ogImage,
+      ogAlt,
+      robots,
+      schema,
+      assetPrefix: "../",
+      stylesheets: [
+        siteStructure.site.eventDetailStylesheet,
+        siteStructure.site.themeStylesheet,
+      ],
+    }),
+    body,
+  });
 }
 
 function nav(prefix = "") {
-  return `
-    <nav class="site-nav" aria-label="Site navigation">
-      <div class="nav-group">
-        <a class="nav-link" href="${prefix}index.html">Calendar</a>
-        <a class="nav-link active" href="${prefix}poster-wall.html">Wall</a>
-        <a class="nav-link" href="${prefix}love-wall.html">Love</a>
-        <a class="nav-link" href="${prefix}poster-archive.html">Archive</a>
-        <a class="nav-link" href="${prefix}planner.html">Planner</a>
-        <a class="nav-link" href="${prefix}rave-everywhere.html">Everywhere</a>
-        <a class="nav-link" href="${prefix}venues.html">Venues</a>
-        <a class="nav-link" href="${prefix}djs.html">DJs</a>
-      </div>
-      <span>Basement Dispatch / source-first calendar</span>
-    </nav>
-  `;
+  return renderPrimaryNav(siteStructure, { prefix, activeId: "poster-wall" });
 }
 
 function sharedFooter(prefix = "") {
-  return `
-    <footer class="footnotes bottom-dispatch-bar" aria-label="Basement Dispatch status">
-      <div class="bar-cell update-cell">
-        <span class="footer-alert-mark" aria-hidden="true">!</span>
-        <strong>Event data<br>can move</strong>
-      </div>
-      <div class="bar-cell">
-        <span>Generated pages mirror the public calendar format.</span>
-        <span>Confirm source links before planning around details.</span>
-      </div>
-      <address class="bar-cell">
-        <span>Questions or updates?</span>
-        <a href="mailto:info@shanghairaveindex.com">info@shanghairaveindex.com</a>
-        <span>IG @shanghairaveindex</span>
-      </address>
-      <div class="bar-cell">
-        <span>Information is aggregated from public sources and may change.</span>
-        <span>Watchlist leads stay noindexed until stronger evidence lands.</span>
-      </div>
-      <a class="bar-cell ops-cell" href="${prefix}ops.html" aria-label="Open Ops desk">
-        <span>Ops desk</span>
-        <b>Review queue -></b>
-      </a>
-      <div class="bar-cell source-cell">
-        <span>Source first</span>
-        <span>Rave second</span>
-      </div>
-    </footer>
-  `;
+  return renderBottomDispatchFooter(siteStructure, { prefix });
 }
 
 function fact(label, value) {
@@ -430,43 +297,8 @@ function breadcrumbSchema(items) {
   };
 }
 
-function websiteSchema() {
-  return {
-    "@type": "WebSite",
-    "@id": `${SITE_URL}/#website`,
-    "name": SITE_NAME,
-    "url": `${SITE_URL}/`,
-    "inLanguage": "en",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Basement Dispatch",
-      "url": `${SITE_URL}/`,
-      "logo": {
-        "@type": "ImageObject",
-        "url": `${SITE_URL}/og-image.png`,
-      },
-    },
-  };
-}
-
-function graph(nodes) {
-  return {
-    "@context": "https://schema.org",
-    "@graph": nodes.map(compact),
-  };
-}
-
 function renderSitemap(list) {
-  const staticRoutes = [
-    ["/", STATIC_LASTMOD, "daily", "1.0"],
-    ["/poster-wall", STATIC_LASTMOD, "daily", "0.95"],
-    ["/love-wall", STATIC_LASTMOD, "weekly", "0.93"],
-    ["/poster-archive", STATIC_LASTMOD, "weekly", "0.92"],
-    ["/planner", STATIC_LASTMOD, "weekly", "0.9"],
-    ["/rave-everywhere", STATIC_LASTMOD, "weekly", "0.88"],
-    ["/djs", STATIC_LASTMOD, "weekly", "0.85"],
-    ["/venues", STATIC_LASTMOD, "weekly", "0.8"],
-  ];
+  const staticRoutes = staticSitemapRoutes(siteStructure);
   const eventRoutes = list.filter(isPublicEvent).map(event => [
     `/events/${event.id}`,
     dateOnly(event.lastChecked || event.sortDate) || dataLastmod,
@@ -582,33 +414,3 @@ function dateOnly(value) {
   return match ? match[0] : "";
 }
 
-function compact(value) {
-  if (Array.isArray(value)) return value.map(compact).filter(item => item !== undefined);
-  if (!value || typeof value !== "object") return value;
-  return Object.fromEntries(
-    Object.entries(value)
-      .filter(([, item]) => item !== undefined && item !== "" && !(Array.isArray(item) && item.length === 0))
-      .map(([key, item]) => [key, compact(item)])
-  );
-}
-
-function jsonLd(value) {
-  return JSON.stringify(value, null, 2).replace(/</g, "\\u003c");
-}
-
-function escapeHtml(value) {
-  return String(value || "")
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
-}
-
-function escapeAttr(value) {
-  return escapeHtml(value).replace(/`/g, "&#96;");
-}
-
-function escapeXml(value) {
-  return escapeHtml(value);
-}

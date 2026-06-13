@@ -634,6 +634,7 @@
     }
   </style>
   <link rel="stylesheet" href="assets/basement-dispatch.css">
+  <script src="assets/love-wall-supabase-config.js"></script>
 </head>
 <body>
   <main class="shell dispatch-shell love-page">
@@ -710,7 +711,7 @@
             <button class="button" type="button" id="promptButton">Load prompt</button>
             <button class="button warn" type="button" id="clearButton">Clear my notes</button>
           </div>
-          <span class="wall-status" id="formStatus">Notes stay in this browser until a backend is added.</span>
+          <span class="wall-status" id="formStatus">Checking Supabase connection.</span>
         </form>
 
         <div class="love-prompts" aria-label="Love wall prompt cards">
@@ -783,6 +784,7 @@
 
   <script>
     const storageKey = "rave-love-wall-notes-v1";
+    const supabaseConfig = window.LOVE_WALL_SUPABASE || {};
     const pulseLabels = {
       bass: "Bass",
       sweat: "Sweat",
@@ -889,6 +891,42 @@
     };
     let activeFilter = "all";
     let localNotes = loadLocalNotes();
+    let remoteNotes = [];
+    let remoteState = "local";
+
+    function hasSupabaseConfig() {
+      return Boolean(
+        supabaseConfig.enabled
+        && /^https:\/\/[a-z0-9.-]+\.supabase\.co\/?$/i.test(String(supabaseConfig.url || ""))
+        && String(supabaseConfig.anonKey || "").length > 20
+        && String(supabaseConfig.table || "").trim()
+      );
+    }
+
+    function supabaseBaseUrl() {
+      return `${String(supabaseConfig.url || "").replace(/\/+$/, "")}/rest/v1/${encodeURIComponent(supabaseConfig.table || "love_wall_posts")}`;
+    }
+
+    function supabaseHeaders(extra = {}) {
+      const key = String(supabaseConfig.anonKey || "");
+      return {
+        apikey: key,
+        Authorization: `Bearer ${key}`,
+        ...extra
+      };
+    }
+
+    function normalizeRemoteNote(item) {
+      return {
+        id: String(item.id || `remote-${Date.now()}`),
+        author: String(item.author || "anonymous dancer").slice(0, 26),
+        pulse: normalizePulse(item.pulse),
+        message: String(item.message || "").slice(0, 170),
+        source: "approved post",
+        createdAt: String(item.created_at || "").slice(0, 10) || "supabase",
+        remote: true
+      };
+    }
 
     function escapeHtml(value) {
       return String(value ?? "").replace(/[&<>"']/g, char => ({
@@ -928,8 +966,14 @@
       window.localStorage.setItem(storageKey, JSON.stringify(localNotes));
     }
 
+    function dedupeKey(note) {
+      return `${String(note.author).toLowerCase()}::${String(note.message).toLowerCase()}`;
+    }
+
     function allNotes() {
-      return [...localNotes, ...starterNotes];
+      const remoteKeys = new Set(remoteNotes.map(dedupeKey));
+      const localOnly = localNotes.filter(note => !remoteKeys.has(dedupeKey(note)));
+      return [...localOnly, ...remoteNotes, ...starterNotes];
     }
 
     function noteText(note) {
@@ -950,7 +994,10 @@
       els.totalNotes.textContent = notes.length;
       els.localNotes.textContent = localNotes.length;
       els.pulseReadout.textContent = (activeFilter === "all" ? "ALL" : pulseLabels[activeFilter]).slice(0, 4).toUpperCase();
-      els.wallStatus.textContent = `${notes.length} notes showing / ${localNotes.length} saved locally`;
+      const remoteCopy = remoteState === "connected"
+        ? `${remoteNotes.length} approved from Supabase`
+        : "Supabase not configured";
+      els.wallStatus.textContent = `${notes.length} notes showing / ${localNotes.length} local / ${remoteCopy}`;
 
       if (!notes.length) {
         els.wall.innerHTML = `<div class="love-empty">No notes match this view.</div>`;
@@ -972,7 +1019,7 @@
       `).join("");
     }
 
-    function addNote(event) {
+    async function addNote(event) {
       event.preventDefault();
       const message = els.messageInput.value.trim().replace(/\s+/g, " ");
       if (!message) {
@@ -985,17 +1032,33 @@
         author: (els.authorInput.value.trim() || "anonymous dancer").slice(0, 26),
         pulse: normalizePulse(els.pulseInput.value),
         message: message.slice(0, 170),
-        source: "this browser",
+        source: hasSupabaseConfig() ? "pending review" : "this browser",
         createdAt: new Date().toISOString().slice(0, 10),
-        local: true
+        local: true,
+        pending: hasSupabaseConfig()
       };
-      localNotes.unshift(note);
-      saveLocalNotes();
-      els.messageInput.value = "";
-      els.formStatus.textContent = "Posted locally. It is visible in this browser.";
-      activeFilter = "all";
-      syncFilters();
-      renderWall();
+      try {
+        if (hasSupabaseConfig()) {
+          await submitRemoteNote(note);
+          els.formStatus.textContent = "Submitted to Supabase for review. It is visible here until approved.";
+        } else {
+          els.formStatus.textContent = "Posted locally. Add Supabase config to make it a real submission.";
+        }
+        localNotes.unshift(note);
+        saveLocalNotes();
+        els.messageInput.value = "";
+        activeFilter = "all";
+        syncFilters();
+        renderWall();
+      } catch (error) {
+        note.source = "offline local";
+        note.pending = false;
+        localNotes.unshift(note);
+        saveLocalNotes();
+        els.messageInput.value = "";
+        els.formStatus.textContent = `Supabase submit failed; saved locally. ${error.message || ""}`.trim();
+        renderWall();
+      }
     }
 
     function syncFilters() {
@@ -1042,6 +1105,62 @@
       }, 1100);
     }
 
+    async function fetchRemoteNotes() {
+      if (!hasSupabaseConfig()) {
+        remoteState = "local";
+        els.formStatus.textContent = "Supabase config is disabled; notes are local-only.";
+        renderWall();
+        return;
+      }
+
+      remoteState = "loading";
+      els.formStatus.textContent = "Loading approved Supabase posts.";
+      renderWall();
+
+      const query = [
+        "select=id,author,pulse,message,created_at",
+        "status=eq.approved",
+        "order=created_at.desc",
+        "limit=80"
+      ].join("&");
+      const response = await fetch(`${supabaseBaseUrl()}?${query}`, {
+        headers: supabaseHeaders()
+      });
+      if (!response.ok) {
+        throw new Error(`read ${response.status}`);
+      }
+      const data = await response.json();
+      remoteNotes = Array.isArray(data) ? data.map(normalizeRemoteNote) : [];
+      remoteState = "connected";
+      els.formStatus.textContent = "Supabase connected. New posts go to review before public display.";
+      renderWall();
+    }
+
+    async function submitRemoteNote(note) {
+      const response = await fetch(supabaseBaseUrl(), {
+        method: "POST",
+        headers: supabaseHeaders({
+          "Content-Type": "application/json",
+          Prefer: "return=minimal"
+        }),
+        body: JSON.stringify({
+          author: note.author,
+          pulse: note.pulse,
+          message: note.message,
+          status: "pending",
+          source: "supabase"
+        })
+      });
+      if (!response.ok) {
+        let detail = "";
+        try {
+          const payload = await response.json();
+          detail = payload.message || payload.details || "";
+        } catch (_) {}
+        throw new Error(`write ${response.status}${detail ? `: ${detail}` : ""}`);
+      }
+    }
+
     els.form.addEventListener("submit", addNote);
     els.promptButton.addEventListener("click", usePrompt);
     els.clearButton.addEventListener("click", clearLocalNotes);
@@ -1056,6 +1175,11 @@
     });
 
     renderWall();
+    fetchRemoteNotes().catch(error => {
+      remoteState = "local";
+      els.formStatus.textContent = `Supabase unavailable; using local wall. ${error.message || ""}`.trim();
+      renderWall();
+    });
   </script>
 </body>
 </html>

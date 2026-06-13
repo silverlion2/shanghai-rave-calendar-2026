@@ -1,0 +1,151 @@
+{
+  "site": {
+    "name": "Shanghai Rave Index",
+    "publisher": "Basement Dispatch",
+    "baseUrl": "https://raveindexsh.top",
+    "googleTagId": "G-HP6NQ3VZB9",
+    "themeStylesheet": "assets/basement-dispatch.css",
+    "eventDetailStylesheet": "assets/event-detail.css",
+    "themeDocument": "docs/WEBSITE_THEME.md",
+    "structureDocument": "docs/WEBSITE_STRUCTURE.md",
+    "staticLastmod": "2026-06-12",
+    "timezoneOffset": "+08:00",
+    "navTagline": "Basement Dispatch / source-first calendar",
+    "contactEmail": "info@shanghairaveindex.com",
+    "socialLabel": "IG @shanghairaveindex"
+  },
+  "primaryNav": [
+    "calendar",
+    "poster-wall",
+    "love-wall",
+    "poster-archive",
+    "planner",
+    "rave-everywhere",
+    "venues",
+    "djs"
+  ],
+  "pages": [
+    {
+      "id": "calendar",
+      "label": "Calendar",
+      "file": "index.html",
+      "route": "/",
+      "shell": "calendar-shell",
+      "includeInSitemap": true,
+      "changefreq": "daily",
+      "priority": "1.0",
+      "homepageStats": true
+    },
+    {
+      "id": "poster-wall",
+      "label": "Wall",
+      "file": "poster-wall.html",
+      "route": "/poster-wall",
+      "shell": "dispatch-shell",
+      "includeInSitemap": true,
+      "changefreq": "daily",
+      "priority": "0.95"
+    },
+    {
+      "id": "love-wall",
+      "label": "Love",
+      "file": "love-wall.html",
+      "route": "/love-wall",
+      "shell": "dispatch-shell",
+      "includeInSitemap": true,
+      "changefreq": "weekly",
+      "priority": "0.93"
+    },
+    {
+      "id": "poster-archive",
+      "label": "Archive",
+      "file": "poster-archive.html",
+      "route": "/poster-archive",
+      "shell": "dispatch-shell",
+      "includeInSitemap": true,
+      "changefreq": "weekly",
+      "priority": "0.92"
+    },
+    {
+      "id": "planner",
+      "label": "Planner",
+      "file": "planner.html",
+      "route": "/planner",
+      "shell": "dispatch-shell",
+      "includeInSitemap": true,
+      "changefreq": "weekly",
+      "priority": "0.9"
+    },
+    {
+      "id": "rave-everywhere",
+      "label": "Everywhere",
+      "file": "rave-everywhere.html",
+      "route": "/rave-everywhere",
+      "shell": "dispatch-shell",
+      "includeInSitemap": true,
+      "changefreq": "weekly",
+      "priority": "0.88"
+    },
+    {
+      "id": "djs",
+      "label": "DJs",
+      "file": "djs.html",
+      "route": "/djs",
+      "shell": "dispatch-shell",
+      "includeInSitemap": true,
+      "changefreq": "weekly",
+      "priority": "0.85"
+    },
+    {
+      "id": "venues",
+      "label": "Venues",
+      "file": "venues.html",
+      "route": "/venues",
+      "shell": "dispatch-shell",
+      "includeInSitemap": true,
+      "changefreq": "weekly",
+      "priority": "0.8"
+    },
+    {
+      "id": "ops",
+      "label": "Ops",
+      "file": "ops.html",
+      "route": "/ops",
+      "shell": "dispatch-shell",
+      "includeInSitemap": false,
+      "utility": true
+    }
+  ],
+  "mirrors": [
+    {
+      "id": "calendar-legacy",
+      "label": "Calendar legacy mirror",
+      "file": "shanghai-rave-calendar-2026.html",
+      "mirrors": "calendar",
+      "syntaxOnly": true,
+      "shell": "calendar-shell",
+      "homepageStats": true
+    }
+  ],
+  "generatedCollections": [
+    {
+      "id": "events",
+      "directory": "events",
+      "routePrefix": "/events",
+      "sourceData": "data/events.json",
+      "generator": "scripts/generate-seo-pages.js",
+      "duplicateIndexForbidden": true,
+      "activeNav": "poster-wall",
+      "includeInSitemap": "public-only"
+    }
+  ],
+  "sharedAssets": {
+    "externalJs": [
+      "data/dj-data.js",
+      "data/tracked-dj-itineraries.js",
+      "assets/dj-trial-listen.js",
+      "assets/poster-archive.js",
+      "assets/rave-everywhere.js"
+    ]
+  }
+}

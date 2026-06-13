@@ -509,3 +509,27 @@ Verification:
 
 - `npm run check` passed after the links-only DJ listening changes.
 - Browser verification on `http://127.0.0.1:4174/djs.html#pashrawboi` confirmed the direct byyb.radio link appears before search links, the preview button is gone, and mobile layout has no page-level horizontal overflow.
+
+## 2026-06-13 Shanghai Techno Venue/DJ Database Goal
+
+The user explicitly asked to save the Shanghai techno venue and DJ database goal to project memory.
+
+Ongoing goal:
+
+- Maintain the best available Shanghai techno/rave database across venues, events, DJs, source links, confidence levels, and refresh workflow.
+- Treat the database as living source intelligence rather than a completed one-off scrape.
+- Prioritize fresh verification from RA, SmartShanghai, LocalHub, venue/promoter channels, ticketing pages, artist/radio/label pages, and credible public social sources.
+- Keep unresolved items visible through `quality.watchQueue`, `quality.venueCoverage`, `quality.djCoverage.futureProfiles`, and `quality.djCoverage.sourceUpgradeQueue`.
+
+Last validated database snapshot from the 2026-06-11 refresh:
+
+- 63 total events, 31 future events, 15 future high-confidence events, and 14 future watch events.
+- 29 venue profiles, 20 future venue profiles, and 13 future venue watch profiles.
+- 14 tracked DJ profiles, 12 curated DJ source profiles, and 40 tracked DJ itinerary rows.
+- 14 future performer profiles have profile-source coverage; 41 future performer source-upgrade targets remain.
+
+Important implementation notes:
+
+- `scripts/scrape-events.js` and `scripts/audit-events.js` use a shared performer-profile key strategy that strips format suffixes like `[Live]` and supports alias-aware profile-source coverage.
+- `config/tracked-dj-profiles.json` is the durable curated source layer for DJ profile evidence.
+- The next database improvement pass should work down `quality.djCoverage.sourceUpgradeQueue`, starting with high-fit single-source future performers such as Cosmjn, D3M3NTOR, howtodo, Josie, LaGlory, Limsum, Marcus, Matisa, Max Shen, MegaWatts, Milo Raad, and Santa K.

@@ -1,16 +1,29 @@
 const fs = require("fs");
+const {
+  readWebsiteStructure,
+  assertWebsiteStructure,
+  topLevelHtmlFiles,
+  syntaxOnlyHtmlFiles: trackedSyntaxOnlyHtmlFiles,
+  sharedDispatchHtmlFiles: trackedSharedDispatchHtmlFiles,
+  secondaryDispatchHtmlFiles: trackedSecondaryDispatchHtmlFiles,
+  homepageCalendarHtmlFiles: trackedHomepageCalendarHtmlFiles,
+  externalJsFiles: trackedExternalJsFiles,
+  sitemapPages,
+  canonicalUrl,
+} = require("./site-structure");
 
 const scriptPattern = new RegExp("<script>([\\s\\S]*?)</script>", "g");
 const jsonLdPattern = new RegExp('<script type="application/ld\\+json">([\\s\\S]*?)</script>', "g");
-const htmlFiles = ["index.html", "venues.html", "djs.html", "planner.html", "poster-wall.html", "love-wall.html", "poster-archive.html", "rave-everywhere.html", "ops.html"];
-const syntaxOnlyHtmlFiles = ["shanghai-rave-calendar-2026.html"];
+const websiteStructure = readWebsiteStructure();
+const htmlFiles = topLevelHtmlFiles(websiteStructure);
+const syntaxOnlyHtmlFiles = trackedSyntaxOnlyHtmlFiles(websiteStructure);
 const googleTrackedHtmlFiles = [...htmlFiles, ...syntaxOnlyHtmlFiles];
-const expectedGoogleTagId = "G-HP6NQ3VZB9";
-const sharedDispatchHtmlFiles = [...htmlFiles, ...syntaxOnlyHtmlFiles];
-const secondaryDispatchHtmlFiles = ["venues.html", "djs.html", "planner.html", "poster-wall.html", "love-wall.html", "poster-archive.html", "rave-everywhere.html", "ops.html"];
-const homepageCalendarHtmlFiles = ["index.html", "shanghai-rave-calendar-2026.html"];
-const externalJsFiles = ["data/dj-data.js", "data/tracked-dj-itineraries.js", "assets/dj-trial-listen.js", "assets/poster-archive.js", "assets/rave-everywhere.js"];
-const siteUrl = "https://raveindexsh.top";
+const expectedGoogleTagId = websiteStructure.site.googleTagId;
+const sharedDispatchHtmlFiles = trackedSharedDispatchHtmlFiles(websiteStructure);
+const secondaryDispatchHtmlFiles = trackedSecondaryDispatchHtmlFiles(websiteStructure);
+const homepageCalendarHtmlFiles = trackedHomepageCalendarHtmlFiles(websiteStructure);
+const externalJsFiles = trackedExternalJsFiles(websiteStructure);
+const siteUrl = websiteStructure.site.baseUrl;
 let scriptCount = 0;
 const requiredCuratedEventIds = [
   "milo-cosmjn",
@@ -333,6 +346,9 @@ function assertRootDispatchFormat(file, html) {
 }
 
 function assertGeneratedDispatchFormat(file, html) {
+  if (websiteStructure.site.eventDetailStylesheet && !html.includes(`href="../${websiteStructure.site.eventDetailStylesheet}"`)) {
+    throw new Error(`${file} must load the generated event detail stylesheet`);
+  }
   if (!html.includes('href="../assets/basement-dispatch.css"')) {
     throw new Error(`${file} must load the shared Basement Dispatch stylesheet`);
   }
@@ -397,7 +413,8 @@ function assertGeneratedSeoPages(events) {
   if (sitemap.includes(`<loc>${siteUrl}/events</loc>`)) {
     throw new Error("sitemap.xml must not list duplicate /events index; use /poster-wall");
   }
-  for (const loc of [`${siteUrl}/`, `${siteUrl}/planner`, `${siteUrl}/djs`, `${siteUrl}/venues`, `${siteUrl}/poster-wall`, `${siteUrl}/love-wall`, `${siteUrl}/poster-archive`, `${siteUrl}/rave-everywhere`]) {
+  for (const page of sitemapPages(websiteStructure)) {
+    const loc = canonicalUrl(page, websiteStructure);
     if (!sitemap.includes(`<loc>${loc}</loc>`)) {
       throw new Error(`sitemap.xml missing URL: ${loc}`);
     }
@@ -441,6 +458,8 @@ function assertGeneratedSeoPages(events) {
     }
   }
 }
+
+assertWebsiteStructure();
 
 for (const file of homepageCalendarHtmlFiles) {
   assertHomepageStatsPlacement(file, fs.readFileSync(file, "utf8"));

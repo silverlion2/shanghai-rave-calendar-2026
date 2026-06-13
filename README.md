@@ -8,6 +8,7 @@ Open `index.html` directly in a browser, or run:
 
 ```bash
 npm run scrape
+npm run structure
 npm run check
 npx serve .
 ```
@@ -45,6 +46,17 @@ V1 uses GitHub only:
 8. The workflow commits the changed data files back to the repository.
 
 No database is required for this version.
+
+## Website structure and theme
+
+The static page inventory is tracked in `config/website-structure.json`. Update that file when adding, renaming, or removing a page, then run:
+
+```bash
+npm run structure
+npm run check
+```
+
+Future pages should follow the Basement Dispatch theme contract in `docs/WEBSITE_THEME.md` and the page/routing rules in `docs/WEBSITE_STRUCTURE.md`. The shared stylesheet is `assets/basement-dispatch.css`; generated event pages also use `assets/event-detail.css` and the shared rendering helpers in `scripts/site-components.js`.
 
 X/Twitter leads are stored under `socialLeads` in `data/events.json`. They do not become calendar cards until confirmed by RA, SmartShanghai, venue/promoter, ticketing, or another stronger source.
 
