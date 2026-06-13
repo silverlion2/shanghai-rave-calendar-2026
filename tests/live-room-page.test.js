@@ -17,7 +17,7 @@ test("live room has a dedicated page outside the calendar layout", () => {
   assert.match(liveRoom, /id="todayLiveRooms"/);
   assert.match(liveRoom, /assets\/live-room-realtime\.js/);
   assert.match(liveRoom, /event-room-signal/);
-  assert.match(liveRoom, /Copy room/);
+  assert.match(liveRoom, /Copy link/);
   assert.match(liveRoom, /Join room/);
   assert.match(liveRoom, /Event page/);
   assert.match(liveRoom, /data-live-room-help/);
@@ -33,6 +33,6 @@ test("event detail pages keep a clear path back to their live room", () => {
   const generator = readSiteFile("scripts/generate-seo-pages.js");
 
   assert.match(eventDetail, /href="\.\.\/live-room\.html\?room=fengyun-5#live-room"/);
-  assert.match(eventDetail, />Live room</);
+  assert.match(eventDetail, />Tonight room</);
   assert.match(generator, /liveRoomHref/);
 });

@@ -751,3 +751,31 @@ Verification:
 Implementation note:
 
 - Manual room join now marks the hash as already handled before writing `#live-room=...`, preventing a duplicate auto-join cycle.
+
+## 2026-06-13 Shanghai Festival Data Split
+
+The user asked for Shanghai festival leads to be marked differently from normal one-night events because their structure can be multi-day and program-level rather than DJ/set-time based.
+
+Implemented state:
+
+- Festival/watch records now use `kind: "festival"` plus a structured `festival` metadata object.
+- Festival program content lives in `programHighlights`, not `lineup`, so pop/city/festival program data does not create DJ profiles, DJ set-time rows, or planner slots.
+- Added six festival/watch leads: Shanghai Tonight Night Festival, Shanghai Mushroom Music Carnival, SHENWAVE Music Festival, MISA Shanghai Summer Music Festival, Gate M West Bund Dream Center waterfront music festival, and The Magic of Tomorrowland Shanghai 2026 watch.
+- The Magic of Tomorrowland Shanghai 2026 remains a watch lead: the city source says an October return at Hero Dome, but no official Tomorrowland 2026 Shanghai date, ticket page, or lineup was found on June 13, 2026.
+- Calendar cards, calendar grid entries, modal facts, `.ics` descriptions, and generated event detail pages now render festival wording and program fields instead of DJ set-time language.
+- Generated festival pages use `Festival Program`, festival facts, and no Live Room button.
+- DJ source data excludes festival rows unless a future record explicitly sets `includeInDjCoverage: true`.
+- `scripts/check.js` now validates festival structure and rejects accidental festival `lineup` use.
+
+Verification:
+
+- `node scripts/check.js` passed.
+- `node scripts/check-site-structure.js` passed.
+- Syntax checks passed for `scripts/scrape-events.js`, `scripts/generate-seo-pages.js`, `scripts/audit-events.js`, and `scripts/check.js`.
+- Playwright render checks confirmed festival calendar markers and festival modal program rendering with no console errors.
+- Focused data check confirmed 6 festival rows in `data/events.json`, all with program metadata, and 0 festival rows in `data/dj-data.js`.
+
+Known state:
+
+- `npm run audit` is still blocked by pre-existing stale `lastChecked: 2026-06-11` future rows and tracked DJ profile source freshness gaps relative to the current date, June 13, 2026.
+- Do not fake-update those source dates without actually rechecking the source pages.

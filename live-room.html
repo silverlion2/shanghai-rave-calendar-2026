@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Shanghai Rave Live Room | Shanghai Rave Index</title>
-  <meta name="description" content="Tonight-only live rooms for sourced Shanghai rave listings, with local fallback reactions and Supabase realtime presence when configured.">
+  <title>Tonight Rooms | Shanghai Rave Index</title>
+  <meta name="description" content="Join tonight-only rooms for sourced Shanghai rave listings, copy a room link, or open the event page before you go.">
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#36c7e7">
   <link rel="canonical" href="https://raveindexsh.top/live-room">
@@ -22,18 +22,18 @@
   </script>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Shanghai Rave Index">
-  <meta property="og:title" content="Shanghai Rave Live Room | Shanghai Rave Index">
-  <meta property="og:description" content="A separate tonight-only live room for Shanghai Rave Index event signals.">
+  <meta property="og:title" content="Tonight Rooms | Shanghai Rave Index">
+  <meta property="og:description" content="Tonight-only rooms for sourced Shanghai Rave Index event updates, links, and event pages.">
   <meta property="og:url" content="https://raveindexsh.top/live-room">
   <meta property="og:image" content="https://raveindexsh.top/og-image.png">
-  <meta property="og:image:alt" content="Preview of the Shanghai Rave Index live room">
+  <meta property="og:image:alt" content="Preview of Shanghai Rave Index tonight rooms">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "Shanghai Rave Live Room | Shanghai Rave Index",
+    "name": "Tonight Rooms | Shanghai Rave Index",
     "url": "https://raveindexsh.top/live-room",
-    "description": "Tonight-only live rooms for sourced Shanghai rave listings.",
+    "description": "Join tonight-only rooms for sourced Shanghai rave listings, copy a room link, or open the event page before you go.",
     "inLanguage": "en",
     "isAccessibleForFree": true,
     "isPartOf": {
@@ -346,30 +346,30 @@
     <nav class="site-nav" aria-label="Site navigation">
       <div class="nav-group">
         <a class="nav-link" href="index.html">Calendar</a>
-        <a class="nav-link" href="poster-wall.html">Wall</a>
+        <a class="nav-link" href="poster-wall.html">Events</a>
         <a class="nav-link" href="love-wall.html">Love</a>
-        <a class="nav-link active" href="live-room.html">Live</a>
+        <a class="nav-link active" href="live-room.html">Tonight</a>
         <a class="nav-link" href="planner.html">Planner</a>
         <a class="nav-link" href="rave-everywhere.html">Everywhere</a>
         <a class="nav-link" href="venues.html">Venues</a>
         <a class="nav-link" href="djs.html">DJs</a>
         <a class="nav-link" href="account.html">Account</a>
       </div>
-      <span class="tag">Tonight signals</span>
+      <span class="tag">Tonight rooms</span>
     </nav>
 
-    <section class="live-room-hero" id="live-room" aria-label="Tonight live room">
+    <section class="live-room-hero" id="live-room" aria-label="Tonight rooms">
       <header class="live-room-title">
         <img src="assets/posters/santa-k-optimized.jpg" alt="" loading="eager" decoding="async" fetchpriority="high">
         <div class="live-room-title-copy">
-          <p class="kicker">Separate room / tonight only</p>
-          <h1>Live Room</h1>
-          <span class="dispatch-strip">Basement Dispatch / room signals</span>
-          <p>Tonight's sourced event rooms, separated from the calendar layout.</p>
+          <p class="kicker">Tonight only / event rooms</p>
+          <h1>Tonight Rooms</h1>
+          <span class="dispatch-strip">Basement Dispatch / same-day updates</span>
+          <p>Join tonight's sourced event rooms, copy a room link, or open the event page before you go.</p>
         </div>
       </header>
 
-      <section class="live-room-console" aria-label="Live room status">
+      <section class="live-room-console" aria-label="Tonight room status">
         <div class="live-room-readouts" aria-live="polite">
           <div class="live-room-readout" style="--accent: var(--cyan)">
             <b id="roomCount">--</b>
@@ -398,10 +398,10 @@
     <footer class="footnotes bottom-dispatch-bar" aria-label="Basement Dispatch status">
       <div class="bar-cell update-cell">
         <span class="footer-alert-mark" aria-hidden="true">!</span>
-        <strong>Live room<br>split out</strong>
+        <strong>Tonight rooms<br>same-day only</strong>
       </div>
       <div class="bar-cell">
-        <span>Calendar layout now links here instead of embedding the room feed.</span>
+        <span>Pick a room, check the event page, then share the room link.</span>
         <span>Room counts are local unless Supabase realtime is configured.</span>
       </div>
       <address class="bar-cell contact-cell">
@@ -415,7 +415,7 @@
         </a>
       </address>
       <div class="bar-cell">
-        <span>Signals are not official capacity, ticket, safety, or venue status.</span>
+        <span>Updates are not official capacity, ticket, safety, or venue status.</span>
         <span>Use source links before making a plan.</span>
       </div>
       <div class="bar-cell source-cell">
@@ -542,9 +542,9 @@
 
     function liveRoomHelpText(room) {
       if (room && room.eventId === activeEventLiveRoomId) {
-        return "Room selected. The URL now points here; signals post to this room only.";
+        return "Room selected. The URL now points here; updates post to this room only.";
       }
-      return "Join room selects the event room and updates the share URL. It is not a ticket or RSVP.";
+      return "Join selects the event room and updates the share URL. It is not a ticket or RSVP.";
     }
 
     function updateLiveRoomStatus() {
@@ -598,7 +598,7 @@
       const feed = eventLiveRoomFeedFor(room.eventId);
       const rows = feed.length
         ? feed.map(item => `<span><b>${escapeHtml(item.label)}</b><em>${escapeHtml(formatLiveFeedTime(item.at))}</em></span>`).join("")
-        : `<span><b>Waiting for room signals</b><em>live</em></span>`;
+        : `<span><b>Waiting for tonight updates</b><em>live</em></span>`;
       return `<div class="live-room-feed" aria-live="polite">${rows}</div>`;
     }
 
@@ -610,7 +610,7 @@
       if (!eventLiveRooms.length) {
         todayLiveRoomsEl.innerHTML = `
           <div class="live-room-empty">
-            <p>No live rooms for today's sourced events.</p>
+            <p>No tonight rooms for today's sourced events.</p>
             <a href="index.html">Open the calendar</a>
           </div>
         `;
@@ -627,7 +627,7 @@
               <span class="live-room-meta">${escapeHtml(room.venue)} / ${escapeHtml(room.time)}</span>
               <span class="live-room-status">${escapeHtml(liveRoomStateText(room))}</span>
               <span class="live-room-help" data-live-room-help>${escapeHtml(liveRoomHelpText(room))}</span>
-              <div class="live-room-actions" aria-label="${escapeHtml(room.title)} live room reactions">
+              <div class="live-room-actions" aria-label="${escapeHtml(room.title)} tonight room reactions">
                 ${eventLiveRoomReactionOptions.map(option => `
                   <button class="live-room-signal" type="button" data-live-room-reaction="${escapeHtml(option.key)}" data-live-room-id="${escapeHtml(room.eventId)}">
                     ${escapeHtml(option.label)} ${Number(counts[option.key] || 0)}
@@ -638,7 +638,7 @@
             <div class="live-room-side">
               <button class="live-room-action ${active ? "active" : ""}" type="button" data-live-room-id="${escapeHtml(room.eventId)}" aria-pressed="${active ? "true" : "false"}" aria-label="${active ? "In room" : "Join room"}: ${escapeHtml(room.title)}">${active ? "In room" : "Join room"}</button>
               <a class="live-room-action" href="events/${escapeHtml(room.eventId)}.html" aria-label="Open event page for ${escapeHtml(room.title)}">Event page</a>
-              <button class="live-room-action" type="button" data-live-room-copy="${escapeHtml(room.eventId)}">Copy room</button>
+              <button class="live-room-action" type="button" data-live-room-copy="${escapeHtml(room.eventId)}">Copy link</button>
             </div>
             ${renderLiveRoomFeed(room)}
           </article>
@@ -749,7 +749,7 @@
         updateLiveRoomStatus();
         todayLiveRoomsEl.innerHTML = `
           <div class="live-room-empty">
-            <p>Live room data did not load.</p>
+            <p>Tonight room data did not load.</p>
             <a href="index.html">Open the calendar</a>
           </div>
         `;

@@ -1,47 +1,33 @@
 # Design QA
 
-source visual truth path: `C:\Users\T480S\AppData\Local\Temp\codex-clipboard-470cdf9f-2977-4ced-ad79-743bdf4a3372.png`
-home poster strip screenshot path: `C:\Users\T480S\AppData\Local\Temp\rave-index-home-poster-rail.png`
-event wall screenshot path: `C:\Users\T480S\AppData\Local\Temp\rave-poster-wall-full-cards.png`
-bottom bar screenshot path: `C:\Users\T480S\AppData\Local\Temp\rave-bottom-bar-desktop.png`
-modal back button screenshot path: `C:\Users\T480S\AppData\Local\Temp\rave-modal-back-index.png`
-ops bottom bar screenshot path: `C:\Users\T480S\AppData\Local\Temp\rave-ops-bottom-bar-grid.png`
-viewport: 1440 x 1000 desktop plus 390 x 900 mobile spot check
-state: calendar landing screen, June 2026 active, future events visible; poster wall page, upcoming events visible
+source visual truth path: `docs/WEBSITE_THEME.md`, `docs/WEBSITE_STRUCTURE.md`, and existing pre-pass evidence in `output/product-design-audit/`
+implementation screenshot path: `output/product-design-audit/after2-desktop-index.png`, `output/product-design-audit/after2-mobile-index.png`, `output/product-design-audit/after2-mobile-live-room.png`, `output/product-design-audit/after2-mobile-account.png`, `output/product-design-audit/after2-mobile-event-detail.png`, `output/product-design-audit/after2-mobile-djs.png`
+viewport: 1440 x 1000 desktop and 390 x 844 mobile
+state: public, signed-out, default route state with local static server on `http://localhost:5173`
+full-view comparison evidence: screenshot batch plus `output/product-design-audit/after2-metrics.json`; in-app browser route metrics covered desktop and mobile tracked pages, the legacy calendar mirror, and representative generated event detail.
+focused region comparison evidence: mobile nav rails, calendar panel header actions, planner hero/source-note containment, account guide sizing, hidden share textarea, account form inputs, DJ source links, live-room actions, and event detail breadcrumbs/source trail.
 
 **Findings**
-- No actionable P0/P1/P2 findings remain.
+- No actionable P0/P1/P2 design findings remain.
+- P3 residual: desktop calendar event markers remain intentionally small dot indicators in the compact month grid. They have parallel event rows nearby, so this is accepted as an existing density constraint.
+- Non-design caveat: `npm run check` currently fails only at `scripts/audit-events.js` because event and DJ source timestamps are stale for June 13, 2026. Syntax checks, 25 node tests, structure validation, local link integrity, and inline script syntax all passed before that data freshness gate.
 
 **Required Fidelity Surfaces**
-- Fonts and typography: display typography, mono labels, uppercase nav, compact stat labels, and dense panel rows follow the supplied underground index direction.
-- Spacing and layout rhythm: the homepage keeps the poster-wall index structure while the bottom activity strip now spans the page shell as a pure poster-image rail.
-- Colors and visual tokens: palette remains black/off-white/cyan/yellow/orange, with gritty paper texture and sharp rectangular controls.
-- Homepage bottom rail: each `#homePosterRail .poster-strip-card` contains only one `img`; there are no visible titles, time labels, confidence chips, or detail text in the strip.
-- Bottom status bar: the homepage now includes the supplied reference's segmented update bar with late-update warning, daily-change note, contact block, public-source disclaimer, and Source First / Rave Second badge.
-- Compact stats panel: the homepage keeps one live 63 / 31 / 28 / 6 stats row below the poster rail; the duplicated four-row block has been removed.
-- Event modal navigation: event detail dialogs now show a prominent sticky top `Back` button so users do not have to know they can click the backdrop.
-- Bottom Ops placement: the calendar top nav no longer shows `Ops`; the bottom dispatch bar now includes a dedicated `Ops desk / Review queue ->` link to `ops.html`.
-- Standalone wall page: `poster-wall.html` now renders the previous waterfall composition as complete event cards with poster, date/time, title, venue, description, chips, source, and confidence metadata.
-
-**Evidence**
-- `npm run check` passed.
-- Desktop runtime metrics: homepage has 18 pure image poster-strip cards, 0 bad poster-strip cards, 0 extra visible text nodes in the rail, 0 broken images, and 0 horizontal overflow.
-- Desktop runtime metrics: bottom status bar has 5 cells, late-update marker, source badge, 0 broken images, and 0 horizontal overflow.
-- Desktop runtime metrics: compact stats panel has one `.stats` section, numbers 63 / 31 / 28 / 6, and no `.bottom-stat-stack` duplicate.
-- Mobile runtime metrics: bottom status bar has 5 stacked cells and 0 body overflow at 390 px.
-- Event modal runtime metrics: homepage and poster-wall modals both expose a visible top back button; clicking it closes the modal without relying on backdrop click or Escape.
-- Ops bar runtime metrics: bottom dispatch bar now has 6 cells, the Ops cell links to `ops.html`, the calendar top nav has 0 Ops links, and desktop/mobile checks report 0 horizontal overflow.
-- Desktop runtime metrics: `poster-wall.html` has 31 `.wall-card` event cards, 0 `.poster-tile` items, 31 cards with poster images, title, venue, and description, 0 broken images, and 0 horizontal overflow.
-- Mobile runtime metrics at 390 px: homepage has 18 pure image poster-strip cards and 0 body overflow; poster wall has 31 full event cards, 0 `.poster-tile` items, and 0 body overflow.
+- Fonts and typography: Basement Dispatch display/mono pairing and uppercase controls are preserved; small source controls now read as deliberate targets.
+- Spacing and layout rhythm: no measured horizontal overflow on checked desktop/mobile routes; nested planner notes now size to their panel instead of the viewport.
+- Colors and visual tokens: reused the existing black, paper, cyan, gold, ember, and muted tokens; no new visual system or palette was introduced.
+- Image quality and asset fidelity: screenshot metrics report no broken images on checked routes; poster imagery remains real local assets.
+- Copy and content: no product copy or route structure was changed.
 
 **Patches Made Since Previous QA**
-- Restored a full-width homepage bottom activity rail, but changed it to poster images only.
-- Added the reference bottom dispatch/status bar below the poster rail.
-- Removed the duplicated reference-style bottom stats block while retaining the compact live stats section.
-- Added prominent sticky back buttons to event detail modals on the calendar and poster wall pages.
-- Moved the calendar-page Ops entry from the top nav into the bottom dispatch bar.
-- Added `renderHomePosterRail()` to keep the homepage rail filter-aware and clickable without visible text details.
-- Converted `poster-wall.html` from a poster-only masonry wall into a complete event-card waterfall page.
-- Synced `shanghai-rave-calendar-2026.html` with the updated homepage.
+- `assets/basement-dispatch.css`: extended shared control sizing to live-room actions, DJ source controls, calendar shortcuts, and panel header links; raised mobile calendar nav/quick-filter/action floors; hid the share fallback textarea without measurable layout; normalized non-checkbox form input height; fixed planner nested note width; enlarged the admin utility target.
+- `assets/event-detail.css`: made generated event breadcrumbs and source-trail links proper touch targets while keeping the source-first layout.
+- `assets/account-system.css`: retained the earlier account-guide containment fixes from the first pass.
+
+**Verification**
+- `npm run structure`: passed.
+- In-app browser metrics: no horizontal overflow or broken images on checked tracked pages, legacy mirror, and event detail.
+- Playwright screenshot metrics: no horizontal overflow or broken images on the six saved screenshots listed above.
+- `npm run check`: blocked by unrelated stale event-source data in `scripts/audit-events.js`, after the code syntax/tests/site checks had passed.
 
 final result: passed

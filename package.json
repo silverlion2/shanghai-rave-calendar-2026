@@ -2,7 +2,7 @@
   "name": "shanghai-rave-index",
   "version": "1.0.0",
   "private": true,
-  "description": "Interactive Shanghai Rave Index for 2026 techno and rave events.",
+  "description": "Interactive Shanghai Rave Index for 2026 rave and underground electronic events.",
   "scripts": {
     "start": "npx serve .",
     "test:account": "node --test tests/account-system.test.js",

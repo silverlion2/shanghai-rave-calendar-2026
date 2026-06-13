@@ -16,16 +16,16 @@
   const accountFeatures = [
     {
       id: "auth-profile",
-      title: "Night passport",
+      title: "Account login",
       status: "live",
       storage: "Supabase Auth + profiles",
-      hook: "One identity for every room you care about.",
-      payoff: "Walk back in with your signal intact.",
+      hook: "One identity for saved events and preferences.",
+      payoff: "Come back without rebuilding your setup.",
       description: "Email/password and magic-link identity with a display name tied to the existing profile row.",
     },
     {
       id: "preference-sync",
-      title: "Sound memory",
+      title: "Saved preferences",
       status: "live",
       storage: "user_event_preferences",
       hook: "Your account remembers hard, bass, date, warehouse, and the rooms you trust.",
@@ -34,25 +34,25 @@
     },
     {
       id: "saved-events",
-      title: "Night vault",
+      title: "Saved events",
       status: "live",
       storage: "saved_events",
-      hook: "Lock the nights that made your pulse jump.",
+      hook: "Keep the nights you want to revisit.",
       payoff: "Your shortlist moves with your account.",
       description: "Shortlist event IDs across devices without treating saves as attendance records.",
     },
     {
       id: "for-you-ranking",
-      title: "Rave radar",
+      title: "For You ranking",
       status: "live",
       storage: "local events + account preferences",
-      hook: "A private radar that pulls the right chaos out of the calendar.",
+      hook: "Your homepage starts with better matches.",
       payoff: "The homepage starts with your strongest matches.",
-      description: "The homepage dispatch panel ranks upcoming events against the signed-in preference profile.",
+      description: "The homepage For You panel ranks upcoming events against the signed-in preference profile.",
     },
     {
       id: "itinerary-sync",
-      title: "Route blackbox",
+      title: "Saved routes",
       status: "next",
       storage: "future account_itinerary_slots",
       hook: "Save the night route before the door time panic.",
@@ -61,7 +61,7 @@
     },
     {
       id: "love-wall-identity",
-      title: "Floor name",
+      title: "Public display name",
       status: "next",
       storage: "love_wall_posts + profiles",
       hook: "Keep a stable name when you leave notes on the wall.",
@@ -70,16 +70,16 @@
     },
     {
       id: "source-alerts",
-      title: "Drop alerts",
+      title: "Event alerts",
       status: "next",
       storage: "future user_alert_rules",
       hook: "Watch venues, sounds, and saved nights without doom-scrolling.",
-      payoff: "Drop alerts when tickets, sources, or details move.",
+      payoff: "Get alerts when tickets, sources, or details move.",
       description: "Notify users when watched venues, sounds, or saved events get ticket/source changes.",
     },
     {
       id: "privacy-export",
-      title: "Data eject",
+      title: "Data export",
       status: "live",
       storage: "browser export + Supabase-owned rows",
       hook: "Your preferences should never feel trapped.",
@@ -88,7 +88,7 @@
     },
     {
       id: "moderation-role",
-      title: "Operator pass",
+      title: "Trusted contributor",
       status: "admin",
       storage: "profiles.role",
       hook: "Trusted accounts can graduate from listener to source operator.",
@@ -98,23 +98,23 @@
   ];
 
   const publicGuideBase = {
-    eyebrow: "Account signal",
-    title: "Claim your radar",
-    description: "Turn public browsing into a private dispatch: saved nights, remembered rooms, sound preferences, and exportable account data.",
+    eyebrow: "Account",
+    title: "Save your picks",
+    description: "Save events, rooms, sound preferences, and exportable account data so the next visit starts with better matches.",
     benefits: [
       "Save sounds, rooms, and source mode once",
       "Carry your shortlist across devices",
       "Open the calendar with your strongest matches first",
     ],
     href: "account.html",
-    cta: "Open account",
+    cta: "Create account",
   };
 
   const publicGuideByContext = {
     calendar: {
-      eyebrow: "Personal dispatch",
-      title: "Tune the calendar",
-      description: "Create an account so the public list starts with your sound, rooms, budget, timing, and trusted-source mode.",
+      eyebrow: "Saved picks",
+      title: "Save your picks",
+      description: "Create an account so the event list starts with your sounds, rooms, budget, timing, and trusted-source mode.",
       benefits: [
         "Rank events by your saved profile",
         "Keep shortlist saves attached to your account",
@@ -122,9 +122,9 @@
       ],
     },
     wall: {
-      eyebrow: "Poster wall upgrade",
-      title: "Save the nights that hit",
-      description: "Use an account as a night vault while scanning posters, then bring those saves back into the calendar radar.",
+      eyebrow: "Event browsing upgrade",
+      title: "Save events from this list",
+      description: "Use an account while browsing events, then bring those saves back into the calendar and For You panel.",
       benefits: [
         "Keep poster finds from getting lost",
         "Move saved events into your For You queue",
@@ -138,13 +138,13 @@
       benefits: [
         "Track the rooms you keep choosing",
         "Export saved-event context with your account",
-        "Use old patterns to tune future recommendations",
+        "Use old patterns to improve future recommendations",
       ],
     },
     planner: {
       eyebrow: "Planner upgrade",
-      title: "Route memory",
-      description: "The planner is local today; your account connects itinerary intent with saved nights, rooms, and future route sync.",
+      title: "Save future routes",
+      description: "The planner is local today; your account connects route intent with saved events, rooms, and future route sync.",
       benefits: [
         "Keep saved nights and route intent together",
         "Prepare for account-owned itinerary slots",
@@ -153,7 +153,7 @@
     },
     love: {
       eyebrow: "Love Wall identity",
-      title: "Floor name",
+      title: "Choose a display name",
       description: "Claim an account before the wall grows public: one display name, moderation-ready identity, and portable account data.",
       benefits: [
         "Carry one display name across public notes",
@@ -162,12 +162,12 @@
       ],
     },
     everywhere: {
-      eyebrow: "Travel signal",
-      title: "Take the radar with you",
+      eyebrow: "Travel preferences",
+      title: "Keep your preferences",
       description: "When you jump between cities, the account keeps your sound profile and trusted-source habits from resetting.",
       benefits: [
         "Keep hard, bass, warehouse, and date-friendly defaults",
-        "Compare travel ideas against your Shanghai signal",
+        "Compare travel ideas against your Shanghai preferences",
         "Bring saved nights back to one account map",
       ],
     },
@@ -182,7 +182,7 @@
       ],
     },
     djs: {
-      eyebrow: "Artist signal",
+      eyebrow: "Artist preferences",
       title: "Follow the sound",
       description: "Use account preferences to connect artist discovery with the sounds and rooms that should surface first.",
       benefits: [
@@ -343,14 +343,14 @@
 
   function personalizedSummary(preferences) {
     const prefs = normalizePreferences(preferences);
-    const title = `${prefs.displayName || "personal"} dispatch`;
+    const title = prefs.displayName ? `${prefs.displayName}'s picks` : "Saved picks";
     const sound = prefs.vibes.length ? prefs.vibes.join(" / ") : "all sounds";
     const rooms = prefs.venues.length ? prefs.venues.join(" / ") : "all rooms";
     const timing = prefs.timing === "any" ? "any set time" : `${prefs.timing} starts`;
     return {
       title,
       savedCount: prefs.savedEventIds.length,
-      description: `Tuned for ${sound}, ${rooms}, ${timing}.`,
+      description: `Set for ${sound}, ${rooms}, ${timing}.`,
     };
   }
 
@@ -772,23 +772,23 @@
           <aside class="account-panel account-auth-wall">
             <div class="account-panel-head">
               <span>${escapeHtml(access.label)}</span>
-              <h2>Claim your radar</h2>
-              <p>The public calendar shows the city. Your account turns it into your private night signal.</p>
+              <h2>Save your picks</h2>
+              <p>The public calendar shows every sourced listing. Your account saves the events and preferences you care about.</p>
             </div>
             <div class="account-lock-readout">
               <b>UNLOCK</b>
-              <span>Save your sound, remember your rooms, and let the calendar chase the right nights first.</span>
+              <span>Save your sounds, remember your rooms, and show better matches first.</span>
             </div>
             <div class="account-why-stack" aria-label="Account benefits">
               <span>Stop rebuilding filters every weekend</span>
               <span>Carry saved nights across devices</span>
-              <span>Turn the homepage into your rave radar</span>
+              <span>Show better matches on the homepage</span>
               <span>Export your account map any time</span>
             </div>
             ${state.error ? `<div class="account-error">${escapeHtml(state.error)}</div>` : ""}
             ${canAuthenticate ? renderAuthForm(prefs) : renderSupabaseUnavailable()}
           </aside>
-          ${renderFeatureCatalogPanel("What your account unlocks", "Not another profile page. This is a control room for finding better nights faster.")}
+          ${renderFeatureCatalogPanel("What your account saves", "Use the account to keep events, preferences, and exports in one place.")}
         </section>
       `;
     }
@@ -813,7 +813,7 @@
             <button class="button" type="button" data-account-action="sign-in">Sign in</button>
             <button class="button" type="button" data-account-action="magic-link">Email link</button>
           </div>
-          <span class="account-form-note">Supabase keeps the lock. Basement Dispatch keeps the signal sharp.</span>
+          <span class="account-form-note">Supabase handles login. Shanghai Rave Index stores your saved preferences.</span>
         </form>
       `;
     }
@@ -856,8 +856,8 @@
           <section class="account-panel account-preferences-panel">
             <div class="account-panel-head">
               <span>Personalized display</span>
-              <h2>Tune the dispatch</h2>
-              <p>These controls decide what the account-owned calendar promotes first.</p>
+              <h2>Set your preferences</h2>
+              <p>These controls decide which events the calendar promotes first.</p>
             </div>
             <div class="account-control-grid">
               <label class="account-field">
@@ -912,7 +912,7 @@
           </section>
         </section>
 
-        ${renderFeatureCatalogPanel("Your account stack", "Live tools are active now. Next tools show where this account can grow.")}
+        ${renderFeatureCatalogPanel("Your account tools", "Available tools are active now. Next tools show where this account can grow.")}
 
         <section class="account-results-grid">
           <section class="account-panel">
@@ -1199,8 +1199,8 @@
     mount.innerHTML = `
       <div class="dispatch-panel-head">
         <h2>For you</h2>
-        <span>${escapeHtml(hasPrefs ? summary.savedCount ? `${summary.savedCount} saved` : "tuned" : "not tuned")}</span>
-        <a href="account.html">Tune -></a>
+        <span>${escapeHtml(hasPrefs ? summary.savedCount ? `${summary.savedCount} saved` : "set" : "not set")}</span>
+        <a href="account.html">Save picks -></a>
       </div>
       <div class="dispatch-list account-calendar-list">
         ${hasPrefs && ranked.length ? ranked.map(item => `
@@ -1212,7 +1212,7 @@
           </button>
         `).join("") : `
           <a class="account-empty-link" href="account.html">
-            <b>Build your dispatch</b>
+            <b>Set preferences</b>
             <span>Save sounds, rooms, source mode, and budget preferences.</span>
           </a>
         `}

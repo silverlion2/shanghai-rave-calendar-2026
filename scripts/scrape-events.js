@@ -28,6 +28,10 @@ const DEFAULT_X_KEYWORDS = [
   "\"Shanghai\" rave",
   "\"Shanghai\" underground electronic",
   "\"Shanghai\" warehouse party",
+  "\"Shanghai\" house",
+  "\"Shanghai\" bass music",
+  "\"Shanghai\" trance",
+  "\"Shanghai\" club night",
   "\"Abyss Shanghai\" techno",
   "\"POTENT Shanghai\"",
   "\"EXIT Shanghai\" techno",
@@ -892,9 +896,29 @@ function ensureArray(value) {
   return String(value).split(",").map(item => item.trim()).filter(Boolean);
 }
 
+function isFestivalListing(event = {}) {
+  return normalizeEntityName(event.kind) === "festival" || Boolean(event.festival);
+}
+
+function normalizeProgramHighlights(items) {
+  if (!Array.isArray(items)) return [];
+  return items
+    .map(item => {
+      if (typeof item === "string") {
+        return { title: cleanText(item), note: "Program highlight listed by the festival source." };
+      }
+      return {
+        title: cleanText(item?.title || item?.name || item?.artist || item?.label),
+        note: cleanText(item?.note || item?.description || item?.status || ""),
+      };
+    })
+    .filter(item => item.title);
+}
+
 function normalizeEvent(event, sourceChecks) {
   const normalized = { ...event };
   normalized.id = String(normalized.id || slugify(`${normalized.sortDate}-${normalized.title}`));
+  normalized.kind = cleanText(normalized.kind || (normalized.festival ? "festival" : "event"));
   normalized.vibe = ensureArray(normalized.vibe);
   normalized.month = normalized.month || monthCodeFromDate(normalized.sortDate);
   normalized.source = normalizeUrl(normalized.source);
@@ -909,6 +933,14 @@ function normalizeEvent(event, sourceChecks) {
     status: normalized.sourceStatus,
     lastChecked: normalized.lastChecked,
   }];
+  if (normalized.programHighlights !== undefined) {
+    const highlights = normalizeProgramHighlights(normalized.programHighlights);
+    if (highlights.length) {
+      normalized.programHighlights = highlights;
+    } else {
+      delete normalized.programHighlights;
+    }
+  }
   if (normalized.lineup !== undefined) {
     const lineup = auditedLineupItems(normalized.lineup, normalized);
     if (lineup.length) {
@@ -959,7 +991,8 @@ function mergeEvents(seedEvents, scrapedEvents) {
 
 function isCalendarFit(event) {
   const text = [event.title, event.venue, event.genre, event.description].join(" ").toLowerCase();
-  const positive = /\b(techno|rave|electronic|electro|acid|industrial|ebm|trance|ambient|idm|bass|warehouse|a\/v|experimental)\b/.test(text);
+  const positive = /\b(techno|rave|electronic|electro|acid|industrial|ebm|trance|ambient|idm|bass|warehouse|a\/v|experimental|club music|hard dance|breaks?|jungle|ukg|garage|dubstep|ghettotech|baile funk|minimal|nu-disco)\b/.test(text)
+    || (/\bhouse\b/.test(text) && /\b(dj|club|rave|dance|dancefloor|electronic|music|selector|lineup|venue|promoter)\b/.test(text));
   const negative = /\b(girls night|pool party|disco ball|disco night|afrowave|sunset sessions)\b/.test(text);
   return positive && !negative;
 }
@@ -1055,9 +1088,9 @@ function technoFitScore(event) {
   let score = 0;
   if (/(hard techno|acid techno|industrial techno|warehouse rave|abyss|system|turbo|lethal distortion)/.test(text)) {
     score += 3;
-  } else if (/\b(techno|acid|industrial|ebm|electro|trance)\b/.test(text)) {
+  } else if (/\b(techno|acid|industrial|ebm|electro|trance|house|breaks?|jungle|ukg|garage|dubstep|ghettotech|hard dance)\b/.test(text)) {
     score += 2;
-  } else if (/(club music|bass|experimental|ambient|a\/v|darkwave|minimal wave|cold wave|post-punk)/.test(text)) {
+  } else if (/(club music|bass|experimental|ambient|a\/v|darkwave|minimal wave|cold wave|post-punk|minimal|nu-disco|baile funk)/.test(text)) {
     score += 1;
   }
   if (/\b(abyss|potent|exit|illum|heim|dirty house|reactor|fenrir|wigwam|specters)\b/.test(text)) score += 1;
@@ -1076,7 +1109,11 @@ function watchPriority(event) {
 function watchReason(event) {
   const notes = [];
   if (eventSourceCount(event) <= 1) notes.push("single-source");
-  if (!event.lineup || event.lineup.length === 0) notes.push("lineup missing");
+  if (isFestivalListing(event) && event.includeInDjCoverage !== true) {
+    if (!Array.isArray(event.programHighlights) || event.programHighlights.length === 0) notes.push("program details missing");
+  } else if (!event.lineup || event.lineup.length === 0) {
+    notes.push("lineup missing");
+  }
   if (!event.ticketStatus) notes.push("ticket status missing");
   if (/tba|not found|not listed|only the/i.test(String(event.ticketStatus || event.description || ""))) {
     notes.push("needs source upgrade");
@@ -1085,6 +1122,9 @@ function watchReason(event) {
 }
 
 function watchNextAction(event, priority) {
+  if (isFestivalListing(event) && event.includeInDjCoverage !== true) {
+    return "Confirm exact dates, program, ticketing, and a direct official festival source before promotion.";
+  }
   if (priority === "high") {
     return eventSourceCount(event) <= 1
       ? "Prioritize direct venue, promoter, ticketing, RA, or official artist evidence before promotion."
@@ -1187,6 +1227,7 @@ function buildDjCoverage(events, auditDate, djItineraryStats = {}) {
   const byArtist = new Map();
   const trackedProfileSourceCounts = djItineraryStats.profileSourceCounts || {};
   for (const event of events) {
+    if (isFestivalListing(event) && event.includeInDjCoverage !== true) continue;
     const isFuture = String(event.sortDate || "") >= auditDate;
     const eventUrls = sourceUrlsForEvent(event);
     for (const item of auditedLineupItems(event.lineup || [], event)) {
@@ -1278,7 +1319,7 @@ function buildQualitySnapshot(events, sources, auditDate, curatedEventsApplied, 
   const failedSourceReports = sources.filter(source => source.ok === false);
   const staleFuture = future.filter(event => String(event.lastChecked || "") < auditDate);
   const missingTicketStatus = future.filter(event => !String(event.ticketStatus || "").trim());
-  const highMissingLineup = futureHigh.filter(event => !Array.isArray(event.lineup) || event.lineup.length === 0);
+  const highMissingLineup = futureHigh.filter(event => !isFestivalListing(event) && (!Array.isArray(event.lineup) || event.lineup.length === 0));
   const singleSourceWatch = futureWatch.filter(event => eventSourceCount(event) <= 1);
   const watchQueue = futureWatch.map(event => ({
     event,
@@ -1389,6 +1430,7 @@ function writeDjSourceData(events) {
   const existing = readExistingDjSourceData();
   const eventById = new Map(events.map(event => [event.id, event]));
   const existingEventById = new Map((existing.events || []).map(event => [event.id, event]));
+  const djEvents = events.filter(event => !isFestivalListing(event) || event.includeInDjCoverage === true);
   const lineups = {};
   const mergeLineupItems = (first, second) => {
     const merged = [];
@@ -1405,11 +1447,13 @@ function writeDjSourceData(events) {
 
   for (const [eventId, items] of Object.entries(existing.lineups || {})) {
     const event = eventById.get(eventId) || existingEventById.get(eventId) || { id: eventId };
+    if (isFestivalListing(event) && event.includeInDjCoverage !== true) continue;
     const audited = auditedLineupItems(items, event);
     if (audited.length) lineups[eventId] = audited;
   }
 
   for (const event of events) {
+    if (isFestivalListing(event) && event.includeInDjCoverage !== true) continue;
     const audited = auditedLineupItems(event.lineup || [], event);
     if (!audited.length) continue;
     lineups[event.id] = mergeLineupItems(lineups[event.id] || [], audited);
@@ -1419,7 +1463,7 @@ function writeDjSourceData(events) {
     generatedAt: shanghaiDateString(),
     externalDataPath: "data/events.json",
     calendarPath: "index.html",
-    events,
+    events: djEvents,
     lineups,
   };
   fs.writeFileSync(DJ_DATA_FILE, `window.DJ_SOURCE_DATA = ${JSON.stringify(payload)};\n`);
@@ -1459,6 +1503,7 @@ function tourSourceLabel(item, event, url) {
 }
 
 function artistNamesForTourItem(item, event) {
+  if (isFestivalListing(event) && event.includeInDjCoverage !== true) return [];
   const explicit = splitEntityNames(item.artist || item.name || item.dj || item.performer || item.artistName);
   if (explicit.length) return explicit.filter(name => !isNonPerformerName(name, item, event));
   const lineup = auditedLineupItems(event.lineup || [], event);

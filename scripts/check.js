@@ -302,6 +302,42 @@ function isPublicSeoEvent(event = {}) {
   return event.status !== "watch" && event.sourceStatus !== "watchlist" && event.confidence !== "Watch";
 }
 
+function isFestivalEvent(event = {}) {
+  return String(event.kind || "").toLowerCase() === "festival" || Boolean(event.festival);
+}
+
+function assertProgramHighlights(event, contextLabel) {
+  if (event.programHighlights === undefined) return;
+  if (!Array.isArray(event.programHighlights) || event.programHighlights.length === 0) {
+    throw new Error(`${contextLabel} ${event.id} programHighlights must be a non-empty array when present`);
+  }
+  for (const item of event.programHighlights) {
+    const title = typeof item === "string" ? item : item?.title || item?.name || item?.artist;
+    if (!String(title || "").trim()) {
+      throw new Error(`${contextLabel} ${event.id} has a program highlight without a title`);
+    }
+  }
+}
+
+function assertFestivalStructure(event, contextLabel) {
+  if (event.kind !== undefined && !["event", "festival"].includes(String(event.kind))) {
+    throw new Error(`${contextLabel} ${event.id} kind must be event or festival`);
+  }
+  assertProgramHighlights(event, contextLabel);
+  if (!isFestivalEvent(event)) return;
+  if (!event.festival || typeof event.festival !== "object" || Array.isArray(event.festival)) {
+    throw new Error(`${contextLabel} ${event.id} must include a festival metadata object`);
+  }
+  for (const field of ["format", "dateWindow", "programStatus", "ticketingStatus"]) {
+    if (!String(event.festival[field] || "").trim()) {
+      throw new Error(`${contextLabel} ${event.id} festival metadata missing ${field}`);
+    }
+  }
+  if (event.lineup !== undefined && event.includeInDjCoverage !== true) {
+    throw new Error(`${contextLabel} ${event.id} must use programHighlights instead of lineup unless includeInDjCoverage is true`);
+  }
+}
+
 function assertSeoHeadMarkers(file, html) {
   for (const required of [
     '<meta name="description"',
@@ -864,6 +900,9 @@ if (fs.existsSync("data/dj-data.js")) {
   if (!djSourceData || !Array.isArray(djSourceData.events)) {
     throw new Error("data/dj-data.js must expose window.DJ_SOURCE_DATA.events");
   }
+  if (djSourceData.events.some(event => isFestivalEvent(event) && event.includeInDjCoverage !== true)) {
+    throw new Error("data/dj-data.js must exclude festival rows unless includeInDjCoverage is true");
+  }
   assertNoNonPerformerLineups(djSourceData.events, djSourceData.lineups || {});
 }
 
@@ -1051,16 +1090,16 @@ const loveWallRequirements = [
 ];
 
 const liveRoomRequirements = [
-  { file: "index.html", text: 'href="live-room.html"', label: "calendar Live Room link" },
-  { file: "shanghai-rave-calendar-2026.html", text: 'href="live-room.html"', label: "archive Live Room link" },
-  { file: "live-room.html", text: "Shanghai Rave Live Room", label: "Live Room page title" },
-  { file: "live-room.html", text: "assets/live-room-realtime.js", label: "Live Room realtime helper" },
-  { file: "live-room.html", text: 'id="todayLiveRooms"', label: "Live Room room mount" },
-  { file: "live-room.html", text: "event-room-signal", label: "Live Room signal broadcast" },
-  { file: "live-room.html", text: "event-room-reaction", label: "Live Room reaction broadcast" },
-  { file: "live-room.html", text: "Copy room", label: "Live Room share action" },
-  { file: "live-room.html", text: "data/events.json", label: "Live Room event data loader" },
-  { file: "sitemap.xml", text: `${siteUrl}/live-room`, label: "Live Room sitemap URL" },
+  { file: "index.html", text: 'href="live-room.html"', label: "calendar Tonight link" },
+  { file: "shanghai-rave-calendar-2026.html", text: 'href="live-room.html"', label: "archive Tonight link" },
+  { file: "live-room.html", text: "Tonight Rooms", label: "Tonight Rooms page title" },
+  { file: "live-room.html", text: "assets/live-room-realtime.js", label: "Tonight Rooms realtime helper" },
+  { file: "live-room.html", text: 'id="todayLiveRooms"', label: "Tonight Rooms room mount" },
+  { file: "live-room.html", text: "event-room-signal", label: "Tonight Rooms signal broadcast" },
+  { file: "live-room.html", text: "event-room-reaction", label: "Tonight Rooms reaction broadcast" },
+  { file: "live-room.html", text: "Copy link", label: "Tonight Rooms share action" },
+  { file: "live-room.html", text: "data/events.json", label: "Tonight Rooms event data loader" },
+  { file: "sitemap.xml", text: `${siteUrl}/live-room`, label: "Tonight Rooms sitemap URL" },
 ];
 
 const accountRequirements = [
@@ -1073,8 +1112,8 @@ const accountRequirements = [
   { file: "venues.html", text: 'href="account.html"', label: "venues Account link" },
   { file: "djs.html", text: 'href="account.html"', label: "DJ database Account link" },
   { file: "ops.html", text: 'href="account.html"', label: "ops Account link" },
-  { file: "account.html", text: "Personal Dispatch", label: "account page title" },
-  { file: "account.html", text: "Your rave signal lives here", label: "account value proposition copy" },
+  { file: "account.html", text: "Save Your Picks", label: "account page title" },
+  { file: "account.html", text: "Saved events and preferences live here", label: "account value proposition copy" },
   { file: "account.html", text: "data-account-app", label: "account app mount" },
   { file: "account.html", text: "assets/account-system.js", label: "account browser module" },
   { file: "account.html", text: "assets/account-system.css", label: "account styles" },
@@ -1169,6 +1208,7 @@ if (fs.existsSync("data/events.json")) {
     if (!Array.isArray(event.vibe) || event.vibe.length === 0) {
       throw new Error(`event ${event.id} must have at least one vibe in data/events.json`);
     }
+    assertFestivalStructure(event, "event");
     assertLocalPosterAsset(event, "event");
   }
   assertNoNonPerformerLineups(events);
@@ -1301,6 +1341,7 @@ if (fs.existsSync("config/curated-events.json")) {
         }
       }
     }
+    assertFestivalStructure(event, "curated event");
 
     if (event.lineup !== undefined) {
       if (!Array.isArray(event.lineup) || event.lineup.length === 0) {

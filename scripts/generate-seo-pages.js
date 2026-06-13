@@ -86,11 +86,37 @@ function normalizedLineup(event) {
     .filter(item => item.name);
 }
 
+function isFestival(event = {}) {
+  return String(event.kind || "").toLowerCase() === "festival" || Boolean(event.festival);
+}
+
+function formatLabel(event) {
+  if (isFestival(event)) return event.status === "watch" ? "festival watch" : "festival";
+  return event.status || "event";
+}
+
+function programHighlights(event) {
+  const rows = Array.isArray(event.programHighlights) ? event.programHighlights : [];
+  return rows
+    .map(item => {
+      if (typeof item === "string") return { title: item, note: "Program highlight listed by the festival source." };
+      return {
+        title: String(item?.title || item?.name || item?.artist || "").trim(),
+        note: String(item?.note || item?.description || "").trim(),
+      };
+    })
+    .filter(item => item.title);
+}
+
 function renderEventPage(event) {
   const isPublic = isPublicEvent(event);
+  const festival = isFestival(event);
   const canonical = eventUrl(event);
   const image = imageUrl(event);
   const liveRoomHref = `../live-room.html?room=${encodeURIComponent(event.id)}#live-room`;
+  const primaryActionHref = event.ticketUrl || event.detailsUrl || event.source || "#";
+  const sourceActionHref = event.detailsUrl || event.source || "";
+  const showSourceAction = Boolean(event.ticketUrl && sourceActionHref && sourceActionHref !== primaryActionHref);
   const schemaNodes = [
     websiteSchema(siteStructure),
     {
@@ -105,7 +131,7 @@ function renderEventPage(event) {
     },
     breadcrumbSchema([
       ["Home", SITE_URL],
-      ["Wall", `${SITE_URL}/poster-wall`],
+      ["Events", `${SITE_URL}/poster-wall`],
       [event.title, canonical],
     ]),
   ];
@@ -130,20 +156,20 @@ function renderEventPage(event) {
         <nav class="crumbs" aria-label="Breadcrumb">
           <a href="../index.html">Calendar</a>
           <span>/</span>
-          <a href="../poster-wall.html">Wall</a>
+          <a href="../poster-wall.html">Events</a>
           <span>/</span>
           <span>${escapeHtml(event.title)}</span>
         </nav>
-        <article class="event-detail ${isPublic ? "" : "watch-detail"}">
+        <article class="event-detail ${isPublic ? "" : "watch-detail"} ${festival ? "festival-detail" : ""}">
           <header class="event-hero">
             <div>
-              <p class="kicker">${escapeHtml(event.status || "event")} / ${escapeHtml(event.confidence || "source checked")}</p>
+              <p class="kicker">${escapeHtml(formatLabel(event))} / ${escapeHtml(event.confidence || "source checked")}</p>
               <h1>${escapeHtml(event.title)}</h1>
               <p class="lede">${escapeHtml(event.description || "Public event listing; confirm final details at the source before planning.")}</p>
               <div class="action-row">
-                <a class="button primary" href="${escapeAttr(event.ticketUrl || event.detailsUrl || event.source || "#")}" target="_blank" rel="noopener noreferrer">${escapeHtml(ticketLabel(event))}</a>
-                <a class="button secondary" href="${escapeAttr(event.detailsUrl || event.source || "#")}" target="_blank" rel="noopener noreferrer">Source</a>
-                <a class="button secondary live-room-return" href="${escapeAttr(liveRoomHref)}">Live room</a>
+                <a class="button primary" href="${escapeAttr(primaryActionHref)}" target="_blank" rel="noopener noreferrer">${escapeHtml(ticketLabel(event))}</a>
+                ${showSourceAction ? `<a class="button secondary" href="${escapeAttr(sourceActionHref)}" target="_blank" rel="noopener noreferrer">Source</a>` : ""}
+                ${festival ? "" : `<a class="button secondary live-room-return" href="${escapeAttr(liveRoomHref)}">Tonight room</a>`}
                 <a class="button secondary" href="../index.html">Calendar</a>
               </div>
             </div>
@@ -153,18 +179,11 @@ function renderEventPage(event) {
             </figure>
           </header>
           <section class="facts" aria-label="Event facts">
-            ${fact("Date", event.date || event.sortDate)}
-            ${fact("Time", event.time || "Check source")}
-            ${fact("Venue", event.venue || "Shanghai")}
-            ${fact("District", event.district || "Shanghai")}
-            ${fact("Sound", event.genre || "electronic")}
-            ${fact("Price", event.price || "Check source")}
-            ${fact("Age / ID", event.age || "Check venue")}
-            ${fact("Source layer", event.sourceStatus || event.confidence || "source checked")}
+            ${festival ? festivalFacts(event) : eventFacts(event)}
           </section>
           <section class="copy-block">
-            <h2>Lineup and Notes</h2>
-            ${event.lineup.length ? `
+            <h2>${festival ? "Festival Program" : "Lineup and Notes"}</h2>
+            ${festival ? festivalProgramHtml(event) : event.lineup.length ? `
               <ul class="lineup-list">
                 ${event.lineup.map(item => `<li><b>${escapeHtml(item.name)}</b><span>${escapeHtml(item.note || "Listed by the event source; confirm set time before planning.")}</span></li>`).join("")}
               </ul>
@@ -175,7 +194,7 @@ function renderEventPage(event) {
             <ul class="source-list">
               ${sourceRows(event)}
             </ul>
-            ${isPublic ? "" : `<p class="watch-note">This lead is intentionally noindexed until a direct venue, promoter, ticketing, RA, SmartShanghai detail, or official artist source confirms the details.</p>`}
+            ${isPublic ? "" : `<p class="watch-note">${festival ? "This festival lead is intentionally noindexed until exact dates, tickets, lineup, or a direct official source confirms the details." : "This lead is intentionally noindexed until a direct venue, promoter, ticketing, RA, SmartShanghai detail, or official artist source confirms the details."}</p>`}
           </section>
         </article>
         ${sharedFooter("../")}
@@ -216,6 +235,50 @@ function sharedFooter(prefix = "") {
 
 function fact(label, value) {
   return `<div class="fact"><span>${escapeHtml(label)}</span><b>${escapeHtml(value || "Check source")}</b></div>`;
+}
+
+function eventFacts(event) {
+  return [
+    fact("Date", event.date || event.sortDate),
+    fact("Time", event.time || "Check source"),
+    fact("Venue", event.venue || "Shanghai"),
+    fact("District", event.district || "Shanghai"),
+    fact("Sound", event.genre || "electronic"),
+    fact("Price", event.price || "Check source"),
+    fact("Age / ID", event.age || "Check venue"),
+    fact("Source layer", event.sourceStatus || event.confidence || "source checked"),
+  ].join("");
+}
+
+function festivalFacts(event) {
+  const festival = event.festival || {};
+  return [
+    fact("Kind", "Festival / multi-event lead"),
+    fact("Date window", festival.dateWindow || event.date || event.sortDate),
+    fact("Program time", event.time || "TBA"),
+    fact("Venue / area", event.venue || "Shanghai"),
+    fact("Format", festival.format || event.genre || "Festival"),
+    fact("Program status", festival.programStatus || "Program details need confirmation"),
+    fact("Ticketing", festival.ticketingStatus || event.ticketStatus || event.price || "Check source"),
+    fact("Source layer", event.sourceStatus || event.confidence || "source checked"),
+  ].join("");
+}
+
+function festivalProgramHtml(event) {
+  const highlights = programHighlights(event);
+  const festival = event.festival || {};
+  const summaryRows = [
+    festival.dateStatus ? ["Date status", festival.dateStatus] : null,
+    festival.acquisitionUse ? ["Acquisition use", festival.acquisitionUse] : null,
+  ].filter(Boolean);
+  return `
+    ${summaryRows.length ? `<div class="program-summary">${summaryRows.map(([label, value]) => `<p><b>${escapeHtml(label)}</b><span>${escapeHtml(value)}</span></p>`).join("")}</div>` : ""}
+    ${highlights.length ? `
+      <ul class="lineup-list program-list">
+        ${highlights.map(item => `<li><b>${escapeHtml(item.title)}</b><span>${escapeHtml(item.note || "Program highlight listed by the festival source.")}</span></li>`).join("")}
+      </ul>
+    ` : `<p>Festival program details are still limited. Use the source trail before treating dates, lineups, or ticketing as final.</p>`}
+  `;
 }
 
 function sourceRows(event) {
@@ -449,9 +512,9 @@ function parsePrice(value) {
 }
 
 function ticketLabel(event) {
-  if (event.status === "watch" || event.sourceStatus === "watchlist") return "Verify Source";
+  if (event.status === "watch" || event.sourceStatus === "watchlist") return "Verify source";
   if (event.ticketUrl) return "Tickets";
-  return "Event Source";
+  return "Source page";
 }
 
 function metaDescription(event) {

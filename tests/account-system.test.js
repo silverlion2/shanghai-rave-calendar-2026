@@ -146,7 +146,7 @@ test("personalizedSummary describes the active account display", () => {
     savedEventIds: ["saved-bass"],
   }));
 
-  assert.equal(summary.title, "front left dispatch");
+  assert.equal(summary.title, "front left's picks");
   assert.equal(summary.savedCount, 1);
   assert.match(summary.description, /bass \/ underground/);
   assert.match(summary.description, /System/);
@@ -231,8 +231,8 @@ test("accountFeatureCatalog lists live Supabase features and account expansion p
   ]);
   assert.ok(features.filter(feature => feature.status === "live").length >= 4);
   assert.ok(features.every(feature => feature.title && feature.hook && feature.payoff && feature.description && feature.storage));
-  assert.ok(features.find(feature => feature.id === "for-you-ranking").hook.includes("radar"));
-  assert.ok(features.find(feature => feature.id === "source-alerts").payoff.includes("Drop"));
+  assert.ok(features.find(feature => feature.id === "for-you-ranking").hook.includes("better matches"));
+  assert.ok(features.find(feature => feature.id === "source-alerts").payoff.includes("Get alerts"));
   assert.ok(features.find(feature => feature.id === "saved-events").storage.includes("saved_events"));
 });
 
@@ -241,11 +241,11 @@ test("publicAccountGuide tailors account prompts for non-login pages", () => {
   const loveGuide = publicAccountGuide("love");
   const defaultGuide = publicAccountGuide("unknown-page");
 
-  assert.equal(plannerGuide.title, "Route memory");
-  assert.ok(plannerGuide.description.includes("itinerary"));
+  assert.equal(plannerGuide.title, "Save future routes");
+  assert.ok(plannerGuide.description.includes("route intent"));
   assert.ok(plannerGuide.benefits.includes("Keep saved nights and route intent together"));
-  assert.equal(loveGuide.title, "Floor name");
+  assert.equal(loveGuide.title, "Choose a display name");
   assert.ok(loveGuide.benefits.includes("Carry one display name across public notes"));
-  assert.equal(defaultGuide.title, "Claim your radar");
+  assert.equal(defaultGuide.title, "Save your picks");
   assert.equal(defaultGuide.href, "account.html");
 });

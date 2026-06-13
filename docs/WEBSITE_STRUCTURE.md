@@ -18,6 +18,7 @@ This project is a static, source-first event site. The tracked structure lives i
 | `calendar` | `index.html` | `/` | `calendar-shell` | yes |
 | `poster-wall` | `poster-wall.html` | `/poster-wall` | `dispatch-shell` | yes |
 | `love-wall` | `love-wall.html` | `/love-wall` | `dispatch-shell` | yes |
+| `live-room` | `live-room.html` | `/live-room` | `dispatch-shell` | yes |
 | `planner` | `planner.html` | `/planner` | `dispatch-shell` | yes |
 | `rave-everywhere` | `rave-everywhere.html` | `/rave-everywhere` | `dispatch-shell` | yes |
 | `djs` | `djs.html` | `/djs` | `dispatch-shell` | yes |
@@ -27,7 +28,7 @@ This project is a static, source-first event site. The tracked structure lives i
 
 `shanghai-rave-calendar-2026.html` is tracked as a legacy calendar mirror. It is syntax-checked and must keep the shared theme and homepage stats placement, but it is not a separate sitemap route.
 
-`poster-wall.html` is the single public poster/event browsing surface. The legacy `/poster-archive` route redirects to `/poster-wall`; `data/poster-archive.json` remains as generated poster metadata for compression and Supabase import workflows.
+`poster-wall.html` is labeled `Events` in customer-facing navigation and remains the single public poster/event browsing surface. `live-room.html` is labeled `Tonight` and owns the same-day room flow. The legacy `/poster-archive` route redirects to `/poster-wall`; `data/poster-archive.json` remains as generated poster metadata for compression and Supabase import workflows.
 
 ## Generated Collections
 
@@ -35,7 +36,7 @@ The `events/` detail pages are generated from `data/events.json` by `scripts/gen
 
 - Public, source-backed events are included in `sitemap.xml`.
 - Watchlist events stay `noindex` and are omitted from `sitemap.xml`.
-- `events/index.html` must not exist; `poster-wall.html` is the crawlable wall/index surface.
+- `events/index.html` must not exist; `poster-wall.html` is the crawlable Events index surface.
 - Generated event pages must load `../assets/basement-dispatch.css`, use `dispatch-shell`, and include the Basement Dispatch footer.
 - Generated event pages must also load `../assets/event-detail.css`; that file owns the base detail-page layout before the shared Basement Dispatch theme override.
 - Generated head, navigation, footer, and WebSite schema should come from `scripts/site-components.js` rather than inline generator copies.
@@ -47,8 +48,9 @@ The `events/` detail pages are generated from `data/events.json` by `scripts/gen
 3. Add the page ID to `primaryNav` only if it should appear in the main public nav.
 4. Add route-specific feature checks to `scripts/check.js` only when the page introduces behavior that can drift.
 5. If the page is generated, reuse `scripts/site-components.js` for head, nav, footer, and schema.
-6. Run `npm run structure`.
-7. Run `npm run check`.
+6. Use customer-facing labels in primary navigation. Prefer action/task labels such as `Events` and `Tonight` over internal metaphors.
+7. Run `npm run structure`.
+8. Run `npm run check`.
 
 ## Commands
 

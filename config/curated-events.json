@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-11",
+  "updatedAt": "2026-06-13",
   "timezone": "Asia/Shanghai",
   "collectionMethod": "Agent-operated Chrome/Computer Use style browser verification for anti-bot, image-heavy, ticketing, and second-layer event pages; public source URLs are preserved when available.",
   "events": [
@@ -1444,6 +1444,387 @@
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
           "lastChecked": "2026-06-11"
+        }
+      ]
+    },
+    {
+      "id": "shanghai-mushroom-music-carnival-2026",
+      "kind": "festival",
+      "month": "Jun",
+      "sortDate": "2026-06-27",
+      "date": "Jun 27",
+      "time": "Check ticketing",
+      "title": "2026 Shanghai Mushroom Music Carnival",
+      "venue": "Qiantan Sports Park",
+      "district": "Pudong",
+      "vibe": [
+        "date"
+      ],
+      "genre": "mainland pop, music festival, carnival",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "298 / 398 / 498 / 698 RMB",
+      "age": "Check ticketing",
+      "source": "https://www.sina.cn/news/detail/5304003900477751.html",
+      "sourceLabel": "Sina / official Weibo mirror",
+      "imageTheme": "gold",
+      "description": "Large Qiantan Sports Park pop festival with official ticket channels on Damai, Maoyan, and Ticket Planet. Low techno fit, but useful for Jun 27 festival-weekend search demand and afterparty-routing content.",
+      "sourceStatus": "watchlist",
+      "address": "Qiantan Sports Park, Pudong, Shanghai",
+      "organizer": "Mushroom Music Carnival",
+      "detailsUrl": "https://www.sina.cn/news/detail/5304003900477751.html",
+      "ticketUrl": "https://www.sina.cn/news/detail/5304003900477751.html",
+      "festival": {
+        "format": "single-day outdoor music carnival",
+        "dateWindow": "2026-06-27",
+        "dateStatus": "confirmed date from official Weibo mirror",
+        "programStatus": "announced pop lineup; not a DJ set-time record",
+        "ticketingStatus": "presale announced through Damai, Maoyan, and Ticket Planet",
+        "acquisitionUse": "broad festival search demand and afterparty-routing content"
+      },
+      "programHighlights": [
+        {
+          "title": "Gem",
+          "note": "Sina's official Weibo mirror lists Gem among the announced artists."
+        },
+        {
+          "title": "Ma Qiuyuan",
+          "note": "Sina's official Weibo mirror lists Ma Qiuyuan among the announced artists."
+        },
+        {
+          "title": "Wang Yuzhou Leto",
+          "note": "Sina's official Weibo mirror lists Wang Yuzhou Leto among the announced artists."
+        },
+        {
+          "title": "Yu Yan",
+          "note": "Sina's official Weibo mirror lists Yu Yan among the announced artists."
+        },
+        {
+          "title": "Yu Yuhan",
+          "note": "Sina's official Weibo mirror lists Yu Yuhan among the announced artists."
+        },
+        {
+          "title": "Zhang Junhao",
+          "note": "Sina's official Weibo mirror lists Zhang Junhao among the announced artists."
+        },
+        {
+          "title": "Zhang Xincheng",
+          "note": "Sina's official Weibo mirror lists Zhang Xincheng among the announced artists."
+        }
+      ],
+      "ticketStatus": "Official Weibo mirror says presale opened May 31 at 19:00 through Damai, Maoyan, and Ticket Planet, with 298/398/498/698 RMB tiers. Recheck ticketing before any purchase CTA.",
+      "contentOpportunity": "Use as a broad Jun 27 festival-search hook, then route readers to Youshan warmup, EXIT, POTENT, Abyss, or late-night underground alternatives.",
+      "addedAt": "2026-06-13",
+      "lastChecked": "2026-06-13",
+      "sources": [
+        {
+          "label": "Sina / official Weibo mirror",
+          "url": "https://www.sina.cn/news/detail/5304003900477751.html",
+          "status": "watchlist",
+          "lastChecked": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "id": "misa-shanghai-summer-music-festival-2026",
+      "kind": "festival",
+      "month": "Jul",
+      "sortDate": "2026-07-05",
+      "date": "Jul 5-20",
+      "time": "Multiple programs",
+      "title": "2026 Shanghai Summer Music Festival (MISA)",
+      "venue": "Shanghai Symphony Hall / citywide venues",
+      "district": "Xuhui / citywide",
+      "vibe": [
+        "date",
+        "experimental"
+      ],
+      "genre": "classical crossover, jazz, film music, contemporary art",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "Check MISA ticketing",
+      "age": "Check program",
+      "source": "https://whlyj.sh.gov.cn/yshd/20260603/d869d0cd8b24484f935c5b7a9eead459.html",
+      "sourceLabel": "Shanghai Municipal Administration of Culture and Tourism",
+      "imageTheme": "cyan",
+      "description": "Official city culture source lists the 2026 MISA season from Jul 5 to Jul 20 with 33 live performances plus online MISA. Low rave fit, but valuable for a broader Shanghai summer music SEO and culture-night funnel.",
+      "sourceStatus": "watchlist",
+      "address": "Shanghai Symphony Hall and related city venues",
+      "organizer": "Shanghai Symphony Orchestra / Shanghai education and culture partners",
+      "detailsUrl": "https://whlyj.sh.gov.cn/yshd/20260603/d869d0cd8b24484f935c5b7a9eead459.html",
+      "ticketUrl": "https://whlyj.sh.gov.cn/yshd/20260603/d869d0cd8b24484f935c5b7a9eead459.html",
+      "festival": {
+        "format": "multi-day city culture festival",
+        "dateWindow": "2026-07-05 to 2026-07-20",
+        "dateStatus": "confirmed official city culture announcement",
+        "programStatus": "33 live performances plus online MISA; program-specific pages needed",
+        "ticketingStatus": "first-round ticket sales announced; program-level availability needs checking",
+        "acquisitionUse": "Shanghai summer music SEO and culture-night funnel"
+      },
+      "programHighlights": [
+        {
+          "title": "Classical crossover season",
+          "note": "Official city culture source describes a 33-performance season spanning classical crossover, jazz, film music, dance, theatre, and contemporary art."
+        },
+        {
+          "title": "Online MISA",
+          "note": "The official announcement says the live program is paired with online MISA."
+        }
+      ],
+      "ticketStatus": "Official city culture source says first-round ticket sales began Jun 3 at 13:00. Program-specific ticket links and availability need rechecking before promotion.",
+      "contentOpportunity": "Use for a Shanghai summer music calendar page and cross-over posts for film music, jazz, contemporary art, and date-night audiences.",
+      "addedAt": "2026-06-13",
+      "lastChecked": "2026-06-13",
+      "sources": [
+        {
+          "label": "Shanghai Municipal Administration of Culture and Tourism",
+          "url": "https://whlyj.sh.gov.cn/yshd/20260603/d869d0cd8b24484f935c5b7a9eead459.html",
+          "status": "watchlist",
+          "lastChecked": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "id": "shanghai-tonight-night-festival-2026",
+      "kind": "festival",
+      "month": "Jun",
+      "sortDate": "2026-06-06",
+      "date": "Jun-Sep",
+      "time": "Citywide night events",
+      "title": "Shanghai Tonight Night Festival",
+      "venue": "Commercial areas, waterfronts, parks, museums, and neighborhoods",
+      "district": "Citywide",
+      "vibe": [
+        "date",
+        "open-air"
+      ],
+      "genre": "nightlife campaign, live performances, markets, music events",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "Varies by event",
+      "age": "Varies by event",
+      "source": "https://english.shanghai.gov.cn/en-PlanANightOut/20260608/6a9a6187e3f54378b534ec023a0b805a.html?watch=shanghai-tonight",
+      "sourceLabel": "Shanghai Municipal Commission of Commerce",
+      "imageTheme": "rose",
+      "description": "Official city commerce source says Shanghai Tonight opened Jun 6 with nearly 200 night events across shopping, dining, entertainment, reading, performances, sports, and sightseeing. Use as the umbrella acquisition moment for summer nightlife traffic.",
+      "sourceStatus": "watchlist",
+      "address": "Citywide Shanghai",
+      "organizer": "Shanghai Municipal Commission of Commerce",
+      "detailsUrl": "https://english.shanghai.gov.cn/en-PlanANightOut/20260608/6a9a6187e3f54378b534ec023a0b805a.html",
+      "ticketUrl": "https://english.shanghai.gov.cn/en-PlanANightOut/20260608/6a9a6187e3f54378b534ec023a0b805a.html",
+      "festival": {
+        "format": "citywide nightlife campaign",
+        "dateWindow": "2026-06 to 2026-09",
+        "dateStatus": "umbrella season confirmed; individual events vary",
+        "programStatus": "nearly 200 events across seven nighttime categories",
+        "ticketingStatus": "varies by individual partner event",
+        "acquisitionUse": "top-level Shanghai summer nightlife landing page and weekly discovery funnel"
+      },
+      "programHighlights": [
+        {
+          "title": "Nearly 200 night events",
+          "note": "Official city commerce source says the campaign covers shopping, dining, entertainment, reading, performances, sports, and sightseeing."
+        },
+        {
+          "title": "Festival discovery umbrella",
+          "note": "Use this as a source hub for individual partner events, not as a single ticketed night."
+        }
+      ],
+      "ticketStatus": "Citywide umbrella program; individual event prices, tickets, and age policies vary and require event-level checks.",
+      "contentOpportunity": "Build a Shanghai summer nightlife landing page and weekly 'where to go tonight' social posts that funnel broad traffic into confirmed underground calendar picks.",
+      "addedAt": "2026-06-13",
+      "lastChecked": "2026-06-13",
+      "sources": [
+        {
+          "label": "Shanghai Municipal Commission of Commerce",
+          "url": "https://english.shanghai.gov.cn/en-PlanANightOut/20260608/6a9a6187e3f54378b534ec023a0b805a.html",
+          "status": "watchlist",
+          "lastChecked": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "id": "west-bund-dream-center-waterfront-music-festival-2026",
+      "kind": "festival",
+      "month": "Aug",
+      "sortDate": "2026-08-01",
+      "date": "Aug / TBA",
+      "time": "TBA",
+      "title": "Gate M West Bund Dream Center waterfront music festival",
+      "venue": "Gate M West Bund Dream Center",
+      "district": "Xuhui",
+      "vibe": [
+        "date",
+        "open-air"
+      ],
+      "genre": "waterfront music festival, nightlife, city events",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "TBA",
+      "age": "TBA",
+      "source": "https://english.shanghai.gov.cn/en-PlanANightOut/20260608/6a9a6187e3f54378b534ec023a0b805a.html?watch=west-bund",
+      "sourceLabel": "Shanghai Municipal Commission of Commerce",
+      "imageTheme": "acid",
+      "description": "Official Shanghai Tonight source says Gate M West Bund Dream Center will host summer nighttime programming including a waterfront music festival and light festival. Lineup, date, and ticketing are still TBA.",
+      "sourceStatus": "watchlist",
+      "address": "Gate M West Bund Dream Center, Xuhui, Shanghai",
+      "organizer": "Gate M West Bund Dream Center / Shanghai Tonight partners",
+      "detailsUrl": "https://english.shanghai.gov.cn/en-PlanANightOut/20260608/6a9a6187e3f54378b534ec023a0b805a.html",
+      "ticketUrl": "https://english.shanghai.gov.cn/en-PlanANightOut/20260608/6a9a6187e3f54378b534ec023a0b805a.html",
+      "festival": {
+        "format": "waterfront music festival lead",
+        "dateWindow": "2026-08 / TBA",
+        "dateStatus": "month-level city lead only",
+        "programStatus": "lineup and schedule TBA",
+        "ticketingStatus": "ticketing TBA",
+        "acquisitionUse": "West Bund summer nightlife watch coverage"
+      },
+      "programHighlights": [
+        {
+          "title": "Gate M summer program",
+          "note": "Official Shanghai Tonight source mentions a waterfront music festival and light festival, but not a lineup or exact date."
+        }
+      ],
+      "ticketStatus": "Month-level city lead only. Find a Gate M, promoter, ticketing, or venue page before promoting as a confirmed event.",
+      "contentOpportunity": "Prebuild watch coverage for West Bund summer nights and update when the official lineup drops.",
+      "addedAt": "2026-06-13",
+      "lastChecked": "2026-06-13",
+      "sources": [
+        {
+          "label": "Shanghai Municipal Commission of Commerce",
+          "url": "https://english.shanghai.gov.cn/en-PlanANightOut/20260608/6a9a6187e3f54378b534ec023a0b805a.html",
+          "status": "watchlist",
+          "lastChecked": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "id": "shenwave-music-festival-2026",
+      "kind": "festival",
+      "month": "Jul",
+      "sortDate": "2026-07-01",
+      "date": "May-Jul / TBA",
+      "time": "TBA",
+      "title": "SHENWAVE Music Festival",
+      "venue": "Shanghai venue TBA",
+      "district": "Shanghai",
+      "vibe": [
+        "open-air",
+        "date"
+      ],
+      "genre": "music festival, city events",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "TBA",
+      "age": "TBA",
+      "source": "https://english.shanghai.gov.cn/en-EditorsPick-travelinshanghai/20260424/8cefc9d30b144345b2dadf8b40f4bb04.html",
+      "sourceLabel": "Shanghai major events guide",
+      "imageTheme": "ember",
+      "description": "Official Shanghai major-events guide lists SHENWAVE Music Festival under the May-Jul midsummer trendy play season. Details, lineup, and ticketing were not exposed in the guide.",
+      "sourceStatus": "watchlist",
+      "address": "Shanghai, exact venue TBA",
+      "organizer": "TBA",
+      "detailsUrl": "https://english.shanghai.gov.cn/en-EditorsPick-travelinshanghai/20260424/8cefc9d30b144345b2dadf8b40f4bb04.html",
+      "ticketUrl": "https://english.shanghai.gov.cn/en-EditorsPick-travelinshanghai/20260424/8cefc9d30b144345b2dadf8b40f4bb04.html",
+      "festival": {
+        "format": "music festival lead",
+        "dateWindow": "2026-05 to 2026-07 / TBA",
+        "dateStatus": "broad official city guide window only",
+        "programStatus": "lineup and venue TBA",
+        "ticketingStatus": "ticketing TBA",
+        "acquisitionUse": "Shanghai festival keyword monitor"
+      },
+      "programHighlights": [
+        {
+          "title": "Official guide listing",
+          "note": "Shanghai's major-events guide lists SHENWAVE Music Festival under the May-Jul midsummer trendy play season; details are still missing."
+        }
+      ],
+      "ticketStatus": "Official city guide confirms the festival name and broad May-Jul window only. Keep on Watch until venue, dates, lineup, and tickets are published.",
+      "contentOpportunity": "Monitor as a Shanghai festival keyword and add to summer festival radar once date and genre details are public.",
+      "addedAt": "2026-06-13",
+      "lastChecked": "2026-06-13",
+      "sources": [
+        {
+          "label": "Shanghai major events guide",
+          "url": "https://english.shanghai.gov.cn/en-EditorsPick-travelinshanghai/20260424/8cefc9d30b144345b2dadf8b40f4bb04.html",
+          "status": "watchlist",
+          "lastChecked": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "id": "the-magic-of-tomorrowland-shanghai-2026-watch",
+      "kind": "festival",
+      "month": "Oct",
+      "sortDate": "2026-10-01",
+      "date": "Oct / TBA",
+      "time": "TBA",
+      "title": "The Magic of Tomorrowland Shanghai 2026",
+      "venue": "Hero Dome",
+      "district": "Huangpu",
+      "vibe": [
+        "date",
+        "festival"
+      ],
+      "genre": "EDM, electronic, immersive indoor festival",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "TBA",
+      "age": "TBA",
+      "source": "https://english.shanghai.gov.cn/en-PlanANightOut/20260608/6a9a6187e3f54378b534ec023a0b805a.html?watch=tomorrowland",
+      "sourceLabel": "Shanghai Municipal Commission of Commerce",
+      "imageTheme": "gold",
+      "description": "Official Shanghai Tonight source says Hero Dome plans more than 150 events this year, with Tomorrowland scheduled to return in October. Tomorrowland has not yet published a 2026 Shanghai date, ticket page, or lineup, so this remains a high-value watch lead.",
+      "sourceStatus": "watchlist",
+      "address": "Hero Dome, Huangpu Riverside, Shanghai",
+      "organizer": "Hero Dome / Tomorrowland partners TBA",
+      "detailsUrl": "https://english.shanghai.gov.cn/en-PlanANightOut/20260608/6a9a6187e3f54378b534ec023a0b805a.html",
+      "ticketUrl": "https://english.shanghai.gov.cn/en-PlanANightOut/20260608/6a9a6187e3f54378b534ec023a0b805a.html",
+      "festival": {
+        "format": "immersive indoor electronic festival watch",
+        "dateWindow": "2026-10 / TBA",
+        "dateStatus": "city commerce source says October return; no Tomorrowland 2026 page yet",
+        "programStatus": "lineup TBA",
+        "ticketingStatus": "ticketing TBA",
+        "acquisitionUse": "high-value monitor for lineup, tickets, afterparties, and underground alternatives"
+      },
+      "programHighlights": [
+        {
+          "title": "Hero Dome October watch",
+          "note": "Official Shanghai Tonight source says Tomorrowland is scheduled to return in October, but exact date and 2026 ticketing are not public."
+        },
+        {
+          "title": "2025 precedent",
+          "note": "The prior Shanghai edition was an official indoor Tomorrowland show at Hero Dome / Huangpu Riverside with international and Chinese electronic artists."
+        }
+      ],
+      "ticketStatus": "No official 2026 Tomorrowland ticket page, exact date, lineup, or price found as of Jun 13, 2026. Treat as Watch until Tomorrowland, Hero Dome, Damai, Ticket Planet, or an official partner publishes ticketing.",
+      "lineage": {
+        "previousEdition": "The 2025 Magic of Tomorrowland Shanghai was Tomorrowland's first official indoor music show in China at Hero Dome / Huangpu Riverside.",
+        "previousLineupSignal": "The 2025 press release named Dimitri Vegas, Amelie Lens, Don Diablo, Andromedik, Apashe, Chris Lorenzo, DubVision b2b Matisse & Sadko b2b Third Party, and domestic artists, which makes a 2026 return worth monitoring even for techno-adjacent audience acquisition."
+      },
+      "contentOpportunity": "Set a monitor and prep a watch page now. When official ticketing drops, publish 'Tomorrowland Shanghai 2026: lineup, tickets, afterparties, and underground alternatives' within hours.",
+      "addedAt": "2026-06-13",
+      "lastChecked": "2026-06-13",
+      "sources": [
+        {
+          "label": "Shanghai Municipal Commission of Commerce",
+          "url": "https://english.shanghai.gov.cn/en-PlanANightOut/20260608/6a9a6187e3f54378b534ec023a0b805a.html",
+          "status": "watchlist",
+          "lastChecked": "2026-06-13"
+        },
+        {
+          "label": "Tomorrowland 2025 official announcement",
+          "url": "https://www.tomorrowland.com/article/tomorrowlands-first-ever-indoor-spectacle-in-china/",
+          "status": "previous-edition-context",
+          "lastChecked": "2026-06-13"
+        },
+        {
+          "label": "Tomorrowland 2025 press release",
+          "url": "https://tomorrowlandbelgium.press.tomorrowland.com/the-magic-of-tomorrowland-in-shanghai-with-dimitri-vegas-amelie-lens-don-diablo-and-many-more",
+          "status": "previous-edition-context",
+          "lastChecked": "2026-06-13"
         }
       ]
     },

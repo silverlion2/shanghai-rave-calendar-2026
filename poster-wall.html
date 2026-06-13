@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Poster Wall | Shanghai Rave Index</title>
-  <meta name="description" content="A waterfall event-card wall for sourced Shanghai rave, techno, club, and underground electronic events.">
+  <title>Events | Shanghai Rave Index</title>
+  <meta name="description" content="Browse sourced Shanghai rave, techno, club, and underground electronic events with poster cards, dates, venues, sound, status, and source confidence.">
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#36c7e7">
   <link rel="canonical" href="https://raveindexsh.top/poster-wall">
@@ -22,18 +22,18 @@
   </script>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Shanghai Rave Index">
-  <meta property="og:title" content="Poster Wall | Shanghai Rave Index">
-  <meta property="og:description" content="Waterfall event-card wall for Shanghai underground electronic events.">
+  <meta property="og:title" content="Events | Shanghai Rave Index">
+  <meta property="og:description" content="Sourced Shanghai underground electronic events with poster cards, dates, venues, sound, status, and source confidence.">
   <meta property="og:url" content="https://raveindexsh.top/poster-wall">
   <meta property="og:image" content="https://raveindexsh.top/og-image.png">
-  <meta property="og:image:alt" content="Preview of the Shanghai Rave Index poster wall">
+  <meta property="og:image:alt" content="Preview of the Shanghai Rave Index events page">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "Poster Wall | Shanghai Rave Index",
+    "name": "Events | Shanghai Rave Index",
     "url": "https://raveindexsh.top/poster-wall",
-    "description": "A waterfall event-card wall for sourced Shanghai rave, techno, club, and underground electronic events.",
+    "description": "Browse sourced Shanghai rave, techno, club, and underground electronic events with poster cards, dates, venues, sound, status, and source confidence.",
     "inLanguage": "en",
     "isAccessibleForFree": true,
     "isPartOf": {
@@ -541,8 +541,9 @@
   <main class="shell dispatch-shell">
     <nav class="primary-nav" aria-label="Primary">
       <a class="nav-link" href="index.html">Calendar</a>
-      <a class="nav-link active" href="poster-wall.html">Wall</a>
+      <a class="nav-link active" href="poster-wall.html">Events</a>
       <a class="nav-link" href="love-wall.html">Love</a>
+      <a class="nav-link" href="live-room.html">Tonight</a>
       <a class="nav-link" href="planner.html">Planner</a>
       <a class="nav-link" href="rave-everywhere.html">Everywhere</a>
       <a class="nav-link" href="venues.html">Venues</a>
@@ -552,15 +553,15 @@
 
     <header class="wall-head">
       <div>
-        <p class="kicker">Waterfall event guide</p>
-        <h1>Poster Wall</h1>
-        <p class="dispatch-strip">Basement Dispatch / full event cards</p>
+        <p class="kicker">Sourced event guide</p>
+        <h1>Events</h1>
+        <p class="dispatch-strip">Basement Dispatch / poster-backed cards</p>
       </div>
-      <p class="wall-copy">A standalone waterfall of sourced Shanghai club events. Each card keeps the poster, date, venue, sound, status, and source confidence visible for fast scanning.</p>
+      <p class="wall-copy">Browse sourced Shanghai club events in one scannable list. Each card keeps the poster, date, venue, sound, status, and source confidence visible before you open details.</p>
     </header>
 
-    <section class="wall-controls" aria-label="Event wall filters">
-      <input class="search" id="searchInput" type="search" placeholder="Filter event wall">
+    <section class="wall-controls" aria-label="Event filters">
+      <input class="search" id="searchInput" type="search" placeholder="Filter events">
       <select class="select" id="statusFilter" aria-label="Status filter">
         <option value="upcoming">Upcoming events</option>
         <option value="all">All event dates</option>
@@ -582,7 +583,7 @@
       <span id="posterScope">loading</span>
     </div>
 
-    <section class="poster-waterfall" id="posterWall" aria-label="Event-card waterfall"></section>
+    <section class="poster-waterfall" id="posterWall" aria-label="Event card list"></section>
 
     <section class="account-public-guide-shell" data-account-guide="wall" aria-label="Account guidance"></section>
 
@@ -621,7 +622,7 @@
     <div class="modal-card">
       <img id="modalPoster" src="assets/posters/santa-k-optimized.jpg" alt="">
       <div class="modal-body">
-        <button class="modal-back-button" type="button" id="posterModalBack" aria-label="Back to wall">&lt;- Back to wall</button>
+        <button class="modal-back-button" type="button" id="posterModalBack" aria-label="Back to events">&lt;- Back to events</button>
         <h2 id="modalTitle"></h2>
         <p id="modalCopy"></p>
         <div class="modal-facts" id="modalFacts"></div>

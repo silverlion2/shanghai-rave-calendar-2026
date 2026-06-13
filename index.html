@@ -798,6 +798,11 @@
       background: rgba(255,209,102,.1);
     }
 
+    .calendar-event.festival {
+      border-color: rgba(255,209,102,.46);
+      background: linear-gradient(135deg, rgba(255,209,102,.16), rgba(65,215,255,.06));
+    }
+
     .cards {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -821,6 +826,14 @@
       transform: translateY(-4px);
       border-color: rgba(198,255,59,.6);
       box-shadow: 0 16px 42px rgba(0,0,0,.32);
+    }
+
+    .event-card.festival-card {
+      border-color: rgba(255,209,102,.42);
+    }
+
+    .event-card.festival-card:hover {
+      border-color: rgba(255,209,102,.78);
     }
 
     .poster {
@@ -861,6 +874,10 @@
       padding: 5px 9px;
       font-size: 12px;
       font-weight: 900;
+    }
+
+    .event-card.festival-card .poster .tag {
+      background: var(--gold);
     }
 
     .card-body {
@@ -962,6 +979,30 @@
 
     .lineup-preview b {
       color: var(--ink);
+    }
+
+    .festival-preview {
+      display: grid;
+      gap: 7px;
+      border: 1px solid rgba(255,209,102,.24);
+      border-radius: 6px;
+      padding: 9px;
+      background: rgba(255,209,102,.055);
+    }
+
+    .festival-preview p {
+      display: grid;
+      gap: 2px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+
+    .festival-preview b {
+      color: var(--gold);
+      font-size: 11px;
+      text-transform: uppercase;
     }
 
     .set-preview {
@@ -2023,9 +2064,9 @@
   <main class="shell calendar-shell">
     <nav class="primary-nav" aria-label="Primary">
       <a class="nav-link active" href="index.html">Calendar</a>
-      <a class="nav-link" href="poster-wall.html">Wall</a>
+      <a class="nav-link" href="poster-wall.html">Events</a>
       <a class="nav-link" href="love-wall.html">Love</a>
-      <a class="nav-link" href="live-room.html">Live</a>
+      <a class="nav-link" href="live-room.html">Tonight</a>
       <a class="nav-link" href="planner.html">Planner</a>
       <a class="nav-link" href="rave-everywhere.html">Everywhere</a>
       <a class="nav-link" href="venues.html">Venues</a>
@@ -2040,8 +2081,8 @@
         <p class="dispatch-strip">Basement Dispatch / sourced, not sponsored</p>
         <p class="subhead">Rave-first listings across techno, warehouse, industrial, bass, house, trance, experimental club, and more. No fluff. Know where to go.</p>
         <div class="hero-actions" aria-label="Primary actions">
-          <a class="hero-button primary" href="#calendar">Read the wall</a>
-          <a class="hero-button secondary" href="planner.html">Build a set-time route</a>
+          <a class="hero-button primary" href="#calendar">See upcoming events</a>
+          <a class="hero-button secondary" href="planner.html">Plan your night</a>
         </div>
       </div>
       <figure class="hero-picture" aria-label="Basement Dispatch poster wall visual">
@@ -2051,10 +2092,10 @@
 
     <section class="highlight-wall" id="highlightWall" aria-label="Upcoming highlights"></section>
 
-    <section class="paper-route" aria-label="Date-night route">
+    <section class="paper-route" aria-label="Night planning route">
       <div class="paper-route-head">
-        <h2>Date-night route</h2>
-        <a href="planner.html" aria-label="Open route planner">-></a>
+        <h2>Plan a night</h2>
+        <a href="planner.html" aria-label="Open route planner">Open planner</a>
       </div>
       <p>Pick a mood and the plan adapts to the strongest sourced options.</p>
       <div class="route-buttons">
@@ -2135,7 +2176,7 @@
           <button type="button" data-window-shortcut="tonight">Details -></button>
         </div>
         <div class="dispatch-list" id="tonightPanel"></div>
-        <a class="live-room-handoff" href="live-room.html">Open live rooms -></a>
+        <a class="live-room-handoff" href="live-room.html">Open tonight rooms -></a>
       </section>
     </section>
 
@@ -2154,7 +2195,7 @@
           <div class="dispatch-list" id="weekendPanel"></div>
         </section>
 
-        <section class="panel dispatch-panel" id="personalizedDispatch" aria-label="Personalized event dispatch"></section>
+        <section class="panel dispatch-panel" id="personalizedDispatch" aria-label="Personalized event picks"></section>
       </aside>
     </section>
 
@@ -3227,7 +3268,75 @@
       return names.map(item => `<a class="dj-profile-link" href="${djProfileUrl(item)}">${escapeHtml(item)}</a>`).join('<span class="dj-separator">/</span>');
     }
 
+    function isFestival(event = {}) {
+      return String(event.kind || "").toLowerCase() === "festival" || Boolean(event.festival);
+    }
+
+    function formatStatusLabel(event) {
+      if (isFestival(event)) return event.status === "watch" ? "FESTIVAL WATCH" : "FESTIVAL";
+      return String(event.status || "event").toUpperCase();
+    }
+
+    function programHighlightsFor(event) {
+      const rows = Array.isArray(event.programHighlights) ? event.programHighlights : [];
+      return rows.map(item => {
+        if (typeof item === "string") return { title: item, note: "Program highlight listed by the festival source." };
+        return {
+          title: item.title || item.name || item.artist || "Program item",
+          note: item.note || item.description || "Program highlight listed by the festival source."
+        };
+      }).filter(item => item.title);
+    }
+
+    function festivalSummaryRows(event) {
+      const festival = event.festival || {};
+      return [
+        ["Format", festival.format || event.genre || "Festival"],
+        ["Date window", festival.dateWindow || event.date || event.sortDate],
+        ["Program status", festival.programStatus || "Program details need confirmation"],
+        ["Ticketing", festival.ticketingStatus || event.ticketStatus || event.price || "Check source"]
+      ].filter(([, value]) => value);
+    }
+
+    function festivalSummaryHtml(event, limit = 3) {
+      const highlights = programHighlightsFor(event).slice(0, limit);
+      const rows = festivalSummaryRows(event).slice(0, 3).map(([label, value]) => `<p><b>${escapeHtml(label)}</b><span>${escapeHtml(value)}</span></p>`);
+      const program = highlights.map(item => `<p><b>${escapeHtml(item.title)}</b><span>${escapeHtml(item.note)}</span></p>`);
+      return `<div class="festival-preview">${[...rows, ...program].join("")}</div>`;
+    }
+
+    function festivalText(event) {
+      const festival = event.festival || {};
+      return [
+        event.description,
+        festival.format,
+        festival.dateWindow,
+        festival.programStatus,
+        festival.ticketingStatus,
+        event.ticketStatus,
+        programHighlightsFor(event).map(item => `${item.title} ${item.note}`).join(" ")
+      ].filter(Boolean).join(" ");
+    }
+
+    function festivalProgramHtml(event) {
+      const highlights = programHighlightsFor(event);
+      return `
+        ${festivalSummaryHtml(event, 4)}
+        ${highlights.length ? `
+          <ul class="lineup-list">
+            ${highlights.map(item => `
+              <li class="dj-note">
+                <b>${escapeHtml(item.title)}</b>
+                <span>${escapeHtml(item.note)}</span>
+              </li>
+            `).join("")}
+          </ul>
+        ` : `<p class="description">Program details are still limited. Confirm dates, ticketing, and lineup from the source trail before planning.</p>`}
+      `;
+    }
+
     function lineupFor(event) {
+      if (isFestival(event) && event.includeInDjCoverage !== true) return [];
       if (Array.isArray(event.lineup) && event.lineup.length) {
         return event.lineup.map(item => typeof item === "string" ? { name: item, note: "Lineup listed by the event source; exact set time may still need venue confirmation." } : item);
       }
@@ -3237,6 +3346,7 @@
     }
 
     function lineupText(event) {
+      if (isFestival(event) && event.includeInDjCoverage !== true) return festivalText(event);
       return lineupFor(event).map(item => `${item.name} ${item.note}`).join(" ");
     }
 
@@ -3372,8 +3482,9 @@
 
     function eventActionLinksHtml(event, mode = "card") {
       const linkClass = mode === "modal" ? "button-link" : "card-link";
+      const pageLabel = isFestival(event) ? "Festival page" : "Event page";
       return `
-        <a class="${linkClass} secondary event-link" href="${escapeHtml(eventPageUrl(event))}" aria-label="Open crawlable event page for ${escapeHtml(event.title)}">Event page</a>
+        <a class="${linkClass} secondary event-link" href="${escapeHtml(eventPageUrl(event))}" aria-label="Open crawlable ${isFestival(event) ? "festival" : "event"} page for ${escapeHtml(event.title)}">${escapeHtml(pageLabel)}</a>
         <a class="${linkClass} secondary event-link" href="${escapeHtml(eventDetailsUrl(event))}" target="_blank" rel="noopener noreferrer" aria-label="Open source details for ${escapeHtml(event.title)}">Source</a>
         <a class="${linkClass} primary event-link" href="${escapeHtml(eventTicketUrl(event))}" target="_blank" rel="noopener noreferrer" aria-label="Open ticket or buying information for ${escapeHtml(event.title)}">${escapeHtml(ticketLabelFor(event))}</a>
       `;
@@ -3491,6 +3602,7 @@
     }
 
     function setTimesFor(event) {
+      if (isFestival(event) && event.includeInDjCoverage !== true) return [];
       const explicit = Array.isArray(event.setTimes) ? event.setTimes.map(slot => normalizeSetTime(slot, event)) : [];
       if (explicit.length) return explicit.sort((a, b) => timeToMinutes(a.start || a.end) - timeToMinutes(b.start || b.end));
       const estimated = estimateSetTimes(event);
@@ -3857,6 +3969,10 @@
         sourceStatus: event.sourceStatus || fallback.sourceStatus,
         lastChecked: event.lastChecked || fallback.lastChecked,
         addedAt: event.addedAt || fallback.addedAt,
+        kind: event.kind || fallback.kind || "event",
+        festival: event.festival || fallback.festival,
+        programHighlights: Array.isArray(event.programHighlights) ? event.programHighlights : fallback.programHighlights,
+        includeInDjCoverage: event.includeInDjCoverage === true || fallback.includeInDjCoverage === true,
         lineup: Array.isArray(event.lineup) ? event.lineup : fallback.lineup,
         setTimes: Array.isArray(event.setTimes) ? event.setTimes : fallback.setTimes
       };
@@ -3954,6 +4070,25 @@
       return chunks.join("\r\n");
     }
 
+    function icsDescriptionFor(event) {
+      if (isFestival(event) && event.includeInDjCoverage !== true) {
+        const festival = event.festival || {};
+        return [
+          event.description,
+          `Festival format: ${festival.format || event.genre || "Festival"}`,
+          `Date window: ${festival.dateWindow || event.date || event.sortDate}`,
+          `Program status: ${festival.programStatus || "Program details need confirmation"}`,
+          `Ticketing: ${festival.ticketingStatus || event.ticketStatus || event.price || "Check source"}`,
+          `Program highlights: ${programHighlightsFor(event).map(item => item.title).join(", ") || "TBA"}`,
+          `Source layer: ${sourceStatusLabel(event)}`,
+          `Last checked: ${lastCheckedFor(event)}`,
+          `Source count: ${sourceCountFor(event)}`,
+          `Source: ${event.source}`
+        ].join("\n");
+      }
+      return `${event.description}\nDJ set times: ${setTimesText(event)}\nDJ notes: ${lineupText(event)}\nSource layer: ${sourceStatusLabel(event)}\nLast checked: ${lastCheckedFor(event)}\nSource count: ${sourceCountFor(event)}\nSource: ${event.source}`;
+    }
+
     function icsForEvents(eventList) {
       const dtstamp = formatIcsStamp(new Date());
       const lines = [
@@ -3976,7 +4111,7 @@
           `DTEND;TZID=Asia/Shanghai:${formatIcsLocal(end)}`,
           `SUMMARY:${escapeIcs(event.title)}`,
           `LOCATION:${escapeIcs(`${event.venue}, ${event.district}, Shanghai`)}`,
-          `DESCRIPTION:${escapeIcs(`${event.description}\nDJ set times: ${setTimesText(event)}\nDJ notes: ${lineupText(event)}\nSource layer: ${sourceStatusLabel(event)}\nLast checked: ${lastCheckedFor(event)}\nSource count: ${sourceCountFor(event)}\nSource: ${event.source}`)}`,
+          `DESCRIPTION:${escapeIcs(icsDescriptionFor(event))}`,
           `URL:${event.source}`,
           `STATUS:${event.status === "watch" ? "TENTATIVE" : "CONFIRMED"}`,
           "END:VEVENT"
@@ -4036,13 +4171,15 @@
               <div class="calendar-events">
                 ${dayEvents.map(event => {
                   const organizer = knownOrganizerFor(event);
+                  const festival = isFestival(event);
                   const titleParts = [`Venue: ${event.venue}`, event.title];
                   if (organizer) titleParts.push(`Organizer: ${organizer}`);
+                  if (festival) titleParts.push("Festival / multi-event lead");
                   return `
-                    <button class="calendar-event ${event.status === "watch" ? "watch" : ""}" type="button" data-id="${event.id}" title="${escapeHtml(titleParts.join(" / "))}">
+                    <button class="calendar-event ${event.status === "watch" ? "watch" : ""} ${festival ? "festival" : ""}" type="button" data-id="${event.id}" title="${escapeHtml(titleParts.join(" / "))}">
                       <span class="calendar-event-venue">${escapeHtml(event.venue)}</span>
                       <span class="calendar-event-title">${escapeHtml(event.title)}</span>
-                      ${organizer ? `<span class="calendar-event-organizer">Organizer: ${escapeHtml(organizer)}</span>` : ""}
+                      ${festival ? `<span class="calendar-event-organizer">Festival lead</span>` : organizer ? `<span class="calendar-event-organizer">Organizer: ${escapeHtml(organizer)}</span>` : ""}
                     </button>
                   `;
                 }).join("")}
@@ -4250,7 +4387,7 @@
     }
 
     function monthCopy(code, count, watch) {
-      if (count > 0) return `${count} matching sourced night${count === 1 ? "" : "s"} in this view.`;
+      if (count > 0) return `${count} matching sourced listing${count === 1 ? "" : "s"} in this view.`;
       if (watch && (dateWindow === "all" || dateWindow === "future")) return "Watchlist month: public rave and underground electronic calendars are not reliable enough yet.";
       if (dateWindow === "future") return "No upcoming entries match the current filters.";
       return "No entries match the current view.";
@@ -4259,12 +4396,13 @@
     function renderCard(event) {
       const visual = eventVisual(event);
       const organizer = knownOrganizerFor(event);
+      const festival = isFestival(event);
       const loading = "lazy";
       return `
-        <article class="event-card ${visual.hasPoster ? "has-event-poster" : "has-default-poster"}" data-id="${event.id}">
+        <article class="event-card ${visual.hasPoster ? "has-event-poster" : "has-default-poster"} ${festival ? "festival-card" : ""}" data-id="${event.id}">
           <div class="poster">
             <img src="${escapeHtml(visual.src)}" alt="${escapeHtml(visual.alt)}" loading="${loading}" decoding="async" fetchpriority="low">
-            <span class="tag">${escapeHtml(event.status.toUpperCase())}</span>
+            <span class="tag">${escapeHtml(formatStatusLabel(event))}</span>
           </div>
           <div class="card-body">
             <div class="card-top"><span>${escapeHtml(event.date)}</span><span>${escapeHtml(event.time)}</span></div>
@@ -4272,19 +4410,22 @@
             ${organizer ? `<div class="organizer-line"><span>Organizer</span><b>${escapeHtml(organizer)}</b>${organizerSocialLinkHtml(event)}</div>` : ""}
             <div class="venue">${escapeHtml(event.venue)} · ${escapeHtml(event.district)}</div>
             <p class="description">${escapeHtml(event.description)}</p>
-            <div class="lineup-preview">
-              ${lineupFor(event).slice(0, 2).map(item => `<span><b>${escapeHtml(item.name)}</b>: ${escapeHtml(item.note)}</span>`).join("")}
-            </div>
-            <div class="set-preview">
-              <div class="set-preview-top"><span>DJ set times</span><b>${escapeHtml(setTimeSummary(event))}</b></div>
-              ${renderSetTimeRows(event, 2, true)}
-            </div>
+            ${festival ? festivalSummaryHtml(event) : `
+              <div class="lineup-preview">
+                ${lineupFor(event).slice(0, 2).map(item => `<span><b>${escapeHtml(item.name)}</b>: ${escapeHtml(item.note)}</span>`).join("")}
+              </div>
+              <div class="set-preview">
+                <div class="set-preview-top"><span>DJ set times</span><b>${escapeHtml(setTimeSummary(event))}</b></div>
+                ${renderSetTimeRows(event, 2, true)}
+              </div>
+            `}
             ${sourceMetaHtml(event)}
             <div class="card-actions">
               ${eventActionLinksHtml(event)}
             </div>
             <div class="chips">
               <span class="chip ${confidenceClass(event)}">${escapeHtml(event.confidence)}</span>
+              ${festival ? `<span class="chip">festival</span>` : ""}
               ${event.vibe.slice(0, 3).map(vibe => `<span class="chip">${escapeHtml(vibe)}</span>`).join("")}
               <span class="chip">${escapeHtml(event.genre.split(",")[0])}</span>
             </div>
@@ -4375,13 +4516,24 @@
     function openModal(event) {
       if (!event) return;
       const visual = eventVisual(event);
+      const festival = isFestival(event);
       modal.classList.toggle("has-event-poster", visual.hasPoster);
+      modal.classList.toggle("festival-modal", festival);
       document.getElementById("modalPoster").src = visual.src;
       document.getElementById("modalPoster").alt = visual.alt;
       document.getElementById("modalTitle").textContent = event.title;
       document.getElementById("modalMeta").textContent = `${event.date}, ${event.time} · ${event.venue}, ${event.district}`;
       document.getElementById("modalDescription").textContent = event.description;
-      document.getElementById("modalFacts").innerHTML = [
+      const modalFacts = festival ? [
+        ["Kind", "Festival / multi-event lead"],
+        ["Format", event.festival?.format || event.genre],
+        ["Date window", event.festival?.dateWindow || event.date],
+        ["Program status", event.festival?.programStatus || "Program details need confirmation"],
+        ["Ticketing", event.festival?.ticketingStatus || event.ticketStatus || event.price],
+        ["Last checked", lastCheckedFor(event)],
+        ["Source count", `${sourceCountFor(event)} source${sourceCountFor(event) === 1 ? "" : "s"}`],
+        ["Source layer", sourceStatusLabel(event)]
+      ] : [
         ["Organizer", organizerFor(event)],
         ["Sound", event.genre],
         ["Price", event.price],
@@ -4390,9 +4542,13 @@
         ["Last checked", lastCheckedFor(event)],
         ["Source count", `${sourceCountFor(event)} source${sourceCountFor(event) === 1 ? "" : "s"}`],
         ["Source layer", sourceStatusLabel(event)]
-      ].map(([label, value]) => `<div class="fact"><span>${escapeHtml(label)}</span><b>${escapeHtml(value)}</b></div>`).join("");
+      ];
+      document.getElementById("modalFacts").innerHTML = modalFacts.map(([label, value]) => `<div class="fact"><span>${escapeHtml(label)}</span><b>${escapeHtml(value)}</b></div>`).join("");
       document.getElementById("modalSocialLinks").innerHTML = eventSocialLinksHtml(event);
-      document.getElementById("modalLineup").innerHTML = `
+      document.getElementById("modalLineup").innerHTML = festival ? `
+        <h3>Festival program</h3>
+        ${festivalProgramHtml(event)}
+      ` : `
         <h3>DJ set times</h3>
         ${renderSetTimeRows(event)}
         <h3>DJ notes</h3>
@@ -4405,7 +4561,7 @@
           `).join("")}
         </ul>
       `;
-      document.getElementById("modalChips").innerHTML = event.vibe.map(vibe => `<span class="chip">${escapeHtml(vibe)}</span>`).join("");
+      document.getElementById("modalChips").innerHTML = `${festival ? `<span class="chip">festival</span>` : ""}${event.vibe.map(vibe => `<span class="chip">${escapeHtml(vibe)}</span>`).join("")}`;
       document.getElementById("modalActions").innerHTML = `
         ${eventActionLinksHtml(event, "modal")}
         <button class="button-link secondary ics-event" type="button">Download .ics</button>
@@ -4571,7 +4727,7 @@
       const feed = eventLiveRoomFeedFor(room.eventId);
       const rows = feed.length
         ? feed.map(item => `<span><b>${escapeHtml(item.label)}</b><em>${escapeHtml(formatLiveFeedTime(item.at))}</em></span>`).join("")
-        : `<span><b>Waiting for room signals</b><em>live</em></span>`;
+        : `<span><b>Waiting for tonight updates</b><em>live</em></span>`;
       return `<div class="live-room-feed" aria-live="polite">${rows}</div>`;
     }
 
@@ -4582,7 +4738,7 @@
         : [];
       updateTodayLiveRoomStatus();
       if (!eventLiveRooms.length) {
-        todayLiveRoomsEl.innerHTML = `<p>No live rooms for today's sourced events.</p>`;
+        todayLiveRoomsEl.innerHTML = `<p>No tonight rooms for today's sourced events.</p>`;
         return;
       }
       todayLiveRoomsEl.innerHTML = eventLiveRooms.map(room => {
@@ -4598,7 +4754,7 @@
               <button class="live-room-join ${active ? "active" : ""}" type="button" data-live-room-id="${escapeHtml(room.eventId)}" aria-pressed="${active ? "true" : "false"}">${active ? "Joined" : "Join"}</button>
             </div>
             <div class="live-room-state">${escapeHtml(liveRoomStateText(room))}</div>
-            <div class="live-room-actions" aria-label="${escapeHtml(room.title)} live room reactions">
+              <div class="live-room-actions" aria-label="${escapeHtml(room.title)} tonight room reactions">
               ${eventLiveRoomReactionOptions.map(option => `
                 <button class="live-room-react" type="button" data-live-room-reaction="${escapeHtml(option.key)}" data-live-room-id="${escapeHtml(room.eventId)}">
                   ${escapeHtml(option.label)} ${Number(counts[option.key] || 0)}
@@ -4607,7 +4763,7 @@
             </div>
             <div class="live-room-tools">
               <button class="live-room-tool" type="button" data-live-room-details="${escapeHtml(room.eventId)}">Details</button>
-              <button class="live-room-tool" type="button" data-live-room-copy="${escapeHtml(room.eventId)}">Copy room</button>
+              <button class="live-room-tool" type="button" data-live-room-copy="${escapeHtml(room.eventId)}">Copy link</button>
             </div>
             ${renderLiveRoomFeed(room)}
           </article>
@@ -4727,7 +4883,7 @@
 
       tonightPanel.innerHTML = tonight.length
         ? tonight.map(event => dispatchRowHtml(event)).join("")
-        : `<p>No sourced high-fit event tonight. Check the weekend wall.</p>`;
+        : `<p>No sourced high-fit event tonight. Check the weekend events.</p>`;
       weekendPanel.innerHTML = weekend.length
         ? weekend.map(event => dispatchRowHtml(event, true)).join("")
         : `<p>No matching weekend entries.</p>`;

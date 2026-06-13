@@ -300,6 +300,28 @@ figcaption {
   color: var(--dim);
 }
 
+.source-list a {
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(229, 222, 209, .18);
+  background: rgba(5, 6, 6, .5);
+  color: var(--paper);
+  padding: 8px 10px;
+  font-family: var(--font-display);
+  font-weight: 900;
+  line-height: 1.05;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.source-list a:hover {
+  border-color: var(--acid);
+  color: var(--void);
+  background: var(--acid);
+}
+
 .crumbs {
   display: flex;
   flex-wrap: wrap;
@@ -309,8 +331,57 @@ figcaption {
   font-size: 13px;
 }
 
+.crumbs a {
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  color: var(--paper);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
 .watch-detail {
   border-color: rgba(255, 209, 102, .35);
+}
+
+.festival-detail {
+  border-color: rgba(215, 169, 40, .42);
+}
+
+.festival-detail .kicker {
+  color: var(--gold);
+}
+
+.program-summary {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.program-summary p {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  border: 1px solid rgba(215, 169, 40, .22);
+  background: rgba(215, 169, 40, .055);
+  padding: 10px;
+}
+
+.program-summary b {
+  color: var(--gold);
+  font-family: var(--font-display);
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.program-summary span {
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.program-list li {
+  border-left: 2px solid rgba(215, 169, 40, .7);
+  padding-left: 10px;
 }
 
 @media (max-width: 780px) {

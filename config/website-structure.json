@@ -20,10 +20,12 @@
     "calendar",
     "poster-wall",
     "love-wall",
+    "live-room",
     "planner",
     "rave-everywhere",
     "venues",
-    "djs"
+    "djs",
+    "account"
   ],
   "pages": [
     {
@@ -39,7 +41,7 @@
     },
     {
       "id": "poster-wall",
-      "label": "Wall",
+      "label": "Events",
       "file": "poster-wall.html",
       "route": "/poster-wall",
       "shell": "dispatch-shell",
@@ -59,7 +61,7 @@
     },
     {
       "id": "live-room",
-      "label": "Live",
+      "label": "Tonight",
       "file": "live-room.html",
       "route": "/live-room",
       "shell": "dispatch-shell",

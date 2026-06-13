@@ -95,7 +95,12 @@ function isPlaceholderPerformerName(name) {
     || /\bdj\s*music\b/.test(normalized);
 }
 
+function isFestivalListing(event = {}) {
+  return normalizeEntityName(event.kind) === "festival" || Boolean(event.festival);
+}
+
 function performerNamesForEvent(event) {
+  if (isFestivalListing(event) && event.includeInDjCoverage !== true) return [];
   if (!Array.isArray(event.lineup)) return [];
   return event.lineup.flatMap(item => splitEntityNames(lineupItemName(item)))
     .filter(name => !isPlaceholderPerformerName(name));
@@ -155,7 +160,7 @@ for (const event of future) {
     issues.push(`${id} has posterEvidence but is missing a valid local assets/posters posterUrl`);
   }
 
-  if (event.confidence === "High" && count(event.lineup) === 0) {
+  if (!isFestivalListing(event) && event.confidence === "High" && count(event.lineup) === 0) {
     issues.push(`${id} is High confidence but has no source-backed lineup`);
   }
 
@@ -212,7 +217,7 @@ const highFuture = future.filter(event => event.confidence === "High");
 const singleSourceWatch = watchFuture.filter(event => eventSourceCount(event) <= 1);
 const staleFuture = future.filter(event => String(event.lastChecked || "") < auditDate);
 const missingTicketStatus = future.filter(event => !String(event.ticketStatus || "").trim());
-const highMissingLineup = highFuture.filter(event => count(event.lineup) === 0);
+const highMissingLineup = highFuture.filter(event => !isFestivalListing(event) && count(event.lineup) === 0);
 const venueKeys = new Set(events.map(event => venueProfileKey(event.venue)).filter(Boolean));
 const futureVenueKeys = new Set(future.map(event => venueProfileKey(event.venue)).filter(Boolean));
 const futureVenueWatchKeys = new Set(

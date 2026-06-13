@@ -667,8 +667,9 @@
     <nav class="site-nav" aria-label="Site navigation">
       <div class="nav-group">
         <a class="nav-link" href="index.html">Calendar</a>
-        <a class="nav-link" href="poster-wall.html">Wall</a>
+        <a class="nav-link" href="poster-wall.html">Events</a>
         <a class="nav-link" href="love-wall.html">Love</a>
+        <a class="nav-link" href="live-room.html">Tonight</a>
         <a class="nav-link active" href="planner.html">Planner</a>
         <a class="nav-link" href="rave-everywhere.html">Everywhere</a>
         <a class="nav-link" href="venues.html">Venues</a>
@@ -683,7 +684,7 @@
         <div>
           <div class="kicker">Basement Dispatch route desk</div>
           <h1>Set-Time Planner</h1>
-          <p class="subhead">Turn the wall into a realistic route: compare exact running orders, treat estimates as provisional, and export only the slots worth crossing town for.</p>
+          <p class="subhead">Turn the event list into a realistic route: compare exact running orders, treat estimates as provisional, and export only the slots worth crossing town for.</p>
           <div class="source-note">
             <span class="pill">Asia/Shanghai</span>
             <span class="pill">Local itinerary storage</span>
@@ -909,6 +910,10 @@
       return fallback;
     }
 
+    function isFestival(event = {}) {
+      return String(event.kind || "").toLowerCase() === "festival" || Boolean(event.festival);
+    }
+
     function normalizeExternalEvent(event) {
       if (!event || !event.id || !event.sortDate || !event.title || !event.source) return null;
       const fallback = events.find(item => item.id === event.id) || {};
@@ -934,6 +939,10 @@
         sourceStatus: event.sourceStatus || fallback.sourceStatus,
         lastChecked: event.lastChecked || fallback.lastChecked,
         addedAt: event.addedAt || fallback.addedAt,
+        kind: event.kind || fallback.kind || "event",
+        festival: event.festival || fallback.festival,
+        programHighlights: Array.isArray(event.programHighlights) ? event.programHighlights : fallback.programHighlights,
+        includeInDjCoverage: event.includeInDjCoverage === true || fallback.includeInDjCoverage === true,
         lineup: Array.isArray(event.lineup) ? event.lineup : fallback.lineup,
         setTimes: Array.isArray(event.setTimes) ? event.setTimes : fallback.setTimes
       };
@@ -955,6 +964,7 @@
     }
 
     function eventLineup(event) {
+      if (isFestival(event) && event.includeInDjCoverage !== true) return [];
       if (Array.isArray(event.lineup) && event.lineup.length) {
         return event.lineup.map(item => {
           if (typeof item === "string") return { name: item, note: "Lineup listed by the event source; exact set time may still need venue confirmation." };
@@ -1052,6 +1062,7 @@
     }
 
     function setTimesFor(event) {
+      if (isFestival(event) && event.includeInDjCoverage !== true) return [];
       const explicit = Array.isArray(event.setTimes) ? event.setTimes.map(slot => normalizeSlot(slot, event)) : [];
       if (explicit.length) return explicit.sort((a, b) => timeToMinutes(a.start || a.end) - timeToMinutes(b.start || b.end));
       const estimated = estimateSetTimes(event);

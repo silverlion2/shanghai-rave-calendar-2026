@@ -1,6 +1,6 @@
 # Shanghai Rave Index
 
-Interactive static index for Shanghai techno, rave, warehouse, industrial, bass, and underground electronic events in 2026. It includes a paired DJ database generated from the event lineups, with performer profiles, source status, set-time status, and event deep links.
+Interactive static rave index for Shanghai rave, techno, warehouse, industrial, bass, house, trance, experimental club, and underground electronic events in 2026. It includes a paired DJ database generated from the event lineups, with performer profiles, source status, set-time status, and event deep links.
 
 ## Local preview
 
