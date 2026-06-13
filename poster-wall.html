@@ -343,6 +343,17 @@
       text-transform: uppercase;
     }
 
+    .venue-guide-link {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(54,199,231,.5);
+    }
+
+    .venue-guide-link:hover {
+      color: var(--paper);
+      border-bottom-color: var(--paper);
+    }
+
     .wall-description {
       display: -webkit-box;
       overflow: hidden;
@@ -570,11 +581,22 @@
       <select class="select" id="vibeFilter" aria-label="Vibe filter">
         <option value="all">All vibes</option>
         <option value="hard">Hard techno</option>
+        <option value="hard-techno">Hard techno refined</option>
+        <option value="industrial">Industrial</option>
+        <option value="groovy">Groovy</option>
+        <option value="hypnotic">Hypnotic</option>
+        <option value="minimal">Minimal</option>
+        <option value="melodic">Melodic</option>
+        <option value="acid">Acid</option>
+        <option value="trance-adjacent">Trance-adjacent</option>
         <option value="underground">Underground</option>
         <option value="date">Date-friendly</option>
         <option value="experimental">Experimental</option>
         <option value="bass">Bass / club</option>
+        <option value="bass-hybrid">Bass hybrid</option>
+        <option value="live-av">Live / A/V</option>
         <option value="warehouse">Warehouse</option>
+        <option value="rooftop">Rooftop / open-air</option>
       </select>
     </section>
 
@@ -699,6 +721,54 @@
       }[char]));
     }
 
+    function publicText(value) {
+      return String(value ?? "")
+        .replace(/\bResident Advisor\b/g, "event directory")
+        .replace(/\bRA[-\s]+listed\b/gi, "listed")
+        .replace(/\bRA[-\s]+published\b/gi, "published")
+        .replace(/\bRA\s+/g, "directory ")
+        .replace(/\bRA\b/g, "directory");
+    }
+
+    function normalizeVenueName(value) {
+      return String(value || "")
+        .normalize("NFKD")
+        .toLowerCase()
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/&/g, " and ")
+        .replace(/[^a-z0-9]+/g, " ")
+        .trim();
+    }
+
+    const venueGuideRules = [
+      [/abyss/, "abyss-club"],
+      [/potent/, "potent"],
+      [/^exit$/, "exit"],
+      [/heim|m101/, "heim-heim-sauna"],
+      [/reactor/, "reactor-shanghai"],
+      [/dirty house|dirtyhouse|\bins\b/, "dirty-house-ins"],
+      [/illum/, "illum"],
+      [/wigwam/, "wigwam"],
+      [/eka|tianwu/, "eka-tianwu"],
+      [/pop bar|flair|fosun|sukhothai|edition|beaufort|bund|rooftop/, "bund-rooftops-and-hotel-rooms"]
+    ];
+
+    function venueGuideSlug(name) {
+      const normalized = normalizeVenueName(name);
+      const match = venueGuideRules.find(([pattern]) => pattern.test(normalized));
+      return match ? match[1] : "";
+    }
+
+    function venueGuideUrl(name) {
+      const slug = venueGuideSlug(name);
+      if (slug) return `venues.html#venue-${slug}`;
+      return `venues.html?search=${encodeURIComponent(name)}`;
+    }
+
+    function venueGuideLinkHtml(name) {
+      return `<a class="venue-guide-link" href="${escapeHtml(venueGuideUrl(name))}">${escapeHtml(name)}</a>`;
+    }
+
     function posterUrl(event) {
       const raw = posterUrlOverrides[event.id] || event.posterUrl || event.posterImageUrl || event.imageUrl || "";
       return optimizedPosterUrlOverrides[raw] || raw;
@@ -748,8 +818,45 @@
       return new Date(year, month - 1, day);
     }
 
+    const soundTagLabelMap = {
+      "hard-techno": "hard techno",
+      industrial: "industrial",
+      groovy: "groovy",
+      hypnotic: "hypnotic",
+      minimal: "minimal",
+      melodic: "melodic",
+      acid: "acid",
+      "trance-adjacent": "trance-adjacent",
+      "bass-hybrid": "bass hybrid",
+      "live-av": "live / A/V",
+      warehouse: "warehouse",
+      rooftop: "rooftop"
+    };
+
+    function arrayFromData(value, fallback = []) {
+      if (Array.isArray(value)) return value.map(item => String(item).trim()).filter(Boolean);
+      if (typeof value === "string") return value.split(",").map(item => item.trim()).filter(Boolean);
+      return fallback;
+    }
+
+    function tagLabel(tag) {
+      return soundTagLabelMap[tag] || String(tag || "").replace(/-/g, " ");
+    }
+
+    function eventSoundTags(event) {
+      return arrayFromData(event.soundTags, []);
+    }
+
+    function eventDecisionTags(event) {
+      return arrayFromData(event.decisionTags, []);
+    }
+
+    function eventSignalChips(event, limit = 5) {
+      return eventSoundTags(event).map(tagLabel).concat(eventDecisionTags(event)).slice(0, limit);
+    }
+
     function searchable(event) {
-      return [event.title, event.venue, event.district, event.genre, event.date, event.time, ...(event.vibe || [])].join(" ").toLowerCase();
+      return [event.title, event.venue, event.district, event.genre, event.date, event.time, ...(event.vibe || []), ...eventSoundTags(event), ...eventDecisionTags(event)].join(" ").toLowerCase();
     }
 
     function filteredEvents() {
@@ -760,7 +867,7 @@
         .filter(event => {
           if (status === "upcoming" && eventDate(event) < today) return false;
           if (status === "past" && eventDate(event) >= today) return false;
-          if (vibe !== "all" && !(event.vibe || []).includes(vibe)) return false;
+          if (vibe !== "all" && !(event.vibe || []).includes(vibe) && !eventSoundTags(event).includes(vibe) && !eventDecisionTags(event).includes(vibe)) return false;
           if (query && !searchable(event).includes(query)) return false;
           return true;
         })
@@ -786,14 +893,14 @@
             <div class="wall-card-body">
               <div class="wall-card-top"><span>${escapeHtml(event.date)}</span><span>${escapeHtml(event.time)}</span></div>
               <h2>${escapeHtml(event.title)}</h2>
-              <p class="wall-venue">${escapeHtml(event.venue)} / ${escapeHtml(event.district)}</p>
-              <p class="wall-description">${escapeHtml(event.description || "")}</p>
+              <p class="wall-venue">${venueGuideLinkHtml(event.venue)} / ${escapeHtml(event.district)}</p>
+              <p class="wall-description">${escapeHtml(publicText(event.description || ""))}</p>
               <div class="wall-chips">
                 <span class="wall-chip confidence">${escapeHtml(event.confidence)}</span>
-                ${(event.vibe || []).slice(0, 3).map(vibe => `<span class="wall-chip">${escapeHtml(vibe)}</span>`).join("")}
+                ${eventSignalChips(event, 4).map(tag => `<span class="wall-chip">${escapeHtml(tag)}</span>`).join("")}
                 <span class="wall-chip">${escapeHtml(String(event.genre || "electronic").split(",")[0])}</span>
               </div>
-              <div class="wall-source"><span>${escapeHtml(event.sourceLabel || "Source")}</span><span>${escapeHtml(event.price || "Check source")}</span></div>
+              <div class="wall-source"><span>${escapeHtml(publicText(event.sourceLabel || "Source"))}</span><span>${escapeHtml(event.price || "Check source")}</span></div>
             </div>
           </article>
         `;
@@ -807,6 +914,9 @@
           }
         });
       });
+      wall.querySelectorAll(".venue-guide-link").forEach(link => {
+        link.addEventListener("click", event => event.stopPropagation());
+      });
     }
 
     function openModal(event) {
@@ -815,13 +925,13 @@
       document.getElementById("modalPoster").src = visual.src;
       document.getElementById("modalPoster").alt = visual.alt;
       document.getElementById("modalTitle").textContent = event.title;
-      document.getElementById("modalCopy").textContent = event.description || "";
+      document.getElementById("modalCopy").textContent = publicText(event.description || "");
       document.getElementById("modalFacts").innerHTML = [
-        ["Date", `${event.date} / ${event.time}`],
-        ["Venue", `${event.venue} / ${event.district}`],
-        ["Sound", event.genre],
-        ["Status", `${event.status} / ${event.confidence}`]
-      ].map(([label, value]) => `<div class="fact"><span>${escapeHtml(label)}</span><b>${escapeHtml(value)}</b></div>`).join("");
+        ["Date", escapeHtml(`${event.date} / ${event.time}`)],
+        ["Venue", `${venueGuideLinkHtml(event.venue)} / ${escapeHtml(event.district)}`],
+        ["Sound", escapeHtml(event.genre)],
+        ["Status", escapeHtml(`${event.status} / ${event.confidence}`)]
+      ].map(([label, value]) => `<div class="fact"><span>${escapeHtml(label)}</span><b>${value}</b></div>`).join("");
       document.getElementById("modalEventPage").href = `events/${encodeURIComponent(event.id)}.html`;
       const source = document.getElementById("modalSource");
       source.href = event.source || "#";

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Shanghai Rave Index Venues & Crews</title>
-  <meta name="description" content="Guide to notable Shanghai techno venues, clubs, organizers, and crews behind the 2026 rave calendar, with source links and vibe filters.">
+  <meta name="description" content="Guide to notable Shanghai techno venues, clubs, organizers, and crews behind the 2026 rave calendar, enriched with imported venue directory data.">
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#c6ff3b">
   <link rel="canonical" href="https://raveindexsh.top/venues">
@@ -23,7 +23,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Shanghai Rave Index">
   <meta property="og:title" content="Shanghai Rave Index Venues & Crews">
-  <meta property="og:description" content="A sourced guide to the Shanghai clubs, venues, and crews behind the 2026 techno and rave calendar.">
+  <meta property="og:description" content="A sourced guide to Shanghai clubs, venues, and crews with local event context and imported venue-directory metadata.">
   <meta property="og:url" content="https://raveindexsh.top/venues">
   <meta property="og:image" content="https://raveindexsh.top/og-image.png">
   <meta property="og:image:alt" content="Preview of the Shanghai rave calendar">
@@ -33,7 +33,7 @@
     "@type": "CollectionPage",
     "name": "Shanghai Rave Index Venues & Crews",
     "url": "https://raveindexsh.top/venues",
-    "description": "Sourced guide to notable Shanghai electronic music venues, clubs, organizers, and crews appearing in the 2026 rave calendar.",
+    "description": "Sourced guide to notable Shanghai electronic music venues, clubs, organizers, and crews appearing in the 2026 rave calendar, enriched with imported venue-directory metadata.",
     "inLanguage": "en",
     "isAccessibleForFree": true
   }
@@ -447,6 +447,47 @@
       line-height: 1.35;
     }
 
+    .directory-status {
+      width: max-content;
+      max-width: 100%;
+      border: 1px solid rgba(198,255,59,.35);
+      border-radius: 999px;
+      color: var(--acid);
+      background: rgba(198,255,59,.07);
+      padding: 5px 8px;
+      font-size: 12px;
+      font-weight: 900;
+      line-height: 1.15;
+    }
+
+    .card:target {
+      border-color: rgba(198,255,59,.78);
+      box-shadow: 0 0 0 2px rgba(198,255,59,.18);
+      scroll-margin-top: 18px;
+    }
+
+    .address {
+      margin: 0;
+      padding: 9px 10px;
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 6px;
+      background: rgba(255,255,255,.03);
+      display: grid;
+      gap: 4px;
+    }
+
+    .address b {
+      color: var(--dim);
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+
+    .address span {
+      color: var(--ink);
+      font-size: 14px;
+      line-height: 1.35;
+    }
+
     .copy {
       color: var(--muted);
       line-height: 1.45;
@@ -615,6 +656,7 @@
   </style>
   <link rel="stylesheet" href="assets/basement-dispatch.css?v=xhs-contact-20260613c">
   <link rel="stylesheet" href="assets/account-system.css">
+  <script src="data/ra-venues.js"></script>
   <script src="assets/account-system.js" defer></script>
 </head>
 <body>
@@ -632,7 +674,7 @@
         <a class="nav-link" href="account.html">Account</a>
       </div>
       <div class="nav-group">
-        <span class="tag">Verified as of June 11, 2026</span>
+        <span class="tag">Verified as of June 14, 2026</span>
         <span class="tag">Source-linked</span>
       </div>
     </nav>
@@ -650,9 +692,9 @@
     </header>
 
     <section class="stats" aria-label="Venue guide statistics">
-      <div class="stat"><b>10</b><span>venue and location cards</span></div>
+      <div class="stat"><b>10</b><span>curated venue and location cards</span></div>
       <div class="stat"><b>6</b><span>organizer and crew cards</span></div>
-      <div class="stat"><b>4</b><span>strong date-night starting points</span></div>
+      <div class="stat"><b>292</b><span>venue directory rows imported into system data</span></div>
       <div class="stat"><b>1</b><span>rule: verify WeChat or ticket links before going</span></div>
     </section>
 
@@ -672,6 +714,7 @@
         <span>Vibe</span>
         <select class="select" id="vibeFilter" aria-label="Vibe filter">
           <option value="all">All vibes</option>
+          <option value="popular">Directory picks</option>
           <option value="hard">Hard techno</option>
           <option value="underground">Underground</option>
           <option value="date">Date-friendly</option>
@@ -712,8 +755,8 @@
       <div class="matrix">
         <div class="matrix-card"><b>Hardest room</b><span>Abyss first. It is the clearest current hard-techno signal in the calendar.</span></div>
         <div class="matrix-card"><b>Deep basement</b><span>EXIT when the bill says Detroit, EBM, electro, industrial, or VACUUM/VOID.</span></div>
-        <div class="matrix-card"><b>Most date-friendly</b><span>Bund rooftops, Sukhothai/Edition hotel nights, or a day-to-night warehouse event before going heavier.</span></div>
-        <div class="matrix-card"><b>Late-year research</b><span>Watch RA, SmartShanghai, venue WeChat accounts, and promoter posts. Shanghai lineups often appear close to the date.</span></div>
+        <div class="matrix-card"><b>Date-friendly start</b><span>Bund rooftops, hotel rooms, or warehouse day parties before deciding whether to go heavier after midnight.</span></div>
+        <div class="matrix-card"><b>Late-year research</b><span>Watch event directories, SmartShanghai, venue WeChat accounts, and promoter posts. Shanghai lineups often appear close to the date.</span></div>
       </div>
     </section>
 
@@ -739,7 +782,7 @@
         </a>
       </address>
       <div class="bar-cell">
-        <span>This guide uses the same June 11, 2026 verification basis as the calendar.</span>
+        <span>This guide uses local event context plus imported directory data for venue addresses.</span>
         <span>Public sources first. Final details at the venue.</span>
       </div>
       <div class="bar-cell source-cell">
@@ -754,6 +797,7 @@
     const venues = [
       {
         name: "Abyss Club",
+        directoryNames: ["Abyss Shanghai"],
         type: "Club",
         district: "Huangpu / TX Huaihai",
         vibe: ["hard", "underground"],
@@ -799,6 +843,7 @@
       },
       {
         name: "Heim / Heim Sauna",
+        directoryNames: ["Heim Shanghai", "Heim_shanghai"],
         type: "Community club",
         district: "Former French Concession area",
         vibe: ["underground", "date", "bass"],
@@ -829,6 +874,7 @@
       },
       {
         name: "Dirty House / INS",
+        directoryNames: ["Dirty House", "Dirtyhouse", "INS Park"],
         type: "Club inside INS Land",
         district: "Huangpu",
         vibe: ["bass", "underground"],
@@ -867,7 +913,7 @@
         bestFor: ["Lower-pressure dates", "Ambient and deep techno", "Testing the scene without committing to a big club night"],
         sources: [
           ["TOMO at Wigwam", "https://ra.co/events/2455848"],
-          ["RA Shanghai calendar", "https://ra.co/events/cn/shanghai"]
+          ["Shanghai calendar listing", "https://ra.co/events/cn/shanghai"]
         ]
       },
       {
@@ -885,6 +931,7 @@
       },
       {
         name: "Bund rooftops & hotel rooms",
+        directoryNames: ["Pop Bar", "The Roof Garden", "Flair", "Fosun Art Foundation", "W Shanghai - The Bund"],
         type: "Rooftop / hotel club",
         district: "The Bund / Huangpu",
         vibe: ["date"],
@@ -1003,18 +1050,84 @@
       }[char]));
     }
 
+    const venueDirectory = window.RA_VENUE_DIRECTORY || { venues: [], venueCount: 0 };
+    const venueDirectoryIndex = new Map();
+    for (const venue of venueDirectory.venues || []) {
+      const key = normalizeVenueKey(venue.name);
+      if (!key) continue;
+      if (!venueDirectoryIndex.has(key)) venueDirectoryIndex.set(key, []);
+      venueDirectoryIndex.get(key).push(venue);
+    }
+
+    function slugify(value) {
+      return String(value || "venue")
+        .normalize("NFKD")
+        .toLowerCase()
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/&/g, " and ")
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-|-$/g, "") || "venue";
+    }
+
+    function normalizeVenueKey(value) {
+      return String(value || "")
+        .normalize("NFKD")
+        .toLowerCase()
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/&/g, " and ")
+        .replace(/\bclub\b/g, "")
+        .replace(/\bshanghai\b/g, "")
+        .replace(/^the\s+/, "")
+        .replace(/[^a-z0-9]+/g, " ")
+        .trim();
+    }
+
+    function directoryMatchesFor(item) {
+      const names = [item.name, ...(item.directoryNames || [])];
+      const matches = [];
+      const seen = new Set();
+      for (const name of names) {
+        for (const venue of venueDirectoryIndex.get(normalizeVenueKey(name)) || []) {
+          if (seen.has(venue.id)) continue;
+          seen.add(venue.id);
+          matches.push(venue);
+        }
+      }
+      return matches;
+    }
+
+    function directoryBadge(matches) {
+      if (!matches.length) return "";
+      const popular = matches.some(venue => venue.popular);
+      const rowCount = matches.length > 1 ? ` / ${matches.length} imported rows` : "";
+      return `${popular ? "Featured directory data" : "Directory data"}${rowCount}`;
+    }
+
     function matches(item) {
       const query = searchInput.value.trim().toLowerCase();
       const vibe = vibeFilter.value;
-      const text = [item.name, item.type, item.district, item.short, item.intro, item.bestFor.join(" "), item.vibe.join(" ")].join(" ").toLowerCase();
-      if (vibe !== "all" && !item.vibe.includes(vibe)) return false;
+      const directoryMatches = directoryMatchesFor(item);
+      const text = [
+        item.name,
+        item.type,
+        item.district,
+        directoryMatches.map(venue => `${venue.name} ${venue.address}`).join(" "),
+        item.short,
+        item.intro,
+        item.bestFor.join(" "),
+        item.vibe.join(" ")
+      ].join(" ").toLowerCase();
+      if (vibe === "popular" && !directoryMatches.some(venue => venue.popular)) return false;
+      if (vibe !== "all" && vibe !== "popular" && !item.vibe.includes(vibe)) return false;
       if (query && !text.includes(query)) return false;
       return true;
     }
 
     function renderCard(item) {
+      const directoryMatches = directoryMatchesFor(item);
+      const directory = directoryMatches[0];
       return `
-        <article class="card" style="--accent: ${item.accent}">
+        <article class="card" id="venue-${slugify(item.name)}" style="--accent: ${item.accent}">
           <div class="card-visual">
             <strong>${escapeHtml(item.type)}</strong>
             <span>${escapeHtml(item.name)}</span>
@@ -1022,6 +1135,8 @@
           <div class="card-body">
             <h3>${escapeHtml(item.name)}</h3>
             <div class="meta">${escapeHtml(item.district)}</div>
+            ${directory ? `<div class="directory-status">${escapeHtml(directoryBadge(directoryMatches))}</div>` : ""}
+            ${directory ? `<p class="address"><b>Imported directory address</b><span>${escapeHtml(directory.address)}</span></p>` : ""}
             <p class="copy">${escapeHtml(item.intro)}</p>
             <ul class="why">
               ${item.bestFor.map(point => `<li>${escapeHtml(point)}</li>`).join("")}
@@ -1049,9 +1164,28 @@
       if (!crewCards.innerHTML) crewCards.innerHTML = `<p class="copy">No crews match the current filters.</p>`;
     }
 
+    function applyInitialSearch() {
+      const params = new URLSearchParams(window.location.search);
+      const query = params.get("search") || params.get("venue") || params.get("q") || "";
+      if (query) searchInput.value = query;
+    }
+
+    function scrollToVenueHash(behavior = "auto") {
+      const hash = decodeURIComponent(String(window.location.hash || "").replace(/^#/, ""));
+      if (!hash) return;
+      const target = document.getElementById(hash);
+      if (target) target.scrollIntoView({ behavior, block: "start" });
+    }
+
     searchInput.addEventListener("input", render);
     vibeFilter.addEventListener("change", render);
+    window.addEventListener("hashchange", () => {
+      render();
+      window.requestAnimationFrame(() => scrollToVenueHash("smooth"));
+    });
+    applyInitialSearch();
     render();
+    window.requestAnimationFrame(() => scrollToVenueHash("auto"));
   </script>
 </body>
 </html>

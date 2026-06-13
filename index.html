@@ -760,7 +760,8 @@
 
     .calendar-event-venue,
     .calendar-event-title,
-    .calendar-event-organizer {
+    .calendar-event-organizer,
+    .calendar-event-lineup {
       display: block;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -782,6 +783,12 @@
       line-height: 1.15;
     }
 
+    .calendar-event-lineup {
+      color: var(--muted);
+      font-size: 10px;
+      line-height: 1.15;
+    }
+
     .calendar-event:hover {
       border-color: var(--acid);
       color: var(--void);
@@ -789,7 +796,8 @@
     }
 
     .calendar-event:hover .calendar-event-venue,
-    .calendar-event:hover .calendar-event-organizer {
+    .calendar-event:hover .calendar-event-organizer,
+    .calendar-event:hover .calendar-event-lineup {
       color: rgba(8,8,6,.72);
     }
 
@@ -955,6 +963,19 @@
       color: var(--cyan);
       font-weight: 700;
       line-height: 1.35;
+    }
+
+    .venue-guide-link,
+    .dj-profile-link {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(65,215,255,.42);
+    }
+
+    .venue-guide-link:hover,
+    .dj-profile-link:hover {
+      color: var(--acid);
+      border-bottom-color: rgba(198,255,59,.78);
     }
 
     .description {
@@ -1751,16 +1772,6 @@
       font-size: 14px;
     }
 
-    .dj-profile-link {
-      color: var(--ink);
-      text-decoration: none;
-      border-bottom: 1px solid rgba(198,255,59,.45);
-    }
-
-    .dj-profile-link:hover {
-      color: var(--acid);
-    }
-
     .dj-separator {
       color: var(--dim);
       margin: 0 4px;
@@ -2141,11 +2152,22 @@
         <select class="select" id="vibeFilter" aria-label="Vibe filter">
           <option value="all">All rave sounds</option>
           <option value="hard">Hard / fast</option>
+          <option value="hard-techno">Hard techno</option>
+          <option value="industrial">Industrial</option>
+          <option value="groovy">Groovy</option>
+          <option value="hypnotic">Hypnotic</option>
+          <option value="minimal">Minimal</option>
+          <option value="melodic">Melodic</option>
+          <option value="acid">Acid</option>
+          <option value="trance-adjacent">Trance-adjacent</option>
           <option value="underground">Underground</option>
           <option value="date">Date-friendly</option>
           <option value="experimental">Experimental</option>
           <option value="bass">Bass / club</option>
+          <option value="bass-hybrid">Bass hybrid</option>
+          <option value="live-av">Live / A/V</option>
           <option value="warehouse">Warehouse</option>
+          <option value="rooftop">Rooftop / open-air</option>
         </select>
       </label>
       <label class="filter-field">
@@ -3254,18 +3276,66 @@
       }[char]));
     }
 
+    function publicText(value) {
+      return String(value ?? "")
+        .replace(/\bResident Advisor\b/g, "event directory")
+        .replace(/\bRA[-\s]+listed\b/gi, "listed")
+        .replace(/\bRA[-\s]+published\b/gi, "published")
+        .replace(/\bRA\s+/g, "directory ")
+        .replace(/\bRA\b/g, "directory");
+    }
+
     function djSlug(name) {
       return String(name || "dj").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "dj";
     }
 
     function djProfileUrl(name) {
-      return `djs.html#${djSlug(name)}`;
+      return `djs.html#dj-${djSlug(name)}`;
     }
 
     function djProfileLinksHtml(name) {
       const names = splitPerformerNames(name);
       if (names.length <= 1) return `<a class="dj-profile-link" href="${djProfileUrl(name)}">${escapeHtml(name)}</a>`;
       return names.map(item => `<a class="dj-profile-link" href="${djProfileUrl(item)}">${escapeHtml(item)}</a>`).join('<span class="dj-separator">/</span>');
+    }
+
+    function normalizeVenueName(value) {
+      return String(value || "")
+        .normalize("NFKD")
+        .toLowerCase()
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/&/g, " and ")
+        .replace(/[^a-z0-9]+/g, " ")
+        .trim();
+    }
+
+    const venueGuideRules = [
+      [/abyss/, "abyss-club"],
+      [/potent/, "potent"],
+      [/^exit$/, "exit"],
+      [/heim|m101/, "heim-heim-sauna"],
+      [/reactor/, "reactor-shanghai"],
+      [/dirty house|dirtyhouse|\bins\b/, "dirty-house-ins"],
+      [/illum/, "illum"],
+      [/wigwam/, "wigwam"],
+      [/eka|tianwu/, "eka-tianwu"],
+      [/pop bar|flair|fosun|sukhothai|edition|beaufort|bund|rooftop/, "bund-rooftops-and-hotel-rooms"]
+    ];
+
+    function venueGuideSlug(name) {
+      const normalized = normalizeVenueName(name);
+      const match = venueGuideRules.find(([pattern]) => pattern.test(normalized));
+      return match ? match[1] : "";
+    }
+
+    function venueGuideUrl(name) {
+      const slug = venueGuideSlug(name);
+      if (slug) return `venues.html#venue-${slug}`;
+      return `venues.html?search=${encodeURIComponent(name)}`;
+    }
+
+    function venueGuideLinkHtml(name) {
+      return `<a class="venue-guide-link" href="${escapeHtml(venueGuideUrl(name))}">${escapeHtml(name)}</a>`;
     }
 
     function isFestival(event = {}) {
@@ -3462,6 +3532,37 @@
       `;
     }
 
+    const soundTagLabelMap = {
+      "hard-techno": "hard techno",
+      industrial: "industrial",
+      groovy: "groovy",
+      hypnotic: "hypnotic",
+      minimal: "minimal",
+      melodic: "melodic",
+      acid: "acid",
+      "trance-adjacent": "trance-adjacent",
+      "bass-hybrid": "bass hybrid",
+      "live-av": "live / A/V",
+      warehouse: "warehouse",
+      rooftop: "rooftop"
+    };
+
+    function tagLabel(tag) {
+      return soundTagLabelMap[tag] || String(tag || "").replace(/-/g, " ");
+    }
+
+    function eventSoundTags(event) {
+      return arrayFromData(event.soundTags, []);
+    }
+
+    function eventDecisionTags(event) {
+      return arrayFromData(event.decisionTags, []);
+    }
+
+    function eventSignalChips(event, limit = 5) {
+      return eventSoundTags(event).map(tagLabel).concat(eventDecisionTags(event)).slice(0, limit);
+    }
+
     function eventDetailsUrl(event) {
       return event.detailsUrl || event.source;
     }
@@ -3471,7 +3572,9 @@
     }
 
     function eventTicketUrl(event) {
-      return event.ticketUrl || event.ticket || event.source;
+      const destination = event.ticketUrl || event.ticket || event.source;
+      if (!destination || !/^https?:\/\//i.test(destination)) return destination || "#";
+      return `ticket.html?event=${encodeURIComponent(event.id)}&to=${encodeURIComponent(destination)}`;
     }
 
     function ticketLabelFor(event) {
@@ -3658,8 +3761,8 @@
         <div class="set-time-row">
           <div class="set-time">${escapeHtml(setTimeRange(slot))}</div>
           <div class="set-time-main">
-            <b>${escapeHtml(slot.name)}</b>
-            <span>${escapeHtml(slot.note || slot.stage || `${slot.sourceLabel || event.sourceLabel} schedule status`)}</span>
+            <b>${djProfileLinksHtml(slot.name)}</b>
+            <span>${escapeHtml(publicText(slot.note || slot.stage || `${slot.sourceLabel || event.sourceLabel} schedule status`))}</span>
           </div>
           <span class="set-status ${setTimeStatusClass(slot)}">${escapeHtml(setTimeStatusLabel(slot))}</span>
         </div>
@@ -3957,6 +4060,9 @@
         venue: event.venue || fallback.venue || "Check source",
         district: event.district || fallback.district || "Shanghai",
         vibe: arrayFromData(event.vibe, fallback.vibe || ["underground"]),
+        soundTags: arrayFromData(event.soundTags, fallback.soundTags || []),
+        decisionTags: arrayFromData(event.decisionTags, fallback.decisionTags || []),
+        decisionProfile: event.decisionProfile || fallback.decisionProfile || {},
         genre: event.genre || fallback.genre || "electronic, club",
         confidence: event.confidence || fallback.confidence || "Watch",
         status: event.status || fallback.status || "watch",
@@ -3995,7 +4101,7 @@
     }
 
     function searchableText(event) {
-      return [event.title, organizerFor(event), event.venue, event.district, event.genre, event.description, event.sourceLabel, event.source, lineupText(event)].join(" ").toLowerCase();
+      return [event.title, organizerFor(event), event.venue, event.district, event.genre, event.description, event.sourceLabel, event.source, eventSoundTags(event).join(" "), eventDecisionTags(event).join(" "), lineupText(event)].join(" ").toLowerCase();
     }
 
     function eventVenueGroupMatches(event, group) {
@@ -4172,15 +4278,17 @@
                 ${dayEvents.map(event => {
                   const organizer = knownOrganizerFor(event);
                   const festival = isFestival(event);
+                  const lineupLinks = festival ? "" : lineupFor(event).slice(0, 2).map(item => djProfileLinksHtml(item.name)).join('<span class="dj-separator">/</span>');
                   const titleParts = [`Venue: ${event.venue}`, event.title];
                   if (organizer) titleParts.push(`Organizer: ${organizer}`);
                   if (festival) titleParts.push("Festival / multi-event lead");
                   return `
-                    <button class="calendar-event ${event.status === "watch" ? "watch" : ""} ${festival ? "festival" : ""}" type="button" data-id="${event.id}" title="${escapeHtml(titleParts.join(" / "))}">
-                      <span class="calendar-event-venue">${escapeHtml(event.venue)}</span>
+                    <article class="calendar-event ${event.status === "watch" ? "watch" : ""} ${festival ? "festival" : ""}" role="button" tabindex="0" data-id="${event.id}" title="${escapeHtml(titleParts.join(" / "))}">
+                      <span class="calendar-event-venue">${venueGuideLinkHtml(event.venue)}</span>
                       <span class="calendar-event-title">${escapeHtml(event.title)}</span>
+                      ${lineupLinks ? `<span class="calendar-event-lineup">${lineupLinks}</span>` : ""}
                       ${festival ? `<span class="calendar-event-organizer">Festival lead</span>` : organizer ? `<span class="calendar-event-organizer">Organizer: ${escapeHtml(organizer)}</span>` : ""}
-                    </button>
+                    </article>
                   `;
                 }).join("")}
               </div>
@@ -4315,7 +4423,7 @@
       const haystack = searchableText(event);
       if (!dateWindowMatches(event)) return false;
       if (status !== "all" && event.status !== status) return false;
-      if (vibe !== "all" && !event.vibe.includes(vibe)) return false;
+      if (vibe !== "all" && !event.vibe.includes(vibe) && !eventSoundTags(event).includes(vibe) && !eventDecisionTags(event).includes(vibe)) return false;
       if (!eventVenueGroupMatches(event, venue)) return false;
       if (query && !haystack.includes(query)) return false;
       return true;
@@ -4363,8 +4471,14 @@
           event.stopPropagation();
           openModal(events.find(item => item.id === button.dataset.id));
         });
+        button.addEventListener("keydown", event => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openModal(events.find(item => item.id === button.dataset.id));
+          }
+        });
       });
-      calendarEl.querySelectorAll(".event-link").forEach(link => {
+      calendarEl.querySelectorAll(".event-link, .calendar-event a").forEach(link => {
         link.addEventListener("click", event => event.stopPropagation());
       });
       updateStats();
@@ -4408,11 +4522,11 @@
             <div class="card-top"><span>${escapeHtml(event.date)}</span><span>${escapeHtml(event.time)}</span></div>
             <h3>${escapeHtml(event.title)}</h3>
             ${organizer ? `<div class="organizer-line"><span>Organizer</span><b>${escapeHtml(organizer)}</b>${organizerSocialLinkHtml(event)}</div>` : ""}
-            <div class="venue">${escapeHtml(event.venue)} · ${escapeHtml(event.district)}</div>
-            <p class="description">${escapeHtml(event.description)}</p>
+            <div class="venue">${venueGuideLinkHtml(event.venue)} · ${escapeHtml(event.district)}</div>
+            <p class="description">${escapeHtml(publicText(event.description))}</p>
             ${festival ? festivalSummaryHtml(event) : `
               <div class="lineup-preview">
-                ${lineupFor(event).slice(0, 2).map(item => `<span><b>${escapeHtml(item.name)}</b>: ${escapeHtml(item.note)}</span>`).join("")}
+                ${lineupFor(event).slice(0, 2).map(item => `<span><b>${djProfileLinksHtml(item.name)}</b>: ${escapeHtml(publicText(item.note))}</span>`).join("")}
               </div>
               <div class="set-preview">
                 <div class="set-preview-top"><span>DJ set times</span><b>${escapeHtml(setTimeSummary(event))}</b></div>
@@ -4426,7 +4540,7 @@
             <div class="chips">
               <span class="chip ${confidenceClass(event)}">${escapeHtml(event.confidence)}</span>
               ${festival ? `<span class="chip">festival</span>` : ""}
-              ${event.vibe.slice(0, 3).map(vibe => `<span class="chip">${escapeHtml(vibe)}</span>`).join("")}
+              ${eventSignalChips(event, 4).map(tag => `<span class="chip">${escapeHtml(tag)}</span>`).join("")}
               <span class="chip">${escapeHtml(event.genre.split(",")[0])}</span>
             </div>
           </div>
@@ -4523,7 +4637,7 @@
       document.getElementById("modalPoster").alt = visual.alt;
       document.getElementById("modalTitle").textContent = event.title;
       document.getElementById("modalMeta").textContent = `${event.date}, ${event.time} · ${event.venue}, ${event.district}`;
-      document.getElementById("modalDescription").textContent = event.description;
+      document.getElementById("modalDescription").textContent = publicText(event.description);
       const modalFacts = festival ? [
         ["Kind", "Festival / multi-event lead"],
         ["Format", event.festival?.format || event.genre],
@@ -4556,12 +4670,12 @@
           ${lineupFor(event).map(item => `
             <li class="dj-note">
               <b>${djProfileLinksHtml(item.name)}</b>
-              <span>${escapeHtml(item.note)}</span>
+              <span>${escapeHtml(publicText(item.note))}</span>
             </li>
           `).join("")}
         </ul>
       `;
-      document.getElementById("modalChips").innerHTML = `${festival ? `<span class="chip">festival</span>` : ""}${event.vibe.map(vibe => `<span class="chip">${escapeHtml(vibe)}</span>`).join("")}`;
+      document.getElementById("modalChips").innerHTML = `${festival ? `<span class="chip">festival</span>` : ""}${eventSignalChips(event, 8).map(tag => `<span class="chip">${escapeHtml(tag)}</span>`).join("")}`;
       document.getElementById("modalActions").innerHTML = `
         ${eventActionLinksHtml(event, "modal")}
         <button class="button-link secondary ics-event" type="button">Download .ics</button>

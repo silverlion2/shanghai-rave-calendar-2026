@@ -472,6 +472,11 @@
       border-bottom: 1px solid var(--line);
     }
 
+    .profile-hero:target {
+      outline: 2px solid rgba(198,255,59,.74);
+      outline-offset: -2px;
+    }
+
     .profile-avatar {
       width: 150px;
       height: 150px;
@@ -1014,11 +1019,22 @@
         <select class="select" id="soundFilter" aria-label="Sound filter">
           <option value="all">All sounds</option>
           <option value="techno">Techno</option>
+          <option value="hard-techno">Hard techno</option>
+          <option value="industrial">Industrial</option>
+          <option value="groovy">Groovy</option>
+          <option value="hypnotic">Hypnotic</option>
+          <option value="minimal">Minimal</option>
+          <option value="melodic">Melodic</option>
+          <option value="acid">Acid</option>
+          <option value="trance-adjacent">Trance-adjacent</option>
           <option value="hard">Hard / industrial</option>
           <option value="experimental">Experimental</option>
           <option value="bass">Bass / club</option>
+          <option value="bass-hybrid">Bass hybrid</option>
           <option value="date">Date-friendly</option>
           <option value="live">Live / A/V</option>
+          <option value="live-av">Live / A/V refined</option>
+          <option value="warehouse">Warehouse</option>
         </select>
       </label>
       <label class="filter-field">
@@ -1142,6 +1158,24 @@
 
     function slugify(value) {
       return String(value || "dj").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "dj";
+    }
+
+    function publicText(value) {
+      return String(value ?? "")
+        .replace(/\bResident Advisor\b/g, "event directory")
+        .replace(/\bRA[-\s]+listed\b/gi, "listed")
+        .replace(/\bRA[-\s]+published\b/gi, "published")
+        .replace(/\bRA\s+/g, "directory ")
+        .replace(/\bRA\b/g, "directory");
+    }
+
+    function profileHash(slug) {
+      return `#dj-${encodeURIComponent(slug)}`;
+    }
+
+    function slugFromHash(hash = window.location.hash) {
+      const raw = decodeURIComponent(String(hash || "").replace(/^#/, ""));
+      return raw.replace(/^dj-/, "");
     }
 
     function splitPerformerNames(name) {
@@ -1459,7 +1493,28 @@
     }
 
     function eventTicketUrl(event) {
-      return event.ticketUrl || event.ticket || event.source || "#";
+      const destination = event.ticketUrl || event.ticket || event.source || "#";
+      if (!/^https?:\/\//i.test(destination)) return destination;
+      return `ticket.html?event=${encodeURIComponent(event.id)}&to=${encodeURIComponent(destination)}`;
+    }
+
+    const soundTagLabelMap = {
+      "hard-techno": "hard techno",
+      industrial: "industrial",
+      groovy: "groovy",
+      hypnotic: "hypnotic",
+      minimal: "minimal",
+      melodic: "melodic",
+      acid: "acid",
+      "trance-adjacent": "trance-adjacent",
+      "bass-hybrid": "bass hybrid",
+      "live-av": "live / A/V",
+      warehouse: "warehouse",
+      rooftop: "rooftop"
+    };
+
+    function tagLabel(tag) {
+      return soundTagLabelMap[tag] || String(tag || "").replace(/-/g, " ");
     }
 
     function eventLineup(event) {
@@ -1482,8 +1537,9 @@
     }
 
     function familyTagsFor(profile) {
-      const text = [profile.name, profile.genres.join(" "), profile.vibes.join(" "), profile.notes.join(" ")].join(" ").toLowerCase();
+      const text = [profile.name, profile.genres.join(" "), profile.vibes.join(" "), profile.soundTags.join(" "), profile.notes.join(" ")].join(" ").toLowerCase();
       const tags = [];
+      tags.push(...profile.soundTags);
       if (text.includes("techno") || text.includes("electro") || text.includes("machine")) tags.push("techno");
       if (text.includes("hard") || text.includes("industrial") || text.includes("hardcore") || text.includes("rave") || text.includes("trance")) tags.push("hard");
       if (text.includes("experimental") || text.includes("ambient") || text.includes("idm") || text.includes("a/v") || text.includes("radio")) tags.push("experimental");
@@ -1543,6 +1599,8 @@
             district: event.district,
             genre: event.genre,
             vibe: Array.isArray(event.vibe) ? event.vibe : [],
+            soundTags: Array.isArray(event.soundTags) ? event.soundTags : [],
+            decisionTags: Array.isArray(event.decisionTags) ? event.decisionTags : [],
             confidence: event.confidence,
             status: appearanceStatus(event),
             sourceStatus: sourceStatusFor(event),
@@ -1602,12 +1660,14 @@
           return timeToMinutes(a.time) - timeToMinutes(b.time);
         });
         profile.vibes = unique(profile.appearances.flatMap(app => app.vibe));
+        profile.soundTags = unique(profile.appearances.flatMap(app => app.soundTags));
         profile.genres = unique(profile.appearances.flatMap(app => String(app.genre || "").split(",").map(item => item.trim()))).slice(0, 10);
         const tracked = trackedDataFor(profile);
         if (tracked) {
           profile.tracked = tracked;
           profile.imageTheme = tracked.imageTheme || profile.imageTheme;
           profile.genres = unique(profile.genres.concat(tracked.genres || [])).slice(0, 12);
+          profile.soundTags = unique(profile.soundTags.concat(tracked.soundTags || []));
           if (tracked.summary) profile.summary = tracked.summary;
         }
         profile.months = unique(profile.appearances.map(app => app.month));
@@ -1633,7 +1693,7 @@
         profile.searchText = [
           profile.name,
           profile.notes.join(" "),
-          profile.appearances.map(app => [app.title, app.venue, app.genre, app.date].join(" ")).join(" "),
+          profile.appearances.map(app => [app.title, app.venue, app.genre, app.soundTags.join(" "), app.date].join(" ")).join(" "),
           globalRows.map(row => [row.title, row.city, row.country, row.venue, row.date].join(" ")).join(" ")
         ].join(" ").toLowerCase();
         return profile;
@@ -1741,7 +1801,7 @@
     }
 
     function noteRows(profile) {
-      return profile.notes.slice(0, 5).map(note => `<div class="note-row">${escapeHtml(note)}</div>`).join("")
+      return profile.notes.slice(0, 5).map(note => `<div class="note-row">${escapeHtml(publicText(note))}</div>`).join("")
         || '<div class="note-row">No specific DJ note is available yet. Check linked event sources before planning around the artist.</div>';
     }
 
@@ -1761,7 +1821,7 @@
         ["Status mix", statusText.join(", ") || "TBA"],
         ["Last checked", profile.lastChecked],
         ["Source count", String(profile.sourceCount)],
-        ["Sounds", profile.soundFamilies.join(", ")]
+        ["Sounds", profile.soundFamilies.map(tagLabel).join(", ")]
       ].map(([label, value]) => `<div class="fact"><span>${escapeHtml(label)}</span><b>${escapeHtml(value)}</b></div>`).join("");
     }
 
@@ -1786,7 +1846,7 @@
       const sources = tracked && Array.isArray(tracked.sources) ? tracked.sources : [];
       return sources.map(source => `
         <div class="tracker-source-row">
-          <a href="${escapeHtml(source.url || "#")}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label || "Source")}</a>
+          <a href="${escapeHtml(source.url || "#")}" target="_blank" rel="noopener noreferrer">${escapeHtml(publicText(source.label || "Source"))}</a>
           <span>${escapeHtml(source.status || "source")} / checked ${escapeHtml(source.checked || tracked.trackedAt || verified)}</span>
         </div>
       `).join("") || '<div class="note-row">No tracker source list is attached yet.</div>';
@@ -1805,7 +1865,7 @@
           <div class="event-main">
             <h3>${escapeHtml(row.title || tracked?.name || profile.name)}</h3>
             <div class="world-location">${escapeHtml([row.venue, row.city, row.country].filter(Boolean).join(", "))}</div>
-            ${row.note ? `<div class="world-note">${escapeHtml(row.note)}</div>` : ""}
+            ${row.note ? `<div class="world-note">${escapeHtml(publicText(row.note))}</div>` : ""}
             <div class="chips">
               <span class="status-pill ${globalStatusClass(row.computedStatus)}">${escapeHtml(globalStatusLabel(row.computedStatus))}</span>
               <span class="status-pill ${statusClass(row.sourceStatus)}">${escapeHtml(sourceStatusLabel(row.sourceStatus))}</span>
@@ -1816,7 +1876,7 @@
           </div>
           <div class="event-actions">
             ${row.calendarId ? `<a class="mini-link primary" href="${calendarUrl({ id: row.calendarId })}">Open in calendar</a>` : ""}
-            <a class="mini-link secondary" href="${escapeHtml(row.source || "#")}" target="_blank" rel="noopener noreferrer">${escapeHtml(row.sourceLabel || "Source")}</a>
+            <a class="mini-link secondary" href="${escapeHtml(row.source || "#")}" target="_blank" rel="noopener noreferrer">${escapeHtml(publicText(row.sourceLabel || "Source"))}</a>
           </div>
         </article>
       `).join("");
@@ -1826,7 +1886,7 @@
           <div class="world-itinerary-top">
             <div>
               <b>${escapeHtml(tracked?.scope || "Calendar-linked itinerary for this DJ")}</b>
-              <p>${escapeHtml(tracked?.sourceNote || "This profile shows every past, upcoming, and watch-level appearance currently known in the Shanghai Rave Index. Worldwide tour rows appear here when curated from official or high-signal sources.")}</p>
+              <p>${escapeHtml(publicText(tracked?.sourceNote || "This profile shows every past, upcoming, and watch-level appearance currently known in the Shanghai Rave Index. Worldwide tour rows appear here when curated from official or high-signal sources."))}</p>
             </div>
             <div class="chips">
               <span class="count-pill">${future} future</span>
@@ -1921,13 +1981,13 @@
       }
       selectedSlug = profile.slug;
       const tracked = trackedDataFor(profile);
-      const chips = unique(profile.vibes.concat(profile.genres.slice(0, 5))).slice(0, 9).map(tag => `<span class="chip">${escapeHtml(tag)}</span>`).join("");
+      const chips = unique(profile.soundTags.map(tagLabel).concat(profile.vibes, profile.genres.slice(0, 5))).slice(0, 9).map(tag => `<span class="chip">${escapeHtml(tag)}</span>`).join("");
       profilePanel.innerHTML = `
-        <div class="profile-hero">
+        <div class="profile-hero" id="dj-${escapeHtml(profile.slug)}">
           <img class="profile-avatar" src="${avatarSvg(profile)}" alt="Generated profile artwork for ${escapeHtml(profile.name)}">
           <div class="profile-title">
             <h2>${escapeHtml(profile.name)}</h2>
-            <p class="profile-summary">${escapeHtml(profile.summary)}</p>
+            <p class="profile-summary">${escapeHtml(publicText(profile.summary))}</p>
             <div class="chips">${chips}</div>
             <div class="chips">
               <button class="copy-link" type="button" id="copyProfileLink">Copy profile link</button>
@@ -1954,11 +2014,11 @@
       `;
       const copy = document.getElementById("copyProfileLink");
       copy.addEventListener("click", () => {
-        const link = `${window.location.href.split("#")[0]}#${profile.slug}`;
+        const link = `${window.location.href.split("#")[0]}${profileHash(profile.slug)}`;
         if (navigator.clipboard && navigator.clipboard.writeText) {
           navigator.clipboard.writeText(link).then(() => { copy.textContent = "Copied"; });
         } else {
-          copy.textContent = `#${profile.slug}`;
+          copy.textContent = profileHash(profile.slug);
         }
         setTimeout(() => { copy.textContent = "Copy profile link"; }, 1600);
       });
@@ -1970,12 +2030,12 @@
         return;
       }
       rosterGrid.innerHTML = list.slice(0, 42).map(profile => {
-        const tags = profile.soundFamilies.slice(0, 3).map(tag => `<span class="chip">${escapeHtml(tag)}</span>`).join("");
+        const tags = profile.soundFamilies.slice(0, 3).map(tag => `<span class="chip">${escapeHtml(tagLabel(tag))}</span>`).join("");
         const trackerChip = profile.globalItineraryCount ? `<span class="chip">${profile.globalItineraryCount} global dates</span>` : "";
         return `
           <button class="dj-card ${profile.slug === selectedSlug ? "active" : ""}" type="button" data-profile="${escapeHtml(profile.slug)}">
             <div class="card-top"><img class="card-avatar" src="${avatarSvg(profile)}" alt=""><b>${escapeHtml(profile.name)}</b></div>
-            <p>${escapeHtml(profile.summary)}</p>
+            <p>${escapeHtml(publicText(profile.summary))}</p>
             <div class="chips">${tags}${trackerChip}<span class="chip">${profile.itineraryCount} itinerary</span></div>
           </button>
         `;
@@ -2001,20 +2061,28 @@
       renderRoster(list);
     }
 
+    function scrollProfileTarget(behavior = "smooth") {
+      const target = document.getElementById(`dj-${selectedSlug}`);
+      (target || profilePanel).scrollIntoView({ behavior, block: "start" });
+    }
+
     function selectProfile(slug, updateHash) {
       selectedSlug = slug;
-      if (updateHash) history.replaceState(null, "", `#${slug}`);
+      if (updateHash) history.replaceState(null, "", profileHash(slug));
       renderApp();
-      profilePanel.scrollIntoView({ behavior: "smooth", block: "start" });
+      scrollProfileTarget("smooth");
     }
 
     function hydrateEvents(events) {
       const activeEvents = Array.isArray(events) && events.length ? events : sourceData.events;
       profiles = buildProfiles(activeEvents);
-      const hashSlug = decodeURIComponent(window.location.hash.replace(/^#/, ""));
+      const hashSlug = slugFromHash();
       selectedSlug = profiles.some(profile => profile.slug === hashSlug) ? hashSlug : (profiles[0] ? profiles[0].slug : "");
       renderMonthOptions();
       renderApp();
+      if (hashSlug && profiles.some(profile => profile.slug === hashSlug)) {
+        window.requestAnimationFrame(() => scrollProfileTarget("auto"));
+      }
     }
 
     async function loadExternalEvents() {
@@ -2047,10 +2115,11 @@
         if (button) selectProfile(button.dataset.profile, true);
       });
       window.addEventListener("hashchange", () => {
-        const slug = decodeURIComponent(window.location.hash.replace(/^#/, ""));
+        const slug = slugFromHash();
         if (profiles.some(profile => profile.slug === slug)) {
           selectedSlug = slug;
           renderApp();
+          window.requestAnimationFrame(() => scrollProfileTarget("smooth"));
         }
       });
     }

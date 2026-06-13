@@ -1,6 +1,6 @@
 # Source Log
 
-Last refreshed: 2026-06-11, Asia/Shanghai.
+Last refreshed: 2026-06-14, Asia/Shanghai.
 
 ## Source Priority
 
@@ -11,6 +11,14 @@ Last refreshed: 2026-06-11, Asia/Shanghai.
 5. Public social posts, WeChat mini-program references, Xiaohongshu, Douyin, Instagram, and reposts as discovery leads only.
 
 Collection method is separate from confirmation strength: Chrome + Computer Use can discover or verify a source, but an event still needs a shareable official, ticketing, venue/promoter, RA, SmartShanghai, or artist/label reference before it is promoted from watch-level to upcoming.
+
+## 2026-06-14 RA Clubs Directory Import
+
+Imported the RA Shanghai clubs directory at `https://ra.co/clubs/cn/shanghai` into `data/ra-venues.js` as structured system data. The import preserves duplicate directory rows where RA lists multiple entries for the same venue name.
+
+The public `venues.html` guide keeps curated/event-specific source buttons. RA is used there only as imported venue-directory metadata for matching names and addresses, not as a replacement source for every venue card.
+
+Direct local fetch to the RA clubs page returned 403, matching prior RA access behavior, so this is a captured directory import rather than a live automated dependency. Re-run the import only with browser-visible public directory text and record the checked date.
 
 ## 2026-06-11 DJ Itinerary Tracking
 
