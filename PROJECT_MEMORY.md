@@ -632,3 +632,11 @@ Future recall command:
 ```bash
 npm run posters:upload
 ```
+
+Result saved:
+
+- `npm run posters:upload` was run successfully against the deployed Supabase project.
+- Supabase verification confirmed `poster_archive` has 20/20 optimized display paths and `events.poster_url` has 20/20 optimized poster paths.
+- Five small posters that previously used raw paths now have optimized files: `afrowave-takeover-la-burg`, `night-at-museum-90s-disco`, `nova-summer-splash-pool-party`, `nova-sunset-sessions-flair`, and `sunset-sundays-dome`.
+- The poster workflow was committed and pushed to `main` in commit `1d7431c` (`Automate poster compression upload workflow`).
+- `npm run check` passed after the workflow and upload changes.
