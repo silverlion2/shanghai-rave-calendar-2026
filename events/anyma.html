@@ -10,6 +10,16 @@
   <link rel="canonical" href="https://raveindexsh.top/events/anyma">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" href="/og-image.png" type="image/png">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HP6NQ3VZB9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-HP6NQ3VZB9");
+  </script>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Shanghai Rave Index">
   <meta property="og:title" content="Anyma presents ÆDEN | Shanghai Rave Index">
@@ -63,8 +73,8 @@
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Events",
-          "item": "https://raveindexsh.top/events"
+          "name": "Wall",
+          "item": "https://raveindexsh.top/poster-wall"
         },
         {
           "@type": "ListItem",
@@ -196,27 +206,30 @@
       .site-nav { align-items: flex-start; }
     }
   </style>
+  <link rel="stylesheet" href="../assets/basement-dispatch.css">
 </head>
 <body>
 
-      <main class="shell">
-        
+      <main class="shell dispatch-shell">
+
     <nav class="site-nav" aria-label="Site navigation">
       <div class="nav-group">
         <a class="nav-link" href="../index.html">Calendar</a>
-        <a class="nav-link active" href="../events/index.html">Events</a>
-        <a class="nav-link" href="../poster-wall.html">Wall</a>
+        <a class="nav-link active" href="../poster-wall.html">Wall</a>
+        <a class="nav-link" href="../love-wall.html">Love</a>
+        <a class="nav-link" href="../poster-archive.html">Archive</a>
         <a class="nav-link" href="../planner.html">Planner</a>
+        <a class="nav-link" href="../rave-everywhere.html">Everywhere</a>
         <a class="nav-link" href="../venues.html">Venues</a>
         <a class="nav-link" href="../djs.html">DJs</a>
       </div>
       <span>Basement Dispatch / source-first calendar</span>
     </nav>
-  
+
         <nav class="crumbs" aria-label="Breadcrumb">
           <a href="../index.html">Calendar</a>
           <span>/</span>
-          <a href="index.html">Events</a>
+          <a href="../poster-wall.html">Wall</a>
           <span>/</span>
           <span>Anyma presents ÆDEN</span>
         </nav>
@@ -254,17 +267,46 @@
           <section class="copy-block">
             <h2>Source Trail</h2>
             <ul class="source-list">
-              
+
       <li>
         <a href="https://www.anyma.com/china" target="_blank" rel="noopener noreferrer">Anyma official</a>
         <span>secondary / checked 2026-06-08</span>
       </li>
-    
+
             </ul>
-            
+
           </section>
         </article>
+
+    <footer class="footnotes bottom-dispatch-bar" aria-label="Basement Dispatch status">
+      <div class="bar-cell update-cell">
+        <span class="footer-alert-mark" aria-hidden="true">!</span>
+        <strong>Event data<br>can move</strong>
+      </div>
+      <div class="bar-cell">
+        <span>Generated pages mirror the public calendar format.</span>
+        <span>Confirm source links before planning around details.</span>
+      </div>
+      <address class="bar-cell">
+        <span>Questions or updates?</span>
+        <a href="mailto:info@shanghairaveindex.com">info@shanghairaveindex.com</a>
+        <span>IG @shanghairaveindex</span>
+      </address>
+      <div class="bar-cell">
+        <span>Information is aggregated from public sources and may change.</span>
+        <span>Watchlist leads stay noindexed until stronger evidence lands.</span>
+      </div>
+      <a class="bar-cell ops-cell" href="../ops.html" aria-label="Open Ops desk">
+        <span>Ops desk</span>
+        <b>Review queue -></b>
+      </a>
+      <div class="bar-cell source-cell">
+        <span>Source first</span>
+        <span>Rave second</span>
+      </div>
+    </footer>
+
       </main>
-    
+
 </body>
 </html>

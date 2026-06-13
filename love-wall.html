@@ -1,0 +1,1061 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rave Love Wall | Shanghai Rave Index</title>
+  <meta name="description" content="A local love wall for audience notes about why raving still matters: bass, care, freedom, sweat, and after-hours community.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#ff552f">
+  <link rel="canonical" href="https://raveindexsh.top/love-wall">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" href="/og-image.png" type="image/png">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HP6NQ3VZB9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-HP6NQ3VZB9");
+  </script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shanghai Rave Index">
+  <meta property="og:title" content="Rave Love Wall | Shanghai Rave Index">
+  <meta property="og:description" content="Audience love notes for the dancefloor: bass, care, freedom, sweat, and after-hours community.">
+  <meta property="og:url" content="https://raveindexsh.top/love-wall">
+  <meta property="og:image" content="https://raveindexsh.top/og-image.png">
+  <meta property="og:image:alt" content="Preview of the Shanghai Rave Index rave love wall">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Rave Love Wall | Shanghai Rave Index",
+    "url": "https://raveindexsh.top/love-wall",
+    "description": "A local love wall for audience notes about why raving still matters: bass, care, freedom, sweat, and after-hours community.",
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Shanghai Rave Index",
+      "url": "https://raveindexsh.top/"
+    },
+    "about": [
+      "rave culture",
+      "Shanghai nightlife community",
+      "audience love notes"
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      color-scheme: dark;
+      --love-ink: #f3eee4;
+      --love-paper: #e5ded1;
+      --love-muted: #aaa59b;
+      --love-dim: #77746c;
+      --love-void: #050606;
+      --love-panel: #0a0b0a;
+      --love-line: rgba(229, 222, 209, .22);
+      --love-cyan: #36c7e7;
+      --love-gold: #d7a928;
+      --love-ember: #ff552f;
+      --love-rose: #ff5b75;
+      --font-display: "Barlow Condensed", "Impact", "Haettenschweiler", sans-serif;
+      --font-mono: "IBM Plex Mono", "Cascadia Mono", "Consolas", monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      letter-spacing: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      overflow-x: hidden;
+      color: var(--love-ink);
+      background:
+        radial-gradient(circle at 76% 0, rgba(255, 85, 47, .18), transparent 32%),
+        radial-gradient(circle at 14% 14%, rgba(54, 199, 231, .12), transparent 26%),
+        repeating-linear-gradient(0deg, rgba(255, 255, 255, .025) 0 1px, transparent 1px 6px),
+        repeating-linear-gradient(90deg, rgba(255, 255, 255, .018) 0 1px, transparent 1px 36px),
+        #050606;
+      font-family: var(--font-mono);
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      opacity: .38;
+      background:
+        linear-gradient(102deg, transparent 0 44%, rgba(229, 222, 209, .08) 44.1% 44.4%, transparent 44.5%),
+        repeating-linear-gradient(113deg, rgba(255, 255, 255, .035) 0 1px, transparent 1px 18px);
+      mix-blend-mode: screen;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    .love-page {
+      display: grid;
+      gap: 16px;
+    }
+
+    .love-nav {
+      margin-bottom: 0;
+    }
+
+    .love-hero {
+      min-height: min(76vh, 760px);
+      display: grid;
+      grid-template-columns: minmax(290px, .78fr) minmax(340px, 1fr);
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    .love-headline,
+    .love-console,
+    .love-card,
+    .love-compose,
+    .love-strip,
+    .love-note,
+    .love-empty {
+      border: 1px solid var(--love-line);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, .026), rgba(0, 0, 0, .12)),
+        rgba(8, 10, 9, .88);
+    }
+
+    .love-headline {
+      position: relative;
+      min-height: 520px;
+      display: grid;
+      align-content: end;
+      overflow: hidden;
+      padding: clamp(20px, 3vw, 34px);
+    }
+
+    .love-headline::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: .42;
+      background:
+        linear-gradient(180deg, transparent 12%, rgba(5, 6, 6, .72) 64%, rgba(5, 6, 6, .94)),
+        repeating-linear-gradient(0deg, rgba(255, 255, 255, .08) 0 1px, transparent 1px 10px);
+      pointer-events: none;
+    }
+
+    .love-poster-stack {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-rows: repeat(2, minmax(0, 1fr));
+      gap: 0;
+    }
+
+    .love-poster-stack img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      filter: grayscale(.62) contrast(1.32) brightness(.62);
+    }
+
+    .love-poster-stack img:nth-child(2n) {
+      filter: grayscale(.38) sepia(.25) hue-rotate(330deg) saturate(1.42) contrast(1.28) brightness(.62);
+    }
+
+    .love-title-block {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      gap: 11px;
+      max-width: 580px;
+    }
+
+    .kicker {
+      margin: 0;
+      color: var(--love-cyan);
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      font-family: var(--font-display);
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 560px;
+      color: var(--love-paper);
+      font-size: clamp(56px, 7.6vw, 112px);
+      line-height: .82;
+      text-shadow: 0 2px 0 rgba(0, 0, 0, .9);
+    }
+
+    .dispatch-strip {
+      width: max-content;
+      max-width: 100%;
+      display: inline-block;
+      padding: 6px 10px;
+      color: var(--love-void);
+      background: var(--love-paper);
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+      transform: rotate(-1deg);
+    }
+
+    .love-copy {
+      max-width: 660px;
+      margin: 0;
+      color: var(--love-paper);
+      background: rgba(5, 6, 6, .68);
+      border-left: 3px solid var(--love-cyan);
+      padding: 8px 11px;
+      font-size: 15px;
+      line-height: 1.5;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, .92);
+    }
+
+    .love-console {
+      display: grid;
+      grid-template-rows: auto auto minmax(0, 1fr);
+      gap: 12px;
+      min-height: 520px;
+      padding: 14px;
+    }
+
+    .love-readouts {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .love-card {
+      min-height: 108px;
+      display: grid;
+      align-content: space-between;
+      padding: 12px;
+    }
+
+    .love-card b {
+      color: var(--accent, var(--love-cyan));
+      font-family: var(--font-display);
+      font-size: clamp(34px, 5vw, 58px);
+      font-weight: 900;
+      line-height: .82;
+    }
+
+    .love-card span,
+    .field-label,
+    .note-meta,
+    .wall-status {
+      color: var(--love-muted);
+      font-size: 11px;
+      font-weight: 900;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+
+    .love-compose {
+      display: grid;
+      gap: 10px;
+      padding: 13px;
+    }
+
+    .compose-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 170px;
+      gap: 10px;
+    }
+
+    .field {
+      display: grid;
+      gap: 6px;
+      min-width: 0;
+    }
+
+    .input,
+    .select,
+    .textarea {
+      width: 100%;
+      border: 1px solid rgba(229, 222, 209, .28);
+      border-radius: 0;
+      outline: none;
+      color: var(--love-paper);
+      background: rgba(5, 6, 6, .9);
+      padding: 10px 11px;
+    }
+
+    .input,
+    .select {
+      min-height: 44px;
+    }
+
+    .textarea {
+      min-height: 108px;
+      resize: vertical;
+      line-height: 1.45;
+    }
+
+    .input:focus,
+    .select:focus,
+    .textarea:focus {
+      border-color: var(--love-cyan);
+      box-shadow: 0 0 0 2px rgba(54, 199, 231, .18);
+    }
+
+    .compose-actions,
+    .wall-tools,
+    .filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .button,
+    .filter-button {
+      min-height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(229, 222, 209, .26);
+      border-radius: 0;
+      color: var(--love-paper);
+      background: rgba(5, 6, 6, .76);
+      padding: 9px 12px;
+      font-family: var(--font-display);
+      font-size: 15px;
+      font-weight: 900;
+      line-height: 1;
+      text-decoration: none;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .button.primary,
+    .filter-button.active,
+    .button:hover,
+    .filter-button:hover {
+      color: var(--love-void);
+      border-color: var(--love-cyan);
+      background: var(--love-cyan);
+    }
+
+    .button.warn:hover {
+      border-color: var(--love-ember);
+      background: var(--love-ember);
+    }
+
+    .love-prompts {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      min-height: 0;
+    }
+
+    .prompt-tile {
+      min-height: 116px;
+      display: grid;
+      align-content: space-between;
+      border: 1px solid rgba(229, 222, 209, .2);
+      color: var(--love-paper);
+      background:
+        linear-gradient(135deg, rgba(255, 85, 47, .1), transparent 46%),
+        rgba(5, 6, 6, .58);
+      padding: 11px;
+    }
+
+    .prompt-tile b {
+      color: var(--love-gold);
+      font-family: var(--font-display);
+      font-size: 21px;
+      font-weight: 900;
+      line-height: .98;
+      text-transform: uppercase;
+    }
+
+    .prompt-tile span {
+      color: var(--love-muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+
+    .love-strip {
+      display: grid;
+      gap: 12px;
+      padding: 14px;
+    }
+
+    .wall-headline {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 14px;
+      border-bottom: 1px solid rgba(229, 222, 209, .16);
+      padding-bottom: 12px;
+    }
+
+    .wall-headline h2 {
+      color: var(--love-paper);
+      font-size: clamp(32px, 5vw, 58px);
+      line-height: .86;
+    }
+
+    .wall-tools {
+      justify-content: space-between;
+    }
+
+    .search {
+      flex: 1 1 260px;
+      min-width: min(100%, 260px);
+    }
+
+    .love-wall {
+      columns: 270px 4;
+      column-gap: 12px;
+    }
+
+    .love-note {
+      width: 100%;
+      display: inline-grid;
+      break-inside: avoid;
+      gap: 14px;
+      margin: 0 0 12px;
+      padding: 14px;
+      color: var(--love-paper);
+    }
+
+    .love-note[data-pulse="bass"] {
+      border-color: rgba(54, 199, 231, .48);
+      background:
+        linear-gradient(160deg, rgba(54, 199, 231, .11), transparent 44%),
+        rgba(8, 10, 9, .9);
+    }
+
+    .love-note[data-pulse="sweat"] {
+      border-color: rgba(255, 85, 47, .5);
+      background:
+        linear-gradient(160deg, rgba(255, 85, 47, .12), transparent 44%),
+        rgba(8, 10, 9, .9);
+    }
+
+    .love-note[data-pulse="care"] {
+      border-color: rgba(215, 169, 40, .52);
+      background:
+        linear-gradient(160deg, rgba(215, 169, 40, .12), transparent 44%),
+        rgba(8, 10, 9, .9);
+    }
+
+    .love-note[data-pulse="freedom"] {
+      border-color: rgba(255, 91, 117, .46);
+      background:
+        linear-gradient(160deg, rgba(255, 91, 117, .12), transparent 44%),
+        rgba(8, 10, 9, .9);
+    }
+
+    .love-note[data-pulse="afterglow"] {
+      border-color: rgba(229, 222, 209, .34);
+      background:
+        linear-gradient(160deg, rgba(229, 222, 209, .08), transparent 44%),
+        rgba(8, 10, 9, .9);
+    }
+
+    .note-top,
+    .note-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .note-pulse {
+      min-height: 25px;
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid currentColor;
+      color: var(--pulse-color, var(--love-cyan));
+      padding: 4px 7px;
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .love-note blockquote {
+      margin: 0;
+      color: var(--love-paper);
+      font-family: var(--font-display);
+      font-size: clamp(26px, 3.1vw, 42px);
+      font-weight: 900;
+      line-height: .96;
+      text-transform: uppercase;
+      overflow-wrap: anywhere;
+    }
+
+    .love-note:nth-child(3n) blockquote {
+      font-size: clamp(22px, 2.6vw, 34px);
+    }
+
+    .note-author {
+      color: var(--love-cyan);
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .note-local {
+      color: var(--love-ember);
+    }
+
+    .love-empty {
+      padding: 24px;
+      color: var(--love-muted);
+      line-height: 1.45;
+    }
+
+    .share-box {
+      position: absolute;
+      left: -9999px;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+    }
+
+    @media (max-width: 1180px) {
+      .love-hero {
+        grid-template-columns: 1fr;
+      }
+
+      .love-headline,
+      .love-console {
+        min-height: auto;
+      }
+
+      .love-headline {
+        min-height: 500px;
+      }
+
+      .love-wall {
+        column-count: 3;
+      }
+    }
+
+    @media (max-width: 780px) {
+      .love-page {
+        gap: 12px;
+      }
+
+      .love-hero,
+      .compose-grid,
+      .love-prompts,
+      .love-readouts {
+        grid-template-columns: 1fr;
+      }
+
+      .love-headline {
+        min-height: 440px;
+        padding: 18px;
+      }
+
+      h1 {
+        font-size: clamp(50px, 16vw, 78px);
+      }
+
+      .wall-headline,
+      .wall-tools {
+        display: grid;
+        align-items: start;
+      }
+
+      .filter-button,
+      .button {
+        flex: 1 1 auto;
+      }
+
+      .love-wall {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .love-headline {
+        min-height: 390px;
+      }
+
+      .love-poster-stack {
+        grid-template-columns: 1fr;
+      }
+
+      .love-poster-stack img:nth-child(n + 3) {
+        display: none;
+      }
+
+      .love-wall {
+        column-count: 1;
+      }
+
+      .love-note blockquote {
+        font-size: 27px;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="assets/basement-dispatch.css">
+</head>
+<body>
+  <main class="shell dispatch-shell love-page">
+    <nav class="site-nav love-nav" aria-label="Site navigation">
+      <div class="nav-group">
+        <a class="nav-link" href="index.html">Calendar</a>
+        <a class="nav-link" href="poster-wall.html">Wall</a>
+        <a class="nav-link active" href="love-wall.html">Love</a>
+        <a class="nav-link" href="poster-archive.html">Archive</a>
+        <a class="nav-link" href="planner.html">Planner</a>
+        <a class="nav-link" href="rave-everywhere.html">Everywhere</a>
+        <a class="nav-link" href="venues.html">Venues</a>
+        <a class="nav-link" href="djs.html">DJs</a>
+        <a class="nav-link" href="ops.html">Ops</a>
+      </div>
+      <span class="tag">Local audience notes</span>
+    </nav>
+
+    <section class="love-hero" aria-label="Rave love wall composer">
+      <header class="love-headline">
+        <div class="love-poster-stack" aria-hidden="true">
+          <img src="assets/posters/santa-k-optimized.jpg" alt="" loading="eager" decoding="async" fetchpriority="high">
+          <img src="assets/posters/synth-crush-optimized.jpg" alt="" loading="eager" decoding="async">
+          <img src="assets/posters/dark-room-optimized.jpg" alt="" loading="lazy" decoding="async">
+          <img src="assets/posters/fruitygroove-soul-navigator-optimized.jpg" alt="" loading="lazy" decoding="async">
+        </div>
+        <div class="love-title-block">
+          <p class="kicker">Audience signal / not a ticket listing</p>
+          <h1>Rave Love Wall</h1>
+          <span class="dispatch-strip">Basement Dispatch / why we still dance</span>
+          <p class="love-copy">A rough public-facing mood board for people who care about raving: the bass pressure, the sweat, the soft hand on a shoulder, the last track before sunrise.</p>
+        </div>
+      </header>
+
+      <section class="love-console" aria-label="Love wall controls">
+        <div class="love-readouts" aria-live="polite">
+          <div class="love-card" style="--accent: var(--love-cyan)">
+            <b id="totalNotes">0</b>
+            <span>visible notes</span>
+          </div>
+          <div class="love-card" style="--accent: var(--love-ember)">
+            <b id="localNotes">0</b>
+            <span>saved in this browser</span>
+          </div>
+          <div class="love-card" style="--accent: var(--love-gold)">
+            <b id="pulseReadout">ALL</b>
+            <span>current pulse</span>
+          </div>
+        </div>
+
+        <form class="love-compose" id="loveForm">
+          <div class="compose-grid">
+            <label class="field">
+              <span class="field-label">Name or crew</span>
+              <input class="input" id="authorInput" maxlength="26" autocomplete="off" placeholder="anonymous dancer">
+            </label>
+            <label class="field">
+              <span class="field-label">Pulse</span>
+              <select class="select" id="pulseInput">
+                <option value="bass">Bass</option>
+                <option value="sweat">Sweat</option>
+                <option value="care">Care</option>
+                <option value="freedom">Freedom</option>
+                <option value="afterglow">Afterglow</option>
+              </select>
+            </label>
+          </div>
+          <label class="field">
+            <span class="field-label">Love note</span>
+            <textarea class="textarea" id="messageInput" maxlength="170" required placeholder="I love raving because..."></textarea>
+          </label>
+          <div class="compose-actions">
+            <button class="button primary" type="submit">Post note</button>
+            <button class="button" type="button" id="promptButton">Load prompt</button>
+            <button class="button warn" type="button" id="clearButton">Clear my notes</button>
+          </div>
+          <span class="wall-status" id="formStatus">Notes stay in this browser until a backend is added.</span>
+        </form>
+
+        <div class="love-prompts" aria-label="Love wall prompt cards">
+          <article class="prompt-tile">
+            <b>What kept you dancing?</b>
+            <span>Sound, crowd, lights, room, stranger kindness, or the ride home.</span>
+          </article>
+          <article class="prompt-tile">
+            <b>Who made it feel safe?</b>
+            <span>Door teams, friends, dancers, bartenders, crews, or the person with water.</span>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <section class="love-strip" aria-label="Audience love notes">
+      <div class="wall-headline">
+        <div>
+          <p class="kicker">Pinned on the wall</p>
+          <h2>Dancefloor notes</h2>
+        </div>
+        <span class="wall-status" id="wallStatus">Starter notes plus this browser's posts</span>
+      </div>
+
+      <div class="wall-tools">
+        <input class="input search" id="searchInput" type="search" placeholder="Search the wall">
+        <div class="filter-row" aria-label="Pulse filters">
+          <button class="filter-button active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="bass">Bass</button>
+          <button class="filter-button" type="button" data-filter="sweat">Sweat</button>
+          <button class="filter-button" type="button" data-filter="care">Care</button>
+          <button class="filter-button" type="button" data-filter="freedom">Freedom</button>
+          <button class="filter-button" type="button" data-filter="afterglow">Afterglow</button>
+        </div>
+        <button class="button" type="button" id="copyButton">Copy wall text</button>
+      </div>
+
+      <div class="love-wall" id="loveWall" aria-live="polite"></div>
+      <textarea class="share-box" id="shareBox" tabindex="-1" aria-hidden="true"></textarea>
+    </section>
+
+    <footer class="footnotes bottom-dispatch-bar" aria-label="Basement Dispatch status">
+      <div class="bar-cell update-cell">
+        <span class="footer-alert-mark" aria-hidden="true">!</span>
+        <strong>Love notes<br>not listings</strong>
+      </div>
+      <div class="bar-cell">
+        <span>This wall is for audience feeling, not verified event facts.</span>
+        <span>Local posts stay in the current browser.</span>
+      </div>
+      <address class="bar-cell">
+        <span>Questions or updates?</span>
+        <a href="mailto:info@shanghairaveindex.com">info@shanghairaveindex.com</a>
+        <span>IG @shanghairaveindex</span>
+      </address>
+      <div class="bar-cell">
+        <span>A public submission wall needs moderation and spam control.</span>
+        <span>This version is ready for product and design review.</span>
+      </div>
+      <a class="bar-cell ops-cell" href="ops.html" aria-label="Open Ops desk">
+        <span>Ops desk</span>
+        <b>Review queue -></b>
+      </a>
+      <div class="bar-cell source-cell">
+        <span>Care first</span>
+        <span>Bass second</span>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    const storageKey = "rave-love-wall-notes-v1";
+    const pulseLabels = {
+      bass: "Bass",
+      sweat: "Sweat",
+      care: "Care",
+      freedom: "Freedom",
+      afterglow: "Afterglow"
+    };
+    const pulseColors = {
+      bass: "var(--love-cyan)",
+      sweat: "var(--love-ember)",
+      care: "var(--love-gold)",
+      freedom: "var(--love-rose)",
+      afterglow: "var(--love-paper)"
+    };
+    const starterNotes = [
+      {
+        id: "seed-bass-1",
+        author: "front left",
+        pulse: "bass",
+        message: "I love the minute the room locks into one low frequency and nobody needs to explain anything.",
+        source: "starter note",
+        createdAt: "2026-06-12"
+      },
+      {
+        id: "seed-care-1",
+        author: "water runner",
+        pulse: "care",
+        message: "Raving is strangers making space for each other while the kick drum does the talking.",
+        source: "starter note",
+        createdAt: "2026-06-12"
+      },
+      {
+        id: "seed-sweat-1",
+        author: "last train missed",
+        pulse: "sweat",
+        message: "The best nights leave salt on your shirt and a cleaner head than when you arrived.",
+        source: "starter note",
+        createdAt: "2026-06-12"
+      },
+      {
+        id: "seed-freedom-1",
+        author: "no vip",
+        pulse: "freedom",
+        message: "I love a floor where nobody asks what you do, only whether you are still dancing.",
+        source: "starter note",
+        createdAt: "2026-06-12"
+      },
+      {
+        id: "seed-afterglow-1",
+        author: "sunrise taxi",
+        pulse: "afterglow",
+        message: "The ride home is quiet because the night already said everything.",
+        source: "starter note",
+        createdAt: "2026-06-12"
+      },
+      {
+        id: "seed-bass-2",
+        author: "basement regular",
+        pulse: "bass",
+        message: "A proper system can turn a hard week into shared electricity.",
+        source: "starter note",
+        createdAt: "2026-06-12"
+      },
+      {
+        id: "seed-care-2",
+        author: "door stamp",
+        pulse: "care",
+        message: "The culture is real when the small gestures are louder than the headliner.",
+        source: "starter note",
+        createdAt: "2026-06-12"
+      },
+      {
+        id: "seed-sweat-2",
+        author: "floor witness",
+        pulse: "sweat",
+        message: "No table service, no performance, just bodies finding the same engine.",
+        source: "starter note",
+        createdAt: "2026-06-12"
+      }
+    ];
+    const prompts = [
+      "I love raving because the bass makes the city feel honest.",
+      "The dancefloor gave me back a version of myself I had misplaced.",
+      "My favorite rave moment is when strangers protect the same pocket of space.",
+      "I keep coming back for the lights, the sweat, and the silence after the last track.",
+      "Raving matters because it makes community physical for a few hours."
+    ];
+    const els = {
+      wall: document.getElementById("loveWall"),
+      form: document.getElementById("loveForm"),
+      authorInput: document.getElementById("authorInput"),
+      pulseInput: document.getElementById("pulseInput"),
+      messageInput: document.getElementById("messageInput"),
+      promptButton: document.getElementById("promptButton"),
+      clearButton: document.getElementById("clearButton"),
+      copyButton: document.getElementById("copyButton"),
+      searchInput: document.getElementById("searchInput"),
+      totalNotes: document.getElementById("totalNotes"),
+      localNotes: document.getElementById("localNotes"),
+      pulseReadout: document.getElementById("pulseReadout"),
+      formStatus: document.getElementById("formStatus"),
+      wallStatus: document.getElementById("wallStatus"),
+      shareBox: document.getElementById("shareBox")
+    };
+    let activeFilter = "all";
+    let localNotes = loadLocalNotes();
+
+    function escapeHtml(value) {
+      return String(value ?? "").replace(/[&<>"']/g, char => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#039;"
+      }[char]));
+    }
+
+    function normalizePulse(value) {
+      return Object.prototype.hasOwnProperty.call(pulseLabels, value) ? value : "bass";
+    }
+
+    function loadLocalNotes() {
+      try {
+        const parsed = JSON.parse(window.localStorage.getItem(storageKey) || "[]");
+        if (!Array.isArray(parsed)) return [];
+        return parsed
+          .filter(item => item && item.message)
+          .map(item => ({
+            id: String(item.id || `local-${Date.now()}`),
+            author: String(item.author || "anonymous dancer").slice(0, 26),
+            pulse: normalizePulse(item.pulse),
+            message: String(item.message || "").slice(0, 170),
+            source: "this browser",
+            createdAt: String(item.createdAt || new Date().toISOString().slice(0, 10)),
+            local: true
+          }));
+      } catch (_) {
+        return [];
+      }
+    }
+
+    function saveLocalNotes() {
+      window.localStorage.setItem(storageKey, JSON.stringify(localNotes));
+    }
+
+    function allNotes() {
+      return [...localNotes, ...starterNotes];
+    }
+
+    function noteText(note) {
+      return [note.author, note.pulse, note.message, note.source].join(" ").toLowerCase();
+    }
+
+    function filteredNotes() {
+      const query = els.searchInput.value.trim().toLowerCase();
+      return allNotes().filter(note => {
+        if (activeFilter !== "all" && note.pulse !== activeFilter) return false;
+        if (query && !noteText(note).includes(query)) return false;
+        return true;
+      });
+    }
+
+    function renderWall() {
+      const notes = filteredNotes();
+      els.totalNotes.textContent = notes.length;
+      els.localNotes.textContent = localNotes.length;
+      els.pulseReadout.textContent = (activeFilter === "all" ? "ALL" : pulseLabels[activeFilter]).slice(0, 4).toUpperCase();
+      els.wallStatus.textContent = `${notes.length} notes showing / ${localNotes.length} saved locally`;
+
+      if (!notes.length) {
+        els.wall.innerHTML = `<div class="love-empty">No notes match this view.</div>`;
+        return;
+      }
+
+      els.wall.innerHTML = notes.map(note => `
+        <article class="love-note" data-pulse="${escapeHtml(note.pulse)}" style="--pulse-color:${pulseColors[note.pulse] || pulseColors.bass}">
+          <div class="note-top">
+            <span class="note-pulse">${escapeHtml(pulseLabels[note.pulse] || "Bass")}</span>
+            <span class="note-meta">${escapeHtml(note.createdAt)}</span>
+          </div>
+          <blockquote>${escapeHtml(note.message)}</blockquote>
+          <div class="note-foot">
+            <span class="note-author ${note.local ? "note-local" : ""}">${escapeHtml(note.author)}</span>
+            <span class="note-meta">${escapeHtml(note.source)}</span>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    function addNote(event) {
+      event.preventDefault();
+      const message = els.messageInput.value.trim().replace(/\s+/g, " ");
+      if (!message) {
+        els.formStatus.textContent = "Write a note before posting.";
+        els.messageInput.focus();
+        return;
+      }
+      const note = {
+        id: `local-${Date.now().toString(36)}`,
+        author: (els.authorInput.value.trim() || "anonymous dancer").slice(0, 26),
+        pulse: normalizePulse(els.pulseInput.value),
+        message: message.slice(0, 170),
+        source: "this browser",
+        createdAt: new Date().toISOString().slice(0, 10),
+        local: true
+      };
+      localNotes.unshift(note);
+      saveLocalNotes();
+      els.messageInput.value = "";
+      els.formStatus.textContent = "Posted locally. It is visible in this browser.";
+      activeFilter = "all";
+      syncFilters();
+      renderWall();
+    }
+
+    function syncFilters() {
+      document.querySelectorAll("[data-filter]").forEach(button => {
+        button.classList.toggle("active", button.dataset.filter === activeFilter);
+      });
+    }
+
+    function usePrompt() {
+      const prompt = prompts[Math.floor(Math.random() * prompts.length)];
+      els.messageInput.value = prompt;
+      els.messageInput.focus();
+      els.formStatus.textContent = "Prompt loaded. Edit it into your own note.";
+    }
+
+    function clearLocalNotes() {
+      if (!localNotes.length) {
+        els.formStatus.textContent = "No local notes to clear.";
+        return;
+      }
+      if (!window.confirm("Clear notes saved in this browser?")) return;
+      localNotes = [];
+      saveLocalNotes();
+      els.formStatus.textContent = "Local notes cleared.";
+      renderWall();
+    }
+
+    async function copyWallText() {
+      const text = filteredNotes()
+        .map(note => `${pulseLabels[note.pulse]} / ${note.author}: ${note.message}`)
+        .join("\n");
+      els.shareBox.value = text;
+      try {
+        await navigator.clipboard.writeText(text);
+        els.copyButton.textContent = "Copied";
+      } catch (_) {
+        els.shareBox.focus();
+        els.shareBox.select();
+        document.execCommand("copy");
+        els.copyButton.textContent = "Copied";
+      }
+      setTimeout(() => {
+        els.copyButton.textContent = "Copy wall text";
+      }, 1100);
+    }
+
+    els.form.addEventListener("submit", addNote);
+    els.promptButton.addEventListener("click", usePrompt);
+    els.clearButton.addEventListener("click", clearLocalNotes);
+    els.copyButton.addEventListener("click", copyWallText);
+    els.searchInput.addEventListener("input", renderWall);
+    document.querySelectorAll("[data-filter]").forEach(button => {
+      button.addEventListener("click", () => {
+        activeFilter = button.dataset.filter || "all";
+        syncFilters();
+        renderWall();
+      });
+    });
+
+    renderWall();
+  </script>
+</body>
+</html>

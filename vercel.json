@@ -6,6 +6,16 @@
       "source": "/shanghai-rave-calendar-2026.html",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/events",
+      "destination": "/poster-wall",
+      "permanent": true
+    },
+    {
+      "source": "/events/index.html",
+      "destination": "/poster-wall",
+      "permanent": true
     }
   ],
   "headers": [

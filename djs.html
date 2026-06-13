@@ -10,6 +10,16 @@
   <link rel="canonical" href="https://raveindexsh.top/djs">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" href="/og-image.png" type="image/png">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HP6NQ3VZB9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-HP6NQ3VZB9");
+  </script>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Shanghai Rave Index">
   <meta property="og:title" content="Shanghai Rave Index DJ Database">
@@ -484,6 +494,85 @@
       max-width: 850px;
     }
 
+    .listen-panel {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding: 12px;
+      border: 1px solid rgba(65,215,255,.26);
+      border-radius: 6px;
+      background:
+        linear-gradient(90deg, rgba(65,215,255,.1), transparent 48%),
+        rgba(0,0,0,.2);
+    }
+
+    .listen-panel h3,
+    .listen-heading {
+      margin: 0;
+      color: var(--cyan);
+      font-size: 13px;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .listen-panel p {
+      margin: 5px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.36;
+    }
+
+    .listen-source-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      align-items: center;
+    }
+
+    .listen-source {
+      min-height: 30px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 6px;
+      background: rgba(255,255,255,.04);
+      color: var(--ink);
+      text-decoration: none;
+      padding: 6px 9px;
+      font-size: 12px;
+      font-weight: 900;
+      line-height: 1.1;
+    }
+
+    .listen-source.source-verified {
+      color: var(--cyan);
+      border-color: rgba(65,215,255,.42);
+      background: rgba(65,215,255,.08);
+    }
+
+    .listen-source.source-direct {
+      color: var(--void);
+      border-color: var(--acid);
+      background: var(--acid);
+    }
+
+    .listen-source:hover {
+      border-color: var(--acid);
+      color: var(--acid);
+    }
+
+    .listen-source.source-direct:hover {
+      color: var(--void);
+      filter: brightness(1.08);
+    }
+
+    .listen-empty {
+      color: var(--dim);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+
     .chips { margin-top: 12px; }
 
     .status-official,
@@ -860,13 +949,15 @@
   <link rel="stylesheet" href="assets/basement-dispatch.css">
 </head>
 <body>
-  <main class="shell">
+  <main class="shell dispatch-shell">
     <nav class="site-nav" aria-label="Site navigation">
       <div class="nav-group">
         <a class="nav-link" href="index.html">Calendar</a>
-        <a class="nav-link" href="events/index.html">Events</a>
         <a class="nav-link" href="poster-wall.html">Wall</a>
+        <a class="nav-link" href="love-wall.html">Love</a>
+        <a class="nav-link" href="poster-archive.html">Archive</a>
         <a class="nav-link" href="planner.html">Planner</a>
+        <a class="nav-link" href="rave-everywhere.html">Everywhere</a>
         <a class="nav-link" href="venues.html">Venues</a>
         <a class="nav-link active" href="djs.html">DJs</a>
         <a class="nav-link" href="ops.html">Ops</a>
@@ -962,14 +1053,38 @@
       </div>
     </section>
 
-    <footer class="footnotes">
-      DJ notes are paired from the calendar's event lineups and should be treated as planning context, not artist biographies. Use the linked event source or ticket page before planning around a specific slot.
-      Estimated slots divide the listed event window across the known lineup order and are not published running orders.
+    <footer class="footnotes bottom-dispatch-bar" aria-label="Basement Dispatch status">
+      <div class="bar-cell update-cell">
+        <span class="footer-alert-mark" aria-hidden="true">!</span>
+        <strong>Set times<br>need proof</strong>
+      </div>
+      <div class="bar-cell">
+        <span>DJ notes are paired from calendar lineups.</span>
+        <span>Treat them as planning context, not biographies.</span>
+      </div>
+      <address class="bar-cell">
+        <span>Questions or updates?</span>
+        <a href="mailto:info@shanghairaveindex.com">info@shanghairaveindex.com</a>
+        <span>IG @shanghairaveindex</span>
+      </address>
+      <div class="bar-cell">
+        <span>Estimated slots divide event windows across lineup order.</span>
+        <span>Use linked sources before planning around a specific artist.</span>
+      </div>
+      <a class="bar-cell ops-cell" href="ops.html" aria-label="Open Ops desk">
+        <span>Ops desk</span>
+        <b>Review queue -></b>
+      </a>
+      <div class="bar-cell source-cell">
+        <span>Source first</span>
+        <span>Rave second</span>
+      </div>
     </footer>
   </main>
 
   <script src="data/dj-data.js"></script>
   <script src="data/tracked-dj-itineraries.js"></script>
+  <script src="assets/dj-trial-listen.js"></script>
   <script>
     const sourceData = window.DJ_SOURCE_DATA || { events: [], lineups: {}, externalDataPath: "data/events.json" };
     const trackedProfiles = window.DJ_ITINERARY_DATA || sourceData.trackedProfiles || {};
@@ -1739,6 +1854,33 @@
       }).join("");
     }
 
+    function renderListenLinks(profile) {
+      const listener = window.DJ_TRIAL_LISTENER;
+      if (!listener || typeof listener.listenLinksFor !== "function" || typeof listener.directAudioLinksFor !== "function") {
+        return "";
+      }
+      const directLinks = listener.directAudioLinksFor(profile);
+      const searchLinks = listener.listenLinksFor(profile);
+      const directMarkup = directLinks.map(link => `
+        <a class="listen-source source-direct" data-listen-source="${escapeHtml(link.label || "Audio link")}" href="${escapeHtml(link.url || "#")}" target="_blank" rel="noopener noreferrer">${escapeHtml(link.label || "Audio link")}</a>
+      `).join("");
+      const searchMarkup = searchLinks.map(link => `
+        <a class="listen-source source-verified" data-listen-source="${escapeHtml(link.label || "Search")}" href="${escapeHtml(link.url || "#")}" target="_blank" rel="noopener noreferrer">${escapeHtml(link.label || "Search")}</a>
+      `).join("");
+
+      return `
+        <section class="listen-panel" aria-label="Listening links for ${escapeHtml(profile.name)}">
+          <h3>Direct listening links</h3>
+          <p>${directLinks.length ? "Source-backed set, radio, or audio pages for this profile." : "No direct audio file or set page is attached yet. Use search links to find current tracks."}</p>
+          ${directLinks.length ? `<div class="listen-source-grid">${directMarkup}</div>` : `<div class="listen-empty">Add per-DJ audioLinks/listenLinks later to pin individual files or set pages here.</div>`}
+          <div>
+            <div class="listen-heading">Search platforms</div>
+            <div class="listen-source-grid">${searchMarkup}</div>
+          </div>
+        </section>
+      `;
+    }
+
     function renderProfile() {
       const profile = profiles.find(item => item.slug === selectedSlug) || filteredProfiles()[0] || profiles[0];
       if (!profile) {
@@ -1768,6 +1910,7 @@
             <div class="appearances">${renderAppearances(profile)}</div>
           </div>
           <aside>
+            ${renderListenLinks(profile)}
             <h3 class="panel-title">DJ notes</h3>
             <div class="notes">${noteRows(profile)}</div>
             ${tracked ? `<h3 class="panel-title" style="margin-top:14px">Tracker sources</h3><div class="tracker-sources">${renderTrackedSources(tracked)}</div>` : ""}

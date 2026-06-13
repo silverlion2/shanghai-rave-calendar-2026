@@ -1,6 +1,6 @@
 # Project Memory
 
-Last updated: 2026-06-08 23:44 Asia/Shanghai
+Last updated: 2026-06-13 09:56 Asia/Shanghai
 
 ## Project
 
@@ -112,11 +112,11 @@ Later work expanded the static site beyond the original scraper/calendar:
 
 Current public URLs:
 
-- Production site: https://shanghai-rave-calendar-2026.vercel.app
-- Set-time planner: https://shanghai-rave-calendar-2026.vercel.app/planner
-- DJ database: https://shanghai-rave-calendar-2026.vercel.app/djs
-- Example event deep link: https://shanghai-rave-calendar-2026.vercel.app/?event=nosaj-thing
-- Example DJ deep link: https://shanghai-rave-calendar-2026.vercel.app/djs#dj-ebp
+- Production site: https://raveindexsh.top
+- Set-time planner: https://raveindexsh.top/planner
+- DJ database: https://raveindexsh.top/djs
+- Example event deep link: https://raveindexsh.top/?event=nosaj-thing
+- Example DJ deep link: https://raveindexsh.top/djs#dj-ebp
 
 GitHub state:
 
@@ -143,7 +143,7 @@ Vercel state:
 - Vercel project: `shanghai-rave-calendar-2026`
 - Project id: `prj_vamHKrFWPi1nVbKySJ8OMLzpcFz9`
 - Org/team id: `team_lVP5FlXsXbdDa5xi390SN7Ph`
-- Stable alias: https://shanghai-rave-calendar-2026.vercel.app
+- Stable alias: https://raveindexsh.top
 - Git connection command completed successfully:
 
 ```bash
@@ -342,3 +342,153 @@ Remaining database gaps:
 
 - The highest-priority source-upgrade queue still includes Cosmjn, D3M3NTOR, howtodo, Josie, LaGlory, Limsum, Marcus, Matisa, Max Shen, MegaWatts, Milo Raad, Santa K, and other single-source future performers.
 - Keep using RA, SmartShanghai, LocalHub, venue/promoter channels, artist pages, radio/label pages, and ticketing pages before promoting a performer profile as high-confidence.
+
+## 2026-06-12 Basement Dispatch Product Redesign
+
+The user asked to use the Product Design plugin direction and redesign the website into a gritty underground club guide, matching a provided black poster-wall / Shanghai Rave Index reference image. The chosen public-facing name in the visual system is `Basement Dispatch`.
+
+Implemented visual and interaction changes:
+
+- `index.html` and `shanghai-rave-calendar-2026.html` were redesigned around a black, distressed, poster-wall editorial style with cyan/yellow/red accents, condensed type, thin rule lines, and rough paper labels.
+- The home page now opens as an actual calendar/product interface, not a landing page. It keeps upcoming highlights, search, status/vibe filters, month controls, calendar grid, side dispatch lists, and a bottom dispatch bar.
+- The old hero source chips (`RA + SmartShanghai`, `Asia/Shanghai dates`, `Official artist pages`, `Generated visual posters`, and related watchlist copy) were removed after the user said they had no meaning for new users.
+- The rolling event cards at the bottom of the home page were changed to poster-image-only cards.
+- `poster-wall.html` was added as the full waterfall poster/event page, preserving the previous complete masonry-style card content while the home page bottom strip stays image-only.
+- A visible bottom dispatch/status bar was added to match the reference: update window, daily listing note, contact/update info, source-first note, and the `Ops desk` link.
+- `Ops` was moved out of the top navigation on the calendar/home surface and into the bottom dispatch bar.
+- A four-row statistics panel was added directly above the bottom bar with `63`, `31`, `28`, and `6` summary counts.
+- Event modals on the calendar and poster wall now include visible back buttons (`Back to calendar` / `Back to wall`) so new users are not forced to discover that clicking outside the modal closes it.
+
+Verification and git state:
+
+- `npm run check` passed after the footer interactions and modal-return changes.
+- Browser/CDP checks confirmed the bottom stats panel, modal back buttons, `Ops` bottom-bar link, removed top-nav `Ops` on the calendar page, and no obvious layout overflow.
+- Feature branch pushed: `codex/basement-dispatch-redesign`.
+- PR #1 was merged into `main` for the larger redesign.
+- Latest remote `main` push: `6f65986 Refine calendar footer interactions`.
+- Current checked-out branch remains `codex/basement-dispatch-redesign` at `b6c314c`; `origin/main` points to the cherry-picked main commit `6f65986`.
+- Uncommitted local files after the main push include `PROJECT_MEMORY.md`, `ops.html`, `planner.html`, `poster-wall.html`, `robots.txt`, `scripts/check.js`, `sitemap.xml`, and untracked `assets/social/`. Do not assume those belong to the redesign unless the user explicitly asks to include or push them.
+
+## 2026-06-12 World-Class SEO Event Pages
+
+The user asked to further improve SEO so the website behaves like a world-class site, then asked to push the result to `main`.
+
+SEO implementation:
+
+- Added a generated static event inventory under `events/`: `events/index.html` plus one detail page for each of the 63 records in `data/events.json`.
+- `scripts/generate-seo-pages.js` now generates the event pages and `sitemap.xml` from the event data.
+- `package.json` adds `npm run seo`; `npm run scrape` now runs the scraper and then regenerates SEO pages.
+- `.github/workflows/scrape-events.yml` now commits `events/` and `sitemap.xml` when refreshed event data changes.
+- Public event pages use clean canonical URLs such as `https://raveindexsh.top/events/love-bang`.
+- Confirmed/non-watch events expose `MusicEvent`, `WebPage`, `WebSite`, and `BreadcrumbList` JSON-LD.
+- Watchlist leads still get generated user-facing pages, but they use `noindex,follow`, do not emit `MusicEvent` JSON-LD, and are excluded from `sitemap.xml`.
+- `sitemap.xml` now includes 55 URLs: 6 public route URLs and 49 indexable event pages.
+- The public nav and event modal actions now link into the crawlable event inventory from `index.html`, `shanghai-rave-calendar-2026.html`, `poster-wall.html`, `venues.html`, `planner.html`, `djs.html`, and `ops.html`.
+- `poster-wall.html` also received clean `/poster-wall` canonical/OG URLs, OG image alt text, and CollectionPage JSON-LD.
+- `ops.html` received manifest, OG URL/image metadata, and fuller WebApplication JSON-LD while remaining `noindex,nofollow`.
+- `planner.html` had its missing doctype restored.
+- `robots.txt` points crawlers at `https://raveindexsh.top/sitemap.xml`.
+
+Validation:
+
+- `npm run seo` generated 64 HTML files under `events/`.
+- `npm run check` passed after the SEO generator and validation changes.
+- Local HTTP smoke test on `http://127.0.0.1:4174` returned `200` for `/events`, `/events/love-bang`, `/events/system-popup`, `/sitemap.xml`, and `/robots.txt`.
+- Confirmed event page `/events/love-bang` was indexable with clean canonical metadata.
+- Watchlist page `/events/system-popup` returned `noindex,follow` with clean canonical metadata.
+
+Git/push state:
+
+- Local SEO commit on current branch: `060243c Add static SEO event pages`.
+- Because the checked-out branch was not a descendant of `origin/main`, the commit was cherry-picked onto a clean temporary worktree based on `origin/main`.
+- Pushed to `origin/main`: `0b1b0f2 Add static SEO event pages`.
+- Remote `main` now points to `0b1b0f2`.
+- Temporary worktree and temporary local branch `codex/push-seo-main` were removed after the push.
+- Current workspace branch remains `codex/basement-dispatch-redesign`, ahead of its remote by the local SEO commit.
+- Remaining uncommitted local items after the push: `PROJECT_MEMORY.md` and untracked `assets/social/`.
+
+## 2026-06-13 Mobile Display Optimization
+
+The user asked to optimize the mobile display, then asked to push the result to `main`.
+
+Implementation:
+
+- Mobile changes were intentionally scoped to `assets/basement-dispatch.css`.
+- Removed the narrow 342px cap from major mobile sections and kept a steadier phone gutter with `calc(100vw - 32px)`.
+- Added a `max-width: 640px` calendar-specific mobile layer for the homepage/calendar surface.
+- Tightened the top navigation, hero typography, dispatch strip, hero actions, and hero image height so the first screen is less vertically wasteful.
+- Changed the stats panel to a compact two-column phone grid.
+- Converted the upcoming highlights into a horizontal swipe rail with full-width readable event cards instead of narrow six-column slivers.
+- Made quick filters and the month rail horizontally scrollable controls with thin cyan scrollbars.
+- Made the filter controls denser with a two-column layout while keeping search and room/crew full width.
+- Kept desktop layout untouched by placing the changes behind mobile breakpoints.
+
+Verification:
+
+- `npm run check` passed before pushing and again after rebasing onto latest `origin/main`.
+- In-app browser verification at 390 x 900 confirmed no page-level horizontal overflow; final `documentElement.scrollWidth` and `body.scrollWidth` were both 375 in the browser environment.
+- Mobile layout measurements improved: the shell widened from 342px to 358px, stats compressed from 411px to 248px, controls compressed from 585px to about 360px, and month navigation compressed from 193px to 55px.
+- Visual mobile screenshots confirmed the highlight cards, date-night route, controls, and month rail render coherently.
+
+Git/push state:
+
+- Local commit before rebase: `3f8bb97 Optimize mobile calendar layout`.
+- After rebasing onto `origin/main`, pushed commit: `a88f443 Optimize mobile calendar layout`.
+- `origin/main` now points to `a88f443`.
+- Current branch is `main`, matching `origin/main` for committed changes.
+- Only `assets/basement-dispatch.css` was staged, committed, and pushed.
+- Existing local uncommitted items remain outside the pushed mobile fix: `PROJECT_MEMORY.md`, `djs.html`, `index.html`, `ops.html`, `planner.html`, `poster-wall.html`, `scripts/check.js`, `shanghai-rave-calendar-2026.html`, `venues.html`, and untracked `assets/social/`.
+- This entry supersedes older memory lines that described the current workspace branch as `codex/basement-dispatch-redesign`; after the mobile push, the active branch is `main`.
+
+## 2026-06-13 Google Analytics Tracking
+
+The user asked to enable Google tracking for the website and connect it to their Google Analytics account.
+
+Analytics account details used:
+
+- Account/property group shown in Google Analytics: `Rave_index_SH | 397848866`.
+- GA4 property selected by the user: `Rave Index SH | 541501114`.
+- Web data stream: `Shanghai Rave Index`.
+- Stream URL: `https://www.raveindexsh.top`.
+- Stream ID: `15064526912`.
+- Measurement ID installed on the site: `G-HP6NQ3VZB9`.
+
+Implementation:
+
+- Added the Google tag (`gtag.js`) with `G-HP6NQ3VZB9` to `index.html`, `shanghai-rave-calendar-2026.html`, `venues.html`, `djs.html`, `planner.html`, `poster-wall.html`, and `ops.html`.
+- Updated `scripts/generate-seo-pages.js` with `GOOGLE_TAG_ID = "G-HP6NQ3VZB9"` so generated event SEO pages include the same Google tag.
+- Regenerated `events/index.html` and all 63 event detail pages so crawlable event pages are tracked too.
+- Updated `scripts/check.js` to enforce that all static route pages and generated event pages include the Google tag loader and matching `gtag("config", "G-HP6NQ3VZB9")`.
+- Because adding an extra inline analytics script changes the inline-script ordering, `scripts/check.js` now compares the last inline calendar script between `index.html` and `shanghai-rave-calendar-2026.html` for parity.
+
+Verification:
+
+- First red check failed as expected while pages still used `G-XXXXXXXXXX`.
+- After replacing the placeholder and updating the SEO generator, `npm run seo` regenerated 63 event SEO pages and `sitemap.xml`.
+- Final `npm run check` passed with `inline scripts syntax OK: 14 scripts across 7 HTML files`.
+- `rg` confirmed there is no remaining `G-XXXXXXXXXX` in HTML or tracking scripts.
+- `git diff --check` reported no whitespace errors, only Windows line-ending warnings.
+
+Notes:
+
+- Google Analytics initially showed `No data received in past 48 hours` for the stream. That is expected until the updated site is deployed and real traffic loads pages containing `G-HP6NQ3VZB9`.
+- Earlier browser attempts were blocked because the regular Chrome profile returned `ERR_BLOCKED_BY_CLIENT` for `https://apis.google.com/js/client.js`; later the Analytics UI loaded enough to open the stream details and read the Measurement ID.
+
+## 2026-06-13 Main Format Sync, Wall Consolidation, and New Rave Surfaces
+
+The user asked to sync the other pages with the homepage visual format, treat Events and Wall as the same surface while keeping only Wall, move the horizontal homepage statistics strip directly above the bottom bar without changing its formatting, then push everything to `main` and save the work to project history.
+
+Implementation:
+
+- Secondary pages now share the Basement Dispatch visual language more consistently through `dispatch-shell`, shared bottom bars, and synchronized navigation.
+- The duplicate `events/index.html` collection page was removed; event inventory entry points now route users to `poster-wall.html`, and `vercel.json` redirects `/events` and `/events/` to `/poster-wall`.
+- Navigation now includes the consolidated Wall flow plus the newer `Love`, `Archive`, and `Everywhere` surfaces where relevant.
+- Added `love-wall.html`, `poster-archive.html`, `rave-everywhere.html`, poster archive data, the poster archive generator, and supporting frontend scripts.
+- `scripts/generate-seo-pages.js` now emits generated event detail pages with the shared dispatch page format and without recreating the duplicate Events index.
+- The homepage and archive calendar horizontal statistics strip was moved from the top area to immediately above `bottom-dispatch-bar`; the highlight wall now occupies the former top slot, and mobile stats formatting remains the existing two-column compact layout.
+- `scripts/check.js` now validates the shared dispatch format, Google tracking, absence of duplicate Events index links, Rave Everywhere route markers, poster archive support, and homepage stats placement.
+
+Verification:
+
+- `npm run check` passed with `inline scripts syntax OK: 19 scripts across 10 HTML files`.
+- Browser verification on `http://127.0.0.1:4173/index.html` confirmed the moved stats strip is full-width above the footer on desktop, the highlight wall moved up, and the 390px mobile layout keeps the two-column stats format with no horizontal overflow.

@@ -6,8 +6,9 @@
   "scripts": {
     "start": "npx serve .",
     "seo": "node scripts/generate-seo-pages.js",
-    "scrape": "node scripts/scrape-events.js && node scripts/generate-seo-pages.js",
+    "poster-archive": "node scripts/generate-poster-archive.js",
+    "scrape": "node scripts/scrape-events.js && node scripts/generate-seo-pages.js && node scripts/generate-poster-archive.js",
     "audit": "node scripts/audit-events.js",
-    "check": "node --check scripts/check.js && node --check scripts/scrape-events.js && node --check scripts/audit-events.js && node --check scripts/generate-seo-pages.js && node scripts/check.js && node scripts/audit-events.js"
+    "check": "node --check scripts/check.js && node --check scripts/scrape-events.js && node --check scripts/audit-events.js && node --check scripts/generate-seo-pages.js && node --check scripts/generate-poster-archive.js && node --check assets/poster-archive.js && node scripts/check.js && node scripts/audit-events.js"
   }
 }

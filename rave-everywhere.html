@@ -1,0 +1,1116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rave Everywhere Beta | Shanghai Rave Index</title>
+  <meta name="description" content="Generate a beta virtual rave event, fictional location, and downloadable poster from the DJs collected by Shanghai Rave Index.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#c6ff3b">
+  <link rel="canonical" href="https://raveindexsh.top/rave-everywhere">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" href="/og-image.png" type="image/png">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HP6NQ3VZB9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-HP6NQ3VZB9");
+  </script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shanghai Rave Index">
+  <meta property="og:title" content="Rave Everywhere Beta">
+  <meta property="og:description" content="Generate a beta virtual rave event, fictional location, and poster from collected DJ profiles.">
+  <meta property="og:url" content="https://raveindexsh.top/rave-everywhere">
+  <meta property="og:image" content="https://raveindexsh.top/og-image.png">
+  <meta property="og:image:alt" content="Shanghai Rave Index beta poster generator preview">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Rave Everywhere Beta",
+    "url": "https://raveindexsh.top/rave-everywhere",
+    "applicationCategory": "LifestyleApplication",
+    "operatingSystem": "Any",
+    "description": "Generate a beta virtual rave event, fictional location, and downloadable poster from collected DJ profiles.",
+    "inLanguage": "en",
+    "isAccessibleForFree": true
+  }
+  </script>
+  <link rel="stylesheet" href="assets/basement-dispatch.css">
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f2f0e8;
+      --muted: #aaa59a;
+      --dim: #747066;
+      --void: #080806;
+      --panel: #11110e;
+      --panel-2: #181814;
+      --line: #302f28;
+      --acid: #c6ff3b;
+      --ember: #ff6a2a;
+      --cyan: #41d7ff;
+      --rose: #ff4f8b;
+      --gold: #ffd166;
+      --radius: 8px;
+      --shadow: 0 24px 80px rgba(0,0,0,.42);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.026) 1px, transparent 1px) 0 0 / 36px 36px,
+        linear-gradient(0deg, rgba(255,255,255,.018) 1px, transparent 1px) 0 0 / 36px 36px,
+        radial-gradient(circle at 78% 8%, rgba(255,106,42,.18), transparent 31%),
+        radial-gradient(circle at 12% 35%, rgba(65,215,255,.12), transparent 29%),
+        #080806;
+      font-family: "Aptos", "Segoe UI", sans-serif;
+      letter-spacing: 0;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      opacity: .34;
+      background-image:
+        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+        repeating-linear-gradient(90deg, transparent 0 16px, rgba(198,255,59,.05) 17px, transparent 18px);
+      background-size: 100% 5px, 100% 100%;
+      mix-blend-mode: screen;
+    }
+
+    a { color: inherit; }
+    button, input, textarea { font: inherit; }
+
+    .shell {
+      width: min(1500px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 24px 0 58px;
+    }
+
+    .site-nav,
+    .nav-group,
+    .tag-row,
+    .quick-row,
+    .action-row,
+    .meta-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .site-nav {
+      justify-content: space-between;
+      margin-bottom: 18px;
+      color: var(--muted);
+    }
+
+    .nav-link,
+    .tag,
+    .mood-button,
+    .action-button,
+    .copy-button,
+    .seed-button {
+      display: inline-flex;
+      min-height: 34px;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: 1px solid var(--line);
+      background: rgba(17,17,14,.84);
+      padding: 7px 11px;
+      border-radius: 999px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 900;
+      line-height: 1.15;
+      cursor: pointer;
+    }
+
+    .nav-link:hover,
+    .nav-link.active,
+    .mood-button:hover,
+    .mood-button.active,
+    .seed-button:hover {
+      color: var(--void);
+      background: var(--acid);
+      border-color: var(--acid);
+    }
+
+    .everywhere-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(260px, 420px);
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+
+    .headline,
+    .signal-panel,
+    .tool-panel,
+    .event-panel,
+    .poster-panel {
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(17,17,14,.88);
+      box-shadow: var(--shadow);
+    }
+
+    .headline {
+      min-height: 238px;
+      display: grid;
+      align-content: end;
+      padding: clamp(18px, 3vw, 34px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .headline::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(116deg, transparent 0 52%, rgba(198,255,59,.18) 52% 53%, transparent 53%),
+        linear-gradient(151deg, transparent 0 68%, rgba(65,215,255,.18) 68% 69%, transparent 69%);
+    }
+
+    .kicker {
+      color: var(--acid);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: clamp(44px, 9vw, 112px);
+      line-height: .88;
+      letter-spacing: 0;
+      max-width: 900px;
+    }
+
+    .subhead {
+      margin: 14px 0 0;
+      max-width: 820px;
+      color: var(--muted);
+      font-size: clamp(15px, 2vw, 19px);
+      line-height: 1.42;
+    }
+
+    .signal-panel {
+      min-height: 238px;
+      padding: 16px;
+      display: grid;
+      align-content: space-between;
+      gap: 14px;
+      background:
+        linear-gradient(135deg, rgba(255,106,42,.15), transparent 38%),
+        rgba(17,17,14,.88);
+    }
+
+    .signal-readout {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .readout {
+      min-height: 84px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 6px;
+      padding: 12px;
+      background: rgba(255,255,255,.026);
+      display: grid;
+      align-content: space-between;
+      gap: 8px;
+    }
+
+    .readout b {
+      color: var(--accent, var(--acid));
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: 32px;
+      line-height: 1;
+    }
+
+    .readout span,
+    .panel-note,
+    .field-label {
+      color: var(--dim);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+      line-height: 1.25;
+    }
+
+    .everywhere-grid {
+      display: grid;
+      grid-template-columns: minmax(320px, .9fr) minmax(0, 1.1fr) minmax(320px, .8fr);
+      gap: 14px;
+      align-items: start;
+    }
+
+    .tool-panel,
+    .event-panel,
+    .poster-panel {
+      padding: 14px;
+    }
+
+    .panel-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 12px;
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid rgba(255,255,255,.09);
+    }
+
+    .panel-head h2 {
+      margin: 0;
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    .search,
+    .seed-input,
+    .share-copy {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #151510;
+      color: var(--ink);
+      padding: 10px 11px;
+      outline: none;
+    }
+
+    .search,
+    .seed-input {
+      min-height: 42px;
+    }
+
+    .search:focus,
+    .seed-input:focus,
+    .share-copy:focus {
+      border-color: var(--acid);
+      box-shadow: 0 0 0 3px rgba(198,255,59,.12);
+    }
+
+    .field-stack {
+      display: grid;
+      gap: 7px;
+      margin-bottom: 10px;
+    }
+
+    .quick-row {
+      margin: 10px 0 12px;
+    }
+
+    .dj-picker,
+    .selected-list,
+    .event-facts,
+    .lineup-list {
+      display: grid;
+      gap: 8px;
+    }
+
+    .dj-picker {
+      max-height: 570px;
+      overflow: auto;
+      padding-right: 2px;
+    }
+
+    .dj-row,
+    .selected-row,
+    .fact-row,
+    .lineup-row {
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 6px;
+      background: rgba(255,255,255,.026);
+      padding: 10px;
+    }
+
+    .dj-row {
+      width: 100%;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: center;
+      color: inherit;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .dj-row:hover,
+    .dj-row.selected {
+      border-color: rgba(198,255,59,.7);
+      background: rgba(198,255,59,.08);
+    }
+
+    .dj-main,
+    .event-title-block,
+    .location-block {
+      min-width: 0;
+      display: grid;
+      gap: 4px;
+    }
+
+    .dj-main b,
+    .selected-row b,
+    .lineup-row b {
+      color: var(--ink);
+      font-size: 14px;
+      overflow-wrap: anywhere;
+    }
+
+    .dj-main span,
+    .selected-row span,
+    .lineup-row span,
+    .location-block span,
+    .fact-row span {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+      overflow-wrap: anywhere;
+    }
+
+    .dj-score {
+      min-width: 42px;
+      min-height: 30px;
+      display: inline-grid;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--void);
+      background: var(--cyan);
+      font-weight: 900;
+      font-size: 12px;
+    }
+
+    .action-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 8px;
+      margin: 12px 0;
+    }
+
+    .action-button,
+    .copy-button {
+      min-height: 42px;
+      border-radius: 6px;
+      color: var(--void);
+      background: var(--acid);
+      border-color: var(--acid);
+    }
+
+    .copy-button.secondary,
+    .action-button.secondary {
+      color: var(--ink);
+      background: #151510;
+      border-color: var(--line);
+    }
+
+    .copy-button.secondary:hover,
+    .action-button.secondary:hover {
+      color: var(--void);
+      background: var(--cyan);
+      border-color: var(--cyan);
+    }
+
+    .event-panel {
+      display: grid;
+      gap: 12px;
+    }
+
+    .virtual-badge {
+      width: max-content;
+      color: var(--void);
+      background: var(--rose);
+      border-color: var(--rose);
+    }
+
+    .event-title-block h2 {
+      margin: 0;
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: clamp(30px, 5vw, 58px);
+      line-height: .96;
+      overflow-wrap: anywhere;
+    }
+
+    .meta-strip {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .meta-strip span {
+      min-height: 28px;
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: 999px;
+      padding: 5px 8px;
+      background: rgba(255,255,255,.026);
+    }
+
+    .fact-row {
+      display: grid;
+      grid-template-columns: 112px minmax(0, 1fr);
+      gap: 12px;
+      align-items: start;
+    }
+
+    .fact-row b {
+      color: var(--acid);
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    .location-card {
+      border: 1px solid rgba(65,215,255,.3);
+      border-radius: 6px;
+      padding: 12px;
+      background: rgba(65,215,255,.055);
+      display: grid;
+      gap: 6px;
+    }
+
+    .location-card h3 {
+      margin: 0;
+      color: var(--cyan);
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: 24px;
+      line-height: 1.05;
+    }
+
+    .share-copy {
+      min-height: 152px;
+      resize: vertical;
+      line-height: 1.45;
+      color: var(--muted);
+    }
+
+    .poster-panel {
+      position: sticky;
+      top: 12px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .poster-frame {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 6px;
+      background: #050504;
+      overflow: hidden;
+    }
+
+    .poster-frame canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .palette {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 6px;
+    }
+
+    .swatch {
+      min-height: 28px;
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 5px;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    @media (max-width: 1180px) {
+      .everywhere-head,
+      .everywhere-grid {
+        grid-template-columns: 1fr;
+      }
+      .poster-panel {
+        position: static;
+      }
+      .poster-frame {
+        max-width: 560px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .shell {
+        width: calc(100% - 32px);
+        max-width: calc(100% - 32px);
+      }
+      h1 {
+        font-size: 44px;
+        overflow-wrap: break-word;
+      }
+      body .dispatch-shell .headline h1 {
+        font-size: 40px !important;
+        line-height: .95;
+        overflow-wrap: normal !important;
+        word-break: keep-all;
+      }
+      .site-nav,
+      .panel-head {
+        display: grid;
+        align-items: start;
+      }
+      .headline > div {
+        width: calc(100% - 36px);
+        max-width: calc(100% - 36px);
+      }
+      .signal-panel > div,
+      .signal-readout {
+        width: calc(100% - 32px);
+        max-width: calc(100% - 32px);
+      }
+      body .dispatch-shell .headline .subhead,
+      body .dispatch-shell .signal-panel .subhead {
+        width: calc(100% - 36px) !important;
+        max-width: calc(100% - 36px) !important;
+      }
+      body .dispatch-shell .signal-panel .subhead {
+        width: calc(100% - 32px) !important;
+        max-width: calc(100% - 32px) !important;
+      }
+      .signal-readout,
+      .action-row,
+      .fact-row {
+        grid-template-columns: 1fr;
+      }
+      .dj-picker {
+        max-height: 430px;
+      }
+      .mood-button,
+      .nav-link {
+        flex: 1 1 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell dispatch-shell">
+    <nav class="site-nav" aria-label="Site navigation">
+      <div class="nav-group">
+        <a class="nav-link" href="index.html">Calendar</a>
+        <a class="nav-link" href="poster-wall.html">Wall</a>
+        <a class="nav-link" href="love-wall.html">Love</a>
+        <a class="nav-link" href="planner.html">Planner</a>
+        <a class="nav-link active" href="rave-everywhere.html">Everywhere</a>
+        <a class="nav-link" href="venues.html">Venues</a>
+        <a class="nav-link" href="djs.html">DJs</a>
+        <a class="nav-link" href="ops.html">Ops</a>
+      </div>
+      <span class="tag" id="profileCount">Loading DJ profiles</span>
+    </nav>
+
+    <header class="everywhere-head">
+      <section class="headline">
+        <div>
+          <div class="kicker">Rave Everywhere beta</div>
+          <h1>Rave Everywhere</h1>
+          <p class="subhead">Build a fictional one-night signal from collected DJs, then export the generated poster and concept location without adding anything to the verified calendar.</p>
+          <div class="tag-row">
+            <span class="tag virtual-badge">Virtual event, not a verified listing</span>
+            <span class="tag">Local browser generation</span>
+            <span class="tag">Poster PNG export</span>
+          </div>
+        </div>
+      </section>
+      <aside class="signal-panel" aria-label="Rave Everywhere beta status">
+        <div>
+          <div class="kicker">Beta console</div>
+          <p class="subhead">Generated output is a creative draft. Real venue, ticketing, permission, age, and safety checks still live outside this mode.</p>
+        </div>
+        <div class="signal-readout">
+          <div class="readout" style="--accent: var(--acid)">
+            <b id="selectedCount">0</b>
+            <span>selected DJs</span>
+          </div>
+          <div class="readout" style="--accent: var(--cyan)">
+            <b id="moodReadout">--</b>
+            <span>dominant signal</span>
+          </div>
+        </div>
+      </aside>
+    </header>
+
+    <section class="everywhere-grid">
+      <section class="tool-panel" aria-label="DJ selection">
+        <div class="panel-head">
+          <div>
+            <span class="panel-note">Collected DJ list</span>
+            <h2>Pick the signal</h2>
+          </div>
+          <button class="seed-button" type="button" id="shuffleSeed">Shuffle seed</button>
+        </div>
+
+        <label class="field-stack">
+          <span class="field-label">Search DJs</span>
+          <input class="search" id="djSearch" type="search" placeholder="DJ, genre, venue context">
+        </label>
+
+        <label class="field-stack">
+          <span class="field-label">Seed</span>
+          <input class="seed-input" id="seedInput" type="text" value="rave-everywhere-beta">
+        </label>
+
+        <div class="quick-row" aria-label="Auto-pick moods">
+          <button class="mood-button active" type="button" data-mood="hard">Hard</button>
+          <button class="mood-button" type="button" data-mood="underground">Underground</button>
+          <button class="mood-button" type="button" data-mood="experimental">Experimental</button>
+          <button class="mood-button" type="button" data-mood="bass">Bass</button>
+          <button class="mood-button" type="button" data-mood="date">Late glow</button>
+        </div>
+
+        <div class="action-row">
+          <button class="action-button" type="button" id="generateEverywhere">Generate beta event</button>
+          <button class="action-button secondary" type="button" id="clearSelection">Clear</button>
+        </div>
+
+        <div class="selected-list" id="selectedList" aria-label="Selected DJs"></div>
+        <div class="dj-picker" id="djPicker" aria-label="DJ picker"></div>
+      </section>
+
+      <section class="event-panel" aria-label="Generated virtual event">
+        <div class="panel-head">
+          <div>
+            <span class="panel-note">Generated event</span>
+            <h2>Beta output</h2>
+          </div>
+          <button class="copy-button secondary" type="button" id="copyShare">Copy</button>
+        </div>
+
+        <div class="event-title-block">
+          <span class="tag virtual-badge">Virtual event, not a verified listing</span>
+          <h2 id="eventTitle">Rave Everywhere: Loading</h2>
+          <div class="meta-strip" id="eventMeta"></div>
+        </div>
+
+        <div class="event-facts" id="eventFacts"></div>
+
+        <section class="location-card" aria-label="Generated location">
+          <span class="panel-note">Generated location</span>
+          <h3 id="locationName">Signal node</h3>
+          <div class="location-block">
+            <span id="locationAddress"></span>
+            <span id="locationScene"></span>
+            <span id="locationAccess"></span>
+          </div>
+        </section>
+
+        <div class="lineup-list" id="lineupList" aria-label="Generated lineup"></div>
+
+        <label class="field-stack">
+          <span class="field-label">Share copy</span>
+          <textarea class="share-copy" id="shareCopy" readonly></textarea>
+        </label>
+      </section>
+
+      <aside class="poster-panel" aria-label="Generated poster">
+        <div class="panel-head">
+          <div>
+            <span class="panel-note">Poster canvas</span>
+            <h2>Poster</h2>
+          </div>
+          <button class="copy-button" type="button" id="downloadPoster">Download PNG</button>
+        </div>
+        <div class="poster-frame">
+          <canvas id="posterCanvas" width="1080" height="1350" aria-label="Generated Rave Everywhere poster"></canvas>
+        </div>
+        <div class="palette" id="posterPalette" aria-label="Poster color palette"></div>
+      </aside>
+    </section>
+
+    <footer class="footnotes bottom-dispatch-bar" aria-label="Basement Dispatch status">
+      <div class="bar-cell update-cell">
+        <span class="footer-alert-mark" aria-hidden="true">!</span>
+        <strong>Beta<br>mode</strong>
+      </div>
+      <div class="bar-cell">
+        <span>Rave Everywhere creates fictional drafts only.</span>
+        <span>It does not publish to the real calendar.</span>
+      </div>
+      <address class="bar-cell">
+        <span>Questions or updates?</span>
+        <a href="mailto:info@shanghairaveindex.com">info@shanghairaveindex.com</a>
+        <span>IG @shanghairaveindex</span>
+      </address>
+      <div class="bar-cell">
+        <span>Real-world plans still need permission, tickets, safety, and source checks.</span>
+        <span>Use the output as a creative sketch.</span>
+      </div>
+      <a class="bar-cell ops-cell" href="ops.html" aria-label="Open Ops desk">
+        <span>Ops desk</span>
+        <b>Review queue -></b>
+      </a>
+      <div class="bar-cell source-cell">
+        <span>Virtual first</span>
+        <span>Verify later</span>
+      </div>
+    </footer>
+  </main>
+
+  <script src="data/dj-data.js"></script>
+  <script src="data/tracked-dj-itineraries.js"></script>
+  <script src="assets/rave-everywhere.js"></script>
+  <script>
+    const sourceData = window.DJ_SOURCE_DATA || { events: [], lineups: {} };
+    const trackedProfiles = window.DJ_ITINERARY_DATA || {};
+    const generator = window.RAVE_EVERYWHERE;
+    const profiles = generator.profileSeedsFromSourceData(sourceData, trackedProfiles);
+    const sourceEvents = Array.isArray(sourceData.events) ? sourceData.events : [];
+    const selectedSlugs = new Set();
+    const els = {
+      profileCount: document.getElementById("profileCount"),
+      selectedCount: document.getElementById("selectedCount"),
+      moodReadout: document.getElementById("moodReadout"),
+      djSearch: document.getElementById("djSearch"),
+      seedInput: document.getElementById("seedInput"),
+      shuffleSeed: document.getElementById("shuffleSeed"),
+      clearSelection: document.getElementById("clearSelection"),
+      generateEverywhere: document.getElementById("generateEverywhere"),
+      selectedList: document.getElementById("selectedList"),
+      djPicker: document.getElementById("djPicker"),
+      eventTitle: document.getElementById("eventTitle"),
+      eventMeta: document.getElementById("eventMeta"),
+      eventFacts: document.getElementById("eventFacts"),
+      locationName: document.getElementById("locationName"),
+      locationAddress: document.getElementById("locationAddress"),
+      locationScene: document.getElementById("locationScene"),
+      locationAccess: document.getElementById("locationAccess"),
+      lineupList: document.getElementById("lineupList"),
+      shareCopy: document.getElementById("shareCopy"),
+      copyShare: document.getElementById("copyShare"),
+      posterCanvas: document.getElementById("posterCanvas"),
+      posterPalette: document.getElementById("posterPalette"),
+      downloadPoster: document.getElementById("downloadPoster"),
+    };
+    let currentEvent = null;
+
+    function escapeHtml(value) {
+      return String(value || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function selectedProfiles() {
+      return profiles.filter(profile => selectedSlugs.has(profile.slug)).slice(0, 6);
+    }
+
+    function profileSearchText(profile) {
+      return [
+        profile.name,
+        (profile.genres || []).join(" "),
+        (profile.soundFamilies || []).join(" "),
+        (profile.appearances || []).map(item => [item.title, item.venue, item.district].join(" ")).join(" "),
+      ].join(" ").toLowerCase();
+    }
+
+    function dominantMood(profileList) {
+      const counts = new Map();
+      profileList.forEach(profile => {
+        (profile.soundFamilies || ["electronic"]).forEach(family => counts.set(family, (counts.get(family) || 0) + 1));
+      });
+      return Array.from(counts.entries()).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))[0]?.[0] || "electronic";
+    }
+
+    function renderSelected() {
+      const rows = selectedProfiles();
+      els.selectedCount.textContent = rows.length;
+      els.moodReadout.textContent = dominantMood(rows).slice(0, 4).toUpperCase();
+      els.selectedList.innerHTML = rows.length ? rows.map(profile => `
+        <article class="selected-row">
+          <b>${escapeHtml(profile.name)}</b>
+          <span>${escapeHtml((profile.genres || []).slice(0, 3).join(", ") || "electronic")}</span>
+        </article>
+      `).join("") : `<div class="selected-row"><span>No DJs selected yet.</span></div>`;
+    }
+
+    function renderDjPicker() {
+      const query = els.djSearch.value.trim().toLowerCase();
+      const rows = profiles
+        .filter(profile => !query || profileSearchText(profile).includes(query))
+        .slice(0, 70);
+      els.profileCount.textContent = `${profiles.length} collected DJ profiles`;
+      els.djPicker.innerHTML = rows.length ? rows.map(profile => {
+        const selected = selectedSlugs.has(profile.slug);
+        const genres = (profile.genres || []).slice(0, 3).join(", ") || "electronic";
+        const count = profile.appearanceCount || (profile.sources || []).length || 1;
+        return `
+          <button class="dj-row ${selected ? "selected" : ""}" type="button" data-dj-slug="${escapeHtml(profile.slug)}" aria-pressed="${selected ? "true" : "false"}">
+            <span class="dj-main">
+              <b>${escapeHtml(profile.name)}</b>
+              <span>${escapeHtml(genres)}</span>
+            </span>
+            <span class="dj-score">${count}</span>
+          </button>
+        `;
+      }).join("") : `<div class="selected-row"><span>No collected DJs match this search.</span></div>`;
+      els.djPicker.querySelectorAll("[data-dj-slug]").forEach(button => {
+        button.addEventListener("click", () => {
+          if (selectedSlugs.has(button.dataset.djSlug)) selectedSlugs.delete(button.dataset.djSlug);
+          else if (selectedSlugs.size < 6) selectedSlugs.add(button.dataset.djSlug);
+          renderSelected();
+          renderDjPicker();
+          generateEverywhereEvent();
+        });
+      });
+    }
+
+    function autoPickMood(mood) {
+      selectedSlugs.clear();
+      profiles
+        .filter(profile => (profile.soundFamilies || []).includes(mood) || profileSearchText(profile).includes(mood))
+        .slice(0, 4)
+        .forEach(profile => selectedSlugs.add(profile.slug));
+      if (selectedSlugs.size < 3) {
+        profiles.slice(0, 4).forEach(profile => {
+          if (selectedSlugs.size < 4) selectedSlugs.add(profile.slug);
+        });
+      }
+      document.querySelectorAll("[data-mood]").forEach(button => button.classList.toggle("active", button.dataset.mood === mood));
+      renderSelected();
+      renderDjPicker();
+      generateEverywhereEvent();
+    }
+
+    function factRow(label, value) {
+      return `<article class="fact-row"><b>${escapeHtml(label)}</b><span>${escapeHtml(value)}</span></article>`;
+    }
+
+    function renderVirtualEvent(event) {
+      currentEvent = event;
+      els.eventTitle.textContent = event.title;
+      els.eventMeta.innerHTML = [
+        event.date,
+        event.time,
+        event.genre,
+        "Beta virtual",
+      ].map(item => `<span>${escapeHtml(item)}</span>`).join("");
+      els.eventFacts.innerHTML = [
+        factRow("Source", event.sourceLabel),
+        factRow("Status", event.disclaimer),
+        factRow("Inspired by", event.location.inspiredBy),
+      ].join("");
+      els.locationName.textContent = event.location.name;
+      els.locationAddress.textContent = event.location.address;
+      els.locationScene.textContent = event.location.scene;
+      els.locationAccess.textContent = event.location.access;
+      els.lineupList.innerHTML = event.lineup.map(item => `
+        <article class="lineup-row">
+          <b>${escapeHtml(item.name)}</b>
+          <span>${escapeHtml((item.genres || []).slice(0, 4).join(", "))}</span>
+          <span>${escapeHtml(item.note)}</span>
+        </article>
+      `).join("");
+      els.shareCopy.value = generator.eventCopy(event);
+      els.posterPalette.innerHTML = event.poster.palette.map(color => `<span class="swatch" style="background:${escapeHtml(color)}"></span>`).join("");
+      drawVirtualPoster(event);
+    }
+
+    function clippedCanvasText(ctx, text, maxWidth) {
+      let output = String(text || "");
+      while (output.length > 4 && ctx.measureText(output).width > maxWidth) {
+        output = output.slice(0, -4).trimEnd() + "...";
+      }
+      return output;
+    }
+
+    function drawWrappedText(ctx, text, x, y, maxWidth, lineHeight, maxLines) {
+      const words = String(text || "").split(/\s+/).filter(Boolean);
+      const lines = [];
+      let line = "";
+      words.forEach(word => {
+        const next = line ? `${line} ${word}` : word;
+        if (ctx.measureText(next).width > maxWidth && line) {
+          lines.push(line);
+          line = word;
+        } else {
+          line = next;
+        }
+      });
+      if (line) lines.push(line);
+      const visible = lines.slice(0, maxLines);
+      if (lines.length > visible.length) {
+        visible[visible.length - 1] = clippedCanvasText(ctx, `${visible[visible.length - 1]}...`, maxWidth);
+      }
+      visible.forEach((item, index) => ctx.fillText(clippedCanvasText(ctx, item, maxWidth), x, y + index * lineHeight));
+      return y + visible.length * lineHeight;
+    }
+
+    function drawVirtualPoster(event) {
+      const canvas = els.posterCanvas;
+      const ctx = canvas.getContext("2d");
+      const width = canvas.width;
+      const height = canvas.height;
+      const palette = event.poster.palette;
+      ctx.clearRect(0, 0, width, height);
+      ctx.fillStyle = palette[0];
+      ctx.fillRect(0, 0, width, height);
+
+      ctx.strokeStyle = "rgba(242,240,232,.12)";
+      ctx.lineWidth = 2;
+      for (let x = 0; x < width; x += 45) {
+        ctx.beginPath();
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x + 110, height);
+        ctx.stroke();
+      }
+      for (let y = 0; y < height; y += 42) {
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.lineTo(width, y);
+        ctx.stroke();
+      }
+
+      ctx.fillStyle = palette[1];
+      ctx.fillRect(0, 0, 44, height);
+      ctx.fillStyle = palette[2];
+      ctx.fillRect(width - 150, 0, 150, 268);
+      ctx.fillStyle = palette[3];
+      ctx.fillRect(width - 96, 206, 96, 420);
+
+      ctx.save();
+      ctx.translate(88, 1060);
+      ctx.rotate(-Math.PI / 14);
+      ctx.fillStyle = "rgba(255,255,255,.08)";
+      ctx.fillRect(0, 0, 820, 190);
+      ctx.strokeStyle = palette[2];
+      ctx.strokeRect(0, 0, 820, 190);
+      ctx.restore();
+
+      ctx.fillStyle = palette[3];
+      ctx.font = "900 34px Aptos, Segoe UI, sans-serif";
+      ctx.fillText("RAVE EVERYWHERE / BETA", 92, 118);
+      ctx.font = "900 20px Aptos, Segoe UI, sans-serif";
+      ctx.fillStyle = palette[1];
+      ctx.fillText(event.poster.code, 92, 158);
+
+      ctx.fillStyle = "#f2f0e8";
+      ctx.font = "700 100px Georgia, Times New Roman, serif";
+      const nextY = drawWrappedText(ctx, event.title.replace(/^Rave Everywhere:\s*/i, ""), 92, 292, 760, 104, 3);
+
+      ctx.font = "900 30px Aptos, Segoe UI, sans-serif";
+      ctx.fillStyle = palette[1];
+      ctx.fillText(`${event.date} / ${event.time}`, 96, nextY + 54);
+      ctx.fillStyle = palette[3];
+      ctx.fillText(`${event.location.name} / ${event.location.district}`, 96, nextY + 96);
+
+      ctx.strokeStyle = palette[1];
+      ctx.lineWidth = 8;
+      ctx.beginPath();
+      ctx.moveTo(92, nextY + 134);
+      ctx.lineTo(width - 188, nextY + 134);
+      ctx.stroke();
+
+      ctx.font = "900 28px Aptos, Segoe UI, sans-serif";
+      ctx.fillStyle = palette[3];
+      ctx.fillText("LINEUP", 96, nextY + 194);
+      ctx.font = "700 52px Georgia, Times New Roman, serif";
+      ctx.fillStyle = "#f2f0e8";
+      let y = nextY + 258;
+      event.lineup.slice(0, 6).forEach(item => {
+        ctx.fillText(clippedCanvasText(ctx, item.name, 780), 96, y);
+        y += 66;
+      });
+
+      ctx.font = "900 22px Aptos, Segoe UI, sans-serif";
+      ctx.fillStyle = palette[2];
+      ctx.fillText(event.poster.motif.toUpperCase(), 96, height - 164);
+      ctx.fillStyle = "#aaa59a";
+      drawWrappedText(ctx, "VIRTUAL EVENT, NOT A VERIFIED LISTING. CHECK REAL VENUES, TICKETS, PERMISSIONS, AND SAFETY BEFORE GOING ANYWHERE.", 96, height - 116, 830, 30, 3);
+    }
+
+    function generateEverywhereEvent() {
+      const rows = selectedProfiles();
+      const event = generator.generateVirtualEvent({
+        seed: els.seedInput.value || "rave-everywhere-beta",
+        now: new Date().toISOString(),
+        selectedDjs: rows,
+        sourceEvents,
+      });
+      renderVirtualEvent(event);
+    }
+
+    function downloadPoster() {
+      if (!currentEvent) return;
+      els.posterCanvas.toBlob(blob => {
+        if (!blob) return;
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = `${currentEvent.id}.png`;
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+      }, "image/png");
+    }
+
+    function bindControls() {
+      els.djSearch.addEventListener("input", renderDjPicker);
+      els.seedInput.addEventListener("input", generateEverywhereEvent);
+      els.generateEverywhere.addEventListener("click", generateEverywhereEvent);
+      els.shuffleSeed.addEventListener("click", () => {
+        els.seedInput.value = `rave-${Date.now().toString(36)}`;
+        generateEverywhereEvent();
+      });
+      els.clearSelection.addEventListener("click", () => {
+        selectedSlugs.clear();
+        renderSelected();
+        renderDjPicker();
+        generateEverywhereEvent();
+      });
+      document.querySelectorAll("[data-mood]").forEach(button => {
+        button.addEventListener("click", () => autoPickMood(button.dataset.mood));
+      });
+      els.copyShare.addEventListener("click", async () => {
+        els.shareCopy.select();
+        try {
+          await navigator.clipboard.writeText(els.shareCopy.value);
+          els.copyShare.textContent = "Copied";
+          setTimeout(() => { els.copyShare.textContent = "Copy"; }, 1000);
+        } catch (_) {}
+      });
+      els.downloadPoster.addEventListener("click", downloadPoster);
+    }
+
+    function bootEverywhere() {
+      profiles.slice(0, 4).forEach(profile => selectedSlugs.add(profile.slug));
+      bindControls();
+      renderSelected();
+      renderDjPicker();
+      autoPickMood("hard");
+    }
+
+    bootEverywhere();
+  </script>
+</body>
+</html>

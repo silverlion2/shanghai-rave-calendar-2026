@@ -917,6 +917,243 @@ input:focus {
   }
 }
 
+/* Secondary pages: reuse the calendar page's Basement Dispatch visual system. */
+body:has(.dispatch-shell) {
+  background:
+    radial-gradient(circle at 44% 8%, rgba(255, 255, 255, .035), transparent 36%),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, .026) 0 1px, transparent 1px 5px),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, .018) 0 1px, transparent 1px 34px),
+    #050606 !important;
+}
+
+body:has(.dispatch-shell)::before {
+  opacity: .44 !important;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(255, 255, 255, .09), transparent 18%),
+    radial-gradient(circle at 68% 8%, rgba(255, 255, 255, .055), transparent 20%),
+    repeating-linear-gradient(110deg, rgba(255, 255, 255, .035) 0 1px, transparent 1px 17px) !important;
+  mix-blend-mode: screen;
+}
+
+.dispatch-shell {
+  width: min(1480px, calc(100% - 44px)) !important;
+  padding-top: 16px !important;
+}
+
+.dispatch-shell > .site-nav,
+.dispatch-shell > .primary-nav {
+  margin: 0 0 22px;
+  padding: 0 0 8px;
+  border-bottom: 0;
+}
+
+.dispatch-shell .hero,
+.dispatch-shell .planner-head,
+.dispatch-shell .wall-head,
+.dispatch-shell .topbar,
+.dispatch-shell .event-hero {
+  margin-bottom: 18px;
+  border-bottom: 1px solid rgba(229, 222, 209, .18) !important;
+  padding-bottom: 24px;
+}
+
+.dispatch-shell .wall-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+  gap: 22px;
+  align-items: end;
+}
+
+.dispatch-shell .wall-copy,
+.dispatch-shell .lede {
+  color: var(--paper) !important;
+  font-size: 16px !important;
+  line-height: 1.45;
+}
+
+.dispatch-shell .event-detail {
+  border-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.dispatch-shell .event-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 380px);
+  gap: 24px;
+  align-items: start;
+}
+
+.dispatch-shell .event-hero figure {
+  margin: 0;
+}
+
+.dispatch-shell .event-hero img {
+  aspect-ratio: 3 / 4;
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid rgba(229, 222, 209, .24);
+  border-radius: 0;
+  background: #050606;
+  object-fit: cover;
+  filter: grayscale(.32) contrast(1.18) brightness(.78);
+}
+
+.dispatch-shell .event-hero figcaption {
+  margin-top: 8px;
+  color: var(--cyan) !important;
+  font-family: var(--font-display);
+  font-size: 14px !important;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.dispatch-shell .event-section {
+  margin-top: 30px;
+  border-top: 1px solid rgba(229, 222, 209, .18);
+  padding-top: 18px;
+}
+
+.dispatch-shell .event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 10px;
+}
+
+.dispatch-shell .event-grid .event-card {
+  min-height: 156px;
+  display: grid;
+  align-content: space-between;
+  gap: 12px;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.dispatch-shell .event-grid .event-card h3,
+.dispatch-shell .copy-block h2 {
+  margin: 0;
+  color: var(--paper);
+  font-family: var(--font-display) !important;
+  font-weight: 900;
+  line-height: .95;
+  text-transform: uppercase;
+}
+
+.dispatch-shell .event-grid .event-card h3 {
+  font-size: 24px;
+}
+
+.dispatch-shell .event-meta,
+.dispatch-shell .crumbs,
+.dispatch-shell .source-list,
+.dispatch-shell .lineup-list span,
+.dispatch-shell .watch-note {
+  color: var(--muted) !important;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.dispatch-shell .crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.dispatch-shell .facts,
+.dispatch-shell .copy-block {
+  margin-top: 18px;
+}
+
+.dispatch-shell .facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.dispatch-shell .copy-block {
+  border: 1px solid rgba(229, 222, 209, .2);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, .025), rgba(0, 0, 0, .08)),
+    rgba(9, 11, 10, .88);
+  padding: 16px;
+}
+
+.dispatch-shell .lineup-list,
+.dispatch-shell .source-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dispatch-shell .lineup-list li,
+.dispatch-shell .source-list li {
+  display: grid;
+  gap: 4px;
+  border-top: 1px solid rgba(229, 222, 209, .12);
+  padding-top: 10px;
+}
+
+.dispatch-shell .lineup-list li:first-child,
+.dispatch-shell .source-list li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.dispatch-shell .bottom-dispatch-bar {
+  margin-top: 34px;
+}
+
+@media (min-width: 1100px) {
+  .dispatch-shell > .site-nav::before,
+  .dispatch-shell > .primary-nav::before {
+    content: none;
+  }
+
+  .dispatch-shell > .site-nav .nav-link,
+  .dispatch-shell > .primary-nav .nav-link {
+    min-height: 38px;
+    border-color: transparent !important;
+    background: transparent !important;
+    box-shadow: none;
+    color: var(--paper) !important;
+    padding: 0 2px;
+    font-size: 18px !important;
+  }
+
+  .dispatch-shell > .site-nav .nav-link.active,
+  .dispatch-shell > .site-nav .nav-link:hover,
+  .dispatch-shell > .primary-nav .nav-link.active,
+  .dispatch-shell > .primary-nav .nav-link:hover {
+    color: var(--cyan) !important;
+    border-bottom: 2px solid var(--cyan) !important;
+    background: transparent !important;
+  }
+
+  .dispatch-shell > .site-nav .tag,
+  .dispatch-shell > .primary-nav .tag {
+    min-height: 38px;
+    border-color: rgba(229, 222, 209, .45) !important;
+    color: var(--paper) !important;
+    background: rgba(5, 6, 6, .72) !important;
+    padding: 9px 18px;
+  }
+}
+
+@media (max-width: 860px) {
+  .dispatch-shell {
+    width: calc(100vw - 32px) !important;
+    max-width: calc(100vw - 32px) !important;
+  }
+
+  .dispatch-shell .event-hero,
+  .dispatch-shell .wall-head {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 640px) {
   .calendar-shell {
     overflow: visible !important;
@@ -1708,10 +1945,10 @@ body:has(.calendar-shell) .signal-canvas {
   }
 
   .calendar-shell .stats {
-    grid-column: 2 / 4;
-    grid-row: 1;
+    grid-column: 1 / 4;
+    grid-row: 8;
     align-self: start;
-    margin: 40px 0 0;
+    margin: 0;
     min-height: 72px;
     background: rgba(5, 6, 6, .48);
   }
@@ -1738,7 +1975,8 @@ body:has(.calendar-shell) .signal-canvas {
 
   .calendar-shell .highlight-wall {
     grid-column: 2 / 4;
-    grid-row: 2;
+    grid-row: 1;
+    margin-top: 40px;
   }
 
   .calendar-shell .paper-route {
@@ -2077,7 +2315,7 @@ body:has(.calendar-shell) .signal-canvas {
 
   .calendar-shell .footnotes {
     grid-column: 1 / 4;
-    grid-row: 8;
+    grid-row: 9;
     margin-top: 0;
     border: 1px solid rgba(229, 222, 209, .2);
     padding: 14px;

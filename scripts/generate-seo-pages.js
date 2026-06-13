@@ -9,6 +9,7 @@ const SITE_URL = "https://raveindexsh.top";
 const SITE_NAME = "Shanghai Rave Index";
 const STATIC_LASTMOD = "2026-06-12";
 const TIMEZONE_OFFSET = "+08:00";
+const GOOGLE_TAG_ID = "G-HP6NQ3VZB9";
 
 const payload = JSON.parse(fs.readFileSync(DATA_FILE, "utf8"));
 const events = Array.isArray(payload) ? payload : payload.events;
@@ -32,13 +33,19 @@ const normalizedEvents = events
   .map(event => ({ ...event, lineup: normalizedLineup(event) }))
   .sort((a, b) => String(a.sortDate).localeCompare(String(b.sortDate)) || String(a.title).localeCompare(String(b.title)));
 
-fs.writeFileSync(path.join(EVENTS_DIR, "index.html"), renderEventsIndex(normalizedEvents), "utf8");
 for (const event of normalizedEvents) {
-  fs.writeFileSync(path.join(EVENTS_DIR, `${event.id}.html`), renderEventPage(event), "utf8");
+  fs.writeFileSync(path.join(EVENTS_DIR, `${event.id}.html`), cleanGeneratedText(renderEventPage(event)), "utf8");
 }
-fs.writeFileSync(SITEMAP_FILE, renderSitemap(normalizedEvents), "utf8");
+fs.writeFileSync(SITEMAP_FILE, cleanGeneratedText(renderSitemap(normalizedEvents)), "utf8");
 
-console.log(`Generated ${normalizedEvents.length} event SEO pages and sitemap.xml`);
+console.log(`Generated ${normalizedEvents.length} event detail pages and sitemap.xml`);
+
+function cleanGeneratedText(value) {
+  return String(value)
+    .split("\n")
+    .map(line => line.trimEnd())
+    .join("\n");
+}
 
 function normalizedLineup(event) {
   const raw = Array.isArray(event.lineup) && event.lineup.length ? event.lineup : lineups[event.id] || [];
@@ -53,63 +60,6 @@ function normalizedLineup(event) {
       };
     })
     .filter(item => item.name);
-}
-
-function renderEventsIndex(list) {
-  const publicEvents = list.filter(isPublicEvent);
-  const upcoming = publicEvents.filter(event => event.status !== "past");
-  const past = publicEvents.filter(event => event.status === "past");
-  const watch = list.filter(event => !isPublicEvent(event));
-  const schema = graph([
-    websiteSchema(),
-    {
-      "@type": "CollectionPage",
-      "@id": `${SITE_URL}/events#webpage`,
-      "name": "Shanghai Rave Event Pages",
-      "url": `${SITE_URL}/events`,
-      "description": "Crawlable event detail pages for sourced Shanghai techno, rave, club, bass, and underground electronic events.",
-      "isPartOf": { "@id": `${SITE_URL}/#website` },
-      "mainEntity": itemListSchema(publicEvents.slice(0, 100).map((event, index) => ({
-        position: index + 1,
-        name: event.title,
-        url: eventUrl(event),
-      }))),
-    },
-    breadcrumbSchema([
-      ["Home", SITE_URL],
-      ["Events", `${SITE_URL}/events`],
-    ]),
-  ]);
-
-  return pageShell({
-    title: "Shanghai Rave Event Pages | Shanghai Rave Index",
-    description: "Static, crawlable detail pages for Shanghai techno, rave, club, bass, and underground electronic events with dates, venues, sources, and lineup notes.",
-    canonical: `${SITE_URL}/events`,
-    ogTitle: "Shanghai Rave Event Pages",
-    ogDescription: "Crawlable detail pages for sourced Shanghai underground electronic events.",
-    ogImage: `${SITE_URL}/og-image.png`,
-    ogAlt: "Preview of Shanghai Rave Index event pages",
-    robots: "index,follow,max-image-preview:large",
-    schema,
-    body: `
-      <main class="shell">
-        ${nav("../")}
-        <header class="hero">
-          <p class="kicker">Static event inventory</p>
-          <h1>Shanghai Rave Event Pages</h1>
-          <p class="lede">Search-ready detail pages for the sourced Shanghai Rave Index calendar. Confirmed and secondary-sourced events are indexable; watchlist leads stay visible to users but noindexed until stronger source evidence is captured.</p>
-          <div class="stat-grid">
-            <div class="stat"><b>${publicEvents.length}</b><span>indexable event pages</span></div>
-            <div class="stat"><b>${upcoming.length}</b><span>upcoming or active</span></div>
-            <div class="stat"><b>${watch.length}</b><span>watchlist leads held back</span></div>
-          </div>
-        </header>
-        ${eventSection("Upcoming", upcoming)}
-        ${eventSection("Past Archive", past)}
-        ${watch.length ? eventSection("Watchlist Leads", watch, { noindex: true }) : ""}
-      </main>
-    `,
-  });
 }
 
 function renderEventPage(event) {
@@ -130,7 +80,7 @@ function renderEventPage(event) {
     },
     breadcrumbSchema([
       ["Home", SITE_URL],
-      ["Events", `${SITE_URL}/events`],
+      ["Wall", `${SITE_URL}/poster-wall`],
       [event.title, canonical],
     ]),
   ];
@@ -150,12 +100,12 @@ function renderEventPage(event) {
     robots: isPublic ? "index,follow,max-image-preview:large" : "noindex,follow",
     schema: graph(schemaNodes),
     body: `
-      <main class="shell">
+      <main class="shell dispatch-shell">
         ${nav("../")}
         <nav class="crumbs" aria-label="Breadcrumb">
           <a href="../index.html">Calendar</a>
           <span>/</span>
-          <a href="index.html">Events</a>
+          <a href="../poster-wall.html">Wall</a>
           <span>/</span>
           <span>${escapeHtml(event.title)}</span>
         </nav>
@@ -202,6 +152,7 @@ function renderEventPage(event) {
             ${isPublic ? "" : `<p class="watch-note">This lead is intentionally noindexed until a direct venue, promoter, ticketing, RA, SmartShanghai detail, or official artist source confirms the details.</p>`}
           </section>
         </article>
+        ${sharedFooter("../")}
       </main>
     `,
   });
@@ -220,6 +171,16 @@ function pageShell({ title, description, canonical, ogTitle, ogDescription, ogIm
   <link rel="canonical" href="${escapeAttr(canonical)}">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" href="/og-image.png" type="image/png">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=${GOOGLE_TAG_ID}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "${GOOGLE_TAG_ID}");
+  </script>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="${SITE_NAME}">
   <meta property="og:title" content="${escapeAttr(ogTitle)}">
@@ -317,6 +278,7 @@ ${jsonLd(schema)}
       .site-nav { align-items: flex-start; }
     }
   </style>
+  <link rel="stylesheet" href="../assets/basement-dispatch.css">
 </head>
 <body>
 ${body}
@@ -325,38 +287,53 @@ ${body}
 `;
 }
 
-function eventSection(title, list, options = {}) {
-  if (!list.length) return "";
-  return `
-    <section class="event-section">
-      <h2>${escapeHtml(title)}</h2>
-      <div class="event-grid">
-        ${list.map(event => `
-          <a class="event-card" href="${escapeAttr(`${event.id}.html`)}">
-            <span class="event-meta">${escapeHtml(event.date || event.sortDate)} / ${escapeHtml(event.time || "Check source")}</span>
-            <h3>${escapeHtml(event.title)}</h3>
-            <span class="event-meta">${escapeHtml(event.venue || "Shanghai")} / ${escapeHtml(event.genre || "electronic")}</span>
-            <span class="event-meta">${escapeHtml(options.noindex ? "watchlist lead / noindexed" : `${event.confidence || "source checked"} / ${event.sourceLabel || "source"}`)}</span>
-          </a>
-        `).join("")}
-      </div>
-    </section>
-  `;
-}
-
 function nav(prefix = "") {
   return `
     <nav class="site-nav" aria-label="Site navigation">
       <div class="nav-group">
         <a class="nav-link" href="${prefix}index.html">Calendar</a>
-        <a class="nav-link active" href="${prefix}events/index.html">Events</a>
-        <a class="nav-link" href="${prefix}poster-wall.html">Wall</a>
+        <a class="nav-link active" href="${prefix}poster-wall.html">Wall</a>
+        <a class="nav-link" href="${prefix}love-wall.html">Love</a>
+        <a class="nav-link" href="${prefix}poster-archive.html">Archive</a>
         <a class="nav-link" href="${prefix}planner.html">Planner</a>
+        <a class="nav-link" href="${prefix}rave-everywhere.html">Everywhere</a>
         <a class="nav-link" href="${prefix}venues.html">Venues</a>
         <a class="nav-link" href="${prefix}djs.html">DJs</a>
       </div>
       <span>Basement Dispatch / source-first calendar</span>
     </nav>
+  `;
+}
+
+function sharedFooter(prefix = "") {
+  return `
+    <footer class="footnotes bottom-dispatch-bar" aria-label="Basement Dispatch status">
+      <div class="bar-cell update-cell">
+        <span class="footer-alert-mark" aria-hidden="true">!</span>
+        <strong>Event data<br>can move</strong>
+      </div>
+      <div class="bar-cell">
+        <span>Generated pages mirror the public calendar format.</span>
+        <span>Confirm source links before planning around details.</span>
+      </div>
+      <address class="bar-cell">
+        <span>Questions or updates?</span>
+        <a href="mailto:info@shanghairaveindex.com">info@shanghairaveindex.com</a>
+        <span>IG @shanghairaveindex</span>
+      </address>
+      <div class="bar-cell">
+        <span>Information is aggregated from public sources and may change.</span>
+        <span>Watchlist leads stay noindexed until stronger evidence lands.</span>
+      </div>
+      <a class="bar-cell ops-cell" href="${prefix}ops.html" aria-label="Open Ops desk">
+        <span>Ops desk</span>
+        <b>Review queue -></b>
+      </a>
+      <div class="bar-cell source-cell">
+        <span>Source first</span>
+        <span>Rave second</span>
+      </div>
+    </footer>
   `;
 }
 
@@ -441,18 +418,6 @@ function offerSchema(event) {
   return offer;
 }
 
-function itemListSchema(items) {
-  return {
-    "@type": "ItemList",
-    "itemListElement": items.map(item => ({
-      "@type": "ListItem",
-      "position": item.position,
-      "name": item.name,
-      "url": item.url,
-    })),
-  };
-}
-
 function breadcrumbSchema(items) {
   return {
     "@type": "BreadcrumbList",
@@ -494,11 +459,13 @@ function graph(nodes) {
 function renderSitemap(list) {
   const staticRoutes = [
     ["/", STATIC_LASTMOD, "daily", "1.0"],
-    ["/events", STATIC_LASTMOD, "daily", "0.95"],
+    ["/poster-wall", STATIC_LASTMOD, "daily", "0.95"],
+    ["/love-wall", STATIC_LASTMOD, "weekly", "0.93"],
+    ["/poster-archive", STATIC_LASTMOD, "weekly", "0.92"],
     ["/planner", STATIC_LASTMOD, "weekly", "0.9"],
+    ["/rave-everywhere", STATIC_LASTMOD, "weekly", "0.88"],
     ["/djs", STATIC_LASTMOD, "weekly", "0.85"],
     ["/venues", STATIC_LASTMOD, "weekly", "0.8"],
-    ["/poster-wall", STATIC_LASTMOD, "weekly", "0.75"],
   ];
   const eventRoutes = list.filter(isPublicEvent).map(event => [
     `/events/${event.id}`,

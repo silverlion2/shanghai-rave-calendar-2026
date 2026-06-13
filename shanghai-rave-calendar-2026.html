@@ -10,6 +10,16 @@
   <link rel="canonical" href="https://raveindexsh.top/">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" href="/og-image.png" type="image/png">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HP6NQ3VZB9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-HP6NQ3VZB9");
+  </script>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Shanghai Rave Index">
   <meta property="og:title" content="Shanghai Rave Index">
@@ -1815,9 +1825,11 @@
   <main class="shell calendar-shell">
     <nav class="primary-nav" aria-label="Primary">
       <a class="nav-link active" href="index.html">Calendar</a>
-      <a class="nav-link" href="events/index.html">Events</a>
       <a class="nav-link" href="poster-wall.html">Wall</a>
+      <a class="nav-link" href="love-wall.html">Love</a>
+      <a class="nav-link" href="poster-archive.html">Archive</a>
       <a class="nav-link" href="planner.html">Planner</a>
+      <a class="nav-link" href="rave-everywhere.html">Everywhere</a>
       <a class="nav-link" href="venues.html">Venues</a>
       <a class="nav-link" href="djs.html">DJs</a>
     </nav>
@@ -1837,13 +1849,6 @@
         <img src="assets/posters/santa-k-optimized.jpg" alt="Basement Dispatch poster wall detail" loading="lazy" decoding="async">
       </figure>
     </header>
-
-    <section class="stats" aria-label="Calendar statistics">
-      <div class="stat"><b id="statEvents">0</b><span>sourced events and leads across 2026</span></div>
-      <div class="stat"><b id="statUpcoming">0</b><span>upcoming confirmed or single-source entries after June 11</span></div>
-      <div class="stat"><b id="statTop">0</b><span>high-confidence techno or rave picks</span></div>
-      <div class="stat"><b>6</b><span>late-year watchlist months without reliable full calendars yet</span></div>
-    </section>
 
     <section class="highlight-wall" id="highlightWall" aria-label="Upcoming highlights"></section>
 
@@ -1967,6 +1972,13 @@
         <b>6</b>
         <span>Late-year watchlist months without reliable full calendars yet</span>
       </div>
+    </section>
+
+    <section class="stats" aria-label="Calendar statistics">
+      <div class="stat"><b id="statEvents">0</b><span>sourced events and leads across 2026</span></div>
+      <div class="stat"><b id="statUpcoming">0</b><span>upcoming confirmed or single-source entries after June 11</span></div>
+      <div class="stat"><b id="statTop">0</b><span>high-confidence techno or rave picks</span></div>
+      <div class="stat"><b>6</b><span>late-year watchlist months without reliable full calendars yet</span></div>
     </section>
 
     <footer class="footnotes bottom-dispatch-bar" aria-label="Basement Dispatch status">
