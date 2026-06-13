@@ -1045,19 +1045,22 @@ const loveWallRequirements = [
   { file: "love-wall.html", text: 'id="liveWallOnline"', label: "Love Wall live online readout" },
   { file: "love-wall.html", text: 'id="livePulseFeed"', label: "Love Wall live pulse feed" },
   { file: "love-wall.html", text: "love-wall-signal", label: "Love Wall moderation-safe realtime signal" },
-  { file: "index.html", text: "assets/live-room-realtime.js", label: "calendar event live-room helper" },
-  { file: "index.html", text: 'id="todayLiveRooms"', label: "calendar today live rooms mount" },
-  { file: "index.html", text: "event-room-signal", label: "calendar event live-room signal broadcast" },
-  { file: "index.html", text: "event-room-reaction", label: "calendar event live-room reactions" },
-  { file: "index.html", text: "Copy room", label: "calendar event live-room share action" },
-  { file: "index.html", text: "live-room-feed", label: "calendar event live-room activity feed" },
-  { file: "shanghai-rave-calendar-2026.html", text: "assets/live-room-realtime.js", label: "archive event live-room helper" },
-  { file: "shanghai-rave-calendar-2026.html", text: 'id="todayLiveRooms"', label: "archive today live rooms mount" },
-  { file: "shanghai-rave-calendar-2026.html", text: "event-room-signal", label: "archive event live-room signal broadcast" },
-  { file: "shanghai-rave-calendar-2026.html", text: "Copy room", label: "archive event live-room share action" },
   { file: "assets/love-wall-supabase-config.js", text: 'reactionTable: "love_wall_reactions"', label: "Love Wall reaction table config" },
   { file: "supabase/migrations/202606130002_love_wall_reactions.sql", text: "love_wall_reactions", label: "Love Wall reaction migration" },
   { file: "sitemap.xml", text: `${siteUrl}/love-wall`, label: "Love Wall sitemap URL" },
+];
+
+const liveRoomRequirements = [
+  { file: "index.html", text: 'href="live-room.html"', label: "calendar Live Room link" },
+  { file: "shanghai-rave-calendar-2026.html", text: 'href="live-room.html"', label: "archive Live Room link" },
+  { file: "live-room.html", text: "Shanghai Rave Live Room", label: "Live Room page title" },
+  { file: "live-room.html", text: "assets/live-room-realtime.js", label: "Live Room realtime helper" },
+  { file: "live-room.html", text: 'id="todayLiveRooms"', label: "Live Room room mount" },
+  { file: "live-room.html", text: "event-room-signal", label: "Live Room signal broadcast" },
+  { file: "live-room.html", text: "event-room-reaction", label: "Live Room reaction broadcast" },
+  { file: "live-room.html", text: "Copy room", label: "Live Room share action" },
+  { file: "live-room.html", text: "data/events.json", label: "Live Room event data loader" },
+  { file: "sitemap.xml", text: `${siteUrl}/live-room`, label: "Live Room sitemap URL" },
 ];
 
 const accountRequirements = [
@@ -1105,7 +1108,7 @@ const accountGuideRequirements = accountGuidePages.flatMap(page => [
   { file: page.file, text: "assets/account-system.js", label: `${page.file} public account guide script` },
 ]);
 
-for (const requirement of [...itineraryRequirements, ...opsRequirements, ...adminCornerRequirements, ...scrapeRequirements, ...posterArchiveRequirements, ...everywhereRequirements, ...loveWallRequirements, ...accountRequirements, ...accountGuideRequirements]) {
+for (const requirement of [...itineraryRequirements, ...opsRequirements, ...adminCornerRequirements, ...scrapeRequirements, ...posterArchiveRequirements, ...everywhereRequirements, ...loveWallRequirements, ...liveRoomRequirements, ...accountRequirements, ...accountGuideRequirements]) {
   const html = fs.readFileSync(requirement.file, "utf8");
   if (!html.includes(requirement.text)) {
     throw new Error(`${requirement.file} missing feature marker: ${requirement.label}`);

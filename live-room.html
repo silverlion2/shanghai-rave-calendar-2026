@@ -1,0 +1,767 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shanghai Rave Live Room | Shanghai Rave Index</title>
+  <meta name="description" content="Tonight-only live rooms for sourced Shanghai rave listings, with local fallback reactions and Supabase realtime presence when configured.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#36c7e7">
+  <link rel="canonical" href="https://raveindexsh.top/live-room">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" href="/og-image.png" type="image/png">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HP6NQ3VZB9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-HP6NQ3VZB9");
+  </script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shanghai Rave Index">
+  <meta property="og:title" content="Shanghai Rave Live Room | Shanghai Rave Index">
+  <meta property="og:description" content="A separate tonight-only live room for Shanghai Rave Index event signals.">
+  <meta property="og:url" content="https://raveindexsh.top/live-room">
+  <meta property="og:image" content="https://raveindexsh.top/og-image.png">
+  <meta property="og:image:alt" content="Preview of the Shanghai Rave Index live room">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Shanghai Rave Live Room | Shanghai Rave Index",
+    "url": "https://raveindexsh.top/live-room",
+    "description": "Tonight-only live rooms for sourced Shanghai rave listings.",
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Shanghai Rave Index",
+      "url": "https://raveindexsh.top/"
+    }
+  }
+  </script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .live-room-page {
+      display: grid;
+      gap: 18px;
+    }
+
+    .live-room-hero {
+      display: grid;
+      grid-template-columns: minmax(300px, .86fr) minmax(0, 1fr);
+      gap: 18px;
+      align-items: stretch;
+      border-bottom: 1px solid rgba(229, 222, 209, .18);
+      padding-bottom: 18px;
+    }
+
+    .live-room-title,
+    .live-room-console,
+    .live-room-card,
+    .live-room-feed-panel,
+    .live-room-empty {
+      border: 1px solid rgba(229, 222, 209, .2);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, .028), rgba(0, 0, 0, .08)),
+        rgba(8, 10, 9, .88);
+    }
+
+    .live-room-title {
+      position: relative;
+      min-height: 460px;
+      display: grid;
+      align-content: end;
+      overflow: hidden;
+      padding: clamp(20px, 4vw, 36px);
+    }
+
+    .live-room-title::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(180deg, transparent 8%, rgba(5, 6, 6, .62) 58%, rgba(5, 6, 6, .96)),
+        repeating-linear-gradient(0deg, rgba(255, 255, 255, .08) 0 1px, transparent 1px 10px);
+      z-index: 1;
+    }
+
+    .live-room-title img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(.55) contrast(1.28) brightness(.62);
+    }
+
+    .live-room-title-copy {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      gap: 12px;
+      max-width: 620px;
+    }
+
+    .live-room-title h1 {
+      margin: 0;
+      color: var(--paper);
+      font-family: var(--font-display);
+      font-size: clamp(60px, 8vw, 116px);
+      font-weight: 900;
+      line-height: .82;
+      text-transform: uppercase;
+      text-shadow: 0 2px 0 rgba(0, 0, 0, .88);
+    }
+
+    .live-room-title p,
+    .live-room-console p,
+    .live-room-empty p {
+      margin: 0;
+      color: var(--paper);
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .live-room-console {
+      display: grid;
+      grid-template-rows: auto auto minmax(0, 1fr);
+      gap: 12px;
+      min-height: 460px;
+      padding: 14px;
+    }
+
+    .live-room-readouts {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .live-room-readout {
+      min-height: 104px;
+      display: grid;
+      align-content: space-between;
+      border: 1px solid rgba(229, 222, 209, .18);
+      background: rgba(5, 6, 6, .54);
+      padding: 12px;
+    }
+
+    .live-room-readout b {
+      color: var(--accent, var(--cyan));
+      font-family: var(--font-display);
+      font-size: clamp(36px, 5vw, 62px);
+      font-weight: 900;
+      line-height: .82;
+      text-transform: uppercase;
+    }
+
+    .live-room-readout span,
+    .live-room-meta,
+    .live-room-status,
+    .live-room-help,
+    .live-room-feed span,
+    .live-room-card small {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 900;
+      line-height: 1.22;
+      text-transform: uppercase;
+    }
+
+    .live-room-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      border: 1px solid rgba(229, 222, 209, .16);
+      background: rgba(5, 6, 6, .5);
+      padding: 8px;
+    }
+
+    .live-room-toolbar a,
+    .live-room-action,
+    .live-room-signal {
+      min-height: 34px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(229, 222, 209, .22);
+      color: var(--paper);
+      background: rgba(5, 6, 6, .82);
+      padding: 8px 10px;
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 1;
+      text-decoration: none;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .live-room-toolbar a:hover,
+    .live-room-action:hover,
+    .live-room-action.active,
+    .live-room-signal:hover {
+      color: var(--void);
+      border-color: var(--cyan);
+      background: var(--cyan);
+    }
+
+    .live-room-list {
+      display: grid;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .live-room-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: start;
+      padding: 14px;
+    }
+
+    .live-room-card.active {
+      border-color: var(--cyan);
+      box-shadow: inset 0 0 0 1px rgba(54, 199, 231, .24);
+    }
+
+    .live-room-main {
+      display: grid;
+      gap: 6px;
+      min-width: 0;
+    }
+
+    .live-room-main b {
+      color: var(--paper);
+      font-family: var(--font-display);
+      font-size: clamp(28px, 3vw, 44px);
+      font-weight: 900;
+      line-height: .92;
+      text-transform: uppercase;
+      overflow-wrap: anywhere;
+    }
+
+    .live-room-help {
+      max-width: 680px;
+      color: var(--paper);
+    }
+
+    .live-room-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .live-room-side {
+      display: grid;
+      gap: 6px;
+      min-width: 148px;
+    }
+
+    .live-room-feed {
+      grid-column: 1 / -1;
+      display: grid;
+      gap: 6px;
+      border-top: 1px solid rgba(229, 222, 209, .14);
+      padding-top: 10px;
+    }
+
+    .live-room-feed span {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .live-room-feed b {
+      color: var(--cyan);
+      overflow-wrap: anywhere;
+    }
+
+    .live-room-feed em {
+      color: var(--dim);
+      font-style: normal;
+      white-space: nowrap;
+    }
+
+    .live-room-empty {
+      display: grid;
+      gap: 10px;
+      padding: 18px;
+    }
+
+    .live-room-empty a {
+      color: var(--cyan);
+      font-weight: 900;
+    }
+
+    @media (max-width: 980px) {
+      .live-room-hero {
+        grid-template-columns: 1fr;
+      }
+
+      .live-room-title,
+      .live-room-console {
+        min-height: auto;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .live-room-readouts,
+      .live-room-card {
+        grid-template-columns: 1fr;
+      }
+
+      .live-room-side {
+        min-width: 0;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .live-room-action {
+        width: 100%;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="assets/basement-dispatch.css?v=xhs-contact-20260613c">
+  <script src="assets/love-wall-supabase-config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="assets/live-room-realtime.js"></script>
+</head>
+<body data-current-date="2026-06-13">
+  <main class="shell dispatch-shell live-room-page">
+    <nav class="site-nav" aria-label="Site navigation">
+      <div class="nav-group">
+        <a class="nav-link" href="index.html">Calendar</a>
+        <a class="nav-link" href="poster-wall.html">Wall</a>
+        <a class="nav-link" href="love-wall.html">Love</a>
+        <a class="nav-link active" href="live-room.html">Live</a>
+        <a class="nav-link" href="planner.html">Planner</a>
+        <a class="nav-link" href="rave-everywhere.html">Everywhere</a>
+        <a class="nav-link" href="venues.html">Venues</a>
+        <a class="nav-link" href="djs.html">DJs</a>
+        <a class="nav-link" href="account.html">Account</a>
+      </div>
+      <span class="tag">Tonight signals</span>
+    </nav>
+
+    <section class="live-room-hero" id="live-room" aria-label="Tonight live room">
+      <header class="live-room-title">
+        <img src="assets/posters/santa-k-optimized.jpg" alt="" loading="eager" decoding="async" fetchpriority="high">
+        <div class="live-room-title-copy">
+          <p class="kicker">Separate room / tonight only</p>
+          <h1>Live Room</h1>
+          <span class="dispatch-strip">Basement Dispatch / room signals</span>
+          <p>Tonight's sourced event rooms, separated from the calendar layout.</p>
+        </div>
+      </header>
+
+      <section class="live-room-console" aria-label="Live room status">
+        <div class="live-room-readouts" aria-live="polite">
+          <div class="live-room-readout" style="--accent: var(--cyan)">
+            <b id="roomCount">--</b>
+            <span>rooms today</span>
+          </div>
+          <div class="live-room-readout" style="--accent: var(--gold)">
+            <b id="onlineCount">--</b>
+            <span>online</span>
+          </div>
+          <div class="live-room-readout" style="--accent: var(--ember)">
+            <b id="roomMode">Local</b>
+            <span>mode</span>
+          </div>
+        </div>
+
+        <div class="live-room-toolbar">
+          <a href="index.html">Back to calendar</a>
+          <button class="live-room-action" type="button" id="refreshRooms">Refresh</button>
+          <span class="live-room-status" id="todayLiveRoomStatus">Loading rooms</span>
+        </div>
+
+        <div class="live-room-list" id="todayLiveRooms" aria-live="polite"></div>
+      </section>
+    </section>
+
+    <footer class="footnotes bottom-dispatch-bar" aria-label="Basement Dispatch status">
+      <div class="bar-cell update-cell">
+        <span class="footer-alert-mark" aria-hidden="true">!</span>
+        <strong>Live room<br>split out</strong>
+      </div>
+      <div class="bar-cell">
+        <span>Calendar layout now links here instead of embedding the room feed.</span>
+        <span>Room counts are local unless Supabase realtime is configured.</span>
+      </div>
+      <address class="bar-cell contact-cell">
+        <a class="contact-card-link" href="assets/social/xhs-contact-card.jpg" aria-label="Open RED Xiaohongshu contact QR card">
+          <span class="contact-copy">
+            <span>Contact / updates</span>
+            <b>RED</b>
+            <em>ID 980793145</em>
+          </span>
+          <img src="assets/social/xhs-contact-card.jpg" alt="" loading="lazy" decoding="async">
+        </a>
+      </address>
+      <div class="bar-cell">
+        <span>Signals are not official capacity, ticket, safety, or venue status.</span>
+        <span>Use source links before making a plan.</span>
+      </div>
+      <div class="bar-cell source-cell">
+        <span>Tonight only</span>
+        <span>Asia/Shanghai</span>
+      </div>
+    </footer>
+    <a class="admin-corner" data-admin-corner href="ops.html" aria-label="Admin sign in">admin</a>
+  </main>
+
+  <script>
+    const liveRoomHelper = window.LIVE_ROOM_REALTIME;
+    const eventLiveRoomStorageKey = "shanghai-rave-event-live-room-reactions-v1";
+    const eventLiveRoomReactionOptions = liveRoomHelper && typeof liveRoomHelper.eventRoomSignalOptions === "function"
+      ? liveRoomHelper.eventRoomSignalOptions()
+      : [
+        { key: "inside", label: "Inside" },
+        { key: "heat", label: "Heat" },
+        { key: "queue", label: "Queue" },
+        { key: "set-now", label: "Set now" },
+        { key: "water", label: "Water" },
+        { key: "leaving", label: "Leaving" },
+        { key: "after", label: "After?" }
+      ];
+    const todayLiveRoomsEl = document.getElementById("todayLiveRooms");
+    const todayLiveRoomStatus = document.getElementById("todayLiveRoomStatus");
+    const roomCount = document.getElementById("roomCount");
+    const onlineCount = document.getElementById("onlineCount");
+    const roomMode = document.getElementById("roomMode");
+    const refreshRooms = document.getElementById("refreshRooms");
+    let events = [];
+    let today = dateForIso(document.body.dataset.currentDate || "2026-06-13");
+    let eventLiveRooms = [];
+    let activeEventLiveRoomId = "";
+    let eventLiveRoomMode = "local";
+    let eventLiveRoomPresence = 0;
+    let eventLiveRoomReactionCounts = loadEventLiveRoomReactions();
+    let eventLiveRoomFeed = {};
+    let eventLiveRoomHashHandled = false;
+    const eventLiveRealtime = liveRoomHelper && typeof liveRoomHelper.createLiveRoomRealtime === "function"
+      ? liveRoomHelper.createLiveRoomRealtime({
+        broadcastEvents: ["event-room-signal", "event-room-reaction"],
+        onBroadcast: handleEventLiveRoomBroadcast,
+        onPresence: handleEventLiveRoomPresence,
+        onStatus: handleEventLiveRoomStatus
+      })
+      : null;
+
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, char => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#039;"
+      }[char]));
+    }
+
+    function dateForIso(value) {
+      const [year, month, day] = String(value || "").slice(0, 10).split("-").map(Number);
+      return new Date(year || 2026, (month || 6) - 1, day || 13);
+    }
+
+    function shanghaiToday(fallbackIso) {
+      const now = new Date();
+      const parts = Object.fromEntries(new Intl.DateTimeFormat("en-US", {
+        timeZone: "Asia/Shanghai",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit"
+      }).formatToParts(now).filter(part => part.type !== "literal").map(part => [part.type, part.value]));
+      if (Number(parts.year) === 2026) return new Date(Number(parts.year), Number(parts.month) - 1, Number(parts.day));
+      const pinned = document.body.dataset.currentDate;
+      if (pinned) return dateForIso(pinned);
+      return dateForIso(fallbackIso || "2026-06-13");
+    }
+
+    function loadEventLiveRoomReactions() {
+      try {
+        const parsed = JSON.parse(window.localStorage.getItem(eventLiveRoomStorageKey) || "{}");
+        return parsed && typeof parsed === "object" ? parsed : {};
+      } catch (_) {
+        return {};
+      }
+    }
+
+    function saveEventLiveRoomReactions() {
+      try {
+        window.localStorage.setItem(eventLiveRoomStorageKey, JSON.stringify(eventLiveRoomReactionCounts));
+      } catch (_) {}
+    }
+
+    function eventLiveRoomCounts(eventId) {
+      return eventLiveRoomReactionCounts[eventId] || {};
+    }
+
+    function eventLiveRoomFeedFor(eventId) {
+      return Array.isArray(eventLiveRoomFeed[eventId]) ? eventLiveRoomFeed[eventId] : [];
+    }
+
+    function pushEventLiveRoomFeed(eventId, reaction, payload = {}) {
+      if (!liveRoomHelper || typeof liveRoomHelper.roomFeedAfterSignal !== "function") return;
+      eventLiveRoomFeed[eventId] = liveRoomHelper.roomFeedAfterSignal(
+        eventLiveRoomFeedFor(eventId),
+        {
+          targetId: eventId,
+          reaction,
+          ...payload
+        },
+        eventLiveRoomReactionOptions
+      );
+    }
+
+    function activeLiveRoom() {
+      return eventLiveRooms.find(room => room.eventId === activeEventLiveRoomId) || null;
+    }
+
+    function liveRoomStateText(room) {
+      if (!room || room.eventId !== activeEventLiveRoomId) return "Tap join";
+      if (eventLiveRoomMode === "live") return `In room / ${Math.max(1, eventLiveRoomPresence)} online`;
+      if (eventLiveRoomMode === "connecting") return "Syncing";
+      return "In room / local mode";
+    }
+
+    function liveRoomHelpText(room) {
+      if (room && room.eventId === activeEventLiveRoomId) {
+        return "Room selected. The URL now points here; signals post to this room only.";
+      }
+      return "Join room selects the event room and updates the share URL. It is not a ticket or RSVP.";
+    }
+
+    function updateLiveRoomStatus() {
+      const active = activeLiveRoom();
+      roomCount.textContent = String(eventLiveRooms.length);
+      onlineCount.textContent = active && eventLiveRoomMode === "live" ? String(Math.max(1, eventLiveRoomPresence)) : "--";
+      roomMode.textContent = eventLiveRoomMode === "connecting" ? "Sync" : eventLiveRoomMode === "live" ? "Live" : "Local";
+      if (active && eventLiveRoomMode === "live") {
+        todayLiveRoomStatus.textContent = `${Math.max(1, eventLiveRoomPresence)} online / ${active.title}`;
+      } else if (active && eventLiveRoomMode === "connecting") {
+        todayLiveRoomStatus.textContent = `Syncing / ${active.title}`;
+      } else {
+        todayLiveRoomStatus.textContent = `${eventLiveRooms.length} room${eventLiveRooms.length === 1 ? "" : "s"} today`;
+      }
+    }
+
+    function roomShareLinkFor(eventId) {
+      const cleanPageUrl = `${window.location.origin}${window.location.pathname}`;
+      return liveRoomHelper && typeof liveRoomHelper.roomShareUrl === "function"
+        ? liveRoomHelper.roomShareUrl(cleanPageUrl, eventId)
+        : `${cleanPageUrl}#live-room=${encodeURIComponent(eventId)}`;
+    }
+
+    function liveRoomHashEventId() {
+      const match = String(window.location.hash || "").match(/live-room=([^&]+)/);
+      if (match) return decodeURIComponent(match[1]);
+      const query = new URLSearchParams(window.location.search || "");
+      return query.get("room") || query.get("live-room") || "";
+    }
+
+    function syncLiveRoomHash(eventId) {
+      const next = roomShareLinkFor(eventId);
+      if (window.history && typeof window.history.replaceState === "function") {
+        window.history.replaceState(null, "", next);
+      }
+    }
+
+    function formatLiveFeedTime(value) {
+      const date = new Date(value);
+      if (Number.isNaN(date.getTime())) return "now";
+      return date.toLocaleTimeString("en-US", {
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: false,
+        timeZone: "Asia/Shanghai"
+      });
+    }
+
+    function renderLiveRoomFeed(room) {
+      if (room.eventId !== activeEventLiveRoomId) return "";
+      const feed = eventLiveRoomFeedFor(room.eventId);
+      const rows = feed.length
+        ? feed.map(item => `<span><b>${escapeHtml(item.label)}</b><em>${escapeHtml(formatLiveFeedTime(item.at))}</em></span>`).join("")
+        : `<span><b>Waiting for room signals</b><em>live</em></span>`;
+      return `<div class="live-room-feed" aria-live="polite">${rows}</div>`;
+    }
+
+    function renderTodayLiveRooms() {
+      eventLiveRooms = liveRoomHelper && typeof liveRoomHelper.todayEventRooms === "function"
+        ? liveRoomHelper.todayEventRooms(events, today)
+        : [];
+      updateLiveRoomStatus();
+      if (!eventLiveRooms.length) {
+        todayLiveRoomsEl.innerHTML = `
+          <div class="live-room-empty">
+            <p>No live rooms for today's sourced events.</p>
+            <a href="index.html">Open the calendar</a>
+          </div>
+        `;
+        return;
+      }
+      todayLiveRoomsEl.innerHTML = eventLiveRooms.map(room => {
+        const active = room.eventId === activeEventLiveRoomId;
+        const counts = eventLiveRoomCounts(room.eventId);
+        return `
+          <article class="live-room-card ${active ? "active" : ""}" data-live-room-card="${escapeHtml(room.eventId)}">
+            <div class="live-room-main">
+              <small>${escapeHtml(room.date)} / ${escapeHtml(room.status)} / ${escapeHtml(room.confidence)}</small>
+              <b>${escapeHtml(room.title)}</b>
+              <span class="live-room-meta">${escapeHtml(room.venue)} / ${escapeHtml(room.time)}</span>
+              <span class="live-room-status">${escapeHtml(liveRoomStateText(room))}</span>
+              <span class="live-room-help" data-live-room-help>${escapeHtml(liveRoomHelpText(room))}</span>
+              <div class="live-room-actions" aria-label="${escapeHtml(room.title)} live room reactions">
+                ${eventLiveRoomReactionOptions.map(option => `
+                  <button class="live-room-signal" type="button" data-live-room-reaction="${escapeHtml(option.key)}" data-live-room-id="${escapeHtml(room.eventId)}">
+                    ${escapeHtml(option.label)} ${Number(counts[option.key] || 0)}
+                  </button>
+                `).join("")}
+              </div>
+            </div>
+            <div class="live-room-side">
+              <button class="live-room-action ${active ? "active" : ""}" type="button" data-live-room-id="${escapeHtml(room.eventId)}" aria-pressed="${active ? "true" : "false"}" aria-label="${active ? "In room" : "Join room"}: ${escapeHtml(room.title)}">${active ? "In room" : "Join room"}</button>
+              <a class="live-room-action" href="events/${escapeHtml(room.eventId)}.html" aria-label="Open event page for ${escapeHtml(room.title)}">Event page</a>
+              <button class="live-room-action" type="button" data-live-room-copy="${escapeHtml(room.eventId)}">Copy room</button>
+            </div>
+            ${renderLiveRoomFeed(room)}
+          </article>
+        `;
+      }).join("");
+      todayLiveRoomsEl.querySelectorAll("[data-live-room-id].live-room-action").forEach(button => {
+        button.addEventListener("click", () => joinEventLiveRoom(button.dataset.liveRoomId));
+      });
+      todayLiveRoomsEl.querySelectorAll("[data-live-room-reaction]").forEach(button => {
+        button.addEventListener("click", () => {
+          addEventLiveRoomReaction(button.dataset.liveRoomId, button.dataset.liveRoomReaction);
+        });
+      });
+      todayLiveRoomsEl.querySelectorAll("[data-live-room-copy]").forEach(button => {
+        button.addEventListener("click", () => copyEventLiveRoomLink(button.dataset.liveRoomCopy));
+      });
+      handleLiveRoomHashJoin();
+    }
+
+    function handleEventLiveRoomStatus(status, count) {
+      eventLiveRoomMode = status || "local";
+      eventLiveRoomPresence = Number(count) || 0;
+      renderTodayLiveRooms();
+    }
+
+    function handleEventLiveRoomPresence(count) {
+      eventLiveRoomPresence = Number(count) || 0;
+      renderTodayLiveRooms();
+    }
+
+    function handleEventLiveRoomBroadcast(eventName, payload) {
+      if ((eventName !== "event-room-signal" && eventName !== "event-room-reaction") || !liveRoomHelper || typeof liveRoomHelper.reactionCountsAfterBroadcast !== "function") return;
+      eventLiveRoomReactionCounts = liveRoomHelper.reactionCountsAfterBroadcast(
+        eventLiveRoomReactionCounts,
+        payload || {},
+        eventLiveRoomReactionOptions.map(option => option.key)
+      );
+      const eventId = String(payload && (payload.targetId || payload.eventId || payload.roomId) || "");
+      const reaction = String(payload && (payload.reaction || payload.action || payload.kind) || "");
+      if (eventId && reaction) pushEventLiveRoomFeed(eventId, reaction, payload || {});
+      saveEventLiveRoomReactions();
+      renderTodayLiveRooms();
+    }
+
+    function joinEventLiveRoom(eventId) {
+      const room = eventLiveRooms.find(item => item.eventId === eventId);
+      if (!room) return;
+      eventLiveRoomHashHandled = true;
+      activeEventLiveRoomId = room.eventId;
+      eventLiveRoomMode = eventLiveRealtime ? "connecting" : "local";
+      eventLiveRoomPresence = 0;
+      syncLiveRoomHash(room.eventId);
+      renderTodayLiveRooms();
+      if (!eventLiveRealtime) return;
+      eventLiveRealtime.join("event", { id: room.eventId, title: room.title, eventId: room.eventId }, { page: "live-room" }).catch(() => {
+        eventLiveRoomMode = "local";
+        renderTodayLiveRooms();
+      });
+    }
+
+    function addEventLiveRoomReaction(eventId, reaction) {
+      if (!eventLiveRoomReactionOptions.some(option => option.key === reaction)) return;
+      if (activeEventLiveRoomId !== eventId) joinEventLiveRoom(eventId);
+      if (!eventLiveRoomReactionCounts[eventId]) eventLiveRoomReactionCounts[eventId] = {};
+      eventLiveRoomReactionCounts[eventId][reaction] = Number(eventLiveRoomReactionCounts[eventId][reaction] || 0) + 1;
+      pushEventLiveRoomFeed(eventId, reaction);
+      saveEventLiveRoomReactions();
+      renderTodayLiveRooms();
+      if (eventLiveRealtime) {
+        eventLiveRealtime.send("event-room-signal", {
+          targetId: eventId,
+          reaction
+        });
+      }
+    }
+
+    async function copyEventLiveRoomLink(eventId) {
+      const url = roomShareLinkFor(eventId);
+      try {
+        await navigator.clipboard.writeText(url);
+        todayLiveRoomStatus.textContent = "Room link copied";
+      } catch (_) {
+        window.location.hash = `live-room=${encodeURIComponent(eventId)}`;
+        todayLiveRoomStatus.textContent = "Room link ready in URL";
+      }
+    }
+
+    function handleLiveRoomHashJoin() {
+      if (eventLiveRoomHashHandled) return;
+      const eventId = liveRoomHashEventId();
+      if (!eventId || !eventLiveRooms.some(room => room.eventId === eventId)) return;
+      eventLiveRoomHashHandled = true;
+      joinEventLiveRoom(eventId);
+    }
+
+    async function loadRooms() {
+      todayLiveRoomStatus.textContent = "Loading rooms";
+      try {
+        const response = await fetch("data/events.json");
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        events = Array.isArray(data.events) ? data.events : [];
+        today = shanghaiToday(data.verified);
+        renderTodayLiveRooms();
+      } catch (_) {
+        events = [];
+        eventLiveRooms = [];
+        updateLiveRoomStatus();
+        todayLiveRoomsEl.innerHTML = `
+          <div class="live-room-empty">
+            <p>Live room data did not load.</p>
+            <a href="index.html">Open the calendar</a>
+          </div>
+        `;
+      }
+    }
+
+    refreshRooms.addEventListener("click", loadRooms);
+    window.addEventListener("hashchange", () => {
+      eventLiveRoomHashHandled = false;
+      handleLiveRoomHashJoin();
+    });
+    loadRooms();
+  </script>
+</body>
+</html>

@@ -58,6 +58,17 @@
       "priority": "0.93"
     },
     {
+      "id": "live-room",
+      "label": "Live",
+      "file": "live-room.html",
+      "route": "/live-room",
+      "shell": "dispatch-shell",
+      "includeInSitemap": true,
+      "lastmod": "2026-06-13",
+      "changefreq": "daily",
+      "priority": "0.92"
+    },
+    {
       "id": "planner",
       "label": "Planner",
       "file": "planner.html",

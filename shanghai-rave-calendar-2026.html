@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Shanghai Rave Index</title>
-  <meta name="description" content="Interactive Shanghai Rave Index for 2026 Shanghai techno and rave events, with clickable listings, DJ notes, sources, date-night routes, and late-year watchlists.">
+  <meta name="description" content="Interactive Shanghai Rave Index for 2026 Shanghai rave, techno, and underground electronic events, with clickable listings, DJ notes, sources, routes, and watchlists.">
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#c6ff3b">
   <link rel="canonical" href="https://raveindexsh.top/">
@@ -23,7 +23,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Shanghai Rave Index">
   <meta property="og:title" content="Shanghai Rave Index">
-  <meta property="og:description" content="Clickable 2026 calendar for Shanghai techno, rave, warehouse, industrial, bass, and underground electronic nights.">
+  <meta property="og:description" content="Clickable 2026 rave calendar for Shanghai techno, warehouse, industrial, bass, house, trance, and underground electronic nights.">
   <meta property="og:url" content="https://raveindexsh.top/">
   <meta property="og:image" content="https://raveindexsh.top/og-image.png">
   <meta property="og:image:alt" content="Preview of Shanghai Rave Index">
@@ -33,12 +33,13 @@
     "@type": "WebPage",
     "name": "Shanghai Rave Index",
     "url": "https://raveindexsh.top/",
-    "description": "Interactive 2026 Shanghai techno and rave calendar with clickable events, DJ notes, source links, date-night routes, and watchlists.",
+    "description": "Interactive 2026 Shanghai rave calendar covering techno, warehouse, industrial, bass, house, trance, and underground electronic nights.",
     "inLanguage": "en",
     "about": [
+      "Shanghai rave events",
       "Shanghai techno events",
       "Shanghai Rave Index",
-      "Shanghai electronic music",
+      "Shanghai underground electronic music",
       "Shanghai nightlife"
     ],
     "isAccessibleForFree": true
@@ -597,7 +598,7 @@
 
     .live-dispatch-row {
       display: grid;
-      grid-template-columns: minmax(0, 1.12fr) minmax(320px, .88fr);
+      grid-template-columns: minmax(0, 1fr);
       gap: 12px;
       align-items: stretch;
       margin: 0 0 22px;
@@ -608,11 +609,30 @@
       height: 100%;
     }
 
-    .live-dispatch-row .live-room-panel {
-      border-color: rgba(65,215,255,.3);
-      background:
-        linear-gradient(135deg, rgba(65,215,255,.08), rgba(198,255,59,.035)),
-        rgba(17,17,14,.9);
+    .live-room-handoff {
+      min-height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: max-content;
+      max-width: 100%;
+      margin-top: 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      color: var(--ink);
+      background: #151510;
+      padding: 9px 12px;
+      font-size: 12px;
+      font-weight: 900;
+      line-height: 1;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .live-room-handoff:hover {
+      color: var(--void);
+      border-color: var(--acid);
+      background: var(--acid);
     }
 
     .layout {
@@ -2005,6 +2025,7 @@
       <a class="nav-link active" href="index.html">Calendar</a>
       <a class="nav-link" href="poster-wall.html">Wall</a>
       <a class="nav-link" href="love-wall.html">Love</a>
+      <a class="nav-link" href="live-room.html">Live</a>
       <a class="nav-link" href="planner.html">Planner</a>
       <a class="nav-link" href="rave-everywhere.html">Everywhere</a>
       <a class="nav-link" href="venues.html">Venues</a>
@@ -2017,7 +2038,7 @@
         <div class="kicker">Verified as of June 11, 2026</div>
         <h1>Shanghai Rave Index</h1>
         <p class="dispatch-strip">Basement Dispatch / sourced, not sponsored</p>
-        <p class="subhead">Curated listings for techno, rave, warehouse, industrial, bass, trance, and more. No fluff. Know where to go.</p>
+        <p class="subhead">Rave-first listings across techno, warehouse, industrial, bass, house, trance, experimental club, and more. No fluff. Know where to go.</p>
         <div class="hero-actions" aria-label="Primary actions">
           <a class="hero-button primary" href="#calendar">Read the wall</a>
           <a class="hero-button secondary" href="planner.html">Build a set-time route</a>
@@ -2048,7 +2069,7 @@
       <div class="control-header">
         <div>
           <span class="control-kicker">Calendar view</span>
-          <h2 class="control-title">Find the right room, sound, and date</h2>
+          <h2 class="control-title">Find the right room, rave sound, and date</h2>
         </div>
         <div class="filter-summary" id="filterSummary" aria-live="polite">Loading matches</div>
       </div>
@@ -2077,8 +2098,8 @@
       <label class="filter-field">
         <span>Sound</span>
         <select class="select" id="vibeFilter" aria-label="Vibe filter">
-          <option value="all">All vibes</option>
-          <option value="hard">Hard techno</option>
+          <option value="all">All rave sounds</option>
+          <option value="hard">Hard / fast</option>
           <option value="underground">Underground</option>
           <option value="date">Date-friendly</option>
           <option value="experimental">Experimental</option>
@@ -2106,7 +2127,7 @@
       </label>
     </section>
 
-    <section class="live-dispatch-row" aria-label="Tonight dispatch and live rooms">
+    <section class="live-dispatch-row" aria-label="Tonight dispatch">
       <section class="panel dispatch-panel">
         <div class="dispatch-panel-head">
           <h2>Tonight</h2>
@@ -2114,14 +2135,7 @@
           <button type="button" data-window-shortcut="tonight">Details -></button>
         </div>
         <div class="dispatch-list" id="tonightPanel"></div>
-      </section>
-
-      <section class="panel dispatch-panel live-room-panel" aria-label="Tonight live rooms">
-        <div class="dispatch-panel-head">
-          <h2>Tonight rooms</h2>
-          <span id="todayLiveRoomStatus">Local until joined</span>
-        </div>
-        <div class="live-room-list" id="todayLiveRooms"></div>
+        <a class="live-room-handoff" href="live-room.html">Open live rooms -></a>
       </section>
     </section>
 
@@ -2149,7 +2163,7 @@
     <section class="stats" aria-label="Calendar statistics">
       <div class="stat"><b id="statEvents">0</b><span>sourced events and leads across 2026</span></div>
       <div class="stat"><b id="statUpcoming">0</b><span>upcoming confirmed or single-source entries after June 11</span></div>
-      <div class="stat"><b id="statTop">0</b><span>high-confidence techno or rave picks</span></div>
+      <div class="stat"><b id="statTop">0</b><span>high-confidence rave and underground picks</span></div>
       <div class="stat"><b>6</b><span>late-year watchlist months without reliable full calendars yet</span></div>
     </section>
 
@@ -4237,7 +4251,7 @@
 
     function monthCopy(code, count, watch) {
       if (count > 0) return `${count} matching sourced night${count === 1 ? "" : "s"} in this view.`;
-      if (watch && (dateWindow === "all" || dateWindow === "future")) return "Watchlist month: public techno and rave calendars are not reliable enough yet.";
+      if (watch && (dateWindow === "all" || dateWindow === "future")) return "Watchlist month: public rave and underground electronic calendars are not reliable enough yet.";
       if (dateWindow === "future") return "No upcoming entries match the current filters.";
       return "No entries match the current view.";
     }

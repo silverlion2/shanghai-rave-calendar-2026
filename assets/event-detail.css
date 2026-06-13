@@ -103,6 +103,17 @@ a {
   border-color: var(--ink);
 }
 
+.button.live-room-return {
+  color: var(--cyan);
+  border-color: rgba(54, 199, 231, .62);
+}
+
+.button.live-room-return:hover {
+  color: var(--void);
+  border-color: var(--cyan);
+  background: var(--cyan);
+}
+
 .hero,
 .event-detail {
   border-top: 1px solid var(--line);

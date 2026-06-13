@@ -90,6 +90,7 @@ function renderEventPage(event) {
   const isPublic = isPublicEvent(event);
   const canonical = eventUrl(event);
   const image = imageUrl(event);
+  const liveRoomHref = `../live-room.html?room=${encodeURIComponent(event.id)}#live-room`;
   const schemaNodes = [
     websiteSchema(siteStructure),
     {
@@ -142,6 +143,7 @@ function renderEventPage(event) {
               <div class="action-row">
                 <a class="button primary" href="${escapeAttr(event.ticketUrl || event.detailsUrl || event.source || "#")}" target="_blank" rel="noopener noreferrer">${escapeHtml(ticketLabel(event))}</a>
                 <a class="button secondary" href="${escapeAttr(event.detailsUrl || event.source || "#")}" target="_blank" rel="noopener noreferrer">Source</a>
+                <a class="button secondary live-room-return" href="${escapeAttr(liveRoomHref)}">Live room</a>
                 <a class="button secondary" href="../index.html">Calendar</a>
               </div>
             </div>
