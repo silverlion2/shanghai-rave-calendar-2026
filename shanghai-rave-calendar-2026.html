@@ -865,6 +865,35 @@
       text-transform: none;
     }
 
+    .social-mini-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 22px;
+      border: 1px solid rgba(255,79,139,.45);
+      border-radius: 999px;
+      padding: 3px 7px;
+      color: var(--rose);
+      background: rgba(255,79,139,.08);
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .social-mini-link:hover {
+      color: var(--void);
+      background: var(--rose);
+      border-color: var(--rose);
+    }
+
+    .social-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin: 12px 0 0;
+    }
+
     .venue {
       color: var(--cyan);
       font-weight: 700;
@@ -1182,6 +1211,125 @@
       color: var(--muted);
       line-height: 1.45;
       font-size: 14px;
+    }
+
+    .live-room-list {
+      display: grid;
+      gap: 8px;
+    }
+
+    .live-room-card {
+      display: grid;
+      gap: 8px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 6px;
+      background: rgba(255,255,255,.026);
+      padding: 10px;
+    }
+
+    .live-room-card.active {
+      border-color: var(--acid);
+      box-shadow: inset 0 0 0 1px rgba(198,255,59,.2);
+    }
+
+    .live-room-top {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 8px;
+      align-items: start;
+    }
+
+    .live-room-main {
+      display: grid;
+      gap: 3px;
+      min-width: 0;
+    }
+
+    .live-room-main b,
+    .live-room-main span {
+      overflow-wrap: anywhere;
+    }
+
+    .live-room-main b {
+      color: var(--ink);
+      font-size: 14px;
+      line-height: 1.18;
+    }
+
+    .live-room-main span,
+    .live-room-state {
+      color: var(--dim);
+      font-size: 11px;
+      font-weight: 900;
+      line-height: 1.22;
+      text-transform: uppercase;
+    }
+
+    .live-room-join,
+    .live-room-react,
+    .live-room-tool {
+      min-height: 32px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      color: var(--ink);
+      background: #151510;
+      padding: 6px 8px;
+      font-size: 11px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .live-room-join:hover,
+    .live-room-join.active,
+    .live-room-react:hover,
+    .live-room-tool:hover {
+      color: var(--void);
+      border-color: var(--acid);
+      background: var(--acid);
+    }
+
+    .live-room-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .live-room-tools {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 6px;
+    }
+
+    .live-room-feed {
+      display: grid;
+      gap: 5px;
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 8px;
+    }
+
+    .live-room-feed span {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 900;
+      line-height: 1.25;
+      text-transform: uppercase;
+    }
+
+    .live-room-feed b {
+      color: var(--acid);
+      font-size: 11px;
+      overflow-wrap: anywhere;
+    }
+
+    .live-room-feed em {
+      color: var(--dim);
+      font-style: normal;
+      white-space: nowrap;
     }
 
     .route-buttons {
@@ -1821,7 +1969,11 @@
   <link rel="stylesheet" href="assets/basement-dispatch.css?v=xhs-contact-20260613c">
   <link rel="stylesheet" href="assets/account-system.css">
   <script src="assets/love-wall-supabase-config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="assets/live-room-realtime.js"></script>
   <script src="assets/account-system.js"></script>
+  <script src="data/social-profiles.js"></script>
+  <script src="assets/social-fusion.js"></script>
 </head>
 <body data-current-date="2026-06-13">
   <canvas class="signal-canvas" id="signalCanvas" aria-hidden="true"></canvas>
@@ -1946,6 +2098,14 @@
           <div class="dispatch-list" id="tonightPanel"></div>
         </section>
 
+        <section class="panel dispatch-panel live-room-panel" aria-label="Tonight live rooms">
+          <div class="dispatch-panel-head">
+            <h2>Tonight rooms</h2>
+            <span id="todayLiveRoomStatus">Local until joined</span>
+          </div>
+          <div class="live-room-list" id="todayLiveRooms"></div>
+        </section>
+
         <section class="panel dispatch-panel">
           <div class="dispatch-panel-head">
             <h2>This weekend</h2>
@@ -2011,6 +2171,7 @@
           <div class="modal-meta" id="modalMeta"></div>
           <p class="description" id="modalDescription"></p>
           <div class="facts" id="modalFacts"></div>
+          <div class="social-strip" id="modalSocialLinks"></div>
           <div class="lineup-section" id="modalLineup"></div>
           <div class="chips" id="modalChips"></div>
           <div class="modal-actions" id="modalActions"></div>
@@ -2021,6 +2182,8 @@
 
   <script>
     const verified = "2026-06-11";
+    const socialFusion = window.SOCIAL_FUSION || {};
+    const socialRegistry = socialFusion.createSocialRegistry ? socialFusion.createSocialRegistry(window.SOCIAL_PROFILE_DATA || {}) : null;
     const dayMs = 24 * 60 * 60 * 1000;
     const today = (() => {
       const now = new Date();
@@ -2034,6 +2197,19 @@
       const [year, month, day] = verified.split("-").map(Number);
       return new Date(year, month - 1, day);
     })();
+    const liveRoomHelper = window.LIVE_ROOM_REALTIME;
+    const eventLiveRoomStorageKey = "shanghai-rave-event-live-room-reactions-v1";
+    const eventLiveRoomReactionOptions = liveRoomHelper && typeof liveRoomHelper.eventRoomSignalOptions === "function"
+      ? liveRoomHelper.eventRoomSignalOptions()
+      : [
+        { key: "inside", label: "Inside" },
+        { key: "heat", label: "Heat" },
+        { key: "queue", label: "Queue" },
+        { key: "set-now", label: "Set now" },
+        { key: "water", label: "Water" },
+        { key: "leaving", label: "Leaving" },
+        { key: "after", label: "After?" }
+      ];
     let dateWindow = "future";
     const months = [
       ["Jan", "January"], ["Feb", "February"], ["Mar", "March"], ["Apr", "April"],
@@ -2866,6 +3042,8 @@
     const tonightPanel = document.getElementById("tonightPanel");
     const weekendPanel = document.getElementById("weekendPanel");
     const tonightStamp = document.getElementById("tonightStamp");
+    const todayLiveRoomsEl = document.getElementById("todayLiveRooms");
+    const todayLiveRoomStatus = document.getElementById("todayLiveRoomStatus");
     const setPlanner = document.getElementById("setPlanner");
     const selectedItinerary = document.getElementById("selectedItinerary");
     const itineraryCount = document.getElementById("itineraryCount");
@@ -2874,6 +3052,21 @@
     const clearItineraryButton = document.getElementById("clearItinerary");
     const itineraryStorageKey = "shanghai-rave-calendar-itinerary-v1";
     let itinerarySlotKeys = new Set(loadItinerarySlotKeys());
+    let eventLiveRooms = [];
+    let activeEventLiveRoomId = "";
+    let eventLiveRoomMode = "local";
+    let eventLiveRoomPresence = 0;
+    let eventLiveRoomReactionCounts = loadEventLiveRoomReactions();
+    let eventLiveRoomFeed = {};
+    let eventLiveRoomHashHandled = false;
+    const eventLiveRealtime = liveRoomHelper && typeof liveRoomHelper.createLiveRoomRealtime === "function"
+      ? liveRoomHelper.createLiveRoomRealtime({
+        broadcastEvents: ["event-room-signal", "event-room-reaction"],
+        onBroadcast: handleEventLiveRoomBroadcast,
+        onPresence: handleEventLiveRoomPresence,
+        onStatus: handleEventLiveRoomStatus
+      })
+      : null;
 
     const organizerOverrides = {
       "love-bang": "Love Bang",
@@ -3144,6 +3337,24 @@
         <a class="${linkClass} secondary event-link" href="${escapeHtml(eventDetailsUrl(event))}" target="_blank" rel="noopener noreferrer" aria-label="Open source details for ${escapeHtml(event.title)}">Source</a>
         <a class="${linkClass} primary event-link" href="${escapeHtml(eventTicketUrl(event))}" target="_blank" rel="noopener noreferrer" aria-label="Open ticket or buying information for ${escapeHtml(event.title)}">${escapeHtml(ticketLabelFor(event))}</a>
       `;
+    }
+
+    function socialLinksForEvent(event) {
+      if (!socialFusion.eventSocialLinks || !socialRegistry) return [];
+      return socialFusion.eventSocialLinks(event, socialRegistry, { limitArtists: 4 });
+    }
+
+    function organizerSocialLinkHtml(event) {
+      const link = socialLinksForEvent(event).find(item => item.relationship === "organizer");
+      if (!link) return "";
+      return `<a class="social-mini-link" href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${escapeHtml(link.owner || "organizer")} Instagram">IG</a>`;
+    }
+
+    function eventSocialLinksHtml(event) {
+      const links = socialLinksForEvent(event).slice(0, 6);
+      return links.map(link => `
+        <a class="social-mini-link" href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(link.relationship === "organizer" ? `IG ${link.owner}` : `IG ${link.handle || link.owner}`)}</a>
+      `).join("");
     }
 
     function splitPerformerNames(name) {
@@ -4018,7 +4229,7 @@
           <div class="card-body">
             <div class="card-top"><span>${escapeHtml(event.date)}</span><span>${escapeHtml(event.time)}</span></div>
             <h3>${escapeHtml(event.title)}</h3>
-            ${organizer ? `<div class="organizer-line"><span>Organizer</span><b>${escapeHtml(organizer)}</b></div>` : ""}
+            ${organizer ? `<div class="organizer-line"><span>Organizer</span><b>${escapeHtml(organizer)}</b>${organizerSocialLinkHtml(event)}</div>` : ""}
             <div class="venue">${escapeHtml(event.venue)} · ${escapeHtml(event.district)}</div>
             <p class="description">${escapeHtml(event.description)}</p>
             <div class="lineup-preview">
@@ -4140,6 +4351,7 @@
         ["Source count", `${sourceCountFor(event)} source${sourceCountFor(event) === 1 ? "" : "s"}`],
         ["Source layer", sourceStatusLabel(event)]
       ].map(([label, value]) => `<div class="fact"><span>${escapeHtml(label)}</span><b>${escapeHtml(value)}</b></div>`).join("");
+      document.getElementById("modalSocialLinks").innerHTML = eventSocialLinksHtml(event);
       document.getElementById("modalLineup").innerHTML = `
         <h3>DJ set times</h3>
         ${renderSetTimeRows(event)}
@@ -4226,6 +4438,238 @@
       });
     }
 
+    function loadEventLiveRoomReactions() {
+      try {
+        const parsed = JSON.parse(window.localStorage.getItem(eventLiveRoomStorageKey) || "{}");
+        return parsed && typeof parsed === "object" ? parsed : {};
+      } catch (_) {
+        return {};
+      }
+    }
+
+    function saveEventLiveRoomReactions() {
+      try {
+        window.localStorage.setItem(eventLiveRoomStorageKey, JSON.stringify(eventLiveRoomReactionCounts));
+      } catch (_) {}
+    }
+
+    function eventLiveRoomCounts(eventId) {
+      return eventLiveRoomReactionCounts[eventId] || {};
+    }
+
+    function eventLiveRoomFeedFor(eventId) {
+      return Array.isArray(eventLiveRoomFeed[eventId]) ? eventLiveRoomFeed[eventId] : [];
+    }
+
+    function pushEventLiveRoomFeed(eventId, reaction, payload = {}) {
+      if (!liveRoomHelper || typeof liveRoomHelper.roomFeedAfterSignal !== "function") return;
+      eventLiveRoomFeed[eventId] = liveRoomHelper.roomFeedAfterSignal(
+        eventLiveRoomFeedFor(eventId),
+        {
+          targetId: eventId,
+          reaction,
+          ...payload
+        },
+        eventLiveRoomReactionOptions
+      );
+    }
+
+    function activeLiveRoom() {
+      return eventLiveRooms.find(room => room.eventId === activeEventLiveRoomId) || null;
+    }
+
+    function liveRoomStateText(room) {
+      if (!room || room.eventId !== activeEventLiveRoomId) return "Tap join";
+      if (eventLiveRoomMode === "live") return `${Math.max(1, eventLiveRoomPresence)} online`;
+      if (eventLiveRoomMode === "connecting") return "Syncing";
+      return "Local mode";
+    }
+
+    function updateTodayLiveRoomStatus() {
+      if (!todayLiveRoomStatus) return;
+      const active = activeLiveRoom();
+      if (active && eventLiveRoomMode === "live") {
+        todayLiveRoomStatus.textContent = `${Math.max(1, eventLiveRoomPresence)} online / ${active.title}`;
+      } else if (active && eventLiveRoomMode === "connecting") {
+        todayLiveRoomStatus.textContent = `Syncing / ${active.title}`;
+      } else {
+        todayLiveRoomStatus.textContent = `${eventLiveRooms.length} room${eventLiveRooms.length === 1 ? "" : "s"} today`;
+      }
+    }
+
+    function roomShareLinkFor(eventId) {
+      return liveRoomHelper && typeof liveRoomHelper.roomShareUrl === "function"
+        ? liveRoomHelper.roomShareUrl(window.location.href, eventId)
+        : `${window.location.href.replace(/#.*$/, "")}#live-room=${encodeURIComponent(eventId)}`;
+    }
+
+    function liveRoomHashEventId() {
+      const match = String(window.location.hash || "").match(/live-room=([^&]+)/);
+      return match ? decodeURIComponent(match[1]) : "";
+    }
+
+    function syncLiveRoomHash(eventId) {
+      const next = roomShareLinkFor(eventId);
+      if (window.history && typeof window.history.replaceState === "function") {
+        window.history.replaceState(null, "", next);
+      }
+    }
+
+    function formatLiveFeedTime(value) {
+      const date = new Date(value);
+      if (Number.isNaN(date.getTime())) return "now";
+      return date.toLocaleTimeString("en-US", {
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: false,
+        timeZone: "Asia/Shanghai"
+      });
+    }
+
+    function renderLiveRoomFeed(room) {
+      if (room.eventId !== activeEventLiveRoomId) return "";
+      const feed = eventLiveRoomFeedFor(room.eventId);
+      const rows = feed.length
+        ? feed.map(item => `<span><b>${escapeHtml(item.label)}</b><em>${escapeHtml(formatLiveFeedTime(item.at))}</em></span>`).join("")
+        : `<span><b>Waiting for room signals</b><em>live</em></span>`;
+      return `<div class="live-room-feed" aria-live="polite">${rows}</div>`;
+    }
+
+    function renderTodayLiveRooms() {
+      if (!todayLiveRoomsEl) return;
+      eventLiveRooms = liveRoomHelper && typeof liveRoomHelper.todayEventRooms === "function"
+        ? liveRoomHelper.todayEventRooms(events, today)
+        : [];
+      updateTodayLiveRoomStatus();
+      if (!eventLiveRooms.length) {
+        todayLiveRoomsEl.innerHTML = `<p>No live rooms for today's sourced events.</p>`;
+        return;
+      }
+      todayLiveRoomsEl.innerHTML = eventLiveRooms.map(room => {
+        const active = room.eventId === activeEventLiveRoomId;
+        const counts = eventLiveRoomCounts(room.eventId);
+        return `
+          <article class="live-room-card ${active ? "active" : ""}" data-live-room-card="${escapeHtml(room.eventId)}">
+            <div class="live-room-top">
+              <div class="live-room-main">
+                <b>${escapeHtml(room.title)}</b>
+                <span>${escapeHtml(room.venue)} / ${escapeHtml(room.time)} / ${escapeHtml(room.status)}</span>
+              </div>
+              <button class="live-room-join ${active ? "active" : ""}" type="button" data-live-room-id="${escapeHtml(room.eventId)}" aria-pressed="${active ? "true" : "false"}">${active ? "Joined" : "Join"}</button>
+            </div>
+            <div class="live-room-state">${escapeHtml(liveRoomStateText(room))}</div>
+            <div class="live-room-actions" aria-label="${escapeHtml(room.title)} live room reactions">
+              ${eventLiveRoomReactionOptions.map(option => `
+                <button class="live-room-react" type="button" data-live-room-reaction="${escapeHtml(option.key)}" data-live-room-id="${escapeHtml(room.eventId)}">
+                  ${escapeHtml(option.label)} ${Number(counts[option.key] || 0)}
+                </button>
+              `).join("")}
+            </div>
+            <div class="live-room-tools">
+              <button class="live-room-tool" type="button" data-live-room-details="${escapeHtml(room.eventId)}">Details</button>
+              <button class="live-room-tool" type="button" data-live-room-copy="${escapeHtml(room.eventId)}">Copy room</button>
+            </div>
+            ${renderLiveRoomFeed(room)}
+          </article>
+        `;
+      }).join("");
+      todayLiveRoomsEl.querySelectorAll("[data-live-room-id].live-room-join").forEach(button => {
+        button.addEventListener("click", () => joinEventLiveRoom(button.dataset.liveRoomId));
+      });
+      todayLiveRoomsEl.querySelectorAll("[data-live-room-reaction]").forEach(button => {
+        button.addEventListener("click", () => {
+          addEventLiveRoomReaction(button.dataset.liveRoomId, button.dataset.liveRoomReaction);
+        });
+      });
+      todayLiveRoomsEl.querySelectorAll("[data-live-room-details]").forEach(button => {
+        button.addEventListener("click", () => openEventLiveRoomDetails(button.dataset.liveRoomDetails));
+      });
+      todayLiveRoomsEl.querySelectorAll("[data-live-room-copy]").forEach(button => {
+        button.addEventListener("click", () => copyEventLiveRoomLink(button.dataset.liveRoomCopy));
+      });
+      handleLiveRoomHashJoin();
+    }
+
+    function handleEventLiveRoomStatus(status, count) {
+      eventLiveRoomMode = status || "local";
+      eventLiveRoomPresence = Number(count) || 0;
+      renderTodayLiveRooms();
+    }
+
+    function handleEventLiveRoomPresence(count) {
+      eventLiveRoomPresence = Number(count) || 0;
+      renderTodayLiveRooms();
+    }
+
+    function handleEventLiveRoomBroadcast(eventName, payload) {
+      if ((eventName !== "event-room-signal" && eventName !== "event-room-reaction") || !liveRoomHelper || typeof liveRoomHelper.reactionCountsAfterBroadcast !== "function") return;
+      eventLiveRoomReactionCounts = liveRoomHelper.reactionCountsAfterBroadcast(
+        eventLiveRoomReactionCounts,
+        payload || {},
+        eventLiveRoomReactionOptions.map(option => option.key)
+      );
+      const eventId = String(payload && (payload.targetId || payload.eventId || payload.roomId) || "");
+      const reaction = String(payload && (payload.reaction || payload.action || payload.kind) || "");
+      if (eventId && reaction) pushEventLiveRoomFeed(eventId, reaction, payload || {});
+      saveEventLiveRoomReactions();
+      renderTodayLiveRooms();
+    }
+
+    function joinEventLiveRoom(eventId) {
+      const room = eventLiveRooms.find(item => item.eventId === eventId);
+      if (!room) return;
+      activeEventLiveRoomId = room.eventId;
+      eventLiveRoomMode = eventLiveRealtime ? "connecting" : "local";
+      eventLiveRoomPresence = 0;
+      syncLiveRoomHash(room.eventId);
+      renderTodayLiveRooms();
+      if (!eventLiveRealtime) return;
+      eventLiveRealtime.join("event", { id: room.eventId, title: room.title, eventId: room.eventId }, { page: "calendar" }).catch(() => {
+        eventLiveRoomMode = "local";
+        renderTodayLiveRooms();
+      });
+    }
+
+    function addEventLiveRoomReaction(eventId, reaction) {
+      if (!eventLiveRoomReactionOptions.some(option => option.key === reaction)) return;
+      if (activeEventLiveRoomId !== eventId) joinEventLiveRoom(eventId);
+      if (!eventLiveRoomReactionCounts[eventId]) eventLiveRoomReactionCounts[eventId] = {};
+      eventLiveRoomReactionCounts[eventId][reaction] = Number(eventLiveRoomReactionCounts[eventId][reaction] || 0) + 1;
+      pushEventLiveRoomFeed(eventId, reaction);
+      saveEventLiveRoomReactions();
+      renderTodayLiveRooms();
+      if (eventLiveRealtime) {
+        eventLiveRealtime.send("event-room-signal", {
+          targetId: eventId,
+          reaction
+        });
+      }
+    }
+
+    function openEventLiveRoomDetails(eventId) {
+      const event = events.find(item => item.id === eventId);
+      if (event) openModal(event);
+    }
+
+    async function copyEventLiveRoomLink(eventId) {
+      const url = roomShareLinkFor(eventId);
+      try {
+        await navigator.clipboard.writeText(url);
+        if (todayLiveRoomStatus) todayLiveRoomStatus.textContent = "Room link copied";
+      } catch (_) {
+        window.location.hash = `live-room=${encodeURIComponent(eventId)}`;
+        if (todayLiveRoomStatus) todayLiveRoomStatus.textContent = "Room link ready in URL";
+      }
+    }
+
+    function handleLiveRoomHashJoin() {
+      if (eventLiveRoomHashHandled) return;
+      const eventId = liveRoomHashEventId();
+      if (!eventId || !eventLiveRooms.some(room => room.eventId === eventId)) return;
+      eventLiveRoomHashHandled = true;
+      joinEventLiveRoom(eventId);
+    }
+
     function renderDispatchPanels() {
       if (!tonightPanel || !weekendPanel) return;
       if (tonightStamp) {
@@ -4247,6 +4691,7 @@
         ? weekend.map(event => dispatchRowHtml(event, true)).join("")
         : `<p>No matching weekend entries.</p>`;
       [tonightPanel, weekendPanel].forEach(bindDispatchRows);
+      renderTodayLiveRooms();
     }
 
     function planningSortValue(row) {

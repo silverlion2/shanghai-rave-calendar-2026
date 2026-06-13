@@ -479,6 +479,7 @@
     }
 
     .room-readout span,
+    .realtime-status,
     .policy-note,
     .listen-card span {
       color: var(--dim);
@@ -527,6 +528,33 @@
       color: var(--void);
       background: var(--acid);
       border-color: var(--acid);
+    }
+
+    .realtime-status {
+      min-height: 22px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0;
+    }
+
+    .realtime-status::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      flex: 0 0 auto;
+      border-radius: 999px;
+      background: var(--gold);
+      box-shadow: 0 0 0 1px rgba(255,255,255,.12);
+    }
+
+    .realtime-status[data-state="connecting"]::before {
+      background: var(--cyan);
+    }
+
+    .realtime-status[data-state="live"]::before {
+      background: var(--acid);
+      box-shadow: 0 0 14px rgba(202, 255, 61, .48);
     }
 
     .listen-card {
@@ -855,16 +883,17 @@
               <span>room pulse</span>
             </div>
             <div class="room-readout" style="--accent: var(--gold)">
-              <b id="roomRoute">CN</b>
-              <span>music route</span>
+              <b id="roomRoute">LOCAL</b>
+              <span>room link</span>
             </div>
           </div>
-          <div class="reaction-row" aria-label="Local preview room reactions">
+          <div class="reaction-row" aria-label="Realtime preview room reactions">
             <button class="reaction-button" type="button" data-room-reaction="locked">Locked <span data-reaction-count="locked">0</span></button>
             <button class="reaction-button" type="button" data-room-reaction="heat">Heat <span data-reaction-count="heat">0</span></button>
             <button class="reaction-button" type="button" data-room-reaction="again">Again <span data-reaction-count="again">0</span></button>
           </div>
-          <p class="policy-note">Local beta reactions only. Use CloudBase/WebSocket later if the room needs real remote presence.</p>
+          <p class="realtime-status" id="roomRealtimeStatus" data-state="local">Realtime beta local mode.</p>
+          <p class="policy-note">Realtime beta uses Supabase Presence for crowd count and Broadcast for reactions. If the connection is unavailable, buttons stay local.</p>
         </section>
 
         <div class="event-facts" id="eventFacts"></div>
@@ -948,11 +977,15 @@
   <script src="data/tracked-dj-itineraries.js"></script>
   <script src="assets/rave-everywhere.js"></script>
   <script src="assets/dj-trial-listen.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="assets/love-wall-supabase-config.js"></script>
+  <script src="assets/preview-room-realtime.js"></script>
   <script>
     const sourceData = window.DJ_SOURCE_DATA || { events: [], lineups: {} };
     const trackedProfiles = window.DJ_ITINERARY_DATA || {};
     const generator = window.RAVE_EVERYWHERE;
     const listeningHelper = window.DJ_TRIAL_LISTENER;
+    const realtimeHelper = window.PREVIEW_ROOM_REALTIME;
     const profiles = generator.profileSeedsFromSourceData(sourceData, trackedProfiles);
     const sourceEvents = Array.isArray(sourceData.events) ? sourceData.events : [];
     const selectedSlugs = new Set();
@@ -973,6 +1006,7 @@
       roomCrowdCount: document.getElementById("roomCrowdCount"),
       roomHeat: document.getElementById("roomHeat"),
       roomRoute: document.getElementById("roomRoute"),
+      roomRealtimeStatus: document.getElementById("roomRealtimeStatus"),
       eventFacts: document.getElementById("eventFacts"),
       locationName: document.getElementById("locationName"),
       locationAddress: document.getElementById("locationAddress"),
@@ -987,6 +1021,17 @@
       downloadPoster: document.getElementById("downloadPoster"),
     };
     let currentEvent = null;
+    let activeRealtimeTopic = "";
+    let previewRealtimeLabel = "Local room";
+    let previewRealtimeMode = "local";
+    let previewRealtimePresence = 0;
+    const previewRealtime = realtimeHelper && typeof realtimeHelper.createPreviewRoomRealtime === "function"
+      ? realtimeHelper.createPreviewRoomRealtime({
+        onPresence: handlePreviewRealtimePresence,
+        onReaction: handlePreviewRealtimeReaction,
+        onStatus: handlePreviewRealtimeStatus,
+      })
+      : null;
 
     function escapeHtml(value) {
       return String(value || "")
@@ -1104,13 +1149,70 @@
       } catch (_) {}
     }
 
+    function realtimeStatusText() {
+      if (previewRealtimeMode === "live") {
+        const count = Math.max(1, previewRealtimePresence);
+        return `Realtime beta live / ${count} online.`;
+      }
+      if (previewRealtimeMode === "connecting") return "Realtime beta syncing with Supabase.";
+      if (/unavailable|failed|timed_out|channel_error/i.test(previewRealtimeLabel)) {
+        return "Realtime beta offline / local mode.";
+      }
+      return "Realtime beta local mode.";
+    }
+
+    function renderRealtimeStatus() {
+      els.roomRoute.textContent = previewRealtimeMode === "live"
+        ? "LIVE"
+        : previewRealtimeMode === "connecting"
+          ? "SYNC"
+          : "LOCAL";
+      if (els.roomRealtimeStatus) {
+        els.roomRealtimeStatus.dataset.state = previewRealtimeMode;
+        els.roomRealtimeStatus.textContent = realtimeStatusText();
+      }
+    }
+
+    function handlePreviewRealtimeStatus(status, count, label) {
+      previewRealtimeMode = status || "local";
+      previewRealtimePresence = Number(count) || 0;
+      previewRealtimeLabel = label || "";
+      if (currentEvent) renderPreviewRoom(currentEvent, selectedProfiles());
+    }
+
+    function handlePreviewRealtimePresence(count) {
+      previewRealtimePresence = Number(count) || 0;
+      if (currentEvent) renderPreviewRoom(currentEvent, selectedProfiles());
+    }
+
+    function handlePreviewRealtimeReaction(payload) {
+      if (!currentEvent || !realtimeHelper || typeof realtimeHelper.reactionsAfterRemote !== "function") return;
+      const next = realtimeHelper.reactionsAfterRemote(readRoomReactions(currentEvent), payload || {});
+      writeRoomReactions(currentEvent, next);
+      renderPreviewRoom(currentEvent, selectedProfiles());
+    }
+
+    function syncPreviewRealtime(event, rows) {
+      if (!previewRealtime || !realtimeHelper || typeof realtimeHelper.createRoomTopic !== "function") {
+        handlePreviewRealtimeStatus("local", 0, "Local room");
+        return;
+      }
+      const topic = realtimeHelper.createRoomTopic(event);
+      if (topic === activeRealtimeTopic && previewRealtimeMode !== "local") return;
+      activeRealtimeTopic = topic;
+      previewRealtime.join(event, { mood: dominantMood(rows) }).catch(() => {
+        handlePreviewRealtimeStatus("local", previewRealtimePresence, "Join failed");
+      });
+    }
+
     function renderPreviewRoom(event, rows) {
-      const crowd = 12 + (generator.hashString(event.id) % 76);
+      const localCrowd = 12 + (generator.hashString(event.id) % 76);
+      const crowd = previewRealtimeMode === "live" ? Math.max(1, previewRealtimePresence) : localCrowd;
       const pulse = (event.vibe || [dominantMood(rows)]).slice(0, 1).join("").toUpperCase().slice(0, 6) || "ROOM";
       const reactions = readRoomReactions(event);
       els.roomCrowdCount.textContent = String(crowd).padStart(2, "0");
       els.roomHeat.textContent = pulse;
-      els.roomRoute.textContent = "CN";
+      renderRealtimeStatus();
       Object.entries(reactions).forEach(([name, count]) => {
         const target = els.previewRoom.querySelector(`[data-reaction-count="${name}"]`);
         if (target) target.textContent = count;
@@ -1178,6 +1280,7 @@
         </article>
       `).join("");
       renderPreviewRoom(event, rows);
+      syncPreviewRealtime(event, rows);
       renderListeningDeck(rows);
       els.shareCopy.value = `${generator.eventCopy(event)}\nPreview room: China listening links ready. No audio is hosted here.`;
       els.posterPalette.innerHTML = event.poster.palette.map(color => `<span class="swatch" style="background:${escapeHtml(color)}"></span>`).join("");
@@ -1344,6 +1447,7 @@
         reactions[button.dataset.roomReaction] = (reactions[button.dataset.roomReaction] || 0) + 1;
         writeRoomReactions(currentEvent, reactions);
         renderPreviewRoom(currentEvent, selectedProfiles());
+        if (previewRealtime) previewRealtime.sendReaction(button.dataset.roomReaction);
       });
       document.querySelectorAll("[data-mood]").forEach(button => {
         button.addEventListener("click", () => autoPickMood(button.dataset.mood));

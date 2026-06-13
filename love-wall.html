@@ -256,7 +256,7 @@
 
     .love-readouts {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 8px;
     }
 
@@ -290,6 +290,31 @@
       display: grid;
       gap: 10px;
       padding: 13px;
+    }
+
+    .live-pulse-feed {
+      min-height: 38px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: center;
+      border: 1px solid rgba(229, 222, 209, .16);
+      background: rgba(5, 6, 6, .6);
+      padding: 8px;
+    }
+
+    .live-pulse-feed span {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      border: 1px solid var(--pulse-color, var(--love-line));
+      padding: 4px 7px;
+      color: var(--love-paper);
+      background: rgba(255, 255, 255, .035);
+      font-size: 11px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
     }
 
     .compose-grid {
@@ -685,6 +710,8 @@
   <link rel="stylesheet" href="assets/basement-dispatch.css?v=xhs-contact-20260613c">
   <link rel="stylesheet" href="assets/account-system.css">
   <script src="assets/love-wall-supabase-config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="assets/live-room-realtime.js"></script>
   <script src="assets/account-system.js" defer></script>
 </head>
 <body>
@@ -733,6 +760,10 @@
             <b id="pulseReadout">ALL</b>
             <span>current pulse</span>
           </div>
+          <div class="love-card" style="--accent: var(--love-rose)">
+            <b id="liveWallOnline">--</b>
+            <span>live dancers</span>
+          </div>
         </div>
 
         <form class="love-compose" id="loveForm">
@@ -763,6 +794,8 @@
           </div>
           <span class="wall-status" id="formStatus">Checking Supabase connection.</span>
         </form>
+
+        <div class="live-pulse-feed" id="livePulseFeed" aria-live="polite" aria-label="Live Love Wall pulse"></div>
 
         <div class="love-prompts" aria-label="Love wall prompt cards">
           <article class="prompt-tile">
@@ -841,6 +874,7 @@
     const reactionStorageKey = "rave-love-wall-reactions-v1";
     const reactionVisitorStorageKey = "rave-love-wall-visitor-v1";
     const supabaseConfig = window.LOVE_WALL_SUPABASE || {};
+    const liveRoomHelper = window.LIVE_ROOM_REALTIME;
     const emojiOptions = [
       { emoji: "🔥", label: "heat" },
       { emoji: "🖤", label: "love" },
@@ -948,6 +982,8 @@
       totalNotes: document.getElementById("totalNotes"),
       localNotes: document.getElementById("localNotes"),
       pulseReadout: document.getElementById("pulseReadout"),
+      liveWallOnline: document.getElementById("liveWallOnline"),
+      livePulseFeed: document.getElementById("livePulseFeed"),
       formStatus: document.getElementById("formStatus"),
       wallStatus: document.getElementById("wallStatus"),
       shareBox: document.getElementById("shareBox")
@@ -960,6 +996,17 @@
     const visitorId = loadVisitorId();
     let remoteState = "local";
     let remoteReactionState = "local";
+    let loveRealtimeMode = "local";
+    let loveRealtimePresence = 0;
+    let livePulses = [];
+    const loveRealtime = liveRoomHelper && typeof liveRoomHelper.createLiveRoomRealtime === "function"
+      ? liveRoomHelper.createLiveRoomRealtime({
+        broadcastEvents: ["love-wall-signal", "love-wall-reaction"],
+        onBroadcast: handleLoveRealtimeBroadcast,
+        onPresence: handleLoveRealtimePresence,
+        onStatus: handleLoveRealtimeStatus
+      })
+      : null;
 
     function hasSupabaseConfig() {
       return Boolean(
@@ -1113,6 +1160,91 @@
       `;
     }
 
+    function liveWallStatusCopy() {
+      if (loveRealtimeMode === "live") return `${Math.max(1, loveRealtimePresence)} live in Love Wall`;
+      if (loveRealtimeMode === "connecting") return "Love Wall live room syncing";
+      return "Love Wall local room";
+    }
+
+    function renderLoveRealtimeReadouts() {
+      if (!els.liveWallOnline) return;
+      if (loveRealtimeMode === "live") {
+        els.liveWallOnline.textContent = String(Math.max(1, loveRealtimePresence)).padStart(2, "0");
+      } else if (loveRealtimeMode === "connecting") {
+        els.liveWallOnline.textContent = "...";
+      } else {
+        els.liveWallOnline.textContent = "--";
+      }
+    }
+
+    function renderLivePulseFeed() {
+      if (!els.livePulseFeed) return;
+      els.livePulseFeed.innerHTML = livePulses.length
+        ? livePulses.map(item => `<span style="--pulse-color:${pulseColors[item.pulse] || pulseColors.bass}">${escapeHtml(item.label)}</span>`).join("")
+        : `<span style="--pulse-color:var(--love-line)">Realtime room waiting</span>`;
+    }
+
+    function pushLivePulse(label, pulse = "bass") {
+      livePulses = [{ label, pulse: normalizePulse(pulse) }, ...livePulses].slice(0, 4);
+      renderLivePulseFeed();
+    }
+
+    function handleLoveRealtimeStatus(status, count) {
+      loveRealtimeMode = status || "local";
+      loveRealtimePresence = Number(count) || 0;
+      renderLoveRealtimeReadouts();
+      renderWall();
+    }
+
+    function handleLoveRealtimePresence(count) {
+      loveRealtimePresence = Number(count) || 0;
+      renderLoveRealtimeReadouts();
+      renderWall();
+    }
+
+    function handleLoveRealtimeBroadcast(eventName, payload) {
+      if (eventName === "love-wall-signal") {
+        const pulse = normalizePulse(payload && payload.pulse);
+        pushLivePulse(`${pulseLabels[pulse]} note queued`, pulse);
+        return;
+      }
+      if (eventName === "love-wall-reaction" && liveRoomHelper && typeof liveRoomHelper.reactionCountsAfterBroadcast === "function") {
+        remoteReactionCounts = liveRoomHelper.reactionCountsAfterBroadcast(
+          remoteReactionCounts,
+          payload || {},
+          emojiOptions.map(option => option.emoji)
+        );
+        pushLivePulse("Emoji landed", "afterglow");
+        renderWall();
+      }
+    }
+
+    function bootLoveRealtime() {
+      if (!loveRealtime) {
+        renderLoveRealtimeReadouts();
+        renderLivePulseFeed();
+        return;
+      }
+      loveRealtime.join("love-wall", { id: "main", title: "Rave Love Wall" }, { page: "love-wall" }).catch(() => {
+        loveRealtimeMode = "local";
+        renderLoveRealtimeReadouts();
+        renderWall();
+      });
+    }
+
+    function sendLoveRealtimeSignal(note) {
+      if (!loveRealtime || !liveRoomHelper || typeof liveRoomHelper.loveWallSignalForNote !== "function") return;
+      loveRealtime.send("love-wall-signal", liveRoomHelper.loveWallSignalForNote(note));
+    }
+
+    function sendLoveRealtimeReaction(noteId, emoji) {
+      if (!loveRealtime) return;
+      loveRealtime.send("love-wall-reaction", {
+        targetId: noteId,
+        reaction: emoji
+      });
+    }
+
     function filteredNotes() {
       const query = els.searchInput.value.trim().toLowerCase();
       return allNotes().filter(note => {
@@ -1127,10 +1259,11 @@
       els.totalNotes.textContent = notes.length;
       els.localNotes.textContent = localNotes.length;
       els.pulseReadout.textContent = (activeFilter === "all" ? "ALL" : pulseLabels[activeFilter]).slice(0, 4).toUpperCase();
+      renderLoveRealtimeReadouts();
       const remoteCopy = remoteState === "connected"
         ? `${remoteNotes.length} approved from Supabase`
         : "Supabase not configured";
-      els.wallStatus.textContent = `${notes.length} notes showing / ${localNotes.length} local / ${remoteCopy}`;
+      els.wallStatus.textContent = `${notes.length} notes showing / ${localNotes.length} local / ${remoteCopy} / ${liveWallStatusCopy()}`;
 
       if (!notes.length) {
         els.wall.innerHTML = `<div class="love-empty">No notes match this view.</div>`;
@@ -1180,6 +1313,7 @@
         }
         localNotes.unshift(note);
         saveLocalNotes();
+        sendLoveRealtimeSignal(note);
         els.messageInput.value = "";
         activeFilter = "all";
         syncFilters();
@@ -1189,6 +1323,7 @@
         note.pending = false;
         localNotes.unshift(note);
         saveLocalNotes();
+        sendLoveRealtimeSignal(note);
         els.messageInput.value = "";
         els.formStatus.textContent = `Supabase submit failed; saved locally. ${error.message || ""}`.trim();
         renderWall();
@@ -1269,6 +1404,7 @@
         if (remote && hasSupabaseConfig()) {
           const inserted = await submitRemoteReaction(noteId, emoji);
           markReaction(noteId, emoji, { remote: true, inserted });
+          if (inserted) sendLoveRealtimeReaction(noteId, emoji);
           els.formStatus.textContent = inserted ? "Emoji saved to Supabase." : "Emoji was already counted upstream.";
         } else {
           markReaction(noteId, emoji, { remote: false, inserted: true });
@@ -1424,6 +1560,8 @@
     });
 
     renderWall();
+    renderLivePulseFeed();
+    bootLoveRealtime();
     fetchRemoteNotes().catch(error => {
       remoteState = "local";
       els.formStatus.textContent = `Supabase unavailable; using local wall. ${error.message || ""}`.trim();

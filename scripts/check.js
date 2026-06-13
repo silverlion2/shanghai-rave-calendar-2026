@@ -581,6 +581,62 @@ const raveEverywhere = require("../assets/rave-everywhere.js");
 if (!raveEverywhere || typeof raveEverywhere.generateVirtualEvent !== "function" || typeof raveEverywhere.profileSeedsFromSourceData !== "function") {
   throw new Error("assets/rave-everywhere.js must export Rave Everywhere generation helpers");
 }
+const previewRoomRealtime = require("../assets/preview-room-realtime.js");
+if (
+  !previewRoomRealtime
+  || typeof previewRoomRealtime.createRoomTopic !== "function"
+  || typeof previewRoomRealtime.presenceCountFromState !== "function"
+  || typeof previewRoomRealtime.reactionsAfterRemote !== "function"
+  || typeof previewRoomRealtime.realtimeAccessState !== "function"
+) {
+  throw new Error("assets/preview-room-realtime.js must export Preview Room Realtime helpers");
+}
+if (previewRoomRealtime.createRoomTopic({ id: "Rave Everywhere Heavy Current!" }) !== "preview-room:rave-everywhere-heavy-current") {
+  throw new Error("Preview Room Realtime topic must be stable and Supabase-safe");
+}
+if (previewRoomRealtime.presenceCountFromState({ a: [{}], b: [{}, {}] }) !== 3) {
+  throw new Error("Preview Room Realtime presence must count all clients in the room");
+}
+if (previewRoomRealtime.reactionsAfterRemote({ locked: 0, heat: 1, again: 0 }, { reaction: "heat" }).heat !== 2) {
+  throw new Error("Preview Room Realtime must merge valid remote reactions");
+}
+const liveRoomRealtime = require("../assets/live-room-realtime.js");
+if (
+  !liveRoomRealtime
+  || typeof liveRoomRealtime.createLiveRoomTopic !== "function"
+  || typeof liveRoomRealtime.eventRoomSignalOptions !== "function"
+  || typeof liveRoomRealtime.todayEventRooms !== "function"
+  || typeof liveRoomRealtime.loveWallSignalForNote !== "function"
+  || typeof liveRoomRealtime.reactionCountsAfterBroadcast !== "function"
+  || typeof liveRoomRealtime.roomFeedAfterSignal !== "function"
+  || typeof liveRoomRealtime.roomShareUrl !== "function"
+) {
+  throw new Error("assets/live-room-realtime.js must export Love Wall and event live-room helpers");
+}
+if (liveRoomRealtime.createLiveRoomTopic("event", { id: "Santa K / TURBO!" }) !== "live-room:event:santa-k-turbo") {
+  throw new Error("event live-room topics must be stable and Supabase-safe");
+}
+const checkLiveRooms = liveRoomRealtime.todayEventRooms([
+  { id: "santa-k", sortDate: "2026-06-13", title: "Santa K", venue: "Abyss", status: "upcoming" },
+  { id: "past", sortDate: "2026-06-13", title: "Past", venue: "Old", status: "past" },
+], "2026-06-13");
+if (checkLiveRooms.length !== 1 || checkLiveRooms[0].topic !== "live-room:event:santa-k") {
+  throw new Error("event live-room helper must open rooms for non-past same-day events");
+}
+const loveSignal = liveRoomRealtime.loveWallSignalForNote({ pulse: "care", message: "private pending copy" });
+if (loveSignal.message || loveSignal.author || loveSignal.pulse !== "care") {
+  throw new Error("Love Wall live signal must not broadcast unapproved note content");
+}
+if (!liveRoomRealtime.eventRoomSignalOptions().some(option => option.key === "set-now")) {
+  throw new Error("event live rooms must expose richer canned room signals");
+}
+const feedCheck = liveRoomRealtime.roomFeedAfterSignal([], { targetId: "santa-k", reaction: "water" }, liveRoomRealtime.eventRoomSignalOptions());
+if (feedCheck.length !== 1 || feedCheck[0].label !== "Water") {
+  throw new Error("event live rooms must create sanitized room feed items from signals");
+}
+if (liveRoomRealtime.roomShareUrl("https://example.com/index.html#old", "santa-k") !== "https://example.com/index.html#live-room=santa-k") {
+  throw new Error("event live-room share links must use stable live-room hashes");
+}
 const betaVirtualEvent = raveEverywhere.generateVirtualEvent({
   seed: "check-seed",
   now: "2026-06-13T12:00:00+08:00",
@@ -760,8 +816,14 @@ const everywhereRequirements = [
   { file: "rave-everywhere.html", text: 'id="downloadPoster"', label: "Rave Everywhere poster export" },
   { file: "rave-everywhere.html", text: "assets/rave-everywhere.js", label: "Rave Everywhere generation module" },
   { file: "rave-everywhere.html", text: "assets/dj-trial-listen.js", label: "Rave Everywhere China listening module" },
+  { file: "rave-everywhere.html", text: "assets/preview-room-realtime.js", label: "Rave Everywhere Preview Room Realtime module" },
+  { file: "rave-everywhere.html", text: "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2", label: "Rave Everywhere Supabase client" },
+  { file: "rave-everywhere.html", text: "assets/love-wall-supabase-config.js", label: "Rave Everywhere Supabase config" },
   { file: "rave-everywhere.html", text: "Preview Room", label: "Rave Everywhere preview room panel" },
   { file: "rave-everywhere.html", text: 'id="previewRoom"', label: "Rave Everywhere preview room mount" },
+  { file: "rave-everywhere.html", text: 'id="roomRealtimeStatus"', label: "Rave Everywhere preview room realtime status" },
+  { file: "rave-everywhere.html", text: "Supabase Presence", label: "Rave Everywhere preview room presence copy" },
+  { file: "rave-everywhere.html", text: "Broadcast for reactions", label: "Rave Everywhere preview room broadcast copy" },
   { file: "rave-everywhere.html", text: "China Listening Deck", label: "Rave Everywhere China listening deck label" },
   { file: "rave-everywhere.html", text: 'id="listeningDeck"', label: "Rave Everywhere listening deck mount" },
   { file: "rave-everywhere.html", text: "No audio is hosted here", label: "Rave Everywhere links-only music policy" },
@@ -784,6 +846,21 @@ const loveWallRequirements = [
   { file: "love-wall.html", text: 'id="loveWall"', label: "Love Wall note renderer" },
   { file: "love-wall.html", text: "emojiOptions", label: "Love Wall emoji reaction options" },
   { file: "love-wall.html", text: "submitRemoteReaction", label: "Love Wall Supabase emoji reaction writer" },
+  { file: "love-wall.html", text: "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2", label: "Love Wall Supabase Realtime client" },
+  { file: "love-wall.html", text: "assets/live-room-realtime.js", label: "Love Wall realtime room helper" },
+  { file: "love-wall.html", text: 'id="liveWallOnline"', label: "Love Wall live online readout" },
+  { file: "love-wall.html", text: 'id="livePulseFeed"', label: "Love Wall live pulse feed" },
+  { file: "love-wall.html", text: "love-wall-signal", label: "Love Wall moderation-safe realtime signal" },
+  { file: "index.html", text: "assets/live-room-realtime.js", label: "calendar event live-room helper" },
+  { file: "index.html", text: 'id="todayLiveRooms"', label: "calendar today live rooms mount" },
+  { file: "index.html", text: "event-room-signal", label: "calendar event live-room signal broadcast" },
+  { file: "index.html", text: "event-room-reaction", label: "calendar event live-room reactions" },
+  { file: "index.html", text: "Copy room", label: "calendar event live-room share action" },
+  { file: "index.html", text: "live-room-feed", label: "calendar event live-room activity feed" },
+  { file: "shanghai-rave-calendar-2026.html", text: "assets/live-room-realtime.js", label: "archive event live-room helper" },
+  { file: "shanghai-rave-calendar-2026.html", text: 'id="todayLiveRooms"', label: "archive today live rooms mount" },
+  { file: "shanghai-rave-calendar-2026.html", text: "event-room-signal", label: "archive event live-room signal broadcast" },
+  { file: "shanghai-rave-calendar-2026.html", text: "Copy room", label: "archive event live-room share action" },
   { file: "assets/love-wall-supabase-config.js", text: 'reactionTable: "love_wall_reactions"', label: "Love Wall reaction table config" },
   { file: "supabase/migrations/202606130002_love_wall_reactions.sql", text: "love_wall_reactions", label: "Love Wall reaction migration" },
   { file: "sitemap.xml", text: `${siteUrl}/love-wall`, label: "Love Wall sitemap URL" },

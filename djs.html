@@ -557,6 +557,12 @@
       background: var(--acid);
     }
 
+    .listen-source.source-social {
+      color: var(--rose);
+      border-color: rgba(255,79,139,.48);
+      background: rgba(255,79,139,.1);
+    }
+
     .listen-source:hover {
       border-color: var(--acid);
       color: var(--acid);
@@ -1089,10 +1095,14 @@
 
   <script src="data/dj-data.js"></script>
   <script src="data/tracked-dj-itineraries.js"></script>
+  <script src="data/social-profiles.js"></script>
   <script src="assets/dj-trial-listen.js"></script>
+  <script src="assets/social-fusion.js"></script>
   <script>
     const sourceData = window.DJ_SOURCE_DATA || { events: [], lineups: {}, externalDataPath: "data/events.json" };
     const trackedProfiles = window.DJ_ITINERARY_DATA || sourceData.trackedProfiles || {};
+    const socialFusion = window.SOCIAL_FUSION || {};
+    const socialRegistry = socialFusion.createSocialRegistry ? socialFusion.createSocialRegistry(window.SOCIAL_PROFILE_DATA || {}) : null;
     const verified = "2026-06-11";
     const monthPairs = [["Jan", "January"], ["Feb", "February"], ["Mar", "March"], ["Apr", "April"], ["May", "May"], ["Jun", "June"], ["Jul", "July"], ["Aug", "August"], ["Sep", "September"], ["Oct", "October"], ["Nov", "November"], ["Dec", "December"]];
     const monthNames = Object.fromEntries(monthPairs);
@@ -1886,6 +1896,22 @@
       `;
     }
 
+    function renderSocialProfileLinks(profile) {
+      if (!socialFusion.socialLinksForEntity || !socialRegistry) return "";
+      const links = socialFusion.socialLinksForEntity(profile.name, socialRegistry, { relationship: "artist" });
+      if (!links.length) return "";
+      const markup = links.map(link => `
+        <a class="listen-source source-social" href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(link.label || "Instagram")}</a>
+      `).join("");
+      return `
+        <section class="listen-panel" aria-label="Social profiles for ${escapeHtml(profile.name)}">
+          <h3>Social profiles</h3>
+          <p>Profile links are social leads; use event sources for dates, tickets, and set-time changes.</p>
+          <div class="listen-source-grid">${markup}</div>
+        </section>
+      `;
+    }
+
     function renderProfile() {
       const profile = profiles.find(item => item.slug === selectedSlug) || filteredProfiles()[0] || profiles[0];
       if (!profile) {
@@ -1915,6 +1941,7 @@
             <div class="appearances">${renderAppearances(profile)}</div>
           </div>
           <aside>
+            ${renderSocialProfileLinks(profile)}
             ${renderListenLinks(profile)}
             <h3 class="panel-title">DJ notes</h3>
             <div class="notes">${noteRows(profile)}</div>

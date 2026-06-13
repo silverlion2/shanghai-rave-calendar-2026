@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const vm = require("vm");
 const {
   readWebsiteStructure,
   staticSitemapRoutes,
@@ -16,9 +17,15 @@ const {
   escapeAttr,
   escapeXml,
 } = require("./site-components");
+const {
+  createSocialRegistry,
+  eventSocialLinks,
+  socialLinksForEntity,
+} = require("../assets/social-fusion.js");
 
 const ROOT = path.resolve(__dirname, "..");
 const DATA_FILE = path.join(ROOT, "data", "events.json");
+const SOCIAL_PROFILES_FILE = path.join(ROOT, "data", "social-profiles.js");
 const EVENTS_DIR = path.join(ROOT, "events");
 const SITEMAP_FILE = path.join(ROOT, "sitemap.xml");
 const siteStructure = readWebsiteStructure();
@@ -31,6 +38,7 @@ const payload = JSON.parse(fs.readFileSync(DATA_FILE, "utf8"));
 const events = Array.isArray(payload) ? payload : payload.events;
 const lineups = Array.isArray(payload) ? {} : payload.lineups || {};
 const dataLastmod = dateOnly(payload.verified || payload.generatedAt) || STATIC_LASTMOD;
+const socialRegistry = createSocialRegistry(readSocialProfiles());
 
 if (!Array.isArray(events) || events.length === 0) {
   throw new Error("data/events.json must include events before SEO pages can be generated");
@@ -212,7 +220,7 @@ function sourceRows(event) {
   const sources = Array.isArray(event.sources) && event.sources.length
     ? event.sources
     : [{ label: event.sourceLabel || "Source", url: event.source, status: event.sourceStatus || event.confidence, lastChecked: event.lastChecked }];
-  return sources
+  const sourceMarkup = sources
     .filter(source => source && source.url)
     .map(source => `
       <li>
@@ -220,10 +228,24 @@ function sourceRows(event) {
         <span>${escapeHtml(source.status || "source")} / checked ${escapeHtml(source.lastChecked || event.lastChecked || dataLastmod)}</span>
       </li>
     `)
-    .join("") || `<li><span>No source URL is attached yet.</span></li>`;
+    .join("");
+  const socialMarkup = eventSocialLinksForPage(event)
+    .map(link => `
+      <li class="social-source">
+        <a href="${escapeAttr(link.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(link.label || "Instagram")}</a>
+        <span>${escapeHtml(link.status || "social-profile")} / ${escapeHtml(link.sourceStatus || "social-lead")} / checked ${escapeHtml(link.checked || event.lastChecked || dataLastmod)}</span>
+      </li>
+    `)
+    .join("");
+  return sourceMarkup || socialMarkup ? `${sourceMarkup}${socialMarkup}` : `<li><span>No source URL is attached yet.</span></li>`;
 }
 
 function eventSchema(event, canonical, image) {
+  const socialLinks = eventSocialLinksForPage(event);
+  const sameAs = unique([
+    event.detailsUrl || event.source,
+    ...socialLinks.map(link => link.url),
+  ].filter(Boolean));
   const schema = {
     "@type": "MusicEvent",
     "@id": `${canonical}#event`,
@@ -235,20 +257,37 @@ function eventSchema(event, canonical, image) {
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "image": [image],
     "location": locationSchema(event),
-    "sameAs": event.detailsUrl || event.source,
+    "sameAs": sameAs.length === 1 ? sameAs[0] : sameAs,
     "organizer": event.organizer ? {
       "@type": "Organization",
       "name": event.organizer,
+      "sameAs": socialLinksForEntity(event.organizer, socialRegistry).map(link => link.url),
     } : undefined,
-    "performer": event.lineup.slice(0, 12).map(item => ({
+    "performer": event.lineup.slice(0, 12).map(item => compact({
       "@type": "PerformingGroup",
       "name": item.name,
+      "sameAs": socialLinksForEntity(item.name, socialRegistry).map(link => link.url),
     })),
     "offers": offerSchema(event),
   };
   const end = endDate(event);
   if (end) schema.endDate = end;
   return compact(schema);
+}
+
+function readSocialProfiles() {
+  if (!fs.existsSync(SOCIAL_PROFILES_FILE)) return {};
+  const sandbox = { window: {} };
+  vm.runInNewContext(fs.readFileSync(SOCIAL_PROFILES_FILE, "utf8"), sandbox, { filename: SOCIAL_PROFILES_FILE });
+  return sandbox.window.SOCIAL_PROFILE_DATA || {};
+}
+
+function eventSocialLinksForPage(event) {
+  return eventSocialLinks(event, socialRegistry, { limitArtists: 6 });
+}
+
+function unique(items) {
+  return Array.from(new Set(items.filter(Boolean)));
 }
 
 function locationSchema(event) {

@@ -281,6 +281,14 @@ figcaption {
   gap: 4px;
 }
 
+.source-list .social-source a {
+  color: var(--rose);
+}
+
+.source-list .social-source span {
+  color: var(--dim);
+}
+
 .crumbs {
   display: flex;
   flex-wrap: wrap;
