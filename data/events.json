@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-14T16:07:36.234Z",
-  "verified": "2026-06-15",
+  "generatedAt": "2026-06-14T16:10:25.995Z",
+  "verified": "2026-06-14",
   "timezone": "Asia/Shanghai",
   "sourcePriority": [
     "Chrome + Computer Use for anti-bot, logged-in, app-only, image/poster, and mini-program sources",
@@ -16,7 +16,7 @@
       "url": "https://ra.co/events/cn/shanghai",
       "kind": "listing",
       "sourceStatus": "trusted-ra",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": 403,
       "eventLinks": 0,
@@ -28,21 +28,21 @@
       "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
       "kind": "guide",
       "sourceStatus": "secondary",
-      "checkedAt": "2026-06-15",
-      "ok": false,
-      "status": null,
-      "eventLinks": 0,
-      "error": "This operation was aborted"
+      "checkedAt": "2026-06-14",
+      "ok": true,
+      "status": 200,
+      "eventLinks": 0
     },
     {
       "label": "SmartShanghai clubbing listings",
       "url": "https://www.smartshanghai.com/events/clubbing/",
       "kind": "listing",
       "sourceStatus": "secondary",
-      "checkedAt": "2026-06-15",
-      "ok": true,
-      "status": 200,
-      "eventLinks": 9
+      "checkedAt": "2026-06-14",
+      "ok": false,
+      "status": null,
+      "eventLinks": 0,
+      "error": "This operation was aborted"
     },
     {
       "label": "X/Twitter keyword: \"Shanghai\" techno",
@@ -51,7 +51,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -64,7 +64,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -77,7 +77,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -90,7 +90,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -103,7 +103,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -116,7 +116,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -129,7 +129,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -142,7 +142,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -155,7 +155,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -168,7 +168,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -181,7 +181,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -194,7 +194,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -207,7 +207,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -220,7 +220,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -233,7 +233,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -246,7 +246,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "ok": false,
       "status": null,
       "links": 0,
@@ -258,7 +258,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -271,7 +271,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -284,7 +284,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "ok": null,
       "status": "computer-use",
       "priority": 2,
@@ -297,7 +297,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -310,7 +310,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -323,7 +323,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -336,7 +336,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -349,7 +349,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "ok": null,
       "status": "computer-use",
       "priority": 2,
@@ -8316,59 +8316,6 @@
   "socialLeads": [],
   "discovered": [
     {
-      "url": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
-      "title": "ALTER. Pavillon",
-      "sourceLabel": "SmartShanghai",
-      "parsed": false,
-      "error": "This operation was aborted"
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/night-at-the-museum-back-to-the-90s-disco-night-2026-06-18",
-      "title": "Night at the Museum: Back to the 90s Disco Night",
-      "parsed": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/girls-night-out-skyline-dome-at-the-dome",
-      "title": "",
-      "sourceLabel": "SmartShanghai",
-      "parsed": false,
-      "error": "fetch failed"
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/onefortyasia-pres-mungk-uk-simbie-au-at-exit",
-      "title": "",
-      "sourceLabel": "SmartShanghai",
-      "parsed": false,
-      "error": "This operation was aborted"
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/disco-ball-fridays-skyline-dome-at-the-dome",
-      "title": "Disco Ball Fridays",
-      "parsed": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/a-full-afrowave-takeover-at-la-burg",
-      "title": "A Full Afrowave Takeover",
-      "parsed": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/sunset-sundays-skyline-dome-at-the-dome",
-      "title": "Sunset Sundays",
-      "parsed": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
-      "title": "Cyber Budha Special Vol: Twilight in the Forbidden City with The Hymmapan Electron (TH), Taiga, and MICO",
-      "parsed": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/nova-events-presents-summer-splash-pool-party-2026-06-27",
-      "title": "",
-      "sourceLabel": "SmartShanghai",
-      "parsed": false,
-      "error": "This operation was aborted"
-    },
-    {
       "url": "https://ra.co/events/2461478",
       "title": "Milo Raad + Cosmjn",
       "sourceLabel": "Resident Advisor",
@@ -8437,6 +8384,20 @@
       "status": "browser-required",
       "parsed": false,
       "access": "browser-required"
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
+      "title": "ALTER. Pavillon",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false,
+      "error": "This operation was aborted"
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
+      "title": "Cyber Buddha: Electronic Nomads of Isan",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false,
+      "error": "This operation was aborted"
     }
   ],
   "computerUseQueue": [
@@ -8465,7 +8426,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -8531,7 +8492,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -8597,7 +8558,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -8663,7 +8624,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -8730,7 +8691,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -8794,7 +8755,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -8858,7 +8819,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -8922,7 +8883,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-14",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -9090,32 +9051,32 @@
     "rowCount": 40
   },
   "quality": {
-    "auditDate": "2026-06-15",
-    "generatedAt": "2026-06-14T16:07:36.234Z",
+    "auditDate": "2026-06-14",
+    "generatedAt": "2026-06-14T16:10:25.995Z",
     "totals": {
       "events": 89,
-      "future": 32,
+      "future": 34,
       "futureHigh": 8,
-      "futureWatch": 18,
-      "singleSourceWatch": 4,
-      "singleConfirmationWatch": 12,
+      "futureWatch": 19,
+      "singleSourceWatch": 5,
+      "singleConfirmationWatch": 13,
       "venueProfiles": 40,
-      "futureVenueProfiles": 23,
-      "futureVenueWatch": 17,
-      "futurePerformerProfiles": 81,
-      "futurePerformerWatch": 25,
-      "singleSourceFuturePerformers": 56,
-      "futurePerformerProfileSources": 75,
+      "futureVenueProfiles": 25,
+      "futureVenueWatch": 18,
+      "futurePerformerProfiles": 88,
+      "futurePerformerWatch": 26,
+      "singleSourceFuturePerformers": 63,
+      "futurePerformerProfileSources": 82,
       "futurePerformerMissingProfileSources": 6,
       "djSourceUpgradeQueue": 0,
       "trackedDjProfiles": 89,
       "curatedDjSourceProfiles": 87,
       "trackedDjItineraryRows": 40,
-      "staleFuture": 32,
+      "staleFuture": 0,
       "missingTicketStatus": 0,
       "highMissingLineup": 0,
-      "futureCoreFieldQueue": 22,
-      "futureMissingCoreFields": 61,
+      "futureCoreFieldQueue": 24,
+      "futureMissingCoreFields": 65,
       "futureUncertainCoreFields": 4,
       "platformVerificationQueue": 5,
       "platformVerificationSources": 10,
@@ -9290,6 +9251,19 @@
         "sourceCount": 1,
         "confirmationSourceCount": 1,
         "reason": "single-source, lineup missing",
+        "nextAction": "Keep as context unless a direct source confirms stronger techno relevance."
+      },
+      {
+        "id": "sunset-sundays-dome",
+        "date": "2026-06-14",
+        "title": "Sunset Sundays",
+        "venue": "The Dome",
+        "priority": "low",
+        "fitScore": 0,
+        "sourceLabel": "SmartShanghai",
+        "sourceCount": 1,
+        "confirmationSourceCount": 1,
+        "reason": "single-source",
         "nextAction": "Keep as context unless a direct source confirms stronger techno relevance."
       },
       {
@@ -9645,6 +9619,25 @@
         "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
       },
       {
+        "id": "house-of-zup",
+        "date": "2026-06-14",
+        "title": "HOUSE OF ZUP",
+        "venue": "ZUP Pizza Bar",
+        "confidence": "Medium",
+        "priority": "low",
+        "fitScore": 1,
+        "missingCoreFields": [
+          "price",
+          "age"
+        ],
+        "uncertainCoreFields": [],
+        "missingNonCoreFields": [],
+        "performerProfileGaps": [],
+        "coreFieldGapStatus": "public-source-gap",
+        "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
+        "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
+      },
+      {
         "id": "night-at-museum-90s-disco",
         "date": "2026-06-18",
         "title": "Night at the Museum: Back to the 90s Disco Night",
@@ -9842,6 +9835,25 @@
         "missingNonCoreFields": [
           "poster"
         ],
+        "performerProfileGaps": [],
+        "coreFieldGapStatus": "public-source-gap",
+        "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
+        "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
+      },
+      {
+        "id": "sunset-sundays-dome",
+        "date": "2026-06-14",
+        "title": "Sunset Sundays",
+        "venue": "The Dome",
+        "confidence": "Watch",
+        "priority": "low",
+        "fitScore": 0,
+        "missingCoreFields": [
+          "price",
+          "age"
+        ],
+        "uncertainCoreFields": [],
+        "missingNonCoreFields": [],
         "performerProfileGaps": [],
         "coreFieldGapStatus": "public-source-gap",
         "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
@@ -10356,6 +10368,25 @@
         "lastChecked": "2026-06-14"
       },
       {
+        "venue": "ZUP Pizza Bar",
+        "aliases": [],
+        "districts": [
+          "Jing'an"
+        ],
+        "genres": [
+          "house, disco, funk, hip-hop"
+        ],
+        "sourceCount": 2,
+        "totalEvents": 2,
+        "futureEvents": 1,
+        "highConfidenceEvents": 0,
+        "watchEvents": 0,
+        "fitScore": 1,
+        "priority": "low",
+        "nextEventDate": "2026-06-14",
+        "lastChecked": "2026-06-14"
+      },
+      {
         "venue": "Beaufort Terrace",
         "aliases": [],
         "districts": [
@@ -10543,6 +10574,25 @@
         "fitScore": 0,
         "priority": "low",
         "nextEventDate": "2026-06-20",
+        "lastChecked": "2026-06-14"
+      },
+      {
+        "venue": "The Dome",
+        "aliases": [],
+        "districts": [
+          "Huangpu"
+        ],
+        "genres": [
+          "curated music, rooftop lounge"
+        ],
+        "sourceCount": 1,
+        "totalEvents": 1,
+        "futureEvents": 1,
+        "highConfidenceEvents": 0,
+        "watchEvents": 1,
+        "fitScore": 0,
+        "priority": "low",
+        "nextEventDate": "2026-06-14",
         "lastChecked": "2026-06-14"
       },
       {
@@ -10793,25 +10843,6 @@
         "lastChecked": "2026-06-14"
       },
       {
-        "venue": "ZUP Pizza Bar",
-        "aliases": [],
-        "districts": [
-          "Jing'an"
-        ],
-        "genres": [
-          "house, disco, funk, hip-hop"
-        ],
-        "sourceCount": 2,
-        "totalEvents": 2,
-        "futureEvents": 0,
-        "highConfidenceEvents": 0,
-        "watchEvents": 0,
-        "fitScore": 1,
-        "priority": "low",
-        "nextEventDate": "",
-        "lastChecked": "2026-06-14"
-      },
-      {
         "venue": "Commercial areas, waterfronts, parks, museums, and neighborhoods",
         "aliases": [],
         "districts": [
@@ -10848,25 +10879,6 @@
         "priority": "low",
         "nextEventDate": "",
         "lastChecked": "2026-06-11"
-      },
-      {
-        "venue": "The Dome",
-        "aliases": [],
-        "districts": [
-          "Huangpu"
-        ],
-        "genres": [
-          "curated music, rooftop lounge"
-        ],
-        "sourceCount": 1,
-        "totalEvents": 1,
-        "futureEvents": 0,
-        "highConfidenceEvents": 0,
-        "watchEvents": 1,
-        "fitScore": 0,
-        "priority": "low",
-        "nextEventDate": "",
-        "lastChecked": "2026-06-14"
       }
     ],
     "djCoverage": {
@@ -12311,6 +12323,26 @@
           "nextDate": "2026-06-17"
         },
         {
+          "slug": "bolobolo",
+          "name": "Bolobolo",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 1,
+          "venues": [
+            "ZUP Pizza Bar"
+          ],
+          "genres": [
+            "house, disco, funk, hip-hop"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 1,
+          "priority": "low",
+          "nextDate": "2026-06-14"
+        },
+        {
           "slug": "chiyokoo",
           "name": "Chiyokoo",
           "eventCount": 1,
@@ -12329,6 +12361,46 @@
           "fitScore": 1,
           "priority": "low",
           "nextDate": "2026-06-18"
+        },
+        {
+          "slug": "floating",
+          "name": "FLOATING",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 1,
+          "venues": [
+            "ZUP Pizza Bar"
+          ],
+          "genres": [
+            "house, disco, funk, hip-hop"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 1,
+          "priority": "low",
+          "nextDate": "2026-06-14"
+        },
+        {
+          "slug": "gabrielle-lin",
+          "name": "Gabrielle Lin",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 1,
+          "venues": [
+            "ZUP Pizza Bar"
+          ],
+          "genres": [
+            "house, disco, funk, hip-hop"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 1,
+          "priority": "low",
+          "nextDate": "2026-06-14"
         },
         {
           "slug": "golgol",
@@ -12391,6 +12463,46 @@
           "nextDate": "2026-06-18"
         },
         {
+          "slug": "rain-ling",
+          "name": "Rain Ling",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 1,
+          "venues": [
+            "ZUP Pizza Bar"
+          ],
+          "genres": [
+            "house, disco, funk, hip-hop"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 1,
+          "priority": "low",
+          "nextDate": "2026-06-14"
+        },
+        {
+          "slug": "rb-sh",
+          "name": "RB//SH",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 1,
+          "venues": [
+            "ZUP Pizza Bar"
+          ],
+          "genres": [
+            "house, disco, funk, hip-hop"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 1,
+          "priority": "low",
+          "nextDate": "2026-06-14"
+        },
+        {
           "slug": "tsing",
           "name": "Tsing",
           "eventCount": 1,
@@ -12451,6 +12563,26 @@
           "nextDate": "2026-06-18"
         },
         {
+          "slug": "yogijazz",
+          "name": "Yogijazz",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 1,
+          "venues": [
+            "ZUP Pizza Bar"
+          ],
+          "genres": [
+            "house, disco, funk, hip-hop"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 1,
+          "priority": "low",
+          "nextDate": "2026-06-14"
+        },
+        {
           "slug": "ali-ribo",
           "name": "ALI RIBO",
           "eventCount": 1,
@@ -12469,6 +12601,26 @@
           "fitScore": 0,
           "priority": "low",
           "nextDate": "2026-06-20"
+        },
+        {
+          "slug": "dj-rain",
+          "name": "DJ Rain",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 1,
+          "venues": [
+            "The Dome"
+          ],
+          "genres": [
+            "curated music, rooftop lounge"
+          ],
+          "watchAppearances": 1,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 0,
+          "priority": "low",
+          "nextDate": "2026-06-14"
         },
         {
           "slug": "dj-serang",
@@ -13173,7 +13325,7 @@
         "kind": "listing",
         "sourceStatus": "trusted-ra",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-14",
         "status": 403,
         "eventLinks": 0,
         "error": "Public HTTP fetch hit an anti-bot or JavaScript challenge; use Browser/Chrome visible verification instead of treating this as an empty source."
@@ -13182,27 +13334,27 @@
         "label": "SmartShanghai June 2026 clubbing guide",
         "kind": "guide",
         "sourceStatus": "secondary",
-        "ok": false,
-        "checkedAt": "2026-06-15",
-        "status": null,
-        "eventLinks": 0,
-        "error": "This operation was aborted"
+        "ok": true,
+        "checkedAt": "2026-06-14",
+        "status": 200,
+        "eventLinks": 0
       },
       {
         "label": "SmartShanghai clubbing listings",
         "kind": "listing",
         "sourceStatus": "secondary",
-        "ok": true,
-        "checkedAt": "2026-06-15",
-        "status": 200,
-        "eventLinks": 9
+        "ok": false,
+        "checkedAt": "2026-06-14",
+        "status": null,
+        "eventLinks": 0,
+        "error": "This operation was aborted"
       },
       {
         "label": "X/Twitter keyword: \"Shanghai\" techno",
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13212,7 +13364,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13222,7 +13374,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13232,7 +13384,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13242,7 +13394,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13252,7 +13404,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13262,7 +13414,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13272,7 +13424,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13282,7 +13434,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13292,7 +13444,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13302,7 +13454,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13312,7 +13464,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13322,7 +13474,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13332,7 +13484,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13342,7 +13494,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13352,7 +13504,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-14",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13362,7 +13514,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-14",
         "status": "computer-use"
       },
       {
@@ -13370,7 +13522,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-14",
         "status": "computer-use"
       },
       {
@@ -13378,7 +13530,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-14",
         "status": "computer-use"
       },
       {
@@ -13386,7 +13538,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-14",
         "status": "computer-use"
       },
       {
@@ -13394,7 +13546,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-14",
         "status": "computer-use"
       },
       {
@@ -13402,7 +13554,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-14",
         "status": "computer-use"
       },
       {
@@ -13410,7 +13562,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-14",
         "status": "computer-use"
       },
       {
@@ -13418,7 +13570,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-14",
         "status": "computer-use"
       }
     ],
