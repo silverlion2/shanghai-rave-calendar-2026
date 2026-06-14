@@ -551,6 +551,34 @@
       color: var(--acid);
     }
 
+    .system-events {
+      display: grid;
+      gap: 7px;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid rgba(255,255,255,.08);
+    }
+
+    .system-event-heading {
+      color: var(--acid);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .system-event-link {
+      border-color: rgba(198,255,59,.34);
+      background: rgba(198,255,59,.055);
+    }
+
+    .system-event-more {
+      display: inline-flex;
+      min-height: 34px;
+      align-items: center;
+      color: var(--dim);
+      font-size: 12px;
+    }
+
     .matrix {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -669,6 +697,7 @@
   <link rel="stylesheet" href="assets/basement-dispatch.css?v=xhs-contact-20260613c">
   <link rel="stylesheet" href="assets/account-system.css">
   <script src="data/ra-venues.js"></script>
+  <script src="data/dj-data.js"></script>
   <script src="assets/account-system.js" defer></script>
 </head>
 <body>
@@ -1066,6 +1095,8 @@
     }
 
     const venueDirectory = window.RA_VENUE_DIRECTORY || { venues: [], venueCount: 0 };
+    const sourceData = window.DJ_SOURCE_DATA || { events: [] };
+    const systemEvents = Array.isArray(sourceData.events) ? sourceData.events : [];
     const venueDirectoryIndex = new Map();
     for (const venue of venueDirectory.venues || []) {
       const key = normalizeVenueKey(venue.name);
@@ -1094,7 +1125,8 @@
         .replace(/\bshanghai\b/g, "")
         .replace(/^the\s+/, "")
         .replace(/[^a-z0-9]+/g, " ")
-        .trim();
+        .trim()
+        .replace(/\s+/g, " ");
     }
 
     function directoryMatchesFor(item) {
@@ -1116,6 +1148,89 @@
       const popular = matches.some(venue => venue.popular);
       const rowCount = matches.length > 1 ? ` / ${matches.length} imported rows` : "";
       return `${popular ? "Featured directory data" : "Directory data"}${rowCount}`;
+    }
+
+    function eventDetailUrl(event) {
+      if (!event || !event.id) return "#";
+      return `events/${encodeURIComponent(event.id)}.html`;
+    }
+
+    function normalizeUrl(value) {
+      return String(value || "")
+        .trim()
+        .replace(/[?#].*$/, "")
+        .replace(/\/$/, "");
+    }
+
+    function eventSourceUrls(event) {
+      const urls = [event.source, event.detailsUrl, event.ticketUrl];
+      if (Array.isArray(event.sources)) {
+        urls.push(...event.sources.map(source => source && source.url));
+      }
+      return urls.map(normalizeUrl).filter(Boolean);
+    }
+
+    function entrySourceUrls(item) {
+      return (item.sources || []).map(([, href]) => normalizeUrl(href)).filter(Boolean);
+    }
+
+    function entryNameKeys(item) {
+      return [item.name, ...(item.directoryNames || [])]
+        .map(normalizeVenueKey)
+        .filter(key => key.length >= 3);
+    }
+
+    function systemEventMatchesEntry(item, event) {
+      const entryUrls = entrySourceUrls(item);
+      const eventUrls = new Set(eventSourceUrls(event));
+      if (entryUrls.some(url => eventUrls.has(url))) return true;
+
+      const entryKeys = entryNameKeys(item);
+      const venueKey = normalizeVenueKey(event.venue);
+      if (venueKey && entryKeys.includes(venueKey)) return true;
+
+      const eventText = normalizeVenueKey([
+        event.title,
+        event.organizer,
+        event.promoter,
+        event.description,
+        Array.isArray(event.decisionTags) ? event.decisionTags.join(" ") : "",
+      ].join(" "));
+      return entryKeys.some(key => eventText.includes(key));
+    }
+
+    function systemEventSort(first, second) {
+      const firstDate = String(first.sortDate || "");
+      const secondDate = String(second.sortDate || "");
+      return secondDate.localeCompare(firstDate) || String(first.title || "").localeCompare(String(second.title || ""));
+    }
+
+    function systemEventsForEntry(item) {
+      const seen = new Set();
+      return systemEvents
+        .filter(event => event && event.id && systemEventMatchesEntry(item, event))
+        .filter(event => {
+          if (seen.has(event.id)) return false;
+          seen.add(event.id);
+          return true;
+        })
+        .sort(systemEventSort);
+    }
+
+    function renderSystemEventLinks(item) {
+      const matches = systemEventsForEntry(item);
+      if (!matches.length) return "";
+      const visible = matches.slice(0, 4);
+      const more = matches.length > visible.length ? `<span class="system-event-more">+${matches.length - visible.length} more in system</span>` : "";
+      return `
+        <div class="system-events">
+          <div class="system-event-heading">System events</div>
+          <div class="source-row">
+            ${visible.map(event => `<a class="source-link system-event-link" href="${escapeHtml(eventDetailUrl(event))}">${escapeHtml(`${event.date || event.sortDate} / ${event.title}`)}</a>`).join("")}
+            ${more}
+          </div>
+        </div>
+      `;
     }
 
     function matches(item) {
@@ -1159,6 +1274,7 @@
             <div class="chips">
               ${item.vibe.map(vibe => `<span class="chip">${escapeHtml(vibe)}</span>`).join("")}
             </div>
+            ${renderSystemEventLinks(item)}
             <div class="source-row">
               ${item.sources.map(([label, href]) => `<a class="source-link" href="${href}" target="_blank" rel="noreferrer">${escapeHtml(label)}</a>`).join("")}
             </div>

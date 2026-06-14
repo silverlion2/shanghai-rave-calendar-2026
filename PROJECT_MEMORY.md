@@ -897,3 +897,23 @@ Verification:
 - `node scripts/check.js` passed.
 - `npm run check` passed.
 - Browser verification on `index.html` confirmed Jun 12 and Jun 13 events no longer appear in homepage highlights after the Jun 14 06:00 cutoff.
+
+## 2026-06-14 Venue and DJ Event Cross-Links
+
+The user asked to make sure venue and DJ pages can link back to activities in the system.
+
+Implemented state:
+
+- DJ profile appearance rows now include a local `Event page` action for `events/{eventId}.html`, while keeping `Open in calendar`, external `Source`, and `Tickets` actions separate.
+- DJ itinerary rows derived from Shanghai calendar appearances also carry the same local event detail link.
+- Venue and crew cards now load `data/dj-data.js`, match card sources / venue aliases against system events, and render a `System events` link block pointing to local event detail pages.
+- Added `tests/event-cross-links.test.js` and wired it into `npm run check`.
+
+Verification:
+
+- `node --test tests/event-cross-links.test.js` passed.
+- `node --test tests/trust-framework.test.js tests/event-cross-links.test.js` passed.
+- `node scripts/check.js` passed.
+- `npm run check` passed.
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs` passed with 0 findings.
+- Browser verification on `venues.html` found 16 system-event sections and 53 internal event links; browser verification on `djs.html` confirmed appearance actions include `Open in calendar`, `Event page`, `Source`, and `Tickets` with no console warnings/errors.

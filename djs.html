@@ -1386,6 +1386,7 @@
         venue: app.venue,
         sourceLabel: "Shanghai calendar",
         source: app.source,
+        details: app.details,
         sourceStatus: app.sourceStatus,
         status: app.status,
         computedStatus: app.status === "upcoming" ? "future" : app.status === "watch" ? "watch" : "past",
@@ -1537,8 +1538,13 @@
       return minutes;
     }
 
+    function eventDetailUrl(event) {
+      if (!event || !event.id) return "#";
+      return `events/${encodeURIComponent(event.id)}.html`;
+    }
+
     function eventSourceUrl(event) {
-      return event.detailsUrl || event.source || "#";
+      return event.source || event.detailsUrl || "#";
     }
 
     function eventTicketUrl(event) {
@@ -1656,6 +1662,7 @@
             sourceStatusLabel: sourceStatusLabel(sourceStatusFor(event)),
             sourceCount: sourceCountFor(event),
             lastChecked: lastCheckedFor(event),
+            details: eventDetailUrl(event),
             source: eventSourceUrl(event),
             ticket: eventTicketUrl(event),
             slots: [],
@@ -1925,6 +1932,7 @@
           </div>
           <div class="event-actions">
             ${row.calendarId ? `<a class="mini-link primary" href="${calendarUrl({ id: row.calendarId })}">Open in calendar</a>` : ""}
+            ${row.details ? `<a class="mini-link secondary" href="${escapeHtml(row.details)}">Event page</a>` : ""}
             <a class="mini-link secondary" href="${escapeHtml(row.source || "#")}" target="_blank" rel="noopener noreferrer">${escapeHtml(publicText(row.sourceLabel || "Source"))}</a>
           </div>
         </article>
@@ -1971,7 +1979,8 @@
             </div>
             <div class="event-actions">
               <a class="mini-link primary" href="${calendarUrl(app)}">Open in calendar</a>
-              <a class="mini-link secondary" href="${escapeHtml(app.source)}" target="_blank" rel="noopener noreferrer">Details</a>
+              <a class="mini-link secondary" href="${escapeHtml(app.details)}">Event page</a>
+              <a class="mini-link secondary" href="${escapeHtml(app.source)}" target="_blank" rel="noopener noreferrer">Source</a>
               <a class="mini-link secondary" href="${escapeHtml(app.ticket)}" target="_blank" rel="noopener noreferrer">Tickets</a>
             </div>
           </article>
