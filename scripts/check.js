@@ -1015,6 +1015,7 @@ const publicAdminCornerFiles = [
   "rave-everywhere.html",
   "venues.html",
   "djs.html",
+  "contribute.html",
   "account.html",
 ];
 
@@ -1180,6 +1181,37 @@ const accountRequirements = [
   { file: "sitemap.xml", text: `${siteUrl}/account`, label: "Account sitemap URL" },
 ];
 
+const communityRequirements = [
+  { file: "index.html", text: 'href="contribute.html"', label: "calendar Contribute link" },
+  { file: "shanghai-rave-calendar-2026.html", text: 'href="contribute.html"', label: "archive Contribute link" },
+  { file: "poster-wall.html", text: 'href="contribute.html"', label: "wall Contribute link" },
+  { file: "love-wall.html", text: 'href="contribute.html"', label: "Love Wall Contribute link" },
+  { file: "planner.html", text: 'href="contribute.html"', label: "planner Contribute link" },
+  { file: "rave-everywhere.html", text: 'href="contribute.html"', label: "Rave Everywhere Contribute link" },
+  { file: "venues.html", text: 'href="contribute.html"', label: "venues Contribute link" },
+  { file: "djs.html", text: 'href="contribute.html"', label: "DJ database Contribute link" },
+  { file: "account.html", text: 'href="contribute.html"', label: "account Contribute link" },
+  { file: "contribute.html", text: "Complete the database", label: "community contribution page title" },
+  { file: "contribute.html", text: "data-community-contribution-app", label: "community contribution app mount" },
+  { file: "contribute.html", text: "assets/community-contributions.css", label: "community contribution styles" },
+  { file: "contribute.html", text: "data/dj-data.js", label: "community contribution existing-entry data bundle" },
+  { file: "contribute.html", text: "assets/community-contributions.js", label: "community contribution browser module" },
+  { file: "contribute.html", text: "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2", label: "community contribution Supabase client" },
+  { file: "assets/community-contributions.js", text: "function recordFromPayload(", label: "community contribution validation" },
+  { file: "assets/community-contributions.js", text: "function entryOptionsFromData(", label: "community contribution existing-entry target builder" },
+  { file: "assets/community-contributions.js", text: "function insertRemote(", label: "community contribution Supabase insert" },
+  { file: "assets/community-contributions.js", text: "community_contributions", label: "community contribution table name" },
+  { file: "assets/love-wall-supabase-config.js", text: 'contributionTable: "community_contributions"', label: "community contribution config table" },
+  { file: "scripts/write-love-wall-config.js", text: 'contributionTable: "community_contributions"', label: "community contribution generated config table" },
+  { file: "supabase/migrations/202606140001_community_contributions.sql", text: "create table if not exists public.community_contributions", label: "community contribution table migration" },
+  { file: "supabase/migrations/202606140001_community_contributions.sql", text: "target_kind", label: "community contribution existing-entry target columns" },
+  { file: "supabase/migrations/202606140001_community_contributions.sql", text: "contributor_role", label: "community contribution contributor role column" },
+  { file: "supabase/migrations/202606140002_community_contribution_targets.sql", text: "target_kind", label: "community contribution target upgrade migration" },
+  { file: "supabase/migrations/202606140001_community_contributions.sql", text: "Public can submit pending community contributions", label: "community contribution public insert policy" },
+  { file: "package.json", text: "tests/community-contributions.test.js", label: "community contribution tests in check script" },
+  { file: "sitemap.xml", text: `${siteUrl}/contribute`, label: "Contribute sitemap URL" },
+];
+
 const accountGuidePages = [
   { file: "index.html", context: "calendar" },
   { file: "shanghai-rave-calendar-2026.html", context: "calendar" },
@@ -1197,7 +1229,7 @@ const accountGuideRequirements = accountGuidePages.flatMap(page => [
   { file: page.file, text: "assets/account-system.js", label: `${page.file} public account guide script` },
 ]);
 
-for (const requirement of [...itineraryRequirements, ...opsRequirements, ...adminCornerRequirements, ...scrapeRequirements, ...posterArchiveRequirements, ...everywhereRequirements, ...loveWallRequirements, ...liveRoomRequirements, ...accountRequirements, ...accountGuideRequirements]) {
+for (const requirement of [...itineraryRequirements, ...opsRequirements, ...adminCornerRequirements, ...scrapeRequirements, ...posterArchiveRequirements, ...everywhereRequirements, ...loveWallRequirements, ...liveRoomRequirements, ...accountRequirements, ...communityRequirements, ...accountGuideRequirements]) {
   const html = fs.readFileSync(requirement.file, "utf8");
   if (!html.includes(requirement.text)) {
     throw new Error(`${requirement.file} missing feature marker: ${requirement.label}`);

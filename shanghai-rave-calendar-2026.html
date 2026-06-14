@@ -985,6 +985,30 @@
       font-size: 14px;
     }
 
+    .trust-inline {
+      width: max-content;
+      max-width: 100%;
+      min-height: 28px;
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid rgba(65,215,255,.4);
+      border-radius: 999px;
+      color: var(--cyan);
+      background: rgba(65,215,255,.07);
+      padding: 5px 9px;
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 900;
+      line-height: 1.1;
+      text-transform: uppercase;
+    }
+
+    .trust-inline:hover {
+      color: var(--void);
+      border-color: var(--cyan);
+      background: var(--cyan);
+    }
+
     .lineup-preview {
       display: grid;
       gap: 5px;
@@ -2101,6 +2125,7 @@
       <a class="nav-link" href="love-wall.html">Love</a>
       <a class="nav-link" href="venues.html">Venues</a>
       <a class="nav-link" href="djs.html">DJs</a>
+      <a class="nav-link" href="contribute.html">Contribute</a>
       <a class="nav-link" href="account.html">Account</a>
       <a class="nav-link" href="live-room.html">Tonight <small class="nav-beta">beta</small></a>
       <a class="nav-link" href="planner.html">Planner <small class="nav-beta">beta</small></a>
@@ -2270,6 +2295,8 @@
       <div class="bar-cell source-cell">
         <span>Source first</span>
         <span>Rave second</span>
+        <a href="trust.html">How we recommend</a>
+        <a href="trust.html#corrections">Corrections</a>
       </div>
     </footer>
     <a class="admin-corner" data-admin-corner href="ops.html" aria-label="Admin sign in">admin</a>
@@ -2284,6 +2311,7 @@
           <h2 id="modalTitle"></h2>
           <div class="modal-meta" id="modalMeta"></div>
           <p class="description" id="modalDescription"></p>
+          <div id="modalTrustPolicy"></div>
           <div class="facts" id="modalFacts"></div>
           <div class="social-strip" id="modalSocialLinks"></div>
           <div class="lineup-section" id="modalLineup"></div>
@@ -3294,6 +3322,10 @@
         .replace(/\bRA[-\s]+published\b/gi, "published")
         .replace(/\bRA\s+/g, "directory ")
         .replace(/\bRA\b/g, "directory");
+    }
+
+    function eventTrustLinkHtml() {
+      return '<a class="trust-inline" href="trust.html">How we recommend</a>';
     }
 
     function djSlug(name) {
@@ -4535,6 +4567,7 @@
             ${organizer ? `<div class="organizer-line"><span>Organizer</span><b>${escapeHtml(organizer)}</b>${organizerSocialLinkHtml(event)}</div>` : ""}
             <div class="venue">${venueGuideLinkHtml(event.venue)} · ${escapeHtml(event.district)}</div>
             <p class="description">${escapeHtml(publicText(event.description))}</p>
+            ${eventTrustLinkHtml()}
             ${festival ? festivalSummaryHtml(event) : `
               <div class="lineup-preview">
                 ${lineupFor(event).slice(0, 2).map(item => `<span><b>${djProfileLinksHtml(item.name)}</b>: ${escapeHtml(publicText(item.note))}</span>`).join("")}
@@ -4649,6 +4682,7 @@
       document.getElementById("modalTitle").textContent = event.title;
       document.getElementById("modalMeta").textContent = `${event.date}, ${event.time} · ${event.venue}, ${event.district}`;
       document.getElementById("modalDescription").textContent = publicText(event.description);
+      document.getElementById("modalTrustPolicy").innerHTML = eventTrustLinkHtml();
       const modalFacts = festival ? [
         ["Kind", "Festival / multi-event lead"],
         ["Format", event.festival?.format || event.genre],

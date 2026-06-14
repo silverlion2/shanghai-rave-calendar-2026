@@ -1,0 +1,470 @@
+{
+  "updatedAt": "2026-06-14",
+  "timezone": "Asia/Shanghai",
+  "cityListingUrl": "https://ra.co/events/cn/shanghai",
+  "scope": "Resident Advisor Shanghai city-listing coverage for the current visible/indexed RA window checked on 2026-06-14, spanning Jun 5-Sep 12 RA Shanghai event pages that were still discoverable through RA city listing page 1/page 2, startDate pages, or RA indexed event-detail pages.",
+  "access": {
+    "plainHttp": "blocked",
+    "observedStatus": 403,
+    "blocker": "DataDome / browser-required response from RA to scripted fetch",
+    "verificationRoute": "RA city listing page 1/page 2 and startDate pages through public indexed text plus RA event detail pages; Browser/Chrome required before changing live ticket state or claiming same-day availability."
+  },
+  "listingChecks": [
+    {
+      "url": "https://ra.co/events/cn/shanghai?startDate=2026-06-05",
+      "date": "2026-06-05",
+      "visibleTotalLabel": 10,
+      "visibleDateCount": 5,
+      "note": "This pass exposed the recent-past Jun 5-Jun 7 indexed RA rows still visible through the date filter."
+    },
+    {
+      "url": "https://ra.co/events/cn/shanghai?startDate=2026-06-07",
+      "date": "2026-06-07",
+      "visibleDateCount": 1,
+      "note": "Cross-check for the Jun 7 HOUSE OF ZUP row from RA date-filter listing."
+    },
+    {
+      "url": "https://ra.co/events/cn/shanghai?startDate=2026-06-12",
+      "date": "2026-06-12",
+      "visibleDateCount": 5,
+      "note": "This pass exposed the missing PRGRM 021 row."
+    },
+    {
+      "url": "https://ra.co/events/cn/shanghai?startDate=2026-06-13",
+      "date": "2026-06-13",
+      "visibleDateCount": 7
+    },
+    {
+      "url": "https://ra.co/events/cn/shanghai",
+      "date": "2026-06-14",
+      "visibleTotalLabel": 15,
+      "note": "Plain text listing exposed only the first current card; date-filter pages were used for cross-checking."
+    },
+    {
+      "url": "https://ra.co/events/cn/shanghai?startDate=2026-06-17",
+      "date": "2026-06-17",
+      "visibleDateCount": 1
+    },
+    {
+      "url": "https://pt-br.ra.co/events/cn/shanghai?startDate=2026-06-18",
+      "date": "2026-06-18",
+      "visibleDateCount": 2
+    },
+    {
+      "url": "https://ra.co/events/cn/shanghai?startDate=2026-06-19",
+      "date": "2026-06-19",
+      "visibleDateCount": 3
+    },
+    {
+      "url": "https://ra.co/events/cn/shanghai?startDate=2026-06-20",
+      "date": "2026-06-20",
+      "visibleDateCount": 4
+    },
+    {
+      "url": "https://ra.co/events/cn/shanghai?startDate=2026-06-21",
+      "date": "2026-06-21",
+      "visibleDateCount": 1
+    },
+    {
+      "url": "https://ra.co/events/cn/shanghai?startDate=2026-06-26",
+      "date": "2026-06-26",
+      "visibleDateCount": 2
+    },
+    {
+      "url": "https://ra.co/events/cn/shanghai?page=2",
+      "date": "2026-09-12",
+      "visibleDateCount": 1,
+      "note": "Public indexed RA page 2 exposed the long-dated Shaun Soomro, DJ Serang Shanghai row, which was missing from the Jun 12-Jun 26 manifest."
+    }
+  ],
+  "method": [
+    "Use RA city listing page 1/page 2, RA date-filter listing pages, and RA event detail pages as the highest-priority public nightlife source.",
+    "If plain HTTP or headless access returns DataDome, Cloudflare, empty client-rendered markup, or a JavaScript challenge, record browser-required and do not bypass it.",
+    "Confirm each RA Shanghai event by a stable RA event URL, then map it to one canonical site event row.",
+    "Keep SmartShanghai-facing duplicates such as Cyber Buddha mapped to the same site event with the RA URL preserved as a supporting source.",
+    "Keep non-Shanghai RA pages and RA artist/profile pages as related context only; do not count them as Shanghai RA event coverage."
+  ],
+  "events": [
+    {
+      "raEventId": "2437203",
+      "url": "https://ra.co/events/2437203",
+      "eventId": "darker-than-wax-dean-chew",
+      "date": "2026-06-05",
+      "title": "Fountain Pres: 15 Years of Darker Than Wax with Dean Chew",
+      "venue": "Wigwam",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2445207",
+      "url": "https://ra.co/events/2445207",
+      "eventId": "gully-riddim-mssingno",
+      "date": "2026-06-05",
+      "title": "Gully Riddim 9 Year Anniversary pres. MssingNo",
+      "venue": "Reactor Shanghai",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2450615",
+      "url": "https://ra.co/events/2450615",
+      "eventId": "dirty-beats",
+      "date": "2026-06-05",
+      "title": "dirty beats",
+      "venue": "Dirty House",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2458581",
+      "url": "https://ra.co/events/2458581",
+      "eventId": "19hz-fractale",
+      "date": "2026-06-05",
+      "title": "19Hz w. Fractale (IT) DNB/Dubstep/Breaks",
+      "venue": "TBA - DEFUN",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2456842",
+      "url": "https://ra.co/events/2456842",
+      "eventId": "interzone-summer-time",
+      "date": "2026-06-05",
+      "title": "Interzone, Ltd. (间域有限公司) · 夏令时调整",
+      "venue": "EXIT",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2455145",
+      "url": "https://ra.co/events/2455145",
+      "eventId": "janein",
+      "date": "2026-06-05",
+      "title": "JANEIN (DE)",
+      "venue": "POTENT",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2457307",
+      "url": "https://ra.co/events/2457307",
+      "eventId": "nightwave",
+      "date": "2026-06-05",
+      "title": "NIGHTWAVE feat. JULIANO ALLGAYER (BR)",
+      "venue": "The Shanghai Edition",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2458056",
+      "url": "https://ra.co/events/2458056",
+      "eventId": "tham",
+      "date": "2026-06-05",
+      "title": "On The Cutting Edge w. Tham",
+      "venue": "Abyss Shanghai",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2456891",
+      "url": "https://ra.co/events/2456891",
+      "eventId": "butterfree-m101",
+      "date": "2026-06-06",
+      "title": "06.06 周六｜ 闪亮姐妹跳舞乐园，浓度超标！",
+      "venue": "TBA - Room M101",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2455146",
+      "url": "https://ra.co/events/2455146",
+      "eventId": "acierate-brvtalist",
+      "date": "2026-06-06",
+      "title": "Acierate (DE) + The Brvtalist (DE)",
+      "venue": "POTENT",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2458079",
+      "url": "https://ra.co/events/2458079",
+      "eventId": "caroline-roxy",
+      "date": "2026-06-06",
+      "title": "FāQ Pres. Caroline Roxy",
+      "venue": "Abyss Shanghai",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2457326",
+      "url": "https://ra.co/events/2457326",
+      "eventId": "sunkissed",
+      "date": "2026-06-06",
+      "title": "SUNKISSED ROOFTOP PARTY feat. TOM PRICE (UK)",
+      "venue": "Fosun Art Foundation",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2448375",
+      "url": "https://ra.co/events/2448375",
+      "eventId": "techno-worlds",
+      "date": "2026-06-06",
+      "title": "Techno Worlds x VACUUM｜FINAL SAMPLING: ESCAPE VELOCITY 逃逸速度",
+      "venue": "EXIT",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2457142",
+      "url": "https://ra.co/events/2457142",
+      "eventId": "house-of-zup-jun7",
+      "date": "2026-06-07",
+      "title": "HOUSE OF ZUP",
+      "venue": "ZUP Pizza Bar",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2454518",
+      "url": "https://ra.co/events/2454518",
+      "eventId": "fruitygroove-soul-navigator",
+      "date": "2026-06-12",
+      "title": "FRUITYGROOVE Meets Soul Navigator",
+      "venue": "Reactor Shanghai",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2460995",
+      "url": "https://ra.co/events/2460995",
+      "eventId": "kollin",
+      "date": "2026-06-12",
+      "title": "KOLLIN",
+      "venue": "Dirty House",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2466129",
+      "url": "https://ra.co/events/2466129",
+      "eventId": "cltx-abyss",
+      "date": "2026-06-12",
+      "title": "Lethal Distortion w. CLTX",
+      "venue": "Abyss Shanghai",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2461478",
+      "url": "https://ra.co/events/2461478",
+      "eventId": "milo-cosmjn",
+      "date": "2026-06-12",
+      "title": "Milo Raad (RS) + Cosmjn (RO)",
+      "venue": "POTENT",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2464171",
+      "url": "https://ra.co/events/2464171",
+      "eventId": "prgrm-021",
+      "date": "2026-06-12",
+      "title": "PRGRM 021",
+      "venue": "EXIT",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2460549",
+      "url": "https://ra.co/events/2460549",
+      "eventId": "fengyun-5",
+      "date": "2026-06-13",
+      "title": "FENGYUN Vol. 5",
+      "venue": "TBA - M101 Room",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2459595",
+      "url": "https://ra.co/events/2459595",
+      "eventId": "horizon",
+      "date": "2026-06-13",
+      "title": "Horizon Rooftop Party feat. Erik Hagleton (FR)",
+      "venue": "Pop Bar",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2464301",
+      "url": "https://ra.co/events/2464301",
+      "eventId": "the-woods",
+      "date": "2026-06-13",
+      "title": "Love Bang presents: The Woods",
+      "venue": "Specters",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2461476",
+      "url": "https://ra.co/events/2461476",
+      "eventId": "matisa-limsum",
+      "date": "2026-06-13",
+      "title": "Matisa (IT) + Limsum (PH)",
+      "venue": "POTENT",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2453279",
+      "url": "https://ra.co/events/2453279",
+      "eventId": "nosaj-thing",
+      "date": "2026-06-13",
+      "title": "REACTOR Pres. Nosaj Thing",
+      "venue": "Reactor Shanghai",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2458037",
+      "url": "https://ra.co/events/2458037",
+      "eventId": "santa-k",
+      "date": "2026-06-13",
+      "title": "Santa K x TURBO",
+      "venue": "Abyss Shanghai",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2458269",
+      "url": "https://ra.co/events/2458269",
+      "eventId": "synth-crush",
+      "date": "2026-06-13",
+      "title": "Synth Crush: Altieri3000 [Live] / Velvet Robot [Live] / Hello Shitty",
+      "venue": "EXIT",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2464155",
+      "url": "https://ra.co/events/2464155",
+      "eventId": "house-of-zup",
+      "date": "2026-06-14",
+      "title": "HOUSE OF ZUP",
+      "venue": "ZUP Pizza Bar",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2456798",
+      "url": "https://ra.co/events/2456798",
+      "eventId": "bloom-season-1-grand-final",
+      "date": "2026-06-17",
+      "title": "Bloom Season 1, Grand Final",
+      "venue": "EXIT",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2467513",
+      "url": "https://ra.co/events/2467513",
+      "eventId": "cybionte-solo-ykk-heshang",
+      "date": "2026-06-18",
+      "title": "Cybionte with Solo, YKK, & Heshang",
+      "venue": "POTENT",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2464178",
+      "url": "https://ra.co/events/2464178",
+      "eventId": "photocult-mask-desire-auction",
+      "date": "2026-06-18",
+      "title": "PHOTOCULT Pres. Mask. Desire. Auction",
+      "venue": "Reactor Shanghai",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2461531",
+      "url": "https://ra.co/events/2461531",
+      "eventId": "mrd",
+      "date": "2026-06-19",
+      "title": "MRD x TURBO",
+      "venue": "Dirty House",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2467512",
+      "url": "https://ra.co/events/2467512",
+      "eventId": "nikita-zabelin-potent",
+      "date": "2026-06-19",
+      "title": "Nikita Zabelin (RU)",
+      "venue": "POTENT",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2466405",
+      "url": "https://ra.co/events/2466405",
+      "eventId": "onefortyasia-mungk-simbie",
+      "date": "2026-06-19",
+      "title": "ONEFORTYASIA Pres. MUNGK (UK) & SIMBIE (AU)",
+      "venue": "EXIT",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2466700",
+      "url": "https://ra.co/events/2466700",
+      "eventId": "atm-leo-monira",
+      "date": "2026-06-20",
+      "title": "A.T.M Pres. LEO MONIRA",
+      "venue": "Reactor Shanghai",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2451822",
+      "url": "https://ra.co/events/2451822",
+      "eventId": "enchanted-night-the-nest",
+      "date": "2026-06-20",
+      "title": "Enchanted Night",
+      "venue": "TBA - The Nest",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2466422",
+      "url": "https://ra.co/events/2466422",
+      "eventId": "neon-jungle-tom-kynd",
+      "date": "2026-06-20",
+      "title": "NEON JUNGLE feat. TOM KYND",
+      "venue": "The Sukhothai Shanghai",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2467511",
+      "url": "https://ra.co/events/2467511",
+      "eventId": "sciahri-potent",
+      "date": "2026-06-20",
+      "title": "Sciahri (IT)",
+      "venue": "POTENT",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2455159",
+      "url": "https://ra.co/events/2455159",
+      "eventId": "friendsstandout",
+      "date": "2026-06-21",
+      "title": "FRIENDSSTANDout",
+      "venue": "Wigwam",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2429023",
+      "url": "https://ra.co/events/2429023",
+      "eventId": "cyber-buddha",
+      "date": "2026-06-26",
+      "title": "Cyber Budha Special Vol: Twilight in the Forbidden City",
+      "venue": "Bandai Namco Shanghai Base / SmartShanghai lists Star@ Culture Center",
+      "coverageRole": "supporting"
+    },
+    {
+      "raEventId": "2462792",
+      "url": "https://ra.co/events/2462792",
+      "eventId": "dark-room",
+      "date": "2026-06-26",
+      "title": "Dark RoOm",
+      "venue": "Dirty House",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2232295",
+      "url": "https://ra.co/events/2232295",
+      "eventId": "shaun-soomro-dj-serang",
+      "date": "2026-09-12",
+      "title": "Shaun Soomro, DJ Serang",
+      "venue": "TBA",
+      "coverageRole": "primary"
+    }
+  ],
+  "relatedContext": [
+    {
+      "raEventId": "2466267",
+      "url": "https://ra.co/events/2466267",
+      "eventId": "youshan-warmup",
+      "date": "2026-07-17",
+      "title": "YOUSHAN FESTIVAL 2026",
+      "venue": "Secret Forest, Chongli",
+      "coverageRole": "festival-context",
+      "note": "Useful context for the June 27 Wigwam warmup, but not counted as Shanghai RA event coverage because the RA event page is for Chongli."
+    }
+  ]
+}

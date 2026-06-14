@@ -118,6 +118,7 @@ function renderBottomDispatchFooter(structure, {
   const contactHandle = structure.site.contactHandle || structure.site.socialLabel || "";
   const contactCardImage = structure.site.contactCardImage || "";
   const contactCardHref = contactCardImage ? `${prefix}${contactCardImage}` : "";
+  const trustHref = `${prefix}trust.html`;
   return `
     <footer class="footnotes bottom-dispatch-bar" aria-label="Basement Dispatch status">
       <div class="bar-cell update-cell">
@@ -142,6 +143,8 @@ function renderBottomDispatchFooter(structure, {
       </div>
       <div class="bar-cell source-cell">
         ${badge.map(line => `<span>${escapeHtml(line)}</span>`).join("\n        ")}
+        <a href="${escapeAttr(trustHref)}">How we recommend</a>
+        <a href="${escapeAttr(`${trustHref}#corrections`)}">Corrections</a>
       </div>
     </footer>
     <a class="admin-corner" data-admin-corner href="${escapeAttr(prefix + actionHref)}" aria-label="Admin sign in">admin</a>

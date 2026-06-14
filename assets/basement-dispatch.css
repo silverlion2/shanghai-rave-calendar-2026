@@ -1311,6 +1311,14 @@ body:has(.dispatch-shell)::before {
   padding-top: 0;
 }
 
+.dispatch-shell .source-list .source-note {
+  width: auto !important;
+  max-width: none !important;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
 .dispatch-shell .bottom-dispatch-bar {
   margin-top: 34px;
 }

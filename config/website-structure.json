@@ -22,6 +22,7 @@
     "love-wall",
     "venues",
     "djs",
+    "contribute",
     "account",
     "live-room",
     "planner",
@@ -115,6 +116,17 @@
       "priority": "0.85"
     },
     {
+      "id": "contribute",
+      "label": "Contribute",
+      "file": "contribute.html",
+      "route": "/contribute",
+      "shell": "dispatch-shell",
+      "includeInSitemap": true,
+      "lastmod": "2026-06-14",
+      "changefreq": "weekly",
+      "priority": "0.83"
+    },
+    {
       "id": "venues",
       "label": "Venues",
       "file": "venues.html",
@@ -143,6 +155,17 @@
       "includeInSitemap": true,
       "changefreq": "weekly",
       "priority": "0.76"
+    },
+    {
+      "id": "trust",
+      "label": "Trust",
+      "file": "trust.html",
+      "route": "/trust",
+      "shell": "dispatch-shell",
+      "includeInSitemap": true,
+      "lastmod": "2026-06-14",
+      "changefreq": "monthly",
+      "priority": "0.7"
     },
     {
       "id": "ops",

@@ -186,6 +186,7 @@ function renderEventPage(event) {
             ${festival ? festivalFacts(event) : eventFacts(event)}
           </section>
           ${tagHtml(event)}
+          ${renderRecommendationLedger(event)}
           <section class="copy-block">
             <h2>${festival ? "Festival Program" : "Lineup and Notes"}</h2>
             ${festival ? festivalProgramHtml(event) : event.lineup.length ? `
@@ -201,6 +202,7 @@ function renderEventPage(event) {
             </ul>
             ${isPublic ? "" : `<p class="watch-note">${festival ? "This festival lead is intentionally noindexed until exact dates, tickets, lineup, or a direct official source confirms the details." : "This lead is intentionally noindexed until a direct venue, promoter, ticketing, RA, SmartShanghai detail, or official artist source confirms the details."}</p>`}
           </section>
+          ${renderTrustLedger(event)}
         </article>
         ${sharedFooter("../")}
       </main>
@@ -309,12 +311,16 @@ function sourceRows(event) {
     : [{ label: event.sourceLabel || "Source", url: event.source, status: event.sourceStatus || event.confidence, lastChecked: event.lastChecked }];
   const sourceMarkup = sources
     .filter(source => source && source.url)
-    .map(source => `
+    .map(source => {
+      const note = sourceVerificationNote(source);
+      return `
       <li>
         <a href="${escapeAttr(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label || "Source")}</a>
         <span>${escapeHtml(source.status || "source")} / checked ${escapeHtml(source.lastChecked || event.lastChecked || dataLastmod)}</span>
+        ${note ? `<span class="source-note">${escapeHtml(note)}</span>` : ""}
       </li>
-    `)
+    `;
+    })
     .join("");
   const socialMarkup = eventSocialLinksForPage(event)
     .map(link => `
@@ -325,6 +331,68 @@ function sourceRows(event) {
     `)
     .join("");
   return sourceMarkup || socialMarkup ? `${sourceMarkup}${socialMarkup}` : `<li><span>No source URL is attached yet.</span></li>`;
+}
+
+function sourceVerificationNote(source = {}) {
+  return source.browserCheck || source.verificationNote || source.accessNote || "";
+}
+
+function renderRecommendationLedger(event) {
+  const rows = [
+    ["Recommendation", event.recommendationReason || selectionBasis(event)],
+    ["Best for", event.bestFor || bestForFallback(event)],
+    ["Verify before going", event.verifyBeforeGoing || event.ticketStatus || "Recheck the source link for same-day ticket availability, final set times, and venue door policy."],
+    ["Source confidence", event.sourceConfidence || event.sourceStatus || event.confidence || "source checked"],
+  ];
+  return `
+          <section class="copy-block recommendation-ledger" aria-label="How we recommend this event">
+            <h2>How We Recommend This</h2>
+            <ul class="lineup-list">
+              ${rows.map(([label, value]) => `<li><b>${escapeHtml(label)}</b><span>${escapeHtml(value)}</span></li>`).join("")}
+            </ul>
+          </section>`;
+}
+
+function renderTrustLedger(event) {
+  const rows = [
+    ["Last checked", event.lastChecked || dataLastmod],
+    ["Selection basis", selectionBasis(event)],
+    ["Commercial relationship", commercialRelationship(event)],
+    ["Correction route", `Send source fixes through RED ${siteStructure.site.contactHandle || siteStructure.site.socialLabel || "updates"} or the corrections policy.`],
+  ];
+  return `
+          <section class="copy-block trust-ledger" aria-label="Trust ledger">
+            <h2>Trust Ledger</h2>
+            <ul class="lineup-list">
+              ${rows.map(([label, value]) => `<li><b>${escapeHtml(label)}</b><span>${escapeHtml(value)}</span></li>`).join("")}
+              <li><b>Policy</b><span><a href="../trust.html">How We Recommend</a> / <a href="../trust.html#corrections">Corrections</a></span></li>
+            </ul>
+          </section>`;
+}
+
+function selectionBasis(event) {
+  if (event.sourceStatus === "watchlist" || event.status === "watch") {
+    return "Watchlist lead kept visible for source monitoring; do not treat date, lineup, or ticketing as final until stronger evidence lands.";
+  }
+  const tags = Array.isArray(event.decisionTags) && event.decisionTags.length ? event.decisionTags.slice(0, 3).join(", ") : "";
+  return tags
+    ? `Included for source visibility, room fit, and these editorial signals: ${tags}.`
+    : "Included for source visibility, room fit, rave relevance, and calendar usefulness.";
+}
+
+function bestForFallback(event) {
+  const tags = Array.isArray(event.decisionTags) ? event.decisionTags.join(" ").toLowerCase() : "";
+  const sounds = Array.isArray(event.soundTags) ? event.soundTags.join(" ").toLowerCase() : "";
+  const text = `${tags} ${sounds} ${event.genre || ""}`.toLowerCase();
+  if (event.status === "watch" || event.sourceStatus === "watchlist") return "Readers tracking leads who are comfortable verifying details before making plans.";
+  if (/hard|industrial|trance/.test(text)) return "Hard-rave and late-room listeners who want higher-pressure club programming.";
+  if (/rooftop|date route|groovy|melodic/.test(text)) return "Date-night planners and readers who want a social route with lighter club pressure.";
+  if (/live|listening|experimental|ambient/.test(text)) return "Listening-first readers and live-electronic crossover audiences.";
+  return "Readers comparing source-backed Shanghai electronic and club options.";
+}
+
+function commercialRelationship(event) {
+  return event.commercialRelationship || event.commercialLabel || event.sponsorship || "No paid placement recorded.";
 }
 
 function eventSchema(event, canonical, image) {

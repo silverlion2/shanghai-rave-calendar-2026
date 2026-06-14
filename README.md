@@ -23,6 +23,10 @@ When served over HTTP, the calendar reads `data/events.json`. If that file is mi
 
 `subscribe.html` is the English-first bilingual alert profile flow for Xiaohongshu-first distribution, email/newsletter intent, and future WeChat/Instagram activation. Submissions save locally immediately and can insert pending rows into the Supabase `subscriptions` table after `supabase/migrations/202606130003_subscriptions.sql` is applied.
 
+## Community contributions
+
+`contribute.html` lets the community submit source-backed missing events, DJ profile evidence, venue details, ticket/source fixes, corrections, and proposed additions to existing event, DJ, or venue entries without writing directly into canonical data. The browser saves each lead locally first, then inserts a pending row into the Supabase `community_contributions` review queue after `supabase/migrations/202606140001_community_contributions.sql` and `supabase/migrations/202606140002_community_contribution_targets.sql` are applied. Submissions record contributor role, optional affiliation, and existing-entry target metadata so moderators can separate community leads, promoter/venue updates, artist evidence, and source fixes before any update reaches `data/events.json`, `data/dj-data.js`, venue pages, or generated event Trust Ledgers.
+
 The event data model now includes derived `soundTags`, `decisionTags`, and `decisionProfile` fields from `scripts/techno-taxonomy.js`. Public pages and `ops.html` use simple tags for sound, room context, ticket/source status, and source-check needs; there is no A/B/C grading layer.
 
 ## DJ tracking
@@ -54,6 +58,12 @@ V1 uses GitHub only:
 6. For any event with `posterEvidence`, the collector must download the flyer into `assets/posters/`, add a local `posterUrl`, run the poster preparation pipeline, and avoid using remote `images.ra.co` URLs in the UI.
 7. The script writes `data/events.json`, `data/dj-data.js`, and `data/tracked-dj-itineraries.js`.
 8. The workflow commits the changed data files back to the repository.
+
+RA is the highest-priority public nightlife source. Because plain HTTP fetch currently returns a browser-required RA challenge, complete Shanghai coverage is tracked in `config/ra-shanghai-coverage.json`: each RA Shanghai event URL must map to one canonical event row, and `scripts/audit-events.js` fails when a mapped RA event is missing from generated data. The audit also compares RA's visible upcoming count against the manifest's upcoming rows, so a missed future page or pagination row fails the check instead of silently publishing. `npm run scrape` writes the same snapshot to `data/events.json.quality.raShanghaiCoverage`.
+
+`data/events.json.quality.watchQueue` separates `sourceCount` from `confirmationSourceCount`. Social index previews, artist profiles, venue context, radio context, previous-series pages, and off-city festival context stay useful as leads, but they do not count as confirmation sources for the current event. The audit reports `singleConfirmationWatch` so editors can prioritize Watch rows that still need a direct RA, venue, promoter, ticketing, SmartShanghai, or official source.
+
+`data/events.json.quality.platformVerificationQueue` lists Watch rows that already have Instagram, Xiaohongshu/XHS, WeChat, Weibo, mini-program, or ticket-flow leads but still need platform-native Browser/Chrome verification. Use the provided search queries first, then open visible account/post results; do not treat search-index snippets, profile metadata, image placeholders, login walls, or public-session timeouts as event confirmation.
 
 Static browsing does not require a database. Supabase is used when configured for backend tables, Love Wall submissions, account personalization, and imported poster archive metadata.
 
@@ -95,6 +105,8 @@ Known anti-bot or app-bound sources are not scraped with plain `fetch`. They are
 Computer Use collection should be complete, not just a title scrape. For each event, follow second-layer links and extract image/poster text when needed to capture time, venue/address, lineup and set times, poster evidence, artist introductions, future city tour dates, ticket platform/price/availability, age/ID rules, source publication dates, and whether each detail came from official, ticketing, social, or image-derived evidence. Poster evidence is not complete until the poster image has been saved under `assets/posters/` and referenced through a local `posterUrl`.
 
 `config/curated-events.json` is the persistent handoff for those agent-collected details. Use it for browser-confirmed RA, SmartShanghai, WeChat, Xiaohongshu, mini-program, poster, or social-account details that should survive every automated refresh without adding brittle anti-bot scraping logic to GitHub Actions.
+
+When RA city listing fetches are blocked, update RA through this route: RA city/date listing plus pagination such as `page=2` in Browser or publicly indexed text, then each RA event detail page, then `config/ra-shanghai-coverage.json`, then `config/curated-events.json` for any new or corrected event details. Do not treat an RA challenge page as an empty listing.
 
 `npm run check` and `npm run audit` enforce the poster handoff rule: any event with `posterEvidence` must have a valid downloaded local `assets/posters/...` image. If this fails, use Chrome/Computer Use or `curl` to download the flyer, then update `config/curated-events.json`, generated `data/events.json`, and the mirrored calendar poster override map when needed.
 

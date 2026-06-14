@@ -499,6 +499,30 @@
       max-width: 850px;
     }
 
+    .trust-inline {
+      width: max-content;
+      max-width: 100%;
+      min-height: 28px;
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid rgba(65,215,255,.4);
+      border-radius: 999px;
+      color: var(--cyan);
+      background: rgba(65,215,255,.07);
+      padding: 5px 9px;
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 900;
+      line-height: 1.1;
+      text-transform: uppercase;
+    }
+
+    .trust-inline:hover {
+      color: var(--void);
+      border-color: var(--cyan);
+      background: var(--cyan);
+    }
+
     .listen-panel {
       display: grid;
       gap: 12px;
@@ -876,6 +900,11 @@
       overflow: hidden;
     }
 
+    .dj-card .trust-inline {
+      font-size: 10px;
+      padding: 4px 8px;
+    }
+
     .empty-state {
       padding: 20px;
       color: var(--muted);
@@ -982,6 +1011,7 @@
         <a class="nav-link" href="love-wall.html">Love</a>
         <a class="nav-link" href="venues.html">Venues</a>
         <a class="nav-link active" href="djs.html">DJs</a>
+        <a class="nav-link" href="contribute.html">Contribute</a>
         <a class="nav-link" href="account.html">Account</a>
         <a class="nav-link" href="live-room.html">Tonight <small class="nav-beta">beta</small></a>
         <a class="nav-link" href="planner.html">Planner <small class="nav-beta">beta</small></a>
@@ -1117,6 +1147,8 @@
       <div class="bar-cell source-cell">
         <span>Source first</span>
         <span>Rave second</span>
+        <a href="trust.html">How we recommend</a>
+        <a href="trust.html#corrections">Corrections</a>
       </div>
     </footer>
     <a class="admin-corner" data-admin-corner href="ops.html" aria-label="Admin sign in">admin</a>
@@ -1179,6 +1211,11 @@
         .replace(/\bRA[-\s]+published\b/gi, "published")
         .replace(/\bRA\s+/g, "directory ")
         .replace(/\bRA\b/g, "directory");
+    }
+
+    function djTrustLinkHtml(profile) {
+      const name = escapeHtml(profile?.name || "this DJ");
+      return `<a class="trust-inline" href="trust.html" aria-label="How we recommend ${name}">How we recommend</a>`;
     }
 
     function profileHash(slug) {
@@ -2000,6 +2037,7 @@
           <div class="profile-title">
             <h2>${escapeHtml(profile.name)}</h2>
             <p class="profile-summary">${escapeHtml(publicText(profile.summary))}</p>
+            ${djTrustLinkHtml(profile)}
             <div class="chips">${chips}</div>
             <div class="chips">
               <button class="copy-link" type="button" id="copyProfileLink">Copy profile link</button>
@@ -2045,11 +2083,12 @@
         const tags = profile.soundFamilies.slice(0, 3).map(tag => `<span class="chip">${escapeHtml(tagLabel(tag))}</span>`).join("");
         const trackerChip = profile.globalItineraryCount ? `<span class="chip">${profile.globalItineraryCount} global dates</span>` : "";
         return `
-          <button class="dj-card ${profile.slug === selectedSlug ? "active" : ""}" type="button" data-profile="${escapeHtml(profile.slug)}">
+          <article class="dj-card ${profile.slug === selectedSlug ? "active" : ""}" data-profile="${escapeHtml(profile.slug)}" tabindex="0" role="button" aria-label="${escapeHtml(`Open ${profile.name} DJ profile`)}">
             <div class="card-top"><img class="card-avatar" src="${avatarSvg(profile)}" alt=""><b>${escapeHtml(profile.name)}</b></div>
             <p>${escapeHtml(publicText(profile.summary))}</p>
+            ${djTrustLinkHtml(profile)}
             <div class="chips">${tags}${trackerChip}<span class="chip">${profile.itineraryCount} itinerary</span></div>
-          </button>
+          </article>
         `;
       }).join("");
     }
@@ -2123,8 +2162,16 @@
         renderApp();
       });
       document.addEventListener("click", event => {
+        if (event.target.closest("a")) return;
         const button = event.target.closest("[data-profile]");
         if (button) selectProfile(button.dataset.profile, true);
+      });
+      document.addEventListener("keydown", event => {
+        if (event.target.closest("a")) return;
+        const button = event.target.closest("[data-profile]");
+        if (!button || (event.key !== "Enter" && event.key !== " ")) return;
+        event.preventDefault();
+        selectProfile(button.dataset.profile, true);
       });
       window.addEventListener("hashchange", () => {
         const slug = slugFromHash();

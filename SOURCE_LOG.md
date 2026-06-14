@@ -4,13 +4,12 @@ Last refreshed: 2026-06-14, Asia/Shanghai.
 
 ## Source Priority
 
-1. Chrome + Computer Use for known anti-bot, logged-in, app-only, poster/image, or mini-program sources.
-2. Direct venue, promoter, ticketing, or official artist pages.
-3. Resident Advisor event pages and city listings.
-4. SmartShanghai event pages and monthly clubbing guide.
-5. Public social posts, WeChat mini-program references, Xiaohongshu, Douyin, Instagram, and reposts as discovery leads only.
+1. Resident Advisor event pages and city listings for Shanghai electronic event facts.
+2. Direct venue, promoter, ticketing, or official artist pages for official updates and conflict resolution.
+3. SmartShanghai event pages and monthly clubbing guide for local English context, venue details, and discovery.
+4. Public social posts, WeChat mini-program references, Xiaohongshu, Douyin, Instagram, and reposts as discovery leads unless visually verified and corroborated.
 
-Collection method is separate from confirmation strength: Chrome + Computer Use can discover or verify a source, but an event still needs a shareable official, ticketing, venue/promoter, RA, SmartShanghai, or artist/label reference before it is promoted from watch-level to upcoming.
+Collection method is separate from confirmation strength: Chrome + Computer Use can discover or verify a source when RA/social/ticketing pages are dynamic or blocked, but RA remains the highest-priority public nightlife source for Shanghai event facts. An event still needs a shareable RA, official, ticketing, venue/promoter, SmartShanghai, or artist/label reference before it is promoted from watch-level to upcoming.
 
 ## 2026-06-14 RA Clubs Directory Import
 
@@ -81,6 +80,99 @@ Added or upgraded in the calendar:
 - Night at the Museum: Back to the 90s Disco Night, A Full Afrowave Takeover, Nova Summer Splash Pool Party, and Sunset Sundays were added as watch-level SmartShanghai club/date leads because they are lower techno fit or have incomplete lineup/ticket details.
 
 `data/events.json` now reports `curatedEventsApplied` so `scripts/check.js` can fail if the browser-confirmed updates stop merging.
+
+## 2026-06-14 RA Coverage Sweep
+
+RA remains the highest-priority public source for Shanghai electronic event facts. Plain scripted fetches to `https://ra.co/events/cn/shanghai` and RA event detail pages returned a 403/DataDome browser-required response, so the refresh used RA city/date-listing pages through public indexed text and RA detail pages without attempting a bypass.
+
+Coverage change:
+
+- `config/ra-shanghai-coverage.json` now tracks the full RA Shanghai visible/indexed window checked on June 14, 2026: 41 RA Shanghai event pages from June 5 through September 12, with Cyber Buddha mapped as a supporting RA source because the canonical site row remains SmartShanghai-facing.
+- The sweep added the recent-past Jun 5-Jun 7 RA rows still exposed by RA date filters and RA indexed detail pages: JANEIN, Darker Than Wax with Dean Chew, THAM, Gully Riddim / MssingNo, Interzone, dirty beats, 19Hz w. Fractale, NIGHTWAVE, Butterfree at M101, Acierate + The Brvtalist, SUNKISSED, Jun 7 HOUSE OF ZUP, plus the already present Techno Worlds and FāQ / Caroline Roxy rows.
+- The audit keeps a separate current-listing guard: RA city listing still reports 15 upcoming Shanghai events on June 14, and the manifest has 15 future/upcoming rows, so a missed current RA event fails `scripts/audit-events.js`.
+- Added the missing RA row `PRGRM 021` at EXIT, June 12, 2026 (`https://ra.co/events/2464171`), including RA-backed time, venue/address, lineup, genre, cost, and caveats.
+- Added the RA page-2 long-tail row `Shaun Soomro, DJ Serang`, September 12, 2026 (`https://ra.co/events/2232295`), as a Watch/context listing because RA confirms title, date, time, promoter, lineup, and TBA Shanghai venue label, but not venue address, price, age, or ticket route.
+- `scripts/scrape-events.js` writes the manifest result to `data/events.json.quality.raShanghaiCoverage`.
+- `scripts/audit-events.js` fails if a manifest RA event URL is not present in the generated data, if the quality snapshot drifts from the manifest, or if the RA visible upcoming count does not match the manifest's upcoming rows. Current check: RA label 15 upcoming, manifest 15 upcoming covered, total RA manifest 41/41 covered.
+
+Follow-up correction in the same RA pass:
+
+- Public indexed RA detail pages surfaced four Shanghai rows that were not present in the city-listing text snapshot: `dirty beats` (`https://ra.co/events/2450615`), `19Hz w. Fractale` (`https://ra.co/events/2458581`), `NIGHTWAVE feat. JULIANO ALLGAYER` (`https://ra.co/events/2457307`), and `SUNKISSED ROOFTOP PARTY feat. TOM PRICE` (`https://ra.co/events/2457326`).
+- Added `dirty-beats` and `19hz-fractale` as full canonical events with RA-backed date, time, venue/address, promoter, lineup, genre, ticket/age notes, flyer visibility in source confidence, and archive recommendation text.
+- Upgraded `nightwave` and `sunkissed` from description-only overlays to RA-backed rows with lineup, address, organizer, ticket status, flyer visibility in source confidence, and `How we recommend` caveats that keep them as social/rooftop routes rather than hard-rave picks.
+
+Workflow rule: when RA fetch is blocked, use Browser/Chrome or publicly indexed RA city/date/page-2 pages, open each event detail page, update `config/ra-shanghai-coverage.json`, then persist event facts in `config/curated-events.json`. Do not treat a challenge page as an empty RA listing, and always check RA pagination before calling Shanghai coverage complete.
+
+## 2026-06-14 High-Watch Social Index Scan
+
+After completing the RA Shanghai coverage manifest, the next high-priority Watch queue was scanned for stronger event-level evidence.
+
+- `jasmin-knopha`: public search results for Heim/Jasmín/Knopha surfaced a Heim Instagram preview for `06.20 | Heim Invites: Jasmín`, which supports the venue-social route but still does not expose a readable ticket page, door price, set times, or final running order. The canonical row remains Watch and now labels Heim Instagram as a `social-index-lead` until Chrome/Instagram, WeChat, XHS, or ticketing visual verification confirms the post.
+- `botox-fatale`, `anika-kunst`, and `truth-lies`: public results returned SmartShanghai plus ambiguous or dynamic Instagram/profile snippets. No RA Shanghai event detail or fully readable venue/promoter/ticketing page was found in this pass, so no confidence upgrade was made.
+
+Follow-up correction in the same pass:
+
+- `botox-fatale`: public search results surfaced the artist/tour Instagram index preview for `26.06 byyb.radio Shanghai`, `26.06 ABYSS Shanghai`, and `27.06 OIL Shenzhen`. Added it as `social-index-lead`; it strengthens the Abyss date lead but does not confirm ticket route, door price, set times, or current platform-visible post state. Keep as Watch until Chrome/Instagram platform-native search, Abyss, promoter, RA Shanghai, or ticketing confirms practical details.
+- `anika-kunst`: public search results surfaced an official `potent_club` Instagram index preview for `POTENT JUNE 2026` naming `@anikakunstmuzik`. Added it as `social-index-lead`; it identifies the likely platform-native Chrome/Instagram verification target but does not confirm the June 27 poster card, ticket route, door price, or set times. Keep as Watch until POTENT, RA Shanghai, ticketing, or visually verified official social evidence confirms practical details.
+- `liminal-dreams`: public search results surfaced Liminal Dreams and Wigwam Instagram index previews tying the series to Wigwam and `JUNE 20 @liminal_dreams_`. Added them as `social-index-lead` rows; this lowers single-source risk but still does not confirm lineup, start time, ticket route, door price, or age policy. Keep as Watch until platform-native Instagram/XHS/WeChat, Wigwam, or ticketing verification confirms practical details.
+
+Second follow-up in the same queue:
+
+- `botox-fatale`: public search results surfaced an official Abyss Instagram June-program preview containing `BOTOX FATAL (LIVE)` plus `TUI`, `Kong BB`, and `Noodleprince`, but the snippet is adjacent to a separate Saturday June 27 C.U.M listing. Added it as `social-index-lead` only. Next check should enter Instagram through Abyss search/profile, open the visible June program post, and verify whether Botox Fatale is on Friday June 26, what support names are attached, and whether ticket or door details are visible.
+- `youshan-warmup`: public search results surfaced the official Wigwam Instagram route with `JUNE 27 @youshanmusicfestival` in June-program context. Added it as `social-index-lead` only because the warmup lineup, start time, ticket route, and door policy remain missing. Next check should use Wigwam / YOUSHAN platform-native Instagram, XHS, or WeChat search before opening any known deep link.
+
+Browser follow-up:
+
+- Instagram public-session check via Playwright/Chrome started at `https://www.instagram.com/`; the public homepage exposed language options but no usable platform search. Opening `abyss_shanghai` and `wigwam.live` account pages reached page titles and image placeholders only; both account navigations timed out before visible post text loaded. No event date card, lineup, ticket route, door price, set times, or June program body text was confirmed.
+- Keep `Abyss Instagram June 2026 program search preview` and `Wigwam Instagram June 2026 program search preview` as `social-index-lead`. Next practical step requires logged-in Chrome/Instagram platform-native search, or XHS/WeChat official-account search if Instagram remains gated. Do not promote either row based on public-session Instagram metadata alone.
+
+Workflow rule: search-index snippets can reveal where to look next, but they should not promote a Watch item. Use platform-native search or Chrome visual verification before treating Instagram/XHS/WeChat content as event-level confirmation.
+
+## 2026-06-14 Confirmation Source Audit
+
+Added a stricter Watch queue metric in `scripts/scrape-events.js` and `scripts/audit-events.js`: `sourceCount` counts all unique source URLs, while `confirmationSourceCount` counts only sources that can confirm the current event row. Social index previews, social leads, artist profiles, artist-itinerary context, previous-series context, venue context, radio context, and off-city festival context are excluded from confirmation counts.
+
+Current result after regeneration:
+
+- Future Watch rows: 19.
+- Single-source Watch rows by raw URL count: 5.
+- Single-confirmation-source Watch rows: 13.
+- High-priority Watch rows still needing a second event-level confirmation source: `jasmin-knopha`, `botox-fatale`, `anika-kunst`, `truth-lies`, and `youshan-warmup`.
+- `jaal` now shows 3 total sources and 2 confirmation sources, so it stays Watch for practical detail checks rather than source-count risk.
+
+Workflow rule: do not use profile links, social index snippets, previous editions, or venue/festival context to make a Watch item appear corroborated. Promote only after a direct current-event source confirms the relevant date, venue, lineup, ticket route, or official update.
+
+## 2026-06-14 Platform Verification Queue
+
+Added `quality.platformVerificationQueue` to `data/events.json` and a matching `scripts/audit-events.js` check. This queue is for Watch rows where a platform-bound lead exists, but the lead is still not a current-event confirmation source.
+
+Current result after regeneration:
+
+- Platform verification rows: 5.
+- Platform-bound source rows: 9.
+- High-priority rows now explicitly queued for platform-native checks: `jasmin-knopha`, `botox-fatale`, `anika-kunst`, and `youshan-warmup`.
+- Medium-priority row now explicitly queued: `liminal-dreams`.
+- All current platform leads are Instagram routes or search-index previews; `botox-fatale` and `youshan-warmup` carry browser evidence states that indicate logged-in or stronger visual checks are still required.
+
+Workflow rule: use the event-specific search queries in `quality.platformVerificationQueue` before opening known deep links. For Instagram, XHS, WeChat, Weibo, mini-program, or ticket-flow leads, record whether the visible account/post/page confirms the event title, absolute date, venue, lineup, ticket route, door price, set times, or age rule. If the browser only exposes profile metadata, search snippets, image placeholders, login walls, or timeouts, keep the source as a lead and keep the event on Watch.
+
+Follow-up platform check:
+
+- `botox-fatale`: public search still surfaced SmartShanghai plus Instagram search-index snippets, but no new non-social direct source. Playwright/Chrome opened an XHS search route for `Abyss Botox Fatale 6.26 Shanghai`; XHS redirected to `website-login/error` with `安全限制`, `IP at risk`, and error `300012`. Screenshot stored at `output/playwright/xhs-botox-security-limit.png`. Instagram platform search for `Abyss Botox Fatale 6.26 Shanghai` returned HTTP 429. No event post body, ticket route, door price, date card, support lineup, or set times were confirmed.
+- `youshan-warmup`: public search surfaced an additional jay_sarayu Instagram index preview reading `27.06: Youshan Festival Pre Party | Wigwam | Shanghai, CN`. Added it as `social-index-lead` only. It gives the next platform-native verification target, but it does not confirm official organizer approval, final lineup, start time, ticketing, door price, or age policy.
+- Current decision: keep both rows as Watch and keep their `confirmationSourceCount` at 1. Next useful check requires logged-in/user-assisted Instagram, XHS, WeChat official-account search, or a shareable Wigwam/YOUSHAN/Abyss/ticketing page.
+
+## 2026-06-14 DJ Lineup-Context Profiles
+
+Added conservative source-backed profiles for performers whose only reliable public context in this pass is an RA lineup role:
+
+- Bloom Season 1 Grand Final at EXIT: `DADA`, `Kazane`, `Tevez`, and `Yiyoo` now have lineup-context profiles sourced to RA. The copy distinguishes judges and MC roles from DJ bookings.
+- NEON JUNGLE at The Sukhothai Shanghai: `Tom Kynd`, `Psyche`, and `Mr Chang` now have RA-backed lineup profiles.
+- FRIENDSSTANDout at Wigwam: `Taidi` now has an RA-backed lineup profile.
+- HOUSE OF ZUP at ZUP Pizza Bar: `RB//SH`, `Yogijazz`, `Bolobolo`, `Gabrielle Lin`, `Rain Ling`, and `FLOATING` now have RA-backed lineup-only profiles. These profiles only confirm the June 14 event role/set window shown by RA and do not claim artist biographies.
+- Low-priority queue cleanup: `Tsing`, `ALI RIBO`, `SOLO (Enchanted Night listing)`, `DJ Rain`, `Chingyi`, `Chiyokoo`, `Golgol`, `Pei`, `Xiaolaba`, and `Wang Meng + Yu Miao` now have event-role profiles. These stay explicitly low-fit or lineup-context where the source is only SmartShanghai or a single RA event row.
+
+Workflow rule: a lineup-context profile is allowed when it makes source scope clearer, but it must not invent label affiliations, origin, biography, discography, or set format. If a later RA artist profile, official artist page, Bandcamp, SoundCloud, or venue/promoter page appears, upgrade the profile and keep the original RA event row as event evidence.
 
 ## 2026-06-11 Poster Asset Routine
 

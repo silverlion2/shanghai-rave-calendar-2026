@@ -848,3 +848,33 @@ Verification:
 - `npm run test:live-room-page` passed.
 - `npm run test:live-room` passed.
 - In-app browser checks confirmed the share popup opens, the local QR renders visually, centered status readouts align to their containers, action rows stay on one line, the message feed is above the composer, and `.room-discussion-messages` uses `overflow-y: auto` with a bounded max height.
+
+## 2026-06-14 Community Contribution Review Queue
+
+The user asked for a public way for community members to complete the database, including proposing additions to existing entries rather than only submitting new leads. The follow-up request asked to study Resident Advisor's community/promoter contribution model before finalizing.
+
+Implemented state:
+
+- Added `contribute.html` as a public source-backed contribution page.
+- The form supports `New lead` and `Add to existing` modes.
+- Existing-entry additions can target current events, DJs, or venues loaded from `data/dj-data.js`.
+- Submissions capture contributor role and optional affiliation so moderators can distinguish community members, promoters, venue teams, artists, and ticket/source contributors.
+- Browser submissions save locally first, then try the Supabase `community_contributions` review table.
+- Supabase rows store target metadata (`target_kind`, `target_id`, `target_label`) and contributor metadata without publishing directly to canonical event/DJ/venue data.
+- Added an idempotent target/role migration for projects that already applied the first community contribution table migration.
+- Navigation, sitemap, feature checks, docs, and tests now track the contribution page.
+
+Resident Advisor patterns mirrored:
+
+- Public event submission with staff approval before publishing.
+- Existing-event update flow rather than treating every contribution as a new event.
+- Separation between user identity, promoter/event roles, ticketing/admin roles, and source/editorial review.
+- Structured artist/venue/event targets to reduce duplicates and make updates reviewable.
+
+Verification:
+
+- `node scripts/check.js` passed.
+- `node --test tests/community-contributions.test.js` passed.
+- `npm run check` passed.
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs` passed with 0 findings.
+- Browser verification on desktop and mobile confirmed the mode switch, existing-entry target search, role/affiliation fields, local queue persistence, and responsive layout.

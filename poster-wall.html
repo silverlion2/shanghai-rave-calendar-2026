@@ -363,6 +363,30 @@
       -webkit-line-clamp: 4;
     }
 
+    .trust-inline {
+      width: max-content;
+      max-width: 100%;
+      min-height: 26px;
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid rgba(54,199,231,.42);
+      color: var(--cyan);
+      background: rgba(54,199,231,.08);
+      padding: 5px 8px;
+      text-decoration: none;
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .trust-inline:hover {
+      color: var(--void);
+      border-color: var(--cyan);
+      background: var(--cyan);
+    }
+
     .wall-chips {
       display: flex;
       flex-wrap: wrap;
@@ -568,6 +592,7 @@
       <a class="nav-link" href="love-wall.html">Love</a>
       <a class="nav-link" href="venues.html">Venues</a>
       <a class="nav-link" href="djs.html">DJs</a>
+      <a class="nav-link" href="contribute.html">Contribute</a>
       <a class="nav-link" href="account.html">Account</a>
       <a class="nav-link" href="live-room.html">Tonight <small class="nav-beta">beta</small></a>
       <a class="nav-link" href="planner.html">Planner <small class="nav-beta">beta</small></a>
@@ -647,6 +672,8 @@
       <div class="bar-cell source-cell">
         <span>Source first</span>
         <span>Rave second</span>
+        <a href="trust.html">How we recommend</a>
+        <a href="trust.html#corrections">Corrections</a>
       </div>
     </footer>
     <a class="admin-corner" data-admin-corner href="ops.html" aria-label="Admin sign in">admin</a>
@@ -659,6 +686,7 @@
         <button class="modal-back-button" type="button" id="posterModalBack" aria-label="Back to events">&lt;- Back to events</button>
         <h2 id="modalTitle"></h2>
         <p id="modalCopy"></p>
+        <div id="modalTrustPolicy"></div>
         <div class="modal-facts" id="modalFacts"></div>
         <div class="modal-actions">
           <a class="button" id="modalEventPage" href="#">Event page</a>
@@ -740,6 +768,10 @@
         .replace(/\bRA[-\s]+published\b/gi, "published")
         .replace(/\bRA\s+/g, "directory ")
         .replace(/\bRA\b/g, "directory");
+    }
+
+    function eventTrustLinkHtml() {
+      return '<a class="trust-inline" href="trust.html">How we recommend</a>';
     }
 
     function normalizeVenueName(value) {
@@ -907,6 +939,7 @@
               <h2>${escapeHtml(event.title)}</h2>
               <p class="wall-venue">${venueGuideLinkHtml(event.venue)} / ${escapeHtml(event.district)}</p>
               <p class="wall-description">${escapeHtml(publicText(event.description || ""))}</p>
+              ${eventTrustLinkHtml()}
               <div class="wall-chips">
                 <span class="wall-chip confidence">${escapeHtml(event.confidence)}</span>
                 ${eventSignalChips(event, 4).map(tag => `<span class="wall-chip">${escapeHtml(tag)}</span>`).join("")}
@@ -938,6 +971,7 @@
       document.getElementById("modalPoster").alt = visual.alt;
       document.getElementById("modalTitle").textContent = event.title;
       document.getElementById("modalCopy").textContent = publicText(event.description || "");
+      document.getElementById("modalTrustPolicy").innerHTML = eventTrustLinkHtml();
       document.getElementById("modalFacts").innerHTML = [
         ["Date", escapeHtml(`${event.date} / ${event.time}`)],
         ["Venue", `${venueGuideLinkHtml(event.venue)} / ${escapeHtml(event.district)}`],

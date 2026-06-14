@@ -51,7 +51,8 @@ function main() {
   url: ${JSON.stringify(url.replace(/\/+$/, ""))},
   anonKey: ${JSON.stringify(anonKey)},
   table: "love_wall_posts",
-  reactionTable: "love_wall_reactions"
+  reactionTable: "love_wall_reactions",
+  contributionTable: "community_contributions"
 };
 `;
 

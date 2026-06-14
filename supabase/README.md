@@ -9,10 +9,11 @@ This project has a Supabase-backed schema for the static Shanghai Rave Index dat
 - `poster_archive`, `source_checks`, `site_pages`
 - `love_wall_posts`
 - `subscriptions` for newsletter, Xiaohongshu-first, and alert-intent submissions
+- `community_contributions` for source-backed community event, DJ, venue, existing-entry addition, and correction leads
 - `profiles` for authenticated moderator/admin roles
 - `user_event_preferences`, `saved_events` for authenticated account personalization
 
-All tables have Row Level Security enabled. Public visitors can read published calendar data and approved Love Wall posts. Anonymous visitors can insert only pending Love Wall submissions and pending subscription requests. Imports and moderation use server-side credentials only.
+All tables have Row Level Security enabled. Public visitors can read published calendar data and approved Love Wall posts. Anonymous visitors can insert only pending Love Wall submissions, pending subscription requests, and pending community contribution leads. Contribution rows can identify a contributor role, optional affiliation, and a target event/DJ/venue entry, but remain pending until moderator/admin review. Imports and moderation use server-side credentials only.
 Authenticated account users can read and update only their own preference profile and saved event shortlist.
 
 ## Local Env
@@ -62,7 +63,9 @@ window.LOVE_WALL_SUPABASE = {
   enabled: true,
   url: "https://your-project-ref.supabase.co",
   anonKey: "your-publishable-or-anon-key",
-  table: "love_wall_posts"
+  table: "love_wall_posts",
+  reactionTable: "love_wall_reactions",
+  contributionTable: "community_contributions"
 };
 ```
 
