@@ -1052,6 +1052,37 @@ Validation:
 - `npm run check` passed.
 - `npm run check` passed with 52 tests.
 
+## 2026-06-14 Ticketing/Core Field Pass
+
+Continued the credibility goal after the venue-context pass. This was the second session after the last push, so the finished state should be committed and pushed to `main`.
+
+Implemented state:
+
+- Added `SCRAPE_NOW` support in `scripts/scrape-events.js` so date-sensitive regeneration can be reproduced against the editorial audit date. Used `SCRAPE_NOW=2026-06-14T12:00:00+08:00` for this round because the local shell had crossed into `2026-06-15` while the thread/editorial context was still the June 14 review pass.
+- Filled `jasmin-knopha.address` with SmartShanghai-backed Green Station / 462 Changle Lu venue context.
+- Added 247tickets to `cyber-buddha`, filled `ticketUrl`, filled the Star@ Cultural Center Dream Hall address, and changed `venueReconciliation.status` from `needs-reconcile` to `resolved-public-ticketing`.
+- Added tracked performer profiles for The Hymmapan Electron, Taiga, and MICO using SmartShanghai / 247tickets / artist-profile sources.
+- Preserved `botox-fatale`, `youshan-warmup`, `anika-kunst`, `truth-lies`, `devils-dancers`, and `hexscape` as Watch/public-source-gap rows where ticket/time/price/age or visual social confirmation remains missing.
+- Included the existing `new-to-techno.html` trust/education page and site-structure/nav updates in the release set because it is already wired into the website structure and strengthens beginner trust context.
+
+Current metrics after regeneration:
+
+- Future core-field queue rows: 24, down from 25.
+- Missing core fields: 65, down from 67.
+- Uncertain core fields: 4, down from 5.
+- Future performer missing profile sources: 6, down from 9.
+- Tracked DJ profiles: 89.
+
+Validation:
+
+- `node scripts\scrape-events.js` passed with `SCRAPE_NOW=2026-06-14T12:00:00+08:00`, 18 discovered links, and 69 curated updates.
+- `npm run seo` passed.
+- `node scripts\audit-events.js` passed.
+- `node --test tests\trust-framework.test.js` passed.
+- `node scripts\check.js` passed.
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json` passed with 0 findings.
+- `npm run check` passed with 57 tests.
+
 ## 2026-06-14 Liminal Dreams Watch Detail Upgrade
 
 The credibility pass continued after the RA poster push by reviewing the remaining Watch queue.

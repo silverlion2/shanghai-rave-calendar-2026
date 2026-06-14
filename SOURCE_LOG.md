@@ -287,3 +287,26 @@ Sources used in this pass:
 - SmartShanghai EXIT venue context: `https://www.smartshanghai.com/venue/31776/exit`
 
 Workflow rule: venue-context sources can fill `address`, but they must not be treated as current-event confirmation for start time, lineup, door price, ticket route, or age policy.
+
+## 2026-06-14 Ticketing/Core Field Pass
+
+Continued the core-field queue with public source evidence instead of inferred details.
+
+- `jasmin-knopha`: upgraded the address from an approximate Changle/Shaanxi Nan Lu note to `Green Station, 462 Changle Lu, near Shaanxi Nan Lu, Huangpu District` using SmartShanghai Green Station and prior Heim Sauna venue context. Time, price, age, ticket route, and Instagram post visibility remain `public-source-gap`.
+- `cyber-buddha`: added 247tickets as a public ticketing source and set the ticket URL to its e-ticket page. SmartShanghai and 247tickets both support Star@ Cultural Center Dream Hall / 179 Yichang Lu, so the RA venue-name discrepancy is now recorded as a source-label conflict rather than a blocking address gap.
+- Added tracked performer profiles for The Hymmapan Electron, Taiga, and MICO so Cyber Buddha's lineup has source-backed artist context instead of only event-page names.
+- Current generated state after regeneration: future core-field queue rows dropped from 25 to 24, missing core fields dropped from 67 to 65, uncertain core fields dropped from 5 to 4, and future performer profile gaps dropped from 9 to 6.
+
+Sources used in this pass:
+
+- SmartShanghai Green Station venue context: `https://www.smartshanghai.com/venue/34378/green_station`
+- SmartShanghai Butterfree / Heim Sauna context: `https://www.smartshanghai.com/event/butterfree-w-luxixi-bass-techno-club-music-2026-06-06`
+- SmartShanghai Cyber Buddha event: `https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1`
+- 247tickets The Hymmapan Electron: `https://www.247tickets.com/t/the-hymmapan-electron-shanghai`
+- Tuktuk Radio The Hymmapan Electron performance context: `https://www.youtube.com/watch?v=Wrwf5fj4zNI`
+- Star Wax Taiga profile: `https://www.starwaxmag.com/news/taiga`
+- WOMEX Taiga profile: `https://www.womex.com/virtual/more_zvukov_agency/taiga`
+- MICO Liu Wei Bandcamp release context: `https://e-werk.bandcamp.com/album/-`
+- Chinese electronic music profile context: `https://electronicmusicinformation.com/gw/index/article_details.html?drysaltery_id=4064`
+
+Workflow rule: when two current public ticketing/event sources agree on venue/address and RA preserves a different venue label, use the ticketing venue for planning fields and keep the discrepancy visible in `venueReconciliation`.
