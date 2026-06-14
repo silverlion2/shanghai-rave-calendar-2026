@@ -2328,6 +2328,7 @@
     const socialFusion = window.SOCIAL_FUSION || {};
     const socialRegistry = socialFusion.createSocialRegistry ? socialFusion.createSocialRegistry(window.SOCIAL_PROFILE_DATA || {}) : null;
     const dayMs = 24 * 60 * 60 * 1000;
+    const archiveCutoffHour = 6;
     const today = (() => {
       const now = new Date();
       const parts = Object.fromEntries(new Intl.DateTimeFormat("en-US", {
@@ -3387,8 +3388,9 @@
     }
 
     function formatStatusLabel(event) {
-      if (isFestival(event)) return event.status === "watch" ? "FESTIVAL WATCH" : "FESTIVAL";
-      return String(event.status || "event").toUpperCase();
+      const status = eventEffectiveStatus(event);
+      if (isFestival(event)) return status === "watch" ? "FESTIVAL WATCH" : "FESTIVAL";
+      return status.toUpperCase();
     }
 
     function programHighlightsFor(event) {
@@ -3486,6 +3488,33 @@
       return parseIsoDate(event.sortDate);
     }
 
+    function eventArchiveCutoff(event) {
+      const sortDate = String(event?.sortDate || "").slice(0, 10);
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(sortDate)) return null;
+      const cutoff = new Date(`${sortDate}T${String(archiveCutoffHour).padStart(2, "0")}:00:00+08:00`);
+      cutoff.setUTCDate(cutoff.getUTCDate() + 1);
+      return cutoff;
+    }
+
+    function eventIsPastByCutoff(event, now = new Date()) {
+      const cutoff = eventArchiveCutoff(event);
+      if (!cutoff) return String(event?.status || "").toLowerCase() === "past";
+      return now.getTime() >= cutoff.getTime();
+    }
+
+    function eventEffectiveStatus(event) {
+      const rawStatus = String(event?.status || "").toLowerCase();
+      if (eventIsPastByCutoff(event)) return "past";
+      if (rawStatus === "watch" || event?.confidence === "Watch") return "watch";
+      if (rawStatus && rawStatus !== "past") return rawStatus;
+      return "upcoming";
+    }
+
+    function eventIsUpcomingPick(event) {
+      const status = eventEffectiveStatus(event);
+      return status !== "past" && status !== "watch";
+    }
+
     function thisWeekendRange() {
       const mondayOffset = (today.getDay() + 6) % 7;
       const friday = addDays(today, 4 - mondayOffset);
@@ -3493,11 +3522,11 @@
     }
 
     function addedAtFor(event) {
-      return event.addedAt || (event.status === "past" ? "archive build" : verified);
+      return event.addedAt || (eventEffectiveStatus(event) === "past" ? "archive build" : verified);
     }
 
     function isNewlyAdded(event) {
-      if (!event.addedAt) return event.status !== "past";
+      if (!event.addedAt) return eventEffectiveStatus(event) !== "past";
       const added = parseIsoDate(event.addedAt);
       if (!added) return false;
       const ageInDays = Math.floor((today - added) / dayMs);
@@ -3507,13 +3536,13 @@
     function dateWindowMatches(event) {
       const date = eventDate(event);
       if (!date) return true;
-      if (dateWindow === "future") return date >= today;
-      if (dateWindow === "tonight") return sameDay(date, today);
+      if (dateWindow === "future") return !eventIsPastByCutoff(event);
+      if (dateWindow === "tonight") return sameDay(date, today) || (!eventIsPastByCutoff(event) && date < today);
       if (dateWindow === "weekend") {
         const [start, end] = thisWeekendRange();
         return date >= start && date <= end;
       }
-      if (dateWindow === "next30") return date >= today && date <= addDays(today, 30);
+      if (dateWindow === "next30") return !eventIsPastByCutoff(event) && date <= addDays(today, 30);
       if (dateWindow === "new") return isNewlyAdded(event);
       return true;
     }
@@ -3544,7 +3573,7 @@
 
     function sourceStatusFor(event) {
       if (event.sourceStatus) return event.sourceStatus;
-      if (event.status === "watch" || event.confidence === "Watch") return "watchlist";
+      if (eventEffectiveStatus(event) === "watch" || event.confidence === "Watch") return "watchlist";
       const sourceText = [event.source, event.sourceLabel].join(" ").toLowerCase();
       if (sourceText.includes("official") || sourceText.includes("anyma.com")) return "official";
       return "secondary";
@@ -3622,7 +3651,7 @@
     }
 
     function ticketLabelFor(event) {
-      if (event.status === "watch" || sourceStatusFor(event) === "watchlist") return "Verify tickets";
+      if (eventEffectiveStatus(event) === "watch" || sourceStatusFor(event) === "watchlist") return "Verify tickets";
       if (sourceStatusFor(event) === "official") return "Buy tickets";
       return "Tickets / buying info";
     }
@@ -3943,7 +3972,7 @@
           `LOCATION:${escapeIcs(`${row.event.venue}, ${row.event.district}, Shanghai`)}`,
           `DESCRIPTION:${escapeIcs(`DJ slot: ${setTimeRange(row.slot, row.event.time)}\nStatus: ${setTimeStatusLabel(row.slot)}\nEvent: ${row.event.title}\nSource layer: ${sourceStatusLabel(row.event)}\nLast checked: ${lastCheckedFor(row.event)}\nSource: ${row.event.source}`)}`,
           `URL:${row.event.source}`,
-          `STATUS:${row.event.status === "watch" ? "TENTATIVE" : "CONFIRMED"}`,
+          `STATUS:${eventEffectiveStatus(row.event) === "watch" ? "TENTATIVE" : "CONFIRMED"}`,
           "END:VEVENT"
         );
       });
@@ -4263,7 +4292,7 @@
           `LOCATION:${escapeIcs(`${event.venue}, ${event.district}, Shanghai`)}`,
           `DESCRIPTION:${escapeIcs(icsDescriptionFor(event))}`,
           `URL:${event.source}`,
-          `STATUS:${event.status === "watch" ? "TENTATIVE" : "CONFIRMED"}`,
+          `STATUS:${eventEffectiveStatus(event) === "watch" ? "TENTATIVE" : "CONFIRMED"}`,
           "END:VEVENT"
         );
       });
@@ -4327,7 +4356,7 @@
                   if (organizer) titleParts.push(`Organizer: ${organizer}`);
                   if (festival) titleParts.push("Festival / multi-event lead");
                   return `
-                    <article class="calendar-event ${event.status === "watch" ? "watch" : ""} ${festival ? "festival" : ""}" role="button" tabindex="0" data-id="${event.id}" title="${escapeHtml(titleParts.join(" / "))}">
+                    <article class="calendar-event ${eventEffectiveStatus(event) === "watch" ? "watch" : ""} ${festival ? "festival" : ""}" role="button" tabindex="0" data-id="${event.id}" title="${escapeHtml(titleParts.join(" / "))}">
                       <span class="calendar-event-venue">${venueGuideLinkHtml(event.venue)}</span>
                       <span class="calendar-event-title">${escapeHtml(event.title)}</span>
                       ${lineupLinks ? `<span class="calendar-event-lineup">${lineupLinks}</span>` : ""}
@@ -4466,7 +4495,7 @@
       const venue = venueFilter.value;
       const haystack = searchableText(event);
       if (!dateWindowMatches(event)) return false;
-      if (status !== "all" && event.status !== status) return false;
+      if (status !== "all" && eventEffectiveStatus(event) !== status) return false;
       if (vibe !== "all" && !event.vibe.includes(vibe) && !eventSoundTags(event).includes(vibe) && !eventDecisionTags(event).includes(vibe)) return false;
       if (!eventVenueGroupMatches(event, venue)) return false;
       if (query && !haystack.includes(query)) return false;
@@ -4634,7 +4663,7 @@
     function renderHighlights() {
       if (!highlightWall) return;
       const upcomingPosterEvents = events
-        .filter(event => event.status !== "past" && event.status !== "watch")
+        .filter(eventIsUpcomingPick)
         .sort((a, b) => a.sortDate.localeCompare(b.sortDate));
       const posterBacked = upcomingPosterEvents.filter(event => eventVisual(event).hasPoster);
       const highlights = [...posterBacked, ...upcomingPosterEvents.filter(event => !posterBacked.includes(event))]
@@ -4698,7 +4727,7 @@
         ["Sound", event.genre],
         ["Price", event.price],
         ["Age / ID", event.age],
-        ["Status", `${event.status} · ${event.confidence} confidence`],
+        ["Status", `${eventEffectiveStatus(event)} / ${event.confidence} confidence`],
         ["Last checked", lastCheckedFor(event)],
         ["Source count", `${sourceCountFor(event)} source${sourceCountFor(event) === 1 ? "" : "s"}`],
         ["Source layer", sourceStatusLabel(event)]
@@ -4894,7 +4923,7 @@
     function renderTodayLiveRooms() {
       if (!todayLiveRoomsEl) return;
       eventLiveRooms = liveRoomHelper && typeof liveRoomHelper.todayEventRooms === "function"
-        ? liveRoomHelper.todayEventRooms(events, today)
+        ? liveRoomHelper.todayEventRooms(events, today, new Date())
         : [];
       updateTodayLiveRoomStatus();
       if (!eventLiveRooms.length) {
@@ -5033,7 +5062,7 @@
         tonightStamp.textContent = `${weekdayLabel(today)} ${today.toLocaleString("en-US", { timeZone: "Asia/Shanghai", month: "short", day: "numeric" }).toUpperCase()}`;
       }
       const upcoming = events
-        .filter(event => event.status !== "past" && event.status !== "watch")
+        .filter(eventIsUpcomingPick)
         .sort((a, b) => a.sortDate.localeCompare(b.sortDate));
       const tonight = upcoming.filter(event => eventDate(event).toDateString() === today.toDateString()).slice(0, 2);
       const weekend = upcoming.filter(event => {
@@ -5062,7 +5091,7 @@
       const planningEvents = events
         .filter(eventMatches)
         .filter(event => event.month === activeMonth)
-        .filter(event => dateWindow !== "all" || eventDate(event) >= today)
+        .filter(event => dateWindow !== "all" || !eventIsPastByCutoff(event))
         .sort((a, b) => parseEventDateTime(a).start - parseEventDateTime(b).start)
         .slice(0, 10);
 
@@ -5123,7 +5152,7 @@
 
     function updateStats() {
       const visible = events.filter(eventMatches);
-      const upcoming = events.filter(event => event.status === "upcoming" || event.status === "watch").length;
+      const upcoming = events.filter(event => eventEffectiveStatus(event) === "upcoming" || eventEffectiveStatus(event) === "watch").length;
       const top = events.filter(event => event.confidence === "High" && (event.vibe.includes("hard") || event.vibe.includes("underground"))).length;
       document.getElementById("statEvents").textContent = events.length;
       document.getElementById("statUpcoming").textContent = upcoming;

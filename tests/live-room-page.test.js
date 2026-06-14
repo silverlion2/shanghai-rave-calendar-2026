@@ -35,7 +35,7 @@ test("live room has a dedicated page outside the calendar layout", () => {
   assert.doesNotMatch(liveRoom, /data-live-room-talk-form/);
   assert.doesNotMatch(liveRoom, /data-live-room-message-input/);
   assert.match(liveRoom, /What happens in this room stays in this room\./);
-  assert.match(liveRoom, /This room closes automatically at 12:00 noon the next day\./);
+  assert.match(liveRoom, /This room closes automatically at 06:00 the next morning\./);
   assert.match(liveRoom, /Cherish the moment\./);
 
   assert.match(index, /href="live-room\.html"/);
@@ -92,7 +92,7 @@ test("room discussion lives on a separate anonymous page", () => {
   assert.match(discussion, /room-discussion-policy/);
   assert.match(discussion, /Room intro/);
   assert.match(discussion, /What happens in this room stays in this room\./);
-  assert.match(discussion, /This room closes automatically at 12:00 noon the next day\./);
+  assert.match(discussion, /This room closes automatically at 06:00 the next morning\./);
   assert.match(discussion, /Contact info and social links are welcome\./);
   assert.match(discussion, /Politics, obvious ads, and harmful content are soft-blocked\./);
   assert.match(discussion, /eventLiveRoomFromEvent/);

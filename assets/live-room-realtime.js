@@ -250,7 +250,7 @@
   function roomClosesAt(room) {
     const sortDate = isoDateForDay(room && (room.sortDate || room.date));
     if (!sortDate) return "";
-    const closeDate = new Date(`${sortDate}T12:00:00+08:00`);
+    const closeDate = new Date(`${sortDate}T06:00:00+08:00`);
     closeDate.setUTCDate(closeDate.getUTCDate() + 1);
     return shanghaiOffsetIso(closeDate);
   }

@@ -878,3 +878,22 @@ Verification:
 - `npm run check` passed.
 - `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs` passed with 0 findings.
 - Browser verification on desktop and mobile confirmed the mode switch, existing-entry target search, role/affiliation fields, local queue persistence, and responsive layout.
+
+## 2026-06-14 Event Archive Cutoff Moved to 06:00
+
+The user noticed homepage highlights could keep showing events as upcoming even after the event date, while many Shanghai club nights continue into the next morning. Decision: treat events as current until 06:00 Asia/Shanghai on the morning after `sortDate`, then archive them.
+
+Implemented state:
+
+- Homepage and mirror calendar filtering now calculate an effective status from `sortDate + 1 day 06:00 +08:00` instead of trusting stale `status` fields alone.
+- Homepage highlights, dispatch panels, status filters, stats, set planner eligibility, and ICS tentative/confirmed status use the effective status.
+- Tonight room links now stay open until next-day 06:00, with public copy changed from "12:00 noon" to "06:00 the next morning".
+- `scripts/scrape-events.js` normalizes event status with the same 06:00 cutoff when refreshing canonical data.
+
+Verification:
+
+- `node --test tests/live-room-realtime.test.js` passed.
+- `node --test tests/live-room-page.test.js` passed.
+- `node scripts/check.js` passed.
+- `npm run check` passed.
+- Browser verification on `index.html` confirmed Jun 12 and Jun 13 events no longer appear in homepage highlights after the Jun 14 06:00 cutoff.

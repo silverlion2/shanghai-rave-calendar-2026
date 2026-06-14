@@ -15,6 +15,7 @@ const TRACKED_DJ_PROFILES_FILE = path.join(ROOT, "config", "tracked-dj-profiles.
 const RA_SHANGHAI_COVERAGE_FILE = path.join(ROOT, "config", "ra-shanghai-coverage.json");
 const TIME_ZONE = "Asia/Shanghai";
 const CURRENT_YEAR = 2026;
+const ARCHIVE_CUTOFF_HOUR = 6;
 const USER_AGENT = "ShanghaiRaveCalendar/1.0 (+https://github.com/) public-event-refresh";
 const REQUEST_DELAY_MS = Number(process.env.SCRAPE_DELAY_MS || 300);
 const FETCH_TIMEOUT_MS = Number(process.env.SCRAPE_FETCH_TIMEOUT_MS || 8000);
@@ -209,6 +210,21 @@ function shanghaiDateString(date = new Date()) {
     day: "2-digit",
   }).formatToParts(date).filter(part => part.type !== "literal").map(part => [part.type, part.value]));
   return `${parts.year}-${parts.month}-${parts.day}`;
+}
+
+function eventArchiveCutoff(sortDate) {
+  const dateKey = String(sortDate || "").slice(0, 10);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(dateKey)) return null;
+  const cutoff = new Date(`${dateKey}T${String(ARCHIVE_CUTOFF_HOUR).padStart(2, "0")}:00:00+08:00`);
+  cutoff.setUTCDate(cutoff.getUTCDate() + 1);
+  return cutoff;
+}
+
+function eventIsPastByCutoff(sortDate, now = new Date()) {
+  const cutoff = eventArchiveCutoff(sortDate);
+  if (!cutoff) return false;
+  const nowTime = now instanceof Date ? now.getTime() : new Date(now).getTime();
+  return Number.isFinite(nowTime) && nowTime >= cutoff.getTime();
 }
 
 function sleep(ms) {
@@ -769,10 +785,12 @@ function displayTime(startDate) {
   return time ? `${time[1]}:${time[2]}` : "Check source";
 }
 
-function eventStatus(sortDate, confidence) {
-  const today = shanghaiDateString();
-  if (sortDate < today) return "past";
-  return confidence === "Watch" ? "watch" : "upcoming";
+function eventStatus(sortDate, confidence, currentStatus = "", now = new Date()) {
+  const status = String(currentStatus || "").toLowerCase();
+  if (eventIsPastByCutoff(sortDate, now)) return "past";
+  if (status === "watch" || confidence === "Watch") return "watch";
+  if (status && status !== "past") return status;
+  return "upcoming";
 }
 
 function sourceLabelFor(url) {
@@ -1016,6 +1034,7 @@ function normalizeEvent(event, sourceChecks) {
   normalized.sourceLabel = normalized.sourceLabel || sourceLabelFor(normalized.source);
   normalized.description = cleanText(normalized.description || `Public event listing from ${normalized.sourceLabel}.`);
   normalized.imageTheme = normalized.imageTheme || imageThemeFor(normalized.title);
+  normalized.status = eventStatus(normalized.sortDate, normalized.confidence, normalized.status);
   normalized.sourceStatus = normalized.sourceStatus || (normalized.status === "watch" || normalized.confidence === "Watch" ? "watchlist" : "secondary");
   normalized.lastChecked = normalized.lastChecked || sourceChecks.get(normalized.source)?.lastChecked || "2026-06-08";
   normalized.sources = Array.isArray(normalized.sources) && normalized.sources.length ? normalized.sources : [{

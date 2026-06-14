@@ -541,7 +541,7 @@
   <script src="assets/love-wall-supabase-config.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="assets/qrcode-generator.js"></script>
-  <script src="assets/live-room-realtime.js?v=room-noon-close-20260614"></script>
+  <script src="assets/live-room-realtime.js?v=room-6am-close-20260614"></script>
 </head>
 <body data-current-date="2026-06-13">
   <main class="shell dispatch-shell room-discussion-page">
@@ -568,7 +568,7 @@
           <p class="kicker">Anonymous / tonight only</p>
           <h1 id="roomDiscussionTitle">Room Discussion</h1>
           <span class="dispatch-strip" id="roomDiscussionMeta">Pick a room from Tonight Rooms</span>
-          <p id="roomDiscussionIntro">Room talk is anonymous, room-scoped, and closes at 12:00 noon the next day.</p>
+          <p id="roomDiscussionIntro">Room talk is anonymous, room-scoped, and closes at 06:00 the next morning.</p>
         </div>
       </header>
 
@@ -966,7 +966,7 @@
       roomDiscussionTitle.textContent = room ? room.title : "Room Discussion";
       roomDiscussionMeta.textContent = room ? `${room.venue} / ${room.time}` : "Pick a room from Tonight Rooms";
       roomDiscussionIntro.textContent = room
-        ? "Anonymous room talk closes at 12:00 noon the next day."
+        ? "Anonymous room talk closes at 06:00 the next morning."
         : "Open a tonight room first, then enter discussion.";
       discussionEventLink.href = room ? `events/${encodeURIComponent(room.eventId)}.html` : "live-room.html";
       discussionEventLink.textContent = room ? "Event page" : "Tonight rooms";
@@ -1006,7 +1006,7 @@
             <b>Room intro</b>
             <span>Policy / first read</span>
           </div>
-          <p>What happens in this room stays in this room. Anonymous signals stay inside this room. This room closes automatically at 12:00 noon the next day. Cherish the moment.</p>
+          <p>What happens in this room stays in this room. Anonymous signals stay inside this room. This room closes automatically at 06:00 the next morning. Cherish the moment.</p>
           <p>Contact info and social links are welcome. Sharing your page, crew, afters, rides, tickets, or phone number is okay. Politics, obvious ads, and harmful content are soft-blocked.</p>
         </article>
       `;
@@ -1050,7 +1050,7 @@
             <label for="${escapeHtml(inputId)}">Message</label>
             <textarea id="${escapeHtml(inputId)}" data-live-room-message-input="${escapeHtml(room.eventId)}" rows="2" maxlength="220" placeholder="${closed ? "Room closed. Read only." : "Say it before the room closes."}" ${closed ? "disabled" : ""}></textarea>
             <div class="room-discussion-talk-row">
-              <span>${closed ? "This room closed at 12:00 noon the next day." : "Anonymous, room-scoped, closes at 12:00 noon tomorrow."}</span>
+              <span>${closed ? "This room closed at 06:00 the next morning." : "Anonymous, room-scoped, closes at 06:00 tomorrow morning."}</span>
               <button class="room-discussion-submit" type="submit" ${closed ? "disabled" : ""}>${closed ? "Closed" : "Send"}</button>
             </div>
           </form>
