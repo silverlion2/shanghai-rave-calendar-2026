@@ -1932,6 +1932,8 @@ body:has(.calendar-shell) .signal-canvas {
   overflow: hidden;
   border: 1px solid rgba(229, 222, 209, .34);
   background: #070808;
+  background-position: center;
+  background-size: cover;
   color: var(--ink);
   padding: 12px;
   text-align: left;

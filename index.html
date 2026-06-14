@@ -4684,8 +4684,9 @@
           ${highlights.map(event => {
             const visual = eventVisual(event);
             const organizer = knownOrganizerFor(event);
+            const fallback = posterSvg(event);
             return `
-              <button class="highlight-card" type="button" data-id="${event.id}">
+              <button class="highlight-card" type="button" data-id="${event.id}" style="background-image: url('${escapeHtml(fallback)}')">
                 <img src="${escapeHtml(visual.src)}" alt="${escapeHtml(visual.alt)}" loading="eager" decoding="async" fetchpriority="high">
                 <span class="highlight-date">${escapeHtml(compactEventDate(event).split(" ").join("\n"))}</span>
                 <b>${escapeHtml(event.title)}</b>

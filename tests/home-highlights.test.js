@@ -81,3 +81,13 @@ test("homepage first-viewport images are loaded eagerly", () => {
     assert.match(renderHighlights, /<img src="\$\{escapeHtml\(visual\.src\)\}"[^>]*loading="eager"[^>]*fetchpriority="high"/);
   }
 });
+
+test("homepage highlight cards paint a fallback poster before poster images decode", () => {
+  for (const file of calendarFiles) {
+    const html = readSiteFile(file);
+    const renderHighlights = extractFunction(html, "renderHighlights");
+
+    assert.match(renderHighlights, /const fallback = posterSvg\(event\);/);
+    assert.match(renderHighlights, /style="background-image: url\('\$\{escapeHtml\(fallback\)\}'\)"/);
+  }
+});
