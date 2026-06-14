@@ -101,3 +101,24 @@ test("homepage desktop layout groups planning panels in the left rail", () => {
     assert.ok(main.indexOf('id="monthRail"') < main.indexOf('id="calendar"'), `${file} should place month rail before the calendar`);
   }
 });
+
+test("narrow desktop homepage layout avoids crushed highlight and rail columns", () => {
+  const css = readSiteFile("assets/basement-dispatch.css");
+
+  assert.match(
+    css,
+    /@media\s*\(min-width:\s*1100px\)\s*\{[\s\S]*?\.calendar-shell\s+\.calendar-left-rail\s*\{[^}]*grid-template-columns:\s*minmax\(0,\s*1fr\)/i,
+  );
+  assert.match(
+    css,
+    /@media\s*\(min-width:\s*1100px\)\s*and\s*\(max-width:\s*1399px\)\s*\{[\s\S]*?\.calendar-shell\s+\.highlight-list\s*\{[^}]*grid-auto-flow:\s*column/i,
+  );
+  assert.match(
+    css,
+    /@media\s*\(min-width:\s*1100px\)\s*and\s*\(max-width:\s*1399px\)\s*\{[\s\S]*?\.calendar-shell\s+\.highlight-list\s*\{[^}]*grid-auto-columns:\s*minmax\(168px,\s*24vw\)/i,
+  );
+  assert.match(
+    css,
+    /@media\s*\(min-width:\s*1100px\)\s*and\s*\(max-width:\s*1399px\)\s*\{[\s\S]*?\.calendar-shell\s+\.highlight-list\s*\{[^}]*overflow-x:\s*auto/i,
+  );
+});

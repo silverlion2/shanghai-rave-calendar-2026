@@ -2393,6 +2393,7 @@ body:has(.calendar-shell) .signal-canvas {
   .calendar-shell .calendar-left-rail {
     order: 0;
     display: grid;
+    grid-template-columns: minmax(0, 1fr);
     gap: 10px;
     align-self: start;
     margin: 0;
@@ -2750,5 +2751,21 @@ body:has(.calendar-shell) .signal-canvas {
     margin-top: 0;
     border: 1px solid rgba(229, 222, 209, .2);
     padding: 14px;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1399px) {
+  .calendar-shell .highlight-list {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(168px, 24vw);
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    padding-bottom: 8px;
+  }
+
+  .calendar-shell .highlight-card {
+    scroll-snap-align: start;
   }
 }
