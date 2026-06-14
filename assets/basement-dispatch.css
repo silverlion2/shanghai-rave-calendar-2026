@@ -358,6 +358,11 @@ h2,
   opacity: .95 !important;
 }
 
+.calendar-shell .hero-picture img {
+  filter: saturate(1.18) contrast(1.08) brightness(.92) !important;
+  opacity: 1 !important;
+}
+
 .hero-picture::after,
 .hero-picture figcaption {
   border-radius: 0 !important;
@@ -1770,6 +1775,7 @@ body:has(.calendar-shell) .signal-canvas {
   order: 1;
   display: grid;
   gap: 14px;
+  width: 100%;
   min-width: 0;
 }
 
@@ -1788,6 +1794,70 @@ body:has(.calendar-shell) .signal-canvas {
 
 .calendar-main-column .layout {
   grid-template-columns: minmax(0, 1fr);
+}
+
+.calendar-main-column .controls,
+.calendar-main-column .month-rail,
+.calendar-main-column .layout,
+.calendar-main-column #calendar {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 1099px) {
+  .calendar-shell .calendar-left-rail {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (min-width: 820px) and (max-width: 1099px) {
+  .calendar-shell .calendar-workbench {
+    display: grid;
+    grid-template-columns: minmax(250px, 32vw) minmax(0, 1fr);
+    gap: 16px 18px;
+    align-items: start;
+  }
+
+  .calendar-shell .calendar-left-rail {
+    order: 0;
+    display: grid;
+    gap: 10px;
+    align-self: start;
+    margin: 0;
+  }
+
+  .calendar-shell .calendar-main-column {
+    order: 0;
+    display: grid;
+    gap: 14px;
+    min-width: 0;
+  }
+
+  .calendar-shell .controls {
+    grid-template-columns: minmax(210px, 1.35fr) repeat(2, minmax(130px, .85fr)) !important;
+    margin-top: 0;
+  }
+
+  .calendar-shell .controls .filter-field:first-of-type {
+    grid-column: auto;
+  }
+
+  .calendar-shell .controls .filter-field:nth-of-type(4) {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 819px) {
+  .calendar-shell .controls {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr) !important;
+  }
+
+  .calendar-shell .control-header,
+  .calendar-shell .quick-actions,
+  .calendar-shell .filter-field:first-of-type,
+  .calendar-shell .controls .filter-field:nth-of-type(4) {
+    grid-column: auto !important;
+  }
 }
 
 .highlight-heading {
@@ -2199,7 +2269,10 @@ body:has(.calendar-shell) .signal-canvas {
   }
 
   .calendar-shell .hero-picture {
-    display: none;
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-top: 22px;
   }
 
   .calendar-shell .kicker {

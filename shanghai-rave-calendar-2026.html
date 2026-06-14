@@ -2140,14 +2140,9 @@
         <h1>Shanghai Rave Index</h1>
         <p class="dispatch-strip">Basement Dispatch / sourced, not sponsored</p>
         <p class="subhead">Rave-first listings across techno, warehouse, industrial, bass, house, trance, experimental club, and more. No fluff. Know where to go.</p>
-        <div class="hero-actions" aria-label="Primary actions">
-          <a class="hero-button primary" href="#calendar">See upcoming events</a>
-          <a class="hero-button secondary" href="new-to-techno.html">New to techno?</a>
-          <a class="hero-button secondary" href="planner.html">Plan your night</a>
-        </div>
       </div>
-      <figure class="hero-picture" aria-label="Basement Dispatch poster wall visual">
-        <img src="assets/posters/santa-k-optimized.jpg" alt="Basement Dispatch poster wall detail" loading="lazy" decoding="async">
+      <figure class="hero-picture" aria-label="Cyberpunk Shanghai skyline">
+        <img src="assets/shanghai-cyberpunk-skyline-hero.webp" alt="Cyberpunk-style Shanghai skyline at night" loading="lazy" decoding="async">
       </figure>
     </header>
 
@@ -2264,13 +2259,6 @@
     </section>
 
     <section class="home-poster-rail" id="homePosterRail" aria-label="Poster-only event strip"></section>
-
-    <section class="stats" aria-label="Calendar statistics">
-      <div class="stat"><b id="statEvents">0</b><span>sourced events and leads across 2026</span></div>
-      <div class="stat"><b id="statUpcoming">0</b><span>upcoming confirmed or single-source entries after June 11</span></div>
-      <div class="stat"><b id="statTop">0</b><span>high-confidence rave and underground picks</span></div>
-      <div class="stat"><b>6</b><span>late-year watchlist months without reliable full calendars yet</span></div>
-    </section>
 
     <footer class="footnotes bottom-dispatch-bar" aria-label="Basement Dispatch status">
       <div class="bar-cell update-cell">
@@ -4545,7 +4533,7 @@
       calendarEl.querySelectorAll(".event-link, .calendar-event").forEach(link => {
         link.addEventListener("click", event => event.stopPropagation());
       });
-      updateStats();
+      updateCalendarState();
       renderHighlights();
       renderHomePosterRail(visibleEvents);
       renderDispatchPanels();
@@ -5168,13 +5156,8 @@
       }).join("");
     }
 
-    function updateStats() {
+    function updateCalendarState() {
       const visible = events.filter(eventMatches);
-      const upcoming = events.filter(event => eventEffectiveStatus(event) === "upcoming" || eventEffectiveStatus(event) === "watch").length;
-      const top = events.filter(event => event.confidence === "High" && (event.vibe.includes("hard") || event.vibe.includes("underground"))).length;
-      document.getElementById("statEvents").textContent = events.length;
-      document.getElementById("statUpcoming").textContent = upcoming;
-      document.getElementById("statTop").textContent = top;
       if (filterSummary) {
         const entryLabel = visible.length === 1 ? "entry" : "entries";
         const activeMonthCount = activeMonth ? visible.filter(event => event.month === activeMonth).length : visible.length;

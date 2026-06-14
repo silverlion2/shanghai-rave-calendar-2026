@@ -55,12 +55,6 @@ function secondaryDispatchHtmlFiles(structure) {
     .map(page => page.file);
 }
 
-function homepageCalendarHtmlFiles(structure) {
-  return [...pages(structure), ...mirrors(structure)]
-    .filter(page => page.file && page.homepageStats)
-    .map(page => page.file);
-}
-
 function externalJsFiles(structure) {
   return Array.isArray(structure.sharedAssets?.externalJs) ? structure.sharedAssets.externalJs : [];
 }
@@ -216,7 +210,6 @@ module.exports = {
   syntaxOnlyHtmlFiles,
   sharedDispatchHtmlFiles,
   secondaryDispatchHtmlFiles,
-  homepageCalendarHtmlFiles,
   externalJsFiles,
   primaryNavPages,
   sitemapPages,

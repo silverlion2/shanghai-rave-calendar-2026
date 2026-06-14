@@ -8,7 +8,6 @@ const {
   syntaxOnlyHtmlFiles: trackedSyntaxOnlyHtmlFiles,
   sharedDispatchHtmlFiles: trackedSharedDispatchHtmlFiles,
   secondaryDispatchHtmlFiles: trackedSecondaryDispatchHtmlFiles,
-  homepageCalendarHtmlFiles: trackedHomepageCalendarHtmlFiles,
   externalJsFiles: trackedExternalJsFiles,
   sitemapPages,
   canonicalUrl,
@@ -23,7 +22,6 @@ const googleTrackedHtmlFiles = [...htmlFiles, ...syntaxOnlyHtmlFiles];
 const expectedGoogleTagId = websiteStructure.site.googleTagId;
 const sharedDispatchHtmlFiles = trackedSharedDispatchHtmlFiles(websiteStructure);
 const secondaryDispatchHtmlFiles = trackedSecondaryDispatchHtmlFiles(websiteStructure);
-const homepageCalendarHtmlFiles = trackedHomepageCalendarHtmlFiles(websiteStructure);
 const externalJsFiles = trackedExternalJsFiles(websiteStructure);
 const siteUrl = websiteStructure.site.baseUrl;
 const ROOT = process.cwd();
@@ -483,25 +481,6 @@ function assertNoPosterArchiveLinks(file, html) {
   }
 }
 
-function assertHomepageStatsPlacement(file, html) {
-  const statsIndex = html.indexOf('<section class="stats" aria-label="Calendar statistics">');
-  const highlightIndex = html.indexOf('<section class="highlight-wall"');
-  const footerIndex = html.indexOf('<footer class="footnotes bottom-dispatch-bar"');
-
-  if (statsIndex === -1) {
-    throw new Error(`${file} missing calendar statistics strip`);
-  }
-  if (highlightIndex === -1) {
-    throw new Error(`${file} missing highlight wall`);
-  }
-  if (footerIndex === -1) {
-    throw new Error(`${file} missing bottom dispatch bar`);
-  }
-  if (!(highlightIndex < statsIndex && statsIndex < footerIndex)) {
-    throw new Error(`${file} must place calendar statistics after the highlight wall and directly above the bottom dispatch bar`);
-  }
-}
-
 function generatedEventPageGraph(file, html) {
   const nodes = jsonLdBlocks(file, html)
     .flatMap(block => {
@@ -771,10 +750,6 @@ assertWebsiteStructure();
 const localLinkSummary = assertLocalLinkIntegrity();
 assertStaticDataFetchCaching();
 
-for (const file of homepageCalendarHtmlFiles) {
-  assertHomepageStatsPlacement(file, fs.readFileSync(file, "utf8"));
-}
-
 for (const file of [...htmlFiles, ...syntaxOnlyHtmlFiles]) {
   const html = fs.readFileSync(file, "utf8");
   const scripts = Array.from(html.matchAll(scriptPattern), match => match[1]);
@@ -804,9 +779,6 @@ for (const file of sharedDispatchHtmlFiles) {
   assertRootDispatchFormat(file, html);
   assertNoDuplicateEventsIndexLinks(file, html);
   assertNoPosterArchiveLinks(file, html);
-  if (homepageCalendarHtmlFiles.includes(file)) {
-    assertHomepageStatsPlacement(file, html);
-  }
 }
 
 for (const file of externalJsFiles) {

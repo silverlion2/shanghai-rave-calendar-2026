@@ -38,8 +38,7 @@
       "shell": "calendar-shell",
       "includeInSitemap": true,
       "changefreq": "daily",
-      "priority": "1.0",
-      "homepageStats": true
+      "priority": "1.0"
     },
     {
       "id": "new-to-techno",
@@ -196,8 +195,7 @@
       "file": "shanghai-rave-calendar-2026.html",
       "mirrors": "calendar",
       "syntaxOnly": true,
-      "shell": "calendar-shell",
-      "homepageStats": true
+      "shell": "calendar-shell"
     }
   ],
   "generatedCollections": [
