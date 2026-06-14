@@ -71,3 +71,13 @@ test("highlight rendering uses the chronological helper without poster-first reo
     assert.doesNotMatch(renderHighlights, /posterBacked/);
   }
 });
+
+test("homepage first-viewport images are loaded eagerly", () => {
+  for (const file of calendarFiles) {
+    const html = readSiteFile(file);
+    const renderHighlights = extractFunction(html, "renderHighlights");
+
+    assert.match(html, /assets\/shanghai-cyberpunk-skyline-hero\.webp"[^>]*loading="eager"[^>]*fetchpriority="high"/);
+    assert.match(renderHighlights, /<img src="\$\{escapeHtml\(visual\.src\)\}"[^>]*loading="eager"[^>]*fetchpriority="high"/);
+  }
+});

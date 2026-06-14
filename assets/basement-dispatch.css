@@ -2769,3 +2769,38 @@ body:has(.calendar-shell) .signal-canvas {
     scroll-snap-align: start;
   }
 }
+
+@media (min-width: 1680px) {
+  .calendar-shell {
+    width: min(2160px, calc(100% - 64px)) !important;
+    grid-template-columns: 360px minmax(0, 1fr);
+    gap: 14px 28px;
+  }
+
+  .calendar-shell .calendar-workbench {
+    grid-template-columns: 360px minmax(0, 1fr);
+    gap: 18px 28px;
+  }
+
+  .calendar-shell .topbar,
+  .calendar-shell .calendar-left-rail {
+    width: 360px;
+  }
+
+  .calendar-shell h1 {
+    max-width: 350px;
+    font-size: 78px !important;
+  }
+
+  .calendar-shell .subhead {
+    max-width: 330px !important;
+  }
+
+  .calendar-shell .highlight-card {
+    min-height: 320px;
+  }
+
+  .calendar-shell .poster-strip {
+    grid-auto-columns: minmax(198px, 260px);
+  }
+}

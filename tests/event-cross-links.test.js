@@ -122,3 +122,20 @@ test("narrow desktop homepage layout avoids crushed highlight and rail columns",
     /@media\s*\(min-width:\s*1100px\)\s*and\s*\(max-width:\s*1399px\)\s*\{[\s\S]*?\.calendar-shell\s+\.highlight-list\s*\{[^}]*overflow-x:\s*auto/i,
   );
 });
+
+test("ultrawide homepage layout uses the available desktop width", () => {
+  const css = readSiteFile("assets/basement-dispatch.css");
+
+  assert.match(
+    css,
+    /@media\s*\(min-width:\s*1680px\)\s*\{[\s\S]*?\.calendar-shell\s*\{[^}]*width:\s*min\(2160px,\s*calc\(100%\s*-\s*64px\)\)/i,
+  );
+  assert.match(
+    css,
+    /@media\s*\(min-width:\s*1680px\)\s*\{[\s\S]*?\.calendar-shell\s*\{[^}]*grid-template-columns:\s*360px minmax\(0,\s*1fr\)/i,
+  );
+  assert.match(
+    css,
+    /@media\s*\(min-width:\s*1680px\)\s*\{[\s\S]*?\.calendar-shell\s+\.calendar-workbench\s*\{[^}]*grid-template-columns:\s*360px minmax\(0,\s*1fr\)/i,
+  );
+});

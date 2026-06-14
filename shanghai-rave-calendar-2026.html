@@ -2142,7 +2142,7 @@
         <p class="subhead">Rave-first listings across techno, warehouse, industrial, bass, house, trance, experimental club, and more. No fluff. Know where to go.</p>
       </div>
       <figure class="hero-picture" aria-label="Cyberpunk Shanghai skyline">
-        <img src="assets/shanghai-cyberpunk-skyline-hero.webp" alt="Cyberpunk-style Shanghai skyline at night" loading="lazy" decoding="async">
+        <img src="assets/shanghai-cyberpunk-skyline-hero.webp" alt="Cyberpunk-style Shanghai skyline at night" loading="eager" decoding="async" fetchpriority="high">
       </figure>
     </header>
 
@@ -4685,7 +4685,7 @@
             const organizer = knownOrganizerFor(event);
             return `
               <button class="highlight-card" type="button" data-id="${event.id}">
-                <img src="${escapeHtml(visual.src)}" alt="${escapeHtml(visual.alt)}" loading="lazy" decoding="async">
+                <img src="${escapeHtml(visual.src)}" alt="${escapeHtml(visual.alt)}" loading="eager" decoding="async" fetchpriority="high">
                 <span class="highlight-date">${escapeHtml(compactEventDate(event).split(" ").join("\n"))}</span>
                 <b>${escapeHtml(event.title)}</b>
                 <small>${escapeHtml(event.venue)}${organizer ? ` / ${escapeHtml(organizer)}` : ""}</small>
