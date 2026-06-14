@@ -180,12 +180,28 @@ After the poster rendering issue, the daily scrape/Computer Use routine treats p
 
 1. Record `posterEvidence` with the public event page or screenshot source, including source URL and evidence status.
 2. Download the actual flyer into `assets/posters/` and set `posterUrl` to that local file in `config/curated-events.json`; generated `data/events.json` must carry the same local path.
+3. When RA exposes front/back or multiple event-relevant flyer images, download all of them as local reference files and list them in `posterEvidence.localFiles`. The public card may use only the front image, but the back/reference image should still be preserved for audit and OCR work.
 
 Do not use remote `images.ra.co` URLs in the UI. RA image hosts can block browsers or load inconsistently, which makes cards look like black/default posters. If a direct image download is slow or blocked, use Chrome/Computer Use, the source page image, or a verified source-hosted image and save the final file locally.
+
+2026-06-14 RA poster follow-up:
+
+- Downloaded RA front/back flyer references for `dirty-beats`, `19hz-fractale`, `nightwave`, and `sunkissed` into `assets/posters/`.
+- Main `posterUrl` files: `dirty-beats.png`, `19hz-fractale.jpg`, `nightwave.jpg`, `sunkissed.jpg`.
+- Back/reference files: `dirty-beats-back.jpg`, `19hz-fractale-back.png`, `nightwave-back.jpg`, `sunkissed-back.jpg`.
+- RA direct `images.ra.co` and encoded `imgproxy.ra.co` URLs can fail from local tooling; the successful route in this pass used the RA imgproxy URL with `quality:66` unescaped, then validated files with `sharp`.
+
+2026-06-14 RA poster completion pass:
+
+- Completed the RA Shanghai poster ledger for all 41 manifest rows: `noPoster: 0`, `posterNoLocalFiles: 0`, `missingLocalFiles: 0`.
+- Added `posterEvidence.localFiles` for existing local RA poster rows and downloaded the remaining visible RA flyer references into `assets/posters/`, including front/back files where RA exposed both.
+- New RA poster rows covered: `janein`, `fengyun-5`, `gully-riddim-mssingno`, `interzone-summer-time`, `tham`, `butterfree-m101`, `darker-than-wax-dean-chew`, `acierate-brvtalist`, `caroline-roxy`, `techno-worlds`, `house-of-zup-jun7`, `prgrm-021`, `house-of-zup`, `bloom-season-1-grand-final`, `cybionte-solo-ykk-heshang`, `nikita-zabelin-potent`, `onefortyasia-mungk-simbie`, `atm-leo-monira`, `enchanted-night-the-nest`, `neon-jungle-tom-kynd`, `sciahri-potent`, `friendsstandout`, and `shaun-soomro-dj-serang`.
+- Verification route: RA event pages were reached through public indexed text/search or direct public event URLs; image links were opened from the RA page image anchors, downloaded as local assets, and fully decoded with `sharp().raw().toBuffer()` before registration. Use Browser/Chrome before changing live ticket state, but RA poster evidence can be preserved from the public indexed image route when visible.
 
 Validation added to the routine:
 
 - `scripts/check.js` fails when any event or curated event has `posterEvidence` but no valid downloaded local `assets/posters/...` image.
+- `scripts/check.js` also validates any `posterEvidence.localFiles` reference images that are explicitly listed.
 - `scripts/audit-events.js` performs the same poster check during daily event audits.
 - `npm run check` now includes the event audit, so daily scrape updates should not be published while poster evidence is missing a local asset.
 

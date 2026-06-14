@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T14:20:07.861Z",
+  "generatedAt": "2026-06-14T13:39:25.739Z",
   "sourceData": "data/events.json",
   "storagePolicy": {
     "mode": "static-json-plus-local-optimized-assets",
@@ -7,20 +7,63 @@
     "rule": "Use optimized display assets in the wall; keep raw poster files out of the default browsing path when the archive grows."
   },
   "stats": {
-    "posters": 20,
+    "posters": 47,
     "years": [
       2026
     ],
-    "venues": 14,
-    "optimizedCount": 20,
-    "displayBytes": 3828943,
-    "sourceBytes": 17413652,
-    "displayMegabytes": 3.65,
-    "sourceMegabytes": 16.61,
+    "venues": 24,
+    "optimizedCount": 47,
+    "displayBytes": 9257105,
+    "sourceBytes": 30983967,
+    "displayMegabytes": 8.83,
+    "sourceMegabytes": 29.55,
     "freeTierSoftCapBytes": 83886080,
     "freeTierSoftCapMegabytes": 80
   },
   "posters": [
+    {
+      "id": "shanghai-2026-shaun-soomro-dj-serang",
+      "eventId": "shaun-soomro-dj-serang",
+      "title": "Shaun Soomro, DJ Serang",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Sep 12",
+      "sortDate": "2026-09-12",
+      "time": "23:00-06:00",
+      "venue": "TBA",
+      "district": "Shanghai",
+      "sound": "club, electronic, LMD-context",
+      "tags": [
+        "watch",
+        "shanghai",
+        "club",
+        "underground",
+        "electronic",
+        "lmd-context"
+      ],
+      "status": "watch",
+      "confidence": "Watch",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2232295",
+        "posterEvidenceUrl": "https://ra.co/events/2232295",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA flyer front image was downloaded locally for reference through the public indexed image link."
+      },
+      "image": {
+        "thumbnail": "assets/posters/shaun-soomro-dj-serang-optimized.jpg",
+        "display": "assets/posters/shaun-soomro-dj-serang-optimized.jpg",
+        "sourceAsset": "assets/posters/shaun-soomro-dj-serang.jpg",
+        "displayBytes": 137565,
+        "sourceBytes": 142065,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/shaun-soomro-dj-serang.html",
+      "notes": "RA lists a far-dated September Shanghai TBA entry for Shaun Soomro and DJ Serang. Keep it for complete RA coverage and as a future watch/context item until venue, ticket route, age policy, and current update state are confirmed."
+    },
     {
       "id": "shanghai-2026-nova-summer-splash-pool-party",
       "eventId": "nova-summer-splash-pool-party",
@@ -61,7 +104,7 @@
         "mime": "image/jpeg"
       },
       "eventUrl": "events/nova-summer-splash-pool-party.html",
-      "notes": "Nova Events and Viva host a daytime poolside event with swimming, games, and DJ music at Radisson Blu Forest Manor Hongqiao; low techno fit but relevant for summer club listings."
+      "notes": "Single-source low-techno-fit Watch lead for a daytime poolside Nova/Viva event at Radisson Blu Forest Manor Hongqiao. Check the ticket route, DJ/music brief, swim policy, and weather before treating it as useful club coverage."
     },
     {
       "id": "shanghai-2026-cyber-buddha",
@@ -152,6 +195,49 @@
       "notes": "PLAYGROUND presents Dark RoOm at Dirty House with an RA-published techno running order from D_z through MegaWatts, NAKIN, and Marcus."
     },
     {
+      "id": "shanghai-2026-friendsstandout",
+      "eventId": "friendsstandout",
+      "title": "FRIENDSSTANDout",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 21",
+      "sortDate": "2026-06-21",
+      "time": "21:00-03:00",
+      "venue": "Wigwam",
+      "district": "Changning",
+      "sound": "club, electronic",
+      "tags": [
+        "upcoming",
+        "medium",
+        "changning",
+        "club",
+        "underground",
+        "electronic"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2455159",
+        "posterEvidenceUrl": "https://ra.co/events/2455159",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA flyer front and back images were downloaded locally for reference through public indexed image links."
+      },
+      "image": {
+        "thumbnail": "assets/posters/friendsstandout-optimized.jpg",
+        "display": "assets/posters/friendsstandout-optimized.jpg",
+        "sourceAsset": "assets/posters/friendsstandout.jpg",
+        "displayBytes": 172193,
+        "sourceBytes": 219711,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/friendsstandout.html",
+      "notes": "MENSLIES presents FRIENDSSTANDout at Wigwam with Tsing, 10000, YKK, Taidi, and DJ TRUCK. RA confirms date, room, promoter, lineup, and flyer."
+    },
+    {
       "id": "shanghai-2026-afrowave-takeover-la-burg",
       "eventId": "afrowave-takeover-la-burg",
       "title": "A Full Afrowave Takeover",
@@ -193,7 +279,184 @@
         "mime": "image/jpeg"
       },
       "eventUrl": "events/afrowave-takeover-la-burg.html",
-      "notes": "International Amapiano artist NJELIC brings the Afrowave China tour to La Burg after a Guangzhou stop; low techno fit but useful as a broader club/tour listing."
+      "notes": "Single-source low-techno-fit Watch lead for NJELIC and the Afrowave China tour at La Burg. Useful for broader club coverage, but verify the live ticket route, exact start time, and event source before featuring it."
+    },
+    {
+      "id": "shanghai-2026-atm-leo-monira",
+      "eventId": "atm-leo-monira",
+      "title": "A.T.M Pres. LEO MONIRA",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 20",
+      "sortDate": "2026-06-20",
+      "time": "22:00-05:30",
+      "venue": "Reactor Shanghai",
+      "district": "Changning",
+      "sound": "techno, hardcore, industrial techno, EBM",
+      "tags": [
+        "upcoming",
+        "high",
+        "changning",
+        "techno",
+        "hard",
+        "underground",
+        "hardcore",
+        "industrial techno",
+        "ebm"
+      ],
+      "status": "upcoming",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2466700",
+        "posterEvidenceUrl": "https://ra.co/events/2466700",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA flyer front image was downloaded locally for reference through the public indexed image link."
+      },
+      "image": {
+        "thumbnail": "assets/posters/atm-leo-monira-optimized.jpg",
+        "display": "assets/posters/atm-leo-monira-optimized.jpg",
+        "sourceAsset": "assets/posters/atm-leo-monira.png",
+        "displayBytes": 212167,
+        "sourceBytes": 2812689,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/atm-leo-monira.html",
+      "notes": "A.T.M books LEO MONIRA at Reactor Shanghai with a hard, industrial, EBM-leaning techno frame and support from QUAN, EXTREME JOHN, Oil Nature, Jeff Chong, and Sunyoung."
+    },
+    {
+      "id": "shanghai-2026-enchanted-night-the-nest",
+      "eventId": "enchanted-night-the-nest",
+      "title": "Enchanted Night",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 20",
+      "sortDate": "2026-06-20",
+      "time": "22:00-02:30",
+      "venue": "TBA - The Nest",
+      "district": "Shanghai",
+      "sound": "disco, pop, 2000s party",
+      "tags": [
+        "upcoming",
+        "medium",
+        "shanghai",
+        "date",
+        "disco",
+        "pop",
+        "2000s party"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2451822",
+        "posterEvidenceUrl": "https://ra.co/events/2451822",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA flyer front image was downloaded locally for reference through the public indexed image link."
+      },
+      "image": {
+        "thumbnail": "assets/posters/enchanted-night-the-nest-optimized.jpg",
+        "display": "assets/posters/enchanted-night-the-nest-optimized.jpg",
+        "sourceAsset": "assets/posters/enchanted-night-the-nest.jpg",
+        "displayBytes": 180467,
+        "sourceBytes": 384271,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/enchanted-night-the-nest.html",
+      "notes": "RA lists Enchanted Night as a 2000s pop/disco party at TBA - The Nest with SOLO and ALI RIBO. Keep as complete RA coverage, not a rave pick."
+    },
+    {
+      "id": "shanghai-2026-neon-jungle-tom-kynd",
+      "eventId": "neon-jungle-tom-kynd",
+      "title": "NEON JUNGLE feat. TOM KYND",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 20",
+      "sortDate": "2026-06-20",
+      "time": "21:00-02:00",
+      "venue": "The Sukhothai Shanghai",
+      "district": "Jing'an",
+      "sound": "techno, house, hotel party",
+      "tags": [
+        "upcoming",
+        "medium",
+        "jing'an",
+        "date",
+        "club",
+        "techno",
+        "house",
+        "hotel party"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2466422",
+        "posterEvidenceUrl": "https://ra.co/events/2466422",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA flyer front image was downloaded locally for reference through the public indexed image link."
+      },
+      "image": {
+        "thumbnail": "assets/posters/neon-jungle-tom-kynd-optimized.jpg",
+        "display": "assets/posters/neon-jungle-tom-kynd-optimized.jpg",
+        "sourceAsset": "assets/posters/neon-jungle-tom-kynd.jpg",
+        "displayBytes": 295277,
+        "sourceBytes": 345994,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/neon-jungle-tom-kynd.html",
+      "notes": "Spacepanda turns The Sukhothai Shanghai into a hotel club-night route with Tom Kynd, Psyche, and Mr Chang. RA lists techno/house, cost, age, and a ticket link."
+    },
+    {
+      "id": "shanghai-2026-sciahri-potent",
+      "eventId": "sciahri-potent",
+      "title": "Sciahri (IT)",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 20",
+      "sortDate": "2026-06-20",
+      "time": "23:59-06:00",
+      "venue": "POTENT",
+      "district": "Huangpu",
+      "sound": "techno",
+      "tags": [
+        "upcoming",
+        "high",
+        "huangpu",
+        "techno",
+        "underground"
+      ],
+      "status": "upcoming",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2467511",
+        "posterEvidenceUrl": "https://ra.co/events/2467511",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA flyer front image was downloaded locally for reference through the public indexed image link."
+      },
+      "image": {
+        "thumbnail": "assets/posters/sciahri-potent-optimized.jpg",
+        "display": "assets/posters/sciahri-potent-optimized.jpg",
+        "sourceAsset": "assets/posters/sciahri-potent.jpg",
+        "displayBytes": 177738,
+        "sourceBytes": 175575,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/sciahri-potent.html",
+      "notes": "POTENT hosts Sciahri with Thomas Futoso and Luke Bye in a late techno slot. RA confirms the 23:59-06:00 window, lineup, cost, and 18+ rule."
     },
     {
       "id": "shanghai-2026-mrd",
@@ -237,6 +500,93 @@
       },
       "eventUrl": "events/mrd.html",
       "notes": "TURBO brings Norwegian artist MRD to Dirty House for a trance and techno night with D_z, Tiya Manson, NAKIN, and Justease."
+    },
+    {
+      "id": "shanghai-2026-nikita-zabelin-potent",
+      "eventId": "nikita-zabelin-potent",
+      "title": "Nikita Zabelin (RU)",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 19",
+      "sortDate": "2026-06-19",
+      "time": "23:59-06:00",
+      "venue": "POTENT",
+      "district": "Huangpu",
+      "sound": "house, techno-context",
+      "tags": [
+        "upcoming",
+        "medium",
+        "huangpu",
+        "house",
+        "underground",
+        "techno-context"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2467512",
+        "posterEvidenceUrl": "https://ra.co/events/2467512",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA flyer front image was downloaded locally for reference through the public indexed image link."
+      },
+      "image": {
+        "thumbnail": "assets/posters/nikita-zabelin-potent-optimized.jpg",
+        "display": "assets/posters/nikita-zabelin-potent-optimized.jpg",
+        "sourceAsset": "assets/posters/nikita-zabelin-potent.jpg",
+        "displayBytes": 114691,
+        "sourceBytes": 115293,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/nikita-zabelin-potent.html",
+      "notes": "POTENT hosts Nikita Zabelin with Tofu and HUAN HUAN. RA genres it as house, while the booking carries techno-scene context through Zabelin."
+    },
+    {
+      "id": "shanghai-2026-onefortyasia-mungk-simbie",
+      "eventId": "onefortyasia-mungk-simbie",
+      "title": "ONEFORTYASIA Pres. MUNGK (UK) & SIMBIE (AU)",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 19",
+      "sortDate": "2026-06-19",
+      "time": "22:00-04:00",
+      "venue": "EXIT",
+      "district": "Changning",
+      "sound": "bass, dubstep, UK garage",
+      "tags": [
+        "upcoming",
+        "high",
+        "changning",
+        "bass",
+        "underground",
+        "dubstep",
+        "uk garage"
+      ],
+      "status": "upcoming",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2466405",
+        "posterEvidenceUrl": "https://ra.co/events/2466405",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA flyer front and back images were downloaded locally for reference through public indexed image links."
+      },
+      "image": {
+        "thumbnail": "assets/posters/onefortyasia-mungk-simbie-optimized.jpg",
+        "display": "assets/posters/onefortyasia-mungk-simbie-optimized.jpg",
+        "sourceAsset": "assets/posters/onefortyasia-mungk-simbie.jpg",
+        "displayBytes": 351452,
+        "sourceBytes": 384841,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/onefortyasia-mungk-simbie.html",
+      "notes": "ONEFORTYASIA brings MUNGK and SIMBIE to EXIT with a bass, dubstep, and UK garage frame plus local support from D8, Diipset, Sanli, Siesta, and Somebodyyyy."
     },
     {
       "id": "shanghai-2026-alter-pavillon",
@@ -284,6 +634,48 @@
       "notes": "ALTER. and byyb return to Yuyuan Garden for an 11-hour garden event at Beaufort Terrace with DJ sets, a Wang Meng + Yu Miao live performance, and a byyb.radio livestream."
     },
     {
+      "id": "shanghai-2026-cybionte-solo-ykk-heshang",
+      "eventId": "cybionte-solo-ykk-heshang",
+      "title": "Cybionte with Solo, YKK, & Heshang",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 18",
+      "sortDate": "2026-06-18",
+      "time": "23:59-06:00",
+      "venue": "POTENT",
+      "district": "Huangpu",
+      "sound": "house, club",
+      "tags": [
+        "upcoming",
+        "medium",
+        "huangpu",
+        "house",
+        "club"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2467513",
+        "posterEvidenceUrl": "https://ra.co/events/2467513",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA flyer front image was downloaded locally for reference through the public indexed image link."
+      },
+      "image": {
+        "thumbnail": "assets/posters/cybionte-solo-ykk-heshang-optimized.jpg",
+        "display": "assets/posters/cybionte-solo-ykk-heshang-optimized.jpg",
+        "sourceAsset": "assets/posters/cybionte-solo-ykk-heshang.jpg",
+        "displayBytes": 189821,
+        "sourceBytes": 189264,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/cybionte-solo-ykk-heshang.html",
+      "notes": "POTENT hosts Cybionte with Solo, YKK, and Heshang in a late house/club lane. RA confirms the late slot, lineup, cost, and 18+ rule."
+    },
+    {
       "id": "shanghai-2026-night-at-museum-90s-disco",
       "eventId": "night-at-museum-90s-disco",
       "title": "Night at the Museum: Back to the 90s Disco Night",
@@ -324,7 +716,7 @@
         "mime": "image/jpeg"
       },
       "eventUrl": "events/night-at-museum-90s-disco.html",
-      "notes": "Fotografiska's 90s-themed late-night disco event uses multi-floor DJ sets and museum space; it is useful as a date-night club lead but is not a high-fit techno pick."
+      "notes": "Fotografiska's 90s-themed late-night disco event uses multi-floor DJ sets and museum space. SmartShanghai and 247tickets both confirm the Jun 18, 21:00, 120 RMB e-ticket listing; keep as Watch because individual DJ names are still unpublished and the sound is date-route disco rather than a high-fit techno night."
     },
     {
       "id": "shanghai-2026-photocult-mask-desire-auction",
@@ -369,6 +761,96 @@
       "notes": "REACTOR Shanghai hosts PHOTOCULT's two-room Mask. Desire. Auction program at Reactor Shanghai, with DOME and POCKET room DJ sets plus desire-auction interludes."
     },
     {
+      "id": "shanghai-2026-bloom-season-1-grand-final",
+      "eventId": "bloom-season-1-grand-final",
+      "title": "Bloom Season 1, Grand Final",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 17",
+      "sortDate": "2026-06-17",
+      "time": "22:00-03:00",
+      "venue": "EXIT",
+      "district": "Changning",
+      "sound": "house, hip-hop, dance battle",
+      "tags": [
+        "upcoming",
+        "medium",
+        "changning",
+        "club",
+        "date",
+        "house",
+        "hip-hop",
+        "dance battle"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2456798",
+        "posterEvidenceUrl": "https://ra.co/events/2456798",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA flyer front image was downloaded locally for reference through the public indexed image link."
+      },
+      "image": {
+        "thumbnail": "assets/posters/bloom-season-1-grand-final-optimized.jpg",
+        "display": "assets/posters/bloom-season-1-grand-final-optimized.jpg",
+        "sourceAsset": "assets/posters/bloom-season-1-grand-final.png",
+        "displayBytes": 81823,
+        "sourceBytes": 1003972,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/bloom-season-1-grand-final.html",
+      "notes": "RA lists Bloom Season 1 Grand Final at EXIT with judges, DJ/MC roles, and finalists. Keep as RA coverage/context: useful for dance-culture followers, softer for techno-first readers."
+    },
+    {
+      "id": "shanghai-2026-house-of-zup",
+      "eventId": "house-of-zup",
+      "title": "HOUSE OF ZUP",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 14",
+      "sortDate": "2026-06-14",
+      "time": "15:00-21:00",
+      "venue": "ZUP Pizza Bar",
+      "district": "Jing'an",
+      "sound": "house, disco, funk, hip-hop",
+      "tags": [
+        "upcoming",
+        "medium",
+        "jing'an",
+        "date",
+        "house",
+        "disco",
+        "funk",
+        "hip-hop"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2464155",
+        "posterEvidenceUrl": "https://ra.co/events/2464155",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA flyer front and back images were downloaded locally for reference through public indexed image links."
+      },
+      "image": {
+        "thumbnail": "assets/posters/house-of-zup-optimized.jpg",
+        "display": "assets/posters/house-of-zup-optimized.jpg",
+        "sourceAsset": "assets/posters/house-of-zup.jpg",
+        "displayBytes": 84314,
+        "sourceBytes": 84786,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/house-of-zup.html",
+      "notes": "RA lists HOUSE OF ZUP as a Sunday afternoon session at ZUP Pizza Bar, with house, disco, funk, hip-hop, food, drinks, and an easy crowd. Keep as RA coverage/context rather than a rave pick."
+    },
+    {
       "id": "shanghai-2026-sunset-sundays-dome",
       "eventId": "sunset-sundays-dome",
       "title": "Sunset Sundays",
@@ -408,7 +890,51 @@
         "mime": "image/jpeg"
       },
       "eventUrl": "events/sunset-sundays-dome.html",
-      "notes": "The Dome runs a Sunday sunset series with DJ Rain, curated music, cocktails, shisha, and a Bund skyline view through June 28; useful as a low-intensity date-night lead."
+      "notes": "Low-intensity date-night Watch lead: The Dome runs Sunday sunset sessions with DJ Rain and skyline-bar context, but check the same-day weather, table/door policy, music brief, and whether the series still fits a club-music reader."
+    },
+    {
+      "id": "shanghai-2026-fengyun-5",
+      "eventId": "fengyun-5",
+      "title": "FENGYUN Vol. 5",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 13",
+      "sortDate": "2026-06-13",
+      "time": "22:00-06:00",
+      "venue": "M101 Room",
+      "district": "Huangpu",
+      "sound": "club, experimental electronic",
+      "tags": [
+        "past",
+        "medium",
+        "huangpu",
+        "experimental",
+        "underground",
+        "club",
+        "experimental electronic"
+      ],
+      "status": "past",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2460549",
+        "posterEvidenceUrl": "https://ra.co/events/2460549",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA flyer front image was downloaded locally for reference through the public indexed image link."
+      },
+      "image": {
+        "thumbnail": "assets/posters/fengyun-5-optimized.jpg",
+        "display": "assets/posters/fengyun-5-optimized.jpg",
+        "sourceAsset": "assets/posters/fengyun-5.jpg",
+        "displayBytes": 324075,
+        "sourceBytes": 327633,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/fengyun-5.html",
+      "notes": "Heim-administered RA listing with Mamayo, Gooooose, COLA REN, DJ TRUCK, and meer. Good underground lead, but genre detail is broad."
     },
     {
       "id": "shanghai-2026-horizon",
@@ -424,14 +950,14 @@
       "district": "The Bund",
       "sound": "techno, house",
       "tags": [
-        "upcoming",
+        "past",
         "high",
         "the bund",
         "date",
         "techno",
         "house"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "High",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -467,7 +993,7 @@
       "district": "Changning",
       "sound": "industrial, italo disco, darkwave, EBM, goth",
       "tags": [
-        "upcoming",
+        "past",
         "high",
         "changning",
         "industrial",
@@ -477,7 +1003,7 @@
         "ebm",
         "goth"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "High",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -513,7 +1039,7 @@
       "district": "Huangpu",
       "sound": "house, techno-adjacent",
       "tags": [
-        "upcoming",
+        "past",
         "high",
         "huangpu",
         "underground",
@@ -521,7 +1047,7 @@
         "house",
         "techno-adjacent"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "High",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -557,14 +1083,14 @@
       "district": "Pudong",
       "sound": "rooftop club, DJ sets",
       "tags": [
-        "upcoming",
+        "past",
         "medium",
         "pudong",
         "date",
         "rooftop club",
         "dj sets"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "Medium",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -600,7 +1126,7 @@
       "district": "Changning",
       "sound": "experimental, future beats, hip-hop",
       "tags": [
-        "upcoming",
+        "past",
         "high",
         "changning",
         "experimental",
@@ -609,7 +1135,7 @@
         "future beats",
         "hip-hop"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "High",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -645,7 +1171,7 @@
       "district": "Huangpu",
       "sound": "hard techno, new trance",
       "tags": [
-        "upcoming",
+        "past",
         "high",
         "huangpu",
         "hard",
@@ -653,7 +1179,7 @@
         "hard techno",
         "new trance"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "High",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -689,7 +1215,7 @@
       "district": "Changning",
       "sound": "electro, EBM, industrial, techno, IDM",
       "tags": [
-        "upcoming",
+        "past",
         "high",
         "changning",
         "experimental",
@@ -700,7 +1226,7 @@
         "techno",
         "idm"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "High",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -736,7 +1262,7 @@
       "district": "Changning",
       "sound": "house, hip-hop, groove, club",
       "tags": [
-        "upcoming",
+        "past",
         "high",
         "changning",
         "underground",
@@ -746,7 +1272,7 @@
         "groove",
         "club"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "High",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -782,7 +1308,7 @@
       "district": "Huangpu",
       "sound": "techno, bass, UKG, dubstep, baile funk",
       "tags": [
-        "upcoming",
+        "past",
         "high",
         "huangpu",
         "bass",
@@ -792,7 +1318,7 @@
         "dubstep",
         "baile funk"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "High",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -828,14 +1354,14 @@
       "district": "Huangpu",
       "sound": "trance, techno",
       "tags": [
-        "upcoming",
+        "past",
         "high",
         "huangpu",
         "hard",
         "techno",
         "trance"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "High",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -871,7 +1397,7 @@
       "district": "Huangpu",
       "sound": "techno, house",
       "tags": [
-        "upcoming",
+        "past",
         "high",
         "huangpu",
         "underground",
@@ -879,7 +1405,7 @@
         "techno",
         "house"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "High",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -899,7 +1425,661 @@
         "mime": "image/jpeg"
       },
       "eventUrl": "events/milo-cosmjn.html",
-      "notes": "Proper late-night POTENT booking with Cosmjn, Milo Raad, and GaoQiao."
+      "notes": "Late POTENT booking with Milo Raad, Cosmjn, and GaoQiao; useful for deeper rolling club music and after-midnight listening, with RA carrying the core date, venue, lineup, price, and age facts."
+    },
+    {
+      "id": "shanghai-2026-prgrm-021",
+      "eventId": "prgrm-021",
+      "title": "PRGRM 021",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 12",
+      "sortDate": "2026-06-12",
+      "time": "22:00-04:00",
+      "venue": "EXIT",
+      "district": "Changning",
+      "sound": "techno, deep tech, progressive, psytech, hard techno",
+      "tags": [
+        "past",
+        "high",
+        "changning",
+        "techno",
+        "underground",
+        "deep tech",
+        "progressive",
+        "psytech",
+        "hard techno"
+      ],
+      "status": "past",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2464171",
+        "posterEvidenceUrl": "https://ra.co/events/2464171",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA flyer front image was downloaded locally for reference through the public indexed image link."
+      },
+      "image": {
+        "thumbnail": "assets/posters/prgrm-021-optimized.jpg",
+        "display": "assets/posters/prgrm-021-optimized.jpg",
+        "sourceAsset": "assets/posters/prgrm-021.jpg",
+        "displayBytes": 392044,
+        "sourceBytes": 588246,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/prgrm-021.html",
+      "notes": "EXIT hosted PRGRM 021 as a RA-listed techno night with Rabeat, KOD!GO, iquid Mechanics, and ZENKAI. The copy positions the room around driving techno, melodic and hypnotic pressure, and harder peak-time energy."
+    },
+    {
+      "id": "shanghai-2026-house-of-zup-jun7",
+      "eventId": "house-of-zup-jun7",
+      "title": "HOUSE OF ZUP",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 7",
+      "sortDate": "2026-06-07",
+      "time": "15:00-21:00",
+      "venue": "ZUP Pizza Bar",
+      "district": "Jing'an",
+      "sound": "house, disco, funk, hip-hop",
+      "tags": [
+        "past",
+        "medium",
+        "jing'an",
+        "date",
+        "house",
+        "disco",
+        "funk",
+        "hip-hop"
+      ],
+      "status": "past",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2457142",
+        "posterEvidenceUrl": "https://ra.co/events/2457142",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA flyer front and back images were downloaded locally for reference through public indexed image links."
+      },
+      "image": {
+        "thumbnail": "assets/posters/house-of-zup-jun7-optimized.jpg",
+        "display": "assets/posters/house-of-zup-jun7-optimized.jpg",
+        "sourceAsset": "assets/posters/house-of-zup-jun7.jpg",
+        "displayBytes": 79990,
+        "sourceBytes": 80608,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/house-of-zup-jun7.html",
+      "notes": "RA lists the June 7 HOUSE OF ZUP Sunday session at ZUP Pizza Bar with Dant?, Nanotech, Koldo, Sexi Monki, and Finascia. Keep as RA coverage/context, not a rave pick."
+    },
+    {
+      "id": "shanghai-2026-acierate-brvtalist",
+      "eventId": "acierate-brvtalist",
+      "title": "Acierate + The Brvtalist",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 6",
+      "sortDate": "2026-06-06",
+      "time": "23:59-06:00",
+      "venue": "POTENT",
+      "district": "Huangpu",
+      "sound": "techno",
+      "tags": [
+        "past",
+        "high",
+        "huangpu",
+        "hard",
+        "underground",
+        "techno"
+      ],
+      "status": "past",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2455146",
+        "posterEvidenceUrl": "https://ra.co/events/2455146",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA flyer front image was downloaded locally for reference through the public indexed image link."
+      },
+      "image": {
+        "thumbnail": "assets/posters/acierate-brvtalist-optimized.jpg",
+        "display": "assets/posters/acierate-brvtalist-optimized.jpg",
+        "sourceAsset": "assets/posters/acierate-brvtalist.jpg",
+        "displayBytes": 194377,
+        "sourceBytes": 195970,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/acierate-brvtalist.html",
+      "notes": "RA lists Acierate and The Brvtalist at POTENT with QiuQiu support. Strong source-backed techno archive row for the June 6 POTENT weekend."
+    },
+    {
+      "id": "shanghai-2026-butterfree-m101",
+      "eventId": "butterfree-m101",
+      "title": "Butterfree dance room at M101",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 6",
+      "sortDate": "2026-06-06",
+      "time": "22:00-06:00",
+      "venue": "TBA - Room M101",
+      "district": "Huangpu",
+      "sound": "club, electronic",
+      "tags": [
+        "past",
+        "medium",
+        "huangpu",
+        "club",
+        "underground",
+        "electronic"
+      ],
+      "status": "past",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2456891",
+        "posterEvidenceUrl": "https://ra.co/events/2456891",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA flyer front image was downloaded locally for reference through the public indexed image link."
+      },
+      "image": {
+        "thumbnail": "assets/posters/butterfree-m101-optimized.jpg",
+        "display": "assets/posters/butterfree-m101-optimized.jpg",
+        "sourceAsset": "assets/posters/butterfree-m101.jpg",
+        "displayBytes": 157142,
+        "sourceBytes": 151579,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/butterfree-m101.html",
+      "notes": "RA lists the Butterfree M101 room with Taidi, YKK, DJ Wife, Luxixi live, and Devil's Hole. Useful as RA-confirmed local club coverage with moderate techno fit."
+    },
+    {
+      "id": "shanghai-2026-caroline-roxy",
+      "eventId": "caroline-roxy",
+      "title": "FaQ pres. Caroline Roxy",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 6",
+      "sortDate": "2026-06-06",
+      "time": "22:30-05:00",
+      "venue": "Abyss Shanghai",
+      "district": "Huangpu",
+      "sound": "techno, hardcore",
+      "tags": [
+        "past",
+        "high",
+        "huangpu",
+        "hard",
+        "underground",
+        "techno",
+        "hardcore"
+      ],
+      "status": "past",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2458079",
+        "posterEvidenceUrl": "https://ra.co/events/2458079",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA flyer front image was downloaded locally for reference through the public indexed image link."
+      },
+      "image": {
+        "thumbnail": "assets/posters/caroline-roxy-optimized.jpg",
+        "display": "assets/posters/caroline-roxy-optimized.jpg",
+        "sourceAsset": "assets/posters/caroline-roxy.png",
+        "displayBytes": 189497,
+        "sourceBytes": 2407380,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/caroline-roxy.html",
+      "notes": "Hard techno and hardcore at Abyss with Caroline Roxy, LOD, Fischmonger, SHU, and XDISTR."
+    },
+    {
+      "id": "shanghai-2026-sunkissed",
+      "eventId": "sunkissed",
+      "title": "SUNKISSED Rooftop feat. Tom Price",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 6",
+      "sortDate": "2026-06-06",
+      "time": "15:00-02:00",
+      "venue": "Fosun Art Foundation",
+      "district": "Huangpu",
+      "sound": "techno, house",
+      "tags": [
+        "past",
+        "high",
+        "huangpu",
+        "date",
+        "techno",
+        "house"
+      ],
+      "status": "past",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2457326",
+        "posterEvidenceUrl": "https://ra.co/events/2457326",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA front and back flyer images were downloaded locally for reference."
+      },
+      "image": {
+        "thumbnail": "assets/posters/sunkissed-optimized.jpg",
+        "display": "assets/posters/sunkissed-optimized.jpg",
+        "sourceAsset": "assets/posters/sunkissed.jpg",
+        "displayBytes": 190156,
+        "sourceBytes": 189509,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/sunkissed.html",
+      "notes": "Bund rooftop Space Panda event with Tom Price, Simon Adams, Cai Pas, and Martin Ma; best treated as an easy open-air/date-night route with house and scenic context, not as a basement-rave or hard-techno pick."
+    },
+    {
+      "id": "shanghai-2026-techno-worlds",
+      "eventId": "techno-worlds",
+      "title": "Techno Worlds x VACUUM: Final Sampling",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 6",
+      "sortDate": "2026-06-06",
+      "time": "22:00-06:00",
+      "venue": "EXIT",
+      "district": "Changning",
+      "sound": "techno",
+      "tags": [
+        "past",
+        "high",
+        "changning",
+        "hard",
+        "underground",
+        "experimental",
+        "techno"
+      ],
+      "status": "past",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2448375",
+        "posterEvidenceUrl": "https://ra.co/events/2448375",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA flyer front image was downloaded locally for reference through the public indexed image link."
+      },
+      "image": {
+        "thumbnail": "assets/posters/techno-worlds-optimized.jpg",
+        "display": "assets/posters/techno-worlds-optimized.jpg",
+        "sourceAsset": "assets/posters/techno-worlds.jpg",
+        "displayBytes": 211513,
+        "sourceBytes": 262054,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/techno-worlds.html",
+      "notes": "A high-fit techno head pick: ECILO, Ma Haiping, NAXIN, RO, IXWELE, and VJ Ada at EXIT."
+    },
+    {
+      "id": "shanghai-2026-19hz-fractale",
+      "eventId": "19hz-fractale",
+      "title": "19Hz w. Fractale (IT) DNB/Dubstep/Breaks",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 5",
+      "sortDate": "2026-06-05",
+      "time": "22:00-04:00",
+      "venue": "TBA - DEFUN",
+      "district": "Putuo",
+      "sound": "drum & bass, dubstep, breaks",
+      "tags": [
+        "past",
+        "high",
+        "putuo",
+        "bass",
+        "underground",
+        "drum & bass",
+        "dubstep",
+        "breaks"
+      ],
+      "status": "past",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2458581",
+        "posterEvidenceUrl": "https://ra.co/events/2458581",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA front and back flyer images were downloaded locally for reference."
+      },
+      "image": {
+        "thumbnail": "assets/posters/19hz-fractale-optimized.jpg",
+        "display": "assets/posters/19hz-fractale-optimized.jpg",
+        "sourceAsset": "assets/posters/19hz-fractale.jpg",
+        "displayBytes": 105269,
+        "sourceBytes": 101451,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/19hz-fractale.html",
+      "notes": "19Hz bass-room listing at DEFUN with Fractale, Siesta, Kalapas, Aho, and Yadong. Stronger for drum & bass, dubstep, and breaks followers than for straight techno readers, but it belongs in the RA-complete Shanghai source layer."
+    },
+    {
+      "id": "shanghai-2026-dirty-beats",
+      "eventId": "dirty-beats",
+      "title": "dirty beats",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 5",
+      "sortDate": "2026-06-05",
+      "time": "22:00-05:00",
+      "venue": "Dirty House",
+      "district": "Huangpu",
+      "sound": "techno",
+      "tags": [
+        "past",
+        "high",
+        "huangpu",
+        "techno",
+        "underground"
+      ],
+      "status": "past",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2450615",
+        "posterEvidenceUrl": "https://ra.co/events/2450615",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA front and back flyer images were downloaded locally for reference."
+      },
+      "image": {
+        "thumbnail": "assets/posters/dirty-beats-optimized.jpg",
+        "display": "assets/posters/dirty-beats-optimized.jpg",
+        "sourceAsset": "assets/posters/dirty-beats.png",
+        "displayBytes": 214520,
+        "sourceBytes": 1888839,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/dirty-beats.html",
+      "notes": "PLAYGROUND / Dirty House techno listing with a full RA running order. Useful as an archive-grade source row for the Jun 5 Dirty House lane, especially for readers tracking NAKIN, D_z, Tiya Manson, and local late-room programming."
+    },
+    {
+      "id": "shanghai-2026-darker-than-wax-dean-chew",
+      "eventId": "darker-than-wax-dean-chew",
+      "title": "Fountain pres. 15 Years of Darker Than Wax with Dean Chew",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 5",
+      "sortDate": "2026-06-05",
+      "time": "22:00-06:00",
+      "venue": "Wigwam",
+      "district": "Changning",
+      "sound": "club, bass, electronic",
+      "tags": [
+        "past",
+        "medium",
+        "changning",
+        "club",
+        "bass",
+        "electronic"
+      ],
+      "status": "past",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2437203",
+        "posterEvidenceUrl": "https://ra.co/events/2437203",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA flyer front image was downloaded locally for reference through the public indexed image link."
+      },
+      "image": {
+        "thumbnail": "assets/posters/darker-than-wax-dean-chew-optimized.jpg",
+        "display": "assets/posters/darker-than-wax-dean-chew-optimized.jpg",
+        "sourceAsset": "assets/posters/darker-than-wax-dean-chew.jpg",
+        "displayBytes": 224614,
+        "sourceBytes": 352096,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/darker-than-wax-dean-chew.html",
+      "notes": "RA lists Fountain and Darker Than Wax at Wigwam with Dean Chew, OoLONG, and Paradice Sinema. Keep as RA-confirmed club-context coverage rather than a hard-techno pick."
+    },
+    {
+      "id": "shanghai-2026-gully-riddim-mssingno",
+      "eventId": "gully-riddim-mssingno",
+      "title": "Gully Riddim 9 Year Anniversary pres. MssingNo",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 5",
+      "sortDate": "2026-06-05",
+      "time": "22:00-06:00",
+      "venue": "Reactor Shanghai",
+      "district": "Changning",
+      "sound": "bass, grime",
+      "tags": [
+        "past",
+        "high",
+        "changning",
+        "bass",
+        "underground",
+        "grime"
+      ],
+      "status": "past",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2445207",
+        "posterEvidenceUrl": "https://ra.co/events/2445207",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA flyer front image was downloaded locally for reference through the public indexed image link."
+      },
+      "image": {
+        "thumbnail": "assets/posters/gully-riddim-mssingno-optimized.jpg",
+        "display": "assets/posters/gully-riddim-mssingno-optimized.jpg",
+        "sourceAsset": "assets/posters/gully-riddim-mssingno.jpg",
+        "displayBytes": 125095,
+        "sourceBytes": 131253,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/gully-riddim-mssingno.html",
+      "notes": "RA lists Gully Riddim and Reactor Shanghai presenting MssingNo with a long bass/grime lineup. Strong archive row for Shanghai bass-club coverage."
+    },
+    {
+      "id": "shanghai-2026-interzone-summer-time",
+      "eventId": "interzone-summer-time",
+      "title": "Interzone, Ltd. Summer Time Adjustment",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 5",
+      "sortDate": "2026-06-05",
+      "time": "22:00-05:00",
+      "venue": "EXIT",
+      "district": "Changning",
+      "sound": "house",
+      "tags": [
+        "past",
+        "medium",
+        "changning",
+        "club",
+        "underground",
+        "house"
+      ],
+      "status": "past",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2456842",
+        "posterEvidenceUrl": "https://ra.co/events/2456842",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA flyer front image was downloaded locally for reference through the public indexed image link."
+      },
+      "image": {
+        "thumbnail": "assets/posters/interzone-summer-time-optimized.jpg",
+        "display": "assets/posters/interzone-summer-time-optimized.jpg",
+        "sourceAsset": "assets/posters/interzone-summer-time.jpg",
+        "displayBytes": 440436,
+        "sourceBytes": 444266,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/interzone-summer-time.html",
+      "notes": "RA lists Interzone, Ltd. at EXIT as a house-leaning club row with chuan, DJ Doggy, WATARU, Oolong, Marcos Godoy, and Nata Lee. Keep as coverage/context, not a hard-rave pick."
+    },
+    {
+      "id": "shanghai-2026-janein",
+      "eventId": "janein",
+      "title": "JANEIN (DE)",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 5",
+      "sortDate": "2026-06-05",
+      "time": "23:59-06:00",
+      "venue": "POTENT",
+      "district": "Huangpu",
+      "sound": "trance, techno-adjacent",
+      "tags": [
+        "past",
+        "high",
+        "huangpu",
+        "hard",
+        "underground",
+        "trance",
+        "techno-adjacent"
+      ],
+      "status": "past",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2455145",
+        "posterEvidenceUrl": "https://ra.co/events/2455145",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA flyer front image was downloaded locally for reference through the public indexed image link."
+      },
+      "image": {
+        "thumbnail": "assets/posters/janein-optimized.jpg",
+        "display": "assets/posters/janein-optimized.jpg",
+        "sourceAsset": "assets/posters/janein.jpg",
+        "displayBytes": 151430,
+        "sourceBytes": 152511,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/janein.html",
+      "notes": "RA lists JANEIN at POTENT with Stefano Dvt and Peyotl for a late trance-leaning club slot. Preserved as RA-confirmed Shanghai coverage and a useful techno-adjacent archive row."
+    },
+    {
+      "id": "shanghai-2026-nightwave",
+      "eventId": "nightwave",
+      "title": "NIGHTWAVE feat. Juliano Allgayer",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 5",
+      "sortDate": "2026-06-05",
+      "time": "21:00-02:00",
+      "venue": "The Shanghai Edition",
+      "district": "Huangpu",
+      "sound": "techno, house",
+      "tags": [
+        "past",
+        "high",
+        "huangpu",
+        "date",
+        "techno",
+        "house"
+      ],
+      "status": "past",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2457307",
+        "posterEvidenceUrl": "https://ra.co/events/2457307",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA front and back flyer images were downloaded locally for reference."
+      },
+      "image": {
+        "thumbnail": "assets/posters/nightwave-optimized.jpg",
+        "display": "assets/posters/nightwave-optimized.jpg",
+        "sourceAsset": "assets/posters/nightwave.jpg",
+        "displayBytes": 216759,
+        "sourceBytes": 221315,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/nightwave.html",
+      "notes": "Space Panda hotel-club route with Juliano Allgayer, Ben Moon, and Odd; better for polished pre-midnight house/techno energy and social plans than for readers looking for basement pressure."
+    },
+    {
+      "id": "shanghai-2026-tham",
+      "eventId": "tham",
+      "title": "On The Cutting Edge w. Tham",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 5",
+      "sortDate": "2026-06-05",
+      "time": "22:30-05:00",
+      "venue": "Abyss Shanghai",
+      "district": "Huangpu",
+      "sound": "techno",
+      "tags": [
+        "past",
+        "high",
+        "huangpu",
+        "hard",
+        "underground",
+        "techno"
+      ],
+      "status": "past",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2458056",
+        "posterEvidenceUrl": "https://ra.co/events/2458056",
+        "posterEvidenceSource": "Resident Advisor event page",
+        "posterEvidenceStatus": "RA flyer front image was downloaded locally for reference through the public indexed image link."
+      },
+      "image": {
+        "thumbnail": "assets/posters/tham-optimized.jpg",
+        "display": "assets/posters/tham-optimized.jpg",
+        "sourceAsset": "assets/posters/tham.jpg",
+        "displayBytes": 213737,
+        "sourceBytes": 217144,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/tham.html",
+      "notes": "Abyss harder-edge booking for THAM, strongest for fast and muscular techno listeners; use the attached source trail for final ticket state, door policy, and any set-time changes."
     }
   ]
 }

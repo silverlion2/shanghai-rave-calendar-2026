@@ -4660,14 +4660,41 @@
       });
     }
 
+    function highlightStartMinutes(event) {
+      const match = String(event?.time || "").match(/\b(\d{1,2}):(\d{2})\b/);
+      if (!match) return Number.MAX_SAFE_INTEGER;
+      const hour = Number(match[1]);
+      const minute = Number(match[2]);
+      if (!Number.isFinite(hour) || !Number.isFinite(minute) || hour > 23 || minute > 59) {
+        return Number.MAX_SAFE_INTEGER;
+      }
+      return hour * 60 + minute;
+    }
+
+    function highlightChronologyKey(event) {
+      const sortDate = String(event?.sortDate || "").slice(0, 10);
+      return {
+        date: /^\d{4}-\d{2}-\d{2}$/.test(sortDate) ? sortDate : "9999-12-31",
+        startMinutes: highlightStartMinutes(event)
+      };
+    }
+
+    function orderedHighlightEvents(sourceEvents, predicate, limit) {
+      return [...sourceEvents]
+        .filter(predicate)
+        .sort((a, b) => {
+          const first = highlightChronologyKey(a);
+          const second = highlightChronologyKey(b);
+          const dateSort = first.date.localeCompare(second.date);
+          if (dateSort) return dateSort;
+          return first.startMinutes - second.startMinutes;
+        })
+        .slice(0, limit);
+    }
+
     function renderHighlights() {
       if (!highlightWall) return;
-      const upcomingPosterEvents = events
-        .filter(eventIsUpcomingPick)
-        .sort((a, b) => a.sortDate.localeCompare(b.sortDate));
-      const posterBacked = upcomingPosterEvents.filter(event => eventVisual(event).hasPoster);
-      const highlights = [...posterBacked, ...upcomingPosterEvents.filter(event => !posterBacked.includes(event))]
-        .slice(0, 6);
+      const highlights = orderedHighlightEvents(events, eventIsUpcomingPick, 6);
       highlightWall.innerHTML = `
         <div class="highlight-heading">
           <span>Upcoming highlights</span>

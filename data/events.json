@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-14T12:26:35.692Z",
+  "generatedAt": "2026-06-14T13:39:08.800Z",
   "verified": "2026-06-14",
   "timezone": "Asia/Shanghai",
   "sourcePriority": [
@@ -29,9 +29,10 @@
       "kind": "guide",
       "sourceStatus": "secondary",
       "checkedAt": "2026-06-14",
-      "ok": true,
-      "status": 200,
-      "eventLinks": 0
+      "ok": false,
+      "status": null,
+      "eventLinks": 0,
+      "error": "This operation was aborted"
     },
     {
       "label": "SmartShanghai clubbing listings",
@@ -42,7 +43,7 @@
       "ok": false,
       "status": null,
       "eventLinks": 0,
-      "error": "fetch failed"
+      "error": "This operation was aborted"
     },
     {
       "label": "X/Twitter keyword: \"Shanghai\" techno",
@@ -2008,6 +2009,7 @@
       "detailsUrl": "https://ra.co/events/2458581",
       "ticketUrl": "https://ra.co/events/2458581",
       "lastChecked": "2026-06-14",
+      "posterUrl": "assets/posters/19hz-fractale.jpg",
       "lineup": [
         {
           "name": "Siesta",
@@ -2030,6 +2032,16 @@
           "note": "RA lists Yadong on the 19Hz lineup."
         }
       ],
+      "posterEvidence": {
+        "type": "flyer-front-back",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2458581",
+        "status": "RA front and back flyer images were downloaded locally for reference.",
+        "localFiles": [
+          "assets/posters/19hz-fractale.jpg",
+          "assets/posters/19hz-fractale-back.png"
+        ]
+      },
       "promotionalLinks": [
         {
           "label": "19Hz Shanghai Instagram exposed by RA",
@@ -2068,7 +2080,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       }
     },
@@ -2101,6 +2113,7 @@
       "detailsUrl": "https://ra.co/events/2450615",
       "ticketUrl": "https://ra.co/events/2450615",
       "lastChecked": "2026-06-14",
+      "posterUrl": "assets/posters/dirty-beats.png",
       "lineup": [
         {
           "name": "D_z",
@@ -2141,6 +2154,16 @@
           "source": "https://ra.co/events/2450615"
         }
       ],
+      "posterEvidence": {
+        "type": "flyer-front-back",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2450615",
+        "status": "RA front and back flyer images were downloaded locally for reference.",
+        "localFiles": [
+          "assets/posters/dirty-beats.png",
+          "assets/posters/dirty-beats-back.jpg"
+        ]
+      },
       "ticketStatus": "RA says to scan the WeChat mini-program QR code to purchase tickets and lists minimum age 18+. Price was not exposed in the indexed RA text.",
       "soundTags": [
         "groovy"
@@ -2170,7 +2193,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       }
     },
@@ -2230,6 +2253,16 @@
           "lastChecked": "2026-06-14"
         }
       ],
+      "posterUrl": "assets/posters/darker-than-wax-dean-chew.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2437203",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/darker-than-wax-dean-chew.jpg"
+        ]
+      },
       "soundTags": [
         "bass-hybrid",
         "groovy"
@@ -2246,7 +2279,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       }
     },
@@ -2338,6 +2371,16 @@
           "lastChecked": "2026-06-14"
         }
       ],
+      "posterUrl": "assets/posters/gully-riddim-mssingno.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2445207",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/gully-riddim-mssingno.jpg"
+        ]
+      },
       "soundTags": [
         "bass-hybrid"
       ],
@@ -2354,7 +2397,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       }
     },
@@ -2426,6 +2469,16 @@
           "lastChecked": "2026-06-14"
         }
       ],
+      "posterUrl": "assets/posters/interzone-summer-time.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2456842",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/interzone-summer-time.jpg"
+        ]
+      },
       "soundTags": [],
       "decisionTags": [
         "strong techno fit",
@@ -2439,7 +2492,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       }
     },
@@ -2500,7 +2553,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       },
       "recommendationReason": "Archived as a complete RA Shanghai row; useful for readers tracking POTENT and trance-adjacent late-room bookings.",
@@ -2525,7 +2578,17 @@
           "note": "RA lists Peyotl on this Shanghai lineup."
         }
       ],
-      "ticketStatus": "RA lists cost at 100 RMB and minimum age 18+."
+      "ticketStatus": "RA lists cost at 100 RMB and minimum age 18+.",
+      "posterUrl": "assets/posters/janein.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2455145",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/janein.jpg"
+        ]
+      }
     },
     {
       "id": "nightwave",
@@ -2577,7 +2640,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       },
       "recommendationReason": "Archived for complete RA Shanghai coverage; included as a source-backed hotel-club techno/house route, not as a basement-rave pick.",
@@ -2588,6 +2651,7 @@
       "organizer": "Spacepanda",
       "detailsUrl": "https://ra.co/events/2457307",
       "ticketUrl": "https://ra.co/events/2457307",
+      "posterUrl": "assets/posters/nightwave.jpg",
       "lineup": [
         {
           "name": "Juliano Allgayer",
@@ -2602,6 +2666,16 @@
           "note": "RA lists Odd on the NIGHTWAVE lineup."
         }
       ],
+      "posterEvidence": {
+        "type": "flyer-front-back",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2457307",
+        "status": "RA front and back flyer images were downloaded locally for reference.",
+        "localFiles": [
+          "assets/posters/nightwave.jpg",
+          "assets/posters/nightwave-back.jpg"
+        ]
+      },
       "promotionalLinks": [
         {
           "label": "SmartShanghai ticket link exposed by RA",
@@ -2672,7 +2746,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       },
       "recommendationReason": "Archived as a strong RA-backed hard-techno booking at Abyss.",
@@ -2705,7 +2779,17 @@
           "note": "RA lists Extreme John on this Shanghai lineup."
         }
       ],
-      "ticketStatus": "RA lists cost at 130 RMB and minimum age 18+."
+      "ticketStatus": "RA lists cost at 130 RMB and minimum age 18+.",
+      "posterUrl": "assets/posters/tham.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2458056",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/tham.jpg"
+        ]
+      }
     },
     {
       "id": "acierate-brvtalist",
@@ -2763,6 +2847,16 @@
           "lastChecked": "2026-06-14"
         }
       ],
+      "posterUrl": "assets/posters/acierate-brvtalist.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2455146",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/acierate-brvtalist.jpg"
+        ]
+      },
       "soundTags": [
         "hard-techno"
       ],
@@ -2780,7 +2874,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       }
     },
@@ -2848,6 +2942,16 @@
           "lastChecked": "2026-06-14"
         }
       ],
+      "posterUrl": "assets/posters/butterfree-m101.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2456891",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/butterfree-m101.jpg"
+        ]
+      },
       "soundTags": [
         "live-av",
         "groovy"
@@ -2866,7 +2970,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       }
     },
@@ -2919,7 +3023,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": false,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": [
           "lineup limited",
           "address/source check"
@@ -2928,7 +3032,17 @@
       "recommendationReason": "Recommended because the source trail supports the date, venue, and scene fit strongly enough for a calendar pick.",
       "bestFor": "Best for readers looking for a harder late-room or warehouse-leaning club night.",
       "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
-      "sourceConfidence": "Single public source from Resident Advisor; sufficient for archive visibility but still worth rechecking for live planning."
+      "sourceConfidence": "Single public source from Resident Advisor; sufficient for archive visibility but still worth rechecking for live planning.",
+      "posterUrl": "assets/posters/caroline-roxy.png",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2458079",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/caroline-roxy.png"
+        ]
+      }
     },
     {
       "id": "shanghai-tonight-night-festival-2026",
@@ -2946,7 +3060,7 @@
       ],
       "genre": "nightlife campaign, live performances, markets, music events",
       "confidence": "Watch",
-      "status": "watch",
+      "status": "past",
       "price": "Varies by event",
       "age": "Varies by event",
       "source": "https://english.shanghai.gov.cn/en-PlanANightOut/20260608/6a9a6187e3f54378b534ec023a0b805a.html?watch=shanghai-tonight",
@@ -3066,7 +3180,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       },
       "recommendationReason": "Archived for complete RA Shanghai coverage; useful as a rooftop house/techno social route, not a hard-room recommendation.",
@@ -3077,6 +3191,7 @@
       "organizer": "Spacepanda",
       "detailsUrl": "https://ra.co/events/2457326",
       "ticketUrl": "https://ra.co/events/2457326",
+      "posterUrl": "assets/posters/sunkissed.jpg",
       "lineup": [
         {
           "name": "Tom Price",
@@ -3095,6 +3210,16 @@
           "note": "RA lists Martin Ma on the SUNKISSED lineup."
         }
       ],
+      "posterEvidence": {
+        "type": "flyer-front-back",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2457326",
+        "status": "RA front and back flyer images were downloaded locally for reference.",
+        "localFiles": [
+          "assets/posters/sunkissed.jpg",
+          "assets/posters/sunkissed-back.jpg"
+        ]
+      },
       "promotionalLinks": [
         {
           "label": "SmartShanghai ticket link exposed by RA",
@@ -3163,7 +3288,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": false,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": [
           "lineup limited",
           "address/source check"
@@ -3172,7 +3297,17 @@
       "recommendationReason": "Recommended because the source trail supports the date, venue, and scene fit strongly enough for a calendar pick.",
       "bestFor": "Best for readers looking for a harder late-room or warehouse-leaning club night.",
       "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
-      "sourceConfidence": "Single public source from Resident Advisor; sufficient for archive visibility but still worth rechecking for live planning."
+      "sourceConfidence": "Single public source from Resident Advisor; sufficient for archive visibility but still worth rechecking for live planning.",
+      "posterUrl": "assets/posters/techno-worlds.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2448375",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/techno-worlds.jpg"
+        ]
+      }
     },
     {
       "id": "house-of-zup-jun7",
@@ -3280,6 +3415,17 @@
           "lastChecked": "2026-06-14"
         }
       ],
+      "posterUrl": "assets/posters/house-of-zup-jun7.jpg",
+      "posterEvidence": {
+        "type": "flyer-front-back",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2457142",
+        "status": "RA flyer front and back images were downloaded locally for reference through public indexed image links.",
+        "localFiles": [
+          "assets/posters/house-of-zup-jun7.jpg",
+          "assets/posters/house-of-zup-jun7-back.jpg"
+        ]
+      },
       "soundTags": [
         "groovy",
         "rooftop"
@@ -3296,7 +3442,7 @@
         "lateRoom": false,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       }
     },
@@ -3315,7 +3461,7 @@
       ],
       "genre": "house, hip-hop, groove, club",
       "confidence": "High",
-      "status": "upcoming",
+      "status": "past",
       "price": "128 RMB",
       "age": "18+",
       "source": "https://ra.co/events/2454518",
@@ -3407,7 +3553,10 @@
         "type": "flyer",
         "source": "Resident Advisor event page",
         "url": "https://ra.co/events/2454518",
-        "status": "Flyer image is visible on the RA detail page."
+        "status": "Flyer image is visible on the RA detail page.",
+        "localFiles": [
+          "assets/posters/fruitygroove-soul-navigator.png"
+        ]
       },
       "ticketStatus": "RA lists cost at 128 RMB and minimum age 18+. Final checkout availability should be checked before purchase.",
       "addedAt": "2026-06-08",
@@ -3462,7 +3611,7 @@
       ],
       "genre": "techno, bass, UKG, dubstep, baile funk",
       "confidence": "High",
-      "status": "upcoming",
+      "status": "past",
       "price": "WeChat mini-program",
       "age": "18+",
       "source": "https://ra.co/events/2460995",
@@ -3564,7 +3713,10 @@
         "type": "flyer",
         "source": "Resident Advisor event page",
         "url": "https://ra.co/events/2460995",
-        "status": "Flyer front and back images are visible on the RA detail page."
+        "status": "Flyer front and back images are visible on the RA detail page.",
+        "localFiles": [
+          "assets/posters/kollin.jpg"
+        ]
       },
       "ticketStatus": "RA says to scan the WeChat mini-program code to purchase tickets and lists minimum age 18+.",
       "posterUrl": "assets/posters/kollin.jpg"
@@ -3584,7 +3736,7 @@
       ],
       "genre": "trance, techno",
       "confidence": "High",
-      "status": "upcoming",
+      "status": "past",
       "price": "140 RMB",
       "age": "18+",
       "source": "https://ra.co/events/2466129",
@@ -3661,7 +3813,10 @@
         "type": "flyer",
         "source": "Resident Advisor event page",
         "url": "https://ra.co/events/2466129",
-        "status": "Flyer front image is visible on the RA detail page."
+        "status": "Flyer front image is visible on the RA detail page.",
+        "localFiles": [
+          "assets/posters/cltx-abyss.jpg"
+        ]
       },
       "ticketStatus": "RA lists cost at 140 RMB and minimum age 18+.",
       "posterUrl": "assets/posters/cltx-abyss.jpg"
@@ -3681,7 +3836,7 @@
       ],
       "genre": "techno, house",
       "confidence": "High",
-      "status": "upcoming",
+      "status": "past",
       "price": "100 RMB",
       "age": "18+",
       "source": "https://ra.co/events/2461478",
@@ -3747,7 +3902,10 @@
         "type": "flyer",
         "source": "Resident Advisor event page",
         "url": "https://ra.co/events/2461478",
-        "status": "Flyer image is visible on the RA detail page."
+        "status": "Flyer image is visible on the RA detail page.",
+        "localFiles": [
+          "assets/posters/milo-cosmjn.jpg"
+        ]
       },
       "ticketStatus": "RA lists cost at 100 RMB and minimum age 18+. Final ticket route should be checked before publishing a direct purchase CTA.",
       "posterUrl": "assets/posters/milo-cosmjn.jpg"
@@ -3811,6 +3969,16 @@
           "lastChecked": "2026-06-14"
         }
       ],
+      "posterUrl": "assets/posters/prgrm-021.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2464171",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/prgrm-021.jpg"
+        ]
+      },
       "kind": "event",
       "soundTags": [
         "hard-techno",
@@ -3831,7 +3999,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       }
     },
@@ -3850,7 +4018,7 @@
       ],
       "genre": "club, experimental electronic",
       "confidence": "Medium",
-      "status": "upcoming",
+      "status": "past",
       "price": "120 RMB",
       "age": "18+",
       "source": "https://ra.co/events/2460549",
@@ -3886,7 +4054,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       },
       "recommendationReason": "Included because Resident Advisor supports the event basics and the sound or venue context is relevant to Shanghai electronic nightlife.",
@@ -3919,7 +4087,17 @@
           "note": "RA-listed lineup artist; exact set time was not published."
         }
       ],
-      "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+."
+      "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+.",
+      "posterUrl": "assets/posters/fengyun-5.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2460549",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/fengyun-5.jpg"
+        ]
+      }
     },
     {
       "id": "horizon",
@@ -3935,7 +4113,7 @@
       ],
       "genre": "techno, house",
       "confidence": "High",
-      "status": "upcoming",
+      "status": "past",
       "price": "138-178 RMB",
       "age": "18+",
       "source": "https://ra.co/events/2459595",
@@ -4004,7 +4182,10 @@
         "type": "flyer",
         "source": "Resident Advisor event page",
         "url": "https://ra.co/events/2459595",
-        "status": "Flyer front and back images are visible on the RA detail page."
+        "status": "Flyer front and back images are visible on the RA detail page.",
+        "localFiles": [
+          "assets/posters/horizon.jpg"
+        ]
       },
       "promotionalLinks": [
         {
@@ -4036,7 +4217,7 @@
       ],
       "genre": "industrial, italo disco, darkwave, EBM, goth",
       "confidence": "High",
-      "status": "upcoming",
+      "status": "past",
       "price": "Free",
       "age": "18+",
       "source": "https://ra.co/events/2464301",
@@ -4098,7 +4279,10 @@
         "type": "flyer",
         "source": "Resident Advisor event page",
         "url": "https://ra.co/events/2464301",
-        "status": "Flyer front image is visible on the RA detail page."
+        "status": "Flyer front image is visible on the RA detail page.",
+        "localFiles": [
+          "assets/posters/the-woods.jpg"
+        ]
       },
       "ticketStatus": "RA lists cost as 0 and minimum age 18+; event description says entry is free.",
       "posterUrl": "assets/posters/the-woods.jpg"
@@ -4118,7 +4302,7 @@
       ],
       "genre": "house, techno-adjacent",
       "confidence": "High",
-      "status": "upcoming",
+      "status": "past",
       "price": "120 RMB",
       "age": "18+",
       "source": "https://ra.co/events/2461476",
@@ -4183,7 +4367,10 @@
         "type": "flyer",
         "source": "Resident Advisor event page",
         "url": "https://ra.co/events/2461476",
-        "status": "Flyer image is visible on the RA detail page."
+        "status": "Flyer image is visible on the RA detail page.",
+        "localFiles": [
+          "assets/posters/matisa-limsum.jpg"
+        ]
       },
       "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+. Final ticket route should be checked before publishing a direct purchase CTA.",
       "posterUrl": "assets/posters/matisa-limsum.jpg"
@@ -4202,7 +4389,7 @@
       ],
       "genre": "rooftop club, DJ sets",
       "confidence": "Medium",
-      "status": "upcoming",
+      "status": "past",
       "price": "188 early bird / 228 presale / 258 door, includes 1 drink",
       "age": "Not listed",
       "source": "https://www.smartshanghai.com/event/nova-events-presents-sunset-sessions-flair-rooftop-party-2026-06-13-2",
@@ -4275,7 +4462,7 @@
       ],
       "genre": "experimental, future beats, hip-hop",
       "confidence": "High",
-      "status": "upcoming",
+      "status": "past",
       "price": "148 RMB",
       "age": "18+",
       "source": "https://ra.co/events/2453279",
@@ -4381,7 +4568,10 @@
         "type": "flyer",
         "source": "Resident Advisor event page",
         "url": "https://ra.co/events/2453279",
-        "status": "Flyer image is visible on the RA detail page."
+        "status": "Flyer image is visible on the RA detail page.",
+        "localFiles": [
+          "assets/posters/nosaj-thing.png"
+        ]
       },
       "ticketStatus": "RA lists cost at 148 RMB and minimum age 18+.",
       "posterUrl": "assets/posters/nosaj-thing.png"
@@ -4401,7 +4591,7 @@
       ],
       "genre": "hard techno, new trance",
       "confidence": "High",
-      "status": "upcoming",
+      "status": "past",
       "price": "120 RMB",
       "age": "Check source",
       "source": "https://ra.co/events/2458037",
@@ -4474,7 +4664,10 @@
         "type": "flyer",
         "source": "Resident Advisor event page",
         "url": "https://ra.co/events/2458037",
-        "status": "Flyer image is visible on the RA detail page."
+        "status": "Flyer image is visible on the RA detail page.",
+        "localFiles": [
+          "assets/posters/santa-k.png"
+        ]
       },
       "promotionalLinks": [
         {
@@ -4501,7 +4694,7 @@
       ],
       "genre": "electro, EBM, industrial, techno, IDM",
       "confidence": "High",
-      "status": "upcoming",
+      "status": "past",
       "price": "118 RMB",
       "age": "Not listed",
       "source": "https://ra.co/events/2458269",
@@ -4576,7 +4769,10 @@
         "type": "flyer",
         "source": "Resident Advisor event page",
         "url": "https://ra.co/events/2458269",
-        "status": "Flyer image is visible on the RA detail page."
+        "status": "Flyer image is visible on the RA detail page.",
+        "localFiles": [
+          "assets/posters/synth-crush.jpg"
+        ]
       },
       "ticketStatus": "RA lists cost at 118 RMB. Age rule was not visible in the fetched RA text.",
       "posterUrl": "assets/posters/synth-crush.jpg"
@@ -4596,7 +4792,7 @@
       ],
       "genre": "techno, club, multi-room pop-up",
       "confidence": "Watch",
-      "status": "watch",
+      "status": "past",
       "price": "Check System",
       "age": "Check promoter",
       "source": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
@@ -4762,6 +4958,17 @@
           "lastChecked": "2026-06-14"
         }
       ],
+      "posterUrl": "assets/posters/house-of-zup.jpg",
+      "posterEvidence": {
+        "type": "flyer-front-back",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2464155",
+        "status": "RA flyer front and back images were downloaded locally for reference through public indexed image links.",
+        "localFiles": [
+          "assets/posters/house-of-zup.jpg",
+          "assets/posters/house-of-zup-back.jpg"
+        ]
+      },
       "kind": "event",
       "soundTags": [
         "groovy",
@@ -4779,7 +4986,7 @@
         "lateRoom": false,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       }
     },
@@ -4936,6 +5143,16 @@
           "lastChecked": "2026-06-14"
         }
       ],
+      "posterUrl": "assets/posters/bloom-season-1-grand-final.png",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2456798",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/bloom-season-1-grand-final.png"
+        ]
+      },
       "kind": "event",
       "soundTags": [
         "rooftop",
@@ -4954,7 +5171,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       }
     },
@@ -5117,6 +5334,16 @@
           "lastChecked": "2026-06-14"
         }
       ],
+      "posterUrl": "assets/posters/cybionte-solo-ykk-heshang.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2467513",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/cybionte-solo-ykk-heshang.jpg"
+        ]
+      },
       "kind": "event",
       "soundTags": [],
       "decisionTags": [
@@ -5131,7 +5358,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       }
     },
@@ -5338,7 +5565,10 @@
         "type": "flyer",
         "source": "Resident Advisor event page",
         "url": "https://ra.co/events/2464178",
-        "status": "Flyer front image is visible on the RA detail page."
+        "status": "Flyer front image is visible on the RA detail page.",
+        "localFiles": [
+          "assets/posters/photocult-mask-desire-auction.png"
+        ]
       },
       "ticketStatus": "RA lists cost at 168 RMB and minimum age 18+.",
       "recommendationReason": "Recommended because RA publishes the date, venue, two-room lineup, exact running order, cost, age rule, and flyer evidence for a Reactor/PHOTOCULT techno program.",
@@ -5469,7 +5699,10 @@
         "type": "flyer",
         "source": "Resident Advisor event page",
         "url": "https://ra.co/events/2461531",
-        "status": "Flyer front image is visible on the RA detail page."
+        "status": "Flyer front image is visible on the RA detail page.",
+        "localFiles": [
+          "assets/posters/mrd.png"
+        ]
       },
       "ticketStatus": "RA lists cost at 128 RMB and minimum age 18+.",
       "posterUrl": "assets/posters/mrd.png"
@@ -5529,6 +5762,16 @@
           "lastChecked": "2026-06-14"
         }
       ],
+      "posterUrl": "assets/posters/nikita-zabelin-potent.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2467512",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/nikita-zabelin-potent.jpg"
+        ]
+      },
       "kind": "event",
       "soundTags": [
         "groovy"
@@ -5545,7 +5788,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       }
     },
@@ -5632,6 +5875,17 @@
           "lastChecked": "2026-06-14"
         }
       ],
+      "posterUrl": "assets/posters/onefortyasia-mungk-simbie.jpg",
+      "posterEvidence": {
+        "type": "flyer-front-back",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2466405",
+        "status": "RA flyer front and back images were downloaded locally for reference through public indexed image links.",
+        "localFiles": [
+          "assets/posters/onefortyasia-mungk-simbie.jpg",
+          "assets/posters/onefortyasia-mungk-simbie-back.jpg"
+        ]
+      },
       "kind": "event",
       "soundTags": [
         "bass-hybrid"
@@ -5649,7 +5903,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       }
     },
@@ -5817,6 +6071,16 @@
           "lastChecked": "2026-06-14"
         }
       ],
+      "posterUrl": "assets/posters/atm-leo-monira.png",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2466700",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/atm-leo-monira.png"
+        ]
+      },
       "kind": "event",
       "soundTags": [
         "hard-techno",
@@ -5836,7 +6100,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       }
     },
@@ -5890,6 +6154,16 @@
           "lastChecked": "2026-06-14"
         }
       ],
+      "posterUrl": "assets/posters/enchanted-night-the-nest.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2451822",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/enchanted-night-the-nest.jpg"
+        ]
+      },
       "kind": "event",
       "soundTags": [
         "rooftop"
@@ -5908,7 +6182,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       }
     },
@@ -6156,6 +6430,16 @@
           "lastChecked": "2026-06-14"
         }
       ],
+      "posterUrl": "assets/posters/neon-jungle-tom-kynd.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2466422",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/neon-jungle-tom-kynd.jpg"
+        ]
+      },
       "kind": "event",
       "soundTags": [
         "bass-hybrid",
@@ -6175,7 +6459,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       }
     },
@@ -6234,6 +6518,16 @@
           "lastChecked": "2026-06-14"
         }
       ],
+      "posterUrl": "assets/posters/sciahri-potent.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2467511",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/sciahri-potent.jpg"
+        ]
+      },
       "kind": "event",
       "soundTags": [
         "groovy"
@@ -6251,7 +6545,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       }
     },
@@ -6318,6 +6612,17 @@
           "lastChecked": "2026-06-14"
         }
       ],
+      "posterUrl": "assets/posters/friendsstandout.jpg",
+      "posterEvidence": {
+        "type": "flyer-front-back",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2455159",
+        "status": "RA flyer front and back images were downloaded locally for reference through public indexed image links.",
+        "localFiles": [
+          "assets/posters/friendsstandout.jpg",
+          "assets/posters/friendsstandout-back.jpg"
+        ]
+      },
       "kind": "event",
       "soundTags": [],
       "decisionTags": [
@@ -6332,7 +6637,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       }
     },
@@ -6523,7 +6828,10 @@
         "type": "event images and flyer",
         "source": "SmartShanghai and Resident Advisor event pages",
         "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
-        "status": "SmartShanghai event images and RA flyer front are visible on the detail pages."
+        "status": "SmartShanghai event images and RA flyer front are visible on the detail pages.",
+        "localFiles": [
+          "assets/posters/cyber-buddha.jpg"
+        ]
       },
       "promotionalLinks": [
         {
@@ -6629,7 +6937,10 @@
         "type": "flyer",
         "source": "Resident Advisor event page",
         "url": "https://ra.co/events/2462792",
-        "status": "Flyer front and back images are visible on the RA detail page."
+        "status": "Flyer front and back images are visible on the RA detail page.",
+        "localFiles": [
+          "assets/posters/dark-room.jpg"
+        ]
       },
       "ticketStatus": "RA says to scan the WeChat mini-program code to purchase tickets and lists minimum age 18+.",
       "recommendationReason": "Recommended because RA publishes the Dirty House date, techno running order, artist order, WeChat ticket route note, age rule, and flyer evidence.",
@@ -7747,6 +8058,16 @@
           "lastChecked": "2026-06-14"
         }
       ],
+      "posterUrl": "assets/posters/shaun-soomro-dj-serang.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2232295",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/shaun-soomro-dj-serang.jpg"
+        ]
+      },
       "kind": "event",
       "soundTags": [],
       "decisionTags": [
@@ -7763,7 +8084,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": [
           "watchlist"
         ]
@@ -7899,9 +8220,8 @@
       "url": "https://ra.co/events/2458037",
       "title": "Santa K x TURBO",
       "sourceLabel": "Resident Advisor",
-      "status": "browser-required",
       "parsed": false,
-      "access": "browser-required"
+      "error": "This operation was aborted"
     },
     {
       "url": "https://ra.co/events/2461476",
@@ -7952,8 +8272,10 @@
     },
     {
       "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
-      "title": "Cyber Budha Special Vol: Twilight in the Forbidden City with The Hymmapan Electron (TH), Taiga, and MICO",
-      "parsed": true
+      "title": "Cyber Buddha: Electronic Nomads of Isan",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false,
+      "error": "This operation was aborted"
     }
   ],
   "computerUseQueue": [
@@ -8480,7 +8802,7 @@
       ]
     }
   ],
-  "curatedEventsApplied": 67,
+  "curatedEventsApplied": 69,
   "djItineraryStats": {
     "profileCount": 82,
     "curatedProfileCount": 80,
@@ -8593,7 +8915,7 @@
   },
   "quality": {
     "auditDate": "2026-06-14",
-    "generatedAt": "2026-06-14T12:26:35.692Z",
+    "generatedAt": "2026-06-14T13:39:08.800Z",
     "totals": {
       "events": 89,
       "future": 34,
@@ -8618,8 +8940,8 @@
       "highMissingLineup": 0,
       "platformVerificationQueue": 5,
       "platformVerificationSources": 9,
-      "curatedEventsApplied": 67,
-      "failedSourceReports": 18
+      "curatedEventsApplied": 69,
+      "failedSourceReports": 19
     },
     "watchQueue": [
       {
@@ -12208,10 +12530,11 @@
         "label": "SmartShanghai June 2026 clubbing guide",
         "kind": "guide",
         "sourceStatus": "secondary",
-        "ok": true,
+        "ok": false,
         "checkedAt": "2026-06-14",
-        "status": 200,
-        "eventLinks": 0
+        "status": null,
+        "eventLinks": 0,
+        "error": "This operation was aborted"
       },
       {
         "label": "SmartShanghai clubbing listings",
@@ -12221,7 +12544,7 @@
         "checkedAt": "2026-06-14",
         "status": null,
         "eventLinks": 0,
-        "error": "fetch failed"
+        "error": "This operation was aborted"
       },
       {
         "label": "X/Twitter keyword: \"Shanghai\" techno",

@@ -1,6 +1,6 @@
 # Basement Dispatch 小红书内容追踪记录
 
-更新时间：2026-06-13 Asia/Shanghai
+更新时间：2026-06-14 Asia/Shanghai
 
 ## 账号定位
 
@@ -53,7 +53,7 @@ D:\workspace\rave calendar\assets\social\basement-dispatch-logo-3-stamp-badge.pn
 
 ```text
 开号第一帖，直接给“周末去哪”的答案。
-按 vibe 把 techno / bass / rooftop / darkwave 选择分好。
+按 vibe 把 techno / bass / darkwave 等选择分好；其中 rooftop 角度后续不再进入 techno 内容主线。
 建立账号的核心产品感：不是泛夜生活号，而是上海电子音乐周末决策入口。
 ```
 
@@ -71,7 +71,7 @@ D:\workspace\rave calendar\assets\social\xhs-first-post
 03-hard-fast.png
 04-techno-house-bass.png
 05-dark-machine-experimental.png
-06-rooftop-cta.png
+06-rooftop-cta.png（历史素材，不再复用到 techno 主线）
 ```
 
 备注：
@@ -117,6 +117,90 @@ D:\workspace\rave calendar\assets\social\xhs-posts\2026-06-13-tonight-second-pus
 世界杯只作为“今晚氛围钩子”：先听电子音乐，凌晨/早上再接比赛。
 ```
 
+## 已定时发送内容
+
+### Sound Index 01｜已定时发送｜Hard Techno
+
+主题：
+
+```text
+不是所有快歌都叫 Hard Techno
+```
+
+状态：
+
+```text
+用户确认已在小红书定时发送。
+具体定时发布时间未在本地记录。
+```
+
+作用：
+
+```text
+开启 TECHNO SOUND INDEX 内容线。
+一次只介绍一个 techno 声音，这期只讲 Hard Techno。
+用“文一点 + 说人话”的方式解释专业听感词，并让新手能判断这类房间是否适合自己。
+```
+
+文案文件：
+
+```text
+D:\workspace\rave calendar\assets\social\xhs-posts\2026-06-14-techno-sound-index-01-hard-techno.md
+D:\workspace\rave calendar\assets\social\xhs-posts\2026-06-14-techno-sound-index-01-hard-techno-publish-kit.md
+D:\workspace\rave calendar\assets\social\xhs-posts\2026-06-14-techno-sound-index-01-hard-techno-publish-copy.txt
+```
+
+图片目录：
+
+```text
+D:\workspace\rave calendar\assets\social\xhs-posts\2026-06-14-techno-sound-index-01-hard-techno
+```
+
+图片顺序：
+
+```text
+01-cover.png
+02-definition.png
+03-kick-rumble-glossary.png
+04-processing-texture-glossary.png
+05-listening-cues-sound.png
+06-listening-cues-room.png
+07-common-misreadings.png
+08-listening-coordinates.png
+09-fit-not-fit.png
+10-shanghai-checklist-cta.png
+```
+
+封面钩子：
+
+```text
+不是所有快歌都叫 Hard Techno
+鼓点推到胸口之前，先看这 5 个判断点
+
+01 Kick / Rumble
+02 Processing / Texture
+03 Listening Cues: Sound
+04 Listening Cues: Room
+05 Common Misreadings
+```
+
+合规记录：
+
+```text
+图片和正文不放二维码、外链、短链、音乐平台 logo 或“私信发歌单”。
+主页/网页引导只用文字表达，不写 URL。
+```
+
+复盘观察：
+
+```text
+1. 发布时间后记录 1h / 12h / 24h 的浏览、点赞、收藏、评论、主页访问。
+2. 特别看评论是否问：歌单 / 新手能不能去 / 上海哪里有 / 下一个曲风。
+3. 如果收藏率高，继续做 TECHNO SOUND INDEX 02。
+4. 如果评论问“太硬怎么办”，下一期可做 Hypnotic Techno。
+5. 如果评论问“更机器一点”，下一期可做 Industrial Techno。
+```
+
 ## 待发内容
 
 ### Post 03｜待发｜Basement Dispatch 选场指南 01
@@ -124,7 +208,7 @@ D:\workspace\rave calendar\assets\social\xhs-posts\2026-06-13-tonight-second-pus
 主题：
 
 ```text
-黑房间 vs rooftop 热身
+黑房间 vs 轻松 club 场
 ```
 
 作用：
@@ -132,28 +216,28 @@ D:\workspace\rave calendar\assets\social\xhs-posts\2026-06-13-tonight-second-pus
 ```text
 承接 Post 01 和 Post 02。
 前两篇是清单和当晚提醒，Post 03 是方法论，但不要一次讲完。
-先选一个最容易理解的侧面：黑房间还是 rooftop 热身。
+先选一个真正贴电子音乐、又好理解的侧面：今晚想认真听，还是轻松跳。
 让用户知道以后每周清单不是随机推荐，而是按场景和能量拆。
 ```
 
 文案文件：
 
 ```text
-D:\workspace\rave calendar\assets\social\xhs-posts\2026-06-14-black-room-vs-rooftop.md
+D:\workspace\rave calendar\assets\social\xhs-posts\2026-06-14-black-room-vs-club-night.md
 ```
 
 图片目录：
 
 ```text
-待生成：D:\workspace\rave calendar\assets\social\xhs-posts\2026-06-14-black-room-vs-rooftop
+待生成：D:\workspace\rave calendar\assets\social\xhs-posts\2026-06-14-black-room-vs-club-night
 ```
 
 图片顺序：
 
 ```text
-01-cover.png：黑房间还是 rooftop？
+01-cover.png：今晚想认真听，还是轻松跳？
 02-black-room.png：黑房间是什么
-03-rooftop.png：rooftop 是什么
+03-club-night.png：轻松 club 场是什么
 04-decision-map.png：怎么快速判断
 05-cta.png：下期想看什么
 ```
@@ -168,14 +252,14 @@ Post 02 发布后 12-24 小时。
 推荐标题：
 
 ```text
-选场指南 01｜今晚适合黑房间，还是 rooftop？
+选场指南 01｜今晚想认真听，还是轻松跳？
 ```
 
 封面注意：
 
 ```text
 建议重新生成封面，避免使用之前“5 种 vibe”的总论图片。
-这篇只讲一个侧面，封面必须突出“黑房间还是 rooftop？”。
+这篇只讲一个侧面，封面必须突出“今晚想认真听，还是轻松跳？”。
 ```
 
 ## 当前内容序列
@@ -183,7 +267,7 @@ Post 02 发布后 12-24 小时。
 ```text
 1. 周末清单：告诉用户这周末有哪些选择。
 2. 今晚快速版：只看今天晚上还能去哪。
-3. 选场指南 01：黑房间 vs rooftop 热身。
+3. 选场指南 01：黑房间 vs 轻松 club 场。
 4. 选场指南 02：club night、dark wave、machine sound 怎么分。
 5. 场地速查 01：Abyss / POTENT / Reactor / EXIT 怎么选。
 ```
@@ -201,7 +285,7 @@ Post 02 发布后 12-24 小时。
 机器感
 工业冷光
 合成器冷光
-rooftop 热身
+club night
 先看风景，再进房间
 这场适合谁
 这条线适合谁
@@ -213,6 +297,7 @@ rooftop 热身
 不要暗示药物、失控、违法、未成年夜生活。
 不要把未确认活动写成百分百确定。
 不要说场地会转播世界杯，除非有官方信息。
+不要把 Pop Bar、Flair、rooftop、Bund view 写进 techno 内容主线；这些不是 techno 语境。
 不要把内容写成新闻通稿，保持小红书短句和选择建议。
 ```
 

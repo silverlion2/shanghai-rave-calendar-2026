@@ -849,6 +849,47 @@ Verification:
 - `npm run test:live-room` passed.
 - In-app browser checks confirmed the share popup opens, the local QR renders visually, centered status readouts align to their containers, action rows stay on one line, the message feed is above the composer, and `.room-discussion-messages` uses `overflow-y: auto` with a bounded max height.
 
+## 2026-06-14 International Livestream Source Backlog
+
+The user asked whether international nightclubs have livestreams that could be linked into the project later.
+
+Saved state:
+
+- Added `docs/international-club-livestream-sources.md` as a future-feature research note.
+- Candidate official sources include HOR Berlin, Boiler Room, Mixmag Lab, DJ Mag HQ, Defected Records, and Cercle.
+- Recommended first version is outbound official links or platform-approved embeds, not raw stream ripping or restreaming.
+- Suggested future data fields include `streamUrl`, `streamPlatform`, `embedUrl`, `embedAllowed`, `streamStartsAt`, `streamStatus`, `sourceName`, `sourceUrl`, and `rightsStatus`.
+
+Implementation status:
+
+- No production pages, event data, or scripts were changed for livestream integration.
+- Treat this as a backlog note until the user explicitly asks to build the live/watch surface.
+
+## 2026-06-14 Chinese Version Hidden
+
+The user asked to add a Chinese version, then rejected the partial translation because several pages still felt incomplete. Decision: do not ship Chinese UI for now.
+
+Implemented state:
+
+- The public Chinese entry is hidden.
+- `/zh` is no longer registered in `config/website-structure.json`.
+- `sitemap.xml` no longer advertises `/zh`.
+- `index.html` no longer shows a Chinese navigation link or `zh-CN` alternate link.
+- The temporary shared Chinese mode script and `zh.html` page were removed.
+- Main pages remain English-only.
+
+Future rule if Chinese is rebuilt:
+
+- Do not translate the site name `Shanghai Rave Index`.
+- Do not translate DJ names, venue names, or style/genre labels.
+- Only translate the surrounding product UI, help text, buttons, filters, and operational copy, and cover the full navigation surface before exposing it publicly.
+
+Verification:
+
+- `node scripts/check-site-structure.js` passed.
+- `node scripts/check.js` passed.
+- Local preview confirmed `zh.html` returns 404 and the homepage/venue page have no Chinese entry or Chinese mode switch.
+
 ## 2026-06-14 Community Contribution Review Queue
 
 The user asked for a public way for community members to complete the database, including proposing additions to existing entries rather than only submitting new leads. The follow-up request asked to study Resident Advisor's community/promoter contribution model before finalizing.
@@ -878,6 +919,47 @@ Verification:
 - `npm run check` passed.
 - `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs` passed with 0 findings.
 - Browser verification on desktop and mobile confirmed the mode switch, existing-entry target search, role/affiliation fields, local queue persistence, and responsive layout.
+
+## 2026-06-14 Xiaohongshu Techno Sound Index 01 Scheduled
+
+The user confirmed the first `TECHNO SOUND INDEX` Xiaohongshu post has been scheduled for sending.
+
+Content state:
+
+- Issue: `TECHNO SOUND INDEX 01 - Hard Techno`
+- Recommended title: `不是所有快歌都叫 Hard Techno`
+- Status: scheduled on Xiaohongshu; exact scheduled publish time was not recorded locally.
+- Main plan: `assets/social/xhs-posts/2026-06-14-techno-sound-index-01-hard-techno.md`
+- Publish kit: `assets/social/xhs-posts/2026-06-14-techno-sound-index-01-hard-techno-publish-kit.md`
+- Copy-only file: `assets/social/xhs-posts/2026-06-14-techno-sound-index-01-hard-techno-publish-copy.txt`
+- Image folder: `assets/social/xhs-posts/2026-06-14-techno-sound-index-01-hard-techno/`
+- Generation script: `output/xhs_hard_techno/generate-hard-techno-cards.py`
+
+Final image set:
+
+- `01-cover.png`
+- `02-definition.png`
+- `03-kick-rumble-glossary.png`
+- `04-processing-texture-glossary.png`
+- `05-listening-cues-sound.png`
+- `06-listening-cues-room.png`
+- `07-common-misreadings.png`
+- `08-listening-coordinates.png`
+- `09-fit-not-fit.png`
+- `10-shanghai-checklist-cta.png`
+
+Editorial decisions:
+
+- The cover includes the five-point hook using English titles that match the later page headings: `Kick / Rumble`, `Processing / Texture`, `Listening Cues: Sound`, `Listening Cues: Room`, and `Common Misreadings`.
+- Pages 03-07 explicitly mark `判断点 01/05` through `判断点 05/05`.
+- Page 01 and Page 10 promote the Basement Dispatch homepage/web calendar with text-only CTA.
+- No QR code, external URL, short link, music-platform logo, or private-message playlist CTA is used.
+
+Follow-up:
+
+- Record 1h, 12h, and 24h performance after publish if available.
+- Watch comments for `歌单`, `新手能不能去`, `上海哪里有`, and next-subgenre requests.
+- Potential next posts: `Hypnotic Techno` if readers ask for something less hard, or `Industrial Techno` if they ask for more machine-like sound.
 
 ## 2026-06-14 Event Archive Cutoff Moved to 06:00
 
@@ -917,3 +999,25 @@ Verification:
 - `npm run check` passed.
 - `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs` passed with 0 findings.
 - Browser verification on `venues.html` found 16 system-event sections and 53 internal event links; browser verification on `djs.html` confirmed appearance actions include `Open in calendar`, `Event page`, `Source`, and `Tickets` with no console warnings/errors.
+
+## 2026-06-14 Resident Advisor Poster Completion
+
+Completed the RA Shanghai poster/reference pass for the current 41-row RA manifest.
+
+Implemented state:
+
+- Every RA manifest row now has a local `posterUrl` and `posterEvidence.localFiles`; the gap count is `noPoster: 0`, `posterNoLocalFiles: 0`, `missingLocalFiles: 0`.
+- Downloaded and decoded all visible RA event flyer images encountered in this pass, including front/back references where RA exposed both.
+- Added durable curated overlays for `caroline-roxy` and `techno-worlds` so their local RA posters survive regeneration from the embedded fallback events.
+- Regenerated `data/events.json`, `data/dj-data.js`, `data/poster-archive.json`, generated event detail pages, and `sitemap.xml`.
+
+Verification:
+
+- `node scripts/scrape-events.js` passed with 89 events and 69 curated updates.
+- `npm run posters:prepare` generated 47 poster archive records.
+- `npm run seo` generated 89 event detail pages.
+- `node scripts/audit-events.js` passed; RA Shanghai coverage remained 41/41 and 15/15 upcoming.
+- `node scripts/check.js` passed.
+- `node --test tests/trust-framework.test.js` passed.
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json` passed with 0 findings.
+- `npm run check` passed with 52 tests.

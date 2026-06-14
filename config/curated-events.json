@@ -28,7 +28,10 @@
         "type": "flyer",
         "source": "Resident Advisor event page",
         "url": "https://ra.co/events/2461478",
-        "status": "Flyer image is visible on the RA detail page."
+        "status": "Flyer image is visible on the RA detail page.",
+        "localFiles": [
+          "assets/posters/milo-cosmjn.jpg"
+        ]
       },
       "ticketStatus": "RA lists cost at 100 RMB and minimum age 18+. Final ticket route should be checked before publishing a direct purchase CTA.",
       "sources": [
@@ -105,7 +108,10 @@
         "type": "flyer",
         "source": "Resident Advisor event page",
         "url": "https://ra.co/events/2460995",
-        "status": "Flyer front and back images are visible on the RA detail page."
+        "status": "Flyer front and back images are visible on the RA detail page.",
+        "localFiles": [
+          "assets/posters/kollin.jpg"
+        ]
       },
       "ticketStatus": "RA says to scan the WeChat mini-program code to purchase tickets and lists minimum age 18+.",
       "sources": [
@@ -225,7 +231,10 @@
         "type": "flyer",
         "source": "Resident Advisor event page",
         "url": "https://ra.co/events/2454518",
-        "status": "Flyer image is visible on the RA detail page."
+        "status": "Flyer image is visible on the RA detail page.",
+        "localFiles": [
+          "assets/posters/fruitygroove-soul-navigator.png"
+        ]
       },
       "ticketStatus": "RA lists cost at 128 RMB and minimum age 18+. Final checkout availability should be checked before purchase.",
       "addedAt": "2026-06-08",
@@ -265,7 +274,10 @@
         "type": "flyer",
         "source": "Resident Advisor event page",
         "url": "https://ra.co/events/2461476",
-        "status": "Flyer image is visible on the RA detail page."
+        "status": "Flyer image is visible on the RA detail page.",
+        "localFiles": [
+          "assets/posters/matisa-limsum.jpg"
+        ]
       },
       "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+. Final ticket route should be checked before publishing a direct purchase CTA.",
       "sources": [
@@ -311,7 +323,10 @@
         "type": "flyer",
         "source": "Resident Advisor event page",
         "url": "https://ra.co/events/2458037",
-        "status": "Flyer image is visible on the RA detail page."
+        "status": "Flyer image is visible on the RA detail page.",
+        "localFiles": [
+          "assets/posters/santa-k.png"
+        ]
       },
       "promotionalLinks": [
         {
@@ -364,7 +379,10 @@
         "type": "flyer",
         "source": "Resident Advisor event page",
         "url": "https://ra.co/events/2458269",
-        "status": "Flyer image is visible on the RA detail page."
+        "status": "Flyer image is visible on the RA detail page.",
+        "localFiles": [
+          "assets/posters/synth-crush.jpg"
+        ]
       },
       "ticketStatus": "RA lists cost at 118 RMB. Age rule was not visible in the fetched RA text.",
       "sources": [
@@ -414,7 +432,17 @@
           "status": "secondary",
           "lastChecked": "2026-06-11"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/fengyun-5.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2460549",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/fengyun-5.jpg"
+        ]
+      }
     },
     {
       "id": "horizon",
@@ -445,7 +473,10 @@
         "type": "flyer",
         "source": "Resident Advisor event page",
         "url": "https://ra.co/events/2459595",
-        "status": "Flyer front and back images are visible on the RA detail page."
+        "status": "Flyer front and back images are visible on the RA detail page.",
+        "localFiles": [
+          "assets/posters/horizon.jpg"
+        ]
       },
       "promotionalLinks": [
         {
@@ -499,7 +530,10 @@
         "type": "flyer",
         "source": "Resident Advisor event page",
         "url": "https://ra.co/events/2453279",
-        "status": "Flyer image is visible on the RA detail page."
+        "status": "Flyer image is visible on the RA detail page.",
+        "localFiles": [
+          "assets/posters/nosaj-thing.png"
+        ]
       },
       "ticketStatus": "RA lists cost at 148 RMB and minimum age 18+.",
       "sources": [
@@ -570,7 +604,17 @@
           "status": "trusted-ra",
           "lastChecked": "2026-06-14"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/prgrm-021.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2464171",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/prgrm-021.jpg"
+        ]
+      }
     },
     {
       "id": "nova-sunset-sessions-flair",
@@ -1049,7 +1093,10 @@
         "type": "flyer",
         "source": "Resident Advisor event page",
         "url": "https://ra.co/events/2464178",
-        "status": "Flyer front image is visible on the RA detail page."
+        "status": "Flyer front image is visible on the RA detail page.",
+        "localFiles": [
+          "assets/posters/photocult-mask-desire-auction.png"
+        ]
       },
       "ticketStatus": "RA lists cost at 168 RMB and minimum age 18+.",
       "recommendationReason": "Recommended because RA publishes the date, venue, two-room lineup, exact running order, cost, age rule, and flyer evidence for a Reactor/PHOTOCULT techno program.",
@@ -1120,7 +1167,10 @@
         "type": "flyer",
         "source": "Resident Advisor event page",
         "url": "https://ra.co/events/2461531",
-        "status": "Flyer front image is visible on the RA detail page."
+        "status": "Flyer front image is visible on the RA detail page.",
+        "localFiles": [
+          "assets/posters/mrd.png"
+        ]
       },
       "ticketStatus": "RA lists cost at 128 RMB and minimum age 18+.",
       "sources": [
@@ -1223,7 +1273,10 @@
         "type": "flyer",
         "source": "Resident Advisor event page",
         "url": "https://ra.co/events/2462792",
-        "status": "Flyer front and back images are visible on the RA detail page."
+        "status": "Flyer front and back images are visible on the RA detail page.",
+        "localFiles": [
+          "assets/posters/dark-room.jpg"
+        ]
       },
       "ticketStatus": "RA says to scan the WeChat mini-program code to purchase tickets and lists minimum age 18+.",
       "recommendationReason": "Recommended because RA publishes the Dirty House date, techno running order, artist order, WeChat ticket route note, age rule, and flyer evidence.",
@@ -1290,7 +1343,10 @@
         "type": "flyer",
         "source": "Resident Advisor event page",
         "url": "https://ra.co/events/2466129",
-        "status": "Flyer front image is visible on the RA detail page."
+        "status": "Flyer front image is visible on the RA detail page.",
+        "localFiles": [
+          "assets/posters/cltx-abyss.jpg"
+        ]
       },
       "ticketStatus": "RA lists cost at 140 RMB and minimum age 18+.",
       "sources": [
@@ -1347,7 +1403,10 @@
         "type": "flyer",
         "source": "Resident Advisor event page",
         "url": "https://ra.co/events/2464301",
-        "status": "Flyer front image is visible on the RA detail page."
+        "status": "Flyer front image is visible on the RA detail page.",
+        "localFiles": [
+          "assets/posters/the-woods.jpg"
+        ]
       },
       "ticketStatus": "RA lists cost as 0 and minimum age 18+; event description says entry is free.",
       "sources": [
@@ -2243,7 +2302,10 @@
         "type": "event images and flyer",
         "source": "SmartShanghai and Resident Advisor event pages",
         "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
-        "status": "SmartShanghai event images and RA flyer front are visible on the detail pages."
+        "status": "SmartShanghai event images and RA flyer front are visible on the detail pages.",
+        "localFiles": [
+          "assets/posters/cyber-buddha.jpg"
+        ]
       },
       "promotionalLinks": [
         {
@@ -2401,7 +2463,18 @@
           "status": "trusted-ra",
           "lastChecked": "2026-06-14"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/house-of-zup.jpg",
+      "posterEvidence": {
+        "type": "flyer-front-back",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2464155",
+        "status": "RA flyer front and back images were downloaded locally for reference through public indexed image links.",
+        "localFiles": [
+          "assets/posters/house-of-zup.jpg",
+          "assets/posters/house-of-zup-back.jpg"
+        ]
+      }
     },
     {
       "id": "bloom-season-1-grand-final",
@@ -2471,7 +2544,17 @@
           "status": "trusted-ra",
           "lastChecked": "2026-06-14"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/bloom-season-1-grand-final.png",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2456798",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/bloom-season-1-grand-final.png"
+        ]
+      }
     },
     {
       "id": "cybionte-solo-ykk-heshang",
@@ -2527,7 +2610,17 @@
           "status": "trusted-ra",
           "lastChecked": "2026-06-14"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/cybionte-solo-ykk-heshang.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2467513",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/cybionte-solo-ykk-heshang.jpg"
+        ]
+      }
     },
     {
       "id": "nikita-zabelin-potent",
@@ -2583,7 +2676,17 @@
           "status": "trusted-ra",
           "lastChecked": "2026-06-14"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/nikita-zabelin-potent.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2467512",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/nikita-zabelin-potent.jpg"
+        ]
+      }
     },
     {
       "id": "onefortyasia-mungk-simbie",
@@ -2667,7 +2770,18 @@
           "status": "trusted-ra",
           "lastChecked": "2026-06-14"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/onefortyasia-mungk-simbie.jpg",
+      "posterEvidence": {
+        "type": "flyer-front-back",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2466405",
+        "status": "RA flyer front and back images were downloaded locally for reference through public indexed image links.",
+        "localFiles": [
+          "assets/posters/onefortyasia-mungk-simbie.jpg",
+          "assets/posters/onefortyasia-mungk-simbie-back.jpg"
+        ]
+      }
     },
     {
       "id": "sciahri-potent",
@@ -2723,7 +2837,17 @@
           "status": "trusted-ra",
           "lastChecked": "2026-06-14"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/sciahri-potent.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2467511",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/sciahri-potent.jpg"
+        ]
+      }
     },
     {
       "id": "atm-leo-monira",
@@ -2792,7 +2916,17 @@
           "status": "trusted-ra",
           "lastChecked": "2026-06-14"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/atm-leo-monira.png",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2466700",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/atm-leo-monira.png"
+        ]
+      }
     },
     {
       "id": "enchanted-night-the-nest",
@@ -2843,7 +2977,17 @@
           "status": "trusted-ra",
           "lastChecked": "2026-06-14"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/enchanted-night-the-nest.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2451822",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/enchanted-night-the-nest.jpg"
+        ]
+      }
     },
     {
       "id": "neon-jungle-tom-kynd",
@@ -2906,7 +3050,17 @@
           "status": "trusted-ra",
           "lastChecked": "2026-06-14"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/neon-jungle-tom-kynd.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2466422",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/neon-jungle-tom-kynd.jpg"
+        ]
+      }
     },
     {
       "id": "friendsstandout",
@@ -2970,7 +3124,18 @@
           "status": "trusted-ra",
           "lastChecked": "2026-06-14"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/friendsstandout.jpg",
+      "posterEvidence": {
+        "type": "flyer-front-back",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2455159",
+        "status": "RA flyer front and back images were downloaded locally for reference through public indexed image links.",
+        "localFiles": [
+          "assets/posters/friendsstandout.jpg",
+          "assets/posters/friendsstandout-back.jpg"
+        ]
+      }
     },
     {
       "id": "shaun-soomro-dj-serang",
@@ -3022,7 +3187,17 @@
           "status": "trusted-ra-watch",
           "lastChecked": "2026-06-14"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/shaun-soomro-dj-serang.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2232295",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/shaun-soomro-dj-serang.jpg"
+        ]
+      }
     },
     {
       "id": "janein",
@@ -3079,7 +3254,17 @@
           "status": "trusted-ra",
           "lastChecked": "2026-06-14"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/janein.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2455145",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/janein.jpg"
+        ]
+      }
     },
     {
       "id": "darker-than-wax-dean-chew",
@@ -3136,7 +3321,17 @@
           "status": "trusted-ra",
           "lastChecked": "2026-06-14"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/darker-than-wax-dean-chew.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2437203",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/darker-than-wax-dean-chew.jpg"
+        ]
+      }
     },
     {
       "id": "gully-riddim-mssingno",
@@ -3225,7 +3420,17 @@
           "status": "trusted-ra",
           "lastChecked": "2026-06-14"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/gully-riddim-mssingno.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2445207",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/gully-riddim-mssingno.jpg"
+        ]
+      }
     },
     {
       "id": "interzone-summer-time",
@@ -3294,7 +3499,17 @@
           "status": "trusted-ra",
           "lastChecked": "2026-06-14"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/interzone-summer-time.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2456842",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/interzone-summer-time.jpg"
+        ]
+      }
     },
     {
       "id": "butterfree-m101",
@@ -3359,7 +3574,17 @@
           "status": "trusted-ra",
           "lastChecked": "2026-06-14"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/butterfree-m101.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2456891",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/butterfree-m101.jpg"
+        ]
+      }
     },
     {
       "id": "acierate-brvtalist",
@@ -3416,7 +3641,17 @@
           "status": "trusted-ra",
           "lastChecked": "2026-06-14"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/acierate-brvtalist.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2455146",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/acierate-brvtalist.jpg"
+        ]
+      }
     },
     {
       "id": "house-of-zup-jun7",
@@ -3523,7 +3758,18 @@
           "status": "trusted-ra",
           "lastChecked": "2026-06-14"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/house-of-zup-jun7.jpg",
+      "posterEvidence": {
+        "type": "flyer-front-back",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2457142",
+        "status": "RA flyer front and back images were downloaded locally for reference through public indexed image links.",
+        "localFiles": [
+          "assets/posters/house-of-zup-jun7.jpg",
+          "assets/posters/house-of-zup-jun7-back.jpg"
+        ]
+      }
     },
     {
       "id": "rui-ho",
@@ -3608,7 +3854,17 @@
           "status": "trusted-ra",
           "lastChecked": "2026-06-14"
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/tham.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2458056",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/tham.jpg"
+        ]
+      }
     },
     {
       "id": "dirty-beats",
@@ -3639,6 +3895,7 @@
       "detailsUrl": "https://ra.co/events/2450615",
       "ticketUrl": "https://ra.co/events/2450615",
       "lastChecked": "2026-06-14",
+      "posterUrl": "assets/posters/dirty-beats.png",
       "lineup": [
         {
           "name": "D_z",
@@ -3691,6 +3948,16 @@
           "source": "https://ra.co/events/2450615"
         }
       ],
+      "posterEvidence": {
+        "type": "flyer-front-back",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2450615",
+        "status": "RA front and back flyer images were downloaded locally for reference.",
+        "localFiles": [
+          "assets/posters/dirty-beats.png",
+          "assets/posters/dirty-beats-back.jpg"
+        ]
+      },
       "ticketStatus": "RA says to scan the WeChat mini-program QR code to purchase tickets and lists minimum age 18+. Price was not exposed in the indexed RA text.",
       "soundTags": [
         "techno",
@@ -3744,6 +4011,7 @@
       "detailsUrl": "https://ra.co/events/2458581",
       "ticketUrl": "https://ra.co/events/2458581",
       "lastChecked": "2026-06-14",
+      "posterUrl": "assets/posters/19hz-fractale.jpg",
       "lineup": [
         {
           "name": "Siesta",
@@ -3766,6 +4034,16 @@
           "note": "RA lists Yadong on the 19Hz lineup."
         }
       ],
+      "posterEvidence": {
+        "type": "flyer-front-back",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2458581",
+        "status": "RA front and back flyer images were downloaded locally for reference.",
+        "localFiles": [
+          "assets/posters/19hz-fractale.jpg",
+          "assets/posters/19hz-fractale-back.png"
+        ]
+      },
       "promotionalLinks": [
         {
           "label": "19Hz Shanghai Instagram exposed by RA",
@@ -3807,6 +4085,7 @@
       "detailsUrl": "https://ra.co/events/2457307",
       "ticketUrl": "https://ra.co/events/2457307",
       "lastChecked": "2026-06-14",
+      "posterUrl": "assets/posters/nightwave.jpg",
       "lineup": [
         {
           "name": "Juliano Allgayer",
@@ -3821,6 +4100,16 @@
           "note": "RA lists Odd on the NIGHTWAVE lineup."
         }
       ],
+      "posterEvidence": {
+        "type": "flyer-front-back",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2457307",
+        "status": "RA front and back flyer images were downloaded locally for reference.",
+        "localFiles": [
+          "assets/posters/nightwave.jpg",
+          "assets/posters/nightwave-back.jpg"
+        ]
+      },
       "promotionalLinks": [
         {
           "label": "SmartShanghai ticket link exposed by RA",
@@ -3860,6 +4149,7 @@
       "detailsUrl": "https://ra.co/events/2457326",
       "ticketUrl": "https://ra.co/events/2457326",
       "lastChecked": "2026-06-14",
+      "posterUrl": "assets/posters/sunkissed.jpg",
       "lineup": [
         {
           "name": "Tom Price",
@@ -3878,6 +4168,16 @@
           "note": "RA lists Martin Ma on the SUNKISSED lineup."
         }
       ],
+      "posterEvidence": {
+        "type": "flyer-front-back",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2457326",
+        "status": "RA front and back flyer images were downloaded locally for reference.",
+        "localFiles": [
+          "assets/posters/sunkissed.jpg",
+          "assets/posters/sunkissed-back.jpg"
+        ]
+      },
       "promotionalLinks": [
         {
           "label": "SmartShanghai ticket link exposed by RA",
@@ -3903,6 +4203,34 @@
           "lastChecked": "2026-06-14"
         }
       ]
+    },
+    {
+      "id": "caroline-roxy",
+      "source": "https://ra.co/events/2458079",
+      "posterUrl": "assets/posters/caroline-roxy.png",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2458079",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/caroline-roxy.png"
+        ]
+      }
+    },
+    {
+      "id": "techno-worlds",
+      "source": "https://ra.co/events/2448375",
+      "posterUrl": "assets/posters/techno-worlds.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Resident Advisor event page",
+        "url": "https://ra.co/events/2448375",
+        "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
+        "localFiles": [
+          "assets/posters/techno-worlds.jpg"
+        ]
+      }
     }
   ]
 }

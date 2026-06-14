@@ -289,8 +289,7 @@ function performerNamesForEvent(event) {
     .filter(name => !isPlaceholderPerformerName(name));
 }
 
-function validLocalPosterAsset(event) {
-  const posterUrl = String(event.posterUrl || "").trim();
+function validLocalPosterPath(posterUrl) {
   if (!posterUrl || !/^assets\/posters\/[^/]+\.(?:jpe?g|png|webp)$/i.test(posterUrl)) {
     return false;
   }
@@ -301,6 +300,17 @@ function validLocalPosterAsset(event) {
   if (signature.startsWith("ffd8")) return true;
   if (signature === "89504e470d0a1a0a") return true;
   return bytes.subarray(0, 4).toString("ascii") === "RIFF" && bytes.subarray(8, 12).toString("ascii") === "WEBP";
+}
+
+function validLocalPosterAsset(event) {
+  return validLocalPosterPath(String(event.posterUrl || "").trim());
+}
+
+function invalidPosterEvidenceLocalFiles(event) {
+  const files = Array.isArray(event.posterEvidence?.localFiles)
+    ? event.posterEvidence.localFiles.map(item => String(item || "").trim()).filter(Boolean)
+    : [];
+  return files.filter(file => !validLocalPosterPath(file));
 }
 
 function futureEvents() {
@@ -416,6 +426,10 @@ for (const event of future) {
 
   if (event.posterEvidence && !validLocalPosterAsset(event)) {
     issues.push(`${id} has posterEvidence but is missing a valid local assets/posters posterUrl`);
+  }
+  const invalidPosterReferences = invalidPosterEvidenceLocalFiles(event);
+  if (invalidPosterReferences.length) {
+    issues.push(`${id} has invalid posterEvidence.localFiles: ${invalidPosterReferences.join(", ")}`);
   }
 
   if (!isFestivalListing(event) && event.confidence === "High" && count(event.lineup) === 0) {

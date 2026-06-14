@@ -201,6 +201,33 @@ function assertLocalPosterAsset(event, contextLabel) {
   if (!isJpeg && !isPng && !isWebp) {
     throw new Error(`${contextLabel} ${event.id} posterUrl is not a valid local JPEG, PNG, or WebP image: ${posterUrl}`);
   }
+
+  const localFiles = Array.isArray(event.posterEvidence?.localFiles)
+    ? event.posterEvidence.localFiles.map(item => String(item || "").trim()).filter(Boolean)
+    : [];
+  for (const localFile of localFiles) {
+    if (!/^assets\/posters\/[^/]+\.(?:jpe?g|png|webp)$/i.test(localFile)) {
+      throw new Error(`${contextLabel} ${event.id} posterEvidence.localFiles must point to local assets/posters images: ${localFile}`);
+    }
+    if (/^https?:\/\//i.test(localFile) || /images\.ra\.co|imgproxy\.ra\.co/i.test(localFile)) {
+      throw new Error(`${contextLabel} ${event.id} posterEvidence.localFiles must not use remote RA image URLs: ${localFile}`);
+    }
+    if (!fs.existsSync(localFile)) {
+      throw new Error(`${contextLabel} ${event.id} posterEvidence.localFiles file does not exist: ${localFile}`);
+    }
+
+    const referenceBytes = fs.readFileSync(localFile);
+    if (referenceBytes.length < 1024) {
+      throw new Error(`${contextLabel} ${event.id} posterEvidence.localFiles file is too small to be a real image: ${localFile}`);
+    }
+    const referenceSignature = referenceBytes.subarray(0, 8).toString("hex");
+    const referenceIsJpeg = referenceSignature.startsWith("ffd8");
+    const referenceIsPng = referenceSignature === "89504e470d0a1a0a";
+    const referenceIsWebp = referenceBytes.subarray(0, 4).toString("ascii") === "RIFF" && referenceBytes.subarray(8, 12).toString("ascii") === "WEBP";
+    if (!referenceIsJpeg && !referenceIsPng && !referenceIsWebp) {
+      throw new Error(`${contextLabel} ${event.id} posterEvidence.localFiles is not a valid local image: ${localFile}`);
+    }
+  }
 }
 
 function assertLocalImageAsset(asset, contextLabel) {
