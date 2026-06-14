@@ -271,3 +271,19 @@ Sources used in this pass:
 - SmartShanghai FENRIR venue context: `https://www.smartshanghai.com/venue/33537/fenrir`
 
 Workflow rule: do not treat `public-source-gap` as a failure. It is an explicit editorial marker meaning the likely organizer/venue/ticketing details are unpublished or not reachable without platform-native browser verification yet.
+
+## 2026-06-14 Venue-Context Core Field Pass
+
+Applied the user's "mark it if not found" rule to the next two medium-priority Watch rows in the core-field queue.
+
+- Added source-backed venue addresses for `devils-dancers` and `hexscape`.
+- `devils-dancers`: SmartShanghai Specters venue context confirms the address at LG-21, B1/F, C PARK, 658 Zhaohua Lu, near Zhongdeqiao Lu. Current-event lineup, time, price, ticket route, and age policy remain `public-source-gap`.
+- `hexscape`: SmartShanghai EXIT venue context confirms the address at 298 Xingfu Lu, near Pingwu Lu. Current-event time, price, ticket route, age policy, and performer profile gaps for Bi-NON & chillchillshit / Na$ty / Toyn remain `public-source-gap`.
+- Current generated state after regeneration: future core-field queue rows stayed at 25, future missing core fields dropped from 69 to 67, uncertain core fields stayed at 5.
+
+Sources used in this pass:
+
+- SmartShanghai Specters venue context: `https://www.smartshanghai.com/venue/34241/specters_c_park`
+- SmartShanghai EXIT venue context: `https://www.smartshanghai.com/venue/31776/exit`
+
+Workflow rule: venue-context sources can fill `address`, but they must not be treated as current-event confirmation for start time, lineup, door price, ticket route, or age policy.

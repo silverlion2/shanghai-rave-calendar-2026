@@ -18,6 +18,7 @@
   },
   "primaryNav": [
     "calendar",
+    "new-to-techno",
     "poster-wall",
     "love-wall",
     "venues",
@@ -39,6 +40,17 @@
       "changefreq": "daily",
       "priority": "1.0",
       "homepageStats": true
+    },
+    {
+      "id": "new-to-techno",
+      "label": "New?",
+      "file": "new-to-techno.html",
+      "route": "/new-to-techno",
+      "shell": "dispatch-shell",
+      "includeInSitemap": true,
+      "lastmod": "2026-06-14",
+      "changefreq": "monthly",
+      "priority": "0.94"
     },
     {
       "id": "poster-wall",

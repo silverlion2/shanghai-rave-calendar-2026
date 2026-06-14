@@ -25,6 +25,11 @@ const MAX_X_KEYWORDS = Number(process.env.SCRAPE_MAX_X_KEYWORDS || 16);
 const MAX_X_LINKS_PER_KEYWORD = Number(process.env.SCRAPE_MAX_X_LINKS_PER_KEYWORD || 8);
 const X_BEARER_TOKEN = process.env.X_BEARER_TOKEN || process.env.TWITTER_BEARER_TOKEN || "";
 const X_PUBLIC_SEARCH_ENABLED = process.env.SCRAPE_X_PUBLIC_SEARCH === "true";
+const RUN_NOW = process.env.SCRAPE_NOW ? new Date(process.env.SCRAPE_NOW) : new Date();
+
+if (Number.isNaN(RUN_NOW.getTime())) {
+  throw new Error(`SCRAPE_NOW must be a valid date/time when set: ${process.env.SCRAPE_NOW}`);
+}
 
 const DEFAULT_X_KEYWORDS = [
   "\"Shanghai\" techno",
@@ -202,7 +207,7 @@ const REQUIRED_EVENT_FIELDS = [
   "description",
 ];
 
-function shanghaiDateString(date = new Date()) {
+function shanghaiDateString(date = RUN_NOW) {
   const parts = Object.fromEntries(new Intl.DateTimeFormat("en-CA", {
     timeZone: TIME_ZONE,
     year: "numeric",
@@ -220,7 +225,7 @@ function eventArchiveCutoff(sortDate) {
   return cutoff;
 }
 
-function eventIsPastByCutoff(sortDate, now = new Date()) {
+function eventIsPastByCutoff(sortDate, now = RUN_NOW) {
   const cutoff = eventArchiveCutoff(sortDate);
   if (!cutoff) return false;
   const nowTime = now instanceof Date ? now.getTime() : new Date(now).getTime();
@@ -790,7 +795,7 @@ function displayTime(startDate) {
   return time ? `${time[1]}:${time[2]}` : "Check source";
 }
 
-function eventStatus(sortDate, confidence, currentStatus = "", now = new Date()) {
+function eventStatus(sortDate, confidence, currentStatus = "", now = RUN_NOW) {
   const status = String(currentStatus || "").toLowerCase();
   if (eventIsPastByCutoff(sortDate, now)) return "past";
   if (status === "watch" || confidence === "Watch") return "watch";

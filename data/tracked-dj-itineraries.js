@@ -519,7 +519,7 @@ window.DJ_ITINERARY_DATA = {
   "njelic": {
     "slug": "njelic",
     "name": "NJELIC",
-    "trackedAt": "2026-06-14",
+    "trackedAt": "2026-06-15",
     "checkedByTimezone": "Asia/Shanghai",
     "scope": "Worldwide itinerary rows generated from scraped and curated event data",
     "imageTheme": "ember",
@@ -3163,6 +3163,128 @@ window.DJ_ITINERARY_DATA = {
         "label": "jay_sarayu Instagram Youshan pre-party index preview",
         "url": "https://www.instagram.com/p/DZB981GAW_g",
         "status": "social-index-lead",
+        "checked": "2026-06-14"
+      }
+    ]
+  },
+  "the-hymmapan-electron": {
+    "slug": "the-hymmapan-electron",
+    "name": "The Hymmapan Electron",
+    "aliases": [
+      "Hymmapan Electron",
+      "Isan Cyber"
+    ],
+    "trackedAt": "2026-06-14",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "Cyber Buddha / Thai Isan electronic live profile",
+    "imageTheme": "acid",
+    "genres": [
+      "Isan folk",
+      "electronic",
+      "psychedelic techno",
+      "live electronics"
+    ],
+    "summary": "Thailand-linked live electronic project preserved for the Cyber Buddha Shanghai listing. Public event and performance sources frame the act around Isan folk material, electronic rhythm, and experimental live context.",
+    "sourceNote": "SmartShanghai and 247tickets support the June 26 Shanghai lineup and ticket route; public performance/video sources support the broader Isan-electronic sound context.",
+    "sources": [
+      {
+        "label": "SmartShanghai Cyber Buddha event profile",
+        "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
+        "status": "secondary-event-source",
+        "checked": "2026-06-14"
+      },
+      {
+        "label": "247tickets The Hymmapan Electron Shanghai listing",
+        "url": "https://www.247tickets.com/t/the-hymmapan-electron-shanghai",
+        "status": "secondary-ticketing",
+        "checked": "2026-06-14"
+      },
+      {
+        "label": "Tuktuk Radio The Hymmapan Electron performance context",
+        "url": "https://www.youtube.com/watch?v=Wrwf5fj4zNI",
+        "status": "performance-context",
+        "checked": "2026-06-14"
+      }
+    ]
+  },
+  "taiga": {
+    "slug": "taiga",
+    "name": "Taiga",
+    "aliases": [
+      "TAIGA"
+    ],
+    "trackedAt": "2026-06-14",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "Cyber Buddha / Chengdu psychedelic nomadic electronic profile",
+    "imageTheme": "gold",
+    "genres": [
+      "psychedelic electronic",
+      "nomadic electronic",
+      "live electronics",
+      "folk-electronic"
+    ],
+    "summary": "Chengdu-connected duo preserved for the Cyber Buddha Shanghai listing. Public profile sources describe Taiga as a psychedelic electronic project with Inner Mongolia, Xinjiang, and nomadic-music context.",
+    "sourceNote": "SmartShanghai confirms the June 26 Shanghai lineup; Star Wax and WOMEX/Ozora-style profile sources support the Taiga sound and identity context.",
+    "sources": [
+      {
+        "label": "SmartShanghai Cyber Buddha event profile",
+        "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
+        "status": "secondary-event-source",
+        "checked": "2026-06-14"
+      },
+      {
+        "label": "Star Wax Taiga profile",
+        "url": "https://www.starwaxmag.com/news/taiga",
+        "status": "artist-profile",
+        "checked": "2026-06-14"
+      },
+      {
+        "label": "WOMEX Taiga profile",
+        "url": "https://www.womex.com/virtual/more_zvukov_agency/taiga",
+        "status": "artist-profile",
+        "checked": "2026-06-14"
+      }
+    ]
+  },
+  "mico": {
+    "slug": "mico",
+    "name": "MICO",
+    "aliases": [
+      "MICO Liu Wei",
+      "JungleMico Project"
+    ],
+    "trackedAt": "2026-06-14",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "Cyber Buddha / ambient and IDM electronic profile",
+    "imageTheme": "cyan",
+    "genres": [
+      "ambient",
+      "downtempo",
+      "IDM",
+      "Chinese electronic"
+    ],
+    "summary": "Chinese electronic musician profile preserved for the Cyber Buddha Shanghai listing. Public event and release sources connect MICO to ambient, downtempo, IDM, and narrative electronic soundscapes.",
+    "sourceNote": "SmartShanghai confirms the June 26 Shanghai lineup; Bandcamp and public Chinese electronic-music writing support MICO's broader production context.",
+    "sources": [
+      {
+        "label": "SmartShanghai Cyber Buddha event profile",
+        "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
+        "status": "secondary-event-source",
+        "checked": "2026-06-14"
+      },
+      {
+        "label": "MICO Liu Wei Bandcamp release context",
+        "url": "https://e-werk.bandcamp.com/album/-",
+        "status": "artist-release-context",
+        "checked": "2026-06-14"
+      },
+      {
+        "label": "Chinese electronic music profile context",
+        "url": "https://electronicmusicinformation.com/gw/index/article_details.html?drysaltery_id=4064",
+        "status": "artist-profile",
         "checked": "2026-06-14"
       }
     ]

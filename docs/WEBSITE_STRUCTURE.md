@@ -16,6 +16,7 @@ This project is a static, source-first event site. The tracked structure lives i
 | ID | File | Route | Shell | Sitemap |
 | --- | --- | --- | --- | --- |
 | `calendar` | `index.html` | `/` | `calendar-shell` | yes |
+| `new-to-techno` | `new-to-techno.html` | `/new-to-techno` | `dispatch-shell` | yes |
 | `poster-wall` | `poster-wall.html` | `/poster-wall` | `dispatch-shell` | yes |
 | `love-wall` | `love-wall.html` | `/love-wall` | `dispatch-shell` | yes |
 | `live-room` | `live-room.html` | `/live-room` | `dispatch-shell` | yes |
@@ -29,7 +30,7 @@ This project is a static, source-first event site. The tracked structure lives i
 
 `shanghai-rave-calendar-2026.html` is tracked as a legacy calendar mirror. It is syntax-checked and must keep the shared theme and homepage stats placement, but it is not a separate sitemap route.
 
-`poster-wall.html` is labeled `Events` in customer-facing navigation and remains the single public poster/event browsing surface. `live-room.html` is labeled `Tonight` and owns the same-day room flow. The legacy `/poster-archive` route redirects to `/poster-wall`; `data/poster-archive.json` remains as generated poster metadata for compression and Supabase import workflows.
+`new-to-techno.html` is labeled `New?` in compact navigation and owns beginner education: techno history, listening vocabulary, dancefloor conduct, hearing protection, and safer-nightlife source context. `poster-wall.html` is labeled `Events` in customer-facing navigation and remains the single public poster/event browsing surface. `live-room.html` is labeled `Tonight` and owns the same-day room flow. The legacy `/poster-archive` route redirects to `/poster-wall`; `data/poster-archive.json` remains as generated poster metadata for compression and Supabase import workflows.
 
 ## Generated Collections
 

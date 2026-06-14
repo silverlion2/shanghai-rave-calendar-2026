@@ -1020,6 +1020,36 @@ Verification:
 - `node scripts/check.js` passed.
 - `node --test tests/trust-framework.test.js` passed.
 - `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json` passed with 0 findings.
+
+## 2026-06-14 Venue-Context Core Field Pass
+
+The user clarified again that missing fields should be marked because organizers may not have published details yet. Continued the core-field queue from `devils-dancers` and `hexscape`.
+
+Implemented state:
+
+- Added SmartShanghai venue-context source rows for Specters and EXIT.
+- Filled `devils-dancers.address` from SmartShanghai Specters venue context.
+- Filled `hexscape.address` from SmartShanghai EXIT venue context.
+- Updated both `ticketStatus` and `sourceConfidence` strings so venue addresses are separated from current-event facts.
+- Left missing time, price, ticket route, age policy, and missing current lineup/performer-profile fields as `public-source-gap` rather than inferred values.
+
+Current metrics after regeneration:
+
+- Future core-field queue rows: 25.
+- Missing core fields: 67, down from 69.
+- Uncertain core fields: 5.
+- Future performer missing profile sources: 9.
+
+Validation:
+
+- `node scripts\scrape-events.js` passed after a full detail rerun with 18 discovered links. A fast `SCRAPE_MAX_DETAIL_PAGES=0` rerun was not used as final state because it removed discovery-derived source trail context.
+- `npm run seo` passed.
+- `node scripts\audit-events.js` passed.
+- `node --test tests\trust-framework.test.js` passed.
+- `node --test tests\event-cross-links.test.js` passed.
+- `node scripts\check.js` passed.
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json` passed with 0 findings.
+- `npm run check` passed.
 - `npm run check` passed with 52 tests.
 
 ## 2026-06-14 Liminal Dreams Watch Detail Upgrade
