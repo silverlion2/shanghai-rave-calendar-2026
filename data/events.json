@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-14T16:10:25.995Z",
+  "generatedAt": "2026-06-14T16:12:58.802Z",
   "verified": "2026-06-14",
   "timezone": "Asia/Shanghai",
   "sourcePriority": [
@@ -39,10 +39,9 @@
       "kind": "listing",
       "sourceStatus": "secondary",
       "checkedAt": "2026-06-14",
-      "ok": false,
-      "status": null,
-      "eventLinks": 0,
-      "error": "This operation was aborted"
+      "ok": true,
+      "status": 200,
+      "eventLinks": 9
     },
     {
       "label": "X/Twitter keyword: \"Shanghai\" techno",
@@ -5812,13 +5811,53 @@
       "source": "https://ra.co/events/2466405",
       "sourceLabel": "Resident Advisor",
       "imageTheme": "cyan",
+      "posterUrl": "assets/posters/onefortyasia-mungk-simbie.jpg",
       "description": "ONEFORTYASIA brings MUNGK and SIMBIE to EXIT with a bass, dubstep, and UK garage frame plus local support from D8, Diipset, Sanli, Siesta, and Somebodyyyy.",
       "sourceStatus": "trusted-ra",
+      "addedAt": "2026-06-14",
+      "lastChecked": "2026-06-14",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/onefortyasia-pres-mungk-uk-simbie-au-at-exit",
+          "status": "watchlist",
+          "lastChecked": "2026-06-14"
+        },
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2466405",
+          "status": "trusted-ra",
+          "lastChecked": "2026-06-14"
+        }
+      ],
+      "kind": "event",
+      "soundTags": [
+        "bass-hybrid"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "late room",
+        "ticket path",
+        "trusted source",
+        "lineup visible"
+      ],
+      "decisionProfile": {
+        "intensity": "high",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": []
+      },
+      "recommendationReason": "Recommended as the strongest bass/140 signal in the current RA Shanghai batch, with a clear EXIT room, lineup, price, and ticket route.",
+      "bestFor": "Bass, dubstep, UKG, and 140 listeners who want a club-focused alternative to straight techno.",
+      "verifyBeforeGoing": "Confirm live ticket availability and any WeChat detail updates through the RA ticket/detail links before going.",
+      "sourceConfidence": "High RA coverage: date, time, venue, lineup, genres, cost, age, ticket/detail links, and flyer are visible on Resident Advisor. Poster not stored locally yet, so flyer visibility is not used as a publish-blocking evidence field.",
       "address": "Address: 298 Xingfu Road, Changning District, Shanghai",
       "organizer": "Spacepanda / ONEFORTYASIA",
       "detailsUrl": "https://ra.co/events/2466405",
       "ticketUrl": "https://ra.co/events/2466405",
-      "lastChecked": "2026-06-14",
       "lineup": [
         {
           "name": "Mungk",
@@ -5862,19 +5901,6 @@
         }
       ],
       "ticketStatus": "RA lists cost at 80-100 RMB, minimum age 18+, plus ticket and WeChat detail links.",
-      "recommendationReason": "Recommended as the strongest bass/140 signal in the current RA Shanghai batch, with a clear EXIT room, lineup, price, and ticket route.",
-      "bestFor": "Bass, dubstep, UKG, and 140 listeners who want a club-focused alternative to straight techno.",
-      "verifyBeforeGoing": "Confirm live ticket availability and any WeChat detail updates through the RA ticket/detail links before going.",
-      "sourceConfidence": "High RA coverage: date, time, venue, lineup, genres, cost, age, ticket/detail links, and flyer are visible on Resident Advisor. Poster not stored locally yet, so flyer visibility is not used as a publish-blocking evidence field.",
-      "sources": [
-        {
-          "label": "Resident Advisor",
-          "url": "https://ra.co/events/2466405",
-          "status": "trusted-ra",
-          "lastChecked": "2026-06-14"
-        }
-      ],
-      "posterUrl": "assets/posters/onefortyasia-mungk-simbie.jpg",
       "posterEvidence": {
         "type": "flyer-front-back",
         "source": "Resident Advisor event page",
@@ -5884,26 +5910,6 @@
           "assets/posters/onefortyasia-mungk-simbie.jpg",
           "assets/posters/onefortyasia-mungk-simbie-back.jpg"
         ]
-      },
-      "kind": "event",
-      "soundTags": [
-        "bass-hybrid"
-      ],
-      "decisionTags": [
-        "strong techno fit",
-        "late room",
-        "ticket path",
-        "trusted source",
-        "lineup visible"
-      ],
-      "decisionProfile": {
-        "intensity": "high",
-        "credibility": "strong",
-        "lateRoom": true,
-        "ticketReady": true,
-        "hasLineup": true,
-        "hasPoster": true,
-        "riskFlags": []
       }
     },
     {
@@ -8316,6 +8322,59 @@
   "socialLeads": [],
   "discovered": [
     {
+      "url": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
+      "title": "ALTER. Pavillon 亭",
+      "parsed": true
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/night-at-the-museum-back-to-the-90s-disco-night-2026-06-18",
+      "title": "",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false,
+      "error": "This operation was aborted"
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/girls-night-out-skyline-dome-at-the-dome",
+      "title": "Girls Night Out",
+      "parsed": true
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/onefortyasia-pres-mungk-uk-simbie-au-at-exit",
+      "title": "ONEFORTYASIA Pres. MUNGK (UK) & SIMBIE (AU)",
+      "parsed": true
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/disco-ball-fridays-skyline-dome-at-the-dome",
+      "title": "Disco Ball Fridays",
+      "parsed": true
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/a-full-afrowave-takeover-at-la-burg",
+      "title": "",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false,
+      "error": "This operation was aborted"
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/sunset-sundays-skyline-dome-at-the-dome",
+      "title": "",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false,
+      "error": "This operation was aborted"
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
+      "title": "Cyber Budha Special Vol: Twilight in the Forbidden City with The Hymmapan Electron (TH), Taiga, and MICO",
+      "parsed": true
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/nova-events-presents-summer-splash-pool-party-2026-06-27",
+      "title": "",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false,
+      "error": "This operation was aborted"
+    },
+    {
       "url": "https://ra.co/events/2461478",
       "title": "Milo Raad + Cosmjn",
       "sourceLabel": "Resident Advisor",
@@ -8357,9 +8416,8 @@
       "url": "https://ra.co/events/2458269",
       "title": "Synth Crush",
       "sourceLabel": "Resident Advisor",
-      "status": "browser-required",
       "parsed": false,
-      "access": "browser-required"
+      "error": "This operation was aborted"
     },
     {
       "url": "https://ra.co/events/2460549",
@@ -8384,20 +8442,6 @@
       "status": "browser-required",
       "parsed": false,
       "access": "browser-required"
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
-      "title": "ALTER. Pavillon",
-      "sourceLabel": "SmartShanghai",
-      "parsed": false,
-      "error": "This operation was aborted"
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
-      "title": "Cyber Buddha: Electronic Nomads of Isan",
-      "sourceLabel": "SmartShanghai",
-      "parsed": false,
-      "error": "This operation was aborted"
     }
   ],
   "computerUseQueue": [
@@ -9052,7 +9096,7 @@
   },
   "quality": {
     "auditDate": "2026-06-14",
-    "generatedAt": "2026-06-14T16:10:25.995Z",
+    "generatedAt": "2026-06-14T16:12:58.802Z",
     "totals": {
       "events": 89,
       "future": 34,
@@ -9065,7 +9109,7 @@
       "futureVenueWatch": 18,
       "futurePerformerProfiles": 88,
       "futurePerformerWatch": 26,
-      "singleSourceFuturePerformers": 63,
+      "singleSourceFuturePerformers": 56,
       "futurePerformerProfileSources": 82,
       "futurePerformerMissingProfileSources": 6,
       "djSourceUpgradeQueue": 0,
@@ -9081,7 +9125,7 @@
       "platformVerificationQueue": 5,
       "platformVerificationSources": 10,
       "curatedEventsApplied": 69,
-      "failedSourceReports": 18
+      "failedSourceReports": 17
     },
     "watchQueue": [
       {
@@ -10124,7 +10168,7 @@
           "techno, funk/soul lineage",
           "house"
         ],
-        "sourceCount": 17,
+        "sourceCount": 18,
         "totalEvents": 14,
         "futureEvents": 3,
         "highConfidenceEvents": 10,
@@ -11049,7 +11093,7 @@
           "name": "Siesta",
           "eventCount": 3,
           "futureEventCount": 1,
-          "sourceCount": 3,
+          "sourceCount": 4,
           "trackedProfileSourceCount": 1,
           "venues": [
             "TBA - DEFUN",
@@ -11063,7 +11107,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 3,
-          "singleSourceFutureAppearances": 1,
+          "singleSourceFutureAppearances": 0,
           "fitScore": 3,
           "priority": "high",
           "nextDate": "2026-06-19"
@@ -11073,7 +11117,7 @@
           "name": "DIIPSET",
           "eventCount": 2,
           "futureEventCount": 1,
-          "sourceCount": 2,
+          "sourceCount": 3,
           "trackedProfileSourceCount": 1,
           "venues": [
             "Reactor Shanghai",
@@ -11085,7 +11129,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 2,
-          "singleSourceFutureAppearances": 1,
+          "singleSourceFutureAppearances": 0,
           "fitScore": 3,
           "priority": "high",
           "nextDate": "2026-06-19"
@@ -11282,7 +11326,7 @@
           "name": "D8",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 1,
+          "sourceCount": 2,
           "trackedProfileSourceCount": 2,
           "venues": [
             "EXIT"
@@ -11292,7 +11336,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
+          "singleSourceFutureAppearances": 0,
           "fitScore": 3,
           "priority": "high",
           "nextDate": "2026-06-19"
@@ -11622,7 +11666,7 @@
           "name": "Mungk",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 1,
+          "sourceCount": 2,
           "trackedProfileSourceCount": 2,
           "venues": [
             "EXIT"
@@ -11632,7 +11676,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
+          "singleSourceFutureAppearances": 0,
           "fitScore": 3,
           "priority": "high",
           "nextDate": "2026-06-19"
@@ -11722,7 +11766,7 @@
           "name": "Sanli",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 1,
+          "sourceCount": 2,
           "trackedProfileSourceCount": 2,
           "venues": [
             "EXIT"
@@ -11732,7 +11776,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
+          "singleSourceFutureAppearances": 0,
           "fitScore": 3,
           "priority": "high",
           "nextDate": "2026-06-19"
@@ -11782,7 +11826,7 @@
           "name": "Simbie",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 1,
+          "sourceCount": 2,
           "trackedProfileSourceCount": 2,
           "venues": [
             "EXIT"
@@ -11792,7 +11836,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
+          "singleSourceFutureAppearances": 0,
           "fitScore": 3,
           "priority": "high",
           "nextDate": "2026-06-19"
@@ -11822,7 +11866,7 @@
           "name": "Somebodyyyy",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 1,
+          "sourceCount": 2,
           "trackedProfileSourceCount": 2,
           "venues": [
             "EXIT"
@@ -11832,7 +11876,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
+          "singleSourceFutureAppearances": 0,
           "fitScore": 3,
           "priority": "high",
           "nextDate": "2026-06-19"
@@ -13343,11 +13387,10 @@
         "label": "SmartShanghai clubbing listings",
         "kind": "listing",
         "sourceStatus": "secondary",
-        "ok": false,
+        "ok": true,
         "checkedAt": "2026-06-14",
-        "status": null,
-        "eventLinks": 0,
-        "error": "This operation was aborted"
+        "status": 200,
+        "eventLinks": 9
       },
       {
         "label": "X/Twitter keyword: \"Shanghai\" techno",
