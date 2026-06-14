@@ -752,6 +752,7 @@
       cursor: pointer;
       padding: 4px 5px;
       text-align: left;
+      text-decoration: none;
       font-size: 10px;
       line-height: 1.25;
       overflow: hidden;
@@ -2140,111 +2141,19 @@
 
     <section class="highlight-wall" id="highlightWall" aria-label="Upcoming highlights"></section>
 
-    <section class="paper-route" aria-label="Night planning route">
-      <div class="paper-route-head">
-        <h2>Plan a night</h2>
-        <a href="planner.html" aria-label="Open route planner">Open planner</a>
-      </div>
-      <p>Pick a mood and the plan adapts to the strongest sourced options.</p>
-      <div class="route-buttons">
-        <button class="route-button active" type="button" data-route="easy">Easy</button>
-        <button class="route-button" type="button" data-route="deep">Deep</button>
-        <button class="route-button" type="button" data-route="hard">Hard</button>
-      </div>
-      <div class="route-card" id="routeCard"></div>
-    </section>
-
-    <section class="controls" aria-label="Calendar controls">
-      <div class="control-header">
-        <div>
-          <span class="control-kicker">Calendar view</span>
-          <h2 class="control-title">Find the right room, rave sound, and date</h2>
-        </div>
-        <div class="filter-summary" id="filterSummary" aria-live="polite">Loading matches</div>
-      </div>
-      <div class="quick-actions" aria-label="Date and export shortcuts">
-        <button class="quick-filter active" type="button" data-window="future">Upcoming</button>
-        <button class="quick-filter" type="button" data-window="all">Full 2026</button>
-        <button class="quick-filter" type="button" data-window="tonight">Tonight</button>
-        <button class="quick-filter" type="button" data-window="weekend">This Weekend</button>
-        <button class="quick-filter" type="button" data-window="next30">Next 30 Days</button>
-        <button class="quick-filter" type="button" data-window="new">Fresh Leads</button>
-        <button class="quick-filter export-button" type="button" id="downloadFiltered">Export .ics</button>
-      </div>
-      <label class="filter-field">
-        <span>Search</span>
-        <input class="search" id="searchInput" type="search" placeholder="Event, venue, genre, promoter">
-      </label>
-      <label class="filter-field">
-        <span>Status</span>
-        <select class="select" id="statusFilter" aria-label="Status filter">
-          <option value="all">All statuses</option>
-          <option value="upcoming">Upcoming</option>
-          <option value="past">Past archive</option>
-          <option value="watch">Watchlist leads</option>
-        </select>
-      </label>
-      <label class="filter-field">
-        <span>Sound</span>
-        <select class="select" id="vibeFilter" aria-label="Vibe filter">
-          <option value="all">All rave sounds</option>
-          <option value="hard">Hard / fast</option>
-          <option value="hard-techno">Hard techno</option>
-          <option value="industrial">Industrial</option>
-          <option value="groovy">Groovy</option>
-          <option value="hypnotic">Hypnotic</option>
-          <option value="minimal">Minimal</option>
-          <option value="melodic">Melodic</option>
-          <option value="acid">Acid</option>
-          <option value="trance-adjacent">Trance-adjacent</option>
-          <option value="underground">Underground</option>
-          <option value="date">Date-friendly</option>
-          <option value="experimental">Experimental</option>
-          <option value="bass">Bass / club</option>
-          <option value="bass-hybrid">Bass hybrid</option>
-          <option value="live-av">Live / A/V</option>
-          <option value="warehouse">Warehouse</option>
-          <option value="rooftop">Rooftop / open-air</option>
-        </select>
-      </label>
-      <label class="filter-field">
-        <span>Room / crew</span>
-        <select class="select" id="venueFilter" aria-label="Venue and promoter filter">
-          <option value="all">All venues / crews</option>
-          <option value="abyss">Abyss</option>
-          <option value="exit">EXIT</option>
-          <option value="heim">Heim</option>
-          <option value="potent">POTENT</option>
-          <option value="reactor">Reactor</option>
-          <option value="space-panda">Space Panda</option>
-          <option value="alter">ALTER</option>
-          <option value="dirty">Dirty House / INS</option>
-          <option value="illum">ILLUM / KNOT</option>
-          <option value="wigwam">Wigwam</option>
-          <option value="system">System</option>
-          <option value="void-vacuum">VOID / VACUUM</option>
-        </select>
-      </label>
-    </section>
-
-    <section class="live-dispatch-row" aria-label="Tonight dispatch">
-      <section class="panel dispatch-panel">
-        <div class="dispatch-panel-head">
-          <h2>Tonight</h2>
-          <span id="tonightStamp">Today</span>
-          <button type="button" data-window-shortcut="tonight">Details -></button>
-        </div>
-        <div class="dispatch-list" id="tonightPanel"></div>
-        <a class="live-room-handoff" href="live-room.html">Open tonight rooms -></a>
-      </section>
-    </section>
-
-    <nav class="month-rail" id="monthRail" aria-label="Jump to month"></nav>
-
-    <section class="layout">
-      <div id="calendar"></div>
-
-      <aside class="side dispatch-panels">
+    <section class="calendar-workbench" aria-label="Calendar planning workspace">
+      <aside class="side dispatch-panels calendar-left-rail" aria-label="Planning shortcuts">
+        <section class="live-dispatch-row" aria-label="Tonight dispatch">
+          <section class="panel dispatch-panel">
+            <div class="dispatch-panel-head">
+              <h2>Tonight</h2>
+              <span id="tonightStamp">Today</span>
+              <button type="button" data-window-shortcut="tonight">Details -></button>
+            </div>
+            <div class="dispatch-list" id="tonightPanel"></div>
+            <a class="live-room-handoff" href="live-room.html">Open tonight rooms -></a>
+          </section>
+        </section>
 
         <section class="panel dispatch-panel">
           <div class="dispatch-panel-head">
@@ -2254,8 +2163,103 @@
           <div class="dispatch-list" id="weekendPanel"></div>
         </section>
 
+        <section class="paper-route" aria-label="Night planning route">
+          <div class="paper-route-head">
+            <h2>Plan a night</h2>
+            <a href="planner.html" aria-label="Open route planner">Open planner</a>
+          </div>
+          <p>Pick a mood and the plan adapts to the strongest sourced options.</p>
+          <div class="route-buttons">
+            <button class="route-button active" type="button" data-route="easy">Easy</button>
+            <button class="route-button" type="button" data-route="deep">Deep</button>
+            <button class="route-button" type="button" data-route="hard">Hard</button>
+          </div>
+          <div class="route-card" id="routeCard"></div>
+        </section>
+
         <section class="panel dispatch-panel" id="personalizedDispatch" aria-label="Personalized event picks"></section>
       </aside>
+
+      <section class="calendar-main-column" aria-label="Calendar search and results">
+        <section class="controls" aria-label="Calendar controls">
+          <div class="control-header">
+            <div>
+              <span class="control-kicker">Calendar view</span>
+              <h2 class="control-title">Find the right room, rave sound, and date</h2>
+            </div>
+            <div class="filter-summary" id="filterSummary" aria-live="polite">Loading matches</div>
+          </div>
+          <div class="quick-actions" aria-label="Date and export shortcuts">
+            <button class="quick-filter active" type="button" data-window="future">Upcoming</button>
+            <button class="quick-filter" type="button" data-window="all">Full 2026</button>
+            <button class="quick-filter" type="button" data-window="tonight">Tonight</button>
+            <button class="quick-filter" type="button" data-window="weekend">This Weekend</button>
+            <button class="quick-filter" type="button" data-window="next30">Next 30 Days</button>
+            <button class="quick-filter" type="button" data-window="new">Fresh Leads</button>
+            <button class="quick-filter export-button" type="button" id="downloadFiltered">Export .ics</button>
+          </div>
+          <label class="filter-field">
+            <span>Search</span>
+            <input class="search" id="searchInput" type="search" placeholder="Event, venue, genre, promoter">
+          </label>
+          <label class="filter-field">
+            <span>Status</span>
+            <select class="select" id="statusFilter" aria-label="Status filter">
+              <option value="all">All statuses</option>
+              <option value="upcoming">Upcoming</option>
+              <option value="past">Past archive</option>
+              <option value="watch">Watchlist leads</option>
+            </select>
+          </label>
+          <label class="filter-field">
+            <span>Sound</span>
+            <select class="select" id="vibeFilter" aria-label="Vibe filter">
+              <option value="all">All rave sounds</option>
+              <option value="hard">Hard / fast</option>
+              <option value="hard-techno">Hard techno</option>
+              <option value="industrial">Industrial</option>
+              <option value="groovy">Groovy</option>
+              <option value="hypnotic">Hypnotic</option>
+              <option value="minimal">Minimal</option>
+              <option value="melodic">Melodic</option>
+              <option value="acid">Acid</option>
+              <option value="trance-adjacent">Trance-adjacent</option>
+              <option value="underground">Underground</option>
+              <option value="date">Date-friendly</option>
+              <option value="experimental">Experimental</option>
+              <option value="bass">Bass / club</option>
+              <option value="bass-hybrid">Bass hybrid</option>
+              <option value="live-av">Live / A/V</option>
+              <option value="warehouse">Warehouse</option>
+              <option value="rooftop">Rooftop / open-air</option>
+            </select>
+          </label>
+          <label class="filter-field">
+            <span>Room / crew</span>
+            <select class="select" id="venueFilter" aria-label="Venue and promoter filter">
+              <option value="all">All venues / crews</option>
+              <option value="abyss">Abyss</option>
+              <option value="exit">EXIT</option>
+              <option value="heim">Heim</option>
+              <option value="potent">POTENT</option>
+              <option value="reactor">Reactor</option>
+              <option value="space-panda">Space Panda</option>
+              <option value="alter">ALTER</option>
+              <option value="dirty">Dirty House / INS</option>
+              <option value="illum">ILLUM / KNOT</option>
+              <option value="wigwam">Wigwam</option>
+              <option value="system">System</option>
+              <option value="void-vacuum">VOID / VACUUM</option>
+            </select>
+          </label>
+        </section>
+
+        <nav class="month-rail" id="monthRail" aria-label="Jump to month"></nav>
+
+        <section class="layout">
+          <div id="calendar"></div>
+        </section>
+      </section>
     </section>
 
     <section class="home-poster-rail" id="homePosterRail" aria-label="Poster-only event strip"></section>
@@ -4351,17 +4355,17 @@
                 ${dayEvents.map(event => {
                   const organizer = knownOrganizerFor(event);
                   const festival = isFestival(event);
-                  const lineupLinks = festival ? "" : lineupFor(event).slice(0, 2).map(item => djProfileLinksHtml(item.name)).join('<span class="dj-separator">/</span>');
+                  const lineupText = festival ? "" : lineupFor(event).slice(0, 2).map(item => item.name).filter(Boolean).join(" / ");
                   const titleParts = [`Venue: ${event.venue}`, event.title];
                   if (organizer) titleParts.push(`Organizer: ${organizer}`);
                   if (festival) titleParts.push("Festival / multi-event lead");
                   return `
-                    <article class="calendar-event ${eventEffectiveStatus(event) === "watch" ? "watch" : ""} ${festival ? "festival" : ""}" role="button" tabindex="0" data-id="${event.id}" title="${escapeHtml(titleParts.join(" / "))}">
-                      <span class="calendar-event-venue">${venueGuideLinkHtml(event.venue)}</span>
+                    <a class="calendar-event ${eventEffectiveStatus(event) === "watch" ? "watch" : ""} ${festival ? "festival" : ""}" href="${escapeHtml(eventPageUrl(event))}" data-id="${event.id}" title="${escapeHtml(titleParts.join(" / "))}" aria-label="Open event page for ${escapeHtml(event.title)}">
+                      <span class="calendar-event-venue">${escapeHtml(event.venue)}</span>
                       <span class="calendar-event-title">${escapeHtml(event.title)}</span>
-                      ${lineupLinks ? `<span class="calendar-event-lineup">${lineupLinks}</span>` : ""}
+                      ${lineupText ? `<span class="calendar-event-lineup">${escapeHtml(lineupText)}</span>` : ""}
                       ${festival ? `<span class="calendar-event-organizer">Festival lead</span>` : organizer ? `<span class="calendar-event-organizer">Organizer: ${escapeHtml(organizer)}</span>` : ""}
-                    </article>
+                    </a>
                   `;
                 }).join("")}
               </div>
@@ -4539,19 +4543,7 @@
           ${renderMonthGrid(code, visibleEvents)}
         </section>
       `;
-      calendarEl.querySelectorAll(".calendar-event").forEach(button => {
-        button.addEventListener("click", event => {
-          event.stopPropagation();
-          openModal(events.find(item => item.id === button.dataset.id));
-        });
-        button.addEventListener("keydown", event => {
-          if (event.key === "Enter" || event.key === " ") {
-            event.preventDefault();
-            openModal(events.find(item => item.id === button.dataset.id));
-          }
-        });
-      });
-      calendarEl.querySelectorAll(".event-link, .calendar-event a").forEach(link => {
+      calendarEl.querySelectorAll(".event-link, .calendar-event").forEach(link => {
         link.addEventListener("click", event => event.stopPropagation());
       });
       updateStats();

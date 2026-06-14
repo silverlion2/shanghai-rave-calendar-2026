@@ -3006,5 +3006,165 @@ window.DJ_ITINERARY_DATA = {
         "checked": "2026-06-14"
       }
     ]
+  },
+  "jasm-n": {
+    "slug": "jasm-n",
+    "name": "Jasmín",
+    "aliases": [
+      "Jasmin",
+      "Jasmín",
+      "Jasmin Hoek"
+    ],
+    "trackedAt": "2026-06-14",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "Heim Sauna / Shanghai watch profile",
+    "imageTheme": "cyan",
+    "genres": [
+      "techno",
+      "bass",
+      "dub",
+      "percussion",
+      "drum-and-bass"
+    ],
+    "summary": "Amsterdam-based Dutch-Argentinian DJ and producer attached to the June 20 Heim Sauna watch lead. Public profile sources support a techno, bass, dub, and percussion-led lane; event confirmation remains attached to the SmartShanghai row.",
+    "sourceNote": "Minor AM and Bandcamp support artist identity and sound context. These sources do not confirm Heim ticketing, set times, door price, or final running order.",
+    "sources": [
+      {
+        "label": "Jasmín Minor AM profile",
+        "url": "https://www.minor-am.com/roster/jasmin",
+        "status": "artist-profile",
+        "checked": "2026-06-14"
+      },
+      {
+        "label": "Jasmín Bandcamp",
+        "url": "https://jasminhoek.bandcamp.com/album/bite-the-hand-that-feeds-you",
+        "status": "artist-profile",
+        "checked": "2026-06-14"
+      },
+      {
+        "label": "SmartShanghai June 2026 clubbing guide",
+        "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+        "status": "watchlist-event-source",
+        "checked": "2026-06-14"
+      }
+    ]
+  },
+  "knopha": {
+    "slug": "knopha",
+    "name": "Knopha",
+    "aliases": [
+      "Knopha"
+    ],
+    "trackedAt": "2026-06-14",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "China / Shanghai club source profile",
+    "imageTheme": "acid",
+    "genres": [
+      "house",
+      "techno",
+      "club",
+      "leftfield-dance"
+    ],
+    "summary": "China-based RA artist profile connected to recurring Shanghai and China club appearances, attached to the June 20 Heim Sauna watch lead.",
+    "sourceNote": "RA supports Knopha's artist identity, China location, Shanghai-heavy appearance history, and label/review context. SmartShanghai remains the event-level source for the June 20 Heim listing.",
+    "sources": [
+      {
+        "label": "Knopha Resident Advisor profile",
+        "url": "https://ra.co/dj/knopha",
+        "status": "artist-profile",
+        "checked": "2026-06-14"
+      },
+      {
+        "label": "SmartShanghai June 2026 clubbing guide",
+        "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+        "status": "watchlist-event-source",
+        "checked": "2026-06-14"
+      }
+    ]
+  },
+  "sarayu": {
+    "slug": "sarayu",
+    "name": "Sarayu",
+    "aliases": [
+      "Sarayu",
+      "jay_sarayu"
+    ],
+    "trackedAt": "2026-06-14",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "YOUSHAN / Wigwam watch profile",
+    "imageTheme": "gold",
+    "genres": [
+      "tech-house",
+      "minimal-techno",
+      "acid",
+      "disco",
+      "bangkok"
+    ],
+    "summary": "Bangkok-linked RA artist profile attached to the tentative June 27 YOUSHAN Festival warmup lead. Public RA sources support Sarayu's More Rice / Bar Temp. context and tech-house/minimal lane.",
+    "sourceNote": "RA artist/news sources are profile context only. The June 27 Wigwam warmup lineup still needs official platform-visible confirmation before promotion.",
+    "sources": [
+      {
+        "label": "Sarayu Resident Advisor profile",
+        "url": "https://ra.co/dj/sarayu",
+        "status": "artist-profile",
+        "checked": "2026-06-14"
+      },
+      {
+        "label": "Resident Advisor Mix Of The Day: Sarayu",
+        "url": "https://ra.co/news/85130",
+        "status": "artist-profile",
+        "checked": "2026-06-14"
+      },
+      {
+        "label": "jay_sarayu Instagram Youshan pre-party index preview",
+        "url": "https://www.instagram.com/p/DZB981GAW_g",
+        "status": "social-index-lead",
+        "checked": "2026-06-14"
+      }
+    ]
+  },
+  "elaheh": {
+    "slug": "elaheh",
+    "name": "Elaheh",
+    "aliases": [
+      "Elaheh",
+      "elliekhodayar"
+    ],
+    "trackedAt": "2026-06-14",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "YOUSHAN / Wigwam watch profile",
+    "imageTheme": "rose",
+    "genres": [
+      "house",
+      "minimal",
+      "techno",
+      "bangkok"
+    ],
+    "summary": "Thailand-based RA artist profile attached to the tentative June 27 YOUSHAN Festival warmup lead. RA supports Elaheh's Bangkok/Thailand club context and house/minimal/techno lane.",
+    "sourceNote": "RA profile/event sources are artist context only. The June 27 Wigwam warmup b2b lead remains social-index only until platform-visible confirmation.",
+    "sources": [
+      {
+        "label": "Elaheh Resident Advisor profile",
+        "url": "https://ra.co/dj/elaheh",
+        "status": "artist-profile",
+        "checked": "2026-06-14"
+      },
+      {
+        "label": "Resident Advisor Elaheh & The Outsider event context",
+        "url": "https://ra.co/events/2462725",
+        "status": "artist-profile",
+        "checked": "2026-06-14"
+      },
+      {
+        "label": "jay_sarayu Instagram Youshan pre-party index preview",
+        "url": "https://www.instagram.com/p/DZB981GAW_g",
+        "status": "social-index-lead",
+        "checked": "2026-06-14"
+      }
+    ]
   }
 };

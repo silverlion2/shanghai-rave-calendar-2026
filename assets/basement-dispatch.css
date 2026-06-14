@@ -1759,6 +1759,33 @@ body:has(.calendar-shell) .signal-canvas {
   min-width: 0;
 }
 
+.calendar-workbench {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+.calendar-main-column {
+  order: 1;
+  display: grid;
+  gap: 14px;
+  min-width: 0;
+}
+
+.calendar-left-rail {
+  order: 2;
+  min-width: 0;
+}
+
+.calendar-left-rail .live-dispatch-row {
+  margin: 0;
+}
+
+.calendar-main-column .layout {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .highlight-heading {
   display: flex;
   align-items: center;
@@ -2103,7 +2130,7 @@ body:has(.calendar-shell) .signal-canvas {
   .calendar-shell {
     width: min(1480px, calc(100% - 44px)) !important;
     display: grid;
-    grid-template-columns: 320px minmax(0, 1fr) 390px;
+    grid-template-columns: 320px minmax(0, 1fr);
     gap: 14px 24px;
     align-items: start;
     padding-top: 16px !important;
@@ -2111,7 +2138,7 @@ body:has(.calendar-shell) .signal-canvas {
   }
 
   .calendar-shell > .primary-nav {
-    grid-column: 2 / 4;
+    grid-column: 2;
     grid-row: 1;
     justify-self: stretch;
     justify-content: end;
@@ -2152,7 +2179,7 @@ body:has(.calendar-shell) .signal-canvas {
 
   .calendar-shell .topbar {
     grid-column: 1;
-    grid-row: 1 / span 3;
+    grid-row: 1 / span 2;
     display: block;
     margin: 0;
     padding: 0;
@@ -2243,8 +2270,8 @@ body:has(.calendar-shell) .signal-canvas {
   }
 
   .calendar-shell .stats {
-    grid-column: 1 / 4;
-    grid-row: 8;
+    grid-column: 1 / 3;
+    grid-row: 5;
     align-self: start;
     margin: 0;
     min-height: 72px;
@@ -2272,27 +2299,44 @@ body:has(.calendar-shell) .signal-canvas {
   }
 
   .calendar-shell .highlight-wall {
-    grid-column: 2 / 4;
-    grid-row: 1;
-    margin-top: 40px;
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 8px;
+  }
+
+  .calendar-shell .calendar-workbench {
+    grid-column: 1 / 3;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 320px minmax(0, 1fr);
+    gap: 18px 24px;
+    align-items: start;
+  }
+
+  .calendar-shell .calendar-left-rail {
+    order: 0;
+    display: grid;
+    gap: 10px;
+    align-self: start;
+    margin: 0;
+  }
+
+  .calendar-shell .calendar-main-column {
+    order: 0;
+    display: grid;
+    gap: 14px;
+    min-width: 0;
   }
 
   .calendar-shell .paper-route {
-    grid-column: 1;
-    grid-row: auto;
     align-self: start;
     margin-top: 0;
-    position: absolute;
-    left: 0;
-    top: 520px;
-    width: 320px;
-    z-index: 3;
+    position: static;
+    width: 100%;
     padding: 12px 14px;
   }
 
   .calendar-shell .controls {
-    grid-column: 2 / 4;
-    grid-row: 3;
     position: static;
     display: grid;
     grid-template-columns: minmax(360px, 1fr) 250px 240px;
@@ -2328,8 +2372,6 @@ body:has(.calendar-shell) .signal-canvas {
   }
 
   .calendar-shell .month-rail {
-    grid-column: 2 / 3;
-    grid-row: 4;
     align-self: start;
     margin: 0;
     border-color: rgba(229, 222, 209, .22);
@@ -2353,11 +2395,9 @@ body:has(.calendar-shell) .signal-canvas {
   }
 
   .calendar-shell .layout {
-    grid-column: 2 / 4;
-    grid-row: 5;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 390px;
-    gap: 18px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
     align-items: start;
   }
 
@@ -2388,12 +2428,12 @@ body:has(.calendar-shell) .signal-canvas {
   }
 
   .calendar-shell .calendar-grid {
-    min-height: 294px;
+    min-height: auto;
   }
 
   .calendar-shell .calendar-day {
-    min-height: 48px;
-    padding: 5px 6px;
+    min-height: 104px;
+    padding: 6px;
   }
 
   .calendar-shell .calendar-day-name {
@@ -2405,45 +2445,49 @@ body:has(.calendar-shell) .signal-canvas {
   }
 
   .calendar-shell .calendar-events {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    align-items: center;
+    display: grid;
+    gap: 6px;
+    align-items: stretch;
   }
 
   .calendar-shell .calendar-event {
-    width: 8px;
-    height: 8px;
-    min-height: 8px;
-    display: block;
+    width: 100%;
+    min-height: 54px;
+    display: grid;
+    gap: 2px;
     overflow: hidden;
-    border: 0 !important;
-    border-radius: 999px !important;
-    background: var(--cyan) !important;
-    color: transparent;
-    font-size: 0;
-    padding: 0;
+    border: 1px solid rgba(198, 255, 59, .22);
+    border-radius: 5px;
+    background: rgba(198, 255, 59, .1);
+    color: var(--ink);
+    font-size: 10px;
+    line-height: 1.25;
+    padding: 5px 6px;
   }
 
-  .calendar-shell .calendar-event::before {
-    content: none;
+  .calendar-shell .calendar-event:hover {
+    border-color: var(--acid);
+    color: var(--void);
+    background: var(--acid);
   }
 
   .calendar-shell .calendar-event.watch {
-    background: var(--gold) !important;
+    border-color: rgba(255, 209, 102, .34);
+    background: rgba(255, 209, 102, .12);
   }
 
   .calendar-shell .calendar-event-venue,
   .calendar-shell .calendar-event-title,
-  .calendar-shell .calendar-event-organizer {
-    display: none;
+  .calendar-shell .calendar-event-organizer,
+  .calendar-shell .calendar-event-lineup {
+    display: block;
   }
 
   .calendar-shell .side {
     position: static;
     display: grid;
     gap: 8px;
-    margin-top: -59px;
+    margin-top: 0;
   }
 
   .calendar-shell .side .panel {
@@ -2460,6 +2504,10 @@ body:has(.calendar-shell) .signal-canvas {
   }
 
   .calendar-shell .dispatch-panel:first-child h2 {
+    background: var(--gold);
+  }
+
+  .calendar-shell .live-dispatch-row h2 {
     background: var(--gold);
   }
 
@@ -2574,9 +2622,14 @@ body:has(.calendar-shell) .signal-canvas {
     color: var(--gold);
   }
 
+  .calendar-shell .live-dispatch-row .dispatch-row i {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+
   .calendar-shell .home-poster-rail {
-    grid-column: 1 / 4;
-    grid-row: 6;
+    grid-column: 1 / 3;
+    grid-row: 4;
     min-width: 0;
     margin-top: 0;
   }
@@ -2586,8 +2639,8 @@ body:has(.calendar-shell) .signal-canvas {
   }
 
   .calendar-shell .wide-card-rail {
-    grid-column: 1 / 4;
-    grid-row: 6;
+    grid-column: 1 / 3;
+    grid-row: 4;
     min-width: 0;
     margin-top: 0;
   }
@@ -2615,8 +2668,8 @@ body:has(.calendar-shell) .signal-canvas {
   }
 
   .calendar-shell .footnotes {
-    grid-column: 1 / 4;
-    grid-row: 9;
+    grid-column: 1 / 3;
+    grid-row: 6;
     margin-top: 0;
     border: 1px solid rgba(229, 222, 209, .2);
     padding: 14px;

@@ -152,6 +152,49 @@ function platformSearchQueries(event = {}) {
   ].map(cleanText).filter(Boolean)));
 }
 
+function eventSearchText(event) {
+  const lineupText = Array.isArray(event.lineup)
+    ? event.lineup.map(item => {
+      if (typeof item === "string") return item;
+      return [item.name, item.artist, item.role, item.genre, item.bio].filter(Boolean).join(" ");
+    }).join(" ")
+    : "";
+  return [
+    event.title,
+    event.venue,
+    event.district,
+    event.genre,
+    event.description,
+    event.ticketStatus,
+    event.sourceStatus,
+    Array.isArray(event.vibe) ? event.vibe.join(" ") : "",
+    lineupText,
+  ].filter(Boolean).join(" ").toLowerCase();
+}
+
+function technoFitScore(event) {
+  const text = eventSearchText(event);
+  let score = 0;
+  if (/(hard techno|acid techno|industrial techno|warehouse rave|abyss|system|turbo|lethal distortion)/.test(text)) {
+    score += 3;
+  } else if (/\b(techno|acid|industrial|ebm|electro|trance|house|breaks?|jungle|ukg|garage|dubstep|ghettotech|hard dance)\b/.test(text)) {
+    score += 2;
+  } else if (/(club music|bass|experimental|ambient|a\/v|darkwave|minimal wave|cold wave|post-punk|minimal|nu-disco|baile funk)/.test(text)) {
+    score += 1;
+  }
+  if (/\b(abyss|potent|exit|illum|heim|dirty house|reactor|fenrir|wigwam|specters)\b/.test(text)) score += 1;
+  if (/(pool party|afrowave|afrobeats|amapiano|90s disco|rooftop lounge|soul|funk|jazz)/.test(text)) score -= 1;
+  if (/(lower techno fit|more listening-session than rave|not a rave|not techno)/.test(text)) score -= 1;
+  return Math.max(0, Math.min(3, score));
+}
+
+function watchPriority(event) {
+  const score = technoFitScore(event);
+  if (score >= 3) return "high";
+  if (score >= 2) return "medium";
+  return "low";
+}
+
 function platformVerificationSourcesForEvent(event) {
   const byUrl = new Map();
   for (const source of eventSourceRows(event)) {
@@ -375,6 +418,106 @@ function buildRaShanghaiCoverageSnapshot(config) {
   };
 }
 
+function valueText(value) {
+  return String(value || "").trim();
+}
+
+function missingCoreValue(value) {
+  const text = valueText(value);
+  return !text || /^(?:check|tba|unknown|not listed)$/i.test(text) || /^(?:check|tba)\b/i.test(text);
+}
+
+function uncertainCoreValue(value) {
+  return /\b(?:verify|tentative|lead only|social-index|search-index|needs .*confirmation|pending|not confirmed)\b/i.test(valueText(value));
+}
+
+function eventCoreFieldState(event) {
+  const missing = [];
+  const uncertain = [];
+  const check = (field, value) => {
+    if (missingCoreValue(value)) missing.push(field);
+    else if (uncertainCoreValue(value)) uncertain.push(field);
+  };
+
+  check("date", event.sortDate || event.date);
+  check("title", event.title);
+  check("time", event.time);
+  check("venue", event.venue);
+  check("address", event.address);
+  check("price", event.price);
+  check("age", event.age);
+  check("ticketUrl", event.ticketUrl);
+
+  const sourceRows = eventSourceRows(event);
+  if (!sourceRows.some(source => source.url)) {
+    missing.push("sourceUrl");
+  }
+  if (!sourceRows.some(source => source.url && (source.lastChecked || source.checkedAt || source.checked))) {
+    missing.push("checkedSource");
+  }
+  if (!valueText(event.ticketStatus)) missing.push("ticketStatus");
+
+  if (!isFestivalListing(event)) {
+    if (!Array.isArray(event.lineup) || event.lineup.length === 0) {
+      missing.push("lineup");
+    } else if (event.lineup.some(item => uncertainCoreValue(item.note))) {
+      uncertain.push("lineup");
+    }
+  }
+
+  return { missing, uncertain };
+}
+
+function eventNonCoreFieldState(event) {
+  const missing = [];
+  if (!event.posterUrl && !event.posterEvidence) missing.push("poster");
+  for (const field of ["recommendationReason", "bestFor", "verifyBeforeGoing", "sourceConfidence"]) {
+    if (!valueText(event[field])) missing.push(field);
+  }
+  if (!Array.isArray(event.soundTags) || event.soundTags.length === 0) missing.push("soundTags");
+  if (!Array.isArray(event.decisionTags) || event.decisionTags.length === 0) missing.push("decisionTags");
+  return { missing };
+}
+
+function buildCoreFieldQueue(futureEvents) {
+  return futureEvents
+    .map(event => {
+      const core = eventCoreFieldState(event);
+      const nonCore = eventNonCoreFieldState(event);
+      const performerProfileGaps = performerNamesForEvent(event)
+        .filter(name => !(profileSourceCount(performerProfileSlug(name)) > 0));
+      const hasCoreGap = core.missing.length || core.uncertain.length;
+      return {
+        id: event.id,
+        date: event.sortDate,
+        title: event.title,
+        venue: event.venue,
+        confidence: event.confidence,
+        priority: watchPriority(event),
+        fitScore: technoFitScore(event),
+        missingCoreFields: core.missing,
+        uncertainCoreFields: core.uncertain,
+        missingNonCoreFields: nonCore.missing,
+        performerProfileGaps,
+        coreFieldGapStatus: hasCoreGap ? "public-source-gap" : "performer-profile-gap",
+        sourceGapNote: hasCoreGap
+          ? "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass."
+          : "Event core fields are usable, but performer profile sources are still missing from the DJ inventory.",
+        nextAction: hasCoreGap
+          ? "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
+          : "Core fields usable; add performer profile sources before non-core enrichment."
+      };
+    })
+    .filter(item => item.missingCoreFields.length || item.uncertainCoreFields.length || item.performerProfileGaps.length)
+    .sort((first, second) => (
+      second.fitScore - first.fitScore
+      || second.missingCoreFields.length - first.missingCoreFields.length
+      || second.uncertainCoreFields.length - first.uncertainCoreFields.length
+      || String(first.date || "").localeCompare(String(second.date || ""))
+      || String(first.title || "").localeCompare(String(second.title || ""))
+    ));
+}
+
 const future = futureEvents();
 const issues = [];
 const warnings = [];
@@ -517,6 +660,10 @@ const platformVerificationQueue = buildPlatformVerificationQueue(watchFuture, qu
 const qualityPlatformVerificationQueue = Array.isArray(payload.quality?.platformVerificationQueue)
   ? payload.quality.platformVerificationQueue
   : [];
+const coreFieldQueue = buildCoreFieldQueue(future);
+const qualityCoreFieldQueue = Array.isArray(payload.quality?.coreFieldQueue)
+  ? payload.quality.coreFieldQueue
+  : [];
 
 const totals = {
   events: events.length,
@@ -543,6 +690,9 @@ const totals = {
   staleFuture: staleFuture.length,
   missingTicketStatus: missingTicketStatus.length,
   highMissingLineup: highMissingLineup.length,
+  futureCoreFieldQueue: coreFieldQueue.length,
+  futureMissingCoreFields: coreFieldQueue.reduce((total, item) => total + item.missingCoreFields.length, 0),
+  futureUncertainCoreFields: coreFieldQueue.reduce((total, item) => total + item.uncertainCoreFields.length, 0),
   platformVerificationQueue: platformVerificationQueue.length,
   platformVerificationSources: platformVerificationQueue.reduce((total, item) => total + item.platformSourceCount, 0),
   curatedEventsApplied: payload.curatedEventsApplied,
@@ -610,6 +760,40 @@ if (payload.quality) {
       issues.push(`quality.platformVerificationQueue.${expected.id} must include platform-native search queries`);
     }
   }
+  if (!payload.quality.coreFieldPolicy || !Array.isArray(payload.quality.coreFieldPolicy.coreFields) || !Array.isArray(payload.quality.coreFieldPolicy.nonCoreFields)) {
+    issues.push("quality.coreFieldPolicy must define coreFields and nonCoreFields");
+  } else {
+    for (const field of ["date", "title", "time", "venue", "address", "lineup", "price", "age", "ticketUrl", "ticketStatus", "sourceUrl", "checkedSource", "performerProfileSources"]) {
+      if (!payload.quality.coreFieldPolicy.coreFields.includes(field)) {
+        issues.push(`quality.coreFieldPolicy.coreFields missing ${field}`);
+      }
+    }
+    for (const field of ["poster", "recommendationReason", "bestFor", "verifyBeforeGoing", "sourceConfidence", "soundTags", "decisionTags"]) {
+      if (!payload.quality.coreFieldPolicy.nonCoreFields.includes(field)) {
+        issues.push(`quality.coreFieldPolicy.nonCoreFields missing ${field}`);
+      }
+    }
+  }
+  if (!Array.isArray(payload.quality.coreFieldQueue)) {
+    issues.push("quality.coreFieldQueue must list future events with missing or uncertain core fields");
+  } else if (payload.quality.coreFieldQueue.length !== coreFieldQueue.length) {
+    issues.push(`quality.coreFieldQueue has ${payload.quality.coreFieldQueue.length} rows, expected ${coreFieldQueue.length}`);
+  }
+  const qualityCoreById = new Map(qualityCoreFieldQueue.map(item => [item.id, item]));
+  for (const expected of coreFieldQueue) {
+    const actual = qualityCoreById.get(expected.id);
+    if (!actual) {
+      issues.push(`quality.coreFieldQueue missing ${expected.id}`);
+      continue;
+    }
+    for (const field of ["missingCoreFields", "uncertainCoreFields", "performerProfileGaps"]) {
+      const actualValues = Array.isArray(actual[field]) ? actual[field] : [];
+      const expectedValues = expected[field];
+      if (actualValues.join("|") !== expectedValues.join("|")) {
+        issues.push(`quality.coreFieldQueue.${expected.id}.${field} is ${actualValues.join(", ") || "empty"}, expected ${expectedValues.join(", ") || "empty"}`);
+      }
+    }
+  }
   if (payload.quality.raShanghaiCoverage) {
     const qualityRaCoverage = payload.quality.raShanghaiCoverage;
     for (const field of ["expected", "covered", "missing", "visibleUpcomingLabel", "upcomingExpected", "upcomingCovered", "supporting", "relatedContext"]) {
@@ -672,6 +856,49 @@ console.log(JSON.stringify({
       }))
       : [],
   },
+  coreFieldPolicy: payload.quality?.coreFieldPolicy || {
+    coreFields: [
+      "date",
+      "title",
+      "time",
+      "venue",
+      "address",
+      "lineup",
+      "price",
+      "age",
+      "ticketUrl",
+      "ticketStatus",
+      "sourceUrl",
+      "checkedSource",
+      "performerProfileSources",
+    ],
+    nonCoreFields: [
+      "poster",
+      "recommendationReason",
+      "bestFor",
+      "verifyBeforeGoing",
+      "sourceConfidence",
+      "soundTags",
+      "decisionTags",
+    ],
+    rule: "Fill missing or uncertain core fields for future events, venues, and DJs before attempting confidence promotion through second sources.",
+  },
+  coreFieldQueue: (qualityCoreFieldQueue.length ? qualityCoreFieldQueue : coreFieldQueue).slice(0, 20).map(item => ({
+    id: item.id,
+    date: item.date,
+    title: item.title,
+    venue: item.venue,
+    priority: item.priority,
+    fitScore: item.fitScore,
+    confidence: item.confidence,
+    missingCoreFields: item.missingCoreFields,
+    uncertainCoreFields: item.uncertainCoreFields,
+    performerProfileGaps: item.performerProfileGaps,
+    missingNonCoreFields: item.missingNonCoreFields,
+    coreFieldGapStatus: item.coreFieldGapStatus,
+    sourceGapNote: item.sourceGapNote,
+    nextAction: item.nextAction,
+  })),
   watchQueue: (qualityWatchQueue.length ? qualityWatchQueue : watchFuture).map(item => {
     const event = item.id ? events.find(candidate => candidate.id === item.id) || item : item;
     const quality = qualityWatchById.get(event.id) || item;

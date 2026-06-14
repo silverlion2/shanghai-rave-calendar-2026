@@ -1444,7 +1444,8 @@
       "id": "jasmin-knopha",
       "lastChecked": "2026-06-14",
       "sourceStatus": "watchlist",
-      "ticketStatus": "SmartShanghai is the fully readable event-level lead for June 20 at Heim Sauna. A public search-index preview of Heim's Instagram profile also surfaces a 06.20 Heim Invites: Jasmin lead, but that social source still needs Chrome/Instagram visual confirmation and does not expose door price, ticket route, set times, or final running order. Keep as Watch.",
+      "address": "Heim Sauna / Green Station area, around Changle Lu and Shaanxi Nan Lu, Shanghai; exact entrance needs Heim confirmation",
+      "ticketStatus": "SmartShanghai is the fully readable event-level lead for June 20 at Heim Sauna and says Heim's June club nights are in the Sauna room around Green Station. A public search-index preview of Heim's Instagram profile also surfaces a 06.20 Heim Invites: Jasmin lead, but that social source still needs Chrome/Instagram visual confirmation and does not expose door price, ticket route, set times, exact entrance, or final running order. Keep as Watch.",
       "recommendationReason": "Kept on Watch because the lineup is named, a public Heim social-index preview points to the same June 20 lead, and profile-level sources support the sound fit, but ticketing, door price, and set times still need direct visual confirmation.",
       "verifyBeforeGoing": "Confirm Heim's current room, door price, ticket route, final lineup, and set times through Heim's Instagram, WeChat, XHS, or ticketing route before planning around Jasmin + Knopha.",
       "sourceConfidence": "Watchlist: SmartShanghai remains the only fully readable event-level source for date, venue, and lineup; public search results expose a Heim Instagram event lead, and artist-profile sources support taste fit, but current ticketing and set times are not confirmed.",
@@ -1483,6 +1484,13 @@
           "status": "artist-profile",
           "lastChecked": "2026-06-14",
           "verificationNote": "RA profile supports Knopha's China/Shanghai club context and Heim appearances; not a June 20 event confirmation."
+        },
+        {
+          "label": "SmartShanghai Heim venue context",
+          "url": "https://www.smartshanghai.com/venue/25427/heim",
+          "status": "venue-context",
+          "lastChecked": "2026-06-14",
+          "verificationNote": "SmartShanghai confirms Heim as a Jing'an basement club focused on techno, house, electro, and club music. The June guide separately says Heim's June club nights are in the Sauna room around Green Station; use this as venue context, not ticket confirmation."
         }
       ],
       "lineup": [
@@ -1500,7 +1508,7 @@
       "id": "liminal-dreams",
       "lastChecked": "2026-06-14",
       "sourceStatus": "watchlist",
-      "ticketStatus": "SmartShanghai is the fully readable event-level source for the June 20 Wigwam lead. Public search-index previews from Liminal Dreams and Wigwam also point to the series returning at Wigwam and to JUNE 20 @liminal_dreams_, but no Chrome/Instagram visual confirmation, lineup, ticket route, door price, start time, or age policy was captured. Keep as Watch.",
+      "ticketStatus": "SmartShanghai is the fully readable event-level source for the June 20 Wigwam lead. Public search-index previews from Liminal Dreams and Wigwam also point to the series returning at Wigwam, JUNE 20 @liminal_dreams_, a tentative Chingyi / IIN / Rainsoft / Toss lineup, and 20:00-late timing. No Chrome/Instagram visual confirmation, ticket route, door price, or age policy was captured. Keep as Watch.",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
@@ -1516,17 +1524,51 @@
           "verificationNote": "Public search-index preview surfaced a Liminal Dreams post saying the series returns for a third round at Wigwam in Shanghai. This supports the Wigwam event lead but does not expose lineup, ticket route, door price, start time, or age policy; Chrome/Instagram visual confirmation still required."
         },
         {
+          "label": "Liminal Dreams Instagram lineup/time index preview",
+          "url": "https://www.instagram.com/p/DZFFVIPE8VW/",
+          "status": "social-index-lead",
+          "lastChecked": "2026-06-14",
+          "verificationNote": "Public search-index preview surfaced Liminal Dreams x Wigwam text with Chingyi, IIN, Rainsoft, Toss, June 20, 2026, and 20:00-late. Treat these as lineup and start-time leads only until platform-native visual confirmation."
+        },
+        {
           "label": "Wigwam Instagram profile index preview",
           "url": "https://www.instagram.com/wigwam.live/",
           "status": "social-index-lead",
           "lastChecked": "2026-06-14",
           "verificationNote": "Public search-index preview for Wigwam surfaced JUNE 20 @liminal_dreams_ in the venue feed context. Treat as venue-social lead only until platform-native Instagram/XHS/WeChat or ticketing verification confirms practical details."
+        },
+        {
+          "label": "SmartShanghai Wigwam venue context",
+          "url": "https://www.smartshanghai.com/venue/31681/wigwam_cafe",
+          "status": "venue-context",
+          "lastChecked": "2026-06-14",
+          "verificationNote": "SmartShanghai lists Wigwam at LG-02, B1/F, C PARK, 658 Zhaohua Lu and describes an organic deeper-house, techno, dub, ambient, reggae, and live-electronic lane. Venue context only; not event ticket confirmation."
         }
       ],
-      "description": "Watch-level Wigwam lead for ambient and outer-music listening across Asia. SmartShanghai and social-index previews now support the June 20 Liminal Dreams/Wigwam link, but the lineup, start time, and door or ticket policy still need direct confirmation.",
-      "recommendationReason": "Kept on Watch because SmartShanghai and venue/series social-index previews support the June 20 Wigwam lead, but the final lineup, start time, and ticket/door details remain unconfirmed.",
-      "verifyBeforeGoing": "Use platform-native Instagram, XHS, WeChat, Wigwam, or ticketing search to confirm the June 20 lineup, start time, room, door price, and age policy before sending readers there.",
-      "sourceConfidence": "Watchlist: SmartShanghai is the readable event-level source; Liminal Dreams and Wigwam social-index previews strengthen the lead but remain unverified social context, not ticket confirmation."
+      "description": "Watch-level Wigwam lead for ambient and outer-music listening across Asia. SmartShanghai supports the June 20 Liminal Dreams/Wigwam link, while public social-index previews appear to add Chingyi, IIN, Rainsoft, Toss, and a 20:00-late start. Keep practical details on Watch until the post or ticket route is visually confirmed.",
+      "recommendationReason": "Kept on Watch because SmartShanghai and venue/series social-index previews support the June 20 Wigwam lead, and the public index now gives a tentative lineup/time lead, but door price, ticket route, age policy, and platform-visible post state remain unconfirmed.",
+      "verifyBeforeGoing": "Use platform-native Instagram, XHS, WeChat, Wigwam, or ticketing search to confirm whether Chingyi, IIN, Rainsoft, Toss, the 20:00-late start, room, door price, and age policy are final before sending readers there.",
+      "sourceConfidence": "Watchlist: SmartShanghai is the readable event-level source; Liminal Dreams and Wigwam social-index previews strengthen the lead and expose tentative lineup/time text, but remain unverified social context, not ticket confirmation.",
+      "lineup": [
+        {
+          "name": "Chingyi",
+          "note": "Public search-index preview for a Liminal Dreams/Wigwam post appears to name Chingyi for the June 20 event; platform-native visual confirmation is still required."
+        },
+        {
+          "name": "IIN",
+          "note": "Public search-index preview appears to list IIN in the June 20 Liminal Dreams/Wigwam lineup; keep as a lineup lead until the post is visually verified."
+        },
+        {
+          "name": "Rainsoft",
+          "note": "Public search-index preview appears to list Rainsoft in the June 20 Liminal Dreams/Wigwam lineup; keep as a lineup lead until the post is visually verified."
+        },
+        {
+          "name": "Toss",
+          "note": "Public search-index preview appears to list Toss in the June 20 Liminal Dreams/Wigwam lineup; keep as a lineup lead until the post is visually verified."
+        }
+      ],
+      "time": "20:00-late (social-index lead; verify)",
+      "address": "LG-02, B1/F, C PARK, 658 Zhaohua Lu, near Wuyi Lu, Changning District"
     },
     {
       "id": "botox-fatale",
@@ -1572,6 +1614,13 @@
           "lastChecked": "2026-06-14",
           "verificationNote": "Public search-index preview from the official Abyss account surfaced BOTOX FATAL (LIVE) with TUI, Kong BB, and Noodleprince, adjacent to a separate Saturday June 27 C.U.M listing. Use platform-native Instagram search from the Abyss account before treating the support lineup, date card, ticket route, or set times as confirmed.",
           "browserCheck": "2026-06-14 Playwright/Chrome public-session route: Instagram home exposed no usable search input; opening the official abyss_shanghai account timed out on DOMContentLoaded but showed the account title and image placeholders only. Follow-up platform checks: XHS search for Abyss + Botox Fatale + 6.26 + Shanghai redirected to a security-limit page with error 300012 / IP at risk; screenshot saved at output/playwright/xhs-botox-security-limit.png. Instagram platform search for Abyss Botox Fatale returned HTTP 429. No visible post text, date card, support lineup, ticket route, door price, or set times were confirmed; logged-in Chrome/Instagram, user-assisted XHS, or WeChat official-account search is required."
+        },
+        {
+          "label": "SmartShanghai Abyss venue context",
+          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+          "status": "venue-context",
+          "lastChecked": "2026-06-14",
+          "verificationNote": "SmartShanghai lists Abyss Club at B1, 523 Huaihai Zhong Lu and describes the venue as hard techno, hard groove, hard electro, and heavy high-bpm electronic music. Venue context only; not event ticket confirmation."
         }
       ],
       "lineup": [
@@ -1580,7 +1629,8 @@
           "note": "SmartShanghai lists Botox Fatale for Abyss on June 26; artist-side and Abyss social-index previews also point toward the Shanghai/Abyss route, while RA only confirms the nearby Shenzhen date."
         }
       ],
-      "description": "Watch-level Abyss hard-techno lead: SmartShanghai names Botox Fatale for June 26, and artist-side plus Abyss social-index previews point toward the ABYSS Shanghai route. Keep it on Watch until Abyss, promoter, RA Shanghai, ticketing, or Chrome-verified social evidence confirms practical details."
+      "description": "Watch-level Abyss hard-techno lead: SmartShanghai names Botox Fatale for June 26, and artist-side plus Abyss social-index previews point toward the ABYSS Shanghai route. Keep it on Watch until Abyss, promoter, RA Shanghai, ticketing, or Chrome-verified social evidence confirms practical details.",
+      "address": "B1, 523 Huaihai Zhong Lu, near Chengdu Bei Lu, Huangpu District"
     },
     {
       "id": "anika-kunst",
@@ -1618,6 +1668,13 @@
           "status": "artist-profile",
           "lastChecked": "2026-06-14",
           "verificationNote": "RA biography supports the vinyl, techno, and house context used in the recommendation; not Shanghai event confirmation."
+        },
+        {
+          "label": "POTENT Resident Advisor venue context",
+          "url": "https://ra.co/clubs/186588",
+          "status": "venue-context",
+          "lastChecked": "2026-06-14",
+          "verificationNote": "RA lists POTENT at L3 TX Huaihai, 523 Huaihai Middle Road. Venue address context only; not June 27 event or ticket confirmation."
         }
       ],
       "lineup": [
@@ -1634,7 +1691,8 @@
           "note": "SmartShanghai lists DJ EBP as POTENT support; RA profile context supports recurring Shanghai and China club appearances."
         }
       ],
-      "description": "Watch-level POTENT lead: SmartShanghai names Anika Kunst with 10000 and DJ EBP, and RA profile context supports the techno/house fit, but verify the current POTENT ticket route and final set order before planning around it."
+      "description": "Watch-level POTENT lead: SmartShanghai names Anika Kunst with 10000 and DJ EBP, and RA profile context supports the techno/house fit, but verify the current POTENT ticket route and final set order before planning around it.",
+      "address": "L3 TX Huaihai, 523 Huaihai Middle Road, Huangpu District, Shanghai"
     },
     {
       "id": "hexscape",
@@ -1689,14 +1747,16 @@
     {
       "id": "jaal",
       "time": "20:30-23:59",
+      "address": "B103, B1/F, No. 55, 222 Panyu Lu, Gemdale Lane, near Anxi Lu, Changning District",
       "price": "80-140 RMB",
+      "ticketUrl": "https://m.df962388.com/yanchu/384394.html",
       "lastChecked": "2026-06-14",
       "sourceStatus": "watchlist",
-      "ticketStatus": "SmartShanghai and browser-verified 东方演出网 both place the Endgame/Fenrir event on June 27. The Chinese listing shows 20:30-23:59 at FENRIR Shanghai with 80 RMB early bird, 100 RMB full-price, and 140 RMB pair tickets, and says JAAL the Machine takes over the late segment after the bands. Verify the purchase route before going.",
+      "ticketStatus": "SmartShanghai and browser-verified 东方演出网 both place the Endgame/Fenrir event on June 27. The Chinese listing shows 20:30-23:59 at FENRIR Shanghai with 80 RMB early bird, 100 RMB full-price, and 140 RMB pair tickets, and says JAAL the Machine takes over the late segment after the bands. SmartShanghai venue context gives the Fenrir address. Age policy was not found in public sources; mark it as an organizer/source gap and recheck before going.",
       "description": "Two-source Watch lead for Fenrir's Endgame metal-crossover night: SmartShanghai frames it as live acid techno with Blood of Life, Chimera Cult, and Soulitude, while the Chinese listing gives time and ticket tiers. Strong for hard/experimental readers, but still verify the actual purchase route and JAAL set timing.",
       "recommendationReason": "Kept on Watch because two public rows now confirm date, venue, bill, and ticket tiers, but the purchase route and exact JAAL handoff time still need direct venue or ticketing confirmation.",
-      "verifyBeforeGoing": "Check Fenrir or the ticketing route for live availability, exact running order, and whether JAAL starts within or after the listed 20:30-23:59 window.",
-      "sourceConfidence": "Watchlist: 2 event-level public rows confirm core facts and bill; keep final planning conditional until ticket checkout and running order are direct-checked.",
+      "verifyBeforeGoing": "Check Fenrir or the ticketing route for live availability, exact running order, age policy, and whether JAAL starts within or after the listed 20:30-23:59 window.",
+      "sourceConfidence": "Watchlist: 2 event-level public rows confirm date, venue, bill, time, price, and ticket route, while SmartShanghai gives venue address. Age policy remains unpublished or not found in current public sources.",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
@@ -1717,6 +1777,13 @@
           "url": "https://rachelgouk.com/listings/fenrir/",
           "status": "venue-context",
           "lastChecked": "2026-06-14"
+        },
+        {
+          "label": "SmartShanghai FENRIR venue context",
+          "url": "https://www.smartshanghai.com/venue/33537/fenrir",
+          "status": "venue-context",
+          "lastChecked": "2026-06-14",
+          "verificationNote": "SmartShanghai lists Fenrir at B103, B1/F, No. 55, 222 Panyu Lu, Gemdale Lane, near Anxi Lu. Venue context only; age policy and live ticket availability still need event/ticket verification."
         }
       ],
       "lineup": [
@@ -1774,6 +1841,13 @@
           "status": "artist-profile",
           "lastChecked": "2026-06-14",
           "verificationNote": "RA lists Luu.Qoo as an alias of Taiwan-based LUU, matching the Liu Qoo/Luu.Qoo context; not event confirmation."
+        },
+        {
+          "label": "SmartShanghai ILLUM venue context",
+          "url": "https://www.smartshanghai.com/venue/34394/illum",
+          "status": "venue-context",
+          "lastChecked": "2026-06-14",
+          "verificationNote": "SmartShanghai lists ILLUM at LG-16, B1/F, C PARK, 658 Zhaohua Lu and describes a cutting-edge club, bass, live-performance, and post-everything lane. Venue context only; not event ticket confirmation."
         }
       ],
       "lineup": [
@@ -1786,7 +1860,8 @@
           "note": "SmartShanghai lists Taipei's Liu Qoo for KNOT: Truth and Lies Vol. 4; RA profile context supports the Luu.Qoo/LUU alias link."
         }
       ],
-      "description": "Watch-level KNOT/ILLUM lead with QQBBG and Liu Qoo. The sound lane points toward hyperpop, trance, and club-rave pressure, but verify the June 27 ticket state, start time, and running order before recommending it as confirmed."
+      "description": "Watch-level KNOT/ILLUM lead with QQBBG and Liu Qoo. The sound lane points toward hyperpop, trance, and club-rave pressure, but verify the June 27 ticket state, start time, and running order before recommending it as confirmed.",
+      "address": "LG-16, B1/F, C PARK, 658 Zhaohua Lu, near Zhongdeqiao Lu, Changning District"
     },
     {
       "id": "devils-dancers",
@@ -1832,10 +1907,10 @@
       "id": "youshan-warmup",
       "lastChecked": "2026-06-14",
       "sourceStatus": "watchlist",
-      "ticketStatus": "SmartShanghai is still the only fully readable event-level source for the June 27 Wigwam warmup and says the lineup is TBA. RA confirms YOUSHAN FESTIVAL 2026 itself at Secret Forest, Chongli on July 17-19 with techno/house genres, full lineup, Showstart ticket link, 199-599 RMB cost, and 18+ age rule. Public Instagram search-index previews from Wigwam and jay_sarayu point toward a June 27 Youshan Festival Pre Party at Wigwam, but neither exposes an official post body, ticket route, start time, or full lineup in a browser-verified view. Keep as Watch.",
-      "recommendationReason": "Kept on Watch because the main YOUSHAN festival is source-backed on RA and two public social-index routes point to the June 27 Wigwam pre-party, but the Shanghai warmup still lacks official lineup, ticket, and time confirmation.",
+      "ticketStatus": "SmartShanghai is still the only fully readable event-level source for the June 27 Wigwam warmup and says the lineup is TBA. RA confirms YOUSHAN FESTIVAL 2026 itself at Secret Forest, Chongli on July 17-19 with techno/house genres, full lineup, Showstart ticket link, 199-599 RMB cost, and 18+ age rule. Public Instagram search-index previews from Wigwam and jay_sarayu point toward a June 27 Youshan Festival Pre Party at Wigwam and appear to name Sarayu b2b Elaheh, but neither exposes an official post body, ticket route, start time, or full lineup in a browser-verified view. Keep as Watch.",
+      "recommendationReason": "Kept on Watch because the main YOUSHAN festival is source-backed on RA, Wigwam venue context is source-backed, and two public social-index routes point to the June 27 pre-party, but the Shanghai warmup still lacks official lineup, ticket, and time confirmation.",
       "verifyBeforeGoing": "Wait for Wigwam or YOUSHAN to publish the June 27 warmup lineup, start time, and ticket route; do not use the main festival RA ticket page as warmup confirmation.",
-      "sourceConfidence": "Watchlist: SmartShanghai confirms the warmup lead; Wigwam and artist-side social-index text point to the pre-party route; RA confirms the main festival context, not the Shanghai warmup.",
+      "sourceConfidence": "Watchlist: SmartShanghai confirms the warmup lead; Wigwam and artist-side social-index text point to the pre-party route and tentative Sarayu b2b Elaheh support; RA confirms the main festival context, not the Shanghai warmup.",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
@@ -1864,7 +1939,25 @@
           "url": "https://www.instagram.com/p/DZB981GAW_g/",
           "status": "social-index-lead",
           "lastChecked": "2026-06-14",
-          "verificationNote": "Public search-index preview surfaced `27.06: Youshan Festival Pre Party | Wigwam | Shanghai, CN` in a jay_sarayu Instagram June-date post. Treat as an artist-side platform verification lead only: the visible search result does not confirm official organizer approval, full lineup, start time, ticket route, door price, or age policy."
+          "verificationNote": "Public search-index preview surfaced `27.06: Youshan Festival Pre Party | Wigwam | Shanghai, CN` and appeared to reference Sarayu b2b Elaheh. Treat as an artist-side platform verification lead only: the visible result does not confirm official organizer approval, full lineup, start time, ticket route, door price, or age policy."
+        },
+        {
+          "label": "SmartShanghai Wigwam venue context",
+          "url": "https://www.smartshanghai.com/venue/31681/wigwam_cafe",
+          "status": "venue-context",
+          "lastChecked": "2026-06-14",
+          "verificationNote": "SmartShanghai lists Wigwam at LG-02, B1/F, C PARK, 658 Zhaohua Lu and describes an organic deeper-house, techno, dub, ambient, reggae, and live-electronic lane. Venue context only; not warmup ticket confirmation."
+        }
+      ],
+      "address": "LG-02, B1/F, C PARK, 658 Zhaohua Lu, near Wuyi Lu, Changning District",
+      "lineup": [
+        {
+          "name": "Sarayu",
+          "note": "Public jay_sarayu search-index preview appears to place Sarayu at the June 27 Youshan Festival Pre Party at Wigwam; platform-native visual confirmation is still required."
+        },
+        {
+          "name": "Elaheh",
+          "note": "Public jay_sarayu search-index preview appears to reference a b2b with Elaheh for the June 27 Wigwam pre-party; keep as a lineup lead until the post is visually verified."
         }
       ]
     },

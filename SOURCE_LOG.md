@@ -116,6 +116,18 @@ Follow-up correction in the same pass:
 - `anika-kunst`: public search results surfaced an official `potent_club` Instagram index preview for `POTENT JUNE 2026` naming `@anikakunstmuzik`. Added it as `social-index-lead`; it identifies the likely platform-native Chrome/Instagram verification target but does not confirm the June 27 poster card, ticket route, door price, or set times. Keep as Watch until POTENT, RA Shanghai, ticketing, or visually verified official social evidence confirms practical details.
 - `liminal-dreams`: public search results surfaced Liminal Dreams and Wigwam Instagram index previews tying the series to Wigwam and `JUNE 20 @liminal_dreams_`. Added them as `social-index-lead` rows; this lowers single-source risk but still does not confirm lineup, start time, ticket route, door price, or age policy. Keep as Watch until platform-native Instagram/XHS/WeChat, Wigwam, or ticketing verification confirms practical details.
 
+2026-06-14 follow-up on `liminal-dreams`:
+
+- Public search-index results surfaced an additional Liminal Dreams/Wigwam Instagram result at `https://www.instagram.com/p/DZFFVIPE8VW/` with tentative lineup/time text: Chingyi, IIN, Rainsoft, Toss, June 20, 2026, and 20:00-late.
+- Added this as `social-index-lead` only and added lineup notes that explicitly say platform-native visual confirmation is still required.
+- Decision: keep `liminal-dreams` as Watch and keep SmartShanghai as the only readable event-level confirmation source until Instagram/XHS/WeChat, Wigwam, or a ticketing route confirms the visible post, door price, age policy, and final lineup.
+
+2026-06-14 field-first Watch pass:
+
+- Workflow correction: for future high-fit Watch items, fill practical fields first, then pursue second-source confirmation. Practical fields include event time, address, price, age policy, ticket route, poster, lineup, venue context, and DJ/source notes.
+- Added venue-context addresses for `jasmin-knopha`, `liminal-dreams`, `botox-fatale`, `anika-kunst`, `truth-lies`, and `youshan-warmup` from SmartShanghai venue pages or RA venue context. These venue rows improve practical usability but do not count as second event confirmation.
+- Added tentative social-index lineup/time details for `liminal-dreams` and tentative social-index lineup details for `youshan-warmup`; both remain Watch until platform-native visual confirmation or ticketing/venue pages confirm final details.
+
 Second follow-up in the same queue:
 
 - `botox-fatale`: public search results surfaced an official Abyss Instagram June-program preview containing `BOTOX FATAL (LIVE)` plus `TUI`, `Kong BB`, and `Noodleprince`, but the snippet is adjacent to a separate Saturday June 27 C.U.M listing. Added it as `social-index-lead` only. Next check should enter Instagram through Abyss search/profile, open the visible June program post, and verify whether Botox Fatale is on Friday June 26, what support names are attached, and whether ticket or door details are visible.
@@ -227,3 +239,35 @@ Use status: "watch" when a lead has only a calendar/editorial mention, missing t
 - RA listing fetches are best-effort because RA may return 403 to automated requests. Existing RA event URLs remain stored as sources, while SmartShanghai public pages currently provide the reliable automated discovery layer.
 - X/Twitter searches are discovery-only. They are useful for venue/promoter chatter and short-notice leads, but they do not confirm calendar entries by themselves. Use `X_BEARER_TOKEN` or `TWITTER_BEARER_TOKEN` in GitHub Secrets for reliable recent-search collection.
 - Known anti-bot/app-only sources are queued under `computerUseQueue` and surfaced in `ops.html` as `computer-use` leads for agent-operated Chrome + Computer Use collection.
+
+## 2026-06-14 Core vs Non-Core Field Policy
+
+Implemented the user's field-priority correction as an auditable workflow.
+
+- Core future-event fields are now: `date`, `title`, `time`, `venue`, `address`, `lineup`, `price`, `age`, `ticketUrl`, `ticketStatus`, `sourceUrl`, `checkedSource`, and `performerProfileSources`.
+- Non-core enrichment fields are now: `poster`, `recommendationReason`, `bestFor`, `verifyBeforeGoing`, `sourceConfidence`, `soundTags`, and `decisionTags`.
+- Added `quality.coreFieldPolicy` and `quality.coreFieldQueue` to `data/events.json`; `scripts/audit-events.js` now validates the queue and reports it before the Watch/source-promotion queue.
+- Current generated state: 34 future events, 25 rows in the core-field queue, 71 missing core fields, and 5 uncertain core fields.
+- Highest-priority core gaps are now explicit: `jasmin-knopha`, `botox-fatale`, `youshan-warmup`, `anika-kunst`, `truth-lies`, and `jaal` come before non-core poster/copy enrichment or second-source promotion work.
+
+Workflow rule: resolve missing or uncertain core fields first. Second-source confirmation is still important, but it comes after the event has usable planning facts for date/title/time, venue/address, DJ lineup/profile context, ticket route, price, age policy, and checked source trail.
+
+## 2026-06-14 Core Gap Marking Pass
+
+Applied the user's clarification: if a core field cannot be found, mark it as a source gap instead of forcing a placeholder.
+
+- Added `coreFieldGapStatus` and `sourceGapNote` to `quality.coreFieldQueue`; unresolved rows now explicitly say that missing or uncertain core fields were not found in current public sources and should be rechecked through organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.
+- Added source-backed DJ profiles for `Jasmín`, `Knopha`, `Sarayu`, and `Elaheh`. These reduce DJ/profile core gaps but do not confirm event ticketing or final running order.
+- Added `JAAL The Machine live acid techno` venue address from SmartShanghai FENRIR venue context and set the ticket route to the already browser-checked 东方演出网 listing. Age policy remains marked as not found in public sources.
+- Current generated state after regeneration: future missing core fields dropped from 71 to 69; future performer profile source gaps dropped from 13 to 9. The high-priority rows `jasmin-knopha`, `botox-fatale`, `youshan-warmup`, `anika-kunst`, `truth-lies`, and `jaal` remain in the core-field queue because ticket/time/age/lineup fields are still not publicly confirmed.
+
+Sources used in this pass:
+
+- Minor AM Jasmín profile: `https://www.minor-am.com/roster/jasmin`
+- Jasmín Bandcamp: `https://jasminhoek.bandcamp.com/album/bite-the-hand-that-feeds-you`
+- Knopha RA profile: `https://ra.co/dj/knopha`
+- Sarayu RA profile and RA Mix Of The Day: `https://ra.co/dj/sarayu`, `https://ra.co/news/85130`
+- Elaheh RA profile and RA event context: `https://ra.co/dj/elaheh`, `https://ra.co/events/2462725`
+- SmartShanghai FENRIR venue context: `https://www.smartshanghai.com/venue/33537/fenrir`
+
+Workflow rule: do not treat `public-source-gap` as a failure. It is an explicit editorial marker meaning the likely organizer/venue/ticketing details are unpublished or not reachable without platform-native browser verification yet.

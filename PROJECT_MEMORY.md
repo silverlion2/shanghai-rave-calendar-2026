@@ -1021,3 +1021,92 @@ Verification:
 - `node --test tests/trust-framework.test.js` passed.
 - `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json` passed with 0 findings.
 - `npm run check` passed with 52 tests.
+
+## 2026-06-14 Liminal Dreams Watch Detail Upgrade
+
+The credibility pass continued after the RA poster push by reviewing the remaining Watch queue.
+
+Implemented state:
+
+- Public search did not find a new RA, ticketing, venue page, or non-social official page for the high-priority single-confirmation rows.
+- For `liminal-dreams`, public search-index results surfaced an additional Liminal Dreams/Wigwam Instagram result with tentative lineup/time text: Chingyi, IIN, Rainsoft, Toss, June 20, 2026, and 20:00-late.
+- Updated `config/curated-events.json` with the new social-index source and caveated lineup notes.
+- Kept the event as Watch because the evidence is still search-index/social context, not platform-visible confirmation of ticket route, door price, age policy, or final post state.
+
+Next verification:
+
+- Use platform-native Instagram, XHS, WeChat, Wigwam, or ticketing search to confirm the post visually before promoting the row.
+- Continue prioritizing high-fit single-confirmation rows: `jasmin-knopha`, `botox-fatale`, `anika-kunst`, `truth-lies`, and `youshan-warmup`.
+
+## 2026-06-14 Field-First Watch Pass
+
+The user clarified the operating order: first identify high-priority missing fields across future events, their venues, and their DJs; fill those fields where public evidence supports them; then look for second sources.
+
+Implemented state:
+
+- Ran a future-event field scan for missing time, address, price, age, ticket URL, poster, lineup, recommendation fields, and checked sources.
+- Added venue-context addresses and sources for six future Watch rows: `jasmin-knopha`, `liminal-dreams`, `botox-fatale`, `anika-kunst`, `truth-lies`, and `youshan-warmup`.
+- Added `20:00-late` as a social-index time lead for `liminal-dreams`, not as a confirmed ticket state.
+- Added social-index lineup leads for `youshan-warmup` (`Sarayu`, `Elaheh`) and kept the row on Watch.
+
+Remaining gaps:
+
+- Do not invent price, age, ticket route, or poster fields without direct event evidence.
+- Next pass should continue with high-fit future Watch gaps before chasing second confirmation: start with ticket/age/poster fields for `jasmin-knopha`, `botox-fatale`, `anika-kunst`, `truth-lies`, and `youshan-warmup`.
+
+## 2026-06-14 Core Field Queue Automation
+
+The user clarified that event fields must be split into core and non-core fields, with core fields filled first.
+
+Implemented state:
+
+- Added `quality.coreFieldPolicy` and `quality.coreFieldQueue` generation in `scripts/scrape-events.js`.
+- Added matching validation and JSON audit reporting in `scripts/audit-events.js`.
+- Updated the local `rave-calendar-editor` skill and `site-workflow.md` so future credibility passes start with the core-field queue before second-source promotion or non-core enrichment.
+- Regenerated `data/events.json`, `data/dj-data.js`, event detail pages, and sitemap.
+
+Current queue after regeneration:
+
+- Future events: 34.
+- Future core-field queue rows: 25.
+- Missing core fields: 71.
+- Uncertain core fields: 5.
+- Top high-fit core rows: `jasmin-knopha`, `botox-fatale`, `youshan-warmup`, `anika-kunst`, `truth-lies`, and `jaal`.
+
+Validation:
+
+- `node scripts/scrape-events.js` passed.
+- `npm run seo` passed.
+- `node scripts/audit-events.js` passed.
+- `node scripts/check.js` passed.
+- `node --test tests/trust-framework.test.js` passed.
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json` passed with 0 findings.
+- `npm run check` passed.
+
+## 2026-06-14 Core Gap Marking Pass
+
+The user clarified the handling rule: if a core field cannot be found, mark it clearly because the organizer may not have published it yet, then recheck next time.
+
+Implemented state:
+
+- `quality.coreFieldQueue` now includes `coreFieldGapStatus` and `sourceGapNote`.
+- Missing or uncertain high-priority core fields are labeled `public-source-gap` instead of being filled with inferred values.
+- Added tracked DJ profiles for `Jasmín`, `Knopha`, `Sarayu`, and `Elaheh` using Minor AM, Bandcamp, RA profile/news, and RA event-context sources.
+- Updated `jaal` with source-backed FENRIR address and the existing 东方演出网 ticket route; age policy remains marked as a source gap.
+
+Current metrics after regeneration:
+
+- Future core-field queue rows: 25.
+- Missing core fields: 69, down from 71.
+- Uncertain core fields: 5.
+- Future performer profile sources: 79, up from 75.
+- Future performer missing profile sources: 9, down from 13.
+
+Validation:
+
+- `node scripts/scrape-events.js` passed.
+- `npm run seo` passed.
+- `node scripts/audit-events.js` passed.
+- `node scripts/check.js` passed.
+- `node --test tests/trust-framework.test.js` passed.
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json` passed with 0 findings.
