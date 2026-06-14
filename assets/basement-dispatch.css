@@ -1782,6 +1782,10 @@ body:has(.calendar-shell) .signal-canvas {
   margin: 0;
 }
 
+.calendar-left-rail .account-public-guide {
+  margin: 0;
+}
+
 .calendar-main-column .layout {
   grid-template-columns: minmax(0, 1fr);
 }
@@ -2339,7 +2343,7 @@ body:has(.calendar-shell) .signal-canvas {
   .calendar-shell .controls {
     position: static;
     display: grid;
-    grid-template-columns: minmax(360px, 1fr) 250px 240px;
+    grid-template-columns: minmax(260px, 1fr) minmax(170px, 220px) minmax(170px, 220px);
     gap: 18px;
     margin: 0;
     padding: 0;

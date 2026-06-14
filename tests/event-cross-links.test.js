@@ -90,10 +90,11 @@ test("homepage desktop layout groups planning panels in the left rail", () => {
     const tonight = rail.indexOf('aria-label="Tonight dispatch"');
     const week = rail.indexOf("<h2>This weekend</h2>");
     const plan = rail.indexOf('aria-label="Night planning route"');
-    const save = rail.indexOf('id="personalizedDispatch"');
+    const save = rail.indexOf('class="account-public-guide-shell"');
 
     assert.ok(tonight !== -1 && week !== -1 && plan !== -1 && save !== -1, `${file} should include all left rail modules`);
     assert.ok(tonight < week && week < plan && plan < save, `${file} should order left rail modules before save picks`);
+    assert.equal(html.indexOf('id="personalizedDispatch"'), -1, `${file} should not render the old personalized dispatch panel`);
 
     const main = html.slice(mainStart);
     assert.ok(main.indexOf('class="controls"') < main.indexOf('id="monthRail"'), `${file} should place filters before month rail`);

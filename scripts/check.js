@@ -1196,7 +1196,7 @@ const accountRequirements = [
   { file: "account.html", text: "assets/account-system.js", label: "account browser module" },
   { file: "account.html", text: "assets/account-system.css", label: "account styles" },
   { file: "account.html", text: "assets/love-wall-supabase-config.js", label: "account Supabase public config" },
-  { file: "index.html", text: 'id="personalizedDispatch"', label: "calendar personalized dispatch panel" },
+  { file: "index.html", text: 'class="account-public-guide-shell" data-account-guide="calendar"', label: "calendar saved-picks account guide" },
   { file: "index.html", text: "syncAccountPersonalization", label: "calendar personalization bridge" },
   { file: "assets/account-system.js", text: "function normalizePreferences(", label: "account preference normalizer" },
   { file: "assets/account-system.js", text: "function rankEvents(", label: "account event ranking" },
