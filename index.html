@@ -1250,24 +1250,6 @@
       background: rgba(255,255,255,.035);
     }
 
-    .confidence-high {
-      color: var(--void);
-      background: var(--ok);
-      border-color: var(--ok);
-    }
-
-    .confidence-medium {
-      color: var(--void);
-      background: var(--warn);
-      border-color: var(--warn);
-    }
-
-    .confidence-watch {
-      color: var(--ink);
-      background: transparent;
-      border-color: var(--ember);
-    }
-
     .watch-panel {
       display: block;
       width: 100%;
@@ -3574,12 +3556,22 @@
     function sourceStatusLabel(event) {
       const status = sourceStatusFor(event);
       if (status === "official") return "Official";
+      if (status === "trusted-ra") return "Resident Advisor";
       if (status === "watchlist") return "Watchlist";
       return "Secondary";
     }
 
     function sourceStatusClass(event) {
       return `source-${sourceStatusFor(event)}`;
+    }
+
+    function publicTrustLabel(event) {
+      if (eventEffectiveStatus(event) === "watch") return "Source check needed";
+      const status = sourceStatusFor(event);
+      if (status === "official") return "Official source";
+      if (status === "trusted-ra") return "RA source trail";
+      if (sourceCountFor(event) > 1) return "Cross-checked";
+      return "Source trail";
     }
 
     function lastCheckedFor(event) {
@@ -4319,23 +4311,35 @@
       const startOffset = (firstDay.getDay() + 6) % 7;
       const daysInMonth = new Date(2026, index + 1, 0).getDate();
       const weekdayLabels = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
-      const weekdayHasEvent = weekdayLabels.map((_, weekdayIndex) => monthEvents.some(event => {
+      const eventsByDay = new Map();
+      const weekdayHasEvent = weekdayLabels.map(() => false);
+      monthEvents.forEach(event => {
         const date = eventDate(event);
-        return date && ((date.getDay() + 6) % 7) === weekdayIndex;
-      }));
+        const day = eventDay(event);
+        if (!date || date.getFullYear() !== 2026 || date.getMonth() !== index || day < 1 || day > daysInMonth) return;
+        const weekdayIndex = (date.getDay() + 6) % 7;
+        weekdayHasEvent[weekdayIndex] = true;
+        if (!eventsByDay.has(day)) eventsByDay.set(day, []);
+        eventsByDay.get(day).push(event);
+      });
       const visibleWeekdayIndexes = weekdayLabels
         .map((_, weekdayIndex) => weekdayIndex)
-        .filter(weekdayIndex => weekdayIndex >= 4 || weekdayHasEvent[weekdayIndex]);
+        .filter(weekdayIndex => weekdayHasEvent[weekdayIndex]);
+      if (!visibleWeekdayIndexes.length) {
+        return `<div class="calendar-grid is-empty" style="--calendar-columns: 1;" aria-label="${code} 2026 clickable event calendar"></div>`;
+      }
       const cells = visibleWeekdayIndexes.map(weekdayIndex => `<div class="calendar-day-name">${weekdayLabels[weekdayIndex]}</div>`);
 
       for (let weekStart = 1 - startOffset; weekStart <= daysInMonth; weekStart += 7) {
+        const weekHasEvent = visibleWeekdayIndexes.some(weekdayIndex => eventsByDay.has(weekStart + weekdayIndex));
+        if (!weekHasEvent) continue;
         visibleWeekdayIndexes.forEach(weekdayIndex => {
           const day = weekStart + weekdayIndex;
           if (day < 1 || day > daysInMonth) {
             cells.push(`<div class="calendar-day empty" aria-hidden="true"></div>`);
             return;
           }
-          const dayEvents = monthEvents.filter(event => eventDay(event) === day);
+          const dayEvents = eventsByDay.get(day) || [];
           cells.push(`
             <div class="calendar-day ${dayEvents.length ? "has-event" : ""}">
               <div class="calendar-date"><span>${day}</span><span>${dayEvents.length ? dayEvents.length : ""}</span></div>
@@ -4468,10 +4472,6 @@
             <text x="0" y="118" fill="${p[3]}" font-size="66" font-family="Georgia, serif" font-weight="700">${safeTitle}</text>
             <text x="0" y="172" fill="${p[3]}" font-size="32" font-family="Segoe UI, sans-serif" font-weight="700">${safeVenue}</text>
           </g>
-          <g transform="translate(92 594)" fill="${p[1]}">
-            <rect x="0" y="0" width="426" height="62" fill="${p[3]}"/>
-            <text x="20" y="41" font-size="30" font-family="Segoe UI, sans-serif" font-weight="900">CONFIDENCE: ${escapeHtml(event.confidence.toUpperCase())}</text>
-          </g>
           <g transform="translate(860 552)" stroke="${p[3]}" stroke-width="8" opacity=".78">
             <path d="M0 0 v110 M24 0 v110 M48 0 v110 M92 0 v110 M132 0 v110 M164 0 v110 M226 0 v110"/>
           </g>
@@ -4492,12 +4492,6 @@
       if (!eventVenueGroupMatches(event, venue)) return false;
       if (query && !haystack.includes(query)) return false;
       return true;
-    }
-
-    function confidenceClass(event) {
-      if (event.confidence === "High") return "confidence-high";
-      if (event.confidence === "Medium") return "confidence-medium";
-      return "confidence-watch";
     }
 
     function renderRail() {
@@ -4592,7 +4586,6 @@
               ${eventActionLinksHtml(event)}
             </div>
             <div class="chips">
-              <span class="chip ${confidenceClass(event)}">${escapeHtml(event.confidence)}</span>
               ${festival ? `<span class="chip">festival</span>` : ""}
               ${eventSignalChips(event, 4).map(tag => `<span class="chip">${escapeHtml(tag)}</span>`).join("")}
               <span class="chip">${escapeHtml(event.genre.split(",")[0])}</span>
@@ -4692,7 +4685,6 @@
                 <b>${escapeHtml(event.title)}</b>
                 <small>${escapeHtml(event.venue)}${organizer ? ` / ${escapeHtml(organizer)}` : ""}</small>
                 <em>${escapeHtml(event.time)}</em>
-                <i>${escapeHtml(event.confidence)}</i>
               </button>
             `;
           }).join("")}
@@ -4735,7 +4727,7 @@
         ["Sound", event.genre],
         ["Price", event.price],
         ["Age / ID", event.age],
-        ["Status", `${eventEffectiveStatus(event)} / ${event.confidence} confidence`],
+        ["Status", formatStatusLabel(event)],
         ["Last checked", lastCheckedFor(event)],
         ["Source count", `${sourceCountFor(event)} source${sourceCountFor(event) === 1 ? "" : "s"}`],
         ["Source layer", sourceStatusLabel(event)]
@@ -4820,7 +4812,6 @@
           <span>${escapeHtml(compactEventDate(event))}</span>
           <b>${escapeHtml(event.title)}</b>
           <em>${escapeHtml(`${event.venue} | ${event.time}`)}</em>
-          <i>${escapeHtml(event.confidence)}</i>
         </button>
       `;
     }
@@ -5152,7 +5143,7 @@
         return `
           <a class="source-link" href="${event.source}" target="_blank" rel="noreferrer">
             <span>${escapeHtml(event.date)} · ${escapeHtml(event.title)}</span>
-            <span>${escapeHtml(event.confidence)}</span>
+            <span>${escapeHtml(event.venue)}</span>
           </a>
         `;
       }).join("");

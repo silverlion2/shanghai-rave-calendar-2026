@@ -28,6 +28,43 @@ function extractFunction(source, name) {
   assert.fail(`${name} body should close`);
 }
 
+function renderMonthGridForTest(html, code, events) {
+  const renderMonthGrid = extractFunction(html, "renderMonthGrid");
+  return Function(`
+    const months = [["Jan"], ["Feb"], ["Mar"], ["Apr"], ["May"], ["Jun"], ["Jul"], ["Aug"], ["Sep"], ["Oct"], ["Nov"], ["Dec"]];
+    function monthIndex(code) {
+      return months.findIndex(([monthCode]) => monthCode === code);
+    }
+    function eventDate(event) {
+      const [year, month, day] = String(event.sortDate).split("-").map(Number);
+      return new Date(year, month - 1, day);
+    }
+    function eventDay(event) {
+      return eventDate(event).getDate();
+    }
+    function knownOrganizerFor() {
+      return "";
+    }
+    function isFestival() {
+      return false;
+    }
+    function lineupFor() {
+      return [];
+    }
+    function eventEffectiveStatus() {
+      return "confirmed";
+    }
+    function eventPageUrl(event) {
+      return "events/" + event.id + ".html";
+    }
+    function escapeHtml(value) {
+      return String(value || "");
+    }
+    ${renderMonthGrid}
+    return renderMonthGrid;
+  `)()(code, events);
+}
+
 test("DJ profile appearances link to local event detail pages", () => {
   const djs = readSiteFile("djs.html");
 
@@ -58,6 +95,44 @@ test("homepage calendar entries link to local event detail pages", () => {
     assert.match(renderMonthGrid, /href="\$\{escapeHtml\(eventPageUrl\(event\)\)\}"/);
     assert.doesNotMatch(renderMonthGrid, /djProfileLinksHtml/);
     assert.doesNotMatch(renderMonthGrid, /venueGuideLinkHtml/);
+  }
+});
+
+test("homepage calendar grid hides weekdays and weeks with no matching events", () => {
+  const sparseJuneEvents = [
+    { id: "june-tuesday", sortDate: "2026-06-02", title: "Tuesday room", venue: "Room A" },
+    { id: "june-saturday", sortDate: "2026-06-27", title: "Saturday room", venue: "Room B" },
+  ];
+
+  for (const file of calendarFiles) {
+    const html = readSiteFile(file);
+    const grid = renderMonthGridForTest(html, "Jun", sparseJuneEvents);
+
+    assert.match(grid, /--calendar-columns:\s*2/);
+    assert.match(grid, />Tue<\/div>/);
+    assert.match(grid, />Sat<\/div>/);
+    assert.doesNotMatch(grid, />Fri<\/div>/);
+    assert.doesNotMatch(grid, />Sun<\/div>/);
+    assert.doesNotMatch(grid, /<span>9<\/span>/);
+    assert.doesNotMatch(grid, /<span>16<\/span>/);
+  }
+});
+
+test("homepage public event surfaces do not expose raw confidence levels", () => {
+  for (const file of calendarFiles) {
+    const html = readSiteFile(file);
+    const publicRenderers = [
+      "posterSvg",
+      "renderCard",
+      "renderHighlights",
+      "openModal",
+      "dispatchRowHtml",
+      "renderBestPicks",
+    ].map(name => extractFunction(html, name)).join("\n");
+
+    assert.doesNotMatch(publicRenderers, /CONFIDENCE:/);
+    assert.doesNotMatch(publicRenderers, /escapeHtml\(event\.confidence\)/);
+    assert.doesNotMatch(publicRenderers, /\$\{eventEffectiveStatus\(event\)\}\s*\/\s*\$\{event\.confidence\}\s*confidence/);
   }
 });
 
