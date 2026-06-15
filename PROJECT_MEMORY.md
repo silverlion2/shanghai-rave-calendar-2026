@@ -1312,6 +1312,28 @@ Validation:
 - `node scripts/check.js` passed.
 - `node --test tests/trust-framework.test.js` passed.
 - `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json` passed with 0 findings.
+
+## 2026-06-15 Favicon Refresh And Production Deploy
+
+The user selected the existing Basement Dispatch stamp artwork as the site favicon.
+
+Implemented state:
+
+- Generated a favicon image set from the selected stamp source: `favicon.png`, `favicon-16x16.png`, `favicon-32x32.png`, `favicon-48x48.png`, `favicon-64x64.png`, `favicon-192x192.png`, `favicon-512x512.png`, and `apple-touch-icon.png`.
+- Updated `scripts/site-components.js` so generated pages use the dedicated favicon files instead of `/og-image.png`.
+- Updated all existing root and event HTML pages to reference `/favicon-32x32.png`, `/favicon-16x16.png`, and `/apple-touch-icon.png`.
+- Updated `site.webmanifest` with 192x192 and 512x512 icon entries.
+- Updated `vercel.json` with long-lived immutable cache headers for favicon and touch-icon assets.
+- Added `.vercelignore` to keep local output, dependency, Vercel, and environment files out of deployment uploads.
+
+Validation:
+
+- `npm run structure` passed.
+- `npm run check` passed.
+- Production deployment completed with `vercel --prod --yes`.
+- Production was aliased to `https://raveindexsh.top`.
+- Verified the production homepage includes the new favicon links.
+- Verified production `site.webmanifest`, `/favicon-16x16.png`, `/favicon-32x32.png`, and `/apple-touch-icon.png` return HTTP 200; favicon assets return `Cache-Control: public, max-age=31536000, immutable`.
 - `npm run check` passed.
 
 ## 2026-06-14 Core Gap Marking Pass
