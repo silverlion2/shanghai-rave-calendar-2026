@@ -1119,39 +1119,110 @@ function hasRecommendationText(value) {
   return typeof value === "string" && value.trim().length >= 8;
 }
 
+function recommendationNeedsTasteRefresh(value) {
+  return /\b(?:Resident Advisor|SmartShanghai|RA\b|sources?\b|public .*preview|visual confirmation|event-level|source trail supports|supports the event basics|gives a useful lead|included from resident advisor|source-backed electronic music options|current event-level source|fully readable event-level source)\b/i.test(String(value || ""));
+}
+
 function recommendationSourceName(event = {}) {
   return event.sourceLabel || sourceLabelFor(event.source) || "the attached source";
 }
 
-function defaultRecommendationReason(event = {}) {
-  const sourceName = recommendationSourceName(event);
-  if (event.sourceStatus === "watchlist" || event.status === "watch" || event.confidence === "Watch") {
-    return `Kept on Watch because ${sourceName} gives a useful lead, but key practical details still need a stronger second source before promotion.`;
+function recommendationSearchText(event = {}) {
+  return [
+    event.title,
+    event.venue,
+    event.district,
+    event.genre,
+    event.description,
+    ensureArray(event.soundTags).join(" "),
+    ensureArray(event.decisionTags).join(" "),
+    ensureArray(event.vibe).join(" "),
+  ].filter(Boolean).join(" ").toLowerCase();
+}
+
+function recommendationPerformerNames(event = {}, limit = 4) {
+  const names = auditedLineupItems(event.lineup || [], event)
+    .flatMap(item => splitEntityNames(lineupItemName(item)))
+    .map(name => cleanText(name))
+    .filter(name => name && !isPlaceholderPerformerName(name));
+  return Array.from(new Set(names)).slice(0, limit);
+}
+
+function recommendationLineupPhrase(event = {}) {
+  const names = recommendationPerformerNames(event);
+  if (!names.length) return "the sound and room fit";
+  if (names.length === 1) return names[0];
+  if (names.length === 2) return `${names[0]} and ${names[1]}`;
+  const extra = names.length - 2;
+  return `${names[0]}, ${names[1]}, and ${extra} more listed artist${extra === 1 ? "" : "s"}`;
+}
+
+function recommendationSoundLane(event = {}) {
+  const text = recommendationSearchText(event).replace(/\bdirty house\b/g, "dirtyhouse");
+  if (/\b(?:hard techno|industrial techno|hardcore|hard dance|ebm|warehouse rave|acid techno)\b/.test(text)) {
+    return "hard/industrial/rave-pressure techno";
   }
-  if (event.sourceStatus === "trusted-ra" || /(^|\.)ra\.co\//i.test(event.source || "")) {
-    return `Included from Resident Advisor because it gives the public date, venue, lineup or ticket context, then checked against this site's Shanghai underground fit rubric.`;
+  if (/\b(?:bass|dubstep|jungle|ukg|garage|breaks?|140|grime)\b/.test(text)) {
+    return "bass, breaks, 140, or UKG";
+  }
+  if (/\b(?:rooftop|hotel|pool party|disco|house|sunset|date)\b/.test(text)) {
+    return "social house, disco, or date-route electronic music";
+  }
+  if (/\b(?:ambient|outer music|idm|listening|downtempo|psychedelic|experimental)\b/.test(text)) {
+    return "listening-first experimental electronics";
+  }
+  if (/\b(?:a\/v|live av|hypermodern|live electronic|audio visual)\b/.test(text)) {
+    return "A/V live or hypermodern club music";
+  }
+  if (/\b(?:techno|acid|trance|electro|minimal)\b/.test(text)) {
+    return "techno-first club listening";
+  }
+  if (isFestivalListing(event)) {
+    return "festival-scale music programming";
+  }
+  return "Shanghai electronic nightlife context";
+}
+
+function recommendationRoomPhrase(event = {}) {
+  const text = recommendationSearchText(event);
+  if (/\b(?:abyss|dirty house|reactor|exit|potent|illum|heim|wigwam|fenrir|specters)\b/.test(text) && event.venue) {
+    return ` at ${event.venue}`;
+  }
+  if (event.venue && !/^(?:check|tba|unknown|not listed)/i.test(event.venue)) {
+    return ` at ${event.venue}`;
+  }
+  return "";
+}
+
+function defaultRecommendationReason(event = {}) {
+  const lineup = recommendationLineupPhrase(event);
+  const soundLane = recommendationSoundLane(event);
+  const room = recommendationRoomPhrase(event);
+  const lineupSubject = lineup === "the sound and room fit" ? lineup : `the lineup (${lineup})`;
+  if (event.sourceStatus === "watchlist" || event.status === "watch" || event.confidence === "Watch") {
+    return `Kept on Watch because ${lineupSubject} points toward ${soundLane}${room}; wait for firmer practical details before treating it as a pick.`;
   }
   if (event.confidence === "High") {
-    return `Recommended because the source trail supports the date, venue, and scene fit strongly enough for a calendar pick.`;
+    return `Recommended because ${lineupSubject} gives the night a clear ${soundLane} draw${room}.`;
   }
-  return `Included because ${sourceName} supports the event basics and the sound or venue context is relevant to Shanghai electronic nightlife.`;
+  return `Included because ${lineupSubject} gives ${soundLane} readers a concrete reason to consider it${room}, even if it is not the hardest pick on the calendar.`;
 }
 
 function defaultBestFor(event = {}) {
   const text = [event.genre, event.description, event.decisionTags, event.vibe].flat().join(" ").toLowerCase();
   if (/\b(hard|industrial|warehouse|hard-techno|acid|rave)\b/.test(text)) {
-    return "Best for readers looking for a harder late-room or warehouse-leaning club night.";
+    return "Best for hard-techno, industrial, acid, or late-room listeners.";
   }
   if (/\b(bass|dubstep|jungle|garage|ukg|break)\b/.test(text)) {
-    return "Best for readers tracking bass, breaks, and high-energy club-adjacent rooms.";
+    return "Best for bass, breaks, dubstep, jungle, UKG, and high-energy club-adjacent listeners.";
   }
   if (/\b(date|rooftop|hotel|disco|house|daylight|sunset)\b/.test(text)) {
-    return "Best for a more social, house-forward, or date-friendly electronic music route.";
+    return "Best for a more social, house-forward, rooftop, or date-friendly electronic route.";
   }
   if (event.sourceStatus === "watchlist" || event.status === "watch") {
-    return "Best as a monitoring lead until lineup, ticketing, and venue details are firmer.";
+    return "Best as a watchlist lead for readers willing to verify final lineup, ticketing, and venue details.";
   }
-  return "Best for readers comparing source-backed electronic music options across the city.";
+  return "Best for readers comparing Shanghai electronic rooms by sound, lineup, and room fit.";
 }
 
 function defaultVerifyBeforeGoing(event = {}) {
@@ -1180,10 +1251,10 @@ function defaultSourceConfidence(event = {}) {
 }
 
 function ensureRecommendationFields(event = {}) {
-  if (!hasRecommendationText(event.recommendationReason)) {
+  if (!hasRecommendationText(event.recommendationReason) || recommendationNeedsTasteRefresh(event.recommendationReason)) {
     event.recommendationReason = defaultRecommendationReason(event);
   }
-  if (!hasRecommendationText(event.bestFor)) {
+  if (!hasRecommendationText(event.bestFor) || recommendationNeedsTasteRefresh(event.bestFor)) {
     event.bestFor = defaultBestFor(event);
   }
   if (!hasRecommendationText(event.verifyBeforeGoing)) {

@@ -1336,6 +1336,52 @@ Validation:
 - Verified production `site.webmanifest`, `/favicon-16x16.png`, `/favicon-32x32.png`, and `/apple-touch-icon.png` return HTTP 200; favicon assets return `Cache-Control: public, max-age=31536000, immutable`.
 - `npm run check` passed.
 
+## 2026-06-15 Poster Wall Upcoming Filter Tightening
+
+The user noticed past-looking cards in the default `Upcoming events` filter on `https://raveindexsh.top/poster-wall`.
+
+Diagnosis:
+
+- The poster wall filter was date-first: default `Upcoming events` excluded rows where `eventDate(event) < today`, but it did not explicitly exclude rows with `event.status === "past"`.
+- Production at the time rendered 32 default upcoming cards and no `status: past` rows, but the code path was still fragile if a future-dated row was explicitly marked past.
+- The default view intentionally includes future `watch` rows; those are unconfirmed future leads, not past events.
+
+Implemented state:
+
+- Updated `poster-wall.html` so default `Upcoming events` excludes both past dates and explicit `status: past` rows.
+- Updated `Past archive` logic so it includes rows with past dates or explicit `status: past`.
+- Added `tests/poster-wall-filters.test.js` covering the default upcoming exclusion and past archive inclusion behavior.
+- Added the new test file to `npm run check` in `package.json`.
+
+Validation:
+
+- `node --test tests/poster-wall-filters.test.js` passed.
+- `npm run check` passed with 68 tests.
+- Production deployment completed with `vercel --prod --yes`.
+- Verified the production poster wall default state with Playwright: filter `upcoming`, count `32`, `pastStatusRows: []`.
+
+## 2026-06-15 Event Recommendation Copy Separation
+
+The user clarified that event recommendations should explain why people should go, including lineup, DJ, sound, room, and audience fit, rather than where the event was found.
+
+Diagnosis:
+
+- Many `recommendationReason` fields used source-first wording such as source trail support, Resident Advisor coverage, SmartShanghai leads, or public preview/visual confirmation language.
+- That source language belongs in `sourceConfidence` and the generated event Trust Ledger, not in the recommendation itself.
+
+Implemented state:
+
+- Updated `scripts/scrape-events.js` so generated/default event recommendations are taste-first: lineup draw, sound lane, room/venue fit, and watch/pick status.
+- Added refresh detection for old source-first recommendation templates, including `Resident Advisor`, `SmartShanghai`, `RA`, `source`, public preview, visual confirmation, and event-level wording.
+- Updated `data/events.json` and `data/dj-data.js` so current public event cards, poster wall modals, DJ event references, and generated event pages use the revised recommendation copy.
+- Regenerated all `events/*.html` pages with `npm run seo`.
+- Added a regression test in `tests/trust-framework.test.js` that rejects source-discovery wording inside `recommendationReason`; source provenance remains allowed in `sourceConfidence`.
+
+Validation:
+
+- Source-first recommendation audit returned `badCount: 0`.
+- `node --test tests/trust-framework.test.js tests/poster-wall-filters.test.js` passed.
+
 ## 2026-06-14 Core Gap Marking Pass
 
 The user clarified the handling rule: if a core field cannot be found, mark it clearly because the organizer may not have published it yet, then recheck next time.

@@ -95,6 +95,19 @@ test("events carry structured recommendation fields and event details render the
   assert.match(eventDetail, /Verify before going/);
 });
 
+test("event recommendation reasons explain taste fit rather than source discovery", () => {
+  const payload = JSON.parse(readSiteFile("data/events.json"));
+  const sourceFirstPattern = /\b(?:Resident Advisor|SmartShanghai|RA-backed|RA coverage|RA publishes|RA\b|sources?\b|public .*preview|visual confirmation|event-level|source trail|source-backed|supports the event basics|gives a useful lead|current event-level source|fully readable event-level source)\b/i;
+
+  for (const event of payload.events) {
+    assert.doesNotMatch(
+      event.recommendationReason,
+      sourceFirstPattern,
+      `${event.id} recommendationReason should explain why to go, not where the event was found`,
+    );
+  }
+});
+
 test("event descriptions expose an item-level recommendation policy link", () => {
   const index = readSiteFile("index.html");
   const wall = readSiteFile("poster-wall.html");

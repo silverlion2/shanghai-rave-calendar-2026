@@ -305,6 +305,22 @@
       text-transform: uppercase;
     }
 
+    .poster-gap-pin {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      max-width: calc(100% - 20px);
+      padding: 8px 10px;
+      color: var(--paper);
+      background: rgba(5, 6, 6, .84);
+      border-top: 1px solid rgba(229, 222, 209, .24);
+      border-right: 1px solid rgba(229, 222, 209, .24);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      line-height: 1.15;
+      text-transform: uppercase;
+    }
+
     .wall-card-body {
       display: grid;
       gap: 8px;
@@ -780,6 +796,7 @@
     };
 
     let events = [];
+    let posterDisplayByEventId = new Map();
     const wall = document.getElementById("posterWall");
     const searchInput = document.getElementById("searchInput");
     const statusFilter = document.getElementById("statusFilter");
@@ -862,7 +879,20 @@
 
     function posterUrl(event) {
       const raw = posterUrlOverrides[event.id] || event.posterUrl || event.posterImageUrl || event.imageUrl || "";
+      const archivedDisplay = posterDisplayByEventId.get(event.id);
+      if (archivedDisplay) return archivedDisplay;
       return optimizedPosterUrlOverrides[raw] || raw;
+    }
+
+    function loadPosterArchive(posters) {
+      posterDisplayByEventId = new Map();
+      (posters || []).forEach(poster => {
+        const eventId = String(poster.eventId || "").trim();
+        const display = String(poster.image?.display || poster.image?.thumbnail || "").trim();
+        const source = String(poster.image?.sourceAsset || "").trim();
+        if (eventId && display) posterDisplayByEventId.set(eventId, display);
+        if (source && display) optimizedPosterUrlOverrides[source] = display;
+      });
     }
 
     function svgText(value, max = 80) {
@@ -998,8 +1028,9 @@
       const vibe = vibeFilter.value;
       return events
         .filter(event => {
-          if (status === "upcoming" && eventDate(event) < today) return false;
-          if (status === "past" && eventDate(event) >= today) return false;
+          const isPastStatus = String(event.status || "").toLowerCase() === "past";
+          if (status === "upcoming" && (eventDate(event) < today || isPastStatus)) return false;
+          if (status === "past" && eventDate(event) >= today && !isPastStatus) return false;
           if (vibe !== "all" && !(event.vibe || []).includes(vibe) && !eventSoundTags(event).includes(vibe) && !eventDecisionTags(event).includes(vibe)) return false;
           if (query && !searchable(event).includes(query)) return false;
           return true;
@@ -1022,6 +1053,7 @@
             <div class="wall-card-poster">
               <img src="${escapeHtml(visual.src)}" alt="${escapeHtml(visual.alt)}" loading="lazy" decoding="async">
               <span class="status-pin">${escapeHtml(event.status)}</span>
+              ${visual.hasPoster ? "" : '<span class="poster-gap-pin">No flyer saved yet</span>'}
             </div>
             <div class="wall-card-body">
               <div class="wall-card-top"><span>${escapeHtml(event.date)}</span><span>${escapeHtml(event.time)}</span></div>
@@ -1097,9 +1129,14 @@
       if (event.key === "Escape") closeModal();
     });
 
-    fetch("data/events.json")
-      .then(response => response.json())
-      .then(data => {
+    Promise.all([
+      fetch("data/events.json").then(response => response.json()),
+      fetch("data/poster-archive.json")
+        .then(response => response.ok ? response.json() : { posters: [] })
+        .catch(() => ({ posters: [] }))
+    ])
+      .then(([data, posterArchive]) => {
+        loadPosterArchive(posterArchive.posters);
         events = data.events || [];
         render();
       })
