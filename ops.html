@@ -905,8 +905,10 @@
   </style>
   <link rel="stylesheet" href="assets/basement-dispatch.css?v=xhs-contact-20260613c">
   <link rel="stylesheet" href="assets/account-system.css">
+  <link rel="stylesheet" href="assets/community-badges.css">
   <script src="assets/love-wall-supabase-config.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="assets/community-badges.js" defer></script>
   <script src="assets/account-system.js?v=auth-redirect-20260615" defer></script>
   <script src="assets/ops-admin-gate.js" defer></script>
 </head>
@@ -1115,6 +1117,16 @@
               <button class="small-button" type="button" id="exportTicketsCsv">导出导票 CSV</button>
               <button class="small-button" type="button" id="exportTicketClicksCsv">Export click CSV</button>
             </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <h2>Community badges</h2>
+            <span>admin grant</span>
+          </div>
+          <div class="panel-body">
+            <div data-community-badge-admin></div>
           </div>
         </section>
       </div>

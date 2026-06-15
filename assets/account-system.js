@@ -903,6 +903,7 @@
       busyAction: "",
       authDraft: { displayName: "", email: "" },
       authFeedback: accountAuthFeedback(),
+      badgeData: null,
       error: "",
     };
 
@@ -1115,6 +1116,8 @@
           </section>
         </section>
 
+        ${renderAccountBadgesPanel()}
+
         ${renderFeatureCatalogPanel("Your account tools", "Available tools are active now. Next tools show where this account can grow.")}
 
         <section class="account-results-grid">
@@ -1144,6 +1147,19 @@
           </section>
         </section>
       `;
+    }
+
+    function badgeSystem() {
+      return win && win.RaveCommunityBadges;
+    }
+
+    function renderAccountBadgesPanel() {
+      const badges = badgeSystem();
+      if (!badges || typeof badges.renderBadgeBoard !== "function") return "";
+      const data = state.badgeData || badges.emptyProfileBadgeData({
+        error: "Badge data loads after the community badge migration is applied.",
+      });
+      return badges.renderBadgeBoard(data, { context: "account" });
     }
 
     function renderFeatureCatalogPanel(title, description) {
@@ -1216,9 +1232,14 @@
           render();
           return;
         }
+        if (action === "toggle-public-badges") {
+          await togglePublicBadges();
+          return;
+        }
         if (action === "sign-out") {
           await state.client?.auth.signOut();
           state.session = null;
+          state.badgeData = null;
           state.remoteStatus = "Signed out; local preferences remain";
           render();
           return;
@@ -1272,6 +1293,7 @@
         state.preferences = normalizePreferences({ ...state.preferences, displayName: displayName || state.preferences.displayName });
         if (data.session?.user?.id) {
           await saveRemotePreferences(state.client, data.session.user.id, state.preferences);
+          await refreshBadgeState();
           state.remoteStatus = "Account created; preferences synced";
         } else {
           state.remoteStatus = "Check email to confirm account";
@@ -1317,6 +1339,7 @@
             source: event.source,
           })),
         features: accountFeatureCatalog(),
+        badges: state.badgeData || null,
       };
       const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
       const url = URL.createObjectURL(blob);
@@ -1360,6 +1383,33 @@
       }
     }
 
+    async function refreshBadgeState() {
+      const badges = badgeSystem();
+      if (!badges || !state.client || !state.session?.user?.id) {
+        state.badgeData = null;
+        return;
+      }
+      try {
+        state.badgeData = await badges.loadProfileBadgeData(state.client, state.session.user.id);
+      } catch (error) {
+        state.badgeData = badges.emptyProfileBadgeData({
+          error: `Badge data unavailable: ${error.message || "run badge migration"}`,
+        });
+      }
+    }
+
+    async function togglePublicBadges() {
+      const badges = badgeSystem();
+      if (!badges || !state.client || !state.session?.user?.id) {
+        throw new Error("Sign in before changing badge visibility.");
+      }
+      const nextPublicState = !(state.badgeData && state.badgeData.publicBadges === true);
+      await badges.setProfilePublicBadgeVisibility(state.client, state.session.user.id, nextPublicState);
+      await refreshBadgeState();
+      state.remoteStatus = nextPublicState ? "Public badge display enabled" : "Public badge display disabled";
+      render();
+    }
+
     async function refreshRemoteState() {
       if (!state.client) return;
       const { data } = await state.client.auth.getSession();
@@ -1371,6 +1421,7 @@
       const remotePrefs = await loadRemotePreferences(state.client, state.session.user.id);
       state.preferences = mergePreferences(state.preferences, remotePrefs);
       saveLocalPreferences(state.preferences, win);
+      await refreshBadgeState();
       state.remoteStatus = "Synced with Supabase account";
     }
 
