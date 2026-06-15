@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T11:59:53.907Z",
+  "generatedAt": "2026-06-15T12:58:48.980Z",
   "sourceData": "data/events.json",
   "storagePolicy": {
     "mode": "static-json-plus-local-optimized-assets",
@@ -7,16 +7,16 @@
     "rule": "Use optimized display assets in the wall; keep raw poster files out of the default browsing path when the archive grows."
   },
   "stats": {
-    "posters": 50,
+    "posters": 55,
     "years": [
       2026
     ],
-    "venues": 27,
-    "optimizedCount": 50,
-    "displayBytes": 9962424,
-    "sourceBytes": 34766139,
-    "displayMegabytes": 9.5,
-    "sourceMegabytes": 33.16,
+    "venues": 29,
+    "optimizedCount": 55,
+    "displayBytes": 10647379,
+    "sourceBytes": 35940851,
+    "displayMegabytes": 10.15,
+    "sourceMegabytes": 34.28,
     "freeTierSoftCapBytes": 83886080,
     "freeTierSoftCapMegabytes": 80
   },
@@ -151,6 +151,52 @@
       },
       "eventUrl": "events/shanghai-mushroom-music-carnival-2026.html",
       "notes": "Large Qiantan Sports Park pop festival with official ticket channels on Damai, Maoyan, and Ticket Planet. Date, venue, and pop lineup are now corroborated by multiple public rows; keep as Watch because the techno fit is low and live ticket inventory still needs platform recheck before any purchase CTA."
+    },
+    {
+      "id": "shanghai-2026-heim-discchef-roto-anniversary",
+      "eventId": "heim-discchef-roto-anniversary",
+      "title": "DiscChef 2yrs Anniversary w/ Roto",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 27",
+      "sortDate": "2026-06-27",
+      "time": "22:00",
+      "venue": "Heim",
+      "district": "Huangpu",
+      "sound": "EBM, electro, trance, house",
+      "tags": [
+        "upcoming",
+        "medium",
+        "huangpu",
+        "underground",
+        "date",
+        "ebm",
+        "electro",
+        "trance",
+        "house"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Yuyuan WeChat mini-program ticketing + Heim WeChat screenshots",
+        "url": "assets/posters/heim-discchef-roto-ticket.jpg",
+        "posterEvidenceUrl": "assets/posters/heim-discchef-roto-ticket.jpg",
+        "posterEvidenceSource": "Yuyuan WeChat mini-program ticketing screenshot manually confirmed by user",
+        "posterEvidenceStatus": "Ticketing screen confirms DiscChef 2yrs Anniversary w/Roto, 2026-06-27 22:00, price from 66 RMB, Changle Road M101 Heim, e-ticket, standing event, and no-refund label. Poster wall uses the cropped upper cover image without the lower ticketing menu; the original Yuyuan ticketing screenshot is retained as evidence. No public web ticket URL was captured."
+      },
+      "image": {
+        "thumbnail": "assets/posters/heim-discchef-roto-ticket-cover-optimized.jpg",
+        "display": "assets/posters/heim-discchef-roto-ticket-cover-optimized.jpg",
+        "sourceAsset": "assets/posters/heim-discchef-roto-ticket-cover.jpg",
+        "displayBytes": 149762,
+        "sourceBytes": 191692,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/heim-discchef-roto-anniversary.html",
+      "notes": "DiscChef two-year anniversary at Heim with Spanish artist Roto, plus 2Difficult and BIANBIAN; the Heim article frames it as EBM, electro, trance, and house crossover."
     },
     {
       "id": "shanghai-2026-jaal",
@@ -324,6 +370,51 @@
       },
       "eventUrl": "events/dark-room.html",
       "notes": "PLAYGROUND presents Dark RoOm at Dirty House with an RA-published techno running order from D_z through MegaWatts, NAKIN, and Marcus."
+    },
+    {
+      "id": "shanghai-2026-heim-invites-dina",
+      "eventId": "heim-invites-dina",
+      "title": "Heim Invites: DINA",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 26",
+      "sortDate": "2026-06-26",
+      "time": "22:00",
+      "venue": "Heim",
+      "district": "Huangpu",
+      "sound": "ambient, bass, trance, club",
+      "tags": [
+        "upcoming",
+        "medium",
+        "huangpu",
+        "underground",
+        "bass",
+        "ambient",
+        "trance",
+        "club"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Yuyuan WeChat mini-program ticketing + Heim WeChat screenshots",
+        "url": "assets/posters/heim-dina-ticket.jpg",
+        "posterEvidenceUrl": "assets/posters/heim-dina-ticket.jpg",
+        "posterEvidenceSource": "Yuyuan WeChat mini-program ticketing screenshot manually confirmed by user",
+        "posterEvidenceStatus": "Ticketing screen confirms Heim Invites: DINA, 2026-06-26 22:00, price from 66 RMB, Changle Road M101 Heim, e-ticket, standing event, and no-refund label. Poster wall uses the cropped upper cover image without the lower ticketing menu; the original Yuyuan ticketing screenshot is retained as evidence. No public web ticket URL was captured."
+      },
+      "image": {
+        "thumbnail": "assets/posters/heim-dina-ticket-cover-optimized.jpg",
+        "display": "assets/posters/heim-dina-ticket-cover-optimized.jpg",
+        "sourceAsset": "assets/posters/heim-dina-ticket-cover.jpg",
+        "displayBytes": 71836,
+        "sourceBytes": 89696,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/heim-invites-dina.html",
+      "notes": "Heim Invites brings Berlin producer and Nachtcrew co-founder DINA into the M101 room with Huizit, Kilo-Vee, and HeShang, leaning spacious, bass-heavy, trance-adjacent, and art-club rather than straight hard techno."
     },
     {
       "id": "shanghai-2026-friendsstandout",
@@ -503,6 +594,50 @@
       "notes": "RA lists Enchanted Night as a 2000s pop/disco party at TBA - The Nest with SOLO and ALI RIBO. Keep as complete RA coverage, not a rave pick."
     },
     {
+      "id": "shanghai-2026-jasmin-knopha",
+      "eventId": "jasmin-knopha",
+      "title": "Jasmin + Knopha",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 20",
+      "sortDate": "2026-06-20",
+      "time": "Check venue",
+      "venue": "Heim Sauna",
+      "district": "Huangpu",
+      "sound": "techno-dubstep hybrid, house, club music",
+      "tags": [
+        "watch",
+        "huangpu",
+        "bass",
+        "underground",
+        "techno-dubstep hybrid",
+        "house",
+        "club music"
+      ],
+      "status": "watch",
+      "confidence": "Watch",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Heim Shanghai WeChat poster/article screenshots",
+        "url": "assets/posters/heim-invites-jasmin-knopha.jpg",
+        "posterEvidenceUrl": "assets/posters/heim-invites-jasmin-knopha.jpg",
+        "posterEvidenceSource": "Heim Shanghai WeChat/user-provided official poster screenshot",
+        "posterEvidenceStatus": "Poster screenshot visibly confirms Heim Invites with Sylo, Jasmin, Knopha, date 2026-06-20, and Heim branding. Heim WeChat article/monthly schedule screenshots support the same event but do not expose ticket route or price."
+      },
+      "image": {
+        "thumbnail": "assets/posters/heim-invites-jasmin-knopha-optimized.jpg",
+        "display": "assets/posters/heim-invites-jasmin-knopha-optimized.jpg",
+        "sourceAsset": "assets/posters/heim-invites-jasmin-knopha.jpg",
+        "displayBytes": 214082,
+        "sourceBytes": 295770,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/jasmin-knopha.html",
+      "notes": "Single-source lead for a textured Heim night joining Dutch producer/DJ Jasmin with Knopha."
+    },
+    {
       "id": "shanghai-2026-neon-jungle-tom-kynd",
       "eventId": "neon-jungle-tom-kynd",
       "title": "NEON JUNGLE feat. TOM KYND",
@@ -588,6 +723,52 @@
       },
       "eventUrl": "events/sciahri-potent.html",
       "notes": "POTENT hosts Sciahri with Thomas Futoso and Luke Bye in a late techno slot. RA confirms the 23:59-06:00 window, lineup, cost, and 18+ rule."
+    },
+    {
+      "id": "shanghai-2026-heim-earworthy-selected-sound",
+      "eventId": "heim-earworthy-selected-sound",
+      "title": "Earworthy Selected Sound: Side B-SH",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 19",
+      "sortDate": "2026-06-19",
+      "time": "16:00-02:00",
+      "venue": "Heim",
+      "district": "Huangpu",
+      "sound": "selector culture, house, club, electronic listening",
+      "tags": [
+        "upcoming",
+        "medium",
+        "huangpu",
+        "underground",
+        "date",
+        "selector culture",
+        "house",
+        "club",
+        "electronic listening"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Heim Shanghai WeChat poster/article screenshots",
+        "url": "assets/posters/heim-earworthy-selected-sound.jpg",
+        "posterEvidenceUrl": "assets/posters/heim-earworthy-selected-sound.jpg",
+        "posterEvidenceSource": "Heim Shanghai WeChat/user-provided official poster screenshot",
+        "posterEvidenceStatus": "Poster screenshot confirms Earworthy Selected Sound Side B-SH, Shanghai, 2026-06-19, 16:00-02:00, Heim, and Changle Road / M101 address."
+      },
+      "image": {
+        "thumbnail": "assets/posters/heim-earworthy-selected-sound-optimized.jpg",
+        "display": "assets/posters/heim-earworthy-selected-sound-optimized.jpg",
+        "sourceAsset": "assets/posters/heim-earworthy-selected-sound.jpg",
+        "displayBytes": 115059,
+        "sourceBytes": 155378,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/heim-earworthy-selected-sound.html",
+      "notes": "Earworthy / Selected Sound Shanghai stop at Heim, running from afternoon into late night with Jasper, Lenny G, M!na, Tiehan, Toshio, Vincent aka Jinrong DJ, and Yuqi."
     },
     {
       "id": "shanghai-2026-mrd",
@@ -805,6 +986,51 @@
       },
       "eventUrl": "events/cybionte-solo-ykk-heshang.html",
       "notes": "POTENT hosts Cybionte with Solo, YKK, and Heshang in a late house/club lane. RA confirms the late slot, lineup, cost, and 18+ rule."
+    },
+    {
+      "id": "shanghai-2026-heim-long-wave",
+      "eventId": "heim-long-wave",
+      "title": "LONG WAVE: Dragon Boat Festival Special",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 18",
+      "sortDate": "2026-06-18",
+      "time": "22:00-late",
+      "venue": "Heim",
+      "district": "Huangpu",
+      "sound": "house, club, electronic",
+      "tags": [
+        "upcoming",
+        "medium",
+        "huangpu",
+        "underground",
+        "date",
+        "house",
+        "club",
+        "electronic"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Heim Shanghai WeChat poster/article screenshots",
+        "url": "assets/posters/heim-long-wave.jpg",
+        "posterEvidenceUrl": "assets/posters/heim-long-wave.jpg",
+        "posterEvidenceSource": "Heim Shanghai WeChat/user-provided official poster screenshot",
+        "posterEvidenceStatus": "Poster screenshot confirms LONG WAVE, Dragon Boat Festival Special, Heim branding, 2026-06-18, 22:00-late, and Changle Road / M101 location."
+      },
+      "image": {
+        "thumbnail": "assets/posters/heim-long-wave-optimized.jpg",
+        "display": "assets/posters/heim-long-wave-optimized.jpg",
+        "sourceAsset": "assets/posters/heim-long-wave.jpg",
+        "displayBytes": 134216,
+        "sourceBytes": 442176,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/heim-long-wave.html",
+      "notes": "Heim Thursday house-leaning Dragon Boat Festival special with Golgol, SpaceReturn, Sam Tbd, and Xiaolaba. The Heim article frames it as a looser release before the holiday weekend rather than a heavy-rave route."
     },
     {
       "id": "shanghai-2026-night-at-museum-90s-disco",

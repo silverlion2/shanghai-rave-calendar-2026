@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-14",
+  "updatedAt": "2026-06-15",
   "timezone": "Asia/Shanghai",
   "collectionMethod": "Resident Advisor is treated as the highest-priority public nightlife source for Shanghai electronic event facts. RA HTTP/headless access can trigger anti-bot challenges, so canonical RA rows are based on visible/indexed RA city-listing and event-detail verification with source URLs preserved.",
   "events": [
@@ -1442,80 +1442,119 @@
     },
     {
       "id": "jasmin-knopha",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-15",
       "sourceStatus": "watchlist",
-      "address": "Green Station, 462 Changle Lu, near Shaanxi Nan Lu, Huangpu District",
-      "ticketStatus": "SmartShanghai is the fully readable event-level lead for June 20 at Heim Sauna and says Heim's June club nights are in the Sauna room around Green Station. SmartShanghai Green Station and prior Heim Sauna event rows support the 462 Changle Lu address, but a public search-index preview of Heim's Instagram profile still needs Chrome/Instagram visual confirmation and does not expose door price, ticket route, set times, exact entrance, or final running order. Keep as Watch.",
-      "recommendationReason": "Kept on Watch because the lineup is named, a public Heim social-index preview points to the same June 20 lead, and profile-level sources support the sound fit, but ticketing, door price, and set times still need direct visual confirmation.",
-      "verifyBeforeGoing": "Confirm Heim's current room, door price, ticket route, final lineup, and set times through Heim's Instagram, WeChat, XHS, or ticketing route before planning around Jasmin + Knopha.",
-      "sourceConfidence": "Watchlist: SmartShanghai remains the only fully readable event-level source for date, venue, and lineup; public search results expose a Heim Instagram event lead, and artist-profile sources support taste fit, but current ticketing and set times are not confirmed.",
+      "address": "M101 Room, No. 462 Changle Road, Huangpu District, Shanghai",
+      "ticketStatus": "Heim WeChat poster, monthly schedule, and article screenshots confirm the June 20 Heim Invites: Jasmin event and lineup with Sylo, Jasmin, and Knopha. A Yuyuan ticketing route was not captured for this specific event; public ticket route, door price, age rule, and exact set times remain gaps.",
+      "recommendationReason": "Kept on Watch, but now stronger: Sylo, Jasmin, and Knopha point to bassy, broken, techno-adjacent club music at Heim; ticketing and set times still need a direct route before this becomes a firm pick.",
+      "verifyBeforeGoing": "Confirm whether Heim opens this date through Yuyuan, and check door price, age rule, and set times before planning around the June 20 Jasmin / Sylo / Knopha night.",
+      "sourceConfidence": "Heim-provided poster/monthly/article screenshots plus SmartShanghai confirm date, venue, and lineup. Public browser/social checks are context only; ticketing, price, age policy, and running order remain unconfirmed.",
       "sources": [
+        {
+          "label": "Heim Invites Jasmin poster screenshot",
+          "url": "assets/posters/heim-invites-jasmin-knopha.jpg",
+          "status": "official-social-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "User-provided Heim poster screenshot confirms Heim Invites, Sylo, Jasmin, Knopha, date 2026-06-20, and Heim branding."
+        },
+        {
+          "label": "Heim June 2026 monthly schedule screenshot",
+          "url": "assets/posters/heim-june-2026-schedule.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Heim monthly schedule screenshot lists 06.20 Heim Invites: Jasmin with Sylo, Jasmin, and Knopha."
+        },
+        {
+          "label": "Heim WeChat article screenshot",
+          "url": "assets/posters/heim-june-2026-wechat-article-1.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Heim article screenshot describes the 06.20 Heim Invites: Jasmin entry and supports the bass, distorted techno, low-frequency, DnB, and layered-rhythm lane. It does not expose ticket price or set times."
+        },
         {
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-14",
-          "verificationNote": "SmartShanghai lists June 20 at Heim Sauna with Jasmín and Knopha, but does not expose ticket price or set times in the guide."
+          "lastChecked": "2026-06-15",
+          "verificationNote": "SmartShanghai lists June 20 at Heim Sauna with Jasmin and Knopha, but does not expose ticket price or set times in the guide."
         },
         {
-          "label": "Heim Instagram profile",
-          "url": "https://www.instagram.com/heimshanghai/",
-          "status": "social-lead",
-          "lastChecked": "2026-06-14",
-          "browserCheck": "2026-06-14 Browser check saw Heim profile metadata only. A same-day public search-index check for Heim + Jasmin + Knopha surfaced a 06.20 Heim Invites: Jasmin preview, but no Chrome/Instagram visual post confirmation, ticket route, door price, or set times were captured. Keep as social-lead; use the index preview only as the next verification route."
-        },
-        {
-          "label": "Jasmín Minor AM profile",
+          "label": "Jasmin Minor AM profile",
           "url": "https://www.minor-am.com/roster/jasmin",
           "status": "artist-profile",
-          "lastChecked": "2026-06-14",
+          "lastChecked": "2026-06-15",
           "verificationNote": "Profile source supports Amsterdam/Dutch-Argentinian identity and techno, bass, DnB, and percussion-led selection context; not event confirmation."
         },
         {
-          "label": "Jasmín Bandcamp",
+          "label": "Jasmin Bandcamp",
           "url": "https://jasminhoek.bandcamp.com/album/bite-the-hand-that-feeds-you",
           "status": "artist-profile",
-          "lastChecked": "2026-06-14",
-          "verificationNote": "Bandcamp tags and release text support techno, bass, and dub context for the Jasmín sound lane."
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Bandcamp tags and release text support techno, bass, and dub context for the Jasmin sound lane."
         },
         {
           "label": "Knopha Resident Advisor profile",
           "url": "https://ra.co/dj/knopha",
           "status": "artist-profile",
-          "lastChecked": "2026-06-14",
-          "verificationNote": "RA profile supports Knopha's China/Shanghai club context and Heim appearances; not a June 20 event confirmation."
+          "lastChecked": "2026-06-15",
+          "verificationNote": "RA profile supports Knopha China/Shanghai club context; not a June 20 ticket confirmation."
         },
         {
           "label": "SmartShanghai Heim venue context",
           "url": "https://www.smartshanghai.com/venue/25427/heim",
           "status": "venue-context",
-          "lastChecked": "2026-06-14",
-          "verificationNote": "SmartShanghai confirms Heim as a Jing'an basement club focused on techno, house, electro, and club music. The June guide separately says Heim's June club nights are in the Sauna room around Green Station; use this as venue context, not ticket confirmation."
+          "lastChecked": "2026-06-15",
+          "verificationNote": "SmartShanghai confirms Heim as a basement club focused on techno, house, electro, and club music. Venue context only."
         },
         {
-          "label": "SmartShanghai Green Station venue context",
-          "url": "https://www.smartshanghai.com/venue/34378/green_station",
-          "status": "venue-context",
+          "label": "Heim public social browser check",
+          "url": "https://www.instagram.com/heimshanghai/",
+          "status": "social-lead",
           "lastChecked": "2026-06-14",
-          "verificationNote": "SmartShanghai lists Green Station at 462 Changle Lu, near Shaanxi Nan Lu, and says Heim is back at its Sauna location on Changle Lu. Venue context only; not June 20 ticket confirmation."
-        },
-        {
-          "label": "SmartShanghai Butterfree Heim Sauna context",
-          "url": "https://www.smartshanghai.com/event/butterfree-w-luxixi-bass-techno-club-music-2026-06-06",
-          "status": "previous-series-context",
-          "lastChecked": "2026-06-14",
-          "verificationNote": "Previous June Heim Sauna listing places the Sauna location at Green Station, 462 Changle Lu, and describes Heim as back at its Sauna location. Context only; not Jasmín + Knopha ticket confirmation."
+          "browserCheck": "Browser check 2026-06-14 reached public Heim social metadata only. Keep as social-lead: it did not confirm the Jun 20 ticket route, price, age rule, or set times; the 2026-06-15 Heim WeChat screenshots now carry event-level confirmation."
         }
       ],
       "lineup": [
         {
-          "name": "Jasmín",
-          "note": "SmartShanghai lists Jasmín for the June 20 Heim Sauna event; profile sources support the techno, bass, DnB, and percussion-led lane."
+          "name": "Sylo",
+          "note": "Heim poster and monthly schedule screenshots list Sylo on the June 20 Heim Invites: Jasmin bill."
+        },
+        {
+          "name": "Jasmin",
+          "note": "Heim poster/monthly/article screenshots and SmartShanghai confirm Jasmin on the June 20 Heim bill; profile sources support the bass, DnB, and techno-adjacent lane."
         },
         {
           "name": "Knopha",
-          "note": "SmartShanghai lists Knopha for the June 20 Heim Sauna event; RA profile context supports Knopha as China/Shanghai club context."
+          "note": "Heim poster/monthly/article screenshots and SmartShanghai confirm Knopha as support; RA profile context supports China/Shanghai club relevance."
         }
+      ],
+      "source": "assets/posters/heim-invites-jasmin-knopha.jpg",
+      "sourceLabel": "Heim Shanghai WeChat poster/article screenshots",
+      "posterUrl": "assets/posters/heim-invites-jasmin-knopha.jpg",
+      "posterEvidence": {
+        "type": "official-flyer-screenshot",
+        "source": "Heim Shanghai WeChat/user-provided official poster screenshot",
+        "url": "assets/posters/heim-invites-jasmin-knopha.jpg",
+        "status": "Poster screenshot visibly confirms Heim Invites with Sylo, Jasmin, Knopha, date 2026-06-20, and Heim branding. Heim WeChat article/monthly schedule screenshots support the same event but do not expose ticket route or price.",
+        "localFiles": [
+          "assets/posters/heim-invites-jasmin-knopha.jpg",
+          "assets/posters/heim-june-2026-schedule.jpg",
+          "assets/posters/heim-june-2026-wechat-article-1.jpg"
+        ]
+      },
+      "bestFor": "Best for listeners who want Heim at its bass, breaks, DnB, and textured-club edge rather than a straight four-to-the-floor techno night.",
+      "decisionTags": [
+        "strong techno fit",
+        "bass fit",
+        "lineup visible",
+        "poster confirmed",
+        "verify first"
+      ],
+      "soundTags": [
+        "bass-hybrid",
+        "breaks",
+        "trance-adjacent",
+        "club"
       ]
     },
     {
@@ -4394,6 +4433,410 @@
           "assets/posters/techno-worlds.jpg"
         ]
       }
+    },
+    {
+      "id": "heim-long-wave",
+      "month": "Jun",
+      "sortDate": "2026-06-18",
+      "date": "Jun 18",
+      "time": "22:00-late",
+      "title": "LONG WAVE: Dragon Boat Festival Special",
+      "venue": "Heim",
+      "district": "Huangpu",
+      "vibe": [
+        "underground",
+        "date"
+      ],
+      "genre": "house, club, electronic",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "Check Heim",
+      "age": "Check venue",
+      "source": "assets/posters/heim-long-wave.jpg",
+      "sourceLabel": "Heim Shanghai WeChat poster/article screenshots",
+      "imageTheme": "cyan",
+      "description": "Heim Thursday house-leaning Dragon Boat Festival special with Golgol, SpaceReturn, Sam Tbd, and Xiaolaba. The Heim article frames it as a looser release before the holiday weekend rather than a heavy-rave route.",
+      "kind": "event",
+      "sourceStatus": "official-social-evidence",
+      "address": "M101 Room, No. 462 Changle Road, Huangpu District, Shanghai",
+      "organizer": "Heim Shanghai",
+      "lastChecked": "2026-06-15",
+      "posterUrl": "assets/posters/heim-long-wave.jpg",
+      "posterEvidence": {
+        "type": "official-flyer-screenshot",
+        "source": "Heim Shanghai WeChat/user-provided official poster screenshot",
+        "url": "assets/posters/heim-long-wave.jpg",
+        "status": "Poster screenshot confirms LONG WAVE, Dragon Boat Festival Special, Heim branding, 2026-06-18, 22:00-late, and Changle Road / M101 location.",
+        "localFiles": [
+          "assets/posters/heim-long-wave.jpg",
+          "assets/posters/heim-june-2026-schedule.jpg",
+          "assets/posters/heim-june-2026-wechat-article-1.jpg"
+        ]
+      },
+      "ticketStatus": "Heim WeChat poster and WeChat article screenshots confirm date, 22:00-late start, venue/address, and lineup. Price, ticket route, and age policy were not captured.",
+      "lineup": [
+        {
+          "name": "Golgol",
+          "note": "Heim poster and article screenshots list Golgol for LONG WAVE."
+        },
+        {
+          "name": "SpaceReturn",
+          "note": "Heim poster and article screenshots list SpaceReturn for LONG WAVE."
+        },
+        {
+          "name": "Sam Tbd",
+          "note": "Heim poster and article screenshots list Sam Tbd for LONG WAVE."
+        },
+        {
+          "name": "Xiaolaba",
+          "note": "Heim poster/article text lists Xiaolaba / Xiao Laba for LONG WAVE."
+        }
+      ],
+      "sources": [
+        {
+          "label": "LONG WAVE poster screenshot",
+          "url": "assets/posters/heim-long-wave.jpg",
+          "status": "official-social-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Confirms LONG WAVE title, 2026-06-18 date, 22:00-late time, Heim, lineup, and Changle Road / M101 location."
+        },
+        {
+          "label": "Heim June 2026 monthly schedule screenshot",
+          "url": "assets/posters/heim-june-2026-schedule.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Lists LONG WAVE on 06.18 with Golgol, SpaceReturn, Sam Tbd, and Xiaolaba."
+        },
+        {
+          "label": "Heim WeChat article screenshot",
+          "url": "assets/posters/heim-june-2026-wechat-article-1.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Describes LONG WAVE as a Dragon Boat Festival opening with pure house rhythm and the listed lineup."
+        }
+      ],
+      "recommendationReason": "Included because LONG WAVE gives Heim a lighter house-focused Thursday route with Golgol, SpaceReturn, Sam Tbd, and Xiaolaba, useful for a looser pre-weekend club plan rather than a hard-techno night.",
+      "bestFor": "Best for readers who want a house-forward Heim night with a softer release valve before the weekend.",
+      "verifyBeforeGoing": "Check Heim for door price, ticket route, age policy, and final room status before going.",
+      "sourceConfidence": "Heim WeChat poster, monthly schedule, and article screenshots confirm title, date, venue/address, time, and lineup; ticket route, price, and age policy remain unchecked.",
+      "soundTags": [
+        "house",
+        "groovy",
+        "club"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "lineup visible",
+        "poster confirmed",
+        "late room",
+        "details need check"
+      ]
+    },
+    {
+      "id": "heim-earworthy-selected-sound",
+      "month": "Jun",
+      "sortDate": "2026-06-19",
+      "date": "Jun 19",
+      "time": "16:00-02:00",
+      "title": "Earworthy Selected Sound: Side B-SH",
+      "venue": "Heim",
+      "district": "Huangpu",
+      "vibe": [
+        "underground",
+        "date"
+      ],
+      "genre": "selector culture, house, club, electronic listening",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "Check Heim",
+      "age": "Check venue",
+      "source": "assets/posters/heim-earworthy-selected-sound.jpg",
+      "sourceLabel": "Heim Shanghai WeChat poster/article screenshots",
+      "imageTheme": "gold",
+      "description": "Earworthy / Selected Sound Shanghai stop at Heim, running from afternoon into late night with Jasper, Lenny G, M!na, Tiehan, Toshio, Vincent aka Jinrong DJ, and Yuqi.",
+      "kind": "event",
+      "sourceStatus": "official-social-evidence",
+      "address": "M101 Room, No. 462 Changle Road, Huangpu District, Shanghai",
+      "organizer": "Heim Shanghai / Earworthy",
+      "lastChecked": "2026-06-15",
+      "posterUrl": "assets/posters/heim-earworthy-selected-sound.jpg",
+      "posterEvidence": {
+        "type": "official-flyer-screenshot",
+        "source": "Heim Shanghai WeChat/user-provided official poster screenshot",
+        "url": "assets/posters/heim-earworthy-selected-sound.jpg",
+        "status": "Poster screenshot confirms Earworthy Selected Sound Side B-SH, Shanghai, 2026-06-19, 16:00-02:00, Heim, and Changle Road / M101 address.",
+        "localFiles": [
+          "assets/posters/heim-earworthy-selected-sound.jpg",
+          "assets/posters/heim-june-2026-schedule.jpg",
+          "assets/posters/heim-june-2026-wechat-article-1.jpg"
+        ]
+      },
+      "ticketStatus": "Heim WeChat poster/monthly/article screenshots confirm date, 16:00-02:00 time, venue/address, and lineup. Price, ticket route, and age policy were not captured.",
+      "lineup": [
+        {
+          "name": "Jasper",
+          "note": "Poster lists Jasper on Side B-SH."
+        },
+        {
+          "name": "Lenny G",
+          "note": "Poster lists Lenny G on Side B-SH."
+        },
+        {
+          "name": "M!na",
+          "note": "Poster lists M!na on Side B-SH."
+        },
+        {
+          "name": "Tiehan",
+          "note": "Poster lists Tiehan on Side B-SH."
+        },
+        {
+          "name": "Toshio",
+          "note": "Poster lists Toshio on Side B-SH."
+        },
+        {
+          "name": "Vincent aka Jinrong DJ",
+          "note": "Heim monthly schedule lists Vincent aka Jinrong DJ; poster also includes Jinrong DJ."
+        },
+        {
+          "name": "Yuqi",
+          "note": "Poster/monthly schedule lists Yuqi on Side B-SH."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Earworthy Selected Sound poster screenshot",
+          "url": "assets/posters/heim-earworthy-selected-sound.jpg",
+          "status": "official-social-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Confirms event title, Side B-SH, date, time, Heim, address, and most lineup names."
+        },
+        {
+          "label": "Heim June 2026 monthly schedule screenshot",
+          "url": "assets/posters/heim-june-2026-schedule.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Lists Earworthy selected sound Shanghai stop at Heim on 06.19 with Jasper, Lenny G, M!na, Tiehan, Yuqi, Vincent aka Jinrong DJ, and more TBA."
+        },
+        {
+          "label": "Heim WeChat article screenshot",
+          "url": "assets/posters/heim-june-2026-wechat-article-1.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Describes Earworthy as a cross-region music curation project and supports the Heim Shanghai date."
+        }
+      ],
+      "recommendationReason": "Included as a listening and selector-culture route at Heim: the 16:00-02:00 window and cross-region lineup make it useful for early-evening-to-late discovery, not a hard-rave recommendation.",
+      "bestFor": "Best for readers who want a softer listening-room-to-club path, record-digging taste, and social Heim context.",
+      "verifyBeforeGoing": "Confirm ticket route, door price, age policy, and whether all TBA lineup additions have been announced by Heim before going.",
+      "sourceConfidence": "Heim WeChat poster, monthly schedule, and article screenshots confirm title, date, time, venue/address, and the named lineup; price, ticket route, age policy, and final TBA additions remain unchecked.",
+      "soundTags": [
+        "groovy",
+        "house",
+        "listening"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "listening/live angle",
+        "lineup visible",
+        "poster confirmed",
+        "details need check"
+      ]
+    },
+    {
+      "id": "heim-invites-dina",
+      "month": "Jun",
+      "sortDate": "2026-06-26",
+      "date": "Jun 26",
+      "time": "22:00",
+      "title": "Heim Invites: DINA",
+      "venue": "Heim",
+      "district": "Huangpu",
+      "vibe": [
+        "underground",
+        "bass"
+      ],
+      "genre": "ambient, bass, trance, club",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "66 RMB+",
+      "age": "Check venue",
+      "source": "assets/posters/heim-dina-ticket.jpg",
+      "sourceLabel": "Yuyuan WeChat mini-program ticketing + Heim WeChat screenshots",
+      "imageTheme": "rose",
+      "description": "Heim Invites brings Berlin producer and Nachtcrew co-founder DINA into the M101 room with Huizit, Kilo-Vee, and HeShang, leaning spacious, bass-heavy, trance-adjacent, and art-club rather than straight hard techno.",
+      "kind": "event",
+      "sourceStatus": "wechat-miniprogram-ticketing",
+      "address": "M101 Room, No. 462 Changle Road, Huangpu District, Shanghai",
+      "organizer": "Heim Shanghai",
+      "lastChecked": "2026-06-15",
+      "posterUrl": "assets/posters/heim-dina-ticket-cover.jpg",
+      "posterEvidence": {
+        "type": "wechat-miniprogram-ticketing-screenshot",
+        "source": "Yuyuan WeChat mini-program ticketing screenshot manually confirmed by user",
+        "url": "assets/posters/heim-dina-ticket.jpg",
+        "status": "Ticketing screen confirms Heim Invites: DINA, 2026-06-26 22:00, price from 66 RMB, Changle Road M101 Heim, e-ticket, standing event, and no-refund label. Poster wall uses the cropped upper cover image without the lower ticketing menu; the original Yuyuan ticketing screenshot is retained as evidence. No public web ticket URL was captured.",
+        "localFiles": [
+          "assets/posters/heim-dina-ticket-cover.jpg",
+          "assets/posters/heim-dina-ticket.jpg",
+          "assets/posters/heim-june-2026-schedule.jpg",
+          "assets/posters/heim-june-2026-wechat-article-2.jpg"
+        ]
+      },
+      "ticketStatus": "Yuyuan WeChat mini-program ticketing screenshot, manually confirmed by the user, shows price from 66 RMB, 2026-06-26 22:00, Changle Road M101 Heim, e-ticket, standing event, and no-refund label. Direct shareable ticket URL was not captured; buy through Yuyuan or Heim customer-service route.",
+      "lineup": [
+        {
+          "name": "DINA",
+          "note": "Heim ticketing and article screenshots name DINA as the invited artist; article frames her through Berlin/Nachtcrew and ambient, heavy bass, and trance context."
+        },
+        {
+          "name": "Huizit",
+          "note": "Heim article/monthly schedule screenshots list Huizit as support."
+        },
+        {
+          "name": "Kilo-Vee",
+          "note": "Heim article/monthly schedule screenshots list Kilo-Vee as support."
+        },
+        {
+          "name": "HeShang",
+          "note": "Heim article/monthly schedule screenshots list HeShang as support."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Yuyuan WeChat mini-program ticketing screenshot - Heim Invites: DINA",
+          "url": "assets/posters/heim-dina-ticket.jpg",
+          "status": "wechat-miniprogram-ticketing-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "User manually confirmed this is a Yuyuan WeChat mini-program ticketing screen. It confirms title, date, 22:00 time, price from 66 RMB, M101 Heim address, e-ticket, standing event, and no-refund label; it does not provide a shareable public ticket URL."
+        },
+        {
+          "label": "Heim June 2026 monthly schedule screenshot",
+          "url": "assets/posters/heim-june-2026-schedule.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Lists Heim Invites: DINA on 06.26 with DINA, Huizit, Kilo-Vee, and HeShang."
+        },
+        {
+          "label": "Heim WeChat article screenshot",
+          "url": "assets/posters/heim-june-2026-wechat-article-2.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Describes DINA and the support bill; supports ambient, bass-heavy, and trance-adjacent positioning."
+        }
+      ],
+      "recommendationReason": "Included because DINA gives Heim a spacious but club-forward Friday route: ambient pressure, heavy bass, and trance color, with Huizit, Kilo-Vee, and HeShang adding local support.",
+      "bestFor": "Best for listeners who want a darker, atmospheric Heim room that still has bass weight and dance-floor intent.",
+      "verifyBeforeGoing": "Open the Yuyuan WeChat mini-program or Heim customer-service route to confirm live inventory, final ticket tier, age policy, and running order before going.",
+      "sourceConfidence": "User-confirmed Yuyuan WeChat mini-program ticketing screenshot plus Heim monthly/article screenshots confirm title, date, time, venue/address, price tier, ticketing state, and lineup. Direct web URL and age policy were not captured.",
+      "soundTags": [
+        "trance-adjacent",
+        "bass-hybrid",
+        "ambient",
+        "club"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "lineup visible",
+        "poster confirmed",
+        "ticket screenshot",
+        "late room"
+      ]
+    },
+    {
+      "id": "heim-discchef-roto-anniversary",
+      "month": "Jun",
+      "sortDate": "2026-06-27",
+      "date": "Jun 27",
+      "time": "22:00",
+      "title": "DiscChef 2yrs Anniversary w/ Roto",
+      "venue": "Heim",
+      "district": "Huangpu",
+      "vibe": [
+        "underground",
+        "date"
+      ],
+      "genre": "EBM, electro, trance, house",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "66 RMB+",
+      "age": "Check venue",
+      "source": "assets/posters/heim-discchef-roto-ticket.jpg",
+      "sourceLabel": "Yuyuan WeChat mini-program ticketing + Heim WeChat screenshots",
+      "imageTheme": "acid",
+      "description": "DiscChef two-year anniversary at Heim with Spanish artist Roto, plus 2Difficult and BIANBIAN; the Heim article frames it as EBM, electro, trance, and house crossover.",
+      "kind": "event",
+      "sourceStatus": "wechat-miniprogram-ticketing",
+      "address": "M101 Room, No. 462 Changle Road, Huangpu District, Shanghai",
+      "organizer": "Heim Shanghai / DiscChef",
+      "lastChecked": "2026-06-15",
+      "posterUrl": "assets/posters/heim-discchef-roto-ticket-cover.jpg",
+      "posterEvidence": {
+        "type": "wechat-miniprogram-ticketing-screenshot",
+        "source": "Yuyuan WeChat mini-program ticketing screenshot manually confirmed by user",
+        "url": "assets/posters/heim-discchef-roto-ticket.jpg",
+        "status": "Ticketing screen confirms DiscChef 2yrs Anniversary w/Roto, 2026-06-27 22:00, price from 66 RMB, Changle Road M101 Heim, e-ticket, standing event, and no-refund label. Poster wall uses the cropped upper cover image without the lower ticketing menu; the original Yuyuan ticketing screenshot is retained as evidence. No public web ticket URL was captured.",
+        "localFiles": [
+          "assets/posters/heim-discchef-roto-ticket-cover.jpg",
+          "assets/posters/heim-discchef-roto-ticket.jpg",
+          "assets/posters/heim-june-2026-schedule.jpg",
+          "assets/posters/heim-june-2026-wechat-article-2.jpg"
+        ]
+      },
+      "ticketStatus": "Yuyuan WeChat mini-program ticketing screenshot, manually confirmed by the user, shows price from 66 RMB, 2026-06-27 22:00, Changle Road M101 Heim, e-ticket, standing event, and no-refund label. Direct shareable ticket URL was not captured; buy through Yuyuan or Heim customer-service route.",
+      "lineup": [
+        {
+          "name": "Roto",
+          "note": "Heim ticketing and article screenshots identify Spanish artist Roto as the anniversary guest."
+        },
+        {
+          "name": "2Difficult",
+          "note": "Heim article/monthly schedule screenshots list 2Difficult for the anniversary night."
+        },
+        {
+          "name": "BIANBIAN",
+          "note": "Heim article/monthly schedule screenshots list BIANBIAN for the anniversary night."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Yuyuan WeChat mini-program ticketing screenshot - DiscChef 2yrs Anniversary w/Roto",
+          "url": "assets/posters/heim-discchef-roto-ticket.jpg",
+          "status": "wechat-miniprogram-ticketing-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "User manually confirmed this is a Yuyuan WeChat mini-program ticketing screen. It confirms title, date, 22:00 time, price from 66 RMB, M101 Heim address, e-ticket, standing event, and no-refund label; it does not provide a shareable public ticket URL."
+        },
+        {
+          "label": "Heim June 2026 monthly schedule screenshot",
+          "url": "assets/posters/heim-june-2026-schedule.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Lists DiscChef 2yrs Anniversary w/Roto on 06.27 with Roto, 2Difficult, and BIANBIAN."
+        },
+        {
+          "label": "Heim WeChat article screenshot",
+          "url": "assets/posters/heim-june-2026-wechat-article-2.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Describes Roto leading the DiscChef anniversary and frames the night around EBM, electro, trance, house, and multi-genre club energy."
+        }
+      ],
+      "recommendationReason": "Included because Roto with 2Difficult and BIANBIAN points to EBM, electro, trance, and house crossover at Heim, a more dance-floor-specific reason to go than the anniversary label alone.",
+      "bestFor": "Best for readers who want an electro/EBM/trance-house crossover route at Heim rather than hard industrial pressure.",
+      "verifyBeforeGoing": "Open the Yuyuan WeChat mini-program or Heim customer-service route to confirm live inventory, final ticket tier, age policy, and running order before going.",
+      "sourceConfidence": "User-confirmed Yuyuan WeChat mini-program ticketing screenshot plus Heim monthly/article screenshots confirm title, date, time, venue/address, price tier, ticketing state, and lineup. Direct web URL and age policy were not captured.",
+      "soundTags": [
+        "ebm",
+        "electro",
+        "trance-adjacent",
+        "house"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "lineup visible",
+        "poster confirmed",
+        "ticket screenshot",
+        "late room"
+      ]
     }
   ]
 }

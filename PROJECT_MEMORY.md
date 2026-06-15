@@ -1436,6 +1436,22 @@ Rule carried forward:
 - Do not update canonical data from social login walls, old venue articles, SmartShanghai mirrors, or unrelated snippets.
 - Next useful route is user login-assisted XHS/WeChat browser verification or user-provided official-account links/QR routes.
 
+## 2026-06-15 Heim User Evidence Ingest
+
+The user supplied Heim images from WeChat/ticketing context and clarified that all supplied images were Heim events.
+
+Updated state:
+
+- Added `heim-long-wave` for Jun 18 at Heim with local poster, 22:00-late time, lineup, address, and official screenshot evidence.
+- Added `heim-earworthy-selected-sound` for Jun 19 at Heim with local poster, 16:00-02:00 time, lineup, address, and official screenshot evidence.
+- Updated `jasmin-knopha` with Heim poster/monthly/article screenshots, local poster, and confirmed Sylo / Jasmin / Knopha lineup. It remains Watch because ticket route, price, age rule, and set times are still not visible.
+- Added `heim-invites-dina` for Jun 26 at Heim with Yuyuan WeChat mini-program ticketing screenshot evidence, 22:00 time, 66 RMB+ price, address, and lineup DINA / Huizit / Kilo-Vee / HeShang. The public poster wall visual uses the cropped upper cover image `heim-dina-ticket-cover.jpg`; the full ticketing screenshot remains evidence.
+- Added `heim-discchef-roto-anniversary` for Jun 27 at Heim with Yuyuan WeChat mini-program ticketing screenshot evidence, 22:00 time, 66 RMB+ price, address, and lineup Roto / 2Difficult / BIANBIAN. The public poster wall visual uses the cropped upper cover image `heim-discchef-roto-ticket-cover.jpg`; the full ticketing screenshot remains evidence.
+
+Evidence rule:
+
+- Ticketing homepage images are acceptable evidence when they visibly name the event and practical facts. For poster wall display, crop away lower ticketing UI and use only the upper cover image. Do not invent a direct `ticketUrl` from screenshots; keep ticket URL and age policy as explicit gaps when only the image is available.
+
 ## 2026-06-14 Core Gap Marking Pass
 
 The user clarified the handling rule: if a core field cannot be found, mark it clearly because the organizer may not have published it yet, then recheck next time.

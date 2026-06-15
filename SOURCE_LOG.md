@@ -537,3 +537,33 @@ Editorial outcome:
 Workflow lesson:
 
 - On anti-scrape surfaces, platform-native search is correct, but query volume must stay low. Stop immediately on verification/captcha and mark the route `captcha-stopped` rather than trying more keywords.
+
+## 2026-06-15 User-Provided Heim WeChat / Ticketing Evidence
+
+The user supplied eight Heim images from WeChat/XHS/ticketing context. They included official-looking Heim monthly-program screenshots, WeChat article screenshots, posters, and ticketing-homepage screenshots. Ticketing-homepage screenshots were accepted as usable poster/evidence assets when they visibly named the event, date, time, price, venue, and ticket state.
+
+Assets copied into `assets/posters/`:
+
+- `heim-long-wave.jpg`
+- `heim-earworthy-selected-sound.jpg`
+- `heim-invites-jasmin-knopha.jpg`
+- `heim-dina-ticket.jpg`
+- `heim-discchef-roto-ticket.jpg`
+- `heim-june-2026-schedule.jpg`
+- `heim-june-2026-wechat-article-1.jpg`
+- `heim-june-2026-wechat-article-2.jpg`
+
+Canonical updates:
+
+- Added `heim-long-wave` for Jun 18 at Heim. Poster confirms LONG WAVE / Dragon Boat Festival Special, 22:00-late, Heim, Changle Road / M101 location, and lineup: Golgol, SpaceReturn, Sam Tbd, Xiaolaba. Price, ticket route, and age policy remain gaps.
+- Added `heim-earworthy-selected-sound` for Jun 19 at Heim. Poster confirms Side B-SH, 16:00-02:00, Heim, Changle Road / M101 address, and lineup context. Price, ticket route, age policy, and final TBA additions remain gaps.
+- Updated `jasmin-knopha` with Heim poster/monthly/article evidence. Lineup now includes Sylo, Jasmin, and Knopha. Poster is stored locally. Ticket route, door price, age rule, and exact set times remain gaps, so the event stays Watch.
+- Added `heim-invites-dina` for Jun 26 at Heim. Ticketing screenshot confirms title, 2026-06-26 22:00, price from 66 RMB, Changle Road M101 Heim, e-ticket, standing event, and no-refund label. Article/monthly screenshots support DINA, Huizit, Kilo-Vee, and HeShang. Direct ticket URL and age policy remain gaps.
+- Added `heim-discchef-roto-anniversary` for Jun 27 at Heim. Ticketing screenshot confirms title, 2026-06-27 22:00, price from 66 RMB, Changle Road M101 Heim, e-ticket, standing event, and no-refund label. Article/monthly screenshots support Roto, 2Difficult, and BIANBIAN. Direct ticket URL and age policy remain gaps.
+
+Workflow note:
+
+- User-provided screenshots can be promoted into canonical evidence only when the visible image itself confirms event facts. Use `ticketing-screenshot` or `official-wechat-screenshot` status, keep a local `posterEvidence.localFiles` trail, and keep missing direct ticket URLs or age policies as explicit gaps instead of inventing links.
+- Follow-up clarification: the two ticketing-homepage screenshots are from the Yuyuan WeChat mini-program and were manually confirmed by the user. Treat them as event-level ticketing evidence and acceptable poster-wall visuals after compression, but do not create a fake public `ticketUrl`; record the route in `ticketStatus`, `sourceConfidence`, and source notes.
+- Poster-wall handling: use the event-specific poster, or a cropped upper cover from the Yuyuan ticketing screen, as the main `posterUrl`. Keep complete ticketing screenshots, Heim monthly schedule, and article screenshots as `posterEvidence.localFiles` unless the event has no better event-specific visual.
+- Cropped ticketing visuals generated for poster wall display: `heim-dina-ticket-cover.jpg` and `heim-discchef-roto-ticket-cover.jpg`. The full ticketing screenshots remain source evidence for price, time, address, e-ticket, standing, and no-refund facts.

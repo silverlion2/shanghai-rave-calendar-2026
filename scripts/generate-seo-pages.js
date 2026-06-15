@@ -119,7 +119,7 @@ function renderEventPage(event) {
   const image = imageUrl(event);
   const liveRoomHref = `../live-room.html?room=${encodeURIComponent(event.id)}#live-room`;
   const primaryActionHref = trackedTicketUrl(event, "../");
-  const sourceActionHref = event.detailsUrl || event.source || "";
+  const sourceActionHref = eventPageHref(event.detailsUrl || event.source || "", "../");
   const showSourceAction = Boolean(event.ticketUrl && sourceActionHref && sourceActionHref !== primaryActionHref);
   const schemaNodes = [
     websiteSchema(siteStructure),
@@ -315,7 +315,7 @@ function sourceRows(event) {
       const note = sourceVerificationNote(source);
       return `
       <li>
-        <a href="${escapeAttr(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label || "Source")}</a>
+        <a href="${escapeAttr(eventPageHref(source.url, "../"))}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label || "Source")}</a>
         <span>${escapeHtml(source.status || "source")} / checked ${escapeHtml(source.lastChecked || event.lastChecked || dataLastmod)}</span>
         ${note ? `<span class="source-note">${escapeHtml(note)}</span>` : ""}
       </li>
@@ -398,7 +398,7 @@ function commercialRelationship(event) {
 function eventSchema(event, canonical, image) {
   const socialLinks = eventSocialLinksForPage(event);
   const sameAs = unique([
-    event.detailsUrl || event.source,
+    schemaUrl(event.detailsUrl || event.source),
     ...socialLinks.map(link => link.url),
   ].filter(Boolean));
   const schema = {
@@ -470,7 +470,7 @@ function offerSchema(event) {
   const price = parsePrice(event.price);
   const offer = {
     "@type": "Offer",
-    "url": url,
+    "url": schemaUrl(url),
     "availability": /sold\s*out/i.test(event.price || "") ? "https://schema.org/SoldOut" : "https://schema.org/InStock",
     "priceCurrency": "CNY",
   };
@@ -531,8 +531,25 @@ function imageUrl(event) {
 function trackedTicketUrl(event, prefix = "") {
   const destination = event.ticketUrl || event.ticket || event.source || "";
   if (!destination) return "#";
-  if (!/^https?:\/\//i.test(destination)) return destination;
+  if (!/^https?:\/\//i.test(destination)) return eventPageHref(destination, prefix);
   return `${prefix}ticket.html?event=${encodeURIComponent(event.id)}&to=${encodeURIComponent(destination)}`;
+}
+
+function eventPageHref(url, prefix = "") {
+  const value = String(url || "").trim();
+  if (!value) return "";
+  if (/^(?:https?:|mailto:|tel:|#)/i.test(value) || value.startsWith("../") || value.startsWith("/")) return value;
+  if (/^assets\//i.test(value)) return `${prefix}${value}`;
+  return value;
+}
+
+function schemaUrl(url) {
+  const value = String(url || "").trim();
+  if (!value) return "";
+  if (/^https?:\/\//i.test(value)) return value;
+  if (/^\//.test(value)) return `${SITE_URL}${value}`;
+  if (/^assets\//i.test(value)) return `${SITE_URL}/${value}`;
+  return value;
 }
 
 function relativeImagePath(event) {
