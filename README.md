@@ -95,6 +95,8 @@ RA is the highest-priority public nightlife source. Because plain HTTP fetch cur
 
 Static browsing does not require a database. Supabase is used when configured for backend tables, Love Wall submissions, account personalization, and imported poster archive metadata.
 
+When a human supplies WeChat, XHS, ticketing, venue, promoter, or poster screenshots for new events, follow `docs/SCREENSHOT_EVENT_INGEST_WORKFLOW.md`: keep full screenshots as evidence, crop ticketing UI away from poster-wall covers, fill current/future core fields first, mark missing age/ticket URL/running order as gaps, and avoid fake public ticket URLs.
+
 ## Poster compression and upload
 
 Save raw poster files under `assets/posters/` and reference the raw local path in the event `posterUrl`, for example `assets/posters/event-slug.png`.

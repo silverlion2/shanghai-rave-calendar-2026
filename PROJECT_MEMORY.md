@@ -1339,6 +1339,21 @@ Validation:
 - `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json`: 0 must-fix, 0 should-fix.
 - `npm run check`: passed with 70 tests.
 
+## 2026-06-16 Screenshot Event Ingest Workflow
+
+Added `docs/SCREENSHOT_EVENT_INGEST_WORKFLOW.md` as the standard workflow for user-provided WeChat, XHS, ticketing, venue, promoter, article, and poster screenshots.
+
+Core rules:
+
+- User should provide overview, ticketing page, clean poster/cover, article/detail, and source-route screenshots when available.
+- Full ticketing screenshots remain evidence; poster-wall covers should crop away lower ticketing UI.
+- Current/future core fields are filled first; missing age policy, direct ticket URL, running order, or set times stay explicit gaps.
+- Mini-program screenshots must not become fake public `ticketUrl` values.
+- New unsourced performers get event-role profiles only; existing stronger DJ profiles are supplemented, not overwritten.
+- Recommendations must explain why to go, while source discovery belongs in `ticketStatus`, `sourceConfidence`, and Trust Ledger notes.
+
+Also added a README link and updated the local `rave-calendar-editor` skill workflow reference so future screenshot batches route through the same process.
+
 ## 2026-06-15 Favicon Refresh And Production Deploy
 
 The user selected the existing Basement Dispatch stamp artwork as the site favicon.
