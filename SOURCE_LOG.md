@@ -567,3 +567,52 @@ Workflow note:
 - Follow-up clarification: the two ticketing-homepage screenshots are from the Yuyuan WeChat mini-program and were manually confirmed by the user. Treat them as event-level ticketing evidence and acceptable poster-wall visuals after compression, but do not create a fake public `ticketUrl`; record the route in `ticketStatus`, `sourceConfidence`, and source notes.
 - Poster-wall handling: use the event-specific poster, or a cropped upper cover from the Yuyuan ticketing screen, as the main `posterUrl`. Keep complete ticketing screenshots, Heim monthly schedule, and article screenshots as `posterEvidence.localFiles` unless the event has no better event-specific visual.
 - Cropped ticketing visuals generated for poster wall display: `heim-dina-ticket-cover.jpg` and `heim-discchef-roto-ticket-cover.jpg`. The full ticketing screenshots remain source evidence for price, time, address, e-ticket, standing, and no-refund facts.
+
+## 2026-06-15 User-Provided Wigwam Screenshot Ingest
+
+The user supplied ten Wigwam images covering the June program calendar, a 2026-06-15 to 2026-06-22 weekly schedule, event posters, Liminal Dreams notes, and artist profile slides. They were treated as user-provided official-social/poster evidence when the visible image itself named the event, date, venue, lineup, entry state, or artist context.
+
+Assets copied into `assets/posters/` and optimized for poster-wall/display use:
+
+- `wigwam-june-2026-calendar.jpg`
+- `wigwam-weekly-2026-06-15-to-06-22.jpg`
+- `wigwam-weekly-listening-golgol-2026-06-16.jpg`
+- `wigwam-weekly-listening-xiaolaba-2026-06-17.jpg`
+- `wigwam-weekly-listening-wheon-2026-06-19.jpg`
+- `wigwam-liminal-dreams-2026-06-20.jpg`
+- `wigwam-liminal-dreams-2026-06-20-notes.png`
+- `wigwam-golgol-profile.jpg`
+- `wigwam-xiaolaba-profile.jpg`
+- `wigwam-wheon-profile.jpg`
+
+Canonical updates:
+
+- Added `wigwam-weekly-listening-golgol` for Jun 16 at Wigwam, 22:00-late, Free Entry. The event poster, weekly schedule, monthly calendar, Golgol profile slide, and SmartShanghai venue context are attached. Recommendation focuses on textured electronics, low-frequency phrasing, and a listening-first route.
+- Added `wigwam-weekly-listening-xiaolaba` for Jun 17 at Wigwam, 22:00-late, Free Entry. The event poster, weekly schedule, monthly calendar, Xiaolaba profile slide, and venue context are attached. The recommendation stays conservative because the profile slide confirms identity but not a detailed public genre biography.
+- Added `wigwam-weekly-listening-wheon` for Jun 19 at Wigwam, 22:00-late, Free Entry. The event poster, weekly schedule, monthly calendar, wheon profile slide, and venue context are attached. Recommendation calls it the strongest techno-adjacent Weekly Listening entry from this batch because the profile text names darkness, tribe, industrial, deep techno, psytrance, and experimental borders.
+- Updated `liminal-dreams` with event poster, text-note screenshot, weekly schedule, monthly calendar, and venue context. It is now a Medium-confidence upcoming event with lineup Chingyi, IIN, Rainsoft, and Toss, Free Entry, and an explicit time conflict: event poster says 20:00-late, weekly schedule says 22:00-late. Keep exact start time as a verify-before-going field.
+- Updated `friendsstandout` with Wigwam weekly/monthly schedule support for Free Entry and 21:00-late while preserving RA as the primary public event source.
+- Updated `youshan-warmup` with the Wigwam monthly calendar as supporting evidence that Jun 27 is a YOUSHAN 2026 warmup / Shanghai stop and ticketed. It remains Watch because the visible screenshot does not expose start time, price, direct ticket route, age policy, or full lineup.
+
+DJ profile updates:
+
+- Added or enriched `wheon`, `IIN`, `Golgol`, `Xiaolaba`, `Chingyi`, `Rainsoft`, and `Toss` with screenshot-backed notes and clear source-status caveats.
+- Local screenshot sources do not count as HTTP source URLs in the strict audit script, so venue-context HTTP URLs were added as context-only entries where needed. Do not treat those context URLs as event confirmation.
+
+Not added from this batch:
+
+- Jun 24 `Mama River by Heim`
+- Jun 25 `DUANLUOO`
+- Jun 26 unclear row that appears to read `迷猪`
+- Jun 28 `Call A Taxi`
+
+Reason: they were visible only as monthly-calendar leads in this pass, without enough event-specific poster/core-field evidence to add as firm listings. Recheck next pass through Wigwam/XHS/WeChat/platform-native routes or user-provided screenshots.
+
+Validation:
+
+- `npm run posters:prepare` generated/confirmed optimized display assets and `data/poster-archive.json` with 59 poster records / 10.32 MB display payload.
+- `node scripts/scrape-events.js` passed with `SCRAPE_MAX_DETAIL_PAGES=0`: 96 events, 76 curated updates, 40 tracked DJ itinerary rows.
+- `node scripts/generate-seo-pages.js` generated 96 event detail pages and `sitemap.xml`.
+- `node scripts/check.js` passed: 3362 local links across 119 HTML/CSS files and 27 inline scripts.
+- `npm run check` passed with 70 tests.
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json` passed with 0 must-fix and 0 should-fix findings.

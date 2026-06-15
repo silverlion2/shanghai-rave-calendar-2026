@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T12:58:48.980Z",
+  "generatedAt": "2026-06-15T13:20:17.522Z",
   "sourceData": "data/events.json",
   "storagePolicy": {
     "mode": "static-json-plus-local-optimized-assets",
@@ -7,16 +7,16 @@
     "rule": "Use optimized display assets in the wall; keep raw poster files out of the default browsing path when the archive grows."
   },
   "stats": {
-    "posters": 55,
+    "posters": 59,
     "years": [
       2026
     ],
     "venues": 29,
-    "optimizedCount": 55,
-    "displayBytes": 10647379,
-    "sourceBytes": 35940851,
-    "displayMegabytes": 10.15,
-    "sourceMegabytes": 34.28,
+    "optimizedCount": 59,
+    "displayBytes": 10822040,
+    "sourceBytes": 36150396,
+    "displayMegabytes": 10.32,
+    "sourceMegabytes": 34.48,
     "freeTierSoftCapBytes": 83886080,
     "freeTierSoftCapMegabytes": 80
   },
@@ -441,7 +441,7 @@
       "confidence": "Medium",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
-        "label": "Resident Advisor",
+        "label": "Resident Advisor + Wigwam schedule screenshots",
         "url": "https://ra.co/events/2455159",
         "posterEvidenceUrl": "https://ra.co/events/2455159",
         "posterEvidenceSource": "Resident Advisor event page",
@@ -636,6 +636,51 @@
       },
       "eventUrl": "events/jasmin-knopha.html",
       "notes": "Single-source lead for a textured Heim night joining Dutch producer/DJ Jasmin with Knopha."
+    },
+    {
+      "id": "shanghai-2026-liminal-dreams",
+      "eventId": "liminal-dreams",
+      "title": "Liminal Dreams",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 20",
+      "sortDate": "2026-06-20",
+      "time": "20:00-late",
+      "venue": "Wigwam",
+      "district": "Changning",
+      "sound": "ambient, outer music, electronic",
+      "tags": [
+        "upcoming",
+        "medium",
+        "changning",
+        "experimental",
+        "date",
+        "ambient",
+        "outer music",
+        "electronic"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Wigwam / Liminal Dreams poster and WeChat screenshots",
+        "url": "assets/posters/wigwam-liminal-dreams-2026-06-20.jpg",
+        "posterEvidenceUrl": "assets/posters/wigwam-liminal-dreams-2026-06-20.jpg",
+        "posterEvidenceSource": "Wigwam/Liminal Dreams user-provided event poster screenshot",
+        "posterEvidenceStatus": "Event poster confirms Liminal Dreams x Wigwam, Chingyi, IIN, Rainsoft, Toss, Saturday June 20 2026, 20:00-late, LG Floor C.PARK, No.658 Zhaohua Road, Shanghai. Weekly schedule also lists the event as free entry but shows 22:00-late, so final start time should be checked."
+      },
+      "image": {
+        "thumbnail": "assets/posters/wigwam-liminal-dreams-2026-06-20-optimized.jpg",
+        "display": "assets/posters/wigwam-liminal-dreams-2026-06-20-optimized.jpg",
+        "sourceAsset": "assets/posters/wigwam-liminal-dreams-2026-06-20.jpg",
+        "displayBytes": 80457,
+        "sourceBytes": 97125,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/liminal-dreams.html",
+      "notes": "Liminal Dreams x Wigwam with Chingyi, IIN, Rainsoft, and Toss. The supplied event poster confirms the date, lineup, address, and 20:00-late timing; the weekly schedule confirms free entry but lists the slot as 22:00-late, so readers should verify the exact start."
     },
     {
       "id": "shanghai-2026-neon-jungle-tom-kynd",
@@ -901,6 +946,52 @@
       "notes": "ONEFORTYASIA brings MUNGK and SIMBIE to EXIT with a bass, dubstep, and UK garage frame plus local support from D8, Diipset, Sanli, Siesta, and Somebodyyyy."
     },
     {
+      "id": "shanghai-2026-wigwam-weekly-listening-wheon",
+      "eventId": "wigwam-weekly-listening-wheon",
+      "title": "Weekly Listening: wheon",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 19",
+      "sortDate": "2026-06-19",
+      "time": "22:00-late",
+      "venue": "Wigwam",
+      "district": "Changning",
+      "sound": "deep techno, industrial, psytrance, experimental",
+      "tags": [
+        "upcoming",
+        "medium",
+        "changning",
+        "listening",
+        "underground",
+        "deep techno",
+        "industrial",
+        "psytrance",
+        "experimental"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Wigwam WeChat / poster screenshots",
+        "url": "assets/posters/wigwam-weekly-listening-wheon-2026-06-19.jpg",
+        "posterEvidenceUrl": "assets/posters/wigwam-weekly-listening-wheon-2026-06-19.jpg",
+        "posterEvidenceSource": "Wigwam WeChat/user-provided event poster screenshot",
+        "posterEvidenceStatus": "Event poster confirms Weekly Listening: wheon, 2026-06-19, Wigwam, free entry, and the C.PARK / Zhaohua Road location. Weekly schedule screenshot confirms the 22:00-late listening slot."
+      },
+      "image": {
+        "thumbnail": "assets/posters/wigwam-weekly-listening-wheon-2026-06-19-optimized.jpg",
+        "display": "assets/posters/wigwam-weekly-listening-wheon-2026-06-19-optimized.jpg",
+        "sourceAsset": "assets/posters/wigwam-weekly-listening-wheon-2026-06-19.jpg",
+        "displayBytes": 32267,
+        "sourceBytes": 38446,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/wigwam-weekly-listening-wheon.html",
+      "notes": "Free-entry Friday Weekly Listening at Wigwam with wheon, whose Wigwam profile points toward darkness, tribal pressure, industrial edges, deep techno, psytrance, and experimental motion."
+    },
+    {
       "id": "shanghai-2026-alter-pavillon",
       "eventId": "alter-pavillon",
       "title": "ALTER. Pavillon",
@@ -1161,6 +1252,95 @@
       },
       "eventUrl": "events/bloom-season-1-grand-final.html",
       "notes": "RA lists Bloom Season 1 Grand Final at EXIT with judges, DJ/MC roles, and finalists. Keep as RA coverage/context: useful for dance-culture followers, softer for techno-first readers."
+    },
+    {
+      "id": "shanghai-2026-wigwam-weekly-listening-xiaolaba",
+      "eventId": "wigwam-weekly-listening-xiaolaba",
+      "title": "Weekly Listening: Xiaolaba / 小喇叭",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 17",
+      "sortDate": "2026-06-17",
+      "time": "22:00-late",
+      "venue": "Wigwam",
+      "district": "Changning",
+      "sound": "electronic listening, local DJ context",
+      "tags": [
+        "upcoming",
+        "medium",
+        "changning",
+        "listening",
+        "underground",
+        "electronic listening",
+        "local dj context"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Wigwam WeChat / poster screenshots",
+        "url": "assets/posters/wigwam-weekly-listening-xiaolaba-2026-06-17.jpg",
+        "posterEvidenceUrl": "assets/posters/wigwam-weekly-listening-xiaolaba-2026-06-17.jpg",
+        "posterEvidenceSource": "Wigwam WeChat/user-provided event poster screenshot",
+        "posterEvidenceStatus": "Event poster confirms Weekly Listening: Xiaolaba / 小喇叭, 2026-06-17, Wigwam, free entry, and the C.PARK / Zhaohua Road location. Weekly schedule screenshot confirms the 22:00-late listening slot."
+      },
+      "image": {
+        "thumbnail": "assets/posters/wigwam-weekly-listening-xiaolaba-2026-06-17-optimized.jpg",
+        "display": "assets/posters/wigwam-weekly-listening-xiaolaba-2026-06-17-optimized.jpg",
+        "sourceAsset": "assets/posters/wigwam-weekly-listening-xiaolaba-2026-06-17.jpg",
+        "displayBytes": 35181,
+        "sourceBytes": 41174,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/wigwam-weekly-listening-xiaolaba.html",
+      "notes": "Free-entry Wigwam Weekly Listening entry for Xiaolaba / 小喇叭. The source confirms the date, venue, address, and free entry, while the artist lane should stay lightly described until stronger profile sources are available."
+    },
+    {
+      "id": "shanghai-2026-wigwam-weekly-listening-golgol",
+      "eventId": "wigwam-weekly-listening-golgol",
+      "title": "Weekly Listening: Golgol",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 16",
+      "sortDate": "2026-06-16",
+      "time": "22:00-late",
+      "venue": "Wigwam",
+      "district": "Changning",
+      "sound": "electronic listening, textured synth, low-frequency club",
+      "tags": [
+        "upcoming",
+        "medium",
+        "changning",
+        "listening",
+        "underground",
+        "electronic listening",
+        "textured synth",
+        "low-frequency club"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Wigwam WeChat / poster screenshots",
+        "url": "assets/posters/wigwam-weekly-listening-golgol-2026-06-16.jpg",
+        "posterEvidenceUrl": "assets/posters/wigwam-weekly-listening-golgol-2026-06-16.jpg",
+        "posterEvidenceSource": "Wigwam WeChat/user-provided event poster screenshot",
+        "posterEvidenceStatus": "Event poster confirms Weekly Listening: Golgol, 2026-06-16, Wigwam, free entry, and the C.PARK / Zhaohua Road location. Weekly schedule screenshot confirms the 22:00-late listening slot."
+      },
+      "image": {
+        "thumbnail": "assets/posters/wigwam-weekly-listening-golgol-2026-06-16-optimized.jpg",
+        "display": "assets/posters/wigwam-weekly-listening-golgol-2026-06-16-optimized.jpg",
+        "sourceAsset": "assets/posters/wigwam-weekly-listening-golgol-2026-06-16.jpg",
+        "displayBytes": 26756,
+        "sourceBytes": 32800,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/wigwam-weekly-listening-golgol.html",
+      "notes": "Wigwam Weekly Listening slot with Golgol: a free-entry Tuesday listening route around textured electronics, low-frequency phrasing, and a softer club-room pace."
     },
     {
       "id": "shanghai-2026-house-of-zup",

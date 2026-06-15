@@ -252,24 +252,38 @@
       "aliases": [
         "Chingyi"
       ],
-      "trackedAt": "2026-06-14",
+      "trackedAt": "2026-06-15",
       "checkedByTimezone": "Asia/Shanghai",
       "itinerary": [],
-      "scope": "ALTER Pavillon / Beaufort Terrace lineup-context source profile",
+      "scope": "Liminal Dreams / Wigwam ambient, drone, and techno profile",
       "imageTheme": "cyan",
       "genres": [
-        "dj-set-context",
-        "garden-session",
-        "livestream-context"
+        "ambient",
+        "drone",
+        "techno",
+        "downtempo",
+        "uptempo"
       ],
-      "summary": "SmartShanghai-listed DJ for ALTER. Pavillon at Beaufort Terrace, a garden-setting event with DJ sets and byyb.radio livestream context.",
-      "sourceNote": "SmartShanghai confirms the event role and performer list; no standalone artist profile was added, so keep biographical claims out of the profile.",
+      "summary": "Liminal Dreams note screenshot says Chingyi is a returning Liminal Dreams participant and places her music between ambient, drone, techno, downtempo, and uptempo speeds and moods.",
+      "sourceNote": "User-provided Liminal Dreams/Wigwam screenshots support the June 20 event role and sound lane; keep external biography claims out until a standalone profile is verified.",
       "sources": [
         {
           "label": "SmartShanghai ALTER. Pavillon listing",
           "url": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
           "status": "lineup-context",
           "checked": "2026-06-14"
+        },
+        {
+          "label": "Liminal Dreams x Wigwam text-note screenshot",
+          "url": "assets/posters/wigwam-liminal-dreams-2026-06-20-notes.png",
+          "status": "artist-profile-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Liminal Dreams x Wigwam event poster screenshot",
+          "url": "assets/posters/wigwam-liminal-dreams-2026-06-20.jpg",
+          "status": "event-poster-screenshot",
+          "checked": "2026-06-15"
         }
       ]
     },
@@ -697,24 +711,37 @@
       "aliases": [
         "Golgol"
       ],
-      "trackedAt": "2026-06-14",
+      "trackedAt": "2026-06-15",
       "checkedByTimezone": "Asia/Shanghai",
       "itinerary": [],
-      "scope": "ALTER Pavillon / Beaufort Terrace lineup-context source profile",
+      "scope": "Wigwam Weekly Listening / Shanghai electronic listening profile",
       "imageTheme": "gold",
       "genres": [
-        "dj-set-context",
-        "garden-session",
-        "livestream-context"
+        "electronic listening",
+        "textured synth",
+        "low-frequency",
+        "club context"
       ],
-      "summary": "SmartShanghai-listed DJ for ALTER. Pavillon at Beaufort Terrace, kept as event-role context for a relaxed-to-nighttime garden and livestream program.",
-      "sourceNote": "Single event-level SmartShanghai source; do not infer broader biography or genre history.",
+      "summary": "Wigwam profile text frames Golgol around stable sound, old-school electronic texture, rough structure, tactile synth lines, emotional tension, and low-frequency phrasing. Keep broader biography claims restrained beyond this source-backed listening context.",
+      "sourceNote": "User-provided Wigwam event poster/profile screenshots support the June 16 Weekly Listening booking and sound lane; they do not confirm broader discography or set times beyond the event row.",
       "sources": [
         {
           "label": "SmartShanghai ALTER. Pavillon listing",
           "url": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
           "status": "lineup-context",
           "checked": "2026-06-14"
+        },
+        {
+          "label": "Wigwam Golgol artist profile screenshot",
+          "url": "assets/posters/wigwam-golgol-profile.jpg",
+          "status": "artist-profile-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Wigwam Weekly Listening Golgol poster screenshot",
+          "url": "assets/posters/wigwam-weekly-listening-golgol-2026-06-16.jpg",
+          "status": "event-poster-screenshot",
+          "checked": "2026-06-15"
         }
       ]
     },
@@ -2186,26 +2213,39 @@
       "name": "Xiaolaba",
       "aliases": [
         "Xiaolaba",
-        "???"
+        "Xiao Laba",
+        "小喇叭"
       ],
-      "trackedAt": "2026-06-14",
+      "trackedAt": "2026-06-15",
       "checkedByTimezone": "Asia/Shanghai",
       "itinerary": [],
-      "scope": "ALTER Pavillon / Beaufort Terrace lineup-context source profile",
+      "scope": "Wigwam Weekly Listening / Shanghai local DJ context",
       "imageTheme": "ember",
       "genres": [
-        "dj-set-context",
-        "garden-session",
-        "livestream-context"
+        "electronic listening",
+        "local DJ context",
+        "club context"
       ],
-      "summary": "SmartShanghai lists ??? (Xiaolaba) among the DJs for ALTER. Pavillon at Beaufort Terrace.",
-      "sourceNote": "SmartShanghai supports the bilingual name and event role; no additional artist biography was found in this pass.",
+      "summary": "Wigwam screenshots confirm Xiaolaba / 小喇叭 for a June 17 Weekly Listening event and provide the phrase Just Live for You for One Day. No stronger standalone music biography is attached, so keep profile claims event-level.",
+      "sourceNote": "Use the Wigwam poster/profile screenshots as event identity context only; avoid broad genre or biography claims until stronger artist sources are verified.",
       "sources": [
         {
           "label": "SmartShanghai ALTER. Pavillon listing",
           "url": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
           "status": "lineup-context",
           "checked": "2026-06-14"
+        },
+        {
+          "label": "Wigwam Xiaolaba artist profile screenshot",
+          "url": "assets/posters/wigwam-xiaolaba-profile.jpg",
+          "status": "artist-profile-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Wigwam Weekly Listening Xiaolaba poster screenshot",
+          "url": "assets/posters/wigwam-weekly-listening-xiaolaba-2026-06-17.jpg",
+          "status": "event-poster-screenshot",
+          "checked": "2026-06-15"
         }
       ]
     },
@@ -2573,13 +2613,13 @@
       "imageTheme": "cyan",
       "genres": [
         "ambient",
-        "drone",
+        "deep ambient",
         "techno",
-        "outer music",
-        "Shanghai"
+        "Shanghai",
+        "restrained club"
       ],
-      "summary": "Shanghai-linked musician and DJ profile preserved for the Liminal Dreams / Wigwam watch lead. Public social-index text describes Rainsoft around deep ambient and techno; keep this as profile context until a standalone artist page is visually verified.",
-      "sourceNote": "Liminal Dreams social-index sources support the current June 20 lineup lead and profile-level ambient/techno context. They do not confirm ticketing, door price, age policy, or final running order.",
+      "summary": "Liminal Dreams note screenshot describes Rainsoft as a Shanghai-based musician and DJ drawing from deep ambient and techno, with a more restrained, softer, and fluid atmosphere.",
+      "sourceNote": "User-provided Liminal Dreams/Wigwam screenshots support the June 20 event role and profile-level ambient/techno context. They do not confirm ticketing, age policy, or final running order beyond the event row.",
       "sources": [
         {
           "label": "Liminal Dreams Instagram event/profile search preview",
@@ -2591,6 +2631,18 @@
           "label": "Liminal Dreams x Wigwam lineup/time search preview",
           "url": "https://www.instagram.com/p/DZFFVIPE8VW/",
           "status": "social-index-lineup-context",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Liminal Dreams x Wigwam text-note screenshot",
+          "url": "assets/posters/wigwam-liminal-dreams-2026-06-20-notes.png",
+          "status": "artist-profile-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Liminal Dreams x Wigwam event poster screenshot",
+          "url": "assets/posters/wigwam-liminal-dreams-2026-06-20.jpg",
+          "status": "event-poster-screenshot",
           "checked": "2026-06-15"
         }
       ]
@@ -2611,11 +2663,10 @@
         "ambient",
         "outer music",
         "experimental",
-        "Vietnam",
         "Liminal Dreams"
       ],
-      "summary": "Vietnam-linked Liminal Dreams context profile. RA event text places Toss with the Liminal Dreams collective and describes the DJ lane as ambient and outer music.",
-      "sourceNote": "RA supports Toss profile context and a previous Wigwam appearance; the current June 20 Liminal Dreams row remains watch-level because ticketing, price, age policy, and direct platform-visible post state are still unresolved.",
+      "summary": "Liminal Dreams note screenshot says Liminal Dreams member Toss will be present for the June 20 Wigwam edition. Keep the profile centered on event-role and collective context.",
+      "sourceNote": "Local Liminal Dreams/Wigwam screenshots confirm the June 20 role; older RA/profile context remains supplemental.",
       "sources": [
         {
           "label": "RA Voltmar & Toss at Wigwam profile context",
@@ -2627,6 +2678,18 @@
           "label": "Liminal Dreams x Wigwam lineup/time search preview",
           "url": "https://www.instagram.com/p/DZFFVIPE8VW/",
           "status": "social-index-lineup-context",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Liminal Dreams x Wigwam text-note screenshot",
+          "url": "assets/posters/wigwam-liminal-dreams-2026-06-20-notes.png",
+          "status": "artist-profile-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Liminal Dreams x Wigwam event poster screenshot",
+          "url": "assets/posters/wigwam-liminal-dreams-2026-06-20.jpg",
+          "status": "event-poster-screenshot",
           "checked": "2026-06-15"
         }
       ]
@@ -2937,6 +3000,90 @@
           "url": "https://ra.co/events/2455159",
           "status": "trusted-ra",
           "checked": "2026-06-14"
+        }
+      ]
+    },
+    {
+      "slug": "wheon",
+      "name": "wheon",
+      "aliases": [
+        "wheon"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [],
+      "scope": "Wigwam Weekly Listening / deep techno and experimental profile",
+      "imageTheme": "slate",
+      "genres": [
+        "darkness",
+        "tribe",
+        "industrial",
+        "deep techno",
+        "psytrance",
+        "experimental"
+      ],
+      "summary": "Wigwam profile text places wheon near darkness, tribe, industrial, deep techno, psytrance, and experimental borders, with slow-building, upward-moving energy from a deep source.",
+      "sourceNote": "User-provided Wigwam artist profile and event poster screenshots support the June 19 Weekly Listening booking and techno-adjacent sound lane; broader biography remains unverified.",
+      "sources": [
+        {
+          "label": "Wigwam wheon artist profile screenshot",
+          "url": "assets/posters/wigwam-wheon-profile.jpg",
+          "status": "artist-profile-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Wigwam Weekly Listening wheon poster screenshot",
+          "url": "assets/posters/wigwam-weekly-listening-wheon-2026-06-19.jpg",
+          "status": "event-poster-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "SmartShanghai Wigwam venue context",
+          "url": "https://www.smartshanghai.com/venue/31681/wigwam_cafe",
+          "status": "venue-context",
+          "checked": "2026-06-15",
+          "note": "Venue context only; Wigwam screenshots remain the source for wheon's June 19 booking and profile text."
+        }
+      ]
+    },
+    {
+      "slug": "iin",
+      "name": "IIN",
+      "aliases": [
+        "IIN"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [],
+      "scope": "Liminal Dreams / Wigwam Shanghai scene context",
+      "imageTheme": "green",
+      "genres": [
+        "ambient context",
+        "techno context",
+        "experimental context",
+        "Shanghai scene"
+      ],
+      "summary": "Liminal Dreams note screenshot frames IIN as a Shanghai scene figure for the June 20 Wigwam edition, while intentionally leaving detailed biography open. Treat IIN as event-confirmed lineup context rather than an invented artist biography.",
+      "sourceNote": "Use the Liminal Dreams/Wigwam screenshots for event-role context; no standalone public artist source was verified in this pass.",
+      "sources": [
+        {
+          "label": "Liminal Dreams x Wigwam text-note screenshot",
+          "url": "assets/posters/wigwam-liminal-dreams-2026-06-20-notes.png",
+          "status": "artist-profile-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Liminal Dreams x Wigwam event poster screenshot",
+          "url": "assets/posters/wigwam-liminal-dreams-2026-06-20.jpg",
+          "status": "event-poster-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "SmartShanghai Wigwam venue context",
+          "url": "https://www.smartshanghai.com/venue/31681/wigwam_cafe",
+          "status": "venue-context",
+          "checked": "2026-06-15",
+          "note": "Venue context only; Liminal Dreams/Wigwam screenshots remain the source for IIN's June 20 lineup role."
         }
       ]
     }

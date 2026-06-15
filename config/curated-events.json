@@ -1184,7 +1184,7 @@
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-14"
+          "lastChecked": "2026-06-15"
         }
       ],
       "posterUrl": "assets/posters/mrd.png"
@@ -1559,10 +1559,38 @@
     },
     {
       "id": "liminal-dreams",
-      "lastChecked": "2026-06-14",
-      "sourceStatus": "watchlist",
-      "ticketStatus": "SmartShanghai is the fully readable event-level source for the June 20 Wigwam lead. Public search-index previews from Liminal Dreams and Wigwam also point to the series returning at Wigwam, JUNE 20 @liminal_dreams_, a tentative Chingyi / IIN / Rainsoft / Toss lineup, and 20:00-late timing. No Chrome/Instagram visual confirmation, ticket route, door price, or age policy was captured. Keep as Watch.",
+      "lastChecked": "2026-06-15",
+      "sourceStatus": "official-social-evidence",
+      "ticketStatus": "Liminal Dreams event poster confirms 20:00-late and the weekly schedule confirms Free Entry, while the weekly schedule also lists the event under a 22:00-late block. Use 20:00-late as the event-poster time, but verify the exact start before going. No public web ticket URL or age policy was captured.",
       "sources": [
+        {
+          "label": "Liminal Dreams x Wigwam event poster screenshot",
+          "url": "assets/posters/wigwam-liminal-dreams-2026-06-20.jpg",
+          "status": "official-poster-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Confirms title, date, lineup, 20:00-late time, Wigwam address, and Shanghai location."
+        },
+        {
+          "label": "Liminal Dreams x Wigwam text-note screenshot",
+          "url": "assets/posters/wigwam-liminal-dreams-2026-06-20-notes.png",
+          "status": "official-social-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Supports the artist/context description: Chingyi across ambient, drone, techno, downtempo, and uptempo; Rainsoft around deep ambient and techno; IIN as Shanghai scene context; Toss as Liminal Dreams member."
+        },
+        {
+          "label": "Wigwam weekly schedule screenshot 2026-06-15 to 2026-06-22",
+          "url": "assets/posters/wigwam-weekly-2026-06-15-to-06-22.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "User-provided Wigwam weekly schedule screenshot confirms daily timing blocks, free-entry notes, and listed DJs/events for 2026-06-15 through 2026-06-22."
+        },
+        {
+          "label": "Wigwam June 2026 monthly calendar screenshot",
+          "url": "assets/posters/wigwam-june-2026-calendar.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "User-provided Wigwam June calendar screenshot lists the June program and confirms the relevant event dates at Wigwam."
+        },
         {
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
@@ -1598,34 +1626,67 @@
           "verificationNote": "SmartShanghai lists Wigwam at LG-02, B1/F, C PARK, 658 Zhaohua Lu and describes an organic deeper-house, techno, dub, ambient, reggae, and live-electronic lane. Venue context only; not event ticket confirmation."
         }
       ],
-      "description": "Watch-level Wigwam lead for ambient and outer-music listening across Asia. SmartShanghai supports the June 20 Liminal Dreams/Wigwam link, while public social-index previews appear to add Chingyi, IIN, Rainsoft, Toss, and a 20:00-late start. Keep practical details on Watch until the post or ticket route is visually confirmed.",
-      "recommendationReason": "Kept on Watch because SmartShanghai and venue/series social-index previews support the June 20 Wigwam lead, and the public index now gives a tentative lineup/time lead, but door price, ticket route, age policy, and platform-visible post state remain unconfirmed.",
-      "verifyBeforeGoing": "Use platform-native Instagram, XHS, WeChat, Wigwam, or ticketing search to confirm whether Chingyi, IIN, Rainsoft, Toss, the 20:00-late start, room, door price, and age policy are final before sending readers there.",
-      "sourceConfidence": "Watchlist: SmartShanghai is the readable event-level source; Liminal Dreams and Wigwam social-index previews strengthen the lead and expose tentative lineup/time text, but remain unverified social context, not ticket confirmation.",
+      "description": "Liminal Dreams x Wigwam with Chingyi, IIN, Rainsoft, and Toss. The supplied event poster confirms the date, lineup, address, and 20:00-late timing; the weekly schedule confirms free entry but lists the slot as 22:00-late, so readers should verify the exact start.",
+      "recommendationReason": "Recommended because this is a strong listening-to-club crossover: Chingyi, Rainsoft, IIN, and Toss point toward hard ambient, soft textures, melancholy, joy, ambient, drone, techno, and experimental edges rather than a generic club night.",
+      "verifyBeforeGoing": "Confirm final start time with Wigwam or Liminal Dreams: the event poster says 20:00-late, while the weekly schedule lists 22:00-late. Also check age policy and capacity status.",
+      "sourceConfidence": "User-provided Liminal Dreams poster, Wigwam weekly schedule, monthly calendar, and text-note screenshot confirm date, venue/address, lineup, free entry, and sound context. Start time has a source conflict; age policy and public ticket URL remain unavailable.",
       "lineup": [
         {
           "name": "Chingyi",
-          "note": "Public search-index preview for a Liminal Dreams/Wigwam post appears to name Chingyi for the June 20 event; platform-native visual confirmation is still required."
+          "note": "Liminal Dreams note screenshot describes Chingyi across ambient, drone, techno, downtempo, and uptempo, and says this is her third Liminal Dreams appearance."
         },
         {
           "name": "IIN",
-          "note": "Public search-index preview appears to list IIN in the June 20 Liminal Dreams/Wigwam lineup; keep as a lineup lead until the post is visually verified."
+          "note": "Liminal Dreams note screenshot frames IIN as a Shanghai scene figure; keep biography restrained because the post does not provide a detailed public profile."
         },
         {
           "name": "Rainsoft",
-          "note": "Public search-index preview appears to list Rainsoft in the June 20 Liminal Dreams/Wigwam lineup; keep as a lineup lead until the post is visually verified."
+          "note": "Liminal Dreams note screenshot describes Rainsoft as a Shanghai-based musician/DJ drawing from deep ambient and techno, with a restrained and fluid atmosphere."
         },
         {
           "name": "Toss",
-          "note": "Public search-index preview appears to list Toss in the June 20 Liminal Dreams/Wigwam lineup; keep as a lineup lead until the post is visually verified."
+          "note": "Liminal Dreams note screenshot says Liminal Dreams member Toss will also be present for this Wigwam edition."
         }
       ],
-      "time": "20:00-late (social-index lead; verify)",
-      "address": "LG-02, B1/F, C PARK, 658 Zhaohua Lu, near Wuyi Lu, Changning District"
+      "time": "20:00-late",
+      "address": "LG Floor, C.PARK, No. 658 Zhaohua Road, Changning District, Shanghai",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "Free Entry",
+      "age": "Check venue",
+      "source": "assets/posters/wigwam-liminal-dreams-2026-06-20.jpg",
+      "sourceLabel": "Wigwam / Liminal Dreams poster and WeChat screenshots",
+      "posterUrl": "assets/posters/wigwam-liminal-dreams-2026-06-20.jpg",
+      "posterEvidence": {
+        "type": "official-flyer-screenshot",
+        "source": "Wigwam/Liminal Dreams user-provided event poster screenshot",
+        "url": "assets/posters/wigwam-liminal-dreams-2026-06-20.jpg",
+        "status": "Event poster confirms Liminal Dreams x Wigwam, Chingyi, IIN, Rainsoft, Toss, Saturday June 20 2026, 20:00-late, LG Floor C.PARK, No.658 Zhaohua Road, Shanghai. Weekly schedule also lists the event as free entry but shows 22:00-late, so final start time should be checked.",
+        "localFiles": [
+          "assets/posters/wigwam-liminal-dreams-2026-06-20.jpg",
+          "assets/posters/wigwam-liminal-dreams-2026-06-20-notes.png",
+          "assets/posters/wigwam-weekly-2026-06-15-to-06-22.jpg",
+          "assets/posters/wigwam-june-2026-calendar.jpg"
+        ]
+      },
+      "bestFor": "Best for readers who want Wigwam at its ambient, drone, techno, and outer-music edge, with a free-entry format and local-scene focus.",
+      "soundTags": [
+        "ambient",
+        "drone",
+        "techno",
+        "experimental"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "listening/live angle",
+        "lineup visible",
+        "poster confirmed",
+        "free entry"
+      ]
     },
     {
       "id": "botox-fatale",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-15",
       "sourceStatus": "watchlist",
       "ticketStatus": "SmartShanghai is the fully readable event-level source for an Abyss June 26 booking. Public search-index previews of BOTOX FATAL tour content and Abyss's own Instagram program both point toward the Shanghai/Abyss route, with the Abyss snippet surfacing BOTOX FATAL (LIVE) and local support names. Playwright/Chrome public-session checks reached account/search metadata but did not expose event post text; XHS returned a security-limit page and Instagram platform search returned HTTP 429. No ticket route, door price, date card, or set times were confirmed. Keep as Watch.",
       "recommendationReason": "Kept on Watch because SmartShanghai, an artist-side tour index, and an official Abyss social-index route all point toward the June 26 Abyss lead, but practical event details still need a direct Abyss, promoter, RA Shanghai, ticketing, or Chrome-verified social source.",
@@ -1636,7 +1697,7 @@
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-14",
+          "lastChecked": "2026-06-15",
           "verificationNote": "SmartShanghai lists Abyss harder-end June bookings and Botox Fatale on June 26, but the guide does not expose ticket details."
         },
         {
@@ -1687,7 +1748,7 @@
     },
     {
       "id": "anika-kunst",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-15",
       "sourceStatus": "watchlist",
       "ticketStatus": "SmartShanghai lists Anika Kunst at POTENT on June 27, and RA profile/biography sources support her techno, house, and vinyl-led context. A public search-index preview also surfaced an official POTENT June 2026 Instagram post naming @anikakunstmuzik, but the social post still needs platform-native Chrome/Instagram visual verification before it can count as event confirmation. No public POTENT ticket page, door price, or set times were found in this pass. Keep as Watch.",
       "recommendationReason": "Kept on Watch because SmartShanghai names the headliner and support bill and Anika Kunst profile sources fit POTENT's techno/house lane, while POTENT's own social index only provides a verification target until the current Shanghai ticket route and set times are confirmed.",
@@ -1698,7 +1759,7 @@
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-14",
+          "lastChecked": "2026-06-15",
           "verificationNote": "SmartShanghai lists Anika Kunst at POTENT on June 27 with 10000 and DJ EBP support; no ticket price in the guide."
         },
         {
@@ -1749,7 +1810,7 @@
     },
     {
       "id": "hexscape",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-15",
       "sourceStatus": "watchlist",
       "ticketStatus": "SmartShanghai gives the current June 27 EXIT lead and names the A/V live pair plus DJ support. SmartShanghai venue context confirms the EXIT address, but the current event start time, price, ticket route, and age policy remain unpublished or not found in public sources. RA and BYYB/LocalHub rows only support Hexscape/Bi-NON scene context, not current ticketing. Keep as Watch.",
       "sources": [
@@ -1757,7 +1818,7 @@
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-14"
+          "lastChecked": "2026-06-15"
         },
         {
           "label": "SmartShanghai EXIT venue context",
@@ -1823,7 +1884,7 @@
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-14",
+          "lastChecked": "2026-06-15",
           "verificationNote": "SmartShanghai lists June 27 at Fenrir with JAAL The Machine plus Blood of Life, Chimera Cult, and Soulitude."
         },
         {
@@ -1878,7 +1939,7 @@
     },
     {
       "id": "truth-lies",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-15",
       "sourceStatus": "watchlist",
       "ticketStatus": "SmartShanghai is the only event-level source for KNOT: Truth and Lies Vol. 4 on June 27. Prior SmartShanghai KNOT/ILLUM listings confirm the series and venue pattern, while QQBBG and Luu.Qoo profile sources support the hyperpop, trance, and club context; no current ticket page, door price, or set times were found. Keep as Watch.",
       "recommendationReason": "Kept on Watch because SmartShanghai names the current Vol. 4 artists and prior KNOT/ILLUM context supports the series, but the June 27 ticket state and running order still need a direct source.",
@@ -1889,7 +1950,7 @@
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-14",
+          "lastChecked": "2026-06-15",
           "verificationNote": "SmartShanghai lists June 27 at ILLUM with KNOT Truth and Lies Vol. 4, QQBBG, Liu Qoo, and hyperpop/trance/techno framing."
         },
         {
@@ -1936,7 +1997,7 @@
     },
     {
       "id": "devils-dancers",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-15",
       "sourceStatus": "watchlist",
       "ticketStatus": "SmartShanghai is the current June 26 event-level lead, and SmartShanghai venue context confirms the Specters address. No same-day Specters, ticketing, or promoter detail page was found for the current lineup, start time, price, ticket route, or age policy. Prior SmartShanghai and BYYB/LocalHub rows support The Devil's Dancers as a recurring Specters/Velvet Robot dark-dance series; keep the June 26 item as Watch until those current details are direct-confirmed.",
       "sources": [
@@ -1944,7 +2005,7 @@
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-14"
+          "lastChecked": "2026-06-15"
         },
         {
           "label": "SmartShanghai Specters venue context",
@@ -1984,12 +2045,12 @@
     },
     {
       "id": "youshan-warmup",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-15",
       "sourceStatus": "watchlist",
-      "ticketStatus": "SmartShanghai is still the only fully readable event-level source for the June 27 Wigwam warmup and says the lineup is TBA. RA confirms YOUSHAN FESTIVAL 2026 itself at Secret Forest, Chongli on July 17-19 with techno/house genres, full lineup, Showstart ticket link, 199-599 RMB cost, and 18+ age rule. Public Instagram search-index previews from Wigwam and jay_sarayu point toward a June 27 Youshan Festival Pre Party at Wigwam and appear to name Sarayu b2b Elaheh, but neither exposes an official post body, ticket route, start time, or full lineup in a browser-verified view. Keep as Watch.",
-      "recommendationReason": "Kept on Watch because the main YOUSHAN festival is source-backed on RA, Wigwam venue context is source-backed, and two public social-index routes point to the June 27 pre-party, but the Shanghai warmup still lacks official lineup, ticket, and time confirmation.",
-      "verifyBeforeGoing": "Wait for Wigwam or YOUSHAN to publish the June 27 warmup lineup, start time, and ticket route; do not use the main festival RA ticket page as warmup confirmation.",
-      "sourceConfidence": "Watchlist: SmartShanghai confirms the warmup lead; Wigwam and artist-side social-index text point to the pre-party route and tentative Sarayu b2b Elaheh support; RA confirms the main festival context, not the Shanghai warmup.",
+      "ticketStatus": "Wigwam June calendar screenshot confirms a June 27 YOUSHAN 2026 warmup / Shanghai stop at Wigwam and marks it as Ticket. Start time, price tier, direct ticket route, age policy, and full lineup are not visible in the supplied Wigwam screenshot; keep this as Watch.",
+      "recommendationReason": "Kept on Watch because the Wigwam monthly calendar now confirms the June 27 YOUSHAN warmup and ticketed status, while the main YOUSHAN festival is RA-backed; the Shanghai warmup still lacks visible start time, ticket route, price, and official full lineup.",
+      "verifyBeforeGoing": "Wait for Wigwam or YOUSHAN to publish the June 27 warmup start time, ticket route, price tier, age policy, and full lineup before recommending it as a firm pick.",
+      "sourceConfidence": "Wigwam monthly calendar screenshot confirms the warmup date and ticketed status. SmartShanghai and social-index leads support the route, but current-event practical details remain incomplete.",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
@@ -2026,6 +2087,13 @@
           "status": "venue-context",
           "lastChecked": "2026-06-14",
           "verificationNote": "SmartShanghai lists Wigwam at LG-02, B1/F, C PARK, 658 Zhaohua Lu and describes an organic deeper-house, techno, dub, ambient, reggae, and live-electronic lane. Venue context only; not warmup ticket confirmation."
+        },
+        {
+          "label": "Wigwam June 2026 monthly calendar screenshot",
+          "url": "assets/posters/wigwam-june-2026-calendar.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Wigwam June calendar screenshot lists June 27 as YOUSHAN 2026 warmup / Shanghai stop at Wigwam and marks it as Ticket; it does not expose time, price, ticket route, age policy, or full lineup."
         }
       ],
       "address": "LG-02, B1/F, C PARK, 658 Zhaohua Lu, near Wuyi Lu, Changning District",
@@ -2038,7 +2106,8 @@
           "name": "Elaheh",
           "note": "Public jay_sarayu search-index preview appears to reference a b2b with Elaheh for the June 27 Wigwam pre-party; keep as a lineup lead until the post is visually verified."
         }
-      ]
+      ],
+      "price": "Ticketed; price not visible"
     },
     {
       "id": "shanghai-mushroom-music-carnival-2026",
@@ -3280,18 +3349,18 @@
       "genre": "club, electronic",
       "confidence": "Medium",
       "status": "upcoming",
-      "price": "Check RA / venue",
+      "price": "Free Entry",
       "age": "Check venue",
       "source": "https://ra.co/events/2455159",
-      "sourceLabel": "Resident Advisor",
+      "sourceLabel": "Resident Advisor + Wigwam schedule screenshots",
       "imageTheme": "cyan",
       "description": "MENSLIES presents FRIENDSSTANDout at Wigwam with Tsing, 10000, YKK, Taidi, and DJ TRUCK. RA confirms date, room, promoter, lineup, and flyer.",
-      "sourceStatus": "trusted-ra",
+      "sourceStatus": "trusted-ra-plus-wigwam-schedule",
       "address": "LG floor, C-PARK, No.658 Zhaohua Road, Shanghai",
       "organizer": "MENSLIES",
       "detailsUrl": "https://ra.co/events/2455159",
       "ticketUrl": "https://ra.co/events/2455159",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-15",
       "lineup": [
         {
           "name": "Tsing",
@@ -3314,17 +3383,31 @@
           "note": "RA lists DJ TRUCK on the FRIENDSSTANDout lineup."
         }
       ],
-      "ticketStatus": "RA does not expose price or age in the indexed text; verify through RA/Wigwam before going.",
-      "recommendationReason": "Included for complete RA coverage and Wigwam/MENSLIES tracking; promising club context but practical ticket details remain thin.",
-      "bestFor": "Readers following Wigwam, MENSLIES, and local club-lineup context.",
-      "verifyBeforeGoing": "Confirm price, age policy, and same-day door state through RA or Wigwam before going.",
-      "sourceConfidence": "RA coverage: date, time, venue, promoter, lineup, and flyer are visible on Resident Advisor; price and age need confirmation. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
+      "ticketStatus": "RA confirms date, 21:00-03:00 timing, venue, promoter, lineup, and flyer. Wigwam weekly schedule confirms the same June 21 FRIENDSSTAND Out listing as 21:00-late and Free Entry. Age policy remains unchecked.",
+      "recommendationReason": "Included because FRIENDSSTANDout has RA event-level confirmation and Wigwam schedule confirmation, with Tsing, DJ TRUCK, YKK, Taidi, and 10000 making it a practical free-entry local club route.",
+      "bestFor": "Best for readers following Wigwam, MENSLIES, and local club-lineup context who want a free-entry Sunday night.",
+      "verifyBeforeGoing": "Confirm age policy and same-day room status through RA or Wigwam before going; the latest Wigwam schedule lists free entry.",
+      "sourceConfidence": "RA confirms date, time, venue, promoter, lineup, and flyer; Wigwam weekly and monthly screenshots confirm the local schedule slot and free-entry status. Age policy still needs venue confirmation.",
       "sources": [
         {
           "label": "Resident Advisor",
           "url": "https://ra.co/events/2455159",
           "status": "trusted-ra",
           "lastChecked": "2026-06-14"
+        },
+        {
+          "label": "Wigwam weekly schedule screenshot 2026-06-15 to 2026-06-22",
+          "url": "assets/posters/wigwam-weekly-2026-06-15-to-06-22.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "User-provided Wigwam weekly schedule screenshot confirms daily timing blocks, free-entry notes, and listed DJs/events for 2026-06-15 through 2026-06-22."
+        },
+        {
+          "label": "Wigwam June 2026 monthly calendar screenshot",
+          "url": "assets/posters/wigwam-june-2026-calendar.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "User-provided Wigwam June calendar screenshot lists the June program and confirms the relevant event dates at Wigwam."
         }
       ],
       "posterUrl": "assets/posters/friendsstandout.jpg",
@@ -4513,6 +4596,13 @@
           "status": "official-wechat-screenshot",
           "lastChecked": "2026-06-15",
           "verificationNote": "Describes LONG WAVE as a Dragon Boat Festival opening with pure house rhythm and the listed lineup."
+        },
+        {
+          "label": "SmartShanghai Heim venue context",
+          "url": "https://www.smartshanghai.com/venue/25427/heim",
+          "status": "venue-context",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Venue context only: supports Heim's public venue identity and location context, but does not confirm LONG WAVE ticketing, price, age policy, or running order."
         }
       ],
       "recommendationReason": "Included because LONG WAVE gives Heim a lighter house-focused Thursday route with Golgol, SpaceReturn, Sam Tbd, and Xiaolaba, useful for a looser pre-weekend club plan rather than a hard-techno night.",
@@ -4623,6 +4713,13 @@
           "status": "official-wechat-screenshot",
           "lastChecked": "2026-06-15",
           "verificationNote": "Describes Earworthy as a cross-region music curation project and supports the Heim Shanghai date."
+        },
+        {
+          "label": "SmartShanghai Heim venue context",
+          "url": "https://www.smartshanghai.com/venue/25427/heim",
+          "status": "venue-context",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Venue context only: supports Heim's public venue identity and location context, but does not confirm Earworthy ticketing, price, age policy, or final TBA lineup."
         }
       ],
       "recommendationReason": "Included as a listening and selector-culture route at Heim: the 16:00-02:00 window and cross-region lineup make it useful for early-evening-to-late discovery, not a hard-rave recommendation.",
@@ -4722,6 +4819,13 @@
           "status": "official-wechat-screenshot",
           "lastChecked": "2026-06-15",
           "verificationNote": "Describes DINA and the support bill; supports ambient, bass-heavy, and trance-adjacent positioning."
+        },
+        {
+          "label": "SmartShanghai Heim venue context",
+          "url": "https://www.smartshanghai.com/venue/25427/heim",
+          "status": "venue-context",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Venue context only: supports Heim's public venue identity and location context, but the Yuyuan screenshot remains the event-level ticketing evidence."
         }
       ],
       "recommendationReason": "Included because DINA gives Heim a spacious but club-forward Friday route: ambient pressure, heavy bass, and trance color, with Huizit, Kilo-Vee, and HeShang adding local support.",
@@ -4818,6 +4922,13 @@
           "status": "official-wechat-screenshot",
           "lastChecked": "2026-06-15",
           "verificationNote": "Describes Roto leading the DiscChef anniversary and frames the night around EBM, electro, trance, house, and multi-genre club energy."
+        },
+        {
+          "label": "SmartShanghai Heim venue context",
+          "url": "https://www.smartshanghai.com/venue/25427/heim",
+          "status": "venue-context",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Venue context only: supports Heim's public venue identity and location context, but the Yuyuan screenshot remains the event-level ticketing evidence."
         }
       ],
       "recommendationReason": "Included because Roto with 2Difficult and BIANBIAN points to EBM, electro, trance, and house crossover at Heim, a more dance-floor-specific reason to go than the anniversary label alone.",
@@ -4835,6 +4946,310 @@
         "lineup visible",
         "poster confirmed",
         "ticket screenshot",
+        "late room"
+      ]
+    },
+    {
+      "id": "wigwam-weekly-listening-golgol",
+      "month": "Jun",
+      "sortDate": "2026-06-16",
+      "date": "Jun 16",
+      "time": "22:00-late",
+      "title": "Weekly Listening: Golgol",
+      "venue": "Wigwam",
+      "district": "Changning",
+      "vibe": [
+        "listening",
+        "underground"
+      ],
+      "genre": "electronic listening, textured synth, low-frequency club",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "Free Entry",
+      "age": "Check venue",
+      "source": "assets/posters/wigwam-weekly-listening-golgol-2026-06-16.jpg",
+      "sourceLabel": "Wigwam WeChat / poster screenshots",
+      "imageTheme": "green",
+      "description": "Wigwam Weekly Listening slot with Golgol: a free-entry Tuesday listening route around textured electronics, low-frequency phrasing, and a softer club-room pace.",
+      "kind": "event",
+      "sourceStatus": "official-social-evidence",
+      "address": "LG Floor, C.PARK, No. 658 Zhaohua Road, Changning District, Shanghai",
+      "organizer": "Wigwam",
+      "lastChecked": "2026-06-15",
+      "posterUrl": "assets/posters/wigwam-weekly-listening-golgol-2026-06-16.jpg",
+      "posterEvidence": {
+        "type": "official-flyer-screenshot",
+        "source": "Wigwam WeChat/user-provided event poster screenshot",
+        "url": "assets/posters/wigwam-weekly-listening-golgol-2026-06-16.jpg",
+        "status": "Event poster confirms Weekly Listening: Golgol, 2026-06-16, Wigwam, free entry, and the C.PARK / Zhaohua Road location. Weekly schedule screenshot confirms the 22:00-late listening slot.",
+        "localFiles": [
+          "assets/posters/wigwam-weekly-listening-golgol-2026-06-16.jpg",
+          "assets/posters/wigwam-weekly-2026-06-15-to-06-22.jpg",
+          "assets/posters/wigwam-june-2026-calendar.jpg",
+          "assets/posters/wigwam-golgol-profile.jpg"
+        ]
+      },
+      "ticketStatus": "Wigwam event poster and weekly schedule screenshots confirm Free Entry and 22:00-late timing for Golgol. No public web ticket URL or age policy was captured; check Wigwam same-day if the room is capacity-controlled.",
+      "lineup": [
+        {
+          "name": "Golgol",
+          "note": "Wigwam artist-profile screenshot frames Golgol around stable sound, old electronic texture, rough structure, tactile synth lines, emotion, and low-frequency phrasing."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Weekly Listening Golgol poster screenshot",
+          "url": "assets/posters/wigwam-weekly-listening-golgol-2026-06-16.jpg",
+          "status": "official-poster-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Confirms the 2026-06-16 Weekly Listening booking, free entry, Wigwam branding, and C.PARK / Zhaohua Road location."
+        },
+        {
+          "label": "Wigwam weekly schedule screenshot 2026-06-15 to 2026-06-22",
+          "url": "assets/posters/wigwam-weekly-2026-06-15-to-06-22.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "User-provided Wigwam weekly schedule screenshot confirms daily timing blocks, free-entry notes, and listed DJs/events for 2026-06-15 through 2026-06-22."
+        },
+        {
+          "label": "Wigwam June 2026 monthly calendar screenshot",
+          "url": "assets/posters/wigwam-june-2026-calendar.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "User-provided Wigwam June calendar screenshot lists the June program and confirms the relevant event dates at Wigwam."
+        },
+        {
+          "label": "Golgol Wigwam artist profile screenshot",
+          "url": "assets/posters/wigwam-golgol-profile.jpg",
+          "status": "artist-profile-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Wigwam artist-profile screenshot frames Golgol around stable sound, old electronic texture, rough structure, tactile synth lines, emotion, and low-frequency phrasing."
+        },
+        {
+          "label": "SmartShanghai Wigwam venue context",
+          "url": "https://www.smartshanghai.com/venue/31681/wigwam_cafe",
+          "status": "venue-context",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "SmartShanghai venue context supports Wigwam / C.PARK location and broad deeper-house, techno, dub, ambient, reggae, and live-electronic lane. Venue context only."
+        }
+      ],
+      "recommendationReason": "Included because Golgol gives Wigwam a source-backed listening-room route: textured electronic phrasing and low-frequency detail, useful for readers who want a calm but still club-aware midweek session.",
+      "bestFor": "Best for readers who want a free-entry listening night rather than a peak-time rave.",
+      "verifyBeforeGoing": "Check Wigwam before going for age policy, room/capacity status, and any late schedule change; no public ticket URL is attached because the event is listed as free entry.",
+      "sourceConfidence": "User-provided Wigwam poster and weekly schedule screenshots confirm the event-level date, time, venue/address, free-entry status, and named DJ. Age policy and live room capacity remain unchecked.",
+      "soundTags": [
+        "electronic",
+        "low-frequency",
+        "listening"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "listening/live angle",
+        "lineup visible",
+        "poster confirmed",
+        "free entry"
+      ]
+    },
+    {
+      "id": "wigwam-weekly-listening-xiaolaba",
+      "month": "Jun",
+      "sortDate": "2026-06-17",
+      "date": "Jun 17",
+      "time": "22:00-late",
+      "title": "Weekly Listening: Xiaolaba / 小喇叭",
+      "venue": "Wigwam",
+      "district": "Changning",
+      "vibe": [
+        "listening",
+        "underground"
+      ],
+      "genre": "electronic listening, local DJ context",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "Free Entry",
+      "age": "Check venue",
+      "source": "assets/posters/wigwam-weekly-listening-xiaolaba-2026-06-17.jpg",
+      "sourceLabel": "Wigwam WeChat / poster screenshots",
+      "imageTheme": "green",
+      "description": "Free-entry Wigwam Weekly Listening entry for Xiaolaba / 小喇叭. The source confirms the date, venue, address, and free entry, while the artist lane should stay lightly described until stronger profile sources are available.",
+      "kind": "event",
+      "sourceStatus": "official-social-evidence",
+      "address": "LG Floor, C.PARK, No. 658 Zhaohua Road, Changning District, Shanghai",
+      "organizer": "Wigwam",
+      "lastChecked": "2026-06-15",
+      "posterUrl": "assets/posters/wigwam-weekly-listening-xiaolaba-2026-06-17.jpg",
+      "posterEvidence": {
+        "type": "official-flyer-screenshot",
+        "source": "Wigwam WeChat/user-provided event poster screenshot",
+        "url": "assets/posters/wigwam-weekly-listening-xiaolaba-2026-06-17.jpg",
+        "status": "Event poster confirms Weekly Listening: Xiaolaba / 小喇叭, 2026-06-17, Wigwam, free entry, and the C.PARK / Zhaohua Road location. Weekly schedule screenshot confirms the 22:00-late listening slot.",
+        "localFiles": [
+          "assets/posters/wigwam-weekly-listening-xiaolaba-2026-06-17.jpg",
+          "assets/posters/wigwam-weekly-2026-06-15-to-06-22.jpg",
+          "assets/posters/wigwam-june-2026-calendar.jpg",
+          "assets/posters/wigwam-xiaolaba-profile.jpg"
+        ]
+      },
+      "ticketStatus": "Wigwam event poster and weekly schedule screenshots confirm Free Entry and 22:00-late timing for Xiaolaba / 小喇叭. No public web ticket URL or age policy was captured; check Wigwam same-day if the room is capacity-controlled.",
+      "lineup": [
+        {
+          "name": "Xiaolaba",
+          "note": "Wigwam artist-profile screenshot names Xiaolaba / 小喇叭 and the phrase Just Live for You for One Day; it supports the event identity but does not add a detailed public genre biography."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Weekly Listening Xiaolaba / 小喇叭 poster screenshot",
+          "url": "assets/posters/wigwam-weekly-listening-xiaolaba-2026-06-17.jpg",
+          "status": "official-poster-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Confirms the 2026-06-17 Weekly Listening booking, free entry, Wigwam branding, and C.PARK / Zhaohua Road location."
+        },
+        {
+          "label": "Wigwam weekly schedule screenshot 2026-06-15 to 2026-06-22",
+          "url": "assets/posters/wigwam-weekly-2026-06-15-to-06-22.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "User-provided Wigwam weekly schedule screenshot confirms daily timing blocks, free-entry notes, and listed DJs/events for 2026-06-15 through 2026-06-22."
+        },
+        {
+          "label": "Wigwam June 2026 monthly calendar screenshot",
+          "url": "assets/posters/wigwam-june-2026-calendar.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "User-provided Wigwam June calendar screenshot lists the June program and confirms the relevant event dates at Wigwam."
+        },
+        {
+          "label": "Xiaolaba / 小喇叭 Wigwam artist profile screenshot",
+          "url": "assets/posters/wigwam-xiaolaba-profile.jpg",
+          "status": "artist-profile-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Wigwam artist-profile screenshot names Xiaolaba / Xiao Laba and the phrase Just Live for You for One Day; it supports the event identity but does not add a detailed public genre biography."
+        },
+        {
+          "label": "SmartShanghai Wigwam venue context",
+          "url": "https://www.smartshanghai.com/venue/31681/wigwam_cafe",
+          "status": "venue-context",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "SmartShanghai venue context supports Wigwam / C.PARK location and broad deeper-house, techno, dub, ambient, reggae, and live-electronic lane. Venue context only."
+        }
+      ],
+      "recommendationReason": "Included as a local Wigwam listening slot with a confirmed free-entry poster and a named DJ; useful for scene-followers tracking low-pressure midweek programming.",
+      "bestFor": "Best for readers who follow local DJ appearances and want a no-ticket midweek Wigwam route.",
+      "verifyBeforeGoing": "Check Wigwam before going for age policy, room/capacity status, and any late schedule change; no public ticket URL is attached because the event is listed as free entry.",
+      "sourceConfidence": "User-provided Wigwam poster and weekly schedule screenshots confirm the event-level date, time, venue/address, free-entry status, and named DJ. Age policy and live room capacity remain unchecked.",
+      "soundTags": [
+        "listening",
+        "local-dj",
+        "club"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "lineup visible",
+        "poster confirmed",
+        "free entry",
+        "profile limited"
+      ]
+    },
+    {
+      "id": "wigwam-weekly-listening-wheon",
+      "month": "Jun",
+      "sortDate": "2026-06-19",
+      "date": "Jun 19",
+      "time": "22:00-late",
+      "title": "Weekly Listening: wheon",
+      "venue": "Wigwam",
+      "district": "Changning",
+      "vibe": [
+        "listening",
+        "underground"
+      ],
+      "genre": "deep techno, industrial, psytrance, experimental",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "Free Entry",
+      "age": "Check venue",
+      "source": "assets/posters/wigwam-weekly-listening-wheon-2026-06-19.jpg",
+      "sourceLabel": "Wigwam WeChat / poster screenshots",
+      "imageTheme": "green",
+      "description": "Free-entry Friday Weekly Listening at Wigwam with wheon, whose Wigwam profile points toward darkness, tribal pressure, industrial edges, deep techno, psytrance, and experimental motion.",
+      "kind": "event",
+      "sourceStatus": "official-social-evidence",
+      "address": "LG Floor, C.PARK, No. 658 Zhaohua Road, Changning District, Shanghai",
+      "organizer": "Wigwam",
+      "lastChecked": "2026-06-15",
+      "posterUrl": "assets/posters/wigwam-weekly-listening-wheon-2026-06-19.jpg",
+      "posterEvidence": {
+        "type": "official-flyer-screenshot",
+        "source": "Wigwam WeChat/user-provided event poster screenshot",
+        "url": "assets/posters/wigwam-weekly-listening-wheon-2026-06-19.jpg",
+        "status": "Event poster confirms Weekly Listening: wheon, 2026-06-19, Wigwam, free entry, and the C.PARK / Zhaohua Road location. Weekly schedule screenshot confirms the 22:00-late listening slot.",
+        "localFiles": [
+          "assets/posters/wigwam-weekly-listening-wheon-2026-06-19.jpg",
+          "assets/posters/wigwam-weekly-2026-06-15-to-06-22.jpg",
+          "assets/posters/wigwam-june-2026-calendar.jpg",
+          "assets/posters/wigwam-wheon-profile.jpg"
+        ]
+      },
+      "ticketStatus": "Wigwam event poster and weekly schedule screenshots confirm Free Entry and 22:00-late timing for wheon. No public web ticket URL or age policy was captured; check Wigwam same-day if the room is capacity-controlled.",
+      "lineup": [
+        {
+          "name": "wheon",
+          "note": "Wigwam artist-profile screenshot places wheon near darkness, tribe, industrial, deep techno, psytrance, and experimental borders."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Weekly Listening wheon poster screenshot",
+          "url": "assets/posters/wigwam-weekly-listening-wheon-2026-06-19.jpg",
+          "status": "official-poster-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Confirms the 2026-06-19 Weekly Listening booking, free entry, Wigwam branding, and C.PARK / Zhaohua Road location."
+        },
+        {
+          "label": "Wigwam weekly schedule screenshot 2026-06-15 to 2026-06-22",
+          "url": "assets/posters/wigwam-weekly-2026-06-15-to-06-22.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "User-provided Wigwam weekly schedule screenshot confirms daily timing blocks, free-entry notes, and listed DJs/events for 2026-06-15 through 2026-06-22."
+        },
+        {
+          "label": "Wigwam June 2026 monthly calendar screenshot",
+          "url": "assets/posters/wigwam-june-2026-calendar.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "User-provided Wigwam June calendar screenshot lists the June program and confirms the relevant event dates at Wigwam."
+        },
+        {
+          "label": "wheon Wigwam artist profile screenshot",
+          "url": "assets/posters/wigwam-wheon-profile.jpg",
+          "status": "artist-profile-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Wigwam artist-profile screenshot places wheon near darkness, tribe, industrial, deep techno, psytrance, and experimental borders."
+        },
+        {
+          "label": "SmartShanghai Wigwam venue context",
+          "url": "https://www.smartshanghai.com/venue/31681/wigwam_cafe",
+          "status": "venue-context",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "SmartShanghai venue context supports Wigwam / C.PARK location and broad deeper-house, techno, dub, ambient, reggae, and live-electronic lane. Venue context only."
+        }
+      ],
+      "recommendationReason": "Recommended because wheon is the strongest techno-adjacent Weekly Listening pick in this batch: the profile text points to deep techno, industrial, psytrance, tribal pressure, and experimental edges in a free-entry Wigwam room.",
+      "bestFor": "Best for listeners who want a darker listening-room entry point before committing to a heavier club night.",
+      "verifyBeforeGoing": "Check Wigwam before going for age policy, room/capacity status, and any late schedule change; no public ticket URL is attached because the event is listed as free entry.",
+      "sourceConfidence": "User-provided Wigwam poster and weekly schedule screenshots confirm the event-level date, time, venue/address, free-entry status, and named DJ. Age policy and live room capacity remain unchecked.",
+      "soundTags": [
+        "deep-techno",
+        "industrial",
+        "psytrance",
+        "experimental"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "lineup visible",
+        "poster confirmed",
+        "free entry",
         "late room"
       ]
     }

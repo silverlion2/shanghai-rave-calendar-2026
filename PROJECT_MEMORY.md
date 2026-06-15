@@ -1452,6 +1452,41 @@ Evidence rule:
 
 - Ticketing homepage images are acceptable evidence when they visibly name the event and practical facts. For poster wall display, crop away lower ticketing UI and use only the upper cover image. Do not invent a direct `ticketUrl` from screenshots; keep ticket URL and age policy as explicit gaps when only the image is available.
 
+## 2026-06-15 Wigwam User Evidence Ingest
+
+The user supplied Wigwam images from poster/WeChat-like context. Updated state:
+
+- Added `wigwam-weekly-listening-golgol` for Jun 16 at Wigwam, 22:00-late, Free Entry, with event poster, weekly schedule, monthly calendar, Golgol profile slide, and venue context.
+- Added `wigwam-weekly-listening-xiaolaba` for Jun 17 at Wigwam, 22:00-late, Free Entry, with event poster, weekly schedule, monthly calendar, Xiaolaba profile slide, and venue context.
+- Added `wigwam-weekly-listening-wheon` for Jun 19 at Wigwam, 22:00-late, Free Entry, with event poster, weekly schedule, monthly calendar, wheon profile slide, and venue context.
+- Updated `liminal-dreams` into a stronger upcoming entry with poster, note screenshot, free-entry context, and lineup Chingyi / IIN / Rainsoft / Toss. Keep the start-time conflict visible: poster says 20:00-late, weekly schedule says 22:00-late.
+- Updated `friendsstandout` with Wigwam schedule evidence for Free Entry and 21:00-late, while preserving Resident Advisor as the strongest event source.
+- Updated `youshan-warmup` with the Wigwam June calendar as evidence that Jun 27 is a ticketed YOUSHAN 2026 warmup / Shanghai stop; it remains Watch because time, price, ticket URL, age policy, and full lineup are not visible.
+- Enriched DJ profiles for Golgol, Xiaolaba, wheon, Chingyi, Rainsoft, IIN, and Toss using only screenshot-backed claims and profile-level caveats.
+
+Poster handling:
+
+- Event-specific Wigwam posters are the public poster-wall display images after `npm run posters:prepare`.
+- Monthly calendar, weekly schedule, artist profile slides, and Liminal note screenshot are source/evidence files unless there is no better event-specific poster.
+- Do not add monthly-only Wigwam leads as firm listings until an event-specific poster/source or enough core fields are visible.
+
+Open Wigwam leads for next pass:
+
+- Jun 24 `Mama River by Heim`
+- Jun 25 `DUANLUOO`
+- Jun 26 unclear row, likely `迷猪`
+- Jun 28 `Call A Taxi`
+
+Workflow lesson:
+
+- The strict `audit-rave-site.mjs` requires at least one HTTP source URL for every event and DJ profile. Local screenshot paths are valid evidence for event facts but do not satisfy that audit rule. Add a clearly labeled context-only HTTP source such as SmartShanghai venue context when the actual event source is a local screenshot, and state that it is not event confirmation.
+
+Validation:
+
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json`: 0 must-fix, 0 should-fix.
+- `node scripts/check.js`: passed.
+- `npm run check`: passed with 70 tests.
+
 ## 2026-06-14 Core Gap Marking Pass
 
 The user clarified the handling rule: if a core field cannot be found, mark it clearly because the organizer may not have published it yet, then recheck next time.

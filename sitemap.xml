@@ -403,8 +403,20 @@
     <priority>0.45</priority>
   </url>
   <url>
+    <loc>https://raveindexsh.top/events/wigwam-weekly-listening-golgol</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://raveindexsh.top/events/bloom-season-1-grand-final</loc>
     <lastmod>2026-06-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://raveindexsh.top/events/wigwam-weekly-listening-xiaolaba</loc>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
@@ -457,6 +469,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://raveindexsh.top/events/wigwam-weekly-listening-wheon</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://raveindexsh.top/events/atm-leo-monira</loc>
     <lastmod>2026-06-14</lastmod>
     <changefreq>daily</changefreq>
@@ -465,6 +483,12 @@
   <url>
     <loc>https://raveindexsh.top/events/enchanted-night-the-nest</loc>
     <lastmod>2026-06-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://raveindexsh.top/events/liminal-dreams</loc>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
@@ -482,7 +506,7 @@
   </url>
   <url>
     <loc>https://raveindexsh.top/events/friendsstandout</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
