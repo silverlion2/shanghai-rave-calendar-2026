@@ -1,0 +1,821 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-06-16",
+  "timezone": "Asia/Shanghai",
+  "scope": "Venue and promoter promotion-platform network for Shanghai Rave Index scraping.",
+  "purpose": "Scrape Resident Advisor first, then venue/promoter-owned promotion routes before generic discovery. Use this file to decide which platform-native searches to run for each known venue or organizer.",
+  "scrapeOrder": [
+    "Resident Advisor Shanghai city/date listings and event pages when reachable or browser-visible",
+    "Known venue/promoter promotion networks: WeChat, XHS, ticketing mini-programs, official account posts, and clean poster posts",
+    "Known ticketing routes such as Yuyuan WeChat mini-program, ShowStart, SmartShanghai ticket pages, Damai, PiaoPlanet, and 247tickets",
+    "SmartShanghai event pages and venue-context pages",
+    "Public social/index snippets as leads only",
+    "Generic keyword discovery after the entity network pass"
+  ],
+  "antiScrapePolicy": {
+    "platformNativeSearchFirst": true,
+    "xhs": "Use Xiaohongshu native search for venue, promoter, event title, date, and lineup terms. Stop on login/security-limit pages and ask the user for login-assisted viewing only if XHS/WeChat access is necessary.",
+    "wechat": "Use official-account search, article search, or user-provided account/article routes first. Stop immediately on Sogou captcha, abnormal-access, or verification pages.",
+    "ticketing": "Use visible ticketing pages or user-provided mini-program screenshots. Do not invent public ticketUrl values for app-only routes.",
+    "instagram": "Public/index-only. Do not ask for Instagram login; keep Instagram-only evidence as social-lead until confirmed elsewhere.",
+    "deepLinks": "Do not bulk probe guessed social URLs. Known URLs should be opened only after platform-native search or when already stored as source evidence."
+  },
+  "entities": [
+    {
+      "id": "heim-shanghai",
+      "type": "venue",
+      "name": "Heim Shanghai",
+      "aliases": ["Heim", "Heim Sauna", "M101 Heim", "Green Station Heim"],
+      "venueMatches": ["Heim", "Heim Shanghai", "Heim Sauna"],
+      "priority": 1,
+      "evidenceBasis": "User-supplied Heim WeChat, XHS/article, monthly-program, and Yuyuan ticketing screenshots were ingested on 2026-06-16.",
+      "platforms": [
+        {
+          "platform": "Resident Advisor",
+          "route": "city-listing-search",
+          "query": "Heim Shanghai",
+          "priority": 1,
+          "trustRole": "event-confirmation",
+          "access": "browser-required",
+          "scrapePolicy": "ra-visible-listing-first"
+        },
+        {
+          "platform": "WeChat",
+          "route": "official-account-search",
+          "query": "Heim Shanghai",
+          "priority": 1,
+          "trustRole": "official-event-announcement",
+          "access": "browser-required",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Xiaohongshu / XHS",
+          "route": "platform-native-search",
+          "query": "Heim Shanghai 电子音乐",
+          "priority": 1,
+          "trustRole": "poster-and-official-social",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Yuyuan WeChat mini-program",
+          "route": "mini-program-venue-search",
+          "query": "Heim",
+          "priority": 1,
+          "trustRole": "ticketing-and-poster-source",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "mini-program-search-first"
+        },
+        {
+          "platform": "SmartShanghai",
+          "route": "venue-context",
+          "url": "https://www.smartshanghai.com/venue/25427/heim",
+          "query": "Heim Shanghai SmartShanghai",
+          "priority": 3,
+          "trustRole": "venue-context",
+          "access": "public",
+          "scrapePolicy": "context-only"
+        },
+        {
+          "platform": "SmartShanghai",
+          "route": "venue-context",
+          "url": "https://www.smartshanghai.com/venue/34378/green_station",
+          "query": "Green Station Heim Shanghai SmartShanghai",
+          "priority": 3,
+          "trustRole": "venue-context",
+          "access": "public",
+          "scrapePolicy": "context-only"
+        }
+      ]
+    },
+    {
+      "id": "wigwam",
+      "type": "venue",
+      "name": "Wigwam",
+      "aliases": ["Wigwam Shanghai", "Wigwam Cafe", "wigwam"],
+      "venueMatches": ["Wigwam"],
+      "priority": 1,
+      "evidenceBasis": "User-supplied Wigwam monthly calendar, weekly schedules, posters, and artist profile slides were ingested on 2026-06-16.",
+      "platforms": [
+        {
+          "platform": "WeChat",
+          "route": "official-account-search",
+          "query": "Wigwam Shanghai",
+          "priority": 1,
+          "trustRole": "official-event-announcement",
+          "access": "browser-required",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Xiaohongshu / XHS",
+          "route": "platform-native-search",
+          "query": "Wigwam 上海 电子音乐",
+          "priority": 1,
+          "trustRole": "poster-and-official-social",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "SmartShanghai",
+          "route": "venue-context",
+          "url": "https://www.smartshanghai.com/venue/31681/wigwam_cafe",
+          "query": "Wigwam Cafe SmartShanghai",
+          "priority": 3,
+          "trustRole": "venue-context",
+          "access": "public",
+          "scrapePolicy": "context-only"
+        },
+        {
+          "platform": "Instagram public index",
+          "route": "public-profile-search",
+          "query": "Wigwam Shanghai June program",
+          "priority": 4,
+          "trustRole": "social-lead",
+          "access": "public-index-only",
+          "scrapePolicy": "no-login"
+        }
+      ]
+    },
+    {
+      "id": "abyss-shanghai",
+      "type": "venue",
+      "name": "Abyss Shanghai",
+      "aliases": ["Abyss", "Abyss club", "Abyss Shanghai club"],
+      "venueMatches": ["Abyss", "Abyss Shanghai", "Abyss club"],
+      "priority": 1,
+      "evidenceBasis": "User-supplied Abyss June program and Yuyuan ticketing screenshots were ingested on 2026-06-16.",
+      "platforms": [
+        {
+          "platform": "Resident Advisor",
+          "route": "city-listing-search",
+          "query": "Abyss Shanghai",
+          "priority": 1,
+          "trustRole": "event-confirmation",
+          "access": "browser-required",
+          "scrapePolicy": "ra-visible-listing-first"
+        },
+        {
+          "platform": "WeChat",
+          "route": "official-account-search",
+          "query": "Abyss Shanghai abyss_service",
+          "priority": 1,
+          "trustRole": "official-event-announcement",
+          "access": "browser-required",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Xiaohongshu / XHS",
+          "route": "platform-native-search",
+          "query": "Abyss Shanghai techno",
+          "priority": 1,
+          "trustRole": "poster-and-official-social",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Yuyuan WeChat mini-program",
+          "route": "mini-program-venue-search",
+          "query": "Abyss club",
+          "priority": 1,
+          "trustRole": "ticketing-and-poster-source",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "mini-program-search-first"
+        },
+        {
+          "platform": "SmartShanghai",
+          "route": "venue-context",
+          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+          "query": "Abyss Shanghai SmartShanghai",
+          "priority": 3,
+          "trustRole": "venue-context",
+          "access": "public",
+          "scrapePolicy": "context-only"
+        }
+      ]
+    },
+    {
+      "id": "illum-shanghai",
+      "type": "venue",
+      "name": "ILLUM Shanghai",
+      "aliases": ["ILLUM", "ILLUM Club"],
+      "venueMatches": ["ILLUM", "ILLUM Shanghai"],
+      "priority": 1,
+      "evidenceBasis": "User-supplied ILLUM official-account and ticketing screenshots were ingested on 2026-06-16.",
+      "platforms": [
+        {
+          "platform": "WeChat",
+          "route": "official-account-search",
+          "query": "ILLUM Shanghai",
+          "priority": 1,
+          "trustRole": "official-event-announcement",
+          "access": "browser-required",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Xiaohongshu / XHS",
+          "route": "platform-native-search",
+          "query": "ILLUM Shanghai",
+          "priority": 1,
+          "trustRole": "poster-and-official-social",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Ticketing mini-program",
+          "route": "mini-program-venue-search",
+          "query": "ILLUM Shanghai 06",
+          "priority": 2,
+          "trustRole": "ticketing-and-poster-source",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "mini-program-search-first"
+        },
+        {
+          "platform": "SmartShanghai",
+          "route": "venue-context",
+          "url": "https://www.smartshanghai.com/venue/34394/illum",
+          "query": "ILLUM SmartShanghai",
+          "priority": 3,
+          "trustRole": "venue-context",
+          "access": "public",
+          "scrapePolicy": "context-only"
+        }
+      ]
+    },
+    {
+      "id": "exit-shanghai",
+      "type": "venue",
+      "name": "EXIT Shanghai",
+      "aliases": ["EXIT", "EXIT Club", "Exit Shanghai"],
+      "venueMatches": ["EXIT", "EXIT Shanghai"],
+      "priority": 1,
+      "evidenceBasis": "User-supplied EXIT poster, official-account, Yuyuan ticketing screenshots, and RA indexed event text were ingested on 2026-06-16.",
+      "platforms": [
+        {
+          "platform": "Resident Advisor",
+          "route": "city-listing-search",
+          "query": "EXIT Shanghai",
+          "priority": 1,
+          "trustRole": "event-confirmation",
+          "access": "browser-required",
+          "scrapePolicy": "ra-visible-listing-first"
+        },
+        {
+          "platform": "WeChat",
+          "route": "official-account-search",
+          "query": "EXIT Shanghai",
+          "priority": 1,
+          "trustRole": "official-event-announcement",
+          "access": "browser-required",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Xiaohongshu / XHS",
+          "route": "platform-native-search",
+          "query": "EXIT Shanghai 298 Steal Tapes",
+          "priority": 1,
+          "trustRole": "poster-and-official-social",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Yuyuan WeChat mini-program",
+          "route": "mini-program-venue-search",
+          "query": "EXIT 298",
+          "priority": 1,
+          "trustRole": "ticketing-and-poster-source",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "mini-program-search-first"
+        },
+        {
+          "platform": "SmartShanghai",
+          "route": "venue-context",
+          "url": "https://www.smartshanghai.com/venue/31776/exit",
+          "query": "EXIT SmartShanghai",
+          "priority": 3,
+          "trustRole": "venue-context",
+          "access": "public",
+          "scrapePolicy": "context-only"
+        }
+      ]
+    },
+    {
+      "id": "yuyintang-music-park",
+      "type": "venue",
+      "name": "Yuyintang Music Park",
+      "aliases": ["Yuyintang", "Yuyintang Music Park B Hall", "Yuyintang Music Park C Hall", "YuYinTown Cube", "育音堂"],
+      "venueMatches": ["Yuyintang Music Park", "Yuyintang Music Park B Hall", "Yuyintang Music Park C Hall", "YuYinTown Cube"],
+      "priority": 1,
+      "evidenceBasis": "User-supplied Yuyintang official-account screenshots and public ShowStart event pages were ingested on 2026-06-16.",
+      "platforms": [
+        {
+          "platform": "WeChat",
+          "route": "official-account-search",
+          "query": "育音堂音乐青年",
+          "priority": 1,
+          "trustRole": "official-event-announcement",
+          "access": "browser-required",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "ShowStart",
+          "route": "ticketing-search",
+          "url": "https://www.showstart.com/",
+          "query": "育音堂 上海",
+          "priority": 1,
+          "trustRole": "ticketing",
+          "access": "public-or-browser-required",
+          "scrapePolicy": "ticketing-search-first"
+        },
+        {
+          "platform": "Xiaohongshu / XHS",
+          "route": "platform-native-search",
+          "query": "育音堂 电子音乐 上海",
+          "priority": 2,
+          "trustRole": "poster-and-official-social",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "platform-native-search-first"
+        }
+      ]
+    },
+    {
+      "id": "potent",
+      "type": "venue",
+      "name": "POTENT",
+      "aliases": ["POTENT Shanghai", "potent_club"],
+      "venueMatches": ["POTENT"],
+      "priority": 2,
+      "evidenceBasis": "Existing RA event rows and POTENT public social-index lead identify the venue network but current platform posts still need visual checks.",
+      "platforms": [
+        {
+          "platform": "Resident Advisor",
+          "route": "city-listing-search",
+          "query": "POTENT Shanghai",
+          "priority": 1,
+          "trustRole": "event-confirmation",
+          "access": "browser-required",
+          "scrapePolicy": "ra-visible-listing-first"
+        },
+        {
+          "platform": "Xiaohongshu / XHS",
+          "route": "platform-native-search",
+          "query": "POTENT Shanghai",
+          "priority": 2,
+          "trustRole": "poster-and-official-social",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "WeChat",
+          "route": "official-account-search",
+          "query": "POTENT Shanghai",
+          "priority": 2,
+          "trustRole": "official-event-announcement",
+          "access": "browser-required",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Instagram public index",
+          "route": "public-profile-search",
+          "query": "potent_club POTENT JUNE 2026",
+          "priority": 4,
+          "trustRole": "social-lead",
+          "access": "public-index-only",
+          "scrapePolicy": "no-login"
+        }
+      ]
+    },
+    {
+      "id": "reactor-shanghai",
+      "type": "venue",
+      "name": "Reactor Shanghai",
+      "aliases": ["REACTOR Shanghai", "Reactor"],
+      "venueMatches": ["Reactor Shanghai", "REACTOR Shanghai"],
+      "priority": 2,
+      "evidenceBasis": "Existing RA-confirmed Reactor events provide source-backed venue activity; official social routes still need account mapping.",
+      "platforms": [
+        {
+          "platform": "Resident Advisor",
+          "route": "city-listing-search",
+          "query": "Reactor Shanghai",
+          "priority": 1,
+          "trustRole": "event-confirmation",
+          "access": "browser-required",
+          "scrapePolicy": "ra-visible-listing-first"
+        },
+        {
+          "platform": "WeChat",
+          "route": "official-account-search",
+          "query": "Reactor Shanghai",
+          "priority": 2,
+          "trustRole": "official-event-announcement",
+          "access": "browser-required",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Xiaohongshu / XHS",
+          "route": "platform-native-search",
+          "query": "Reactor Shanghai electronic",
+          "priority": 2,
+          "trustRole": "poster-and-official-social",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "platform-native-search-first"
+        }
+      ]
+    },
+    {
+      "id": "dirty-house",
+      "type": "venue",
+      "name": "Dirty House",
+      "aliases": ["Dirty House Shanghai"],
+      "venueMatches": ["Dirty House"],
+      "priority": 2,
+      "evidenceBasis": "Existing RA-confirmed Dirty House events provide event facts; official local social routes still need account mapping.",
+      "platforms": [
+        {
+          "platform": "Resident Advisor",
+          "route": "city-listing-search",
+          "query": "Dirty House Shanghai",
+          "priority": 1,
+          "trustRole": "event-confirmation",
+          "access": "browser-required",
+          "scrapePolicy": "ra-visible-listing-first"
+        },
+        {
+          "platform": "WeChat",
+          "route": "official-account-search",
+          "query": "Dirty House Shanghai",
+          "priority": 2,
+          "trustRole": "official-event-announcement",
+          "access": "browser-required",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Xiaohongshu / XHS",
+          "route": "platform-native-search",
+          "query": "Dirty House Shanghai techno",
+          "priority": 2,
+          "trustRole": "poster-and-official-social",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "platform-native-search-first"
+        }
+      ]
+    },
+    {
+      "id": "specters",
+      "type": "venue",
+      "name": "Specters",
+      "aliases": ["Specters Shanghai", "Specters C PARK"],
+      "venueMatches": ["Specters"],
+      "priority": 2,
+      "evidenceBasis": "SmartShanghai venue context and previous-series pages support venue identity; current-event details need official platform checks.",
+      "platforms": [
+        {
+          "platform": "WeChat",
+          "route": "official-account-search",
+          "query": "Specters Shanghai",
+          "priority": 2,
+          "trustRole": "official-event-announcement",
+          "access": "browser-required",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Xiaohongshu / XHS",
+          "route": "platform-native-search",
+          "query": "Specters Shanghai C PARK",
+          "priority": 2,
+          "trustRole": "poster-and-official-social",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "SmartShanghai",
+          "route": "venue-context",
+          "url": "https://www.smartshanghai.com/venue/34241/specters_c_park",
+          "query": "Specters C PARK SmartShanghai",
+          "priority": 3,
+          "trustRole": "venue-context",
+          "access": "public",
+          "scrapePolicy": "context-only"
+        }
+      ]
+    },
+    {
+      "id": "fa-q",
+      "type": "promoter",
+      "name": "FaQ",
+      "aliases": ["FaQ", "FAQ"],
+      "promoterMatches": ["FaQ", "FAQ"],
+      "priority": 1,
+      "evidenceBasis": "Abyss June program and ticketing screenshots show FaQ-presented nights; verify through promoter and venue networks.",
+      "platforms": [
+        {
+          "platform": "WeChat",
+          "route": "official-account-search",
+          "query": "FaQ Abyss Shanghai",
+          "priority": 1,
+          "trustRole": "promoter-confirmation",
+          "access": "browser-required",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Xiaohongshu / XHS",
+          "route": "platform-native-search",
+          "query": "FaQ Abyss Kirk Shanghai",
+          "priority": 1,
+          "trustRole": "poster-and-official-social",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "platform-native-search-first"
+        }
+      ]
+    },
+    {
+      "id": "liminal-dreams",
+      "type": "promoter",
+      "name": "Liminal Dreams",
+      "aliases": ["Liminal Dreams"],
+      "promoterMatches": ["Liminal Dreams"],
+      "priority": 1,
+      "evidenceBasis": "User-supplied Wigwam screenshots include Liminal Dreams poster and description; current source network should prioritize Wigwam plus Liminal Dreams routes.",
+      "platforms": [
+        {
+          "platform": "WeChat",
+          "route": "official-account-search",
+          "query": "Liminal Dreams Wigwam Shanghai",
+          "priority": 1,
+          "trustRole": "promoter-confirmation",
+          "access": "browser-required",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Xiaohongshu / XHS",
+          "route": "platform-native-search",
+          "query": "Liminal Dreams Wigwam Shanghai",
+          "priority": 1,
+          "trustRole": "poster-and-official-social",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Instagram public index",
+          "route": "public-profile-search",
+          "query": "Liminal Dreams Wigwam June 20",
+          "priority": 4,
+          "trustRole": "social-lead",
+          "access": "public-index-only",
+          "scrapePolicy": "no-login"
+        }
+      ]
+    },
+    {
+      "id": "earworthy",
+      "type": "promoter",
+      "name": "Earworthy",
+      "aliases": ["Earworthy", "值得一听"],
+      "promoterMatches": ["Earworthy", "值得一听"],
+      "priority": 2,
+      "evidenceBasis": "User-supplied Heim monthly calendar and poster identify the Earworthy Shanghai stop.",
+      "platforms": [
+        {
+          "platform": "WeChat",
+          "route": "official-account-search",
+          "query": "Earworthy 值得一听 Heim 上海",
+          "priority": 2,
+          "trustRole": "promoter-confirmation",
+          "access": "browser-required",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Xiaohongshu / XHS",
+          "route": "platform-native-search",
+          "query": "Earworthy 值得一听 Heim 上海",
+          "priority": 2,
+          "trustRole": "poster-and-official-social",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "platform-native-search-first"
+        }
+      ]
+    },
+    {
+      "id": "discchef",
+      "type": "promoter",
+      "name": "DiscChef",
+      "aliases": ["DiscChef", "主厨精选"],
+      "promoterMatches": ["DiscChef", "主厨精选"],
+      "priority": 2,
+      "evidenceBasis": "User-supplied Heim ticketing and article screenshots identify DiscChef 2nd anniversary at Heim.",
+      "platforms": [
+        {
+          "platform": "WeChat",
+          "route": "official-account-search",
+          "query": "DiscChef 主厨精选 Heim Roto",
+          "priority": 2,
+          "trustRole": "promoter-confirmation",
+          "access": "browser-required",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Xiaohongshu / XHS",
+          "route": "platform-native-search",
+          "query": "DiscChef Heim Roto Shanghai",
+          "priority": 2,
+          "trustRole": "poster-and-official-social",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "platform-native-search-first"
+        }
+      ]
+    },
+    {
+      "id": "so-ready",
+      "type": "promoter",
+      "name": "SO.READY",
+      "aliases": ["SO.READY", "时刻准备"],
+      "promoterMatches": ["SO.READY", "时刻准备"],
+      "priority": 2,
+      "evidenceBasis": "User-supplied Yuyintang/SO.READY screenshots and ShowStart source confirm Lucrecia Dalt Shanghai.",
+      "platforms": [
+        {
+          "platform": "WeChat",
+          "route": "official-account-search",
+          "query": "SO.READY 时刻准备 Lucrecia Dalt",
+          "priority": 1,
+          "trustRole": "promoter-confirmation",
+          "access": "browser-required",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "ShowStart",
+          "route": "ticketing-search",
+          "url": "https://www.showstart.com/",
+          "query": "Lucrecia Dalt 上海",
+          "priority": 1,
+          "trustRole": "ticketing",
+          "access": "public-or-browser-required",
+          "scrapePolicy": "ticketing-search-first"
+        }
+      ]
+    },
+    {
+      "id": "normie-corporation",
+      "type": "promoter",
+      "name": "Normie Corporation",
+      "aliases": ["Normie Corp", "Normie Corporation"],
+      "promoterMatches": ["Normie Corp", "Normie Corporation"],
+      "priority": 2,
+      "evidenceBasis": "User-supplied ILLUM official-account and ticketing screenshots identify Normie Corp pres. 10k99.",
+      "platforms": [
+        {
+          "platform": "WeChat",
+          "route": "official-account-search",
+          "query": "Normie Corporation 10k99 ILLUM",
+          "priority": 2,
+          "trustRole": "promoter-confirmation",
+          "access": "browser-required",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Xiaohongshu / XHS",
+          "route": "platform-native-search",
+          "query": "Normie Corporation 10k99 ILLUM Shanghai",
+          "priority": 2,
+          "trustRole": "poster-and-official-social",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "platform-native-search-first"
+        }
+      ]
+    },
+    {
+      "id": "liquid-dolls",
+      "type": "promoter",
+      "name": "LIQUID DOLLS",
+      "aliases": ["LIQUID DOLLS", "Liquid Dolls"],
+      "promoterMatches": ["LIQUID DOLLS", "Liquid Dolls"],
+      "priority": 2,
+      "evidenceBasis": "User-supplied ILLUM official-account and ticketing screenshots identify LIQUID DOLLS-presented ILLUM events.",
+      "platforms": [
+        {
+          "platform": "WeChat",
+          "route": "official-account-search",
+          "query": "LIQUID DOLLS ILLUM Shanghai",
+          "priority": 2,
+          "trustRole": "promoter-confirmation",
+          "access": "browser-required",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Xiaohongshu / XHS",
+          "route": "platform-native-search",
+          "query": "LIQUID DOLLS ILLUM Shanghai",
+          "priority": 2,
+          "trustRole": "poster-and-official-social",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "platform-native-search-first"
+        }
+      ]
+    },
+    {
+      "id": "youshan",
+      "type": "promoter",
+      "name": "YOUSHAN",
+      "aliases": ["YOUSHAN", "Youshan Festival", "有山"],
+      "promoterMatches": ["YOUSHAN", "Youshan Festival", "有山"],
+      "priority": 2,
+      "evidenceBasis": "Wigwam monthly calendar identifies YOUSHAN warmup as ticketed but still missing event-specific core fields.",
+      "platforms": [
+        {
+          "platform": "WeChat",
+          "route": "official-account-search",
+          "query": "YOUSHAN 有山 Wigwam 上海",
+          "priority": 2,
+          "trustRole": "promoter-confirmation",
+          "access": "browser-required",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Xiaohongshu / XHS",
+          "route": "platform-native-search",
+          "query": "YOUSHAN Wigwam 上海 6.27",
+          "priority": 2,
+          "trustRole": "poster-and-official-social",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "platform-native-search-first"
+        }
+      ]
+    },
+    {
+      "id": "househeadz-records",
+      "type": "promoter",
+      "name": "HouseHeadz Records",
+      "aliases": ["HouseHeadz", "HouseHeadz Records"],
+      "promoterMatches": ["HouseHeadz", "HouseHeadz Records"],
+      "priority": 2,
+      "evidenceBasis": "User-supplied EXIT/Yuyuan evidence and RA indexed text identify HouseHeadz Records / Steal Tapes at EXIT.",
+      "platforms": [
+        {
+          "platform": "WeChat",
+          "route": "official-account-search",
+          "query": "HouseHeadz Records Steal Tapes EXIT",
+          "priority": 2,
+          "trustRole": "promoter-confirmation",
+          "access": "browser-required",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Xiaohongshu / XHS",
+          "route": "platform-native-search",
+          "query": "HouseHeadz Steal Tapes EXIT 上海",
+          "priority": 2,
+          "trustRole": "poster-and-official-social",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Yuyuan WeChat mini-program",
+          "route": "mini-program-event-search",
+          "query": "Steal Tapes EXIT",
+          "priority": 1,
+          "trustRole": "ticketing-and-poster-source",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "mini-program-search-first"
+        }
+      ]
+    },
+    {
+      "id": "minuit",
+      "type": "promoter",
+      "name": "Minuit",
+      "aliases": ["Minuit", "MIRROR concept"],
+      "promoterMatches": ["Minuit", "MIRROR concept"],
+      "priority": 2,
+      "evidenceBasis": "RA indexed text surfaced Minuit pres. MIRROR concept at EXIT; use promoter/venue search to fill poster/ticket gaps.",
+      "platforms": [
+        {
+          "platform": "Resident Advisor",
+          "route": "city-listing-search",
+          "query": "Minuit MIRROR concept EXIT Shanghai",
+          "priority": 1,
+          "trustRole": "event-confirmation",
+          "access": "browser-required",
+          "scrapePolicy": "ra-visible-listing-first"
+        },
+        {
+          "platform": "WeChat",
+          "route": "official-account-search",
+          "query": "Minuit MIRROR concept EXIT 上海",
+          "priority": 2,
+          "trustRole": "promoter-confirmation",
+          "access": "browser-required",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Xiaohongshu / XHS",
+          "route": "platform-native-search",
+          "query": "Minuit MIRROR concept EXIT 上海",
+          "priority": 2,
+          "trustRole": "poster-and-official-social",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "platform-native-search-first"
+        }
+      ]
+    }
+  ]
+}

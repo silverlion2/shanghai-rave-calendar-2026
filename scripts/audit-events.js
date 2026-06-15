@@ -3,6 +3,7 @@ const fs = require("fs");
 const DATA_FILE = "data/events.json";
 const TRACKED_DJ_PROFILES_FILE = "config/tracked-dj-profiles.json";
 const RA_SHANGHAI_COVERAGE_FILE = "config/ra-shanghai-coverage.json";
+const PROMOTION_PLATFORM_NETWORK_FILE = "config/promotion-platform-network.json";
 const payload = JSON.parse(fs.readFileSync(DATA_FILE, "utf8"));
 const events = Array.isArray(payload.events) ? payload.events : [];
 const auditDate = process.env.EVENT_AUDIT_DATE || payload.verified;
@@ -19,6 +20,9 @@ const curatedDjProfiles = Array.isArray(trackedDjProfileConfig)
 const raShanghaiCoverageConfig = fs.existsSync(RA_SHANGHAI_COVERAGE_FILE)
   ? JSON.parse(fs.readFileSync(RA_SHANGHAI_COVERAGE_FILE, "utf8"))
   : null;
+const promotionPlatformNetworkConfig = fs.existsSync(PROMOTION_PLATFORM_NETWORK_FILE)
+  ? JSON.parse(fs.readFileSync(PROMOTION_PLATFORM_NETWORK_FILE, "utf8"))
+  : { entities: [] };
 
 if (!auditDate || !/^\d{4}-\d{2}-\d{2}$/.test(auditDate)) {
   throw new Error("data/events.json must define a YYYY-MM-DD verified date, or set EVENT_AUDIT_DATE");
@@ -70,6 +74,18 @@ function eventCheckedDateIsFresh(event = {}) {
 
 function count(items) {
   return Array.isArray(items) ? items.length : 0;
+}
+
+function promotionPlatformEntities() {
+  return Array.isArray(promotionPlatformNetworkConfig.entities)
+    ? promotionPlatformNetworkConfig.entities
+    : [];
+}
+
+function promotionPlatformRouteCount() {
+  return promotionPlatformEntities().reduce((total, entity) => (
+    total + (Array.isArray(entity.platforms) ? entity.platforms.length : 0)
+  ), 0);
 }
 
 function eventSourceCount(event) {
@@ -704,6 +720,14 @@ const coreFieldQueue = buildCoreFieldQueue(future);
 const qualityCoreFieldQueue = Array.isArray(payload.quality?.coreFieldQueue)
   ? payload.quality.coreFieldQueue
   : [];
+const promotionPlatformQueue = Array.isArray(payload.promotionPlatformQueue)
+  ? payload.promotionPlatformQueue
+  : [];
+const computerUseQueue = Array.isArray(payload.computerUseQueue)
+  ? payload.computerUseQueue
+  : [];
+const promotionPlatformEntityCount = promotionPlatformEntities().length;
+const expectedPromotionPlatformRoutes = promotionPlatformRouteCount();
 
 const totals = {
   events: events.length,
@@ -735,6 +759,12 @@ const totals = {
   futureUncertainCoreFields: coreFieldQueue.reduce((total, item) => total + item.uncertainCoreFields.length, 0),
   platformVerificationQueue: platformVerificationQueue.length,
   platformVerificationSources: platformVerificationQueue.reduce((total, item) => total + item.platformSourceCount, 0),
+  promotionPlatformEntities: promotionPlatformEntityCount,
+  promotionPlatformRoutes: expectedPromotionPlatformRoutes,
+  promotionPlatformQueue: promotionPlatformQueue.length,
+  promotionPlatformUnmappedFutureVenues: Array.isArray(payload.quality?.promotionPlatformNetwork?.unmappedFutureVenues)
+    ? payload.quality.promotionPlatformNetwork.unmappedFutureVenues.length
+    : 0,
   curatedEventsApplied: payload.curatedEventsApplied,
   failedSourceReports: failedSourceReports.length,
 };
@@ -798,6 +828,33 @@ if (payload.quality) {
     }
     if (!Array.isArray(actual.searchQueries) || actual.searchQueries.length === 0) {
       issues.push(`quality.platformVerificationQueue.${expected.id} must include platform-native search queries`);
+    }
+  }
+  if (promotionPlatformEntityCount > 0) {
+    if (!Array.isArray(payload.promotionPlatformQueue)) {
+      issues.push("promotionPlatformQueue must be written from config/promotion-platform-network.json");
+    } else if (payload.promotionPlatformQueue.length !== expectedPromotionPlatformRoutes) {
+      issues.push(`promotionPlatformQueue has ${payload.promotionPlatformQueue.length} routes, expected ${expectedPromotionPlatformRoutes}`);
+    }
+    if (!payload.promotionPlatformNetwork || payload.promotionPlatformNetwork.entityCount !== promotionPlatformEntityCount) {
+      issues.push(`promotionPlatformNetwork.entityCount must be ${promotionPlatformEntityCount}`);
+    }
+    if (!payload.promotionPlatformNetwork || payload.promotionPlatformNetwork.routeCount !== expectedPromotionPlatformRoutes) {
+      issues.push(`promotionPlatformNetwork.routeCount must be ${expectedPromotionPlatformRoutes}`);
+    }
+    if (!payload.quality.promotionPlatformNetwork || payload.quality.promotionPlatformNetwork.routeCount !== expectedPromotionPlatformRoutes) {
+      issues.push(`quality.promotionPlatformNetwork.routeCount must be ${expectedPromotionPlatformRoutes}`);
+    }
+    const firstNetworkIndex = computerUseQueue.findIndex(item => item.kind === "promotion-platform-network");
+    const firstGenericIndex = computerUseQueue.findIndex(item => item.kind === "computer-use-source" && item.label !== "RA Shanghai");
+    if (computerUseQueue[0]?.label !== "RA Shanghai") {
+      issues.push("computerUseQueue must keep RA Shanghai first before entity network and generic platform tasks");
+    }
+    if (firstNetworkIndex === -1) {
+      issues.push("computerUseQueue must include promotion-platform-network tasks");
+    }
+    if (firstNetworkIndex !== -1 && firstGenericIndex !== -1 && firstGenericIndex < firstNetworkIndex) {
+      issues.push("computerUseQueue must place promotion-platform-network tasks before generic platform tasks");
     }
   }
   if (!payload.quality.coreFieldPolicy || !Array.isArray(payload.quality.coreFieldPolicy.coreFields) || !Array.isArray(payload.quality.coreFieldPolicy.nonCoreFields)) {
@@ -974,6 +1031,17 @@ console.log(JSON.stringify({
     searchQueries: Array.isArray(item.searchQueries) ? item.searchQueries.slice(0, 3) : [],
     nextAction: item.nextAction,
   })),
+  promotionPlatformNetwork: payload.quality?.promotionPlatformNetwork ? {
+    source: payload.quality.promotionPlatformNetwork.source,
+    updatedAt: payload.quality.promotionPlatformNetwork.updatedAt,
+    entityCount: payload.quality.promotionPlatformNetwork.entityCount,
+    routeCount: payload.quality.promotionPlatformNetwork.routeCount,
+    queueCount: payload.quality.promotionPlatformNetwork.queueCount,
+    unmappedFutureVenueCount: payload.quality.promotionPlatformNetwork.unmappedFutureVenueCount,
+    unmappedFutureVenues: Array.isArray(payload.quality.promotionPlatformNetwork.unmappedFutureVenues)
+      ? payload.quality.promotionPlatformNetwork.unmappedFutureVenues.slice(0, 12)
+      : [],
+  } : null,
   raShanghaiCoverage: {
     configured: raShanghaiCoverage.configured,
     updatedAt: raShanghaiCoverage.updatedAt,

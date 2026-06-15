@@ -87,17 +87,20 @@ V1 uses GitHub only:
 1. `.github/workflows/scrape-events.yml` runs daily or manually.
 2. `scripts/scrape-events.js` refreshes public RA and SmartShanghai source data.
 3. It checks X/Twitter keyword searches from `config/scrape-keywords.json` as discovery-only social leads.
-4. It writes a `computerUseQueue` for known anti-bot, logged-in, app-only, poster/image, and mini-program sources that the agent should inspect with Chrome + Computer Use.
-5. It merges agent-collected, browser-verified event updates from `config/curated-events.json`.
-6. For any event with `posterEvidence`, the collector must download the flyer into `assets/posters/`, add a local `posterUrl`, run the poster preparation pipeline, and avoid using remote `images.ra.co` URLs in the UI.
-7. The script writes `data/events.json`, `data/dj-data.js`, and `data/tracked-dj-itineraries.js`.
-8. The workflow commits the changed data files back to the repository.
+4. It reads `config/promotion-platform-network.json` and queues known venue/promoter WeChat, XHS, ticketing, poster, and official-account routes before generic discovery.
+5. It writes a `computerUseQueue` for known anti-bot, logged-in, app-only, poster/image, and mini-program sources that the agent should inspect with Chrome + Computer Use.
+6. It merges agent-collected, browser-verified event updates from `config/curated-events.json`.
+7. For any event with `posterEvidence`, the collector must download the flyer into `assets/posters/`, add a local `posterUrl`, run the poster preparation pipeline, and avoid using remote `images.ra.co` URLs in the UI.
+8. The script writes `data/events.json`, `data/dj-data.js`, and `data/tracked-dj-itineraries.js`.
+9. The workflow commits the changed data files back to the repository.
 
 RA is the highest-priority public nightlife source. Because plain HTTP fetch currently returns a browser-required RA challenge, complete Shanghai coverage is tracked in `config/ra-shanghai-coverage.json`: each RA Shanghai event URL must map to one canonical event row, and `scripts/audit-events.js` fails when a mapped RA event is missing from generated data. The audit also compares RA's visible upcoming count against the manifest's upcoming rows, so a missed future page or pagination row fails the check instead of silently publishing. `npm run scrape` writes the same snapshot to `data/events.json.quality.raShanghaiCoverage`.
 
 `data/events.json.quality.watchQueue` separates `sourceCount` from `confirmationSourceCount`. Social index previews, artist profiles, venue context, radio context, previous-series pages, and off-city festival context stay useful as leads, but they do not count as confirmation sources for the current event. The audit reports `singleConfirmationWatch` so editors can prioritize Watch rows that still need a direct RA, venue, promoter, ticketing, SmartShanghai, or official source.
 
 `data/events.json.quality.platformVerificationQueue` lists Watch rows that already have Instagram, Xiaohongshu/XHS, WeChat, Weibo, mini-program, or ticket-flow leads but still need platform-native Browser/Chrome verification. Use the provided search queries first, then open visible account/post results; do not treat search-index snippets, profile metadata, image placeholders, login walls, or public-session timeouts as event confirmation.
+
+`data/events.json.promotionPlatformQueue` and `data/events.json.quality.promotionPlatformNetwork` come from `config/promotion-platform-network.json`. This is the venue/promoter graph: RA stays first, then the scraper prioritizes official venue/promoter WeChat, XHS, ticketing mini-program, poster, and account routes for Heim, Wigwam, Abyss, ILLUM, EXIT, Yuyintang, POTENT, Reactor, Dirty House, Specters, and known promoters before generic keyword searching. `quality.promotionPlatformNetwork.unmappedFutureVenues` lists future venues that still need a platform network.
 
 Static browsing does not require a database. Supabase is used when configured for backend tables, Love Wall submissions, account personalization, and imported poster archive metadata.
 
@@ -136,7 +139,7 @@ X/Twitter leads are stored under `socialLeads` in `data/events.json`. They do no
 
 For reliable X/Twitter collection, add either `X_BEARER_TOKEN` or `TWITTER_BEARER_TOKEN` as a GitHub repository secret. Without a token, the workflow records the configured keyword searches but does not collect posts by default. To attempt unauthenticated public HTML search, set `SCRAPE_X_PUBLIC_SEARCH=true`, but expect frequent empty or blocked responses from X/Twitter.
 
-Known anti-bot or app-bound sources are not scraped with plain `fetch`. They are queued for agent-operated Chrome + Computer Use in `computerUseQueue`: RA Shanghai when blocked, SmartShanghai when fetch is incomplete, Xiaohongshu, WeChat official accounts/groups, venue official accounts, promoter posters, ShowStart/Damai/PiaoPlanet/mini-program ticketing, and DJ/label Instagram, Weibo, WeChat, or Bandcamp pages. Treat these as discovery or verification tasks until the agent captures a shareable official/ticket/source reference or screenshot evidence.
+Known anti-bot or app-bound sources are not scraped with plain `fetch`. They are queued for agent-operated Chrome + Computer Use in `computerUseQueue`: RA Shanghai when blocked, entity-specific promotion-platform tasks from `promotionPlatformQueue`, SmartShanghai when fetch is incomplete, Xiaohongshu, WeChat official accounts/groups, venue official accounts, promoter posters, ShowStart/Damai/PiaoPlanet/mini-program ticketing, and DJ/label Instagram, Weibo, WeChat, or Bandcamp pages. Treat these as discovery or verification tasks until the agent captures a shareable official/ticket/source reference or screenshot evidence.
 
 Computer Use collection should be complete, not just a title scrape. For each event, follow second-layer links and extract image/poster text when needed to capture time, venue/address, lineup and set times, poster evidence, artist introductions, future city tour dates, ticket platform/price/availability, age/ID rules, source publication dates, and whether each detail came from official, ticketing, social, or image-derived evidence. Poster evidence is not complete until the poster image has been saved under `assets/posters/` and referenced through a local `posterUrl`.
 

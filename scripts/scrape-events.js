@@ -13,6 +13,7 @@ const KEYWORD_CONFIG_FILE = path.join(ROOT, "config", "scrape-keywords.json");
 const CURATED_EVENTS_FILE = path.join(ROOT, "config", "curated-events.json");
 const TRACKED_DJ_PROFILES_FILE = path.join(ROOT, "config", "tracked-dj-profiles.json");
 const RA_SHANGHAI_COVERAGE_FILE = path.join(ROOT, "config", "ra-shanghai-coverage.json");
+const PROMOTION_PLATFORM_NETWORK_FILE = path.join(ROOT, "config", "promotion-platform-network.json");
 const TIME_ZONE = "Asia/Shanghai";
 const CURRENT_YEAR = 2026;
 const ARCHIVE_CUTOFF_HOUR = 6;
@@ -361,6 +362,25 @@ function readTrackedDjProfiles() {
 function readRaShanghaiCoverage() {
   if (!fs.existsSync(RA_SHANGHAI_COVERAGE_FILE)) return null;
   return JSON.parse(readText(RA_SHANGHAI_COVERAGE_FILE));
+}
+
+function readPromotionPlatformNetwork() {
+  if (!fs.existsSync(PROMOTION_PLATFORM_NETWORK_FILE)) {
+    return {
+      updatedAt: shanghaiDateString(),
+      timezone: TIME_ZONE,
+      scrapeOrder: [],
+      antiScrapePolicy: {},
+      entities: [],
+    };
+  }
+  const payload = JSON.parse(readText(PROMOTION_PLATFORM_NETWORK_FILE));
+  return {
+    ...payload,
+    entities: Array.isArray(payload.entities) ? payload.entities : [],
+    scrapeOrder: Array.isArray(payload.scrapeOrder) ? payload.scrapeOrder : [],
+    antiScrapePolicy: payload.antiScrapePolicy || {},
+  };
 }
 
 function readText(file) {
@@ -970,8 +990,195 @@ function sourceLabelFor(url) {
   }
 }
 
-function buildComputerUseQueue(checkedAt) {
-  return COMPUTER_USE_SOURCES.map(source => ({
+function routeSearchQuery(entity = {}, route = {}) {
+  return cleanText(route.query || route.accountName || route.handle || entity.name || route.platform || "");
+}
+
+function platformRouteUrl(entity = {}, route = {}) {
+  if (route.url) return normalizeUrl(route.url) || route.url;
+  const platform = cleanText(route.platform || "");
+  const routeType = cleanText(route.route || "");
+  const query = routeSearchQuery(entity, route);
+  const encoded = encodeURIComponent(query || entity.name || "Shanghai electronic music");
+  if (/resident advisor|^ra$/i.test(platform)) return "https://ra.co/events/cn/shanghai";
+  if (/xiaohongshu|xhs/i.test(platform)) {
+    return `https://www.xiaohongshu.com/search_result?keyword=${encoded}&source=web_explore_feed`;
+  }
+  if (/wechat|weixin/i.test(platform) && /article|sogou/i.test(routeType)) {
+    return `https://weixin.sogou.com/weixin?type=2&query=${encoded}`;
+  }
+  if (/wechat|weixin|mini-program|yuyuan/i.test(platform)) {
+    return `weixin://search?query=${encoded}`;
+  }
+  if (/instagram/i.test(platform)) {
+    return `https://www.instagram.com/explore/search/keyword/?q=${encoded}`;
+  }
+  if (/showstart/i.test(platform)) return route.url || "https://www.showstart.com/";
+  if (/damai/i.test(platform)) return "https://www.damai.cn/";
+  if (/piaoplanet/i.test(platform)) return "https://www.piaoplanet.com/";
+  if (/smartshanghai/i.test(platform)) {
+    return `https://www.smartshanghai.com/search/?q=${encoded}`;
+  }
+  return `https://www.google.com/search?q=${encoded}`;
+}
+
+function promotionPlatformEvidence(route = {}) {
+  const role = cleanText(route.trustRole || "platform route");
+  if (/ticket/i.test(role)) {
+    return ["ticket route or mini-program name", "price tiers", "sale status", "venue/date/time", "refund or purchase notes"];
+  }
+  if (/poster/i.test(role)) {
+    return ["visible official account/post", "poster image", "OCR text", "event date", "lineup", "ticket channel"];
+  }
+  if (/venue-context/i.test(role)) {
+    return ["venue name", "address", "district/floor", "context URL", "last checked date"];
+  }
+  if (/resident advisor|event-confirmation/i.test(role)) {
+    return ["public event URL", "event title", "absolute date/time", "venue", "lineup", "ticket/source link"];
+  }
+  return ["account name", "post/article title", "publish date", "event title/date", "venue", "lineup or ticket facts"];
+}
+
+function buildPromotionPlatformQueue(network, checkedAt) {
+  const entities = Array.isArray(network?.entities) ? network.entities : [];
+  const tasks = [];
+  for (const entity of entities) {
+    const platforms = Array.isArray(entity.platforms) ? entity.platforms : [];
+    for (const route of platforms) {
+      const query = routeSearchQuery(entity, route);
+      const platform = cleanText(route.platform || "Platform source");
+      const routeType = cleanText(route.route || "platform-search");
+      const role = cleanText(route.trustRole || "platform route");
+      tasks.push({
+        label: `Network: ${entity.name} / ${platform} / ${routeType}`,
+        platform,
+        url: platformRouteUrl(entity, route),
+        priority: Number(route.priority || entity.priority || 3),
+        sourceNetworkPriority: Number(entity.priority || route.priority || 3),
+        cadence: Number(route.priority || entity.priority || 3) <= 1
+          ? "Every scrape cycle; repeat before weekend publication"
+          : "Every 2-3 days or when a matching future event has gaps",
+        trigger: `Scrape ${entity.name}'s known promotion network before generic keyword discovery; use ${routeType} and stop on platform warnings.`,
+        collectionGoal: `Confirm ${entity.name} ${role}: event date, venue, lineup, ticket route, poster, and last-minute updates when visible.`,
+        queries: Array.from(new Set([
+          query,
+          [entity.name, "Shanghai"].filter(Boolean).join(" "),
+          ...(Array.isArray(entity.aliases) ? entity.aliases.slice(0, 3) : []),
+        ].map(cleanText).filter(Boolean))),
+        evidence: promotionPlatformEvidence(route),
+        kind: "promotion-platform-network",
+        sourceStatus: "computer-use",
+        access: "chrome-computer-use",
+        checkedAt,
+        parsed: false,
+        entityId: entity.id,
+        entityType: entity.type || "entity",
+        entityName: entity.name,
+        route: routeType,
+        trustRole: role,
+        scrapePolicy: cleanText(route.scrapePolicy || "platform-native-search-first"),
+        routeAccess: cleanText(route.access || "browser-required"),
+        notes: cleanText(route.notes || entity.evidenceBasis || ""),
+        confirmationRule: "Treat this route as a venue/promoter network task. It confirms an event only when visible current-event facts are captured from RA, official venue/promoter, ticketing, or other shareable evidence.",
+        collectionChecklist: COMPUTER_USE_COLLECTION_CHECKLIST,
+        deepCollectionRules: COMPUTER_USE_DEEP_COLLECTION_RULES,
+        requiredFields: COMPUTER_USE_COLLECTION_CHECKLIST,
+      });
+    }
+  }
+  return tasks.sort((first, second) => (
+    first.priority - second.priority
+    || first.sourceNetworkPriority - second.sourceNetworkPriority
+    || String(first.entityName || "").localeCompare(String(second.entityName || ""))
+    || String(first.platform || "").localeCompare(String(second.platform || ""))
+    || String(first.route || "").localeCompare(String(second.route || ""))
+  ));
+}
+
+function promotionEntityMatchTerms(entity = {}) {
+  return Array.from(new Set([
+    entity.name,
+    ...(Array.isArray(entity.aliases) ? entity.aliases : []),
+    ...(Array.isArray(entity.venueMatches) ? entity.venueMatches : []),
+    ...(Array.isArray(entity.promoterMatches) ? entity.promoterMatches : []),
+  ].map(cleanText).filter(Boolean)));
+}
+
+function promotionEntityMatchesEvent(entity = {}, event = {}) {
+  const terms = promotionEntityMatchTerms(entity).map(term => term.toLowerCase());
+  if (!terms.length) return false;
+  const lineupText = Array.isArray(event.lineup)
+    ? event.lineup.map(lineupItemName).join(" ")
+    : "";
+  const scopedText = String(entity.type || "").toLowerCase() === "venue"
+    ? [event.venue, event.address, event.title].join(" ")
+    : [event.organizer, event.promoter, event.title, event.description, event.ticketStatus, lineupText].join(" ");
+  const haystack = scopedText.toLowerCase();
+  return terms.some(term => haystack.includes(term));
+}
+
+function buildPromotionPlatformNetworkSnapshot(network, promotionPlatformQueue, events, auditDate) {
+  const entities = Array.isArray(network?.entities) ? network.entities : [];
+  const future = events.filter(event => String(event.sortDate || "") >= auditDate);
+  const matchedEventIds = new Set();
+  const entityCoverage = entities.map(entity => {
+    const routes = Array.isArray(entity.platforms) ? entity.platforms : [];
+    const matchedEvents = future.filter(event => promotionEntityMatchesEvent(entity, event));
+    matchedEvents.forEach(event => matchedEventIds.add(event.id));
+    return {
+      id: entity.id,
+      type: entity.type || "entity",
+      name: entity.name,
+      priority: Number(entity.priority || 3),
+      routeCount: routes.length,
+      platforms: Array.from(new Set(routes.map(route => route.platform).filter(Boolean))),
+      futureEventCount: matchedEvents.length,
+      futureEvents: matchedEvents.slice(0, 10).map(event => ({
+        id: event.id,
+        date: event.sortDate,
+        title: event.title,
+        venue: event.venue,
+        status: event.status,
+        confidence: event.confidence,
+      })),
+    };
+  }).sort((first, second) => (
+    first.priority - second.priority
+    || second.futureEventCount - first.futureEventCount
+    || String(first.name || "").localeCompare(String(second.name || ""))
+  ));
+  const unmappedFutureEvents = future
+    .filter(event => !matchedEventIds.has(event.id))
+    .map(event => ({
+      id: event.id,
+      date: event.sortDate,
+      title: event.title,
+      venue: event.venue,
+      organizer: event.organizer || event.promoter || "",
+      status: event.status,
+      confidence: event.confidence,
+    }))
+    .sort((first, second) => String(first.date || "").localeCompare(String(second.date || ""))
+      || String(first.venue || "").localeCompare(String(second.venue || "")));
+  return {
+    source: "config/promotion-platform-network.json",
+    updatedAt: network?.updatedAt || "",
+    entityCount: entities.length,
+    routeCount: entities.reduce((total, entity) => total + (Array.isArray(entity.platforms) ? entity.platforms.length : 0), 0),
+    queueCount: promotionPlatformQueue.length,
+    scrapeOrder: Array.isArray(network?.scrapeOrder) ? network.scrapeOrder : [],
+    antiScrapePolicy: network?.antiScrapePolicy || {},
+    priorityRule: "Run Resident Advisor first, then entity promotion-platform tasks sorted by route priority, entity priority, and entity name before generic social keyword discovery.",
+    confirmationRule: "Entity network routes are collection paths. They confirm an event only after visible current-event facts are captured from RA, official venue/promoter, ticketing, or shareable source evidence.",
+    entityCoverage,
+    unmappedFutureVenueCount: Array.from(new Set(unmappedFutureEvents.map(event => event.venue).filter(Boolean))).length,
+    unmappedFutureVenues: Array.from(new Set(unmappedFutureEvents.map(event => event.venue).filter(Boolean))).sort(),
+    unmappedFutureEvents: unmappedFutureEvents.slice(0, 30),
+  };
+}
+
+function buildComputerUseQueue(checkedAt, promotionPlatformQueue = []) {
+  const genericQueue = COMPUTER_USE_SOURCES.map(source => ({
     ...source,
     kind: "computer-use-source",
     sourceStatus: "computer-use",
@@ -983,6 +1190,9 @@ function buildComputerUseQueue(checkedAt) {
     deepCollectionRules: COMPUTER_USE_DEEP_COLLECTION_RULES,
     requiredFields: COMPUTER_USE_COLLECTION_CHECKLIST,
   }));
+  const raQueue = genericQueue.filter(source => source.label === "RA Shanghai");
+  const remainingGenericQueue = genericQueue.filter(source => source.label !== "RA Shanghai");
+  return [...raQueue, ...promotionPlatformQueue, ...remainingGenericQueue];
 }
 
 function computerUseSourceReports(computerUseQueue) {
@@ -2061,7 +2271,7 @@ function buildTechnoDiscoverySnapshot(events, technoArtistSignals = []) {
   };
 }
 
-function buildQualitySnapshot(events, sources, auditDate, curatedEventsApplied, generatedAt, djItineraryStats = {}, raShanghaiCoverageConfig = null, technoArtistSignals = []) {
+function buildQualitySnapshot(events, sources, auditDate, curatedEventsApplied, generatedAt, djItineraryStats = {}, raShanghaiCoverageConfig = null, technoArtistSignals = [], promotionPlatformNetwork = null, promotionPlatformQueue = []) {
   const future = events.filter(event => String(event.sortDate || "") >= auditDate);
   const futureHigh = future.filter(event => event.confidence === "High");
   const futureWatch = future.filter(event => event.status === "watch" || event.confidence === "Watch");
@@ -2088,6 +2298,7 @@ function buildQualitySnapshot(events, sources, auditDate, curatedEventsApplied, 
   const platformVerificationQueue = buildPlatformVerificationQueue(futureWatch);
   const coreFieldQueue = buildCoreFieldQueue(future, djItineraryStats);
   const technoDiscovery = buildTechnoDiscoverySnapshot(events, technoArtistSignals);
+  const promotionPlatformNetworkSnapshot = buildPromotionPlatformNetworkSnapshot(promotionPlatformNetwork, promotionPlatformQueue, events, auditDate);
 
   return {
     auditDate,
@@ -2129,6 +2340,10 @@ function buildQualitySnapshot(events, sources, auditDate, curatedEventsApplied, 
       futureUncertainCoreFields: coreFieldQueue.reduce((total, item) => total + item.uncertainCoreFields.length, 0),
       platformVerificationQueue: platformVerificationQueue.length,
       platformVerificationSources: platformVerificationQueue.reduce((total, item) => total + item.platformSourceCount, 0),
+      promotionPlatformEntities: promotionPlatformNetworkSnapshot.entityCount,
+      promotionPlatformRoutes: promotionPlatformNetworkSnapshot.routeCount,
+      promotionPlatformQueue: promotionPlatformNetworkSnapshot.queueCount,
+      promotionPlatformUnmappedFutureVenues: promotionPlatformNetworkSnapshot.unmappedFutureVenueCount,
       curatedEventsApplied,
       failedSourceReports: failedSourceReports.length,
     },
@@ -2175,6 +2390,7 @@ function buildQualitySnapshot(events, sources, auditDate, curatedEventsApplied, 
     technoDiscovery,
     coreFieldQueue,
     platformVerificationQueue,
+    promotionPlatformNetwork: promotionPlatformNetworkSnapshot,
     venueCoverage,
     djCoverage,
     raShanghaiCoverage,
@@ -2195,6 +2411,7 @@ function buildQualitySnapshot(events, sources, auditDate, curatedEventsApplied, 
       "Inspect source health before manual research: failed source reports, RA coverage gaps, discovered links, social leads, quality.platformVerificationQueue, and quality.coreFieldQueue.",
       "Only after the source sweep, run npm run audit to prioritize future freshness, ticket notes, High-confidence lineups, the Watch queue, active venue coverage, and future DJ profile coverage.",
       "Keep config/ra-shanghai-coverage.json aligned with Browser/Chrome-verified RA Shanghai city-listing rows when RA fetch is browser-required.",
+      "Before generic keyword searches, run config/promotion-platform-network.json routes for known venue/promoter WeChat, XHS, ticketing, poster, and official-account networks.",
       "Promote Watch entries only after direct venue, promoter, ticketing, RA, SmartShanghai detail, or official artist evidence is captured in config/curated-events.json.",
       "Use Computer Use / Chrome for WeChat, Xiaohongshu, mini-program, image-only, or anti-bot sources, then preserve evidence notes and source links in curated overlays.",
       "Use quality.platformVerificationQueue for event-specific Instagram, XHS, WeChat, Weibo, and ticket-flow leads; always enter anti-scrape platforms through platform-native search before deep links.",
@@ -2503,12 +2720,12 @@ async function main() {
   const trackedDjProfiles = readTrackedDjProfiles();
   const technoArtistSignals = buildTechnoArtistSignals(trackedDjProfiles);
   const raShanghaiCoverageConfig = readRaShanghaiCoverage();
+  const promotionPlatformNetwork = readPromotionPlatformNetwork();
   const sourceChecks = new Map();
   const sourceReports = [];
   const detailLinks = new Map();
   const discovered = [];
   const socialLeads = [];
-  const computerUseQueue = buildComputerUseQueue(shanghaiDateString());
 
   for (const source of SOURCE_PAGES) {
     await sleep(REQUEST_DELAY_MS);
@@ -2642,6 +2859,8 @@ async function main() {
   const djItineraryStats = writeDjItineraryData(events);
   const generatedAt = new Date().toISOString();
   const verified = shanghaiDateString();
+  const promotionPlatformQueue = buildPromotionPlatformQueue(promotionPlatformNetwork, verified);
+  const computerUseQueue = buildComputerUseQueue(verified, promotionPlatformQueue);
   const sourceReportsAll = [...sourceReports, ...computerUseSourceReports(computerUseQueue)];
   const payload = {
     generatedAt,
@@ -2651,6 +2870,7 @@ async function main() {
       "Chrome + Computer Use for anti-bot, logged-in, app-only, image/poster, and mini-program sources",
       "Resident Advisor event pages and city listings as the highest-priority public nightlife source for Shanghai electronic event facts",
       "config/ra-shanghai-coverage.json as the durable RA city-listing manifest when RA fetch is browser-required",
+      "config/promotion-platform-network.json as the venue/promoter-first platform graph before generic discovery",
       "Direct venue, promoter, ticketing, or official artist pages for corroboration, conflict resolution, and live ticket state",
       "SmartShanghai event pages and monthly clubbing guide",
       "Public social posts and app-only references as discovery leads only",
@@ -2659,14 +2879,26 @@ async function main() {
     events,
     socialLeads: socialLeads.slice(0, 80),
     discovered: discovered.slice(0, 80),
+    promotionPlatformNetwork: {
+      source: "config/promotion-platform-network.json",
+      updatedAt: promotionPlatformNetwork.updatedAt || "",
+      entityCount: Array.isArray(promotionPlatformNetwork.entities) ? promotionPlatformNetwork.entities.length : 0,
+      routeCount: Array.isArray(promotionPlatformNetwork.entities)
+        ? promotionPlatformNetwork.entities.reduce((total, entity) => total + (Array.isArray(entity.platforms) ? entity.platforms.length : 0), 0)
+        : 0,
+      scrapeOrder: promotionPlatformNetwork.scrapeOrder || [],
+      antiScrapePolicy: promotionPlatformNetwork.antiScrapePolicy || {},
+    },
+    promotionPlatformQueue,
     computerUseQueue,
     curatedEventsApplied: curatedEvents.length,
     djItineraryStats,
-    quality: buildQualitySnapshot(events, sourceReportsAll, verified, curatedEvents.length, generatedAt, djItineraryStats, raShanghaiCoverageConfig, technoArtistSignals),
+    quality: buildQualitySnapshot(events, sourceReportsAll, verified, curatedEvents.length, generatedAt, djItineraryStats, raShanghaiCoverageConfig, technoArtistSignals, promotionPlatformNetwork, promotionPlatformQueue),
     notes: [
       "This v1 scraper keeps curated embedded events as the seed dataset, refreshes source metadata, and adds parsable public event pages as watch/secondary entries.",
       "Computer Use collected event updates in config/curated-events.json are merged after the automated source refresh.",
       "Events from listing/editorial pages remain watch-level until a direct venue, promoter, ticketing, or event page confirms details.",
+      "Venue/promoter promotion networks from config/promotion-platform-network.json are queued after RA and before generic social discovery so XHS, WeChat, ticketing, and official account routes are checked first.",
       "New-event discovery uses complementary gates: event/source keyword fit plus tracked techno-related DJ profile and alias signals, so generic event pages can still enter the Watch queue when the lineup points to techno, hard techno, acid, industrial, EBM, electro, trance, rave, warehouse, hard dance, bass/club crossover, breaks, jungle, UKG, or experimental electronic context.",
       "X keyword searches are discovery-only social leads and never promote an event into the calendar without confirmation from a stronger source.",
       "Known anti-bot or app-only sources are queued for agent-operated Chrome + Computer Use collection instead of being scraped with plain fetch.",
@@ -2679,7 +2911,7 @@ async function main() {
 
   fs.writeFileSync(DATA_FILE, `${JSON.stringify(payload, null, 2)}\n`);
   writeDjSourceData(events);
-  console.log(`Wrote ${path.relative(ROOT, DATA_FILE)}, ${path.relative(ROOT, DJ_DATA_FILE)}, and ${path.relative(ROOT, DJ_ITINERARY_FILE)} with ${events.length} events, ${payload.discovered.length} discovered links, ${payload.socialLeads.length} social leads, ${payload.computerUseQueue.length} Computer Use sources, ${payload.curatedEventsApplied} curated updates, and ${djItineraryStats.rowCount} tracked DJ itinerary rows.`);
+  console.log(`Wrote ${path.relative(ROOT, DATA_FILE)}, ${path.relative(ROOT, DJ_DATA_FILE)}, and ${path.relative(ROOT, DJ_ITINERARY_FILE)} with ${events.length} events, ${payload.discovered.length} discovered links, ${payload.socialLeads.length} social leads, ${payload.promotionPlatformQueue.length} promotion-platform routes, ${payload.computerUseQueue.length} Computer Use sources, ${payload.curatedEventsApplied} curated updates, and ${djItineraryStats.rowCount} tracked DJ itinerary rows.`);
 }
 
 main()

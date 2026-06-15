@@ -1,6 +1,6 @@
 # Source Log
 
-Last refreshed: 2026-06-15, Asia/Shanghai.
+Last refreshed: 2026-06-16, Asia/Shanghai.
 
 ## Source Priority
 
@@ -37,6 +37,14 @@ Rules for worldwide overlay rows: official artist pages win for city/date confir
 - Promoter posters: image posts, stories, reposts, and OCR/extraction from posters.
 - Ticketing apps: ShowStart, Damai, PiaoPlanet, and mini-program ticket flows.
 - DJ/label accounts: WeChat, XHS, Weibo, Bandcamp, official pages, and public Instagram snippets for tour or label-night announcements. Do not request Instagram login; keep Instagram-only evidence as `social-lead`.
+
+## Venue / Promoter Promotion Network
+
+Added `config/promotion-platform-network.json` as the persistent venue/promoter graph. It currently seeds known Shanghai electronic venues and organizers from recent RA rows plus user-confirmed screenshot ingests: Heim, Wigwam, Abyss, ILLUM, EXIT, Yuyintang, POTENT, Reactor, Dirty House, Specters, FaQ, Liminal Dreams, Earworthy, DiscChef, SO.READY, Normie Corporation, LIQUID DOLLS, YOUSHAN, HouseHeadz Records, and Minuit.
+
+Workflow rule: Resident Advisor remains the first source class. After RA, `scripts/scrape-events.js` now reads the promotion network and writes `promotionPlatformQueue` plus `quality.promotionPlatformNetwork` into `data/events.json`. These entity-specific WeChat, XHS, Yuyuan mini-program, ShowStart, SmartShanghai context, and public-index routes are inserted into `computerUseQueue` before generic social/keyword discovery. Every future screenshot ingest should update this network when it reveals a new venue, promoter, account name, ticketing route, or recurring series.
+
+Anti-scrape rule preserved in the network: use platform-native search first for XHS, WeChat, Sogou, ticketing, and public social pages; stop on login/captcha/security-limit pages; ask the user only for XHS/WeChat login-assisted viewing when needed; never ask for Instagram login or treat Instagram-only snippets as current-event confirmation.
 
 Each Computer Use item should capture the full event record, not only the listing summary:
 

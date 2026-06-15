@@ -42,14 +42,16 @@ Add a short note with the screenshots when possible:
    - `social-lead`
    - `venue-context`
 
-3. Add or update only current and future events by default. Past events are archive repair only when explicitly requested.
+3. Update `config/promotion-platform-network.json` when a screenshot reveals a venue, promoter, ticketing route, official account, recurring series, or platform handle that is not already represented. Future scraping must search this venue/promoter network before generic keyword discovery.
 
-4. Fill core fields before non-core enrichment:
+4. Add or update only current and future events by default. Past events are archive repair only when explicitly requested.
+
+5. Fill core fields before non-core enrichment:
 
    - Core: `date`, `title`, `time`, `venue`, `address`, `lineup`, `price`, `age`, `ticketUrl`, `ticketStatus`, `sourceUrl`, `checkedSource`, `performerProfileSources`.
    - Non-core: `poster`, `recommendationReason`, `bestFor`, `verifyBeforeGoing`, `sourceConfidence`, `soundTags`, `decisionTags`.
 
-5. If a core field is not visible, mark it as a source gap. Do not infer age policy, direct ticket URL, exact running order, or set times from a poster.
+6. If a core field is not visible, mark it as a source gap. Do not infer age policy, direct ticket URL, exact running order, or set times from a poster.
 
 ## Poster Handling
 
@@ -71,8 +73,9 @@ Add a short note with the screenshots when possible:
 3. Do not invent public `ticketUrl` values from mini-program screenshots. Put the route in `ticketStatus`, `sourceConfidence`, and source notes.
 4. Add `posterEvidence.localFiles` for all relevant screenshots and cropped covers.
 5. Add a clearly labeled HTTP venue-context source if the strict audit requires an HTTP source, but state that it is context only and not event confirmation.
-6. For DJs with no standalone public source, add an event-role profile only. Keep the summary limited to the visible lineup role and do not invent biographies.
-7. For DJs with existing stronger profiles, add itinerary and screenshot sources without replacing their stronger source-backed summaries.
+6. Maintain `config/promotion-platform-network.json` with any newly confirmed venue/promoter/platform route. Store account names, search queries, route type, trust role, access mode, and anti-scrape policy; do not guess social deep links.
+7. For DJs with no standalone public source, add an event-role profile only. Keep the summary limited to the visible lineup role and do not invent biographies.
+8. For DJs with existing stronger profiles, add itinerary and screenshot sources without replacing their stronger source-backed summaries.
 
 ## Recommendation Copy
 
@@ -124,6 +127,7 @@ After a successful ingest, update `SOURCE_LOG.md` or `PROJECT_MEMORY.md` with:
 - screenshots received
 - assets copied/cropped/compressed
 - events added or updated
+- venue/promoter platform-network routes added or changed
 - DJ profiles added or enriched
 - unresolved gaps
 - validation commands and results
