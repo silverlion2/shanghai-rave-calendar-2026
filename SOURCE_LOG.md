@@ -616,3 +616,54 @@ Validation:
 - `node scripts/check.js` passed: 3362 local links across 119 HTML/CSS files and 27 inline scripts.
 - `npm run check` passed with 70 tests.
 - `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json` passed with 0 must-fix and 0 should-fix findings.
+
+## 2026-06-15 User-Provided Abyss / Yuyuan Ticketing Evidence
+
+The user supplied Abyss June program and Yuyuan WeChat mini-program ticketing screenshots. Treat these as manually confirmed ticketing evidence when the screenshot itself shows title/date/time/venue/price/ticket state. Do not invent public ticket URLs from mini-program screenshots.
+
+Assets copied and optimized under `assets/posters/`:
+
+- `abyss-june-2026-program.png`
+- `abyss-kirk-ticket.png`
+- `abyss-kirk-ticket-cover.jpg`
+- `abyss-hardcore-melancholia-ticket.png`
+- `abyss-hardcore-melancholia-clean-source.png`
+- `abyss-hardcore-melancholia-cover.jpg`
+- `abyss-botox-fatal-ticket.png`
+- `abyss-botox-fatal-ticket-cover.jpg`
+- `abyss-cum-chemical-love-ticket.png`
+- `abyss-cum-chemical-love-clean-source.jpg`
+- `abyss-cum-chemical-love-cover.jpg`
+
+Canonical updates:
+
+- Added `abyss-faq-kirk` for Jun 19 at Abyss Shanghai, 22:00, 110 RMB+, with lineup Kirk / Shukai / Fischmonger / SHU / PASHRAWBOI / Headrush b2b Nitta.
+- Added `abyss-hardcore-melancholia` for Jun 20 at Abyss Shanghai, 22:00, 100 RMB+, with lineup LOLALITA / BRENNT / XIWI / Not Your Daddy / DJ LOVERBOY.
+- Upgraded `botox-fatale` from Watch to a Medium-confidence upcoming event: `Obsesion Total: BOTOX FATAL (live)`, Jun 26 at Abyss Shanghai, 22:00, 90 RMB+, with lineup BOTOX FATAL / TUI / Kong BB / Noodleprince.
+- Added `abyss-cum-chemical-love` for Jun 27 at Abyss Shanghai, 22:00, 90 RMB+, with lineup Discipline b2b PRYMARA / LaGlory / FMRL / Extreme John / GOGA / Oil Nature.
+
+DJ profile updates:
+
+- Added screenshot-backed event-role profiles for new Abyss lineup names that lacked standalone public sources.
+- Existing stronger profiles such as DISCIPLINE, PASHRAWBOI, EXTREME JOHN, Oil Nature, and BOTOX FATAL were enriched with Abyss screenshot evidence and itinerary rows without replacing their stronger RA / public-source context.
+
+Poster handling:
+
+- Ticketing homepage screenshots remain full evidence files.
+- Poster wall uses cropped upper cover images or clean source images with the lower ticketing menu removed.
+- `npm run posters:prepare` generated optimized display assets and `data/poster-archive.json` now has 63 poster records.
+
+Open gaps:
+
+- No direct public ticket URL was captured for the Yuyuan mini-program pages.
+- Age policy and final running order/set times are not visible in the screenshots.
+- Abyss monthly poster rows for Jun 5, Jun 6, Jun 12, and Jun 13 are past as of 2026-06-15, so they were not added as new future listings in this pass.
+
+Validation:
+
+- `node scripts/scrape-events.js` with `SCRAPE_MAX_DETAIL_PAGES=0`: 99 events, 79 curated updates, 40 tracked DJ itinerary rows.
+- `npm run posters:prepare`: 12 Abyss poster assets optimized, 63 poster records generated.
+- `node scripts/generate-seo-pages.js`: generated 99 event detail pages and `sitemap.xml`.
+- `node scripts/check.js`: passed, 3460 local links across 122 HTML/CSS files.
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json`: 0 must-fix, 0 should-fix.
+- `npm run check`: passed with 70 tests.

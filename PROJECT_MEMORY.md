@@ -1313,6 +1313,32 @@ Validation:
 - `node --test tests/trust-framework.test.js` passed.
 - `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json` passed with 0 findings.
 
+## 2026-06-15 Abyss User Evidence Ingest
+
+The user supplied Abyss June program and Yuyuan WeChat mini-program ticketing screenshots. Updated state:
+
+- Added `abyss-faq-kirk` for Jun 19 at Abyss Shanghai, 22:00, 110 RMB+, with Kirk / Shukai / Fischmonger / SHU / PASHRAWBOI / Headrush b2b Nitta.
+- Added `abyss-hardcore-melancholia` for Jun 20 at Abyss Shanghai, 22:00, 100 RMB+, with LOLALITA / BRENNT / XIWI / Not Your Daddy / DJ LOVERBOY.
+- Upgraded `botox-fatale` into `Obsesion Total: BOTOX FATAL (live)` for Jun 26 at Abyss Shanghai, 22:00, 90 RMB+, with BOTOX FATAL / TUI / Kong BB / Noodleprince.
+- Added `abyss-cum-chemical-love` for Jun 27 at Abyss Shanghai, 22:00, 90 RMB+, with Discipline b2b PRYMARA / LaGlory / FMRL / Extreme John / GOGA / Oil Nature.
+- Added or enriched Abyss lineup DJ profiles with screenshot-backed itinerary evidence. Existing stronger RA/public-source profiles were preserved and only supplemented.
+
+Poster/evidence handling:
+
+- Full Yuyuan ticketing screenshots remain evidence for title, date, time, venue, price, e-ticket, no-refund label, and `abyss_service`.
+- Public poster wall uses cropped/clean cover images without the lower ticketing menu.
+- Direct public ticket URLs, age policy, and running order remain explicit gaps.
+- Abyss monthly rows before 2026-06-15 were not added as new future listings.
+
+Validation:
+
+- `node scripts/scrape-events.js` with `SCRAPE_MAX_DETAIL_PAGES=0`: 99 events.
+- `npm run posters:prepare`: 63 poster records.
+- `node scripts/generate-seo-pages.js`: 99 event pages.
+- `node scripts/check.js`: passed.
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json`: 0 must-fix, 0 should-fix.
+- `npm run check`: passed with 70 tests.
+
 ## 2026-06-15 Favicon Refresh And Production Deploy
 
 The user selected the existing Basement Dispatch stamp artwork as the site favicon.

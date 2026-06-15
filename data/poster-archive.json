@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T13:20:17.522Z",
+  "generatedAt": "2026-06-15T13:43:31.986Z",
   "sourceData": "data/events.json",
   "storagePolicy": {
     "mode": "static-json-plus-local-optimized-assets",
@@ -7,16 +7,16 @@
     "rule": "Use optimized display assets in the wall; keep raw poster files out of the default browsing path when the archive grows."
   },
   "stats": {
-    "posters": 59,
+    "posters": 63,
     "years": [
       2026
     ],
     "venues": 29,
-    "optimizedCount": 59,
-    "displayBytes": 10822040,
-    "sourceBytes": 36150396,
-    "displayMegabytes": 10.32,
-    "sourceMegabytes": 34.48,
+    "optimizedCount": 63,
+    "displayBytes": 11240428,
+    "sourceBytes": 36680304,
+    "displayMegabytes": 10.72,
+    "sourceMegabytes": 34.98,
     "freeTierSoftCapBytes": 83886080,
     "freeTierSoftCapMegabytes": 80
   },
@@ -151,6 +151,52 @@
       },
       "eventUrl": "events/shanghai-mushroom-music-carnival-2026.html",
       "notes": "Large Qiantan Sports Park pop festival with official ticket channels on Damai, Maoyan, and Ticket Planet. Date, venue, and pop lineup are now corroborated by multiple public rows; keep as Watch because the techno fit is low and live ticket inventory still needs platform recheck before any purchase CTA."
+    },
+    {
+      "id": "shanghai-2026-abyss-cum-chemical-love",
+      "eventId": "abyss-cum-chemical-love",
+      "title": "C.U.M. Chemical Love",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 27",
+      "sortDate": "2026-06-27",
+      "time": "22:00",
+      "venue": "Abyss Shanghai",
+      "district": "Huangpu",
+      "sound": "hard techno, rave, hard club, local support",
+      "tags": [
+        "upcoming",
+        "medium",
+        "huangpu",
+        "hard",
+        "underground",
+        "hard techno",
+        "rave",
+        "hard club",
+        "local support"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Yuyuan WeChat mini-program ticketing + Abyss June program screenshot",
+        "url": "assets/posters/abyss-cum-chemical-love-ticket.png",
+        "posterEvidenceUrl": "assets/posters/abyss-cum-chemical-love-ticket.png",
+        "posterEvidenceSource": "Yuyuan WeChat mini-program ticketing screenshot manually confirmed by user, cross-checked against the Abyss June program screenshot",
+        "posterEvidenceStatus": "Ticketing screen confirms C.U.M. at Abyss on 2026-06-27 22:00 with price from 90 RMB, e-ticket, no-refund label, and abyss_service customer-service route. Poster wall uses the clean cover image without the lower ticketing menu; the original Yuyuan ticketing screenshot is retained as evidence. The Abyss monthly program screenshot supplies the CUM CHEMICAL LOVE event title and full lineup."
+      },
+      "image": {
+        "thumbnail": "assets/posters/abyss-cum-chemical-love-cover-optimized.jpg",
+        "display": "assets/posters/abyss-cum-chemical-love-cover-optimized.jpg",
+        "sourceAsset": "assets/posters/abyss-cum-chemical-love-cover.jpg",
+        "displayBytes": 87737,
+        "sourceBytes": 115056,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/abyss-cum-chemical-love.html",
+      "notes": "Abyss Jun 27 C.U.M. Chemical Love with Discipline b2b PRYMARA, LaGlory, FMRL, Extreme John, GOGA, and Oil Nature. The Yuyuan ticketing screenshot confirms the 22:00 start, Abyss club venue, 90 RMB+ ticket tier, e-ticket state, and no-refund label."
     },
     {
       "id": "shanghai-2026-heim-discchef-roto-anniversary",
@@ -417,6 +463,52 @@
       "notes": "Heim Invites brings Berlin producer and Nachtcrew co-founder DINA into the M101 room with Huizit, Kilo-Vee, and HeShang, leaning spacious, bass-heavy, trance-adjacent, and art-club rather than straight hard techno."
     },
     {
+      "id": "shanghai-2026-botox-fatale",
+      "eventId": "botox-fatale",
+      "title": "Obsesion Total: BOTOX FATAL (live)",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 26",
+      "sortDate": "2026-06-26",
+      "time": "22:00",
+      "venue": "Abyss Shanghai",
+      "district": "Huangpu",
+      "sound": "hard techno, industrial, rave, EBM",
+      "tags": [
+        "upcoming",
+        "medium",
+        "huangpu",
+        "hard",
+        "underground",
+        "hard techno",
+        "industrial",
+        "rave",
+        "ebm"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Yuyuan WeChat mini-program ticketing + Abyss June program screenshot",
+        "url": "assets/posters/abyss-botox-fatal-ticket.png",
+        "posterEvidenceUrl": "assets/posters/abyss-botox-fatal-ticket.png",
+        "posterEvidenceSource": "Yuyuan WeChat mini-program ticketing screenshot manually confirmed by user, cross-checked against the Abyss June program screenshot",
+        "posterEvidenceStatus": "Ticketing screen confirms Obsesion Total / BOTOX FATAL at Abyss on 2026-06-26 22:00 with price from 90 RMB, e-ticket, no-refund label, and abyss_service customer-service route. Poster wall uses the cropped upper cover image without the lower ticketing menu; the original Yuyuan ticketing screenshot is retained as evidence. The Abyss monthly program screenshot supplies BOTOX FATAL (LIVE), TUI, Kong BB, and Noodleprince."
+      },
+      "image": {
+        "thumbnail": "assets/posters/abyss-botox-fatal-ticket-cover-optimized.jpg",
+        "display": "assets/posters/abyss-botox-fatal-ticket-cover-optimized.jpg",
+        "sourceAsset": "assets/posters/abyss-botox-fatal-ticket-cover.jpg",
+        "displayBytes": 76842,
+        "sourceBytes": 90730,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/botox-fatale.html",
+      "notes": "Abyss Jun 26 Obsesion Total with BOTOX FATAL (live), TUI, Kong BB, and Noodleprince. The new Yuyuan ticketing screenshot confirms the 22:00 start, Abyss club venue, 90 RMB+ ticket tier, e-ticket state, and no-refund label, upgrading the previous watch lead into a confirmed upcoming listing."
+    },
+    {
       "id": "shanghai-2026-friendsstandout",
       "eventId": "friendsstandout",
       "title": "FRIENDSSTANDout",
@@ -592,6 +684,52 @@
       },
       "eventUrl": "events/enchanted-night-the-nest.html",
       "notes": "RA lists Enchanted Night as a 2000s pop/disco party at TBA - The Nest with SOLO and ALI RIBO. Keep as complete RA coverage, not a rave pick."
+    },
+    {
+      "id": "shanghai-2026-abyss-hardcore-melancholia",
+      "eventId": "abyss-hardcore-melancholia",
+      "title": "Hardcore Melancholia: LOLALITA & BRENNT",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 20",
+      "sortDate": "2026-06-20",
+      "time": "22:00",
+      "venue": "Abyss Shanghai",
+      "district": "Huangpu",
+      "sound": "hardcore, hard dance, rave, hard club",
+      "tags": [
+        "upcoming",
+        "medium",
+        "huangpu",
+        "hard",
+        "underground",
+        "hardcore",
+        "hard dance",
+        "rave",
+        "hard club"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Yuyuan WeChat mini-program ticketing + Abyss June program screenshot",
+        "url": "assets/posters/abyss-hardcore-melancholia-ticket.png",
+        "posterEvidenceUrl": "assets/posters/abyss-hardcore-melancholia-ticket.png",
+        "posterEvidenceSource": "Yuyuan WeChat mini-program ticketing screenshot manually confirmed by user, cross-checked against the Abyss June program screenshot",
+        "posterEvidenceStatus": "Ticketing screen confirms LOLALITA / BRENNT at Abyss on 2026-06-20 22:00 with price from 100 RMB, e-ticket, no-refund label, and abyss_service customer-service route. Poster wall uses the clean/cropped cover image without the lower ticketing menu; the original Yuyuan ticketing screenshot is retained as evidence. The Abyss monthly program screenshot supplies the Hardcore Melancholia event title and full lineup."
+      },
+      "image": {
+        "thumbnail": "assets/posters/abyss-hardcore-melancholia-cover-optimized.jpg",
+        "display": "assets/posters/abyss-hardcore-melancholia-cover-optimized.jpg",
+        "sourceAsset": "assets/posters/abyss-hardcore-melancholia-cover.jpg",
+        "displayBytes": 174488,
+        "sourceBytes": 231091,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/abyss-hardcore-melancholia.html",
+      "notes": "Abyss Saturday Hardcore Melancholia with LOLALITA, BRENNT, XIWI, Not Your Daddy, and DJ LOVERBOY. The Yuyuan ticketing screenshot confirms the 22:00 start, Abyss club venue, 100 RMB+ ticket tier, e-ticket state, and no-refund label."
     },
     {
       "id": "shanghai-2026-jasmin-knopha",
@@ -814,6 +952,51 @@
       },
       "eventUrl": "events/heim-earworthy-selected-sound.html",
       "notes": "Earworthy / Selected Sound Shanghai stop at Heim, running from afternoon into late night with Jasper, Lenny G, M!na, Tiehan, Toshio, Vincent aka Jinrong DJ, and Yuqi."
+    },
+    {
+      "id": "shanghai-2026-abyss-faq-kirk",
+      "eventId": "abyss-faq-kirk",
+      "title": "FaQ Pres. KIRK",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 19",
+      "sortDate": "2026-06-19",
+      "time": "22:00",
+      "venue": "Abyss Shanghai",
+      "district": "Huangpu",
+      "sound": "hard techno, rave, high-bpm club",
+      "tags": [
+        "upcoming",
+        "medium",
+        "huangpu",
+        "hard",
+        "underground",
+        "hard techno",
+        "rave",
+        "high-bpm club"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Yuyuan WeChat mini-program ticketing + Abyss June program screenshot",
+        "url": "assets/posters/abyss-kirk-ticket.png",
+        "posterEvidenceUrl": "assets/posters/abyss-kirk-ticket.png",
+        "posterEvidenceSource": "Yuyuan WeChat mini-program ticketing screenshot manually confirmed by user, cross-checked against the Abyss June program screenshot",
+        "posterEvidenceStatus": "Ticketing screen confirms Kirk at Abyss on 2026-06-19 22:00 with price from 110 RMB, e-ticket, no-refund label, and abyss_service customer-service route. Poster wall uses the cropped upper cover image without the lower ticketing menu; the original Yuyuan ticketing screenshot is retained as evidence. The Abyss monthly program screenshot supplies the full FaQ Pres. KIRK lineup."
+      },
+      "image": {
+        "thumbnail": "assets/posters/abyss-kirk-ticket-cover-optimized.jpg",
+        "display": "assets/posters/abyss-kirk-ticket-cover-optimized.jpg",
+        "sourceAsset": "assets/posters/abyss-kirk-ticket-cover.jpg",
+        "displayBytes": 79321,
+        "sourceBytes": 93031,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/abyss-faq-kirk.html",
+      "notes": "Abyss Friday booking for FaQ Pres. KIRK with Kirk, Shukai, Fischmonger, SHU, PASHRAWBOI, and Headrush b2b Nitta. The Yuyuan ticketing screenshot confirms the 22:00 start, Abyss club venue, 110 RMB+ ticket tier, e-ticket state, and no-refund label."
     },
     {
       "id": "shanghai-2026-mrd",

@@ -600,17 +600,20 @@ window.DJ_ITINERARY_DATA = {
   "pashrawboi": {
     "slug": "pashrawboi",
     "name": "PASHRAWBOI",
-    "trackedAt": "2026-06-14",
+    "trackedAt": "2026-06-15",
     "checkedByTimezone": "Asia/Shanghai",
     "scope": "Shanghai local DJ source profile",
     "imageTheme": "acid",
     "genres": [
       "hard techno",
       "hardcore",
-      "high-energy electronic"
+      "high-energy electronic",
+      "hard techno context",
+      "rave context",
+      "Abyss lineup"
     ],
     "summary": "Shanghai high-energy electronic DJ profile preserved for source context across Abyss, Reactor, and local radio appearances.",
-    "sourceNote": "Profile-level sources confirm Shanghai origin or recurring DJ activity; use event rows for exact upcoming event confidence and ticket status.",
+    "sourceNote": "Profile-level sources confirm Shanghai origin or recurring DJ activity; use event rows for exact upcoming event confidence and ticket status. Current Abyss/Yuyuan screenshots confirm a 2026-06-19 Abyss lineup role; event rows remain authoritative for ticketing.",
     "sources": [
       {
         "label": "byyb.radio PASHRAWBOI set",
@@ -624,10 +627,31 @@ window.DJ_ITINERARY_DATA = {
         "url": "https://ra.co/events/2071862",
         "status": "secondary",
         "checked": "2026-06-14"
+      },
+      {
+        "label": "Abyss June 2026 program screenshot",
+        "url": "assets/posters/abyss-june-2026-program.png",
+        "status": "official-social-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "Yuyuan ticketing screenshot - Kirk at Abyss",
+        "url": "assets/posters/abyss-kirk-ticket.png",
+        "status": "wechat-miniprogram-ticketing-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "SmartShanghai Abyss venue context",
+        "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+        "status": "venue-context",
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ],
     "itinerary": [],
-    "aliases": []
+    "aliases": [
+      "PASHRAWBOI"
+    ]
   },
   "gaoqiao": {
     "slug": "gaoqiao",
@@ -740,17 +764,20 @@ window.DJ_ITINERARY_DATA = {
   "discipline": {
     "slug": "discipline",
     "name": "DISCIPLINE",
-    "trackedAt": "2026-06-14",
+    "trackedAt": "2026-06-15",
     "checkedByTimezone": "Asia/Shanghai",
     "scope": "Shanghai/Abyss DJ source profile",
     "imageTheme": "steel",
     "genres": [
       "techno",
       "hard techno",
-      "club"
+      "club",
+      "hard techno context",
+      "rave context",
+      "Abyss lineup"
     ],
     "summary": "China-based DJ profile with RA artist-page evidence and repeated Abyss Shanghai appearances.",
-    "sourceNote": "Profile-level sources confirm RA artist stats and venue history; event rows remain authoritative for upcoming dates and ticketing.",
+    "sourceNote": "Profile-level sources confirm RA artist stats and venue history; event rows remain authoritative for upcoming dates and ticketing. Current Abyss/Yuyuan screenshots confirm a 2026-06-27 Abyss lineup role; event rows remain authoritative for ticketing.",
     "sources": [
       {
         "label": "RA DISCIPLINE artist profile",
@@ -763,10 +790,32 @@ window.DJ_ITINERARY_DATA = {
         "url": "https://localhub.to/shanghai/venue/abyss-shanghai?lang=en",
         "status": "venue-context",
         "checked": "2026-06-14"
+      },
+      {
+        "label": "Abyss June 2026 program screenshot",
+        "url": "assets/posters/abyss-june-2026-program.png",
+        "status": "official-social-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "Yuyuan ticketing screenshot - C.U.M. Chemical Love",
+        "url": "assets/posters/abyss-cum-chemical-love-ticket.png",
+        "status": "wechat-miniprogram-ticketing-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "SmartShanghai Abyss venue context",
+        "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+        "status": "venue-context",
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ],
     "itinerary": [],
-    "aliases": []
+    "aliases": [
+      "DISCIPLINE",
+      "Discipline"
+    ]
   },
   "altieri3000": {
     "slug": "altieri3000",
@@ -1701,7 +1750,7 @@ window.DJ_ITINERARY_DATA = {
     "aliases": []
   },
   "extreme-john": {
-    "trackedAt": "2026-06-14",
+    "trackedAt": "2026-06-15",
     "checkedByTimezone": "Asia/Shanghai",
     "itinerary": [],
     "slug": "extreme-john",
@@ -1712,19 +1761,44 @@ window.DJ_ITINERARY_DATA = {
       "techno",
       "industrial techno",
       "hard techno",
-      "hardcore"
+      "hardcore",
+      "hard techno context",
+      "rave context",
+      "Abyss lineup"
     ],
     "summary": "Lineup-only profile preserved for the A.T.M / Reactor booking. Keep claims limited to the RA-listed Shanghai appearance until a stronger artist profile is verified.",
-    "sourceNote": "RA confirms EXTREME JOHN on the June 20 A.T.M lineup; no standalone public biography source was verified in this pass.",
+    "sourceNote": "RA confirms EXTREME JOHN on the June 20 A.T.M lineup; no standalone public biography source was verified in this pass. Current Abyss/Yuyuan screenshots confirm a 2026-06-27 Abyss lineup role; event rows remain authoritative for ticketing.",
     "sources": [
       {
         "label": "RA A.T.M Pres. LEO MONIRA event",
         "url": "https://ra.co/events/2466700",
         "status": "trusted-ra",
         "checked": "2026-06-14"
+      },
+      {
+        "label": "Abyss June 2026 program screenshot",
+        "url": "assets/posters/abyss-june-2026-program.png",
+        "status": "official-social-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "Yuyuan ticketing screenshot - C.U.M. Chemical Love",
+        "url": "assets/posters/abyss-cum-chemical-love-ticket.png",
+        "status": "wechat-miniprogram-ticketing-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "SmartShanghai Abyss venue context",
+        "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+        "status": "venue-context",
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ],
-    "aliases": []
+    "aliases": [
+      "EXTREME JOHN",
+      "Extreme John"
+    ]
   },
   "heshang": {
     "trackedAt": "2026-06-14",
@@ -1830,7 +1904,7 @@ window.DJ_ITINERARY_DATA = {
     "aliases": []
   },
   "oil-nature": {
-    "trackedAt": "2026-06-14",
+    "trackedAt": "2026-06-15",
     "checkedByTimezone": "Asia/Shanghai",
     "itinerary": [],
     "slug": "oil-nature",
@@ -1841,19 +1915,43 @@ window.DJ_ITINERARY_DATA = {
       "techno",
       "industrial techno",
       "hard techno",
-      "hardcore"
+      "hardcore",
+      "hard techno context",
+      "rave context",
+      "Abyss lineup"
     ],
     "summary": "Lineup-only profile preserved for the A.T.M / Reactor booking. Keep claims limited to the RA-listed Shanghai appearance until stronger artist sources are verified.",
-    "sourceNote": "RA confirms Oil Nature on the June 20 A.T.M lineup; no standalone public biography source was verified in this pass.",
+    "sourceNote": "RA confirms Oil Nature on the June 20 A.T.M lineup; no standalone public biography source was verified in this pass. Current Abyss/Yuyuan screenshots confirm a 2026-06-27 Abyss lineup role; event rows remain authoritative for ticketing.",
     "sources": [
       {
         "label": "RA A.T.M Pres. LEO MONIRA event",
         "url": "https://ra.co/events/2466700",
         "status": "trusted-ra",
         "checked": "2026-06-14"
+      },
+      {
+        "label": "Abyss June 2026 program screenshot",
+        "url": "assets/posters/abyss-june-2026-program.png",
+        "status": "official-social-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "Yuyuan ticketing screenshot - C.U.M. Chemical Love",
+        "url": "assets/posters/abyss-cum-chemical-love-ticket.png",
+        "status": "wechat-miniprogram-ticketing-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "SmartShanghai Abyss venue context",
+        "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+        "status": "venue-context",
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ],
-    "aliases": []
+    "aliases": [
+      "Oil Nature"
+    ]
   },
   "quan": {
     "trackedAt": "2026-06-14",
@@ -2029,13 +2127,14 @@ window.DJ_ITINERARY_DATA = {
     ]
   },
   "botox-fatale": {
-    "trackedAt": "2026-06-14",
+    "trackedAt": "2026-06-15",
     "checkedByTimezone": "Asia/Shanghai",
     "itinerary": [],
     "slug": "botox-fatale",
     "name": "BOTOX FATAL",
     "aliases": [
-      "Botox Fatale"
+      "Botox Fatale",
+      "BOTOX FATAL"
     ],
     "scope": "Hard-techno / Abyss watch profile",
     "imageTheme": "steel",
@@ -2044,10 +2143,11 @@ window.DJ_ITINERARY_DATA = {
       "industrial",
       "rave",
       "EBM",
-      "techno"
+      "techno",
+      "live electronic"
     ],
-    "summary": "Hard-techno profile preserved for the Abyss watch lead. Public sources support BOTOX FATAL as a China-tour artist and hard/industrial techno act, but do not independently confirm the Shanghai event.",
-    "sourceNote": "RA confirms the nearby Shenzhen OIL Club date and lineup identity; Gomboc/Bandcamp supports the hard techno, industrial, rave, EBM, and techno lane. SmartShanghai remains the only Shanghai event-level source.",
+    "summary": "BOTOX FATAL is screenshot-confirmed for a live Obsesion Total set at Abyss on 2026-06-26. Existing RA/Bandcamp/Gomboc context supports the hard techno, industrial, rave, and EBM lane.",
+    "sourceNote": "RA and Gomboc/Bandcamp support BOTOX FATAL artist context and hard techno / industrial / rave / EBM positioning. Current Abyss/Yuyuan screenshots confirm the 2026-06-26 Shanghai role, live billing, and ticketing fields; event rows remain authoritative for local ticket details.",
     "sources": [
       {
         "label": "RA BOTOX FATAL Shenzhen event",
@@ -2066,6 +2166,25 @@ window.DJ_ITINERARY_DATA = {
         "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
         "status": "watchlist-event-source",
         "checked": "2026-06-14"
+      },
+      {
+        "label": "Abyss June 2026 program screenshot",
+        "url": "assets/posters/abyss-june-2026-program.png",
+        "status": "official-social-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "Yuyuan ticketing screenshot - Obsesion Total",
+        "url": "assets/posters/abyss-botox-fatal-ticket.png",
+        "status": "wechat-miniprogram-ticketing-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "SmartShanghai Abyss venue context",
+        "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+        "status": "venue-context",
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ]
   },
@@ -3664,6 +3783,731 @@ window.DJ_ITINERARY_DATA = {
         "status": "venue-context",
         "checked": "2026-06-15",
         "note": "Venue context only; Liminal Dreams/Wigwam screenshots remain the source for IIN's June 20 lineup role."
+      }
+    ]
+  },
+  "kirk": {
+    "slug": "kirk",
+    "name": "Kirk",
+    "aliases": [
+      "Kirk"
+    ],
+    "trackedAt": "2026-06-15",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "FaQ Pres. KIRK / Abyss event-role profile",
+    "imageTheme": "ember",
+    "genres": [
+      "hard techno context",
+      "rave context",
+      "Abyss lineup"
+    ],
+    "summary": "Kirk is preserved as part of the screenshot-confirmed FaQ Pres. KIRK lineup at Abyss on 2026-06-19. Broader artist biography and discography were not independently verified in this pass.",
+    "sourceNote": "Use this as a screenshot-backed event-role profile for FaQ Pres. KIRK. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+    "sources": [
+      {
+        "label": "Abyss June 2026 program screenshot",
+        "url": "assets/posters/abyss-june-2026-program.png",
+        "status": "official-social-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "Yuyuan ticketing screenshot - Kirk at Abyss",
+        "url": "assets/posters/abyss-kirk-ticket.png",
+        "status": "wechat-miniprogram-ticketing-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "SmartShanghai Abyss venue context",
+        "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+        "status": "venue-context",
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+      }
+    ]
+  },
+  "shukai": {
+    "slug": "shukai",
+    "name": "Shukai",
+    "aliases": [
+      "Shukai"
+    ],
+    "trackedAt": "2026-06-15",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "FaQ Pres. KIRK / Abyss event-role profile",
+    "imageTheme": "ember",
+    "genres": [
+      "hard techno context",
+      "rave context",
+      "Abyss lineup"
+    ],
+    "summary": "Shukai is preserved as part of the screenshot-confirmed FaQ Pres. KIRK lineup at Abyss on 2026-06-19. Broader artist biography and discography were not independently verified in this pass.",
+    "sourceNote": "Use this as a screenshot-backed event-role profile for FaQ Pres. KIRK. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+    "sources": [
+      {
+        "label": "Abyss June 2026 program screenshot",
+        "url": "assets/posters/abyss-june-2026-program.png",
+        "status": "official-social-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "Yuyuan ticketing screenshot - Kirk at Abyss",
+        "url": "assets/posters/abyss-kirk-ticket.png",
+        "status": "wechat-miniprogram-ticketing-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "SmartShanghai Abyss venue context",
+        "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+        "status": "venue-context",
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+      }
+    ]
+  },
+  "fischmonger": {
+    "slug": "fischmonger",
+    "name": "Fischmonger",
+    "aliases": [
+      "Fischmonger"
+    ],
+    "trackedAt": "2026-06-15",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "FaQ Pres. KIRK / Abyss event-role profile",
+    "imageTheme": "ember",
+    "genres": [
+      "hard techno context",
+      "rave context",
+      "Abyss lineup"
+    ],
+    "summary": "Fischmonger is preserved as part of the screenshot-confirmed FaQ Pres. KIRK lineup at Abyss on 2026-06-19. Broader artist biography and discography were not independently verified in this pass.",
+    "sourceNote": "Use this as a screenshot-backed event-role profile for FaQ Pres. KIRK. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+    "sources": [
+      {
+        "label": "Abyss June 2026 program screenshot",
+        "url": "assets/posters/abyss-june-2026-program.png",
+        "status": "official-social-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "Yuyuan ticketing screenshot - Kirk at Abyss",
+        "url": "assets/posters/abyss-kirk-ticket.png",
+        "status": "wechat-miniprogram-ticketing-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "SmartShanghai Abyss venue context",
+        "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+        "status": "venue-context",
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+      }
+    ]
+  },
+  "shu": {
+    "slug": "shu",
+    "name": "SHU",
+    "aliases": [
+      "SHU"
+    ],
+    "trackedAt": "2026-06-15",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "FaQ Pres. KIRK / Abyss event-role profile",
+    "imageTheme": "ember",
+    "genres": [
+      "hard techno context",
+      "rave context",
+      "Abyss lineup"
+    ],
+    "summary": "SHU is preserved as part of the screenshot-confirmed FaQ Pres. KIRK lineup at Abyss on 2026-06-19. Broader artist biography and discography were not independently verified in this pass.",
+    "sourceNote": "Use this as a screenshot-backed event-role profile for FaQ Pres. KIRK. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+    "sources": [
+      {
+        "label": "Abyss June 2026 program screenshot",
+        "url": "assets/posters/abyss-june-2026-program.png",
+        "status": "official-social-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "Yuyuan ticketing screenshot - Kirk at Abyss",
+        "url": "assets/posters/abyss-kirk-ticket.png",
+        "status": "wechat-miniprogram-ticketing-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "SmartShanghai Abyss venue context",
+        "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+        "status": "venue-context",
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+      }
+    ]
+  },
+  "headrush": {
+    "slug": "headrush",
+    "name": "Headrush",
+    "aliases": [
+      "Headrush"
+    ],
+    "trackedAt": "2026-06-15",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "FaQ Pres. KIRK / Abyss event-role profile",
+    "imageTheme": "ember",
+    "genres": [
+      "hard techno context",
+      "rave context",
+      "Abyss lineup"
+    ],
+    "summary": "Headrush is preserved as part of the screenshot-confirmed FaQ Pres. KIRK lineup at Abyss on 2026-06-19. Broader artist biography and discography were not independently verified in this pass.",
+    "sourceNote": "Use this as a screenshot-backed event-role profile for FaQ Pres. KIRK. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+    "sources": [
+      {
+        "label": "Abyss June 2026 program screenshot",
+        "url": "assets/posters/abyss-june-2026-program.png",
+        "status": "official-social-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "Yuyuan ticketing screenshot - Kirk at Abyss",
+        "url": "assets/posters/abyss-kirk-ticket.png",
+        "status": "wechat-miniprogram-ticketing-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "SmartShanghai Abyss venue context",
+        "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+        "status": "venue-context",
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+      }
+    ]
+  },
+  "nitta": {
+    "slug": "nitta",
+    "name": "Nitta",
+    "aliases": [
+      "Nitta"
+    ],
+    "trackedAt": "2026-06-15",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "FaQ Pres. KIRK / Abyss event-role profile",
+    "imageTheme": "ember",
+    "genres": [
+      "hard techno context",
+      "rave context",
+      "Abyss lineup"
+    ],
+    "summary": "Nitta is preserved as part of the screenshot-confirmed FaQ Pres. KIRK lineup at Abyss on 2026-06-19. Broader artist biography and discography were not independently verified in this pass.",
+    "sourceNote": "Use this as a screenshot-backed event-role profile for FaQ Pres. KIRK. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+    "sources": [
+      {
+        "label": "Abyss June 2026 program screenshot",
+        "url": "assets/posters/abyss-june-2026-program.png",
+        "status": "official-social-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "Yuyuan ticketing screenshot - Kirk at Abyss",
+        "url": "assets/posters/abyss-kirk-ticket.png",
+        "status": "wechat-miniprogram-ticketing-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "SmartShanghai Abyss venue context",
+        "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+        "status": "venue-context",
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+      }
+    ]
+  },
+  "lolalita": {
+    "slug": "lolalita",
+    "name": "LOLALITA",
+    "aliases": [
+      "LOLALITA"
+    ],
+    "trackedAt": "2026-06-15",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "Hardcore Melancholia / Abyss event-role profile",
+    "imageTheme": "rose",
+    "genres": [
+      "hardcore context",
+      "hard dance context",
+      "rave context",
+      "Abyss lineup"
+    ],
+    "summary": "LOLALITA is preserved as part of the screenshot-confirmed Hardcore Melancholia lineup at Abyss on 2026-06-20. The event title supports a hard/hardcore context; broader standalone artist claims were not verified in this pass.",
+    "sourceNote": "Use this as a screenshot-backed event-role profile for Hardcore Melancholia. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+    "sources": [
+      {
+        "label": "Abyss June 2026 program screenshot",
+        "url": "assets/posters/abyss-june-2026-program.png",
+        "status": "official-social-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "Yuyuan ticketing screenshot - Hardcore Melancholia",
+        "url": "assets/posters/abyss-hardcore-melancholia-ticket.png",
+        "status": "wechat-miniprogram-ticketing-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "SmartShanghai Abyss venue context",
+        "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+        "status": "venue-context",
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+      }
+    ]
+  },
+  "brennt": {
+    "slug": "brennt",
+    "name": "BRENNT",
+    "aliases": [
+      "BRENNT"
+    ],
+    "trackedAt": "2026-06-15",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "Hardcore Melancholia / Abyss event-role profile",
+    "imageTheme": "rose",
+    "genres": [
+      "hardcore context",
+      "hard dance context",
+      "rave context",
+      "Abyss lineup"
+    ],
+    "summary": "BRENNT is preserved as part of the screenshot-confirmed Hardcore Melancholia lineup at Abyss on 2026-06-20. The event title supports a hard/hardcore context; broader standalone artist claims were not verified in this pass.",
+    "sourceNote": "Use this as a screenshot-backed event-role profile for Hardcore Melancholia. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+    "sources": [
+      {
+        "label": "Abyss June 2026 program screenshot",
+        "url": "assets/posters/abyss-june-2026-program.png",
+        "status": "official-social-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "Yuyuan ticketing screenshot - Hardcore Melancholia",
+        "url": "assets/posters/abyss-hardcore-melancholia-ticket.png",
+        "status": "wechat-miniprogram-ticketing-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "SmartShanghai Abyss venue context",
+        "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+        "status": "venue-context",
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+      }
+    ]
+  },
+  "xiwi": {
+    "slug": "xiwi",
+    "name": "XIWI",
+    "aliases": [
+      "XIWI"
+    ],
+    "trackedAt": "2026-06-15",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "Hardcore Melancholia / Abyss event-role profile",
+    "imageTheme": "rose",
+    "genres": [
+      "hardcore context",
+      "hard dance context",
+      "rave context",
+      "Abyss lineup"
+    ],
+    "summary": "XIWI is preserved as part of the screenshot-confirmed Hardcore Melancholia lineup at Abyss on 2026-06-20. The event title supports a hard/hardcore context; broader standalone artist claims were not verified in this pass.",
+    "sourceNote": "Use this as a screenshot-backed event-role profile for Hardcore Melancholia. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+    "sources": [
+      {
+        "label": "Abyss June 2026 program screenshot",
+        "url": "assets/posters/abyss-june-2026-program.png",
+        "status": "official-social-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "Yuyuan ticketing screenshot - Hardcore Melancholia",
+        "url": "assets/posters/abyss-hardcore-melancholia-ticket.png",
+        "status": "wechat-miniprogram-ticketing-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "SmartShanghai Abyss venue context",
+        "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+        "status": "venue-context",
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+      }
+    ]
+  },
+  "not-your-daddy": {
+    "slug": "not-your-daddy",
+    "name": "Not Your Daddy",
+    "aliases": [
+      "Not Your Daddy"
+    ],
+    "trackedAt": "2026-06-15",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "Hardcore Melancholia / Abyss event-role profile",
+    "imageTheme": "rose",
+    "genres": [
+      "hardcore context",
+      "hard dance context",
+      "rave context",
+      "Abyss lineup"
+    ],
+    "summary": "Not Your Daddy is preserved as part of the screenshot-confirmed Hardcore Melancholia lineup at Abyss on 2026-06-20. The event title supports a hard/hardcore context; broader standalone artist claims were not verified in this pass.",
+    "sourceNote": "Use this as a screenshot-backed event-role profile for Hardcore Melancholia. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+    "sources": [
+      {
+        "label": "Abyss June 2026 program screenshot",
+        "url": "assets/posters/abyss-june-2026-program.png",
+        "status": "official-social-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "Yuyuan ticketing screenshot - Hardcore Melancholia",
+        "url": "assets/posters/abyss-hardcore-melancholia-ticket.png",
+        "status": "wechat-miniprogram-ticketing-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "SmartShanghai Abyss venue context",
+        "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+        "status": "venue-context",
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+      }
+    ]
+  },
+  "dj-loverboy": {
+    "slug": "dj-loverboy",
+    "name": "DJ LOVERBOY",
+    "aliases": [
+      "DJ LOVERBOY"
+    ],
+    "trackedAt": "2026-06-15",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "Hardcore Melancholia / Abyss event-role profile",
+    "imageTheme": "rose",
+    "genres": [
+      "hardcore context",
+      "hard dance context",
+      "rave context",
+      "Abyss lineup"
+    ],
+    "summary": "DJ LOVERBOY is preserved as part of the screenshot-confirmed Hardcore Melancholia lineup at Abyss on 2026-06-20. The event title supports a hard/hardcore context; broader standalone artist claims were not verified in this pass.",
+    "sourceNote": "Use this as a screenshot-backed event-role profile for Hardcore Melancholia. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+    "sources": [
+      {
+        "label": "Abyss June 2026 program screenshot",
+        "url": "assets/posters/abyss-june-2026-program.png",
+        "status": "official-social-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "Yuyuan ticketing screenshot - Hardcore Melancholia",
+        "url": "assets/posters/abyss-hardcore-melancholia-ticket.png",
+        "status": "wechat-miniprogram-ticketing-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "SmartShanghai Abyss venue context",
+        "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+        "status": "venue-context",
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+      }
+    ]
+  },
+  "tui": {
+    "slug": "tui",
+    "name": "TUI",
+    "aliases": [
+      "TUI"
+    ],
+    "trackedAt": "2026-06-15",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "Obsesion Total / Abyss event-role profile",
+    "imageTheme": "steel",
+    "genres": [
+      "hard techno context",
+      "industrial context",
+      "Abyss lineup"
+    ],
+    "summary": "TUI is preserved as part of the screenshot-confirmed Obsesion Total lineup at Abyss on 2026-06-26. Broader artist biography was not independently verified in this pass.",
+    "sourceNote": "Use this as a screenshot-backed event-role profile for Obsesion Total. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+    "sources": [
+      {
+        "label": "Abyss June 2026 program screenshot",
+        "url": "assets/posters/abyss-june-2026-program.png",
+        "status": "official-social-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "Yuyuan ticketing screenshot - Obsesion Total",
+        "url": "assets/posters/abyss-botox-fatal-ticket.png",
+        "status": "wechat-miniprogram-ticketing-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "SmartShanghai Abyss venue context",
+        "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+        "status": "venue-context",
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+      }
+    ]
+  },
+  "kong-bb": {
+    "slug": "kong-bb",
+    "name": "Kong BB",
+    "aliases": [
+      "Kong BB"
+    ],
+    "trackedAt": "2026-06-15",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "Obsesion Total / Abyss event-role profile",
+    "imageTheme": "steel",
+    "genres": [
+      "hard techno context",
+      "industrial context",
+      "Abyss lineup"
+    ],
+    "summary": "Kong BB is preserved as part of the screenshot-confirmed Obsesion Total lineup at Abyss on 2026-06-26. Broader artist biography was not independently verified in this pass.",
+    "sourceNote": "Use this as a screenshot-backed event-role profile for Obsesion Total. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+    "sources": [
+      {
+        "label": "Abyss June 2026 program screenshot",
+        "url": "assets/posters/abyss-june-2026-program.png",
+        "status": "official-social-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "Yuyuan ticketing screenshot - Obsesion Total",
+        "url": "assets/posters/abyss-botox-fatal-ticket.png",
+        "status": "wechat-miniprogram-ticketing-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "SmartShanghai Abyss venue context",
+        "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+        "status": "venue-context",
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+      }
+    ]
+  },
+  "noodleprince": {
+    "slug": "noodleprince",
+    "name": "Noodleprince",
+    "aliases": [
+      "Noodleprince"
+    ],
+    "trackedAt": "2026-06-15",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "Obsesion Total / Abyss event-role profile",
+    "imageTheme": "steel",
+    "genres": [
+      "hard techno context",
+      "industrial context",
+      "Abyss lineup"
+    ],
+    "summary": "Noodleprince is preserved as part of the screenshot-confirmed Obsesion Total lineup at Abyss on 2026-06-26. Broader artist biography was not independently verified in this pass.",
+    "sourceNote": "Use this as a screenshot-backed event-role profile for Obsesion Total. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+    "sources": [
+      {
+        "label": "Abyss June 2026 program screenshot",
+        "url": "assets/posters/abyss-june-2026-program.png",
+        "status": "official-social-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "Yuyuan ticketing screenshot - Obsesion Total",
+        "url": "assets/posters/abyss-botox-fatal-ticket.png",
+        "status": "wechat-miniprogram-ticketing-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "SmartShanghai Abyss venue context",
+        "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+        "status": "venue-context",
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+      }
+    ]
+  },
+  "prymara": {
+    "slug": "prymara",
+    "name": "PRYMARA",
+    "aliases": [
+      "PRYMARA"
+    ],
+    "trackedAt": "2026-06-15",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "C.U.M. Chemical Love / Abyss event-role profile",
+    "imageTheme": "acid",
+    "genres": [
+      "hard techno context",
+      "rave context",
+      "Abyss lineup"
+    ],
+    "summary": "PRYMARA is preserved as part of the screenshot-confirmed C.U.M. Chemical Love lineup at Abyss on 2026-06-27. Broader artist biography was not independently verified in this pass.",
+    "sourceNote": "Use this as a screenshot-backed event-role profile for C.U.M. Chemical Love. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+    "sources": [
+      {
+        "label": "Abyss June 2026 program screenshot",
+        "url": "assets/posters/abyss-june-2026-program.png",
+        "status": "official-social-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "Yuyuan ticketing screenshot - C.U.M. Chemical Love",
+        "url": "assets/posters/abyss-cum-chemical-love-ticket.png",
+        "status": "wechat-miniprogram-ticketing-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "SmartShanghai Abyss venue context",
+        "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+        "status": "venue-context",
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+      }
+    ]
+  },
+  "laglory": {
+    "slug": "laglory",
+    "name": "LaGlory",
+    "aliases": [
+      "LaGlory"
+    ],
+    "trackedAt": "2026-06-15",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "C.U.M. Chemical Love / Abyss event-role profile",
+    "imageTheme": "acid",
+    "genres": [
+      "hard techno context",
+      "rave context",
+      "Abyss lineup"
+    ],
+    "summary": "LaGlory is preserved as part of the screenshot-confirmed C.U.M. Chemical Love lineup at Abyss on 2026-06-27. Broader artist biography was not independently verified in this pass.",
+    "sourceNote": "Use this as a screenshot-backed event-role profile for C.U.M. Chemical Love. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+    "sources": [
+      {
+        "label": "Abyss June 2026 program screenshot",
+        "url": "assets/posters/abyss-june-2026-program.png",
+        "status": "official-social-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "Yuyuan ticketing screenshot - C.U.M. Chemical Love",
+        "url": "assets/posters/abyss-cum-chemical-love-ticket.png",
+        "status": "wechat-miniprogram-ticketing-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "SmartShanghai Abyss venue context",
+        "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+        "status": "venue-context",
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+      }
+    ]
+  },
+  "fmrl": {
+    "slug": "fmrl",
+    "name": "FMRL",
+    "aliases": [
+      "FMRL"
+    ],
+    "trackedAt": "2026-06-15",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "C.U.M. Chemical Love / Abyss event-role profile",
+    "imageTheme": "acid",
+    "genres": [
+      "hard techno context",
+      "rave context",
+      "Abyss lineup"
+    ],
+    "summary": "FMRL is preserved as part of the screenshot-confirmed C.U.M. Chemical Love lineup at Abyss on 2026-06-27. Broader artist biography was not independently verified in this pass.",
+    "sourceNote": "Use this as a screenshot-backed event-role profile for C.U.M. Chemical Love. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+    "sources": [
+      {
+        "label": "Abyss June 2026 program screenshot",
+        "url": "assets/posters/abyss-june-2026-program.png",
+        "status": "official-social-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "Yuyuan ticketing screenshot - C.U.M. Chemical Love",
+        "url": "assets/posters/abyss-cum-chemical-love-ticket.png",
+        "status": "wechat-miniprogram-ticketing-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "SmartShanghai Abyss venue context",
+        "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+        "status": "venue-context",
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+      }
+    ]
+  },
+  "goga": {
+    "slug": "goga",
+    "name": "GOGA",
+    "aliases": [
+      "GOGA"
+    ],
+    "trackedAt": "2026-06-15",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "C.U.M. Chemical Love / Abyss event-role profile",
+    "imageTheme": "acid",
+    "genres": [
+      "hard techno context",
+      "rave context",
+      "Abyss lineup"
+    ],
+    "summary": "GOGA is preserved as part of the screenshot-confirmed C.U.M. Chemical Love lineup at Abyss on 2026-06-27. Broader artist biography was not independently verified in this pass.",
+    "sourceNote": "Use this as a screenshot-backed event-role profile for C.U.M. Chemical Love. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+    "sources": [
+      {
+        "label": "Abyss June 2026 program screenshot",
+        "url": "assets/posters/abyss-june-2026-program.png",
+        "status": "official-social-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "Yuyuan ticketing screenshot - C.U.M. Chemical Love",
+        "url": "assets/posters/abyss-cum-chemical-love-ticket.png",
+        "status": "wechat-miniprogram-ticketing-screenshot",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "SmartShanghai Abyss venue context",
+        "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+        "status": "venue-context",
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ]
   }

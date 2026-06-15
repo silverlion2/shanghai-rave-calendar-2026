@@ -1595,7 +1595,7 @@
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-14"
+          "lastChecked": "2026-06-15"
         },
         {
           "label": "Liminal Dreams Instagram post index preview",
@@ -1687,12 +1687,33 @@
     {
       "id": "botox-fatale",
       "lastChecked": "2026-06-15",
-      "sourceStatus": "watchlist",
-      "ticketStatus": "SmartShanghai is the fully readable event-level source for an Abyss June 26 booking. Public search-index previews of BOTOX FATAL tour content and Abyss's own Instagram program both point toward the Shanghai/Abyss route, with the Abyss snippet surfacing BOTOX FATAL (LIVE) and local support names. Playwright/Chrome public-session checks reached account/search metadata but did not expose event post text; XHS returned a security-limit page and Instagram platform search returned HTTP 429. No ticket route, door price, date card, or set times were confirmed. Keep as Watch.",
-      "recommendationReason": "Kept on Watch because SmartShanghai, an artist-side tour index, and an official Abyss social-index route all point toward the June 26 Abyss lead, but practical event details still need a direct Abyss, promoter, RA Shanghai, ticketing, or Chrome-verified social source.",
-      "verifyBeforeGoing": "Confirm the Abyss or promoter post, ticket route, door price, support lineup, and set times before treating Botox Fatale as a confirmed June 26 plan; the Instagram results are search-index leads only.",
-      "sourceConfidence": "Watchlist: SmartShanghai is the fully readable event-level source; public search-index tour and Abyss program text strengthen the Shanghai/Abyss date lead, while RA Shenzhen and Gomboc/Bandcamp remain context. The 2026-06-14 XHS/Instagram browser pass was blocked or inconclusive, so ticketing and running order remain unconfirmed.",
+      "sourceStatus": "wechat-miniprogram-ticketing",
+      "ticketStatus": "Yuyuan WeChat mini-program ticketing screenshot, manually confirmed by the user, shows 2026-06-26 22:00 at Abyss club, price from 90 RMB, e-ticket, no-refund label, and customer-service WeChat abyss_service. Direct public ticket URL and age policy were not captured.",
+      "recommendationReason": "Recommended because BOTOX FATAL is billed live, giving this Abyss date a stronger draw than a generic hard-room lineup. The industrial/rave/EBM context around the artist and the support from TUI, Kong BB, and Noodleprince make it a good pick for readers who want abrasive peak-time pressure.",
+      "verifyBeforeGoing": "Open the Yuyuan WeChat mini-program or contact abyss_service to confirm live inventory, final ticket tier, age policy, and running order before going.",
+      "sourceConfidence": "User-confirmed Yuyuan ticketing screenshot now confirms the core practical fields. The Abyss June program screenshot confirms the full lineup. Older SmartShanghai, RA Shenzhen, Bandcamp/Gomboc, and social-index sources remain supplemental context. Direct public ticket URL, exact running order, and age policy remain unavailable.",
       "sources": [
+        {
+          "label": "Abyss June 2026 program screenshot",
+          "url": "assets/posters/abyss-june-2026-program.png",
+          "status": "official-social-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "User-provided Abyss June program screenshot lists the relevant June Abyss events and lineups. It also contains earlier June rows that are past as of 2026-06-15 and were not added as new future listings."
+        },
+        {
+          "label": "Yuyuan WeChat mini-program ticketing screenshot - Obsesion Total",
+          "url": "assets/posters/abyss-botox-fatal-ticket.png",
+          "status": "wechat-miniprogram-ticketing-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "User manually confirmed this is a Yuyuan WeChat mini-program ticketing screen. It confirms 2026-06-26 22:00, Abyss club, price from 90 RMB, e-ticket, no-refund label, and customer-service route abyss_service; it does not provide a shareable public ticket URL or age policy."
+        },
+        {
+          "label": "SmartShanghai Abyss venue context",
+          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+          "status": "venue-context",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Venue context only: supports Abyss Club identity and Huaihai/TX location context. User-provided Yuyuan ticketing screenshots and the Abyss June program screenshot remain the event-level evidence."
+        },
         {
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
@@ -1728,23 +1749,76 @@
           "lastChecked": "2026-06-14",
           "verificationNote": "Public search-index preview from the official Abyss account surfaced BOTOX FATAL (LIVE) with TUI, Kong BB, and Noodleprince, adjacent to a separate Saturday June 27 C.U.M listing. Use platform-native Instagram search from the Abyss account before treating the support lineup, date card, ticket route, or set times as confirmed.",
           "browserCheck": "2026-06-14 Playwright/Chrome public-session route: Instagram home exposed no usable search input; opening the official abyss_shanghai account timed out on DOMContentLoaded but showed the account title and image placeholders only. Follow-up platform checks: XHS search for Abyss + Botox Fatale + 6.26 + Shanghai redirected to a security-limit page with error 300012 / IP at risk; screenshot saved at output/playwright/xhs-botox-security-limit.png. Instagram platform search for Abyss Botox Fatale returned HTTP 429. No visible post text, date card, support lineup, ticket route, door price, or set times were confirmed; logged-in Chrome/Instagram, user-assisted XHS, or WeChat official-account search is required."
-        },
-        {
-          "label": "SmartShanghai Abyss venue context",
-          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
-          "status": "venue-context",
-          "lastChecked": "2026-06-14",
-          "verificationNote": "SmartShanghai lists Abyss Club at B1, 523 Huaihai Zhong Lu and describes the venue as hard techno, hard groove, hard electro, and heavy high-bpm electronic music. Venue context only; not event ticket confirmation."
         }
       ],
       "lineup": [
         {
-          "name": "Botox Fatale",
-          "note": "SmartShanghai lists Botox Fatale for Abyss on June 26. RA also places Botox Fatale in South China the next day via Shenzhen; Shanghai support names stay in source notes until platform-visible confirmation."
+          "name": "BOTOX FATAL",
+          "note": "Abyss June program screenshot lists BOTOX FATAL (LIVE) for Obsesion Total; Yuyuan ticketing screenshot confirms the Jun 26 Abyss ticket page."
+        },
+        {
+          "name": "TUI",
+          "note": "Abyss June program screenshot lists TUI on the Obsesion Total lineup."
+        },
+        {
+          "name": "Kong BB",
+          "note": "Abyss June program screenshot lists Kong BB on the Obsesion Total lineup."
+        },
+        {
+          "name": "Noodleprince",
+          "note": "Abyss June program screenshot lists Noodleprince on the Obsesion Total lineup."
         }
       ],
-      "description": "Watch-level Abyss hard-techno lead: SmartShanghai names Botox Fatale for June 26, and artist-side plus Abyss social-index previews point toward the ABYSS Shanghai route. Keep it on Watch until Abyss, promoter, RA Shanghai, ticketing, or Chrome-verified social evidence confirms practical details.",
-      "address": "B1, 523 Huaihai Zhong Lu, near Chengdu Bei Lu, Huangpu District"
+      "description": "Abyss Jun 26 Obsesion Total with BOTOX FATAL (live), TUI, Kong BB, and Noodleprince. The new Yuyuan ticketing screenshot confirms the 22:00 start, Abyss club venue, 90 RMB+ ticket tier, e-ticket state, and no-refund label, upgrading the previous watch lead into a confirmed upcoming listing.",
+      "address": "B1, TX Huaihai Youth Center, No. 523-527 Huaihai Road, Huangpu District, Shanghai",
+      "month": "Jun",
+      "sortDate": "2026-06-26",
+      "date": "Jun 26",
+      "time": "22:00",
+      "title": "Obsesion Total: BOTOX FATAL (live)",
+      "venue": "Abyss Shanghai",
+      "district": "Huangpu",
+      "vibe": [
+        "hard",
+        "underground"
+      ],
+      "genre": "hard techno, industrial, rave, EBM",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "90 RMB+",
+      "age": "Check venue",
+      "source": "assets/posters/abyss-botox-fatal-ticket.png",
+      "sourceLabel": "Yuyuan WeChat mini-program ticketing + Abyss June program screenshot",
+      "imageTheme": "steel",
+      "kind": "event",
+      "organizer": "Abyss Shanghai",
+      "posterUrl": "assets/posters/abyss-botox-fatal-ticket-cover.jpg",
+      "posterEvidence": {
+        "type": "wechat-miniprogram-ticketing-screenshot",
+        "source": "Yuyuan WeChat mini-program ticketing screenshot manually confirmed by user, cross-checked against the Abyss June program screenshot",
+        "url": "assets/posters/abyss-botox-fatal-ticket.png",
+        "status": "Ticketing screen confirms Obsesion Total / BOTOX FATAL at Abyss on 2026-06-26 22:00 with price from 90 RMB, e-ticket, no-refund label, and abyss_service customer-service route. Poster wall uses the cropped upper cover image without the lower ticketing menu; the original Yuyuan ticketing screenshot is retained as evidence. The Abyss monthly program screenshot supplies BOTOX FATAL (LIVE), TUI, Kong BB, and Noodleprince.",
+        "localFiles": [
+          "assets/posters/abyss-botox-fatal-ticket-cover.jpg",
+          "assets/posters/abyss-botox-fatal-ticket.png",
+          "assets/posters/abyss-june-2026-program.png"
+        ]
+      },
+      "bestFor": "Best for hard-techno and industrial-rave listeners who specifically want a live headliner in the Abyss room.",
+      "soundTags": [
+        "hard-techno",
+        "industrial",
+        "rave",
+        "ebm",
+        "live"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "lineup visible",
+        "poster confirmed",
+        "ticket screenshot",
+        "late room"
+      ]
     },
     {
       "id": "anika-kunst",
@@ -2056,7 +2130,7 @@
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-14",
+          "lastChecked": "2026-06-15",
           "verificationNote": "SmartShanghai lists June 27 at Wigwam as a YOUSHAN warmup and says lineup TBA."
         },
         {
@@ -5250,6 +5324,325 @@
         "lineup visible",
         "poster confirmed",
         "free entry",
+        "late room"
+      ]
+    },
+    {
+      "id": "abyss-faq-kirk",
+      "month": "Jun",
+      "sortDate": "2026-06-19",
+      "date": "Jun 19",
+      "time": "22:00",
+      "title": "FaQ Pres. KIRK",
+      "venue": "Abyss Shanghai",
+      "district": "Huangpu",
+      "vibe": [
+        "hard",
+        "underground"
+      ],
+      "genre": "hard techno, rave, high-bpm club",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "110 RMB+",
+      "age": "Check venue",
+      "source": "assets/posters/abyss-kirk-ticket.png",
+      "sourceLabel": "Yuyuan WeChat mini-program ticketing + Abyss June program screenshot",
+      "imageTheme": "ember",
+      "description": "Abyss Friday booking for FaQ Pres. KIRK with Kirk, Shukai, Fischmonger, SHU, PASHRAWBOI, and Headrush b2b Nitta. The Yuyuan ticketing screenshot confirms the 22:00 start, Abyss club venue, 110 RMB+ ticket tier, e-ticket state, and no-refund label.",
+      "kind": "event",
+      "sourceStatus": "wechat-miniprogram-ticketing",
+      "address": "B1, TX Huaihai Youth Center, No. 523-527 Huaihai Road, Huangpu District, Shanghai",
+      "organizer": "FaQ / Abyss Shanghai",
+      "lastChecked": "2026-06-15",
+      "posterUrl": "assets/posters/abyss-kirk-ticket-cover.jpg",
+      "posterEvidence": {
+        "type": "wechat-miniprogram-ticketing-screenshot",
+        "source": "Yuyuan WeChat mini-program ticketing screenshot manually confirmed by user, cross-checked against the Abyss June program screenshot",
+        "url": "assets/posters/abyss-kirk-ticket.png",
+        "status": "Ticketing screen confirms Kirk at Abyss on 2026-06-19 22:00 with price from 110 RMB, e-ticket, no-refund label, and abyss_service customer-service route. Poster wall uses the cropped upper cover image without the lower ticketing menu; the original Yuyuan ticketing screenshot is retained as evidence. The Abyss monthly program screenshot supplies the full FaQ Pres. KIRK lineup.",
+        "localFiles": [
+          "assets/posters/abyss-kirk-ticket-cover.jpg",
+          "assets/posters/abyss-kirk-ticket.png",
+          "assets/posters/abyss-june-2026-program.png"
+        ]
+      },
+      "ticketStatus": "Yuyuan WeChat mini-program ticketing screenshot, manually confirmed by the user, shows 2026-06-19 22:00 at Abyss club, price from 110 RMB, e-ticket, no-refund label, and customer-service WeChat abyss_service. Direct public ticket URL and age policy were not captured.",
+      "lineup": [
+        {
+          "name": "Kirk",
+          "note": "Abyss June program screenshot lists Kirk on the FaQ Pres. KIRK lineup."
+        },
+        {
+          "name": "Shukai",
+          "note": "Abyss June program screenshot lists Shukai on the FaQ Pres. KIRK lineup."
+        },
+        {
+          "name": "Fischmonger",
+          "note": "Abyss June program screenshot lists Fischmonger on the FaQ Pres. KIRK lineup."
+        },
+        {
+          "name": "SHU",
+          "note": "Abyss June program screenshot lists SHU on the FaQ Pres. KIRK lineup."
+        },
+        {
+          "name": "PASHRAWBOI",
+          "note": "Abyss June program screenshot lists PASHRAWBOI on the FaQ Pres. KIRK lineup."
+        },
+        {
+          "name": "Headrush b2b Nitta",
+          "note": "Abyss June program screenshot lists Headrush b2b Nitta on the FaQ Pres. KIRK lineup."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Abyss June 2026 program screenshot",
+          "url": "assets/posters/abyss-june-2026-program.png",
+          "status": "official-social-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "User-provided Abyss June program screenshot lists the relevant June Abyss events and lineups. It also contains earlier June rows that are past as of 2026-06-15 and were not added as new future listings."
+        },
+        {
+          "label": "Yuyuan WeChat mini-program ticketing screenshot - Kirk at Abyss",
+          "url": "assets/posters/abyss-kirk-ticket.png",
+          "status": "wechat-miniprogram-ticketing-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "User manually confirmed this is a Yuyuan WeChat mini-program ticketing screen. It confirms 2026-06-19 22:00, Abyss club, price from 110 RMB, e-ticket, no-refund label, and customer-service route abyss_service; it does not provide a shareable public ticket URL or age policy."
+        },
+        {
+          "label": "SmartShanghai Abyss venue context",
+          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+          "status": "venue-context",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Venue context only: supports Abyss Club identity and Huaihai/TX location context. User-provided Yuyuan ticketing screenshots and the Abyss June program screenshot remain the event-level evidence."
+        }
+      ],
+      "recommendationReason": "Recommended for readers who want a harder Abyss Friday: Kirk anchors the bill, while Shukai, Fischmonger, SHU, PASHRAWBOI, and Headrush b2b Nitta make it more than a single-guest listing and point toward a dense, high-pressure room.",
+      "bestFor": "Best for hard-room regulars who prioritize pace, local support depth, and a late Abyss setting over a softer social night.",
+      "verifyBeforeGoing": "Open the Yuyuan WeChat mini-program or contact abyss_service to confirm live inventory, final ticket tier, age policy, and running order before going.",
+      "sourceConfidence": "User-confirmed Yuyuan ticketing screenshot confirms title/date/time/venue/price/ticket state. The Abyss June program screenshot confirms the full lineup. Direct public ticket URL, exact running order, and age policy remain unavailable.",
+      "soundTags": [
+        "hard-techno",
+        "rave",
+        "high-bpm",
+        "club"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "lineup visible",
+        "poster confirmed",
+        "ticket screenshot",
+        "late room"
+      ]
+    },
+    {
+      "id": "abyss-hardcore-melancholia",
+      "month": "Jun",
+      "sortDate": "2026-06-20",
+      "date": "Jun 20",
+      "time": "22:00",
+      "title": "Hardcore Melancholia: LOLALITA & BRENNT",
+      "venue": "Abyss Shanghai",
+      "district": "Huangpu",
+      "vibe": [
+        "hard",
+        "underground"
+      ],
+      "genre": "hardcore, hard dance, rave, hard club",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "100 RMB+",
+      "age": "Check venue",
+      "source": "assets/posters/abyss-hardcore-melancholia-ticket.png",
+      "sourceLabel": "Yuyuan WeChat mini-program ticketing + Abyss June program screenshot",
+      "imageTheme": "rose",
+      "description": "Abyss Saturday Hardcore Melancholia with LOLALITA, BRENNT, XIWI, Not Your Daddy, and DJ LOVERBOY. The Yuyuan ticketing screenshot confirms the 22:00 start, Abyss club venue, 100 RMB+ ticket tier, e-ticket state, and no-refund label.",
+      "kind": "event",
+      "sourceStatus": "wechat-miniprogram-ticketing",
+      "address": "B1, TX Huaihai Youth Center, No. 523-527 Huaihai Road, Huangpu District, Shanghai",
+      "organizer": "Abyss Shanghai",
+      "lastChecked": "2026-06-15",
+      "posterUrl": "assets/posters/abyss-hardcore-melancholia-cover.jpg",
+      "posterEvidence": {
+        "type": "wechat-miniprogram-ticketing-screenshot",
+        "source": "Yuyuan WeChat mini-program ticketing screenshot manually confirmed by user, cross-checked against the Abyss June program screenshot",
+        "url": "assets/posters/abyss-hardcore-melancholia-ticket.png",
+        "status": "Ticketing screen confirms LOLALITA / BRENNT at Abyss on 2026-06-20 22:00 with price from 100 RMB, e-ticket, no-refund label, and abyss_service customer-service route. Poster wall uses the clean/cropped cover image without the lower ticketing menu; the original Yuyuan ticketing screenshot is retained as evidence. The Abyss monthly program screenshot supplies the Hardcore Melancholia event title and full lineup.",
+        "localFiles": [
+          "assets/posters/abyss-hardcore-melancholia-cover.jpg",
+          "assets/posters/abyss-hardcore-melancholia-clean-source.png",
+          "assets/posters/abyss-hardcore-melancholia-ticket.png",
+          "assets/posters/abyss-june-2026-program.png"
+        ]
+      },
+      "ticketStatus": "Yuyuan WeChat mini-program ticketing screenshot, manually confirmed by the user, shows 2026-06-20 22:00 at Abyss club, price from 100 RMB, e-ticket, no-refund label, and customer-service WeChat abyss_service. Direct public ticket URL and age policy were not captured.",
+      "lineup": [
+        {
+          "name": "LOLALITA",
+          "note": "Abyss June program screenshot lists LOLALITA on the Hardcore Melancholia lineup."
+        },
+        {
+          "name": "BRENNT",
+          "note": "Abyss June program screenshot lists BRENNT on the Hardcore Melancholia lineup."
+        },
+        {
+          "name": "XIWI",
+          "note": "Abyss June program screenshot lists XIWI on the Hardcore Melancholia lineup."
+        },
+        {
+          "name": "Not Your Daddy",
+          "note": "Abyss June program screenshot lists Not Your Daddy on the Hardcore Melancholia lineup."
+        },
+        {
+          "name": "DJ LOVERBOY",
+          "note": "Abyss June program screenshot lists DJ LOVERBOY on the Hardcore Melancholia lineup."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Abyss June 2026 program screenshot",
+          "url": "assets/posters/abyss-june-2026-program.png",
+          "status": "official-social-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "User-provided Abyss June program screenshot lists the relevant June Abyss events and lineups. It also contains earlier June rows that are past as of 2026-06-15 and were not added as new future listings."
+        },
+        {
+          "label": "Yuyuan WeChat mini-program ticketing screenshot - Hardcore Melancholia",
+          "url": "assets/posters/abyss-hardcore-melancholia-ticket.png",
+          "status": "wechat-miniprogram-ticketing-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "User manually confirmed this is a Yuyuan WeChat mini-program ticketing screen. It confirms 2026-06-20 22:00, Abyss club, price from 100 RMB, e-ticket, no-refund label, and customer-service route abyss_service; it does not provide a shareable public ticket URL or age policy."
+        },
+        {
+          "label": "SmartShanghai Abyss venue context",
+          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+          "status": "venue-context",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Venue context only: supports Abyss Club identity and Huaihai/TX location context. User-provided Yuyuan ticketing screenshots and the Abyss June program screenshot remain the event-level evidence."
+        }
+      ],
+      "recommendationReason": "Recommended because the Hardcore Melancholia title plus LOLALITA, BRENNT, XIWI, Not Your Daddy, and DJ LOVERBOY gives Abyss a clearly harder Saturday route for listeners who want fast, rough, high-impact club energy rather than polished house or lounge programming.",
+      "bestFor": "Best for people who want a high-BPM, hard-dance-leaning Abyss night and are comfortable with a heavier, less polished club texture.",
+      "verifyBeforeGoing": "Open the Yuyuan WeChat mini-program or contact abyss_service to confirm live inventory, final ticket tier, age policy, and running order before going.",
+      "sourceConfidence": "User-confirmed Yuyuan ticketing screenshot confirms title/date/time/venue/price/ticket state. The Abyss June program screenshot confirms the event title and full lineup. Direct public ticket URL, exact running order, and age policy remain unavailable.",
+      "soundTags": [
+        "hardcore",
+        "hard-dance",
+        "rave",
+        "high-bpm"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "lineup visible",
+        "poster confirmed",
+        "ticket screenshot",
+        "late room"
+      ]
+    },
+    {
+      "id": "abyss-cum-chemical-love",
+      "month": "Jun",
+      "sortDate": "2026-06-27",
+      "date": "Jun 27",
+      "time": "22:00",
+      "title": "C.U.M. Chemical Love",
+      "venue": "Abyss Shanghai",
+      "district": "Huangpu",
+      "vibe": [
+        "hard",
+        "underground"
+      ],
+      "genre": "hard techno, rave, hard club, local support",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "90 RMB+",
+      "age": "Check venue",
+      "source": "assets/posters/abyss-cum-chemical-love-ticket.png",
+      "sourceLabel": "Yuyuan WeChat mini-program ticketing + Abyss June program screenshot",
+      "imageTheme": "acid",
+      "description": "Abyss Jun 27 C.U.M. Chemical Love with Discipline b2b PRYMARA, LaGlory, FMRL, Extreme John, GOGA, and Oil Nature. The Yuyuan ticketing screenshot confirms the 22:00 start, Abyss club venue, 90 RMB+ ticket tier, e-ticket state, and no-refund label.",
+      "kind": "event",
+      "sourceStatus": "wechat-miniprogram-ticketing",
+      "address": "B1, TX Huaihai Youth Center, No. 523-527 Huaihai Road, Huangpu District, Shanghai",
+      "organizer": "Abyss Shanghai",
+      "lastChecked": "2026-06-15",
+      "posterUrl": "assets/posters/abyss-cum-chemical-love-cover.jpg",
+      "posterEvidence": {
+        "type": "wechat-miniprogram-ticketing-screenshot",
+        "source": "Yuyuan WeChat mini-program ticketing screenshot manually confirmed by user, cross-checked against the Abyss June program screenshot",
+        "url": "assets/posters/abyss-cum-chemical-love-ticket.png",
+        "status": "Ticketing screen confirms C.U.M. at Abyss on 2026-06-27 22:00 with price from 90 RMB, e-ticket, no-refund label, and abyss_service customer-service route. Poster wall uses the clean cover image without the lower ticketing menu; the original Yuyuan ticketing screenshot is retained as evidence. The Abyss monthly program screenshot supplies the CUM CHEMICAL LOVE event title and full lineup.",
+        "localFiles": [
+          "assets/posters/abyss-cum-chemical-love-cover.jpg",
+          "assets/posters/abyss-cum-chemical-love-clean-source.jpg",
+          "assets/posters/abyss-cum-chemical-love-ticket.png",
+          "assets/posters/abyss-june-2026-program.png"
+        ]
+      },
+      "ticketStatus": "Yuyuan WeChat mini-program ticketing screenshot, manually confirmed by the user, shows 2026-06-27 22:00 at Abyss club, price from 90 RMB, e-ticket, no-refund label, and customer-service WeChat abyss_service. Direct public ticket URL and age policy were not captured.",
+      "lineup": [
+        {
+          "name": "Discipline b2b PRYMARA",
+          "note": "Abyss June program screenshot lists Discipline b2b PRYMARA for CUM CHEMICAL LOVE."
+        },
+        {
+          "name": "LaGlory",
+          "note": "Abyss June program screenshot lists LaGlory on the CUM CHEMICAL LOVE lineup."
+        },
+        {
+          "name": "FMRL",
+          "note": "Abyss June program screenshot lists FMRL on the CUM CHEMICAL LOVE lineup."
+        },
+        {
+          "name": "Extreme John",
+          "note": "Abyss June program screenshot lists Extreme John on the CUM CHEMICAL LOVE lineup."
+        },
+        {
+          "name": "GOGA",
+          "note": "Abyss June program screenshot lists GOGA on the CUM CHEMICAL LOVE lineup."
+        },
+        {
+          "name": "Oil Nature",
+          "note": "Abyss June program screenshot lists Oil Nature on the CUM CHEMICAL LOVE lineup."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Abyss June 2026 program screenshot",
+          "url": "assets/posters/abyss-june-2026-program.png",
+          "status": "official-social-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "User-provided Abyss June program screenshot lists the relevant June Abyss events and lineups. It also contains earlier June rows that are past as of 2026-06-15 and were not added as new future listings."
+        },
+        {
+          "label": "Yuyuan WeChat mini-program ticketing screenshot - C.U.M. Chemical Love",
+          "url": "assets/posters/abyss-cum-chemical-love-ticket.png",
+          "status": "wechat-miniprogram-ticketing-screenshot",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "User manually confirmed this is a Yuyuan WeChat mini-program ticketing screen. It confirms 2026-06-27 22:00, Abyss club, price from 90 RMB, e-ticket, no-refund label, and customer-service route abyss_service; it does not provide a shareable public ticket URL or age policy."
+        },
+        {
+          "label": "SmartShanghai Abyss venue context",
+          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+          "status": "venue-context",
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Venue context only: supports Abyss Club identity and Huaihai/TX location context. User-provided Yuyuan ticketing screenshots and the Abyss June program screenshot remain the event-level evidence."
+        }
+      ],
+      "recommendationReason": "Recommended for Abyss regulars who want a local hard-room bill rather than a single imported headliner: Discipline b2b PRYMARA gives the night a clear back-to-back core, with Extreme John, Oil Nature, LaGlory, FMRL, and GOGA filling out a heavier club route.",
+      "bestFor": "Best for readers tracking Shanghai hard-techno support networks and local Abyss lineups over guest-name tourism.",
+      "verifyBeforeGoing": "Open the Yuyuan WeChat mini-program or contact abyss_service to confirm live inventory, final ticket tier, age policy, and running order before going.",
+      "sourceConfidence": "User-confirmed Yuyuan ticketing screenshot confirms title/date/time/venue/price/ticket state. The Abyss June program screenshot confirms Chemical Love as the full event title and lists the lineup. Direct public ticket URL, exact running order, and age policy remain unavailable.",
+      "soundTags": [
+        "hard-techno",
+        "rave",
+        "hard-club",
+        "local-lineup"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "lineup visible",
+        "poster confirmed",
+        "ticket screenshot",
         "late room"
       ]
     }
