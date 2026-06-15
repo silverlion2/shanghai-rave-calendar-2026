@@ -67,9 +67,19 @@ from public.set_profile_role_by_email('owner@example.com', 'admin');
 
 The role-hardening migration grants browser clients only profile select plus self `display_name` updates. Do not add service-role keys or owner email allowlists to browser code.
 
+### Auth Email Confirmation
+
+Account sign-up expects Supabase Auth email confirmation to be disabled. Hosted projects can apply the toggle through Supabase's Management API:
+
+```bash
+SUPABASE_ACCESS_TOKEN=your-management-api-token npm run supabase:auth:no-confirm
+```
+
+This patches the hosted Auth config with `mailer_autoconfirm=true`. You can also use the dashboard path: Authentication -> Providers -> Email -> Confirm Email off. Supabase's JavaScript client returns a session from `signUp()` when this is off, which lets `account.html` enter the dashboard immediately after account creation.
+
 ### Auth Redirect URLs
 
-Account confirmation and magic-link emails use Supabase Auth redirects. Configure the Supabase dashboard Auth URL settings so these URLs are allowed:
+Magic-link emails still use Supabase Auth redirects. Configure the Supabase dashboard Auth URL settings so these URLs are allowed:
 
 ```text
 https://raveindexsh.top/account.html
@@ -77,7 +87,7 @@ https://raveindexsh.top/account
 http://localhost:4173/account.html
 ```
 
-The account page forces local sign-up and email-link requests to use the production account URL so confirmation emails do not send users to `localhost`. The confirmation email may appear from Supabase and can land in Junk/Spam.
+The account page forces local email-link requests to use the production account URL so magic links do not send users to `localhost`.
 
 ## Poster Archive Upload
 

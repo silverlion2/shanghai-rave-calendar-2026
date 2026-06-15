@@ -220,20 +220,24 @@ test("adminAccessState only unlocks ops for Supabase admin profiles", () => {
 test("accountAuthFeedback gives explicit next steps for account flows", () => {
   const ready = accountAuthFeedback();
   assert.equal(ready.title, "Create account or sign in");
-  assert.ok(ready.steps.includes("Confirm the email if Supabase asks"));
+  assert.ok(ready.steps.includes("Create account enters immediately"));
 
   const pending = accountAuthFeedback("sign-up", "pending", { email: "user@example.com" });
   assert.equal(pending.title, "Creating account");
   assert.match(pending.body, /user@example\.com/);
 
   const confirm = accountAuthFeedback("sign-up", "success", { email: "user@example.com", hasSession: false });
-  assert.equal(confirm.title, "Check your email");
-  assert.ok(confirm.body.includes("Supabase"));
-  assert.ok(confirm.steps.includes("Check Inbox, Junk, and Spam"));
+  assert.equal(confirm.title, "Auth toggle still on");
+  assert.equal(confirm.tone, "warning");
+  assert.ok(confirm.steps.includes("Run npm run supabase:auth:no-confirm"));
 
   const signedIn = accountAuthFeedback("sign-in", "success", { email: "user@example.com", hasSession: true });
   assert.equal(signedIn.title, "Signed in");
   assert.equal(signedIn.tone, "success");
+
+  const reset = accountAuthFeedback("reset-password", "success", { email: "user@example.com" });
+  assert.equal(reset.title, "Password reset sent");
+  assert.ok(reset.steps.includes("Choose a new 8+ character password"));
 });
 
 test("accountAuthErrorFeedback translates common Supabase failures into guidance", () => {
@@ -242,11 +246,15 @@ test("accountAuthErrorFeedback translates common Supabase failures into guidance
   assert.ok(existing.steps.includes("Click Sign in"));
 
   const unconfirmed = accountAuthErrorFeedback("sign-in", "Email not confirmed");
-  assert.equal(unconfirmed.title, "Confirm email first");
+  assert.equal(unconfirmed.title, "Email confirmation is still on");
+  assert.ok(unconfirmed.steps.includes("Run npm run supabase:auth:no-confirm"));
 
   const badPassword = accountAuthErrorFeedback("sign-up", "Password must be at least 8 characters");
   assert.equal(badPassword.title, "Password needs attention");
   assert.ok(badPassword.steps.includes("Use at least 8 characters"));
+
+  const resetFailed = accountAuthErrorFeedback("reset-password", "Network request failed");
+  assert.equal(resetFailed.title, "Password reset failed");
 });
 
 test("accountAuthRedirectUrl avoids localhost confirmation links", () => {

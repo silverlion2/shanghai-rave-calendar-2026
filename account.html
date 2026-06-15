@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Save Your Picks | Shanghai Rave Index</title>
-  <meta name="description" content="Create a Shanghai Rave Index account to save events, sounds, rooms, budget, timing, and source preferences.">
+  <title>Save Your Nights | Shanghai Rave Index</title>
+  <meta name="description" content="Create a Shanghai Rave Index account to save nights, preferences, and source settings without email confirmation.">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <meta name="theme-color" content="#36c7e7">
   <link rel="canonical" href="https://raveindexsh.top/account">
@@ -22,10 +22,17 @@
     gtag("js", new Date());
     gtag("config", "G-HP6NQ3VZB9");
   </script>
+  <!-- Vercel Web Analytics -->
+  <script>
+    window.va = window.va || function () {
+      (window.vaq = window.vaq || []).push(arguments);
+    };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Shanghai Rave Index">
-  <meta property="og:title" content="Save Your Picks | Shanghai Rave Index">
-  <meta property="og:description" content="Save events, sounds, rooms, budget, timing, source mode, and event shortlists.">
+  <meta property="og:title" content="Save Your Nights | Shanghai Rave Index">
+  <meta property="og:description" content="Save events, sounds, rooms, budget, timing, source mode, and event shortlists without email confirmation.">
   <meta property="og:url" content="https://raveindexsh.top/account">
   <meta property="og:image" content="https://raveindexsh.top/og-image.png">
   <meta property="og:image:alt" content="Shanghai Rave Index account preview">
@@ -33,9 +40,9 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Save Your Picks | Shanghai Rave Index",
+    "name": "Save Your Nights | Shanghai Rave Index",
     "url": "https://raveindexsh.top/account",
-    "description": "Create a Shanghai Rave Index account to save events, sounds, rooms, budget, timing, and source preferences.",
+    "description": "Create a Shanghai Rave Index account to save nights, preferences, and source settings without email confirmation.",
     "inLanguage": "en",
     "isAccessibleForFree": true,
     "isPartOf": {
@@ -51,7 +58,7 @@
   <script src="assets/love-wall-supabase-config.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="assets/community-badges.js" defer></script>
-  <script src="assets/account-system.js?v=auth-redirect-20260615" defer></script>
+  <script src="assets/account-system.js?v=studio-pass-20260616" defer></script>
 </head>
 <body data-current-date="2026-06-13">
   <main class="shell dispatch-shell account-page">
@@ -72,39 +79,25 @@
       <span class="tag">Saved picks</span>
     </nav>
 
-    <section class="account-hero" aria-label="Saved events and preferences">
-      <header class="account-hero-media">
-        <img src="assets/posters/fruitygroove-soul-navigator-optimized.jpg" alt="Basement Dispatch event poster texture" loading="eager" decoding="async" fetchpriority="high">
-        <div class="account-title-block">
-          <p class="kicker">Account / saved events / preferences</p>
-          <h1>Save Your Picks</h1>
-          <span class="dispatch-strip">Saved events and preferences live here</span>
-          <p>Create an account that remembers your sounds, rooms, saves, budget, timing, and trust settings so the calendar starts with better matches.</p>
-        </div>
-      </header>
-      <section class="account-panel" aria-label="Account system summary">
-        <div class="account-panel-head">
-          <span>What it does</span>
-          <h2>Save faster, choose faster</h2>
-          <p>Supabase handles identity. Your profile stores preferences for faster picks, cleaner saves, and portable account data.</p>
-        </div>
-        <div class="account-status-line">
-          <b>Login</b>
-          <span>One login carries your display name, saved nights, and exportable profile.</span>
-        </div>
-        <div class="account-status-line">
-          <b>Sync</b>
-          <span>Rooms, sounds, budget, timing, source mode, and shortlist follow you.</span>
-        </div>
-        <div class="account-status-line">
-          <b>Display</b>
-          <span>The homepage For You panel shows your strongest matches before generic listings.</span>
+    <section class="account-studio" aria-label="Account access">
+      <aside class="account-studio-poster" aria-label="Shanghai Rave Index poster preview">
+        <img src="assets/posters/fruitygroove-soul-navigator-optimized.jpg" alt="Fruity Groove Soul Navigator event poster" loading="eager" decoding="async" fetchpriority="high">
+      </aside>
+
+      <section class="account-studio-intro" aria-labelledby="accountStudioTitle">
+        <p class="account-studio-brand">Shanghai Rave Index</p>
+        <h1 id="accountStudioTitle">Save your nights</h1>
+        <p class="account-studio-copy">Your scenes, your picks, your settings. Instant access. No email confirmation.</p>
+        <div class="account-studio-benefits" aria-label="Account benefits">
+          <span><b>Save what matters</b><em>Shortlist events and keep your strongest picks close.</em></span>
+          <span><b>Your schedule</b><em>Keep rooms, timing, and budget in one account.</em></span>
+          <span><b>Your preferences</b><em>Make the calendar start with better matches.</em></span>
         </div>
       </section>
-    </section>
 
-    <section data-account-app aria-label="Account controls and personalized recommendations">
-      <div class="account-panel account-loading">Loading account display.</div>
+      <section class="account-studio-auth-region" data-account-app aria-label="Account controls and personalized recommendations">
+        <div class="account-panel account-loading">Loading account display.</div>
+      </section>
     </section>
 
     <footer class="footnotes bottom-dispatch-bar" aria-label="Basement Dispatch status">

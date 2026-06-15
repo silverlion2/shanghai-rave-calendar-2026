@@ -449,7 +449,7 @@
         return {
           tone: "info",
           title: "Creating account",
-          body: `Sending ${address} to Supabase Auth. The next screen will say whether you can enter now or need to confirm email first.`,
+          body: `Sending ${address} to Supabase Auth. Email confirmation is configured off, so a new account should enter immediately.`,
           steps: ["Keep this tab open", "Do not click Create account again while this is running"],
         };
       }
@@ -458,7 +458,7 @@
           tone: "info",
           title: "Signing in",
           body: `Checking the password for ${address}.`,
-          steps: ["If this fails, use Email link or confirm the account first"],
+          steps: ["If this fails, check the password", "Email link stays available as a fallback"],
         };
       }
       if (action === "magic-link") {
@@ -467,6 +467,14 @@
           title: "Sending email link",
           body: `Sending a one-time login link to ${address}.`,
           steps: ["Open the link from the same browser", "Return here after the email opens"],
+        };
+      }
+      if (action === "reset-password") {
+        return {
+          tone: "info",
+          title: "Sending reset link",
+          body: `Sending a Supabase password reset link to ${address}.`,
+          steps: ["Keep this tab open", "Use the link from the same browser"],
         };
       }
     }
@@ -481,10 +489,10 @@
       }
       if (action === "sign-up") {
         return {
-          tone: "success",
-          title: "Check your email",
-          body: `Supabase accepted ${address}. The confirmation email may show Supabase as the sender and can land in Junk or Spam.`,
-          steps: ["Check Inbox, Junk, and Spam", "Open the Supabase confirmation email", "Return here and use Sign in with the password you just set"],
+          tone: "warning",
+          title: "Auth toggle still on",
+          body: `Supabase accepted ${address}, but did not return a session. Turn off Confirm Email in Supabase Auth, then sign in with this password.`,
+          steps: ["Run npm run supabase:auth:no-confirm", "Or disable Confirm Email in Supabase", "Return here and sign in"],
         };
       }
       if (action === "sign-in") {
@@ -503,6 +511,14 @@
           steps: ["Check Inbox, Junk, and Spam", "Open the email link from this device", "Return here after the browser signs you in"],
         };
       }
+      if (action === "reset-password") {
+        return {
+          tone: "success",
+          title: "Password reset sent",
+          body: `Check ${address} for the Supabase reset link, then return here and sign in with the new password.`,
+          steps: ["Open the reset email", "Choose a new 8+ character password", "Return here to sign in"],
+        };
+      }
     }
     if (outcome === "error") {
       return accountAuthErrorFeedback(action, context.error);
@@ -510,8 +526,8 @@
     return {
       tone: "idle",
       title: "Create account or sign in",
-      body: "New users set an 8+ character password with Create account. Returning users use Sign in, or Email link for passwordless login.",
-      steps: ["Use the same email every time", "Confirm the email if Supabase asks", "Then save preferences to the account"],
+      body: "New users set an 8+ character password with Create account. Returning users use Sign in, Email link, or reset password.",
+      steps: ["Create account enters immediately", "Use Email link if the password is not handy", "Then save preferences to the account"],
     };
   }
 
@@ -529,16 +545,16 @@
     if (lower.includes("email not confirmed") || lower.includes("confirm")) {
       return {
         tone: "warning",
-        title: "Confirm email first",
-        body: "Supabase has the account, but the email still needs confirmation before password login works. Check Junk/Spam if the message is missing.",
-        steps: ["Search Inbox, Junk, and Spam for Supabase", "Open the confirmation email", "Click Sign in after confirmation"],
+        title: "Email confirmation is still on",
+        body: "Supabase is still requiring email confirmation before password login. The account page is optimized for Confirm Email being disabled.",
+        steps: ["Run npm run supabase:auth:no-confirm", "Or disable Confirm Email in Supabase", "Click Sign in again"],
       };
     }
     if (lower.includes("invalid login") || lower.includes("invalid credentials")) {
       return {
         tone: "error",
         title: "Sign in did not match",
-        body: "The email and password did not match a confirmed account.",
+        body: "The email and password did not match an account.",
         steps: ["Check the email spelling", "Re-enter the password", "Use Email link if you are not sure about the password"],
       };
     }
@@ -560,7 +576,7 @@
     }
     return {
       tone: "error",
-      title: action === "magic-link" ? "Email link failed" : "Account action failed",
+      title: action === "magic-link" ? "Email link failed" : action === "reset-password" ? "Password reset failed" : "Account action failed",
       body: message,
       steps: ["Try again once", "If it repeats, check Supabase Auth settings"],
     };
@@ -904,6 +920,8 @@
       authDraft: { displayName: "", email: "" },
       authFeedback: accountAuthFeedback(),
       badgeData: null,
+      passwordVisible: false,
+      authMode: "sign-in",
       error: "",
     };
 
@@ -914,6 +932,7 @@
         hasSupabase: Boolean(state.client),
         session: state.session,
       });
+      mount.dataset.accountState = access.mode;
 
       if (access.mode !== "dashboard") {
         mount.innerHTML = renderAccountGate(access, prefs);
@@ -941,28 +960,31 @@
 
     function renderAccountGate(access, prefs) {
       const canAuthenticate = access.mode === "gated";
+      const mode = state.authMode === "sign-up" ? "sign-up" : "sign-in";
+      const feedback = state.authFeedback || accountAuthFeedback();
+      const shouldShowFeedback = feedback.tone && feedback.tone !== "idle";
+      const gateBody = access.mode === "loading"
+        ? `<div class="account-empty">Checking your account session.</div>`
+        : canAuthenticate
+          ? renderAuthForm(prefs)
+          : renderSupabaseUnavailable();
       return `
-        <section class="account-login-wall" data-account-mode="${escapeHtml(access.mode)}">
-          <aside class="account-panel account-auth-wall">
-            <div class="account-panel-head">
-              <span>${escapeHtml(access.label)}</span>
-              <h2>Save your picks</h2>
-              <p>The public calendar shows every sourced listing. Your account saves the events and preferences you care about.</p>
-            </div>
-            <div class="account-lock-readout">
-              <b>UNLOCK</b>
-              <span>Save your sounds, remember your rooms, and show better matches first.</span>
-            </div>
-            <div class="account-why-stack" aria-label="Account benefits">
-              <span>Stop rebuilding filters every weekend</span>
-              <span>Carry saved nights across devices</span>
-              <span>Show better matches on the homepage</span>
-              <span>Export your account map any time</span>
-            </div>
-            ${renderAuthFeedback(state.authFeedback)}
-            ${canAuthenticate ? renderAuthForm(prefs) : renderSupabaseUnavailable()}
-          </aside>
-          ${renderFeatureCatalogPanel("What your account saves", "Use the account to keep events, preferences, and exports in one place.")}
+        <section class="account-studio-auth-panel" data-account-mode="${escapeHtml(access.mode)}">
+          <div class="account-auth-tabs" role="tablist" aria-label="Account mode">
+            <button type="button" data-auth-mode="sign-in" role="tab" aria-selected="${mode === "sign-in" ? "true" : "false"}">Sign in</button>
+            <button type="button" data-auth-mode="sign-up" role="tab" aria-selected="${mode === "sign-up" ? "true" : "false"}">Create account</button>
+          </div>
+          <div class="account-panel-head account-auth-heading">
+            <span>${escapeHtml(access.label)}</span>
+            <h2>${mode === "sign-up" ? "Create your pass" : "Welcome back"}</h2>
+            <p>${mode === "sign-up" ? "New accounts enter immediately when Confirm Email is off." : "Return to your saved nights, rooms, sounds, and source settings."}</p>
+          </div>
+          ${shouldShowFeedback ? renderAuthFeedback(feedback) : ""}
+          ${gateBody}
+          <div class="account-auth-trust">
+            <b>No confirmation gate</b>
+            <span>Email confirmation is disabled for password accounts. Saved events are preferences, not attendance records.</span>
+          </div>
         </section>
       `;
     }
@@ -988,6 +1010,12 @@
     function renderAuthForm(prefs) {
       const draft = state.authDraft || {};
       const isBusy = Boolean(state.busyAction);
+      const mode = state.authMode === "sign-up" ? "sign-up" : "sign-in";
+      const primaryAction = mode;
+      const primaryLabel = mode === "sign-up" ? "Create account" : "Sign in";
+      const primaryBusyLabel = mode === "sign-up" ? "Creating..." : "Signing in...";
+      const passwordType = state.passwordVisible ? "text" : "password";
+      const passwordAutocomplete = mode === "sign-up" ? "new-password" : "current-password";
       const displayName = draft.displayName || prefs.displayName;
       const email = draft.email || "";
       const buttonLabel = (action, idleLabel, busyLabel) => state.busyAction === action ? busyLabel : idleLabel;
@@ -1000,23 +1028,28 @@
           </label>
           <label class="account-field">
             <span>Email</span>
-            <input class="input" name="email" type="email" autocomplete="email" placeholder="Email address" value="${escapeHtml(email)}" ${disabled}>
+            <input class="input" name="email" type="email" autocomplete="email" placeholder="you@example.com" value="${escapeHtml(email)}" ${disabled}>
           </label>
           <label class="account-field">
             <span>Password</span>
-            <input class="input" name="password" type="password" minlength="8" autocomplete="current-password" placeholder="8+ characters" ${disabled}>
+            <div class="account-password-field">
+              <input class="input" name="password" type="${passwordType}" minlength="8" autocomplete="${passwordAutocomplete}" placeholder="8+ characters" ${disabled}>
+              <label class="account-inline-check">
+                <input type="checkbox" data-account-action="toggle-password-visibility" ${state.passwordVisible ? "checked" : ""} ${disabled}>
+                <span>Show</span>
+              </label>
+            </div>
           </label>
           <div class="account-action-row">
-            <button class="button primary" type="button" data-account-action="sign-up" ${disabled}>${escapeHtml(buttonLabel("sign-up", "Create account", "Creating..."))}</button>
-            <button class="button" type="button" data-account-action="sign-in" ${disabled}>${escapeHtml(buttonLabel("sign-in", "Sign in", "Signing in..."))}</button>
-            <button class="button" type="button" data-account-action="magic-link" ${disabled}>${escapeHtml(buttonLabel("magic-link", "Email link", "Sending..."))}</button>
+            <button class="button primary account-primary-action" type="button" data-account-action="${escapeHtml(primaryAction)}" ${disabled}>${escapeHtml(buttonLabel(primaryAction, primaryLabel, primaryBusyLabel))}</button>
+            <span class="account-auth-separator">or</span>
+            <button class="button account-secondary-action" type="button" data-account-action="magic-link" ${disabled}>${escapeHtml(buttonLabel("magic-link", "Send me a login link", "Sending..."))}</button>
           </div>
-          <div class="account-auth-path" aria-label="Account flow">
-            <span><b>1</b>Create or sign in</span>
-            <span><b>2</b>Confirm email if asked</span>
-            <span><b>3</b>Save preferences</span>
+          <div class="account-auth-support-row">
+            <button class="button account-reset-action" type="button" data-account-action="reset-password" ${disabled}>${escapeHtml(buttonLabel("reset-password", "Reset password", "Sending..."))}</button>
+            <span>Supabase Auth keeps passwords off this site.</span>
           </div>
-          <span class="account-form-note">Password is set only during Create account and stays in Supabase Auth. This site stores saved preferences, not passwords.</span>
+          <span class="account-form-note">Create account enters immediately when Confirm Email is off. Magic links still use your email inbox.</span>
         </form>
       `;
     }
@@ -1163,25 +1196,22 @@
     }
 
     function renderFeatureCatalogPanel(title, description) {
+      const featuredTools = accountFeatureCatalog()
+        .filter(feature => feature.status === "live")
+        .slice(0, 3);
       return `
-        <section class="account-panel account-feature-panel">
+        <section class="account-panel account-feature-panel account-feature-panel-compact">
           <div class="account-panel-head">
             <span>Account capabilities</span>
             <h2>${escapeHtml(title)}</h2>
             <p>${escapeHtml(description)}</p>
           </div>
-          <div class="account-feature-grid">
-            ${accountFeatureCatalog().map(feature => `
-              <article class="account-feature-card" data-feature-status="${escapeHtml(feature.status)}">
-                <div>
-                  <span>${escapeHtml(feature.status)}</span>
-                  <h3>${escapeHtml(feature.title)}</h3>
-                </div>
-                <strong>${escapeHtml(feature.hook)}</strong>
-                <p>${escapeHtml(feature.description)}</p>
+          <div class="account-tool-strip">
+            ${featuredTools.map(feature => `
+              <span data-feature-status="${escapeHtml(feature.status)}">
+                <b>${escapeHtml(feature.title)}</b>
                 <em>${escapeHtml(feature.payoff)}</em>
-                <b>${escapeHtml(feature.storage)}</b>
-              </article>
+              </span>
             `).join("")}
           </div>
         </section>
@@ -1193,6 +1223,21 @@
     }
 
     function bindAccountPage() {
+      mount.querySelectorAll("[data-auth-mode]").forEach(button => {
+        button.addEventListener("click", () => {
+          const form = mount.querySelector("[data-auth-form]");
+          if (form) {
+            const formData = new FormData(form);
+            state.authDraft = {
+              displayName: String(formData.get("displayName") || "").trim(),
+              email: String(formData.get("email") || "").trim(),
+            };
+          }
+          state.authMode = button.dataset.authMode === "sign-up" ? "sign-up" : "sign-in";
+          state.authFeedback = accountAuthFeedback();
+          render();
+        });
+      });
       mount.querySelectorAll("[data-choice-group] .route-button").forEach(button => {
         button.addEventListener("click", () => button.classList.toggle("active"));
       });
@@ -1236,6 +1281,11 @@
           await togglePublicBadges();
           return;
         }
+        if (action === "toggle-password-visibility") {
+          state.passwordVisible = !state.passwordVisible;
+          render();
+          return;
+        }
         if (action === "sign-out") {
           await state.client?.auth.signOut();
           state.session = null;
@@ -1255,7 +1305,7 @@
         await authAction(action);
       } catch (error) {
         state.error = error.message || "Account action failed";
-        if (["sign-up", "sign-in", "magic-link"].includes(action)) {
+        if (["sign-up", "sign-in", "magic-link", "reset-password"].includes(action)) {
           state.authFeedback = accountAuthFeedback(action, "error", { error: state.error });
           state.busyAction = "";
         }
@@ -1272,7 +1322,7 @@
       const displayName = String(formData.get("displayName") || "").trim();
       state.authDraft = { displayName, email };
       if (!email) throw new Error("Email is required");
-      if (action !== "magic-link" && password.length < 8) throw new Error("Password must be at least 8 characters");
+      if (!["magic-link", "reset-password"].includes(action) && password.length < 8) throw new Error("Password must be at least 8 characters");
 
       state.busyAction = action;
       state.authFeedback = accountAuthFeedback(action, "pending", { email });
@@ -1296,7 +1346,7 @@
           await refreshBadgeState();
           state.remoteStatus = "Account created; preferences synced";
         } else {
-          state.remoteStatus = "Check email to confirm account";
+          state.remoteStatus = "Auth confirmation still enabled";
         }
         state.authFeedback = accountAuthFeedback(action, "success", { email, hasSession: Boolean(data.session) });
       } else if (action === "sign-in") {
@@ -1312,6 +1362,12 @@
         });
         if (error) throw error;
         state.remoteStatus = "Magic link sent";
+        state.authFeedback = accountAuthFeedback(action, "success", { email });
+      } else if (action === "reset-password") {
+        if (!state.client.auth.resetPasswordForEmail) throw new Error("Password reset is unavailable in this Supabase client");
+        const { error } = await state.client.auth.resetPasswordForEmail(email, { redirectTo: emailRedirectTo });
+        if (error) throw error;
+        state.remoteStatus = "Password reset link sent";
         state.authFeedback = accountAuthFeedback(action, "success", { email });
       }
       saveLocalPreferences(state.preferences, win);

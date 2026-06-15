@@ -72,7 +72,13 @@ from public.set_profile_role_by_email('owner@example.com', 'admin');
 
 Passwords stay in Supabase Auth. This project only stores the role gate in `public.profiles`.
 
-Supabase Auth emails should redirect back to the public account page, not a local dev URL. The browser code sends `emailRedirectTo` with `https://raveindexsh.top/account.html` when the account flow is opened from `localhost`; deployed pages use their own `/account.html` origin. Add the production account URL to Supabase Auth redirect allow-list, and tell users the confirmation email may show Supabase as the sender or land in Junk/Spam.
+Account sign-up expects Supabase Auth email confirmation to be disabled so new users can enter immediately after creating a password. Set `SUPABASE_ACCESS_TOKEN` with Auth config write access, then run:
+
+```bash
+npm run supabase:auth:no-confirm
+```
+
+You can also disable it in Supabase Dashboard under Authentication -> Providers -> Email -> Confirm Email. Magic-link emails should still redirect back to the public account page, not a local dev URL. Add `https://raveindexsh.top/account.html`, `https://raveindexsh.top/account`, and local account URLs to the Supabase Auth redirect allow-list.
 
 ## Event refresh
 

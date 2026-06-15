@@ -1,37 +1,28 @@
 # Design QA
 
-source visual truth path: `docs/WEBSITE_THEME.md`, `docs/WEBSITE_STRUCTURE.md`, and existing pre-pass evidence in `output/product-design-audit/`
-implementation screenshot path: `output/product-design-audit/after2-desktop-index.png`, `output/product-design-audit/after2-mobile-index.png`, `output/product-design-audit/after2-mobile-live-room.png`, `output/product-design-audit/after2-mobile-account.png`, `output/product-design-audit/after2-mobile-event-detail.png`, `output/product-design-audit/after2-mobile-djs.png`
-viewport: 1440 x 1000 desktop and 390 x 844 mobile
-state: public, signed-out, default route state with local static server on `http://localhost:5173`
-full-view comparison evidence: screenshot batch plus `output/product-design-audit/after2-metrics.json`; in-app browser route metrics covered desktop and mobile tracked pages, the legacy calendar mirror, and representative generated event detail.
-focused region comparison evidence: mobile nav rails, calendar panel header actions, planner hero/source-note containment, account guide sizing, hidden share textarea, account form inputs, DJ source links, live-room actions, and event detail breadcrumbs/source trail.
+source visual truth path: `C:\Users\T480S\.codex\generated_images\019ecc82-7a0f-73d3-aaab-eecff75fd5f5\ig_069201b005a56f26016a3048b539248196b9259650049e9deb.png`
+implementation screenshot path: `D:\workspace\rave calendar\output\account-studio-pass-desktop.png`, `D:\workspace\rave calendar\output\account-studio-pass-mobile.png`
+viewport: 1440 x 1024 desktop and 390 x 844 mobile
+state: signed-out account gate on `http://localhost:4173/account`
+full-view comparison evidence: `D:\workspace\rave calendar\output\account-studio-pass-comparison.png`
+focused region comparison evidence: account studio shell, poster strip, intro copy, auth tabs, primary password sign-in, login-link separator, password reveal, reset-password action, no-confirmation trust note.
 
 **Findings**
 - No actionable P0/P1/P2 design findings remain.
-- P3 residual: desktop calendar event markers remain intentionally small dot indicators in the compact month grid. They have parallel event rows nearby, so this is accepted as an existing density constraint.
-- Non-design caveat: `npm run check` currently fails only at `scripts/audit-events.js` because event/DJ source timestamps are stale for June 13, 2026 and two scraped same-day listings are missing ticket-status notes. Syntax checks, 25 node tests, structure validation, local link integrity, and inline script syntax all passed before that data freshness gate.
-- Customer-flow pass: primary navigation now uses task labels (`Events`, `Tonight`, `Planner`, `Account`) across tracked pages and generated event details. Homepage CTAs are visible again in the desktop calendar rail and map to `See upcoming events` and `Plan your night`.
-- Event-detail flow pass: generated breadcrumbs now return through `Events`; event actions avoid duplicate source buttons when no separate ticket URL exists; same-day room handoff is labeled `Tonight room`.
+- P3 residual: the implementation preserves the existing site nav and admin corner instead of matching the generated mock's fully standalone composition. This keeps the account page consistent with the rest of the site.
+- P3 residual: the implementation uses the site's real poster asset and Barlow Condensed display style rather than the generated mock's exact poster text, icons, and cleaner sans typography. This is accepted as integration with the current local design system and asset pipeline.
 
-**Required Fidelity Surfaces**
-- Fonts and typography: Basement Dispatch display/mono pairing and uppercase controls are preserved; small source controls now read as deliberate targets.
-- Spacing and layout rhythm: no measured horizontal overflow on checked desktop/mobile routes; nested planner notes now size to their panel instead of the viewport.
-- Colors and visual tokens: reused the existing black, paper, cyan, gold, ember, and muted tokens; no new visual system or palette was introduced.
-- Image quality and asset fidelity: screenshot metrics report no broken images on checked routes; poster imagery remains real local assets.
-- Copy and content: customer-facing metaphors were reduced where they blocked intent. `Wall` became `Events`, `Live` became `Tonight`, account prompts now say `Save your picks`, and planner copy now references the event list.
-
-**Patches Made Since Previous QA**
-- `assets/basement-dispatch.css`: extended shared control sizing to live-room actions, DJ source controls, calendar shortcuts, and panel header links; raised mobile calendar nav/quick-filter/action floors; hid the share fallback textarea without measurable layout; normalized non-checkbox form input height; fixed planner nested note width; enlarged the admin utility target.
-- `assets/event-detail.css`: made generated event breadcrumbs and source-trail links proper touch targets while keeping the source-first layout.
-- `assets/account-system.css`: retained the earlier account-guide containment fixes from the first pass.
+**Patches Made**
+- `account.html`: replaced the previous busy hero/summary stack with the Studio Pass account shell, updated account copy to `Save your nights`, and moved the dynamic auth mount into the right-side account region.
+- `assets/account-system.js`: replaced the logged-out feature wall with tabbed `Sign in` / `Create account` modes, one primary auth action at a time, an `or` divider, login-link action, reset-password link, password reveal, and a compact trust note.
+- `assets/account-system.css`: added the Studio Pass layout, simplified account-page nav treatment, hid the verbose footer on the account page, added responsive mobile ordering, and compacted signed-in account tool cards.
 
 **Verification**
-- `npm run structure`: passed.
-- `npm run seo`: passed; regenerated 71 event detail pages and `sitemap.xml`.
-- In-app browser metrics: no horizontal overflow or broken images on checked tracked pages, legacy mirror, and event detail.
-- In-app browser customer-flow audit: checked Home, Events, generated Event Detail, Tonight Rooms, Planner, and Account at 1280 x 720; nav labels/actions were consistent, homepage primary CTA measured 285 x 42, event detail had no duplicate source action, and checked routes had no broken images or horizontal overflow.
-- Playwright screenshot metrics: no horizontal overflow or broken images on the six saved screenshots listed above.
-- `npm run check`: blocked by unrelated event-data freshness/ticket-status audit issues in `scripts/audit-events.js`, after the code syntax/tests/site checks had passed.
+- `node --check assets/account-system.js`: passed.
+- `npm run test:account`: passed, 11 tests.
+- In-app browser desktop at 1440 x 1024: no horizontal overflow, 0 feature cards in the signed-out gate, old `UNLOCK` and `What your account saves` copy absent, footer hidden, auth state `gated`.
+- In-app browser mobile at 390 x 844: no horizontal overflow, 0 feature cards, old gate copy absent, and auth form visible in the first viewport.
+- Interaction check: `Create account` tab switches heading and primary action, uses `new-password` autocomplete, and password reveal changes the password field to text.
+- `npm run check`: blocked after syntax checks and 79 passing tests by unrelated `events/minuit-mirror-concept.html missing Vercel analytics queue`.
 
 final result: passed
