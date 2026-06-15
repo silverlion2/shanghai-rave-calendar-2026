@@ -767,6 +767,36 @@
     return win.supabase.createClient(config.url, config.anonKey);
   }
 
+  function isAccountSchemaMissingError(error) {
+    if (!error) return false;
+    const code = String(error.code || "").toUpperCase();
+    const message = String(error.message || error.details || error.hint || "").toLowerCase();
+    return message.includes("account tables are missing")
+      || code === "42P01"
+      || code === "PGRST205"
+      || (
+        message.includes("schema cache")
+        && (
+          message.includes("user_event_preferences")
+          || message.includes("saved_events")
+          || message.includes("profiles")
+        )
+      )
+      || (
+        message.includes("relation")
+        && message.includes("does not exist")
+        && (
+          message.includes("user_event_preferences")
+          || message.includes("saved_events")
+          || message.includes("profiles")
+        )
+      );
+  }
+
+  function accountSchemaMissingMessage() {
+    return "Supabase account tables are missing. Run npm run supabase:migrate with SUPABASE_DB_URL, then reload this page.";
+  }
+
   function mergePreferences(localPrefs, remotePrefs) {
     const local = normalizePreferences(localPrefs);
     const remote = normalizePreferences(remotePrefs);
@@ -821,6 +851,9 @@
       client.from("user_event_preferences").select("*").eq("user_id", userId).maybeSingle(),
       client.from("saved_events").select("event_id,created_at").eq("user_id", userId),
     ]);
+    if (isAccountSchemaMissingError(preferenceResult.error) || isAccountSchemaMissingError(savedResult.error)) {
+      throw new Error(accountSchemaMissingMessage());
+    }
     if (preferenceResult.error && preferenceResult.error.code !== "PGRST116") throw preferenceResult.error;
     if (savedResult.error) throw savedResult.error;
     return remotePreferencesFromRows(preferenceResult.data, savedResult.data);
@@ -832,9 +865,11 @@
     const { error } = await client
       .from("user_event_preferences")
       .upsert(remotePreferenceRow(userId, prefs), { onConflict: "user_id" });
+    if (isAccountSchemaMissingError(error)) throw new Error(accountSchemaMissingMessage());
     if (error) throw error;
     if (prefs.displayName) {
-      await client.from("profiles").update({ display_name: prefs.displayName }).eq("id", userId);
+      const { error: profileError } = await client.from("profiles").update({ display_name: prefs.displayName }).eq("id", userId);
+      if (isAccountSchemaMissingError(profileError)) throw new Error(accountSchemaMissingMessage());
     }
     return prefs;
   }
@@ -845,6 +880,7 @@
       const { error } = await client
         .from("saved_events")
         .upsert({ user_id: userId, event_id: eventId }, { onConflict: "user_id,event_id" });
+      if (isAccountSchemaMissingError(error)) throw new Error(accountSchemaMissingMessage());
       if (error) throw error;
       return;
     }
@@ -853,6 +889,7 @@
       .delete()
       .eq("user_id", userId)
       .eq("event_id", eventId);
+    if (isAccountSchemaMissingError(error)) throw new Error(accountSchemaMissingMessage());
     if (error) throw error;
   }
 
@@ -1269,8 +1306,15 @@
           state.preferences = readPreferencesFromDom();
           saveLocalPreferences(state.preferences, win);
           if (state.client && state.session?.user) {
-            await saveRemotePreferences(state.client, state.session.user.id, state.preferences);
-            state.remoteStatus = "Saved to Supabase profile";
+            try {
+              await saveRemotePreferences(state.client, state.session.user.id, state.preferences);
+              state.remoteStatus = "Saved to Supabase profile";
+              state.error = "";
+            } catch (error) {
+              if (!isAccountSchemaMissingError(error)) throw error;
+              state.remoteStatus = "Saved in this browser; account tables need migration";
+              state.error = accountSchemaMissingMessage();
+            }
           } else {
             state.remoteStatus = "Saved in this browser";
           }
@@ -1342,9 +1386,16 @@
         state.session = data.session || state.session;
         state.preferences = normalizePreferences({ ...state.preferences, displayName: displayName || state.preferences.displayName });
         if (data.session?.user?.id) {
-          await saveRemotePreferences(state.client, data.session.user.id, state.preferences);
-          await refreshBadgeState();
-          state.remoteStatus = "Account created; preferences synced";
+          try {
+            await saveRemotePreferences(state.client, data.session.user.id, state.preferences);
+            await refreshBadgeState();
+            state.remoteStatus = "Account created; preferences synced";
+            state.error = "";
+          } catch (error) {
+            if (!isAccountSchemaMissingError(error)) throw error;
+            state.remoteStatus = "Account created; account tables need migration";
+            state.error = accountSchemaMissingMessage();
+          }
         } else {
           state.remoteStatus = "Auth confirmation still enabled";
         }
@@ -1432,8 +1483,14 @@
         try {
           await setRemoteSavedEvent(state.client, state.session.user.id, eventId, shouldSave);
           state.remoteStatus = shouldSave ? "Saved to account" : "Removed from account";
+          state.error = "";
         } catch (error) {
-          state.error = error.message || "Could not sync saved event";
+          if (isAccountSchemaMissingError(error)) {
+            state.remoteStatus = "Saved in this browser; account tables need migration";
+            state.error = accountSchemaMissingMessage();
+          } else {
+            state.error = error.message || "Could not sync saved event";
+          }
         }
         render();
       }
@@ -1474,11 +1531,22 @@
         state.remoteStatus = hasSupabaseConfig(supabaseConfig(win)) ? "Supabase ready" : "Local mode";
         return;
       }
-      const remotePrefs = await loadRemotePreferences(state.client, state.session.user.id);
+      let remotePrefs;
+      try {
+        remotePrefs = await loadRemotePreferences(state.client, state.session.user.id);
+      } catch (error) {
+        if (!isAccountSchemaMissingError(error)) throw error;
+        state.remoteStatus = "Signed in; account tables need migration";
+        state.error = accountSchemaMissingMessage();
+        saveLocalPreferences(state.preferences, win);
+        await refreshBadgeState();
+        return;
+      }
       state.preferences = mergePreferences(state.preferences, remotePrefs);
       saveLocalPreferences(state.preferences, win);
       await refreshBadgeState();
       state.remoteStatus = "Synced with Supabase account";
+      state.error = "";
     }
 
     async function boot() {
@@ -1592,6 +1660,7 @@
     accountAuthFeedback,
     accountAuthErrorFeedback,
     accountAuthRedirectUrl,
+    isAccountSchemaMissingError,
     accountFeatureCatalog,
     publicAccountGuide,
     enhancePublicAccountGuides,

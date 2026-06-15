@@ -11,6 +11,7 @@ const {
   accountAuthFeedback,
   accountAuthErrorFeedback,
   accountAuthRedirectUrl,
+  isAccountSchemaMissingError,
   accountFeatureCatalog,
   publicAccountGuide,
 } = require("../assets/account-system.js");
@@ -282,6 +283,22 @@ test("accountAuthRedirectUrl avoids localhost confirmation links", () => {
       origin: "http://localhost:4173",
     },
   }), "https://preview.example.com/account.html");
+});
+
+test("isAccountSchemaMissingError detects missing account tables", () => {
+  assert.equal(isAccountSchemaMissingError({
+    code: "PGRST205",
+    message: "Could not find the table 'public.user_event_preferences' in the schema cache",
+  }), true);
+  assert.equal(isAccountSchemaMissingError({
+    code: "42P01",
+    message: "relation \"public.saved_events\" does not exist",
+  }), true);
+  assert.equal(isAccountSchemaMissingError(new Error("Supabase account tables are missing. Run npm run supabase:migrate.")), true);
+  assert.equal(isAccountSchemaMissingError({
+    code: "42501",
+    message: "permission denied for table user_event_preferences",
+  }), false);
 });
 
 test("accountFeatureCatalog lists live Supabase features and account expansion paths", () => {
