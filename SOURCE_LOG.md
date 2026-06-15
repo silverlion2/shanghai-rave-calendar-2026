@@ -154,6 +154,48 @@ Current result after regeneration:
 
 Workflow rule: do not use profile links, social index snippets, previous editions, or venue/festival context to make a Watch item appear corroborated. Promote only after a direct current-event source confirms the relevant date, venue, lineup, ticket route, or official update.
 
+## 2026-06-15 Source Sweep + Techno Discovery Gates
+
+Workflow update:
+
+- Every credibility session now starts with a source sweep before manual gap work.
+- New-event discovery uses two complementary gates:
+  - Event/source keyword fit.
+  - Tracked techno DJ/profile/alias fit.
+- The tracked DJ gate is intentionally incomplete and must be expanded from RA artist pages, RA event history, venue/promoter lineups, label pages, official artist pages, radio archives, and platform-native social checks.
+- Anti-scrape surfaces still require platform-native search or Browser/Chrome visual verification before deep-link inspection.
+
+Automation:
+
+- Created active automation `rave-calendar-source-sweep`.
+- Schedule: every 48 hours.
+- Workspace: `D:\workspace\rave calendar`.
+- Task: run the `rave-calendar-editor` source-sweep-first workflow, inspect `quality.technoDiscovery`, `quality.raShanghaiCoverage`, `quality.platformVerificationQueue`, and `quality.coreFieldQueue`, then update canonical data/logs when new source-backed facts are confirmed.
+
+Source sweep result:
+
+- `node scripts\scrape-events.js` completed on 2026-06-15.
+- Generated 89 events, 18 discovered links, 8 Computer Use source queues, and 69 curated updates.
+- `quality.technoDiscovery.djProfileGate.signalCount`: 88.
+- `quality.technoDiscovery.djProfileGate.profileCount`: 63.
+- `quality.technoDiscovery.djProfileGate.matchedEventCount`: 1.
+- Matched event: `neon-jungle-tom-kynd`, with tracked profile signals for Mr Chang, Tom Kynd, and Psyche.
+- No new high-priority techno event was added by the DJ gate in this run; the gate is now active for future sweeps.
+
+Current gaps:
+
+- `node scripts\audit-events.js` fails on source freshness because many future event and tracked-DJ source rows remain checked on 2026-06-14 while the audit date is 2026-06-15.
+- Remaining high-priority core rows after the sweep: `botox-fatale`, `youshan-warmup`, `jasmin-knopha`, `anika-kunst`, `truth-lies`, and `jaal`.
+- Remaining medium-priority performer profile gaps: `liminal-dreams` still needs profiles for IIN, Rainsoft, and Toss.
+
+Validation:
+
+- `node --check scripts\scrape-events.js` passed.
+- `npm run seo` passed.
+- `node --test tests\event-cross-links.test.js tests\trust-framework.test.js` passed.
+- `node scripts\check.js` passed.
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json` passed with 0 findings.
+
 ## 2026-06-14 Platform Verification Queue
 
 Added `quality.platformVerificationQueue` to `data/events.json` and a matching `scripts/audit-events.js` check. This queue is for Watch rows where a platform-bound lead exists, but the lead is still not a current-event confirmation source.
@@ -310,3 +352,36 @@ Sources used in this pass:
 - Chinese electronic music profile context: `https://electronicmusicinformation.com/gw/index/article_details.html?drysaltery_id=4064`
 
 Workflow rule: when two current public ticketing/event sources agree on venue/address and RA preserves a different venue label, use the ticketing venue for planning fields and keep the discrepancy visible in `venueReconciliation`.
+
+## 2026-06-15 Current/Future-Only Sweep Policy
+
+Applied the user's correction that source updates should only target currently happening or future events.
+
+- Source sweep remains the first step, but archive rows are not rechecked or rewritten unless the user explicitly asks for archive repair.
+- `scripts/scrape-events.js` now queues seed event detail pages only when the event is not past by the Shanghai archive cutoff.
+- `lastChecked` now updates only after a verified source check succeeds. Failed, browser-required, anti-bot, or archive sources keep their prior checked state instead of receiving a fresh date.
+- Freshness is now SLA-based instead of requiring every source date to equal today's date: 2 days for normal future event sources, 1 day for near-event sources, and 30 days for DJ profile sources.
+- New parsed Watch rows now receive a `ticketStatus` caveat that asks readers to verify ticket route, price tiers, availability, age policy, and venue details before planning.
+- The latest sweep produced 90 events, 33 future rows, 0 stale future rows, 0 missing ticket-status rows, and no past rows refreshed on 2026-06-15.
+
+Discovery rules used:
+
+- Gate A: add source-backed Shanghai activities when the event/source text itself signals techno, rave, electronic, club, warehouse, bass, hard dance, breaks, jungle, UKG, trance, electro, EBM, acid, industrial, or related local-nightlife context.
+- Gate B: add events when lineup, DJ profile, aliases, label, promoter, or venue context matches tracked techno-relevant artists. This inventory is not complete and must keep expanding.
+- For anti-scrape platforms, use platform-native search before direct deep links. XHS, Instagram, WeChat, Weibo, ticket widgets, RA DataDome pages, and SmartShanghai dynamic ticket states require Browser/Chrome visual verification before updating source freshness.
+
+Current unresolved source queues:
+
+- `quality.coreFieldQueue`: 23 future rows, 66 missing core fields, 4 uncertain core fields.
+- `quality.platformVerificationQueue`: 5 rows needing platform-native visual checks.
+- `quality.failedSourceReports`: 17 source reports still failed or require browser handling.
+
+Validation passed:
+
+- `node scripts/scrape-events.js`
+- `npm run seo`
+- `node scripts/audit-events.js`
+- `node --test tests/event-cross-links.test.js tests/trust-framework.test.js`
+- `node scripts/check.js`
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json`
+- `npm run check`

@@ -25,6 +25,10 @@ const MAX_X_KEYWORDS = Number(process.env.SCRAPE_MAX_X_KEYWORDS || 16);
 const MAX_X_LINKS_PER_KEYWORD = Number(process.env.SCRAPE_MAX_X_LINKS_PER_KEYWORD || 8);
 const X_BEARER_TOKEN = process.env.X_BEARER_TOKEN || process.env.TWITTER_BEARER_TOKEN || "";
 const X_PUBLIC_SEARCH_ENABLED = process.env.SCRAPE_X_PUBLIC_SEARCH === "true";
+const EVENT_SOURCE_FRESHNESS_DAYS = Number(process.env.EVENT_SOURCE_FRESHNESS_DAYS || 2);
+const EVENT_NEAR_WINDOW_DAYS = Number(process.env.EVENT_NEAR_WINDOW_DAYS || 1);
+const EVENT_NEAR_SOURCE_FRESHNESS_DAYS = Number(process.env.EVENT_NEAR_SOURCE_FRESHNESS_DAYS || 1);
+const DJ_PROFILE_SOURCE_FRESHNESS_DAYS = Number(process.env.DJ_PROFILE_SOURCE_FRESHNESS_DAYS || 30);
 const RUN_NOW = process.env.SCRAPE_NOW ? new Date(process.env.SCRAPE_NOW) : new Date();
 
 if (Number.isNaN(RUN_NOW.getTime())) {
@@ -49,6 +53,30 @@ const DEFAULT_X_KEYWORDS = [
   "\"Reactor Shanghai\" electronic",
   "\"Wigwam Shanghai\"",
 ];
+
+const CALENDAR_FIT_PATTERN = /\b(techno|rave|electronic|electro|acid|industrial|ebm|trance|ambient|idm|bass|warehouse|a\/v|experimental|club music|hard dance|breaks?|jungle|ukg|garage|dubstep|ghettotech|baile funk|minimal|nu-disco)\b/i;
+const HOUSE_CONTEXT_PATTERN = /\b(dj|club|rave|dance|dancefloor|electronic|music|selector|lineup|venue|promoter)\b/i;
+const CALENDAR_NEGATIVE_PATTERN = /\b(girls night|pool party|disco ball|disco night|afrowave|sunset sessions)\b/i;
+const TECHNO_PROFILE_PATTERN = /\b(techno|hard techno|acid|industrial|ebm|electro|trance|rave|warehouse|hard dance|breaks?|jungle|ukg|garage|dubstep|ghettotech|club music|bass|experimental electronic|minimal)\b/i;
+const AMBIGUOUS_PROFILE_SIGNAL_TERMS = new Set([
+  "acid",
+  "ambient",
+  "bass",
+  "breaks",
+  "club",
+  "dreaming",
+  "electro",
+  "exit",
+  "floating",
+  "garage",
+  "house",
+  "live",
+  "minimal",
+  "solo",
+  "system",
+  "techno",
+  "trance",
+]);
 
 const SOURCE_PAGES = [
   {
@@ -215,6 +243,46 @@ function shanghaiDateString(date = RUN_NOW) {
     day: "2-digit",
   }).formatToParts(date).filter(part => part.type !== "literal").map(part => [part.type, part.value]));
   return `${parts.year}-${parts.month}-${parts.day}`;
+}
+
+function dateKeyToEpochDay(value) {
+  const match = String(value || "").match(/\d{4}-\d{2}-\d{2}/);
+  if (!match) return null;
+  const [year, month, day] = match[0].split("-").map(Number);
+  if (!year || !month || !day) return null;
+  return Math.floor(Date.UTC(year, month - 1, day) / 86400000);
+}
+
+function dayDifference(fromDate, toDate) {
+  const from = dateKeyToEpochDay(fromDate);
+  const to = dateKeyToEpochDay(toDate);
+  if (from === null || to === null) return null;
+  return to - from;
+}
+
+function sourceAgeDays(checkedDate, auditDate) {
+  return dayDifference(checkedDate, auditDate);
+}
+
+function eventFreshnessMaxAgeDays(event = {}, auditDate = shanghaiDateString()) {
+  const daysUntilEvent = dayDifference(auditDate, event.sortDate || event.date);
+  if (daysUntilEvent !== null && daysUntilEvent >= 0 && daysUntilEvent <= EVENT_NEAR_WINDOW_DAYS) {
+    return EVENT_NEAR_SOURCE_FRESHNESS_DAYS;
+  }
+  return EVENT_SOURCE_FRESHNESS_DAYS;
+}
+
+function checkedDateIsFresh(checkedDate, auditDate, maxAgeDays) {
+  const age = sourceAgeDays(checkedDate, auditDate);
+  return age !== null && age <= maxAgeDays;
+}
+
+function eventCheckedDateIsFresh(event = {}, auditDate = shanghaiDateString()) {
+  return checkedDateIsFresh(event.lastChecked, auditDate, eventFreshnessMaxAgeDays(event, auditDate));
+}
+
+function sourceCheckIsVerified(check = {}) {
+  return Boolean(check && check.ok === true && check.lastChecked);
 }
 
 function eventArchiveCutoff(sortDate) {
@@ -513,6 +581,94 @@ function auditedLineupItems(items, event = {}) {
 function performerNamesForEvent(event) {
   if (isFestivalListing(event) && event.includeInDjCoverage !== true) return [];
   return auditedLineupItems(event.lineup || [], event).map(lineupItemName);
+}
+
+function profileIsTechnoRelevant(profile = {}) {
+  const text = [
+    profile.scope,
+    ensureArray(profile.genres).join(" "),
+    profile.summary,
+    profile.sourceNote,
+  ].filter(Boolean).join(" ");
+  return TECHNO_PROFILE_PATTERN.test(text);
+}
+
+function isAmbiguousProfileSignal(term) {
+  const normalized = normalizeEntityName(term);
+  if (!normalized || normalized.length < 3) return true;
+  if (AMBIGUOUS_PROFILE_SIGNAL_TERMS.has(normalized)) return true;
+  if (/^\d+$/.test(normalized) && normalized.length < 4) return true;
+  if (!normalized.includes(" ") && normalized.length < 4) return true;
+  return false;
+}
+
+function buildTechnoArtistSignals(profiles = {}) {
+  const byTerm = new Map();
+  for (const profile of Object.values(profiles)) {
+    if (!profileIsTechnoRelevant(profile)) continue;
+    const name = cleanText(profile.name || profile.slug);
+    const terms = [name, ...ensureArray(profile.aliases)].filter(Boolean);
+    for (const term of terms) {
+      const normalized = normalizeEntityName(term);
+      if (isAmbiguousProfileSignal(normalized)) continue;
+      if (!byTerm.has(normalized)) {
+        byTerm.set(normalized, {
+          term: cleanText(term),
+          normalized,
+          profile: name,
+          slug: profile.slug || performerProfileSlug(name),
+        });
+      }
+    }
+  }
+  return Array.from(byTerm.values()).sort((first, second) => second.normalized.length - first.normalized.length);
+}
+
+function eventSignalSearchText(event = {}) {
+  const lineupText = Array.isArray(event.lineup)
+    ? event.lineup.map(item => [lineupItemName(item), lineupItemNote(item)].filter(Boolean).join(" ")).join(" ")
+    : "";
+  return normalizeEntityName([
+    event.title,
+    event.venue,
+    event.organizer,
+    event.genre,
+    event.description,
+    event.sourceLabel,
+    lineupText,
+  ].filter(Boolean).join(" "));
+}
+
+function technoArtistMatchesForEvent(event = {}, technoArtistSignals = []) {
+  if (!technoArtistSignals.length) return [];
+  const text = ` ${eventSignalSearchText(event)} `;
+  const matches = [];
+  const seen = new Set();
+  for (const signal of technoArtistSignals) {
+    if (!signal.normalized || !text.includes(` ${signal.normalized} `)) continue;
+    if (seen.has(signal.slug)) continue;
+    seen.add(signal.slug);
+    matches.push(signal);
+    if (matches.length >= 8) break;
+  }
+  return matches;
+}
+
+function annotateTechnoArtistSignals(event = {}, technoArtistSignals = []) {
+  const matches = technoArtistMatchesForEvent(event, technoArtistSignals);
+  if (!matches.length) return event;
+  return {
+    ...event,
+    technoProfileSignals: matches.map(match => ({
+      artist: match.profile,
+      matchedTerm: match.term,
+      source: "tracked-dj-profiles",
+    })),
+    decisionTags: Array.from(new Set([
+      ...ensureArray(event.decisionTags),
+      "tracked techno DJ signal",
+    ])),
+  };
 }
 
 function auditedSetTimes(items, event = {}) {
@@ -908,11 +1064,16 @@ function parseEventPage(url, html, linkTitle = "") {
     status: eventStatus(sortDate, confidence),
     price: "Check source",
     age: "Check venue",
+    ticketStatus: confidence === "Watch"
+      ? `Watchlist lead from ${sourceLabel}; verify ticket route, price tiers, availability, age policy, and venue details before planning.`
+      : `Parsed from ${sourceLabel}; recheck same-day ticket availability and door policy before planning.`,
     source: normalizeUrl(url),
     sourceLabel,
     imageTheme: imageThemeFor(title),
     ...(posterUrl ? { posterUrl } : {}),
-    description: description || `Public event listing from ${sourceLabel}.`,
+    description: confidence === "Watch"
+      ? `${description || `Public event listing from ${sourceLabel}.`} Watchlist lead: verify lineup, ticketing, age policy, and venue details before planning.`
+      : description || `Public event listing from ${sourceLabel}.`,
     sourceStatus: confidence === "Watch" ? "watchlist" : "secondary",
     addedAt: shanghaiDateString(),
     lastChecked: shanghaiDateString(),
@@ -1046,13 +1207,26 @@ function normalizeEvent(event, sourceChecks) {
   normalized.imageTheme = normalized.imageTheme || imageThemeFor(normalized.title);
   normalized.status = eventStatus(normalized.sortDate, normalized.confidence, normalized.status);
   normalized.sourceStatus = normalized.sourceStatus || (normalized.status === "watch" || normalized.confidence === "Watch" ? "watchlist" : "secondary");
-  normalized.lastChecked = normalized.lastChecked || sourceChecks.get(normalized.source)?.lastChecked || "2026-06-08";
+  const shouldRefreshSourceState = !eventIsPastByCutoff(normalized.sortDate);
+  const primarySourceCheck = sourceChecks.get(normalized.source);
+  normalized.lastChecked = shouldRefreshSourceState && sourceCheckIsVerified(primarySourceCheck)
+    ? primarySourceCheck.lastChecked
+    : normalized.lastChecked || "2026-06-08";
   normalized.sources = Array.isArray(normalized.sources) && normalized.sources.length ? normalized.sources : [{
     label: normalized.sourceLabel,
     url: normalized.source,
     status: normalized.sourceStatus,
     lastChecked: normalized.lastChecked,
   }];
+  normalized.sources = normalized.sources.map(source => {
+    const url = normalizeUrl(source.url);
+    const check = sourceChecks.get(url);
+    return {
+      ...source,
+      url,
+      ...(shouldRefreshSourceState && sourceCheckIsVerified(check) ? { lastChecked: check.lastChecked } : {}),
+    };
+  });
   if (normalized.programHighlights !== undefined) {
     const highlights = normalizeProgramHighlights(normalized.programHighlights);
     if (highlights.length) {
@@ -1109,11 +1283,12 @@ function mergeEvents(seedEvents, scrapedEvents) {
   return merged.sort((a, b) => a.sortDate.localeCompare(b.sortDate) || a.title.localeCompare(b.title));
 }
 
-function isCalendarFit(event) {
+function isCalendarFit(event, technoArtistSignals = []) {
   const text = [event.title, event.venue, event.genre, event.description].join(" ").toLowerCase();
-  const positive = /\b(techno|rave|electronic|electro|acid|industrial|ebm|trance|ambient|idm|bass|warehouse|a\/v|experimental|club music|hard dance|breaks?|jungle|ukg|garage|dubstep|ghettotech|baile funk|minimal|nu-disco)\b/.test(text)
-    || (/\bhouse\b/.test(text) && /\b(dj|club|rave|dance|dancefloor|electronic|music|selector|lineup|venue|promoter)\b/.test(text));
-  const negative = /\b(girls night|pool party|disco ball|disco night|afrowave|sunset sessions)\b/.test(text);
+  const positive = CALENDAR_FIT_PATTERN.test(text)
+    || (/\bhouse\b/i.test(text) && HOUSE_CONTEXT_PATTERN.test(text))
+    || technoArtistMatchesForEvent(event, technoArtistSignals).length > 0;
+  const negative = CALENDAR_NEGATIVE_PATTERN.test(text);
   return positive && !negative;
 }
 
@@ -1773,12 +1948,54 @@ function buildCoreFieldQueue(futureEvents, djItineraryStats = {}) {
     ));
 }
 
-function buildQualitySnapshot(events, sources, auditDate, curatedEventsApplied, generatedAt, djItineraryStats = {}, raShanghaiCoverageConfig = null) {
+function buildTechnoDiscoverySnapshot(events, technoArtistSignals = []) {
+  const uniqueProfiles = new Map();
+  for (const signal of technoArtistSignals) {
+    if (signal.slug && !uniqueProfiles.has(signal.slug)) uniqueProfiles.set(signal.slug, signal.profile);
+  }
+  const matchedEvents = events.filter(event => Array.isArray(event.technoProfileSignals) && event.technoProfileSignals.length > 0);
+  return {
+    rule: "Use two complementary discovery gates: event keyword/source text fit OR tracked techno-relevant DJ/profile/alias fit.",
+    caveat: "The DJ gate is not a complete scene graph. It only covers source-backed profiles in config/tracked-dj-profiles.json and must be expanded from RA artist pages, RA event history, venue/promoter lineups, label pages, and platform-native social checks.",
+    eventKeywordGate: [
+      "techno",
+      "rave",
+      "electronic",
+      "electro",
+      "acid",
+      "industrial",
+      "EBM",
+      "trance",
+      "warehouse",
+      "hard dance",
+      "bass/club crossover",
+      "breaks",
+      "jungle",
+      "UKG",
+      "experimental electronic"
+    ],
+    djProfileGate: {
+      source: "config/tracked-dj-profiles.json",
+      signalCount: technoArtistSignals.length,
+      profileCount: uniqueProfiles.size,
+      matchedEventCount: matchedEvents.length,
+      matchedEvents: matchedEvents.slice(0, 20).map(event => ({
+        id: event.id,
+        date: event.sortDate,
+        title: event.title,
+        venue: event.venue,
+        signals: event.technoProfileSignals,
+      })),
+    },
+  };
+}
+
+function buildQualitySnapshot(events, sources, auditDate, curatedEventsApplied, generatedAt, djItineraryStats = {}, raShanghaiCoverageConfig = null, technoArtistSignals = []) {
   const future = events.filter(event => String(event.sortDate || "") >= auditDate);
   const futureHigh = future.filter(event => event.confidence === "High");
   const futureWatch = future.filter(event => event.status === "watch" || event.confidence === "Watch");
   const failedSourceReports = sources.filter(source => source.ok === false);
-  const staleFuture = future.filter(event => String(event.lastChecked || "") < auditDate);
+  const staleFuture = future.filter(event => !eventCheckedDateIsFresh(event, auditDate));
   const missingTicketStatus = future.filter(event => !String(event.ticketStatus || "").trim());
   const highMissingLineup = futureHigh.filter(event => !isFestivalListing(event) && (!Array.isArray(event.lineup) || event.lineup.length === 0));
   const singleSourceWatch = futureWatch.filter(event => eventSourceCount(event) <= 1);
@@ -1799,10 +2016,18 @@ function buildQualitySnapshot(events, sources, auditDate, curatedEventsApplied, 
   const raShanghaiCoverage = buildRaShanghaiCoverageSnapshot(raShanghaiCoverageConfig, events);
   const platformVerificationQueue = buildPlatformVerificationQueue(futureWatch);
   const coreFieldQueue = buildCoreFieldQueue(future, djItineraryStats);
+  const technoDiscovery = buildTechnoDiscoverySnapshot(events, technoArtistSignals);
 
   return {
     auditDate,
     generatedAt,
+    freshnessPolicy: {
+      eventSourceMaxAgeDays: EVENT_SOURCE_FRESHNESS_DAYS,
+      nearEventWindowDays: EVENT_NEAR_WINDOW_DAYS,
+      nearEventSourceMaxAgeDays: EVENT_NEAR_SOURCE_FRESHNESS_DAYS,
+      djProfileSourceMaxAgeDays: DJ_PROFILE_SOURCE_FRESHNESS_DAYS,
+      rule: "Future event sources are expected to be rechecked within the two-day scrape cadence; events within the near-event window use the stricter near-event freshness window. Profile-level DJ sources have a longer freshness window because they support identity/context, not live ticket state.",
+    },
     totals: {
       events: events.length,
       future: future.length,
@@ -1821,6 +2046,9 @@ function buildQualitySnapshot(events, sources, auditDate, curatedEventsApplied, 
       djSourceUpgradeQueue: djCoverage.sourceUpgradeQueue.length,
       trackedDjProfiles: djCoverage.trackedItineraryProfiles,
       curatedDjSourceProfiles: djCoverage.curatedSourceProfiles,
+      technoArtistSignals: technoDiscovery.djProfileGate.signalCount,
+      technoArtistSignalProfiles: technoDiscovery.djProfileGate.profileCount,
+      eventsWithTechnoProfileSignals: technoDiscovery.djProfileGate.matchedEventCount,
       trackedDjItineraryRows: djCoverage.trackedItineraryRows,
       staleFuture: staleFuture.length,
       missingTicketStatus: missingTicketStatus.length,
@@ -1871,8 +2099,9 @@ function buildQualitySnapshot(events, sources, auditDate, curatedEventsApplied, 
         "soundTags",
         "decisionTags"
       ],
-      rule: "Fill missing or uncertain core fields for future events, venues, and DJs before attempting confidence promotion through second sources."
+      rule: "Run the broad source sweep first, then fill missing or uncertain core fields for future events, venues, and DJs before attempting confidence promotion through second sources."
     },
+    technoDiscovery,
     coreFieldQueue,
     platformVerificationQueue,
     venueCoverage,
@@ -1890,8 +2119,10 @@ function buildQualitySnapshot(events, sources, auditDate, curatedEventsApplied, 
       error: source.error,
     })),
     updateWorkflow: [
-      "Run npm run scrape with reasonable timeouts to refresh public pages and curated overlays.",
-      "Run npm run audit to inspect future freshness, ticket notes, High-confidence lineups, the Watch queue, active venue coverage, and future DJ profile coverage.",
+      "Start every credibility session with a broad source sweep: run npm run scrape or node scripts/scrape-events.js with reasonable timeouts to refresh RA, SmartShanghai, existing detail URLs, curated overlays, tracked DJ profiles, source health, discovered links, and browser-required queues.",
+      "During the sweep, add newly discovered Shanghai techno-relevant activities through two complementary gates: event/source keyword fit and tracked techno-related DJ/profile/alias fit.",
+      "Inspect source health before manual research: failed source reports, RA coverage gaps, discovered links, social leads, quality.platformVerificationQueue, and quality.coreFieldQueue.",
+      "Only after the source sweep, run npm run audit to prioritize future freshness, ticket notes, High-confidence lineups, the Watch queue, active venue coverage, and future DJ profile coverage.",
       "Keep config/ra-shanghai-coverage.json aligned with Browser/Chrome-verified RA Shanghai city-listing rows when RA fetch is browser-required.",
       "Promote Watch entries only after direct venue, promoter, ticketing, RA, SmartShanghai detail, or official artist evidence is captured in config/curated-events.json.",
       "Use Computer Use / Chrome for WeChat, Xiaohongshu, mini-program, image-only, or anti-bot sources, then preserve evidence notes and source links in curated overlays.",
@@ -2188,6 +2419,8 @@ async function main() {
   const seedEvents = extractEmbeddedEvents();
   const keywordConfig = readKeywordConfig();
   const curatedEvents = readCuratedEvents();
+  const trackedDjProfiles = readTrackedDjProfiles();
+  const technoArtistSignals = buildTechnoArtistSignals(trackedDjProfiles);
   const raShanghaiCoverageConfig = readRaShanghaiCoverage();
   const sourceChecks = new Map();
   const sourceReports = [];
@@ -2277,7 +2510,7 @@ async function main() {
   }
 
   for (const event of seedEvents) {
-    if (event.status !== "past" && event.source) {
+    if (!eventIsPastByCutoff(event.sortDate) && event.source) {
       detailLinks.set(normalizeUrl(event.source), {
         url: normalizeUrl(event.source),
         title: event.title,
@@ -2316,10 +2549,11 @@ async function main() {
   const seedSources = new Set(seedEvents.map(event => normalizeUrl(event.source)).filter(Boolean));
   const normalizedSeeds = seedEvents.map(event => normalizeEvent(event, sourceChecks));
   const normalizedScraped = scrapedEvents
+    .map(event => annotateTechnoArtistSignals(event, technoArtistSignals))
     .filter(event => !seedSources.has(normalizeUrl(event.source)))
     .filter(event => !isDuplicateOfSeed(event, seedEvents))
     .filter(event => event.status !== "past")
-    .filter(isCalendarFit)
+    .filter(event => isCalendarFit(event, technoArtistSignals))
     .map(event => normalizeEvent(event, sourceChecks));
   const events = applyCuratedEvents(mergeEvents(normalizedSeeds, normalizedScraped), curatedEvents, sourceChecks);
 
@@ -2347,11 +2581,12 @@ async function main() {
     computerUseQueue,
     curatedEventsApplied: curatedEvents.length,
     djItineraryStats,
-    quality: buildQualitySnapshot(events, sourceReportsAll, verified, curatedEvents.length, generatedAt, djItineraryStats, raShanghaiCoverageConfig),
+    quality: buildQualitySnapshot(events, sourceReportsAll, verified, curatedEvents.length, generatedAt, djItineraryStats, raShanghaiCoverageConfig, technoArtistSignals),
     notes: [
       "This v1 scraper keeps curated embedded events as the seed dataset, refreshes source metadata, and adds parsable public event pages as watch/secondary entries.",
       "Computer Use collected event updates in config/curated-events.json are merged after the automated source refresh.",
       "Events from listing/editorial pages remain watch-level until a direct venue, promoter, ticketing, or event page confirms details.",
+      "New-event discovery uses complementary gates: event/source keyword fit plus tracked techno-related DJ profile and alias signals, so generic event pages can still enter the Watch queue when the lineup points to techno, hard techno, acid, industrial, EBM, electro, trance, rave, warehouse, hard dance, bass/club crossover, breaks, jungle, UKG, or experimental electronic context.",
       "X keyword searches are discovery-only social leads and never promote an event into the calendar without confirmation from a stronger source.",
       "Known anti-bot or app-only sources are queued for agent-operated Chrome + Computer Use collection instead of being scraped with plain fetch.",
       "Resident Advisor HTTP or headless-browser challenges are recorded as browser-required; do not treat challenge pages as empty listings.",

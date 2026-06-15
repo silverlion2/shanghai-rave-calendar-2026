@@ -519,7 +519,7 @@ window.DJ_ITINERARY_DATA = {
   "njelic": {
     "slug": "njelic",
     "name": "NJELIC",
-    "trackedAt": "2026-06-14",
+    "trackedAt": "2026-06-15",
     "checkedByTimezone": "Asia/Shanghai",
     "scope": "Worldwide itinerary rows generated from scraped and curated event data",
     "imageTheme": "ember",
@@ -535,7 +535,7 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai event description",
         "url": "https://www.smartshanghai.com/event/a-full-afrowave-takeover-at-la-burg",
         "status": "watchlist",
-        "checked": "2026-06-14"
+        "checked": "2026-06-15"
       }
     ],
     "itinerary": [
@@ -3286,6 +3286,153 @@ window.DJ_ITINERARY_DATA = {
         "url": "https://electronicmusicinformation.com/gw/index/article_details.html?drysaltery_id=4064",
         "status": "artist-profile",
         "checked": "2026-06-14"
+      }
+    ]
+  },
+  "bi-non-chillchillshit": {
+    "slug": "bi-non-chillchillshit",
+    "name": "Bi-NON & chillchillshit",
+    "aliases": [
+      "Bi-NON",
+      "BI-NON",
+      "chillchillshit",
+      "Bi-NON & chillchillshit A/V Live"
+    ],
+    "trackedAt": "2026-06-15",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "Hexscape / EXIT A/V live profile",
+    "imageTheme": "acid",
+    "genres": [
+      "hyperpop",
+      "breakbeat",
+      "footwork",
+      "bass",
+      "live A/V"
+    ],
+    "summary": "Shanghai/China club profile preserved for the Hexscape A/V live booking. Public sources connect Bi-NON to BAIHUI and BYYB radio contexts, while SmartShanghai links Bi-NON and chillchillshit to current and previous A/V club lineups.",
+    "sourceNote": "SmartShanghai is the current Hexscape event lead. BAIHUI/BYYB and previous SmartShanghai listings are profile context only; they do not confirm Hexscape ticketing, price, age, or set times.",
+    "sources": [
+      {
+        "label": "SmartShanghai Hexscape June 2026 guide",
+        "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+        "status": "watchlist-event-source",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "SmartShanghai Gel ILLUM A/V context",
+        "url": "https://www.smartshanghai.com/event/gel-club-music-techno-live-a-v-2026-03-20",
+        "status": "previous-lineup-context",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "BAIHUI The Roof Radio w/ BI-NON",
+        "url": "https://baihui.live/shows/the-roof-radio-w-bi-non-25-05-26/en",
+        "status": "radio-context",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "BYYB Radio Bi-NON performance context",
+        "url": "https://www.youtube.com/watch?v=iCp6Xkny-fY",
+        "status": "performance-context",
+        "checked": "2026-06-15"
+      }
+    ]
+  },
+  "nasty": {
+    "slug": "nasty",
+    "name": "Na$ty",
+    "aliases": [
+      "NA$TY",
+      "Nasty",
+      "nastyhabits124"
+    ],
+    "trackedAt": "2026-06-15",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "Hexscape / Shanghai bass and PREME profile",
+    "imageTheme": "rose",
+    "genres": [
+      "bass",
+      "club",
+      "grime",
+      "trap",
+      "phonk"
+    ],
+    "summary": "Shanghai bass/club profile preserved for the Hexscape support lineup. RA, SmartShanghai, and 247tickets archive sources connect Na$ty to PREME, bass, club, grime, trap, and jungle-adjacent Shanghai lineups.",
+    "sourceNote": "Profile context supports the artist identity and Shanghai club lane. SmartShanghai remains the only current Hexscape event-level source.",
+    "sources": [
+      {
+        "label": "SmartShanghai Hexscape June 2026 guide",
+        "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+        "status": "watchlist-event-source",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "RA Surreal Program Shenzhen profile context",
+        "url": "https://ra.co/events/1407225",
+        "status": "artist-profile",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "SmartShanghai Duality EXIT lineup context",
+        "url": "https://www.smartshanghai.com/event/duality-trust-issues-a-night-of-bass-jungle-and-experimental-sounds-2026-02-14",
+        "status": "previous-lineup-context",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "247tickets Arkham Halloween profile context",
+        "url": "https://www.247tickets.com/t/arkham-halloween-beyond-shimmer",
+        "status": "artist-profile",
+        "checked": "2026-06-15"
+      }
+    ]
+  },
+  "toyn": {
+    "slug": "toyn",
+    "name": "Toyn",
+    "aliases": [
+      "TOYN",
+      "2yn100"
+    ],
+    "trackedAt": "2026-06-15",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "Hexscape / bass and footwork profile",
+    "imageTheme": "gold",
+    "genres": [
+      "footwork",
+      "UK bass",
+      "bass",
+      "jungle",
+      "club"
+    ],
+    "summary": "Bass/footwork profile preserved for the Hexscape support lineup. BAIHUI and RA sources place Toyn in footwork, UK bass, jungle, and club-music contexts.",
+    "sourceNote": "SmartShanghai confirms Toyn on the current Hexscape support bill; BAIHUI and RA sources provide profile context only.",
+    "sources": [
+      {
+        "label": "SmartShanghai Hexscape June 2026 guide",
+        "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+        "status": "watchlist-event-source",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "BAIHUI The Roof Radio w/ TOYN",
+        "url": "https://baihui.live/shows/the-roof-radio-w-toyn-25-02-24/en",
+        "status": "radio-context",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "RA KNOT Pres. CAM GIRL lineup context",
+        "url": "https://ra.co/events/2422723",
+        "status": "previous-lineup-context",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "BAIHUI The Roof Radio host index",
+        "url": "https://baihui.live/hosts/the-roof-radio/en",
+        "status": "radio-context",
+        "checked": "2026-06-15"
       }
     ]
   }

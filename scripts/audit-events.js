@@ -6,6 +6,10 @@ const RA_SHANGHAI_COVERAGE_FILE = "config/ra-shanghai-coverage.json";
 const payload = JSON.parse(fs.readFileSync(DATA_FILE, "utf8"));
 const events = Array.isArray(payload.events) ? payload.events : [];
 const auditDate = process.env.EVENT_AUDIT_DATE || payload.verified;
+const EVENT_SOURCE_FRESHNESS_DAYS = Number(process.env.EVENT_SOURCE_FRESHNESS_DAYS || payload.quality?.freshnessPolicy?.eventSourceMaxAgeDays || 2);
+const EVENT_NEAR_WINDOW_DAYS = Number(process.env.EVENT_NEAR_WINDOW_DAYS || payload.quality?.freshnessPolicy?.nearEventWindowDays || 1);
+const EVENT_NEAR_SOURCE_FRESHNESS_DAYS = Number(process.env.EVENT_NEAR_SOURCE_FRESHNESS_DAYS || payload.quality?.freshnessPolicy?.nearEventSourceMaxAgeDays || 1);
+const DJ_PROFILE_SOURCE_FRESHNESS_DAYS = Number(process.env.DJ_PROFILE_SOURCE_FRESHNESS_DAYS || payload.quality?.freshnessPolicy?.djProfileSourceMaxAgeDays || 30);
 const trackedDjProfileConfig = fs.existsSync(TRACKED_DJ_PROFILES_FILE)
   ? JSON.parse(fs.readFileSync(TRACKED_DJ_PROFILES_FILE, "utf8"))
   : { profiles: [] };
@@ -26,6 +30,42 @@ function sourceUrl(source) {
 
 function sourceChecked(source) {
   return String(source?.lastChecked || source?.checkedAt || source?.checked || "").trim();
+}
+
+function dateKeyToEpochDay(value) {
+  const match = String(value || "").match(/\d{4}-\d{2}-\d{2}/);
+  if (!match) return null;
+  const [year, month, day] = match[0].split("-").map(Number);
+  if (!year || !month || !day) return null;
+  return Math.floor(Date.UTC(year, month - 1, day) / 86400000);
+}
+
+function dayDifference(fromDate, toDate) {
+  const from = dateKeyToEpochDay(fromDate);
+  const to = dateKeyToEpochDay(toDate);
+  if (from === null || to === null) return null;
+  return to - from;
+}
+
+function sourceAgeDays(checkedDate, referenceDate) {
+  return dayDifference(checkedDate, referenceDate);
+}
+
+function eventFreshnessMaxAgeDays(event = {}) {
+  const daysUntilEvent = dayDifference(auditDate, event.sortDate || event.date);
+  if (daysUntilEvent !== null && daysUntilEvent >= 0 && daysUntilEvent <= EVENT_NEAR_WINDOW_DAYS) {
+    return EVENT_NEAR_SOURCE_FRESHNESS_DAYS;
+  }
+  return EVENT_SOURCE_FRESHNESS_DAYS;
+}
+
+function checkedDateIsFresh(checkedDate, maxAgeDays) {
+  const age = sourceAgeDays(checkedDate, auditDate);
+  return age !== null && age <= maxAgeDays;
+}
+
+function eventCheckedDateIsFresh(event = {}) {
+  return checkedDateIsFresh(event.lastChecked, eventFreshnessMaxAgeDays(event));
 }
 
 function count(items) {
@@ -524,7 +564,7 @@ const warnings = [];
 const raShanghaiCoverage = buildRaShanghaiCoverageSnapshot(raShanghaiCoverageConfig);
 
 if (raShanghaiCoverage.configured) {
-  if (String(raShanghaiCoverage.updatedAt || "") < auditDate) {
+  if (!checkedDateIsFresh(raShanghaiCoverage.updatedAt, EVENT_SOURCE_FRESHNESS_DAYS)) {
     warnings.push(`RA Shanghai coverage manifest is stale (${raShanghaiCoverage.updatedAt || "missing"})`);
   }
   if (raShanghaiCoverage.visibleUpcomingLabel !== null && !raShanghaiCoverage.upcomingMatchesListingLabel) {
@@ -544,7 +584,7 @@ for (const event of future) {
   const lastChecked = String(event.lastChecked || "");
   const sources = Array.isArray(event.sources) ? event.sources : [];
 
-  if (!lastChecked || lastChecked < auditDate) {
+  if (!lastChecked || !eventCheckedDateIsFresh(event)) {
     issues.push(`${id} has stale or missing lastChecked (${lastChecked || "missing"})`);
   }
 
@@ -558,7 +598,7 @@ for (const event of future) {
 
   for (const source of sources) {
     const checked = sourceChecked(source);
-    if (checked && checked < auditDate) {
+    if (checked && !checkedDateIsFresh(checked, eventFreshnessMaxAgeDays(event))) {
       issues.push(`${id} source ${sourceUrl(source)} is stale (${checked})`);
     }
   }
@@ -621,7 +661,7 @@ for (const profile of curatedDjProfiles) {
       issues.push(`${id} tracked DJ profile source is missing url`);
     }
     const checked = sourceChecked(source);
-    if (!checked || checked < auditDate) {
+    if (!checked || !checkedDateIsFresh(checked, DJ_PROFILE_SOURCE_FRESHNESS_DAYS)) {
       issues.push(`${id} tracked DJ profile source ${sourceUrl(source) || "(missing url)"} is stale or missing checked date`);
     }
   }
@@ -631,7 +671,7 @@ const watchFuture = future.filter(event => event.status === "watch" || event.con
 const highFuture = future.filter(event => event.confidence === "High");
 const singleSourceWatch = watchFuture.filter(event => eventSourceCount(event) <= 1);
 const singleConfirmationWatch = watchFuture.filter(event => eventConfirmationSourceCount(event) <= 1);
-const staleFuture = future.filter(event => String(event.lastChecked || "") < auditDate);
+const staleFuture = future.filter(event => !eventCheckedDateIsFresh(event));
 const missingTicketStatus = future.filter(event => !String(event.ticketStatus || "").trim());
 const highMissingLineup = highFuture.filter(event => !isFestivalListing(event) && count(event.lineup) === 0);
 const venueKeys = new Set(events.map(event => venueProfileKey(event.venue)).filter(Boolean));

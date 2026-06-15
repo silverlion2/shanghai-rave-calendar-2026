@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-14T16:12:58.802Z",
-  "verified": "2026-06-14",
+  "generatedAt": "2026-06-15T06:10:03.482Z",
+  "verified": "2026-06-15",
   "timezone": "Asia/Shanghai",
   "sourcePriority": [
     "Chrome + Computer Use for anti-bot, logged-in, app-only, image/poster, and mini-program sources",
@@ -16,7 +16,7 @@
       "url": "https://ra.co/events/cn/shanghai",
       "kind": "listing",
       "sourceStatus": "trusted-ra",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": false,
       "status": 403,
       "eventLinks": 0,
@@ -28,7 +28,7 @@
       "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
       "kind": "guide",
       "sourceStatus": "secondary",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": true,
       "status": 200,
       "eventLinks": 0
@@ -38,10 +38,10 @@
       "url": "https://www.smartshanghai.com/events/clubbing/",
       "kind": "listing",
       "sourceStatus": "secondary",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": true,
       "status": 200,
-      "eventLinks": 9
+      "eventLinks": 11
     },
     {
       "label": "X/Twitter keyword: \"Shanghai\" techno",
@@ -50,7 +50,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": false,
       "status": null,
       "links": 0,
@@ -63,7 +63,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": false,
       "status": null,
       "links": 0,
@@ -76,7 +76,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": false,
       "status": null,
       "links": 0,
@@ -89,7 +89,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": false,
       "status": null,
       "links": 0,
@@ -102,7 +102,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": false,
       "status": null,
       "links": 0,
@@ -115,7 +115,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": false,
       "status": null,
       "links": 0,
@@ -128,7 +128,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": false,
       "status": null,
       "links": 0,
@@ -141,7 +141,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": false,
       "status": null,
       "links": 0,
@@ -154,7 +154,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": false,
       "status": null,
       "links": 0,
@@ -167,7 +167,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": false,
       "status": null,
       "links": 0,
@@ -180,7 +180,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": false,
       "status": null,
       "links": 0,
@@ -193,7 +193,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": false,
       "status": null,
       "links": 0,
@@ -206,7 +206,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": false,
       "status": null,
       "links": 0,
@@ -219,7 +219,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": false,
       "status": null,
       "links": 0,
@@ -232,7 +232,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": false,
       "status": null,
       "links": 0,
@@ -245,7 +245,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": false,
       "status": null,
       "links": 0,
@@ -257,7 +257,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -270,7 +270,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -283,7 +283,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": null,
       "status": "computer-use",
       "priority": 2,
@@ -296,7 +296,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -309,7 +309,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -322,7 +322,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -335,7 +335,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -348,7 +348,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "ok": null,
       "status": "computer-use",
       "priority": 2,
@@ -4852,7 +4852,7 @@
       ],
       "genre": "house, disco, funk, hip-hop",
       "confidence": "Medium",
-      "status": "upcoming",
+      "status": "past",
       "price": "Check RA / venue",
       "age": "Check venue",
       "source": "https://ra.co/events/2464155",
@@ -5002,7 +5002,7 @@
       ],
       "genre": "curated music, rooftop lounge",
       "confidence": "Watch",
-      "status": "watch",
+      "status": "past",
       "price": "Not listed",
       "age": "Not listed",
       "source": "https://www.smartshanghai.com/event/sunset-sundays-skyline-dome-at-the-dome",
@@ -5633,7 +5633,7 @@
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-14"
+          "lastChecked": "2026-06-15"
         },
         {
           "label": "Resident Advisor",
@@ -5811,53 +5811,13 @@
       "source": "https://ra.co/events/2466405",
       "sourceLabel": "Resident Advisor",
       "imageTheme": "cyan",
-      "posterUrl": "assets/posters/onefortyasia-mungk-simbie.jpg",
       "description": "ONEFORTYASIA brings MUNGK and SIMBIE to EXIT with a bass, dubstep, and UK garage frame plus local support from D8, Diipset, Sanli, Siesta, and Somebodyyyy.",
       "sourceStatus": "trusted-ra",
-      "addedAt": "2026-06-14",
-      "lastChecked": "2026-06-14",
-      "sources": [
-        {
-          "label": "SmartShanghai",
-          "url": "https://www.smartshanghai.com/event/onefortyasia-pres-mungk-uk-simbie-au-at-exit",
-          "status": "watchlist",
-          "lastChecked": "2026-06-14"
-        },
-        {
-          "label": "Resident Advisor",
-          "url": "https://ra.co/events/2466405",
-          "status": "trusted-ra",
-          "lastChecked": "2026-06-14"
-        }
-      ],
-      "kind": "event",
-      "soundTags": [
-        "bass-hybrid"
-      ],
-      "decisionTags": [
-        "strong techno fit",
-        "late room",
-        "ticket path",
-        "trusted source",
-        "lineup visible"
-      ],
-      "decisionProfile": {
-        "intensity": "high",
-        "credibility": "strong",
-        "lateRoom": true,
-        "ticketReady": true,
-        "hasLineup": true,
-        "hasPoster": true,
-        "riskFlags": []
-      },
-      "recommendationReason": "Recommended as the strongest bass/140 signal in the current RA Shanghai batch, with a clear EXIT room, lineup, price, and ticket route.",
-      "bestFor": "Bass, dubstep, UKG, and 140 listeners who want a club-focused alternative to straight techno.",
-      "verifyBeforeGoing": "Confirm live ticket availability and any WeChat detail updates through the RA ticket/detail links before going.",
-      "sourceConfidence": "High RA coverage: date, time, venue, lineup, genres, cost, age, ticket/detail links, and flyer are visible on Resident Advisor. Poster not stored locally yet, so flyer visibility is not used as a publish-blocking evidence field.",
       "address": "Address: 298 Xingfu Road, Changning District, Shanghai",
       "organizer": "Spacepanda / ONEFORTYASIA",
       "detailsUrl": "https://ra.co/events/2466405",
       "ticketUrl": "https://ra.co/events/2466405",
+      "lastChecked": "2026-06-14",
       "lineup": [
         {
           "name": "Mungk",
@@ -5901,6 +5861,19 @@
         }
       ],
       "ticketStatus": "RA lists cost at 80-100 RMB, minimum age 18+, plus ticket and WeChat detail links.",
+      "recommendationReason": "Recommended as the strongest bass/140 signal in the current RA Shanghai batch, with a clear EXIT room, lineup, price, and ticket route.",
+      "bestFor": "Bass, dubstep, UKG, and 140 listeners who want a club-focused alternative to straight techno.",
+      "verifyBeforeGoing": "Confirm live ticket availability and any WeChat detail updates through the RA ticket/detail links before going.",
+      "sourceConfidence": "High RA coverage: date, time, venue, lineup, genres, cost, age, ticket/detail links, and flyer are visible on Resident Advisor. Poster not stored locally yet, so flyer visibility is not used as a publish-blocking evidence field.",
+      "sources": [
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2466405",
+          "status": "trusted-ra",
+          "lastChecked": "2026-06-14"
+        }
+      ],
+      "posterUrl": "assets/posters/onefortyasia-mungk-simbie.jpg",
       "posterEvidence": {
         "type": "flyer-front-back",
         "source": "Resident Advisor event page",
@@ -5910,6 +5883,26 @@
           "assets/posters/onefortyasia-mungk-simbie.jpg",
           "assets/posters/onefortyasia-mungk-simbie-back.jpg"
         ]
+      },
+      "kind": "event",
+      "soundTags": [
+        "bass-hybrid"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "late room",
+        "ticket path",
+        "trusted source",
+        "lineup visible"
+      ],
+      "decisionProfile": {
+        "intensity": "high",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": []
       }
     },
     {
@@ -5965,13 +5958,13 @@
       },
       "ticketStatus": "SmartShanghai says tickets are not currently available on SmartShanghai and points to QR-code availability in the event description.",
       "addedAt": "2026-06-08",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-15",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/a-full-afrowave-takeover-at-la-burg",
           "status": "watchlist",
-          "lastChecked": "2026-06-14"
+          "lastChecked": "2026-06-15"
         }
       ],
       "posterUrl": "assets/posters/afrowave-takeover-la-burg.jpg",
@@ -6215,13 +6208,13 @@
       "description": "Single-source lead for a textured Heim night joining Dutch producer/DJ Jasmin with Knopha.",
       "kind": "event",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-15",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-14",
+          "lastChecked": "2026-06-15",
           "verificationNote": "SmartShanghai lists June 20 at Heim Sauna with Jasmín and Knopha, but does not expose ticket price or set times in the guide."
         },
         {
@@ -6340,13 +6333,13 @@
       "description": "Watch-level Wigwam lead for ambient and outer-music listening across Asia. SmartShanghai supports the June 20 Liminal Dreams/Wigwam link, while public social-index previews appear to add Chingyi, IIN, Rainsoft, Toss, and a 20:00-late start. Keep practical details on Watch until the post or ticket route is visually confirmed.",
       "kind": "event",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-15",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-14"
+          "lastChecked": "2026-06-15"
         },
         {
           "label": "Liminal Dreams Instagram post index preview",
@@ -6522,6 +6515,70 @@
         "hasPoster": true,
         "riskFlags": []
       }
+    },
+    {
+      "id": "2026-06-20-nova-events-presents-sundown-char-bar",
+      "month": "Jun",
+      "sortDate": "2026-06-20",
+      "date": "Jun 20",
+      "time": "00:00",
+      "title": "Nova Events Presents: Sundown - CHAR Bar Rooftop Opening Party",
+      "venue": "Char",
+      "district": "Shanghai",
+      "vibe": [
+        "date"
+      ],
+      "genre": "electronic, club",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "Check source",
+      "age": "Check venue",
+      "ticketStatus": "Watchlist lead from SmartShanghai; verify ticket route, price tiers, availability, age policy, and venue details before planning.",
+      "source": "https://www.smartshanghai.com/event/sundown-char-bar-rooftop-opening-party-2026-06-20",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "cyan",
+      "posterUrl": "https://images.smartshanghai.com.cn/uploads/repository/2026/06/15/fa7cd532-3583-4bf6-a436-1a6111b57474.jpg",
+      "description": "SUNDOWN marks the rooftop opening party at CHAR Bar, located on the 30th floor of Indigo Hotel Shanghai. Guests can enjoy panoramic skyline views, sunset scenery, and more than eight hours of music from Shanghai DJs while overlooking the city. Watchlist lead: verify lineup, ticketing, age policy, and venue details before planning.",
+      "sourceStatus": "watchlist",
+      "addedAt": "2026-06-15",
+      "lastChecked": "2026-06-15",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/sundown-char-bar-rooftop-opening-party-2026-06-20",
+          "status": "watchlist",
+          "lastChecked": "2026-06-15"
+        }
+      ],
+      "kind": "event",
+      "soundTags": [
+        "melodic",
+        "rooftop"
+      ],
+      "decisionTags": [
+        "low techno fit",
+        "date route",
+        "late room",
+        "verify first"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "unconfirmed",
+        "lateRoom": true,
+        "ticketReady": false,
+        "hasLineup": false,
+        "hasPoster": true,
+        "riskFlags": [
+          "watchlist",
+          "ticket unclear",
+          "lineup limited",
+          "address/source check"
+        ]
+      },
+      "recommendationReason": "Kept on Watch because SmartShanghai gives a useful lead, but key practical details still need a stronger second source before promotion.",
+      "bestFor": "Best for a more social, house-forward, or date-friendly electronic music route.",
+      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
+      "sourceConfidence": "Watch-level confidence from SmartShanghai; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence."
     },
     {
       "id": "sciahri-potent",
@@ -6725,13 +6782,13 @@
       "description": "Watch-level Abyss hard-techno lead: SmartShanghai names Botox Fatale for June 26, and artist-side plus Abyss social-index previews point toward the ABYSS Shanghai route. Keep it on Watch until Abyss, promoter, RA Shanghai, ticketing, or Chrome-verified social evidence confirms practical details.",
       "kind": "event",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-15",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-14",
+          "lastChecked": "2026-06-15",
           "verificationNote": "SmartShanghai lists Abyss harder-end June bookings and Botox Fatale on June 26, but the guide does not expose ticket details."
         },
         {
@@ -6831,13 +6888,13 @@
       "description": "Electronic-world-music live show with The Hymmapan Electron, Taiga, and MICO. Not a club rave, but a strong experimental electronic listing.",
       "kind": "event",
       "sourceStatus": "secondary",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-15",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
           "status": "secondary",
-          "lastChecked": "2026-06-14"
+          "lastChecked": "2026-06-15"
         },
         {
           "label": "Resident Advisor",
@@ -7075,13 +7132,13 @@
       "description": "Watch-level dark-dance lead at Specters. Historical sources support The Devil's Dancers as a Velvet Robot/Specters post-punk and wave series, but verify the June 26 lineup, start time, and door state before featuring it.",
       "kind": "event",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-15",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-14"
+          "lastChecked": "2026-06-15"
         },
         {
           "label": "SmartShanghai Specters venue context",
@@ -7227,7 +7284,7 @@
         },
         {
           "label": "Trip.com event directory",
-          "url": "https://tw.trip.com/events/%E4%B8%8A%E6%B5%B7%2B%2B2026%E4%B8%8A%E6%B5%B7%E8%98%91%E8%8F%87%E9%9F%B3%E6%A8%82%E5%98%89%E5%B9%B4%E8%8F%AF-20260527/",
+          "url": "https://tw.trip.com/events/%E4%B8%8A%E6%B5%B7%2B%2B2026%E4%B8%8A%E6%B5%B7%E8%98%91%E8%8F%87%E9%9F%B3%E6%A8%82%E5%98%89%E5%B9%B4%E8%8F%AF-20260527",
           "status": "directory-context",
           "lastChecked": "2026-06-14"
         }
@@ -7285,13 +7342,13 @@
       "description": "Watch-level POTENT lead: SmartShanghai names Anika Kunst with 10000 and DJ EBP, and RA profile context supports the techno/house fit, but verify the current POTENT ticket route and final set order before planning around it.",
       "kind": "event",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-15",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-14",
+          "lastChecked": "2026-06-15",
           "verificationNote": "SmartShanghai lists Anika Kunst at POTENT on June 27 with 10000 and DJ EBP support; no ticket price in the guide."
         },
         {
@@ -7392,13 +7449,13 @@
       "description": "Single-source SmartShanghai lead for an immersive A/V live set at EXIT with Chuan, Na$ty, and Toyn on support.",
       "kind": "event",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-15",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-14"
+          "lastChecked": "2026-06-15"
         },
         {
           "label": "SmartShanghai EXIT venue context",
@@ -7495,13 +7552,13 @@
       "description": "Two-source Watch lead for Fenrir's Endgame metal-crossover night: SmartShanghai frames it as live acid techno with Blood of Life, Chimera Cult, and Soulitude, while the Chinese listing gives time and ticket tiers. Strong for hard/experimental readers, but still verify the actual purchase route and JAAL set timing.",
       "kind": "event",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-15",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-14",
+          "lastChecked": "2026-06-15",
           "verificationNote": "SmartShanghai lists June 27 at Fenrir with JAAL The Machine plus Blood of Life, Chimera Cult, and Soulitude."
         },
         {
@@ -7601,13 +7658,13 @@
       "description": "Watch-level KNOT/ILLUM lead with QQBBG and Liu Qoo. The sound lane points toward hyperpop, trance, and club-rave pressure, but verify the June 27 ticket state, start time, and running order before recommending it as confirmed.",
       "kind": "event",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-15",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-14",
+          "lastChecked": "2026-06-15",
           "verificationNote": "SmartShanghai lists June 27 at ILLUM with KNOT Truth and Lies Vol. 4, QQBBG, Liu Qoo, and hyperpop/trance/techno framing."
         },
         {
@@ -7716,13 +7773,13 @@
       },
       "ticketStatus": "SmartShanghai lists tickets from 198 RMB and shows web, app, and WeChat buying routes.",
       "addedAt": "2026-06-08",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-15",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/nova-events-presents-summer-splash-pool-party-2026-06-27",
           "status": "watchlist",
-          "lastChecked": "2026-06-14"
+          "lastChecked": "2026-06-15"
         }
       ],
       "posterUrl": "assets/posters/nova-summer-splash-pool-party.jpg",
@@ -7781,13 +7838,13 @@
       "description": "Warmup lead for a July secret-forest festival. Lineup was still TBA in the public guide, so keep it on watch only.",
       "kind": "event",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-15",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-14",
+          "lastChecked": "2026-06-15",
           "verificationNote": "SmartShanghai lists June 27 at Wigwam as a YOUSHAN warmup and says lineup TBA."
         },
         {
@@ -8010,14 +8067,14 @@
         },
         {
           "label": "Meet in Shanghai / official travel site",
-          "url": "https://www.meet-in-shanghai.net/en/news/shanghai-symphony-its-time-for-music-in-the-summer-air-502006/",
+          "url": "https://www.meet-in-shanghai.net/en/news/shanghai-symphony-its-time-for-music-in-the-summer-air-502006",
           "status": "official-context",
           "lastChecked": "2026-06-14",
           "verificationNote": "2026-06-14 page check confirmed the 17th MISA edition, 33 performances in 16 days, Jul 5 opening, Jul 20 closing, and ticket guidance via Shanghai Symphony Orchestra."
         },
         {
           "label": "Colin's Column / MISA program detail",
-          "url": "https://www.colinscolumn.com/shanghai-symphony-orchestras-2026-music-in-the-summer-air-festival-brings-leading-international-talent-to-shanghai-including-tenebrae-choir-aurora-orchestra-randy-brecker-and-imani-winds/",
+          "url": "https://www.colinscolumn.com/shanghai-symphony-orchestras-2026-music-in-the-summer-air-festival-brings-leading-international-talent-to-shanghai-including-tenebrae-choir-aurora-orchestra-randy-brecker-and-imani-winds",
           "status": "program-detail",
           "lastChecked": "2026-06-14",
           "verificationNote": "2026-06-14 page check provided detailed 2026 MISA program rows from the Jul 5 opening concert through mid-July performances."
@@ -8280,7 +8337,7 @@
         },
         {
           "label": "Tomorrowland 2025 official announcement",
-          "url": "https://www.tomorrowland.com/article/tomorrowlands-first-ever-indoor-spectacle-in-china/",
+          "url": "https://www.tomorrowland.com/article/tomorrowlands-first-ever-indoor-spectacle-in-china",
           "status": "previous-edition-context",
           "lastChecked": "2026-06-14"
         },
@@ -8323,8 +8380,10 @@
   "discovered": [
     {
       "url": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
-      "title": "ALTER. Pavillon 亭",
-      "parsed": true
+      "title": "ALTER. Pavillon",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false,
+      "error": "This operation was aborted"
     },
     {
       "url": "https://www.smartshanghai.com/event/night-at-the-museum-back-to-the-90s-disco-night-2026-06-18",
@@ -8335,13 +8394,17 @@
     },
     {
       "url": "https://www.smartshanghai.com/event/girls-night-out-skyline-dome-at-the-dome",
-      "title": "Girls Night Out",
-      "parsed": true
+      "title": "",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false,
+      "error": "This operation was aborted"
     },
     {
       "url": "https://www.smartshanghai.com/event/onefortyasia-pres-mungk-uk-simbie-au-at-exit",
-      "title": "ONEFORTYASIA Pres. MUNGK (UK) & SIMBIE (AU)",
-      "parsed": true
+      "title": "",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false,
+      "error": "This operation was aborted"
     },
     {
       "url": "https://www.smartshanghai.com/event/disco-ball-fridays-skyline-dome-at-the-dome",
@@ -8349,11 +8412,21 @@
       "parsed": true
     },
     {
-      "url": "https://www.smartshanghai.com/event/a-full-afrowave-takeover-at-la-burg",
+      "url": "https://www.smartshanghai.com/event/sundown-char-bar-rooftop-opening-party-2026-06-20",
+      "title": "Nova Events Presents: Sundown - CHAR Bar Rooftop Opening Party",
+      "parsed": true
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/neon-jungle-ft-tom-kynd-at-urban-lounge",
       "title": "",
       "sourceLabel": "SmartShanghai",
       "parsed": false,
       "error": "This operation was aborted"
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/a-full-afrowave-takeover-at-la-burg",
+      "title": "A Full Afrowave Takeover",
+      "parsed": true
     },
     {
       "url": "https://www.smartshanghai.com/event/sunset-sundays-skyline-dome-at-the-dome",
@@ -8369,79 +8442,14 @@
     },
     {
       "url": "https://www.smartshanghai.com/event/nova-events-presents-summer-splash-pool-party-2026-06-27",
-      "title": "",
-      "sourceLabel": "SmartShanghai",
-      "parsed": false,
-      "error": "This operation was aborted"
-    },
-    {
-      "url": "https://ra.co/events/2461478",
-      "title": "Milo Raad + Cosmjn",
-      "sourceLabel": "Resident Advisor",
-      "status": "browser-required",
-      "parsed": false,
-      "access": "browser-required"
-    },
-    {
-      "url": "https://ra.co/events/2460995",
-      "title": "KOLLIN",
-      "sourceLabel": "Resident Advisor",
-      "status": "browser-required",
-      "parsed": false,
-      "access": "browser-required"
+      "title": "Nova Events Presents: Summer Splash Pool Party",
+      "parsed": true
     },
     {
       "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
       "title": "Youshan Festival warmup",
       "sourceLabel": "SmartShanghai",
       "parsed": false
-    },
-    {
-      "url": "https://ra.co/events/2458037",
-      "title": "Santa K x TURBO",
-      "sourceLabel": "Resident Advisor",
-      "status": "browser-required",
-      "parsed": false,
-      "access": "browser-required"
-    },
-    {
-      "url": "https://ra.co/events/2461476",
-      "title": "Matisa + Limsum",
-      "sourceLabel": "Resident Advisor",
-      "status": "browser-required",
-      "parsed": false,
-      "access": "browser-required"
-    },
-    {
-      "url": "https://ra.co/events/2458269",
-      "title": "Synth Crush",
-      "sourceLabel": "Resident Advisor",
-      "parsed": false,
-      "error": "This operation was aborted"
-    },
-    {
-      "url": "https://ra.co/events/2460549",
-      "title": "FENGYUN Vol. 5",
-      "sourceLabel": "Resident Advisor",
-      "status": "browser-required",
-      "parsed": false,
-      "access": "browser-required"
-    },
-    {
-      "url": "https://ra.co/events/2459595",
-      "title": "Horizon Rooftop feat. Erik Hagleton",
-      "sourceLabel": "Resident Advisor",
-      "status": "browser-required",
-      "parsed": false,
-      "access": "browser-required"
-    },
-    {
-      "url": "https://ra.co/events/2453279",
-      "title": "REACTOR pres. Nosaj Thing",
-      "sourceLabel": "Resident Advisor",
-      "status": "browser-required",
-      "parsed": false,
-      "access": "browser-required"
     }
   ],
   "computerUseQueue": [
@@ -8470,7 +8478,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -8536,7 +8544,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -8602,7 +8610,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -8668,7 +8676,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -8735,7 +8743,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -8799,7 +8807,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -8863,7 +8871,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -8927,7 +8935,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-14",
+      "checkedAt": "2026-06-15",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -8970,8 +8978,8 @@
   ],
   "curatedEventsApplied": 69,
   "djItineraryStats": {
-    "profileCount": 89,
-    "curatedProfileCount": 87,
+    "profileCount": 92,
+    "curatedProfileCount": 90,
     "generatedProfileCount": 1,
     "profileSourceCounts": {
       "10000": 2,
@@ -9090,37 +9098,57 @@
       "taiga": 3,
       "mico": 3,
       "mico-liu-wei": 3,
-      "junglemico-project": 3
+      "junglemico-project": 3,
+      "bi-non-chillchillshit": 4,
+      "bi-non-and-chillchillshit": 4,
+      "bi-non": 4,
+      "chillchillshit": 4,
+      "bi-non-and-chillchillshit-a-v": 4,
+      "nasty": 4,
+      "na-ty": 4,
+      "nastyhabits124": 4,
+      "toyn": 4,
+      "2yn100": 4
     },
     "rowCount": 40
   },
   "quality": {
-    "auditDate": "2026-06-14",
-    "generatedAt": "2026-06-14T16:12:58.802Z",
+    "auditDate": "2026-06-15",
+    "generatedAt": "2026-06-15T06:10:03.482Z",
+    "freshnessPolicy": {
+      "eventSourceMaxAgeDays": 2,
+      "nearEventWindowDays": 1,
+      "nearEventSourceMaxAgeDays": 1,
+      "djProfileSourceMaxAgeDays": 30,
+      "rule": "Future event sources are expected to be rechecked within the two-day scrape cadence; events within the near-event window use the stricter near-event freshness window. Profile-level DJ sources have a longer freshness window because they support identity/context, not live ticket state."
+    },
     "totals": {
-      "events": 89,
-      "future": 34,
+      "events": 90,
+      "future": 33,
       "futureHigh": 8,
       "futureWatch": 19,
       "singleSourceWatch": 5,
       "singleConfirmationWatch": 13,
-      "venueProfiles": 40,
-      "futureVenueProfiles": 25,
+      "venueProfiles": 41,
+      "futureVenueProfiles": 24,
       "futureVenueWatch": 18,
-      "futurePerformerProfiles": 88,
-      "futurePerformerWatch": 26,
+      "futurePerformerProfiles": 81,
+      "futurePerformerWatch": 25,
       "singleSourceFuturePerformers": 56,
-      "futurePerformerProfileSources": 82,
-      "futurePerformerMissingProfileSources": 6,
+      "futurePerformerProfileSources": 78,
+      "futurePerformerMissingProfileSources": 3,
       "djSourceUpgradeQueue": 0,
-      "trackedDjProfiles": 89,
-      "curatedDjSourceProfiles": 87,
+      "trackedDjProfiles": 92,
+      "curatedDjSourceProfiles": 90,
+      "technoArtistSignals": 88,
+      "technoArtistSignalProfiles": 63,
+      "eventsWithTechnoProfileSignals": 0,
       "trackedDjItineraryRows": 40,
       "staleFuture": 0,
       "missingTicketStatus": 0,
       "highMissingLineup": 0,
-      "futureCoreFieldQueue": 24,
-      "futureMissingCoreFields": 65,
+      "futureCoreFieldQueue": 23,
+      "futureMissingCoreFields": 66,
       "futureUncertainCoreFields": 4,
       "platformVerificationQueue": 5,
       "platformVerificationSources": 10,
@@ -9298,16 +9326,16 @@
         "nextAction": "Keep as context unless a direct source confirms stronger techno relevance."
       },
       {
-        "id": "sunset-sundays-dome",
-        "date": "2026-06-14",
-        "title": "Sunset Sundays",
-        "venue": "The Dome",
+        "id": "2026-06-20-nova-events-presents-sundown-char-bar",
+        "date": "2026-06-20",
+        "title": "Nova Events Presents: Sundown - CHAR Bar Rooftop Opening Party",
+        "venue": "Char",
         "priority": "low",
         "fitScore": 0,
         "sourceLabel": "SmartShanghai",
         "sourceCount": 1,
         "confirmationSourceCount": 1,
-        "reason": "single-source",
+        "reason": "single-source, lineup missing",
         "nextAction": "Keep as context unless a direct source confirms stronger techno relevance."
       },
       {
@@ -9401,7 +9429,35 @@
         "soundTags",
         "decisionTags"
       ],
-      "rule": "Fill missing or uncertain core fields for future events, venues, and DJs before attempting confidence promotion through second sources."
+      "rule": "Run the broad source sweep first, then fill missing or uncertain core fields for future events, venues, and DJs before attempting confidence promotion through second sources."
+    },
+    "technoDiscovery": {
+      "rule": "Use two complementary discovery gates: event keyword/source text fit OR tracked techno-relevant DJ/profile/alias fit.",
+      "caveat": "The DJ gate is not a complete scene graph. It only covers source-backed profiles in config/tracked-dj-profiles.json and must be expanded from RA artist pages, RA event history, venue/promoter lineups, label pages, and platform-native social checks.",
+      "eventKeywordGate": [
+        "techno",
+        "rave",
+        "electronic",
+        "electro",
+        "acid",
+        "industrial",
+        "EBM",
+        "trance",
+        "warehouse",
+        "hard dance",
+        "bass/club crossover",
+        "breaks",
+        "jungle",
+        "UKG",
+        "experimental electronic"
+      ],
+      "djProfileGate": {
+        "source": "config/tracked-dj-profiles.json",
+        "signalCount": 88,
+        "profileCount": 63,
+        "matchedEventCount": 0,
+        "matchedEvents": []
+      }
     },
     "coreFieldQueue": [
       {
@@ -9585,11 +9641,7 @@
         "missingNonCoreFields": [
           "poster"
         ],
-        "performerProfileGaps": [
-          "Bi-NON & chillchillshit",
-          "Na$ty",
-          "Toyn"
-        ],
+        "performerProfileGaps": [],
         "coreFieldGapStatus": "public-source-gap",
         "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
         "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
@@ -9653,25 +9705,6 @@
         "priority": "medium",
         "fitScore": 2,
         "missingCoreFields": [
-          "age"
-        ],
-        "uncertainCoreFields": [],
-        "missingNonCoreFields": [],
-        "performerProfileGaps": [],
-        "coreFieldGapStatus": "public-source-gap",
-        "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
-        "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
-      },
-      {
-        "id": "house-of-zup",
-        "date": "2026-06-14",
-        "title": "HOUSE OF ZUP",
-        "venue": "ZUP Pizza Bar",
-        "confidence": "Medium",
-        "priority": "low",
-        "fitScore": 1,
-        "missingCoreFields": [
-          "price",
           "age"
         ],
         "uncertainCoreFields": [],
@@ -9768,6 +9801,28 @@
         "fitScore": 1,
         "missingCoreFields": [
           "age"
+        ],
+        "uncertainCoreFields": [],
+        "missingNonCoreFields": [],
+        "performerProfileGaps": [],
+        "coreFieldGapStatus": "public-source-gap",
+        "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
+        "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
+      },
+      {
+        "id": "2026-06-20-nova-events-presents-sundown-char-bar",
+        "date": "2026-06-20",
+        "title": "Nova Events Presents: Sundown - CHAR Bar Rooftop Opening Party",
+        "venue": "Char",
+        "confidence": "Watch",
+        "priority": "low",
+        "fitScore": 0,
+        "missingCoreFields": [
+          "address",
+          "price",
+          "age",
+          "ticketUrl",
+          "lineup"
         ],
         "uncertainCoreFields": [],
         "missingNonCoreFields": [],
@@ -9879,25 +9934,6 @@
         "missingNonCoreFields": [
           "poster"
         ],
-        "performerProfileGaps": [],
-        "coreFieldGapStatus": "public-source-gap",
-        "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
-        "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
-      },
-      {
-        "id": "sunset-sundays-dome",
-        "date": "2026-06-14",
-        "title": "Sunset Sundays",
-        "venue": "The Dome",
-        "confidence": "Watch",
-        "priority": "low",
-        "fitScore": 0,
-        "missingCoreFields": [
-          "price",
-          "age"
-        ],
-        "uncertainCoreFields": [],
-        "missingNonCoreFields": [],
         "performerProfileGaps": [],
         "coreFieldGapStatus": "public-source-gap",
         "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
@@ -10150,7 +10186,7 @@
         "fitScore": 3,
         "priority": "high",
         "nextEventDate": "2026-06-18",
-        "lastChecked": "2026-06-14"
+        "lastChecked": "2026-06-15"
       },
       {
         "venue": "EXIT",
@@ -10168,7 +10204,7 @@
           "techno, funk/soul lineage",
           "house"
         ],
-        "sourceCount": 18,
+        "sourceCount": 17,
         "totalEvents": 14,
         "futureEvents": 3,
         "highConfidenceEvents": 10,
@@ -10176,7 +10212,7 @@
         "fitScore": 3,
         "priority": "high",
         "nextEventDate": "2026-06-17",
-        "lastChecked": "2026-06-14"
+        "lastChecked": "2026-06-15"
       },
       {
         "venue": "Wigwam",
@@ -10199,7 +10235,7 @@
         "fitScore": 3,
         "priority": "high",
         "nextEventDate": "2026-06-20",
-        "lastChecked": "2026-06-14"
+        "lastChecked": "2026-06-15"
       },
       {
         "venue": "Reactor Shanghai",
@@ -10271,7 +10307,7 @@
         "fitScore": 3,
         "priority": "high",
         "nextEventDate": "2026-06-26",
-        "lastChecked": "2026-06-14"
+        "lastChecked": "2026-06-15"
       },
       {
         "venue": "ILLUM Shanghai",
@@ -10293,7 +10329,7 @@
         "fitScore": 3,
         "priority": "high",
         "nextEventDate": "2026-06-27",
-        "lastChecked": "2026-06-14"
+        "lastChecked": "2026-06-15"
       },
       {
         "venue": "Specters",
@@ -10313,7 +10349,7 @@
         "fitScore": 3,
         "priority": "high",
         "nextEventDate": "2026-06-26",
-        "lastChecked": "2026-06-14"
+        "lastChecked": "2026-06-15"
       },
       {
         "venue": "The Sukhothai Shanghai",
@@ -10352,7 +10388,7 @@
         "fitScore": 3,
         "priority": "high",
         "nextEventDate": "2026-06-27",
-        "lastChecked": "2026-06-14"
+        "lastChecked": "2026-06-15"
       },
       {
         "venue": "Heim Sauna",
@@ -10371,7 +10407,7 @@
         "fitScore": 3,
         "priority": "high",
         "nextEventDate": "2026-06-20",
-        "lastChecked": "2026-06-14"
+        "lastChecked": "2026-06-15"
       },
       {
         "venue": "Qiantan Sports Park",
@@ -10409,26 +10445,7 @@
         "fitScore": 2,
         "priority": "medium",
         "nextEventDate": "2026-06-26",
-        "lastChecked": "2026-06-14"
-      },
-      {
-        "venue": "ZUP Pizza Bar",
-        "aliases": [],
-        "districts": [
-          "Jing'an"
-        ],
-        "genres": [
-          "house, disco, funk, hip-hop"
-        ],
-        "sourceCount": 2,
-        "totalEvents": 2,
-        "futureEvents": 1,
-        "highConfidenceEvents": 0,
-        "watchEvents": 0,
-        "fitScore": 1,
-        "priority": "low",
-        "nextEventDate": "2026-06-14",
-        "lastChecked": "2026-06-14"
+        "lastChecked": "2026-06-15"
       },
       {
         "venue": "Beaufort Terrace",
@@ -10485,7 +10502,7 @@
         "fitScore": 1,
         "priority": "low",
         "nextEventDate": "2026-06-20",
-        "lastChecked": "2026-06-14"
+        "lastChecked": "2026-06-15"
       },
       {
         "venue": "Radisson Blu Forest Manor Hongqiao",
@@ -10504,7 +10521,26 @@
         "fitScore": 1,
         "priority": "low",
         "nextEventDate": "2026-06-27",
-        "lastChecked": "2026-06-14"
+        "lastChecked": "2026-06-15"
+      },
+      {
+        "venue": "Char",
+        "aliases": [],
+        "districts": [
+          "Shanghai"
+        ],
+        "genres": [
+          "electronic, club"
+        ],
+        "sourceCount": 1,
+        "totalEvents": 1,
+        "futureEvents": 1,
+        "highConfidenceEvents": 0,
+        "watchEvents": 1,
+        "fitScore": 0,
+        "priority": "low",
+        "nextEventDate": "2026-06-20",
+        "lastChecked": "2026-06-15"
       },
       {
         "venue": "Gate M West Bund Dream Center",
@@ -10618,25 +10654,6 @@
         "fitScore": 0,
         "priority": "low",
         "nextEventDate": "2026-06-20",
-        "lastChecked": "2026-06-14"
-      },
-      {
-        "venue": "The Dome",
-        "aliases": [],
-        "districts": [
-          "Huangpu"
-        ],
-        "genres": [
-          "curated music, rooftop lounge"
-        ],
-        "sourceCount": 1,
-        "totalEvents": 1,
-        "futureEvents": 1,
-        "highConfidenceEvents": 0,
-        "watchEvents": 1,
-        "fitScore": 0,
-        "priority": "low",
-        "nextEventDate": "2026-06-14",
         "lastChecked": "2026-06-14"
       },
       {
@@ -10887,6 +10904,25 @@
         "lastChecked": "2026-06-14"
       },
       {
+        "venue": "ZUP Pizza Bar",
+        "aliases": [],
+        "districts": [
+          "Jing'an"
+        ],
+        "genres": [
+          "house, disco, funk, hip-hop"
+        ],
+        "sourceCount": 2,
+        "totalEvents": 2,
+        "futureEvents": 0,
+        "highConfidenceEvents": 0,
+        "watchEvents": 0,
+        "fitScore": 1,
+        "priority": "low",
+        "nextEventDate": "",
+        "lastChecked": "2026-06-14"
+      },
+      {
         "venue": "Commercial areas, waterfronts, parks, museums, and neighborhoods",
         "aliases": [],
         "districts": [
@@ -10923,11 +10959,30 @@
         "priority": "low",
         "nextEventDate": "",
         "lastChecked": "2026-06-11"
+      },
+      {
+        "venue": "The Dome",
+        "aliases": [],
+        "districts": [
+          "Huangpu"
+        ],
+        "genres": [
+          "curated music, rooftop lounge"
+        ],
+        "sourceCount": 1,
+        "totalEvents": 1,
+        "futureEvents": 0,
+        "highConfidenceEvents": 0,
+        "watchEvents": 1,
+        "fitScore": 0,
+        "priority": "low",
+        "nextEventDate": "",
+        "lastChecked": "2026-06-14"
       }
     ],
     "djCoverage": {
-      "trackedItineraryProfiles": 89,
-      "curatedSourceProfiles": 87,
+      "trackedItineraryProfiles": 92,
+      "curatedSourceProfiles": 90,
       "trackedItineraryRows": 40,
       "futureProfiles": [
         {
@@ -11093,7 +11148,7 @@
           "name": "Siesta",
           "eventCount": 3,
           "futureEventCount": 1,
-          "sourceCount": 4,
+          "sourceCount": 3,
           "trackedProfileSourceCount": 1,
           "venues": [
             "TBA - DEFUN",
@@ -11107,7 +11162,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 3,
-          "singleSourceFutureAppearances": 0,
+          "singleSourceFutureAppearances": 1,
           "fitScore": 3,
           "priority": "high",
           "nextDate": "2026-06-19"
@@ -11117,7 +11172,7 @@
           "name": "DIIPSET",
           "eventCount": 2,
           "futureEventCount": 1,
-          "sourceCount": 3,
+          "sourceCount": 2,
           "trackedProfileSourceCount": 1,
           "venues": [
             "Reactor Shanghai",
@@ -11129,7 +11184,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 2,
-          "singleSourceFutureAppearances": 0,
+          "singleSourceFutureAppearances": 1,
           "fitScore": 3,
           "priority": "high",
           "nextDate": "2026-06-19"
@@ -11326,7 +11381,7 @@
           "name": "D8",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 2,
+          "sourceCount": 1,
           "trackedProfileSourceCount": 2,
           "venues": [
             "EXIT"
@@ -11336,7 +11391,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 0,
+          "singleSourceFutureAppearances": 1,
           "fitScore": 3,
           "priority": "high",
           "nextDate": "2026-06-19"
@@ -11666,7 +11721,7 @@
           "name": "Mungk",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 2,
+          "sourceCount": 1,
           "trackedProfileSourceCount": 2,
           "venues": [
             "EXIT"
@@ -11676,7 +11731,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 0,
+          "singleSourceFutureAppearances": 1,
           "fitScore": 3,
           "priority": "high",
           "nextDate": "2026-06-19"
@@ -11766,7 +11821,7 @@
           "name": "Sanli",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 2,
+          "sourceCount": 1,
           "trackedProfileSourceCount": 2,
           "venues": [
             "EXIT"
@@ -11776,7 +11831,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 0,
+          "singleSourceFutureAppearances": 1,
           "fitScore": 3,
           "priority": "high",
           "nextDate": "2026-06-19"
@@ -11826,7 +11881,7 @@
           "name": "Simbie",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 2,
+          "sourceCount": 1,
           "trackedProfileSourceCount": 2,
           "venues": [
             "EXIT"
@@ -11836,7 +11891,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 0,
+          "singleSourceFutureAppearances": 1,
           "fitScore": 3,
           "priority": "high",
           "nextDate": "2026-06-19"
@@ -11866,7 +11921,7 @@
           "name": "Somebodyyyy",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 2,
+          "sourceCount": 1,
           "trackedProfileSourceCount": 2,
           "venues": [
             "EXIT"
@@ -11876,7 +11931,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 0,
+          "singleSourceFutureAppearances": 1,
           "fitScore": 3,
           "priority": "high",
           "nextDate": "2026-06-19"
@@ -12052,7 +12107,7 @@
           "eventCount": 1,
           "futureEventCount": 1,
           "sourceCount": 4,
-          "trackedProfileSourceCount": 0,
+          "trackedProfileSourceCount": 4,
           "venues": [
             "EXIT"
           ],
@@ -12172,7 +12227,7 @@
           "eventCount": 1,
           "futureEventCount": 1,
           "sourceCount": 4,
-          "trackedProfileSourceCount": 0,
+          "trackedProfileSourceCount": 4,
           "venues": [
             "EXIT"
           ],
@@ -12332,7 +12387,7 @@
           "eventCount": 1,
           "futureEventCount": 1,
           "sourceCount": 4,
-          "trackedProfileSourceCount": 0,
+          "trackedProfileSourceCount": 4,
           "venues": [
             "EXIT"
           ],
@@ -12367,26 +12422,6 @@
           "nextDate": "2026-06-17"
         },
         {
-          "slug": "bolobolo",
-          "name": "Bolobolo",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 1,
-          "venues": [
-            "ZUP Pizza Bar"
-          ],
-          "genres": [
-            "house, disco, funk, hip-hop"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 0,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 1,
-          "priority": "low",
-          "nextDate": "2026-06-14"
-        },
-        {
           "slug": "chiyokoo",
           "name": "Chiyokoo",
           "eventCount": 1,
@@ -12405,46 +12440,6 @@
           "fitScore": 1,
           "priority": "low",
           "nextDate": "2026-06-18"
-        },
-        {
-          "slug": "floating",
-          "name": "FLOATING",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 1,
-          "venues": [
-            "ZUP Pizza Bar"
-          ],
-          "genres": [
-            "house, disco, funk, hip-hop"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 0,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 1,
-          "priority": "low",
-          "nextDate": "2026-06-14"
-        },
-        {
-          "slug": "gabrielle-lin",
-          "name": "Gabrielle Lin",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 1,
-          "venues": [
-            "ZUP Pizza Bar"
-          ],
-          "genres": [
-            "house, disco, funk, hip-hop"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 0,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 1,
-          "priority": "low",
-          "nextDate": "2026-06-14"
         },
         {
           "slug": "golgol",
@@ -12507,46 +12502,6 @@
           "nextDate": "2026-06-18"
         },
         {
-          "slug": "rain-ling",
-          "name": "Rain Ling",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 1,
-          "venues": [
-            "ZUP Pizza Bar"
-          ],
-          "genres": [
-            "house, disco, funk, hip-hop"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 0,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 1,
-          "priority": "low",
-          "nextDate": "2026-06-14"
-        },
-        {
-          "slug": "rb-sh",
-          "name": "RB//SH",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 1,
-          "venues": [
-            "ZUP Pizza Bar"
-          ],
-          "genres": [
-            "house, disco, funk, hip-hop"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 0,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 1,
-          "priority": "low",
-          "nextDate": "2026-06-14"
-        },
-        {
           "slug": "tsing",
           "name": "Tsing",
           "eventCount": 1,
@@ -12607,26 +12562,6 @@
           "nextDate": "2026-06-18"
         },
         {
-          "slug": "yogijazz",
-          "name": "Yogijazz",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 1,
-          "venues": [
-            "ZUP Pizza Bar"
-          ],
-          "genres": [
-            "house, disco, funk, hip-hop"
-          ],
-          "watchAppearances": 0,
-          "highConfidenceAppearances": 0,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 1,
-          "priority": "low",
-          "nextDate": "2026-06-14"
-        },
-        {
           "slug": "ali-ribo",
           "name": "ALI RIBO",
           "eventCount": 1,
@@ -12645,26 +12580,6 @@
           "fitScore": 0,
           "priority": "low",
           "nextDate": "2026-06-20"
-        },
-        {
-          "slug": "dj-rain",
-          "name": "DJ Rain",
-          "eventCount": 1,
-          "futureEventCount": 1,
-          "sourceCount": 1,
-          "trackedProfileSourceCount": 1,
-          "venues": [
-            "The Dome"
-          ],
-          "genres": [
-            "curated music, rooftop lounge"
-          ],
-          "watchAppearances": 1,
-          "highConfidenceAppearances": 0,
-          "singleSourceFutureAppearances": 1,
-          "fitScore": 0,
-          "priority": "low",
-          "nextDate": "2026-06-14"
         },
         {
           "slug": "dj-serang",
@@ -13369,7 +13284,7 @@
         "kind": "listing",
         "sourceStatus": "trusted-ra",
         "ok": false,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": 403,
         "eventLinks": 0,
         "error": "Public HTTP fetch hit an anti-bot or JavaScript challenge; use Browser/Chrome visible verification instead of treating this as an empty source."
@@ -13379,7 +13294,7 @@
         "kind": "guide",
         "sourceStatus": "secondary",
         "ok": true,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": 200,
         "eventLinks": 0
       },
@@ -13388,16 +13303,16 @@
         "kind": "listing",
         "sourceStatus": "secondary",
         "ok": true,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": 200,
-        "eventLinks": 9
+        "eventLinks": 11
       },
       {
         "label": "X/Twitter keyword: \"Shanghai\" techno",
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13407,7 +13322,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13417,7 +13332,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13427,7 +13342,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13437,7 +13352,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13447,7 +13362,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13457,7 +13372,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13467,7 +13382,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13477,7 +13392,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13487,7 +13402,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13497,7 +13412,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13507,7 +13422,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13517,7 +13432,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13527,7 +13442,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13537,7 +13452,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13547,7 +13462,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -13557,7 +13472,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": "computer-use"
       },
       {
@@ -13565,7 +13480,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": "computer-use"
       },
       {
@@ -13573,7 +13488,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": "computer-use"
       },
       {
@@ -13581,7 +13496,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": "computer-use"
       },
       {
@@ -13589,7 +13504,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": "computer-use"
       },
       {
@@ -13597,7 +13512,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": "computer-use"
       },
       {
@@ -13605,7 +13520,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": "computer-use"
       },
       {
@@ -13613,13 +13528,15 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-14",
+        "checkedAt": "2026-06-15",
         "status": "computer-use"
       }
     ],
     "updateWorkflow": [
-      "Run npm run scrape with reasonable timeouts to refresh public pages and curated overlays.",
-      "Run npm run audit to inspect future freshness, ticket notes, High-confidence lineups, the Watch queue, active venue coverage, and future DJ profile coverage.",
+      "Start every credibility session with a broad source sweep: run npm run scrape or node scripts/scrape-events.js with reasonable timeouts to refresh RA, SmartShanghai, existing detail URLs, curated overlays, tracked DJ profiles, source health, discovered links, and browser-required queues.",
+      "During the sweep, add newly discovered Shanghai techno-relevant activities through two complementary gates: event/source keyword fit and tracked techno-related DJ/profile/alias fit.",
+      "Inspect source health before manual research: failed source reports, RA coverage gaps, discovered links, social leads, quality.platformVerificationQueue, and quality.coreFieldQueue.",
+      "Only after the source sweep, run npm run audit to prioritize future freshness, ticket notes, High-confidence lineups, the Watch queue, active venue coverage, and future DJ profile coverage.",
       "Keep config/ra-shanghai-coverage.json aligned with Browser/Chrome-verified RA Shanghai city-listing rows when RA fetch is browser-required.",
       "Promote Watch entries only after direct venue, promoter, ticketing, RA, SmartShanghai detail, or official artist evidence is captured in config/curated-events.json.",
       "Use Computer Use / Chrome for WeChat, Xiaohongshu, mini-program, image-only, or anti-bot sources, then preserve evidence notes and source links in curated overlays.",
@@ -13630,6 +13547,7 @@
     "This v1 scraper keeps curated embedded events as the seed dataset, refreshes source metadata, and adds parsable public event pages as watch/secondary entries.",
     "Computer Use collected event updates in config/curated-events.json are merged after the automated source refresh.",
     "Events from listing/editorial pages remain watch-level until a direct venue, promoter, ticketing, or event page confirms details.",
+    "New-event discovery uses complementary gates: event/source keyword fit plus tracked techno-related DJ profile and alias signals, so generic event pages can still enter the Watch queue when the lineup points to techno, hard techno, acid, industrial, EBM, electro, trance, rave, warehouse, hard dance, bass/club crossover, breaks, jungle, UKG, or experimental electronic context.",
     "X keyword searches are discovery-only social leads and never promote an event into the calendar without confirmation from a stronger source.",
     "Known anti-bot or app-only sources are queued for agent-operated Chrome + Computer Use collection instead of being scraped with plain fetch.",
     "Resident Advisor HTTP or headless-browser challenges are recorded as browser-required; do not treat challenge pages as empty listings.",
