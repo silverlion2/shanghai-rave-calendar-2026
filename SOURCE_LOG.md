@@ -1,13 +1,13 @@
 # Source Log
 
-Last refreshed: 2026-06-14, Asia/Shanghai.
+Last refreshed: 2026-06-15, Asia/Shanghai.
 
 ## Source Priority
 
 1. Resident Advisor event pages and city listings for Shanghai electronic event facts.
 2. Direct venue, promoter, ticketing, or official artist pages for official updates and conflict resolution.
 3. SmartShanghai event pages and monthly clubbing guide for local English context, venue details, and discovery.
-4. Public social posts, WeChat mini-program references, Xiaohongshu, Douyin, Instagram, and reposts as discovery leads unless visually verified and corroborated.
+4. Public social posts, WeChat mini-program references, Xiaohongshu, Douyin, Instagram, and reposts as discovery leads unless visually verified and corroborated. For social verification, check XHS and WeChat before Instagram. Instagram is no longer a login-assisted route for this project; public/indexed Instagram snippets remain leads only.
 
 Collection method is separate from confirmation strength: Chrome + Computer Use can discover or verify a source when RA/social/ticketing pages are dynamic or blocked, but RA remains the highest-priority public nightlife source for Shanghai event facts. An event still needs a shareable RA, official, ticketing, venue/promoter, SmartShanghai, or artist/label reference before it is promoted from watch-level to upcoming.
 
@@ -31,12 +31,12 @@ Rules for worldwide overlay rows: official artist pages win for city/date confir
 
 - RA Shanghai: use Chrome when city listing fetch returns 403, empty, or stale results.
 - SmartShanghai: use Chrome when listing/guide fetch times out or misses rendered event cards.
-- Xiaohongshu: logged-in search for `上海 techno`, `上海 rave`, `上海电子音乐`, `上海 club`, and poster/comment leads.
-- WeChat official accounts/groups: official announcements, ticket QR codes, set times, lineup changes, and cancellations.
-- Venue official accounts: WeChat, Instagram, Weibo, and other official venue feeds.
+- Xiaohongshu: platform-native search for Shanghai techno/rave/electronic/club queries, venue names, promoter names, event titles, dates, posters, and comment leads. Ask the user before relying on a logged-in XHS session.
+- WeChat official accounts/groups: official announcements, ticket QR codes, set times, lineup changes, and cancellations. Prefer official-account article/search routes and public mirrors before mini-program or login-dependent handoffs.
+- Venue official accounts: prioritize WeChat and XHS first, then Weibo and official websites. Use Instagram only when a public page or search snippet is visible without login.
 - Promoter posters: image posts, stories, reposts, and OCR/extraction from posters.
-- Ticketing apps: 秀动, 大麦, 票星球, and mini-program ticket flows.
-- DJ/label accounts: Instagram, Weibo, WeChat, and Bandcamp tour or label-night announcements.
+- Ticketing apps: ShowStart, Damai, PiaoPlanet, and mini-program ticket flows.
+- DJ/label accounts: WeChat, XHS, Weibo, Bandcamp, official pages, and public Instagram snippets for tour or label-night announcements. Do not request Instagram login; keep Instagram-only evidence as `social-lead`.
 
 Each Computer Use item should capture the full event record, not only the listing summary:
 
@@ -107,20 +107,20 @@ Workflow rule: when RA fetch is blocked, use Browser/Chrome or publicly indexed 
 
 After completing the RA Shanghai coverage manifest, the next high-priority Watch queue was scanned for stronger event-level evidence.
 
-- `jasmin-knopha`: public search results for Heim/Jasmín/Knopha surfaced a Heim Instagram preview for `06.20 | Heim Invites: Jasmín`, which supports the venue-social route but still does not expose a readable ticket page, door price, set times, or final running order. The canonical row remains Watch and now labels Heim Instagram as a `social-index-lead` until Chrome/Instagram, WeChat, XHS, or ticketing visual verification confirms the post.
+- `jasmin-knopha`: public search results for Heim/Jasmín/Knopha surfaced a Heim Instagram preview for `06.20 | Heim Invites: Jasmín`, which supports the venue-social route but still does not expose a readable ticket page, door price, set times, or final running order. The canonical row remains Watch and now labels Heim Instagram as a `social-index-lead` until XHS, WeChat, ticketing, venue/promoter, or another shareable source confirms the post. Do not request Instagram login.
 - `botox-fatale`, `anika-kunst`, and `truth-lies`: public results returned SmartShanghai plus ambiguous or dynamic Instagram/profile snippets. No RA Shanghai event detail or fully readable venue/promoter/ticketing page was found in this pass, so no confidence upgrade was made.
 
 Follow-up correction in the same pass:
 
-- `botox-fatale`: public search results surfaced the artist/tour Instagram index preview for `26.06 byyb.radio Shanghai`, `26.06 ABYSS Shanghai`, and `27.06 OIL Shenzhen`. Added it as `social-index-lead`; it strengthens the Abyss date lead but does not confirm ticket route, door price, set times, or current platform-visible post state. Keep as Watch until Chrome/Instagram platform-native search, Abyss, promoter, RA Shanghai, or ticketing confirms practical details.
+- `botox-fatale`: public search results surfaced the artist/tour Instagram index preview for `26.06 byyb.radio Shanghai`, `26.06 ABYSS Shanghai`, and `27.06 OIL Shenzhen`. Added it as `social-index-lead`; it strengthens the Abyss date lead but does not confirm ticket route, door price, set times, or current platform-visible post state. Keep as Watch until XHS, WeChat, Abyss, promoter, RA Shanghai, ticketing, or another shareable source confirms practical details. Do not require Instagram login.
 - `anika-kunst`: public search results surfaced an official `potent_club` Instagram index preview for `POTENT JUNE 2026` naming `@anikakunstmuzik`. Added it as `social-index-lead`; it identifies the likely platform-native Chrome/Instagram verification target but does not confirm the June 27 poster card, ticket route, door price, or set times. Keep as Watch until POTENT, RA Shanghai, ticketing, or visually verified official social evidence confirms practical details.
-- `liminal-dreams`: public search results surfaced Liminal Dreams and Wigwam Instagram index previews tying the series to Wigwam and `JUNE 20 @liminal_dreams_`. Added them as `social-index-lead` rows; this lowers single-source risk but still does not confirm lineup, start time, ticket route, door price, or age policy. Keep as Watch until platform-native Instagram/XHS/WeChat, Wigwam, or ticketing verification confirms practical details.
+- `liminal-dreams`: public search results surfaced Liminal Dreams and Wigwam Instagram index previews tying the series to Wigwam and `JUNE 20 @liminal_dreams_`. Added them as `social-index-lead` rows; this lowers single-source risk but still does not confirm lineup, start time, ticket route, door price, or age policy. Keep as Watch until XHS, WeChat, Wigwam, ticketing, or another shareable venue/promoter source confirms practical details. Instagram remains public/index-only.
 
 2026-06-14 follow-up on `liminal-dreams`:
 
 - Public search-index results surfaced an additional Liminal Dreams/Wigwam Instagram result at `https://www.instagram.com/p/DZFFVIPE8VW/` with tentative lineup/time text: Chingyi, IIN, Rainsoft, Toss, June 20, 2026, and 20:00-late.
 - Added this as `social-index-lead` only and added lineup notes that explicitly say platform-native visual confirmation is still required.
-- Decision: keep `liminal-dreams` as Watch and keep SmartShanghai as the only readable event-level confirmation source until Instagram/XHS/WeChat, Wigwam, or a ticketing route confirms the visible post, door price, age policy, and final lineup.
+- Decision: keep `liminal-dreams` as Watch and keep SmartShanghai as the only readable event-level confirmation source until XHS, WeChat, Wigwam, or a ticketing route confirms the visible post, door price, age policy, and final lineup. Instagram remains public/index-only.
 
 2026-06-14 field-first Watch pass:
 
@@ -130,15 +130,15 @@ Follow-up correction in the same pass:
 
 Second follow-up in the same queue:
 
-- `botox-fatale`: public search results surfaced an official Abyss Instagram June-program preview containing `BOTOX FATAL (LIVE)` plus `TUI`, `Kong BB`, and `Noodleprince`, but the snippet is adjacent to a separate Saturday June 27 C.U.M listing. Added it as `social-index-lead` only. Next check should enter Instagram through Abyss search/profile, open the visible June program post, and verify whether Botox Fatale is on Friday June 26, what support names are attached, and whether ticket or door details are visible.
-- `youshan-warmup`: public search results surfaced the official Wigwam Instagram route with `JUNE 27 @youshanmusicfestival` in June-program context. Added it as `social-index-lead` only because the warmup lineup, start time, ticket route, and door policy remain missing. Next check should use Wigwam / YOUSHAN platform-native Instagram, XHS, or WeChat search before opening any known deep link.
+- `botox-fatale`: public search results surfaced an official Abyss Instagram June-program preview containing `BOTOX FATAL (LIVE)` plus `TUI`, `Kong BB`, and `Noodleprince`, but the snippet is adjacent to a separate Saturday June 27 C.U.M listing. Added it as `social-index-lead` only. Next check should use XHS, WeChat, Abyss, promoter, or ticketing routes to verify whether Botox Fatale is on Friday June 26, what support names are attached, and whether ticket or door details are visible. Do not request Instagram login.
+- `youshan-warmup`: public search results surfaced the official Wigwam Instagram route with `JUNE 27 @youshanmusicfestival` in June-program context. Added it as `social-index-lead` only because the warmup lineup, start time, ticket route, and door policy remain missing. Next check should use Wigwam / YOUSHAN XHS, WeChat, venue/promoter, or ticketing search before opening any known deep link. Instagram remains public/index-only.
 
 Browser follow-up:
 
 - Instagram public-session check via Playwright/Chrome started at `https://www.instagram.com/`; the public homepage exposed language options but no usable platform search. Opening `abyss_shanghai` and `wigwam.live` account pages reached page titles and image placeholders only; both account navigations timed out before visible post text loaded. No event date card, lineup, ticket route, door price, set times, or June program body text was confirmed.
-- Keep `Abyss Instagram June 2026 program search preview` and `Wigwam Instagram June 2026 program search preview` as `social-index-lead`. Next practical step requires logged-in Chrome/Instagram platform-native search, or XHS/WeChat official-account search if Instagram remains gated. Do not promote either row based on public-session Instagram metadata alone.
+- Keep `Abyss Instagram June 2026 program search preview` and `Wigwam Instagram June 2026 program search preview` as `social-index-lead`. Next practical step should use XHS, WeChat official-account search, venue/promoter/ticketing routes, or another shareable source. Do not use Instagram login or promote either row based on public-session Instagram metadata alone.
 
-Workflow rule: search-index snippets can reveal where to look next, but they should not promote a Watch item. Use platform-native search or Chrome visual verification before treating Instagram/XHS/WeChat content as event-level confirmation.
+Workflow rule: search-index snippets can reveal where to look next, but they should not promote a Watch item. Use platform-native search or Chrome visual verification before treating XHS/WeChat content as event-level confirmation. Instagram snippets remain public/index-only leads and should not trigger login requests.
 
 ## 2026-06-14 Confirmation Source Audit
 
@@ -206,15 +206,15 @@ Current result after regeneration:
 - Platform-bound source rows: 9.
 - High-priority rows now explicitly queued for platform-native checks: `jasmin-knopha`, `botox-fatale`, `anika-kunst`, and `youshan-warmup`.
 - Medium-priority row now explicitly queued: `liminal-dreams`.
-- All current platform leads are Instagram routes or search-index previews; `botox-fatale` and `youshan-warmup` carry browser evidence states that indicate logged-in or stronger visual checks are still required.
+- Many current platform leads are Instagram routes or search-index previews; `botox-fatale` and `youshan-warmup` still need stronger non-Instagram visual checks through XHS, WeChat, venue/promoter, or ticketing routes.
 
-Workflow rule: use the event-specific search queries in `quality.platformVerificationQueue` before opening known deep links. For Instagram, XHS, WeChat, Weibo, mini-program, or ticket-flow leads, record whether the visible account/post/page confirms the event title, absolute date, venue, lineup, ticket route, door price, set times, or age rule. If the browser only exposes profile metadata, search snippets, image placeholders, login walls, or timeouts, keep the source as a lead and keep the event on Watch.
+Workflow rule: use the event-specific search queries in `quality.platformVerificationQueue` before opening known deep links. Prioritize XHS, WeChat, Weibo, mini-program, or ticket-flow leads; use Instagram only when a public page or snippet is visible without login. Record whether the visible account/post/page confirms the event title, absolute date, venue, lineup, ticket route, door price, set times, or age rule. If the browser only exposes profile metadata, search snippets, image placeholders, login walls, or timeouts, keep the source as a lead and keep the event on Watch.
 
 Follow-up platform check:
 
 - `botox-fatale`: public search still surfaced SmartShanghai plus Instagram search-index snippets, but no new non-social direct source. Playwright/Chrome opened an XHS search route for `Abyss Botox Fatale 6.26 Shanghai`; XHS redirected to `website-login/error` with `安全限制`, `IP at risk`, and error `300012`. Screenshot stored at `output/playwright/xhs-botox-security-limit.png`. Instagram platform search for `Abyss Botox Fatale 6.26 Shanghai` returned HTTP 429. No event post body, ticket route, door price, date card, support lineup, or set times were confirmed.
 - `youshan-warmup`: public search surfaced an additional jay_sarayu Instagram index preview reading `27.06: Youshan Festival Pre Party | Wigwam | Shanghai, CN`. Added it as `social-index-lead` only. It gives the next platform-native verification target, but it does not confirm official organizer approval, final lineup, start time, ticketing, door price, or age policy.
-- Current decision: keep both rows as Watch and keep their `confirmationSourceCount` at 1. Next useful check requires logged-in/user-assisted Instagram, XHS, WeChat official-account search, or a shareable Wigwam/YOUSHAN/Abyss/ticketing page.
+- Current decision: keep both rows as Watch and keep their `confirmationSourceCount` at 1. Next useful check is XHS first, then WeChat official-account search, then a shareable Wigwam/YOUSHAN/Abyss/ticketing page. Instagram remains public/index-only and should not require login.
 
 ## 2026-06-14 DJ Lineup-Context Profiles
 
@@ -268,7 +268,7 @@ Use status: "watch" when a lead has only a calendar/editorial mention, missing t
 - RA is the best public index for Shanghai electronic events.
 - SmartShanghai is the best English context layer for addresses, prices, and monthly scene summaries.
 - WeChat official accounts and mini-programs are often the final source of truth for tickets, QR codes, set times, and last-minute changes.
-- Xiaohongshu, Douyin, Instagram, and Weibo are useful for discovery, but should be treated as leads unless independently confirmed.
+- Xiaohongshu, WeChat, Douyin, Instagram, and Weibo are useful for discovery, but should be treated as leads unless independently confirmed. Prioritize XHS and WeChat for social checks; Instagram is public/index-only and not login-assisted.
 
 ## GitHub-Only Refresh V1
 
@@ -298,7 +298,7 @@ Workflow rule: resolve missing or uncertain core fields first. Second-source con
 
 Applied the user's clarification: if a core field cannot be found, mark it as a source gap instead of forcing a placeholder.
 
-- Added `coreFieldGapStatus` and `sourceGapNote` to `quality.coreFieldQueue`; unresolved rows now explicitly say that missing or uncertain core fields were not found in current public sources and should be rechecked through organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.
+- Added `coreFieldGapStatus` and `sourceGapNote` to `quality.coreFieldQueue`; unresolved rows now explicitly say that missing or uncertain core fields were not found in current public sources and should be rechecked through organizer, venue, ticketing, RA, SmartShanghai, XHS, WeChat, or public/index-only Instagram leads in the next pass.
 - Added source-backed DJ profiles for `Jasmín`, `Knopha`, `Sarayu`, and `Elaheh`. These reduce DJ/profile core gaps but do not confirm event ticketing or final running order.
 - Added `JAAL The Machine live acid techno` venue address from SmartShanghai FENRIR venue context and set the ticket route to the already browser-checked 东方演出网 listing. Age policy remains marked as not found in public sources.
 - Current generated state after regeneration: future missing core fields dropped from 71 to 69; future performer profile source gaps dropped from 13 to 9. The high-priority rows `jasmin-knopha`, `botox-fatale`, `youshan-warmup`, `anika-kunst`, `truth-lies`, and `jaal` remain in the core-field queue because ticket/time/age/lineup fields are still not publicly confirmed.
@@ -368,7 +368,7 @@ Discovery rules used:
 
 - Gate A: add source-backed Shanghai activities when the event/source text itself signals techno, rave, electronic, club, warehouse, bass, hard dance, breaks, jungle, UKG, trance, electro, EBM, acid, industrial, or related local-nightlife context.
 - Gate B: add events when lineup, DJ profile, aliases, label, promoter, or venue context matches tracked techno-relevant artists. This inventory is not complete and must keep expanding.
-- For anti-scrape platforms, use platform-native search before direct deep links. XHS, Instagram, WeChat, Weibo, ticket widgets, RA DataDome pages, and SmartShanghai dynamic ticket states require Browser/Chrome visual verification before updating source freshness.
+- For anti-scrape platforms, use platform-native search before direct deep links. XHS, WeChat, Weibo, ticket widgets, RA DataDome pages, and SmartShanghai dynamic ticket states require Browser/Chrome visual verification before updating source freshness. Instagram is public/index-only and not login-assisted.
 
 Current unresolved source queues:
 
@@ -468,3 +468,72 @@ Validation:
 - `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json` passed with must_fix 0 and should_fix 0.
 - `npm run check` passed with 66 tests.
 - Local Playwright smoke test confirmed `poster-wall.html` Upcoming count 32, first visible event Jun 17, modal opens, Resident Advisor source renders, and 5 insight rows render.
+
+## 2026-06-15 Future Poster Scrape Retrospective
+
+Goal: find posters for current and future rows without risking account warnings or treating social-index snippets as downloadable poster evidence.
+
+Successful routes kept for future scraping:
+
+- Dongfang Performance / ShowStart event detail pages: the JAAL / Endgame listing exposed the correct event flyer in page HTML as a `s2.showstart.com` image. The first extracted sidebar images were unrelated recommendations, so the reliable method is to inspect image context around the event-detail body and visually confirm the flyer before use.
+- Shanghai Municipal Administration of Culture and Tourism pages: the MISA article exposed static `cmsres` images. The first image was the official 2026 MISA key visual and was safe to save as a festival poster because it names the festival and Jul 5-Jul 20 date window.
+- Sina / Weibo article mirrors: the Mushroom Music Carnival article exposed Weibo image URLs. Direct `wx4.sinaimg.cn/middle/...` requests returned 403, but a single retry with the article URL as `Referer` succeeded. The selected lineup poster visibly confirmed Jun 27, Shanghai Qiantan Sports Park, and the announced artists.
+- Temporary candidate review: candidates were downloaded to `output/poster-candidates`, combined into a contact sheet, visually inspected, then only confirmed event-specific posters were copied into `assets/posters/`. The temporary folder was removed after use.
+- Local asset publishing: each accepted poster received a local `posterUrl`, `posterEvidence`, optimized display image, poster archive record, and regenerated event detail page. The archive grew from 47 to 50 poster records.
+
+Assets added:
+
+- `assets/posters/jaal-endgame.jpg` and `assets/posters/jaal-endgame-optimized.jpg`
+- `assets/posters/shanghai-mushroom-music-carnival-2026.jpg` and `assets/posters/shanghai-mushroom-music-carnival-2026-optimized.jpg`
+- `assets/posters/misa-shanghai-summer-music-festival-2026.jpg` and `assets/posters/misa-shanghai-summer-music-festival-2026-optimized.jpg`
+
+What did not work or should not be repeated:
+
+- SmartShanghai June guide images were not reliable event posters for most missing Watch rows. The guide contains useful text leads, but nearby images often belong to other events or editorial sections. Do not attach them unless the image caption/context identifies the exact event.
+- Search image results for `Jasmin + Knopha`, `Liminal Dreams`, `Botox Fatale`, and similar rows returned unrelated posters, old artist/event images, or generic festival art. Do not use these as event poster evidence.
+- Instagram/XHS/social post images were not fetched by script. Current usable evidence for those rows remains search-index/social-lead only; next checks must use XHS and WeChat platform-native Browser/Chrome search first. Instagram should not require login and remains public/index-only.
+- JAAL page sidebar/recommendation images looked like usable posters at first but were unrelated events. Always inspect HTML context and visually verify event title/date/venue before accepting a downloaded image.
+- Citywide campaign images from Shanghai Tonight / commerce pages should not be attached to specific Watch items such as West Bund or Tomorrowland unless the image names that event.
+- When PowerShell writes non-ASCII source names into JSON, encoding can corrupt Chinese labels. Use ASCII source labels such as `Dongfang Performance / ShowStart event listing` unless the file/tooling path is known to preserve UTF-8.
+
+Remaining current/future poster gaps after this pass:
+
+- `jasmin-knopha`
+- `liminal-dreams`
+- `botox-fatale`
+- `devils-dancers`
+- `anika-kunst`
+- `hexscape`
+- `truth-lies`
+- `youshan-warmup`
+- `shenwave-music-festival-2026`
+- `west-bund-dream-center-waterfront-music-festival-2026`
+- `the-magic-of-tomorrowland-shanghai-2026-watch`
+
+Next verification route:
+
+- Use platform-native XHS and WeChat search for venue/promoter/event/date combinations before opening deep links.
+- Ask the user before using a logged-in Chrome/XHS or WeChat session. Do not ask for Instagram login.
+- Keep missing posters marked as gaps when the organizer has not published a stable public poster or when the poster is only behind a gated social surface.
+
+## 2026-06-15 XHS and WeChat/Sogou Platform Check
+
+Goal: test whether XHS and WeChat/Sogou can safely confirm remaining current/future poster gaps before using Instagram or broader image search.
+
+Routes tested:
+
+- XHS platform search opened successfully for an Abyss / Botox Fatale query, but public search results were hidden behind the login modal. No event fact or poster was confirmed. Screenshot: `output/platform-checks/xhs-botox-fatale-abyss.png`.
+- WeChat/Sogou article search initially worked without captcha. Queries for Abyss, Wigwam, POTENT, Heim, ILLUM, EXIT, Specters, and event/date/DJ phrases returned either no result, SmartShanghai June 2026 mirror snippets, unrelated articles, or old Wigwam historical articles.
+- WeChat/Sogou account search for the English venue names did not return visible official certified venue accounts, so there was no account page to click into for current posts.
+- A later expanded keyword batch with more date-specific queries triggered a Sogou verification/captcha page. Screenshot example: `output/platform-checks/wechat-expanded-wigwam-youshan-627-en-cn.png`. The route was stopped immediately.
+
+Editorial outcome:
+
+- No canonical event fields, poster assets, or confidence status were updated from this check.
+- SmartShanghai mirrors found through Sogou are duplicates of existing SmartShanghai evidence, not independent confirmations.
+- Old Wigwam account articles are venue/history context only and do not confirm the 2026 Youshan warmup or Liminal Dreams rows.
+- XHS remains the better next social route, but it requires user login-assisted viewing in Chrome/browser for search results. WeChat/Sogou should be retried only in smaller batches, or from user-provided official-account links/QR routes.
+
+Workflow lesson:
+
+- On anti-scrape surfaces, platform-native search is correct, but query volume must stay low. Stop immediately on verification/captcha and mark the route `captcha-stopped` rather than trying more keywords.

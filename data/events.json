@@ -7228,7 +7228,7 @@
       "ticketStatus": "Official Weibo mirror says presale opened May 31 at 19:00 through Damai, Maoyan, and Ticket Planet, with 298/398/498/698 RMB tiers. Sina lineup mirror and Trip.com corroborate the Jun 27 Qiantan Sports Park listing; recheck Damai, Maoyan, or Ticket Planet live inventory before any purchase CTA.",
       "contentOpportunity": "Use as a broad Jun 27 festival-search hook, then route readers to Youshan warmup, EXIT, POTENT, Abyss, or late-night underground alternatives.",
       "addedAt": "2026-06-13",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-15",
       "sources": [
         {
           "label": "Sina / official Weibo mirror",
@@ -7240,7 +7240,8 @@
           "label": "Sina / Weibo lineup mirror",
           "url": "https://www.sina.cn/news/detail/5303147713007539.html",
           "status": "watchlist",
-          "lastChecked": "2026-06-14"
+          "lastChecked": "2026-06-15",
+          "verificationNote": "Lineup poster is visible in the Sina / Weibo lineup mirror; local file saved after visual check. The poster confirms Jun 27 at Shanghai Qiantan Sports Park and the announced artist slate."
         },
         {
           "label": "Trip.com event directory",
@@ -7276,7 +7277,17 @@
       "recommendationReason": "Kept on Watch because the sound and room fit points toward social house, disco, or date-route electronic music at Qiantan Sports Park; wait for firmer practical details before treating it as a pick.",
       "bestFor": "Best for a more social, house-forward, or date-friendly electronic music route.",
       "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
-      "sourceConfidence": "Watch-level confidence from Sina / official Weibo mirror; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence."
+      "sourceConfidence": "Watch-level confidence from Sina / official Weibo mirror; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence.",
+      "posterUrl": "assets/posters/shanghai-mushroom-music-carnival-2026.jpg",
+      "posterEvidence": {
+        "type": "lineup-poster",
+        "source": "Sina / Weibo lineup mirror",
+        "url": "https://www.sina.cn/news/detail/5303147713007539.html",
+        "status": "Lineup poster is visible in the Sina / Weibo lineup mirror; local file saved after visual check. The poster confirms Jun 27 at Shanghai Qiantan Sports Park and the announced artist slate.",
+        "localFiles": [
+          "assets/posters/shanghai-mushroom-music-carnival-2026.jpg"
+        ]
+      }
     },
     {
       "id": "anika-kunst",
@@ -7525,7 +7536,7 @@
           "label": "东方演出网 Endgame Fenrir listing",
           "url": "https://m.df962388.com/yanchu/384394.html",
           "status": "secondary",
-          "lastChecked": "2026-06-14",
+          "lastChecked": "2026-06-15",
           "browserCheck": "2026-06-14 Browser visual check confirmed the page title, Jun 27 20:30-23:59, FENRIR Shanghai, 80/100/140 RMB ticket tiers, Blood of Life/Chimera Cult/Soulitude context, and JAAL the Machine late analog acid set note."
         },
         {
@@ -7592,7 +7603,17 @@
           "name": "Soulitude",
           "note": "SmartShanghai lists Soulitude on the Fenrir bill."
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/jaal-endgame.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "Dongfang Performance / ShowStart event listing",
+        "url": "https://www.df962388.com/yanchu/384394.html",
+        "status": "Event-specific flyer is visible on the Dongfang Performance listing; local file saved after visual check. The listing confirms Jun 27, FENRIR Shanghai, ticket tiers, and the JAAL late analog Acid House note.",
+        "localFiles": [
+          "assets/posters/jaal-endgame.jpg"
+        ]
+      }
     },
     {
       "id": "truth-lies",
@@ -8016,13 +8037,13 @@
       "ticketStatus": "City culture source says first-round ticket sales began Jun 3 at 13:00. Meet in Shanghai points readers to the Shanghai Symphony Orchestra website and WeChat account for tickets and additional information; recheck the specific program page before any purchase CTA.",
       "contentOpportunity": "Use for a Shanghai summer music calendar page and cross-over posts for film music, jazz, contemporary art, and date-night audiences.",
       "addedAt": "2026-06-13",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-15",
       "sources": [
         {
           "label": "Shanghai Municipal Administration of Culture and Tourism",
           "url": "https://whlyj.sh.gov.cn/yshd/20260603/d869d0cd8b24484f935c5b7a9eead459.html",
           "status": "watchlist",
-          "lastChecked": "2026-06-14",
+          "lastChecked": "2026-06-15",
           "verificationNote": "2026-06-14 page check confirmed Jul 5-20, 33 live performances plus online MISA, Jun 3 13:00 first-round ticket sale, and Shanghai Symphony Orchestra as organizer."
         },
         {
@@ -8068,7 +8089,17 @@
       "recommendationReason": "Kept on Watch because the sound and room fit points toward social house, disco, or date-route electronic music at Shanghai Symphony Hall / citywide venues; wait for firmer practical details before treating it as a pick.",
       "bestFor": "Best for readers looking for a harder late-room or warehouse-leaning club night.",
       "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
-      "sourceConfidence": "Watch-level confidence from Shanghai Municipal Administration of Culture and Tourism; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence."
+      "sourceConfidence": "Watch-level confidence from Shanghai Municipal Administration of Culture and Tourism; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence.",
+      "posterUrl": "assets/posters/misa-shanghai-summer-music-festival-2026.jpg",
+      "posterEvidence": {
+        "type": "festival-key-visual",
+        "source": "Shanghai Municipal Administration of Culture and Tourism",
+        "url": "https://whlyj.sh.gov.cn/yshd/20260603/d869d0cd8b24484f935c5b7a9eead459.html",
+        "status": "Official 2026 MISA key visual is visible in the municipal culture article; local file saved after visual check. The image confirms the Music in the Summer Air branding and Jul 5-Jul 20 date window.",
+        "localFiles": [
+          "assets/posters/misa-shanghai-summer-music-festival-2026.jpg"
+        ]
+      }
     },
     {
       "id": "west-bund-dream-center-waterfront-music-festival-2026",

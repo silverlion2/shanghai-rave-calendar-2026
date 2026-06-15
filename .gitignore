@@ -2,6 +2,7 @@
 .chrome-headless*/
 .playwright-cli/
 .tmp/
+output/
 node_modules/
 .env
 .env.*

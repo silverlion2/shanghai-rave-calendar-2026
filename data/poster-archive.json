@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-14T13:39:25.739Z",
+  "generatedAt": "2026-06-15T11:59:53.907Z",
   "sourceData": "data/events.json",
   "storagePolicy": {
     "mode": "static-json-plus-local-optimized-assets",
@@ -7,16 +7,16 @@
     "rule": "Use optimized display assets in the wall; keep raw poster files out of the default browsing path when the archive grows."
   },
   "stats": {
-    "posters": 47,
+    "posters": 50,
     "years": [
       2026
     ],
-    "venues": 24,
-    "optimizedCount": 47,
-    "displayBytes": 9257105,
-    "sourceBytes": 30983967,
-    "displayMegabytes": 8.83,
-    "sourceMegabytes": 29.55,
+    "venues": 27,
+    "optimizedCount": 50,
+    "displayBytes": 9962424,
+    "sourceBytes": 34766139,
+    "displayMegabytes": 9.5,
+    "sourceMegabytes": 33.16,
     "freeTierSoftCapBytes": 83886080,
     "freeTierSoftCapMegabytes": 80
   },
@@ -63,6 +63,137 @@
       },
       "eventUrl": "events/shaun-soomro-dj-serang.html",
       "notes": "RA lists a far-dated September Shanghai TBA entry for Shaun Soomro and DJ Serang. Keep it for complete RA coverage and as a future watch/context item until venue, ticket route, age policy, and current update state are confirmed."
+    },
+    {
+      "id": "shanghai-2026-misa-shanghai-summer-music-festival-2026",
+      "eventId": "misa-shanghai-summer-music-festival-2026",
+      "title": "2026 Shanghai Summer Music Festival (MISA)",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jul 5-20",
+      "sortDate": "2026-07-05",
+      "time": "Multiple programs",
+      "venue": "Shanghai Symphony Hall / citywide venues",
+      "district": "Xuhui / citywide",
+      "sound": "classical crossover, jazz, film music, contemporary art",
+      "tags": [
+        "watch",
+        "xuhui / citywide",
+        "date",
+        "experimental",
+        "classical crossover",
+        "jazz",
+        "film music",
+        "contemporary art"
+      ],
+      "status": "watch",
+      "confidence": "Watch",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Shanghai Municipal Administration of Culture and Tourism",
+        "url": "https://whlyj.sh.gov.cn/yshd/20260603/d869d0cd8b24484f935c5b7a9eead459.html",
+        "posterEvidenceUrl": "https://whlyj.sh.gov.cn/yshd/20260603/d869d0cd8b24484f935c5b7a9eead459.html",
+        "posterEvidenceSource": "Shanghai Municipal Administration of Culture and Tourism",
+        "posterEvidenceStatus": "Official 2026 MISA key visual is visible in the municipal culture article; local file saved after visual check. The image confirms the Music in the Summer Air branding and Jul 5-Jul 20 date window."
+      },
+      "image": {
+        "thumbnail": "assets/posters/misa-shanghai-summer-music-festival-2026-optimized.jpg",
+        "display": "assets/posters/misa-shanghai-summer-music-festival-2026-optimized.jpg",
+        "sourceAsset": "assets/posters/misa-shanghai-summer-music-festival-2026.jpg",
+        "displayBytes": 52966,
+        "sourceBytes": 542884,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/misa-shanghai-summer-music-festival-2026.html",
+      "notes": "Shanghai city culture and official travel sources list the 2026 MISA season from Jul 5 to Jul 20 with 33 live performances plus online MISA. Keep as Watch: source confidence is now stronger, but the fit is culture-night/listening-first rather than rave, and ticket availability still belongs to individual program pages."
+    },
+    {
+      "id": "shanghai-2026-shanghai-mushroom-music-carnival-2026",
+      "eventId": "shanghai-mushroom-music-carnival-2026",
+      "title": "2026 Shanghai Mushroom Music Carnival",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 27",
+      "sortDate": "2026-06-27",
+      "time": "Check ticketing",
+      "venue": "Qiantan Sports Park",
+      "district": "Pudong",
+      "sound": "mainland pop, music festival, carnival",
+      "tags": [
+        "watch",
+        "pudong",
+        "date",
+        "mainland pop",
+        "music festival",
+        "carnival"
+      ],
+      "status": "watch",
+      "confidence": "Watch",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Sina / official Weibo mirror",
+        "url": "https://www.sina.cn/news/detail/5304003900477751.html",
+        "posterEvidenceUrl": "https://www.sina.cn/news/detail/5303147713007539.html",
+        "posterEvidenceSource": "Sina / Weibo lineup mirror",
+        "posterEvidenceStatus": "Lineup poster is visible in the Sina / Weibo lineup mirror; local file saved after visual check. The poster confirms Jun 27 at Shanghai Qiantan Sports Park and the announced artist slate."
+      },
+      "image": {
+        "thumbnail": "assets/posters/shanghai-mushroom-music-carnival-2026-optimized.jpg",
+        "display": "assets/posters/shanghai-mushroom-music-carnival-2026-optimized.jpg",
+        "sourceAsset": "assets/posters/shanghai-mushroom-music-carnival-2026.jpg",
+        "displayBytes": 301083,
+        "sourceBytes": 469266,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/shanghai-mushroom-music-carnival-2026.html",
+      "notes": "Large Qiantan Sports Park pop festival with official ticket channels on Damai, Maoyan, and Ticket Planet. Date, venue, and pop lineup are now corroborated by multiple public rows; keep as Watch because the techno fit is low and live ticket inventory still needs platform recheck before any purchase CTA."
+    },
+    {
+      "id": "shanghai-2026-jaal",
+      "eventId": "jaal",
+      "title": "JAAL The Machine live acid techno",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 27",
+      "sortDate": "2026-06-27",
+      "time": "20:30-23:59",
+      "venue": "Fenrir",
+      "district": "Changning",
+      "sound": "acid techno, metal crossover",
+      "tags": [
+        "watch",
+        "changning",
+        "experimental",
+        "hard",
+        "acid techno",
+        "metal crossover"
+      ],
+      "status": "watch",
+      "confidence": "Watch",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "SmartShanghai",
+        "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+        "posterEvidenceUrl": "https://www.df962388.com/yanchu/384394.html",
+        "posterEvidenceSource": "Dongfang Performance / ShowStart event listing",
+        "posterEvidenceStatus": "Event-specific flyer is visible on the Dongfang Performance listing; local file saved after visual check. The listing confirms Jun 27, FENRIR Shanghai, ticket tiers, and the JAAL late analog Acid House note."
+      },
+      "image": {
+        "thumbnail": "assets/posters/jaal-endgame-optimized.jpg",
+        "display": "assets/posters/jaal-endgame-optimized.jpg",
+        "sourceAsset": "assets/posters/jaal-endgame.jpg",
+        "displayBytes": 351270,
+        "sourceBytes": 2770022,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/jaal.html",
+      "notes": "Two-source Watch lead for Fenrir's Endgame metal-crossover night: SmartShanghai frames it as live acid techno with Blood of Life, Chimera Cult, and Soulitude, while the Chinese listing gives time and ticket tiers. Strong for hard/experimental readers, but still verify the actual purchase route and JAAL set timing."
     },
     {
       "id": "shanghai-2026-nova-summer-splash-pool-party",
@@ -819,7 +950,7 @@
       "district": "Jing'an",
       "sound": "house, disco, funk, hip-hop",
       "tags": [
-        "upcoming",
+        "past",
         "medium",
         "jing'an",
         "date",
@@ -828,7 +959,7 @@
         "funk",
         "hip-hop"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "Medium",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -864,13 +995,14 @@
       "district": "Huangpu",
       "sound": "curated music, rooftop lounge",
       "tags": [
+        "past",
         "watch",
         "huangpu",
         "date",
         "curated music",
         "rooftop lounge"
       ],
-      "status": "watch",
+      "status": "past",
       "confidence": "Watch",
       "collection": "Shanghai Rave Index seed archive",
       "source": {

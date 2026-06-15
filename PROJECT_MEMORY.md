@@ -40,8 +40,8 @@ The user finally asked to create a project memory and save the dialogue. This fi
 2. Resident Advisor event pages and city listings are strong public event sources, but automated listing fetches can return 403.
 3. SmartShanghai event pages, clubbing listings, and editorial guides are reliable public discovery and context sources.
 4. WeChat official accounts and mini-programs are often the final ticket/set-time source, but are not reliably linkable from the static scraper.
-5. X/Twitter, Xiaohongshu, Douyin, Instagram, Weibo, reposts, and app-only content are discovery leads unless independently confirmed.
-6. RA Shanghai when blocked, SmartShanghai when rendered/incomplete, Xiaohongshu, WeChat accounts/groups, venue accounts, promoter posters, ShowStart/Damai/PiaoPlanet/mini-program ticketing, and DJ/label Instagram/Weibo/WeChat/Bandcamp are queued for Chrome + Computer Use instead of plain fetch.
+5. X/Twitter, Xiaohongshu, WeChat, Douyin, Instagram, Weibo, reposts, and app-only content are discovery leads unless independently confirmed. For social checks, prioritize XHS and WeChat; Instagram is public/index-only and not login-assisted because account access is unavailable.
+6. RA Shanghai when blocked, SmartShanghai when rendered/incomplete, Xiaohongshu, WeChat accounts/groups, venue accounts, promoter posters, ShowStart/Damai/PiaoPlanet/mini-program ticketing, and DJ/label XHS/WeChat/Weibo/Bandcamp/official pages are queued for Chrome + Computer Use instead of plain fetch. Instagram snippets can remain leads, but do not ask for Instagram login.
 
 ## X/Twitter Integration
 
@@ -56,7 +56,7 @@ X/Twitter support is keyword-based and discovery-only.
 
 ## Computer Use Collection Queue
 
-`data/events.json.computerUseQueue` is generated on each scrape run and surfaced in `ops.html` as `computer-use` leads. It covers RA Shanghai, SmartShanghai, Xiaohongshu, WeChat official accounts/groups, venue official accounts, promoter posters, ShowStart/Damai/PiaoPlanet/mini-program ticketing, and DJ/label Instagram, Weibo, WeChat, or Bandcamp pages. These are agent-operated Chrome + Computer Use collection tasks and should capture the complete event record: time, venue/address, lineup/set times, poster and OCR evidence, artist introductions, future city tour dates, ticket platform/price/availability, age/ID and entry rules, second-layer links, source publication date, last checked date, and evidence type.
+`data/events.json.computerUseQueue` is generated on each scrape run and surfaced in `ops.html` as `computer-use` leads. It covers RA Shanghai, SmartShanghai, Xiaohongshu, WeChat official accounts/groups, venue official accounts, promoter posters, ShowStart/Damai/PiaoPlanet/mini-program ticketing, and DJ/label XHS, Weibo, WeChat, Bandcamp, or official pages. Instagram snippets can stay as discovery leads, but Instagram login should not be requested. These are agent-operated Chrome + Computer Use collection tasks and should capture the complete event record: time, venue/address, lineup/set times, poster and OCR evidence, artist introductions, future city tour dates, ticket platform/price/availability, age/ID and entry rules, second-layer links, source publication date, last checked date, and evidence type.
 
 ## Known Caveats
 
@@ -1134,7 +1134,7 @@ Current metrics after regeneration:
 Remaining gaps:
 
 - Continue core-field work before second-source promotion. Highest-priority future gaps remain `botox-fatale`, `youshan-warmup`, `jasmin-knopha`, `anika-kunst`, `truth-lies`, `jaal`, `devils-dancers`, `hexscape`, and `liminal-dreams`.
-- Use platform-native browser search for Instagram/XHS/WeChat/ticketing queues before opening direct deep links.
+- Use platform-native browser search for XHS/WeChat/ticketing queues before opening direct deep links. Instagram is public/index-only and not login-assisted.
 - RA/SmartShanghai source sweep is now routine; manual work should begin from `quality.coreFieldQueue`, `quality.platformVerificationQueue`, and failed source reports.
 
 Validation:
@@ -1266,7 +1266,7 @@ Implemented state:
 
 Next verification:
 
-- Use platform-native Instagram, XHS, WeChat, Wigwam, or ticketing search to confirm the post visually before promoting the row.
+- Use XHS, WeChat, Wigwam, or ticketing search to confirm the post visually before promoting the row. Instagram remains public/index-only.
 - Continue prioritizing high-fit single-confirmation rows: `jasmin-knopha`, `botox-fatale`, `anika-kunst`, `truth-lies`, and `youshan-warmup`.
 
 ## 2026-06-14 Field-First Watch Pass
@@ -1381,6 +1381,60 @@ Validation:
 
 - Source-first recommendation audit returned `badCount: 0`.
 - `node --test tests/trust-framework.test.js tests/poster-wall-filters.test.js` passed.
+
+## 2026-06-15 Future Poster Scrape Retrospective
+
+The user asked to preserve successful scraping experience and review unsuccessful poster routes.
+
+Preserved in workflow:
+
+- Updated the local `rave-calendar-editor` skill reference with a `Poster Scraping Playbook`.
+- Recorded the detailed source-level retrospective in `SOURCE_LOG.md`.
+
+Successful poster routes from this pass:
+
+- Dongfang Performance / ShowStart static event-detail images after HTML-context inspection and visual confirmation.
+- Shanghai Municipal Administration of Culture and Tourism static `cmsres` images for official festival key visuals.
+- Sina / Weibo article-mirror images with a single page-`Referer` retry after a direct 403, followed by visual confirmation.
+- Temporary candidate folder plus contact sheet review before copying confirmed posters into `assets/posters/`.
+
+Unsuccessful or unsafe routes:
+
+- SmartShanghai guide images were useful for context but mostly not exact posters for the missing Watch rows.
+- Search image results returned unrelated or old posters for several social-heavy rows.
+- Instagram/XHS/WeChat images were not script-fetched. XHS and WeChat remain platform-native Browser/Chrome verification tasks, and logged-in XHS/WeChat viewing requires user permission. Instagram is public/index-only and should not require login.
+
+## 2026-06-15 Social Verification Priority Update
+
+The user clarified that XHS and WeChat should be checked before Instagram, and that Instagram login is not available because the account was banned.
+
+Updated rule:
+
+- Prioritize XHS for venue/promoter/event/date/poster searches.
+- Then check WeChat official-account articles, public mirrors, ticket QR references, and mini-program handoff routes where reachable.
+- Use Instagram only as public/index snippet evidence or a public visible page. Do not ask for Instagram login, and do not make Instagram the primary next step when XHS, WeChat, RA, SmartShanghai, official venue/promoter, or ticketing routes exist.
+- Sidebar/recommended images on event-directory pages can be unrelated and must be rejected unless the image context matches the exact event.
+
+Remaining poster gaps after adding JAAL, Mushroom, and MISA:
+
+- `jasmin-knopha`, `liminal-dreams`, `botox-fatale`, `devils-dancers`, `anika-kunst`, `hexscape`, `truth-lies`, `youshan-warmup`, `shenwave-music-festival-2026`, `west-bund-dream-center-waterfront-music-festival-2026`, and `the-magic-of-tomorrowland-shanghai-2026-watch`.
+
+## 2026-06-15 XHS and WeChat/Sogou Test Result
+
+The user asked to test XHS and WeChat/Sogou first and to avoid Instagram login.
+
+Observed state:
+
+- XHS search loaded but hid results behind a login wall. No event/poster evidence was promoted.
+- WeChat/Sogou article and account search initially worked. Venue account search for Abyss, Wigwam, POTENT, Heim, ILLUM, EXIT, and Specters did not expose official certified accounts by English venue name.
+- Article search mostly returned no results, existing SmartShanghai June 2026 mirror snippets, unrelated articles, or old Wigwam articles. These are not independent current-event confirmations.
+- Expanded Sogou keyword probing triggered a verification/captcha page, so the route was stopped. Screenshots and JSON are under `output/platform-checks/`.
+
+Rule carried forward:
+
+- Do not continue Sogou after verification/captcha. Mark as `captcha-stopped`.
+- Do not update canonical data from social login walls, old venue articles, SmartShanghai mirrors, or unrelated snippets.
+- Next useful route is user login-assisted XHS/WeChat browser verification or user-provided official-account links/QR routes.
 
 ## 2026-06-14 Core Gap Marking Pass
 
