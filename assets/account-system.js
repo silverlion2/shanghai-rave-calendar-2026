@@ -440,6 +440,131 @@
     };
   }
 
+  function accountAuthFeedback(action = "", outcome = "ready", context = {}) {
+    const email = String(context.email || "").trim();
+    const address = email || "your email";
+    if (outcome === "pending") {
+      if (action === "sign-up") {
+        return {
+          tone: "info",
+          title: "Creating account",
+          body: `Sending ${address} to Supabase Auth. The next screen will say whether you can enter now or need to confirm email first.`,
+          steps: ["Keep this tab open", "Do not click Create account again while this is running"],
+        };
+      }
+      if (action === "sign-in") {
+        return {
+          tone: "info",
+          title: "Signing in",
+          body: `Checking the password for ${address}.`,
+          steps: ["If this fails, use Email link or confirm the account first"],
+        };
+      }
+      if (action === "magic-link") {
+        return {
+          tone: "info",
+          title: "Sending email link",
+          body: `Sending a one-time login link to ${address}.`,
+          steps: ["Open the link from the same browser", "Return here after the email opens"],
+        };
+      }
+    }
+    if (outcome === "success") {
+      if (action === "sign-up" && context.hasSession) {
+        return {
+          tone: "success",
+          title: "Account created",
+          body: "You are signed in now. Set preferences, then save them to the account.",
+          steps: ["Pick sounds and rooms", "Save preferences", "Open the calendar with your For You panel"],
+        };
+      }
+      if (action === "sign-up") {
+        return {
+          tone: "success",
+          title: "Check your email",
+          body: `Supabase accepted ${address}. Open the confirmation email, then return here and sign in with the same password.`,
+          steps: ["Open the Supabase confirmation email", "Return to this page", "Use Sign in with the password you just set"],
+        };
+      }
+      if (action === "sign-in") {
+        return {
+          tone: "success",
+          title: "Signed in",
+          body: "Your account is connected and preferences are syncing.",
+          steps: ["Review saved preferences", "Open the calendar when ready"],
+        };
+      }
+      if (action === "magic-link") {
+        return {
+          tone: "success",
+          title: "Email link sent",
+          body: `Check ${address} for the Supabase login link.`,
+          steps: ["Open the email link from this device", "Return here after the browser signs you in"],
+        };
+      }
+    }
+    if (outcome === "error") {
+      return accountAuthErrorFeedback(action, context.error);
+    }
+    return {
+      tone: "idle",
+      title: "Create account or sign in",
+      body: "New users set an 8+ character password with Create account. Returning users use Sign in, or Email link for passwordless login.",
+      steps: ["Use the same email every time", "Confirm the email if Supabase asks", "Then save preferences to the account"],
+    };
+  }
+
+  function accountAuthErrorFeedback(action = "", error = "") {
+    const message = String(error || "Account action failed").trim();
+    const lower = message.toLowerCase();
+    if (lower.includes("already registered") || lower.includes("already exists") || lower.includes("user already")) {
+      return {
+        tone: "warning",
+        title: "Account already exists",
+        body: "That email is already registered. Use Sign in with the existing password, or Email link if you do not want to type the password.",
+        steps: ["Leave the email in place", "Enter the existing password", "Click Sign in"],
+      };
+    }
+    if (lower.includes("email not confirmed") || lower.includes("confirm")) {
+      return {
+        tone: "warning",
+        title: "Confirm email first",
+        body: "Supabase has the account, but the email still needs confirmation before password login works.",
+        steps: ["Open the confirmation email", "Return to this page", "Click Sign in after confirmation"],
+      };
+    }
+    if (lower.includes("invalid login") || lower.includes("invalid credentials")) {
+      return {
+        tone: "error",
+        title: "Sign in did not match",
+        body: "The email and password did not match a confirmed account.",
+        steps: ["Check the email spelling", "Re-enter the password", "Use Email link if you are not sure about the password"],
+      };
+    }
+    if (lower.includes("password")) {
+      return {
+        tone: "error",
+        title: "Password needs attention",
+        body: message,
+        steps: ["Use at least 8 characters", "Try a password you have not used elsewhere"],
+      };
+    }
+    if (lower.includes("email")) {
+      return {
+        tone: "error",
+        title: "Email needs attention",
+        body: message,
+        steps: ["Use the full email address", "Then choose Create account, Sign in, or Email link"],
+      };
+    }
+    return {
+      tone: "error",
+      title: action === "magic-link" ? "Email link failed" : "Account action failed",
+      body: message,
+      steps: ["Try again once", "If it repeats, check Supabase Auth settings"],
+    };
+  }
+
   function accountFeatureCatalog() {
     return accountFeatures.map(feature => ({ ...feature }));
   }
@@ -754,6 +879,9 @@
       session: null,
       remoteStatus: "Local mode",
       busy: false,
+      busyAction: "",
+      authDraft: { displayName: "", email: "" },
+      authFeedback: accountAuthFeedback(),
       error: "",
     };
 
@@ -809,7 +937,7 @@
               <span>Show better matches on the homepage</span>
               <span>Export your account map any time</span>
             </div>
-            ${state.error ? `<div class="account-error">${escapeHtml(state.error)}</div>` : ""}
+            ${renderAuthFeedback(state.authFeedback)}
             ${canAuthenticate ? renderAuthForm(prefs) : renderSupabaseUnavailable()}
           </aside>
           ${renderFeatureCatalogPanel("What your account saves", "Use the account to keep events, preferences, and exports in one place.")}
@@ -817,27 +945,56 @@
       `;
     }
 
-    function renderAuthForm(prefs) {
+    function renderAuthFeedback(feedback) {
+      const item = feedback || accountAuthFeedback();
       return `
-        <form class="account-auth-form" data-auth-form>
+        <div class="account-auth-feedback" data-account-auth-status="${escapeHtml(item.tone || "idle")}" role="status" aria-live="polite">
+          <div>
+            <span>${escapeHtml((item.tone || "idle").replace(/-/g, " "))}</span>
+            <strong>${escapeHtml(item.title || "Account status")}</strong>
+          </div>
+          <p>${escapeHtml(item.body || "")}</p>
+          ${Array.isArray(item.steps) && item.steps.length ? `
+            <ol>
+              ${item.steps.slice(0, 3).map(step => `<li>${escapeHtml(step)}</li>`).join("")}
+            </ol>
+          ` : ""}
+        </div>
+      `;
+    }
+
+    function renderAuthForm(prefs) {
+      const draft = state.authDraft || {};
+      const isBusy = Boolean(state.busyAction);
+      const displayName = draft.displayName || prefs.displayName;
+      const email = draft.email || "";
+      const buttonLabel = (action, idleLabel, busyLabel) => state.busyAction === action ? busyLabel : idleLabel;
+      const disabled = isBusy ? "disabled aria-disabled=\"true\"" : "";
+      return `
+        <form class="account-auth-form" data-auth-form aria-busy="${isBusy ? "true" : "false"}">
           <label class="account-field">
             <span>Display name</span>
-            <input class="input" name="displayName" value="${escapeHtml(prefs.displayName)}" maxlength="42" autocomplete="name" placeholder="front left">
+            <input class="input" name="displayName" value="${escapeHtml(displayName)}" maxlength="42" autocomplete="name" placeholder="front left" ${disabled}>
           </label>
           <label class="account-field">
             <span>Email</span>
-            <input class="input" name="email" type="email" autocomplete="email" placeholder="Email address">
+            <input class="input" name="email" type="email" autocomplete="email" placeholder="Email address" value="${escapeHtml(email)}" ${disabled}>
           </label>
           <label class="account-field">
             <span>Password</span>
-            <input class="input" name="password" type="password" minlength="8" autocomplete="current-password" placeholder="8+ characters">
+            <input class="input" name="password" type="password" minlength="8" autocomplete="current-password" placeholder="8+ characters" ${disabled}>
           </label>
           <div class="account-action-row">
-            <button class="button primary" type="button" data-account-action="sign-up">Create account</button>
-            <button class="button" type="button" data-account-action="sign-in">Sign in</button>
-            <button class="button" type="button" data-account-action="magic-link">Email link</button>
+            <button class="button primary" type="button" data-account-action="sign-up" ${disabled}>${escapeHtml(buttonLabel("sign-up", "Create account", "Creating..."))}</button>
+            <button class="button" type="button" data-account-action="sign-in" ${disabled}>${escapeHtml(buttonLabel("sign-in", "Sign in", "Signing in..."))}</button>
+            <button class="button" type="button" data-account-action="magic-link" ${disabled}>${escapeHtml(buttonLabel("magic-link", "Email link", "Sending..."))}</button>
           </div>
-          <span class="account-form-note">Supabase handles login. Shanghai Rave Index stores your saved preferences.</span>
+          <div class="account-auth-path" aria-label="Account flow">
+            <span><b>1</b>Create or sign in</span>
+            <span><b>2</b>Confirm email if asked</span>
+            <span><b>3</b>Save preferences</span>
+          </div>
+          <span class="account-form-note">Password is set only during Create account and stays in Supabase Auth. This site stores saved preferences, not passwords.</span>
         </form>
       `;
     }
@@ -874,6 +1031,7 @@
               <b>Sync</b>
               <span>${escapeHtml(state.remoteStatus)}</span>
             </div>
+            ${state.authFeedback && state.authFeedback.tone === "success" ? renderAuthFeedback(state.authFeedback) : ""}
             ${state.error ? `<div class="account-error">${escapeHtml(state.error)}</div>` : ""}
           </aside>
 
@@ -1055,6 +1213,10 @@
         await authAction(action);
       } catch (error) {
         state.error = error.message || "Account action failed";
+        if (["sign-up", "sign-in", "magic-link"].includes(action)) {
+          state.authFeedback = accountAuthFeedback(action, "error", { error: state.error });
+          state.busyAction = "";
+        }
         render();
       }
     }
@@ -1066,8 +1228,13 @@
       const email = String(formData.get("email") || "").trim();
       const password = String(formData.get("password") || "");
       const displayName = String(formData.get("displayName") || "").trim();
+      state.authDraft = { displayName, email };
       if (!email) throw new Error("Email is required");
       if (action !== "magic-link" && password.length < 8) throw new Error("Password must be at least 8 characters");
+
+      state.busyAction = action;
+      state.authFeedback = accountAuthFeedback(action, "pending", { email });
+      render();
 
       if (action === "sign-up") {
         const { data, error } = await state.client.auth.signUp({
@@ -1078,12 +1245,19 @@
         if (error) throw error;
         state.session = data.session || state.session;
         state.preferences = normalizePreferences({ ...state.preferences, displayName: displayName || state.preferences.displayName });
-        state.remoteStatus = data.session ? "Account created" : "Check email to confirm account";
+        if (data.session?.user?.id) {
+          await saveRemotePreferences(state.client, data.session.user.id, state.preferences);
+          state.remoteStatus = "Account created; preferences synced";
+        } else {
+          state.remoteStatus = "Check email to confirm account";
+        }
+        state.authFeedback = accountAuthFeedback(action, "success", { email, hasSession: Boolean(data.session) });
       } else if (action === "sign-in") {
         const { data, error } = await state.client.auth.signInWithPassword({ email, password });
         if (error) throw error;
         state.session = data.session;
         await refreshRemoteState();
+        state.authFeedback = accountAuthFeedback(action, "success", { email, hasSession: Boolean(data.session) });
       } else if (action === "magic-link") {
         const { error } = await state.client.auth.signInWithOtp({
           email,
@@ -1091,8 +1265,10 @@
         });
         if (error) throw error;
         state.remoteStatus = "Magic link sent";
+        state.authFeedback = accountAuthFeedback(action, "success", { email });
       }
       saveLocalPreferences(state.preferences, win);
+      state.busyAction = "";
       render();
     }
 
@@ -1281,6 +1457,8 @@
     personalizedSummary,
     accountAccessState,
     adminAccessState,
+    accountAuthFeedback,
+    accountAuthErrorFeedback,
     accountFeatureCatalog,
     publicAccountGuide,
     enhancePublicAccountGuides,

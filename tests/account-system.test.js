@@ -8,6 +8,8 @@ const {
   personalizedSummary,
   accountAccessState,
   adminAccessState,
+  accountAuthFeedback,
+  accountAuthErrorFeedback,
   accountFeatureCatalog,
   publicAccountGuide,
 } = require("../assets/account-system.js");
@@ -212,6 +214,37 @@ test("adminAccessState only unlocks ops for Supabase admin profiles", () => {
     label: "Admin verified",
     action: "enter",
   });
+});
+
+test("accountAuthFeedback gives explicit next steps for account flows", () => {
+  const ready = accountAuthFeedback();
+  assert.equal(ready.title, "Create account or sign in");
+  assert.ok(ready.steps.includes("Confirm the email if Supabase asks"));
+
+  const pending = accountAuthFeedback("sign-up", "pending", { email: "user@example.com" });
+  assert.equal(pending.title, "Creating account");
+  assert.match(pending.body, /user@example\.com/);
+
+  const confirm = accountAuthFeedback("sign-up", "success", { email: "user@example.com", hasSession: false });
+  assert.equal(confirm.title, "Check your email");
+  assert.ok(confirm.steps.includes("Use Sign in with the password you just set"));
+
+  const signedIn = accountAuthFeedback("sign-in", "success", { email: "user@example.com", hasSession: true });
+  assert.equal(signedIn.title, "Signed in");
+  assert.equal(signedIn.tone, "success");
+});
+
+test("accountAuthErrorFeedback translates common Supabase failures into guidance", () => {
+  const existing = accountAuthErrorFeedback("sign-up", "User already registered");
+  assert.equal(existing.title, "Account already exists");
+  assert.ok(existing.steps.includes("Click Sign in"));
+
+  const unconfirmed = accountAuthErrorFeedback("sign-in", "Email not confirmed");
+  assert.equal(unconfirmed.title, "Confirm email first");
+
+  const badPassword = accountAuthErrorFeedback("sign-up", "Password must be at least 8 characters");
+  assert.equal(badPassword.title, "Password needs attention");
+  assert.ok(badPassword.steps.includes("Use at least 8 characters"));
 });
 
 test("accountFeatureCatalog lists live Supabase features and account expansion paths", () => {

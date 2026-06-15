@@ -17,6 +17,28 @@
     return root.querySelector(`[name="${name}"]`)?.value.trim() || "";
   }
 
+  function adminBootstrapSql() {
+    return [
+      "-- Run after the account has signed in once, so public.profiles exists.",
+      "select *",
+      "from public.set_profile_role_by_email('owner@example.com', 'admin');",
+    ].join("\n");
+  }
+
+  function renderAdminSetup() {
+    return `
+      <div class="ops-admin-setup">
+        <span>First admin setup</span>
+        <ol class="ops-admin-steps">
+          <li>Create the account on account.html with the owner email and an 8+ character password, or use a Supabase magic link. Ops can sign in, but account.html is where the password is first set.</li>
+          <li>Run <code>npm run admin:grant -- owner@example.com</code> from a trusted local shell with <code>SUPABASE_DB_URL</code> or <code>SUPABASE_SERVICE_ROLE_KEY</code> configured.</li>
+          <li>Or run this in the Supabase SQL Editor after the hardening migration is applied:</li>
+        </ol>
+        <pre class="ops-admin-sql"><code>${escapeHtml(adminBootstrapSql())}</code></pre>
+      </div>
+    `;
+  }
+
   function renderGate({ access, error = "", email = "", role = "" }) {
     const eyebrow = access.label;
     const isDenied = access.mode === "denied";
@@ -36,6 +58,7 @@
         : `
             <button class="button primary" type="button" data-ops-admin-action="sign-in">Admin sign in</button>
             <button class="button" type="button" data-ops-admin-action="magic-link">Email link</button>
+            <a class="button" href="account.html">Create account</a>
           `;
 
     return `
@@ -61,7 +84,8 @@
             </label>
           ` : ""}
           <div class="ops-admin-actions">${actions}</div>
-          <p class="ops-admin-note">To grant access, update the signed-in user's row in public.profiles so role = 'admin'.</p>
+          <p class="ops-admin-note">Passwords are owned by Supabase Auth. Ops only checks the signed-in user's public.profiles.role value.</p>
+          ${renderAdminSetup()}
         </form>
       </div>
     `;

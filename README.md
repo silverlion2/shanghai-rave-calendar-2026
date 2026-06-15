@@ -46,6 +46,32 @@ Open `ops.html` over the same local or deployed HTTP server to run the operator 
 
 The console is intentionally static for this version. It does not post directly to WeChat/Xiaohongshu, process payments, or mutate `data/events.json` without an exported file being reviewed and committed.
 
+### Admin access bootstrap
+
+Ops is gated by Supabase Auth plus `public.profiles.role = 'admin'`; it is not a front-end email allowlist.
+
+1. Open `account.html` and create the owner account with the same email you want to use for Ops. Set an 8+ character password in that Create account form; `ops.html` only signs in after the account exists. Use the magic-link flow if you prefer passwordless login.
+2. When you have database SQL access, apply migrations to lock down browser role updates and install the SQL helper:
+
+```bash
+npm run supabase:migrate
+```
+
+3. Grant the account admin from a trusted local shell with either `SUPABASE_DB_URL`, or `NEXT_PUBLIC_SUPABASE_URL` plus `SUPABASE_SERVICE_ROLE_KEY`, configured:
+
+```bash
+npm run admin:grant -- owner@example.com
+```
+
+You can also run this in the Supabase SQL Editor after the account has signed in once:
+
+```sql
+select *
+from public.set_profile_role_by_email('owner@example.com', 'admin');
+```
+
+Passwords stay in Supabase Auth. This project only stores the role gate in `public.profiles`.
+
 ## Event refresh
 
 V1 uses GitHub only:

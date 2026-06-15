@@ -44,6 +44,29 @@ npm run supabase:import
 npm run supabase:configure-client
 ```
 
+## Admin Account
+
+Admin access is two-part:
+
+- Passwords and magic links are handled by Supabase Auth.
+- Ops authorization is handled by `public.profiles.role`.
+
+Create or sign in once with the owner email on `account.html` so the `handle_new_user` trigger creates `public.profiles`. The password is set in that account form and must be at least 8 characters. Apply migrations when you have database SQL access, then grant the profile from a trusted local shell with either `SUPABASE_DB_URL`, or `NEXT_PUBLIC_SUPABASE_URL` plus `SUPABASE_SERVICE_ROLE_KEY`, configured:
+
+```bash
+npm run supabase:migrate
+npm run admin:grant -- owner@example.com
+```
+
+If you are already in the Supabase SQL Editor, run:
+
+```sql
+select *
+from public.set_profile_role_by_email('owner@example.com', 'admin');
+```
+
+The role-hardening migration grants browser clients only profile select plus self `display_name` updates. Do not add service-role keys or owner email allowlists to browser code.
+
 ## Poster Archive Upload
 
 After adding or replacing local poster files, run:

@@ -795,6 +795,44 @@
       line-height: 1.4;
     }
 
+    .ops-admin-setup {
+      display: grid;
+      gap: 8px;
+      border: 1px dashed rgba(255, 209, 102, .38);
+      background: rgba(255, 209, 102, .05);
+      padding: 10px;
+    }
+
+    .ops-admin-steps {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .ops-admin-steps li + li {
+      margin-top: 5px;
+    }
+
+    .ops-admin-steps code,
+    .ops-admin-sql {
+      font-family: "Cascadia Code", Consolas, monospace;
+    }
+
+    .ops-admin-sql {
+      margin: 0;
+      overflow: auto;
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 6px;
+      background: rgba(0,0,0,.28);
+      color: var(--ink);
+      padding: 10px;
+      font-size: 12px;
+      line-height: 1.45;
+      white-space: pre-wrap;
+    }
+
     @media (max-width: 1220px) {
       .workflow {
         grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
@@ -899,7 +937,7 @@
         <div class="ops-admin-form">
           <span>Checking access</span>
           <h2>Verifying admin role</h2>
-          <p class="ops-admin-note">The console stays hidden until Supabase Auth and profiles.role both pass.</p>
+          <p class="ops-admin-note">Create the account on account.html with an 8+ character password, then grant admin locally with <code>npm run admin:grant -- owner@example.com</code>.</p>
         </div>
       </div>
     </section>
