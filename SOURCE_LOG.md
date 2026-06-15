@@ -667,3 +667,48 @@ Validation:
 - `node scripts/check.js`: passed, 3460 local links across 122 HTML/CSS files.
 - `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json`: 0 must-fix, 0 should-fix.
 - `npm run check`: passed with 70 tests.
+
+## 2026-06-16 User-Provided Yuyintang / ShowStart Evidence
+
+The user supplied Yuyintang screenshots for Cooling Water and Lucrecia Dalt. Treat the screenshots as manually confirmed evidence only for visible facts, and use public ShowStart / LocalHub pages as the current event-level HTTP sources. Do not infer missing age policy or running order from QR/ticket screenshots.
+
+Assets copied and optimized under `assets/posters/`:
+
+- `yuyintang-cooling-water-2026-07-03.jpg`
+- `yuyintang-cooling-water-2026-07-03-optimized.jpg`
+- `yuyintang-cooling-water-wechat-article.jpg`
+- `yuyintang-cooling-water-wechat-article-optimized.jpg`
+- `lucrecia-dalt-yuyintang-2026-07-16.jpg`
+- `lucrecia-dalt-yuyintang-2026-07-16-optimized.jpg`
+- `lucrecia-dalt-yuyintang-wechat-profile.jpg`
+- `lucrecia-dalt-yuyintang-wechat-profile-optimized.jpg`
+- `lucrecia-dalt-yuyintang-ticket-info.jpg`
+- `lucrecia-dalt-yuyintang-ticket-info-optimized.jpg`
+
+Canonical updates:
+
+- Added `yuyintang-cooling-water` for Jul 3 at Yuyintang Music Park B Hall, 20:00-23:00, with Handycam / ABYSM / Tuihua Lichang / Wu Xiaotian Erin, 98 / 128 / 158 RMB, and ShowStart ticket source `https://www.showstart.com/event/300239`.
+- Added `lucrecia-dalt-yuyintang` for Jul 16 at Yuyintang Music Park C Hall, 20:30-22:00, with Lucrecia Dalt, 180 / 220 RMB, and ShowStart ticket source `https://www.showstart.com/event/300583`.
+- Added LocalHub venue-index corroboration for Yuyintang B Hall and C Hall; keep ShowStart as the direct ticketing source.
+- Recommendation copy focuses on why to go: Cooling Water is a live/listening-first experimental bill, while Lucrecia Dalt is a high-signal experimental-electronic listening-room booking rather than a peak-time rave pick.
+
+DJ profile updates:
+
+- Added screenshot/event-role profiles for `Handycam`, `ABYSM`, `Tuihua Lichang`, and `Wu Xiaotian Erin` with conservative source notes.
+- Added `Lucrecia Dalt` with ShowStart event evidence plus artist/label context from the official site and RVNG Intl catalog, without using those profile sources as event confirmation.
+
+Open gaps:
+
+- Age policy was not visible for either event.
+- Final running order, support details, and set times beyond public event windows were not visible.
+- One Cooling Water WeChat article/ticket screenshot contains a lower ticket-block conflict (`10.28 SAT`); ShowStart and the clean Yuyintang poster remain the current date/time sources for the Jul 3 event.
+- RA Bloom direct HTTP fetch returned 403 during the same freshness pass; source state was refreshed from public indexed RA text and recorded as browser/index verification rather than direct scripted fetch.
+
+Validation:
+
+- `node scripts/scrape-events.js` with `SCRAPE_MAX_DETAIL_PAGES=0`: 101 events, 81 curated updates.
+- `npm run posters:prepare`: 65 poster records generated, including the five Yuyintang evidence/display assets.
+- `node scripts/generate-seo-pages.js`: generated 101 event detail pages and `sitemap.xml`.
+- `node scripts/check.js`: passed, 3525 local links across 124 HTML/CSS files and 27 inline scripts.
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json`: 0 must-fix, 0 should-fix.
+- `npm run check`: passed with 71 tests.

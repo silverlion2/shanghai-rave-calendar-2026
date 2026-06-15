@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T13:43:31.986Z",
+  "generatedAt": "2026-06-15T17:00:08.734Z",
   "sourceData": "data/events.json",
   "storagePolicy": {
     "mode": "static-json-plus-local-optimized-assets",
@@ -7,16 +7,16 @@
     "rule": "Use optimized display assets in the wall; keep raw poster files out of the default browsing path when the archive grows."
   },
   "stats": {
-    "posters": 63,
+    "posters": 65,
     "years": [
       2026
     ],
-    "venues": 29,
-    "optimizedCount": 63,
-    "displayBytes": 11240428,
-    "sourceBytes": 36680304,
-    "displayMegabytes": 10.72,
-    "sourceMegabytes": 34.98,
+    "venues": 31,
+    "optimizedCount": 65,
+    "displayBytes": 11626600,
+    "sourceBytes": 37163949,
+    "displayMegabytes": 11.09,
+    "sourceMegabytes": 35.44,
     "freeTierSoftCapBytes": 83886080,
     "freeTierSoftCapMegabytes": 80
   },
@@ -65,6 +65,53 @@
       "notes": "RA lists a far-dated September Shanghai TBA entry for Shaun Soomro and DJ Serang. Keep it for complete RA coverage and as a future watch/context item until venue, ticket route, age policy, and current update state are confirmed."
     },
     {
+      "id": "shanghai-2026-lucrecia-dalt-yuyintang",
+      "eventId": "lucrecia-dalt-yuyintang",
+      "title": "Lucrecia Dalt 2026 China Tour",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jul 16",
+      "sortDate": "2026-07-16",
+      "time": "20:30-22:00",
+      "venue": "Yuyintang Music Park C Hall",
+      "district": "Changning",
+      "sound": "experimental electronic, art pop, ambient, avant-garde",
+      "tags": [
+        "upcoming",
+        "medium",
+        "changning",
+        "experimental",
+        "listening",
+        "dark",
+        "experimental electronic",
+        "art pop",
+        "ambient",
+        "avant-garde"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "ShowStart listing + Yuyintang/SO.READY WeChat screenshots",
+        "url": "https://www.showstart.com/event/300583",
+        "posterEvidenceUrl": "assets/posters/lucrecia-dalt-yuyintang-2026-07-16.jpg",
+        "posterEvidenceSource": "User-provided Lucrecia Dalt China tour poster and Yuyintang ticket-info screenshots, cross-checked against the public ShowStart event page.",
+        "posterEvidenceStatus": "Tour poster names the Shanghai date and YuYintown Cube. ShowStart confirms 2026-07-16 20:30-22:00 at Yuyintang Music Park C Hall, address, Lucrecia Dalt, and 180/220 RMB ticket tiers. The WeChat ticket-info screenshot confirms Shanghai C Hall and ShowStart QR route but does not expose price/time in the visible crop."
+      },
+      "image": {
+        "thumbnail": "assets/posters/lucrecia-dalt-yuyintang-2026-07-16-optimized.jpg",
+        "display": "assets/posters/lucrecia-dalt-yuyintang-2026-07-16-optimized.jpg",
+        "sourceAsset": "assets/posters/lucrecia-dalt-yuyintang-2026-07-16.jpg",
+        "displayBytes": 131585,
+        "sourceBytes": 154259,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/lucrecia-dalt-yuyintang.html",
+      "notes": "SO.READY presents Lucrecia Dalt's first China tour Shanghai stop at Yuyintang Music Park C Hall. ShowStart confirms the July 16 20:30-22:00 timing, C Hall venue, address, artist, and 180/220 RMB ticket tiers; user-provided WeChat screenshots add the tour poster and Yuyintang ticket-info card."
+    },
+    {
       "id": "shanghai-2026-misa-shanghai-summer-music-festival-2026",
       "eventId": "misa-shanghai-summer-music-festival-2026",
       "title": "2026 Shanghai Summer Music Festival (MISA)",
@@ -108,6 +155,53 @@
       },
       "eventUrl": "events/misa-shanghai-summer-music-festival-2026.html",
       "notes": "Shanghai city culture and official travel sources list the 2026 MISA season from Jul 5 to Jul 20 with 33 live performances plus online MISA. Keep as Watch: source confidence is now stronger, but the fit is culture-night/listening-first rather than rave, and ticket availability still belongs to individual program pages."
+    },
+    {
+      "id": "shanghai-2026-yuyintang-cooling-water",
+      "eventId": "yuyintang-cooling-water",
+      "title": "Cooling Water",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jul 3",
+      "sortDate": "2026-07-03",
+      "time": "20:00-23:00",
+      "venue": "Yuyintang Music Park B Hall",
+      "district": "Changning",
+      "sound": "dark wave, trip-hop, experimental rock, jazz/R&B crossover",
+      "tags": [
+        "upcoming",
+        "medium",
+        "changning",
+        "experimental",
+        "dark",
+        "listening",
+        "dark wave",
+        "trip-hop",
+        "experimental rock",
+        "jazz/r&b crossover"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "ShowStart listing + Yuyintang WeChat screenshots",
+        "url": "https://www.showstart.com/event/300239",
+        "posterEvidenceUrl": "assets/posters/yuyintang-cooling-water-2026-07-03.jpg",
+        "posterEvidenceSource": "User-provided Yuyintang poster and official-account article screenshots, cross-checked against the public ShowStart event page.",
+        "posterEvidenceStatus": "Clean poster confirms Cooling Water, date, venue, address, artists, and ticket tiers. ShowStart confirms 2026-07-03 20:00-23:00, Yuyintang Music Park B Hall, lineup, address, ticket tiers, and no-refund purchase language. The article screenshot contains a visible 10.28 SAT ticket-block date conflict, so ShowStart and the clean poster are treated as the current practical sources."
+      },
+      "image": {
+        "thumbnail": "assets/posters/yuyintang-cooling-water-2026-07-03-optimized.jpg",
+        "display": "assets/posters/yuyintang-cooling-water-2026-07-03-optimized.jpg",
+        "sourceAsset": "assets/posters/yuyintang-cooling-water-2026-07-03.jpg",
+        "displayBytes": 254587,
+        "sourceBytes": 329386,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/yuyintang-cooling-water.html",
+      "notes": "Yuyintang B Hall live-electronic / experimental bill with Handycam, ABYSM, Tuihua Lichang, and Wu Xiaotian Erin. ShowStart confirms the July 3 20:00-23:00 timing, B Hall venue, address, lineup, and 98/128/158 RMB ticket tiers; the Yuyintang WeChat screenshots add the event poster and Chinese sound notes."
     },
     {
       "id": "shanghai-2026-shanghai-mushroom-music-carnival-2026",

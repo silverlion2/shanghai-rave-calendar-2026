@@ -4141,6 +4141,271 @@
           "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
         }
       ]
+    },
+    {
+      "slug": "handycam",
+      "name": "Handycam",
+      "aliases": [
+        "Handycam",
+        "handycam"
+      ],
+      "trackedAt": "2026-06-16",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-07-03",
+          "eventId": "yuyintang-cooling-water",
+          "eventTitle": "Cooling Water",
+          "venue": "Yuyintang Music Park B Hall",
+          "city": "Shanghai",
+          "status": "confirmed-by-showstart-and-yuyintang-screenshot"
+        }
+      ],
+      "scope": "Cooling Water / Yuyintang event-role profile",
+      "imageTheme": "cyan",
+      "genres": [
+        "experimental art rock",
+        "live band context",
+        "Yuyintang lineup"
+      ],
+      "summary": "Handycam is preserved for the Cooling Water bill at Yuyintang on 2026-07-03. ShowStart confirms the booking, and Yuyintang article text frames the sound as granular experimental art rock; broader biography was not independently verified in this pass.",
+      "sourceNote": "Use this as a screenshot- and ShowStart-backed event-role profile. Keep claims limited to the Cooling Water appearance and the sound description visible in Yuyintang's article screenshot/public ShowStart text.",
+      "sources": [
+        {
+          "label": "ShowStart Cooling Water listing",
+          "url": "https://www.showstart.com/event/300239",
+          "status": "event-ticketing-source",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "ShowStart Handycam artist page",
+          "url": "https://www.showstart.com/artist/25266497",
+          "status": "artist-page-context",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "Yuyintang Cooling Water article/ticket screenshot",
+          "url": "assets/posters/yuyintang-cooling-water-wechat-article.jpg",
+          "status": "artist-profile-screenshot",
+          "checked": "2026-06-16"
+        }
+      ]
+    },
+    {
+      "slug": "abysm",
+      "name": "ABYSM",
+      "aliases": [
+        "ABYSM"
+      ],
+      "trackedAt": "2026-06-16",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-07-03",
+          "eventId": "yuyintang-cooling-water",
+          "eventTitle": "Cooling Water",
+          "venue": "Yuyintang Music Park B Hall",
+          "city": "Shanghai",
+          "status": "confirmed-by-showstart-and-yuyintang-screenshot"
+        }
+      ],
+      "scope": "Cooling Water / Yuyintang dark electronic profile",
+      "imageTheme": "slate",
+      "genres": [
+        "dark wave",
+        "trip-hop",
+        "synth",
+        "live electronic"
+      ],
+      "summary": "ABYSM is preserved for the Cooling Water bill at Yuyintang on 2026-07-03. ShowStart confirms the booking, and Yuyintang article text describes a three-synth Dark Wave / Trip-Hop approach; broader biography was not independently verified in this pass.",
+      "sourceNote": "Use this as a ShowStart- and Yuyintang-screenshot-backed event-role profile. Do not expand into biography or label claims without a standalone artist source.",
+      "sources": [
+        {
+          "label": "ShowStart Cooling Water listing",
+          "url": "https://www.showstart.com/event/300239",
+          "status": "event-ticketing-source",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "ShowStart ABYSM artist page",
+          "url": "https://www.showstart.com/artist/23303497",
+          "status": "artist-page-context",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "Yuyintang Cooling Water article/ticket screenshot",
+          "url": "assets/posters/yuyintang-cooling-water-wechat-article.jpg",
+          "status": "artist-profile-screenshot",
+          "checked": "2026-06-16"
+        }
+      ]
+    },
+    {
+      "slug": "tuihua-lichang",
+      "name": "Tuihua Lichang",
+      "aliases": [
+        "退化立场",
+        "Tuihua Lichang"
+      ],
+      "trackedAt": "2026-06-16",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-07-03",
+          "eventId": "yuyintang-cooling-water",
+          "eventTitle": "Cooling Water",
+          "venue": "Yuyintang Music Park B Hall",
+          "city": "Shanghai",
+          "status": "confirmed-by-showstart-and-yuyintang-screenshot"
+        }
+      ],
+      "scope": "Cooling Water / Yuyintang instrumental-rock profile",
+      "imageTheme": "cyan",
+      "genres": [
+        "instrumental rock",
+        "experimental rock",
+        "live band context"
+      ],
+      "summary": "Tuihua Lichang / 退化立场 is preserved for the Cooling Water bill at Yuyintang on 2026-07-03. ShowStart confirms the booking, and Yuyintang article text frames the act around instrumental rock and spatial deconstruction.",
+      "sourceNote": "Use this as a ShowStart- and Yuyintang-screenshot-backed event-role profile. Broader discography and biography were not verified in this pass.",
+      "sources": [
+        {
+          "label": "ShowStart Cooling Water listing",
+          "url": "https://www.showstart.com/event/300239",
+          "status": "event-ticketing-source",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "ShowStart Tuihua Lichang artist page",
+          "url": "https://www.showstart.com/artist/11124791",
+          "status": "artist-page-context",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "Yuyintang Cooling Water article/ticket screenshot",
+          "url": "assets/posters/yuyintang-cooling-water-wechat-article.jpg",
+          "status": "artist-profile-screenshot",
+          "checked": "2026-06-16"
+        }
+      ]
+    },
+    {
+      "slug": "wu-xiaotian-erin",
+      "name": "Wu Xiaotian Erin",
+      "aliases": [
+        "吴晓天Erin",
+        "Erin",
+        "Wu Xiaotian Erin"
+      ],
+      "trackedAt": "2026-06-16",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-07-03",
+          "eventId": "yuyintang-cooling-water",
+          "eventTitle": "Cooling Water",
+          "venue": "Yuyintang Music Park B Hall",
+          "city": "Shanghai",
+          "status": "confirmed-by-showstart-and-yuyintang-screenshot"
+        }
+      ],
+      "scope": "Cooling Water / Yuyintang jazz-R&B-pop profile",
+      "imageTheme": "gold",
+      "genres": [
+        "jazz",
+        "R&B",
+        "pop",
+        "songwriter context"
+      ],
+      "summary": "Wu Xiaotian Erin / 吴晓天Erin is preserved for the Cooling Water bill at Yuyintang on 2026-07-03. ShowStart confirms the booking, and Yuyintang article text frames Erin as a Berklee songwriter crossing Jazz, R&B, and Pop.",
+      "sourceNote": "Use this as a ShowStart- and Yuyintang-screenshot-backed event-role profile. The Berklee/songwriter claim comes from the event article text; broader biography was not independently verified in this pass.",
+      "sources": [
+        {
+          "label": "ShowStart Cooling Water listing",
+          "url": "https://www.showstart.com/event/300239",
+          "status": "event-ticketing-source",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "ShowStart Wu Xiaotian Erin artist page",
+          "url": "https://www.showstart.com/artist/17407221",
+          "status": "artist-page-context",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "Yuyintang Cooling Water article/ticket screenshot",
+          "url": "assets/posters/yuyintang-cooling-water-wechat-article.jpg",
+          "status": "artist-profile-screenshot",
+          "checked": "2026-06-16"
+        }
+      ]
+    },
+    {
+      "slug": "lucrecia-dalt",
+      "name": "Lucrecia Dalt",
+      "aliases": [
+        "Lucrecia Dalt"
+      ],
+      "trackedAt": "2026-06-16",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-07-16",
+          "eventId": "lucrecia-dalt-yuyintang",
+          "eventTitle": "Lucrecia Dalt 2026 China Tour",
+          "venue": "Yuyintang Music Park C Hall",
+          "city": "Shanghai",
+          "status": "confirmed-by-showstart-and-yuyintang-screenshot"
+        }
+      ],
+      "scope": "Lucrecia Dalt Shanghai / experimental electronic artist profile",
+      "imageTheme": "slate",
+      "genres": [
+        "experimental electronic",
+        "art pop",
+        "ambient",
+        "avant-garde"
+      ],
+      "summary": "Lucrecia Dalt is tracked here for the SO.READY / Yuyintang Shanghai stop on 2026-07-16. The event source frames the booking as Colombian dark-wave / experimental electronic, and public artist/label context supports treating this as a listening-room experimental-electronic pick rather than a dance-floor rave listing.",
+      "sourceNote": "ShowStart and Yuyintang/SO.READY screenshots confirm the Shanghai event. Artist/label links are profile context only and should not be used as proof of event timing or ticket state.",
+      "sources": [
+        {
+          "label": "ShowStart Lucrecia Dalt Shanghai listing",
+          "url": "https://www.showstart.com/event/300583",
+          "status": "event-ticketing-source",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "ShowStart Lucrecia Dalt artist page",
+          "url": "https://www.showstart.com/artist/26989305",
+          "status": "artist-page-context",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "Lucrecia Dalt official website",
+          "url": "https://lucreciadalt.com/",
+          "status": "artist-profile-context",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "RVNG Intl artist/catalog context",
+          "url": "https://rvng.bandcamp.com/music",
+          "status": "label-context",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "Lucrecia Dalt China tour poster screenshot",
+          "url": "assets/posters/lucrecia-dalt-yuyintang-2026-07-16.jpg",
+          "status": "official-poster-screenshot",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "Yuyintang Lucrecia Dalt ticket-info screenshot",
+          "url": "assets/posters/lucrecia-dalt-yuyintang-ticket-info.jpg",
+          "status": "official-wechat-ticket-info-screenshot",
+          "checked": "2026-06-16"
+        }
+      ]
     }
   ]
 }

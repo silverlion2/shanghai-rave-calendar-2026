@@ -515,6 +515,116 @@ input:focus {
   box-shadow: 0 0 0 2px rgba(53, 200, 230, .2) !important;
 }
 
+.venue-filter-field,
+.month-select-field {
+  position: relative;
+}
+
+.month-select-field {
+  max-width: 320px;
+  margin: 0 0 22px;
+}
+
+.multi-select {
+  position: relative;
+  min-width: 0;
+}
+
+.multi-select-toggle {
+  width: 100%;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.multi-select-toggle::after {
+  content: "v";
+  color: var(--cyan);
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.multi-select.open .multi-select-toggle::after {
+  content: "^";
+}
+
+.multi-select-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  z-index: 40;
+  width: min(360px, calc(100vw - 44px));
+  max-height: 320px;
+  display: none;
+  overflow: auto;
+  border: 1px solid rgba(244, 240, 231, .2);
+  background: #080908;
+  box-shadow: var(--shadow);
+  padding: 8px;
+}
+
+.multi-select.open .multi-select-menu {
+  display: grid;
+  gap: 4px;
+}
+
+.multi-select-clear,
+.multi-select-option {
+  min-height: 36px;
+  display: grid;
+  align-items: center;
+  border: 1px solid rgba(244, 240, 231, .12);
+  color: var(--muted);
+  background: rgba(244, 240, 231, .025);
+  padding: 8px 9px;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.multi-select-clear {
+  width: 100%;
+  cursor: pointer;
+  color: var(--cyan);
+  font-family: var(--font-display);
+  font-weight: 900;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.multi-select-option {
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.multi-select-option.other-option {
+  border-color: rgba(215, 169, 40, .34);
+}
+
+.multi-select-option input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--cyan);
+}
+
+.multi-select-option span {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--paper) !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-transform: none !important;
+}
+
+.multi-select-option b {
+  color: var(--dim);
+  font-size: 11px;
+}
+
 .month-rail {
   border: 1px solid rgba(244, 240, 231, .18);
   background: rgba(5, 6, 5, .72);
@@ -556,8 +666,16 @@ input:focus {
   background: rgba(5, 6, 5, .68);
 }
 
+.calendar-week-grid {
+  grid-template-columns: minmax(150px, 220px) repeat(var(--calendar-columns, 7), minmax(116px, 1fr)) !important;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+}
+
 .calendar-day-name,
-.calendar-day {
+.calendar-day,
+.calendar-venue-heading,
+.calendar-venue-label {
   border-radius: 0 !important;
 }
 
@@ -567,6 +685,59 @@ input:focus {
   color: var(--muted) !important;
   font-family: var(--font-display);
   font-size: 14px !important;
+}
+
+.calendar-day-name b {
+  display: block;
+  margin-top: 2px;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.calendar-venue-heading,
+.calendar-venue-label {
+  min-width: 0;
+  border: 1px solid rgba(244, 240, 231, .14);
+  background: rgba(9, 11, 10, .78);
+  padding: 8px;
+}
+
+.calendar-venue-heading {
+  color: var(--muted);
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.calendar-venue-label {
+  display: grid;
+  align-content: start;
+  gap: 5px;
+}
+
+.calendar-venue-label b,
+.calendar-venue-label small {
+  display: block;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.calendar-venue-label b {
+  color: var(--cyan);
+  font-family: var(--font-display);
+  font-size: 17px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.calendar-venue-label small {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.25;
 }
 
 .calendar-day {
@@ -1691,7 +1862,7 @@ body:has(.dispatch-shell)::before {
   }
 
   .calendar-shell .filter-field:first-of-type,
-  .calendar-shell .controls .filter-field:nth-of-type(4) {
+  .calendar-shell .venue-filter-field {
     grid-column: 1 / -1;
   }
 
@@ -1720,6 +1891,11 @@ body:has(.dispatch-shell)::before {
   .calendar-shell .month-button {
     min-height: 40px !important;
     font-size: 17px !important;
+  }
+
+  .calendar-shell .month-select-field {
+    max-width: none;
+    margin-bottom: 16px;
   }
 }
 
@@ -2419,8 +2595,8 @@ body:has(.calendar-shell) .signal-canvas {
   .calendar-shell .controls {
     position: static;
     display: grid;
-    grid-template-columns: minmax(260px, 1fr) minmax(170px, 220px) minmax(170px, 220px);
-    gap: 18px;
+    grid-template-columns: minmax(180px, 1fr) minmax(130px, 160px) minmax(120px, 150px) minmax(130px, 160px) minmax(180px, 220px);
+    gap: 10px;
     margin: 0;
     padding: 0;
     border: 0 !important;
@@ -2438,10 +2614,6 @@ body:has(.calendar-shell) .signal-canvas {
     display: none;
   }
 
-  .calendar-shell .controls .filter-field:nth-of-type(4) {
-    display: none;
-  }
-
   .calendar-shell .search,
   .calendar-shell .select {
     min-height: 46px;
@@ -2455,6 +2627,11 @@ body:has(.calendar-shell) .signal-canvas {
     align-self: start;
     margin: 0;
     border-color: rgba(229, 222, 209, .22);
+  }
+
+  .calendar-shell .month-select-field {
+    max-width: 260px;
+    margin: 0;
   }
 
   .calendar-shell .month-button {

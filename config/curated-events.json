@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-15",
+  "updatedAt": "2026-06-16",
   "timezone": "Asia/Shanghai",
   "collectionMethod": "Resident Advisor is treated as the highest-priority public nightlife source for Shanghai electronic event facts. RA HTTP/headless access can trigger anti-bot challenges, so canonical RA rows are based on visible/indexed RA city-listing and event-detail verification with source URLs preserved.",
   "events": [
@@ -2848,7 +2848,7 @@
       "organizer": "Illsee",
       "detailsUrl": "https://ra.co/events/2456798",
       "ticketUrl": "https://ra.co/events/2456798",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-16",
       "lineup": [
         {
           "name": "Kaleidojazzlegs",
@@ -2881,13 +2881,14 @@
       "recommendationReason": "Included for complete RA coverage and EXIT context; this is dance-culture programming, not a hard-techno pick.",
       "bestFor": "Readers following local dance battles, club-adjacent culture, and EXIT programming outside strict rave lanes.",
       "verifyBeforeGoing": "Confirm ticket availability, final running order, and door policy through RA before going.",
-      "sourceConfidence": "RA coverage: event facts, lineup roles, cost, and flyer are visible on Resident Advisor; door policy still needs same-day verification. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
+      "sourceConfidence": "RA coverage: event facts, lineup roles, cost, and flyer are visible through Resident Advisor indexed event text; direct HTTP fetch returned 403 on 2026-06-16, so use indexed RA text / browser-style verification rather than scripted fetch. Door policy still needs same-day verification. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
       "sources": [
         {
           "label": "Resident Advisor",
           "url": "https://ra.co/events/2456798",
           "status": "trusted-ra",
-          "lastChecked": "2026-06-14"
+          "lastChecked": "2026-06-16",
+          "verificationNote": "2026-06-16 public search-index text for the RA event page confirmed title, EXIT venue/address, Wed Jun 17 2026 22:00-03:00, lineup roles, house/hip-hop tags, Illsee event admin, cost 150, and flyer visibility. Direct scripted HTTP fetch returned 403, so treat this as indexed RA text verification."
         }
       ],
       "posterUrl": "assets/posters/bloom-season-1-grand-final.png",
@@ -5644,6 +5645,239 @@
         "poster confirmed",
         "ticket screenshot",
         "late room"
+      ]
+    },
+    {
+      "id": "yuyintang-cooling-water",
+      "month": "Jul",
+      "sortDate": "2026-07-03",
+      "date": "Jul 3",
+      "time": "20:00-23:00",
+      "title": "Cooling Water",
+      "venue": "Yuyintang Music Park B Hall",
+      "district": "Changning",
+      "vibe": [
+        "experimental",
+        "dark",
+        "listening"
+      ],
+      "genre": "dark wave, trip-hop, experimental rock, jazz/R&B crossover",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "98 / 128 / 158 RMB",
+      "age": "Check venue",
+      "ticketUrl": "https://www.showstart.com/event/300239",
+      "source": "https://www.showstart.com/event/300239",
+      "sourceLabel": "ShowStart listing + Yuyintang WeChat screenshots",
+      "imageTheme": "cyan",
+      "description": "Yuyintang B Hall live-electronic / experimental bill with Handycam, ABYSM, Tuihua Lichang, and Wu Xiaotian Erin. ShowStart confirms the July 3 20:00-23:00 timing, B Hall venue, address, lineup, and 98/128/158 RMB ticket tiers; the Yuyintang WeChat screenshots add the event poster and Chinese sound notes.",
+      "kind": "event",
+      "sourceStatus": "showstart-plus-wechat-screenshots",
+      "address": "B1/F, No. 658 Zhaohua Road, Changning District, Shanghai",
+      "organizer": "Yuyintang",
+      "lastChecked": "2026-06-16",
+      "posterUrl": "assets/posters/yuyintang-cooling-water-2026-07-03.jpg",
+      "posterEvidence": {
+        "type": "official-poster-screenshot",
+        "source": "User-provided Yuyintang poster and official-account article screenshots, cross-checked against the public ShowStart event page.",
+        "url": "assets/posters/yuyintang-cooling-water-2026-07-03.jpg",
+        "status": "Clean poster confirms Cooling Water, date, venue, address, artists, and ticket tiers. ShowStart confirms 2026-07-03 20:00-23:00, Yuyintang Music Park B Hall, lineup, address, ticket tiers, and no-refund purchase language. The article screenshot contains a visible 10.28 SAT ticket-block date conflict, so ShowStart and the clean poster are treated as the current practical sources.",
+        "localFiles": [
+          "assets/posters/yuyintang-cooling-water-2026-07-03.jpg",
+          "assets/posters/yuyintang-cooling-water-wechat-article.jpg"
+        ]
+      },
+      "ticketStatus": "ShowStart lists Cooling Water on 2026-07-03 from 20:00 to 23:00 at Yuyintang Music Park B Hall with 98 RMB presale, 128 RMB full-price, and 158 RMB pair tickets, and says sold tickets are non-refundable except for force-majeure cancellation/postponement. Age policy was not visible; verify venue policy before going.",
+      "lineup": [
+        {
+          "name": "Handycam",
+          "note": "ShowStart lists Handycam on the event page; Yuyintang article text frames the act as experimental art rock with a granular edge."
+        },
+        {
+          "name": "ABYSM",
+          "note": "ShowStart lists ABYSM on the event page; Yuyintang article text describes a three-synth Dark Wave / Trip-Hop direction."
+        },
+        {
+          "name": "Tuihua Lichang",
+          "aliases": [
+            "退化立场"
+          ],
+          "note": "ShowStart lists 退化立场 on the event page; Yuyintang article text describes pure instrumental rock used to deconstruct the room."
+        },
+        {
+          "name": "Wu Xiaotian Erin",
+          "aliases": [
+            "吴晓天Erin",
+            "Erin"
+          ],
+          "note": "ShowStart lists 吴晓天Erin on the event page; Yuyintang article text frames Erin as a Berklee songwriter working across Jazz/R&B/Pop."
+        }
+      ],
+      "sources": [
+        {
+          "label": "ShowStart Cooling Water listing",
+          "url": "https://www.showstart.com/event/300239",
+          "status": "event-ticketing-source",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "Public ShowStart page confirms title, 2026-07-03 20:00-23:00, Yuyintang Music Park B Hall, address, lineup, ticket tiers, and no-refund language. Age policy was not visible."
+        },
+        {
+          "label": "LocalHub Yuyintang B Hall listing",
+          "url": "https://localhub.to/shanghai/venue/yuyintown-basement?lang=zh",
+          "status": "event-index-source",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "LocalHub venue page exposes schema.org event data linking Cooling Water to ShowStart event 300239 with 98 RMB starting price and Yuyintang B Hall venue. ShowStart remains the direct ticketing source."
+        },
+        {
+          "label": "Yuyintang Cooling Water clean poster screenshot",
+          "url": "assets/posters/yuyintang-cooling-water-2026-07-03.jpg",
+          "status": "official-poster-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided clean poster names Cooling Water, 2026-07-03 Friday 20:00, Yuyintang B Hall address, ticket tiers, and the four-artist bill."
+        },
+        {
+          "label": "Yuyintang Cooling Water article/ticket screenshot",
+          "url": "assets/posters/yuyintang-cooling-water-wechat-article.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided official-account screenshot supplies sound descriptions for 退化立场, handycam, ABYSM, and 吴晓天Erin. Its lower ticket block shows a conflicting 10.28 SAT date, so it is context rather than the date source."
+        }
+      ],
+      "recommendationReason": "Recommended for readers who want a live, listening-first night rather than a straight club bill: ABYSM brings dark-wave/trip-hop synth pressure, Handycam and Tuihua Lichang add experimental/art-rock structure, and Erin pushes the bill toward jazz/R&B/pop crossover instead of one-lane techno.",
+      "bestFor": "Best for experimental-live listeners, dark-wave/trip-hop fans, and people who want a seated or close-listening route at Yuyintang before the weekend shifts into heavier club rooms.",
+      "verifyBeforeGoing": "Use the ShowStart page to confirm live inventory and final ticket tier; age policy and any detailed running order were not visible in public sources. Ignore the 10.28 SAT date shown in the lower block of one WeChat screenshot unless Yuyintang republishes a corrected ticket notice.",
+      "sourceConfidence": "Medium-confidence current event: ShowStart confirms the practical core fields and the user-provided Yuyintang screenshots add poster and sound context. Age policy and detailed running order remain unresolved; one WeChat article/ticket screenshot includes a conflicting lower ticket-block date.",
+      "soundTags": [
+        "dark-wave",
+        "trip-hop",
+        "experimental-rock",
+        "live-electronic",
+        "jazz-rnb"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "lineup visible",
+        "poster confirmed",
+        "ticketing source",
+        "listening room"
+      ]
+    },
+    {
+      "id": "lucrecia-dalt-yuyintang",
+      "month": "Jul",
+      "sortDate": "2026-07-16",
+      "date": "Jul 16",
+      "time": "20:30-22:00",
+      "title": "Lucrecia Dalt 2026 China Tour",
+      "venue": "Yuyintang Music Park C Hall",
+      "district": "Changning",
+      "vibe": [
+        "experimental",
+        "listening",
+        "dark"
+      ],
+      "genre": "experimental electronic, art pop, ambient, avant-garde",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "180 / 220 RMB",
+      "age": "Check venue",
+      "ticketUrl": "https://www.showstart.com/event/300583",
+      "source": "https://www.showstart.com/event/300583",
+      "sourceLabel": "ShowStart listing + Yuyintang/SO.READY WeChat screenshots",
+      "imageTheme": "slate",
+      "description": "SO.READY presents Lucrecia Dalt's first China tour Shanghai stop at Yuyintang Music Park C Hall. ShowStart confirms the July 16 20:30-22:00 timing, C Hall venue, address, artist, and 180/220 RMB ticket tiers; user-provided WeChat screenshots add the tour poster and Yuyintang ticket-info card.",
+      "kind": "event",
+      "sourceStatus": "showstart-plus-wechat-screenshots",
+      "address": "B1/F, Building D, C.PARK, No. 658 Zhaohua Road, Changning District, Shanghai",
+      "organizer": "SO.READY / Yuyintang",
+      "lastChecked": "2026-06-16",
+      "posterUrl": "assets/posters/lucrecia-dalt-yuyintang-2026-07-16.jpg",
+      "posterEvidence": {
+        "type": "official-poster-screenshot",
+        "source": "User-provided Lucrecia Dalt China tour poster and Yuyintang ticket-info screenshots, cross-checked against the public ShowStart event page.",
+        "url": "assets/posters/lucrecia-dalt-yuyintang-2026-07-16.jpg",
+        "status": "Tour poster names the Shanghai date and YuYintown Cube. ShowStart confirms 2026-07-16 20:30-22:00 at Yuyintang Music Park C Hall, address, Lucrecia Dalt, and 180/220 RMB ticket tiers. The WeChat ticket-info screenshot confirms Shanghai C Hall and ShowStart QR route but does not expose price/time in the visible crop.",
+        "localFiles": [
+          "assets/posters/lucrecia-dalt-yuyintang-2026-07-16.jpg",
+          "assets/posters/lucrecia-dalt-yuyintang-wechat-profile.jpg",
+          "assets/posters/lucrecia-dalt-yuyintang-ticket-info.jpg"
+        ]
+      },
+      "ticketStatus": "ShowStart lists Lucrecia Dalt on 2026-07-16 from 20:30 to 22:00 at Yuyintang Music Park C Hall with 180 RMB presale and 220 RMB full-price tickets, and says sold tickets are non-refundable except for force-majeure cancellation/postponement. Age policy was not visible; verify venue policy before going.",
+      "lineup": [
+        {
+          "name": "Lucrecia Dalt",
+          "note": "ShowStart lists Lucrecia Dalt as the artist for the Shanghai stop; user-provided WeChat screenshots describe the booking as Colombian dark-wave / experimental electronic."
+        }
+      ],
+      "sources": [
+        {
+          "label": "ShowStart Lucrecia Dalt Shanghai listing",
+          "url": "https://www.showstart.com/event/300583",
+          "status": "event-ticketing-source",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "Public ShowStart page confirms title, 2026-07-16 20:30-22:00, Yuyintang Music Park C Hall, address, artist, ticket tiers, and no-refund language. Age policy was not visible."
+        },
+        {
+          "label": "LocalHub Yuyintang C Hall listing",
+          "url": "https://localhub.to/shanghai/venue/yuyintown-cube?lang=zh",
+          "status": "event-index-source",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "LocalHub venue page exposes schema.org event data linking the Lucrecia Dalt Shanghai stop to ShowStart event 300583 with 180 RMB starting price and Yuyintang C Hall venue. ShowStart remains the direct ticketing source."
+        },
+        {
+          "label": "Lucrecia Dalt China tour poster screenshot",
+          "url": "assets/posters/lucrecia-dalt-yuyintang-2026-07-16.jpg",
+          "status": "official-poster-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided tour poster names Lucrecia Dalt's 2026 China tour and places the Shanghai date on 2026-07-16 at YuYintown Cube."
+        },
+        {
+          "label": "Yuyintang Lucrecia Dalt ticket-info screenshot",
+          "url": "assets/posters/lucrecia-dalt-yuyintang-ticket-info.jpg",
+          "status": "official-wechat-ticket-info-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided Yuyintang screenshot says tickets are on sale via ShowStart QR and lists the Shanghai stop on 2026-07-16 at Yuyintang Music Park C Hall."
+        },
+        {
+          "label": "Lucrecia Dalt WeChat profile context screenshot",
+          "url": "assets/posters/lucrecia-dalt-yuyintang-wechat-profile.jpg",
+          "status": "artist-profile-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided Yuyintang article screenshot supplies profile context, including the Pitchfork 8.5 reference for A Danger To Ourselves. It is context, not event timing or ticket confirmation."
+        },
+        {
+          "label": "Lucrecia Dalt official website",
+          "url": "https://lucreciadalt.com/",
+          "status": "artist-profile-context",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "Artist context only; current Shanghai event facts are confirmed by ShowStart and Yuyintang/SO.READY screenshots."
+        },
+        {
+          "label": "RVNG Intl Lucrecia Dalt artist profile",
+          "url": "https://rvng.bandcamp.com/music",
+          "status": "label-context",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "Label/catalog context only; not current Shanghai event confirmation."
+        }
+      ],
+      "recommendationReason": "Recommended as a high-signal listening-room booking rather than a rave pick: Dalt's draw is dark, tactile experimental electronic songwriting, so the value is in hearing detail and tension in a livehouse room, not in peak-time dance-floor utility.",
+      "bestFor": "Best for experimental-electronic, art-pop, ambient, and sound-design listeners who would rather sit with texture and voice than chase a late club set.",
+      "verifyBeforeGoing": "Use the ShowStart page to confirm live ticket inventory and any admission policy. Age policy and support/running-order details were not visible in public sources.",
+      "sourceConfidence": "Medium-confidence current event: ShowStart confirms date, time, venue, address, artist, price, ticket route, and ticket status; Yuyintang/SO.READY screenshots confirm the tour context. Age policy and support/running order remain unresolved.",
+      "soundTags": [
+        "experimental-electronic",
+        "art-pop",
+        "ambient",
+        "dark-wave",
+        "listening-room"
+      ],
+      "decisionTags": [
+        "international artist",
+        "experimental fit",
+        "poster confirmed",
+        "ticketing source",
+        "listening room"
       ]
     }
   ]

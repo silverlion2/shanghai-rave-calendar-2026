@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-15T13:58:33.617Z",
-  "verified": "2026-06-15",
+  "generatedAt": "2026-06-15T17:26:12.815Z",
+  "verified": "2026-06-16",
   "timezone": "Asia/Shanghai",
   "sourcePriority": [
     "Chrome + Computer Use for anti-bot, logged-in, app-only, image/poster, and mini-program sources",
@@ -16,7 +16,7 @@
       "url": "https://ra.co/events/cn/shanghai",
       "kind": "listing",
       "sourceStatus": "trusted-ra",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": false,
       "status": 403,
       "eventLinks": 0,
@@ -28,7 +28,7 @@
       "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
       "kind": "guide",
       "sourceStatus": "secondary",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": true,
       "status": 200,
       "eventLinks": 0
@@ -38,7 +38,7 @@
       "url": "https://www.smartshanghai.com/events/clubbing/",
       "kind": "listing",
       "sourceStatus": "secondary",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": true,
       "status": 200,
       "eventLinks": 11
@@ -50,7 +50,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": false,
       "status": null,
       "links": 0,
@@ -63,7 +63,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": false,
       "status": null,
       "links": 0,
@@ -76,7 +76,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": false,
       "status": null,
       "links": 0,
@@ -89,7 +89,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": false,
       "status": null,
       "links": 0,
@@ -102,7 +102,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": false,
       "status": null,
       "links": 0,
@@ -115,7 +115,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": false,
       "status": null,
       "links": 0,
@@ -128,7 +128,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": false,
       "status": null,
       "links": 0,
@@ -141,7 +141,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": false,
       "status": null,
       "links": 0,
@@ -154,7 +154,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": false,
       "status": null,
       "links": 0,
@@ -167,7 +167,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": false,
       "status": null,
       "links": 0,
@@ -180,7 +180,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": false,
       "status": null,
       "links": 0,
@@ -193,7 +193,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": false,
       "status": null,
       "links": 0,
@@ -206,7 +206,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": false,
       "status": null,
       "links": 0,
@@ -219,7 +219,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": false,
       "status": null,
       "links": 0,
@@ -232,7 +232,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": false,
       "status": null,
       "links": 0,
@@ -245,7 +245,7 @@
       "kind": "social-keyword",
       "sourceStatus": "social-lead",
       "access": "requires-token",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": false,
       "status": null,
       "links": 0,
@@ -257,7 +257,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -270,7 +270,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -283,7 +283,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": null,
       "status": "computer-use",
       "priority": 2,
@@ -296,7 +296,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -309,7 +309,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -322,7 +322,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -335,7 +335,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": null,
       "status": "computer-use",
       "priority": 1,
@@ -348,7 +348,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "ok": null,
       "status": "computer-use",
       "priority": 2,
@@ -5207,7 +5207,7 @@
       "organizer": "Illsee",
       "detailsUrl": "https://ra.co/events/2456798",
       "ticketUrl": "https://ra.co/events/2456798",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-16",
       "lineup": [
         {
           "name": "Kaleidojazzlegs",
@@ -5240,13 +5240,14 @@
       "recommendationReason": "Included because the lineup (Kaleidojazzlegs, Yiyoo, and 2 more listed artists) gives social house, disco, or date-route electronic music readers a concrete reason to consider it at EXIT, even if it is not the hardest pick on the calendar.",
       "bestFor": "Readers following local dance battles, club-adjacent culture, and EXIT programming outside strict rave lanes.",
       "verifyBeforeGoing": "Confirm ticket availability, final running order, and door policy through RA before going.",
-      "sourceConfidence": "RA coverage: event facts, lineup roles, cost, and flyer are visible on Resident Advisor; door policy still needs same-day verification. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
+      "sourceConfidence": "RA coverage: event facts, lineup roles, cost, and flyer are visible through Resident Advisor indexed event text; direct HTTP fetch returned 403 on 2026-06-16, so use indexed RA text / browser-style verification rather than scripted fetch. Door policy still needs same-day verification. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
       "sources": [
         {
           "label": "Resident Advisor",
           "url": "https://ra.co/events/2456798",
           "status": "trusted-ra",
-          "lastChecked": "2026-06-14"
+          "lastChecked": "2026-06-16",
+          "verificationNote": "2026-06-16 public search-index text for the RA event page confirmed title, EXIT venue/address, Wed Jun 17 2026 22:00-03:00, lineup roles, house/hip-hop tags, Illsee event admin, cost 150, and flyer visibility. Direct scripted HTTP fetch returned 403, so treat this as indexed RA text verification."
         }
       ],
       "posterUrl": "assets/posters/bloom-season-1-grand-final.png",
@@ -6200,7 +6201,7 @@
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-15"
+          "lastChecked": "2026-06-16"
         },
         {
           "label": "Resident Advisor",
@@ -7002,7 +7003,7 @@
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-15",
+          "lastChecked": "2026-06-16",
           "verificationNote": "SmartShanghai lists June 20 at Heim Sauna with Jasmin and Knopha, but does not expose ticket price or set times in the guide."
         },
         {
@@ -7147,7 +7148,7 @@
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-15"
+          "lastChecked": "2026-06-16"
         },
         {
           "label": "Liminal Dreams x Wigwam event poster screenshot",
@@ -7945,7 +7946,7 @@
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-15",
+          "lastChecked": "2026-06-16",
           "verificationNote": "SmartShanghai lists Abyss harder-end June bookings and Botox Fatale on June 26, but the guide does not expose ticket details."
         },
         {
@@ -8083,13 +8084,13 @@
       "description": "Watch-level dark-dance lead at Specters. Historical sources support The Devil's Dancers as a Velvet Robot/Specters post-punk and wave series, but verify the June 26 lineup, start time, and door state before featuring it.",
       "kind": "event",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-15",
+      "lastChecked": "2026-06-16",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-15"
+          "lastChecked": "2026-06-16"
         },
         {
           "label": "SmartShanghai Specters venue context",
@@ -8304,13 +8305,13 @@
       "description": "Watch-level POTENT lead: SmartShanghai names Anika Kunst with 10000 and DJ EBP, and RA profile context supports the techno/house fit, but verify the current POTENT ticket route and final set order before planning around it.",
       "kind": "event",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-15",
+      "lastChecked": "2026-06-16",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-15",
+          "lastChecked": "2026-06-16",
           "verificationNote": "SmartShanghai lists Anika Kunst at POTENT on June 27 with 10000 and DJ EBP support; no ticket price in the guide."
         },
         {
@@ -8637,13 +8638,13 @@
       "description": "Single-source SmartShanghai lead for an immersive A/V live set at EXIT with Chuan, Na$ty, and Toyn on support.",
       "kind": "event",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-15",
+      "lastChecked": "2026-06-16",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-15"
+          "lastChecked": "2026-06-16"
         },
         {
           "label": "SmartShanghai EXIT venue context",
@@ -8740,13 +8741,13 @@
       "description": "Two-source Watch lead for Fenrir's Endgame metal-crossover night: SmartShanghai frames it as live acid techno with Blood of Life, Chimera Cult, and Soulitude, while the Chinese listing gives time and ticket tiers. Strong for hard/experimental readers, but still verify the actual purchase route and JAAL set timing.",
       "kind": "event",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-15",
+      "lastChecked": "2026-06-16",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-15",
+          "lastChecked": "2026-06-16",
           "verificationNote": "SmartShanghai lists June 27 at Fenrir with JAAL The Machine plus Blood of Life, Chimera Cult, and Soulitude."
         },
         {
@@ -8856,13 +8857,13 @@
       "description": "Watch-level KNOT/ILLUM lead with QQBBG and Liu Qoo. The sound lane points toward hyperpop, trance, and club-rave pressure, but verify the June 27 ticket state, start time, and running order before recommending it as confirmed.",
       "kind": "event",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-15",
+      "lastChecked": "2026-06-16",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-15",
+          "lastChecked": "2026-06-16",
           "verificationNote": "SmartShanghai lists June 27 at ILLUM with KNOT Truth and Lies Vol. 4, QQBBG, Liu Qoo, and hyperpop/trance/techno framing."
         },
         {
@@ -9036,13 +9037,13 @@
       "description": "Warmup lead for a July secret-forest festival. Lineup was still TBA in the public guide, so keep it on watch only.",
       "kind": "event",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-15",
+      "lastChecked": "2026-06-16",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-15",
+          "lastChecked": "2026-06-16",
           "verificationNote": "SmartShanghai lists June 27 at Wigwam as a YOUSHAN warmup and says lineup TBA."
         },
         {
@@ -9209,6 +9210,128 @@
       "sourceConfidence": "Watch-level confidence from Shanghai major events guide; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence."
     },
     {
+      "id": "yuyintang-cooling-water",
+      "month": "Jul",
+      "sortDate": "2026-07-03",
+      "date": "Jul 3",
+      "time": "20:00-23:00",
+      "title": "Cooling Water",
+      "venue": "Yuyintang Music Park B Hall",
+      "district": "Changning",
+      "vibe": [
+        "experimental",
+        "dark",
+        "listening"
+      ],
+      "genre": "dark wave, trip-hop, experimental rock, jazz/R&B crossover",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "98 / 128 / 158 RMB",
+      "age": "Check venue",
+      "ticketUrl": "https://www.showstart.com/event/300239",
+      "source": "https://www.showstart.com/event/300239",
+      "sourceLabel": "ShowStart listing + Yuyintang WeChat screenshots",
+      "imageTheme": "cyan",
+      "description": "Yuyintang B Hall live-electronic / experimental bill with Handycam, ABYSM, Tuihua Lichang, and Wu Xiaotian Erin. ShowStart confirms the July 3 20:00-23:00 timing, B Hall venue, address, lineup, and 98/128/158 RMB ticket tiers; the Yuyintang WeChat screenshots add the event poster and Chinese sound notes.",
+      "kind": "event",
+      "sourceStatus": "showstart-plus-wechat-screenshots",
+      "address": "B1/F, No. 658 Zhaohua Road, Changning District, Shanghai",
+      "organizer": "Yuyintang",
+      "lastChecked": "2026-06-16",
+      "posterUrl": "assets/posters/yuyintang-cooling-water-2026-07-03.jpg",
+      "posterEvidence": {
+        "type": "official-poster-screenshot",
+        "source": "User-provided Yuyintang poster and official-account article screenshots, cross-checked against the public ShowStart event page.",
+        "url": "assets/posters/yuyintang-cooling-water-2026-07-03.jpg",
+        "status": "Clean poster confirms Cooling Water, date, venue, address, artists, and ticket tiers. ShowStart confirms 2026-07-03 20:00-23:00, Yuyintang Music Park B Hall, lineup, address, ticket tiers, and no-refund purchase language. The article screenshot contains a visible 10.28 SAT ticket-block date conflict, so ShowStart and the clean poster are treated as the current practical sources.",
+        "localFiles": [
+          "assets/posters/yuyintang-cooling-water-2026-07-03.jpg",
+          "assets/posters/yuyintang-cooling-water-wechat-article.jpg"
+        ]
+      },
+      "ticketStatus": "ShowStart lists Cooling Water on 2026-07-03 from 20:00 to 23:00 at Yuyintang Music Park B Hall with 98 RMB presale, 128 RMB full-price, and 158 RMB pair tickets, and says sold tickets are non-refundable except for force-majeure cancellation/postponement. Age policy was not visible; verify venue policy before going.",
+      "lineup": [
+        {
+          "name": "Handycam",
+          "note": "ShowStart lists Handycam on the event page; Yuyintang article text frames the act as experimental art rock with a granular edge."
+        },
+        {
+          "name": "ABYSM",
+          "note": "ShowStart lists ABYSM on the event page; Yuyintang article text describes a three-synth Dark Wave / Trip-Hop direction."
+        },
+        {
+          "name": "Tuihua Lichang",
+          "aliases": [
+            "退化立场"
+          ],
+          "note": "ShowStart lists 退化立场 on the event page; Yuyintang article text describes pure instrumental rock used to deconstruct the room."
+        },
+        {
+          "name": "Wu Xiaotian Erin",
+          "aliases": [
+            "吴晓天Erin",
+            "Erin"
+          ],
+          "note": "ShowStart lists 吴晓天Erin on the event page; Yuyintang article text frames Erin as a Berklee songwriter working across Jazz/R&B/Pop."
+        }
+      ],
+      "sources": [
+        {
+          "label": "ShowStart Cooling Water listing",
+          "url": "https://www.showstart.com/event/300239",
+          "status": "event-ticketing-source",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "Public ShowStart page confirms title, 2026-07-03 20:00-23:00, Yuyintang Music Park B Hall, address, lineup, ticket tiers, and no-refund language. Age policy was not visible."
+        },
+        {
+          "label": "LocalHub Yuyintang B Hall listing",
+          "url": "https://localhub.to/shanghai/venue/yuyintown-basement?lang=zh",
+          "status": "event-index-source",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "LocalHub venue page exposes schema.org event data linking Cooling Water to ShowStart event 300239 with 98 RMB starting price and Yuyintang B Hall venue. ShowStart remains the direct ticketing source."
+        },
+        {
+          "label": "Yuyintang Cooling Water clean poster screenshot",
+          "url": "assets/posters/yuyintang-cooling-water-2026-07-03.jpg",
+          "status": "official-poster-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided clean poster names Cooling Water, 2026-07-03 Friday 20:00, Yuyintang B Hall address, ticket tiers, and the four-artist bill."
+        },
+        {
+          "label": "Yuyintang Cooling Water article/ticket screenshot",
+          "url": "assets/posters/yuyintang-cooling-water-wechat-article.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided official-account screenshot supplies sound descriptions for 退化立场, handycam, ABYSM, and 吴晓天Erin. Its lower ticket block shows a conflicting 10.28 SAT date, so it is context rather than the date source."
+        }
+      ],
+      "recommendationReason": "Recommended for readers who want a live, listening-first night rather than a straight club bill: ABYSM brings dark-wave/trip-hop synth pressure, Handycam and Tuihua Lichang add experimental/art-rock structure, and Erin pushes the bill toward jazz/R&B/pop crossover instead of one-lane techno.",
+      "bestFor": "Best for experimental-live listeners, dark-wave/trip-hop fans, and people who want a seated or close-listening route at Yuyintang before the weekend shifts into heavier club rooms.",
+      "verifyBeforeGoing": "Use the ShowStart page to confirm live inventory and final ticket tier; age policy and any detailed running order were not visible in public sources. Ignore the 10.28 SAT date shown in the lower block of one WeChat screenshot unless Yuyintang republishes a corrected ticket notice.",
+      "sourceConfidence": "Medium-confidence current event: ShowStart confirms the practical core fields and the user-provided Yuyintang screenshots add poster and sound context. Age policy and detailed running order remain unresolved; one WeChat article/ticket screenshot includes a conflicting lower ticket-block date.",
+      "soundTags": [
+        "live-av",
+        "industrial"
+      ],
+      "decisionTags": [
+        "low techno fit",
+        "high intensity",
+        "listening/live angle",
+        "late room",
+        "ticket path",
+        "lineup visible"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "loose",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": []
+      }
+    },
+    {
       "id": "misa-shanghai-summer-music-festival-2026",
       "kind": "festival",
       "month": "Jul",
@@ -9324,6 +9447,131 @@
       "bestFor": "Best for hard-techno, industrial, acid, or late-room listeners.",
       "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
       "sourceConfidence": "Watch-level confidence from Shanghai Municipal Administration of Culture and Tourism; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence."
+    },
+    {
+      "id": "lucrecia-dalt-yuyintang",
+      "month": "Jul",
+      "sortDate": "2026-07-16",
+      "date": "Jul 16",
+      "time": "20:30-22:00",
+      "title": "Lucrecia Dalt 2026 China Tour",
+      "venue": "Yuyintang Music Park C Hall",
+      "district": "Changning",
+      "vibe": [
+        "experimental",
+        "listening",
+        "dark"
+      ],
+      "genre": "experimental electronic, art pop, ambient, avant-garde",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "180 / 220 RMB",
+      "age": "Check venue",
+      "ticketUrl": "https://www.showstart.com/event/300583",
+      "source": "https://www.showstart.com/event/300583",
+      "sourceLabel": "ShowStart listing + Yuyintang/SO.READY WeChat screenshots",
+      "imageTheme": "slate",
+      "description": "SO.READY presents Lucrecia Dalt's first China tour Shanghai stop at Yuyintang Music Park C Hall. ShowStart confirms the July 16 20:30-22:00 timing, C Hall venue, address, artist, and 180/220 RMB ticket tiers; user-provided WeChat screenshots add the tour poster and Yuyintang ticket-info card.",
+      "kind": "event",
+      "sourceStatus": "showstart-plus-wechat-screenshots",
+      "address": "B1/F, Building D, C.PARK, No. 658 Zhaohua Road, Changning District, Shanghai",
+      "organizer": "SO.READY / Yuyintang",
+      "lastChecked": "2026-06-16",
+      "posterUrl": "assets/posters/lucrecia-dalt-yuyintang-2026-07-16.jpg",
+      "posterEvidence": {
+        "type": "official-poster-screenshot",
+        "source": "User-provided Lucrecia Dalt China tour poster and Yuyintang ticket-info screenshots, cross-checked against the public ShowStart event page.",
+        "url": "assets/posters/lucrecia-dalt-yuyintang-2026-07-16.jpg",
+        "status": "Tour poster names the Shanghai date and YuYintown Cube. ShowStart confirms 2026-07-16 20:30-22:00 at Yuyintang Music Park C Hall, address, Lucrecia Dalt, and 180/220 RMB ticket tiers. The WeChat ticket-info screenshot confirms Shanghai C Hall and ShowStart QR route but does not expose price/time in the visible crop.",
+        "localFiles": [
+          "assets/posters/lucrecia-dalt-yuyintang-2026-07-16.jpg",
+          "assets/posters/lucrecia-dalt-yuyintang-wechat-profile.jpg",
+          "assets/posters/lucrecia-dalt-yuyintang-ticket-info.jpg"
+        ]
+      },
+      "ticketStatus": "ShowStart lists Lucrecia Dalt on 2026-07-16 from 20:30 to 22:00 at Yuyintang Music Park C Hall with 180 RMB presale and 220 RMB full-price tickets, and says sold tickets are non-refundable except for force-majeure cancellation/postponement. Age policy was not visible; verify venue policy before going.",
+      "lineup": [
+        {
+          "name": "Lucrecia Dalt",
+          "note": "ShowStart lists Lucrecia Dalt as the artist for the Shanghai stop; user-provided WeChat screenshots describe the booking as Colombian dark-wave / experimental electronic."
+        }
+      ],
+      "sources": [
+        {
+          "label": "ShowStart Lucrecia Dalt Shanghai listing",
+          "url": "https://www.showstart.com/event/300583",
+          "status": "event-ticketing-source",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "Public ShowStart page confirms title, 2026-07-16 20:30-22:00, Yuyintang Music Park C Hall, address, artist, ticket tiers, and no-refund language. Age policy was not visible."
+        },
+        {
+          "label": "LocalHub Yuyintang C Hall listing",
+          "url": "https://localhub.to/shanghai/venue/yuyintown-cube?lang=zh",
+          "status": "event-index-source",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "LocalHub venue page exposes schema.org event data linking the Lucrecia Dalt Shanghai stop to ShowStart event 300583 with 180 RMB starting price and Yuyintang C Hall venue. ShowStart remains the direct ticketing source."
+        },
+        {
+          "label": "Lucrecia Dalt China tour poster screenshot",
+          "url": "assets/posters/lucrecia-dalt-yuyintang-2026-07-16.jpg",
+          "status": "official-poster-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided tour poster names Lucrecia Dalt's 2026 China tour and places the Shanghai date on 2026-07-16 at YuYintown Cube."
+        },
+        {
+          "label": "Yuyintang Lucrecia Dalt ticket-info screenshot",
+          "url": "assets/posters/lucrecia-dalt-yuyintang-ticket-info.jpg",
+          "status": "official-wechat-ticket-info-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided Yuyintang screenshot says tickets are on sale via ShowStart QR and lists the Shanghai stop on 2026-07-16 at Yuyintang Music Park C Hall."
+        },
+        {
+          "label": "Lucrecia Dalt WeChat profile context screenshot",
+          "url": "assets/posters/lucrecia-dalt-yuyintang-wechat-profile.jpg",
+          "status": "artist-profile-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided Yuyintang article screenshot supplies profile context, including the Pitchfork 8.5 reference for A Danger To Ourselves. It is context, not event timing or ticket confirmation."
+        },
+        {
+          "label": "Lucrecia Dalt official website",
+          "url": "https://lucreciadalt.com/",
+          "status": "artist-profile-context",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "Artist context only; current Shanghai event facts are confirmed by ShowStart and Yuyintang/SO.READY screenshots."
+        },
+        {
+          "label": "RVNG Intl Lucrecia Dalt artist profile",
+          "url": "https://rvng.bandcamp.com/music",
+          "status": "label-context",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "Label/catalog context only; not current Shanghai event confirmation."
+        }
+      ],
+      "recommendationReason": "Recommended as a high-signal listening-room booking rather than a rave pick: Dalt's draw is dark, tactile experimental electronic songwriting, so the value is in hearing detail and tension in a livehouse room, not in peak-time dance-floor utility.",
+      "bestFor": "Best for experimental-electronic, art-pop, ambient, and sound-design listeners who would rather sit with texture and voice than chase a late club set.",
+      "verifyBeforeGoing": "Use the ShowStart page to confirm live ticket inventory and any admission policy. Age policy and support/running-order details were not visible in public sources.",
+      "sourceConfidence": "Medium-confidence current event: ShowStart confirms date, time, venue, address, artist, price, ticket route, and ticket status; Yuyintang/SO.READY screenshots confirm the tour context. Age policy and support/running order remain unresolved.",
+      "soundTags": [
+        "industrial",
+        "live-av"
+      ],
+      "decisionTags": [
+        "low techno fit",
+        "high intensity",
+        "listening/live angle",
+        "late room",
+        "ticket path",
+        "lineup visible"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "loose",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": []
+      }
     },
     {
       "id": "west-bund-dream-center-waterfront-music-festival-2026",
@@ -9619,7 +9867,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -9685,7 +9933,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -9751,7 +9999,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -9817,7 +10065,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -9884,7 +10132,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -9948,7 +10196,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -10012,7 +10260,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -10076,7 +10324,7 @@
       "kind": "computer-use-source",
       "sourceStatus": "computer-use",
       "access": "chrome-computer-use",
-      "checkedAt": "2026-06-15",
+      "checkedAt": "2026-06-16",
       "parsed": false,
       "confirmationRule": "Treat as a discovery lead until confirmed by a public event page, official venue/promoter/artist account, or ticketing source.",
       "collectionChecklist": [
@@ -10117,10 +10365,10 @@
       ]
     }
   ],
-  "curatedEventsApplied": 79,
+  "curatedEventsApplied": 81,
   "djItineraryStats": {
-    "profileCount": 114,
-    "curatedProfileCount": 112,
+    "profileCount": 119,
+    "curatedProfileCount": 117,
     "generatedProfileCount": 1,
     "profileSourceCounts": {
       "10000": 2,
@@ -10273,13 +10521,19 @@
       "prymara": 3,
       "laglory": 3,
       "fmrl": 3,
-      "goga": 3
+      "goga": 3,
+      "handycam": 3,
+      "abysm": 3,
+      "tuihua-lichang": 3,
+      "wu-xiaotian-erin": 3,
+      "erin": 3,
+      "lucrecia-dalt": 6
     },
     "rowCount": 40
   },
   "quality": {
-    "auditDate": "2026-06-15",
-    "generatedAt": "2026-06-15T13:58:33.617Z",
+    "auditDate": "2026-06-16",
+    "generatedAt": "2026-06-15T17:26:12.815Z",
     "freshnessPolicy": {
       "eventSourceMaxAgeDays": 2,
       "nearEventWindowDays": 1,
@@ -10288,36 +10542,36 @@
       "rule": "Future event sources are expected to be rechecked within the two-day scrape cadence; events within the near-event window use the stricter near-event freshness window. Profile-level DJ sources have a longer freshness window because they support identity/context, not live ticket state."
     },
     "totals": {
-      "events": 99,
-      "future": 42,
+      "events": 101,
+      "future": 44,
       "futureHigh": 8,
       "futureWatch": 16,
       "singleSourceWatch": 4,
       "singleConfirmationWatch": 8,
-      "venueProfiles": 40,
-      "futureVenueProfiles": 24,
+      "venueProfiles": 42,
+      "futureVenueProfiles": 26,
       "futureVenueWatch": 16,
-      "futurePerformerProfiles": 115,
+      "futurePerformerProfiles": 120,
       "futurePerformerWatch": 21,
       "singleSourceFuturePerformers": 52,
-      "futurePerformerProfileSources": 97,
+      "futurePerformerProfileSources": 102,
       "futurePerformerMissingProfileSources": 18,
       "djSourceUpgradeQueue": 0,
-      "trackedDjProfiles": 114,
-      "curatedDjSourceProfiles": 112,
-      "technoArtistSignals": 107,
-      "technoArtistSignalProfiles": 82,
+      "trackedDjProfiles": 119,
+      "curatedDjSourceProfiles": 117,
+      "technoArtistSignals": 108,
+      "technoArtistSignalProfiles": 83,
       "eventsWithTechnoProfileSignals": 0,
       "trackedDjItineraryRows": 40,
       "staleFuture": 0,
       "missingTicketStatus": 0,
       "highMissingLineup": 0,
-      "futureCoreFieldQueue": 32,
-      "futureMissingCoreFields": 78,
+      "futureCoreFieldQueue": 34,
+      "futureMissingCoreFields": 80,
       "futureUncertainCoreFields": 1,
       "platformVerificationQueue": 3,
       "platformVerificationSources": 7,
-      "curatedEventsApplied": 79,
+      "curatedEventsApplied": 81,
       "failedSourceReports": 17
     },
     "watchQueue": [
@@ -10579,8 +10833,8 @@
       ],
       "djProfileGate": {
         "source": "config/tracked-dj-profiles.json",
-        "signalCount": 107,
-        "profileCount": 82,
+        "signalCount": 108,
+        "profileCount": 83,
         "matchedEventCount": 0,
         "matchedEvents": []
       }
@@ -11129,6 +11383,24 @@
         "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
       },
       {
+        "id": "lucrecia-dalt-yuyintang",
+        "date": "2026-07-16",
+        "title": "Lucrecia Dalt 2026 China Tour",
+        "venue": "Yuyintang Music Park C Hall",
+        "confidence": "Medium",
+        "priority": "low",
+        "fitScore": 1,
+        "missingCoreFields": [
+          "age"
+        ],
+        "uncertainCoreFields": [],
+        "missingNonCoreFields": [],
+        "performerProfileGaps": [],
+        "coreFieldGapStatus": "public-source-gap",
+        "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
+        "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
+      },
+      {
         "id": "enchanted-night-the-nest",
         "date": "2026-06-20",
         "title": "Enchanted Night",
@@ -11246,6 +11518,24 @@
         "fitScore": 0,
         "missingCoreFields": [
           "price",
+          "age"
+        ],
+        "uncertainCoreFields": [],
+        "missingNonCoreFields": [],
+        "performerProfileGaps": [],
+        "coreFieldGapStatus": "public-source-gap",
+        "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
+        "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
+      },
+      {
+        "id": "yuyintang-cooling-water",
+        "date": "2026-07-03",
+        "title": "Cooling Water",
+        "venue": "Yuyintang Music Park B Hall",
+        "confidence": "Medium",
+        "priority": "low",
+        "fitScore": 0,
+        "missingCoreFields": [
           "age"
         ],
         "uncertainCoreFields": [],
@@ -11414,7 +11704,7 @@
         "fitScore": 3,
         "priority": "high",
         "nextEventDate": "2026-06-16",
-        "lastChecked": "2026-06-15"
+        "lastChecked": "2026-06-16"
       },
       {
         "venue": "Abyss Shanghai",
@@ -11465,7 +11755,7 @@
         "fitScore": 3,
         "priority": "high",
         "nextEventDate": "2026-06-18",
-        "lastChecked": "2026-06-15"
+        "lastChecked": "2026-06-16"
       },
       {
         "venue": "Heim Shanghai",
@@ -11516,7 +11806,7 @@
         "fitScore": 3,
         "priority": "high",
         "nextEventDate": "2026-06-17",
-        "lastChecked": "2026-06-15"
+        "lastChecked": "2026-06-16"
       },
       {
         "venue": "Reactor Shanghai",
@@ -11584,7 +11874,7 @@
         "fitScore": 3,
         "priority": "high",
         "nextEventDate": "2026-06-27",
-        "lastChecked": "2026-06-15"
+        "lastChecked": "2026-06-16"
       },
       {
         "venue": "Specters",
@@ -11604,7 +11894,7 @@
         "fitScore": 3,
         "priority": "high",
         "nextEventDate": "2026-06-26",
-        "lastChecked": "2026-06-15"
+        "lastChecked": "2026-06-16"
       },
       {
         "venue": "The Sukhothai Shanghai",
@@ -11643,7 +11933,7 @@
         "fitScore": 3,
         "priority": "high",
         "nextEventDate": "2026-06-27",
-        "lastChecked": "2026-06-15"
+        "lastChecked": "2026-06-16"
       },
       {
         "venue": "Heim Sauna",
@@ -11779,6 +12069,25 @@
         "lastChecked": "2026-06-14"
       },
       {
+        "venue": "Yuyintang Music Park C Hall",
+        "aliases": [],
+        "districts": [
+          "Changning"
+        ],
+        "genres": [
+          "experimental electronic, art pop, ambient, avant-garde"
+        ],
+        "sourceCount": 7,
+        "totalEvents": 1,
+        "futureEvents": 1,
+        "highConfidenceEvents": 0,
+        "watchEvents": 0,
+        "fitScore": 1,
+        "priority": "low",
+        "nextEventDate": "2026-07-16",
+        "lastChecked": "2026-06-16"
+      },
+      {
         "venue": "Gate M West Bund Dream Center",
         "aliases": [],
         "districts": [
@@ -11891,6 +12200,25 @@
         "priority": "low",
         "nextEventDate": "2026-06-20",
         "lastChecked": "2026-06-14"
+      },
+      {
+        "venue": "Yuyintang Music Park B Hall",
+        "aliases": [],
+        "districts": [
+          "Changning"
+        ],
+        "genres": [
+          "dark wave, trip-hop, experimental rock, jazz/R&B crossover"
+        ],
+        "sourceCount": 4,
+        "totalEvents": 1,
+        "futureEvents": 1,
+        "highConfidenceEvents": 0,
+        "watchEvents": 0,
+        "fitScore": 0,
+        "priority": "low",
+        "nextEventDate": "2026-07-03",
+        "lastChecked": "2026-06-16"
       },
       {
         "venue": "Arcane / Shanghai Hotel",
@@ -12198,8 +12526,8 @@
       }
     ],
     "djCoverage": {
-      "trackedItineraryProfiles": 114,
-      "curatedSourceProfiles": 112,
+      "trackedItineraryProfiles": 119,
+      "curatedSourceProfiles": 117,
       "trackedItineraryRows": 40,
       "futureProfiles": [
         {
@@ -14398,6 +14726,26 @@
           "nextDate": "2026-06-18"
         },
         {
+          "slug": "lucrecia-dalt",
+          "name": "Lucrecia Dalt",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 7,
+          "trackedProfileSourceCount": 6,
+          "venues": [
+            "Yuyintang Music Park C Hall"
+          ],
+          "genres": [
+            "experimental electronic, art pop, ambient, avant-garde"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 1,
+          "priority": "low",
+          "nextDate": "2026-07-16"
+        },
+        {
           "slug": "njelic",
           "name": "NJELIC",
           "eventCount": 1,
@@ -14478,6 +14826,26 @@
           "nextDate": "2026-06-18"
         },
         {
+          "slug": "abysm",
+          "name": "ABYSM",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 4,
+          "trackedProfileSourceCount": 3,
+          "venues": [
+            "Yuyintang Music Park B Hall"
+          ],
+          "genres": [
+            "dark wave, trip-hop, experimental rock, jazz/R&B crossover"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 0,
+          "priority": "low",
+          "nextDate": "2026-07-03"
+        },
+        {
           "slug": "ali-ribo",
           "name": "ALI RIBO",
           "eventCount": 1,
@@ -14518,6 +14886,26 @@
           "nextDate": "2026-09-12"
         },
         {
+          "slug": "handycam",
+          "name": "Handycam",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 4,
+          "trackedProfileSourceCount": 3,
+          "venues": [
+            "Yuyintang Music Park B Hall"
+          ],
+          "genres": [
+            "dark wave, trip-hop, experimental rock, jazz/R&B crossover"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 0,
+          "priority": "low",
+          "nextDate": "2026-07-03"
+        },
+        {
           "slug": "shaun-soomro",
           "name": "Shaun Soomro",
           "eventCount": 1,
@@ -14556,10 +14944,50 @@
           "fitScore": 0,
           "priority": "low",
           "nextDate": "2026-06-20"
+        },
+        {
+          "slug": "tuihua-lichang",
+          "name": "Tuihua Lichang",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 4,
+          "trackedProfileSourceCount": 3,
+          "venues": [
+            "Yuyintang Music Park B Hall"
+          ],
+          "genres": [
+            "dark wave, trip-hop, experimental rock, jazz/R&B crossover"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 0,
+          "priority": "low",
+          "nextDate": "2026-07-03"
+        },
+        {
+          "slug": "wu-xiaotian-erin",
+          "name": "Wu Xiaotian Erin",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 4,
+          "trackedProfileSourceCount": 3,
+          "venues": [
+            "Yuyintang Music Park B Hall"
+          ],
+          "genres": [
+            "dark wave, trip-hop, experimental rock, jazz/R&B crossover"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 0,
+          "priority": "low",
+          "nextDate": "2026-07-03"
         }
       ],
       "sourceUpgradeQueue": [],
-      "allProfileCount": 202
+      "allProfileCount": 207
     },
     "raShanghaiCoverage": {
       "configured": true,
@@ -15200,7 +15628,7 @@
         "kind": "listing",
         "sourceStatus": "trusted-ra",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": 403,
         "eventLinks": 0,
         "error": "Public HTTP fetch hit an anti-bot or JavaScript challenge; use Browser/Chrome visible verification instead of treating this as an empty source."
@@ -15210,7 +15638,7 @@
         "kind": "guide",
         "sourceStatus": "secondary",
         "ok": true,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": 200,
         "eventLinks": 0
       },
@@ -15219,7 +15647,7 @@
         "kind": "listing",
         "sourceStatus": "secondary",
         "ok": true,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": 200,
         "eventLinks": 11
       },
@@ -15228,7 +15656,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -15238,7 +15666,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -15248,7 +15676,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -15258,7 +15686,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -15268,7 +15696,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -15278,7 +15706,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -15288,7 +15716,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -15298,7 +15726,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -15308,7 +15736,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -15318,7 +15746,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -15328,7 +15756,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -15338,7 +15766,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -15348,7 +15776,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -15358,7 +15786,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -15368,7 +15796,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -15378,7 +15806,7 @@
         "kind": "social-keyword",
         "sourceStatus": "social-lead",
         "ok": false,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": null,
         "links": 0,
         "error": "Set X_BEARER_TOKEN or TWITTER_BEARER_TOKEN to collect recent X/Twitter posts. Set SCRAPE_X_PUBLIC_SEARCH=true for best-effort unauthenticated HTML search."
@@ -15388,7 +15816,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": "computer-use"
       },
       {
@@ -15396,7 +15824,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": "computer-use"
       },
       {
@@ -15404,7 +15832,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": "computer-use"
       },
       {
@@ -15412,7 +15840,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": "computer-use"
       },
       {
@@ -15420,7 +15848,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": "computer-use"
       },
       {
@@ -15428,7 +15856,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": "computer-use"
       },
       {
@@ -15436,7 +15864,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": "computer-use"
       },
       {
@@ -15444,7 +15872,7 @@
         "kind": "computer-use-source",
         "sourceStatus": "computer-use",
         "ok": null,
-        "checkedAt": "2026-06-15",
+        "checkedAt": "2026-06-16",
         "status": "computer-use"
       }
     ],

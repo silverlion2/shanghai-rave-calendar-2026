@@ -57,6 +57,9 @@ function renderMonthGridForTest(html, code, events) {
     function eventPageUrl(event) {
       return "events/" + event.id + ".html";
     }
+    function calendarGroupFor(event) {
+      return { key: event.venue, label: event.venue || "Venue TBA", meta: "" };
+    }
     function escapeHtml(value) {
       return String(value || "");
     }
@@ -98,23 +101,42 @@ test("homepage calendar entries link to local event detail pages", () => {
   }
 });
 
-test("homepage calendar grid hides weekdays and weeks with no matching events", () => {
-  const sparseJuneEvents = [
+test("homepage calendar grid renders one selected week grouped by venue rows", () => {
+  const weeklyEvents = [
     { id: "june-tuesday", sortDate: "2026-06-02", title: "Tuesday room", venue: "Room A" },
-    { id: "june-saturday", sortDate: "2026-06-27", title: "Saturday room", venue: "Room B" },
+    { id: "june-thursday", sortDate: "2026-06-04", title: "Thursday room", venue: "Room A" },
+    { id: "june-saturday", sortDate: "2026-06-06", title: "Saturday room", venue: "Room B" },
+    { id: "june-outside-week", sortDate: "2026-06-27", title: "Outside week", venue: "Room C" },
   ];
 
   for (const file of calendarFiles) {
     const html = readSiteFile(file);
-    const grid = renderMonthGridForTest(html, "Jun", sparseJuneEvents);
+    const grid = renderMonthGridForTest(html, "2026-06-01", weeklyEvents);
 
-    assert.match(grid, /--calendar-columns:\s*2/);
-    assert.match(grid, />Tue<\/div>/);
-    assert.match(grid, />Sat<\/div>/);
-    assert.doesNotMatch(grid, />Fri<\/div>/);
-    assert.doesNotMatch(grid, />Sun<\/div>/);
-    assert.doesNotMatch(grid, /<span>9<\/span>/);
-    assert.doesNotMatch(grid, /<span>16<\/span>/);
+    assert.match(grid, /--calendar-columns:\s*3/);
+    assert.match(grid, /Venue \/ promoter/);
+    assert.match(grid, /<span>Tue<\/span>/);
+    assert.match(grid, /<span>Thu<\/span>/);
+    assert.match(grid, /<span>Sat<\/span>/);
+    assert.doesNotMatch(grid, /<span>Mon<\/span>/);
+    assert.doesNotMatch(grid, /<span>Sun<\/span>/);
+    assert.equal((grid.match(/<b>Room A<\/b>/g) || []).length, 1);
+    assert.equal((grid.match(/<b>Room B<\/b>/g) || []).length, 1);
+    assert.doesNotMatch(grid, /Outside week/);
+  }
+});
+
+test("homepage exposes week, month dropdown, and common venue promoter filters", () => {
+  for (const file of calendarFiles) {
+    const html = readSiteFile(file);
+
+    assert.match(html, /id="weekFilter"/);
+    assert.match(html, /<select class="select month-select" id="monthRail"/);
+    assert.match(html, /id="venueFilterToggle"/);
+    assert.match(html, /commonVenuePromoterGroups/);
+    assert.match(html, /otherVenuePromoterGroup/);
+    assert.match(html, /All common \+ Other/);
+    assert.doesNotMatch(html, /<button class="month-button"/);
   }
 });
 

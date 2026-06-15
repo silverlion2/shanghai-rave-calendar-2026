@@ -2194,6 +2194,10 @@
             <input class="search" id="searchInput" type="search" placeholder="Event, venue, genre, promoter">
           </label>
           <label class="filter-field">
+            <span>Week</span>
+            <select class="select" id="weekFilter" aria-label="Week filter"></select>
+          </label>
+          <label class="filter-field">
             <span>Status</span>
             <select class="select" id="statusFilter" aria-label="Status filter">
               <option value="all">All statuses</option>
@@ -2214,27 +2218,19 @@
               <option value="warehouse">Warehouse</option>
             </select>
           </label>
-          <label class="filter-field">
-            <span>Room / crew</span>
-            <select class="select" id="venueFilter" aria-label="Venue and promoter filter">
-              <option value="all">All venues / crews</option>
-              <option value="abyss">Abyss</option>
-              <option value="exit">EXIT</option>
-              <option value="heim">Heim</option>
-              <option value="potent">POTENT</option>
-              <option value="reactor">Reactor</option>
-              <option value="space-panda">Space Panda</option>
-              <option value="alter">ALTER</option>
-              <option value="dirty">Dirty House / INS</option>
-              <option value="illum">ILLUM / KNOT</option>
-              <option value="wigwam">Wigwam</option>
-              <option value="system">System</option>
-              <option value="void-vacuum">VOID / VACUUM</option>
-            </select>
-          </label>
+          <div class="filter-field venue-filter-field">
+            <span>Venue / promoter</span>
+            <div class="multi-select" id="venueFilter">
+              <button class="select multi-select-toggle" id="venueFilterToggle" type="button" aria-haspopup="true" aria-expanded="false">All venues / promoters</button>
+              <div class="multi-select-menu" id="venueFilterMenu" role="group" aria-label="Venue and promoter filter"></div>
+            </div>
+          </div>
         </section>
 
-        <nav class="month-rail" id="monthRail" aria-label="Jump to month"></nav>
+        <label class="filter-field month-select-field">
+          <span>Month</span>
+          <select class="select month-select" id="monthRail" aria-label="Jump to month"></select>
+        </label>
 
         <section class="layout">
           <div id="calendar"></div>
@@ -2336,6 +2332,8 @@
       ["Sep", "September"], ["Oct", "October"], ["Nov", "November"], ["Dec", "December"]
     ];
     let activeMonth = months[today.getMonth()] ? months[today.getMonth()][0] : "Jun";
+    let activeWeekStart = weekStartKey(today);
+    let selectedVenueGroups = new Set();
 
     const fallbackEvents = [
       {
@@ -3148,9 +3146,12 @@
     const calendarEl = document.getElementById("calendar");
     const railEl = document.getElementById("monthRail");
     const searchInput = document.getElementById("searchInput");
+    const weekFilter = document.getElementById("weekFilter");
     const statusFilter = document.getElementById("statusFilter");
     const vibeFilter = document.getElementById("vibeFilter");
     const venueFilter = document.getElementById("venueFilter");
+    const venueFilterToggle = document.getElementById("venueFilterToggle");
+    const venueFilterMenu = document.getElementById("venueFilterMenu");
     const filterSummary = document.getElementById("filterSummary");
     const downloadFiltered = document.getElementById("downloadFiltered");
     const modal = document.getElementById("eventModal");
@@ -3459,6 +3460,46 @@
         && first.getDate() === second.getDate();
     }
 
+    function isoDateKey(date) {
+      return `${date.getFullYear()}-${pad2(date.getMonth() + 1)}-${pad2(date.getDate())}`;
+    }
+
+    function weekStartDate(date) {
+      const start = new Date(date);
+      start.setHours(0, 0, 0, 0);
+      start.setDate(start.getDate() - ((start.getDay() + 6) % 7));
+      return start;
+    }
+
+    function weekStartKey(date) {
+      return isoDateKey(weekStartDate(date));
+    }
+
+    function eventWeekStartKey(event) {
+      const date = eventDate(event);
+      return date ? weekStartKey(date) : "";
+    }
+
+    function weekDatesFor(weekStart) {
+      const start = parseIsoDate(weekStart) || weekStartDate(today);
+      return Array.from({ length: 7 }, (_, index) => addDays(start, index));
+    }
+
+    function compactDateLabel(date) {
+      return date.toLocaleString("en-US", { month: "short", day: "numeric", timeZone: "Asia/Shanghai" });
+    }
+
+    function formatWeekRange(weekStart) {
+      const dates = weekDatesFor(weekStart);
+      return `${compactDateLabel(dates[0])}-${compactDateLabel(dates[6])}`;
+    }
+
+    function monthCodeForWeek(weekStart) {
+      const start = parseIsoDate(weekStart);
+      if (!start) return activeMonth;
+      return months[start.getMonth()] ? months[start.getMonth()][0] : activeMonth;
+    }
+
     function eventDate(event) {
       return parseIsoDate(event.sortDate);
     }
@@ -3540,6 +3581,48 @@
       const known = knownOrganizerFor(event);
       if (known) return known;
       return event.venue || "Organizer TBA";
+    }
+
+    function normalizeFilterKey(value) {
+      return String(value || "")
+        .toLowerCase()
+        .normalize("NFKD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/&/g, " and ")
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-|-$/g, "");
+    }
+
+    function splitFilterEntityParts(value) {
+      return String(value || "")
+        .split(/\s*(?:\/|\+|,|&|\bx\b)\s*/i)
+        .map(item => item.trim())
+        .filter(item => item.length > 1);
+    }
+
+    function addFilterEntity(list, seen, label, type) {
+      const cleanLabel = String(label || "").trim();
+      const key = normalizeFilterKey(cleanLabel);
+      if (!key || seen.has(key)) return;
+      seen.add(key);
+      list.push({ key, label: cleanLabel, type, alias: false });
+      const shanghaiAlias = cleanLabel.replace(/\s+shanghai$/i, "").trim();
+      const aliasKey = normalizeFilterKey(shanghaiAlias);
+      if (aliasKey && aliasKey !== key && !seen.has(aliasKey)) {
+        seen.add(aliasKey);
+        list.push({ key: aliasKey, label: shanghaiAlias, type, alias: true });
+      }
+    }
+
+    function eventFilterEntities(event) {
+      const entities = [];
+      const seen = new Set();
+      addFilterEntity(entities, seen, event.venue, "venue");
+      splitFilterEntityParts(event.venue).forEach(label => addFilterEntity(entities, seen, label, "venue"));
+      const organizer = knownOrganizerFor(event);
+      addFilterEntity(entities, seen, organizer, "promoter");
+      splitFilterEntityParts(organizer).forEach(label => addFilterEntity(entities, seen, label, "promoter"));
+      return entities;
     }
 
     function sourceCountFor(event) {
@@ -4162,8 +4245,17 @@
       return [event.title, organizerFor(event), event.venue, event.district, event.genre, event.description, event.sourceLabel, event.source, eventSoundTags(event).join(" "), eventDecisionTags(event).join(" "), lineupText(event)].join(" ").toLowerCase();
     }
 
-    function eventVenueGroupMatches(event, group) {
+    function eventVenueGroupMatches(event, group = selectedVenueGroups) {
       if (group === "all") return true;
+      if (group instanceof Set) {
+        if (group.size === 0) return true;
+        return [...group].some(key => eventMatchesVenueSelection(event, key));
+      }
+      if (Array.isArray(group)) {
+        const selected = new Set(group.filter(Boolean));
+        if (!selected.size) return true;
+        return [...selected].some(key => eventMatchesVenueSelection(event, key));
+      }
       const text = searchableText(event);
       const has = (...terms) => terms.some(term => text.includes(term.toLowerCase()));
       const id = event.id;
@@ -4307,43 +4399,96 @@
     }
 
     function renderMonthGrid(code, monthEvents) {
-      const index = monthIndex(code);
-      const firstDay = new Date(2026, index, 1);
-      const startOffset = (firstDay.getDay() + 6) % 7;
-      const daysInMonth = new Date(2026, index + 1, 0).getDate();
+      const keyFromDate = date => `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
+      const localWeekStartDate = date => {
+        const start = new Date(date);
+        start.setHours(0, 0, 0, 0);
+        start.setDate(start.getDate() - ((start.getDay() + 6) % 7));
+        return start;
+      };
+      const localAddDays = (date, days) => {
+        const next = new Date(date);
+        next.setDate(next.getDate() + days);
+        return next;
+      };
+      const localParseIsoDate = value => {
+        const [year, month, day] = String(value || "").slice(0, 10).split("-").map(Number);
+        if (!year || !month || !day) return null;
+        return new Date(year, month - 1, day);
+      };
+      const localWeekDatesFor = weekStart => {
+        const parsed = localParseIsoDate(weekStart);
+        const fallbackDate = monthEvents.map(eventDate).find(Boolean) || new Date(2026, Math.max(0, monthIndex(code)), 1);
+        const start = parsed || localWeekStartDate(fallbackDate);
+        return Array.from({ length: 7 }, (_, index) => localAddDays(start, index));
+      };
+      const localDateLabel = date => date.toLocaleString("en-US", { month: "short", day: "numeric", timeZone: "Asia/Shanghai" });
+      const requestedWeek = /^\d{4}-\d{2}-\d{2}$/.test(String(code || ""))
+        ? String(code)
+        : (typeof activeWeekStart !== "undefined" && activeWeekStart ? activeWeekStart : keyFromDate(localWeekStartDate(monthEvents.map(eventDate).find(Boolean) || new Date(2026, Math.max(0, monthIndex(code)), 1))));
+      const weekDates = localWeekDatesFor(requestedWeek);
+      const weekDateKeys = new Set(weekDates.map(keyFromDate));
       const weekdayLabels = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
-      const eventsByDay = new Map();
-      const weekdayHasEvent = weekdayLabels.map(() => false);
+      const dayHasEvent = weekDates.map(() => false);
+      const groups = new Map();
       monthEvents.forEach(event => {
         const date = eventDate(event);
-        const day = eventDay(event);
-        if (!date || date.getFullYear() !== 2026 || date.getMonth() !== index || day < 1 || day > daysInMonth) return;
+        if (!date || !weekDateKeys.has(keyFromDate(date))) return;
         const weekdayIndex = (date.getDay() + 6) % 7;
-        weekdayHasEvent[weekdayIndex] = true;
-        if (!eventsByDay.has(day)) eventsByDay.set(day, []);
-        eventsByDay.get(day).push(event);
+        dayHasEvent[weekdayIndex] = true;
+        const group = typeof calendarGroupFor === "function"
+          ? calendarGroupFor(event)
+          : { key: String(event.venue || "venue"), label: event.venue || "Venue TBA", meta: "" };
+        if (!groups.has(group.key)) {
+          groups.set(group.key, { ...group, eventsByDay: new Map(), firstSortDate: event.sortDate || "9999-12-31" });
+        }
+        const row = groups.get(group.key);
+        if ((event.sortDate || "9999-12-31") < row.firstSortDate) row.firstSortDate = event.sortDate || row.firstSortDate;
+        const dayKey = keyFromDate(date);
+        if (!row.eventsByDay.has(dayKey)) row.eventsByDay.set(dayKey, []);
+        row.eventsByDay.get(dayKey).push(event);
       });
-      const visibleWeekdayIndexes = weekdayLabels
+      const visibleDayIndexes = weekDates
         .map((_, weekdayIndex) => weekdayIndex)
-        .filter(weekdayIndex => weekdayHasEvent[weekdayIndex]);
-      if (!visibleWeekdayIndexes.length) {
-        return `<div class="calendar-grid is-empty" style="--calendar-columns: 1;" aria-label="${code} 2026 clickable event calendar"></div>`;
-      }
-      const cells = visibleWeekdayIndexes.map(weekdayIndex => `<div class="calendar-day-name">${weekdayLabels[weekdayIndex]}</div>`);
+        .filter(weekdayIndex => dayHasEvent[weekdayIndex]);
+      const columnCount = Math.max(visibleDayIndexes.length, 1);
+      const commonOrder = typeof commonVenuePromoterGroups !== "undefined"
+        ? new Map(commonVenuePromoterGroups.map((group, index) => [group.key, index]))
+        : new Map();
+      const otherKey = typeof otherVenuePromoterGroup !== "undefined" ? otherVenuePromoterGroup.key : "other";
+      const groupOrder = group => commonOrder.has(group.key) ? commonOrder.get(group.key) : (group.key === otherKey ? 999 : 500);
+      const sortedGroups = [...groups.values()].sort((a, b) => {
+        const orderSort = groupOrder(a) - groupOrder(b);
+        if (orderSort) return orderSort;
+        const dateSort = a.firstSortDate.localeCompare(b.firstSortDate);
+        if (dateSort) return dateSort;
+        return a.label.localeCompare(b.label);
+      });
+      const cells = [
+        `<div class="calendar-venue-heading">Venue / promoter</div>`,
+        ...visibleDayIndexes.map(index => `<div class="calendar-day-name"><span>${weekdayLabels[index]}</span><b>${localDateLabel(weekDates[index])}</b></div>`)
+      ];
 
-      for (let weekStart = 1 - startOffset; weekStart <= daysInMonth; weekStart += 7) {
-        const weekHasEvent = visibleWeekdayIndexes.some(weekdayIndex => eventsByDay.has(weekStart + weekdayIndex));
-        if (!weekHasEvent) continue;
-        visibleWeekdayIndexes.forEach(weekdayIndex => {
-          const day = weekStart + weekdayIndex;
-          if (day < 1 || day > daysInMonth) {
-            cells.push(`<div class="calendar-day empty" aria-hidden="true"></div>`);
-            return;
-          }
-          const dayEvents = eventsByDay.get(day) || [];
+      if (!sortedGroups.length || !visibleDayIndexes.length) {
+        return `<div class="calendar-grid calendar-week-grid is-empty" style="--calendar-columns: ${columnCount};" aria-label="${localDateLabel(weekDates[0])}-${localDateLabel(weekDates[6])} weekly event calendar by venue and promoter">${cells.join("")}</div>`;
+      }
+
+      sortedGroups.forEach(group => {
+        const rowCount = [...group.eventsByDay.values()].reduce((sum, rows) => sum + rows.length, 0);
+        cells.push(`
+          <div class="calendar-venue-label">
+            <b>${escapeHtml(group.label)}</b>
+            ${group.meta ? `<small>${escapeHtml(group.meta)}</small>` : ""}
+            <small>${rowCount} event${rowCount === 1 ? "" : "s"}</small>
+          </div>
+        `);
+        visibleDayIndexes.forEach(index => {
+          const date = weekDates[index];
+          const dayKey = keyFromDate(date);
+          const dayEvents = (group.eventsByDay.get(dayKey) || []).sort((a, b) => String(a.time || "").localeCompare(String(b.time || "")));
           cells.push(`
             <div class="calendar-day ${dayEvents.length ? "has-event" : ""}">
-              <div class="calendar-date"><span>${day}</span><span>${dayEvents.length ? dayEvents.length : ""}</span></div>
+              <div class="calendar-date"><span>${date.getDate()}</span><span>${dayEvents.length ? dayEvents.length : ""}</span></div>
               <div class="calendar-events">
                 ${dayEvents.map(event => {
                   const organizer = knownOrganizerFor(event);
@@ -4365,9 +4510,9 @@
             </div>
           `);
         });
-      }
+      });
 
-      return `<div class="calendar-grid" style="--calendar-columns: ${visibleWeekdayIndexes.length};" aria-label="${code} 2026 clickable event calendar">${cells.join("")}</div>`;
+      return `<div class="calendar-grid calendar-week-grid" style="--calendar-columns: ${columnCount};" aria-label="${localDateLabel(weekDates[0])}-${localDateLabel(weekDates[6])} weekly event calendar by venue and promoter">${cells.join("")}</div>`;
     }
 
     function isLikelyImageUrl(value) {
@@ -4481,49 +4626,240 @@
       return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
     }
 
-    function eventMatches(event) {
-      const query = searchInput.value.trim().toLowerCase();
-      const status = statusFilter.value;
-      const vibe = vibeFilter.value;
-      const venue = venueFilter.value;
+    const commonVenuePromoterGroups = [
+      { key: "abyss", label: "Abyss", aliases: ["abyss", "abyss-shanghai"] },
+      { key: "potent", label: "POTENT", aliases: ["potent"] },
+      { key: "exit", label: "EXIT", aliases: ["exit"] },
+      { key: "heim", label: "Heim", aliases: ["heim"] },
+      { key: "system", label: "System", aliases: ["system"] },
+      { key: "wigwam", label: "Wigwam", aliases: ["wigwam"] },
+      { key: "reactor", label: "Reactor", aliases: ["reactor", "reactor-shanghai", "reactorsh"] },
+      { key: "space-panda", label: "Space Panda", aliases: ["space-panda"] },
+      { key: "alter", label: "ALTER", aliases: ["alter", "alter-byyb"] },
+      { key: "dirty", label: "Dirty House / INS", aliases: ["dirty", "dirty-house", "ins"] },
+      { key: "illum", label: "ILLUM / KNOT", aliases: ["illum", "knot"] },
+      { key: "void-vacuum", label: "VOID / VACUUM", aliases: ["void", "vacuum", "void-vacuum"] }
+    ];
+    const otherVenuePromoterGroup = { key: "other", label: "Other", aliases: [] };
+
+    function commonGroupAliasSet(group) {
+      return new Set([group.key, group.label, ...(group.aliases || [])].map(normalizeFilterKey).filter(Boolean));
+    }
+
+    function commonGroupMatchesEvent(event, group, preferredType = "") {
+      const aliases = commonGroupAliasSet(group);
+      const entities = eventFilterEntities(event).filter(entity => !preferredType || entity.type === preferredType);
+      if (entities.some(entity => aliases.has(entity.key))) return true;
+      const normalizedText = normalizeFilterKey(searchableText(event));
+      return [...aliases].some(alias => alias && normalizedText.includes(alias));
+    }
+
+    function eventMatchesOtherVenueGroup(event) {
+      return !commonVenuePromoterGroups.some(group => commonGroupMatchesEvent(event, group));
+    }
+
+    function eventMatchesVenueSelection(event, key) {
+      if (key === otherVenuePromoterGroup.key) return eventMatchesOtherVenueGroup(event);
+      const group = commonVenuePromoterGroups.find(item => item.key === key);
+      if (group) return commonGroupMatchesEvent(event, group);
+      return eventFilterEntities(event).some(entity => entity.key === key);
+    }
+
+    function calendarGroupFor(event) {
+      const venueGroup = commonVenuePromoterGroups.find(group => commonGroupMatchesEvent(event, group, "venue"));
+      const promoterGroup = commonVenuePromoterGroups.find(group => commonGroupMatchesEvent(event, group, "promoter"));
+      const group = venueGroup || promoterGroup;
+      if (group) {
+        const organizer = knownOrganizerFor(event);
+        return {
+          key: group.key,
+          label: group.label,
+          meta: organizer && normalizeFilterKey(organizer) !== group.key ? organizer : ""
+        };
+      }
+      return {
+        key: otherVenuePromoterGroup.key,
+        label: otherVenuePromoterGroup.label,
+        meta: "Less frequent venues / promoters"
+      };
+    }
+
+    function eventMatchesWithoutWeek(event, options = {}) {
+      const query = searchInput ? searchInput.value.trim().toLowerCase() : "";
+      const status = statusFilter ? statusFilter.value : "all";
+      const vibe = vibeFilter ? vibeFilter.value : "all";
       const haystack = searchableText(event);
       if (!dateWindowMatches(event)) return false;
       if (status !== "all" && eventEffectiveStatus(event) !== status) return false;
       if (vibe !== "all" && !event.vibe.includes(vibe) && !eventSoundTags(event).includes(vibe) && !eventDecisionTags(event).includes(vibe)) return false;
-      if (!eventVenueGroupMatches(event, venue)) return false;
+      if (options.includeVenue !== false && !eventVenueGroupMatches(event, selectedVenueGroups)) return false;
       if (query && !haystack.includes(query)) return false;
       return true;
     }
 
-    function renderRail() {
-      railEl.innerHTML = months.map(([code]) => `<button class="month-button" data-month="${code}" type="button"><span>${code}</span><b>0</b></button>`).join("");
-      railEl.querySelectorAll("button").forEach(button => {
-        button.addEventListener("click", () => {
-          activeMonth = button.dataset.month;
-          renderCalendar();
-          calendarEl.scrollIntoView({ behavior: "smooth", block: "start" });
-        });
+    function eventMatches(event) {
+      if (!eventMatchesWithoutWeek(event)) return false;
+      return eventWeekStartKey(event) === activeWeekStart;
+    }
+
+    function weekCountsForCurrentFilters() {
+      const counts = new Map();
+      events.filter(event => eventMatchesWithoutWeek(event)).forEach(event => {
+        const key = eventWeekStartKey(event);
+        if (!key) return;
+        counts.set(key, (counts.get(key) || 0) + 1);
+      });
+      return counts;
+    }
+
+    function weekKeysForCurrentFilters() {
+      return [...weekCountsForCurrentFilters().keys()].sort();
+    }
+
+    function preferredWeekFromKeys(keys) {
+      if (!keys.length) return weekStartKey(today);
+      if (keys.includes(activeWeekStart)) return activeWeekStart;
+      const todayWeek = weekStartKey(today);
+      return keys.find(key => key >= todayWeek) || keys[0];
+    }
+
+    function firstMatchingWeekForMonth(monthCode) {
+      return weekKeysForCurrentFilters().find(key => {
+        return events.some(event => eventMatchesWithoutWeek(event) && event.month === monthCode && eventWeekStartKey(event) === key);
       });
     }
 
+    function syncActiveWeekToMatches() {
+      const keys = weekKeysForCurrentFilters();
+      activeWeekStart = preferredWeekFromKeys(keys);
+      activeMonth = monthCodeForWeek(activeWeekStart);
+    }
+
+    function weekOptionText(weekStart, count) {
+      return `${formatWeekRange(weekStart)}${count ? ` (${count})` : " (0)"}`;
+    }
+
+    function renderWeekFilterOptions() {
+      if (!weekFilter) return;
+      const counts = weekCountsForCurrentFilters();
+      const keys = [...counts.keys()].sort();
+      if (!keys.length && activeWeekStart) keys.push(activeWeekStart);
+      weekFilter.innerHTML = keys.map(key => `<option value="${escapeHtml(key)}">${escapeHtml(weekOptionText(key, counts.get(key) || 0))}</option>`).join("");
+      weekFilter.value = activeWeekStart;
+    }
+
+    function venueFilterOptions() {
+      const counts = new Map(commonVenuePromoterGroups.map(group => [group.key, 0]));
+      let otherCount = 0;
+      events.forEach(event => {
+        let matchedCommon = false;
+        commonVenuePromoterGroups.forEach(group => {
+          if (commonGroupMatchesEvent(event, group)) {
+            counts.set(group.key, (counts.get(group.key) || 0) + 1);
+            matchedCommon = true;
+          }
+        });
+        if (!matchedCommon) otherCount += 1;
+      });
+      return commonVenuePromoterGroups
+        .map(group => ({ key: group.key, label: group.label, type: "common", count: counts.get(group.key) || 0 }))
+        .concat([{ ...otherVenuePromoterGroup, type: "other", count: otherCount }]);
+    }
+
+    function selectedVenueLabels(options = venueFilterOptions()) {
+      const labels = new Map(options.map(option => [option.key, option.label]));
+      return [...selectedVenueGroups].map(key => labels.get(key) || key);
+    }
+
+    function updateVenueFilterLabel() {
+      if (!venueFilterToggle) return;
+      const labels = selectedVenueLabels();
+      if (!labels.length) {
+        venueFilterToggle.textContent = "All common + Other";
+      } else if (labels.length <= 2) {
+        venueFilterToggle.textContent = labels.join(" + ");
+      } else {
+        venueFilterToggle.textContent = `${labels.length} venue / promoter groups`;
+      }
+    }
+
+    function renderVenueFilterOptions() {
+      if (!venueFilterMenu) return;
+      const options = venueFilterOptions();
+      venueFilterMenu.innerHTML = `
+        <button class="multi-select-clear" type="button" data-clear-venues>All common + Other</button>
+        ${options.map(option => `
+          <label class="multi-select-option ${option.type === "other" ? "other-option" : ""}">
+            <input type="checkbox" value="${escapeHtml(option.key)}" ${selectedVenueGroups.has(option.key) ? "checked" : ""}>
+            <span>${escapeHtml(option.label)}</span>
+            <b>${option.count}</b>
+          </label>
+        `).join("")}
+      `;
+      venueFilterMenu.querySelector("[data-clear-venues]")?.addEventListener("click", () => {
+        selectedVenueGroups.clear();
+        syncActiveWeekToMatches();
+        renderCalendar();
+      });
+      venueFilterMenu.querySelectorAll("input[type='checkbox']").forEach(input => {
+        input.addEventListener("change", () => {
+          if (input.checked) selectedVenueGroups.add(input.value);
+          else selectedVenueGroups.delete(input.value);
+          syncActiveWeekToMatches();
+          renderCalendar();
+        });
+      });
+      updateVenueFilterLabel();
+    }
+
+    function monthCountsForCurrentFilters() {
+      const counts = new Map(months.map(([code]) => [code, 0]));
+      events.filter(event => eventMatchesWithoutWeek(event)).forEach(event => {
+        counts.set(event.month, (counts.get(event.month) || 0) + 1);
+      });
+      return counts;
+    }
+
+    function renderMonthFilterOptions() {
+      if (!railEl) return;
+      const counts = monthCountsForCurrentFilters();
+      railEl.innerHTML = months.map(([code, name]) => `<option value="${code}">${name} (${counts.get(code) || 0})</option>`).join("");
+      railEl.value = activeMonth;
+    }
+
+    function renderRail() {
+      if (!railEl) return;
+      railEl.addEventListener("change", () => {
+        activeMonth = railEl.value || activeMonth;
+        const week = firstMatchingWeekForMonth(activeMonth);
+        if (week) activeWeekStart = week;
+        renderCalendar();
+        calendarEl.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+      renderMonthFilterOptions();
+    }
+
     function renderCalendar() {
+      syncActiveWeekToMatches();
+      renderWeekFilterOptions();
+      renderVenueFilterOptions();
+      renderMonthFilterOptions();
       const month = months.find(([code]) => code === activeMonth) || months[0];
       const [code, name] = month;
-      const monthEvents = events.filter(event => event.month === code).sort((a, b) => a.sortDate.localeCompare(b.sortDate));
-      const visibleEvents = monthEvents.filter(eventMatches);
+      const visibleEvents = events.filter(eventMatches).sort((a, b) => a.sortDate.localeCompare(b.sortDate));
       const watch = watchMonths[code];
-      const showWatch = watch && (dateWindow === "all" || dateWindow === "future") && (statusFilter.value === "all" || statusFilter.value === "watch") && (vibeFilter.value === "all") && (venueFilter.value === "all");
+      const showWatch = watch && (dateWindow === "all" || dateWindow === "future") && (statusFilter.value === "all" || statusFilter.value === "watch") && (vibeFilter.value === "all") && selectedVenueGroups.size === 0;
       calendarEl.innerHTML = `
-        <section class="month-section" id="month-${code}">
+        <section class="month-section" id="week-${activeWeekStart}">
           <div class="month-header">
             <div class="month-code">${code}</div>
             <div>
-              <h2>${name} 2026</h2>
+              <h2>${formatWeekRange(activeWeekStart)} / ${name} 2026</h2>
               <p>${monthCopy(code, visibleEvents.length, watch)}</p>
             </div>
             <div class="count-badge">${visibleEvents.length}${showWatch ? " + watchlist" : ""}</div>
           </div>
-          ${renderMonthGrid(code, visibleEvents)}
+          ${renderMonthGrid(activeWeekStart, visibleEvents)}
         </section>
       `;
       calendarEl.querySelectorAll(".event-link, .calendar-event").forEach(link => {
@@ -4549,8 +4885,8 @@
     }
 
     function monthCopy(code, count, watch) {
-      if (count > 0) return `${count} matching sourced listing${count === 1 ? "" : "s"} in this view.`;
-      if (watch && (dateWindow === "all" || dateWindow === "future")) return "Watchlist month: public rave and underground electronic calendars are not reliable enough yet.";
+      if (count > 0) return `${count} matching sourced listing${count === 1 ? "" : "s"} in this week.`;
+      if (watch && (dateWindow === "all" || dateWindow === "future")) return "Watchlist period: public rave and underground electronic calendars are not reliable enough yet.";
       if (dateWindow === "future") return "No upcoming entries match the current filters.";
       return "No entries match the current view.";
     }
@@ -5090,7 +5426,6 @@
       if (!setPlanner) return;
       const planningEvents = events
         .filter(eventMatches)
-        .filter(event => event.month === activeMonth)
         .filter(event => dateWindow !== "all" || !eventIsPastByCutoff(event))
         .sort((a, b) => parseEventDateTime(a).start - parseEventDateTime(b).start)
         .slice(0, 10);
@@ -5151,26 +5486,17 @@
     }
 
     function updateCalendarState() {
-      const visible = events.filter(eventMatches);
+      const visible = events.filter(event => eventMatchesWithoutWeek(event));
+      const weekVisible = events.filter(eventMatches);
       if (filterSummary) {
-        const entryLabel = visible.length === 1 ? "entry" : "entries";
-        const activeMonthCount = activeMonth ? visible.filter(event => event.month === activeMonth).length : visible.length;
-        filterSummary.textContent = `${visible.length} ${entryLabel} total / ${activeMonthCount} in ${activeMonth} / ${dateWindowLabels[dateWindow] || "current view"}`;
+        const entryLabel = weekVisible.length === 1 ? "entry" : "entries";
+        const totalLabel = visible.length === 1 ? "match" : "matches";
+        filterSummary.textContent = `${weekVisible.length} ${entryLabel} this week / ${visible.length} ${totalLabel} / ${dateWindowLabels[dateWindow] || "current view"}`;
       }
-      document.querySelectorAll(".month-button").forEach(button => {
-        const count = visible.filter(event => event.month === button.dataset.month).length;
-        button.classList.toggle("active", button.dataset.month === activeMonth);
-        button.classList.toggle("has-match", count > 0);
-        const countEl = button.querySelector("b");
-        if (countEl) countEl.textContent = `${count}`;
-      });
     }
 
     function syncActiveMonthToMatches() {
-      const activeHasMatches = events.some(event => event.month === activeMonth && eventMatches(event));
-      if (activeHasMatches) return;
-      const nextMonth = months.find(([code]) => events.some(event => event.month === code && eventMatches(event)));
-      if (nextMonth) activeMonth = nextMonth[0];
+      syncActiveWeekToMatches();
     }
 
     function setDateWindow(nextWindow) {
@@ -5189,10 +5515,37 @@
         syncActiveMonthToMatches();
         renderCalendar();
       };
-      [searchInput, statusFilter, vibeFilter, venueFilter].forEach(control => {
+      [searchInput, statusFilter, vibeFilter].forEach(control => {
         control.addEventListener("input", handleControlChange);
         control.addEventListener("change", handleControlChange);
       });
+      if (weekFilter) {
+        weekFilter.addEventListener("change", () => {
+          activeWeekStart = weekFilter.value || activeWeekStart;
+          activeMonth = monthCodeForWeek(activeWeekStart);
+          renderCalendar();
+        });
+      }
+      if (venueFilterToggle && venueFilter) {
+        venueFilterToggle.addEventListener("click", () => {
+          const open = !venueFilter.classList.contains("open");
+          venueFilter.classList.toggle("open", open);
+          venueFilterToggle.setAttribute("aria-expanded", open ? "true" : "false");
+        });
+        document.addEventListener("click", event => {
+          if (!venueFilter.contains(event.target)) {
+            venueFilter.classList.remove("open");
+            venueFilterToggle.setAttribute("aria-expanded", "false");
+          }
+        });
+        venueFilter.addEventListener("keydown", event => {
+          if (event.key === "Escape") {
+            venueFilter.classList.remove("open");
+            venueFilterToggle.setAttribute("aria-expanded", "false");
+            venueFilterToggle.focus();
+          }
+        });
+      }
       document.querySelectorAll(".quick-filter[data-window]").forEach(button => {
         button.addEventListener("click", () => {
           setDateWindow(button.dataset.window);
@@ -5284,6 +5637,7 @@
       const date = eventDate(event);
       if (date && date < today && dateWindow === "future") setDateWindow("all");
       activeMonth = event.month || monthCodeFromSortDate(event.sortDate);
+      if (date) activeWeekStart = weekStartKey(date);
       renderCalendar();
       window.setTimeout(() => openModal(event), 0);
       return true;
