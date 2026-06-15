@@ -9,6 +9,7 @@
 })(typeof globalThis !== "undefined" ? globalThis : this, function accountSystemFactory() {
   const STORAGE_PREFERENCES = "rave-account-preferences-v1";
   const STORAGE_SAVED_EVENTS = "rave-account-saved-events-v1";
+  const DEFAULT_ACCOUNT_AUTH_REDIRECT_URL = "https://raveindexsh.top/account.html";
   const supportedVibes = ["hard-techno", "industrial", "groovy", "hypnotic", "minimal", "melodic", "acid", "trance-adjacent", "bass-hybrid", "live-av", "warehouse", "rooftop", "hard", "underground", "date", "experimental", "bass"];
   const supportedBudgets = ["any", "free", "low"];
   const supportedTimings = ["any", "early", "late"];
@@ -482,8 +483,8 @@
         return {
           tone: "success",
           title: "Check your email",
-          body: `Supabase accepted ${address}. Open the confirmation email, then return here and sign in with the same password.`,
-          steps: ["Open the Supabase confirmation email", "Return to this page", "Use Sign in with the password you just set"],
+          body: `Supabase accepted ${address}. The confirmation email may show Supabase as the sender and can land in Junk or Spam.`,
+          steps: ["Check Inbox, Junk, and Spam", "Open the Supabase confirmation email", "Return here and use Sign in with the password you just set"],
         };
       }
       if (action === "sign-in") {
@@ -498,8 +499,8 @@
         return {
           tone: "success",
           title: "Email link sent",
-          body: `Check ${address} for the Supabase login link.`,
-          steps: ["Open the email link from this device", "Return here after the browser signs you in"],
+          body: `Check ${address} for the Supabase login link. It may show Supabase as the sender or land in Junk/Spam.`,
+          steps: ["Check Inbox, Junk, and Spam", "Open the email link from this device", "Return here after the browser signs you in"],
         };
       }
     }
@@ -529,8 +530,8 @@
       return {
         tone: "warning",
         title: "Confirm email first",
-        body: "Supabase has the account, but the email still needs confirmation before password login works.",
-        steps: ["Open the confirmation email", "Return to this page", "Click Sign in after confirmation"],
+        body: "Supabase has the account, but the email still needs confirmation before password login works. Check Junk/Spam if the message is missing.",
+        steps: ["Search Inbox, Junk, and Spam for Supabase", "Open the confirmation email", "Click Sign in after confirmation"],
       };
     }
     if (lower.includes("invalid login") || lower.includes("invalid credentials")) {
@@ -563,6 +564,26 @@
       body: message,
       steps: ["Try again once", "If it repeats, check Supabase Auth settings"],
     };
+  }
+
+  function accountAuthRedirectUrl(win = typeof window !== "undefined" ? window : undefined) {
+    const override = String(win?.RAVE_ACCOUNT_AUTH_REDIRECT_URL || "").trim();
+    if (override) return override;
+    const location = win?.location;
+    if (!location) return DEFAULT_ACCOUNT_AUTH_REDIRECT_URL;
+    const hostname = String(location.hostname || "").toLowerCase();
+    const protocol = String(location.protocol || "").toLowerCase();
+    const isLocal = protocol === "file:"
+      || hostname === "localhost"
+      || hostname === "127.0.0.1"
+      || hostname === "::1"
+      || hostname.endsWith(".local");
+    if (isLocal) return DEFAULT_ACCOUNT_AUTH_REDIRECT_URL;
+    try {
+      return new URL("account.html", `${location.origin}/`).href;
+    } catch (_error) {
+      return DEFAULT_ACCOUNT_AUTH_REDIRECT_URL;
+    }
   }
 
   function accountFeatureCatalog() {
@@ -1235,12 +1256,16 @@
       state.busyAction = action;
       state.authFeedback = accountAuthFeedback(action, "pending", { email });
       render();
+      const emailRedirectTo = accountAuthRedirectUrl(win);
 
       if (action === "sign-up") {
         const { data, error } = await state.client.auth.signUp({
           email,
           password,
-          options: { data: { full_name: displayName || undefined } },
+          options: {
+            data: { full_name: displayName || undefined },
+            emailRedirectTo,
+          },
         });
         if (error) throw error;
         state.session = data.session || state.session;
@@ -1261,7 +1286,7 @@
       } else if (action === "magic-link") {
         const { error } = await state.client.auth.signInWithOtp({
           email,
-          options: { emailRedirectTo: `${win.location.origin}${win.location.pathname}` },
+          options: { emailRedirectTo },
         });
         if (error) throw error;
         state.remoteStatus = "Magic link sent";
@@ -1459,6 +1484,7 @@
     adminAccessState,
     accountAuthFeedback,
     accountAuthErrorFeedback,
+    accountAuthRedirectUrl,
     accountFeatureCatalog,
     publicAccountGuide,
     enhancePublicAccountGuides,

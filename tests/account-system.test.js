@@ -10,6 +10,7 @@ const {
   adminAccessState,
   accountAuthFeedback,
   accountAuthErrorFeedback,
+  accountAuthRedirectUrl,
   accountFeatureCatalog,
   publicAccountGuide,
 } = require("../assets/account-system.js");
@@ -227,7 +228,8 @@ test("accountAuthFeedback gives explicit next steps for account flows", () => {
 
   const confirm = accountAuthFeedback("sign-up", "success", { email: "user@example.com", hasSession: false });
   assert.equal(confirm.title, "Check your email");
-  assert.ok(confirm.steps.includes("Use Sign in with the password you just set"));
+  assert.ok(confirm.body.includes("Supabase"));
+  assert.ok(confirm.steps.includes("Check Inbox, Junk, and Spam"));
 
   const signedIn = accountAuthFeedback("sign-in", "success", { email: "user@example.com", hasSession: true });
   assert.equal(signedIn.title, "Signed in");
@@ -245,6 +247,33 @@ test("accountAuthErrorFeedback translates common Supabase failures into guidance
   const badPassword = accountAuthErrorFeedback("sign-up", "Password must be at least 8 characters");
   assert.equal(badPassword.title, "Password needs attention");
   assert.ok(badPassword.steps.includes("Use at least 8 characters"));
+});
+
+test("accountAuthRedirectUrl avoids localhost confirmation links", () => {
+  assert.equal(accountAuthRedirectUrl({
+    location: {
+      protocol: "http:",
+      hostname: "localhost",
+      origin: "http://localhost:4173",
+    },
+  }), "https://raveindexsh.top/account.html");
+
+  assert.equal(accountAuthRedirectUrl({
+    location: {
+      protocol: "https:",
+      hostname: "raveindexsh.top",
+      origin: "https://raveindexsh.top",
+    },
+  }), "https://raveindexsh.top/account.html");
+
+  assert.equal(accountAuthRedirectUrl({
+    RAVE_ACCOUNT_AUTH_REDIRECT_URL: "https://preview.example.com/account.html",
+    location: {
+      protocol: "http:",
+      hostname: "localhost",
+      origin: "http://localhost:4173",
+    },
+  }), "https://preview.example.com/account.html");
 });
 
 test("accountFeatureCatalog lists live Supabase features and account expansion paths", () => {

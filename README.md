@@ -72,6 +72,8 @@ from public.set_profile_role_by_email('owner@example.com', 'admin');
 
 Passwords stay in Supabase Auth. This project only stores the role gate in `public.profiles`.
 
+Supabase Auth emails should redirect back to the public account page, not a local dev URL. The browser code sends `emailRedirectTo` with `https://raveindexsh.top/account.html` when the account flow is opened from `localhost`; deployed pages use their own `/account.html` origin. Add the production account URL to Supabase Auth redirect allow-list, and tell users the confirmation email may show Supabase as the sender or land in Junk/Spam.
+
 ## Event refresh
 
 V1 uses GitHub only:

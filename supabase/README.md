@@ -67,6 +67,18 @@ from public.set_profile_role_by_email('owner@example.com', 'admin');
 
 The role-hardening migration grants browser clients only profile select plus self `display_name` updates. Do not add service-role keys or owner email allowlists to browser code.
 
+### Auth Redirect URLs
+
+Account confirmation and magic-link emails use Supabase Auth redirects. Configure the Supabase dashboard Auth URL settings so these URLs are allowed:
+
+```text
+https://raveindexsh.top/account.html
+https://raveindexsh.top/account
+http://localhost:4173/account.html
+```
+
+The account page forces local sign-up and email-link requests to use the production account URL so confirmation emails do not send users to `localhost`. The confirmation email may appear from Supabase and can land in Junk/Spam.
+
 ## Poster Archive Upload
 
 After adding or replacing local poster files, run:
