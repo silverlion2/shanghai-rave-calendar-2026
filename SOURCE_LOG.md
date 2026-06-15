@@ -385,3 +385,86 @@ Validation passed:
 - `node scripts/check.js`
 - `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json`
 - `npm run check`
+
+## 2026-06-15 Liminal DJ Profile Gap Pass
+
+Ran the source sweep first, then used the core-field and performer-profile queues for targeted repair.
+
+Changes:
+
+- Added `Rainsoft` to `config/tracked-dj-profiles.json` with social-index profile/lineup context from Liminal Dreams and Wigwam search results.
+- Added `Toss` to `config/tracked-dj-profiles.json` with RA profile context from the prior Voltmar & Toss Wigwam listing plus current Liminal Dreams lineup-search context.
+- Kept `IIN` unresolved because available public results only surface the current Liminal Dreams lineup text, not an independent artist/profile source.
+- Reworded `botox-fatale` lineup evidence so SmartShanghai-confirmed Botox Fatale is the confirmed headliner; support names remain in social-index source notes until platform-visible confirmation.
+
+Result:
+
+- Future performer missing profile sources dropped from 3 to 1.
+- Future performer profile sources rose from 78 to 80.
+- Tracked DJ profiles rose from 92 to 94.
+- Future uncertain core fields dropped from 4 to 3.
+- `liminal-dreams` still needs direct platform verification for time, lineup, ticket route, door price, and age policy.
+
+Sources:
+
+- SmartShanghai June 2026 clubbing guide: `https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026`
+- Liminal Dreams Instagram event/profile search preview: `https://www.instagram.com/p/DZXV8WINwkB/`
+- Liminal Dreams x Wigwam lineup/time search preview: `https://www.instagram.com/p/DZFFVIPE8VW/`
+- RA Voltmar & Toss at Wigwam profile context: `https://de.ra.co/events/1989830`
+
+Validation passed:
+
+- `node scripts\scrape-events.js`
+- `npm run seo`
+- `node scripts\audit-events.js`
+- `node --test tests\event-cross-links.test.js tests\trust-framework.test.js`
+- `node scripts\check.js`
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json`
+
+## 2026-06-15 Poster Coverage And Display Pass
+
+No new external source search was performed in this pass. The audit used local `data/events.json`, `data/poster-archive.json`, `config/curated-events.json`, generated event pages, and downloaded files in `assets/posters/`.
+
+Poster coverage result:
+
+- RA Shanghai event coverage remains complete: 41 expected, 41 covered, 0 missing.
+- RA visible/upcoming event coverage remains complete: 15 expected, 15 covered.
+- Every RA coverage row has a local `posterUrl` and at least one `posterEvidence.localFiles` entry.
+- `assets/posters/` currently has 110 local image files.
+- `data/poster-archive.json` has 47 poster records, 47 optimized display assets, 24 venues, about 8.83 MB optimized display payload, and about 29.55 MB raw source payload.
+- Current/future rows: 32. Current/future rows with local poster evidence: 18. Current/future rows without local poster evidence: 14.
+
+Remaining current/future poster gaps:
+
+- `jasmin-knopha`
+- `liminal-dreams`
+- `botox-fatale`
+- `devils-dancers`
+- `shanghai-mushroom-music-carnival-2026`
+- `anika-kunst`
+- `hexscape`
+- `jaal`
+- `truth-lies`
+- `youshan-warmup`
+- `shenwave-music-festival-2026`
+- `misa-shanghai-summer-music-festival-2026`
+- `west-bund-dream-center-waterfront-music-festival-2026`
+- `the-magic-of-tomorrowland-shanghai-2026-watch`
+
+Display changes made from local evidence:
+
+- `poster-wall.html` now uses the browser's current Asia/Shanghai date for Upcoming filtering instead of a stale hardcoded date.
+- Event cards now show a lineup preview after `How we recommend`.
+- Poster modal now displays lineup, recommendation, best-for, verify-before-going, source-confidence, address, price, age, and source label.
+- `Resident Advisor` source labels are visible on the poster wall instead of being converted to a generic source label.
+- Updated stale RA confidence text on 10 events so it correctly says local flyer assets are stored under `assets/posters` and recorded in `posterEvidence.localFiles`.
+
+Validation:
+
+- `npm run seo` regenerated 89 event pages and sitemap.
+- `node scripts/check.js` passed.
+- `node --test tests/trust-framework.test.js tests/event-cross-links.test.js` passed.
+- `node scripts/audit-events.js` passed with stale future 0 and missing ticket-status 0.
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json` passed with must_fix 0 and should_fix 0.
+- `npm run check` passed with 66 tests.
+- Local Playwright smoke test confirmed `poster-wall.html` Upcoming count 32, first visible event Jun 17, modal opens, Resident Advisor source renders, and 5 insight rows render.

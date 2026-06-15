@@ -1,6 +1,6 @@
 # Project Memory
 
-Last updated: 2026-06-14 Asia/Shanghai
+Last updated: 2026-06-15 Asia/Shanghai
 
 ## Project
 
@@ -1019,6 +1019,87 @@ Verification:
 - `node scripts/audit-events.js` passed; RA Shanghai coverage remained 41/41 and 15/15 upcoming.
 - `node scripts/check.js` passed.
 - `node --test tests/trust-framework.test.js` passed.
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json` passed with 0 findings.
+
+## 2026-06-15 Poster Coverage And Display Pass
+
+Stopped external searching and audited only local data, downloaded poster assets, and generated pages.
+
+Poster state:
+
+- RA Shanghai coverage is poster-complete in the local ledger: 41 expected, 41 covered, 0 missing.
+- RA visible/upcoming coverage is also complete: 15 expected, 15 covered.
+- `assets/posters/` contains 110 image files, including optimized display variants and front/back reference files.
+- Current/future event rows: 32.
+- Current/future rows with local poster evidence: 18.
+- Current/future rows still missing local poster evidence: 14, all Watch/context leads rather than missing RA ledger rows.
+
+Display and trust changes:
+
+- Fixed `poster-wall.html` so the Upcoming filter uses the current Asia/Shanghai date instead of the stale hardcoded `2026-06-11`.
+- Added card-level lineup preview after the `How we recommend` trust link.
+- Added modal-level lineup, recommendation, best-for, verify-before-going, source-confidence, address, price, age, and source facts.
+- Stopped hiding the `Resident Advisor` source label on poster-wall display; RA is visible as a named source.
+- Fixed 10 RA event `sourceConfidence` strings that still claimed poster files were not stored locally after the assets had already been downloaded.
+
+Remaining poster gaps:
+
+- Missing local poster evidence remains for these future/current rows: `jasmin-knopha`, `liminal-dreams`, `botox-fatale`, `devils-dancers`, `shanghai-mushroom-music-carnival-2026`, `anika-kunst`, `hexscape`, `jaal`, `truth-lies`, `youshan-warmup`, `shenwave-music-festival-2026`, `misa-shanghai-summer-music-festival-2026`, `west-bund-dream-center-waterfront-music-festival-2026`, and `the-magic-of-tomorrowland-shanghai-2026-watch`.
+- Do not backfill these poster fields without direct event-page, official platform, ticketing, RA, SmartShanghai, or platform-native visual evidence.
+
+Validation passed:
+
+- `npm run seo`
+- `node scripts/check.js`
+- `node --test tests/trust-framework.test.js tests/event-cross-links.test.js`
+- `node scripts/audit-events.js`
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json`
+- `npm run check`
+- Local Playwright smoke test for `poster-wall.html`: Upcoming count 32, first card Jun 17, modal opens, Resident Advisor source and insight sections render.
+
+## 2026-06-15 Liminal DJ Profile Gap Pass
+
+Continued the source-sweep-first credibility workflow. The automated sweep ran first and kept the current/future-only rule intact: 90 events, 12 discovered links, 8 Computer Use/browser queues, and 69 curated updates.
+
+Implemented state:
+
+- Added tracked DJ profiles for `Rainsoft` and `Toss`, tied to the `liminal-dreams` Watch row.
+- Used public Liminal Dreams/Wigwam search-index evidence for Rainsoft and the current June 20 lineup lead.
+- Used RA's prior `Voltmar (DE) & Toss (VN)` Wigwam listing for Toss profile context; RA describes Toss as connected to the Vietnam Liminal Dreams collective and ambient / outer-music DJ context.
+- Left `IIN` as an unresolved performer profile gap because public search found only the current event lineup OCR/search-index lead, not an independent artist/profile source.
+- Reworded the `botox-fatale` lineup note so SmartShanghai-confirmed Botox Fatale is treated as the confirmed headliner while support names remain source-note context until platform-visible verification.
+
+Current metrics after regeneration:
+
+- Tracked DJ profiles: 94, up from 92.
+- Future performer profile sources: 80, up from 78.
+- Future performer missing profile sources: 1, down from 3.
+- Future uncertain core fields: 3, down from 4.
+- `liminal-dreams` performer profile gaps: only `IIN` remains.
+- `botox-fatale` no longer has an uncertain lineup flag; it still lacks time, price, age, ticket URL, and poster.
+- Stale future rows: 0.
+- Missing ticket-status rows: 0.
+
+Remaining gaps:
+
+- Continue platform-native visual verification for `jasmin-knopha`, `botox-fatale`, `anika-kunst`, `youshan-warmup`, and `liminal-dreams`.
+- Do not fill `IIN` as a profile until an independent artist, venue, promoter, RA, radio, or platform-visible source appears.
+- Ticket route, door price, age policy, and set-time gaps remain public-source gaps for the highest-priority Watch rows.
+
+Sources used in this pass:
+
+- SmartShanghai June 2026 clubbing guide: `https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026`
+- Liminal Dreams Instagram event/profile search preview: `https://www.instagram.com/p/DZXV8WINwkB/`
+- Liminal Dreams x Wigwam lineup/time search preview: `https://www.instagram.com/p/DZFFVIPE8VW/`
+- RA Voltmar & Toss at Wigwam profile context: `https://de.ra.co/events/1989830`
+
+Validation:
+
+- `node scripts\scrape-events.js` passed.
+- `npm run seo` passed.
+- `node scripts\audit-events.js` passed.
+- `node --test tests\event-cross-links.test.js tests\trust-framework.test.js` passed.
+- `node scripts\check.js` passed.
 - `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json` passed with 0 findings.
 
 ## 2026-06-15 Current/Future-Only Source Sweep

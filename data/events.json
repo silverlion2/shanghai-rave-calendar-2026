@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T06:10:03.482Z",
+  "generatedAt": "2026-06-15T06:28:38.359Z",
   "verified": "2026-06-15",
   "timezone": "Asia/Shanghai",
   "sourcePriority": [
@@ -4947,7 +4947,7 @@
       "recommendationReason": "Included for complete Resident Advisor Shanghai coverage; useful for a daylight house/disco hang, not a basement-rave recommendation.",
       "bestFor": "Readers looking for a low-pressure Sunday house/disco social rather than a late-room techno night.",
       "verifyBeforeGoing": "Recheck RA or ZUP for same-day timing, table/door policy, and whether the afternoon session is still running.",
-      "sourceConfidence": "RA coverage: event title, date, time, venue, lineup, genres, and flyer are visible on Resident Advisor; price and age are not exposed in the indexed text. Poster not stored locally yet, so flyer visibility is not used as a publish-blocking evidence field.",
+      "sourceConfidence": "RA coverage: event title, date, time, venue, lineup, genres, and flyer are visible on Resident Advisor; price and age are not exposed in the indexed text. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
       "sources": [
         {
           "label": "Resident Advisor",
@@ -5132,7 +5132,7 @@
       "recommendationReason": "Included for complete RA coverage and EXIT context; this is dance-culture programming, not a hard-techno pick.",
       "bestFor": "Readers following local dance battles, club-adjacent culture, and EXIT programming outside strict rave lanes.",
       "verifyBeforeGoing": "Confirm ticket availability, final running order, and door policy through RA before going.",
-      "sourceConfidence": "RA coverage: event facts, lineup roles, cost, and flyer are visible on Resident Advisor; door policy still needs same-day verification. Poster not stored locally yet, so flyer visibility is not used as a publish-blocking evidence field.",
+      "sourceConfidence": "RA coverage: event facts, lineup roles, cost, and flyer are visible on Resident Advisor; door policy still needs same-day verification. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
       "sources": [
         {
           "label": "Resident Advisor",
@@ -5323,7 +5323,7 @@
       "recommendationReason": "Included for complete RA coverage; a late POTENT house/club option with clear lineup but softer techno pressure.",
       "bestFor": "Late-room readers open to house and club selections at POTENT.",
       "verifyBeforeGoing": "Confirm live ticket state and door policy through RA or POTENT before going.",
-      "sourceConfidence": "RA coverage: date, time, venue, lineup, genre, cost, age, and flyer are visible on Resident Advisor. Poster not stored locally yet, so flyer visibility is not used as a publish-blocking evidence field.",
+      "sourceConfidence": "RA coverage: date, time, venue, lineup, genre, cost, age, and flyer are visible on Resident Advisor. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
       "sources": [
         {
           "label": "Resident Advisor",
@@ -5751,7 +5751,7 @@
       "recommendationReason": "Included for complete RA coverage; the artist context is stronger than the RA genre tag, so verify the actual room direction before treating it as a techno pick.",
       "bestFor": "Listeners tracking internationally connected underground bookings who are comfortable with a house-tagged POTENT night.",
       "verifyBeforeGoing": "Confirm set direction, ticket state, and door policy through RA or POTENT before going.",
-      "sourceConfidence": "RA coverage: date, time, venue, lineup, genre, cost, age, and flyer are visible on Resident Advisor. Poster not stored locally yet, so flyer visibility is not used as a publish-blocking evidence field.",
+      "sourceConfidence": "RA coverage: date, time, venue, lineup, genre, cost, age, and flyer are visible on Resident Advisor. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
       "sources": [
         {
           "label": "Resident Advisor",
@@ -5864,7 +5864,7 @@
       "recommendationReason": "Recommended as the strongest bass/140 signal in the current RA Shanghai batch, with a clear EXIT room, lineup, price, and ticket route.",
       "bestFor": "Bass, dubstep, UKG, and 140 listeners who want a club-focused alternative to straight techno.",
       "verifyBeforeGoing": "Confirm live ticket availability and any WeChat detail updates through the RA ticket/detail links before going.",
-      "sourceConfidence": "High RA coverage: date, time, venue, lineup, genres, cost, age, ticket/detail links, and flyer are visible on Resident Advisor. Poster not stored locally yet, so flyer visibility is not used as a publish-blocking evidence field.",
+      "sourceConfidence": "High RA coverage: date, time, venue, lineup, genres, cost, age, ticket/detail links, and flyer are visible on Resident Advisor. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
       "sources": [
         {
           "label": "Resident Advisor",
@@ -6060,7 +6060,7 @@
       "recommendationReason": "Recommended as a high-pressure RA-backed option: hard/industrial techno language, late Reactor room, named lineup, and clear price.",
       "bestFor": "Hard-techno, industrial, and high-intensity late-room listeners.",
       "verifyBeforeGoing": "Confirm live ticket state, set order, and door policy through RA or Reactor before going.",
-      "sourceConfidence": "High RA coverage: date, time, venue, lineup, genre, cost, age, artist framing, and flyer are visible on Resident Advisor. Poster not stored locally yet, so flyer visibility is not used as a publish-blocking evidence field.",
+      "sourceConfidence": "High RA coverage: date, time, venue, lineup, genre, cost, age, artist framing, and flyer are visible on Resident Advisor. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
       "sources": [
         {
           "label": "Resident Advisor",
@@ -6143,7 +6143,7 @@
       "recommendationReason": "Included only for complete RA coverage; low rave fit because the RA genre/description points to disco, pop, and 2000s nostalgia.",
       "bestFor": "Readers looking for a casual pop/disco party rather than underground electronic pressure.",
       "verifyBeforeGoing": "Confirm exact The Nest address, ticket price, age policy, and door state through RA or the organizer before going.",
-      "sourceConfidence": "RA coverage: title, date, time, venue label, promoter, lineup, and genre are visible on Resident Advisor; price, age, and exact address need confirmation. Poster not stored locally yet, so flyer visibility is not used as a publish-blocking evidence field.",
+      "sourceConfidence": "RA coverage: title, date, time, venue label, promoter, lineup, and genre are visible on Resident Advisor; price, age, and exact address need confirmation. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
       "sources": [
         {
           "label": "Resident Advisor",
@@ -6439,16 +6439,76 @@
       "status": "upcoming",
       "price": "128-168 RMB",
       "age": "18+",
+      "ticketStatus": "RA lists cost at 128-168 RMB, minimum age 18+, and a ticket link.",
       "source": "https://ra.co/events/2466422",
       "sourceLabel": "Resident Advisor",
       "imageTheme": "rose",
+      "posterUrl": "assets/posters/neon-jungle-tom-kynd.jpg",
       "description": "Spacepanda turns The Sukhothai Shanghai into a hotel club-night route with Tom Kynd, Psyche, and Mr Chang. RA lists techno/house, cost, age, and a ticket link.",
       "sourceStatus": "trusted-ra",
+      "addedAt": "2026-06-15",
+      "lastChecked": "2026-06-14",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/neon-jungle-ft-tom-kynd-at-urban-lounge",
+          "status": "watchlist",
+          "lastChecked": "2026-06-15"
+        },
+        {
+          "label": "Resident Advisor",
+          "url": "https://ra.co/events/2466422",
+          "status": "trusted-ra",
+          "lastChecked": "2026-06-14"
+        }
+      ],
+      "technoProfileSignals": [
+        {
+          "artist": "Mr Chang",
+          "matchedTerm": "Mr Chang",
+          "source": "tracked-dj-profiles"
+        },
+        {
+          "artist": "Tom Kynd",
+          "matchedTerm": "Tom Kynd",
+          "source": "tracked-dj-profiles"
+        },
+        {
+          "artist": "Psyche",
+          "matchedTerm": "Psyche",
+          "source": "tracked-dj-profiles"
+        }
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "date route",
+        "late room",
+        "ticket path",
+        "lineup visible"
+      ],
+      "kind": "event",
+      "soundTags": [
+        "bass-hybrid",
+        "rooftop",
+        "groovy"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "solid",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": []
+      },
+      "recommendationReason": "Included for complete RA coverage; better for a hotel/date club route than for readers seeking basement pressure.",
+      "bestFor": "Readers who want a polished hotel party with house/techno framing and clear ticket information.",
+      "verifyBeforeGoing": "Confirm live ticket availability, drink/table inclusions, and door policy through RA before going.",
+      "sourceConfidence": "RA coverage: date, time, venue, lineup, genres, cost, age, ticket link, and flyer are visible on Resident Advisor. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
       "address": "1F, 380 Weihai Road, Jing'an Area, Shanghai City",
       "organizer": "Spacepanda",
       "detailsUrl": "https://ra.co/events/2466422",
       "ticketUrl": "https://ra.co/events/2466422",
-      "lastChecked": "2026-06-14",
       "lineup": [
         {
           "name": "Tom Kynd",
@@ -6470,20 +6530,6 @@
           "note": "RA exposes a ticket link; use the RA page first for the exact handoff."
         }
       ],
-      "ticketStatus": "RA lists cost at 128-168 RMB, minimum age 18+, and a ticket link.",
-      "recommendationReason": "Included for complete RA coverage; better for a hotel/date club route than for readers seeking basement pressure.",
-      "bestFor": "Readers who want a polished hotel party with house/techno framing and clear ticket information.",
-      "verifyBeforeGoing": "Confirm live ticket availability, drink/table inclusions, and door policy through RA before going.",
-      "sourceConfidence": "RA coverage: date, time, venue, lineup, genres, cost, age, ticket link, and flyer are visible on Resident Advisor. Poster not stored locally yet, so flyer visibility is not used as a publish-blocking evidence field.",
-      "sources": [
-        {
-          "label": "Resident Advisor",
-          "url": "https://ra.co/events/2466422",
-          "status": "trusted-ra",
-          "lastChecked": "2026-06-14"
-        }
-      ],
-      "posterUrl": "assets/posters/neon-jungle-tom-kynd.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -6492,93 +6538,7 @@
         "localFiles": [
           "assets/posters/neon-jungle-tom-kynd.jpg"
         ]
-      },
-      "kind": "event",
-      "soundTags": [
-        "bass-hybrid",
-        "rooftop",
-        "groovy"
-      ],
-      "decisionTags": [
-        "techno-adjacent",
-        "date route",
-        "late room",
-        "ticket path",
-        "lineup visible"
-      ],
-      "decisionProfile": {
-        "intensity": "soft",
-        "credibility": "solid",
-        "lateRoom": true,
-        "ticketReady": true,
-        "hasLineup": true,
-        "hasPoster": true,
-        "riskFlags": []
       }
-    },
-    {
-      "id": "2026-06-20-nova-events-presents-sundown-char-bar",
-      "month": "Jun",
-      "sortDate": "2026-06-20",
-      "date": "Jun 20",
-      "time": "00:00",
-      "title": "Nova Events Presents: Sundown - CHAR Bar Rooftop Opening Party",
-      "venue": "Char",
-      "district": "Shanghai",
-      "vibe": [
-        "date"
-      ],
-      "genre": "electronic, club",
-      "confidence": "Watch",
-      "status": "watch",
-      "price": "Check source",
-      "age": "Check venue",
-      "ticketStatus": "Watchlist lead from SmartShanghai; verify ticket route, price tiers, availability, age policy, and venue details before planning.",
-      "source": "https://www.smartshanghai.com/event/sundown-char-bar-rooftop-opening-party-2026-06-20",
-      "sourceLabel": "SmartShanghai",
-      "imageTheme": "cyan",
-      "posterUrl": "https://images.smartshanghai.com.cn/uploads/repository/2026/06/15/fa7cd532-3583-4bf6-a436-1a6111b57474.jpg",
-      "description": "SUNDOWN marks the rooftop opening party at CHAR Bar, located on the 30th floor of Indigo Hotel Shanghai. Guests can enjoy panoramic skyline views, sunset scenery, and more than eight hours of music from Shanghai DJs while overlooking the city. Watchlist lead: verify lineup, ticketing, age policy, and venue details before planning.",
-      "sourceStatus": "watchlist",
-      "addedAt": "2026-06-15",
-      "lastChecked": "2026-06-15",
-      "sources": [
-        {
-          "label": "SmartShanghai",
-          "url": "https://www.smartshanghai.com/event/sundown-char-bar-rooftop-opening-party-2026-06-20",
-          "status": "watchlist",
-          "lastChecked": "2026-06-15"
-        }
-      ],
-      "kind": "event",
-      "soundTags": [
-        "melodic",
-        "rooftop"
-      ],
-      "decisionTags": [
-        "low techno fit",
-        "date route",
-        "late room",
-        "verify first"
-      ],
-      "decisionProfile": {
-        "intensity": "soft",
-        "credibility": "unconfirmed",
-        "lateRoom": true,
-        "ticketReady": false,
-        "hasLineup": false,
-        "hasPoster": true,
-        "riskFlags": [
-          "watchlist",
-          "ticket unclear",
-          "lineup limited",
-          "address/source check"
-        ]
-      },
-      "recommendationReason": "Kept on Watch because SmartShanghai gives a useful lead, but key practical details still need a stronger second source before promotion.",
-      "bestFor": "Best for a more social, house-forward, or date-friendly electronic music route.",
-      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
-      "sourceConfidence": "Watch-level confidence from SmartShanghai; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence."
     },
     {
       "id": "sciahri-potent",
@@ -6626,7 +6586,7 @@
       "recommendationReason": "Recommended as a clear RA-backed techno entry in the current Shanghai batch, with late-room timing and a named POTENT lineup.",
       "bestFor": "Techno-first readers comparing late-room options with clear source support.",
       "verifyBeforeGoing": "Confirm live ticket state and door policy through RA or POTENT before going.",
-      "sourceConfidence": "High RA coverage: date, time, venue, lineup, genre, cost, age, and flyer are visible on Resident Advisor. Poster not stored locally yet, so flyer visibility is not used as a publish-blocking evidence field.",
+      "sourceConfidence": "High RA coverage: date, time, venue, lineup, genre, cost, age, and flyer are visible on Resident Advisor. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
       "sources": [
         {
           "label": "Resident Advisor",
@@ -6720,7 +6680,7 @@
       "recommendationReason": "Included for complete RA coverage and Wigwam/MENSLIES tracking; promising club context but practical ticket details remain thin.",
       "bestFor": "Readers following Wigwam, MENSLIES, and local club-lineup context.",
       "verifyBeforeGoing": "Confirm price, age policy, and same-day door state through RA or Wigwam before going.",
-      "sourceConfidence": "RA coverage: date, time, venue, promoter, lineup, and flyer are visible on Resident Advisor; price and age need confirmation. Poster not stored locally yet, so flyer visibility is not used as a publish-blocking evidence field.",
+      "sourceConfidence": "RA coverage: date, time, venue, promoter, lineup, and flyer are visible on Resident Advisor; price and age need confirmation. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
       "sources": [
         {
           "label": "Resident Advisor",
@@ -6859,7 +6819,7 @@
       "lineup": [
         {
           "name": "Botox Fatale",
-          "note": "SmartShanghai lists Botox Fatale for Abyss on June 26; artist-side and Abyss social-index previews also point toward the Shanghai/Abyss route, while RA only confirms the nearby Shenzhen date."
+          "note": "SmartShanghai lists Botox Fatale for Abyss on June 26. RA also places Botox Fatale in South China the next day via Shenzhen; Shanghai support names stay in source notes until platform-visible confirmation."
         }
       ],
       "address": "B1, 523 Huaihai Zhong Lu, near Chengdu Bei Lu, Huangpu District"
@@ -8408,20 +8368,22 @@
     },
     {
       "url": "https://www.smartshanghai.com/event/disco-ball-fridays-skyline-dome-at-the-dome",
-      "title": "Disco Ball Fridays",
-      "parsed": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/sundown-char-bar-rooftop-opening-party-2026-06-20",
-      "title": "Nova Events Presents: Sundown - CHAR Bar Rooftop Opening Party",
-      "parsed": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/neon-jungle-ft-tom-kynd-at-urban-lounge",
       "title": "",
       "sourceLabel": "SmartShanghai",
       "parsed": false,
       "error": "This operation was aborted"
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/sundown-char-bar-rooftop-opening-party-2026-06-20",
+      "title": "",
+      "sourceLabel": "SmartShanghai",
+      "parsed": false,
+      "error": "This operation was aborted"
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/neon-jungle-ft-tom-kynd-at-urban-lounge",
+      "title": "Space Panda Presents: Neon Jungle ft. Tom Kynd",
+      "parsed": true
     },
     {
       "url": "https://www.smartshanghai.com/event/a-full-afrowave-takeover-at-la-burg",
@@ -8978,8 +8940,8 @@
   ],
   "curatedEventsApplied": 69,
   "djItineraryStats": {
-    "profileCount": 92,
-    "curatedProfileCount": 90,
+    "profileCount": 94,
+    "curatedProfileCount": 92,
     "generatedProfileCount": 1,
     "profileSourceCounts": {
       "10000": 2,
@@ -9108,13 +9070,16 @@
       "na-ty": 4,
       "nastyhabits124": 4,
       "toyn": 4,
-      "2yn100": 4
+      "2yn100": 4,
+      "rainsoft": 2,
+      "toss": 2,
+      "toss-vn": 2
     },
     "rowCount": 40
   },
   "quality": {
     "auditDate": "2026-06-15",
-    "generatedAt": "2026-06-15T06:10:03.482Z",
+    "generatedAt": "2026-06-15T06:28:38.359Z",
     "freshnessPolicy": {
       "eventSourceMaxAgeDays": 2,
       "nearEventWindowDays": 1,
@@ -9123,33 +9088,33 @@
       "rule": "Future event sources are expected to be rechecked within the two-day scrape cadence; events within the near-event window use the stricter near-event freshness window. Profile-level DJ sources have a longer freshness window because they support identity/context, not live ticket state."
     },
     "totals": {
-      "events": 90,
-      "future": 33,
+      "events": 89,
+      "future": 32,
       "futureHigh": 8,
-      "futureWatch": 19,
-      "singleSourceWatch": 5,
-      "singleConfirmationWatch": 13,
-      "venueProfiles": 41,
-      "futureVenueProfiles": 24,
-      "futureVenueWatch": 18,
+      "futureWatch": 18,
+      "singleSourceWatch": 4,
+      "singleConfirmationWatch": 12,
+      "venueProfiles": 40,
+      "futureVenueProfiles": 23,
+      "futureVenueWatch": 17,
       "futurePerformerProfiles": 81,
       "futurePerformerWatch": 25,
-      "singleSourceFuturePerformers": 56,
-      "futurePerformerProfileSources": 78,
-      "futurePerformerMissingProfileSources": 3,
+      "singleSourceFuturePerformers": 53,
+      "futurePerformerProfileSources": 80,
+      "futurePerformerMissingProfileSources": 1,
       "djSourceUpgradeQueue": 0,
-      "trackedDjProfiles": 92,
-      "curatedDjSourceProfiles": 90,
-      "technoArtistSignals": 88,
-      "technoArtistSignalProfiles": 63,
-      "eventsWithTechnoProfileSignals": 0,
+      "trackedDjProfiles": 94,
+      "curatedDjSourceProfiles": 92,
+      "technoArtistSignals": 89,
+      "technoArtistSignalProfiles": 64,
+      "eventsWithTechnoProfileSignals": 1,
       "trackedDjItineraryRows": 40,
       "staleFuture": 0,
       "missingTicketStatus": 0,
       "highMissingLineup": 0,
-      "futureCoreFieldQueue": 23,
-      "futureMissingCoreFields": 66,
-      "futureUncertainCoreFields": 4,
+      "futureCoreFieldQueue": 22,
+      "futureMissingCoreFields": 61,
+      "futureUncertainCoreFields": 3,
       "platformVerificationQueue": 5,
       "platformVerificationSources": 10,
       "curatedEventsApplied": 69,
@@ -9326,19 +9291,6 @@
         "nextAction": "Keep as context unless a direct source confirms stronger techno relevance."
       },
       {
-        "id": "2026-06-20-nova-events-presents-sundown-char-bar",
-        "date": "2026-06-20",
-        "title": "Nova Events Presents: Sundown - CHAR Bar Rooftop Opening Party",
-        "venue": "Char",
-        "priority": "low",
-        "fitScore": 0,
-        "sourceLabel": "SmartShanghai",
-        "sourceCount": 1,
-        "confirmationSourceCount": 1,
-        "reason": "single-source, lineup missing",
-        "nextAction": "Keep as context unless a direct source confirms stronger techno relevance."
-      },
-      {
         "id": "shenwave-music-festival-2026",
         "date": "2026-07-01",
         "title": "SHENWAVE Music Festival",
@@ -9453,38 +9405,37 @@
       ],
       "djProfileGate": {
         "source": "config/tracked-dj-profiles.json",
-        "signalCount": 88,
-        "profileCount": 63,
-        "matchedEventCount": 0,
-        "matchedEvents": []
+        "signalCount": 89,
+        "profileCount": 64,
+        "matchedEventCount": 1,
+        "matchedEvents": [
+          {
+            "id": "neon-jungle-tom-kynd",
+            "date": "2026-06-20",
+            "title": "NEON JUNGLE feat. TOM KYND",
+            "venue": "The Sukhothai Shanghai",
+            "signals": [
+              {
+                "artist": "Mr Chang",
+                "matchedTerm": "Mr Chang",
+                "source": "tracked-dj-profiles"
+              },
+              {
+                "artist": "Tom Kynd",
+                "matchedTerm": "Tom Kynd",
+                "source": "tracked-dj-profiles"
+              },
+              {
+                "artist": "Psyche",
+                "matchedTerm": "Psyche",
+                "source": "tracked-dj-profiles"
+              }
+            ]
+          }
+        ]
       }
     },
     "coreFieldQueue": [
-      {
-        "id": "botox-fatale",
-        "date": "2026-06-26",
-        "title": "Botox Fatale",
-        "venue": "Abyss Shanghai",
-        "confidence": "Watch",
-        "priority": "high",
-        "fitScore": 3,
-        "missingCoreFields": [
-          "time",
-          "price",
-          "age",
-          "ticketUrl"
-        ],
-        "uncertainCoreFields": [
-          "lineup"
-        ],
-        "missingNonCoreFields": [
-          "poster"
-        ],
-        "performerProfileGaps": [],
-        "coreFieldGapStatus": "public-source-gap",
-        "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
-        "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
-      },
       {
         "id": "youshan-warmup",
         "date": "2026-06-27",
@@ -9515,6 +9466,29 @@
         "date": "2026-06-20",
         "title": "Jasmin + Knopha",
         "venue": "Heim Sauna",
+        "confidence": "Watch",
+        "priority": "high",
+        "fitScore": 3,
+        "missingCoreFields": [
+          "time",
+          "price",
+          "age",
+          "ticketUrl"
+        ],
+        "uncertainCoreFields": [],
+        "missingNonCoreFields": [
+          "poster"
+        ],
+        "performerProfileGaps": [],
+        "coreFieldGapStatus": "public-source-gap",
+        "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
+        "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
+      },
+      {
+        "id": "botox-fatale",
+        "date": "2026-06-26",
+        "title": "Botox Fatale",
+        "venue": "Abyss Shanghai",
         "confidence": "Watch",
         "priority": "high",
         "fitScore": 3,
@@ -9667,9 +9641,7 @@
           "poster"
         ],
         "performerProfileGaps": [
-          "IIN",
-          "Rainsoft",
-          "Toss"
+          "IIN"
         ],
         "coreFieldGapStatus": "public-source-gap",
         "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
@@ -9801,28 +9773,6 @@
         "fitScore": 1,
         "missingCoreFields": [
           "age"
-        ],
-        "uncertainCoreFields": [],
-        "missingNonCoreFields": [],
-        "performerProfileGaps": [],
-        "coreFieldGapStatus": "public-source-gap",
-        "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
-        "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
-      },
-      {
-        "id": "2026-06-20-nova-events-presents-sundown-char-bar",
-        "date": "2026-06-20",
-        "title": "Nova Events Presents: Sundown - CHAR Bar Rooftop Opening Party",
-        "venue": "Char",
-        "confidence": "Watch",
-        "priority": "low",
-        "fitScore": 0,
-        "missingCoreFields": [
-          "address",
-          "price",
-          "age",
-          "ticketUrl",
-          "lineup"
         ],
         "uncertainCoreFields": [],
         "missingNonCoreFields": [],
@@ -10361,7 +10311,7 @@
           "techno, house",
           "techno, house, hotel party"
         ],
-        "sourceCount": 2,
+        "sourceCount": 3,
         "totalEvents": 2,
         "futureEvents": 1,
         "highConfidenceEvents": 1,
@@ -10521,25 +10471,6 @@
         "fitScore": 1,
         "priority": "low",
         "nextEventDate": "2026-06-27",
-        "lastChecked": "2026-06-15"
-      },
-      {
-        "venue": "Char",
-        "aliases": [],
-        "districts": [
-          "Shanghai"
-        ],
-        "genres": [
-          "electronic, club"
-        ],
-        "sourceCount": 1,
-        "totalEvents": 1,
-        "futureEvents": 1,
-        "highConfidenceEvents": 0,
-        "watchEvents": 1,
-        "fitScore": 0,
-        "priority": "low",
-        "nextEventDate": "2026-06-20",
         "lastChecked": "2026-06-15"
       },
       {
@@ -10981,8 +10912,8 @@
       }
     ],
     "djCoverage": {
-      "trackedItineraryProfiles": 92,
-      "curatedSourceProfiles": 90,
+      "trackedItineraryProfiles": 94,
+      "curatedSourceProfiles": 92,
       "trackedItineraryRows": 40,
       "futureProfiles": [
         {
@@ -12206,7 +12137,7 @@
           "name": "Mr Chang",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 1,
+          "sourceCount": 2,
           "trackedProfileSourceCount": 1,
           "venues": [
             "The Sukhothai Shanghai"
@@ -12216,7 +12147,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 0,
-          "singleSourceFutureAppearances": 1,
+          "singleSourceFutureAppearances": 0,
           "fitScore": 2,
           "priority": "medium",
           "nextDate": "2026-06-20"
@@ -12246,7 +12177,7 @@
           "name": "Psyche",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 1,
+          "sourceCount": 2,
           "trackedProfileSourceCount": 1,
           "venues": [
             "The Sukhothai Shanghai"
@@ -12256,7 +12187,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 0,
-          "singleSourceFutureAppearances": 1,
+          "singleSourceFutureAppearances": 0,
           "fitScore": 2,
           "priority": "medium",
           "nextDate": "2026-06-20"
@@ -12267,7 +12198,7 @@
           "eventCount": 1,
           "futureEventCount": 1,
           "sourceCount": 5,
-          "trackedProfileSourceCount": 0,
+          "trackedProfileSourceCount": 2,
           "venues": [
             "Wigwam"
           ],
@@ -12346,7 +12277,7 @@
           "name": "Tom Kynd",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 1,
+          "sourceCount": 2,
           "trackedProfileSourceCount": 1,
           "venues": [
             "The Sukhothai Shanghai"
@@ -12356,7 +12287,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 0,
-          "singleSourceFutureAppearances": 1,
+          "singleSourceFutureAppearances": 0,
           "fitScore": 2,
           "priority": "medium",
           "nextDate": "2026-06-20"
@@ -12367,7 +12298,7 @@
           "eventCount": 1,
           "futureEventCount": 1,
           "sourceCount": 5,
-          "trackedProfileSourceCount": 0,
+          "trackedProfileSourceCount": 2,
           "venues": [
             "Wigwam"
           ],

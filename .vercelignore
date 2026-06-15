@@ -1,0 +1,12 @@
+.git
+.vercel
+.chrome-headless*
+.playwright-cli
+.tmp
+node_modules
+output
+.env
+.env.*
+!.env.example
+Thumbs.db
+.DS_Store

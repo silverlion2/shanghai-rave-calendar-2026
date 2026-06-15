@@ -1640,7 +1640,7 @@
       "lineup": [
         {
           "name": "Botox Fatale",
-          "note": "SmartShanghai lists Botox Fatale for Abyss on June 26; artist-side and Abyss social-index previews also point toward the Shanghai/Abyss route, while RA only confirms the nearby Shenzhen date."
+          "note": "SmartShanghai lists Botox Fatale for Abyss on June 26. RA also places Botox Fatale in South China the next day via Shenzhen; Shanghai support names stay in source notes until platform-visible confirmation."
         }
       ],
       "description": "Watch-level Abyss hard-techno lead: SmartShanghai names Botox Fatale for June 26, and artist-side plus Abyss social-index previews point toward the ABYSS Shanghai route. Keep it on Watch until Abyss, promoter, RA Shanghai, ticketing, or Chrome-verified social evidence confirms practical details.",
@@ -2587,7 +2587,7 @@
       "recommendationReason": "Included for complete Resident Advisor Shanghai coverage; useful for a daylight house/disco hang, not a basement-rave recommendation.",
       "bestFor": "Readers looking for a low-pressure Sunday house/disco social rather than a late-room techno night.",
       "verifyBeforeGoing": "Recheck RA or ZUP for same-day timing, table/door policy, and whether the afternoon session is still running.",
-      "sourceConfidence": "RA coverage: event title, date, time, venue, lineup, genres, and flyer are visible on Resident Advisor; price and age are not exposed in the indexed text. Poster not stored locally yet, so flyer visibility is not used as a publish-blocking evidence field.",
+      "sourceConfidence": "RA coverage: event title, date, time, venue, lineup, genres, and flyer are visible on Resident Advisor; price and age are not exposed in the indexed text. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
       "sources": [
         {
           "label": "Resident Advisor",
@@ -2668,7 +2668,7 @@
       "recommendationReason": "Included for complete RA coverage and EXIT context; this is dance-culture programming, not a hard-techno pick.",
       "bestFor": "Readers following local dance battles, club-adjacent culture, and EXIT programming outside strict rave lanes.",
       "verifyBeforeGoing": "Confirm ticket availability, final running order, and door policy through RA before going.",
-      "sourceConfidence": "RA coverage: event facts, lineup roles, cost, and flyer are visible on Resident Advisor; door policy still needs same-day verification. Poster not stored locally yet, so flyer visibility is not used as a publish-blocking evidence field.",
+      "sourceConfidence": "RA coverage: event facts, lineup roles, cost, and flyer are visible on Resident Advisor; door policy still needs same-day verification. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
       "sources": [
         {
           "label": "Resident Advisor",
@@ -2734,7 +2734,7 @@
       "recommendationReason": "Included for complete RA coverage; a late POTENT house/club option with clear lineup but softer techno pressure.",
       "bestFor": "Late-room readers open to house and club selections at POTENT.",
       "verifyBeforeGoing": "Confirm live ticket state and door policy through RA or POTENT before going.",
-      "sourceConfidence": "RA coverage: date, time, venue, lineup, genre, cost, age, and flyer are visible on Resident Advisor. Poster not stored locally yet, so flyer visibility is not used as a publish-blocking evidence field.",
+      "sourceConfidence": "RA coverage: date, time, venue, lineup, genre, cost, age, and flyer are visible on Resident Advisor. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
       "sources": [
         {
           "label": "Resident Advisor",
@@ -2800,7 +2800,7 @@
       "recommendationReason": "Included for complete RA coverage; the artist context is stronger than the RA genre tag, so verify the actual room direction before treating it as a techno pick.",
       "bestFor": "Listeners tracking internationally connected underground bookings who are comfortable with a house-tagged POTENT night.",
       "verifyBeforeGoing": "Confirm set direction, ticket state, and door policy through RA or POTENT before going.",
-      "sourceConfidence": "RA coverage: date, time, venue, lineup, genre, cost, age, and flyer are visible on Resident Advisor. Poster not stored locally yet, so flyer visibility is not used as a publish-blocking evidence field.",
+      "sourceConfidence": "RA coverage: date, time, venue, lineup, genre, cost, age, and flyer are visible on Resident Advisor. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
       "sources": [
         {
           "label": "Resident Advisor",
@@ -2894,7 +2894,7 @@
       "recommendationReason": "Recommended as the strongest bass/140 signal in the current RA Shanghai batch, with a clear EXIT room, lineup, price, and ticket route.",
       "bestFor": "Bass, dubstep, UKG, and 140 listeners who want a club-focused alternative to straight techno.",
       "verifyBeforeGoing": "Confirm live ticket availability and any WeChat detail updates through the RA ticket/detail links before going.",
-      "sourceConfidence": "High RA coverage: date, time, venue, lineup, genres, cost, age, ticket/detail links, and flyer are visible on Resident Advisor. Poster not stored locally yet, so flyer visibility is not used as a publish-blocking evidence field.",
+      "sourceConfidence": "High RA coverage: date, time, venue, lineup, genres, cost, age, ticket/detail links, and flyer are visible on Resident Advisor. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
       "sources": [
         {
           "label": "Resident Advisor",
@@ -2961,7 +2961,7 @@
       "recommendationReason": "Recommended as a clear RA-backed techno entry in the current Shanghai batch, with late-room timing and a named POTENT lineup.",
       "bestFor": "Techno-first readers comparing late-room options with clear source support.",
       "verifyBeforeGoing": "Confirm live ticket state and door policy through RA or POTENT before going.",
-      "sourceConfidence": "High RA coverage: date, time, venue, lineup, genre, cost, age, and flyer are visible on Resident Advisor. Poster not stored locally yet, so flyer visibility is not used as a publish-blocking evidence field.",
+      "sourceConfidence": "High RA coverage: date, time, venue, lineup, genre, cost, age, and flyer are visible on Resident Advisor. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
       "sources": [
         {
           "label": "Resident Advisor",
@@ -3040,7 +3040,7 @@
       "recommendationReason": "Recommended as a high-pressure RA-backed option: hard/industrial techno language, late Reactor room, named lineup, and clear price.",
       "bestFor": "Hard-techno, industrial, and high-intensity late-room listeners.",
       "verifyBeforeGoing": "Confirm live ticket state, set order, and door policy through RA or Reactor before going.",
-      "sourceConfidence": "High RA coverage: date, time, venue, lineup, genre, cost, age, artist framing, and flyer are visible on Resident Advisor. Poster not stored locally yet, so flyer visibility is not used as a publish-blocking evidence field.",
+      "sourceConfidence": "High RA coverage: date, time, venue, lineup, genre, cost, age, artist framing, and flyer are visible on Resident Advisor. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
       "sources": [
         {
           "label": "Resident Advisor",
@@ -3101,7 +3101,7 @@
       "recommendationReason": "Included only for complete RA coverage; low rave fit because the RA genre/description points to disco, pop, and 2000s nostalgia.",
       "bestFor": "Readers looking for a casual pop/disco party rather than underground electronic pressure.",
       "verifyBeforeGoing": "Confirm exact The Nest address, ticket price, age policy, and door state through RA or the organizer before going.",
-      "sourceConfidence": "RA coverage: title, date, time, venue label, promoter, lineup, and genre are visible on Resident Advisor; price, age, and exact address need confirmation. Poster not stored locally yet, so flyer visibility is not used as a publish-blocking evidence field.",
+      "sourceConfidence": "RA coverage: title, date, time, venue label, promoter, lineup, and genre are visible on Resident Advisor; price, age, and exact address need confirmation. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
       "sources": [
         {
           "label": "Resident Advisor",
@@ -3174,7 +3174,7 @@
       "recommendationReason": "Included for complete RA coverage; better for a hotel/date club route than for readers seeking basement pressure.",
       "bestFor": "Readers who want a polished hotel party with house/techno framing and clear ticket information.",
       "verifyBeforeGoing": "Confirm live ticket availability, drink/table inclusions, and door policy through RA before going.",
-      "sourceConfidence": "RA coverage: date, time, venue, lineup, genres, cost, age, ticket link, and flyer are visible on Resident Advisor. Poster not stored locally yet, so flyer visibility is not used as a publish-blocking evidence field.",
+      "sourceConfidence": "RA coverage: date, time, venue, lineup, genres, cost, age, ticket link, and flyer are visible on Resident Advisor. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
       "sources": [
         {
           "label": "Resident Advisor",
@@ -3248,7 +3248,7 @@
       "recommendationReason": "Included for complete RA coverage and Wigwam/MENSLIES tracking; promising club context but practical ticket details remain thin.",
       "bestFor": "Readers following Wigwam, MENSLIES, and local club-lineup context.",
       "verifyBeforeGoing": "Confirm price, age policy, and same-day door state through RA or Wigwam before going.",
-      "sourceConfidence": "RA coverage: date, time, venue, promoter, lineup, and flyer are visible on Resident Advisor; price and age need confirmation. Poster not stored locally yet, so flyer visibility is not used as a publish-blocking evidence field.",
+      "sourceConfidence": "RA coverage: date, time, venue, promoter, lineup, and flyer are visible on Resident Advisor; price and age need confirmation. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
       "sources": [
         {
           "label": "Resident Advisor",

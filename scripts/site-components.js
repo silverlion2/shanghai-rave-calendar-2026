@@ -41,7 +41,9 @@ function renderSeoHead(structure, {
   <meta name="theme-color" content="#c6ff3b">
   <link rel="canonical" href="${escapeAttr(canonical)}">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="icon" href="/og-image.png" type="image/png">
+  <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 ${renderGoogleTag(structure.site.googleTagId)}
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="${escapeAttr(structure.site.name)}">

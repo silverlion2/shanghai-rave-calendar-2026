@@ -9,7 +9,9 @@
   <meta name="theme-color" content="#36c7e7">
   <link rel="canonical" href="https://raveindexsh.top/poster-wall">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="icon" href="/og-image.png" type="image/png">
+  <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HP6NQ3VZB9"></script>
   <script>
@@ -332,6 +334,7 @@
     }
 
     .wall-venue,
+    .wall-lineup,
     .wall-description {
       margin: 0;
       line-height: 1.35;
@@ -361,6 +364,16 @@
       font-size: 12px;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 4;
+    }
+
+    .wall-lineup {
+      color: var(--paper);
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+
+    .wall-lineup span {
+      color: var(--muted);
     }
 
     .trust-inline {
@@ -492,6 +505,32 @@
       margin: 0;
       color: var(--muted);
       line-height: 1.45;
+    }
+
+    .modal-insights {
+      display: grid;
+      gap: 10px;
+    }
+
+    .modal-insight {
+      border-left: 2px solid rgba(54, 199, 231, .56);
+      padding-left: 10px;
+    }
+
+    .modal-insight span {
+      display: block;
+      color: var(--dim, #77746c);
+      font-size: 10px;
+      text-transform: uppercase;
+    }
+
+    .modal-insight b {
+      display: block;
+      margin-top: 3px;
+      color: var(--paper);
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1.4;
     }
 
     .modal-facts {
@@ -688,6 +727,7 @@
         <h2 id="modalTitle"></h2>
         <p id="modalCopy"></p>
         <div id="modalTrustPolicy"></div>
+        <div class="modal-insights" id="modalInsights"></div>
         <div class="modal-facts" id="modalFacts"></div>
         <div class="modal-actions">
           <a class="button" id="modalEventPage" href="#">Event page</a>
@@ -699,11 +739,7 @@
   </div>
 
   <script>
-    const verified = "2026-06-11";
-    const today = (() => {
-      const [year, month, day] = verified.split("-").map(Number);
-      return new Date(year, month - 1, day);
-    })();
+    const today = shanghaiToday();
 
     const posterUrlOverrides = {
       "milo-cosmjn": "assets/posters/milo-cosmjn.jpg",
@@ -764,15 +800,25 @@
 
     function publicText(value) {
       return String(value ?? "")
-        .replace(/\bResident Advisor\b/g, "event directory")
-        .replace(/\bRA[-\s]+listed\b/gi, "listed")
-        .replace(/\bRA[-\s]+published\b/gi, "published")
-        .replace(/\bRA\s+/g, "directory ")
-        .replace(/\bRA\b/g, "directory");
+        .replace(/\bRA[-\s]+listed\b/gi, "Resident Advisor-listed")
+        .replace(/\bRA[-\s]+published\b/gi, "Resident Advisor-published");
     }
 
     function eventTrustLinkHtml() {
       return '<a class="trust-inline" href="trust.html">How we recommend</a>';
+    }
+
+    function shanghaiToday() {
+      const parts = new Intl.DateTimeFormat("en-CA", {
+        timeZone: "Asia/Shanghai",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit"
+      }).formatToParts(new Date()).reduce((acc, part) => {
+        if (part.type !== "literal") acc[part.type] = Number(part.value);
+        return acc;
+      }, {});
+      return new Date(parts.year, parts.month - 1, parts.day);
     }
 
     function normalizeVenueName(value) {
@@ -863,6 +909,48 @@
       return new Date(year, month - 1, day);
     }
 
+    function lineupItems(event) {
+      if (!Array.isArray(event.lineup)) return [];
+      return event.lineup.map(item => {
+        if (typeof item === "string") return { name: item, note: "" };
+        return { name: String(item.name || "").trim(), note: String(item.note || "").trim() };
+      }).filter(item => item.name);
+    }
+
+    function lineupNames(event) {
+      return lineupItems(event).map(item => item.name);
+    }
+
+    function lineupPreviewHtml(event) {
+      const names = lineupNames(event);
+      if (!names.length) return "";
+      const visible = names.slice(0, 4).join(" / ");
+      const extra = names.length > 4 ? ` +${names.length - 4}` : "";
+      return `<p class="wall-lineup"><span>Lineup</span> ${escapeHtml(visible + extra)}</p>`;
+    }
+
+    function cleanAddress(value) {
+      return String(value || "").replace(/^address:\s*/i, "").trim();
+    }
+
+    function modalInsightsHtml(event) {
+      const names = lineupNames(event);
+      const rows = [
+        ["Lineup", names.length ? names.join(" / ") : ""],
+        ["Recommendation", event.recommendationReason || ""],
+        ["Best for", event.bestFor || ""],
+        ["Verify before going", event.verifyBeforeGoing || ""],
+        ["Source confidence", event.sourceConfidence || ""]
+      ].filter(([, value]) => String(value || "").trim());
+
+      return rows.map(([label, value]) => `
+        <div class="modal-insight">
+          <span>${escapeHtml(label)}</span>
+          <b>${escapeHtml(publicText(value))}</b>
+        </div>
+      `).join("");
+    }
+
     const soundTagLabelMap = {
       "hard-techno": "hard techno",
       industrial: "industrial",
@@ -941,6 +1029,7 @@
               <p class="wall-venue">${venueGuideLinkHtml(event.venue)} / ${escapeHtml(event.district)}</p>
               <p class="wall-description">${escapeHtml(publicText(event.description || ""))}</p>
               ${eventTrustLinkHtml()}
+              ${lineupPreviewHtml(event)}
               <div class="wall-chips">
                 <span class="wall-chip confidence">${escapeHtml(event.confidence)}</span>
                 ${eventSignalChips(event, 4).map(tag => `<span class="wall-chip">${escapeHtml(tag)}</span>`).join("")}
@@ -973,10 +1062,15 @@
       document.getElementById("modalTitle").textContent = event.title;
       document.getElementById("modalCopy").textContent = publicText(event.description || "");
       document.getElementById("modalTrustPolicy").innerHTML = eventTrustLinkHtml();
+      document.getElementById("modalInsights").innerHTML = modalInsightsHtml(event);
       document.getElementById("modalFacts").innerHTML = [
         ["Date", escapeHtml(`${event.date} / ${event.time}`)],
         ["Venue", `${venueGuideLinkHtml(event.venue)} / ${escapeHtml(event.district)}`],
+        ["Address", escapeHtml(cleanAddress(event.address) || "Check source")],
+        ["Price", escapeHtml(event.price || "Check source")],
+        ["Age", escapeHtml(event.age || "Check source")],
         ["Sound", escapeHtml(event.genre)],
+        ["Source", escapeHtml(publicText(event.sourceLabel || "Source logged"))],
         ["Status", escapeHtml(`${event.status} / ${event.confidence}`)]
       ].map(([label, value]) => `<div class="fact"><span>${escapeHtml(label)}</span><b>${value}</b></div>`).join("");
       document.getElementById("modalEventPage").href = `events/${encodeURIComponent(event.id)}.html`;

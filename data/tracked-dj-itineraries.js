@@ -3435,5 +3435,76 @@ window.DJ_ITINERARY_DATA = {
         "checked": "2026-06-15"
       }
     ]
+  },
+  "rainsoft": {
+    "slug": "rainsoft",
+    "name": "Rainsoft",
+    "aliases": [
+      "Rainsoft"
+    ],
+    "trackedAt": "2026-06-15",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "Liminal Dreams / Wigwam ambient and techno profile",
+    "imageTheme": "cyan",
+    "genres": [
+      "ambient",
+      "drone",
+      "techno",
+      "outer music",
+      "Shanghai"
+    ],
+    "summary": "Shanghai-linked musician and DJ profile preserved for the Liminal Dreams / Wigwam watch lead. Public social-index text describes Rainsoft around deep ambient and techno; keep this as profile context until a standalone artist page is visually verified.",
+    "sourceNote": "Liminal Dreams social-index sources support the current June 20 lineup lead and profile-level ambient/techno context. They do not confirm ticketing, door price, age policy, or final running order.",
+    "sources": [
+      {
+        "label": "Liminal Dreams Instagram event/profile search preview",
+        "url": "https://www.instagram.com/p/DZXV8WINwkB",
+        "status": "social-index-profile-context",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "Liminal Dreams x Wigwam lineup/time search preview",
+        "url": "https://www.instagram.com/p/DZFFVIPE8VW",
+        "status": "social-index-lineup-context",
+        "checked": "2026-06-15"
+      }
+    ]
+  },
+  "toss": {
+    "slug": "toss",
+    "name": "Toss",
+    "aliases": [
+      "Toss",
+      "Toss (VN)"
+    ],
+    "trackedAt": "2026-06-15",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "Liminal Dreams / Wigwam ambient and outer-music profile",
+    "imageTheme": "green",
+    "genres": [
+      "ambient",
+      "outer music",
+      "experimental",
+      "Vietnam",
+      "Liminal Dreams"
+    ],
+    "summary": "Vietnam-linked Liminal Dreams context profile. RA event text places Toss with the Liminal Dreams collective and describes the DJ lane as ambient and outer music.",
+    "sourceNote": "RA supports Toss profile context and a previous Wigwam appearance; the current June 20 Liminal Dreams row remains watch-level because ticketing, price, age policy, and direct platform-visible post state are still unresolved.",
+    "sources": [
+      {
+        "label": "RA Voltmar & Toss at Wigwam profile context",
+        "url": "https://de.ra.co/events/1989830",
+        "status": "artist-profile",
+        "checked": "2026-06-15"
+      },
+      {
+        "label": "Liminal Dreams x Wigwam lineup/time search preview",
+        "url": "https://www.instagram.com/p/DZFFVIPE8VW",
+        "status": "social-index-lineup-context",
+        "checked": "2026-06-15"
+      }
+    ]
   }
 };
