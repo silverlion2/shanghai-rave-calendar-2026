@@ -5127,5 +5127,242 @@ window.DJ_ITINERARY_DATA = {
         "checked": "2026-06-16"
       }
     ]
+  },
+  "steal-tapes": {
+    "slug": "steal-tapes",
+    "name": "Steal Tapes",
+    "aliases": [
+      "Steal Tapes"
+    ],
+    "trackedAt": "2026-06-16",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "298 pres. Steal Tapes / EXIT lineup-context profile",
+    "imageTheme": "acid",
+    "genres": [
+      "house",
+      "techno",
+      "EXIT lineup context"
+    ],
+    "summary": "Steal Tapes is tracked here for 298 pres. Steal Tapes at EXIT on 2026-06-20. RA and the supplied poster confirm the HouseHeadz Records billing and lineup role; broader artist context remains unresolved.",
+    "sourceNote": "Tracked as an event-role profile only. The event source confirms this lineup appearance; do not add biography, label, nationality, or career claims until a stronger artist/profile source is found.",
+    "sources": [
+      {
+        "label": "RA 298 pres. Steal Tapes event",
+        "url": "https://ra.co/events/2468159",
+        "status": "trusted-ra",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "EXIT Steal Tapes ticket screenshot",
+        "url": "assets/posters/exit-steal-tapes-2026-06-20-ticket-home.jpg",
+        "status": "ticketing-home-screenshot",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "EXIT Steal Tapes original PNG poster screenshot",
+        "url": "assets/posters/exit-steal-tapes-2026-06-20-poster.png",
+        "status": "official-poster-screenshot",
+        "checked": "2026-06-16"
+      }
+    ]
+  },
+  "sam-tbd": {
+    "slug": "sam-tbd",
+    "name": "Sam TBD.",
+    "aliases": [
+      "Sam TBD"
+    ],
+    "trackedAt": "2026-06-16",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "298 pres. Steal Tapes / EXIT lineup-context profile",
+    "imageTheme": "acid",
+    "genres": [
+      "house",
+      "techno-adjacent",
+      "EXIT lineup context"
+    ],
+    "summary": "Sam TBD. is tracked here for the 298 / Steal Tapes EXIT lineup on 2026-06-20. The profile is event-role only until a stronger artist source is found.",
+    "sourceNote": "Tracked as an event-role profile only. The event source confirms this lineup appearance; do not add biography, label, nationality, or career claims until a stronger artist/profile source is found.",
+    "sources": [
+      {
+        "label": "RA 298 pres. Steal Tapes event",
+        "url": "https://ra.co/events/2468159",
+        "status": "trusted-ra",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "EXIT Steal Tapes ticket screenshot",
+        "url": "assets/posters/exit-steal-tapes-2026-06-20-ticket-home.jpg",
+        "status": "ticketing-home-screenshot",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "EXIT Steal Tapes original PNG poster screenshot",
+        "url": "assets/posters/exit-steal-tapes-2026-06-20-poster.png",
+        "status": "official-poster-screenshot",
+        "checked": "2026-06-16"
+      }
+    ]
+  },
+  "queenie": {
+    "slug": "queenie",
+    "name": "Queenie.",
+    "aliases": [
+      "Queenie"
+    ],
+    "trackedAt": "2026-06-16",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "298 pres. Steal Tapes / EXIT lineup-context profile",
+    "imageTheme": "acid",
+    "genres": [
+      "house",
+      "techno-adjacent",
+      "EXIT lineup context"
+    ],
+    "summary": "Queenie. is tracked here for the 298 / Steal Tapes EXIT lineup on 2026-06-20. The profile is event-role only until a stronger artist source is found.",
+    "sourceNote": "Tracked as an event-role profile only. The event source confirms this lineup appearance; do not add biography, label, nationality, or career claims until a stronger artist/profile source is found.",
+    "sources": [
+      {
+        "label": "RA 298 pres. Steal Tapes event",
+        "url": "https://ra.co/events/2468159",
+        "status": "trusted-ra",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "EXIT Steal Tapes ticket screenshot",
+        "url": "assets/posters/exit-steal-tapes-2026-06-20-ticket-home.jpg",
+        "status": "ticketing-home-screenshot",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "EXIT Steal Tapes original PNG poster screenshot",
+        "url": "assets/posters/exit-steal-tapes-2026-06-20-poster.png",
+        "status": "official-poster-screenshot",
+        "checked": "2026-06-16"
+      }
+    ]
+  },
+  "max-gross": {
+    "slug": "max-gross",
+    "name": "Max Gross",
+    "aliases": [
+      "Max Gross"
+    ],
+    "trackedAt": "2026-06-16",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "298 pres. Steal Tapes / EXIT lineup-context profile",
+    "imageTheme": "acid",
+    "genres": [
+      "house",
+      "techno-adjacent",
+      "EXIT lineup context"
+    ],
+    "summary": "Max Gross is tracked here for the 298 / Steal Tapes EXIT lineup on 2026-06-20. The profile is event-role only until a stronger artist source is found.",
+    "sourceNote": "Tracked as an event-role profile only. The event source confirms this lineup appearance; do not add biography, label, nationality, or career claims until a stronger artist/profile source is found.",
+    "sources": [
+      {
+        "label": "RA 298 pres. Steal Tapes event",
+        "url": "https://ra.co/events/2468159",
+        "status": "trusted-ra",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "EXIT Steal Tapes ticket screenshot",
+        "url": "assets/posters/exit-steal-tapes-2026-06-20-ticket-home.jpg",
+        "status": "ticketing-home-screenshot",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "EXIT Steal Tapes original PNG poster screenshot",
+        "url": "assets/posters/exit-steal-tapes-2026-06-20-poster.png",
+        "status": "official-poster-screenshot",
+        "checked": "2026-06-16"
+      }
+    ]
+  },
+  "mirror-concept": {
+    "slug": "mirror-concept",
+    "name": "MIRROR concept",
+    "aliases": [
+      "MIRROR concept"
+    ],
+    "trackedAt": "2026-06-16",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "Minuit pres. MIRROR concept / EXIT lineup-context profile",
+    "imageTheme": "acid",
+    "genres": [
+      "house",
+      "techno",
+      "EXIT lineup context"
+    ],
+    "summary": "MIRROR concept is tracked here for Minuit pres. MIRROR concept at EXIT on 2026-06-18. RA indexed text confirms the lineup appearance; broader profile context remains unresolved.",
+    "sourceNote": "Tracked as an event-role profile only. The event source confirms this lineup appearance; do not add biography, label, nationality, or career claims until a stronger artist/profile source is found.",
+    "sources": [
+      {
+        "label": "RA Minuit pres. MIRROR concept event",
+        "url": "https://ra.co/events/2468150",
+        "status": "trusted-ra-indexed",
+        "checked": "2026-06-16"
+      }
+    ]
+  },
+  "mofy": {
+    "slug": "mofy",
+    "name": "Mofy",
+    "aliases": [
+      "Mofy"
+    ],
+    "trackedAt": "2026-06-16",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "Minuit pres. MIRROR concept / EXIT lineup-context profile",
+    "imageTheme": "acid",
+    "genres": [
+      "house",
+      "techno-adjacent",
+      "EXIT lineup context"
+    ],
+    "summary": "Mofy is tracked here for Minuit pres. MIRROR concept at EXIT on 2026-06-18. RA indexed text confirms the lineup appearance; broader profile context remains unresolved.",
+    "sourceNote": "Tracked as an event-role profile only. The event source confirms this lineup appearance; do not add biography, label, nationality, or career claims until a stronger artist/profile source is found.",
+    "sources": [
+      {
+        "label": "RA Minuit pres. MIRROR concept event",
+        "url": "https://ra.co/events/2468150",
+        "status": "trusted-ra-indexed",
+        "checked": "2026-06-16"
+      }
+    ]
+  },
+  "yoshua": {
+    "slug": "yoshua",
+    "name": "Yoshua",
+    "aliases": [
+      "Yoshua"
+    ],
+    "trackedAt": "2026-06-16",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "Minuit pres. MIRROR concept / EXIT lineup-context profile",
+    "imageTheme": "acid",
+    "genres": [
+      "house",
+      "techno-adjacent",
+      "EXIT lineup context"
+    ],
+    "summary": "Yoshua is tracked here for Minuit pres. MIRROR concept at EXIT on 2026-06-18. RA indexed text confirms the lineup appearance; broader profile context remains unresolved.",
+    "sourceNote": "Tracked as an event-role profile only. The event source confirms this lineup appearance; do not add biography, label, nationality, or career claims until a stronger artist/profile source is found.",
+    "sources": [
+      {
+        "label": "RA Minuit pres. MIRROR concept event",
+        "url": "https://ra.co/events/2468150",
+        "status": "trusted-ra-indexed",
+        "checked": "2026-06-16"
+      }
+    ]
   }
 };

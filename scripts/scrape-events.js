@@ -2287,6 +2287,16 @@ function readExistingDjItineraryData() {
   }
 }
 
+function localEvidenceSourceStillExists(source) {
+  const rawUrl = String(source?.url || "").trim();
+  if (!rawUrl || /^https?:\/\//i.test(rawUrl) || /^[a-z]+:/i.test(rawUrl)) return true;
+  const cleanUrl = rawUrl.split(/[?#]/)[0].replace(/\\/g, "/").replace(/^\/+/, "");
+  if (!cleanUrl.startsWith("assets/")) return true;
+  const fullPath = path.resolve(ROOT, ...cleanUrl.split("/"));
+  if (!fullPath.startsWith(ROOT + path.sep)) return true;
+  return fs.existsSync(fullPath);
+}
+
 function sanitizeDjItineraryData(data) {
   if (!data || typeof data !== "object" || Array.isArray(data)) return {};
   const profiles = {};
@@ -2299,7 +2309,7 @@ function sanitizeDjItineraryData(data) {
       ...profile,
       slug: profile.slug ? slugify(profile.slug) : key,
       name,
-      sources: Array.isArray(profile.sources) ? profile.sources : [],
+      sources: Array.isArray(profile.sources) ? profile.sources.filter(localEvidenceSourceStillExists) : [],
       itinerary: Array.isArray(profile.itinerary) ? profile.itinerary : [],
       genres: ensureArray(profile.genres),
       aliases: ensureArray(profile.aliases),

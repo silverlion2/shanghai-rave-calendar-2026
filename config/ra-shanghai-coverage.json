@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-14",
+  "updatedAt": "2026-06-16",
   "timezone": "Asia/Shanghai",
   "cityListingUrl": "https://ra.co/events/cn/shanghai",
-  "scope": "Resident Advisor Shanghai city-listing coverage for the current visible/indexed RA window checked on 2026-06-14, spanning Jun 5-Sep 12 RA Shanghai event pages that were still discoverable through RA city listing page 1/page 2, startDate pages, or RA indexed event-detail pages.",
+  "scope": "Resident Advisor Shanghai city-listing coverage for the current visible/indexed RA window checked through 2026-06-16, including incremental EXIT repairs found through public RA indexed event text after scripted RA detail fetches returned 403.",
   "access": {
     "plainHttp": "blocked",
     "observedStatus": 403,
@@ -37,8 +37,8 @@
     {
       "url": "https://ra.co/events/cn/shanghai",
       "date": "2026-06-14",
-      "visibleTotalLabel": 15,
-      "note": "Plain text listing exposed only the first current card; date-filter pages were used for cross-checking."
+      "visibleTotalLabel": 16,
+      "note": "Plain text listing exposed only the first current card; date-filter and public indexed event text were used for cross-checking. Incremental 2026-06-16 EXIT repairs reconcile the current/future RA manifest to 16 rows."
     },
     {
       "url": "https://ra.co/events/cn/shanghai?startDate=2026-06-17",
@@ -48,7 +48,8 @@
     {
       "url": "https://pt-br.ra.co/events/cn/shanghai?startDate=2026-06-18",
       "date": "2026-06-18",
-      "visibleDateCount": 2
+      "visibleDateCount": 3,
+      "note": "Incremental 2026-06-16 public RA indexed text repair added Minuit pres. MIRROR concept; scripted RA detail fetch returned 403."
     },
     {
       "url": "https://ra.co/events/cn/shanghai?startDate=2026-06-19",
@@ -58,7 +59,8 @@
     {
       "url": "https://ra.co/events/cn/shanghai?startDate=2026-06-20",
       "date": "2026-06-20",
-      "visibleDateCount": 4
+      "visibleDateCount": 5,
+      "note": "Incremental 2026-06-16 public RA indexed text repair added 298 pres. Steal Tapes; scripted RA detail fetch returned 403."
     },
     {
       "url": "https://ra.co/events/cn/shanghai?startDate=2026-06-21",
@@ -452,6 +454,24 @@
       "date": "2026-09-12",
       "title": "Shaun Soomro, DJ Serang",
       "venue": "TBA",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2468150",
+      "url": "https://ra.co/events/2468150",
+      "eventId": "minuit-mirror-concept",
+      "date": "2026-06-18",
+      "title": "Minuit pres. MIRROR concept",
+      "venue": "EXIT",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2468159",
+      "url": "https://ra.co/events/2468159",
+      "eventId": "exit-298-steal-tapes",
+      "date": "2026-06-20",
+      "title": "298 pres. Steal Tapes",
+      "venue": "EXIT",
       "coverageRole": "primary"
     }
   ],

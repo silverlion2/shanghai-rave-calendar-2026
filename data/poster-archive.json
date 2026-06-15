@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T17:56:03.487Z",
+  "generatedAt": "2026-06-15T19:06:56.873Z",
   "sourceData": "data/events.json",
   "storagePolicy": {
     "mode": "static-json-plus-local-optimized-assets",
@@ -7,16 +7,16 @@
     "rule": "Use optimized display assets in the wall; keep raw poster files out of the default browsing path when the archive grows."
   },
   "stats": {
-    "posters": 68,
+    "posters": 69,
     "years": [
       2026
     ],
     "venues": 32,
-    "optimizedCount": 68,
-    "displayBytes": 12188952,
-    "sourceBytes": 37860170,
-    "displayMegabytes": 11.62,
-    "sourceMegabytes": 36.11,
+    "optimizedCount": 69,
+    "displayBytes": 12362380,
+    "sourceBytes": 39544345,
+    "displayMegabytes": 11.79,
+    "sourceMegabytes": 37.71,
     "freeTierSoftCapBytes": 83886080,
     "freeTierSoftCapMegabytes": 80
   },
@@ -644,6 +644,51 @@
       },
       "eventUrl": "events/friendsstandout.html",
       "notes": "MENSLIES presents FRIENDSSTANDout at Wigwam with Tsing, 10000, YKK, Taidi, and DJ TRUCK. RA confirms date, room, promoter, lineup, and flyer."
+    },
+    {
+      "id": "shanghai-2026-exit-298-steal-tapes",
+      "eventId": "exit-298-steal-tapes",
+      "title": "298 pres. Steal Tapes",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 20",
+      "sortDate": "2026-06-20",
+      "time": "22:00-05:00",
+      "venue": "EXIT",
+      "district": "Changning",
+      "sound": "house, techno, underground house",
+      "tags": [
+        "upcoming",
+        "high",
+        "changning",
+        "underground",
+        "club",
+        "house",
+        "techno",
+        "underground house"
+      ],
+      "status": "upcoming",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor + EXIT screenshots",
+        "url": "https://ra.co/events/2468159",
+        "posterEvidenceUrl": "assets/posters/exit-steal-tapes-2026-06-20-poster.png",
+        "posterEvidenceSource": "User-provided EXIT Shanghai official-account and ticketing screenshots, plus RA flyer reference",
+        "posterEvidenceStatus": "Original user-provided PNG poster names 298, Steal Tapes, HouseHeadz Records, Sam TBD., Queenie., Max Gross, Sat Jun 20, EXIT Club, and Xingfu Road 298. Ticket-home screenshot confirms 2026-06-20 22:00, 88 RMB+ starting price, electronic ticket, and non-refundable seated-show flags. RA flyer was downloaded locally as reference."
+      },
+      "image": {
+        "thumbnail": "assets/posters/exit-steal-tapes-2026-06-20-poster-optimized.jpg",
+        "display": "assets/posters/exit-steal-tapes-2026-06-20-poster-optimized.jpg",
+        "sourceAsset": "assets/posters/exit-steal-tapes-2026-06-20-poster.png",
+        "displayBytes": 173428,
+        "sourceBytes": 1684175,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/exit-298-steal-tapes.html",
+      "notes": "298 brings Italy-linked HouseHeadz Records artist Steal Tapes to EXIT with Sam TBD., Queenie., and Max Gross for a groove-led underground house / techno night. The practical watchpoint is price: visible ticket sources disagree between 88 RMB+ and 118 RMB."
     },
     {
       "id": "shanghai-2026-afrowave-takeover-la-burg",

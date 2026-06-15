@@ -6228,6 +6228,222 @@
         "late room",
         "support lineup missing"
       ]
+    },
+    {
+      "id": "minuit-mirror-concept",
+      "month": "Jun",
+      "sortDate": "2026-06-18",
+      "date": "Jun 18",
+      "time": "22:00-05:00",
+      "title": "Minuit pres. MIRROR concept",
+      "venue": "EXIT",
+      "district": "Changning",
+      "vibe": [
+        "underground",
+        "club"
+      ],
+      "genre": "house, techno",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "118 RMB",
+      "age": "Check venue",
+      "source": "https://ra.co/events/2468150",
+      "sourceLabel": "Resident Advisor indexed text",
+      "imageTheme": "cyan",
+      "description": "A compact late EXIT house/techno bill with MIRROR concept, Mofy, and Yoshua. Treat it as a groove-led planning option with open practical gaps: poster, age policy, and venue-side corroboration still need a follow-up check.",
+      "kind": "event",
+      "sourceStatus": "trusted-ra-indexed",
+      "address": "298 Xingfu Road, Changning District, Shanghai",
+      "organizer": "Illsee / Minuit",
+      "detailsUrl": "https://ra.co/events/2468150",
+      "ticketUrl": "https://ra.co/events/2468150",
+      "lastChecked": "2026-06-16",
+      "ticketStatus": "Public RA indexed text lists 2026-06-18, 22:00-05:00, EXIT at 298 Xingfu Road, lineup MIRROR concept / Mofy / Yoshua, house/techno tags, and 118 RMB cost. Direct scripted RA detail fetch returned 403; age policy, live ticket state, and flyer download remain browser-verification gaps.",
+      "lineup": [
+        {
+          "name": "MIRROR concept",
+          "note": "RA indexed text lists MIRROR concept on the Minuit / EXIT lineup."
+        },
+        {
+          "name": "Mofy",
+          "note": "RA indexed text lists Mofy on the Minuit / EXIT lineup."
+        },
+        {
+          "name": "Yoshua",
+          "note": "RA indexed text lists Yoshua on the Minuit / EXIT lineup."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Resident Advisor indexed event text",
+          "url": "https://ra.co/events/2468150",
+          "status": "trusted-ra-indexed",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "Public search-index text for the RA event page confirms title, EXIT venue/address, Thu Jun 18 2026 22:00-05:00, lineup MIRROR concept / Mofy / Yoshua, house/techno genres, Illsee event admin, 118 RMB cost, and flyer visibility. Direct scripted HTTP fetch returned 403, so treat this as indexed RA/browser-required verification."
+        }
+      ],
+      "soundTags": [
+        "groovy",
+        "techno-adjacent",
+        "house"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "late room",
+        "ticket path",
+        "single-source"
+      ],
+      "decisionProfile": {
+        "intensity": "high",
+        "credibility": "solid",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": false,
+        "riskFlags": [
+          "single event source",
+          "poster missing",
+          "age policy not visible"
+        ]
+      },
+      "recommendationReason": "Useful for readers who want EXIT in a lighter, groove-led house/techno lane: MIRROR concept, Mofy, and Yoshua make this a compact three-name late-room bill, better as a check-before-going route than a top pick until a venue-side poster appears.",
+      "bestFor": "Best for readers tracking EXIT house/techno programming who can verify same-day details before committing.",
+      "verifyBeforeGoing": "Recheck RA or EXIT/Minuit channels for ticket availability, age policy, flyer, and any set-time update before going.",
+      "sourceConfidence": "Single-source RA indexed event: enough to list as current RA coverage with caveats, but not enough for a stronger editorial push without venue/promoter corroboration or a visible poster asset."
+    },
+    {
+      "id": "exit-298-steal-tapes",
+      "month": "Jun",
+      "sortDate": "2026-06-20",
+      "date": "Jun 20",
+      "time": "22:00-05:00",
+      "title": "298 pres. Steal Tapes",
+      "venue": "EXIT",
+      "district": "Changning",
+      "vibe": [
+        "underground",
+        "club"
+      ],
+      "genre": "house, techno, underground house",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "88 RMB+ / RA lists 118 RMB",
+      "age": "Check venue",
+      "source": "https://ra.co/events/2468159",
+      "sourceLabel": "Resident Advisor + EXIT screenshots",
+      "imageTheme": "acid",
+      "description": "298 brings Italy-linked HouseHeadz Records artist Steal Tapes to EXIT with Sam TBD., Queenie., and Max Gross for a groove-led underground house / techno night. The practical watchpoint is price: visible ticket sources disagree between 88 RMB+ and 118 RMB.",
+      "kind": "event",
+      "sourceStatus": "trusted-ra-and-user-screenshot",
+      "address": "298 Xingfu Road, Changning District, Shanghai",
+      "organizer": "298 / Illsee / EXIT Shanghai",
+      "detailsUrl": "https://ra.co/events/2468159",
+      "ticketUrl": "https://ra.co/events/2468159",
+      "lastChecked": "2026-06-16",
+      "posterUrl": "assets/posters/exit-steal-tapes-2026-06-20-poster.png",
+      "posterEvidence": {
+        "type": "official-poster-and-ticketing-screenshots",
+        "source": "User-provided EXIT Shanghai official-account and ticketing screenshots, plus RA flyer reference",
+        "url": "assets/posters/exit-steal-tapes-2026-06-20-poster.png",
+        "status": "Original user-provided PNG poster names 298, Steal Tapes, HouseHeadz Records, Sam TBD., Queenie., Max Gross, Sat Jun 20, EXIT Club, and Xingfu Road 298. Ticket-home screenshot confirms 2026-06-20 22:00, 88 RMB+ starting price, electronic ticket, and non-refundable seated-show flags. RA flyer was downloaded locally as reference.",
+        "localFiles": [
+          "assets/posters/exit-steal-tapes-2026-06-20-poster.png",
+          "assets/posters/exit-steal-tapes-2026-06-20-ticket-home.jpg",
+          "assets/posters/exit-steal-tapes-2026-06-20-ticket-cover.jpg",
+          "assets/posters/exit-steal-tapes-2026-06-20-wechat.jpg",
+          "assets/posters/exit-steal-tapes-2026-06-20-ra.jpg"
+        ]
+      },
+      "ticketStatus": "RA lists 2026-06-20, 22:00-05:00, EXIT at 298 Xingfu Road, house/techno genre tags, lineup Steal Tapes / Sam TBD. / Queenie. / Max Gross, and 118 RMB cost. User-provided ticketing screenshot shows a local Yuyuan ticket-home route with 88 RMB+ starting price, electronic tickets, non-refundable flag, and 2026-06-20 22:00. Direct mini-program URL and age policy were not visible.",
+      "lineup": [
+        {
+          "name": "Steal Tapes",
+          "note": "RA and poster bill Steal Tapes from HouseHeadz Records as the headline draw."
+        },
+        {
+          "name": "Sam TBD.",
+          "aliases": [
+            "Sam TBD"
+          ],
+          "note": "RA and poster list Sam TBD. on the EXIT lineup."
+        },
+        {
+          "name": "Queenie.",
+          "aliases": [
+            "Queenie"
+          ],
+          "note": "RA and poster list Queenie. on the EXIT lineup."
+        },
+        {
+          "name": "Max Gross",
+          "note": "RA and poster list Max Gross on the EXIT lineup."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Resident Advisor event page",
+          "url": "https://ra.co/events/2468159",
+          "status": "trusted-ra",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "Public RA indexed text confirms 298 pres. Steal Tapes at EXIT on 2026-06-20, 22:00-05:00, lineup Steal Tapes / Sam TBD. / Queenie. / Max Gross, house/techno genres, 118 RMB cost, and flyer visibility. Scripted detail fetch returned 403, so use RA indexed/browser-visible verification rather than scripted page fetch."
+        },
+        {
+          "label": "EXIT Steal Tapes clean poster screenshot",
+          "url": "assets/posters/exit-steal-tapes-2026-06-20-poster.png",
+          "status": "official-poster-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided original PNG poster confirms title, date, venue/address, HouseHeadz Records context, and visible lineup names."
+        },
+        {
+          "label": "EXIT Steal Tapes ticket-home screenshot",
+          "url": "assets/posters/exit-steal-tapes-2026-06-20-ticket-home.jpg",
+          "status": "ticketing-home-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided ticketing screenshot confirms 2026-06-20 22:00, 88 RMB+ starting price, EXIT address text, electronic ticket, seated-show flag, and non-refundable flag. Public poster-wall crop removes the lower ticketing UI."
+        },
+        {
+          "label": "EXIT Shanghai official-account screenshot",
+          "url": "assets/posters/exit-steal-tapes-2026-06-20-wechat.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided EXIT Shanghai account screenshot shows the poster and post context; not a direct public URL."
+        }
+      ],
+      "soundTags": [
+        "groovy",
+        "techno-adjacent",
+        "house"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "late room",
+        "ticket path",
+        "trusted source",
+        "local scene signal"
+      ],
+      "decisionProfile": {
+        "intensity": "high",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": [
+          "age policy not visible",
+          "ticket price differs by source"
+        ]
+      },
+      "promotionalLinks": [
+        {
+          "label": "Tickets exposed by RA",
+          "url": "https://i3f.cc/",
+          "note": "RA exposes an i3f ticketing route; use RA or the visible Yuyuan mini-program route for the exact handoff."
+        }
+      ],
+      "recommendationReason": "Recommended for readers who want EXIT in a less industrial, more groove-led mode: Steal Tapes points the night toward underground house with techno pressure, and the Sam TBD. / Queenie. / Max Gross support bill gives it local-room continuity rather than a one-name import booking.",
+      "bestFor": "Best for house-heads, techno-adjacent dancers, and EXIT regulars who want a late basement route with groove and label texture instead of peak hard-techno pressure.",
+      "verifyBeforeGoing": "Confirm current ticket inventory, final price, age policy, and any door update through RA or the Yuyuan / EXIT ticket route before going. The visible sources disagree between 88 RMB+ starting price and RA 118 RMB indexed cost.",
+      "sourceConfidence": "High-confidence RA plus user-screenshot event: RA confirms the core event fields and the user-provided EXIT / ticketing screenshots corroborate poster, date, start time, local ticket route, and 88 RMB+ starting price. Direct mini-program URL and age policy remain unresolved."
     }
   ]
 }

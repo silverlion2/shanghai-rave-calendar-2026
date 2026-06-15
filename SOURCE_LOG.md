@@ -763,3 +763,46 @@ Validation:
 - `node scripts/check.js`: passed, 3625 local links across 127 HTML/CSS files and 27 inline scripts.
 - `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json`: 0 must-fix, 0 should-fix.
 - `npm run check`: passed with 72 tests.
+
+## 2026-06-16 User-Provided EXIT / RA Evidence
+
+The user supplied EXIT Shanghai poster, official-account, and ticket-home screenshots for `298 pres. Steal Tapes`. A fresh RA indexed-text check found the same event and also exposed a missing EXIT RA listing for `Minuit pres. MIRROR concept`. Direct scripted RA detail fetch returned 403 for both RA pages, so the event facts are recorded as RA indexed/browser-required verification rather than scripted HTML fetch.
+
+Assets copied, downloaded, cropped, and optimized under `assets/posters/`:
+
+- `exit-steal-tapes-2026-06-20-poster.png`
+- `exit-steal-tapes-2026-06-20-wechat.jpg`
+- `exit-steal-tapes-2026-06-20-ticket-home.jpg`
+- `exit-steal-tapes-2026-06-20-ticket-cover.jpg`
+- `exit-steal-tapes-2026-06-20-ra.jpg`
+
+Poster handling:
+
+- Poster wall uses the original user-provided PNG poster as the public display image source.
+- The ticket-home screenshot is retained as full evidence; the cropped cover removes lower ticketing UI but is not the primary poster-wall image because a clean poster exists.
+- The RA flyer image was downloaded locally as a reference asset.
+- `npm run posters:prepare` generated optimized EXIT assets and `data/poster-archive.json` now has 69 poster records.
+
+Canonical updates:
+
+- Added `exit-298-steal-tapes` for Jun 20 at EXIT, 22:00-05:00, with Steal Tapes / Sam TBD. / Queenie. / Max Gross. RA lists 118 RMB; the ticket-home screenshot shows 88 RMB+ as the local ticket-app starting price.
+- Added `minuit-mirror-concept` for Jun 18 at EXIT, 22:00-05:00, with MIRROR concept / Mofy / Yoshua, 118 RMB, from RA indexed text.
+- Updated RA Shanghai coverage with the two incremental EXIT repairs.
+- Added event-role profiles for Steal Tapes, Sam TBD., Queenie., Max Gross, MIRROR concept, Mofy, and Yoshua.
+- Recommendation copy focuses on room and sound fit: Steal Tapes as a groove-led underground house / techno EXIT night, and Minuit as a compact late EXIT house / techno route with visible info gaps kept in source confidence and verification notes.
+
+Open gaps:
+
+- No direct mini-program ticket URL was visible for `298 pres. Steal Tapes`.
+- Age policy is not visible for either EXIT event.
+- `298 pres. Steal Tapes` has a price mismatch: RA indexed text lists 118 RMB, while the ticket-home screenshot shows 88 RMB+.
+- `Minuit pres. MIRROR concept` still needs a visible poster or EXIT/Minuit source beyond RA indexed text.
+
+Validation:
+
+- `node scripts/scrape-events.js` with `SCRAPE_MAX_DETAIL_PAGES=0`: 106 events, 86 curated updates, 40 tracked DJ itinerary rows.
+- `npm run posters:prepare`: 69 poster records generated, including five EXIT optimized assets.
+- `node scripts/generate-seo-pages.js`: generated 106 event detail pages and `sitemap.xml`.
+- `node scripts/check.js`: passed, 3694 local links across 130 HTML/CSS files and 43 inline scripts.
+- `npm run check`: passed with 79 tests plus site structure, local link, and event audit checks.
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json`: still reports existing `/_vercel/insights/script.js` local-link findings on pages that include Vercel Analytics; this is outside the EXIT data update and does not reproduce in the repo's `scripts/check.js`.
