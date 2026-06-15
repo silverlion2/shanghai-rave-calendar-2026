@@ -712,3 +712,54 @@ Validation:
 - `node scripts/check.js`: passed, 3525 local links across 124 HTML/CSS files and 27 inline scripts.
 - `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json`: 0 must-fix, 0 should-fix.
 - `npm run check`: passed with 71 tests.
+
+## 2026-06-16 User-Provided ILLUM / WeChat Ticketing Evidence
+
+The user supplied ILLUM Shanghai official-account screenshots and ticketing screenshots for three future events. Treat these screenshots as manually confirmed evidence for visible facts only. SmartShanghai ILLUM remains venue-context only and must not be treated as event confirmation. No direct public ticket URL was visible, so event source links point to retained local evidence screenshots.
+
+Assets copied, cropped, and optimized under `assets/posters/`:
+
+- `illum-gravity-2026-06-18-poster-source.jpg`
+- `illum-gravity-2026-06-18-poster.jpg`
+- `illum-gravity-2026-06-18-ticket.jpg`
+- `illum-gravity-2026-06-18-wechat.jpg`
+- `illum-normie-10k99-2026-06-19-poster-source.jpg`
+- `illum-normie-10k99-2026-06-19-poster.jpg`
+- `illum-normie-10k99-2026-06-19-ticket-home.jpg`
+- `illum-normie-10k99-2026-06-19-ticket-cover.jpg`
+- `illum-normie-10k99-2026-06-19-ticket-detail.jpg`
+- `illum-normie-10k99-2026-06-19-wechat.jpg`
+- `illum-soback-2026-06-20-poster.jpg`
+- `illum-soback-2026-06-20-ticket.jpg`
+- `illum-soback-2026-06-20-wechat.jpg`
+
+Poster handling:
+
+- Ticketing homepage/detail screenshots are retained as full evidence files.
+- Poster wall uses clean poster files or cropped upper images with the lower ticketing menu removed.
+- `npm run posters:prepare` generated optimized display assets and `data/poster-archive.json` now has 68 poster records.
+
+Canonical updates:
+
+- Added `illum-gravity-stateofff` for Jun 18 at ILLUM, 22:00-04:00, with StateOFFF / Zein Guz / Qiming / 行么雷, 80 / 100 / 120 RMB.
+- Added `illum-normie-10k99` for Jun 19 at ILLUM, 22:00-04:00, with 10K99 / haina from china / GG lobster / DJSYB / Manqing / V-XWI, 85 / 95 / 110 RMB.
+- Added `illum-soback-liquid-dolls` for Jun 20 at ILLUM, 22:00-04:00, with SOBACK, 88 / 108 / 128 RMB.
+- Added event-role DJ profiles for the new lineup names with conservative screenshot-backed source notes.
+- Recommendation copy focuses on why to go: ILLUM's darker visual/bass/experimental lane, the Normie Corp / 10K99 deconstructed-club framing, and SOBACK as a focused tour-stop draw.
+
+Open gaps:
+
+- No direct public ticket URL was visible for any ILLUM event.
+- Age policy was not visible for all three.
+- Jun 18 Zein Guz and Qiming / 行么雷 preferred spelling should be rechecked if clearer organizer text appears.
+- Jun 19 V-XWI support credit is visually unclear.
+- Jun 20 support lineup and final running order were not visible.
+
+Validation:
+
+- `node scripts/scrape-events.js` with `SCRAPE_MAX_DETAIL_PAGES=0`: 104 events, 84 curated updates, 40 tracked DJ itinerary rows.
+- `npm run posters:prepare`: 68 poster records generated, including 13 ILLUM optimized assets.
+- `node scripts/generate-seo-pages.js`: generated 104 event detail pages and `sitemap.xml`.
+- `node scripts/check.js`: passed, 3625 local links across 127 HTML/CSS files and 27 inline scripts.
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json`: 0 must-fix, 0 should-fix.
+- `npm run check`: passed with 72 tests.
