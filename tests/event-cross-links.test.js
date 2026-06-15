@@ -126,6 +126,24 @@ test("homepage calendar grid renders one selected week grouped by venue rows", (
   }
 });
 
+test("homepage inline CSS reserves the venue column before shared CSS loads", () => {
+  for (const file of calendarFiles) {
+    const html = readSiteFile(file);
+    const styleBlock = html.slice(html.indexOf("<style>"), html.indexOf("</style>"));
+
+    assert.match(
+      styleBlock,
+      /\.calendar-week-grid\s*{\s*grid-template-columns:\s*minmax\(150px,\s*220px\)\s*repeat\(var\(--calendar-columns,\s*7\),\s*minmax\(116px,\s*1fr\)\);/s,
+      `${file} should include the leading venue/promoter column in fallback calendar CSS`,
+    );
+    assert.match(
+      styleBlock,
+      /@media \(max-width:\s*860px\)[\s\S]*?\.calendar-week-grid\s*{\s*grid-template-columns:\s*minmax\(150px,\s*220px\)\s*repeat\(var\(--calendar-columns,\s*7\),\s*minmax\(116px,\s*1fr\)\);/s,
+      `${file} should preserve the venue/promoter column in the narrow fallback CSS`,
+    );
+  }
+});
+
 test("homepage exposes week, month dropdown, and common venue promoter filters", () => {
   for (const file of calendarFiles) {
     const html = readSiteFile(file);

@@ -700,6 +700,12 @@
       margin: 0 0 14px;
     }
 
+    .calendar-week-grid {
+      grid-template-columns: minmax(150px, 220px) repeat(var(--calendar-columns, 7), minmax(116px, 1fr));
+      overflow-x: auto;
+      overscroll-behavior-x: contain;
+    }
+
     .calendar-day-name {
       color: var(--dim);
       font-size: 11px;
@@ -1978,6 +1984,9 @@
         grid-template-columns: repeat(var(--calendar-columns, 7), minmax(0, 1fr));
         gap: 4px;
       }
+      .calendar-week-grid {
+        grid-template-columns: minmax(150px, 220px) repeat(var(--calendar-columns, 7), minmax(116px, 1fr));
+      }
       .calendar-day {
         min-height: 58px;
         padding: 4px;
@@ -2082,7 +2091,7 @@
     }
 
   </style>
-  <link rel="stylesheet" href="assets/basement-dispatch.css?v=xhs-contact-20260613c">
+  <link rel="stylesheet" href="assets/basement-dispatch.css?v=calendar-week-grid-20260616">
   <link rel="stylesheet" href="assets/account-system.css">
   <script src="assets/love-wall-supabase-config.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
