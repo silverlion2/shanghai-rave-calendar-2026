@@ -2095,17 +2095,17 @@
   <canvas class="signal-canvas" id="signalCanvas" aria-hidden="true"></canvas>
   <main class="shell calendar-shell">
     <nav class="primary-nav" aria-label="Primary">
-      <a class="nav-link active" href="index.html">Calendar</a>
-      <a class="nav-link" href="new-to-techno.html">New?</a>
       <a class="nav-link" href="poster-wall.html">Events</a>
+      <a class="nav-link active" href="index.html">Calendar</a>
+      <a class="nav-link" href="planner.html">Planner <small class="nav-beta">beta</small></a>
+      <a class="nav-link" href="live-room.html">Tonight <small class="nav-beta">beta</small></a>
+      <a class="nav-link" href="rave-everywhere.html">Everywhere <small class="nav-beta">beta</small></a>
       <a class="nav-link" href="love-wall.html">Love</a>
       <a class="nav-link" href="venues.html">Venues</a>
       <a class="nav-link" href="djs.html">DJs</a>
+      <a class="nav-link" href="new-to-techno.html">New?</a>
       <a class="nav-link" href="contribute.html">Contribute</a>
       <a class="nav-link" href="account.html">Account</a>
-      <a class="nav-link" href="live-room.html">Tonight <small class="nav-beta">beta</small></a>
-      <a class="nav-link" href="planner.html">Planner <small class="nav-beta">beta</small></a>
-      <a class="nav-link" href="rave-everywhere.html">Everywhere <small class="nav-beta">beta</small></a>
     </nav>
 
     <header class="topbar">
@@ -2187,6 +2187,10 @@
             <span>Week</span>
             <select class="select" id="weekFilter" aria-label="Week filter"></select>
           </label>
+          <label class="filter-field month-select-field">
+            <span>Month</span>
+            <select class="select month-select" id="monthRail" aria-label="Jump to month"></select>
+          </label>
           <label class="filter-field">
             <span>Status</span>
             <select class="select" id="statusFilter" aria-label="Status filter">
@@ -2227,11 +2231,6 @@
             </div>
           </div>
         </section>
-
-        <label class="filter-field month-select-field">
-          <span>Month</span>
-          <select class="select month-select" id="monthRail" aria-label="Jump to month"></select>
-        </label>
 
         <section class="layout">
           <div id="calendar"></div>

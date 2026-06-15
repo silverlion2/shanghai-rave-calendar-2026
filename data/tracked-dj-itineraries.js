@@ -4730,5 +4730,402 @@ window.DJ_ITINERARY_DATA = {
         "checked": "2026-06-16"
       }
     ]
+  },
+  "10k99": {
+    "slug": "10k99",
+    "name": "10K99",
+    "aliases": [
+      "10K99",
+      "10k99"
+    ],
+    "trackedAt": "2026-06-16",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "Normie Corp pres. 10K99 / ILLUM lineup-context profile",
+    "imageTheme": "rose",
+    "genres": [
+      "experimental club",
+      "bass context",
+      "ILLUM lineup context"
+    ],
+    "summary": "10K99 is tracked here for Normie Corp pres. 10K99 at ILLUM on 2026-06-19. The supplied poster and ticketing screenshots confirm the event billing; artist/profile context remains event-role only in this pass.",
+    "sourceNote": "User-provided ILLUM poster/ticket screenshots confirm this event-role appearance only. Do not add biography, label, or genre claims until a stronger artist source is found. SmartShanghai ILLUM is included only to anchor the venue context with an HTTP source; it is not artist biography or event confirmation.",
+    "sources": [
+      {
+        "label": "ILLUM Normie Corp pres. 10K99 poster screenshot",
+        "url": "assets/posters/illum-normie-10k99-2026-06-19-poster-source.jpg",
+        "status": "official-poster-screenshot",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "ILLUM Normie Corp pres. 10K99 ticketing screenshot",
+        "url": "assets/posters/illum-normie-10k99-2026-06-19-ticket-detail.jpg",
+        "status": "ticketing-screenshot",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "SmartShanghai ILLUM venue context",
+        "url": "https://www.smartshanghai.com/venue/34394/illum",
+        "status": "venue-context-only",
+        "checked": "2026-06-16"
+      }
+    ]
+  },
+  "djsyb": {
+    "slug": "djsyb",
+    "name": "DJSYB",
+    "aliases": [
+      "DJSYB"
+    ],
+    "trackedAt": "2026-06-16",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "Normie Corp pres. 10K99 / ILLUM lineup-context profile",
+    "imageTheme": "rose",
+    "genres": [
+      "experimental club",
+      "bass context",
+      "ILLUM lineup context"
+    ],
+    "summary": "DJSYB is preserved for the Normie Corp pres. 10K99 lineup at ILLUM on 2026-06-19. The supplied poster confirms the appearance; broader biography was not independently verified.",
+    "sourceNote": "User-provided ILLUM poster/ticket screenshots confirm this event-role appearance only. Do not add biography, label, or genre claims until a stronger artist source is found. SmartShanghai ILLUM is included only to anchor the venue context with an HTTP source; it is not artist biography or event confirmation.",
+    "sources": [
+      {
+        "label": "ILLUM Normie Corp pres. 10K99 poster screenshot",
+        "url": "assets/posters/illum-normie-10k99-2026-06-19-poster-source.jpg",
+        "status": "official-poster-screenshot",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "ILLUM Normie Corp pres. 10K99 ticketing screenshot",
+        "url": "assets/posters/illum-normie-10k99-2026-06-19-ticket-detail.jpg",
+        "status": "ticketing-screenshot",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "SmartShanghai ILLUM venue context",
+        "url": "https://www.smartshanghai.com/venue/34394/illum",
+        "status": "venue-context-only",
+        "checked": "2026-06-16"
+      }
+    ]
+  },
+  "gg-lobster": {
+    "slug": "gg-lobster",
+    "name": "GG lobster",
+    "aliases": [
+      "GG lobster",
+      "GG Lobster"
+    ],
+    "trackedAt": "2026-06-16",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "Normie Corp pres. 10K99 / ILLUM lineup-context profile",
+    "imageTheme": "rose",
+    "genres": [
+      "experimental club",
+      "bass context",
+      "ILLUM lineup context"
+    ],
+    "summary": "GG lobster is preserved because the Normie Corp pres. 10K99 poster places the name in the 10K99 billing. Treat this as event-role context until a stronger profile source is added.",
+    "sourceNote": "User-provided ILLUM poster/ticket screenshots confirm this event-role appearance only. Do not add biography, label, or genre claims until a stronger artist source is found. SmartShanghai ILLUM is included only to anchor the venue context with an HTTP source; it is not artist biography or event confirmation.",
+    "sources": [
+      {
+        "label": "ILLUM Normie Corp pres. 10K99 poster screenshot",
+        "url": "assets/posters/illum-normie-10k99-2026-06-19-poster-source.jpg",
+        "status": "official-poster-screenshot",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "ILLUM Normie Corp pres. 10K99 ticketing screenshot",
+        "url": "assets/posters/illum-normie-10k99-2026-06-19-ticket-detail.jpg",
+        "status": "ticketing-screenshot",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "SmartShanghai ILLUM venue context",
+        "url": "https://www.smartshanghai.com/venue/34394/illum",
+        "status": "venue-context-only",
+        "checked": "2026-06-16"
+      }
+    ]
+  },
+  "haina-from-china": {
+    "slug": "haina-from-china",
+    "name": "haina from china",
+    "aliases": [
+      "haina from china"
+    ],
+    "trackedAt": "2026-06-16",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "Normie Corp pres. 10K99 / ILLUM lineup-context profile",
+    "imageTheme": "rose",
+    "genres": [
+      "experimental club",
+      "bass context",
+      "ILLUM lineup context"
+    ],
+    "summary": "haina from china is preserved because the Normie Corp pres. 10K99 poster places the name in the 10K99 billing. Treat this as event-role context until a stronger profile source is added.",
+    "sourceNote": "User-provided ILLUM poster/ticket screenshots confirm this event-role appearance only. Do not add biography, label, or genre claims until a stronger artist source is found. SmartShanghai ILLUM is included only to anchor the venue context with an HTTP source; it is not artist biography or event confirmation.",
+    "sources": [
+      {
+        "label": "ILLUM Normie Corp pres. 10K99 poster screenshot",
+        "url": "assets/posters/illum-normie-10k99-2026-06-19-poster-source.jpg",
+        "status": "official-poster-screenshot",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "ILLUM Normie Corp pres. 10K99 ticketing screenshot",
+        "url": "assets/posters/illum-normie-10k99-2026-06-19-ticket-detail.jpg",
+        "status": "ticketing-screenshot",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "SmartShanghai ILLUM venue context",
+        "url": "https://www.smartshanghai.com/venue/34394/illum",
+        "status": "venue-context-only",
+        "checked": "2026-06-16"
+      }
+    ]
+  },
+  "manqing": {
+    "slug": "manqing",
+    "name": "Manqing",
+    "aliases": [
+      "Manqing",
+      "MANQING"
+    ],
+    "trackedAt": "2026-06-16",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "Normie Corp pres. 10K99 / ILLUM lineup-context profile",
+    "imageTheme": "rose",
+    "genres": [
+      "experimental club",
+      "bass context",
+      "ILLUM lineup context"
+    ],
+    "summary": "Manqing is preserved for the Normie Corp pres. 10K99 lineup at ILLUM on 2026-06-19. The supplied poster confirms the appearance; broader biography was not independently verified.",
+    "sourceNote": "User-provided ILLUM poster/ticket screenshots confirm this event-role appearance only. Do not add biography, label, or genre claims until a stronger artist source is found. SmartShanghai ILLUM is included only to anchor the venue context with an HTTP source; it is not artist biography or event confirmation.",
+    "sources": [
+      {
+        "label": "ILLUM Normie Corp pres. 10K99 poster screenshot",
+        "url": "assets/posters/illum-normie-10k99-2026-06-19-poster-source.jpg",
+        "status": "official-poster-screenshot",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "ILLUM Normie Corp pres. 10K99 ticketing screenshot",
+        "url": "assets/posters/illum-normie-10k99-2026-06-19-ticket-detail.jpg",
+        "status": "ticketing-screenshot",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "SmartShanghai ILLUM venue context",
+        "url": "https://www.smartshanghai.com/venue/34394/illum",
+        "status": "venue-context-only",
+        "checked": "2026-06-16"
+      }
+    ]
+  },
+  "qiming-xingmelei": {
+    "slug": "qiming-xingmelei",
+    "name": "Qiming / 行么雷",
+    "aliases": [
+      "Qiming",
+      "行么雷"
+    ],
+    "trackedAt": "2026-06-16",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "ILLUM Pres. 地心引力抓不住你 / ILLUM lineup-context profile",
+    "imageTheme": "acid",
+    "genres": [
+      "experimental club",
+      "bass context",
+      "ILLUM lineup context"
+    ],
+    "summary": "Qiming / 行么雷 is preserved for the ILLUM 地心引力抓不住你 lineup on 2026-06-18. The supplied poster supports the booking, but exact preferred spelling should be rechecked against organizer text.",
+    "sourceNote": "User-provided ILLUM poster/ticket screenshots confirm this event-role appearance only. Do not add biography, label, or genre claims until a stronger artist source is found. SmartShanghai ILLUM is included only to anchor the venue context with an HTTP source; it is not artist biography or event confirmation.",
+    "sources": [
+      {
+        "label": "ILLUM 地心引力抓不住你 poster screenshot",
+        "url": "assets/posters/illum-gravity-2026-06-18-poster-source.jpg",
+        "status": "official-poster-screenshot",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "ILLUM 地心引力抓不住你 ticketing screenshot",
+        "url": "assets/posters/illum-gravity-2026-06-18-ticket.jpg",
+        "status": "ticketing-screenshot",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "SmartShanghai ILLUM venue context",
+        "url": "https://www.smartshanghai.com/venue/34394/illum",
+        "status": "venue-context-only",
+        "checked": "2026-06-16"
+      }
+    ]
+  },
+  "soback": {
+    "slug": "soback",
+    "name": "SOBACK",
+    "aliases": [
+      "SOBACK",
+      "SoBack"
+    ],
+    "trackedAt": "2026-06-16",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "LIQUID DOLLS Pres. SOBACK / ILLUM lineup-context profile",
+    "imageTheme": "ember",
+    "genres": [
+      "experimental club",
+      "bass context",
+      "ILLUM lineup context"
+    ],
+    "summary": "SOBACK is tracked here for the LIQUID DOLLS / ILLUM Shanghai stop on 2026-06-20. The supplied poster and ticketing screenshot confirm the China Tour event billing; support and broader profile context remain unresolved.",
+    "sourceNote": "User-provided ILLUM poster/ticket screenshots confirm this event-role appearance only. Do not add biography, label, or genre claims until a stronger artist source is found. SmartShanghai ILLUM is included only to anchor the venue context with an HTTP source; it is not artist biography or event confirmation.",
+    "sources": [
+      {
+        "label": "ILLUM LIQUID DOLLS Pres. SOBACK poster screenshot",
+        "url": "assets/posters/illum-soback-2026-06-20-poster.jpg",
+        "status": "official-poster-screenshot",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "ILLUM LIQUID DOLLS Pres. SOBACK ticketing screenshot",
+        "url": "assets/posters/illum-soback-2026-06-20-ticket.jpg",
+        "status": "ticketing-screenshot",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "SmartShanghai ILLUM venue context",
+        "url": "https://www.smartshanghai.com/venue/34394/illum",
+        "status": "venue-context-only",
+        "checked": "2026-06-16"
+      }
+    ]
+  },
+  "stateofff": {
+    "slug": "stateofff",
+    "name": "StateOFFF",
+    "aliases": [
+      "StateOFFF",
+      "StateOFFF (CN)"
+    ],
+    "trackedAt": "2026-06-16",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "ILLUM Pres. 地心引力抓不住你 / ILLUM lineup-context profile",
+    "imageTheme": "acid",
+    "genres": [
+      "experimental club",
+      "bass context",
+      "ILLUM lineup context"
+    ],
+    "summary": "StateOFFF is preserved for the ILLUM 地心引力抓不住你 lineup on 2026-06-18. The supplied ILLUM poster confirms the booking; broader artist biography was not independently verified in this pass.",
+    "sourceNote": "User-provided ILLUM poster/ticket screenshots confirm this event-role appearance only. Do not add biography, label, or genre claims until a stronger artist source is found. SmartShanghai ILLUM is included only to anchor the venue context with an HTTP source; it is not artist biography or event confirmation.",
+    "sources": [
+      {
+        "label": "ILLUM 地心引力抓不住你 poster screenshot",
+        "url": "assets/posters/illum-gravity-2026-06-18-poster-source.jpg",
+        "status": "official-poster-screenshot",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "ILLUM 地心引力抓不住你 ticketing screenshot",
+        "url": "assets/posters/illum-gravity-2026-06-18-ticket.jpg",
+        "status": "ticketing-screenshot",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "SmartShanghai ILLUM venue context",
+        "url": "https://www.smartshanghai.com/venue/34394/illum",
+        "status": "venue-context-only",
+        "checked": "2026-06-16"
+      }
+    ]
+  },
+  "v-xwi": {
+    "slug": "v-xwi",
+    "name": "V / XWI",
+    "aliases": [
+      "V XWI"
+    ],
+    "trackedAt": "2026-06-16",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "Normie Corp pres. 10K99 / ILLUM lineup-context profile",
+    "imageTheme": "rose",
+    "genres": [
+      "experimental club",
+      "bass context",
+      "ILLUM lineup context"
+    ],
+    "summary": "V / XWI is a visually unclear support credit on the Normie Corp pres. 10K99 poster. Keep source-faithful and recheck organizer text before using this as a stable artist identity.",
+    "sourceNote": "User-provided ILLUM poster/ticket screenshots confirm this event-role appearance only. Do not add biography, label, or genre claims until a stronger artist source is found. SmartShanghai ILLUM is included only to anchor the venue context with an HTTP source; it is not artist biography or event confirmation.",
+    "sources": [
+      {
+        "label": "ILLUM Normie Corp pres. 10K99 poster screenshot",
+        "url": "assets/posters/illum-normie-10k99-2026-06-19-poster-source.jpg",
+        "status": "official-poster-screenshot",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "ILLUM Normie Corp pres. 10K99 ticketing screenshot",
+        "url": "assets/posters/illum-normie-10k99-2026-06-19-ticket-detail.jpg",
+        "status": "ticketing-screenshot",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "SmartShanghai ILLUM venue context",
+        "url": "https://www.smartshanghai.com/venue/34394/illum",
+        "status": "venue-context-only",
+        "checked": "2026-06-16"
+      }
+    ]
+  },
+  "zein-guz": {
+    "slug": "zein-guz",
+    "name": "Zein Guz",
+    "aliases": [
+      "Zein Guz",
+      "ZEIN GUZ"
+    ],
+    "trackedAt": "2026-06-16",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "ILLUM Pres. 地心引力抓不住你 / ILLUM lineup-context profile",
+    "imageTheme": "acid",
+    "genres": [
+      "experimental club",
+      "bass context",
+      "ILLUM lineup context"
+    ],
+    "summary": "Zein Guz is preserved for the ILLUM 地心引力抓不住你 lineup on 2026-06-18. The supplied ILLUM poster confirms the visible name; recheck preferred spelling when a text source appears.",
+    "sourceNote": "User-provided ILLUM poster/ticket screenshots confirm this event-role appearance only. Do not add biography, label, or genre claims until a stronger artist source is found. SmartShanghai ILLUM is included only to anchor the venue context with an HTTP source; it is not artist biography or event confirmation.",
+    "sources": [
+      {
+        "label": "ILLUM 地心引力抓不住你 poster screenshot",
+        "url": "assets/posters/illum-gravity-2026-06-18-poster-source.jpg",
+        "status": "official-poster-screenshot",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "ILLUM 地心引力抓不住你 ticketing screenshot",
+        "url": "assets/posters/illum-gravity-2026-06-18-ticket.jpg",
+        "status": "ticketing-screenshot",
+        "checked": "2026-06-16"
+      },
+      {
+        "label": "SmartShanghai ILLUM venue context",
+        "url": "https://www.smartshanghai.com/venue/34394/illum",
+        "status": "venue-context-only",
+        "checked": "2026-06-16"
+      }
+    ]
   }
 };

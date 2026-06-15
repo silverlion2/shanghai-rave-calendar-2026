@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T17:00:08.734Z",
+  "generatedAt": "2026-06-15T17:56:03.487Z",
   "sourceData": "data/events.json",
   "storagePolicy": {
     "mode": "static-json-plus-local-optimized-assets",
@@ -7,16 +7,16 @@
     "rule": "Use optimized display assets in the wall; keep raw poster files out of the default browsing path when the archive grows."
   },
   "stats": {
-    "posters": 65,
+    "posters": 68,
     "years": [
       2026
     ],
-    "venues": 31,
-    "optimizedCount": 65,
-    "displayBytes": 11626600,
-    "sourceBytes": 37163949,
-    "displayMegabytes": 11.09,
-    "sourceMegabytes": 35.44,
+    "venues": 32,
+    "optimizedCount": 68,
+    "displayBytes": 12188952,
+    "sourceBytes": 37860170,
+    "displayMegabytes": 11.62,
+    "sourceMegabytes": 36.11,
     "freeTierSoftCapBytes": 83886080,
     "freeTierSoftCapMegabytes": 80
   },
@@ -915,6 +915,52 @@
       "notes": "Liminal Dreams x Wigwam with Chingyi, IIN, Rainsoft, and Toss. The supplied event poster confirms the date, lineup, address, and 20:00-late timing; the weekly schedule confirms free entry but lists the slot as 22:00-late, so readers should verify the exact start."
     },
     {
+      "id": "shanghai-2026-illum-soback-liquid-dolls",
+      "eventId": "illum-soback-liquid-dolls",
+      "title": "LIQUID DOLLS Pres. SOBACK",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 20",
+      "sortDate": "2026-06-20",
+      "time": "22:00-04:00",
+      "venue": "ILLUM",
+      "district": "Changning",
+      "sound": "experimental club, bass, tour stop, left-field club",
+      "tags": [
+        "upcoming",
+        "medium",
+        "changning",
+        "experimental",
+        "underground",
+        "bass",
+        "experimental club",
+        "tour stop",
+        "left-field club"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "ILLUM WeChat and ticketing screenshots",
+        "url": "assets/posters/illum-soback-2026-06-20-ticket.jpg",
+        "posterEvidenceUrl": "assets/posters/illum-soback-2026-06-20-poster.jpg",
+        "posterEvidenceSource": "User-provided ILLUM Shanghai poster and ticketing screenshots",
+        "posterEvidenceStatus": "Poster names SOBACK China Tour 2026 with Shanghai / ILLUM on 2026-06-20. Ticketing screenshot confirms 22:00-04:00 and 88/108/128 RMB tiers. Support lineup was not visible in the supplied screenshots."
+      },
+      "image": {
+        "thumbnail": "assets/posters/illum-soback-2026-06-20-poster-optimized.jpg",
+        "display": "assets/posters/illum-soback-2026-06-20-poster-optimized.jpg",
+        "sourceAsset": "assets/posters/illum-soback-2026-06-20-poster.jpg",
+        "displayBytes": 207603,
+        "sourceBytes": 236537,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/illum-soback-liquid-dolls.html",
+      "notes": "LIQUID DOLLS brings SOBACK to ILLUM for the Shanghai stop of the China Tour 2026. Ticketing screenshot confirms 2026-06-20 to 2026-06-21, 22:00-04:00, ILLUM at C PARK LG floor, and 88/108/128 RMB ticket tiers; visible screenshots do not expose support names."
+    },
+    {
       "id": "shanghai-2026-neon-jungle-tom-kynd",
       "eventId": "neon-jungle-tom-kynd",
       "title": "NEON JUNGLE feat. TOM KYND",
@@ -1179,6 +1225,53 @@
       "notes": "POTENT hosts Nikita Zabelin with Tofu and HUAN HUAN. RA genres it as house, while the booking carries techno-scene context through Zabelin."
     },
     {
+      "id": "shanghai-2026-illum-normie-10k99",
+      "eventId": "illum-normie-10k99",
+      "title": "Normie Corp pres. 10K99",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 19",
+      "sortDate": "2026-06-19",
+      "time": "22:00-04:00",
+      "venue": "ILLUM",
+      "district": "Changning",
+      "sound": "experimental club, deconstructed club, digital hardcore, bass",
+      "tags": [
+        "upcoming",
+        "medium",
+        "changning",
+        "experimental",
+        "underground",
+        "hard",
+        "experimental club",
+        "deconstructed club",
+        "digital hardcore",
+        "bass"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "ILLUM WeChat and ticketing screenshots",
+        "url": "assets/posters/illum-normie-10k99-2026-06-19-ticket-detail.jpg",
+        "posterEvidenceUrl": "assets/posters/illum-normie-10k99-2026-06-19-poster.jpg",
+        "posterEvidenceSource": "User-provided ILLUM Shanghai poster and ticketing screenshots",
+        "posterEvidenceStatus": "Poster names Normie Corporation pres. 10K99, haina from china, GG lobster, DJSYB, Manqing, 2026-06-19, ILLUM, and Zhaohua Road C PARK LG floor. Ticket screenshots confirm 22:00-04:00 and 85/95/110 RMB tiers. Public poster version crops away the lower reservation UI; full poster and ticket screenshots are retained as evidence."
+      },
+      "image": {
+        "thumbnail": "assets/posters/illum-normie-10k99-2026-06-19-poster-optimized.jpg",
+        "display": "assets/posters/illum-normie-10k99-2026-06-19-poster-optimized.jpg",
+        "sourceAsset": "assets/posters/illum-normie-10k99-2026-06-19-poster.jpg",
+        "displayBytes": 105337,
+        "sourceBytes": 133998,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/illum-normie-10k99.html",
+      "notes": "Normie Corp presents 10K99 at ILLUM with haina from china and GG lobster billed on the poster, plus DJSYB, Manqing, and a visually unclear V / XWI support credit. Ticketing screenshot confirms 2026-06-19 to 2026-06-20, 22:00-04:00, ILLUM, and 85/95/110 RMB ticket tiers."
+    },
+    {
       "id": "shanghai-2026-onefortyasia-mungk-simbie",
       "eventId": "onefortyasia-mungk-simbie",
       "title": "ONEFORTYASIA Pres. MUNGK (UK) & SIMBIE (AU)",
@@ -1354,6 +1447,53 @@
       },
       "eventUrl": "events/cybionte-solo-ykk-heshang.html",
       "notes": "POTENT hosts Cybionte with Solo, YKK, and Heshang in a late house/club lane. RA confirms the late slot, lineup, cost, and 18+ rule."
+    },
+    {
+      "id": "shanghai-2026-illum-gravity-stateofff",
+      "eventId": "illum-gravity-stateofff",
+      "title": "ILLUM Pres. 地心引力抓不住你",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 18",
+      "sortDate": "2026-06-18",
+      "time": "22:00-04:00",
+      "venue": "ILLUM",
+      "district": "Changning",
+      "sound": "experimental club, bass, hard club, deconstructed club",
+      "tags": [
+        "upcoming",
+        "medium",
+        "changning",
+        "hard",
+        "experimental",
+        "underground",
+        "experimental club",
+        "bass",
+        "hard club",
+        "deconstructed club"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "ILLUM WeChat and ticketing screenshots",
+        "url": "assets/posters/illum-gravity-2026-06-18-ticket.jpg",
+        "posterEvidenceUrl": "assets/posters/illum-gravity-2026-06-18-poster.jpg",
+        "posterEvidenceSource": "User-provided ILLUM Shanghai poster and ticketing screenshots",
+        "posterEvidenceStatus": "Poster names 地心引力抓不住你, StateOFFF, Zein Guz, Qiming / 行么雷, 2026-06-18, ILLUM, and C PARK LG floor address. Ticketing screenshot confirms 22:00-04:00 and 80/100/120 RMB tiers. Public poster version crops away the lower reservation UI; full poster and ticket screenshots are retained as evidence."
+      },
+      "image": {
+        "thumbnail": "assets/posters/illum-gravity-2026-06-18-poster-optimized.jpg",
+        "display": "assets/posters/illum-gravity-2026-06-18-poster-optimized.jpg",
+        "sourceAsset": "assets/posters/illum-gravity-2026-06-18-poster.jpg",
+        "displayBytes": 249412,
+        "sourceBytes": 325686,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/illum-gravity-stateofff.html",
+      "notes": "ILLUM Thursday late-room booking for 地心引力抓不住你 with StateOFFF, Zein Guz, and Qiming / 行么雷 visible on the supplied poster and ticketing screenshots. Ticketing screenshot confirms 2026-06-18 to 2026-06-19, 22:00-04:00, ILLUM at C PARK LG floor, and 80/100/120 RMB ticket tiers."
     },
     {
       "id": "shanghai-2026-heim-long-wave",

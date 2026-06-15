@@ -13,6 +13,13 @@ function trustHrefFor(file) {
   return file.startsWith("events/") ? "../trust.html" : "trust.html";
 }
 
+function navHrefsFor(file) {
+  const html = readSiteFile(file);
+  const nav = html.match(/<nav\b[^>]*class="[^"]*(?:primary-nav|site-nav)[^"]*"[\s\S]*?<\/nav>/);
+  assert.ok(nav, `${file} should expose primary navigation`);
+  return [...nav[0].matchAll(/<a\b[^>]*class="[^"]*\bnav-link\b[^"]*"[^>]*href="([^"]+)"/g)].map(match => match[1]);
+}
+
 test("trust policy is a tracked page without adding another weekly-picks surface", () => {
   const structure = JSON.parse(readSiteFile("config/website-structure.json"));
   const trustPage = structure.pages.find(page => page.id === "trust");
@@ -24,6 +31,41 @@ test("trust policy is a tracked page without adding another weekly-picks surface
   const index = readSiteFile("index.html");
   const highlights = index.match(/<section class="highlight-wall"/g) || [];
   assert.equal(highlights.length, 1);
+});
+
+test("primary navigation prioritizes events and planning routes", () => {
+  const expectedIds = [
+    "poster-wall",
+    "calendar",
+    "planner",
+    "live-room",
+    "rave-everywhere",
+    "love-wall",
+    "venues",
+    "djs",
+    "new-to-techno",
+    "contribute",
+    "account",
+  ];
+  const expectedHrefs = [
+    "poster-wall.html",
+    "index.html",
+    "planner.html",
+    "live-room.html",
+    "rave-everywhere.html",
+    "love-wall.html",
+    "venues.html",
+    "djs.html",
+    "new-to-techno.html",
+    "contribute.html",
+    "account.html",
+  ];
+  const structure = JSON.parse(readSiteFile("config/website-structure.json"));
+  assert.deepEqual(structure.primaryNav, expectedIds);
+
+  for (const file of ["index.html", "poster-wall.html", "djs.html", "planner.html", "live-room.html", "rave-everywhere.html"]) {
+    assert.deepEqual(navHrefsFor(file), expectedHrefs, `${file} should keep the configured primary nav order`);
+  }
 });
 
 test("public pages link to the recommendation and correction policy", () => {

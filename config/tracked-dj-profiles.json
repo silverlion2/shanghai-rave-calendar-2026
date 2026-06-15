@@ -35,6 +35,104 @@
       ]
     },
     {
+      "slug": "10k99",
+      "name": "10K99",
+      "aliases": [
+        "10K99",
+        "10k99"
+      ],
+      "trackedAt": "2026-06-16",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-19",
+          "eventId": "illum-normie-10k99",
+          "eventTitle": "Normie Corp pres. 10K99",
+          "venue": "ILLUM",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-provided-illum-screenshot"
+        }
+      ],
+      "scope": "Normie Corp pres. 10K99 / ILLUM lineup-context profile",
+      "imageTheme": "rose",
+      "genres": [
+        "experimental club",
+        "bass context",
+        "ILLUM lineup context"
+      ],
+      "summary": "10K99 is tracked here for Normie Corp pres. 10K99 at ILLUM on 2026-06-19. The supplied poster and ticketing screenshots confirm the event billing; artist/profile context remains event-role only in this pass.",
+      "sourceNote": "User-provided ILLUM poster/ticket screenshots confirm this event-role appearance only. Do not add biography, label, or genre claims until a stronger artist source is found. SmartShanghai ILLUM is included only to anchor the venue context with an HTTP source; it is not artist biography or event confirmation.",
+      "sources": [
+        {
+          "label": "ILLUM Normie Corp pres. 10K99 poster screenshot",
+          "url": "assets/posters/illum-normie-10k99-2026-06-19-poster-source.jpg",
+          "status": "official-poster-screenshot",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "ILLUM Normie Corp pres. 10K99 ticketing screenshot",
+          "url": "assets/posters/illum-normie-10k99-2026-06-19-ticket-detail.jpg",
+          "status": "ticketing-screenshot",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "SmartShanghai ILLUM venue context",
+          "url": "https://www.smartshanghai.com/venue/34394/illum",
+          "status": "venue-context-only",
+          "checked": "2026-06-16"
+        }
+      ]
+    },
+    {
+      "slug": "abysm",
+      "name": "ABYSM",
+      "aliases": [
+        "ABYSM"
+      ],
+      "trackedAt": "2026-06-16",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-07-03",
+          "eventId": "yuyintang-cooling-water",
+          "eventTitle": "Cooling Water",
+          "venue": "Yuyintang Music Park B Hall",
+          "city": "Shanghai",
+          "status": "confirmed-by-showstart-and-yuyintang-screenshot"
+        }
+      ],
+      "scope": "Cooling Water / Yuyintang dark electronic profile",
+      "imageTheme": "slate",
+      "genres": [
+        "dark wave",
+        "trip-hop",
+        "synth",
+        "live electronic"
+      ],
+      "summary": "ABYSM is preserved for the Cooling Water bill at Yuyintang on 2026-07-03. ShowStart confirms the booking, and Yuyintang article text describes a three-synth Dark Wave / Trip-Hop approach; broader biography was not independently verified in this pass.",
+      "sourceNote": "Use this as a ShowStart- and Yuyintang-screenshot-backed event-role profile. Do not expand into biography or label claims without a standalone artist source.",
+      "sources": [
+        {
+          "label": "ShowStart Cooling Water listing",
+          "url": "https://www.showstart.com/event/300239",
+          "status": "event-ticketing-source",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "ShowStart ABYSM artist page",
+          "url": "https://www.showstart.com/artist/23303497",
+          "status": "artist-page-context",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "Yuyintang Cooling Water article/ticket screenshot",
+          "url": "assets/posters/yuyintang-cooling-water-wechat-article.jpg",
+          "status": "artist-profile-screenshot",
+          "checked": "2026-06-16"
+        }
+      ]
+    },
+    {
       "slug": "ali-ribo",
       "name": "ALI RIBO",
       "aliases": [
@@ -129,6 +227,56 @@
       ]
     },
     {
+      "slug": "bi-non-chillchillshit",
+      "name": "Bi-NON & chillchillshit",
+      "aliases": [
+        "Bi-NON",
+        "BI-NON",
+        "chillchillshit",
+        "Bi-NON & chillchillshit A/V Live"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [],
+      "scope": "Hexscape / EXIT A/V live profile",
+      "imageTheme": "acid",
+      "genres": [
+        "hyperpop",
+        "breakbeat",
+        "footwork",
+        "bass",
+        "live A/V"
+      ],
+      "summary": "Shanghai/China club profile preserved for the Hexscape A/V live booking. Public sources connect Bi-NON to BAIHUI and BYYB radio contexts, while SmartShanghai links Bi-NON and chillchillshit to current and previous A/V club lineups.",
+      "sourceNote": "SmartShanghai is the current Hexscape event lead. BAIHUI/BYYB and previous SmartShanghai listings are profile context only; they do not confirm Hexscape ticketing, price, age, or set times.",
+      "sources": [
+        {
+          "label": "SmartShanghai Hexscape June 2026 guide",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist-event-source",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "SmartShanghai Gel ILLUM A/V context",
+          "url": "https://www.smartshanghai.com/event/gel-club-music-techno-live-a-v-2026-03-20",
+          "status": "previous-lineup-context",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "BAIHUI The Roof Radio w/ BI-NON",
+          "url": "https://baihui.live/shows/the-roof-radio-w-bi-non-25-05-26/en/",
+          "status": "radio-context",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "BYYB Radio Bi-NON performance context",
+          "url": "https://www.youtube.com/watch?v=iCp6Xkny-fY",
+          "status": "performance-context",
+          "checked": "2026-06-15"
+        }
+      ]
+    },
+    {
       "trackedAt": "2026-06-14",
       "checkedByTimezone": "Asia/Shanghai",
       "itinerary": [],
@@ -164,6 +312,33 @@
           "label": "????? Endgame Fenrir listing",
           "url": "https://m.df962388.com/yanchu/384394.html",
           "status": "secondary-event-source",
+          "checked": "2026-06-14"
+        }
+      ]
+    },
+    {
+      "slug": "bolobolo",
+      "name": "Bolobolo",
+      "aliases": [
+        "Bolobolo"
+      ],
+      "trackedAt": "2026-06-14",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [],
+      "scope": "HOUSE OF ZUP / RA lineup-context source profile",
+      "imageTheme": "gold",
+      "genres": [
+        "house-context",
+        "disco-context",
+        "afternoon-session"
+      ],
+      "summary": "Resident Advisor lists Bolobolo on the June 14 HOUSE OF ZUP lineup at ZUP Pizza Bar. Keep this as event-lineup context, not a standalone biography.",
+      "sourceNote": "RA confirms the event role and 17:00-18:00 slot only; do not infer artist background, label affiliation, or regular Shanghai activity from this source.",
+      "sources": [
+        {
+          "label": "RA HOUSE OF ZUP lineup",
+          "url": "https://ra.co/events/2464155",
+          "status": "trusted-ra-lineup",
           "checked": "2026-06-14"
         }
       ]
@@ -227,6 +402,56 @@
         {
           "label": "Yuyuan ticketing screenshot - Obsesion Total",
           "url": "assets/posters/abyss-botox-fatal-ticket.png",
+          "status": "wechat-miniprogram-ticketing-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "SmartShanghai Abyss venue context",
+          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+          "status": "venue-context",
+          "checked": "2026-06-15",
+          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+        }
+      ]
+    },
+    {
+      "slug": "brennt",
+      "name": "BRENNT",
+      "aliases": [
+        "BRENNT"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-20",
+          "eventId": "abyss-hardcore-melancholia",
+          "eventTitle": "Hardcore Melancholia",
+          "venue": "Abyss Shanghai",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-supplied-screenshot"
+        }
+      ],
+      "scope": "Hardcore Melancholia / Abyss event-role profile",
+      "imageTheme": "rose",
+      "genres": [
+        "hardcore context",
+        "hard dance context",
+        "rave context",
+        "Abyss lineup"
+      ],
+      "summary": "BRENNT is preserved as part of the screenshot-confirmed Hardcore Melancholia lineup at Abyss on 2026-06-20. The event title supports a hard/hardcore context; broader standalone artist claims were not verified in this pass.",
+      "sourceNote": "Use this as a screenshot-backed event-role profile for Hardcore Melancholia. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+      "sources": [
+        {
+          "label": "Abyss June 2026 program screenshot",
+          "url": "assets/posters/abyss-june-2026-program.png",
+          "status": "official-social-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Yuyuan ticketing screenshot - Hardcore Melancholia",
+          "url": "assets/posters/abyss-hardcore-melancholia-ticket.png",
           "status": "wechat-miniprogram-ticketing-screenshot",
           "checked": "2026-06-15"
         },
@@ -631,6 +856,56 @@
       ]
     },
     {
+      "slug": "dj-loverboy",
+      "name": "DJ LOVERBOY",
+      "aliases": [
+        "DJ LOVERBOY"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-20",
+          "eventId": "abyss-hardcore-melancholia",
+          "eventTitle": "Hardcore Melancholia",
+          "venue": "Abyss Shanghai",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-supplied-screenshot"
+        }
+      ],
+      "scope": "Hardcore Melancholia / Abyss event-role profile",
+      "imageTheme": "rose",
+      "genres": [
+        "hardcore context",
+        "hard dance context",
+        "rave context",
+        "Abyss lineup"
+      ],
+      "summary": "DJ LOVERBOY is preserved as part of the screenshot-confirmed Hardcore Melancholia lineup at Abyss on 2026-06-20. The event title supports a hard/hardcore context; broader standalone artist claims were not verified in this pass.",
+      "sourceNote": "Use this as a screenshot-backed event-role profile for Hardcore Melancholia. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+      "sources": [
+        {
+          "label": "Abyss June 2026 program screenshot",
+          "url": "assets/posters/abyss-june-2026-program.png",
+          "status": "official-social-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Yuyuan ticketing screenshot - Hardcore Melancholia",
+          "url": "assets/posters/abyss-hardcore-melancholia-ticket.png",
+          "status": "wechat-miniprogram-ticketing-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "SmartShanghai Abyss venue context",
+          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+          "status": "venue-context",
+          "checked": "2026-06-15",
+          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+        }
+      ]
+    },
+    {
       "slug": "dj-rain",
       "name": "DJ Rain",
       "aliases": [
@@ -710,6 +985,95 @@
       ]
     },
     {
+      "slug": "djsyb",
+      "name": "DJSYB",
+      "aliases": [
+        "DJSYB"
+      ],
+      "trackedAt": "2026-06-16",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-19",
+          "eventId": "illum-normie-10k99",
+          "eventTitle": "Normie Corp pres. 10K99",
+          "venue": "ILLUM",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-provided-illum-screenshot"
+        }
+      ],
+      "scope": "Normie Corp pres. 10K99 / ILLUM lineup-context profile",
+      "imageTheme": "rose",
+      "genres": [
+        "experimental club",
+        "bass context",
+        "ILLUM lineup context"
+      ],
+      "summary": "DJSYB is preserved for the Normie Corp pres. 10K99 lineup at ILLUM on 2026-06-19. The supplied poster confirms the appearance; broader biography was not independently verified.",
+      "sourceNote": "User-provided ILLUM poster/ticket screenshots confirm this event-role appearance only. Do not add biography, label, or genre claims until a stronger artist source is found. SmartShanghai ILLUM is included only to anchor the venue context with an HTTP source; it is not artist biography or event confirmation.",
+      "sources": [
+        {
+          "label": "ILLUM Normie Corp pres. 10K99 poster screenshot",
+          "url": "assets/posters/illum-normie-10k99-2026-06-19-poster-source.jpg",
+          "status": "official-poster-screenshot",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "ILLUM Normie Corp pres. 10K99 ticketing screenshot",
+          "url": "assets/posters/illum-normie-10k99-2026-06-19-ticket-detail.jpg",
+          "status": "ticketing-screenshot",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "SmartShanghai ILLUM venue context",
+          "url": "https://www.smartshanghai.com/venue/34394/illum",
+          "status": "venue-context-only",
+          "checked": "2026-06-16"
+        }
+      ]
+    },
+    {
+      "slug": "elaheh",
+      "name": "Elaheh",
+      "aliases": [
+        "Elaheh",
+        "elliekhodayar"
+      ],
+      "trackedAt": "2026-06-14",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [],
+      "scope": "YOUSHAN / Wigwam watch profile",
+      "imageTheme": "rose",
+      "genres": [
+        "house",
+        "minimal",
+        "techno",
+        "bangkok"
+      ],
+      "summary": "Thailand-based RA artist profile attached to the tentative June 27 YOUSHAN Festival warmup lead. RA supports Elaheh's Bangkok/Thailand club context and house/minimal/techno lane.",
+      "sourceNote": "RA profile/event sources are artist context only. The June 27 Wigwam warmup b2b lead remains social-index only until platform-visible confirmation.",
+      "sources": [
+        {
+          "label": "Elaheh Resident Advisor profile",
+          "url": "https://ra.co/dj/elaheh",
+          "status": "artist-profile",
+          "checked": "2026-06-14"
+        },
+        {
+          "label": "Resident Advisor Elaheh & The Outsider event context",
+          "url": "https://ra.co/events/2462725",
+          "status": "artist-profile",
+          "checked": "2026-06-14"
+        },
+        {
+          "label": "jay_sarayu Instagram Youshan pre-party index preview",
+          "url": "https://www.instagram.com/p/DZB981GAW_g/",
+          "status": "social-index-lead",
+          "checked": "2026-06-14"
+        }
+      ]
+    },
+    {
       "trackedAt": "2026-06-15",
       "checkedByTimezone": "Asia/Shanghai",
       "itinerary": [
@@ -770,6 +1134,158 @@
       ]
     },
     {
+      "slug": "fischmonger",
+      "name": "Fischmonger",
+      "aliases": [
+        "Fischmonger"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-19",
+          "eventId": "abyss-faq-kirk",
+          "eventTitle": "FaQ Pres. KIRK",
+          "venue": "Abyss Shanghai",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-supplied-screenshot"
+        }
+      ],
+      "scope": "FaQ Pres. KIRK / Abyss event-role profile",
+      "imageTheme": "ember",
+      "genres": [
+        "hard techno context",
+        "rave context",
+        "Abyss lineup"
+      ],
+      "summary": "Fischmonger is preserved as part of the screenshot-confirmed FaQ Pres. KIRK lineup at Abyss on 2026-06-19. Broader artist biography and discography were not independently verified in this pass.",
+      "sourceNote": "Use this as a screenshot-backed event-role profile for FaQ Pres. KIRK. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+      "sources": [
+        {
+          "label": "Abyss June 2026 program screenshot",
+          "url": "assets/posters/abyss-june-2026-program.png",
+          "status": "official-social-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Yuyuan ticketing screenshot - Kirk at Abyss",
+          "url": "assets/posters/abyss-kirk-ticket.png",
+          "status": "wechat-miniprogram-ticketing-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "SmartShanghai Abyss venue context",
+          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+          "status": "venue-context",
+          "checked": "2026-06-15",
+          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+        }
+      ]
+    },
+    {
+      "slug": "floating",
+      "name": "FLOATING",
+      "aliases": [
+        "FLOATING"
+      ],
+      "trackedAt": "2026-06-14",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [],
+      "scope": "HOUSE OF ZUP / RA lineup-context source profile",
+      "imageTheme": "cyan",
+      "genres": [
+        "house-context",
+        "disco-context",
+        "afternoon-session"
+      ],
+      "summary": "Resident Advisor lists FLOATING on the June 14 HOUSE OF ZUP lineup at ZUP Pizza Bar. Keep this as event-lineup context, not a standalone biography.",
+      "sourceNote": "RA confirms the event role and 20:00-21:00 slot only; do not infer artist background, label affiliation, or regular Shanghai activity from this source.",
+      "sources": [
+        {
+          "label": "RA HOUSE OF ZUP lineup",
+          "url": "https://ra.co/events/2464155",
+          "status": "trusted-ra-lineup",
+          "checked": "2026-06-14"
+        }
+      ]
+    },
+    {
+      "slug": "fmrl",
+      "name": "FMRL",
+      "aliases": [
+        "FMRL"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-27",
+          "eventId": "abyss-cum-chemical-love",
+          "eventTitle": "C.U.M. Chemical Love",
+          "venue": "Abyss Shanghai",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-supplied-screenshot"
+        }
+      ],
+      "scope": "C.U.M. Chemical Love / Abyss event-role profile",
+      "imageTheme": "acid",
+      "genres": [
+        "hard techno context",
+        "rave context",
+        "Abyss lineup"
+      ],
+      "summary": "FMRL is preserved as part of the screenshot-confirmed C.U.M. Chemical Love lineup at Abyss on 2026-06-27. Broader artist biography was not independently verified in this pass.",
+      "sourceNote": "Use this as a screenshot-backed event-role profile for C.U.M. Chemical Love. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+      "sources": [
+        {
+          "label": "Abyss June 2026 program screenshot",
+          "url": "assets/posters/abyss-june-2026-program.png",
+          "status": "official-social-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Yuyuan ticketing screenshot - C.U.M. Chemical Love",
+          "url": "assets/posters/abyss-cum-chemical-love-ticket.png",
+          "status": "wechat-miniprogram-ticketing-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "SmartShanghai Abyss venue context",
+          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+          "status": "venue-context",
+          "checked": "2026-06-15",
+          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+        }
+      ]
+    },
+    {
+      "slug": "gabrielle-lin",
+      "name": "Gabrielle Lin",
+      "aliases": [
+        "Gabrielle Lin"
+      ],
+      "trackedAt": "2026-06-14",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [],
+      "scope": "HOUSE OF ZUP / RA lineup-context source profile",
+      "imageTheme": "rose",
+      "genres": [
+        "house-context",
+        "disco-context",
+        "afternoon-session"
+      ],
+      "summary": "Resident Advisor lists Gabrielle Lin on the June 14 HOUSE OF ZUP lineup at ZUP Pizza Bar. Keep this as event-lineup context, not a standalone biography.",
+      "sourceNote": "RA confirms the event role and 18:00-19:00 slot only; do not infer artist background, label affiliation, or regular Shanghai activity from this source.",
+      "sources": [
+        {
+          "label": "RA HOUSE OF ZUP lineup",
+          "url": "https://ra.co/events/2464155",
+          "status": "trusted-ra-lineup",
+          "checked": "2026-06-14"
+        }
+      ]
+    },
+    {
       "slug": "gaoqiao",
       "name": "GaoQiao",
       "trackedAt": "2026-06-14",
@@ -804,6 +1320,104 @@
         }
       ],
       "itinerary": []
+    },
+    {
+      "slug": "gg-lobster",
+      "name": "GG lobster",
+      "aliases": [
+        "GG lobster",
+        "GG Lobster"
+      ],
+      "trackedAt": "2026-06-16",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-19",
+          "eventId": "illum-normie-10k99",
+          "eventTitle": "Normie Corp pres. 10K99",
+          "venue": "ILLUM",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-provided-illum-screenshot"
+        }
+      ],
+      "scope": "Normie Corp pres. 10K99 / ILLUM lineup-context profile",
+      "imageTheme": "rose",
+      "genres": [
+        "experimental club",
+        "bass context",
+        "ILLUM lineup context"
+      ],
+      "summary": "GG lobster is preserved because the Normie Corp pres. 10K99 poster places the name in the 10K99 billing. Treat this as event-role context until a stronger profile source is added.",
+      "sourceNote": "User-provided ILLUM poster/ticket screenshots confirm this event-role appearance only. Do not add biography, label, or genre claims until a stronger artist source is found. SmartShanghai ILLUM is included only to anchor the venue context with an HTTP source; it is not artist biography or event confirmation.",
+      "sources": [
+        {
+          "label": "ILLUM Normie Corp pres. 10K99 poster screenshot",
+          "url": "assets/posters/illum-normie-10k99-2026-06-19-poster-source.jpg",
+          "status": "official-poster-screenshot",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "ILLUM Normie Corp pres. 10K99 ticketing screenshot",
+          "url": "assets/posters/illum-normie-10k99-2026-06-19-ticket-detail.jpg",
+          "status": "ticketing-screenshot",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "SmartShanghai ILLUM venue context",
+          "url": "https://www.smartshanghai.com/venue/34394/illum",
+          "status": "venue-context-only",
+          "checked": "2026-06-16"
+        }
+      ]
+    },
+    {
+      "slug": "goga",
+      "name": "GOGA",
+      "aliases": [
+        "GOGA"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-27",
+          "eventId": "abyss-cum-chemical-love",
+          "eventTitle": "C.U.M. Chemical Love",
+          "venue": "Abyss Shanghai",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-supplied-screenshot"
+        }
+      ],
+      "scope": "C.U.M. Chemical Love / Abyss event-role profile",
+      "imageTheme": "acid",
+      "genres": [
+        "hard techno context",
+        "rave context",
+        "Abyss lineup"
+      ],
+      "summary": "GOGA is preserved as part of the screenshot-confirmed C.U.M. Chemical Love lineup at Abyss on 2026-06-27. Broader artist biography was not independently verified in this pass.",
+      "sourceNote": "Use this as a screenshot-backed event-role profile for C.U.M. Chemical Love. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+      "sources": [
+        {
+          "label": "Abyss June 2026 program screenshot",
+          "url": "assets/posters/abyss-june-2026-program.png",
+          "status": "official-social-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Yuyuan ticketing screenshot - C.U.M. Chemical Love",
+          "url": "assets/posters/abyss-cum-chemical-love-ticket.png",
+          "status": "wechat-miniprogram-ticketing-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "SmartShanghai Abyss venue context",
+          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+          "status": "venue-context",
+          "checked": "2026-06-15",
+          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+        }
+      ]
     },
     {
       "slug": "golgol",
@@ -842,6 +1456,152 @@
           "url": "assets/posters/wigwam-weekly-listening-golgol-2026-06-16.jpg",
           "status": "event-poster-screenshot",
           "checked": "2026-06-15"
+        }
+      ]
+    },
+    {
+      "slug": "haina-from-china",
+      "name": "haina from china",
+      "aliases": [
+        "haina from china"
+      ],
+      "trackedAt": "2026-06-16",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-19",
+          "eventId": "illum-normie-10k99",
+          "eventTitle": "Normie Corp pres. 10K99",
+          "venue": "ILLUM",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-provided-illum-screenshot"
+        }
+      ],
+      "scope": "Normie Corp pres. 10K99 / ILLUM lineup-context profile",
+      "imageTheme": "rose",
+      "genres": [
+        "experimental club",
+        "bass context",
+        "ILLUM lineup context"
+      ],
+      "summary": "haina from china is preserved because the Normie Corp pres. 10K99 poster places the name in the 10K99 billing. Treat this as event-role context until a stronger profile source is added.",
+      "sourceNote": "User-provided ILLUM poster/ticket screenshots confirm this event-role appearance only. Do not add biography, label, or genre claims until a stronger artist source is found. SmartShanghai ILLUM is included only to anchor the venue context with an HTTP source; it is not artist biography or event confirmation.",
+      "sources": [
+        {
+          "label": "ILLUM Normie Corp pres. 10K99 poster screenshot",
+          "url": "assets/posters/illum-normie-10k99-2026-06-19-poster-source.jpg",
+          "status": "official-poster-screenshot",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "ILLUM Normie Corp pres. 10K99 ticketing screenshot",
+          "url": "assets/posters/illum-normie-10k99-2026-06-19-ticket-detail.jpg",
+          "status": "ticketing-screenshot",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "SmartShanghai ILLUM venue context",
+          "url": "https://www.smartshanghai.com/venue/34394/illum",
+          "status": "venue-context-only",
+          "checked": "2026-06-16"
+        }
+      ]
+    },
+    {
+      "slug": "handycam",
+      "name": "Handycam",
+      "aliases": [
+        "Handycam",
+        "handycam"
+      ],
+      "trackedAt": "2026-06-16",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-07-03",
+          "eventId": "yuyintang-cooling-water",
+          "eventTitle": "Cooling Water",
+          "venue": "Yuyintang Music Park B Hall",
+          "city": "Shanghai",
+          "status": "confirmed-by-showstart-and-yuyintang-screenshot"
+        }
+      ],
+      "scope": "Cooling Water / Yuyintang event-role profile",
+      "imageTheme": "cyan",
+      "genres": [
+        "experimental art rock",
+        "live band context",
+        "Yuyintang lineup"
+      ],
+      "summary": "Handycam is preserved for the Cooling Water bill at Yuyintang on 2026-07-03. ShowStart confirms the booking, and Yuyintang article text frames the sound as granular experimental art rock; broader biography was not independently verified in this pass.",
+      "sourceNote": "Use this as a screenshot- and ShowStart-backed event-role profile. Keep claims limited to the Cooling Water appearance and the sound description visible in Yuyintang's article screenshot/public ShowStart text.",
+      "sources": [
+        {
+          "label": "ShowStart Cooling Water listing",
+          "url": "https://www.showstart.com/event/300239",
+          "status": "event-ticketing-source",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "ShowStart Handycam artist page",
+          "url": "https://www.showstart.com/artist/25266497",
+          "status": "artist-page-context",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "Yuyintang Cooling Water article/ticket screenshot",
+          "url": "assets/posters/yuyintang-cooling-water-wechat-article.jpg",
+          "status": "artist-profile-screenshot",
+          "checked": "2026-06-16"
+        }
+      ]
+    },
+    {
+      "slug": "headrush",
+      "name": "Headrush",
+      "aliases": [
+        "Headrush"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-19",
+          "eventId": "abyss-faq-kirk",
+          "eventTitle": "FaQ Pres. KIRK",
+          "venue": "Abyss Shanghai",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-supplied-screenshot"
+        }
+      ],
+      "scope": "FaQ Pres. KIRK / Abyss event-role profile",
+      "imageTheme": "ember",
+      "genres": [
+        "hard techno context",
+        "rave context",
+        "Abyss lineup"
+      ],
+      "summary": "Headrush is preserved as part of the screenshot-confirmed FaQ Pres. KIRK lineup at Abyss on 2026-06-19. Broader artist biography and discography were not independently verified in this pass.",
+      "sourceNote": "Use this as a screenshot-backed event-role profile for FaQ Pres. KIRK. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+      "sources": [
+        {
+          "label": "Abyss June 2026 program screenshot",
+          "url": "assets/posters/abyss-june-2026-program.png",
+          "status": "official-social-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Yuyuan ticketing screenshot - Kirk at Abyss",
+          "url": "assets/posters/abyss-kirk-ticket.png",
+          "status": "wechat-miniprogram-ticketing-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "SmartShanghai Abyss venue context",
+          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+          "status": "venue-context",
+          "checked": "2026-06-15",
+          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
         }
       ]
     },
@@ -965,6 +1725,47 @@
       ]
     },
     {
+      "slug": "iin",
+      "name": "IIN",
+      "aliases": [
+        "IIN"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [],
+      "scope": "Liminal Dreams / Wigwam Shanghai scene context",
+      "imageTheme": "green",
+      "genres": [
+        "ambient context",
+        "techno context",
+        "experimental context",
+        "Shanghai scene"
+      ],
+      "summary": "Liminal Dreams note screenshot frames IIN as a Shanghai scene figure for the June 20 Wigwam edition, while intentionally leaving detailed biography open. Treat IIN as event-confirmed lineup context rather than an invented artist biography.",
+      "sourceNote": "Use the Liminal Dreams/Wigwam screenshots for event-role context; no standalone public artist source was verified in this pass.",
+      "sources": [
+        {
+          "label": "Liminal Dreams x Wigwam text-note screenshot",
+          "url": "assets/posters/wigwam-liminal-dreams-2026-06-20-notes.png",
+          "status": "artist-profile-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Liminal Dreams x Wigwam event poster screenshot",
+          "url": "assets/posters/wigwam-liminal-dreams-2026-06-20.jpg",
+          "status": "event-poster-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "SmartShanghai Wigwam venue context",
+          "url": "https://www.smartshanghai.com/venue/31681/wigwam_cafe",
+          "status": "venue-context",
+          "checked": "2026-06-15",
+          "note": "Venue context only; Liminal Dreams/Wigwam screenshots remain the source for IIN's June 20 lineup role."
+        }
+      ]
+    },
+    {
       "slug": "illsee",
       "name": "Illsee",
       "trackedAt": "2026-06-14",
@@ -1031,6 +1832,49 @@
           "label": "????? Endgame Fenrir listing",
           "url": "https://m.df962388.com/yanchu/384394.html",
           "status": "secondary-event-source",
+          "checked": "2026-06-14"
+        }
+      ]
+    },
+    {
+      "slug": "jasm-n",
+      "name": "Jasmín",
+      "aliases": [
+        "Jasmin",
+        "Jasmín",
+        "Jasmin Hoek"
+      ],
+      "trackedAt": "2026-06-14",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [],
+      "scope": "Heim Sauna / Shanghai watch profile",
+      "imageTheme": "cyan",
+      "genres": [
+        "techno",
+        "bass",
+        "dub",
+        "percussion",
+        "drum-and-bass"
+      ],
+      "summary": "Amsterdam-based Dutch-Argentinian DJ and producer attached to the June 20 Heim Sauna watch lead. Public profile sources support a techno, bass, dub, and percussion-led lane; event confirmation remains attached to the SmartShanghai row.",
+      "sourceNote": "Minor AM and Bandcamp support artist identity and sound context. These sources do not confirm Heim ticketing, set times, door price, or final running order.",
+      "sources": [
+        {
+          "label": "Jasmín Minor AM profile",
+          "url": "https://www.minor-am.com/roster/jasmin",
+          "status": "artist-profile",
+          "checked": "2026-06-14"
+        },
+        {
+          "label": "Jasmín Bandcamp",
+          "url": "https://jasminhoek.bandcamp.com/album/bite-the-hand-that-feeds-you",
+          "status": "artist-profile",
+          "checked": "2026-06-14"
+        },
+        {
+          "label": "SmartShanghai June 2026 clubbing guide",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist-event-source",
           "checked": "2026-06-14"
         }
       ]
@@ -1192,6 +2036,187 @@
       ]
     },
     {
+      "slug": "kirk",
+      "name": "Kirk",
+      "aliases": [
+        "Kirk"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-19",
+          "eventId": "abyss-faq-kirk",
+          "eventTitle": "FaQ Pres. KIRK",
+          "venue": "Abyss Shanghai",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-supplied-screenshot"
+        }
+      ],
+      "scope": "FaQ Pres. KIRK / Abyss event-role profile",
+      "imageTheme": "ember",
+      "genres": [
+        "hard techno context",
+        "rave context",
+        "Abyss lineup"
+      ],
+      "summary": "Kirk is preserved as part of the screenshot-confirmed FaQ Pres. KIRK lineup at Abyss on 2026-06-19. Broader artist biography and discography were not independently verified in this pass.",
+      "sourceNote": "Use this as a screenshot-backed event-role profile for FaQ Pres. KIRK. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+      "sources": [
+        {
+          "label": "Abyss June 2026 program screenshot",
+          "url": "assets/posters/abyss-june-2026-program.png",
+          "status": "official-social-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Yuyuan ticketing screenshot - Kirk at Abyss",
+          "url": "assets/posters/abyss-kirk-ticket.png",
+          "status": "wechat-miniprogram-ticketing-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "SmartShanghai Abyss venue context",
+          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+          "status": "venue-context",
+          "checked": "2026-06-15",
+          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+        }
+      ]
+    },
+    {
+      "slug": "knopha",
+      "name": "Knopha",
+      "aliases": [
+        "Knopha"
+      ],
+      "trackedAt": "2026-06-14",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [],
+      "scope": "China / Shanghai club source profile",
+      "imageTheme": "acid",
+      "genres": [
+        "house",
+        "techno",
+        "club",
+        "leftfield-dance"
+      ],
+      "summary": "China-based RA artist profile connected to recurring Shanghai and China club appearances, attached to the June 20 Heim Sauna watch lead.",
+      "sourceNote": "RA supports Knopha's artist identity, China location, Shanghai-heavy appearance history, and label/review context. SmartShanghai remains the event-level source for the June 20 Heim listing.",
+      "sources": [
+        {
+          "label": "Knopha Resident Advisor profile",
+          "url": "https://ra.co/dj/knopha",
+          "status": "artist-profile",
+          "checked": "2026-06-14"
+        },
+        {
+          "label": "SmartShanghai June 2026 clubbing guide",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist-event-source",
+          "checked": "2026-06-14"
+        }
+      ]
+    },
+    {
+      "slug": "kong-bb",
+      "name": "Kong BB",
+      "aliases": [
+        "Kong BB"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-26",
+          "eventId": "botox-fatale",
+          "eventTitle": "Obsesion Total",
+          "venue": "Abyss Shanghai",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-supplied-screenshot"
+        }
+      ],
+      "scope": "Obsesion Total / Abyss event-role profile",
+      "imageTheme": "steel",
+      "genres": [
+        "hard techno context",
+        "industrial context",
+        "Abyss lineup"
+      ],
+      "summary": "Kong BB is preserved as part of the screenshot-confirmed Obsesion Total lineup at Abyss on 2026-06-26. Broader artist biography was not independently verified in this pass.",
+      "sourceNote": "Use this as a screenshot-backed event-role profile for Obsesion Total. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+      "sources": [
+        {
+          "label": "Abyss June 2026 program screenshot",
+          "url": "assets/posters/abyss-june-2026-program.png",
+          "status": "official-social-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Yuyuan ticketing screenshot - Obsesion Total",
+          "url": "assets/posters/abyss-botox-fatal-ticket.png",
+          "status": "wechat-miniprogram-ticketing-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "SmartShanghai Abyss venue context",
+          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+          "status": "venue-context",
+          "checked": "2026-06-15",
+          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+        }
+      ]
+    },
+    {
+      "slug": "laglory",
+      "name": "LaGlory",
+      "aliases": [
+        "LaGlory"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-27",
+          "eventId": "abyss-cum-chemical-love",
+          "eventTitle": "C.U.M. Chemical Love",
+          "venue": "Abyss Shanghai",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-supplied-screenshot"
+        }
+      ],
+      "scope": "C.U.M. Chemical Love / Abyss event-role profile",
+      "imageTheme": "acid",
+      "genres": [
+        "hard techno context",
+        "rave context",
+        "Abyss lineup"
+      ],
+      "summary": "LaGlory is preserved as part of the screenshot-confirmed C.U.M. Chemical Love lineup at Abyss on 2026-06-27. Broader artist biography was not independently verified in this pass.",
+      "sourceNote": "Use this as a screenshot-backed event-role profile for C.U.M. Chemical Love. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+      "sources": [
+        {
+          "label": "Abyss June 2026 program screenshot",
+          "url": "assets/posters/abyss-june-2026-program.png",
+          "status": "official-social-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Yuyuan ticketing screenshot - C.U.M. Chemical Love",
+          "url": "assets/posters/abyss-cum-chemical-love-ticket.png",
+          "status": "wechat-miniprogram-ticketing-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "SmartShanghai Abyss venue context",
+          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+          "status": "venue-context",
+          "checked": "2026-06-15",
+          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+        }
+      ]
+    },
+    {
       "slug": "leo-monira",
       "name": "LEO MONIRA",
       "aliases": [
@@ -1221,6 +2246,146 @@
         {
           "label": "RA A.T.M Pres. LEO MONIRA event",
           "url": "https://ra.co/events/2466700",
+          "status": "trusted-ra",
+          "checked": "2026-06-14"
+        }
+      ]
+    },
+    {
+      "slug": "lolalita",
+      "name": "LOLALITA",
+      "aliases": [
+        "LOLALITA"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-20",
+          "eventId": "abyss-hardcore-melancholia",
+          "eventTitle": "Hardcore Melancholia",
+          "venue": "Abyss Shanghai",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-supplied-screenshot"
+        }
+      ],
+      "scope": "Hardcore Melancholia / Abyss event-role profile",
+      "imageTheme": "rose",
+      "genres": [
+        "hardcore context",
+        "hard dance context",
+        "rave context",
+        "Abyss lineup"
+      ],
+      "summary": "LOLALITA is preserved as part of the screenshot-confirmed Hardcore Melancholia lineup at Abyss on 2026-06-20. The event title supports a hard/hardcore context; broader standalone artist claims were not verified in this pass.",
+      "sourceNote": "Use this as a screenshot-backed event-role profile for Hardcore Melancholia. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+      "sources": [
+        {
+          "label": "Abyss June 2026 program screenshot",
+          "url": "assets/posters/abyss-june-2026-program.png",
+          "status": "official-social-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Yuyuan ticketing screenshot - Hardcore Melancholia",
+          "url": "assets/posters/abyss-hardcore-melancholia-ticket.png",
+          "status": "wechat-miniprogram-ticketing-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "SmartShanghai Abyss venue context",
+          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+          "status": "venue-context",
+          "checked": "2026-06-15",
+          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+        }
+      ]
+    },
+    {
+      "slug": "lucrecia-dalt",
+      "name": "Lucrecia Dalt",
+      "aliases": [
+        "Lucrecia Dalt"
+      ],
+      "trackedAt": "2026-06-16",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-07-16",
+          "eventId": "lucrecia-dalt-yuyintang",
+          "eventTitle": "Lucrecia Dalt 2026 China Tour",
+          "venue": "Yuyintang Music Park C Hall",
+          "city": "Shanghai",
+          "status": "confirmed-by-showstart-and-yuyintang-screenshot"
+        }
+      ],
+      "scope": "Lucrecia Dalt Shanghai / experimental electronic artist profile",
+      "imageTheme": "slate",
+      "genres": [
+        "experimental electronic",
+        "art pop",
+        "ambient",
+        "avant-garde"
+      ],
+      "summary": "Lucrecia Dalt is tracked here for the SO.READY / Yuyintang Shanghai stop on 2026-07-16. The event source frames the booking as Colombian dark-wave / experimental electronic, and public artist/label context supports treating this as a listening-room experimental-electronic pick rather than a dance-floor rave listing.",
+      "sourceNote": "ShowStart and Yuyintang/SO.READY screenshots confirm the Shanghai event. Artist/label links are profile context only and should not be used as proof of event timing or ticket state.",
+      "sources": [
+        {
+          "label": "ShowStart Lucrecia Dalt Shanghai listing",
+          "url": "https://www.showstart.com/event/300583",
+          "status": "event-ticketing-source",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "ShowStart Lucrecia Dalt artist page",
+          "url": "https://www.showstart.com/artist/26989305",
+          "status": "artist-page-context",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "Lucrecia Dalt official website",
+          "url": "https://lucreciadalt.com/",
+          "status": "artist-profile-context",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "RVNG Intl artist/catalog context",
+          "url": "https://rvng.bandcamp.com/music",
+          "status": "label-context",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "Lucrecia Dalt China tour poster screenshot",
+          "url": "assets/posters/lucrecia-dalt-yuyintang-2026-07-16.jpg",
+          "status": "official-poster-screenshot",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "Yuyintang Lucrecia Dalt ticket-info screenshot",
+          "url": "assets/posters/lucrecia-dalt-yuyintang-ticket-info.jpg",
+          "status": "official-wechat-ticket-info-screenshot",
+          "checked": "2026-06-16"
+        }
+      ]
+    },
+    {
+      "trackedAt": "2026-06-14",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [],
+      "slug": "luke-bye",
+      "name": "Luke Bye",
+      "scope": "POTENT lineup-only source profile",
+      "imageTheme": "gold",
+      "genres": [
+        "techno",
+        "club"
+      ],
+      "summary": "Lineup-only profile preserved for the Sciahri / POTENT booking. Public biography remains unverified.",
+      "sourceNote": "RA confirms Luke Bye on the June 20 POTENT lineup; keep exact artist context attached to event sources until a profile source is found.",
+      "sources": [
+        {
+          "label": "RA Sciahri POTENT event",
+          "url": "https://ra.co/events/2467511",
           "status": "trusted-ra",
           "checked": "2026-06-14"
         }
@@ -1263,25 +2428,51 @@
       ]
     },
     {
-      "trackedAt": "2026-06-14",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [],
-      "slug": "luke-bye",
-      "name": "Luke Bye",
-      "scope": "POTENT lineup-only source profile",
-      "imageTheme": "gold",
-      "genres": [
-        "techno",
-        "club"
+      "slug": "manqing",
+      "name": "Manqing",
+      "aliases": [
+        "Manqing",
+        "MANQING"
       ],
-      "summary": "Lineup-only profile preserved for the Sciahri / POTENT booking. Public biography remains unverified.",
-      "sourceNote": "RA confirms Luke Bye on the June 20 POTENT lineup; keep exact artist context attached to event sources until a profile source is found.",
+      "trackedAt": "2026-06-16",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-19",
+          "eventId": "illum-normie-10k99",
+          "eventTitle": "Normie Corp pres. 10K99",
+          "venue": "ILLUM",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-provided-illum-screenshot"
+        }
+      ],
+      "scope": "Normie Corp pres. 10K99 / ILLUM lineup-context profile",
+      "imageTheme": "rose",
+      "genres": [
+        "experimental club",
+        "bass context",
+        "ILLUM lineup context"
+      ],
+      "summary": "Manqing is preserved for the Normie Corp pres. 10K99 lineup at ILLUM on 2026-06-19. The supplied poster confirms the appearance; broader biography was not independently verified.",
+      "sourceNote": "User-provided ILLUM poster/ticket screenshots confirm this event-role appearance only. Do not add biography, label, or genre claims until a stronger artist source is found. SmartShanghai ILLUM is included only to anchor the venue context with an HTTP source; it is not artist biography or event confirmation.",
       "sources": [
         {
-          "label": "RA Sciahri POTENT event",
-          "url": "https://ra.co/events/2467511",
-          "status": "trusted-ra",
-          "checked": "2026-06-14"
+          "label": "ILLUM Normie Corp pres. 10K99 poster screenshot",
+          "url": "assets/posters/illum-normie-10k99-2026-06-19-poster-source.jpg",
+          "status": "official-poster-screenshot",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "ILLUM Normie Corp pres. 10K99 ticketing screenshot",
+          "url": "assets/posters/illum-normie-10k99-2026-06-19-ticket-detail.jpg",
+          "status": "ticketing-screenshot",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "SmartShanghai ILLUM venue context",
+          "url": "https://www.smartshanghai.com/venue/34394/illum",
+          "status": "venue-context-only",
+          "checked": "2026-06-16"
         }
       ]
     },
@@ -1338,6 +2529,47 @@
         }
       ],
       "itinerary": []
+    },
+    {
+      "slug": "mico",
+      "name": "MICO",
+      "aliases": [
+        "MICO Liu Wei",
+        "JungleMico Project"
+      ],
+      "trackedAt": "2026-06-14",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [],
+      "scope": "Cyber Buddha / ambient and IDM electronic profile",
+      "imageTheme": "cyan",
+      "genres": [
+        "ambient",
+        "downtempo",
+        "IDM",
+        "Chinese electronic"
+      ],
+      "summary": "Chinese electronic musician profile preserved for the Cyber Buddha Shanghai listing. Public event and release sources connect MICO to ambient, downtempo, IDM, and narrative electronic soundscapes.",
+      "sourceNote": "SmartShanghai confirms the June 26 Shanghai lineup; Bandcamp and public Chinese electronic-music writing support MICO's broader production context.",
+      "sources": [
+        {
+          "label": "SmartShanghai Cyber Buddha event profile",
+          "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
+          "status": "secondary-event-source",
+          "checked": "2026-06-14"
+        },
+        {
+          "label": "MICO Liu Wei Bandcamp release context",
+          "url": "https://e-werk.bandcamp.com/album/-",
+          "status": "artist-release-context",
+          "checked": "2026-06-14"
+        },
+        {
+          "label": "Chinese electronic music profile context",
+          "url": "https://electronicmusicinformation.com/gw/index/article_details.html?drysaltery_id=4064",
+          "status": "artist-profile",
+          "checked": "2026-06-14"
+        }
+      ]
     },
     {
       "slug": "mr-chang",
@@ -1445,6 +2677,55 @@
       ]
     },
     {
+      "slug": "nasty",
+      "name": "Na$ty",
+      "aliases": [
+        "NA$TY",
+        "Nasty",
+        "nastyhabits124"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [],
+      "scope": "Hexscape / Shanghai bass and PREME profile",
+      "imageTheme": "rose",
+      "genres": [
+        "bass",
+        "club",
+        "grime",
+        "trap",
+        "phonk"
+      ],
+      "summary": "Shanghai bass/club profile preserved for the Hexscape support lineup. RA, SmartShanghai, and 247tickets archive sources connect Na$ty to PREME, bass, club, grime, trap, and jungle-adjacent Shanghai lineups.",
+      "sourceNote": "Profile context supports the artist identity and Shanghai club lane. SmartShanghai remains the only current Hexscape event-level source.",
+      "sources": [
+        {
+          "label": "SmartShanghai Hexscape June 2026 guide",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist-event-source",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "RA Surreal Program Shenzhen profile context",
+          "url": "https://ra.co/events/1407225",
+          "status": "artist-profile",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "SmartShanghai Duality EXIT lineup context",
+          "url": "https://www.smartshanghai.com/event/duality-trust-issues-a-night-of-bass-jungle-and-experimental-sounds-2026-02-14",
+          "status": "previous-lineup-context",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "247tickets Arkham Halloween profile context",
+          "url": "https://www.247tickets.com/t/arkham-halloween-beyond-shimmer",
+          "status": "artist-profile",
+          "checked": "2026-06-15"
+        }
+      ]
+    },
+    {
       "slug": "nakin",
       "name": "NAKIN",
       "trackedAt": "2026-06-14",
@@ -1504,6 +2785,154 @@
           "url": "https://ra.co/events/2467512",
           "status": "trusted-ra",
           "checked": "2026-06-14"
+        }
+      ]
+    },
+    {
+      "slug": "nitta",
+      "name": "Nitta",
+      "aliases": [
+        "Nitta"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-19",
+          "eventId": "abyss-faq-kirk",
+          "eventTitle": "FaQ Pres. KIRK",
+          "venue": "Abyss Shanghai",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-supplied-screenshot"
+        }
+      ],
+      "scope": "FaQ Pres. KIRK / Abyss event-role profile",
+      "imageTheme": "ember",
+      "genres": [
+        "hard techno context",
+        "rave context",
+        "Abyss lineup"
+      ],
+      "summary": "Nitta is preserved as part of the screenshot-confirmed FaQ Pres. KIRK lineup at Abyss on 2026-06-19. Broader artist biography and discography were not independently verified in this pass.",
+      "sourceNote": "Use this as a screenshot-backed event-role profile for FaQ Pres. KIRK. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+      "sources": [
+        {
+          "label": "Abyss June 2026 program screenshot",
+          "url": "assets/posters/abyss-june-2026-program.png",
+          "status": "official-social-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Yuyuan ticketing screenshot - Kirk at Abyss",
+          "url": "assets/posters/abyss-kirk-ticket.png",
+          "status": "wechat-miniprogram-ticketing-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "SmartShanghai Abyss venue context",
+          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+          "status": "venue-context",
+          "checked": "2026-06-15",
+          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+        }
+      ]
+    },
+    {
+      "slug": "noodleprince",
+      "name": "Noodleprince",
+      "aliases": [
+        "Noodleprince"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-26",
+          "eventId": "botox-fatale",
+          "eventTitle": "Obsesion Total",
+          "venue": "Abyss Shanghai",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-supplied-screenshot"
+        }
+      ],
+      "scope": "Obsesion Total / Abyss event-role profile",
+      "imageTheme": "steel",
+      "genres": [
+        "hard techno context",
+        "industrial context",
+        "Abyss lineup"
+      ],
+      "summary": "Noodleprince is preserved as part of the screenshot-confirmed Obsesion Total lineup at Abyss on 2026-06-26. Broader artist biography was not independently verified in this pass.",
+      "sourceNote": "Use this as a screenshot-backed event-role profile for Obsesion Total. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+      "sources": [
+        {
+          "label": "Abyss June 2026 program screenshot",
+          "url": "assets/posters/abyss-june-2026-program.png",
+          "status": "official-social-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Yuyuan ticketing screenshot - Obsesion Total",
+          "url": "assets/posters/abyss-botox-fatal-ticket.png",
+          "status": "wechat-miniprogram-ticketing-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "SmartShanghai Abyss venue context",
+          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+          "status": "venue-context",
+          "checked": "2026-06-15",
+          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+        }
+      ]
+    },
+    {
+      "slug": "not-your-daddy",
+      "name": "Not Your Daddy",
+      "aliases": [
+        "Not Your Daddy"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-20",
+          "eventId": "abyss-hardcore-melancholia",
+          "eventTitle": "Hardcore Melancholia",
+          "venue": "Abyss Shanghai",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-supplied-screenshot"
+        }
+      ],
+      "scope": "Hardcore Melancholia / Abyss event-role profile",
+      "imageTheme": "rose",
+      "genres": [
+        "hardcore context",
+        "hard dance context",
+        "rave context",
+        "Abyss lineup"
+      ],
+      "summary": "Not Your Daddy is preserved as part of the screenshot-confirmed Hardcore Melancholia lineup at Abyss on 2026-06-20. The event title supports a hard/hardcore context; broader standalone artist claims were not verified in this pass.",
+      "sourceNote": "Use this as a screenshot-backed event-role profile for Hardcore Melancholia. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+      "sources": [
+        {
+          "label": "Abyss June 2026 program screenshot",
+          "url": "assets/posters/abyss-june-2026-program.png",
+          "status": "official-social-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Yuyuan ticketing screenshot - Hardcore Melancholia",
+          "url": "assets/posters/abyss-hardcore-melancholia-ticket.png",
+          "status": "wechat-miniprogram-ticketing-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "SmartShanghai Abyss venue context",
+          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+          "status": "venue-context",
+          "checked": "2026-06-15",
+          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
         }
       ]
     },
@@ -1659,6 +3088,55 @@
       ]
     },
     {
+      "slug": "prymara",
+      "name": "PRYMARA",
+      "aliases": [
+        "PRYMARA"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-27",
+          "eventId": "abyss-cum-chemical-love",
+          "eventTitle": "C.U.M. Chemical Love",
+          "venue": "Abyss Shanghai",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-supplied-screenshot"
+        }
+      ],
+      "scope": "C.U.M. Chemical Love / Abyss event-role profile",
+      "imageTheme": "acid",
+      "genres": [
+        "hard techno context",
+        "rave context",
+        "Abyss lineup"
+      ],
+      "summary": "PRYMARA is preserved as part of the screenshot-confirmed C.U.M. Chemical Love lineup at Abyss on 2026-06-27. Broader artist biography was not independently verified in this pass.",
+      "sourceNote": "Use this as a screenshot-backed event-role profile for C.U.M. Chemical Love. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+      "sources": [
+        {
+          "label": "Abyss June 2026 program screenshot",
+          "url": "assets/posters/abyss-june-2026-program.png",
+          "status": "official-social-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Yuyuan ticketing screenshot - C.U.M. Chemical Love",
+          "url": "assets/posters/abyss-cum-chemical-love-ticket.png",
+          "status": "wechat-miniprogram-ticketing-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "SmartShanghai Abyss venue context",
+          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+          "status": "venue-context",
+          "checked": "2026-06-15",
+          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+        }
+      ]
+    },
+    {
       "slug": "psyche",
       "name": "Psyche",
       "aliases": [
@@ -1682,6 +3160,55 @@
           "url": "https://ra.co/events/2466422",
           "status": "trusted-ra-lineup",
           "checked": "2026-06-14"
+        }
+      ]
+    },
+    {
+      "slug": "qiming-xingmelei",
+      "name": "Qiming / 行么雷",
+      "aliases": [
+        "Qiming",
+        "行么雷"
+      ],
+      "trackedAt": "2026-06-16",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-18",
+          "eventId": "illum-gravity-stateofff",
+          "eventTitle": "ILLUM Pres. 地心引力抓不住你",
+          "venue": "ILLUM",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-provided-illum-screenshot"
+        }
+      ],
+      "scope": "ILLUM Pres. 地心引力抓不住你 / ILLUM lineup-context profile",
+      "imageTheme": "acid",
+      "genres": [
+        "experimental club",
+        "bass context",
+        "ILLUM lineup context"
+      ],
+      "summary": "Qiming / 行么雷 is preserved for the ILLUM 地心引力抓不住你 lineup on 2026-06-18. The supplied poster supports the booking, but exact preferred spelling should be rechecked against organizer text.",
+      "sourceNote": "User-provided ILLUM poster/ticket screenshots confirm this event-role appearance only. Do not add biography, label, or genre claims until a stronger artist source is found. SmartShanghai ILLUM is included only to anchor the venue context with an HTTP source; it is not artist biography or event confirmation.",
+      "sources": [
+        {
+          "label": "ILLUM 地心引力抓不住你 poster screenshot",
+          "url": "assets/posters/illum-gravity-2026-06-18-poster-source.jpg",
+          "status": "official-poster-screenshot",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "ILLUM 地心引力抓不住你 ticketing screenshot",
+          "url": "assets/posters/illum-gravity-2026-06-18-ticket.jpg",
+          "status": "ticketing-screenshot",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "SmartShanghai ILLUM venue context",
+          "url": "https://www.smartshanghai.com/venue/34394/illum",
+          "status": "venue-context-only",
+          "checked": "2026-06-16"
         }
       ]
     },
@@ -1744,6 +3271,108 @@
       ]
     },
     {
+      "slug": "rain-ling",
+      "name": "Rain Ling",
+      "aliases": [
+        "Rain Ling"
+      ],
+      "trackedAt": "2026-06-14",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [],
+      "scope": "HOUSE OF ZUP / RA lineup-context source profile",
+      "imageTheme": "acid",
+      "genres": [
+        "house-context",
+        "disco-context",
+        "afternoon-session"
+      ],
+      "summary": "Resident Advisor lists Rain Ling on the June 14 HOUSE OF ZUP lineup at ZUP Pizza Bar. Keep this as event-lineup context, not a standalone biography.",
+      "sourceNote": "RA confirms the event role and 19:00-20:00 slot only; do not infer artist background, label affiliation, or regular Shanghai activity from this source.",
+      "sources": [
+        {
+          "label": "RA HOUSE OF ZUP lineup",
+          "url": "https://ra.co/events/2464155",
+          "status": "trusted-ra-lineup",
+          "checked": "2026-06-14"
+        }
+      ]
+    },
+    {
+      "slug": "rainsoft",
+      "name": "Rainsoft",
+      "aliases": [
+        "Rainsoft"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [],
+      "scope": "Liminal Dreams / Wigwam ambient and techno profile",
+      "imageTheme": "cyan",
+      "genres": [
+        "ambient",
+        "deep ambient",
+        "techno",
+        "Shanghai",
+        "restrained club"
+      ],
+      "summary": "Liminal Dreams note screenshot describes Rainsoft as a Shanghai-based musician and DJ drawing from deep ambient and techno, with a more restrained, softer, and fluid atmosphere.",
+      "sourceNote": "User-provided Liminal Dreams/Wigwam screenshots support the June 20 event role and profile-level ambient/techno context. They do not confirm ticketing, age policy, or final running order beyond the event row.",
+      "sources": [
+        {
+          "label": "Liminal Dreams Instagram event/profile search preview",
+          "url": "https://www.instagram.com/p/DZXV8WINwkB/",
+          "status": "social-index-profile-context",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Liminal Dreams x Wigwam lineup/time search preview",
+          "url": "https://www.instagram.com/p/DZFFVIPE8VW/",
+          "status": "social-index-lineup-context",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Liminal Dreams x Wigwam text-note screenshot",
+          "url": "assets/posters/wigwam-liminal-dreams-2026-06-20-notes.png",
+          "status": "artist-profile-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Liminal Dreams x Wigwam event poster screenshot",
+          "url": "assets/posters/wigwam-liminal-dreams-2026-06-20.jpg",
+          "status": "event-poster-screenshot",
+          "checked": "2026-06-15"
+        }
+      ]
+    },
+    {
+      "slug": "rb-sh",
+      "name": "RB//SH",
+      "aliases": [
+        "RB//SH"
+      ],
+      "trackedAt": "2026-06-14",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [],
+      "scope": "HOUSE OF ZUP / RA lineup-context source profile",
+      "imageTheme": "ember",
+      "genres": [
+        "house-context",
+        "disco-context",
+        "b2b-context",
+        "afternoon-session"
+      ],
+      "summary": "Resident Advisor lists RB//SH in the opening B2B slot for HOUSE OF ZUP at ZUP Pizza Bar. Keep this as event-lineup context, not a standalone biography.",
+      "sourceNote": "RA confirms the event role and 15:00-17:00 B2B slot with Yogijazz only; do not infer artist background, label affiliation, or regular Shanghai activity from this source.",
+      "sources": [
+        {
+          "label": "RA HOUSE OF ZUP lineup",
+          "url": "https://ra.co/events/2464155",
+          "status": "trusted-ra-lineup",
+          "checked": "2026-06-14"
+        }
+      ]
+    },
+    {
       "slug": "ruima",
       "name": "Ruima",
       "trackedAt": "2026-06-14",
@@ -1801,6 +3430,48 @@
           "label": "LocalHub BYYB onefortyasia radio takeover",
           "url": "https://localhub.to/shanghai/venue/byyb-radio/?lang=en",
           "status": "radio-context",
+          "checked": "2026-06-14"
+        }
+      ]
+    },
+    {
+      "slug": "sarayu",
+      "name": "Sarayu",
+      "aliases": [
+        "Sarayu",
+        "jay_sarayu"
+      ],
+      "trackedAt": "2026-06-14",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [],
+      "scope": "YOUSHAN / Wigwam watch profile",
+      "imageTheme": "gold",
+      "genres": [
+        "tech-house",
+        "minimal-techno",
+        "acid",
+        "disco",
+        "bangkok"
+      ],
+      "summary": "Bangkok-linked RA artist profile attached to the tentative June 27 YOUSHAN Festival warmup lead. Public RA sources support Sarayu's More Rice / Bar Temp. context and tech-house/minimal lane.",
+      "sourceNote": "RA artist/news sources are profile context only. The June 27 Wigwam warmup lineup still needs official platform-visible confirmation before promotion.",
+      "sources": [
+        {
+          "label": "Sarayu Resident Advisor profile",
+          "url": "https://ra.co/dj/sarayu",
+          "status": "artist-profile",
+          "checked": "2026-06-14"
+        },
+        {
+          "label": "Resident Advisor Mix Of The Day: Sarayu",
+          "url": "https://ra.co/news/85130",
+          "status": "artist-profile",
+          "checked": "2026-06-14"
+        },
+        {
+          "label": "jay_sarayu Instagram Youshan pre-party index preview",
+          "url": "https://www.instagram.com/p/DZB981GAW_g/",
+          "status": "social-index-lead",
           "checked": "2026-06-14"
         }
       ]
@@ -1874,6 +3545,104 @@
           "url": "https://ra.co/events/2232295",
           "status": "trusted-ra-watch",
           "checked": "2026-06-14"
+        }
+      ]
+    },
+    {
+      "slug": "shu",
+      "name": "SHU",
+      "aliases": [
+        "SHU"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-19",
+          "eventId": "abyss-faq-kirk",
+          "eventTitle": "FaQ Pres. KIRK",
+          "venue": "Abyss Shanghai",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-supplied-screenshot"
+        }
+      ],
+      "scope": "FaQ Pres. KIRK / Abyss event-role profile",
+      "imageTheme": "ember",
+      "genres": [
+        "hard techno context",
+        "rave context",
+        "Abyss lineup"
+      ],
+      "summary": "SHU is preserved as part of the screenshot-confirmed FaQ Pres. KIRK lineup at Abyss on 2026-06-19. Broader artist biography and discography were not independently verified in this pass.",
+      "sourceNote": "Use this as a screenshot-backed event-role profile for FaQ Pres. KIRK. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+      "sources": [
+        {
+          "label": "Abyss June 2026 program screenshot",
+          "url": "assets/posters/abyss-june-2026-program.png",
+          "status": "official-social-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Yuyuan ticketing screenshot - Kirk at Abyss",
+          "url": "assets/posters/abyss-kirk-ticket.png",
+          "status": "wechat-miniprogram-ticketing-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "SmartShanghai Abyss venue context",
+          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+          "status": "venue-context",
+          "checked": "2026-06-15",
+          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+        }
+      ]
+    },
+    {
+      "slug": "shukai",
+      "name": "Shukai",
+      "aliases": [
+        "Shukai"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-19",
+          "eventId": "abyss-faq-kirk",
+          "eventTitle": "FaQ Pres. KIRK",
+          "venue": "Abyss Shanghai",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-supplied-screenshot"
+        }
+      ],
+      "scope": "FaQ Pres. KIRK / Abyss event-role profile",
+      "imageTheme": "ember",
+      "genres": [
+        "hard techno context",
+        "rave context",
+        "Abyss lineup"
+      ],
+      "summary": "Shukai is preserved as part of the screenshot-confirmed FaQ Pres. KIRK lineup at Abyss on 2026-06-19. Broader artist biography and discography were not independently verified in this pass.",
+      "sourceNote": "Use this as a screenshot-backed event-role profile for FaQ Pres. KIRK. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+      "sources": [
+        {
+          "label": "Abyss June 2026 program screenshot",
+          "url": "assets/posters/abyss-june-2026-program.png",
+          "status": "official-social-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Yuyuan ticketing screenshot - Kirk at Abyss",
+          "url": "assets/posters/abyss-kirk-ticket.png",
+          "status": "wechat-miniprogram-ticketing-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "SmartShanghai Abyss venue context",
+          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+          "status": "venue-context",
+          "checked": "2026-06-15",
+          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
         }
       ]
     },
@@ -1964,6 +3733,83 @@
       "itinerary": []
     },
     {
+      "slug": "soback",
+      "name": "SOBACK",
+      "aliases": [
+        "SOBACK",
+        "SoBack"
+      ],
+      "trackedAt": "2026-06-16",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-20",
+          "eventId": "illum-soback-liquid-dolls",
+          "eventTitle": "LIQUID DOLLS Pres. SOBACK",
+          "venue": "ILLUM",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-provided-illum-screenshot"
+        }
+      ],
+      "scope": "LIQUID DOLLS Pres. SOBACK / ILLUM lineup-context profile",
+      "imageTheme": "ember",
+      "genres": [
+        "experimental club",
+        "bass context",
+        "ILLUM lineup context"
+      ],
+      "summary": "SOBACK is tracked here for the LIQUID DOLLS / ILLUM Shanghai stop on 2026-06-20. The supplied poster and ticketing screenshot confirm the China Tour event billing; support and broader profile context remain unresolved.",
+      "sourceNote": "User-provided ILLUM poster/ticket screenshots confirm this event-role appearance only. Do not add biography, label, or genre claims until a stronger artist source is found. SmartShanghai ILLUM is included only to anchor the venue context with an HTTP source; it is not artist biography or event confirmation.",
+      "sources": [
+        {
+          "label": "ILLUM LIQUID DOLLS Pres. SOBACK poster screenshot",
+          "url": "assets/posters/illum-soback-2026-06-20-poster.jpg",
+          "status": "official-poster-screenshot",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "ILLUM LIQUID DOLLS Pres. SOBACK ticketing screenshot",
+          "url": "assets/posters/illum-soback-2026-06-20-ticket.jpg",
+          "status": "ticketing-screenshot",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "SmartShanghai ILLUM venue context",
+          "url": "https://www.smartshanghai.com/venue/34394/illum",
+          "status": "venue-context-only",
+          "checked": "2026-06-16"
+        }
+      ]
+    },
+    {
+      "slug": "solo-enchanted-night-listing",
+      "name": "SOLO (Enchanted Night listing)",
+      "aliases": [
+        "SOLO (Enchanted Night listing)",
+        "@SOLO"
+      ],
+      "trackedAt": "2026-06-14",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [],
+      "scope": "Enchanted Night / disambiguated lineup-context source profile",
+      "imageTheme": "ember",
+      "genres": [
+        "disco-context",
+        "pop-context",
+        "2000s-party"
+      ],
+      "summary": "RA-listed SOLO name on Enchanted Night at The Nest, kept separate from Solo (UA) until a profile source proves they are the same artist.",
+      "sourceNote": "Resident Advisor confirms only the event-lineup name. This profile exists for disambiguation, not for biography.",
+      "sources": [
+        {
+          "label": "RA Enchanted Night lineup",
+          "url": "https://ra.co/events/2451822",
+          "status": "trusted-ra-lineup",
+          "checked": "2026-06-14"
+        }
+      ]
+    },
+    {
       "slug": "solo",
       "name": "Solo (UA)",
       "aliases": [
@@ -1992,34 +3838,6 @@
           "label": "RA Cybionte with Solo, YKK, & Heshang",
           "url": "https://ra.co/events/2467513",
           "status": "trusted-ra",
-          "checked": "2026-06-14"
-        }
-      ]
-    },
-    {
-      "slug": "solo-enchanted-night-listing",
-      "name": "SOLO (Enchanted Night listing)",
-      "aliases": [
-        "SOLO (Enchanted Night listing)",
-        "@SOLO"
-      ],
-      "trackedAt": "2026-06-14",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [],
-      "scope": "Enchanted Night / disambiguated lineup-context source profile",
-      "imageTheme": "ember",
-      "genres": [
-        "disco-context",
-        "pop-context",
-        "2000s-party"
-      ],
-      "summary": "RA-listed SOLO name on Enchanted Night at The Nest, kept separate from Solo (UA) until a profile source proves they are the same artist.",
-      "sourceNote": "Resident Advisor confirms only the event-lineup name. This profile exists for disambiguation, not for biography.",
-      "sources": [
-        {
-          "label": "RA Enchanted Night lineup",
-          "url": "https://ra.co/events/2451822",
-          "status": "trusted-ra-lineup",
           "checked": "2026-06-14"
         }
       ]
@@ -2094,6 +3912,55 @@
       ]
     },
     {
+      "slug": "stateofff",
+      "name": "StateOFFF",
+      "aliases": [
+        "StateOFFF",
+        "StateOFFF (CN)"
+      ],
+      "trackedAt": "2026-06-16",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-18",
+          "eventId": "illum-gravity-stateofff",
+          "eventTitle": "ILLUM Pres. 地心引力抓不住你",
+          "venue": "ILLUM",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-provided-illum-screenshot"
+        }
+      ],
+      "scope": "ILLUM Pres. 地心引力抓不住你 / ILLUM lineup-context profile",
+      "imageTheme": "acid",
+      "genres": [
+        "experimental club",
+        "bass context",
+        "ILLUM lineup context"
+      ],
+      "summary": "StateOFFF is preserved for the ILLUM 地心引力抓不住你 lineup on 2026-06-18. The supplied ILLUM poster confirms the booking; broader artist biography was not independently verified in this pass.",
+      "sourceNote": "User-provided ILLUM poster/ticket screenshots confirm this event-role appearance only. Do not add biography, label, or genre claims until a stronger artist source is found. SmartShanghai ILLUM is included only to anchor the venue context with an HTTP source; it is not artist biography or event confirmation.",
+      "sources": [
+        {
+          "label": "ILLUM 地心引力抓不住你 poster screenshot",
+          "url": "assets/posters/illum-gravity-2026-06-18-poster-source.jpg",
+          "status": "official-poster-screenshot",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "ILLUM 地心引力抓不住你 ticketing screenshot",
+          "url": "assets/posters/illum-gravity-2026-06-18-ticket.jpg",
+          "status": "ticketing-screenshot",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "SmartShanghai ILLUM venue context",
+          "url": "https://www.smartshanghai.com/venue/34394/illum",
+          "status": "venue-context-only",
+          "checked": "2026-06-16"
+        }
+      ]
+    },
+    {
       "trackedAt": "2026-06-14",
       "checkedByTimezone": "Asia/Shanghai",
       "itinerary": [],
@@ -2146,6 +4013,46 @@
       ]
     },
     {
+      "slug": "taiga",
+      "name": "Taiga",
+      "aliases": [
+        "TAIGA"
+      ],
+      "trackedAt": "2026-06-14",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [],
+      "scope": "Cyber Buddha / Chengdu psychedelic nomadic electronic profile",
+      "imageTheme": "gold",
+      "genres": [
+        "psychedelic electronic",
+        "nomadic electronic",
+        "live electronics",
+        "folk-electronic"
+      ],
+      "summary": "Chengdu-connected duo preserved for the Cyber Buddha Shanghai listing. Public profile sources describe Taiga as a psychedelic electronic project with Inner Mongolia, Xinjiang, and nomadic-music context.",
+      "sourceNote": "SmartShanghai confirms the June 26 Shanghai lineup; Star Wax and WOMEX/Ozora-style profile sources support the Taiga sound and identity context.",
+      "sources": [
+        {
+          "label": "SmartShanghai Cyber Buddha event profile",
+          "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
+          "status": "secondary-event-source",
+          "checked": "2026-06-14"
+        },
+        {
+          "label": "Star Wax Taiga profile",
+          "url": "https://www.starwaxmag.com/news/taiga",
+          "status": "artist-profile",
+          "checked": "2026-06-14"
+        },
+        {
+          "label": "WOMEX Taiga profile",
+          "url": "https://www.womex.com/virtual/more_zvukov_agency/taiga",
+          "status": "artist-profile",
+          "checked": "2026-06-14"
+        }
+      ]
+    },
+    {
       "slug": "tevez",
       "name": "Tevez",
       "aliases": [
@@ -2168,6 +4075,47 @@
           "label": "RA Bloom Season 1 Grand Final lineup",
           "url": "https://ra.co/events/2456798",
           "status": "trusted-ra-lineup",
+          "checked": "2026-06-14"
+        }
+      ]
+    },
+    {
+      "slug": "the-hymmapan-electron",
+      "name": "The Hymmapan Electron",
+      "aliases": [
+        "Hymmapan Electron",
+        "Isan Cyber"
+      ],
+      "trackedAt": "2026-06-14",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [],
+      "scope": "Cyber Buddha / Thai Isan electronic live profile",
+      "imageTheme": "acid",
+      "genres": [
+        "Isan folk",
+        "electronic",
+        "psychedelic techno",
+        "live electronics"
+      ],
+      "summary": "Thailand-linked live electronic project preserved for the Cyber Buddha Shanghai listing. Public event and performance sources frame the act around Isan folk material, electronic rhythm, and experimental live context.",
+      "sourceNote": "SmartShanghai and 247tickets support the June 26 Shanghai lineup and ticket route; public performance/video sources support the broader Isan-electronic sound context.",
+      "sources": [
+        {
+          "label": "SmartShanghai Cyber Buddha event profile",
+          "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
+          "status": "secondary-event-source",
+          "checked": "2026-06-14"
+        },
+        {
+          "label": "247tickets The Hymmapan Electron Shanghai listing",
+          "url": "https://www.247tickets.com/t/the-hymmapan-electron-shanghai",
+          "status": "secondary-ticketing",
+          "checked": "2026-06-14"
+        },
+        {
+          "label": "Tuktuk Radio The Hymmapan Electron performance context",
+          "url": "https://www.youtube.com/watch?v=Wrwf5fj4zNI",
+          "status": "performance-context",
           "checked": "2026-06-14"
         }
       ]
@@ -2287,6 +4235,101 @@
       ]
     },
     {
+      "slug": "toss",
+      "name": "Toss",
+      "aliases": [
+        "Toss",
+        "Toss (VN)"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [],
+      "scope": "Liminal Dreams / Wigwam ambient and outer-music profile",
+      "imageTheme": "green",
+      "genres": [
+        "ambient",
+        "outer music",
+        "experimental",
+        "Liminal Dreams"
+      ],
+      "summary": "Liminal Dreams note screenshot says Liminal Dreams member Toss will be present for the June 20 Wigwam edition. Keep the profile centered on event-role and collective context.",
+      "sourceNote": "Local Liminal Dreams/Wigwam screenshots confirm the June 20 role; older RA/profile context remains supplemental.",
+      "sources": [
+        {
+          "label": "RA Voltmar & Toss at Wigwam profile context",
+          "url": "https://de.ra.co/events/1989830",
+          "status": "artist-profile",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Liminal Dreams x Wigwam lineup/time search preview",
+          "url": "https://www.instagram.com/p/DZFFVIPE8VW/",
+          "status": "social-index-lineup-context",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Liminal Dreams x Wigwam text-note screenshot",
+          "url": "assets/posters/wigwam-liminal-dreams-2026-06-20-notes.png",
+          "status": "artist-profile-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Liminal Dreams x Wigwam event poster screenshot",
+          "url": "assets/posters/wigwam-liminal-dreams-2026-06-20.jpg",
+          "status": "event-poster-screenshot",
+          "checked": "2026-06-15"
+        }
+      ]
+    },
+    {
+      "slug": "toyn",
+      "name": "Toyn",
+      "aliases": [
+        "TOYN",
+        "2yn100"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [],
+      "scope": "Hexscape / bass and footwork profile",
+      "imageTheme": "gold",
+      "genres": [
+        "footwork",
+        "UK bass",
+        "bass",
+        "jungle",
+        "club"
+      ],
+      "summary": "Bass/footwork profile preserved for the Hexscape support lineup. BAIHUI and RA sources place Toyn in footwork, UK bass, jungle, and club-music contexts.",
+      "sourceNote": "SmartShanghai confirms Toyn on the current Hexscape support bill; BAIHUI and RA sources provide profile context only.",
+      "sources": [
+        {
+          "label": "SmartShanghai Hexscape June 2026 guide",
+          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+          "status": "watchlist-event-source",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "BAIHUI The Roof Radio w/ TOYN",
+          "url": "https://baihui.live/shows/the-roof-radio-w-toyn-25-02-24/en/",
+          "status": "radio-context",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "RA KNOT Pres. CAM GIRL lineup context",
+          "url": "https://ra.co/events/2422723",
+          "status": "previous-lineup-context",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "BAIHUI The Roof Radio host index",
+          "url": "https://baihui.live/hosts/the-roof-radio/en/",
+          "status": "radio-context",
+          "checked": "2026-06-15"
+        }
+      ]
+    },
+    {
       "slug": "tsing",
       "name": "Tsing",
       "aliases": [
@@ -2310,6 +4353,152 @@
           "url": "https://ra.co/events/2455159",
           "status": "trusted-ra-lineup",
           "checked": "2026-06-14"
+        }
+      ]
+    },
+    {
+      "slug": "tui",
+      "name": "TUI",
+      "aliases": [
+        "TUI"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-26",
+          "eventId": "botox-fatale",
+          "eventTitle": "Obsesion Total",
+          "venue": "Abyss Shanghai",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-supplied-screenshot"
+        }
+      ],
+      "scope": "Obsesion Total / Abyss event-role profile",
+      "imageTheme": "steel",
+      "genres": [
+        "hard techno context",
+        "industrial context",
+        "Abyss lineup"
+      ],
+      "summary": "TUI is preserved as part of the screenshot-confirmed Obsesion Total lineup at Abyss on 2026-06-26. Broader artist biography was not independently verified in this pass.",
+      "sourceNote": "Use this as a screenshot-backed event-role profile for Obsesion Total. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+      "sources": [
+        {
+          "label": "Abyss June 2026 program screenshot",
+          "url": "assets/posters/abyss-june-2026-program.png",
+          "status": "official-social-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Yuyuan ticketing screenshot - Obsesion Total",
+          "url": "assets/posters/abyss-botox-fatal-ticket.png",
+          "status": "wechat-miniprogram-ticketing-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "SmartShanghai Abyss venue context",
+          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+          "status": "venue-context",
+          "checked": "2026-06-15",
+          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+        }
+      ]
+    },
+    {
+      "slug": "tuihua-lichang",
+      "name": "Tuihua Lichang",
+      "aliases": [
+        "退化立场",
+        "Tuihua Lichang"
+      ],
+      "trackedAt": "2026-06-16",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-07-03",
+          "eventId": "yuyintang-cooling-water",
+          "eventTitle": "Cooling Water",
+          "venue": "Yuyintang Music Park B Hall",
+          "city": "Shanghai",
+          "status": "confirmed-by-showstart-and-yuyintang-screenshot"
+        }
+      ],
+      "scope": "Cooling Water / Yuyintang instrumental-rock profile",
+      "imageTheme": "cyan",
+      "genres": [
+        "instrumental rock",
+        "experimental rock",
+        "live band context"
+      ],
+      "summary": "Tuihua Lichang / 退化立场 is preserved for the Cooling Water bill at Yuyintang on 2026-07-03. ShowStart confirms the booking, and Yuyintang article text frames the act around instrumental rock and spatial deconstruction.",
+      "sourceNote": "Use this as a ShowStart- and Yuyintang-screenshot-backed event-role profile. Broader discography and biography were not verified in this pass.",
+      "sources": [
+        {
+          "label": "ShowStart Cooling Water listing",
+          "url": "https://www.showstart.com/event/300239",
+          "status": "event-ticketing-source",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "ShowStart Tuihua Lichang artist page",
+          "url": "https://www.showstart.com/artist/11124791",
+          "status": "artist-page-context",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "Yuyintang Cooling Water article/ticket screenshot",
+          "url": "assets/posters/yuyintang-cooling-water-wechat-article.jpg",
+          "status": "artist-profile-screenshot",
+          "checked": "2026-06-16"
+        }
+      ]
+    },
+    {
+      "slug": "v-xwi",
+      "name": "V / XWI",
+      "aliases": [
+        "V XWI"
+      ],
+      "trackedAt": "2026-06-16",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-19",
+          "eventId": "illum-normie-10k99",
+          "eventTitle": "Normie Corp pres. 10K99",
+          "venue": "ILLUM",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-provided-illum-screenshot"
+        }
+      ],
+      "scope": "Normie Corp pres. 10K99 / ILLUM lineup-context profile",
+      "imageTheme": "rose",
+      "genres": [
+        "experimental club",
+        "bass context",
+        "ILLUM lineup context"
+      ],
+      "summary": "V / XWI is a visually unclear support credit on the Normie Corp pres. 10K99 poster. Keep source-faithful and recheck organizer text before using this as a stable artist identity.",
+      "sourceNote": "User-provided ILLUM poster/ticket screenshots confirm this event-role appearance only. Do not add biography, label, or genre claims until a stronger artist source is found. SmartShanghai ILLUM is included only to anchor the venue context with an HTTP source; it is not artist biography or event confirmation.",
+      "sources": [
+        {
+          "label": "ILLUM Normie Corp pres. 10K99 poster screenshot",
+          "url": "assets/posters/illum-normie-10k99-2026-06-19-poster-source.jpg",
+          "status": "official-poster-screenshot",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "ILLUM Normie Corp pres. 10K99 ticketing screenshot",
+          "url": "assets/posters/illum-normie-10k99-2026-06-19-ticket-detail.jpg",
+          "status": "ticketing-screenshot",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "SmartShanghai ILLUM venue context",
+          "url": "https://www.smartshanghai.com/venue/34394/illum",
+          "status": "venue-context-only",
+          "checked": "2026-06-16"
         }
       ]
     },
@@ -2377,801 +4566,6 @@
       ]
     },
     {
-      "slug": "xiaolaba",
-      "name": "Xiaolaba",
-      "aliases": [
-        "Xiaolaba",
-        "Xiao Laba",
-        "小喇叭"
-      ],
-      "trackedAt": "2026-06-15",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [],
-      "scope": "Wigwam Weekly Listening / Shanghai local DJ context",
-      "imageTheme": "ember",
-      "genres": [
-        "electronic listening",
-        "local DJ context",
-        "club context"
-      ],
-      "summary": "Wigwam screenshots confirm Xiaolaba / 小喇叭 for a June 17 Weekly Listening event and provide the phrase Just Live for You for One Day. No stronger standalone music biography is attached, so keep profile claims event-level.",
-      "sourceNote": "Use the Wigwam poster/profile screenshots as event identity context only; avoid broad genre or biography claims until stronger artist sources are verified.",
-      "sources": [
-        {
-          "label": "SmartShanghai ALTER. Pavillon listing",
-          "url": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
-          "status": "lineup-context",
-          "checked": "2026-06-14"
-        },
-        {
-          "label": "Wigwam Xiaolaba artist profile screenshot",
-          "url": "assets/posters/wigwam-xiaolaba-profile.jpg",
-          "status": "artist-profile-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "Wigwam Weekly Listening Xiaolaba poster screenshot",
-          "url": "assets/posters/wigwam-weekly-listening-xiaolaba-2026-06-17.jpg",
-          "status": "event-poster-screenshot",
-          "checked": "2026-06-15"
-        }
-      ]
-    },
-    {
-      "slug": "bolobolo",
-      "name": "Bolobolo",
-      "aliases": [
-        "Bolobolo"
-      ],
-      "trackedAt": "2026-06-14",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [],
-      "scope": "HOUSE OF ZUP / RA lineup-context source profile",
-      "imageTheme": "gold",
-      "genres": [
-        "house-context",
-        "disco-context",
-        "afternoon-session"
-      ],
-      "summary": "Resident Advisor lists Bolobolo on the June 14 HOUSE OF ZUP lineup at ZUP Pizza Bar. Keep this as event-lineup context, not a standalone biography.",
-      "sourceNote": "RA confirms the event role and 17:00-18:00 slot only; do not infer artist background, label affiliation, or regular Shanghai activity from this source.",
-      "sources": [
-        {
-          "label": "RA HOUSE OF ZUP lineup",
-          "url": "https://ra.co/events/2464155",
-          "status": "trusted-ra-lineup",
-          "checked": "2026-06-14"
-        }
-      ]
-    },
-    {
-      "slug": "floating",
-      "name": "FLOATING",
-      "aliases": [
-        "FLOATING"
-      ],
-      "trackedAt": "2026-06-14",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [],
-      "scope": "HOUSE OF ZUP / RA lineup-context source profile",
-      "imageTheme": "cyan",
-      "genres": [
-        "house-context",
-        "disco-context",
-        "afternoon-session"
-      ],
-      "summary": "Resident Advisor lists FLOATING on the June 14 HOUSE OF ZUP lineup at ZUP Pizza Bar. Keep this as event-lineup context, not a standalone biography.",
-      "sourceNote": "RA confirms the event role and 20:00-21:00 slot only; do not infer artist background, label affiliation, or regular Shanghai activity from this source.",
-      "sources": [
-        {
-          "label": "RA HOUSE OF ZUP lineup",
-          "url": "https://ra.co/events/2464155",
-          "status": "trusted-ra-lineup",
-          "checked": "2026-06-14"
-        }
-      ]
-    },
-    {
-      "slug": "gabrielle-lin",
-      "name": "Gabrielle Lin",
-      "aliases": [
-        "Gabrielle Lin"
-      ],
-      "trackedAt": "2026-06-14",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [],
-      "scope": "HOUSE OF ZUP / RA lineup-context source profile",
-      "imageTheme": "rose",
-      "genres": [
-        "house-context",
-        "disco-context",
-        "afternoon-session"
-      ],
-      "summary": "Resident Advisor lists Gabrielle Lin on the June 14 HOUSE OF ZUP lineup at ZUP Pizza Bar. Keep this as event-lineup context, not a standalone biography.",
-      "sourceNote": "RA confirms the event role and 18:00-19:00 slot only; do not infer artist background, label affiliation, or regular Shanghai activity from this source.",
-      "sources": [
-        {
-          "label": "RA HOUSE OF ZUP lineup",
-          "url": "https://ra.co/events/2464155",
-          "status": "trusted-ra-lineup",
-          "checked": "2026-06-14"
-        }
-      ]
-    },
-    {
-      "slug": "rain-ling",
-      "name": "Rain Ling",
-      "aliases": [
-        "Rain Ling"
-      ],
-      "trackedAt": "2026-06-14",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [],
-      "scope": "HOUSE OF ZUP / RA lineup-context source profile",
-      "imageTheme": "acid",
-      "genres": [
-        "house-context",
-        "disco-context",
-        "afternoon-session"
-      ],
-      "summary": "Resident Advisor lists Rain Ling on the June 14 HOUSE OF ZUP lineup at ZUP Pizza Bar. Keep this as event-lineup context, not a standalone biography.",
-      "sourceNote": "RA confirms the event role and 19:00-20:00 slot only; do not infer artist background, label affiliation, or regular Shanghai activity from this source.",
-      "sources": [
-        {
-          "label": "RA HOUSE OF ZUP lineup",
-          "url": "https://ra.co/events/2464155",
-          "status": "trusted-ra-lineup",
-          "checked": "2026-06-14"
-        }
-      ]
-    },
-    {
-      "slug": "rb-sh",
-      "name": "RB//SH",
-      "aliases": [
-        "RB//SH"
-      ],
-      "trackedAt": "2026-06-14",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [],
-      "scope": "HOUSE OF ZUP / RA lineup-context source profile",
-      "imageTheme": "ember",
-      "genres": [
-        "house-context",
-        "disco-context",
-        "b2b-context",
-        "afternoon-session"
-      ],
-      "summary": "Resident Advisor lists RB//SH in the opening B2B slot for HOUSE OF ZUP at ZUP Pizza Bar. Keep this as event-lineup context, not a standalone biography.",
-      "sourceNote": "RA confirms the event role and 15:00-17:00 B2B slot with Yogijazz only; do not infer artist background, label affiliation, or regular Shanghai activity from this source.",
-      "sources": [
-        {
-          "label": "RA HOUSE OF ZUP lineup",
-          "url": "https://ra.co/events/2464155",
-          "status": "trusted-ra-lineup",
-          "checked": "2026-06-14"
-        }
-      ]
-    },
-    {
-      "slug": "yogijazz",
-      "name": "Yogijazz",
-      "aliases": [
-        "Yogijazz"
-      ],
-      "trackedAt": "2026-06-14",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [],
-      "scope": "HOUSE OF ZUP / RA lineup-context source profile",
-      "imageTheme": "gold",
-      "genres": [
-        "house-context",
-        "disco-context",
-        "b2b-context",
-        "afternoon-session"
-      ],
-      "summary": "Resident Advisor lists Yogijazz in the opening B2B slot for HOUSE OF ZUP at ZUP Pizza Bar. Keep this as event-lineup context, not a standalone biography.",
-      "sourceNote": "RA confirms the event role and 15:00-17:00 B2B slot with RB//SH only; do not infer artist background, label affiliation, or regular Shanghai activity from this source.",
-      "sources": [
-        {
-          "label": "RA HOUSE OF ZUP lineup",
-          "url": "https://ra.co/events/2464155",
-          "status": "trusted-ra-lineup",
-          "checked": "2026-06-14"
-        }
-      ]
-    },
-    {
-      "slug": "yiyoo",
-      "name": "Yiyoo",
-      "aliases": [
-        "Yiyoo"
-      ],
-      "trackedAt": "2026-06-14",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [],
-      "scope": "Bloom / EXIT MC source profile",
-      "imageTheme": "rose",
-      "genres": [
-        "mc",
-        "house-context",
-        "hip-hop-context"
-      ],
-      "summary": "RA-listed MC for Bloom Season 1 Grand Final at EXIT. The profile is kept to avoid misreading the listing as an unverified DJ booking.",
-      "sourceNote": "Resident Advisor confirms the June 17 EXIT role as MC; keep set-time and performance claims attached to the event row only.",
-      "sources": [
-        {
-          "label": "RA Bloom Season 1 Grand Final lineup",
-          "url": "https://ra.co/events/2456798",
-          "status": "trusted-ra-lineup",
-          "checked": "2026-06-14"
-        }
-      ]
-    },
-    {
-      "slug": "jasm-n",
-      "name": "Jasmín",
-      "aliases": [
-        "Jasmin",
-        "Jasmín",
-        "Jasmin Hoek"
-      ],
-      "trackedAt": "2026-06-14",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [],
-      "scope": "Heim Sauna / Shanghai watch profile",
-      "imageTheme": "cyan",
-      "genres": [
-        "techno",
-        "bass",
-        "dub",
-        "percussion",
-        "drum-and-bass"
-      ],
-      "summary": "Amsterdam-based Dutch-Argentinian DJ and producer attached to the June 20 Heim Sauna watch lead. Public profile sources support a techno, bass, dub, and percussion-led lane; event confirmation remains attached to the SmartShanghai row.",
-      "sourceNote": "Minor AM and Bandcamp support artist identity and sound context. These sources do not confirm Heim ticketing, set times, door price, or final running order.",
-      "sources": [
-        {
-          "label": "Jasmín Minor AM profile",
-          "url": "https://www.minor-am.com/roster/jasmin",
-          "status": "artist-profile",
-          "checked": "2026-06-14"
-        },
-        {
-          "label": "Jasmín Bandcamp",
-          "url": "https://jasminhoek.bandcamp.com/album/bite-the-hand-that-feeds-you",
-          "status": "artist-profile",
-          "checked": "2026-06-14"
-        },
-        {
-          "label": "SmartShanghai June 2026 clubbing guide",
-          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
-          "status": "watchlist-event-source",
-          "checked": "2026-06-14"
-        }
-      ]
-    },
-    {
-      "slug": "knopha",
-      "name": "Knopha",
-      "aliases": [
-        "Knopha"
-      ],
-      "trackedAt": "2026-06-14",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [],
-      "scope": "China / Shanghai club source profile",
-      "imageTheme": "acid",
-      "genres": [
-        "house",
-        "techno",
-        "club",
-        "leftfield-dance"
-      ],
-      "summary": "China-based RA artist profile connected to recurring Shanghai and China club appearances, attached to the June 20 Heim Sauna watch lead.",
-      "sourceNote": "RA supports Knopha's artist identity, China location, Shanghai-heavy appearance history, and label/review context. SmartShanghai remains the event-level source for the June 20 Heim listing.",
-      "sources": [
-        {
-          "label": "Knopha Resident Advisor profile",
-          "url": "https://ra.co/dj/knopha",
-          "status": "artist-profile",
-          "checked": "2026-06-14"
-        },
-        {
-          "label": "SmartShanghai June 2026 clubbing guide",
-          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
-          "status": "watchlist-event-source",
-          "checked": "2026-06-14"
-        }
-      ]
-    },
-    {
-      "slug": "sarayu",
-      "name": "Sarayu",
-      "aliases": [
-        "Sarayu",
-        "jay_sarayu"
-      ],
-      "trackedAt": "2026-06-14",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [],
-      "scope": "YOUSHAN / Wigwam watch profile",
-      "imageTheme": "gold",
-      "genres": [
-        "tech-house",
-        "minimal-techno",
-        "acid",
-        "disco",
-        "bangkok"
-      ],
-      "summary": "Bangkok-linked RA artist profile attached to the tentative June 27 YOUSHAN Festival warmup lead. Public RA sources support Sarayu's More Rice / Bar Temp. context and tech-house/minimal lane.",
-      "sourceNote": "RA artist/news sources are profile context only. The June 27 Wigwam warmup lineup still needs official platform-visible confirmation before promotion.",
-      "sources": [
-        {
-          "label": "Sarayu Resident Advisor profile",
-          "url": "https://ra.co/dj/sarayu",
-          "status": "artist-profile",
-          "checked": "2026-06-14"
-        },
-        {
-          "label": "Resident Advisor Mix Of The Day: Sarayu",
-          "url": "https://ra.co/news/85130",
-          "status": "artist-profile",
-          "checked": "2026-06-14"
-        },
-        {
-          "label": "jay_sarayu Instagram Youshan pre-party index preview",
-          "url": "https://www.instagram.com/p/DZB981GAW_g/",
-          "status": "social-index-lead",
-          "checked": "2026-06-14"
-        }
-      ]
-    },
-    {
-      "slug": "elaheh",
-      "name": "Elaheh",
-      "aliases": [
-        "Elaheh",
-        "elliekhodayar"
-      ],
-      "trackedAt": "2026-06-14",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [],
-      "scope": "YOUSHAN / Wigwam watch profile",
-      "imageTheme": "rose",
-      "genres": [
-        "house",
-        "minimal",
-        "techno",
-        "bangkok"
-      ],
-      "summary": "Thailand-based RA artist profile attached to the tentative June 27 YOUSHAN Festival warmup lead. RA supports Elaheh's Bangkok/Thailand club context and house/minimal/techno lane.",
-      "sourceNote": "RA profile/event sources are artist context only. The June 27 Wigwam warmup b2b lead remains social-index only until platform-visible confirmation.",
-      "sources": [
-        {
-          "label": "Elaheh Resident Advisor profile",
-          "url": "https://ra.co/dj/elaheh",
-          "status": "artist-profile",
-          "checked": "2026-06-14"
-        },
-        {
-          "label": "Resident Advisor Elaheh & The Outsider event context",
-          "url": "https://ra.co/events/2462725",
-          "status": "artist-profile",
-          "checked": "2026-06-14"
-        },
-        {
-          "label": "jay_sarayu Instagram Youshan pre-party index preview",
-          "url": "https://www.instagram.com/p/DZB981GAW_g/",
-          "status": "social-index-lead",
-          "checked": "2026-06-14"
-        }
-      ]
-    },
-    {
-      "slug": "rainsoft",
-      "name": "Rainsoft",
-      "aliases": [
-        "Rainsoft"
-      ],
-      "trackedAt": "2026-06-15",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [],
-      "scope": "Liminal Dreams / Wigwam ambient and techno profile",
-      "imageTheme": "cyan",
-      "genres": [
-        "ambient",
-        "deep ambient",
-        "techno",
-        "Shanghai",
-        "restrained club"
-      ],
-      "summary": "Liminal Dreams note screenshot describes Rainsoft as a Shanghai-based musician and DJ drawing from deep ambient and techno, with a more restrained, softer, and fluid atmosphere.",
-      "sourceNote": "User-provided Liminal Dreams/Wigwam screenshots support the June 20 event role and profile-level ambient/techno context. They do not confirm ticketing, age policy, or final running order beyond the event row.",
-      "sources": [
-        {
-          "label": "Liminal Dreams Instagram event/profile search preview",
-          "url": "https://www.instagram.com/p/DZXV8WINwkB/",
-          "status": "social-index-profile-context",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "Liminal Dreams x Wigwam lineup/time search preview",
-          "url": "https://www.instagram.com/p/DZFFVIPE8VW/",
-          "status": "social-index-lineup-context",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "Liminal Dreams x Wigwam text-note screenshot",
-          "url": "assets/posters/wigwam-liminal-dreams-2026-06-20-notes.png",
-          "status": "artist-profile-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "Liminal Dreams x Wigwam event poster screenshot",
-          "url": "assets/posters/wigwam-liminal-dreams-2026-06-20.jpg",
-          "status": "event-poster-screenshot",
-          "checked": "2026-06-15"
-        }
-      ]
-    },
-    {
-      "slug": "toss",
-      "name": "Toss",
-      "aliases": [
-        "Toss",
-        "Toss (VN)"
-      ],
-      "trackedAt": "2026-06-15",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [],
-      "scope": "Liminal Dreams / Wigwam ambient and outer-music profile",
-      "imageTheme": "green",
-      "genres": [
-        "ambient",
-        "outer music",
-        "experimental",
-        "Liminal Dreams"
-      ],
-      "summary": "Liminal Dreams note screenshot says Liminal Dreams member Toss will be present for the June 20 Wigwam edition. Keep the profile centered on event-role and collective context.",
-      "sourceNote": "Local Liminal Dreams/Wigwam screenshots confirm the June 20 role; older RA/profile context remains supplemental.",
-      "sources": [
-        {
-          "label": "RA Voltmar & Toss at Wigwam profile context",
-          "url": "https://de.ra.co/events/1989830",
-          "status": "artist-profile",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "Liminal Dreams x Wigwam lineup/time search preview",
-          "url": "https://www.instagram.com/p/DZFFVIPE8VW/",
-          "status": "social-index-lineup-context",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "Liminal Dreams x Wigwam text-note screenshot",
-          "url": "assets/posters/wigwam-liminal-dreams-2026-06-20-notes.png",
-          "status": "artist-profile-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "Liminal Dreams x Wigwam event poster screenshot",
-          "url": "assets/posters/wigwam-liminal-dreams-2026-06-20.jpg",
-          "status": "event-poster-screenshot",
-          "checked": "2026-06-15"
-        }
-      ]
-    },
-    {
-      "slug": "the-hymmapan-electron",
-      "name": "The Hymmapan Electron",
-      "aliases": [
-        "Hymmapan Electron",
-        "Isan Cyber"
-      ],
-      "trackedAt": "2026-06-14",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [],
-      "scope": "Cyber Buddha / Thai Isan electronic live profile",
-      "imageTheme": "acid",
-      "genres": [
-        "Isan folk",
-        "electronic",
-        "psychedelic techno",
-        "live electronics"
-      ],
-      "summary": "Thailand-linked live electronic project preserved for the Cyber Buddha Shanghai listing. Public event and performance sources frame the act around Isan folk material, electronic rhythm, and experimental live context.",
-      "sourceNote": "SmartShanghai and 247tickets support the June 26 Shanghai lineup and ticket route; public performance/video sources support the broader Isan-electronic sound context.",
-      "sources": [
-        {
-          "label": "SmartShanghai Cyber Buddha event profile",
-          "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
-          "status": "secondary-event-source",
-          "checked": "2026-06-14"
-        },
-        {
-          "label": "247tickets The Hymmapan Electron Shanghai listing",
-          "url": "https://www.247tickets.com/t/the-hymmapan-electron-shanghai",
-          "status": "secondary-ticketing",
-          "checked": "2026-06-14"
-        },
-        {
-          "label": "Tuktuk Radio The Hymmapan Electron performance context",
-          "url": "https://www.youtube.com/watch?v=Wrwf5fj4zNI",
-          "status": "performance-context",
-          "checked": "2026-06-14"
-        }
-      ]
-    },
-    {
-      "slug": "taiga",
-      "name": "Taiga",
-      "aliases": [
-        "TAIGA"
-      ],
-      "trackedAt": "2026-06-14",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [],
-      "scope": "Cyber Buddha / Chengdu psychedelic nomadic electronic profile",
-      "imageTheme": "gold",
-      "genres": [
-        "psychedelic electronic",
-        "nomadic electronic",
-        "live electronics",
-        "folk-electronic"
-      ],
-      "summary": "Chengdu-connected duo preserved for the Cyber Buddha Shanghai listing. Public profile sources describe Taiga as a psychedelic electronic project with Inner Mongolia, Xinjiang, and nomadic-music context.",
-      "sourceNote": "SmartShanghai confirms the June 26 Shanghai lineup; Star Wax and WOMEX/Ozora-style profile sources support the Taiga sound and identity context.",
-      "sources": [
-        {
-          "label": "SmartShanghai Cyber Buddha event profile",
-          "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
-          "status": "secondary-event-source",
-          "checked": "2026-06-14"
-        },
-        {
-          "label": "Star Wax Taiga profile",
-          "url": "https://www.starwaxmag.com/news/taiga",
-          "status": "artist-profile",
-          "checked": "2026-06-14"
-        },
-        {
-          "label": "WOMEX Taiga profile",
-          "url": "https://www.womex.com/virtual/more_zvukov_agency/taiga",
-          "status": "artist-profile",
-          "checked": "2026-06-14"
-        }
-      ]
-    },
-    {
-      "slug": "mico",
-      "name": "MICO",
-      "aliases": [
-        "MICO Liu Wei",
-        "JungleMico Project"
-      ],
-      "trackedAt": "2026-06-14",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [],
-      "scope": "Cyber Buddha / ambient and IDM electronic profile",
-      "imageTheme": "cyan",
-      "genres": [
-        "ambient",
-        "downtempo",
-        "IDM",
-        "Chinese electronic"
-      ],
-      "summary": "Chinese electronic musician profile preserved for the Cyber Buddha Shanghai listing. Public event and release sources connect MICO to ambient, downtempo, IDM, and narrative electronic soundscapes.",
-      "sourceNote": "SmartShanghai confirms the June 26 Shanghai lineup; Bandcamp and public Chinese electronic-music writing support MICO's broader production context.",
-      "sources": [
-        {
-          "label": "SmartShanghai Cyber Buddha event profile",
-          "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
-          "status": "secondary-event-source",
-          "checked": "2026-06-14"
-        },
-        {
-          "label": "MICO Liu Wei Bandcamp release context",
-          "url": "https://e-werk.bandcamp.com/album/-",
-          "status": "artist-release-context",
-          "checked": "2026-06-14"
-        },
-        {
-          "label": "Chinese electronic music profile context",
-          "url": "https://electronicmusicinformation.com/gw/index/article_details.html?drysaltery_id=4064",
-          "status": "artist-profile",
-          "checked": "2026-06-14"
-        }
-      ]
-    },
-    {
-      "slug": "bi-non-chillchillshit",
-      "name": "Bi-NON & chillchillshit",
-      "aliases": [
-        "Bi-NON",
-        "BI-NON",
-        "chillchillshit",
-        "Bi-NON & chillchillshit A/V Live"
-      ],
-      "trackedAt": "2026-06-15",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [],
-      "scope": "Hexscape / EXIT A/V live profile",
-      "imageTheme": "acid",
-      "genres": [
-        "hyperpop",
-        "breakbeat",
-        "footwork",
-        "bass",
-        "live A/V"
-      ],
-      "summary": "Shanghai/China club profile preserved for the Hexscape A/V live booking. Public sources connect Bi-NON to BAIHUI and BYYB radio contexts, while SmartShanghai links Bi-NON and chillchillshit to current and previous A/V club lineups.",
-      "sourceNote": "SmartShanghai is the current Hexscape event lead. BAIHUI/BYYB and previous SmartShanghai listings are profile context only; they do not confirm Hexscape ticketing, price, age, or set times.",
-      "sources": [
-        {
-          "label": "SmartShanghai Hexscape June 2026 guide",
-          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
-          "status": "watchlist-event-source",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "SmartShanghai Gel ILLUM A/V context",
-          "url": "https://www.smartshanghai.com/event/gel-club-music-techno-live-a-v-2026-03-20",
-          "status": "previous-lineup-context",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "BAIHUI The Roof Radio w/ BI-NON",
-          "url": "https://baihui.live/shows/the-roof-radio-w-bi-non-25-05-26/en/",
-          "status": "radio-context",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "BYYB Radio Bi-NON performance context",
-          "url": "https://www.youtube.com/watch?v=iCp6Xkny-fY",
-          "status": "performance-context",
-          "checked": "2026-06-15"
-        }
-      ]
-    },
-    {
-      "slug": "nasty",
-      "name": "Na$ty",
-      "aliases": [
-        "NA$TY",
-        "Nasty",
-        "nastyhabits124"
-      ],
-      "trackedAt": "2026-06-15",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [],
-      "scope": "Hexscape / Shanghai bass and PREME profile",
-      "imageTheme": "rose",
-      "genres": [
-        "bass",
-        "club",
-        "grime",
-        "trap",
-        "phonk"
-      ],
-      "summary": "Shanghai bass/club profile preserved for the Hexscape support lineup. RA, SmartShanghai, and 247tickets archive sources connect Na$ty to PREME, bass, club, grime, trap, and jungle-adjacent Shanghai lineups.",
-      "sourceNote": "Profile context supports the artist identity and Shanghai club lane. SmartShanghai remains the only current Hexscape event-level source.",
-      "sources": [
-        {
-          "label": "SmartShanghai Hexscape June 2026 guide",
-          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
-          "status": "watchlist-event-source",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "RA Surreal Program Shenzhen profile context",
-          "url": "https://ra.co/events/1407225",
-          "status": "artist-profile",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "SmartShanghai Duality EXIT lineup context",
-          "url": "https://www.smartshanghai.com/event/duality-trust-issues-a-night-of-bass-jungle-and-experimental-sounds-2026-02-14",
-          "status": "previous-lineup-context",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "247tickets Arkham Halloween profile context",
-          "url": "https://www.247tickets.com/t/arkham-halloween-beyond-shimmer",
-          "status": "artist-profile",
-          "checked": "2026-06-15"
-        }
-      ]
-    },
-    {
-      "slug": "toyn",
-      "name": "Toyn",
-      "aliases": [
-        "TOYN",
-        "2yn100"
-      ],
-      "trackedAt": "2026-06-15",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [],
-      "scope": "Hexscape / bass and footwork profile",
-      "imageTheme": "gold",
-      "genres": [
-        "footwork",
-        "UK bass",
-        "bass",
-        "jungle",
-        "club"
-      ],
-      "summary": "Bass/footwork profile preserved for the Hexscape support lineup. BAIHUI and RA sources place Toyn in footwork, UK bass, jungle, and club-music contexts.",
-      "sourceNote": "SmartShanghai confirms Toyn on the current Hexscape support bill; BAIHUI and RA sources provide profile context only.",
-      "sources": [
-        {
-          "label": "SmartShanghai Hexscape June 2026 guide",
-          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
-          "status": "watchlist-event-source",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "BAIHUI The Roof Radio w/ TOYN",
-          "url": "https://baihui.live/shows/the-roof-radio-w-toyn-25-02-24/en/",
-          "status": "radio-context",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "RA KNOT Pres. CAM GIRL lineup context",
-          "url": "https://ra.co/events/2422723",
-          "status": "previous-lineup-context",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "BAIHUI The Roof Radio host index",
-          "url": "https://baihui.live/hosts/the-roof-radio/en/",
-          "status": "radio-context",
-          "checked": "2026-06-15"
-        }
-      ]
-    },
-    {
-      "slug": "ykk",
-      "name": "YKK (CN)",
-      "aliases": [
-        "YKK"
-      ],
-      "trackedAt": "2026-06-14",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [],
-      "scope": "Shanghai club / MENSLIES source profile",
-      "imageTheme": "rose",
-      "genres": [
-        "club music",
-        "house",
-        "bass",
-        "Shanghai club"
-      ],
-      "summary": "Shanghai-based DJ profile connected to MENSLIES, UNITED LAKES, Butterfree, and current RA-listed Shanghai club lineups.",
-      "sourceNote": "RA biography supports broad club-music context; RA event rows confirm current Shanghai appearances but not final set times.",
-      "sources": [
-        {
-          "label": "YKK (CN) Resident Advisor biography",
-          "url": "https://ra.co/dj/ykk-1/biography",
-          "status": "artist-profile",
-          "checked": "2026-06-14"
-        },
-        {
-          "label": "RA Cybionte with Solo, YKK, & Heshang",
-          "url": "https://ra.co/events/2467513",
-          "status": "trusted-ra",
-          "checked": "2026-06-14"
-        },
-        {
-          "label": "RA FRIENDSSTANDout lineup",
-          "url": "https://ra.co/events/2455159",
-          "status": "trusted-ra",
-          "checked": "2026-06-14"
-        }
-      ]
-    },
-    {
       "slug": "wheon",
       "name": "wheon",
       "aliases": [
@@ -3211,1081 +4605,6 @@
           "status": "venue-context",
           "checked": "2026-06-15",
           "note": "Venue context only; Wigwam screenshots remain the source for wheon's June 19 booking and profile text."
-        }
-      ]
-    },
-    {
-      "slug": "iin",
-      "name": "IIN",
-      "aliases": [
-        "IIN"
-      ],
-      "trackedAt": "2026-06-15",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [],
-      "scope": "Liminal Dreams / Wigwam Shanghai scene context",
-      "imageTheme": "green",
-      "genres": [
-        "ambient context",
-        "techno context",
-        "experimental context",
-        "Shanghai scene"
-      ],
-      "summary": "Liminal Dreams note screenshot frames IIN as a Shanghai scene figure for the June 20 Wigwam edition, while intentionally leaving detailed biography open. Treat IIN as event-confirmed lineup context rather than an invented artist biography.",
-      "sourceNote": "Use the Liminal Dreams/Wigwam screenshots for event-role context; no standalone public artist source was verified in this pass.",
-      "sources": [
-        {
-          "label": "Liminal Dreams x Wigwam text-note screenshot",
-          "url": "assets/posters/wigwam-liminal-dreams-2026-06-20-notes.png",
-          "status": "artist-profile-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "Liminal Dreams x Wigwam event poster screenshot",
-          "url": "assets/posters/wigwam-liminal-dreams-2026-06-20.jpg",
-          "status": "event-poster-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "SmartShanghai Wigwam venue context",
-          "url": "https://www.smartshanghai.com/venue/31681/wigwam_cafe",
-          "status": "venue-context",
-          "checked": "2026-06-15",
-          "note": "Venue context only; Liminal Dreams/Wigwam screenshots remain the source for IIN's June 20 lineup role."
-        }
-      ]
-    },
-    {
-      "slug": "kirk",
-      "name": "Kirk",
-      "aliases": [
-        "Kirk"
-      ],
-      "trackedAt": "2026-06-15",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [
-        {
-          "date": "2026-06-19",
-          "eventId": "abyss-faq-kirk",
-          "eventTitle": "FaQ Pres. KIRK",
-          "venue": "Abyss Shanghai",
-          "city": "Shanghai",
-          "status": "confirmed-by-user-supplied-screenshot"
-        }
-      ],
-      "scope": "FaQ Pres. KIRK / Abyss event-role profile",
-      "imageTheme": "ember",
-      "genres": [
-        "hard techno context",
-        "rave context",
-        "Abyss lineup"
-      ],
-      "summary": "Kirk is preserved as part of the screenshot-confirmed FaQ Pres. KIRK lineup at Abyss on 2026-06-19. Broader artist biography and discography were not independently verified in this pass.",
-      "sourceNote": "Use this as a screenshot-backed event-role profile for FaQ Pres. KIRK. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
-      "sources": [
-        {
-          "label": "Abyss June 2026 program screenshot",
-          "url": "assets/posters/abyss-june-2026-program.png",
-          "status": "official-social-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "Yuyuan ticketing screenshot - Kirk at Abyss",
-          "url": "assets/posters/abyss-kirk-ticket.png",
-          "status": "wechat-miniprogram-ticketing-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "SmartShanghai Abyss venue context",
-          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
-          "status": "venue-context",
-          "checked": "2026-06-15",
-          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
-        }
-      ]
-    },
-    {
-      "slug": "shukai",
-      "name": "Shukai",
-      "aliases": [
-        "Shukai"
-      ],
-      "trackedAt": "2026-06-15",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [
-        {
-          "date": "2026-06-19",
-          "eventId": "abyss-faq-kirk",
-          "eventTitle": "FaQ Pres. KIRK",
-          "venue": "Abyss Shanghai",
-          "city": "Shanghai",
-          "status": "confirmed-by-user-supplied-screenshot"
-        }
-      ],
-      "scope": "FaQ Pres. KIRK / Abyss event-role profile",
-      "imageTheme": "ember",
-      "genres": [
-        "hard techno context",
-        "rave context",
-        "Abyss lineup"
-      ],
-      "summary": "Shukai is preserved as part of the screenshot-confirmed FaQ Pres. KIRK lineup at Abyss on 2026-06-19. Broader artist biography and discography were not independently verified in this pass.",
-      "sourceNote": "Use this as a screenshot-backed event-role profile for FaQ Pres. KIRK. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
-      "sources": [
-        {
-          "label": "Abyss June 2026 program screenshot",
-          "url": "assets/posters/abyss-june-2026-program.png",
-          "status": "official-social-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "Yuyuan ticketing screenshot - Kirk at Abyss",
-          "url": "assets/posters/abyss-kirk-ticket.png",
-          "status": "wechat-miniprogram-ticketing-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "SmartShanghai Abyss venue context",
-          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
-          "status": "venue-context",
-          "checked": "2026-06-15",
-          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
-        }
-      ]
-    },
-    {
-      "slug": "fischmonger",
-      "name": "Fischmonger",
-      "aliases": [
-        "Fischmonger"
-      ],
-      "trackedAt": "2026-06-15",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [
-        {
-          "date": "2026-06-19",
-          "eventId": "abyss-faq-kirk",
-          "eventTitle": "FaQ Pres. KIRK",
-          "venue": "Abyss Shanghai",
-          "city": "Shanghai",
-          "status": "confirmed-by-user-supplied-screenshot"
-        }
-      ],
-      "scope": "FaQ Pres. KIRK / Abyss event-role profile",
-      "imageTheme": "ember",
-      "genres": [
-        "hard techno context",
-        "rave context",
-        "Abyss lineup"
-      ],
-      "summary": "Fischmonger is preserved as part of the screenshot-confirmed FaQ Pres. KIRK lineup at Abyss on 2026-06-19. Broader artist biography and discography were not independently verified in this pass.",
-      "sourceNote": "Use this as a screenshot-backed event-role profile for FaQ Pres. KIRK. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
-      "sources": [
-        {
-          "label": "Abyss June 2026 program screenshot",
-          "url": "assets/posters/abyss-june-2026-program.png",
-          "status": "official-social-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "Yuyuan ticketing screenshot - Kirk at Abyss",
-          "url": "assets/posters/abyss-kirk-ticket.png",
-          "status": "wechat-miniprogram-ticketing-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "SmartShanghai Abyss venue context",
-          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
-          "status": "venue-context",
-          "checked": "2026-06-15",
-          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
-        }
-      ]
-    },
-    {
-      "slug": "shu",
-      "name": "SHU",
-      "aliases": [
-        "SHU"
-      ],
-      "trackedAt": "2026-06-15",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [
-        {
-          "date": "2026-06-19",
-          "eventId": "abyss-faq-kirk",
-          "eventTitle": "FaQ Pres. KIRK",
-          "venue": "Abyss Shanghai",
-          "city": "Shanghai",
-          "status": "confirmed-by-user-supplied-screenshot"
-        }
-      ],
-      "scope": "FaQ Pres. KIRK / Abyss event-role profile",
-      "imageTheme": "ember",
-      "genres": [
-        "hard techno context",
-        "rave context",
-        "Abyss lineup"
-      ],
-      "summary": "SHU is preserved as part of the screenshot-confirmed FaQ Pres. KIRK lineup at Abyss on 2026-06-19. Broader artist biography and discography were not independently verified in this pass.",
-      "sourceNote": "Use this as a screenshot-backed event-role profile for FaQ Pres. KIRK. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
-      "sources": [
-        {
-          "label": "Abyss June 2026 program screenshot",
-          "url": "assets/posters/abyss-june-2026-program.png",
-          "status": "official-social-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "Yuyuan ticketing screenshot - Kirk at Abyss",
-          "url": "assets/posters/abyss-kirk-ticket.png",
-          "status": "wechat-miniprogram-ticketing-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "SmartShanghai Abyss venue context",
-          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
-          "status": "venue-context",
-          "checked": "2026-06-15",
-          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
-        }
-      ]
-    },
-    {
-      "slug": "headrush",
-      "name": "Headrush",
-      "aliases": [
-        "Headrush"
-      ],
-      "trackedAt": "2026-06-15",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [
-        {
-          "date": "2026-06-19",
-          "eventId": "abyss-faq-kirk",
-          "eventTitle": "FaQ Pres. KIRK",
-          "venue": "Abyss Shanghai",
-          "city": "Shanghai",
-          "status": "confirmed-by-user-supplied-screenshot"
-        }
-      ],
-      "scope": "FaQ Pres. KIRK / Abyss event-role profile",
-      "imageTheme": "ember",
-      "genres": [
-        "hard techno context",
-        "rave context",
-        "Abyss lineup"
-      ],
-      "summary": "Headrush is preserved as part of the screenshot-confirmed FaQ Pres. KIRK lineup at Abyss on 2026-06-19. Broader artist biography and discography were not independently verified in this pass.",
-      "sourceNote": "Use this as a screenshot-backed event-role profile for FaQ Pres. KIRK. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
-      "sources": [
-        {
-          "label": "Abyss June 2026 program screenshot",
-          "url": "assets/posters/abyss-june-2026-program.png",
-          "status": "official-social-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "Yuyuan ticketing screenshot - Kirk at Abyss",
-          "url": "assets/posters/abyss-kirk-ticket.png",
-          "status": "wechat-miniprogram-ticketing-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "SmartShanghai Abyss venue context",
-          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
-          "status": "venue-context",
-          "checked": "2026-06-15",
-          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
-        }
-      ]
-    },
-    {
-      "slug": "nitta",
-      "name": "Nitta",
-      "aliases": [
-        "Nitta"
-      ],
-      "trackedAt": "2026-06-15",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [
-        {
-          "date": "2026-06-19",
-          "eventId": "abyss-faq-kirk",
-          "eventTitle": "FaQ Pres. KIRK",
-          "venue": "Abyss Shanghai",
-          "city": "Shanghai",
-          "status": "confirmed-by-user-supplied-screenshot"
-        }
-      ],
-      "scope": "FaQ Pres. KIRK / Abyss event-role profile",
-      "imageTheme": "ember",
-      "genres": [
-        "hard techno context",
-        "rave context",
-        "Abyss lineup"
-      ],
-      "summary": "Nitta is preserved as part of the screenshot-confirmed FaQ Pres. KIRK lineup at Abyss on 2026-06-19. Broader artist biography and discography were not independently verified in this pass.",
-      "sourceNote": "Use this as a screenshot-backed event-role profile for FaQ Pres. KIRK. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
-      "sources": [
-        {
-          "label": "Abyss June 2026 program screenshot",
-          "url": "assets/posters/abyss-june-2026-program.png",
-          "status": "official-social-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "Yuyuan ticketing screenshot - Kirk at Abyss",
-          "url": "assets/posters/abyss-kirk-ticket.png",
-          "status": "wechat-miniprogram-ticketing-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "SmartShanghai Abyss venue context",
-          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
-          "status": "venue-context",
-          "checked": "2026-06-15",
-          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
-        }
-      ]
-    },
-    {
-      "slug": "lolalita",
-      "name": "LOLALITA",
-      "aliases": [
-        "LOLALITA"
-      ],
-      "trackedAt": "2026-06-15",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [
-        {
-          "date": "2026-06-20",
-          "eventId": "abyss-hardcore-melancholia",
-          "eventTitle": "Hardcore Melancholia",
-          "venue": "Abyss Shanghai",
-          "city": "Shanghai",
-          "status": "confirmed-by-user-supplied-screenshot"
-        }
-      ],
-      "scope": "Hardcore Melancholia / Abyss event-role profile",
-      "imageTheme": "rose",
-      "genres": [
-        "hardcore context",
-        "hard dance context",
-        "rave context",
-        "Abyss lineup"
-      ],
-      "summary": "LOLALITA is preserved as part of the screenshot-confirmed Hardcore Melancholia lineup at Abyss on 2026-06-20. The event title supports a hard/hardcore context; broader standalone artist claims were not verified in this pass.",
-      "sourceNote": "Use this as a screenshot-backed event-role profile for Hardcore Melancholia. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
-      "sources": [
-        {
-          "label": "Abyss June 2026 program screenshot",
-          "url": "assets/posters/abyss-june-2026-program.png",
-          "status": "official-social-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "Yuyuan ticketing screenshot - Hardcore Melancholia",
-          "url": "assets/posters/abyss-hardcore-melancholia-ticket.png",
-          "status": "wechat-miniprogram-ticketing-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "SmartShanghai Abyss venue context",
-          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
-          "status": "venue-context",
-          "checked": "2026-06-15",
-          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
-        }
-      ]
-    },
-    {
-      "slug": "brennt",
-      "name": "BRENNT",
-      "aliases": [
-        "BRENNT"
-      ],
-      "trackedAt": "2026-06-15",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [
-        {
-          "date": "2026-06-20",
-          "eventId": "abyss-hardcore-melancholia",
-          "eventTitle": "Hardcore Melancholia",
-          "venue": "Abyss Shanghai",
-          "city": "Shanghai",
-          "status": "confirmed-by-user-supplied-screenshot"
-        }
-      ],
-      "scope": "Hardcore Melancholia / Abyss event-role profile",
-      "imageTheme": "rose",
-      "genres": [
-        "hardcore context",
-        "hard dance context",
-        "rave context",
-        "Abyss lineup"
-      ],
-      "summary": "BRENNT is preserved as part of the screenshot-confirmed Hardcore Melancholia lineup at Abyss on 2026-06-20. The event title supports a hard/hardcore context; broader standalone artist claims were not verified in this pass.",
-      "sourceNote": "Use this as a screenshot-backed event-role profile for Hardcore Melancholia. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
-      "sources": [
-        {
-          "label": "Abyss June 2026 program screenshot",
-          "url": "assets/posters/abyss-june-2026-program.png",
-          "status": "official-social-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "Yuyuan ticketing screenshot - Hardcore Melancholia",
-          "url": "assets/posters/abyss-hardcore-melancholia-ticket.png",
-          "status": "wechat-miniprogram-ticketing-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "SmartShanghai Abyss venue context",
-          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
-          "status": "venue-context",
-          "checked": "2026-06-15",
-          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
-        }
-      ]
-    },
-    {
-      "slug": "xiwi",
-      "name": "XIWI",
-      "aliases": [
-        "XIWI"
-      ],
-      "trackedAt": "2026-06-15",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [
-        {
-          "date": "2026-06-20",
-          "eventId": "abyss-hardcore-melancholia",
-          "eventTitle": "Hardcore Melancholia",
-          "venue": "Abyss Shanghai",
-          "city": "Shanghai",
-          "status": "confirmed-by-user-supplied-screenshot"
-        }
-      ],
-      "scope": "Hardcore Melancholia / Abyss event-role profile",
-      "imageTheme": "rose",
-      "genres": [
-        "hardcore context",
-        "hard dance context",
-        "rave context",
-        "Abyss lineup"
-      ],
-      "summary": "XIWI is preserved as part of the screenshot-confirmed Hardcore Melancholia lineup at Abyss on 2026-06-20. The event title supports a hard/hardcore context; broader standalone artist claims were not verified in this pass.",
-      "sourceNote": "Use this as a screenshot-backed event-role profile for Hardcore Melancholia. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
-      "sources": [
-        {
-          "label": "Abyss June 2026 program screenshot",
-          "url": "assets/posters/abyss-june-2026-program.png",
-          "status": "official-social-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "Yuyuan ticketing screenshot - Hardcore Melancholia",
-          "url": "assets/posters/abyss-hardcore-melancholia-ticket.png",
-          "status": "wechat-miniprogram-ticketing-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "SmartShanghai Abyss venue context",
-          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
-          "status": "venue-context",
-          "checked": "2026-06-15",
-          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
-        }
-      ]
-    },
-    {
-      "slug": "not-your-daddy",
-      "name": "Not Your Daddy",
-      "aliases": [
-        "Not Your Daddy"
-      ],
-      "trackedAt": "2026-06-15",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [
-        {
-          "date": "2026-06-20",
-          "eventId": "abyss-hardcore-melancholia",
-          "eventTitle": "Hardcore Melancholia",
-          "venue": "Abyss Shanghai",
-          "city": "Shanghai",
-          "status": "confirmed-by-user-supplied-screenshot"
-        }
-      ],
-      "scope": "Hardcore Melancholia / Abyss event-role profile",
-      "imageTheme": "rose",
-      "genres": [
-        "hardcore context",
-        "hard dance context",
-        "rave context",
-        "Abyss lineup"
-      ],
-      "summary": "Not Your Daddy is preserved as part of the screenshot-confirmed Hardcore Melancholia lineup at Abyss on 2026-06-20. The event title supports a hard/hardcore context; broader standalone artist claims were not verified in this pass.",
-      "sourceNote": "Use this as a screenshot-backed event-role profile for Hardcore Melancholia. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
-      "sources": [
-        {
-          "label": "Abyss June 2026 program screenshot",
-          "url": "assets/posters/abyss-june-2026-program.png",
-          "status": "official-social-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "Yuyuan ticketing screenshot - Hardcore Melancholia",
-          "url": "assets/posters/abyss-hardcore-melancholia-ticket.png",
-          "status": "wechat-miniprogram-ticketing-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "SmartShanghai Abyss venue context",
-          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
-          "status": "venue-context",
-          "checked": "2026-06-15",
-          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
-        }
-      ]
-    },
-    {
-      "slug": "dj-loverboy",
-      "name": "DJ LOVERBOY",
-      "aliases": [
-        "DJ LOVERBOY"
-      ],
-      "trackedAt": "2026-06-15",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [
-        {
-          "date": "2026-06-20",
-          "eventId": "abyss-hardcore-melancholia",
-          "eventTitle": "Hardcore Melancholia",
-          "venue": "Abyss Shanghai",
-          "city": "Shanghai",
-          "status": "confirmed-by-user-supplied-screenshot"
-        }
-      ],
-      "scope": "Hardcore Melancholia / Abyss event-role profile",
-      "imageTheme": "rose",
-      "genres": [
-        "hardcore context",
-        "hard dance context",
-        "rave context",
-        "Abyss lineup"
-      ],
-      "summary": "DJ LOVERBOY is preserved as part of the screenshot-confirmed Hardcore Melancholia lineup at Abyss on 2026-06-20. The event title supports a hard/hardcore context; broader standalone artist claims were not verified in this pass.",
-      "sourceNote": "Use this as a screenshot-backed event-role profile for Hardcore Melancholia. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
-      "sources": [
-        {
-          "label": "Abyss June 2026 program screenshot",
-          "url": "assets/posters/abyss-june-2026-program.png",
-          "status": "official-social-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "Yuyuan ticketing screenshot - Hardcore Melancholia",
-          "url": "assets/posters/abyss-hardcore-melancholia-ticket.png",
-          "status": "wechat-miniprogram-ticketing-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "SmartShanghai Abyss venue context",
-          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
-          "status": "venue-context",
-          "checked": "2026-06-15",
-          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
-        }
-      ]
-    },
-    {
-      "slug": "tui",
-      "name": "TUI",
-      "aliases": [
-        "TUI"
-      ],
-      "trackedAt": "2026-06-15",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [
-        {
-          "date": "2026-06-26",
-          "eventId": "botox-fatale",
-          "eventTitle": "Obsesion Total",
-          "venue": "Abyss Shanghai",
-          "city": "Shanghai",
-          "status": "confirmed-by-user-supplied-screenshot"
-        }
-      ],
-      "scope": "Obsesion Total / Abyss event-role profile",
-      "imageTheme": "steel",
-      "genres": [
-        "hard techno context",
-        "industrial context",
-        "Abyss lineup"
-      ],
-      "summary": "TUI is preserved as part of the screenshot-confirmed Obsesion Total lineup at Abyss on 2026-06-26. Broader artist biography was not independently verified in this pass.",
-      "sourceNote": "Use this as a screenshot-backed event-role profile for Obsesion Total. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
-      "sources": [
-        {
-          "label": "Abyss June 2026 program screenshot",
-          "url": "assets/posters/abyss-june-2026-program.png",
-          "status": "official-social-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "Yuyuan ticketing screenshot - Obsesion Total",
-          "url": "assets/posters/abyss-botox-fatal-ticket.png",
-          "status": "wechat-miniprogram-ticketing-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "SmartShanghai Abyss venue context",
-          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
-          "status": "venue-context",
-          "checked": "2026-06-15",
-          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
-        }
-      ]
-    },
-    {
-      "slug": "kong-bb",
-      "name": "Kong BB",
-      "aliases": [
-        "Kong BB"
-      ],
-      "trackedAt": "2026-06-15",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [
-        {
-          "date": "2026-06-26",
-          "eventId": "botox-fatale",
-          "eventTitle": "Obsesion Total",
-          "venue": "Abyss Shanghai",
-          "city": "Shanghai",
-          "status": "confirmed-by-user-supplied-screenshot"
-        }
-      ],
-      "scope": "Obsesion Total / Abyss event-role profile",
-      "imageTheme": "steel",
-      "genres": [
-        "hard techno context",
-        "industrial context",
-        "Abyss lineup"
-      ],
-      "summary": "Kong BB is preserved as part of the screenshot-confirmed Obsesion Total lineup at Abyss on 2026-06-26. Broader artist biography was not independently verified in this pass.",
-      "sourceNote": "Use this as a screenshot-backed event-role profile for Obsesion Total. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
-      "sources": [
-        {
-          "label": "Abyss June 2026 program screenshot",
-          "url": "assets/posters/abyss-june-2026-program.png",
-          "status": "official-social-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "Yuyuan ticketing screenshot - Obsesion Total",
-          "url": "assets/posters/abyss-botox-fatal-ticket.png",
-          "status": "wechat-miniprogram-ticketing-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "SmartShanghai Abyss venue context",
-          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
-          "status": "venue-context",
-          "checked": "2026-06-15",
-          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
-        }
-      ]
-    },
-    {
-      "slug": "noodleprince",
-      "name": "Noodleprince",
-      "aliases": [
-        "Noodleprince"
-      ],
-      "trackedAt": "2026-06-15",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [
-        {
-          "date": "2026-06-26",
-          "eventId": "botox-fatale",
-          "eventTitle": "Obsesion Total",
-          "venue": "Abyss Shanghai",
-          "city": "Shanghai",
-          "status": "confirmed-by-user-supplied-screenshot"
-        }
-      ],
-      "scope": "Obsesion Total / Abyss event-role profile",
-      "imageTheme": "steel",
-      "genres": [
-        "hard techno context",
-        "industrial context",
-        "Abyss lineup"
-      ],
-      "summary": "Noodleprince is preserved as part of the screenshot-confirmed Obsesion Total lineup at Abyss on 2026-06-26. Broader artist biography was not independently verified in this pass.",
-      "sourceNote": "Use this as a screenshot-backed event-role profile for Obsesion Total. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
-      "sources": [
-        {
-          "label": "Abyss June 2026 program screenshot",
-          "url": "assets/posters/abyss-june-2026-program.png",
-          "status": "official-social-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "Yuyuan ticketing screenshot - Obsesion Total",
-          "url": "assets/posters/abyss-botox-fatal-ticket.png",
-          "status": "wechat-miniprogram-ticketing-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "SmartShanghai Abyss venue context",
-          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
-          "status": "venue-context",
-          "checked": "2026-06-15",
-          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
-        }
-      ]
-    },
-    {
-      "slug": "prymara",
-      "name": "PRYMARA",
-      "aliases": [
-        "PRYMARA"
-      ],
-      "trackedAt": "2026-06-15",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [
-        {
-          "date": "2026-06-27",
-          "eventId": "abyss-cum-chemical-love",
-          "eventTitle": "C.U.M. Chemical Love",
-          "venue": "Abyss Shanghai",
-          "city": "Shanghai",
-          "status": "confirmed-by-user-supplied-screenshot"
-        }
-      ],
-      "scope": "C.U.M. Chemical Love / Abyss event-role profile",
-      "imageTheme": "acid",
-      "genres": [
-        "hard techno context",
-        "rave context",
-        "Abyss lineup"
-      ],
-      "summary": "PRYMARA is preserved as part of the screenshot-confirmed C.U.M. Chemical Love lineup at Abyss on 2026-06-27. Broader artist biography was not independently verified in this pass.",
-      "sourceNote": "Use this as a screenshot-backed event-role profile for C.U.M. Chemical Love. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
-      "sources": [
-        {
-          "label": "Abyss June 2026 program screenshot",
-          "url": "assets/posters/abyss-june-2026-program.png",
-          "status": "official-social-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "Yuyuan ticketing screenshot - C.U.M. Chemical Love",
-          "url": "assets/posters/abyss-cum-chemical-love-ticket.png",
-          "status": "wechat-miniprogram-ticketing-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "SmartShanghai Abyss venue context",
-          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
-          "status": "venue-context",
-          "checked": "2026-06-15",
-          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
-        }
-      ]
-    },
-    {
-      "slug": "laglory",
-      "name": "LaGlory",
-      "aliases": [
-        "LaGlory"
-      ],
-      "trackedAt": "2026-06-15",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [
-        {
-          "date": "2026-06-27",
-          "eventId": "abyss-cum-chemical-love",
-          "eventTitle": "C.U.M. Chemical Love",
-          "venue": "Abyss Shanghai",
-          "city": "Shanghai",
-          "status": "confirmed-by-user-supplied-screenshot"
-        }
-      ],
-      "scope": "C.U.M. Chemical Love / Abyss event-role profile",
-      "imageTheme": "acid",
-      "genres": [
-        "hard techno context",
-        "rave context",
-        "Abyss lineup"
-      ],
-      "summary": "LaGlory is preserved as part of the screenshot-confirmed C.U.M. Chemical Love lineup at Abyss on 2026-06-27. Broader artist biography was not independently verified in this pass.",
-      "sourceNote": "Use this as a screenshot-backed event-role profile for C.U.M. Chemical Love. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
-      "sources": [
-        {
-          "label": "Abyss June 2026 program screenshot",
-          "url": "assets/posters/abyss-june-2026-program.png",
-          "status": "official-social-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "Yuyuan ticketing screenshot - C.U.M. Chemical Love",
-          "url": "assets/posters/abyss-cum-chemical-love-ticket.png",
-          "status": "wechat-miniprogram-ticketing-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "SmartShanghai Abyss venue context",
-          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
-          "status": "venue-context",
-          "checked": "2026-06-15",
-          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
-        }
-      ]
-    },
-    {
-      "slug": "fmrl",
-      "name": "FMRL",
-      "aliases": [
-        "FMRL"
-      ],
-      "trackedAt": "2026-06-15",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [
-        {
-          "date": "2026-06-27",
-          "eventId": "abyss-cum-chemical-love",
-          "eventTitle": "C.U.M. Chemical Love",
-          "venue": "Abyss Shanghai",
-          "city": "Shanghai",
-          "status": "confirmed-by-user-supplied-screenshot"
-        }
-      ],
-      "scope": "C.U.M. Chemical Love / Abyss event-role profile",
-      "imageTheme": "acid",
-      "genres": [
-        "hard techno context",
-        "rave context",
-        "Abyss lineup"
-      ],
-      "summary": "FMRL is preserved as part of the screenshot-confirmed C.U.M. Chemical Love lineup at Abyss on 2026-06-27. Broader artist biography was not independently verified in this pass.",
-      "sourceNote": "Use this as a screenshot-backed event-role profile for C.U.M. Chemical Love. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
-      "sources": [
-        {
-          "label": "Abyss June 2026 program screenshot",
-          "url": "assets/posters/abyss-june-2026-program.png",
-          "status": "official-social-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "Yuyuan ticketing screenshot - C.U.M. Chemical Love",
-          "url": "assets/posters/abyss-cum-chemical-love-ticket.png",
-          "status": "wechat-miniprogram-ticketing-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "SmartShanghai Abyss venue context",
-          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
-          "status": "venue-context",
-          "checked": "2026-06-15",
-          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
-        }
-      ]
-    },
-    {
-      "slug": "goga",
-      "name": "GOGA",
-      "aliases": [
-        "GOGA"
-      ],
-      "trackedAt": "2026-06-15",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [
-        {
-          "date": "2026-06-27",
-          "eventId": "abyss-cum-chemical-love",
-          "eventTitle": "C.U.M. Chemical Love",
-          "venue": "Abyss Shanghai",
-          "city": "Shanghai",
-          "status": "confirmed-by-user-supplied-screenshot"
-        }
-      ],
-      "scope": "C.U.M. Chemical Love / Abyss event-role profile",
-      "imageTheme": "acid",
-      "genres": [
-        "hard techno context",
-        "rave context",
-        "Abyss lineup"
-      ],
-      "summary": "GOGA is preserved as part of the screenshot-confirmed C.U.M. Chemical Love lineup at Abyss on 2026-06-27. Broader artist biography was not independently verified in this pass.",
-      "sourceNote": "Use this as a screenshot-backed event-role profile for C.U.M. Chemical Love. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
-      "sources": [
-        {
-          "label": "Abyss June 2026 program screenshot",
-          "url": "assets/posters/abyss-june-2026-program.png",
-          "status": "official-social-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "Yuyuan ticketing screenshot - C.U.M. Chemical Love",
-          "url": "assets/posters/abyss-cum-chemical-love-ticket.png",
-          "status": "wechat-miniprogram-ticketing-screenshot",
-          "checked": "2026-06-15"
-        },
-        {
-          "label": "SmartShanghai Abyss venue context",
-          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
-          "status": "venue-context",
-          "checked": "2026-06-15",
-          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
-        }
-      ]
-    },
-    {
-      "slug": "handycam",
-      "name": "Handycam",
-      "aliases": [
-        "Handycam",
-        "handycam"
-      ],
-      "trackedAt": "2026-06-16",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [
-        {
-          "date": "2026-07-03",
-          "eventId": "yuyintang-cooling-water",
-          "eventTitle": "Cooling Water",
-          "venue": "Yuyintang Music Park B Hall",
-          "city": "Shanghai",
-          "status": "confirmed-by-showstart-and-yuyintang-screenshot"
-        }
-      ],
-      "scope": "Cooling Water / Yuyintang event-role profile",
-      "imageTheme": "cyan",
-      "genres": [
-        "experimental art rock",
-        "live band context",
-        "Yuyintang lineup"
-      ],
-      "summary": "Handycam is preserved for the Cooling Water bill at Yuyintang on 2026-07-03. ShowStart confirms the booking, and Yuyintang article text frames the sound as granular experimental art rock; broader biography was not independently verified in this pass.",
-      "sourceNote": "Use this as a screenshot- and ShowStart-backed event-role profile. Keep claims limited to the Cooling Water appearance and the sound description visible in Yuyintang's article screenshot/public ShowStart text.",
-      "sources": [
-        {
-          "label": "ShowStart Cooling Water listing",
-          "url": "https://www.showstart.com/event/300239",
-          "status": "event-ticketing-source",
-          "checked": "2026-06-16"
-        },
-        {
-          "label": "ShowStart Handycam artist page",
-          "url": "https://www.showstart.com/artist/25266497",
-          "status": "artist-page-context",
-          "checked": "2026-06-16"
-        },
-        {
-          "label": "Yuyintang Cooling Water article/ticket screenshot",
-          "url": "assets/posters/yuyintang-cooling-water-wechat-article.jpg",
-          "status": "artist-profile-screenshot",
-          "checked": "2026-06-16"
-        }
-      ]
-    },
-    {
-      "slug": "abysm",
-      "name": "ABYSM",
-      "aliases": [
-        "ABYSM"
-      ],
-      "trackedAt": "2026-06-16",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [
-        {
-          "date": "2026-07-03",
-          "eventId": "yuyintang-cooling-water",
-          "eventTitle": "Cooling Water",
-          "venue": "Yuyintang Music Park B Hall",
-          "city": "Shanghai",
-          "status": "confirmed-by-showstart-and-yuyintang-screenshot"
-        }
-      ],
-      "scope": "Cooling Water / Yuyintang dark electronic profile",
-      "imageTheme": "slate",
-      "genres": [
-        "dark wave",
-        "trip-hop",
-        "synth",
-        "live electronic"
-      ],
-      "summary": "ABYSM is preserved for the Cooling Water bill at Yuyintang on 2026-07-03. ShowStart confirms the booking, and Yuyintang article text describes a three-synth Dark Wave / Trip-Hop approach; broader biography was not independently verified in this pass.",
-      "sourceNote": "Use this as a ShowStart- and Yuyintang-screenshot-backed event-role profile. Do not expand into biography or label claims without a standalone artist source.",
-      "sources": [
-        {
-          "label": "ShowStart Cooling Water listing",
-          "url": "https://www.showstart.com/event/300239",
-          "status": "event-ticketing-source",
-          "checked": "2026-06-16"
-        },
-        {
-          "label": "ShowStart ABYSM artist page",
-          "url": "https://www.showstart.com/artist/23303497",
-          "status": "artist-page-context",
-          "checked": "2026-06-16"
-        },
-        {
-          "label": "Yuyintang Cooling Water article/ticket screenshot",
-          "url": "assets/posters/yuyintang-cooling-water-wechat-article.jpg",
-          "status": "artist-profile-screenshot",
-          "checked": "2026-06-16"
-        }
-      ]
-    },
-    {
-      "slug": "tuihua-lichang",
-      "name": "Tuihua Lichang",
-      "aliases": [
-        "退化立场",
-        "Tuihua Lichang"
-      ],
-      "trackedAt": "2026-06-16",
-      "checkedByTimezone": "Asia/Shanghai",
-      "itinerary": [
-        {
-          "date": "2026-07-03",
-          "eventId": "yuyintang-cooling-water",
-          "eventTitle": "Cooling Water",
-          "venue": "Yuyintang Music Park B Hall",
-          "city": "Shanghai",
-          "status": "confirmed-by-showstart-and-yuyintang-screenshot"
-        }
-      ],
-      "scope": "Cooling Water / Yuyintang instrumental-rock profile",
-      "imageTheme": "cyan",
-      "genres": [
-        "instrumental rock",
-        "experimental rock",
-        "live band context"
-      ],
-      "summary": "Tuihua Lichang / 退化立场 is preserved for the Cooling Water bill at Yuyintang on 2026-07-03. ShowStart confirms the booking, and Yuyintang article text frames the act around instrumental rock and spatial deconstruction.",
-      "sourceNote": "Use this as a ShowStart- and Yuyintang-screenshot-backed event-role profile. Broader discography and biography were not verified in this pass.",
-      "sources": [
-        {
-          "label": "ShowStart Cooling Water listing",
-          "url": "https://www.showstart.com/event/300239",
-          "status": "event-ticketing-source",
-          "checked": "2026-06-16"
-        },
-        {
-          "label": "ShowStart Tuihua Lichang artist page",
-          "url": "https://www.showstart.com/artist/11124791",
-          "status": "artist-page-context",
-          "checked": "2026-06-16"
-        },
-        {
-          "label": "Yuyintang Cooling Water article/ticket screenshot",
-          "url": "assets/posters/yuyintang-cooling-water-wechat-article.jpg",
-          "status": "artist-profile-screenshot",
-          "checked": "2026-06-16"
         }
       ]
     },
@@ -4341,68 +4660,236 @@
       ]
     },
     {
-      "slug": "lucrecia-dalt",
-      "name": "Lucrecia Dalt",
+      "slug": "xiaolaba",
+      "name": "Xiaolaba",
       "aliases": [
-        "Lucrecia Dalt"
+        "Xiaolaba",
+        "Xiao Laba",
+        "小喇叭"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [],
+      "scope": "Wigwam Weekly Listening / Shanghai local DJ context",
+      "imageTheme": "ember",
+      "genres": [
+        "electronic listening",
+        "local DJ context",
+        "club context"
+      ],
+      "summary": "Wigwam screenshots confirm Xiaolaba / 小喇叭 for a June 17 Weekly Listening event and provide the phrase Just Live for You for One Day. No stronger standalone music biography is attached, so keep profile claims event-level.",
+      "sourceNote": "Use the Wigwam poster/profile screenshots as event identity context only; avoid broad genre or biography claims until stronger artist sources are verified.",
+      "sources": [
+        {
+          "label": "SmartShanghai ALTER. Pavillon listing",
+          "url": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
+          "status": "lineup-context",
+          "checked": "2026-06-14"
+        },
+        {
+          "label": "Wigwam Xiaolaba artist profile screenshot",
+          "url": "assets/posters/wigwam-xiaolaba-profile.jpg",
+          "status": "artist-profile-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Wigwam Weekly Listening Xiaolaba poster screenshot",
+          "url": "assets/posters/wigwam-weekly-listening-xiaolaba-2026-06-17.jpg",
+          "status": "event-poster-screenshot",
+          "checked": "2026-06-15"
+        }
+      ]
+    },
+    {
+      "slug": "xiwi",
+      "name": "XIWI",
+      "aliases": [
+        "XIWI"
+      ],
+      "trackedAt": "2026-06-15",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [
+        {
+          "date": "2026-06-20",
+          "eventId": "abyss-hardcore-melancholia",
+          "eventTitle": "Hardcore Melancholia",
+          "venue": "Abyss Shanghai",
+          "city": "Shanghai",
+          "status": "confirmed-by-user-supplied-screenshot"
+        }
+      ],
+      "scope": "Hardcore Melancholia / Abyss event-role profile",
+      "imageTheme": "rose",
+      "genres": [
+        "hardcore context",
+        "hard dance context",
+        "rave context",
+        "Abyss lineup"
+      ],
+      "summary": "XIWI is preserved as part of the screenshot-confirmed Hardcore Melancholia lineup at Abyss on 2026-06-20. The event title supports a hard/hardcore context; broader standalone artist claims were not verified in this pass.",
+      "sourceNote": "Use this as a screenshot-backed event-role profile for Hardcore Melancholia. No standalone artist biography was verified in this pass, so keep claims limited to the visible Abyss program/ticketing evidence and venue context.",
+      "sources": [
+        {
+          "label": "Abyss June 2026 program screenshot",
+          "url": "assets/posters/abyss-june-2026-program.png",
+          "status": "official-social-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "Yuyuan ticketing screenshot - Hardcore Melancholia",
+          "url": "assets/posters/abyss-hardcore-melancholia-ticket.png",
+          "status": "wechat-miniprogram-ticketing-screenshot",
+          "checked": "2026-06-15"
+        },
+        {
+          "label": "SmartShanghai Abyss venue context",
+          "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
+          "status": "venue-context",
+          "checked": "2026-06-15",
+          "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
+        }
+      ]
+    },
+    {
+      "slug": "yiyoo",
+      "name": "Yiyoo",
+      "aliases": [
+        "Yiyoo"
+      ],
+      "trackedAt": "2026-06-14",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [],
+      "scope": "Bloom / EXIT MC source profile",
+      "imageTheme": "rose",
+      "genres": [
+        "mc",
+        "house-context",
+        "hip-hop-context"
+      ],
+      "summary": "RA-listed MC for Bloom Season 1 Grand Final at EXIT. The profile is kept to avoid misreading the listing as an unverified DJ booking.",
+      "sourceNote": "Resident Advisor confirms the June 17 EXIT role as MC; keep set-time and performance claims attached to the event row only.",
+      "sources": [
+        {
+          "label": "RA Bloom Season 1 Grand Final lineup",
+          "url": "https://ra.co/events/2456798",
+          "status": "trusted-ra-lineup",
+          "checked": "2026-06-14"
+        }
+      ]
+    },
+    {
+      "slug": "ykk",
+      "name": "YKK (CN)",
+      "aliases": [
+        "YKK"
+      ],
+      "trackedAt": "2026-06-14",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [],
+      "scope": "Shanghai club / MENSLIES source profile",
+      "imageTheme": "rose",
+      "genres": [
+        "club music",
+        "house",
+        "bass",
+        "Shanghai club"
+      ],
+      "summary": "Shanghai-based DJ profile connected to MENSLIES, UNITED LAKES, Butterfree, and current RA-listed Shanghai club lineups.",
+      "sourceNote": "RA biography supports broad club-music context; RA event rows confirm current Shanghai appearances but not final set times.",
+      "sources": [
+        {
+          "label": "YKK (CN) Resident Advisor biography",
+          "url": "https://ra.co/dj/ykk-1/biography",
+          "status": "artist-profile",
+          "checked": "2026-06-14"
+        },
+        {
+          "label": "RA Cybionte with Solo, YKK, & Heshang",
+          "url": "https://ra.co/events/2467513",
+          "status": "trusted-ra",
+          "checked": "2026-06-14"
+        },
+        {
+          "label": "RA FRIENDSSTANDout lineup",
+          "url": "https://ra.co/events/2455159",
+          "status": "trusted-ra",
+          "checked": "2026-06-14"
+        }
+      ]
+    },
+    {
+      "slug": "yogijazz",
+      "name": "Yogijazz",
+      "aliases": [
+        "Yogijazz"
+      ],
+      "trackedAt": "2026-06-14",
+      "checkedByTimezone": "Asia/Shanghai",
+      "itinerary": [],
+      "scope": "HOUSE OF ZUP / RA lineup-context source profile",
+      "imageTheme": "gold",
+      "genres": [
+        "house-context",
+        "disco-context",
+        "b2b-context",
+        "afternoon-session"
+      ],
+      "summary": "Resident Advisor lists Yogijazz in the opening B2B slot for HOUSE OF ZUP at ZUP Pizza Bar. Keep this as event-lineup context, not a standalone biography.",
+      "sourceNote": "RA confirms the event role and 15:00-17:00 B2B slot with RB//SH only; do not infer artist background, label affiliation, or regular Shanghai activity from this source.",
+      "sources": [
+        {
+          "label": "RA HOUSE OF ZUP lineup",
+          "url": "https://ra.co/events/2464155",
+          "status": "trusted-ra-lineup",
+          "checked": "2026-06-14"
+        }
+      ]
+    },
+    {
+      "slug": "zein-guz",
+      "name": "Zein Guz",
+      "aliases": [
+        "Zein Guz",
+        "ZEIN GUZ"
       ],
       "trackedAt": "2026-06-16",
       "checkedByTimezone": "Asia/Shanghai",
       "itinerary": [
         {
-          "date": "2026-07-16",
-          "eventId": "lucrecia-dalt-yuyintang",
-          "eventTitle": "Lucrecia Dalt 2026 China Tour",
-          "venue": "Yuyintang Music Park C Hall",
+          "date": "2026-06-18",
+          "eventId": "illum-gravity-stateofff",
+          "eventTitle": "ILLUM Pres. 地心引力抓不住你",
+          "venue": "ILLUM",
           "city": "Shanghai",
-          "status": "confirmed-by-showstart-and-yuyintang-screenshot"
+          "status": "confirmed-by-user-provided-illum-screenshot"
         }
       ],
-      "scope": "Lucrecia Dalt Shanghai / experimental electronic artist profile",
-      "imageTheme": "slate",
+      "scope": "ILLUM Pres. 地心引力抓不住你 / ILLUM lineup-context profile",
+      "imageTheme": "acid",
       "genres": [
-        "experimental electronic",
-        "art pop",
-        "ambient",
-        "avant-garde"
+        "experimental club",
+        "bass context",
+        "ILLUM lineup context"
       ],
-      "summary": "Lucrecia Dalt is tracked here for the SO.READY / Yuyintang Shanghai stop on 2026-07-16. The event source frames the booking as Colombian dark-wave / experimental electronic, and public artist/label context supports treating this as a listening-room experimental-electronic pick rather than a dance-floor rave listing.",
-      "sourceNote": "ShowStart and Yuyintang/SO.READY screenshots confirm the Shanghai event. Artist/label links are profile context only and should not be used as proof of event timing or ticket state.",
+      "summary": "Zein Guz is preserved for the ILLUM 地心引力抓不住你 lineup on 2026-06-18. The supplied ILLUM poster confirms the visible name; recheck preferred spelling when a text source appears.",
+      "sourceNote": "User-provided ILLUM poster/ticket screenshots confirm this event-role appearance only. Do not add biography, label, or genre claims until a stronger artist source is found. SmartShanghai ILLUM is included only to anchor the venue context with an HTTP source; it is not artist biography or event confirmation.",
       "sources": [
         {
-          "label": "ShowStart Lucrecia Dalt Shanghai listing",
-          "url": "https://www.showstart.com/event/300583",
-          "status": "event-ticketing-source",
-          "checked": "2026-06-16"
-        },
-        {
-          "label": "ShowStart Lucrecia Dalt artist page",
-          "url": "https://www.showstart.com/artist/26989305",
-          "status": "artist-page-context",
-          "checked": "2026-06-16"
-        },
-        {
-          "label": "Lucrecia Dalt official website",
-          "url": "https://lucreciadalt.com/",
-          "status": "artist-profile-context",
-          "checked": "2026-06-16"
-        },
-        {
-          "label": "RVNG Intl artist/catalog context",
-          "url": "https://rvng.bandcamp.com/music",
-          "status": "label-context",
-          "checked": "2026-06-16"
-        },
-        {
-          "label": "Lucrecia Dalt China tour poster screenshot",
-          "url": "assets/posters/lucrecia-dalt-yuyintang-2026-07-16.jpg",
+          "label": "ILLUM 地心引力抓不住你 poster screenshot",
+          "url": "assets/posters/illum-gravity-2026-06-18-poster-source.jpg",
           "status": "official-poster-screenshot",
           "checked": "2026-06-16"
         },
         {
-          "label": "Yuyintang Lucrecia Dalt ticket-info screenshot",
-          "url": "assets/posters/lucrecia-dalt-yuyintang-ticket-info.jpg",
-          "status": "official-wechat-ticket-info-screenshot",
+          "label": "ILLUM 地心引力抓不住你 ticketing screenshot",
+          "url": "assets/posters/illum-gravity-2026-06-18-ticket.jpg",
+          "status": "ticketing-screenshot",
+          "checked": "2026-06-16"
+        },
+        {
+          "label": "SmartShanghai ILLUM venue context",
+          "url": "https://www.smartshanghai.com/venue/34394/illum",
+          "status": "venue-context-only",
           "checked": "2026-06-16"
         }
       ]

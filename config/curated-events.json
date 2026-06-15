@@ -5879,6 +5879,355 @@
         "ticketing source",
         "listening room"
       ]
+    },
+    {
+      "id": "illum-gravity-stateofff",
+      "month": "Jun",
+      "sortDate": "2026-06-18",
+      "date": "Jun 18",
+      "time": "22:00-04:00",
+      "title": "ILLUM Pres. 地心引力抓不住你",
+      "venue": "ILLUM",
+      "district": "Changning",
+      "vibe": [
+        "hard",
+        "experimental",
+        "underground"
+      ],
+      "genre": "experimental club, bass, hard club, deconstructed club",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "80 / 100 / 120 RMB",
+      "age": "Check venue",
+      "source": "assets/posters/illum-gravity-2026-06-18-ticket.jpg",
+      "sourceLabel": "ILLUM WeChat and ticketing screenshots",
+      "imageTheme": "acid",
+      "description": "ILLUM Thursday late-room booking for 地心引力抓不住你 with StateOFFF, Zein Guz, and Qiming / 行么雷 visible on the supplied poster and ticketing screenshots. Ticketing screenshot confirms 2026-06-18 to 2026-06-19, 22:00-04:00, ILLUM at C PARK LG floor, and 80/100/120 RMB ticket tiers.",
+      "kind": "event",
+      "sourceStatus": "wechat-ticketing-and-official-screenshot",
+      "address": "LG Floor, C PARK, No. 658 Zhaohua Road, Changning District, Shanghai",
+      "organizer": "ILLUM Shanghai",
+      "lastChecked": "2026-06-16",
+      "posterUrl": "assets/posters/illum-gravity-2026-06-18-poster.jpg",
+      "posterEvidence": {
+        "type": "official-poster-screenshot",
+        "source": "User-provided ILLUM Shanghai poster and ticketing screenshots",
+        "url": "assets/posters/illum-gravity-2026-06-18-poster.jpg",
+        "status": "Poster names 地心引力抓不住你, StateOFFF, Zein Guz, Qiming / 行么雷, 2026-06-18, ILLUM, and C PARK LG floor address. Ticketing screenshot confirms 22:00-04:00 and 80/100/120 RMB tiers. Public poster version crops away the lower reservation UI; full poster and ticket screenshots are retained as evidence.",
+        "localFiles": [
+          "assets/posters/illum-gravity-2026-06-18-poster.jpg",
+          "assets/posters/illum-gravity-2026-06-18-poster-source.jpg",
+          "assets/posters/illum-gravity-2026-06-18-wechat.jpg",
+          "assets/posters/illum-gravity-2026-06-18-ticket.jpg"
+        ]
+      },
+      "ticketStatus": "User-provided ILLUM ticketing screenshot shows 2026-06-18 to 2026-06-19, 22:00-04:00, ILLUM, Zhaohua Road 658 / C PARK LG floor, and ticket tiers at 80 RMB early-bird, 100 RMB limited presale, and 120 RMB door. Direct public ticket URL and age policy were not visible.",
+      "lineup": [
+        {
+          "name": "StateOFFF",
+          "aliases": [
+            "StateOFFF (CN)"
+          ],
+          "note": "ILLUM poster lists StateOFFF (CN) for 地心引力抓不住你."
+        },
+        {
+          "name": "Zein Guz",
+          "aliases": [
+            "ZEIN GUZ"
+          ],
+          "note": "ILLUM poster lists Zein Guz; exact spelling should be rechecked if a clearer organizer text appears."
+        },
+        {
+          "name": "Qiming / 行么雷",
+          "aliases": [
+            "Qiming",
+            "行么雷"
+          ],
+          "note": "ILLUM poster visually lists Qiming / 行么雷; keep source-faithful until a clearer text source confirms the preferred artist spelling."
+        }
+      ],
+      "sources": [
+        {
+          "label": "ILLUM 地心引力抓不住你 poster screenshot",
+          "url": "assets/posters/illum-gravity-2026-06-18-poster-source.jpg",
+          "status": "official-poster-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided ILLUM poster screenshot confirms event title, 2026-06-18, venue/address, and visible lineup names StateOFFF, Zein Guz, and Qiming / 行么雷."
+        },
+        {
+          "label": "ILLUM 地心引力抓不住你 ticketing screenshot",
+          "url": "assets/posters/illum-gravity-2026-06-18-ticket.jpg",
+          "status": "ticketing-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided ticketing screenshot confirms 2026-06-18 to 2026-06-19, 22:00-04:00, ILLUM, C PARK LG floor, and 80/100/120 RMB ticket tiers."
+        },
+        {
+          "label": "ILLUM 地心引力抓不住你 WeChat screenshot",
+          "url": "assets/posters/illum-gravity-2026-06-18-wechat.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided ILLUM Shanghai account screenshot supplies poster context and reservation route; not a direct public URL."
+        },
+        {
+          "label": "SmartShanghai ILLUM venue context",
+          "url": "https://www.smartshanghai.com/venue/34394/illum",
+          "status": "venue-context",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "Venue context only: SmartShanghai lists ILLUM at LG-16, B1/F, C PARK, 658 Zhaohua Lu and describes the room through bass, live-performance, and post-everything club context. User-provided ILLUM screenshots remain the event-level evidence."
+        }
+      ],
+      "recommendationReason": "Recommended for readers who want ILLUM in its heavier visual-and-bass-club lane: the bill is not presented as a clean house night, and the 22:00-04:00 ticket window points to a late, high-pressure room. Keep it for experimental club and hard-room curiosity rather than a guaranteed straight-techno set.",
+      "bestFor": "Best for ILLUM regulars, hard-club listeners, and readers who like darker, graphic, bass-adjacent rooms with less predictable lineup context.",
+      "verifyBeforeGoing": "Confirm live ticket inventory, age policy, and final running order through the ILLUM reservation route before going. Recheck the preferred spelling of Zein Guz and Qiming / 行么雷 if a text post becomes available.",
+      "sourceConfidence": "Medium-confidence screenshot-backed event: ILLUM poster and ticketing screenshots confirm the practical core fields, while SmartShanghai only supports venue context. Direct public ticket URL, age policy, and detailed artist profiles were not visible.",
+      "soundTags": [
+        "experimental-club",
+        "bass",
+        "hard-club",
+        "deconstructed-club",
+        "late-room"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "poster confirmed",
+        "ticketing screenshot",
+        "late room",
+        "verify artist spelling"
+      ]
+    },
+    {
+      "id": "illum-normie-10k99",
+      "month": "Jun",
+      "sortDate": "2026-06-19",
+      "date": "Jun 19",
+      "time": "22:00-04:00",
+      "title": "Normie Corp pres. 10K99",
+      "venue": "ILLUM",
+      "district": "Changning",
+      "vibe": [
+        "experimental",
+        "underground",
+        "hard"
+      ],
+      "genre": "experimental club, deconstructed club, digital hardcore, bass",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "85 / 95 / 110 RMB",
+      "age": "Check venue",
+      "source": "assets/posters/illum-normie-10k99-2026-06-19-ticket-detail.jpg",
+      "sourceLabel": "ILLUM WeChat and ticketing screenshots",
+      "imageTheme": "rose",
+      "description": "Normie Corp presents 10K99 at ILLUM with haina from china and GG lobster billed on the poster, plus DJSYB, Manqing, and a visually unclear V / XWI support credit. Ticketing screenshot confirms 2026-06-19 to 2026-06-20, 22:00-04:00, ILLUM, and 85/95/110 RMB ticket tiers.",
+      "kind": "event",
+      "sourceStatus": "wechat-ticketing-and-official-screenshot",
+      "address": "LG Floor, C PARK, No. 658 Zhaohua Road, Changning District, Shanghai",
+      "organizer": "Normie Corporation / ILLUM Shanghai",
+      "lastChecked": "2026-06-16",
+      "posterUrl": "assets/posters/illum-normie-10k99-2026-06-19-poster.jpg",
+      "posterEvidence": {
+        "type": "official-poster-screenshot",
+        "source": "User-provided ILLUM Shanghai poster and ticketing screenshots",
+        "url": "assets/posters/illum-normie-10k99-2026-06-19-poster.jpg",
+        "status": "Poster names Normie Corporation pres. 10K99, haina from china, GG lobster, DJSYB, Manqing, 2026-06-19, ILLUM, and Zhaohua Road C PARK LG floor. Ticket screenshots confirm 22:00-04:00 and 85/95/110 RMB tiers. Public poster version crops away the lower reservation UI; full poster and ticket screenshots are retained as evidence.",
+        "localFiles": [
+          "assets/posters/illum-normie-10k99-2026-06-19-poster.jpg",
+          "assets/posters/illum-normie-10k99-2026-06-19-poster-source.jpg",
+          "assets/posters/illum-normie-10k99-2026-06-19-wechat.jpg",
+          "assets/posters/illum-normie-10k99-2026-06-19-ticket-home.jpg",
+          "assets/posters/illum-normie-10k99-2026-06-19-ticket-cover.jpg",
+          "assets/posters/illum-normie-10k99-2026-06-19-ticket-detail.jpg"
+        ]
+      },
+      "ticketStatus": "User-provided ILLUM ticketing screenshots show 2026-06-19 to 2026-06-20, 22:00-04:00, ILLUM, Zhaohua Road 658 / C PARK LG floor, and ticket tiers at 85 RMB early-bird, 95 RMB presale, and 110 RMB door. Direct public ticket URL and age policy were not visible.",
+      "lineup": [
+        {
+          "name": "10K99",
+          "aliases": [
+            "10k99"
+          ],
+          "note": "Poster and ticket title bill 10K99 as the main artist; poster text also names haina from china and GG lobster."
+        },
+        {
+          "name": "haina from china",
+          "note": "Poster places haina from china in parentheses under the 10K99 billing."
+        },
+        {
+          "name": "GG lobster",
+          "note": "Poster places GG lobster in parentheses under the 10K99 billing."
+        },
+        {
+          "name": "DJSYB",
+          "note": "Poster lists DJSYB on the Normie Corp pres. 10K99 lineup."
+        },
+        {
+          "name": "Manqing",
+          "aliases": [
+            "MANQING"
+          ],
+          "note": "Poster lists Manqing / MANQING on the Normie Corp pres. 10K99 lineup."
+        },
+        {
+          "name": "V / XWI",
+          "aliases": [
+            "V XWI"
+          ],
+          "note": "Poster appears to list a V / XWI support credit; keep as visually unclear until organizer text confirms the exact spelling."
+        }
+      ],
+      "sources": [
+        {
+          "label": "ILLUM Normie Corp pres. 10K99 poster screenshot",
+          "url": "assets/posters/illum-normie-10k99-2026-06-19-poster-source.jpg",
+          "status": "official-poster-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided ILLUM poster screenshot confirms Normie Corporation pres. 10K99, 2026-06-19, ILLUM/address, and visible lineup names."
+        },
+        {
+          "label": "ILLUM Normie Corp pres. 10K99 ticketing detail screenshot",
+          "url": "assets/posters/illum-normie-10k99-2026-06-19-ticket-detail.jpg",
+          "status": "ticketing-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided ticketing screenshot confirms 2026-06-19 to 2026-06-20, 22:00-04:00, ILLUM, C PARK LG floor, and 85/95/110 RMB ticket tiers."
+        },
+        {
+          "label": "ILLUM Normie Corp pres. 10K99 ticket-home screenshot",
+          "url": "assets/posters/illum-normie-10k99-2026-06-19-ticket-home.jpg",
+          "status": "ticketing-home-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided ticket-home screenshot shows the poster, title, and 85 RMB starting price. The cropped cover removes the lower reservation card for poster-wall use."
+        },
+        {
+          "label": "ILLUM Normie Corp pres. 10K99 WeChat screenshot",
+          "url": "assets/posters/illum-normie-10k99-2026-06-19-wechat.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided ILLUM Shanghai account screenshot supplies poster context and reservation route; not a direct public URL."
+        },
+        {
+          "label": "SmartShanghai ILLUM venue context",
+          "url": "https://www.smartshanghai.com/venue/34394/illum",
+          "status": "venue-context",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "Venue context only: SmartShanghai lists ILLUM at LG-16, B1/F, C PARK, 658 Zhaohua Lu and describes the room through bass, live-performance, and post-everything club context. User-provided ILLUM screenshots remain the event-level evidence."
+        }
+      ],
+      "recommendationReason": "Recommended for readers who track hyper-online, deconstructed, and sharper experimental-club bookings: the Normie Corp / 10K99 framing is more interesting than a generic Friday party, and the support bill gives the night local-room weight beyond one guest name.",
+      "bestFor": "Best for ILLUM followers, deconstructed-club listeners, and readers who want a rougher, fashion-adjacent, high-contrast room rather than polished house or melodic techno.",
+      "verifyBeforeGoing": "Confirm live ticket inventory, age policy, and the exact support-name spelling through the ILLUM reservation route before going. The V / XWI credit is visually unclear in the poster screenshot.",
+      "sourceConfidence": "Medium-confidence screenshot-backed event: poster and ticketing screenshots confirm title, date, time, venue, price, and most lineup credits. Direct public ticket URL, age policy, and one support spelling remain unresolved.",
+      "soundTags": [
+        "experimental-club",
+        "deconstructed-club",
+        "bass",
+        "digital-hardcore",
+        "late-room"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "poster confirmed",
+        "ticketing screenshot",
+        "late room",
+        "verify artist spelling"
+      ]
+    },
+    {
+      "id": "illum-soback-liquid-dolls",
+      "month": "Jun",
+      "sortDate": "2026-06-20",
+      "date": "Jun 20",
+      "time": "22:00-04:00",
+      "title": "LIQUID DOLLS Pres. SOBACK",
+      "venue": "ILLUM",
+      "district": "Changning",
+      "vibe": [
+        "experimental",
+        "underground",
+        "bass"
+      ],
+      "genre": "experimental club, bass, tour stop, left-field club",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "88 / 108 / 128 RMB",
+      "age": "Check venue",
+      "source": "assets/posters/illum-soback-2026-06-20-ticket.jpg",
+      "sourceLabel": "ILLUM WeChat and ticketing screenshots",
+      "imageTheme": "ember",
+      "description": "LIQUID DOLLS brings SOBACK to ILLUM for the Shanghai stop of the China Tour 2026. Ticketing screenshot confirms 2026-06-20 to 2026-06-21, 22:00-04:00, ILLUM at C PARK LG floor, and 88/108/128 RMB ticket tiers; visible screenshots do not expose support names.",
+      "kind": "event",
+      "sourceStatus": "wechat-ticketing-and-official-screenshot",
+      "address": "LG Floor, C PARK, No. 658 Zhaohua Road, Changning District, Shanghai",
+      "organizer": "LIQUID DOLLS / ILLUM Shanghai",
+      "lastChecked": "2026-06-16",
+      "posterUrl": "assets/posters/illum-soback-2026-06-20-poster.jpg",
+      "posterEvidence": {
+        "type": "official-poster-screenshot",
+        "source": "User-provided ILLUM Shanghai poster and ticketing screenshots",
+        "url": "assets/posters/illum-soback-2026-06-20-poster.jpg",
+        "status": "Poster names SOBACK China Tour 2026 with Shanghai / ILLUM on 2026-06-20. Ticketing screenshot confirms 22:00-04:00 and 88/108/128 RMB tiers. Support lineup was not visible in the supplied screenshots.",
+        "localFiles": [
+          "assets/posters/illum-soback-2026-06-20-poster.jpg",
+          "assets/posters/illum-soback-2026-06-20-wechat.jpg",
+          "assets/posters/illum-soback-2026-06-20-ticket.jpg"
+        ]
+      },
+      "ticketStatus": "User-provided ILLUM ticketing screenshot shows 2026-06-20 to 2026-06-21, 22:00-04:00, ILLUM, Zhaohua Road 658 / C PARK LG floor, and ticket tiers at 88 RMB early-bird, 108 RMB presale, and 128 RMB door. Direct public ticket URL, age policy, and support lineup were not visible.",
+      "lineup": [
+        {
+          "name": "SOBACK",
+          "aliases": [
+            "SoBack"
+          ],
+          "note": "Poster and ticket title list SOBACK for the 2026 China Tour Shanghai stop."
+        }
+      ],
+      "sources": [
+        {
+          "label": "ILLUM SOBACK China Tour poster screenshot",
+          "url": "assets/posters/illum-soback-2026-06-20-poster.jpg",
+          "status": "official-poster-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided poster confirms SOBACK China Tour 2026 with Shanghai / ILLUM on 2026-06-20."
+        },
+        {
+          "label": "ILLUM SOBACK ticketing screenshot",
+          "url": "assets/posters/illum-soback-2026-06-20-ticket.jpg",
+          "status": "ticketing-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided ticketing screenshot confirms 2026-06-20 to 2026-06-21, 22:00-04:00, ILLUM, C PARK LG floor, and 88/108/128 RMB ticket tiers."
+        },
+        {
+          "label": "ILLUM SOBACK WeChat screenshot",
+          "url": "assets/posters/illum-soback-2026-06-20-wechat.jpg",
+          "status": "official-wechat-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided ILLUM Shanghai account screenshot supplies poster context and reservation route; not a direct public URL."
+        },
+        {
+          "label": "SmartShanghai ILLUM venue context",
+          "url": "https://www.smartshanghai.com/venue/34394/illum",
+          "status": "venue-context",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "Venue context only: SmartShanghai lists ILLUM at LG-16, B1/F, C PARK, 658 Zhaohua Lu and describes the room through bass, live-performance, and post-everything club context. User-provided ILLUM screenshots remain the event-level evidence."
+        }
+      ],
+      "recommendationReason": "Recommended as a focused tour-stop listing rather than a broad local lineup: SOBACK is the visible draw, and ILLUM is the right room if you want a darker, bass-leaning left-field club night. The support bill is not visible yet, so treat it as a headliner-led pick.",
+      "bestFor": "Best for readers who follow Liquid Dolls / ILLUM bookings and want a Saturday experimental-club room with one clear tour-stop anchor.",
+      "verifyBeforeGoing": "Confirm live ticket inventory, age policy, support lineup, and running order through the ILLUM reservation route before going.",
+      "sourceConfidence": "Medium-confidence screenshot-backed event: poster and ticketing screenshots confirm title, date, time, venue, price, and main artist. Direct public ticket URL, age policy, and support lineup remain unresolved.",
+      "soundTags": [
+        "experimental-club",
+        "bass",
+        "left-field-club",
+        "tour-stop",
+        "late-room"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "poster confirmed",
+        "ticketing screenshot",
+        "late room",
+        "support lineup missing"
+      ]
     }
   ]
 }

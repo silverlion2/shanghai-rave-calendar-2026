@@ -194,8 +194,11 @@ test("homepage desktop layout groups planning panels in the left rail", () => {
     assert.equal(html.indexOf('id="personalizedDispatch"'), -1, `${file} should not render the old personalized dispatch panel`);
 
     const main = html.slice(mainStart);
-    assert.ok(main.indexOf('class="controls"') < main.indexOf('id="monthRail"'), `${file} should place filters before month rail`);
-    assert.ok(main.indexOf('id="monthRail"') < main.indexOf('id="calendar"'), `${file} should place month rail before the calendar`);
+    const controlsStart = main.indexOf('class="controls"');
+    const controlsEnd = main.indexOf("</section>", controlsStart);
+    const controls = main.slice(controlsStart, controlsEnd);
+    assert.ok(controls.indexOf('id="weekFilter"') < controls.indexOf('id="monthRail"'), `${file} should place month beside week in the filter controls`);
+    assert.ok(main.indexOf('id="monthRail"') < main.indexOf('id="calendar"'), `${file} should place month selection before the calendar`);
   }
 });
 

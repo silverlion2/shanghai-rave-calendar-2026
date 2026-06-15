@@ -17,17 +17,17 @@
     "socialLabel": "RED / Xiaohongshu 980793145"
   },
   "primaryNav": [
-    "calendar",
-    "new-to-techno",
     "poster-wall",
+    "calendar",
+    "planner",
+    "live-room",
+    "rave-everywhere",
     "love-wall",
     "venues",
     "djs",
+    "new-to-techno",
     "contribute",
-    "account",
-    "live-room",
-    "planner",
-    "rave-everywhere"
+    "account"
   ],
   "pages": [
     {
