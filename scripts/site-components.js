@@ -45,6 +45,7 @@ function renderSeoHead(structure, {
   <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 ${renderGoogleTag(structure.site.googleTagId)}
+${renderVercelAnalytics()}
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="${escapeAttr(structure.site.name)}">
   <meta property="og:title" content="${escapeAttr(ogTitle)}">
@@ -73,6 +74,16 @@ function renderGoogleTag(googleTagId) {
     gtag("js", new Date());
     gtag("config", "${escapeJsString(googleTagId)}");
   </script>`;
+}
+
+function renderVercelAnalytics() {
+  return `  <!-- Vercel Web Analytics -->
+  <script>
+    window.va = window.va || function () {
+      (window.vaq = window.vaq || []).push(arguments);
+    };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>`;
 }
 
 function renderPrimaryNav(structure, { prefix = "", activeId = "", includeUtility = false, trailingHtml = "" } = {}) {
@@ -222,6 +233,7 @@ module.exports = {
   renderHtmlDocument,
   renderSeoHead,
   renderGoogleTag,
+  renderVercelAnalytics,
   renderPrimaryNav,
   renderBottomDispatchFooter,
   websiteSchema,

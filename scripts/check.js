@@ -19,6 +19,7 @@ const websiteStructure = readWebsiteStructure();
 const htmlFiles = topLevelHtmlFiles(websiteStructure);
 const syntaxOnlyHtmlFiles = trackedSyntaxOnlyHtmlFiles(websiteStructure);
 const googleTrackedHtmlFiles = [...htmlFiles, ...syntaxOnlyHtmlFiles];
+const analyticsTrackedHtmlFiles = googleTrackedHtmlFiles;
 const expectedGoogleTagId = websiteStructure.site.googleTagId;
 const sharedDispatchHtmlFiles = trackedSharedDispatchHtmlFiles(websiteStructure);
 const secondaryDispatchHtmlFiles = trackedSecondaryDispatchHtmlFiles(websiteStructure);
@@ -433,6 +434,18 @@ function assertGoogleTracking(file, html) {
   }
 }
 
+function assertVercelAnalytics(file, html) {
+  if (!html.includes("window.va = window.va || function ()")) {
+    throw new Error(`${file} missing Vercel analytics queue`);
+  }
+  if (!html.includes('(window.vaq = window.vaq || []).push(arguments);')) {
+    throw new Error(`${file} missing Vercel analytics queue push`);
+  }
+  if (!html.includes('<script defer src="/_vercel/insights/script.js"></script>')) {
+    throw new Error(`${file} missing Vercel analytics loader`);
+  }
+}
+
 function assertRootDispatchFormat(file, html) {
   if (!hasStylesheet(html, "assets/basement-dispatch.css")) {
     throw new Error(`${file} must load the shared Basement Dispatch stylesheet`);
@@ -524,6 +537,7 @@ function assertGeneratedSeoPages(events) {
     const html = fs.readFileSync(file, "utf8");
     assertSeoHeadMarkers(file, html);
     assertGoogleTracking(file, html);
+    assertVercelAnalytics(file, html);
     assertGeneratedDispatchFormat(file, html);
     assertNoDuplicateEventsIndexLinks(file, html);
     assertNoPosterArchiveLinks(file, html);
@@ -633,6 +647,7 @@ function isExternalReference(value) {
 function shouldSkipReference(value) {
   if (!value) return true;
   if (value === "#" || value.startsWith("#")) return false;
+  if (value.startsWith("/_vercel/insights/")) return true;
   if (value.includes("${") || value.startsWith("{{")) return true;
   if (/^(?:data:|mailto:|tel:|javascript:|blob:|sms:|whatsapp:|weixin:)/i.test(value)) return true;
   return /^[a-z][a-z0-9+.-]*:/i.test(value) && !isExternalReference(value);
@@ -772,6 +787,11 @@ for (const file of [...htmlFiles, ...syntaxOnlyHtmlFiles]) {
 for (const file of googleTrackedHtmlFiles) {
   const html = fs.readFileSync(file, "utf8");
   assertGoogleTracking(file, html);
+}
+
+for (const file of analyticsTrackedHtmlFiles) {
+  const html = fs.readFileSync(file, "utf8");
+  assertVercelAnalytics(file, html);
 }
 
 for (const file of sharedDispatchHtmlFiles) {
