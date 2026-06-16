@@ -1,6 +1,6 @@
 # Project Memory
 
-Last updated: 2026-06-15 Asia/Shanghai
+Last updated: 2026-06-16 Asia/Shanghai
 
 ## Project
 
@@ -83,6 +83,29 @@ npm run scrape
 npm run check
 npm run start
 ```
+
+### 2026-06-16 Yuyuan Screenshot Ingest: Health Maxxing + Le Youth
+
+The user supplied Yuyuan mini-program, poster, and venue/promoter screenshots for two additional current/future events and asked to upload the analyzed data.
+
+Implemented state:
+
+- Added `health-maxxing-reactor-2026-06-19` for Jun 19 at Reactor Shanghai, 22:00-04:00, 78 RMB+, with lineup, running order, ticketing status, local poster assets, and a recommendation focused on why the room/program is worth attending.
+- Added `le-youth-cloudsu-2026-06-27` for Jun 27 at CLOUD.SU Lounge Rooftop, 16:30-02:00, 228 RMB+, with lineup, address, ticketing status, local poster assets, and a recommendation framed around Le Youth's melodic-house / nu-disco appeal.
+- Stored original and optimized poster/ticket/reference files under `assets/posters/`, then regenerated `data/poster-archive.json` so both events appear in the poster wall.
+- Added CLOUD.SU, Asylum, and idk / HEALTH MAXXING routes to `config/promotion-platform-network.json`; Yuyuan mini-program search is now a preferred core-field source for these venue/promoter flows.
+- Regenerated `data/events.json`, `data/dj-data.js`, `data/tracked-dj-itineraries.js`, SEO event pages, and `sitemap.xml`.
+
+Open gaps:
+
+- Direct Yuyuan mini-program URLs are still not linkable from screenshots.
+- Age / ID policy was not visible for either event.
+- Le Youth appeared sold out in the supplied screenshot.
+- Health Maxxing's Reactor free-entry/body-test rule should be rechecked before recommending it as an active entry option.
+
+Verification:
+
+- `npm run check` passed with 108 events, 51 future events, 77 promotion-platform routes, 71 poster records, and 80 tests passing.
 
 ## Next Useful Steps
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T19:06:56.873Z",
+  "generatedAt": "2026-06-16T02:14:20.975Z",
   "sourceData": "data/events.json",
   "storagePolicy": {
     "mode": "static-json-plus-local-optimized-assets",
@@ -7,16 +7,16 @@
     "rule": "Use optimized display assets in the wall; keep raw poster files out of the default browsing path when the archive grows."
   },
   "stats": {
-    "posters": 69,
+    "posters": 71,
     "years": [
       2026
     ],
-    "venues": 32,
-    "optimizedCount": 69,
-    "displayBytes": 12362380,
-    "sourceBytes": 39544345,
-    "displayMegabytes": 11.79,
-    "sourceMegabytes": 37.71,
+    "venues": 33,
+    "optimizedCount": 71,
+    "displayBytes": 12907094,
+    "sourceBytes": 40268360,
+    "displayMegabytes": 12.31,
+    "sourceMegabytes": 38.4,
     "freeTierSoftCapBytes": 83886080,
     "freeTierSoftCapMegabytes": 80
   },
@@ -380,6 +380,52 @@
       },
       "eventUrl": "events/jaal.html",
       "notes": "Two-source Watch lead for Fenrir's Endgame metal-crossover night: SmartShanghai frames it as live acid techno with Blood of Life, Chimera Cult, and Soulitude, while the Chinese listing gives time and ticket tiers. Strong for hard/experimental readers, but still verify the actual purchase route and JAAL set timing."
+    },
+    {
+      "id": "shanghai-2026-le-youth-cloudsu-2026-06-27",
+      "eventId": "le-youth-cloudsu-2026-06-27",
+      "title": "Le Youth 2026 China Tour Shanghai",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 27",
+      "sortDate": "2026-06-27",
+      "time": "16:30-02:00",
+      "venue": "CLOUD.SU Lounge Rooftop",
+      "district": "Huangpu",
+      "sound": "melodic house, nu disco, rooftop electronic",
+      "tags": [
+        "upcoming",
+        "high",
+        "huangpu",
+        "house",
+        "open-air",
+        "date",
+        "melodic house",
+        "nu disco",
+        "rooftop electronic"
+      ],
+      "status": "upcoming",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Yuyuan ticketing screenshot + event poster",
+        "url": "assets/posters/le-youth-cloudsu-2026-06-27-poster.jpg",
+        "posterEvidenceUrl": "assets/posters/le-youth-cloudsu-2026-06-27-poster.jpg",
+        "posterEvidenceSource": "User-provided event poster and Yuyuan ticketing screenshot",
+        "posterEvidenceStatus": "Clean poster confirms Asylum Presents, Le Youth, China Tour, Jun 27 2026, 16:30-02:00, CLOUD.SU Lounge Rooftop Shanghai, support names, and Fosun Art Center address. Yuyuan ticket-home screenshot confirms 2026-06-27 16:30, 228 RMB+ starting price, e-ticket, standing-room, no-refund flags, and sold-out state at screenshot time."
+      },
+      "image": {
+        "thumbnail": "assets/posters/le-youth-cloudsu-2026-06-27-poster-optimized.jpg",
+        "display": "assets/posters/le-youth-cloudsu-2026-06-27-poster-optimized.jpg",
+        "sourceAsset": "assets/posters/le-youth-cloudsu-2026-06-27-poster.jpg",
+        "displayBytes": 303965,
+        "sourceBytes": 404150,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/le-youth-cloudsu-2026-06-27.html",
+      "notes": "Asylum presents Le Youth's Shanghai China Tour stop on the CLOUD.SU Lounge Rooftop, with Baby Yung, Gabrielle, PAS, and Yu-Ya supporting a long afternoon-to-late melodic-house bill."
     },
     {
       "id": "shanghai-2026-nova-summer-splash-pool-party",
@@ -1091,6 +1137,51 @@
       },
       "eventUrl": "events/sciahri-potent.html",
       "notes": "POTENT hosts Sciahri with Thomas Futoso and Luke Bye in a late techno slot. RA confirms the 23:59-06:00 window, lineup, cost, and 18+ rule."
+    },
+    {
+      "id": "shanghai-2026-health-maxxing-reactor-2026-06-19",
+      "eventId": "health-maxxing-reactor-2026-06-19",
+      "title": "DOME | idk Pres. HEALTH MAXXING",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 19",
+      "sortDate": "2026-06-19",
+      "time": "22:00-04:00",
+      "venue": "Reactor Shanghai",
+      "district": "Changning",
+      "sound": "club, hard dance, performance-led electronic",
+      "tags": [
+        "upcoming",
+        "high",
+        "changning",
+        "club",
+        "experimental",
+        "underground",
+        "hard dance",
+        "performance-led electronic"
+      ],
+      "status": "upcoming",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "REACTOR / Yuyuan screenshots",
+        "url": "assets/posters/health-maxxing-reactor-2026-06-19-poster.jpg",
+        "posterEvidenceUrl": "assets/posters/health-maxxing-reactor-2026-06-19-poster.jpg",
+        "posterEvidenceSource": "User-provided REACTOR official-account/poster and Yuyuan ticketing screenshots",
+        "posterEvidenceStatus": "Clean poster names HEALTH MAXXING, idk pres., DOME, Reactor, visible lineup names, and Reactor address text. Yuyuan ticket-home screenshot confirms 2026-06-19 22:00, Reactor, 78 RMB+ starting price, electronic ticket, standing-room, and non-refundable flags. Reactor post screenshot confirms the running order and free-entry-before-midnight body-test note."
+      },
+      "image": {
+        "thumbnail": "assets/posters/health-maxxing-reactor-2026-06-19-poster-optimized.jpg",
+        "display": "assets/posters/health-maxxing-reactor-2026-06-19-poster-optimized.jpg",
+        "sourceAsset": "assets/posters/health-maxxing-reactor-2026-06-19-poster.jpg",
+        "displayBytes": 240749,
+        "sourceBytes": 319865,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/health-maxxing-reactor-2026-06-19.html",
+      "notes": "idk presents HEALTH MAXXING in Reactor's DOME room: a performance-led club night with will, BIG WESTI, anal, and ruima, plus two Body Training Session interludes on the posted running order."
     },
     {
       "id": "shanghai-2026-heim-earworthy-selected-sound",

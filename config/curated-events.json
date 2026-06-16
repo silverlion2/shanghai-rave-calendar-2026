@@ -6444,6 +6444,288 @@
       "bestFor": "Best for house-heads, techno-adjacent dancers, and EXIT regulars who want a late basement route with groove and label texture instead of peak hard-techno pressure.",
       "verifyBeforeGoing": "Confirm current ticket inventory, final price, age policy, and any door update through RA or the Yuyuan / EXIT ticket route before going. The visible sources disagree between 88 RMB+ starting price and RA 118 RMB indexed cost.",
       "sourceConfidence": "High-confidence RA plus user-screenshot event: RA confirms the core event fields and the user-provided EXIT / ticketing screenshots corroborate poster, date, start time, local ticket route, and 88 RMB+ starting price. Direct mini-program URL and age policy remain unresolved."
+    },
+    {
+      "id": "health-maxxing-reactor-2026-06-19",
+      "month": "Jun",
+      "sortDate": "2026-06-19",
+      "date": "Jun 19",
+      "time": "22:00-04:00",
+      "title": "DOME | idk Pres. HEALTH MAXXING",
+      "venue": "Reactor Shanghai",
+      "district": "Changning",
+      "vibe": [
+        "club",
+        "experimental",
+        "underground"
+      ],
+      "genre": "club, hard dance, performance-led electronic",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "78 RMB+",
+      "age": "Check venue",
+      "source": "assets/posters/health-maxxing-reactor-2026-06-19-poster.jpg",
+      "sourceLabel": "REACTOR / Yuyuan screenshots",
+      "imageTheme": "acid",
+      "description": "idk presents HEALTH MAXXING in Reactor's DOME room: a performance-led club night with will, BIG WESTI, anal, and ruima, plus two Body Training Session interludes on the posted running order.",
+      "kind": "event",
+      "sourceStatus": "trusted-yuyuan-and-official-screenshot",
+      "address": "Building D, C.PARK Haisu, Zhongdeqiao Road, Changning District, Shanghai",
+      "organizer": "idk / REACTOR Shanghai",
+      "lastChecked": "2026-06-16",
+      "posterUrl": "assets/posters/health-maxxing-reactor-2026-06-19-poster.jpg",
+      "posterEvidence": {
+        "type": "official-poster-ticketing-and-running-order-screenshots",
+        "source": "User-provided REACTOR official-account/poster and Yuyuan ticketing screenshots",
+        "url": "assets/posters/health-maxxing-reactor-2026-06-19-poster.jpg",
+        "status": "Clean poster names HEALTH MAXXING, idk pres., DOME, Reactor, visible lineup names, and Reactor address text. Yuyuan ticket-home screenshot confirms 2026-06-19 22:00, Reactor, 78 RMB+ starting price, electronic ticket, standing-room, and non-refundable flags. Reactor post screenshot confirms the running order and free-entry-before-midnight body-test note.",
+        "localFiles": [
+          "assets/posters/health-maxxing-reactor-2026-06-19-poster.jpg",
+          "assets/posters/health-maxxing-reactor-2026-06-19-ticket-home.jpg",
+          "assets/posters/health-maxxing-reactor-2026-06-19-running-order.jpg"
+        ]
+      },
+      "ticketStatus": "Yuyuan ticket-home screenshot confirms 78 RMB+ starting price, electronic ticket, standing-room flag, and non-refundable flag. Reactor post screenshot says entry can be free before midnight after passing the body-test check; verify the rule, quota, and door policy before planning around free entry. Direct mini-program URL and age policy were not visible.",
+      "lineup": [
+        {
+          "name": "will",
+          "aliases": [
+            "djwill"
+          ],
+          "note": "Yuyuan and Reactor screenshots list will / djwill; running order places will from 22:00 to 00:00."
+        },
+        {
+          "name": "BIG WESTI",
+          "note": "Poster and running-order screenshot list BIG WESTI; running order places the short slot from 00:00 to 00:15."
+        },
+        {
+          "name": "anal",
+          "note": "Poster and running-order screenshot list anal from 00:15 to 01:45."
+        },
+        {
+          "name": "ruima",
+          "note": "Poster and running-order screenshot list ruima from 02:15 to 04:00."
+        },
+        {
+          "name": "Body Training Session",
+          "role": "performance",
+          "note": "Running-order screenshot lists Body Training Session interludes at 23:00-23:30 and 01:45-02:15."
+        }
+      ],
+      "setTimes": [
+        {
+          "name": "will",
+          "start": "22:00",
+          "end": "00:00",
+          "status": "exact",
+          "sourceLabel": "REACTOR running-order screenshot",
+          "source": "assets/posters/health-maxxing-reactor-2026-06-19-running-order.jpg"
+        },
+        {
+          "name": "Body Training Session",
+          "start": "23:00",
+          "end": "23:30",
+          "status": "exact",
+          "sourceLabel": "REACTOR running-order screenshot",
+          "source": "assets/posters/health-maxxing-reactor-2026-06-19-running-order.jpg"
+        },
+        {
+          "name": "BIG WESTI",
+          "start": "00:00",
+          "end": "00:15",
+          "status": "exact",
+          "sourceLabel": "REACTOR running-order screenshot",
+          "source": "assets/posters/health-maxxing-reactor-2026-06-19-running-order.jpg"
+        },
+        {
+          "name": "anal",
+          "start": "00:15",
+          "end": "01:45",
+          "status": "exact",
+          "sourceLabel": "REACTOR running-order screenshot",
+          "source": "assets/posters/health-maxxing-reactor-2026-06-19-running-order.jpg"
+        },
+        {
+          "name": "Body Training Session",
+          "start": "01:45",
+          "end": "02:15",
+          "status": "exact",
+          "sourceLabel": "REACTOR running-order screenshot",
+          "source": "assets/posters/health-maxxing-reactor-2026-06-19-running-order.jpg"
+        },
+        {
+          "name": "ruima",
+          "start": "02:15",
+          "end": "04:00",
+          "status": "exact",
+          "sourceLabel": "REACTOR running-order screenshot",
+          "source": "assets/posters/health-maxxing-reactor-2026-06-19-running-order.jpg"
+        }
+      ],
+      "sources": [
+        {
+          "label": "HEALTH MAXXING clean poster screenshot",
+          "url": "assets/posters/health-maxxing-reactor-2026-06-19-poster.jpg",
+          "status": "official-poster-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided clean poster confirms title, idk pres., Reactor branding, visible lineup names, and venue address text."
+        },
+        {
+          "label": "HEALTH MAXXING Yuyuan ticket-home screenshot",
+          "url": "assets/posters/health-maxxing-reactor-2026-06-19-ticket-home.jpg",
+          "status": "ticketing-home-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided Yuyuan screenshot confirms 2026-06-19 22:00, Reactor, 78 RMB+ starting price, electronic ticket, standing-room, and non-refundable flags."
+        },
+        {
+          "label": "HEALTH MAXXING Reactor running-order screenshot",
+          "url": "assets/posters/health-maxxing-reactor-2026-06-19-running-order.jpg",
+          "status": "official-social-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided Reactor post screenshot confirms set times and the before-midnight free-entry body-test note."
+        }
+      ],
+      "soundTags": [
+        "club",
+        "hard-dance",
+        "experimental",
+        "performance"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "late room",
+        "ticket path",
+        "running order visible",
+        "poster confirmed"
+      ],
+      "decisionProfile": {
+        "intensity": "high",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": [
+          "age policy not visible",
+          "free-entry rule needs same-day check"
+        ]
+      },
+      "recommendationReason": "Recommended for readers who want Reactor at its stranger, performance-led club edge: the posted running order makes this more than a simple DJ bill, with will, anal, ruima, and Body Training Session blocks giving the night a clear concept-room shape.",
+      "bestFor": "Best for dancers who like Reactor's experimental club programming, body-performance concepts, and a late DOME room that is adjacent to techno without being a straight hard-techno booking.",
+      "verifyBeforeGoing": "Check Yuyuan or Reactor before going for live ticket inventory, age policy, and the exact free-entry-before-midnight body-test rule.",
+      "sourceConfidence": "High-confidence user-screenshot event: the poster, Yuyuan ticket-home card, and Reactor running-order screenshot jointly confirm date, start time, venue, lineup, set times, price floor, and ticket state. No public shareable ticket URL or age policy was visible."
+    },
+    {
+      "id": "le-youth-cloudsu-2026-06-27",
+      "month": "Jun",
+      "sortDate": "2026-06-27",
+      "date": "Jun 27",
+      "time": "16:30-02:00",
+      "title": "Le Youth 2026 China Tour Shanghai",
+      "venue": "CLOUD.SU Lounge Rooftop",
+      "district": "Huangpu",
+      "vibe": [
+        "house",
+        "open-air",
+        "date"
+      ],
+      "genre": "melodic house, nu disco, rooftop electronic",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "228 RMB+",
+      "age": "Check venue",
+      "source": "assets/posters/le-youth-cloudsu-2026-06-27-poster.jpg",
+      "sourceLabel": "Yuyuan ticketing screenshot + event poster",
+      "imageTheme": "cyan",
+      "description": "Asylum presents Le Youth's Shanghai China Tour stop on the CLOUD.SU Lounge Rooftop, with Baby Yung, Gabrielle, PAS, and Yu-Ya supporting a long afternoon-to-late melodic-house bill.",
+      "kind": "event",
+      "sourceStatus": "trusted-yuyuan-and-poster-screenshot",
+      "address": "4F, Fosun Art Center, 600 Zhongshan Dong Er Road, Huangpu District, Shanghai",
+      "organizer": "Asylum / CLOUD.SU / PAS",
+      "lastChecked": "2026-06-16",
+      "posterUrl": "assets/posters/le-youth-cloudsu-2026-06-27-poster.jpg",
+      "posterEvidence": {
+        "type": "official-poster-and-ticketing-screenshots",
+        "source": "User-provided event poster and Yuyuan ticketing screenshot",
+        "url": "assets/posters/le-youth-cloudsu-2026-06-27-poster.jpg",
+        "status": "Clean poster confirms Asylum Presents, Le Youth, China Tour, Jun 27 2026, 16:30-02:00, CLOUD.SU Lounge Rooftop Shanghai, support names, and Fosun Art Center address. Yuyuan ticket-home screenshot confirms 2026-06-27 16:30, 228 RMB+ starting price, e-ticket, standing-room, no-refund flags, and sold-out state at screenshot time.",
+        "localFiles": [
+          "assets/posters/le-youth-cloudsu-2026-06-27-poster.jpg",
+          "assets/posters/le-youth-cloudsu-2026-06-27-ticket-home.jpg"
+        ]
+      },
+      "ticketStatus": "Yuyuan ticket-home screenshot confirms 228 RMB+ starting price, electronic ticket, standing-room flag, non-refundable flag, and a sold-out button state at screenshot time. Direct mini-program URL and age policy were not visible.",
+      "lineup": [
+        {
+          "name": "Le Youth",
+          "note": "Poster and Yuyuan ticket-home screenshot identify Le Youth as the China Tour headliner."
+        },
+        {
+          "name": "Baby Yung",
+          "note": "Poster lists Baby Yung as support."
+        },
+        {
+          "name": "Gabrielle",
+          "note": "Poster lists Gabrielle as support."
+        },
+        {
+          "name": "PAS",
+          "note": "Poster lists PAS as support and Party Animal Society appears as a presenting mark."
+        },
+        {
+          "name": "Yu-Ya",
+          "aliases": [
+            "YU-YA"
+          ],
+          "note": "Poster lists Yu-Ya as support."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Le Youth Shanghai clean poster screenshot",
+          "url": "assets/posters/le-youth-cloudsu-2026-06-27-poster.jpg",
+          "status": "official-poster-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided poster confirms title, date, time window, venue, address, support names, and presenting marks."
+        },
+        {
+          "label": "Le Youth Shanghai Yuyuan ticket-home screenshot",
+          "url": "assets/posters/le-youth-cloudsu-2026-06-27-ticket-home.jpg",
+          "status": "ticketing-home-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided Yuyuan screenshot confirms date/time, address text, 228 RMB+ starting price, e-ticket, standing-room, no-refund labels, and sold-out state."
+        }
+      ],
+      "soundTags": [
+        "melodic-house",
+        "nu-disco",
+        "rooftop",
+        "house"
+      ],
+      "decisionTags": [
+        "house fit",
+        "rooftop route",
+        "ticket path",
+        "poster confirmed",
+        "sold out"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": [
+          "sold out at screenshot time",
+          "age policy not visible",
+          "not techno-first"
+        ]
+      },
+      "recommendationReason": "Included as a rooftop house route rather than a techno-first pick: Le Youth brings a melodic-house / nu-disco lane that suits an open-air social session, and the long 16:30-02:00 window makes it useful for readers choosing a softer electronic plan before or instead of basement pressure.",
+      "bestFor": "Best for melodic-house listeners, date-friendly rooftop plans, and readers who want polished electronic music without hard-rave intensity.",
+      "verifyBeforeGoing": "Check Yuyuan or the organizer before going for any returned tickets, age policy, door rules, and weather/rooftop updates; the ticket screenshot showed sold out.",
+      "sourceConfidence": "High-confidence user-screenshot event: clean poster and Yuyuan ticket-home screenshot jointly confirm event identity, date, time, venue/address, support lineup, price floor, ticket labels, and sold-out state. No public shareable ticket URL or age policy was visible."
     }
   ]
 }

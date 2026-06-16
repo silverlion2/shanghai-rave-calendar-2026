@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T01:42:58.251Z",
+  "generatedAt": "2026-06-16T02:13:11.664Z",
   "verified": "2026-06-16",
   "timezone": "Asia/Shanghai",
   "sourcePriority": [
@@ -591,6 +591,32 @@
       "trigger": "Scrape Wigwam's known promotion network before generic keyword discovery; use platform-native-search and stop on platform warnings."
     },
     {
+      "label": "Network: Asylum / Yuyuan WeChat mini-program / mini-program-promoter-search",
+      "url": "weixin://search?query=Asylum%20Le%20Youth",
+      "kind": "promotion-platform-network",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-16",
+      "ok": null,
+      "status": "computer-use",
+      "priority": 1,
+      "cadence": "Every scrape cycle; repeat before weekend publication",
+      "trigger": "Scrape Asylum's known promotion network before generic keyword discovery; use mini-program-promoter-search and stop on platform warnings."
+    },
+    {
+      "label": "Network: CLOUD.SU Lounge Rooftop / Yuyuan WeChat mini-program / mini-program-venue-search",
+      "url": "weixin://search?query=CLOUD.SU",
+      "kind": "promotion-platform-network",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-16",
+      "ok": null,
+      "status": "computer-use",
+      "priority": 1,
+      "cadence": "Every scrape cycle; repeat before weekend publication",
+      "trigger": "Scrape CLOUD.SU Lounge Rooftop's known promotion network before generic keyword discovery; use mini-program-venue-search and stop on platform warnings."
+    },
+    {
       "label": "Network: Dirty House / Yuyuan WeChat mini-program / mini-program-venue-search",
       "url": "weixin://search?query=Dirty%20House",
       "kind": "promotion-platform-network",
@@ -615,6 +641,19 @@
       "priority": 1,
       "cadence": "Every scrape cycle; repeat before weekend publication",
       "trigger": "Scrape HouseHeadz Records's known promotion network before generic keyword discovery; use mini-program-event-search and stop on platform warnings."
+    },
+    {
+      "label": "Network: idk / Yuyuan WeChat mini-program / mini-program-promoter-search",
+      "url": "weixin://search?query=idk%20HEALTH%20MAXXING",
+      "kind": "promotion-platform-network",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-16",
+      "ok": null,
+      "status": "computer-use",
+      "priority": 1,
+      "cadence": "Every scrape cycle; repeat before weekend publication",
+      "trigger": "Scrape idk's known promotion network before generic keyword discovery; use mini-program-promoter-search and stop on platform warnings."
     },
     {
       "label": "Network: POTENT / Yuyuan WeChat mini-program / mini-program-venue-search",
@@ -747,6 +786,19 @@
       "trigger": "Scrape Yuyintang Music Park's known promotion network before generic keyword discovery; use platform-native-search and stop on platform warnings."
     },
     {
+      "label": "Network: CLOUD.SU Lounge Rooftop / WeChat / official-account-search",
+      "url": "weixin://search?query=CLOUD.SU%20Le%20Youth%20%E4%B8%8A%E6%B5%B7",
+      "kind": "promotion-platform-network",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-16",
+      "ok": null,
+      "status": "computer-use",
+      "priority": 2,
+      "cadence": "Every 2-3 days or when a matching future event has gaps",
+      "trigger": "Scrape CLOUD.SU Lounge Rooftop's known promotion network before generic keyword discovery; use official-account-search and stop on platform warnings."
+    },
+    {
       "label": "Network: Dirty House / WeChat / official-account-search",
       "url": "weixin://search?query=Dirty%20House%20Shanghai",
       "kind": "promotion-platform-network",
@@ -797,6 +849,19 @@
       "priority": 2,
       "cadence": "Every 2-3 days or when a matching future event has gaps",
       "trigger": "Scrape HouseHeadz Records's known promotion network before generic keyword discovery; use official-account-search and stop on platform warnings."
+    },
+    {
+      "label": "Network: idk / WeChat / official-account-search",
+      "url": "weixin://search?query=idk%20HEALTH%20MAXXING%20Reactor",
+      "kind": "promotion-platform-network",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-16",
+      "ok": null,
+      "status": "computer-use",
+      "priority": 2,
+      "cadence": "Every 2-3 days or when a matching future event has gaps",
+      "trigger": "Scrape idk's known promotion network before generic keyword discovery; use official-account-search and stop on platform warnings."
     },
     {
       "label": "Network: LIQUID DOLLS / WeChat / official-account-search",
@@ -890,6 +955,32 @@
       "trigger": "Scrape YOUSHAN's known promotion network before generic keyword discovery; use official-account-search and stop on platform warnings."
     },
     {
+      "label": "Network: Asylum / Xiaohongshu / XHS / platform-native-search",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=Asylum%20Le%20Youth%20%E4%B8%8A%E6%B5%B7&source=web_explore_feed",
+      "kind": "promotion-platform-network",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-16",
+      "ok": null,
+      "status": "computer-use",
+      "priority": 2,
+      "cadence": "Every 2-3 days or when a matching future event has gaps",
+      "trigger": "Scrape Asylum's known promotion network before generic keyword discovery; use platform-native-search and stop on platform warnings."
+    },
+    {
+      "label": "Network: CLOUD.SU Lounge Rooftop / Xiaohongshu / XHS / platform-native-search",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=CLOUD.SU%20Le%20Youth%20%E4%B8%8A%E6%B5%B7&source=web_explore_feed",
+      "kind": "promotion-platform-network",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-16",
+      "ok": null,
+      "status": "computer-use",
+      "priority": 2,
+      "cadence": "Every 2-3 days or when a matching future event has gaps",
+      "trigger": "Scrape CLOUD.SU Lounge Rooftop's known promotion network before generic keyword discovery; use platform-native-search and stop on platform warnings."
+    },
+    {
       "label": "Network: Dirty House / Xiaohongshu / XHS / platform-native-search",
       "url": "https://www.xiaohongshu.com/search_result?keyword=Dirty%20House%20Shanghai%20techno&source=web_explore_feed",
       "kind": "promotion-platform-network",
@@ -940,6 +1031,19 @@
       "priority": 2,
       "cadence": "Every 2-3 days or when a matching future event has gaps",
       "trigger": "Scrape HouseHeadz Records's known promotion network before generic keyword discovery; use platform-native-search and stop on platform warnings."
+    },
+    {
+      "label": "Network: idk / Xiaohongshu / XHS / platform-native-search",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=HEALTH%20MAXXING%20Reactor&source=web_explore_feed",
+      "kind": "promotion-platform-network",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-16",
+      "ok": null,
+      "status": "computer-use",
+      "priority": 2,
+      "cadence": "Every 2-3 days or when a matching future event has gaps",
+      "trigger": "Scrape idk's known promotion network before generic keyword discovery; use platform-native-search and stop on platform warnings."
     },
     {
       "label": "Network: LIQUID DOLLS / Xiaohongshu / XHS / platform-native-search",
@@ -7027,6 +7131,173 @@
       }
     },
     {
+      "id": "health-maxxing-reactor-2026-06-19",
+      "month": "Jun",
+      "sortDate": "2026-06-19",
+      "date": "Jun 19",
+      "time": "22:00-04:00",
+      "title": "DOME | idk Pres. HEALTH MAXXING",
+      "venue": "Reactor Shanghai",
+      "district": "Changning",
+      "vibe": [
+        "club",
+        "experimental",
+        "underground"
+      ],
+      "genre": "club, hard dance, performance-led electronic",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "78 RMB+",
+      "age": "Check venue",
+      "source": "assets/posters/health-maxxing-reactor-2026-06-19-poster.jpg",
+      "sourceLabel": "REACTOR / Yuyuan screenshots",
+      "imageTheme": "acid",
+      "description": "idk presents HEALTH MAXXING in Reactor's DOME room: a performance-led club night with will, BIG WESTI, anal, and ruima, plus two Body Training Session interludes on the posted running order.",
+      "kind": "event",
+      "sourceStatus": "trusted-yuyuan-and-official-screenshot",
+      "address": "Building D, C.PARK Haisu, Zhongdeqiao Road, Changning District, Shanghai",
+      "organizer": "idk / REACTOR Shanghai",
+      "lastChecked": "2026-06-16",
+      "posterUrl": "assets/posters/health-maxxing-reactor-2026-06-19-poster.jpg",
+      "posterEvidence": {
+        "type": "official-poster-ticketing-and-running-order-screenshots",
+        "source": "User-provided REACTOR official-account/poster and Yuyuan ticketing screenshots",
+        "url": "assets/posters/health-maxxing-reactor-2026-06-19-poster.jpg",
+        "status": "Clean poster names HEALTH MAXXING, idk pres., DOME, Reactor, visible lineup names, and Reactor address text. Yuyuan ticket-home screenshot confirms 2026-06-19 22:00, Reactor, 78 RMB+ starting price, electronic ticket, standing-room, and non-refundable flags. Reactor post screenshot confirms the running order and free-entry-before-midnight body-test note.",
+        "localFiles": [
+          "assets/posters/health-maxxing-reactor-2026-06-19-poster.jpg",
+          "assets/posters/health-maxxing-reactor-2026-06-19-ticket-home.jpg",
+          "assets/posters/health-maxxing-reactor-2026-06-19-running-order.jpg"
+        ]
+      },
+      "ticketStatus": "Yuyuan ticket-home screenshot confirms 78 RMB+ starting price, electronic ticket, standing-room flag, and non-refundable flag. Reactor post screenshot says entry can be free before midnight after passing the body-test check; verify the rule, quota, and door policy before planning around free entry. Direct mini-program URL and age policy were not visible.",
+      "lineup": [
+        {
+          "name": "will",
+          "aliases": [
+            "djwill"
+          ],
+          "note": "Yuyuan and Reactor screenshots list will / djwill; running order places will from 22:00 to 00:00."
+        },
+        {
+          "name": "BIG WESTI",
+          "note": "Poster and running-order screenshot list BIG WESTI; running order places the short slot from 00:00 to 00:15."
+        },
+        {
+          "name": "anal",
+          "note": "Poster and running-order screenshot list anal from 00:15 to 01:45."
+        },
+        {
+          "name": "ruima",
+          "note": "Poster and running-order screenshot list ruima from 02:15 to 04:00."
+        },
+        {
+          "name": "Body Training Session",
+          "role": "performance",
+          "note": "Running-order screenshot lists Body Training Session interludes at 23:00-23:30 and 01:45-02:15."
+        }
+      ],
+      "setTimes": [
+        {
+          "name": "will",
+          "start": "22:00",
+          "end": "00:00",
+          "status": "exact",
+          "sourceLabel": "REACTOR running-order screenshot",
+          "source": "assets/posters/health-maxxing-reactor-2026-06-19-running-order.jpg"
+        },
+        {
+          "name": "Body Training Session",
+          "start": "23:00",
+          "end": "23:30",
+          "status": "exact",
+          "sourceLabel": "REACTOR running-order screenshot",
+          "source": "assets/posters/health-maxxing-reactor-2026-06-19-running-order.jpg"
+        },
+        {
+          "name": "BIG WESTI",
+          "start": "00:00",
+          "end": "00:15",
+          "status": "exact",
+          "sourceLabel": "REACTOR running-order screenshot",
+          "source": "assets/posters/health-maxxing-reactor-2026-06-19-running-order.jpg"
+        },
+        {
+          "name": "anal",
+          "start": "00:15",
+          "end": "01:45",
+          "status": "exact",
+          "sourceLabel": "REACTOR running-order screenshot",
+          "source": "assets/posters/health-maxxing-reactor-2026-06-19-running-order.jpg"
+        },
+        {
+          "name": "Body Training Session",
+          "start": "01:45",
+          "end": "02:15",
+          "status": "exact",
+          "sourceLabel": "REACTOR running-order screenshot",
+          "source": "assets/posters/health-maxxing-reactor-2026-06-19-running-order.jpg"
+        },
+        {
+          "name": "ruima",
+          "start": "02:15",
+          "end": "04:00",
+          "status": "exact",
+          "sourceLabel": "REACTOR running-order screenshot",
+          "source": "assets/posters/health-maxxing-reactor-2026-06-19-running-order.jpg"
+        }
+      ],
+      "sources": [
+        {
+          "label": "HEALTH MAXXING clean poster screenshot",
+          "url": "assets/posters/health-maxxing-reactor-2026-06-19-poster.jpg",
+          "status": "official-poster-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided clean poster confirms title, idk pres., Reactor branding, visible lineup names, and venue address text."
+        },
+        {
+          "label": "HEALTH MAXXING Yuyuan ticket-home screenshot",
+          "url": "assets/posters/health-maxxing-reactor-2026-06-19-ticket-home.jpg",
+          "status": "ticketing-home-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided Yuyuan screenshot confirms 2026-06-19 22:00, Reactor, 78 RMB+ starting price, electronic ticket, standing-room, and non-refundable flags."
+        },
+        {
+          "label": "HEALTH MAXXING Reactor running-order screenshot",
+          "url": "assets/posters/health-maxxing-reactor-2026-06-19-running-order.jpg",
+          "status": "official-social-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided Reactor post screenshot confirms set times and the before-midnight free-entry body-test note."
+        }
+      ],
+      "soundTags": [
+        "industrial",
+        "live-av"
+      ],
+      "decisionTags": [
+        "strong techno fit",
+        "high intensity",
+        "listening/live angle",
+        "late room",
+        "ticket path",
+        "trusted source",
+        "lineup visible"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "strong",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": []
+      },
+      "recommendationReason": "Recommended for readers who want Reactor at its stranger, performance-led club edge: the posted running order makes this more than a simple DJ bill, with will, anal, ruima, and Body Training Session blocks giving the night a clear concept-room shape.",
+      "bestFor": "Best for dancers who like Reactor's experimental club programming, body-performance concepts, and a late DOME room that is adjacent to techno without being a straight hard-techno booking.",
+      "verifyBeforeGoing": "Check Yuyuan or Reactor before going for live ticket inventory, age policy, and the exact free-entry-before-midnight body-test rule.",
+      "sourceConfidence": "High-confidence user-screenshot event: the poster, Yuyuan ticket-home card, and Reactor running-order screenshot jointly confirm date, start time, venue, lineup, set times, price floor, and ticket state. No public shareable ticket URL or age policy was visible."
+    },
+    {
       "id": "heim-earworthy-selected-sound",
       "month": "Jun",
       "sortDate": "2026-06-19",
@@ -10405,6 +10676,113 @@
       "address": "LG-16, B1/F, C PARK, 658 Zhaohua Lu, near Zhongdeqiao Lu, Changning District"
     },
     {
+      "id": "le-youth-cloudsu-2026-06-27",
+      "month": "Jun",
+      "sortDate": "2026-06-27",
+      "date": "Jun 27",
+      "time": "16:30-02:00",
+      "title": "Le Youth 2026 China Tour Shanghai",
+      "venue": "CLOUD.SU Lounge Rooftop",
+      "district": "Huangpu",
+      "vibe": [
+        "house",
+        "open-air",
+        "date"
+      ],
+      "genre": "melodic house, nu disco, rooftop electronic",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "228 RMB+",
+      "age": "Check venue",
+      "source": "assets/posters/le-youth-cloudsu-2026-06-27-poster.jpg",
+      "sourceLabel": "Yuyuan ticketing screenshot + event poster",
+      "imageTheme": "cyan",
+      "description": "Asylum presents Le Youth's Shanghai China Tour stop on the CLOUD.SU Lounge Rooftop, with Baby Yung, Gabrielle, PAS, and Yu-Ya supporting a long afternoon-to-late melodic-house bill.",
+      "kind": "event",
+      "sourceStatus": "trusted-yuyuan-and-poster-screenshot",
+      "address": "4F, Fosun Art Center, 600 Zhongshan Dong Er Road, Huangpu District, Shanghai",
+      "organizer": "Asylum / CLOUD.SU / PAS",
+      "lastChecked": "2026-06-16",
+      "posterUrl": "assets/posters/le-youth-cloudsu-2026-06-27-poster.jpg",
+      "posterEvidence": {
+        "type": "official-poster-and-ticketing-screenshots",
+        "source": "User-provided event poster and Yuyuan ticketing screenshot",
+        "url": "assets/posters/le-youth-cloudsu-2026-06-27-poster.jpg",
+        "status": "Clean poster confirms Asylum Presents, Le Youth, China Tour, Jun 27 2026, 16:30-02:00, CLOUD.SU Lounge Rooftop Shanghai, support names, and Fosun Art Center address. Yuyuan ticket-home screenshot confirms 2026-06-27 16:30, 228 RMB+ starting price, e-ticket, standing-room, no-refund flags, and sold-out state at screenshot time.",
+        "localFiles": [
+          "assets/posters/le-youth-cloudsu-2026-06-27-poster.jpg",
+          "assets/posters/le-youth-cloudsu-2026-06-27-ticket-home.jpg"
+        ]
+      },
+      "ticketStatus": "Yuyuan ticket-home screenshot confirms 228 RMB+ starting price, electronic ticket, standing-room flag, non-refundable flag, and a sold-out button state at screenshot time. Direct mini-program URL and age policy were not visible.",
+      "lineup": [
+        {
+          "name": "Le Youth",
+          "note": "Poster and Yuyuan ticket-home screenshot identify Le Youth as the China Tour headliner."
+        },
+        {
+          "name": "Baby Yung",
+          "note": "Poster lists Baby Yung as support."
+        },
+        {
+          "name": "Gabrielle",
+          "note": "Poster lists Gabrielle as support."
+        },
+        {
+          "name": "PAS",
+          "note": "Poster lists PAS as support and Party Animal Society appears as a presenting mark."
+        },
+        {
+          "name": "Yu-Ya",
+          "aliases": [
+            "YU-YA"
+          ],
+          "note": "Poster lists Yu-Ya as support."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Le Youth Shanghai clean poster screenshot",
+          "url": "assets/posters/le-youth-cloudsu-2026-06-27-poster.jpg",
+          "status": "official-poster-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided poster confirms title, date, time window, venue, address, support names, and presenting marks."
+        },
+        {
+          "label": "Le Youth Shanghai Yuyuan ticket-home screenshot",
+          "url": "assets/posters/le-youth-cloudsu-2026-06-27-ticket-home.jpg",
+          "status": "ticketing-home-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "User-provided Yuyuan screenshot confirms date/time, address text, 228 RMB+ starting price, e-ticket, standing-room, no-refund labels, and sold-out state."
+        }
+      ],
+      "soundTags": [
+        "melodic",
+        "rooftop"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "date route",
+        "late room",
+        "ticket path",
+        "trusted source",
+        "lineup visible"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "solid",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": []
+      },
+      "recommendationReason": "Included as a rooftop house route rather than a techno-first pick: Le Youth brings a melodic-house / nu-disco lane that suits an open-air social session, and the long 16:30-02:00 window makes it useful for readers choosing a softer electronic plan before or instead of basement pressure.",
+      "bestFor": "Best for melodic-house listeners, date-friendly rooftop plans, and readers who want polished electronic music without hard-rave intensity.",
+      "verifyBeforeGoing": "Check Yuyuan or the organizer before going for any returned tickets, age policy, door rules, and weather/rooftop updates; the ticket screenshot showed sold out.",
+      "sourceConfidence": "High-confidence user-screenshot event: clean poster and Yuyuan ticket-home screenshot jointly confirm event identity, date, time, venue/address, support lineup, price floor, ticket labels, and sold-out state. No public shareable ticket URL or age policy was visible."
+    },
+    {
       "id": "nova-summer-splash-pool-party",
       "month": "Jun",
       "sortDate": "2026-06-27",
@@ -11310,8 +11688,8 @@
   "promotionPlatformNetwork": {
     "source": "config/promotion-platform-network.json",
     "updatedAt": "2026-06-16",
-    "entityCount": 20,
-    "routeCount": 69,
+    "entityCount": 23,
+    "routeCount": 77,
     "globalRouteCount": 1,
     "scrapeOrder": [
       "Resident Advisor Shanghai city/date listings and event pages when reachable or browser-visible",
@@ -13191,6 +13569,155 @@
       ]
     },
     {
+      "label": "Network: Asylum / Yuyuan WeChat mini-program / mini-program-promoter-search",
+      "platform": "Yuyuan WeChat mini-program",
+      "url": "weixin://search?query=Asylum%20Le%20Youth",
+      "priority": 1,
+      "sourceNetworkPriority": 2,
+      "cadence": "Every scrape cycle; repeat before weekend publication",
+      "trigger": "Scrape Asylum's known promotion network before generic keyword discovery; use mini-program-promoter-search and stop on platform warnings.",
+      "collectionGoal": "Confirm Asylum ticketing-discovery-and-core-field-verification: event date, venue, lineup, ticket route, poster, and last-minute updates when visible.",
+      "queries": [
+        "Asylum Le Youth",
+        "Le Youth",
+        "Asylum Shanghai",
+        "Asylum",
+        "ASYLUM"
+      ],
+      "evidence": [
+        "ticket route or mini-program name",
+        "price tiers",
+        "sale status",
+        "venue/date/time",
+        "refund or purchase notes"
+      ],
+      "kind": "promotion-platform-network",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-16",
+      "parsed": false,
+      "entityId": "asylum",
+      "entityType": "promoter",
+      "entityName": "Asylum",
+      "route": "mini-program-promoter-search",
+      "trustRole": "ticketing-discovery-and-core-field-verification",
+      "scrapePolicy": "mini-program-search-first",
+      "routeAccess": "login-assisted-available",
+      "notes": "User-supplied Le Youth poster identifies ASYLUM Presents as the Shanghai China Tour promoter context.",
+      "confirmationRule": "Treat this route as a venue/promoter network task. It confirms an event only when visible current-event facts are captured from RA, official venue/promoter, ticketing, or other shareable evidence.",
+      "collectionChecklist": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ],
+      "deepCollectionRules": [
+        "Open and inspect second-layer links instead of stopping at a listing card or search result.",
+        "If key details are inside images, posters, stories, or screenshots, capture the image reference, OCR/transcribe the relevant text, and download the poster into assets/posters instead of relying on remote image URLs.",
+        "For every lineup artist, open official or high-signal profile links when available and collect a short sourced artist intro.",
+        "For touring artists, look for future city/date announcements beyond Shanghai and record source links or screenshot references.",
+        "For ticketing, inspect the final ticket page or mini-program reference, not only the promoter CTA.",
+        "Keep app-only, group-only, or screenshot-only claims at watch level until corroborated by official, ticketing, venue/promoter, RA, SmartShanghai, artist, or label evidence."
+      ],
+      "requiredFields": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ]
+    },
+    {
+      "label": "Network: CLOUD.SU Lounge Rooftop / Yuyuan WeChat mini-program / mini-program-venue-search",
+      "platform": "Yuyuan WeChat mini-program",
+      "url": "weixin://search?query=CLOUD.SU",
+      "priority": 1,
+      "sourceNetworkPriority": 2,
+      "cadence": "Every scrape cycle; repeat before weekend publication",
+      "trigger": "Scrape CLOUD.SU Lounge Rooftop's known promotion network before generic keyword discovery; use mini-program-venue-search and stop on platform warnings.",
+      "collectionGoal": "Confirm CLOUD.SU Lounge Rooftop ticketing-and-poster-source: event date, venue, lineup, ticket route, poster, and last-minute updates when visible.",
+      "queries": [
+        "CLOUD.SU",
+        "Le Youth",
+        "Cloud Su",
+        "Fosun Art Center rooftop",
+        "CLOUD.SU Lounge Rooftop Shanghai",
+        "Cloud by Lounge Group"
+      ],
+      "evidence": [
+        "ticket route or mini-program name",
+        "price tiers",
+        "sale status",
+        "venue/date/time",
+        "refund or purchase notes"
+      ],
+      "kind": "promotion-platform-network",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-16",
+      "parsed": false,
+      "entityId": "cloudsu-lounge-rooftop",
+      "entityType": "venue",
+      "entityName": "CLOUD.SU Lounge Rooftop",
+      "route": "mini-program-venue-search",
+      "trustRole": "ticketing-and-poster-source",
+      "scrapePolicy": "mini-program-search-first",
+      "routeAccess": "login-assisted-available",
+      "notes": "Use Yuyuan first for CLOUD.SU events because the Le Youth ticket-home screenshot exposed date, time, venue/address, price, ticket labels, and sold-out state.",
+      "confirmationRule": "Treat this route as a venue/promoter network task. It confirms an event only when visible current-event facts are captured from RA, official venue/promoter, ticketing, or other shareable evidence.",
+      "collectionChecklist": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ],
+      "deepCollectionRules": [
+        "Open and inspect second-layer links instead of stopping at a listing card or search result.",
+        "If key details are inside images, posters, stories, or screenshots, capture the image reference, OCR/transcribe the relevant text, and download the poster into assets/posters instead of relying on remote image URLs.",
+        "For every lineup artist, open official or high-signal profile links when available and collect a short sourced artist intro.",
+        "For touring artists, look for future city/date announcements beyond Shanghai and record source links or screenshot references.",
+        "For ticketing, inspect the final ticket page or mini-program reference, not only the promoter CTA.",
+        "Keep app-only, group-only, or screenshot-only claims at watch level until corroborated by official, ticketing, venue/promoter, RA, SmartShanghai, artist, or label evidence."
+      ],
+      "requiredFields": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ]
+    },
+    {
       "label": "Network: Dirty House / Yuyuan WeChat mini-program / mini-program-venue-search",
       "platform": "Yuyuan WeChat mini-program",
       "url": "weixin://search?query=Dirty%20House",
@@ -13335,6 +13862,82 @@
       ]
     },
     {
+      "label": "Network: idk / Yuyuan WeChat mini-program / mini-program-promoter-search",
+      "platform": "Yuyuan WeChat mini-program",
+      "url": "weixin://search?query=idk%20HEALTH%20MAXXING",
+      "priority": 1,
+      "sourceNetworkPriority": 2,
+      "cadence": "Every scrape cycle; repeat before weekend publication",
+      "trigger": "Scrape idk's known promotion network before generic keyword discovery; use mini-program-promoter-search and stop on platform warnings.",
+      "collectionGoal": "Confirm idk ticketing-and-running-order-source: event date, venue, lineup, ticket route, poster, and last-minute updates when visible.",
+      "queries": [
+        "idk HEALTH MAXXING",
+        "HEALTH MAXXING",
+        "idk Reactor",
+        "DOME idk",
+        "idk Shanghai",
+        "idk",
+        "idk pres."
+      ],
+      "evidence": [
+        "ticket route or mini-program name",
+        "price tiers",
+        "sale status",
+        "venue/date/time",
+        "refund or purchase notes"
+      ],
+      "kind": "promotion-platform-network",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-16",
+      "parsed": false,
+      "entityId": "idk",
+      "entityType": "promoter",
+      "entityName": "idk",
+      "route": "mini-program-promoter-search",
+      "trustRole": "ticketing-and-running-order-source",
+      "scrapePolicy": "mini-program-search-first",
+      "routeAccess": "login-assisted-available",
+      "notes": "User-supplied HEALTH MAXXING poster and running-order screenshots identify idk as the presenting promoter at Reactor.",
+      "confirmationRule": "Treat this route as a venue/promoter network task. It confirms an event only when visible current-event facts are captured from RA, official venue/promoter, ticketing, or other shareable evidence.",
+      "collectionChecklist": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ],
+      "deepCollectionRules": [
+        "Open and inspect second-layer links instead of stopping at a listing card or search result.",
+        "If key details are inside images, posters, stories, or screenshots, capture the image reference, OCR/transcribe the relevant text, and download the poster into assets/posters instead of relying on remote image URLs.",
+        "For every lineup artist, open official or high-signal profile links when available and collect a short sourced artist intro.",
+        "For touring artists, look for future city/date announcements beyond Shanghai and record source links or screenshot references.",
+        "For ticketing, inspect the final ticket page or mini-program reference, not only the promoter CTA.",
+        "Keep app-only, group-only, or screenshot-only claims at watch level until corroborated by official, ticketing, venue/promoter, RA, SmartShanghai, artist, or label evidence."
+      ],
+      "requiredFields": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ]
+    },
+    {
       "label": "Network: POTENT / Yuyuan WeChat mini-program / mini-program-venue-search",
       "platform": "Yuyuan WeChat mini-program",
       "url": "weixin://search?query=POTENT",
@@ -13421,6 +14024,9 @@
         "Antigen",
         "KAVARI",
         "Reactor",
+        "HEALTH MAXXING",
+        "idk",
+        "DOME Reactor",
         "Reactor Shanghai Shanghai",
         "REACTOR Shanghai"
       ],
@@ -13443,7 +14049,7 @@
       "trustRole": "ticketing-discovery-and-core-field-verification",
       "scrapePolicy": "mini-program-search-first",
       "routeAccess": "login-assisted-available",
-      "notes": "Computer Use test found a Reactor/Antigen event detail in Yuyuan with price, time, venue, and running-order text.",
+      "notes": "Computer Use and user screenshot tests found Reactor/Antigen and HEALTH MAXXING event details in Yuyuan with price, time, venue, and running-order text.",
       "confirmationRule": "Treat this route as a venue/promoter network task. It confirms an event only when visible current-event facts are captured from RA, official venue/promoter, ticketing, or other shareable evidence.",
       "collectionChecklist": [
         "event title and series name",
@@ -14068,6 +14674,81 @@
       ]
     },
     {
+      "label": "Network: CLOUD.SU Lounge Rooftop / WeChat / official-account-search",
+      "platform": "WeChat",
+      "url": "weixin://search?query=CLOUD.SU%20Le%20Youth%20%E4%B8%8A%E6%B5%B7",
+      "priority": 2,
+      "sourceNetworkPriority": 2,
+      "cadence": "Every 2-3 days or when a matching future event has gaps",
+      "trigger": "Scrape CLOUD.SU Lounge Rooftop's known promotion network before generic keyword discovery; use official-account-search and stop on platform warnings.",
+      "collectionGoal": "Confirm CLOUD.SU Lounge Rooftop official-event-announcement: event date, venue, lineup, ticket route, poster, and last-minute updates when visible.",
+      "queries": [
+        "CLOUD.SU Le Youth 上海",
+        "CLOUD.SU Lounge Rooftop Shanghai",
+        "CLOUD.SU",
+        "Cloud Su",
+        "Cloud by Lounge Group"
+      ],
+      "evidence": [
+        "account name",
+        "post/article title",
+        "publish date",
+        "event title/date",
+        "venue",
+        "lineup or ticket facts"
+      ],
+      "kind": "promotion-platform-network",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-16",
+      "parsed": false,
+      "entityId": "cloudsu-lounge-rooftop",
+      "entityType": "venue",
+      "entityName": "CLOUD.SU Lounge Rooftop",
+      "route": "official-account-search",
+      "trustRole": "official-event-announcement",
+      "scrapePolicy": "platform-native-search-first",
+      "routeAccess": "browser-required",
+      "notes": "User-supplied Le Youth poster and Yuyuan ticket-home screenshots identify CLOUD.SU Lounge Rooftop as a ticketed electronic-event venue at Fosun Art Center.",
+      "confirmationRule": "Treat this route as a venue/promoter network task. It confirms an event only when visible current-event facts are captured from RA, official venue/promoter, ticketing, or other shareable evidence.",
+      "collectionChecklist": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ],
+      "deepCollectionRules": [
+        "Open and inspect second-layer links instead of stopping at a listing card or search result.",
+        "If key details are inside images, posters, stories, or screenshots, capture the image reference, OCR/transcribe the relevant text, and download the poster into assets/posters instead of relying on remote image URLs.",
+        "For every lineup artist, open official or high-signal profile links when available and collect a short sourced artist intro.",
+        "For touring artists, look for future city/date announcements beyond Shanghai and record source links or screenshot references.",
+        "For ticketing, inspect the final ticket page or mini-program reference, not only the promoter CTA.",
+        "Keep app-only, group-only, or screenshot-only claims at watch level until corroborated by official, ticketing, venue/promoter, RA, SmartShanghai, artist, or label evidence."
+      ],
+      "requiredFields": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ]
+    },
+    {
       "label": "Network: Dirty House / WeChat / official-account-search",
       "platform": "WeChat",
       "url": "weixin://search?query=Dirty%20House%20Shanghai",
@@ -14322,6 +15003,80 @@
       "scrapePolicy": "platform-native-search-first",
       "routeAccess": "browser-required",
       "notes": "User-supplied EXIT/Yuyuan evidence and RA indexed text identify HouseHeadz Records / Steal Tapes at EXIT.",
+      "confirmationRule": "Treat this route as a venue/promoter network task. It confirms an event only when visible current-event facts are captured from RA, official venue/promoter, ticketing, or other shareable evidence.",
+      "collectionChecklist": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ],
+      "deepCollectionRules": [
+        "Open and inspect second-layer links instead of stopping at a listing card or search result.",
+        "If key details are inside images, posters, stories, or screenshots, capture the image reference, OCR/transcribe the relevant text, and download the poster into assets/posters instead of relying on remote image URLs.",
+        "For every lineup artist, open official or high-signal profile links when available and collect a short sourced artist intro.",
+        "For touring artists, look for future city/date announcements beyond Shanghai and record source links or screenshot references.",
+        "For ticketing, inspect the final ticket page or mini-program reference, not only the promoter CTA.",
+        "Keep app-only, group-only, or screenshot-only claims at watch level until corroborated by official, ticketing, venue/promoter, RA, SmartShanghai, artist, or label evidence."
+      ],
+      "requiredFields": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ]
+    },
+    {
+      "label": "Network: idk / WeChat / official-account-search",
+      "platform": "WeChat",
+      "url": "weixin://search?query=idk%20HEALTH%20MAXXING%20Reactor",
+      "priority": 2,
+      "sourceNetworkPriority": 2,
+      "cadence": "Every 2-3 days or when a matching future event has gaps",
+      "trigger": "Scrape idk's known promotion network before generic keyword discovery; use official-account-search and stop on platform warnings.",
+      "collectionGoal": "Confirm idk official-event-announcement: event date, venue, lineup, ticket route, poster, and last-minute updates when visible.",
+      "queries": [
+        "idk HEALTH MAXXING Reactor",
+        "idk Shanghai",
+        "idk",
+        "idk pres."
+      ],
+      "evidence": [
+        "account name",
+        "post/article title",
+        "publish date",
+        "event title/date",
+        "venue",
+        "lineup or ticket facts"
+      ],
+      "kind": "promotion-platform-network",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-16",
+      "parsed": false,
+      "entityId": "idk",
+      "entityType": "promoter",
+      "entityName": "idk",
+      "route": "official-account-search",
+      "trustRole": "official-event-announcement",
+      "scrapePolicy": "platform-native-search-first",
+      "routeAccess": "browser-required",
+      "notes": "User-supplied HEALTH MAXXING poster and running-order screenshots identify idk as the presenting promoter at Reactor.",
       "confirmationRule": "Treat this route as a venue/promoter network task. It confirms an event only when visible current-event facts are captured from RA, official venue/promoter, ticketing, or other shareable evidence.",
       "collectionChecklist": [
         "event title and series name",
@@ -14876,6 +15631,155 @@
       ]
     },
     {
+      "label": "Network: Asylum / Xiaohongshu / XHS / platform-native-search",
+      "platform": "Xiaohongshu / XHS",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=Asylum%20Le%20Youth%20%E4%B8%8A%E6%B5%B7&source=web_explore_feed",
+      "priority": 2,
+      "sourceNetworkPriority": 2,
+      "cadence": "Every 2-3 days or when a matching future event has gaps",
+      "trigger": "Scrape Asylum's known promotion network before generic keyword discovery; use platform-native-search and stop on platform warnings.",
+      "collectionGoal": "Confirm Asylum poster-and-official-social: event date, venue, lineup, ticket route, poster, and last-minute updates when visible.",
+      "queries": [
+        "Asylum Le Youth 上海",
+        "Asylum Shanghai",
+        "Asylum",
+        "ASYLUM"
+      ],
+      "evidence": [
+        "visible official account/post",
+        "poster image",
+        "OCR text",
+        "event date",
+        "lineup",
+        "ticket channel"
+      ],
+      "kind": "promotion-platform-network",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-16",
+      "parsed": false,
+      "entityId": "asylum",
+      "entityType": "promoter",
+      "entityName": "Asylum",
+      "route": "platform-native-search",
+      "trustRole": "poster-and-official-social",
+      "scrapePolicy": "platform-native-search-first",
+      "routeAccess": "login-assisted-ask-user",
+      "notes": "User-supplied Le Youth poster identifies ASYLUM Presents as the Shanghai China Tour promoter context.",
+      "confirmationRule": "Treat this route as a venue/promoter network task. It confirms an event only when visible current-event facts are captured from RA, official venue/promoter, ticketing, or other shareable evidence.",
+      "collectionChecklist": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ],
+      "deepCollectionRules": [
+        "Open and inspect second-layer links instead of stopping at a listing card or search result.",
+        "If key details are inside images, posters, stories, or screenshots, capture the image reference, OCR/transcribe the relevant text, and download the poster into assets/posters instead of relying on remote image URLs.",
+        "For every lineup artist, open official or high-signal profile links when available and collect a short sourced artist intro.",
+        "For touring artists, look for future city/date announcements beyond Shanghai and record source links or screenshot references.",
+        "For ticketing, inspect the final ticket page or mini-program reference, not only the promoter CTA.",
+        "Keep app-only, group-only, or screenshot-only claims at watch level until corroborated by official, ticketing, venue/promoter, RA, SmartShanghai, artist, or label evidence."
+      ],
+      "requiredFields": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ]
+    },
+    {
+      "label": "Network: CLOUD.SU Lounge Rooftop / Xiaohongshu / XHS / platform-native-search",
+      "platform": "Xiaohongshu / XHS",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=CLOUD.SU%20Le%20Youth%20%E4%B8%8A%E6%B5%B7&source=web_explore_feed",
+      "priority": 2,
+      "sourceNetworkPriority": 2,
+      "cadence": "Every 2-3 days or when a matching future event has gaps",
+      "trigger": "Scrape CLOUD.SU Lounge Rooftop's known promotion network before generic keyword discovery; use platform-native-search and stop on platform warnings.",
+      "collectionGoal": "Confirm CLOUD.SU Lounge Rooftop poster-and-official-social: event date, venue, lineup, ticket route, poster, and last-minute updates when visible.",
+      "queries": [
+        "CLOUD.SU Le Youth 上海",
+        "CLOUD.SU Lounge Rooftop Shanghai",
+        "CLOUD.SU",
+        "Cloud Su",
+        "Cloud by Lounge Group"
+      ],
+      "evidence": [
+        "visible official account/post",
+        "poster image",
+        "OCR text",
+        "event date",
+        "lineup",
+        "ticket channel"
+      ],
+      "kind": "promotion-platform-network",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-16",
+      "parsed": false,
+      "entityId": "cloudsu-lounge-rooftop",
+      "entityType": "venue",
+      "entityName": "CLOUD.SU Lounge Rooftop",
+      "route": "platform-native-search",
+      "trustRole": "poster-and-official-social",
+      "scrapePolicy": "platform-native-search-first",
+      "routeAccess": "login-assisted-ask-user",
+      "notes": "User-supplied Le Youth poster and Yuyuan ticket-home screenshots identify CLOUD.SU Lounge Rooftop as a ticketed electronic-event venue at Fosun Art Center.",
+      "confirmationRule": "Treat this route as a venue/promoter network task. It confirms an event only when visible current-event facts are captured from RA, official venue/promoter, ticketing, or other shareable evidence.",
+      "collectionChecklist": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ],
+      "deepCollectionRules": [
+        "Open and inspect second-layer links instead of stopping at a listing card or search result.",
+        "If key details are inside images, posters, stories, or screenshots, capture the image reference, OCR/transcribe the relevant text, and download the poster into assets/posters instead of relying on remote image URLs.",
+        "For every lineup artist, open official or high-signal profile links when available and collect a short sourced artist intro.",
+        "For touring artists, look for future city/date announcements beyond Shanghai and record source links or screenshot references.",
+        "For ticketing, inspect the final ticket page or mini-program reference, not only the promoter CTA.",
+        "Keep app-only, group-only, or screenshot-only claims at watch level until corroborated by official, ticketing, venue/promoter, RA, SmartShanghai, artist, or label evidence."
+      ],
+      "requiredFields": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ]
+    },
+    {
       "label": "Network: Dirty House / Xiaohongshu / XHS / platform-native-search",
       "platform": "Xiaohongshu / XHS",
       "url": "https://www.xiaohongshu.com/search_result?keyword=Dirty%20House%20Shanghai%20techno&source=web_explore_feed",
@@ -15131,6 +16035,80 @@
       "scrapePolicy": "platform-native-search-first",
       "routeAccess": "login-assisted-ask-user",
       "notes": "User-supplied EXIT/Yuyuan evidence and RA indexed text identify HouseHeadz Records / Steal Tapes at EXIT.",
+      "confirmationRule": "Treat this route as a venue/promoter network task. It confirms an event only when visible current-event facts are captured from RA, official venue/promoter, ticketing, or other shareable evidence.",
+      "collectionChecklist": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ],
+      "deepCollectionRules": [
+        "Open and inspect second-layer links instead of stopping at a listing card or search result.",
+        "If key details are inside images, posters, stories, or screenshots, capture the image reference, OCR/transcribe the relevant text, and download the poster into assets/posters instead of relying on remote image URLs.",
+        "For every lineup artist, open official or high-signal profile links when available and collect a short sourced artist intro.",
+        "For touring artists, look for future city/date announcements beyond Shanghai and record source links or screenshot references.",
+        "For ticketing, inspect the final ticket page or mini-program reference, not only the promoter CTA.",
+        "Keep app-only, group-only, or screenshot-only claims at watch level until corroborated by official, ticketing, venue/promoter, RA, SmartShanghai, artist, or label evidence."
+      ],
+      "requiredFields": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ]
+    },
+    {
+      "label": "Network: idk / Xiaohongshu / XHS / platform-native-search",
+      "platform": "Xiaohongshu / XHS",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=HEALTH%20MAXXING%20Reactor&source=web_explore_feed",
+      "priority": 2,
+      "sourceNetworkPriority": 2,
+      "cadence": "Every 2-3 days or when a matching future event has gaps",
+      "trigger": "Scrape idk's known promotion network before generic keyword discovery; use platform-native-search and stop on platform warnings.",
+      "collectionGoal": "Confirm idk poster-and-official-social: event date, venue, lineup, ticket route, poster, and last-minute updates when visible.",
+      "queries": [
+        "HEALTH MAXXING Reactor",
+        "idk Shanghai",
+        "idk",
+        "idk pres."
+      ],
+      "evidence": [
+        "visible official account/post",
+        "poster image",
+        "OCR text",
+        "event date",
+        "lineup",
+        "ticket channel"
+      ],
+      "kind": "promotion-platform-network",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-16",
+      "parsed": false,
+      "entityId": "idk",
+      "entityType": "promoter",
+      "entityName": "idk",
+      "route": "platform-native-search",
+      "trustRole": "poster-and-official-social",
+      "scrapePolicy": "platform-native-search-first",
+      "routeAccess": "login-assisted-ask-user",
+      "notes": "User-supplied HEALTH MAXXING poster and running-order screenshots identify idk as the presenting promoter at Reactor.",
       "confirmationRule": "Treat this route as a venue/promoter network task. It confirms an event only when visible current-event facts are captured from RA, official venue/promoter, ticketing, or other shareable evidence.",
       "collectionChecklist": [
         "event title and series name",
@@ -18345,6 +19323,155 @@
       ]
     },
     {
+      "label": "Network: Asylum / Yuyuan WeChat mini-program / mini-program-promoter-search",
+      "platform": "Yuyuan WeChat mini-program",
+      "url": "weixin://search?query=Asylum%20Le%20Youth",
+      "priority": 1,
+      "sourceNetworkPriority": 2,
+      "cadence": "Every scrape cycle; repeat before weekend publication",
+      "trigger": "Scrape Asylum's known promotion network before generic keyword discovery; use mini-program-promoter-search and stop on platform warnings.",
+      "collectionGoal": "Confirm Asylum ticketing-discovery-and-core-field-verification: event date, venue, lineup, ticket route, poster, and last-minute updates when visible.",
+      "queries": [
+        "Asylum Le Youth",
+        "Le Youth",
+        "Asylum Shanghai",
+        "Asylum",
+        "ASYLUM"
+      ],
+      "evidence": [
+        "ticket route or mini-program name",
+        "price tiers",
+        "sale status",
+        "venue/date/time",
+        "refund or purchase notes"
+      ],
+      "kind": "promotion-platform-network",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-16",
+      "parsed": false,
+      "entityId": "asylum",
+      "entityType": "promoter",
+      "entityName": "Asylum",
+      "route": "mini-program-promoter-search",
+      "trustRole": "ticketing-discovery-and-core-field-verification",
+      "scrapePolicy": "mini-program-search-first",
+      "routeAccess": "login-assisted-available",
+      "notes": "User-supplied Le Youth poster identifies ASYLUM Presents as the Shanghai China Tour promoter context.",
+      "confirmationRule": "Treat this route as a venue/promoter network task. It confirms an event only when visible current-event facts are captured from RA, official venue/promoter, ticketing, or other shareable evidence.",
+      "collectionChecklist": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ],
+      "deepCollectionRules": [
+        "Open and inspect second-layer links instead of stopping at a listing card or search result.",
+        "If key details are inside images, posters, stories, or screenshots, capture the image reference, OCR/transcribe the relevant text, and download the poster into assets/posters instead of relying on remote image URLs.",
+        "For every lineup artist, open official or high-signal profile links when available and collect a short sourced artist intro.",
+        "For touring artists, look for future city/date announcements beyond Shanghai and record source links or screenshot references.",
+        "For ticketing, inspect the final ticket page or mini-program reference, not only the promoter CTA.",
+        "Keep app-only, group-only, or screenshot-only claims at watch level until corroborated by official, ticketing, venue/promoter, RA, SmartShanghai, artist, or label evidence."
+      ],
+      "requiredFields": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ]
+    },
+    {
+      "label": "Network: CLOUD.SU Lounge Rooftop / Yuyuan WeChat mini-program / mini-program-venue-search",
+      "platform": "Yuyuan WeChat mini-program",
+      "url": "weixin://search?query=CLOUD.SU",
+      "priority": 1,
+      "sourceNetworkPriority": 2,
+      "cadence": "Every scrape cycle; repeat before weekend publication",
+      "trigger": "Scrape CLOUD.SU Lounge Rooftop's known promotion network before generic keyword discovery; use mini-program-venue-search and stop on platform warnings.",
+      "collectionGoal": "Confirm CLOUD.SU Lounge Rooftop ticketing-and-poster-source: event date, venue, lineup, ticket route, poster, and last-minute updates when visible.",
+      "queries": [
+        "CLOUD.SU",
+        "Le Youth",
+        "Cloud Su",
+        "Fosun Art Center rooftop",
+        "CLOUD.SU Lounge Rooftop Shanghai",
+        "Cloud by Lounge Group"
+      ],
+      "evidence": [
+        "ticket route or mini-program name",
+        "price tiers",
+        "sale status",
+        "venue/date/time",
+        "refund or purchase notes"
+      ],
+      "kind": "promotion-platform-network",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-16",
+      "parsed": false,
+      "entityId": "cloudsu-lounge-rooftop",
+      "entityType": "venue",
+      "entityName": "CLOUD.SU Lounge Rooftop",
+      "route": "mini-program-venue-search",
+      "trustRole": "ticketing-and-poster-source",
+      "scrapePolicy": "mini-program-search-first",
+      "routeAccess": "login-assisted-available",
+      "notes": "Use Yuyuan first for CLOUD.SU events because the Le Youth ticket-home screenshot exposed date, time, venue/address, price, ticket labels, and sold-out state.",
+      "confirmationRule": "Treat this route as a venue/promoter network task. It confirms an event only when visible current-event facts are captured from RA, official venue/promoter, ticketing, or other shareable evidence.",
+      "collectionChecklist": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ],
+      "deepCollectionRules": [
+        "Open and inspect second-layer links instead of stopping at a listing card or search result.",
+        "If key details are inside images, posters, stories, or screenshots, capture the image reference, OCR/transcribe the relevant text, and download the poster into assets/posters instead of relying on remote image URLs.",
+        "For every lineup artist, open official or high-signal profile links when available and collect a short sourced artist intro.",
+        "For touring artists, look for future city/date announcements beyond Shanghai and record source links or screenshot references.",
+        "For ticketing, inspect the final ticket page or mini-program reference, not only the promoter CTA.",
+        "Keep app-only, group-only, or screenshot-only claims at watch level until corroborated by official, ticketing, venue/promoter, RA, SmartShanghai, artist, or label evidence."
+      ],
+      "requiredFields": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ]
+    },
+    {
       "label": "Network: Dirty House / Yuyuan WeChat mini-program / mini-program-venue-search",
       "platform": "Yuyuan WeChat mini-program",
       "url": "weixin://search?query=Dirty%20House",
@@ -18489,6 +19616,82 @@
       ]
     },
     {
+      "label": "Network: idk / Yuyuan WeChat mini-program / mini-program-promoter-search",
+      "platform": "Yuyuan WeChat mini-program",
+      "url": "weixin://search?query=idk%20HEALTH%20MAXXING",
+      "priority": 1,
+      "sourceNetworkPriority": 2,
+      "cadence": "Every scrape cycle; repeat before weekend publication",
+      "trigger": "Scrape idk's known promotion network before generic keyword discovery; use mini-program-promoter-search and stop on platform warnings.",
+      "collectionGoal": "Confirm idk ticketing-and-running-order-source: event date, venue, lineup, ticket route, poster, and last-minute updates when visible.",
+      "queries": [
+        "idk HEALTH MAXXING",
+        "HEALTH MAXXING",
+        "idk Reactor",
+        "DOME idk",
+        "idk Shanghai",
+        "idk",
+        "idk pres."
+      ],
+      "evidence": [
+        "ticket route or mini-program name",
+        "price tiers",
+        "sale status",
+        "venue/date/time",
+        "refund or purchase notes"
+      ],
+      "kind": "promotion-platform-network",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-16",
+      "parsed": false,
+      "entityId": "idk",
+      "entityType": "promoter",
+      "entityName": "idk",
+      "route": "mini-program-promoter-search",
+      "trustRole": "ticketing-and-running-order-source",
+      "scrapePolicy": "mini-program-search-first",
+      "routeAccess": "login-assisted-available",
+      "notes": "User-supplied HEALTH MAXXING poster and running-order screenshots identify idk as the presenting promoter at Reactor.",
+      "confirmationRule": "Treat this route as a venue/promoter network task. It confirms an event only when visible current-event facts are captured from RA, official venue/promoter, ticketing, or other shareable evidence.",
+      "collectionChecklist": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ],
+      "deepCollectionRules": [
+        "Open and inspect second-layer links instead of stopping at a listing card or search result.",
+        "If key details are inside images, posters, stories, or screenshots, capture the image reference, OCR/transcribe the relevant text, and download the poster into assets/posters instead of relying on remote image URLs.",
+        "For every lineup artist, open official or high-signal profile links when available and collect a short sourced artist intro.",
+        "For touring artists, look for future city/date announcements beyond Shanghai and record source links or screenshot references.",
+        "For ticketing, inspect the final ticket page or mini-program reference, not only the promoter CTA.",
+        "Keep app-only, group-only, or screenshot-only claims at watch level until corroborated by official, ticketing, venue/promoter, RA, SmartShanghai, artist, or label evidence."
+      ],
+      "requiredFields": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ]
+    },
+    {
       "label": "Network: POTENT / Yuyuan WeChat mini-program / mini-program-venue-search",
       "platform": "Yuyuan WeChat mini-program",
       "url": "weixin://search?query=POTENT",
@@ -18575,6 +19778,9 @@
         "Antigen",
         "KAVARI",
         "Reactor",
+        "HEALTH MAXXING",
+        "idk",
+        "DOME Reactor",
         "Reactor Shanghai Shanghai",
         "REACTOR Shanghai"
       ],
@@ -18597,7 +19803,7 @@
       "trustRole": "ticketing-discovery-and-core-field-verification",
       "scrapePolicy": "mini-program-search-first",
       "routeAccess": "login-assisted-available",
-      "notes": "Computer Use test found a Reactor/Antigen event detail in Yuyuan with price, time, venue, and running-order text.",
+      "notes": "Computer Use and user screenshot tests found Reactor/Antigen and HEALTH MAXXING event details in Yuyuan with price, time, venue, and running-order text.",
       "confirmationRule": "Treat this route as a venue/promoter network task. It confirms an event only when visible current-event facts are captured from RA, official venue/promoter, ticketing, or other shareable evidence.",
       "collectionChecklist": [
         "event title and series name",
@@ -19222,6 +20428,81 @@
       ]
     },
     {
+      "label": "Network: CLOUD.SU Lounge Rooftop / WeChat / official-account-search",
+      "platform": "WeChat",
+      "url": "weixin://search?query=CLOUD.SU%20Le%20Youth%20%E4%B8%8A%E6%B5%B7",
+      "priority": 2,
+      "sourceNetworkPriority": 2,
+      "cadence": "Every 2-3 days or when a matching future event has gaps",
+      "trigger": "Scrape CLOUD.SU Lounge Rooftop's known promotion network before generic keyword discovery; use official-account-search and stop on platform warnings.",
+      "collectionGoal": "Confirm CLOUD.SU Lounge Rooftop official-event-announcement: event date, venue, lineup, ticket route, poster, and last-minute updates when visible.",
+      "queries": [
+        "CLOUD.SU Le Youth 上海",
+        "CLOUD.SU Lounge Rooftop Shanghai",
+        "CLOUD.SU",
+        "Cloud Su",
+        "Cloud by Lounge Group"
+      ],
+      "evidence": [
+        "account name",
+        "post/article title",
+        "publish date",
+        "event title/date",
+        "venue",
+        "lineup or ticket facts"
+      ],
+      "kind": "promotion-platform-network",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-16",
+      "parsed": false,
+      "entityId": "cloudsu-lounge-rooftop",
+      "entityType": "venue",
+      "entityName": "CLOUD.SU Lounge Rooftop",
+      "route": "official-account-search",
+      "trustRole": "official-event-announcement",
+      "scrapePolicy": "platform-native-search-first",
+      "routeAccess": "browser-required",
+      "notes": "User-supplied Le Youth poster and Yuyuan ticket-home screenshots identify CLOUD.SU Lounge Rooftop as a ticketed electronic-event venue at Fosun Art Center.",
+      "confirmationRule": "Treat this route as a venue/promoter network task. It confirms an event only when visible current-event facts are captured from RA, official venue/promoter, ticketing, or other shareable evidence.",
+      "collectionChecklist": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ],
+      "deepCollectionRules": [
+        "Open and inspect second-layer links instead of stopping at a listing card or search result.",
+        "If key details are inside images, posters, stories, or screenshots, capture the image reference, OCR/transcribe the relevant text, and download the poster into assets/posters instead of relying on remote image URLs.",
+        "For every lineup artist, open official or high-signal profile links when available and collect a short sourced artist intro.",
+        "For touring artists, look for future city/date announcements beyond Shanghai and record source links or screenshot references.",
+        "For ticketing, inspect the final ticket page or mini-program reference, not only the promoter CTA.",
+        "Keep app-only, group-only, or screenshot-only claims at watch level until corroborated by official, ticketing, venue/promoter, RA, SmartShanghai, artist, or label evidence."
+      ],
+      "requiredFields": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ]
+    },
+    {
       "label": "Network: Dirty House / WeChat / official-account-search",
       "platform": "WeChat",
       "url": "weixin://search?query=Dirty%20House%20Shanghai",
@@ -19476,6 +20757,80 @@
       "scrapePolicy": "platform-native-search-first",
       "routeAccess": "browser-required",
       "notes": "User-supplied EXIT/Yuyuan evidence and RA indexed text identify HouseHeadz Records / Steal Tapes at EXIT.",
+      "confirmationRule": "Treat this route as a venue/promoter network task. It confirms an event only when visible current-event facts are captured from RA, official venue/promoter, ticketing, or other shareable evidence.",
+      "collectionChecklist": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ],
+      "deepCollectionRules": [
+        "Open and inspect second-layer links instead of stopping at a listing card or search result.",
+        "If key details are inside images, posters, stories, or screenshots, capture the image reference, OCR/transcribe the relevant text, and download the poster into assets/posters instead of relying on remote image URLs.",
+        "For every lineup artist, open official or high-signal profile links when available and collect a short sourced artist intro.",
+        "For touring artists, look for future city/date announcements beyond Shanghai and record source links or screenshot references.",
+        "For ticketing, inspect the final ticket page or mini-program reference, not only the promoter CTA.",
+        "Keep app-only, group-only, or screenshot-only claims at watch level until corroborated by official, ticketing, venue/promoter, RA, SmartShanghai, artist, or label evidence."
+      ],
+      "requiredFields": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ]
+    },
+    {
+      "label": "Network: idk / WeChat / official-account-search",
+      "platform": "WeChat",
+      "url": "weixin://search?query=idk%20HEALTH%20MAXXING%20Reactor",
+      "priority": 2,
+      "sourceNetworkPriority": 2,
+      "cadence": "Every 2-3 days or when a matching future event has gaps",
+      "trigger": "Scrape idk's known promotion network before generic keyword discovery; use official-account-search and stop on platform warnings.",
+      "collectionGoal": "Confirm idk official-event-announcement: event date, venue, lineup, ticket route, poster, and last-minute updates when visible.",
+      "queries": [
+        "idk HEALTH MAXXING Reactor",
+        "idk Shanghai",
+        "idk",
+        "idk pres."
+      ],
+      "evidence": [
+        "account name",
+        "post/article title",
+        "publish date",
+        "event title/date",
+        "venue",
+        "lineup or ticket facts"
+      ],
+      "kind": "promotion-platform-network",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-16",
+      "parsed": false,
+      "entityId": "idk",
+      "entityType": "promoter",
+      "entityName": "idk",
+      "route": "official-account-search",
+      "trustRole": "official-event-announcement",
+      "scrapePolicy": "platform-native-search-first",
+      "routeAccess": "browser-required",
+      "notes": "User-supplied HEALTH MAXXING poster and running-order screenshots identify idk as the presenting promoter at Reactor.",
       "confirmationRule": "Treat this route as a venue/promoter network task. It confirms an event only when visible current-event facts are captured from RA, official venue/promoter, ticketing, or other shareable evidence.",
       "collectionChecklist": [
         "event title and series name",
@@ -20030,6 +21385,155 @@
       ]
     },
     {
+      "label": "Network: Asylum / Xiaohongshu / XHS / platform-native-search",
+      "platform": "Xiaohongshu / XHS",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=Asylum%20Le%20Youth%20%E4%B8%8A%E6%B5%B7&source=web_explore_feed",
+      "priority": 2,
+      "sourceNetworkPriority": 2,
+      "cadence": "Every 2-3 days or when a matching future event has gaps",
+      "trigger": "Scrape Asylum's known promotion network before generic keyword discovery; use platform-native-search and stop on platform warnings.",
+      "collectionGoal": "Confirm Asylum poster-and-official-social: event date, venue, lineup, ticket route, poster, and last-minute updates when visible.",
+      "queries": [
+        "Asylum Le Youth 上海",
+        "Asylum Shanghai",
+        "Asylum",
+        "ASYLUM"
+      ],
+      "evidence": [
+        "visible official account/post",
+        "poster image",
+        "OCR text",
+        "event date",
+        "lineup",
+        "ticket channel"
+      ],
+      "kind": "promotion-platform-network",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-16",
+      "parsed": false,
+      "entityId": "asylum",
+      "entityType": "promoter",
+      "entityName": "Asylum",
+      "route": "platform-native-search",
+      "trustRole": "poster-and-official-social",
+      "scrapePolicy": "platform-native-search-first",
+      "routeAccess": "login-assisted-ask-user",
+      "notes": "User-supplied Le Youth poster identifies ASYLUM Presents as the Shanghai China Tour promoter context.",
+      "confirmationRule": "Treat this route as a venue/promoter network task. It confirms an event only when visible current-event facts are captured from RA, official venue/promoter, ticketing, or other shareable evidence.",
+      "collectionChecklist": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ],
+      "deepCollectionRules": [
+        "Open and inspect second-layer links instead of stopping at a listing card or search result.",
+        "If key details are inside images, posters, stories, or screenshots, capture the image reference, OCR/transcribe the relevant text, and download the poster into assets/posters instead of relying on remote image URLs.",
+        "For every lineup artist, open official or high-signal profile links when available and collect a short sourced artist intro.",
+        "For touring artists, look for future city/date announcements beyond Shanghai and record source links or screenshot references.",
+        "For ticketing, inspect the final ticket page or mini-program reference, not only the promoter CTA.",
+        "Keep app-only, group-only, or screenshot-only claims at watch level until corroborated by official, ticketing, venue/promoter, RA, SmartShanghai, artist, or label evidence."
+      ],
+      "requiredFields": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ]
+    },
+    {
+      "label": "Network: CLOUD.SU Lounge Rooftop / Xiaohongshu / XHS / platform-native-search",
+      "platform": "Xiaohongshu / XHS",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=CLOUD.SU%20Le%20Youth%20%E4%B8%8A%E6%B5%B7&source=web_explore_feed",
+      "priority": 2,
+      "sourceNetworkPriority": 2,
+      "cadence": "Every 2-3 days or when a matching future event has gaps",
+      "trigger": "Scrape CLOUD.SU Lounge Rooftop's known promotion network before generic keyword discovery; use platform-native-search and stop on platform warnings.",
+      "collectionGoal": "Confirm CLOUD.SU Lounge Rooftop poster-and-official-social: event date, venue, lineup, ticket route, poster, and last-minute updates when visible.",
+      "queries": [
+        "CLOUD.SU Le Youth 上海",
+        "CLOUD.SU Lounge Rooftop Shanghai",
+        "CLOUD.SU",
+        "Cloud Su",
+        "Cloud by Lounge Group"
+      ],
+      "evidence": [
+        "visible official account/post",
+        "poster image",
+        "OCR text",
+        "event date",
+        "lineup",
+        "ticket channel"
+      ],
+      "kind": "promotion-platform-network",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-16",
+      "parsed": false,
+      "entityId": "cloudsu-lounge-rooftop",
+      "entityType": "venue",
+      "entityName": "CLOUD.SU Lounge Rooftop",
+      "route": "platform-native-search",
+      "trustRole": "poster-and-official-social",
+      "scrapePolicy": "platform-native-search-first",
+      "routeAccess": "login-assisted-ask-user",
+      "notes": "User-supplied Le Youth poster and Yuyuan ticket-home screenshots identify CLOUD.SU Lounge Rooftop as a ticketed electronic-event venue at Fosun Art Center.",
+      "confirmationRule": "Treat this route as a venue/promoter network task. It confirms an event only when visible current-event facts are captured from RA, official venue/promoter, ticketing, or other shareable evidence.",
+      "collectionChecklist": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ],
+      "deepCollectionRules": [
+        "Open and inspect second-layer links instead of stopping at a listing card or search result.",
+        "If key details are inside images, posters, stories, or screenshots, capture the image reference, OCR/transcribe the relevant text, and download the poster into assets/posters instead of relying on remote image URLs.",
+        "For every lineup artist, open official or high-signal profile links when available and collect a short sourced artist intro.",
+        "For touring artists, look for future city/date announcements beyond Shanghai and record source links or screenshot references.",
+        "For ticketing, inspect the final ticket page or mini-program reference, not only the promoter CTA.",
+        "Keep app-only, group-only, or screenshot-only claims at watch level until corroborated by official, ticketing, venue/promoter, RA, SmartShanghai, artist, or label evidence."
+      ],
+      "requiredFields": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ]
+    },
+    {
       "label": "Network: Dirty House / Xiaohongshu / XHS / platform-native-search",
       "platform": "Xiaohongshu / XHS",
       "url": "https://www.xiaohongshu.com/search_result?keyword=Dirty%20House%20Shanghai%20techno&source=web_explore_feed",
@@ -20285,6 +21789,80 @@
       "scrapePolicy": "platform-native-search-first",
       "routeAccess": "login-assisted-ask-user",
       "notes": "User-supplied EXIT/Yuyuan evidence and RA indexed text identify HouseHeadz Records / Steal Tapes at EXIT.",
+      "confirmationRule": "Treat this route as a venue/promoter network task. It confirms an event only when visible current-event facts are captured from RA, official venue/promoter, ticketing, or other shareable evidence.",
+      "collectionChecklist": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ],
+      "deepCollectionRules": [
+        "Open and inspect second-layer links instead of stopping at a listing card or search result.",
+        "If key details are inside images, posters, stories, or screenshots, capture the image reference, OCR/transcribe the relevant text, and download the poster into assets/posters instead of relying on remote image URLs.",
+        "For every lineup artist, open official or high-signal profile links when available and collect a short sourced artist intro.",
+        "For touring artists, look for future city/date announcements beyond Shanghai and record source links or screenshot references.",
+        "For ticketing, inspect the final ticket page or mini-program reference, not only the promoter CTA.",
+        "Keep app-only, group-only, or screenshot-only claims at watch level until corroborated by official, ticketing, venue/promoter, RA, SmartShanghai, artist, or label evidence."
+      ],
+      "requiredFields": [
+        "event title and series name",
+        "absolute date, doors time, start time, end time, and timezone",
+        "venue name, room/floor, city, district, full address, and map/search hint",
+        "promoter, venue host, label, or organizing crew",
+        "full lineup, B2B notes, set order, set times, and live/DJ format when available",
+        "poster or flyer image source, screenshot reference, OCR text from image-only details, and a downloaded local assets/posters posterUrl when posterEvidence exists",
+        "artist introductions: origin/city, genres, labels, notable releases, aliases, and official profile links",
+        "future tour plan: upcoming cities/dates from artist, label, venue, RA, Bandsintown/Songkick, Bandcamp, Instagram, Weibo, or WeChat when available",
+        "ticketing status: platform, public URL or mini-program name, QR/source reference, price tiers, fees, door price, availability, sold-out/waitlist status, refund rules, and purchase cutoff",
+        "age/ID, entry policy, dress/door notes, cancellation or lineup-change notices",
+        "all second-layer links: event detail, ticketing, venue, promoter, artist, label, poster image, and related tour announcement links",
+        "source publication date, last checked date, source confidence, and whether each detail is official, ticketing, social, or image-derived"
+      ]
+    },
+    {
+      "label": "Network: idk / Xiaohongshu / XHS / platform-native-search",
+      "platform": "Xiaohongshu / XHS",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=HEALTH%20MAXXING%20Reactor&source=web_explore_feed",
+      "priority": 2,
+      "sourceNetworkPriority": 2,
+      "cadence": "Every 2-3 days or when a matching future event has gaps",
+      "trigger": "Scrape idk's known promotion network before generic keyword discovery; use platform-native-search and stop on platform warnings.",
+      "collectionGoal": "Confirm idk poster-and-official-social: event date, venue, lineup, ticket route, poster, and last-minute updates when visible.",
+      "queries": [
+        "HEALTH MAXXING Reactor",
+        "idk Shanghai",
+        "idk",
+        "idk pres."
+      ],
+      "evidence": [
+        "visible official account/post",
+        "poster image",
+        "OCR text",
+        "event date",
+        "lineup",
+        "ticket channel"
+      ],
+      "kind": "promotion-platform-network",
+      "sourceStatus": "computer-use",
+      "access": "chrome-computer-use",
+      "checkedAt": "2026-06-16",
+      "parsed": false,
+      "entityId": "idk",
+      "entityType": "promoter",
+      "entityName": "idk",
+      "route": "platform-native-search",
+      "trustRole": "poster-and-official-social",
+      "scrapePolicy": "platform-native-search-first",
+      "routeAccess": "login-assisted-ask-user",
+      "notes": "User-supplied HEALTH MAXXING poster and running-order screenshots identify idk as the presenting promoter at Reactor.",
       "confirmationRule": "Treat this route as a venue/promoter network task. It confirms an event only when visible current-event facts are captured from RA, official venue/promoter, ticketing, or other shareable evidence.",
       "collectionChecklist": [
         "event title and series name",
@@ -22031,7 +23609,7 @@
       ]
     }
   ],
-  "curatedEventsApplied": 86,
+  "curatedEventsApplied": 88,
   "djItineraryStats": {
     "profileCount": 136,
     "curatedProfileCount": 134,
@@ -22218,7 +23796,7 @@
   },
   "quality": {
     "auditDate": "2026-06-16",
-    "generatedAt": "2026-06-16T01:42:58.251Z",
+    "generatedAt": "2026-06-16T02:13:11.664Z",
     "freshnessPolicy": {
       "eventSourceMaxAgeDays": 2,
       "nearEventWindowDays": 1,
@@ -22227,20 +23805,20 @@
       "rule": "Future event sources are expected to be rechecked within the two-day scrape cadence; events within the near-event window use the stricter near-event freshness window. Profile-level DJ sources have a longer freshness window because they support identity/context, not live ticket state."
     },
     "totals": {
-      "events": 106,
-      "future": 49,
-      "futureHigh": 9,
+      "events": 108,
+      "future": 51,
+      "futureHigh": 11,
       "futureWatch": 16,
       "singleSourceWatch": 4,
       "singleConfirmationWatch": 8,
-      "venueProfiles": 42,
-      "futureVenueProfiles": 26,
+      "venueProfiles": 43,
+      "futureVenueProfiles": 27,
       "futureVenueWatch": 16,
-      "futurePerformerProfiles": 134,
+      "futurePerformerProfiles": 144,
       "futurePerformerWatch": 21,
       "singleSourceFuturePerformers": 55,
-      "futurePerformerProfileSources": 117,
-      "futurePerformerMissingProfileSources": 17,
+      "futurePerformerProfileSources": 118,
+      "futurePerformerMissingProfileSources": 26,
       "djSourceUpgradeQueue": 0,
       "trackedDjProfiles": 136,
       "curatedDjSourceProfiles": 134,
@@ -22251,16 +23829,16 @@
       "staleFuture": 0,
       "missingTicketStatus": 0,
       "highMissingLineup": 0,
-      "futureCoreFieldQueue": 39,
-      "futureMissingCoreFields": 88,
+      "futureCoreFieldQueue": 41,
+      "futureMissingCoreFields": 92,
       "futureUncertainCoreFields": 1,
       "platformVerificationQueue": 3,
       "platformVerificationSources": 7,
-      "promotionPlatformEntities": 20,
-      "promotionPlatformRoutes": 69,
-      "promotionPlatformQueue": 69,
+      "promotionPlatformEntities": 23,
+      "promotionPlatformRoutes": 77,
+      "promotionPlatformQueue": 77,
       "promotionPlatformUnmappedFutureVenues": 14,
-      "curatedEventsApplied": 86,
+      "curatedEventsApplied": 88,
       "failedSourceReports": 17
     },
     "watchQueue": [
@@ -22673,6 +24251,30 @@
         "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
       },
       {
+        "id": "health-maxxing-reactor-2026-06-19",
+        "date": "2026-06-19",
+        "title": "DOME | idk Pres. HEALTH MAXXING",
+        "venue": "Reactor Shanghai",
+        "confidence": "High",
+        "priority": "high",
+        "fitScore": 3,
+        "missingCoreFields": [
+          "age",
+          "ticketUrl"
+        ],
+        "uncertainCoreFields": [],
+        "missingNonCoreFields": [],
+        "performerProfileGaps": [
+          "will",
+          "BIG WESTI",
+          "anal",
+          "Body Training Session"
+        ],
+        "coreFieldGapStatus": "public-source-gap",
+        "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
+        "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
+      },
+      {
         "id": "abyss-faq-kirk",
         "date": "2026-06-19",
         "title": "FaQ Pres. KIRK",
@@ -23011,6 +24613,31 @@
         "uncertainCoreFields": [],
         "missingNonCoreFields": [],
         "performerProfileGaps": [],
+        "coreFieldGapStatus": "public-source-gap",
+        "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
+        "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
+      },
+      {
+        "id": "le-youth-cloudsu-2026-06-27",
+        "date": "2026-06-27",
+        "title": "Le Youth 2026 China Tour Shanghai",
+        "venue": "CLOUD.SU Lounge Rooftop",
+        "confidence": "High",
+        "priority": "medium",
+        "fitScore": 2,
+        "missingCoreFields": [
+          "age",
+          "ticketUrl"
+        ],
+        "uncertainCoreFields": [],
+        "missingNonCoreFields": [],
+        "performerProfileGaps": [
+          "Le Youth",
+          "Baby Yung",
+          "Gabrielle",
+          "PAS",
+          "Yu-Ya"
+        ],
         "coreFieldGapStatus": "public-source-gap",
         "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
         "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
@@ -23465,8 +25092,8 @@
     "promotionPlatformNetwork": {
       "source": "config/promotion-platform-network.json",
       "updatedAt": "2026-06-16",
-      "entityCount": 20,
-      "routeCount": 69,
+      "entityCount": 23,
+      "routeCount": 77,
       "globalRouteCount": 1,
       "globalRoutes": [
         {
@@ -23477,7 +25104,7 @@
           "query": "Shanghai electronic music"
         }
       ],
-      "queueCount": 69,
+      "queueCount": 77,
       "scrapeOrder": [
         "Resident Advisor Shanghai city/date listings and event pages when reachable or browser-visible",
         "Yuyuan WeChat mini-program citywide and venue/event search for local ticketing, poster covers, price tiers, and core practical fields",
@@ -23900,6 +25527,46 @@
           ]
         },
         {
+          "id": "reactor-shanghai",
+          "type": "venue",
+          "name": "Reactor Shanghai",
+          "priority": 2,
+          "routeCount": 4,
+          "platforms": [
+            "Resident Advisor",
+            "WeChat",
+            "Xiaohongshu / XHS",
+            "Yuyuan WeChat mini-program"
+          ],
+          "futureEventCount": 3,
+          "futureEvents": [
+            {
+              "id": "photocult-mask-desire-auction",
+              "date": "2026-06-18",
+              "title": "PHOTOCULT Pres. Mask. Desire. Auction",
+              "venue": "Reactor Shanghai",
+              "status": "upcoming",
+              "confidence": "High"
+            },
+            {
+              "id": "health-maxxing-reactor-2026-06-19",
+              "date": "2026-06-19",
+              "title": "DOME | idk Pres. HEALTH MAXXING",
+              "venue": "Reactor Shanghai",
+              "status": "upcoming",
+              "confidence": "High"
+            },
+            {
+              "id": "atm-leo-monira",
+              "date": "2026-06-20",
+              "title": "A.T.M Pres. LEO MONIRA",
+              "venue": "Reactor Shanghai",
+              "status": "upcoming",
+              "confidence": "High"
+            }
+          ]
+        },
+        {
           "id": "dirty-house",
           "type": "venue",
           "name": "Dirty House",
@@ -23932,32 +25599,45 @@
           ]
         },
         {
-          "id": "reactor-shanghai",
-          "type": "venue",
-          "name": "Reactor Shanghai",
+          "id": "asylum",
+          "type": "promoter",
+          "name": "Asylum",
           "priority": 2,
-          "routeCount": 4,
+          "routeCount": 2,
           "platforms": [
-            "Resident Advisor",
-            "WeChat",
-            "Xiaohongshu / XHS",
-            "Yuyuan WeChat mini-program"
+            "Yuyuan WeChat mini-program",
+            "Xiaohongshu / XHS"
           ],
-          "futureEventCount": 2,
+          "futureEventCount": 1,
           "futureEvents": [
             {
-              "id": "photocult-mask-desire-auction",
-              "date": "2026-06-18",
-              "title": "PHOTOCULT Pres. Mask. Desire. Auction",
-              "venue": "Reactor Shanghai",
+              "id": "le-youth-cloudsu-2026-06-27",
+              "date": "2026-06-27",
+              "title": "Le Youth 2026 China Tour Shanghai",
+              "venue": "CLOUD.SU Lounge Rooftop",
               "status": "upcoming",
               "confidence": "High"
-            },
+            }
+          ]
+        },
+        {
+          "id": "cloudsu-lounge-rooftop",
+          "type": "venue",
+          "name": "CLOUD.SU Lounge Rooftop",
+          "priority": 2,
+          "routeCount": 3,
+          "platforms": [
+            "Yuyuan WeChat mini-program",
+            "WeChat",
+            "Xiaohongshu / XHS"
+          ],
+          "futureEventCount": 1,
+          "futureEvents": [
             {
-              "id": "atm-leo-monira",
-              "date": "2026-06-20",
-              "title": "A.T.M Pres. LEO MONIRA",
-              "venue": "Reactor Shanghai",
+              "id": "le-youth-cloudsu-2026-06-27",
+              "date": "2026-06-27",
+              "title": "Le Youth 2026 China Tour Shanghai",
+              "venue": "CLOUD.SU Lounge Rooftop",
               "status": "upcoming",
               "confidence": "High"
             }
@@ -24025,6 +25705,29 @@
               "date": "2026-06-20",
               "title": "298 pres. Steal Tapes",
               "venue": "EXIT",
+              "status": "upcoming",
+              "confidence": "High"
+            }
+          ]
+        },
+        {
+          "id": "idk",
+          "type": "promoter",
+          "name": "idk",
+          "priority": 2,
+          "routeCount": 3,
+          "platforms": [
+            "Yuyuan WeChat mini-program",
+            "WeChat",
+            "Xiaohongshu / XHS"
+          ],
+          "futureEventCount": 1,
+          "futureEvents": [
+            {
+              "id": "health-maxxing-reactor-2026-06-19",
+              "date": "2026-06-19",
+              "title": "DOME | idk Pres. HEALTH MAXXING",
+              "venue": "Reactor Shanghai",
               "status": "upcoming",
               "confidence": "High"
             }
@@ -24479,17 +26182,18 @@
           "house, hip-hop, groove, club",
           "experimental, future beats, hip-hop",
           "techno",
+          "club, hard dance, performance-led electronic",
           "techno, hardcore, industrial techno, EBM"
         ],
-        "sourceCount": 8,
-        "totalEvents": 8,
-        "futureEvents": 2,
-        "highConfidenceEvents": 7,
+        "sourceCount": 11,
+        "totalEvents": 9,
+        "futureEvents": 3,
+        "highConfidenceEvents": 8,
         "watchEvents": 0,
         "fitScore": 3,
         "priority": "high",
         "nextEventDate": "2026-06-18",
-        "lastChecked": "2026-06-14"
+        "lastChecked": "2026-06-16"
       },
       {
         "venue": "Dirty House",
@@ -24589,6 +26293,25 @@
         "priority": "high",
         "nextEventDate": "2026-06-20",
         "lastChecked": "2026-06-15"
+      },
+      {
+        "venue": "CLOUD.SU Lounge Rooftop",
+        "aliases": [],
+        "districts": [
+          "Huangpu"
+        ],
+        "genres": [
+          "melodic house, nu disco, rooftop electronic"
+        ],
+        "sourceCount": 2,
+        "totalEvents": 1,
+        "futureEvents": 1,
+        "highConfidenceEvents": 1,
+        "watchEvents": 0,
+        "fitScore": 2,
+        "priority": "medium",
+        "nextEventDate": "2026-06-27",
+        "lastChecked": "2026-06-16"
       },
       {
         "venue": "Qiantan Sports Park",
@@ -25596,6 +27319,28 @@
           "nextDate": "2026-06-27"
         },
         {
+          "slug": "ruima",
+          "name": "Ruima",
+          "eventCount": 2,
+          "futureEventCount": 1,
+          "sourceCount": 4,
+          "trackedProfileSourceCount": 2,
+          "venues": [
+            "EXIT",
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "electro, EBM, industrial, techno, IDM",
+            "club, hard dance, performance-led electronic"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 2,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-19"
+        },
+        {
           "slug": "situ",
           "name": "SITU",
           "eventCount": 2,
@@ -25659,6 +27404,26 @@
           "nextDate": "2026-06-27"
         },
         {
+          "slug": "anal",
+          "name": "anal",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 3,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "club, hard dance, performance-led electronic"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-19"
+        },
+        {
           "slug": "anika-kunst",
           "name": "Anika Kunst",
           "eventCount": 1,
@@ -25699,6 +27464,26 @@
           "nextDate": "2026-06-27"
         },
         {
+          "slug": "big-westi",
+          "name": "BIG WESTI",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 3,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "club, hard dance, performance-led electronic"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-19"
+        },
+        {
           "slug": "blood-of-life",
           "name": "Blood of Life",
           "eventCount": 1,
@@ -25717,6 +27502,26 @@
           "fitScore": 3,
           "priority": "high",
           "nextDate": "2026-06-27"
+        },
+        {
+          "slug": "body-training-session",
+          "name": "Body Training Session",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 3,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "club, hard dance, performance-led electronic"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-19"
         },
         {
           "slug": "botox-fatal",
@@ -27019,6 +28824,26 @@
           "nextDate": "2026-06-19"
         },
         {
+          "slug": "will",
+          "name": "will",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 3,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Reactor Shanghai"
+          ],
+          "genres": [
+            "club, hard dance, performance-led electronic"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-19"
+        },
+        {
           "slug": "xiwi",
           "name": "XIWI",
           "eventCount": 1,
@@ -27164,6 +28989,26 @@
           "nextDate": "2026-06-19"
         },
         {
+          "slug": "baby-yung",
+          "name": "Baby Yung",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 2,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "CLOUD.SU Lounge Rooftop"
+          ],
+          "genres": [
+            "melodic house, nu disco, rooftop electronic"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-27"
+        },
+        {
           "slug": "bi-non-and-chillchillshit",
           "name": "Bi-NON & chillchillshit",
           "eventCount": 1,
@@ -27222,6 +29067,26 @@
           "fitScore": 2,
           "priority": "medium",
           "nextDate": "2026-06-19"
+        },
+        {
+          "slug": "gabrielle",
+          "name": "Gabrielle",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 2,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "CLOUD.SU Lounge Rooftop"
+          ],
+          "genres": [
+            "melodic house, nu disco, rooftop electronic"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-27"
         },
         {
           "slug": "gg-lobster",
@@ -27304,6 +29169,26 @@
           "nextDate": "2026-06-17"
         },
         {
+          "slug": "le-youth",
+          "name": "Le Youth",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 2,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "CLOUD.SU Lounge Rooftop"
+          ],
+          "genres": [
+            "melodic house, nu disco, rooftop electronic"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-27"
+        },
+        {
           "slug": "manqing",
           "name": "Manqing",
           "eventCount": 1,
@@ -27378,6 +29263,26 @@
           ],
           "watchAppearances": 1,
           "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-27"
+        },
+        {
+          "slug": "pas",
+          "name": "PAS",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 2,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "CLOUD.SU Lounge Rooftop"
+          ],
+          "genres": [
+            "melodic house, nu disco, rooftop electronic"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
           "singleSourceFutureAppearances": 0,
           "fitScore": 2,
           "priority": "medium",
@@ -27622,6 +29527,26 @@
           "fitScore": 2,
           "priority": "medium",
           "nextDate": "2026-06-17"
+        },
+        {
+          "slug": "yu-ya",
+          "name": "Yu-Ya",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 2,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "CLOUD.SU Lounge Rooftop"
+          ],
+          "genres": [
+            "melodic house, nu disco, rooftop electronic"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-27"
         },
         {
           "slug": "chiyokoo",
@@ -27905,7 +29830,7 @@
         }
       ],
       "sourceUpgradeQueue": [],
-      "allProfileCount": 221
+      "allProfileCount": 230
     },
     "raShanghaiCoverage": {
       "configured": true,
@@ -28968,6 +30893,22 @@
         "status": "computer-use"
       },
       {
+        "label": "Network: Asylum / Yuyuan WeChat mini-program / mini-program-promoter-search",
+        "kind": "promotion-platform-network",
+        "sourceStatus": "computer-use",
+        "ok": null,
+        "checkedAt": "2026-06-16",
+        "status": "computer-use"
+      },
+      {
+        "label": "Network: CLOUD.SU Lounge Rooftop / Yuyuan WeChat mini-program / mini-program-venue-search",
+        "kind": "promotion-platform-network",
+        "sourceStatus": "computer-use",
+        "ok": null,
+        "checkedAt": "2026-06-16",
+        "status": "computer-use"
+      },
+      {
         "label": "Network: Dirty House / Yuyuan WeChat mini-program / mini-program-venue-search",
         "kind": "promotion-platform-network",
         "sourceStatus": "computer-use",
@@ -28977,6 +30918,14 @@
       },
       {
         "label": "Network: HouseHeadz Records / Yuyuan WeChat mini-program / mini-program-event-search",
+        "kind": "promotion-platform-network",
+        "sourceStatus": "computer-use",
+        "ok": null,
+        "checkedAt": "2026-06-16",
+        "status": "computer-use"
+      },
+      {
+        "label": "Network: idk / Yuyuan WeChat mini-program / mini-program-promoter-search",
         "kind": "promotion-platform-network",
         "sourceStatus": "computer-use",
         "ok": null,
@@ -29064,6 +31013,14 @@
         "status": "computer-use"
       },
       {
+        "label": "Network: CLOUD.SU Lounge Rooftop / WeChat / official-account-search",
+        "kind": "promotion-platform-network",
+        "sourceStatus": "computer-use",
+        "ok": null,
+        "checkedAt": "2026-06-16",
+        "status": "computer-use"
+      },
+      {
         "label": "Network: Dirty House / WeChat / official-account-search",
         "kind": "promotion-platform-network",
         "sourceStatus": "computer-use",
@@ -29089,6 +31046,14 @@
       },
       {
         "label": "Network: HouseHeadz Records / WeChat / official-account-search",
+        "kind": "promotion-platform-network",
+        "sourceStatus": "computer-use",
+        "ok": null,
+        "checkedAt": "2026-06-16",
+        "status": "computer-use"
+      },
+      {
+        "label": "Network: idk / WeChat / official-account-search",
         "kind": "promotion-platform-network",
         "sourceStatus": "computer-use",
         "ok": null,
@@ -29152,6 +31117,22 @@
         "status": "computer-use"
       },
       {
+        "label": "Network: Asylum / Xiaohongshu / XHS / platform-native-search",
+        "kind": "promotion-platform-network",
+        "sourceStatus": "computer-use",
+        "ok": null,
+        "checkedAt": "2026-06-16",
+        "status": "computer-use"
+      },
+      {
+        "label": "Network: CLOUD.SU Lounge Rooftop / Xiaohongshu / XHS / platform-native-search",
+        "kind": "promotion-platform-network",
+        "sourceStatus": "computer-use",
+        "ok": null,
+        "checkedAt": "2026-06-16",
+        "status": "computer-use"
+      },
+      {
         "label": "Network: Dirty House / Xiaohongshu / XHS / platform-native-search",
         "kind": "promotion-platform-network",
         "sourceStatus": "computer-use",
@@ -29177,6 +31158,14 @@
       },
       {
         "label": "Network: HouseHeadz Records / Xiaohongshu / XHS / platform-native-search",
+        "kind": "promotion-platform-network",
+        "sourceStatus": "computer-use",
+        "ok": null,
+        "checkedAt": "2026-06-16",
+        "status": "computer-use"
+      },
+      {
+        "label": "Network: idk / Xiaohongshu / XHS / platform-native-search",
         "kind": "promotion-platform-network",
         "sourceStatus": "computer-use",
         "ok": null,

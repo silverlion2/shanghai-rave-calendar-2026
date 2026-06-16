@@ -474,12 +474,12 @@
           "platform": "Yuyuan WeChat mini-program",
           "route": "mini-program-venue-search",
           "query": "Reactor Shanghai",
-          "queries": ["Antigen", "KAVARI", "Reactor"],
+          "queries": ["Antigen", "KAVARI", "Reactor", "HEALTH MAXXING", "idk", "DOME Reactor"],
           "priority": 1,
           "trustRole": "ticketing-discovery-and-core-field-verification",
           "access": "login-assisted-available",
           "scrapePolicy": "mini-program-search-first",
-          "notes": "Computer Use test found a Reactor/Antigen event detail in Yuyuan with price, time, venue, and running-order text."
+          "notes": "Computer Use and user screenshot tests found Reactor/Antigen and HEALTH MAXXING event details in Yuyuan with price, time, venue, and running-order text."
         }
       ]
     },
@@ -855,6 +855,115 @@
           "trustRole": "ticketing-and-poster-source",
           "access": "login-assisted-ask-user",
           "scrapePolicy": "mini-program-search-first"
+        }
+      ]
+    },
+    {
+      "id": "cloudsu-lounge-rooftop",
+      "type": "venue",
+      "name": "CLOUD.SU Lounge Rooftop",
+      "aliases": ["CLOUD.SU", "Cloud Su", "Cloud by Lounge Group", "Fosun Art Center rooftop"],
+      "venueMatches": ["CLOUD.SU Lounge Rooftop", "CLOUD.SU", "Cloud Su"],
+      "priority": 2,
+      "evidenceBasis": "User-supplied Le Youth poster and Yuyuan ticket-home screenshots identify CLOUD.SU Lounge Rooftop as a ticketed electronic-event venue at Fosun Art Center.",
+      "platforms": [
+        {
+          "platform": "Yuyuan WeChat mini-program",
+          "route": "mini-program-venue-search",
+          "query": "CLOUD.SU",
+          "queries": ["Le Youth", "CLOUD.SU", "Cloud Su", "Fosun Art Center rooftop"],
+          "priority": 1,
+          "trustRole": "ticketing-and-poster-source",
+          "access": "login-assisted-available",
+          "scrapePolicy": "mini-program-search-first",
+          "notes": "Use Yuyuan first for CLOUD.SU events because the Le Youth ticket-home screenshot exposed date, time, venue/address, price, ticket labels, and sold-out state."
+        },
+        {
+          "platform": "WeChat",
+          "route": "official-account-search",
+          "query": "CLOUD.SU Le Youth 上海",
+          "priority": 2,
+          "trustRole": "official-event-announcement",
+          "access": "browser-required",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Xiaohongshu / XHS",
+          "route": "platform-native-search",
+          "query": "CLOUD.SU Le Youth 上海",
+          "priority": 2,
+          "trustRole": "poster-and-official-social",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "platform-native-search-first"
+        }
+      ]
+    },
+    {
+      "id": "asylum",
+      "type": "promoter",
+      "name": "Asylum",
+      "aliases": ["Asylum", "ASYLUM"],
+      "promoterMatches": ["Asylum", "ASYLUM"],
+      "priority": 2,
+      "evidenceBasis": "User-supplied Le Youth poster identifies ASYLUM Presents as the Shanghai China Tour promoter context.",
+      "platforms": [
+        {
+          "platform": "Yuyuan WeChat mini-program",
+          "route": "mini-program-promoter-search",
+          "query": "Asylum Le Youth",
+          "queries": ["Le Youth", "Asylum Shanghai"],
+          "priority": 1,
+          "trustRole": "ticketing-discovery-and-core-field-verification",
+          "access": "login-assisted-available",
+          "scrapePolicy": "mini-program-search-first"
+        },
+        {
+          "platform": "Xiaohongshu / XHS",
+          "route": "platform-native-search",
+          "query": "Asylum Le Youth 上海",
+          "priority": 2,
+          "trustRole": "poster-and-official-social",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "platform-native-search-first"
+        }
+      ]
+    },
+    {
+      "id": "idk",
+      "type": "promoter",
+      "name": "idk",
+      "aliases": ["idk", "idk pres."],
+      "promoterMatches": ["idk", "idk pres."],
+      "priority": 2,
+      "evidenceBasis": "User-supplied HEALTH MAXXING poster and running-order screenshots identify idk as the presenting promoter at Reactor.",
+      "platforms": [
+        {
+          "platform": "Yuyuan WeChat mini-program",
+          "route": "mini-program-promoter-search",
+          "query": "idk HEALTH MAXXING",
+          "queries": ["HEALTH MAXXING", "idk Reactor", "DOME idk"],
+          "priority": 1,
+          "trustRole": "ticketing-and-running-order-source",
+          "access": "login-assisted-available",
+          "scrapePolicy": "mini-program-search-first"
+        },
+        {
+          "platform": "WeChat",
+          "route": "official-account-search",
+          "query": "idk HEALTH MAXXING Reactor",
+          "priority": 2,
+          "trustRole": "official-event-announcement",
+          "access": "browser-required",
+          "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Xiaohongshu / XHS",
+          "route": "platform-native-search",
+          "query": "HEALTH MAXXING Reactor",
+          "priority": 2,
+          "trustRole": "poster-and-official-social",
+          "access": "login-assisted-ask-user",
+          "scrapePolicy": "platform-native-search-first"
         }
       ]
     },

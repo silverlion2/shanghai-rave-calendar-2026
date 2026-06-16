@@ -818,3 +818,42 @@ Validation:
 - `node scripts/check.js`: passed, 3694 local links across 130 HTML/CSS files and 43 inline scripts.
 - `npm run check`: passed with 79 tests plus site structure, local link, and event audit checks.
 - `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json`: still reports existing `/_vercel/insights/script.js` local-link findings on pages that include Vercel Analytics; this is outside the EXIT data update and does not reproduce in the repo's `scripts/check.js`.
+
+## 2026-06-16 User-Provided Yuyuan / Reactor / CLOUD.SU Evidence
+
+The user supplied Yuyuan ticketing screenshots and clean posters for two additional Shanghai electronic events: `DOME | idk Pres. HEALTH MAXXING` at Reactor Shanghai and `Le Youth 2026 China Tour Shanghai` at CLOUD.SU Lounge Rooftop. The screenshots were treated as event-level evidence only for visible facts; no direct mini-program `ticketUrl` was invented.
+
+Assets copied and optimized under `assets/posters/`:
+
+- `health-maxxing-reactor-2026-06-19-poster.jpg`
+- `health-maxxing-reactor-2026-06-19-ticket-home.jpg`
+- `health-maxxing-reactor-2026-06-19-running-order.jpg`
+- `health-maxxing-reactor-2026-06-19-poster-optimized.jpg`
+- `health-maxxing-reactor-2026-06-19-ticket-home-optimized.jpg`
+- `health-maxxing-reactor-2026-06-19-running-order-optimized.jpg`
+- `le-youth-cloudsu-2026-06-27-poster.jpg`
+- `le-youth-cloudsu-2026-06-27-ticket-home.jpg`
+- `le-youth-cloudsu-2026-06-27-poster-optimized.jpg`
+- `le-youth-cloudsu-2026-06-27-ticket-home-optimized.jpg`
+
+Canonical updates:
+
+- Added `health-maxxing-reactor-2026-06-19` for Jun 19 at Reactor Shanghai, 22:00-04:00, 78 RMB+, with will / BIG WESTI / anal / ruima and Body Training Session interludes. Yuyuan confirms ticket labels; Reactor screenshot confirms running order and a before-midnight body-test free-entry note.
+- Added `le-youth-cloudsu-2026-06-27` for Jun 27 at CLOUD.SU Lounge Rooftop, 16:30-02:00, 228 RMB+, with Le Youth / Baby Yung / Gabrielle / PAS / Yu-Ya. Yuyuan screenshot shows the ticket state as sold out at screenshot time.
+- Updated `config/promotion-platform-network.json`: Reactor's Yuyuan route now includes `HEALTH MAXXING` / `idk`; new network entities were added for `CLOUD.SU Lounge Rooftop`, `Asylum`, and `idk`.
+
+Open gaps:
+
+- No direct public or mini-program ticket URL was visible for either event.
+- Age policy was not visible for either event.
+- Le Youth ticket status was sold out at screenshot time; recheck Yuyuan or organizer channels before presenting any ticket CTA.
+- HEALTH MAXXING's free-entry-before-midnight rule should be rechecked through Reactor/Yuyuan before planning around it.
+
+Validation:
+
+- `node scripts/scrape-events.js` with `SCRAPE_MAX_DETAIL_PAGES=0`: 108 events, 77 promotion-platform routes, 85 Computer Use sources, 88 curated updates.
+- `node scripts/optimize-posters.js --archive --all --allow-larger ...`: generated optimized display assets for all five supplied screenshots and `data/poster-archive.json` with 71 poster records.
+- `npm run seo`: generated 108 event detail pages and `sitemap.xml`.
+- `node scripts/check.js`: passed, 3758 local links across 132 HTML/CSS files and 43 inline scripts.
+- `node scripts/audit-events.js`: warnings empty; 108 events, 51 future events, 77 promotion-platform routes.
+- `npm run check`: passed with 80 tests plus site structure, local link, and event audit checks.
