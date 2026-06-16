@@ -6726,6 +6726,186 @@
       "bestFor": "Best for melodic-house listeners, date-friendly rooftop plans, and readers who want polished electronic music without hard-rave intensity.",
       "verifyBeforeGoing": "Check Yuyuan or the organizer before going for any returned tickets, age policy, door rules, and weather/rooftop updates; the ticket screenshot showed sold out.",
       "sourceConfidence": "High-confidence user-screenshot event: clean poster and Yuyuan ticket-home screenshot jointly confirm event identity, date, time, venue/address, support lineup, price floor, ticket labels, and sold-out state. No public shareable ticket URL or age policy was visible."
+    },
+    {
+      "id": "suaner-lanv-guizhou-kitchen",
+      "month": "Jun",
+      "sortDate": "2026-06-26",
+      "date": "Jun 26",
+      "time": "22:00-Late",
+      "title": "酸儿辣女 - 贵州厨房 上海站",
+      "venue": "C·PARK LG层",
+      "district": "Changning",
+      "vibe": [
+        "underground",
+        "club"
+      ],
+      "genre": "electronic, club music",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "预售 ¥60 / 现场 ¥80 / 老乡票 ¥50 (凭贵州身份证)",
+      "age": "Not listed",
+      "source": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg",
+      "sourceLabel": "User-provided poster",
+      "imageTheme": "rose",
+      "description": "贵州厨房主题电子音乐派对，由Xingrui(VJ)、Gips、Digital Jade、ZhuoZhuo、badbadbadbad、PIBBYKILLSYOURDADDY带来多元电子音乐体验。",
+      "sourceStatus": "user-screenshot",
+      "address": "上海市长宁区昭化路658号 C·PARK LG层",
+      "organizer": "贵州厨房",
+      "lastChecked": "2026-06-16",
+      "lineup": [
+        {
+          "name": "Xingrui(VJ)",
+          "note": "Poster-listed VJ artist."
+        },
+        {
+          "name": "Gips",
+          "note": "Poster-listed DJ artist."
+        },
+        {
+          "name": "Digital Jade",
+          "note": "Poster-listed DJ artist."
+        },
+        {
+          "name": "ZhuoZhuo",
+          "note": "Poster-listed DJ artist."
+        },
+        {
+          "name": "badbadbadbad",
+          "note": "Poster-listed DJ artist."
+        },
+        {
+          "name": "PIBBYKILLSYOURDADDY",
+          "note": "Poster-listed DJ artist."
+        }
+      ],
+      "posterEvidence": {
+        "type": "flyer",
+        "source": "User-provided poster",
+        "url": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg",
+        "status": "User-provided poster confirms date, time, venue, address, lineup, and pricing tiers.",
+        "localFiles": [
+          "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg"
+        ]
+      },
+      "ticketStatus": "Poster shows presale at 60 RMB, door at 80 RMB, and special 50 RMB ticket for Guizhou residents with ID. No public ticket URL visible.",
+      "sources": [
+        {
+          "label": "User-provided poster",
+          "url": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg",
+          "status": "official-poster-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "Poster confirms title, date, time, venue, address, full lineup, and three pricing tiers."
+        }
+      ],
+      "posterUrl": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg"
+    },
+    {
+      "id": "malaa-max-shanghai",
+      "month": "Jun",
+      "sortDate": "2026-06-20",
+      "date": "Jun 20",
+      "time": "Not specified",
+      "title": "MALAA @ MAX Shanghai",
+      "venue": "MAX Shanghai",
+      "district": "Huangpu",
+      "vibe": [
+        "g-house",
+        "tech-house",
+        "bass"
+      ],
+      "genre": "G-house, bass house, tech house",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "¥188起",
+      "age": "Not listed",
+      "source": "assets/posters/malaa-max-shanghai-optimized.jpg",
+      "sourceLabel": "YuYuan WeChat mini-program",
+      "imageTheme": "ember",
+      "description": "法国神秘匿名DJ MALAA首次登陆上海MAX俱乐部，带来标志性的G-house和bass house音乐体验。MALAA是Pardon My French核心成员，与DJ Snake、Tchami、Mercer齐名。",
+      "sourceStatus": "ticketing-screenshot",
+      "address": "上海市黄浦区淮海中路98号金钟广场2-3F",
+      "organizer": "MAX Shanghai",
+      "lastChecked": "2026-06-16",
+      "lineup": [
+        {
+          "name": "MALAA",
+          "note": "French masked DJ, Pardon My French member, G-house pioneer."
+        }
+      ],
+      "posterEvidence": {
+        "type": "flyer",
+        "source": "User-provided poster",
+        "url": "assets/posters/malaa-max-shanghai-optimized.jpg",
+        "status": "User-provided poster confirms artist, date, and venue.",
+        "localFiles": [
+          "assets/posters/malaa-max-shanghai-optimized.jpg"
+        ]
+      },
+      "ticketStatus": "YuYuan mini-program screenshot shows 188 RMB starting price. Purchase through WeChat mini-program.",
+      "sources": [
+        {
+          "label": "YuYuan WeChat mini-program",
+          "url": "assets/posters/malaa-max-shanghai-optimized.jpg",
+          "status": "ticketing-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "YuYuan mini-program confirms MALAA on Jun 20 at MAX Shanghai with 188 RMB starting price."
+        }
+      ],
+      "posterUrl": "assets/posters/malaa-max-shanghai-optimized.jpg"
+    },
+    {
+      "id": "oscar-l-mim-club",
+      "month": "Jun",
+      "sortDate": "2026-06-19",
+      "date": "Jun 19",
+      "time": "Not specified",
+      "title": "Oscar L @ MiM CLUB",
+      "venue": "MiM CLUB",
+      "district": "Unknown",
+      "vibe": [
+        "techno",
+        "underground"
+      ],
+      "genre": "techno",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "¥158起",
+      "age": "Not listed",
+      "source": "assets/posters/oscar-l-mim-club-optimized.jpg",
+      "sourceLabel": "YuYuan WeChat mini-program",
+      "imageTheme": "cyan",
+      "description": "西班牙知名DJ/制作人Oscar L登陆上海MiM CLUB。曾在Tomorrowland与Drumcode Festival等多个全球知名音乐节演出，作品发行于Drumcode和Stereo Production等顶级厂牌。",
+      "sourceStatus": "ticketing-screenshot",
+      "address": "上海.MiM CLUB",
+      "organizer": "MiM CLUB",
+      "lastChecked": "2026-06-16",
+      "lineup": [
+        {
+          "name": "Oscar L",
+          "note": "Spanish DJ/producer, Drumcode artist, Tomorrowland performer."
+        }
+      ],
+      "posterEvidence": {
+        "type": "flyer",
+        "source": "User-provided poster",
+        "url": "assets/posters/oscar-l-mim-club-optimized.jpg",
+        "status": "User-provided poster confirms artist, date, and venue.",
+        "localFiles": [
+          "assets/posters/oscar-l-mim-club-optimized.jpg"
+        ]
+      },
+      "ticketStatus": "YuYuan mini-program screenshot shows 158 RMB starting price. Purchase through WeChat mini-program.",
+      "sources": [
+        {
+          "label": "YuYuan WeChat mini-program",
+          "url": "assets/posters/oscar-l-mim-club-optimized.jpg",
+          "status": "ticketing-screenshot",
+          "lastChecked": "2026-06-16",
+          "verificationNote": "YuYuan mini-program confirms Oscar L on Jun 19 at MiM CLUB with 158 RMB starting price."
+        }
+      ],
+      "posterUrl": "assets/posters/oscar-l-mim-club-optimized.jpg"
     }
   ]
 }

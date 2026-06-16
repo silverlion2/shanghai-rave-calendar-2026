@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T02:14:20.975Z",
+  "generatedAt": "2026-06-16T17:07:48.519Z",
   "sourceData": "data/events.json",
   "storagePolicy": {
     "mode": "static-json-plus-local-optimized-assets",
@@ -7,16 +7,16 @@
     "rule": "Use optimized display assets in the wall; keep raw poster files out of the default browsing path when the archive grows."
   },
   "stats": {
-    "posters": 71,
+    "posters": 74,
     "years": [
       2026
     ],
-    "venues": 33,
+    "venues": 36,
     "optimizedCount": 71,
-    "displayBytes": 12907094,
-    "sourceBytes": 40268360,
-    "displayMegabytes": 12.31,
-    "sourceMegabytes": 38.4,
+    "displayBytes": 13436972,
+    "sourceBytes": 40798238,
+    "displayMegabytes": 12.81,
+    "sourceMegabytes": 38.91,
     "freeTierSoftCapBytes": 83886080,
     "freeTierSoftCapMegabytes": 80
   },
@@ -649,6 +649,50 @@
       "notes": "Abyss Jun 26 Obsesion Total with BOTOX FATAL (live), TUI, Kong BB, and Noodleprince. The new Yuyuan ticketing screenshot confirms the 22:00 start, Abyss club venue, 90 RMB+ ticket tier, e-ticket state, and no-refund label, upgrading the previous watch lead into a confirmed upcoming listing."
     },
     {
+      "id": "shanghai-2026-suaner-lanv-guizhou-kitchen",
+      "eventId": "suaner-lanv-guizhou-kitchen",
+      "title": "酸儿辣女 - 贵州厨房 上海站",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 26",
+      "sortDate": "2026-06-26",
+      "time": "22:00-Late",
+      "venue": "C·PARK LG层",
+      "district": "Changning",
+      "sound": "electronic, club music",
+      "tags": [
+        "upcoming",
+        "high",
+        "changning",
+        "underground",
+        "club",
+        "electronic",
+        "club music"
+      ],
+      "status": "upcoming",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "User-provided poster",
+        "url": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg",
+        "posterEvidenceUrl": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg",
+        "posterEvidenceSource": "User-provided poster",
+        "posterEvidenceStatus": "User-provided poster confirms date, time, venue, address, lineup, and pricing tiers."
+      },
+      "image": {
+        "thumbnail": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg",
+        "display": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg",
+        "sourceAsset": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg",
+        "displayBytes": 176626,
+        "sourceBytes": 176626,
+        "optimized": false,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/suaner-lanv-guizhou-kitchen.html",
+      "notes": "贵州厨房主题电子音乐派对，由Xingrui(VJ)、Gips、Digital Jade、ZhuoZhuo、badbadbadbad、PIBBYKILLSYOURDADDY带来多元电子音乐体验。"
+    },
+    {
       "id": "shanghai-2026-friendsstandout",
       "eventId": "friendsstandout",
       "title": "FRIENDSSTANDout",
@@ -1052,6 +1096,51 @@
       "notes": "LIQUID DOLLS brings SOBACK to ILLUM for the Shanghai stop of the China Tour 2026. Ticketing screenshot confirms 2026-06-20 to 2026-06-21, 22:00-04:00, ILLUM at C PARK LG floor, and 88/108/128 RMB ticket tiers; visible screenshots do not expose support names."
     },
     {
+      "id": "shanghai-2026-malaa-max-shanghai",
+      "eventId": "malaa-max-shanghai",
+      "title": "MALAA @ MAX Shanghai",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 20",
+      "sortDate": "2026-06-20",
+      "time": "Not specified",
+      "venue": "MAX Shanghai",
+      "district": "Huangpu",
+      "sound": "G-house, bass house, tech house",
+      "tags": [
+        "upcoming",
+        "high",
+        "huangpu",
+        "g-house",
+        "tech-house",
+        "bass",
+        "bass house",
+        "tech house"
+      ],
+      "status": "upcoming",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "YuYuan WeChat mini-program",
+        "url": "assets/posters/malaa-max-shanghai-optimized.jpg",
+        "posterEvidenceUrl": "assets/posters/malaa-max-shanghai-optimized.jpg",
+        "posterEvidenceSource": "User-provided poster",
+        "posterEvidenceStatus": "User-provided poster confirms artist, date, and venue."
+      },
+      "image": {
+        "thumbnail": "assets/posters/malaa-max-shanghai-optimized.jpg",
+        "display": "assets/posters/malaa-max-shanghai-optimized.jpg",
+        "sourceAsset": "assets/posters/malaa-max-shanghai-optimized.jpg",
+        "displayBytes": 176626,
+        "sourceBytes": 176626,
+        "optimized": false,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/malaa-max-shanghai.html",
+      "notes": "法国神秘匿名DJ MALAA首次登陆上海MAX俱乐部，带来标志性的G-house和bass house音乐体验。MALAA是Pardon My French核心成员，与DJ Snake、Tchami、Mercer齐名。"
+    },
+    {
       "id": "shanghai-2026-neon-jungle-tom-kynd",
       "eventId": "neon-jungle-tom-kynd",
       "title": "NEON JUNGLE feat. TOM KYND",
@@ -1450,6 +1539,48 @@
       },
       "eventUrl": "events/onefortyasia-mungk-simbie.html",
       "notes": "ONEFORTYASIA brings MUNGK and SIMBIE to EXIT with a bass, dubstep, and UK garage frame plus local support from D8, Diipset, Sanli, Siesta, and Somebodyyyy."
+    },
+    {
+      "id": "shanghai-2026-oscar-l-mim-club",
+      "eventId": "oscar-l-mim-club",
+      "title": "Oscar L @ MiM CLUB",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 19",
+      "sortDate": "2026-06-19",
+      "time": "Not specified",
+      "venue": "MiM CLUB",
+      "district": "Unknown",
+      "sound": "techno",
+      "tags": [
+        "upcoming",
+        "high",
+        "unknown",
+        "techno",
+        "underground"
+      ],
+      "status": "upcoming",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "YuYuan WeChat mini-program",
+        "url": "assets/posters/oscar-l-mim-club-optimized.jpg",
+        "posterEvidenceUrl": "assets/posters/oscar-l-mim-club-optimized.jpg",
+        "posterEvidenceSource": "User-provided poster",
+        "posterEvidenceStatus": "User-provided poster confirms artist, date, and venue."
+      },
+      "image": {
+        "thumbnail": "assets/posters/oscar-l-mim-club-optimized.jpg",
+        "display": "assets/posters/oscar-l-mim-club-optimized.jpg",
+        "sourceAsset": "assets/posters/oscar-l-mim-club-optimized.jpg",
+        "displayBytes": 176626,
+        "sourceBytes": 176626,
+        "optimized": false,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/oscar-l-mim-club.html",
+      "notes": "西班牙知名DJ/制作人Oscar L登陆上海MiM CLUB。曾在Tomorrowland与Drumcode Festival等多个全球知名音乐节演出，作品发行于Drumcode和Stereo Production等顶级厂牌。"
     },
     {
       "id": "shanghai-2026-wigwam-weekly-listening-wheon",
