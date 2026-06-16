@@ -519,7 +519,7 @@ window.DJ_ITINERARY_DATA = {
   "njelic": {
     "slug": "njelic",
     "name": "NJELIC",
-    "trackedAt": "2026-06-16",
+    "trackedAt": "2026-06-17",
     "checkedByTimezone": "Asia/Shanghai",
     "scope": "Worldwide itinerary rows generated from scraped and curated event data",
     "imageTheme": "ember",
@@ -535,7 +535,7 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai event description",
         "url": "https://www.smartshanghai.com/event/a-full-afrowave-takeover-at-la-burg",
         "status": "watchlist",
-        "checked": "2026-06-14"
+        "checked": "2026-06-17"
       }
     ],
     "itinerary": [
