@@ -5,9 +5,10 @@ Last refreshed: 2026-06-16, Asia/Shanghai.
 ## Source Priority
 
 1. Resident Advisor event pages and city listings for Shanghai electronic event facts.
-2. Direct venue, promoter, ticketing, or official artist pages for official updates and conflict resolution.
-3. SmartShanghai event pages and monthly clubbing guide for local English context, venue details, and discovery.
-4. Public social posts, WeChat mini-program references, Xiaohongshu, Douyin, Instagram, and reposts as discovery leads unless visually verified and corroborated. For social verification, check XHS and WeChat before Instagram. Instagram is no longer a login-assisted route for this project; public/indexed Instagram snippets remain leads only.
+2. Yuyuan WeChat mini-program for local ticketing/core-field discovery and verification when accessible through the logged-in desktop WeChat mini-program window. Use it before generic social search for price tiers, ticket state, start time, venue, poster cover, and running-order text.
+3. Direct venue, promoter, ticketing, or official artist pages for official updates and conflict resolution.
+4. SmartShanghai event pages and monthly clubbing guide for local English context, venue details, and discovery.
+5. Public social posts, WeChat mini-program references, Xiaohongshu, Douyin, Instagram, and reposts as discovery leads unless visually verified and corroborated. For social verification, check XHS and WeChat before Instagram. Instagram is no longer a login-assisted route for this project; public/indexed Instagram snippets remain leads only.
 
 Collection method is separate from confirmation strength: Chrome + Computer Use can discover or verify a source when RA/social/ticketing pages are dynamic or blocked, but RA remains the highest-priority public nightlife source for Shanghai event facts. An event still needs a shareable RA, official, ticketing, venue/promoter, SmartShanghai, or artist/label reference before it is promoted from watch-level to upcoming.
 
@@ -30,6 +31,7 @@ Rules for worldwide overlay rows: official artist pages win for city/date confir
 `scripts/scrape-events.js` writes `computerUseQueue` to `data/events.json` on every run. The queue is for sources where plain HTTP fetch is blocked, incomplete, login-bound, app-only, or image-first. These are agent-operated Chrome + Computer Use collection tasks, not human manual scraping:
 
 - RA Shanghai: use Chrome when city listing fetch returns 403, empty, or stale results.
+- Yuyuan WeChat mini-program: first local ticketing/core-field route after RA. Use citywide, venue, promoter, event-title, and DJ searches inside the mini-program. Read list and detail pages only; capture title, date, start time, venue/address, lineup/running order, price tier, e-ticket/standing/no-refund labels, customer-service route, and poster cover. Do not click purchase/payment and do not invent public ticket URLs for app-only pages.
 - SmartShanghai: use Chrome when listing/guide fetch times out or misses rendered event cards.
 - Xiaohongshu: platform-native search for Shanghai techno/rave/electronic/club queries, venue names, promoter names, event titles, dates, posters, and comment leads. Ask the user before relying on a logged-in XHS session.
 - WeChat official accounts/groups: official announcements, ticket QR codes, set times, lineup changes, and cancellations. Prefer official-account article/search routes and public mirrors before mini-program or login-dependent handoffs.
@@ -42,7 +44,9 @@ Rules for worldwide overlay rows: official artist pages win for city/date confir
 
 Added `config/promotion-platform-network.json` as the persistent venue/promoter graph. It currently seeds known Shanghai electronic venues and organizers from recent RA rows plus user-confirmed screenshot ingests: Heim, Wigwam, Abyss, ILLUM, EXIT, Yuyintang, POTENT, Reactor, Dirty House, Specters, FaQ, Liminal Dreams, Earworthy, DiscChef, SO.READY, Normie Corporation, LIQUID DOLLS, YOUSHAN, HouseHeadz Records, and Minuit.
 
-Workflow rule: Resident Advisor remains the first source class. After RA, `scripts/scrape-events.js` now reads the promotion network and writes `promotionPlatformQueue` plus `quality.promotionPlatformNetwork` into `data/events.json`. These entity-specific WeChat, XHS, Yuyuan mini-program, ShowStart, SmartShanghai context, and public-index routes are inserted into `computerUseQueue` before generic social/keyword discovery. Every future screenshot ingest should update this network when it reveals a new venue, promoter, account name, ticketing route, or recurring series.
+Workflow rule: Resident Advisor remains the first source class. After RA, `scripts/scrape-events.js` now reads the promotion network and writes `promotionPlatformQueue` plus `quality.promotionPlatformNetwork` into `data/events.json`. Yuyuan WeChat mini-program is the preferred local ticketing/core-field route and is inserted before generic venue social searches; entity-specific WeChat, XHS, ShowStart, SmartShanghai context, and public-index routes follow before generic social/keyword discovery. Every future screenshot or Computer Use ingest should update this network when it reveals a new venue, promoter, account name, ticketing route, or recurring series.
+
+2026-06-16 Computer Use test: the live desktop WeChat mini-program window `Yuyuan YuYuan` allowed visual navigation into event detail pages. It confirmed Yuyuan can add new event leads and fill fields: `Antigen Pres. KAVARI` at Reactor Shanghai exposed 2026-06-26 22:00, 98 RMB+, Reactor Shanghai, no-refund/e-ticket/standing labels, and second-layer running-order text; `Le Youth 2026 China Tour Shanghai` exposed 2026-06-27 16:30, 228 RMB+, venue/address text, and ticket labels. Treat Yuyuan as a first-pass local discovery source, but keep app-only pages as screenshot/ticket-route evidence unless a shareable URL exists.
 
 Anti-scrape rule preserved in the network: use platform-native search first for XHS, WeChat, Sogou, ticketing, and public social pages; stop on login/captcha/security-limit pages; ask the user only for XHS/WeChat login-assisted viewing when needed; never ask for Instagram login or treat Instagram-only snippets as current-event confirmation.
 

@@ -92,11 +92,12 @@ Do not make the recommendation about where the event was found. Source discovery
 
 ## Anti-Scrape And Browser Rules
 
-1. For XHS, WeChat, Sogou, Instagram, and ticketing apps, use platform-native search and visible account/post routes first.
-2. Stop immediately on login walls, captcha, verification, security-limit, abnormal-access, or warning pages.
-3. Ask the user for XHS or WeChat login-assisted viewing only when needed. Do not enter credentials.
-4. Do not ask for Instagram login. Treat Instagram as public/index-only for this project.
-5. Do not bulk probe guessed social URLs or repeatedly reload direct deep links.
+1. For Shanghai local ticketing/core-field checks, use the Yuyuan WeChat mini-program first when the desktop WeChat session is available. Search inside Yuyuan by citywide electronic terms, venue, promoter, event title, and DJ; read list/detail pages only, capture screenshots, and do not click purchase or payment controls.
+2. For XHS, WeChat, Sogou, Instagram, and other ticketing apps, use platform-native search and visible account/post routes first.
+3. Stop immediately on login walls, captcha, verification, security-limit, abnormal-access, or warning pages.
+4. Ask the user for XHS or WeChat login-assisted viewing only when needed. Do not enter credentials.
+5. Do not ask for Instagram login. Treat Instagram as public/index-only for this project.
+6. Do not bulk probe guessed social URLs or repeatedly reload direct deep links.
 
 ## Regeneration And Validation
 

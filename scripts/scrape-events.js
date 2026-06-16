@@ -994,6 +994,15 @@ function routeSearchQuery(entity = {}, route = {}) {
   return cleanText(route.query || route.accountName || route.handle || entity.name || route.platform || "");
 }
 
+function routeSearchQueries(entity = {}, route = {}) {
+  return Array.from(new Set([
+    routeSearchQuery(entity, route),
+    ...(Array.isArray(route.queries) ? route.queries : []),
+    [entity.name, "Shanghai"].filter(Boolean).join(" "),
+    ...(Array.isArray(entity.aliases) ? entity.aliases.slice(0, 3) : []),
+  ].map(cleanText).filter(Boolean)));
+}
+
 function platformRouteUrl(entity = {}, route = {}) {
   if (route.url) return normalizeUrl(route.url) || route.url;
   const platform = cleanText(route.platform || "");
@@ -1039,9 +1048,65 @@ function promotionPlatformEvidence(route = {}) {
   return ["account name", "post/article title", "publish date", "event title/date", "venue", "lineup or ticket facts"];
 }
 
+function promotionPlatformRouteCount(network = {}) {
+  const entities = Array.isArray(network.entities) ? network.entities : [];
+  const entityRoutes = entities.reduce((total, entity) => (
+    total + (Array.isArray(entity.platforms) ? entity.platforms.length : 0)
+  ), 0);
+  const globalRoutes = Array.isArray(network.globalRoutes) ? network.globalRoutes.length : 0;
+  return entityRoutes + globalRoutes;
+}
+
+function promotionPlatformRank(platform = "") {
+  const normalized = String(platform || "").toLowerCase();
+  if (/yuyuan|芋圆/.test(normalized)) return 0;
+  if (/resident advisor|^ra$/.test(normalized)) return 1;
+  if (/showstart|damai|piaoplanet|247tickets|ticketing/.test(normalized)) return 2;
+  if (/wechat|weixin/.test(normalized)) return 3;
+  if (/xiaohongshu|xhs/.test(normalized)) return 4;
+  if (/smartshanghai/.test(normalized)) return 5;
+  if (/instagram/.test(normalized)) return 8;
+  return 6;
+}
+
 function buildPromotionPlatformQueue(network, checkedAt) {
   const entities = Array.isArray(network?.entities) ? network.entities : [];
+  const globalRoutes = Array.isArray(network?.globalRoutes) ? network.globalRoutes : [];
   const tasks = [];
+  for (const route of globalRoutes) {
+    const platform = cleanText(route.platform || "Platform source");
+    const routeType = cleanText(route.route || "platform-search");
+    const role = cleanText(route.trustRole || "platform route");
+    tasks.push({
+      label: `Network: citywide / ${platform} / ${routeType}`,
+      platform,
+      url: platformRouteUrl({ name: "Shanghai electronic music" }, route),
+      priority: Number(route.priority || 1),
+      sourceNetworkPriority: Number(route.priority || 1),
+      cadence: "Every scrape cycle; run after RA and before venue-by-venue social search",
+      trigger: `Run the citywide ${platform} route before generic keyword discovery; use ${routeType} and stop on platform warnings.`,
+      collectionGoal: `Discover and verify Shanghai electronic events through ${platform}: event date, venue, lineup, ticket route, poster, and last-minute updates when visible.`,
+      queries: routeSearchQueries({ name: "Shanghai electronic music", aliases: [] }, route),
+      evidence: promotionPlatformEvidence(route),
+      kind: "promotion-platform-network",
+      sourceStatus: "computer-use",
+      access: "chrome-computer-use",
+      checkedAt,
+      parsed: false,
+      entityId: "citywide-platform",
+      entityType: "citywide-platform",
+      entityName: platform,
+      route: routeType,
+      trustRole: role,
+      scrapePolicy: cleanText(route.scrapePolicy || "platform-native-search-first"),
+      routeAccess: cleanText(route.access || "browser-required"),
+      notes: cleanText(route.notes || ""),
+      confirmationRule: "Treat this route as a local ticketing/discovery task. It confirms an event only when visible current-event facts are captured from the mini-program, ticketing screen, official venue/promoter, or shareable evidence.",
+      collectionChecklist: COMPUTER_USE_COLLECTION_CHECKLIST,
+      deepCollectionRules: COMPUTER_USE_DEEP_COLLECTION_RULES,
+      requiredFields: COMPUTER_USE_COLLECTION_CHECKLIST,
+    });
+  }
   for (const entity of entities) {
     const platforms = Array.isArray(entity.platforms) ? entity.platforms : [];
     for (const route of platforms) {
@@ -1060,11 +1125,7 @@ function buildPromotionPlatformQueue(network, checkedAt) {
           : "Every 2-3 days or when a matching future event has gaps",
         trigger: `Scrape ${entity.name}'s known promotion network before generic keyword discovery; use ${routeType} and stop on platform warnings.`,
         collectionGoal: `Confirm ${entity.name} ${role}: event date, venue, lineup, ticket route, poster, and last-minute updates when visible.`,
-        queries: Array.from(new Set([
-          query,
-          [entity.name, "Shanghai"].filter(Boolean).join(" "),
-          ...(Array.isArray(entity.aliases) ? entity.aliases.slice(0, 3) : []),
-        ].map(cleanText).filter(Boolean))),
+        queries: routeSearchQueries(entity, route),
         evidence: promotionPlatformEvidence(route),
         kind: "promotion-platform-network",
         sourceStatus: "computer-use",
@@ -1089,6 +1150,7 @@ function buildPromotionPlatformQueue(network, checkedAt) {
   return tasks.sort((first, second) => (
     first.priority - second.priority
     || first.sourceNetworkPriority - second.sourceNetworkPriority
+    || promotionPlatformRank(first.platform) - promotionPlatformRank(second.platform)
     || String(first.entityName || "").localeCompare(String(second.entityName || ""))
     || String(first.platform || "").localeCompare(String(second.platform || ""))
     || String(first.route || "").localeCompare(String(second.route || ""))
@@ -1119,6 +1181,7 @@ function promotionEntityMatchesEvent(entity = {}, event = {}) {
 
 function buildPromotionPlatformNetworkSnapshot(network, promotionPlatformQueue, events, auditDate) {
   const entities = Array.isArray(network?.entities) ? network.entities : [];
+  const globalRoutes = Array.isArray(network?.globalRoutes) ? network.globalRoutes : [];
   const future = events.filter(event => String(event.sortDate || "") >= auditDate);
   const matchedEventIds = new Set();
   const entityCoverage = entities.map(entity => {
@@ -1164,11 +1227,19 @@ function buildPromotionPlatformNetworkSnapshot(network, promotionPlatformQueue, 
     source: "config/promotion-platform-network.json",
     updatedAt: network?.updatedAt || "",
     entityCount: entities.length,
-    routeCount: entities.reduce((total, entity) => total + (Array.isArray(entity.platforms) ? entity.platforms.length : 0), 0),
+    routeCount: promotionPlatformRouteCount(network),
+    globalRouteCount: globalRoutes.length,
+    globalRoutes: globalRoutes.map(route => ({
+      platform: route.platform || "",
+      route: route.route || "",
+      priority: Number(route.priority || 1),
+      trustRole: route.trustRole || "",
+      query: route.query || "",
+    })),
     queueCount: promotionPlatformQueue.length,
     scrapeOrder: Array.isArray(network?.scrapeOrder) ? network.scrapeOrder : [],
     antiScrapePolicy: network?.antiScrapePolicy || {},
-    priorityRule: "Run Resident Advisor first, then entity promotion-platform tasks sorted by route priority, entity priority, and entity name before generic social keyword discovery.",
+    priorityRule: "Run Resident Advisor first, then Yuyuan/local ticketing routes, then entity promotion-platform tasks sorted by route priority, entity priority, platform rank, and entity name before generic social keyword discovery.",
     confirmationRule: "Entity network routes are collection paths. They confirm an event only after visible current-event facts are captured from RA, official venue/promoter, ticketing, or shareable source evidence.",
     entityCoverage,
     unmappedFutureVenueCount: Array.from(new Set(unmappedFutureEvents.map(event => event.venue).filter(Boolean))).length,
@@ -2883,9 +2954,8 @@ async function main() {
       source: "config/promotion-platform-network.json",
       updatedAt: promotionPlatformNetwork.updatedAt || "",
       entityCount: Array.isArray(promotionPlatformNetwork.entities) ? promotionPlatformNetwork.entities.length : 0,
-      routeCount: Array.isArray(promotionPlatformNetwork.entities)
-        ? promotionPlatformNetwork.entities.reduce((total, entity) => total + (Array.isArray(entity.platforms) ? entity.platforms.length : 0), 0)
-        : 0,
+      routeCount: promotionPlatformRouteCount(promotionPlatformNetwork),
+      globalRouteCount: Array.isArray(promotionPlatformNetwork.globalRoutes) ? promotionPlatformNetwork.globalRoutes.length : 0,
       scrapeOrder: promotionPlatformNetwork.scrapeOrder || [],
       antiScrapePolicy: promotionPlatformNetwork.antiScrapePolicy || {},
     },

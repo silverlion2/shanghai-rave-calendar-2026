@@ -83,9 +83,13 @@ function promotionPlatformEntities() {
 }
 
 function promotionPlatformRouteCount() {
-  return promotionPlatformEntities().reduce((total, entity) => (
+  const entityRoutes = promotionPlatformEntities().reduce((total, entity) => (
     total + (Array.isArray(entity.platforms) ? entity.platforms.length : 0)
   ), 0);
+  const globalRoutes = Array.isArray(promotionPlatformNetworkConfig.globalRoutes)
+    ? promotionPlatformNetworkConfig.globalRoutes.length
+    : 0;
+  return entityRoutes + globalRoutes;
 }
 
 function eventSourceCount(event) {
@@ -847,11 +851,19 @@ if (payload.quality) {
     }
     const firstNetworkIndex = computerUseQueue.findIndex(item => item.kind === "promotion-platform-network");
     const firstGenericIndex = computerUseQueue.findIndex(item => item.kind === "computer-use-source" && item.label !== "RA Shanghai");
+    const firstYuyuanIndex = computerUseQueue.findIndex(item => item.kind === "promotion-platform-network" && /yuyuan/i.test(String(item.platform || item.label || "")));
+    const firstNonYuyuanNetworkIndex = computerUseQueue.findIndex(item => item.kind === "promotion-platform-network" && !/resident advisor|yuyuan/i.test(String(item.platform || item.label || "")));
     if (computerUseQueue[0]?.label !== "RA Shanghai") {
       issues.push("computerUseQueue must keep RA Shanghai first before entity network and generic platform tasks");
     }
     if (firstNetworkIndex === -1) {
       issues.push("computerUseQueue must include promotion-platform-network tasks");
+    }
+    if (firstYuyuanIndex === -1) {
+      issues.push("computerUseQueue must include Yuyuan promotion-platform tasks after the platform was verified as a preferred local ticketing source");
+    }
+    if (firstYuyuanIndex !== -1 && firstNonYuyuanNetworkIndex !== -1 && firstNonYuyuanNetworkIndex < firstYuyuanIndex) {
+      issues.push("computerUseQueue must place Yuyuan ticketing/discovery tasks before non-RA generic venue social tasks");
     }
     if (firstNetworkIndex !== -1 && firstGenericIndex !== -1 && firstGenericIndex < firstNetworkIndex) {
       issues.push("computerUseQueue must place promotion-platform-network tasks before generic platform tasks");
@@ -1036,6 +1048,7 @@ console.log(JSON.stringify({
     updatedAt: payload.quality.promotionPlatformNetwork.updatedAt,
     entityCount: payload.quality.promotionPlatformNetwork.entityCount,
     routeCount: payload.quality.promotionPlatformNetwork.routeCount,
+    globalRouteCount: payload.quality.promotionPlatformNetwork.globalRouteCount,
     queueCount: payload.quality.promotionPlatformNetwork.queueCount,
     unmappedFutureVenueCount: payload.quality.promotionPlatformNetwork.unmappedFutureVenueCount,
     unmappedFutureVenues: Array.isArray(payload.quality.promotionPlatformNetwork.unmappedFutureVenues)

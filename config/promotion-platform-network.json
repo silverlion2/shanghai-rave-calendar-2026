@@ -4,10 +4,27 @@
   "timezone": "Asia/Shanghai",
   "scope": "Venue and promoter promotion-platform network for Shanghai Rave Index scraping.",
   "purpose": "Scrape Resident Advisor first, then venue/promoter-owned promotion routes before generic discovery. Use this file to decide which platform-native searches to run for each known venue or organizer.",
+  "preferredLocalTicketingPlatform": {
+    "platform": "Yuyuan WeChat mini-program",
+    "verifiedAt": "2026-06-16",
+    "verifiedWith": "Windows WeChatAppEx window title Yuyuan YuYuan",
+    "role": "First local ticketing and core-field verification route after RA city coverage; use before generic social or keyword discovery.",
+    "verifiedCapabilities": [
+      "Visible event list cards expose title, poster/cover, date, city, venue or organizer, and distance.",
+      "Visible detail pages expose date, start time, venue, price-from tier, e-ticket, standing-room, no-refund labels, and customer-service route when present.",
+      "Detail pages can expose second-layer copy and running-order text, as verified on Antigen Pres. KAVARI at Reactor Shanghai."
+    ],
+    "limits": [
+      "Do not click purchase or payment controls.",
+      "Do not invent public ticketUrl values for app-only pages.",
+      "Keep screenshots as evidence and record Yuyuan as the ticketing route."
+    ]
+  },
   "scrapeOrder": [
     "Resident Advisor Shanghai city/date listings and event pages when reachable or browser-visible",
+    "Yuyuan WeChat mini-program citywide and venue/event search for local ticketing, poster covers, price tiers, and core practical fields",
     "Known venue/promoter promotion networks: WeChat, XHS, ticketing mini-programs, official account posts, and clean poster posts",
-    "Known ticketing routes such as Yuyuan WeChat mini-program, ShowStart, SmartShanghai ticket pages, Damai, PiaoPlanet, and 247tickets",
+    "Known ticketing routes such as ShowStart, SmartShanghai ticket pages, Damai, PiaoPlanet, and 247tickets",
     "SmartShanghai event pages and venue-context pages",
     "Public social/index snippets as leads only",
     "Generic keyword discovery after the entity network pass"
@@ -20,6 +37,19 @@
     "instagram": "Public/index-only. Do not ask for Instagram login; keep Instagram-only evidence as social-lead until confirmed elsewhere.",
     "deepLinks": "Do not bulk probe guessed social URLs. Known URLs should be opened only after platform-native search or when already stored as source evidence."
   },
+  "globalRoutes": [
+    {
+      "platform": "Yuyuan WeChat mini-program",
+      "route": "mini-program-citywide-electronic-search",
+      "query": "Shanghai electronic music",
+      "queries": ["Abyss", "Heim", "ILLUM", "EXIT", "Reactor", "Wigwam", "POTENT", "techno", "DJ"],
+      "priority": 1,
+      "trustRole": "ticketing-discovery-and-core-field-verification",
+      "access": "login-assisted-available",
+      "scrapePolicy": "mini-program-search-first",
+      "notes": "Computer Use test on 2026-06-16 confirmed Yuyuan can reveal new electronic events and fill core ticketing fields. Search inside the mini-program first; do not click buy/payment."
+    }
+  ],
   "entities": [
     {
       "id": "heim-shanghai",
@@ -114,6 +144,16 @@
           "trustRole": "poster-and-official-social",
           "access": "login-assisted-ask-user",
           "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Yuyuan WeChat mini-program",
+          "route": "mini-program-venue-search",
+          "query": "Wigwam",
+          "priority": 1,
+          "trustRole": "ticketing-and-poster-source",
+          "access": "login-assisted-available",
+          "scrapePolicy": "mini-program-search-first",
+          "notes": "Use Yuyuan to check whether ticketed Wigwam events expose price, start time, poster cover, and ticket status before falling back to social posts."
         },
         {
           "platform": "SmartShanghai",
@@ -221,12 +261,12 @@
           "scrapePolicy": "platform-native-search-first"
         },
         {
-          "platform": "Ticketing mini-program",
+          "platform": "Yuyuan WeChat mini-program",
           "route": "mini-program-venue-search",
-          "query": "ILLUM Shanghai 06",
-          "priority": 2,
+          "query": "ILLUM",
+          "priority": 1,
           "trustRole": "ticketing-and-poster-source",
-          "access": "login-assisted-ask-user",
+          "access": "login-assisted-available",
           "scrapePolicy": "mini-program-search-first"
         },
         {
@@ -374,6 +414,16 @@
           "scrapePolicy": "platform-native-search-first"
         },
         {
+          "platform": "Yuyuan WeChat mini-program",
+          "route": "mini-program-venue-search",
+          "query": "POTENT",
+          "queries": ["POTENT", "Anika Kunst"],
+          "priority": 1,
+          "trustRole": "ticketing-and-poster-source",
+          "access": "login-assisted-available",
+          "scrapePolicy": "mini-program-search-first"
+        },
+        {
           "platform": "Instagram public index",
           "route": "public-profile-search",
           "query": "potent_club POTENT JUNE 2026",
@@ -419,6 +469,17 @@
           "trustRole": "poster-and-official-social",
           "access": "login-assisted-ask-user",
           "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Yuyuan WeChat mini-program",
+          "route": "mini-program-venue-search",
+          "query": "Reactor Shanghai",
+          "queries": ["Antigen", "KAVARI", "Reactor"],
+          "priority": 1,
+          "trustRole": "ticketing-discovery-and-core-field-verification",
+          "access": "login-assisted-available",
+          "scrapePolicy": "mini-program-search-first",
+          "notes": "Computer Use test found a Reactor/Antigen event detail in Yuyuan with price, time, venue, and running-order text."
         }
       ]
     },
@@ -457,6 +518,15 @@
           "trustRole": "poster-and-official-social",
           "access": "login-assisted-ask-user",
           "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Yuyuan WeChat mini-program",
+          "route": "mini-program-venue-search",
+          "query": "Dirty House",
+          "priority": 1,
+          "trustRole": "ticketing-and-poster-source",
+          "access": "login-assisted-available",
+          "scrapePolicy": "mini-program-search-first"
         }
       ]
     },
@@ -486,6 +556,15 @@
           "trustRole": "poster-and-official-social",
           "access": "login-assisted-ask-user",
           "scrapePolicy": "platform-native-search-first"
+        },
+        {
+          "platform": "Yuyuan WeChat mini-program",
+          "route": "mini-program-venue-search",
+          "query": "Specters",
+          "priority": 1,
+          "trustRole": "ticketing-and-poster-source",
+          "access": "login-assisted-available",
+          "scrapePolicy": "mini-program-search-first"
         },
         {
           "platform": "SmartShanghai",
