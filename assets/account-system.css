@@ -50,40 +50,13 @@
 .account-studio {
   min-height: 720px;
   display: grid;
-  grid-template-columns: minmax(140px, 220px) minmax(300px, .9fr) minmax(400px, .78fr);
+  grid-template-columns: minmax(360px, .95fr) minmax(400px, .82fr);
   overflow: hidden;
   border: 1px solid rgba(229, 222, 209, .18);
   background:
     linear-gradient(90deg, rgba(255, 255, 255, .04), transparent 36%),
     rgba(6, 7, 7, .92);
   box-shadow: 0 22px 70px rgba(0, 0, 0, .42);
-}
-
-.account-studio-poster {
-  position: relative;
-  min-height: 720px;
-  overflow: hidden;
-  border-right: 1px solid rgba(229, 222, 209, .14);
-  background: rgba(5, 6, 6, .86);
-}
-
-.account-studio-poster::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background:
-    linear-gradient(180deg, rgba(5, 6, 6, .08), rgba(5, 6, 6, .7)),
-    linear-gradient(90deg, transparent, rgba(5, 6, 6, .34));
-}
-
-.account-studio-poster img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(.28) contrast(1.18) brightness(.72);
-  transform: scale(1.02);
 }
 
 .account-studio-intro {
@@ -1070,10 +1043,9 @@
 @media (max-width: 1180px) {
   .account-studio {
     min-height: auto;
-    grid-template-columns: minmax(132px, 180px) minmax(0, 1fr);
+    grid-template-columns: 1fr;
   }
 
-  .account-studio-poster,
   .account-studio-intro {
     min-height: 520px;
   }
@@ -1131,15 +1103,6 @@
 
   .account-studio {
     grid-template-columns: 1fr;
-  }
-
-  .account-studio-poster {
-    order: 3;
-    height: 170px;
-    min-height: 0;
-    border-right: 0;
-    border-top: 1px solid rgba(229, 222, 209, .14);
-    border-bottom: 1px solid rgba(229, 222, 209, .14);
   }
 
   .account-studio-intro {
