@@ -1,6 +1,17 @@
 # Shanghai Rave Index
 
-Interactive static rave index for Shanghai rave, techno, warehouse, industrial, bass, house, trance, experimental club, and underground electronic events in 2026. It includes a paired DJ database generated from the event lineups, with performer profiles, source status, set-time status, and event deep links.
+Shanghai Rave Index is an English-first, source-backed Shanghai rave calendar and underground nightlife guide for 2026 techno, house, bass, trance, industrial, experimental club, warehouse, and electronic music events.
+
+[Live calendar](https://raveindexsh.top/) | [Poster wall](https://raveindexsh.top/poster-wall) | [DJ database](https://raveindexsh.top/djs) | [Venue guide](https://raveindexsh.top/venues)
+
+![Shanghai Rave Index website preview showing the Shanghai rave calendar and underground electronic music event listings](shanghai-rave-calendar-2026-screenshot.png)
+
+## What it covers
+
+- Shanghai rave and techno events with dates, venues, ticket routes, source confidence, poster evidence, and event deep links.
+- DJ and venue discovery for Shanghai underground electronic music, including lineup-derived profiles and itinerary context.
+- Static Vercel-ready pages for the calendar, poster wall, live room, planner, Love Wall, subscription flow, contribution intake, and operations console.
+- A repeatable event refresh workflow that combines RA, SmartShanghai, venue/promoter sources, ticketing leads, WeChat/Xiaohongshu evidence, and local poster assets.
 
 ## Local preview
 

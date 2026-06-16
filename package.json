@@ -2,7 +2,28 @@
   "name": "shanghai-rave-index",
   "version": "1.0.0",
   "private": true,
-  "description": "Interactive Shanghai Rave Index for 2026 rave and underground electronic events.",
+  "description": "Source-backed Shanghai rave calendar for 2026 techno, nightlife, DJ, venue, and underground electronic music events.",
+  "homepage": "https://raveindexsh.top/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silverlion2/shanghai-rave-calendar-2026.git"
+  },
+  "keywords": [
+    "shanghai",
+    "rave",
+    "rave-calendar",
+    "techno",
+    "electronic-music",
+    "nightlife",
+    "club-events",
+    "event-calendar",
+    "dj-database",
+    "venue-guide",
+    "underground-music",
+    "vercel",
+    "supabase",
+    "web-scraping"
+  ],
   "scripts": {
     "start": "npx serve .",
     "test:account": "node --test tests/account-system.test.js",
