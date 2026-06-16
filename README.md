@@ -167,3 +167,13 @@ The project is static and can be deployed on Vercel with no build step:
 ```bash
 vercel --prod
 ```
+
+<!-- discoverability:start -->
+## Discoverability
+
+- **Project:** Shanghai Rave Index
+- **Summary:** English-first, source-backed Shanghai rave calendar and underground nightlife guide for electronic music events, DJs, venues, tickets, and poster evidence.
+- **Primary keywords:** shanghai, rave-calendar, techno, nightlife, electronic-music, club-events, venue-guide, dj-database, poster-archive, static-site, supabase, vercel
+- **Use cases:** Shanghai rave and club event discovery, DJ, venue, ticket, and poster research, Static event calendar publishing
+- **Live URL:** https://raveindexsh.top/
+<!-- discoverability:end -->
