@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T12:41:04.631Z",
+  "generatedAt": "2026-06-17T15:55:19.100Z",
   "sourceData": "data/events.json",
   "storagePolicy": {
     "mode": "static-json-plus-local-optimized-assets",
@@ -12,11 +12,11 @@
       2026
     ],
     "venues": 36,
-    "optimizedCount": 72,
-    "displayBytes": 13527523,
-    "sourceBytes": 43157257,
-    "displayMegabytes": 12.9,
-    "sourceMegabytes": 41.16,
+    "optimizedCount": 74,
+    "displayBytes": 13285323,
+    "sourceBytes": 43656952,
+    "displayMegabytes": 12.67,
+    "sourceMegabytes": 41.63,
     "freeTierSoftCapBytes": 83886080,
     "freeTierSoftCapMegabytes": 80
   },
@@ -683,10 +683,10 @@
       "image": {
         "thumbnail": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg",
         "display": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg",
-        "sourceAsset": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg",
-        "displayBytes": 233409,
-        "sourceBytes": 233409,
-        "optimized": false,
+        "sourceAsset": "assets/posters/suaner-lanv-guizhou-kitchen.jpg",
+        "displayBytes": 81533,
+        "sourceBytes": 932581,
+        "optimized": true,
         "mime": "image/jpeg"
       },
       "eventUrl": "events/suaner-lanv-guizhou-kitchen.html",
@@ -1123,7 +1123,7 @@
       "collection": "Shanghai Rave Index seed archive",
       "source": {
         "label": "YuYuan WeChat mini-program",
-        "url": "assets/posters/malaa-max-shanghai-optimized.jpg",
+        "url": "assets/posters/malaa-max-shanghai.jpg",
         "posterEvidenceUrl": "assets/posters/malaa-max-shanghai-optimized.jpg",
         "posterEvidenceSource": "User-provided poster",
         "posterEvidenceStatus": "User-provided poster confirms artist, date, and venue."
@@ -1132,8 +1132,8 @@
         "thumbnail": "assets/posters/malaa-max-shanghai-optimized.jpg",
         "display": "assets/posters/malaa-max-shanghai-optimized.jpg",
         "sourceAsset": "assets/posters/malaa-max-shanghai.jpg",
-        "displayBytes": 208672,
-        "sourceBytes": 2477140,
+        "displayBytes": 183246,
+        "sourceBytes": 2224759,
         "optimized": true,
         "mime": "image/jpeg"
       },
@@ -1565,7 +1565,7 @@
       "collection": "Shanghai Rave Index seed archive",
       "source": {
         "label": "YuYuan WeChat mini-program",
-        "url": "assets/posters/oscar-l-mim-club-optimized.jpg",
+        "url": "assets/posters/oscar-l-mim-club.jpg",
         "posterEvidenceUrl": "assets/posters/oscar-l-mim-club-optimized.jpg",
         "posterEvidenceSource": "User-provided poster",
         "posterEvidenceStatus": "User-provided poster confirms artist, date, and venue."
@@ -1573,10 +1573,10 @@
       "image": {
         "thumbnail": "assets/posters/oscar-l-mim-club-optimized.jpg",
         "display": "assets/posters/oscar-l-mim-club-optimized.jpg",
-        "sourceAsset": "assets/posters/oscar-l-mim-club-optimized.jpg",
-        "displayBytes": 178348,
-        "sourceBytes": 178348,
-        "optimized": false,
+        "sourceAsset": "assets/posters/oscar-l-mim-club.jpg",
+        "displayBytes": 113450,
+        "sourceBytes": 231252,
+        "optimized": true,
         "mime": "image/jpeg"
       },
       "eventUrl": "events/oscar-l-mim-club.html",

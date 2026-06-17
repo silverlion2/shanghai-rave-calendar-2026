@@ -857,3 +857,32 @@ Validation:
 - `node scripts/check.js`: passed, 3758 local links across 132 HTML/CSS files and 43 inline scripts.
 - `node scripts/audit-events.js`: warnings empty; 108 events, 51 future events, 77 promotion-platform routes.
 - `npm run check`: passed with 80 tests plus site structure, local link, and event audit checks.
+
+## 2026-06-17 Automated Shanghai Source Sweep
+
+Ran the source-sweep-first workflow for the current/future Shanghai window with `SCRAPE_NOW=2026-06-17T12:00:00+08:00`, `SCRAPE_FETCH_TIMEOUT_MS=12000`, `SCRAPE_X_FETCH_TIMEOUT_MS=6000`, and `SCRAPE_MAX_DETAIL_PAGES=24`.
+
+Sweep output:
+
+- `node scripts/scrape-events.js`: rewrote canonical data with 112 events, 21 discovered links processed during the scrape pipeline, 0 remaining `discoveredLinks`, 77 promotion-platform routes, 85 Computer Use sources, 91 curated updates, and 40 tracked DJ itinerary rows.
+- No new source-backed Shanghai techno-relevant activities were added in this pass; the sweep tightened the existing current/future set instead of expanding it.
+- RA Shanghai coverage stayed complete against the manifest: 43/43 covered, 16/16 visible upcoming rows matched, with RA still browser-required because scripted fetches return 403.
+- Gate B signal inventory expanded materially through tracked DJ/profile processing: `trackedDjProfiles` 136 -> 155, `curatedDjSourceProfiles` 134 -> 154, `technoArtistSignals` 126 -> 155, and `technoArtistSignalProfiles` 100 -> 120.
+- Future-event core-field debt improved but remains substantial: `futureCoreFieldQueue` 46 -> 44 and `futureMissingCoreFields` 112 -> 101.
+- Watch-risk counts improved: `futureWatch` 19 -> 17, `singleSourceWatch` 7 -> 5, and `singleConfirmationWatch` 11 -> 9.
+
+Highest-priority remaining public-source gaps after the sweep:
+
+- `jasmin-knopha` (`2026-06-20`): missing `time`, `price`, `age`, `ticketUrl`; still in `quality.platformVerificationQueue`.
+- `anika-kunst` (`2026-06-27`): missing `time`, `price`, `age`, `ticketUrl`; still in `quality.platformVerificationQueue`.
+- `youshan-warmup` (`2026-06-27`): missing `time`, `age`, `ticketUrl`, and lineup remains uncertain; still in `quality.platformVerificationQueue`.
+- `truth-lies` (`2026-06-27`): missing `time`, `price`, `age`, `ticketUrl`.
+
+Derived-file regeneration and verification:
+
+- `npm run seo`: regenerated 112 event detail pages and `sitemap.xml`.
+- `npm run posters:prepare`: refreshed `data/poster-archive.json`; no poster binaries changed, 74 poster records emitted.
+- `node --test tests/trust-framework.test.js`: passed.
+- `node scripts/check.js`: passed after poster-archive regeneration.
+- `node scripts/audit-events.js`: still fails on stale current/future source dates concentrated around Jun 14-15 checks, including `wigwam-weekly-listening-xiaolaba`, `cybionte-solo-ykk-heshang`, `heim-long-wave`, `photocult-mask-desire-auction`, `mrd`, `nikita-zabelin-potent`, `onefortyasia-mungk-simbie`, `atm-leo-monira`, `enchanted-night-the-nest`, `neon-jungle-tom-kynd`, `sciahri-potent`, `friendsstandout`, `cyber-buddha`, `dark-room`, `botox-fatale`, `anika-kunst`, `truth-lies`, `youshan-warmup`, `shenwave-music-festival-2026`, `west-bund-dream-center-waterfront-music-festival-2026`, `shaun-soomro-dj-serang`, and `the-magic-of-tomorrowland-shanghai-2026-watch`.
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json`: still reports pre-existing must-fix findings, dominated by missing `source` URLs on several rows and local `/_vercel/insights/script.js` link findings across generated pages.

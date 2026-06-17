@@ -8019,7 +8019,7 @@
       "status": "upcoming",
       "price": "¥158起",
       "age": "Not listed",
-      "source": "assets/posters/oscar-l-mim-club-optimized.jpg",
+      "source": "assets/posters/oscar-l-mim-club.jpg",
       "sourceLabel": "YuYuan WeChat mini-program",
       "imageTheme": "cyan",
       "description": "西班牙知名DJ/制作人Oscar L登陆上海MiM CLUB。曾在Tomorrowland与Drumcode Festival等多个全球知名音乐节演出，作品发行于Drumcode和Stereo Production等顶级厂牌。",
@@ -8052,7 +8052,7 @@
           "verificationNote": "YuYuan mini-program confirms Oscar L on Jun 19 at MiM CLUB with 158 RMB starting price."
         }
       ],
-      "posterUrl": "assets/posters/oscar-l-mim-club-optimized.jpg",
+      "posterUrl": "assets/posters/oscar-l-mim-club.jpg",
       "kind": "event",
       "soundTags": [
         "groovy"
@@ -9217,7 +9217,7 @@
       "status": "upcoming",
       "price": "¥188起",
       "age": "Not listed",
-      "source": "assets/posters/malaa-max-shanghai-optimized.jpg",
+      "source": "assets/posters/malaa-max-shanghai.jpg",
       "sourceLabel": "YuYuan WeChat mini-program",
       "imageTheme": "ember",
       "description": "法国神秘匿名DJ MALAA首次登陆上海MAX俱乐部，带来标志性的G-house和bass house音乐体验。MALAA是Pardon My French核心成员，与DJ Snake、Tchami、Mercer齐名。",
@@ -10230,7 +10230,7 @@
           "verificationNote": "Poster confirms title, date, time, venue, address, full lineup, and three pricing tiers."
         }
       ],
-      "posterUrl": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg",
+      "posterUrl": "assets/posters/suaner-lanv-guizhou-kitchen.jpg",
       "kind": "event",
       "soundTags": [
         "bass-hybrid"

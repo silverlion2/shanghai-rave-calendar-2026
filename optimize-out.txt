@@ -1,0 +1,5 @@
+﻿written: assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg (2.45 MB -> 227.94 KB)
+written: assets/posters/malaa-max-shanghai-optimized.jpg (2.36 MB -> 203.78 KB)
+written: assets/posters/oscar-l-mim-club-optimized.jpg (486.63 KB -> 174.17 KB)
+Poster optimization complete: 3 written, 0 skipped, net 4.69 MB saved.
+Generated data\poster-archive.json with 74 poster records (12.90 MB display payload).

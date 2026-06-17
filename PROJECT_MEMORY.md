@@ -1044,6 +1044,40 @@ Verification:
 - `node --test tests/trust-framework.test.js` passed.
 - `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json` passed with 0 findings.
 
+## 2026-06-17 Source Sweep Refresh
+
+This pass was automation-only and followed the source-sweep-first workflow before any manual gap work.
+
+What changed:
+
+- Re-ran `node scripts/scrape-events.js` with fixed Shanghai time and moderate timeouts.
+- Canonical files refreshed: `data/events.json`, `data/dj-data.js`, and `data/tracked-dj-itineraries.js`.
+- Regenerated derived outputs with `npm run seo` and `npm run posters:prepare`, which also repaired the poster-archive byte-count mismatch that was causing `node scripts/check.js` to fail.
+
+Post-sweep metrics:
+
+- Events: 112 total, 54 future.
+- Future Watch rows: 17.
+- Future core-field queue: 44 rows, 101 missing core fields, 1 uncertain core field.
+- Platform verification queue: 3 rows (`jasmin-knopha`, `anika-kunst`, `youshan-warmup`).
+- RA Shanghai coverage: 43 expected / 43 covered, 16 visible-upcoming / 16 covered, still browser-required because plain scripted fetch returns 403.
+- Tracked DJ profile inventory expanded from 136 to 155 profiles; curated source-backed DJ profiles expanded from 134 to 154.
+
+Important interpretation:
+
+- No new public-source-backed Shanghai techno activities were added in this sweep.
+- The scrape reduced watch and core-gap counts, but `node scripts/audit-events.js` still fails because many current/future rows have stale `lastChecked` values from 2026-06-14 or 2026-06-15.
+- `audit-rave-site.mjs` still reports broader project debt unrelated to this sweep: missing `source` URLs on a few event rows and generated-page references to `/_vercel/insights/script.js`.
+
+Best next manual verification targets if another pass is needed:
+
+- `jasmin-knopha`
+- `anika-kunst`
+- `youshan-warmup`
+- `truth-lies`
+
+These remain the most important current/future rows with unresolved public-source core fields after the automated sweep.
+
 ## 2026-06-15 Poster Coverage And Display Pass
 
 Stopped external searching and audited only local data, downloaded poster assets, and generated pages.
