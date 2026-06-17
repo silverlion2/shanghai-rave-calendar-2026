@@ -82,15 +82,18 @@ This is the most important correctness check. The filename tells you nothing.
 The OCR text tells you the truth.
 
 ```powershell
-# Using tesseract (install first: choco install tesseract -y)
-tesseract "D:\some-poster.jpg" stdout -l chi_sim+eng --psm 6 2>$null
+# Install tesseract (one-time): winget install --id UB-Mannheim.TesseractOCR -e ...
+# Then set up tessdata (see Quick verification commands -> C for full setup)
+$env:TESSDATA_PREFIX = $env:USERPROFILE
+& "C:\Program Files\Tesseract-OCR\tesseract.exe" "D:\some-poster.jpg" stdout -l chi_sim+eng --psm 6
 ```
 
 ```javascript
 // Or use node: node _ocr.js <image-path>
 // _ocr.js uses tesseract via child_process
 const { execFileSync } = require('child_process');
-const text = execFileSync('tesseract', [process.argv[2], 'stdout', '-l', 'chi_sim+eng', '--psm', '6']).toString();
+const text = execFileSync('C:\\Program Files\\Tesseract-OCR\\tesseract.exe', [process.argv[2], 'stdout', '-l', 'chi_sim+eng', '--psm', '6'],
+  { env: { ...process.env, TESSDATA_PREFIX: process.env.USERPROFILE } }).toString();
 console.log(text);
 ```
 
@@ -104,8 +107,14 @@ From the OCR output, extract:
 Then search `data/events.json` for matching events:
 
 ```powershell
-node -e "const j=require('./data/events.json');const q=process.argv[1];const r=j.events.filter(e=>JSON.stringify(e).toLowerCase().includes(q.toLowerCase()));console.log(JSON.stringify(r.map(e=>({id:e.id,title:e.title,date:e.date,venue:e.venue})),null,2));"
+cd "D:\workspace\rave calendar"
+node -e "const j=require('./data/events.json');const q=process.argv[1];const r=j.events.filter(e=>JSON.stringify(e).toLowerCase().includes(q.toLowerCase()));console.log(JSON.stringify(r.map(e=>({id:e.id,title:e.title,date:e.date,venue:e.venue})),null,2));" "MALAA"
 ```
+
+Use the **shortest unambiguous token** — the artist name (MALAA) is
+usually safer than the venue (PARK) because `PARK` matches a dozen
+other events. If the first search is ambiguous, narrow by adding more
+tokens (e.g. "C·PARK" for 酸儿辣女).
 
 **Report to the user:**
 > "OCR reads: [artist name], [date], [venue]. This matches event
@@ -178,7 +187,7 @@ user see it. Ask "does this look right?" before generating the
 first one missed** (e.g. you accidentally cropped the wrong region, or
 the patch color is off).
 
-### 6. Verify the file format, then generate the optimized derivative
+### 7. Verify the file format, then generate the optimized derivative
 
 ```powershell
 cd "D:\workspace\rave calendar"
@@ -189,14 +198,14 @@ If the format-verify step in the original skill flagged anything, fix it
 first (re-encode the source with `sharp` so the magic bytes are real
 JPEG, not PNG-as-JPG).
 
-### 7. Refresh poster archive and SEO pages
+### 8. Refresh poster archive and SEO pages
 
 ```powershell
 node scripts/generate-poster-archive.js
 node scripts/generate-seo-pages.js
 ```
 
-### 8. Pre-push local sanity check
+### 9. Pre-push local sanity check
 
 Run the format / content verifier and compare with the user's confirmed
 backup:
@@ -229,7 +238,7 @@ and confirm:
 - The mean RGB matches what the user described (blue poster ≈ 26,70,93;
   warm poster ≈ 156,124,102; etc.)
 
-### 9. Clean up temporary files, commit, push
+### 10. Clean up temporary files, commit, push
 
 ```powershell
 Remove-Item _verify-posters.js, "assets\posters\_<id>-source-backup.*", "assets\posters\_patch-*.svg" -ErrorAction SilentlyContinue
@@ -244,7 +253,7 @@ git ls-remote origin main
 Use `git add <specific files>` rather than `git add -A` so that stray
 temporary files do not sneak in.
 
-### 10. Verify the bytes Vercel actually serves
+### 11. Verify the bytes Vercel actually serves
 
 **This step catches the "two browsers show different pictures" bug.**
 After Vercel redeploys (1-2 minutes), fetch each image from the live
@@ -326,7 +335,7 @@ This is the "CDN cache skew" symptom. Escalation steps in order:
    `assets/posters/<id>.jpg` to `assets/posters/<id>.jpg?v=<commit>`.
    The new URL bypasses every layer of cache.
 
-### 12. Tell the user the result
+### 13. Tell the user the result
 
 In the final reply to the user, include:
 
@@ -379,6 +388,22 @@ In the final reply to the user, include:
   in DevTools, and (d) escalates to shortening the `Cache-Control`
   TTL in `vercel.json` so Vercel stops caching for 7 days.
 
+### Failure 4: filename-vs-content mismatch — OCR is the source of truth
+
+- The user gave us several Weixin/JPEG exports and we named them
+  after whichever event the filename or our first guess implied.
+- Several files were actually **carousels/screenshots of the wrong
+  event** (e.g. an image whose filename hinted "MALAA" actually showed
+  the OSCARZ poster, or vice versa). We pushed, the GitHub commit
+  succeeded, and the live site ended up with the wrong picture on the
+  wrong card.
+- **Fix**: the skill now mandates running **OCR on every source image
+  before assigning it to an event**. The OCR text — artist name, date,
+  venue, ticket line — is the only thing that decides which event the
+  poster belongs to. The filename is ignored. If the OCR text doesn't
+  match any `data/events.json` entry (or matches the *wrong* one), the
+  user is asked which event it actually is before any further work.
+
 ## Quick verification commands
 
 ### A. Detect extension-vs-format mismatches in `assets/posters/`
@@ -402,3 +427,58 @@ node -e "const https=require('https');const crypto=require('crypto');const fs=re
 
 If `match: false`, Vercel has not redeployed yet — wait 1-2 minutes
 and retry.
+
+### C. Run OCR on a source image to identify which event it belongs to
+
+This is the **first step** of every new poster upload — never skip it.
+
+**Install (Windows, one-time):**
+
+```powershell
+winget install --id UB-Mannheim.TesseractOCR -e --accept-package-agreements --accept-source-agreements
+```
+
+Tesseract is installed at `C:\Program Files\Tesseract-OCR\tesseract.exe`.
+The bundled tessdata only ships `eng.traineddata`. For Chinese support
+(`-l chi_sim+eng`), the user must download `chi_sim.traineddata` into
+the same `tessdata\` directory (or into a writable folder and point
+`$env:TESSDATA_PREFIX` at it). `C:\Program Files\` is read-only, so the
+practical setup is:
+
+```powershell
+# One-time: copy eng + chi_sim into a writable folder
+Copy-Item "C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata" "$env:USERPROFILE\eng.traineddata" -Force
+Invoke-WebRequest -Uri "https://github.com/tesseract-ocr/tessdata_fast/raw/main/chi_sim.traineddata" -OutFile "$env:USERPROFILE\chi_sim.traineddata" -UseBasicParsing
+```
+
+**Run:**
+
+```powershell
+$env:TESSDATA_PREFIX = $env:USERPROFILE
+& "C:\Program Files\Tesseract-OCR\tesseract.exe" "D:\some-poster.jpg" stdout -l chi_sim+eng --psm 3
+```
+
+`--psm 3` (default) is usually best for full posters. Try `--psm 6`
+(assume a single uniform block) if the layout is column-based. Try
+`--psm 11` (sparse text) if the poster has lots of empty space.
+
+**Look for these tokens in the output to match an event:**
+
+| What you want to find | Regex to look for                |
+| --------------------- | -------------------------------- |
+| Artist / DJ name      | `[A-Z]{3,}` or `酸儿辣女` etc.    |
+| Date                  | `(JAN\|FEB\|MAR\|APR\|MAY\|JUN\|JUL\|AUG\|SEP\|OCT\|NOV\|DEC)\.?\s+\d+` |
+| Chinese date          | `\d+月\d+日`                     |
+| Venue                 | `MAX Shanghai`, `MiM`, `PARK`, etc. |
+| Promoter              | `MAXIMUM EFFORT`, `PARKLIFE`, etc. |
+| Ticket / xhs          | `小红书号`, `Ticket`, `预售`      |
+
+**Then look the tokens up in `data/events.json`:**
+
+```powershell
+cd "D:\workspace\rave calendar"
+node -e "const j=require('./data/events.json');const q=process.argv[1];const r=j.events.filter(e=>JSON.stringify(e).toLowerCase().includes(q.toLowerCase()));console.log(JSON.stringify(r.map(e=>({id:e.id,title:e.title,date:e.date,venue:e.venue})),null,2));" "MALAA"
+```
+
+**Report the match to the user and wait for confirmation** before
+proceeding to copy / crop / push.

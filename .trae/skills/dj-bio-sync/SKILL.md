@@ -1,11 +1,18 @@
 ---
 name: "dj-bio-sync"
-description: "Updates DJ profile bios in tracked-dj-profiles.json, syncs them to the JS file the website actually reads, pushes to Git, and verifies on Vercel. Invoke when user edits DJ summaries/sources and wants the changes live on the website."
+description: "Updates DJ profile bios in tracked-dj-profiles.json, syncs them to the JS file the website actually reads, pushes to Git, and verifies on Vercel. Invoke when user edits DJ summaries/sources or adds a new batch of DJ profiles and wants the changes live on the website. This skill is ALWAYS called after the dj-database-curator skill finishes writing."
 ---
 
 # DJ Bio Sync
 
 **Problem this skill solves:** The website displays DJ profiles from `data/tracked-dj-itineraries.js`, but humans edit the more readable `config/tracked-dj-profiles.json`. Editing only the JSON and pushing does nothing visible — a sync step is required to propagate changes to the JS file before committing and pushing.
+
+**When to invoke:**
+- After running `dj-database-curator` to add new DJ profiles (e.g., a 20-DJ batch)
+- After editing any summary, source note, genre, or scope field
+- After the user says "sync this to the website" or "make this live"
+
+**Typical flow: dj-database-curator → dj-bio-sync → [git commit + Vercel verify]**
 
 ## Data flow
 
@@ -21,7 +28,29 @@ config/tracked-dj-profiles.json  (what you edit)
  djs.html on shanghai-rave-calendar-2026.vercel.app
 ```
 
-## Step-by-step workflow
+## Quick start — I just added 20 new DJs, make them live
+
+If the `dj-database-curator` skill just finished adding a batch of new profiles, this is the fastest path:
+
+```bash
+# 1. Confirm JSON is valid (already done by curator, but double-check)
+node -e "JSON.parse(require('fs').readFileSync('config/tracked-dj-profiles.json','utf8')); console.log('JSON OK')"
+
+# 2. Run the sync script
+node scripts/sync-dj-bio.js
+
+# 3. Spot-check that the new slugs are in the output
+node -e "const d=require('fs').readFileSync('data/tracked-dj-itineraries.js','utf8');const slugs=['ben-klock','tale-of-us','solomun','dixon'];slugs.forEach(s=>{if(d.includes(s)){console.log('OK:',s);}else{console.log('MISSING:',s);}});"
+
+# 4. Commit and push
+git add config/tracked-dj-profiles.json data/tracked-dj-itineraries.js
+git commit -m "chore(djs): add 20 international reference profiles (batch 2)"
+git push
+```
+
+Then optionally open `djs.html` to confirm visually — new profiles appear at the end of the listing until the scraper re-runs.
+
+## Step-by-step workflow (full reference)
 
 ### 1. Edit the JSON source
 
@@ -37,6 +66,8 @@ config/tracked-dj-profiles.json
 - Avoid unsubstantiated claims (e.g., "DJ Mag #1 Techno DJ" without a specific citation URL).
 - Reference verified facts: artist's official label (e.g., KNTXT, Drumcode, Fckng Serious, Trip, Gudu Records, Afterlife, Exhale, We Are The Brave), birth/background info drawn from the artist's official site or Resident Advisor, and real festival headlining slots.
 - **Do not nest double quotes inside JSON string values.** Use rephrasing to avoid `"..."` inside a `"..."` field.
+
+**For newly-added DJs (slugs that don't yet exist in the JS file):** The sync script creates a new entry in the JS file for every JSON slug it doesn't already know about. There is no separate "add" path — just write to the JSON and run sync. The new entry gets an empty `itinerary: []` by default, which can later be populated by the event scraper.
 
 ### 2. Validate the JSON is still parseable
 

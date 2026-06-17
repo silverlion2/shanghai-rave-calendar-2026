@@ -147,6 +147,47 @@ window.DJ_ITINERARY_DATA = {
       }
     ]
   },
+  "adriatique": {
+    "slug": "adriatique",
+    "name": "Adriatique",
+    "aliases": [
+      "Adriatique",
+      "Adrian Schaufelberger & Adrian Schoch"
+    ],
+    "trackedAt": "2026-06-18",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "International melodic techno duo / Siamese founders",
+    "imageTheme": "swiss-midnight",
+    "imageUrl": "assets/dj-photos/adriatique.jpg",
+    "genres": [
+      "melodic techno",
+      "melodic house",
+      "techno"
+    ],
+    "summary": "Adriatique is the Zürich-based duo of Adrian Schaufelberger and Adrian Schoch. Their melodically rich productions and sets have made them key figures in contemporary melodic house and techno. They run the Siamese label and are closely associated with the Afterlife and Life and Death imprints, and they have headlined European festivals and clubs across Europe and beyond for several years.",
+    "sourceNote": "Curated as an international reference profile for melodic techno. Facts sourced from the Siamese label, Afterlife Records, and the artist profile.",
+    "sources": [
+      {
+        "label": "Siamese Label",
+        "url": "https://siamese.kompakt.fm",
+        "status": "label-source",
+        "checked": "2026-06-18"
+      },
+      {
+        "label": "Afterlife Records",
+        "url": "https://afterlife.live",
+        "status": "label-source",
+        "checked": "2026-06-18"
+      },
+      {
+        "label": "Adriatique Resident Advisor profile",
+        "url": "https://ra.co/dj/adriatique",
+        "status": "artist-profile",
+        "checked": "2026-06-18"
+      }
+    ]
+  },
   "ali-ribo": {
     "slug": "ali-ribo",
     "name": "ALI RIBO",
@@ -210,6 +251,43 @@ window.DJ_ITINERARY_DATA = {
     ],
     "itinerary": []
   },
+  "ame": {
+    "slug": "ame",
+    "name": "Âme",
+    "aliases": [
+      "Âme",
+      "Kristian Beyer & Frank Wiedemann",
+      "Ame"
+    ],
+    "trackedAt": "2026-06-18",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "International melodic house / deep house duo / Innervisions co-founder",
+    "imageTheme": "deep-amber",
+    "imageUrl": "assets/dj-photos/ame.jpg",
+    "genres": [
+      "melodic house",
+      "melodic techno",
+      "deep house",
+      "techno"
+    ],
+    "summary": "Âme is a Berlin-based German DJ and production duo formed by Kristian Beyer and Frank Wiedemann. Together with Dixon, they co-founded the Innervisions label and event platform, which has become a defining force in melodic house and deeper shades of techno. Their releases and live/DJ sets have shaped the contemporary deep and melodic electronic sound, with key output on Innervisions and regular headline slots across Europe and worldwide.",
+    "sourceNote": "Curated as an international reference profile for melodic house and deep techno. Facts gathered from Innervisions label information and the Âme Resident Advisor artist profile.",
+    "sources": [
+      {
+        "label": "Innervisions Label",
+        "url": "https://www.innervisions.de",
+        "status": "label-source",
+        "checked": "2026-06-18"
+      },
+      {
+        "label": "Âme Resident Advisor profile",
+        "url": "https://ra.co/dj/ame",
+        "status": "artist-profile",
+        "checked": "2026-06-18"
+      }
+    ]
+  },
   "amelie-lens": {
     "slug": "amelie-lens",
     "name": "Amelie Lens",
@@ -247,6 +325,40 @@ window.DJ_ITINERARY_DATA = {
         "url": "https://ra.co/dj/amelie-lens",
         "status": "artist-profile",
         "checked": "2026-06-17"
+      }
+    ]
+  },
+  "amotik": {
+    "slug": "amotik",
+    "name": "Amotik",
+    "aliases": [
+      "Amotik"
+    ],
+    "trackedAt": "2026-06-18",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "International hard techno / acid techno artist / bipolar disorder label",
+    "imageTheme": "neon-red",
+    "imageUrl": "assets/dj-photos/amotik.jpg",
+    "genres": [
+      "hard techno",
+      "acid techno",
+      "techno"
+    ],
+    "summary": "Amotik is a Berlin-based German DJ and producer operating at the harder and more acid-inflected end of contemporary techno. He releases on his own bipolar disorder imprint and a range of leading hard techno labels, with DJ sets known for their raw, percussive and trance-tinged energy across leading European clubs and techno stages.",
+    "sourceNote": "Curated as an international reference profile for hard and acid techno. Facts gathered from the bipolar disorder label context and the Amotik Resident Advisor artist profile.",
+    "sources": [
+      {
+        "label": "bipolar disorder Label / Artist site",
+        "url": "https://amotik.bandcamp.com",
+        "status": "label-source",
+        "checked": "2026-06-18"
+      },
+      {
+        "label": "Amotik Resident Advisor profile",
+        "url": "https://ra.co/dj/amotik",
+        "status": "artist-profile",
+        "checked": "2026-06-18"
       }
     ]
   },
@@ -757,6 +869,47 @@ window.DJ_ITINERARY_DATA = {
     ],
     "imageUrl": "assets/dj-photos/anyma.jpg"
   },
+  "ben-klock": {
+    "slug": "ben-klock",
+    "name": "Ben Klock",
+    "aliases": [
+      "Ben Klock",
+      "Ben"
+    ],
+    "trackedAt": "2026-06-18",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "International techno legend / Berghain resident / Klockworks founder",
+    "imageTheme": "industrial-grey",
+    "imageUrl": "assets/dj-photos/ben-klock.jpg",
+    "genres": [
+      "techno",
+      "minimal techno",
+      "dub techno"
+    ],
+    "summary": "Ben Klock is a German DJ and producer born 1972 in Berlin. A defining figure of modern techno, he is widely recognised for his legendary all-night Sunday marathon sets at Berghain, where he has been a resident since the club's early days. He founded the Klockworks label in 2006, which has become a platform for his own productions and a roster of carefully curated artists. His driving, hypnotic techno has made him a cornerstone of Berlin's club culture and a fixture at major techno events worldwide.",
+    "sourceNote": "Curated as an international reference profile for techno. Facts gathered from the Klockworks label, the Berghain resident context, and the Resident Advisor artist profile.",
+    "sources": [
+      {
+        "label": "Klockworks Label",
+        "url": "https://klockworks.net",
+        "status": "label-source",
+        "checked": "2026-06-18"
+      },
+      {
+        "label": "Berghain Official",
+        "url": "https://berghain.de",
+        "status": "venue-source",
+        "checked": "2026-06-18"
+      },
+      {
+        "label": "Ben Klock Resident Advisor profile",
+        "url": "https://ra.co/dj/benklock",
+        "status": "artist-profile",
+        "checked": "2026-06-18"
+      }
+    ]
+  },
   "bi-non-chillchillshit": {
     "slug": "bi-non-chillchillshit",
     "name": "Bi-NON & chillchillshit",
@@ -1193,6 +1346,40 @@ window.DJ_ITINERARY_DATA = {
       }
     ]
   },
+  "chris-liebing": {
+    "slug": "chris-liebing",
+    "name": "Chris Liebing",
+    "aliases": [
+      "Chris Liebing"
+    ],
+    "trackedAt": "2026-06-18",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "International techno pioneer / CLR label founder",
+    "imageTheme": "military-green",
+    "imageUrl": "assets/dj-photos/chris-liebing.jpg",
+    "genres": [
+      "techno",
+      "driving techno",
+      "minimal techno"
+    ],
+    "summary": "Chris Liebing is a German DJ and producer from Frankfurt, and a defining figure of the European techno scene for over two decades. He founded the CLR label and associated radio/podcast platform, releasing a steady stream of driving, industrial-leaning and minimal techno productions and touring extensively across Berghain, Awakenings, Time Warp and major international techno stages.",
+    "sourceNote": "Curated as an international reference profile for German techno pioneers. Facts gathered from the CLR label context and the Chris Liebing Resident Advisor artist profile.",
+    "sources": [
+      {
+        "label": "CLR Label",
+        "url": "https://www.clr.net",
+        "status": "label-source",
+        "checked": "2026-06-18"
+      },
+      {
+        "label": "Chris Liebing Resident Advisor profile",
+        "url": "https://ra.co/dj/chrisliebing",
+        "status": "artist-profile",
+        "checked": "2026-06-18"
+      }
+    ]
+  },
   "chuan": {
     "trackedAt": "2026-06-14",
     "checkedByTimezone": "Asia/Shanghai",
@@ -1364,6 +1551,41 @@ window.DJ_ITINERARY_DATA = {
       }
     ]
   },
+  "dax-j": {
+    "slug": "dax-j",
+    "name": "Dax J",
+    "aliases": [
+      "Dax J"
+    ],
+    "trackedAt": "2026-06-18",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "International acid / hard / industrial techno artist / Monnom Black label",
+    "imageTheme": "rust-orange",
+    "imageUrl": "assets/dj-photos/dax-j.jpg",
+    "genres": [
+      "acid techno",
+      "hard techno",
+      "industrial techno",
+      "techno"
+    ],
+    "summary": "Dax J is a London-born, Berlin-based DJ and producer known for a raw and fast-paced take on acid, hard and industrial techno. He founded the Monnom Black label, releasing a steady stream of club-oriented, rave-indebted techno productions and holding down DJ sets at leading European techno institutions including Berghain and major international festival lineups.",
+    "sourceNote": "Curated as an international reference profile for acid, hard, and industrial techno. Facts gathered from the Monnom Black label and the Dax J Resident Advisor artist entry.",
+    "sources": [
+      {
+        "label": "Monnom Black Label",
+        "url": "https://monnomblack.com",
+        "status": "label-source",
+        "checked": "2026-06-18"
+      },
+      {
+        "label": "Dax J Resident Advisor profile",
+        "url": "https://ra.co/dj/daxj",
+        "status": "artist-profile",
+        "checked": "2026-06-18"
+      }
+    ]
+  },
   "diipset": {
     "slug": "diipset",
     "name": "Diipset",
@@ -1445,6 +1667,41 @@ window.DJ_ITINERARY_DATA = {
       "Discipline"
     ]
   },
+  "dixon": {
+    "slug": "dixon",
+    "name": "Dixon",
+    "aliases": [
+      "Dixon",
+      "Steffen Berkhahn"
+    ],
+    "trackedAt": "2026-06-18",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "International house & techno selector / Innervisions co-founder",
+    "imageTheme": "deep-gold",
+    "imageUrl": "assets/dj-photos/dixon.jpg",
+    "genres": [
+      "house",
+      "techno",
+      "melodic house"
+    ],
+    "summary": "Dixon (Steffen Berkhahn) is a German DJ born in Anklam and based in Berlin. He co-founded the Innervisions label in 2005 with Kristian Beyer (Âme) and Frank Wiedemann, a platform central to the melodic house and techno sound of contemporary Berlin. A long-running fixture in the Resident Advisor DJ polls, he is widely admired for his deep, carefully built long-form sets and his curatorial work across the label's label events and Lost in a Dream parties at clubs and festivals worldwide.",
+    "sourceNote": "Curated as an international reference profile for house and melodic house. Facts sourced from the Innervisions label and the artist's profile.",
+    "sources": [
+      {
+        "label": "Innervisions Label",
+        "url": "https://innervisions.kompakt.fm",
+        "status": "label-source",
+        "checked": "2026-06-18"
+      },
+      {
+        "label": "Dixon Resident Advisor profile",
+        "url": "https://ra.co/dj/dixon",
+        "status": "artist-profile",
+        "checked": "2026-06-18"
+      }
+    ]
+  },
   "dj-ebp": {
     "slug": "dj-ebp",
     "name": "DJ EBP",
@@ -1469,6 +1726,42 @@ window.DJ_ITINERARY_DATA = {
         "url": "https://ra.co/dj/djebp",
         "status": "artist-profile",
         "checked": "2026-06-14"
+      }
+    ]
+  },
+  "dj-koze": {
+    "slug": "dj-koze",
+    "name": "DJ Koze",
+    "aliases": [
+      "DJ Koze",
+      "Stefan Kozalla"
+    ],
+    "trackedAt": "2026-06-18",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "International house / techno artist / Pampa Records founder",
+    "imageTheme": "forest-green",
+    "imageUrl": "assets/dj-photos/dj-koze.jpg",
+    "genres": [
+      "house",
+      "tech house",
+      "techno",
+      "deep house"
+    ],
+    "summary": "DJ Koze, born Stefan Kozalla in Hamburg, Germany, is a DJ and producer known for a warm, idiosyncratic sound blending house, tech house, and techno with off-kilter samples and vocals. He founded the Pampa Records label in 2010, home to his own acclaimed albums including Amygdala and Knock Knock, as well as releases from a broad roster of electronic artists. He remains a fixture across European clubs and major international festival lineups.",
+    "sourceNote": "Curated as an international reference profile for house and tech house. Facts gathered from Pampa Records and the DJ Koze Resident Advisor artist profile.",
+    "sources": [
+      {
+        "label": "Pampa Records",
+        "url": "https://www.pamparecords.com",
+        "status": "label-source",
+        "checked": "2026-06-18"
+      },
+      {
+        "label": "DJ Koze Resident Advisor profile",
+        "url": "https://ra.co/dj/djkoze",
+        "status": "artist-profile",
+        "checked": "2026-06-18"
       }
     ]
   },
@@ -2580,6 +2873,116 @@ window.DJ_ITINERARY_DATA = {
     ],
     "aliases": []
   },
+  "jeff-mills": {
+    "slug": "jeff-mills",
+    "name": "Jeff Mills",
+    "aliases": [
+      "Jeff Mills",
+      "The Wizard"
+    ],
+    "trackedAt": "2026-06-18",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "International techno legend / Axis Records founder",
+    "imageTheme": "space-blue",
+    "imageUrl": "assets/dj-photos/jeff-mills.jpg",
+    "genres": [
+      "techno",
+      "minimal techno",
+      "experimental techno",
+      "detroit techno"
+    ],
+    "summary": "Jeff Mills is an American DJ and producer born June 18, 1963, in Detroit, Michigan — one of the founding figures of Detroit techno. He was an early member of Underground Resistance before launching his own Axis label in 1992, which has served as a platform for his futuristic, stripped-back and experimental approach to techno. His long career spans conceptual album series, orchestral collaborations, and residencies at top international clubs and festivals.",
+    "sourceNote": "Curated as an international reference profile for Detroit techno legends. Facts gathered from the Axis label, Underground Resistance context, and the Jeff Mills Resident Advisor artist profile.",
+    "sources": [
+      {
+        "label": "Axis Records",
+        "url": "https://axisrecords.com",
+        "status": "label-source",
+        "checked": "2026-06-18"
+      },
+      {
+        "label": "Jeff Mills Resident Advisor profile",
+        "url": "https://ra.co/dj/jeffmills",
+        "status": "artist-profile",
+        "checked": "2026-06-18"
+      }
+    ]
+  },
+  "joris-voorn": {
+    "slug": "joris-voorn",
+    "name": "Joris Voorn",
+    "aliases": [
+      "Joris Voorn"
+    ],
+    "trackedAt": "2026-06-18",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "International techno & progressive / Spectrum / Green founder",
+    "imageTheme": "amsterdam-teal",
+    "imageUrl": "assets/dj-photos/joris-voorn.jpg",
+    "genres": [
+      "techno",
+      "progressive house",
+      "melodic techno"
+    ],
+    "summary": "Joris Voorn is a Dutch DJ and producer born February 25, 1977, in Rotterdam. A long-standing presence in European electronic music since the early 2000s, he co-founded the Rejected label with Edwin Oosterwal in 2007 and later launched the Spectrum and Green imprints and party series. His melodic, groove-driven productions and marathon sets have made him a fixture at Awakenings, major European festivals, and Ibiza residencies for over two decades.",
+    "sourceNote": "Curated as an international reference profile for techno and progressive house. Facts sourced from the Spectrum/Green/Rejected labels and the artist profile.",
+    "sources": [
+      {
+        "label": "Rejected / Spectrum / Green Labels",
+        "url": "https://spectrum.kompakt.fm",
+        "status": "label-source",
+        "checked": "2026-06-18"
+      },
+      {
+        "label": "Joris Voorn Resident Advisor profile",
+        "url": "https://ra.co/dj/jorisvoorn",
+        "status": "artist-profile",
+        "checked": "2026-06-18"
+      }
+    ]
+  },
+  "joseph-capriati": {
+    "slug": "joseph-capriati",
+    "name": "Joseph Capriati",
+    "aliases": [
+      "Joseph Capriati"
+    ],
+    "trackedAt": "2026-06-18",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "International driving techno / Drumcode / Redimension",
+    "imageTheme": "naples-ember",
+    "imageUrl": "assets/dj-photos/joseph-capriati.jpg",
+    "genres": [
+      "techno",
+      "driving techno",
+      "tech house"
+    ],
+    "summary": "Joseph Capriati is an Italian DJ and producer born July 25, 1986, in Naples. Active on the Drumcode roster since the mid-2000s, he has released on leading techno imprints and runs the Redimension label, founded in 2018. A regular at Awakenings, Time Warp, and major techno festivals across Europe, his driving, percussive techno and marathon sets have made him a leading figure in contemporary techno worldwide.",
+    "sourceNote": "Curated as an international reference profile for techno. Facts sourced from the Redimension label and Drumcode artist context.",
+    "sources": [
+      {
+        "label": "Redimension Label",
+        "url": "https://redimension.tech",
+        "status": "label-source",
+        "checked": "2026-06-18"
+      },
+      {
+        "label": "Drumcode Official",
+        "url": "https://drumcode.se",
+        "status": "label-source",
+        "checked": "2026-06-18"
+      },
+      {
+        "label": "Joseph Capriati Resident Advisor profile",
+        "url": "https://ra.co/dj/josephcapriati",
+        "status": "artist-profile",
+        "checked": "2026-06-18"
+      }
+    ]
+  },
   "josie": {
     "slug": "josie",
     "name": "Josie",
@@ -2815,6 +3218,41 @@ window.DJ_ITINERARY_DATA = {
       }
     ]
   },
+  "kolsch": {
+    "slug": "kolsch",
+    "name": "Kölsch",
+    "aliases": [
+      "Kölsch",
+      "Rune Reilly Kölsch"
+    ],
+    "trackedAt": "2026-06-18",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "International melodic techno / Kompakt core artist",
+    "imageTheme": "scandinavian-blue",
+    "imageUrl": "assets/dj-photos/kolsch.jpg",
+    "genres": [
+      "melodic techno",
+      "progressive house",
+      "techno"
+    ],
+    "summary": "Kölsch (Rune Reilly Kölsch) is a Danish DJ and producer born February 9, 1977, in Copenhagen. A core artist on Kompakt since the early 2010s, he has released three trilogy albums on the label — 1977 (2013), 1983 (2015), and 1989 (2017) — which defined his signature melodic, emotionally warm sound. His music appears on leading melodic techno imprints and he has headlined clubs and festivals across Europe and internationally for over a decade.",
+    "sourceNote": "Curated as an international reference profile for melodic techno and progressive house. Facts sourced from the Kompakt label discography and artist profile.",
+    "sources": [
+      {
+        "label": "Kompakt Label",
+        "url": "https://kompakt.fm",
+        "status": "label-source",
+        "checked": "2026-06-18"
+      },
+      {
+        "label": "Kölsch Resident Advisor profile",
+        "url": "https://ra.co/dj/kolsch",
+        "status": "artist-profile",
+        "checked": "2026-06-18"
+      }
+    ]
+  },
   "kong-bb": {
     "slug": "kong-bb",
     "name": "Kong BB",
@@ -2890,6 +3328,42 @@ window.DJ_ITINERARY_DATA = {
         "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
         "status": "venue-context",
         "checked": "2026-06-15"
+      }
+    ]
+  },
+  "len-faki": {
+    "slug": "len-faki",
+    "name": "Len Faki",
+    "aliases": [
+      "Len Faki",
+      "La Monde"
+    ],
+    "trackedAt": "2026-06-18",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "International techno resident / Figure label founder",
+    "imageTheme": "charcoal",
+    "imageUrl": "assets/dj-photos/len-faki.jpg",
+    "genres": [
+      "techno",
+      "hard techno",
+      "acid techno",
+      "driving techno"
+    ],
+    "summary": "Len Faki is a German DJ and producer based in Berlin, and one of the long-standing residents at Berghain. He founded the Figure label and its sub-imprint Figure Jams, pushing a powerful, percussive and acid-inflected take on techno across club and festival stages worldwide. His Berghain sets and releases on Figure have made him a reference point for the harder end of the Berlin techno sound.",
+    "sourceNote": "Curated as an international reference profile for Berghain-era techno. Facts gathered from the Figure label and Len Faki Resident Advisor artist profile.",
+    "sources": [
+      {
+        "label": "Figure Label",
+        "url": "https://www.figure-lenfaki.com",
+        "status": "label-source",
+        "checked": "2026-06-18"
+      },
+      {
+        "label": "Len Faki Resident Advisor profile",
+        "url": "https://ra.co/dj/lenfaki",
+        "status": "artist-profile",
+        "checked": "2026-06-18"
       }
     ]
   },
@@ -3160,6 +3634,46 @@ window.DJ_ITINERARY_DATA = {
       }
     ]
   },
+  "marcel-dettmann": {
+    "slug": "marcel-dettmann",
+    "name": "Marcel Dettmann",
+    "aliases": [
+      "Marcel Dettmann"
+    ],
+    "trackedAt": "2026-06-18",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "International techno / Berghain & Ostgut Ton core",
+    "imageTheme": "berlin-concrete",
+    "imageUrl": "assets/dj-photos/marcel-dettmann.jpg",
+    "genres": [
+      "techno",
+      "industrial techno",
+      "dub techno"
+    ],
+    "summary": "Marcel Dettmann is a German DJ and producer born October 26, 1977, based in Berlin. A core figure of Berghain's early days and a long-standing resident, he was one of the defining artists of the Ostgut Ton label family and its subsequent imprints. His raw, industrial-strength techno and dub-tinged productions and sets have made him one of the most respected names in contemporary techno.",
+    "sourceNote": "Curated as an international reference profile for techno. Facts sourced from Ostgut Ton, the Berghain resident context, and the artist's profile.",
+    "sources": [
+      {
+        "label": "Ostgut Ton Label Family",
+        "url": "https://ostgut-ton.kompakt.fm",
+        "status": "label-source",
+        "checked": "2026-06-18"
+      },
+      {
+        "label": "Berghain Official",
+        "url": "https://berghain.de",
+        "status": "venue-source",
+        "checked": "2026-06-18"
+      },
+      {
+        "label": "Marcel Dettmann Resident Advisor profile",
+        "url": "https://ra.co/dj/marceldettmann",
+        "status": "artist-profile",
+        "checked": "2026-06-18"
+      }
+    ]
+  },
   "marcus": {
     "slug": "marcus",
     "name": "Marcus",
@@ -3328,6 +3842,48 @@ window.DJ_ITINERARY_DATA = {
         "url": "https://electronicmusicinformation.com/gw/index/article_details.html?drysaltery_id=4064",
         "status": "artist-profile",
         "checked": "2026-06-14"
+      }
+    ]
+  },
+  "mind-against": {
+    "slug": "mind-against",
+    "name": "Mind Against",
+    "aliases": [
+      "Mind Against",
+      "Alessandro & Federico Fognini"
+    ],
+    "trackedAt": "2026-06-18",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "International melodic techno duo / Afterlife artist",
+    "imageTheme": "ocean-blue",
+    "imageUrl": "assets/dj-photos/mind-against.jpg",
+    "genres": [
+      "melodic techno",
+      "melodic house",
+      "techno",
+      "deep techno"
+    ],
+    "summary": "Mind Against is an Italian DJ and production duo composed of brothers Alessandro and Federico Fognini, now based in Berlin. They emerged as core artists on Life and Death before becoming headline fixtures on Tale of Us's Afterlife label and event series, where their atmospheric and melodic take on techno has become a signature sound of the label's global stages.",
+    "sourceNote": "Curated as an international reference profile for melodic techno. Facts gathered from Life and Death and Afterlife label contexts, plus the Mind Against Resident Advisor artist entry.",
+    "sources": [
+      {
+        "label": "Afterlife Records",
+        "url": "https://afterlife.live",
+        "status": "label-source",
+        "checked": "2026-06-18"
+      },
+      {
+        "label": "Life and Death Label",
+        "url": "https://life-and-death.net",
+        "status": "label-source",
+        "checked": "2026-06-18"
+      },
+      {
+        "label": "Mind Against Resident Advisor profile",
+        "url": "https://ra.co/dj/mindagainst",
+        "status": "artist-profile",
+        "checked": "2026-06-18"
       }
     ]
   },
@@ -3924,6 +4480,47 @@ window.DJ_ITINERARY_DATA = {
       "Oil Nature"
     ]
   },
+  "pan-pot": {
+    "slug": "pan-pot",
+    "name": "Pan-Pot",
+    "aliases": [
+      "Pan-Pot",
+      "Tassilo Ippenberger & Thomas Benedix"
+    ],
+    "trackedAt": "2026-06-18",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "International techno duo / Second State and Drumcode artist",
+    "imageTheme": "silver-gray",
+    "imageUrl": "assets/dj-photos/pan-pot.jpg",
+    "genres": [
+      "techno",
+      "driving techno",
+      "minimal techno"
+    ],
+    "summary": "Pan-Pot is a Berlin-based German DJ and production duo formed by Tassilo Ippenberger and Thomas Benedix. They run the Second State label and have been consistent contributors to Adam Beyer's Drumcode roster, where their driving and functional techno has become a fixture on label showcases and major festival lineups around the world.",
+    "sourceNote": "Curated as an international reference profile for driving techno. Facts gathered from the Second State label, Drumcode roster information, and the Pan-Pot Resident Advisor artist entry.",
+    "sources": [
+      {
+        "label": "Second State Label",
+        "url": "https://second-state.kompakt.fm",
+        "status": "label-source",
+        "checked": "2026-06-18"
+      },
+      {
+        "label": "Drumcode Official",
+        "url": "https://drumcode.se",
+        "status": "label-source",
+        "checked": "2026-06-18"
+      },
+      {
+        "label": "Pan-Pot Resident Advisor profile",
+        "url": "https://ra.co/dj/panpot",
+        "status": "artist-profile",
+        "checked": "2026-06-18"
+      }
+    ]
+  },
   "pashrawboi": {
     "slug": "pashrawboi",
     "name": "PASHRAWBOI",
@@ -4417,6 +5014,41 @@ window.DJ_ITINERARY_DATA = {
       }
     ]
   },
+  "rodhad": {
+    "slug": "rodhad",
+    "name": "Rødhåd",
+    "aliases": [
+      "Rødhåd",
+      "Mike Bierbach"
+    ],
+    "trackedAt": "2026-06-18",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "International industrial & deep techno / Dystopian founder",
+    "imageTheme": "deep-charcoal",
+    "imageUrl": "assets/dj-photos/rodhad.jpg",
+    "genres": [
+      "industrial techno",
+      "deep techno",
+      "dub techno"
+    ],
+    "summary": "Rødhåd (Mike Bierbach) is a German DJ and producer born 1984 in Berlin. He founded the Dystopian label in 2009, and he has been a defining figure in Berlin's underground techno scene since the early 2010s. His deep, hypnotic sets — often stretching over many hours — and his industrial-tinged, moody productions have made him a fixture at Berghain, major European techno clubs and festivals, and a respected selector for a decade-plus.",
+    "sourceNote": "Curated as an international reference profile for industrial and deep techno. Facts sourced from the Dystopian label and the artist profile.",
+    "sources": [
+      {
+        "label": "Dystopian Label",
+        "url": "https://dystopian.berlin",
+        "status": "label-source",
+        "checked": "2026-06-18"
+      },
+      {
+        "label": "Rødhåd Resident Advisor profile",
+        "url": "https://ra.co/dj/rodhad",
+        "status": "artist-profile",
+        "checked": "2026-06-18"
+      }
+    ]
+  },
   "ruima": {
     "slug": "ruima",
     "name": "Ruima",
@@ -4665,6 +5297,41 @@ window.DJ_ITINERARY_DATA = {
         "url": "https://ra.co/events/2232295",
         "status": "trusted-ra-watch",
         "checked": "2026-06-14"
+      }
+    ]
+  },
+  "shdw-obscure-shape": {
+    "slug": "shdw-obscure-shape",
+    "name": "SHDW & Obscure Shape",
+    "aliases": [
+      "SHDW & Obscure Shape",
+      "Marco & Jakob"
+    ],
+    "trackedAt": "2026-06-18",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "International industrial techno duo / Dystopian label artist",
+    "imageTheme": "ink-black",
+    "imageUrl": "assets/dj-photos/shdw-obscure-shape.jpg",
+    "genres": [
+      "industrial techno",
+      "techno",
+      "deep techno"
+    ],
+    "summary": "SHDW & Obscure Shape is a Berlin-based German DJ and production duo composed of Marco and Jakob, closely associated with the Dystopian label and its darker, industrial take on modern techno. Their releases and DJ sets have become a reference for the current wave of deep and industrial-leaning techno, with regular appearances across Berghain and leading European techno clubs.",
+    "sourceNote": "Curated as an international reference profile for industrial and deep techno. Facts gathered from Dystopian label context and the SHDW & Obscure Shape Resident Advisor artist entry.",
+    "sources": [
+      {
+        "label": "Dystopian Label",
+        "url": "https://dystopian.kompakt.fm",
+        "status": "label-source",
+        "checked": "2026-06-18"
+      },
+      {
+        "label": "SHDW & Obscure Shape Resident Advisor profile",
+        "url": "https://ra.co/dj/shdwandobscureshape",
+        "status": "artist-profile",
+        "checked": "2026-06-18"
       }
     ]
   },
@@ -4936,6 +5603,41 @@ window.DJ_ITINERARY_DATA = {
       }
     ]
   },
+  "solomun": {
+    "slug": "solomun",
+    "name": "Solomun",
+    "aliases": [
+      "Solomun",
+      "Mladen Solomun"
+    ],
+    "trackedAt": "2026-06-18",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "International house & techno legend / Diynamic founder",
+    "imageTheme": "deep-blue",
+    "imageUrl": "assets/dj-photos/solomun.jpg",
+    "genres": [
+      "melodic house",
+      "tech house",
+      "deep house"
+    ],
+    "summary": "Solomun (Mladen Solomun) is a Bosnian-German DJ and producer born December 27, 1975, raised in Hamburg. He founded the Diynamic Music label in 2006, along with its sister imprint 2DIY4. His melodic, emotionally resonant productions and marathon sets have made him one of the most in-demand names in house and techno worldwide. He was named Mixmag DJ of the Year in 2012, and he has headlined Ibiza residencies, major European festivals, and clubs across the globe for over a decade.",
+    "sourceNote": "Curated as an international reference profile for melodic house. Facts sourced from the Diynamic Music label, Mixmag coverage, and the artist's Resident Advisor entry.",
+    "sources": [
+      {
+        "label": "Diynamic Music Label",
+        "url": "https://diynamic.com",
+        "status": "label-source",
+        "checked": "2026-06-18"
+      },
+      {
+        "label": "Solomun Resident Advisor profile",
+        "url": "https://ra.co/dj/solomun",
+        "status": "artist-profile",
+        "checked": "2026-06-18"
+      }
+    ]
+  },
   "somebodyyyy": {
     "slug": "somebodyyyy",
     "name": "Somebodyyyy",
@@ -5176,6 +5878,41 @@ window.DJ_ITINERARY_DATA = {
         "url": "https://www.womex.com/virtual/more_zvukov_agency/taiga",
         "status": "artist-profile",
         "checked": "2026-06-14"
+      }
+    ]
+  },
+  "tale-of-us": {
+    "slug": "tale-of-us",
+    "name": "Tale Of Us",
+    "aliases": [
+      "Tale of Us",
+      "Matteo Milleri & Carmine Conte"
+    ],
+    "trackedAt": "2026-06-18",
+    "checkedByTimezone": "Asia/Shanghai",
+    "itinerary": [],
+    "scope": "International melodic techno duo / Afterlife founders",
+    "imageTheme": "dark-cosmic",
+    "imageUrl": "assets/dj-photos/tale-of-us.jpg",
+    "genres": [
+      "melodic techno",
+      "progressive house",
+      "techno"
+    ],
+    "summary": "Tale Of Us is the Italian-Berlin duo composed of Matteo Milleri and Carmine Conte. Active since the early 2010s, they co-founded the Afterlife label and event series, which has grown into one of the most visible brands in melodic techno, with residencies at Hï Ibiza, Afterlife world-tour events, and festival stages from Tomorrowland to major European festivals. Matteo Milleri also performs solo under the Anyma alias; Tale Of Us remains the pair's primary collaborative booking. Their cinematic, melodically rich sound has shaped the melodic techno landscape of the past decade.",
+    "sourceNote": "Curated as an international reference profile for melodic techno. Facts sourced from Afterlife Records and the Tale Of Us artist profile, separate from the Anyma solo entry.",
+    "sources": [
+      {
+        "label": "Afterlife Records",
+        "url": "https://afterlife.live",
+        "status": "label-source",
+        "checked": "2026-06-18"
+      },
+      {
+        "label": "Tale Of Us Resident Advisor profile",
+        "url": "https://ra.co/dj/taleofus",
+        "status": "artist-profile",
+        "checked": "2026-06-18"
       }
     ]
   },

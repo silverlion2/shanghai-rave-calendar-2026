@@ -1803,6 +1803,21 @@
       return `data:image/svg+xml,${encodeURIComponent(svg)}`;
     }
 
+    function avatarSrc(profile) {
+      // Prefer the real photo JPG if available; fall back to the generated SVG.
+      // The onerror handler on each <img> ensures broken URLs fall back to SVG too.
+      const url = (profile && profile.imageUrl || "").trim();
+      if (url && url.endsWith(".jpg") && !url.startsWith("data:")) return url;
+      return avatarSvg(profile);
+    }
+
+    function handleAvatarError(img) {
+      img.onerror = null;
+      const slug = img.parentElement && img.parentElement.getAttribute("data-profile") || (img.closest("[data-profile]") && img.closest("[data-profile]").getAttribute("data-profile"));
+      const profile = (window.__allProfiles || []).find(p => p.slug === slug);
+      img.src = avatarSvg(profile || { imageTheme: "acid", name: "DJ" });
+    }
+
     function statusClass(status) {
       return status === "official" ? "status-official" : status === "watchlist" ? "status-watchlist" : "status-secondary";
     }
@@ -1858,7 +1873,7 @@
       }
       directoryList.innerHTML = list.map(profile => `
         <button class="directory-row ${profile.slug === selectedSlug ? "active" : ""}" type="button" data-profile="${escapeHtml(profile.slug)}">
-          <img class="avatar-small" src="${avatarSvg(profile)}" alt="">
+          <img class="avatar-small" src="${avatarSrc(profile)}" onerror="handleAvatarError(this)" alt="">
           <span>
             <b>${escapeHtml(profile.name)}</b>
             <span>${escapeHtml(`${profile.itineraryCount} itinerary / ${profile.globalItineraryCount} worldwide`)}</span>
@@ -2054,7 +2069,7 @@
       const chips = unique(profile.soundTags.map(tagLabel).concat(profile.vibes, profile.genres.slice(0, 5))).slice(0, 9).map(tag => `<span class="chip">${escapeHtml(tag)}</span>`).join("");
       profilePanel.innerHTML = `
         <div class="profile-hero" id="dj-${escapeHtml(profile.slug)}">
-          <img class="profile-avatar" src="${avatarSvg(profile)}" alt="Generated profile artwork for ${escapeHtml(profile.name)}">
+          <img class="profile-avatar" src="${avatarSrc(profile)}" onerror="handleAvatarError(this)" alt="Generated profile artwork for ${escapeHtml(profile.name)}">
           <div class="profile-title">
             <h2>${escapeHtml(profile.name)}</h2>
             <p class="profile-summary">${escapeHtml(publicText(profile.summary))}</p>
@@ -2105,7 +2120,7 @@
         const trackerChip = profile.globalItineraryCount ? `<span class="chip">${profile.globalItineraryCount} global dates</span>` : "";
         return `
           <article class="dj-card ${profile.slug === selectedSlug ? "active" : ""}" data-profile="${escapeHtml(profile.slug)}" tabindex="0" role="button" aria-label="${escapeHtml(`Open ${profile.name} DJ profile`)}">
-            <div class="card-top"><img class="card-avatar" src="${avatarSvg(profile)}" alt=""><b>${escapeHtml(profile.name)}</b></div>
+            <div class="card-top"><img class="card-avatar" src="${avatarSrc(profile)}" onerror="handleAvatarError(this)" alt=""><b>${escapeHtml(profile.name)}</b></div>
             <p>${escapeHtml(publicText(profile.summary))}</p>
             ${djTrustLinkHtml(profile)}
             <div class="chips">${tags}${trackerChip}<span class="chip">${profile.itineraryCount} itinerary</span></div>
@@ -2148,6 +2163,7 @@
     function hydrateEvents(events) {
       const activeEvents = Array.isArray(events) && events.length ? events : sourceData.events;
       profiles = buildProfiles(activeEvents);
+      window.__allProfiles = profiles;
       const hashSlug = slugFromHash();
       selectedSlug = profiles.some(profile => profile.slug === hashSlug) ? hashSlug : (profiles[0] ? profiles[0].slug : "");
       renderMonthOptions();
