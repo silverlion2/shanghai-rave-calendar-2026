@@ -1073,6 +1073,7 @@
           <option value="techno">Techno</option>
           <option value="hard-techno">Hard techno</option>
           <option value="industrial">Industrial</option>
+          <option value="house">House / groove</option>
           <option value="groovy">Groovy</option>
           <option value="hypnotic">Hypnotic</option>
           <option value="minimal">Minimal</option>
@@ -1609,7 +1610,8 @@
       if (text.includes("hard") || text.includes("industrial") || text.includes("hardcore") || text.includes("rave") || text.includes("trance")) tags.push("hard");
       if (text.includes("experimental") || text.includes("ambient") || text.includes("idm") || text.includes("a/v") || text.includes("radio")) tags.push("experimental");
       if (text.includes("bass") || text.includes("club") || text.includes("ukg") || text.includes("dubstep") || text.includes("ghettotech") || text.includes("hyperpop")) tags.push("bass");
-      if (text.includes("date") || text.includes("house") || text.includes("rooftop") || text.includes("melodic") || text.includes("disco")) tags.push("date");
+      if (text.includes("house") || text.includes("disco") || text.includes("tech-house") || text.includes("tech house") || text.includes("g-house") || text.includes("groove")) tags.push("house");
+      if (text.includes("date") || text.includes("rooftop") || text.includes("melodic") || text.includes("balearic")) tags.push("date");
       if (text.includes("live") || text.includes("a/v") || text.includes("visual") || text.includes("show")) tags.push("live");
       return unique(tags.length ? tags : ["techno"]);
     }
