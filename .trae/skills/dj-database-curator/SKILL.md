@@ -94,9 +94,9 @@ Use only these tags (combine freely, 2–4 per profile):
 
 Batches are typically **20 DJs** at a time. Follow this exact order.
 
-### Step 1: Decide the priority (see next section)
+### Step 1: Decide the priority (see next section — Tier 1 first)
 
-Before writing any JSON, decide **which 20 DJs to add**. Use the priority strategy below. Output the list to the user as a plain text list before writing any files.
+Before writing any JSON, decide **which 20 DJs to add**. Use the **4-tier priority system below** (Tier 1 = confirmed Shanghai event appearances = highest). Start by running `node scripts/_tmp_intl_event_scan.js` to see which international DJs are already referenced in events.json but not yet in profiles. Output the proposed list to the user as plain text before writing any files.
 
 ### Step 2: Write the profiles
 
@@ -157,87 +157,83 @@ git push
 
 ## Priority strategy: which DJs to add next
 
-This is the most important decision in the workflow. The project currently has **174 profiles**, with **45 international reference DJs**. The goal is to expand the international DJ roster so that when a big event happens in Shanghai, the DJ is already in the database and gets cross-linked automatically.
+**Updated 2026-06-18 after analysis of `data/events.json` and the existing 45 international profiles.**
 
-Selection is based on **three weighted criteria**:
+The project currently has **174 profiles**, of which **45 are international reference DJs**. However, **zero of those 45 international DJs have confirmed Shanghai/China itinerary dates in `data/tracked-dj-itineraries.js`**, and **none of them appear in the Shanghai `data/events.json`** either. Meanwhile, **dozens of international DJs who DO appear in real Shanghai events** are missing profiles — breaking the cross-reference link on the website (each event could link to the DJ profile and vice versa).
 
-| Priority factor | Weight | What it means |
-|-----------------|--------|---------------|
-| **Global prominence** | 40% | Is this DJ a headliner at major festivals (Awakenings, Time Warp, Tomorrowland, Sonar, Fabric, Berghain)? Does they run a label? Have they been in the scene 10+ years? |
-| **Coverage gap** | 35% | Which label systems / style branches are under-represented in the current 45? If we have 5 Afterlife DJs but only 1 Innervisions, Innervisions wins. If we have 10 hard techno entries but 0 UK garage/breakbeat, that gap wins. |
-| **China tour probability** | 25% | Has this DJ ever played in Asia? Have they played Shanghai/Beijing/Hong Kong in the last 5 years? Is their music likely to appeal to Chinese promoters (melodic > industrial, hard techno > deep house for mainstream venues)? |
+**The old priority (global prominence first) was wrong.** Here's the corrected priority — apply in this exact order:
 
-### Coverage gap inventory as of 2026-06-18
+### Tier 1 — 🎯 已在上海事件中出现、但无 profile（最高优先级，50% 配额）
 
-Current 45 international DJs broken down by the system they belong to:
+**DJs already appearing in events.json who have no profile.** These are confirmed Shanghai bookings — adding them immediately improves the website's cross-linking. Each event can then link to the DJ profile, and the DJ profile can surface their upcoming Shanghai appearances.
 
-| System / label | Count in DB | Status |
-|----------------|-------------|--------|
-| Afterlife / Tale of Us | 5 (Anyma, Tale of Us, Adriatique, Mind Against, Miss Monique) | Good — but could add Mind Against's own label context |
-| Kompakt | 2 (Kölsch, Tale of Us link) | Weak — add more Kompakt core |
-| Drumcode | 3 (Adam Beyer, Joseph Capriati, Lilly Palmer) plus Pan-Pot affiliate | Okay — could add a third key member |
-| Berghain / Ostgut Ton | 4 (Ben Klock, Marcel Dettmann, Len Faki, Rodhad) | Good |
-| Innervisions | 2 (Dixon, Âme) | Weak |
-| Diynamic | 1 (Solomun) | Weak — add 2nd tier |
-| Pampa / Pampa Records | 1 (DJ Koze) | Just opened |
-| KNTXT | 1 (Charlotte de Witte) | Good |
-| Exhale / Lenske | 1 (Amelie Lens) | Good |
-| Trip / Galaxid | 1 (Nina Kraviz) | Good |
-| Filth on Acid | 1 (Reinier Zonneveld) | Good |
-| Dystopian | 2 (Rodhad, SHDW & Obscure Shape) | Good |
-| Detroit / Axis | 1 (Jeff Mills) + Richie Hawtin (Minus) | Thin but Jeff Mills is the "legend" slot |
-| Hard techno collective | 4+ (Sara Landry, Nico Moreno, Fantasm, Marlon Hoffstadt, Aamotik, Dax J) | Strong |
-| Klockworks | 1 (Ben Klock founder) + some affiliates | Good |
-| Cari Lekebusch / H. Productions / Swedish school | 0 | Gap |
-| UKG / breakbeat / bass | 0 | **Gap** |
-| Trance-adjacent / old-school trance | 1 (Miss Monique, but she's more melodic techno) | **Gap** |
-| Minimal / Romanian minimal (a:rpia:r, [a:rpia:r]) | 0 | **Gap** |
-| Ricardo Villalobos / Perlon / minimal house | 0 | **Gap** |
-| Sven Väth / Cocoon | 0 | **Gap** |
-| Âme / Dixon's other labelmates (Âme has a solo project) | 2 | Could add |
+Run this script to regenerate the current gap list:
+```bash
+node scripts/_tmp_intl_event_scan.js
+```
 
-### Example priority tiers for the next batch (after the one just completed)
+**Confirmed international names currently missing from profiles** (as of 2026-06-18):
+- **MssingNo** (UK — grime / UK garage / bass) — Gully Riddim 9 Year Anniversary
+- **Fractale** (Italy — drum & bass / dubstep / breaks) — 19Hz Shanghai lineup
+- **Mungk** (UK — drum & bass / dubstep) — ONEFORTYASIA event
+- **Simbie** (Australia — drum & bass / dubstep) — ONEFORTYASIA event
+- **Kirk** — FaQ Pres. KIRK at Abyss Shanghai
+- **Leo Monira** — A.T.M Pres. LEO MONIRA at Reactor
+- **Cosmjn** (Romania — minimal / deep techno)
+- **Dean Chew**
+- **Marcos Godoy** (Argentina / Chile — house / techno)
+- **Nata Lee**
+- **Koldo**
+- **Juliano Allgayer**
+- **Stefano Dvt**
+- **Milo Raad**
+- **Janein**
+- **Peyotl**
 
-**Tier 1 — highest priority (gap + prominence + Asia potential):**
-- Ricardo Villalobos (legendary minimal / minimal house, Perlon, has played Asia)
-- Sven Väth (Cocoon, German techno institution, massive Asia presence historically)
-- a:rpia:r trio (Rhadoo, Petre Inspirescu, Raresh) — Romanian minimal, played Hong Kong/Shanghai
-- Âme solo (Kristian Beyer's solo project) — adds depth to Innervisions
-- Adriatique's Siamese label affiliates
+**Before adding each name, verify the DJ is truly international** (not a Chinese local with an English stage name). For example, "YKK", "Wataru", "Oolong", "10000", "Kalapas", "Aho", "Yadong", "Zean", "Kilo Vee", "Tom Yeti", "Maguro", "BAADAAM", "SAI G" are likely Chinese or Asia-based locals — they may already be in the local profile section or belong there.
 
-**Tier 2 — style breadth (new styles not yet represented):**
-- MJ Cole / Todd Edwards / El-B / Oris Jay (UK garage / 2-step — zero coverage)
-- Goldie / LTJ Bukem / Roni Size (drum & bass — zero coverage)
-- The Chemical Brothers / Daft Punk / The Prodigy (big beat / live electronic acts — zero coverage)
-- Four Tet / Floating Points (UK live electronic — zero coverage)
-- Maribou State / Bonobo (downtempo / live electronic — zero coverage)
+### Tier 2 — ✈️ 有中国/亚洲巡演信号的国际 DJ（第二高，25% 配额）
 
-**Tier 3 — second-tier depth for existing systems:**
-- Klockworks affiliates: Dustin Zahn, Etapp Kyle, Steve Rachmad
-- Drumcode affiliates: Layton Giordani, Bart Skils, Victor Ruiz
-- Innervisions affiliates: Âme live, Trikk, Ame
-- Dystopian affiliates: Alex.Do, Ferenc
-- Filth on Acid affiliates: Space 92, Teenage Mutants
-- Cocoon affiliates
+**DJs with real China/Asia tour signals.** Artists who have recent confirmed bookings in Shanghai, Beijing, Hong Kong, Shenzhen, Chengdu, or Taipei. Measured by: (a) explicit mention in event lineups, (b) Resident Advisor events showing China dates, (c) official social media announcements with Chinese cities.
 
-**Tier 4 — experimental / niche:**
-- Aphex Twin / Richard D. James (too niche for most club bookings but influential)
-- Actress / Burial (purely listening electronic — unlikely to play club shows in China)
-- Autechre / IDM (same)
-- These are deprioritized because their touring likelihood in Shanghai is near-zero.
+For each batch: research 3–5 names from the Tier 1 list who also have this signal.
 
-### Batch size rule of thumb
+### Tier 3 — 🌍 风格补齐（15% 配额）
+
+**Style-category coverage gaps.** If the database has zero or near-zero entries in a genre tag, add at least 1–2 representative names for that category. As of 2026-06-18, the **gaps at 0 international entries** are:
+- **UK garage / 2-step / UKG:** MJ Cole, Todd Edwards, El-B, Oris Jay
+- **Drum & bass:** Goldie, LTJ Bukem, Andy C, Roni Size
+- **Breakbeat / breaks:** Plump DJs, Stanton Warriors (or artists from Tier 1 like Fractale, Mungk who cover this)
+- **Romanian minimal (a:rpia:r circle):** Ricardo Villalobos, Petre Inspirescu, Rhadoo, Raresh — note **Cosmjn was already in Tier 1** so he doubles-dips into Romanian minimal coverage
+- **Sven Väth / Cocoon / German old-school:** Sven Väth himself, plus Cocoon residents
+
+### Tier 4 — 🎖️ 体系补全（低优先级，10% 配额）
+
+**Global prominence and label-system completion.** Iconic names that define the genre or label but lack the China signal. Use as filler for remaining slots in a batch. Examples:
+- Innervisions second-tier (Âme live, Trikk)
+- Drumcode second-tier (Layton Giordani, Bart Skils, Victor Ruiz)
+- Kompakt second-tier (Superpitcher, Michael Mayer)
+- Dystopian second-tier (Alex.Do, Ferenc)
+
+### Anti-priority — avoid adding these soon
+
+- DJs whose primary touring is in Western Europe / North America only and who have never shown China booking intent
+- One-off warm-up DJs with no releases
+- Duplicates of names already profiled (check `slug` field before writing — especially watch for variations: "Âme" vs "Ame", "Kölsch" vs "Kolsch", "MssingNo" vs "mssingno")
+
+### Batch composition rule
+
+A good 20-DJ batch should look like this:
+- **8–10 DJs from Tier 1** (confirmed Shanghai appearances, gaps from events.json)
+- **4–5 DJs from Tier 2** (Asia/China booking signal but no direct Shanghai lineup yet)
+- **3–5 DJs from Tier 3** (style coverage gaps, especially UKG / DnB / Romanian minimal)
+- **0–3 DJs from Tier 4** (label-system completion)
+
+### Batch size rules
 
 - **Normal batch: 20 DJs** — one focused session (research + write + verify)
-- **Minimum batch: 10 DJs** — if you're adding for a specific event (e.g. "Anyma is playing, so let me add 3 more Afterlife DJs")
-- **Maximum batch: 30 DJs** — more than that and the JSON diff review becomes unwieldy
-
-### When NOT to add a DJ
-
-- If the DJ is already in the file with the same `slug` (check first with the cross-reference step)
-- If the DJ is strictly a local Shanghai resident already covered by an existing profile
-- If the DJ is a one-off warm-up act with no international career or releases
-- If information is too sparse to write a meaningful `summary` (need at least label + origin + style)
+- **Minimum batch: 10 DJs** — if you're adding for a specific event
+- **Maximum batch: 30 DJs** — beyond this JSON review becomes unwieldy
 
 ## Common tasks
 
