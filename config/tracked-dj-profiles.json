@@ -5253,18 +5253,18 @@
     {
       "slug": "nina-kraviz",
       "name": "Nina Kraviz",
-      "aliases": ["Nina Kraviz", "Нина Кравиц"],
+      "aliases": ["Nina Kraviz"],
       "trackedAt": "2026-06-17",
       "checkedByTimezone": "Asia/Shanghai",
       "itinerary": [],
-      "scope": "International techno innovator / трип label founder",
+      "scope": "International techno innovator / Trip label founder",
       "imageTheme": "pink-neon",
       "imageUrl": "assets/dj-photos/nina-kraviz.jpg",
       "genres": ["techno", "acid techno", "experimental techno"],
-      "summary": "Nina Kraviz is a DJ, producer, and singer born in Irkutsk, Siberia, Russia, and based in Moscow. Her 2009 breakthrough release on Rekids established her as an international club artist. In 2014 she founded the trip label, and later its sub-label Galaxiid, championing leftfield techno and experimental electronic music. Mixmag named her DJ of the Year in 2017.",
-      "sourceNote": "Curated as an international reference profile for techno innovators. Facts sourced from the трип label, Mixmag profile, and Resident Advisor artist entry.",
+      "summary": "Nina Kraviz is a DJ, producer, and singer born in Irkutsk, Siberia, Russia, and based in Moscow. Her 2009 breakthrough release on Rekids established her as an international club artist. In 2014 she founded the Trip label, and later its sub-label Galaxiid, championing leftfield techno and experimental electronic music. Mixmag named her DJ of the Year in 2017.",
+      "sourceNote": "Curated as an international reference profile for techno innovators. Facts sourced from the Trip label, Mixmag profile, and Resident Advisor artist entry.",
       "sources": [
-        {"label": "трип / Trip Recordings", "url": "https://www.triprecordings.net", "status": "label-source", "checked": "2026-06-17"},
+        {"label": "Trip Recordings", "url": "https://www.triprecordings.net", "status": "label-source", "checked": "2026-06-17"},
         {"label": "Nina Kraviz Resident Advisor profile", "url": "https://ra.co/dj/nina-kraviz", "status": "artist-profile", "checked": "2026-06-17"}
       ]
     },
