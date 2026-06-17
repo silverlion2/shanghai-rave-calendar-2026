@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T15:55:19.100Z",
+  "generatedAt": "2026-06-17T16:19:25.290Z",
   "sourceData": "data/events.json",
   "storagePolicy": {
     "mode": "static-json-plus-local-optimized-assets",
@@ -13,10 +13,10 @@
     ],
     "venues": 36,
     "optimizedCount": 74,
-    "displayBytes": 13285323,
-    "sourceBytes": 43656952,
+    "displayBytes": 13285953,
+    "sourceBytes": 41046805,
     "displayMegabytes": 12.67,
-    "sourceMegabytes": 41.63,
+    "sourceMegabytes": 39.15,
     "freeTierSoftCapBytes": 83886080,
     "freeTierSoftCapMegabytes": 80
   },
@@ -684,8 +684,8 @@
         "thumbnail": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg",
         "display": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg",
         "sourceAsset": "assets/posters/suaner-lanv-guizhou-kitchen.jpg",
-        "displayBytes": 81533,
-        "sourceBytes": 932581,
+        "displayBytes": 81336,
+        "sourceBytes": 235278,
         "optimized": true,
         "mime": "image/jpeg"
       },
@@ -1132,8 +1132,8 @@
         "thumbnail": "assets/posters/malaa-max-shanghai-optimized.jpg",
         "display": "assets/posters/malaa-max-shanghai-optimized.jpg",
         "sourceAsset": "assets/posters/malaa-max-shanghai.jpg",
-        "displayBytes": 183246,
-        "sourceBytes": 2224759,
+        "displayBytes": 182957,
+        "sourceBytes": 336587,
         "optimized": true,
         "mime": "image/jpeg"
       },
@@ -1574,8 +1574,8 @@
         "thumbnail": "assets/posters/oscar-l-mim-club-optimized.jpg",
         "display": "assets/posters/oscar-l-mim-club-optimized.jpg",
         "sourceAsset": "assets/posters/oscar-l-mim-club.jpg",
-        "displayBytes": 113450,
-        "sourceBytes": 231252,
+        "displayBytes": 114566,
+        "sourceBytes": 206580,
         "optimized": true,
         "mime": "image/jpeg"
       },
