@@ -5261,7 +5261,7 @@
       "imageTheme": "pink-neon",
       "imageUrl": "assets/dj-photos/nina-kraviz.jpg",
       "genres": ["techno", "acid techno", "experimental techno"],
-      "summary": "Nina Kraviz is a DJ, producer, and singer born in Irkutsk, Siberia, Russia, and based in Moscow. Her 2009 breakthrough release "Pain in the Ass" on Rekids established her as an international club artist. In 2014 she founded the трип (Trip) label, and later its sub-label Galaxiid, championing leftfield techno and experimental electronic music. Mixmag named her DJ of the Year in 2017.",
+      "summary": "Nina Kraviz is a DJ, producer, and singer born in Irkutsk, Siberia, Russia, and based in Moscow. Her 2009 breakthrough release on Rekids established her as an international club artist. In 2014 she founded the trip label, and later its sub-label Galaxiid, championing leftfield techno and experimental electronic music. Mixmag named her DJ of the Year in 2017.",
       "sourceNote": "Curated as an international reference profile for techno innovators. Facts sourced from the трип label, Mixmag profile, and Resident Advisor artist entry.",
       "sources": [
         {"label": "трип / Trip Recordings", "url": "https://www.triprecordings.net", "status": "label-source", "checked": "2026-06-17"},
@@ -5296,11 +5296,11 @@
       "scope": "International hard techno headliner / #1 Hard DJ",
       "imageTheme": "blood-red",
       "imageUrl": "assets/dj-photos/sara-landry.jpg",
-      "genres": ["hard techno", "industrial techno", "hardcore"],
-      "summary": "Sara Landry is an American DJ and producer who made history as The World's #1 Hard DJ according to DJ Mag 2025 rankings. Known for her intense hard techno sets that push the boundaries of the harder dance sounds, she has become a leading figure in the global hard techno scene.",
-      "sourceNote": "Curated as an international reference profile for hard techno. Sources include DJ Mag 2025 rankings and hard dance community reporting.",
+      "genres": ["hard techno", "industrial techno", "neo-rave"],
+      "summary": "Sara Landry is an Austin, Texas-based DJ and producer known for hard techno, industrial techno, and neo-rave. Trained as an audio engineer and sound designer, she has emerged as a leading figure in the harder end of techno through high-energy club sets, releases on leading hard techno imprints.",
+      "sourceNote": "Curated as an international reference profile for hard techno. Facts sourced from artist/label releases and Resident Advisor artist profile where available.",
       "sources": [
-        {"label": "DJ Mag Top 100 2025 - Hard DJ Rankings", "url": "https://djmag.com/top100", "status": "ranking-source", "checked": "2026-06-17"},
+        {"label": "Sara Landry Resident Advisor profile", "url": "https://ra.co/dj/saralandry", "status": "artist-profile", "checked": "2026-06-17"},
         {"label": "Hard Techno World Community", "url": "https://hardtechno.world", "status": "community-source", "checked": "2026-06-17"}
       ]
     },
@@ -5315,11 +5315,12 @@
       "imageTheme": "cyan-white",
       "imageUrl": "assets/dj-photos/anyma.jpg",
       "genres": ["melodic techno", "progressive house", "techno"],
-      "summary": "Anyma is the solo alias of Matteo Milleri, one half of Tale of Us. As Anyma, he delivers high-concept progressive house and melodic techno at venues like The Sphere in Las Vegas, where he was the first electronic act to have a residency. Ranked #10 in DJ Mag Top 100 2025.",
-      "sourceNote": "Curated as an international reference profile for melodic techno. Sources include DJ Mag Top 100 2025 and The Sphere residency reporting.",
+      "summary": "Anyma is the solo alias of Matteo Milleri, one half of the Milan-based duo Tale of Us. As Anyma, he launched his solo project with high-concept live shows blending melodic techno and progressive house, paired with immersive visuals. He debuted the album Genesys (2023) on Afterlife Records, the label he co-founded as part of Tale of Us. He has headlined major stages from Tomorrowland to the Afterlife world tour.",
+      "sourceNote": "Curated as an international reference profile for melodic techno. Facts sourced from the official Anyma artist info and Afterlife Records.",
       "sources": [
-        {"label": "DJ Mag Top 100 2025", "url": "https://djmag.com/top100", "status": "ranking-source", "checked": "2026-06-17"},
-        {"label": "Anyma/The Sphere Residency Reporting", "url": "https://edm.com/features/anyma-sphere-residency", "status": "news-source", "checked": "2026-06-17"}
+        {"label": "Anyma Official", "url": "https://anyma.live", "status": "artist-official", "checked": "2026-06-17"},
+        {"label": "Afterlife Records", "url": "https://afterlife.live", "status": "label-source", "checked": "2026-06-17"},
+        {"label": "Tale of Us / Anyma Resident Advisor profile", "url": "https://ra.co/dj/taleofus", "status": "artist-profile", "checked": "2026-06-17"}
       ]
     },
     {
@@ -5332,12 +5333,12 @@
       "scope": "International techno/house / Beatport chart success",
       "imageTheme": "purple-electric",
       "imageUrl": "assets/dj-photos/reinier-zonneveld.jpg",
-      "genres": ["techno", "tech house", "acid techno"],
-      "summary": "Reinier Zonneveld is a Dutch DJ and producer known for his energetic techno and tech house sets. He has achieved remarkable success on Beatport charts and has become a staple at major festivals. Ranked #22 in DJ Mag Top 100 2025.",
-      "sourceNote": "Curated as an international reference profile for techno. Sources include Beatport chart success and DJ Mag rankings.",
+      "genres": ["techno", "acid techno", "live techno"],
+      "summary": "Reinier Zonneveld is a Dutch DJ and producer known for driving acid-laced techno and live hardware performances. He runs the Filth on Acid label, his own imprint serving as a home for his productions and select collaborators. He has performed at major European techno festivals and events worldwide, with a discography spanning techno and acid techno releases.",
+      "sourceNote": "Curated as an international reference profile for techno. Facts sourced from the Filth on Acid label and artist profile.",
       "sources": [
-        {"label": "Beatport Chart Performance", "url": "https://beatport.com", "status": "chart-source", "checked": "2026-06-17"},
-        {"label": "DJ Mag Top 100 2025", "url": "https://djmag.com/top100", "status": "ranking-source", "checked": "2026-06-17"}
+        {"label": "Filth on Acid Label", "url": "https://filthonacid.com", "status": "label-source", "checked": "2026-06-17"},
+        {"label": "Reinier Zonneveld Resident Advisor profile", "url": "https://ra.co/dj/reinierzonneveld", "status": "artist-profile", "checked": "2026-06-17"}
       ]
     },
     {
@@ -5350,12 +5351,12 @@
       "scope": "International techno / psytrance fusion",
       "imageTheme": "psychedelic-orange",
       "imageUrl": "assets/dj-photos/indira-paganotto.jpg",
-      "genres": ["techno", "psytrance", "hard techno"],
-      "summary": "Indira Paganotto is a Spanish DJ and producer who has been making waves in the techno scene with her powerful performances and psytrance-influenced techno sound. Ranked #36 in DJ Mag Top 100 2025.",
-      "sourceNote": "Curated as an international reference profile for emerging techno artists. Sources include DJ Mag Top 100 2025.",
+      "genres": ["techno", "psychedelic techno", "psytrance"],
+      "summary": "Indira Paganotto is a Spanish DJ and producer born in 1992 who has become a leading name in psychedelic techno. She runs her own label imprint Artcore and has performed at major European techno and psytrance festivals. Her productions blend driving techno grooves with psychedelic textures.",
+      "sourceNote": "Curated as an international reference profile for emerging techno artists. Facts sourced from her label and releases.",
       "sources": [
-        {"label": "DJ Mag Top 100 2025", "url": "https://djmag.com/top100", "status": "ranking-source", "checked": "2026-06-17"},
-        {"label": "Techno Music World Rising Artists", "url": "https://www.technomusicworld.com", "status": "news-source", "checked": "2026-06-17"}
+        {"label": "Indira Paganotto Resident Advisor profile", "url": "https://ra.co/dj/indirapaganotto", "status": "artist-profile", "checked": "2026-06-17"},
+        {"label": "Artcore Label Context", "url": "https://ra.co/label/artcore", "status": "label-source", "checked": "2026-06-17"}
       ]
     },
     {
@@ -5368,12 +5369,13 @@
       "scope": "International industrial techno / Orange Mountain",
       "imageTheme": "industrial-grey",
       "imageUrl": "assets/dj-photos/i-hate-models.jpg",
-      "genres": ["industrial techno", "techno", "dark techno"],
-      "summary": "I Hate Models is a French DJ and producer known for his dark, industrial techno sound. His performances are characterized by intense energy and a raw, uncompromising approach. Ranked #79 in DJ Mag Top 100 2025.",
-      "sourceNote": "Curated as an international reference profile for industrial techno. Sources include DJ Mag Top 100 2025 and RA artist profiles.",
+      "genres": ["industrial techno", "techno", "acid techno"],
+      "summary": "I Hate Models is a masked French DJ and producer whose releases span Perc Trax and Mord. His productions draw from industrial techno, EBM, and acid techno, with a raw, dark aesthetic and relentless energy behind the decks. He has headlined major European techno clubs and festivals in recent years.",
+      "sourceNote": "Curated as an international reference profile for industrial techno. Facts sourced from the Perc Trax and Mord label discography and the artist's Resident Advisor entry.",
       "sources": [
-        {"label": "DJ Mag Top 100 2025", "url": "https://djmag.com/top100", "status": "ranking-source", "checked": "2026-06-17"},
-        {"label": "I Hate Models Resident Advisor profile", "url": "https://ra.co/dj/i-hate-models", "status": "artist-profile", "checked": "2026-06-17"}
+        {"label": "Perc Trax Label", "url": "https://perctrax.com", "status": "label-source", "checked": "2026-06-17"},
+        {"label": "Mord Label", "url": "https://mord.bandcamp.com", "status": "label-source", "checked": "2026-06-17"},
+        {"label": "I Hate Models Resident Advisor profile", "url": "https://ra.co/dj/ihatemodels", "status": "artist-profile", "checked": "2026-06-17"}
       ]
     },
     {
@@ -5383,15 +5385,15 @@
       "trackedAt": "2026-06-17",
       "checkedByTimezone": "Asia/Shanghai",
       "itinerary": [],
-      "scope": "International techno/tech house / F PMP label",
+      "scope": "International techno / Fckng Serious label",
       "imageTheme": "yellow-black",
       "imageUrl": "assets/dj-photos/boris-brejcha.jpg",
-      "genres": ["techno", "tech house", "minimal techno"],
-      "summary": "Boris Brejcha is a German DJ and producer known for his unique style combining techno and tech house with minimalist elements. Founder of the F PMP (Feed Demming Pandas) label, he performs wearing a mask and is known as 'The Yellow Wizard'. A consistent top 20 DJ Mag performer.",
-      "sourceNote": "Curated as an international reference profile for techno. Sources include F PMP label official and DJ Mag rankings.",
+      "genres": ["techno", "minimal techno", "high-tech minimal"],
+      "summary": "Boris Brejcha is a German DJ and producer born November 26, 1981, in Ludwigshafen am Rhein. He coined the term High-Tech Minimal to describe his melodic, groove-driven sound, which sits between minimal and tech house. He co-founded the Fckng Serious label and often performs behind his signature Joker mask. His long-standing label and discography have made him a consistent top-tier techno draw at European festivals.",
+      "sourceNote": "Curated as an international reference profile for techno. Facts sourced from the official Fckng Serious label and artist profile.",
       "sources": [
-        {"label": "Boris Brejcha F PMP Label", "url": "https://fpmp.de", "status": "label-source", "checked": "2026-06-17"},
-        {"label": "Boris Brejcha Resident Advisor profile", "url": "https://ra.co/dj/boris-brejcha", "status": "artist-profile", "checked": "2026-06-17"}
+        {"label": "Fckng Serious Label", "url": "https://fckngserious.com", "status": "label-source", "checked": "2026-06-17"},
+        {"label": "Boris Brejcha Resident Advisor profile", "url": "https://ra.co/dj/borisbrejcha", "status": "artist-profile", "checked": "2026-06-17"}
       ]
     },
     {
@@ -5401,15 +5403,15 @@
       "trackedAt": "2026-06-17",
       "checkedByTimezone": "Asia/Shanghai",
       "itinerary": [],
-      "scope": "International hard techno / Bastard Squad",
+      "scope": "International hard techno / Sram Records",
       "imageTheme": "hard-red",
       "imageUrl": "assets/dj-photos/nico-moreno.jpg",
-      "genres": ["hard techno", "industrial techno", "hardcore"],
-      "summary": "Nico Moreno is a French DJ and producer known for his aggressive hard techno sound. He is associated with Bastard Squad and has gained recognition for his high-energy performances that push the boundaries of hard dance music. Ranked #67 in DJ Mag Top 100 2025.",
-      "sourceNote": "Curated as an international reference profile for hard techno. Sources include DJ Mag Top 100 2025 and Bastard Squad community.",
+      "genres": ["hard techno", "industrial techno", "rave"],
+      "summary": "Nico Moreno is a French DJ and producer known for aggressive hard techno and rave-influenced productions. He is associated with the Insane Raves project and the Sram Records label circle, and has become a regular at European hard techno and rave events.",
+      "sourceNote": "Curated as an international reference profile for hard techno. Facts sourced from label information and artist profiles.",
       "sources": [
-        {"label": "DJ Mag Top 100 2025", "url": "https://djmag.com/top100", "status": "ranking-source", "checked": "2026-06-17"},
-        {"label": "Bastard Squad Collective", "url": "https://bastardsquad.fr", "status": "collective-source", "checked": "2026-06-17"}
+        {"label": "Nico Moreno Resident Advisor profile", "url": "https://ra.co/dj/nicomoreno", "status": "artist-profile", "checked": "2026-06-17"},
+        {"label": "Insane Raves / Sram Records context", "url": "https://sramrecords.bandcamp.com", "status": "label-source", "checked": "2026-06-17"}
       ]
     },
     {
@@ -5419,15 +5421,15 @@
       "trackedAt": "2026-06-17",
       "checkedByTimezone": "Asia/Shanghai",
       "itinerary": [],
-      "scope": "International techno / mau5trap label",
+      "scope": "International techno / We Are The Brave",
       "imageTheme": "pink-electric",
       "imageUrl": "assets/dj-photos/lilly-palmer.jpg",
-      "genres": ["techno", "tech house", "progressive techno"],
-      "summary": "Lilly Palmer is a Swiss DJ and producer who has made a significant impact on the techno scene with her powerful sets and productions. She is signed to deadmau5's mau5trap label. Ranked #57 in DJ Mag Top 100 2025.",
-      "sourceNote": "Curated as an international reference profile for techno. Sources include DJ Mag Top 100 2025 and mau5trap label.",
+      "genres": ["techno", "hard techno", "progressive techno"],
+      "summary": "Lilly Palmer is a German/Swiss DJ and producer known for energetic hard techno and driving progressive techno sets. She is a core artist on Alan Fitzpatrick's We Are The Brave label and has built a growing international following through club and festival bookings across Europe and beyond.",
+      "sourceNote": "Curated as an international reference profile for techno. Facts sourced from We Are The Brave label and artist profile.",
       "sources": [
-        {"label": "DJ Mag Top 100 2025", "url": "https://djmag.com/top100", "status": "ranking-source", "checked": "2026-06-17"},
-        {"label": "mau5trap Official", "url": "https://mau5trap.com", "status": "label-source", "checked": "2026-06-17"}
+        {"label": "We Are The Brave Label", "url": "https://wearethebrave.co.uk", "status": "label-source", "checked": "2026-06-17"},
+        {"label": "Lilly Palmer Resident Advisor profile", "url": "https://ra.co/dj/lillypalmer", "status": "artist-profile", "checked": "2026-06-17"}
       ]
     },
     {
@@ -5441,11 +5443,11 @@
       "imageTheme": "korean-pink",
       "imageUrl": "assets/dj-photos/peggy-gou.jpg",
       "genres": ["house", "techno", "disco"],
-      "summary": "Peggy Gou is a South Korean DJ and producer who has become a global sensation. Known for her joyful, genre-blending sets that span house, techno, and disco, she brings an infectious energy to her performances. Ranked #12 in DJ Mag Top 100 2025, making her one of the highest-placed female artists.",
-      "sourceNote": "Curated as an international reference profile for house/techno. Sources include DJ Mag Top 100 2025 and RA artist profiles.",
+      "summary": "Peggy Gou is a DJ, producer, and designer born July 3, 1991, in Incheon, South Korea, and based in Berlin. Her 2018 breakout release It Makes You Forget (Itgehane) — which featured her Korean-language vocals — brought her worldwide attention. In 2019 she founded her own label, Gudu Records. Her joyful sets move between house, disco, and techno, and she continues to headline major electronic festivals internationally.",
+      "sourceNote": "Curated as an international reference profile for house/techno. Facts sourced from Gudu Records and her artist profile.",
       "sources": [
-        {"label": "DJ Mag Top 100 2025", "url": "https://djmag.com/top100", "status": "ranking-source", "checked": "2026-06-17"},
-        {"label": "Peggy Gou Resident Advisor profile", "url": "https://ra.co/dj/peggy-gou", "status": "artist-profile", "checked": "2026-06-17"}
+        {"label": "Gudu Records", "url": "https://gudurecords.com", "status": "label-source", "checked": "2026-06-17"},
+        {"label": "Peggy Gou Resident Advisor profile", "url": "https://ra.co/dj/peggygou", "status": "artist-profile", "checked": "2026-06-17"}
       ]
     },
     {
@@ -5459,11 +5461,11 @@
       "imageTheme": "minimal-white",
       "imageUrl": "assets/dj-photos/richie-hawtin.jpg",
       "genres": ["minimal techno", "techno", "experimental"],
-      "summary": "Richie Hawtin is a British-Canadian DJ and producer who pioneered minimal techno and never stopped innovating. From the legendary Plus 8 and M_nus labels to his CLOSE shows and technology experiments, Hawtin represents the intellectual edge of techno. His influence on the sound of Berlin and global minimal techno is immeasurable.",
-      "sourceNote": "Curated as an international reference profile for techno pioneers. Sources include Plus 8/M_nus labels and RA artist profiles.",
+      "summary": "Richie Hawtin is a British-Canadian DJ, producer, and technology innovator born June 4, 1970, and raised in Windsor, Ontario. He co-founded Plus 8 Records in 1990 with John Acquaviva and later launched M_nus (Minus) in Berlin. Under his Plastikman alias, he pioneered the minimal and acid techno that shaped club culture of the 1990s and 2000s. His live performances continue to push custom technology — including his CLOSE audiovisual concept and his PLAYdifferently Model 1 mixer.",
+      "sourceNote": "Curated as an international reference profile for techno pioneers. Facts sourced from Plus 8 / M_nus and his official artist profile.",
       "sources": [
         {"label": "Richie Hawtin Official", "url": "https://richiehawtin.com", "status": "artist-official", "checked": "2026-06-17"},
-        {"label": "Richie Hawtin Resident Advisor profile", "url": "https://ra.co/dj/richie-hawtin", "status": "artist-profile", "checked": "2026-06-17"}
+        {"label": "Richie Hawtin Resident Advisor profile", "url": "https://ra.co/dj/richiehawtin", "status": "artist-profile", "checked": "2026-06-17"}
       ]
     },
     {
@@ -5477,11 +5479,11 @@
       "imageTheme": "german-steel",
       "imageUrl": "assets/dj-photos/klangkuenstler.jpg",
       "genres": ["hard techno", "techno", "industrial"],
-      "summary": "Klangkuenstler is a German DJ and producer known for his hard techno sound. He is associated with the Outworld label and has performed internationally, including the notable Outworld Tour. His sets are characterized by powerful kicks and intense energy.",
-      "sourceNote": "Curated as an international reference profile for hard techno. Sources include Outworld label and hard techno community reporting.",
+      "summary": "Klangkuenstler is a Berlin-based DJ and producer known for driving, industrial-strength hard techno. He runs the Outworld label — his own Berlin-based imprint and touring brand. A fixture at major European hard techno clubs and festivals, his sets and productions are defined by powerful kicks and a dark, atmospheric edge.",
+      "sourceNote": "Curated as an international reference profile for hard techno. Facts sourced from the Outworld label and artist profile.",
       "sources": [
-        {"label": "Outworld Label", "url": "https://outworld.de", "status": "label-source", "checked": "2026-06-17"},
-        {"label": "Hard Techno World Community", "url": "https://hardtechno.world", "status": "community-source", "checked": "2026-06-17"}
+        {"label": "Outworld Label", "url": "https://outworld.berlin", "status": "label-source", "checked": "2026-06-17"},
+        {"label": "Klangkuenstler Resident Advisor profile", "url": "https://ra.co/dj/klangkuenstler", "status": "artist-profile", "checked": "2026-06-17"}
       ]
     },
     {
@@ -5494,12 +5496,12 @@
       "scope": "International hard techno / French scene",
       "imageTheme": "french-blue",
       "imageUrl": "assets/dj-photos/fantasm.jpg",
-      "genres": ["hard techno", "industrial techno", "hardcore"],
-      "summary": "Fantasm is a French DJ and producer known for their hard techno productions and energetic performances. Emerging from the French underground scene, Fantasm has been gaining international recognition for their aggressive yet danceable sound. Ranked #93 in DJ Mag Top 100 2025.",
-      "sourceNote": "Curated as an international reference profile for hard techno. Sources include DJ Mag Top 100 2025 and French techno community.",
+      "genres": ["hard techno", "industrial techno", "rave"],
+      "summary": "Fantasm is a French DJ and producer in the hard techno and industrial techno space. Emerging from the French underground, they have gained attention through releases on hard techno imprints and club and festival bookings across Europe.",
+      "sourceNote": "Curated as an international reference profile for hard techno. Facts sourced from label discography and artist profile.",
       "sources": [
-        {"label": "DJ Mag Top 100 2025", "url": "https://djmag.com/top100", "status": "ranking-source", "checked": "2026-06-17"},
-        {"label": "French Techno Community", "url": "https://techno.fr", "status": "community-source", "checked": "2026-06-17"}
+        {"label": "Fantasm Resident Advisor profile", "url": "https://ra.co/dj/fantasm", "status": "artist-profile", "checked": "2026-06-17"},
+        {"label": "French Techno Community Context", "url": "https://ra.co/genre/techno", "status": "community-source", "checked": "2026-06-17"}
       ]
     },
     {
@@ -5509,15 +5511,15 @@
       "trackedAt": "2026-06-17",
       "checkedByTimezone": "Asia/Shanghai",
       "itinerary": [],
-      "scope": "International hard techno / Darkbox Berlin",
+      "scope": "International hard techno / Savour the Moment",
       "imageTheme": "berlin-nacht",
       "imageUrl": "assets/dj-photos/marlon-hoffstadt.jpg",
-      "genres": ["hard techno", "techno", "industrial"],
-      "summary": "Marlon Hoffstadt is a German DJ and producer who has emerged as a significant figure in the hard techno scene. Associated with Darkbox Berlin, his sets feature a blend of hard techno and industrial elements. Ranked #100 in DJ Mag Top 100 2025, marking his debut in the rankings.",
-      "sourceNote": "Curated as an international reference profile for emerging hard techno artists. Sources include DJ Mag Top 100 2025 debut ranking.",
+      "genres": ["hard techno", "techno", "trance-adjacent"],
+      "summary": "Marlon Hoffstadt is a Berlin-based DJ and producer known for fast-paced, trance-inflected techno and his Savour the Moment party series at Berlin's Salon zur Wilden Renate. He also releases under a trance-focused alias, with collaborations and tracks reaching large global followings at hard techno and European festival events.",
+      "sourceNote": "Curated as an international reference profile for emerging hard techno artists. Facts sourced from artist profile and party/label information.",
       "sources": [
-        {"label": "DJ Mag Top 100 2025 Debut", "url": "https://djmag.com/top100", "status": "ranking-source", "checked": "2026-06-17"},
-        {"label": "Darkbox Berlin", "url": "https://darkbox.berlin", "status": "venue-source", "checked": "2026-06-17"}
+        {"label": "Marlon Hoffstadt Resident Advisor profile", "url": "https://ra.co/dj/marlonhoffstadt", "status": "artist-profile", "checked": "2026-06-17"},
+        {"label": "Salon zur Wilden Renate / Savour the Moment", "url": "https://www.salonzurwildenrenate.de", "status": "venue-source", "checked": "2026-06-17"}
       ]
     },
     {
@@ -5530,12 +5532,12 @@
       "scope": "International melodic techno / progressive house",
       "imageTheme": "progressive-blue",
       "imageUrl": "assets/dj-photos/miss-monique.jpg",
-      "genres": ["melodic techno", "progressive house", "trance"],
-      "summary": "Miss Monique (Sonia de Gascuel) is a Russian-born DJ and producer known for her melodic techno and progressive house sets. She has gained significant popularity through her AI-enhanced live visuals and consistent chart success on Beatport. Ranked #75 in DJ Mag Top 100 2025.",
-      "sourceNote": "Curated as an international reference profile for melodic techno. Sources include DJ Mag Top 100 2025 and Beatport chart performance.",
+      "genres": ["melodic techno", "progressive house", "trance-influenced"],
+      "summary": "Miss Monique (Sonia de Gascuel) is a Ukrainian DJ and producer known for melodic techno and progressive house. She founded her own label imprint Siona Records, and her weekly radio shows and YearMix compilations continue to bring melodic techno to a large international audience.",
+      "sourceNote": "Curated as an international reference profile for melodic techno. Facts sourced from Siona Records and artist profile.",
       "sources": [
-        {"label": "DJ Mag Top 100 2025", "url": "https://djmag.com/top100", "status": "ranking-source", "checked": "2026-06-17"},
-        {"label": "Miss Monique Beatport Profile", "url": "https://beatport.com", "status": "chart-source", "checked": "2026-06-17"}
+        {"label": "Siona Records", "url": "https://sionatv.com", "status": "label-source", "checked": "2026-06-17"},
+        {"label": "Miss Monique Resident Advisor profile", "url": "https://ra.co/dj/miss-monique", "status": "artist-profile", "checked": "2026-06-17"}
       ]
     },
     {
@@ -5548,12 +5550,12 @@
       "scope": "International house/techno / Black underground pioneer",
       "imageTheme": "chicago-gold",
       "imageUrl": "assets/dj-photos/honey-dijon.jpg",
-      "genres": ["house", "techno", "disco", "black underground"],
-      "summary": "Honey Dijon is an American DJ and producer who is celebrated for championing black underground dance music. Drawing from Chicago house, Detroit techno, and New York disco, she brings authentic black queer perspective to her sets. Ranked #97 in DJ Mag Top 100 2025.",
-      "sourceNote": "Curated as an international reference profile for house/techno with focus on Black underground dance music heritage. Sources include DJ Mag Top 100 2025 and RA artist profiles.",
+      "genres": ["house", "techno", "disco"],
+      "summary": "Honey Dijon is an American DJ and producer born in Chicago and based in Berlin. She is celebrated for championing black underground dance music, drawing on Chicago house, Detroit techno, and New York disco. She co-runs the Classic Music Company label and is also known for her work in fashion and cultural commentary.",
+      "sourceNote": "Curated as an international reference profile for house/techno with focus on Black underground dance music heritage. Facts sourced from Classic Music Company and her artist profile.",
       "sources": [
-        {"label": "DJ Mag Top 100 2025", "url": "https://djmag.com/top100", "status": "ranking-source", "checked": "2026-06-17"},
-        {"label": "Honey Dijon Resident Advisor profile", "url": "https://ra.co/dj/honey-dijon", "status": "artist-profile", "checked": "2026-06-17"}
+        {"label": "Classic Music Company", "url": "https://defected.com/records/classic-music-company", "status": "label-source", "checked": "2026-06-17"},
+        {"label": "Honey Dijon Resident Advisor profile", "url": "https://ra.co/dj/honeydijon", "status": "artist-profile", "checked": "2026-06-17"}
       ]
     }
   ]
