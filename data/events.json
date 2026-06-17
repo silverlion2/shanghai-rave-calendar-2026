@@ -1371,7 +1371,8 @@
       "district": "Changning",
       "vibe": [
         "underground",
-        "bass"
+        "bass",
+        "house"
       ],
       "genre": "club, hip-hop, ghettotech, house, techno",
       "confidence": "Medium",
@@ -1395,6 +1396,7 @@
       ],
       "soundTags": [
         "industrial",
+        "house",
         "bass-hybrid",
         "groovy"
       ],
@@ -1800,7 +1802,8 @@
       "district": "Huangpu",
       "vibe": [
         "underground",
-        "date"
+        "date",
+        "house"
       ],
       "genre": "techno, house",
       "confidence": "High",
@@ -1823,6 +1826,7 @@
         }
       ],
       "soundTags": [
+        "house",
         "rooftop",
         "groovy"
       ],
@@ -1982,7 +1986,8 @@
       "district": "Changning",
       "vibe": [
         "underground",
-        "experimental"
+        "experimental",
+        "house"
       ],
       "genre": "techno-informed club music",
       "confidence": "Medium",
@@ -2005,6 +2010,7 @@
         }
       ],
       "soundTags": [
+        "house",
         "bass-hybrid",
         "industrial",
         "live-av",
@@ -2044,7 +2050,8 @@
       "venue": "The Sukhothai Shanghai",
       "district": "Jing'an",
       "vibe": [
-        "date"
+        "date",
+        "house"
       ],
       "genre": "techno, house",
       "confidence": "High",
@@ -2067,6 +2074,7 @@
         }
       ],
       "soundTags": [
+        "house",
         "warehouse",
         "rooftop",
         "groovy"
@@ -2424,7 +2432,8 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "house"
       ],
       "genre": "techno, hardcore, hardbass, hard trance",
       "confidence": "High",
@@ -2450,6 +2459,7 @@
         "hard-techno",
         "industrial",
         "trance-adjacent",
+        "house",
         "bass-hybrid",
         "live-av"
       ],
@@ -2614,7 +2624,8 @@
       "district": "Changning",
       "vibe": [
         "date",
-        "underground"
+        "underground",
+        "house"
       ],
       "genre": "techno, house, tech house",
       "confidence": "High",
@@ -2638,6 +2649,7 @@
       ],
       "soundTags": [
         "groovy",
+        "house",
         "rooftop"
       ],
       "decisionTags": [
@@ -2676,7 +2688,8 @@
       "vibe": [
         "warehouse",
         "date",
-        "underground"
+        "underground",
+        "house"
       ],
       "genre": "house, techno, bass",
       "confidence": "High",
@@ -2699,6 +2712,7 @@
         }
       ],
       "soundTags": [
+        "house",
         "bass-hybrid",
         "warehouse",
         "rooftop",
@@ -2740,7 +2754,8 @@
       "district": "Changning",
       "vibe": [
         "underground",
-        "date"
+        "date",
+        "house"
       ],
       "genre": "techno, house, minimal, nu-disco",
       "confidence": "High",
@@ -2764,6 +2779,7 @@
       ],
       "soundTags": [
         "minimal",
+        "house",
         "rooftop",
         "groovy"
       ],
@@ -2802,7 +2818,8 @@
       "district": "Changning",
       "vibe": [
         "underground",
-        "experimental"
+        "experimental",
+        "house"
       ],
       "genre": "techno, funk/soul lineage",
       "confidence": "High",
@@ -2827,6 +2844,7 @@
       "soundTags": [
         "industrial",
         "groovy",
+        "house",
         "live-av"
       ],
       "decisionTags": [
@@ -3413,7 +3431,8 @@
       "district": "Changning",
       "vibe": [
         "club",
-        "underground"
+        "underground",
+        "house"
       ],
       "genre": "house",
       "confidence": "Medium",
@@ -3480,7 +3499,9 @@
           "assets/posters/interzone-summer-time.jpg"
         ]
       },
-      "soundTags": [],
+      "soundTags": [
+        "house"
+      ],
       "decisionTags": [
         "strong techno fit",
         "late room",
@@ -3601,7 +3622,8 @@
       "venue": "The Shanghai Edition",
       "district": "Huangpu",
       "vibe": [
-        "date"
+        "date",
+        "house"
       ],
       "genre": "techno, house",
       "confidence": "High",
@@ -3624,6 +3646,7 @@
         }
       ],
       "soundTags": [
+        "house",
         "rooftop",
         "groovy"
       ],
@@ -4141,7 +4164,8 @@
       "venue": "Fosun Art Foundation",
       "district": "Huangpu",
       "vibe": [
-        "date"
+        "date",
+        "house"
       ],
       "genre": "techno, house",
       "confidence": "High",
@@ -4164,6 +4188,7 @@
         }
       ],
       "soundTags": [
+        "house",
         "rooftop",
         "groovy"
       ],
@@ -4429,6 +4454,7 @@
       },
       "soundTags": [
         "groovy",
+        "house",
         "rooftop"
       ],
       "decisionTags": [
@@ -4458,7 +4484,8 @@
       "district": "Changning",
       "vibe": [
         "underground",
-        "bass"
+        "bass",
+        "house"
       ],
       "genre": "house, hip-hop, groove, club",
       "confidence": "High",
@@ -4574,6 +4601,7 @@
       "kind": "event",
       "soundTags": [
         "groovy",
+        "house",
         "bass-hybrid"
       ],
       "decisionTags": [
@@ -4833,7 +4861,8 @@
       "district": "Huangpu",
       "vibe": [
         "underground",
-        "date"
+        "date",
+        "house"
       ],
       "genre": "techno, house",
       "confidence": "High",
@@ -4857,6 +4886,7 @@
       ],
       "soundTags": [
         "groovy",
+        "house",
         "bass-hybrid",
         "rooftop"
       ],
@@ -5110,7 +5140,8 @@
       "venue": "Pop Bar",
       "district": "The Bund",
       "vibe": [
-        "date"
+        "date",
+        "house"
       ],
       "genre": "techno, house",
       "confidence": "High",
@@ -5133,6 +5164,7 @@
         }
       ],
       "soundTags": [
+        "house",
         "rooftop",
         "groovy"
       ],
@@ -5299,7 +5331,8 @@
       "district": "Huangpu",
       "vibe": [
         "underground",
-        "date"
+        "date",
+        "house"
       ],
       "genre": "house, techno-adjacent",
       "confidence": "High",
@@ -5323,6 +5356,7 @@
       ],
       "soundTags": [
         "groovy",
+        "house",
         "rooftop"
       ],
       "decisionTags": [
@@ -5973,6 +6007,7 @@
       "kind": "event",
       "soundTags": [
         "groovy",
+        "house",
         "rooftop"
       ],
       "decisionTags": [
@@ -6194,7 +6229,8 @@
       "district": "Changning",
       "vibe": [
         "club",
-        "date"
+        "date",
+        "house"
       ],
       "genre": "house, hip-hop, dance battle",
       "confidence": "Medium",
@@ -6265,6 +6301,7 @@
       },
       "kind": "event",
       "soundTags": [
+        "house",
         "rooftop",
         "groovy"
       ],
@@ -6570,7 +6607,9 @@
         ]
       },
       "kind": "event",
-      "soundTags": [],
+      "soundTags": [
+        "house"
+      ],
       "decisionTags": [
         "strong techno fit",
         "late room",
@@ -6715,7 +6754,8 @@
       "district": "Huangpu",
       "vibe": [
         "underground",
-        "date"
+        "date",
+        "house"
       ],
       "genre": "house, club, electronic",
       "confidence": "Medium",
@@ -6797,6 +6837,7 @@
       "verifyBeforeGoing": "Check Heim for door price, ticket route, age policy, and final room status before going.",
       "sourceConfidence": "Heim WeChat poster, monthly schedule, and article screenshots confirm title, date, venue/address, time, and lineup; ticket route, price, and age policy remain unchecked.",
       "soundTags": [
+        "house",
         "rooftop"
       ],
       "decisionTags": [
@@ -6828,7 +6869,8 @@
       "district": "Changning",
       "vibe": [
         "underground",
-        "club"
+        "club",
+        "house"
       ],
       "genre": "house, techno",
       "confidence": "Medium",
@@ -6872,6 +6914,7 @@
       ],
       "soundTags": [
         "groovy",
+        "house",
         "live-av"
       ],
       "decisionTags": [
@@ -7316,7 +7359,8 @@
       "district": "Huangpu",
       "vibe": [
         "underground",
-        "date"
+        "date",
+        "house"
       ],
       "genre": "selector culture, house, club, electronic listening",
       "confidence": "Medium",
@@ -7410,6 +7454,7 @@
       "verifyBeforeGoing": "Confirm ticket route, door price, age policy, and whether all TBA lineup additions have been announced by Heim before going.",
       "sourceConfidence": "Heim WeChat poster, monthly schedule, and article screenshots confirm title, date, time, venue/address, and the named lineup; price, ticket route, age policy, and final TBA additions remain unchecked.",
       "soundTags": [
+        "house",
         "rooftop"
       ],
       "decisionTags": [
@@ -7712,6 +7757,7 @@
       },
       "kind": "event",
       "soundTags": [
+        "house",
         "groovy"
       ],
       "decisionTags": [
@@ -8263,7 +8309,8 @@
       "district": "Changning",
       "vibe": [
         "underground",
-        "club"
+        "club",
+        "house"
       ],
       "genre": "house, techno, underground house",
       "confidence": "High",
@@ -8341,7 +8388,8 @@
       ],
       "kind": "event",
       "soundTags": [
-        "groovy"
+        "groovy",
+        "house"
       ],
       "decisionProfile": {
         "intensity": "medium",
@@ -8805,7 +8853,8 @@
       "district": "Huangpu",
       "vibe": [
         "bass",
-        "underground"
+        "underground",
+        "house"
       ],
       "genre": "techno-dubstep hybrid, house, club music",
       "confidence": "Watch",
@@ -8885,6 +8934,7 @@
         }
       ],
       "soundTags": [
+        "house",
         "bass-hybrid",
         "groovy"
       ],
@@ -9210,7 +9260,8 @@
       "vibe": [
         "g-house",
         "tech-house",
-        "bass"
+        "bass",
+        "house"
       ],
       "genre": "G-house, bass house, tech house",
       "confidence": "High",
@@ -9254,6 +9305,7 @@
       "kind": "event",
       "soundTags": [
         "groovy",
+        "house",
         "bass-hybrid"
       ],
       "decisionTags": [
@@ -9288,7 +9340,8 @@
       "district": "Jing'an",
       "vibe": [
         "date",
-        "club"
+        "club",
+        "house"
       ],
       "genre": "techno, house, hotel party",
       "confidence": "Medium",
@@ -9351,6 +9404,7 @@
       },
       "kind": "event",
       "soundTags": [
+        "house",
         "bass-hybrid",
         "rooftop",
         "groovy"
@@ -10397,7 +10451,8 @@
       "district": "Huangpu",
       "vibe": [
         "underground",
-        "date"
+        "date",
+        "house"
       ],
       "genre": "techno, house",
       "confidence": "Watch",
@@ -10449,6 +10504,7 @@
         }
       ],
       "soundTags": [
+        "house",
         "live-av",
         "rooftop",
         "groovy"
@@ -10618,7 +10674,8 @@
       "district": "Huangpu",
       "vibe": [
         "underground",
-        "date"
+        "date",
+        "house"
       ],
       "genre": "EBM, electro, trance, house",
       "confidence": "Medium",
@@ -10699,6 +10756,7 @@
       "soundTags": [
         "industrial",
         "trance-adjacent",
+        "house",
         "rooftop"
       ],
       "decisionTags": [
@@ -11126,6 +11184,7 @@
       ],
       "soundTags": [
         "melodic",
+        "house",
         "rooftop"
       ],
       "decisionTags": [
@@ -11236,7 +11295,8 @@
       "district": "Changning",
       "vibe": [
         "underground",
-        "experimental"
+        "experimental",
+        "house"
       ],
       "genre": "house, downtempo, minimal, ambient, techno, bass, trance",
       "confidence": "Watch",
@@ -11298,6 +11358,7 @@
       "soundTags": [
         "minimal",
         "trance-adjacent",
+        "house",
         "bass-hybrid",
         "live-av",
         "industrial",

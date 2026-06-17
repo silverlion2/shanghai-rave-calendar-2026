@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T16:39:27.218Z",
+  "generatedAt": "2026-06-17T17:36:54.138Z",
   "sourceData": "data/events.json",
   "storagePolicy": {
     "mode": "static-json-plus-local-optimized-assets",
@@ -13,10 +13,10 @@
     ],
     "venues": 36,
     "optimizedCount": 74,
-    "displayBytes": 13234164,
-    "sourceBytes": 40978114,
-    "displayMegabytes": 12.62,
-    "sourceMegabytes": 39.08,
+    "displayBytes": 13265145,
+    "sourceBytes": 41013884,
+    "displayMegabytes": 12.65,
+    "sourceMegabytes": 39.11,
     "freeTierSoftCapBytes": 83886080,
     "freeTierSoftCapMegabytes": 80
   },
@@ -311,10 +311,10 @@
         "huangpu",
         "underground",
         "date",
+        "house",
         "ebm",
         "electro",
-        "trance",
-        "house"
+        "trance"
       ],
       "status": "upcoming",
       "confidence": "Medium",
@@ -684,8 +684,8 @@
         "thumbnail": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg",
         "display": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg",
         "sourceAsset": "assets/posters/suaner-lanv-guizhou-kitchen.jpg",
-        "displayBytes": 81336,
-        "sourceBytes": 235278,
+        "displayBytes": 181824,
+        "sourceBytes": 376383,
         "optimized": true,
         "mime": "image/jpeg"
       },
@@ -978,8 +978,8 @@
         "huangpu",
         "bass",
         "underground",
-        "techno-dubstep hybrid",
         "house",
+        "techno-dubstep hybrid",
         "club music"
       ],
       "status": "watch",
@@ -1115,6 +1115,7 @@
         "g-house",
         "tech-house",
         "bass",
+        "house",
         "bass house",
         "tech house"
       ],
@@ -1132,8 +1133,8 @@
         "thumbnail": "assets/posters/malaa-max-shanghai-optimized.jpg",
         "display": "assets/posters/malaa-max-shanghai-optimized.jpg",
         "sourceAsset": "assets/posters/malaa-max-shanghai.jpg",
-        "displayBytes": 182957,
-        "sourceBytes": 336587,
+        "displayBytes": 113450,
+        "sourceBytes": 231252,
         "optimized": true,
         "mime": "image/jpeg"
       },
@@ -1159,8 +1160,8 @@
         "jing'an",
         "date",
         "club",
-        "techno",
         "house",
+        "techno",
         "hotel party"
       ],
       "status": "upcoming",
@@ -1291,8 +1292,8 @@
         "huangpu",
         "underground",
         "date",
-        "selector culture",
         "house",
+        "selector culture",
         "club",
         "electronic listening"
       ],
@@ -2176,8 +2177,8 @@
         "high",
         "the bund",
         "date",
-        "techno",
-        "house"
+        "house",
+        "techno"
       ],
       "status": "past",
       "confidence": "High",
@@ -2624,8 +2625,8 @@
         "huangpu",
         "underground",
         "date",
-        "techno",
-        "house"
+        "house",
+        "techno"
       ],
       "status": "past",
       "confidence": "High",
@@ -2888,8 +2889,8 @@
         "high",
         "huangpu",
         "date",
-        "techno",
-        "house"
+        "house",
+        "techno"
       ],
       "status": "past",
       "confidence": "High",
@@ -3235,8 +3236,8 @@
         "high",
         "huangpu",
         "date",
-        "techno",
-        "house"
+        "house",
+        "techno"
       ],
       "status": "past",
       "confidence": "High",
