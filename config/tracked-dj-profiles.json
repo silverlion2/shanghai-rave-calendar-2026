@@ -5204,12 +5204,12 @@
       "scope": "International techno headliner / global festival headliner",
       "imageTheme": "dark-violet",
       "imageUrl": "assets/dj-photos/charlotte-de-witte.jpg",
-      "genres": ["techno", "dark techno", "industrial techno", "hard techno"],
-      "summary": "Charlotte de Witte is a Belgian DJ and producer widely recognized as one of techno's leading figures globally. She is the founder of the KNTXT label and has been ranked as the world's #1 Techno DJ by DJ Mag. Known for her dark, driving techno sound with industrial edge, she regularly headlines major festivals including Tomorrowland, Awakenings, and Time Warp.",
-      "sourceNote": "Curated as an international reference profile for techno headliners. Sources include DJ Mag Top 100 rankings, EDMDanceDirectory, and Techno Music World reporting on her global festival presence and KNTXT label activities.",
+      "genres": ["techno", "dark techno", "hard techno", "acid techno"],
+      "summary": "Charlotte de Witte is a Belgian DJ and producer born July 21, 1992, in Ghent, Flanders. She is the founder of KNTXT — her own label, event series, and touring platform. With releases across her own imprint and KNTXT, her driving, acid-laced hard techno has made her a headliner at Tomorrowland, Awakenings, Time Warp, and major techno stages worldwide. She topped the DJ Mag Alternative Top 100 DJs in 2020.",
+      "sourceNote": "Curated as an international reference profile for techno headliners. Facts gathered from the official Charlotte de Witte website, Resident Advisor artist profile, and the KNTXT label platform.",
       "sources": [
-        {"label": "EDMDanceDirectory - Best Techno DJs 2025", "url": "https://edmdancedirectory.com/guides/djs/best-techno-djs-2025", "status": "ranking-source", "checked": "2026-06-17"},
-        {"label": "Techno Music World - DJ Mag Top 100 2025", "url": "https://www.technomusicworld.com/news/dj-mag-top-100-djs-2025-david-guetta-reclaims-no1-as-techno-artists-rise", "status": "ranking-source", "checked": "2026-06-17"},
+        {"label": "Charlotte de Witte Official Website", "url": "https://charlottedewitte.com", "status": "artist-official", "checked": "2026-06-17"},
+        {"label": "KNTXT Label / Platform", "url": "https://kntxt.com", "status": "label-source", "checked": "2026-06-17"},
         {"label": "Charlotte de Witte Resident Advisor profile", "url": "https://ra.co/dj/charlotte-de-witte", "status": "artist-profile", "checked": "2026-06-17"}
       ]
     },
@@ -5224,10 +5224,11 @@
       "imageTheme": "deep-red",
       "imageUrl": "assets/dj-photos/amelie-lens.jpg",
       "genres": ["techno", "hypnotic techno", "acid techno"],
-      "summary": "Amelie Lens is a Belgian DJ and producer who rose from the Belgian underground to become one of techno's most in-demand artists. She founded the Lenske and Exhale labels, cultivating a distinct sound that bridges accessibility and authenticity. Known for her infectious energy behind the decks, she dances as hard as her crowds. Ranked #38 in DJ Mag Top 100 2025.",
-      "sourceNote": "Curated as an international reference profile for techno headliners. Sources include DJ Mag Top 100 rankings and RA artist profiles.",
+      "summary": "Amelie Lens is a Belgian DJ and producer from Vilvoorde, near Brussels, who has risen from the local underground to become one of techno's most in-demand artists. She launched the LENSKE label in 2018 and runs the Exhale event series and label concept. Her breakthrough releases on Second State established her hypnotic, high-energy sound, and she has held headline slots at Tomorrowland, Awakenings, and major European techno festivals.",
+      "sourceNote": "Curated as an international reference profile for techno headliners. Facts sourced from LENSKE label information, the Exhale event series, and Resident Advisor artist profile.",
       "sources": [
-        {"label": "DJ Mag Top 100 2025 Rankings", "url": "https://djmag.com/top100", "status": "ranking-source", "checked": "2026-06-17"},
+        {"label": "LENSKE Label", "url": "https://lenske.kompakt.fm", "status": "label-source", "checked": "2026-06-17"},
+        {"label": "Exhale - Amelie Lens", "url": "https://exhale.techno", "status": "event-series", "checked": "2026-06-17"},
         {"label": "Amelie Lens Resident Advisor profile", "url": "https://ra.co/dj/amelie-lens", "status": "artist-profile", "checked": "2026-06-17"}
       ]
     },
@@ -5242,8 +5243,8 @@
       "imageTheme": "white-black",
       "imageUrl": "assets/dj-photos/adam-beyer.jpg",
       "genres": ["techno", "driving techno", "minimal techno"],
-      "summary": "Adam Beyer is a Swedish DJ and producer who has been a pillar of techno for over 25 years. He is the founder of Drumcode, one of the most influential techno labels in the world. His marathon sets at Drumcode festivals showcase unmatched stamina and selection. Known as the godfather of Swedish techno, he continues to deliver driving, loop-based techno perfection at the highest level.",
-      "sourceNote": "Curated as an international reference profile for techno legends. Sources include Drumcode official channels and RA artist profiles.",
+      "summary": "Adam Beyer is a Swedish DJ and producer born 1976 in Stockholm, and one of techno's defining figures for over 25 years. He founded the Drumcode label in 1995, which has become one of the most influential and commercially successful techno platforms worldwide. The Drumcode Radio show, broadcast weekly across over 60 countries, and Drumcode-labeled festival events anchor his touring output. Collaborative releases with Layton Giordani, Green Velvet, and Enrico Sangiuliano remain techno staples.",
+      "sourceNote": "Curated as an international reference profile for techno legends. Facts sourced from the Drumcode label and the Adam Beyer artist profile.",
       "sources": [
         {"label": "Drumcode Official", "url": "https://drumcode.se", "status": "label-source", "checked": "2026-06-17"},
         {"label": "Adam Beyer Resident Advisor profile", "url": "https://ra.co/dj/adam-beyer", "status": "artist-profile", "checked": "2026-06-17"}
@@ -5259,11 +5260,11 @@
       "scope": "International techno innovator / трип label founder",
       "imageTheme": "pink-neon",
       "imageUrl": "assets/dj-photos/nina-kraviz.jpg",
-      "genres": ["techno", "acid techno", "experimental techno", "psychedelic techno"],
-      "summary": "Nina Kraviz is a Russian DJ, producer, and singer who founded the трип (Trip) label, which champions the weird and wonderful corners of electronic music. Her sets take unexpected turns—from acid to industrial to moments of pure beauty. Love her or hate her, she's impossible to ignore.",
-      "sourceNote": "Curated as an international reference profile for techno innovators. Sources include трип label official and RA artist profiles.",
+      "genres": ["techno", "acid techno", "experimental techno"],
+      "summary": "Nina Kraviz is a DJ, producer, and singer born in Irkutsk, Siberia, Russia, and based in Moscow. Her 2009 breakthrough release "Pain in the Ass" on Rekids established her as an international club artist. In 2014 she founded the трип (Trip) label, and later its sub-label Galaxiid, championing leftfield techno and experimental electronic music. Mixmag named her DJ of the Year in 2017.",
+      "sourceNote": "Curated as an international reference profile for techno innovators. Facts sourced from the трип label, Mixmag profile, and Resident Advisor artist entry.",
       "sources": [
-        {"label": "Nina Kraviz трип label", "url": "https://trip Recordings.com", "status": "label-source", "checked": "2026-06-17"},
+        {"label": "трип / Trip Recordings", "url": "https://www.triprecordings.net", "status": "label-source", "checked": "2026-06-17"},
         {"label": "Nina Kraviz Resident Advisor profile", "url": "https://ra.co/dj/nina-kraviz", "status": "artist-profile", "checked": "2026-06-17"}
       ]
     },
@@ -5278,8 +5279,8 @@
       "imageTheme": "orange-fire",
       "imageUrl": "assets/dj-photos/carl-cox.jpg",
       "genres": ["techno", "tech house", "rave"],
-      "summary": "Carl Cox is a British DJ and producer who is electronic music royalty. Four decades into his career, 'The King' still commands the biggest stages with his legendary three-deck sets and infectious energy. His Hybrid Live shows push boundaries, while his pure DJ sets remind everyone why he's considered one of the greatest of all time.",
-      "sourceNote": "Curated as an international reference profile for techno legends. Sources include Carl Cox official channels and RA artist profiles.",
+      "summary": "Carl Cox is a British DJ and producer born July 29, 1962, in Oldham, Greater Manchester. A defining figure in dance music, he co-founded Intec Digital (later Intec Records) in 1998 and hosted a legendary 15-year residency at Space Ibiza (2001–2016). He is widely admired for his three-deck mixing technique and marathon sets, and he also tours as a live/hybrid act under the Carl Cox Hybrid Live format.",
+      "sourceNote": "Curated as an international reference profile for techno legends. Facts sourced from the official Carl Cox website and his Intec label.",
       "sources": [
         {"label": "Carl Cox Official", "url": "https://carlcox.com", "status": "artist-official", "checked": "2026-06-17"},
         {"label": "Carl Cox Resident Advisor profile", "url": "https://ra.co/dj/carl-cox", "status": "artist-profile", "checked": "2026-06-17"}
