@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-17T06:45:34.612Z",
-  "verified": "2026-06-17",
+  "generatedAt": "2026-06-17T18:08:56.758Z",
+  "verified": "2026-06-18",
   "timezone": "Asia/Shanghai",
   "sourcePriority": [
     "Chrome + Computer Use for anti-bot, logged-in, app-only, image/poster, and mini-program sources",
@@ -40,7 +40,7 @@
       "url": "https://www.smartshanghai.com/events/clubbing/",
       "kind": "listing",
       "sourceStatus": "secondary",
-      "checkedAt": "2026-06-17",
+      "checkedAt": "2026-06-18",
       "ok": true,
       "status": 200,
       "eventLinks": 20
@@ -12172,6 +12172,281 @@
       "bestFor": "Best for a more social, house-forward, rooftop, or date-friendly electronic route.",
       "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
       "sourceConfidence": "Watch-level confidence from Shanghai Municipal Commission of Commerce; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence."
+    },
+    {
+      "id": "girls-night-out-dome",
+      "month": "Jun",
+      "sortDate": "2026-06-18",
+      "date": "Thursdays to Jun 25",
+      "time": "22:00",
+      "title": "Girls Night Out",
+      "venue": "The Dome",
+      "district": "Huangpu",
+      "vibe": [
+        "social",
+        "rooftop"
+      ],
+      "genre": "rooftop cocktails, music, skyline views",
+      "confidence": "Watch",
+      "status": "upcoming",
+      "price": "Not listed",
+      "age": "Not listed",
+      "source": "https://www.smartshanghai.com/events/clubbing/",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "gold",
+      "description": "Skyline Dome Thursday night series: cocktails, skyline views, and DJ music above the Bund with a social, date-friendly vibe.",
+      "kind": "event",
+      "sourceStatus": "watchlist",
+      "lastChecked": "2026-06-18",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/events/clubbing/",
+          "status": "watchlist",
+          "lastChecked": "2026-06-18"
+        }
+      ],
+      "address": "5/F, 1 Yan'an Dong Lu, near Zhongshan Dong Yi Lu, Huangpu District",
+      "organizer": "The Dome",
+      "detailsUrl": "https://www.smartshanghai.com/events/clubbing/",
+      "soundTags": [
+        "melodic",
+        "rooftop"
+      ],
+      "decisionTags": [
+        "low techno fit",
+        "date route",
+        "rooftop",
+        "verify first",
+        "recurring"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "unconfirmed",
+        "lateRoom": false,
+        "ticketReady": false,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "watchlist",
+          "recurring-series"
+        ]
+      },
+      "recurrence": {
+        "frequency": "weekly",
+        "day": "Thursday",
+        "until": "2026-06-25",
+        "source": "SmartShanghai"
+      },
+      "recommendationReason": "Included as a Watch/social-route listing for readers looking for rooftop-cocktail nights with a DJ soundtrack; not positioned as a dedicated club pick.",
+      "bestFor": "Best for Bund rooftop views, cocktails, and a more social/dancefloor-adjacent Thursday evening.",
+      "verifyBeforeGoing": "Recheck the latest SmartShanghai clubbing page or the venue for lineup, door policy, ticket availability, and weather on the day.",
+      "sourceConfidence": "Watch-level confidence from SmartShanghai listings page; verify with the venue or a dedicated detail page before treating it as a pick."
+    },
+    {
+      "id": "disco-ball-fridays-dome",
+      "month": "Jun",
+      "sortDate": "2026-06-19",
+      "date": "Fridays to Jun 26",
+      "time": "18:00-late",
+      "title": "Disco Ball Fridays",
+      "venue": "The Dome",
+      "district": "Huangpu",
+      "vibe": [
+        "disco",
+        "rooftop"
+      ],
+      "genre": "disco, house, rooftop",
+      "confidence": "Watch",
+      "status": "upcoming",
+      "price": "Not listed",
+      "age": "Not listed",
+      "source": "https://www.smartshanghai.com/events/clubbing/",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "gold",
+      "description": "Weekly Friday disco and house music night at Skyline Dome, with a spinning disco ball, skyline views, and classic disco blended with modern house.",
+      "kind": "event",
+      "sourceStatus": "watchlist",
+      "lastChecked": "2026-06-18",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/events/clubbing/",
+          "status": "watchlist",
+          "lastChecked": "2026-06-18"
+        }
+      ],
+      "address": "5/F, 1 Yan'an Dong Lu, near Zhongshan Dong Yi Lu, Huangpu District",
+      "organizer": "The Dome",
+      "detailsUrl": "https://www.smartshanghai.com/events/clubbing/",
+      "soundTags": [
+        "disco",
+        "house",
+        "rooftop"
+      ],
+      "decisionTags": [
+        "low techno fit",
+        "date route",
+        "rooftop",
+        "disco/house",
+        "verify first",
+        "recurring"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "unconfirmed",
+        "lateRoom": false,
+        "ticketReady": false,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "watchlist",
+          "recurring-series"
+        ]
+      },
+      "recurrence": {
+        "frequency": "weekly",
+        "day": "Friday",
+        "until": "2026-06-26",
+        "source": "SmartShanghai"
+      },
+      "recommendationReason": "Listed because the Disco Ball Fridays series provides a disco/house-leaning rooftop option for readers on Friday evenings at Skyline Dome.",
+      "bestFor": "Best for readers who want a disco-leaning rooftop or social-dancefloor-adjacent Friday night.",
+      "verifyBeforeGoing": "Recheck the latest SmartShanghai page, lineup, ticket availability, and door/table policy before making plans.",
+      "sourceConfidence": "Watch-level confidence from SmartShanghai listings page; verify with the venue or a dedicated detail page before treating it as a pick."
+    },
+    {
+      "id": "hush-three-year-anniversary-dj-david",
+      "month": "Jun",
+      "sortDate": "2026-06-19",
+      "date": "Jun 19",
+      "time": "22:00-late",
+      "title": "Hush Three-Year Anniversary w/ DJ David (Trap, Rage, Hip hop)",
+      "venue": "Hush (INS)",
+      "district": "Huangpu",
+      "vibe": [
+        "hip-hop",
+        "club"
+      ],
+      "genre": "hip hop, trap, rap club",
+      "confidence": "Watch",
+      "status": "upcoming",
+      "price": "Not listed",
+      "age": "Not listed",
+      "source": "https://www.smartshanghai.com/events/clubbing/",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "magenta",
+      "description": "INS hip-hop club Hush celebrates its three-year anniversary with DJ David for a night of trap, rap/rage, and hip-hop club energy.",
+      "kind": "event",
+      "sourceStatus": "watchlist",
+      "lastChecked": "2026-06-18",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/events/clubbing/",
+          "status": "watchlist",
+          "lastChecked": "2026-06-18"
+        }
+      ],
+      "organizer": "Hush / INS",
+      "detailsUrl": "https://www.smartshanghai.com/events/clubbing/",
+      "soundTags": [
+        "hip-hop",
+        "trap",
+        "club-rap"
+      ],
+      "decisionTags": [
+        "low techno fit",
+        "hip-hop/rap route",
+        "anniversary",
+        "verify first"
+      ],
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "unconfirmed",
+        "lateRoom": true,
+        "ticketReady": false,
+        "hasLineup": true,
+        "hasPoster": false,
+        "riskFlags": [
+          "watchlist",
+          "hip-hop-not-techno"
+        ]
+      },
+      "recommendationReason": "Included on Watch because Hush is an established hip-hop/rap club in the Huangpu/INS cluster and the anniversary night flags a bigger club energy, even if it is not primarily techno.",
+      "bestFor": "Best for readers who want a rap/trap/rage-leaning club night as a companion to their Shanghai electronic calendar.",
+      "verifyBeforeGoing": "Recheck the latest event page for ticket availability, lineup additions, venue address, and age/door policy before heading out.",
+      "sourceConfidence": "Watch-level confidence from SmartShanghai listings page; verify with the venue or a dedicated detail page before treating it as a pick.",
+      "lineup": [
+        {
+          "name": "DJ David",
+          "note": "SmartShanghai lists DJ David as the featured selector for the Hush three-year anniversary night."
+        }
+      ]
+    },
+    {
+      "id": "nova-sundown-char-bar-rooftop",
+      "month": "Jun",
+      "sortDate": "2026-06-20",
+      "date": "Jun 20",
+      "time": "15:00-23:00",
+      "title": "Nova Events Presents: Sundown - CHAR Bar Rooftop Opening Party",
+      "venue": "CHAR Bar (Indigo Hotel 30F)",
+      "district": "Huangpu",
+      "vibe": [
+        "rooftop",
+        "open-air"
+      ],
+      "genre": "rooftop opening, DJ music, sunset",
+      "confidence": "Watch",
+      "status": "upcoming",
+      "price": "Not listed",
+      "age": "Not listed",
+      "source": "https://www.smartshanghai.com/events/clubbing/",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "gold",
+      "description": "Rooftop opening party at CHAR Bar on the 30th floor of Indigo Hotel Shanghai, with panoramic skyline views, sunset scenery, and more than eight hours of DJ music.",
+      "kind": "event",
+      "sourceStatus": "watchlist",
+      "lastChecked": "2026-06-18",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/events/clubbing/",
+          "status": "watchlist",
+          "lastChecked": "2026-06-18"
+        }
+      ],
+      "organizer": "Nova Events",
+      "detailsUrl": "https://www.smartshanghai.com/events/clubbing/",
+      "soundTags": [
+        "melodic",
+        "rooftop",
+        "open-air"
+      ],
+      "decisionTags": [
+        "low techno fit",
+        "date route",
+        "rooftop",
+        "opening party",
+        "verify first"
+      ],
+      "decisionProfile": {
+        "intensity": "soft",
+        "credibility": "unconfirmed",
+        "lateRoom": false,
+        "ticketReady": false,
+        "hasLineup": false,
+        "hasPoster": false,
+        "riskFlags": [
+          "watchlist",
+          "rooftop-venue"
+        ]
+      },
+      "recommendationReason": "Listed because the Sundown rooftop opening flags an all-day sunset+DJ option for readers looking for open-air, skyline-view alternatives to basement club nights.",
+      "bestFor": "Best for readers who want a daytime/early-evening rooftop option as a complement to the harder club picks.",
+      "verifyBeforeGoing": "Recheck the latest event page for ticket availability, final set times, lineup, and weather on the day.",
+      "sourceConfidence": "Watch-level confidence from SmartShanghai listings page; verify with the venue or a dedicated detail page before treating it as a pick."
     }
   ],
   "socialLeads": [],

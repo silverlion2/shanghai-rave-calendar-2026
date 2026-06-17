@@ -58,8 +58,15 @@ Invoke this skill whenever the user asks to:
    "two browsers show different images," escalate to a `Cache-Control`
    header change in `vercel.json` and a fresh redeploy (see step 9).
 8. **NEVER commit temporary verification files** (`_check-*.jpg`,
-   `_check-*.js`, `_verify-*.js`, `_oscar-source-backup.*`,
+   `_check-*.js`, `_verify-*.js`, `_ocr*.js`, `_oscar-source-backup.*`,
    `_patch-*.svg`, etc.) to the repo. Delete them before the commit.
+9. **ALWAYS run OCR on every source image BEFORE deciding which event it
+   belongs to.** Run `tesseract <image> stdout -l chi_sim+eng --psm 6`
+   (or the node equivalent) to extract the text. Use the extracted text
+   — artist name, date, venue, ticket info — to match the image against
+   `data/events.json`. **Never guess or assume from the filename alone.**
+   The filename is almost always wrong. The OCR text is the source of
+   truth for which event the poster belongs to.
 
 ## Step-by-step workflow
 
@@ -69,7 +76,46 @@ Ask the user for the source images. They usually live in `D:\` (e.g.
 `Weixin Image_<timestamp>_<id>_<idx>.{jpg,png}`). Use `Glob` with
 `**/Weixin*` to find them.
 
-### 2. Copy the source images into a temp location inside the project
+### 2. Run OCR on every source image — ALWAYS before any other processing
+
+This is the most important correctness check. The filename tells you nothing.
+The OCR text tells you the truth.
+
+```powershell
+# Using tesseract (install first: choco install tesseract -y)
+tesseract "D:\some-poster.jpg" stdout -l chi_sim+eng --psm 6 2>$null
+```
+
+```javascript
+// Or use node: node _ocr.js <image-path>
+// _ocr.js uses tesseract via child_process
+const { execFileSync } = require('child_process');
+const text = execFileSync('tesseract', [process.argv[2], 'stdout', '-l', 'chi_sim+eng', '--psm', '6']).toString();
+console.log(text);
+```
+
+From the OCR output, extract:
+- **Artist / DJ name(s)** — e.g. "MALAA", "OSCARZ", "酸儿辣女"
+- **Date** — e.g. "JUN 20", "6月26日", "2026.06.19"
+- **Venue** — e.g. "MAX Shanghai", "MiM Club", "PARK"
+- **Promoter / brand** — e.g. "MAXIMUM EFFORT", "PARKLIFE", "YuYuan"
+- **Ticket / lineup hints** — any price, artist names, or ticket links
+
+Then search `data/events.json` for matching events:
+
+```powershell
+node -e "const j=require('./data/events.json');const q=process.argv[1];const r=j.events.filter(e=>JSON.stringify(e).toLowerCase().includes(q.toLowerCase()));console.log(JSON.stringify(r.map(e=>({id:e.id,title:e.title,date:e.date,venue:e.venue})),null,2));"
+```
+
+**Report to the user:**
+> "OCR reads: [artist name], [date], [venue]. This matches event
+> `[id]` — [title]. Is this the correct event?"
+
+If the user says yes, proceed. If the user says no, ask which event it
+belongs to and update the search. **Do not proceed until the user
+confirms the event match.**
+
+### 3. Copy the source images into a temp location inside the project
 
 Copy the source into `assets/posters/_<event-id>-source-backup.<ext>`
 (leading underscore = not tracked by git, not committed). Keep the
@@ -79,7 +125,7 @@ original extension and format intact for now.
 Copy-Item "D:\Weixin Image_20260616235116_199_2.png" "D:\workspace\rave calendar\assets\posters\_oscar-source-backup.png" -Force
 ```
 
-### 3. Read the source image to the user and ask for confirmation
+### 4. Read the source image to the user and ask for confirmation
 
 **This is the most important step.** Use the `Read` tool on the backup
 file and let the user see the image. Ask explicitly:
@@ -89,9 +135,9 @@ file and let the user see the image. Ask explicitly:
 
 If the user says it is wrong, do not proceed. If they say "use this,"
 continue. If they want to crop the screenshot down to the poster region,
-do that next (step 4).
+do that next (step 5).
 
-### 4. (Optional) Crop the source down to the poster region
+### 5. (Optional) Crop the source down to the poster region
 
 If the source is a screenshot of a Weixin article, crop out the iOS
 status bar, the article's nav bar, the 2/2 page indicator, the article
@@ -124,7 +170,7 @@ If you need to mask a `2/2` page badge, composite a small SVG with a
 radial gradient that matches the poster's background color (sample a
 neighboring pixel first to get the exact RGB).
 
-### 5. Read the cropped output back to the user
+### 6. Read the cropped output back to the user
 
 Use the `Read` tool on the cropped `assets/posters/<id>.jpg` and let the
 user see it. Ask "does this look right?" before generating the
@@ -241,7 +287,7 @@ do not match (and the Vercel `age` is `0`, meaning it was a fresh
 fetch), it means Vercel has not redeployed yet — wait another minute and
 retry.
 
-### 11. If different browsers show different pictures
+### 12. If different browsers show different pictures
 
 This is the "CDN cache skew" symptom. Escalation steps in order:
 
