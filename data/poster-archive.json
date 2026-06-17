@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T17:07:48.519Z",
+  "generatedAt": "2026-06-17T12:41:04.631Z",
   "sourceData": "data/events.json",
   "storagePolicy": {
     "mode": "static-json-plus-local-optimized-assets",
@@ -12,11 +12,11 @@
       2026
     ],
     "venues": 36,
-    "optimizedCount": 71,
-    "displayBytes": 13436972,
-    "sourceBytes": 40798238,
-    "displayMegabytes": 12.81,
-    "sourceMegabytes": 38.91,
+    "optimizedCount": 72,
+    "displayBytes": 13527523,
+    "sourceBytes": 43157257,
+    "displayMegabytes": 12.9,
+    "sourceMegabytes": 41.16,
     "freeTierSoftCapBytes": 83886080,
     "freeTierSoftCapMegabytes": 80
   },
@@ -675,7 +675,7 @@
       "collection": "Shanghai Rave Index seed archive",
       "source": {
         "label": "User-provided poster",
-        "url": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg",
+        "url": "assets/posters/suaner-lanv-guizhou-kitchen.jpg",
         "posterEvidenceUrl": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg",
         "posterEvidenceSource": "User-provided poster",
         "posterEvidenceStatus": "User-provided poster confirms date, time, venue, address, lineup, and pricing tiers."
@@ -684,8 +684,8 @@
         "thumbnail": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg",
         "display": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg",
         "sourceAsset": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg",
-        "displayBytes": 176626,
-        "sourceBytes": 176626,
+        "displayBytes": 233409,
+        "sourceBytes": 233409,
         "optimized": false,
         "mime": "image/jpeg"
       },
@@ -1131,10 +1131,10 @@
       "image": {
         "thumbnail": "assets/posters/malaa-max-shanghai-optimized.jpg",
         "display": "assets/posters/malaa-max-shanghai-optimized.jpg",
-        "sourceAsset": "assets/posters/malaa-max-shanghai-optimized.jpg",
-        "displayBytes": 176626,
-        "sourceBytes": 176626,
-        "optimized": false,
+        "sourceAsset": "assets/posters/malaa-max-shanghai.jpg",
+        "displayBytes": 208672,
+        "sourceBytes": 2477140,
+        "optimized": true,
         "mime": "image/jpeg"
       },
       "eventUrl": "events/malaa-max-shanghai.html",
@@ -1574,8 +1574,8 @@
         "thumbnail": "assets/posters/oscar-l-mim-club-optimized.jpg",
         "display": "assets/posters/oscar-l-mim-club-optimized.jpg",
         "sourceAsset": "assets/posters/oscar-l-mim-club-optimized.jpg",
-        "displayBytes": 176626,
-        "sourceBytes": 176626,
+        "displayBytes": 178348,
+        "sourceBytes": 178348,
         "optimized": false,
         "mime": "image/jpeg"
       },
@@ -1995,7 +1995,7 @@
       "district": "Changning",
       "sound": "electronic listening, textured synth, low-frequency club",
       "tags": [
-        "upcoming",
+        "past",
         "medium",
         "changning",
         "listening",
@@ -2004,7 +2004,7 @@
         "textured synth",
         "low-frequency club"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "Medium",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
