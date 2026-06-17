@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T17:36:54.138Z",
+  "generatedAt": "2026-06-17T19:13:13.493Z",
   "sourceData": "data/events.json",
   "storagePolicy": {
     "mode": "static-json-plus-local-optimized-assets",
@@ -7,16 +7,16 @@
     "rule": "Use optimized display assets in the wall; keep raw poster files out of the default browsing path when the archive grows."
   },
   "stats": {
-    "posters": 74,
+    "posters": 79,
     "years": [
       2026
     ],
-    "venues": 36,
+    "venues": 39,
     "optimizedCount": 74,
-    "displayBytes": 13265145,
-    "sourceBytes": 41013884,
-    "displayMegabytes": 12.65,
-    "sourceMegabytes": 39.11,
+    "displayBytes": 14032440,
+    "sourceBytes": 41923591,
+    "displayMegabytes": 13.38,
+    "sourceMegabytes": 39.98,
     "freeTierSoftCapBytes": 83886080,
     "freeTierSoftCapMegabytes": 80
   },
@@ -265,6 +265,7 @@
         "huangpu",
         "hard",
         "underground",
+        "techno",
         "hard techno",
         "rave",
         "hard club",
@@ -356,6 +357,7 @@
         "changning",
         "experimental",
         "hard",
+        "techno",
         "acid techno",
         "metal crossover"
       ],
@@ -576,6 +578,7 @@
         "huangpu",
         "underground",
         "bass",
+        "hard",
         "ambient",
         "trance",
         "club"
@@ -621,6 +624,7 @@
         "huangpu",
         "hard",
         "underground",
+        "techno",
         "hard techno",
         "industrial",
         "rave",
@@ -979,6 +983,7 @@
         "bass",
         "underground",
         "house",
+        "techno",
         "techno-dubstep hybrid",
         "club music"
       ],
@@ -1187,6 +1192,51 @@
       "notes": "Spacepanda turns The Sukhothai Shanghai into a hotel club-night route with Tom Kynd, Psyche, and Mr Chang. RA lists techno/house, cost, age, and a ticket link."
     },
     {
+      "id": "shanghai-2026-nova-sundown-char-bar-rooftop",
+      "eventId": "nova-sundown-char-bar-rooftop",
+      "title": "Nova Events Presents: Sundown - CHAR Bar Rooftop Opening Party",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 20",
+      "sortDate": "2026-06-20",
+      "time": "15:00-23:00",
+      "venue": "CHAR Bar (Indigo Hotel 30F)",
+      "district": "Huangpu",
+      "sound": "rooftop opening, DJ music, sunset",
+      "tags": [
+        "upcoming",
+        "watch",
+        "huangpu",
+        "rooftop",
+        "open-air",
+        "rooftop opening",
+        "dj music",
+        "sunset"
+      ],
+      "status": "upcoming",
+      "confidence": "Watch",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "SmartShanghai",
+        "url": "https://www.smartshanghai.com/events/clubbing/",
+        "posterEvidenceUrl": "",
+        "posterEvidenceSource": "",
+        "posterEvidenceStatus": ""
+      },
+      "image": {
+        "thumbnail": "assets/posters/nova-sundown-char-bar-rooftop-2026-06-20.jpg",
+        "display": "assets/posters/nova-sundown-char-bar-rooftop-2026-06-20.jpg",
+        "sourceAsset": "assets/posters/nova-sundown-char-bar-rooftop-2026-06-20.jpg",
+        "displayBytes": 40418,
+        "sourceBytes": 40418,
+        "optimized": false,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/nova-sundown-char-bar-rooftop.html",
+      "notes": "Rooftop opening party at CHAR Bar on the 30th floor of Indigo Hotel Shanghai, with panoramic skyline views, sunset scenery, and more than eight hours of DJ music."
+    },
+    {
       "id": "shanghai-2026-sciahri-potent",
       "eventId": "sciahri-potent",
       "title": "Sciahri (IT)",
@@ -1229,6 +1279,49 @@
       "notes": "POTENT hosts Sciahri with Thomas Futoso and Luke Bye in a late techno slot. RA confirms the 23:59-06:00 window, lineup, cost, and 18+ rule."
     },
     {
+      "id": "shanghai-2026-disco-ball-fridays-dome",
+      "eventId": "disco-ball-fridays-dome",
+      "title": "Disco Ball Fridays",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Fridays to Jun 26",
+      "sortDate": "2026-06-19",
+      "time": "18:00-late",
+      "venue": "The Dome",
+      "district": "Huangpu",
+      "sound": "disco, house, rooftop",
+      "tags": [
+        "upcoming",
+        "watch",
+        "huangpu",
+        "disco",
+        "rooftop",
+        "house"
+      ],
+      "status": "upcoming",
+      "confidence": "Watch",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "SmartShanghai",
+        "url": "https://www.smartshanghai.com/events/clubbing/",
+        "posterEvidenceUrl": "",
+        "posterEvidenceSource": "",
+        "posterEvidenceStatus": ""
+      },
+      "image": {
+        "thumbnail": "assets/posters/disco-ball-fridays-dome-2026-06-19.jpg",
+        "display": "assets/posters/disco-ball-fridays-dome-2026-06-19.jpg",
+        "sourceAsset": "assets/posters/disco-ball-fridays-dome-2026-06-19.jpg",
+        "displayBytes": 39579,
+        "sourceBytes": 39579,
+        "optimized": false,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/disco-ball-fridays-dome.html",
+      "notes": "Weekly Friday disco and house music night at Skyline Dome, with a spinning disco ball, skyline views, and classic disco blended with modern house."
+    },
+    {
       "id": "shanghai-2026-health-maxxing-reactor-2026-06-19",
       "eventId": "health-maxxing-reactor-2026-06-19",
       "title": "DOME | idk Pres. HEALTH MAXXING",
@@ -1248,6 +1341,7 @@
         "club",
         "experimental",
         "underground",
+        "hard",
         "hard dance",
         "performance-led electronic"
       ],
@@ -1338,6 +1432,7 @@
         "huangpu",
         "hard",
         "underground",
+        "techno",
         "hard techno",
         "rave",
         "high-bpm club"
@@ -1363,6 +1458,51 @@
       },
       "eventUrl": "events/abyss-faq-kirk.html",
       "notes": "Abyss Friday booking for FaQ Pres. KIRK with Kirk, Shukai, Fischmonger, SHU, PASHRAWBOI, and Headrush b2b Nitta. The Yuyuan ticketing screenshot confirms the 22:00 start, Abyss club venue, 110 RMB+ ticket tier, e-ticket state, and no-refund label."
+    },
+    {
+      "id": "shanghai-2026-hush-three-year-anniversary-dj-david",
+      "eventId": "hush-three-year-anniversary-dj-david",
+      "title": "Hush Three-Year Anniversary w/ DJ David (Trap, Rage, Hip hop)",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 19",
+      "sortDate": "2026-06-19",
+      "time": "22:00-late",
+      "venue": "Hush (INS)",
+      "district": "Huangpu",
+      "sound": "hip hop, trap, rap club",
+      "tags": [
+        "upcoming",
+        "watch",
+        "huangpu",
+        "hip-hop",
+        "club",
+        "hip hop",
+        "trap",
+        "rap club"
+      ],
+      "status": "upcoming",
+      "confidence": "Watch",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "SmartShanghai",
+        "url": "https://www.smartshanghai.com/events/clubbing/",
+        "posterEvidenceUrl": "",
+        "posterEvidenceSource": "",
+        "posterEvidenceStatus": ""
+      },
+      "image": {
+        "thumbnail": "assets/posters/hush-three-year-anniversary-2026-06-19.jpg",
+        "display": "assets/posters/hush-three-year-anniversary-2026-06-19.jpg",
+        "sourceAsset": "assets/posters/hush-three-year-anniversary-2026-06-19.jpg",
+        "displayBytes": 37374,
+        "sourceBytes": 37374,
+        "optimized": false,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/hush-three-year-anniversary-dj-david.html",
+      "notes": "INS hip-hop club Hush celebrates its three-year anniversary with DJ David for a night of trap, rap/rage, and hip-hop club energy."
     },
     {
       "id": "shanghai-2026-mrd",
@@ -1426,6 +1566,7 @@
         "huangpu",
         "house",
         "underground",
+        "techno",
         "techno-context"
       ],
       "status": "upcoming",
@@ -1470,10 +1611,10 @@
         "experimental",
         "underground",
         "hard",
+        "bass",
         "experimental club",
         "deconstructed club",
-        "digital hardcore",
-        "bass"
+        "digital hardcore"
       ],
       "status": "upcoming",
       "confidence": "Medium",
@@ -1584,6 +1725,48 @@
       "notes": "西班牙知名DJ/制作人Oscar L登陆上海MiM CLUB。曾在Tomorrowland与Drumcode Festival等多个全球知名音乐节演出，作品发行于Drumcode和Stereo Production等顶级厂牌。"
     },
     {
+      "id": "shanghai-2026-2026-06-19-vibes-up-party-reggae-dancehall-hip-h",
+      "eventId": "2026-06-19-vibes-up-party-reggae-dancehall-hip-h",
+      "title": "Vibes Up Party (Reggae, Dancehall, Hip Hop)",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 19",
+      "sortDate": "2026-06-19",
+      "time": "00:00",
+      "venue": "C's",
+      "district": "Shanghai",
+      "sound": "electronic, club",
+      "tags": [
+        "watch",
+        "shanghai",
+        "hard",
+        "electronic",
+        "club"
+      ],
+      "status": "watch",
+      "confidence": "Watch",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "SmartShanghai",
+        "url": "https://www.smartshanghai.com/event/vibes-up-party-reggae-dancehall-hip-hop-2026-06-19",
+        "posterEvidenceUrl": "",
+        "posterEvidenceSource": "",
+        "posterEvidenceStatus": ""
+      },
+      "image": {
+        "thumbnail": "assets/posters/vibes-up-party-reggae-dancehall-2026-06-19-optimized.jpg",
+        "display": "assets/posters/vibes-up-party-reggae-dancehall-2026-06-19-optimized.jpg",
+        "sourceAsset": "assets/posters/vibes-up-party-reggae-dancehall-2026-06-19.jpg",
+        "displayBytes": 151484,
+        "sourceBytes": 319732,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/2026-06-19-vibes-up-party-reggae-dancehall-hip-h.html",
+      "notes": "Dancehall, reggae, and hip hop down in the basement - same as it ever was but damn if it ain't hard to find in 2026 Shanghai! This one features long-time Shanghai dancehall/reggae selectors/sounds Popasuda, Shanghai Yard, and Dubshottas, along with DJ F-Mark. Popasuda and Dubshottas have been cutting dubplates for years with some of the biggest names in the game - expect to hear some tunes you won't hear anywhere else. And the venue, it's a classic basement dive bar that's been kickin since 2... Watchlist lead: verify lineup, ticketing, age policy, and venue details before planning."
+    },
+    {
       "id": "shanghai-2026-wigwam-weekly-listening-wheon",
       "eventId": "wigwam-weekly-listening-wheon",
       "title": "Weekly Listening: wheon",
@@ -1602,6 +1785,7 @@
         "changning",
         "listening",
         "underground",
+        "techno",
         "deep techno",
         "industrial",
         "psytrance",
@@ -1717,6 +1901,51 @@
       "notes": "POTENT hosts Cybionte with Solo, YKK, and Heshang in a late house/club lane. RA confirms the late slot, lineup, cost, and 18+ rule."
     },
     {
+      "id": "shanghai-2026-girls-night-out-dome",
+      "eventId": "girls-night-out-dome",
+      "title": "Girls Night Out",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Thursdays to Jun 25",
+      "sortDate": "2026-06-18",
+      "time": "22:00",
+      "venue": "The Dome",
+      "district": "Huangpu",
+      "sound": "rooftop cocktails, music, skyline views",
+      "tags": [
+        "upcoming",
+        "watch",
+        "huangpu",
+        "social",
+        "rooftop",
+        "rooftop cocktails",
+        "music",
+        "skyline views"
+      ],
+      "status": "upcoming",
+      "confidence": "Watch",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "SmartShanghai",
+        "url": "https://www.smartshanghai.com/events/clubbing/",
+        "posterEvidenceUrl": "",
+        "posterEvidenceSource": "",
+        "posterEvidenceStatus": ""
+      },
+      "image": {
+        "thumbnail": "assets/posters/girls-night-out-dome-2026-06-18.png",
+        "display": "assets/posters/girls-night-out-dome-2026-06-18.png",
+        "sourceAsset": "assets/posters/girls-night-out-dome-2026-06-18.png",
+        "displayBytes": 493548,
+        "sourceBytes": 493548,
+        "optimized": false,
+        "mime": "image/png"
+      },
+      "eventUrl": "events/girls-night-out-dome.html",
+      "notes": "Skyline Dome Thursday night series: cocktails, skyline views, and DJ music above the Bund with a social, date-friendly vibe."
+    },
+    {
       "id": "shanghai-2026-illum-gravity-stateofff",
       "eventId": "illum-gravity-stateofff",
       "title": "ILLUM Pres. 地心引力抓不住你",
@@ -1736,8 +1965,8 @@
         "hard",
         "experimental",
         "underground",
-        "experimental club",
         "bass",
+        "experimental club",
         "hard club",
         "deconstructed club"
       ],
@@ -2099,17 +2328,17 @@
       "source": {
         "label": "SmartShanghai",
         "url": "https://www.smartshanghai.com/event/sunset-sundays-skyline-dome-at-the-dome",
-        "posterEvidenceUrl": "https://www.smartshanghai.com/event/sunset-sundays-skyline-dome-at-the-dome",
-        "posterEvidenceSource": "SmartShanghai event page",
-        "posterEvidenceStatus": "Event image is visible on the detail page."
+        "posterEvidenceUrl": "",
+        "posterEvidenceSource": "",
+        "posterEvidenceStatus": ""
       },
       "image": {
-        "thumbnail": "assets/posters/sunset-sundays-dome-optimized.jpg",
-        "display": "assets/posters/sunset-sundays-dome-optimized.jpg",
-        "sourceAsset": "assets/posters/sunset-sundays-dome.jpg",
-        "displayBytes": 39018,
-        "sourceBytes": 64854,
-        "optimized": true,
+        "thumbnail": "assets/posters/sunset-sundays-dome-2026.jpg",
+        "display": "assets/posters/sunset-sundays-dome-2026.jpg",
+        "sourceAsset": "assets/posters/sunset-sundays-dome-2026.jpg",
+        "displayBytes": 43910,
+        "sourceBytes": 43910,
+        "optimized": false,
         "mime": "image/jpeg"
       },
       "eventUrl": "events/sunset-sundays-dome.html",
@@ -2268,6 +2497,8 @@
         "underground",
         "date",
         "house",
+        "hard",
+        "techno",
         "techno-adjacent"
       ],
       "status": "past",
@@ -2399,6 +2630,7 @@
         "huangpu",
         "hard",
         "underground",
+        "techno",
         "hard techno",
         "new trance"
       ],
@@ -2443,10 +2675,10 @@
         "changning",
         "experimental",
         "underground",
+        "techno",
         "electro",
         "ebm",
         "industrial",
-        "techno",
         "idm"
       ],
       "status": "past",
@@ -2626,6 +2858,7 @@
         "underground",
         "date",
         "house",
+        "bass",
         "techno"
       ],
       "status": "past",
@@ -2669,6 +2902,7 @@
         "changning",
         "techno",
         "underground",
+        "hard",
         "deep tech",
         "progressive",
         "psytech",
@@ -2890,6 +3124,7 @@
         "huangpu",
         "date",
         "house",
+        "hard",
         "techno"
       ],
       "status": "past",
@@ -3064,6 +3299,7 @@
         "changning",
         "club",
         "bass",
+        "hard",
         "electronic"
       ],
       "status": "past",
@@ -3150,7 +3386,8 @@
         "changning",
         "club",
         "underground",
-        "house"
+        "house",
+        "hard"
       ],
       "status": "past",
       "confidence": "Medium",
@@ -3193,6 +3430,7 @@
         "huangpu",
         "hard",
         "underground",
+        "techno",
         "trance",
         "techno-adjacent"
       ],
