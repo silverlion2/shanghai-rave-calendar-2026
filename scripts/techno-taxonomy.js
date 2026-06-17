@@ -7,6 +7,7 @@ const SOUND_TAXONOMY = [
   { id: "melodic", label: "Melodic", zh: "旋律", cues: ["melodic", "melodic techno", "audiovisual", "ben bohmer", "sunset"] },
   { id: "acid", label: "Acid", zh: "Acid", cues: ["acid", "acid techno", "303"] },
   { id: "trance-adjacent", label: "Trance-adjacent", zh: "Trance 边缘", cues: ["trance", "new trance", "hard trance", "eurodance"] },
+  { id: "house", label: "House", zh: "House", cues: ["house", "tech house", "tech-house", "deep house", "g-house", "bass house", "underground house", "minimal house", "afro house", "soul house", "funky house"] },
   { id: "bass-hybrid", label: "Bass hybrid", zh: "Bass 混合", cues: ["bass", "ukg", "dubstep", "ghettotech", "club music", "breaks", "jungle", "garage", "baile funk"] },
   { id: "live-av", label: "Live / A/V", zh: "Live / 影像", cues: ["live", "a/v", "visual", "av ", "radio session", "hardware", "synth"] },
   { id: "warehouse", label: "Warehouse", zh: "仓库", cues: ["warehouse", "secret location", "pop-up", "multi-room", "industrial grid", "system"] },
@@ -19,6 +20,7 @@ const BROAD_VIBE_TO_SOUND = {
   bass: ["bass-hybrid"],
   date: ["rooftop"],
   experimental: ["industrial", "live-av"],
+  house: ["house"],
 };
 
 function unique(values) {
@@ -66,7 +68,41 @@ function soundTagsForEvent(event = {}) {
   const text = textForEvent(event);
   const tags = [];
   for (const item of SOUND_TAXONOMY) {
-    if (item.cues.some(cue => text.includes(cue))) tags.push(item.id);
+    if (item.id === "house") {
+      // House 的特殊处理：依赖 genre 字段 + 具体子风格，而不是 title 中的 "HOUSE" 字样
+      // 排除：活动名包含 "HOUSE OF" / "House of" / "DEAD HOUSE" 等，或场地名是 "Dirty House"
+      const genre = (event.genre || "").toLowerCase();
+      const titleLower = (event.title || "").toLowerCase();
+      const venueLower = (event.venue || "").toLowerCase();
+      const desc = (event.description || "").toLowerCase();
+
+      // 排除 title-based false positive
+      const isTitleName = /\b(house of|dead house)\b/.test(titleLower);
+      const isVenueNameHouse = /dirty house/.test(venueLower);
+
+      if (!isTitleName && !isVenueNameHouse) {
+        // 1. genre 包含具体的 house 子风格 → 强信号
+        const hasSpecificHouse = /\b(tech house|tech-house|deep house|g-house|bass house|underground house|minimal house|afro house|soul house|funky house|melodic house|house night)\b/.test(genre);
+
+        // 2. genre 包含 "house"，且其他风格主要是电子/club（排除 disco/funk/hip-hop 主导的混合）
+        const hasHouseInGenre = /\bhouse\b/.test(genre);
+        const hasDiscoFunkHipHop = /\b(disco|funk|hip-hop|hip hop|soul)\b/.test(genre);
+        const hasElectronicContext = /\b(techno|club|electronic|bass|electro|minimal|nu-disco)\b/.test(genre);
+        const genreHouseValid = hasHouseInGenre && !hasDiscoFunkHipHop || hasHouseInGenre && hasElectronicContext;
+
+        // 3. description 明确说 "house night" / "underground house" 等
+        const descHouse = /\b(house night|house music|underground house|house\/techno|house lane|house-leaning|house bill)\b/.test(desc);
+
+        // 4. vibe 中已标记 house（人工判断的结果）
+        const vibeHouse = (event.vibe || []).includes("house");
+
+        if (hasSpecificHouse || genreHouseValid || descHouse || vibeHouse) {
+          tags.push("house");
+        }
+      }
+    } else {
+      if (item.cues.some(cue => text.includes(cue))) tags.push(item.id);
+    }
   }
   for (const vibe of array(event.vibe)) {
     tags.push(...(BROAD_VIBE_TO_SOUND[vibe] || []));

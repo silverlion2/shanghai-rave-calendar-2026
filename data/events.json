@@ -1986,8 +1986,7 @@
       "district": "Changning",
       "vibe": [
         "underground",
-        "experimental",
-        "house"
+        "experimental"
       ],
       "genre": "techno-informed club music",
       "confidence": "Medium",
@@ -2010,7 +2009,6 @@
         }
       ],
       "soundTags": [
-        "house",
         "bass-hybrid",
         "industrial",
         "live-av",
@@ -2432,8 +2430,7 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "underground",
-        "house"
+        "underground"
       ],
       "genre": "techno, hardcore, hardbass, hard trance",
       "confidence": "High",
@@ -2459,7 +2456,6 @@
         "hard-techno",
         "industrial",
         "trance-adjacent",
-        "house",
         "bass-hybrid",
         "live-av"
       ],
@@ -2844,8 +2840,8 @@
       "soundTags": [
         "industrial",
         "groovy",
-        "house",
-        "live-av"
+        "live-av",
+        "house"
       ],
       "decisionTags": [
         "techno-adjacent",
@@ -3032,23 +3028,23 @@
       "lineup": [
         {
           "name": "Siesta",
-          "note": "RA lists Siesta on the 19Hz lineup."
+          "note": "Siesta plays a drum & bass, dubstep, breaks, drum & bass, dubstep, breaks style. RA lists Siesta on the 19Hz lineup."
         },
         {
           "name": "Kalapas",
-          "note": "RA lists Kalapas on the 19Hz lineup."
+          "note": "Kalapas: drum & bass, dubstep, breaks, drum & bass, dubstep, breaks selection. RA lists Kalapas on the 19Hz lineup."
         },
         {
           "name": "Fractale",
-          "note": "RA lists Fractale as the returning Italian DnB/Dubstep/Breaks guest."
+          "note": "Fractale: drum & bass, dubstep, breaks, drum & bass, dubstep, breaks selection. RA lists Fractale as the returning Italian DnB/Dubstep/Breaks guest."
         },
         {
           "name": "Aho",
-          "note": "RA lists Aho on the 19Hz lineup."
+          "note": "Aho: drum & bass, dubstep, breaks, drum & bass, dubstep, breaks selection. RA lists Aho on the 19Hz lineup."
         },
         {
           "name": "Yadong",
-          "note": "RA lists Yadong on the 19Hz lineup."
+          "note": "Yadong: drum & bass, dubstep, breaks, drum & bass, dubstep, breaks selection. RA lists Yadong on the 19Hz lineup."
         }
       ],
       "posterEvidence": {
@@ -3136,15 +3132,15 @@
       "lineup": [
         {
           "name": "D_z",
-          "note": "RA lists D_z from 22:00 to 00:00."
+          "note": "D_z plays a techno style. RA lists D_z from 22:00 to 00:00."
         },
         {
           "name": "NAKIN",
-          "note": "RA-linked artist listed from 00:00 to 01:45."
+          "note": "NAKIN: techno selection. RA-linked artist listed from 00:00 to 01:45."
         },
         {
           "name": "Tiya Manson",
-          "note": "RA lists Tiya Manson from 01:45 to 03:00."
+          "note": "Tiya Manson: techno selection. RA lists Tiya Manson from 01:45 to 03:00."
         }
       ],
       "setTimes": [
@@ -3248,15 +3244,15 @@
       "lineup": [
         {
           "name": "Dean Chew",
-          "note": "RA lists Dean Chew on this Shanghai lineup."
+          "note": "Dean Chew plays a club, bass, electronic, club, bass, electronic style. RA lists Dean Chew on this Shanghai lineup."
         },
         {
           "name": "OoLONG",
-          "note": "RA lists OoLONG on this Shanghai lineup."
+          "note": "OoLONG: club, bass, electronic, club, bass, electronic selection. RA lists OoLONG on this Shanghai lineup."
         },
         {
           "name": "Paradice Sinema",
-          "note": "RA lists Paradice Sinema on this Shanghai lineup."
+          "note": "Paradice Sinema: club, bass, electronic, club, bass, electronic selection. RA lists Paradice Sinema on this Shanghai lineup."
         }
       ],
       "ticketStatus": "RA confirms the date, venue, and lineup, but the indexed text does not expose price or age policy.",
@@ -3334,47 +3330,47 @@
       "lineup": [
         {
           "name": "MssingNo",
-          "note": "RA lists MssingNo on this Shanghai lineup."
+          "note": "MssingNo plays a bass, grime, bass, grime style. RA lists MssingNo on this Shanghai lineup."
         },
         {
           "name": "Kilo Vee",
-          "note": "RA lists Kilo Vee on this Shanghai lineup."
+          "note": "Kilo Vee: bass, grime, bass, grime selection. RA lists Kilo Vee on this Shanghai lineup."
         },
         {
           "name": "Zean",
-          "note": "RA lists Zean on this Shanghai lineup."
+          "note": "Zean: bass, grime, bass, grime selection. RA lists Zean on this Shanghai lineup."
         },
         {
           "name": "SAI G",
-          "note": "RA lists SAI G on this Shanghai lineup."
+          "note": "SAI G: bass, grime, bass, grime selection. RA lists SAI G on this Shanghai lineup."
         },
         {
           "name": "Baadaam",
-          "note": "RA lists Baadaam on this Shanghai lineup."
+          "note": "Baadaam: bass, grime, bass, grime selection. RA lists Baadaam on this Shanghai lineup."
         },
         {
           "name": "Jane",
-          "note": "RA lists Jane on this Shanghai lineup."
+          "note": "Jane: bass, grime, bass, grime selection. RA lists Jane on this Shanghai lineup."
         },
         {
           "name": "Siesta",
-          "note": "RA lists Siesta on this Shanghai lineup."
+          "note": "Siesta: bass, grime, bass, grime selection. RA lists Siesta on this Shanghai lineup."
         },
         {
           "name": "Tom yeti",
-          "note": "RA lists Tom yeti on this Shanghai lineup."
+          "note": "Tom yeti: bass, grime, bass, grime selection. RA lists Tom yeti on this Shanghai lineup."
         },
         {
           "name": "Maguro",
-          "note": "RA lists Maguro on this Shanghai lineup."
+          "note": "Maguro: bass, grime, bass, grime selection. RA lists Maguro on this Shanghai lineup."
         },
         {
           "name": "DJ EBP",
-          "note": "RA lists DJ EBP on this Shanghai lineup."
+          "note": "DJ EBP: bass, grime, bass, grime selection. RA lists DJ EBP on this Shanghai lineup."
         },
         {
           "name": "DIIPSET",
-          "note": "RA lists DIIPSET on this Shanghai lineup."
+          "note": "DIIPSET: bass, grime, bass, grime selection. RA lists DIIPSET on this Shanghai lineup."
         }
       ],
       "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+.",
@@ -3453,27 +3449,27 @@
       "lineup": [
         {
           "name": "chuan",
-          "note": "RA lists chuan on this Shanghai lineup."
+          "note": "chuan plays a house, house style. RA lists chuan on this Shanghai lineup."
         },
         {
           "name": "DJ Doggy",
-          "note": "RA lists DJ Doggy on this Shanghai lineup."
+          "note": "DJ Doggy: house, house selection. RA lists DJ Doggy on this Shanghai lineup."
         },
         {
           "name": "WATARU",
-          "note": "RA lists WATARU on this Shanghai lineup."
+          "note": "WATARU: house, house selection. RA lists WATARU on this Shanghai lineup."
         },
         {
           "name": "Oolong",
-          "note": "RA lists Oolong on this Shanghai lineup."
+          "note": "Oolong: house, house selection. RA lists Oolong on this Shanghai lineup."
         },
         {
           "name": "Marcos Godoy",
-          "note": "RA lists Marcos Godoy on this Shanghai lineup."
+          "note": "Marcos Godoy: house, house selection. RA lists Marcos Godoy on this Shanghai lineup."
         },
         {
           "name": "Nata Lee",
-          "note": "RA lists Nata Lee on this Shanghai lineup."
+          "note": "Nata Lee: house, house selection. RA lists Nata Lee on this Shanghai lineup."
         }
       ],
       "ticketStatus": "RA lists cost at 118 RMB; minimum age is not visible in the indexed text.",
@@ -3589,15 +3585,15 @@
       "lineup": [
         {
           "name": "Stefano Dvt",
-          "note": "RA lists Stefano Dvt on this Shanghai lineup."
+          "note": "Stefano Dvt plays a trance, techno-adjacent, trance, techno-adjacent style. RA lists Stefano Dvt on this Shanghai lineup."
         },
         {
           "name": "JANEIN",
-          "note": "RA lists JANEIN on this Shanghai lineup."
+          "note": "JANEIN: trance, techno-adjacent, trance, techno-adjacent selection. RA lists JANEIN on this Shanghai lineup."
         },
         {
           "name": "Peyotl",
-          "note": "RA lists Peyotl on this Shanghai lineup."
+          "note": "Peyotl: trance, techno-adjacent, trance, techno-adjacent selection. RA lists Peyotl on this Shanghai lineup."
         }
       ],
       "ticketStatus": "RA lists cost at 100 RMB and minimum age 18+.",
@@ -3679,15 +3675,15 @@
       "lineup": [
         {
           "name": "Juliano Allgayer",
-          "note": "RA lists Juliano Allgayer on the NIGHTWAVE lineup."
+          "note": "Juliano Allgayer plays a techno, house, techno, house style. RA lists Juliano Allgayer on the NIGHTWAVE lineup."
         },
         {
           "name": "Ben Moon",
-          "note": "RA lists Ben Moon on the NIGHTWAVE lineup."
+          "note": "Ben Moon: techno, house, techno, house selection. RA lists Ben Moon on the NIGHTWAVE lineup."
         },
         {
           "name": "Odd",
-          "note": "RA lists Odd on the NIGHTWAVE lineup."
+          "note": "Odd: techno, house, techno, house selection. RA lists Odd on the NIGHTWAVE lineup."
         }
       ],
       "posterEvidence": {
@@ -3784,23 +3780,23 @@
       "lineup": [
         {
           "name": "Tham",
-          "note": "RA lists Tham on this Shanghai lineup."
+          "note": "Tham plays a techno style. RA lists Tham on this Shanghai lineup."
         },
         {
           "name": "Saturn",
-          "note": "RA lists Saturn on this Shanghai lineup."
+          "note": "Saturn: techno selection. RA lists Saturn on this Shanghai lineup."
         },
         {
           "name": "RO",
-          "note": "RA lists RO on this Shanghai lineup."
+          "note": "RO: techno selection. RA lists RO on this Shanghai lineup."
         },
         {
           "name": "SELFISH b2b NABEL",
-          "note": "RA lists SELFISH b2b NABEL on this Shanghai lineup."
+          "note": "SELFISH b2b NABEL: techno selection. RA lists SELFISH b2b NABEL on this Shanghai lineup."
         },
         {
           "name": "Extreme John",
-          "note": "RA lists Extreme John on this Shanghai lineup."
+          "note": "Extreme John: techno selection. RA lists Extreme John on this Shanghai lineup."
         }
       ],
       "ticketStatus": "RA lists cost at 130 RMB and minimum age 18+.",
@@ -3847,15 +3843,15 @@
       "lineup": [
         {
           "name": "QiuQiu",
-          "note": "RA lists QiuQiu on this Shanghai lineup."
+          "note": "QiuQiu plays a techno style. RA lists QiuQiu on this Shanghai lineup."
         },
         {
           "name": "Acierate",
-          "note": "RA lists Acierate on this Shanghai lineup."
+          "note": "Acierate: techno selection. RA lists Acierate on this Shanghai lineup."
         },
         {
           "name": "The Brvtalist",
-          "note": "RA lists The Brvtalist on this Shanghai lineup."
+          "note": "The Brvtalist: techno selection. RA lists The Brvtalist on this Shanghai lineup."
         }
       ],
       "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+.",
@@ -3934,23 +3930,23 @@
       "lineup": [
         {
           "name": "Taidi",
-          "note": "RA lists Taidi on this Shanghai lineup."
+          "note": "Taidi plays a club, electronic, $1 style. RA lists Taidi on this Shanghai lineup."
         },
         {
           "name": "YKK",
-          "note": "RA lists YKK on this Shanghai lineup."
+          "note": "YKK: club, electronic, $1 selection. RA lists YKK on this Shanghai lineup."
         },
         {
           "name": "DJ Wife",
-          "note": "RA lists DJ Wife on this Shanghai lineup."
+          "note": "DJ Wife: club, electronic, $1 selection. RA lists DJ Wife on this Shanghai lineup."
         },
         {
           "name": "Luxixi (live)",
-          "note": "RA lists Luxixi (live) on this Shanghai lineup."
+          "note": "Luxixi (live): club, electronic, $1 selection. RA lists Luxixi (live) on this Shanghai lineup."
         },
         {
           "name": "Devil's Hole",
-          "note": "RA lists Devil's Hole on this Shanghai lineup."
+          "note": "Devil's Hole: club, electronic, $1 selection. RA lists Devil's Hole on this Shanghai lineup."
         }
       ],
       "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+.",
@@ -4221,19 +4217,19 @@
       "lineup": [
         {
           "name": "Tom Price",
-          "note": "RA lists Tom Price on the SUNKISSED lineup."
+          "note": "Tom Price plays a techno, house, techno, house style. RA lists Tom Price on the SUNKISSED lineup."
         },
         {
           "name": "Simon Adams",
-          "note": "RA lists Simon Adams on the SUNKISSED lineup."
+          "note": "Simon Adams: techno, house, techno, house selection. RA lists Simon Adams on the SUNKISSED lineup."
         },
         {
           "name": "Cai Pas",
-          "note": "RA lists Cai Pas on the SUNKISSED lineup."
+          "note": "Cai Pas: techno, house, techno, house selection. RA lists Cai Pas on the SUNKISSED lineup."
         },
         {
           "name": "Martin Ma",
-          "note": "RA lists Martin Ma on the SUNKISSED lineup."
+          "note": "Martin Ma: techno, house, techno, house selection. RA lists Martin Ma on the SUNKISSED lineup."
         }
       ],
       "posterEvidence": {
@@ -4345,8 +4341,7 @@
       "venue": "ZUP Pizza Bar",
       "district": "Jing'an",
       "vibe": [
-        "date",
-        "house"
+        "date"
       ],
       "genre": "house, disco, funk, hip-hop",
       "confidence": "Medium",
@@ -4367,23 +4362,23 @@
       "lineup": [
         {
           "name": "Dante",
-          "note": "RA lists Dante on this Shanghai lineup."
+          "note": "Dante plays a house, disco, funk, hip-hop, house, disco, funk, hip-hop style. RA lists Dante on this Shanghai lineup."
         },
         {
           "name": "Nanotech",
-          "note": "RA lists Nanotech on this Shanghai lineup."
+          "note": "Nanotech: house, disco, funk, hip-hop, house, disco, funk, hip-hop selection. RA lists Nanotech on this Shanghai lineup."
         },
         {
           "name": "Koldo",
-          "note": "RA lists Koldo on this Shanghai lineup."
+          "note": "Koldo: house, disco, funk, hip-hop, house, disco, funk, hip-hop selection. RA lists Koldo on this Shanghai lineup."
         },
         {
           "name": "Sexi Monki",
-          "note": "RA lists Sexi Monki on this Shanghai lineup."
+          "note": "Sexi Monki: house, disco, funk, hip-hop, house, disco, funk, hip-hop selection. RA lists Sexi Monki on this Shanghai lineup."
         },
         {
           "name": "Finascia",
-          "note": "RA lists Finascia on this Shanghai lineup."
+          "note": "Finascia: house, disco, funk, hip-hop, house, disco, funk, hip-hop selection. RA lists Finascia on this Shanghai lineup."
         }
       ],
       "setTimes": [
@@ -4454,7 +4449,6 @@
       },
       "soundTags": [
         "groovy",
-        "house",
         "rooftop"
       ],
       "decisionTags": [
@@ -4508,7 +4502,7 @@
         },
         {
           "name": "Dada (ES)",
-          "note": "RA-linked artist on the 23:30-00:30 slot."
+          "note": "Dada (ES): house, hip-hop, groove, club, house, hip-hop, groove, club selection. RA-linked artist on the 23:30-00:30 slot."
         },
         {
           "name": "Soul Navigator",
@@ -4524,7 +4518,7 @@
         },
         {
           "name": "B2B",
-          "note": "RA lists a 03:30-late B2B closing slot without individual names."
+          "note": "B2B: house, hip-hop, groove, club, house, hip-hop, groove, club selection. RA lists a 03:30-late B2B closing slot without individual names."
         }
       ],
       "setTimes": [
@@ -4689,19 +4683,19 @@
       "lineup": [
         {
           "name": "Onyx",
-          "note": "RA lists Onyx from 22:00 to 00:00 for the Dirty House opening slot."
+          "note": "Onyx: techno, bass selection. RA lists Onyx from 22:00 to 00:00 for the Dirty House opening slot."
         },
         {
           "name": "NAKIN",
-          "note": "RA-linked artist listed from 00:00 to 01:30."
+          "note": "NAKIN: techno, bass, UKG, dubstep, baile funk, techno, bass, UKG, dubstep, baile funk selection. RA-linked artist listed from 00:00 to 01:30."
         },
         {
           "name": "KOLLIN",
-          "note": "RA-linked headliner listed from 01:30 to 03:00 for a techno and bass-tagged PLAYGROUND night."
+          "note": "KOLLIN plays a techno, bass, UKG, dubstep, baile funk, techno, bass, UKG, dubstep, baile funk style. RA-linked headliner listed from 01:30 to 03:00 for a techno and bass-tagged PLAYGROUND night."
         },
         {
           "name": "Serpdren",
-          "note": "RA lists Serpdren from 03:00 to end."
+          "note": "Serpdren: techno, bass, UKG, dubstep, baile funk, techno, bass, UKG, dubstep, baile funk selection. RA lists Serpdren from 03:00 to end."
         }
       ],
       "setTimes": [
@@ -4827,15 +4821,15 @@
         },
         {
           "name": "PRYMARA",
-          "note": "RA lists PRYMARA on the Lethal Distortion lineup."
+          "note": "PRYMARA: trance, techno, trance, techno selection. RA lists PRYMARA on the Lethal Distortion lineup."
         },
         {
           "name": "WATARU",
-          "note": "RA lists WATARU on the Lethal Distortion lineup."
+          "note": "WATARU: trance, techno, trance, techno selection. RA lists WATARU on the Lethal Distortion lineup."
         },
         {
           "name": "SITU",
-          "note": "RA lists SITU on the Lethal Distortion lineup."
+          "note": "SITU: trance, techno, trance, techno selection. RA lists SITU on the Lethal Distortion lineup."
         }
       ],
       "posterEvidence": {
@@ -4972,11 +4966,11 @@
       "lineup": [
         {
           "name": "Rabeat",
-          "note": "RA lists Rabeat on the PRGRM 021 lineup."
+          "note": "Rabeat plays a techno, deep tech, progressive, psytech, hard techno, techno, deep tech, progressive, psytech, hard techno style. RA lists Rabeat on the PRGRM 021 lineup."
         },
         {
           "name": "KOD!GO",
-          "note": "RA lists KOD!GO on the PRGRM 021 lineup."
+          "note": "KOD!GO: techno, deep tech, progressive, psytech, hard techno, techno, deep tech, progressive, psytech, hard techno selection. RA lists KOD!GO on the PRGRM 021 lineup."
         },
         {
           "name": "iquid Mechanics",
@@ -4984,7 +4978,7 @@
         },
         {
           "name": "ZENKAI",
-          "note": "RA lists ZENKAI on the PRGRM 021 lineup."
+          "note": "ZENKAI: techno, deep tech, progressive, psytech, hard techno, techno, deep tech, progressive, psytech, hard techno selection. RA lists ZENKAI on the PRGRM 021 lineup."
         }
       ],
       "ticketStatus": "RA lists cost at 108 RMB. Minimum age was not exposed in the indexed RA text.",
@@ -5099,7 +5093,7 @@
       "lineup": [
         {
           "name": "Mamayo",
-          "note": "RA-linked lineup artist for FENGYUN Vol. 5."
+          "note": "Mamayo plays a club, experimental electronic style. RA-linked lineup artist for FENGYUN Vol. 5."
         },
         {
           "name": "Gooooose",
@@ -5107,11 +5101,11 @@
         },
         {
           "name": "COLA REN",
-          "note": "RA-linked lineup artist for FENGYUN Vol. 5."
+          "note": "COLA REN: club, experimental electronic selection. RA-linked lineup artist for FENGYUN Vol. 5."
         },
         {
           "name": "DJ TRUCK",
-          "note": "RA-linked lineup artist for FENGYUN Vol. 5."
+          "note": "DJ TRUCK: club, experimental electronic selection. RA-linked lineup artist for FENGYUN Vol. 5."
         },
         {
           "name": "meer.",
@@ -5196,11 +5190,11 @@
       "lineup": [
         {
           "name": "Erik Hagleton",
-          "note": "RA-linked French headliner for the Space Panda Horizon rooftop event."
+          "note": "Erik Hagleton plays a techno, house, techno, house style. RA-linked French headliner for the Space Panda Horizon rooftop event."
         },
         {
           "name": "Litty Ritty",
-          "note": "RA-linked support artist on the Pop Bar rooftop lineup."
+          "note": "Litty Ritty: techno, house, techno, house selection. RA-linked support artist on the Pop Bar rooftop lineup."
         },
         {
           "name": "Enred",
@@ -5305,7 +5299,7 @@
       "lineup": [
         {
           "name": "Heatwolves",
-          "note": "RA lists Heatwolves as the lineup artist and event admin for this Love Bang dark-dance night."
+          "note": "Heatwolves plays a industrial, italo disco, darkwave, EBM, goth, industrial, italo disco, darkwave, EBM, goth style. RA lists Heatwolves as the lineup artist and event admin for this Love Bang dark-dance night."
         }
       ],
       "posterEvidence": {
@@ -5584,11 +5578,11 @@
       "lineup": [
         {
           "name": "DJ LOVERBOY",
-          "note": "RA lists DJ LOVERBOY from 22:00 to 23:30."
+          "note": "DJ LOVERBOY plays a experimental, future beats, hip-hop, $1 style. RA lists DJ LOVERBOY from 22:00 to 23:30."
         },
         {
           "name": "DJ EBP",
-          "note": "RA-linked artist listed from 23:30 to 01:00."
+          "note": "DJ EBP: experimental, future beats, hip-hop, $1 selection. RA-linked artist listed from 23:30 to 01:00."
         },
         {
           "name": "Nosaj Thing",
@@ -5596,7 +5590,7 @@
         },
         {
           "name": "GaoQiao",
-          "note": "RA-linked closing artist listed from 03:00 to 05:00."
+          "note": "GaoQiao: experimental, future beats, hip-hop, $1 selection. RA-linked closing artist listed from 03:00 to 05:00."
         }
       ],
       "posterEvidence": {
@@ -5680,7 +5674,7 @@
         },
         {
           "name": "DISCIPLINE",
-          "note": "RA-linked lineup artist for TURBO's Abyss booking."
+          "note": "DISCIPLINE: hard techno, new trance, hard techno, new trance selection. RA-linked lineup artist for TURBO's Abyss booking."
         },
         {
           "name": "LaGlory",
@@ -5692,7 +5686,7 @@
         },
         {
           "name": "NAKIN",
-          "note": "RA-linked lineup artist for TURBO's Abyss booking."
+          "note": "NAKIN: hard techno, new trance, hard techno, new trance selection. RA-linked lineup artist for TURBO's Abyss booking."
         }
       ],
       "posterEvidence": {
@@ -5797,7 +5791,7 @@
         },
         {
           "name": "Illsee",
-          "note": "RA-linked event admin and lineup artist; exact set time was not published."
+          "note": "Illsee: electro, EBM, industrial, techno, IDM, electro, EBM, industrial, techno, IDM selection. RA-linked event admin and lineup artist; exact set time was not published."
         }
       ],
       "posterEvidence": {
@@ -5884,8 +5878,7 @@
       "venue": "ZUP Pizza Bar",
       "district": "Jing'an",
       "vibe": [
-        "date",
-        "house"
+        "date"
       ],
       "genre": "house, disco, funk, hip-hop",
       "confidence": "Medium",
@@ -5905,27 +5898,27 @@
       "lineup": [
         {
           "name": "RB//SH",
-          "note": "RA lists RB//SH in a B2B slot from 15:00 to 17:00."
+          "note": "RB//SH plays a house, disco, funk, hip-hop, house, disco, funk, hip-hop style. RA lists RB//SH in a B2B slot from 15:00 to 17:00."
         },
         {
           "name": "Yogijazz",
-          "note": "RA lists Yogijazz in a B2B slot from 15:00 to 17:00."
+          "note": "Yogijazz: house, disco, funk, hip-hop, house, disco, funk, hip-hop selection. RA lists Yogijazz in a B2B slot from 15:00 to 17:00."
         },
         {
           "name": "Bolobolo",
-          "note": "RA lists Bolobolo from 17:00 to 18:00."
+          "note": "Bolobolo: house, disco, funk, hip-hop, house, disco, funk, hip-hop selection. RA lists Bolobolo from 17:00 to 18:00."
         },
         {
           "name": "Gabrielle Lin",
-          "note": "RA lists Gabrielle Lin from 18:00 to 19:00."
+          "note": "Gabrielle Lin: house, disco, funk, hip-hop, house, disco, funk, hip-hop selection. RA lists Gabrielle Lin from 18:00 to 19:00."
         },
         {
           "name": "Rain Ling",
-          "note": "RA lists Rain Ling from 19:00 to 20:00."
+          "note": "Rain Ling: house, disco, funk, hip-hop, house, disco, funk, hip-hop selection. RA lists Rain Ling from 19:00 to 20:00."
         },
         {
           "name": "FLOATING",
-          "note": "RA lists FLOATING from 20:00 to 21:00."
+          "note": "FLOATING: house, disco, funk, hip-hop, house, disco, funk, hip-hop selection. RA lists FLOATING from 20:00 to 21:00."
         }
       ],
       "setTimes": [
@@ -6007,7 +6000,6 @@
       "kind": "event",
       "soundTags": [
         "groovy",
-        "house",
         "rooftop"
       ],
       "decisionTags": [
@@ -6250,23 +6242,23 @@
       "lineup": [
         {
           "name": "Kaleidojazzlegs",
-          "note": "RA lists Kaleidojazzlegs as DJ for the Bloom Season 1 Grand Final."
+          "note": "Kaleidojazzlegs plays a house, hip-hop, dance battle, house, hip-hop, dance battle style. RA lists Kaleidojazzlegs as DJ for the Bloom Season 1 Grand Final."
         },
         {
           "name": "Yiyoo",
-          "note": "RA lists Yiyoo as MC for the Bloom Season 1 Grand Final."
+          "note": "Yiyoo: house, hip-hop, dance battle, house, hip-hop, dance battle selection. RA lists Yiyoo as MC for the Bloom Season 1 Grand Final."
         },
         {
           "name": "Tevez",
-          "note": "RA lists Tevez as a judge."
+          "note": "Tevez: house, hip-hop, dance battle, house, hip-hop, dance battle selection. RA lists Tevez as a judge."
         },
         {
           "name": "Kazane",
-          "note": "RA lists Kazane as a judge."
+          "note": "Kazane: house, hip-hop, dance battle, house, hip-hop, dance battle selection. RA lists Kazane as a judge."
         },
         {
           "name": "DADA",
-          "note": "RA lists DADA as a judge."
+          "note": "DADA: house, hip-hop, dance battle, house, hip-hop, dance battle selection. RA lists DADA as a judge."
         }
       ],
       "programHighlights": [
@@ -6572,15 +6564,15 @@
       "lineup": [
         {
           "name": "Solo",
-          "note": "RA lists Solo (UA) on the Cybionte lineup."
+          "note": "Solo plays a house, club, house, club style. RA lists Solo (UA) on the Cybionte lineup."
         },
         {
           "name": "YKK",
-          "note": "RA lists YKK (CN) on the Cybionte lineup."
+          "note": "YKK: house, club, house, club selection. RA lists YKK (CN) on the Cybionte lineup."
         },
         {
           "name": "Heshang",
-          "note": "RA lists Heshang on the Cybionte lineup."
+          "note": "Heshang: house, club, house, club selection. RA lists Heshang on the Cybionte lineup."
         }
       ],
       "ticketStatus": "RA lists cost at 100 RMB and minimum age 18+.",
@@ -6787,19 +6779,19 @@
       "lineup": [
         {
           "name": "Golgol",
-          "note": "Heim poster and article screenshots list Golgol for LONG WAVE."
+          "note": "Golgol plays a house, club, electronic, house, club, electronic style. Heim poster and article screenshots list Golgol for LONG WAVE."
         },
         {
           "name": "SpaceReturn",
-          "note": "Heim poster and article screenshots list SpaceReturn for LONG WAVE."
+          "note": "SpaceReturn: house, club, electronic, house, club, electronic selection. Heim poster and article screenshots list SpaceReturn for LONG WAVE."
         },
         {
           "name": "Sam Tbd",
-          "note": "Heim poster and article screenshots list Sam Tbd for LONG WAVE."
+          "note": "Sam Tbd: house, club, electronic, house, club, electronic selection. Heim poster and article screenshots list Sam Tbd for LONG WAVE."
         },
         {
           "name": "Xiaolaba",
-          "note": "Heim poster/article text lists Xiaolaba / Xiao Laba for LONG WAVE."
+          "note": "Xiaolaba: house, club, electronic, house, club, electronic selection. Heim poster/article text lists Xiaolaba / Xiao Laba for LONG WAVE."
         }
       ],
       "sources": [
@@ -6892,15 +6884,15 @@
       "lineup": [
         {
           "name": "MIRROR concept",
-          "note": "RA indexed text lists MIRROR concept on the Minuit / EXIT lineup."
+          "note": "MIRROR concept plays a house, techno, house, techno style. RA indexed text lists MIRROR concept on the Minuit / EXIT lineup."
         },
         {
           "name": "Mofy",
-          "note": "RA indexed text lists Mofy on the Minuit / EXIT lineup."
+          "note": "Mofy: house, techno, house, techno selection. RA indexed text lists Mofy on the Minuit / EXIT lineup."
         },
         {
           "name": "Yoshua",
-          "note": "RA indexed text lists Yoshua on the Minuit / EXIT lineup."
+          "note": "Yoshua: house, techno, house, techno selection. RA indexed text lists Yoshua on the Minuit / EXIT lineup."
         }
       ],
       "sources": [
@@ -7052,27 +7044,27 @@
       "lineup": [
         {
           "name": "Josie",
-          "note": "RA lists Josie in the DOME room from 22:50 to 00:20."
+          "note": "Josie plays a techno style. RA lists Josie in the DOME room from 22:50 to 00:20."
         },
         {
           "name": "PASHRAWBOI",
-          "note": "RA lists PASHRAWBOI in the DOME room from 00:35 to 02:00."
+          "note": "PASHRAWBOI: techno selection. RA lists PASHRAWBOI in the DOME room from 00:35 to 02:00."
         },
         {
           "name": "howtodo",
-          "note": "RA lists howtodo in the DOME room from 02:20 to 03:50."
+          "note": "howtodo: techno selection. RA lists howtodo in the DOME room from 02:20 to 03:50."
         },
         {
           "name": "TiyaManson",
-          "note": "RA lists TiyaManson in the POCKET room from 22:00 to 00:20."
+          "note": "TiyaManson: techno selection. RA lists TiyaManson in the POCKET room from 22:00 to 00:20."
         },
         {
           "name": "SITU",
-          "note": "RA lists SITU in the POCKET room from 00:20 to 02:00."
+          "note": "SITU: techno selection. RA lists SITU in the POCKET room from 00:20 to 02:00."
         },
         {
           "name": "D3M3NTOR",
-          "note": "RA lists D3M3NTOR in the POCKET room from 02:05 to 04:00."
+          "note": "D3M3NTOR: techno selection. RA lists D3M3NTOR in the POCKET room from 02:05 to 04:00."
         }
       ],
       "setTimes": [
@@ -7518,27 +7510,27 @@
       "lineup": [
         {
           "name": "Kirk",
-          "note": "Abyss June program screenshot lists Kirk on the FaQ Pres. KIRK lineup."
+          "note": "Kirk plays a hard techno, rave, high-bpm club, hard techno, rave, high-bpm club style. Abyss June program screenshot lists Kirk on the FaQ Pres. KIRK lineup."
         },
         {
           "name": "Shukai",
-          "note": "Abyss June program screenshot lists Shukai on the FaQ Pres. KIRK lineup."
+          "note": "Shukai plays a hard techno, rave, high-bpm club, hard techno, rave, high-bpm club style. Abyss June program screenshot lists Shukai on the FaQ Pres. KIRK lineup."
         },
         {
           "name": "Fischmonger",
-          "note": "Abyss June program screenshot lists Fischmonger on the FaQ Pres. KIRK lineup."
+          "note": "Fischmonger plays a hard techno, rave, high-bpm club, hard techno, rave, high-bpm club style. Abyss June program screenshot lists Fischmonger on the FaQ Pres. KIRK lineup."
         },
         {
           "name": "SHU",
-          "note": "Abyss June program screenshot lists SHU on the FaQ Pres. KIRK lineup."
+          "note": "SHU plays a hard techno, rave, high-bpm club, hard techno, rave, high-bpm club style. Abyss June program screenshot lists SHU on the FaQ Pres. KIRK lineup."
         },
         {
           "name": "PASHRAWBOI",
-          "note": "Abyss June program screenshot lists PASHRAWBOI on the FaQ Pres. KIRK lineup."
+          "note": "PASHRAWBOI plays a hard techno, rave, high-bpm club, hard techno, rave, high-bpm club style. Abyss June program screenshot lists PASHRAWBOI on the FaQ Pres. KIRK lineup."
         },
         {
           "name": "Headrush b2b Nitta",
-          "note": "Abyss June program screenshot lists Headrush b2b Nitta on the FaQ Pres. KIRK lineup."
+          "note": "Headrush b2b Nitta plays a hard techno, rave, high-bpm club, hard techno, rave, high-bpm club style. Abyss June program screenshot lists Headrush b2b Nitta on the FaQ Pres. KIRK lineup."
         }
       ],
       "sources": [
@@ -7659,23 +7651,23 @@
       "lineup": [
         {
           "name": "MRD",
-          "note": "RA lists MRD (NO) as the headliner for TURBO at Dirty House."
+          "note": "MRD: trance, techno selection. RA lists MRD (NO) as the headliner for TURBO at Dirty House."
         },
         {
           "name": "D_z",
-          "note": "RA lists D_z on the MRD x TURBO lineup."
+          "note": "D_z: trance, techno, trance, techno selection. RA lists D_z on the MRD x TURBO lineup."
         },
         {
           "name": "Tiya Manson",
-          "note": "RA lists Tiya Manson on the MRD x TURBO lineup."
+          "note": "Tiya Manson: trance, techno, trance, techno selection. RA lists Tiya Manson on the MRD x TURBO lineup."
         },
         {
           "name": "NAKIN",
-          "note": "RA lists NAKIN on the MRD x TURBO lineup."
+          "note": "NAKIN: trance, techno, trance, techno selection. RA lists NAKIN on the MRD x TURBO lineup."
         },
         {
           "name": "Justease",
-          "note": "RA lists Justease on the MRD x TURBO lineup."
+          "note": "Justease: trance, techno, trance, techno selection. RA lists Justease on the MRD x TURBO lineup."
         }
       ],
       "posterEvidence": {
@@ -7721,15 +7713,15 @@
       "lineup": [
         {
           "name": "Tofu",
-          "note": "RA lists Tofu on the Nikita Zabelin POTENT lineup."
+          "note": "Tofu plays a house, techno-context, house, techno-context style. RA lists Tofu on the Nikita Zabelin POTENT lineup."
         },
         {
           "name": "Nikita Zabelin",
-          "note": "RA lists Nikita Zabelin on the POTENT lineup."
+          "note": "Nikita Zabelin: house, techno-context, house, techno-context selection. RA lists Nikita Zabelin on the POTENT lineup."
         },
         {
           "name": "HUAN HUAN",
-          "note": "RA lists HUAN HUAN on the POTENT lineup."
+          "note": "HUAN HUAN: house, techno-context, house, techno-context selection. RA lists HUAN HUAN on the POTENT lineup."
         }
       ],
       "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+.",
@@ -7997,31 +7989,31 @@
       "lineup": [
         {
           "name": "Mungk",
-          "note": "RA lists Mungk on the ONEFORTYASIA lineup."
+          "note": "Mungk plays a bass, dubstep, UK garage, bass, dubstep, UK garage style. RA lists Mungk on the ONEFORTYASIA lineup."
         },
         {
           "name": "Simbie",
-          "note": "RA lists Simbie on the ONEFORTYASIA lineup."
+          "note": "Simbie: bass, dubstep, UK garage, bass, dubstep, UK garage selection. RA lists Simbie on the ONEFORTYASIA lineup."
         },
         {
           "name": "D8",
-          "note": "RA lists D8 on the ONEFORTYASIA lineup."
+          "note": "D8: bass, dubstep, UK garage, bass, dubstep, UK garage selection. RA lists D8 on the ONEFORTYASIA lineup."
         },
         {
           "name": "Diipset",
-          "note": "RA lists Diipset on the ONEFORTYASIA lineup."
+          "note": "Diipset: bass, dubstep, UK garage, bass, dubstep, UK garage selection. RA lists Diipset on the ONEFORTYASIA lineup."
         },
         {
           "name": "Sanli",
-          "note": "RA lists Sanli on the ONEFORTYASIA lineup."
+          "note": "Sanli: bass, dubstep, UK garage, bass, dubstep, UK garage selection. RA lists Sanli on the ONEFORTYASIA lineup."
         },
         {
           "name": "Siesta",
-          "note": "RA lists Siesta on the ONEFORTYASIA lineup."
+          "note": "Siesta: bass, dubstep, UK garage, bass, dubstep, UK garage selection. RA lists Siesta on the ONEFORTYASIA lineup."
         },
         {
           "name": "Somebodyyyy",
-          "note": "RA lists Somebodyyyy on the ONEFORTYASIA lineup."
+          "note": "Somebodyyyy: bass, dubstep, UK garage, bass, dubstep, UK garage selection. RA lists Somebodyyyy on the ONEFORTYASIA lineup."
         }
       ],
       "promotionalLinks": [
@@ -8581,27 +8573,27 @@
       "lineup": [
         {
           "name": "LEO MONIRA",
-          "note": "RA lists leomonira on the A.T.M lineup and describes an EBM, industrial techno, hard techno, and hardcore edge."
+          "note": "LEO MONIRA plays a techno, hardcore, industrial techno, EBM, techno, hardcore, industrial techno, EBM style. RA lists leomonira on the A.T.M lineup and describes an EBM, industrial techno, hard techno, and hardcore edge."
         },
         {
           "name": "QUAN",
-          "note": "RA lists QUAN on the A.T.M lineup."
+          "note": "QUAN: techno, hardcore, industrial techno, EBM, techno, hardcore, industrial techno, EBM selection. RA lists QUAN on the A.T.M lineup."
         },
         {
           "name": "EXTREME JOHN",
-          "note": "RA lists EXTREME JOHN on the A.T.M lineup."
+          "note": "EXTREME JOHN: techno, hardcore, industrial techno, EBM, techno, hardcore, industrial techno, EBM selection. RA lists EXTREME JOHN on the A.T.M lineup."
         },
         {
           "name": "Oil Nature",
-          "note": "RA lists Oil Nature on the A.T.M lineup."
+          "note": "Oil Nature: techno, hardcore, industrial techno, EBM, techno, hardcore, industrial techno, EBM selection. RA lists Oil Nature on the A.T.M lineup."
         },
         {
           "name": "Jeff Chong",
-          "note": "RA lists Jeff Chong on the A.T.M lineup."
+          "note": "Jeff Chong: techno, hardcore, industrial techno, EBM, techno, hardcore, industrial techno, EBM selection. RA lists Jeff Chong on the A.T.M lineup."
         },
         {
           "name": "Sunyoung",
-          "note": "RA lists Sunyoung on the A.T.M lineup."
+          "note": "Sunyoung: techno, hardcore, industrial techno, EBM, techno, hardcore, industrial techno, EBM selection. RA lists Sunyoung on the A.T.M lineup."
         }
       ],
       "ticketStatus": "RA lists cost at 128 RMB and minimum age 18+.",
@@ -8680,11 +8672,11 @@
       "lineup": [
         {
           "name": "SOLO (Enchanted Night listing)",
-          "note": "RA lists SOLO on the Enchanted Night lineup; kept distinct from Solo (UA) until a profile source proves they are the same artist."
+          "note": "SOLO (Enchanted Night listing) plays a disco, pop, 2000s party style. RA lists SOLO on the Enchanted Night lineup; kept distinct from Solo (UA) until a profile source proves they are the same artist."
         },
         {
           "name": "ALI RIBO",
-          "note": "RA lists ALI RIBO on the Enchanted Night lineup."
+          "note": "ALI RIBO: disco, pop, 2000s party selection. RA lists ALI RIBO on the Enchanted Night lineup."
         }
       ],
       "ticketStatus": "RA does not expose price, age, or exact address details in the indexed text; verify with the venue before going.",
@@ -8776,23 +8768,23 @@
       "lineup": [
         {
           "name": "LOLALITA",
-          "note": "Abyss June program screenshot lists LOLALITA on the Hardcore Melancholia lineup."
+          "note": "LOLALITA plays a hardcore, hard dance, rave, hard club style. Abyss June program screenshot lists LOLALITA on the Hardcore Melancholia lineup."
         },
         {
           "name": "BRENNT",
-          "note": "Abyss June program screenshot lists BRENNT on the Hardcore Melancholia lineup."
+          "note": "BRENNT: hardcore, hard dance, rave, hard club selection. Abyss June program screenshot lists BRENNT on the Hardcore Melancholia lineup."
         },
         {
           "name": "XIWI",
-          "note": "Abyss June program screenshot lists XIWI on the Hardcore Melancholia lineup."
+          "note": "XIWI: hardcore, hard dance, rave, hard club selection. Abyss June program screenshot lists XIWI on the Hardcore Melancholia lineup."
         },
         {
           "name": "Not Your Daddy",
-          "note": "Abyss June program screenshot lists Not Your Daddy on the Hardcore Melancholia lineup."
+          "note": "Not Your Daddy: hardcore, hard dance, rave, hard club selection. Abyss June program screenshot lists Not Your Daddy on the Hardcore Melancholia lineup."
         },
         {
           "name": "DJ LOVERBOY",
-          "note": "Abyss June program screenshot lists DJ LOVERBOY on the Hardcore Melancholia lineup."
+          "note": "DJ LOVERBOY: hardcore, hard dance, rave, hard club selection. Abyss June program screenshot lists DJ LOVERBOY on the Hardcore Melancholia lineup."
         }
       ],
       "sources": [
@@ -8965,15 +8957,15 @@
       "lineup": [
         {
           "name": "Sylo",
-          "note": "Heim poster and monthly schedule screenshots list Sylo on the June 20 Heim Invites: Jasmin bill."
+          "note": "Sylo plays a techno-dubstep hybrid, house, club music, techno-dubstep hybrid, house, club music style. Heim poster and monthly schedule screenshots list Sylo on the June 20 Heim Invites: Jasmin bill."
         },
         {
           "name": "Jasmin",
-          "note": "Heim poster/monthly/article screenshots and SmartShanghai confirm Jasmin on the June 20 Heim bill; profile sources support the bass, DnB, and techno-adjacent lane."
+          "note": "Jasmin: techno-dubstep hybrid, house, club music, techno-dubstep hybrid, house, club music selection. Heim poster/monthly/article screenshots and SmartShanghai confirm Jasmin on the June 20 Heim bill; profile sources support the bass, DnB, and techno-adjacent lane."
         },
         {
           "name": "Knopha",
-          "note": "Heim poster/monthly/article screenshots and SmartShanghai confirm Knopha as support; RA profile context supports China/Shanghai club relevance."
+          "note": "Knopha: techno-dubstep hybrid, house, club music, techno-dubstep hybrid, house, club music selection. Heim poster/monthly/article screenshots and SmartShanghai confirm Knopha as support; RA profile context supports China/Shanghai club relevance."
         }
       ],
       "posterUrl": "assets/posters/heim-invites-jasmin-knopha.jpg",
@@ -9111,19 +9103,19 @@
       "lineup": [
         {
           "name": "Chingyi",
-          "note": "Liminal Dreams note screenshot describes Chingyi across ambient, drone, techno, downtempo, and uptempo, and says this is her third Liminal Dreams appearance."
+          "note": "Chingyi plays a ambient, outer music, electronic style. Liminal Dreams note screenshot describes Chingyi across ambient, drone, techno, downtempo, and uptempo, and says this is her third Liminal Dreams appearance."
         },
         {
           "name": "IIN",
-          "note": "Liminal Dreams note screenshot frames IIN as a Shanghai scene figure; keep biography restrained because the post does not provide a detailed public profile."
+          "note": "IIN: ambient, outer music, electronic selection. Liminal Dreams note screenshot frames IIN as a Shanghai scene figure; keep biography restrained because the post does not provide a detailed public profile."
         },
         {
           "name": "Rainsoft",
-          "note": "Liminal Dreams note screenshot describes Rainsoft as a Shanghai-based musician/DJ drawing from deep ambient and techno, with a restrained and fluid atmosphere."
+          "note": "Rainsoft: ambient, outer music, electronic selection. Liminal Dreams note screenshot describes Rainsoft as a Shanghai-based musician/DJ drawing from deep ambient and techno, with a restrained and fluid atmosphere."
         },
         {
           "name": "Toss",
-          "note": "Liminal Dreams note screenshot says Liminal Dreams member Toss will also be present for this Wigwam edition."
+          "note": "Toss: ambient, outer music, electronic selection. Liminal Dreams note screenshot says Liminal Dreams member Toss will also be present for this Wigwam edition."
         }
       ],
       "address": "LG Floor, C.PARK, No. 658 Zhaohua Road, Changning District, Shanghai",
@@ -9361,15 +9353,15 @@
       "lineup": [
         {
           "name": "Tom Kynd",
-          "note": "RA lists Tom Kynd as the headliner for NEON JUNGLE."
+          "note": "Tom Kynd plays a techno, house, hotel party, techno, house, hotel party style. RA lists Tom Kynd as the headliner for NEON JUNGLE."
         },
         {
           "name": "Psyche",
-          "note": "RA lists Psyche on the NEON JUNGLE lineup."
+          "note": "Psyche: techno, house, hotel party, techno, house, hotel party selection. RA lists Psyche on the NEON JUNGLE lineup."
         },
         {
           "name": "Mr Chang",
-          "note": "RA lists Mr Chang on the NEON JUNGLE lineup."
+          "note": "Mr Chang: techno, house, hotel party, techno, house, hotel party selection. RA lists Mr Chang on the NEON JUNGLE lineup."
         }
       ],
       "promotionalLinks": [
@@ -9457,15 +9449,15 @@
       "lineup": [
         {
           "name": "Thomas Futoso",
-          "note": "RA lists Thomas Futoso on the Sciahri POTENT lineup."
+          "note": "Thomas Futoso plays a techno style. RA lists Thomas Futoso on the Sciahri POTENT lineup."
         },
         {
           "name": "Sciahri",
-          "note": "RA lists Sciahri on the POTENT lineup."
+          "note": "Sciahri: techno selection. RA lists Sciahri on the POTENT lineup."
         },
         {
           "name": "Luke Bye",
-          "note": "RA lists Luke Bye on the Sciahri POTENT lineup."
+          "note": "Luke Bye: techno selection. RA lists Luke Bye on the Sciahri POTENT lineup."
         }
       ],
       "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+.",
@@ -9543,23 +9535,23 @@
       "lineup": [
         {
           "name": "Tsing",
-          "note": "RA lists Tsing on the FRIENDSSTANDout lineup."
+          "note": "Tsing plays a club, electronic style. RA lists Tsing on the FRIENDSSTANDout lineup."
         },
         {
           "name": "10000",
-          "note": "RA lists 10000 (CN) on the FRIENDSSTANDout lineup."
+          "note": "10000: club, electronic selection. RA lists 10000 (CN) on the FRIENDSSTANDout lineup."
         },
         {
           "name": "YKK",
-          "note": "RA lists YKK (CN) on the FRIENDSSTANDout lineup."
+          "note": "YKK: club, electronic selection. RA lists YKK (CN) on the FRIENDSSTANDout lineup."
         },
         {
           "name": "Taidi",
-          "note": "RA lists Taidi on the FRIENDSSTANDout lineup."
+          "note": "Taidi: club, electronic selection. RA lists Taidi on the FRIENDSSTANDout lineup."
         },
         {
           "name": "DJ TRUCK",
-          "note": "RA lists DJ TRUCK on the FRIENDSSTANDout lineup."
+          "note": "DJ TRUCK: club, electronic selection. RA lists DJ TRUCK on the FRIENDSSTANDout lineup."
         }
       ],
       "ticketStatus": "RA confirms date, 21:00-03:00 timing, venue, promoter, lineup, and flyer. Wigwam weekly schedule confirms the same June 21 FRIENDSSTAND Out listing as 21:00-late and Free Entry. Age policy remains unchecked.",
@@ -9769,19 +9761,19 @@
       "lineup": [
         {
           "name": "D_z",
-          "note": "RA lists D_z from 22:00 to 00:15."
+          "note": "D_z plays a techno style. RA lists D_z from 22:00 to 00:15."
         },
         {
           "name": "MegaWatts",
-          "note": "RA lists MegaWatts from 00:15 to 01:15."
+          "note": "MegaWatts: techno selection. RA lists MegaWatts from 00:15 to 01:15."
         },
         {
           "name": "NAKIN",
-          "note": "RA lists NAKIN from 01:15 to 03:00."
+          "note": "NAKIN: techno selection. RA lists NAKIN from 01:15 to 03:00."
         },
         {
           "name": "Marcus",
-          "note": "RA lists Marcus from 03:00 to end."
+          "note": "Marcus: techno selection. RA lists Marcus from 03:00 to end."
         }
       ],
       "setTimes": [
@@ -10091,19 +10083,19 @@
       "lineup": [
         {
           "name": "BOTOX FATAL",
-          "note": "Abyss June program screenshot lists BOTOX FATAL (LIVE) for Obsesion Total; Yuyuan ticketing screenshot confirms the Jun 26 Abyss ticket page."
+          "note": "BOTOX FATAL plays a hard techno, industrial, rave, EBM, hard techno, industrial, rave, EBM style. Abyss June program screenshot lists BOTOX FATAL (LIVE) for Obsesion Total; Yuyuan ticketing screenshot confirms the Jun 26 Abyss ticket page."
         },
         {
           "name": "TUI",
-          "note": "Abyss June program screenshot lists TUI on the Obsesion Total lineup."
+          "note": "TUI: hard techno, industrial, rave, EBM, hard techno, industrial, rave, EBM selection. Abyss June program screenshot lists TUI on the Obsesion Total lineup."
         },
         {
           "name": "Kong BB",
-          "note": "Abyss June program screenshot lists Kong BB on the Obsesion Total lineup."
+          "note": "Kong BB: hard techno, industrial, rave, EBM, hard techno, industrial, rave, EBM selection. Abyss June program screenshot lists Kong BB on the Obsesion Total lineup."
         },
         {
           "name": "Noodleprince",
-          "note": "Abyss June program screenshot lists Noodleprince on the Obsesion Total lineup."
+          "note": "Noodleprince: hard techno, industrial, rave, EBM, hard techno, industrial, rave, EBM selection. Abyss June program screenshot lists Noodleprince on the Obsesion Total lineup."
         }
       ],
       "address": "B1, TX Huaihai Youth Center, No. 523-527 Huaihai Road, Huangpu District, Shanghai",
@@ -10593,27 +10585,27 @@
       "lineup": [
         {
           "name": "Discipline b2b PRYMARA",
-          "note": "Abyss June program screenshot lists Discipline b2b PRYMARA for CUM CHEMICAL LOVE."
+          "note": "Discipline b2b PRYMARA plays a hard techno, rave, hard club, local support, hard techno, rave, hard club, local support style. Abyss June program screenshot lists Discipline b2b PRYMARA for CUM CHEMICAL LOVE."
         },
         {
           "name": "LaGlory",
-          "note": "Abyss June program screenshot lists LaGlory on the CUM CHEMICAL LOVE lineup."
+          "note": "LaGlory: hard techno, rave, hard club, local support, hard techno, rave, hard club, local support selection. Abyss June program screenshot lists LaGlory on the CUM CHEMICAL LOVE lineup."
         },
         {
           "name": "FMRL",
-          "note": "Abyss June program screenshot lists FMRL on the CUM CHEMICAL LOVE lineup."
+          "note": "FMRL: hard techno, rave, hard club, local support, hard techno, rave, hard club, local support selection. Abyss June program screenshot lists FMRL on the CUM CHEMICAL LOVE lineup."
         },
         {
           "name": "Extreme John",
-          "note": "Abyss June program screenshot lists Extreme John on the CUM CHEMICAL LOVE lineup."
+          "note": "Extreme John: hard techno, rave, hard club, local support, hard techno, rave, hard club, local support selection. Abyss June program screenshot lists Extreme John on the CUM CHEMICAL LOVE lineup."
         },
         {
           "name": "GOGA",
-          "note": "Abyss June program screenshot lists GOGA on the CUM CHEMICAL LOVE lineup."
+          "note": "GOGA: hard techno, rave, hard club, local support, hard techno, rave, hard club, local support selection. Abyss June program screenshot lists GOGA on the CUM CHEMICAL LOVE lineup."
         },
         {
           "name": "Oil Nature",
-          "note": "Abyss June program screenshot lists Oil Nature on the CUM CHEMICAL LOVE lineup."
+          "note": "Oil Nature: hard techno, rave, hard club, local support, hard techno, rave, hard club, local support selection. Abyss June program screenshot lists Oil Nature on the CUM CHEMICAL LOVE lineup."
         }
       ],
       "sources": [
@@ -11958,11 +11950,11 @@
       "lineup": [
         {
           "name": "Shaun Soomro",
-          "note": "RA lists Shaun Soomro on the September 12 Shanghai lineup and links his artist profile; exact set time was not published."
+          "note": "Shaun Soomro plays a club, electronic, LMD-context style. RA lists Shaun Soomro on the September 12 Shanghai lineup and links his artist profile; exact set time was not published."
         },
         {
           "name": "DJ Serang",
-          "note": "RA lists DJ Serang on the September 12 Shanghai lineup; no separate artist profile was captured in this pass."
+          "note": "DJ Serang: club, electronic, LMD-context selection. RA lists DJ Serang on the September 12 Shanghai lineup; no separate artist profile was captured in this pass."
         }
       ],
       "ticketStatus": "RA shows venue TBA, blank cost, no exposed age rule, and no direct ticket state in the indexed text; it also shows the event was last updated 10 months ago. Keep as Watch until RA/LMD publishes current practical details.",
