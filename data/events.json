@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T18:08:56.758Z",
+  "generatedAt": "2026-06-17T18:28:05.559Z",
   "verified": "2026-06-18",
   "timezone": "Asia/Shanghai",
   "sourcePriority": [
@@ -6107,12 +6107,7 @@
         "until": "2026-06-28",
         "source": "SmartShanghai"
       },
-      "posterEvidence": {
-        "type": "event image",
-        "source": "SmartShanghai event page",
-        "url": "https://www.smartshanghai.com/event/sunset-sundays-skyline-dome-at-the-dome",
-        "status": "Event image is visible on the detail page."
-      },
+      "posterEvidence": "SmartShanghai listing page: https://www.smartshanghai.com/event/sunset-sundays-skyline-dome-at-the-dome",
       "ticketStatus": "SmartShanghai says tickets are currently not available on SmartShanghai.",
       "addedAt": "2026-06-08",
       "lastChecked": "2026-06-14",
@@ -6124,7 +6119,7 @@
           "lastChecked": "2026-06-14"
         }
       ],
-      "posterUrl": "assets/posters/sunset-sundays-dome.jpg",
+      "posterUrl": "assets/posters/sunset-sundays-dome-2026.jpg",
       "kind": "event",
       "soundTags": [
         "melodic",
@@ -8194,7 +8189,7 @@
       "source": "https://www.smartshanghai.com/event/vibes-up-party-reggae-dancehall-hip-hop-2026-06-19",
       "sourceLabel": "SmartShanghai",
       "imageTheme": "gold",
-      "posterUrl": "https://images.smartshanghai.com.cn/uploads/repository/2026/06/17/8c0151e2-c1e6-454f-ac07-a06362f45a86.png",
+      "posterUrl": "assets/posters/vibes-up-party-reggae-dancehall-2026-06-19.png",
       "description": "Dancehall, reggae, and hip hop down in the basement - same as it ever was but damn if it ain't hard to find in 2026 Shanghai! This one features long-time Shanghai dancehall/reggae selectors/sounds Popasuda, Shanghai Yard, and Dubshottas, along with DJ F-Mark. Popasuda and Dubshottas have been cutting dubplates for years with some of the biggest names in the game - expect to hear some tunes you won't hear anywhere else. And the venue, it's a classic basement dive bar that's been kickin since 2... Watchlist lead: verify lineup, ticketing, age policy, and venue details before planning.",
       "sourceStatus": "watchlist",
       "addedAt": "2026-06-17",
@@ -8234,7 +8229,9 @@
       "recommendationReason": "Kept on Watch because the sound and room fit points toward techno-first club listening at C's; wait for firmer practical details before treating it as a pick.",
       "bestFor": "Best for hard-techno, industrial, acid, or late-room listeners.",
       "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
-      "sourceConfidence": "Watch-level confidence from SmartShanghai; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence."
+      "sourceConfidence": "Watch-level confidence from SmartShanghai; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence.",
+      "posterEvidence": "SmartShanghai listing page: https://www.smartshanghai.com/event/vibes-up-party-reggae-dancehall-hip-hop-2026-06-19",
+      "address": "685 Dingxi Lu, near Yanan Xi Lu, Changning District (C's Bar / 定西路685号, 近延安西路)"
     },
     {
       "id": "wigwam-weekly-listening-wheon",
@@ -12241,7 +12238,9 @@
       "recommendationReason": "Included as a Watch/social-route listing for readers looking for rooftop-cocktail nights with a DJ soundtrack; not positioned as a dedicated club pick.",
       "bestFor": "Best for Bund rooftop views, cocktails, and a more social/dancefloor-adjacent Thursday evening.",
       "verifyBeforeGoing": "Recheck the latest SmartShanghai clubbing page or the venue for lineup, door policy, ticket availability, and weather on the day.",
-      "sourceConfidence": "Watch-level confidence from SmartShanghai listings page; verify with the venue or a dedicated detail page before treating it as a pick."
+      "sourceConfidence": "Watch-level confidence from SmartShanghai listings page; verify with the venue or a dedicated detail page before treating it as a pick.",
+      "posterUrl": "assets/posters/girls-night-out-dome-2026-06-18.png",
+      "posterEvidence": "SmartShanghai listing page: https://www.smartshanghai.com/events/clubbing/"
     },
     {
       "id": "disco-ball-fridays-dome",
@@ -12313,7 +12312,9 @@
       "recommendationReason": "Listed because the Disco Ball Fridays series provides a disco/house-leaning rooftop option for readers on Friday evenings at Skyline Dome.",
       "bestFor": "Best for readers who want a disco-leaning rooftop or social-dancefloor-adjacent Friday night.",
       "verifyBeforeGoing": "Recheck the latest SmartShanghai page, lineup, ticket availability, and door/table policy before making plans.",
-      "sourceConfidence": "Watch-level confidence from SmartShanghai listings page; verify with the venue or a dedicated detail page before treating it as a pick."
+      "sourceConfidence": "Watch-level confidence from SmartShanghai listings page; verify with the venue or a dedicated detail page before treating it as a pick.",
+      "posterUrl": "assets/posters/disco-ball-fridays-dome-2026-06-19.jpg",
+      "posterEvidence": "SmartShanghai listing page: https://www.smartshanghai.com/events/clubbing/"
     },
     {
       "id": "hush-three-year-anniversary-dj-david",
@@ -12382,7 +12383,9 @@
           "name": "DJ David",
           "note": "SmartShanghai lists DJ David as the featured selector for the Hush three-year anniversary night."
         }
-      ]
+      ],
+      "posterUrl": "assets/posters/hush-three-year-anniversary-2026-06-19.jpg",
+      "posterEvidence": "SmartShanghai listing page: https://www.smartshanghai.com/events/clubbing/"
     },
     {
       "id": "nova-sundown-char-bar-rooftop",
@@ -12446,7 +12449,9 @@
       "recommendationReason": "Listed because the Sundown rooftop opening flags an all-day sunset+DJ option for readers looking for open-air, skyline-view alternatives to basement club nights.",
       "bestFor": "Best for readers who want a daytime/early-evening rooftop option as a complement to the harder club picks.",
       "verifyBeforeGoing": "Recheck the latest event page for ticket availability, final set times, lineup, and weather on the day.",
-      "sourceConfidence": "Watch-level confidence from SmartShanghai listings page; verify with the venue or a dedicated detail page before treating it as a pick."
+      "sourceConfidence": "Watch-level confidence from SmartShanghai listings page; verify with the venue or a dedicated detail page before treating it as a pick.",
+      "posterUrl": "assets/posters/nova-sundown-char-bar-rooftop-2026-06-20.jpg",
+      "posterEvidence": "SmartShanghai listing page: https://www.smartshanghai.com/events/clubbing/"
     }
   ],
   "socialLeads": [],
