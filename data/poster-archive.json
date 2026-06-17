@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T16:19:25.290Z",
+  "generatedAt": "2026-06-17T16:39:27.218Z",
   "sourceData": "data/events.json",
   "storagePolicy": {
     "mode": "static-json-plus-local-optimized-assets",
@@ -13,10 +13,10 @@
     ],
     "venues": 36,
     "optimizedCount": 74,
-    "displayBytes": 13285953,
-    "sourceBytes": 41046805,
-    "displayMegabytes": 12.67,
-    "sourceMegabytes": 39.15,
+    "displayBytes": 13234164,
+    "sourceBytes": 40978114,
+    "displayMegabytes": 12.62,
+    "sourceMegabytes": 39.08,
     "freeTierSoftCapBytes": 83886080,
     "freeTierSoftCapMegabytes": 80
   },
@@ -1574,8 +1574,8 @@
         "thumbnail": "assets/posters/oscar-l-mim-club-optimized.jpg",
         "display": "assets/posters/oscar-l-mim-club-optimized.jpg",
         "sourceAsset": "assets/posters/oscar-l-mim-club.jpg",
-        "displayBytes": 114566,
-        "sourceBytes": 206580,
+        "displayBytes": 62777,
+        "sourceBytes": 137889,
         "optimized": true,
         "mime": "image/jpeg"
       },
