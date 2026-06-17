@@ -1372,7 +1372,8 @@
       "vibe": [
         "underground",
         "bass",
-        "house"
+        "house",
+        "techno"
       ],
       "genre": "club, hip-hop, ghettotech, house, techno",
       "confidence": "Medium",
@@ -1434,7 +1435,8 @@
       "district": "Huangpu",
       "vibe": [
         "experimental",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "techno radio session",
       "confidence": "Medium",
@@ -1557,7 +1559,8 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "techno, trance",
       "confidence": "High",
@@ -1618,7 +1621,8 @@
       "district": "Changning",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "techno",
       "confidence": "High",
@@ -1679,7 +1683,8 @@
       "district": "Changning",
       "vibe": [
         "underground",
-        "bass"
+        "bass",
+        "techno"
       ],
       "genre": "techno, bass",
       "confidence": "High",
@@ -1739,7 +1744,8 @@
       "district": "Changning",
       "vibe": [
         "underground",
-        "experimental"
+        "experimental",
+        "techno"
       ],
       "genre": "Detroit techno, electro, machine funk",
       "confidence": "High",
@@ -1803,7 +1809,8 @@
       "vibe": [
         "underground",
         "date",
-        "house"
+        "house",
+        "techno"
       ],
       "genre": "techno, house",
       "confidence": "High",
@@ -1864,7 +1871,8 @@
       "venue": "POTENT",
       "district": "Huangpu",
       "vibe": [
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "electronic culture, techno-adjacent",
       "confidence": "Medium",
@@ -1924,7 +1932,8 @@
       "district": "Changning",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "industrial, dark hypnotic, acid, rave, experimental techno",
       "confidence": "Medium",
@@ -1986,7 +1995,8 @@
       "district": "Changning",
       "vibe": [
         "underground",
-        "experimental"
+        "experimental",
+        "techno"
       ],
       "genre": "techno-informed club music",
       "confidence": "Medium",
@@ -2049,7 +2059,9 @@
       "district": "Jing'an",
       "vibe": [
         "date",
-        "house"
+        "house",
+        "warehouse",
+        "techno"
       ],
       "genre": "techno, house",
       "confidence": "High",
@@ -2113,7 +2125,8 @@
       "district": "Changning",
       "vibe": [
         "bass",
-        "experimental"
+        "experimental",
+        "hard"
       ],
       "genre": "trance, club, hyperpop, hard dance",
       "confidence": "Medium",
@@ -2177,7 +2190,9 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "warehouse",
+        "techno"
       ],
       "genre": "warehouse techno, trance, industrial rave",
       "confidence": "High",
@@ -2241,7 +2256,8 @@
       "district": "Changning",
       "vibe": [
         "bass",
-        "experimental"
+        "experimental",
+        "techno"
       ],
       "genre": "techno, bass",
       "confidence": "High",
@@ -2304,7 +2320,8 @@
       "venue": "Sunland Boundless Park",
       "district": "Pudong",
       "vibe": [
-        "date"
+        "date",
+        "techno"
       ],
       "genre": "melodic techno, audiovisual show",
       "confidence": "High",
@@ -2367,7 +2384,8 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "experimental"
+        "experimental",
+        "techno"
       ],
       "genre": "techno, hardcore, black metal crossover",
       "confidence": "High",
@@ -2430,7 +2448,8 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "techno, hardcore, hardbass, hard trance",
       "confidence": "High",
@@ -2495,7 +2514,9 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "warehouse",
+        "techno"
       ],
       "genre": "techno",
       "confidence": "High",
@@ -2557,7 +2578,9 @@
       "district": "Central Shanghai",
       "vibe": [
         "warehouse",
-        "underground"
+        "underground",
+        "bass",
+        "techno"
       ],
       "genre": "techno, bass, club music",
       "confidence": "Medium",
@@ -2621,7 +2644,9 @@
       "vibe": [
         "date",
         "underground",
-        "house"
+        "house",
+        "hard",
+        "techno"
       ],
       "genre": "techno, house, tech house",
       "confidence": "High",
@@ -2685,7 +2710,9 @@
         "warehouse",
         "date",
         "underground",
-        "house"
+        "house",
+        "bass",
+        "techno"
       ],
       "genre": "house, techno, bass",
       "confidence": "High",
@@ -2751,7 +2778,8 @@
       "vibe": [
         "underground",
         "date",
-        "house"
+        "house",
+        "techno"
       ],
       "genre": "techno, house, minimal, nu-disco",
       "confidence": "High",
@@ -2815,7 +2843,7 @@
       "vibe": [
         "underground",
         "experimental",
-        "house"
+        "techno"
       ],
       "genre": "techno, funk/soul lineage",
       "confidence": "High",
@@ -2840,8 +2868,8 @@
       "soundTags": [
         "industrial",
         "groovy",
-        "live-av",
-        "house"
+        "house",
+        "live-av"
       ],
       "decisionTags": [
         "techno-adjacent",
@@ -2880,7 +2908,8 @@
       "vibe": [
         "bass",
         "warehouse",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "techno, bass",
       "confidence": "High",
@@ -2942,7 +2971,8 @@
       "district": "Changning",
       "vibe": [
         "underground",
-        "experimental"
+        "experimental",
+        "techno"
       ],
       "genre": "ambient, deep techno",
       "confidence": "High",
@@ -3223,7 +3253,8 @@
       "district": "Changning",
       "vibe": [
         "club",
-        "bass"
+        "bass",
+        "hard"
       ],
       "genre": "club, bass, electronic",
       "confidence": "Medium",
@@ -3428,7 +3459,8 @@
       "vibe": [
         "club",
         "underground",
-        "house"
+        "house",
+        "hard"
       ],
       "genre": "house",
       "confidence": "Medium",
@@ -3525,7 +3557,8 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "trance, techno-adjacent",
       "confidence": "High",
@@ -3619,7 +3652,8 @@
       "district": "Huangpu",
       "vibe": [
         "date",
-        "house"
+        "house",
+        "techno"
       ],
       "genre": "techno, house",
       "confidence": "High",
@@ -3721,7 +3755,8 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "techno",
       "confidence": "High",
@@ -3822,7 +3857,8 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "techno",
       "confidence": "High",
@@ -4005,7 +4041,8 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "techno, hardcore",
       "confidence": "High",
@@ -4161,7 +4198,9 @@
       "district": "Huangpu",
       "vibe": [
         "date",
-        "house"
+        "house",
+        "hard",
+        "techno"
       ],
       "genre": "techno, house",
       "confidence": "High",
@@ -4268,7 +4307,8 @@
       "vibe": [
         "hard",
         "underground",
-        "experimental"
+        "experimental",
+        "techno"
       ],
       "genre": "techno",
       "confidence": "High",
@@ -4630,7 +4670,8 @@
       "district": "Huangpu",
       "vibe": [
         "bass",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "techno, bass, UKG, dubstep, baile funk",
       "confidence": "High",
@@ -4856,7 +4897,9 @@
       "vibe": [
         "underground",
         "date",
-        "house"
+        "house",
+        "bass",
+        "techno"
       ],
       "genre": "techno, house",
       "confidence": "High",
@@ -4946,7 +4989,8 @@
       "district": "Changning",
       "vibe": [
         "techno",
-        "underground"
+        "underground",
+        "hard"
       ],
       "genre": "techno, deep tech, progressive, psytech, hard techno",
       "confidence": "High",
@@ -5135,7 +5179,8 @@
       "district": "The Bund",
       "vibe": [
         "date",
-        "house"
+        "house",
+        "techno"
       ],
       "genre": "techno, house",
       "confidence": "High",
@@ -5326,7 +5371,9 @@
       "vibe": [
         "underground",
         "date",
-        "house"
+        "house",
+        "hard",
+        "techno"
       ],
       "genre": "house, techno-adjacent",
       "confidence": "High",
@@ -5616,7 +5663,8 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "hard techno, new trance",
       "confidence": "High",
@@ -5719,7 +5767,8 @@
       "district": "Changning",
       "vibe": [
         "experimental",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "electro, EBM, industrial, techno, IDM",
       "confidence": "High",
@@ -5817,7 +5866,9 @@
       "district": "Jing'an",
       "vibe": [
         "warehouse",
-        "underground"
+        "underground",
+        "date",
+        "techno"
       ],
       "genre": "techno, club, multi-room pop-up",
       "confidence": "Watch",
@@ -6630,7 +6681,8 @@
       "vibe": [
         "hard",
         "experimental",
-        "underground"
+        "underground",
+        "bass"
       ],
       "genre": "experimental club, bass, hard club, deconstructed club",
       "confidence": "Medium",
@@ -6862,7 +6914,8 @@
       "vibe": [
         "underground",
         "club",
-        "house"
+        "house",
+        "techno"
       ],
       "genre": "house, techno",
       "confidence": "Medium",
@@ -7185,7 +7238,8 @@
       "vibe": [
         "club",
         "experimental",
-        "underground"
+        "underground",
+        "hard"
       ],
       "genre": "club, hard dance, performance-led electronic",
       "confidence": "High",
@@ -7478,7 +7532,8 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "hard techno, rave, high-bpm club",
       "confidence": "Medium",
@@ -7693,7 +7748,8 @@
       "district": "Huangpu",
       "vibe": [
         "house",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "house, techno-context",
       "confidence": "Medium",
@@ -7780,7 +7836,8 @@
       "vibe": [
         "experimental",
         "underground",
-        "hard"
+        "hard",
+        "bass"
       ],
       "genre": "experimental club, deconstructed club, digital hardcore, bass",
       "confidence": "Medium",
@@ -8190,7 +8247,8 @@
       "district": "Changning",
       "vibe": [
         "listening",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "deep techno, industrial, psytrance, experimental",
       "confidence": "Medium",
@@ -8302,7 +8360,8 @@
       "vibe": [
         "underground",
         "club",
-        "house"
+        "house",
+        "techno"
       ],
       "genre": "house, techno, underground house",
       "confidence": "High",
@@ -8846,7 +8905,8 @@
       "vibe": [
         "bass",
         "underground",
-        "house"
+        "house",
+        "techno"
       ],
       "genre": "techno-dubstep hybrid, house, club music",
       "confidence": "Watch",
@@ -9333,7 +9393,8 @@
       "vibe": [
         "date",
         "club",
-        "house"
+        "house",
+        "techno"
       ],
       "genre": "techno, house, hotel party",
       "confidence": "Medium",
@@ -9865,7 +9926,8 @@
       "district": "Huangpu",
       "vibe": [
         "underground",
-        "bass"
+        "bass",
+        "hard"
       ],
       "genre": "ambient, bass, trance, club",
       "confidence": "Medium",
@@ -9980,7 +10042,8 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "hard techno, industrial, rave, EBM",
       "confidence": "Medium",
@@ -10444,7 +10507,8 @@
       "vibe": [
         "underground",
         "date",
-        "house"
+        "house",
+        "techno"
       ],
       "genre": "techno, house",
       "confidence": "Watch",
@@ -10552,7 +10616,8 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "hard techno, rave, hard club, local support",
       "confidence": "Medium",
@@ -10883,7 +10948,8 @@
       "district": "Changning",
       "vibe": [
         "experimental",
-        "hard"
+        "hard",
+        "techno"
       ],
       "genre": "acid techno, metal crossover",
       "confidence": "Watch",
@@ -10999,7 +11065,8 @@
       "district": "Changning",
       "vibe": [
         "bass",
-        "experimental"
+        "experimental",
+        "techno"
       ],
       "genre": "hyperpop, trance, techno",
       "confidence": "Watch",
@@ -11288,7 +11355,10 @@
       "vibe": [
         "underground",
         "experimental",
-        "house"
+        "house",
+        "bass",
+        "warehouse",
+        "techno"
       ],
       "genre": "house, downtempo, minimal, ambient, techno, bass, trance",
       "confidence": "Watch",
