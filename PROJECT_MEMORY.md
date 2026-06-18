@@ -1717,7 +1717,8 @@ Validation:
 - `npm run structure` passed.
 - `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs` still reports unrelated existing audit findings: several event rows missing source URLs and the audit script treating `/_vercel/insights/script.js` as a missing local target.
 
-Push plan:
+Push state:
 
-- Commit only the Sound Buddy/history scope to `main`: `PROJECT_MEMORY.md`, `assets/sound-buddy.js`, `assets/sound-buddy-models/`, `sound-buddy.html`, and `tests/sound-buddy.test.js`.
-- Leave unrelated dirty event/data/poster/generated-page files unstaged.
+- Commit pushed to `origin/main`: `45288dc Enhance Sound Buddy indicators`.
+- Sound Buddy/history scope in that commit: `PROJECT_MEMORY.md`, `assets/sound-buddy.js`, `assets/sound-buddy-models/`, `sound-buddy.html`, and `tests/sound-buddy.test.js`.
+- Unrelated dirty event/data/poster/generated-page files remained local and were not included in the push.
