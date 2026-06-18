@@ -217,6 +217,7 @@
         "feed meters"
         "feed scope"
         "insights insights"
+        "signalDrawer signalDrawer"
         "settingsDrawer settingsDrawer"
         "styleDrawer notesDrawer";
       align-content: start;
@@ -362,6 +363,131 @@
 
     .coach-style-control {
       grid-column: 1 / -1;
+    }
+
+    .coach-tuning-control {
+      grid-column: 1 / -1;
+    }
+
+    .coach-source-control {
+      grid-column: 1 / -1;
+    }
+
+    .coach-model-mode-control {
+      display: grid;
+      gap: 7px;
+      border: 1px solid rgba(229, 222, 209, .14);
+      background: rgba(2, 3, 3, .42);
+      padding: 7px;
+    }
+
+    .coach-model-mode-control > span {
+      color: var(--muted);
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .coach-model-mode-control .coach-segment {
+      flex: 1 1 96px;
+    }
+
+    .coach-source-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .coach-tuning-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 8px;
+    }
+
+    .coach-tuning-field {
+      display: grid;
+      gap: 5px;
+      min-width: 0;
+    }
+
+    .coach-tuning-field span {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      color: var(--muted);
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .coach-tuning-field em {
+      font-style: normal;
+    }
+
+    .coach-tuning-field output {
+      color: var(--cyan);
+      font-family: var(--font-mono);
+      font-size: 12px;
+    }
+
+    .coach-tuning-field input[type="range"] {
+      width: 100%;
+      accent-color: var(--cyan);
+    }
+
+    .coach-source-board {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 6px;
+    }
+
+    .coach-source-card {
+      display: grid;
+      gap: 5px;
+      min-width: 0;
+      border: 1px solid rgba(229, 222, 209, .16);
+      border-left: 3px solid rgba(229, 222, 209, .24);
+      background: rgba(2, 3, 3, .58);
+      padding: 7px;
+    }
+
+    .coach-source-card[data-source-state="live"],
+    .coach-source-card[data-source-state="available"],
+    .coach-source-card[data-source-state="mapped"] {
+      border-left-color: var(--cyan);
+    }
+
+    .coach-source-card[data-source-state="loading"] {
+      border-left-color: var(--gold);
+    }
+
+    .coach-source-card[data-source-state="fallback"] {
+      border-left-color: var(--ember);
+    }
+
+    .coach-source-card b {
+      color: var(--cyan);
+      font-size: 14px;
+      overflow-wrap: anywhere;
+    }
+
+    .coach-source-card span,
+    .coach-source-card small {
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 800;
+      line-height: 1.25;
+      text-transform: uppercase;
+    }
+
+    .coach-source-card small {
+      color: var(--paper);
+      text-transform: none;
     }
 
     .coach-segment:hover,
@@ -536,6 +662,10 @@
       grid-area: settingsDrawer;
     }
 
+    .coach-signal-drawer {
+      grid-area: signalDrawer;
+    }
+
     .coach-drawer summary {
       cursor: pointer;
       list-style: none;
@@ -560,7 +690,13 @@
     }
 
     .coach-genre-mix,
-    .coach-subgenre-board {
+    .coach-subgenre-board,
+    .coach-energy-arc,
+    .coach-drill-board,
+    .coach-signal-board,
+    .coach-signal-group,
+    .coach-signal-list,
+    .coach-signal-item {
       display: grid;
       gap: 6px;
     }
@@ -575,7 +711,9 @@
 
     .coach-style-card,
     .coach-mix-card,
-    .coach-subgenre-card {
+    .coach-subgenre-card,
+    .coach-arc-card,
+    .coach-drill-card {
       display: grid;
       gap: 6px;
       border: 1px solid rgba(229, 222, 209, .18);
@@ -586,7 +724,9 @@
 
     .coach-style-card.active,
     .coach-mix-card.primary,
-    .coach-subgenre-card.primary {
+    .coach-subgenre-card.primary,
+    .coach-arc-card.primary,
+    .coach-drill-card.primary {
       border-left-color: var(--ember);
       background:
         linear-gradient(90deg, rgba(255, 85, 47, .12), transparent),
@@ -604,7 +744,9 @@
 
     .coach-style-card b,
     .coach-mix-card b,
-    .coach-subgenre-card b {
+    .coach-subgenre-card b,
+    .coach-arc-card b,
+    .coach-drill-card b {
       color: var(--cyan);
       font-family: var(--font-display);
       font-size: 18px;
@@ -649,7 +791,12 @@
     .coach-mix-card span,
     .coach-mix-card p,
     .coach-subgenre-card span,
-    .coach-subgenre-card p {
+    .coach-subgenre-card p,
+    .coach-arc-card span,
+    .coach-arc-card p,
+    .coach-drill-card span,
+    .coach-drill-card p,
+    .coach-drill-steps {
       margin: 0;
       color: var(--muted);
       font-size: 11px;
@@ -660,11 +807,32 @@
 
     .coach-style-card p,
     .coach-mix-card p,
-    .coach-subgenre-card p {
+    .coach-subgenre-card p,
+    .coach-arc-card p,
+    .coach-drill-card p {
       color: var(--paper);
       font-size: 12px;
       font-weight: 600;
       text-transform: none;
+    }
+
+    .coach-insight-heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .coach-drill-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .coach-drill-steps {
+      display: grid;
+      gap: 4px;
+      padding-left: 16px;
     }
 
     .coach-comment {
@@ -729,13 +897,14 @@
         grid-template-areas:
           "actions"
           "feed"
-          "readouts"
-          "meters"
-          "scope"
-          "insights"
-          "settingsDrawer"
-          "styleDrawer"
-          "notesDrawer";
+        "readouts"
+        "meters"
+        "scope"
+        "insights"
+        "signalDrawer"
+        "settingsDrawer"
+        "styleDrawer"
+        "notesDrawer";
       }
 
       .coach-insights {
@@ -821,6 +990,790 @@
     }
   </style>
   <link rel="stylesheet" href="assets/basement-dispatch.css?v=xhs-contact-20260613c">
+  <style>
+    .coach-page {
+      gap: 12px;
+    }
+
+    .coach-hero {
+      min-height: auto;
+      grid-template-columns: minmax(280px, .46fr) minmax(0, 1fr);
+      gap: 10px;
+      align-items: stretch;
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .coach-stage,
+    .coach-console {
+      min-height: 0;
+      border: 1px solid rgba(229, 222, 209, .2);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, .04), rgba(5, 6, 6, .18)),
+        rgba(7, 9, 8, .9);
+      box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .36);
+    }
+
+    .coach-stage {
+      align-content: stretch;
+      grid-template-rows: auto minmax(0, 1fr) auto;
+      gap: 10px;
+      padding: clamp(14px, 2vw, 22px);
+    }
+
+    .coach-stage::before {
+      background:
+        linear-gradient(180deg, rgba(5, 6, 6, .03), rgba(5, 6, 6, .82)),
+        repeating-linear-gradient(90deg, rgba(54, 199, 231, .1) 0 1px, transparent 1px 22px),
+        repeating-linear-gradient(0deg, rgba(255, 85, 47, .08) 0 1px, transparent 1px 38px);
+    }
+
+    .coach-stage::after {
+      width: 106%;
+      height: 34%;
+      left: -3%;
+      top: 29%;
+      border-top-color: rgba(255, 85, 47, .58);
+      border-bottom-color: rgba(54, 199, 231, .42);
+      opacity: .58;
+    }
+
+    .coach-copy {
+      max-width: none;
+      align-content: start;
+      gap: 9px;
+    }
+
+    .coach-stage-top,
+    .coach-stage-meta,
+    .coach-command-strip {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .coach-stage-top {
+      justify-content: space-between;
+    }
+
+    .coach-stage-meta {
+      align-items: stretch;
+    }
+
+    .coach-stage-meta span,
+    .coach-inline-link,
+    .coach-command-strip span {
+      min-height: 30px;
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid rgba(229, 222, 209, .2);
+      background: rgba(5, 6, 6, .7);
+      color: var(--muted);
+      padding: 7px 9px;
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 1;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .coach-inline-link,
+    .coach-command-strip span:first-child {
+      border-color: rgba(54, 199, 231, .48);
+      color: var(--cyan);
+    }
+
+    .coach-inline-link:hover {
+      border-color: var(--paper);
+      color: var(--paper);
+    }
+
+    .coach-copy h1 {
+      max-width: 620px !important;
+      font-size: clamp(50px, 6.6vw, 104px) !important;
+      line-height: .82;
+    }
+
+    .coach-beta-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      align-self: flex-start;
+      min-height: 18px;
+      border: 1px solid rgba(54, 199, 231, .66);
+      background: rgba(54, 199, 231, .14);
+      color: var(--cyan);
+      padding: 3px 5px 2px;
+      font-family: var(--font-display);
+      font-size: 10px;
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .coach-title-beta {
+      margin-left: 8px;
+      transform: translateY(-6px);
+    }
+
+    .tag .coach-beta-badge {
+      margin-left: 6px;
+      min-height: 16px;
+      padding: 2px 4px 1px;
+      font-size: 9px;
+    }
+
+    .coach-copy .subhead {
+      max-width: 560px;
+      font-size: clamp(13px, 1vw, 16px);
+      line-height: 1.38;
+    }
+
+    .coach-safety {
+      position: relative;
+      z-index: 2;
+    }
+
+    .coach-safety span,
+    .coach-safety a {
+      min-height: 30px;
+      background: rgba(5, 6, 6, .72);
+    }
+
+    .coach-console {
+      grid-template-columns: minmax(0, 1.02fr) minmax(300px, .74fr);
+      grid-template-areas:
+        "actions actions"
+        "scope readouts"
+        "scope meters"
+        "insights insights"
+        "feed feed"
+        "signalDrawer signalDrawer"
+        "settingsDrawer settingsDrawer"
+        "styleDrawer notesDrawer";
+      gap: 8px;
+      padding: 8px;
+    }
+
+    .coach-actions {
+      grid-template-columns: minmax(160px, 1fr) minmax(140px, .78fr) minmax(86px, .44fr) minmax(128px, .58fr);
+      gap: 6px;
+      border-bottom: 1px solid rgba(229, 222, 209, .14);
+      padding-bottom: 8px;
+    }
+
+    .coach-console-title {
+      min-height: 42px;
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid rgba(229, 222, 209, .18);
+      border-left: 4px solid var(--ember);
+      background:
+        linear-gradient(90deg, rgba(255, 85, 47, .16), transparent),
+        rgba(5, 6, 6, .72);
+      color: var(--paper);
+      padding: 9px 12px;
+      font-family: var(--font-display);
+      font-size: 21px;
+      font-weight: 900;
+      line-height: .92;
+      text-transform: uppercase;
+    }
+
+    .coach-action {
+      min-height: 42px;
+      padding-inline: 12px;
+    }
+
+    .coach-status {
+      color: var(--gold);
+      font-size: 14px;
+    }
+
+    .coach-scope {
+      height: clamp(180px, 18vw, 240px);
+      min-height: 0;
+      max-height: 240px;
+      aspect-ratio: auto;
+      border-color: rgba(54, 199, 231, .4);
+      background:
+        linear-gradient(180deg, rgba(54, 199, 231, .08), transparent 45%),
+        linear-gradient(90deg, rgba(255, 85, 47, .08), transparent 55%),
+        #050606;
+    }
+
+    .coach-readouts {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 6px;
+    }
+
+    .coach-readout:last-child {
+      grid-column: auto;
+    }
+
+    .coach-readout {
+      min-height: 56px;
+      border-color: rgba(229, 222, 209, .2);
+      background:
+        linear-gradient(90deg, rgba(54, 199, 231, .12), transparent 58%),
+        rgba(5, 6, 6, .66);
+      padding: 8px;
+    }
+
+    .coach-readout b {
+      font-size: clamp(25px, 2.8vw, 38px);
+    }
+
+    .coach-meters {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 6px;
+    }
+
+    .coach-meter {
+      min-height: 58px;
+      border-color: rgba(229, 222, 209, .2);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, .025), transparent),
+        rgba(5, 6, 6, .58);
+    }
+
+    .coach-meter-track,
+    .coach-candidate-track {
+      height: 13px;
+    }
+
+    .coach-feed {
+      min-height: 104px;
+      max-height: 180px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      align-content: stretch;
+      overflow: auto;
+      padding-right: 0;
+    }
+
+    .coach-comment {
+      min-height: 96px;
+      border: 1px solid rgba(229, 222, 209, .16);
+      border-left: 4px solid rgba(54, 199, 231, .72);
+      background: rgba(5, 6, 6, .52);
+      padding: 10px;
+    }
+
+    .coach-comment.current {
+      border-color: rgba(255, 85, 47, .32);
+      border-left-color: var(--ember);
+    }
+
+    .coach-comment b {
+      font-size: 20px;
+    }
+
+    .coach-comment p {
+      font-size: 12px;
+    }
+
+    .coach-insights {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      border-top: 1px solid rgba(229, 222, 209, .14);
+      padding-top: 8px;
+    }
+
+    .coach-insight-group {
+      border: 1px solid rgba(229, 222, 209, .14);
+      background: rgba(5, 6, 6, .4);
+      padding: 8px;
+    }
+
+    .coach-genre-radar {
+      grid-column: 1 / -1;
+    }
+
+    .coach-genre-stack {
+      display: grid;
+      grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr);
+      gap: 6px;
+    }
+
+    .coach-genre-column {
+      display: grid;
+      min-width: 0;
+      align-content: start;
+      gap: 6px;
+    }
+
+    .coach-mini-label,
+    .coach-live-chip {
+      color: var(--muted);
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .coach-mini-label {
+      min-height: 22px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .coach-live-chip {
+      min-height: 24px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(229, 222, 209, .16);
+      background: rgba(5, 6, 6, .64);
+      padding: 5px 7px;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .coach-live-chip[data-state="live"] {
+      border-color: rgba(54, 199, 231, .52);
+      color: var(--cyan);
+      box-shadow: inset 3px 0 0 rgba(54, 199, 231, .82);
+    }
+
+    .coach-live-chip[data-state="stopped"] {
+      border-color: rgba(215, 169, 40, .38);
+      color: var(--gold);
+    }
+
+    .coach-genre-mix {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .coach-subgenre-board {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .coach-energy-arc,
+    .coach-drill-board {
+      display: grid;
+      gap: 6px;
+    }
+
+    .coach-signal-drawer {
+      grid-area: signalDrawer;
+    }
+
+    .coach-signal-board {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .coach-signal-group {
+      min-width: 0;
+      align-content: start;
+      gap: 7px;
+    }
+
+    .coach-signal-group h3 {
+      margin: 0;
+      min-height: 24px;
+      display: inline-flex;
+      align-items: center;
+      border-bottom: 1px solid rgba(229, 222, 209, .16);
+      color: var(--gold);
+      font-family: var(--font-display);
+      font-size: 17px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .coach-signal-list {
+      grid-template-columns: repeat(auto-fit, minmax(124px, 1fr));
+      gap: 5px;
+    }
+
+    .coach-signal-item {
+      min-height: 66px;
+      align-content: space-between;
+      gap: 5px;
+      border: 1px solid rgba(229, 222, 209, .14);
+      border-left: 3px solid rgba(54, 199, 231, .54);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, .022), transparent),
+        rgba(2, 3, 3, .52);
+      padding: 7px;
+      min-width: 0;
+    }
+
+    .coach-signal-item[data-accent="gold"] {
+      border-left-color: rgba(215, 169, 40, .72);
+    }
+
+    .coach-signal-item[data-accent="ember"] {
+      border-left-color: rgba(255, 85, 47, .72);
+    }
+
+    .coach-signal-item span {
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .coach-signal-item b {
+      color: var(--paper);
+      font-family: var(--font-mono);
+      font-size: 17px;
+      font-weight: 900;
+      line-height: 1.05;
+      overflow-wrap: anywhere;
+    }
+
+    .coach-signal-item small {
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 800;
+      line-height: 1.25;
+      min-height: 13px;
+      text-transform: uppercase;
+    }
+
+    .coach-signal-track {
+      height: 4px;
+      border: 1px solid rgba(229, 222, 209, .12);
+      background: rgba(5, 6, 6, .88);
+      overflow: hidden;
+    }
+
+    .coach-signal-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--cyan), var(--gold), var(--ember));
+      transition: width .16s linear;
+    }
+
+    .coach-style-card,
+    .coach-mix-card,
+    .coach-subgenre-card,
+    .coach-arc-card,
+    .coach-drill-card,
+    .coach-control,
+    .coach-notes {
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, .025), transparent),
+        rgba(5, 6, 6, .58);
+    }
+
+    .coach-subgenre-card {
+      grid-template-columns: 1fr;
+    }
+
+    .coach-subgenre-score {
+      text-align: left;
+    }
+
+    .coach-arc-card,
+    .coach-drill-card {
+      display: grid;
+      gap: 7px;
+      border: 1px solid rgba(229, 222, 209, .18);
+      border-left: 3px solid rgba(215, 169, 40, .72);
+      padding: 9px;
+    }
+
+    .coach-arc-card b,
+    .coach-drill-card b {
+      color: var(--gold);
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 900;
+      line-height: .95;
+      text-transform: uppercase;
+    }
+
+    .coach-arc-card p,
+    .coach-drill-card p,
+    .coach-drill-card li {
+      margin: 0;
+      color: var(--paper);
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .coach-arc-card span,
+    .coach-drill-card span {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+      line-height: 1.3;
+      text-transform: uppercase;
+    }
+
+    .coach-drill-card ol {
+      display: grid;
+      gap: 4px;
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .coach-drill-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .coach-drawer {
+      border: 1px solid rgba(229, 222, 209, .14);
+      background: rgba(5, 6, 6, .36);
+      padding: 10px;
+    }
+
+    .coach-drawer[open] summary {
+      border-bottom: 1px solid rgba(229, 222, 209, .14);
+      margin-bottom: 10px;
+      padding-bottom: 9px;
+    }
+
+    .coach-toolbox {
+      grid-template-columns: minmax(0, .8fr) minmax(0, 1fr) minmax(0, .7fr);
+      gap: 8px;
+    }
+
+    .coach-style-control {
+      grid-column: 1 / -1;
+    }
+
+    .coach-panel {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      border: 1px solid rgba(229, 222, 209, .18);
+      background: rgba(5, 6, 6, .56);
+      padding: 8px;
+    }
+
+    .coach-panel div {
+      min-height: 92px;
+      display: grid;
+      align-content: start;
+      gap: 8px;
+      border-left: 3px solid rgba(54, 199, 231, .52);
+      padding: 8px 10px;
+    }
+
+    .coach-panel div:nth-child(2) {
+      border-left-color: rgba(255, 85, 47, .62);
+    }
+
+    .coach-panel div:nth-child(3) {
+      border-left-color: rgba(215, 169, 40, .7);
+    }
+
+    .coach-panel div:nth-child(4) {
+      border-left-color: rgba(229, 222, 209, .55);
+    }
+
+    .coach-panel b {
+      font-size: 22px;
+    }
+
+    @media (max-width: 1180px) {
+      .coach-hero {
+        grid-template-columns: 1fr;
+      }
+
+      .coach-stage,
+      .coach-console {
+        min-height: auto;
+      }
+
+      .coach-stage {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        align-items: end;
+      }
+
+      .coach-console {
+        grid-template-columns: minmax(0, 1fr) minmax(260px, .74fr);
+      }
+
+      .coach-panel {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 820px) {
+      .coach-stage {
+        grid-template-columns: 1fr;
+      }
+
+      .coach-copy,
+      .coach-safety {
+        grid-column: auto;
+        grid-row: auto;
+      }
+
+      .coach-console {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "actions"
+          "scope"
+          "readouts"
+          "meters"
+          "insights"
+          "feed"
+          "signalDrawer"
+          "settingsDrawer"
+          "styleDrawer"
+          "notesDrawer";
+      }
+
+      .coach-actions {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .coach-console-title,
+      .coach-status {
+        grid-column: 1 / -1;
+      }
+
+      #startCoach {
+        grid-column: auto;
+      }
+
+      .coach-readouts,
+      .coach-meters,
+      .coach-feed,
+      .coach-insights,
+      .coach-genre-stack,
+      .coach-genre-mix,
+      .coach-subgenre-board,
+      .coach-energy-arc,
+      .coach-drill-board,
+      .coach-signal-board,
+      .coach-signal-list,
+      .coach-toolbox,
+      .coach-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .coach-feed {
+        max-height: 260px;
+      }
+
+      .coach-panel div {
+        min-height: auto;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .coach-page .site-nav {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: start;
+      }
+
+      .coach-page .site-nav::before {
+        grid-column: 1;
+        max-width: 120px;
+      }
+
+      .coach-page .site-nav > .tag {
+        grid-column: 2;
+      }
+
+      .coach-page .site-nav .nav-group {
+        grid-column: 1 / -1;
+        flex-wrap: nowrap;
+        max-width: 100%;
+        overflow-x: auto;
+        padding-bottom: 4px;
+        scrollbar-color: rgba(54, 199, 231, .7) rgba(5, 6, 6, .6);
+      }
+
+      .coach-page .site-nav .nav-link {
+        flex: 0 0 auto;
+      }
+
+      .coach-stage,
+      .coach-console,
+      .coach-panel {
+        padding: 10px;
+      }
+
+      .coach-stage {
+        gap: 9px;
+      }
+
+      .coach-stage-top {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: start;
+        justify-items: start;
+      }
+
+      .coach-inline-link {
+        width: fit-content;
+        max-width: 100%;
+      }
+
+      .coach-stage-meta {
+        display: none;
+      }
+
+      .coach-command-strip span:nth-child(n+2) {
+        display: none;
+      }
+
+      .coach-copy h1 {
+        width: 100% !important;
+        max-width: 100% !important;
+        font-size: clamp(44px, 16vw, 66px) !important;
+        line-height: .84 !important;
+      }
+
+      .coach-copy,
+      .coach-copy .subhead {
+        max-width: 100%;
+      }
+
+      .coach-copy .subhead {
+        font-size: 13px;
+        line-height: 1.34;
+      }
+
+      .coach-stage-meta span,
+      .coach-inline-link,
+      .coach-command-strip span,
+      .coach-safety span,
+      .coach-safety a {
+        min-height: 28px;
+        padding: 6px 7px;
+        font-size: 12px;
+      }
+
+      .coach-actions {
+        grid-template-columns: 1fr;
+      }
+
+      .coach-scope {
+        height: 150px;
+        min-height: 0;
+        aspect-ratio: auto;
+      }
+
+      .coach-feed {
+        min-height: 104px;
+      }
+
+      .coach-segments {
+        flex-wrap: wrap;
+        overflow: visible;
+      }
+    }
+  </style>
   <script src="assets/sound-buddy.js?v=sound-buddy-20260618-mix"></script>
 </head>
 <body>
@@ -839,27 +1792,41 @@
         <a class="nav-link" href="contribute.html">Contribute</a>
         <a class="nav-link" href="account.html">Account</a>
       </div>
-      <span class="tag">Sound Buddy</span>
+      <span class="tag">Sound Buddy <small class="coach-beta-badge">beta</small></span>
     </nav>
 
     <section class="coach-hero" aria-label="Sound Buddy">
       <header class="coach-stage">
         <div class="coach-copy">
-          <p class="kicker">Local mic / continuous comments</p>
-          <h1><span>Sound</span> <span>Buddy</span></h1>
-          <p class="subhead">A browser-side listening buddy for kick, bass, texture, and arrangement. It reads live sound pressure patterns, not track identity.</p>
-          <div class="coach-safety" aria-label="Sound Buddy privacy and limits">
-            <span>No recording</span>
-            <span>No upload</span>
-            <span>No track ID</span>
-            <span>Approx style</span>
-            <a href="sound-buddy-principles.html">Principles / citations</a>
+          <div class="coach-stage-top">
+            <p class="kicker">Local mic / continuous comments</p>
+            <a class="coach-inline-link" href="sound-buddy-principles.html">Principles / citations</a>
           </div>
+          <h1><span>Sound</span> <span>Buddy</span><small class="coach-beta-badge coach-title-beta">beta</small></h1>
+          <p class="subhead">A browser-side listening buddy for kick, bass, texture, and arrangement. It reads live sound pressure patterns, not track identity.</p>
+          <div class="coach-stage-meta" aria-label="Sound Buddy product boundaries">
+            <span>Browser audio only</span>
+            <span>Rolling cues</span>
+            <span>Style evidence</span>
+          </div>
+          <div class="coach-command-strip" aria-label="Best listening workflow">
+            <span>1. Play a set nearby</span>
+            <span>2. Start listening</span>
+            <span>3. Watch the cue stack</span>
+          </div>
+        </div>
+        <div class="coach-safety" aria-label="Sound Buddy privacy and limits">
+          <span>No recording</span>
+          <span>No upload</span>
+          <span>No track ID</span>
+          <span>Approx style</span>
+          <a href="sound-buddy-principles.html">Evidence model</a>
         </div>
       </header>
 
       <section class="coach-console" aria-label="Live listening console">
         <div class="coach-actions">
+          <span class="coach-console-title">Live signal desk</span>
           <button class="coach-action primary" type="button" id="startCoach">Start listening</button>
           <button class="coach-action" type="button" id="stopCoach" disabled>Stop</button>
           <span class="coach-status" id="coachStatus">Idle</span>
@@ -900,6 +1867,10 @@
           <div class="coach-readout" style="--accent: var(--gold)">
             <b id="subgenreReadout">--</b>
             <span>subgenre</span>
+          </div>
+          <div class="coach-readout" style="--accent: var(--ember)">
+            <b id="energyArcReadout">Waiting</b>
+            <span>energy arc</span>
           </div>
         </div>
 
@@ -961,21 +1932,113 @@
                 <button class="coach-segment" type="button" data-style="industrial" aria-pressed="false">Industrial</button>
               </div>
             </div>
+            <div class="coach-control coach-tuning-control">
+              <b>Advanced tuning</b>
+              <div class="coach-tuning-grid" aria-label="Detection tuning controls">
+                <label class="coach-tuning-field" for="tuningWindow">
+                  <span><em>Window</em><output id="tuningWindowValue" for="tuningWindow">30s</output></span>
+                  <input id="tuningWindow" type="range" min="12" max="45" step="1" value="30" data-tuning="windowSeconds">
+                </label>
+                <label class="coach-tuning-field" for="tuningSensitivity">
+                  <span><em>Sensitivity</em><output id="tuningSensitivityValue" for="tuningSensitivity">100%</output></span>
+                  <input id="tuningSensitivity" type="range" min="82" max="118" step="1" value="100" data-tuning="sensitivity">
+                </label>
+                <label class="coach-tuning-field" for="tuningBassBias">
+                  <span><em>Low end</em><output id="tuningBassBiasValue" for="tuningBassBias">100%</output></span>
+                  <input id="tuningBassBias" type="range" min="78" max="122" step="1" value="100" data-tuning="bassBias">
+                </label>
+                <label class="coach-tuning-field" for="tuningTextureBias">
+                  <span><em>Texture</em><output id="tuningTextureBiasValue" for="tuningTextureBias">100%</output></span>
+                  <input id="tuningTextureBias" type="range" min="78" max="122" step="1" value="100" data-tuning="textureBias">
+                </label>
+              </div>
+            </div>
+            <div class="coach-control coach-source-control">
+              <div class="coach-source-head">
+                <b>Hybrid ML assist</b>
+                <span class="coach-live-chip" id="externalAnalysisStatus" data-state="waiting">Standby</span>
+              </div>
+              <div class="coach-model-mode-control" aria-label="Model mode">
+                <span>Model mode</span>
+                <div class="coach-segments">
+                  <button class="coach-segment" type="button" data-model-mode="hybrid" aria-pressed="true" title="Blend local heuristics, Meyda features, and Discogs400 tags">Hybrid</button>
+                  <button class="coach-segment" type="button" data-model-mode="local" aria-pressed="false" title="Use only local FFT, pulse, and heuristic scoring">Local</button>
+                  <button class="coach-segment" type="button" data-model-mode="discogs" aria-pressed="false" title="Use only Discogs400 pretrained model tags">Discogs400</button>
+                  <button class="coach-segment" type="button" data-model-mode="features" aria-pressed="false" title="Use local scoring plus Meyda feature extraction, without Discogs tag boosts">Features</button>
+                </div>
+              </div>
+              <div class="coach-source-board" id="externalSourceBoard" aria-label="External analysis sources">
+                <article class="coach-source-card" data-source-state="standby">
+                  <b>Meyda</b>
+                  <span>Feature extractor</span>
+                  <small>Standby until live audio starts.</small>
+                </article>
+                <article class="coach-source-card" data-source-state="standby">
+                  <b>MTG / Essentia.js</b>
+                  <span>Optional ML runtime</span>
+                  <small>Mapped when a hosted model is available.</small>
+                </article>
+                <article class="coach-source-card" data-source-state="standby">
+                  <b>Essentia Discogs autotagging</b>
+                  <span>Tag vocabulary</span>
+                  <small>Discogs-style tags steer genre scores.</small>
+                </article>
+                <article class="coach-source-card" data-source-state="standby">
+                  <b>WLEDAudioSyncRTMGC</b>
+                  <span>Real-time tag pattern</span>
+                  <small>Top-tag outputs map into local subgenres.</small>
+                </article>
+              </div>
+            </div>
           </div>
         </details>
 
         <canvas class="coach-scope" id="coachScope" width="960" height="480" aria-label="Live listening scope"></canvas>
 
         <div class="coach-insights" aria-label="Detected style insights">
-          <section class="coach-insight-group" aria-labelledby="genreMixTitle">
-            <b class="coach-section-label" id="genreMixTitle">Recent genre mix</b>
-            <div class="coach-genre-mix" id="genreMixBoard" aria-label="Genre mix likeness"></div>
+          <section class="coach-insight-group coach-genre-radar" aria-labelledby="genreRadarTitle">
+            <div class="coach-insight-heading">
+              <b class="coach-section-label" id="genreRadarTitle">Genre radar</b>
+              <span class="coach-live-chip" id="genreLiveStatus" data-state="waiting">Waiting</span>
+            </div>
+            <div class="coach-genre-stack">
+              <div class="coach-genre-column">
+                <span class="coach-mini-label">Main lanes</span>
+                <div class="coach-genre-mix" id="genreMixBoard" aria-label="Genre mix likeness"></div>
+              </div>
+              <div class="coach-genre-column">
+                <span class="coach-mini-label">Subgenre candidates</span>
+                <div class="coach-subgenre-board" id="subgenreBoard" aria-label="Subgenre candidates"></div>
+              </div>
+            </div>
           </section>
-          <section class="coach-insight-group" aria-labelledby="subgenreTitle">
-            <b class="coach-section-label" id="subgenreTitle">Recent subgenres</b>
-            <div class="coach-subgenre-board" id="subgenreBoard" aria-label="Subgenre candidates"></div>
+          <section class="coach-insight-group" aria-labelledby="energyArcTitle">
+            <div class="coach-insight-heading">
+              <b class="coach-section-label" id="energyArcTitle">Energy arc</b>
+              <span class="coach-live-chip" id="arcLiveStatus" data-state="waiting">Waiting</span>
+            </div>
+            <div class="coach-energy-arc" id="energyArcBoard" aria-label="Energy arc interpretation"></div>
+          </section>
+          <section class="coach-insight-group" aria-labelledby="listeningDrillTitle">
+            <div class="coach-insight-heading">
+              <b class="coach-section-label" id="listeningDrillTitle">Listening drill</b>
+              <span class="coach-live-chip" id="drillLiveStatus" data-state="waiting">Waiting</span>
+            </div>
+            <div class="coach-drill-board" id="drillBoard" aria-label="Listening drill"></div>
+            <div class="coach-drill-actions">
+              <button class="coach-segment" type="button" id="newListeningDrill">New drill</button>
+              <button class="coach-segment" type="button" id="copyCoachRecap">Copy recap</button>
+            </div>
           </section>
         </div>
+
+        <details class="coach-drawer coach-signal-drawer">
+          <summary>
+            <span>Signal indicators</span>
+            <span class="coach-live-chip" id="signalLiveStatus" data-state="waiting">Waiting</span>
+          </summary>
+          <div class="coach-signal-board" id="signalIndicatorBoard" aria-label="Live analyzer indicators"></div>
+        </details>
 
         <details class="coach-drawer coach-style-drawer">
           <summary>Style guide</summary>
@@ -1007,6 +2070,10 @@
       <div>
         <b>Best use</b>
         <p>Run it with an official DJ set, a platform stream, or music you have permission to analyze.</p>
+      </div>
+      <div>
+        <b>How to read it</b>
+        <p>Treat every output as a listening prompt: compare the cue to what you hear, then use the style board for vocabulary.</p>
       </div>
     </section>
 
@@ -1052,11 +2119,13 @@
     const coachStatus = document.getElementById("coachStatus");
     const coachScope = document.getElementById("coachScope");
     const coachFeed = document.getElementById("coachFeed");
+    const coachConsole = document.querySelector(".coach-console");
     const levelReadout = document.getElementById("levelReadout");
     const pulseReadout = document.getElementById("pulseReadout");
     const focusReadout = document.getElementById("focusReadout");
     const styleReadout = document.getElementById("styleReadout");
     const subgenreReadout = document.getElementById("subgenreReadout");
+    const energyArcReadout = document.getElementById("energyArcReadout");
     const bassMeter = document.getElementById("bassMeter");
     const topMeter = document.getElementById("topMeter");
     const bassLabel = document.getElementById("bassLabel");
@@ -1064,11 +2133,24 @@
     const paceButtons = Array.from(document.querySelectorAll("[data-pace]"));
     const focusButtons = Array.from(document.querySelectorAll("[data-focus]"));
     const styleButtons = Array.from(document.querySelectorAll("[data-style]"));
+    const modelModeButtons = Array.from(document.querySelectorAll("[data-model-mode]"));
+    const tuningInputs = Array.from(document.querySelectorAll("[data-tuning]"));
     const styleGuide = document.getElementById("styleGuide");
     const genreMixBoard = document.getElementById("genreMixBoard");
     const subgenreBoard = document.getElementById("subgenreBoard");
+    const energyArcBoard = document.getElementById("energyArcBoard");
+    const drillBoard = document.getElementById("drillBoard");
+    const genreLiveStatus = document.getElementById("genreLiveStatus");
+    const arcLiveStatus = document.getElementById("arcLiveStatus");
+    const drillLiveStatus = document.getElementById("drillLiveStatus");
+    const signalLiveStatus = document.getElementById("signalLiveStatus");
+    const signalIndicatorBoard = document.getElementById("signalIndicatorBoard");
+    const externalAnalysisStatus = document.getElementById("externalAnalysisStatus");
+    const externalSourceBoard = document.getElementById("externalSourceBoard");
     const copyCoachNotes = document.getElementById("copyCoachNotes");
     const clearCoachNotes = document.getElementById("clearCoachNotes");
+    const newListeningDrill = document.getElementById("newListeningDrill");
+    const copyCoachRecap = document.getElementById("copyCoachRecap");
     const coachNotes = document.getElementById("coachNotes");
     const notesStatus = document.getElementById("notesStatus");
     const scopeCtx = coachScope.getContext("2d");
@@ -1081,6 +2163,13 @@
       pace: "normal",
       focus: "auto",
       style: "auto",
+      modelMode: "hybrid",
+      tuning: {
+        windowSeconds: 30,
+        sensitivity: 1,
+        bassBias: 1,
+        textureBias: 1,
+      },
     };
     let sessionNotes = [];
     let notesStatusTimer = null;
@@ -1091,9 +2180,14 @@
     let lastDetectedStyle = "";
     let lastGenreMixSignature = "";
     let lastDetectedSubgenre = "";
+    let lastDetectedArc = "";
     let lastStyleCommentAt = 0;
     let lastGenreMixCommentAt = 0;
     let lastSubgenreCommentAt = 0;
+    let lastArcCommentAt = 0;
+    let latestEnergyArcDetection = null;
+    let latestListeningDrill = null;
+    let sessionComments = [];
 
     const paceIntervals = {
       slow: 6500,
@@ -1119,8 +2213,20 @@
     const styleGuideItems = listenCoach && typeof listenCoach.styleGuides === "function"
       ? listenCoach.styleGuides()
       : [];
+    const externalSourceItems = listenCoach && typeof listenCoach.externalAnalysisSources === "function"
+      ? listenCoach.externalAnalysisSources()
+      : [];
+    const modelModeItems = listenCoach && typeof listenCoach.modelModes === "function"
+      ? listenCoach.modelModes()
+      : [
+        { id: "hybrid", label: "Hybrid", role: "local analyzer + model tags" },
+        { id: "local", label: "Local only", role: "local analyzer only" },
+        { id: "discogs", label: "Discogs400", role: "pretrained model tags only" },
+        { id: "features", label: "Features", role: "feature-assisted local scoring" },
+      ];
+    let latestExternalStatuses = [];
 
-    const utilityCommentCategories = new Set(["focus", "mix", "pace", "permission", "practice", "start", "stop", "style", "subgenre"]);
+    const utilityCommentCategories = new Set(["arc", "drill", "focus", "mix", "pace", "permission", "practice", "recap", "start", "stop", "style", "subgenre"]);
 
     const practiceComments = [
       {
@@ -1167,8 +2273,157 @@
       return paceIntervals[coachSettings.pace] || paceIntervals.normal;
     }
 
+    function modelModeMeta(mode = coachSettings.modelMode) {
+      return modelModeItems.find(item => item.id === mode) || modelModeItems[0] || { id: "hybrid", label: "Hybrid", role: "local analyzer + model tags" };
+    }
+
+    function modelModeLabel(mode = coachSettings.modelMode) {
+      return modelModeMeta(mode).label || "Hybrid";
+    }
+
+    function tunedState(state = {}) {
+      return {
+        ...(state || {}),
+        modelMode: coachSettings.modelMode,
+        tuning: { ...coachSettings.tuning },
+      };
+    }
+
+    function currentDetectionState() {
+      if (browserCoach && typeof browserCoach.state === "function") return tunedState(browserCoach.state());
+      return tunedState({});
+    }
+
+    function formatTuningValue(key, rawValue) {
+      const value = Number(rawValue || 0);
+      return key === "windowSeconds" ? `${value}s` : `${value}%`;
+    }
+
+    function setTuningFromInput(input, options = {}) {
+      const key = input?.dataset?.tuning;
+      if (!key) return;
+      const rawValue = Number(input.value || 0);
+      coachSettings.tuning[key] = key === "windowSeconds" ? rawValue : rawValue / 100;
+      const output = document.getElementById(`${input.id}Value`);
+      if (output) output.textContent = formatTuningValue(key, rawValue);
+      if (!options.silent && latestSnapshot) {
+        updateStyleDetection(latestSnapshot, currentDetectionState());
+        updateIndicatorChips(currentDetectionState());
+      }
+    }
+
     function setStatus(value) {
       coachStatus.textContent = value;
+    }
+
+    function modeLabel() {
+      if (coachMode === "mic") return "Mic live";
+      if (coachMode === "practice") return "Practice live";
+      return "Waiting";
+    }
+
+    function setLiveChip(element, text, state = "waiting") {
+      if (!element) return;
+      element.textContent = text;
+      element.dataset.state = state;
+    }
+
+    function updateIndicatorChips(state = {}) {
+      const sampleCount = Math.max(
+        Number(latestStyleDetection?.streamSampleCount || 0),
+        Number(latestSubgenreDetection?.streamSampleCount || 0),
+        Number(latestEnergyArcDetection?.streamSampleCount || 0),
+        Array.isArray(state?.snapshots) ? state.snapshots.length : 0
+      );
+      const suffix = sampleCount ? ` / ${sampleCount}f` : "";
+      const label = `${modeLabel()}${suffix}`;
+      const chipState = coachMode === "idle" ? "waiting" : "live";
+      if (coachConsole) coachConsole.dataset.signalState = chipState;
+      setLiveChip(genreLiveStatus, label, chipState);
+      setLiveChip(arcLiveStatus, label, chipState);
+      setLiveChip(drillLiveStatus, label, chipState);
+      setLiveChip(signalLiveStatus, label, chipState);
+      renderSignalIndicators(state?.snapshots?.[state.snapshots.length - 1] || latestSnapshot, state);
+    }
+
+    function markIndicatorsWaiting(label = "Waiting") {
+      if (coachConsole) coachConsole.dataset.signalState = "waiting";
+      setLiveChip(genreLiveStatus, label, "waiting");
+      setLiveChip(arcLiveStatus, label, "waiting");
+      setLiveChip(drillLiveStatus, label, "waiting");
+      setLiveChip(signalLiveStatus, label, "waiting");
+      renderSignalIndicators();
+    }
+
+    function markIndicatorsStopped(label = "Stopped") {
+      if (coachConsole) coachConsole.dataset.signalState = "stopped";
+      setLiveChip(genreLiveStatus, label, "stopped");
+      setLiveChip(arcLiveStatus, label, "stopped");
+      setLiveChip(drillLiveStatus, label, "stopped");
+      setLiveChip(signalLiveStatus, label, "stopped");
+      renderSignalIndicators();
+    }
+
+    function externalStatusLabel(status) {
+      const labels = {
+        live: "Live",
+        loading: "Loading",
+        mapped: "Mapped",
+        available: "Ready",
+        fallback: "Fallback",
+        standby: "Standby",
+      };
+      return labels[status] || "Standby";
+    }
+
+    function normalizeExternalStatuses(statusList = []) {
+      const byId = new Map((Array.isArray(statusList) ? statusList : []).map(item => [item.id, item]));
+      return externalSourceItems.map(source => ({
+        ...source,
+        status: "standby",
+        detail: "Ready when live audio starts.",
+        ...(byId.get(source.id) || {}),
+      }));
+    }
+
+    function renderExternalSourceBoard(statusList = latestExternalStatuses) {
+      if (!externalSourceBoard || !externalSourceItems.length) return;
+      const statuses = normalizeExternalStatuses(statusList);
+      latestExternalStatuses = statuses;
+      const activeCount = statuses.filter(item => ["live", "loading", "mapped", "available"].includes(item.status)).length;
+      const fallbackCount = statuses.filter(item => item.status === "fallback").length;
+      const modeText = modelModeLabel();
+      setLiveChip(
+        externalAnalysisStatus,
+        coachSettings.modelMode === "local"
+          ? "Local only"
+          : activeCount ? `${modeText} ${activeCount}/4` : fallbackCount ? `${modeText} fallback` : modeText,
+        activeCount ? "live" : fallbackCount ? "stopped" : "waiting"
+      );
+      externalSourceBoard.innerHTML = statuses.map(item => `
+        <article class="coach-source-card" data-source-state="${escapeHtml(item.status || "standby")}">
+          <b>${escapeHtml(item.label || item.id)}</b>
+          <span>${escapeHtml(externalStatusLabel(item.status))} / ${escapeHtml(item.mode || item.role || "analysis")}</span>
+          <small>${escapeHtml(item.detail || item.role || "Ready when live audio starts.")}</small>
+        </article>
+      `).join("");
+      renderSignalIndicators();
+    }
+
+    function handleExternalStatus(sourceId, entry, statusList) {
+      renderExternalSourceBoard(statusList);
+    }
+
+    function markExternalSourceStopped(label = "Stopped") {
+      if (externalSourceItems.length) {
+        renderExternalSourceBoard(externalSourceItems.map(source => ({
+          ...source,
+          status: "standby",
+          detail: "Stopped until live listening restarts.",
+        })));
+      }
+      setLiveChip(externalAnalysisStatus, label, "stopped");
+      renderSignalIndicators();
     }
 
     function setPressed(buttons, activeValue, key) {
@@ -1191,6 +2446,11 @@
     function rememberComment(comment) {
       if (!comment || comment.category === "stop") return;
       const time = new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+      sessionComments.unshift({
+        category: comment.category || "buddy",
+        text: comment.text || "",
+      });
+      sessionComments = sessionComments.slice(0, 36);
       sessionNotes.unshift(`[${time}] ${String(comment.category || "buddy").toUpperCase()}: ${comment.text || ""}`);
       sessionNotes = sessionNotes.slice(0, 36);
       updateNotesOutput();
@@ -1228,6 +2488,7 @@
 
     function clearNotesText() {
       sessionNotes = [];
+      sessionComments = [];
       updateNotesOutput("Cleared");
     }
 
@@ -1251,6 +2512,28 @@
       addComment(lens, { skipNotes: focus === "auto" });
     }
 
+    function setModelMode(mode, options = {}) {
+      if (!modelModeItems.some(item => item.id === mode)) return;
+      coachSettings.modelMode = mode;
+      setPressed(modelModeButtons, mode, "modelMode");
+      if (browserCoach && typeof browserCoach.state === "function") {
+        const state = browserCoach.state();
+        if (state) state.modelMode = mode;
+      }
+      renderExternalSourceBoard();
+      if (latestSnapshot) {
+        updateStyleDetection(latestSnapshot, currentDetectionState());
+        updateIndicatorChips(currentDetectionState());
+      }
+      if (!options.silent) {
+        const meta = modelModeMeta(mode);
+        addComment({
+          category: "model",
+          text: `Model mode set to ${meta.label}. ${meta.role}.`,
+        }, { skipNotes: true });
+      }
+    }
+
     function guideById(styleId) {
       return styleGuideItems.find(item => item.id === styleId) || styleGuideItems[0] || null;
     }
@@ -1267,6 +2550,208 @@
       if (value >= 0.68) return "strong";
       if (value >= 0.46) return "medium";
       return "rough";
+    }
+
+    function signalNumber(value) {
+      const number = Number(value);
+      return Number.isFinite(number) ? number : null;
+    }
+
+    function formatSignalPercent(value) {
+      const number = signalNumber(value);
+      return number === null ? "--" : `${Math.round(Math.max(0, number) * 100)}%`;
+    }
+
+    function formatSignalNumber(value, digits = 2) {
+      const number = signalNumber(value);
+      if (number === null) return "--";
+      if (Math.abs(number) >= 100) return `${Math.round(number)}`;
+      if (Math.abs(number) >= 10) return number.toFixed(1);
+      return number.toFixed(digits);
+    }
+
+    function formatSignalHz(value) {
+      const number = signalNumber(value);
+      if (number === null || number <= 0) return "--";
+      return number >= 1000 ? `${(number / 1000).toFixed(1)}k` : `${Math.round(number)}`;
+    }
+
+    function formatSignalBpm(value) {
+      const number = signalNumber(value);
+      return number && number > 0 ? `${Math.round(number)}` : "--";
+    }
+
+    function signalStrength(value, max = 1) {
+      const number = signalNumber(value);
+      if (number === null || max <= 0) return 0;
+      return Math.max(0, Math.min(100, Math.round((number / max) * 100)));
+    }
+
+    function signalText(value, fallback = "--") {
+      return value === null || value === undefined || value === "" ? fallback : String(value);
+    }
+
+    function signalAverage(values = []) {
+      const numericValues = values
+        .map(value => Number(value))
+        .filter(value => Number.isFinite(value));
+      if (!numericValues.length) return 0;
+      return numericValues.reduce((sum, value) => sum + value, 0) / numericValues.length;
+    }
+
+    function signalStandardDeviation(values = []) {
+      const numericValues = values
+        .map(value => Number(value))
+        .filter(value => Number.isFinite(value));
+      if (numericValues.length < 2) return 0;
+      const mean = signalAverage(numericValues);
+      const variance = signalAverage(numericValues.map(value => (value - mean) ** 2));
+      return Math.sqrt(variance);
+    }
+
+    function recentSignalDelta(frames = [], key) {
+      const source = frames
+        .map(frame => Number(frame?.[key]))
+        .filter(value => Number.isFinite(value));
+      if (source.length < 2) return 0;
+      const size = Math.max(1, Math.min(3, Math.floor(source.length / 2)));
+      const first = signalAverage(source.slice(0, size));
+      const last = signalAverage(source.slice(-size));
+      return last - first;
+    }
+
+    function renderSignalItem(item = {}) {
+      const strength = Math.max(0, Math.min(100, Number(item.strength || 0)));
+      return `
+        <article class="coach-signal-item" data-accent="${escapeHtml(item.accent || "cyan")}">
+          <span>${escapeHtml(item.label || "Signal")}</span>
+          <b>${escapeHtml(signalText(item.value))}</b>
+          <div class="coach-signal-track" aria-hidden="true"><div class="coach-signal-fill" style="width: ${strength}%"></div></div>
+          <small>${escapeHtml(signalText(item.detail, "listening"))}</small>
+        </article>
+      `;
+    }
+
+    function renderSignalGroup(group = {}) {
+      const items = Array.isArray(group.items) ? group.items : [];
+      return `
+        <section class="coach-signal-group" aria-label="${escapeHtml(group.title || "Signal group")}">
+          <h3>${escapeHtml(group.title || "Signal group")}</h3>
+          <div class="coach-signal-list">
+            ${items.map(renderSignalItem).join("")}
+          </div>
+        </section>
+      `;
+    }
+
+    function renderSignalIndicators(snapshot = latestSnapshot, state = currentDetectionState()) {
+      if (!signalIndicatorBoard) return;
+      const current = snapshot || {};
+      const stateSnapshots = Array.isArray(state?.snapshots) ? state.snapshots.length : 0;
+      const recentFrames = Array.isArray(state?.snapshots) ? state.snapshots.slice(-16) : [];
+      const level = Math.max(Number(current.level || 0), Number(current.total || 0));
+      const peakLevel = Math.max(level, ...recentFrames.map(frame => Number(frame?.level || frame?.total || 0)), 0);
+      const levelDelta = recentSignalDelta(recentFrames, "level");
+      const bassDelta = recentSignalDelta(recentFrames, "bass");
+      const highDelta = recentSignalDelta(recentFrames, "high");
+      const pulseDeviation = signalStandardDeviation(
+        recentFrames
+          .map(frame => Number(frame?.pulseBpm || 0))
+          .filter(value => value > 0)
+      );
+      const streamDurationMs = recentFrames.length > 1
+        ? Math.max(0, Number(recentFrames[recentFrames.length - 1].capturedAt || 0) - Number(recentFrames[0].capturedAt || 0))
+        : 0;
+      const meyda = current.external?.meyda || {};
+      const externalTags = Array.isArray(current.externalTags)
+        ? current.externalTags
+        : Array.isArray(current.external?.tags)
+          ? current.external.tags
+          : [];
+      const primaryStyle = latestStyleDetection?.label || (coachSettings.style === "auto" ? "Listening" : guideById(coachSettings.style)?.label);
+      const primarySubgenre = latestSubgenreDetection?.primary || null;
+      const primaryMix = latestGenreMixDetection?.blendLabel || latestGenreMixDetection?.primary?.label || "Listening";
+      const activeSources = latestExternalStatuses.filter(item => ["live", "loading", "mapped", "available"].includes(item.status)).length;
+      const fallbackSources = latestExternalStatuses.filter(item => item.status === "fallback").length;
+      const sampleCount = Math.max(
+        Number(latestStyleDetection?.streamSampleCount || 0),
+        Number(latestSubgenreDetection?.streamSampleCount || 0),
+        Number(latestEnergyArcDetection?.streamSampleCount || 0),
+        stateSnapshots
+      );
+      const frameCount = Math.max(
+        Number(latestStyleDetection?.streamFrameCount || 0),
+        Number(latestSubgenreDetection?.streamFrameCount || 0),
+        stateSnapshots
+      );
+      const groups = [
+        {
+          title: "Live signal",
+          items: [
+            { label: "Mode", value: modeLabel(), detail: coachMode === "idle" ? "waiting" : "running", strength: coachMode === "idle" ? 0 : 100, accent: "gold" },
+            { label: "Model mode", value: modelModeLabel(), detail: modelModeMeta().role, strength: coachSettings.modelMode === "local" ? 55 : 85, accent: coachSettings.modelMode === "discogs" ? "cyan" : "gold" },
+            { label: "Input level", value: formatSignalPercent(level), detail: "rms / average energy", strength: signalStrength(level), accent: "cyan" },
+            { label: "RMS", value: formatSignalPercent(current.rms), detail: "time-domain power", strength: signalStrength(current.rms), accent: "cyan" },
+            { label: "Total", value: formatSignalPercent(current.total), detail: "spectrum average", strength: signalStrength(current.total), accent: "cyan" },
+            { label: "Peak level", value: formatSignalPercent(peakLevel), detail: "recent high point", strength: signalStrength(peakLevel), accent: "ember" },
+            { label: "Pulse BPM", value: formatSignalBpm(current.pulseBpm), detail: current.pulseBpm ? "rough tempo cue" : "counting", strength: signalStrength(current.pulseBpm || 0, 180), accent: "gold" },
+            { label: "BPM dev", value: formatSignalNumber(pulseDeviation, 1), detail: "recent pulse drift", strength: signalStrength(pulseDeviation, 18), accent: "gold" },
+            { label: "Stable pulse", value: current.stablePulse ? "Yes" : "No", detail: current.pulseBpm ? "recent kick timing" : "waiting", strength: current.stablePulse ? 100 : 12, accent: current.stablePulse ? "gold" : "ember" },
+            { label: "Focus", value: current.focus || "Listening", detail: "current cue lens", strength: current.focus ? 72 : 0, accent: "gold" },
+            { label: "Dominant band", value: current.dominantBand || "--", detail: "loudest band", strength: current.dominantBand ? 72 : 0, accent: "ember" },
+            { label: "Frames", value: `${frameCount}`, detail: `${sampleCount} usable`, strength: signalStrength(sampleCount, 16), accent: "cyan" },
+            { label: "Window", value: streamDurationMs ? `${(streamDurationMs / 1000).toFixed(1)}s` : "--", detail: "recent frame span", strength: signalStrength(streamDurationMs, 24000), accent: "cyan" },
+            { label: "Level move", value: formatSignalPercent(Math.abs(levelDelta)), detail: levelDelta > 0.01 ? "rising" : levelDelta < -0.01 ? "falling" : "steady", strength: signalStrength(Math.abs(levelDelta), .18), accent: levelDelta < -0.01 ? "gold" : "ember" },
+            { label: "Bass move", value: formatSignalPercent(Math.abs(bassDelta)), detail: bassDelta > 0.01 ? "rising" : bassDelta < -0.01 ? "falling" : "steady", strength: signalStrength(Math.abs(bassDelta), .16), accent: "ember" },
+            { label: "High move", value: formatSignalPercent(Math.abs(highDelta)), detail: highDelta > 0.01 ? "opening" : highDelta < -0.01 ? "closing" : "steady", strength: signalStrength(Math.abs(highDelta), .16), accent: "cyan" },
+          ],
+        },
+        {
+          title: "Frequency balance",
+          items: [
+            { label: "Sub", value: formatSignalPercent(current.sub), detail: "25-75 hz", strength: signalStrength(current.sub), accent: "ember" },
+            { label: "Kick / bass", value: formatSignalPercent(current.bass), detail: "45-180 hz", strength: signalStrength(current.bass), accent: "ember" },
+            { label: "Low-mid", value: formatSignalPercent(current.lowMid), detail: "180-520 hz", strength: signalStrength(current.lowMid), accent: "gold" },
+            { label: "Mid", value: formatSignalPercent(current.mid), detail: "520-2400 hz", strength: signalStrength(current.mid), accent: "gold" },
+            { label: "High", value: formatSignalPercent(current.high), detail: "4.2-9.8 khz", strength: signalStrength(current.high), accent: "cyan" },
+            { label: "Air", value: formatSignalPercent(current.air), detail: "9.8-16 khz", strength: signalStrength(current.air), accent: "cyan" },
+            { label: "Bass share", value: formatSignalPercent(current.bassShare), detail: "sub + bass ratio", strength: signalStrength(current.bassShare), accent: "ember" },
+            { label: "High share", value: formatSignalPercent(current.highShare), detail: "high + air ratio", strength: signalStrength(current.highShare), accent: "cyan" },
+            { label: "Brightness", value: formatSignalNumber(current.brightness), detail: "top / low ratio", strength: signalStrength(current.brightness, 2.4), accent: "cyan" },
+          ],
+        },
+        {
+          title: "Texture / MIR",
+          items: [
+            { label: "Centroid", value: formatSignalHz(current.centroid), detail: "spectral center hz", strength: signalStrength(current.centroid, 8000), accent: "cyan" },
+            { label: "Rolloff", value: formatSignalHz(current.spectralRolloff), detail: "meyda rolloff hz", strength: signalStrength(current.spectralRolloff, 16000), accent: "cyan" },
+            { label: "Flatness", value: formatSignalNumber(current.spectralFlatness), detail: "noise likeness", strength: signalStrength(current.spectralFlatness), accent: "gold" },
+            { label: "Flux", value: formatSignalNumber(current.spectralFlux), detail: "frame movement", strength: signalStrength(current.spectralFlux, 1.4), accent: "ember" },
+            { label: "Spread", value: formatSignalNumber(current.spectralSpread), detail: "spectrum width", strength: signalStrength(current.spectralSpread, 9000), accent: "gold" },
+            { label: "Contrast", value: formatSignalNumber(current.spectralContrast), detail: "band peaks / valleys", strength: signalStrength(current.spectralContrast), accent: "ember" },
+            { label: "Contrast bands", value: `${Array.isArray(current.spectralContrastBands) ? current.spectralContrastBands.length : 0}`, detail: "spectral contrast bins", strength: signalStrength(Array.isArray(current.spectralContrastBands) ? current.spectralContrastBands.length : 0, 6), accent: "ember" },
+            { label: "ZCR", value: formatSignalNumber(current.zcr), detail: "zero-crossing rate", strength: signalStrength(current.zcr), accent: "cyan" },
+            { label: "Chroma focus", value: formatSignalNumber(current.chromaFocus), detail: "pitch-class concentration", strength: signalStrength(current.chromaFocus), accent: "gold" },
+            { label: "Meyda fields", value: `${Number(meyda.featureCount || 0)}`, detail: meyda.available ? "feature extractor live" : "fallback features", strength: signalStrength(meyda.featureCount || 0, 10), accent: meyda.available ? "cyan" : "gold" },
+          ],
+        },
+        {
+          title: "Music cues",
+          items: [
+            { label: "Style", value: primaryStyle || "Listening", detail: latestStyleDetection?.reason || "auto lane", strength: signalStrength(latestStyleDetection?.confidence || 0), accent: "gold" },
+            { label: "Style conf", value: formatSignalPercent(latestStyleDetection?.confidence), detail: latestStyleDetection?.isCloseCall ? "close call" : "broad cue", strength: signalStrength(latestStyleDetection?.confidence || 0), accent: latestStyleDetection?.isCloseCall ? "ember" : "gold" },
+            { label: "Style margin", value: formatSignalPercent(latestStyleDetection?.scoreMargin), detail: "lead over runner-up", strength: signalStrength(latestStyleDetection?.scoreMargin || 0, .4), accent: "gold" },
+            { label: "Genre mix", value: primaryMix, detail: latestGenreMixDetection?.isHybrid ? "hybrid lane" : "primary lane", strength: latestGenreMixDetection?.primary ? 78 : 0, accent: "cyan" },
+            { label: "Subgenre", value: primarySubgenre?.label || "Listening", detail: primarySubgenre?.reason || "candidate rank", strength: signalStrength(primarySubgenre?.confidence || 0), accent: "ember" },
+            { label: "Subgenre conf", value: formatSignalPercent(primarySubgenre?.confidence), detail: "learning cue only", strength: signalStrength(primarySubgenre?.confidence || 0), accent: "ember" },
+            { label: "Energy arc", value: latestEnergyArcDetection?.label || "Waiting", detail: latestEnergyArcDetection?.cues?.join(" / ") || "section shape", strength: signalStrength(latestEnergyArcDetection?.confidence || 0), accent: "gold" },
+            { label: "Arc conf", value: formatSignalPercent(latestEnergyArcDetection?.confidence), detail: "recent trend", strength: signalStrength(latestEnergyArcDetection?.confidence || 0), accent: "gold" },
+            { label: "Model sources", value: `${activeSources}/4`, detail: fallbackSources ? `${fallbackSources} fallback` : "hybrid assist", strength: signalStrength(activeSources, 4), accent: activeSources ? "cyan" : "gold" },
+            { label: "External tags", value: `${externalTags.length}`, detail: "local tag hints", strength: signalStrength(externalTags.length, 8), accent: "cyan" },
+          ],
+        },
+      ];
+      signalIndicatorBoard.innerHTML = groups.map(renderSignalGroup).join("");
     }
 
     function renderStyleGuide(activeId = activeStyleId()) {
@@ -1334,6 +2819,102 @@
       }).join("");
     }
 
+    function renderEnergyArcBoard(detection = latestEnergyArcDetection) {
+      if (!detection || !detection.arcId) {
+        energyArcBoard.innerHTML = `
+          <article class="coach-arc-card">
+            <b>Waiting</b>
+            <span>0% confidence</span>
+            <p>Start live listening or Practice mode to read whether the section is building, holding, peaking, or resetting.</p>
+          </article>
+        `;
+        return;
+      }
+      const confidence = Math.round(Math.max(0, Math.min(1, detection.confidence || 0)) * 100);
+      const cues = Array.isArray(detection.cues) ? detection.cues.join(" / ") : "pulse / pressure / texture";
+      energyArcBoard.innerHTML = `
+        <article class="coach-arc-card" data-energy-arc="${escapeHtml(detection.arcId)}">
+          <b>${escapeHtml(detection.label || "Energy arc")}</b>
+          <span>${confidence}% confidence / ${escapeHtml(cues)}</span>
+          <p>${escapeHtml(detection.text || "Track the next phrase and compare low-end weight with top texture.")}</p>
+        </article>
+      `;
+    }
+
+    function renderDrillBoard(drill = latestListeningDrill) {
+      if (!drill || !drill.title) {
+        drillBoard.innerHTML = `
+          <article class="coach-drill-card">
+            <b>Listening drill</b>
+            <span>16 bars / generated from the current signal</span>
+            <p>Use Practice mode or live input, then ask for a drill based on the latest style, subgenre, and energy arc.</p>
+          </article>
+        `;
+        return;
+      }
+      const steps = Array.isArray(drill.steps) ? drill.steps : [];
+      drillBoard.innerHTML = `
+        <article class="coach-drill-card" data-drill-focus="${escapeHtml(drill.focus || "arc")}">
+          <b>${escapeHtml(drill.title)}</b>
+          <span>${escapeHtml(drill.focus || "arc")} / ${Number(drill.durationBars || 16)} bars / ${escapeHtml(drill.arcLabel || "arc")}</span>
+          <p>${escapeHtml(drill.prompt || "")}</p>
+          <ol>
+            ${steps.map(step => `<li>${escapeHtml(step)}</li>`).join("")}
+          </ol>
+        </article>
+      `;
+    }
+
+    function updateListeningDrill(options = {}) {
+      if (!listenCoach || typeof listenCoach.listeningDrillForSnapshot !== "function" || !latestSnapshot) {
+        renderDrillBoard();
+        return null;
+      }
+      latestListeningDrill = listenCoach.listeningDrillForSnapshot(latestSnapshot, browserCoach?.state?.() || {}, {
+        style: latestStyleDetection,
+        subgenre: latestSubgenreDetection,
+        arc: latestEnergyArcDetection,
+      });
+      renderDrillBoard(latestListeningDrill);
+      if (options.announce && latestListeningDrill) {
+        addComment({
+          category: "drill",
+          text: latestListeningDrill.text || `${latestListeningDrill.title}: ${latestListeningDrill.prompt}`,
+        });
+      }
+      return latestListeningDrill;
+    }
+
+    async function copyRecapText() {
+      if (!listenCoach || typeof listenCoach.formatSessionRecap !== "function") {
+        updateNotesOutput("No recap");
+        return;
+      }
+      const recap = listenCoach.formatSessionRecap({
+        style: latestStyleDetection,
+        subgenre: latestSubgenreDetection,
+        arc: latestEnergyArcDetection,
+        drill: latestListeningDrill,
+        comments: sessionComments,
+      });
+      try {
+        if (navigator.clipboard?.writeText) {
+          await navigator.clipboard.writeText(recap);
+        } else {
+          coachNotes.value = recap;
+          coachNotes.focus();
+          coachNotes.select();
+          document.execCommand("copy");
+        }
+        updateNotesOutput("Recap copied");
+      } catch (error) {
+        coachNotes.value = recap;
+        coachNotes.focus();
+        coachNotes.select();
+        updateNotesOutput("Select recap");
+      }
+    }
+
     function styleLessonComment(styleId, snapshot = latestSnapshot) {
       if (!listenCoach || typeof listenCoach.styleLessonForSnapshot !== "function") return null;
       const lesson = listenCoach.styleLessonForSnapshot(snapshot || {}, styleId);
@@ -1345,9 +2926,10 @@
 
     function updateStyleDetection(snapshot, state) {
       if (!listenCoach || typeof listenCoach.detectStyleFromSnapshot !== "function") return;
-      latestStyleDetection = listenCoach.detectStyleFromSnapshot(snapshot || {}, state || {});
+      const detectionState = tunedState(state || {});
+      latestStyleDetection = listenCoach.detectStyleFromSnapshot(snapshot || {}, detectionState);
       if (typeof listenCoach.detectGenreMixFromSnapshot === "function") {
-        latestGenreMixDetection = listenCoach.detectGenreMixFromSnapshot(snapshot || {}, state || {});
+        latestGenreMixDetection = listenCoach.detectGenreMixFromSnapshot(snapshot || {}, detectionState);
         renderGenreMixBoard(latestGenreMixDetection);
         const mixSignature = latestGenreMixDetection.mix
           ? latestGenreMixDetection.mix.map(item => item.styleId).join("|")
@@ -1368,7 +2950,7 @@
         }
       }
       if (typeof listenCoach.detectSubgenresFromSnapshot === "function") {
-        latestSubgenreDetection = listenCoach.detectSubgenresFromSnapshot(snapshot || {}, state || {});
+        latestSubgenreDetection = listenCoach.detectSubgenresFromSnapshot(snapshot || {}, detectionState);
         const primary = latestSubgenreDetection.primary;
         subgenreReadout.textContent = primary
           ? `${primary.label} ${Math.round(primary.confidence * 100)}%`
@@ -1389,6 +2971,27 @@
           });
         }
       }
+      if (typeof listenCoach.detectEnergyArcFromSnapshot === "function") {
+        latestEnergyArcDetection = listenCoach.detectEnergyArcFromSnapshot(snapshot || {}, state || {});
+        energyArcReadout.textContent = latestEnergyArcDetection.label || "Listening";
+        renderEnergyArcBoard(latestEnergyArcDetection);
+        const now = Date.now();
+        if (
+          latestEnergyArcDetection.arcId
+          && latestEnergyArcDetection.arcId !== "waiting"
+          && latestEnergyArcDetection.arcId !== lastDetectedArc
+          && latestEnergyArcDetection.confidence >= 0.32
+          && now - lastArcCommentAt > Math.max(5600, currentIntervalMs())
+        ) {
+          lastDetectedArc = latestEnergyArcDetection.arcId;
+          lastArcCommentAt = now;
+          addComment({
+            category: "arc",
+            text: latestEnergyArcDetection.text,
+          });
+        }
+      }
+      updateListeningDrill();
       if (coachSettings.style === "auto") {
         const detectedId = latestStyleDetection.styleId === "unknown" ? "" : latestStyleDetection.styleId;
         styleReadout.textContent = detectedId
@@ -1458,6 +3061,21 @@
       }
     }
 
+    function frameClock() {
+      return window.performance && typeof window.performance.now === "function"
+        ? window.performance.now()
+        : Date.now();
+    }
+
+    function advanceDetectorState(snapshot, state) {
+      if (!state || !listenCoach || typeof listenCoach.nextCoachComment !== "function") return state || {};
+      listenCoach.nextCoachComment(snapshot, state, {
+        now: frameClock(),
+        minIntervalMs: Number.MAX_SAFE_INTEGER,
+      });
+      return state;
+    }
+
     function practiceSnapshot(step) {
       const phase = step % 6;
       const sub = [0.18, 0.24, 0.3, 0.22, 0.16, 0.2][phase];
@@ -1498,8 +3116,14 @@
         text: "Practice mode is running without microphone access. Open in Chrome or Edge for live listening.",
       });
       let step = 0;
+      const practiceState = listenCoach && typeof listenCoach.createCoachState === "function"
+        ? listenCoach.createCoachState({ now: frameClock(), modelMode: coachSettings.modelMode })
+        : { snapshots: [], modelMode: coachSettings.modelMode };
       function advancePractice() {
-        renderFrame(practiceSnapshot(step));
+        practiceState.modelMode = coachSettings.modelMode;
+        const snapshot = practiceSnapshot(step);
+        advanceDetectorState(snapshot, practiceState);
+        renderFrame(snapshot, practiceState);
         const commentEvery = Math.max(2, Math.round(currentIntervalMs() / 1400));
         if (step % commentEvery === 0) {
           addComment(practiceComments[Math.floor(step / 3) % practiceComments.length]);
@@ -1515,7 +3139,9 @@
             practiceTimer = null;
           }
         },
+        state: () => practiceState,
       };
+      setLiveChip(externalAnalysisStatus, "Practice off", "waiting");
     }
 
     function drawScope(snapshot) {
@@ -1581,6 +3207,7 @@
       bassLabel.textContent = labelForShare(snapshot.bassShare);
       topLabel.textContent = labelForShare(snapshot.highShare);
       updateStyleDetection(snapshot, state);
+      updateIndicatorChips(state);
       drawScope(snapshot);
     }
 
@@ -1607,10 +3234,16 @@
       startCoach.disabled = true;
       hidePermissionHelp();
       setStatus("Requesting mic");
+      markIndicatorsWaiting("Starting");
       try {
         stopActiveCoach();
         browserCoach = listenCoach.createBrowserCoach({
           minIntervalMs: currentIntervalMs,
+          modelMode: () => coachSettings.modelMode,
+          loadExternalLibraries: true,
+          loadMlRuntime: false,
+          loadDiscogsModel: true,
+          onExternalStatus: handleExternalStatus,
           onFrame: renderFrame,
           onComment: addComment
         });
@@ -1628,6 +3261,8 @@
         startCoach.disabled = false;
         stopCoach.disabled = true;
         setStatus(isPermissionError(error) ? "Mic blocked" : "Mic error");
+        markIndicatorsStopped(isPermissionError(error) ? "Blocked" : "Error");
+        markExternalSourceStopped(isPermissionError(error) ? "Blocked" : "Error");
         showPermissionHelp();
         addComment({
           category: "permission",
@@ -1646,6 +3281,8 @@
       stopCoach.disabled = true;
       setStatus("Stopped");
       practiceCoach.disabled = false;
+      markIndicatorsStopped("Stopped");
+      markExternalSourceStopped("Stopped");
       addComment({
         category: "stop",
         text: stoppedMode === "practice"
@@ -1667,12 +3304,26 @@
     styleButtons.forEach(button => {
       button.addEventListener("click", () => setStyle(button.dataset.style));
     });
+    modelModeButtons.forEach(button => {
+      button.addEventListener("click", () => setModelMode(button.dataset.modelMode));
+    });
+    tuningInputs.forEach(input => {
+      setTuningFromInput(input, { silent: true });
+      input.addEventListener("input", () => setTuningFromInput(input));
+    });
     copyCoachNotes.addEventListener("click", copyNotesText);
     clearCoachNotes.addEventListener("click", clearNotesText);
+    newListeningDrill.addEventListener("click", () => updateListeningDrill({ announce: true }));
+    copyCoachRecap.addEventListener("click", copyRecapText);
     updateNotesOutput();
     renderStyleGuide();
     renderGenreMixBoard();
     renderSubgenreBoard();
+    renderEnergyArcBoard();
+    renderDrillBoard();
+    renderExternalSourceBoard();
+    setModelMode(coachSettings.modelMode, { silent: true });
+    markIndicatorsWaiting();
     drawScope(null);
   </script>
 </body>

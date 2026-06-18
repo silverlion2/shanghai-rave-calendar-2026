@@ -1,6 +1,6 @@
 # Project Memory
 
-Last updated: 2026-06-16 Asia/Shanghai
+Last updated: 2026-06-19 Asia/Shanghai
 
 ## Project
 
@@ -1631,3 +1631,93 @@ Validation:
 - `node --check` ran on all JavaScript files successfully.
 - `npm run check` test suite passed with all 70 tests.
 - Site structure and event audits completed with 0 warnings.
+
+## 2026-06-18 Xiaohongshu Website Link Strategy
+
+The user asked where to place the Shanghai Rave Index website URL on Xiaohongshu, then clarified that the normal profile bio link is not clickable on mobile and asked how other accounts handle this.
+
+Decision saved in `docs/xiaohongshu-website-link-strategy.md`:
+
+- Treat `raveindexsh.top` as a short brand/search cue on normal accounts, not as a clickable button.
+- Use Xiaohongshu-native posts as the primary value surface: weekend picks, venue guides, sound guides, and "tonight" shortlists should be useful even if the reader never leaves Xiaohongshu.
+- Use a stable searchable brand phrase such as `上海Rave日历`, `上海电子音乐日历`, `Basement Dispatch`, `Shanghai Rave Index`, and `raveindexsh.top`.
+- Keep the domain in the profile and pinned entry note; regular notes should usually say `完整日历看主页` or `完整活动 calendar 看平台` rather than repeating a raw URL every time.
+- Avoid QR codes, comment links, split links, "DM for link", image watermarks, and other gray off-platform diversion tactics on the primary account.
+- If clickable conversion becomes necessary, test official/professional Xiaohongshu surfaces such as business account features, official lead tools, shop/product links, or official ad landing pages.
+
+## 2026-06-19 Sound Buddy Classifier, Beta Badge, and Deploy
+
+The user reported that Sound Buddy could not reliably pick up DNB, house, or trance, then asked to label the feature as beta and upload it.
+
+Implemented state:
+
+- Added targeted local scoring signatures in `assets/sound-buddy.js` for DNB break patterns, warm house grooves, and trance lift.
+- DNB handling now covers common live tempo-reader failure cases, including half-time `80-92 BPM` reads and fast `168+ BPM` reads.
+- House handling now protects warmer `118-134 BPM` grooves from falling into techno/electro when the spectrum is low-mid and chord/groove led.
+- Trance handling now protects progressive and hard-trance style cues from falling back to techno subgenres when the signal is bright, stable, and lead/mid-high led.
+- Widened Discogs-style tag mapping for `Drum N Bass`, `drum n bass`, and related variants so the local pretrained tag model can steer DNB candidates.
+- Added regression tests for broad DNB/house/trance genre recall and family-correct subgenre ranking.
+- Added small `beta` badges to the Sound Buddy navigation label and main title in `sound-buddy.html`.
+
+Validation:
+
+- `npm run test:sound-buddy` passed with 41/41 tests.
+- `node --check assets\sound-buddy.js` passed.
+- `npm run structure` passed.
+- Production deployment completed with `npx vercel deploy --prod --yes`.
+- Production was aliased to `https://raveindexsh.top`.
+- Verified `https://raveindexsh.top/sound-buddy` returned HTTP 200 and contained both beta badges.
+
+Working tree caution:
+
+- This Sound Buddy work is mixed into a dirty local tree with unrelated event/data/poster changes already present. Do not assume all dirty files belong to Sound Buddy unless explicitly reviewed.
+
+## 2026-06-19 DJ Relevance Rerank Push
+
+The user asked to rerank/sort DJs by relevancy, then pushed the result to `main`.
+
+Implemented state:
+
+- Updated `djs.html` so DJ profile ordering uses an explicit `profileRelevanceScore` instead of the previous global-itinerary-heavy score.
+- The default DJ order now prioritizes current/future Shanghai calendar appearances, watch-level local listings, source quality, exact set-time evidence, local recurrence, and techno/sound fit.
+- Global itinerary rows still help, but they are capped as a supporting signal so broad international reference profiles do not outrank locally relevant current Shanghai DJs by volume alone.
+- Added `tests/dj-relevance-sort.test.js` to load the real DJ page/data bundle in a VM and assert that current Shanghai relevance outranks global itinerary volume.
+- Added the new relevance regression test to `npm run check` in `package.json`.
+
+Validation:
+
+- `node --test tests/dj-relevance-sort.test.js` passed.
+- `node --test tests/trust-framework.test.js` passed.
+- `node scripts/check.js` passed.
+- `package.json` parsed successfully.
+
+Push state:
+
+- Commit pushed to `origin/main`: `63a6bb8 Rerank DJ relevance`.
+- Only `djs.html`, `package.json`, and `tests/dj-relevance-sort.test.js` were staged for that commit.
+- Existing unrelated dirty files remained unstaged after the push, including event/data/poster/Sound Buddy work already present in the local tree.
+
+## 2026-06-19 Sound Buddy Indicators And Local Model Bundle
+
+The user asked to update Sound Buddy, expose all indicators on the page, confirm before implementation, then push the result to `main` and save it to project history.
+
+Implemented state:
+
+- Added a collapsed `Signal indicators` drawer to `sound-buddy.html`.
+- The drawer exposes live signal, frequency balance, texture / MIR, stream movement, music cue confidence, model-source count, and external tag count.
+- The collapsed drawer summary has its own live status chip, synchronized with the existing genre, energy-arc, and drill live chips.
+- Expanded the Sound Buddy page into a denser live signal desk with genre radar, subgenre candidates, energy arc, listening drill, session recap, advanced tuning, and hybrid ML source status.
+- Added local Discogs400 / Essentia / TensorFlow runtime assets under `assets/sound-buddy-models/` so the browser model path has local runtime, labels, manifest, weight shards, and vendor files.
+- Updated `tests/sound-buddy.test.js` with regression coverage for the richer Sound Buddy analyzer, genre/subgenre matrix, energy arc, listening drills, session recap, hybrid model status, and collapsible signal indicators.
+
+Validation:
+
+- `npm run test:sound-buddy` passed with 41/41 tests.
+- `node scripts/check.js` passed local link integrity and inline script syntax.
+- `npm run structure` passed.
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs` still reports unrelated existing audit findings: several event rows missing source URLs and the audit script treating `/_vercel/insights/script.js` as a missing local target.
+
+Push plan:
+
+- Commit only the Sound Buddy/history scope to `main`: `PROJECT_MEMORY.md`, `assets/sound-buddy.js`, `assets/sound-buddy-models/`, `sound-buddy.html`, and `tests/sound-buddy.test.js`.
+- Leave unrelated dirty event/data/poster/generated-page files unstaged.
