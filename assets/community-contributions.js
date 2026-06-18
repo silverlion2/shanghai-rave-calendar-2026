@@ -724,9 +724,9 @@
     
     if (params.mode === "existing" && params.targetId && params.targetLabel) {
       const select = form.querySelector("[data-community-target-select]");
-      const optionValue = \`\${params.targetKind || "event"}:\${params.targetId}:\${params.targetLabel}\`;
-      if (select && !select.querySelector(\`option[value="\${escapeHtml(optionValue)}"]\`)) {
-        select.insertAdjacentHTML('afterbegin', \`<option value="\${escapeHtml(optionValue)}">\${escapeHtml(params.targetLabel)}</option>\`);
+      const optionValue = `${params.targetKind || "event"}:${params.targetId}:${params.targetLabel}`;
+      if (select && !select.querySelector(`option[value="${escapeHtml(optionValue)}"]`)) {
+        select.insertAdjacentHTML('afterbegin', `<option value="${escapeHtml(optionValue)}">${escapeHtml(params.targetLabel)}</option>`);
       }
       if (select) {
         select.value = optionValue;

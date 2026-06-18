@@ -135,7 +135,7 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Drumcode Official",
-        "url": "https://drumcode.se",
+        "url": "https://drumcode.se/",
         "status": "label-source",
         "checked": "2026-06-17"
       },
@@ -170,13 +170,13 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Siamese Label",
-        "url": "https://siamese.kompakt.fm",
+        "url": "https://siamese.kompakt.fm/",
         "status": "label-source",
         "checked": "2026-06-18"
       },
       {
         "label": "Afterlife Records",
-        "url": "https://afterlife.live",
+        "url": "https://afterlife.live/",
         "status": "label-source",
         "checked": "2026-06-18"
       },
@@ -276,7 +276,7 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Innervisions Label",
-        "url": "https://www.innervisions.de",
+        "url": "https://www.innervisions.de/",
         "status": "label-source",
         "checked": "2026-06-18"
       },
@@ -310,13 +310,13 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "LENSKE Label",
-        "url": "https://lenske.kompakt.fm",
+        "url": "https://lenske.kompakt.fm/",
         "status": "label-source",
         "checked": "2026-06-17"
       },
       {
         "label": "Exhale - Amelie Lens",
-        "url": "https://exhale.techno",
+        "url": "https://exhale.techno/",
         "status": "event-series",
         "checked": "2026-06-17"
       },
@@ -350,7 +350,7 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "bipolar disorder Label / Artist site",
-        "url": "https://amotik.bandcamp.com",
+        "url": "https://amotik.bandcamp.com/",
         "status": "label-source",
         "checked": "2026-06-18"
       },
@@ -411,13 +411,13 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Anyma Official",
-        "url": "https://anyma.live",
+        "url": "https://anyma.live/",
         "status": "artist-official",
         "checked": "2026-06-17"
       },
       {
         "label": "Afterlife Records",
-        "url": "https://afterlife.live",
+        "url": "https://afterlife.live/",
         "status": "label-source",
         "checked": "2026-06-17"
       },
@@ -892,13 +892,13 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Klockworks Label",
-        "url": "https://klockworks.net",
+        "url": "https://klockworks.net/",
         "status": "label-source",
         "checked": "2026-06-18"
       },
       {
         "label": "Berghain Official",
-        "url": "https://berghain.de",
+        "url": "https://berghain.de/",
         "status": "venue-source",
         "checked": "2026-06-18"
       },
@@ -948,7 +948,7 @@ window.DJ_ITINERARY_DATA = {
       },
       {
         "label": "BAIHUI The Roof Radio w/ BI-NON",
-        "url": "https://baihui.live/shows/the-roof-radio-w-bi-non-25-05-26/en/",
+        "url": "https://baihui.live/shows/the-roof-radio-w-bi-non-25-05-26/en",
         "status": "radio-context",
         "checked": "2026-06-15"
       },
@@ -1050,7 +1050,7 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Fckng Serious Label",
-        "url": "https://fckngserious.com",
+        "url": "https://fckngserious.com/",
         "status": "label-source",
         "checked": "2026-06-17"
       },
@@ -1119,7 +1119,8 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai Abyss venue context",
         "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
         "status": "venue-context",
-        "checked": "2026-06-15"
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ]
   },
@@ -1159,7 +1160,8 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai Abyss venue context",
         "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
         "status": "venue-context",
-        "checked": "2026-06-15"
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ]
   },
@@ -1186,7 +1188,7 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Carl Cox Official",
-        "url": "https://carlcox.com",
+        "url": "https://carlcox.com/",
         "status": "artist-official",
         "checked": "2026-06-17"
       },
@@ -1222,13 +1224,13 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Charlotte de Witte Official Website",
-        "url": "https://charlottedewitte.com",
+        "url": "https://charlottedewitte.com/",
         "status": "artist-official",
         "checked": "2026-06-17"
       },
       {
         "label": "KNTXT Label / Platform",
-        "url": "https://kntxt.com",
+        "url": "https://kntxt.com/",
         "status": "label-source",
         "checked": "2026-06-17"
       },
@@ -1368,7 +1370,7 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "CLR Label",
-        "url": "https://www.clr.net",
+        "url": "https://www.clr.net/",
         "status": "label-source",
         "checked": "2026-06-18"
       },
@@ -1484,7 +1486,7 @@ window.DJ_ITINERARY_DATA = {
       },
       {
         "label": "LocalHub BYYB Radio wk.105 program",
-        "url": "https://localhub.to/shanghai/venue/byyb-radio/?lang=en",
+        "url": "https://localhub.to/shanghai/venue/byyb-radio?lang=en",
         "status": "radio-context",
         "checked": "2026-06-14"
       }
@@ -1517,7 +1519,7 @@ window.DJ_ITINERARY_DATA = {
       },
       {
         "label": "LocalHub BYYB onefortyasia radio takeover",
-        "url": "https://localhub.to/shanghai/venue/byyb-radio/?lang=en",
+        "url": "https://localhub.to/shanghai/venue/byyb-radio?lang=en",
         "status": "radio-context",
         "checked": "2026-06-14"
       }
@@ -1574,7 +1576,7 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Monnom Black Label",
-        "url": "https://monnomblack.com",
+        "url": "https://monnomblack.com/",
         "status": "label-source",
         "checked": "2026-06-18"
       },
@@ -1638,7 +1640,7 @@ window.DJ_ITINERARY_DATA = {
       },
       {
         "label": "LocalHub Abyss Shanghai event history",
-        "url": "https://localhub.to/shanghai/venue/abyss-shanghai/?lang=en",
+        "url": "https://localhub.to/shanghai/venue/abyss-shanghai?lang=en",
         "status": "venue-context",
         "checked": "2026-06-14"
       },
@@ -1658,7 +1660,8 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai Abyss venue context",
         "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
         "status": "venue-context",
-        "checked": "2026-06-15"
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ],
     "itinerary": [],
@@ -1690,7 +1693,7 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Innervisions Label",
-        "url": "https://innervisions.kompakt.fm",
+        "url": "https://innervisions.kompakt.fm/",
         "status": "label-source",
         "checked": "2026-06-18"
       },
@@ -1753,7 +1756,7 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Pampa Records",
-        "url": "https://www.pamparecords.com",
+        "url": "https://www.pamparecords.com/",
         "status": "label-source",
         "checked": "2026-06-18"
       },
@@ -1801,7 +1804,8 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai Abyss venue context",
         "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
         "status": "venue-context",
-        "checked": "2026-06-15"
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ]
   },
@@ -1959,7 +1963,7 @@ window.DJ_ITINERARY_DATA = {
       },
       {
         "label": "jay_sarayu Instagram Youshan pre-party index preview",
-        "url": "https://www.instagram.com/p/DZB981GAW_g/",
+        "url": "https://www.instagram.com/p/DZB981GAW_g",
         "status": "social-index-lead",
         "checked": "2026-06-14"
       }
@@ -2007,7 +2011,8 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai Abyss venue context",
         "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
         "status": "venue-context",
-        "checked": "2026-06-15"
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ],
     "aliases": [
@@ -2084,7 +2089,8 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai Abyss venue context",
         "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
         "status": "venue-context",
-        "checked": "2026-06-15"
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ]
   },
@@ -2150,7 +2156,8 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai Abyss venue context",
         "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
         "status": "venue-context",
-        "checked": "2026-06-15"
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ]
   },
@@ -2210,7 +2217,7 @@ window.DJ_ITINERARY_DATA = {
       },
       {
         "label": "LocalHub Abyss Shanghai event history",
-        "url": "https://localhub.to/shanghai/venue/abyss-shanghai/?lang=en",
+        "url": "https://localhub.to/shanghai/venue/abyss-shanghai?lang=en",
         "status": "venue-context",
         "checked": "2026-06-14"
       }
@@ -2293,7 +2300,8 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai Abyss venue context",
         "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
         "status": "venue-context",
-        "checked": "2026-06-15"
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ]
   },
@@ -2451,7 +2459,8 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai Abyss venue context",
         "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
         "status": "venue-context",
-        "checked": "2026-06-15"
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ]
   },
@@ -2579,7 +2588,7 @@ window.DJ_ITINERARY_DATA = {
       },
       {
         "label": "LocalHub BYYB Radio wk.110 program",
-        "url": "https://localhub.to/shanghai/venue/byyb-radio/?lang=en",
+        "url": "https://localhub.to/shanghai/venue/byyb-radio?lang=en",
         "status": "radio-context",
         "checked": "2026-06-14"
       }
@@ -2635,13 +2644,13 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Perc Trax Label",
-        "url": "https://perctrax.com",
+        "url": "https://perctrax.com/",
         "status": "label-source",
         "checked": "2026-06-17"
       },
       {
         "label": "Mord Label",
-        "url": "https://mord.bandcamp.com",
+        "url": "https://mord.bandcamp.com/",
         "status": "label-source",
         "checked": "2026-06-17"
       },
@@ -2689,7 +2698,8 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai Wigwam venue context",
         "url": "https://www.smartshanghai.com/venue/31681/wigwam_cafe",
         "status": "venue-context",
-        "checked": "2026-06-15"
+        "checked": "2026-06-15",
+        "note": "Venue context only; Liminal Dreams/Wigwam screenshots remain the source for IIN's June 20 lineup role."
       }
     ]
   },
@@ -2897,7 +2907,7 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Axis Records",
-        "url": "https://axisrecords.com",
+        "url": "https://axisrecords.com/",
         "status": "label-source",
         "checked": "2026-06-18"
       },
@@ -2931,7 +2941,7 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Rejected / Spectrum / Green Labels",
-        "url": "https://spectrum.kompakt.fm",
+        "url": "https://spectrum.kompakt.fm/",
         "status": "label-source",
         "checked": "2026-06-18"
       },
@@ -2965,13 +2975,13 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Redimension Label",
-        "url": "https://redimension.tech",
+        "url": "https://redimension.tech/",
         "status": "label-source",
         "checked": "2026-06-18"
       },
       {
         "label": "Drumcode Official",
-        "url": "https://drumcode.se",
+        "url": "https://drumcode.se/",
         "status": "label-source",
         "checked": "2026-06-18"
       },
@@ -3006,7 +3016,7 @@ window.DJ_ITINERARY_DATA = {
       },
       {
         "label": "LocalHub BYYB Radio wk.100 program",
-        "url": "https://localhub.to/shanghai/venue/byyb-radio/?lang=en",
+        "url": "https://localhub.to/shanghai/venue/byyb-radio?lang=en",
         "status": "radio-context",
         "checked": "2026-06-14"
       }
@@ -3146,7 +3156,8 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai Abyss venue context",
         "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
         "status": "venue-context",
-        "checked": "2026-06-15"
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ]
   },
@@ -3172,7 +3183,7 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Outworld Label",
-        "url": "https://outworld.berlin",
+        "url": "https://outworld.berlin/",
         "status": "label-source",
         "checked": "2026-06-17"
       },
@@ -3241,7 +3252,7 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Kompakt Label",
-        "url": "https://kompakt.fm",
+        "url": "https://kompakt.fm/",
         "status": "label-source",
         "checked": "2026-06-18"
       },
@@ -3288,7 +3299,8 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai Abyss venue context",
         "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
         "status": "venue-context",
-        "checked": "2026-06-15"
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ]
   },
@@ -3327,7 +3339,8 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai Abyss venue context",
         "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
         "status": "venue-context",
-        "checked": "2026-06-15"
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ]
   },
@@ -3355,7 +3368,7 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Figure Label",
-        "url": "https://www.figure-lenfaki.com",
+        "url": "https://www.figure-lenfaki.com/",
         "status": "label-source",
         "checked": "2026-06-18"
       },
@@ -3424,7 +3437,7 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "We Are The Brave Label",
-        "url": "https://wearethebrave.co.uk",
+        "url": "https://wearethebrave.co.uk/",
         "status": "label-source",
         "checked": "2026-06-17"
       },
@@ -3508,7 +3521,8 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai Abyss venue context",
         "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
         "status": "venue-context",
-        "checked": "2026-06-15"
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ]
   },
@@ -3656,13 +3670,13 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Ostgut Ton Label Family",
-        "url": "https://ostgut-ton.kompakt.fm",
+        "url": "https://ostgut-ton.kompakt.fm/",
         "status": "label-source",
         "checked": "2026-06-18"
       },
       {
         "label": "Berghain Official",
-        "url": "https://berghain.de",
+        "url": "https://berghain.de/",
         "status": "venue-source",
         "checked": "2026-06-18"
       },
@@ -3728,7 +3742,7 @@ window.DJ_ITINERARY_DATA = {
       },
       {
         "label": "Salon zur Wilden Renate / Savour the Moment",
-        "url": "https://www.salonzurwildenrenate.de",
+        "url": "https://www.salonzurwildenrenate.de/",
         "status": "venue-source",
         "checked": "2026-06-17"
       }
@@ -3869,13 +3883,13 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Afterlife Records",
-        "url": "https://afterlife.live",
+        "url": "https://afterlife.live/",
         "status": "label-source",
         "checked": "2026-06-18"
       },
       {
         "label": "Life and Death Label",
-        "url": "https://life-and-death.net",
+        "url": "https://life-and-death.net/",
         "status": "label-source",
         "checked": "2026-06-18"
       },
@@ -3937,7 +3951,7 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Siona Records",
-        "url": "https://sionatv.com",
+        "url": "https://sionatv.com/",
         "status": "label-source",
         "checked": "2026-06-17"
       },
@@ -4043,7 +4057,7 @@ window.DJ_ITINERARY_DATA = {
       },
       {
         "label": "Insomniac MRD artist page",
-        "url": "https://www.insomniac.com/music/artists/mrd/",
+        "url": "https://www.insomniac.com/music/artists/mrd",
         "status": "artist-profile",
         "checked": "2026-06-14"
       }
@@ -4075,7 +4089,7 @@ window.DJ_ITINERARY_DATA = {
       },
       {
         "label": "LocalHub BYYB onefortyasia radio takeover",
-        "url": "https://localhub.to/shanghai/venue/byyb-radio/?lang=en",
+        "url": "https://localhub.to/shanghai/venue/byyb-radio?lang=en",
         "status": "radio-context",
         "checked": "2026-06-14"
       }
@@ -4099,7 +4113,7 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "LocalHub Abyss Shanghai event history",
-        "url": "https://localhub.to/shanghai/venue/abyss-shanghai/?lang=en",
+        "url": "https://localhub.to/shanghai/venue/abyss-shanghai?lang=en",
         "status": "venue-context",
         "checked": "2026-06-14"
       },
@@ -4190,7 +4204,7 @@ window.DJ_ITINERARY_DATA = {
       },
       {
         "label": "Insane Raves / Sram Records context",
-        "url": "https://sramrecords.bandcamp.com",
+        "url": "https://sramrecords.bandcamp.com/",
         "status": "label-source",
         "checked": "2026-06-17"
       }
@@ -4251,7 +4265,7 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Trip Recordings",
-        "url": "https://www.triprecordings.net",
+        "url": "https://www.triprecordings.net/",
         "status": "label-source",
         "checked": "2026-06-17"
       },
@@ -4298,14 +4312,15 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai Abyss venue context",
         "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
         "status": "venue-context",
-        "checked": "2026-06-15"
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ]
   },
   "njelic": {
     "slug": "njelic",
     "name": "NJELIC",
-    "trackedAt": "2026-06-17",
+    "trackedAt": "2026-06-18",
     "checkedByTimezone": "Asia/Shanghai",
     "scope": "Worldwide itinerary rows generated from scraped and curated event data",
     "imageTheme": "ember",
@@ -4321,7 +4336,7 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai event description",
         "url": "https://www.smartshanghai.com/event/a-full-afrowave-takeover-at-la-burg",
         "status": "watchlist",
-        "checked": "2026-06-17"
+        "checked": "2026-06-18"
       }
     ],
     "itinerary": [
@@ -4387,7 +4402,8 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai Abyss venue context",
         "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
         "status": "venue-context",
-        "checked": "2026-06-15"
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ]
   },
@@ -4427,7 +4443,8 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai Abyss venue context",
         "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
         "status": "venue-context",
-        "checked": "2026-06-15"
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ]
   },
@@ -4473,7 +4490,8 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai Abyss venue context",
         "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
         "status": "venue-context",
-        "checked": "2026-06-15"
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ],
     "aliases": [
@@ -4503,13 +4521,13 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Second State Label",
-        "url": "https://second-state.kompakt.fm",
+        "url": "https://second-state.kompakt.fm/",
         "status": "label-source",
         "checked": "2026-06-18"
       },
       {
         "label": "Drumcode Official",
-        "url": "https://drumcode.se",
+        "url": "https://drumcode.se/",
         "status": "label-source",
         "checked": "2026-06-18"
       },
@@ -4543,7 +4561,8 @@ window.DJ_ITINERARY_DATA = {
         "label": "byyb.radio PASHRAWBOI set",
         "url": "https://byyb.live/set/pashrawboi-chaos-radio-radio-takeover-2026-06-06",
         "status": "access-limited-secondary",
-        "checked": "2026-06-14"
+        "checked": "2026-06-14",
+        "accessNote": "Browser/Chrome check on 2026-06-14 returned Access denied; keep as historical/search-result context only and do not use it as event confirmation unless visible access is restored."
       },
       {
         "label": "RA Slav Club lineup",
@@ -4567,7 +4586,8 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai Abyss venue context",
         "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
         "status": "venue-context",
-        "checked": "2026-06-15"
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ],
     "itinerary": [],
@@ -4597,7 +4617,7 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Gudu Records",
-        "url": "https://gudurecords.com",
+        "url": "https://gudurecords.com/",
         "status": "label-source",
         "checked": "2026-06-17"
       },
@@ -4671,7 +4691,8 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai Abyss venue context",
         "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
         "status": "venue-context",
-        "checked": "2026-06-15"
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ]
   },
@@ -4891,13 +4912,13 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Liminal Dreams Instagram event/profile search preview",
-        "url": "https://www.instagram.com/p/DZXV8WINwkB/",
+        "url": "https://www.instagram.com/p/DZXV8WINwkB",
         "status": "social-index-profile-context",
         "checked": "2026-06-15"
       },
       {
         "label": "Liminal Dreams x Wigwam lineup/time search preview",
-        "url": "https://www.instagram.com/p/DZFFVIPE8VW/",
+        "url": "https://www.instagram.com/p/DZFFVIPE8VW",
         "status": "social-index-lineup-context",
         "checked": "2026-06-15"
       },
@@ -4966,7 +4987,7 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Filth on Acid Label",
-        "url": "https://filthonacid.com",
+        "url": "https://filthonacid.com/",
         "status": "label-source",
         "checked": "2026-06-17"
       },
@@ -5002,7 +5023,7 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Richie Hawtin Official",
-        "url": "https://richiehawtin.com",
+        "url": "https://richiehawtin.com/",
         "status": "artist-official",
         "checked": "2026-06-17"
       },
@@ -5037,7 +5058,7 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Dystopian Label",
-        "url": "https://dystopian.berlin",
+        "url": "https://dystopian.berlin/",
         "status": "label-source",
         "checked": "2026-06-18"
       },
@@ -5145,7 +5166,7 @@ window.DJ_ITINERARY_DATA = {
       },
       {
         "label": "LocalHub BYYB onefortyasia radio takeover",
-        "url": "https://localhub.to/shanghai/venue/byyb-radio/?lang=en",
+        "url": "https://localhub.to/shanghai/venue/byyb-radio?lang=en",
         "status": "radio-context",
         "checked": "2026-06-14"
       }
@@ -5180,7 +5201,7 @@ window.DJ_ITINERARY_DATA = {
       },
       {
         "label": "Hard Techno World Community",
-        "url": "https://hardtechno.world",
+        "url": "https://hardtechno.world/",
         "status": "community-source",
         "checked": "2026-06-17"
       }
@@ -5222,7 +5243,7 @@ window.DJ_ITINERARY_DATA = {
       },
       {
         "label": "jay_sarayu Instagram Youshan pre-party index preview",
-        "url": "https://www.instagram.com/p/DZB981GAW_g/",
+        "url": "https://www.instagram.com/p/DZB981GAW_g",
         "status": "social-index-lead",
         "checked": "2026-06-14"
       }
@@ -5323,7 +5344,7 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Dystopian Label",
-        "url": "https://dystopian.kompakt.fm",
+        "url": "https://dystopian.kompakt.fm/",
         "status": "label-source",
         "checked": "2026-06-18"
       },
@@ -5370,7 +5391,8 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai Abyss venue context",
         "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
         "status": "venue-context",
-        "checked": "2026-06-15"
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ]
   },
@@ -5409,7 +5431,8 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai Abyss venue context",
         "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
         "status": "venue-context",
-        "checked": "2026-06-15"
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ]
   },
@@ -5464,7 +5487,7 @@ window.DJ_ITINERARY_DATA = {
       },
       {
         "label": "LocalHub BYYB onefortyasia radio takeover",
-        "url": "https://localhub.to/shanghai/venue/byyb-radio/?lang=en",
+        "url": "https://localhub.to/shanghai/venue/byyb-radio?lang=en",
         "status": "radio-context",
         "checked": "2026-06-14"
       }
@@ -5626,7 +5649,7 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Diynamic Music Label",
-        "url": "https://diynamic.com",
+        "url": "https://diynamic.com/",
         "status": "label-source",
         "checked": "2026-06-18"
       },
@@ -5663,7 +5686,7 @@ window.DJ_ITINERARY_DATA = {
       },
       {
         "label": "LocalHub BYYB onefortyasia radio takeover",
-        "url": "https://localhub.to/shanghai/venue/byyb-radio/?lang=en",
+        "url": "https://localhub.to/shanghai/venue/byyb-radio?lang=en",
         "status": "radio-context",
         "checked": "2026-06-14"
       }
@@ -5904,7 +5927,7 @@ window.DJ_ITINERARY_DATA = {
     "sources": [
       {
         "label": "Afterlife Records",
-        "url": "https://afterlife.live",
+        "url": "https://afterlife.live/",
         "status": "label-source",
         "checked": "2026-06-18"
       },
@@ -6129,7 +6152,7 @@ window.DJ_ITINERARY_DATA = {
       },
       {
         "label": "Liminal Dreams x Wigwam lineup/time search preview",
-        "url": "https://www.instagram.com/p/DZFFVIPE8VW/",
+        "url": "https://www.instagram.com/p/DZFFVIPE8VW",
         "status": "social-index-lineup-context",
         "checked": "2026-06-15"
       },
@@ -6177,7 +6200,7 @@ window.DJ_ITINERARY_DATA = {
       },
       {
         "label": "BAIHUI The Roof Radio w/ TOYN",
-        "url": "https://baihui.live/shows/the-roof-radio-w-toyn-25-02-24/en/",
+        "url": "https://baihui.live/shows/the-roof-radio-w-toyn-25-02-24/en",
         "status": "radio-context",
         "checked": "2026-06-15"
       },
@@ -6189,7 +6212,7 @@ window.DJ_ITINERARY_DATA = {
       },
       {
         "label": "BAIHUI The Roof Radio host index",
-        "url": "https://baihui.live/hosts/the-roof-radio/en/",
+        "url": "https://baihui.live/hosts/the-roof-radio/en",
         "status": "radio-context",
         "checked": "2026-06-15"
       }
@@ -6257,7 +6280,8 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai Abyss venue context",
         "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
         "status": "venue-context",
-        "checked": "2026-06-15"
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ]
   },
@@ -6441,7 +6465,8 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai Wigwam venue context",
         "url": "https://www.smartshanghai.com/venue/31681/wigwam_cafe",
         "status": "venue-context",
-        "checked": "2026-06-15"
+        "checked": "2026-06-15",
+        "note": "Venue context only; Wigwam screenshots remain the source for wheon's June 19 booking and profile text."
       }
     ]
   },
@@ -6564,7 +6589,8 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai Abyss venue context",
         "url": "https://www.smartshanghai.com/venue/22902/downtownhall_151_julu_lu",
         "status": "venue-context",
-        "checked": "2026-06-15"
+        "checked": "2026-06-15",
+        "note": "Venue context only; Abyss/Yuyuan screenshots remain the source for current event roles."
       }
     ]
   },
