@@ -1622,6 +1622,118 @@
       return "past";
     }
 
+    function sourceStatusWeight(status) {
+      if (status === "official") return 16;
+      if (status === "watchlist") return 6;
+      return 10;
+    }
+
+    function decisionTagWeight(tag) {
+      const normalized = String(tag || "").toLowerCase();
+      if (normalized === "strong techno fit") return 18;
+      if (normalized === "trusted source") return 10;
+      if (normalized === "high intensity") return 7;
+      if (normalized === "late room") return 6;
+      if (normalized === "listening/live angle") return 5;
+      if (normalized === "warehouse signal") return 5;
+      if (normalized === "ticket path") return 4;
+      if (normalized === "techno-adjacent") return 3;
+      if (normalized === "date route") return 2;
+      return 0;
+    }
+
+    function soundRelevanceWeight(tag) {
+      const normalized = String(tag || "").toLowerCase();
+      const weights = {
+        "hard-techno": 18,
+        industrial: 16,
+        techno: 15,
+        acid: 14,
+        hypnotic: 12,
+        "trance-adjacent": 11,
+        "bass-hybrid": 10,
+        bass: 10,
+        experimental: 9,
+        "live-av": 8,
+        live: 8,
+        warehouse: 8,
+        minimal: 7,
+        groovy: 6,
+        house: 5,
+        melodic: 5,
+        rooftop: 3,
+        date: 3
+      };
+      return weights[normalized] || 0;
+    }
+
+    function strongestSoundRelevance(profile) {
+      return Math.max(0, ...profile.soundFamilies.map(soundRelevanceWeight));
+    }
+
+    function fallbackOnlyProfile(profile) {
+      return profile.appearances.length > 0
+        && profile.appearances.every(app => /lineup detail was limited/i.test(app.note || ""));
+    }
+
+    function firstLocalDate(profile, statuses) {
+      const dates = profile.appearances
+        .filter(app => statuses.includes(app.status))
+        .map(app => app.sortDate)
+        .filter(Boolean)
+        .sort();
+      return dates[0] || "";
+    }
+
+    function latestLocalDate(profile) {
+      return profile.appearances.map(app => app.sortDate).filter(Boolean).sort().pop() || "";
+    }
+
+    function profileRelevanceScore(profile) {
+      const localUpcoming = profile.upcomingCount || 0;
+      const localWatch = profile.watchCount || 0;
+      const activeLocalCount = localUpcoming + localWatch;
+      const sourceScore = Math.min(profile.sourceCount || 0, 6) * 3
+        + Math.min(profile.appearances.reduce((total, app) => total + sourceStatusWeight(app.sourceStatus), 0), 42);
+      const decisionScore = Math.min(profile.appearances.flatMap(app => app.decisionTags || []).reduce((total, tag) => total + decisionTagWeight(tag), 0), 55);
+      const localCoverageScore = Math.min(profile.appearances.length, 6) * 10
+        + Math.min(profile.venues.length, 4) * 4
+        + Math.min(profile.months.length, 4) * 3;
+      const setTimeScore = Math.min(profile.exactSlotCount, 5) * 12 + Math.min(profile.estimatedSlotCount, 5) * 4;
+      const globalSupportScore = Math.min(profile.globalFutureCount || 0, 2) * 4 + Math.min(profile.globalItineraryCount || 0, 4) * 2;
+      const pastLocalScore = activeLocalCount ? 0 : Math.min(profile.pastCount || 0, 4) * 3;
+      const trackedScore = profile.tracked ? 12 : 0;
+      const fallbackPenalty = fallbackOnlyProfile(profile) ? 90 : 0;
+
+      return localUpcoming * 180
+        + localWatch * 115
+        + localCoverageScore
+        + setTimeScore
+        + sourceScore
+        + decisionScore
+        + strongestSoundRelevance(profile)
+        + trackedScore
+        + globalSupportScore
+        + pastLocalScore
+        - (activeLocalCount ? 0 : 25)
+        - fallbackPenalty;
+    }
+
+    function compareProfileRelevance(a, b) {
+      const relevanceSort = (b.relevanceScore || 0) - (a.relevanceScore || 0);
+      if (relevanceSort) return relevanceSort;
+
+      const aNext = firstLocalDate(a, ["upcoming", "watch"]);
+      const bNext = firstLocalDate(b, ["upcoming", "watch"]);
+      if (aNext || bNext) {
+        return String(aNext || "9999-12-31").localeCompare(String(bNext || "9999-12-31"));
+      }
+
+      const latestSort = String(latestLocalDate(b)).localeCompare(String(latestLocalDate(a)));
+      if (latestSort) return latestSort;
+      return a.name.localeCompare(b.name);
+    }
+
     function buildProfiles(events) {
       const map = new Map();
       function profileFor(name, event = {}) {
@@ -1764,13 +1876,9 @@
           profile.appearances.map(app => [app.title, app.venue, app.genre, app.soundTags.join(" "), app.date].join(" ")).join(" "),
           globalRows.map(row => [row.title, row.city, row.country, row.venue, row.date].join(" ")).join(" ")
         ].join(" ").toLowerCase();
+        profile.relevanceScore = profileRelevanceScore(profile);
         return profile;
-      }).sort((a, b) => {
-        const scoreA = a.itineraryFutureCount * 30 + a.watchCount * 12 + a.globalItineraryCount * 10 + a.exactSlotCount * 8 + a.estimatedSlotCount * 3 + a.appearances.length;
-        const scoreB = b.itineraryFutureCount * 30 + b.watchCount * 12 + b.globalItineraryCount * 10 + b.exactSlotCount * 8 + b.estimatedSlotCount * 3 + b.appearances.length;
-        if (scoreA !== scoreB) return scoreB - scoreA;
-        return a.name.localeCompare(b.name);
-      });
+      }).sort(compareProfileRelevance);
     }
 
     function filteredProfiles() {
