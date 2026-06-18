@@ -446,10 +446,10 @@
     };
   }
 
-  function renderModeChoices() {
+  function renderModeChoices(initialMode) {
     return MODE_ROWS.map(([value, label, helper], index) => `
       <label class="contribution-mode-chip">
-        <input type="radio" name="contributionMode" value="${escapeHtml(value)}" ${index === 0 ? "checked" : ""}>
+        <input type="radio" name="contributionMode" value="${escapeHtml(value)}" ${value === initialMode || (!initialMode && index === 0) ? "checked" : ""}>
         <span>
           <b>${escapeHtml(label)}</b>
           <em>${escapeHtml(helper)}</em>
@@ -470,10 +470,10 @@
     `).join("");
   }
 
-  function renderTargetKindChoices() {
+  function renderTargetKindChoices(initialKind) {
     return TARGET_ROWS.map(([value, label], index) => `
       <label class="contribution-target-kind">
-        <input type="radio" name="targetKindChoice" value="${escapeHtml(value)}" ${index === 0 ? "checked" : ""}>
+        <input type="radio" name="targetKindChoice" value="${escapeHtml(value)}" ${value === initialKind || (!initialKind && index === 0) ? "checked" : ""}>
         <span>${escapeHtml(label)}</span>
       </label>
     `).join("");
@@ -485,12 +485,12 @@
     `).join("");
   }
 
-  function renderForm(mount) {
+  function renderForm(mount, params = {}) {
     mount.innerHTML = `
       <form class="contribution-form" data-community-contribution-form>
         <fieldset class="contribution-mode-grid">
           <legend>Contribution mode</legend>
-          ${renderModeChoices()}
+          ${renderModeChoices(params.mode)}
         </fieldset>
         <fieldset class="contribution-type-grid">
           <legend>Contribution type</legend>
@@ -503,7 +503,7 @@
           </div>
           <fieldset class="contribution-target-kind-grid">
             <legend>Existing entry type</legend>
-            ${renderTargetKindChoices()}
+            ${renderTargetKindChoices(params.targetKind)}
           </fieldset>
           <div class="contribution-target-tools">
             <label class="contribution-field">
@@ -708,12 +708,32 @@
   }
 
   function bind(mount, win) {
-    renderForm(mount);
+    const urlParams = win.location ? new URLSearchParams(win.location.search) : new URLSearchParams();
+    const params = {
+      mode: urlParams.get("mode"),
+      targetKind: urlParams.get("targetKind"),
+      targetId: urlParams.get("targetId"),
+      targetLabel: urlParams.get("targetLabel"),
+    };
+    renderForm(mount, params);
     renderLocalQueue(mount, win);
     const form = mount.querySelector("[data-community-contribution-form]");
     const status = mount.querySelector("[data-community-contribution-status]");
     const exportButton = mount.querySelector("[data-community-export]");
     const syncTargetControls = bindTargetControls(form, win);
+    
+    if (params.mode === "existing" && params.targetId && params.targetLabel) {
+      const select = form.querySelector("[data-community-target-select]");
+      const optionValue = \`\${params.targetKind || "event"}:\${params.targetId}:\${params.targetLabel}\`;
+      if (select && !select.querySelector(\`option[value="\${escapeHtml(optionValue)}"]\`)) {
+        select.insertAdjacentHTML('afterbegin', \`<option value="\${escapeHtml(optionValue)}">\${escapeHtml(params.targetLabel)}</option>\`);
+      }
+      if (select) {
+        select.value = optionValue;
+        select.dispatchEvent(new Event("change"));
+      }
+    }
+    
     const access = contributionAccessState({ win, supabaseGlobal: win && win.supabase });
     status.innerHTML = `<strong>${escapeHtml(access.label)}.</strong> Contributions are saved locally before remote review.`;
 

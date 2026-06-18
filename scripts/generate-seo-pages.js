@@ -175,7 +175,7 @@ function renderEventPage(event) {
                 ${showSourceAction ? `<a class="button secondary" href="${escapeAttr(sourceActionHref)}" target="_blank" rel="noopener noreferrer">Source</a>` : ""}
                 ${festival ? "" : `<a class="button secondary live-room-return" href="${escapeAttr(liveRoomHref)}">Tonight room</a>`}
                 <a class="button secondary" href="../index.html">Calendar</a>
-                <a class="button secondary" href="../contribute.html">Event not accurate?</a>
+                <a class="button secondary" href="../contribute.html?mode=existing&targetKind=event&targetId=${encodeURIComponent(event.id)}&targetLabel=${encodeURIComponent(event.title)}">Event not accurate?</a>
               </div>
             </div>
             <figure>
