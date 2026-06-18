@@ -886,3 +886,27 @@ Derived-file regeneration and verification:
 - `node scripts/check.js`: passed after poster-archive regeneration.
 - `node scripts/audit-events.js`: still fails on stale current/future source dates concentrated around Jun 14-15 checks, including `wigwam-weekly-listening-xiaolaba`, `cybionte-solo-ykk-heshang`, `heim-long-wave`, `photocult-mask-desire-auction`, `mrd`, `nikita-zabelin-potent`, `onefortyasia-mungk-simbie`, `atm-leo-monira`, `enchanted-night-the-nest`, `neon-jungle-tom-kynd`, `sciahri-potent`, `friendsstandout`, `cyber-buddha`, `dark-room`, `botox-fatale`, `anika-kunst`, `truth-lies`, `youshan-warmup`, `shenwave-music-festival-2026`, `west-bund-dream-center-waterfront-music-festival-2026`, `shaun-soomro-dj-serang`, and `the-magic-of-tomorrowland-shanghai-2026-watch`.
 - `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json`: still reports pre-existing must-fix findings, dominated by missing `source` URLs on several rows and local `/_vercel/insights/script.js` link findings across generated pages.
+
+## 2026-06-18 Same-Day Tonight Source Update
+
+Ran a same-day public source refresh for the Jun 18 Shanghai event set using RA, SmartShanghai, and publicly indexed official social posts/profiles. The pass focused on correcting tonight's canonical records instead of doing a broad discovery crawl.
+
+Canonical updates:
+
+- Corrected `minuit-mirror-concept` from the live RA event page: price is 100 RMB and lineup is SLVN, Olivier K, Olivier G, Chabuduo, plus the live camera/VJing concept. Removed stale Mofy/Yoshua MIRROR role profiles from the tracked DJ profile seed so regenerated data follows the current RA lineup.
+- Promoted `heim-long-wave` with SmartShanghai details plus Heim social evidence: 22:00-05:00, 88 RMB presale / 108 RMB door, Jing'an Changle Lu address, and Elevator reunion lineup context. The duplicate SmartShanghai watch-only generated event was removed from derived data.
+- Updated `illum-gravity-stateofff` from SmartShanghai plus ILLUM screenshot evidence: current title, 80 RMB early bird / 100 RMB presale / 120 RMB door pricing, and lineup State OFFF / Zean / Qin_niQ / GUZ / Xingli Huang.
+- Updated `cybionte-solo-ykk-heshang` with POTENT public social-index evidence: support lineup Fat-K / Tayzo / Yomi and a documented time conflict between organizer text and RA's 23:59 listing.
+- Added official-public-index support to `photocult-mask-desire-auction` while keeping RA as the primary source.
+- Added `girls-night-out-dome` as a low-fit watch entry for The Dome's Thursday series through Jun 25, sourced from SmartShanghai.
+
+Derived regeneration:
+
+- `SCRAPE_MAX_DETAIL_PAGES=0 SCRAPE_FETCH_TIMEOUT_MS=12000 SCRAPE_X_FETCH_TIMEOUT_MS=6000 node scripts/scrape-events.js`: wrote 112 events, 92 curated updates, and 40 tracked DJ itinerary rows.
+- `node scripts/generate-seo-pages.js`: regenerated 112 event detail pages and `sitemap.xml`.
+- `node scripts/optimize-posters.js --archive --all --allow-larger`: refreshed `data/poster-archive.json` with 75 poster records; no poster binaries changed.
+
+Validation:
+
+- `node scripts/check.js`: passed, 4018 local links across 137 HTML/CSS files and 46 inline scripts.
+- `node scripts/audit-events.js`: still fails on pre-existing stale-source audit debt across older Jun 14-16 checked future events. Tonight's edited canonical records are current, but secondary venue/profile sources such as Heim and ILLUM venue pages still inherit older source dates.

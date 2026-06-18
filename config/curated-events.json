@@ -899,6 +899,68 @@
       "posterUrl": "assets/posters/sunset-sundays-dome.jpg"
     },
     {
+      "id": "girls-night-out-dome",
+      "month": "Jun",
+      "sortDate": "2026-06-18",
+      "date": "Thursdays to Jun 25",
+      "time": "21:30-01:30",
+      "title": "Girls Night Out",
+      "venue": "The Dome",
+      "district": "Huangpu",
+      "vibe": [
+        "date"
+      ],
+      "genre": "house, disco, feel-good classics, rooftop lounge",
+      "confidence": "Watch",
+      "status": "watch",
+      "price": "Not listed",
+      "age": "Not listed",
+      "source": "https://www.smartshanghai.com/event/girls-night-out-skyline-dome-at-the-dome",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "rose",
+      "description": "Low-fit Thursday rooftop social lead at The Dome: house, disco, feel-good classics, skyline views, and complimentary drinks for ladies from 22:00 to midnight. Useful as a date-route nightlife option, not as a techno recommendation.",
+      "sourceStatus": "watchlist",
+      "address": "5/F, 1 Yan'an Dong Lu, near Zhongshan Dong Yi Lu, Huangpu District",
+      "organizer": "The Dome",
+      "detailsUrl": "https://www.smartshanghai.com/event/girls-night-out-skyline-dome-at-the-dome",
+      "ticketUrl": "https://www.smartshanghai.com/event/girls-night-out-skyline-dome-at-the-dome",
+      "lineup": [
+        {
+          "name": "DJ Rain",
+          "note": "SmartShanghai lists DJ Rain for the Thursday Girls Night Out series."
+        },
+        {
+          "name": "DJ Stefano",
+          "note": "SmartShanghai lists DJ Stefano for the Thursday Girls Night Out series."
+        }
+      ],
+      "recurrence": {
+        "frequency": "weekly",
+        "day": "Thursday",
+        "until": "2026-06-25",
+        "source": "SmartShanghai"
+      },
+      "posterEvidence": {
+        "type": "event image",
+        "source": "SmartShanghai event page",
+        "url": "https://www.smartshanghai.com/event/girls-night-out-skyline-dome-at-the-dome",
+        "status": "Event image is visible on the detail page."
+      },
+      "ticketStatus": "SmartShanghai says tickets are currently not available on SmartShanghai.",
+      "addedAt": "2026-06-18",
+      "lastChecked": "2026-06-18",
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/girls-night-out-skyline-dome-at-the-dome",
+          "status": "watchlist",
+          "lastChecked": "2026-06-18",
+          "verificationNote": "SmartShanghai lists the Thursday series through Jun 25 with 21:30-01:30 hours, The Dome address, DJ Rain and DJ Stefano, and no SmartShanghai ticket inventory."
+        }
+      ],
+      "posterUrl": "assets/posters/girls-night-out-dome-2026-06-18.png"
+    },
+    {
       "id": "alter-pavillon",
       "month": "Jun",
       "sortDate": "2026-06-18",
@@ -995,12 +1057,12 @@
       "sourceLabel": "Resident Advisor",
       "imageTheme": "acid",
       "description": "REACTOR Shanghai hosts PHOTOCULT's two-room Mask. Desire. Auction program at Reactor Shanghai, with DOME and POCKET room DJ sets plus desire-auction interludes.",
-      "sourceStatus": "secondary",
+      "sourceStatus": "trusted-ra-and-official-instagram-lead",
       "address": "D-L1-03, B1, C-PARK, No. 638 Zhaohua Road, Changning District",
       "organizer": "REACTOR Shanghai",
       "detailsUrl": "https://ra.co/events/2464178",
       "ticketUrl": "https://ra.co/events/2464178",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-18",
       "lineup": [
         {
           "name": "Josie",
@@ -1098,17 +1160,24 @@
           "assets/posters/photocult-mask-desire-auction.png"
         ]
       },
-      "ticketStatus": "RA lists cost at 168 RMB and minimum age 18+.",
+      "ticketStatus": "RA lists cost at 168 RMB and minimum age 18+. A June 18 public Instagram index from PHOTOCULT/REACTOR reposts the same Mask. Desire. Auction title, date, 22:00-04:00 window, dress-code cue, and DOME/POCKET room lineup.",
       "recommendationReason": "Recommended because RA publishes the date, venue, two-room lineup, exact running order, cost, age rule, and flyer evidence for a Reactor/PHOTOCULT techno program.",
       "bestFor": "Best for readers who want a source-backed local techno room with published set times rather than a loose listing lead.",
-      "verifyBeforeGoing": "Reopen the RA event page before going for same-day ticket state, any room changes, and door policy.",
-      "sourceConfidence": "High-confidence public nightlife source: Resident Advisor carries the event detail page, lineup, room split, set times, cost, age rule, and flyer.",
+      "verifyBeforeGoing": "Reopen the RA event page or PHOTOCULT/REACTOR Instagram before going for same-day ticket state, any room changes, and door policy.",
+      "sourceConfidence": "High-confidence public nightlife source: Resident Advisor carries the event detail page, lineup, room split, set times, cost, age rule, and flyer. Same-day PHOTOCULT/REACTOR Instagram indexing supports the event still being active.",
       "sources": [
         {
           "label": "Resident Advisor",
           "url": "https://ra.co/events/2464178",
-          "status": "secondary",
-          "lastChecked": "2026-06-14"
+          "status": "trusted-ra",
+          "lastChecked": "2026-06-18"
+        },
+        {
+          "label": "PHOTOCULT Instagram public index",
+          "url": "https://www.instagram.com/p/DZXg0jdnC-3/",
+          "status": "official-social-lead",
+          "lastChecked": "2026-06-18",
+          "verificationNote": "Public search index text from PHOTOCULT/REACTOR on June 18 repeats Mask. Desire. Auction, 22:00-04:00, dress-code cue, and the DOME/POCKET lineup; platform-native visual check is still useful for final door details."
         }
       ],
       "posterUrl": "assets/posters/photocult-mask-desire-auction.png"
@@ -2907,7 +2976,7 @@
       "month": "Jun",
       "sortDate": "2026-06-18",
       "date": "Jun 18",
-      "time": "23:59-06:00",
+      "time": "22:30-late / RA 23:59-06:00",
       "title": "Cybionte with Solo, YKK, & Heshang",
       "venue": "POTENT",
       "district": "Huangpu",
@@ -2923,13 +2992,13 @@
       "source": "https://ra.co/events/2467513",
       "sourceLabel": "Resident Advisor",
       "imageTheme": "cyan",
-      "description": "POTENT hosts Cybionte with Solo, YKK, and Heshang in a late house/club lane. RA confirms the late slot, lineup, cost, and 18+ rule.",
-      "sourceStatus": "trusted-ra",
+      "description": "POTENT hosts Cybionte with Solo, YKK, and Heshang in a late house/club lane. RA confirms the 23:59-06:00 ticket listing, 100 RMB cost, and 18+ rule; a same-day official Instagram index from POTENT points to a 22:30-late start and a second POTENT-room support lineup.",
+      "sourceStatus": "trusted-ra-and-official-social-lead",
       "address": "L3 TX Huaihai, 523 Huaihai Middle Road, Shanghai, China",
       "organizer": "POTENT",
       "detailsUrl": "https://ra.co/events/2467513",
       "ticketUrl": "https://ra.co/events/2467513",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-18",
       "lineup": [
         {
           "name": "Solo",
@@ -2942,19 +3011,38 @@
         {
           "name": "Heshang",
           "note": "RA lists Heshang on the Cybionte lineup."
+        },
+        {
+          "name": "Fat-K",
+          "note": "POTENT's public Instagram index snippet lists Fat-K in Room POTENT; verify platform-native poster before treating this as final running order."
+        },
+        {
+          "name": "Tayzo",
+          "note": "POTENT's public Instagram index snippet lists Tayzo in Room POTENT; verify platform-native poster before treating this as final running order."
+        },
+        {
+          "name": "Yomi",
+          "note": "POTENT's public Instagram index snippet lists Yomi in Room POTENT; verify platform-native poster before treating this as final running order."
         }
       ],
-      "ticketStatus": "RA lists cost at 100 RMB and minimum age 18+.",
+      "ticketStatus": "RA lists cost at 100 RMB and minimum age 18+. POTENT's same-day Instagram public index says 2026-06-18 Thu, 22:30-late, with Room TENT and Room POTENT split; use the official account for final door time.",
       "recommendationReason": "Included for complete RA coverage; a late POTENT house/club option with clear lineup but softer techno pressure.",
       "bestFor": "Late-room readers open to house and club selections at POTENT.",
-      "verifyBeforeGoing": "Confirm live ticket state and door policy through RA or POTENT before going.",
-      "sourceConfidence": "RA coverage: date, time, venue, lineup, genre, cost, age, and flyer are visible on Resident Advisor. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
+      "verifyBeforeGoing": "Confirm live ticket state, final start time, room split, and door policy through RA or POTENT before going.",
+      "sourceConfidence": "RA coverage confirms date, 23:59-06:00 listing, venue, core lineup, genre, cost, age, and flyer. POTENT's same-day Instagram public index suggests a broader two-room plan and earlier 22:30-late start, so preserve the conflict until the official poster is visually rechecked.",
       "sources": [
         {
           "label": "Resident Advisor",
           "url": "https://ra.co/events/2467513",
           "status": "trusted-ra",
-          "lastChecked": "2026-06-14"
+          "lastChecked": "2026-06-18"
+        },
+        {
+          "label": "POTENT Instagram public index",
+          "url": "https://www.instagram.com/potent_club/",
+          "status": "official-social-lead",
+          "lastChecked": "2026-06-18",
+          "verificationNote": "Public profile/search index text for POTENT shows 6.18 CYBIONTE, 2026.6.18 Thu, 22:30-late, Room TENT Solo / YKK / Heshang, and Room POTENT Fat-K / Tayzo / Yomi. Platform-native visual confirmation is still needed."
         }
       ],
       "posterUrl": "assets/posters/cybionte-solo-ykk-heshang.jpg",
@@ -4597,10 +4685,10 @@
       "month": "Jun",
       "sortDate": "2026-06-18",
       "date": "Jun 18",
-      "time": "22:00-late",
+      "time": "22:00-05:00",
       "title": "LONG WAVE: Dragon Boat Festival Special",
       "venue": "Heim",
-      "district": "Huangpu",
+      "district": "Jing'an",
       "vibe": [
         "underground",
         "date"
@@ -4608,17 +4696,19 @@
       "genre": "house, club, electronic",
       "confidence": "Medium",
       "status": "upcoming",
-      "price": "Check Heim",
+      "price": "88 RMB presale / 108 RMB door",
       "age": "Check venue",
-      "source": "assets/posters/heim-long-wave.jpg",
-      "sourceLabel": "Heim Shanghai WeChat poster/article screenshots",
+      "source": "https://www.smartshanghai.com/event/long-wave-house-techno-disco-club-music-2026-06-18",
+      "sourceLabel": "SmartShanghai + Heim screenshots",
       "imageTheme": "cyan",
-      "description": "Heim Thursday house-leaning Dragon Boat Festival special with Golgol, SpaceReturn, Sam Tbd, and Xiaolaba. The Heim article frames it as a looser release before the holiday weekend rather than a heavy-rave route.",
+      "description": "Heim Thursday house-leaning Dragon Boat Festival special and Elevator Club reunion route with Golgol, SpaceReturn, Sam Tbd, and Xiaolaba. SmartShanghai confirms the 22:00-05:00 window and 88 RMB presale / 108 RMB door pricing.",
       "kind": "event",
-      "sourceStatus": "official-social-evidence",
-      "address": "M101 Room, No. 462 Changle Road, Huangpu District, Shanghai",
+      "sourceStatus": "secondary-and-official-social-evidence",
+      "address": "Unit M101, 462 Changle Lu, near Shaanxi Nan Lu, Jing'an District",
       "organizer": "Heim Shanghai",
-      "lastChecked": "2026-06-15",
+      "detailsUrl": "https://www.smartshanghai.com/event/long-wave-house-techno-disco-club-music-2026-06-18",
+      "ticketUrl": "https://www.smartshanghai.com/event/long-wave-house-techno-disco-club-music-2026-06-18",
+      "lastChecked": "2026-06-18",
       "posterUrl": "assets/posters/heim-long-wave.jpg",
       "posterEvidence": {
         "type": "official-flyer-screenshot",
@@ -4631,7 +4721,7 @@
           "assets/posters/heim-june-2026-wechat-article-1.jpg"
         ]
       },
-      "ticketStatus": "Heim WeChat poster and WeChat article screenshots confirm date, 22:00-late start, venue/address, and lineup. Price, ticket route, and age policy were not captured.",
+      "ticketStatus": "SmartShanghai lists 88 RMB presale / 108 RMB door and says tickets are currently not available on SmartShanghai. Heim screenshots confirm date, 22:00-late start, venue/address, and lineup; public Instagram indexing suggests 66 RMB early bird was sold out.",
       "lineup": [
         {
           "name": "Golgol",
@@ -4650,27 +4740,75 @@
           "note": "Heim poster/article text lists Xiaolaba / Xiao Laba for LONG WAVE."
         }
       ],
+      "setTimes": [
+        {
+          "name": "Golgol",
+          "start": "22:00",
+          "end": "23:30",
+          "status": "public-index-snippet",
+          "sourceLabel": "Heim Instagram public index",
+          "source": "https://www.instagram.com/p/DZplwhDmw2f/"
+        },
+        {
+          "name": "SpaceReturn",
+          "start": "23:30",
+          "end": "01:00",
+          "status": "public-index-snippet",
+          "sourceLabel": "Heim Instagram public index",
+          "source": "https://www.instagram.com/p/DZplwhDmw2f/"
+        },
+        {
+          "name": "Sam Tbd",
+          "start": "01:00",
+          "end": "02:30",
+          "status": "public-index-snippet",
+          "sourceLabel": "Heim Instagram public index",
+          "source": "https://www.instagram.com/p/DZplwhDmw2f/"
+        },
+        {
+          "name": "Xiaolaba",
+          "start": "02:30",
+          "end": "late",
+          "status": "public-index-snippet",
+          "sourceLabel": "Heim Instagram public index",
+          "source": "https://www.instagram.com/p/DZplwhDmw2f/"
+        }
+      ],
       "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/long-wave-house-techno-disco-club-music-2026-06-18",
+          "status": "secondary",
+          "lastChecked": "2026-06-18",
+          "verificationNote": "Confirms Today, 10pm-5am, Heim address, 88 RMB presale / 108 RMB door, and the Elevator Club reunion lineup description."
+        },
         {
           "label": "LONG WAVE poster screenshot",
           "url": "assets/posters/heim-long-wave.jpg",
           "status": "official-social-screenshot",
-          "lastChecked": "2026-06-15",
+          "lastChecked": "2026-06-18",
           "verificationNote": "Confirms LONG WAVE title, 2026-06-18 date, 22:00-late time, Heim, lineup, and Changle Road / M101 location."
         },
         {
           "label": "Heim June 2026 monthly schedule screenshot",
           "url": "assets/posters/heim-june-2026-schedule.jpg",
           "status": "official-wechat-screenshot",
-          "lastChecked": "2026-06-15",
+          "lastChecked": "2026-06-18",
           "verificationNote": "Lists LONG WAVE on 06.18 with Golgol, SpaceReturn, Sam Tbd, and Xiaolaba."
         },
         {
           "label": "Heim WeChat article screenshot",
           "url": "assets/posters/heim-june-2026-wechat-article-1.jpg",
           "status": "official-wechat-screenshot",
-          "lastChecked": "2026-06-15",
+          "lastChecked": "2026-06-18",
           "verificationNote": "Describes LONG WAVE as a Dragon Boat Festival opening with pure house rhythm and the listed lineup."
+        },
+        {
+          "label": "Heim Instagram public index",
+          "url": "https://www.instagram.com/p/DZplwhDmw2f/",
+          "status": "official-social-lead",
+          "lastChecked": "2026-06-18",
+          "verificationNote": "Public index text lists 22:00-23:30 Golgol, 23:30-01:00 SpaceReturn, 01:00-02:30 Sam Tbd, 02:30-late Xiaolaba, and says 66 RMB early bird was sold out. Platform-native visual confirmation is still useful before publishing set times as final."
         },
         {
           "label": "SmartShanghai Heim venue context",
@@ -4682,8 +4820,8 @@
       ],
       "recommendationReason": "Included because LONG WAVE gives Heim a lighter house-focused Thursday route with Golgol, SpaceReturn, Sam Tbd, and Xiaolaba, useful for a looser pre-weekend club plan rather than a hard-techno night.",
       "bestFor": "Best for readers who want a house-forward Heim night with a softer release valve before the weekend.",
-      "verifyBeforeGoing": "Check Heim for door price, ticket route, age policy, and final room status before going.",
-      "sourceConfidence": "Heim WeChat poster, monthly schedule, and article screenshots confirm title, date, venue/address, time, and lineup; ticket route, price, and age policy remain unchecked.",
+      "verifyBeforeGoing": "Check Heim for live ticket state, age policy, and whether the Instagram-indexed set times are still final before going.",
+      "sourceConfidence": "SmartShanghai plus Heim poster/monthly/article screenshots confirm title, date, venue/address, time, lineup, and price. Ticket inventory and age policy remain unchecked; Instagram-indexed set times are useful but should be visually rechecked.",
       "soundTags": [
         "house",
         "groovy",
@@ -5886,7 +6024,7 @@
       "sortDate": "2026-06-18",
       "date": "Jun 18",
       "time": "22:00-04:00",
-      "title": "ILLUM Pres. 地心引力抓不住你",
+      "title": "ILLUM Presents: State OFFF (Gqom, Club Music, Bass)",
       "venue": "ILLUM",
       "district": "Changning",
       "vibe": [
@@ -5897,23 +6035,25 @@
       "genre": "experimental club, bass, hard club, deconstructed club",
       "confidence": "Medium",
       "status": "upcoming",
-      "price": "80 / 100 / 120 RMB",
+      "price": "80 RMB early bird / 100 RMB presale / 120 RMB door",
       "age": "Check venue",
-      "source": "assets/posters/illum-gravity-2026-06-18-ticket.jpg",
-      "sourceLabel": "ILLUM WeChat and ticketing screenshots",
+      "source": "https://www.smartshanghai.com/event/illum-presents-state-offf-gqom-club-music-bass-2026-06-18",
+      "sourceLabel": "SmartShanghai + ILLUM screenshots",
       "imageTheme": "acid",
-      "description": "ILLUM Thursday late-room booking for 地心引力抓不住你 with StateOFFF, Zein Guz, and Qiming / 行么雷 visible on the supplied poster and ticketing screenshots. Ticketing screenshot confirms 2026-06-18 to 2026-06-19, 22:00-04:00, ILLUM at C PARK LG floor, and 80/100/120 RMB ticket tiers.",
+      "description": "ILLUM Thursday late-room booking for State OFFF / 地心引力抓不住你 in a gqom, bass, hard-club lane. SmartShanghai publicly lists State OFFF with Zean, Qin_niQ, GUZ, and Xingli Huang; ILLUM ticketing screenshots confirm 2026-06-18 to 2026-06-19, 22:00-04:00, C PARK LG floor, and 80/100/120 RMB ticket tiers.",
       "kind": "event",
-      "sourceStatus": "wechat-ticketing-and-official-screenshot",
+      "sourceStatus": "secondary-and-wechat-ticketing-screenshot",
       "address": "LG Floor, C PARK, No. 658 Zhaohua Road, Changning District, Shanghai",
       "organizer": "ILLUM Shanghai",
-      "lastChecked": "2026-06-16",
+      "detailsUrl": "https://www.smartshanghai.com/event/illum-presents-state-offf-gqom-club-music-bass-2026-06-18",
+      "ticketUrl": "https://www.smartshanghai.com/event/illum-presents-state-offf-gqom-club-music-bass-2026-06-18",
+      "lastChecked": "2026-06-18",
       "posterUrl": "assets/posters/illum-gravity-2026-06-18-poster.jpg",
       "posterEvidence": {
         "type": "official-poster-screenshot",
         "source": "User-provided ILLUM Shanghai poster and ticketing screenshots",
         "url": "assets/posters/illum-gravity-2026-06-18-poster.jpg",
-        "status": "Poster names 地心引力抓不住你, StateOFFF, Zein Guz, Qiming / 行么雷, 2026-06-18, ILLUM, and C PARK LG floor address. Ticketing screenshot confirms 22:00-04:00 and 80/100/120 RMB tiers. Public poster version crops away the lower reservation UI; full poster and ticket screenshots are retained as evidence.",
+        "status": "Poster names 地心引力抓不住你, StateOFFF, 2026-06-18, ILLUM, and C PARK LG floor address. Ticketing screenshot confirms 22:00-04:00 and 80/100/120 RMB tiers. Public SmartShanghai text is used for the current support lineup because it resolves earlier poster/OCR name uncertainty.",
         "localFiles": [
           "assets/posters/illum-gravity-2026-06-18-poster.jpg",
           "assets/posters/illum-gravity-2026-06-18-poster-source.jpg",
@@ -5921,51 +6061,66 @@
           "assets/posters/illum-gravity-2026-06-18-ticket.jpg"
         ]
       },
-      "ticketStatus": "User-provided ILLUM ticketing screenshot shows 2026-06-18 to 2026-06-19, 22:00-04:00, ILLUM, Zhaohua Road 658 / C PARK LG floor, and ticket tiers at 80 RMB early-bird, 100 RMB limited presale, and 120 RMB door. Direct public ticket URL and age policy were not visible.",
+      "ticketStatus": "SmartShanghai lists 100 RMB presale / 120 RMB door. User-provided ILLUM ticketing screenshot also shows an 80 RMB early-bird tier, 2026-06-18 to 2026-06-19, 22:00-04:00, ILLUM, and Zhaohua Road 658 / C PARK LG floor. Age policy was not visible.",
       "lineup": [
         {
-          "name": "StateOFFF",
+          "name": "State OFFF",
           "aliases": [
+            "StateOFFF",
             "StateOFFF (CN)"
           ],
-          "note": "ILLUM poster lists StateOFFF (CN) for 地心引力抓不住你."
+          "note": "SmartShanghai and ILLUM poster evidence list State OFFF / StateOFFF as the headliner for the Jun 18 ILLUM gqom, club music, and bass night."
         },
         {
-          "name": "Zein Guz",
+          "name": "Zean",
           "aliases": [
-            "ZEIN GUZ"
+            "Zean"
           ],
-          "note": "ILLUM poster lists Zein Guz; exact spelling should be rechecked if a clearer organizer text appears."
+          "note": "SmartShanghai publicly lists Shanghai artist Zean as support. This supersedes the earlier poster/OCR uncertainty around Zein Guz."
         },
         {
-          "name": "Qiming / 行么雷",
+          "name": "Qin_niQ",
           "aliases": [
-            "Qiming",
-            "行么雷"
+            "Qin_niQ"
           ],
-          "note": "ILLUM poster visually lists Qiming / 行么雷; keep source-faithful until a clearer text source confirms the preferred artist spelling."
+          "note": "SmartShanghai publicly lists Qin_niQ as support."
+        },
+        {
+          "name": "GUZ",
+          "note": "SmartShanghai publicly lists GUZ as support."
+        },
+        {
+          "name": "Xingli Huang",
+          "note": "SmartShanghai publicly lists Xingli Huang as support."
         }
       ],
       "sources": [
         {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/illum-presents-state-offf-gqom-club-music-bass-2026-06-18",
+          "status": "secondary",
+          "lastChecked": "2026-06-18",
+          "verificationNote": "Confirms Today, 10pm-4am, ILLUM at C PARK, 100 RMB presale / 120 RMB door, State OFFF, and support from Zean, Qin_niQ, GUZ, and Xingli Huang."
+        },
+        {
           "label": "ILLUM 地心引力抓不住你 poster screenshot",
           "url": "assets/posters/illum-gravity-2026-06-18-poster-source.jpg",
           "status": "official-poster-screenshot",
-          "lastChecked": "2026-06-16",
-          "verificationNote": "User-provided ILLUM poster screenshot confirms event title, 2026-06-18, venue/address, and visible lineup names StateOFFF, Zein Guz, and Qiming / 行么雷."
+          "lastChecked": "2026-06-18",
+          "verificationNote": "User-provided ILLUM poster screenshot confirms event title, 2026-06-18, venue/address, and visible StateOFFF billing. Earlier OCR/name reading conflicted with SmartShanghai's public text, so SmartShanghai is used for current support names."
         },
         {
           "label": "ILLUM 地心引力抓不住你 ticketing screenshot",
           "url": "assets/posters/illum-gravity-2026-06-18-ticket.jpg",
           "status": "ticketing-screenshot",
-          "lastChecked": "2026-06-16",
+          "lastChecked": "2026-06-18",
           "verificationNote": "User-provided ticketing screenshot confirms 2026-06-18 to 2026-06-19, 22:00-04:00, ILLUM, C PARK LG floor, and 80/100/120 RMB ticket tiers."
         },
         {
           "label": "ILLUM 地心引力抓不住你 WeChat screenshot",
           "url": "assets/posters/illum-gravity-2026-06-18-wechat.jpg",
           "status": "official-wechat-screenshot",
-          "lastChecked": "2026-06-16",
+          "lastChecked": "2026-06-18",
           "verificationNote": "User-provided ILLUM Shanghai account screenshot supplies poster context and reservation route; not a direct public URL."
         },
         {
@@ -5978,8 +6133,8 @@
       ],
       "recommendationReason": "Recommended for readers who want ILLUM in its heavier visual-and-bass-club lane: the bill is not presented as a clean house night, and the 22:00-04:00 ticket window points to a late, high-pressure room. Keep it for experimental club and hard-room curiosity rather than a guaranteed straight-techno set.",
       "bestFor": "Best for ILLUM regulars, hard-club listeners, and readers who like darker, graphic, bass-adjacent rooms with less predictable lineup context.",
-      "verifyBeforeGoing": "Confirm live ticket inventory, age policy, and final running order through the ILLUM reservation route before going. Recheck the preferred spelling of Zein Guz and Qiming / 行么雷 if a text post becomes available.",
-      "sourceConfidence": "Medium-confidence screenshot-backed event: ILLUM poster and ticketing screenshots confirm the practical core fields, while SmartShanghai only supports venue context. Direct public ticket URL, age policy, and detailed artist profiles were not visible.",
+      "verifyBeforeGoing": "Confirm live ticket inventory, age policy, and final running order through SmartShanghai or the ILLUM reservation route before going.",
+      "sourceConfidence": "Medium-high confidence: SmartShanghai gives a readable event-level page with current lineup text and price, while ILLUM poster/ticketing screenshots confirm the practical core fields. The support lineup changed from earlier poster/OCR interpretation, so keep the source conflict visible.",
       "soundTags": [
         "experimental-club",
         "bass",
@@ -6245,41 +6400,50 @@
       "genre": "house, techno",
       "confidence": "Medium",
       "status": "upcoming",
-      "price": "118 RMB",
+      "price": "100 RMB",
       "age": "Check venue",
       "source": "https://ra.co/events/2468150",
-      "sourceLabel": "Resident Advisor indexed text",
+      "sourceLabel": "Resident Advisor",
       "imageTheme": "cyan",
-      "description": "A compact late EXIT house/techno bill with MIRROR concept, Mofy, and Yoshua. Treat it as a groove-led planning option with open practical gaps: poster, age policy, and venue-side corroboration still need a follow-up check.",
+      "description": "Minuit brings its MIRROR concept to EXIT for an immersive house and tech-house night with SLVN, Olivier K, Olivier G, Chabuduo, and a live camera/VJing setup that projects the booth and crowd back into the room.",
       "kind": "event",
-      "sourceStatus": "trusted-ra-indexed",
+      "sourceStatus": "trusted-ra",
       "address": "298 Xingfu Road, Changning District, Shanghai",
       "organizer": "Illsee / Minuit",
       "detailsUrl": "https://ra.co/events/2468150",
       "ticketUrl": "https://ra.co/events/2468150",
-      "lastChecked": "2026-06-16",
-      "ticketStatus": "Public RA indexed text lists 2026-06-18, 22:00-05:00, EXIT at 298 Xingfu Road, lineup MIRROR concept / Mofy / Yoshua, house/techno tags, and 118 RMB cost. Direct scripted RA detail fetch returned 403; age policy, live ticket state, and flyer download remain browser-verification gaps.",
+      "lastChecked": "2026-06-18",
+      "ticketStatus": "RA live event detail lists 2026-06-18, 22:00-05:00, EXIT at 298 Xingfu Road, house/techno tags, Illsee event admin, and 100 RMB cost. Age policy and live ticket state are still not visible.",
       "lineup": [
         {
-          "name": "MIRROR concept",
-          "note": "RA indexed text lists MIRROR concept on the Minuit / EXIT lineup."
+          "name": "SLVN",
+          "note": "RA lists SLVN on the Minuit / MIRROR concept lineup."
         },
         {
-          "name": "Mofy",
-          "note": "RA indexed text lists Mofy on the Minuit / EXIT lineup."
+          "name": "Olivier K",
+          "note": "RA lists Olivier K on the Minuit / MIRROR concept lineup."
         },
         {
-          "name": "Yoshua",
-          "note": "RA indexed text lists Yoshua on the Minuit / EXIT lineup."
+          "name": "Olivier G",
+          "note": "RA lists Olivier G on the Minuit / MIRROR concept lineup."
+        },
+        {
+          "name": "Chabuduo",
+          "note": "RA lists Chabuduo on the Minuit / MIRROR concept lineup."
+        },
+        {
+          "name": "Live camera concept + VJing",
+          "role": "visuals",
+          "note": "RA describes a live camera setup projecting the DJ booth and crowd in real time behind the decks."
         }
       ],
       "sources": [
         {
-          "label": "Resident Advisor indexed event text",
+          "label": "Resident Advisor",
           "url": "https://ra.co/events/2468150",
-          "status": "trusted-ra-indexed",
-          "lastChecked": "2026-06-16",
-          "verificationNote": "Public search-index text for the RA event page confirms title, EXIT venue/address, Thu Jun 18 2026 22:00-05:00, lineup MIRROR concept / Mofy / Yoshua, house/techno genres, Illsee event admin, 118 RMB cost, and flyer visibility. Direct scripted HTTP fetch returned 403, so treat this as indexed RA/browser-required verification."
+          "status": "trusted-ra",
+          "lastChecked": "2026-06-18",
+          "verificationNote": "Live RA detail page confirms title, EXIT venue/address, Thu Jun 18 2026 22:00-05:00, lineup SLVN / Olivier K / Olivier G / Chabuduo / live camera concept + VJing, house/techno genres, Illsee event admin, 100 RMB cost, and flyer visibility."
         }
       ],
       "soundTags": [
@@ -6306,10 +6470,10 @@
           "age policy not visible"
         ]
       },
-      "recommendationReason": "Useful for readers who want EXIT in a lighter, groove-led house/techno lane: MIRROR concept, Mofy, and Yoshua make this a compact three-name late-room bill, better as a check-before-going route than a top pick until a venue-side poster appears.",
+      "recommendationReason": "Useful for readers who want EXIT in a lighter, groove-led house/techno lane with a visual-room concept: SLVN, Olivier K, Olivier G, Chabuduo, and live camera/VJing make this a compact late-room route.",
       "bestFor": "Best for readers tracking EXIT house/techno programming who can verify same-day details before committing.",
       "verifyBeforeGoing": "Recheck RA or EXIT/Minuit channels for ticket availability, age policy, flyer, and any set-time update before going.",
-      "sourceConfidence": "Single-source RA indexed event: enough to list as current RA coverage with caveats, but not enough for a stronger editorial push without venue/promoter corroboration or a visible poster asset."
+      "sourceConfidence": "Single-source RA event detail: enough to list as current RA coverage with caveats, but still worth rechecking with EXIT/Minuit for age policy and live ticket state."
     },
     {
       "id": "exit-298-steal-tapes",

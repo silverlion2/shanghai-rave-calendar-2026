@@ -4336,7 +4336,7 @@ window.DJ_ITINERARY_DATA = {
         "label": "SmartShanghai event description",
         "url": "https://www.smartshanghai.com/event/a-full-afrowave-takeover-at-la-burg",
         "status": "watchlist",
-        "checked": "2026-06-18"
+        "checked": "2026-06-14"
       }
     ],
     "itinerary": [

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T03:42:58.516Z",
+  "generatedAt": "2026-06-18T05:06:36.634Z",
   "sourceData": "data/events.json",
   "storagePolicy": {
     "mode": "static-json-plus-local-optimized-assets",
@@ -7,16 +7,16 @@
     "rule": "Use optimized display assets in the wall; keep raw poster files out of the default browsing path when the archive grows."
   },
   "stats": {
-    "posters": 74,
+    "posters": 75,
     "years": [
       2026
     ],
     "venues": 36,
-    "optimizedCount": 71,
-    "displayBytes": 13265145,
-    "sourceBytes": 40626411,
-    "displayMegabytes": 12.65,
-    "sourceMegabytes": 38.74,
+    "optimizedCount": 72,
+    "displayBytes": 13299761,
+    "sourceBytes": 41119959,
+    "displayMegabytes": 12.68,
+    "sourceMegabytes": 39.22,
     "freeTierSoftCapBytes": 83886080,
     "freeTierSoftCapMegabytes": 80
   },
@@ -1682,7 +1682,7 @@
       "country": "CN",
       "date": "Jun 18",
       "sortDate": "2026-06-18",
-      "time": "23:59-06:00",
+      "time": "22:30-late / RA 23:59-06:00",
       "venue": "POTENT",
       "district": "Huangpu",
       "sound": "house, club",
@@ -1713,12 +1713,56 @@
         "mime": "image/jpeg"
       },
       "eventUrl": "events/cybionte-solo-ykk-heshang.html",
-      "notes": "POTENT hosts Cybionte with Solo, YKK, and Heshang in a late house/club lane. RA confirms the late slot, lineup, cost, and 18+ rule."
+      "notes": "POTENT hosts Cybionte with Solo, YKK, and Heshang in a late house/club lane. RA confirms the 23:59-06:00 ticket listing, 100 RMB cost, and 18+ rule; a same-day official Instagram index from POTENT points to a 22:30-late start and a second POTENT-room support lineup."
+    },
+    {
+      "id": "shanghai-2026-girls-night-out-dome",
+      "eventId": "girls-night-out-dome",
+      "title": "Girls Night Out",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Thursdays to Jun 25",
+      "sortDate": "2026-06-18",
+      "time": "21:30-01:30",
+      "venue": "The Dome",
+      "district": "Huangpu",
+      "sound": "house, disco, feel-good classics, rooftop lounge",
+      "tags": [
+        "watch",
+        "huangpu",
+        "date",
+        "house",
+        "disco",
+        "feel-good classics",
+        "rooftop lounge"
+      ],
+      "status": "watch",
+      "confidence": "Watch",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "SmartShanghai",
+        "url": "https://www.smartshanghai.com/event/girls-night-out-skyline-dome-at-the-dome",
+        "posterEvidenceUrl": "https://www.smartshanghai.com/event/girls-night-out-skyline-dome-at-the-dome",
+        "posterEvidenceSource": "SmartShanghai event page",
+        "posterEvidenceStatus": "Event image is visible on the detail page."
+      },
+      "image": {
+        "thumbnail": "assets/posters/girls-night-out-dome-2026-06-18-optimized.jpg",
+        "display": "assets/posters/girls-night-out-dome-2026-06-18-optimized.jpg",
+        "sourceAsset": "assets/posters/girls-night-out-dome-2026-06-18.png",
+        "displayBytes": 34616,
+        "sourceBytes": 493548,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/girls-night-out-dome.html",
+      "notes": "Low-fit Thursday rooftop social lead at The Dome: house, disco, feel-good classics, skyline views, and complimentary drinks for ladies from 22:00 to midnight. Useful as a date-route nightlife option, not as a techno recommendation."
     },
     {
       "id": "shanghai-2026-illum-gravity-stateofff",
       "eventId": "illum-gravity-stateofff",
-      "title": "ILLUM Pres. 地心引力抓不住你",
+      "title": "ILLUM Presents: State OFFF (Gqom, Club Music, Bass)",
       "year": 2026,
       "city": "Shanghai",
       "country": "CN",
@@ -1744,11 +1788,11 @@
       "confidence": "Medium",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
-        "label": "ILLUM WeChat and ticketing screenshots",
-        "url": "assets/posters/illum-gravity-2026-06-18-ticket.jpg",
+        "label": "SmartShanghai + ILLUM screenshots",
+        "url": "https://www.smartshanghai.com/event/illum-presents-state-offf-gqom-club-music-bass-2026-06-18",
         "posterEvidenceUrl": "assets/posters/illum-gravity-2026-06-18-poster.jpg",
         "posterEvidenceSource": "User-provided ILLUM Shanghai poster and ticketing screenshots",
-        "posterEvidenceStatus": "Poster names 地心引力抓不住你, StateOFFF, Zein Guz, Qiming / 行么雷, 2026-06-18, ILLUM, and C PARK LG floor address. Ticketing screenshot confirms 22:00-04:00 and 80/100/120 RMB tiers. Public poster version crops away the lower reservation UI; full poster and ticket screenshots are retained as evidence."
+        "posterEvidenceStatus": "Poster names 地心引力抓不住你, StateOFFF, 2026-06-18, ILLUM, and C PARK LG floor address. Ticketing screenshot confirms 22:00-04:00 and 80/100/120 RMB tiers. Public SmartShanghai text is used for the current support lineup because it resolves earlier poster/OCR name uncertainty."
       },
       "image": {
         "thumbnail": "assets/posters/illum-gravity-2026-06-18-poster-optimized.jpg",
@@ -1760,7 +1804,7 @@
         "mime": "image/jpeg"
       },
       "eventUrl": "events/illum-gravity-stateofff.html",
-      "notes": "ILLUM Thursday late-room booking for 地心引力抓不住你 with StateOFFF, Zein Guz, and Qiming / 行么雷 visible on the supplied poster and ticketing screenshots. Ticketing screenshot confirms 2026-06-18 to 2026-06-19, 22:00-04:00, ILLUM at C PARK LG floor, and 80/100/120 RMB ticket tiers."
+      "notes": "ILLUM Thursday late-room booking for State OFFF / 地心引力抓不住你 in a gqom, bass, hard-club lane. SmartShanghai publicly lists State OFFF with Zean, Qin_niQ, GUZ, and Xingli Huang; ILLUM ticketing screenshots confirm 2026-06-18 to 2026-06-19, 22:00-04:00, C PARK LG floor, and 80/100/120 RMB ticket tiers."
     },
     {
       "id": "shanghai-2026-heim-long-wave",
@@ -1771,14 +1815,14 @@
       "country": "CN",
       "date": "Jun 18",
       "sortDate": "2026-06-18",
-      "time": "22:00-late",
+      "time": "22:00-05:00",
       "venue": "Heim",
-      "district": "Huangpu",
+      "district": "Jing'an",
       "sound": "house, club, electronic",
       "tags": [
         "upcoming",
         "medium",
-        "huangpu",
+        "jing'an",
         "underground",
         "date",
         "house",
@@ -1789,8 +1833,8 @@
       "confidence": "Medium",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
-        "label": "Heim Shanghai WeChat poster/article screenshots",
-        "url": "assets/posters/heim-long-wave.jpg",
+        "label": "SmartShanghai + Heim screenshots",
+        "url": "https://www.smartshanghai.com/event/long-wave-house-techno-disco-club-music-2026-06-18",
         "posterEvidenceUrl": "assets/posters/heim-long-wave.jpg",
         "posterEvidenceSource": "Heim Shanghai WeChat/user-provided official poster screenshot",
         "posterEvidenceStatus": "Poster screenshot confirms LONG WAVE, Dragon Boat Festival Special, Heim branding, 2026-06-18, 22:00-late, and Changle Road / M101 location."
@@ -1805,7 +1849,7 @@
         "mime": "image/jpeg"
       },
       "eventUrl": "events/heim-long-wave.html",
-      "notes": "Heim Thursday house-leaning Dragon Boat Festival special with Golgol, SpaceReturn, Sam Tbd, and Xiaolaba. The Heim article frames it as a looser release before the holiday weekend rather than a heavy-rave route."
+      "notes": "Heim Thursday house-leaning Dragon Boat Festival special and Elevator Club reunion route with Golgol, SpaceReturn, Sam Tbd, and Xiaolaba. SmartShanghai confirms the 22:00-05:00 window and 88 RMB presale / 108 RMB door pricing."
     },
     {
       "id": "shanghai-2026-night-at-museum-90s-disco",
@@ -2560,7 +2604,7 @@
         "mime": "image/jpeg"
       },
       "eventUrl": "events/kollin.html",
-      "notes": "Dirty House / INS entry with techno and bass tags; more chaotic club energy than purist techno."
+      "notes": "Dirty House booking with techno and bass tags; more chaotic club energy than purist techno."
     },
     {
       "id": "shanghai-2026-cltx-abyss",
