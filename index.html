@@ -2098,7 +2098,7 @@
     }
 
   </style>
-  <link rel="stylesheet" href="assets/basement-dispatch.css?v=calendar-week-grid-20260616">
+  <link rel="stylesheet" href="assets/basement-dispatch.css?v=mobile-product-design-20260618">
   <link rel="stylesheet" href="assets/account-system.css">
   <script src="assets/love-wall-supabase-config.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -2184,21 +2184,22 @@
               <span class="control-kicker">Calendar view</span>
               <h2 class="control-title">Find the right room, rave sound, and date</h2>
             </div>
+            <button class="mobile-filter-toggle" type="button" data-mobile-filter-toggle aria-expanded="false">Filters</button>
             <div class="filter-summary" id="filterSummary" aria-live="polite">Loading matches</div>
           </div>
           <div class="quick-actions" aria-label="Date and export shortcuts">
             <button class="quick-filter active" type="button" data-window="future">Upcoming</button>
             <button class="quick-filter" type="button" data-window="all">Full 2026</button>
             <button class="quick-filter" type="button" data-window="tonight">Tonight</button>
-            <button class="quick-filter" type="button" data-window="weekend">This Weekend</button>
-            <button class="quick-filter" type="button" data-window="next30">Next 30 Days</button>
+            <button class="quick-filter" type="button" data-window="weekend">Weekend</button>
+            <button class="quick-filter" type="button" data-window="next30">30 Days</button>
             <button class="quick-filter" type="button" data-window="new">Fresh Leads</button>
             <button class="quick-filter export-button" type="button" id="downloadFiltered">Export .ics</button>
             <a class="quick-filter export-button" href="contribute.html">Missing Event?</a>
           </div>
           <label class="filter-field">
             <span>Search</span>
-            <input class="search" id="searchInput" type="search" placeholder="Event, venue, genre, promoter">
+            <input class="search" id="searchInput" type="search" placeholder="Event, venue, genre, presenter">
           </label>
           <label class="filter-field">
             <span>Week</span>
@@ -2242,10 +2243,10 @@
             </select>
           </label>
           <div class="filter-field venue-filter-field">
-            <span>Venue / promoter</span>
+            <span>Venue / presenter</span>
             <div class="multi-select" id="venueFilter">
-              <button class="select multi-select-toggle" id="venueFilterToggle" type="button" aria-haspopup="true" aria-expanded="false">All venues / promoters</button>
-              <div class="multi-select-menu" id="venueFilterMenu" role="group" aria-label="Venue and promoter filter"></div>
+              <button class="select multi-select-toggle" id="venueFilterToggle" type="button" aria-haspopup="true" aria-expanded="false">All venues / presenters</button>
+              <div class="multi-select-menu" id="venueFilterMenu" role="group" aria-label="Venue and presenter filter"></div>
             </div>
           </div>
         </section>
@@ -2658,7 +2659,7 @@
         confidence: "High", status: "upcoming", price: "WeChat mini-program", age: "18+",
         source: "https://ra.co/events/2460995", sourceLabel: "Resident Advisor",
         imageTheme: "rose",
-        description: "Dirty House / INS entry with techno and bass tags; more chaotic club energy than purist techno."
+        description: "Dirty House booking with techno and bass tags; more chaotic club energy than purist techno."
       },
       {
         id: "cltx-abyss", month: "Jun", sortDate: "2026-06-12", date: "Jun 12", time: "Check Abyss",
@@ -3162,6 +3163,8 @@
     };
 
     const calendarEl = document.getElementById("calendar");
+    const controlsEl = document.querySelector(".controls");
+    const mobileFilterToggle = document.querySelector("[data-mobile-filter-toggle]");
     const railEl = document.getElementById("monthRail");
     const searchInput = document.getElementById("searchInput");
     const weekFilter = document.getElementById("weekFilter");
@@ -3242,7 +3245,7 @@
       "milo-cosmjn": "POTENT",
       "kollin": "Dirty House",
       "cltx-abyss": "Abyss Shanghai",
-      "santa-k": "Abyss Shanghai / TURBO",
+      "santa-k": "TURBO",
       "matisa-limsum": "POTENT",
       "synth-crush": "EXIT",
       "the-woods": "Love Bang",
@@ -3601,6 +3604,39 @@
       return event.venue || "Organizer TBA";
     }
 
+    function labelKeysForMatch(value) {
+      const labels = [value, ...splitFilterEntityParts(value)];
+      const keys = new Set();
+      labels.forEach(label => {
+        const clean = String(label || "").trim();
+        if (!clean) return;
+        keys.add(normalizeFilterKey(clean));
+        keys.add(normalizeFilterKey(clean.replace(/\s+shanghai$/i, "").trim()));
+      });
+      return keys;
+    }
+
+    function presenterFor(event) {
+      const raw = knownOrganizerFor(event);
+      if (!raw) return "";
+      const venueKeys = labelKeysForMatch(event.venue);
+      if (typeof commonVenuePromoterGroups !== "undefined") {
+        commonVenuePromoterGroups.forEach(group => {
+          const aliases = commonGroupAliasSet(group);
+          if ([...venueKeys].some(key => aliases.has(key))) {
+            aliases.forEach(key => venueKeys.add(key));
+          }
+        });
+      }
+      const parts = splitFilterEntityParts(raw);
+      const rawParts = parts.length ? parts : [raw];
+      const cleaned = rawParts.filter(part => {
+        const partKeys = labelKeysForMatch(part);
+        return ![...partKeys].some(key => key && venueKeys.has(key));
+      });
+      return cleaned.join(" / ");
+    }
+
     function normalizeFilterKey(value) {
       return String(value || "")
         .toLowerCase()
@@ -3637,9 +3673,9 @@
       const seen = new Set();
       addFilterEntity(entities, seen, event.venue, "venue");
       splitFilterEntityParts(event.venue).forEach(label => addFilterEntity(entities, seen, label, "venue"));
-      const organizer = knownOrganizerFor(event);
-      addFilterEntity(entities, seen, organizer, "promoter");
-      splitFilterEntityParts(organizer).forEach(label => addFilterEntity(entities, seen, label, "promoter"));
+      const presenter = presenterFor(event);
+      addFilterEntity(entities, seen, presenter, "promoter");
+      splitFilterEntityParts(presenter).forEach(label => addFilterEntity(entities, seen, label, "promoter"));
       return entities;
     }
 
@@ -4288,6 +4324,8 @@
       if (group === "illum") return has("illum", "knot");
       if (group === "wigwam") return has("wigwam");
       if (group === "system") return has("system");
+      if (group === "void") return has("void");
+      if (group === "vacuum") return has("vacuum");
       if (group === "void-vacuum") return has("void", "vacuum");
       return true;
     }
@@ -4466,9 +4504,7 @@
         if (!row.eventsByDay.has(dayKey)) row.eventsByDay.set(dayKey, []);
         row.eventsByDay.get(dayKey).push(event);
       });
-      const visibleDayIndexes = weekDates
-        .map((_, weekdayIndex) => weekdayIndex)
-        .filter(weekdayIndex => dayHasEvent[weekdayIndex]);
+      const visibleDayIndexes = weekDates.map((_, weekdayIndex) => weekdayIndex);
       const columnCount = Math.max(visibleDayIndexes.length, 1);
       const commonOrder = typeof commonVenuePromoterGroups !== "undefined"
         ? new Map(commonVenuePromoterGroups.map((group, index) => [group.key, index]))
@@ -4483,21 +4519,45 @@
         return a.label.localeCompare(b.label);
       });
       const cells = [
-        `<div class="calendar-venue-heading">Venue / promoter</div>`,
+        `<div class="calendar-venue-heading">Venue / presenter</div>`,
         ...visibleDayIndexes.map(index => `<div class="calendar-day-name"><span>${weekdayLabels[index]}</span><b>${localDateLabel(weekDates[index])}</b></div>`)
       ];
 
+      const dayCounts = weekDates.map(date => {
+        const dayKey = keyFromDate(date);
+        return [...groups.values()].reduce((sum, group) => sum + (group.eventsByDay.get(dayKey)?.length || 0), 0);
+      });
+      const weekOverview = `
+        <div class="mobile-week-overview" aria-label="Week event count overview">
+          ${weekDates.map((date, index) => `
+            <span class="${dayCounts[index] ? "has-event" : ""}" style="--density: ${Math.min(dayCounts[index], 4)};" aria-label="${weekdayLabels[index]} ${localDateLabel(date)}: ${dayCounts[index]} event${dayCounts[index] === 1 ? "" : "s"}">
+              <b>${weekdayLabels[index]}</b>
+              <em>${date.getDate()}</em>
+              <i>${dayCounts[index]}</i>
+            </span>
+          `).join("")}
+        </div>
+      `;
+
       if (!sortedGroups.length || !visibleDayIndexes.length) {
-        return `<div class="calendar-grid calendar-week-grid is-empty" style="--calendar-columns: ${columnCount};" aria-label="${localDateLabel(weekDates[0])}-${localDateLabel(weekDates[6])} weekly event calendar by venue and promoter">${cells.join("")}</div>`;
+        return `${weekOverview}<div class="calendar-grid calendar-week-grid is-empty" style="--calendar-columns: ${columnCount};" aria-label="${localDateLabel(weekDates[0])}-${localDateLabel(weekDates[6])} weekly event calendar by venue and presenter">${cells.join("")}</div>`;
       }
 
       sortedGroups.forEach(group => {
         const rowCount = [...group.eventsByDay.values()].reduce((sum, rows) => sum + rows.length, 0);
+        const groupLogo = group.logo || "";
+        const groupMark = group.mark || groupLogoMark(group.label);
+        const groupLogoHtml = groupLogo
+          ? `<img src="${escapeHtml(groupLogo)}" alt="" loading="lazy" decoding="async">`
+          : escapeHtml(groupMark);
         cells.push(`
-          <div class="calendar-venue-label">
-            <b>${escapeHtml(group.label)}</b>
-            ${group.meta ? `<small>${escapeHtml(group.meta)}</small>` : ""}
-            <small>${rowCount} event${rowCount === 1 ? "" : "s"}</small>
+          <div class="calendar-venue-label" data-group-key="${escapeHtml(group.key)}">
+            <span class="calendar-venue-logo${groupLogo ? " has-image" : ""}" data-group-key="${escapeHtml(group.key)}" aria-hidden="true">${groupLogoHtml}</span>
+            <span class="calendar-venue-copy">
+              <b>${escapeHtml(group.label)}</b>
+              ${group.meta ? `<small>${escapeHtml(group.meta)}</small>` : ""}
+              <small>${rowCount} event${rowCount === 1 ? "" : "s"}</small>
+            </span>
           </div>
         `);
         visibleDayIndexes.forEach(index => {
@@ -4506,21 +4566,25 @@
           const dayEvents = (group.eventsByDay.get(dayKey) || []).sort((a, b) => String(a.time || "").localeCompare(String(b.time || "")));
           cells.push(`
             <div class="calendar-day ${dayEvents.length ? "has-event" : ""}">
-              <div class="calendar-date"><span>${date.getDate()}</span><span>${dayEvents.length ? dayEvents.length : ""}</span></div>
+              <div class="calendar-date">
+                <span class="calendar-date-compact">${date.getDate()}</span>
+                <span class="calendar-date-full">${escapeHtml(`${weekdayLabels[index]} ${localDateLabel(date)}`)}</span>
+                <span class="calendar-date-count">${dayEvents.length ? dayEvents.length : ""}</span>
+              </div>
               <div class="calendar-events">
                 ${dayEvents.map(event => {
-                  const organizer = knownOrganizerFor(event);
+                  const presenter = presenterFor(event);
                   const festival = isFestival(event);
                   const lineupText = festival ? "" : lineupFor(event).slice(0, 2).map(item => item.name).filter(Boolean).join(" / ");
                   const titleParts = [`Venue: ${event.venue}`, event.title];
-                  if (organizer) titleParts.push(`Organizer: ${organizer}`);
+                  if (presenter) titleParts.push(`Presented by: ${presenter}`);
                   if (festival) titleParts.push("Festival / multi-event lead");
                   return `
                     <a class="calendar-event ${eventEffectiveStatus(event) === "watch" ? "watch" : ""} ${festival ? "festival" : ""}" href="${escapeHtml(eventPageUrl(event))}" data-id="${event.id}" title="${escapeHtml(titleParts.join(" / "))}" aria-label="Open event page for ${escapeHtml(event.title)}">
                       <span class="calendar-event-venue">${escapeHtml(event.venue)}</span>
                       <span class="calendar-event-title">${escapeHtml(event.title)}</span>
                       ${lineupText ? `<span class="calendar-event-lineup">${escapeHtml(lineupText)}</span>` : ""}
-                      ${festival ? `<span class="calendar-event-organizer">Festival lead</span>` : organizer ? `<span class="calendar-event-organizer">Organizer: ${escapeHtml(organizer)}</span>` : ""}
+                      ${festival ? `<span class="calendar-event-organizer">Festival lead</span>` : presenter ? `<span class="calendar-event-organizer">Presented by: ${escapeHtml(presenter)}</span>` : ""}
                     </a>
                   `;
                 }).join("")}
@@ -4530,7 +4594,7 @@
         });
       });
 
-      return `<div class="calendar-grid calendar-week-grid" style="--calendar-columns: ${columnCount};" aria-label="${localDateLabel(weekDates[0])}-${localDateLabel(weekDates[6])} weekly event calendar by venue and promoter">${cells.join("")}</div>`;
+      return `${weekOverview}<div class="calendar-grid calendar-week-grid" style="--calendar-columns: ${columnCount};" aria-label="${localDateLabel(weekDates[0])}-${localDateLabel(weekDates[6])} weekly event calendar by venue and presenter">${cells.join("")}</div>`;
     }
 
     function isLikelyImageUrl(value) {
@@ -4645,20 +4709,33 @@
     }
 
     const commonVenuePromoterGroups = [
-      { key: "abyss", label: "Abyss", aliases: ["abyss", "abyss-shanghai"] },
-      { key: "potent", label: "POTENT", aliases: ["potent"] },
-      { key: "exit", label: "EXIT", aliases: ["exit"] },
-      { key: "heim", label: "Heim", aliases: ["heim"] },
-      { key: "system", label: "System", aliases: ["system"] },
-      { key: "wigwam", label: "Wigwam", aliases: ["wigwam"] },
-      { key: "reactor", label: "Reactor", aliases: ["reactor", "reactor-shanghai", "reactorsh"] },
-      { key: "space-panda", label: "Space Panda", aliases: ["space-panda"] },
-      { key: "alter", label: "ALTER", aliases: ["alter", "alter-byyb"] },
-      { key: "dirty", label: "Dirty House / INS", aliases: ["dirty", "dirty-house", "ins"] },
-      { key: "illum", label: "ILLUM / KNOT", aliases: ["illum", "knot"] },
-      { key: "void-vacuum", label: "VOID / VACUUM", aliases: ["void", "vacuum", "void-vacuum"] }
+      { key: "abyss", label: "Abyss", mark: "AB", logo: "assets/venue-logos/abyss.webp", aliases: ["abyss", "abyss-shanghai"] },
+      { key: "potent", label: "POTENT", mark: "PT", logo: "assets/venue-logos/potent.webp", aliases: ["potent"] },
+      { key: "exit", label: "EXIT", mark: "EX", aliases: ["exit"] },
+      { key: "heim", label: "Heim", mark: "HM", logo: "assets/venue-logos/heim.webp", aliases: ["heim"] },
+      { key: "system", label: "System", mark: "SY", aliases: ["system"] },
+      { key: "wigwam", label: "Wigwam", mark: "WG", logo: "assets/venue-logos/wigwam.webp", aliases: ["wigwam"] },
+      { key: "reactor", label: "Reactor", mark: "RX", aliases: ["reactor", "reactor-shanghai", "reactorsh"] },
+      { key: "space-panda", label: "Space Panda", mark: "SP", aliases: ["space-panda"] },
+      { key: "alter", label: "ALTER", mark: "AL", logo: "assets/venue-logos/alter.webp", aliases: ["alter", "alter-byyb"] },
+      { key: "dirty-house", label: "Dirty House", mark: "DH", aliases: ["dirty", "dirty-house", "ins"] },
+      { key: "illum", label: "ILLUM", mark: "IL", aliases: ["illum"] },
+      { key: "knot", label: "KNOT", mark: "KN", logo: "assets/venue-logos/knot.webp", aliases: ["knot"] },
+      { key: "void", label: "VOID", mark: "VD", aliases: ["void"] },
+      { key: "vacuum", label: "VACUUM", mark: "VC", aliases: ["vacuum"] }
     ];
-    const otherVenuePromoterGroup = { key: "other", label: "Other", aliases: [] };
+    const otherVenuePromoterGroup = { key: "other", label: "Other", mark: "OT", aliases: [] };
+
+    function groupLogoMark(label) {
+      const words = String(label || "")
+        .replace(/[^\p{L}\p{N}\s]/gu, " ")
+        .trim()
+        .split(/\s+/)
+        .filter(Boolean);
+      if (!words.length) return "BD";
+      if (words.length === 1) return words[0].slice(0, 2).toUpperCase();
+      return words.slice(0, 2).map(word => word[0]).join("").toUpperCase();
+    }
 
     function commonGroupAliasSet(group) {
       return new Set([group.key, group.label, ...(group.aliases || [])].map(normalizeFilterKey).filter(Boolean));
@@ -4667,9 +4744,7 @@
     function commonGroupMatchesEvent(event, group, preferredType = "") {
       const aliases = commonGroupAliasSet(group);
       const entities = eventFilterEntities(event).filter(entity => !preferredType || entity.type === preferredType);
-      if (entities.some(entity => aliases.has(entity.key))) return true;
-      const normalizedText = normalizeFilterKey(searchableText(event));
-      return [...aliases].some(alias => alias && normalizedText.includes(alias));
+      return entities.some(entity => aliases.has(entity.key));
     }
 
     function eventMatchesOtherVenueGroup(event) {
@@ -4686,19 +4761,29 @@
     function calendarGroupFor(event) {
       const venueGroup = commonVenuePromoterGroups.find(group => commonGroupMatchesEvent(event, group, "venue"));
       const promoterGroup = commonVenuePromoterGroups.find(group => commonGroupMatchesEvent(event, group, "promoter"));
-      const group = venueGroup || promoterGroup;
-      if (group) {
-        const organizer = knownOrganizerFor(event);
+      if (venueGroup) {
         return {
-          key: group.key,
-          label: group.label,
-          meta: organizer && normalizeFilterKey(organizer) !== group.key ? organizer : ""
+          key: venueGroup.key,
+          label: venueGroup.label,
+          mark: venueGroup.mark,
+          logo: venueGroup.logo,
+          meta: "Venue group"
+        };
+      }
+      if (promoterGroup) {
+        return {
+          key: promoterGroup.key,
+          label: promoterGroup.label,
+          mark: promoterGroup.mark,
+          logo: promoterGroup.logo,
+          meta: "Presenter group"
         };
       }
       return {
         key: otherVenuePromoterGroup.key,
         label: otherVenuePromoterGroup.label,
-        meta: "Less frequent venues / promoters"
+        mark: otherVenuePromoterGroup.mark,
+        meta: "Other venues / presenters"
       };
     }
 
@@ -4793,11 +4878,11 @@
       if (!venueFilterToggle) return;
       const labels = selectedVenueLabels();
       if (!labels.length) {
-        venueFilterToggle.textContent = "All common + Other";
+        venueFilterToggle.textContent = "All venues + presenters";
       } else if (labels.length <= 2) {
         venueFilterToggle.textContent = labels.join(" + ");
       } else {
-        venueFilterToggle.textContent = `${labels.length} venue / promoter groups`;
+        venueFilterToggle.textContent = `${labels.length} venue / presenter groups`;
       }
     }
 
@@ -4805,7 +4890,7 @@
       if (!venueFilterMenu) return;
       const options = venueFilterOptions();
       venueFilterMenu.innerHTML = `
-        <button class="multi-select-clear" type="button" data-clear-venues>All common + Other</button>
+        <button class="multi-select-clear" type="button" data-clear-venues>All venues + presenters</button>
         ${options.map(option => `
           <label class="multi-select-option ${option.type === "other" ? "other-option" : ""}">
             <input type="checkbox" value="${escapeHtml(option.key)}" ${selectedVenueGroups.has(option.key) ? "checked" : ""}>
@@ -4883,6 +4968,17 @@
       calendarEl.querySelectorAll(".event-link, .calendar-event").forEach(link => {
         link.addEventListener("click", event => event.stopPropagation());
       });
+      const mobileCalendarGrid = calendarEl.querySelector(".calendar-week-grid");
+      if (mobileCalendarGrid && window.matchMedia("(max-width: 700px)").matches) {
+        const weekDates = weekDatesFor(activeWeekStart);
+        let focusIndex = weekDates.findIndex(date => sameDay(date, today));
+        if (focusIndex < 0 || !visibleEvents.some(event => sameDay(eventDate(event), weekDates[focusIndex]))) {
+          focusIndex = weekDates.findIndex(date => visibleEvents.some(event => sameDay(eventDate(event), date)));
+        }
+        const dayColumn = mobileCalendarGrid.querySelector(".calendar-day-name");
+        const dayColumnWidth = dayColumn ? dayColumn.getBoundingClientRect().width : 112;
+        mobileCalendarGrid.scrollLeft = Math.max(0, focusIndex) * dayColumnWidth;
+      }
       updateCalendarState();
       renderHighlights();
       renderHomePosterRail(visibleEvents);
@@ -4911,7 +5007,7 @@
 
     function renderCard(event) {
       const visual = eventVisual(event);
-      const organizer = knownOrganizerFor(event);
+      const presenter = presenterFor(event);
       const festival = isFestival(event);
       const loading = "lazy";
       return `
@@ -4923,7 +5019,7 @@
           <div class="card-body">
             <div class="card-top"><span>${escapeHtml(event.date)}</span><span>${escapeHtml(event.time)}</span></div>
             <h3>${escapeHtml(event.title)}</h3>
-            ${organizer ? `<div class="organizer-line"><span>Organizer</span><b>${escapeHtml(organizer)}</b>${organizerSocialLinkHtml(event)}</div>` : ""}
+            ${presenter ? `<div class="organizer-line"><span>Presented by</span><b>${escapeHtml(presenter)}</b>${organizerSocialLinkHtml(event)}</div>` : ""}
             <div class="venue">${venueGuideLinkHtml(event.venue)} · ${escapeHtml(event.district)}</div>
             <p class="description">${escapeHtml(publicText(event.description))}</p>
             ${eventTrustLinkHtml()}
@@ -5031,14 +5127,14 @@
         <div class="highlight-list">
           ${highlights.map(event => {
             const visual = eventVisual(event);
-            const organizer = knownOrganizerFor(event);
+            const presenter = presenterFor(event);
             const fallback = posterSvg(event);
             return `
               <button class="highlight-card" type="button" data-id="${event.id}" style="background-image: url('${escapeHtml(fallback)}')">
                 <img src="${escapeHtml(visual.src)}" alt="${escapeHtml(visual.alt)}" loading="eager" decoding="async" fetchpriority="high">
                 <span class="highlight-date">${escapeHtml(compactEventDate(event).split(" ").join("\n"))}</span>
                 <b>${escapeHtml(event.title)}</b>
-                <small>${escapeHtml(event.venue)}${organizer ? ` / ${escapeHtml(organizer)}` : ""}</small>
+                <small>${escapeHtml(event.venue)}${presenter ? ` · ${escapeHtml(presenter)}` : ""}</small>
                 <em>${escapeHtml(event.time)}</em>
               </button>
             `;
@@ -5078,7 +5174,7 @@
         ["Source count", `${sourceCountFor(event)} source${sourceCountFor(event) === 1 ? "" : "s"}`],
         ["Source layer", sourceStatusLabel(event)]
       ] : [
-        ["Organizer", organizerFor(event)],
+        ["Presented by", presenterFor(event) || "Check source"],
         ["Sound", event.genre],
         ["Price", event.price],
         ["Age / ID", event.age],
@@ -5528,6 +5624,25 @@
     }
 
     function setupControls() {
+      const setMobileFilterOpen = open => {
+        if (!controlsEl || !mobileFilterToggle) return;
+        controlsEl.classList.toggle("filter-sheet-open", open);
+        mobileFilterToggle.setAttribute("aria-expanded", open ? "true" : "false");
+        mobileFilterToggle.textContent = open ? "Done" : "Filters";
+      };
+      if (mobileFilterToggle && controlsEl) {
+        mobileFilterToggle.addEventListener("click", () => {
+          setMobileFilterOpen(!controlsEl.classList.contains("filter-sheet-open"));
+        });
+        document.addEventListener("keydown", event => {
+          if (event.key === "Escape") setMobileFilterOpen(false);
+        });
+        document.addEventListener("click", event => {
+          if (!controlsEl.classList.contains("filter-sheet-open")) return;
+          if (controlsEl.contains(event.target)) return;
+          setMobileFilterOpen(false);
+        });
+      }
       const handleControlChange = () => {
         if (statusFilter.value === "past" && dateWindow === "future") setDateWindow("all");
         syncActiveMonthToMatches();

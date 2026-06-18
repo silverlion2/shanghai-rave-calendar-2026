@@ -91,3 +91,28 @@ test("homepage highlight cards paint a fallback poster before poster images deco
     assert.match(renderHighlights, /style="background-image: url\('\$\{escapeHtml\(fallback\)\}'\)"/);
   }
 });
+
+test("mobile homepage promotes highlights before masthead and shrinks poster rail", () => {
+  const css = readSiteFile("assets/basement-dispatch.css");
+
+  assert.match(
+    css,
+    /@media\s*\(max-width:\s*700px\)\s*\{[\s\S]*?\.calendar-shell\s+\.highlight-wall\s*\{[^}]*order:\s*1/i,
+  );
+  assert.match(
+    css,
+    /@media\s*\(max-width:\s*700px\)\s*\{[\s\S]*?\.calendar-shell\s+\.topbar\s*\{[^}]*order:\s*2/i,
+  );
+  assert.match(
+    css,
+    /@media\s*\(max-width:\s*700px\)\s*\{[\s\S]*?\.calendar-shell\s+\.calendar-workbench\s*\{[^}]*order:\s*3/i,
+  );
+  assert.match(
+    css,
+    /@media\s*\(max-width:\s*700px\)\s*\{[\s\S]*?\.calendar-shell\s+\.poster-strip\s*\{[^}]*grid-auto-columns:\s*minmax\(82px,\s*25vw\)/i,
+  );
+  assert.match(
+    css,
+    /@media\s*\(max-width:\s*700px\)\s*\{[\s\S]*?\.calendar-shell\s+\.highlight-card\s*\{[^}]*min-height:\s*168px/i,
+  );
+});

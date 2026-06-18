@@ -1,0 +1,86 @@
+{
+  "generatedAt": "2026-06-18",
+  "notes": "Only entries with a verified localFile are rendered in the calendar. Unresolved venue and presenter groups intentionally fall back to text marks.",
+  "logos": [
+    {
+      "key": "abyss",
+      "label": "Abyss",
+      "localFile": "assets/venue-logos/abyss.webp",
+      "sourcePage": "https://ra.co/clubs/210425",
+      "sourceImage": "https://static.ra.co/images/clubs/abyss_y_fin-1.jpg?dateUpdated=1678446041400",
+      "confidence": "verified-ra-club-logo"
+    },
+    {
+      "key": "potent",
+      "label": "POTENT",
+      "localFile": "assets/venue-logos/potent.webp",
+      "sourcePage": "https://ra.co/clubs/186588",
+      "sourceImage": "https://static.ra.co/images/clubs/potent-logo.jpg?dateUpdated=1611745335733",
+      "confidence": "verified-ra-club-logo"
+    },
+    {
+      "key": "wigwam",
+      "label": "Wigwam",
+      "localFile": "assets/venue-logos/wigwam.webp",
+      "sourcePage": "https://ra.co/clubs/175555",
+      "sourceImage": "https://static.ra.co/images/clubs/wigwamlogo.png?dateUpdated=1710150158880",
+      "confidence": "verified-ra-club-logo"
+    },
+    {
+      "key": "heim",
+      "label": "Heim",
+      "localFile": "assets/venue-logos/heim.webp",
+      "sourcePage": "https://ra.co/clubs/188125",
+      "sourceImage": "https://static.ra.co/images/clubs/logo--heim-shanghai.jpeg?dateUpdated=1689924968173",
+      "confidence": "verified-ra-club-logo"
+    },
+    {
+      "key": "alter",
+      "label": "ALTER",
+      "localFile": "assets/venue-logos/alter.webp",
+      "sourcePage": "https://ra.co/promoters/105374",
+      "sourceImage": "https://static.ra.co/images/promoter/cn-alter.shanghai.jpg?dateUpdated=1656997772477",
+      "confidence": "verified-ra-promoter-logo"
+    },
+    {
+      "key": "knot",
+      "label": "KNOT",
+      "localFile": "assets/venue-logos/knot.webp",
+      "sourcePage": "https://ra.co/clubs/219768",
+      "sourceImage": "https://static.ra.co/images/clubs/knotwhiteblack.jpg?dateUpdated=1692353638930",
+      "confidence": "verified-ra-club-logo"
+    }
+  ],
+  "unresolved": [
+    {
+      "key": "exit",
+      "label": "EXIT",
+      "reason": "Available public images were venue photos or mismatched thumbnails, not a clean verified EXIT logo."
+    },
+    {
+      "key": "reactor",
+      "label": "Reactor",
+      "reason": "SmartShanghai thumbnail candidates were not the Reactor brand mark."
+    },
+    {
+      "key": "dirty-house",
+      "label": "Dirty House",
+      "reason": "SmartShanghai thumbnail candidates were not the Dirty House brand mark."
+    },
+    {
+      "key": "illum",
+      "label": "ILLUM",
+      "reason": "Search results mostly returned unrelated ILLUM retail and lighting brands."
+    },
+    {
+      "key": "space-panda",
+      "label": "Space Panda",
+      "reason": "Public results exposed event images but not a clean verified promoter logo."
+    },
+    {
+      "key": "vacuum",
+      "label": "VACUUM",
+      "reason": "Public results returned unrelated vacuum product/company logos."
+    }
+  ]
+}

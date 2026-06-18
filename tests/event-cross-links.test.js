@@ -45,6 +45,9 @@ function renderMonthGridForTest(html, code, events) {
     function knownOrganizerFor() {
       return "";
     }
+    function presenterFor() {
+      return "";
+    }
     function isFestival() {
       return false;
     }
@@ -59,6 +62,15 @@ function renderMonthGridForTest(html, code, events) {
     }
     function calendarGroupFor(event) {
       return { key: event.venue, label: event.venue || "Venue TBA", meta: "" };
+    }
+    function groupLogoMark(label) {
+      const words = String(label || "")
+        .trim()
+        .split(/\\s+/)
+        .filter(Boolean);
+      if (!words.length) return "BD";
+      if (words.length === 1) return words[0].slice(0, 2).toUpperCase();
+      return words.slice(0, 2).map(word => word[0]).join("").toUpperCase();
     }
     function escapeHtml(value) {
       return String(value || "");
@@ -101,7 +113,7 @@ test("homepage calendar entries link to local event detail pages", () => {
   }
 });
 
-test("homepage calendar grid renders one selected week grouped by venue rows", () => {
+test("homepage calendar grid renders a complete selected week grouped by venue rows", () => {
   const weeklyEvents = [
     { id: "june-tuesday", sortDate: "2026-06-02", title: "Tuesday room", venue: "Room A" },
     { id: "june-thursday", sortDate: "2026-06-04", title: "Thursday room", venue: "Room A" },
@@ -113,16 +125,88 @@ test("homepage calendar grid renders one selected week grouped by venue rows", (
     const html = readSiteFile(file);
     const grid = renderMonthGridForTest(html, "2026-06-01", weeklyEvents);
 
-    assert.match(grid, /--calendar-columns:\s*3/);
-    assert.match(grid, /Venue \/ promoter/);
+    assert.match(grid, /--calendar-columns:\s*7/);
+    assert.match(grid, /mobile-week-overview/);
+    assert.match(grid, /Venue \/ presenter/);
+    assert.match(grid, /<span>Mon<\/span>/);
     assert.match(grid, /<span>Tue<\/span>/);
+    assert.match(grid, /<span>Wed<\/span>/);
     assert.match(grid, /<span>Thu<\/span>/);
+    assert.match(grid, /<span>Fri<\/span>/);
     assert.match(grid, /<span>Sat<\/span>/);
-    assert.doesNotMatch(grid, /<span>Mon<\/span>/);
-    assert.doesNotMatch(grid, /<span>Sun<\/span>/);
+    assert.match(grid, /<span>Sun<\/span>/);
+    assert.match(grid, /<i>0<\/i>/);
+    assert.match(grid, /<i>1<\/i>/);
+    assert.match(grid, /class="calendar-venue-logo"/);
+    assert.match(grid, /<span class="calendar-venue-logo" data-group-key="Room A" aria-hidden="true">RA<\/span>/);
+    assert.match(grid, /<span class="calendar-venue-logo" data-group-key="Room B" aria-hidden="true">RB<\/span>/);
+    assert.match(grid, /class="calendar-venue-copy"/);
     assert.equal((grid.match(/<b>Room A<\/b>/g) || []).length, 1);
     assert.equal((grid.match(/<b>Room B<\/b>/g) || []).length, 1);
     assert.doesNotMatch(grid, /Outside week/);
+  }
+});
+
+test("calendar presenter labels remove duplicated venue names", () => {
+  for (const file of calendarFiles) {
+    const html = readSiteFile(file);
+    const normalizeFilterKey = extractFunction(html, "normalizeFilterKey");
+    const splitFilterEntityParts = extractFunction(html, "splitFilterEntityParts");
+    const knownOrganizerFor = extractFunction(html, "knownOrganizerFor");
+    const labelKeysForMatch = extractFunction(html, "labelKeysForMatch");
+    const commonGroupAliasSet = extractFunction(html, "commonGroupAliasSet");
+    const presenterFor = extractFunction(html, "presenterFor");
+    const presenter = Function(`
+      const organizerOverrides = {};
+      const commonVenuePromoterGroups = [
+        { key: "reactor", label: "Reactor", aliases: ["reactor", "reactor-shanghai", "reactorsh"] }
+      ];
+      ${normalizeFilterKey}
+      ${splitFilterEntityParts}
+      ${knownOrganizerFor}
+      ${labelKeysForMatch}
+      ${commonGroupAliasSet}
+      ${presenterFor}
+      return presenterFor;
+    `)();
+
+    assert.equal(presenter({ venue: "Abyss Shanghai", organizer: "FaQ / Abyss Shanghai" }), "FaQ");
+    assert.equal(presenter({ venue: "POTENT", organizer: "POTENT" }), "");
+    assert.equal(presenter({ venue: "Beaufort Terrace", organizer: "ALTER. / byyb" }), "ALTER. / byyb");
+    assert.equal(presenter({ venue: "Reactor Shanghai", organizer: "A.T.M / REACTORSH" }), "A.T.M");
+  }
+});
+
+test("venue presenter grouping does not match artist or description text", () => {
+  for (const file of calendarFiles) {
+    const html = readSiteFile(file);
+    const normalizeFilterKey = extractFunction(html, "normalizeFilterKey");
+    const splitFilterEntityParts = extractFunction(html, "splitFilterEntityParts");
+    const addFilterEntity = extractFunction(html, "addFilterEntity");
+    const knownOrganizerFor = extractFunction(html, "knownOrganizerFor");
+    const labelKeysForMatch = extractFunction(html, "labelKeysForMatch");
+    const presenterFor = extractFunction(html, "presenterFor");
+    const eventFilterEntities = extractFunction(html, "eventFilterEntities");
+    const commonGroupAliasSet = extractFunction(html, "commonGroupAliasSet");
+    const commonGroupMatchesEvent = extractFunction(html, "commonGroupMatchesEvent");
+    const matches = Function(`
+      const organizerOverrides = {};
+      ${normalizeFilterKey}
+      ${splitFilterEntityParts}
+      ${addFilterEntity}
+      ${knownOrganizerFor}
+      ${labelKeysForMatch}
+      ${presenterFor}
+      ${eventFilterEntities}
+      ${commonGroupAliasSet}
+      ${commonGroupMatchesEvent}
+      return commonGroupMatchesEvent;
+    `)();
+    const abyss = { key: "abyss", label: "Abyss", aliases: ["abyss", "abyss-shanghai"] };
+
+    assert.equal(matches({ venue: "C's", title: "Abyss DJ tribute", description: "Abyss appears only in copy" }, abyss), false);
+    assert.equal(matches({ venue: "Abyss Shanghai", title: "Room night" }, abyss, "venue"), true);
+    assert.equal(matches({ venue: "C's", organizer: "Abyss" }, abyss, "promoter"), true);
   }
 });
 
@@ -134,17 +218,17 @@ test("homepage inline CSS reserves the venue column before shared CSS loads", ()
     assert.match(
       styleBlock,
       /\.calendar-week-grid\s*{\s*grid-template-columns:\s*minmax\(150px,\s*220px\)\s*repeat\(var\(--calendar-columns,\s*7\),\s*minmax\(116px,\s*1fr\)\);/s,
-      `${file} should include the leading venue/promoter column in fallback calendar CSS`,
+      `${file} should include the leading venue/presenter column in fallback calendar CSS`,
     );
     assert.match(
       styleBlock,
       /@media \(max-width:\s*860px\)[\s\S]*?\.calendar-week-grid\s*{\s*grid-template-columns:\s*minmax\(150px,\s*220px\)\s*repeat\(var\(--calendar-columns,\s*7\),\s*minmax\(116px,\s*1fr\)\);/s,
-      `${file} should preserve the venue/promoter column in the narrow fallback CSS`,
+      `${file} should preserve the venue/presenter column in the narrow fallback CSS`,
     );
   }
 });
 
-test("homepage exposes week, month dropdown, and common venue promoter filters", () => {
+test("homepage exposes week, month dropdown, and common venue presenter filters", () => {
   for (const file of calendarFiles) {
     const html = readSiteFile(file);
 
@@ -153,9 +237,46 @@ test("homepage exposes week, month dropdown, and common venue promoter filters",
     assert.match(html, /id="venueFilterToggle"/);
     assert.match(html, /commonVenuePromoterGroups/);
     assert.match(html, /otherVenuePromoterGroup/);
-    assert.match(html, /All common \+ Other/);
+    assert.match(html, /mark: "AB"/);
+    assert.match(html, /mark: "PT"/);
+    assert.match(html, /logo: "assets\/venue-logos\/abyss\.webp"/);
+    assert.match(html, /logo: "assets\/venue-logos\/potent\.webp"/);
+    assert.match(html, /key: "void", label: "VOID"/);
+    assert.match(html, /key: "vacuum", label: "VACUUM"/);
+    assert.doesNotMatch(html, /label: "VOID \/ VACUUM"/);
+    assert.match(html, /groupLogoMark/);
+    assert.match(html, /All venues \+ presenters/);
     assert.doesNotMatch(html, /<button class="month-button"/);
   }
+});
+
+test("calendar venue presenter badges have stable styling hooks", () => {
+  const css = readSiteFile("assets/basement-dispatch.css");
+
+  assert.match(css, /\.calendar-venue-logo/);
+  assert.match(css, /\.calendar-venue-copy/);
+  assert.match(css, /\.calendar-venue-logo\.has-image/);
+  assert.match(css, /\.calendar-venue-logo img/);
+  assert.match(css, /\.calendar-venue-logo\[data-group-key="potent"\]/);
+  assert.match(css, /\.calendar-venue-logo\[data-group-key="other"\]/);
+  assert.match(css, /\.calendar-shell\s+\.calendar-venue-logo\s*\{[^}]*width:\s*20px/i);
+  assert.match(css, /\.calendar-shell\s+\.calendar-venue-copy\s+b\s*\{[^}]*font-size:\s*9px/i);
+  assert.match(css, /\.calendar-shell\s+\.calendar-venue-copy\s+small:not\(:last-child\)\s*\{[^}]*display:\s*none/i);
+  assert.match(css, /grid-template-columns:\s*minmax\(74px,\s*86px\)\s*repeat\(var\(--calendar-columns,\s*7\),\s*minmax\(108px,\s*31vw\)\)\s*!important/i);
+});
+
+test("verified venue presenter logo assets are source mapped", () => {
+  const manifest = JSON.parse(readSiteFile("assets/venue-logos/sources.json"));
+
+  assert.ok(Array.isArray(manifest.logos));
+  assert.ok(manifest.logos.length >= 6);
+  for (const logo of manifest.logos) {
+    assert.match(logo.localFile, /^assets\/venue-logos\/.+\.webp$/);
+    assert.match(logo.sourcePage, /^https:\/\/ra\.co\//);
+    assert.ok(fs.existsSync(path.join(root, logo.localFile)), `${logo.localFile} should exist`);
+  }
+  assert.match(JSON.stringify(manifest.unresolved), /EXIT/);
+  assert.match(JSON.stringify(manifest.unresolved), /VACUUM/);
 });
 
 test("homepage public event surfaces do not expose raw confidence levels", () => {
