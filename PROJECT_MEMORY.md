@@ -1612,3 +1612,22 @@ Validation:
 - `node scripts/check.js` passed.
 - `node --test tests/trust-framework.test.js` passed.
 - `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json` passed with 0 findings.
+
+## 2026-06-18 Project Audit and Bug Fixes
+
+The user requested a full project audit to find and fix bugs. 
+
+Implemented state:
+
+- Fixed a memory leak in `assets/account-system.js` and `assets/ops-admin-gate.js` by properly storing and unsubscribing from the `onAuthStateChange` listener.
+- Added double-click and race condition guards in `account-system.js` (for saving events), `ops-admin-gate.js` (for admin sign-in), and `subscription-system.js` (for form submissions).
+- Improved parsing robustness in `assets/community-contributions.js` by isolating `try/catch` per row during `localStorage` deserialization to prevent a single corrupt row from wiping the queue.
+- Fixed a falsy comparison bug (`||` vs `??`) for `displayOrder` in `assets/community-badges.js`.
+- Added defensive null checks and `href` protocol validation (`http://` or `https://`) in `assets/poster-archive.js` to avoid crashes and prevent potential XSS vulnerabilities.
+- Verified that `localStorage` parsing in `planner.html` was properly wrapped in `try/catch`.
+
+Validation:
+
+- `node --check` ran on all JavaScript files successfully.
+- `npm run check` test suite passed with all 70 tests.
+- Site structure and event audits completed with 0 warnings.

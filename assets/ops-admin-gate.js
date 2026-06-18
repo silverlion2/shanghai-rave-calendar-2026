@@ -112,6 +112,7 @@
     let profile = {};
     let loading = true;
     let error = "";
+    let authSubscription = null;
 
     function currentAccess() {
       return system.adminAccessState({
@@ -165,6 +166,7 @@
     }
 
     async function handleAction(action) {
+      if (loading) return;
       error = "";
       if (!client) return;
       const form = gate.querySelector("[data-ops-admin-form]");
@@ -173,6 +175,8 @@
           const email = fieldValue(form, "email");
           const password = fieldValue(form, "password");
           if (!email || !password) throw new Error("Email and password are required.");
+          loading = true;
+          render();
           const { error: signInError } = await client.auth.signInWithPassword({ email, password });
           if (signInError) throw signInError;
           loading = true;
@@ -213,12 +217,16 @@
     }
 
     if (client?.auth?.onAuthStateChange) {
-      client.auth.onAuthStateChange((_event, nextSession) => {
+      if (authSubscription) {
+        authSubscription.unsubscribe();
+      }
+      const { data: { subscription } } = client.auth.onAuthStateChange((_event, nextSession) => {
         session = nextSession;
         loading = true;
         render();
         refresh();
       });
+      authSubscription = subscription;
     }
 
     render();

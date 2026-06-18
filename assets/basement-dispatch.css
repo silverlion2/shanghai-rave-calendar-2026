@@ -2985,3 +2985,22 @@ body:has(.calendar-shell) .signal-canvas {
     grid-auto-columns: minmax(198px, 260px);
   }
 }
+
+/* --- Anti-Download Protections --- */
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+/* Prevent context menu and drag for posters */
+.poster img,
+.archive-poster img,
+.poster-strip-card img,
+.contribution-poster-grid img,
+.event-card.has-event-poster .poster img,
+#modalImage {
+  pointer-events: none;
+}

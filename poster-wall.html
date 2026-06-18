@@ -702,8 +702,11 @@
     </section>
 
     <div class="wall-meta" aria-live="polite">
-      <span><b id="posterCount">0</b> event cards</span>
-      <span id="posterScope">loading</span>
+      <div style="display: flex; gap: 16px; align-items: center;">
+        <span><b id="posterCount">0</b> event cards</span>
+        <span id="posterScope">loading</span>
+      </div>
+      <a href="contribute.html" style="color: var(--cyan); border: 1px solid rgba(54, 199, 231, .3); padding: 4px 12px; text-decoration: none; font-family: var(--font-display); font-size: 16px; background: rgba(54, 199, 231, .05); transition: border-color 0.2s;">Missing Event?</a>
     </div>
 
     <section class="poster-waterfall" id="posterWall" aria-label="Event card list"></section>

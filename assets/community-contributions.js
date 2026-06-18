@@ -276,8 +276,10 @@
     const details = cleanText(payload.details, 3000);
     const consent = consentValue(payload.consent);
 
+    const posterUrl = normalizeUrl(payload.posterUrl);
+
     if (title.length < 2) throw new Error("Add a specific event, DJ, venue, or source title.");
-    if (!sourceUrl && sourceNote.length < 3) throw new Error("Add a source URL or a short source note.");
+    if (!sourceUrl && sourceNote.length < 3 && !posterUrl) throw new Error("Add a source URL, source note, or upload a poster.");
     if (details.length < 20) throw new Error("Add at least 20 characters of source-backed detail.");
     if (!consent) throw new Error("Confirm this can be reviewed and merged by the Basement Dispatch editors.");
 
@@ -296,6 +298,7 @@
       city: cleanText(payload.city, 80) || "Shanghai",
       sourceUrl,
       sourceNote,
+      posterUrl,
       details,
       contact: cleanText(payload.contact, 160),
       consent,
@@ -304,7 +307,7 @@
     };
   }
 
-  function recordFromForm(form) {
+  function recordFromForm(form, posterUrl = "") {
     const data = new FormData(form);
     return recordFromPayload({
       contributionMode: data.get("contributionMode"),
@@ -321,6 +324,7 @@
       city: data.get("city"),
       sourceUrl: data.get("sourceUrl"),
       sourceNote: data.get("sourceNote"),
+      posterUrl: posterUrl,
       details: data.get("details"),
       contact: data.get("contact"),
       consent: data.get("consent"),
@@ -330,7 +334,16 @@
   function readContributions(win) {
     try {
       const rows = JSON.parse(win.localStorage.getItem(STORAGE_KEY) || "[]");
-      return Array.isArray(rows) ? rows.map(row => recordFromPayload({ ...row, consent: true })).slice(0, MAX_LOCAL_ROWS) : [];
+      if (!Array.isArray(rows)) return [];
+      const validRows = [];
+      for (const row of rows) {
+        try {
+          validRows.push(recordFromPayload({ ...row, consent: true }));
+        } catch (_) {
+          // ignore corrupted row
+        }
+      }
+      return validRows.slice(0, MAX_LOCAL_ROWS);
     } catch (_) {
       return [];
     }
@@ -409,6 +422,7 @@
       city: record.city || "Shanghai",
       source_url: record.sourceUrl || null,
       source_note: record.sourceNote || null,
+      poster_url: record.posterUrl || null,
       details: record.details,
       contact_method: record.contact || null,
       status: "pending",
@@ -540,6 +554,10 @@
           <label class="contribution-field span-2">
             <span>Source note</span>
             <input class="contribution-input" name="sourceNote" type="text" maxlength="240" autocomplete="off" placeholder="Official WeChat post, Xiaohongshu account, poster photo, ticket mini-program">
+          </label>
+          <label class="contribution-field span-2">
+            <span>Upload Poster (Optional)</span>
+            <input class="contribution-input" name="posterFile" type="file" accept="image/jpeg, image/png, image/webp" style="padding: 10px;">
           </label>
           <label class="contribution-field span-2">
             <span>Details</span>
@@ -703,7 +721,38 @@
     form.addEventListener("submit", async event => {
       event.preventDefault();
       try {
-        const record = recordFromForm(form);
+        status.innerHTML = "<strong>Saving...</strong> Processing submission.";
+        const fileInput = form.querySelector('[name="posterFile"]');
+        const file = fileInput && fileInput.files[0];
+        let posterUrl = "";
+        
+        if (file) {
+          status.innerHTML = "<strong>Uploading...</strong> Sending poster to secure storage.";
+          if (!canUseSupabase(win)) {
+            throw new Error("Supabase is not configured. Cannot upload poster.");
+          }
+          const config = contributionConfig(win);
+          const client = win.supabase.createClient(config.url, config.anonKey);
+          
+          const ext = file.name.split('.').pop() || "jpg";
+          const fileName = `poster-${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}.${ext}`;
+          
+          const { error } = await client.storage
+            .from('contribution_posters')
+            .upload(fileName, file);
+            
+          if (error) {
+            throw new Error(`Upload failed: ${error.message}`);
+          }
+          
+          const { data: publicUrlData } = client.storage
+            .from('contribution_posters')
+            .getPublicUrl(fileName);
+            
+          posterUrl = publicUrlData.publicUrl;
+        }
+
+        const record = recordFromForm(form, posterUrl);
         writeContribution(win, record);
         renderLocalQueue(mount, win);
         if (typeof win.gtag === "function") {

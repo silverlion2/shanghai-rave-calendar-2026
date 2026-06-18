@@ -50,18 +50,20 @@
 
   function bindControls() {
     const updateFromControl = () => {
-      state.query = els.searchInput.value.trim().toLowerCase();
-      state.year = els.yearFilter.value;
-      state.venue = els.venueFilter.value;
-      state.tag = els.tagFilter.value;
-      state.sort = els.sortFilter.value;
+      state.query = els.searchInput?.value.trim().toLowerCase() || "";
+      state.year = els.yearFilter?.value || "";
+      state.venue = els.venueFilter?.value || "";
+      state.tag = els.tagFilter?.value || "";
+      state.sort = els.sortFilter?.value || "";
       render();
     };
 
-    [els.searchInput, els.yearFilter, els.venueFilter, els.tagFilter, els.sortFilter].forEach(control => {
-      control.addEventListener("input", updateFromControl);
-      control.addEventListener("change", updateFromControl);
-    });
+    [els.searchInput, els.yearFilter, els.venueFilter, els.tagFilter, els.sortFilter]
+      .filter(Boolean)
+      .forEach(control => {
+        control.addEventListener("input", updateFromControl);
+        control.addEventListener("change", updateFromControl);
+      });
 
     [els.modalClose, els.modalBack].forEach(button => button.addEventListener("click", closeModal));
     els.modal.addEventListener("click", event => {
@@ -200,7 +202,8 @@
   }
 
   function setLink(link, href) {
-    if (!href) {
+    if (!link) return;
+    if (!href || !(href.startsWith("http://") || href.startsWith("https://"))) {
       link.hidden = true;
       link.removeAttribute("href");
       return;

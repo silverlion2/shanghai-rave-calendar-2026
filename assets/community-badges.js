@@ -233,8 +233,8 @@
       tier: cleanText(item.tier || fallback.tier || "bronze", 32),
       icon: cleanText(item.icon || fallback.icon || "BD", 8).toUpperCase(),
       styleKey: SAFE_STYLES.has(styleKey) ? styleKey : "cyan",
-      displayOrder: Number.isFinite(Number(item.displayOrder || fallback.displayOrder))
-        ? Number(item.displayOrder || fallback.displayOrder)
+      displayOrder: Number.isFinite(Number(item.displayOrder ?? fallback.displayOrder))
+        ? Number(item.displayOrder ?? fallback.displayOrder)
         : 100,
       ruleConfig: item.ruleConfig || fallback.ruleConfig || {},
       visibility: cleanText(item.visibility || fallback.visibility || "public", 32),

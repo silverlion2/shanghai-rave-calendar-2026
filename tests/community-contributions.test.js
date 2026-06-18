@@ -128,7 +128,7 @@ test("recordFromPayload requires evidence, detail, and consent", () => {
       details: "Lineup only",
       consent: true,
     }),
-    /source URL or a short source note/
+    /source URL, source note, or upload a poster/
   );
 
   assert.throws(

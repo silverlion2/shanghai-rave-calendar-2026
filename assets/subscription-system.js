@@ -216,8 +216,14 @@
     renderForm(mount);
     const form = mount.querySelector("[data-subscription-form]");
     const status = mount.querySelector("[data-subscription-status]");
+    if (!form || !status) return;
+    let isSubmitting = false;
     form.addEventListener("submit", async event => {
       event.preventDefault();
+      if (isSubmitting) return;
+      isSubmitting = true;
+      const submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
       try {
         const record = recordFromForm(form);
         writeSubscription(win, record);
@@ -233,6 +239,9 @@
         status.innerHTML = statusText(record, remote);
       } catch (error) {
         status.innerHTML = `<strong>Not saved.</strong> ${escapeHtml(error.message || "Check the form and try again.")}`;
+      } finally {
+        isSubmitting = false;
+        if (submitBtn) submitBtn.disabled = false;
       }
     });
   }

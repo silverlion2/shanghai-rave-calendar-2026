@@ -1360,6 +1360,7 @@
     async function authAction(action) {
       if (!state.client) throw new Error("Supabase Auth client is unavailable");
       const form = mount.querySelector("[data-auth-form]");
+      if (!form) throw new Error("Auth form not found");
       const formData = new FormData(form);
       const email = String(formData.get("email") || "").trim();
       const password = String(formData.get("password") || "");
@@ -1473,6 +1474,9 @@
     }
 
     async function toggleSavedEvent(eventId) {
+      if (state.togglingEvents?.has(eventId)) return;
+      state.togglingEvents = state.togglingEvents || new Set();
+      state.togglingEvents.add(eventId);
       const before = new Set(state.preferences.savedEventIds);
       const nextIds = savedEventIdsAfterToggle(state.preferences.savedEventIds, eventId);
       const shouldSave = !before.has(eventId);
@@ -1494,6 +1498,7 @@
         }
         render();
       }
+      state.togglingEvents.delete(eventId);
     }
 
     async function refreshBadgeState() {
@@ -1564,7 +1569,10 @@
         state.error = error.message || "";
       }
       if (state.client?.auth?.onAuthStateChange) {
-        state.client.auth.onAuthStateChange((_event, session) => {
+        if (state.authSubscription) {
+          state.authSubscription.unsubscribe();
+        }
+        const { data: { subscription } } = state.client.auth.onAuthStateChange((_event, session) => {
           state.session = session;
           if (session?.user) {
             refreshRemoteState().catch(error => {
@@ -1575,6 +1583,7 @@
             render();
           }
         });
+        state.authSubscription = subscription;
       }
       render();
     }
@@ -1673,3 +1682,12 @@
     enhanceCalendarPage,
   };
 });
+
+// --- Anti-Download Protections ---
+if (typeof document !== "undefined") {
+  document.addEventListener("contextmenu", function(e) {
+    if (e.target && e.target.tagName === "IMG") {
+      e.preventDefault();
+    }
+  });
+}
