@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sound Buddy Principles | Shanghai Rave Index</title>
+  <meta name="description" content="A cited technical explanation of Sound Buddy: browser audio analysis, music information retrieval theory, privacy boundaries, and why genre detection is treated as a learning prompt rather than proof.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#36c7e7">
+  <link rel="canonical" href="https://raveindexsh.top/sound-buddy-principles">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HP6NQ3VZB9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-HP6NQ3VZB9");
+  </script>
+  <!-- Vercel Web Analytics -->
+  <script>
+    window.va = window.va || function () {
+      (window.vaq = window.vaq || []).push(arguments);
+    };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Shanghai Rave Index">
+  <meta property="og:title" content="Sound Buddy Principles | Shanghai Rave Index">
+  <meta property="og:description" content="The cited technical basis for Sound Buddy: Web Audio, MIR features, tempo estimation, genre subjectivity, and local-only privacy boundaries.">
+  <meta property="og:url" content="https://raveindexsh.top/sound-buddy-principles">
+  <meta property="og:image" content="https://raveindexsh.top/og-image.png">
+  <meta property="og:image:alt" content="Shanghai Rave Index Sound Buddy principles page">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Sound Buddy Principles",
+    "name": "Sound Buddy Principles",
+    "url": "https://raveindexsh.top/sound-buddy-principles",
+    "description": "A cited technical explanation of the Sound Buddy browser audio analyzer, its theoretical basis, and its limitations.",
+    "dateModified": "2026-06-18",
+    "isAccessibleForFree": true,
+    "inLanguage": "en",
+    "about": [
+      "Web Audio API",
+      "Music information retrieval",
+      "Audio feature extraction",
+      "Tempo estimation",
+      "Music genre classification",
+      "Browser microphone privacy"
+    ],
+    "citation": [
+      "https://www.w3.org/TR/webaudio-1.1/",
+      "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode",
+      "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getByteFrequencyData",
+      "https://www.w3.org/TR/mediacapture-streams/",
+      "https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia",
+      "https://www.w3.org/TR/permissions/",
+      "https://www.cs.princeton.edu/courses/archive/spr05/cos598E/bib/tsap02gtzan.pdf",
+      "https://ismir2001.ismir.net/pdf/tzanetakis.pdf",
+      "https://biblio.ugent.be/publication/404062",
+      "https://librosa.org/doc/main/generated/librosa.feature.spectral_centroid.html",
+      "https://librosa.org/doc/0.11.0/generated/librosa.beat.beat_track.html",
+      "https://essentia.upf.edu/",
+      "https://transactions.ismir.net/about",
+      "https://transactions.ismir.net/articles/10.5334/tismir.43"
+    ],
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Shanghai Rave Index",
+      "url": "https://raveindexsh.top/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Basement Dispatch"
+    }
+  }
+  </script>
+  <style>
+    .principles-page {
+      display: grid;
+      gap: 18px;
+    }
+
+    .principles-hero {
+      min-height: min(720px, calc(100vh - 150px));
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+      gap: 18px;
+      align-items: end;
+      border: 1px solid rgba(229, 222, 209, .18);
+      background:
+        linear-gradient(180deg, rgba(5, 6, 6, .12), rgba(5, 6, 6, .88)),
+        repeating-linear-gradient(90deg, rgba(54, 199, 231, .12) 0 1px, transparent 1px 24px),
+        repeating-linear-gradient(0deg, rgba(255, 85, 47, .1) 0 1px, transparent 1px 42px),
+        #050606;
+      padding: clamp(20px, 4vw, 44px);
+      overflow: hidden;
+    }
+
+    .principles-hero h1 {
+      max-width: 980px;
+      margin: 0;
+      color: var(--paper);
+      font-family: var(--font-display);
+      font-size: clamp(58px, 9vw, 142px);
+      font-weight: 900;
+      line-height: .82;
+      text-transform: uppercase;
+    }
+
+    .principles-hero h1 span {
+      display: block;
+    }
+
+    .principles-hero p {
+      max-width: 740px;
+      margin: 12px 0 0;
+      color: var(--paper);
+      font-size: 16px;
+      font-weight: 650;
+      line-height: 1.5;
+    }
+
+    .principles-verdict {
+      display: grid;
+      gap: 12px;
+      border: 1px solid rgba(54, 199, 231, .34);
+      border-left: 4px solid var(--cyan);
+      background: rgba(5, 6, 6, .78);
+      padding: 16px;
+    }
+
+    .principles-verdict b,
+    .principles-section h2,
+    .principles-card b,
+    .principles-row b,
+    .principles-source b {
+      color: var(--cyan);
+      font-family: var(--font-display);
+      font-weight: 900;
+      line-height: .95;
+      text-transform: uppercase;
+    }
+
+    .principles-verdict b {
+      font-size: 30px;
+    }
+
+    .principles-verdict p,
+    .principles-section p,
+    .principles-card p,
+    .principles-row p,
+    .principles-source p,
+    .principles-list li {
+      margin: 0;
+      color: var(--paper);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .principles-status {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .principles-status span,
+    .principles-chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      border: 1px solid rgba(229, 222, 209, .2);
+      background: rgba(5, 6, 6, .72);
+      color: var(--gold);
+      padding: 8px 10px;
+      font-family: var(--font-display);
+      font-size: 17px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .principles-section {
+      display: grid;
+      gap: 14px;
+      border-top: 1px solid rgba(229, 222, 209, .18);
+      padding-top: 18px;
+    }
+
+    .principles-section h2 {
+      margin: 0;
+      color: var(--paper);
+      font-size: clamp(34px, 5vw, 74px);
+    }
+
+    .principles-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .principles-grid.two {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .principles-card,
+    .principles-row,
+    .principles-source {
+      display: grid;
+      gap: 9px;
+      border: 1px solid rgba(229, 222, 209, .18);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, .03), rgba(0, 0, 0, .12)),
+        rgba(8, 10, 9, .82);
+      padding: 14px;
+    }
+
+    .principles-card {
+      border-left: 3px solid rgba(54, 199, 231, .62);
+    }
+
+    .principles-card b,
+    .principles-row b,
+    .principles-source b {
+      font-size: 22px;
+    }
+
+    .principles-evidence {
+      display: grid;
+      gap: 8px;
+    }
+
+    .principles-row {
+      grid-template-columns: minmax(180px, .9fr) minmax(0, 1.2fr) minmax(0, 1fr);
+      align-items: start;
+    }
+
+    .principles-row b {
+      color: var(--gold);
+    }
+
+    .principles-link {
+      color: var(--cyan);
+      font-weight: 900;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(54, 199, 231, .55);
+    }
+
+    .principles-link:hover {
+      color: var(--paper);
+      border-bottom-color: var(--paper);
+    }
+
+    .principles-list {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .principles-citations {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      counter-reset: citation;
+    }
+
+    .principles-source {
+      counter-increment: citation;
+      position: relative;
+      padding-left: 52px;
+    }
+
+    .principles-source::before {
+      content: counter(citation);
+      position: absolute;
+      left: 14px;
+      top: 14px;
+      display: grid;
+      place-items: center;
+      width: 26px;
+      height: 26px;
+      border: 1px solid rgba(54, 199, 231, .42);
+      color: var(--cyan);
+      font-family: var(--font-display);
+      font-weight: 900;
+    }
+
+    .principles-note {
+      border: 1px solid rgba(255, 85, 47, .35);
+      border-left: 4px solid var(--ember);
+      background:
+        linear-gradient(90deg, rgba(255, 85, 47, .12), transparent),
+        rgba(5, 6, 6, .72);
+      padding: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .principles-hero,
+      .principles-grid,
+      .principles-grid.two,
+      .principles-row,
+      .principles-citations {
+        grid-template-columns: 1fr;
+      }
+
+      .principles-status {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .principles-hero h1 {
+        font-size: clamp(48px, 16vw, 74px);
+      }
+
+      .principles-source {
+        padding-left: 14px;
+        padding-top: 48px;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="assets/basement-dispatch.css?v=xhs-contact-20260613c">
+</head>
+<body>
+  <main class="shell dispatch-shell principles-page">
+    <nav class="site-nav" aria-label="Site navigation">
+      <div class="nav-group">
+        <a class="nav-link" href="poster-wall.html">Events</a>
+        <a class="nav-link" href="index.html">Calendar</a>
+        <a class="nav-link" href="planner.html">Planner <small class="nav-beta">beta</small></a>
+        <a class="nav-link" href="live-room.html">Tonight <small class="nav-beta">beta</small></a>
+        <a class="nav-link" href="rave-everywhere.html">Everywhere <small class="nav-beta">beta</small></a>
+        <a class="nav-link" href="love-wall.html">Love</a>
+        <a class="nav-link" href="venues.html">Venues</a>
+        <a class="nav-link" href="djs.html">DJs</a>
+        <a class="nav-link" href="new-to-techno.html">New?</a>
+        <a class="nav-link" href="contribute.html">Contribute</a>
+        <a class="nav-link" href="account.html">Account</a>
+      </div>
+      <span class="tag">Sound Buddy / evidence</span>
+    </nav>
+
+    <header class="principles-hero">
+      <div>
+        <p class="kicker">Principles / citations / limits</p>
+        <h1><span>How</span><span>Sound Buddy</span><span>Works</span></h1>
+        <p>Sound Buddy is not a song recognizer. It is a local browser audio analyzer that turns broad acoustic cues into learning prompts for electronic music: low-end weight, top-end texture, pulse stability, approximate tempo, broad genre likeness, and subgenre candidates.</p>
+      </div>
+      <aside class="principles-verdict" aria-label="Theory verdict">
+        <b>Verdict</b>
+        <p>The foundation is solid for real-time feature extraction and educational listening feedback. It is intentionally weaker for authoritative genre naming, because genre labels are partly cultural, subjective, and context-dependent.</p>
+        <div class="principles-status">
+          <span>Strong: signal features</span>
+          <span>Strong: privacy model</span>
+          <span>Careful: genre labels</span>
+        </div>
+      </aside>
+    </header>
+
+    <section class="principles-section" aria-label="Short answer">
+      <h2>Short answer</h2>
+      <div class="principles-grid">
+        <article class="principles-card">
+          <b>Technically credible</b>
+          <p>The page uses standard browser APIs to request microphone input, route it through a Web Audio graph, and read real-time frequency/time-domain data. This is normal Web Audio territory, not speculative AI.</p>
+        </article>
+        <article class="principles-card">
+          <b>Scientifically grounded</b>
+          <p>Music information retrieval has long used timbral, rhythmic, spectral, temporal, and tonal descriptors for classification, similarity, tempo, and annotation tasks. Sound Buddy uses a small, transparent subset of that family of ideas.</p>
+        </article>
+        <article class="principles-card">
+          <b>Not final truth</b>
+          <p>The project should not claim exact subgenre identification. It should say "leans", "likeness", "candidate", and "learning cue", because genre classification is not purely objective and the page does not use a trained reference dataset.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="principles-section" aria-label="Processing pipeline">
+      <h2>The pipeline</h2>
+      <div class="principles-evidence">
+        <div class="principles-row">
+          <b>1. Permission</b>
+          <p>The browser asks for microphone access through `getUserMedia`. If the user denies permission, Sound Buddy cannot listen live and falls back to practice mode.</p>
+          <p>Basis: W3C Media Capture defines APIs for requesting access to microphones and cameras; MDN documents explicit user permission requirements.</p>
+        </div>
+        <div class="principles-row">
+          <b>2. Local analysis</b>
+          <p>The microphone stream is connected to an `AnalyserNode`. The analyzer exposes time-domain and frequency-domain data without needing to save or upload audio.</p>
+          <p>Basis: Web Audio defines an audio routing graph; `AnalyserNode` is designed for real-time frequency and time-domain analysis.</p>
+        </div>
+        <div class="principles-row">
+          <b>3. Feature extraction</b>
+          <p>The code reduces raw bins into broad bands: sub, kick/bass, low-mid body, mids, top, and air. It also estimates balance, brightness, pulse stability, and rough BPM.</p>
+          <p>Basis: MIR systems commonly describe audio with spectral, temporal, rhythmic, and high-level descriptors.</p>
+        </div>
+        <div class="principles-row">
+          <b>4. Feedback layer</b>
+          <p>The app maps features to prompts: "low end is leading", "top texture opened", "pulse is steady", "genre mix reads breaks plus electro plus techno".</p>
+          <p>Basis: the translation from features to advice is editorial and educational; it is deliberately framed as guidance, not identification.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="principles-section" aria-label="Theory strength">
+      <h2>What is theoretically strong</h2>
+      <div class="principles-grid two">
+        <article class="principles-card">
+          <b>1. Real-time frequency data</b>
+          <p>The browser can supply frequency-domain values from live audio. MDN documents that `getByteFrequencyData()` copies current frequency data into an unsigned byte array; the data spans from 0 to half the sample rate. That supports meters, spectral balance, and texture prompts.</p>
+        </article>
+        <article class="principles-card">
+          <b>2. Spectral balance</b>
+          <p>Audio analysis libraries commonly treat each frame of a magnitude spectrum as a distribution over frequency bins. Spectral centroid is one standard example: it estimates where spectral energy is centered. Sound Buddy uses simpler band ratios and brightness, but the concept is aligned.</p>
+        </article>
+        <article class="principles-card">
+          <b>3. Rhythm and tempo cues</b>
+          <p>Beat tracking research commonly works from onset strength, tempo estimation, and beat peak selection. Sound Buddy does a lighter, browser-friendly pulse estimate. It is enough for "rough BPM / stable pulse" comments, not enough for definitive beat tracking.</p>
+        </article>
+        <article class="principles-card">
+          <b>4. Genre-relevant features</b>
+          <p>Tzanetakis and Cook's classic genre-classification work proposed timbral texture, rhythmic content, and pitch content feature sets. Electronic styles often differ strongly in rhythm, low-end weight, and timbre, so those cues are useful for education.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="principles-section" aria-label="Limits">
+      <h2>What is not strong enough to overclaim</h2>
+      <div class="principles-grid">
+        <article class="principles-card principles-note">
+          <b>No track ID</b>
+          <p>The project does not fingerprint audio, compare against a catalog, or recognize artists. It cannot tell you the track title.</p>
+        </article>
+        <article class="principles-card principles-note">
+          <b>No authoritative subgenre ruling</b>
+          <p>"Hard techno 71%" or "UKG / garage 56%" means similarity to a cue profile inside this app. It is not a database-backed ground truth label.</p>
+        </article>
+        <article class="principles-card principles-note">
+          <b>No room correction</b>
+          <p>Phone speakers, laptop mics, club PA bleed, distance from the source, echo, and browser audio processing can shift the spectrum. The advice is best used as a listening aid.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="principles-section" aria-label="Theory by feature">
+      <h2>Evidence map</h2>
+      <div class="principles-evidence">
+        <div class="principles-row">
+          <b>Input level</b>
+          <p>Measures whether the microphone signal is loud enough to analyze. Below a threshold, the page waits.</p>
+          <p>Supported by standard time-domain audio analysis; useful for avoiding false notes on silence.</p>
+        </div>
+        <div class="principles-row">
+          <b>Low-end weight</b>
+          <p>Compares sub and bass bands against total spectrum. This helps teach kick pressure, bass tail, and physical weight.</p>
+          <p>Reasonable for techno education; vulnerable to playback system and microphone response.</p>
+        </div>
+        <div class="principles-row">
+          <b>Top texture</b>
+          <p>Compares high and air bands. This helps identify hats, metallic noise, hiss, resonance, and perceived intensity.</p>
+          <p>Grounded in spectral feature thinking; not a direct instrument detector.</p>
+        </div>
+        <div class="principles-row">
+          <b>Pulse / BPM</b>
+          <p>Looks for repeated low-end movement and estimates a rough pulse. It can say "fast pulse" or "steady loop".</p>
+          <p>Beat tracking is a serious MIR task; this browser heuristic is intentionally lighter than academic beat trackers.</p>
+        </div>
+        <div class="principles-row">
+          <b>Genre mix</b>
+          <p>Ranks broad lanes such as techno, electro, house, breaks, acid, trance, garage/UKG, jungle/DNB, bass/dubstep, downtempo/ambient, hard dance/hardcore, and industrial by feature similarity over a recent audio-stream window, not one isolated frame.</p>
+          <p>The current window is about 12 seconds: long enough to cover a short groove phrase at common club tempos, short enough to react when the arrangement changes.</p>
+        </div>
+        <div class="principles-row">
+          <b>Subgenre candidates</b>
+          <p>Maps the recent stream cues to detailed labels such as hard techno, dub techno, electro funk, UKG, jungle/DNB, dubstep, footwork, psytrance, hardstyle, hardcore/gabber, ambient, and hard trance.</p>
+          <p>The weakest layer scientifically. It is editorial taxonomy plus signal heuristics, so the UI must keep confidence language cautious.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="principles-section" aria-label="Privacy">
+      <h2>Privacy position</h2>
+      <div class="principles-grid">
+        <article class="principles-card">
+          <b>Local by design</b>
+          <p>The current implementation reads browser analyzer arrays and produces comments in the page. It does not need server audio processing.</p>
+        </article>
+        <article class="principles-card">
+          <b>Permission-bound</b>
+          <p>Microphone access depends on browser permission. A denial is handled as a normal state, not an error to bypass.</p>
+        </article>
+        <article class="principles-card">
+          <b>Minimal claim</b>
+          <p>The safe public claim is: no audio is intentionally hosted, stored, uploaded, or fingerprinted by this page.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="principles-section" aria-label="References">
+      <h2>Sources</h2>
+      <p>These references support the technical basis and the project's caution around genre naming. They do not certify the app's exact thresholds; those thresholds remain product heuristics.</p>
+      <div class="principles-citations">
+        <article class="principles-source">
+          <b>W3C Web Audio API</b>
+          <p>Defines the high-level browser audio graph model used for processing and analyzing audio in web applications.</p>
+          <a class="principles-link" href="https://www.w3.org/TR/webaudio-1.1/" rel="noopener">w3.org/TR/webaudio-1.1</a>
+        </article>
+        <article class="principles-source">
+          <b>MDN AnalyserNode</b>
+          <p>Documents the browser node that provides real-time frequency and time-domain analysis information.</p>
+          <a class="principles-link" href="https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode" rel="noopener">MDN AnalyserNode</a>
+        </article>
+        <article class="principles-source">
+          <b>MDN getByteFrequencyData</b>
+          <p>Documents how frequency data is copied into a byte array and how frequency bins map up to half the sample rate.</p>
+          <a class="principles-link" href="https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getByteFrequencyData" rel="noopener">MDN frequency data</a>
+        </article>
+        <article class="principles-source">
+          <b>W3C Media Capture</b>
+          <p>Defines browser APIs for requesting access to local media devices such as microphones.</p>
+          <a class="principles-link" href="https://www.w3.org/TR/mediacapture-streams/" rel="noopener">w3.org/TR/mediacapture-streams</a>
+        </article>
+        <article class="principles-source">
+          <b>MDN getUserMedia</b>
+          <p>Documents the user-permission requirement for opening microphone or camera input.</p>
+          <a class="principles-link" href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia" rel="noopener">MDN getUserMedia</a>
+        </article>
+        <article class="principles-source">
+          <b>W3C Permissions</b>
+          <p>Defines common infrastructure for permission states around powerful web-platform features.</p>
+          <a class="principles-link" href="https://www.w3.org/TR/permissions/" rel="noopener">w3.org/TR/permissions</a>
+        </article>
+        <article class="principles-source">
+          <b>Tzanetakis and Cook, 2002</b>
+          <p>Classic IEEE paper on musical genre classification using timbral texture, rhythmic content, and pitch content features.</p>
+          <a class="principles-link" href="https://www.cs.princeton.edu/courses/archive/spr05/cos598E/bib/tsap02gtzan.pdf" rel="noopener">Musical genre classification of audio signals</a>
+        </article>
+        <article class="principles-source">
+          <b>Tzanetakis, 2001 ISMIR</b>
+          <p>Early genre-classification work noting perceptual criteria related to texture, instrumentation, and rhythmic structure.</p>
+          <a class="principles-link" href="https://ismir2001.ismir.net/pdf/tzanetakis.pdf" rel="noopener">Automatic musical genre classification</a>
+        </article>
+        <article class="principles-source">
+          <b>Lippens, Martens, Mulder, 2004</b>
+          <p>Compares human and automatic genre classification and supports the project's caution that genre labels are inherently subjective.</p>
+          <a class="principles-link" href="https://biblio.ugent.be/publication/404062" rel="noopener">Human and automatic genre classification</a>
+        </article>
+        <article class="principles-source">
+          <b>librosa spectral centroid</b>
+          <p>Documents a standard spectral descriptor that treats a magnitude spectrum as a frequency-bin distribution.</p>
+          <a class="principles-link" href="https://librosa.org/doc/main/generated/librosa.feature.spectral_centroid.html" rel="noopener">librosa spectral centroid</a>
+        </article>
+        <article class="principles-source">
+          <b>librosa beat tracking</b>
+          <p>Documents a beat-tracking pipeline based on onset strength, tempo estimation, and beat peak selection.</p>
+          <a class="principles-link" href="https://librosa.org/doc/0.11.0/generated/librosa.beat.beat_track.html" rel="noopener">librosa beat track</a>
+        </article>
+        <article class="principles-source">
+          <b>Essentia</b>
+          <p>Reference MIR library with spectral, temporal, tonal, rhythm, and high-level descriptors for audio analysis.</p>
+          <a class="principles-link" href="https://essentia.upf.edu/" rel="noopener">essentia.upf.edu</a>
+        </article>
+        <article class="principles-source">
+          <b>TISMIR scope</b>
+          <p>Shows MIR as an interdisciplinary research field covering rhythm, beat, tempo, timbre, style, genre, and classification.</p>
+          <a class="principles-link" href="https://transactions.ismir.net/about" rel="noopener">Transactions of ISMIR</a>
+        </article>
+        <article class="principles-source">
+          <b>Tempo estimation review</b>
+          <p>Peer-reviewed discussion of tempo-estimation evaluation, applications, metrics, and datasets.</p>
+          <a class="principles-link" href="https://transactions.ismir.net/articles/10.5334/tismir.43" rel="noopener">Music Tempo Estimation: Are We Done Yet?</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="principles-section" aria-label="Back to Sound Buddy">
+      <h2>Operational conclusion</h2>
+      <p>Sound Buddy is viable as an always-on educational listening companion. It should remain transparent, local, and cautious: strong on feature-based feedback, modest on genre certainty, explicit about privacy, and clear that style detection is a learning cue rather than proof.</p>
+      <p><a class="principles-link" href="sound-buddy.html">Return to Sound Buddy</a></p>
+    </section>
+
+    <footer class="footnotes bottom-dispatch-bar" aria-label="Basement Dispatch status">
+      <div class="bar-cell update-cell">
+        <span class="footer-alert-mark" aria-hidden="true">!</span>
+        <strong>Sound Buddy<br>principles</strong>
+      </div>
+      <div class="bar-cell">
+        <span>Citations support the method family, not exact genre certainty.</span>
+        <span>Use Sound Buddy as a learning companion, not a track ID service.</span>
+      </div>
+      <address class="bar-cell contact-cell">
+        <a class="contact-card-link" href="assets/social/xhs-contact-card.jpg" aria-label="Open RED Xiaohongshu contact QR card">
+          <span class="contact-copy">
+            <span>Contact / updates</span>
+            <b>RED</b>
+            <em>ID 980793145</em>
+          </span>
+          <img src="assets/social/xhs-contact-card.jpg" alt="" loading="lazy" decoding="async">
+        </a>
+      </address>
+      <div class="bar-cell">
+        <span>No audio is hosted, stored, or uploaded by Sound Buddy.</span>
+        <span>Microphone permission stays under browser control.</span>
+      </div>
+      <div class="bar-cell source-cell">
+        <span>Learn by listening</span>
+        <span>Verify before going</span>
+        <a href="trust.html">How we recommend</a>
+        <a href="trust.html#corrections">Corrections</a>
+      </div>
+    </footer>
+    <a class="admin-corner" data-admin-corner href="ops.html" aria-label="Admin sign in">admin</a>
+  </main>
+</body>
+</html>

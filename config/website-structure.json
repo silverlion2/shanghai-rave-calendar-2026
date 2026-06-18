@@ -52,6 +52,28 @@
       "priority": "0.94"
     },
     {
+      "id": "sound-buddy",
+      "label": "Sound Buddy",
+      "file": "sound-buddy.html",
+      "route": "/sound-buddy",
+      "shell": "dispatch-shell",
+      "includeInSitemap": true,
+      "lastmod": "2026-06-18",
+      "changefreq": "weekly",
+      "priority": "0.91"
+    },
+    {
+      "id": "sound-buddy-principles",
+      "label": "Sound Buddy Principles",
+      "file": "sound-buddy-principles.html",
+      "route": "/sound-buddy-principles",
+      "shell": "dispatch-shell",
+      "includeInSitemap": true,
+      "lastmod": "2026-06-18",
+      "changefreq": "monthly",
+      "priority": "0.64"
+    },
+    {
       "id": "poster-wall",
       "label": "Events",
       "file": "poster-wall.html",

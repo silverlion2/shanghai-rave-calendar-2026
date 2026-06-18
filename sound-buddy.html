@@ -1,0 +1,1679 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sound Buddy | Shanghai Rave Index</title>
+  <meta name="description" content="A local browser listening buddy for techno and underground electronic music. Play music nearby and get continuous notes about kick, bass, texture, and arrangement.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#36c7e7">
+  <link rel="canonical" href="https://raveindexsh.top/sound-buddy">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HP6NQ3VZB9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-HP6NQ3VZB9");
+  </script>
+  <!-- Vercel Web Analytics -->
+  <script>
+    window.va = window.va || function () {
+      (window.vaq = window.vaq || []).push(arguments);
+    };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shanghai Rave Index">
+  <meta property="og:title" content="Sound Buddy | Shanghai Rave Index">
+  <meta property="og:description" content="Play music nearby and get continuous local notes about kick, bass, texture, and arrangement.">
+  <meta property="og:url" content="https://raveindexsh.top/sound-buddy">
+  <meta property="og:image" content="https://raveindexsh.top/og-image.png">
+  <meta property="og:image:alt" content="Shanghai Rave Index Sound Buddy preview">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Sound Buddy",
+    "url": "https://raveindexsh.top/sound-buddy",
+    "applicationCategory": "MusicApplication",
+    "operatingSystem": "Web browser",
+    "description": "A local browser listening buddy that helps people notice kick, bass, texture, and arrangement in techno and underground electronic music.",
+    "isAccessibleForFree": true,
+    "inLanguage": "en",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Shanghai Rave Index",
+      "url": "https://raveindexsh.top/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Basement Dispatch"
+    }
+  }
+  </script>
+  <style>
+    .coach-page {
+      display: grid;
+      gap: 14px;
+    }
+
+    .coach-hero {
+      min-height: calc(100vh - 178px);
+      display: grid;
+      grid-template-columns: minmax(280px, 390px) minmax(0, 1fr);
+      gap: 14px;
+      align-items: start;
+      border-bottom: 1px solid rgba(229, 222, 209, .18);
+      padding-bottom: 14px;
+    }
+
+    .coach-stage,
+    .coach-console,
+    .coach-panel,
+    .coach-comment,
+    .coach-meter {
+      border: 1px solid rgba(229, 222, 209, .2);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, .03), rgba(0, 0, 0, .12)),
+        rgba(8, 10, 9, .88);
+    }
+
+    .coach-stage {
+      position: relative;
+      min-height: 560px;
+      align-self: start;
+      display: grid;
+      align-content: end;
+      overflow: hidden;
+      padding: clamp(20px, 4vw, 36px);
+    }
+
+    .coach-stage::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(180deg, rgba(5, 6, 6, .06), rgba(5, 6, 6, .86)),
+        repeating-linear-gradient(90deg, rgba(54, 199, 231, .12) 0 1px, transparent 1px 18px),
+        repeating-linear-gradient(0deg, rgba(255, 85, 47, .1) 0 1px, transparent 1px 34px);
+      z-index: 1;
+    }
+
+    .coach-stage::after {
+      content: "";
+      position: absolute;
+      width: 94%;
+      height: 240px;
+      left: 3%;
+      top: 16%;
+      border-top: 3px solid rgba(255, 85, 47, .72);
+      border-bottom: 1px solid rgba(54, 199, 231, .54);
+      background:
+        linear-gradient(90deg, transparent, rgba(255, 85, 47, .24), transparent),
+        repeating-linear-gradient(90deg, transparent 0 18px, rgba(54, 199, 231, .22) 18px 21px, transparent 21px 44px);
+      transform: skewY(-4deg);
+      opacity: .72;
+    }
+
+    .coach-copy {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      gap: 12px;
+      max-width: 560px;
+    }
+
+    .coach-copy h1 {
+      margin: 0;
+      color: var(--paper);
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: 0;
+      font-family: var(--font-display);
+      font-size: clamp(54px, 7vw, 104px) !important;
+      font-weight: 900;
+      line-height: .82;
+      text-transform: uppercase;
+      text-shadow: 0 2px 0 rgba(0, 0, 0, .88);
+    }
+
+    .coach-copy h1 span {
+      display: block;
+    }
+
+    .coach-copy .dispatch-strip {
+      width: fit-content;
+      max-width: 100%;
+      white-space: normal;
+      line-height: 1.05;
+    }
+
+    .coach-copy p,
+    .coach-status,
+    .coach-readout span,
+    .coach-panel p,
+    .coach-comment p,
+    .coach-meter span,
+    .coach-meter small {
+      margin: 0;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.42;
+      text-transform: uppercase;
+    }
+
+    .coach-copy .subhead {
+      max-width: 500px;
+      color: var(--paper);
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: none;
+    }
+
+    .coach-safety {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .coach-safety span,
+    .coach-safety a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      border: 1px solid rgba(54, 199, 231, .32);
+      background: rgba(5, 6, 6, .58);
+      color: var(--cyan);
+      padding: 7px 9px;
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    .coach-safety a:hover {
+      border-color: var(--paper);
+      color: var(--paper);
+    }
+
+    .coach-console {
+      min-height: 0;
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(280px, .8fr);
+      grid-template-areas:
+        "actions actions"
+        "feed readouts"
+        "feed meters"
+        "feed scope"
+        "insights insights"
+        "settingsDrawer settingsDrawer"
+        "styleDrawer notesDrawer";
+      align-content: start;
+      gap: 10px;
+      padding: 12px;
+    }
+
+    .coach-actions {
+      grid-area: actions;
+      display: grid;
+      grid-template-columns: minmax(160px, 1.2fr) minmax(88px, .6fr) minmax(120px, .8fr);
+      gap: 6px;
+      align-items: center;
+    }
+
+    .coach-action {
+      min-height: 42px;
+      border: 1px solid rgba(229, 222, 209, .22);
+      color: var(--paper);
+      background: rgba(5, 6, 6, .82);
+      padding: 9px 11px;
+      font-family: var(--font-display);
+      font-size: 19px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .coach-action:hover,
+    .coach-action.primary {
+      color: var(--void);
+      border-color: var(--cyan);
+      background: var(--cyan);
+    }
+
+    .coach-action:disabled {
+      color: var(--dim);
+      border-color: rgba(229, 222, 209, .12);
+      background: rgba(5, 6, 6, .5);
+      cursor: not-allowed;
+    }
+
+    .coach-status {
+      min-height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(229, 222, 209, .16);
+      background: rgba(5, 6, 6, .58);
+      padding: 8px;
+      text-align: center;
+    }
+
+    .coach-permission {
+      grid-column: 1 / -1;
+      display: grid;
+      gap: 10px;
+      border: 1px solid rgba(255, 85, 47, .42);
+      border-left: 3px solid var(--ember);
+      background:
+        linear-gradient(90deg, rgba(255, 85, 47, .12), transparent),
+        rgba(5, 6, 6, .72);
+      padding: 12px;
+    }
+
+    .coach-permission[hidden] {
+      display: none;
+    }
+
+    .coach-permission b {
+      color: var(--ember);
+      font-family: var(--font-display);
+      font-size: 26px;
+      font-weight: 900;
+      line-height: .9;
+      text-transform: uppercase;
+    }
+
+    .coach-permission p {
+      margin: 0;
+      color: var(--paper);
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.45;
+    }
+
+    .coach-permission-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .coach-permission .coach-action {
+      min-height: 40px;
+      font-size: 18px;
+    }
+
+    .coach-toolbox {
+      display: grid;
+      grid-template-columns: 1fr 1.35fr 1fr;
+      gap: 6px;
+    }
+
+    .coach-control,
+    .coach-notes {
+      display: grid;
+      gap: 8px;
+      border: 1px solid rgba(229, 222, 209, .18);
+      background: rgba(5, 6, 6, .56);
+      padding: 8px;
+    }
+
+    .coach-control b,
+    .coach-notes-head b {
+      color: var(--gold);
+      font-family: var(--font-display);
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .coach-segments {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .coach-segment {
+      min-height: 30px;
+      border: 1px solid rgba(229, 222, 209, .2);
+      background: rgba(5, 6, 6, .82);
+      color: var(--muted);
+      padding: 6px 8px;
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .coach-style-control {
+      grid-column: 1 / -1;
+    }
+
+    .coach-segment:hover,
+    .coach-segment[aria-pressed="true"] {
+      border-color: var(--cyan);
+      background: var(--cyan);
+      color: var(--void);
+    }
+
+    .coach-scope {
+      grid-area: scope;
+      width: 100%;
+      min-height: 132px;
+      max-height: 190px;
+      aspect-ratio: 16 / 5;
+      display: block;
+      border: 1px solid rgba(54, 199, 231, .28);
+      background:
+        linear-gradient(180deg, rgba(54, 199, 231, .08), transparent),
+        #050606;
+    }
+
+    .coach-readouts {
+      grid-area: readouts;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 6px;
+    }
+
+    .coach-readout:last-child {
+      grid-column: 1 / -1;
+    }
+
+    .coach-readout {
+      display: grid;
+      gap: 4px;
+      align-content: space-between;
+      min-height: 68px;
+      border: 1px solid rgba(229, 222, 209, .18);
+      background: rgba(5, 6, 6, .56);
+      padding: 8px;
+    }
+
+    .coach-readout b {
+      color: var(--accent, var(--cyan));
+      font-family: var(--font-display);
+      font-size: clamp(22px, 2.8vw, 34px);
+      font-weight: 900;
+      line-height: .9;
+      text-transform: uppercase;
+      overflow-wrap: anywhere;
+    }
+
+    .coach-meters {
+      grid-area: meters;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 6px;
+    }
+
+    .coach-meter {
+      display: grid;
+      gap: 6px;
+      padding: 8px;
+    }
+
+    .coach-meter-track {
+      height: 12px;
+      border: 1px solid rgba(229, 222, 209, .18);
+      background: rgba(5, 6, 6, .9);
+      overflow: hidden;
+    }
+
+    .coach-meter-fill {
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(90deg, var(--cyan), var(--ember));
+      transition: width .16s linear;
+    }
+
+    .coach-feed {
+      grid-area: feed;
+      display: grid;
+      gap: 8px;
+      align-content: start;
+      min-height: 240px;
+      max-height: none;
+      overflow: auto;
+      padding-right: 4px;
+      scrollbar-color: rgba(54, 199, 231, .7) rgba(5, 6, 6, .6);
+    }
+
+    .coach-notes {
+      min-height: 128px;
+    }
+
+    .coach-notes-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .coach-notes-head span {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .coach-notes-output {
+      width: 100%;
+      min-height: 92px;
+      resize: vertical;
+      border: 1px solid rgba(54, 199, 231, .24);
+      background: rgba(2, 3, 3, .78);
+      color: var(--paper);
+      padding: 10px;
+      font: 700 12px/1.45 var(--font-mono);
+    }
+
+    .coach-style-guide {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 6px;
+    }
+
+    .coach-insights {
+      grid-area: insights;
+      display: grid;
+      grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr);
+      gap: 8px;
+    }
+
+    .coach-insight-group {
+      display: grid;
+      align-content: start;
+      gap: 6px;
+    }
+
+    .coach-section-label,
+    .coach-drawer summary {
+      color: var(--gold);
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .coach-section-label {
+      display: inline-flex;
+      align-items: center;
+      min-height: 26px;
+    }
+
+    .coach-drawer {
+      border-top: 1px solid rgba(229, 222, 209, .18);
+      padding-top: 8px;
+    }
+
+    .coach-style-drawer {
+      grid-area: styleDrawer;
+    }
+
+    .coach-notes-drawer {
+      grid-area: notesDrawer;
+    }
+
+    .coach-settings-drawer {
+      grid-area: settingsDrawer;
+    }
+
+    .coach-drawer summary {
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .coach-drawer summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .coach-drawer summary::after {
+      content: "+";
+      margin-left: 8px;
+      color: var(--cyan);
+    }
+
+    .coach-drawer[open] summary::after {
+      content: "-";
+    }
+
+    .coach-drawer[open] summary {
+      margin-bottom: 8px;
+    }
+
+    .coach-genre-mix,
+    .coach-subgenre-board {
+      display: grid;
+      gap: 6px;
+    }
+
+    .coach-genre-mix {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .coach-subgenre-board {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .coach-style-card,
+    .coach-mix-card,
+    .coach-subgenre-card {
+      display: grid;
+      gap: 6px;
+      border: 1px solid rgba(229, 222, 209, .18);
+      border-left: 3px solid rgba(54, 199, 231, .58);
+      background: rgba(5, 6, 6, .6);
+      padding: 9px;
+    }
+
+    .coach-style-card.active,
+    .coach-mix-card.primary,
+    .coach-subgenre-card.primary {
+      border-left-color: var(--ember);
+      background:
+        linear-gradient(90deg, rgba(255, 85, 47, .12), transparent),
+        rgba(5, 6, 6, .72);
+    }
+
+    .coach-mix-card {
+      grid-template-rows: auto auto auto minmax(0, 1fr);
+    }
+
+    .coach-subgenre-card {
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+    }
+
+    .coach-style-card b,
+    .coach-mix-card b,
+    .coach-subgenre-card b {
+      color: var(--cyan);
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 900;
+      line-height: .95;
+      text-transform: uppercase;
+    }
+
+    .coach-mix-score {
+      color: var(--gold) !important;
+      font-family: var(--font-display);
+      font-size: 23px !important;
+      font-weight: 900 !important;
+      line-height: .95 !important;
+    }
+
+    .coach-subgenre-score {
+      color: var(--gold) !important;
+      text-align: right;
+    }
+
+    .coach-candidate-track {
+      grid-column: 1 / -1;
+      height: 10px;
+      border: 1px solid rgba(229, 222, 209, .18);
+      background: rgba(5, 6, 6, .9);
+      overflow: hidden;
+    }
+
+    .coach-candidate-fill {
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(90deg, var(--cyan), var(--ember));
+    }
+
+    .coach-subgenre-reason {
+      grid-column: 1 / -1;
+    }
+
+    .coach-style-card span,
+    .coach-style-card p,
+    .coach-mix-card span,
+    .coach-mix-card p,
+    .coach-subgenre-card span,
+    .coach-subgenre-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+      line-height: 1.38;
+      text-transform: uppercase;
+    }
+
+    .coach-style-card p,
+    .coach-mix-card p,
+    .coach-subgenre-card p {
+      color: var(--paper);
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: none;
+    }
+
+    .coach-comment {
+      display: grid;
+      gap: 8px;
+      border-left: 3px solid rgba(54, 199, 231, .7);
+      padding: 12px;
+    }
+
+    .coach-comment.current {
+      border-left-color: var(--ember);
+      background:
+        linear-gradient(90deg, rgba(255, 85, 47, .14), transparent),
+        rgba(8, 10, 9, .88);
+    }
+
+    .coach-comment b {
+      color: var(--cyan);
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .coach-comment p {
+      color: var(--paper);
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: none;
+    }
+
+    .coach-panel {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      padding: 14px;
+    }
+
+    .coach-panel b {
+      color: var(--gold);
+      font-family: var(--font-display);
+      font-size: 24px;
+      font-weight: 900;
+      line-height: .9;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 980px) {
+      .coach-hero,
+      .coach-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .coach-stage {
+        min-height: 340px;
+      }
+
+      .coach-console {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "actions"
+          "feed"
+          "readouts"
+          "meters"
+          "scope"
+          "insights"
+          "settingsDrawer"
+          "styleDrawer"
+          "notesDrawer";
+      }
+
+      .coach-insights {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .coach-page,
+      .coach-hero,
+      .coach-console {
+        gap: 10px;
+      }
+
+      .coach-stage {
+        min-height: 250px;
+        padding: 14px;
+      }
+
+      .coach-actions,
+      .coach-toolbox,
+      .coach-meters,
+      .coach-style-guide,
+      .coach-genre-mix,
+      .coach-subgenre-board,
+      .coach-subgenre-card {
+        grid-template-columns: 1fr;
+      }
+
+      .coach-actions {
+        grid-template-columns: 1fr auto;
+      }
+
+      #startCoach {
+        grid-column: 1 / -1;
+      }
+
+      .coach-readouts {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .coach-readout:last-child {
+        grid-column: 1 / -1;
+      }
+
+      .coach-segments {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 2px;
+        scrollbar-color: rgba(54, 199, 231, .7) rgba(5, 6, 6, .6);
+      }
+
+      .coach-segment {
+        flex: 0 0 auto;
+      }
+
+      .coach-scope {
+        min-height: 108px;
+        aspect-ratio: 16 / 6;
+      }
+
+      .coach-feed {
+        min-height: 96px;
+        max-height: 220px;
+      }
+
+      .coach-subgenre-score {
+        text-align: left;
+      }
+
+      .coach-copy h1 {
+        width: calc(100vw - 72px) !important;
+        max-width: calc(100vw - 72px) !important;
+        font-size: clamp(40px, 13vw, 58px) !important;
+        line-height: .86 !important;
+      }
+
+      .coach-copy {
+        width: 100%;
+        max-width: calc(100vw - 72px);
+        min-width: 0;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="assets/basement-dispatch.css?v=xhs-contact-20260613c">
+  <script src="assets/sound-buddy.js?v=sound-buddy-20260618-mix"></script>
+</head>
+<body>
+  <main class="shell dispatch-shell coach-page">
+    <nav class="site-nav" aria-label="Site navigation">
+      <div class="nav-group">
+        <a class="nav-link" href="poster-wall.html">Events</a>
+        <a class="nav-link" href="index.html">Calendar</a>
+        <a class="nav-link" href="planner.html">Planner <small class="nav-beta">beta</small></a>
+        <a class="nav-link" href="live-room.html">Tonight <small class="nav-beta">beta</small></a>
+        <a class="nav-link" href="rave-everywhere.html">Everywhere <small class="nav-beta">beta</small></a>
+        <a class="nav-link" href="love-wall.html">Love</a>
+        <a class="nav-link" href="venues.html">Venues</a>
+        <a class="nav-link" href="djs.html">DJs</a>
+        <a class="nav-link" href="new-to-techno.html">New?</a>
+        <a class="nav-link" href="contribute.html">Contribute</a>
+        <a class="nav-link" href="account.html">Account</a>
+      </div>
+      <span class="tag">Sound Buddy</span>
+    </nav>
+
+    <section class="coach-hero" aria-label="Sound Buddy">
+      <header class="coach-stage">
+        <div class="coach-copy">
+          <p class="kicker">Local mic / continuous comments</p>
+          <h1><span>Sound</span> <span>Buddy</span></h1>
+          <p class="subhead">A browser-side listening buddy for kick, bass, texture, and arrangement. It reads live sound pressure patterns, not track identity.</p>
+          <div class="coach-safety" aria-label="Sound Buddy privacy and limits">
+            <span>No recording</span>
+            <span>No upload</span>
+            <span>No track ID</span>
+            <span>Approx style</span>
+            <a href="sound-buddy-principles.html">Principles / citations</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="coach-console" aria-label="Live listening console">
+        <div class="coach-actions">
+          <button class="coach-action primary" type="button" id="startCoach">Start listening</button>
+          <button class="coach-action" type="button" id="stopCoach" disabled>Stop</button>
+          <span class="coach-status" id="coachStatus">Idle</span>
+        </div>
+
+        <div class="coach-permission" id="permissionHelp" hidden>
+          <b>Mic blocked here</b>
+          <p>This browser denied microphone access. Open the same localhost URL in Chrome or Edge and allow microphone, or use Practice mode for rolling listening cues without live audio.</p>
+          <div class="coach-permission-actions">
+            <button class="coach-action" type="button" id="practiceCoach">Practice mode</button>
+          </div>
+        </div>
+
+        <div class="coach-feed" id="coachFeed" aria-live="polite">
+          <article class="coach-comment current">
+            <b>Ready</b>
+            <p>Press start, play a set nearby, and let the comments run.</p>
+          </article>
+        </div>
+
+        <div class="coach-readouts" aria-live="polite">
+          <div class="coach-readout" style="--accent: var(--cyan)">
+            <b id="levelReadout">--</b>
+            <span>input</span>
+          </div>
+          <div class="coach-readout" style="--accent: var(--gold)">
+            <b id="pulseReadout">--</b>
+            <span>pulse</span>
+          </div>
+          <div class="coach-readout" style="--accent: var(--ember)">
+            <b id="focusReadout">Waiting</b>
+            <span>focus</span>
+          </div>
+          <div class="coach-readout" style="--accent: var(--cyan)">
+            <b id="styleReadout">Auto</b>
+            <span>style cue</span>
+          </div>
+          <div class="coach-readout" style="--accent: var(--gold)">
+            <b id="subgenreReadout">--</b>
+            <span>subgenre</span>
+          </div>
+        </div>
+
+        <div class="coach-meters" aria-label="Sound balance meters">
+          <div class="coach-meter">
+            <span>Kick / low end</span>
+            <div class="coach-meter-track"><div class="coach-meter-fill" id="bassMeter"></div></div>
+            <small id="bassLabel">waiting</small>
+          </div>
+          <div class="coach-meter">
+            <span>Hats / texture</span>
+            <div class="coach-meter-track"><div class="coach-meter-fill" id="topMeter"></div></div>
+            <small id="topLabel">waiting</small>
+          </div>
+        </div>
+
+        <details class="coach-drawer coach-settings-drawer">
+          <summary>Learning settings</summary>
+          <div class="coach-toolbox" aria-label="Sound Buddy controls">
+            <div class="coach-control">
+              <b>Pace</b>
+              <div class="coach-segments" id="paceControls">
+                <button class="coach-segment" type="button" data-pace="slow" aria-pressed="false">Slow</button>
+                <button class="coach-segment" type="button" data-pace="normal" aria-pressed="true">Normal</button>
+                <button class="coach-segment" type="button" data-pace="fast" aria-pressed="false">Fast</button>
+              </div>
+            </div>
+            <div class="coach-control">
+              <b>Focus</b>
+              <div class="coach-segments" id="focusControls">
+                <button class="coach-segment" type="button" data-focus="auto" aria-pressed="true">Auto</button>
+                <button class="coach-segment" type="button" data-focus="kick" aria-pressed="false">Kick</button>
+                <button class="coach-segment" type="button" data-focus="texture" aria-pressed="false">Texture</button>
+                <button class="coach-segment" type="button" data-focus="arc" aria-pressed="false">Arc</button>
+              </div>
+            </div>
+            <div class="coach-control">
+              <b>Notes</b>
+              <div class="coach-segments">
+                <button class="coach-segment" type="button" id="copyCoachNotes">Copy</button>
+                <button class="coach-segment" type="button" id="clearCoachNotes">Clear</button>
+              </div>
+            </div>
+            <div class="coach-control coach-style-control">
+              <b>Electronic style</b>
+              <div class="coach-segments" id="styleControls">
+                <button class="coach-segment" type="button" data-style="auto" aria-pressed="true">Auto detect</button>
+                <button class="coach-segment" type="button" data-style="techno" aria-pressed="false">Techno</button>
+                <button class="coach-segment" type="button" data-style="electro" aria-pressed="false">Electro</button>
+                <button class="coach-segment" type="button" data-style="house" aria-pressed="false">House</button>
+                <button class="coach-segment" type="button" data-style="breaks" aria-pressed="false">Breaks</button>
+                <button class="coach-segment" type="button" data-style="acid" aria-pressed="false">Acid</button>
+                <button class="coach-segment" type="button" data-style="trance" aria-pressed="false">Trance</button>
+                <button class="coach-segment" type="button" data-style="garage" aria-pressed="false">Garage</button>
+                <button class="coach-segment" type="button" data-style="dnb" aria-pressed="false">DNB</button>
+                <button class="coach-segment" type="button" data-style="bass" aria-pressed="false">Bass</button>
+                <button class="coach-segment" type="button" data-style="downtempo" aria-pressed="false">Downtempo / Ambient</button>
+                <button class="coach-segment" type="button" data-style="hard-dance" aria-pressed="false">Hard dance</button>
+                <button class="coach-segment" type="button" data-style="industrial" aria-pressed="false">Industrial</button>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <canvas class="coach-scope" id="coachScope" width="960" height="480" aria-label="Live listening scope"></canvas>
+
+        <div class="coach-insights" aria-label="Detected style insights">
+          <section class="coach-insight-group" aria-labelledby="genreMixTitle">
+            <b class="coach-section-label" id="genreMixTitle">Recent genre mix</b>
+            <div class="coach-genre-mix" id="genreMixBoard" aria-label="Genre mix likeness"></div>
+          </section>
+          <section class="coach-insight-group" aria-labelledby="subgenreTitle">
+            <b class="coach-section-label" id="subgenreTitle">Recent subgenres</b>
+            <div class="coach-subgenre-board" id="subgenreBoard" aria-label="Subgenre candidates"></div>
+          </section>
+        </div>
+
+        <details class="coach-drawer coach-style-drawer">
+          <summary>Style guide</summary>
+          <div class="coach-style-guide" id="styleGuide" aria-label="Electronic style guide"></div>
+        </details>
+
+        <details class="coach-drawer coach-notes-drawer">
+          <summary>Session notes</summary>
+          <div class="coach-notes" aria-label="Session notes">
+            <div class="coach-notes-head">
+              <b>Session notes</b>
+              <span id="notesStatus">0 cues</span>
+            </div>
+            <textarea class="coach-notes-output" id="coachNotes" readonly aria-label="Copied listening notes"></textarea>
+          </div>
+        </details>
+      </section>
+    </section>
+
+    <section class="coach-panel" aria-label="Sound Buddy operating notes">
+      <div>
+        <b>What it hears</b>
+        <p>Volume, low-end weight, top-end texture, broad pulse, energy movement, and approximate style lane.</p>
+      </div>
+      <div>
+        <b>What it avoids</b>
+        <p>No artist recognition, no lyrics, no fingerprinting, no saved audio, no public room recording, no exact track ID.</p>
+      </div>
+      <div>
+        <b>Best use</b>
+        <p>Run it with an official DJ set, a platform stream, or music you have permission to analyze.</p>
+      </div>
+    </section>
+
+    <footer class="footnotes bottom-dispatch-bar" aria-label="Basement Dispatch status">
+      <div class="bar-cell update-cell">
+        <span class="footer-alert-mark" aria-hidden="true">!</span>
+        <strong>Sound Buddy<br>local only</strong>
+      </div>
+      <div class="bar-cell">
+        <span>Notes are educational listening cues, not event confirmation.</span>
+        <span>Use source links and venue pages before planning a night.</span>
+      </div>
+      <address class="bar-cell contact-cell">
+        <a class="contact-card-link" href="assets/social/xhs-contact-card.jpg" aria-label="Open RED Xiaohongshu contact QR card">
+          <span class="contact-copy">
+            <span>Contact / updates</span>
+            <b>RED</b>
+            <em>ID 980793145</em>
+          </span>
+          <img src="assets/social/xhs-contact-card.jpg" alt="" loading="lazy" decoding="async">
+        </a>
+      </address>
+      <div class="bar-cell">
+        <span>No audio is hosted, stored, or uploaded by this page.</span>
+        <span>Browser microphone permission can be stopped at any time.</span>
+      </div>
+      <div class="bar-cell source-cell">
+        <span>Learn by listening</span>
+        <span>Verify before going</span>
+        <a href="trust.html">How we recommend</a>
+        <a href="trust.html#corrections">Corrections</a>
+      </div>
+    </footer>
+    <a class="admin-corner" data-admin-corner href="ops.html" aria-label="Admin sign in">admin</a>
+  </main>
+
+  <script>
+    const listenCoach = window.LISTEN_COACH;
+    const startCoach = document.getElementById("startCoach");
+    const stopCoach = document.getElementById("stopCoach");
+    const practiceCoach = document.getElementById("practiceCoach");
+    const permissionHelp = document.getElementById("permissionHelp");
+    const coachStatus = document.getElementById("coachStatus");
+    const coachScope = document.getElementById("coachScope");
+    const coachFeed = document.getElementById("coachFeed");
+    const levelReadout = document.getElementById("levelReadout");
+    const pulseReadout = document.getElementById("pulseReadout");
+    const focusReadout = document.getElementById("focusReadout");
+    const styleReadout = document.getElementById("styleReadout");
+    const subgenreReadout = document.getElementById("subgenreReadout");
+    const bassMeter = document.getElementById("bassMeter");
+    const topMeter = document.getElementById("topMeter");
+    const bassLabel = document.getElementById("bassLabel");
+    const topLabel = document.getElementById("topLabel");
+    const paceButtons = Array.from(document.querySelectorAll("[data-pace]"));
+    const focusButtons = Array.from(document.querySelectorAll("[data-focus]"));
+    const styleButtons = Array.from(document.querySelectorAll("[data-style]"));
+    const styleGuide = document.getElementById("styleGuide");
+    const genreMixBoard = document.getElementById("genreMixBoard");
+    const subgenreBoard = document.getElementById("subgenreBoard");
+    const copyCoachNotes = document.getElementById("copyCoachNotes");
+    const clearCoachNotes = document.getElementById("clearCoachNotes");
+    const coachNotes = document.getElementById("coachNotes");
+    const notesStatus = document.getElementById("notesStatus");
+    const scopeCtx = coachScope.getContext("2d");
+    let browserCoach = null;
+    let latestSnapshot = null;
+    let commentCount = 0;
+    let coachMode = "idle";
+    let practiceTimer = null;
+    let coachSettings = {
+      pace: "normal",
+      focus: "auto",
+      style: "auto",
+    };
+    let sessionNotes = [];
+    let notesStatusTimer = null;
+    let styleCueIndex = 0;
+    let latestStyleDetection = null;
+    let latestGenreMixDetection = null;
+    let latestSubgenreDetection = null;
+    let lastDetectedStyle = "";
+    let lastGenreMixSignature = "";
+    let lastDetectedSubgenre = "";
+    let lastStyleCommentAt = 0;
+    let lastGenreMixCommentAt = 0;
+    let lastSubgenreCommentAt = 0;
+
+    const paceIntervals = {
+      slow: 6500,
+      normal: 4300,
+      fast: 2600,
+    };
+
+    const focusLens = {
+      kick: {
+        category: "kick",
+        text: "Focus lens: ignore the hook for a bar. Judge the kick shape, the tail length, and how it sits under the bass.",
+      },
+      texture: {
+        category: "texture",
+        text: "Focus lens: follow the hats, hiss, metallic edges, and echo. Texture can move the room before a drop arrives.",
+      },
+      arc: {
+        category: "arc",
+        text: "Focus lens: name the section. Is it building pressure, holding tension, breaking down, or resetting the floor?",
+      },
+    };
+
+    const styleGuideItems = listenCoach && typeof listenCoach.styleGuides === "function"
+      ? listenCoach.styleGuides()
+      : [];
+
+    const utilityCommentCategories = new Set(["focus", "mix", "pace", "permission", "practice", "start", "stop", "style", "subgenre"]);
+
+    const practiceComments = [
+      {
+        category: "kick",
+        text: "Practice cue: count four kicks, then listen for what changes around the pulse.",
+      },
+      {
+        category: "bass",
+        text: "Practice cue: separate the kick attack from the bass tail. One punches; the other fills the room.",
+      },
+      {
+        category: "texture",
+        text: "Practice cue: hats, hiss, and metallic noise can raise tension without changing the tempo.",
+      },
+      {
+        category: "arc",
+        text: "Practice cue: ask whether this section is pushing forward, holding pressure, or resetting the room.",
+      },
+    ];
+
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, char => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#039;"
+      }[char]));
+    }
+
+    function percent(value) {
+      return `${Math.round(Math.max(0, Math.min(1, Number(value) || 0)) * 100)}%`;
+    }
+
+    function labelForShare(value) {
+      const score = Math.round(Math.max(0, Math.min(1, Number(value) || 0)) * 100);
+      if (score >= 68) return "dominant";
+      if (score >= 42) return "present";
+      if (score >= 18) return "light";
+      return "low";
+    }
+
+    function currentIntervalMs() {
+      return paceIntervals[coachSettings.pace] || paceIntervals.normal;
+    }
+
+    function setStatus(value) {
+      coachStatus.textContent = value;
+    }
+
+    function setPressed(buttons, activeValue, key) {
+      buttons.forEach(button => {
+        button.setAttribute("aria-pressed", button.dataset[key] === activeValue ? "true" : "false");
+      });
+    }
+
+    function updateNotesOutput(statusText) {
+      coachNotes.value = sessionNotes.join("\n");
+      notesStatus.textContent = statusText || `${sessionNotes.length} ${sessionNotes.length === 1 ? "cue" : "cues"}`;
+      if (statusText) {
+        clearTimeout(notesStatusTimer);
+        notesStatusTimer = setTimeout(() => {
+          notesStatus.textContent = `${sessionNotes.length} ${sessionNotes.length === 1 ? "cue" : "cues"}`;
+        }, 1800);
+      }
+    }
+
+    function rememberComment(comment) {
+      if (!comment || comment.category === "stop") return;
+      const time = new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+      sessionNotes.unshift(`[${time}] ${String(comment.category || "buddy").toUpperCase()}: ${comment.text || ""}`);
+      sessionNotes = sessionNotes.slice(0, 36);
+      updateNotesOutput();
+    }
+
+    function applyFocusLens(comment) {
+      if (coachSettings.focus === "auto" || utilityCommentCategories.has(comment.category)) return comment;
+      const lens = focusLens[coachSettings.focus];
+      if (!lens || comment.category === lens.category) return comment;
+      if (commentCount % 2 === 0) return lens;
+      return comment;
+    }
+
+    async function copyNotesText() {
+      const value = coachNotes.value.trim();
+      if (!value) {
+        updateNotesOutput("No cues");
+        return;
+      }
+      try {
+        if (navigator.clipboard?.writeText) {
+          await navigator.clipboard.writeText(value);
+        } else {
+          coachNotes.focus();
+          coachNotes.select();
+          document.execCommand("copy");
+        }
+        updateNotesOutput("Copied");
+      } catch (error) {
+        coachNotes.focus();
+        coachNotes.select();
+        updateNotesOutput("Select text");
+      }
+    }
+
+    function clearNotesText() {
+      sessionNotes = [];
+      updateNotesOutput("Cleared");
+    }
+
+    function setPace(pace) {
+      if (!paceIntervals[pace]) return;
+      coachSettings.pace = pace;
+      setPressed(paceButtons, pace, "pace");
+      addComment({
+        category: "pace",
+        text: `Comment pace set to ${pace}.`,
+      }, { skipNotes: true });
+    }
+
+    function setFocus(focus) {
+      if (focus !== "auto" && !focusLens[focus]) return;
+      coachSettings.focus = focus;
+      setPressed(focusButtons, focus, "focus");
+      const lens = focus === "auto"
+        ? { category: "focus", text: "Focus mode returned to automatic listening cues." }
+        : { category: "focus", text: focusLens[focus].text };
+      addComment(lens, { skipNotes: focus === "auto" });
+    }
+
+    function guideById(styleId) {
+      return styleGuideItems.find(item => item.id === styleId) || styleGuideItems[0] || null;
+    }
+
+    function activeStyleId() {
+      if (coachSettings.style !== "auto") return coachSettings.style;
+      return latestStyleDetection?.styleId && latestStyleDetection.styleId !== "unknown"
+        ? latestStyleDetection.styleId
+        : "";
+    }
+
+    function confidenceLabel(value) {
+      if (!value) return "listening";
+      if (value >= 0.68) return "strong";
+      if (value >= 0.46) return "medium";
+      return "rough";
+    }
+
+    function renderStyleGuide(activeId = activeStyleId()) {
+      styleGuide.innerHTML = styleGuideItems.map(item => `
+        <article class="coach-style-card${item.id === activeId ? " active" : ""}" data-style-card="${escapeHtml(item.id)}">
+          <b>${escapeHtml(item.label)}</b>
+          <span>${escapeHtml(item.tempo)}</span>
+          <p>${escapeHtml(item.pattern)}</p>
+          <span>${escapeHtml(item.cues.join(" / "))}</span>
+        </article>
+      `).join("");
+    }
+
+    function renderGenreMixBoard(detection = latestGenreMixDetection) {
+      const mix = Array.isArray(detection?.mix) ? detection.mix : [];
+      if (!mix.length) {
+        genreMixBoard.innerHTML = `
+          <article class="coach-mix-card">
+            <b>Genre mix</b>
+            <span class="coach-mix-score">--</span>
+            <div class="coach-candidate-track"><div class="coach-candidate-fill" style="width: 0%"></div></div>
+            <p>Waiting for stronger signal before showing the top three likeness lanes.</p>
+          </article>
+        `;
+        return;
+      }
+      genreMixBoard.innerHTML = mix.map((item, index) => {
+        const share = Math.round(Math.max(0, Math.min(1, item.share || 0)) * 100);
+        const cues = Array.isArray(item.cues) ? item.cues.slice(0, 3).join(" / ") : "";
+        return `
+          <article class="coach-mix-card${index === 0 ? " primary" : ""}" data-genre-mix-card="${escapeHtml(item.styleId)}">
+            <b>${escapeHtml(item.label)}</b>
+            <span class="coach-mix-score">${share}% likeness</span>
+            <div class="coach-candidate-track"><div class="coach-candidate-fill" style="width: ${share}%"></div></div>
+            <p>${escapeHtml(cues)}</p>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function renderSubgenreBoard(detection = latestSubgenreDetection) {
+      const candidates = Array.isArray(detection?.candidates) ? detection.candidates : [];
+      if (!candidates.length) {
+        subgenreBoard.innerHTML = `
+          <article class="coach-subgenre-card">
+            <b>Listening</b>
+            <span class="coach-subgenre-score">--</span>
+            <div class="coach-candidate-track"><div class="coach-candidate-fill" style="width: 0%"></div></div>
+            <p class="coach-subgenre-reason">Waiting for stronger signal before ranking subgenres.</p>
+          </article>
+        `;
+        return;
+      }
+      subgenreBoard.innerHTML = candidates.map((item, index) => {
+        const confidence = Math.round(Math.max(0, Math.min(1, item.confidence || 0)) * 100);
+        const cues = Array.isArray(item.cues) ? item.cues.join(" / ") : "";
+        return `
+          <article class="coach-subgenre-card${index === 0 ? " primary" : ""}" data-subgenre-card="${escapeHtml(item.id)}">
+            <b>${escapeHtml(item.label)}</b>
+            <span class="coach-subgenre-score">${confidence}%</span>
+            <div class="coach-candidate-track"><div class="coach-candidate-fill" style="width: ${confidence}%"></div></div>
+            <p class="coach-subgenre-reason">${escapeHtml(item.reason)} / ${escapeHtml(cues)}</p>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function styleLessonComment(styleId, snapshot = latestSnapshot) {
+      if (!listenCoach || typeof listenCoach.styleLessonForSnapshot !== "function") return null;
+      const lesson = listenCoach.styleLessonForSnapshot(snapshot || {}, styleId);
+      return {
+        category: "style",
+        text: `${lesson.label}: ${lesson.text}`,
+      };
+    }
+
+    function updateStyleDetection(snapshot, state) {
+      if (!listenCoach || typeof listenCoach.detectStyleFromSnapshot !== "function") return;
+      latestStyleDetection = listenCoach.detectStyleFromSnapshot(snapshot || {}, state || {});
+      if (typeof listenCoach.detectGenreMixFromSnapshot === "function") {
+        latestGenreMixDetection = listenCoach.detectGenreMixFromSnapshot(snapshot || {}, state || {});
+        renderGenreMixBoard(latestGenreMixDetection);
+        const mixSignature = latestGenreMixDetection.mix
+          ? latestGenreMixDetection.mix.map(item => item.styleId).join("|")
+          : "";
+        const now = Date.now();
+        if (
+          latestGenreMixDetection.isHybrid
+          && mixSignature
+          && mixSignature !== lastGenreMixSignature
+          && now - lastGenreMixCommentAt > Math.max(6800, currentIntervalMs())
+        ) {
+          lastGenreMixSignature = mixSignature;
+          lastGenreMixCommentAt = now;
+          addComment({
+            category: "mix",
+            text: `${latestGenreMixDetection.text} Top three: ${latestGenreMixDetection.mix.map(item => `${item.label} ${Math.round(item.share * 100)}%`).join(", ")}.`,
+          });
+        }
+      }
+      if (typeof listenCoach.detectSubgenresFromSnapshot === "function") {
+        latestSubgenreDetection = listenCoach.detectSubgenresFromSnapshot(snapshot || {}, state || {});
+        const primary = latestSubgenreDetection.primary;
+        subgenreReadout.textContent = primary
+          ? `${primary.label} ${Math.round(primary.confidence * 100)}%`
+          : "--";
+        renderSubgenreBoard(latestSubgenreDetection);
+        const now = Date.now();
+        if (
+          primary
+          && primary.id !== lastDetectedSubgenre
+          && primary.confidence >= 0.34
+          && now - lastSubgenreCommentAt > Math.max(5200, currentIntervalMs())
+        ) {
+          lastDetectedSubgenre = primary.id;
+          lastSubgenreCommentAt = now;
+          addComment({
+            category: "subgenre",
+            text: `${latestSubgenreDetection.text} Top candidates: ${latestSubgenreDetection.candidates.slice(0, 3).map(item => `${item.label} ${Math.round(item.confidence * 100)}%`).join(", ")}.`,
+          });
+        }
+      }
+      if (coachSettings.style === "auto") {
+        const detectedId = latestStyleDetection.styleId === "unknown" ? "" : latestStyleDetection.styleId;
+        styleReadout.textContent = detectedId
+          ? `${latestStyleDetection.isCloseCall ? "Close: " : ""}${latestStyleDetection.label} ${Math.round(latestStyleDetection.confidence * 100)}%`
+          : "Listening";
+        renderStyleGuide(detectedId);
+        const now = Date.now();
+        if (
+          detectedId
+          && detectedId !== lastDetectedStyle
+          && (latestStyleDetection.confidence >= 0.34 || (latestStyleDetection.isCloseCall && latestStyleDetection.confidence >= 0.22))
+          && now - lastStyleCommentAt > Math.max(4200, currentIntervalMs())
+        ) {
+          lastDetectedStyle = detectedId;
+          lastStyleCommentAt = now;
+          addComment({
+            category: "style",
+            text: `${latestStyleDetection.text} Confidence is ${confidenceLabel(latestStyleDetection.confidence)} because the page only reads broad sound features.`,
+          });
+        }
+      }
+    }
+
+    function setStyle(style) {
+      if (style !== "auto" && !guideById(style)) return;
+      coachSettings.style = style;
+      setPressed(styleButtons, style, "style");
+      if (style === "auto") {
+        styleReadout.textContent = latestStyleDetection?.label
+          ? `${latestStyleDetection.isCloseCall ? "Close: " : ""}${latestStyleDetection.label} ${Math.round(latestStyleDetection.confidence * 100)}%`
+          : "Auto";
+        renderStyleGuide(activeStyleId());
+        addComment({
+          category: "style",
+          text: "Auto style detection enabled. It estimates a learning lane from pulse, bass weight, top texture, and energy shape.",
+        });
+        return;
+      }
+      const guide = guideById(style);
+      styleReadout.textContent = guide ? guide.label : "Style";
+      renderStyleGuide(style);
+      const lesson = styleLessonComment(style);
+      if (lesson) addComment(lesson);
+    }
+
+    function isPermissionError(error) {
+      return /denied|notallowed|not allowed|permission/i.test(`${error?.name || ""} ${error?.message || ""} ${String(error || "")}`);
+    }
+
+    function showPermissionHelp() {
+      permissionHelp.hidden = false;
+      practiceCoach.disabled = false;
+    }
+
+    function hidePermissionHelp() {
+      permissionHelp.hidden = true;
+    }
+
+    function stopActiveCoach() {
+      if (browserCoach && typeof browserCoach.stop === "function") {
+        browserCoach.stop();
+      }
+      browserCoach = null;
+      if (practiceTimer) {
+        clearTimeout(practiceTimer);
+        practiceTimer = null;
+      }
+    }
+
+    function practiceSnapshot(step) {
+      const phase = step % 6;
+      const sub = [0.18, 0.24, 0.3, 0.22, 0.16, 0.2][phase];
+      const bass = [0.26, 0.32, 0.28, 0.2, 0.18, 0.24][phase];
+      const lowMid = [0.16, 0.18, 0.22, 0.2, 0.14, 0.17][phase];
+      const mid = [0.1, 0.12, 0.16, 0.2, 0.24, 0.14][phase];
+      const high = [0.08, 0.1, 0.14, 0.24, 0.3, 0.18][phase];
+      const air = [0.07, 0.08, 0.12, 0.2, 0.26, 0.16][phase];
+      const bandTotal = sub + bass + lowMid + mid + high + air + 0.0001;
+      const bassShare = (sub + bass) / bandTotal;
+      const highShare = (high + air) / bandTotal;
+      return {
+        level: 0.2 + phase * 0.025,
+        total: 0.18 + phase * 0.018,
+        sub,
+        bass,
+        lowMid,
+        mid,
+        high,
+        air,
+        bassShare,
+        highShare,
+        pulseBpm: phase > 1 ? 136 : null,
+        focus: highShare > 0.3 ? "hats / texture" : "kick / low end",
+      };
+    }
+
+    function startPracticeMode() {
+      stopActiveCoach();
+      hidePermissionHelp();
+      coachMode = "practice";
+      startCoach.disabled = true;
+      stopCoach.disabled = false;
+      practiceCoach.disabled = true;
+      setStatus("Practice");
+      addComment({
+        category: "practice",
+        text: "Practice mode is running without microphone access. Open in Chrome or Edge for live listening.",
+      });
+      let step = 0;
+      function advancePractice() {
+        renderFrame(practiceSnapshot(step));
+        const commentEvery = Math.max(2, Math.round(currentIntervalMs() / 1400));
+        if (step % commentEvery === 0) {
+          addComment(practiceComments[Math.floor(step / 3) % practiceComments.length]);
+        }
+        step += 1;
+        practiceTimer = setTimeout(advancePractice, 1400);
+      }
+      advancePractice();
+      browserCoach = {
+        stop() {
+          if (practiceTimer) {
+            clearTimeout(practiceTimer);
+            practiceTimer = null;
+          }
+        },
+      };
+    }
+
+    function drawScope(snapshot) {
+      if (!scopeCtx) return;
+      const width = coachScope.width;
+      const height = coachScope.height;
+      scopeCtx.clearRect(0, 0, width, height);
+      scopeCtx.fillStyle = "#050606";
+      scopeCtx.fillRect(0, 0, width, height);
+      scopeCtx.strokeStyle = "rgba(54, 199, 231, .22)";
+      scopeCtx.lineWidth = 1;
+      for (let x = 0; x <= width; x += 48) {
+        scopeCtx.beginPath();
+        scopeCtx.moveTo(x, 0);
+        scopeCtx.lineTo(x, height);
+        scopeCtx.stroke();
+      }
+      for (let y = 0; y <= height; y += 48) {
+        scopeCtx.beginPath();
+        scopeCtx.moveTo(0, y);
+        scopeCtx.lineTo(width, y);
+        scopeCtx.stroke();
+      }
+      const bands = snapshot
+        ? [
+          { label: "SUB", value: snapshot.sub, color: "#ff552f" },
+          { label: "KICK", value: snapshot.bass, color: "#ff552f" },
+          { label: "BODY", value: snapshot.lowMid, color: "#d7a928" },
+          { label: "MID", value: snapshot.mid, color: "#e5ded1" },
+          { label: "TOP", value: snapshot.high, color: "#36c7e7" },
+          { label: "AIR", value: snapshot.air, color: "#36c7e7" }
+        ]
+        : [];
+      const gap = 20;
+      const barWidth = (width - gap * (bands.length + 1)) / Math.max(1, bands.length);
+      bands.forEach((band, index) => {
+        const x = gap + index * (barWidth + gap);
+        const barHeight = Math.max(8, band.value * height * 1.9);
+        const y = height - barHeight - 54;
+        scopeCtx.fillStyle = band.color;
+        scopeCtx.globalAlpha = .88;
+        scopeCtx.fillRect(x, y, barWidth, barHeight);
+        scopeCtx.globalAlpha = 1;
+        scopeCtx.fillStyle = "#e5ded1";
+        scopeCtx.font = "700 18px IBM Plex Mono, monospace";
+        scopeCtx.fillText(band.label, x, height - 24);
+      });
+      if (!snapshot) {
+        scopeCtx.fillStyle = "#36c7e7";
+        scopeCtx.font = "900 32px Barlow Condensed, sans-serif";
+        scopeCtx.fillText("WAITING FOR INPUT", 36, height - 42);
+      }
+    }
+
+    function renderFrame(snapshot, state) {
+      latestSnapshot = snapshot;
+      const level = Math.max(snapshot.level || 0, snapshot.total || 0);
+      levelReadout.textContent = level < .018 ? "--" : `${Math.round(level * 100)}`;
+      pulseReadout.textContent = snapshot.pulseBpm ? `${snapshot.pulseBpm}` : "--";
+      focusReadout.textContent = snapshot.focus || (level < .018 ? "Waiting" : "Listening");
+      bassMeter.style.width = percent(snapshot.bassShare);
+      topMeter.style.width = percent(snapshot.highShare);
+      bassLabel.textContent = labelForShare(snapshot.bassShare);
+      topLabel.textContent = labelForShare(snapshot.highShare);
+      updateStyleDetection(snapshot, state);
+      drawScope(snapshot);
+    }
+
+    function addComment(comment, options = {}) {
+      comment = applyFocusLens(comment || {});
+      commentCount += 1;
+      coachFeed.querySelectorAll(".coach-comment.current").forEach(row => row.classList.remove("current"));
+      const row = document.createElement("article");
+      row.className = "coach-comment current";
+      row.innerHTML = `
+        <b>${escapeHtml(comment.category || "Coach")} / ${String(commentCount).padStart(2, "0")}</b>
+        <p>${escapeHtml(comment.text || "")}</p>
+      `;
+      coachFeed.prepend(row);
+      while (coachFeed.children.length > 9) coachFeed.lastElementChild.remove();
+      if (!options.skipNotes) rememberComment(comment);
+    }
+
+    async function handleStart() {
+      if (!listenCoach || typeof listenCoach.createBrowserCoach !== "function") {
+        setStatus("Buddy unavailable");
+        return;
+      }
+      startCoach.disabled = true;
+      hidePermissionHelp();
+      setStatus("Requesting mic");
+      try {
+        stopActiveCoach();
+        browserCoach = listenCoach.createBrowserCoach({
+          minIntervalMs: currentIntervalMs,
+          onFrame: renderFrame,
+          onComment: addComment
+        });
+        await browserCoach.start();
+        coachMode = "mic";
+        stopCoach.disabled = false;
+        setStatus("Listening");
+        addComment({
+          category: "start",
+          text: "Sound Buddy is live. I will keep noting kick, bass, texture, and energy movement."
+        });
+      } catch (error) {
+        stopActiveCoach();
+        coachMode = "idle";
+        startCoach.disabled = false;
+        stopCoach.disabled = true;
+        setStatus(isPermissionError(error) ? "Mic blocked" : "Mic error");
+        showPermissionHelp();
+        addComment({
+          category: "permission",
+          text: isPermissionError(error)
+            ? "Microphone permission was denied. This browser may block mic access; open the page in Chrome or Edge for live listening."
+            : "The browser could not start microphone input. Practice mode can continue without live audio.",
+        });
+      }
+    }
+
+    function handleStop() {
+      const stoppedMode = coachMode;
+      stopActiveCoach();
+      coachMode = "idle";
+      startCoach.disabled = false;
+      stopCoach.disabled = true;
+      setStatus("Stopped");
+      practiceCoach.disabled = false;
+      addComment({
+        category: "stop",
+        text: stoppedMode === "practice"
+          ? "Practice mode stopped."
+          : "Sound Buddy stopped. The microphone stream is closed."
+      });
+      drawScope(latestSnapshot);
+    }
+
+    startCoach.addEventListener("click", handleStart);
+    stopCoach.addEventListener("click", handleStop);
+    practiceCoach.addEventListener("click", startPracticeMode);
+    paceButtons.forEach(button => {
+      button.addEventListener("click", () => setPace(button.dataset.pace));
+    });
+    focusButtons.forEach(button => {
+      button.addEventListener("click", () => setFocus(button.dataset.focus));
+    });
+    styleButtons.forEach(button => {
+      button.addEventListener("click", () => setStyle(button.dataset.style));
+    });
+    copyCoachNotes.addEventListener("click", copyNotesText);
+    clearCoachNotes.addEventListener("click", clearNotesText);
+    updateNotesOutput();
+    renderStyleGuide();
+    renderGenreMixBoard();
+    renderSubgenreBoard();
+    drawScope(null);
+  </script>
+</body>
+</html>

@@ -923,6 +923,21 @@ if (feedCheck.length !== 1 || feedCheck[0].label !== "Water") {
 if (liveRoomRealtime.roomShareUrl("https://example.com/index.html#old", "santa-k") !== "https://example.com/index.html#live-room=santa-k") {
   throw new Error("event live-room share links must use stable live-room hashes");
 }
+const listenCoach = require("../assets/sound-buddy.js");
+if (
+  !listenCoach
+  || typeof listenCoach.analyzeAudioSnapshot !== "function"
+  || typeof listenCoach.createBrowserCoach !== "function"
+  || typeof listenCoach.createCoachState !== "function"
+  || typeof listenCoach.detectStyleFromSnapshot !== "function"
+  || typeof listenCoach.detectGenreMixFromSnapshot !== "function"
+  || typeof listenCoach.detectSubgenresFromSnapshot !== "function"
+  || typeof listenCoach.nextCoachComment !== "function"
+  || typeof listenCoach.styleGuides !== "function"
+  || typeof listenCoach.subgenreGuides !== "function"
+) {
+  throw new Error("assets/sound-buddy.js must export local listening helper functions");
+}
 const betaVirtualEvent = raveEverywhere.generateVirtualEvent({
   seed: "check-seed",
   now: "2026-06-13T12:00:00+08:00",
@@ -1034,6 +1049,7 @@ const publicAdminCornerFiles = [
   "rave-everywhere.html",
   "venues.html",
   "djs.html",
+  "sound-buddy.html",
   "contribute.html",
   "account.html",
 ];
@@ -1172,6 +1188,51 @@ const liveRoomRequirements = [
   { file: "sitemap.xml", text: `${siteUrl}/live-room`, label: "Tonight Rooms sitemap URL" },
 ];
 
+const listenCoachRequirements = [
+  { file: "new-to-techno.html", text: 'href="sound-buddy.html"', label: "beginner guide Sound Buddy link" },
+  { file: "sound-buddy.html", text: "Sound Buddy", label: "Sound Buddy page title" },
+  { file: "sound-buddy.html", text: "assets/sound-buddy.js", label: "Sound Buddy browser analyzer" },
+  { file: "sound-buddy.html", text: 'id="startCoach"', label: "Sound Buddy start action" },
+  { file: "sound-buddy.html", text: 'id="coachFeed"', label: "Sound Buddy rolling comment feed" },
+  { file: "sound-buddy.html", text: 'id="permissionHelp"', label: "Sound Buddy permission recovery panel" },
+  { file: "sound-buddy.html", text: 'id="practiceCoach"', label: "Sound Buddy no-mic practice action" },
+  { file: "sound-buddy.html", text: "Practice mode", label: "Sound Buddy no-mic fallback copy" },
+  { file: "sound-buddy.html", text: 'id="paceControls"', label: "Sound Buddy comment pace controls" },
+  { file: "sound-buddy.html", text: 'id="focusControls"', label: "Sound Buddy focus controls" },
+  { file: "sound-buddy.html", text: 'id="styleControls"', label: "Sound Buddy style controls" },
+  { file: "sound-buddy.html", text: 'data-style="auto"', label: "Sound Buddy auto style detection action" },
+  { file: "sound-buddy.html", text: 'href="sound-buddy-principles.html"', label: "Sound Buddy principles link" },
+  { file: "sound-buddy.html", text: 'id="styleReadout"', label: "Sound Buddy detected style readout" },
+  { file: "sound-buddy.html", text: 'id="styleGuide"', label: "Sound Buddy style guide panel" },
+  { file: "sound-buddy.html", text: 'id="genreMixBoard"', label: "Sound Buddy genre mix likeness board" },
+  { file: "sound-buddy.html", text: 'id="subgenreReadout"', label: "Sound Buddy subgenre readout" },
+  { file: "sound-buddy.html", text: 'id="subgenreBoard"', label: "Sound Buddy subgenre candidate board" },
+  { file: "sound-buddy.html", text: "Approx style", label: "Sound Buddy approximate style caveat" },
+  { file: "sound-buddy.html", text: 'id="coachNotes"', label: "Sound Buddy session notes" },
+  { file: "sound-buddy.html", text: 'id="copyCoachNotes"', label: "Sound Buddy notes copy action" },
+  { file: "sound-buddy.html", text: 'id="clearCoachNotes"', label: "Sound Buddy notes clear action" },
+  { file: "assets/sound-buddy.js", text: "detectStyleFromSnapshot", label: "Sound Buddy auto style detector" },
+  { file: "assets/sound-buddy.js", text: "detectGenreMixFromSnapshot", label: "Sound Buddy genre mix detector" },
+  { file: "assets/sound-buddy.js", text: "detectSubgenresFromSnapshot", label: "Sound Buddy subgenre detector" },
+  { file: "assets/sound-buddy.js", text: "STYLE_GUIDES", label: "Sound Buddy style guide definitions" },
+  { file: "assets/sound-buddy.js", text: "SUBGENRE_GUIDES", label: "Sound Buddy subgenre guide definitions" },
+  { file: "sound-buddy.html", text: "No recording", label: "Sound Buddy no recording marker" },
+  { file: "sound-buddy.html", text: "No upload", label: "Sound Buddy no upload marker" },
+  { file: "sound-buddy.html", text: "No track ID", label: "Sound Buddy no track ID marker" },
+  { file: "assets/sound-buddy.js", text: "getUserMedia", label: "Sound Buddy microphone access" },
+  { file: "assets/sound-buddy.js", text: "createAnalyser", label: "Sound Buddy audio analyzer node" },
+  { file: "assets/sound-buddy.js", text: "No audio", label: "Sound Buddy hosted audio policy" },
+  { file: "sitemap.xml", text: `${siteUrl}/sound-buddy`, label: "Sound Buddy sitemap URL" },
+  { file: "sound-buddy-principles.html", text: "Sound Buddy Principles", label: "Sound Buddy principles page title" },
+  { file: "sound-buddy-principles.html", text: "The foundation is solid for real-time feature extraction", label: "Sound Buddy principles verdict" },
+  { file: "sound-buddy-principles.html", text: "learning cue", label: "Sound Buddy cautious genre framing" },
+  { file: "sound-buddy-principles.html", text: "https://www.w3.org/TR/webaudio-1.1/", label: "Sound Buddy Web Audio citation" },
+  { file: "sound-buddy-principles.html", text: "https://www.w3.org/TR/mediacapture-streams/", label: "Sound Buddy media capture citation" },
+  { file: "sound-buddy-principles.html", text: "https://www.cs.princeton.edu/courses/archive/spr05/cos598E/bib/tsap02gtzan.pdf", label: "Sound Buddy MIR genre citation" },
+  { file: "sound-buddy-principles.html", text: "https://librosa.org/doc/0.11.0/generated/librosa.beat.beat_track.html", label: "Sound Buddy beat tracking citation" },
+  { file: "sitemap.xml", text: `${siteUrl}/sound-buddy-principles`, label: "Sound Buddy principles sitemap URL" },
+];
+
 const accountRequirements = [
   { file: "index.html", text: 'href="account.html"', label: "calendar Account link" },
   { file: "shanghai-rave-calendar-2026.html", text: 'href="account.html"', label: "archive Account link" },
@@ -1248,7 +1309,7 @@ const accountGuideRequirements = accountGuidePages.flatMap(page => [
   { file: page.file, text: "assets/account-system.js", label: `${page.file} public account guide script` },
 ]);
 
-for (const requirement of [...itineraryRequirements, ...opsRequirements, ...adminCornerRequirements, ...scrapeRequirements, ...posterArchiveRequirements, ...everywhereRequirements, ...loveWallRequirements, ...liveRoomRequirements, ...accountRequirements, ...communityRequirements, ...accountGuideRequirements]) {
+for (const requirement of [...itineraryRequirements, ...opsRequirements, ...adminCornerRequirements, ...scrapeRequirements, ...posterArchiveRequirements, ...everywhereRequirements, ...loveWallRequirements, ...liveRoomRequirements, ...listenCoachRequirements, ...accountRequirements, ...communityRequirements, ...accountGuideRequirements]) {
   const html = fs.readFileSync(requirement.file, "utf8");
   if (!html.includes(requirement.text)) {
     throw new Error(`${requirement.file} missing feature marker: ${requirement.label}`);
