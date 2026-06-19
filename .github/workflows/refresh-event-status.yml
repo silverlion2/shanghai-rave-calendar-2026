@@ -1,0 +1,46 @@
+name: Refresh event status labels
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 06:10 Asia/Shanghai, after the event archive cutoff.
+    - cron: "10 22 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-status:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Regenerate static event pages and sitemap
+        run: npm run seo
+
+      - name: Validate generated status surfaces
+        run: |
+          node --test tests/poster-wall-filters.test.js tests/trust-framework.test.js
+          node scripts/check-site-structure.js
+
+      - name: Commit generated status refresh
+        run: |
+          if git diff --quiet -- events sitemap.xml; then
+            echo "No status refresh changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add events sitemap.xml
+          git commit -m "Refresh event status labels"
+          git push

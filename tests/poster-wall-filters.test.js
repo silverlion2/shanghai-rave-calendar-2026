@@ -29,17 +29,24 @@ function extractFunction(source, name) {
 
 function posterWallFiltersForTest() {
   const html = readSiteFile("poster-wall.html");
-  const filteredEvents = extractFunction(html, "filteredEvents");
+  const helperSource = [
+    "eventDate",
+    "eventArchiveCutoff",
+    "eventIsPastByCutoff",
+    "eventTemporalStatus",
+    "eventIsWatchStatus",
+    "eventEffectiveStatus",
+    "eventMatchesStatus",
+    "filteredEvents",
+  ].map(name => extractFunction(html, name)).join("\n");
   return Function(`
     let events = [];
+    const archiveCutoffHour = 6;
+    const statusNow = new Date("2026-06-15T12:00:00+08:00");
     const today = new Date(2026, 5, 15);
     const searchInput = { value: "" };
-    const statusFilter = { value: "upcoming" };
+    const statusFilter = { value: "active" };
     const vibeFilter = { value: "all" };
-    function eventDate(event) {
-      const [year, month, day] = String(event.sortDate).split("-").map(Number);
-      return new Date(year, month - 1, day);
-    }
     function eventSoundTags() {
       return [];
     }
@@ -49,7 +56,7 @@ function posterWallFiltersForTest() {
     function searchable(event) {
       return String(event.title || "").toLowerCase();
     }
-    ${filteredEvents}
+    ${helperSource}
     return {
       setEvents(next) {
         events = next;
@@ -78,15 +85,40 @@ function posterWallImagesForTest() {
   `)();
 }
 
-test("poster wall default upcoming filter excludes past dates and past status rows", () => {
+test("poster wall default active filter excludes past dates and past status rows", () => {
   const filters = posterWallFiltersForTest();
   filters.setEvents([
-    { id: "past-date", title: "Past date", sortDate: "2026-06-14", status: "past" },
+    { id: "past-date", title: "Past date", sortDate: "2026-06-14", status: "upcoming" },
+    { id: "current-watch", title: "Current watch", sortDate: "2026-06-15", status: "watch" },
+    { id: "current-upcoming", title: "Current upcoming", sortDate: "2026-06-15", status: "upcoming" },
     { id: "future-past-status", title: "Future past status", sortDate: "2026-06-16", status: "past" },
     { id: "future-watch", title: "Future watch", sortDate: "2026-06-17", status: "watch" },
     { id: "future-upcoming", title: "Future upcoming", sortDate: "2026-06-18", status: "upcoming" },
   ]);
 
+  assert.deepEqual(
+    filters.filteredEvents().map(event => event.id),
+    ["current-watch", "current-upcoming", "future-watch", "future-upcoming"],
+  );
+});
+
+test("poster wall status filter can isolate current and future upcoming events", () => {
+  const filters = posterWallFiltersForTest();
+  filters.setEvents([
+    { id: "past-date", title: "Past date", sortDate: "2026-06-14", status: "upcoming" },
+    { id: "current-watch", title: "Current watch", sortDate: "2026-06-15", status: "watch" },
+    { id: "current-upcoming", title: "Current upcoming", sortDate: "2026-06-15", status: "upcoming" },
+    { id: "future-watch", title: "Future watch", sortDate: "2026-06-17", status: "watch" },
+    { id: "future-upcoming", title: "Future upcoming", sortDate: "2026-06-18", status: "upcoming" },
+  ]);
+
+  filters.setStatus("current");
+  assert.deepEqual(
+    filters.filteredEvents().map(event => event.id),
+    ["current-watch", "current-upcoming"],
+  );
+
+  filters.setStatus("upcoming");
   assert.deepEqual(
     filters.filteredEvents().map(event => event.id),
     ["future-watch", "future-upcoming"],

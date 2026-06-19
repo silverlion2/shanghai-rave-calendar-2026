@@ -429,7 +429,7 @@
   <script src="assets/account-system.js?v=account-ux-20260616"></script>
   <script src="assets/live-room-realtime.js?v=room-6am-close-20260614"></script>
 </head>
-<body data-current-date="2026-06-13">
+<body>
   <main class="shell dispatch-shell live-room-page">
     <nav class="site-nav" aria-label="Site navigation">
       <div class="nav-group">
@@ -560,7 +560,7 @@
     const adminClosedRoomsEl = document.getElementById("adminClosedRooms");
     const adminClosedRoomStatus = document.getElementById("adminClosedRoomStatus");
     let events = [];
-    let today = dateForIso(document.body.dataset.currentDate || "2026-06-13");
+    let today = shanghaiToday("2026-06-13");
     let eventLiveRooms = [];
     let adminClosedRooms = [];
     let activeEventLiveRoomId = "";

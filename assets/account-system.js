@@ -269,7 +269,7 @@
 
   function rankEvents(events, preferences, options = {}) {
     const prefs = normalizePreferences(preferences);
-    const today = parseDate(options.today) || startOfDay(new Date());
+    const today = parseDate(options.today || shanghaiDateKey()) || startOfDay(new Date());
     const limit = Number.isFinite(options.limit) ? Math.max(0, options.limit) : Infinity;
     const saved = new Set(prefs.savedEventIds);
 
@@ -648,7 +648,7 @@
 
   function isPastEvent(event, today) {
     const date = parseDate(event && event.sortDate);
-    return Boolean(date && date < today && event.status === "past");
+    return Boolean(String(event && event.status || "").toLowerCase() === "past" || (date && date < today));
   }
 
   function isWatchEvent(event) {
@@ -689,6 +689,19 @@
     const match = String(value || "").match(/^(\d{4})-(\d{2})-(\d{2})/);
     if (!match) return null;
     return new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]));
+  }
+
+  function shanghaiDateKey(now = new Date()) {
+    const parts = new Intl.DateTimeFormat("en-US", {
+      timeZone: "Asia/Shanghai",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    }).formatToParts(now).reduce((acc, part) => {
+      if (part.type !== "literal") acc[part.type] = part.value;
+      return acc;
+    }, {});
+    return parts.year && parts.month && parts.day ? `${parts.year}-${parts.month}-${parts.day}` : "";
   }
 
   function startOfDay(date) {
@@ -979,7 +992,7 @@
 
       const summary = personalizedSummary(prefs);
       const ranked = rankEvents(state.events, prefs, {
-        today: doc.body.dataset.currentDate || new Date().toISOString().slice(0, 10),
+        today: doc.body.dataset.currentDate || shanghaiDateKey(),
         limit: 8,
       }).map(item => ({
         ...item,
@@ -1600,7 +1613,7 @@
     const prefs = loadLocalPreferences(win);
     const summary = personalizedSummary(prefs);
     const ranked = rankEvents(events, prefs, {
-      today: doc.body.dataset.currentDate || new Date().toISOString().slice(0, 10),
+      today: doc.body.dataset.currentDate || shanghaiDateKey(),
       limit: 4,
     });
     const hasPrefs = prefs.vibes.length || prefs.venues.length || prefs.savedEventIds.length;
