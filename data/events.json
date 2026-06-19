@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-19",
-  "verified": "2026-06-19",
+  "generatedAt": "2026-06-20",
+  "verified": "2026-06-20",
   "timezone": "Asia/Shanghai",
   "sourcePriority": [
     "Chrome + Computer Use for anti-bot, logged-in, app-only, image/poster, and mini-program sources",
@@ -12339,6 +12339,82 @@
       }
     },
     {
+      "id": "badbadnotgood-2026-shanghai",
+      "kind": "event",
+      "month": "Jul",
+      "sortDate": "2026-07-21",
+      "date": "Jul 21",
+      "time": "20:00-22:00",
+      "title": "BADBADNOTGOOD 2026 Tour - Shanghai",
+      "venue": "VAS est",
+      "district": "Xuhui",
+      "vibe": [
+        "jazz-electronic",
+        "live-band",
+        "hip-hop-crossover"
+      ],
+      "genre": "jazz/electronic crossover, live electronic, hip-hop-influenced jazz",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "368 / 428 RMB",
+      "age": "Check venue",
+      "source": "https://www.smartshanghai.com/event/badbadnotgood-live-in-shanghai-2026-2026-07-21",
+      "sourceLabel": "SmartShanghai event page",
+      "imageTheme": "amber",
+      "description": "Canadian jazz/electronic trio BADBADNOTGOOD returns to Shanghai at VAS est on July 21, 2026. Known for redefining contemporary jazz through hip-hop and electronic collaborations — Kendrick Lamar, Tyler, the Creator, Frank Ocean — the band performs a high-energy live set that moves between composition and improvisation. Listed at 8-10pm on the SmartShanghai page with 368-428 RMB tickets.",
+      "sourceStatus": "smarthshanghai-event-page",
+      "address": "3/F, Building 3, 2266 Longteng Dadao, near Longwen Lu, Xuhui District",
+      "organizer": "VAS est / imported show",
+      "lastChecked": "2026-06-20",
+      "posterUrl": "https://images.smartshanghai.com.cn/uploads/repository/2026/04/30/8d25bbe6-19ad-4a97-bfd2-45b7af357295.jpg",
+      "posterEvidence": {
+        "type": "venue-event-poster",
+        "source": "SmartShanghai event page for BADBADNOTGOOD 2026 Tour - Shanghai",
+        "url": "https://images.smartshanghai.com.cn/uploads/repository/2026/04/30/8d25bbe6-19ad-4a97-bfd2-45b7af357295.jpg",
+        "status": "SmartShanghai event page displays a BADBADNOTGOOD tour poster confirming the Shanghai stop, VAS est venue, and July 21, 2026 date.",
+        "localFiles": []
+      },
+      "ticketStatus": "SmartShanghai lists BADBADNOTGOOD on 2026-07-21 from 20:00 to 22:00 at VAS est with 368 RMB and 428 RMB ticket tiers. Age policy not visible in public sources; verify with VAS est before going.",
+      "lineup": [
+        {
+          "name": "BADBADNOTGOOD",
+          "note": "Canadian jazz/electronic trio — keyboard, bass, drums. Reinterpret jazz through hip-hop and electronic production. Listed as the sole act on the SmartShanghai event page."
+        }
+      ],
+      "sources": [
+        {
+          "label": "SmartShanghai BADBADNOTGOOD event page",
+          "url": "https://www.smartshanghai.com/event/badbadnotgood-live-in-shanghai-2026-2026-07-21",
+          "status": "event-ticketing-source",
+          "lastChecked": "2026-06-20",
+          "verificationNote": "SmartShanghai event page confirms title, July 21 2026 Tuesday, 8-10pm, VAS est, 368-428 RMB tickets, and the event description summarizing BBNG as jazz/electronic/hip-hop crossover."
+        }
+      ],
+      "recommendationReason": "Recommended for jazz-electronic and live-band listeners rather than pure-techno clubgoers. BBNG is not a dance floor techno act but is a legitimate and well-regarded electronic-influenced live band in Shanghai calendar terms — their sound references hip-hop production, breakbeat energy, and jazz harmony, so they serve the live-electronic bracket of the city’s summer calendar.",
+      "bestFor": "Best for jazz-electronic crossover listeners, live-band fans who enjoy hip-hop-influenced instrumentation, and anyone looking for a mid-week, seated/close-listening live route at VAS est.",
+      "verifyBeforeGoing": "Confirm ticket tier and availability via the SmartShanghai ticket page; age policy and running order were not visible in public sources. VAS est address is 3/F, Building 3, 2266 Longteng Dadao near Longwen Lu.",
+      "sourceConfidence": "High-confidence current event: SmartShanghai event page confirms title, date, time, venue, address, price, and a substantial event description that names BBNG’s jazz/electronic/hip-hop identity and their collaborations with Kendrick Lamar, Tyler, the Creator, and Frank Ocean.",
+      "soundTags": [
+        "jazz-electronic",
+        "live-band",
+        "hip-hop-jazz-crossover"
+      ],
+      "decisionTags": [
+        "jazz-electronic-crossover",
+        "mid-week-live",
+        "imported-show"
+      ],
+      "decisionProfile": {
+        "intensity": "medium",
+        "credibility": "confirmed",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": []
+      }
+    },
+    {
       "id": "west-bund-dream-center-waterfront-music-festival-2026",
       "kind": "festival",
       "month": "Aug",
@@ -12418,6 +12494,93 @@
       "bestFor": "Best for a more social, house-forward, rooftop, or date-friendly electronic route.",
       "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
       "sourceConfidence": "Watch-level confidence from Shanghai Municipal Commission of Commerce; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence."
+    },
+    {
+      "id": "vivat-football-electronic-theatre-2026",
+      "kind": "event",
+      "month": "Aug",
+      "sortDate": "2026-08-07",
+      "date": "Aug 7-8",
+      "time": "14:00 / 19:30",
+      "title": "Vivat Football: Football & Electronic Theatre Experience",
+      "venue": "Theatre YOUNG",
+      "district": "Yangpu",
+      "vibe": [
+        "theatre-electronic",
+        "live-electronic-score",
+        "experimental-performance"
+      ],
+      "genre": "experimental electronic theatre, live DJ score, freestyle football performance",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "180 / 380 RMB",
+      "age": "6+",
+      "source": "https://www.smartshanghai.com/event/vivant-football",
+      "sourceLabel": "SmartShanghai event page",
+      "imageTheme": "amber",
+      "description": "Vivat Football (Vivant Football) is a contemporary stage production at Theatre YOUNG on August 7 and 8, 2026. It combines physical theatre, freestyle football performance, and a live electronic music score created in real time by DJ/musician Badfocus. Performed in Czech with Chinese/Czech subtitles, recommended for ages 6+. Structured like a live match where movement, rhythm, and sound interact continuously.",
+      "sourceStatus": "smarthshanghai-event-page",
+      "address": "1155 Kongjiang Lu, Yangpu District (上海市杨浦区控江路1155号)",
+      "organizer": "Theatre YOUNG / imported performance",
+      "lastChecked": "2026-06-20",
+      "posterUrl": "https://images.smartshanghai.com.cn/uploads/repository/2026/04/16/5e870134-5c6a-45c0-8991-82300a31dfee.jpg",
+      "posterEvidence": {
+        "type": "venue-event-poster",
+        "source": "SmartShanghai event page for Vivat Football",
+        "url": "https://images.smartshanghai.com.cn/uploads/repository/2026/04/16/5e870134-5c6a-45c0-8991-82300a31dfee.jpg",
+        "status": "SmartShanghai event page displays Vivat Football tour images and multiple production stills confirming the Theatre YOUNG venue, August 7-8, 2026 dates, and the electronic/DJ-scored production concept.",
+        "localFiles": []
+      },
+      "ticketStatus": "SmartShanghai lists Vivat Football on Aug 7 and Aug 8, 2026 at Theatre YOUNG with 180 RMB and 380 RMB ticket tiers. Show times 2pm and 7:30pm. Recommended for ages 6 and up. Performed in Czech with Chinese/Czech subtitles.",
+      "lineup": [
+        {
+          "name": "Badfocus",
+          "note": "DJ and musician who creates live electronic music throughout the Vivat Football performance, shaping rhythm and structure in real time."
+        },
+        {
+          "name": "Daniel Prazgk",
+          "note": "Freestyle football world champion from Czech Republic, performing live freestyle football as part of the stage production."
+        },
+        {
+          "name": "Petr Bohacy & Mirenka Cechova",
+          "note": "Co-directors known for interdisciplinary performance works combining theatre, movement, and contemporary storytelling."
+        }
+      ],
+      "sources": [
+        {
+          "label": "SmartShanghai Vivat Football event page",
+          "url": "https://www.smartshanghai.com/event/vivant-football",
+          "status": "event-ticketing-source",
+          "lastChecked": "2026-06-20",
+          "verificationNote": "SmartShanghai event page confirms title, August 7 and 8 2026, 2pm/7:30pm times, Theatre YOUNG venue, 180-380 RMB ticket tiers, ages 6+, and the description explicitly naming Badfocus as the live electronic music DJ and Daniel Prazgk as the freestyle football performer."
+        }
+      ],
+      "recommendationReason": "Not a traditional club or techno night — Vivat Football is placed as an experimental electronic performance option: a theatre production scored by live DJ electronic music with freestyle football movement. Worth listing alongside the city’s live-electronic/alternative performance calendar because it uses live electronic sound as a core structural element rather than background music, which differentiates it from ordinary theatre.",
+      "bestFor": "Best for audiences interested in experimental performance, interdisciplinary stage work, live DJ-composed electronic music, or football as narrative movement. Not a dance floor / techno club pick.",
+      "verifyBeforeGoing": "Confirm ticket tier, start time, and seat selection via the SmartShanghai ticket page. Theatre YOUNG is at 1155 Kongjiang Lu in Yangpu, near Huangxing Rd station. Performance is in Czech with Chinese/Czech subtitles.",
+      "sourceConfidence": "Medium-confidence current event: SmartShanghai confirms core fields (title, date, time, venue, price, lineup of Badfocus and Daniel Prazgk). Categorized as experimental electronic theatre rather than electronic dance music — a niche but genuine live-electronic calendar entry.",
+      "soundTags": [
+        "experimental-electronic",
+        "live-dj-score",
+        "theatre-electronic"
+      ],
+      "decisionTags": [
+        "experimental-performance",
+        "live-electronic-score",
+        "theatre-event"
+      ],
+      "decisionProfile": {
+        "intensity": "low-to-medium",
+        "credibility": "confirmed",
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": [
+          "not-a-club-night",
+          "theatre-format"
+        ]
+      }
     },
     {
       "id": "shaun-soomro-dj-serang",
@@ -33248,7 +33411,7 @@
   "metadata": {
     "lastUpdated": "2026-06-19",
     "source": "SmartShanghai clubbing listings + monthly guide",
-    "totalEvents": 118,
+    "totalEvents": 120,
     "upcomingEvents": 50
   }
 }
