@@ -13,8 +13,7 @@
 TECHNO / TRANCE：MRD x TURBO、Oscar L
 BASS / HARD CLUB：Abyss 的 KIRK、Reactor HEALTH MAXXING、ILLUM 10K99、EXIT ONEFORTYASIA
 HOUSE / GROOVE：Nikita Zabelin、Heim Earworthy
-DISCO / SOCIAL：Italo Disco
-LISTENING / SELECTOR：Wigwam wheon
+DISCO / DEEP ROOM：Italo Disco、Wigwam wheon
 HIP-HOP / DANCEHALL：C's Vibes Up、HUSH 三周年
 
 想看时间、venue、lineup、海报和详情页，去 raveindexsh.top 的 Calendar。
@@ -25,7 +24,6 @@ HIP-HOP / DANCEHALL：C's Vibes Up、HUSH 三周年
 2. 02-techno-trance.png
 3. 03-bass-hard-club.png
 4. 04-house-groove.png
-5. 05-disco-social.png
-6. 06-listening-selector.png
-7. 07-hiphop-dancehall.png
-8. 08-calendar-site.png
+5. 05-disco-deep-room.png
+6. 06-hiphop-dancehall.png
+7. 07-calendar-site.png

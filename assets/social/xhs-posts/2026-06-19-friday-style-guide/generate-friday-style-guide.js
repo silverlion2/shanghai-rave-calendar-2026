@@ -71,7 +71,7 @@ const eventCopy = {
     short: "Weekly Listening: wheon",
     displayTime: "22:00-late",
     lineup: "wheon",
-    body: "Wigwam 的 free entry listening 线，deep techno、industrial、psytrance 的影子都在，重点是听感和氛围。",
+    body: "Wigwam 的 free entry 深夜氛围线，deep techno、industrial、psytrance 的影子都在，适合慢慢进入状态。",
   },
   "2026-06-19-vibes-up-party-reggae-dancehall-hip-h": {
     short: "Vibes Up Party",
@@ -118,23 +118,18 @@ const stylePages = [
     note: "不想一上来就硬冲，可以先顺着 groove 走。",
   },
   {
-    file: "05-disco-social.png",
-    slug: "DISCO / SOCIAL",
-    cn: "屋顶、镜球、轻松一点",
+    file: "05-disco-deep-room.png",
+    slug: "DISCO / DEEP ROOM",
+    cn: "屋顶、镜球、氛围线",
     color: "#16c58a",
-    ids: ["2026-06-19-italo-disco-shanghai-s-italian-roofto"],
-    note: "适合朋友局、约会局，也适合先喝一杯再决定后半夜。",
+    ids: [
+      "2026-06-19-italo-disco-shanghai-s-italian-roofto",
+      "wigwam-weekly-listening-wheon",
+    ],
+    note: "一条 rooftop disco，一条 Wigwam 深夜氛围线，适合先热身再决定后半夜。",
   },
   {
-    file: "06-listening-selector.png",
-    slug: "LISTENING / SELECTOR",
-    cn: "不赶路，先听进去",
-    color: "#a78bfa",
-    ids: ["wigwam-weekly-listening-wheon"],
-    note: "这页不是最炸，但很适合把耳朵打开。",
-  },
-  {
-    file: "07-hiphop-dancehall.png",
+    file: "06-hiphop-dancehall.png",
     slug: "HIP-HOP / DANCEHALL",
     cn: "朋友局、地下室、一起热起来",
     color: "#ff7a2f",
@@ -157,8 +152,7 @@ const caption = `今晚不用从一堆海报里硬猜，我按声音和房间感
 TECHNO / TRANCE：MRD x TURBO、Oscar L
 BASS / HARD CLUB：Abyss 的 KIRK、Reactor HEALTH MAXXING、ILLUM 10K99、EXIT ONEFORTYASIA
 HOUSE / GROOVE：Nikita Zabelin、Heim Earworthy
-DISCO / SOCIAL：Italo Disco
-LISTENING / SELECTOR：Wigwam wheon
+DISCO / DEEP ROOM：Italo Disco、Wigwam wheon
 HIP-HOP / DANCEHALL：C's Vibes Up、HUSH 三周年
 
 想看时间、venue、lineup、海报和详情页，去 ${SITE} 的 Calendar。`;
@@ -481,7 +475,7 @@ async function renderCalendarPage(posterUris) {
       <text x="168" y="1360" fill="#f5f0df" font-size="30" font-weight="800">周末路线、海报、详情页都在 calendar。</text>
     </g>
   </svg>`;
-  await renderSvg("08-calendar-site.png", svg);
+  await renderSvg("07-calendar-site.png", svg);
 }
 
 async function renderContactSheet(files) {
@@ -530,10 +524,9 @@ ${caption}
 2. 02-techno-trance.png
 3. 03-bass-hard-club.png
 4. 04-house-groove.png
-5. 05-disco-social.png
-6. 06-listening-selector.png
-7. 07-hiphop-dancehall.png
-8. 08-calendar-site.png
+5. 05-disco-deep-room.png
+6. 06-hiphop-dancehall.png
+7. 07-calendar-site.png
 `;
   fs.writeFileSync(path.join(OUT_DIR, "publish-kit.md"), kit, "utf8");
   fs.writeFileSync(path.join(OUT_DIR, "publish-copy.txt"), `标题：${titleOptions[0]}\n\n文案：\n${caption}\n`, "utf8");
@@ -559,7 +552,7 @@ async function main() {
   const files = [
     "01-cover.png",
     ...stylePages.map((page) => page.file),
-    "08-calendar-site.png",
+    "07-calendar-site.png",
   ];
   await renderContactSheet(files);
   await writeCopy();
