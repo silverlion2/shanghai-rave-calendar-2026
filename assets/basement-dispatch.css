@@ -4437,6 +4437,10 @@ body:has(.calendar-shell) .signal-canvas {
 }
 
 @media (max-width: 700px) {
+  .calendar-shell .bottom-stat-stack {
+    display: none;
+  }
+
   .calendar-shell .highlight-wall {
     order: 1;
     margin: 0 0 8px;

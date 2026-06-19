@@ -258,6 +258,33 @@
       margin: 16px 0;
     }
 
+    .admin-calendar-snapshot {
+      border: 1px solid rgba(65,215,255,.28);
+      border-radius: var(--radius);
+      background:
+        linear-gradient(135deg, rgba(65,215,255,.08), rgba(255,106,42,.06)),
+        rgba(17,17,14,.78);
+      padding: 12px;
+      margin: 16px 0;
+    }
+
+    .admin-calendar-snapshot .panel-header {
+      margin-bottom: 8px;
+    }
+
+    .admin-calendar-stats {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      margin: 0;
+    }
+
+    .admin-calendar-stats .metric {
+      min-height: 82px;
+    }
+
+    .admin-calendar-stats .metric b {
+      color: var(--cyan);
+    }
+
     .operator-strip {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -855,6 +882,9 @@
       .status-bar {
         grid-template-columns: repeat(3, minmax(0, 1fr));
       }
+      .admin-calendar-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
     }
 
     @media (max-width: 780px) {
@@ -981,6 +1011,19 @@
       <div class="metric"><b id="metricNoTicket">0</b><span>缺少独立导票链接</span></div>
       <div class="metric"><b id="metricPaid">0</b><span>付费曝光档位</span></div>
       <div class="metric"><b id="metricSources">0</b><span>本次抓取源/关键词</span></div>
+    </section>
+
+    <section class="admin-calendar-snapshot" aria-label="管理员视角 calendar totals">
+      <div class="panel-header">
+        <h2>管理员视角</h2>
+        <span>public calendar totals</span>
+      </div>
+      <div class="status-bar admin-calendar-stats">
+        <div class="metric"><b id="adminStatEvents">0</b><span>Sourced events and leads across 2026</span></div>
+        <div class="metric"><b id="adminStatUpcoming">0</b><span>Upcoming confirmed or single-source entries after June 11</span></div>
+        <div class="metric"><b id="adminStatTop">0</b><span>High-confidence techno or rave picks</span></div>
+        <div class="metric"><b id="adminStatLateWatch">6</b><span>Late-year watchlist months without reliable full calendars yet</span></div>
+      </div>
     </section>
 
     <section class="workflow">
@@ -1199,6 +1242,10 @@
       metricNoTicket: document.getElementById("metricNoTicket"),
       metricPaid: document.getElementById("metricPaid"),
       metricSources: document.getElementById("metricSources"),
+      adminStatEvents: document.getElementById("adminStatEvents"),
+      adminStatUpcoming: document.getElementById("adminStatUpcoming"),
+      adminStatTop: document.getElementById("adminStatTop"),
+      adminStatLateWatch: document.getElementById("adminStatLateWatch"),
       payloadStamp: document.getElementById("payloadStamp"),
       loadNotice: document.getElementById("loadNotice"),
       leadList: document.getElementById("leadList"),
@@ -1714,6 +1761,16 @@
       els.metricNoTicket.textContent = noTicket;
       els.metricPaid.textContent = paid;
       els.metricSources.textContent = Array.isArray(state.payload?.sources) ? state.payload.sources.length : 0;
+      const eventLeads = rows.filter(lead => lead.type === "event");
+      const upcomingAfterLaunch = eventLeads.filter(lead => {
+        const date = String(lead.raw?.sortDate || lead.date || "");
+        return date >= verifiedFallback && lead.raw?.status !== "past";
+      }).length;
+      const highConfidence = eventLeads.filter(lead => lead.raw?.confidence === "High").length;
+      els.adminStatEvents.textContent = rows.length;
+      els.adminStatUpcoming.textContent = upcomingAfterLaunch;
+      els.adminStatTop.textContent = highConfidence;
+      els.adminStatLateWatch.textContent = "6";
       els.reportStamp.textContent = todayString();
     }
 
