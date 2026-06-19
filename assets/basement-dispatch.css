@@ -2286,6 +2286,46 @@ body:has(.calendar-shell) .signal-canvas {
   margin-top: 16px;
 }
 
+.bottom-stat-stack {
+  min-width: 0;
+  margin-top: 16px;
+  border: 1px solid rgba(229, 222, 209, .24);
+  background:
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, .018) 0 1px, transparent 1px 5px),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, .018) 0 1px, transparent 1px 32px),
+    rgba(5, 6, 6, .72);
+}
+
+.bottom-stat-row {
+  min-height: 136px;
+  display: grid;
+  align-content: center;
+  gap: 14px;
+  border-bottom: 1px solid rgba(229, 222, 209, .18);
+  padding: 24px 20px;
+}
+
+.bottom-stat-row:last-child {
+  border-bottom: 0;
+}
+
+.bottom-stat-row b {
+  color: var(--cyan);
+  font-family: var(--font-display);
+  font-size: clamp(46px, 5vw, 64px);
+  font-weight: 900;
+  line-height: .8;
+}
+
+.bottom-stat-row span {
+  color: rgba(229, 222, 209, .74);
+  font-family: var(--font-display);
+  font-size: clamp(18px, 2vw, 23px);
+  font-weight: 900;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
 .poster-strip {
   display: grid;
   grid-auto-flow: column;
@@ -2342,11 +2382,26 @@ body:has(.calendar-shell) .signal-canvas {
   .poster-strip {
     grid-auto-columns: minmax(152px, 44vw);
   }
+
+  .bottom-stat-row {
+    min-height: 116px;
+    padding: 22px 18px;
+  }
 }
 
 @media (max-width: 480px) {
   .poster-strip {
     grid-auto-columns: minmax(142px, 74vw);
+  }
+
+  .bottom-stat-row {
+    min-height: 104px;
+    gap: 10px;
+    padding: 20px 16px;
+  }
+
+  .bottom-stat-row span {
+    font-size: 18px;
   }
 }
 
@@ -2980,6 +3035,12 @@ body:has(.calendar-shell) .signal-canvas {
 
   .calendar-shell .poster-strip {
     grid-auto-columns: minmax(178px, 236px);
+  }
+
+  .calendar-shell .bottom-stat-stack {
+    grid-column: 1 / 4;
+    grid-row: 7;
+    margin-top: 0;
   }
 
   .calendar-shell .wide-card-rail {
