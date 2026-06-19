@@ -1,0 +1,127 @@
+{
+  "found": true,
+  "id": 351064,
+  "name": "CB Mass",
+  "profile": "CB Mass (Critical Brain Mass) is a now-defunct Korean hip hop group featuring members Choiza, Gaeko and Curbin. Choiza and Gaeko originally met in the sixth grade but before forming CB Mass they began an underground hip hop group named kod along with Sixpoint and Zason, who joined in 1998. In the same year, Choiza and Gaeko met fellow rapper Curbin and created CB Mass. \r\n\r\nThe group debuted in 2000 under Drunken Tiger's wing and released Massmediah to moderate success. In total they produced three albums: MassMediah (2000), Massmatics (2001, their most commercially successful, with 120,000 copies sold in Korea) and Massappeal (2003). They disbanded later in 2003 after a heated and public dispute where Curbin was accused of stealing money from the group. \r\n\r\nAfter CB Mass broke up, Gaeko and Choiza formed Dynamic Duo while Curbin announced plans to go solo but has not yet released any material.",
+  "nameVariations": [],
+  "members": [
+    "Gaeko",
+    "Choiza",
+    "Curbin"
+  ],
+  "groups": [],
+  "urls": [],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/sJXj-pItp2q55gVxd9PCfB5CfUU75pUiji6AqU55mnM/rs:fit/g:sm/q:90/h:428/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM1MTA2/NC0xNTMxOTAwODE5/LTg3NzcuanBlZw.jpeg",
+      "width": 600,
+      "height": 428
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Daeyoung AV",
+    "Cream Entertainment",
+    "Doremi Records",
+    "Hong Il Entertainment",
+    "Woongjin",
+    "Tokyo Underground Gear"
+  ],
+  "releases": [
+    {
+      "title": "Mass Appeal",
+      "year": 2003,
+      "label": "Daeyoung AV",
+      "role": "Main",
+      "format": "CD, Album"
+    },
+    {
+      "title": "Mass-Matics",
+      "year": 2001,
+      "label": "Cream Entertainment",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Mass-Matics",
+      "year": 2001,
+      "label": "Cream Entertainment",
+      "role": "Main",
+      "format": "CD, Album"
+    },
+    {
+      "title": "Mass Mediah",
+      "year": 2000,
+      "label": "Cream Entertainment",
+      "role": "Main",
+      "format": "CD, Album"
+    },
+    {
+      "title": "Leessang Of Honey Family",
+      "year": 2002,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Underground Connection",
+      "year": 2002,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "The Legend Of…",
+      "year": 2001,
+      "label": "Doremi Records",
+      "role": "Appearance",
+      "format": "CD, Album"
+    },
+    {
+      "title": "The Great Rebirth - Drunken Tiger 02",
+      "year": 2000,
+      "label": "Doremi Records",
+      "role": "Appearance",
+      "format": "CD, Album"
+    },
+    {
+      "title": "Attention! = 天上天下有我獨存",
+      "year": 1999,
+      "label": "Hong Il Entertainment",
+      "role": "Appearance",
+      "format": "CD, Album"
+    },
+    {
+      "title": "Year Of The Tiger",
+      "year": 1999,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Dance Dance 가요리믹스 Vol. 1 (2002 The Biggest Korean Dance Music!!!)",
+      "year": 2002,
+      "label": "Woongjin",
+      "role": "TrackAppearance",
+      "format": "CD, Comp + CD, Comp, Mixed"
+    },
+    {
+      "title": "Dance Dance 가요리믹스 (최신 썸머 나이트댄스)",
+      "year": 2002,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Dirty But Real",
+      "label": "Tokyo Underground Gear",
+      "role": "TrackAppearance",
+      "format": "CD, Mixed"
+    }
+  ],
+  "releaseCount": 13,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/351064"
+  },
+  "_cachedAt": 1781889477580
+}

@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "40de0a60-83af-46d5-9bc8-afbbee3de41d",
+  "name": "NanoTech",
+  "sortName": "NanoTech",
+  "type": null,
+  "gender": null,
+  "country": null,
+  "disambiguation": "gabber/speedcore",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 5
+  },
+  "_cachedAt": 1781889338871
+}

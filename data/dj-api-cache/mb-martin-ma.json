@@ -1,0 +1,39 @@
+{
+  "found": true,
+  "id": "1e882508-f664-4abb-919a-8e266f2fad63",
+  "name": "Remy Ma",
+  "sortName": "Remy Ma",
+  "type": "Person",
+  "gender": "female",
+  "country": "US",
+  "disambiguation": "",
+  "lifeSpan": {
+    "begin": "1980-05-30",
+    "ended": null
+  },
+  "aliases": [
+    "Remy Martin",
+    "Reminisce Smith",
+    "Remy",
+    "Remy Ma",
+    "Reminisce Mackie",
+    "Remi Martin",
+    "Remy Smith"
+  ],
+  "tags": [
+    "rap",
+    "hip hop",
+    "deep soul",
+    "neo soul",
+    "hip hop soul",
+    "east coast hip hop",
+    "hardcore hip hop",
+    "trap"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 13102
+  },
+  "_cachedAt": 1781889278866
+}

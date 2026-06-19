@@ -1,0 +1,24 @@
+{
+  "found": true,
+  "id": "aaf08996-b2b6-4040-84a1-6acf32ddf13b",
+  "name": "Anika Kunst",
+  "sortName": "Kunst, Anika",
+  "type": "Person",
+  "gender": "female",
+  "country": "ES",
+  "disambiguation": "Spanish DJ & producer",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [
+    "techno",
+    "electronic"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 399
+  },
+  "_cachedAt": 1781886422223
+}

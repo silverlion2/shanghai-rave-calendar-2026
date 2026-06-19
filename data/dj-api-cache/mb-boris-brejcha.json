@@ -1,0 +1,31 @@
+{
+  "found": true,
+  "id": "ae0d1794-c9d3-4436-94fc-ceff6130da2c",
+  "name": "Boris Brejcha",
+  "sortName": "Brejcha, Boris",
+  "type": "Person",
+  "gender": "male",
+  "country": "DE",
+  "disambiguation": "",
+  "lifeSpan": {
+    "begin": "1981-11-26",
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [
+    "trance",
+    "electronic",
+    "dance",
+    "techno",
+    "minimal techno",
+    "tech house",
+    "progressive house",
+    "melodic techno"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 1190
+  },
+  "_cachedAt": 1781881160709
+}

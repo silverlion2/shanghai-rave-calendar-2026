@@ -1,0 +1,56 @@
+{
+  "found": true,
+  "id": 2472250,
+  "name": "Devils Hole Gang",
+  "profile": "",
+  "nameVariations": [
+    "Devil's Hole",
+    "Devil's Hole Gang"
+  ],
+  "members": [
+    "Steve Riley (5)"
+  ],
+  "groups": [],
+  "urls": [],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/zyxbUb20UUxjBCKt3HAnd2NGw9G3DrOykI9g8yQVXR0/rs:fit/g:sm/q:90/h:270/w:417/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI0NzIy/NTAtMTYzMzg3MTUy/NS01MzkwLmpwZWc.jpeg",
+      "width": 417,
+      "height": 270
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Xerox (2)"
+  ],
+  "releases": [
+    {
+      "title": "Free The People",
+      "year": 1979,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Messthetics # 8: UK '77-82 D.I.Y. Bands: \"D\"",
+      "year": 2002,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Teenage Treats Vol. 5",
+      "year": 1999,
+      "label": "Xerox (2)",
+      "role": "UnofficialRelease",
+      "format": "LP, Comp, Unofficial"
+    }
+  ],
+  "releaseCount": 3,
+  "dataQuality": "Needs Major Changes",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/2472250"
+  },
+  "_cachedAt": 1781889227862
+}

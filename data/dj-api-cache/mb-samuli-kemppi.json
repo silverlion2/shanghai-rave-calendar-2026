@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "ed442b01-8de1-4f0b-9188-e68b2960f050",
+  "name": "Samuli Kemppi",
+  "sortName": "Kemppi, Samuli",
+  "type": "Person",
+  "gender": "male",
+  "country": "FI",
+  "disambiguation": "",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 90
+  },
+  "_cachedAt": 1781887772639
+}

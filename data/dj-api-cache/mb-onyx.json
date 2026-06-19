@@ -1,0 +1,31 @@
+{
+  "found": true,
+  "id": "fc0fa262-6197-4c29-8e22-22f0e369856a",
+  "name": "Onyx",
+  "sortName": "Onyx",
+  "type": "Group",
+  "gender": null,
+  "country": "US",
+  "disambiguation": "New York hardcore rap group",
+  "lifeSpan": {
+    "begin": "1989",
+    "ended": null
+  },
+  "aliases": [
+    "Onyx"
+  ],
+  "tags": [
+    "hip hop",
+    "gangsta rap",
+    "hip hop rnb and dance hall",
+    "boom bap",
+    "east coast hip hop",
+    "hardcore hip hop"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 123
+  },
+  "_cachedAt": 1781889420693
+}

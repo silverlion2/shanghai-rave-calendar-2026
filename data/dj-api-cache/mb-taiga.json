@@ -1,0 +1,26 @@
+{
+  "found": true,
+  "id": "3be8a778-3f21-4a2b-a191-eeb25a3fced2",
+  "name": "Taiga",
+  "sortName": "Taiga",
+  "type": "Person",
+  "gender": "male",
+  "country": "RU",
+  "disambiguation": "Russian electronic artist",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [
+    "downtempo",
+    "hypno",
+    "electronic",
+    "abstract"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 100
+  },
+  "_cachedAt": 1781886186697
+}

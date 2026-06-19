@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "8486267c-4fdd-4645-95e6-9a5934a8fa6a",
+  "name": "DJ Know-How",
+  "sortName": "Know-How, DJ",
+  "type": "Person",
+  "gender": null,
+  "country": null,
+  "disambiguation": "",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 51939
+  },
+  "_cachedAt": 1781885110376
+}

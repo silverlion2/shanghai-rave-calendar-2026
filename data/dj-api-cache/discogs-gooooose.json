@@ -1,0 +1,229 @@
+{
+  "found": true,
+  "id": 5645412,
+  "name": "Gooooose",
+  "profile": "",
+  "nameVariations": [],
+  "members": [],
+  "groups": [
+    "Lava Ox Sea",
+    "Duck Fight Goose"
+  ],
+  "urls": [
+    "https://gooooose.bandcamp.com/"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/MuUaIQMXAyUNf-LKDeJ_c4szj_AasszXrlDWJ7rlD2I/rs:fit/g:sm/q:90/h:658/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTU2NDU0/MTItMTU2MTIyOTg5/Mi00NzAyLmpwZWc.jpeg",
+      "width": 600,
+      "height": 658
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "SVBKVLT",
+    "Drowned By Locals",
+    "Ante-Rasa",
+    "D Force Records",
+    "Signal Life",
+    "RAVE4EVAR",
+    "Fact Mix",
+    "Bié Records",
+    "Eating Music",
+    "Super Hexagon Records",
+    "Crater Records (4)",
+    "ULTRAVIRUS",
+    "D Force Records, CSCAV",
+    "playrec",
+    "Do Hits"
+  ],
+  "releases": [
+    {
+      "title": "Rudiments",
+      "year": 2023,
+      "label": "SVBKVLT",
+      "role": "Main",
+      "format": "LP, Album"
+    },
+    {
+      "title": "Trans-Aeon Express",
+      "year": 2022,
+      "label": "SVBKVLT",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Mollusk",
+      "year": 2021,
+      "label": "Drowned By Locals",
+      "role": "Main",
+      "format": "CD, Album"
+    },
+    {
+      "title": "JAC",
+      "year": 2020,
+      "label": "SVBKVLT",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Pro Rata",
+      "year": 2019,
+      "label": "Ante-Rasa",
+      "role": "Main",
+      "format": "4xFile, FLAC"
+    },
+    {
+      "title": "Rusted Silicon",
+      "year": 2019,
+      "label": "SVBKVLT",
+      "role": "Main",
+      "format": "10xFile, FLAC, MP3, Album"
+    },
+    {
+      "title": "DONG 1",
+      "year": 2018,
+      "label": "D Force Records",
+      "role": "Main",
+      "format": "12\", Album"
+    },
+    {
+      "title": "They",
+      "year": 2017,
+      "label": "D Force Records",
+      "role": "Main",
+      "format": "LP, Album"
+    },
+    {
+      "title": "Tensegrity",
+      "year": 2023,
+      "label": "Signal Life",
+      "role": "Remix",
+      "format": "6xFile, WAV, EP"
+    },
+    {
+      "title": "Microjunglizm Remixes",
+      "year": 2022,
+      "label": "RAVE4EVAR",
+      "role": "Remix",
+      "format": "7xFile, MP3, 320"
+    },
+    {
+      "title": "EP0001",
+      "year": 2020,
+      "label": "SVBKVLT",
+      "role": "Remix",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Alterity",
+      "year": 2020,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Fact Mix 927",
+      "year": 2023,
+      "label": "Fact Mix",
+      "role": "TrackAppearance",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "活​水​：​一​场​由​周​文​中​引​发​、​关​于​东​西​方​音​乐​交​融​与​共​同​演​进​的​持​续​讨​论 = Long May The Water Flow: An Enduring Discussion On The Convergence An",
+      "year": 2023,
+      "label": "Bié Records",
+      "role": "TrackAppearance",
+      "format": "LP, Comp"
+    },
+    {
+      "title": "Eating Music presents Drifting with Friends V1",
+      "year": 2022,
+      "label": "Eating Music",
+      "role": "TrackAppearance",
+      "format": "12\", Cle"
+    },
+    {
+      "title": "Drifting With Friends",
+      "year": 2022,
+      "label": "Eating Music",
+      "role": "TrackAppearance",
+      "format": "LP, Comp"
+    },
+    {
+      "title": "Rondogs Vol. 1",
+      "year": 2021,
+      "label": "Super Hexagon Records",
+      "role": "TrackAppearance",
+      "format": "12xFile, WAV, Comp"
+    },
+    {
+      "title": "Crater Monde Vol.2",
+      "year": 2020,
+      "label": "Crater Records (4)",
+      "role": "TrackAppearance",
+      "format": "12\", Comp"
+    },
+    {
+      "title": "siq~1",
+      "year": 2020,
+      "label": "ULTRAVIRUS",
+      "role": "TrackAppearance",
+      "format": "CD"
+    },
+    {
+      "title": "Cache 02",
+      "year": 2020,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Alterity",
+      "year": 2020,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Cache 01",
+      "year": 2019,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Synthetic China Volume 01",
+      "year": 2018,
+      "label": "D Force Records, CSCAV",
+      "role": "TrackAppearance",
+      "format": "LP, Comp"
+    },
+    {
+      "title": "One Hundred And Twenty Seven",
+      "year": 2017,
+      "label": "playrec",
+      "role": "TrackAppearance",
+      "format": "10xFile, FLAC, Comp"
+    },
+    {
+      "title": "Downpour",
+      "year": 2016,
+      "label": "SVBKVLT",
+      "role": "TrackAppearance",
+      "format": "12xFile, MP3, 320"
+    },
+    {
+      "title": "Do Hits Vol​.​3",
+      "year": 2015,
+      "label": "Do Hits",
+      "role": "TrackAppearance",
+      "format": "13xFile, FLAC, Comp"
+    }
+  ],
+  "releaseCount": 26,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/5645412"
+  },
+  "_cachedAt": 1781884864873
+}

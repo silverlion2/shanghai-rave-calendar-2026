@@ -1,0 +1,35 @@
+{
+  "found": true,
+  "id": "76da816f-ea05-4172-ad9e-ffb69c32199f",
+  "name": "Richie Hawtin",
+  "sortName": "Hawtin, Richie",
+  "type": "Person",
+  "gender": "male",
+  "country": "CA",
+  "disambiguation": "",
+  "lifeSpan": {
+    "begin": "1970-06-04",
+    "ended": null
+  },
+  "aliases": [
+    "Richard Michael Hawtin",
+    "Plastikman (Richie Hawtin)",
+    "Richie Hawtin (Plastikman)"
+  ],
+  "tags": [
+    "electronic",
+    "british",
+    "canadian",
+    "uk",
+    "techno",
+    "minimal techno",
+    "english",
+    "dance and electronica"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 656
+  },
+  "_cachedAt": 1781881089162
+}

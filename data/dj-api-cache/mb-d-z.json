@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "414ccf28-52c2-4fc9-9ed6-832c2a2f82e0",
+  "name": "D-Z",
+  "sortName": "D-Z",
+  "type": "Group",
+  "gender": null,
+  "country": null,
+  "disambiguation": "",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 9854
+  },
+  "_cachedAt": 1781885998750
+}

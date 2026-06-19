@@ -1,0 +1,33 @@
+{
+  "found": true,
+  "id": "9567ea4f-7321-400d-a134-ad5f45b67335",
+  "name": "G. G. Anderson",
+  "sortName": "Anderson, G. G.",
+  "type": "Person",
+  "gender": "male",
+  "country": "DE",
+  "disambiguation": "German Schlager singer, aka Gerd Grabowski",
+  "lifeSpan": {
+    "begin": "1949-12-04",
+    "ended": null
+  },
+  "aliases": [
+    "Toni Maccaroni",
+    "Gerry Grab",
+    "Tony Bell",
+    "Alexander Marco",
+    "G. G. Anderson",
+    "G.G. Anderson",
+    "Gerd Grabowski",
+    "Gerd Grabowski-Grabo"
+  ],
+  "tags": [
+    "schlager"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 11765
+  },
+  "_cachedAt": 1781888960281
+}

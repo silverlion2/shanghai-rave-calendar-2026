@@ -1,0 +1,252 @@
+{
+  "found": true,
+  "id": 1044252,
+  "name": "MRD",
+  "profile": "Techno DJ & producer from Oslo, Norway.\r\nContact: kent.tonning@gmail.com",
+  "nameVariations": [
+    "DJ MRD",
+    "Kent Tonning"
+  ],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "http://linktr.ee/Mrdof1988",
+    "http://www.facebook.com/MRD1988",
+    "http://www.instagram.com/mrd_of_1988/",
+    "http://mrdof1988.bandcamp.com/",
+    "http://soundcloud.com/mrdmrdmrd",
+    "http://ra.co/dj/mrd-no"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/9QIA2cx33rsY39DuJiB8VE7hglWSUEwp9wkWImn2guA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwNDQy/NTItMTU4OTM3NzMz/Ny0zOTAwLmpwZWc.jpeg",
+      "width": 600,
+      "height": 600
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "RAW (9)",
+    "Nali",
+    "Artscore",
+    "AUTO (2)",
+    "Union Trance Mission",
+    "Dusk Records (6)",
+    "voxnox Records",
+    "Arts",
+    "Rotterdam Airlines",
+    "Kaos (6)",
+    "Collection Disques Durs",
+    "Exhale (2)",
+    "Dekmantel",
+    "Ismus",
+    "Agora Records (4)"
+  ],
+  "releases": [
+    {
+      "title": "August Memories",
+      "year": 2026,
+      "label": "RAW (9)",
+      "role": "Main",
+      "format": "4xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Løvehjerte",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Out Of Red EP",
+      "year": 2022,
+      "label": "Nali",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Fall In Love EP",
+      "year": 2021,
+      "label": "Nali",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Superwoman 2​.​0",
+      "year": 2020,
+      "label": "Artscore",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Flowers Of Flesh And Blood",
+      "year": 2020,
+      "label": "AUTO (2)",
+      "role": "Main",
+      "format": "5xFile, FLAC"
+    },
+    {
+      "title": "Superwoman",
+      "year": 2020,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "I Like The Way You Kiss Me (Remixes)",
+      "year": 2024,
+      "label": null,
+      "role": "Remix"
+    },
+    {
+      "title": "Cause I'm Hurting",
+      "year": 2022,
+      "label": "Union Trance Mission",
+      "role": "Remix",
+      "format": "2xFile, MP3, 320"
+    },
+    {
+      "title": "Blank Page",
+      "year": 2022,
+      "label": "Dusk Records (6)",
+      "role": "Remix",
+      "format": "4xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Nuit De Rêve (10 Years Anniversary Album)",
+      "year": 2022,
+      "label": null,
+      "role": "Remix"
+    },
+    {
+      "title": "TDJ123",
+      "year": 2022,
+      "label": null,
+      "role": "Remix"
+    },
+    {
+      "title": "We Trip And Roll",
+      "year": 2021,
+      "label": "voxnox Records",
+      "role": "Remix",
+      "format": "12\", pur"
+    },
+    {
+      "title": "Corporate Supremacy",
+      "year": 2020,
+      "label": "Arts",
+      "role": "Remix",
+      "format": "5xFile, FLAC"
+    },
+    {
+      "title": "Lovercore",
+      "year": 2025,
+      "label": null,
+      "role": "Producer"
+    },
+    {
+      "title": "HotLife",
+      "year": 2026,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "TDJ",
+      "year": 2025,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Lovercore",
+      "year": 2025,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Extermination Engineering",
+      "year": 2025,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "The G Code",
+      "year": 2024,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Lad Ash",
+      "year": 2022,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Versionen 008",
+      "year": 2021,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Plan B",
+      "year": 2020,
+      "label": "Rotterdam Airlines",
+      "role": "Appearance",
+      "format": "15xFile, MP3, Album, 320"
+    },
+    {
+      "title": "Black Pink",
+      "year": 2025,
+      "label": "Kaos (6)",
+      "role": "TrackAppearance",
+      "format": "12\""
+    },
+    {
+      "title": "SPF Infini 3",
+      "year": 2023,
+      "label": "Collection Disques Durs",
+      "role": "TrackAppearance",
+      "format": "File, FLAC, Mixed + 19xFile, FLAC, Comp"
+    },
+    {
+      "title": "Walk With Me - 1st Issue",
+      "year": 2022,
+      "label": "Nali",
+      "role": "TrackAppearance",
+      "format": "12\", Comp, PET"
+    },
+    {
+      "title": "Various Artists 2 - EP1",
+      "year": 2022,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Exhale VA001 (Part 3)",
+      "year": 2021,
+      "label": "Exhale (2)",
+      "role": "TrackAppearance",
+      "format": "12\", Comp"
+    },
+    {
+      "title": "Dekmantel Podcast 355",
+      "year": 2021,
+      "label": "Dekmantel",
+      "role": "TrackAppearance",
+      "format": "File, MP3, Mixed, VBR"
+    },
+    {
+      "title": "ISMVA002.1",
+      "year": 2020,
+      "label": "Ismus",
+      "role": "TrackAppearance",
+      "format": "10xFile, MP3, Comp, 320"
+    }
+  ],
+  "releaseCount": 34,
+  "dataQuality": "Correct",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/1044252"
+  },
+  "_cachedAt": 1781886629881
+}

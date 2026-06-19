@@ -1,0 +1,29 @@
+{
+  "found": true,
+  "id": 1273905,
+  "name": "Köllin",
+  "profile": "",
+  "nameVariations": [],
+  "members": [],
+  "groups": [],
+  "urls": [],
+  "images": [],
+  "genres": [],
+  "styles": [],
+  "labels": [],
+  "releases": [
+    {
+      "title": "Tresor Never Sleeps",
+      "year": 2003,
+      "label": null,
+      "role": "Appearance"
+    }
+  ],
+  "releaseCount": 1,
+  "dataQuality": "Needs Major Changes",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/1273905"
+  },
+  "_cachedAt": 1781889444416
+}

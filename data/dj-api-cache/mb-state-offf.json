@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "c1e5e1b2-099f-4a33-b657-6bdd00017127",
+  "name": "State OFFF",
+  "sortName": "State OFFF",
+  "type": "Person",
+  "gender": "male",
+  "country": null,
+  "disambiguation": "",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 2237
+  },
+  "_cachedAt": 1781889606138
+}

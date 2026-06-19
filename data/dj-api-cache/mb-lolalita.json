@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "8501414d-622f-4595-8526-cdf8885b5aee",
+  "name": "LOLALITA",
+  "sortName": "LOLALITA",
+  "type": "Person",
+  "gender": "female",
+  "country": "BE",
+  "disambiguation": "Belgian hardcore DJ",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 1
+  },
+  "_cachedAt": 1781886371414
+}

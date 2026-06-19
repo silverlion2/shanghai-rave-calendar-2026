@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "215bd631-914a-4964-af5d-6f89658923d7",
+  "name": "Ian G",
+  "sortName": "Ian G",
+  "type": null,
+  "gender": null,
+  "country": null,
+  "disambiguation": "",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 54859
+  },
+  "_cachedAt": 1781889534658
+}

@@ -1,0 +1,41 @@
+{
+  "found": true,
+  "id": "1dcc8968-f2cd-441c-beda-6270f70f2863",
+  "name": "Hole",
+  "sortName": "Hole",
+  "type": "Group",
+  "gender": null,
+  "country": "US",
+  "disambiguation": "American alternative rock band",
+  "lifeSpan": {
+    "begin": "1989",
+    "end": "2012",
+    "ended": true
+  },
+  "aliases": [],
+  "tags": [
+    "rock",
+    "alternative rock",
+    "american",
+    "punk rock",
+    "grunge",
+    "power pop",
+    "post-grunge",
+    "alternative metal",
+    "jangle pop",
+    "pop rock",
+    "post-hardcore",
+    "riot grrrl",
+    "no wave",
+    "noise rock",
+    "sludge metal",
+    "rock and indie",
+    "2008 universal fire victim"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 2131
+  },
+  "_cachedAt": 1781889220949
+}

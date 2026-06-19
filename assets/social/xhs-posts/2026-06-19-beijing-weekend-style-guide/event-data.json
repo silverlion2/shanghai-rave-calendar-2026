@@ -1,0 +1,133 @@
+{
+  "events": [
+    {
+      "id": "pharmacy-dina",
+      "title": "PHARMACY: DINA",
+      "short": "PHARMACY: DINA",
+      "venue": "Pillbox Beijing",
+      "date": "6/19 周五",
+      "time": "23:00-06:00",
+      "lineup": "DINA / Skogul / Blitz / RICE & BEANS",
+      "style": "club music / trance energy",
+      "fit": "今晚想直接进黑房间，选这条。",
+      "body": "Pillbox 今晚的线比较直接，DINA 加本地 support，适合晚一点到、把节奏慢慢推到后半夜的人。",
+      "poster": "pharmacy-dina.png",
+      "url": "https://ra.co/events/2468611"
+    },
+    {
+      "id": "steal-tapes",
+      "title": "ZhaoDai pres. Steal Tapes",
+      "short": "Steal Tapes",
+      "venue": "Zhao Dai",
+      "date": "6/19 周五",
+      "time": "22:00-05:00",
+      "lineup": "Steal Tapes / Kongsent / Nigls",
+      "style": "house / warm loops / groove",
+      "fit": "今晚想顺着 groove 跳，去这条。",
+      "body": "ZhaoDai 今晚偏 house，Steal Tapes 的 loop 和鼓组会更有弹性，不是硬压路线，适合从舒服的律动跳进凌晨。",
+      "poster": "steal-tapes.jpg",
+      "url": "https://ra.co/events/2469080"
+    },
+    {
+      "id": "flaeming-burning",
+      "title": "Flaeming pres. Burning #01 w/Victin",
+      "short": "Flaeming / Victin",
+      "venue": "Groundless Factory",
+      "date": "6/20 周六",
+      "time": "22:00-05:00",
+      "lineup": "Victin / NYB / DJ KINDICH / DAWN / JQ / Artsun",
+      "style": "techno / queer club pressure",
+      "fit": "明晚想要更完整的 rave 感，选这条。",
+      "body": "Groundless Factory 明晚的主线更偏 techno 和 club pressure。Victin 的气质不是单纯猛冲，而是会把能量做得很流动。",
+      "poster": "flaeming-burning-victin.jpg",
+      "url": "https://ra.co/events/2466149"
+    },
+    {
+      "id": "shabby-club",
+      "title": "劣《垃圾场》全国巡演北京站 Shabby Club Pres",
+      "short": "Shabby Club",
+      "venue": "Pillbox Beijing",
+      "date": "6/20 周六",
+      "time": "23:00-06:00",
+      "lineup": "劣 / Billionhappy / hainafromchina / DJ yangfan666 / DJ Stoleyourbae / Kun",
+      "style": "hard club / pop damage / chaotic fun",
+      "fit": "明晚想更乱一点、更热一点，选这条。",
+      "body": "Pillbox 周六会更像混合口味的 club night，名字已经把态度写出来了。适合想听不那么规矩的东西，也想人多一点。",
+      "poster": "shabby-club-beijing.png",
+      "url": "https://ra.co/events/2469917"
+    },
+    {
+      "id": "summer-breeze",
+      "title": "SUMMER BREEZE X FLOW POOL PARTY",
+      "short": "Summer Breeze",
+      "venue": "APAILANG Creative Planet",
+      "date": "6/20 周六",
+      "time": "19:00-03:00",
+      "lineup": "Aruna / ALIBERTI / Bobby Du / DJ Eric Lee / Mickey Zhang",
+      "style": "pool party / social / open-air",
+      "fit": "想轻松一点、从傍晚玩到夜里，选这条。",
+      "body": "这条不是地下室，是朝阳公园的湖畔泳池路线。适合朋友局、社交局，也适合不想一上来就被低频包住的人。",
+      "poster": "summer-breeze-pool.png",
+      "url": "https://ra.co/events/2469282"
+    },
+    {
+      "id": "wine-dancer",
+      "title": "Wander pres. Wine Dancer",
+      "short": "Wine Dancer",
+      "venue": "Zhao Dai",
+      "date": "6/20 周六",
+      "time": "22:00-04:00",
+      "lineup": "WhiTe / susu / MeiXing",
+      "style": "deep / organic / relaxed rhythm",
+      "fit": "明晚想喝一杯再慢慢跳，选这条。",
+      "body": "Wine Dancer 更像一条有酒、有深度律动的 ZhaoDai 路线。它不会特别凶，但适合让身体慢慢松开。",
+      "poster": "wine-dancer.jpg",
+      "url": "https://ra.co/events/2469084"
+    }
+  ],
+  "stylePages": [
+    {
+      "file": "02-tonight-routes.png",
+      "slug": "TONIGHT",
+      "cn": "今晚先选这两条",
+      "accent": "#22d7ee",
+      "ids": [
+        "pharmacy-dina",
+        "steal-tapes"
+      ],
+      "note": "一个偏黑房间 club pressure，一个偏 house groove。今晚不用纠结太多，按身体状态选。"
+    },
+    {
+      "file": "03-techno-hard-club.png",
+      "slug": "TECHNO / HARD CLUB",
+      "cn": "明晚想更硬、更热一点",
+      "accent": "#f13a34",
+      "ids": [
+        "flaeming-burning",
+        "shabby-club"
+      ],
+      "note": "Groundless Factory 和 Pillbox 都是周六更有冲击感的选择：一个偏 techno，一个更混合。"
+    },
+    {
+      "file": "04-house-groove.png",
+      "slug": "HOUSE / GROOVE",
+      "cn": "舒服一点，但还是要跳",
+      "accent": "#35d889",
+      "ids": [
+        "steal-tapes",
+        "wine-dancer"
+      ],
+      "note": "ZhaoDai 两晚都可以走 groove 线：今晚更 house，明晚更松、更深一点。"
+    },
+    {
+      "file": "05-pool-social.png",
+      "slug": "POOL / SOCIAL",
+      "cn": "不想钻地下室，就去户外",
+      "accent": "#ff7a2f",
+      "ids": [
+        "summer-breeze"
+      ],
+      "note": "这条是泳池和朋友局，下午到晚上接着玩，适合想轻松一点但不想早回家的人。"
+    }
+  ]
+}

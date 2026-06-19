@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "c7d7c3f1-c62e-4ed4-bbbb-293c58915b78",
+  "name": "Sunil Sharpe",
+  "sortName": "Sharpe, Sunil",
+  "type": "Person",
+  "gender": "male",
+  "country": "Dublin",
+  "disambiguation": "Irish DJ",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 252
+  },
+  "_cachedAt": 1781887762163
+}

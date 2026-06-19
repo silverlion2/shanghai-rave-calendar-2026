@@ -1,0 +1,277 @@
+{
+  "found": true,
+  "id": 2643553,
+  "name": "Klangkuenstler",
+  "profile": "German electronic music producer, evolving in early 2018 from Deep / Tech House into 90's influenced Techno.\r\nFounded [l=Zuckerton Records] in 2011 and [l=Outworld] in 2019.",
+  "nameVariations": [
+    "KlangKünstler",
+    "Klangkünstler"
+  ],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "http://klangkuenstler.com/",
+    "http://www.facebook.com/klangkuenstler",
+    "http://instagram.com/klangkuenstler",
+    "http://soundcloud.com/klangkuenstler",
+    "http://www.residentadvisor.net/dj/klangkuenstler"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/Ik-oj9ryXAbsxrXjSL87fhP-QYzvy3KHc2U9ZhX02A4/rs:fit/g:sm/q:90/h:328/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI2NDM1/NTMtMTc3MDM2MTY5/OC05MDQ5LmpwZWc.jpeg",
+      "width": 600,
+      "height": 328
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/9cjYufioYMDKcqf1Vs3h6S2ajyIhneTYXFDpiG_r7OU/rs:fit/g:sm/q:90/h:404/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI2NDM1/NTMtMTU1NjQ2NTM2/Ny05MDUxLmpwZWc.jpeg",
+      "width": 590,
+      "height": 404
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/9RCkoGFmztT_AySb40AqHjoYyYBrofyXMiUtebpHCug/rs:fit/g:sm/q:90/h:399/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI2NDM1/NTMtMTYwMzM2OTE4/OC0xNzI2LmpwZWc.jpeg",
+      "width": 600,
+      "height": 399
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Outworld",
+    "Filth On Acid",
+    "Solä",
+    "Superfett",
+    "We Are The Brave",
+    "Rawsome Recordings",
+    "Stil Vor Talent",
+    "Elrow Music",
+    "Toolroom Records",
+    "Dee-P-erfect",
+    "Simma Black",
+    "Great Stuff Recordings",
+    "Play Elegent",
+    "Sunday Best Recordings Ltd.",
+    "Kallias",
+    "3000°",
+    "Zuckerton Records",
+    "Ostfunk Records, Ostfunk Records",
+    "SNTS",
+    "New State Music, Pure Music (18)",
+    "Kontor Records",
+    "Fukai Music",
+    "Soso (2), Soso (2)"
+  ],
+  "releases": [
+    {
+      "title": "Sonne Geht Auf",
+      "year": 2025,
+      "label": "Outworld",
+      "role": "Main",
+      "format": "12\", Ltd, Bla"
+    },
+    {
+      "title": "Toter Schmetterling ",
+      "year": 2024,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Die Welt Brennt",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Deine Angst",
+      "year": 2022,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Weltschmerz",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Armageddon",
+      "year": 2020,
+      "label": "Outworld",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Himmelreich",
+      "year": 2020,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Balthazar",
+      "year": 2019,
+      "label": "Outworld",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Lebendige Geister",
+      "year": 2019,
+      "label": "Filth On Acid",
+      "role": "Main",
+      "format": "3xFile, MP3, 320"
+    },
+    {
+      "title": "Hexenmeister",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Dunkle Illusion",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Mortalis",
+      "year": 2018,
+      "label": "Filth On Acid",
+      "role": "Main",
+      "format": "3xFile, MP3, 320"
+    },
+    {
+      "title": "Close The Door EP",
+      "year": 2018,
+      "label": "Solä",
+      "role": "Main",
+      "format": "2xFile, MP3, EP, 320"
+    },
+    {
+      "title": "The People / Pac Man",
+      "year": 2018,
+      "label": "Superfett",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Cathedral Of Saw",
+      "year": 2018,
+      "label": "Filth On Acid",
+      "role": "Main",
+      "format": "3xFile, MP3, 320"
+    },
+    {
+      "title": "Rise Of The Phoenix",
+      "year": 2018,
+      "label": "We Are The Brave",
+      "role": "Main",
+      "format": "3xFile, MP3, 320"
+    },
+    {
+      "title": "The People EP",
+      "year": 2018,
+      "label": "Superfett",
+      "role": "Main",
+      "format": "2xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Warehouse Decade",
+      "year": 2018,
+      "label": "Rawsome Recordings",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Dimension Null",
+      "year": 2018,
+      "label": "Stil Vor Talent",
+      "role": "Main",
+      "format": "2xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Pop Dem Bottles EP",
+      "year": 2017,
+      "label": "Elrow Music",
+      "role": "Main",
+      "format": "3xFile, MP3, EP, 320"
+    },
+    {
+      "title": "House Nation EP",
+      "year": 2017,
+      "label": "Toolroom Records",
+      "role": "Main",
+      "format": "2xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Remember Way Back EP",
+      "year": 2017,
+      "label": "Toolroom Records",
+      "role": "Main",
+      "format": "2xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Dance With Me",
+      "year": 2017,
+      "label": "Dee-P-erfect",
+      "role": "Main",
+      "format": "2xFile, MP3, 320"
+    },
+    {
+      "title": "Feel The Power",
+      "year": 2016,
+      "label": "Simma Black",
+      "role": "Main",
+      "format": "2xFile, MP3, 320"
+    },
+    {
+      "title": "Rise Against The Arp",
+      "year": 2016,
+      "label": "Stil Vor Talent",
+      "role": "Main",
+      "format": "4xFile, MP3, 320"
+    },
+    {
+      "title": "Jam Master Jack",
+      "year": 2016,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Golden",
+      "year": 2015,
+      "label": "Great Stuff Recordings",
+      "role": "Main",
+      "format": "2xFile, MP3, 320"
+    },
+    {
+      "title": "Man On The Moon",
+      "year": 2014,
+      "label": "Play Elegent",
+      "role": "Main",
+      "format": "4xFile, AAC, 256"
+    },
+    {
+      "title": "That's Me",
+      "year": 2014,
+      "label": "Sunday Best Recordings Ltd.",
+      "role": "Main",
+      "format": "CD"
+    },
+    {
+      "title": "State Of Mind",
+      "year": 2014,
+      "label": "Stil Vor Talent",
+      "role": "Main",
+      "format": "CD, EP"
+    }
+  ],
+  "releaseCount": 50,
+  "dataQuality": "Correct",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/2643553"
+  },
+  "_cachedAt": 1781881294794
+}

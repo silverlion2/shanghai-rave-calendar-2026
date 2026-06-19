@@ -1,0 +1,28 @@
+{
+  "found": true,
+  "id": "8c68233c-c4e2-495d-8ee1-120a600edcc0",
+  "name": "Regis",
+  "sortName": "Regis",
+  "type": "Person",
+  "gender": "male",
+  "country": "GB",
+  "disambiguation": "UK techno producer Karl O’Connor",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [
+    "regis - uk"
+  ],
+  "tags": [
+    "electronic",
+    "techno",
+    "birmingham sound",
+    "industrial techno"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 194
+  },
+  "_cachedAt": 1781887514206
+}

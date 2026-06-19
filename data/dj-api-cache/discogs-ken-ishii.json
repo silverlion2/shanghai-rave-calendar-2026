@@ -1,0 +1,353 @@
+{
+  "found": true,
+  "id": 1032,
+  "name": "Ken Ishii",
+  "profile": "Japanese DJ and record producer. Born May 12, 1970 in Sapporo (Hokkaido), Japan. Spelled his name in Katakana as ケン・イシイ or ケンイシイ",
+  "nameVariations": [
+    "Ishii",
+    "K. Ishii",
+    "K.Ishii",
+    "Ken",
+    "Ken Ishi",
+    "Ken Ishii 2000",
+    "Kenishi",
+    "Kon Ishi",
+    "ケン イシイ",
+    "ケンイシイ",
+    "ケン・イシイ",
+    "石井健"
+  ],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "http://www.kenishii.com",
+    "http://kenishii.bandcamp.com",
+    "http://www.facebook.com/kenishii.tokyo",
+    "http://www.facebook.com/kenishiiofficial",
+    "http://gigs.gigatools.com/user/kenishii70drums",
+    "http://www.instagram.com/_kenishii_",
+    "http://www.mixcloud.com/ken_ishii",
+    "http://www.myspace.com/70drums",
+    "http://www.songkick.com/artists/98938-ken-ishii",
+    "http://soundcloud.com/ken-ishii-70drums",
+    "http://twitter.com/k_ishii_70drums",
+    "http://en.wikipedia.org/wiki/Ken_Ishii"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/pkQ8PXJH6atdZLdzjbatT8o1DvM3FKdes91LxCt77vI/rs:fit/g:sm/q:90/h:900/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwMzIt/MTY2MjQzODc1NS01/MzIzLmpwZWc.jpeg",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/YYaVwohJrzr3RqxiLmdwaJ0tcMWoKjWPPZF2gw5_a5c/rs:fit/g:sm/q:90/h:900/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwMzIt/MTY2MjQzODc1NS05/MzY1LmpwZWc.jpeg",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/P00OMOQT1LHU5YSPXPB4ZnK-pTOc228JoPbM0nsw1Lg/rs:fit/g:sm/q:90/h:900/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwMzIt/MTY2MjQzODc1Ni04/MDExLmpwZWc.jpeg",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/p198D2tVsG-BNZNx3LsAOfde0-kJrtUpMFuA3NcDBjI/rs:fit/g:sm/q:90/h:900/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwMzIt/MTY2MjQzODc1Ni0z/NDg3LmpwZWc.jpeg",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/GaR148U1-6HrRbe-49B7bNjhuyDvGxtOmG0GcEFfG44/rs:fit/g:sm/q:90/h:400/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwMzIt/MTY2MjQzODc1Ni05/NTkwLmpwZWc.jpeg",
+      "width": 600,
+      "height": 400
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/6z44r37zgVyOk_3WXPHpXVZLzzbB0VRLNMOz5d-dw7g/rs:fit/g:sm/q:90/h:247/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwMzIt/MTEwNzAwNzc4OC5q/cGc.jpeg",
+      "width": 300,
+      "height": 247
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/skqGJ3T54v8ifaDD_rB5vhwTB-WCuK4lmWQ4imijqUk/rs:fit/g:sm/q:90/h:467/w:394/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwMzIt/MTEzMDMzMDYyOC5q/cGVn.jpeg",
+      "width": 394,
+      "height": 467
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/AI8G6NtiV9Nr-85NCKq9cyo-5P__e7xuKQu31Sy9i9E/rs:fit/g:sm/q:90/h:240/w:160/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwMzIt/MTEyNzkxMjcwMy5q/cGVn.jpeg",
+      "width": 160,
+      "height": 240
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/g6_uPJz0cmcRNOVjY2pr6UL0XbR_nsnFSCTIHODqOLE/rs:fit/g:sm/q:90/h:217/w:200/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwMzIt/MDAxLmpwZw.jpeg",
+      "width": 200,
+      "height": 217
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/Kv8j3PU_dRzPYrR6hp95N22X6_RPnuiE3TXDeP1Do0M/rs:fit/g:sm/q:90/h:215/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwMzIt/MTEwNzEyNzc1OS5q/cGc.jpeg",
+      "width": 150,
+      "height": 215
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/A51aENwkAEcnMMRkNGW7vI51rAK48vysUBCnEwfAYAM/rs:fit/g:sm/q:90/h:640/w:480/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwMzIt/MTEyNzkxMjc5Mi5q/cGVn.jpeg",
+      "width": 480,
+      "height": 640
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/sLFf7hQ62MKxo8dku1R1bRJQjbkjQhKWewSDZ_52i5I/rs:fit/g:sm/q:90/h:150/w:200/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwMzIt/MTEyNzkxMzIxNi5q/cGVn.jpeg",
+      "width": 200,
+      "height": 150
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/IeOHhITCQv2xYa_52IwqhhF5B6yFfD3zm_D6zynz_R0/rs:fit/g:sm/q:90/h:600/w:581/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwMzIt/MTI1Nzk0NDAwNi5q/cGVn.jpeg",
+      "width": 581,
+      "height": 600
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Mind Medizin Records",
+    "Lost In Cult Records",
+    "Tronic",
+    "Iturnem",
+    "Rekids Special Projects",
+    "Houstrike",
+    "Universal Music Ltda.",
+    "Black Screen Records, Lost In Cult Records",
+    "Electropical Record",
+    "70 Drums Digital",
+    "Akihabara Heavy Industry Inc.",
+    "Hardcore Ambience",
+    "Riot Recordings (2)",
+    "Black Codes Experiments",
+    "Iam8bit, U/M/A/A",
+    "U/M/A/A",
+    "Combine Audio",
+    "Octopus (2)",
+    "Devotion Records (8)",
+    "Bonzai Progressive",
+    "Pornographic Recordings",
+    "Metodiq",
+    "Different Is Different"
+  ],
+  "releases": [
+    {
+      "title": "Syntax Error",
+      "year": 2026,
+      "label": "Mind Medizin Records",
+      "role": "Main",
+      "format": "4xFile, WAV, EP"
+    },
+    {
+      "title": "C-Smash VRS",
+      "year": 2025,
+      "label": "Lost In Cult Records",
+      "role": "Main",
+      "format": "2xLP"
+    },
+    {
+      "title": "Giant Killer EP",
+      "year": 2025,
+      "label": "Tronic",
+      "role": "Main",
+      "format": "4xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Supergravity",
+      "year": 2025,
+      "label": "Iturnem",
+      "role": "Main",
+      "format": "3xFile, FLAC, EP, 16-"
+    },
+    {
+      "title": "Autopilot",
+      "year": 2025,
+      "label": "Rekids Special Projects",
+      "role": "Main",
+      "format": "3xFile, FLAC, EP"
+    },
+    {
+      "title": "Scapegoat",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Focus",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Neonride",
+      "year": 2024,
+      "label": "Houstrike",
+      "role": "Main",
+      "format": "File, WAV"
+    },
+    {
+      "title": "Neonride (U:ICHI Remix)",
+      "year": 2024,
+      "label": "Houstrike",
+      "role": "Main",
+      "format": "File, WAV"
+    },
+    {
+      "title": "Rising Sun",
+      "year": 2024,
+      "label": "Universal Music Ltda.",
+      "role": "Main",
+      "format": "File, WAV"
+    },
+    {
+      "title": "Powerplay",
+      "year": 2023,
+      "label": "Rekids Special Projects",
+      "role": "Main",
+      "format": "2xFile, MP3, EP, 320"
+    },
+    {
+      "title": "C-Smash VRS EP",
+      "year": 2023,
+      "label": "Black Screen Records, Lost In Cult Records",
+      "role": "Main",
+      "format": "7\", EP"
+    },
+    {
+      "title": "Headwind",
+      "year": 2023,
+      "label": "Electropical Record",
+      "role": "Main",
+      "format": "3xFile, MP3, 320"
+    },
+    {
+      "title": "Liver Blow Remixes Part 1",
+      "year": 2023,
+      "label": "70 Drums Digital",
+      "role": "Main",
+      "format": "3xFile, MP3, EP"
+    },
+    {
+      "title": "Liver Blow Remixes Part 2",
+      "year": 2023,
+      "label": "70 Drums Digital",
+      "role": "Main",
+      "format": "2xFile, MP3, EP"
+    },
+    {
+      "title": "Morning Light",
+      "year": 2023,
+      "label": "Akihabara Heavy Industry Inc.",
+      "role": "Main",
+      "format": "3xFile, WAV, Single, 24b"
+    },
+    {
+      "title": "Yakitori: Soldiers Of Misfortune (Soundtrack From The Netflix Series)",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Liver Blow",
+      "year": 2022,
+      "label": "70 Drums Digital",
+      "role": "Main",
+      "format": "3xFile, MP3, EP"
+    },
+    {
+      "title": "Circulate",
+      "year": 2022,
+      "label": "Hardcore Ambience",
+      "role": "Main",
+      "format": "CD, Album, Ltd"
+    },
+    {
+      "title": "Secret World",
+      "year": 2022,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "White And Black = ホワイト・アンド・ブラック",
+      "year": 2022,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Glow / Dive",
+      "year": 2021,
+      "label": "Tronic",
+      "role": "Main",
+      "format": "4xFile, WAV, EP"
+    },
+    {
+      "title": "Back Fist",
+      "year": 2021,
+      "label": "Riot Recordings (2)",
+      "role": "Main",
+      "format": "2xFile, MP3, 320"
+    },
+    {
+      "title": "TOKYOMADRID EP",
+      "year": 2021,
+      "label": "Black Codes Experiments",
+      "role": "Main",
+      "format": "4xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Join The Pac",
+      "year": 2020,
+      "label": "Iam8bit, U/M/A/A",
+      "role": "Main",
+      "format": "7\", RSD, Single, Ltd"
+    },
+    {
+      "title": "PAC-MAN 40th ANNIVERSARY COLLABORATION vol.1",
+      "year": 2020,
+      "label": "U/M/A/A",
+      "role": "Main",
+      "format": "3xFile, AAC, ALAC, FLAC, WAV, Single"
+    },
+    {
+      "title": "Landslide EP",
+      "year": 2020,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Raw Look",
+      "year": 2020,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Bionic Jellyfish EP",
+      "year": 2020,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Abyssal Plain Remixes",
+      "year": 2020,
+      "label": null,
+      "role": "Main"
+    }
+  ],
+  "releaseCount": 50,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/1032"
+  },
+  "_cachedAt": 1781887612414
+}

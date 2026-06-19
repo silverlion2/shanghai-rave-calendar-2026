@@ -1,0 +1,14877 @@
+window.DJ_AGGREGATED_DATABASE = {
+  "generatedAt": "2026-06-19T16:51:44.747Z",
+  "summary": {
+    "total": 91,
+    "withMusicBrainz": 91,
+    "withDiscogs": 91,
+    "withBio": 91,
+    "withReleases": 91,
+    "generatedAt": "2026-06-19T16:51:44.744Z"
+  },
+  "djs": [
+    {
+      "slug": "charlotte-de-witte",
+      "name": "Charlotte de Witte",
+      "displayName": "Charlotte de Witte",
+      "country": "Belgium",
+      "aliases": [
+        "C. De Wit",
+        "Charlotte Aloïs De Witte",
+        "Charlotte de Witte"
+      ],
+      "genres": [
+        "electronic",
+        "techno",
+        "Techno",
+        "Acid Techno"
+      ],
+      "labels": [
+        "KNTXT",
+        "RPM (25)",
+        "Mixmag",
+        "Groove",
+        "Kontor Records",
+        "Resident Advisor",
+        "Sleaze Records",
+        "Tsugi",
+        "Amazone Records, Amazone Records",
+        "Turbo Recordings",
+        "Kneaded Pains",
+        "541",
+        "Elements Of Life (3)",
+        "Armada Digital",
+        "Armada Music"
+      ],
+      "bio": "Belgian DJ and record producer, born July 21, 1992 in Ghent, Flanders.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Amor EP",
+          "year": 2026,
+          "label": "KNTXT",
+          "role": "Main",
+          "format": "3xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Amor EP",
+          "year": 2026,
+          "label": "KNTXT",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "A Prayer For The Dancefloor",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Symphonie Des Seins EP",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "The Heads That Know",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "One Mind",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Charlotte De Witte",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "No Division",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Sanctum EP",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Roar EP",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/kdHMS0RyK6E4rBwaJ9nKZXFiEKrEEay_Ou3A2BvzwZc/rs:fit/g:sm/q:90/h:750/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQzMjE2/NjItMTYxMDgwMjEw/Mi02NjA1LmpwZWc.jpeg",
+          "width": 600,
+          "height": 750
+        }
+      ],
+      "externalUrls": [
+        "https://charlottedewittemusic.com",
+        "https://www.facebook.com/charlottedewittemusic",
+        "https://www.instagram.com/charlottedewittemusic",
+        "https://www.threads.net/@charlottedewittemusic",
+        "https://soundcloud.com/charlottedewittemusic",
+        "https://twitter.com/charlottedwitte",
+        "https://charlottedewittemusic.bandcamp.com"
+      ],
+      "imageTheme": "techno",
+      "mbid": "1de4e373-e597-4087-bf3d-256ec597749e",
+      "discogsId": 4321662,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/1de4e373-e597-4087-bf3d-256ec597749e",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/4321662",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "1de4e373-e597-4087-bf3d-256ec597749e",
+          "type": "Person",
+          "gender": "female",
+          "country": "BE",
+          "disambiguation": "formerly Raving George",
+          "lifeSpan": {
+            "begin": "1992-07-21",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 4321662,
+          "urls": [
+            "https://charlottedewittemusic.com",
+            "https://www.facebook.com/charlottedewittemusic",
+            "https://www.instagram.com/charlottedewittemusic",
+            "https://www.threads.net/@charlottedewittemusic",
+            "https://soundcloud.com/charlottedewittemusic",
+            "https://twitter.com/charlottedwitte",
+            "https://charlottedewittemusic.bandcamp.com"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.644Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "amelie-lens",
+      "name": "Amelie Lens",
+      "displayName": "Amelie Lens",
+      "country": "Belgium",
+      "aliases": [
+        "Amélie Lens"
+      ],
+      "genres": [
+        "electronic",
+        "dance",
+        "techno",
+        "Techno",
+        "Acid Techno"
+      ],
+      "labels": [
+        "Exhale (2)",
+        "Sony Music Germany",
+        "Vermillion Trax",
+        "Mixmag Records, Mixmag",
+        "Not On Label (Amelie Lens Self-released)",
+        "Resident Advisor",
+        "Rhythm Machine, GroundzeroTeknocamp",
+        "Dark Techno Sessions",
+        "Perc Trax",
+        "Future Soundz",
+        "BigCityBeats, Kontor Records",
+        "Mixmag, Mixmag",
+        "CNR"
+      ],
+      "bio": "Techno DJ & producer from Antwerp, Belgium. Born on May 31, 1990 in Vilvoorde, Belgium Founded (2018) and (2021). Married [a=Farrago (3)] on July 2, 2022. Used to work as a fashion model.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Falling Into Acid Dreams",
+          "year": 2026,
+          "label": "Exhale (2)",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Whatever You Do",
+          "year": 2026,
+          "label": "Sony Music Germany",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Our Frequency",
+          "year": 2026,
+          "label": "Exhale (2)",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Serenity EP",
+          "year": 2025,
+          "label": "Exhale (2)",
+          "role": "Main",
+          "format": "2xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Young Forever",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "One Mind",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "You And Me",
+          "year": 2024,
+          "label": "Exhale (2)",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Breathe",
+          "year": 2024,
+          "label": "Exhale (2)",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Falling For You",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Radiance",
+          "year": 2023,
+          "label": "Exhale (2)",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/udWYn0tvfCtPajFnQoU1wkHGXjYEwYfEJuPWTUlefTU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTUxMTk1/MTQtMTY1MzQ4NzIx/Ny03NjAyLmpwZWc.jpeg",
+          "width": 600,
+          "height": 600
+        }
+      ],
+      "externalUrls": [
+        "http://www.amelielens.com/",
+        "http://www.facebook.com/amelielensmusic",
+        "http://www.instagram.com/amelie_lens",
+        "http://twitter.com/AmelieLENS",
+        "http://amelielens.bandcamp.com/",
+        "http://soundcloud.com/amelielens",
+        "http://www.youtube.com/AmelieLens"
+      ],
+      "imageTheme": "techno",
+      "mbid": "67db280d-c3e4-49d9-978e-4050f4e209ef",
+      "discogsId": 5119514,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/67db280d-c3e4-49d9-978e-4050f4e209ef",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/5119514",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "67db280d-c3e4-49d9-978e-4050f4e209ef",
+          "type": "Person",
+          "gender": "female",
+          "country": "BE",
+          "disambiguation": "Belgian techno DJ & producer",
+          "lifeSpan": {
+            "begin": "1990-05-31",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 5119514,
+          "urls": [
+            "http://www.amelielens.com/",
+            "http://www.facebook.com/amelielensmusic",
+            "http://www.instagram.com/amelie_lens",
+            "http://twitter.com/AmelieLENS",
+            "http://amelielens.bandcamp.com/",
+            "http://soundcloud.com/amelielens",
+            "http://www.youtube.com/AmelieLens"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.647Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "carl-cox",
+      "name": "Carl Cox",
+      "displayName": "Carl Cox",
+      "country": "Oldham",
+      "aliases": [
+        "Carl Andrew Cox",
+        "C Cox",
+        "C. Cox",
+        "C.Cox",
+        "Carl",
+        "Carl Cox'",
+        "Carl Cox's",
+        "Carl MMR",
+        "Cox",
+        "Cox, Carl",
+        "DJ Carl Cox",
+        "Dj Carl Cox",
+        "卡爾高士"
+      ],
+      "genres": [
+        "british",
+        "uk",
+        "techno",
+        "english",
+        "Techno",
+        "House"
+      ],
+      "labels": [
+        "Awesome Soundwave",
+        "We Are The Brave",
+        "Factory 93 Records",
+        "BMG",
+        "Oblong Records",
+        "Filth On Acid",
+        "Resident Advisor",
+        "Ministry Of Sound",
+        "Not On Label",
+        "23rd Century ME",
+        "Faze Mag",
+        "Intec Digital",
+        "Circus Recordings",
+        "Bush",
+        "Cr2 Records",
+        "Insomniac Records (3)",
+        "Pornographic Recordings",
+        "Safehouse Management"
+      ],
+      "bio": "UK techno DJ & producer Carl Cox born on July 29th 1962 in Oldham, Greater Manchester, England. From 1996 he hosted a Saturday night show on Kiss FM. He is also Intec Records label co-founder with DJ C1. Since 2007 he has lived in Melbourne, Australia.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Joya (Remixes)",
+          "year": 2026,
+          "label": "Awesome Soundwave",
+          "role": "Main",
+          "format": "7xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Burn Tonight",
+          "year": 2026,
+          "label": "We Are The Brave",
+          "role": "Main",
+          "format": "File, MP3, Single, 320"
+        },
+        {
+          "title": "Shake The Nation",
+          "year": 2025,
+          "label": "Factory 93 Records",
+          "role": "Main",
+          "format": "File, MP3, Single, 320"
+        },
+        {
+          "title": "Joya",
+          "year": 2025,
+          "label": "Awesome Soundwave",
+          "role": "Main",
+          "format": "File, MP3, Single, 320"
+        },
+        {
+          "title": "Nocturnal",
+          "year": 2024,
+          "label": "Awesome Soundwave",
+          "role": "Main",
+          "format": "File, MP3, Single, 320"
+        },
+        {
+          "title": "Ice",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Concentrate",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Mindset",
+          "year": 2023,
+          "label": "Awesome Soundwave",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Deep Space X (Juan Atkins Remixes)",
+          "year": 2023,
+          "label": "BMG",
+          "role": "Main",
+          "format": "12\", Maxi, RSD, Ltd"
+        },
+        {
+          "title": "Music Is Life",
+          "year": 2023,
+          "label": "Oblong Records",
+          "role": "Main",
+          "format": "3xFile, MP3, Single, 320"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/EEyYm7iVgDOpeqjvSetXTLLfdwiK97fWkGoe-HfpITs/rs:fit/g:sm/q:90/h:538/w:519/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEyNjgt/MTUxNDU2ODI3My00/NjU4LmpwZWc.jpeg",
+          "width": 519,
+          "height": 538
+        }
+      ],
+      "externalUrls": [
+        "https://www.carlcox.com",
+        "https://www.facebook.com/carlcox247",
+        "https://twitter.com/Carl_Cox",
+        "https://www.youtube.com/channel/UCCrHGOX6Uoj5PndNIoRkoFw"
+      ],
+      "imageTheme": "techno",
+      "mbid": "8f614665-3418-4ca8-aa6a-737b4636b995",
+      "discogsId": 1268,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/8f614665-3418-4ca8-aa6a-737b4636b995",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/1268",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "8f614665-3418-4ca8-aa6a-737b4636b995",
+          "type": "Person",
+          "gender": "male",
+          "country": "Oldham",
+          "disambiguation": "techno DJ",
+          "lifeSpan": {
+            "begin": "1962-07-29",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 1268,
+          "urls": [
+            "https://www.carlcox.com",
+            "https://www.facebook.com/carlcox247",
+            "https://twitter.com/Carl_Cox",
+            "https://www.youtube.com/channel/UCCrHGOX6Uoj5PndNIoRkoFw"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.648Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "adam-beyer",
+      "name": "Adam Beyer",
+      "displayName": "Adam Beyer",
+      "country": "Sweden",
+      "aliases": [
+        "Adam Beyer & Bart Skils",
+        "Adam Thomas Beyer",
+        "Adam Bayer",
+        "A. B",
+        "A. Beyer",
+        "A.B",
+        "A.B.",
+        "A.Beyer",
+        "A.D.",
+        "AB",
+        "Adam B",
+        "Adam T Beyer",
+        "Adam T. Beyer",
+        "Beyer",
+        "a b"
+      ],
+      "genres": [
+        "trance",
+        "electronic",
+        "pop",
+        "dance",
+        "techno",
+        "electronica",
+        "breakbeat",
+        "breaks",
+        "minimal techno",
+        "tech house",
+        "club",
+        "edm",
+        "tech-house",
+        "acid techno",
+        "melodic techno",
+        "melodic house",
+        "swedish techno",
+        "Techno"
+      ],
+      "labels": [
+        "Drumcode",
+        "Armada (4), Drumcode",
+        "Truesoul",
+        "Armada (4)",
+        "Mixmag",
+        "Resident Advisor"
+      ],
+      "bio": "Swedish techno producer and DJ, born May 15, 1976 in Stockholm. He is the founder of in 1996, sidelabel in 2002, in 2004 and co-founder of . Started DJing and producing around the middle 90's, he was interested in things like acid, gabber, speedcore, hard house and he made numerous records in those styles together with his good friend [a=Peter Benisch] under various aliases. After he met the local and fresh-born Swedish culture, he co-founded Planet Rhythm, worked in their record shop and moved towards analog techno, releasing at labels like , , and as well. He released his first album at Planet Rhythm in 1996 and the (remix version in 1997). In 1996, after he began to experiment with more distorted and raw sounds, he decided to sell his part of Planet Rhythm and founded Drumcode. At first, it was a primarily Swedish-only label with local colleagues like [a=Jesper Dahlbäck], [a=Cari Lekebusch], [a=Thomas Krome], [a=Fredrick Almquist], [a=Joel Mull] and so on. Occasionally he invited international friends like [a=Oliver Ho], [a=Marco Carola] and various more to the remix compilation . Regarding to the previous, the small collective followed Adam on the more experimental road of sounds, earning themselves the often-mentioned reference as pioneers of the \"Swedish Techno\". Adam's third album in 1999 was said to be an example to this sound. These experiments continued on sublabels such as , Truesoul in 2002 (where he released his fourth album ) and Mad Eye in 2004. He invited more artists from Sweden with the likes of [a=Hardcell], [a=Pär Grindvik], [a=Patrik Skoog], [a=Hertz] and [a=Henrik B]; strengthening the \"Swedish Techno\" sound with compilations like and . Around 2004, beside his open-minded friends like style-founder [a=Richie Hawtin] (or [a=Plastikman]), Henrik B and Jesper Dahlbäck; he became a defining responsible of refreshing the techno sound with a more minimal approach. One of his first tries was the release which have been followed with collaborations with the latter in this growing new direction. Around the end of 2006, began with the release by Pär Grindvik, Adam extended the label worldwide and open to the new minimal movement. Beginning with artists like [a=Perc], [a=Ortin Cam] and the uprising of digital distribution, he made the label more active with the number of releases. In 2013, he let the label and his own productions not necessarily related to techno, with becoming open for tech, deep and progressive house. This turn was marked with the compilation and began to push out releases in a monthly frequency.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Close Your Eyes",
+          "year": 2026,
+          "label": "Drumcode",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Do It For The Bass",
+          "year": 2025,
+          "label": "Drumcode",
+          "role": "Main",
+          "format": "2xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Taking Back Control",
+          "year": 2025,
+          "label": "Drumcode",
+          "role": "Main",
+          "format": "2xFile, MP3, 320"
+        },
+        {
+          "title": "Explorer",
+          "year": 2025,
+          "label": "Drumcode",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Techno Trance",
+          "year": 2025,
+          "label": "Armada (4), Drumcode",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Explorer Vol. 1",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "The Signal",
+          "year": 2024,
+          "label": "Truesoul",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Give It Up",
+          "year": 2024,
+          "label": "Armada (4)",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Don't Go",
+          "year": 2024,
+          "label": "Drumcode",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Overdose Of Bass",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/EqOZkz9sO4CA-nyAJkPvdXfY1J0hFQiJ-Q8tkIIX8nk/rs:fit/g:sm/q:90/h:337/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzNjAt/MTc2NjI4Mjc5MC0x/MTQyLnBuZw.jpeg",
+          "width": 600,
+          "height": 337
+        }
+      ],
+      "externalUrls": [
+        "https://adambeyer.se/news",
+        "http://adambeyer.bandcamp.com",
+        "http://www.facebook.com/realadambeyer",
+        "http://www.mixcloud.com/adambeyer",
+        "http://www.myspace.com/adambeyer",
+        "http://soundcloud.com/adambeyer",
+        "http://twitter.com/realAdamBeyer",
+        "http://sv.wikipedia.org/wiki/Adam_Beyer"
+      ],
+      "imageTheme": "techno",
+      "mbid": "0d6daf47-0be9-44ee-a9e8-fb5a7b718538",
+      "discogsId": 1360,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/0d6daf47-0be9-44ee-a9e8-fb5a7b718538",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/1360",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "0d6daf47-0be9-44ee-a9e8-fb5a7b718538",
+          "type": "Person",
+          "gender": "male",
+          "country": "SE",
+          "disambiguation": "",
+          "lifeSpan": {
+            "begin": "1976-05-15",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 1360,
+          "urls": [
+            "https://adambeyer.se/news",
+            "http://adambeyer.bandcamp.com",
+            "http://www.facebook.com/realadambeyer",
+            "http://www.mixcloud.com/adambeyer",
+            "http://www.myspace.com/adambeyer",
+            "http://soundcloud.com/adambeyer",
+            "http://twitter.com/realAdamBeyer",
+            "http://sv.wikipedia.org/wiki/Adam_Beyer"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.650Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "nina-kraviz",
+      "name": "Nina Kraviz",
+      "displayName": "Nina Kraviz",
+      "country": "Russia",
+      "aliases": [
+        "Нина Кравиц",
+        "Nina Kraviz",
+        "Nina Kravets",
+        "Feat.",
+        "Kraviz",
+        "NK",
+        "Nina",
+        "Nina Kravitz",
+        "Нина Kraviz"
+      ],
+      "genres": [
+        "Techno",
+        "Acid"
+      ],
+      "labels": [
+        "treats (2)",
+        "Siberia Records",
+        "Ediciones Inauditas",
+        "трип",
+        "Nina Kraviz Music",
+        "Columbia",
+        "Not On Label (Captain GR Self-released)",
+        "Lakeshore Records",
+        "Loma Vista",
+        "Rekids",
+        "Resident Advisor",
+        "Mixmag",
+        "Rosa (2)",
+        "Not On Label"
+      ],
+      "bio": "Berlin-based Nina Kraviz is a Russian producer and DJ. She is a former dentist. Owner of label.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "treats 001",
+          "year": 2026,
+          "label": "treats (2)",
+          "role": "Main",
+          "format": "12\", EP, Whi"
+        },
+        {
+          "title": "Y&I (Save You Online)",
+          "year": 2025,
+          "label": "Siberia Records",
+          "role": "Main",
+          "format": "File, MP3, Single, 320"
+        },
+        {
+          "title": "It's All Breaking Apart",
+          "year": 2024,
+          "label": "Ediciones Inauditas",
+          "role": "Main",
+          "format": "LP, Ltd, Gat"
+        },
+        {
+          "title": "Tarde Remixes",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Tarde Remixes 2",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "White Horse",
+          "year": 2023,
+          "label": "трип",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Bailando",
+          "year": 2023,
+          "label": "Nina Kraviz Music",
+          "role": "Main",
+          "format": "3xFile, MP3, 320"
+        },
+        {
+          "title": "Sex In The Machine Take 2",
+          "year": 2023,
+          "label": "Columbia",
+          "role": "Main",
+          "format": "2xFile, FLAC, Single, 24-"
+        },
+        {
+          "title": "Tarde (Remixes)",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Taxi Talk",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/sKs_Y9sMaJx9M8iBJcoFm4ls7UlohDpcCq9XowCOKUA/rs:fit/g:sm/q:90/h:400/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTkxMTgy/Mi0xNjUyOTA3MTE1/LTg1NDMuanBlZw.jpeg",
+          "width": 600,
+          "height": 400
+        }
+      ],
+      "externalUrls": [
+        "http://www.ninakraviz.com",
+        "http://ninakraviz.bandcamp.com",
+        "http://www.facebook.com/NinaKravizMusic",
+        "http://soundcloud.com/nina-kraviz",
+        "http://twitter.com/NinaKraviz",
+        "https://mir-znamenitostej.ru/nina-kravic-biografiya-lichnaya-zhizn-muzh/",
+        "http://www.youtube.com/c/NinaKravizOfficial",
+        "https://en.wikipedia.org/wiki/Nina_Kraviz"
+      ],
+      "imageTheme": "techno",
+      "mbid": "5dd3cf5b-474d-465a-a539-456d7e125ebc",
+      "discogsId": 911822,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/5dd3cf5b-474d-465a-a539-456d7e125ebc",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/911822",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "5dd3cf5b-474d-465a-a539-456d7e125ebc",
+          "type": "Person",
+          "gender": "female",
+          "country": "RU",
+          "disambiguation": "Russian DJ",
+          "lifeSpan": {
+            "begin": "1989-09-15",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 911822,
+          "urls": [
+            "http://www.ninakraviz.com",
+            "http://ninakraviz.bandcamp.com",
+            "http://www.facebook.com/NinaKravizMusic",
+            "http://soundcloud.com/nina-kraviz",
+            "http://twitter.com/NinaKraviz",
+            "https://mir-znamenitostej.ru/nina-kravic-biografiya-lichnaya-zhizn-muzh/",
+            "http://www.youtube.com/c/NinaKravizOfficial",
+            "https://en.wikipedia.org/wiki/Nina_Kraviz"
+          ],
+          "dataQuality": "Correct"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.652Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "richie-hawtin",
+      "name": "Richie Hawtin",
+      "displayName": "Richie Hawtin",
+      "country": "Canada",
+      "aliases": [
+        "Richard Michael Hawtin",
+        "Plastikman (Richie Hawtin)",
+        "Richie Hawtin (Plastikman)",
+        "Hawtin",
+        "R Hawtin",
+        "R. Hantin",
+        "R. Hatwin",
+        "R. Hawtin",
+        "R.Hawtin",
+        "R.M.H.",
+        "RH",
+        "Rhawtin",
+        "Rich",
+        "Richard Hawtin",
+        "Richi Hawtin",
+        "Richie",
+        "Richie \"Rich\" Hawtin",
+        "Richie 'Rich' Hawtin",
+        "Richie Hawlin",
+        "Richie Rich Hawtin"
+      ],
+      "genres": [
+        "electronic",
+        "british",
+        "canadian",
+        "uk",
+        "techno",
+        "minimal techno",
+        "english",
+        "dance and electronica",
+        "Techno",
+        "Minimal"
+      ],
+      "labels": [
+        "Plus 8 Records",
+        "Not On Label (Richie Hawtin Self-released)",
+        "M_nus",
+        "Not On Label",
+        "XLR8R",
+        "Tsugi",
+        "TSUGI",
+        "Resident Advisor",
+        "Third Ear (2), M_nus",
+        "Paxahau",
+        "!K7 Records",
+        "BBC Radio International, BBC Radio International",
+        "Hardware",
+        "Wise Buddah"
+      ],
+      "bio": "Canadian (British born) producer, label manager and DJ, born June 4, 1970; brother of [a185883]. Although mainly influenced by Detroit techno, Hawtin has developed his own style ranging from harder noisy techno to deep minimal abstract acid, particularly under his best known alias Plastikman. He was involved in the development of the Final Scratch digital DJ technology and has continued to use new technology as it becomes available. Founded the , and techno labels. Before becoming a DJ worked in a video game shop & at McDonald's.",
+      "stats": {
+        "releaseCount": 49
+      },
+      "releases": [
+        {
+          "title": "96​:​12",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "96:VR Concept 1",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Syntax",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Acid King",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Concept 1 96:12 ",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Time Warps",
+          "year": 2020,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Close Combined (Glasgow, London, Tokyo - Live)",
+          "year": 2019,
+          "label": "Plus 8 Records",
+          "role": "Main",
+          "format": "15xFile, FLAC + File, FLAC, Mixed"
+        },
+        {
+          "title": "Core Resonance (Close Combined)",
+          "year": 2019,
+          "label": "Not On Label (Richie Hawtin Self-released)",
+          "role": "Main",
+          "format": "File, WAV"
+        },
+        {
+          "title": "Enter.Ibiza 2015",
+          "year": 2015,
+          "label": "M_nus",
+          "role": "Main",
+          "format": "4xCD, Mixed + Box, Comp"
+        },
+        {
+          "title": "From My Mind To Yours",
+          "year": 2015,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/9tFFDcscxDCf1ptrA2RRnASPWRXGQ7VmHE3zGIiT-xU/rs:fit/g:sm/q:90/h:743/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/NTE3NjcyNTEwLTY4/NDguanBlZw.jpeg",
+          "width": 600,
+          "height": 743
+        }
+      ],
+      "externalUrls": [
+        "http://www.richiehawtin.com",
+        "http://www.frommymindtoyours.com",
+        "http://richiehawtin.bandcamp.com",
+        "http://discord.com/invite/from-our-minds",
+        "https://www.facebook.com/richiehawtin",
+        "http://www.instagram.com/richiehawtin",
+        "http://www.last.fm/music/Richie+Hawtin",
+        "http://linktr.ee/richiehawtin",
+        "http://www.myspace.com/richiehawtin",
+        "http://www.songkick.com/artists/146504-richie-hawtin"
+      ],
+      "imageTheme": "techno",
+      "mbid": "76da816f-ea05-4172-ad9e-ffb69c32199f",
+      "discogsId": 835,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/76da816f-ea05-4172-ad9e-ffb69c32199f",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/835",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "76da816f-ea05-4172-ad9e-ffb69c32199f",
+          "type": "Person",
+          "gender": "male",
+          "country": "CA",
+          "disambiguation": "",
+          "lifeSpan": {
+            "begin": "1970-06-04",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 835,
+          "urls": [
+            "http://www.richiehawtin.com",
+            "http://www.frommymindtoyours.com",
+            "http://richiehawtin.bandcamp.com",
+            "http://discord.com/invite/from-our-minds",
+            "https://www.facebook.com/richiehawtin",
+            "http://www.instagram.com/richiehawtin",
+            "",
+            "http://www.last.fm/music/Richie+Hawtin",
+            "http://linktr.ee/richiehawtin",
+            "http://www.myspace.com/richiehawtin",
+            "http://www.songkick.com/artists/146504-richie-hawtin",
+            "http://soundcloud.com/richiehawtin",
+            "http://www.tiktok.com/@richiehawtinofficial",
+            "",
+            "http://twitter.com/richiehawtin",
+            "http://twitter.com/rhawtin_live",
+            "http://en.wikipedia.org/wiki/Richie_Hawtin",
+            "http://www.youtube.com/richiehawtin",
+            "http://www.youtube.com/user/minusofficial",
+            "http://www.youtube.com/channel/UC2tkpbU5ELaFXI2Bn2WnaJg"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.653Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "peggy-gou",
+      "name": "Peggy Gou",
+      "displayName": "Peggy Gou",
+      "country": "Germany (based in Berlin)",
+      "aliases": [
+        "김민지",
+        "페기 구"
+      ],
+      "genres": [
+        "dance",
+        "electronic",
+        "house",
+        "techno",
+        "edm",
+        "House",
+        "Techno",
+        "Acid"
+      ],
+      "labels": [
+        "Kiss Klassics",
+        "XL Recordings",
+        "Phonica White",
+        "Phonica Mix Series",
+        "Warner Music France",
+        "Ministry Of Sound",
+        "Wagram Music",
+        "DMC",
+        "Black Butter Records",
+        "Freerange Records",
+        "Groove"
+      ],
+      "bio": "Peggy Gou is a Germany (based in Berlin)-based electronic music DJ and producer, known for House, Techno, Acid, dance, electronic styles. Releases on labels including Kiss Klassics, XL Recordings, Phonica White. 50 releases on Discogs.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Freed From Desire /  (It Goes Like) Nanana",
+          "year": 2026,
+          "label": "Kiss Klassics",
+          "role": "Main",
+          "format": "7\", Single"
+        },
+        {
+          "title": "I Feel So Free (Peggy Gou Energy Mix)",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "D.A.N.C.E.",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Like Jennie (Peggy Gou Remix)",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "I Hear You ",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Lobster Telephone (Edit)",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Find The Way",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "1+1=11",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "(It Goes Like) Nanana",
+          "year": 2023,
+          "label": "XL Recordings",
+          "role": "Main",
+          "format": "3xFile, FLAC, Single"
+        },
+        {
+          "title": "I Believe In Love Again",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [],
+      "externalUrls": [],
+      "imageTheme": "house",
+      "mbid": "4c41d78d-9dd5-430d-81ea-286052158293",
+      "discogsId": 4838162,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/4c41d78d-9dd5-430d-81ea-286052158293",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/4838162",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "4c41d78d-9dd5-430d-81ea-286052158293",
+          "type": "Person",
+          "gender": "female",
+          "country": "Berlin",
+          "disambiguation": "",
+          "lifeSpan": {
+            "begin": "1991-07-03",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 4838162,
+          "urls": [],
+          "dataQuality": null
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.654Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "honey-dijon",
+      "name": "Honey Dijon",
+      "displayName": "Honey Dijon",
+      "country": "Chicago",
+      "aliases": [
+        "Honey Redmond",
+        "Dijon",
+        "H. Dijon",
+        "Miss Honey Dijon"
+      ],
+      "genres": [
+        "house",
+        "House",
+        "Techno"
+      ],
+      "labels": [
+        "Someothershit",
+        "Young (5)",
+        "Classic",
+        "Nervous Records",
+        "Not On Label",
+        "Fresh Selects",
+        "Resident Advisor",
+        "Stereo Cool!",
+        "Mile End Records",
+        "Toolroom Trax",
+        "Not On Label (Honey Dijon Self-released)",
+        "UMe, Global Clearing House",
+        "Turbo",
+        "Defected",
+        "DMC, DMC, DMC",
+        "Armada (4)"
+      ],
+      "bio": "Honey Redmond, (born in 1968), known professionally as Honey Dijon, is an American DJ, producer, and electronic musician.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Slight Werk",
+          "year": 2026,
+          "label": "Someothershit",
+          "role": "Main",
+          "format": "2xFile, FLAC, Single, 24-"
+        },
+        {
+          "title": "Just Friends",
+          "year": 2026,
+          "label": "Someothershit",
+          "role": "Main",
+          "format": "File, FLAC, Single, 24-"
+        },
+        {
+          "title": "Bring Your Love (Honey Dijon Remixes)",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "The Nightlife",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "The Nightlife",
+          "year": 2025,
+          "label": "Someothershit",
+          "role": "Main",
+          "format": "12\", Single"
+        },
+        {
+          "title": "Baddy On The Floor",
+          "year": 2024,
+          "label": "Young (5)",
+          "role": "Main",
+          "format": "File, FLAC, Single, Hi-"
+        },
+        {
+          "title": "DJ-Kicks",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Stand",
+          "year": 2023,
+          "label": "Classic",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Feel So Right (Remixes)",
+          "year": 2023,
+          "label": "Nervous Records",
+          "role": "Main",
+          "format": "5xFile, MP3, 320"
+        },
+        {
+          "title": "Jimmy Choo × Pretty Guardian Sailor Moon",
+          "year": 2023,
+          "label": "Not On Label",
+          "role": "Main",
+          "format": "12\", Single, Ltd, Pin"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/Q13sz_xOCq1hEt4-nfeRjTq0pA9lvgLOuz5stYUkE98/rs:fit/g:sm/q:90/h:889/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTYwMTQx/LTE2NzUwOTAzOTUt/MjY5NC5qcGVn.jpeg",
+          "width": 600,
+          "height": 889
+        }
+      ],
+      "externalUrls": [
+        "http://honeydijon.bandcamp.com",
+        "http://www.facebook.com/DJHoneyDijon",
+        "http://www.instagram.com/honeydijon",
+        "http://linktr.ee/honeydijon",
+        "http://www.songkick.com/artists/2376006-honey-dijon",
+        "http://soundcloud.com/honeydijon",
+        "http://twitter.com/HONEYDIJON",
+        "http://www.whosampled.com/Honey-Dijon",
+        "http://en.wikipedia.org/wiki/Honey_Dijon",
+        "http://www.youtube.com/user/honeyd119"
+      ],
+      "imageTheme": "house",
+      "mbid": "740c6238-3f5d-4e63-8836-826ad6c611ab",
+      "discogsId": 60141,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/740c6238-3f5d-4e63-8836-826ad6c611ab",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/60141",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "740c6238-3f5d-4e63-8836-826ad6c611ab",
+          "type": "Person",
+          "gender": "female",
+          "country": "Chicago",
+          "disambiguation": "house producer",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 60141,
+          "urls": [
+            "http://honeydijon.bandcamp.com",
+            "http://www.facebook.com/DJHoneyDijon",
+            "http://www.instagram.com/honeydijon",
+            "http://linktr.ee/honeydijon",
+            "http://www.songkick.com/artists/2376006-honey-dijon",
+            "http://soundcloud.com/honeydijon",
+            "http://twitter.com/HONEYDIJON",
+            "http://www.whosampled.com/Honey-Dijon",
+            "http://en.wikipedia.org/wiki/Honey_Dijon",
+            "http://www.youtube.com/user/honeyd119",
+            "http://www.youtube.com/channel/UCLoyUoHBcUVbEvygJHggJoQ"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.655Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "i-hate-models",
+      "name": "I Hate Models",
+      "displayName": "I Hate Models",
+      "country": "France",
+      "aliases": [
+        "Guillaume Labadie"
+      ],
+      "genres": [
+        "techno",
+        "Techno",
+        "Industrial Techno"
+      ],
+      "labels": [
+        "Disco Inferno (2)",
+        "RYC Podcast",
+        "Arts",
+        "Artscore",
+        "Aries Records (15)",
+        "Toxic Waste Buried",
+        "Grounded.",
+        "Obscuur Records",
+        "Mushroom Pillow",
+        "Perc Trax",
+        "Taapion Records",
+        "Not On Label",
+        "Dark Techno Sessions",
+        "FACT Magazine",
+        "Discoschrottplatz",
+        "45 Minutes Of Techno",
+        "Possession (2)"
+      ],
+      "bio": "Techno artist, DJ/producer from France. Debuted with EP on [l90144] in 2016. Music styles varies from techno, acid and industrial to early 90s trance and ambient.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Forever Melancholia",
+          "year": 2024,
+          "label": "Disco Inferno (2)",
+          "role": "Main",
+          "format": "5xFile, WAV, EP"
+        },
+        {
+          "title": "Werewolf Disco Club",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Disco Inferno 01",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Reclaim Your City 328",
+          "year": 2019,
+          "label": "RYC Podcast",
+          "role": "Main",
+          "format": "File, MP3, Mixed, 320"
+        },
+        {
+          "title": "Intergalactic Emotional Breakdown",
+          "year": 2019,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "L'Âge Des Métamorphoses",
+          "year": 2019,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Spreading Plague",
+          "year": 2018,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Midnight Cults",
+          "year": 2018,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Rave Or Die 10",
+          "year": 2018,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Sorrows Of The Moon",
+          "year": 2017,
+          "label": "Arts",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/SHLYfcTcgGzG8IheKA-i8Z6vx2XYMlDu3iBQx0bJw3w/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTUxNzY1/MjctMTQ5NTgxNjg4/MC00OTEwLnBuZw.jpeg",
+          "width": 600,
+          "height": 600
+        }
+      ],
+      "externalUrls": [
+        "http://www.facebook.com/ihatemodel",
+        "http://www.instagram.com/ihatemodels1",
+        "http://linktr.ee/IHM1",
+        "http://soundcloud.com/ihatemodels",
+        "http://www.tiktok.com/@ihatemodelsofficial",
+        "http://www.youtube.com/channel/UCQJUmY7sHc-M1sCJE8zOZwQ"
+      ],
+      "imageTheme": "techno",
+      "mbid": "f9a4de7f-d3c6-4de8-8892-7aca52610edd",
+      "discogsId": 5176527,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/f9a4de7f-d3c6-4de8-8892-7aca52610edd",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/5176527",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "f9a4de7f-d3c6-4de8-8892-7aca52610edd",
+          "type": "Person",
+          "gender": "male",
+          "country": "FR",
+          "disambiguation": "techno producer",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 5176527,
+          "urls": [
+            "http://www.facebook.com/ihatemodel",
+            "http://www.instagram.com/ihatemodels1",
+            "http://linktr.ee/IHM1",
+            "",
+            "http://soundcloud.com/ihatemodels",
+            "http://www.tiktok.com/@ihatemodelsofficial",
+            "http://www.youtube.com/channel/UCQJUmY7sHc-M1sCJE8zOZwQ"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.656Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "boris-brejcha",
+      "name": "Boris Brejcha",
+      "displayName": "Boris Brejcha",
+      "country": "Germany",
+      "aliases": [
+        "B. Brejcha",
+        "Brejcha & Boris"
+      ],
+      "genres": [
+        "trance",
+        "electronic",
+        "dance",
+        "techno",
+        "minimal techno",
+        "tech house",
+        "progressive house",
+        "melodic techno",
+        "Techno",
+        "Minimal"
+      ],
+      "labels": [
+        "FCKNG SERIOUS",
+        "Armada (4)",
+        "Harthouse",
+        "Not On Label (Boris Brejcha Self-released)",
+        "Not On Label (NIKMIND Self-released)",
+        "Fckng Serious",
+        "Yellow Kitchen",
+        "Faze Mag"
+      ],
+      "bio": "DJ and producer from Frankenthal (Pfalz), Germany. He was born in 1981 and started producing and dj-ing in november 2006. Style: High-Tech Minimal",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Dancing Penguins",
+          "year": 2026,
+          "label": "FCKNG SERIOUS",
+          "role": "Main",
+          "format": "File, MP3, Single, 320"
+        },
+        {
+          "title": "Engine",
+          "year": 2026,
+          "label": "FCKNG SERIOUS",
+          "role": "Main",
+          "format": "File, MP3, Single, 320"
+        },
+        {
+          "title": "Lily At The Valley",
+          "year": 2026,
+          "label": "FCKNG SERIOUS",
+          "role": "Main",
+          "format": "File, MP3, Single, 320"
+        },
+        {
+          "title": "Be OK",
+          "year": 2026,
+          "label": "Armada (4)",
+          "role": "Main",
+          "format": "File, MP3, Single, 320"
+        },
+        {
+          "title": "Hey Bro!",
+          "year": 2026,
+          "label": "FCKNG SERIOUS",
+          "role": "Main",
+          "format": "2xFile, MP3, 320"
+        },
+        {
+          "title": "Alicante",
+          "year": 2026,
+          "label": "FCKNG SERIOUS",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Die Maschine Auf Diskette 2",
+          "year": 2025,
+          "label": "Harthouse",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Kick It (Andrea Botez Extended Remix)",
+          "year": 2025,
+          "label": "FCKNG SERIOUS",
+          "role": "Main",
+          "format": "File, MP3, Single, 320"
+        },
+        {
+          "title": "Reflections",
+          "year": 2025,
+          "label": "FCKNG SERIOUS",
+          "role": "Main",
+          "format": "2xFile, MP3, Single, 320"
+        },
+        {
+          "title": "XOXO",
+          "year": 2025,
+          "label": "FCKNG SERIOUS",
+          "role": "Main",
+          "format": "2xFile, MP3, EP, 320"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/h7Jif1x85u2tePpgJiW_hJEgiAyn30n8kNF5XNJMebg/rs:fit/g:sm/q:90/h:900/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTcwMDc3/OS0xNzAzNDIxMjYz/LTExMjYuanBlZw.jpeg",
+          "width": 600,
+          "height": 900
+        }
+      ],
+      "externalUrls": [
+        "https://www.borisbrejcha.de",
+        "https://borisbrejcha.bandcamp.com",
+        "https://www.facebook.com/BorisBrejcha.Official",
+        "https://www.instagram.com/borisbrejcha",
+        "https://www.myspace.com/borisbrejcha",
+        "https://soundcloud.com/boris-brejcha",
+        "https://twitter.com/BB_BORISBREJCHA",
+        "https://www.youtube.com/@BorisBrejcha_official",
+        "https://www.tiktok.com/@borisbrejcha",
+        "https://vk.com/borisbrejcha"
+      ],
+      "imageTheme": "techno",
+      "mbid": "ae0d1794-c9d3-4436-94fc-ceff6130da2c",
+      "discogsId": 700779,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/ae0d1794-c9d3-4436-94fc-ceff6130da2c",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/700779",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "ae0d1794-c9d3-4436-94fc-ceff6130da2c",
+          "type": "Person",
+          "gender": "male",
+          "country": "DE",
+          "disambiguation": "",
+          "lifeSpan": {
+            "begin": "1981-11-26",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 700779,
+          "urls": [
+            "https://www.borisbrejcha.de",
+            "https://borisbrejcha.bandcamp.com",
+            "https://www.facebook.com/BorisBrejcha.Official",
+            "https://www.instagram.com/borisbrejcha",
+            "https://www.myspace.com/borisbrejcha",
+            "https://soundcloud.com/boris-brejcha",
+            "https://twitter.com/BB_BORISBREJCHA",
+            "https://www.youtube.com/@BorisBrejcha_official",
+            "https://www.tiktok.com/@borisbrejcha",
+            "https://vk.com/borisbrejcha"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.657Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "reinier-zonneveld",
+      "name": "Reinier Zonneveld",
+      "displayName": "Reinier Zonneveld",
+      "country": "Netherlands",
+      "aliases": [],
+      "genres": [
+        "Techno"
+      ],
+      "labels": [
+        "Spinnin' Records",
+        "Filth On Acid",
+        "Armada (4)",
+        "Insolent Rave Records",
+        "Promo 0",
+        "Stoor"
+      ],
+      "bio": "Techno producer and musician born in the Netherlands on the 30 January 1991. He is based in Rotterdam. He runs his own label , founded in early 2017. At the age of 3 he starts to learn the piano. Some years later he started to compose classical music pieces and performed solo piano concerts.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Loco Loco",
+          "year": 2026,
+          "label": "Spinnin' Records",
+          "role": "Main",
+          "format": "File, FLAC, Single, 24-"
+        },
+        {
+          "title": "Just Wanna Dance",
+          "year": 2025,
+          "label": "Filth On Acid",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Captain My Captain (Filth On Acid Mix)",
+          "year": 2025,
+          "label": "Filth On Acid",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Tokyo",
+          "year": 2025,
+          "label": "Filth On Acid",
+          "role": "Main",
+          "format": "File, MP3, Single, 320"
+        },
+        {
+          "title": "Mama Maria",
+          "year": 2025,
+          "label": "Armada (4)",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Someone To Hold",
+          "year": 2025,
+          "label": "Filth On Acid",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "World On Fire",
+          "year": 2025,
+          "label": "Filth On Acid",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "In De Olie",
+          "year": 2025,
+          "label": "Filth On Acid",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Jekko",
+          "year": 2025,
+          "label": "Filth On Acid",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Girls Go Freak",
+          "year": 2025,
+          "label": "Filth On Acid",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/E7P8YL6RJ7LTsfXtbP-90q5uvoLMQAI6IfKdU1MiWpk/rs:fit/g:sm/q:90/h:400/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTMwNjE5/MjktMTYyNTgzOTQz/NC0yNTUxLmpwZWc.jpeg",
+          "width": 600,
+          "height": 400
+        }
+      ],
+      "externalUrls": [
+        "http://www.facebook.com/reinierzonneveld",
+        "http://www.soundcloud.com/reinier-zonneveld",
+        "https://www.instagram.com/reinierzonneveld/"
+      ],
+      "imageTheme": "techno",
+      "mbid": "41653834-5629-4cf3-b3d7-a0f689f99f42",
+      "discogsId": 3061929,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/41653834-5629-4cf3-b3d7-a0f689f99f42",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/3061929",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "41653834-5629-4cf3-b3d7-a0f689f99f42",
+          "type": "Person",
+          "gender": "male",
+          "country": "NL",
+          "disambiguation": "",
+          "lifeSpan": {
+            "begin": "1991-01-30",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 3061929,
+          "urls": [
+            "http://www.facebook.com/reinierzonneveld",
+            "http://www.soundcloud.com/reinier-zonneveld",
+            "https://www.instagram.com/reinierzonneveld/"
+          ],
+          "dataQuality": "Correct"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.658Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "anyma",
+      "name": "Anyma",
+      "displayName": "Anyma",
+      "country": "Germany (based in Berlin)",
+      "aliases": [
+        "Anyma (ofc)"
+      ],
+      "genres": [
+        "electronic",
+        "melodic techno",
+        "melodic house",
+        "Melodic Techno",
+        "Electronic"
+      ],
+      "labels": [
+        "The End Of Genesys",
+        "Afterlife (6)",
+        "Rose Avenue",
+        "Not On Label (Amelie Lens Self-released)",
+        "DMC, DMC, DMC",
+        "Ministry Of Sound, Sony Music",
+        "DMC",
+        "DMC, DMC",
+        "Not On Label",
+        "El Cuco Recordings"
+      ],
+      "bio": "Techno/Progressive House DJ from Italy. Born November 22, 1988 in New York. Member with [a2342329] of [a1873739] duo, founders of the label .",
+      "stats": {
+        "releaseCount": 44
+      },
+      "releases": [
+        {
+          "title": "Beautiful",
+          "year": 2026,
+          "label": "The End Of Genesys",
+          "role": "Main",
+          "format": "File, MP3, Single, 320"
+        },
+        {
+          "title": "Bad Angel",
+          "year": 2026,
+          "label": "The End Of Genesys",
+          "role": "Main",
+          "format": "File, MP3, Single, 320"
+        },
+        {
+          "title": "Neverland (From Japan)",
+          "year": 2025,
+          "label": "The End Of Genesys",
+          "role": "Main",
+          "format": "File, MP3, Single, 320"
+        },
+        {
+          "title": "Work",
+          "year": 2025,
+          "label": "The End Of Genesys",
+          "role": "Main",
+          "format": "File, MP3, Single, 320"
+        },
+        {
+          "title": "In My Mind",
+          "year": 2025,
+          "label": "The End Of Genesys",
+          "role": "Main",
+          "format": "File, MP3, Single, 320"
+        },
+        {
+          "title": "The End Of Genesys",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Voices In My Head",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Hypnotized",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Out Of My Body",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Angel In The Dark",
+          "year": 2024,
+          "label": "The End Of Genesys",
+          "role": "Main",
+          "format": "File, MP3, Single, 320"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/izKZMy2Nqy6X9dpG4ot1_SCe2mEf1W-SYoCa7aK7vWM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTk2Mjc4/ODYtMTcwMDgyNjE3/NS00NDg2LmpwZWc.jpeg",
+          "width": 600,
+          "height": 600
+        }
+      ],
+      "externalUrls": [
+        "https://www.anyma.com/",
+        "https://www.facebook.com/anyma.ofc",
+        "https://twitter.com/anyma_eva",
+        "https://www.instagram.com/anyma/",
+        "https://www.youtube.com/@anyma_ofc",
+        "https://soundcloud.com/anyma_ofc",
+        "https://en.wikipedia.org/wiki/Anyma"
+      ],
+      "imageTheme": "melodic-techno",
+      "mbid": "788307a8-ca6a-4775-b9a2-8d27d2af71ce",
+      "discogsId": 9627886,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/788307a8-ca6a-4775-b9a2-8d27d2af71ce",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/9627886",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "788307a8-ca6a-4775-b9a2-8d27d2af71ce",
+          "type": "Person",
+          "gender": "male",
+          "country": "Berlin",
+          "disambiguation": "Matteo Milleri",
+          "lifeSpan": {
+            "begin": "1988-05-19",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 9627886,
+          "urls": [
+            "https://www.anyma.com/",
+            "https://www.facebook.com/anyma.ofc",
+            "https://twitter.com/anyma_eva",
+            "https://www.instagram.com/anyma/",
+            "https://www.youtube.com/@anyma_ofc",
+            "https://soundcloud.com/anyma_ofc",
+            "https://en.wikipedia.org/wiki/Anyma"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.658Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "marlon-hoffstadt",
+      "name": "Marlon Hoffstadt",
+      "displayName": "Marlon Hoffstadt",
+      "country": "Germany (based in Berlin)",
+      "aliases": [
+        "M. Hoffstadt",
+        "M. Hofstaadt"
+      ],
+      "genres": [
+        "Techno",
+        "Trance"
+      ],
+      "labels": [
+        "S.M. Entertainment",
+        "Capitol Records",
+        "Columbia, Club Heart Broken",
+        "Virgin",
+        "Method 808",
+        "Method 808, Method 808",
+        "Midnight Themes",
+        "Rawax",
+        "Ransom Note",
+        "Hot Haus Recs",
+        "Retrograde",
+        "Armada Deep",
+        "Parlophone",
+        "OFF Recordings",
+        "Keno Records",
+        "Welldone! Music, Welldone! Music",
+        "EVAMORE MUSIC",
+        "N:S:DA",
+        "DMC",
+        "Midnight Snacks"
+      ],
+      "bio": "DJ & producer based in Berlin, Germany. Founder and A&R of labels and . Also owner of party organizer / PR agency Savour The Moment.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Lemonade (Marlon Hoffstadt Remix)",
+          "year": 2026,
+          "label": "S.M. Entertainment",
+          "role": "Main",
+          "format": "3xFile, FLAC, 24-"
+        },
+        {
+          "title": "Stomp Your Feet",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Makina Time",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Supersonic / Hands Up In The Sky",
+          "year": 2025,
+          "label": "Capitol Records",
+          "role": "Main",
+          "format": "File, FLAC, Single, 24-"
+        },
+        {
+          "title": "Losing Control",
+          "year": 2025,
+          "label": "Capitol Records",
+          "role": "Main",
+          "format": "File, FLAC, Single, 24-"
+        },
+        {
+          "title": "Dopamine (Marlon Hoffstadt Remix)",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Earthquake",
+          "year": 2024,
+          "label": "Columbia, Club Heart Broken",
+          "role": "Main",
+          "format": "File, FLAC, Single, 24-"
+        },
+        {
+          "title": "I Think I Need A DJ",
+          "year": 2024,
+          "label": "Columbia, Club Heart Broken",
+          "role": "Main",
+          "format": "File, FLAC, Single, 24-"
+        },
+        {
+          "title": "Day 'N' Night",
+          "year": 2023,
+          "label": "Virgin",
+          "role": "Main",
+          "format": "File, FLAC, Single"
+        },
+        {
+          "title": "Call Me",
+          "year": 2023,
+          "label": "Method 808",
+          "role": "Main",
+          "format": "File, FLAC, Single"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/8LMi4gSq_TX6Po3HFN3Hq1o6ZFNtshe-x9uimUEh0ys/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI2MjMw/NjEtMTU5OTAzNjQ3/NS05NjI2LmpwZWc.jpeg",
+          "width": 600,
+          "height": 600
+        }
+      ],
+      "externalUrls": [
+        "http://www.marlonhoffstadt.com/",
+        "http://www.facebook.com/marlon.hoffstadt1",
+        "http://www.instagram.com/marlonhoffstadt/",
+        "http://twitter.com/MarlonHoffstadt",
+        "http://marlonhoffstadt.bandcamp.com/",
+        "http://soundcloud.com/marlonhoffstadt",
+        "http://www.residentadvisor.net/dj/marlonhoffstadt"
+      ],
+      "imageTheme": "techno",
+      "mbid": "7377ee25-9240-4b50-a824-20c202e96da9",
+      "discogsId": 2623061,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/7377ee25-9240-4b50-a824-20c202e96da9",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/2623061",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "7377ee25-9240-4b50-a824-20c202e96da9",
+          "type": "Person",
+          "gender": "male",
+          "country": "Berlin",
+          "disambiguation": "DJ & producer",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 2623061,
+          "urls": [
+            "http://www.marlonhoffstadt.com/",
+            "http://www.facebook.com/marlon.hoffstadt1",
+            "http://www.instagram.com/marlonhoffstadt/",
+            "http://twitter.com/MarlonHoffstadt",
+            "http://marlonhoffstadt.bandcamp.com/",
+            "http://soundcloud.com/marlonhoffstadt",
+            "http://www.residentadvisor.net/dj/marlonhoffstadt"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.660Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "lilly-palmer",
+      "name": "Lilly Palmer",
+      "displayName": "Lilly Palmer",
+      "country": "Netherlands (based in Amsterdam)",
+      "aliases": [
+        "Sonja Melanie Rauschenbach"
+      ],
+      "genres": [
+        "techno",
+        "Techno"
+      ],
+      "labels": [
+        "Armada (4)",
+        "Spannung Records, Armada (4), Kontor Records",
+        "Spannung Records",
+        "Kontor Records",
+        "Factory 93 Records",
+        "Tomorrowland Music",
+        "Octopus (2)",
+        "SpaceMonki",
+        "Senso Sounds, Senso Sounds",
+        "Natura Viva",
+        "Kuukou Records",
+        "ZYX Music",
+        "Senso Sounds",
+        "Mainground Music",
+        "Drumcode"
+      ],
+      "bio": "Techno DJ & producer hailing from Germany. Has lived in Zürich (Switzerland), Berlin (Germany) and is now based in Amsterdam (The Netherlands). Married Dutch DJ & producer [a=Egbert] aka [a=Egbert Van Der Gugten] in July 2023.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Ayi Giri / Dopamine Machine",
+          "year": 2026,
+          "label": "Armada (4)",
+          "role": "Main",
+          "format": "2xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Vicious Chords",
+          "year": 2026,
+          "label": "Armada (4)",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Bigger Than Techno",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Party Don't Stop",
+          "year": 2025,
+          "label": "Spannung Records, Armada (4), Kontor Records",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Late At Night",
+          "year": 2025,
+          "label": "Spannung Records, Armada (4), Kontor Records",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Techy MF",
+          "year": 2025,
+          "label": "Spannung Records, Armada (4), Kontor Records",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Gaana Modam",
+          "year": 2025,
+          "label": "Armada (4)",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Rotterdam",
+          "year": 2025,
+          "label": "Armada (4)",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Morals",
+          "year": 2025,
+          "label": "Armada (4)",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Komodo",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/wXDKNEJX5nX6pnqHSynS9dSMR5gBDGraT7chGE_QDd4/rs:fit/g:sm/q:90/h:666/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTY4Mzg2/MjItMTcxNDc1NTM1/NC0yMjcxLmpwZWc.jpeg",
+          "width": 600,
+          "height": 666
+        }
+      ],
+      "externalUrls": [
+        "http://linktr.ee/lillypalmer",
+        "http://www.facebook.com/lillypalmer.dj",
+        "http://www.instagram.com/lilly_palmerdj/",
+        "http://soundcloud.com/lilly_palmer",
+        "http://open.spotify.com/artist/4h8IEOdrg60WM5XGyNOCVU"
+      ],
+      "imageTheme": "techno",
+      "mbid": "b6c834af-59ed-499b-b287-22e2ff4dba13",
+      "discogsId": 6838622,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/b6c834af-59ed-499b-b287-22e2ff4dba13",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/6838622",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "b6c834af-59ed-499b-b287-22e2ff4dba13",
+          "type": "Person",
+          "gender": "female",
+          "country": "Amsterdam",
+          "disambiguation": "Mel Arnold, techno DJ from Amsterdam, Netherlands",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 6838622,
+          "urls": [
+            "http://linktr.ee/lillypalmer",
+            "http://www.facebook.com/lillypalmer.dj",
+            "http://www.instagram.com/lilly_palmerdj/",
+            "http://soundcloud.com/lilly_palmer",
+            "http://open.spotify.com/artist/4h8IEOdrg60WM5XGyNOCVU"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.661Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "miss-monique",
+      "name": "Miss Monique",
+      "displayName": "Miss Monique",
+      "country": "Kyïv",
+      "aliases": [
+        "Alesia Arkusha",
+        "Алеся Аркуша"
+      ],
+      "genres": [
+        "melodic techno",
+        "electronic",
+        "melodic trance",
+        "trance",
+        "melodic house",
+        "progressive house",
+        "Melodic Techno",
+        "Progressive"
+      ],
+      "labels": [
+        "Tomorrowland Music",
+        "Aeterna Records (2)",
+        "Siona Records",
+        "Three Six Zero Recordings",
+        "Interstellar Recordings (2)",
+        "Cercle Records (2)",
+        "Armada (4)",
+        "Siona Records, Siona Records",
+        "AFTR:HRS",
+        "Purified Records",
+        "Freegrant Music",
+        "Area Verde",
+        "Baroque Records"
+      ],
+      "bio": "Ukrainian Progressive House / Melodic Techno DJ and record producer from Kyiv. Founded digital label in 2019. Contact: djmissmonique@gmail.com",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Rajada",
+          "year": 2026,
+          "label": "Tomorrowland Music",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Hot Sauce",
+          "year": 2026,
+          "label": "Aeterna Records (2)",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Ghosts",
+          "year": 2026,
+          "label": "Siona Records",
+          "role": "Main",
+          "format": "File, MPEG Video, 320"
+        },
+        {
+          "title": "Nomacita",
+          "year": 2025,
+          "label": "Aeterna Records (2)",
+          "role": "Main",
+          "format": "File, MP3, Single, 320"
+        },
+        {
+          "title": "Magnet",
+          "year": 2025,
+          "label": "Tomorrowland Music",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Million Miles Away",
+          "year": 2025,
+          "label": "Siona Records",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Is Anyone There?",
+          "year": 2025,
+          "label": "Siona Records",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Rain",
+          "year": 2025,
+          "label": "Three Six Zero Recordings",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Bloom At Night",
+          "year": 2024,
+          "label": "Tomorrowland Music",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Look At You",
+          "year": 2024,
+          "label": "Interstellar Recordings (2)",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/InUUJb3ULbblfEO1slJoFyEMOfbCxk_LoH1QR1ggQWY/rs:fit/g:sm/q:90/h:749/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ5ODgx/MTktMTU5MDM5Njk5/MC0yOTcwLmpwZWc.jpeg",
+          "width": 600,
+          "height": 749
+        }
+      ],
+      "externalUrls": [
+        "https://vk.com/missmonique_dj",
+        "https://promodj.com/missmonique",
+        "https://www.facebook.com/MissMoniqueUA",
+        "https://www.instagram.com/djmissmonique",
+        "https://www.threads.com/@djmissmonique",
+        "https://twitter.com/djmissmonique",
+        "https://soundcloud.com/alesia-arkusha",
+        "https://www.youtube.com/@djmissmonique"
+      ],
+      "imageTheme": "melodic-techno",
+      "mbid": "167f05d9-c9d2-48b5-977d-98d7c78834f8",
+      "discogsId": 4988119,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/167f05d9-c9d2-48b5-977d-98d7c78834f8",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/4988119",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "167f05d9-c9d2-48b5-977d-98d7c78834f8",
+          "type": "Person",
+          "gender": "female",
+          "country": "Kyïv",
+          "disambiguation": "Ukrainian trance artist Alesia Arkusha",
+          "lifeSpan": {
+            "begin": "1992-05-05",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 4988119,
+          "urls": [
+            "https://vk.com/missmonique_dj",
+            "https://promodj.com/missmonique",
+            "https://www.facebook.com/MissMoniqueUA",
+            "https://www.instagram.com/djmissmonique",
+            "https://www.threads.com/@djmissmonique",
+            "https://twitter.com/djmissmonique",
+            "https://soundcloud.com/alesia-arkusha",
+            "https://www.youtube.com/@djmissmonique"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.662Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "indira-paganotto",
+      "name": "Indira Paganotto",
+      "displayName": "Indira Paganotto",
+      "country": "Spain",
+      "aliases": [],
+      "genres": [
+        "psytrance",
+        "Techno",
+        "Psytech"
+      ],
+      "labels": [
+        "[PIAS] Électronique",
+        "Artcore (7)",
+        "трип",
+        "Phase Insane",
+        "Octopus (2)",
+        "PLANETBJØRN JAM",
+        "OFF Recordings",
+        "Octopus Warehouse Series, Octopus Warehouse Series",
+        "Octopus Black Label",
+        "Copycow",
+        "Frequenza",
+        "refused.",
+        "Infinity Productions (6)",
+        "Pooledmusic",
+        "Sony Music Latin, 5020 Records",
+        "EMI",
+        "Iboga Records",
+        "PushMaster Discs",
+        "Dolma Red",
+        "Jannowitz Records, Jannowitz Records",
+        "Raw Trax",
+        "Global Underground (3)",
+        "Armada (4)",
+        "Cercle Records (2)"
+      ],
+      "bio": "Indira Paganotto is a Spain-based electronic music DJ and producer, known for Techno, Psytech, psytrance styles. Releases on labels including [PIAS] Électronique, Artcore (7), трип. 50 releases on Discogs.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Arte Como Amante",
+          "year": 2026,
+          "label": "[PIAS] Électronique",
+          "role": "Main",
+          "format": "12\", Album"
+        },
+        {
+          "title": "Dragon",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Gipsy Queen EP",
+          "year": 2024,
+          "label": "Artcore (7)",
+          "role": "Main",
+          "format": "2xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Gipsy Queen / Heaven Is For Warriors EP",
+          "year": 2024,
+          "label": "Artcore (7)",
+          "role": "Main",
+          "format": "12\", Red"
+        },
+        {
+          "title": "Mantra EP",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "White Horse",
+          "year": 2023,
+          "label": "трип",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Heaven Is For Warriors EP",
+          "year": 2023,
+          "label": "Artcore (7)",
+          "role": "Main",
+          "format": "2xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Guns & Horses EP",
+          "year": 2022,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Lions Of God EP",
+          "year": 2022,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Wolf Land EP",
+          "year": 2021,
+          "label": "Phase Insane",
+          "role": "Main",
+          "format": "12\", EP, Yel"
+        }
+      ],
+      "images": [],
+      "externalUrls": [],
+      "imageTheme": "techno",
+      "mbid": "f42c4a7a-f582-4dd2-aa73-819e09f578a1",
+      "discogsId": 3330104,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/f42c4a7a-f582-4dd2-aa73-819e09f578a1",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/3330104",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "f42c4a7a-f582-4dd2-aa73-819e09f578a1",
+          "type": "Person",
+          "gender": "female",
+          "country": "ES",
+          "disambiguation": "",
+          "lifeSpan": {
+            "begin": "1992-05-30",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 3330104,
+          "urls": [],
+          "dataQuality": null
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.663Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "klangkuenstler",
+      "name": "Klangkuenstler",
+      "displayName": "Klangkuenstler",
+      "country": "Germany (based in Berlin)",
+      "aliases": [
+        "Michael Korb",
+        "Klangkünstler",
+        "KlangKünstler"
+      ],
+      "genres": [
+        "dark techno",
+        "techno",
+        "Techno",
+        "Industrial"
+      ],
+      "labels": [
+        "Outworld",
+        "Filth On Acid",
+        "Solä",
+        "Superfett",
+        "We Are The Brave",
+        "Rawsome Recordings",
+        "Stil Vor Talent",
+        "Elrow Music",
+        "Toolroom Records",
+        "Dee-P-erfect",
+        "Simma Black",
+        "Great Stuff Recordings",
+        "Play Elegent",
+        "Sunday Best Recordings Ltd.",
+        "Kallias",
+        "3000°",
+        "Zuckerton Records",
+        "Ostfunk Records, Ostfunk Records",
+        "SNTS",
+        "New State Music, Pure Music (18)",
+        "Kontor Records",
+        "Fukai Music",
+        "Soso (2), Soso (2)"
+      ],
+      "bio": "German electronic music producer, evolving in early 2018 from Deep / Tech House into 90's influenced Techno. Founded in 2011 and in 2019.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Sonne Geht Auf",
+          "year": 2025,
+          "label": "Outworld",
+          "role": "Main",
+          "format": "12\", Ltd, Bla"
+        },
+        {
+          "title": "Toter Schmetterling ",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Die Welt Brennt",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Deine Angst",
+          "year": 2022,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Weltschmerz",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Armageddon",
+          "year": 2020,
+          "label": "Outworld",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Himmelreich",
+          "year": 2020,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Balthazar",
+          "year": 2019,
+          "label": "Outworld",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Lebendige Geister",
+          "year": 2019,
+          "label": "Filth On Acid",
+          "role": "Main",
+          "format": "3xFile, MP3, 320"
+        },
+        {
+          "title": "Hexenmeister",
+          "year": 2019,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/Ik-oj9ryXAbsxrXjSL87fhP-QYzvy3KHc2U9ZhX02A4/rs:fit/g:sm/q:90/h:328/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI2NDM1/NTMtMTc3MDM2MTY5/OC05MDQ5LmpwZWc.jpeg",
+          "width": 600,
+          "height": 328
+        }
+      ],
+      "externalUrls": [
+        "http://klangkuenstler.com/",
+        "http://www.facebook.com/klangkuenstler",
+        "http://instagram.com/klangkuenstler",
+        "http://soundcloud.com/klangkuenstler",
+        "http://www.residentadvisor.net/dj/klangkuenstler"
+      ],
+      "imageTheme": "techno",
+      "mbid": "dc60d275-d4d1-4bf2-b32c-4aa2332d7459",
+      "discogsId": 2643553,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/dc60d275-d4d1-4bf2-b32c-4aa2332d7459",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/2643553",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "dc60d275-d4d1-4bf2-b32c-4aa2332d7459",
+          "type": "Person",
+          "gender": "male",
+          "country": "Berlin",
+          "disambiguation": "",
+          "lifeSpan": {
+            "begin": "1990",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 2643553,
+          "urls": [
+            "http://klangkuenstler.com/",
+            "http://www.facebook.com/klangkuenstler",
+            "http://instagram.com/klangkuenstler",
+            "http://soundcloud.com/klangkuenstler",
+            "http://www.residentadvisor.net/dj/klangkuenstler"
+          ],
+          "dataQuality": "Correct"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.664Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "nico-moreno",
+      "name": "Nico Moreno",
+      "displayName": "Nico Moreno",
+      "country": "France",
+      "aliases": [],
+      "genres": [
+        "techno",
+        "industrial techno",
+        "Techno",
+        "Hard Techno"
+      ],
+      "labels": [
+        "FXCK",
+        "Insolent Rave Records",
+        "HEKATE Records",
+        "Techno Germany Records",
+        "Blvckplvgue",
+        "Grounded.",
+        "Raven Sigh",
+        "Rawe",
+        "Etruria Beat",
+        "RAW (9)",
+        "Gomboc Records",
+        "ERADYS Records",
+        "Sacred Court",
+        "Exhale (2)",
+        "Mixmag",
+        "Unlocked BCN Records, Unlocked BCN Records",
+        "Ismus",
+        "WarinD Records",
+        "RND. Records"
+      ],
+      "bio": "DJ and producer from Caen, France.",
+      "stats": {
+        "releaseCount": 42
+      },
+      "releases": [
+        {
+          "title": "Overdose",
+          "year": 2026,
+          "label": "FXCK",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Dance In The Light",
+          "year": 2026,
+          "label": "Insolent Rave Records",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "2 Be High",
+          "year": 2024,
+          "label": "Insolent Rave Records",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Hard Kicks, Cheap Thrills",
+          "year": 2024,
+          "label": "Insolent Rave Records",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Why Was I Chosen",
+          "year": 2024,
+          "label": "Insolent Rave Records",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Make Sacrifices For Glory",
+          "year": 2024,
+          "label": "Insolent Rave Records",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Because They Want Our Seat",
+          "year": 2024,
+          "label": "HEKATE Records",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "You Can't Stop The Movement",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "This Is For My Haters",
+          "year": 2022,
+          "label": "Insolent Rave Records",
+          "role": "Main",
+          "format": "2xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Purple Widow (Original And Remix Versions)",
+          "year": 2021,
+          "label": "Insolent Rave Records",
+          "role": "Main",
+          "format": "12\", Ltd"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/7C4FDlqc-y4bErvzbN03h6eoElwbfUnW2b5oMt2XG48/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTU5NjA1/ODAtMTUwMzY4NDAy/OC03OTg1LmpwZWc.jpeg",
+          "width": 600,
+          "height": 600
+        }
+      ],
+      "externalUrls": [
+        "https://www.facebook.com/nicomorenomusic/",
+        "https://soundcloud.com/nicomorenomusic",
+        "https://www.instagram.com/nicomoreno_music/"
+      ],
+      "imageTheme": "techno",
+      "mbid": "82f2714c-f532-482a-859a-5b170901f9e9",
+      "discogsId": 5960580,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/82f2714c-f532-482a-859a-5b170901f9e9",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/5960580",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "82f2714c-f532-482a-859a-5b170901f9e9",
+          "type": "Person",
+          "gender": "male",
+          "country": "FR",
+          "disambiguation": "French DJ",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 5960580,
+          "urls": [
+            "https://www.facebook.com/nicomorenomusic/",
+            "https://soundcloud.com/nicomorenomusic",
+            "https://www.instagram.com/nicomoreno_music/"
+          ],
+          "dataQuality": "Correct"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.664Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "sara-landry",
+      "name": "Sara Landry",
+      "displayName": "Sara Landry",
+      "country": "United States",
+      "aliases": [],
+      "genres": [
+        "techno",
+        "psytrance",
+        "acid techno",
+        "hard techno",
+        "industrial techno",
+        "Techno",
+        "Hard Techno"
+      ],
+      "labels": [
+        "HEKATE Records",
+        "Taapion Records",
+        "Not On Label (Sara Landry Self-released)",
+        "RAW (9)",
+        "Techno Germany Records",
+        "Kraftek",
+        "Crisis Of Man",
+        "PinkStar Black Recordings",
+        "Mau5trap Recordings",
+        "Vermillion Trax",
+        "Moments In Time",
+        "T-Minus Records (2)",
+        "Tomorrowland Music",
+        "Fact Mix",
+        "Exhale (2)",
+        "Resident Advisor"
+      ],
+      "bio": "Hailing from the United States, and based in Amsterdam, Netherlands, Sara is a self-taught producer, audio engineer and DJ known for her dark, driving and divinely feminine brand of hard techno. Sara has quickly emerged as one of the most exciting artists in hard techno, hailed as one of the best DJ's in the space as well as one of the scene's finest producers, with releases on Exhale, RAW & Techno Germany, not to mention , Sara's own imprint.",
+      "stats": {
+        "releaseCount": 46
+      },
+      "releases": [
+        {
+          "title": "Hekataia EP",
+          "year": 2026,
+          "label": "HEKATE Records",
+          "role": "Main",
+          "format": "3xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Hands Up",
+          "year": 2026,
+          "label": "HEKATE Records",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Havana Bounce",
+          "year": 2025,
+          "label": "HEKATE Records",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Control Your Body",
+          "year": 2025,
+          "label": "Taapion Records",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Girlboss",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Because They Want Our Seat",
+          "year": 2024,
+          "label": "HEKATE Records",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Prisoner",
+          "year": 2024,
+          "label": "HEKATE Records",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Spiritual Driveby",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Heaven",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Pressure",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/qJCUOV0c8ZCjjRzC0zeCO533t1ygE2I-RZi8ham56Gw/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTcwMjAy/NDUtMTc0NjYxMzE2/Mi00NjQ1LmpwZWc.jpeg",
+          "width": 600,
+          "height": 450
+        }
+      ],
+      "externalUrls": [
+        "https://www.saralandry.com",
+        "https://saralandry.bandcamp.com",
+        "https://www.beatport.com/artist/sara-landry/663399",
+        "https://soundcloud.com/sara-landry-dj",
+        "https://www.instagram.com/saralandrydj",
+        "https://www.threads.com/@saralandrydj",
+        "https://www.youtube.com/channel/UC3l1zkKI2-_aAqlUNTDO9Lw",
+        "https://www.facebook.com/saralandrydj",
+        "https://twitter.com/saralandrydj",
+        "https://ra.co/dj/saralandry"
+      ],
+      "imageTheme": "techno",
+      "mbid": "e7891efe-8326-4b04-bbc4-1271da101932",
+      "discogsId": 7020245,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/e7891efe-8326-4b04-bbc4-1271da101932",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/7020245",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "e7891efe-8326-4b04-bbc4-1271da101932",
+          "type": "Person",
+          "gender": "female",
+          "country": "US",
+          "disambiguation": "techno DJ and producer",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 7020245,
+          "urls": [
+            "https://www.saralandry.com",
+            "https://saralandry.bandcamp.com",
+            "https://www.beatport.com/artist/sara-landry/663399",
+            "https://soundcloud.com/sara-landry-dj",
+            "https://www.instagram.com/saralandrydj",
+            "https://www.threads.com/@saralandrydj",
+            "https://www.youtube.com/channel/UC3l1zkKI2-_aAqlUNTDO9Lw",
+            "https://www.facebook.com/saralandrydj",
+            "https://twitter.com/saralandrydj",
+            "https://ra.co/dj/saralandry"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.665Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "fantasm",
+      "name": "Fantasm",
+      "displayName": "Fantasm",
+      "country": "France (based in Lyon)",
+      "aliases": [],
+      "genres": [
+        "Techno",
+        "Industrial"
+      ],
+      "labels": [
+        "Wonder (9)",
+        "Gearbox Digital",
+        "Propaganda Records (4), Propaganda Records (4)",
+        "Gearbox Revolutions",
+        "ZYX Music",
+        "Verknipt Records",
+        "Rave 4 Love"
+      ],
+      "bio": "Fantasm is a France (based in Lyon)-based electronic music DJ and producer Hard Techno DJ., known for Techno, Industrial styles. Releases on labels including Wonder (9), Gearbox Digital, Propaganda Records (4), Propaganda Records (4). 18 releases on Discogs.",
+      "stats": {
+        "releaseCount": 18
+      },
+      "releases": [
+        {
+          "title": "Lord Of Chaos",
+          "year": 2026,
+          "label": "Wonder (9)",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Arena Conqueror",
+          "year": 2026,
+          "label": "Wonder (9)",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Hard Is Our Way Of Life",
+          "year": 2026,
+          "label": "Wonder (9)",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Baby Boy",
+          "year": 2026,
+          "label": "Wonder (9)",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "On Fire",
+          "year": 2025,
+          "label": "Gearbox Digital",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Nfwu",
+          "year": 2025,
+          "label": "Gearbox Digital",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Stone Cold Killa",
+          "year": 2025,
+          "label": "Gearbox Digital",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Hit It Boy",
+          "year": 2025,
+          "label": "Propaganda Records (4), Propaganda Records (4)",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Ruler Of Worlds",
+          "year": 2025,
+          "label": "Wonder (9)",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Beuken",
+          "year": 2025,
+          "label": "Wonder (9)",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/kpipwIRWzjHkhL7cJk6R-617jQKW3m6fjBVB8IEG8UU/rs:fit/g:sm/q:90/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE0Mjg5/NTMyLTE3NzE0NDY4/NTItODQzMS5qcGVn.jpeg",
+          "width": 150,
+          "height": 150
+        }
+      ],
+      "externalUrls": [
+        "https://www.instagram.com/fantasm_techno/"
+      ],
+      "imageTheme": "techno",
+      "mbid": "2a9a57ff-0283-4114-aaf3-68b2a465b8d1",
+      "discogsId": 14289532,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/2a9a57ff-0283-4114-aaf3-68b2a465b8d1",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/14289532",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "2a9a57ff-0283-4114-aaf3-68b2a465b8d1",
+          "type": "Person",
+          "gender": null,
+          "country": "Lyon",
+          "disambiguation": "Hard Techno DJ",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 14289532,
+          "urls": [
+            "https://www.instagram.com/fantasm_techno/"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.666Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "33emybw",
+      "name": "33EMYBW",
+      "displayName": "33EMYBW",
+      "country": "China (based in Shanghai)",
+      "aliases": [],
+      "genres": [
+        "Electronic",
+        "Experimental"
+      ],
+      "labels": [
+        "SVBKVLT",
+        "Resident Advisor",
+        "Dekmantel",
+        "D Force Records",
+        "Infiné",
+        "Houndstooth, Houndstooth",
+        "Timedance",
+        "Bié Records",
+        "Not On Label",
+        "FACT Magazine",
+        "Not On Label (Bjarki Self-released)",
+        "Hakuna Kulala"
+      ],
+      "bio": "Wu Shanmin is an electronic musician and digital visual artist based in Shanghai, China.",
+      "stats": {
+        "releaseCount": 28
+      },
+      "releases": [
+        {
+          "title": "Symbiosis Codes / Mandala",
+          "year": 2023,
+          "label": "SVBKVLT",
+          "role": "Main",
+          "format": "Cass, Ltd"
+        },
+        {
+          "title": "RA.913",
+          "year": 2023,
+          "label": "Resident Advisor",
+          "role": "Main",
+          "format": "File, MP3, Mixed, 320"
+        },
+        {
+          "title": "Holes Of Sinian",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Trans-Aeon Express",
+          "year": 2022,
+          "label": "SVBKVLT",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Dekmantel Podcast 298",
+          "year": 2020,
+          "label": "Dekmantel",
+          "role": "Main",
+          "format": "File, MP3, Mixed, 320"
+        },
+        {
+          "title": "Arthropods",
+          "year": 2019,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Dong.²",
+          "year": 2019,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Golem",
+          "year": 2018,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Medusa",
+          "year": 2017,
+          "label": "D Force Records",
+          "role": "Main",
+          "format": "CD, EP"
+        },
+        {
+          "title": "Jbar Rrsas (Remixes)",
+          "year": 2024,
+          "label": "Infiné",
+          "role": "Remix",
+          "format": "3xFile, MP3, 320"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/mbxJ0nRMUYJd5VZcKjRZCC-3H0-dmoW9O83J81a_Hyc/rs:fit/g:sm/q:90/h:421/w:375/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTYxNTA5/NjgtMTU4ODM2MzMz/MC0yODkzLmpwZWc.jpeg",
+          "width": 375,
+          "height": 421
+        }
+      ],
+      "externalUrls": [
+        "https://soundcloud.com/wushanmin",
+        "https://www.instagram.com/33emybw/"
+      ],
+      "imageTheme": "electronic",
+      "mbid": "d944d200-35ef-48d6-af28-7a695ea33e68",
+      "discogsId": 6150968,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/d944d200-35ef-48d6-af28-7a695ea33e68",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/6150968",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "d944d200-35ef-48d6-af28-7a695ea33e68",
+          "type": "Person",
+          "gender": "female",
+          "country": "Shanghai",
+          "disambiguation": "",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 6150968,
+          "urls": [
+            "https://soundcloud.com/wushanmin",
+            "https://www.instagram.com/33emybw/"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.667Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "gooooose",
+      "name": "GOOOOOSE",
+      "displayName": "Gooooose",
+      "country": "China (based in Shanghai)",
+      "aliases": [
+        "Gooooose"
+      ],
+      "genres": [
+        "Electronic",
+        "Experimental"
+      ],
+      "labels": [
+        "SVBKVLT",
+        "Drowned By Locals",
+        "Ante-Rasa",
+        "D Force Records",
+        "Signal Life",
+        "RAVE4EVAR",
+        "Fact Mix",
+        "Bié Records",
+        "Eating Music",
+        "Super Hexagon Records",
+        "Crater Records (4)",
+        "ULTRAVIRUS",
+        "D Force Records, CSCAV",
+        "playrec",
+        "Do Hits"
+      ],
+      "bio": "Gooooose is a China (based in Shanghai)-based electronic music DJ and producer, known for Electronic, Experimental styles. Releases on labels including SVBKVLT, Drowned By Locals, Ante-Rasa. 26 releases on Discogs.",
+      "stats": {
+        "releaseCount": 26
+      },
+      "releases": [
+        {
+          "title": "Rudiments",
+          "year": 2023,
+          "label": "SVBKVLT",
+          "role": "Main",
+          "format": "LP, Album"
+        },
+        {
+          "title": "Trans-Aeon Express",
+          "year": 2022,
+          "label": "SVBKVLT",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Mollusk",
+          "year": 2021,
+          "label": "Drowned By Locals",
+          "role": "Main",
+          "format": "CD, Album"
+        },
+        {
+          "title": "JAC",
+          "year": 2020,
+          "label": "SVBKVLT",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Pro Rata",
+          "year": 2019,
+          "label": "Ante-Rasa",
+          "role": "Main",
+          "format": "4xFile, FLAC"
+        },
+        {
+          "title": "Rusted Silicon",
+          "year": 2019,
+          "label": "SVBKVLT",
+          "role": "Main",
+          "format": "10xFile, FLAC, MP3, Album"
+        },
+        {
+          "title": "DONG 1",
+          "year": 2018,
+          "label": "D Force Records",
+          "role": "Main",
+          "format": "12\", Album"
+        },
+        {
+          "title": "They",
+          "year": 2017,
+          "label": "D Force Records",
+          "role": "Main",
+          "format": "LP, Album"
+        },
+        {
+          "title": "Tensegrity",
+          "year": 2023,
+          "label": "Signal Life",
+          "role": "Remix",
+          "format": "6xFile, WAV, EP"
+        },
+        {
+          "title": "Microjunglizm Remixes",
+          "year": 2022,
+          "label": "RAVE4EVAR",
+          "role": "Remix",
+          "format": "7xFile, MP3, 320"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/MuUaIQMXAyUNf-LKDeJ_c4szj_AasszXrlDWJ7rlD2I/rs:fit/g:sm/q:90/h:658/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTU2NDU0/MTItMTU2MTIyOTg5/Mi00NzAyLmpwZWc.jpeg",
+          "width": 600,
+          "height": 658
+        }
+      ],
+      "externalUrls": [
+        "https://gooooose.bandcamp.com/"
+      ],
+      "imageTheme": "electronic",
+      "mbid": "5600cc57-8e97-4550-bae4-a1394a3911fe",
+      "discogsId": 5645412,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/5600cc57-8e97-4550-bae4-a1394a3911fe",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/5645412",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "5600cc57-8e97-4550-bae4-a1394a3911fe",
+          "type": null,
+          "gender": null,
+          "country": "Shanghai",
+          "disambiguation": "",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 5645412,
+          "urls": [
+            "https://gooooose.bandcamp.com/"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.668Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "anti-general",
+      "name": "Anti-General",
+      "displayName": "Anti-General",
+      "country": "China",
+      "aliases": [
+        "钟子齐"
+      ],
+      "genres": [
+        "EDM",
+        "Electronic"
+      ],
+      "labels": [
+        "Do Hits",
+        "Project Sync"
+      ],
+      "bio": "Zhong Ziqi, born in 1994 in Chengdu, is a Chinese DJ & producer.",
+      "stats": {
+        "releaseCount": 2
+      },
+      "releases": [
+        {
+          "title": "Do Hits Vol​.​3",
+          "year": 2015,
+          "label": "Do Hits",
+          "role": "Remix",
+          "format": "13xFile, FLAC, Comp"
+        },
+        {
+          "title": "This Album Made By Friends Bassick",
+          "year": 2015,
+          "label": "Project Sync",
+          "role": "Co-producer",
+          "format": "CD, Album, Ltd"
+        }
+      ],
+      "images": [],
+      "externalUrls": [
+        "https://twitter.com/Anti_General",
+        "https://open.spotify.com/artist/2Jb2ZJygCbLD68c91NKTbT?si=Dj5jz4vXQ0CBf2yR_fXKvg&nd=1"
+      ],
+      "imageTheme": "edm",
+      "mbid": "d40f1e02-7fc2-42df-89b2-e5b4dd169691",
+      "discogsId": 5892520,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/d40f1e02-7fc2-42df-89b2-e5b4dd169691",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/5892520",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "d40f1e02-7fc2-42df-89b2-e5b4dd169691",
+          "type": "Person",
+          "gender": "male",
+          "country": "CN",
+          "disambiguation": "Chinese DJ & EDM producer",
+          "lifeSpan": {
+            "begin": "1994",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 5892520,
+          "urls": [
+            "https://twitter.com/Anti_General",
+            "https://open.spotify.com/artist/2Jb2ZJygCbLD68c91NKTbT?si=Dj5jz4vXQ0CBf2yR_fXKvg&nd=1"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.669Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "knopha",
+      "name": "Knopha",
+      "displayName": "Knopha",
+      "country": "China (based in Xiamen)",
+      "aliases": [
+        "Noah Li"
+      ],
+      "genres": [
+        "House",
+        "Techno"
+      ],
+      "labels": [
+        "Mule Musiq",
+        "Mood Hut",
+        "Regret Sound",
+        "Push & Pull (2)",
+        "Darker Than Wax",
+        "Maximum Airtime",
+        "Public Possession",
+        "Medusa Records (16)",
+        "Seeds And Ground",
+        "Tonal Unity",
+        "Eating Music, 知了 CICADA, Indie Works",
+        "Eating Music",
+        "Bié Records",
+        "Peach Discs",
+        "Ran Groove (2)"
+      ],
+      "bio": "DJ & producer who based in Xiamen, China",
+      "stats": {
+        "releaseCount": 25
+      },
+      "releases": [
+        {
+          "title": "Water Play",
+          "year": 2024,
+          "label": "Mule Musiq",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Kwong",
+          "year": 2023,
+          "label": "Mood Hut",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Xiu（宫廷version）",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Gym",
+          "year": 2020,
+          "label": "Regret Sound",
+          "role": "Main",
+          "format": "12\", EP, Ltd, M/Print"
+        },
+        {
+          "title": "Nothing Nil",
+          "year": 2018,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Me or the Other Guy",
+          "year": 2017,
+          "label": "Push & Pull (2)",
+          "role": "Main",
+          "format": "4xFile, WAV, EP"
+        },
+        {
+          "title": "Transient Response",
+          "year": 2026,
+          "label": "Darker Than Wax",
+          "role": "Remix",
+          "format": "12\""
+        },
+        {
+          "title": "Let Your Body Go",
+          "year": 2024,
+          "label": "Maximum Airtime",
+          "role": "Remix",
+          "format": "4xFile, AIFF, EP"
+        },
+        {
+          "title": "Bell Towers Remixed",
+          "year": 2023,
+          "label": "Public Possession",
+          "role": "Remix",
+          "format": "3xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Sweet Adventure",
+          "year": 2023,
+          "label": null,
+          "role": "Remix"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/5mdP2ilUZedOECLJjv8ramc2jR0g80wW-ijhmEVrMl8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTU4Mzk3/NjktMTU0NTkzNDM1/My05MjI5LmpwZWc.jpeg",
+          "width": 600,
+          "height": 600
+        }
+      ],
+      "externalUrls": [
+        "https://soundcloud.com/knophasound",
+        "https://www.instagram.com/knopha/",
+        "https://twitter.com/Knophaa",
+        "https://weibo.com/u/1704159045"
+      ],
+      "imageTheme": "house",
+      "mbid": "23ee2133-4eb1-49b8-b86f-e58e5a3f41f3",
+      "discogsId": 5839769,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/23ee2133-4eb1-49b8-b86f-e58e5a3f41f3",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/5839769",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "23ee2133-4eb1-49b8-b86f-e58e5a3f41f3",
+          "type": "Person",
+          "gender": null,
+          "country": "Xiamen",
+          "disambiguation": "",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 5839769,
+          "urls": [
+            "https://soundcloud.com/knophasound",
+            "https://www.instagram.com/knopha/",
+            "https://twitter.com/Knophaa",
+            "https://weibo.com/u/1704159045"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.670Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "anika-kunst",
+      "name": "Anika Kunst",
+      "displayName": "Anika Kunst",
+      "country": "Spain",
+      "aliases": [],
+      "genres": [
+        "techno",
+        "electronic",
+        "Techno"
+      ],
+      "labels": [
+        "Symbolism",
+        "Rekids Special Projects",
+        "Dust Trax",
+        "Chapter Rcrds",
+        "Konekt Croatia",
+        "WSNWG Back To Zero",
+        "End Of Dayz",
+        "Methodical",
+        "I-Traxx Recordings",
+        "Casanova Bar Records",
+        "Gordo Trax",
+        "Suara",
+        "Immaterial.Archives",
+        "Uncage",
+        "Suruba X"
+      ],
+      "bio": "Electronic music DJ and producer from Spain. Runs [l717841].",
+      "stats": {
+        "releaseCount": 24
+      },
+      "releases": [
+        {
+          "title": "Sin Rodeos EP",
+          "year": 2023,
+          "label": "Symbolism",
+          "role": "Main",
+          "format": "5xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Hidden Intention EP",
+          "year": 2022,
+          "label": "Symbolism",
+          "role": "Main",
+          "format": "4xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Different Approach EP ",
+          "year": 2021,
+          "label": "Rekids Special Projects",
+          "role": "Main",
+          "format": "4xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Renegades",
+          "year": 2021,
+          "label": "Dust Trax",
+          "role": "Main",
+          "format": "File, WAV, Single"
+        },
+        {
+          "title": "Nowhere",
+          "year": 2019,
+          "label": "Chapter Rcrds",
+          "role": "Main",
+          "format": "3xFile, MP3, WAV, EP"
+        },
+        {
+          "title": "Biding All In",
+          "year": 2014,
+          "label": "Chapter Rcrds",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Alias",
+          "year": 2024,
+          "label": "Konekt Croatia",
+          "role": "Remix",
+          "format": "5xFile, FLAC, EP"
+        },
+        {
+          "title": "Revisited",
+          "year": 2023,
+          "label": "WSNWG Back To Zero",
+          "role": "Remix",
+          "format": "11xFile, WAV, Album"
+        },
+        {
+          "title": "Nomara EP",
+          "year": 2022,
+          "label": "End Of Dayz",
+          "role": "Remix",
+          "format": "4xFile, WAV, EP"
+        },
+        {
+          "title": "Focus Remixes Vol. 1",
+          "year": 2020,
+          "label": "Methodical",
+          "role": "Remix",
+          "format": "6xFile, FLAC"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/jzycmtJtne3YPkHz6O_xpk_942648nvbsOX36UXxDfQ/rs:fit/g:sm/q:90/h:356/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM4ODc2/NTUtMTQwMzc2NDY3/OS0yMjk4LmpwZWc.jpeg",
+          "width": 600,
+          "height": 356
+        }
+      ],
+      "externalUrls": [
+        "https://www.facebook.com/AnikaKunstofficial",
+        "https://soundcloud.com/anika-kunst",
+        "https://www.instagram.com/anikakunstmuzik/"
+      ],
+      "imageTheme": "techno",
+      "mbid": "aaf08996-b2b6-4040-84a1-6acf32ddf13b",
+      "discogsId": 3887655,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/aaf08996-b2b6-4040-84a1-6acf32ddf13b",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/3887655",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "aaf08996-b2b6-4040-84a1-6acf32ddf13b",
+          "type": "Person",
+          "gender": "female",
+          "country": "ES",
+          "disambiguation": "Spanish DJ & producer",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 3887655,
+          "urls": [
+            "https://www.facebook.com/AnikaKunstofficial",
+            "https://soundcloud.com/anika-kunst",
+            "https://www.instagram.com/anikakunstmuzik/"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.671Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "nosaj-thing",
+      "name": "Nosaj Thing",
+      "displayName": "Nosaj Thing",
+      "country": "United States",
+      "aliases": [
+        "Jason W. Chung",
+        "Nosaij Thing",
+        "NT",
+        "NosajThing",
+        "Nosajthing",
+        "Nossaj Thing"
+      ],
+      "genres": [
+        "electronic",
+        "downtempo",
+        "pop",
+        "ambient",
+        "dance",
+        "house",
+        "experimental",
+        "idm",
+        "electro",
+        "hip hop",
+        "deep house",
+        "techno",
+        "electronica",
+        "psychedelic",
+        "leftfield",
+        "trip hop",
+        "indietronica",
+        "edm",
+        "glitch hop",
+        "wonky",
+        "left-field house",
+        "intelligent dance music",
+        "future garage",
+        "chillwave",
+        "ambient pop",
+        "trap",
+        "melodic techno",
+        "future bass",
+        "melodic house",
+        "organic house"
+      ],
+      "labels": [
+        "LuckyMe",
+        "Ninja Tune",
+        "Not On Label",
+        "Innovative Leisure Records, Timetable Records",
+        "Yours Truly, Adidas Originals",
+        "IAmSound Records, Pure Groove",
+        "Alpha Pup Records",
+        "XLR8R",
+        "Low End Theory",
+        "Not On Label (Nosaj Thing Self-released)",
+        "Adult Baby Records",
+        "Not On Label (Blonde Redhead Self-released)",
+        "FACT Magazine",
+        "ANTS Podcast",
+        "Double D Town",
+        "Wagram Music",
+        "Fool's Gold Records",
+        "Hiphopcore Mixtapes, Hiphopcore Mixtapes, La Cité Des Sourds",
+        "Young Turks"
+      ],
+      "bio": "As DJ and producer Nosaj Thing, Los Angeles born and raised Jason W. Chung has been actively releasing music and performing for 15 years, expanding outwards from his first shows in the early 2000s at LA’s DIY venue The Smell, through opening for The xx and The Weeknd, to headlining influential live experiences around the world with visual collaborators including Daito Manabe and Bureau Cool. Producing tracks for Kendrick Lamar, Kid Cudi, and Chance The Rapper, Nosaj Thing has also remixed a diverse roster of generation-spanning artists including Philip Glass, Charlotte Gainsbourg and Flying Lotus. However, it is across his three EPs and four albums that Nosaj Thing transcends genres and inspirations to push experimental music into an otherworldly, evocative and robust body of work: ‘Views / Octopus’ EP (2006), ‘Drift’ (2009), ‘Home’ (2013), ‘Fated’ (2015), ‘No Reality EP’ (2016), ‘Parallels’ (2017) and ‘No Mind’ (2020).",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Unknown",
+          "year": 2025,
+          "label": "LuckyMe",
+          "role": "Main",
+          "format": "2xFile, MP3, Single, 320"
+        },
+        {
+          "title": "Verses GT",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "We Are (​우​리​는​) (Martyn's Come Back Mix)",
+          "year": 2023,
+          "label": "LuckyMe",
+          "role": "Main",
+          "format": "File, FLAC"
+        },
+        {
+          "title": "Continua",
+          "year": 2022,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "For The Light",
+          "year": 2020,
+          "label": "LuckyMe",
+          "role": "Main",
+          "format": "File, MP3, Single, 320"
+        },
+        {
+          "title": "No Mind",
+          "year": 2020,
+          "label": "LuckyMe",
+          "role": "Main",
+          "format": "4xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Clouds",
+          "year": 2020,
+          "label": "Ninja Tune",
+          "role": "Main",
+          "format": "File, FLAC, Single"
+        },
+        {
+          "title": "No Mind (Expanded)",
+          "year": 2020,
+          "label": "LuckyMe",
+          "role": "Main",
+          "format": "4xFile, WAV, EP"
+        },
+        {
+          "title": "U G (Les Sins Remix)",
+          "year": 2018,
+          "label": "Not On Label",
+          "role": "Main",
+          "format": "File, MP3, Single, VBR"
+        },
+        {
+          "title": "Parallels",
+          "year": 2017,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/FLyLXvVTm1EHJ6KUfk2PCf8x9A0nud7lgJlRqRlhO9Y/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTExNjE4/NDEtMTYxMjUzOTU5/NC0zNTcwLmpwZWc.jpeg",
+          "width": 600,
+          "height": 600
+        }
+      ],
+      "externalUrls": [
+        "http://nosajthing.com/",
+        "https://www.instagram.com/nosajthing/",
+        "https://nosajthing.bandcamp.com/"
+      ],
+      "imageTheme": "electronic",
+      "mbid": "b476bc5e-19ca-4e5a-82c8-1a068d601a7d",
+      "discogsId": 1161841,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/b476bc5e-19ca-4e5a-82c8-1a068d601a7d",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/1161841",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "b476bc5e-19ca-4e5a-82c8-1a068d601a7d",
+          "type": "Person",
+          "gender": "male",
+          "country": "US",
+          "disambiguation": "",
+          "lifeSpan": {
+            "begin": "1985-01-27",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 1161841,
+          "urls": [
+            "http://nosajthing.com/",
+            "https://www.instagram.com/nosajthing/",
+            "https://nosajthing.bandcamp.com/"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.672Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "badbadnotgood",
+      "name": "BADBADNOTGOOD",
+      "displayName": "BADBADNOTGOOD",
+      "country": "Canada",
+      "aliases": [
+        "Bad Bad Not Good",
+        "BBNG",
+        "BADBADNOTGOOD",
+        "Badbadnotgood"
+      ],
+      "genres": [
+        "rap",
+        "jazz",
+        "hip hop",
+        "psychedelia",
+        "instrumental hip hop",
+        "Electronic",
+        "Jazz"
+      ],
+      "labels": [
+        "Mr Bongo",
+        "XL Recordings",
+        "XL Recordings Ltd., Innovative Leisure",
+        "Not On Label (BadBadNotGood Self-released)",
+        "88rising Records",
+        "Light In The Attic",
+        "Live Convention",
+        "Loma Vista Recordings",
+        "Innovative Leisure",
+        "Innovative Leisure Records",
+        "Red Bull",
+        "Innovative Leisure Records, Beat Records",
+        "ConverseMusic",
+        "Not On Label (Kaytranada Self-released)"
+      ],
+      "bio": "Canadian jazz group",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Brazil45: Mr Bongo x BadBadNotGood",
+          "year": 2025,
+          "label": "Mr Bongo",
+          "role": "Main",
+          "format": "5x7\", RSD, Comp, Ltd, Box"
+        },
+        {
+          "title": "Take What's Given",
+          "year": 2024,
+          "label": "XL Recordings",
+          "role": "Main",
+          "format": "File, FLAC"
+        },
+        {
+          "title": "Take What's Given",
+          "year": 2024,
+          "label": "XL Recordings",
+          "role": "Main",
+          "format": "7\""
+        },
+        {
+          "title": "Mid Spiral: Growth",
+          "year": 2024,
+          "label": "XL Recordings",
+          "role": "Main",
+          "format": "5xFile, ALAC, EP, Hig"
+        },
+        {
+          "title": "Mid Spiral: Order",
+          "year": 2024,
+          "label": "XL Recordings",
+          "role": "Main",
+          "format": "6xFile, ALAC, EP, Hig"
+        },
+        {
+          "title": "Poeira Cósmica Feat. Tim Bernardes",
+          "year": 2024,
+          "label": "XL Recordings Ltd., Innovative Leisure",
+          "role": "Main",
+          "format": "7\", Single"
+        },
+        {
+          "title": "Mid Spiral",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Silky Heads / Beyond My Feet",
+          "year": 2023,
+          "label": "Not On Label (BadBadNotGood Self-released)",
+          "role": "Main",
+          "format": "7\", Single"
+        },
+        {
+          "title": "The Knock / Jaguar Swirl",
+          "year": 2023,
+          "label": "Not On Label (BadBadNotGood Self-released)",
+          "role": "Main",
+          "format": "7\", Single"
+        },
+        {
+          "title": "MiNt cHoCoLaTe",
+          "year": 2023,
+          "label": "88rising Records",
+          "role": "Main",
+          "format": "7\", Promo"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/b9Omsht8JY8emF2DRbQ8nMpen75U1G9DcYzkoxs6aW4/rs:fit/g:sm/q:90/h:606/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI0Njg1/MjYtMTcxNzA2ODA4/NS01ODc0LnBuZw.jpeg",
+          "width": 600,
+          "height": 606
+        }
+      ],
+      "externalUrls": [
+        "http://badbadnotgood.com",
+        "http://badbadnotgoodofficial.bandcamp.com",
+        "https://badbadnotgoodmajestics.bandcamp.com/",
+        "http://www.facebook.com/profile.php?id=100044172502285",
+        "http://soundcloud.com/badbadnotgood",
+        "http://badbadnotgood.tumblr.com",
+        "http://twitter.com/badbadnotgood",
+        "http://www.whosampled.com/BadBadNotGood",
+        "http://en.wikipedia.org/wiki/BadBadNotGood",
+        "http://www.youtube.com/user/BADBADNOTGOOD"
+      ],
+      "imageTheme": "electronic",
+      "mbid": "754294d5-d7d2-4ea2-8184-1dcaaf55a56f",
+      "discogsId": 2468526,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/754294d5-d7d2-4ea2-8184-1dcaaf55a56f",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/2468526",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "754294d5-d7d2-4ea2-8184-1dcaaf55a56f",
+          "type": "Group",
+          "gender": null,
+          "country": "CA",
+          "disambiguation": "Canadian instrumental band",
+          "lifeSpan": {
+            "begin": "2010",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 2468526,
+          "urls": [
+            "http://badbadnotgood.com",
+            "http://badbadnotgoodofficial.bandcamp.com",
+            "https://badbadnotgoodmajestics.bandcamp.com/",
+            "http://www.facebook.com/profile.php?id=100044172502285",
+            "",
+            "http://soundcloud.com/badbadnotgood",
+            "http://badbadnotgood.tumblr.com",
+            "http://twitter.com/badbadnotgood",
+            "http://www.whosampled.com/BadBadNotGood",
+            "http://en.wikipedia.org/wiki/BadBadNotGood",
+            "http://www.youtube.com/user/BADBADNOTGOOD"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.673Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "lucrecia-dalt",
+      "name": "Lucrecia Dalt",
+      "displayName": "Lucrecia Dalt",
+      "country": "Germany (based in Berlin)",
+      "aliases": [
+        "María Lucrecia Pérez López",
+        "Lucrecia",
+        "Dalt",
+        "Lucretia Dalt"
+      ],
+      "genres": [
+        "electronic",
+        "experimental electronic",
+        "Electronic",
+        "Experimental"
+      ],
+      "labels": [
+        "Resident Advisor",
+        "Invada Records",
+        "Rvng Intl.",
+        "Hanson Records",
+        "Not On Label (Lucrecia Dalt Self-Released)",
+        "Deceptions Order Blank",
+        "Other People",
+        "La Bèl Netlabel",
+        "Hauch",
+        "Bella Union",
+        "Planisphere",
+        "Faitiche",
+        "Red Bull Music Academy",
+        "Monika Enterprise",
+        "Crammed Discs",
+        "Mindjazz Pictures",
+        "Dublab"
+      ],
+      "bio": "Lucrecia Dalt (born in 29 December 1980 in Pereira, Colombia) is a Columbian sound artist currently living and working in Berlin. Known as just [a=Lucrecia] before ca. 2010.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "RA.1005",
+          "year": 2025,
+          "label": "Resident Advisor",
+          "role": "Main",
+          "format": "File, MP3, Mixed, 320"
+        },
+        {
+          "title": "Rabbit Trap (Original Motion Picture Soundtrack)",
+          "year": 2025,
+          "label": "Invada Records",
+          "role": "Main",
+          "format": "16xFile, MP3, Album, 320"
+        },
+        {
+          "title": "Cosa Rara",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "A Danger To Ourselves",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "The Baby (Original Score By Lucrecia Dalt)",
+          "year": 2022,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "The Seed (Original Score)",
+          "year": 2022,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "¡Ay!",
+          "year": 2022,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "(outtakes)",
+          "year": 2021,
+          "label": "Rvng Intl.",
+          "role": "Main",
+          "format": "Cass, Ltd"
+        },
+        {
+          "title": "Demands Of Ordinary Devotion",
+          "year": 2021,
+          "label": "Hanson Records",
+          "role": "Main",
+          "format": "File, WAV, Single"
+        },
+        {
+          "title": "No Era Sólida (Outtakes)",
+          "year": 2021,
+          "label": "Rvng Intl.",
+          "role": "Main",
+          "format": "6xFile, MP3, 320"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/IHKijIInPd8IiJ2pdYCNmasu3jCddUvRiQM6RCxd8lg/rs:fit/g:sm/q:90/h:800/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE4NDE3/MDMtMTc3NTA0OTM4/Ny05NjI3LmpwZWc.jpeg",
+          "width": 600,
+          "height": 800
+        }
+      ],
+      "externalUrls": [
+        "https://lucreciadalt.bandcamp.com/",
+        "https://en.wikipedia.org/wiki/Lucrecia_Dalt",
+        "https://twitter.com/LucreciaDalt",
+        "https://www.instagram.com/lucreciadalt/",
+        "https://soundcloud.com/lucreciadalt"
+      ],
+      "imageTheme": "electronic",
+      "mbid": "245f7a1a-b799-40f1-a11a-6b379dbe0fa1",
+      "discogsId": 1841703,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/245f7a1a-b799-40f1-a11a-6b379dbe0fa1",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/1841703",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "245f7a1a-b799-40f1-a11a-6b379dbe0fa1",
+          "type": "Person",
+          "gender": "female",
+          "country": "Berlin",
+          "disambiguation": "Colombian electronic musician",
+          "lifeSpan": {
+            "begin": "1980",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 1841703,
+          "urls": [
+            "https://lucreciadalt.bandcamp.com/",
+            "https://en.wikipedia.org/wiki/Lucrecia_Dalt",
+            "https://twitter.com/LucreciaDalt",
+            "https://www.instagram.com/lucreciadalt/",
+            "https://soundcloud.com/lucreciadalt"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.673Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "cltx",
+      "name": "CLTX",
+      "displayName": "CLTX",
+      "country": "Germany (based in Berlin)",
+      "aliases": [],
+      "genres": [
+        "techno",
+        "Techno",
+        "Hard Techno"
+      ],
+      "labels": [
+        "Bamboo Artists",
+        "voxnox Records",
+        "Blvckplvgue",
+        "Gomboc Records",
+        "Blacklapse Records",
+        "Industrial Techno United",
+        "Cause Records",
+        "Etruria Beat",
+        "Raw Quarter DGTL",
+        "CoreBeats",
+        "Alderic Records",
+        "Deestricted",
+        "Kaos (6)",
+        "Phase 2 Records (4)",
+        "WIR Records",
+        "Nothing But...",
+        "H33 Records",
+        "KTK Records (2)",
+        "Maison Close",
+        "Fast Blood Action",
+        "Everyone On Acid",
+        "Under Hell",
+        "Vague (5)",
+        "Unlocked BCN Records, Unlocked BCN Records",
+        "Inherit (2)",
+        "Insane Industry, Insane Industry",
+        "NineTimesNine",
+        "Ravescape",
+        "Chronicles Records",
+        "Serpent Series"
+      ],
+      "bio": "CLTX is a Germany (based in Berlin)-based electronic music DJ and producer techno producer., known for Techno, Hard Techno, techno styles. Releases on labels including Bamboo Artists, voxnox Records, Blvckplvgue. 38 releases on Discogs.",
+      "stats": {
+        "releaseCount": 38
+      },
+      "releases": [
+        {
+          "title": "BOC",
+          "year": 2025,
+          "label": "Bamboo Artists",
+          "role": "Main",
+          "format": "File, MP3"
+        },
+        {
+          "title": "Rave In Pink",
+          "year": 2024,
+          "label": "voxnox Records",
+          "role": "Main",
+          "format": "12\", EP, Pin"
+        },
+        {
+          "title": "Hellboy",
+          "year": 2021,
+          "label": "Blvckplvgue",
+          "role": "Main",
+          "format": "4xFile, MP3"
+        },
+        {
+          "title": "Eternally Yours",
+          "year": 2021,
+          "label": "Gomboc Records",
+          "role": "Main",
+          "format": "4xFile, MP3, 320"
+        },
+        {
+          "title": "Reincarnate",
+          "year": 2018,
+          "label": "Blacklapse Records",
+          "role": "Main",
+          "format": "3xFile, WAV"
+        },
+        {
+          "title": "Tank",
+          "year": 2017,
+          "label": "Industrial Techno United",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Steel Goddess",
+          "year": 2023,
+          "label": "Cause Records",
+          "role": "Remix",
+          "format": "4xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Rocking Horse",
+          "year": 2023,
+          "label": "Etruria Beat",
+          "role": "Remix",
+          "format": "5xFile, MP3, 320"
+        },
+        {
+          "title": "Kaleidoscope",
+          "year": 2022,
+          "label": "Raw Quarter DGTL",
+          "role": "Remix",
+          "format": "4xFile, MP3, 320"
+        },
+        {
+          "title": "Afterlife EP",
+          "year": 2021,
+          "label": "CoreBeats",
+          "role": "Remix",
+          "format": "6xFile, MP3, EP, 320"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/PIeWtr4urovQg-t0p-YvOPyg-3C_PfHlOvKI57571-4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTYyNDgy/ODctMTY4MzYyODE3/MS01OTgwLmpwZWc.jpeg",
+          "width": 600,
+          "height": 600
+        }
+      ],
+      "externalUrls": [
+        "https://www.facebook.com/CLTXX",
+        "https://soundcloud.com/cltxx",
+        "https://cltx.bandcamp.com",
+        "https://www.instagram.com/cl.tx"
+      ],
+      "imageTheme": "techno",
+      "mbid": "ba7f5732-5959-41d7-a44a-1d874ac76396",
+      "discogsId": 6248287,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/ba7f5732-5959-41d7-a44a-1d874ac76396",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/6248287",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "ba7f5732-5959-41d7-a44a-1d874ac76396",
+          "type": "Person",
+          "gender": "male",
+          "country": "Berlin",
+          "disambiguation": "techno producer",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 6248287,
+          "urls": [
+            "https://www.facebook.com/CLTXX",
+            "https://soundcloud.com/cltxx",
+            "https://cltx.bandcamp.com",
+            "https://www.instagram.com/cl.tx"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.674Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "velvet-robot",
+      "name": "The Velvet Underground",
+      "displayName": "Velvet Robot",
+      "country": "United States",
+      "aliases": [
+        "The Velvets",
+        "The Velvet Underground and Nico",
+        "Velvet Underground",
+        "Velvet Underground, The",
+        "The Velvet Underground & Nico",
+        "Velvet Underground & Nico",
+        "G. Galdo",
+        "Gabriel Galdo I.",
+        "Velvet Robot"
+      ],
+      "genres": [
+        "rock",
+        "pop",
+        "alternative rock",
+        "american",
+        "usa",
+        "folk rock",
+        "psychedelic rock",
+        "blues rock",
+        "américain",
+        "art rock",
+        "drone",
+        "classic rock",
+        "experimental rock",
+        "pop rock",
+        "garage rock",
+        "protopunk",
+        "noise rock",
+        "rock music",
+        "classic pop and rock",
+        "proto-punk",
+        "noise music",
+        "pop/rock",
+        "alternative/indie rock",
+        "art pop",
+        "avant-garde music",
+        "avant-punk",
+        "Electronic",
+        "Techno"
+      ],
+      "labels": [
+        "Velvet Rodven",
+        "Velvet (2)",
+        "Discos Fuentes, Velvet (2)",
+        "Velvet (2), Velvet (2)",
+        "Dimus",
+        "Sono-Rodven",
+        "Total Music"
+      ],
+      "bio": "Location: Caracas - Venezuela. Genre: House, Techno. Biography (Spanish language): Director & Producer / Filmmaker / DJ & House Music Producer /BTL+ATL+2.0 Strategist Director / Art Director / Creative Director. Nació en una familia de publicistas que desarrolló importantes campañas nacionales, como lo fueron la de Automercados Cada y la llegada de Burger King a Venezuela. Era cuestión de tiempo que ese niño interesado por el arte y el diseño, empezará a entregar al mundo lo que tenía. A los 12 años empezó a pinchar discos –arruinando las agujas de los platos de su casa– y sin saberlo, inició lo una carrera como DJ, que le dejó como saldo sus tres primeros carros, un empleo con la disquera Velvet haciendo remixes de Roberto Antonio, Miguel Moly y Guaco, entre otros, e incluso la oportunidad de producir el primer disco de Calle Ciega. Sin embargo, Gabriel se define como publicista por los cuatro costados. En el año de 1994 empezó a trabajar en la agencia de su hermano –a quien considera su mentor–, y descubrió la vocación que más estimularía su creatividad y que finalmente lo trajo en un viaje sin retorno a la ciudad de Maracaibo: “Vine por la cuenta del Banco Occidental de Descuento y con ellos vivimos un momento crucial como fue el cambio de logo. Eso nos abrió las puertas a otros clientes como Pronto Pizza, Helados La Argentina, Calzados Martucci y el Grupo Da Vinci. Ha sido interesante ver cómo ha evolucionado Maracaibo. Desde hace diez años no ha parado de crecer”. Aunque inicialmente trabajó asociado con Aldrey Publicidad, Gabriel se independizó para fundar Galdo Group, una empresa que goza de prestigio y que se ha encargado de formar a los nuevos talentos de la publicidad. El 2007 fue el año de apertura de Producciones Vaga, su productora audiovisual, a cargo del Reality “Te Ponemos en las Buenas”, el cual arribó a la sexta temporada por la señal del canal de TV Venevisión. El trabajo audiovisual es la última gran pasión de este profesional que no para de crear y trabajar por el país que ama. Algunos de sus temas más sonados fueron: El Baile Del Bacalao (2001), Latinos Con Las Manos Arriba (2001), Viva Venezuela (Tropical House Remix by DJ Gabriel Galdo) (2017, Recording By Hola Robot Studio, México City) y remixes de Roberto Antonio, Miguel Moly, Guaco… en la década de los 80’s y 90’s.",
+      "stats": {
+        "releaseCount": 22
+      },
+      "releases": [
+        {
+          "title": "En Discoteca Mix II",
+          "year": 1995,
+          "label": "Velvet Rodven",
+          "role": "Remix",
+          "format": "CD, Comp, Mixed"
+        },
+        {
+          "title": "Tropichanga IV ",
+          "year": 1994,
+          "label": "Velvet (2)",
+          "role": "Remix",
+          "format": "LP, Comp"
+        },
+        {
+          "title": "Tropichanga 3 - Con Mas Exitos Y Remixes Varios Interpretes",
+          "year": 1993,
+          "label": "Velvet (2)",
+          "role": "Remix",
+          "format": "LP, Comp"
+        },
+        {
+          "title": "Sexo Femenino",
+          "year": 1993,
+          "label": "Discos Fuentes, Velvet (2)",
+          "role": "Remix",
+          "format": "LP, Comp"
+        },
+        {
+          "title": "Baila Super Remix's",
+          "year": 1993,
+          "label": null,
+          "role": "Remix"
+        },
+        {
+          "title": "Fiebre De Salsa Mega Mix 1",
+          "year": 1992,
+          "label": "Velvet (2), Velvet (2)",
+          "role": "Remix",
+          "format": "LP, Comp, Mixed"
+        },
+        {
+          "title": "Super Mix",
+          "year": 1992,
+          "label": null,
+          "role": "Remix"
+        },
+        {
+          "title": "...Nuestro Regalo De Navidad !",
+          "year": 1998,
+          "label": "Velvet (2)",
+          "role": "Producer",
+          "format": "CD, Album"
+        },
+        {
+          "title": "Guaco Mix",
+          "year": 1996,
+          "label": null,
+          "role": "Producer"
+        },
+        {
+          "title": "Guaco Mix",
+          "year": 1996,
+          "label": null,
+          "role": "Mixed by"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/oFeuIf2wfkGTC1H3310ulL25dCTcf95AqLs2DNWuP6w/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIxNjk0/MzAtMTUwODg2NzA2/Ni0yNzA5LmpwZWc.jpeg",
+          "width": 600,
+          "height": 600
+        }
+      ],
+      "externalUrls": [
+        "https://twitter.com/gabrielgaldo?lang=en"
+      ],
+      "imageTheme": "electronic",
+      "mbid": "94b0fb9d-a066-4823-b2ec-af1d324bcfcf",
+      "discogsId": 2169430,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/94b0fb9d-a066-4823-b2ec-af1d324bcfcf",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/2169430",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "94b0fb9d-a066-4823-b2ec-af1d324bcfcf",
+          "type": "Group",
+          "gender": null,
+          "country": "US",
+          "disambiguation": "Lou Reed’s seminal rock band",
+          "lifeSpan": {
+            "begin": "1964",
+            "end": "1996",
+            "ended": true
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 2169430,
+          "urls": [
+            "https://twitter.com/gabrielgaldo?lang=en"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.676Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "cosmjn",
+      "name": "Cosmjn",
+      "displayName": "Cosmjn",
+      "country": "",
+      "aliases": [],
+      "genres": [
+        "House",
+        "Techno",
+        "Minimal"
+      ],
+      "labels": [
+        "Visitors (2)",
+        "Radial Records (3)",
+        "Nervous Records",
+        "Atipic",
+        "Playedby",
+        "Sono Unica",
+        "Eastenderz",
+        "Subtil Records",
+        "abartik",
+        "RORA",
+        "Fragil Musique",
+        "Engineer Records (3)",
+        "Saktu",
+        "Stamp Records (9)",
+        "Camouflage Records (9)",
+        "MUZI cartel",
+        "Like.Minded",
+        "More Than Music",
+        "Costas Music",
+        "Mormorio",
+        "Rhizome (US)",
+        "XXX Culture",
+        "Midas Touch (5)",
+        "Movin'",
+        "Memoria Recordings",
+        "J Room (2)",
+        "Floorpiece",
+        "miNIMMAl movement",
+        "Palavre Records",
+        "Movida Records"
+      ],
+      "bio": "Romanian producer and DJ.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Visitors Various Artists 001",
+          "year": 2026,
+          "label": "Visitors (2)",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Killa Moves EP",
+          "year": 2025,
+          "label": "Radial Records (3)",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "The Music Behind",
+          "year": 2025,
+          "label": "Nervous Records",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Nights in Itaewon",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "RADI 001",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Atipic Lab 012",
+          "year": 2021,
+          "label": "Atipic",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Soul Things LP",
+          "year": 2020,
+          "label": "Playedby",
+          "role": "Main",
+          "format": "3xLP"
+        },
+        {
+          "title": "Originality",
+          "year": 2020,
+          "label": "Sono Unica",
+          "role": "Main",
+          "format": "12\", Vin"
+        },
+        {
+          "title": "Atipic Lab 04",
+          "year": 2019,
+          "label": "Atipic",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "ENDZ028",
+          "year": 2019,
+          "label": "Eastenderz",
+          "role": "Main",
+          "format": "12\", Spl"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/tDlTw1fH6zfqjpF4xg6p-ponP5FiNqDxDPU3lT6zNss/rs:fit/g:sm/q:90/h:531/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQyNzIx/OTktMTc0MjkxMTA3/Ny02MjAxLmpwZWc.jpeg",
+          "width": 600,
+          "height": 531
+        }
+      ],
+      "externalUrls": [
+        "https://soundcloud.com/cosmjn",
+        "https://www.facebook.com/cosmjn2k/",
+        "https://cosmjn.bandcamp.com/music"
+      ],
+      "imageTheme": "house",
+      "mbid": "8935c6ac-4a19-4cdf-97fb-a548aea5ebc3",
+      "discogsId": 4272199,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/8935c6ac-4a19-4cdf-97fb-a548aea5ebc3",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/4272199",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "8935c6ac-4a19-4cdf-97fb-a548aea5ebc3",
+          "type": null,
+          "gender": null,
+          "country": null,
+          "disambiguation": "Romanian producer and DJ, Cosmin Năstasă",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 4272199,
+          "urls": [
+            "https://soundcloud.com/cosmjn",
+            "https://www.facebook.com/cosmjn2k/",
+            "https://cosmjn.bandcamp.com/music"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.677Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "milo-raad",
+      "name": "Milo Raad",
+      "displayName": "Milo Raad",
+      "country": "Serbia",
+      "aliases": [],
+      "genres": [
+        "Techno"
+      ],
+      "labels": [
+        "Airsound Records",
+        "Soma Quality Recordings",
+        "MindTrip Music",
+        "Olympian (3)",
+        "Illegal Alien Records",
+        "Faut Section",
+        "Decoy (3)",
+        "Northallsen Records",
+        "CMND CTRL",
+        "Edit Select Records",
+        "Techno Tuesday Amsterdam",
+        "Resident Advisor",
+        "Konsequent",
+        "Mord",
+        "Black Codes Experiments",
+        "Materia"
+      ],
+      "bio": "Serbian Techno Producer",
+      "stats": {
+        "releaseCount": 34
+      },
+      "releases": [
+        {
+          "title": "Finger Prints",
+          "year": 2026,
+          "label": "Airsound Records",
+          "role": "Main",
+          "format": "2xFile, FLAC, EP"
+        },
+        {
+          "title": "A Perfect Storm EP",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Bushido EP",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Below The Surface EP",
+          "year": 2024,
+          "label": "Soma Quality Recordings",
+          "role": "Main",
+          "format": "4xFile, WAV, EP"
+        },
+        {
+          "title": "Celestial Sphere",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Blood Pressure",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Hidden Agenda EP",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "The Hornet EP",
+          "year": 2022,
+          "label": "Soma Quality Recordings",
+          "role": "Main",
+          "format": "4xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Sidata EP",
+          "year": 2022,
+          "label": "MindTrip Music",
+          "role": "Main",
+          "format": "4xFile, WAV, EP"
+        },
+        {
+          "title": "Olympian 10",
+          "year": 2021,
+          "label": "Olympian (3)",
+          "role": "Main",
+          "format": "5xFile, FLAC"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/X__51V-FdC8o4xN5qtJBFmiIaxE0RmR6_ox4OY1fqIA/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTY1NzE2/NTgtMTY0ODE5OTA5/MC02MzQ3LmpwZWc.jpeg",
+          "width": 600,
+          "height": 450
+        }
+      ],
+      "externalUrls": [],
+      "imageTheme": "techno",
+      "mbid": "82928961-4446-406c-b8dd-3c5c72da1e24",
+      "discogsId": 6571658,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/82928961-4446-406c-b8dd-3c5c72da1e24",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/6571658",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "82928961-4446-406c-b8dd-3c5c72da1e24",
+          "type": "Person",
+          "gender": null,
+          "country": "RS",
+          "disambiguation": "Serbian Techno Producer",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 6571658,
+          "urls": [],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.679Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "matisa",
+      "name": "Matisa",
+      "displayName": "Matisa",
+      "country": "Italy",
+      "aliases": [
+        "Isabella Matilde"
+      ],
+      "genres": [
+        "House",
+        "Techno"
+      ],
+      "labels": [
+        "The Naked Dance",
+        "SOS Music (7)",
+        "Optimo Music Digital Danceforce",
+        "A Lifetime On The Hips",
+        "Club Mix Records (2)",
+        "Monkey Puzzle, Atlantic",
+        "Misfit Melodies",
+        "Dischi Autunno",
+        "Firehouse (6)",
+        "Public Possession",
+        "!K7 Records",
+        "Permanent Vacation",
+        "Freeride Millenium",
+        "Beats In Space"
+      ],
+      "bio": "Matisa is a Rome-born, Florence-based DJ and producer.",
+      "stats": {
+        "releaseCount": 27
+      },
+      "releases": [
+        {
+          "title": "Occaso EP",
+          "year": 2026,
+          "label": "The Naked Dance",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "In My Head",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Cuddle",
+          "year": 2023,
+          "label": "SOS Music (7)",
+          "role": "Main",
+          "format": "4xFile, WAV"
+        },
+        {
+          "title": "Tongue",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Wonder EP",
+          "year": 2022,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Peace Building",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "The Elsewhere",
+          "year": 2020,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Organza/Honey Comb EP",
+          "year": 2019,
+          "label": "Optimo Music Digital Danceforce",
+          "role": "Main",
+          "format": "2xFile, FLAC, EP"
+        },
+        {
+          "title": "Sugar Snap EP",
+          "year": 2024,
+          "label": "A Lifetime On The Hips",
+          "role": "Remix",
+          "format": "12\", EP"
+        },
+        {
+          "title": "CLUBREMIX003",
+          "year": 2024,
+          "label": "Club Mix Records (2)",
+          "role": "Remix",
+          "format": "12\", EP"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/j9hY3OHFZr4DUVA9-mO4VM6LjvGFVixETkmjmHWz9qg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTc0MzUw/NDItMTc3ODY5NzAy/NC01MjYwLmpwZWc.jpeg",
+          "width": 600,
+          "height": 600
+        }
+      ],
+      "externalUrls": [
+        "https://thenakedance.com/",
+        "https://www.instagram.com/matisaxx/",
+        "https://soundcloud.com/matisaxx",
+        "https://www.facebook.com/matisaxxx/"
+      ],
+      "imageTheme": "house",
+      "mbid": "b5f49d88-d234-4c9d-842c-2376bd4cd391",
+      "discogsId": 7435042,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/b5f49d88-d234-4c9d-842c-2376bd4cd391",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/7435042",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "b5f49d88-d234-4c9d-842c-2376bd4cd391",
+          "type": "Person",
+          "gender": null,
+          "country": "IT",
+          "disambiguation": "",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 7435042,
+          "urls": [
+            "https://thenakedance.com/",
+            "https://www.instagram.com/matisaxx/",
+            "https://soundcloud.com/matisaxx",
+            "https://www.facebook.com/matisaxxx/"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.679Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "sciahri",
+      "name": "Sciahri",
+      "displayName": "Sciahri",
+      "country": "Italy (based in Florence)",
+      "aliases": [
+        "Sciahriar Tavakoli"
+      ],
+      "genres": [
+        "Techno"
+      ],
+      "labels": [
+        "Sublunar",
+        "Manhigh",
+        "Black Opal",
+        "Ilian Tape",
+        "Gordo Trax",
+        "KYSH Records",
+        "Southern Lights",
+        "AWRY",
+        "UNKNOT",
+        "Duna (5)",
+        "Hate (6)"
+      ],
+      "bio": "Florence-based Italian dj/producer and founder of [l1181459].",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Pareidolia IV",
+          "year": 2026,
+          "label": "Sublunar",
+          "role": "Main",
+          "format": "2x12\""
+        },
+        {
+          "title": "Pareidolia III",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Contatto",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Axis Mundi",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Ritmo Oscuro",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Stranger Infatuation",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Echoes Of The Void EP",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Pareidolia II",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Pareidolia I",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Segments EP",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/OOxUHLSMYPxVQ5eeVQWTCCg9bU7LhiLwxU0nYZ9ELIE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM4Mzk0/MzQtMTU5ODg5MDE5/MS01NTc5LmpwZWc.jpeg",
+          "width": 600,
+          "height": 600
+        }
+      ],
+      "externalUrls": [
+        "https://twitter.com/Sciahri",
+        "https://www.facebook.com/Sciahri",
+        "https://soundcloud.com/sciahri",
+        "https://www.instagram.com/sciahri__sublunar/"
+      ],
+      "imageTheme": "techno",
+      "mbid": "ee4e342b-ddb1-4f98-b548-16ea6306ddb2",
+      "discogsId": 3839434,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/ee4e342b-ddb1-4f98-b548-16ea6306ddb2",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/3839434",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "ee4e342b-ddb1-4f98-b548-16ea6306ddb2",
+          "type": "Person",
+          "gender": "male",
+          "country": "Firenze",
+          "disambiguation": "Italian DJ, producer & label founder",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 3839434,
+          "urls": [
+            "https://twitter.com/Sciahri",
+            "https://www.facebook.com/Sciahri",
+            "https://soundcloud.com/sciahri",
+            "https://www.instagram.com/sciahri__sublunar/"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.680Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "oscar-l",
+      "name": "Oscar L",
+      "displayName": "Oscar L",
+      "country": "Spain",
+      "aliases": [
+        "Óscar López García",
+        "Oscar L.",
+        "Oscar Lopez"
+      ],
+      "genres": [
+        "Techno",
+        "House"
+      ],
+      "labels": [
+        "Truesoul",
+        "Drumcode",
+        "Arcane Music (3)",
+        "Hypnostate",
+        "Factory 93 Records",
+        "Beatfreak Recordings",
+        "Knee Deep In Sound",
+        "Stereo Productions",
+        "Nonstop (4)",
+        "Moan Recordings",
+        "303Lovers",
+        "Happy Techno Music",
+        "BeatFreak Recordings",
+        "Unity Records (19)",
+        "Toolroom Trax, Toolroom Trax",
+        "Night Light Records, Night Light Records",
+        "1605 Music Therapy",
+        "Comade Music",
+        "Black & Purple Recordings",
+        "Sphera Records",
+        "WTF! Music",
+        "TKC Music",
+        "Mustache Music",
+        "Suburban Tracks",
+        "Nervous Records",
+        "Music Records (2)",
+        "Definitive Recordings",
+        "Leaders Of The New School",
+        "T.U.S.O.M. Recordings"
+      ],
+      "bio": "Deejay and Producer from Madrid, Spain.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Atlas",
+          "year": 2026,
+          "label": "Truesoul",
+          "role": "Main",
+          "format": "3xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Gravity",
+          "year": 2025,
+          "label": "Drumcode",
+          "role": "Main",
+          "format": "2xFile, MP3, 320"
+        },
+        {
+          "title": "Gravity",
+          "year": 2025,
+          "label": "Drumcode",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Flex",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Aircargo",
+          "year": 2024,
+          "label": "Truesoul",
+          "role": "Main",
+          "format": "2xFile, WAV"
+        },
+        {
+          "title": "Love Me",
+          "year": 2024,
+          "label": "Arcane Music (3)",
+          "role": "Main",
+          "format": "2xFile, MP3, 320"
+        },
+        {
+          "title": "Addiction / Yapper",
+          "year": 2024,
+          "label": "Truesoul",
+          "role": "Main",
+          "format": "2xFile, MP3, 320"
+        },
+        {
+          "title": "Universal Love",
+          "year": 2023,
+          "label": "Hypnostate",
+          "role": "Main",
+          "format": "2xFile, MP3, 320"
+        },
+        {
+          "title": "Again",
+          "year": 2023,
+          "label": "Drumcode",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Arena / Utopia",
+          "year": 2022,
+          "label": "Factory 93 Records",
+          "role": "Main",
+          "format": "2xFile, MP3, 320"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/bpVTvXRmrK1-v19il95JLJGf3-ZtqTiGsowIZsMPWr0/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIyNDM4/OC0xMzI5NzYxNzE0/LmpwZWc.jpeg",
+          "width": 300,
+          "height": 300
+        }
+      ],
+      "externalUrls": [
+        "http://www.oscarl.com/",
+        "http://www.facebook.com/oscarldj",
+        "http://www.myspace.com/oscarldj"
+      ],
+      "imageTheme": "techno",
+      "mbid": "71aa25f0-700a-42ee-b5d6-8963f2ba29e3",
+      "discogsId": 224388,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/71aa25f0-700a-42ee-b5d6-8963f2ba29e3",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/224388",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "71aa25f0-700a-42ee-b5d6-8963f2ba29e3",
+          "type": "Person",
+          "gender": "male",
+          "country": "ES",
+          "disambiguation": "Spanish DJ Óscar López García",
+          "lifeSpan": {
+            "begin": "1980-03-17",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 224388,
+          "urls": [
+            "http://www.oscarl.com/",
+            "http://www.facebook.com/oscarldj",
+            "http://www.myspace.com/oscarldj"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.681Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "erik-hagleton",
+      "name": "Erik Hagleton",
+      "displayName": "Erik Hagleton",
+      "country": "",
+      "aliases": [
+        "Damien Petit",
+        "Eric Hagleton",
+        "Erick Hagleton"
+      ],
+      "genres": [
+        "House",
+        "Techno"
+      ],
+      "labels": [
+        "Glasgow Underground",
+        "Club Sweat",
+        "Yellow Productions",
+        "Go Deeva Records",
+        "Yellow Productions Recording",
+        "Toolroom Trax",
+        "D:vision Records",
+        "Epoxy Music",
+        "Yellow Productions, Balagan Music",
+        "XL Recordings",
+        "Wagram Music",
+        "Kontor Records",
+        "Vamos Music",
+        "Toolroom Records",
+        "Wagram Music, Tru Thoughts",
+        "George V Records",
+        "Pink Revolver",
+        "Absolute Sound",
+        "Yellow Productions, DJ Magazine",
+        "We Play",
+        "X-Energy Records",
+        "Energy Production",
+        "Tapas Recordings",
+        "ZYX Music",
+        "Green Tree Records (7)"
+      ],
+      "bio": "House & Tech House DJ & producer from Paris, France and residing in Los Angeles, USA. Known as Master Dam until 2010, the year he founded his own digital label . Email: erikhagleton@gmail.com Born: April 7, 1978",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Ain't Nobody",
+          "year": 2020,
+          "label": "Glasgow Underground",
+          "role": "Main",
+          "format": "2xFile, MP3, Single"
+        },
+        {
+          "title": "Someone To Ease My Mind",
+          "year": 2020,
+          "label": "Club Sweat",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "City Of Gold",
+          "year": 2018,
+          "label": "Yellow Productions",
+          "role": "Main",
+          "format": "3xFile, MP3, 320"
+        },
+        {
+          "title": "Break Of Dawn",
+          "year": 2017,
+          "label": "Go Deeva Records",
+          "role": "Main",
+          "format": "3xFile, MP3, 320"
+        },
+        {
+          "title": "Wolliner",
+          "year": 2015,
+          "label": "Yellow Productions Recording",
+          "role": "Main",
+          "format": "CDr, Single, Promo"
+        },
+        {
+          "title": "Reaching Out",
+          "year": 2014,
+          "label": "Toolroom Trax",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Together Forever",
+          "year": 2013,
+          "label": "D:vision Records",
+          "role": "Main",
+          "format": "CD, Maxi, Car"
+        },
+        {
+          "title": "I Can't Get Love / Like That",
+          "year": 2010,
+          "label": "Epoxy Music",
+          "role": "Main",
+          "format": "2xFile, MP3, 320"
+        },
+        {
+          "title": "Africanism vol.IV",
+          "year": 2024,
+          "label": "Yellow Productions, Balagan Music",
+          "role": "Remix",
+          "format": "2xLP, Album, Comp"
+        },
+        {
+          "title": "Jaxx Classics Remixed (2016-2020) / Lost Tracks (1999-2009)",
+          "year": 2020,
+          "label": "XL Recordings",
+          "role": "Remix",
+          "format": "2xCD, Comp"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/6OHOOrFUeHaB72pjTapm0RLblZpug0ThZKzZELQP_zo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIzNzMw/NzEtMTQyNjA4MTMy/Mi04ODgyLmpwZWc.jpeg",
+          "width": 600,
+          "height": 600
+        }
+      ],
+      "externalUrls": [
+        "http://www.facebook.com/erikhagletonofficial",
+        "http://www.facebook.com/erikhagletondp",
+        "http://myspace.com/erikhagletonmusic",
+        "http://twitter.com/ErikHagleton",
+        "http://soundcloud.com/erikhagleton",
+        "http://www.youtube.com/ErikHagletonTV",
+        "http://www.residentadvisor.net/dj/erikhagleton",
+        "http://www.mona-rennalls.com/portfolio/erik-hagleton/"
+      ],
+      "imageTheme": "house",
+      "mbid": "e252300d-1161-444a-9acf-8905d7552268",
+      "discogsId": 2373071,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/e252300d-1161-444a-9acf-8905d7552268",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/2373071",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "e252300d-1161-444a-9acf-8905d7552268",
+          "type": "Person",
+          "gender": "male",
+          "country": null,
+          "disambiguation": "",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 2373071,
+          "urls": [
+            "http://www.facebook.com/erikhagletonofficial",
+            "http://www.facebook.com/erikhagletondp",
+            "http://myspace.com/erikhagletonmusic",
+            "http://twitter.com/ErikHagleton",
+            "http://soundcloud.com/erikhagleton",
+            "http://www.youtube.com/ErikHagletonTV",
+            "http://www.residentadvisor.net/dj/erikhagleton",
+            "http://www.mona-rennalls.com/portfolio/erik-hagleton/"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.683Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "nikita-zabelin",
+      "name": "Никита Забелин",
+      "displayName": "Nikita Zabelin",
+      "country": "Russia (based in Moscow)",
+      "aliases": [
+        "Nikita Zabelin",
+        "Nikita Zebelin"
+      ],
+      "genres": [
+        "electronic",
+        "Techno"
+      ],
+      "labels": [
+        "Resonance Moscow",
+        "Hi Freaks",
+        "Magnit",
+        "True Music (5)",
+        "PG TUNE",
+        "Wunderblock Records",
+        "For Pleasure Rec.",
+        "Regular",
+        "Absurde (2)",
+        "Al Gharib",
+        "X/OZ",
+        "трип",
+        "Resident Advisor, Resident Advisor Podcast"
+      ],
+      "bio": "Russian producer and sound designer, who is also resident at Moscow’s Monasterio club. Nikita is a proponent of minimalism that grew initially from the German techno-world, yet whatever those early sources, he has now come into his own as a sonic artist. «My music is not driven by songs. Instead it’s the creation of alternative realities, whether they spring from visual images or grow from my own experience with modern technology.» These trajectories and experiments have now led to sharing the stage with James Ruskin, Speedy J, Truncate, Shifted, Robert Hood, Slam- plus others.",
+      "stats": {
+        "releaseCount": 30
+      },
+      "releases": [
+        {
+          "title": "Rhizome",
+          "year": 2019,
+          "label": "Resonance Moscow",
+          "role": "Main",
+          "format": "2xLP, Album"
+        },
+        {
+          "title": "Trans Siberian Express",
+          "year": 2018,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Dr. Schumanfu",
+          "year": 2010,
+          "label": "Hi Freaks",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Brand New Me",
+          "year": 2010,
+          "label": "Hi Freaks",
+          "role": "Main",
+          "format": "File, WAV, EP"
+        },
+        {
+          "title": "Malaysia",
+          "year": 2009,
+          "label": "Magnit",
+          "role": "Main",
+          "format": "File, WAV"
+        },
+        {
+          "title": "Gone To Sleep",
+          "year": 2009,
+          "label": "Hi Freaks",
+          "role": "Main",
+          "format": "File, WAV, EP"
+        },
+        {
+          "title": "True Music",
+          "year": 2017,
+          "label": "True Music (5)",
+          "role": "Remix",
+          "format": "12\", Ltd"
+        },
+        {
+          "title": "Remix The Box ",
+          "year": 2016,
+          "label": "PG TUNE",
+          "role": "Remix",
+          "format": "4xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Urania ",
+          "year": 2016,
+          "label": null,
+          "role": "Remix"
+        },
+        {
+          "title": "Arma Hedon",
+          "year": 2014,
+          "label": "Wunderblock Records",
+          "role": "Remix",
+          "format": "4xFile, FLAC, EP"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/8tzpuNXyN9tn6cS43_OUgoy2rNhtxkXSSa39yXFkPVA/rs:fit/g:sm/q:90/h:400/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE3NDQ3/NzctMTQ5NTUzODcz/Mi03NjkzLmpwZWc.jpeg",
+          "width": 600,
+          "height": 400
+        }
+      ],
+      "externalUrls": [
+        "http://www.facebook.com/pages/Nikita-Zabelin/123893617662950",
+        "http://www.soundcloud.com/zabelin",
+        "http://zabelin.tumblr.com"
+      ],
+      "imageTheme": "techno",
+      "mbid": "ff84e4fc-af8c-481d-a86c-9d8e59be55d3",
+      "discogsId": 1744777,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/ff84e4fc-af8c-481d-a86c-9d8e59be55d3",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/1744777",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "ff84e4fc-af8c-481d-a86c-9d8e59be55d3",
+          "type": "Person",
+          "gender": "male",
+          "country": "Moscow",
+          "disambiguation": "",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 1744777,
+          "urls": [
+            "http://www.facebook.com/pages/Nikita-Zabelin/123893617662950",
+            "http://www.soundcloud.com/zabelin",
+            "http://zabelin.tumblr.com"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.684Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "tom-kynd",
+      "name": "The Kynd",
+      "displayName": "Tom Kynd",
+      "country": "United Kingdom",
+      "aliases": [
+        "Tom Kynd"
+      ],
+      "genres": [
+        "Techno",
+        "House"
+      ],
+      "labels": [
+        "Voltaire Music",
+        "Iconyc"
+      ],
+      "bio": "Electronic music producer based in Bali, Indonesia",
+      "stats": {
+        "releaseCount": 2
+      },
+      "releases": [
+        {
+          "title": "Atmospheric (Volume 1)",
+          "year": 2026,
+          "label": "Voltaire Music",
+          "role": "TrackAppearance",
+          "format": "14xFile, MP3, Comp, 320"
+        },
+        {
+          "title": "We Are Iconyc",
+          "year": 2024,
+          "label": "Iconyc",
+          "role": "TrackAppearance",
+          "format": "2xFile, MP3, Mixed, 320 + 28xFile, MP3, Comp, 320"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/z0anSoUAJwqIyV0QDQA3IQH6qnx54xgyfEi8gaSi0Y4/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1MTgy/NjI3LTE3Mjg2ODMw/NDUtMjE1NS5qcGVn.jpeg",
+          "width": 500,
+          "height": 500
+        }
+      ],
+      "externalUrls": [
+        "https://soundcloud.com/rspgpaeojsow"
+      ],
+      "imageTheme": "techno",
+      "mbid": "d0a5656d-e5c5-4d53-86c0-79a54442d0a7",
+      "discogsId": 15182627,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/d0a5656d-e5c5-4d53-86c0-79a54442d0a7",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/15182627",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "d0a5656d-e5c5-4d53-86c0-79a54442d0a7",
+          "type": "Group",
+          "gender": null,
+          "country": "GB",
+          "disambiguation": "British indie band",
+          "lifeSpan": {
+            "begin": "1991",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 15182627,
+          "urls": [
+            "https://soundcloud.com/rspgpaeojsow"
+          ],
+          "dataQuality": "Correct"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.685Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "psyche",
+      "name": "Psyche",
+      "displayName": "Psyche",
+      "country": "Canada",
+      "aliases": [
+        "Psyche",
+        "Psyche 87",
+        "Psyche'"
+      ],
+      "genres": [
+        "electronic",
+        "synthpop",
+        "industrial",
+        "new wave",
+        "dark wave",
+        "ebm",
+        "synth-pop",
+        "eighties",
+        "Techno",
+        "House"
+      ],
+      "labels": [
+        "Psyche Enterprises",
+        "Maneki Neko Tapes",
+        "Emergency Hearts",
+        "Not On Label",
+        "Secret Thirteen Journal"
+      ],
+      "bio": "Psyche started in early 1982 as brothers Darrin and Stephen Huss performed for the first time in Edmonton, Alberta, Canada under the name PSYCHE, briefly appearing as a trio with Dwayne Goettel on synths. They performed a combination of horror and electronics that was completely unheard of in their region. After several cassette releases their debut album \"Insomnia Theatre,\" was released through their own label independently in 1985, and later signed to New Rose Records for a new edition making it's European debut. Ever since the underground success with \"The Brain Collapses,\" and club hit \"Unveiling The Secret\" Psyche has continued to release a variety of songs and albums enveloping every facet of the electronic pop music genre, from cold harsh industrial, through warm synth-pop, dancefloor minimal, darkwave and beyond. Various members have collaborated with Darrin and continued expanding the Psyche legacy from the renowned cover of \"Goodbye Horses,\" to \"Sanctuary,\" and what can be heard on \"The 11th Hour,\" as well as seen on their \"Imaginary Life,\" DVD which compiles music videos, and performances covering the years between 1983 - 2005, respectively.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Collapsing Secrets",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Dance After Curfew",
+          "year": 2025,
+          "label": "Psyche Enterprises",
+          "role": "Main",
+          "format": "File, AAC, AIFF, FLAC, MP3, WAV, Single"
+        },
+        {
+          "title": "Prisoner To Desire (Re​-​Animated Mix)",
+          "year": 2024,
+          "label": "Psyche Enterprises",
+          "role": "Main",
+          "format": "2xFile, AIFF"
+        },
+        {
+          "title": "Future Memories",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Beyond Sensation 4D",
+          "year": 2023,
+          "label": "Psyche Enterprises",
+          "role": "Main",
+          "format": "10xFile, AIFF, Comp"
+        },
+        {
+          "title": "Live In Sweden - April 2023",
+          "year": 2023,
+          "label": "Psyche Enterprises",
+          "role": "Main",
+          "format": "12xFile, AIFF, Album"
+        },
+        {
+          "title": "Live At Dark Entries, Belgium 2007",
+          "year": 2023,
+          "label": "Psyche Enterprises",
+          "role": "Main",
+          "format": "13xFile, AIFF, Album"
+        },
+        {
+          "title": "Thundershowers / Insatiable",
+          "year": 2023,
+          "label": "Psyche Enterprises",
+          "role": "Main",
+          "format": "2xFile, AIFF, RM"
+        },
+        {
+          "title": "Haunted When The Minutes Drag",
+          "year": 2023,
+          "label": "Psyche Enterprises",
+          "role": "Main",
+          "format": "File, AIFF"
+        },
+        {
+          "title": "Live At Bar Centre​-​Ville, Montréal 1986 ",
+          "year": 2022,
+          "label": "Maneki Neko Tapes",
+          "role": "Main",
+          "format": "Cass, Album, Ltd, RM"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/8hWkhOmDUojxrLzHDn0qU-lwmMvWawX3XMgmKOLFQtQ/rs:fit/g:sm/q:90/h:400/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQzNDE4/LTE0OTA5NDc4MDIt/MjUyNi5qcGVn.jpeg",
+          "width": 600,
+          "height": 400
+        }
+      ],
+      "externalUrls": [
+        "http://www.psyche-hq.de",
+        "http://psyche.bandcamp.com/",
+        "http://www.facebook.com/psyche",
+        "http://www.youtube.com/psycheshow",
+        "http://en.wikipedia.org/wiki/Psyche_(band)",
+        "http://www.myspace.com/psyche"
+      ],
+      "imageTheme": "techno",
+      "mbid": "cf1894f6-f80a-4edc-ad32-6d32bede1438",
+      "discogsId": 43418,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/cf1894f6-f80a-4edc-ad32-6d32bede1438",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/43418",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "cf1894f6-f80a-4edc-ad32-6d32bede1438",
+          "type": "Group",
+          "gender": null,
+          "country": "CA",
+          "disambiguation": "dark electropop band",
+          "lifeSpan": {
+            "begin": "1982",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 43418,
+          "urls": [
+            "http://www.psyche-hq.de",
+            "http://psyche.bandcamp.com/",
+            "http://www.facebook.com/psyche",
+            "http://www.youtube.com/psycheshow",
+            "http://en.wikipedia.org/wiki/Psyche_(band)",
+            "http://www.myspace.com/psyche"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.686Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "mala",
+      "name": "Mala",
+      "displayName": "Mala",
+      "country": "United Kingdom",
+      "aliases": [
+        "Mala In Cuba",
+        "Mala (Digital Mystikz)",
+        "Mala - Digital Mystikz"
+      ],
+      "genres": [
+        "dubstep",
+        "uk garage",
+        "Dubstep",
+        "Electronic"
+      ],
+      "labels": [
+        "Deep Medi Musik",
+        "Brownswood Recordings",
+        "Resident Advisor",
+        "Deep Medi Musik, Deep Medi Musik",
+        "I & I Music",
+        "Not On Label",
+        "DMZ",
+        "XLR8R",
+        "Ringo Records",
+        "Hyperdub",
+        "I&I",
+        "Kitto Records",
+        "Warp Records",
+        "Loma Vista",
+        "Not On Label (Kode9 Self-released)",
+        "Fine Line Records (6)",
+        "Dubkasm Records",
+        "Wax Treatment"
+      ],
+      "bio": "Mala is a United Kingdom-based electronic music DJ and producer dubstep producer Mark Lawrence., known for Dubstep, Electronic, dubstep, uk garage styles. Releases on labels including Deep Medi Musik, Brownswood Recordings, Resident Advisor. 50 releases on Discogs.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Militant Don",
+          "year": 2026,
+          "label": "Deep Medi Musik",
+          "role": "Main",
+          "format": "10\""
+        },
+        {
+          "title": "Como Como",
+          "year": 2025,
+          "label": "Brownswood Recordings",
+          "role": "Main",
+          "format": "12\", Ltd"
+        },
+        {
+          "title": "Militant Don",
+          "year": 2025,
+          "label": "Deep Medi Musik",
+          "role": "Main",
+          "format": "File, MP3"
+        },
+        {
+          "title": "RA.1016 : 2000-25: The Listening Session",
+          "year": 2025,
+          "label": "Resident Advisor",
+          "role": "Main",
+          "format": "File, MP3, Mixed, 320"
+        },
+        {
+          "title": "Changes / Jah Power Dub",
+          "year": 2024,
+          "label": "Deep Medi Musik, Deep Medi Musik",
+          "role": "Main",
+          "format": "12\", W/Lbl"
+        },
+        {
+          "title": "A Way Back (Versions)",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Ancient Memories",
+          "year": 2022,
+          "label": "I & I Music",
+          "role": "Main",
+          "format": "File, WAV, Single"
+        },
+        {
+          "title": "Pathways",
+          "year": 2022,
+          "label": "I & I Music",
+          "role": "Main",
+          "format": "File, WAV, RM"
+        },
+        {
+          "title": "Walking With Jah",
+          "year": 2022,
+          "label": "I & I Music",
+          "role": "Main",
+          "format": "File, WAV, RM"
+        },
+        {
+          "title": " Ancient Memories",
+          "year": 2022,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/59PPY_ZjbOaIu4VEy04cOaA7-K9D_QbEEhO0i0t5vFQ/rs:fit/g:sm/q:90/h:334/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTU3MDcz/OS0xMjU5MjY3NzEz/LmpwZWc.jpeg",
+          "width": 500,
+          "height": 334
+        }
+      ],
+      "externalUrls": [
+        "http://www.facebook.com/malamystikz",
+        "http://twitter.com/mala_dmz",
+        "http://myspace.com/malamystikz",
+        "http://soundcloud.com/maladmz",
+        "http://mala-music.bandcamp.com/a",
+        "https://www.instagram.com/maladmz/",
+        "http://www.youtube.com/user/maladmz"
+      ],
+      "imageTheme": "dubstep",
+      "mbid": "09f221eb-c97e-4da5-ac22-d7ab7c555bbb",
+      "discogsId": 570739,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/09f221eb-c97e-4da5-ac22-d7ab7c555bbb",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/570739",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "09f221eb-c97e-4da5-ac22-d7ab7c555bbb",
+          "type": "Person",
+          "gender": "male",
+          "country": "GB",
+          "disambiguation": "dubstep producer Mark Lawrence",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 570739,
+          "urls": [
+            "http://www.facebook.com/malamystikz",
+            "http://twitter.com/mala_dmz",
+            "http://myspace.com/malamystikz",
+            "http://soundcloud.com/maladmz",
+            "http://mala-music.bandcamp.com/a",
+            "https://www.instagram.com/maladmz/",
+            "http://www.youtube.com/user/maladmz"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.687Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "mungk",
+      "name": "Mungk",
+      "displayName": "Mungk",
+      "country": "UK (based in Leeds)",
+      "aliases": [],
+      "genres": [
+        "Dubstep",
+        "Bass"
+      ],
+      "labels": [
+        "D-BLK",
+        "LDH Records (2)",
+        "Infernal Sounds",
+        "Simply Deep",
+        "Rootplate",
+        "Transient Audio (2)",
+        "Natural Selectas Records",
+        "Dark Heart Recordings",
+        "SUB garden",
+        "SND SYSTM CLTR",
+        "Not On Label (Kodama (7) Self-released)",
+        "DUPLOC",
+        "For The Heads Records",
+        "Iron Shirt Recordings"
+      ],
+      "bio": "Leeds based Bass music producer.",
+      "stats": {
+        "releaseCount": 32
+      },
+      "releases": [
+        {
+          "title": "D-BLK016",
+          "year": 2024,
+          "label": "D-BLK",
+          "role": "Main",
+          "format": "10\""
+        },
+        {
+          "title": "Bare Witness / Hertis Rote",
+          "year": 2023,
+          "label": "D-BLK",
+          "role": "Main",
+          "format": "10\", Single"
+        },
+        {
+          "title": "Jimi / Snakes",
+          "year": 2023,
+          "label": "LDH Records (2)",
+          "role": "Main",
+          "format": "Lathe, 10\", Ltd"
+        },
+        {
+          "title": "Sanskrit EP",
+          "year": 2022,
+          "label": "Infernal Sounds",
+          "role": "Main",
+          "format": "4xFile, WAV, EP"
+        },
+        {
+          "title": "Tarot",
+          "year": 2021,
+          "label": "Simply Deep",
+          "role": "Main",
+          "format": "Lathe, 12\", EP, Ltd, Num"
+        },
+        {
+          "title": "Rootplate 004",
+          "year": 2021,
+          "label": "Rootplate",
+          "role": "Main",
+          "format": "Lathe, 10\", Ltd, Num"
+        },
+        {
+          "title": "Aztlan / Moodswings",
+          "year": 2021,
+          "label": "Transient Audio (2)",
+          "role": "Main",
+          "format": "10\""
+        },
+        {
+          "title": "Kuji EP",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Temple Of Mungk",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Sanxing / Guzheng",
+          "year": 2020,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/lzz95LSrCjC9u1cNKgskCsBbr67MwkZt7Lsg6N2QnCk/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTcxOTg2/MTktMTY0MDI1NDEz/OS01NzA0LmpwZWc.jpeg",
+          "width": 500,
+          "height": 500
+        }
+      ],
+      "externalUrls": [
+        "https://soundcloud.com/mungkdubs",
+        "https://mungkdubs.bandcamp.com/"
+      ],
+      "imageTheme": "dubstep",
+      "mbid": "14b4c87f-04b1-4ed8-8018-159ce5dee54e",
+      "discogsId": 7198619,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/14b4c87f-04b1-4ed8-8018-159ce5dee54e",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/7198619",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "14b4c87f-04b1-4ed8-8018-159ce5dee54e",
+          "type": "Person",
+          "gender": "male",
+          "country": "Leeds",
+          "disambiguation": "UK dubstep producer",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 7198619,
+          "urls": [
+            "https://soundcloud.com/mungkdubs",
+            "https://mungkdubs.bandcamp.com/"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.688Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "d8",
+      "name": "D8",
+      "displayName": "D8",
+      "country": "",
+      "aliases": [
+        "D8 (weared8.com)",
+        "D8.studio",
+        "d8.uk",
+        "weared8.com"
+      ],
+      "genres": [
+        "Dubstep",
+        "Bass"
+      ],
+      "labels": [
+        "Synkronic Musik",
+        "Sradag Music",
+        "Sony Music"
+      ],
+      "bio": "Credited for design.",
+      "stats": {
+        "releaseCount": 27
+      },
+      "releases": [
+        {
+          "title": "The Great Western Road",
+          "year": 2025,
+          "label": null,
+          "role": "Appearance"
+        },
+        {
+          "title": "All The Old 45s - The Very Best Of Deacon Blue",
+          "year": 2023,
+          "label": null,
+          "role": "Appearance"
+        },
+        {
+          "title": "Short Stories Vol. 2",
+          "year": 2022,
+          "label": null,
+          "role": "Appearance"
+        },
+        {
+          "title": "Riding On The Tide Of Love",
+          "year": 2021,
+          "label": null,
+          "role": "Appearance"
+        },
+        {
+          "title": "City Of Love",
+          "year": 2020,
+          "label": null,
+          "role": "Appearance"
+        },
+        {
+          "title": "Live At The Glasgow Barrowlands",
+          "year": 2017,
+          "label": null,
+          "role": "Appearance"
+        },
+        {
+          "title": "Believers",
+          "year": 2016,
+          "label": null,
+          "role": "Appearance"
+        },
+        {
+          "title": "God Help The Girl (Original Motion Picture Soundtrack)",
+          "year": 2014,
+          "label": null,
+          "role": "Appearance"
+        },
+        {
+          "title": "A New House",
+          "year": 2014,
+          "label": null,
+          "role": "Appearance"
+        },
+        {
+          "title": "The Third Eye Centre",
+          "year": 2013,
+          "label": null,
+          "role": "Appearance"
+        }
+      ],
+      "images": [],
+      "externalUrls": [],
+      "imageTheme": "dubstep",
+      "mbid": "a87b39c5-5542-4b70-b998-37d1a9dcd1d0",
+      "discogsId": 1928230,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/a87b39c5-5542-4b70-b998-37d1a9dcd1d0",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/1928230",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "a87b39c5-5542-4b70-b998-37d1a9dcd1d0",
+          "type": null,
+          "gender": null,
+          "country": null,
+          "disambiguation": "",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 1928230,
+          "urls": [],
+          "dataQuality": "Correct"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.689Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "le-youth",
+      "name": "Le Youth",
+      "displayName": "Le Youth",
+      "country": "US (based in Los Angeles)",
+      "aliases": [
+        "Le Youh"
+      ],
+      "genres": [
+        "downtempo",
+        "dance",
+        "house",
+        "electro",
+        "rnb",
+        "indie-dance",
+        "Trance",
+        "Progressive"
+      ],
+      "labels": [
+        "This Never Happened, Involved Publishing",
+        "This Never Happened",
+        "Armada Electronic Elements",
+        "PRGRSSN Records",
+        "Spinnin' Deep",
+        "Armada (4)",
+        "Sign Of The Times",
+        "Parametric Records, Atlantic",
+        "Homewerk"
+      ],
+      "bio": "From Los Angeles, United States. 90s sounds refracted through a thoroughly modern aesthetic. Tracks that are serious about moving a dance floor full of people without coming on too strong. Breezy California vibes touched by a twist of European flair and an air of mystery. This is what Le Youth is about. Wes James is the slightly enigmatic Angeleno behind Le Youth, a producer without a past whose music is steeped in it. His signature sound is a blend of Clinton-era R&B and the house music that was lighting up dancefloors and radio stations around the globe during the same period, and the leisurely grooves, airy synthesizers, and pop hooks of a song like his debut single “C O O L” can easily pull a listener back to the pre-millennial, pre-Internet days when dance music offered a transcendentally blissful brand of hedonism that’s considerably harder to find on today’s aggro-edged EDM landscape. Viewers of the new video for “C O O L” (directed by Renata Raksha) who know their 90s music will likely pick up on the influence of a number of cultural touchstones from the time: chart-topping crossover club acts like Technotronic and Black Box, house divas like Robin S. and CeCe Peniston, and R&B icons like Aaliyah and Ginuwine, as well as a visual sensibility that evokes Herb Ritts in his role as video director to the decade’s biggest pop superstars. It’s got retro style while maintaining completely contemporary feel that’s free from gimmicks and offers stylishly relaxed relief from the ongoing onslaught of dayglo-tinged dubstep. Le Youth's already attracted the attention of tastemaking dance music bloggers and tastemakers, and his music has already topped the charts of one of dance music's most exclusive barometers, Hype Machine. His next move? Nothing less than defining the sound of summer 2013.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "who are you really?",
+          "year": 2026,
+          "label": "This Never Happened, Involved Publishing",
+          "role": "Main",
+          "format": "2xLP, Album, Dlx, Ltd, Cle"
+        },
+        {
+          "title": "I Don't Know What To Say",
+          "year": 2025,
+          "label": "This Never Happened",
+          "role": "Main",
+          "format": "File, MP3, Single, 320"
+        },
+        {
+          "title": "Still My Ecstasy",
+          "year": 2025,
+          "label": "This Never Happened",
+          "role": "Main",
+          "format": "File, MP3, Single, 320"
+        },
+        {
+          "title": "Sanctuary",
+          "year": 2025,
+          "label": "This Never Happened",
+          "role": "Main",
+          "format": "File, MP3, Single, 320"
+        },
+        {
+          "title": "Paradise ",
+          "year": 2024,
+          "label": "This Never Happened",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "About Us [Deluxe]",
+          "year": 2024,
+          "label": "This Never Happened",
+          "role": "Main",
+          "format": "2xLP, Album, Dlx, Ltd, Cle"
+        },
+        {
+          "title": "Stay Still",
+          "year": 2024,
+          "label": "This Never Happened",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "seven-twenty-four",
+          "year": 2024,
+          "label": "This Never Happened",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "&",
+          "year": 2024,
+          "label": "This Never Happened",
+          "role": "Main",
+          "format": "6xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Lost",
+          "year": 2023,
+          "label": "This Never Happened",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/NH_SeRQD8iYq9TDzY24PDbFyRXyaDRozPKIIibZupuY/rs:fit/g:sm/q:90/h:550/w:550/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTMzODI3/NjktMTM3Nzc0NTcw/MC0yODI3LmpwZWc.jpeg",
+          "width": 550,
+          "height": 550
+        }
+      ],
+      "externalUrls": [
+        "https://leyouth.com",
+        "https://soundcloud.com/leyouth",
+        "https://www.facebook.com/LeYouth",
+        "https://www.instagram.com/leyouth"
+      ],
+      "imageTheme": "trance",
+      "mbid": "60584cf9-69a4-48e8-929a-935e7f8d74b3",
+      "discogsId": 3382769,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/60584cf9-69a4-48e8-929a-935e7f8d74b3",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/3382769",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "60584cf9-69a4-48e8-929a-935e7f8d74b3",
+          "type": "Person",
+          "gender": "male",
+          "country": "Los Angeles",
+          "disambiguation": "US | electronic",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 3382769,
+          "urls": [
+            "https://leyouth.com",
+            "https://soundcloud.com/leyouth",
+            "https://www.facebook.com/LeYouth",
+            "https://www.instagram.com/leyouth"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.690Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "steal-tapes",
+      "name": "Steal Tapes",
+      "displayName": "Steal Tapes",
+      "country": "",
+      "aliases": [],
+      "genres": [
+        "House",
+        "Techno"
+      ],
+      "labels": [
+        "ADUNANZA",
+        "W&O Street Tracks",
+        "Brobot Records",
+        "Beatraxx",
+        "Too Many Rules",
+        "Quattro Bambole Music",
+        "Manzo Edits",
+        "Material Series",
+        "Ibiza Talents"
+      ],
+      "bio": "Producer & DJ from Milan, Italy.",
+      "stats": {
+        "releaseCount": 19
+      },
+      "releases": [
+        {
+          "title": "Nothing Else",
+          "year": 2026,
+          "label": "ADUNANZA",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Power",
+          "year": 2024,
+          "label": "ADUNANZA",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Give Me Love",
+          "year": 2022,
+          "label": "W&O Street Tracks",
+          "role": "Main",
+          "format": "2xFile, MP3, 320"
+        },
+        {
+          "title": "In My Mind EP",
+          "year": 2022,
+          "label": "Brobot Records",
+          "role": "Main",
+          "format": "2xFile, MP3, EP, 320"
+        },
+        {
+          "title": "I Like U EP",
+          "year": 2022,
+          "label": "Brobot Records",
+          "role": "Main",
+          "format": "2xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Love The Sun EP",
+          "year": 2021,
+          "label": "Beatraxx",
+          "role": "Main",
+          "format": "2xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Trust EP",
+          "year": 2021,
+          "label": "W&O Street Tracks",
+          "role": "Main",
+          "format": "3xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Hyper EP",
+          "year": 2021,
+          "label": "W&O Street Tracks",
+          "role": "Main",
+          "format": "3xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Dance With Me",
+          "year": 2021,
+          "label": "Too Many Rules",
+          "role": "Main",
+          "format": "3xFile, MP3, 320"
+        },
+        {
+          "title": "Bi",
+          "year": 2020,
+          "label": "Beatraxx",
+          "role": "Main",
+          "format": "4xFile, MP3, 320"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/mpc-cVniSkcSdhoBewEUbfPb1SUFEwYKpswShRkzx-U/rs:fit/g:sm/q:90/h:413/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTExMTQ4/MDU5LTE3MjAzNzMx/ODUtNDYwMC5wbmc.jpeg",
+          "width": 600,
+          "height": 413
+        }
+      ],
+      "externalUrls": [
+        "https://www.beatport.com/artist/steal-tapes/791141",
+        "https://x.com/stealtapes",
+        "https://pianity.com/artist/steal-tapes"
+      ],
+      "imageTheme": "house",
+      "mbid": "fbc2def6-99a3-4d97-98e6-fcf9cbf281d5",
+      "discogsId": 11148059,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/fbc2def6-99a3-4d97-98e6-fcf9cbf281d5",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/11148059",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "fbc2def6-99a3-4d97-98e6-fcf9cbf281d5",
+          "type": null,
+          "gender": null,
+          "country": null,
+          "disambiguation": "",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 11148059,
+          "urls": [
+            "https://www.beatport.com/artist/steal-tapes/791141",
+            "https://x.com/stealtapes",
+            "https://pianity.com/artist/steal-tapes"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.691Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "mrd",
+      "name": "MRD",
+      "displayName": "MRD",
+      "country": "Norway",
+      "aliases": [
+        "DJ MRD",
+        "Kent Tonning"
+      ],
+      "genres": [
+        "Techno",
+        "Trance"
+      ],
+      "labels": [
+        "RAW (9)",
+        "Nali",
+        "Artscore",
+        "AUTO (2)",
+        "Union Trance Mission",
+        "Dusk Records (6)",
+        "voxnox Records",
+        "Arts",
+        "Rotterdam Airlines",
+        "Kaos (6)",
+        "Collection Disques Durs",
+        "Exhale (2)",
+        "Dekmantel",
+        "Ismus",
+        "Agora Records (4)"
+      ],
+      "bio": "Techno DJ & producer from Oslo, Norway. Contact: kent.tonning@gmail.com",
+      "stats": {
+        "releaseCount": 34
+      },
+      "releases": [
+        {
+          "title": "August Memories",
+          "year": 2026,
+          "label": "RAW (9)",
+          "role": "Main",
+          "format": "4xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Løvehjerte",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Out Of Red EP",
+          "year": 2022,
+          "label": "Nali",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Fall In Love EP",
+          "year": 2021,
+          "label": "Nali",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Superwoman 2​.​0",
+          "year": 2020,
+          "label": "Artscore",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Flowers Of Flesh And Blood",
+          "year": 2020,
+          "label": "AUTO (2)",
+          "role": "Main",
+          "format": "5xFile, FLAC"
+        },
+        {
+          "title": "Superwoman",
+          "year": 2020,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "I Like The Way You Kiss Me (Remixes)",
+          "year": 2024,
+          "label": null,
+          "role": "Remix"
+        },
+        {
+          "title": "Cause I'm Hurting",
+          "year": 2022,
+          "label": "Union Trance Mission",
+          "role": "Remix",
+          "format": "2xFile, MP3, 320"
+        },
+        {
+          "title": "Blank Page",
+          "year": 2022,
+          "label": "Dusk Records (6)",
+          "role": "Remix",
+          "format": "4xFile, MP3, EP, 320"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/9QIA2cx33rsY39DuJiB8VE7hglWSUEwp9wkWImn2guA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwNDQy/NTItMTU4OTM3NzMz/Ny0zOTAwLmpwZWc.jpeg",
+          "width": 600,
+          "height": 600
+        }
+      ],
+      "externalUrls": [
+        "http://linktr.ee/Mrdof1988",
+        "http://www.facebook.com/MRD1988",
+        "http://www.instagram.com/mrd_of_1988/",
+        "http://mrdof1988.bandcamp.com/",
+        "http://soundcloud.com/mrdmrdmrd",
+        "http://ra.co/dj/mrd-no"
+      ],
+      "imageTheme": "techno",
+      "mbid": "5f78a3e8-7daa-4033-89e7-211965131a8e",
+      "discogsId": 1044252,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/5f78a3e8-7daa-4033-89e7-211965131a8e",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/1044252",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "5f78a3e8-7daa-4033-89e7-211965131a8e",
+          "type": "Person",
+          "gender": "male",
+          "country": "NO",
+          "disambiguation": "Norwegian techno producer",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 1044252,
+          "urls": [
+            "http://linktr.ee/Mrdof1988",
+            "http://www.facebook.com/MRD1988",
+            "http://www.instagram.com/mrd_of_1988/",
+            "http://mrdof1988.bandcamp.com/",
+            "http://soundcloud.com/mrdmrdmrd",
+            "http://ra.co/dj/mrd-no"
+          ],
+          "dataQuality": "Correct"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.692Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "mico",
+      "name": "Mico",
+      "displayName": "Mico",
+      "country": "Canada (based in Banff)",
+      "aliases": [
+        "M. Weaver",
+        "MiKo Weaver",
+        "Michael Weaver",
+        "Mico",
+        "Micro Weaver",
+        "Mike Weaver",
+        "Miko",
+        "Miko Weaver"
+      ],
+      "genres": [
+        "Electronic"
+      ],
+      "labels": [
+        "Not On Label",
+        "Truth Records (6)",
+        "Straight Music (3), Vivid Sound",
+        "Purple Gold Archives",
+        "Zion (4)",
+        "Eye Records (10)",
+        "Silverline (2)",
+        "Silverline Records (2)",
+        "Sabotage Records (2)"
+      ],
+      "bio": "American guitarist, born March 11, 1957, Berkeley, California. He is known for his work with [a28795].",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Miko & The Boombox 99",
+          "year": 1999,
+          "label": "Not On Label",
+          "role": "Producer",
+          "format": "CDr, Album"
+        },
+        {
+          "title": "The Batrap",
+          "year": 1989,
+          "label": "Truth Records (6)",
+          "role": "Producer",
+          "format": "12\""
+        },
+        {
+          "title": "Purple Rain",
+          "year": 2017,
+          "label": null,
+          "role": "Appearance"
+        },
+        {
+          "title": "Ultimate",
+          "year": 2006,
+          "label": null,
+          "role": "Appearance"
+        },
+        {
+          "title": "The Glimmers ®",
+          "year": 2004,
+          "label": null,
+          "role": "Appearance"
+        },
+        {
+          "title": "The Very Best Of Prince",
+          "year": 2001,
+          "label": null,
+          "role": "Appearance"
+        },
+        {
+          "title": "Stackin Chips",
+          "year": 1997,
+          "label": null,
+          "role": "Appearance"
+        },
+        {
+          "title": "The \"C\" Theory",
+          "year": 1994,
+          "label": null,
+          "role": "Appearance"
+        },
+        {
+          "title": "The Black Album",
+          "year": 1994,
+          "label": null,
+          "role": "Appearance"
+        },
+        {
+          "title": "Dat's My Potna / Funky Behavior",
+          "year": 1994,
+          "label": null,
+          "role": "Appearance"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/2AWzRlwreQ8Pyg5lWuRR194q7rQtKOdzY_2vzfd-Wx8/rs:fit/g:sm/q:90/h:609/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI3MzM0/Ny0xNTg0MTg2Nzc5/LTM4NTQuanBlZw.jpeg",
+          "width": 600,
+          "height": 609
+        }
+      ],
+      "externalUrls": [
+        "https://mikoweaver.com",
+        "https://www.facebook.com/MIKOMIKOMIXAMILLION",
+        "https://en.wikipedia.org/wiki/Miko_Weaver",
+        "https://www.imdb.com/name/nm0915926/"
+      ],
+      "imageTheme": "electronic",
+      "mbid": "aeeb1fc9-9ad4-4168-85af-7ed6bfd88451",
+      "discogsId": 273347,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/aeeb1fc9-9ad4-4168-85af-7ed6bfd88451",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/273347",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "aeeb1fc9-9ad4-4168-85af-7ed6bfd88451",
+          "type": "Group",
+          "gender": null,
+          "country": "Banff",
+          "disambiguation": "Canadian punk band",
+          "lifeSpan": {
+            "begin": "1998",
+            "end": "2007",
+            "ended": true
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 273347,
+          "urls": [
+            "https://mikoweaver.com",
+            "https://www.facebook.com/MIKOMIKOMIXAMILLION",
+            "https://en.wikipedia.org/wiki/Miko_Weaver",
+            "https://www.imdb.com/name/nm0915926/"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.693Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "simbi",
+      "name": "Simbi",
+      "displayName": "Simbi",
+      "country": "Sweden (based in Gothenburg)",
+      "aliases": [
+        "Abiola",
+        "S A A Ajikawo",
+        "S. Ajikawo",
+        "Simbi Ajikawo",
+        "Simbiatu Abiola Abisola Ajikawo",
+        "Simbiatu Abiolo Abisola Ajikawo",
+        "Simbiatu Abisola Abiola Ajikawo"
+      ],
+      "genres": [
+        "Electronic",
+        "Bass"
+      ],
+      "labels": [
+        "Les Inrockuptibles",
+        "Rolling Stone",
+        "Piccadilly Records (2)",
+        "KUTX 98.9 FM, University Of Texas, Austin"
+      ],
+      "bio": "Simbi is a Sweden (based in Gothenburg)-based electronic music DJ and producer, known for Electronic, Bass styles. Releases on labels including Les Inrockuptibles, Rolling Stone, Piccadilly Records (2). 20 releases on Discogs.",
+      "stats": {
+        "releaseCount": 20
+      },
+      "releases": [
+        {
+          "title": "DJ-Kicks",
+          "year": 2025,
+          "label": null,
+          "role": "Appearance"
+        },
+        {
+          "title": "Lotus",
+          "year": 2025,
+          "label": null,
+          "role": "Appearance"
+        },
+        {
+          "title": "Drop 7",
+          "year": 2025,
+          "label": null,
+          "role": "Appearance"
+        },
+        {
+          "title": "Paradise Now",
+          "year": 2025,
+          "label": null,
+          "role": "Appearance"
+        },
+        {
+          "title": "Satellite Business 2.0",
+          "year": 2024,
+          "label": null,
+          "role": "Appearance"
+        },
+        {
+          "title": "Moon Music",
+          "year": 2024,
+          "label": null,
+          "role": "Appearance"
+        },
+        {
+          "title": "We Pray",
+          "year": 2024,
+          "label": null,
+          "role": "Appearance"
+        },
+        {
+          "title": "No Thank You",
+          "year": 2023,
+          "label": null,
+          "role": "Appearance"
+        },
+        {
+          "title": "Septembre 2021 - 18 Titres",
+          "year": 2021,
+          "label": "Les Inrockuptibles",
+          "role": "Appearance",
+          "format": "CD, Comp"
+        },
+        {
+          "title": "Best-Of De L'année (Décembre 2021 -> 15 Titres)",
+          "year": 2021,
+          "label": "Les Inrockuptibles",
+          "role": "Appearance",
+          "format": "CD, Comp"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/m8L_o8jWDDfSbGTHFkmzbZKFqOWM89X7r_8auuFwfw4/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ0MDc5/NzEtMTQ5MDM5NTk2/NS00NDM0LmpwZWc.jpeg",
+          "width": 500,
+          "height": 500
+        }
+      ],
+      "externalUrls": [],
+      "imageTheme": "electronic",
+      "mbid": "bb342bf4-42f5-411d-b223-3aab66be2bd2",
+      "discogsId": 4407971,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/bb342bf4-42f5-411d-b223-3aab66be2bd2",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/4407971",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "bb342bf4-42f5-411d-b223-3aab66be2bd2",
+          "type": "Group",
+          "gender": null,
+          "country": "Gothenburg",
+          "disambiguation": "",
+          "lifeSpan": {
+            "begin": "1987",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 4407971,
+          "urls": [],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.694Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "sanli",
+      "name": "Sanli",
+      "displayName": "Sanli",
+      "country": "Canada (based in Kitchener)",
+      "aliases": [
+        "Alpsar",
+        "S. Alpsar",
+        "San Li",
+        "Sanli",
+        "Sanli Aspar"
+      ],
+      "genres": [
+        "Dubstep",
+        "Bass"
+      ],
+      "labels": [
+        "Not On Label",
+        "Groovejet Music",
+        "Silly Spider Music",
+        "Stik Records",
+        "Bionic Ballroom",
+        "Polystar (3)",
+        "Leaded, Fuel Records",
+        "Leaded, Leaded",
+        "Hit 'N' Hot Music",
+        "EMI",
+        "Fuel Records, EastWest",
+        "Universal Music Publishing GmbH",
+        "ZYX Music",
+        "DJ Beat Records",
+        "Steady Beat Records",
+        "Enter Records",
+        "Arcade",
+        "Ultra Europe"
+      ],
+      "bio": "Sanli is a Canada (based in Kitchener)-based electronic music DJ and producer Guitarist of Neutralia., known for Dubstep, Bass styles. Releases on labels including Not On Label, Groovejet Music, Silly Spider Music. 50 releases on Discogs.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "David's Song",
+          "year": 1999,
+          "label": "Not On Label",
+          "role": "Main",
+          "format": "12\", S/Sided, W/Lbl"
+        },
+        {
+          "title": "Mea Culpa",
+          "year": 1998,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Heart Of Glass",
+          "year": 2004,
+          "label": "Groovejet Music",
+          "role": "Remix",
+          "format": "12\""
+        },
+        {
+          "title": "The Chance",
+          "year": 2003,
+          "label": "Silly Spider Music",
+          "role": "Remix",
+          "format": "12\""
+        },
+        {
+          "title": "Stik DJ Works Vol. 01",
+          "year": 2001,
+          "label": "Stik Records",
+          "role": "Remix",
+          "format": "CD, Smplr"
+        },
+        {
+          "title": "Incoming",
+          "year": 2001,
+          "label": null,
+          "role": "Remix"
+        },
+        {
+          "title": "There You'll Be",
+          "year": 2001,
+          "label": null,
+          "role": "Remix"
+        },
+        {
+          "title": "Mitternacht",
+          "year": 2001,
+          "label": null,
+          "role": "Remix"
+        },
+        {
+          "title": "Dutch Drum Attack Remixes",
+          "year": 2000,
+          "label": null,
+          "role": "Remix"
+        },
+        {
+          "title": "Scotland The Brave",
+          "year": 1998,
+          "label": null,
+          "role": "Remix"
+        }
+      ],
+      "images": [],
+      "externalUrls": [],
+      "imageTheme": "dubstep",
+      "mbid": "a0cc7a96-679f-4354-9064-f2cee293375c",
+      "discogsId": 403546,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/a0cc7a96-679f-4354-9064-f2cee293375c",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/403546",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "a0cc7a96-679f-4354-9064-f2cee293375c",
+          "type": "Person",
+          "gender": "male",
+          "country": "Kitchener",
+          "disambiguation": "Guitarist of Neutralia",
+          "lifeSpan": {
+            "begin": "2000-07-08",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 403546,
+          "urls": [],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.695Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "ben-klock",
+      "name": "Ben Klock",
+      "displayName": "Ben Klock",
+      "country": "Germany",
+      "aliases": [
+        "Ben E. Clock",
+        "Benjamin Klock",
+        "Ben & Clock",
+        "Ben Clock",
+        "Ben E Clock",
+        "Klock"
+      ],
+      "genres": [
+        "techno",
+        "minimal techno",
+        "Techno",
+        "Dub Techno"
+      ],
+      "labels": [
+        "Layer (2)",
+        "Klockworks",
+        "Ostgut Ton",
+        "Stroboscopic Artefacts",
+        "FACT Magazine",
+        "Resident Advisor",
+        "CLR (2)",
+        "Trax (9)",
+        "BPitch Control",
+        "Memo, Memo",
+        "Memo",
+        "WMFRec",
+        "Dublab",
+        "Groove",
+        "Ovum Recordings",
+        "Echocord",
+        "Kitchen Spasm Podcast",
+        "TheErraticPodcast",
+        "Not On Label (Detroit Techno Militia Self-Released)"
+      ],
+      "bio": "Ben Klock born in 1972 in the west of Berlin was during the mid-nineties a resident of Cookies in berlin. At the beginning of the 00’s he almost retired from djing because he lost the fun during the Minimal/Micro House wave. In 2005 he was asked to become a Resident for Berghain. Playing there inspired him and revitalized his passion for Techno because of the total freedom what to play there and the extended play time. His style of DJ-ing can be described as Hard but always with a Heart. Runs the label .",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Layer One Remixes",
+          "year": 2025,
+          "label": "Layer (2)",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Layer One",
+          "year": 2024,
+          "label": "Layer (2)",
+          "role": "Main",
+          "format": "2x12\", Album"
+        },
+        {
+          "title": "Klockworks 34",
+          "year": 2022,
+          "label": "Klockworks",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Gateway",
+          "year": 2022,
+          "label": "Klockworks",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Lucy Reworks",
+          "year": 2020,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Subzero / Coney Island",
+          "year": 2019,
+          "label": "Ostgut Ton",
+          "role": "Main",
+          "format": "12\", Cle"
+        },
+        {
+          "title": "Phantom Studies",
+          "year": 2017,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Untitled",
+          "year": 2016,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "War Lullaby",
+          "year": 2015,
+          "label": "Stroboscopic Artefacts",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Fact Mix 470",
+          "year": 2014,
+          "label": "FACT Magazine",
+          "role": "Main",
+          "format": "File, MP3, Mixed, 192"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/gZNyxwvwp1cK9aTRPkYJUd79k9XknpHsVOC3CQsrXFU/rs:fit/g:sm/q:90/h:785/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTc3MDI1/LTE1NDQxMDY5NTAt/OTE0NC5qcGVn.jpeg",
+          "width": 600,
+          "height": 785
+        }
+      ],
+      "externalUrls": [
+        "https://www.facebook.com/benklock.official/",
+        "http://www.myspace.com/benklock",
+        "http://soundcloud.com/ben-klock",
+        "http://twitter.com/benklock",
+        "https://instagram.com/ben_klock",
+        "https://www.klockworks.de/"
+      ],
+      "imageTheme": "techno",
+      "mbid": "c5af0c3f-e401-43ed-a096-b504606a05cb",
+      "discogsId": 77025,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/c5af0c3f-e401-43ed-a096-b504606a05cb",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/77025",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "c5af0c3f-e401-43ed-a096-b504606a05cb",
+          "type": "Person",
+          "gender": "male",
+          "country": "DE",
+          "disambiguation": "German techno producer",
+          "lifeSpan": {
+            "begin": "1972",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 77025,
+          "urls": [
+            "https://www.facebook.com/benklock.official/",
+            "http://www.myspace.com/benklock",
+            "",
+            "http://soundcloud.com/ben-klock",
+            "http://twitter.com/benklock",
+            "https://instagram.com/ben_klock",
+            "https://www.klockworks.de/"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.696Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "marcel-dettmann",
+      "name": "Marcel Dettmann",
+      "displayName": "Marcel Dettmann",
+      "country": "Germany (based in Berlin)",
+      "aliases": [
+        "Marcel Dettman",
+        "Dettman",
+        "Dettmann",
+        "MD",
+        "Marcell Dettmann"
+      ],
+      "genres": [
+        "minimal techno",
+        "Techno"
+      ],
+      "labels": [
+        "Dekmantel",
+        "Seilscheibenpfeiler",
+        "Faith Beat",
+        "Bad Manners Records",
+        "Tsugi",
+        "The Corner",
+        "Ostgut Ton",
+        "CLR (2)",
+        "Kontra-Musik",
+        "Music Man Records",
+        "FACT Magazine",
+        "Diamonds & Pearls Music",
+        "Resident Advisor",
+        "Go Mag"
+      ],
+      "bio": "Born on the 26th of October 1977 in Pössneck (Thüringen), DJ since 1994, he is resident of the Berlin club and runs the labels and .",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Fear Of Programming Remixes",
+          "year": 2025,
+          "label": "Dekmantel",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Running Back Mastermix: Marcel Dettmann - Edits+Cuts",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Electric Drive",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Fear Of Programming",
+          "year": 2022,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Command EP",
+          "year": 2021,
+          "label": "Seilscheibenpfeiler",
+          "role": "Main",
+          "format": "12\", EP, Ltd, 180"
+        },
+        {
+          "title": "The State Of Art EP",
+          "year": 2021,
+          "label": "Faith Beat",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Bad Manners 3",
+          "year": 2019,
+          "label": "Bad Manners Records",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "October 2018",
+          "year": 2018,
+          "label": "Tsugi",
+          "role": "Main",
+          "format": "CD, Mixed, Promo"
+        },
+        {
+          "title": "Issue N° Twenty Two",
+          "year": 2018,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Test-File",
+          "year": 2018,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/3G273XwpLXm1m4BcWayY7mZ-PuRiMlmcU_k-fLZ6T04/rs:fit/g:sm/q:90/h:807/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ5NDEx/Ny0xNzUyODUzOTMz/LTQzMDgucG5n.jpeg",
+          "width": 600,
+          "height": 807
+        }
+      ],
+      "externalUrls": [
+        "http://www.facebook.com/marceldettmannofficial",
+        "http://www.instagram.com/MarcelDettmann",
+        "http://www.lastfm.de/music/Marcel+Dettmann?ac=marcel+dettmann",
+        "http://linktr.ee/Marceldettmann",
+        "http://www.myspace.com/marceldettmann",
+        "http://soundcloud.com/marceldettmann",
+        "http://twitter.com/MarcelDettmann"
+      ],
+      "imageTheme": "techno",
+      "mbid": "6d7238a1-f0bc-4408-93fc-8ec64c06f7af",
+      "discogsId": 494117,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/6d7238a1-f0bc-4408-93fc-8ec64c06f7af",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/494117",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "6d7238a1-f0bc-4408-93fc-8ec64c06f7af",
+          "type": "Person",
+          "gender": "male",
+          "country": "Berlin",
+          "disambiguation": "German techno producer",
+          "lifeSpan": {
+            "begin": "1977-10-28",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 494117,
+          "urls": [
+            "http://www.facebook.com/marceldettmannofficial",
+            "http://www.instagram.com/MarcelDettmann",
+            "http://www.lastfm.de/music/Marcel+Dettmann?ac=marcel+dettmann",
+            "http://linktr.ee/Marceldettmann",
+            "http://www.myspace.com/marceldettmann",
+            "http://soundcloud.com/marceldettmann",
+            "http://twitter.com/MarcelDettmann"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.697Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "rodhad",
+      "name": "Rødhåd",
+      "displayName": "Rødhåd",
+      "country": "Germany (based in Berlin)",
+      "aliases": [
+        "RDHD",
+        "Rodhad"
+      ],
+      "genres": [
+        "techno",
+        "dub techno",
+        "minimal techno",
+        "Techno",
+        "Industrial"
+      ],
+      "labels": [
+        "TSSRCT",
+        "WSNWG",
+        "WSNWG Back To Zero",
+        "Emika Records",
+        "Stoor",
+        "Dekmantel",
+        "Groove",
+        "Resident Advisor",
+        "Token",
+        "PH",
+        "Smoke Machine (2)",
+        "Rawax",
+        "Müller Records, Müller Records, Acid Orange",
+        "Faut Section"
+      ],
+      "bio": "Electronic music producer.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Artefacts",
+          "year": 2026,
+          "label": "TSSRCT",
+          "role": "Main",
+          "format": "Lathe, 10\", S/Edition"
+        },
+        {
+          "title": "Mauvier",
+          "year": 2026,
+          "label": "WSNWG",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Carmine",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Silvene",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Kinva",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Fabric Presents Rødhåd",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Lavande",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Ringwelt",
+          "year": 2023,
+          "label": "WSNWG Back To Zero",
+          "role": "Main",
+          "format": "12xFile, WAV, Album"
+        },
+        {
+          "title": "Revisited",
+          "year": 2023,
+          "label": "WSNWG Back To Zero",
+          "role": "Main",
+          "format": "11xFile, WAV, Album"
+        },
+        {
+          "title": "Verdurous",
+          "year": 2023,
+          "label": "WSNWG",
+          "role": "Main",
+          "format": "12\""
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/8CE12iG4dEivaZKih78tFjJg0Z-RBhsksVzbPwzqAN0/rs:fit/g:sm/q:90/h:900/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI3OTIz/MDQtMTY4NDc1NTcy/Ni02NDQ2LmpwZWc.jpeg",
+          "width": 600,
+          "height": 900
+        }
+      ],
+      "externalUrls": [
+        "http://www.residentadvisor.net/dj/rodhad",
+        "https://soundcloud.com/rodhad",
+        "https://www.facebook.com/R%C3%98DH%C3%85D-105490072868348/",
+        "https://www.instagram.com/rodhad_dystopian/",
+        "https://rodhad.bandcamp.com/"
+      ],
+      "imageTheme": "techno",
+      "mbid": "9f7479a6-217e-424d-b7ff-715c7a8096a8",
+      "discogsId": 2792304,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/9f7479a6-217e-424d-b7ff-715c7a8096a8",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/2792304",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "9f7479a6-217e-424d-b7ff-715c7a8096a8",
+          "type": "Person",
+          "gender": "male",
+          "country": "Berlin",
+          "disambiguation": "techno DJ, producer",
+          "lifeSpan": {
+            "begin": "1984",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 2792304,
+          "urls": [
+            "http://www.residentadvisor.net/dj/rodhad",
+            "https://soundcloud.com/rodhad",
+            "https://www.facebook.com/R%C3%98DH%C3%85D-105490072868348/",
+            "https://www.instagram.com/rodhad_dystopian/",
+            "https://rodhad.bandcamp.com/"
+          ],
+          "dataQuality": "Correct"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.700Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "chris-liebing",
+      "name": "Chris Liebing",
+      "displayName": "Chris Liebing",
+      "country": "Germany (based in Frankfurt)",
+      "aliases": [
+        "Christoph Liebing",
+        "Chris Liebings",
+        "CL",
+        "CL2",
+        "Chris Leibing",
+        "Chris Liebling",
+        "C. Leibing",
+        "C. Liebing",
+        "Chril Liebing",
+        "Chris",
+        "Chris 'Boog' Liebing",
+        "Chris Boog Liebing",
+        "Chris L.",
+        "Cjhristoph Liebing",
+        "DJ Chris Liebing",
+        "Liebing",
+        "Liebing, Chris"
+      ],
+      "genres": [
+        "schranz",
+        "hard techno",
+        "electronic",
+        "tech house",
+        "techno",
+        "minimal techno",
+        "Techno"
+      ],
+      "labels": [
+        "CLR (2)",
+        "CLR (2), CLR (2)",
+        "Mute",
+        "DJMag.de",
+        "Resident Advisor",
+        "Electric Deluxe"
+      ],
+      "bio": "German Techno producer, DJ, radio host and label founder. Born on 11 December 1968 in Gießen, Hessen (Hesse), Germany. Chris Liebing had his first Residency as a DJ in a small club called \"Red Brick\" 1991 in Giessen, near Frankfurt. Already beginning of 1995 the club had to close down and Chris began working for Eye -Q Records in Frankfurt. During that period, he met his friend and partner Andre Walter. Together they started to built up a studio and worked on music. In November 1995, Chris had a chance to play at the OMEN in Frankfurt and shortly after became Resident DJ. About a year later, influenced by his DJ-ing, he created \"fine Audio Recordings\" together with Under Cover Music Group. Chris gained first worldwide recognition with releases like Audio 07 and Audio 11. He joined the Cocoon Agency in Frankfurt to take care of his growing Booking Schedule and also in that same year, he moved on with his Labelwork and created his own record company \"CLR\". From then on the Labels CLR, Clretry, CLAU, Stigmata and Soap were distributed by Prime in England. In May 2001 he mixed a double CD and started working on his album for CLR. In 2002 he left Cocoon Booking to manage the Booking Schedule by himself. From now CLR is taking care also of his bookings. 2003: Chris Liebing won the German Dance Award in the category best national DJ, also nominated were Paul van Dyk, Sven Väth & Westbam.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Roy Batty EP",
+          "year": 2026,
+          "label": "CLR (2)",
+          "role": "Main",
+          "format": "2xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Higher Things",
+          "year": 2026,
+          "label": "CLR (2)",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Evolver",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Symphonie Des Seins EP",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Phantom Rider EP",
+          "year": 2025,
+          "label": "CLR (2)",
+          "role": "Main",
+          "format": "2xFile, FLAC, EP, 24-"
+        },
+        {
+          "title": "Collabs 3000 2025 EP",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "I Will Be A Devil Until I Am An Angel EP",
+          "year": 2023,
+          "label": "CLR (2), CLR (2)",
+          "role": "Main",
+          "format": "2xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Love Those Who Fight (Dub Mix)",
+          "year": 2023,
+          "label": "CLR (2)",
+          "role": "Main",
+          "format": "File, MP3, Single, 320"
+        },
+        {
+          "title": "Love Those Who Fight With Passion And Faith EP",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Mind Bender",
+          "year": 2022,
+          "label": "CLR (2)",
+          "role": "Main",
+          "format": "12\""
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/DW700AF0vYmfRhkNtolmy7MBWHuxlVO3WVZQp1NMNCE/rs:fit/g:sm/q:90/h:904/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE3MTEt/MTc3NzQxMTQ0NS04/NTgzLmpwZWc.jpeg",
+          "width": 600,
+          "height": 904
+        }
+      ],
+      "externalUrls": [
+        "http://chrisliebing.com/",
+        "https://www.facebook.com/chrisliebingofficial",
+        "https://soundcloud.com/chris-liebing"
+      ],
+      "imageTheme": "techno",
+      "mbid": "86a1c458-2d97-42cd-a142-a8fee30ae4a1",
+      "discogsId": 1711,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/86a1c458-2d97-42cd-a142-a8fee30ae4a1",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/1711",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "86a1c458-2d97-42cd-a142-a8fee30ae4a1",
+          "type": "Person",
+          "gender": "male",
+          "country": "Frankfurt am Main",
+          "disambiguation": "German DJ, producer and radio host",
+          "lifeSpan": {
+            "begin": "1968-12-11",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 1711,
+          "urls": [
+            "http://chrisliebing.com/",
+            "https://www.facebook.com/chrisliebingofficial",
+            "https://soundcloud.com/chris-liebing"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.701Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "len-faki",
+      "name": "Len Faki",
+      "displayName": "Len Faki",
+      "country": "Germany (based in Berlin)",
+      "aliases": [
+        "Len Faki presents Shit",
+        "Levent Faki",
+        "Faki",
+        "Faki, Len",
+        "Faki, Levent",
+        "L. Faki",
+        "LF",
+        "Len",
+        "Len Fari",
+        "Len Series",
+        "LenFaki"
+      ],
+      "genres": [
+        "Techno"
+      ],
+      "labels": [
+        "Figure",
+        "Resident Advisor",
+        "Monoïd, Monoïd",
+        "Feis, Feis",
+        "Len Series",
+        "Discoschrottplatz"
+      ],
+      "bio": "Techno DJ and producer based in Berlin since 2003. He is of Turkish origin. Owner of label .",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Zera",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Zig Zag",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Fusion Remixes 03/03",
+          "year": 2024,
+          "label": "Figure",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Fusion Remixes 02/03",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Fusion Remixes 01/03",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Fusion EP 02/03",
+          "year": 2023,
+          "label": "Figure",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Fusion",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Fusion EP 01/03",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Fusion EP 03/03",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Robot Evolution Remixes",
+          "year": 2019,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/FWM9pddIErReWoy2NSLtQ-LKpa6-TGqk5zEYo0UOfos/rs:fit/g:sm/q:90/h:512/w:512/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTg1MjAt/MTQ1ODA3MTE2NC04/ODAxLmpwZWc.jpeg",
+          "width": 512,
+          "height": 512
+        }
+      ],
+      "externalUrls": [
+        "http://www.lenseries.com",
+        "http://lenfaki.bandcamp.com",
+        "http://www.facebook.com/lenfakiofficial",
+        "http://www.instagram.com/len_faki",
+        "http://www.linktr.ee/len_faki",
+        "http://www.myspace.com/lenfaki",
+        "http://www.songkick.com/artists/774285-len-faki",
+        "http://soundcloud.com/lenfaki",
+        "http://twitter.com/LenFaki",
+        "http://de.wikipedia.org/wiki/Len_Faki"
+      ],
+      "imageTheme": "techno",
+      "mbid": "220f98db-2c1a-4c0c-a2d6-eebcc139d53c",
+      "discogsId": 8520,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/220f98db-2c1a-4c0c-a2d6-eebcc139d53c",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/8520",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "220f98db-2c1a-4c0c-a2d6-eebcc139d53c",
+          "type": "Person",
+          "gender": "male",
+          "country": "Berlin",
+          "disambiguation": "Levent Faki",
+          "lifeSpan": {
+            "begin": "1975-06-22",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 8520,
+          "urls": [
+            "http://www.lenseries.com",
+            "http://lenfaki.bandcamp.com",
+            "http://www.facebook.com/lenfakiofficial",
+            "http://www.instagram.com/len_faki",
+            "http://www.linktr.ee/len_faki",
+            "http://www.myspace.com/lenfaki",
+            "http://www.songkick.com/artists/774285-len-faki",
+            "http://soundcloud.com/lenfaki",
+            "http://twitter.com/LenFaki",
+            "http://de.wikipedia.org/wiki/Len_Faki",
+            "http://www.youtube.com/channel/UCvOeKI0iXHlFxdrBOcC0iRw"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.702Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "marcel-fengler",
+      "name": "Marcel Fengler",
+      "displayName": "Marcel Fengler",
+      "country": "",
+      "aliases": [],
+      "genres": [
+        "Techno"
+      ],
+      "labels": [
+        "Index Marcel Fengler",
+        "Dekmantel",
+        "XLR8R",
+        "CLR (2)",
+        "Resident Advisor",
+        "mnml ssgs",
+        "Burst Records (5)",
+        "Brawlcast",
+        "Crossing",
+        "Dynamic Reflection",
+        "Soma Quality Recordings",
+        "Materia",
+        "Dame-Music",
+        "Uncage",
+        "BRAWLcast",
+        "Not On Label (Rivet Self-released)",
+        "Concerns",
+        "Coincidence Records",
+        "Perc Trax",
+        "Kontra-Musik",
+        "Kontra-Musik, Music 4 Your Legs",
+        "TheErraticPodcast",
+        "OnlyHouseMusic"
+      ],
+      "bio": "Electronic music producer and DJ based in Berlin, Germany.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Unleashed",
+          "year": 2023,
+          "label": "Index Marcel Fengler",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Kyu EP",
+          "year": 2016,
+          "label": "Index Marcel Fengler",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Dekmantel Podcast 074",
+          "year": 2016,
+          "label": "Dekmantel",
+          "role": "Main",
+          "format": "File, MP3, Mixed, 320"
+        },
+        {
+          "title": "Remixes",
+          "year": 2014,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Podcast 303",
+          "year": 2013,
+          "label": "XLR8R",
+          "role": "Main",
+          "format": "File, MP3, Mixed, 320"
+        },
+        {
+          "title": "Fokus",
+          "year": 2013,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "CLR Podcast 183",
+          "year": 2012,
+          "label": "CLR (2)",
+          "role": "Main",
+          "format": "File, MP3, Mixed, 320"
+        },
+        {
+          "title": "Frantic EP",
+          "year": 2012,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Sphinx EP",
+          "year": 2011,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Thwack Remixes",
+          "year": 2011,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/WWmGS1srPUvN73BADkveWYVLpmnot7puz_qsi914ZrQ/rs:fit/g:sm/q:90/h:671/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTg3ODgw/My0xNjYzMjY3NTY2/LTg3MzMuanBlZw.jpeg",
+          "width": 600,
+          "height": 671
+        }
+      ],
+      "externalUrls": [
+        "https://www.facebook.com/MarcelFengler/",
+        "https://soundcloud.com/marcel-fengler",
+        "https://twitter.com/MarcelFengler"
+      ],
+      "imageTheme": "techno",
+      "mbid": "48973472-aad2-4fd4-b421-3a9328d92886",
+      "discogsId": 878803,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/48973472-aad2-4fd4-b421-3a9328d92886",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/878803",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "48973472-aad2-4fd4-b421-3a9328d92886",
+          "type": "Person",
+          "gender": null,
+          "country": null,
+          "disambiguation": "techno",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 878803,
+          "urls": [
+            "https://www.facebook.com/MarcelFengler/",
+            "https://soundcloud.com/marcel-fengler",
+            "https://twitter.com/MarcelFengler"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.703Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "monolake",
+      "name": "Monolake",
+      "displayName": "Monolake",
+      "country": "Germany",
+      "aliases": [],
+      "genres": [
+        "ambient techno",
+        "idm",
+        "minimal techno",
+        "ambient",
+        "dub techno",
+        "Techno",
+        "Dub Techno",
+        "Minimal"
+      ],
+      "labels": [
+        "Imbalance Computer Music",
+        "Monolake / Imbalance Computer Music",
+        "Not On Label (Monolake Self-released)",
+        "Monolake / Imbalance Computer Music, Monolake / Imbalance Computer Music"
+      ],
+      "bio": "Electronic music act based in Berlin, founded in 1995 by [a=Robert Henke] and [a=Gerhard Behles]. Monolake is now perpetuated by Henke alone while Behles focuses on running music software company Ableton, which they founded in 1999 together with Bernd Roggendorf.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Global Transport",
+          "year": 2024,
+          "label": "Imbalance Computer Music",
+          "role": "Main",
+          "format": "File, FLAC"
+        },
+        {
+          "title": "Selected Monolake Tracks 1996-2024",
+          "year": 2024,
+          "label": "Imbalance Computer Music",
+          "role": "Main",
+          "format": "Cass, Album, Comp, Ltd"
+        },
+        {
+          "title": "Studio",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Archaeopteryx",
+          "year": 2020,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "P A N",
+          "year": 2017,
+          "label": "Monolake / Imbalance Computer Music",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "C G",
+          "year": 2016,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "G M O ",
+          "year": 2016,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "VLSI",
+          "year": 2016,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "I A",
+          "year": 2015,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Dolores / VT-100",
+          "year": 2015,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/nnMBptJhafcghcPijhLGodxCibuRm69bczNfWQJUI68/rs:fit/g:sm/q:90/h:477/w:408/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTUzNC0x/NTE4NTE4NjU0LTI1/ODcuanBlZw.jpeg",
+          "width": 408,
+          "height": 477
+        }
+      ],
+      "externalUrls": [
+        "http://www.monolake.de/",
+        "http://www.myspace.com/monolakemusic",
+        "http://en.wikipedia.org/wiki/Monolake",
+        "https://roberthenke.bandcamp.com/"
+      ],
+      "imageTheme": "techno",
+      "mbid": "cedf92fe-eba1-45e2-ba16-b1b6af5169b8",
+      "discogsId": 534,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/cedf92fe-eba1-45e2-ba16-b1b6af5169b8",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/534",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "cedf92fe-eba1-45e2-ba16-b1b6af5169b8",
+          "type": "Group",
+          "gender": null,
+          "country": "DE",
+          "disambiguation": "",
+          "lifeSpan": {
+            "begin": "1995",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 534,
+          "urls": [
+            "http://www.monolake.de/",
+            "http://www.myspace.com/monolakemusic",
+            "http://en.wikipedia.org/wiki/Monolake",
+            "https://roberthenke.bandcamp.com/"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.704Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "sven-vath",
+      "name": "Sven Väth",
+      "displayName": "Sven Väth",
+      "country": "Germany",
+      "aliases": [
+        "Svan Väth",
+        "Sven Vath",
+        "Sven Vaeth",
+        "S Väth",
+        "S. Vaeth",
+        "S. Vath",
+        "S. Väth",
+        "S.V.",
+        "S.Väth",
+        "SVäth",
+        "Sven",
+        "Sven Uath",
+        "Sven V4th",
+        "Sven Varth",
+        "Sven Væth",
+        "SvenVäth",
+        "Swen Vath",
+        "Vaeth",
+        "Varth",
+        "Vath"
+      ],
+      "genres": [
+        "trance",
+        "electronic",
+        "techno",
+        "Techno",
+        "Trance"
+      ],
+      "labels": [
+        "Not On Label (Nicolas Barnes Self-released)",
+        "Lehmann Audio",
+        "Cocoon Recordings",
+        "Groove",
+        "Stereo Deluxe",
+        "Resident Advisor",
+        "Circus Recordings",
+        "Virgin"
+      ],
+      "bio": "Sven Väth (born: 26 October 1964 in Obertshausen, Germany), is one of Germany's most enduring and internationally known DJs / producers. Since he began DJ'ing at the famous [url=https://www.discogs.com/label/611374]Dorian Gray[/url] club at the age of 18, he co-founded trendsetting labels , and ; he ran the clubs [url=https://www.discogs.com/label/1863909]OMEN[/url] and Cocoon Club. He's been considered the #1 German DJ for ages, by many. One of his trademarks are his vinyl-only marathon sets.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Fusion",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Cala Llonga (Nicolas Barnes Edit)",
+          "year": 2025,
+          "label": "Not On Label (Nicolas Barnes Self-released)",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Retrospective Collection",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Flashback",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Electrica Salsa / Feiern",
+          "year": 2023,
+          "label": "Lehmann Audio",
+          "role": "Main",
+          "format": "7\", Ltd"
+        },
+        {
+          "title": "What I Used To Play",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Catharsis (Remixes)",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Catharsis",
+          "year": 2022,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Mystic Voices",
+          "year": 2022,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Feiern",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/IzX9eCNLlzJu2tx-zB5uHOMWlbMJJ4G4nwvt4uf_fIU/rs:fit/g:sm/q:90/h:778/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTc4MDk1MzE0MS0x/NTg5LmpwZWc.jpeg",
+          "width": 600,
+          "height": 778
+        }
+      ],
+      "externalUrls": [
+        "https://svenvaeth.bandcamp.com",
+        "https://www.facebook.com/SvenVaethOfficial",
+        "https://www.instagram.com/svenvaeth_official",
+        "https://x.com/svenvaeth",
+        "https://en.wikipedia.org/wiki/Sven_V%C3%A4th",
+        "https://www.youtube.com/channel/UC65i9IyVAW59S9C428ou8RA",
+        "https://soundcloud.com/svenvath-music"
+      ],
+      "imageTheme": "techno",
+      "mbid": "14008378-5900-4370-831e-3d17f9749caf",
+      "discogsId": 1328,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/14008378-5900-4370-831e-3d17f9749caf",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/1328",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "14008378-5900-4370-831e-3d17f9749caf",
+          "type": "Person",
+          "gender": "male",
+          "country": "DE",
+          "disambiguation": "",
+          "lifeSpan": {
+            "begin": "1964-10-26",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 1328,
+          "urls": [
+            "https://svenvaeth.bandcamp.com",
+            "https://www.facebook.com/SvenVaethOfficial",
+            "https://www.instagram.com/svenvaeth_official",
+            "https://x.com/svenvaeth",
+            "https://en.wikipedia.org/wiki/Sven_V%C3%A4th",
+            "https://www.youtube.com/channel/UC65i9IyVAW59S9C428ou8RA",
+            "https://soundcloud.com/svenvath-music"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.705Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "paul-kalkbrenner",
+      "name": "Paul Kalkbrenner",
+      "displayName": "Paul Kalkbrenner",
+      "country": "Germany",
+      "aliases": [
+        "Paul Klakbrenner",
+        "P. Kalkbrenner",
+        "P.Kalkbrenner",
+        "Paul",
+        "Paul."
+      ],
+      "genres": [
+        "germany",
+        "techno",
+        "electronica",
+        "downbeat",
+        "minimal techno",
+        "Techno",
+        "Electronic"
+      ],
+      "labels": [
+        "B1 Recordings, Columbia",
+        "Paul Kalkbrenner Musik",
+        "B1 Recordings",
+        "B1 Recordings, Sony Music",
+        "Not On Label (Paul Kalkbrenner Self-released)",
+        "Sony Music Entertainment International Limited",
+        "Not On Label (Kyau & Albert Self-released)",
+        "Resident Advisor",
+        "Suol",
+        "BPitch Control",
+        "Arte Éditions"
+      ],
+      "bio": "Born June 11, 1977 in Leipzig. Techno Artist from Berlin, Germany. Brother of [a=Fritz Kalkbrenner].",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Dreaming On",
+          "year": 2025,
+          "label": "B1 Recordings, Columbia",
+          "role": "Main",
+          "format": "File, WAV, Single, 24-"
+        },
+        {
+          "title": "Ninety-Two",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Que Ce Soit Clair",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "The Essence",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "VIER: DREI",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Kabelmann",
+          "year": 2024,
+          "label": "Paul Kalkbrenner Musik",
+          "role": "Main",
+          "format": "2xFile, WAV, EP"
+        },
+        {
+          "title": "Schwer",
+          "year": 2023,
+          "label": "Paul Kalkbrenner Musik",
+          "role": "Main",
+          "format": "File, WAV, Single"
+        },
+        {
+          "title": "Graf Zahl",
+          "year": 2021,
+          "label": "B1 Recordings",
+          "role": "Main",
+          "format": "File, AIFF, MP3, WAV, Single, 320"
+        },
+        {
+          "title": "Si Soy Fuego",
+          "year": 2021,
+          "label": "B1 Recordings",
+          "role": "Main",
+          "format": "File, WAV, Single"
+        },
+        {
+          "title": "Speak Up EP",
+          "year": 2020,
+          "label": "B1 Recordings, Sony Music",
+          "role": "Main",
+          "format": "12\", EP, Ltd"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/HCpSM2Dvh87rGP2UFZ5kjp3JuiDAZQNRk66l8ILNuHw/rs:fit/g:sm/q:90/h:662/w:565/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1NTkz/LTE1MTc2NzI3NTMt/NzI4Mi5qcGVn.jpeg",
+          "width": 565,
+          "height": 662
+        }
+      ],
+      "externalUrls": [
+        "http://paulkalkbrenner.net",
+        "https://pk-merch.de/",
+        "http://www.facebook.com/paulkalkbrenner",
+        "http://www.instagram.com/iampaulkalkbrenner",
+        "http://twitter.com/paulkalkbrenner",
+        "http://www.myspace.com/paulkalkbrenner",
+        "http://soundcloud.com/paulkalkbrenner",
+        "https://www.mixcloud.com/paulkalkbrenner/",
+        "http://www.youtube.com/paulkalkbrenner",
+        "http://en.wikipedia.org/wiki/Paul_Kalkbrenner"
+      ],
+      "imageTheme": "techno",
+      "mbid": "a5f92d47-b562-4582-b267-71963a515f4c",
+      "discogsId": 15593,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/a5f92d47-b562-4582-b267-71963a515f4c",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/15593",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "a5f92d47-b562-4582-b267-71963a515f4c",
+          "type": "Person",
+          "gender": "male",
+          "country": "DE",
+          "disambiguation": "",
+          "lifeSpan": {
+            "begin": "1977-06-12",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 15593,
+          "urls": [
+            "http://paulkalkbrenner.net",
+            "https://pk-merch.de/",
+            "http://www.facebook.com/paulkalkbrenner",
+            "http://www.instagram.com/iampaulkalkbrenner",
+            "http://twitter.com/paulkalkbrenner",
+            "http://www.myspace.com/paulkalkbrenner",
+            "http://soundcloud.com/paulkalkbrenner",
+            "https://www.mixcloud.com/paulkalkbrenner/",
+            "http://www.youtube.com/paulkalkbrenner",
+            "http://en.wikipedia.org/wiki/Paul_Kalkbrenner",
+            "https://www.mixesdb.com/w/Category:Paul_Kalkbrenner"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.706Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "surgeon",
+      "name": "Surgeon",
+      "displayName": "Surgeon",
+      "country": "United Kingdom",
+      "aliases": [
+        "The Surgeon",
+        "DJ Surgeon",
+        "Surgeon 2000"
+      ],
+      "genres": [
+        "birmingham sound",
+        "electronic",
+        "industrial techno",
+        "techno",
+        "uk",
+        "english",
+        "british",
+        "Techno",
+        "Industrial"
+      ],
+      "labels": [
+        "Not On Label (Surgeon Self-released)",
+        "SRX",
+        "Dekmantel",
+        "Dynamic Tension Records",
+        "Tresor",
+        "Resident Advisor",
+        "Spannered",
+        "Wax Treatment",
+        "Electric Deluxe",
+        "FACT Magazine",
+        "Downwards",
+        "Warp Records",
+        "Counterbalance",
+        "Maniac Love"
+      ],
+      "bio": "English electronic musician and DJ. Married to [a3405581].",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "No Matter What You Do In Life, Always Keep Death By Your Side",
+          "year": 2025,
+          "label": "Not On Label (Surgeon Self-released)",
+          "role": "Main",
+          "format": "File, FLAC"
+        },
+        {
+          "title": "Shell~Wave",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Crash Recoil",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Scoundrel",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Rare & Unreleased 1999 - 2008",
+          "year": 2020,
+          "label": "SRX",
+          "role": "Main",
+          "format": "4xFile, FLAC, EP"
+        },
+        {
+          "title": "THX​-​1138​/​9",
+          "year": 2020,
+          "label": "SRX",
+          "role": "Main",
+          "format": "4xFile, FLAC, EP"
+        },
+        {
+          "title": "Europa Code",
+          "year": 2020,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Screw The Roses Unreleased Sessions",
+          "year": 2020,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "The Golden Sea",
+          "year": 2020,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Raw Trax 1",
+          "year": 2019,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/nm6fwWfS32xTUEE5ULlU81Hds0LmES1WjypoTZ3_1Og/rs:fit/g:sm/q:90/h:404/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTExMTQt/MTc0NjMxMjkxNS0y/OTQ2LmpwZWc.jpeg",
+          "width": 590,
+          "height": 404
+        }
+      ],
+      "externalUrls": [
+        "http://www.dj-surgeon.com",
+        "http://dj-surgeon.bandcamp.com",
+        "http://dj-surgeon.blogspot.com",
+        "http://bsky.app/profile/dj-surgeon.bandcamp.com",
+        "http://equipboard.com/pros/surgeon",
+        "http://www.instagram.com/tony_surgeon",
+        "http://linktr.ee/tony_surgeon",
+        "http://soundcloud.com/dynamic-tension",
+        "http://twitter.com/tony_surgeon",
+        "http://www.youtube.com/user/youknowiloveyou"
+      ],
+      "imageTheme": "techno",
+      "mbid": "dcc5653c-3e3f-4666-a520-45fb032694a7",
+      "discogsId": 1114,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/dcc5653c-3e3f-4666-a520-45fb032694a7",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/1114",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "dcc5653c-3e3f-4666-a520-45fb032694a7",
+          "type": "Person",
+          "gender": "male",
+          "country": "GB",
+          "disambiguation": "UK electronic musician & DJ Anthony Child",
+          "lifeSpan": {
+            "begin": "1971-05-01",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 1114,
+          "urls": [
+            "http://www.dj-surgeon.com",
+            "http://dj-surgeon.bandcamp.com",
+            "http://dj-surgeon.blogspot.com",
+            "http://bsky.app/profile/dj-surgeon.bandcamp.com",
+            "http://equipboard.com/pros/surgeon",
+            "http://www.instagram.com/tony_surgeon",
+            "http://linktr.ee/tony_surgeon",
+            "http://soundcloud.com/dynamic-tension",
+            "http://twitter.com/tony_surgeon",
+            "http://www.youtube.com/user/youknowiloveyou"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.708Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "blawan",
+      "name": "Blawan",
+      "displayName": "Blawan",
+      "country": "United Kingdom",
+      "aliases": [
+        "ブラワン"
+      ],
+      "genres": [
+        "electronic",
+        "techno",
+        "industrial techno",
+        "Techno",
+        "Industrial"
+      ],
+      "labels": [
+        "Owsla, Atlantic",
+        "FACT Magazine",
+        "Restoration Records",
+        "Folkwood",
+        "FACT Mix",
+        "Lea Porcelain Recordings",
+        "Soma Quality Recordings",
+        "Non Series",
+        "Zehnin",
+        "The Monument Podcast",
+        "Manhigh",
+        "Wax Treatment",
+        "BRAWLcast",
+        "Tripeo",
+        "Earwiggle",
+        "Data Transmission",
+        "Brawlcast",
+        "URB Magazine"
+      ],
+      "bio": "British DJ (born 1987 in Doncaster) and producer based in Berlin, Germany ------- Through both time in the studio and time on the road, Jamie Roberts has dedicated the last decade to developing his alias, Blawan – and in the process, he’s created a universe within techno that’s all his own. Roberts grew up in Barnsley, UK and from an early age was etching out his musical path as a drummer – a relic of the past which should come as no surprise to anyone familiar with his productions. Indeed, his discography as Blawan illuminates a natural fluency for rhythm, whether straight, stridently syncopated, or swinging somewhere in between. His other aliases, Kilner and Bored Young Adults, like his collaborations with Pariah as Karenn and with Surgeon as Trade, have provided additional bandwidth for experimentation. Having released across the board of rippling jet-black minimalism, jubilant two-step vocal cuts, and savant grooving techno, the labels Roberts has worked with are appropriately varied: Hessle Audio, R&S, Clone’s Basement Series, Hinge Finger, and Black Sun as Blawan, plus The Trilogy Tapes and Avian under his other solo names. Roberts’ own label, TERNESC, was established in 2015 and has served as the home for his last five releases as Blawan. Having made the move to Berlin in 2015, his analogue-driven studio production and formidable live sets have propelled Roberts into exciting new directions, even as he maintains expert command of more traditional dance floor environments from behind the decks. His latest offering, the full-length Wet Will Always Dry, dropped in June 2018. It’s a breakthrough moment in Roberts’ discipline of auditory alchemy, and a tour-de-force of ambitious, nuanced techno for fans following his ever-explorative career.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Thistle",
+          "year": 2026,
+          "label": "Owsla, Atlantic",
+          "role": "Main",
+          "format": "File, WAV, Single"
+        },
+        {
+          "title": "SickElixir",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "BouQ",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Dismantled Into Juice",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Woke Up Right Handed EP",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Soft Waahls EP",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Immulsion",
+          "year": 2020,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Make A Goose EP",
+          "year": 2020,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Many Many Pings",
+          "year": 2019,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Wet Will Always Dry",
+          "year": 2018,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/pt0fODNKhdzgq63lmWFgtDx0JfVBWwyY4mUS4MhXEJ0/rs:fit/g:sm/q:90/h:684/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE2MjIz/MzktMTcxNzc2MzIy/MS01NDk2LmpwZWc.jpeg",
+          "width": 600,
+          "height": 684
+        }
+      ],
+      "externalUrls": [
+        "http://www.facebook.com/pages/Blawan/115678128712",
+        "https://soundcloud.com/ternesc",
+        "http://www.twitter.com/blawan",
+        "https://blawan.bandcamp.com",
+        "https://thequietus.com/interviews/blawan-jamie-roberts-interview/"
+      ],
+      "imageTheme": "techno",
+      "mbid": "c27d4389-390e-497c-9a41-dd446ace742c",
+      "discogsId": 1622339,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/c27d4389-390e-497c-9a41-dd446ace742c",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/1622339",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "c27d4389-390e-497c-9a41-dd446ace742c",
+          "type": "Person",
+          "gender": "male",
+          "country": "GB",
+          "disambiguation": "British techno producer & DJ",
+          "lifeSpan": {
+            "begin": "1987",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 1622339,
+          "urls": [
+            "http://www.facebook.com/pages/Blawan/115678128712",
+            "https://soundcloud.com/ternesc",
+            "http://www.twitter.com/blawan",
+            "https://blawan.bandcamp.com",
+            "https://thequietus.com/interviews/blawan-jamie-roberts-interview/"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.709Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "perc",
+      "name": "Perc",
+      "displayName": "Perc",
+      "country": "UK (based in London)",
+      "aliases": [
+        "Ali Perc"
+      ],
+      "genres": [
+        "idm",
+        "noise",
+        "industrial techno",
+        "Techno",
+        "Industrial"
+      ],
+      "labels": [
+        "Perc Trax",
+        "Void +1 Recordings",
+        "Hypercolour",
+        "Analogue",
+        "Crisis Of Man",
+        "Dekmantel",
+        "Stroboscopic Artefacts",
+        "Perc Trax Limited",
+        "Passarella",
+        "Resident Advisor",
+        "FACT Magazine",
+        "Submit",
+        "Sleaze Records, Sleaze Records",
+        "Electric Deluxe"
+      ],
+      "bio": "Perc, aka Ali Wells, is an internationally touring DJ and label owner. Perc founded his label, , in 2004 as a vehicle for his own productions, but has developed a roster that now includes several other artists.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Microtrax EP",
+          "year": 2026,
+          "label": "Perc Trax",
+          "role": "Main",
+          "format": "5xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Loose Fit Refitted",
+          "year": 2025,
+          "label": "Void +1 Recordings",
+          "role": "Main",
+          "format": "4xFile, MP3, 320"
+        },
+        {
+          "title": "The Cut Off Remixed EP2",
+          "year": 2025,
+          "label": "Perc Trax",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Temperature's Rising 2025",
+          "year": 2025,
+          "label": "Perc Trax",
+          "role": "Main",
+          "format": "12\", Pin"
+        },
+        {
+          "title": "The Drums",
+          "year": 2025,
+          "label": "Hypercolour",
+          "role": "Main",
+          "format": "2xFile, MP3, Single, 320"
+        },
+        {
+          "title": "Soft Launch",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "The Cut Off Remixed EP1",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Static ",
+          "year": 2024,
+          "label": "Perc Trax",
+          "role": "Main",
+          "format": "2xFile, MP3, 320"
+        },
+        {
+          "title": "The Cut Off",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Perc • Remco Beekwilder • UVB • Jerm",
+          "year": 2023,
+          "label": "Analogue",
+          "role": "Main",
+          "format": "12\""
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/4YeHHBCLVPPg5MVilLVe7L6knqBmsD5JCjJJdXVuXEY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTUzOTgw/LTE2MzAxNzk4OTEt/ODUwNi5qcGVn.jpeg",
+          "width": 600,
+          "height": 600
+        }
+      ],
+      "externalUrls": [
+        "http://perctrax.bandcamp.com/",
+        "http://www.facebook.com/PercTrax",
+        "http://www.myspace.com/perctrax",
+        "http://www.twitter.com/perctrax"
+      ],
+      "imageTheme": "techno",
+      "mbid": "7693c255-9697-4ba2-ac70-8bbbe3f9f7eb",
+      "discogsId": 53980,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/7693c255-9697-4ba2-ac70-8bbbe3f9f7eb",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/53980",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "7693c255-9697-4ba2-ac70-8bbbe3f9f7eb",
+          "type": "Person",
+          "gender": "male",
+          "country": "London",
+          "disambiguation": "techno producer",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 53980,
+          "urls": [
+            "http://perctrax.bandcamp.com/",
+            "http://www.facebook.com/PercTrax",
+            "http://www.myspace.com/perctrax",
+            "http://www.twitter.com/perctrax"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.709Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "ben-ufo",
+      "name": "Ben UFO",
+      "displayName": "Ben UFO",
+      "country": "United Kingdom",
+      "aliases": [
+        "Ben Thomson",
+        "Ben UFO"
+      ],
+      "genres": [
+        "house",
+        "techno",
+        "dj",
+        "uk bass",
+        "post-dubstep",
+        "Techno",
+        "Dubstep"
+      ],
+      "labels": [
+        "Melodies International",
+        "Cav Empt",
+        "Meandyou",
+        "Dekmantel",
+        "Not On Label (Ben Ufo Self-released)",
+        "Blowing Up The Workshop",
+        "Not On Label",
+        "Resident Advisor",
+        "Truants",
+        "Little White Earbuds",
+        "Boiler Room",
+        "The Trilogy Tapes",
+        "FACT Magazine"
+      ],
+      "bio": "British DJ. Founded with [a=Pearson Sound] and [a=Pangaea (4)] in 2007.",
+      "stats": {
+        "releaseCount": 23
+      },
+      "releases": [
+        {
+          "title": "Melodies Record Club 002",
+          "year": 2021,
+          "label": "Melodies International",
+          "role": "Main",
+          "format": "12\", RM"
+        },
+        {
+          "title": "Cav Empt tape",
+          "year": 2020,
+          "label": "Cav Empt",
+          "role": "Main",
+          "format": "Cass, Mixed, C90"
+        },
+        {
+          "title": "Live At Soup Kitchen 25.01.2013",
+          "year": 2018,
+          "label": "Meandyou",
+          "role": "Main",
+          "format": "Cass, Ltd, Mixed, Mixtape"
+        },
+        {
+          "title": "Dekmantel Podcast 154B",
+          "year": 2018,
+          "label": "Dekmantel",
+          "role": "Main",
+          "format": "File, MP3, Mixed, 320"
+        },
+        {
+          "title": "Dekmantel Podcast 154A",
+          "year": 2017,
+          "label": "Dekmantel",
+          "role": "Main",
+          "format": "File, MP3, Mixed, 320"
+        },
+        {
+          "title": "Live At Unit, Tokyo - 23.04.16",
+          "year": 2016,
+          "label": "Not On Label (Ben Ufo Self-released)",
+          "role": "Main",
+          "format": "File, MP3, Mixed, 320"
+        },
+        {
+          "title": "Live At Twitch, Belfast 16.03.16",
+          "year": 2016,
+          "label": "Not On Label (Ben Ufo Self-released)",
+          "role": "Main",
+          "format": "File, MP3, Mixed, 320"
+        },
+        {
+          "title": "Jungle At Bloc 2015",
+          "year": 2016,
+          "label": "Blowing Up The Workshop",
+          "role": "Main",
+          "format": "File, MP3, Mixed, 320"
+        },
+        {
+          "title": "43:44 / 44:32 ",
+          "year": 2016,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Joy Orbison / Ben Ufo & Pearson Sound",
+          "year": 2015,
+          "label": "Not On Label",
+          "role": "Main",
+          "format": "Cass, Ltd, Mixed"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/9iLOqlr3tSCdmIzmCVoC5yjjbR2U9yb0K4riZH6MmII/rs:fit/g:sm/q:90/h:399/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIwNzEz/NTItMTQ2NDM4ODg4/Ny00MjQwLmpwZWc.jpeg",
+          "width": 600,
+          "height": 399
+        }
+      ],
+      "externalUrls": [
+        "http://www.hessleaudio.com",
+        "http://www.facebook.com/BenUFO.DJ",
+        "http://www.setlist.fm/setlists/ben-ufo-3def147.html",
+        "http://soundcloud.com/benufo",
+        "http://twitter.com/benufo",
+        "http://www.last.fm/music/Ben+UFO",
+        "https://www.songkick.com/artists/2529421-ben-ufo"
+      ],
+      "imageTheme": "techno",
+      "mbid": "d355730f-895c-4a9a-951b-d36c3b16a8a2",
+      "discogsId": 2071352,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/d355730f-895c-4a9a-951b-d36c3b16a8a2",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/2071352",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "d355730f-895c-4a9a-951b-d36c3b16a8a2",
+          "type": "Person",
+          "gender": "male",
+          "country": "GB",
+          "disambiguation": "",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 2071352,
+          "urls": [
+            "http://www.hessleaudio.com",
+            "http://www.facebook.com/BenUFO.DJ",
+            "http://www.setlist.fm/setlists/ben-ufo-3def147.html",
+            "http://soundcloud.com/benufo",
+            "http://twitter.com/benufo",
+            "http://www.last.fm/music/Ben+UFO",
+            "https://www.songkick.com/artists/2529421-ben-ufo"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.710Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "regis",
+      "name": "Regis",
+      "displayName": "Regis",
+      "country": "United Kingdom",
+      "aliases": [
+        "regis - uk",
+        "K. Regis"
+      ],
+      "genres": [
+        "electronic",
+        "techno",
+        "birmingham sound",
+        "industrial techno",
+        "Techno"
+      ],
+      "labels": [
+        "Resident Advisor",
+        "Downwards",
+        "Mute",
+        "Not On Label (Regis Self-released)",
+        "Arche | DNS",
+        "Hospital Productions",
+        "Ohm Resistance",
+        "Cititrax",
+        "Blackest Ever Black",
+        "Mount Analog",
+        "Downwards, Downwards, Downwards",
+        "Not On Label"
+      ],
+      "bio": "DJ and producer from UK. He is one of the founders of the labels , , , as well as, the distribution company .",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "RA.978 Sandwell District",
+          "year": 2025,
+          "label": "Resident Advisor",
+          "role": "Main",
+          "format": "File, MP3, Mixed, 320"
+        },
+        {
+          "title": "Νοσοκομείο Των Κτηνών (Hospital For Beasts)",
+          "year": 2023,
+          "label": "Downwards",
+          "role": "Main",
+          "format": "Cass, Album, Ltd"
+        },
+        {
+          "title": "Scripture Of Love (Single Edit)",
+          "year": 2022,
+          "label": "Mute",
+          "role": "Main",
+          "format": "File, AAC, Single, 256"
+        },
+        {
+          "title": "A Hollow Minute",
+          "year": 2021,
+          "label": "Not On Label (Regis Self-released)",
+          "role": "Main",
+          "format": "File, AIFF"
+        },
+        {
+          "title": "Let The Night Return",
+          "year": 2021,
+          "label": "Arche | DNS",
+          "role": "Main",
+          "format": "Ultra HD Blu-ray, 4K, Ltd"
+        },
+        {
+          "title": "A Hollow Moment EP",
+          "year": 2021,
+          "label": "Downwards",
+          "role": "Main",
+          "format": "3xFile, WAV, EP"
+        },
+        {
+          "title": "Beyond The Reach Of Time EP - 20 Y EPM (20 Years Of Music) 04",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "The Floor Will Rise",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Killing European Sons",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "CUB",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/rOReA8Gz68Cx8R5V5a1LdRBpY8L6bU05jGhsptxY-Ew/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTExNjUt/MTQwODM1MDk2NC0x/MTQxLmpwZWc.jpeg",
+          "width": 600,
+          "height": 450
+        }
+      ],
+      "externalUrls": [
+        "http://regis-dns.bandcamp.com",
+        "http://www.instagram.com/regis.dns",
+        "http://en.wikipedia.org/wiki/Regis_(musician)",
+        "http://www.youtube.com/channel/UCSGSMkgmWDORBY5VbQ4kjzg"
+      ],
+      "imageTheme": "techno",
+      "mbid": "8c68233c-c4e2-495d-8ee1-120a600edcc0",
+      "discogsId": 1165,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/8c68233c-c4e2-495d-8ee1-120a600edcc0",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/1165",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "8c68233c-c4e2-495d-8ee1-120a600edcc0",
+          "type": "Person",
+          "gender": "male",
+          "country": "GB",
+          "disambiguation": "UK techno producer Karl O’Connor",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 1165,
+          "urls": [
+            "http://regis-dns.bandcamp.com",
+            "",
+            "http://www.instagram.com/regis.dns",
+            "",
+            "http://en.wikipedia.org/wiki/Regis_(musician)",
+            "http://www.youtube.com/channel/UCSGSMkgmWDORBY5VbQ4kjzg"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.711Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "james-ruskin",
+      "name": "James Ruskin",
+      "displayName": "James Ruskin",
+      "country": "United Kingdom",
+      "aliases": [
+        "James Robert Ruskin",
+        "J. Ruskin",
+        "James",
+        "James Rushkin",
+        "R",
+        "Ruskin"
+      ],
+      "genres": [
+        "techno",
+        "Techno"
+      ],
+      "labels": [
+        "Not On Label (Hollen Self-released)",
+        "Blueprint",
+        "Resident Advisor",
+        "Tresor"
+      ],
+      "bio": "Croydon-born (1972) and -based techno producer and DJ. James Ruskin comes from a background that first put him in touch with hip hop and electro, and later with the emerging Detroit techno scenes. This inspired him to become a DJ in 1991 and venture into production with studio partner [a=Richard Polson] by 1994. Founded with Polson in 1996. As Blueprint grew, he delivered his first solo releases and appeared elsewhere as remixer and co-producer. He was also resident DJ at Circulation.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Work (Hollen Rework)",
+          "year": 2024,
+          "label": "Not On Label (Hollen Self-released)",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "From The Ashes",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Nan Nife",
+          "year": 2021,
+          "label": "Blueprint",
+          "role": "Main",
+          "format": "File, WAV"
+        },
+        {
+          "title": "Shortcut",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Sketch",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Chapter One",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Basement Jams 2",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Basement Jams",
+          "year": 2020,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Consumer Patterns",
+          "year": 2020,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Siklikal EP",
+          "year": 2019,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/QEkh0JCib_UptZgP8b0ex2qhdvF1wRh5RJs4YNCC_Nk/rs:fit/g:sm/q:90/h:356/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTExNzUt/MTQwMjk4NDM2NC04/MTI3LmpwZWc.jpeg",
+          "width": 500,
+          "height": 356
+        }
+      ],
+      "externalUrls": [
+        "http://twitter.com/James_Ruskin",
+        "http://soundcloud.com/jamesruskin"
+      ],
+      "imageTheme": "techno",
+      "mbid": "9f50b54d-4eb7-4d20-9d6d-69220075005f",
+      "discogsId": 1175,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/9f50b54d-4eb7-4d20-9d6d-69220075005f",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/1175",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "9f50b54d-4eb7-4d20-9d6d-69220075005f",
+          "type": "Person",
+          "gender": "male",
+          "country": "GB",
+          "disambiguation": "British techno producer",
+          "lifeSpan": {
+            "begin": "1972",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 1175,
+          "urls": [
+            "http://twitter.com/James_Ruskin",
+            "http://soundcloud.com/jamesruskin"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.712Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "luke-slater",
+      "name": "Luke Slater",
+      "displayName": "Luke Slater",
+      "country": "United Kingdom",
+      "aliases": [
+        "Luke Simon Arthur Slater",
+        "L Slater",
+        "L. Slater",
+        "L.Slater",
+        "Luker Slater",
+        "Slater",
+        "Slater, Luke"
+      ],
+      "genres": [
+        "Techno"
+      ],
+      "labels": [
+        "Ostgut Ton",
+        "Tsugi",
+        "Phonographe Corp",
+        "Fabric (2)",
+        "Mute",
+        "Slut Smalls",
+        "Peacefrog Records",
+        "Missile Records",
+        "DMC, DMC, DMC",
+        "Sabonoise",
+        "Hardfloor",
+        "Ghostly International"
+      ],
+      "bio": "Luke Slater (b. 12 June 1968, Reading, Berkshire, England) is an English electronic musician, DJ and record producer from Crawley, UK. He is one of the UK's longest standing techno producers and DJs, active since the late 1980s when he worked in the Mi Price record shop. He was involved with the founding of the shop and label, and went on to release on a number of seminal labels. Was also a resident DJ at Troll. In 2006 he set up .",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "The Dissent EP",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Dialogue",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Berghain Fünfzehn",
+          "year": 2020,
+          "label": "Ostgut Ton",
+          "role": "Main",
+          "format": "File, WAV, Mixed"
+        },
+        {
+          "title": "Berghain Fünfzehn",
+          "year": 2020,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Love Remixes",
+          "year": 2019,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Luke Slater Presents L.B. Dub Corp",
+          "year": 2018,
+          "label": "Tsugi",
+          "role": "Main",
+          "format": "CD, Mixed, Promo, Car"
+        },
+        {
+          "title": "PHNCST169 - Welcome to the Rave - 2003",
+          "year": 2014,
+          "label": "Phonographe Corp",
+          "role": "Main",
+          "format": "File, MP3, Mixed"
+        },
+        {
+          "title": "She Showed Me Heaven (Remixes)",
+          "year": 2008,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Fabric 32 (Radio Mix)",
+          "year": 2007,
+          "label": "Fabric (2)",
+          "role": "Main",
+          "format": "CDr, Mixed, Promo"
+        },
+        {
+          "title": "Fabric 32",
+          "year": 2007,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/_wOLLBvdqFxwqW9F0nOYzTnQ4xshZE9fHLwkLwtyiMA/rs:fit/g:sm/q:90/h:397/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1Nzkt/MTcwNzk5NTI3Ny00/MTgxLmpwZWc.jpeg",
+          "width": 600,
+          "height": 397
+        }
+      ],
+      "externalUrls": [
+        "https://www.lukeslater.com",
+        "https://www.lukeslater.de",
+        "https://www.facebook.com/LukeSlaterPlanetaryAssaultSystems",
+        "https://www.last.fm/music/Luke+Slater",
+        "https://www.myspace.com/thereallukeslater",
+        "https://lukeslater.bandcamp.com",
+        "https://soundcloud.com/luke-slater",
+        "https://planetaryassaultsystems.tumblr.com",
+        "https://x.com/reallukeslater",
+        "https://en.wikipedia.org/wiki/Luke_Slater"
+      ],
+      "imageTheme": "techno",
+      "mbid": "2dea2870-5f17-42f7-ac32-d76ccde70dbd",
+      "discogsId": 1579,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/2dea2870-5f17-42f7-ac32-d76ccde70dbd",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/1579",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "2dea2870-5f17-42f7-ac32-d76ccde70dbd",
+          "type": "Person",
+          "gender": "male",
+          "country": "GB",
+          "disambiguation": "British techno producer",
+          "lifeSpan": {
+            "begin": "1968-06-12",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 1579,
+          "urls": [
+            "https://www.lukeslater.com",
+            "https://www.lukeslater.de",
+            "https://www.facebook.com/LukeSlaterPlanetaryAssaultSystems",
+            "https://www.last.fm/music/Luke+Slater",
+            "https://www.myspace.com/thereallukeslater",
+            "https://lukeslater.bandcamp.com",
+            "",
+            "",
+            "https://soundcloud.com/luke-slater",
+            "https://planetaryassaultsystems.tumblr.com",
+            "https://x.com/reallukeslater",
+            "https://en.wikipedia.org/wiki/Luke_Slater",
+            "https://www.youtube.com/channel/UC_tBrqG-Zctp44ljcXkyctQ"
+          ],
+          "dataQuality": "Correct"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.713Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "slam",
+      "name": "Slam",
+      "displayName": "Slam",
+      "country": "United Kingdom",
+      "aliases": [
+        "Slam!",
+        "S L A M",
+        "SLAM",
+        "Sl@m",
+        "The Slam Boys"
+      ],
+      "genres": [
+        "electronic",
+        "scottish",
+        "british",
+        "dance and electronica",
+        "Techno"
+      ],
+      "labels": [
+        "Soma Quality Recordings"
+      ],
+      "bio": "DJ and producer duo from Glasgow, Scotland. Co-founders of and promoters of the Atlantis (1989-92) & Slam (1991-) parties in Glasgow. They met in 1986 in Sheffield, where Orde was studying Geography at university and Stuart was working in a bar. The band’s name was inspired by [url=http://www.discogs.com/release/1165]Phuture[/url]'s legendary track of the same name.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Drumtrax Vol. 2",
+          "year": 2026,
+          "label": "Soma Quality Recordings",
+          "role": "Main",
+          "format": "File, WAV"
+        },
+        {
+          "title": "Kuture Version",
+          "year": 2025,
+          "label": "Soma Quality Recordings",
+          "role": "Main",
+          "format": "File, WAV, Single"
+        },
+        {
+          "title": "Drumtrax Vol. 1",
+          "year": 2025,
+          "label": "Soma Quality Recordings",
+          "role": "Main",
+          "format": "File, WAV"
+        },
+        {
+          "title": "Wave Tension EP",
+          "year": 2025,
+          "label": "Soma Quality Recordings",
+          "role": "Main",
+          "format": "3xFile, WAV, EP"
+        },
+        {
+          "title": "Dark Channel",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Exhibit Remixes",
+          "year": 2024,
+          "label": "Soma Quality Recordings",
+          "role": "Main",
+          "format": "4xFile, MP3, 320"
+        },
+        {
+          "title": "Wave Expansions EP",
+          "year": 2024,
+          "label": "Soma Quality Recordings",
+          "role": "Main",
+          "format": "4xFile, WAV, EP"
+        },
+        {
+          "title": "Exhibit",
+          "year": 2024,
+          "label": "Soma Quality Recordings",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Flicker EP",
+          "year": 2024,
+          "label": "Soma Quality Recordings",
+          "role": "Main",
+          "format": "3xFile, WAV, EP"
+        },
+        {
+          "title": "Disorder EP",
+          "year": 2023,
+          "label": "Soma Quality Recordings",
+          "role": "Main",
+          "format": "4xFile, MP3, EP, 320"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/1wceAZPoasnlJtrZZkRzd_1elzgNNGN8rNrxm6gmO84/rs:fit/g:sm/q:90/h:379/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwMTUt/MTU0NzAxNTg0MC04/NzI1LmpwZWc.jpeg",
+          "width": 600,
+          "height": 379
+        }
+      ],
+      "externalUrls": [
+        "http://www.slam-djs.com",
+        "http://www.somarecords.com/artists/slam",
+        "http://slam-djs.bandcamp.com",
+        "http://www.facebook.com/SLAM.soma",
+        "http://fanlink.tv/Slam",
+        "http://www.instagram.com/slam_djs",
+        "http://www.mixcloud.com/slam",
+        "http://www.myspace.com/slamofficial",
+        "http://www.slamevents.com",
+        "http://soundcloud.com/soma"
+      ],
+      "imageTheme": "techno",
+      "mbid": "e6fea316-3ef4-49b8-97bf-483b69c0d354",
+      "discogsId": 1015,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/e6fea316-3ef4-49b8-97bf-483b69c0d354",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/1015",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "e6fea316-3ef4-49b8-97bf-483b69c0d354",
+          "type": "Group",
+          "gender": null,
+          "country": "GB",
+          "disambiguation": "DJ and producer duo from Glasgow, co‐founders of Soma Records",
+          "lifeSpan": {
+            "begin": "1994",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 1015,
+          "urls": [
+            "http://www.slam-djs.com",
+            "http://www.somarecords.com/artists/slam",
+            "http://slam-djs.bandcamp.com",
+            "http://www.facebook.com/SLAM.soma",
+            "http://fanlink.tv/Slam",
+            "http://www.instagram.com/slam_djs",
+            "http://www.mixcloud.com/slam",
+            "http://www.myspace.com/slamofficial",
+            "http://www.slamevents.com",
+            "http://soundcloud.com/soma",
+            "http://twitter.com/slamdjs",
+            "http://en.wikipedia.org/wiki/Slam_(band)",
+            "http://www.youtube.com/officialsomarecords"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.714Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "jeff-mills",
+      "name": "Jeff Mills",
+      "displayName": "Jeff Mills",
+      "country": "United States",
+      "aliases": [
+        "Jeffrey Lee Mills",
+        "Jeffery Eugene Mills",
+        "Jeffery Mills",
+        "\"M\"",
+        "J Mills",
+        "J. Mills",
+        "J.Mills",
+        "Jeff \"The Wizard\" Mills",
+        "Jeff (The Wizzard) Mills",
+        "Jeff M",
+        "Jeff Mills.",
+        "Jeffery E Mills",
+        "Jefff Mills",
+        "Jfff Mills",
+        "Mills",
+        "Mills, J.",
+        "ジェフ・ミルズ"
+      ],
+      "genres": [
+        "techno",
+        "detroit techno",
+        "dance and electronica",
+        "Techno"
+      ],
+      "labels": [
+        "Axis",
+        "Str Mrkd, Str Mrkd, Axis, Axis",
+        "Purpose Maker",
+        "Axis, Axis",
+        "U/M/A/A"
+      ],
+      "bio": "DJ, composer, producer and recording artist from Detroit, Michigan, now based in Miami, Florida. Runs and its sub-labels. Married to [a=Yoko Uozumi].",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "The Trip To Vega",
+          "year": 2026,
+          "label": "Axis",
+          "role": "Main",
+          "format": "3xLP, Album"
+        },
+        {
+          "title": "Whatever The Case",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "i9 (2025 Version)",
+          "year": 2025,
+          "label": "Axis",
+          "role": "Main",
+          "format": "12\", Ltd, Pic"
+        },
+        {
+          "title": "Star Child",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Space Outside Space",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Those Who Worked Against Us (Vendetta Mix)",
+          "year": 2024,
+          "label": "Axis",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Sacred Iridescent Mirror (The Pledge) (Remixes)",
+          "year": 2024,
+          "label": "Axis",
+          "role": "Main",
+          "format": "2xFile, MP3, 320"
+        },
+        {
+          "title": "The Trip – Enter The Black Hole",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Powerland",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Neo Tantric Parts",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/RkUGj_cGVM_D6GxvCkZ90K1bs3Rq5zczx0H0UCk5ZMc/rs:fit/g:sm/q:90/h:790/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIwNS0x/NTA1ODA5NzQ5LTc5/MTAuanBlZw.jpeg",
+          "width": 600,
+          "height": 790
+        }
+      ],
+      "externalUrls": [
+        "https://www.axisrecords.com/",
+        "https://twitter.com/DJJeffMills",
+        "https://www.facebook.com/JeffMills",
+        "https://www.instagram.com/jeff_mills_official/",
+        "https://linktr.ee/jeffmills",
+        "https://en.wikipedia.org/wiki/Jeff_Mills"
+      ],
+      "imageTheme": "techno",
+      "mbid": "470a4ced-1323-4c91-8fd5-0bb3fb4c932a",
+      "discogsId": 205,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/470a4ced-1323-4c91-8fd5-0bb3fb4c932a",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/205",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "470a4ced-1323-4c91-8fd5-0bb3fb4c932a",
+          "type": "Person",
+          "gender": "male",
+          "country": "US",
+          "disambiguation": "Detroit based DJ",
+          "lifeSpan": {
+            "begin": "1963-06-18",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 205,
+          "urls": [
+            "https://www.axisrecords.com/",
+            "https://twitter.com/DJJeffMills",
+            "https://www.facebook.com/JeffMills",
+            "https://www.instagram.com/jeff_mills_official/",
+            "https://linktr.ee/jeffmills",
+            "https://en.wikipedia.org/wiki/Jeff_Mills"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.715Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "robert-hood",
+      "name": "Robert Hood",
+      "displayName": "Robert Hood",
+      "country": "United States",
+      "aliases": [
+        "Robert \"Noise\" Hood",
+        "Robert Artis Hood",
+        "Hood",
+        "R. Hood",
+        "Rob Hood"
+      ],
+      "genres": [
+        "Techno",
+        "Minimal"
+      ],
+      "labels": [
+        "M-Plant",
+        "Tresor",
+        "The Vinyl Factory",
+        "Music Man Records",
+        "!K7 Records",
+        "Dekmantel",
+        "Resident Advisor",
+        "Intro (3)",
+        "XLR8R",
+        "Epm Music",
+        "Bleep (2)"
+      ],
+      "bio": "Robert Hood makes minimal Detroit techno with an emphasis on soul and experimentation over flash and popularity. Having recorded for , as well as the Austrian label and [a=Jeff Mills]' label. Hood started in 1991 (Robert Hood's first label prior to forming M-Plant) and also owns and operates the imprint (including the two sublabels Drama and Duet) through which he has released the bulk of his solo material. Hood was a founding member, along with Jeff Mills and Mike Banks, of the label, whose influential releases throughout the early and mid-'90s helped change the face of modern Detroit techno and sparked a creative renaissance. Infusing elements of acid and industrial into a potent blend of Chicago house and Detroit techno, UR's aesthetic project and militant business philosophy were (and remain) singular commitments in underground techno. Hood left Detroit (and UR) with Jeff Mills in 1992, setting up shop in New York and recording a series of 12\" EPs. Through the mid-'90s, Hood has focused on his solo work, setting up M-Plant in 1994 and releasing singles such as \"Internal Empire\", \"Music Data\" and \"Moveable Parts\". Although his desire to remain underground has been replaced by an urge to reach a wider audience, Hood remains fiercely critical of artistic and economic movements destructive to inner-city communities and has combined his musical enterprises with outreach and social activist ends. His debut Peacefrog album \"Point Blank\" took Hood's hypnotic minimalism to entirely new depths and territories, whilst his latest album \"Wire To Wire\" takes his productions onto new levels of musicality and sophistication within the world of electronic music. Father of [a=Lyric Hood].",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Externus Oblique (Re-Plant)",
+          "year": 2026,
+          "label": "M-Plant",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Who Taught You Math (Alt. Mix)",
+          "year": 2026,
+          "label": "M-Plant",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Full Armor",
+          "year": 2026,
+          "label": "M-Plant",
+          "role": "Main",
+          "format": "File, MP3, RM, 320"
+        },
+        {
+          "title": "Arrows",
+          "year": 2026,
+          "label": "M-Plant",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Monkey",
+          "year": 2026,
+          "label": "M-Plant",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Master Builder",
+          "year": 2026,
+          "label": "Tresor",
+          "role": "Main",
+          "format": "12\", RP, 180"
+        },
+        {
+          "title": "Soul Sonic Force EP",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Apex",
+          "year": 2025,
+          "label": "The Vinyl Factory",
+          "role": "Main",
+          "format": "12\", S/Sided, Ltd, Num"
+        },
+        {
+          "title": "Eternal Life EP",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Art Project EP",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/phQwnOcG4uBRffZES01L5WfvYvMwQ39vwseW4RYW-1s/rs:fit/g:sm/q:90/h:600/w:457/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTExMzYt/MTI0NDA1MTg2OC5q/cGVn.jpeg",
+          "width": 457,
+          "height": 600
+        }
+      ],
+      "externalUrls": [
+        "https://www.facebook.com/RobertHoodFloorplan/",
+        "https://en.wikipedia.org/wiki/Robert_Hood",
+        "https://roberthood.bandcamp.com/"
+      ],
+      "imageTheme": "techno",
+      "mbid": "e8a61400-baf7-4fb3-a3e3-c9e7b665547f",
+      "discogsId": 1136,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/e8a61400-baf7-4fb3-a3e3-c9e7b665547f",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/1136",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "e8a61400-baf7-4fb3-a3e3-c9e7b665547f",
+          "type": "Person",
+          "gender": "male",
+          "country": "US",
+          "disambiguation": "techno producer",
+          "lifeSpan": {
+            "begin": "1965",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 1136,
+          "urls": [
+            "https://www.facebook.com/RobertHoodFloorplan/",
+            "https://en.wikipedia.org/wiki/Robert_Hood",
+            "https://roberthood.bandcamp.com/"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.717Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "juan-atkins",
+      "name": "Juan Atkins",
+      "displayName": "Juan Atkins",
+      "country": "United States",
+      "aliases": [
+        "Magic Juan",
+        "Juan Owen Atkins",
+        "\"Magic Juan\" Atkins",
+        "\"Magic\" Juan",
+        "\"Magic\" Juan Atkins",
+        "'Magic Juan' Atkins",
+        "'Magic' Juan",
+        "'Magic' Juan Atkins",
+        "Atkins",
+        "J Atkins",
+        "J. Atkins",
+        "J.Atkin",
+        "J.Atkins",
+        "Jaun Atkins",
+        "Juan",
+        "Juan @tkins",
+        "Juan Atkin",
+        "Magic Jaun",
+        "Magic Juan Atkins"
+      ],
+      "genres": [
+        "electronic",
+        "electro",
+        "techno",
+        "detroit techno",
+        "Techno"
+      ],
+      "labels": [
+        "PARTOUT",
+        "Life's Good",
+        "FACT Magazine",
+        "Black Market Records (4)",
+        "Little White Earbuds",
+        "All About",
+        "Metroplex",
+        "Not On Label",
+        "Sole Unlimited",
+        "Dublab",
+        "S'plat Records",
+        "Skint",
+        "BMG",
+        "Above Board Projects",
+        "Kitchen Spasm Podcast"
+      ],
+      "bio": "Born: December 9, 1962. A major electronic music pioneer from Detroit, Juan appeared behind aliases such as [a=Cybotron], [a=Model 500], and [a=Infiniti] releasing many classics of Detroit techno. The 1982 electro track \"[url=http://www.discogs.com/Cybotron-Clear/master/130]Clear[/url]\", recorded by Atkins and [url=http://www.discogs.com/artist/Richard+Davis+%283%29]Rick Davis[/url] as [a=Cybotron], is often considered the first proto-techno track. Continuing to experiment by fusing the extra-terrestrial funk of [a=Parliament] [a=Funkadelic] with the futuristic rhythms and hard math of [a=Kraftwerk] and the progressive dance theorems proposed by [a=Giorgio Moroder], the Model 500 12\"s on his own label laid the blueprint for Detroit techno. Along with the tracks made by two schoolmates from the grade below, [a=Derrick May] and [a=Kevin Saunderson], Detroit techno quickly made its way across the atlantic and immediately sparked the emerging rave culture and soon after the entire global dance community. Moving through the later 1980's as [a=Model 500], Atkins continued as one of the most prolific and sought after producers of electronic music throughout the 1990's, culminating in the use of an Atkins' original as the musical bed for the 2000 launch of the Ford Focus 'Detroit Techno' automobile. Packing clubs nationally from Detroit to NYC, internationally from London to Venezuela, Juan has mastered the art of soaking up new rhythmic elements from contemporary dance music while keeping his unerring, instantly recognizable sense of melody intact. Much discussed and anthologized not only for his 20 years of production credit but also for his ability to rock a dance floor, Juan Atkins' music and DJ-ing is deified in Europe and embraced all over the world. Juan has also been prolifically releasing albums, remixes and collaborations on Belgium's , Germany's , and others.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Martians At Work EP ",
+          "year": 2019,
+          "label": "PARTOUT",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": " Dimensions",
+          "year": 2018,
+          "label": "Life's Good",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Mind Merge LP",
+          "year": 2017,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Angles",
+          "year": 2017,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Transport Remixed",
+          "year": 2017,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Transport",
+          "year": 2016,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Riod",
+          "year": 2016,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "I Love You / Techno City '95 (Archiv #07)",
+          "year": 2013,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Borderland",
+          "year": 2013,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Borderland I/III",
+          "year": 2013,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/FPB5MopNRIysa8c8k_HzJ2PPUuJ17GWpnLuIcsb5_N0/rs:fit/g:sm/q:90/h:725/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTExMDIt/MTUxODUxODA2MS01/Mzk1LmpwZWc.jpeg",
+          "width": 600,
+          "height": 725
+        }
+      ],
+      "externalUrls": [
+        "https://juanatkins.bandcamp.com",
+        "https://soundcloud.com/juan-atkins",
+        "https://twitter.com/juanatkins",
+        "https://en.wikipedia.org/wiki/Juan_Atkins"
+      ],
+      "imageTheme": "techno",
+      "mbid": "57dd6359-f4ef-422a-9566-b8f54a0904fe",
+      "discogsId": 1102,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/57dd6359-f4ef-422a-9566-b8f54a0904fe",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/1102",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "57dd6359-f4ef-422a-9566-b8f54a0904fe",
+          "type": "Person",
+          "gender": "male",
+          "country": "US",
+          "disambiguation": "",
+          "lifeSpan": {
+            "begin": "1962-09-12",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 1102,
+          "urls": [
+            "https://juanatkins.bandcamp.com",
+            "https://soundcloud.com/juan-atkins",
+            "https://twitter.com/juanatkins",
+            "https://en.wikipedia.org/wiki/Juan_Atkins"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.719Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "derrick-may",
+      "name": "Derrick May",
+      "displayName": "Derrick May",
+      "country": "United States",
+      "aliases": [
+        "D. M.",
+        "D. May",
+        "D.May",
+        "Derek May",
+        "Derrek May",
+        "Derrick",
+        "Derrick Mayday",
+        "Derrik May",
+        "May",
+        "May Derrick"
+      ],
+      "genres": [
+        "electronic",
+        "techno",
+        "detroit techno",
+        "dance and electronica",
+        "Techno"
+      ],
+      "labels": [
+        "Minimal System Recordings, Architect Recordings",
+        "FACT Magazine",
+        "Heartbeat (12), Lastrum",
+        "Groovin' High Records",
+        "Plexi Limited",
+        "Not On Label",
+        "Obsession (2), Obsession (2), Obsession (2)",
+        "Not On Label (Derrick May)",
+        "Sony Music",
+        "Not On Label (Silent Servant Self-released)",
+        "EMI Gold",
+        "Black Market Records (4)",
+        "Mute, Mute",
+        "Electronique.it Podcast Series",
+        "Babywelt Recordings",
+        "The Pod Room",
+        "Stampa Alternativa",
+        "Resident Advisor",
+        "Sony Music Media",
+        "Flower Records",
+        "BMG",
+        "Liquid Space",
+        "Nova Records",
+        "One Way Records (2), Globe (2)"
+      ],
+      "bio": "Producer from Belleville, Michigan, United States, (born April 6, 1963). Known for his work in techno, Mr. May has worked with musical artists such as [a=ABC], [a=Depeche Mode], [a=Fine Young Cannibals] and [a=System 7]. Founder of Transmat, one of the most important techno labels created in Detroit before 1990, alongside Metroplex and KMS.",
+      "stats": {
+        "releaseCount": 49
+      },
+      "releases": [
+        {
+          "title": "Daymares - It Is What It Is (Tech Star 2013 Remix)",
+          "year": 2013,
+          "label": "Minimal System Recordings, Architect Recordings",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "FACT Mix 339",
+          "year": 2012,
+          "label": "FACT Magazine",
+          "role": "Main",
+          "format": "File, MP3, Mixed, 192"
+        },
+        {
+          "title": "Heartbeat Presents Mixed By Derrick May × Air Vol.2",
+          "year": 2011,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Heartbeat Presents Mixed By Derrick May × Air",
+          "year": 2010,
+          "label": "Heartbeat (12), Lastrum",
+          "role": "Main",
+          "format": "CD, Mixed"
+        },
+        {
+          "title": "I Travel EP",
+          "year": 2009,
+          "label": "Groovin' High Records",
+          "role": "Main",
+          "format": "4xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Live High Tech Soul Mix",
+          "year": 2006,
+          "label": "Plexi Limited",
+          "role": "Main",
+          "format": "CD, Mixed, Promo"
+        },
+        {
+          "title": "On The DJ Mix",
+          "year": 2004,
+          "label": "Not On Label",
+          "role": "Main",
+          "format": "CDr, Mixed, Promo"
+        },
+        {
+          "title": "Shame (Mayday Mix) / Join In The Chant (Knarz Is Machine)",
+          "year": 2003,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Mysterious Traveller - Limited Sampler",
+          "year": 2002,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Mysterious Traveller",
+          "year": 2002,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/wvjEW5HiXRkppnLx2PN8utXtNpL12LkmfAurWvrLlfc/rs:fit/g:sm/q:90/h:408/w:356/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTY1MC0x/NTYzNzg3NTA4LTQw/MDIuanBlZw.jpeg",
+          "width": 356,
+          "height": 408
+        }
+      ],
+      "externalUrls": [
+        "http://www.transmatrecords.com",
+        "http://www.facebook.com/derrickmayday",
+        "http://www.facebook.com/derrick.may",
+        "http://myspace.com/derrickmay",
+        "http://soundcloud.com/derrick-may",
+        "http://dmayday.tumblr.com",
+        "http://twitter.com/derrickmayday",
+        "http://en.wikipedia.org/wiki/Derrick_May_(musician)"
+      ],
+      "imageTheme": "techno",
+      "mbid": "371c8525-8111-4497-83ba-1ead9d7ed148",
+      "discogsId": 650,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/371c8525-8111-4497-83ba-1ead9d7ed148",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/650",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "371c8525-8111-4497-83ba-1ead9d7ed148",
+          "type": "Person",
+          "gender": "male",
+          "country": "US",
+          "disambiguation": "",
+          "lifeSpan": {
+            "begin": "1963-06-04",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 650,
+          "urls": [
+            "http://www.transmatrecords.com",
+            "http://www.facebook.com/derrickmayday",
+            "http://www.facebook.com/derrick.may",
+            "",
+            "http://myspace.com/derrickmay",
+            "",
+            "http://soundcloud.com/derrick-may",
+            "http://dmayday.tumblr.com",
+            "http://twitter.com/derrickmayday",
+            "http://en.wikipedia.org/wiki/Derrick_May_(musician)"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.720Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "kevin-saunderson",
+      "name": "Kevin Saunderson",
+      "displayName": "Kevin Saunderson",
+      "country": "United States",
+      "aliases": [
+        "Kevin Maurice Saunderson",
+        "Kevin 'Reese' Saunderson",
+        "K  Saunderson",
+        "K Saunderson",
+        "K. Saunderson",
+        "K. Saunderson,",
+        "K. Suanderson",
+        "K.Saunders",
+        "K.Saunderson",
+        "KMS",
+        "KMS Of Detroit",
+        "Kevi Saunderson",
+        "Kevin",
+        "Kevin \"Master Reece\" Saunderson",
+        "Kevin \"Master Reece' Saunderson",
+        "Kevin \"Master Reese\"",
+        "Kevin \"Master Reese\"  Saunderson",
+        "Kevin \"Master Reese\" Saunderson",
+        "Kevin \"Master Reese\"/Saunderson",
+        "Kevin \"Master\" Reese"
+      ],
+      "genres": [
+        "house",
+        "detroit techno",
+        "acid house",
+        "Techno"
+      ],
+      "labels": [
+        "Armada (4)",
+        "Armada (4), KMS Records",
+        "KMS Records",
+        "Black Book",
+        "KMS",
+        "Skint",
+        "ITH Records",
+        "Nirvana Recordings",
+        "Resident Advisor",
+        "Not On Label"
+      ],
+      "bio": "DJ and producer, born 5 September 1964 in Brooklyn, New York. Education: Belleville High School, Eastern Michigan University. Married to [a=Ann Saunderson]. Father of [a=Dantiez Saunderson] and [a=Damarii Saunderson]. Brother of [a=Ron Saunderson (2)]. Production company: . Copyright and label: and .",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "The Sound",
+          "year": 2025,
+          "label": "Armada (4)",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Station Of The Groove",
+          "year": 2025,
+          "label": "Armada (4), KMS Records",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "The Sound",
+          "year": 2025,
+          "label": "Armada (4)",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "I Like The Darkness",
+          "year": 2025,
+          "label": "KMS Records",
+          "role": "Main",
+          "format": "File, MP3, Single, 320"
+        },
+        {
+          "title": "Bass Into The Future",
+          "year": 2023,
+          "label": "Black Book",
+          "role": "Main",
+          "format": "File, MP3, Single, 320"
+        },
+        {
+          "title": "I Can't Believe",
+          "year": 2020,
+          "label": "KMS",
+          "role": "Main",
+          "format": "File, WAV"
+        },
+        {
+          "title": "Frisk",
+          "year": 2020,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Spicy Mug",
+          "year": 2019,
+          "label": "KMS",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Ponderous",
+          "year": 2019,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Infused",
+          "year": 2018,
+          "label": "KMS Records",
+          "role": "Main",
+          "format": "10xFile, MP3, Album, 320"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/NG05OB6hf302hfr6KnCFEtwEKjFO8g077OkAtBUKgYk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTMzODYt/MTUxOTMzNTQxNC03/NDAxLmpwZWc.jpeg",
+          "width": 600,
+          "height": 600
+        }
+      ],
+      "externalUrls": [
+        "http://kevinsaunderson.com",
+        "http://kevinsaunderson.bandcamp.com",
+        "http://www.facebook.com/kevinsaundersonofficial",
+        "http://www.instagram.com/kevinsaunderson",
+        "http://soundcloud.com/kevinsaunderson",
+        "http://twitter.com/kevinsaunderson",
+        "http://en.wikipedia.org/wiki/Kevin_Saunderson",
+        "http://www.youtube.com/channel/UCwwknnszOAHOXMC__NLZxWw"
+      ],
+      "imageTheme": "techno",
+      "mbid": "bf259ecd-fe89-4738-82fc-ecdd67de1fcc",
+      "discogsId": 3386,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/bf259ecd-fe89-4738-82fc-ecdd67de1fcc",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/3386",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "bf259ecd-fe89-4738-82fc-ecdd67de1fcc",
+          "type": "Person",
+          "gender": "male",
+          "country": "US",
+          "disambiguation": "",
+          "lifeSpan": {
+            "begin": "1964-05-09",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 3386,
+          "urls": [
+            "http://kevinsaunderson.com",
+            "http://kevinsaunderson.bandcamp.com",
+            "http://www.facebook.com/kevinsaundersonofficial",
+            "http://www.instagram.com/kevinsaunderson",
+            "http://soundcloud.com/kevinsaunderson",
+            "http://twitter.com/kevinsaunderson",
+            "http://en.wikipedia.org/wiki/Kevin_Saunderson",
+            "http://www.youtube.com/channel/UCwwknnszOAHOXMC__NLZxWw"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.721Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "dvs1",
+      "name": "DVS1",
+      "displayName": "DVS1",
+      "country": "",
+      "aliases": [
+        "The Devious One"
+      ],
+      "genres": [
+        "Techno"
+      ],
+      "labels": [
+        "HUSH (6)",
+        "Dekmantel",
+        "CLR (2)",
+        "Not On Label",
+        "Blueprint",
+        "Octopus (2)",
+        "Modular Expansion Podcast",
+        "Resident Advisor",
+        "Indigo Aera",
+        "Theory Recordings",
+        "MedellinStyle.com",
+        "Dublab",
+        "Resident Advisor, Resident Advisor Podcast",
+        "Xplaylist",
+        "Rekids",
+        "TheErraticPodcast",
+        "Not On Label (Mick Wills Self-released)",
+        "Prime Numbers",
+        "Prime Numbers, Prime Numbers",
+        "SCKT",
+        "Forbidden Planet",
+        "Sleaze Records",
+        "Mute",
+        "La Musique Fait La Force, N.E.W.S.",
+        "EDEC Music Outlet",
+        "XLR8R",
+        "Perc Trax",
+        "Not On Label (Troy Pierce Self-released)"
+      ],
+      "bio": "American Techno DJ and music producer based in Minneapolis, US. He is the founder of and",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Hush 06",
+          "year": 2023,
+          "label": "HUSH (6)",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Chapter One",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Beta Sensory Motor Rhythm",
+          "year": 2020,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Dekmantel Podcast 186",
+          "year": 2018,
+          "label": "Dekmantel",
+          "role": "Main",
+          "format": "File, MP3, Mixed, 320"
+        },
+        {
+          "title": "Fabric 96",
+          "year": 2017,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Hush 20",
+          "year": 2017,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Distress",
+          "year": 2014,
+          "label": "HUSH (6)",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Klockworks 13",
+          "year": 2014,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Lost Myself",
+          "year": 2014,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "CLR Podcast 159",
+          "year": 2012,
+          "label": "CLR (2)",
+          "role": "Main",
+          "format": "File, MP3, Mixed, 320"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/a7zprmSMH9gGoKrD0KFaePgbB9IbwCp7jdGVki6_VXY/rs:fit/g:sm/q:90/h:312/w:472/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1Mzcx/MTQtMTUyOTU1Njgw/OC02MTgzLmpwZWc.jpeg",
+          "width": 472,
+          "height": 312
+        }
+      ],
+      "externalUrls": [
+        "https://dvs1hush.bandcamp.com/",
+        "http://www.facebook.com/dvs1.hush",
+        "http://www.soundcloud.com/dvs1",
+        "https://ra.co/dj/dvs1",
+        "https://www.instagram.com/dvs1hush/",
+        "https://linktr.ee/dvs1",
+        "https://en.wikipedia.org/wiki/DVS1"
+      ],
+      "imageTheme": "techno",
+      "mbid": "09a28356-b096-4d7e-8aed-03e2199bf924",
+      "discogsId": 1537114,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/09a28356-b096-4d7e-8aed-03e2199bf924",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/1537114",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "09a28356-b096-4d7e-8aed-03e2199bf924",
+          "type": "Person",
+          "gender": "male",
+          "country": null,
+          "disambiguation": "",
+          "lifeSpan": {
+            "begin": "1976",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 1537114,
+          "urls": [
+            "https://dvs1hush.bandcamp.com/",
+            "http://www.facebook.com/dvs1.hush",
+            "http://www.soundcloud.com/dvs1",
+            "https://ra.co/dj/dvs1",
+            "https://www.instagram.com/dvs1hush/",
+            "https://linktr.ee/dvs1",
+            "https://en.wikipedia.org/wiki/DVS1"
+          ],
+          "dataQuality": "Correct"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.722Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "ken-ishii",
+      "name": "Ken Ishii",
+      "displayName": "Ken Ishii",
+      "country": "Japan",
+      "aliases": [
+        "ケン・イシイ",
+        "Ken Ishi",
+        "ケンイシイ",
+        "Ishii",
+        "K. Ishii",
+        "K.Ishii",
+        "Ken",
+        "Ken Ishii 2000",
+        "Kenishi",
+        "Kon Ishi",
+        "ケン イシイ",
+        "石井健"
+      ],
+      "genres": [
+        "electronic",
+        "techno",
+        "tech house",
+        "Techno"
+      ],
+      "labels": [
+        "Mind Medizin Records",
+        "Lost In Cult Records",
+        "Tronic",
+        "Iturnem",
+        "Rekids Special Projects",
+        "Houstrike",
+        "Universal Music Ltda.",
+        "Black Screen Records, Lost In Cult Records",
+        "Electropical Record",
+        "70 Drums Digital",
+        "Akihabara Heavy Industry Inc.",
+        "Hardcore Ambience",
+        "Riot Recordings (2)",
+        "Black Codes Experiments",
+        "Iam8bit, U/M/A/A",
+        "U/M/A/A",
+        "Combine Audio",
+        "Octopus (2)",
+        "Devotion Records (8)",
+        "Bonzai Progressive",
+        "Pornographic Recordings",
+        "Metodiq",
+        "Different Is Different"
+      ],
+      "bio": "Japanese DJ and record producer. Born May 12, 1970 in Sapporo (Hokkaido), Japan. Spelled his name in Katakana as ケン・イシイ or ケンイシイ",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Syntax Error",
+          "year": 2026,
+          "label": "Mind Medizin Records",
+          "role": "Main",
+          "format": "4xFile, WAV, EP"
+        },
+        {
+          "title": "C-Smash VRS",
+          "year": 2025,
+          "label": "Lost In Cult Records",
+          "role": "Main",
+          "format": "2xLP"
+        },
+        {
+          "title": "Giant Killer EP",
+          "year": 2025,
+          "label": "Tronic",
+          "role": "Main",
+          "format": "4xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Supergravity",
+          "year": 2025,
+          "label": "Iturnem",
+          "role": "Main",
+          "format": "3xFile, FLAC, EP, 16-"
+        },
+        {
+          "title": "Autopilot",
+          "year": 2025,
+          "label": "Rekids Special Projects",
+          "role": "Main",
+          "format": "3xFile, FLAC, EP"
+        },
+        {
+          "title": "Scapegoat",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Focus",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Neonride",
+          "year": 2024,
+          "label": "Houstrike",
+          "role": "Main",
+          "format": "File, WAV"
+        },
+        {
+          "title": "Neonride (U:ICHI Remix)",
+          "year": 2024,
+          "label": "Houstrike",
+          "role": "Main",
+          "format": "File, WAV"
+        },
+        {
+          "title": "Rising Sun",
+          "year": 2024,
+          "label": "Universal Music Ltda.",
+          "role": "Main",
+          "format": "File, WAV"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/pkQ8PXJH6atdZLdzjbatT8o1DvM3FKdes91LxCt77vI/rs:fit/g:sm/q:90/h:900/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwMzIt/MTY2MjQzODc1NS01/MzIzLmpwZWc.jpeg",
+          "width": 600,
+          "height": 900
+        }
+      ],
+      "externalUrls": [
+        "http://www.kenishii.com",
+        "http://kenishii.bandcamp.com",
+        "http://www.facebook.com/kenishii.tokyo",
+        "http://www.facebook.com/kenishiiofficial",
+        "http://gigs.gigatools.com/user/kenishii70drums",
+        "http://www.instagram.com/_kenishii_",
+        "http://www.mixcloud.com/ken_ishii",
+        "http://www.myspace.com/70drums",
+        "http://www.songkick.com/artists/98938-ken-ishii",
+        "http://soundcloud.com/ken-ishii-70drums"
+      ],
+      "imageTheme": "techno",
+      "mbid": "6d4c4759-8a16-4b9f-83e2-4c225307fc85",
+      "discogsId": 1032,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/6d4c4759-8a16-4b9f-83e2-4c225307fc85",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/1032",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "6d4c4759-8a16-4b9f-83e2-4c225307fc85",
+          "type": "Person",
+          "gender": "male",
+          "country": "JP",
+          "disambiguation": "electronic / DJ",
+          "lifeSpan": {
+            "begin": "1970",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 1032,
+          "urls": [
+            "http://www.kenishii.com",
+            "http://kenishii.bandcamp.com",
+            "http://www.facebook.com/kenishii.tokyo",
+            "http://www.facebook.com/kenishiiofficial",
+            "http://gigs.gigatools.com/user/kenishii70drums",
+            "http://www.instagram.com/_kenishii_",
+            "http://www.mixcloud.com/ken_ishii",
+            "http://www.myspace.com/70drums",
+            "http://www.songkick.com/artists/98938-ken-ishii",
+            "http://soundcloud.com/ken-ishii-70drums",
+            "http://twitter.com/k_ishii_70drums",
+            "http://en.wikipedia.org/wiki/Ken_Ishii"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.723Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "dj-nobu",
+      "name": "DJ Nobu",
+      "displayName": "DJ Nobu",
+      "country": "Japan",
+      "aliases": [
+        "Nobu"
+      ],
+      "genres": [
+        "likedis auto",
+        "Techno"
+      ],
+      "labels": [
+        "fabric Originals",
+        "Non Series",
+        "Kvalia",
+        "Bitta",
+        "Cav Empt",
+        "Fleetway Tapes",
+        "No 'Label' (2)",
+        "INDUSTRIAL JP",
+        "Grasswaxx Recordings",
+        "A Colourful Storm",
+        "Dekmantel",
+        "Tearbridge Records",
+        "Resident Advisor",
+        "Soul Aid",
+        "Japonica",
+        "Future Terror",
+        "Zi-Koo, Lastrum",
+        "Dynamic Reflection",
+        "Katharsis Recordings",
+        "Nous'klaer Audio",
+        "Aum Recordings",
+        "Dublab",
+        "Empiric Records",
+        "BleeD (3)"
+      ],
+      "bio": "DJ Nobu is a Japan-based electronic music DJ and producer Japanese hip-hop producer; aka Bombrush!., known for Techno, likedis auto styles. Releases on labels including fabric Originals, Non Series, Kvalia. 50 releases on Discogs.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Shō ",
+          "year": 2026,
+          "label": "fabric Originals",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Flares / 泡 (Abuku)",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Varios II",
+          "year": 2023,
+          "label": "Non Series",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Hiiro",
+          "year": 2022,
+          "label": "Kvalia",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Extra Tools 2",
+          "year": 2021,
+          "label": "Bitta",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Nepia",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Föllakzoid IIII Remixes",
+          "year": 2020,
+          "label": "Bitta",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Recorded live at 対人対物無制限 (Taijin-Taibutsu Museigen) Tokyo, 12 March 2020",
+          "year": 2020,
+          "label": "Cav Empt",
+          "role": "Main",
+          "format": "Cass, Mixed, C60"
+        },
+        {
+          "title": "Live at Unit",
+          "year": 2020,
+          "label": "Fleetway Tapes",
+          "role": "Main",
+          "format": "Cass, Mixed, Mixtape"
+        },
+        {
+          "title": "Hidden Place",
+          "year": 2020,
+          "label": "Bitta",
+          "role": "Main",
+          "format": "6xFile, FLAC, EP"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/8UvoIFn_P4mqa0iH_GscKGXZ7kGKdtxYQFMaBu2CCW8/rs:fit/g:sm/q:90/h:876/w:583/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwOTM5/NDctMTQ1NzE4MTI3/My01OTgwLmpwZWc.jpeg",
+          "width": 583,
+          "height": 876
+        }
+      ],
+      "externalUrls": [
+        "https://dj-nobu.bandcamp.com/",
+        "https://ra.co/dj/djnobu",
+        "https://www.facebook.com/profile.php?id=100044539925039",
+        "https://www.instagram.com/dj_nobu_ft/",
+        "https://myspace.com/djnobuft",
+        "https://soundcloud.com/djnobu_bitta",
+        "http://twitter.com/dj_nobu_ft"
+      ],
+      "imageTheme": "techno",
+      "mbid": "bdf75d5c-73e6-4311-b7fc-3466876afcbc",
+      "discogsId": 1093947,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/bdf75d5c-73e6-4311-b7fc-3466876afcbc",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/1093947",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "bdf75d5c-73e6-4311-b7fc-3466876afcbc",
+          "type": "Person",
+          "gender": "male",
+          "country": "JP",
+          "disambiguation": "Japanese hip-hop producer; aka Bombrush!",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 1093947,
+          "urls": [
+            "https://dj-nobu.bandcamp.com/",
+            "https://ra.co/dj/djnobu",
+            "https://www.facebook.com/profile.php?id=100044539925039",
+            "https://www.instagram.com/dj_nobu_ft/",
+            "https://myspace.com/djnobuft",
+            "https://soundcloud.com/djnobu_bitta",
+            "http://twitter.com/dj_nobu_ft"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.724Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "fumiya-tanaka",
+      "name": "田中フミヤ",
+      "displayName": "Fumiya Tanaka",
+      "country": "Japan",
+      "aliases": [
+        "たなか ふみや",
+        "たなか フミヤ",
+        "田中 フミヤ",
+        "Fumiya Tanaka",
+        "Fumiua Tanaka",
+        "F. Tanaka",
+        "Tanaka Fumiya",
+        "田中フミヤ"
+      ],
+      "genres": [
+        "techno",
+        "electronic",
+        "Techno",
+        "Minimal"
+      ],
+      "labels": [
+        "Resident Advisor",
+        "Sundance",
+        "Perlon",
+        "Torema Records",
+        "Chaos LTD",
+        "Torema Records, Soundscape (15)",
+        "op.disc",
+        "Nike, Nike",
+        "Nike",
+        "Dream Machine, Dream Machine",
+        "Burger Inn Records"
+      ],
+      "bio": "Japanese producer/DJ born in Kyoto, Japan on 21/05/1972. Founded Torema Records in 1993. His own new label Sundance is started in 2008.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "RA.964 ",
+          "year": 2024,
+          "label": "Resident Advisor",
+          "role": "Main",
+          "format": "File, FLAC, Mixed"
+        },
+        {
+          "title": "One More Thing (First Part)",
+          "year": 2022,
+          "label": "Sundance",
+          "role": "Main",
+          "format": "2x12\", Album"
+        },
+        {
+          "title": "One More Thing (Second Part)",
+          "year": 2022,
+          "label": "Sundance",
+          "role": "Main",
+          "format": "2x12\", Album"
+        },
+        {
+          "title": "Deep One",
+          "year": 2022,
+          "label": "Perlon",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Dance Tonight / If So Remember EP",
+          "year": 2020,
+          "label": "Sundance",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Stinking Man EP",
+          "year": 2019,
+          "label": "Sundance",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "We Would Like To Do Song For The Step EP",
+          "year": 2019,
+          "label": "Sundance",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Right Moment",
+          "year": 2019,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Beautiful Days 2010-2015",
+          "year": 2018,
+          "label": "Sundance",
+          "role": "Main",
+          "format": "CD, Comp, Mixed"
+        },
+        {
+          "title": "A Round About Route",
+          "year": 2018,
+          "label": "Sundance",
+          "role": "Main",
+          "format": "12\""
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/MhZ4W7Zkx0pHNti8_v8XMQxn4DzgwBL1NqCPSGnsreo/rs:fit/g:sm/q:90/h:902/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTExNjYt/MTc2Nzc1Nzk1Ny04/Mzg3LmpwZWc.jpeg",
+          "width": 600,
+          "height": 902
+        }
+      ],
+      "externalUrls": [
+        "http://www.fumiyatanaka.com/",
+        "http://www.facebook.com/fumiyatanakasundance",
+        "https://soundcloud.com/fumiyatanaka_official"
+      ],
+      "imageTheme": "techno",
+      "mbid": "86b9a88e-d18f-43c5-9805-f8eb41007aa2",
+      "discogsId": 1166,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/86b9a88e-d18f-43c5-9805-f8eb41007aa2",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/1166",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "86b9a88e-d18f-43c5-9805-f8eb41007aa2",
+          "type": "Person",
+          "gender": "male",
+          "country": "JP",
+          "disambiguation": "",
+          "lifeSpan": {
+            "begin": "1972-05-21",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 1166,
+          "urls": [
+            "http://www.fumiyatanaka.com/",
+            "http://www.facebook.com/fumiyatanakasundance",
+            "https://soundcloud.com/fumiyatanaka_official"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.725Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "takkyu-ishino",
+      "name": "石野卓球",
+      "displayName": "Takkyu Ishino",
+      "country": "Japan",
+      "aliases": [
+        "石野卓球",
+        "Takkyu Ishino",
+        "Ishino Takkyu",
+        "Ishino",
+        "T Ishino",
+        "T. Ishino",
+        "TaQ Ishino",
+        "Tack Q Ishino",
+        "TackQ Ishino",
+        "Tackq Ishino",
+        "Takkyo Ishino",
+        "Takkyu",
+        "Takkyu And The Sexual Harrasments",
+        "Takkyui.",
+        "Takkyū",
+        "Yakkyu Ishino",
+        "卓球",
+        "石野 卓球"
+      ],
+      "genres": [
+        "fixme label disaster",
+        "electronica",
+        "techno",
+        "clean up",
+        "Techno"
+      ],
+      "labels": [
+        "Netflix Studios, LLC",
+        "Ki/oon Music Inc.",
+        "Ki/oon",
+        "Ela Music (2), T-Annex",
+        "Ki/oon, Loopa",
+        "SAR (3), SMEJ Associated Records",
+        "Not On Label",
+        "Not On Label (Takkyu Ishino Self-released)",
+        "Yum Yum Vinyl",
+        "Konsequent",
+        "秋葉原重工"
+      ],
+      "bio": "Japanese DJ, producer and member of Denki Groove",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "地面師たち (Soundtrack from the Netflix Series)",
+          "year": 2024,
+          "label": "Netflix Studios, LLC",
+          "role": "Main",
+          "format": "30xFile, AAC, Album"
+        },
+        {
+          "title": "Typical!",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "もぐらたたきのような人 2018",
+          "year": 2018,
+          "label": "Ki/oon Music Inc.",
+          "role": "Main",
+          "format": "10\", Single"
+        },
+        {
+          "title": "Takkyu Ishino Works 1983-2017",
+          "year": 2018,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Recycled Tracks Pt. 7",
+          "year": 2018,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Man Human (Devilman Crybaby Ver.) / 今夜だけ",
+          "year": 2018,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Acid Tekno Disko Beatz",
+          "year": 2017,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Lunar E.P.  Part. 2",
+          "year": 2016,
+          "label": "Ki/oon",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Lunar E.P. Part. 1",
+          "year": 2016,
+          "label": "Ki/oon",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Euqitanul",
+          "year": 2016,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/t8a5QhA0D8y4Y-TeCQMkAGtFi6NpJ2mNRlEBZcnII44/rs:fit/g:sm/q:90/h:659/w:466/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQyODgt/MTczODQ0MTY2Mi05/Mzk1LmpwZWc.jpeg",
+          "width": 466,
+          "height": 659
+        }
+      ],
+      "externalUrls": [
+        "http://www.takkyuishino.com",
+        "https://www.facebook.com/TakkyuIshino.Official",
+        "http://twitter.com/takkyuishino",
+        "http://soundcloud.com/takkyu-ishino",
+        "https://www.instagram.com/takkyuishino",
+        "http://www.sonymusic.co.jp/artist/TakkyuIshino/",
+        "https://ja.m.wikipedia.org/wiki/%E7%9F%B3%E9%87%8E%E5%8D%93%E7%90%83"
+      ],
+      "imageTheme": "techno",
+      "mbid": "d22cd501-9f68-4a1a-a15d-5626e58df43e",
+      "discogsId": 4288,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/d22cd501-9f68-4a1a-a15d-5626e58df43e",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/4288",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "d22cd501-9f68-4a1a-a15d-5626e58df43e",
+          "type": "Person",
+          "gender": "male",
+          "country": "JP",
+          "disambiguation": "",
+          "lifeSpan": {
+            "begin": "1967-12-26",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 4288,
+          "urls": [
+            "http://www.takkyuishino.com",
+            "https://www.facebook.com/TakkyuIshino.Official",
+            "http://twitter.com/takkyuishino",
+            "http://soundcloud.com/takkyu-ishino",
+            "https://www.instagram.com/takkyuishino",
+            "http://www.sonymusic.co.jp/artist/TakkyuIshino/",
+            "https://ja.m.wikipedia.org/wiki/%E7%9F%B3%E9%87%8E%E5%8D%93%E7%90%83"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.726Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "laurent-garnier",
+      "name": "Laurent Garnier",
+      "displayName": "Laurent Garnier",
+      "country": "France",
+      "aliases": [
+        "Laurent Denis Garnier",
+        "Laurant Garnier",
+        "DJ Laurent Garnier",
+        "Garnier",
+        "L. Garnien",
+        "L. Garnier",
+        "L.G",
+        "L.Garnier",
+        "La Garnier",
+        "Laurent",
+        "Laurent 'Laboratoire' Garnier",
+        "Laurent Gamier",
+        "Laurent Garmier",
+        "Laurent Guarnier"
+      ],
+      "genres": [
+        "electronic",
+        "techno",
+        "dance and electronica",
+        "warp",
+        "european",
+        "french",
+        "Techno",
+        "House"
+      ],
+      "labels": [
+        "COD3 QR",
+        "Not On Label (Laurent Garnier)",
+        "Ed Banger Records",
+        "Condor Entertainment",
+        "Because Music",
+        "Tsugi",
+        "F Communications, F Communications",
+        "Still Music",
+        "MCDE",
+        "Phonocasts, Phonographe Corp",
+        "DJ Magazine",
+        "Resident Advisor",
+        "Not On Label",
+        "F Communications",
+        "Absolut Freak Records"
+      ],
+      "bio": "French DJ and producer, born February 1, 1966. He started mixing House music in the late of 1980's in Manchester scene. Co-founder of the label , alongside [a=Eric Morand]. Also co-founder of the label with [a=Scan X] and [a=Oliver Way] Previously worked as a waiter at the French Embassy in London until 1986.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "FabricLG4 EP",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Le Meilleur Est à Venir",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Fabric Presents Laurent Garnier",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "\"33 T​.​E​.​P​.​S​.​V.\" Remixes",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "33 Tours Et Puis S'en Vont",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "33T.E.P.S.V. ",
+          "year": 2022,
+          "label": "COD3 QR",
+          "role": "Main",
+          "format": "12\", Ltd, Red"
+        },
+        {
+          "title": "33T.E.P.S.V. EP03",
+          "year": 2022,
+          "label": "COD3 QR",
+          "role": "Main",
+          "format": "2xFile, WAV, EP"
+        },
+        {
+          "title": "33T.E.P.S.V. EP05 ",
+          "year": 2022,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "33T.E.P.S.V. EP04",
+          "year": 2022,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "33T.E.P.S.V. EP02",
+          "year": 2022,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/BOjtyzCVLp1qPM0azDC_DBl6at-2EMuYvzlthb3KNnc/rs:fit/g:sm/q:90/h:664/w:508/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTc1MC0x/NjQ0NTYxNDM1LTUx/NjYuanBlZw.jpeg",
+          "width": 508,
+          "height": 664
+        }
+      ],
+      "externalUrls": [
+        "http://www.laurentgarnier.com",
+        "http://laurentgarnierbook.com",
+        "http://www.bandsintown.com/LaurentGarnier",
+        "http://www.facebook.com/laurentgarnierofficial",
+        "http://www.instagram.com/laurent_garnier",
+        "http://www.mixcloud.com/laurentgarnier",
+        "http://www.myspace.com/laurentgarnier",
+        "http://soundcloud.com/laurent-garnier",
+        "http://twitter.com/laurentgarnier",
+        "http://en.wikipedia.org/wiki/Laurent_Garnier"
+      ],
+      "imageTheme": "techno",
+      "mbid": "ec477866-bfaa-48e0-affd-1c151ef61b7b",
+      "discogsId": 750,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/ec477866-bfaa-48e0-affd-1c151ef61b7b",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/750",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "ec477866-bfaa-48e0-affd-1c151ef61b7b",
+          "type": "Person",
+          "gender": "male",
+          "country": "FR",
+          "disambiguation": "",
+          "lifeSpan": {
+            "begin": "1966-02-01",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 750,
+          "urls": [
+            "http://www.laurentgarnier.com",
+            "http://laurentgarnierbook.com",
+            "http://www.bandsintown.com/LaurentGarnier",
+            "http://www.facebook.com/laurentgarnierofficial",
+            "http://www.instagram.com/laurent_garnier",
+            "http://www.mixcloud.com/laurentgarnier",
+            "http://www.myspace.com/laurentgarnier",
+            "http://soundcloud.com/laurent-garnier",
+            "http://twitter.com/laurentgarnier",
+            "http://en.wikipedia.org/wiki/Laurent_Garnier",
+            "http://www.youtube.com/channel/UCIheq1m1f98Nw05t7HEPDrQ"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.727Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "agoria",
+      "name": "Agoria",
+      "displayName": "Agoria",
+      "country": "France",
+      "aliases": [
+        "Agoria@Da Control",
+        "D.J. Agoria",
+        "DJ Agoria",
+        "DJ: Agoria"
+      ],
+      "genres": [
+        "electronic",
+        "french",
+        "house",
+        "deep house",
+        "tech house",
+        "electro house",
+        "Techno",
+        "House"
+      ],
+      "labels": [
+        "sapiens",
+        "Hot Banana",
+        "Sapiens",
+        "Philomena",
+        "Saved Records",
+        "!K7 Records",
+        "Hotflush Recordings",
+        "Electronic Beats",
+        "Tsugi",
+        "Resident Advisor",
+        "EQ Recordings",
+        "Different, Different",
+        "Resist Music",
+        "Different, [PIAS] Recordings"
+      ],
+      "bio": "Influenced by jazz and Detroit techno, Sébastien Devaud aka Agoria is one in a long line of artists to emerge from the French electronic scene. In 2000, he was the first DJ to be taken on by the prestigious FAIR, a French support fund for new acts, signing his first publishing contract with Peer Music the same year. He left [l76448]'s A&R in 2011 and founded [l1060091] in 2016.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Getaway Remixes",
+          "year": 2025,
+          "label": "sapiens",
+          "role": "Main",
+          "format": "3xFile, MP3, EP"
+        },
+        {
+          "title": "I Feel Good",
+          "year": 2024,
+          "label": "sapiens",
+          "role": "Main",
+          "format": "File, MP3"
+        },
+        {
+          "title": "Second Life",
+          "year": 2024,
+          "label": "Hot Banana",
+          "role": "Main",
+          "format": "File, MP3, Single"
+        },
+        {
+          "title": "Unshadow",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Spacer",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": ".Dev",
+          "year": 2021,
+          "label": "Sapiens",
+          "role": "Main",
+          "format": "2x12\", Album"
+        },
+        {
+          "title": ".Dev",
+          "year": 2021,
+          "label": "Sapiens",
+          "role": "Main",
+          "format": "9xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Embrace & You're Not Alone Remixes",
+          "year": 2019,
+          "label": "Sapiens",
+          "role": "Main",
+          "format": "12\", Ltd, Cle"
+        },
+        {
+          "title": "Visit",
+          "year": 2019,
+          "label": "sapiens",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Remedy (Frankey & Sandrino Remix) / Sirius (Innellea Remix)",
+          "year": 2019,
+          "label": "Philomena",
+          "role": "Main",
+          "format": "12\", Ltd, W/Lbl"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/bwUj4nXSDHtjFvIUA2eVz6_gkP6IHpVMLXfhiZ2XsJ4/rs:fit/g:sm/q:90/h:490/w:490/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE0NTM5/LTE2MDQ4NTUyMzMt/Nzk0MC5wbmc.jpeg",
+          "width": 490,
+          "height": 490
+        }
+      ],
+      "externalUrls": [
+        "http://www.agoria-music.com",
+        "http://www.facebook.com/agoriaofficial",
+        "http://gigs.gigatools.com/user/Agoria",
+        "http://www.lastfm.fr/music/Agoria",
+        "http://www.songkick.com/users/Agoria",
+        "http://soundcloud.com/agoria",
+        "http://twitter.com/agoriamusic",
+        "http://www.youtube.com/user/AgoriaMusic"
+      ],
+      "imageTheme": "techno",
+      "mbid": "90ba97be-5daf-4365-8704-9a74b780591b",
+      "discogsId": 14539,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/90ba97be-5daf-4365-8704-9a74b780591b",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/14539",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "90ba97be-5daf-4365-8704-9a74b780591b",
+          "type": "Person",
+          "gender": "male",
+          "country": "FR",
+          "disambiguation": "French electronic record producer, composer and DJ",
+          "lifeSpan": {
+            "begin": "1976-01-16",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 14539,
+          "urls": [
+            "http://www.agoria-music.com",
+            "http://www.facebook.com/agoriaofficial",
+            "http://gigs.gigatools.com/user/Agoria",
+            "http://www.lastfm.fr/music/Agoria",
+            "http://www.songkick.com/users/Agoria",
+            "http://soundcloud.com/agoria",
+            "http://twitter.com/agoriamusic",
+            "http://www.youtube.com/user/AgoriaMusic"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.728Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "david-august",
+      "name": "David August",
+      "displayName": "David August",
+      "country": "Germany (based in Berlin)",
+      "aliases": [
+        "David Nattkemper",
+        "August",
+        "Aṣa",
+        "Blue Canvas"
+      ],
+      "genres": [
+        "Techno",
+        "Electronic"
+      ],
+      "labels": [
+        "99CHANTS",
+        "[pias]",
+        "Not On Label (David August Self-released)",
+        "Diynamic Music",
+        "Tarifa Records",
+        "Clubstar",
+        "Infectious Music",
+        "Chall'OMusic, Wagram Music",
+        "Fayer",
+        "Ministry Of Sound",
+        "Milk & Sugar Recordings",
+        "Kontor Records",
+        "Hed Kandi",
+        "FACT Magazine",
+        "Get Physical Music",
+        "Absolute Sound",
+        "Minestrone Culinaire",
+        "N.E.W.S.",
+        "Not On Label",
+        "Susumu Records"
+      ],
+      "bio": "Italian-German composer, producer and DJ based in Berlin. Founder and curator of",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "HYMNS",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Workouts EP",
+          "year": 2024,
+          "label": "99CHANTS",
+          "role": "Main",
+          "format": "File, AIFF, WAV, EP"
+        },
+        {
+          "title": "VĪS Reinterpretations",
+          "year": 2024,
+          "label": "99CHANTS",
+          "role": "Main",
+          "format": "File, AIFC, WAV, Album"
+        },
+        {
+          "title": "VĪS",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Reminiscence Of A Jewel",
+          "year": 2020,
+          "label": "99CHANTS",
+          "role": "Main",
+          "format": "File, MP3, Single, 320"
+        },
+        {
+          "title": "Elysian Fields",
+          "year": 2019,
+          "label": "99CHANTS",
+          "role": "Main",
+          "format": "12\", EP, Ltd, 180"
+        },
+        {
+          "title": "33Chants",
+          "year": 2018,
+          "label": "[pias]",
+          "role": "Main",
+          "format": "CDr, Single, Promo"
+        },
+        {
+          "title": "D'Angelo",
+          "year": 2018,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "DCXXXIX A​.​C.",
+          "year": 2018,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "J.B.Y. / Ouvert",
+          "year": 2016,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/uX4M7k5IhkMbpL90a_1PdKIC6OACiSuW8BHhOYyYES4/rs:fit/g:sm/q:90/h:397/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTg2NDE3/Mi0xNzU1NzI3MDE4/LTc0MzQuanBlZw.jpeg",
+          "width": 600,
+          "height": 397
+        }
+      ],
+      "externalUrls": [
+        "https://davidxaugust.com/",
+        "https://davidaugust.bandcamp.com",
+        "https://www.instagram.com/davidaugustx/",
+        "https://soundcloud.com/davidaugust",
+        "https://www.facebook.com/davidaugustmusic",
+        "https://twitter.com/davidaugustx",
+        "https://open.spotify.com/artist/1cS5EoXVqz7aON00AkVBBA"
+      ],
+      "imageTheme": "techno",
+      "mbid": "e4f6fdb4-8b31-4947-848e-5b6586ad4b60",
+      "discogsId": 864172,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/e4f6fdb4-8b31-4947-848e-5b6586ad4b60",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/864172",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "e4f6fdb4-8b31-4947-848e-5b6586ad4b60",
+          "type": "Person",
+          "gender": "male",
+          "country": "Berlin",
+          "disambiguation": "",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 864172,
+          "urls": [
+            "https://davidxaugust.com/",
+            "https://davidaugust.bandcamp.com",
+            "https://www.instagram.com/davidaugustx/",
+            "https://soundcloud.com/davidaugust",
+            "https://www.facebook.com/davidaugustmusic",
+            "https://twitter.com/davidaugustx",
+            "https://open.spotify.com/artist/1cS5EoXVqz7aON00AkVBBA"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.729Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "donato-dozzy",
+      "name": "Donato Dozzy",
+      "displayName": "Donato Dozzy",
+      "country": "Italy",
+      "aliases": [
+        "Donato Scaramuzzi",
+        "Dj Dozzy",
+        "D. Dozzy",
+        "DJ Dozzy",
+        "Dozzy"
+      ],
+      "genres": [
+        "Techno",
+        "Dub Techno"
+      ],
+      "labels": [
+        "Afterhouse",
+        "Ferro/Cromo",
+        "Going In",
+        "Tresor",
+        "Interstice(ssg)",
+        "Claque Musique",
+        "Lullabies For Insomniacs",
+        "electronique.it",
+        "Outis Music",
+        "Resident Advisor",
+        "mnml ssgs",
+        "Mule Electronic",
+        "Attic Music"
+      ],
+      "bio": "Italian DJ and producer. He is the founder of and co-founder of and .",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Afterhouse Series Volume 3",
+          "year": 2026,
+          "label": "Afterhouse",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "02 Babylon Market Vol. 3",
+          "year": 2026,
+          "label": "Ferro/Cromo",
+          "role": "Main",
+          "format": "Cass, Ltd"
+        },
+        {
+          "title": "Hypno Trance",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Morpho",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Sorella Di Confine",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Acid Test 09.1 (10 Year Anniversary Edition)",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Magda",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Afterhouse Series Volume 2",
+          "year": 2023,
+          "label": "Afterhouse",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Crono",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": " Morning Mist",
+          "year": 2022,
+          "label": "Going In",
+          "role": "Main",
+          "format": "File, AIFF"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/oFwBlljiXsuWdUDtPd4FZqdPROdWt5QLMHlvuHaKWuU/rs:fit/g:sm/q:90/h:636/w:593/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIwMjA5/Ny0xNTMzMjQ3MTQ0/LTU0OTguanBlZw.jpeg",
+          "width": 593,
+          "height": 636
+        }
+      ],
+      "externalUrls": [
+        "https://donatodozzy.bandcamp.com/",
+        "https://dozz.bandcamp.com/",
+        "https://donaotodozzysm.bandcamp.com/",
+        "https://www.instagram.com/donato_dozzy/",
+        "http://www.octopus-agents.com/artist.php?id=410",
+        "https://www.residentadvisor.net/dj/donatodozzy",
+        "http://soundcloud.com/donato-dozzy",
+        "http://twitter.com/donatodozzy"
+      ],
+      "imageTheme": "techno",
+      "mbid": "4a2a0d6b-d871-400b-8d61-bf544854bdf6",
+      "discogsId": 202097,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/4a2a0d6b-d871-400b-8d61-bf544854bdf6",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/202097",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "4a2a0d6b-d871-400b-8d61-bf544854bdf6",
+          "type": "Person",
+          "gender": "male",
+          "country": "IT",
+          "disambiguation": "",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 202097,
+          "urls": [
+            "https://donatodozzy.bandcamp.com/",
+            "https://dozz.bandcamp.com/",
+            "https://donaotodozzysm.bandcamp.com/",
+            "https://www.instagram.com/donato_dozzy/",
+            "http://www.octopus-agents.com/artist.php?id=410",
+            "https://www.residentadvisor.net/dj/donatodozzy",
+            "http://soundcloud.com/donato-dozzy",
+            "http://twitter.com/donatodozzy"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.729Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "luigi-tozzi",
+      "name": "Luigi Tozzi",
+      "displayName": "Luigi Tozzi",
+      "country": "Italy (based in Rome)",
+      "aliases": [
+        "Luigi Tozzy",
+        "Tozzi",
+        "Tozzy"
+      ],
+      "genres": [
+        "dub techno",
+        "hypnotic techno",
+        "Techno",
+        "Dub Techno"
+      ],
+      "labels": [
+        "Aube Rouge",
+        "Technokunst Podcast",
+        "Outis Music",
+        "Modular Expansion Podcast",
+        "Affin",
+        "A_Files",
+        "Informa Records",
+        "Affin LTD",
+        "Modern Minimal",
+        "Kvalia",
+        "Runa (3)",
+        "Monday Off",
+        "Oracolo Records",
+        "Orion Records (10)",
+        "Parallax (9)"
+      ],
+      "bio": "Italian DJ and producer based in Rome.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Plastic Venus",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Deep Blue: Volume 4",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Trip No Trip EP",
+          "year": 2025,
+          "label": "Aube Rouge",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Memoir",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Sentient",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Split Series 01",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Strati",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Spiral Remixes",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "The Deer Hunter",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Spiral EP",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/tlQ50gGXM0fLHgVM44pZ8vBQYenJB83eOVAjhqs2EP8/rs:fit/g:sm/q:90/h:400/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQwOTg0/MjAtMTQzMDI4OTQw/OS03MDc5LmpwZWc.jpeg",
+          "width": 600,
+          "height": 400
+        }
+      ],
+      "externalUrls": [
+        "https://www.facebook.com/LuigiTozziMusic/",
+        "https://soundcloud.com/luigitozzi"
+      ],
+      "imageTheme": "techno",
+      "mbid": "721f9913-9176-4203-9ee0-49466f0b0d7d",
+      "discogsId": 4098420,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/721f9913-9176-4203-9ee0-49466f0b0d7d",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/4098420",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "721f9913-9176-4203-9ee0-49466f0b0d7d",
+          "type": "Person",
+          "gender": "male",
+          "country": "Roma",
+          "disambiguation": "",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 4098420,
+          "urls": [
+            "https://www.facebook.com/LuigiTozziMusic/",
+            "https://soundcloud.com/luigitozzi"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.730Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "claudio-prc",
+      "name": "Claudio PRC",
+      "displayName": "Claudio PRC",
+      "country": "Germany (based in Berlin)",
+      "aliases": [
+        "Claudio Porceddu",
+        "Claudio PRC"
+      ],
+      "genres": [
+        "techno",
+        "minimal techno",
+        "ambient techno",
+        "deep techno",
+        "dub techno",
+        "Techno"
+      ],
+      "labels": [
+        "Semantica Records",
+        "Not On Label (Claudio Prc Self-released)",
+        "AWRY",
+        "Mama Recordings",
+        "Orb Mag",
+        "TGP",
+        "TheErraticPodcast",
+        "Trolldans",
+        "Phorma",
+        "Prologue",
+        "Mono Records (4)",
+        "OnlyHouseMusic",
+        "Elettronica Romana",
+        "Modyfier-Modifying",
+        "Intoxik",
+        "Clonk Records Digital, Clonk Records Digital",
+        "TantoQuanto",
+        "Suara"
+      ],
+      "bio": "Italian DJ and electronic music producer born in 1987 in Sardinia, Italy, based in Berlin. Owner of and co-founder of .",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Split Series 02",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Submerged",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Lucid Dreams",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Self Surrender",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Sai Matika",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Golden Scales",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Praya Dubia",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Drifting Northward EP",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Unda",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Challenger Deep",
+          "year": 2022,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/qML9gXP_JVSFjIh6WwKYEhtQm_8ReqhMMezCqg2113k/rs:fit/g:sm/q:90/h:840/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTg4MTU1/NC0xMzk0MDI5NTkz/LTQ2NjIuanBlZw.jpeg",
+          "width": 600,
+          "height": 840
+        }
+      ],
+      "externalUrls": [
+        "https://claudioprc.bandcamp.com/",
+        "https://www.facebook.com/ClaudioPRC",
+        "https://soundcloud.com/claudioprc"
+      ],
+      "imageTheme": "techno",
+      "mbid": "f96f7f02-56cd-4084-98bd-cb725073bfb9",
+      "discogsId": 881554,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/f96f7f02-56cd-4084-98bd-cb725073bfb9",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/881554",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "f96f7f02-56cd-4084-98bd-cb725073bfb9",
+          "type": "Person",
+          "gender": "male",
+          "country": "Berlin",
+          "disambiguation": "Italian techno producer",
+          "lifeSpan": {
+            "begin": "1987",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 881554,
+          "urls": [
+            "https://claudioprc.bandcamp.com/",
+            "https://www.facebook.com/ClaudioPRC",
+            "https://soundcloud.com/claudioprc"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.731Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "oscar-mulero",
+      "name": "Oscar Mulero",
+      "displayName": "Oscar Mulero",
+      "country": "Spain",
+      "aliases": [
+        "O. Mulero",
+        "Oscar Mulero Crecente",
+        "Mulero",
+        "OM",
+        "Óscar Mulero"
+      ],
+      "genres": [
+        "Techno"
+      ],
+      "labels": [
+        "Semantica Records",
+        "Inducted Waves",
+        "Granulart Recordings",
+        "Warm Up Recordings",
+        "SeekSickSound"
+      ],
+      "bio": "Oscar Mulero was born in Madrid, and is a techno DJ and producer. Mulero started DJing in 1988, and was the first Spanish DJ to become part of the Members Of Mayday. He established The Omen Club in Madrid in the early 90s. Mulero also uses the alias Doctor Smoke for his Drum 'n' Bass sessions, and owns the labels and . Contact: web@oscarmulero.com",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Part Of A Physical Creation EP",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Il Poema LP",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Above Us Today",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Modulations",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Viaje Interior",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Have You Ever Retired A Human By Mistake?",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Poisonality EP",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "The Stranger",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Untitled",
+          "year": 2023,
+          "label": "Semantica Records",
+          "role": "Main",
+          "format": "CDr, Comp, Ltd, Mixed, Gat"
+        },
+        {
+          "title": "Asteroidal Dust EP",
+          "year": 2022,
+          "label": "Inducted Waves",
+          "role": "Main",
+          "format": "2xFile, WAV, EP"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/d8bXkiC-8AMFtGFbUCr5LaUUjGluMMOW2fVAXQ0xwnw/rs:fit/g:sm/q:90/h:868/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTUxNTkt/MTYwMTU4NTI3Ny01/MTQ1LmpwZWc.jpeg",
+          "width": 600,
+          "height": 868
+        }
+      ],
+      "externalUrls": [
+        "https://www.facebook.com/dj.oscarmulero/",
+        "http://www.oscarmulero.com",
+        "https://oscarmulero-oficial.bandcamp.com/",
+        "http://www.myspace.com/oscarmulero"
+      ],
+      "imageTheme": "techno",
+      "mbid": "fefc8328-4ec3-4616-9303-862e8d4de4c4",
+      "discogsId": 5159,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/fefc8328-4ec3-4616-9303-862e8d4de4c4",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/5159",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "fefc8328-4ec3-4616-9303-862e8d4de4c4",
+          "type": "Person",
+          "gender": "male",
+          "country": "ES",
+          "disambiguation": "Spanish techno producer",
+          "lifeSpan": {
+            "begin": "1971",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 5159,
+          "urls": [
+            "https://www.facebook.com/dj.oscarmulero/",
+            "http://www.oscarmulero.com",
+            "https://oscarmulero-oficial.bandcamp.com/",
+            "http://www.myspace.com/oscarmulero"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.732Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "christian-wunsch",
+      "name": "Christian Wünsch",
+      "displayName": "Christian Wunsch",
+      "country": "Spain",
+      "aliases": [
+        "C. Wünsch",
+        "Chris Wunsch",
+        "Christian",
+        "Christian Wunch",
+        "Christian Wunsch",
+        "Christian Wünch",
+        "Cristian Wunsch",
+        "Wunsch, Christian",
+        "Wünsch"
+      ],
+      "genres": [
+        "techno",
+        "industrial techno",
+        "Techno"
+      ],
+      "labels": [
+        "Tsunami Records",
+        "Soma Quality Recordings",
+        "Ascend Recordings",
+        "Audiodrome",
+        "Sonido Denso S.L.",
+        "Resident Advisor Podcast"
+      ],
+      "bio": "Techno DJ, producer from Spain. Born in Monaco, he spent most of his life in the North of Spain. He started his own labels Tsunami Records and Nine Records.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Black Sun ",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Introspective",
+          "year": 2020,
+          "label": "Tsunami Records",
+          "role": "Main",
+          "format": "2x12\", Album, Cle"
+        },
+        {
+          "title": "The End of the Monarchies",
+          "year": 2020,
+          "label": "Tsunami Records",
+          "role": "Main",
+          "format": "2xFile, MP3, 320"
+        },
+        {
+          "title": " Killing the Planet",
+          "year": 2019,
+          "label": "Tsunami Records",
+          "role": "Main",
+          "format": "3xFile, FLAC, EP, los"
+        },
+        {
+          "title": "Abnormal Behaviour EP",
+          "year": 2019,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Simulated Reality",
+          "year": 2019,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Modern Theories of Genetics",
+          "year": 2018,
+          "label": "Tsunami Records",
+          "role": "Main",
+          "format": "8xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Multiverse",
+          "year": 2018,
+          "label": "Tsunami Records",
+          "role": "Main",
+          "format": "3xFile, MP3, 320"
+        },
+        {
+          "title": "Sadistic Rituals: The Remixes Part 1",
+          "year": 2018,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Sadistic Rituals",
+          "year": 2017,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/mCHOD7dpDTOdBsG9vy7i0_pb_EebxEWhjYTp1eMA7oU/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1OTYt/MTYyMjM3NDc3Ni0y/NTYxLmpwZWc.jpeg",
+          "width": 500,
+          "height": 500
+        }
+      ],
+      "externalUrls": [
+        "https://www.facebook.com/ChWunsch/",
+        "https://www.mixcloud.com/discover/christian-wunsch/"
+      ],
+      "imageTheme": "techno",
+      "mbid": "a4ec74be-22af-4471-a649-10e891623bbd",
+      "discogsId": 2596,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/a4ec74be-22af-4471-a649-10e891623bbd",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/2596",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "a4ec74be-22af-4471-a649-10e891623bbd",
+          "type": "Person",
+          "gender": "male",
+          "country": "ES",
+          "disambiguation": "",
+          "lifeSpan": {
+            "begin": "1969",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 2596,
+          "urls": [
+            "https://www.facebook.com/ChWunsch/",
+            "https://www.mixcloud.com/discover/christian-wunsch/"
+          ],
+          "dataQuality": "Correct"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.733Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "speedy-j",
+      "name": "Speedy J",
+      "displayName": "Speedy J",
+      "country": "Netherlands",
+      "aliases": [
+        "Speedy J.",
+        "\"Speedy J\"",
+        "D.J. Speedy J.",
+        "D.J.Speedy J.",
+        "Jochen Paap",
+        "SPD",
+        "SPDJ",
+        "Speed J.",
+        "Speedy",
+        "Speedy - J",
+        "Speedy G",
+        "Speedy G.",
+        "Speedy.J",
+        "SpeedyJ",
+        "Speedyj"
+      ],
+      "genres": [
+        "electronic",
+        "ambient",
+        "dutch",
+        "the netherlands",
+        "techno",
+        "minimal techno",
+        "glitch",
+        "european",
+        "warp",
+        "Techno"
+      ],
+      "labels": [
+        "Stoor",
+        "STOOR",
+        "Filth On Acid",
+        "Not On Label (Speedy J Self-released)",
+        "Not On Label (Tek Soldierz Self-Released)"
+      ],
+      "bio": "Electronic music producer from Rotterdam, The Netherlands (born 10 August 1969 in Rotterdam). After two albums of electronic listening music on the label Warp, he released two albums with a more experimental sounds in 1997 and 2000. The album Loudboxer (2002) saw a return to a more minimal style of techno. He collaborated with Mike Paradinas on the project Slag Boom Van Loon and also released two ambient albums for the FAX +49-69/450464 label under his real name. In 2008, Speedy J founded his own record label, Electric Deluxe, releasing his own music as well as records by Terence Fixmer, Gary Beck, Tommy Four Seven and others.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "808 180 30",
+          "year": 2026,
+          "label": "Stoor",
+          "role": "Main",
+          "format": "File, FLAC, Album, 24b"
+        },
+        {
+          "title": "808 100 10",
+          "year": 2026,
+          "label": "Stoor",
+          "role": "Main",
+          "format": "File, FLAC, Album, 24b"
+        },
+        {
+          "title": "STOOR 1",
+          "year": 2026,
+          "label": "STOOR",
+          "role": "Main",
+          "format": "4xFile, WAV, 24b"
+        },
+        {
+          "title": "808 180 30",
+          "year": 2026,
+          "label": "Stoor",
+          "role": "Main",
+          "format": "Lathe, 7\", S/Sided, Ltd, Yel"
+        },
+        {
+          "title": "STOOR Soundchecks 2",
+          "year": 2026,
+          "label": "Stoor",
+          "role": "Main",
+          "format": "4xFile, MP3, 320"
+        },
+        {
+          "title": "STOOR 2",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Transparent",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Walkman",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "STOOR Soundchecks 1",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Collabs 3000 2025 EP",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/3wzpF6Y5KyS6cXeoT_SqRiekVnX4EoqgrOgVbMQrY9o/rs:fit/g:sm/q:90/h:602/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0x/Nzc3NTQ4MDAxLTUy/ODIuanBlZw.jpeg",
+          "width": 600,
+          "height": 602
+        }
+      ],
+      "externalUrls": [
+        "http://www.speedyj.com",
+        "http://speedyj.bandcamp.com",
+        "http://www.instagram.com/speedyj_jochempaap",
+        "http://www.facebook.com/electricdeluxe",
+        "https://www.jochempaap.substack.com",
+        "http://en.wikipedia.org/wiki/Speedy_J",
+        "http://twitter.com/jochempaap"
+      ],
+      "imageTheme": "techno",
+      "mbid": "734fa82c-864e-468b-bee4-944cb4b1952b",
+      "discogsId": 823,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/734fa82c-864e-468b-bee4-944cb4b1952b",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/823",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "734fa82c-864e-468b-bee4-944cb4b1952b",
+          "type": "Person",
+          "gender": "male",
+          "country": "NL",
+          "disambiguation": "Dutch techno DJ/producer Jochem Paap",
+          "lifeSpan": {
+            "begin": "1969",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 823,
+          "urls": [
+            "http://www.speedyj.com",
+            "http://speedyj.bandcamp.com",
+            "http://www.instagram.com/speedyj_jochempaap",
+            "http://www.facebook.com/electricdeluxe",
+            "https://www.jochempaap.substack.com",
+            "http://en.wikipedia.org/wiki/Speedy_J",
+            "http://twitter.com/jochempaap"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.734Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "job-jobse",
+      "name": "Job Jobse",
+      "displayName": "Job Jobse",
+      "country": "Netherlands (based in Amsterdam)",
+      "aliases": [],
+      "genres": [
+        "Techno",
+        "House"
+      ],
+      "labels": [
+        "Dekmantel",
+        "Groove",
+        "Resident Advisor",
+        "De Vlieger",
+        "Trouw"
+      ],
+      "bio": "Dutch DJ and label manager",
+      "stats": {
+        "releaseCount": 7
+      },
+      "releases": [
+        {
+          "title": "Dekmantel Podcast 231",
+          "year": 2019,
+          "label": "Dekmantel",
+          "role": "Main",
+          "format": "File, MP3, Mixed, 320"
+        },
+        {
+          "title": "Groove DJ Mix",
+          "year": 2016,
+          "label": "Groove",
+          "role": "Main",
+          "format": "CD, Mixed"
+        },
+        {
+          "title": "RA.462",
+          "year": 2015,
+          "label": "Resident Advisor",
+          "role": "Main",
+          "format": "File, MP3, Mixed, 320"
+        },
+        {
+          "title": "Vrij Van Dromen",
+          "year": 2020,
+          "label": "De Vlieger",
+          "role": "Appearance",
+          "format": "LP, Album"
+        },
+        {
+          "title": "Life",
+          "year": 2018,
+          "label": "De Vlieger",
+          "role": "Appearance",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Trouw Tribute LP",
+          "year": 2014,
+          "label": "Trouw",
+          "role": "Appearance",
+          "format": "2xLP, Comp, Ltd"
+        },
+        {
+          "title": "Trouw Tribute LP",
+          "year": 2014,
+          "label": "Trouw",
+          "role": "TrackAppearance",
+          "format": "2xLP, Comp, Ltd"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/SOLhNQQ2RIadQ2gAc8icPDksPVUolYI21ERH6m_Ws5c/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQxNjk3/MTMtMTUzNzg4ODUw/MC03ODg0LnBuZw.jpeg",
+          "width": 600,
+          "height": 600
+        }
+      ],
+      "externalUrls": [
+        "https://www.residentadvisor.net/dj/jobjobse",
+        "https://soundcloud.com/jobjobse",
+        "https://www.facebook.com/jobjobse/",
+        "https://www.instagram.com/jobjobse/",
+        "https://twitter.com/jobjobse"
+      ],
+      "imageTheme": "techno",
+      "mbid": "5b518cd5-a599-4aec-bbaa-db2ff823fc11",
+      "discogsId": 4169713,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/5b518cd5-a599-4aec-bbaa-db2ff823fc11",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/4169713",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "5b518cd5-a599-4aec-bbaa-db2ff823fc11",
+          "type": "Person",
+          "gender": "male",
+          "country": "Amsterdam",
+          "disambiguation": "",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 4169713,
+          "urls": [
+            "https://www.residentadvisor.net/dj/jobjobse",
+            "https://soundcloud.com/jobjobse",
+            "https://www.facebook.com/jobjobse/",
+            "https://www.instagram.com/jobjobse/",
+            "https://twitter.com/jobjobse"
+          ],
+          "dataQuality": "Correct"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.737Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "jacek-sienkiewicz",
+      "name": "Jacek Sienkiewicz",
+      "displayName": "Jacek Sienkiewicz",
+      "country": "Poland",
+      "aliases": [
+        "Jacek Sienkievic",
+        "J. Sienkiewicz",
+        "Jacek",
+        "Jacek Sienkiewcz",
+        "Jack S.",
+        "Sienkiewicz"
+      ],
+      "genres": [
+        "Techno",
+        "Minimal"
+      ],
+      "labels": [
+        "International Day Off Records",
+        "Recognition",
+        "Cocoon Recordings",
+        "Bôłt",
+        "Instant Classic",
+        "Pets Recordings",
+        "Berlin Atonal Recordings",
+        "Recognition, Bocian Records",
+        "Recognition Digital",
+        "Sei Es Drum",
+        "Maruca"
+      ],
+      "bio": "Polish DJ and producer born in Warsaw in 1976. He started playing as a DJ in 1995. He is the founder of in 2000. Jacek Sienkiewicz (b. 1976) is considered to be one of the pioneers of current Polish electronic music. As a teenager, he started DJ’ing at the first wave of underground parties in early 90s Warsaw, playing mostly ambient music. Soon after, he decided to try his hand at proper music production. His live debut took place in 1996 at the Centre for Contemporary Arts as an accompaniment to a video performance. Three years later, his first self-released album appeared which was received enthusiastically worldwide, giving impetus to the idea of starting a record label Recognition. Since then, Sienkiewicz has released more than 40 vinyl EPs, either for his own imprint, or for other respected labels such as Klang Elektronik, Trapez, WMF, Smallville. Between 2002 and 2012 he collaborated with Frankfurt’s Cocoon Records, releasing four albums and several EPs for this then-important label. His records were played and strongly supported by renowned artists such as Sven Väth and Richie Hawtin; legendary producers like Ricardo Villalobos, Uwe Schmidt and recently, Max Loderbauer collaborated with Jacek during last decade. He has played all over the world, from big festivals like DEMF Detroit, Mutek Montreal, Transmediale Berlin to small, intimate gigs in underground clubs and bars. There is no doubt - Sienkiewicz knows all of his Detroit Techno/Chicago Acid House musical roots yet he creates signature sound that results from his highly original approach to modern electronic music production. Keeping far from current trends and fashions, he definitely chose the hard path to follow, fusing concrete beats with his organic and highly detailed soundscapes of melancholy. Apart from his brand new 5th album Drifting planned to be released on Recognition in June ’15, he is presently preoccupied with a search for new means of expression. Some of his forthcoming works were clearly created in more experimental and open-ended vein (he remains a fan of Coil, Autechre and vintage Polish Radio Experimental Studio sound). Through numerous events organised in his native Poland, he continues to promote quality music of all stripes, inviting high-valued international artists to play and collaborate, while a string of releases on Recognition by up-and-coming Polish talents is a substantial proof that a scene he co-created is developing into a right direction.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Pivot",
+          "year": 2024,
+          "label": "International Day Off Records",
+          "role": "Main",
+          "format": "12\", han"
+        },
+        {
+          "title": "Directions: Meaning & Truth",
+          "year": 2024,
+          "label": "Recognition",
+          "role": "Main",
+          "format": "13xFile, FLAC, Comp"
+        },
+        {
+          "title": "Pristine",
+          "year": 2022,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "20 Years Cocoon Recordings",
+          "year": 2021,
+          "label": "Cocoon Recordings",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Recognition Zero",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Krasz",
+          "year": 2021,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Stal",
+          "year": 2020,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Drogi",
+          "year": 2019,
+          "label": "Bôłt",
+          "role": "Main",
+          "format": "CD, Album"
+        },
+        {
+          "title": "IMOW",
+          "year": 2019,
+          "label": "Recognition",
+          "role": "Main",
+          "format": "LP, Album"
+        },
+        {
+          "title": "BTWN",
+          "year": 2019,
+          "label": "Recognition",
+          "role": "Main",
+          "format": "9xFile, FLAC, Album"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/O02EA8kphSOaAsbk-NFmC0SL3PhTsyOgl_ipewvl6uU/rs:fit/g:sm/q:90/h:457/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIxMDQt/MTQzMzc5MTM2OS0x/MjYyLmpwZWc.jpeg",
+          "width": 600,
+          "height": 457
+        }
+      ],
+      "externalUrls": [
+        "http://jaceksienkiewicz.com",
+        "https://soundcloud.com/jaceksienkiewicz",
+        "https://www.facebook.com/jacek.sienkiewicz",
+        "http://www.residentadvisor.net/dj/jaceksienkiewicz",
+        "https://jaceksienkiewicz.bandcamp.com/"
+      ],
+      "imageTheme": "techno",
+      "mbid": "9e572c24-f73c-4bfc-8090-154478c61cd6",
+      "discogsId": 2104,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/9e572c24-f73c-4bfc-8090-154478c61cd6",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/2104",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "9e572c24-f73c-4bfc-8090-154478c61cd6",
+          "type": "Person",
+          "gender": "male",
+          "country": "PL",
+          "disambiguation": "Polish DJ and producer",
+          "lifeSpan": {
+            "begin": "1976",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 2104,
+          "urls": [
+            "http://jaceksienkiewicz.com",
+            "https://soundcloud.com/jaceksienkiewicz",
+            "https://www.facebook.com/jacek.sienkiewicz",
+            "http://www.residentadvisor.net/dj/jaceksienkiewicz",
+            "https://jaceksienkiewicz.bandcamp.com/"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.738Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "jonas-kopp",
+      "name": "Jonas Kopp",
+      "displayName": "Jonas Kopp",
+      "country": "Argentina",
+      "aliases": [
+        "Jonas Koop",
+        "Jonatan Kopp",
+        "Jonathan Kopp"
+      ],
+      "genres": [
+        "techno",
+        "Techno"
+      ],
+      "labels": [
+        "Recorded Things",
+        "Evod Music",
+        "Derailed Records (3)",
+        "Abstract Mechanisms",
+        "Tremsix",
+        "Osmosis Records (4)",
+        "Prophet (4)",
+        "Thoughts.",
+        "Concepto Hipnotico"
+      ],
+      "bio": "Argentinian DJ and sound designer born in Buenos Aires in 1981. Founder of and .",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Unnamed Phenomenon EP",
+          "year": 2025,
+          "label": "Recorded Things",
+          "role": "Main",
+          "format": "6xFile, WAV, EP"
+        },
+        {
+          "title": "Chromo Sonic",
+          "year": 2025,
+          "label": "Evod Music",
+          "role": "Main",
+          "format": "7xFile, WAV"
+        },
+        {
+          "title": "Yellow Systems EP",
+          "year": 2025,
+          "label": "Derailed Records (3)",
+          "role": "Main",
+          "format": "4xFile, WAV, EP"
+        },
+        {
+          "title": "Ocher System",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Silver System",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Blue System",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Co.lab EP",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Red System EP",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Sintoni​́​a Atemporal",
+          "year": 2024,
+          "label": "Abstract Mechanisms",
+          "role": "Main",
+          "format": "2xFile, FLAC"
+        },
+        {
+          "title": "Less Is More Part 10",
+          "year": 2024,
+          "label": "Tremsix",
+          "role": "Main",
+          "format": "10xFile, FLAC, 24-"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/_sde2nF-LgNaevJ3gSninPTCiDo0OSSW7aa00Qf48UE/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTYzOTM3/OS0xNjgzMDIxMDYw/LTEzMTYucG5n.jpeg",
+          "width": 600,
+          "height": 450
+        }
+      ],
+      "externalUrls": [
+        "https://twitter.com/jonaskopp",
+        "https://soundcloud.com/jonas-kopp",
+        "https://www.youtube.com/@JonasKopp"
+      ],
+      "imageTheme": "techno",
+      "mbid": "bbac5fbd-383a-4aad-882e-d6d8974c02ef",
+      "discogsId": 639379,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/bbac5fbd-383a-4aad-882e-d6d8974c02ef",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/639379",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "bbac5fbd-383a-4aad-882e-d6d8974c02ef",
+          "type": "Person",
+          "gender": "male",
+          "country": "AR",
+          "disambiguation": "",
+          "lifeSpan": {
+            "begin": "1981",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 639379,
+          "urls": [
+            "https://twitter.com/jonaskopp",
+            "https://soundcloud.com/jonas-kopp",
+            "https://www.youtube.com/@JonasKopp"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.740Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "the-hacker",
+      "name": "The Hacker",
+      "displayName": "The Hacker",
+      "country": "France",
+      "aliases": [
+        "Michel Amato",
+        "Hacker",
+        "The Hacker (Michel Amato)",
+        "The Hucker"
+      ],
+      "genres": [
+        "techno",
+        "electroclash",
+        "Techno",
+        "Electro"
+      ],
+      "labels": [
+        "REKIDS",
+        "Phantasy Sound",
+        "Bordello A Parigi",
+        "Hot Banana",
+        "Sekhem",
+        "Rotation Records",
+        "Electronic Emergencies",
+        "Resident Advisor",
+        "Stilleben Records",
+        "Dark Entries",
+        "Dekmantel",
+        "Tsugi",
+        "Zone",
+        "Signature By Kiko",
+        "White Noise (4)",
+        "Tsuba Records",
+        "Different, Play It Again Sam [PIAS]",
+        "Planete Rouge Records, Planete Rouge Records",
+        "Uncivilized World",
+        "Different, [PIAS] Recordings, GoodLife",
+        "Different, PIAS France",
+        "UWe"
+      ],
+      "bio": "Musician / DJ from Grenoble, France. He has been producing music since 1989, with a high influence from Techno, Electro, Italo, EBM & New Wave. He is also known for his collaboration as duo [a8767].",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "We Come Alive",
+          "year": 2026,
+          "label": "REKIDS",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Puissance 4 / The Voyagers",
+          "year": 2025,
+          "label": "Phantasy Sound",
+          "role": "Main",
+          "format": "12\", Ltd"
+        },
+        {
+          "title": "The Emergency",
+          "year": 2025,
+          "label": "Bordello A Parigi",
+          "role": "Main",
+          "format": "12\", Maxi"
+        },
+        {
+          "title": "Puissance 4 / The Voyagers",
+          "year": 2025,
+          "label": "Phantasy Sound",
+          "role": "Main",
+          "format": "2xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Laser & Smoke ",
+          "year": 2025,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Pure Energy",
+          "year": 2024,
+          "label": "Hot Banana",
+          "role": "Main",
+          "format": "File, MP3, Single"
+        },
+        {
+          "title": "No Señor ",
+          "year": 2024,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Versus ",
+          "year": 2023,
+          "label": "Sekhem",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Red Team",
+          "year": 2023,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Just Play (Remixes)",
+          "year": 2022,
+          "label": "Rotation Records",
+          "role": "Main",
+          "format": "2xFile, MP3, EP, RM, 320"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/iLbGknKauI-WljDR4MzNTxF1WuEQKMNdzlK33j_uNS0/rs:fit/g:sm/q:90/h:501/w:502/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE3Mzct/MTQ3OTExNDk1Mi02/NTkzLnBuZw.jpeg",
+          "width": 502,
+          "height": 501
+        }
+      ],
+      "externalUrls": [
+        "http://the--hacker.bandcamp.com",
+        "http://www.facebook.com/DJTheHacker",
+        "http://www.instagram.com/the_hacker_amato",
+        "http://www.myspace.com/thehackergoodlife",
+        "http://soundcloud.com/the-hacker",
+        "http://en.wikipedia.org/wiki/The_Hacker",
+        "http://fr.wikipedia.org/wiki/The_Hacker",
+        "http://www.youtube.com/channel/UCJhfzmkvKYTloN1YruZRxIQ"
+      ],
+      "imageTheme": "techno",
+      "mbid": "e044fb9c-7c2e-48f7-81f6-ea2ae99d2ef0",
+      "discogsId": 1737,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/e044fb9c-7c2e-48f7-81f6-ea2ae99d2ef0",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/1737",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "e044fb9c-7c2e-48f7-81f6-ea2ae99d2ef0",
+          "type": "Person",
+          "gender": "male",
+          "country": "FR",
+          "disambiguation": "French electro/techno producer Michel Amato",
+          "lifeSpan": {
+            "begin": "1973",
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 1737,
+          "urls": [
+            "http://the--hacker.bandcamp.com",
+            "http://www.facebook.com/DJTheHacker",
+            "http://www.instagram.com/the_hacker_amato",
+            "http://www.myspace.com/thehackergoodlife",
+            "http://soundcloud.com/the-hacker",
+            "http://en.wikipedia.org/wiki/The_Hacker",
+            "http://fr.wikipedia.org/wiki/The_Hacker",
+            "http://www.youtube.com/channel/UCJhfzmkvKYTloN1YruZRxIQ"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.741Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "sunil-sharpe",
+      "name": "Sunil Sharpe",
+      "displayName": "Sunil Sharpe",
+      "country": "Ireland (based in Dublin)",
+      "aliases": [
+        "SS",
+        "Sunil Sharp"
+      ],
+      "genres": [
+        "Techno"
+      ],
+      "labels": [
+        "Haven (5)",
+        "Posh End Music",
+        "Analogue",
+        "BPitch Control",
+        "Jazz-O-Tech",
+        "Solid Steel Radio Show",
+        "On The Hoof",
+        "Resident Advisor",
+        "Brothers (3)",
+        "Trensmat",
+        "TheErraticPodcast",
+        "Electric Deluxe",
+        "Works The Long Nights",
+        "Electronique.it Podcast Series",
+        "Labrynth",
+        "Black Sun Records (6)",
+        "Bastardo Electrico",
+        "Open Source Records",
+        "Snork Enterprises",
+        "Overdraw",
+        "Moral Standards",
+        "ONNSET",
+        "Prole Beat",
+        "Takeover Recordings",
+        "Brawlcast",
+        "Psychonavigation Records",
+        "Nice & Nasty Records",
+        "MYRYRS",
+        "Midi Mode Records",
+        "DifferentSound"
+      ],
+      "bio": "Sunil Sharpe is a Ireland (based in Dublin)-based electronic music DJ and producer Irish DJ., known for Techno styles. Releases on labels including Haven (5), Posh End Music, Analogue. 50 releases on Discogs.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Grotteca EP",
+          "year": 2026,
+          "label": "Haven (5)",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Tar 43",
+          "year": 2026,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Rural Club Trax",
+          "year": 2025,
+          "label": "Posh End Music",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Sunil Sharpe • Endlec • Sedvs • Jerm",
+          "year": 2020,
+          "label": "Analogue",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Etaci",
+          "year": 2020,
+          "label": "BPitch Control",
+          "role": "Main",
+          "format": "File, MP3, 320"
+        },
+        {
+          "title": "Etaci",
+          "year": 2020,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Silent Rain EP",
+          "year": 2019,
+          "label": "Jazz-O-Tech",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Solid Steel Radio Show 12/1/2018 Hour 2",
+          "year": 2018,
+          "label": "Solid Steel Radio Show",
+          "role": "Main",
+          "format": "File, MP3, Mixed"
+        },
+        {
+          "title": "HOOF005",
+          "year": 2017,
+          "label": "On The Hoof",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Joyless Euphoria",
+          "year": 2017,
+          "label": null,
+          "role": "Main"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/A9xzhSXrJZJgX_GmPHf1PjEuYHVB7ZzaoYFHTkynj1E/rs:fit/g:sm/q:90/h:429/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIyMzUz/LTEzODYxODA3Njct/OTI2OC5wbmc.jpeg",
+          "width": 600,
+          "height": 429
+        }
+      ],
+      "externalUrls": [
+        "http://www.facebook.com/sunilsharpemusic",
+        "http://www.soundcloud.com/sunilsharpe"
+      ],
+      "imageTheme": "techno",
+      "mbid": "c7d7c3f1-c62e-4ed4-bbbb-293c58915b78",
+      "discogsId": 22353,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/c7d7c3f1-c62e-4ed4-bbbb-293c58915b78",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/22353",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "c7d7c3f1-c62e-4ed4-bbbb-293c58915b78",
+          "type": "Person",
+          "gender": "male",
+          "country": "Dublin",
+          "disambiguation": "Irish DJ",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 22353,
+          "urls": [
+            "http://www.facebook.com/sunilsharpemusic",
+            "http://www.soundcloud.com/sunilsharpe"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.742Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "samuli-kemppi",
+      "name": "Samuli Kemppi",
+      "displayName": "Samuli Kemppi",
+      "country": "Finland",
+      "aliases": [
+        "S. Kemppi",
+        "Samuel Kemppi"
+      ],
+      "genres": [
+        "Techno"
+      ],
+      "labels": [
+        "Concrete Records (4)",
+        "Hidden Tapes",
+        "Rhod Records",
+        "Technorama",
+        "Power Of Voltages",
+        "Deep Space Helsinki",
+        "RYC Podcast",
+        "Ghosts*",
+        "M_REC LTD",
+        "TheErraticPodcast",
+        "Chronicle (3)",
+        "CLFT",
+        "Other Heights",
+        "Labrynth",
+        "Komisch",
+        "Mote-Evolver",
+        "Prologue",
+        "Pakkas-levyt",
+        "Speculations LTD.",
+        "Utch Records",
+        "Eclectic Limited",
+        "Eclectic Digital Codec",
+        "Come In Records",
+        "Blacklabel Distillery",
+        "Relapso Records"
+      ],
+      "bio": "Finnish DJ and producer based in Helsinki.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Low Mileage",
+          "year": 2025,
+          "label": "Concrete Records (4)",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Cause And Effect",
+          "year": 2022,
+          "label": "Hidden Tapes",
+          "role": "Main",
+          "format": "7xFile, FLAC"
+        },
+        {
+          "title": "Cause And Effect",
+          "year": 2022,
+          "label": "Hidden Tapes",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "Huuto Pimeässä EP",
+          "year": 2022,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Reversal Rehearsals E.P",
+          "year": 2019,
+          "label": "Rhod Records",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Catalogue Of Errors ",
+          "year": 2019,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "Stories In BX",
+          "year": 2017,
+          "label": "Technorama",
+          "role": "Main",
+          "format": "12\""
+        },
+        {
+          "title": "New Iron Age EP",
+          "year": 2017,
+          "label": "Power Of Voltages",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Third After Last EP",
+          "year": 2017,
+          "label": "Power Of Voltages",
+          "role": "Main",
+          "format": "12\", EP"
+        },
+        {
+          "title": "Signal Three EP",
+          "year": 2016,
+          "label": "Deep Space Helsinki",
+          "role": "Main",
+          "format": "12\""
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/CsKqFHmcv76fnE4lkC4hZBgUp1_mx58V3DAHeu0OoFE/rs:fit/g:sm/q:90/h:700/w:494/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTMyNjkz/NC0xMzY2ODczODM3/LTE1NDcuanBlZw.jpeg",
+          "width": 494,
+          "height": 700
+        }
+      ],
+      "externalUrls": [
+        "http://samulikemppi-mote.bandcamp.com",
+        "http://www.facebook.com/samulikemppi",
+        "http://gigs.gigatools.com/user/Samulikemppi",
+        "http://linktr.ee/samulikemppi",
+        "http://soundcloud.com/samulikemppi",
+        "http://www.twitter.com/Kempomat",
+        "http://www.youtube.com/c/SamuliKemppi"
+      ],
+      "imageTheme": "techno",
+      "mbid": "ed442b01-8de1-4f0b-9188-e68b2960f050",
+      "discogsId": 326934,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/ed442b01-8de1-4f0b-9188-e68b2960f050",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/326934",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "ed442b01-8de1-4f0b-9188-e68b2960f050",
+          "type": "Person",
+          "gender": "male",
+          "country": "FI",
+          "disambiguation": "",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 326934,
+          "urls": [
+            "http://samulikemppi-mote.bandcamp.com",
+            "http://www.facebook.com/samulikemppi",
+            "http://gigs.gigatools.com/user/Samulikemppi",
+            "http://linktr.ee/samulikemppi",
+            "http://soundcloud.com/samulikemppi",
+            "http://www.twitter.com/Kempomat",
+            "http://www.youtube.com/c/SamuliKemppi"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.743Z",
+      "_sourceCount": 2
+    },
+    {
+      "slug": "deepchild",
+      "name": "Deepchild",
+      "displayName": "Deepchild",
+      "country": "Australia",
+      "aliases": [
+        "Deep Child",
+        "The Deep Child"
+      ],
+      "genres": [
+        "ambient",
+        "electronic",
+        "ambient techno",
+        "dub techno",
+        "Techno",
+        "Dub Techno"
+      ],
+      "labels": [
+        "Kneaded Pains",
+        "Facetoface",
+        "Deepchild / Seppüku / DCR",
+        "A Strangely Isolated Place",
+        "Goldmin Music",
+        "Harmonious Discord",
+        "Thoughtless Music",
+        "Thoughtless Music, Thoughtless Music",
+        "Affin",
+        "Seven Black",
+        "Trapez",
+        "BEEF Records",
+        "Beef Records",
+        "Sub Continental Dub",
+        "Anabatic Records",
+        "Resopal Schallware",
+        "Future Classic",
+        "Atollo Records",
+        "Hive",
+        "Dump Huck",
+        "Clan Analogue",
+        "Shameless Audio",
+        "Artreform"
+      ],
+      "bio": "Australian producer who has since relocated to Germany.",
+      "stats": {
+        "releaseCount": 50
+      },
+      "releases": [
+        {
+          "title": "Trashtalk",
+          "year": 2025,
+          "label": "Kneaded Pains",
+          "role": "Main",
+          "format": "2xFile, MP3, Single, 320"
+        },
+        {
+          "title": "Tears Of A Chord",
+          "year": 2025,
+          "label": "Facetoface",
+          "role": "Main",
+          "format": "8xFile, WAV"
+        },
+        {
+          "title": "Portals",
+          "year": 2023,
+          "label": "Deepchild / Seppüku / DCR",
+          "role": "Main",
+          "format": "11xFile, FLAC, Album"
+        },
+        {
+          "title": "Mycological Patterns",
+          "year": 2022,
+          "label": "A Strangely Isolated Place",
+          "role": "Main",
+          "format": "7xFile, FLAC, Album"
+        },
+        {
+          "title": "Fathersong",
+          "year": 2022,
+          "label": null,
+          "role": "Main"
+        },
+        {
+          "title": "N3U PROC355",
+          "year": 2021,
+          "label": "Deepchild / Seppüku / DCR",
+          "role": "Main",
+          "format": "3xFile, FLAC"
+        },
+        {
+          "title": "Thousand Plateaus",
+          "year": 2018,
+          "label": "Facetoface",
+          "role": "Main",
+          "format": "4xFile, MP3, EP, 320"
+        },
+        {
+          "title": "Baller - Part.1",
+          "year": 2016,
+          "label": "Goldmin Music",
+          "role": "Main",
+          "format": "3xFile, MP3, WAV, EP, 320"
+        },
+        {
+          "title": "Golden Moments In American Manufacturing",
+          "year": 2015,
+          "label": "Harmonious Discord",
+          "role": "Main",
+          "format": "5xFile, MP3, 320"
+        },
+        {
+          "title": "Slave Driver",
+          "year": 2014,
+          "label": "Thoughtless Music",
+          "role": "Main",
+          "format": "4xFile, MP3, 320"
+        }
+      ],
+      "images": [
+        {
+          "source": "discogs",
+          "uri": "https://i.discogs.com/Z5PfwLkdn_8nB3Xp2KzjOeBamaassaTNsru6LRgzM7E/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTg5NDQy/LTEyNTg5MTA3NDIu/anBlZw.jpeg",
+          "width": 600,
+          "height": 450
+        }
+      ],
+      "externalUrls": [
+        "http://www.deepchild.com/",
+        "http://www.myspace.com/deepchile"
+      ],
+      "imageTheme": "techno",
+      "mbid": "b1eadc42-15b6-486f-9ec8-47c684bf8906",
+      "discogsId": 89442,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/b1eadc42-15b6-486f-9ec8-47c684bf8906",
+          "status": "found"
+        },
+        {
+          "label": "Discogs",
+          "url": "https://www.discogs.com/artist/89442",
+          "status": "found"
+        }
+      ],
+      "rawSources": {
+        "musicbrainz": {
+          "found": true,
+          "id": "b1eadc42-15b6-486f-9ec8-47c684bf8906",
+          "type": "Person",
+          "gender": "male",
+          "country": "AU",
+          "disambiguation": "",
+          "lifeSpan": {
+            "ended": null
+          }
+        },
+        "discogs": {
+          "found": true,
+          "id": 89442,
+          "urls": [
+            "http://www.deepchild.com/",
+            "http://www.myspace.com/deepchile"
+          ],
+          "dataQuality": "Needs Vote"
+        }
+      },
+      "generatedAt": "2026-06-19T16:51:44.744Z",
+      "_sourceCount": 2
+    }
+  ]
+};

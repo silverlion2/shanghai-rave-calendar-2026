@@ -1,0 +1,282 @@
+{
+  "found": true,
+  "id": 1093947,
+  "name": "DJ Nobu",
+  "profile": "",
+  "nameVariations": [
+    "Nobu"
+  ],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "https://dj-nobu.bandcamp.com/",
+    "https://ra.co/dj/djnobu",
+    "https://www.facebook.com/profile.php?id=100044539925039",
+    "https://www.instagram.com/dj_nobu_ft/",
+    "https://myspace.com/djnobuft",
+    "https://soundcloud.com/djnobu_bitta",
+    "http://twitter.com/dj_nobu_ft"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/8UvoIFn_P4mqa0iH_GscKGXZ7kGKdtxYQFMaBu2CCW8/rs:fit/g:sm/q:90/h:876/w:583/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwOTM5/NDctMTQ1NzE4MTI3/My01OTgwLmpwZWc.jpeg",
+      "width": 583,
+      "height": 876
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/opFpo4M9cnOy0nJplILlg_MgPMkfT2k_ovBcxblZPTs/rs:fit/g:sm/q:90/h:876/w:583/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwOTM5/NDctMTQ1NzE4MTM5/Ny01NzY2LmpwZWc.jpeg",
+      "width": 583,
+      "height": 876
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/idzYCNg5knPkYLoWTqdYIQ77-mgoPG1l9iflNkSvd-c/rs:fit/g:sm/q:90/h:307/w:460/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwOTM5/NDctMTIxMzAwMjk2/Ny5qcGVn.jpeg",
+      "width": 460,
+      "height": 307
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "fabric Originals",
+    "Non Series",
+    "Kvalia",
+    "Bitta",
+    "Cav Empt",
+    "Fleetway Tapes",
+    "No 'Label' (2)",
+    "INDUSTRIAL JP",
+    "Grasswaxx Recordings",
+    "A Colourful Storm",
+    "Dekmantel",
+    "Tearbridge Records",
+    "Resident Advisor",
+    "Soul Aid",
+    "Japonica",
+    "Future Terror",
+    "Zi-Koo, Lastrum",
+    "Dynamic Reflection",
+    "Katharsis Recordings",
+    "Nous'klaer Audio",
+    "Aum Recordings",
+    "Dublab",
+    "Empiric Records",
+    "BleeD (3)"
+  ],
+  "releases": [
+    {
+      "title": "Shō ",
+      "year": 2026,
+      "label": "fabric Originals",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Flares / 泡 (Abuku)",
+      "year": 2024,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Varios II",
+      "year": 2023,
+      "label": "Non Series",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Hiiro",
+      "year": 2022,
+      "label": "Kvalia",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Extra Tools 2",
+      "year": 2021,
+      "label": "Bitta",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Nepia",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Föllakzoid IIII Remixes",
+      "year": 2020,
+      "label": "Bitta",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Recorded live at 対人対物無制限 (Taijin-Taibutsu Museigen) Tokyo, 12 March 2020",
+      "year": 2020,
+      "label": "Cav Empt",
+      "role": "Main",
+      "format": "Cass, Mixed, C60"
+    },
+    {
+      "title": "Live at Unit",
+      "year": 2020,
+      "label": "Fleetway Tapes",
+      "role": "Main",
+      "format": "Cass, Mixed, Mixtape"
+    },
+    {
+      "title": "Hidden Place",
+      "year": 2020,
+      "label": "Bitta",
+      "role": "Main",
+      "format": "6xFile, FLAC, EP"
+    },
+    {
+      "title": "Summerly",
+      "year": 2020,
+      "label": "Bitta",
+      "role": "Main",
+      "format": "2xFile, FLAC, EP"
+    },
+    {
+      "title": "On-Netoh",
+      "year": 2019,
+      "label": "No 'Label' (2)",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Extra Tools",
+      "year": 2019,
+      "label": "Bitta",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Beyond Space And Time 001",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Toyo Vinyl",
+      "year": 2018,
+      "label": "INDUSTRIAL JP",
+      "role": "Main",
+      "format": "7\", EP, RSD, Ltd"
+    },
+    {
+      "title": "Koko ",
+      "year": 2017,
+      "label": "Bitta",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "22O E.P.",
+      "year": 2017,
+      "label": "Grasswaxx Recordings",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "A Colourful Storm 050",
+      "year": 2015,
+      "label": "A Colourful Storm",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "Dekmantel Podcast 042",
+      "year": 2015,
+      "label": "Dekmantel",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "Nuit Noire",
+      "year": 2015,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Crustal Movement Volume 01 - Dream Into Dream ",
+      "year": 2013,
+      "label": "Tearbridge Records",
+      "role": "Main",
+      "format": "CD, Mixed"
+    },
+    {
+      "title": "Canadian Bellfield / Untitled",
+      "year": 2013,
+      "label": "Bitta",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "RA.294",
+      "year": 2012,
+      "label": "Resident Advisor",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 160"
+    },
+    {
+      "title": "Draw / Untitled",
+      "year": 2012,
+      "label": "Bitta",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "011 E.P. Remix",
+      "year": 2011,
+      "label": "Grasswaxx Recordings",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "We Are...",
+      "year": 2011,
+      "label": "Soul Aid",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Mariana",
+      "year": 2010,
+      "label": "Japonica",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "011 E.P.",
+      "year": 2010,
+      "label": "Grasswaxx Recordings",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "On",
+      "year": 2010,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Last Call Mix Vol.3",
+      "year": 2009,
+      "label": "Future Terror",
+      "role": "Main",
+      "format": "CD, Mixed"
+    }
+  ],
+  "releaseCount": 50,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/1093947"
+  },
+  "_cachedAt": 1781887621529
+}

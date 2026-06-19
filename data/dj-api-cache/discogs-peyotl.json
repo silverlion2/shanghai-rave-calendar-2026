@@ -1,0 +1,32 @@
+{
+  "found": true,
+  "id": 1112432,
+  "name": "Peyotl",
+  "profile": "",
+  "nameVariations": [],
+  "members": [],
+  "groups": [],
+  "urls": [],
+  "images": [],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Not On Label (D'Oz Self-released)"
+  ],
+  "releases": [
+    {
+      "title": "2000-2005",
+      "year": 2005,
+      "label": "Not On Label (D'Oz Self-released)",
+      "role": "Producer",
+      "format": "CD, Comp"
+    }
+  ],
+  "releaseCount": 1,
+  "dataQuality": "Needs Major Changes",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/1112432"
+  },
+  "_cachedAt": 1781889075331
+}

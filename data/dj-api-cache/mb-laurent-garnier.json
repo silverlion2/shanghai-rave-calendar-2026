@@ -1,0 +1,32 @@
+{
+  "found": true,
+  "id": "ec477866-bfaa-48e0-affd-1c151ef61b7b",
+  "name": "Laurent Garnier",
+  "sortName": "Garnier, Laurent",
+  "type": "Person",
+  "gender": "male",
+  "country": "FR",
+  "disambiguation": "",
+  "lifeSpan": {
+    "begin": "1966-02-01",
+    "ended": null
+  },
+  "aliases": [
+    "Laurent Denis Garnier",
+    "Laurant Garnier"
+  ],
+  "tags": [
+    "electronic",
+    "techno",
+    "dance and electronica",
+    "warp",
+    "european",
+    "french"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 1202
+  },
+  "_cachedAt": 1781887641591
+}

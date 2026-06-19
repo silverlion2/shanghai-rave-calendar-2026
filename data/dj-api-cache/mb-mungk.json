@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "14b4c87f-04b1-4ed8-8018-159ce5dee54e",
+  "name": "Mungk",
+  "sortName": "Mungk",
+  "type": "Person",
+  "gender": "male",
+  "country": "Leeds",
+  "disambiguation": "UK dubstep producer",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 9
+  },
+  "_cachedAt": 1781886582979
+}

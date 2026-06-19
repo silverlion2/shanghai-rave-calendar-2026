@@ -1,0 +1,270 @@
+{
+  "found": true,
+  "id": 89442,
+  "name": "Deepchild",
+  "profile": "Australian producer who has since relocated to Germany.",
+  "nameVariations": [
+    "Deep Child",
+    "The Deep Child"
+  ],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "http://www.deepchild.com/",
+    "http://www.myspace.com/deepchile"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/Z5PfwLkdn_8nB3Xp2KzjOeBamaassaTNsru6LRgzM7E/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTg5NDQy/LTEyNTg5MTA3NDIu/anBlZw.jpeg",
+      "width": 600,
+      "height": 450
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/gwKce5N4nMEf2EgzvyjmaKYSgrmOWrAvpxoCeCoYpvs/rs:fit/g:sm/q:90/h:700/w:466/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTg5NDQy/LTEyNTg5MTA3Njcu/anBlZw.jpeg",
+      "width": 466,
+      "height": 700
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Kneaded Pains",
+    "Facetoface",
+    "Deepchild / Seppüku / DCR",
+    "A Strangely Isolated Place",
+    "Goldmin Music",
+    "Harmonious Discord",
+    "Thoughtless Music",
+    "Thoughtless Music, Thoughtless Music",
+    "Affin",
+    "Seven Black",
+    "Trapez",
+    "BEEF Records",
+    "Beef Records",
+    "Sub Continental Dub",
+    "Anabatic Records",
+    "Resopal Schallware",
+    "Future Classic",
+    "Atollo Records",
+    "Hive",
+    "Dump Huck",
+    "Clan Analogue",
+    "Shameless Audio",
+    "Artreform"
+  ],
+  "releases": [
+    {
+      "title": "Trashtalk",
+      "year": 2025,
+      "label": "Kneaded Pains",
+      "role": "Main",
+      "format": "2xFile, MP3, Single, 320"
+    },
+    {
+      "title": "Tears Of A Chord",
+      "year": 2025,
+      "label": "Facetoface",
+      "role": "Main",
+      "format": "8xFile, WAV"
+    },
+    {
+      "title": "Portals",
+      "year": 2023,
+      "label": "Deepchild / Seppüku / DCR",
+      "role": "Main",
+      "format": "11xFile, FLAC, Album"
+    },
+    {
+      "title": "Mycological Patterns",
+      "year": 2022,
+      "label": "A Strangely Isolated Place",
+      "role": "Main",
+      "format": "7xFile, FLAC, Album"
+    },
+    {
+      "title": "Fathersong",
+      "year": 2022,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "N3U PROC355",
+      "year": 2021,
+      "label": "Deepchild / Seppüku / DCR",
+      "role": "Main",
+      "format": "3xFile, FLAC"
+    },
+    {
+      "title": "Thousand Plateaus",
+      "year": 2018,
+      "label": "Facetoface",
+      "role": "Main",
+      "format": "4xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Baller - Part.1",
+      "year": 2016,
+      "label": "Goldmin Music",
+      "role": "Main",
+      "format": "3xFile, MP3, WAV, EP, 320"
+    },
+    {
+      "title": "Golden Moments In American Manufacturing",
+      "year": 2015,
+      "label": "Harmonious Discord",
+      "role": "Main",
+      "format": "5xFile, MP3, 320"
+    },
+    {
+      "title": "Slave Driver",
+      "year": 2014,
+      "label": "Thoughtless Music",
+      "role": "Main",
+      "format": "4xFile, MP3, 320"
+    },
+    {
+      "title": "Haitian Rum Runner",
+      "year": 2014,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "I Woke And You Were Smiling",
+      "year": 2013,
+      "label": "Thoughtless Music, Thoughtless Music",
+      "role": "Main",
+      "format": "5xFile, MP3, Single, 320"
+    },
+    {
+      "title": "Dirt Thief",
+      "year": 2013,
+      "label": "Thoughtless Music",
+      "role": "Main",
+      "format": "5xFile, MP3, 320"
+    },
+    {
+      "title": "Bethania ",
+      "year": 2013,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Cold Work / Rachel's Shadow",
+      "year": 2012,
+      "label": "Affin",
+      "role": "Main",
+      "format": "6xFile, WAV"
+    },
+    {
+      "title": "Virgin Killer EP",
+      "year": 2012,
+      "label": "Seven Black",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Riyadh",
+      "year": 2012,
+      "label": "Thoughtless Music",
+      "role": "Main",
+      "format": "4xFile, MP3, Single, 320"
+    },
+    {
+      "title": "Neukölln Burning",
+      "year": 2012,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Skunk Disco",
+      "year": 2011,
+      "label": "Affin",
+      "role": "Main",
+      "format": "3xFile, MP3, 320"
+    },
+    {
+      "title": "Talk To Me",
+      "year": 2011,
+      "label": "Trapez",
+      "role": "Main",
+      "format": "7xFile, MP3, 320"
+    },
+    {
+      "title": "We Can't Go Back",
+      "year": 2011,
+      "label": "Trapez",
+      "role": "Main",
+      "format": "5xFile, MP3, 320"
+    },
+    {
+      "title": "The Suffering Ones",
+      "year": 2011,
+      "label": "Thoughtless Music",
+      "role": "Main",
+      "format": "3xFile, MP3, 320"
+    },
+    {
+      "title": "Gnade Und Vergessen",
+      "year": 2011,
+      "label": "Affin",
+      "role": "Main",
+      "format": "4xFile, WAV"
+    },
+    {
+      "title": "The Suffering Remixed",
+      "year": 2011,
+      "label": "Thoughtless Music",
+      "role": "Main",
+      "format": "8xFile, WAV, Album"
+    },
+    {
+      "title": "Stadtkind",
+      "year": 2010,
+      "label": "Trapez",
+      "role": "Main",
+      "format": "5xFile, MP3, 320"
+    },
+    {
+      "title": "Glitches Ain't Ship",
+      "year": 2010,
+      "label": "Affin",
+      "role": "Main",
+      "format": "2xFile, MP3, 320"
+    },
+    {
+      "title": "Reworks Pt.3",
+      "year": 2010,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Fire",
+      "year": 2010,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Muppet Grind",
+      "year": 2009,
+      "label": "BEEF Records",
+      "role": "Main",
+      "format": "4xFile, MP3, 320"
+    },
+    {
+      "title": "Claps",
+      "year": 2009,
+      "label": "Beef Records",
+      "role": "Main",
+      "format": "3xFile, MP3, 320"
+    }
+  ],
+  "releaseCount": 50,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/89442"
+  },
+  "_cachedAt": 1781887788669
+}

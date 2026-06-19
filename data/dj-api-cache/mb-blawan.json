@@ -1,0 +1,26 @@
+{
+  "found": true,
+  "id": "c27d4389-390e-497c-9a41-dd446ace742c",
+  "name": "Blawan",
+  "sortName": "Blawan",
+  "type": "Person",
+  "gender": "male",
+  "country": "GB",
+  "disambiguation": "British techno producer & DJ",
+  "lifeSpan": {
+    "begin": "1987",
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [
+    "electronic",
+    "techno",
+    "industrial techno"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 5
+  },
+  "_cachedAt": 1781887486497
+}

@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "73fd0400-9bb0-414f-8588-f50d2f542434",
+  "name": "Gips",
+  "sortName": "Gips",
+  "type": "Person",
+  "gender": "male",
+  "country": null,
+  "disambiguation": "Rappeur français",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 155
+  },
+  "_cachedAt": 1781886284329
+}

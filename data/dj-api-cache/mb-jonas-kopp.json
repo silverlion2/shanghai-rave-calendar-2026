@@ -1,0 +1,26 @@
+{
+  "found": true,
+  "id": "bbac5fbd-383a-4aad-882e-d6d8974c02ef",
+  "name": "Jonas Kopp",
+  "sortName": "Kopp, Jonas",
+  "type": "Person",
+  "gender": "male",
+  "country": "AR",
+  "disambiguation": "",
+  "lifeSpan": {
+    "begin": "1981",
+    "ended": null
+  },
+  "aliases": [
+    "Jonas Koop"
+  ],
+  "tags": [
+    "techno"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 1636
+  },
+  "_cachedAt": 1781887744399
+}

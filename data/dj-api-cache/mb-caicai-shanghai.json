@@ -1,0 +1,22 @@
+{
+  "found": true,
+  "id": "a93f51be-386d-4e5b-9555-6b1273c26902",
+  "name": "Shanghai",
+  "sortName": "Shanghai",
+  "type": "Group",
+  "gender": null,
+  "country": "SE",
+  "disambiguation": "Swedish 80s synth-pop band",
+  "lifeSpan": {
+    "begin": "1984",
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 146
+  },
+  "_cachedAt": 1781885081695
+}

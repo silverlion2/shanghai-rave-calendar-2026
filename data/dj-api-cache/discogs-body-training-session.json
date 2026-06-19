@@ -1,0 +1,115 @@
+{
+  "found": true,
+  "id": 1748463,
+  "name": "Tim Reece",
+  "profile": "Timothy Reece was born in San Diego, California in 1977. He is an accomplished musician, visual artist and poet. Timothy has played drums for The Album Leaf, Via Satellite, BULL SESSION, Limber Wolf and his electronic alter ego, Mass Praktikal. He passed away in Denver, CO, in May 2017.\r\n\r\nTimothy's artwork has become an extension of his career and travels as a musician. Prior to touring with post-rock bands he earned a BA in Psychology, minoring in Visual Art-Painting.\r\nHis paintings and drawings have been featured in various solo and group exhibitions, and private collections, album artworks and book covers.\r\n\r\nHe recorded and performed with The Album Leaf from 2001 to 2010, with whom he toured extensively in support of Sigur Ros.\r\nHis painting was used as the cover art for the album \"In a Safe Place\", on Sub Pop Records.\r\nIn 2010, he moved to Denver, became the founding general manager of the School of Rock Aurora and continued to create music & art and work as drum instructor.\r\nAugust 2016 he was diagnosed with Stage 4 Cancer. A GoFundMe campaign was set up to help curb his costs as he underwent Chemotherapy treatment. \r\nAs a vegetarian of over 20 years, a certified yoga practitioner, and even at one time in his childhood a candidate for Olympic Training as a gymnast, Tim valued physical activity and proper care of his body, which made the news surprising.\r\nIn March 27, 2017 he released his debut solo record 'To plan is a luxury - to dream, a birthright. under the name Mass Praktikal on Not Art Records via Bandcamp.\r\nIt had a successful album release party on April 8 in Brooklyn, which Tim was unable to attend due to his health. His band Via Satellite were in the last stages of completing their final album, 'A Thousand Mountains.'\r\n\r\nIn April 2017, he just finished and printed a poetry book titled, 'A Thousand Loves On Time'.",
+  "nameVariations": [
+    "Timothy C. Reece",
+    "Timothy Reece"
+  ],
+  "members": [],
+  "groups": [
+    "The Album Leaf",
+    "Via Satellite"
+  ],
+  "urls": [
+    "https://www.booster.com/team-tim-school-of-rock-aurora",
+    "https://www.gofundme.com/2rgur3uc",
+    "https://masspraktikal.bandcamp.com/",
+    "https://www.timothyreece.com/",
+    "https://www.masspraktikal.com/",
+    "https://www.facebook.com/tim.reece.714/",
+    "https://www.instagram.com/tim_reece/",
+    "https://soundcloud.com/the-mass-praktikal"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/7f0-gRRUo3fj-7RFcoWXdPDhSaODV79aEr8apE-y60s/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE3NDg0/NjMtMTQ5NTAwNzI2/OS01MTI2LmpwZWc.jpeg",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/v7gAMKQMMM8CuqfDjDMHTxbX9qNv1SYghj2kj3RacNQ/rs:fit/g:sm/q:90/h:399/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE3NDg0/NjMtMTQ5NTAwNzQw/Ny05NDkxLmpwZWc.jpeg",
+      "width": 600,
+      "height": 399
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Pseudocool Records",
+    "Echodiscs",
+    "Loud + Clear Records",
+    "Not On Label (The Displaced Self-released)"
+  ],
+  "releases": [
+    {
+      "title": "re:Public",
+      "year": 2003,
+      "label": "Pseudocool Records",
+      "role": "Remix",
+      "format": "CD, Enh"
+    },
+    {
+      "title": "A Chorus Of Storytellers",
+      "year": 2010,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Observatory (The Echoes Living Room Concerts Volume 11)",
+      "year": 2005,
+      "label": "Echodiscs",
+      "role": "Appearance",
+      "format": "CD, Album"
+    },
+    {
+      "title": "Manuok",
+      "year": 2005,
+      "label": "Loud + Clear Records",
+      "role": "Appearance",
+      "format": "CD, Album"
+    },
+    {
+      "title": "Seal Beach EP",
+      "year": 2005,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Cities Are Temples",
+      "year": 2004,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "In A Safe Place",
+      "year": 2004,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "¡Traffico!",
+      "year": 2002,
+      "label": "Pseudocool Records",
+      "role": "Appearance",
+      "format": "CD, Album"
+    },
+    {
+      "title": "Nine Tracks",
+      "year": 2001,
+      "label": "Not On Label (The Displaced Self-released)",
+      "role": "Appearance",
+      "format": "CDr, Album"
+    }
+  ],
+  "releaseCount": 9,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/1748463"
+  },
+  "_cachedAt": 1781889733704
+}

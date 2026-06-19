@@ -1,0 +1,22 @@
+{
+  "found": true,
+  "id": "c1e2f905-2ef2-4f2d-8e9a-c5959573b7ec",
+  "name": "nao",
+  "sortName": "nao",
+  "type": "Person",
+  "gender": "female",
+  "country": "JP",
+  "disambiguation": "former fripSide member",
+  "lifeSpan": {
+    "begin": "1985-01-26",
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 2034
+  },
+  "_cachedAt": 1781885119787
+}

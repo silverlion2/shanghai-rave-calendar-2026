@@ -1,0 +1,61 @@
+{
+  "found": true,
+  "id": 1927595,
+  "name": "Mamayo",
+  "profile": "Mamayo is the inspiration of [a424534]. She has played bass for [a14906], [a73194], [a103577], [a763], [a17212], [a90541] and [a72308] and more recently, [a37729].",
+  "nameVariations": [],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "https://www.facebook.com/yolanda.charles",
+    "https://twitter.com/yobasscharles",
+    "https://myspace.com/yolandacharles",
+    "https://en.wikipedia.org/wiki/Yolanda_Charles",
+    "https://www.imdb.com/name/nm1139418/"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/dysrJs_vafIaN4W_8iTYx2jqICLenqa3N9KYXVUVQAo/rs:fit/g:sm/q:90/h:393/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE5Mjc1/OTUtMTQxNjA2Mzg0/Mi00OTQ4LmpwZWc.jpeg",
+      "width": 600,
+      "height": 393
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Not On Label (Mamayo Self-released)",
+    "Sony BMG Music Entertainment",
+    "Soul Unsigned"
+  ],
+  "releases": [
+    {
+      "title": "The Game",
+      "year": 2005,
+      "label": "Not On Label (Mamayo Self-released)",
+      "role": "Main",
+      "format": "CD, Album"
+    },
+    {
+      "title": "American Daylight",
+      "year": 2005,
+      "label": "Sony BMG Music Entertainment",
+      "role": "Appearance",
+      "format": "CD"
+    },
+    {
+      "title": "The Contemporary Soul Songbook 3",
+      "year": 2010,
+      "label": "Soul Unsigned",
+      "role": "TrackAppearance",
+      "format": "CD, Comp"
+    }
+  ],
+  "releaseCount": 3,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/1927595"
+  },
+  "_cachedAt": 1781886157387
+}

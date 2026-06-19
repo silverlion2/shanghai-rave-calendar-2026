@@ -1,0 +1,30 @@
+{
+  "found": true,
+  "id": "57dd6359-f4ef-422a-9566-b8f54a0904fe",
+  "name": "Juan Atkins",
+  "sortName": "Atkins, Juan",
+  "type": "Person",
+  "gender": "male",
+  "country": "US",
+  "disambiguation": "",
+  "lifeSpan": {
+    "begin": "1962-09-12",
+    "ended": null
+  },
+  "aliases": [
+    "Magic Juan",
+    "Juan Owen Atkins"
+  ],
+  "tags": [
+    "electronic",
+    "electro",
+    "techno",
+    "detroit techno"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 4286
+  },
+  "_cachedAt": 1781887576770
+}

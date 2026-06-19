@@ -1,0 +1,2123 @@
+{
+  "totalEvents": 120,
+  "totalUniqueDJs": 262,
+  "categories": {
+    "hasFullData": 130,
+    "hasBasicData": 1,
+    "imageOnly": 128,
+    "missingInDb": 3
+  },
+  "pendingForAPI": [
+    {
+      "slug": "oolong",
+      "name": "OoLONG",
+      "eventCount": 2
+    },
+    {
+      "slug": "kilo-vee",
+      "name": "Kilo Vee",
+      "eventCount": 2
+    },
+    {
+      "slug": "zean",
+      "name": "Zean",
+      "eventCount": 2
+    },
+    {
+      "slug": "wataru",
+      "name": "WATARU",
+      "eventCount": 2
+    },
+    {
+      "slug": "kalapas",
+      "name": "Kalapas",
+      "eventCount": 1
+    },
+    {
+      "slug": "fractale",
+      "name": "Fractale",
+      "eventCount": 1
+    },
+    {
+      "slug": "aho",
+      "name": "Aho",
+      "eventCount": 1
+    },
+    {
+      "slug": "yadong",
+      "name": "Yadong",
+      "eventCount": 1
+    },
+    {
+      "slug": "dean-chew",
+      "name": "Dean Chew",
+      "eventCount": 1
+    },
+    {
+      "slug": "paradice-sinema",
+      "name": "Paradice Sinema",
+      "eventCount": 1
+    },
+    {
+      "slug": "mssingno",
+      "name": "MssingNo",
+      "eventCount": 1
+    },
+    {
+      "slug": "sai-g",
+      "name": "SAI G",
+      "eventCount": 1
+    },
+    {
+      "slug": "baadaam",
+      "name": "Baadaam",
+      "eventCount": 1
+    },
+    {
+      "slug": "jane",
+      "name": "Jane",
+      "eventCount": 1
+    },
+    {
+      "slug": "tom-yeti",
+      "name": "Tom yeti",
+      "eventCount": 1
+    },
+    {
+      "slug": "maguro",
+      "name": "Maguro",
+      "eventCount": 1
+    },
+    {
+      "slug": "dj-doggy",
+      "name": "DJ Doggy",
+      "eventCount": 1
+    },
+    {
+      "slug": "marcos-godoy",
+      "name": "Marcos Godoy",
+      "eventCount": 1
+    },
+    {
+      "slug": "nata-lee",
+      "name": "Nata Lee",
+      "eventCount": 1
+    },
+    {
+      "slug": "stefano-dvt",
+      "name": "Stefano Dvt",
+      "eventCount": 1
+    },
+    {
+      "slug": "janein",
+      "name": "JANEIN",
+      "eventCount": 1
+    },
+    {
+      "slug": "peyotl",
+      "name": "Peyotl",
+      "eventCount": 1
+    },
+    {
+      "slug": "juliano-allgayer",
+      "name": "Juliano Allgayer",
+      "eventCount": 1
+    },
+    {
+      "slug": "ben-moon",
+      "name": "Ben Moon",
+      "eventCount": 1
+    },
+    {
+      "slug": "odd",
+      "name": "Odd",
+      "eventCount": 1
+    },
+    {
+      "slug": "tham",
+      "name": "Tham",
+      "eventCount": 1
+    },
+    {
+      "slug": "saturn",
+      "name": "Saturn",
+      "eventCount": 1
+    },
+    {
+      "slug": "ro",
+      "name": "RO",
+      "eventCount": 1
+    },
+    {
+      "slug": "selfish-b2b-nabel",
+      "name": "SELFISH b2b NABEL",
+      "eventCount": 1
+    },
+    {
+      "slug": "qiuqiu",
+      "name": "QiuQiu",
+      "eventCount": 1
+    },
+    {
+      "slug": "acierate",
+      "name": "Acierate",
+      "eventCount": 1
+    },
+    {
+      "slug": "the-brvtalist",
+      "name": "The Brvtalist",
+      "eventCount": 1
+    },
+    {
+      "slug": "dj-wife",
+      "name": "DJ Wife",
+      "eventCount": 1
+    },
+    {
+      "slug": "luxixi-live",
+      "name": "Luxixi (live)",
+      "eventCount": 1
+    },
+    {
+      "slug": "devil-s-hole",
+      "name": "Devil's Hole",
+      "eventCount": 1
+    },
+    {
+      "slug": "tom-price",
+      "name": "Tom Price",
+      "eventCount": 1
+    },
+    {
+      "slug": "simon-adams",
+      "name": "Simon Adams",
+      "eventCount": 1
+    },
+    {
+      "slug": "cai-pas",
+      "name": "Cai Pas",
+      "eventCount": 1
+    },
+    {
+      "slug": "martin-ma",
+      "name": "Martin Ma",
+      "eventCount": 1
+    },
+    {
+      "slug": "dante",
+      "name": "Dante",
+      "eventCount": 1
+    },
+    {
+      "slug": "nanotech",
+      "name": "Nanotech",
+      "eventCount": 1
+    },
+    {
+      "slug": "koldo",
+      "name": "Koldo",
+      "eventCount": 1
+    },
+    {
+      "slug": "sexi-monki",
+      "name": "Sexi Monki",
+      "eventCount": 1
+    },
+    {
+      "slug": "finascia",
+      "name": "Finascia",
+      "eventCount": 1
+    },
+    {
+      "slug": "dada-es",
+      "name": "Dada (ES)",
+      "eventCount": 1
+    },
+    {
+      "slug": "soul-navigator",
+      "name": "Soul Navigator",
+      "eventCount": 1
+    },
+    {
+      "slug": "dreaming",
+      "name": "Dreaming",
+      "eventCount": 1
+    },
+    {
+      "slug": "gkamkbns",
+      "name": "gkamkbns",
+      "eventCount": 1
+    },
+    {
+      "slug": "b2b",
+      "name": "B2B",
+      "eventCount": 1
+    },
+    {
+      "slug": "onyx",
+      "name": "Onyx",
+      "eventCount": 1
+    },
+    {
+      "slug": "kollin",
+      "name": "KOLLIN",
+      "eventCount": 1
+    },
+    {
+      "slug": "serpdren",
+      "name": "Serpdren",
+      "eventCount": 1
+    },
+    {
+      "slug": "rabeat",
+      "name": "Rabeat",
+      "eventCount": 1
+    },
+    {
+      "slug": "kod-go",
+      "name": "KOD!GO",
+      "eventCount": 1
+    },
+    {
+      "slug": "iquid-mechanics",
+      "name": "iquid Mechanics",
+      "eventCount": 1
+    },
+    {
+      "slug": "zenkai",
+      "name": "ZENKAI",
+      "eventCount": 1
+    },
+    {
+      "slug": "mamayo",
+      "name": "Mamayo",
+      "eventCount": 1
+    },
+    {
+      "slug": "cola-ren",
+      "name": "COLA REN",
+      "eventCount": 1
+    },
+    {
+      "slug": "meer",
+      "name": "meer.",
+      "eventCount": 1
+    },
+    {
+      "slug": "litty-ritty",
+      "name": "Litty Ritty",
+      "eventCount": 1
+    },
+    {
+      "slug": "enred",
+      "name": "EnRed",
+      "eventCount": 1
+    },
+    {
+      "slug": "ian-g",
+      "name": "Ian G",
+      "eventCount": 1
+    },
+    {
+      "slug": "heatwolves",
+      "name": "Heatwolves",
+      "eventCount": 1
+    },
+    {
+      "slug": "limsum",
+      "name": "Limsum",
+      "eventCount": 1
+    },
+    {
+      "slug": "max-shen",
+      "name": "Max Shen",
+      "eventCount": 1
+    },
+    {
+      "slug": "santa-k",
+      "name": "Santa K",
+      "eventCount": 1
+    },
+    {
+      "slug": "altieri3000-live",
+      "name": "Altieri3000 [Live]",
+      "eventCount": 1
+    },
+    {
+      "slug": "velvet-robot-live",
+      "name": "Velvet Robot [Live]",
+      "eventCount": 1
+    },
+    {
+      "slug": "fat-k",
+      "name": "Fat-K",
+      "eventCount": 1
+    },
+    {
+      "slug": "tayzo",
+      "name": "Tayzo",
+      "eventCount": 1
+    },
+    {
+      "slug": "yomi",
+      "name": "Yomi",
+      "eventCount": 1
+    },
+    {
+      "slug": "dj-stefano",
+      "name": "DJ Stefano",
+      "eventCount": 1
+    },
+    {
+      "slug": "state-offf",
+      "name": "State OFFF",
+      "eventCount": 1
+    },
+    {
+      "slug": "qin-niq",
+      "name": "Qin_niQ",
+      "eventCount": 1
+    },
+    {
+      "slug": "guz",
+      "name": "GUZ",
+      "eventCount": 1
+    },
+    {
+      "slug": "xingli-huang",
+      "name": "Xingli Huang",
+      "eventCount": 1
+    },
+    {
+      "slug": "spacereturn",
+      "name": "SpaceReturn",
+      "eventCount": 1
+    },
+    {
+      "slug": "slvn",
+      "name": "SLVN",
+      "eventCount": 1
+    },
+    {
+      "slug": "olivier-k",
+      "name": "Olivier K",
+      "eventCount": 1
+    },
+    {
+      "slug": "olivier-g",
+      "name": "Olivier G",
+      "eventCount": 1
+    },
+    {
+      "slug": "chabuduo",
+      "name": "Chabuduo",
+      "eventCount": 1
+    },
+    {
+      "slug": "live-camera-concept-vjing",
+      "name": "Live camera concept + VJing",
+      "eventCount": 1
+    },
+    {
+      "slug": "tiyamanson",
+      "name": "TiyaManson",
+      "eventCount": 1
+    },
+    {
+      "slug": "will",
+      "name": "will",
+      "eventCount": 1
+    },
+    {
+      "slug": "big-westi",
+      "name": "BIG WESTI",
+      "eventCount": 1
+    },
+    {
+      "slug": "anal",
+      "name": "anal",
+      "eventCount": 1
+    },
+    {
+      "slug": "body-training-session",
+      "name": "Body Training Session",
+      "eventCount": 1
+    },
+    {
+      "slug": "jasper",
+      "name": "Jasper",
+      "eventCount": 1
+    },
+    {
+      "slug": "lenny-g",
+      "name": "Lenny G",
+      "eventCount": 1
+    },
+    {
+      "slug": "m-na",
+      "name": "M!na",
+      "eventCount": 1
+    },
+    {
+      "slug": "tiehan",
+      "name": "Tiehan",
+      "eventCount": 1
+    },
+    {
+      "slug": "toshio",
+      "name": "Toshio",
+      "eventCount": 1
+    },
+    {
+      "slug": "vincent-aka-jinrong-dj",
+      "name": "Vincent aka Jinrong DJ",
+      "eventCount": 1
+    },
+    {
+      "slug": "yuqi",
+      "name": "Yuqi",
+      "eventCount": 1
+    },
+    {
+      "slug": "headrush-b2b-nitta",
+      "name": "Headrush b2b Nitta",
+      "eventCount": 1
+    },
+    {
+      "slug": "dj-david",
+      "name": "DJ David",
+      "eventCount": 1
+    },
+    {
+      "slug": "dj-uaca",
+      "name": "DJ UACA",
+      "eventCount": 1
+    },
+    {
+      "slug": "d8",
+      "name": "D8",
+      "eventCount": 1
+    },
+    {
+      "slug": "dj-f-mark",
+      "name": "DJ F-Mark",
+      "eventCount": 1
+    },
+    {
+      "slug": "shanghai-yard",
+      "name": "Shanghai Yard",
+      "eventCount": 1
+    },
+    {
+      "slug": "popasuda",
+      "name": "Popasuda",
+      "eventCount": 1
+    },
+    {
+      "slug": "dubshottas",
+      "name": "Dubshottas",
+      "eventCount": 1
+    },
+    {
+      "slug": "sylo",
+      "name": "Sylo",
+      "eventCount": 1
+    },
+    {
+      "slug": "jasmin",
+      "name": "Jasmin",
+      "eventCount": 1
+    },
+    {
+      "slug": "malaa",
+      "name": "MALAA",
+      "eventCount": 1
+    },
+    {
+      "slug": "f-mark",
+      "name": "F-Mark",
+      "eventCount": 1
+    },
+    {
+      "slug": "skinny-brown",
+      "name": "Skinny Brown",
+      "eventCount": 1
+    },
+    {
+      "slug": "huiscat",
+      "name": "huiscat",
+      "eventCount": 1
+    },
+    {
+      "slug": "m-r4",
+      "name": "M!R4",
+      "eventCount": 1
+    },
+    {
+      "slug": "kougar",
+      "name": "KOUGAR",
+      "eventCount": 1
+    },
+    {
+      "slug": "ianfabelar",
+      "name": "IANFABELAR",
+      "eventCount": 1
+    },
+    {
+      "slug": "dina",
+      "name": "DINA",
+      "eventCount": 1
+    },
+    {
+      "slug": "huizit",
+      "name": "Huizit",
+      "eventCount": 1
+    },
+    {
+      "slug": "botox-fatal",
+      "name": "BOTOX FATAL",
+      "eventCount": 1
+    },
+    {
+      "slug": "xingrui-vj",
+      "name": "Xingrui(VJ)",
+      "eventCount": 1
+    },
+    {
+      "slug": "gips",
+      "name": "Gips",
+      "eventCount": 1
+    },
+    {
+      "slug": "digital-jade",
+      "name": "Digital Jade",
+      "eventCount": 1
+    },
+    {
+      "slug": "zhuozhuo",
+      "name": "ZhuoZhuo",
+      "eventCount": 1
+    },
+    {
+      "slug": "badbadbadbad",
+      "name": "badbadbadbad",
+      "eventCount": 1
+    },
+    {
+      "slug": "pibbykillsyourdaddy",
+      "name": "PIBBYKILLSYOURDADDY",
+      "eventCount": 1
+    },
+    {
+      "slug": "discipline-b2b-prymara",
+      "name": "Discipline b2b PRYMARA",
+      "eventCount": 1
+    },
+    {
+      "slug": "roto",
+      "name": "Roto",
+      "eventCount": 1
+    },
+    {
+      "slug": "2difficult",
+      "name": "2Difficult",
+      "eventCount": 1
+    },
+    {
+      "slug": "bianbian",
+      "name": "BIANBIAN",
+      "eventCount": 1
+    },
+    {
+      "slug": "na-ty",
+      "name": "Na$ty",
+      "eventCount": 1
+    },
+    {
+      "slug": "baby-yung",
+      "name": "Baby Yung",
+      "eventCount": 1
+    },
+    {
+      "slug": "gabrielle",
+      "name": "Gabrielle",
+      "eventCount": 1
+    },
+    {
+      "slug": "pas",
+      "name": "PAS",
+      "eventCount": 1
+    },
+    {
+      "slug": "yu-ya",
+      "name": "Yu-Ya",
+      "eventCount": 1
+    },
+    {
+      "slug": "badfocus",
+      "name": "Badfocus",
+      "eventCount": 1
+    },
+    {
+      "slug": "daniel-prazgk",
+      "name": "Daniel Prazgk",
+      "eventCount": 1
+    },
+    {
+      "slug": "petr-bohacy-mirenka-cechova",
+      "name": "Petr Bohacy & Mirenka Cechova",
+      "eventCount": 1
+    }
+  ],
+  "fullCategories": {
+    "hasFullData": [
+      {
+        "slug": "siesta",
+        "name": "Siesta",
+        "eventCount": 3,
+        "score": 3
+      },
+      {
+        "slug": "d-z",
+        "name": "D_z",
+        "eventCount": 3,
+        "score": 3
+      },
+      {
+        "slug": "nakin",
+        "name": "NAKIN",
+        "eventCount": 5,
+        "score": 3
+      },
+      {
+        "slug": "tiya-manson",
+        "name": "Tiya Manson",
+        "eventCount": 2,
+        "score": 3
+      },
+      {
+        "slug": "dj-ebp",
+        "name": "DJ EBP",
+        "eventCount": 3,
+        "score": 3
+      },
+      {
+        "slug": "diipset",
+        "name": "DIIPSET",
+        "eventCount": 2,
+        "score": 3
+      },
+      {
+        "slug": "chuan",
+        "name": "Chuan",
+        "eventCount": 3,
+        "score": 3
+      },
+      {
+        "slug": "extreme-john",
+        "name": "Extreme John",
+        "eventCount": 3,
+        "score": 3
+      },
+      {
+        "slug": "taidi",
+        "name": "Taidi",
+        "eventCount": 2,
+        "score": 3
+      },
+      {
+        "slug": "ykk",
+        "name": "YKK",
+        "eventCount": 3,
+        "score": 3
+      },
+      {
+        "slug": "kaleidojazzlegs",
+        "name": "KaleidoJazzlegs",
+        "eventCount": 2,
+        "score": 3
+      },
+      {
+        "slug": "cltx",
+        "name": "CLTX",
+        "eventCount": 1,
+        "score": 4
+      },
+      {
+        "slug": "prymara",
+        "name": "PRYMARA",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "situ",
+        "name": "Situ",
+        "eventCount": 2,
+        "score": 3
+      },
+      {
+        "slug": "cosmjn",
+        "name": "Cosmjn",
+        "eventCount": 1,
+        "score": 4
+      },
+      {
+        "slug": "milo-raad",
+        "name": "Milo Raad",
+        "eventCount": 1,
+        "score": 4
+      },
+      {
+        "slug": "gaoqiao",
+        "name": "Gaoqiao",
+        "eventCount": 2,
+        "score": 3
+      },
+      {
+        "slug": "gooooose",
+        "name": "GOOOOOSE",
+        "eventCount": 1,
+        "score": 4
+      },
+      {
+        "slug": "dj-truck",
+        "name": "DJ TRUCK",
+        "eventCount": 2,
+        "score": 3
+      },
+      {
+        "slug": "erik-hagleton",
+        "name": "Erik Hagleton",
+        "eventCount": 1,
+        "score": 4
+      },
+      {
+        "slug": "matisa",
+        "name": "Matisa",
+        "eventCount": 1,
+        "score": 4
+      },
+      {
+        "slug": "dj-loverboy",
+        "name": "DJ LOVERBOY",
+        "eventCount": 2,
+        "score": 3
+      },
+      {
+        "slug": "nosaj-thing",
+        "name": "Nosaj Thing",
+        "eventCount": 1,
+        "score": 4
+      },
+      {
+        "slug": "discipline",
+        "name": "DISCIPLINE",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "laglory",
+        "name": "LaGlory",
+        "eventCount": 2,
+        "score": 3
+      },
+      {
+        "slug": "pashrawboi",
+        "name": "PASHRAWBOI",
+        "eventCount": 3,
+        "score": 3
+      },
+      {
+        "slug": "hello-shitty",
+        "name": "Hello Shitty",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "ruima",
+        "name": "Ruima",
+        "eventCount": 2,
+        "score": 3
+      },
+      {
+        "slug": "illsee",
+        "name": "Illsee",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "rb-sh",
+        "name": "RB//SH",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "yogijazz",
+        "name": "Yogijazz",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "bolobolo",
+        "name": "Bolobolo",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "gabrielle-lin",
+        "name": "Gabrielle Lin",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "rain-ling",
+        "name": "Rain Ling",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "floating",
+        "name": "FLOATING",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "dj-rain",
+        "name": "DJ Rain",
+        "eventCount": 3,
+        "score": 3
+      },
+      {
+        "slug": "golgol",
+        "name": "Golgol",
+        "eventCount": 3,
+        "score": 3
+      },
+      {
+        "slug": "yiyoo",
+        "name": "Yiyoo",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "tevez",
+        "name": "Tevez",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "kazane",
+        "name": "Kazane",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "dada",
+        "name": "DADA",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "xiaolaba",
+        "name": "Xiaolaba",
+        "eventCount": 3,
+        "score": 3
+      },
+      {
+        "slug": "chingyi",
+        "name": "Chingyi",
+        "eventCount": 2,
+        "score": 3
+      },
+      {
+        "slug": "chiyokoo",
+        "name": "Chiyokoo",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "pei",
+        "name": "Pei",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "wang-meng-yu-miao",
+        "name": "Wang Meng + Yu Miao",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "solo",
+        "name": "Solo",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "heshang",
+        "name": "HeShang",
+        "eventCount": 2,
+        "score": 3
+      },
+      {
+        "slug": "sam-tbd",
+        "name": "Sam Tbd",
+        "eventCount": 2,
+        "score": 3
+      },
+      {
+        "slug": "josie",
+        "name": "Josie",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "howtodo",
+        "name": "howtodo",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "d3m3ntor",
+        "name": "D3M3NTOR",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "kirk",
+        "name": "Kirk",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "shukai",
+        "name": "Shukai",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "fischmonger",
+        "name": "Fischmonger",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "shu",
+        "name": "SHU",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "mrd",
+        "name": "MRD",
+        "eventCount": 1,
+        "score": 4
+      },
+      {
+        "slug": "justease",
+        "name": "Justease",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "tofu",
+        "name": "Tofu",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "nikita-zabelin",
+        "name": "Никита Забелин",
+        "eventCount": 1,
+        "score": 4
+      },
+      {
+        "slug": "huan-huan",
+        "name": "HUAN HUAN",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "10k99",
+        "name": "10K99",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "haina-from-china",
+        "name": "haina from china",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "gg-lobster",
+        "name": "GG lobster",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "djsyb",
+        "name": "DJSYB",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "manqing",
+        "name": "Manqing",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "mungk",
+        "name": "Mungk",
+        "eventCount": 1,
+        "score": 4
+      },
+      {
+        "slug": "simbie",
+        "name": "Simbie",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "sanli",
+        "name": "Sanli",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "somebodyyyy",
+        "name": "Somebodyyyy",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "oscar-l",
+        "name": "Oscar L",
+        "eventCount": 1,
+        "score": 4
+      },
+      {
+        "slug": "wheon",
+        "name": "wheon",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "steal-tapes",
+        "name": "Steal Tapes",
+        "eventCount": 1,
+        "score": 4
+      },
+      {
+        "slug": "queenie",
+        "name": "Queenie",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "max-gross",
+        "name": "Max Gross",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "njelic",
+        "name": "NJELIC",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "leo-monira",
+        "name": "LEO MONIRA",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "quan",
+        "name": "QUAN",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "oil-nature",
+        "name": "Oil Nature",
+        "eventCount": 2,
+        "score": 3
+      },
+      {
+        "slug": "jeff-chong",
+        "name": "Jeff Chong",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "sunyoung",
+        "name": "Sunyoung",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "solo-enchanted-night-listing",
+        "name": "SOLO (Enchanted Night listing)",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "ali-ribo",
+        "name": "ALI RIBO",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "lolalita",
+        "name": "LOLALITA",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "brennt",
+        "name": "BRENNT",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "xiwi",
+        "name": "Xiwi",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "not-your-daddy",
+        "name": "Not Your Daddy",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "knopha",
+        "name": "Knopha",
+        "eventCount": 1,
+        "score": 4
+      },
+      {
+        "slug": "iin",
+        "name": "IIN",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "rainsoft",
+        "name": "Rainsoft",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "toss",
+        "name": "Toss",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "soback",
+        "name": "SOBACK",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "tom-kynd",
+        "name": "The Kynd",
+        "eventCount": 1,
+        "score": 4
+      },
+      {
+        "slug": "psyche",
+        "name": "Psyche",
+        "eventCount": 1,
+        "score": 4
+      },
+      {
+        "slug": "mr-chang",
+        "name": "Mr Chang",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "thomas-futoso",
+        "name": "Thomas Futoso",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "sciahri",
+        "name": "Sciahri",
+        "eventCount": 1,
+        "score": 4
+      },
+      {
+        "slug": "luke-bye",
+        "name": "Luke Bye",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "tsing",
+        "name": "Tsing",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "10000",
+        "name": "10000",
+        "eventCount": 2,
+        "score": 3
+      },
+      {
+        "slug": "the-hymmapan-electron",
+        "name": "The Hymmapan Electron",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "taiga",
+        "name": "Taiga",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "mico",
+        "name": "Mico",
+        "eventCount": 1,
+        "score": 4
+      },
+      {
+        "slug": "megawatts",
+        "name": "MegaWatts",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "marcus",
+        "name": "Marcus",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "tui",
+        "name": "TUI",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "kong-bb",
+        "name": "Kong BB",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "noodleprince",
+        "name": "Noodleprince",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "anika-kunst",
+        "name": "Anika Kunst",
+        "eventCount": 1,
+        "score": 4
+      },
+      {
+        "slug": "fmrl",
+        "name": "FMRL",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "goga",
+        "name": "GOGA",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "bi-non-chillchillshit",
+        "name": "Bi-NON & chillchillshit",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "toyn",
+        "name": "Toyn",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "jaal-the-machine",
+        "name": "JAAL The Machine",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "blood-of-life",
+        "name": "Blood of Life",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "chimera-cult",
+        "name": "Chimera Cult",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "soulitude",
+        "name": "Soulitude",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "qqbbg",
+        "name": "QQBBG",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "liu-qoo",
+        "name": "Liu Qoo",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "le-youth",
+        "name": "Le Youth",
+        "eventCount": 1,
+        "score": 4
+      },
+      {
+        "slug": "sarayu",
+        "name": "Sarayu",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "elaheh",
+        "name": "Elaheh",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "handycam",
+        "name": "Handycam",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "abysm",
+        "name": "ABYSM",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "tuihua-lichang",
+        "name": "Tuihua Lichang",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "wu-xiaotian-erin",
+        "name": "Wu Xiaotian Erin",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "lucrecia-dalt",
+        "name": "Lucrecia Dalt",
+        "eventCount": 1,
+        "score": 4
+      },
+      {
+        "slug": "badbadnotgood",
+        "name": "BADBADNOTGOOD",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "shaun-soomro",
+        "name": "Shaun Soomro",
+        "eventCount": 1,
+        "score": 3
+      },
+      {
+        "slug": "dj-serang",
+        "name": "DJ Serang",
+        "eventCount": 1,
+        "score": 3
+      }
+    ],
+    "hasBasicData": [
+      {
+        "slug": "d8",
+        "name": "D8",
+        "eventCount": 1,
+        "score": 2
+      }
+    ],
+    "imageOnly": [
+      {
+        "slug": "kalapas",
+        "name": "Kalapas",
+        "eventCount": 1
+      },
+      {
+        "slug": "fractale",
+        "name": "Fractale",
+        "eventCount": 1
+      },
+      {
+        "slug": "aho",
+        "name": "Aho",
+        "eventCount": 1
+      },
+      {
+        "slug": "yadong",
+        "name": "Yadong",
+        "eventCount": 1
+      },
+      {
+        "slug": "dean-chew",
+        "name": "Dean Chew",
+        "eventCount": 1
+      },
+      {
+        "slug": "oolong",
+        "name": "OoLONG",
+        "eventCount": 2
+      },
+      {
+        "slug": "paradice-sinema",
+        "name": "Paradice Sinema",
+        "eventCount": 1
+      },
+      {
+        "slug": "mssingno",
+        "name": "MssingNo",
+        "eventCount": 1
+      },
+      {
+        "slug": "kilo-vee",
+        "name": "Kilo Vee",
+        "eventCount": 2
+      },
+      {
+        "slug": "zean",
+        "name": "Zean",
+        "eventCount": 2
+      },
+      {
+        "slug": "sai-g",
+        "name": "SAI G",
+        "eventCount": 1
+      },
+      {
+        "slug": "baadaam",
+        "name": "Baadaam",
+        "eventCount": 1
+      },
+      {
+        "slug": "jane",
+        "name": "Jane",
+        "eventCount": 1
+      },
+      {
+        "slug": "tom-yeti",
+        "name": "Tom yeti",
+        "eventCount": 1
+      },
+      {
+        "slug": "maguro",
+        "name": "Maguro",
+        "eventCount": 1
+      },
+      {
+        "slug": "dj-doggy",
+        "name": "DJ Doggy",
+        "eventCount": 1
+      },
+      {
+        "slug": "wataru",
+        "name": "WATARU",
+        "eventCount": 2
+      },
+      {
+        "slug": "marcos-godoy",
+        "name": "Marcos Godoy",
+        "eventCount": 1
+      },
+      {
+        "slug": "nata-lee",
+        "name": "Nata Lee",
+        "eventCount": 1
+      },
+      {
+        "slug": "stefano-dvt",
+        "name": "Stefano Dvt",
+        "eventCount": 1
+      },
+      {
+        "slug": "janein",
+        "name": "JANEIN",
+        "eventCount": 1
+      },
+      {
+        "slug": "peyotl",
+        "name": "Peyotl",
+        "eventCount": 1
+      },
+      {
+        "slug": "juliano-allgayer",
+        "name": "Juliano Allgayer",
+        "eventCount": 1
+      },
+      {
+        "slug": "ben-moon",
+        "name": "Ben Moon",
+        "eventCount": 1
+      },
+      {
+        "slug": "odd",
+        "name": "Odd",
+        "eventCount": 1
+      },
+      {
+        "slug": "tham",
+        "name": "Tham",
+        "eventCount": 1
+      },
+      {
+        "slug": "saturn",
+        "name": "Saturn",
+        "eventCount": 1
+      },
+      {
+        "slug": "ro",
+        "name": "RO",
+        "eventCount": 1
+      },
+      {
+        "slug": "selfish-b2b-nabel",
+        "name": "SELFISH b2b NABEL",
+        "eventCount": 1
+      },
+      {
+        "slug": "qiuqiu",
+        "name": "QiuQiu",
+        "eventCount": 1
+      },
+      {
+        "slug": "acierate",
+        "name": "Acierate",
+        "eventCount": 1
+      },
+      {
+        "slug": "the-brvtalist",
+        "name": "The Brvtalist",
+        "eventCount": 1
+      },
+      {
+        "slug": "dj-wife",
+        "name": "DJ Wife",
+        "eventCount": 1
+      },
+      {
+        "slug": "luxixi-live",
+        "name": "Luxixi (live)",
+        "eventCount": 1
+      },
+      {
+        "slug": "devil-s-hole",
+        "name": "Devil's Hole",
+        "eventCount": 1
+      },
+      {
+        "slug": "tom-price",
+        "name": "Tom Price",
+        "eventCount": 1
+      },
+      {
+        "slug": "simon-adams",
+        "name": "Simon Adams",
+        "eventCount": 1
+      },
+      {
+        "slug": "cai-pas",
+        "name": "Cai Pas",
+        "eventCount": 1
+      },
+      {
+        "slug": "martin-ma",
+        "name": "Martin Ma",
+        "eventCount": 1
+      },
+      {
+        "slug": "dante",
+        "name": "Dante",
+        "eventCount": 1
+      },
+      {
+        "slug": "nanotech",
+        "name": "Nanotech",
+        "eventCount": 1
+      },
+      {
+        "slug": "koldo",
+        "name": "Koldo",
+        "eventCount": 1
+      },
+      {
+        "slug": "sexi-monki",
+        "name": "Sexi Monki",
+        "eventCount": 1
+      },
+      {
+        "slug": "finascia",
+        "name": "Finascia",
+        "eventCount": 1
+      },
+      {
+        "slug": "dada-es",
+        "name": "Dada (ES)",
+        "eventCount": 1
+      },
+      {
+        "slug": "soul-navigator",
+        "name": "Soul Navigator",
+        "eventCount": 1
+      },
+      {
+        "slug": "dreaming",
+        "name": "Dreaming",
+        "eventCount": 1
+      },
+      {
+        "slug": "gkamkbns",
+        "name": "gkamkbns",
+        "eventCount": 1
+      },
+      {
+        "slug": "b2b",
+        "name": "B2B",
+        "eventCount": 1
+      },
+      {
+        "slug": "onyx",
+        "name": "Onyx",
+        "eventCount": 1
+      },
+      {
+        "slug": "kollin",
+        "name": "KOLLIN",
+        "eventCount": 1
+      },
+      {
+        "slug": "serpdren",
+        "name": "Serpdren",
+        "eventCount": 1
+      },
+      {
+        "slug": "rabeat",
+        "name": "Rabeat",
+        "eventCount": 1
+      },
+      {
+        "slug": "kod-go",
+        "name": "KOD!GO",
+        "eventCount": 1
+      },
+      {
+        "slug": "iquid-mechanics",
+        "name": "iquid Mechanics",
+        "eventCount": 1
+      },
+      {
+        "slug": "zenkai",
+        "name": "ZENKAI",
+        "eventCount": 1
+      },
+      {
+        "slug": "mamayo",
+        "name": "Mamayo",
+        "eventCount": 1
+      },
+      {
+        "slug": "cola-ren",
+        "name": "COLA REN",
+        "eventCount": 1
+      },
+      {
+        "slug": "meer",
+        "name": "meer.",
+        "eventCount": 1
+      },
+      {
+        "slug": "litty-ritty",
+        "name": "Litty Ritty",
+        "eventCount": 1
+      },
+      {
+        "slug": "enred",
+        "name": "EnRed",
+        "eventCount": 1
+      },
+      {
+        "slug": "ian-g",
+        "name": "Ian G",
+        "eventCount": 1
+      },
+      {
+        "slug": "heatwolves",
+        "name": "Heatwolves",
+        "eventCount": 1
+      },
+      {
+        "slug": "limsum",
+        "name": "Limsum",
+        "eventCount": 1
+      },
+      {
+        "slug": "max-shen",
+        "name": "Max Shen",
+        "eventCount": 1
+      },
+      {
+        "slug": "santa-k",
+        "name": "Santa K",
+        "eventCount": 1
+      },
+      {
+        "slug": "altieri3000-live",
+        "name": "Altieri3000 [Live]",
+        "eventCount": 1
+      },
+      {
+        "slug": "velvet-robot-live",
+        "name": "Velvet Robot [Live]",
+        "eventCount": 1
+      },
+      {
+        "slug": "fat-k",
+        "name": "Fat-K",
+        "eventCount": 1
+      },
+      {
+        "slug": "tayzo",
+        "name": "Tayzo",
+        "eventCount": 1
+      },
+      {
+        "slug": "yomi",
+        "name": "Yomi",
+        "eventCount": 1
+      },
+      {
+        "slug": "dj-stefano",
+        "name": "DJ Stefano",
+        "eventCount": 1
+      },
+      {
+        "slug": "state-offf",
+        "name": "State OFFF",
+        "eventCount": 1
+      },
+      {
+        "slug": "qin-niq",
+        "name": "Qin_niQ",
+        "eventCount": 1
+      },
+      {
+        "slug": "guz",
+        "name": "GUZ",
+        "eventCount": 1
+      },
+      {
+        "slug": "xingli-huang",
+        "name": "Xingli Huang",
+        "eventCount": 1
+      },
+      {
+        "slug": "spacereturn",
+        "name": "SpaceReturn",
+        "eventCount": 1
+      },
+      {
+        "slug": "slvn",
+        "name": "SLVN",
+        "eventCount": 1
+      },
+      {
+        "slug": "olivier-k",
+        "name": "Olivier K",
+        "eventCount": 1
+      },
+      {
+        "slug": "olivier-g",
+        "name": "Olivier G",
+        "eventCount": 1
+      },
+      {
+        "slug": "chabuduo",
+        "name": "Chabuduo",
+        "eventCount": 1
+      },
+      {
+        "slug": "live-camera-concept-vjing",
+        "name": "Live camera concept + VJing",
+        "eventCount": 1
+      },
+      {
+        "slug": "tiyamanson",
+        "name": "TiyaManson",
+        "eventCount": 1
+      },
+      {
+        "slug": "will",
+        "name": "will",
+        "eventCount": 1
+      },
+      {
+        "slug": "big-westi",
+        "name": "BIG WESTI",
+        "eventCount": 1
+      },
+      {
+        "slug": "anal",
+        "name": "anal",
+        "eventCount": 1
+      },
+      {
+        "slug": "body-training-session",
+        "name": "Body Training Session",
+        "eventCount": 1
+      },
+      {
+        "slug": "jasper",
+        "name": "Jasper",
+        "eventCount": 1
+      },
+      {
+        "slug": "lenny-g",
+        "name": "Lenny G",
+        "eventCount": 1
+      },
+      {
+        "slug": "m-na",
+        "name": "M!na",
+        "eventCount": 1
+      },
+      {
+        "slug": "tiehan",
+        "name": "Tiehan",
+        "eventCount": 1
+      },
+      {
+        "slug": "toshio",
+        "name": "Toshio",
+        "eventCount": 1
+      },
+      {
+        "slug": "vincent-aka-jinrong-dj",
+        "name": "Vincent aka Jinrong DJ",
+        "eventCount": 1
+      },
+      {
+        "slug": "yuqi",
+        "name": "Yuqi",
+        "eventCount": 1
+      },
+      {
+        "slug": "headrush-b2b-nitta",
+        "name": "Headrush b2b Nitta",
+        "eventCount": 1
+      },
+      {
+        "slug": "dj-david",
+        "name": "DJ David",
+        "eventCount": 1
+      },
+      {
+        "slug": "dj-uaca",
+        "name": "DJ UACA",
+        "eventCount": 1
+      },
+      {
+        "slug": "dj-f-mark",
+        "name": "DJ F-Mark",
+        "eventCount": 1
+      },
+      {
+        "slug": "shanghai-yard",
+        "name": "Shanghai Yard",
+        "eventCount": 1
+      },
+      {
+        "slug": "popasuda",
+        "name": "Popasuda",
+        "eventCount": 1
+      },
+      {
+        "slug": "dubshottas",
+        "name": "Dubshottas",
+        "eventCount": 1
+      },
+      {
+        "slug": "sylo",
+        "name": "Sylo",
+        "eventCount": 1
+      },
+      {
+        "slug": "jasmin",
+        "name": "Jasmin",
+        "eventCount": 1
+      },
+      {
+        "slug": "malaa",
+        "name": "MALAA",
+        "eventCount": 1
+      },
+      {
+        "slug": "f-mark",
+        "name": "F-Mark",
+        "eventCount": 1
+      },
+      {
+        "slug": "skinny-brown",
+        "name": "Skinny Brown",
+        "eventCount": 1
+      },
+      {
+        "slug": "huiscat",
+        "name": "huiscat",
+        "eventCount": 1
+      },
+      {
+        "slug": "m-r4",
+        "name": "M!R4",
+        "eventCount": 1
+      },
+      {
+        "slug": "kougar",
+        "name": "KOUGAR",
+        "eventCount": 1
+      },
+      {
+        "slug": "ianfabelar",
+        "name": "IANFABELAR",
+        "eventCount": 1
+      },
+      {
+        "slug": "dina",
+        "name": "DINA",
+        "eventCount": 1
+      },
+      {
+        "slug": "huizit",
+        "name": "Huizit",
+        "eventCount": 1
+      },
+      {
+        "slug": "botox-fatal",
+        "name": "BOTOX FATAL",
+        "eventCount": 1
+      },
+      {
+        "slug": "xingrui-vj",
+        "name": "Xingrui(VJ)",
+        "eventCount": 1
+      },
+      {
+        "slug": "gips",
+        "name": "Gips",
+        "eventCount": 1
+      },
+      {
+        "slug": "digital-jade",
+        "name": "Digital Jade",
+        "eventCount": 1
+      },
+      {
+        "slug": "zhuozhuo",
+        "name": "ZhuoZhuo",
+        "eventCount": 1
+      },
+      {
+        "slug": "badbadbadbad",
+        "name": "badbadbadbad",
+        "eventCount": 1
+      },
+      {
+        "slug": "pibbykillsyourdaddy",
+        "name": "PIBBYKILLSYOURDADDY",
+        "eventCount": 1
+      },
+      {
+        "slug": "discipline-b2b-prymara",
+        "name": "Discipline b2b PRYMARA",
+        "eventCount": 1
+      },
+      {
+        "slug": "roto",
+        "name": "Roto",
+        "eventCount": 1
+      },
+      {
+        "slug": "2difficult",
+        "name": "2Difficult",
+        "eventCount": 1
+      },
+      {
+        "slug": "bianbian",
+        "name": "BIANBIAN",
+        "eventCount": 1
+      },
+      {
+        "slug": "na-ty",
+        "name": "Na$ty",
+        "eventCount": 1
+      },
+      {
+        "slug": "baby-yung",
+        "name": "Baby Yung",
+        "eventCount": 1
+      },
+      {
+        "slug": "gabrielle",
+        "name": "Gabrielle",
+        "eventCount": 1
+      },
+      {
+        "slug": "pas",
+        "name": "PAS",
+        "eventCount": 1
+      },
+      {
+        "slug": "yu-ya",
+        "name": "Yu-Ya",
+        "eventCount": 1
+      }
+    ],
+    "missingInDb": [
+      {
+        "slug": "badfocus",
+        "name": "Badfocus",
+        "eventCount": 1
+      },
+      {
+        "slug": "daniel-prazgk",
+        "name": "Daniel Prazgk",
+        "eventCount": 1
+      },
+      {
+        "slug": "petr-bohacy-mirenka-cechova",
+        "name": "Petr Bohacy & Mirenka Cechova",
+        "eventCount": 1
+      }
+    ]
+  }
+}

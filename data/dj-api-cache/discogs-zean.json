@@ -1,0 +1,208 @@
+{
+  "found": true,
+  "id": 658259,
+  "name": "Zeano",
+  "profile": "",
+  "nameVariations": [
+    "Zeeno",
+    "Zino"
+  ],
+  "members": [],
+  "groups": [],
+  "urls": [],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/f6kckxTv1WOchJJOOfFuzUSTM-f1qcKMgi29oTZ6sTc/rs:fit/g:sm/q:90/h:460/w:356/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTY1ODI1/OS0xMTYyNTUyMTcw/LmpwZWc.jpeg",
+      "width": 356,
+      "height": 460
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Maison Barclay",
+    "Menace Records (2)",
+    "Warner Music France",
+    "Pat Wilson Music",
+    "Not On Label",
+    "Jive/Epic, Sony BMG Music Entertainment, Lickshot Entertainment",
+    "XIII BIS Records",
+    "Radikal",
+    "Bomayé Musik, Hostile Records",
+    "Byonik",
+    "Soli Music"
+  ],
+  "releases": [
+    {
+      "title": "Who Man ?! ",
+      "year": 2018,
+      "label": null,
+      "role": "Producer"
+    },
+    {
+      "title": "La Fouine Vs Laouni",
+      "year": 2011,
+      "label": null,
+      "role": "Producer"
+    },
+    {
+      "title": "Convictions Suicidaires",
+      "year": 2010,
+      "label": null,
+      "role": "Producer"
+    },
+    {
+      "title": "Cicatrice",
+      "year": 2009,
+      "label": "Maison Barclay",
+      "role": "Producer",
+      "format": "CD, Album"
+    },
+    {
+      "title": "S.O.S.",
+      "year": 2009,
+      "label": null,
+      "role": "Producer"
+    },
+    {
+      "title": "Maxi Calibre",
+      "year": 2008,
+      "label": "Menace Records (2)",
+      "role": "Producer",
+      "format": "CD, EP"
+    },
+    {
+      "title": "0.9",
+      "year": 2008,
+      "label": null,
+      "role": "Producer"
+    },
+    {
+      "title": "Musique Inspirée Du Film Scorpion",
+      "year": 2007,
+      "label": "Warner Music France",
+      "role": "Producer",
+      "format": "CD, Comp"
+    },
+    {
+      "title": "État Brut",
+      "year": 2006,
+      "label": "Pat Wilson Music",
+      "role": "Producer",
+      "format": "CD, Album"
+    },
+    {
+      "title": "Dénominateur Commun",
+      "year": 2006,
+      "label": "Not On Label",
+      "role": "Producer",
+      "format": "CD, Album"
+    },
+    {
+      "title": "Métèque",
+      "year": 2006,
+      "label": "Jive/Epic, Sony BMG Music Entertainment, Lickshot Entertainment",
+      "role": "Producer",
+      "format": "CD, Single, Promo"
+    },
+    {
+      "title": "Le Général",
+      "year": 2006,
+      "label": null,
+      "role": "Producer"
+    },
+    {
+      "title": "Dans Ma Bulle",
+      "year": 2006,
+      "label": null,
+      "role": "Producer"
+    },
+    {
+      "title": "Fidèle À Moi-Même",
+      "year": 2005,
+      "label": "XIII BIS Records",
+      "role": "Producer",
+      "format": "CD, Album"
+    },
+    {
+      "title": "Radikal Sampler",
+      "year": 2005,
+      "label": "Radikal",
+      "role": "Producer",
+      "format": "CD, Comp"
+    },
+    {
+      "title": "Ma Vie / Fidèle à moi-même",
+      "year": 2005,
+      "label": "XIII BIS Records",
+      "role": "Producer",
+      "format": "12\""
+    },
+    {
+      "title": "S.O.S.",
+      "year": 2022,
+      "label": null,
+      "role": "Co-producer"
+    },
+    {
+      "title": "Who Man ?! ",
+      "year": 2018,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Convictions Suicidaires",
+      "year": 2010,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "0.9",
+      "year": 2008,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "A Chaque Frère",
+      "year": 2007,
+      "label": "Bomayé Musik, Hostile Records",
+      "role": "Appearance",
+      "format": "CD, Album, Enh"
+    },
+    {
+      "title": "Odyssée vol 2",
+      "year": 2007,
+      "label": "Byonik",
+      "role": "Appearance",
+      "format": "CDr, Mixtape"
+    },
+    {
+      "title": "Métèque",
+      "year": 2006,
+      "label": "Jive/Epic, Sony BMG Music Entertainment, Lickshot Entertainment",
+      "role": "Appearance",
+      "format": "CD, Single, Promo"
+    },
+    {
+      "title": "Dans Ma Bulle",
+      "year": 2006,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "0.9",
+      "year": 2008,
+      "label": "Soli Music",
+      "role": "UnofficialRelease",
+      "format": "CD, Album, Unofficial"
+    }
+  ],
+  "releaseCount": 25,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/658259"
+  },
+  "_cachedAt": 1781888889946
+}

@@ -1,0 +1,176 @@
+{
+  "found": true,
+  "id": 910967,
+  "name": "Edward Lee Natay",
+  "profile": "Born and raised at Standing Rock, on the Navajo Reservation near Crown Point, New Mexico. Humanitarian and artist who produced both radio and records of traditional singing, flute-playing and drumming of the Navajo, Hopi, Zuni, Pueblo, Kiowa and Tewa nations. Later in his career he blended these styles with those of popular music, including folk and jazz. \r\n\r\nDied on October 18, 1966.\n",
+  "nameVariations": [
+    "Ed Lee Natay",
+    "Natay",
+    "Natay - Navajo Singer"
+  ],
+  "members": [],
+  "groups": [],
+  "urls": [],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/W1405gplhPMbsIoI8TeGR_y1mtl4COCJK5TQ77fUXS8/rs:fit/g:sm/q:90/h:349/w:250/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTkxMDk2/Ny0xMjcwMTQ4NzE1/LmpwZWc.jpeg",
+      "width": 250,
+      "height": 349
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Canyon Records (2)",
+    "Canyon Records (2), Canyon Records (2)",
+    "The Arhoolie Foundation"
+  ],
+  "releases": [
+    {
+      "title": "Navajo Singer",
+      "year": 1951,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Memories Of Navajoland",
+      "label": "Canyon Records (2)",
+      "role": "Main",
+      "format": "LP"
+    },
+    {
+      "title": "Basket Dance / Round Dance",
+      "label": "Canyon Records (2), Canyon Records (2)",
+      "role": "Main",
+      "format": "7\", Single"
+    },
+    {
+      "title": "Harvest Dance / Bow And Arrow",
+      "label": "Canyon Records (2), Canyon Records (2)",
+      "role": "Main",
+      "format": "7\", Single"
+    },
+    {
+      "title": "Navajo Two Step Song / Navajo Love Song",
+      "label": "Canyon Records (2)",
+      "role": "Main",
+      "format": "Shellac, 10\""
+    },
+    {
+      "title": "Squaw Dance / Kiowa War Dance",
+      "label": "Canyon Records (2)",
+      "role": "Main",
+      "format": "Shellac, 10\""
+    },
+    {
+      "title": "Memories Of Navajoland",
+      "label": "Canyon Records (2)",
+      "role": "Main",
+      "format": "Cass"
+    },
+    {
+      "title": "Navajo Squaw Dance / Song Of The Sky City ",
+      "label": "Canyon Records (2)",
+      "role": "Main",
+      "format": "Shellac, 10\""
+    },
+    {
+      "title": "Navajo Skip Dance Songs / Navajo Riding Songs",
+      "label": "Canyon Records (2)",
+      "role": "Main",
+      "format": "Shellac, 10\""
+    },
+    {
+      "title": "The Rough Guide To Native American Music",
+      "year": 1998,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Voices Of Forgotten Worlds: Traditional Music Of Indigenous People",
+      "year": 1993,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Traditional Navajo Songs",
+      "year": 1969,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "The Song Of The Indian",
+      "label": "Canyon Records (2)",
+      "role": "Appearance",
+      "format": "LP, Album, RE"
+    },
+    {
+      "title": "The Song Of The Indian",
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "The Arhoolie Foundation Presents Down Home Music: A Journey Through The Heartland 1963",
+      "year": 2010,
+      "label": "The Arhoolie Foundation",
+      "role": "TrackAppearance",
+      "format": "DVD, Mono, NTSC, All"
+    },
+    {
+      "title": "Think Global: Native America",
+      "year": 2008,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Canyon Records Audio Catalog",
+      "year": 2002,
+      "label": "Canyon Records (2)",
+      "role": "TrackAppearance",
+      "format": "CD, Comp, Smplr"
+    },
+    {
+      "title": "The Rough Guide To Native American Music",
+      "year": 1998,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Voices Across The Canyon: Volume Two",
+      "year": 1996,
+      "label": "Canyon Records (2)",
+      "role": "TrackAppearance",
+      "format": "CD, Comp"
+    },
+    {
+      "title": "Voices Of Forgotten Worlds: Traditional Music Of Indigenous People",
+      "year": 1993,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "The Song Of The Indian",
+      "label": "Canyon Records (2)",
+      "role": "TrackAppearance",
+      "format": "LP, Album, RE"
+    },
+    {
+      "title": "Voices Across The Canyon:  Volume One",
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "The Song Of The Indian",
+      "label": null,
+      "role": "TrackAppearance"
+    }
+  ],
+  "releaseCount": 23,
+  "dataQuality": "Correct",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/910967"
+  },
+  "_cachedAt": 1781889044698
+}

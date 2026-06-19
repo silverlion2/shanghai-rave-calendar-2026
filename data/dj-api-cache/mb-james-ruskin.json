@@ -1,0 +1,26 @@
+{
+  "found": true,
+  "id": "9f50b54d-4eb7-4d20-9d6d-69220075005f",
+  "name": "James Ruskin",
+  "sortName": "Ruskin, James",
+  "type": "Person",
+  "gender": "male",
+  "country": "GB",
+  "disambiguation": "British techno producer",
+  "lifeSpan": {
+    "begin": "1972",
+    "ended": null
+  },
+  "aliases": [
+    "James Robert Ruskin"
+  ],
+  "tags": [
+    "techno"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 12867
+  },
+  "_cachedAt": 1781887527944
+}

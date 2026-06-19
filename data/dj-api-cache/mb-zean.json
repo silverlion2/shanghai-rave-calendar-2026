@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "8971b328-5198-4563-81d6-62a1a09b2e3b",
+  "name": "Zean",
+  "sortName": "Zean",
+  "type": "Person",
+  "gender": "male",
+  "country": "CN",
+  "disambiguation": "",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 25
+  },
+  "_cachedAt": 1781888880832
+}

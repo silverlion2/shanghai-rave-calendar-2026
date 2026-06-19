@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "3a6c5734-0060-4dca-a95a-c9b816ea10bd",
+  "name": "Illsee",
+  "sortName": "Illsee",
+  "type": "Person",
+  "gender": null,
+  "country": "Shanghai",
+  "disambiguation": "Liu Xiaoman",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 10
+  },
+  "_cachedAt": 1781886168897
+}

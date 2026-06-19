@@ -1,0 +1,126 @@
+{
+  "found": true,
+  "id": 1259042,
+  "name": "Spencer Nakin",
+  "profile": "French composer and writer (Paris, 28 March 1913 - Nérac, 20 may 1980)",
+  "nameVariations": [
+    "S. Nakin"
+  ],
+  "members": [],
+  "groups": [],
+  "urls": [],
+  "images": [],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Music De Wolfe",
+    "uSuper! Records",
+    "De Wolfe Music",
+    "Arrow Video (2), De Wolfe Music"
+  ],
+  "releases": [
+    {
+      "title": "Musical Prisms",
+      "year": 1971,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Towers And Spires",
+      "year": 1968,
+      "label": "Music De Wolfe",
+      "role": "Main",
+      "format": "LP"
+    },
+    {
+      "title": "Dirty Ho! Kung Fu Sounds",
+      "year": 2023,
+      "label": "uSuper! Records",
+      "role": "Appearance",
+      "format": "LP, Comp, Ltd, Pur"
+    },
+    {
+      "title": "DIRTY HO! KUNG FU SOUNDS",
+      "year": 2023,
+      "label": "uSuper! Records",
+      "role": "Appearance",
+      "format": "LP, Comp, Ltd, Yel"
+    },
+    {
+      "title": "Dirty Ho! Kung Fu Sounds",
+      "year": 2023,
+      "label": "uSuper! Records",
+      "role": "Appearance",
+      "format": "Cass, Ltd, Yel"
+    },
+    {
+      "title": "Movie Archive - Drama Volume 2",
+      "year": 1995,
+      "label": "De Wolfe Music",
+      "role": "Appearance",
+      "format": "CD"
+    },
+    {
+      "title": "Fairies And Witches",
+      "year": 1969,
+      "label": "Music De Wolfe",
+      "role": "Appearance",
+      "format": "LP"
+    },
+    {
+      "title": "From Other Lands No. 4",
+      "year": 1969,
+      "label": "Music De Wolfe",
+      "role": "Appearance",
+      "format": "LP"
+    },
+    {
+      "title": "Mood Impressions: The Music of Spencer Nakin",
+      "year": 1967,
+      "label": "Music De Wolfe",
+      "role": "Appearance",
+      "format": "LP, Mono"
+    },
+    {
+      "title": "Shawscope: Volume Two",
+      "year": 2022,
+      "label": "Arrow Video (2), De Wolfe Music",
+      "role": "TrackAppearance",
+      "format": "2xCD, Comp"
+    },
+    {
+      "title": "Monty Python's Flying Circus - 30 Musical Masterpieces From The Infamous Television Series: 1969 - 1974",
+      "year": 2009,
+      "label": "De Wolfe Music",
+      "role": "TrackAppearance",
+      "format": "CD, Album, Comp"
+    },
+    {
+      "title": "Kung Fu Super Sounds",
+      "year": 2007,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "This England - A Musical Journey Through England's Noble Heritage",
+      "year": 1994,
+      "label": "De Wolfe Music",
+      "role": "TrackAppearance",
+      "format": "CD, Album"
+    },
+    {
+      "title": "Fanfare Showcase",
+      "year": 1972,
+      "label": "Music De Wolfe",
+      "role": "TrackAppearance",
+      "format": "LP"
+    }
+  ],
+  "releaseCount": 14,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/1259042"
+  },
+  "_cachedAt": 1781886014457
+}

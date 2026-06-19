@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "2c544707-cb3d-4dfe-9655-127882b4fc3a",
+  "name": "skeleton",
+  "sortName": "skeleton",
+  "type": null,
+  "gender": null,
+  "country": null,
+  "disambiguation": "djsyb",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 1
+  },
+  "_cachedAt": 1781886146038
+}

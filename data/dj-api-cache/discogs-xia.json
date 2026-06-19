@@ -1,0 +1,87 @@
+{
+  "found": true,
+  "id": 5078564,
+  "name": "Steven Xia",
+  "profile": "Steven \"Stoov\" Xia is an Composer, Multi-Instrumentalist, Audio Engineer, Producer, and Sound Designer ",
+  "nameVariations": [
+    "Steve Xia",
+    "Steven \"Stoov\" Xia"
+  ],
+  "members": [],
+  "groups": [
+    "Eva & The Oak"
+  ],
+  "urls": [],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/Wti-_dOg24i5tXtnag5AtxZQo_sADysX-UqEenP9iRk/rs:fit/g:sm/q:90/h:202/w:200/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTUwNzg1/NjQtMTc3OTE3Njgx/MS0yMzQyLnBuZw.jpeg",
+      "width": 200,
+      "height": 202
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Not On Label"
+  ],
+  "releases": [
+    {
+      "title": "Floriography",
+      "year": 2017,
+      "label": "Not On Label",
+      "role": "Producer",
+      "format": "5xFile, FLAC, EP"
+    },
+    {
+      "title": "Floriography",
+      "year": 2017,
+      "label": "Not On Label",
+      "role": "Mixed by",
+      "format": "5xFile, FLAC, EP"
+    },
+    {
+      "title": "So Help Me God",
+      "year": 2026,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Liberation 2",
+      "year": 2024,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Familia",
+      "year": 2022,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Floriography",
+      "year": 2017,
+      "label": "Not On Label",
+      "role": "Appearance",
+      "format": "5xFile, FLAC, EP"
+    },
+    {
+      "title": "Say So",
+      "year": 2016,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Familia",
+      "label": null,
+      "role": "UnofficialRelease"
+    }
+  ],
+  "releaseCount": 8,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/5078564"
+  },
+  "_cachedAt": 1781885232843
+}

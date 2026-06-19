@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "8f82290e-d460-4397-a8c8-bc1ce5f5e96c",
+  "name": "Aho",
+  "sortName": "Aho",
+  "type": "Person",
+  "gender": "male",
+  "country": "CL",
+  "disambiguation": "Psychedelic trance artist from Chile",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 1967
+  },
+  "_cachedAt": 1781885979549
+}

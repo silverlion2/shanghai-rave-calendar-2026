@@ -1,0 +1,287 @@
+{
+  "found": true,
+  "id": 1015,
+  "name": "Slam",
+  "profile": "DJ and producer duo from Glasgow, Scotland. Co-founders of [l=Soma Quality Recordings] and promoters of the Atlantis (1989-92) &  Slam (1991-) parties in Glasgow.\n\nThey met in 1986 in Sheffield, where Orde was studying Geography at university and Stuart was working in a bar.\n\nThe band’s name was inspired by [url=http://www.discogs.com/release/1165]Phuture[/url]'s legendary track of the same name.",
+  "nameVariations": [
+    "S L A M",
+    "SLAM",
+    "Sl@m",
+    "Slam!",
+    "The Slam Boys"
+  ],
+  "members": [
+    "Stuart McMillan",
+    "Orde Meikle"
+  ],
+  "groups": [],
+  "urls": [
+    "http://www.slam-djs.com",
+    "http://www.somarecords.com/artists/slam",
+    "http://slam-djs.bandcamp.com",
+    "http://www.facebook.com/SLAM.soma",
+    "http://fanlink.tv/Slam",
+    "http://www.instagram.com/slam_djs",
+    "http://www.mixcloud.com/slam",
+    "http://www.myspace.com/slamofficial",
+    "http://www.slamevents.com",
+    "http://soundcloud.com/soma",
+    "http://twitter.com/slamdjs",
+    "http://en.wikipedia.org/wiki/Slam_(band)",
+    "http://www.youtube.com/officialsomarecords"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/1wceAZPoasnlJtrZZkRzd_1elzgNNGN8rNrxm6gmO84/rs:fit/g:sm/q:90/h:379/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwMTUt/MTU0NzAxNTg0MC04/NzI1LmpwZWc.jpeg",
+      "width": 600,
+      "height": 379
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/W_QZ05xSuXFSJ_CJ8kq4SxJYg6ikoR4DrkszP-gMzc8/rs:fit/g:sm/q:90/h:322/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwMTUt/MTU0NzAxNTgzNi00/MzI0LmpwZWc.jpeg",
+      "width": 600,
+      "height": 322
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/TMqsroIgpMqenbCaxFFXnCDI3Yr70pyKwfDH_JYygi4/rs:fit/g:sm/q:90/h:454/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwMTUt/MTI3Mzc4OTM0NS5q/cGVn.jpeg",
+      "width": 600,
+      "height": 454
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/BJ8cgblnnjUVmduEBewPhMZ2piuxMXPBLLtFZHG23VI/rs:fit/g:sm/q:90/h:267/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwMTUt/MTI3Mzc4OTM2Ny5q/cGVn.jpeg",
+      "width": 400,
+      "height": 267
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/rzzjT7ExogggftwzTJpbYNm69t0TCXnBE81mqDgN8fw/rs:fit/g:sm/q:90/h:204/w:260/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwMTUt/MDA0LmpwZw.jpeg",
+      "width": 260,
+      "height": 204
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/fJlerkg7HaD3m6Nql8oXwwMPela-w-MzHhCKAziq7RE/rs:fit/g:sm/q:90/h:329/w:256/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwMTUt/MTA3OTA0MjMzMS5q/cGc.jpeg",
+      "width": 256,
+      "height": 329
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Soma Quality Recordings"
+  ],
+  "releases": [
+    {
+      "title": "Drumtrax Vol. 2",
+      "year": 2026,
+      "label": "Soma Quality Recordings",
+      "role": "Main",
+      "format": "File, WAV"
+    },
+    {
+      "title": "Kuture Version",
+      "year": 2025,
+      "label": "Soma Quality Recordings",
+      "role": "Main",
+      "format": "File, WAV, Single"
+    },
+    {
+      "title": "Drumtrax Vol. 1",
+      "year": 2025,
+      "label": "Soma Quality Recordings",
+      "role": "Main",
+      "format": "File, WAV"
+    },
+    {
+      "title": "Wave Tension EP",
+      "year": 2025,
+      "label": "Soma Quality Recordings",
+      "role": "Main",
+      "format": "3xFile, WAV, EP"
+    },
+    {
+      "title": "Dark Channel",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Exhibit Remixes",
+      "year": 2024,
+      "label": "Soma Quality Recordings",
+      "role": "Main",
+      "format": "4xFile, MP3, 320"
+    },
+    {
+      "title": "Wave Expansions EP",
+      "year": 2024,
+      "label": "Soma Quality Recordings",
+      "role": "Main",
+      "format": "4xFile, WAV, EP"
+    },
+    {
+      "title": "Exhibit",
+      "year": 2024,
+      "label": "Soma Quality Recordings",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Flicker EP",
+      "year": 2024,
+      "label": "Soma Quality Recordings",
+      "role": "Main",
+      "format": "3xFile, WAV, EP"
+    },
+    {
+      "title": "Disorder EP",
+      "year": 2023,
+      "label": "Soma Quality Recordings",
+      "role": "Main",
+      "format": "4xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Activate EP",
+      "year": 2023,
+      "label": "Soma Quality Recordings",
+      "role": "Main",
+      "format": "4xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Louder Than Chaos Vol. 5",
+      "year": 2022,
+      "label": "Soma Quality Recordings",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Transcript EP",
+      "year": 2022,
+      "label": "Soma Quality Recordings",
+      "role": "Main",
+      "format": "3xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Aversion EP",
+      "year": 2022,
+      "label": "Soma Quality Recordings",
+      "role": "Main",
+      "format": "3xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Mover EP",
+      "year": 2022,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Final Conflict EP",
+      "year": 2021,
+      "label": "Soma Quality Recordings",
+      "role": "Main",
+      "format": "3xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Scourge EP",
+      "year": 2021,
+      "label": "Soma Quality Recordings",
+      "role": "Main",
+      "format": "3xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Strange Dayz",
+      "year": 2021,
+      "label": "Soma Quality Recordings",
+      "role": "Main",
+      "format": "4xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Louder Than Chaos Vol. 2",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Louder Than Chaos Vol. 3",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Louder Than Chaos Vol. 4",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Louder Than Chaos Vol. 1",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Inversion EP",
+      "year": 2020,
+      "label": "Soma Quality Recordings",
+      "role": "Main",
+      "format": "4xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Desolate Spaces EP",
+      "year": 2020,
+      "label": "Soma Quality Recordings",
+      "role": "Main",
+      "format": "4xFile, FLAC, EP"
+    },
+    {
+      "title": "Quiet Riot EP",
+      "year": 2020,
+      "label": "Soma Quality Recordings",
+      "role": "Main",
+      "format": "3xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Selective Assembly",
+      "year": 2020,
+      "label": "Soma Quality Recordings",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Sense Of Purpose EP",
+      "year": 2020,
+      "label": "Soma Quality Recordings",
+      "role": "Main",
+      "format": "3xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Oblique Strategies",
+      "year": 2020,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Archive Edits Vol.4",
+      "year": 2020,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Archive Edits Vol.2",
+      "year": 2019,
+      "label": "Soma Quality Recordings",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    }
+  ],
+  "releaseCount": 50,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/1015"
+  },
+  "_cachedAt": 1781887547895
+}

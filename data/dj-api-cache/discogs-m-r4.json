@@ -1,0 +1,46 @@
+{
+  "found": true,
+  "id": 14623707,
+  "name": "M4R4",
+  "profile": "",
+  "nameVariations": [
+    "_m_4_r_4_"
+  ],
+  "members": [],
+  "groups": [],
+  "urls": [],
+  "images": [],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Warriorecords"
+  ],
+  "releases": [
+    {
+      "title": "Plдying / Prдying",
+      "year": 2025,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Infrarouge",
+      "year": 2025,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "RainboWarriors Vol 1.",
+      "year": 2024,
+      "label": "Warriorecords",
+      "role": "Appearance",
+      "format": "2xLP, Comp, Ltd"
+    }
+  ],
+  "releaseCount": 3,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/14623707"
+  },
+  "_cachedAt": 1781886115933
+}

@@ -1,0 +1,29 @@
+{
+  "found": true,
+  "id": "1ba347eb-58e8-45d6-b7e3-09873dc2506a",
+  "name": "Marcos Valle",
+  "sortName": "Valle, Marcos",
+  "type": "Person",
+  "gender": "male",
+  "country": "BR",
+  "disambiguation": "",
+  "lifeSpan": {
+    "begin": "1943-09-14",
+    "ended": null
+  },
+  "aliases": [
+    "Marcos Kostenbader Valle",
+    "Marcus Valle",
+    "Maargos Valle"
+  ],
+  "tags": [
+    "mpb",
+    "world"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 583
+  },
+  "_cachedAt": 1781889030223
+}

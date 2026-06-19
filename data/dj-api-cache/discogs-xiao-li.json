@@ -1,0 +1,51 @@
+{
+  "found": true,
+  "id": 3311680,
+  "name": "Li Xiao Le",
+  "profile": "",
+  "nameVariations": [],
+  "members": [],
+  "groups": [],
+  "urls": [],
+  "images": [],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Ear Music"
+  ],
+  "releases": [
+    {
+      "title": "Out Of Hand",
+      "year": 2015,
+      "label": "Ear Music",
+      "role": "Appearance",
+      "format": "10\", RSD, Single, Ltd, Whi"
+    },
+    {
+      "title": "Rapture Of The Deep • Now What?! • The Now What?! Live Tapes",
+      "year": 2015,
+      "label": "Ear Music",
+      "role": "Appearance",
+      "format": "Comp, Sli + CD, Album, RE, Dig + CD, Album, RE, Di"
+    },
+    {
+      "title": "Now What?!",
+      "year": 2013,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Now What?!",
+      "year": 2013,
+      "label": null,
+      "role": "UnofficialRelease"
+    }
+  ],
+  "releaseCount": 4,
+  "dataQuality": "Needs Major Changes",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/3311680"
+  },
+  "_cachedAt": 1781885138732
+}

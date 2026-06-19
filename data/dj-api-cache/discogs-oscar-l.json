@@ -1,0 +1,273 @@
+{
+  "found": true,
+  "id": 224388,
+  "name": "Oscar L",
+  "profile": "Deejay and Producer from Madrid, Spain.",
+  "nameVariations": [
+    "Oscar L.",
+    "Oscar Lopez"
+  ],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "http://www.oscarl.com/",
+    "http://www.facebook.com/oscarldj",
+    "http://www.myspace.com/oscarldj"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/bpVTvXRmrK1-v19il95JLJGf3-ZtqTiGsowIZsMPWr0/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTIyNDM4/OC0xMzI5NzYxNzE0/LmpwZWc.jpeg",
+      "width": 300,
+      "height": 300
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Truesoul",
+    "Drumcode",
+    "Arcane Music (3)",
+    "Hypnostate",
+    "Factory 93 Records",
+    "Beatfreak Recordings",
+    "Knee Deep In Sound",
+    "Stereo Productions",
+    "Nonstop (4)",
+    "Moan Recordings",
+    "303Lovers",
+    "Happy Techno Music",
+    "BeatFreak Recordings",
+    "Unity Records (19)",
+    "Toolroom Trax, Toolroom Trax",
+    "Night Light Records, Night Light Records",
+    "1605 Music Therapy",
+    "Comade Music",
+    "Black & Purple Recordings",
+    "Sphera Records",
+    "WTF! Music",
+    "TKC Music",
+    "Mustache Music",
+    "Suburban Tracks",
+    "Nervous Records",
+    "Music Records (2)",
+    "Definitive Recordings",
+    "Leaders Of The New School",
+    "T.U.S.O.M. Recordings"
+  ],
+  "releases": [
+    {
+      "title": "Atlas",
+      "year": 2026,
+      "label": "Truesoul",
+      "role": "Main",
+      "format": "3xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Gravity",
+      "year": 2025,
+      "label": "Drumcode",
+      "role": "Main",
+      "format": "2xFile, MP3, 320"
+    },
+    {
+      "title": "Gravity",
+      "year": 2025,
+      "label": "Drumcode",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Flex",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Aircargo",
+      "year": 2024,
+      "label": "Truesoul",
+      "role": "Main",
+      "format": "2xFile, WAV"
+    },
+    {
+      "title": "Love Me",
+      "year": 2024,
+      "label": "Arcane Music (3)",
+      "role": "Main",
+      "format": "2xFile, MP3, 320"
+    },
+    {
+      "title": "Addiction / Yapper",
+      "year": 2024,
+      "label": "Truesoul",
+      "role": "Main",
+      "format": "2xFile, MP3, 320"
+    },
+    {
+      "title": "Universal Love",
+      "year": 2023,
+      "label": "Hypnostate",
+      "role": "Main",
+      "format": "2xFile, MP3, 320"
+    },
+    {
+      "title": "Again",
+      "year": 2023,
+      "label": "Drumcode",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Arena / Utopia",
+      "year": 2022,
+      "label": "Factory 93 Records",
+      "role": "Main",
+      "format": "2xFile, MP3, 320"
+    },
+    {
+      "title": "Alive",
+      "year": 2022,
+      "label": "Arcane Music (3)",
+      "role": "Main",
+      "format": "3xFile, MP3, 320"
+    },
+    {
+      "title": "Under My Skin",
+      "year": 2021,
+      "label": "Truesoul",
+      "role": "Main",
+      "format": "3xFile, MP3, 320"
+    },
+    {
+      "title": "Miracle",
+      "year": 2021,
+      "label": "Beatfreak Recordings",
+      "role": "Main",
+      "format": "2xFile, MP3, 320"
+    },
+    {
+      "title": "Bad Tape",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Anima",
+      "year": 2020,
+      "label": "Knee Deep In Sound",
+      "role": "Main",
+      "format": "2xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Vertigo",
+      "year": 2019,
+      "label": "Truesoul",
+      "role": "Main",
+      "format": "3xFile, AIFF"
+    },
+    {
+      "title": "Cilene Ep",
+      "year": 2019,
+      "label": "Stereo Productions",
+      "role": "Main",
+      "format": "2xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Fearless",
+      "year": 2019,
+      "label": "Knee Deep In Sound",
+      "role": "Main",
+      "format": "3xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Fiezzta EP",
+      "year": 2018,
+      "label": "Nonstop (4)",
+      "role": "Main",
+      "format": "2xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Faking Fingers EP",
+      "year": 2018,
+      "label": "Moan Recordings",
+      "role": "Main",
+      "format": "3xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Aura EP",
+      "year": 2018,
+      "label": "Stereo Productions",
+      "role": "Main",
+      "format": "2xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Public House EP",
+      "year": 2018,
+      "label": "303Lovers",
+      "role": "Main",
+      "format": "3xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Space Dog ",
+      "year": 2018,
+      "label": "Happy Techno Music",
+      "role": "Main",
+      "format": "4xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Multiplayer",
+      "year": 2018,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Flow EP",
+      "year": 2017,
+      "label": "Stereo Productions",
+      "role": "Main",
+      "format": "3xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Bipolar EP",
+      "year": 2017,
+      "label": "BeatFreak Recordings",
+      "role": "Main",
+      "format": "3xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Flash",
+      "year": 2017,
+      "label": "Unity Records (19)",
+      "role": "Main",
+      "format": "2xFile, MP3, EP, 320"
+    },
+    {
+      "title": "My Religion ",
+      "year": 2017,
+      "label": "Happy Techno Music",
+      "role": "Main",
+      "format": "4xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Konfusion",
+      "year": 2017,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Looking Forward",
+      "year": 2016,
+      "label": "Toolroom Trax, Toolroom Trax",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    }
+  ],
+  "releaseCount": 50,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/224388"
+  },
+  "_cachedAt": 1781886517893
+}

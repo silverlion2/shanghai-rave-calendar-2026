@@ -1,0 +1,39 @@
+{
+  "found": true,
+  "id": 6820567,
+  "name": "Kougar",
+  "profile": "",
+  "nameVariations": [],
+  "members": [],
+  "groups": [],
+  "urls": [],
+  "images": [],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Outsider Logic Records",
+    "Sekel Block"
+  ],
+  "releases": [
+    {
+      "title": "Etrange Partie",
+      "year": 2009,
+      "label": "Outsider Logic Records",
+      "role": "Appearance",
+      "format": "CD, Album"
+    },
+    {
+      "title": "HM3 The Final Edition",
+      "label": "Sekel Block",
+      "role": "Appearance",
+      "format": "CD, Album"
+    }
+  ],
+  "releaseCount": 2,
+  "dataQuality": "Needs Major Changes",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/6820567"
+  },
+  "_cachedAt": 1781886124945
+}

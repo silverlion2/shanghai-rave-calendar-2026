@@ -1,0 +1,431 @@
+{
+  "found": true,
+  "id": 823,
+  "name": "Speedy J",
+  "profile": "Electronic music producer from Rotterdam, The Netherlands (born 10 August 1969 in Rotterdam).\r\nAfter two albums of electronic listening music on the label Warp, he released two albums with a more experimental sounds in 1997 and 2000. The album Loudboxer (2002) saw a return to a more minimal style of techno.\r\nHe collaborated with Mike Paradinas on the project Slag Boom Van Loon and also released two ambient albums for the FAX +49-69/450464 label under his real name.\r\nIn 2008, Speedy J founded his own record label, Electric Deluxe, releasing his own music as well as records by Terence Fixmer, Gary Beck, Tommy Four Seven and others.",
+  "nameVariations": [
+    "\"Speedy J\"",
+    "D.J. Speedy J.",
+    "D.J.Speedy J.",
+    "Jochen Paap",
+    "SPD",
+    "SPDJ",
+    "Speed J.",
+    "Speedy",
+    "Speedy - J",
+    "Speedy G",
+    "Speedy G.",
+    "Speedy J.",
+    "Speedy.J",
+    "SpeedyJ",
+    "Speedyj"
+  ],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "http://www.speedyj.com",
+    "http://speedyj.bandcamp.com",
+    "http://www.instagram.com/speedyj_jochempaap",
+    "http://www.facebook.com/electricdeluxe",
+    "https://www.jochempaap.substack.com",
+    "http://en.wikipedia.org/wiki/Speedy_J",
+    "http://twitter.com/jochempaap"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/3wzpF6Y5KyS6cXeoT_SqRiekVnX4EoqgrOgVbMQrY9o/rs:fit/g:sm/q:90/h:602/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0x/Nzc3NTQ4MDAxLTUy/ODIuanBlZw.jpeg",
+      "width": 600,
+      "height": 602
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/sKcAUSn41onGazLAHf2ggK-evHsuIshrHUTErje0vR4/rs:fit/g:sm/q:90/h:630/w:533/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0x/NTE3NjcwMDAwLTI0/NDMuanBlZw.jpeg",
+      "width": 533,
+      "height": 630
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/zY83xMzphvjD7XeqV1CruGY3pS0Y796H-mEeFgMX0nY/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0x/NTE1NDkyMTQ3LTIz/MjkuanBlZw.jpeg",
+      "width": 300,
+      "height": 300
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/vOKg7B2_41TOOkPe2eJQ51aT2h8zqUZUxFTsU9jUEBQ/rs:fit/g:sm/q:90/h:200/w:201/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0w/MDQuanBn.jpeg",
+      "width": 201,
+      "height": 200
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/eXYSkt_kFhI2nrY6cahnPFItazSxYTjxHjXW3djEBrc/rs:fit/g:sm/q:90/h:250/w:249/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0w/MDMuanBn.jpeg",
+      "width": 249,
+      "height": 250
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/AV8l61RnB2mvDJQToiBI6dI_wDFgmOiIKVtj9Kql61M/rs:fit/g:sm/q:90/h:133/w:198/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0w/MDIuanBn.jpeg",
+      "width": 198,
+      "height": 133
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/tX_l2mSVYhWftGTbmuhjQq22Orq1l5XTQlAvISM85AE/rs:fit/g:sm/q:90/h:375/w:499/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0x/MjM2ODI5OTAzLmpw/ZWc.jpeg",
+      "width": 499,
+      "height": 375
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/WbhZl4JD6Ptzyu9S3VMj6g2q8sl7w0nNQNGfMNCn9yQ/rs:fit/g:sm/q:90/h:334/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0x/MjEyODE0OTgwLmpw/ZWc.jpeg",
+      "width": 500,
+      "height": 334
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/aGDg4XaFLkJMhihQBCN6H7pkORXzne25QcFoqkra6P4/rs:fit/g:sm/q:90/h:350/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLXJfODIz/LTAwNS5qcGc.jpeg",
+      "width": 600,
+      "height": 350
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/YMleQ-GW34whJyZ8dlPxJWLeIYguk4kJwvbDKZWVwQk/rs:fit/g:sm/q:90/h:298/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0x/MDc5MTM0MjE2Lmpw/Zw.jpeg",
+      "width": 400,
+      "height": 298
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/t5GfO8KMoxxhBMg4GusX0H-KZmgVd_eqENyxktDdHWE/rs:fit/g:sm/q:90/h:380/w:510/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0x/MDgzNDI3MjUxLmpw/Zw.jpeg",
+      "width": 510,
+      "height": 380
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/2veUTRai88SNaIWEBrPVxKJcbcGMKgCZevNShN1MNlw/rs:fit/g:sm/q:90/h:250/w:226/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0x/MjU0NzY2NjUzLmpw/ZWc.jpeg",
+      "width": 226,
+      "height": 250
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/ug3wThw-15dimV53_jh5JlMIMRREYXZ37SYunhJwvJU/rs:fit/g:sm/q:90/h:249/w:250/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0x/MDc5MTM0MjIyLmpw/Zw.jpeg",
+      "width": 250,
+      "height": 249
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/n1Pp1ekRRnncpU3FNHezR3NPswkCWoMan7SzbWyfRVE/rs:fit/g:sm/q:90/h:511/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0x/NDkxNjUzMTM5LTcz/OTcuanBlZw.jpeg",
+      "width": 600,
+      "height": 511
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/Hq2ZKI20SnKmwFju84iXPW_3b1BewNZiLBWLIbvCFd0/rs:fit/g:sm/q:90/h:305/w:229/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0x/NTE1NDkyMTUyLTgy/MjEucG5n.jpeg",
+      "width": 229,
+      "height": 305
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/M1g59x0uF8kVGzgZWDR9Ohh90T4HxIh-buI8M294fGM/rs:fit/g:sm/q:90/h:446/w:515/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0x/NTE1NDkyMTYxLTY3/NTguanBlZw.jpeg",
+      "width": 515,
+      "height": 446
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/y8p5cM4jyrvqt8zfFv0jPTu1suCW1MIoy5jK5Zikt4A/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0x/NTE1NDkyMTY0LTM4/MTUuanBlZw.jpeg",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/Npb817n81myJkrn1RESeluhljDqdEi9PWeoI0sQVMf4/rs:fit/g:sm/q:90/h:336/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0x/NTE1NDkyMTY0LTk3/OTAuanBlZw.jpeg",
+      "width": 600,
+      "height": 336
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/8BRQMZJNetNe1h-nZjaJ5Nsq_bJJQqrxPmWG_nKquuc/rs:fit/g:sm/q:90/h:548/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0x/NTE1NDkyMTcwLTkz/NjQuanBlZw.jpeg",
+      "width": 600,
+      "height": 548
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/LM6JQ55iV8CfdT-woAI2HfPybq47dGnIu96ZPEImSu0/rs:fit/g:sm/q:90/h:402/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0x/NTE1NDkyMTcyLTE3/MDIuanBlZw.jpeg",
+      "width": 600,
+      "height": 402
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/RFNtr0LG_zeRIRa_LTWYYxUJ0g8moaeLULwC7eTahso/rs:fit/g:sm/q:90/h:332/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0x/NTE1NDkyMTc1LTE4/NDAuanBlZw.jpeg",
+      "width": 600,
+      "height": 332
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/WxyU9diGeHPvRkaQ_udyHgh8lgOuTiR8cG0krVH0oYM/rs:fit/g:sm/q:90/h:393/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0x/NTE1NDkyMTg0LTk1/MjAuanBlZw.jpeg",
+      "width": 600,
+      "height": 393
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/O2dXSUQFE_ybkfSCx9bOWKvVp2ywuFJPKM-NkU2a5Tg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0x/NTE1NDkyMTkwLTk5/MjMuanBlZw.jpeg",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/Cd5lQoyBx1fv5RNpSKmHeEtEoVeSJ8nh6euwFDyqQPo/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0x/NTE1NDkyMTk0LTY0/OTUuanBlZw.jpeg",
+      "width": 300,
+      "height": 300
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/6VrPm_L5p48lqEDKhhlqszbMFAh_UKb4Rx7PKWXkF8o/rs:fit/g:sm/q:90/h:351/w:438/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0x/NTE1NDkyMTk3LTEx/NzcuanBlZw.jpeg",
+      "width": 438,
+      "height": 351
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/z7tjMKkpSqWGqrm9BNEla3oIg1zgu1fKc2ebs6nL0ks/rs:fit/g:sm/q:90/h:400/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0x/NTE1NDkyMjAxLTk1/NzYuanBlZw.jpeg",
+      "width": 600,
+      "height": 400
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/PrGXMWqVOeqNQ6RjeGbdEFEJjhCa7zPTtNyLAlV59ww/rs:fit/g:sm/q:90/h:281/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0x/NTE1NDkyMjAzLTY1/NjguanBlZw.jpeg",
+      "width": 600,
+      "height": 281
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/lDSg7DnJi_0pUkK2FxYP1DXh8WgOV5eywCq6Ei755hs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0x/NTE1NDkyMjA3LTIw/MDUuanBlZw.jpeg",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/fD5IxP6k_hfRHM131QD9Vnybkt5sUVQbzivWfpUs56Y/rs:fit/g:sm/q:90/h:512/w:512/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgyMy0x/NTE1NDkyMjA5LTIz/NDguanBlZw.jpeg",
+      "width": 512,
+      "height": 512
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Stoor",
+    "STOOR",
+    "Filth On Acid",
+    "Not On Label (Speedy J Self-released)",
+    "Not On Label (Tek Soldierz Self-Released)"
+  ],
+  "releases": [
+    {
+      "title": "808 180 30",
+      "year": 2026,
+      "label": "Stoor",
+      "role": "Main",
+      "format": "File, FLAC, Album, 24b"
+    },
+    {
+      "title": "808 100 10",
+      "year": 2026,
+      "label": "Stoor",
+      "role": "Main",
+      "format": "File, FLAC, Album, 24b"
+    },
+    {
+      "title": "STOOR 1",
+      "year": 2026,
+      "label": "STOOR",
+      "role": "Main",
+      "format": "4xFile, WAV, 24b"
+    },
+    {
+      "title": "808 180 30",
+      "year": 2026,
+      "label": "Stoor",
+      "role": "Main",
+      "format": "Lathe, 7\", S/Sided, Ltd, Yel"
+    },
+    {
+      "title": "STOOR Soundchecks 2",
+      "year": 2026,
+      "label": "Stoor",
+      "role": "Main",
+      "format": "4xFile, MP3, 320"
+    },
+    {
+      "title": "STOOR 2",
+      "year": 2026,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Transparent",
+      "year": 2026,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Walkman",
+      "year": 2026,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "STOOR Soundchecks 1",
+      "year": 2026,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Collabs 3000 2025 EP",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Speedy & Steve",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Oldskoolweg",
+      "year": 2022,
+      "label": "Filth On Acid",
+      "role": "Main",
+      "format": "4xFile, MP3, 320"
+    },
+    {
+      "title": "45 RNR ZNNVLD x SPDJ",
+      "year": 2022,
+      "label": "Stoor",
+      "role": "Main",
+      "format": "Lathe, 12\", Ltd, Num"
+    },
+    {
+      "title": "46 SPEEDY & STEVE",
+      "year": 2022,
+      "label": "Stoor",
+      "role": "Main",
+      "format": "Lathe, 12\", Ltd, Num"
+    },
+    {
+      "title": "44 CHRLTN x SPDJ",
+      "year": 2021,
+      "label": "Stoor",
+      "role": "Main",
+      "format": "Lathe, 12\", Ltd, Num"
+    },
+    {
+      "title": "43 CHRLTN x SPDJ",
+      "year": 2021,
+      "label": "Stoor",
+      "role": "Main",
+      "format": "Lathe, 12\", Ltd, Num"
+    },
+    {
+      "title": "42 CHRLTN x SPDJ",
+      "year": 2021,
+      "label": "Stoor",
+      "role": "Main",
+      "format": "Lathe, 12\", Ltd, Num"
+    },
+    {
+      "title": "Armstrong / Klave",
+      "year": 2021,
+      "label": "Not On Label (Speedy J Self-released)",
+      "role": "Main",
+      "format": "2xFile, MP3, Comp, RM, 320"
+    },
+    {
+      "title": "Dialogue",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "39 STRWGH x SPDJ",
+      "year": 2020,
+      "label": "Stoor",
+      "role": "Main",
+      "format": "Lathe, 12\", Ltd, Num"
+    },
+    {
+      "title": "RAWWAV1",
+      "year": 2019,
+      "label": "Stoor",
+      "role": "Main",
+      "format": "File, WAV, Comp, USB"
+    },
+    {
+      "title": "10 FNCTN x SPDJ (12\", EP, Ltd, Num)",
+      "year": 2018,
+      "label": "Stoor",
+      "role": "Main",
+      "format": "Lathe, 12\", EP, Ltd, Num"
+    },
+    {
+      "title": "11 FNCTN x SPDJ (12\", EP, Ltd, Num)",
+      "year": 2018,
+      "label": "Stoor",
+      "role": "Main",
+      "format": "Lathe, 12\", EP, Ltd, Num"
+    },
+    {
+      "title": "12 AnDnJ",
+      "year": 2018,
+      "label": "Stoor",
+      "role": "Main",
+      "format": "Lathe, 12\", Ltd, Num, 180"
+    },
+    {
+      "title": "13 AnDnJ",
+      "year": 2018,
+      "label": "Stoor",
+      "role": "Main",
+      "format": "Lathe, 12\", Ltd, Num, 180"
+    },
+    {
+      "title": "14 AnDnJ",
+      "year": 2018,
+      "label": "Stoor",
+      "role": "Main",
+      "format": "Lathe, Ltd, Num, 180"
+    },
+    {
+      "title": "15 AnDnJ",
+      "year": 2018,
+      "label": "Stoor",
+      "role": "Main",
+      "format": "Lathe, 12\", Ltd, Num, 180"
+    },
+    {
+      "title": "16 AnDnJ",
+      "year": 2018,
+      "label": "Stoor",
+      "role": "Main",
+      "format": "Lathe, 12\", EP, Ltd, Num"
+    },
+    {
+      "title": "19 SBJCTD x SPDJ",
+      "year": 2018,
+      "label": "Stoor",
+      "role": "Main",
+      "format": "Lathe, 12\", Ltd, Num"
+    },
+    {
+      "title": "20 CLN BNDRS x SPDJ",
+      "year": 2018,
+      "label": "Stoor",
+      "role": "Main",
+      "format": "Lathe, 12\", Ltd, Num"
+    }
+  ],
+  "releaseCount": 50,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/823"
+  },
+  "_cachedAt": 1781887722996
+}

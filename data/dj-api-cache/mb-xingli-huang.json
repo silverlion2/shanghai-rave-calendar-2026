@@ -1,0 +1,30 @@
+{
+  "found": true,
+  "id": "98b06ec0-33d5-4305-be81-aed88d00ea49",
+  "name": "Andrew Huang",
+  "sortName": "Huang, Andrew",
+  "type": "Person",
+  "gender": "male",
+  "country": "CA",
+  "disambiguation": "musician, video producer, internet personality",
+  "lifeSpan": {
+    "begin": "1984-04-08",
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [
+    "electronic",
+    "experimental",
+    "canadian",
+    "idm",
+    "electronica",
+    "electropop",
+    "youtuber"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 475
+  },
+  "_cachedAt": 1781886317764
+}

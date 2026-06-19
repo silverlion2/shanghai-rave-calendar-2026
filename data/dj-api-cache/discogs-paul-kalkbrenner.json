@@ -1,0 +1,343 @@
+{
+  "found": true,
+  "id": 15593,
+  "name": "Paul Kalkbrenner",
+  "profile": "Born June 11, 1977 in Leipzig. Techno Artist from Berlin, Germany. Brother of [a=Fritz Kalkbrenner].\r\n\r\n",
+  "nameVariations": [
+    "P. Kalkbrenner",
+    "P.Kalkbrenner",
+    "Paul",
+    "Paul."
+  ],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "http://paulkalkbrenner.net",
+    "https://pk-merch.de/",
+    "http://www.facebook.com/paulkalkbrenner",
+    "http://www.instagram.com/iampaulkalkbrenner",
+    "http://twitter.com/paulkalkbrenner",
+    "http://www.myspace.com/paulkalkbrenner",
+    "http://soundcloud.com/paulkalkbrenner",
+    "https://www.mixcloud.com/paulkalkbrenner/",
+    "http://www.youtube.com/paulkalkbrenner",
+    "http://en.wikipedia.org/wiki/Paul_Kalkbrenner",
+    "https://www.mixesdb.com/w/Category:Paul_Kalkbrenner"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/HCpSM2Dvh87rGP2UFZ5kjp3JuiDAZQNRk66l8ILNuHw/rs:fit/g:sm/q:90/h:662/w:565/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1NTkz/LTE1MTc2NzI3NTMt/NzI4Mi5qcGVn.jpeg",
+      "width": 565,
+      "height": 662
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/dhsqVk1WjPLmG1KVcAztX8qxvrlubY_tPC0nwvG7W_c/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1NTkz/LTE3MDA4MzI0MTkt/Nzk4Mi5qcGVn.jpeg",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/G--ZJI1y3q14KEo8Dw7nzB2qrlb7cVQOamAMfkz_-t0/rs:fit/g:sm/q:90/h:627/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1NTkz/LTEyNjU5ODY2NjMu/anBlZw.jpeg",
+      "width": 600,
+      "height": 627
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/Cy3g4n4QfDK5gQ5qSkdtrFWUYBCoPepJUfY18KqXnUU/rs:fit/g:sm/q:90/h:900/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1NTkz/LTEyNjU5ODY2NTUu/anBlZw.jpeg",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/YyWiB5RnuaDypQBrGnR7bPJfvMhhRRqrJjF3sBhGugs/rs:fit/g:sm/q:90/h:900/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1NTkz/LTEyNjU5ODY2Njku/anBlZw.jpeg",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/MfdkEkbatiJsicmhAx-iPXiihB7cXJzvFLETDks80c0/rs:fit/g:sm/q:90/h:213/w:160/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1NTkz/LTEwNzg3OTMxOTEu/anBn.jpeg",
+      "width": 160,
+      "height": 213
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/e0S96c71-xilDWP8AMY44hFvUxzoLGPVpNDBUB8CbXE/rs:fit/g:sm/q:90/h:150/w:200/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1NTkz/LTExMjU3ODA1NjUu/anBlZw.jpeg",
+      "width": 200,
+      "height": 150
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/Po_LrOMRehfL9_jgQvKmPQ5LPxLfeTJah-cJdAPGSWo/rs:fit/g:sm/q:90/h:624/w:468/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1NTkz/LTEyNTYxNTg5OTku/anBlZw.jpeg",
+      "width": 468,
+      "height": 624
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/NURcrrzQbZxNCSx1dkXSebIAeaWjr121yPnL5ZfyqCo/rs:fit/g:sm/q:90/h:408/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1NTkz/LTE3MDA4MzI0MTgt/NjYwNy5qcGVn.jpeg",
+      "width": 600,
+      "height": 408
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/5iuJqNbM_TxSRsdcAHnw60nxM4yH9Xe6S7Jl6a3yhDo/rs:fit/g:sm/q:90/h:399/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1NTkz/LTE3MDA4MzI0MTgt/MzA0NC5qcGVn.jpeg",
+      "width": 600,
+      "height": 399
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/5eeMYA9FJrXH7fyjVKOIBdychLDxObXWG6gUn8u4-Qw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1NTkz/LTE3MDA4MzI0MTgt/MzMyMS5qcGVn.jpeg",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/Z_pLJN3ijciaZSCWxQFjcK8D2uco6T_nObeVIoG-Iuk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1NTkz/LTE3MDA4MzI0MTkt/OTI0MC5qcGVn.jpeg",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/A4_yUnE57evH2y6_7AujZ-nZxaZGpgtzE-z1G4JmkAM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1NTkz/LTE3MDA4MzI0MTkt/OTIyMC5qcGVn.jpeg",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/NJtKkIWdAeWoQSxS_8JGJor_-ZO_HeDXXhTNH25usYg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1NTkz/LTE3MDA4MzI0MTkt/NjA0NC5qcGVn.jpeg",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/1rd10i4rMVH8GPFjT_vQNdjFEfnqPeFcttM4V6v5n6w/rs:fit/g:sm/q:90/h:449/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1NTkz/LTE3MDA4MzI0MTgt/NDQyNy5qcGVn.jpeg",
+      "width": 600,
+      "height": 449
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/qpUldDUKtWRwM1CjnCHPqig0fFbW_Aaqrx2SRx9d6Ts/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1NTkz/LTE3MDA4MzI0MTkt/NjkxMi5qcGVn.jpeg",
+      "width": 600,
+      "height": 600
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "B1 Recordings, Columbia",
+    "Paul Kalkbrenner Musik",
+    "B1 Recordings",
+    "B1 Recordings, Sony Music",
+    "Not On Label (Paul Kalkbrenner Self-released)",
+    "Sony Music Entertainment International Limited",
+    "Not On Label (Kyau & Albert Self-released)",
+    "Resident Advisor",
+    "Suol",
+    "BPitch Control",
+    "Arte Éditions"
+  ],
+  "releases": [
+    {
+      "title": "Dreaming On",
+      "year": 2025,
+      "label": "B1 Recordings, Columbia",
+      "role": "Main",
+      "format": "File, WAV, Single, 24-"
+    },
+    {
+      "title": "Ninety-Two",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Que Ce Soit Clair",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "The Essence",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "VIER: DREI",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Kabelmann",
+      "year": 2024,
+      "label": "Paul Kalkbrenner Musik",
+      "role": "Main",
+      "format": "2xFile, WAV, EP"
+    },
+    {
+      "title": "Schwer",
+      "year": 2023,
+      "label": "Paul Kalkbrenner Musik",
+      "role": "Main",
+      "format": "File, WAV, Single"
+    },
+    {
+      "title": "Graf Zahl",
+      "year": 2021,
+      "label": "B1 Recordings",
+      "role": "Main",
+      "format": "File, AIFF, MP3, WAV, Single, 320"
+    },
+    {
+      "title": "Si Soy Fuego",
+      "year": 2021,
+      "label": "B1 Recordings",
+      "role": "Main",
+      "format": "File, WAV, Single"
+    },
+    {
+      "title": "Speak Up EP",
+      "year": 2020,
+      "label": "B1 Recordings, Sony Music",
+      "role": "Main",
+      "format": "12\", EP, Ltd"
+    },
+    {
+      "title": "Parachute",
+      "year": 2020,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "No Goodbye",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Parts Of Life",
+      "year": 2018,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Back To The Future Pt. 1",
+      "year": 2016,
+      "label": "Not On Label (Paul Kalkbrenner Self-released)",
+      "role": "Main",
+      "format": "M/Stick, Mixtape"
+    },
+    {
+      "title": "Back To The Future Pt. 2",
+      "year": 2016,
+      "label": "Not On Label (Paul Kalkbrenner Self-released)",
+      "role": "Main",
+      "format": "M/Stick, Mixtape"
+    },
+    {
+      "title": "Back To The Future Pt. 3",
+      "year": 2016,
+      "label": "Not On Label (Paul Kalkbrenner Self-released)",
+      "role": "Main",
+      "format": "M/Stick, Mixtape"
+    },
+    {
+      "title": "Mothertrucker",
+      "year": 2015,
+      "label": "Sony Music Entertainment International Limited",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Feed Your Head (Kölsch Remix)",
+      "year": 2015,
+      "label": "Sony Music Entertainment International Limited",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Feed Your Head (Kyau & Albert Remix)",
+      "year": 2015,
+      "label": "Not On Label (Kyau & Albert Self-released)",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "RA.EX264 Paul Kalkbrenner",
+      "year": 2015,
+      "label": "Resident Advisor",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "7",
+      "year": 2015,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Cloud Rider",
+      "year": 2015,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Gebrünn Gebrünn",
+      "year": 2014,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Kleines Bubu",
+      "year": 2014,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Böxig Leise",
+      "year": 2014,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Das Gezabel",
+      "year": 2014,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Altes Kamuffel",
+      "year": 2014,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Bengang",
+      "year": 2014,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "X",
+      "year": 2014,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Global Player Soundtrack",
+      "year": 2013,
+      "label": "Suol",
+      "role": "Main",
+      "format": "CD, Album"
+    }
+  ],
+  "releaseCount": 50,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/15593"
+  },
+  "_cachedAt": 1781887474782
+}

@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "79ab5552-22d0-4959-bf9f-4c22afd0fa3d",
+  "name": "WATARU",
+  "sortName": "WATARU",
+  "type": "Person",
+  "gender": null,
+  "country": null,
+  "disambiguation": "BEMANI",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 148
+  },
+  "_cachedAt": 1781888896595
+}

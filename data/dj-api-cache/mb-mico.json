@@ -1,0 +1,23 @@
+{
+  "found": true,
+  "id": "aeeb1fc9-9ad4-4168-85af-7ed6bfd88451",
+  "name": "Mico",
+  "sortName": "Mico",
+  "type": "Group",
+  "gender": null,
+  "country": "Banff",
+  "disambiguation": "Canadian punk band",
+  "lifeSpan": {
+    "begin": "1998",
+    "end": "2007",
+    "ended": true
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 360
+  },
+  "_cachedAt": 1781886177682
+}

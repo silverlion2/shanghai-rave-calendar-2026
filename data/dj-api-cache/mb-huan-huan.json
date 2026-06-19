@@ -1,0 +1,31 @@
+{
+  "found": true,
+  "id": "e6951550-c02a-4bc4-8faa-48ddb743b5aa",
+  "name": "緩緩",
+  "sortName": "Huan Huan",
+  "type": "Group",
+  "gender": null,
+  "country": "TW",
+  "disambiguation": "Taiwanese indie-band",
+  "lifeSpan": {
+    "begin": "2016",
+    "ended": null
+  },
+  "aliases": [
+    "Huan Huan"
+  ],
+  "tags": [
+    "post-rock",
+    "alternative rock",
+    "shoegaze",
+    "indie pop",
+    "slowcore",
+    "dreampop"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 633
+  },
+  "_cachedAt": 1781886064989
+}

@@ -1,0 +1,22 @@
+{
+  "found": true,
+  "id": "af5e9d69-2c71-4e6c-b6d2-05a9d3ee9570",
+  "name": "Shinny Albert and the Carnies",
+  "sortName": "Albert, Shinny and Carnies, The",
+  "type": "Group",
+  "gender": null,
+  "country": null,
+  "disambiguation": "",
+  "lifeSpan": {
+    "begin": "2022",
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 1
+  },
+  "_cachedAt": 1781885413200
+}

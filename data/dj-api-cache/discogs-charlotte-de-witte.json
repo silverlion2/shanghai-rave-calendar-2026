@@ -1,0 +1,312 @@
+{
+  "found": true,
+  "id": 4321662,
+  "name": "Charlotte De Witte",
+  "profile": "Belgian DJ and record producer, born July 21, 1992 in Ghent, Flanders.",
+  "nameVariations": [
+    "C. De Wit",
+    "Charlotte Aloïs De Witte",
+    "Charlotte de Witte"
+  ],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "https://charlottedewittemusic.com",
+    "https://www.facebook.com/charlottedewittemusic",
+    "https://www.instagram.com/charlottedewittemusic",
+    "https://www.threads.net/@charlottedewittemusic",
+    "https://soundcloud.com/charlottedewittemusic",
+    "https://twitter.com/charlottedwitte",
+    "https://charlottedewittemusic.bandcamp.com"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/kdHMS0RyK6E4rBwaJ9nKZXFiEKrEEay_Ou3A2BvzwZc/rs:fit/g:sm/q:90/h:750/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQzMjE2/NjItMTYxMDgwMjEw/Mi02NjA1LmpwZWc.jpeg",
+      "width": 600,
+      "height": 750
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/OYM3UlQiEQspx_nr_tqQs-tByEz-b1HEvl2mxbwM0QU/rs:fit/g:sm/q:90/h:614/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQzMjE2/NjItMTYxMDgwMjIx/Ni05MTUyLmpwZWc.jpeg",
+      "width": 600,
+      "height": 614
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/wpWkGxwG8jtSHjpUKM6r_d5QweyvLD7o4UNfNqUXseY/rs:fit/g:sm/q:90/h:794/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQzMjE2/NjItMTU0Mzg0MDEw/OS02MzQ0LmpwZWc.jpeg",
+      "width": 600,
+      "height": 794
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/SCWmcCFz4PIqrLJ6YBI5iA1Ej_VRmZUburcpMSIC99A/rs:fit/g:sm/q:90/h:316/w:275/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQzMjE2/NjItMTU0MzgzOTg5/Mi01MjUwLmpwZWc.jpeg",
+      "width": 275,
+      "height": 316
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/rBOlpflwHE5eAjxD6ZyZFM-_EFpvP-4QpYwPTOBJ_dE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQzMjE2/NjItMTUxODY2OTky/MS04MTI3LmpwZWc.jpeg",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/kJI8WjClhqG49tHssY6tVDmXfftO49rCTk3FmEuCdE0/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQzMjE2/NjItMTQ0OTg0NjM5/NC03NTQ1LnBuZw.jpeg",
+      "width": 400,
+      "height": 400
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/2B96UnPxUzWJY5w_ug-edwQ1pzSQyMgR9hvRyBzbbnY/rs:fit/g:sm/q:90/h:750/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQzMjE2/NjItMTYxMDgwMjE1/Ny03MTkwLmpwZWc.jpeg",
+      "width": 600,
+      "height": 750
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/rjfWfCbJjUxcAC5-aZQ0KFHlPGjN9kCi5UJE0Hx9F-M/rs:fit/g:sm/q:90/h:750/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQzMjE2/NjItMTYxMDgwMjEy/OS0yNzQ5LmpwZWc.jpeg",
+      "width": 600,
+      "height": 750
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/1RuHLIxMi2oeUn2-3qpnMdrHoGgZ-na6deyaMK9-vhU/rs:fit/g:sm/q:90/h:750/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQzMjE2/NjItMTYxMDgwMjE1/OS02ODYzLmpwZWc.jpeg",
+      "width": 600,
+      "height": 750
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/3yMhC1lDWd8bJX2l01f3ob_3E2_6AAV6XthD_a3Ef_E/rs:fit/g:sm/q:90/h:399/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQzMjE2/NjItMTQ0OTg0NjQw/MC0yNjAwLnBuZw.jpeg",
+      "width": 600,
+      "height": 399
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/Bc9EcUkTWFjy3ao4x0Wax7Hi687jaRk7-Wyvj0YPdMs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQzMjE2/NjItMTQ0OTg0NjQ0/NC0zMjY3LmpwZWc.jpeg",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/PdzuR8tMg41eTtEqJWtrSvMPilsfdjsXW_CpKjr7O8U/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQzMjE2/NjItMTY1NDY4Njc0/NS00NDY5LmpwZWc.jpeg",
+      "width": 600,
+      "height": 600
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "KNTXT",
+    "RPM (25)",
+    "Mixmag",
+    "Groove",
+    "Kontor Records",
+    "Resident Advisor",
+    "Sleaze Records",
+    "Tsugi",
+    "Amazone Records, Amazone Records",
+    "Turbo Recordings",
+    "Kneaded Pains",
+    "541",
+    "Elements Of Life (3)",
+    "Armada Digital",
+    "Armada Music"
+  ],
+  "releases": [
+    {
+      "title": "Amor EP",
+      "year": 2026,
+      "label": "KNTXT",
+      "role": "Main",
+      "format": "3xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Amor EP",
+      "year": 2026,
+      "label": "KNTXT",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "A Prayer For The Dancefloor",
+      "year": 2026,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Symphonie Des Seins EP",
+      "year": 2026,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "The Heads That Know",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "One Mind",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Charlotte De Witte",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "No Division",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Sanctum EP",
+      "year": 2024,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Roar EP",
+      "year": 2024,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "High Street Remixes EP",
+      "year": 2023,
+      "label": "RPM (25)",
+      "role": "Main",
+      "format": "2xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Power Of Thought EP",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Reflection",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Overdrive EP",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Apollo EP",
+      "year": 2022,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Universal Consciousness EP",
+      "year": 2022,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Mixmag Presents: Charlotte De Witte (DJ Mix)",
+      "year": 2021,
+      "label": "Mixmag",
+      "role": "Main",
+      "format": "14xFile, MP3, Comp, Mixed, 320"
+    },
+    {
+      "title": "Formula EP",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Asura EP",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Lighthouse EP",
+      "year": 2020,
+      "label": "KNTXT",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Vision EP",
+      "year": 2020,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Return To Nowhere EP",
+      "year": 2020,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Rave On Time EP",
+      "year": 2020,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Selected EP",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Pressure EP",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Liquid Slow EP",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Groove Podcast 163",
+      "year": 2018,
+      "label": "Groove",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "SonneMondSterne XXII",
+      "year": 2018,
+      "label": "Kontor Records",
+      "role": "Main",
+      "format": "2xCD, Comp, Mixed"
+    },
+    {
+      "title": "RA.624",
+      "year": 2018,
+      "label": "Resident Advisor",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "The Healer EP",
+      "year": 2018,
+      "label": null,
+      "role": "Main"
+    }
+  ],
+  "releaseCount": 50,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/4321662"
+  },
+  "_cachedAt": 1781880992554
+}

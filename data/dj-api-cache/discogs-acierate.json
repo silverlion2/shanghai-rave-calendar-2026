@@ -1,0 +1,266 @@
+{
+  "found": true,
+  "id": 6764850,
+  "name": "Tham (5)",
+  "profile": "Techno / Industrial / Trance DJ & producer based in Berlin, Germany.\r\nCo-founder of Synoid events alongside Acierate.\r\nContact: andreas@synoid.de",
+  "nameVariations": [],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "http://www.facebook.com/thambln",
+    "http://www.instagram.com/tham.bln/",
+    "https://thamscx.bandcamp.com/",
+    "http://soundcloud.com/thambln",
+    "http://ra.co/dj/tham",
+    "http://www.sinusagency.com/artists/tham/?portfolioCats=3",
+    "http://synoid.de/Artists"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/ldGeXC2MYsJWpkzvwbvquHSUOsyow0VSbE2GOgXriAo/rs:fit/g:sm/q:90/h:588/w:588/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTY3NjQ4/NTAtMTYzNTIxMDg3/NS01MzQyLmpwZWc.jpeg",
+      "width": 588,
+      "height": 588
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Techno Germany Records",
+    "DRILLER (2)",
+    "Destroy To Rebuild Records",
+    "Space Trax",
+    "BPitch Control",
+    "Lebendig",
+    "Märked",
+    "Newkids Records",
+    "Abstraction (2)",
+    "RND. Records",
+    "Midnight Mana",
+    "Perc Trax",
+    "Out Rage Records",
+    "Modular Expansion Podcast",
+    "duel (14)",
+    "Kaos (6)",
+    "Sacred Court",
+    "BPitch Control, BPitch Control",
+    "The Third Room",
+    "Ismus",
+    "The Revera Corporation",
+    "voxnox Records",
+    "Sculptures (2)"
+  ],
+  "releases": [
+    {
+      "title": "Love is not enough",
+      "year": 2025,
+      "label": "Techno Germany Records",
+      "role": "Main",
+      "format": "12\", EP, Ltd"
+    },
+    {
+      "title": "Wrong Turn",
+      "year": 2022,
+      "label": "DRILLER (2)",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Split Series 001",
+      "year": 2022,
+      "label": "Destroy To Rebuild Records",
+      "role": "Main",
+      "format": "12\", Whi"
+    },
+    {
+      "title": "SPT004",
+      "year": 2021,
+      "label": "Space Trax",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Silent Call",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "The Third Kind",
+      "year": 2020,
+      "label": "BPitch Control",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Protokoll K-278",
+      "year": 2019,
+      "label": "Lebendig",
+      "role": "Main",
+      "format": "4xFile, WAV, EP"
+    },
+    {
+      "title": "Cthulhu Nation",
+      "year": 2018,
+      "label": "Lebendig",
+      "role": "Main",
+      "format": "4xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Stargaze EP",
+      "year": 2023,
+      "label": "Märked",
+      "role": "Remix",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Burning In Embers EP",
+      "year": 2023,
+      "label": "Newkids Records",
+      "role": "Remix",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Siempre Dos EP",
+      "year": 2021,
+      "label": "Abstraction (2)",
+      "role": "Remix",
+      "format": "6xFile, FLAC, EP"
+    },
+    {
+      "title": "Adar EP",
+      "year": 2020,
+      "label": "Märked",
+      "role": "Remix",
+      "format": "File, MP3, WAV, EP"
+    },
+    {
+      "title": "We Became Reptiles EP",
+      "year": 2019,
+      "label": "RND. Records",
+      "role": "Remix",
+      "format": "5xFile, WAV, EP"
+    },
+    {
+      "title": "Echoes",
+      "year": 2025,
+      "label": "Midnight Mana",
+      "role": "TrackAppearance",
+      "format": "12\""
+    },
+    {
+      "title": "Together Forever: Forever 1-4",
+      "year": 2024,
+      "label": "Perc Trax",
+      "role": "TrackAppearance",
+      "format": "20xFile, WAV, Comp"
+    },
+    {
+      "title": "Sentence Six",
+      "year": 2024,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Verdict One ",
+      "year": 2023,
+      "label": "DRILLER (2)",
+      "role": "TrackAppearance",
+      "format": "2x12\""
+    },
+    {
+      "title": "Verdict Two",
+      "year": 2023,
+      "label": "DRILLER (2)",
+      "role": "TrackAppearance",
+      "format": "10xFile, MP3, Comp, 320"
+    },
+    {
+      "title": "Madman",
+      "year": 2023,
+      "label": "Out Rage Records",
+      "role": "TrackAppearance",
+      "format": "6xFile, FLAC"
+    },
+    {
+      "title": "Forever 4",
+      "year": 2023,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Modular Expansion Podcast #131",
+      "year": 2022,
+      "label": "Modular Expansion Podcast",
+      "role": "TrackAppearance",
+      "format": "15xFile, MP3, Mixed, S/Edition, 320"
+    },
+    {
+      "title": "Round One",
+      "year": 2022,
+      "label": "duel (14)",
+      "role": "TrackAppearance",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Protect The Sky - United Artists For Ukraine",
+      "year": 2022,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Bleached Punk",
+      "year": 2021,
+      "label": "Kaos (6)",
+      "role": "TrackAppearance",
+      "format": "12\""
+    },
+    {
+      "title": "Sentence Two",
+      "year": 2021,
+      "label": "Sacred Court",
+      "role": "TrackAppearance",
+      "format": "12\", EP, Ltd"
+    },
+    {
+      "title": "We Are Not Alone Pt.2",
+      "year": 2021,
+      "label": "BPitch Control, BPitch Control",
+      "role": "TrackAppearance",
+      "format": "2x12\", Comp"
+    },
+    {
+      "title": "Stone Techno Series - Orthorhombic ",
+      "year": 2021,
+      "label": "The Third Room",
+      "role": "TrackAppearance",
+      "format": "12\", Mar"
+    },
+    {
+      "title": "Sektion 1",
+      "year": 2020,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Various Artists 002 Fundraiser Compilation",
+      "year": 2020,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "ISMVA001​.​1 ",
+      "year": 2019,
+      "label": "Ismus",
+      "role": "TrackAppearance",
+      "format": "11xFile, WAV, Comp"
+    }
+  ],
+  "releaseCount": 34,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/6764850"
+  },
+  "_cachedAt": 1781889181011
+}

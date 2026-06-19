@@ -1,0 +1,164 @@
+{
+  "found": true,
+  "id": 14289532,
+  "name": "Fantasm (3)",
+  "profile": "",
+  "nameVariations": [],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "https://www.instagram.com/fantasm_techno/"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/kpipwIRWzjHkhL7cJk6R-617jQKW3m6fjBVB8IEG8UU/rs:fit/g:sm/q:90/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE0Mjg5/NTMyLTE3NzE0NDY4/NTItODQzMS5qcGVn.jpeg",
+      "width": 150,
+      "height": 150
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Wonder (9)",
+    "Gearbox Digital",
+    "Propaganda Records (4), Propaganda Records (4)",
+    "Gearbox Revolutions",
+    "ZYX Music",
+    "Verknipt Records",
+    "Rave 4 Love"
+  ],
+  "releases": [
+    {
+      "title": "Lord Of Chaos",
+      "year": 2026,
+      "label": "Wonder (9)",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Arena Conqueror",
+      "year": 2026,
+      "label": "Wonder (9)",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Hard Is Our Way Of Life",
+      "year": 2026,
+      "label": "Wonder (9)",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Baby Boy",
+      "year": 2026,
+      "label": "Wonder (9)",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "On Fire",
+      "year": 2025,
+      "label": "Gearbox Digital",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Nfwu",
+      "year": 2025,
+      "label": "Gearbox Digital",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Stone Cold Killa",
+      "year": 2025,
+      "label": "Gearbox Digital",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Hit It Boy",
+      "year": 2025,
+      "label": "Propaganda Records (4), Propaganda Records (4)",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Ruler Of Worlds",
+      "year": 2025,
+      "label": "Wonder (9)",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Beuken",
+      "year": 2025,
+      "label": "Wonder (9)",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Puta Madre EP",
+      "year": 2024,
+      "label": "Gearbox Revolutions",
+      "role": "Main",
+      "format": "2xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Buttercup With An Axe",
+      "year": 2024,
+      "label": "Propaganda Records (4), Propaganda Records (4)",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Mysteries Of Creation",
+      "year": 2026,
+      "label": null,
+      "role": "Remix"
+    },
+    {
+      "title": "Kokeen Remix EP",
+      "year": 2025,
+      "label": null,
+      "role": "Remix"
+    },
+    {
+      "title": "Dark Techno 2024",
+      "year": 2024,
+      "label": "ZYX Music",
+      "role": "Remix",
+      "format": "2xCD, Mixed"
+    },
+    {
+      "title": "Dark Techno 2024",
+      "year": 2024,
+      "label": "ZYX Music",
+      "role": "TrackAppearance",
+      "format": "2xCD, Mixed"
+    },
+    {
+      "title": "Verknipt Arena",
+      "year": 2024,
+      "label": "Verknipt Records",
+      "role": "TrackAppearance",
+      "format": "LP, Whi + LP, Red + Album"
+    },
+    {
+      "title": "Rave For Love 001",
+      "year": 2023,
+      "label": "Rave 4 Love",
+      "role": "TrackAppearance",
+      "format": "6xFile, MP3, Comp, 320"
+    }
+  ],
+  "releaseCount": 18,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/14289532"
+  },
+  "_cachedAt": 1781881333905
+}

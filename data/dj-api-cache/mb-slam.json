@@ -1,0 +1,29 @@
+{
+  "found": true,
+  "id": "e6fea316-3ef4-49b8-97bf-483b69c0d354",
+  "name": "Slam",
+  "sortName": "Slam",
+  "type": "Group",
+  "gender": null,
+  "country": "GB",
+  "disambiguation": "DJ and producer duo from Glasgow, co‐founders of Soma Records",
+  "lifeSpan": {
+    "begin": "1994",
+    "ended": null
+  },
+  "aliases": [
+    "Slam!"
+  ],
+  "tags": [
+    "electronic",
+    "scottish",
+    "british",
+    "dance and electronica"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 752
+  },
+  "_cachedAt": 1781887541340
+}

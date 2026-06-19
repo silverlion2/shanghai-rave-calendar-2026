@@ -1,0 +1,30 @@
+{
+  "found": true,
+  "id": "919bb117-4ea8-4107-a924-80fe7ce95f56",
+  "name": "KOD",
+  "sortName": "KOD",
+  "type": "Group",
+  "gender": null,
+  "country": null,
+  "disambiguation": "french reggae",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [
+    "K.O.D."
+  ],
+  "tags": [
+    "français",
+    "france",
+    "francophone",
+    "french",
+    "reggae",
+    "_private tag 1"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 2413
+  },
+  "_cachedAt": 1781889469823
+}

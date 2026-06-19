@@ -1,0 +1,219 @@
+{
+  "found": true,
+  "id": 4838162,
+  "name": "Peggy GOU",
+  "profile": "",
+  "nameVariations": [],
+  "members": [],
+  "groups": [],
+  "urls": [],
+  "images": [],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Kiss Klassics",
+    "XL Recordings",
+    "Phonica White",
+    "Phonica Mix Series",
+    "Warner Music France",
+    "Ministry Of Sound",
+    "Wagram Music",
+    "DMC",
+    "Black Butter Records",
+    "Freerange Records",
+    "Groove"
+  ],
+  "releases": [
+    {
+      "title": "Freed From Desire /  (It Goes Like) Nanana",
+      "year": 2026,
+      "label": "Kiss Klassics",
+      "role": "Main",
+      "format": "7\", Single"
+    },
+    {
+      "title": "I Feel So Free (Peggy Gou Energy Mix)",
+      "year": 2026,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "D.A.N.C.E.",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Like Jennie (Peggy Gou Remix)",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "I Hear You ",
+      "year": 2024,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Lobster Telephone (Edit)",
+      "year": 2024,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Find The Way",
+      "year": 2024,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "1+1=11",
+      "year": 2024,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "(It Goes Like) Nanana",
+      "year": 2023,
+      "label": "XL Recordings",
+      "role": "Main",
+      "format": "3xFile, FLAC, Single"
+    },
+    {
+      "title": "I Believe In Love Again",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "(It Goes Like) Nanana",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "I Go",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Nabi ",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Earth EP",
+      "year": 2020,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "DJ-Kicks",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Moment EP",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "DJ-Kicks EP",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Travelling Without Arriving",
+      "year": 2018,
+      "label": "Phonica White",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Once",
+      "year": 2018,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "It Makes You Forget (Itgehane)",
+      "year": 2018,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Needs x UN Women Present HeForShe",
+      "year": 2018,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Phonica Mix Series 26",
+      "year": 2016,
+      "label": "Phonica Mix Series",
+      "role": "Main",
+      "format": "File, MP3, Mixed"
+    },
+    {
+      "title": "Art Of War EP",
+      "year": 2016,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Art Of War (Part II) EP",
+      "year": 2016,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Day Without Yesterday / Six O Six",
+      "year": 2016,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Seek For Maktoop",
+      "year": 2016,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "I Feel So Free (Peggy Gou Energy Mix)",
+      "year": 2026,
+      "label": null,
+      "role": "Remix"
+    },
+    {
+      "title": "H2DAIZZO",
+      "year": 2026,
+      "label": null,
+      "role": "Remix"
+    },
+    {
+      "title": "Defected In The House Ibiza 2025",
+      "year": 2025,
+      "label": null,
+      "role": "Remix"
+    },
+    {
+      "title": "Like Jennie",
+      "year": 2025,
+      "label": null,
+      "role": "Remix"
+    }
+  ],
+  "releaseCount": 50,
+  "dataQuality": null,
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/4838162"
+  },
+  "_cachedAt": 1781881115269
+}

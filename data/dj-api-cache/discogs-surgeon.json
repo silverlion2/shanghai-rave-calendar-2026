@@ -1,0 +1,319 @@
+{
+  "found": true,
+  "id": 1114,
+  "name": "Surgeon",
+  "profile": "English electronic musician and DJ.\r\nMarried to [a3405581].",
+  "nameVariations": [
+    "DJ Surgeon",
+    "Surgeon 2000",
+    "The Surgeon"
+  ],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "http://www.dj-surgeon.com",
+    "http://dj-surgeon.bandcamp.com",
+    "http://dj-surgeon.blogspot.com",
+    "http://bsky.app/profile/dj-surgeon.bandcamp.com",
+    "http://equipboard.com/pros/surgeon",
+    "http://www.instagram.com/tony_surgeon",
+    "http://linktr.ee/tony_surgeon",
+    "http://soundcloud.com/dynamic-tension",
+    "http://twitter.com/tony_surgeon",
+    "http://www.youtube.com/user/youknowiloveyou"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/nm6fwWfS32xTUEE5ULlU81Hds0LmES1WjypoTZ3_1Og/rs:fit/g:sm/q:90/h:404/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTExMTQt/MTc0NjMxMjkxNS0y/OTQ2LmpwZWc.jpeg",
+      "width": 590,
+      "height": 404
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/_gnYfsqibkxMM-XsVRcnfHOKM4Srmw2QX1s-wY4jB4o/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTExMTQt/MTU5MTk2NzEzMi0z/NjAwLmpwZWc.jpeg",
+      "width": 400,
+      "height": 400
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/wWMUPp4NMUPRV6PJ99PZR9opNJDSJhOkFP4vL1zQkkQ/rs:fit/g:sm/q:90/h:698/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTExMTQt/MTUxODQ2MjMxNC01/MjU5LmpwZWc.jpeg",
+      "width": 600,
+      "height": 698
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/CcCgbJuhSY6DBlwUT8Tr4e_-49pewVap6XG__Ex3y-k/rs:fit/g:sm/q:90/h:599/w:538/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTExMTQt/MTMzOTE2NDU2OS05/NzU3LmpwZWc.jpeg",
+      "width": 538,
+      "height": 599
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/JpHZEeYD6lkRMLFFqCrezV4qwLZOJOqueJ92EAE5ihE/rs:fit/g:sm/q:90/h:345/w:230/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTExMTQt/MTI4MDE2ODk4MC5q/cGVn.jpeg",
+      "width": 230,
+      "height": 345
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/kuZSsON0ujeLe_Xs1ZXkbeaMJkq6ldF46Da4wGyWsnE/rs:fit/g:sm/q:90/h:178/w:262/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTExMTQt/MTEwNjIzMjU1MC5q/cGc.jpeg",
+      "width": 262,
+      "height": 178
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/VW7oXRrGKluaHaOX9FIeh-Tte3vMBGtXXZtkI0xEJf0/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLXJfMTEx/NC0wMDIuanBn.jpeg",
+      "width": 600,
+      "height": 450
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/9miO8xWL3Q9nd_XedC7FsGmB6nozJbYuIQOIcpsB6EY/rs:fit/g:sm/q:90/h:410/w:591/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTExMTQt/MTA4MzQyNzY5OS5q/cGc.jpeg",
+      "width": 591,
+      "height": 410
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/cLE0tgQfI1AJdsQIt2Ou6Eue4Vrd31ihUu4b-FwTH00/rs:fit/g:sm/q:90/h:150/w:345/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTExMTQt/MTEwNDA4NTYzOS5q/cGc.jpeg",
+      "width": 345,
+      "height": 150
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/YSuz6iZRFOP_Ck3dW0UsLtSJo2fZIRQyEHofkC-MFSw/rs:fit/g:sm/q:90/h:410/w:591/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTExMTQt/MTEzMTY1Mjg5OS5q/cGVn.jpeg",
+      "width": 591,
+      "height": 410
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/54nL6f3mmXHArbFe5xGgqW4cN77IjWIQCc3IrDfzgng/rs:fit/g:sm/q:90/h:353/w:530/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTExMTQt/MTQxOTEwNjA2Ni00/NzI3LmpwZWc.jpeg",
+      "width": 530,
+      "height": 353
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/paMwbcU8RmZ1MZgkaROBWqIhwLdRaVDdwPqJZvu_wM4/rs:fit/g:sm/q:90/h:393/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTExMTQt/MTQxOTEwNjA4OS05/MjIyLmpwZWc.jpeg",
+      "width": 590,
+      "height": 393
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Not On Label (Surgeon Self-released)",
+    "SRX",
+    "Dekmantel",
+    "Dynamic Tension Records",
+    "Tresor",
+    "Resident Advisor",
+    "Spannered",
+    "Wax Treatment",
+    "Electric Deluxe",
+    "FACT Magazine",
+    "Downwards",
+    "Warp Records",
+    "Counterbalance",
+    "Maniac Love"
+  ],
+  "releases": [
+    {
+      "title": "No Matter What You Do In Life, Always Keep Death By Your Side",
+      "year": 2025,
+      "label": "Not On Label (Surgeon Self-released)",
+      "role": "Main",
+      "format": "File, FLAC"
+    },
+    {
+      "title": "Shell~Wave",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Crash Recoil",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Scoundrel",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Rare & Unreleased 1999 - 2008",
+      "year": 2020,
+      "label": "SRX",
+      "role": "Main",
+      "format": "4xFile, FLAC, EP"
+    },
+    {
+      "title": "THX​-​1138​/​9",
+      "year": 2020,
+      "label": "SRX",
+      "role": "Main",
+      "format": "4xFile, FLAC, EP"
+    },
+    {
+      "title": "Europa Code",
+      "year": 2020,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Screw The Roses Unreleased Sessions",
+      "year": 2020,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "The Golden Sea",
+      "year": 2020,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Raw Trax 1",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Raw Trax 2",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Dekmantel Podcast 200",
+      "year": 2018,
+      "label": "Dekmantel",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "Luminosity Device",
+      "year": 2018,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Convenience Trap",
+      "year": 2017,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "I Can Hear Karaoke Happening Somewhere (E-Tard Christmas Dance Party)",
+      "year": 2016,
+      "label": "Dynamic Tension Records",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "Live At Freerotation, Wales 9th July 2016",
+      "year": 2016,
+      "label": "Dynamic Tension Records",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "From Farthest Known Objects",
+      "year": 2016,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Bland Ambition",
+      "year": 2016,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Search Deep Inside Yourself",
+      "year": 2016,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Tresor 97 - 99",
+      "year": 2015,
+      "label": "Tresor",
+      "role": "Main",
+      "format": "CD, Album, RE, RM + CD, Album, RE, RM + CD, Album,"
+    },
+    {
+      "title": "Unreleased Tracks 1995-1996",
+      "year": 2015,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Rare Tracks 95-96",
+      "year": 2015,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "(Ambient Set) At Freerotation 2014",
+      "year": 2014,
+      "label": "Dynamic Tension Records",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "Fixed Action Pattern",
+      "year": 2014,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "RA Live/ 2013/ 09/ 06/ Dimensions Festival/ Croatia/",
+      "year": 2013,
+      "label": "Resident Advisor",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "Freerotation 2013",
+      "year": 2013,
+      "label": "Dynamic Tension Records",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "Humanity Test",
+      "year": 2012,
+      "label": "Dynamic Tension Records",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "This Is The Place Where The Intellect Gets Annihilated",
+      "year": 2012,
+      "label": "Dynamic Tension Records",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "Blackest Ever Black DJ Set",
+      "year": 2012,
+      "label": "Spannered",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "Untitled",
+      "year": 2012,
+      "label": null,
+      "role": "Main"
+    }
+  ],
+  "releaseCount": 50,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/1114"
+  },
+  "_cachedAt": 1781887484294
+}

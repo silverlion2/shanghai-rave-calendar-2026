@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "c6076513-8d98-4321-8155-0268512b5aa1",
+  "name": "The Brvtalist",
+  "sortName": "Brvtalist, The",
+  "type": null,
+  "gender": null,
+  "country": null,
+  "disambiguation": "",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 189788
+  },
+  "_cachedAt": 1781889187994
+}

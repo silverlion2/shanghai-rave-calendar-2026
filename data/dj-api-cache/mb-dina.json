@@ -1,0 +1,30 @@
+{
+  "found": true,
+  "id": "e4a10ad0-3c15-4c47-b376-6b34ae48f38a",
+  "name": "Dina Carroll",
+  "sortName": "Carroll, Dina",
+  "type": "Person",
+  "gender": "female",
+  "country": "GB",
+  "disambiguation": "",
+  "lifeSpan": {
+    "begin": "1968-08-21",
+    "ended": null
+  },
+  "aliases": [
+    "Geraldine Anne Carroll",
+    "Dina Carrol",
+    "Dina Caroll",
+    "Dina Carol",
+    "Carroll, Dina"
+  ],
+  "tags": [
+    "soul"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 1840
+  },
+  "_cachedAt": 1781886023093
+}

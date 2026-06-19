@@ -1,0 +1,229 @@
+{
+  "found": true,
+  "id": 7435042,
+  "name": "Matisa",
+  "profile": "Matisa is a Rome-born, Florence-based DJ and producer.",
+  "nameVariations": [],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "https://thenakedance.com/",
+    "https://www.instagram.com/matisaxx/",
+    "https://soundcloud.com/matisaxx",
+    "https://www.facebook.com/matisaxxx/"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/j9hY3OHFZr4DUVA9-mO4VM6LjvGFVixETkmjmHWz9qg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTc0MzUw/NDItMTc3ODY5NzAy/NC01MjYwLmpwZWc.jpeg",
+      "width": 600,
+      "height": 600
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "The Naked Dance",
+    "SOS Music (7)",
+    "Optimo Music Digital Danceforce",
+    "A Lifetime On The Hips",
+    "Club Mix Records (2)",
+    "Monkey Puzzle, Atlantic",
+    "Misfit Melodies",
+    "Dischi Autunno",
+    "Firehouse (6)",
+    "Public Possession",
+    "!K7 Records",
+    "Permanent Vacation",
+    "Freeride Millenium",
+    "Beats In Space"
+  ],
+  "releases": [
+    {
+      "title": "Occaso EP",
+      "year": 2026,
+      "label": "The Naked Dance",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "In My Head",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Cuddle",
+      "year": 2023,
+      "label": "SOS Music (7)",
+      "role": "Main",
+      "format": "4xFile, WAV"
+    },
+    {
+      "title": "Tongue",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Wonder EP",
+      "year": 2022,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Peace Building",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "The Elsewhere",
+      "year": 2020,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Organza/Honey Comb EP",
+      "year": 2019,
+      "label": "Optimo Music Digital Danceforce",
+      "role": "Main",
+      "format": "2xFile, FLAC, EP"
+    },
+    {
+      "title": "Sugar Snap EP",
+      "year": 2024,
+      "label": "A Lifetime On The Hips",
+      "role": "Remix",
+      "format": "12\", EP"
+    },
+    {
+      "title": "CLUBREMIX003",
+      "year": 2024,
+      "label": "Club Mix Records (2)",
+      "role": "Remix",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Reasonable Remixes 2 ",
+      "year": 2024,
+      "label": "Monkey Puzzle, Atlantic",
+      "role": "Remix",
+      "format": "3xFile, FLAC, 24-"
+    },
+    {
+      "title": "Fiesta Forever",
+      "year": 2023,
+      "label": "Misfit Melodies",
+      "role": "Remix",
+      "format": "12\""
+    },
+    {
+      "title": "Plastic Fantasy EP",
+      "year": 2023,
+      "label": null,
+      "role": "Remix"
+    },
+    {
+      "title": "Ghost Of Arms",
+      "year": 2022,
+      "label": "Dischi Autunno",
+      "role": "Remix",
+      "format": "3xFile, FLAC, EP"
+    },
+    {
+      "title": "Connection",
+      "year": 2021,
+      "label": "Firehouse (6)",
+      "role": "Remix",
+      "format": "4xFile, FLAC"
+    },
+    {
+      "title": "Connection",
+      "year": 2021,
+      "label": null,
+      "role": "Remix"
+    },
+    {
+      "title": "Big Beat Manifesto Vol. IX",
+      "year": 2024,
+      "label": "Public Possession",
+      "role": "TrackAppearance",
+      "format": "12\""
+    },
+    {
+      "title": "DJ-Kicks - The Exclusives Vol. 5",
+      "year": 2024,
+      "label": "!K7 Records",
+      "role": "TrackAppearance",
+      "format": "13xFile, ALAC, Comp"
+    },
+    {
+      "title": "DJ-Kicks",
+      "year": 2024,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "A Permanent Vacation Dance Therapy - Fundraiser For Ukraine",
+      "year": 2022,
+      "label": "Permanent Vacation",
+      "role": "TrackAppearance",
+      "format": "20xFile, FLAC, Comp"
+    },
+    {
+      "title": "Impact Vol. 3",
+      "year": 2022,
+      "label": "Freeride Millenium",
+      "role": "TrackAppearance",
+      "format": "5xFile, MP3, 320"
+    },
+    {
+      "title": "Impact Vol. 3",
+      "year": 2022,
+      "label": "Freeride Millenium",
+      "role": "TrackAppearance",
+      "format": "5xFile, FLAC"
+    },
+    {
+      "title": "Permanent Vacation 7",
+      "year": 2021,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "BIS Radio Show #1024 Part1 With Sleep D",
+      "year": 2020,
+      "label": "Beats In Space",
+      "role": "TrackAppearance",
+      "format": "File, MP3, Mixed, 256"
+    },
+    {
+      "title": "Come Together",
+      "year": 2020,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Optimo Music Digital Danceforce Vol 1",
+      "year": 2019,
+      "label": "Optimo Music Digital Danceforce",
+      "role": "TrackAppearance",
+      "format": "12xFile, MP3, Comp, 320"
+    },
+    {
+      "title": "Optimo Music Digital Danceforce Vol 1",
+      "year": 2019,
+      "label": "Optimo Music Digital Danceforce",
+      "role": "TrackAppearance",
+      "format": "12xFile, FLAC, Comp"
+    }
+  ],
+  "releaseCount": 27,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/7435042"
+  },
+  "_cachedAt": 1781886500181
+}

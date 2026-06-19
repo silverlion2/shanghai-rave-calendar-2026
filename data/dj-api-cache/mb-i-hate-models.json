@@ -1,0 +1,25 @@
+{
+  "found": true,
+  "id": "f9a4de7f-d3c6-4de8-8892-7aca52610edd",
+  "name": "I Hate Models",
+  "sortName": "I Hate Models",
+  "type": "Person",
+  "gender": "male",
+  "country": "FR",
+  "disambiguation": "techno producer",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [
+    "Guillaume Labadie"
+  ],
+  "tags": [
+    "techno"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 8131
+  },
+  "_cachedAt": 1781881130941
+}

@@ -1,0 +1,31 @@
+{
+  "found": true,
+  "id": "cf1894f6-f80a-4edc-ad32-6d32bede1438",
+  "name": "Psyche",
+  "sortName": "Psyche",
+  "type": "Group",
+  "gender": null,
+  "country": "CA",
+  "disambiguation": "dark electropop band",
+  "lifeSpan": {
+    "begin": "1982",
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [
+    "electronic",
+    "synthpop",
+    "industrial",
+    "new wave",
+    "dark wave",
+    "ebm",
+    "synth-pop",
+    "eighties"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 251
+  },
+  "_cachedAt": 1781886548284
+}

@@ -1,0 +1,68 @@
+{
+  "found": true,
+  "id": 1812372,
+  "name": "BB Kong",
+  "profile": "Austrian garage rock drummer",
+  "nameVariations": [
+    "B. B. Kong",
+    "B.B. Kong"
+  ],
+  "members": [],
+  "groups": [
+    "The Subcandies"
+  ],
+  "urls": [],
+  "images": [],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Dobrotec Studio One"
+  ],
+  "releases": [
+    {
+      "title": "Out Of The Blue",
+      "year": 2008,
+      "label": null,
+      "role": "Mixed by"
+    },
+    {
+      "title": "Naked As",
+      "year": 2010,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Take Your Chance / Boy Meets Girl Storyline",
+      "year": 2008,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Out Of The Blue",
+      "year": 2008,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Out Of Here / Hey You",
+      "year": 2005,
+      "label": "Dobrotec Studio One",
+      "role": "Appearance",
+      "format": "7\", Single"
+    },
+    {
+      "title": "Time To Taste",
+      "year": 2004,
+      "label": "Dobrotec Studio One",
+      "role": "Appearance",
+      "format": "CDr, MiniAlbum"
+    }
+  ],
+  "releaseCount": 6,
+  "dataQuality": "Correct",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/1812372"
+  },
+  "_cachedAt": 1781886365655
+}

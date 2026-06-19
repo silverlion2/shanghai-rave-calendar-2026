@@ -1,0 +1,29 @@
+{
+  "found": true,
+  "id": 9924613,
+  "name": "Cailey Passer",
+  "profile": "",
+  "nameVariations": [],
+  "members": [],
+  "groups": [],
+  "urls": [],
+  "images": [],
+  "genres": [],
+  "styles": [],
+  "labels": [],
+  "releases": [
+    {
+      "title": "Collar City",
+      "year": 2010,
+      "label": null,
+      "role": "Appearance"
+    }
+  ],
+  "releaseCount": 1,
+  "dataQuality": "Needs Major Changes",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/9924613"
+  },
+  "_cachedAt": 1781889267594
+}

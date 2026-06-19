@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "767c8b46-0ed2-4446-9d9b-497b46929ec2",
+  "name": "Simon Adams",
+  "sortName": "Adams, Simon",
+  "type": "Person",
+  "gender": "male",
+  "country": "IT",
+  "disambiguation": "house",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 7638
+  },
+  "_cachedAt": 1781889247672
+}

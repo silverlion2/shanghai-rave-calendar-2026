@@ -1,0 +1,28 @@
+{
+  "found": true,
+  "id": "cedf92fe-eba1-45e2-ba16-b1b6af5169b8",
+  "name": "Monolake",
+  "sortName": "Monolake",
+  "type": "Group",
+  "gender": null,
+  "country": "DE",
+  "disambiguation": "",
+  "lifeSpan": {
+    "begin": "1995",
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [
+    "ambient techno",
+    "idm",
+    "minimal techno",
+    "ambient",
+    "dub techno"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 1
+  },
+  "_cachedAt": 1781887438885
+}

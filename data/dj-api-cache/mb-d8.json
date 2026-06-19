@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "a87b39c5-5542-4b70-b998-37d1a9dcd1d0",
+  "name": "D8",
+  "sortName": "D8",
+  "type": null,
+  "gender": null,
+  "country": null,
+  "disambiguation": "",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 4
+  },
+  "_cachedAt": 1781886591377
+}

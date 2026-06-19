@@ -1,0 +1,350 @@
+{
+  "found": true,
+  "id": 1579,
+  "name": "Luke Slater",
+  "profile": "Luke Slater (b. 12 June 1968, Reading, Berkshire, England) is an English electronic musician, DJ and record producer from Crawley, UK. He is one of the UK's longest standing techno producers and DJs, active since the late 1980s when he worked in the Mi Price record shop. He was involved with the founding of the [l=Jelly Jam Records] shop and label, and went on to release on a number of seminal labels. Was also a resident DJ at Troll.\r\n\r\nIn 2006 he set up [l=Mote-Evolver].\r\n",
+  "nameVariations": [
+    "L Slater",
+    "L. Slater",
+    "L.Slater",
+    "Luker Slater",
+    "Slater",
+    "Slater, Luke"
+  ],
+  "members": [],
+  "groups": [
+    "Morganistic",
+    "Heamaglobien",
+    "Spinach",
+    "Machine (3)",
+    "Re-Animator (2)",
+    "S/D",
+    "Roog Unit",
+    "LSD (48)"
+  ],
+  "urls": [
+    "https://www.lukeslater.com",
+    "https://www.lukeslater.de",
+    "https://www.facebook.com/LukeSlaterPlanetaryAssaultSystems",
+    "https://www.last.fm/music/Luke+Slater",
+    "https://www.myspace.com/thereallukeslater",
+    "https://lukeslater.bandcamp.com",
+    "",
+    "",
+    "https://soundcloud.com/luke-slater",
+    "https://planetaryassaultsystems.tumblr.com",
+    "https://x.com/reallukeslater",
+    "https://en.wikipedia.org/wiki/Luke_Slater",
+    "https://www.youtube.com/channel/UC_tBrqG-Zctp44ljcXkyctQ"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/_wOLLBvdqFxwqW9F0nOYzTnQ4xshZE9fHLwkLwtyiMA/rs:fit/g:sm/q:90/h:397/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1Nzkt/MTcwNzk5NTI3Ny00/MTgxLmpwZWc.jpeg",
+      "width": 600,
+      "height": 397
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/0i_EctLXHF8UJh7yMu4bRKj_2vqs-kC1ehPkWdnZJCw/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1Nzkt/MTY2MzE4MTgwMS0z/NTA5LmpwZWc.jpeg",
+      "width": 600,
+      "height": 593
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/Cqhz1Agozc9wS2ZJUtRW0FzPiaDr3WTxBY5Q5zooztw/rs:fit/g:sm/q:90/h:480/w:480/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1Nzkt/MTYxOTA5Mzg4NC03/MzkxLmpwZWc.jpeg",
+      "width": 480,
+      "height": 480
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/pM8o7owbEgE3vrO5F667Ae1i547_GN9_evbM2q9F7f0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1Nzkt/MTU1OTk5OTkyNS05/ODQ2LmpwZWc.jpeg",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/X_AZMIEMgBUOhvUaLE0-AV_Xi8ovT62iDki-Lg8i4xM/rs:fit/g:sm/q:90/h:397/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1Nzkt/MTU1OTk5OTkyMi03/MjgyLmpwZWc.jpeg",
+      "width": 600,
+      "height": 397
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/XQnf6S4LuOhm4tmwYhlnjEOpnuK-BTVysUIesIzbEO0/rs:fit/g:sm/q:90/h:446/w:425/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1Nzkt/MTIzOTcwMzM1My5q/cGVn.jpeg",
+      "width": 425,
+      "height": 446
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/oh6SjL_fvSnk8UYu7L652IHLDa4MgtkwmLqvz_hckFw/rs:fit/g:sm/q:90/h:896/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1Nzkt/MTIzNjE4MjMzMy5q/cGVn.jpeg",
+      "width": 600,
+      "height": 896
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/7mRcOLzSDK8fIswadMU8ouSrPOxUH470rXy-ia_XreM/rs:fit/g:sm/q:90/h:632/w:575/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1Nzkt/MTIzOTcwODUxNy5q/cGVn.jpeg",
+      "width": 575,
+      "height": 632
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/WJQl4i8nqxIYKRYbw6aEiT7DiFoXyJo3SVkJXPQzpPo/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1Nzkt/MDA0LmpwZw.jpeg",
+      "width": 300,
+      "height": 300
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/Z3HtfKAcYWU0k6gd7OVTHkCD1M98v3qw781h3CZMUPA/rs:fit/g:sm/q:90/h:600/w:401/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLXJfMTU3/OS0wMDcuanBn.jpeg",
+      "width": 401,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/AIO0WsiDnkdcprgdha5-St5KOiZLxU6ZiEqciGQHObU/rs:fit/g:sm/q:90/h:910/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1Nzkt/MTY2NDQyMjY0MC0y/MjQyLmpwZWc.jpeg",
+      "width": 600,
+      "height": 910
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/VwqydYF-tEJJYpuUF-hu98Ns8T9zOOO7VjdK9U4fYpw/rs:fit/g:sm/q:90/h:380/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1Nzkt/MTY2NDQyMjY2MS0y/MTUxLmpwZWc.jpeg",
+      "width": 600,
+      "height": 380
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/_yyc0mWzvUYD8jxDbUcRWF_luTOaNAobVgR7gwO14JU/rs:fit/g:sm/q:90/h:285/w:200/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1Nzkt/MDA4LmpwZw.jpeg",
+      "width": 200,
+      "height": 285
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/ak1NWrBshQ6ZEoCmfKMtzHMHgTqmLyb8KXUt5UmuYPA/rs:fit/g:sm/q:90/h:379/w:327/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1Nzkt/MTA3ODkxNDk1Ny5q/cGc.jpeg",
+      "width": 327,
+      "height": 379
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/35cMT0a3lGqOskDAmZ7Hg2ujRe-azmzaPLKHjyVwUpQ/rs:fit/g:sm/q:90/h:200/w:200/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1Nzkt/MDA5LmdpZg.jpeg",
+      "width": 200,
+      "height": 200
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/ODUW7dWi2Oki4OO1sokYbw2Vk3kLxSGyFhRpWO2O61g/rs:fit/g:sm/q:90/h:297/w:299/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE1Nzkt/MTE3MTYzOTk3MS5n/aWY.jpeg",
+      "width": 299,
+      "height": 297
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Ostgut Ton",
+    "Tsugi",
+    "Phonographe Corp",
+    "Fabric (2)",
+    "Mute",
+    "Slut Smalls",
+    "Peacefrog Records",
+    "Missile Records",
+    "DMC, DMC, DMC",
+    "Sabonoise",
+    "Hardfloor",
+    "Ghostly International"
+  ],
+  "releases": [
+    {
+      "title": "The Dissent EP",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Dialogue",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Berghain Fünfzehn",
+      "year": 2020,
+      "label": "Ostgut Ton",
+      "role": "Main",
+      "format": "File, WAV, Mixed"
+    },
+    {
+      "title": "Berghain Fünfzehn",
+      "year": 2020,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Love Remixes",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Luke Slater Presents L.B. Dub Corp",
+      "year": 2018,
+      "label": "Tsugi",
+      "role": "Main",
+      "format": "CD, Mixed, Promo, Car"
+    },
+    {
+      "title": "PHNCST169 - Welcome to the Rave - 2003",
+      "year": 2014,
+      "label": "Phonographe Corp",
+      "role": "Main",
+      "format": "File, MP3, Mixed"
+    },
+    {
+      "title": "She Showed Me Heaven (Remixes)",
+      "year": 2008,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Fabric 32 (Radio Mix)",
+      "year": 2007,
+      "label": "Fabric (2)",
+      "role": "Main",
+      "format": "CDr, Mixed, Promo"
+    },
+    {
+      "title": "Fabric 32",
+      "year": 2007,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Head Converter EP",
+      "year": 2006,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Fear And Loathing 2",
+      "year": 2005,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "My Yellow Wise Rug",
+      "year": 2005,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "The Four Cornered Room",
+      "year": 2005,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Single",
+      "year": 2003,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Traktion Action",
+      "year": 2003,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Alright On Top (Electronic Press Kit)",
+      "year": 2002,
+      "label": "Mute",
+      "role": "Main",
+      "format": "CD-ROM"
+    },
+    {
+      "title": "All Right On Top (EPK)",
+      "year": 2002,
+      "label": "Mute",
+      "role": "Main",
+      "format": "VHS"
+    },
+    {
+      "title": "Alright On Top",
+      "year": 2002,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "I Can Complete You",
+      "year": 2002,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Nothing At All",
+      "year": 2002,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Stars And Heroes",
+      "year": 2002,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Fear And Loathing",
+      "year": 2001,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "I Can Complete You (Boggled Mix) / Girl Roc",
+      "year": 2000,
+      "label": "Slut Smalls",
+      "role": "Main",
+      "format": "7\", Single, Ltd"
+    },
+    {
+      "title": "Body Freefall, Electronic Inform #2",
+      "year": 2000,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Wireless",
+      "year": 1999,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "All Exhale",
+      "year": 1999,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Love (Loved)",
+      "year": 1998,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Freek Funk",
+      "year": 1997,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Freek Funk",
+      "year": 1997,
+      "label": null,
+      "role": "Main"
+    }
+  ],
+  "releaseCount": 50,
+  "dataQuality": "Correct",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/1579"
+  },
+  "_cachedAt": 1781887539087
+}

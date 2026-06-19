@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "4a68bdb8-34f8-465e-a0ca-9ad0d5b55487",
+  "name": "Fractale",
+  "sortName": "Fractale",
+  "type": null,
+  "gender": null,
+  "country": null,
+  "disambiguation": "",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 9
+  },
+  "_cachedAt": 1781888914141
+}

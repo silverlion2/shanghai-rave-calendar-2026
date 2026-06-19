@@ -1,0 +1,25 @@
+{
+  "found": true,
+  "id": "dc8444b5-490a-4e09-8f69-cbb2e32389ec",
+  "name": "丘丘合唱團",
+  "sortName": "Qiuqiu Chorus",
+  "type": "Group",
+  "gender": null,
+  "country": "TW",
+  "disambiguation": "",
+  "lifeSpan": {
+    "begin": "1981",
+    "end": "1984",
+    "ended": true
+  },
+  "aliases": [],
+  "tags": [
+    "campus folk"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 1
+  },
+  "_cachedAt": 1781889163157
+}

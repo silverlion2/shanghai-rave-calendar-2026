@@ -1,0 +1,488 @@
+{
+  "found": true,
+  "id": 835,
+  "name": "Richie Hawtin",
+  "profile": "Canadian (British born) producer, label manager and DJ, born June 4, 1970; brother of [a185883]. \r\n\r\nAlthough mainly influenced by Detroit techno, Hawtin has developed his own style ranging from harder noisy techno to deep minimal abstract acid, particularly under his best known alias Plastikman. He was involved in the development of the Final Scratch digital DJ technology and has continued to use new technology as it becomes available.\r\n\r\nFounded the [l=Plus 8 Records], [l=M_nus] and [l=Probe Records] techno labels.\r\n\r\nBefore becoming a DJ worked in a video game shop & at McDonald's.",
+  "nameVariations": [
+    "Hawtin",
+    "R Hawtin",
+    "R. Hantin",
+    "R. Hatwin",
+    "R. Hawtin",
+    "R.Hawtin",
+    "R.M.H.",
+    "RH",
+    "Rhawtin",
+    "Rich",
+    "Richard Hawtin",
+    "Richi Hawtin",
+    "Richie",
+    "Richie \"Rich\" Hawtin",
+    "Richie 'Rich' Hawtin",
+    "Richie Hawlin",
+    "Richie Rich Hawtin",
+    "Richtie Hawtin",
+    "Ritchie Hawtin"
+  ],
+  "members": [],
+  "groups": [
+    "Cybersonik",
+    "0733",
+    "States Of Mind",
+    "Final Exposure",
+    "Spawn",
+    "Hard Trax",
+    "Robostickmen",
+    "Just For Fun",
+    "The Hard Brothers",
+    "Two Guys In The Basement",
+    "From Within",
+    "Narod Niki"
+  ],
+  "urls": [
+    "http://www.richiehawtin.com",
+    "http://www.frommymindtoyours.com",
+    "http://richiehawtin.bandcamp.com",
+    "http://discord.com/invite/from-our-minds",
+    "https://www.facebook.com/richiehawtin",
+    "http://www.instagram.com/richiehawtin",
+    "",
+    "http://www.last.fm/music/Richie+Hawtin",
+    "http://linktr.ee/richiehawtin",
+    "http://www.myspace.com/richiehawtin",
+    "http://www.songkick.com/artists/146504-richie-hawtin",
+    "http://soundcloud.com/richiehawtin",
+    "http://www.tiktok.com/@richiehawtinofficial",
+    "",
+    "http://twitter.com/richiehawtin",
+    "http://twitter.com/rhawtin_live",
+    "http://en.wikipedia.org/wiki/Richie_Hawtin",
+    "http://www.youtube.com/richiehawtin",
+    "http://www.youtube.com/user/minusofficial",
+    "http://www.youtube.com/channel/UC2tkpbU5ELaFXI2Bn2WnaJg"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/9tFFDcscxDCf1ptrA2RRnASPWRXGQ7VmHE3zGIiT-xU/rs:fit/g:sm/q:90/h:743/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/NTE3NjcyNTEwLTY4/NDguanBlZw.jpeg",
+      "width": 600,
+      "height": 743
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/HSXYM30JV-h4HF-Cjn1lHs9CMTV2PmhQ2JDRYH-Koig/rs:fit/g:sm/q:90/h:113/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/NDE3NzEzMTc5LTk4/ODkuanBlZw.jpeg",
+      "width": 150,
+      "height": 113
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/4URY_pz1M0rS43GWP-djufNpmcMSZS56ggx8mk0u8LM/rs:fit/g:sm/q:90/h:500/w:332/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/Mjk3MjU3NzI3Lmpw/ZWc.jpeg",
+      "width": 332,
+      "height": 500
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/g5YpaT3v363A_OcAYsxJKimQ4hJ7xjRttT3G40DtCpE/rs:fit/g:sm/q:90/h:497/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/MjY1OTkzODQxLmpw/ZWc.jpeg",
+      "width": 500,
+      "height": 497
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/H3AyYlzqyLwDpT1BvPxrawoD0f3Aa4qjk61CZlpB2do/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/NjU4NjY3MDUzLTkw/OTIuanBlZw.jpeg",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/Cp92KMf-B-CavcKI2_SGMFd4cuR_pXeD6IPZqC4iAlw/rs:fit/g:sm/q:90/h:180/w:240/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/MjQ0NjI0OTU2Lmpw/ZWc.jpeg",
+      "width": 240,
+      "height": 180
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/QPJZ5VNwg6PSmpyG086TIj6wQW68W2-22_fWPM9A6RY/rs:fit/g:sm/q:90/h:732/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/MjEyOTM1NDMzLmpw/ZWc.jpeg",
+      "width": 600,
+      "height": 732
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/wQe4txADqsIWPSIec3QPquJM_SDof-9xSUdp2C01Lco/rs:fit/g:sm/q:90/h:400/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/MjA4NjgzMjMzLmpw/ZWc.jpeg",
+      "width": 600,
+      "height": 400
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/UXtUxzdUrdluwqx7FLX6CtgT0l_XdGWj2ilKgutOJpA/rs:fit/g:sm/q:90/h:816/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/MTUwNDg1MTYzLmpw/ZWc.jpeg",
+      "width": 600,
+      "height": 816
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/IHuKJrmrmuCrsIpNWXN-yFOy4-WdjbGOjKstG5LHDZk/rs:fit/g:sm/q:90/h:480/w:360/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/MDk4Mjk1MDg2Lmpw/Zw.jpeg",
+      "width": 360,
+      "height": 480
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/gQ8Ykr_f8nfJziyBcFZ88oJh9RgR4RhDrA-UFaMMvNQ/rs:fit/g:sm/q:90/h:360/w:480/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/MDk4MzU4MTk3Lmpw/Zw.jpeg",
+      "width": 480,
+      "height": 360
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/mNfEHc3MIwtRy7d6g41Re5Pyv96A1fKu9tjgBKLRGUs/rs:fit/g:sm/q:90/h:300/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/MTAzMzIwNjYzLmpw/Zw.jpeg",
+      "width": 400,
+      "height": 300
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/qJp_lNCTsCJYjtyyBzs55o5LKuVYdJ-poVuIgWJ9v9I/rs:fit/g:sm/q:90/h:375/w:250/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/MTAzNDE2MDkwLmpw/Zw.jpeg",
+      "width": 250,
+      "height": 375
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/OhjnBYwa1vBxubpZnTcybZurWe0IwtEFSS1I7UUlDv4/rs:fit/g:sm/q:90/h:413/w:413/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/MTUwOTE4OTczLmpw/ZWc.jpeg",
+      "width": 413,
+      "height": 413
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/2G6FmmKrg481x-MiUlOtn6RYsZmDTJxOT50cYhnHC-M/rs:fit/g:sm/q:90/h:399/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/MTUwOTE5NTk2Lmpw/ZWc.jpeg",
+      "width": 596,
+      "height": 399
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/gJZR28gQ3foUYu2aQw-bFpIZwBO6PK-bSKmyg8hx8BE/rs:fit/g:sm/q:90/h:398/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/NDM0NTQ4NDU1LTUy/MDAuanBlZw.jpeg",
+      "width": 600,
+      "height": 398
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/DL1dWkwWHWldIWnWJxrInrsjarhW8vCsuREfftUiP3Q/rs:fit/g:sm/q:90/h:388/w:427/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/MTQxMTkwNzcxLmpw/ZWc.jpeg",
+      "width": 427,
+      "height": 388
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/YsnrsixTBSpWnUTdL121pHsF56qusHZJSHfqbhoWuWU/rs:fit/g:sm/q:90/h:307/w:252/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/MjA4NjgzMTU5Lmpw/ZWc.jpeg",
+      "width": 252,
+      "height": 307
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/zXKJhvXO6pSLDfAwKYJGqgLDKceYJLElFr2NxlAKcPE/rs:fit/g:sm/q:90/h:201/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/MjA4NjgzMTMzLmpw/ZWc.jpeg",
+      "width": 300,
+      "height": 201
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/YSVc8O47XKPrjVpMSQxD27nztVB5w_fy5mOkX1sHeTY/rs:fit/g:sm/q:90/h:170/w:211/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0w/MDEuanBn.jpeg",
+      "width": 211,
+      "height": 170
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/7DvOvRl0bf6-2x1235aMacuOJHjob6XlQZFlUsFBH0c/rs:fit/g:sm/q:90/h:198/w:200/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0w/MDQuanBn.jpeg",
+      "width": 200,
+      "height": 198
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/HYGH79p_fCvdr5qUeqMxT-1GefUNpDhHdekjK2uSGJw/rs:fit/g:sm/q:90/h:401/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0w/MDYuanBn.jpeg",
+      "width": 600,
+      "height": 401
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/oyLQ6vr2JJCHwqV3_HqCQIhy0E-pr7odCx32FH_XFFk/rs:fit/g:sm/q:90/h:333/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0w/MDguanBn.jpeg",
+      "width": 500,
+      "height": 333
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/NgoKF_Y4SWNnraH3DLf9It-UQCV7aJKF1R3jsk4m6Hw/rs:fit/g:sm/q:90/h:294/w:448/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/MDc5MTM1MjUyLmpw/Zw.jpeg",
+      "width": 448,
+      "height": 294
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/s7Gb4eXIMWIe5SSO-lyMmJ13T0k4zCiXuhW9NIL84Sw/rs:fit/g:sm/q:90/h:500/w:375/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0w/MDcuanBn.jpeg",
+      "width": 375,
+      "height": 500
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/svTLsNs5kBXTL3T3s3KlvaoZVg5cwJ5V9NiD6HhBjBI/rs:fit/g:sm/q:90/h:347/w:284/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQyNTky/LTAwMS5qcGc.jpeg",
+      "width": 284,
+      "height": 347
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/0ADolm4G7xyIG3olZ4kqrTY3xCVK_AHILh3nV30J6Ek/rs:fit/g:sm/q:90/h:330/w:242/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/MDc5MTM1Mjk5Lmdp/Zg.jpeg",
+      "width": 242,
+      "height": 330
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/Nre8XYhi6zPFORxmzZP5AJKqCvQvTN_PaFp3vGkh60I/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/MDc5MTM1MjY0Lmpw/Zw.jpeg",
+      "width": 600,
+      "height": 450
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/x_WHu7062Ms1Kyb4SbylhjP4KUP4pUxflJ5m9nRvDlM/rs:fit/g:sm/q:90/h:360/w:291/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/MDc5MTM1Mjc4Lmpw/Zw.jpeg",
+      "width": 291,
+      "height": 360
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/c7NRW2xiORsp620SiZqsxXeElhDQS2VEh5n4IGRZTEE/rs:fit/g:sm/q:90/h:320/w:360/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/MDc5MTM1MzUwLmpw/Zw.jpeg",
+      "width": 360,
+      "height": 320
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/THye7y-aEoH-etONgYW5XK_LyBjNthrT6kJXCc99mSM/rs:fit/g:sm/q:90/h:225/w:180/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/MDc5MTM1MzA3Lmpw/Zw.jpeg",
+      "width": 180,
+      "height": 225
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/AIlEh9hn8WI5tgggQLT22ioKOwhBPCXZt7580GIyogo/rs:fit/g:sm/q:90/h:285/w:307/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/MDc5MTM1MzE3Lmdp/Zg.jpeg",
+      "width": 307,
+      "height": 285
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/N-g-hy811wSRv2eKEbNzjhC3RiLODLAvMp09dCwr9lE/rs:fit/g:sm/q:90/h:249/w:200/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/MDc5MTM1MzI0Lmpw/Zw.jpeg",
+      "width": 200,
+      "height": 249
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/fWbFdu3WQTS0XEzGJ5vp8tLQsatwIUv5s_ZRky8Og7E/rs:fit/g:sm/q:90/h:334/w:269/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTgzNS0x/MDc5MTM1MzMwLmpw/Zw.jpeg",
+      "width": 269,
+      "height": 334
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Plus 8 Records",
+    "Not On Label (Richie Hawtin Self-released)",
+    "M_nus",
+    "Not On Label",
+    "XLR8R",
+    "Tsugi",
+    "TSUGI",
+    "Resident Advisor",
+    "Third Ear (2), M_nus",
+    "Paxahau",
+    "!K7 Records",
+    "BBC Radio International, BBC Radio International",
+    "Hardware",
+    "Wise Buddah"
+  ],
+  "releases": [
+    {
+      "title": "96​:​12",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "96:VR Concept 1",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Syntax",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Acid King",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Concept 1 96:12 ",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Time Warps",
+      "year": 2020,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Close Combined (Glasgow, London, Tokyo - Live)",
+      "year": 2019,
+      "label": "Plus 8 Records",
+      "role": "Main",
+      "format": "15xFile, FLAC + File, FLAC, Mixed"
+    },
+    {
+      "title": "Core Resonance (Close Combined)",
+      "year": 2019,
+      "label": "Not On Label (Richie Hawtin Self-released)",
+      "role": "Main",
+      "format": "File, WAV"
+    },
+    {
+      "title": "Enter.Ibiza 2015",
+      "year": 2015,
+      "label": "M_nus",
+      "role": "Main",
+      "format": "4xCD, Mixed + Box, Comp"
+    },
+    {
+      "title": "From My Mind To Yours",
+      "year": 2015,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "From My Mind To Yours",
+      "year": 2015,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "From My Mind To Yours",
+      "year": 2015,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "From My Mind To Yours",
+      "year": 2015,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "From My Mind To Yours",
+      "year": 2015,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "From My Mind To Yours",
+      "year": 2015,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "From My Mind To Yours",
+      "year": 2015,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "From My Mind To Yours",
+      "year": 2015,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Enter.Ibiza 2014",
+      "year": 2014,
+      "label": "M_nus",
+      "role": "Main",
+      "format": "4xCD, Mixed"
+    },
+    {
+      "title": "Enter.Richie Hawtin",
+      "year": 2014,
+      "label": "Not On Label",
+      "role": "Main",
+      "format": "CD, Mixed"
+    },
+    {
+      "title": "Enter.Ibiza 2013",
+      "year": 2013,
+      "label": "M_nus",
+      "role": "Main",
+      "format": "4xCD, Comp, Mixed"
+    },
+    {
+      "title": "New Horizons",
+      "year": 2012,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Podcast 200A: Richie Hawtin Vs. Plastikman",
+      "year": 2011,
+      "label": "XLR8R",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 192"
+    },
+    {
+      "title": "A Retrospektive Mix Of Classic Plastikman Tracks",
+      "year": 2010,
+      "label": "Tsugi",
+      "role": "Main",
+      "format": "CD, Comp, P/Mixed, Promo"
+    },
+    {
+      "title": "Making Contakt",
+      "year": 2010,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Tsugi Podcast 100",
+      "year": 2009,
+      "label": "TSUGI",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "RA.100",
+      "year": 2008,
+      "label": "Resident Advisor",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 160"
+    },
+    {
+      "title": "Sounds From Can Elles",
+      "year": 2008,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "DE9 | Combined",
+      "year": 2006,
+      "label": "Third Ear (2), M_nus",
+      "role": "Main",
+      "format": "2xCD, Comp, Mixed"
+    },
+    {
+      "title": "Slices - Pioneers Of Electronic Music - Vol. I - A Documentary Film About Richie Hawtin",
+      "year": 2006,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "[2]KONTAKT RTW",
+      "year": 2006,
+      "label": null,
+      "role": "Main"
+    }
+  ],
+  "releaseCount": 49,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/835"
+  },
+  "_cachedAt": 1781881100309
+}

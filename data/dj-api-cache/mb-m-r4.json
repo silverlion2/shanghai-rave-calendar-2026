@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "e8153905-8799-45f8-9d77-e1001153adc9",
+  "name": "M!R4",
+  "sortName": "M!R4",
+  "type": "Person",
+  "gender": null,
+  "country": "Osaka",
+  "disambiguation": "",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 6624
+  },
+  "_cachedAt": 1781886110916
+}

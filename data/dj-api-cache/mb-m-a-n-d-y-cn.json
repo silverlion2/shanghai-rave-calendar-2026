@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "afd6671e-f963-4600-b7a6-7397f120f39e",
+  "name": "CN",
+  "sortName": "CN",
+  "type": "Person",
+  "gender": "male",
+  "country": "NO",
+  "disambiguation": "alias of Stian Gjevik",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 329
+  },
+  "_cachedAt": 1781885000110
+}

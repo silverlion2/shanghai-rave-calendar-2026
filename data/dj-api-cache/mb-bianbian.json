@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "32863e82-63ad-4ead-ab94-f94c3c1d6c5f",
+  "name": "Bianbian",
+  "sortName": "Bianbian",
+  "type": null,
+  "gender": null,
+  "country": null,
+  "disambiguation": "",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 1
+  },
+  "_cachedAt": 1781886338394
+}

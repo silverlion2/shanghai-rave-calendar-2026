@@ -1,0 +1,22 @@
+{
+  "found": true,
+  "id": "f68c5633-7c83-4156-867f-e5a0b6969ccd",
+  "name": "Nata",
+  "sortName": "Nata",
+  "type": "Group",
+  "gender": null,
+  "country": "Los Angeles",
+  "disambiguation": "American alternative rock band",
+  "lifeSpan": {
+    "begin": "2006",
+    "ended": true
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 19032
+  },
+  "_cachedAt": 1781889037680
+}

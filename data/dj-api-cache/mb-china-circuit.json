@@ -1,0 +1,34 @@
+{
+  "found": true,
+  "id": "8432d4a5-69c0-4a0e-8a7a-9265e863a308",
+  "name": "China Crisis",
+  "sortName": "China Crisis",
+  "type": "Group",
+  "gender": null,
+  "country": "GB",
+  "disambiguation": "",
+  "lifeSpan": {
+    "begin": "1979",
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [
+    "rock",
+    "synthpop",
+    "pop",
+    "post-punk",
+    "new wave",
+    "alternative",
+    "synth-pop",
+    "art rock",
+    "english",
+    "classic pop and rock",
+    "sophisti-pop"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 1129
+  },
+  "_cachedAt": 1781885385083
+}

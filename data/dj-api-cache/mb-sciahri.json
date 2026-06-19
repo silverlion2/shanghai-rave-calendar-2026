@@ -1,0 +1,23 @@
+{
+  "found": true,
+  "id": "ee4e342b-ddb1-4f98-b548-16ea6306ddb2",
+  "name": "Sciahri",
+  "sortName": "Sciahri",
+  "type": "Person",
+  "gender": "male",
+  "country": "Firenze",
+  "disambiguation": "Italian DJ, producer & label founder",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [
+    "Sciahriar Tavakoli"
+  ],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 1
+  },
+  "_cachedAt": 1781886505052
+}

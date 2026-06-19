@@ -1,0 +1,24 @@
+{
+  "found": true,
+  "id": "2dea2870-5f17-42f7-ac32-d76ccde70dbd",
+  "name": "Luke Slater",
+  "sortName": "Slater, Luke",
+  "type": "Person",
+  "gender": "male",
+  "country": "GB",
+  "disambiguation": "British techno producer",
+  "lifeSpan": {
+    "begin": "1968-06-12",
+    "ended": null
+  },
+  "aliases": [
+    "Luke Simon Arthur Slater"
+  ],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 2266
+  },
+  "_cachedAt": 1781887532266
+}

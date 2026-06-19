@@ -1,0 +1,283 @@
+{
+  "found": true,
+  "id": 326934,
+  "name": "Samuli Kemppi",
+  "profile": "Finnish DJ and producer based in Helsinki.",
+  "nameVariations": [
+    "S. Kemppi",
+    "Samuel Kemppi"
+  ],
+  "members": [],
+  "groups": [
+    "Sam & Gigi",
+    "A.M. Specialists",
+    "Deep Space Helsinki"
+  ],
+  "urls": [
+    "http://samulikemppi-mote.bandcamp.com",
+    "http://www.facebook.com/samulikemppi",
+    "http://gigs.gigatools.com/user/Samulikemppi",
+    "http://linktr.ee/samulikemppi",
+    "http://soundcloud.com/samulikemppi",
+    "http://www.twitter.com/Kempomat",
+    "http://www.youtube.com/c/SamuliKemppi"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/CsKqFHmcv76fnE4lkC4hZBgUp1_mx58V3DAHeu0OoFE/rs:fit/g:sm/q:90/h:700/w:494/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTMyNjkz/NC0xMzY2ODczODM3/LTE1NDcuanBlZw.jpeg",
+      "width": 494,
+      "height": 700
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/fpGZVO60WNSGrE5QMQzsBCSQJWbnlW6svJuEQfG7Iac/rs:fit/g:sm/q:90/h:210/w:312/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTMyNjkz/NC0xMjUxMDI2OTY5/LmpwZWc.jpeg",
+      "width": 312,
+      "height": 210
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/38FInvOmieVyBxVTFejqmockveA1iULVcT4_thtfHuA/rs:fit/g:sm/q:90/h:600/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTMyNjkz/NC0xMjUxMDI2ODY0/LmpwZWc.jpeg",
+      "width": 400,
+      "height": 600
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Concrete Records (4)",
+    "Hidden Tapes",
+    "Rhod Records",
+    "Technorama",
+    "Power Of Voltages",
+    "Deep Space Helsinki",
+    "RYC Podcast",
+    "Ghosts*",
+    "M_REC LTD",
+    "TheErraticPodcast",
+    "Chronicle (3)",
+    "CLFT",
+    "Other Heights",
+    "Labrynth",
+    "Komisch",
+    "Mote-Evolver",
+    "Prologue",
+    "Pakkas-levyt",
+    "Speculations LTD.",
+    "Utch Records",
+    "Eclectic Limited",
+    "Eclectic Digital Codec",
+    "Come In Records",
+    "Blacklabel Distillery",
+    "Relapso Records"
+  ],
+  "releases": [
+    {
+      "title": "Low Mileage",
+      "year": 2025,
+      "label": "Concrete Records (4)",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Cause And Effect",
+      "year": 2022,
+      "label": "Hidden Tapes",
+      "role": "Main",
+      "format": "7xFile, FLAC"
+    },
+    {
+      "title": "Cause And Effect",
+      "year": 2022,
+      "label": "Hidden Tapes",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Huuto Pimeässä EP",
+      "year": 2022,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Reversal Rehearsals E.P",
+      "year": 2019,
+      "label": "Rhod Records",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Catalogue Of Errors ",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Stories In BX",
+      "year": 2017,
+      "label": "Technorama",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "New Iron Age EP",
+      "year": 2017,
+      "label": "Power Of Voltages",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Third After Last EP",
+      "year": 2017,
+      "label": "Power Of Voltages",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Signal Three EP",
+      "year": 2016,
+      "label": "Deep Space Helsinki",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Detached From The Past EP",
+      "year": 2016,
+      "label": "Power Of Voltages",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Exomemory EP",
+      "year": 2016,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "RYC Podcast 127",
+      "year": 2015,
+      "label": "RYC Podcast",
+      "role": "Main",
+      "format": "File, MP3, Mixed"
+    },
+    {
+      "title": "Ghostcast 017",
+      "year": 2015,
+      "label": "Ghosts*",
+      "role": "Main",
+      "format": "File, MP3, Mixed"
+    },
+    {
+      "title": "The Observer Effect",
+      "year": 2014,
+      "label": "M_REC LTD",
+      "role": "Main",
+      "format": "2xLP, Album"
+    },
+    {
+      "title": "Erratic Podcast 86",
+      "year": 2014,
+      "label": "TheErraticPodcast",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "Binary System EP",
+      "year": 2014,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Signal Two EP",
+      "year": 2013,
+      "label": "Deep Space Helsinki",
+      "role": "Main",
+      "format": "12\", Ltd, W/Lbl"
+    },
+    {
+      "title": "Voyager",
+      "year": 2013,
+      "label": "Chronicle (3)",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Cahot EP",
+      "year": 2013,
+      "label": "CLFT",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Last Day On Earth",
+      "year": 2013,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Lost EP",
+      "year": 2013,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Parallax Of One Second EP",
+      "year": 2013,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Signal One EP",
+      "year": 2012,
+      "label": "Deep Space Helsinki",
+      "role": "Main",
+      "format": "12\", Ltd, W/Lbl"
+    },
+    {
+      "title": "Parallel Series 2",
+      "year": 2012,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Quadrant EP",
+      "year": 2012,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Cyclic Model EP",
+      "year": 2011,
+      "label": "M_REC LTD",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "OHWL#Two",
+      "year": 2011,
+      "label": "Other Heights",
+      "role": "Main",
+      "format": "12\", Ltd, W/Lbl"
+    },
+    {
+      "title": "End Of Greatness EP",
+      "year": 2011,
+      "label": "Labrynth",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Arabia EP",
+      "year": 2011,
+      "label": null,
+      "role": "Main"
+    }
+  ],
+  "releaseCount": 50,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/326934"
+  },
+  "_cachedAt": 1781887778908
+}

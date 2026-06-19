@@ -1,0 +1,254 @@
+{
+  "found": true,
+  "id": 6150968,
+  "name": "33EMYBW",
+  "profile": "Wu Shanmin is an electronic musician and digital visual artist based in Shanghai, China.",
+  "nameVariations": [],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "https://soundcloud.com/wushanmin",
+    "https://www.instagram.com/33emybw/"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/mbxJ0nRMUYJd5VZcKjRZCC-3H0-dmoW9O83J81a_Hyc/rs:fit/g:sm/q:90/h:421/w:375/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTYxNTA5/NjgtMTU4ODM2MzMz/MC0yODkzLmpwZWc.jpeg",
+      "width": 375,
+      "height": 421
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/hUFJznMckOqngexuZPZNbSuSzFfl90i4IKqYHGgikDE/rs:fit/g:sm/q:90/h:902/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTYxNTA5/NjgtMTU1NjM0MTQx/Ny03MDUzLmpwZWc.jpeg",
+      "width": 600,
+      "height": 902
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/-QQrDF-gFlYtecg5Blaj_nyuDaTy17gEhPiVNuRc-MY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTYxNTA5/NjgtMTU3MTYxOTQx/OC0yNTY2LmpwZWc.jpeg",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/Fv0-6ZeotJ7rUTVsG2s9iS5Db5ewBtZBM-IZNsTe7iE/rs:fit/g:sm/q:90/h:730/w:510/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTYxNTA5/NjgtMTU4ODM2MzI3/OC04OTQ4LmpwZWc.jpeg",
+      "width": 510,
+      "height": 730
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/odZU0790IC8ny9dCLIHnPvnUo-xfs2Xs94xRy-9zgSc/rs:fit/g:sm/q:90/h:906/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTYxNTA5/NjgtMTU4ODM2MzMy/Ni01NDE4LnBuZw.jpeg",
+      "width": 600,
+      "height": 906
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "SVBKVLT",
+    "Resident Advisor",
+    "Dekmantel",
+    "D Force Records",
+    "Infiné",
+    "Houndstooth, Houndstooth",
+    "Timedance",
+    "Bié Records",
+    "Not On Label",
+    "FACT Magazine",
+    "Not On Label (Bjarki Self-released)",
+    "Hakuna Kulala"
+  ],
+  "releases": [
+    {
+      "title": "Symbiosis Codes / Mandala",
+      "year": 2023,
+      "label": "SVBKVLT",
+      "role": "Main",
+      "format": "Cass, Ltd"
+    },
+    {
+      "title": "RA.913",
+      "year": 2023,
+      "label": "Resident Advisor",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "Holes Of Sinian",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Trans-Aeon Express",
+      "year": 2022,
+      "label": "SVBKVLT",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Dekmantel Podcast 298",
+      "year": 2020,
+      "label": "Dekmantel",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "Arthropods",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Dong.²",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Golem",
+      "year": 2018,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Medusa",
+      "year": 2017,
+      "label": "D Force Records",
+      "role": "Main",
+      "format": "CD, EP"
+    },
+    {
+      "title": "Jbar Rrsas (Remixes)",
+      "year": 2024,
+      "label": "Infiné",
+      "role": "Remix",
+      "format": "3xFile, MP3, 320"
+    },
+    {
+      "title": "Big Mess",
+      "year": 2022,
+      "label": null,
+      "role": "Remix"
+    },
+    {
+      "title": "Bigger. Messier.",
+      "year": 2022,
+      "label": null,
+      "role": "Remix"
+    },
+    {
+      "title": "Alkisah",
+      "year": 2021,
+      "label": null,
+      "role": "Remix"
+    },
+    {
+      "title": "EP0001",
+      "year": 2020,
+      "label": "SVBKVLT",
+      "role": "Remix",
+      "format": "12\", EP"
+    },
+    {
+      "title": "S.L.F Versions",
+      "year": 2019,
+      "label": "Houndstooth, Houndstooth",
+      "role": "Remix",
+      "format": "12\", EP, Ltd, Tra"
+    },
+    {
+      "title": "Alterity",
+      "year": 2020,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "TD10 (10 Years Of Timedance)",
+      "year": 2025,
+      "label": "Timedance",
+      "role": "TrackAppearance",
+      "format": "3xLP, Comp"
+    },
+    {
+      "title": "活​水​：​一​场​由​周​文​中​引​发​、​关​于​东​西​方​音​乐​交​融​与​共​同​演​进​的​持​续​讨​论 = Long May The Water Flow: An Enduring Discussion On The Convergence An",
+      "year": 2023,
+      "label": "Bié Records",
+      "role": "TrackAppearance",
+      "format": "LP, Comp"
+    },
+    {
+      "title": "Sunflowers Vol. I",
+      "year": 2022,
+      "label": "Not On Label",
+      "role": "TrackAppearance",
+      "format": "13xFile, WAV, Comp"
+    },
+    {
+      "title": "Fact Mix 834",
+      "year": 2021,
+      "label": "FACT Magazine",
+      "role": "TrackAppearance",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "Intermission",
+      "year": 2021,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Pandemixes II",
+      "year": 2020,
+      "label": "Not On Label (Bjarki Self-released)",
+      "role": "TrackAppearance",
+      "format": "22xFile, FLAC, Comp"
+    },
+    {
+      "title": "Akita",
+      "year": 2020,
+      "label": "Not On Label",
+      "role": "TrackAppearance",
+      "format": "Cass, Mixed, Mixtape, Tra"
+    },
+    {
+      "title": "Fact Mix 754",
+      "year": 2020,
+      "label": "FACT Magazine",
+      "role": "TrackAppearance",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "Cache 02",
+      "year": 2020,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Alterity",
+      "year": 2020,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Slip A",
+      "year": 2019,
+      "label": "Hakuna Kulala",
+      "role": "TrackAppearance",
+      "format": "3xFile, MP3, 320"
+    },
+    {
+      "title": "Cache 01",
+      "year": 2019,
+      "label": null,
+      "role": "TrackAppearance"
+    }
+  ],
+  "releaseCount": 28,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/6150968"
+  },
+  "_cachedAt": 1781884855416
+}

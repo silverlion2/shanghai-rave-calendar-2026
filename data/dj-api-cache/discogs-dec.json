@@ -1,0 +1,194 @@
+{
+  "found": true,
+  "id": 1387719,
+  "name": "Dec Mulligan",
+  "profile": "(April 4, 1938 – November 2, 2021) was an Irish-born American rock musician, singer, and songwriter, best known as a guitarist of rock band The Beau Brummels in the 1960s.",
+  "nameVariations": [
+    "D. Mulligan",
+    "Declan \"Dec\" Mulligan",
+    "Declan Mulligan",
+    "Mulligan"
+  ],
+  "members": [],
+  "groups": [
+    "The Beau Brummels"
+  ],
+  "urls": [
+    "https://en.wikipedia.org/wiki/Declan_Mulligan",
+    "https://www.imdb.com/name/nm0612294/"
+  ],
+  "images": [],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Airborne Records (7)",
+    "New Shot Records",
+    "Strawberry (26)",
+    "Varèse Sarabande, Varèse Vintage, Rhino Custom Products",
+    "BaySound Records",
+    "Sundazed Music",
+    "DIG Music, West Coast Spirit",
+    "PopLLama",
+    "PEP (5), PEP (5)",
+    "Flying Horses"
+  ],
+  "releases": [
+    {
+      "title": "Where've You Been? / I'd Like To Get Ta Know You",
+      "year": 1983,
+      "label": "Airborne Records (7)",
+      "role": "Producer",
+      "format": "7\", Single"
+    },
+    {
+      "title": "The Lost Session",
+      "year": 2026,
+      "label": "New Shot Records",
+      "role": "Appearance",
+      "format": "CD, Album"
+    },
+    {
+      "title": "Steppin' Out - The Roots Of Garage Rock 1963-1965",
+      "year": 2026,
+      "label": "Strawberry (26)",
+      "role": "Appearance",
+      "format": "3xCD, Comp, 'Cl"
+    },
+    {
+      "title": "Pushin' Too Hard (American Garage Punk 1964-67)",
+      "year": 2024,
+      "label": "Strawberry (26)",
+      "role": "Appearance",
+      "format": "3xCD, Comp, RM + Box, Cla"
+    },
+    {
+      "title": "Turn Around: The Complete Recordings 1964-1970",
+      "year": 2021,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "The Very Best Of The Beau Brummels: The Complete Singles",
+      "year": 2017,
+      "label": "Varèse Sarabande, Varèse Vintage, Rhino Custom Products",
+      "role": "Appearance",
+      "format": "CD, Comp"
+    },
+    {
+      "title": "Continuum",
+      "year": 2013,
+      "label": "BaySound Records",
+      "role": "Appearance",
+      "format": "CD, Album"
+    },
+    {
+      "title": "Magic Hollow",
+      "year": 2005,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "North Beach Legends",
+      "year": 2001,
+      "label": "Sundazed Music",
+      "role": "Appearance",
+      "format": "LP, Comp"
+    },
+    {
+      "title": "Live!",
+      "year": 2000,
+      "label": "DIG Music, West Coast Spirit",
+      "role": "Appearance",
+      "format": "CD, Album, Mono"
+    },
+    {
+      "title": "From The Vaults",
+      "year": 1999,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Nuggets (Original Artyfacts From The First Psychedelic Era 1965-1968)",
+      "year": 1998,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "San Fran Sessions",
+      "year": 1996,
+      "label": "Sundazed Music",
+      "role": "Appearance",
+      "format": "3xCD, Comp, Mono, Num + Box"
+    },
+    {
+      "title": "Attack Of The Smithereens",
+      "year": 1995,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Remnants Of The Empty Set",
+      "year": 1986,
+      "label": "PopLLama",
+      "role": "Appearance",
+      "format": "LP, Album"
+    },
+    {
+      "title": "Autumn In San Francisco",
+      "year": 1985,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Back To Life",
+      "year": 1983,
+      "label": "PEP (5), PEP (5)",
+      "role": "Appearance",
+      "format": "7\", Single"
+    },
+    {
+      "title": "Good Time Music: Volume 3",
+      "year": 1983,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "The Best Of The Beau Brummels 1964 - 1968",
+      "year": 1981,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "The Original Hits Of The Beau Brummels",
+      "year": 1975,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "The Beau Brummels",
+      "year": 1975,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Introducing The Beau Brummels",
+      "year": 1965,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "The Beau Brummels",
+      "year": 1979,
+      "label": "Flying Horses",
+      "role": "UnofficialRelease",
+      "format": "LP, Unofficial"
+    }
+  ],
+  "releaseCount": 23,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/1387719"
+  },
+  "_cachedAt": 1781885026608
+}

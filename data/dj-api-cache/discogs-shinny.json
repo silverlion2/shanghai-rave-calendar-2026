@@ -1,0 +1,32 @@
+{
+  "found": true,
+  "id": 1906251,
+  "name": "Shinny Dowling",
+  "profile": "",
+  "nameVariations": [],
+  "members": [],
+  "groups": [],
+  "urls": [],
+  "images": [],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "A Rare Production"
+  ],
+  "releases": [
+    {
+      "title": "Be It Right Or Wrong",
+      "year": 2010,
+      "label": "A Rare Production",
+      "role": "Appearance",
+      "format": "CD, Album"
+    }
+  ],
+  "releaseCount": 1,
+  "dataQuality": "Needs Major Changes",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/1906251"
+  },
+  "_cachedAt": 1781885410430
+}

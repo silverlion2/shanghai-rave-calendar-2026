@@ -1,0 +1,22 @@
+{
+  "found": true,
+  "id": "36be323a-edfd-49a3-ac25-a02ef6a2c351",
+  "name": "Mau Mau",
+  "sortName": "Mau Mau",
+  "type": "Group",
+  "gender": null,
+  "country": "IT",
+  "disambiguation": "Italian patchanka",
+  "lifeSpan": {
+    "begin": "1991",
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 4581
+  },
+  "_cachedAt": 1781884881820
+}

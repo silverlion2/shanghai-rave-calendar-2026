@@ -1,0 +1,32 @@
+{
+  "found": true,
+  "id": 1984401,
+  "name": "Olivier G",
+  "profile": "",
+  "nameVariations": [],
+  "members": [],
+  "groups": [],
+  "urls": [],
+  "images": [],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "OD Records"
+  ],
+  "releases": [
+    {
+      "title": "Planet 77 EP",
+      "year": 2004,
+      "label": "OD Records",
+      "role": "Co-producer",
+      "format": "12\", EP"
+    }
+  ],
+  "releaseCount": 1,
+  "dataQuality": "Needs Major Changes",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/1984401"
+  },
+  "_cachedAt": 1781889678281
+}

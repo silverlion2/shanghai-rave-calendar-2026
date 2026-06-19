@@ -1,0 +1,253 @@
+{
+  "found": true,
+  "id": 1744777,
+  "name": "Nikita Zabelin",
+  "profile": "Russian producer and sound designer, who is also resident at Moscow’s Monasterio club. Nikita is a proponent of minimalism that grew initially from the German techno-world, yet whatever those early sources, he has now come into his own as a sonic artist. «My music is not driven by songs. Instead it’s the creation of alternative realities, whether they spring from visual images or grow from my own experience with modern technology.» These trajectories and experiments have now led to sharing the stage with James Ruskin, Speedy J, Truncate, Shifted, Robert Hood, Slam- plus others.",
+  "nameVariations": [
+    "Nikita Zebelin"
+  ],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "http://www.facebook.com/pages/Nikita-Zabelin/123893617662950",
+    "http://www.soundcloud.com/zabelin",
+    "http://zabelin.tumblr.com"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/8tzpuNXyN9tn6cS43_OUgoy2rNhtxkXSSa39yXFkPVA/rs:fit/g:sm/q:90/h:400/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE3NDQ3/NzctMTQ5NTUzODcz/Mi03NjkzLmpwZWc.jpeg",
+      "width": 600,
+      "height": 400
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/Hr5iZhzJYwMUeR9MLhMXn-kL7FIL0MT4PcID1J5FeK8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE3NDQ3/NzctMTQxNzk3NzI0/NC01NzE0LmpwZWc.jpeg",
+      "width": 600,
+      "height": 600
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Resonance Moscow",
+    "Hi Freaks",
+    "Magnit",
+    "True Music (5)",
+    "PG TUNE",
+    "Wunderblock Records",
+    "For Pleasure Rec.",
+    "Regular",
+    "Absurde (2)",
+    "Al Gharib",
+    "X/OZ",
+    "трип",
+    "Resident Advisor, Resident Advisor Podcast"
+  ],
+  "releases": [
+    {
+      "title": "Rhizome",
+      "year": 2019,
+      "label": "Resonance Moscow",
+      "role": "Main",
+      "format": "2xLP, Album"
+    },
+    {
+      "title": "Trans Siberian Express",
+      "year": 2018,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Dr. Schumanfu",
+      "year": 2010,
+      "label": "Hi Freaks",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Brand New Me",
+      "year": 2010,
+      "label": "Hi Freaks",
+      "role": "Main",
+      "format": "File, WAV, EP"
+    },
+    {
+      "title": "Malaysia",
+      "year": 2009,
+      "label": "Magnit",
+      "role": "Main",
+      "format": "File, WAV"
+    },
+    {
+      "title": "Gone To Sleep",
+      "year": 2009,
+      "label": "Hi Freaks",
+      "role": "Main",
+      "format": "File, WAV, EP"
+    },
+    {
+      "title": "True Music",
+      "year": 2017,
+      "label": "True Music (5)",
+      "role": "Remix",
+      "format": "12\", Ltd"
+    },
+    {
+      "title": "Remix The Box ",
+      "year": 2016,
+      "label": "PG TUNE",
+      "role": "Remix",
+      "format": "4xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Urania ",
+      "year": 2016,
+      "label": null,
+      "role": "Remix"
+    },
+    {
+      "title": "Arma Hedon",
+      "year": 2014,
+      "label": "Wunderblock Records",
+      "role": "Remix",
+      "format": "4xFile, FLAC, EP"
+    },
+    {
+      "title": "Welcome",
+      "year": 2012,
+      "label": "For Pleasure Rec.",
+      "role": "Remix",
+      "format": "12\""
+    },
+    {
+      "title": "Альпы – Пальмы",
+      "year": 2011,
+      "label": null,
+      "role": "Remix"
+    },
+    {
+      "title": "Pulp EP",
+      "year": 2010,
+      "label": "Regular",
+      "role": "Remix",
+      "format": "6xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Dr. Schumanfu",
+      "year": 2010,
+      "label": null,
+      "role": "Remix"
+    },
+    {
+      "title": "De Niro Is Concerned",
+      "year": 2021,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Don't Mess With Cupid, 'Cause Cupid Ain't Stupid",
+      "year": 2018,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Fabric 91",
+      "year": 2016,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "DJ-Kicks",
+      "year": 2015,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Not Yet A Memory",
+      "year": 2012,
+      "label": "Absurde (2)",
+      "role": "Appearance",
+      "format": "5xFile, MP3, 320"
+    },
+    {
+      "title": "RESO 11Y",
+      "year": 2026,
+      "label": "Resonance Moscow",
+      "role": "TrackAppearance",
+      "format": "21xFile, MP3, WAV, Comp, 320"
+    },
+    {
+      "title": "فلسطين",
+      "year": 2021,
+      "label": "Al Gharib",
+      "role": "TrackAppearance",
+      "format": "35xFile, WAV, Comp"
+    },
+    {
+      "title": "Al Gharib - Palestine",
+      "year": 2021,
+      "label": "Al Gharib",
+      "role": "TrackAppearance",
+      "format": "3xCD, Comp"
+    },
+    {
+      "title": "Invisible Limits Vol. III",
+      "year": 2020,
+      "label": "X/OZ",
+      "role": "TrackAppearance",
+      "format": "22xFile, FLAC, Comp"
+    },
+    {
+      "title": "Trip ADE 2018 PT3",
+      "year": 2018,
+      "label": "трип",
+      "role": "TrackAppearance",
+      "format": "12\", Ltd, W/Lbl"
+    },
+    {
+      "title": "Physically Sick 2",
+      "year": 2018,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "RA.563",
+      "year": 2017,
+      "label": "Resident Advisor, Resident Advisor Podcast",
+      "role": "TrackAppearance",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "Fabric 91",
+      "year": 2016,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Иван, Давай! Открой Коробку! = Ivan, Come On, Unlock The Box ",
+      "year": 2015,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "DJ-Kicks",
+      "year": 2015,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "De Niro Is Concerned",
+      "year": 2015,
+      "label": null,
+      "role": "TrackAppearance"
+    }
+  ],
+  "releaseCount": 30,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/1744777"
+  },
+  "_cachedAt": 1781886537828
+}

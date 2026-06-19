@@ -1,0 +1,25 @@
+{
+  "found": true,
+  "id": "a7adb8dc-2802-43fe-a0c7-6215e59a4266",
+  "name": "Oolong",
+  "sortName": "Oolong",
+  "type": "Group",
+  "gender": null,
+  "country": "Long Island",
+  "disambiguation": "LI emo",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [
+    "rock",
+    "emo",
+    "midwest emo"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 10
+  },
+  "_cachedAt": 1781888871253
+}

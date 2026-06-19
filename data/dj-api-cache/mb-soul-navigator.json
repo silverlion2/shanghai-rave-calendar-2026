@@ -1,0 +1,31 @@
+{
+  "found": true,
+  "id": "1ca87b5d-0012-46d4-86ff-814db3f343a2",
+  "name": "Navigator",
+  "sortName": "Navigator",
+  "type": "Person",
+  "gender": "male",
+  "country": "GB",
+  "disambiguation": "UK jungle/breakbeat/reggae vocalist Raymond Crawford",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [
+    "Raymond Crawford",
+    "Raymond Stephen Crawford",
+    "MC Navigator",
+    "M.C. Navigator"
+  ],
+  "tags": [
+    "drum and bass",
+    "jungle",
+    "emcee",
+    "mc"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 9813
+  },
+  "_cachedAt": 1781889379727
+}

@@ -1,0 +1,103 @@
+{
+  "found": true,
+  "id": 4567262,
+  "name": "Lunar Shadow",
+  "profile": "Heavy Metal band from Germany, formed in 2014.\r\n\r\n[b][u]Line-up:[/u][/b]\r\nMax 'Savage' Birbaum - Lead Guitar\r\nK. Hamacher - Guitars\r\nS. Hamacher - Bass Guitar\r\nRobert Röttig - Vocals\r\nJ. Zehner - Drums\r\n\r\n[b][u]Past members:[/u][/b]\r\nA. Vornam - Vocals ",
+  "nameVariations": [],
+  "members": [
+    "Jörn Zehner",
+    "Max \"Savage\" Birbaum",
+    "Alex Vornam",
+    "Kay Hamacher",
+    "Sven Hamacher",
+    "Robert Röttig"
+  ],
+  "groups": [],
+  "urls": [
+    "https://www.facebook.com/lunarshadowband",
+    "https://lunarshadow.bandcamp.com/",
+    "https://www.youtube.com/channel/UCJj4f-la6B_VysEE7egrVFg",
+    "https://www.metal-archives.com/bands/Lunar_Shadow/3540397772",
+    "https://on.soundcloud.com/zb3k0yniZPUFaZHPXW"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/QYyjnkGiC44te2KdRBaPttBZAYEIQE1ZV32zsezzZA4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ1Njcy/NjItMTU2NDQ5NTY3/NC03NTY0LmpwZWc.jpeg",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/yUEVVLmoT0nUyyY5ug7XvIDMXohj7kt-GQAGf3O0_xo/rs:fit/g:sm/q:90/h:400/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ1Njcy/NjItMTQ0MDE0ODc5/MS0yNDMzLmpwZWc.jpeg",
+      "width": 600,
+      "height": 400
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Cruz Del Sur Music",
+    "Not On Label (Lunar Shadow Self-released)"
+  ],
+  "releases": [
+    {
+      "title": "The Pall Of A Past World",
+      "year": 2026,
+      "label": "Cruz Del Sur Music",
+      "role": "Main",
+      "format": "CD, Album"
+    },
+    {
+      "title": "I Will Lose You",
+      "year": 2021,
+      "label": "Not On Label (Lunar Shadow Self-released)",
+      "role": "Main",
+      "format": "File, FLAC, Single"
+    },
+    {
+      "title": "Wish To Leave",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Hawk Of The Hills",
+      "year": 2019,
+      "label": "Not On Label (Lunar Shadow Self-released)",
+      "role": "Main",
+      "format": "File, FLAC, Single"
+    },
+    {
+      "title": "The Smokeless Fires",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Far From Light",
+      "year": 2017,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Triumphator",
+      "year": 2015,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Seeds Of Metal - Vol. V.",
+      "year": 2019,
+      "label": null,
+      "role": "TrackAppearance"
+    }
+  ],
+  "releaseCount": 8,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/4567262"
+  },
+  "_cachedAt": 1781885475807
+}

@@ -1,0 +1,38 @@
+{
+  "found": true,
+  "id": 887460,
+  "name": "K. Santa",
+  "profile": "",
+  "nameVariations": [],
+  "members": [],
+  "groups": [],
+  "urls": [],
+  "images": [],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Finnlevy"
+  ],
+  "releases": [
+    {
+      "title": "Sexii, Sexii",
+      "year": 1992,
+      "label": "Finnlevy",
+      "role": "Appearance",
+      "format": "7\", Single"
+    },
+    {
+      "title": "Tutti Frutti",
+      "year": 1992,
+      "label": null,
+      "role": "Appearance"
+    }
+  ],
+  "releaseCount": 2,
+  "dataQuality": "Correct",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/887460"
+  },
+  "_cachedAt": 1781889554928
+}

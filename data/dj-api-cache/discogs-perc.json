@@ -1,0 +1,262 @@
+{
+  "found": true,
+  "id": 53980,
+  "name": "Perc",
+  "profile": "Perc, aka Ali Wells, is an internationally touring DJ and label owner.\r\nPerc founded his label, [l=Perc Trax], in 2004 as a vehicle for his own productions, but has developed a roster that now includes several other artists.\r\n",
+  "nameVariations": [
+    "Ali Perc"
+  ],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "http://perctrax.bandcamp.com/",
+    "http://www.facebook.com/PercTrax",
+    "http://www.myspace.com/perctrax",
+    "http://www.twitter.com/perctrax"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/4YeHHBCLVPPg5MVilLVe7L6knqBmsD5JCjJJdXVuXEY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTUzOTgw/LTE2MzAxNzk4OTEt/ODUwNi5qcGVn.jpeg",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/5rlwonQ2gGgMr-OsE_aleea33nkkOxyIgSUK8bRKmD8/rs:fit/g:sm/q:90/h:551/w:550/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTUzOTgw/LTEzODMyOTgwODQt/MTk2Ny5qcGVn.jpeg",
+      "width": 550,
+      "height": 551
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/B_sfJHQyCX1bHS4bQIsz36vZCLmStc-28K3uqtytI1s/rs:fit/g:sm/q:90/h:348/w:348/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTUzOTgw/LTEzMjU4NDQyODMu/anBlZw.jpeg",
+      "width": 348,
+      "height": 348
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Perc Trax",
+    "Void +1 Recordings",
+    "Hypercolour",
+    "Analogue",
+    "Crisis Of Man",
+    "Dekmantel",
+    "Stroboscopic Artefacts",
+    "Perc Trax Limited",
+    "Passarella",
+    "Resident Advisor",
+    "FACT Magazine",
+    "Submit",
+    "Sleaze Records, Sleaze Records",
+    "Electric Deluxe"
+  ],
+  "releases": [
+    {
+      "title": "Microtrax EP",
+      "year": 2026,
+      "label": "Perc Trax",
+      "role": "Main",
+      "format": "5xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Loose Fit Refitted",
+      "year": 2025,
+      "label": "Void +1 Recordings",
+      "role": "Main",
+      "format": "4xFile, MP3, 320"
+    },
+    {
+      "title": "The Cut Off Remixed EP2",
+      "year": 2025,
+      "label": "Perc Trax",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Temperature's Rising 2025",
+      "year": 2025,
+      "label": "Perc Trax",
+      "role": "Main",
+      "format": "12\", Pin"
+    },
+    {
+      "title": "The Drums",
+      "year": 2025,
+      "label": "Hypercolour",
+      "role": "Main",
+      "format": "2xFile, MP3, Single, 320"
+    },
+    {
+      "title": "Soft Launch",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "The Cut Off Remixed EP1",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Static ",
+      "year": 2024,
+      "label": "Perc Trax",
+      "role": "Main",
+      "format": "2xFile, MP3, 320"
+    },
+    {
+      "title": "The Cut Off",
+      "year": 2024,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Perc • Remco Beekwilder • UVB • Jerm",
+      "year": 2023,
+      "label": "Analogue",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Wave Cannon EP",
+      "year": 2023,
+      "label": "Void +1 Recordings",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Resistor Remixed ",
+      "year": 2023,
+      "label": "Perc Trax",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Motorik",
+      "year": 2022,
+      "label": "Crisis Of Man",
+      "role": "Main",
+      "format": "File, MP3, Single, 320"
+    },
+    {
+      "title": "Dirt",
+      "year": 2022,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Remixed",
+      "year": 2021,
+      "label": "Perc Trax",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Greed Dance",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Louder Than Chaos Vol. 2",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Fire In Negative",
+      "year": 2020,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Look What Your Love Has Done To Me Remixed",
+      "year": 2019,
+      "label": "Perc Trax",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Three Tracks To Send To Your Ghost Producer",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Leather & Lace Remixed",
+      "year": 2018,
+      "label": "Perc Trax",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Hyperlink / London Isn't England Remixed",
+      "year": 2018,
+      "label": "Perc Trax",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Bitter Music Remixed EP02",
+      "year": 2017,
+      "label": "Perc Trax",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Dekmantel Podcast 117",
+      "year": 2017,
+      "label": "Dekmantel",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "Bitter Music Remixed EP01",
+      "year": 2017,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Bitter Music",
+      "year": 2017,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Ma",
+      "year": 2016,
+      "label": "Stroboscopic Artefacts",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Leather & Lace",
+      "year": 2016,
+      "label": "Perc Trax Limited",
+      "role": "Main",
+      "format": "12\", Ltd, Cle"
+    },
+    {
+      "title": "Temperature's Rising",
+      "year": 2016,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Igneous",
+      "year": 2016,
+      "label": null,
+      "role": "Main"
+    }
+  ],
+  "releaseCount": 50,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/53980"
+  },
+  "_cachedAt": 1781887502868
+}

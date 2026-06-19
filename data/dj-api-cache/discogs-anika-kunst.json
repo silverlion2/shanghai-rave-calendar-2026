@@ -1,0 +1,215 @@
+{
+  "found": true,
+  "id": 3887655,
+  "name": "Anika Kunst",
+  "profile": "Electronic music DJ and producer from Spain. Runs [l717841].",
+  "nameVariations": [],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "https://www.facebook.com/AnikaKunstofficial",
+    "https://soundcloud.com/anika-kunst",
+    "https://www.instagram.com/anikakunstmuzik/"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/jzycmtJtne3YPkHz6O_xpk_942648nvbsOX36UXxDfQ/rs:fit/g:sm/q:90/h:356/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM4ODc2/NTUtMTQwMzc2NDY3/OS0yMjk4LmpwZWc.jpeg",
+      "width": 600,
+      "height": 356
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Symbolism",
+    "Rekids Special Projects",
+    "Dust Trax",
+    "Chapter Rcrds",
+    "Konekt Croatia",
+    "WSNWG Back To Zero",
+    "End Of Dayz",
+    "Methodical",
+    "I-Traxx Recordings",
+    "Casanova Bar Records",
+    "Gordo Trax",
+    "Suara",
+    "Immaterial.Archives",
+    "Uncage",
+    "Suruba X"
+  ],
+  "releases": [
+    {
+      "title": "Sin Rodeos EP",
+      "year": 2023,
+      "label": "Symbolism",
+      "role": "Main",
+      "format": "5xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Hidden Intention EP",
+      "year": 2022,
+      "label": "Symbolism",
+      "role": "Main",
+      "format": "4xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Different Approach EP ",
+      "year": 2021,
+      "label": "Rekids Special Projects",
+      "role": "Main",
+      "format": "4xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Renegades",
+      "year": 2021,
+      "label": "Dust Trax",
+      "role": "Main",
+      "format": "File, WAV, Single"
+    },
+    {
+      "title": "Nowhere",
+      "year": 2019,
+      "label": "Chapter Rcrds",
+      "role": "Main",
+      "format": "3xFile, MP3, WAV, EP"
+    },
+    {
+      "title": "Biding All In",
+      "year": 2014,
+      "label": "Chapter Rcrds",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Alias",
+      "year": 2024,
+      "label": "Konekt Croatia",
+      "role": "Remix",
+      "format": "5xFile, FLAC, EP"
+    },
+    {
+      "title": "Revisited",
+      "year": 2023,
+      "label": "WSNWG Back To Zero",
+      "role": "Remix",
+      "format": "11xFile, WAV, Album"
+    },
+    {
+      "title": "Nomara EP",
+      "year": 2022,
+      "label": "End Of Dayz",
+      "role": "Remix",
+      "format": "4xFile, WAV, EP"
+    },
+    {
+      "title": "Focus Remixes Vol. 1",
+      "year": 2020,
+      "label": "Methodical",
+      "role": "Remix",
+      "format": "6xFile, FLAC"
+    },
+    {
+      "title": "Methodical EP",
+      "year": 2018,
+      "label": "I-Traxx Recordings",
+      "role": "Remix",
+      "format": "4xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Sonic Diversity",
+      "year": 2019,
+      "label": "Chapter Rcrds",
+      "role": "Appearance",
+      "format": "3xFile, MP3, EP"
+    },
+    {
+      "title": "Rødhåd Presents: Solara Melfera",
+      "year": 2025,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Special Edition",
+      "year": 2024,
+      "label": "Casanova Bar Records",
+      "role": "TrackAppearance",
+      "format": "12\""
+    },
+    {
+      "title": "Germanor 2 - Valencia Relief Fundraiser",
+      "year": 2024,
+      "label": "Gordo Trax",
+      "role": "TrackAppearance",
+      "format": "17xFile, FLAC, 24- + 8xFile, FLAC, 16-"
+    },
+    {
+      "title": "Actualize Part 2",
+      "year": 2023,
+      "label": "Rekids Special Projects",
+      "role": "TrackAppearance",
+      "format": "16xFile, MP3, Comp, 320 + File, MP3, Comp, Mixed, "
+    },
+    {
+      "title": "All Stars Vol. 3",
+      "year": 2023,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Techno Against War",
+      "year": 2022,
+      "label": "Suara",
+      "role": "TrackAppearance",
+      "format": "59xFile, MP3, Comp, 320"
+    },
+    {
+      "title": "V-Eclipse II",
+      "year": 2022,
+      "label": "Immaterial.Archives",
+      "role": "TrackAppearance",
+      "format": "4xFile, FLAC, 24-"
+    },
+    {
+      "title": "Uncage Mission 02",
+      "year": 2021,
+      "label": "Uncage",
+      "role": "TrackAppearance",
+      "format": "22xFile, MP3, Comp, 320 + File, MP3, Mixed, 320"
+    },
+    {
+      "title": "Ben Sims Presents Synchronicity Part One",
+      "year": 2021,
+      "label": "Symbolism",
+      "role": "TrackAppearance",
+      "format": "20xFile, MP3, Comp, 320"
+    },
+    {
+      "title": "Synchronicity",
+      "year": 2021,
+      "label": "Symbolism",
+      "role": "TrackAppearance",
+      "format": "40xFile, MP3, Comp, 320 + File, MP3, Comp, Mixed, "
+    },
+    {
+      "title": "The Chosen Ones Vol. 1",
+      "year": 2017,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Vader Vol. IV",
+      "year": 2015,
+      "label": "Suruba X",
+      "role": "TrackAppearance",
+      "format": "13xFile, MP3, 320"
+    }
+  ],
+  "releaseCount": 24,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/3887655"
+  },
+  "_cachedAt": 1781886426954
+}

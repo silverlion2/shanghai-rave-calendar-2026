@@ -1,0 +1,31 @@
+{
+  "found": true,
+  "id": "754294d5-d7d2-4ea2-8184-1dcaaf55a56f",
+  "name": "BADBADNOTGOOD",
+  "sortName": "BADBADNOTGOOD",
+  "type": "Group",
+  "gender": null,
+  "country": "CA",
+  "disambiguation": "Canadian instrumental band",
+  "lifeSpan": {
+    "begin": "2010",
+    "ended": null
+  },
+  "aliases": [
+    "Bad Bad Not Good",
+    "BBNG"
+  ],
+  "tags": [
+    "rap",
+    "jazz",
+    "hip hop",
+    "psychedelia",
+    "instrumental hip hop"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 5
+  },
+  "_cachedAt": 1781886438191
+}

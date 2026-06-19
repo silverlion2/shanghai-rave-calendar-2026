@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "0e0f8bf2-bfd1-48c0-bd32-acb0d29c68f5",
+  "name": "Tui",
+  "sortName": "Tui",
+  "type": "Person",
+  "gender": "male",
+  "country": "Curitiba",
+  "disambiguation": "Arthur Sugamosto",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 263
+  },
+  "_cachedAt": 1781886350856
+}

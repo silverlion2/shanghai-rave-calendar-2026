@@ -1,0 +1,41 @@
+{
+  "found": true,
+  "id": 3923887,
+  "name": "Yuqi Hao",
+  "profile": "",
+  "nameVariations": [
+    "郝玉岐"
+  ],
+  "members": [],
+  "groups": [],
+  "urls": [],
+  "images": [],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "南京音像出版社",
+    "中国唱片"
+  ],
+  "releases": [
+    {
+      "title": "Famous Melody of Suona",
+      "year": 2001,
+      "label": "南京音像出版社",
+      "role": "Main",
+      "format": "CD"
+    },
+    {
+      "title": "渔舟凯歌 = Fishermen's Triumphant Song (民族器乐合奏、独奏 = Orchestral And Solo Pieces Played On Chinese Folk Instruments)",
+      "label": "中国唱片",
+      "role": "TrackAppearance",
+      "format": "10\""
+    }
+  ],
+  "releaseCount": 2,
+  "dataQuality": "Needs Major Changes",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/3923887"
+  },
+  "_cachedAt": 1781889753358
+}

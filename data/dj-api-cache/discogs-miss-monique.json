@@ -1,0 +1,287 @@
+{
+  "found": true,
+  "id": 4988119,
+  "name": "Miss Monique",
+  "profile": "Ukrainian Progressive House / Melodic Techno DJ and record producer from Kyiv.\r\nFounded digital label [l=Siona Records] in 2019.\r\nContact: djmissmonique@gmail.com",
+  "nameVariations": [],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "https://vk.com/missmonique_dj",
+    "https://promodj.com/missmonique",
+    "https://www.facebook.com/MissMoniqueUA",
+    "https://www.instagram.com/djmissmonique",
+    "https://www.threads.com/@djmissmonique",
+    "https://twitter.com/djmissmonique",
+    "https://soundcloud.com/alesia-arkusha",
+    "https://www.youtube.com/@djmissmonique"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/InUUJb3ULbblfEO1slJoFyEMOfbCxk_LoH1QR1ggQWY/rs:fit/g:sm/q:90/h:749/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ5ODgx/MTktMTU5MDM5Njk5/MC0yOTcwLmpwZWc.jpeg",
+      "width": 600,
+      "height": 749
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/1VQRy9OzaGXMzHDz1Koe1hIY4vaICwlsd-LM3Pz2mYs/rs:fit/g:sm/q:90/h:399/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ5ODgx/MTktMTU5MDM5Njk5/Mi00NzkxLmpwZWc.jpeg",
+      "width": 600,
+      "height": 399
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/6_80bOOBqkXcC9YKDcauhiEtntneviskTDBSx74Pi8o/rs:fit/g:sm/q:90/h:900/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ5ODgx/MTktMTU5MDM5Njk5/NS0yNTI5LmpwZWc.jpeg",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/VDiso5fwm7CSzHCdyrcQiSO-6dGMJm06l2qooQszSnk/rs:fit/g:sm/q:90/h:399/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ5ODgx/MTktMTU5MDM5NzAw/NC0zNzk1LmpwZWc.jpeg",
+      "width": 600,
+      "height": 399
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/1nCNztWHPfbSO5nyq4wUCGtThwvDybxNrQ_DEP7d61U/rs:fit/g:sm/q:90/h:399/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ5ODgx/MTktMTU5MDM5NzAw/Ny01NTg5LmpwZWc.jpeg",
+      "width": 600,
+      "height": 399
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/iVQ4D3JUUeH4zvi5Oh1k2zWKEAjf6OmIWi96lzYDiTI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ5ODgx/MTktMTU5MDM5NzY1/OC05NTc4LmpwZWc.jpeg",
+      "width": 600,
+      "height": 600
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Tomorrowland Music",
+    "Aeterna Records (2)",
+    "Siona Records",
+    "Three Six Zero Recordings",
+    "Interstellar Recordings (2)",
+    "Cercle Records (2)",
+    "Armada (4)",
+    "Siona Records, Siona Records",
+    "AFTR:HRS",
+    "Purified Records",
+    "Freegrant Music",
+    "Area Verde",
+    "Baroque Records"
+  ],
+  "releases": [
+    {
+      "title": "Rajada",
+      "year": 2026,
+      "label": "Tomorrowland Music",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Hot Sauce",
+      "year": 2026,
+      "label": "Aeterna Records (2)",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Ghosts",
+      "year": 2026,
+      "label": "Siona Records",
+      "role": "Main",
+      "format": "File, MPEG Video, 320"
+    },
+    {
+      "title": "Nomacita",
+      "year": 2025,
+      "label": "Aeterna Records (2)",
+      "role": "Main",
+      "format": "File, MP3, Single, 320"
+    },
+    {
+      "title": "Magnet",
+      "year": 2025,
+      "label": "Tomorrowland Music",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Million Miles Away",
+      "year": 2025,
+      "label": "Siona Records",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Is Anyone There?",
+      "year": 2025,
+      "label": "Siona Records",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Rain",
+      "year": 2025,
+      "label": "Three Six Zero Recordings",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Bloom At Night",
+      "year": 2024,
+      "label": "Tomorrowland Music",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Look At You",
+      "year": 2024,
+      "label": "Interstellar Recordings (2)",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Veselka",
+      "year": 2024,
+      "label": "Siona Records",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Every Breath",
+      "year": 2024,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Feeling So Real 2024 (Extended Mix)",
+      "year": 2024,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Concorde",
+      "year": 2023,
+      "label": "Cercle Records (2)",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "The Morning After",
+      "year": 2023,
+      "label": "Armada (4)",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Sorry (Miss Monique Remix)",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Subterranean",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Electric",
+      "year": 2022,
+      "label": "Siona Records",
+      "role": "Main",
+      "format": "File, WAV"
+    },
+    {
+      "title": "Biosphere (Extended Version)",
+      "year": 2022,
+      "label": "Cercle Records (2)",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Elamy (Extended Mix)",
+      "year": 2022,
+      "label": "Siona Records",
+      "role": "Main",
+      "format": "File, FLAC"
+    },
+    {
+      "title": "Hideaway",
+      "year": 2022,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Raindrop",
+      "year": 2021,
+      "label": "Siona Records, Siona Records",
+      "role": "Main",
+      "format": "2xFile, MP3, 320"
+    },
+    {
+      "title": "Don't Come Back",
+      "year": 2021,
+      "label": "AFTR:HRS",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Train Of Thought",
+      "year": 2021,
+      "label": "Siona Records",
+      "role": "Main",
+      "format": "File, FLAC, Single"
+    },
+    {
+      "title": "Loona",
+      "year": 2021,
+      "label": "Siona Records",
+      "role": "Main",
+      "format": "2xFile, FLAC"
+    },
+    {
+      "title": "Land Of Sunshine EP",
+      "year": 2021,
+      "label": "Purified Records",
+      "role": "Main",
+      "format": "2xFile, WAV, EP"
+    },
+    {
+      "title": "ADE2021",
+      "year": 2021,
+      "label": "Freegrant Music",
+      "role": "Main",
+      "format": "10xFile, FLAC, Comp + File, FLAC, Mixed"
+    },
+    {
+      "title": "Rider",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Dark Forest",
+      "year": 2020,
+      "label": "Siona Records",
+      "role": "Main",
+      "format": "File, WAV"
+    },
+    {
+      "title": "Bombay",
+      "year": 2020,
+      "label": "Siona Records",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    }
+  ],
+  "releaseCount": 50,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/4988119"
+  },
+  "_cachedAt": 1781881262104
+}

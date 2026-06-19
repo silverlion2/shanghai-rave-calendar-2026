@@ -1,0 +1,37 @@
+{
+  "found": true,
+  "id": 1183062,
+  "name": "Will (21)",
+  "profile": "Artist from the US. Affiliated with the Fugees. Known for doin skits with his partner \"Talent\".",
+  "nameVariations": [
+    "Wil"
+  ],
+  "members": [],
+  "groups": [],
+  "urls": [],
+  "images": [],
+  "genres": [],
+  "styles": [],
+  "labels": [],
+  "releases": [
+    {
+      "title": "The Carnival",
+      "year": 1997,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "The Score",
+      "year": 1996,
+      "label": null,
+      "role": "Appearance"
+    }
+  ],
+  "releaseCount": 2,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/1183062"
+  },
+  "_cachedAt": 1781889700439
+}

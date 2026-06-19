@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "30ff9ade-f75b-43f5-b223-de7c33d6b839",
+  "name": "TRAINING",
+  "sortName": "TRAINING",
+  "type": "Group",
+  "gender": null,
+  "country": "DE",
+  "disambiguation": "",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 2664
+  },
+  "_cachedAt": 1781889728841
+}

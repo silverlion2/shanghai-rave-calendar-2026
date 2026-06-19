@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "25738f3a-9857-4522-baf8-d6af3b69dfa5",
+  "name": "B2B",
+  "sortName": "B2B",
+  "type": "Group",
+  "gender": null,
+  "country": "IT",
+  "disambiguation": "Italian house producer duo",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 45
+  },
+  "_cachedAt": 1781889410625
+}

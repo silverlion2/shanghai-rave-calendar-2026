@@ -1,0 +1,28 @@
+{
+  "found": true,
+  "id": "245f7a1a-b799-40f1-a11a-6b379dbe0fa1",
+  "name": "Lucrecia Dalt",
+  "sortName": "Dalt, Lucrecia",
+  "type": "Person",
+  "gender": "female",
+  "country": "Berlin",
+  "disambiguation": "Colombian electronic musician",
+  "lifeSpan": {
+    "begin": "1980",
+    "ended": null
+  },
+  "aliases": [
+    "María Lucrecia Pérez López",
+    "Lucrecia"
+  ],
+  "tags": [
+    "electronic",
+    "experimental electronic"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 350
+  },
+  "_cachedAt": 1781886446947
+}

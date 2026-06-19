@@ -1,0 +1,239 @@
+{
+  "found": true,
+  "id": 389964,
+  "name": "Chiaki Ikematsu",
+  "profile": "Japanese mastering engineer.",
+  "nameVariations": [
+    "池松千映"
+  ],
+  "members": [],
+  "groups": [],
+  "urls": [],
+  "images": [],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Konami Computer Entertainment Japan",
+    "SMDR GT Music",
+    "Frontier Works Inc.",
+    "SMEJ",
+    "Tone Vendor",
+    "Mastersix Foundation",
+    "INFRACom!",
+    "Sony Records Int'l",
+    "Telephonista Sounds, Telephonista Sounds",
+    "Static, Static",
+    "Knockers Records",
+    "Rip Curl Recordings",
+    "Epic",
+    "Miya Records"
+  ],
+  "releases": [
+    {
+      "title": "Feets Don't Fail Me Now",
+      "year": 2014,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Single Collection",
+      "year": 2006,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Metal Gear Solid 3 - Snake Eater (TGS2004)",
+      "year": 2004,
+      "label": "Konami Computer Entertainment Japan",
+      "role": "Appearance",
+      "format": "CD, Maxi, Promo"
+    },
+    {
+      "title": "Message En Rouge + Anniversaire",
+      "year": 2004,
+      "label": "SMDR GT Music",
+      "role": "Appearance",
+      "format": "CD, Comp"
+    },
+    {
+      "title": "TVアニメーション 月は東に日は西に～Operation Sanctuary～ サウンドトラック&ミニドラマ",
+      "year": 2004,
+      "label": "Frontier Works Inc.",
+      "role": "Appearance",
+      "format": "CD, Album"
+    },
+    {
+      "title": "Metal Gear Solid 3: Snake Eater - The First Bite",
+      "year": 2004,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Metal Gear Solid 3: Snake Eater (Original Soundtrack)",
+      "year": 2004,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "コンプリート・コレクション 1969-1974",
+      "year": 2003,
+      "label": "SMEJ",
+      "role": "Appearance",
+      "format": "12xCD, Comp, Box"
+    },
+    {
+      "title": "ゴールデン☆ベスト 歌の贈り物",
+      "year": 2003,
+      "label": "SMEJ",
+      "role": "Appearance",
+      "format": "2xCD, Comp, RM"
+    },
+    {
+      "title": "Drop You Vivid Colours",
+      "year": 2002,
+      "label": "Tone Vendor",
+      "role": "Appearance",
+      "format": "CD, Album"
+    },
+    {
+      "title": "Minimal Sound Interior - Emotional Silence",
+      "year": 2002,
+      "label": "SMEJ",
+      "role": "Appearance",
+      "format": "CD, Comp"
+    },
+    {
+      "title": "Minimal Sound Interior - In The Soft Light",
+      "year": 2002,
+      "label": "SMEJ",
+      "role": "Appearance",
+      "format": "CD, Comp"
+    },
+    {
+      "title": "Golden☆Best",
+      "year": 2002,
+      "label": "SMEJ",
+      "role": "Appearance",
+      "format": "CD, Comp"
+    },
+    {
+      "title": "Bring The Noise",
+      "year": 2002,
+      "label": "Mastersix Foundation",
+      "role": "Appearance",
+      "format": "CD, Album, Comp"
+    },
+    {
+      "title": "Bitter • Sweet",
+      "year": 2001,
+      "label": "INFRACom!",
+      "role": "Appearance",
+      "format": "12\""
+    },
+    {
+      "title": "More Cookin' At The Plugged Nickel",
+      "year": 2001,
+      "label": "Sony Records Int'l",
+      "role": "Appearance",
+      "format": "CD, Album, Enh, RM"
+    },
+    {
+      "title": "The City Always Under Construction",
+      "year": 2001,
+      "label": "Telephonista Sounds, Telephonista Sounds",
+      "role": "Appearance",
+      "format": "CD, Album"
+    },
+    {
+      "title": "Complete Works For Solo Piano",
+      "year": 2001,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "1958 Miles",
+      "year": 2001,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "In Person, Saturday Night At The Blackhawk, San Francisco, Volume II",
+      "year": 2001,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Aile Alegria",
+      "year": 2001,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "In Paris Festival International De Jazz - May, 1949",
+      "year": 2001,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "A Scorching Sun",
+      "year": 2000,
+      "label": "Tone Vendor",
+      "role": "Appearance",
+      "format": "CD, Album"
+    },
+    {
+      "title": "Almond Eyed Man",
+      "year": 1999,
+      "label": "Static, Static",
+      "role": "Appearance",
+      "format": "CD, Album"
+    },
+    {
+      "title": "Matrix Presents Metro Recordings \"Level One\" (Japanese Edition)",
+      "year": 1999,
+      "label": "Static, Static",
+      "role": "Appearance",
+      "format": "CD, Comp"
+    },
+    {
+      "title": "フリスビー",
+      "year": 1999,
+      "label": "Knockers Records",
+      "role": "Appearance",
+      "format": "CD, MiniAlbum"
+    },
+    {
+      "title": "Directstep",
+      "year": 1999,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Thrillseekers",
+      "year": 1999,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Carla Vallet II: Volando Voy",
+      "year": 1998,
+      "label": "Rip Curl Recordings",
+      "role": "Appearance",
+      "format": "CD, Album"
+    },
+    {
+      "title": "Sketch Of Nazca",
+      "year": 1998,
+      "label": "Epic",
+      "role": "Appearance",
+      "format": "CD, Album"
+    }
+  ],
+  "releaseCount": 47,
+  "dataQuality": "Correct",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/389964"
+  },
+  "_cachedAt": 1781884941109
+}

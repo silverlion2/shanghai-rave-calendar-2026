@@ -1,0 +1,241 @@
+{
+  "found": true,
+  "id": 3839434,
+  "name": "Sciahri",
+  "profile": "Florence-based Italian dj/producer and founder of [l1181459].",
+  "nameVariations": [],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "https://twitter.com/Sciahri",
+    "https://www.facebook.com/Sciahri",
+    "https://soundcloud.com/sciahri",
+    "https://www.instagram.com/sciahri__sublunar/"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/OOxUHLSMYPxVQ5eeVQWTCCg9bU7LhiLwxU0nYZ9ELIE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM4Mzk0/MzQtMTU5ODg5MDE5/MS01NTc5LmpwZWc.jpeg",
+      "width": 600,
+      "height": 600
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Sublunar",
+    "Manhigh",
+    "Black Opal",
+    "Ilian Tape",
+    "Gordo Trax",
+    "KYSH Records",
+    "Southern Lights",
+    "AWRY",
+    "UNKNOT",
+    "Duna (5)",
+    "Hate (6)"
+  ],
+  "releases": [
+    {
+      "title": "Pareidolia IV",
+      "year": 2026,
+      "label": "Sublunar",
+      "role": "Main",
+      "format": "2x12\""
+    },
+    {
+      "title": "Pareidolia III",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Contatto",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Axis Mundi",
+      "year": 2024,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Ritmo Oscuro",
+      "year": 2024,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Stranger Infatuation",
+      "year": 2024,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Echoes Of The Void EP",
+      "year": 2024,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Pareidolia II",
+      "year": 2024,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Pareidolia I",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Segments EP",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Paralyzed",
+      "year": 2022,
+      "label": "Sublunar",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "In Mirrors",
+      "year": 2022,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Plastic Rain",
+      "year": 2022,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Dilemma",
+      "year": 2022,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Seyl",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Corpora Part I",
+      "year": 2019,
+      "label": "Sublunar",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Double-Edged",
+      "year": 2019,
+      "label": "Sublunar",
+      "role": "Main",
+      "format": "2x12\", Album"
+    },
+    {
+      "title": "Demur",
+      "year": 2018,
+      "label": "Manhigh",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Metamorphosis",
+      "year": 2018,
+      "label": "Sublunar",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Devotion Part 2",
+      "year": 2017,
+      "label": "Sublunar",
+      "role": "Main",
+      "format": "12\", EP, Ltd, Num"
+    },
+    {
+      "title": "Devotion Part 3",
+      "year": 2017,
+      "label": "Sublunar",
+      "role": "Main",
+      "format": "12\", EP, Ltd, Num"
+    },
+    {
+      "title": "Quiet Witness",
+      "year": 2017,
+      "label": "Black Opal",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Devotion Part 1",
+      "year": 2017,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Chronicle ",
+      "year": 2016,
+      "label": "Ilian Tape",
+      "role": "Main",
+      "format": "12\", W/Lbl"
+    },
+    {
+      "title": "Behind The Line",
+      "year": 2016,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Mysterious Love",
+      "year": 2014,
+      "label": "Ilian Tape",
+      "role": "Main",
+      "format": "12\", W/Lbl"
+    },
+    {
+      "title": "Delirio Perpetuo",
+      "year": 2025,
+      "label": "Gordo Trax",
+      "role": "Remix",
+      "format": "12\", EP, Ltd"
+    },
+    {
+      "title": "KYSH-EP05",
+      "year": 2025,
+      "label": "KYSH Records",
+      "role": "Remix",
+      "format": "7xFile, FLAC, EP, 24-"
+    },
+    {
+      "title": "Saturnalia",
+      "year": 2022,
+      "label": "Southern Lights",
+      "role": "Remix",
+      "format": "12\", EP, 140"
+    },
+    {
+      "title": "FRUE",
+      "year": 2020,
+      "label": null,
+      "role": "Remix"
+    }
+  ],
+  "releaseCount": 50,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/3839434"
+  },
+  "_cachedAt": 1781886508333
+}

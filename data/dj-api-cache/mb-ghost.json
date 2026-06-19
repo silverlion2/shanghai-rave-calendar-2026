@@ -1,0 +1,37 @@
+{
+  "found": true,
+  "id": "2bcf2e02-5bc3-4c76-bf76-41126cb11444",
+  "name": "Ghost",
+  "sortName": "Ghost",
+  "type": "Group",
+  "gender": null,
+  "country": "SE",
+  "disambiguation": "Swedish metal band",
+  "lifeSpan": {
+    "begin": "2008",
+    "ended": null
+  },
+  "aliases": [
+    "ゴースト",
+    "Ghost B.C."
+  ],
+  "tags": [
+    "rock",
+    "progressive rock",
+    "heavy metal",
+    "metal",
+    "doom metal",
+    "hard rock",
+    "psychedelic rock",
+    "psychedelic",
+    "pop rock",
+    "occult rock",
+    "suécia"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 2351
+  },
+  "_cachedAt": 1781885509357
+}

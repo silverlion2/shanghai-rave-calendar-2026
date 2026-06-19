@@ -1,0 +1,26 @@
+{
+  "found": true,
+  "id": "67db280d-c3e4-49d9-978e-4050f4e209ef",
+  "name": "Amelie Lens",
+  "sortName": "Lens, Amelie",
+  "type": "Person",
+  "gender": "female",
+  "country": "BE",
+  "disambiguation": "Belgian techno DJ & producer",
+  "lifeSpan": {
+    "begin": "1990-05-31",
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [
+    "electronic",
+    "dance",
+    "techno"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 851
+  },
+  "_cachedAt": 1781881010288
+}

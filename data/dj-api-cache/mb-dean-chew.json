@@ -1,0 +1,23 @@
+{
+  "found": true,
+  "id": "f9b5d839-d73b-4a32-a281-9c2eed28b230",
+  "name": "Funk Bast*rd",
+  "sortName": "Funk Bast*rd",
+  "type": "Person",
+  "gender": "male",
+  "country": "SG",
+  "disambiguation": "Dean Chew",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [
+    "Dean Chew"
+  ],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 2495
+  },
+  "_cachedAt": 1781888924867
+}

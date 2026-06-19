@@ -1,0 +1,99 @@
+{
+  "found": true,
+  "id": 77554,
+  "name": "Nanotech",
+  "profile": "",
+  "nameVariations": [],
+  "members": [
+    "Anthony Banister",
+    "James McParlane"
+  ],
+  "groups": [],
+  "urls": [],
+  "images": [],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Clan Analogue",
+    "GoaCrops Records",
+    "The Kollectiv"
+  ],
+  "releases": [
+    {
+      "title": "Music For Aliens",
+      "year": 1994,
+      "label": "Clan Analogue",
+      "role": "Main",
+      "format": "Cass"
+    },
+    {
+      "title": "Planet Of Choice",
+      "year": 1996,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "EP 4",
+      "year": 1994,
+      "label": "Clan Analogue",
+      "role": "Appearance",
+      "format": "12\", EP + Floppy"
+    },
+    {
+      "title": "Goa Heaven",
+      "year": 2018,
+      "label": "GoaCrops Records",
+      "role": "TrackAppearance",
+      "format": "23xFile, WAV, Comp"
+    },
+    {
+      "title": "Psytrance",
+      "year": 2012,
+      "label": "GoaCrops Records",
+      "role": "TrackAppearance",
+      "format": "23xFile, WAV, Comp"
+    },
+    {
+      "title": "Cognition X (The Clan Analogue Rarities Collection)",
+      "year": 2010,
+      "label": "Clan Analogue",
+      "role": "TrackAppearance",
+      "format": "17xFile, MP3, Comp, 192"
+    },
+    {
+      "title": "Cog",
+      "year": 1995,
+      "label": "Clan Analogue",
+      "role": "TrackAppearance",
+      "format": "2xCD, Comp"
+    },
+    {
+      "title": "Schizmatrix",
+      "year": 1995,
+      "label": "Clan Analogue",
+      "role": "TrackAppearance",
+      "format": "Cass, Comp"
+    },
+    {
+      "title": "EP 4",
+      "year": 1994,
+      "label": "Clan Analogue",
+      "role": "TrackAppearance",
+      "format": "12\", EP + Floppy"
+    },
+    {
+      "title": "This Tech Know Fear",
+      "year": 1993,
+      "label": "The Kollectiv",
+      "role": "TrackAppearance",
+      "format": "Cass, Comp"
+    }
+  ],
+  "releaseCount": 10,
+  "dataQuality": "Correct",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/77554"
+  },
+  "_cachedAt": 1781889341309
+}

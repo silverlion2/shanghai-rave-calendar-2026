@@ -1,0 +1,27 @@
+{
+  "found": true,
+  "id": "371c8525-8111-4497-83ba-1ead9d7ed148",
+  "name": "Derrick May",
+  "sortName": "May, Derrick",
+  "type": "Person",
+  "gender": "male",
+  "country": "US",
+  "disambiguation": "",
+  "lifeSpan": {
+    "begin": "1963-06-04",
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [
+    "electronic",
+    "techno",
+    "detroit techno",
+    "dance and electronica"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 6648
+  },
+  "_cachedAt": 1781887579173
+}

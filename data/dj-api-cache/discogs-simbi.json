@@ -1,0 +1,170 @@
+{
+  "found": true,
+  "id": 4407971,
+  "name": "Simbiatu Ajikawo",
+  "profile": "",
+  "nameVariations": [
+    "Abiola",
+    "S A A Ajikawo",
+    "S. Ajikawo",
+    "Simbi Ajikawo",
+    "Simbiatu Abiola Abisola Ajikawo",
+    "Simbiatu Abiolo Abisola Ajikawo",
+    "Simbiatu Abisola Abiola Ajikawo"
+  ],
+  "members": [],
+  "groups": [
+    "Space Age"
+  ],
+  "urls": [],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/m8L_o8jWDDfSbGTHFkmzbZKFqOWM89X7r_8auuFwfw4/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ0MDc5/NzEtMTQ5MDM5NTk2/NS00NDM0LmpwZWc.jpeg",
+      "width": 500,
+      "height": 500
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Les Inrockuptibles",
+    "Rolling Stone",
+    "Piccadilly Records (2)",
+    "KUTX 98.9 FM, University Of Texas, Austin"
+  ],
+  "releases": [
+    {
+      "title": "DJ-Kicks",
+      "year": 2025,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Lotus",
+      "year": 2025,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Drop 7",
+      "year": 2025,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Paradise Now",
+      "year": 2025,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Satellite Business 2.0",
+      "year": 2024,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Moon Music",
+      "year": 2024,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "We Pray",
+      "year": 2024,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "No Thank You",
+      "year": 2023,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Septembre 2021 - 18 Titres",
+      "year": 2021,
+      "label": "Les Inrockuptibles",
+      "role": "Appearance",
+      "format": "CD, Comp"
+    },
+    {
+      "title": "Best-Of De L'année (Décembre 2021 -> 15 Titres)",
+      "year": 2021,
+      "label": "Les Inrockuptibles",
+      "role": "Appearance",
+      "format": "CD, Comp"
+    },
+    {
+      "title": "Best Of 2021",
+      "year": 2021,
+      "label": "Rolling Stone",
+      "role": "Appearance",
+      "format": "CD, Comp"
+    },
+    {
+      "title": "Sometimes I Might Be Introvert",
+      "year": 2021,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Drop 6",
+      "year": 2020,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Piccadilly Records Compilation 2019",
+      "year": 2019,
+      "label": "Piccadilly Records (2)",
+      "role": "Appearance",
+      "format": "LP, Comp"
+    },
+    {
+      "title": "Rouge",
+      "year": 2019,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Grey Area",
+      "year": 2019,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "KUTX Live! Volume 9",
+      "year": 2017,
+      "label": "KUTX 98.9 FM, University Of Texas, Austin",
+      "role": "Appearance",
+      "format": "CD, Album"
+    },
+    {
+      "title": "Garage Palace",
+      "year": 2017,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Crystal Sky",
+      "year": 2015,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "A Curious Tale Of Trials + Persons",
+      "year": 2015,
+      "label": null,
+      "role": "Appearance"
+    }
+  ],
+  "releaseCount": 20,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/4407971"
+  },
+  "_cachedAt": 1781886641601
+}

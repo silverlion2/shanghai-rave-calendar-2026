@@ -1,0 +1,479 @@
+{
+  "found": true,
+  "id": 253110,
+  "name": "Steve Howe",
+  "profile": "English guitarist, songwriter, engineer and producer, born 8 April 1947 in Holloway, North London, England, UK.\r\n\r\nHe is the father of [a457111] and [a517462].",
+  "nameVariations": [
+    "Guitar Gods - Steve Howe Of Yes",
+    "H",
+    "How",
+    "Howe",
+    "Hower",
+    "S Howe",
+    "S. Howe",
+    "S.Howe",
+    "S.J. Howe",
+    "SH",
+    "Sreve Howe",
+    "Stephen  Howe",
+    "Stephen Howe",
+    "Steve",
+    "Steve Howe - SH",
+    "Steve Howell",
+    "Steve James Howe",
+    "Steven James Howe",
+    "史提夫浩威"
+  ],
+  "members": [],
+  "groups": [
+    "Yes",
+    "Asia (2)",
+    "Anderson Bruford Wakeman Howe",
+    "Tomorrow (2)",
+    "The Syndicats",
+    "Steve Howe's Remedy",
+    "GTR (2)",
+    "The In Crowd (2)",
+    "Canto",
+    "Bodast",
+    "Steve Howe Trio",
+    "Virgil & Steve Howe"
+  ],
+  "urls": [
+    "https://stevehowe.com/",
+    "https://www.facebook.com/guitarrondo",
+    "https://www.youtube.com/user/stevehoweguitarrondo",
+    "https://en.wikipedia.org/wiki/Steve_Howe",
+    "https://www.allmusic.com/artist/steve-howe-mn0000036537",
+    "https://www.progarchives.com/artist.asp?id=1095"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/WsiGqWbEQb_l3hYMa3c_dEJKliqj-3zMabvb8cTqWVc/rs:fit/g:sm/q:90/h:456/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xMjYwNzQyNzQ0/LmpwZWc.jpeg",
+      "width": 600,
+      "height": 456
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/vZaWupuLP6S9oFWgZ9_YBEQCCd_tAbOxF2l8QkvT7n0/rs:fit/g:sm/q:90/h:776/w:564/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwODUy/LTI5NjQuanBlZw.jpeg",
+      "width": 564,
+      "height": 776
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/ISWfYlF-2bW0uF2ow1WE1zsbe1YX432islh1GGlBSvk/rs:fit/g:sm/q:90/h:454/w:576/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwNzk5/LTM3MzkuanBlZw.jpeg",
+      "width": 576,
+      "height": 454
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/grBkR-TeWtJcJR1K8rmgLRpGMDLdwYC2l9KQjcaq7VY/rs:fit/g:sm/q:90/h:581/w:541/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xMjI5MDA1Mjgw/LmpwZWc.jpeg",
+      "width": 541,
+      "height": 581
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/bdAmedWMsXtfVBq7e4E4Y_OncNECaUmVXkjTq26Kc4g/rs:fit/g:sm/q:90/h:214/w:240/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xMTQ2NDc2NTE3/LmpwZWc.jpeg",
+      "width": 240,
+      "height": 214
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/YbD6tP4jztslUkWN5N3gNw25xBoG_U32sk5Q6YYNLIw/rs:fit/g:sm/q:90/h:380/w:304/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xMjYwNzQyNzU0/LmpwZWc.jpeg",
+      "width": 304,
+      "height": 380
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/WwqXjmqCJFlS02DL8AY9UHXKf2FFJGbEfwuOgmK3YJg/rs:fit/g:sm/q:90/h:600/w:425/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xMTU4MjY0NzEy/LmpwZWc.jpeg",
+      "width": 425,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/temidN4tSvDodCDO3JO9Ylj5lzAgSp0Ku8Scf8iXCpY/rs:fit/g:sm/q:90/h:882/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwODI3/LTcwODMuanBlZw.jpeg",
+      "width": 600,
+      "height": 882
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/cQ19NbO6eAwfZDyA6TPIkSNzH4-9LTcMEuRWarovGss/rs:fit/g:sm/q:90/h:616/w:405/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwNzc2/LTU0MDIuanBlZw.jpeg",
+      "width": 405,
+      "height": 616
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/6Iva1og5AYI_y6zkZWiX2tosxclqatLd_ku5Rb4UhUc/rs:fit/g:sm/q:90/h:504/w:340/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwNzc4/LTQ4NjUuanBlZw.jpeg",
+      "width": 340,
+      "height": 504
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/UjPlW3-27RhFgw0rm0QtA12-qqxSUeOuekYgcgG9rrw/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwNzgz/LTgwNTYuanBlZw.jpeg",
+      "width": 500,
+      "height": 500
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/5PxOe-Ab2H1tvNh0F7ye0zEanG-7TsdJNmdSYdk5Cb4/rs:fit/g:sm/q:90/h:749/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwNzg2/LTg2MDMuanBlZw.jpeg",
+      "width": 600,
+      "height": 749
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/JG7nA1ew-QVzvGA1O6pq3s9Ur5LICgida8eqDxQ_b5w/rs:fit/g:sm/q:90/h:400/w:266/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwNzg4/LTUzMzAuanBlZw.jpeg",
+      "width": 266,
+      "height": 400
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/8FSAKAu21g3HV0KZtHi_RDEo9hKFDfaJccY1DGAbXiw/rs:fit/g:sm/q:90/h:183/w:275/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwNzk2/LTkyMDAuanBlZw.jpeg",
+      "width": 275,
+      "height": 183
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/j3WjWMEE94D8tzO6LolKeBtPMOY-2HhSbtMc5SjFcTo/rs:fit/g:sm/q:90/h:506/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwODA1/LTYxNzAuanBlZw.jpeg",
+      "width": 600,
+      "height": 506
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/jnFk94kTC6hYR3XVi-folfpkci3H-Q-bAwgA0ZaWVfU/rs:fit/g:sm/q:90/h:497/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwODA3/LTM3MjIuanBlZw.jpeg",
+      "width": 600,
+      "height": 497
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/arcpy8-E7ZDrKuA4nD_D2QlaCAJXYOKmGG5kstTY5wM/rs:fit/g:sm/q:90/h:402/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwODA5/LTE5MzAuanBlZw.jpeg",
+      "width": 600,
+      "height": 402
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/DqZPQcscfW7JClTXd0qhBELNoJsWQfkHXDTpVorFpDY/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwODEy/LTYzODEuanBlZw.jpeg",
+      "width": 300,
+      "height": 300
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/rvQCmpk7ZRrvrlp7WV8cS_ckfwMMQ-64JSaKPKTDb6I/rs:fit/g:sm/q:90/h:400/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwODE1/LTE0MTMuanBlZw.jpeg",
+      "width": 600,
+      "height": 400
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/eJJQH54xL1HkONle1JKCNgIre_-tI418pPjmbUF-hLc/rs:fit/g:sm/q:90/h:400/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwODIy/LTY0MTUuanBlZw.jpeg",
+      "width": 600,
+      "height": 400
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/Zgs-qOK4N79aaaHt7syr53EZbSUU1PZP2tj5GPzirLM/rs:fit/g:sm/q:90/h:760/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwODMw/LTM0MDkuanBlZw.jpeg",
+      "width": 600,
+      "height": 760
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/8NlLZOHiELQ-mkAa_ecTlJA89UdE2Wej6VLeg0YGRR0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwODMy/LTEzOTguanBlZw.jpeg",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/1MqSlOrX8Qv6kXy3AJ5W3X8nKf0kWz_s2tngnbNQxkk/rs:fit/g:sm/q:90/h:483/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwODM5/LTQ4MjEuanBlZw.jpeg",
+      "width": 500,
+      "height": 483
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/bqwavjwKf0kluLGyQJb2nogijNkudMQGzJBXpNQVnpM/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwODQx/LTEwMzkuanBlZw.jpeg",
+      "width": 600,
+      "height": 450
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/OqKBto06arGd7tbBhLTWMbLN-OYQ7ixrVLTL3nOiHac/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwODQz/LTMxODQuanBlZw.jpeg",
+      "width": 400,
+      "height": 400
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/dqnAipWEmZzEcyXblFreof91oDseY3bqqBum5V7s-H8/rs:fit/g:sm/q:90/h:400/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwODQ5/LTgzOTIuanBlZw.jpeg",
+      "width": 600,
+      "height": 400
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/xZ2ztmc4K8101GzIh7pOyWH_YbPtc9kBBCCk57THBEw/rs:fit/g:sm/q:90/h:622/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwODU1/LTI2MTEuanBlZw.jpeg",
+      "width": 400,
+      "height": 622
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/AtCHOzUdCteeK9PDD6J2OLfPfyE9TVeia2JdLPoFjdw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwODU4/LTkyNjUuanBlZw.jpeg",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/EaYQ7B2WOAsnDNoTWEfnvnyE38bXDZmL9Q2JK4qmdA0/rs:fit/g:sm/q:90/h:407/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwODYw/LTQwMTYuanBlZw.jpeg",
+      "width": 600,
+      "height": 407
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/8EjPebwyjgg-CzFUuKaWOq8ZpbdjCXPUmYCFJ21vxsc/rs:fit/g:sm/q:90/h:400/w:405/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwODYy/LTcyNDAuanBlZw.jpeg",
+      "width": 405,
+      "height": 400
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/ciKT61wtKzi5A9IHDoYQxiunEjl3e-JvvuaJLFu8aic/rs:fit/g:sm/q:90/h:669/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwODY2/LTgxOTYuanBlZw.jpeg",
+      "width": 500,
+      "height": 669
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/wUl4ZH_Bp9Z-gMoH_l50kyFq9o9SG6GtTWYYjn8BXsA/rs:fit/g:sm/q:90/h:399/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwODcx/LTMyNDguanBlZw.jpeg",
+      "width": 600,
+      "height": 399
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/pe5XQM4MeHFhahKwNeJM_uBXcueazvBcDkwHycsNse0/rs:fit/g:sm/q:90/h:399/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwODcz/LTk4OTguanBlZw.jpeg",
+      "width": 600,
+      "height": 399
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/PXiQNr1xO_ETiMTt7_-4gTJGbVA8NHWp4gOaMjqC63E/rs:fit/g:sm/q:90/h:879/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNzIyODA0MTMz/LTgzOTIuanBlZw.jpeg",
+      "width": 600,
+      "height": 879
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/QO8hF0uhyLHvfeNNJO_T2caZyHMSB8lo7jOf4Q1qriM/rs:fit/g:sm/q:90/h:450/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MzEx/MC0xNjYzNTkwNzgw/LTIyMjkuanBlZw.jpeg",
+      "width": 300,
+      "height": 450
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "HoweSound",
+    "Gonzo Multimedia",
+    "The Store For Music",
+    "Tamt Co., Ltd.",
+    "Inside Out Music",
+    "Prism Leisure",
+    "Direct Source Special Products Inc.",
+    "KRB Music Companies",
+    "Resurgence",
+    "Tcg Records",
+    "KPM Music",
+    "CMC International Records",
+    "RPM Records (2)",
+    "RCA Victor"
+  ],
+  "releases": [
+    {
+      "title": "Signals Crossed",
+      "year": 2025,
+      "label": "HoweSound",
+      "role": "Main",
+      "format": "10\", EP, Ltd, Lim"
+    },
+    {
+      "title": "Guitarscape",
+      "year": 2024,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Motif Volume 2  ",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "X Moves",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Homebrew 7",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Love Is",
+      "year": 2020,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "The Relativity Years",
+      "year": 2017,
+      "label": "Gonzo Multimedia",
+      "role": "Main",
+      "format": "CD, Album, RE + CD, Album, RE + Comp"
+    },
+    {
+      "title": "Anthology 2 (Groups & Collaborations)",
+      "year": 2017,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Homebrew 6",
+      "year": 2016,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Anthology (A Solo Career Retrospective)",
+      "year": 2015,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Homebrew 5",
+      "year": 2013,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Time",
+      "year": 2011,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Portraits Of Bob Dylan / Natural Timbre",
+      "year": 2009,
+      "label": "The Store For Music",
+      "role": "Main",
+      "format": "CD, Album, RE + CD, Album, RE + Comp"
+    },
+    {
+      "title": "Complete Of Homebrew ",
+      "year": 2009,
+      "label": "Tamt Co., Ltd.",
+      "role": "Main",
+      "format": "CD, Album, RE + CD, Album, RE + CD, Album, RE + CD"
+    },
+    {
+      "title": "Homebrew 4",
+      "year": 2009,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Motif, Volume 1",
+      "year": 2008,
+      "label": "HoweSound",
+      "role": "Main",
+      "format": "CD, Album"
+    },
+    {
+      "title": "Two In One",
+      "year": 2006,
+      "label": "Inside Out Music",
+      "role": "Main",
+      "format": "Comp, Sli + CD, Album + CD, Album"
+    },
+    {
+      "title": "Homebrew 3",
+      "year": 2005,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Spectrum",
+      "year": 2005,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "The Collection",
+      "year": 2004,
+      "label": "Prism Leisure",
+      "role": "Main",
+      "format": "2xCD, Comp"
+    },
+    {
+      "title": "Guitar World",
+      "year": 2003,
+      "label": "Direct Source Special Products Inc.",
+      "role": "Main",
+      "format": "CD, Comp"
+    },
+    {
+      "title": "Light Walls",
+      "year": 2003,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Homebrew 1&2",
+      "year": 2002,
+      "label": "Inside Out Music",
+      "role": "Main",
+      "format": "CD, Album, RE + CD, Album, RE + Comp, O-C"
+    },
+    {
+      "title": "Masterpiece Guitars",
+      "year": 2002,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Skyline",
+      "year": 2002,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Classic Rock Legends - Steve Howe",
+      "year": 2002,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Original Members Of Yes",
+      "year": 2001,
+      "label": "KRB Music Companies",
+      "role": "Main",
+      "format": "CD, Comp"
+    },
+    {
+      "title": "The 3 Ages Of Magick",
+      "year": 2001,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Natural Timbre",
+      "year": 2001,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Homebrew 2",
+      "year": 2000,
+      "label": null,
+      "role": "Main"
+    }
+  ],
+  "releaseCount": 50,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/253110"
+  },
+  "_cachedAt": 1781884821839
+}

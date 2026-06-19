@@ -1,0 +1,371 @@
+{
+  "found": true,
+  "id": 911822,
+  "name": "Nina Kraviz",
+  "profile": "Berlin-based Nina Kraviz is a Russian producer and DJ. She is a former dentist.\r\nOwner of [l=трип] label.\r\n",
+  "nameVariations": [
+    "Feat.",
+    "Kraviz",
+    "NK",
+    "Nina",
+    "Nina Kravitz",
+    "Нина Kraviz"
+  ],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "http://www.ninakraviz.com",
+    "http://ninakraviz.bandcamp.com",
+    "http://www.facebook.com/NinaKravizMusic",
+    "http://soundcloud.com/nina-kraviz",
+    "http://twitter.com/NinaKraviz",
+    "https://mir-znamenitostej.ru/nina-kravic-biografiya-lichnaya-zhizn-muzh/",
+    "http://www.youtube.com/c/NinaKravizOfficial",
+    "https://en.wikipedia.org/wiki/Nina_Kraviz"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/sKs_Y9sMaJx9M8iBJcoFm4ls7UlohDpcCq9XowCOKUA/rs:fit/g:sm/q:90/h:400/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTkxMTgy/Mi0xNjUyOTA3MTE1/LTg1NDMuanBlZw.jpeg",
+      "width": 600,
+      "height": 400
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/wzxP7B0rKJsmxHP-0uz2ZE9KqrxcQ1LdVscJSu6qK0g/rs:fit/g:sm/q:90/h:483/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTkxMTgy/Mi0xNjUyOTA3MTE2/LTc0MjMuanBlZw.jpeg",
+      "width": 600,
+      "height": 483
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/wPaSdg3PcMZX617-70k47vXO6sO7hqvLAenIEjEEfgw/rs:fit/g:sm/q:90/h:507/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTkxMTgy/Mi0xNDY2MDMzOTEx/LTU5NDEuanBlZw.jpeg",
+      "width": 600,
+      "height": 507
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/3UKP_-RszXtIxIO08CQYqHZoQsyBqmJyBPAPAAXIoRc/rs:fit/g:sm/q:90/h:319/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTkxMTgy/Mi0xNjUyOTA3MTE1/LTYwNzEuanBlZw.jpeg",
+      "width": 600,
+      "height": 319
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/WJJDXyo0wGBCjUWSLlMAa_kDvmkf-G7bB-EUlGdY1Ho/rs:fit/g:sm/q:90/h:399/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTkxMTgy/Mi0xNjUyOTA2OTcx/LTY0OTQuanBlZw.jpeg",
+      "width": 600,
+      "height": 399
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/Jen8Iqz2lmFsfYuFQzu61TVJ69u3vZLWvAOjGmSxTIA/rs:fit/g:sm/q:90/h:900/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTkxMTgy/Mi0xNTMyNDk2MjI0/LTgxMTMuanBlZw.jpeg",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/vJAw6yT8fEgSPv9ZMRb69w13E8rzUSlRWwmLhESIBF0/rs:fit/g:sm/q:90/h:749/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTkxMTgy/Mi0xNDc2OTkwNDc3/LTk0NjQucG5n.jpeg",
+      "width": 600,
+      "height": 749
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/ZqIdPWFRC_qoedW4dxIiRPYIA5Ir7TeqojHBeru4f7c/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTkxMTgy/Mi0xNjUyOTA3MTE1/LTU3MTMuanBlZw.jpeg",
+      "width": 600,
+      "height": 595
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/-IcCvpeYKXAJAL44rSSVEuX9AEVMA5P1n6VMbdF5bp4/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTkxMTgy/Mi0xNjUyOTA3MTE1/LTQ0MTcuanBlZw.jpeg",
+      "width": 600,
+      "height": 598
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/i2cQ9SAPssl8pzx7tHuoi6xAyXGaJFVHyQn40a9FxDU/rs:fit/g:sm/q:90/h:900/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTkxMTgy/Mi0xMTk1OTQ3NjMy/LmpwZWc.jpeg",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/IkPnvc0kTM_QLLsSLo6cXStzh2wEk0LnKEsVBKN3lrA/rs:fit/g:sm/q:90/h:899/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTkxMTgy/Mi0xMTk1OTQ3NjIx/LmpwZWc.jpeg",
+      "width": 600,
+      "height": 899
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/3834ulGaERSrfm7iuPKhbXbGT83Q7zbjGXAFUj5LzYI/rs:fit/g:sm/q:90/h:897/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTkxMTgy/Mi0xMTk1OTQ3NjEx/LmpwZWc.jpeg",
+      "width": 600,
+      "height": 897
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/7advwjQCENl8MGasRR54-AzOkGYlWvXmc2U9qZUCcbI/rs:fit/g:sm/q:90/h:541/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTkxMTgy/Mi0xMzMyNzIxMzgy/LmpwZWc.jpeg",
+      "width": 600,
+      "height": 541
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/svTlQSlE-PWUNj7YhlX9-hZUC92kdducSwYDHGf7aUI/rs:fit/g:sm/q:90/h:265/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTkxMTgy/Mi0xMzQxODEwODg4/LTgxOTUuanBlZw.jpeg",
+      "width": 600,
+      "height": 265
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/xsEGU8Cl-CTftTCIAk_-BOHg-Xw93i7Gh_-5S9UtYSc/rs:fit/g:sm/q:90/h:594/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTkxMTgy/Mi0xNDc5NjU4NTMx/LTQxNzcucG5n.jpeg",
+      "width": 594,
+      "height": 594
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/H6toGkD8pQshJWn-8V-ehEi9KXyT1C9UaT2kg0tpBOw/rs:fit/g:sm/q:90/h:690/w:573/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTkxMTgy/Mi0xNDQ3MzIyNjc0/LTQxNzEuanBlZw.jpeg",
+      "width": 573,
+      "height": 690
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/OTKEBVud9LUlIvAD4AXkRQtKRp2qD-VUUjpDmAyXr_k/rs:fit/g:sm/q:90/h:353/w:530/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTkxMTgy/Mi0xMzI4MDI1Mzgz/LmpwZWc.jpeg",
+      "width": 530,
+      "height": 353
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/Jy-UKixHNdVyM_VKwseMKzUxjsUejvprJZyLJBovNso/rs:fit/g:sm/q:90/h:299/w:448/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTkxMTgy/Mi0xMzcyNzk0ODEx/LTgxMzIuanBlZw.jpeg",
+      "width": 448,
+      "height": 299
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/tq99-p49jifdABvmuOTUwHY4hYUoDkrlX0Fgotm-OoU/rs:fit/g:sm/q:90/h:320/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTkxMTgy/Mi0xMzQxODExOTM2/LTQxNjYuanBlZw.jpeg",
+      "width": 400,
+      "height": 320
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/v8er3zAGuKzLtLxjz8i_c1r3u-daijj3n5BOSLPd9qM/rs:fit/g:sm/q:90/h:330/w:330/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTkxMTgy/Mi0xMzQxODEwODEz/LTM4MDkuanBlZw.jpeg",
+      "width": 330,
+      "height": 330
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "treats (2)",
+    "Siberia Records",
+    "Ediciones Inauditas",
+    "трип",
+    "Nina Kraviz Music",
+    "Columbia",
+    "Not On Label (Captain GR Self-released)",
+    "Lakeshore Records",
+    "Loma Vista",
+    "Rekids",
+    "Resident Advisor",
+    "Mixmag",
+    "Rosa (2)",
+    "Not On Label"
+  ],
+  "releases": [
+    {
+      "title": "treats 001",
+      "year": 2026,
+      "label": "treats (2)",
+      "role": "Main",
+      "format": "12\", EP, Whi"
+    },
+    {
+      "title": "Y&I (Save You Online)",
+      "year": 2025,
+      "label": "Siberia Records",
+      "role": "Main",
+      "format": "File, MP3, Single, 320"
+    },
+    {
+      "title": "It's All Breaking Apart",
+      "year": 2024,
+      "label": "Ediciones Inauditas",
+      "role": "Main",
+      "format": "LP, Ltd, Gat"
+    },
+    {
+      "title": "Tarde Remixes",
+      "year": 2024,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Tarde Remixes 2",
+      "year": 2024,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "White Horse",
+      "year": 2023,
+      "label": "трип",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Bailando",
+      "year": 2023,
+      "label": "Nina Kraviz Music",
+      "role": "Main",
+      "format": "3xFile, MP3, 320"
+    },
+    {
+      "title": "Sex In The Machine Take 2",
+      "year": 2023,
+      "label": "Columbia",
+      "role": "Main",
+      "format": "2xFile, FLAC, Single, 24-"
+    },
+    {
+      "title": "Tarde (Remixes)",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Taxi Talk",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Hace Ejercicios",
+      "year": 2022,
+      "label": "трип",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "You Gonna Be Mine (Captain GR Remix)",
+      "year": 2022,
+      "label": "Not On Label (Captain GR Self-released)",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Cyberpunk 2077: Radio, Vol. 4 (Original Soundtrack)",
+      "year": 2021,
+      "label": "Lakeshore Records",
+      "role": "Main",
+      "format": "5xFile, FLAC, Album"
+    },
+    {
+      "title": "This Time",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Skyscrapers",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Three",
+      "year": 2020,
+      "label": "Loma Vista",
+      "role": "Main",
+      "format": "12\", W/Lbl"
+    },
+    {
+      "title": "Two",
+      "year": 2020,
+      "label": "Loma Vista",
+      "role": "Main",
+      "format": "12\", Ltd, Promo, W/Lbl"
+    },
+    {
+      "title": "One",
+      "year": 2020,
+      "label": "Loma Vista",
+      "role": "Main",
+      "format": "12\", Ltd, Promo, W/Lbl"
+    },
+    {
+      "title": "Stranno Neobjatno",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Feel My Butterfly",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Nina Kraviz Presents Masseduction Rewired",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "TRP ADE 2018 PT2",
+      "year": 2018,
+      "label": "трип",
+      "role": "Main",
+      "format": "12\", Ltd, W/Lbl"
+    },
+    {
+      "title": "TRP ADE PT 1",
+      "year": 2017,
+      "label": "трип",
+      "role": "Main",
+      "format": "12\", S/Sided, Ltd, W/Lbl, Cle"
+    },
+    {
+      "title": "Pochuvstvui",
+      "year": 2017,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Ghetto Kraviz (DJ Slugo Remixes)",
+      "year": 2016,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Fabric 91",
+      "year": 2016,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "The Remixes",
+      "year": 2015,
+      "label": "Rekids",
+      "role": "Main",
+      "format": "11xFile, MP3, Album, 320"
+    },
+    {
+      "title": "RA.EX235 Nina Kraviz",
+      "year": 2015,
+      "label": "Resident Advisor",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "DJ-Kicks",
+      "year": 2015,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Ghetto Kraviz (Regal Remixes)",
+      "year": 2015,
+      "label": null,
+      "role": "Main"
+    }
+  ],
+  "releaseCount": 50,
+  "dataQuality": "Correct",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/911822"
+  },
+  "_cachedAt": 1781881084745
+}

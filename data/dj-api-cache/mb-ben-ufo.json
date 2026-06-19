@@ -1,0 +1,27 @@
+{
+  "found": true,
+  "id": "d355730f-895c-4a9a-951b-d36c3b16a8a2",
+  "name": "Ben UFO",
+  "sortName": "Ben UFO",
+  "type": "Person",
+  "gender": "male",
+  "country": "GB",
+  "disambiguation": "",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [
+    "house",
+    "techno",
+    "dj",
+    "uk bass",
+    "post-dubstep"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 20226
+  },
+  "_cachedAt": 1781887505657
+}

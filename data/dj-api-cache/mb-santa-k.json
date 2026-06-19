@@ -1,0 +1,44 @@
+{
+  "found": true,
+  "id": "569c0d90-28dd-413b-83e4-aaa7c27e667b",
+  "name": "J. K. Rowling",
+  "sortName": "Rowling, J. K.",
+  "type": "Person",
+  "gender": "female",
+  "country": "GB",
+  "disambiguation": "English novelist",
+  "lifeSpan": {
+    "begin": "1965-07-31",
+    "ended": null
+  },
+  "aliases": [
+    "Joanne K. Rowling",
+    "Joanne Rowling",
+    "Joanne Kathleen Rowling",
+    "Джоан Роулинг",
+    "J.K.Rowling",
+    "J. K. Rowling",
+    "Robert Galbraith"
+  ],
+  "tags": [
+    "british",
+    "uk",
+    "fantasy",
+    "audiobook",
+    "english",
+    "author",
+    "deu",
+    "non-musician",
+    "has german audiobooks",
+    "fascist",
+    "transphobe",
+    "terf",
+    "queerphobe"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 7374
+  },
+  "_cachedAt": 1781889548858
+}

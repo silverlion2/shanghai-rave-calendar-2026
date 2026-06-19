@@ -1,0 +1,313 @@
+{
+  "found": true,
+  "id": 60141,
+  "name": "Honey Dijon",
+  "profile": "Honey Redmond, (born in 1968), known professionally as Honey Dijon, is an American DJ, producer, and electronic musician.",
+  "nameVariations": [
+    "Dijon",
+    "H. Dijon",
+    "Miss Honey Dijon"
+  ],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "http://honeydijon.bandcamp.com",
+    "http://www.facebook.com/DJHoneyDijon",
+    "http://www.instagram.com/honeydijon",
+    "http://linktr.ee/honeydijon",
+    "http://www.songkick.com/artists/2376006-honey-dijon",
+    "http://soundcloud.com/honeydijon",
+    "http://twitter.com/HONEYDIJON",
+    "http://www.whosampled.com/Honey-Dijon",
+    "http://en.wikipedia.org/wiki/Honey_Dijon",
+    "http://www.youtube.com/user/honeyd119",
+    "http://www.youtube.com/channel/UCLoyUoHBcUVbEvygJHggJoQ"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/Q13sz_xOCq1hEt4-nfeRjTq0pA9lvgLOuz5stYUkE98/rs:fit/g:sm/q:90/h:889/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTYwMTQx/LTE2NzUwOTAzOTUt/MjY5NC5qcGVn.jpeg",
+      "width": 600,
+      "height": 889
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/v0-wxRAwnBka0DtcFtFlYPphnWyZmKEh0Ce4KUyecwg/rs:fit/g:sm/q:90/h:400/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTYwMTQx/LTE2NzUwOTA0NTkt/Mjg2MC5qcGVn.jpeg",
+      "width": 600,
+      "height": 400
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/DhKbCtsXQ5QY-fF2BrkCOlF3A9vOZeSQq0LR3kQhAws/rs:fit/g:sm/q:90/h:400/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTYwMTQx/LTE2NzUwOTAzODct/Mzk0Mi5qcGVn.jpeg",
+      "width": 600,
+      "height": 400
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/g1nsW1lRfLIjCN70789LPoRATPZjrHZXpiGukW-_qXk/rs:fit/g:sm/q:90/h:315/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTYwMTQx/LTE2NzUwOTA0MTUt/MTk1OC5qcGVn.jpeg",
+      "width": 600,
+      "height": 315
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/N1sRPw5LJinLgo8xXvxm56pLn_HxDsmdJHHIcTQ6BXg/rs:fit/g:sm/q:90/h:400/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTYwMTQx/LTE2NzUwOTA0MzUt/MjY1Ny5qcGVn.jpeg",
+      "width": 600,
+      "height": 400
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/xYoQzDUnlbCzU9rnd8mpUN4-4nb8IltKq85UUWQSSPc/rs:fit/g:sm/q:90/h:705/w:529/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTYwMTQx/LTE2NzUwOTA0NDYt/NTA0Ni5qcGVn.jpeg",
+      "width": 529,
+      "height": 705
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/StHmMK9sna_LbHpM9XV7DevUru82j4TtVaNwNB1OYRg/rs:fit/g:sm/q:90/h:300/w:214/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTYwMTQx/LTEyODcwMjQzNDgu/anBlZw.jpeg",
+      "width": 214,
+      "height": 300
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/difh_Q98WYCCSu1AwEiZF25I6S0Bxfr5NED2vKaupGQ/rs:fit/g:sm/q:90/h:480/w:320/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTYwMTQx/LTExNzUzNTA4MzQu/anBlZw.jpeg",
+      "width": 320,
+      "height": 480
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/OU5XuKeHIwfoknt2uv_QqMTzRKvg_VyNoN2Oz5GLjvU/rs:fit/g:sm/q:90/h:864/w:591/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTYwMTQx/LTEyODcwMjQzOTcu/anBlZw.jpeg",
+      "width": 591,
+      "height": 864
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/UvY4QWs3YarfQHmK2nmUcbah9Xse5oXwR6_C--xA1Rk/rs:fit/g:sm/q:90/h:231/w:166/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTYwMTQx/LTEyODcwMjQzMzYu/anBlZw.jpeg",
+      "width": 166,
+      "height": 231
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Someothershit",
+    "Young (5)",
+    "Classic",
+    "Nervous Records",
+    "Not On Label",
+    "Fresh Selects",
+    "Resident Advisor",
+    "Stereo Cool!",
+    "Mile End Records",
+    "Toolroom Trax",
+    "Not On Label (Honey Dijon Self-released)",
+    "UMe, Global Clearing House",
+    "Turbo",
+    "Defected",
+    "DMC, DMC, DMC",
+    "Armada (4)"
+  ],
+  "releases": [
+    {
+      "title": "Slight Werk",
+      "year": 2026,
+      "label": "Someothershit",
+      "role": "Main",
+      "format": "2xFile, FLAC, Single, 24-"
+    },
+    {
+      "title": "Just Friends",
+      "year": 2026,
+      "label": "Someothershit",
+      "role": "Main",
+      "format": "File, FLAC, Single, 24-"
+    },
+    {
+      "title": "Bring Your Love (Honey Dijon Remixes)",
+      "year": 2026,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "The Nightlife",
+      "year": 2026,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "The Nightlife",
+      "year": 2025,
+      "label": "Someothershit",
+      "role": "Main",
+      "format": "12\", Single"
+    },
+    {
+      "title": "Baddy On The Floor",
+      "year": 2024,
+      "label": "Young (5)",
+      "role": "Main",
+      "format": "File, FLAC, Single, Hi-"
+    },
+    {
+      "title": "DJ-Kicks",
+      "year": 2024,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Stand",
+      "year": 2023,
+      "label": "Classic",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Feel So Right (Remixes)",
+      "year": 2023,
+      "label": "Nervous Records",
+      "role": "Main",
+      "format": "5xFile, MP3, 320"
+    },
+    {
+      "title": "Jimmy Choo × Pretty Guardian Sailor Moon",
+      "year": 2023,
+      "label": "Not On Label",
+      "role": "Main",
+      "format": "12\", Single, Ltd, Pin"
+    },
+    {
+      "title": "Slap!",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Love Is A State Of Mind",
+      "year": 2022,
+      "label": "Classic",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Let’s Work",
+      "year": 2022,
+      "label": "Classic",
+      "role": "Main",
+      "format": "12\", Ora"
+    },
+    {
+      "title": "Show Me Some Love",
+      "year": 2022,
+      "label": "Classic",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Black Girl Magic",
+      "year": 2022,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Downtown",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Buddy X (Honey Dijon Remix)",
+      "year": 2020,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Not About You",
+      "year": 2020,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "La Femme Fantastique",
+      "year": 2020,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Bird Of Paradise / Faultline (Remix)",
+      "year": 2019,
+      "label": "Fresh Selects",
+      "role": "Main",
+      "format": "6xFile, AAC, WAV, Maxi, Single"
+    },
+    {
+      "title": "RA.657",
+      "year": 2018,
+      "label": "Resident Advisor",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "Xtra EP",
+      "year": 2018,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Stars",
+      "year": 2018,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Personal Slave",
+      "year": 2017,
+      "label": "Classic",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "The Best Of Both Worlds",
+      "year": 2017,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Look Ahead",
+      "year": 2017,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Houze",
+      "year": 2016,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Double Header",
+      "year": 2015,
+      "label": "Classic",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Burn",
+      "year": 2015,
+      "label": "Classic",
+      "role": "Main",
+      "format": "3xFile, MP3, 320"
+    },
+    {
+      "title": "Thunda",
+      "year": 2015,
+      "label": "Classic",
+      "role": "Main",
+      "format": "3xFile, MP3, 320"
+    }
+  ],
+  "releaseCount": 50,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/60141"
+  },
+  "_cachedAt": 1781881128594
+}

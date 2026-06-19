@@ -1,0 +1,312 @@
+{
+  "found": true,
+  "id": 494117,
+  "name": "Marcel Dettmann",
+  "profile": "Born on the 26th of October 1977 in Pössneck (Thüringen), DJ since 1994, he is resident of the Berlin club [l=Berghain] and runs the labels [l=Marcel Dettmann Records] and [l=Bad Manners Records].",
+  "nameVariations": [
+    "Dettman",
+    "Dettmann",
+    "MD",
+    "Marcel Dettman",
+    "Marcell Dettmann"
+  ],
+  "members": [],
+  "groups": [
+    "Deuce (17)",
+    "S/D",
+    "Rauch (3)"
+  ],
+  "urls": [
+    "http://www.facebook.com/marceldettmannofficial",
+    "http://www.instagram.com/MarcelDettmann",
+    "http://www.lastfm.de/music/Marcel+Dettmann?ac=marcel+dettmann",
+    "http://linktr.ee/Marceldettmann",
+    "http://www.myspace.com/marceldettmann",
+    "http://soundcloud.com/marceldettmann",
+    "http://twitter.com/MarcelDettmann"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/3G273XwpLXm1m4BcWayY7mZ-PuRiMlmcU_k-fLZ6T04/rs:fit/g:sm/q:90/h:807/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ5NDEx/Ny0xNzUyODUzOTMz/LTQzMDgucG5n.jpeg",
+      "width": 600,
+      "height": 807
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/OX3CdoHZvAFoTmguRnB5PPgauLsNLEga74uM61JVrvw/rs:fit/g:sm/q:90/h:401/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ5NDEx/Ny0xMjcwNTI0NzIy/LmpwZWc.jpeg",
+      "width": 600,
+      "height": 401
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/wY8TYBuUDsfQbDczih6pn8dhH_TK4qCa8nnqsYGRFGo/rs:fit/g:sm/q:90/h:531/w:421/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ5NDEx/Ny0xNTMzMjQ4MTE2/LTI5MjMuanBlZw.jpeg",
+      "width": 421,
+      "height": 531
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/xPM6hlxFOIGlt0AsUxmFwS9-AmAe68vXMLXTq_J1T_U/rs:fit/g:sm/q:90/h:748/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ5NDEx/Ny0xNTMzMjQ4MTMx/LTMyNzguanBlZw.jpeg",
+      "width": 600,
+      "height": 748
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/6zXKGeYRi7ZznU052a8ErznJYM1k3vYVMc_LanJGuwM/rs:fit/g:sm/q:90/h:899/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ5NDEx/Ny0xNTcxODc0ODU4/LTQzMTguanBlZw.jpeg",
+      "width": 600,
+      "height": 899
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/vUDf0LLz5kEoFVRlzHs1eBwhKPOauK-fa_0BfU4azNY/rs:fit/g:sm/q:90/h:371/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ5NDEx/Ny0xNDA4NTM3NDk1/LTIwOTguanBlZw.jpeg",
+      "width": 500,
+      "height": 371
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/3v-fZTBxrkZvXt24shGa3IqMlyEO14fElJf2ao_Rh7o/rs:fit/g:sm/q:90/h:338/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ5NDEx/Ny0xNDA4NTM3NDg0/LTM0NDcuanBlZw.jpeg",
+      "width": 600,
+      "height": 338
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/eRQgJRbnTzeBIKb0cXwWEhItDx9FnQBuc77JxEszkp0/rs:fit/g:sm/q:90/h:424/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ5NDEx/Ny0xMjA4NDU2NzYy/LmpwZWc.jpeg",
+      "width": 300,
+      "height": 424
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/w5FS6EmoKWh_xe8CA9bIFmlILqEGemNpNwDpJWqH_ro/rs:fit/g:sm/q:90/h:401/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ5NDEx/Ny0xMjcwNTI0Njkz/LmpwZWc.jpeg",
+      "width": 600,
+      "height": 401
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/CrHy-Ymho5rGK1snCRZ3ibAZKlWb4BgT5g_Dywq7Zlg/rs:fit/g:sm/q:90/h:600/w:402/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ5NDEx/Ny0xMjcxNjE5NTUz/LmpwZWc.jpeg",
+      "width": 402,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/EETuaDdJym37bLt4i1vnDH2tCkVApWThSzLXbdhFEmc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ5NDEx/Ny0xNTM4NjQ2NjE4/LTI4NTkuanBlZw.jpeg",
+      "width": 600,
+      "height": 600
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Dekmantel",
+    "Seilscheibenpfeiler",
+    "Faith Beat",
+    "Bad Manners Records",
+    "Tsugi",
+    "The Corner",
+    "Ostgut Ton",
+    "CLR (2)",
+    "Kontra-Musik",
+    "Music Man Records",
+    "FACT Magazine",
+    "Diamonds & Pearls Music",
+    "Resident Advisor",
+    "Go Mag"
+  ],
+  "releases": [
+    {
+      "title": "Fear Of Programming Remixes",
+      "year": 2025,
+      "label": "Dekmantel",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Running Back Mastermix: Marcel Dettmann - Edits+Cuts",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Electric Drive",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Fear Of Programming",
+      "year": 2022,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Command EP",
+      "year": 2021,
+      "label": "Seilscheibenpfeiler",
+      "role": "Main",
+      "format": "12\", EP, Ltd, 180"
+    },
+    {
+      "title": "The State Of Art EP",
+      "year": 2021,
+      "label": "Faith Beat",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Bad Manners 3",
+      "year": 2019,
+      "label": "Bad Manners Records",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "October 2018",
+      "year": 2018,
+      "label": "Tsugi",
+      "role": "Main",
+      "format": "CD, Mixed, Promo"
+    },
+    {
+      "title": "Issue N° Twenty Two",
+      "year": 2018,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Test-File",
+      "year": 2018,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Phantom Studies",
+      "year": 2017,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Selectors 003",
+      "year": 2017,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Rauch",
+      "year": 2017,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Can You See (DJ-Kicks)",
+      "year": 2016,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "DJ-Kicks",
+      "year": 2016,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "MDR 19",
+      "year": 2016,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Dekmantel Podcast 001",
+      "year": 2015,
+      "label": "Dekmantel",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "Activator / Namuan",
+      "year": 2015,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Bloodlines ",
+      "year": 2014,
+      "label": "The Corner",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Masse Remixes II",
+      "year": 2014,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Fabric 77",
+      "year": 2014,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Planetary Assault Systems Remixes",
+      "year": 2014,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Seduction",
+      "year": 2014,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Dawning / Dawning (Revisited)",
+      "year": 2013,
+      "label": "Ostgut Ton",
+      "role": "Main",
+      "format": "12\", Ltd, Whi"
+    },
+    {
+      "title": "Untitled",
+      "year": 2013,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Linux / Ellipse",
+      "year": 2013,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Dettmann II",
+      "year": 2013,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Corebox - James Ruskin Mixes",
+      "year": 2013,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "CLR Podcast 179",
+      "year": 2012,
+      "label": "CLR (2)",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "Range EP",
+      "year": 2012,
+      "label": null,
+      "role": "Main"
+    }
+  ],
+  "releaseCount": 50,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/494117"
+  },
+  "_cachedAt": 1781887398792
+}

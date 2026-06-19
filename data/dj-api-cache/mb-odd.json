@@ -1,0 +1,33 @@
+{
+  "found": true,
+  "id": "af256aa5-4bc7-4aca-9b89-55ca26fe5468",
+  "name": "Odd Nosdam",
+  "sortName": "Odd Nosdam",
+  "type": "Person",
+  "gender": "male",
+  "country": "US",
+  "disambiguation": "",
+  "lifeSpan": {
+    "begin": "1976",
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [
+    "dub",
+    "instrumental hip hop",
+    "experimental hip hop",
+    "drone",
+    "illbient",
+    "abstract hip hop",
+    "instrumental hip-hop",
+    "hip-hop",
+    "ambient",
+    "alternative hip hop"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 3261
+  },
+  "_cachedAt": 1781889097717
+}

@@ -1,0 +1,26 @@
+{
+  "found": true,
+  "id": "bbf764e0-3e1b-405c-b42d-77217db2a990",
+  "name": "Koldo",
+  "sortName": "Koldo",
+  "type": "Person",
+  "gender": "male",
+  "country": "ES",
+  "disambiguation": "",
+  "lifeSpan": {
+    "begin": "1942-03-01",
+    "ended": null
+  },
+  "aliases": [
+    "Miguel Ángel",
+    "Miguel Angel",
+    "José Luis Miñaur"
+  ],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 9
+  },
+  "_cachedAt": 1781889346545
+}

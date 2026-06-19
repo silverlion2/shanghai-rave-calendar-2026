@@ -1,0 +1,216 @@
+{
+  "found": true,
+  "id": 350587,
+  "name": "Saturn V",
+  "profile": "DJ and producer duo, comprised of [a=dabrye] (T. Mullinix) and Melvin Oliphant (aka Jakt, Traxx, Mysterio)",
+  "nameVariations": [],
+  "members": [
+    "Tadd Mullinix",
+    "Melvin Oliphant"
+  ],
+  "groups": [],
+  "urls": [
+    "http://www.myspace.com/saturnfive",
+    "https://web.archive.org/web/20090616132756/http://jak-nation.com/index.php?id=34"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/nfaXCLM-YBRqfplLV9AW1ZgpNAIAqiYYz7rXrQ5p6S0/rs:fit/g:sm/q:90/h:293/w:280/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM1MDU4/Ny0xNjU3NjAxMDUx/LTUyNTguanBlZw.jpeg",
+      "width": 280,
+      "height": 293
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Nation",
+    "Crème Organization",
+    "Relief Records",
+    "Giaguaro Records",
+    "Resident Advisor",
+    "Substance (6)",
+    "Macadam Mambo Podcast",
+    "mnml ssgs",
+    "Little White Earbuds",
+    "Spectral Sound"
+  ],
+  "releases": [
+    {
+      "title": "Rhythm Relics",
+      "year": 2011,
+      "label": "Nation",
+      "role": "Main",
+      "format": "10\""
+    },
+    {
+      "title": "Your Mind",
+      "year": 2007,
+      "label": "Crème Organization",
+      "role": "Main",
+      "format": "12\", S/Sided, Ltd"
+    },
+    {
+      "title": "Primitive Cypher",
+      "year": 2006,
+      "label": "Relief Records",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Stranger In The Strangest Of Lands",
+      "year": 2006,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Faith",
+      "year": 2009,
+      "label": null,
+      "role": "Producer"
+    },
+    {
+      "title": "Collision Between Us And The Damned",
+      "year": 2006,
+      "label": null,
+      "role": "Producer"
+    },
+    {
+      "title": "International DeeJay Gigolos CD Nine",
+      "year": 2006,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Il Giaguaro In Tour: The Wild Weekend",
+      "year": 2004,
+      "label": "Giaguaro Records",
+      "role": "Appearance",
+      "format": "DVD-V, PAL"
+    },
+    {
+      "title": "Le Trilliardaire Mix - Oct. 2005",
+      "year": 2026,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "RA.608",
+      "year": 2018,
+      "label": "Resident Advisor",
+      "role": "TrackAppearance",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "RA.627",
+      "year": 2018,
+      "label": "Resident Advisor",
+      "role": "TrackAppearance",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "The Modern Electronic Element Series III",
+      "year": 2015,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Substance Mixtape Series Vol.11",
+      "year": 2014,
+      "label": "Substance (6)",
+      "role": "TrackAppearance",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "Jak The Box",
+      "year": 2010,
+      "label": "Crème Organization",
+      "role": "TrackAppearance",
+      "format": "11x12\", Ltd, Box"
+    },
+    {
+      "title": "Un Soir De Pluie",
+      "year": 2010,
+      "label": "Macadam Mambo Podcast",
+      "role": "TrackAppearance",
+      "format": "File, MP3, Mixed, Promo, 192"
+    },
+    {
+      "title": "Ssg Special - June",
+      "year": 2010,
+      "label": "mnml ssgs",
+      "role": "TrackAppearance",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "FabricLive.51",
+      "year": 2010,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "LWE Podcast 15",
+      "year": 2009,
+      "label": "Little White Earbuds",
+      "role": "TrackAppearance",
+      "format": "File, MP3, Comp, Mixed, 192"
+    },
+    {
+      "title": "LWE Podcast 19",
+      "year": 2009,
+      "label": "Little White Earbuds",
+      "role": "TrackAppearance",
+      "format": "File, MP3, Comp, Mixed, 192"
+    },
+    {
+      "title": "The New Megachurch Of Gigolo Megamix",
+      "year": 2009,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "The Modern Electronic Element EP (Serie 1)",
+      "year": 2008,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Like No One",
+      "year": 2008,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "International DeeJay Gigolos CD Nine",
+      "year": 2006,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Acid Mix",
+      "year": 2005,
+      "label": "Spectral Sound",
+      "role": "TrackAppearance",
+      "format": "CDr, Mixed, Promo"
+    },
+    {
+      "title": "The House Of Muzique",
+      "year": 2005,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Le Trilliardaire Mix",
+      "year": 2005,
+      "label": null,
+      "role": "UnofficialRelease"
+    }
+  ],
+  "releaseCount": 26,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/350587"
+  },
+  "_cachedAt": 1781889135294
+}

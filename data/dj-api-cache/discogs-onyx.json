@@ -1,0 +1,387 @@
+{
+  "found": true,
+  "id": 39829,
+  "name": "Onyx",
+  "profile": "Hiphop group hailing from Queens New York.\r\nPut on by [a=Jam Master Jay] in the early 90's Onyx had massive success on the Hiphop scene with their \"Bacdafucup\" LP and the huge singles \"Slam\" and \"Throw Ya Gunz\".\r\nThey released more records as a group and members Sticky Fingaz and Fredro Starr have gone on to some solo success, Fredro as an actor in the TV-Show \"Moesha\" which also featured [a=Brandy (2)].",
+  "nameVariations": [
+    "Afficial Nastee",
+    "Onix",
+    "Onyz"
+  ],
+  "members": [
+    "DJ LS One",
+    "Kirk Jones",
+    "Fredro Scruggs Jr.",
+    "Tyrone Taylor (2)",
+    "Marlon Fletcher",
+    "Chylow Parker"
+  ],
+  "groups": [],
+  "urls": [
+    "https://www.onyxhq.com/",
+    "http://www.onyxdomain.com/",
+    "http://en.wikipedia.org/wiki/Onyx_(group)",
+    "http://www.facebook.com/onyxhq/",
+    "https://genius.com/artists/Onyx",
+    "https://www.instagram.com/onyx_hq"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/J6oEZyuK3EECjVz5bNP8wLWyfeUCoki5egR_z2Yzc74/rs:fit/g:sm/q:90/h:750/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM5ODI5/LTE2OTc2MjM5Mzkt/NjEwNS5qcGVn.jpeg",
+      "width": 600,
+      "height": 750
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/Mymgsc0wbs4CI8RauKG7Udrcp2OKg8sZGceIN8Wd2Ek/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM5ODI5/LTE0NzY1NDY5NjMt/MTIwMi5qcGVn.jpeg",
+      "width": 600,
+      "height": 597
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/H98VCl8_MpR--lGGTYFZUNCLCfsXt102_H5Hxx_aVm8/rs:fit/g:sm/q:90/h:457/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM5ODI5/LTE0MzkwNTQyMjkt/Njg0MS5qcGVn.jpeg",
+      "width": 600,
+      "height": 457
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/9lJC2MaLKggGQoZTg8uo_79bfzCv626prdylqQsRZFs/rs:fit/g:sm/q:90/h:360/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM5ODI5/LTE1MTg1NDg2MzQt/MjA4OS5qcGVn.jpeg",
+      "width": 600,
+      "height": 360
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/xKZ74sPNw0rarNPVBP3YhIq81itwNip6G31RuzaBo-w/rs:fit/g:sm/q:90/h:929/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM5ODI5/LTE2NjM2MzkzMDEt/ODAyOS5qcGVn.jpeg",
+      "width": 600,
+      "height": 929
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/rwRPbjiANivxwAOUcjW9eEAnmvBMbH2zaK1avGQ-wpg/rs:fit/g:sm/q:90/h:442/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM5ODI5/LTE0MzkwNTQyODAt/ODMzOC5qcGVn.jpeg",
+      "width": 500,
+      "height": 442
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/lhnxjX-nUbs93_AM5Et74IBj4DFpVV0oohhSZ7YKyfQ/rs:fit/g:sm/q:90/h:751/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM5ODI5/LTE1MDk4ODA3OTQt/MTM2Ni5qcGVn.jpeg",
+      "width": 600,
+      "height": 751
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/6m6kUmk1ESKHwDE8b1cCCmQo36o8ibdeWmIY2Whzba8/rs:fit/g:sm/q:90/h:438/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM5ODI5/LTE0MzkwNTQxNDgt/MTEwOS5qcGVn.jpeg",
+      "width": 400,
+      "height": 438
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/KCbd_fUZArK_JsH1xTXFc9UEgtlIbCGm1uLbjyntMdI/rs:fit/g:sm/q:90/h:582/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM5ODI5/LTE0OTI5MDk0OTgt/MTM2NS5qcGVn.jpeg",
+      "width": 600,
+      "height": 582
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/ycvRUqWrVoRI9nBWVUfz7zWMmabsN0f_l9wXmoEXMnQ/rs:fit/g:sm/q:90/h:820/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM5ODI5/LTE0MzkwNTQwMzIt/MTI5Ni5wbmc.jpeg",
+      "width": 600,
+      "height": 820
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/hWTJb8tN7XAlmPecAbzceqhDzCddOA3ZTAgdw9isX3c/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM5ODI5/LTE0MzkwNTQwMzgt/NjA2NS5qcGVn.jpeg",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/WymMq9GeTdMljKKBJpjAV2T7tlkXT2s3SJUD0Ps8SAw/rs:fit/g:sm/q:90/h:404/w:468/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM5ODI5/LTE0MzkwNTQwNDct/NzM4Mi5qcGVn.jpeg",
+      "width": 468,
+      "height": 404
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/jpyU3z7YsidzhRfzYKOhzgNWoBRWMiOLjWHpp09qj_o/rs:fit/g:sm/q:90/h:720/w:559/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM5ODI5/LTE0MzkwNTQxMzUt/NDM4OC5qcGVn.jpeg",
+      "width": 559,
+      "height": 720
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/U3lxYEr0NKjfec0lt01AAnXwQdNfGf66RwKMfRWM72U/rs:fit/g:sm/q:90/h:580/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM5ODI5/LTE2MzU3NTk3NDUt/NjY1OC5qcGVn.jpeg",
+      "width": 600,
+      "height": 580
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/bJ-6IdNvQxZwaARRIQsoz3HMJdtrtfYvDpheyiXy5rM/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM5ODI5/LTE0MzkwNTQzMTQt/OTU5OS5qcGVn.jpeg",
+      "width": 500,
+      "height": 500
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/Fvqj5Ms-ZhpbgYL0iMytSTg9JvbOnESTODSLRyK1MN8/rs:fit/g:sm/q:90/h:668/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM5ODI5/LTE0MzkwNTQzNDEt/NDk5Ni5qcGVn.jpeg",
+      "width": 500,
+      "height": 668
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/nM4Gw7GeyhG6h_QyrSlbwXrnXmO21VFGXjlAbcfYp8Q/rs:fit/g:sm/q:90/h:431/w:459/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM5ODI5/LTE0MzkwNTQzNzEt/NDM1OS5qcGVn.jpeg",
+      "width": 459,
+      "height": 431
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/w_IR9uXYTEzbjM6FMHgHpdQ8qawlWFZuto8AlDY0Lik/rs:fit/g:sm/q:90/h:477/w:345/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM5ODI5/LTE0MzkwNTQzODgt/Njg0NC5qcGVn.jpeg",
+      "width": 345,
+      "height": 477
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/DPTaLFXHqCM_ZwjeSs6A-B0Mw_HxIBuY8HOJ9UI2ZM4/rs:fit/g:sm/q:90/h:743/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM5ODI5/LTE0MzkwNTQ0MjIt/NzcwMS5qcGVn.jpeg",
+      "width": 500,
+      "height": 743
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/Ho6YSnjsHFUEskrAer4CwvMy3xsCZP5KLihZJJ9nwn8/rs:fit/g:sm/q:90/h:685/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM5ODI5/LTE0MzkwNTQ0NDIt/OTI1NS5qcGVn.jpeg",
+      "width": 500,
+      "height": 685
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/2YqrzbDNrr4kYmbq1LCj_QyUkZFry7QGZyXE-MTx0Fc/rs:fit/g:sm/q:90/h:299/w:432/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM5ODI5/LTE0MzkwNTQ0NjAt/Nzc5Ni5qcGVn.jpeg",
+      "width": 432,
+      "height": 299
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/VffLZ_AkvWUD8iQKKkxtH7I0lB_U0dkkRi9o5U2fEoM/rs:fit/g:sm/q:90/h:471/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM5ODI5/LTE0MzkwNTQ0ODEt/NDMyMi5wbmc.jpeg",
+      "width": 500,
+      "height": 471
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Stylistic Murder",
+    "Major Independents",
+    "RNS Records (2)",
+    "100 MAD",
+    "Not On Label",
+    "Aldebaran Records",
+    "Monsterwolf Music",
+    "Cr Studio",
+    "Force Records (9)",
+    "Национальное Музыкальное Издательство",
+    "Stay Independant",
+    "Bring Back My Yesterday, Soulspazm",
+    "X-Ray Records (2)",
+    "Iceman Music Group",
+    "MVD Visual",
+    "D.K. & Moon Producing Centre",
+    "Koch Records",
+    "New York DJ Service",
+    "PolyGram"
+  ],
+  "releases": [
+    {
+      "title": "What We Talking Bout",
+      "year": 2026,
+      "label": "Stylistic Murder",
+      "role": "Main",
+      "format": "7\", Ltd, Num, Cle"
+    },
+    {
+      "title": "Battle Royale",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Lower East Side",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Cold Case Files vol. 3",
+      "year": 2024,
+      "label": "Major Independents",
+      "role": "Main",
+      "format": "CDr, Comp"
+    },
+    {
+      "title": "Ghetto Anthems",
+      "year": 2024,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Acropolis",
+      "year": 2023,
+      "label": "RNS Records (2)",
+      "role": "Main",
+      "format": "File, AAC, Single"
+    },
+    {
+      "title": "World Take Over",
+      "year": 2023,
+      "label": "100 MAD",
+      "role": "Main",
+      "format": "17xFile, MP3, Album"
+    },
+    {
+      "title": "Bacdafucup Remixed",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Blood On Da X",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Live In Saint-Petersburg",
+      "year": 2022,
+      "label": "100 MAD",
+      "role": "Main",
+      "format": "LP, Album, Ltd"
+    },
+    {
+      "title": "Just Slam (Milan Variable Remix)",
+      "year": 2022,
+      "label": "Not On Label",
+      "role": "Main",
+      "format": "4xFile, MP3, Promo, 320"
+    },
+    {
+      "title": "1993",
+      "year": 2022,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Versus Everybody",
+      "year": 2022,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Bad Poets",
+      "year": 2021,
+      "label": "Aldebaran Records",
+      "role": "Main",
+      "format": "12\", Maxi, Ltd, Num"
+    },
+    {
+      "title": "Onyx 4 Life",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "#Turndafucup (The Original Sessions)",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Puzzle",
+      "year": 2020,
+      "label": "Monsterwolf Music",
+      "role": "Main",
+      "format": "File, WAV, Single"
+    },
+    {
+      "title": "Lost Treasures",
+      "year": 2020,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Clubbanger EP",
+      "year": 2019,
+      "label": "Cr Studio",
+      "role": "Main",
+      "format": "12\", EP, Ltd"
+    },
+    {
+      "title": "SnowMads",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "100 Mad",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Represent Remix",
+      "year": 2018,
+      "label": "Force Records (9)",
+      "role": "Main",
+      "format": "File, MP3, Single, 320"
+    },
+    {
+      "title": "Black Rock ",
+      "year": 2018,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Shotgunz In Hell",
+      "year": 2017,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Downward Spiral",
+      "year": 2016,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Fight",
+      "year": 2015,
+      "label": "Национальное Музыкальное Издательство",
+      "role": "Main",
+      "format": "File, AAC, Single, 256"
+    },
+    {
+      "title": "Madd Rush",
+      "year": 2015,
+      "label": "Stay Independant",
+      "role": "Main",
+      "format": "CDr, Single"
+    },
+    {
+      "title": "Against All Authorities",
+      "year": 2015,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Icon",
+      "year": 2015,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Get Up / For My People",
+      "year": 2014,
+      "label": "Bring Back My Yesterday, Soulspazm",
+      "role": "Main",
+      "format": "12\", Ltd, Pic"
+    }
+  ],
+  "releaseCount": 50,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/39829"
+  },
+  "_cachedAt": 1781889428831
+}

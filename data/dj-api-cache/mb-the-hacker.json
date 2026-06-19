@@ -1,0 +1,27 @@
+{
+  "found": true,
+  "id": "e044fb9c-7c2e-48f7-81f6-ea2ae99d2ef0",
+  "name": "The Hacker",
+  "sortName": "Hacker, The",
+  "type": "Person",
+  "gender": "male",
+  "country": "FR",
+  "disambiguation": "French electro/techno producer Michel Amato",
+  "lifeSpan": {
+    "begin": "1973",
+    "ended": null
+  },
+  "aliases": [
+    "Michel Amato"
+  ],
+  "tags": [
+    "techno",
+    "electroclash"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 189978
+  },
+  "_cachedAt": 1781887754953
+}

@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "fa76eb45-3109-4e2a-828e-c32d51a85fcf",
+  "name": "Olivier K",
+  "sortName": "Olivier K",
+  "type": null,
+  "gender": null,
+  "country": null,
+  "disambiguation": "",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 7184
+  },
+  "_cachedAt": 1781889653951
+}

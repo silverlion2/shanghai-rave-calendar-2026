@@ -1,0 +1,28 @@
+{
+  "found": true,
+  "id": "dc60d275-d4d1-4bf2-b32c-4aa2332d7459",
+  "name": "Klangkuenstler",
+  "sortName": "Klangkuenstler",
+  "type": "Person",
+  "gender": "male",
+  "country": "Berlin",
+  "disambiguation": "",
+  "lifeSpan": {
+    "begin": "1990",
+    "ended": null
+  },
+  "aliases": [
+    "Michael Korb",
+    "Klangkünstler"
+  ],
+  "tags": [
+    "dark techno",
+    "techno"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 1
+  },
+  "_cachedAt": 1781881286509
+}

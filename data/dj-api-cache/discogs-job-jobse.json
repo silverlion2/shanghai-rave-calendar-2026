@@ -1,0 +1,91 @@
+{
+  "found": true,
+  "id": 4169713,
+  "name": "Job Jobse",
+  "profile": "Dutch DJ and label manager",
+  "nameVariations": [],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "https://www.residentadvisor.net/dj/jobjobse",
+    "https://soundcloud.com/jobjobse",
+    "https://www.facebook.com/jobjobse/",
+    "https://www.instagram.com/jobjobse/",
+    "https://twitter.com/jobjobse"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/SOLhNQQ2RIadQ2gAc8icPDksPVUolYI21ERH6m_Ws5c/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQxNjk3/MTMtMTUzNzg4ODUw/MC03ODg0LnBuZw.jpeg",
+      "width": 600,
+      "height": 600
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Dekmantel",
+    "Groove",
+    "Resident Advisor",
+    "De Vlieger",
+    "Trouw"
+  ],
+  "releases": [
+    {
+      "title": "Dekmantel Podcast 231",
+      "year": 2019,
+      "label": "Dekmantel",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "Groove DJ Mix",
+      "year": 2016,
+      "label": "Groove",
+      "role": "Main",
+      "format": "CD, Mixed"
+    },
+    {
+      "title": "RA.462",
+      "year": 2015,
+      "label": "Resident Advisor",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "Vrij Van Dromen",
+      "year": 2020,
+      "label": "De Vlieger",
+      "role": "Appearance",
+      "format": "LP, Album"
+    },
+    {
+      "title": "Life",
+      "year": 2018,
+      "label": "De Vlieger",
+      "role": "Appearance",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Trouw Tribute LP",
+      "year": 2014,
+      "label": "Trouw",
+      "role": "Appearance",
+      "format": "2xLP, Comp, Ltd"
+    },
+    {
+      "title": "Trouw Tribute LP",
+      "year": 2014,
+      "label": "Trouw",
+      "role": "TrackAppearance",
+      "format": "2xLP, Comp, Ltd"
+    }
+  ],
+  "releaseCount": 7,
+  "dataQuality": "Correct",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/4169713"
+  },
+  "_cachedAt": 1781887732724
+}

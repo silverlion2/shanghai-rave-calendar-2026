@@ -1,0 +1,256 @@
+{
+  "found": true,
+  "id": 9627886,
+  "name": "Anyma (5)",
+  "profile": "Techno/Progressive House DJ from Italy.\r\nBorn November 22, 1988 in New York.\r\nMember with [a2342329] of [a1873739] duo, founders of the label [l=Afterlife (6)].",
+  "nameVariations": [
+    "Anyma (ofc)"
+  ],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "https://www.anyma.com/",
+    "https://www.facebook.com/anyma.ofc",
+    "https://twitter.com/anyma_eva",
+    "https://www.instagram.com/anyma/",
+    "https://www.youtube.com/@anyma_ofc",
+    "https://soundcloud.com/anyma_ofc",
+    "https://en.wikipedia.org/wiki/Anyma"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/izKZMy2Nqy6X9dpG4ot1_SCe2mEf1W-SYoCa7aK7vWM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTk2Mjc4/ODYtMTcwMDgyNjE3/NS00NDg2LmpwZWc.jpeg",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/fweEEMnHIXo-v64mBqz1RXbadVKpcRpqCYjjStF-nK8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTk2Mjc4/ODYtMTcwMDgyNjE4/MC0zMDY2LmpwZWc.jpeg",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/9owQKo96UuxswSJFvVEYNjf3ddreyfyxntOjkrjYme4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTk2Mjc4/ODYtMTcwMDgyNjE4/Ny03OTIzLmpwZWc.jpeg",
+      "width": 600,
+      "height": 600
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "The End Of Genesys",
+    "Afterlife (6)",
+    "Rose Avenue",
+    "Not On Label (Amelie Lens Self-released)",
+    "DMC, DMC, DMC",
+    "Ministry Of Sound, Sony Music",
+    "DMC",
+    "DMC, DMC",
+    "Not On Label",
+    "El Cuco Recordings"
+  ],
+  "releases": [
+    {
+      "title": "Beautiful",
+      "year": 2026,
+      "label": "The End Of Genesys",
+      "role": "Main",
+      "format": "File, MP3, Single, 320"
+    },
+    {
+      "title": "Bad Angel",
+      "year": 2026,
+      "label": "The End Of Genesys",
+      "role": "Main",
+      "format": "File, MP3, Single, 320"
+    },
+    {
+      "title": "Neverland (From Japan)",
+      "year": 2025,
+      "label": "The End Of Genesys",
+      "role": "Main",
+      "format": "File, MP3, Single, 320"
+    },
+    {
+      "title": "Work",
+      "year": 2025,
+      "label": "The End Of Genesys",
+      "role": "Main",
+      "format": "File, MP3, Single, 320"
+    },
+    {
+      "title": "In My Mind",
+      "year": 2025,
+      "label": "The End Of Genesys",
+      "role": "Main",
+      "format": "File, MP3, Single, 320"
+    },
+    {
+      "title": "The End Of Genesys",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Voices In My Head",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Hypnotized",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Out Of My Body",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Angel In The Dark",
+      "year": 2024,
+      "label": "The End Of Genesys",
+      "role": "Main",
+      "format": "File, MP3, Single, 320"
+    },
+    {
+      "title": "Genesys II",
+      "year": 2024,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Pictures Of You",
+      "year": 2024,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Eusexua (Anyma Remix) (Extended Mix)",
+      "year": 2024,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Eternity",
+      "year": 2023,
+      "label": "Afterlife (6)",
+      "role": "Main",
+      "format": "File, MP3, Single, 320"
+    },
+    {
+      "title": "Explore Your Future",
+      "year": 2023,
+      "label": "Afterlife (6)",
+      "role": "Main",
+      "format": "2xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Higher Power",
+      "year": 2023,
+      "label": "Afterlife (6)",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Syren",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Genesys",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Welcome To The Opera",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "The Sign",
+      "year": 2022,
+      "label": "Afterlife (6)",
+      "role": "Main",
+      "format": "File, MP3, Single, 320"
+    },
+    {
+      "title": "Consciousness",
+      "year": 2022,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Claire EP",
+      "year": 2021,
+      "label": "Rose Avenue",
+      "role": "Main",
+      "format": "3xFile, AIFF, ALAC, FLAC, MP3, WAV, EP"
+    },
+    {
+      "title": "Lightning Over Heaven",
+      "year": 2021,
+      "label": "Not On Label (Amelie Lens Self-released)",
+      "role": "Main",
+      "format": "File, MP3"
+    },
+    {
+      "title": "Running",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Sentient EP",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Last Night (Anyma x Layton Giordani Remix)",
+      "year": 2024,
+      "label": null,
+      "role": "Remix"
+    },
+    {
+      "title": "Eusexua (Anyma Remix)",
+      "year": 2024,
+      "label": null,
+      "role": "Remix"
+    },
+    {
+      "title": "DMC Dance Extra Mixes 191",
+      "year": 2023,
+      "label": "DMC, DMC, DMC",
+      "role": "Remix",
+      "format": "CDr, Comp, Promo"
+    },
+    {
+      "title": "Say Yes To Heaven (Anyma Extended Remix)",
+      "year": 2023,
+      "label": null,
+      "role": "Remix"
+    },
+    {
+      "title": "Surrender (Remixes)",
+      "year": 2022,
+      "label": null,
+      "role": "Remix"
+    }
+  ],
+  "releaseCount": 44,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/9627886"
+  },
+  "_cachedAt": 1781881205387
+}

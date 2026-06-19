@@ -1,0 +1,258 @@
+{
+  "found": true,
+  "id": 5960580,
+  "name": "Nico Moreno",
+  "profile": "DJ and producer from Caen, France.",
+  "nameVariations": [],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "https://www.facebook.com/nicomorenomusic/",
+    "https://soundcloud.com/nicomorenomusic",
+    "https://www.instagram.com/nicomoreno_music/"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/7C4FDlqc-y4bErvzbN03h6eoElwbfUnW2b5oMt2XG48/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTU5NjA1/ODAtMTUwMzY4NDAy/OC03OTg1LmpwZWc.jpeg",
+      "width": 600,
+      "height": 600
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "FXCK",
+    "Insolent Rave Records",
+    "HEKATE Records",
+    "Techno Germany Records",
+    "Blvckplvgue",
+    "Grounded.",
+    "Raven Sigh",
+    "Rawe",
+    "Etruria Beat",
+    "RAW (9)",
+    "Gomboc Records",
+    "ERADYS Records",
+    "Sacred Court",
+    "Exhale (2)",
+    "Mixmag",
+    "Unlocked BCN Records, Unlocked BCN Records",
+    "Ismus",
+    "WarinD Records",
+    "RND. Records"
+  ],
+  "releases": [
+    {
+      "title": "Overdose",
+      "year": 2026,
+      "label": "FXCK",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Dance In The Light",
+      "year": 2026,
+      "label": "Insolent Rave Records",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "2 Be High",
+      "year": 2024,
+      "label": "Insolent Rave Records",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Hard Kicks, Cheap Thrills",
+      "year": 2024,
+      "label": "Insolent Rave Records",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Why Was I Chosen",
+      "year": 2024,
+      "label": "Insolent Rave Records",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Make Sacrifices For Glory",
+      "year": 2024,
+      "label": "Insolent Rave Records",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Because They Want Our Seat",
+      "year": 2024,
+      "label": "HEKATE Records",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "You Can't Stop The Movement",
+      "year": 2024,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "This Is For My Haters",
+      "year": 2022,
+      "label": "Insolent Rave Records",
+      "role": "Main",
+      "format": "2xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Purple Widow (Original And Remix Versions)",
+      "year": 2021,
+      "label": "Insolent Rave Records",
+      "role": "Main",
+      "format": "12\", Ltd"
+    },
+    {
+      "title": "Techno Crari",
+      "year": 2021,
+      "label": "Insolent Rave Records",
+      "role": "Main",
+      "format": "2xFile, MP3, 320"
+    },
+    {
+      "title": "Wave 4 Rave",
+      "year": 2020,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Violent Methods EP",
+      "year": 2019,
+      "label": "Techno Germany Records",
+      "role": "Main",
+      "format": "2xFile, MP3, EP, 263"
+    },
+    {
+      "title": "Purple Widow",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Insolent Rave",
+      "year": 2017,
+      "label": "Blvckplvgue",
+      "role": "Main",
+      "format": "5xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Violent Conflict",
+      "year": 2017,
+      "label": "Grounded.",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Acid From The Abyss",
+      "year": 2017,
+      "label": "Grounded.",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Presence",
+      "year": 2017,
+      "label": "Grounded.",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Overwhelm EP",
+      "year": 2017,
+      "label": "Raven Sigh",
+      "role": "Main",
+      "format": "3xFile, MP3, EP, 320"
+    },
+    {
+      "title": "The 7th",
+      "year": 2021,
+      "label": "Rawe",
+      "role": "Remix",
+      "format": "12\", Gre"
+    },
+    {
+      "title": "Thermionic",
+      "year": 2021,
+      "label": "Etruria Beat",
+      "role": "Remix",
+      "format": "12\", Gre"
+    },
+    {
+      "title": "Queen Of The Banshees",
+      "year": 2021,
+      "label": "RAW (9)",
+      "role": "Remix",
+      "format": "4xFile, MP3, EP, 320"
+    },
+    {
+      "title": "PZ Bunker",
+      "year": 2019,
+      "label": "Gomboc Records",
+      "role": "Remix",
+      "format": "4xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Omala Kcohs",
+      "year": 2019,
+      "label": null,
+      "role": "Remix"
+    },
+    {
+      "title": "Sync Remixed EP",
+      "year": 2018,
+      "label": "Gomboc Records",
+      "role": "Remix",
+      "format": "4xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Untitled",
+      "year": 2017,
+      "label": "ERADYS Records",
+      "role": "Remix",
+      "format": "7xFile, MP3, 320"
+    },
+    {
+      "title": "Spiritual Driveby",
+      "year": 2024,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Spiritual Driveby",
+      "year": 2024,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Sentence Three",
+      "year": 2022,
+      "label": "Sacred Court",
+      "role": "TrackAppearance",
+      "format": "12\", Ltd"
+    },
+    {
+      "title": "Together For Ukraine!",
+      "year": 2022,
+      "label": "Exhale (2)",
+      "role": "TrackAppearance",
+      "format": "14xFile, MP3, Comp, 320"
+    }
+  ],
+  "releaseCount": 42,
+  "dataQuality": "Correct",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/5960580"
+  },
+  "_cachedAt": 1781881307912
+}

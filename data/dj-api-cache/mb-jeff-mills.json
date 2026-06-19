@@ -1,0 +1,30 @@
+{
+  "found": true,
+  "id": "470a4ced-1323-4c91-8fd5-0bb3fb4c932a",
+  "name": "Jeff Mills",
+  "sortName": "Mills, Jeff",
+  "type": "Person",
+  "gender": "male",
+  "country": "US",
+  "disambiguation": "Detroit based DJ",
+  "lifeSpan": {
+    "begin": "1963-06-18",
+    "ended": null
+  },
+  "aliases": [
+    "Jeffrey Lee Mills",
+    "Jeffery Eugene Mills",
+    "Jeffery Mills"
+  ],
+  "tags": [
+    "techno",
+    "detroit techno",
+    "dance and electronica"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 6055
+  },
+  "_cachedAt": 1781887550098
+}

@@ -1,0 +1,28 @@
+{
+  "found": true,
+  "id": "788307a8-ca6a-4775-b9a2-8d27d2af71ce",
+  "name": "Anyma",
+  "sortName": "Anyma",
+  "type": "Person",
+  "gender": "male",
+  "country": "Berlin",
+  "disambiguation": "Matteo Milleri",
+  "lifeSpan": {
+    "begin": "1988-05-19",
+    "ended": null
+  },
+  "aliases": [
+    "Anyma (ofc)"
+  ],
+  "tags": [
+    "electronic",
+    "melodic techno",
+    "melodic house"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 14
+  },
+  "_cachedAt": 1781881196328
+}

@@ -1,0 +1,29 @@
+{
+  "found": true,
+  "id": 13747903,
+  "name": "Zhuoye Zhao",
+  "profile": "",
+  "nameVariations": [],
+  "members": [],
+  "groups": [],
+  "urls": [],
+  "images": [],
+  "genres": [],
+  "styles": [],
+  "labels": [],
+  "releases": [
+    {
+      "title": "夜​食​堂​駭​人​事​件 = A Chilling Winter Night",
+      "year": 2023,
+      "label": null,
+      "role": "Appearance"
+    }
+  ],
+  "releaseCount": 1,
+  "dataQuality": "Needs Major Changes",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/13747903"
+  },
+  "_cachedAt": 1781886312284
+}

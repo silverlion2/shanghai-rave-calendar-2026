@@ -1,0 +1,23 @@
+{
+  "found": true,
+  "id": "f88c7151-e807-44e1-8e20-81f7d3aedd6f",
+  "name": "Zhen",
+  "sortName": "Zhen",
+  "type": "Person",
+  "gender": "male",
+  "country": null,
+  "disambiguation": "lo‐fi beatmaker",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [
+    "Evgeny Nazarov"
+  ],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 375
+  },
+  "_cachedAt": 1781885146103
+}

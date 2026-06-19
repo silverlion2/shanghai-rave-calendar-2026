@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "d275ed5e-e7de-4fed-bb1f-6c37b67c6cba",
+  "name": "SLVN",
+  "sortName": "SLVN",
+  "type": "Person",
+  "gender": "male",
+  "country": "Paris",
+  "disambiguation": "",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 3
+  },
+  "_cachedAt": 1781889640798
+}

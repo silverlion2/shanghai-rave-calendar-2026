@@ -1,0 +1,29 @@
+{
+  "found": true,
+  "id": 2312447,
+  "name": "Zhang Lin Fredriksson",
+  "profile": "",
+  "nameVariations": [],
+  "members": [],
+  "groups": [],
+  "urls": [],
+  "images": [],
+  "genres": [],
+  "styles": [],
+  "labels": [],
+  "releases": [
+    {
+      "title": "Mot Stjärnorna",
+      "year": 1983,
+      "label": null,
+      "role": "Appearance"
+    }
+  ],
+  "releaseCount": 1,
+  "dataQuality": "Needs Major Changes",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/2312447"
+  },
+  "_cachedAt": 1781884898400
+}

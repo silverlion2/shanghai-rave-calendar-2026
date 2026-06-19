@@ -1,0 +1,257 @@
+{
+  "found": true,
+  "id": 878803,
+  "name": "Marcel Fengler",
+  "profile": "Electronic music producer and DJ based in Berlin, Germany.",
+  "nameVariations": [],
+  "members": [],
+  "groups": [
+    "DIN (17)"
+  ],
+  "urls": [
+    "https://www.facebook.com/MarcelFengler/",
+    "https://soundcloud.com/marcel-fengler",
+    "https://twitter.com/MarcelFengler"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/WWmGS1srPUvN73BADkveWYVLpmnot7puz_qsi914ZrQ/rs:fit/g:sm/q:90/h:671/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTg3ODgw/My0xNjYzMjY3NTY2/LTg3MzMuanBlZw.jpeg",
+      "width": 600,
+      "height": 671
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Index Marcel Fengler",
+    "Dekmantel",
+    "XLR8R",
+    "CLR (2)",
+    "Resident Advisor",
+    "mnml ssgs",
+    "Burst Records (5)",
+    "Brawlcast",
+    "Crossing",
+    "Dynamic Reflection",
+    "Soma Quality Recordings",
+    "Materia",
+    "Dame-Music",
+    "Uncage",
+    "BRAWLcast",
+    "Not On Label (Rivet Self-released)",
+    "Concerns",
+    "Coincidence Records",
+    "Perc Trax",
+    "Kontra-Musik",
+    "Kontra-Musik, Music 4 Your Legs",
+    "TheErraticPodcast",
+    "OnlyHouseMusic"
+  ],
+  "releases": [
+    {
+      "title": "Unleashed",
+      "year": 2023,
+      "label": "Index Marcel Fengler",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Kyu EP",
+      "year": 2016,
+      "label": "Index Marcel Fengler",
+      "role": "Main",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Dekmantel Podcast 074",
+      "year": 2016,
+      "label": "Dekmantel",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "Remixes",
+      "year": 2014,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Podcast 303",
+      "year": 2013,
+      "label": "XLR8R",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "Fokus",
+      "year": 2013,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "CLR Podcast 183",
+      "year": 2012,
+      "label": "CLR (2)",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "Frantic EP",
+      "year": 2012,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Sphinx EP",
+      "year": 2011,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Thwack Remixes",
+      "year": 2011,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Berghain 05",
+      "year": 2011,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "RA.209",
+      "year": 2010,
+      "label": "Resident Advisor",
+      "role": "Main",
+      "format": "File, MP3, Mixed"
+    },
+    {
+      "title": "Thwack",
+      "year": 2010,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Enigma",
+      "year": 2010,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Twisted Bleach EP",
+      "year": 2009,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Friction / Yaki",
+      "year": 2008,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Playground / Early Glow",
+      "year": 2007,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "mnml ssgs marcel fengler mx",
+      "label": "mnml ssgs",
+      "role": "Main",
+      "format": "CDr, Mixed, Promo"
+    },
+    {
+      "title": "Hier & Nu",
+      "year": 2022,
+      "label": "Index Marcel Fengler",
+      "role": "Remix",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Vengeance ",
+      "year": 2021,
+      "label": "Burst Records (5)",
+      "role": "Remix",
+      "format": "12\", EP"
+    },
+    {
+      "title": "Phatal Space Progress",
+      "year": 2021,
+      "label": "Brawlcast",
+      "role": "Remix",
+      "format": "File, MP3, Mixed"
+    },
+    {
+      "title": "Untrod Remixes",
+      "year": 2019,
+      "label": "Crossing",
+      "role": "Remix",
+      "format": "12\""
+    },
+    {
+      "title": "From the Vault Pt. VI ",
+      "year": 2019,
+      "label": "Dynamic Reflection",
+      "role": "Remix",
+      "format": "10xFile, FLAC, Comp"
+    },
+    {
+      "title": "Lava Flow Remixes",
+      "year": 2019,
+      "label": "Soma Quality Recordings",
+      "role": "Remix",
+      "format": "3xFile, MP3, Single"
+    },
+    {
+      "title": "Cristalli Ionici EP",
+      "year": 2019,
+      "label": null,
+      "role": "Remix"
+    },
+    {
+      "title": "Temper Reworks Part One",
+      "year": 2018,
+      "label": "Materia",
+      "role": "Remix",
+      "format": "12\""
+    },
+    {
+      "title": "No Feeling Is Final ",
+      "year": 2017,
+      "label": "Dame-Music",
+      "role": "Remix",
+      "format": "12\""
+    },
+    {
+      "title": "Work It, Get It",
+      "year": 2017,
+      "label": "Uncage",
+      "role": "Remix",
+      "format": "12\", 180"
+    },
+    {
+      "title": "Bonded In Heresy",
+      "year": 2017,
+      "label": "BRAWLcast",
+      "role": "Remix",
+      "format": "File, MP3, Mixed, 320"
+    },
+    {
+      "title": "I Nearly Died For You, But Realised It Was Pointless",
+      "year": 2017,
+      "label": "BRAWLcast",
+      "role": "Remix",
+      "format": "File, MP3, Mixed, 320"
+    }
+  ],
+  "releaseCount": 50,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/878803"
+  },
+  "_cachedAt": 1781887436691
+}

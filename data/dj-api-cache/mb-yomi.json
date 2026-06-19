@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "57e636bf-9199-4c81-9c10-fc01045d7d3d",
+  "name": "Yomi",
+  "sortName": "Yomi",
+  "type": "Group",
+  "gender": null,
+  "country": "LV",
+  "disambiguation": "Japanese folk metal",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 214
+  },
+  "_cachedAt": 1781886272813
+}

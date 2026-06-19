@@ -1,0 +1,125 @@
+{
+  "found": true,
+  "id": 4621845,
+  "name": "Fractale (2)",
+  "profile": "Fractale are a drum and bass trio based in Italy and China.\r\n\r\nAfter officially joining the dnb scene in 2015 with their first release on RAM Records, they have actively been producing and playing since then.\r\n\r\nResident DJs in Italy for the BAD VIBES collective, they have performed before artists such as Black Sun Empire, Foreign Beggars and AEPH.\r\n\r\nIn China, part of the SWEATSHOP Crew, they have played alongside artists such as DJ Marky, DJ Siesta and Arkaik.\r\n\r\nCounting releases on RAM Records, Vandal Records and The Dreamers Recordings they are currently developing on live performance and new productions.\r\n\r\nFeatured on BBC Radio 1, DJ Mag Italy, DJ Mag Spain and Drum&Bass Arena 2016.\r\n\r\n“If you don’t already, get to know as these are sure to be rinsed at a club near you” Displace Audio\r\n\r\n“Different, but absolutely slamming” Skankandbass\r\n\r\n“There’s rather a nice thing happening in Italy, there’s a clutch of brand new producers coming through. [Fractale - Axis] hits the spot!” Hospital Podcast - London Elektricity.",
+  "nameVariations": [],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "https://www.facebook.com/fractale.official",
+    "https://soundcloud.com/fractale-music",
+    "https://www.instagram.com/fractale_official",
+    "https://twitter.com/FractaleMusic"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/i5laIBh6LB5ttVMUgCirB78UDo3tYvUo0SeT9GpV7vE/rs:fit/g:sm/q:90/h:531/w:531/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ2MjE4/NDUtMTYwMTk5NzYy/MC0yMTI1LmpwZWc.jpeg",
+      "width": 531,
+      "height": 531
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Vandal Records",
+    "Unchained Recordings",
+    "Terra Firma Records",
+    "Vandal Limited",
+    "No Music No Life (2), No Music No Life (2), Nitrobeat"
+  ],
+  "releases": [
+    {
+      "title": "Frei EP",
+      "year": 2018,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "MOVE EP",
+      "year": 2016,
+      "label": "Vandal Records",
+      "role": "Main",
+      "format": "4xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Believe / Never Change",
+      "year": 2015,
+      "label": "Vandal Records",
+      "role": "Main",
+      "format": "2xFile, MP3, Single, 320"
+    },
+    {
+      "title": "Unchained: The Remixes",
+      "year": 2020,
+      "label": null,
+      "role": "Remix"
+    },
+    {
+      "title": "UNCHAINED: The Year of The Rat",
+      "year": 2020,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Unchained: The Year Of The Ox",
+      "year": 2021,
+      "label": "Unchained Recordings",
+      "role": "TrackAppearance",
+      "format": "12xFile, WAV, Comp"
+    },
+    {
+      "title": "Terra Rising",
+      "year": 2020,
+      "label": "Terra Firma Records",
+      "role": "TrackAppearance",
+      "format": "14xFile, MP3, Comp, 320"
+    },
+    {
+      "title": "Unchained: The Remixes",
+      "year": 2020,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Believe / Condensed",
+      "year": 2019,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Drum & Bass Arena 2016",
+      "year": 2016,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Modern Soul",
+      "year": 2015,
+      "label": "Vandal Limited",
+      "role": "TrackAppearance",
+      "format": "14xFile, MP3, Comp, 320"
+    },
+    {
+      "title": "RAM Miami Drum & Bass 2015",
+      "year": 2015,
+      "label": null,
+      "role": "TrackAppearance"
+    },
+    {
+      "title": "Sea Wind",
+      "year": 2015,
+      "label": "No Music No Life (2), No Music No Life (2), Nitrobeat",
+      "role": "UnofficialRelease",
+      "format": "2xCD, M/Print, Mixed, Unofficial"
+    }
+  ],
+  "releaseCount": 13,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/4621845"
+  },
+  "_cachedAt": 1781888916655
+}

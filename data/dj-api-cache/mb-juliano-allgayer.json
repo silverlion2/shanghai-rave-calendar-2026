@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "68cfd76e-b83c-4310-943b-6cb8fe1fe357",
+  "name": "Juliano",
+  "sortName": "Juliano",
+  "type": "Person",
+  "gender": null,
+  "country": null,
+  "disambiguation": "berlin deep house",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 77
+  },
+  "_cachedAt": 1781889083695
+}

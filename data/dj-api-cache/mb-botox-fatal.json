@@ -1,0 +1,23 @@
+{
+  "found": true,
+  "id": "89754b57-5470-4a51-a586-144133fa5c70",
+  "name": "Botox Fatal",
+  "sortName": "Botox Fatal",
+  "type": null,
+  "gender": null,
+  "country": null,
+  "disambiguation": "",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [
+    "techno"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 405
+  },
+  "_cachedAt": 1781886348550
+}

@@ -1,0 +1,32 @@
+{
+  "found": true,
+  "id": 3518306,
+  "name": "Zhong Zheng Shun Xiang Chaozhou Opera Troupe",
+  "profile": "",
+  "nameVariations": [],
+  "members": [],
+  "groups": [],
+  "urls": [],
+  "images": [],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Dust-to-Digital"
+  ],
+  "releases": [
+    {
+      "title": "Longing For The Past: The 78 RPM Era In Southeast Asia",
+      "year": 2013,
+      "label": "Dust-to-Digital",
+      "role": "TrackAppearance",
+      "format": "4xCD, Comp + Box"
+    }
+  ],
+  "releaseCount": 1,
+  "dataQuality": "Needs Major Changes",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/3518306"
+  },
+  "_cachedAt": 1781884841219
+}

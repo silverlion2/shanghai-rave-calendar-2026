@@ -1,0 +1,351 @@
+{
+  "found": true,
+  "id": 1345690,
+  "name": "Frankenbok",
+  "profile": "Groove metal band from Melbourne, Victoria. Australia.\r\nFormed 1997\r\n\r\n[b]Current Members:[/b]\r\nAaron Butler – Guitar (1997–)\r\nAdam 'Hutch' Glynn – Vocals (1997-2002, 2024-)\r\nTom Rossell – Drums (2016–)\r\nOwen Spratling – Bass (2019–)\r\n\r\n[b]Former Members:[/b]\r\nScott Lang – Guitar (1997–2005)\r\nMick Morley – Drums (1999–2016)\r\nAdam “B. Metal” Miles - Vocals/Guitar (2003–2007)\r\nDan McDougall – Vocals (2007–2015, 2019-2024)\r\nNathan 'Yeti' Amatnieks – Guitar (2007–2015)\r\nTim Miedecke – Bass/Backing vocals (1997–2021)\r\nDaniel White – Vocals (2015–2018)\r\nRicky Barbour – Guitar (2016–?)",
+  "nameVariations": [],
+  "members": [
+    "Adam Glynn",
+    "Dan McDougall (2)",
+    "Tim Miedecke",
+    "Mick Morley",
+    "Aaron Butler (3)",
+    "Scott Lang (2)",
+    "Adam B. Metal",
+    "Timothy Miedecke",
+    "Tom Rossell",
+    "Dan White (23)",
+    "Owen Spratling"
+  ],
+  "groups": [],
+  "urls": [
+    "Bandcamp - https://frankenbok.bandcamp.com",
+    "Facebook - https://www.facebook.com/frankenbok/",
+    "Instagram - https://instagram.com/frankenbok?igshid=14nsabf8231vn",
+    "ReverNation - https://www.reverbnation.com/frankenbok",
+    "Twitter - https://twitter.com/#!/frankenbok",
+    "Wiki - https://en.m.wikipedia.org/wiki/Frankenbok"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/FUxfxKBMiFGPJcOAd-Do6liAwiMGThYkVviVX-C9NiY/rs:fit/g:sm/q:90/h:400/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzNDU2/OTAtMTczODMyMDk3/OC02MTIyLmpwZWc.jpeg",
+      "width": 600,
+      "height": 400
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/9xv1LeZ8TwsjmYbIVvy_2KSF9ji2nr4Fwmn7-LkoTfU/rs:fit/g:sm/q:90/h:399/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzNDU2/OTAtMTczODMyMTE1/MC04MDgxLmpwZWc.jpeg",
+      "width": 600,
+      "height": 399
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/a5k6xpEQ3w3QSta_5yANKxgvm8TGK9IwZe25Be-CIc4/rs:fit/g:sm/q:90/h:660/w:465/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzNDU2/OTAtMTY1MDI4MjA4/OC00MDM3LmpwZWc.jpeg",
+      "width": 465,
+      "height": 660
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/c-tUkrRv3KMvXnuVyMVXWrZQgARqwArirRj-PgrQ3jg/rs:fit/g:sm/q:90/h:400/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzNDU2/OTAtMTY1MDI4MjEy/NC0yODAwLmpwZWc.jpeg",
+      "width": 600,
+      "height": 400
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/rfHB7SDMzxJz53Ewg9GxFJCv5oVbWMaNEC7Mi-T7cRA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzNDU2/OTAtMTY0Mjg1NTEz/Ny04NDc2LmpwZWc.jpeg",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/YKFqEqvTqdRbmM_-en7fTGEot1K2ooKnJbO-s9l9brI/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzNDU2/OTAtMTU3NTYyMjcz/My0zMjQwLmpwZWc.jpeg",
+      "width": 600,
+      "height": 450
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/17Eqa8FEhcIea70LrYNsd3e-LY7onJRl55g2Ro8AvDs/rs:fit/g:sm/q:90/h:335/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzNDU2/OTAtMTY1MDI4MjEy/NC05MDc1LmpwZWc.jpeg",
+      "width": 500,
+      "height": 335
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/bmPq5Na_ppHdpBF1xI7tXzn1ahWMRtFIqJzIVht48bg/rs:fit/g:sm/q:90/h:337/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzNDU2/OTAtMTY1MDI4MTYy/OS0xNjA5LmpwZWc.jpeg",
+      "width": 600,
+      "height": 337
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/sjbXk07Dbi2Cu2v7_hrjtCZ5McxSjcEEMl8oT6wlVDc/rs:fit/g:sm/q:90/h:337/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzNDU2/OTAtMTY1MDI4MTcx/MS0zODIxLmpwZWc.jpeg",
+      "width": 600,
+      "height": 337
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/5AWEgpzE8wkSdhwnwIpqIAMptNvsoMh_Y4Vy87GzFQo/rs:fit/g:sm/q:90/h:399/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzNDU2/OTAtMTY1MDI4MTc5/NC02MTkzLmpwZWc.jpeg",
+      "width": 600,
+      "height": 399
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/UUX5TuuPbM17ML82BuKXLjsIgC_6hmMRudSYqbUlQ_k/rs:fit/g:sm/q:90/h:459/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzNDU2/OTAtMTY1MDI4MTk2/NC02MTQxLmpwZWc.jpeg",
+      "width": 600,
+      "height": 459
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/dEB4v22XxDG5mgFUM0cksnEFwjBSa7Q5DvXC-7LoOkg/rs:fit/g:sm/q:90/h:450/w:529/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzNDU2/OTAtMTY1MDI4MjAy/Ny05NjA2LmpwZWc.jpeg",
+      "width": 529,
+      "height": 450
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/BJo4a-E90iPHkMhffwlxDQQmY8OlSfP6Mw4EWX7Lrh0/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzNDU2/OTAtMTY1MDI4MjAy/OC0yNjUxLmpwZWc.jpeg",
+      "width": 600,
+      "height": 450
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/Ina5TBdSH6HpLBIYY9FAU3DD1kz_On_ZoaQQQ3Y8mVo/rs:fit/g:sm/q:90/h:166/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzNDU2/OTAtMTY0Mjg1NTEz/Ny0xODgwLmpwZWc.jpeg",
+      "width": 500,
+      "height": 166
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Not On Label (Frankenbok Self-released)",
+    "Fair Dinkum Records",
+    "Not On Label",
+    "Prime Cuts Music",
+    "Roadrunner Records",
+    "Dark Carnival",
+    "Maric Media, Online Metal Promo, Breath-Fresher",
+    "Streetcult Marketing",
+    "Katzenjammer Records",
+    "Welkin Records",
+    "Cut Throat Studios",
+    "Faultline Records, Gorilla Music, Shock (2)",
+    "Back Alley Records (4)",
+    "Helltrack Records",
+    "Roadrunner Records, World Industries",
+    "Triple J, ABC Music, Universal Music Australia",
+    "Columbia",
+    "Universal Music Australia",
+    "Shock (2)"
+  ],
+  "releases": [
+    {
+      "title": "Irrepressible",
+      "year": 2025,
+      "label": "Not On Label (Frankenbok Self-released)",
+      "role": "Main",
+      "format": "5xFile, FLAC, EP"
+    },
+    {
+      "title": "25 Years Of Noise (In One Form Or Another) Live At The Tote",
+      "year": 2023,
+      "label": "Fair Dinkum Records",
+      "role": "Main",
+      "format": "23xFile, AAC, Album, 256"
+    },
+    {
+      "title": "Fight Back",
+      "year": 2023,
+      "label": "Fair Dinkum Records",
+      "role": "Main",
+      "format": "CDr, Single"
+    },
+    {
+      "title": "Overdose",
+      "year": 2022,
+      "label": "Fair Dinkum Records",
+      "role": "Main",
+      "format": "CDr, Album"
+    },
+    {
+      "title": "Overdose Live (At The Bendigo Hotel)",
+      "year": 2022,
+      "label": "Fair Dinkum Records",
+      "role": "Main",
+      "format": "CDr, Album"
+    },
+    {
+      "title": "The Ex Files Volume 1",
+      "year": 2022,
+      "label": "Fair Dinkum Records",
+      "role": "Main",
+      "format": "CDr, Comp"
+    },
+    {
+      "title": "The Avalanche In Me",
+      "year": 2022,
+      "label": "Not On Label (Frankenbok Self-released)",
+      "role": "Main",
+      "format": "3xFile, FLAC, Single"
+    },
+    {
+      "title": "Vicious, Lawless",
+      "year": 2017,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Never To Return",
+      "year": 2014,
+      "label": "Not On Label",
+      "role": "Main",
+      "format": "File, FLAC, Single"
+    },
+    {
+      "title": "Home Is Where The Stage Is.",
+      "year": 2013,
+      "label": "Fair Dinkum Records",
+      "role": "Main",
+      "format": "DVD-V, Multichannel"
+    },
+    {
+      "title": "Cheers, Beers & Beards",
+      "year": 2013,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Shit On The Liver / Genetic Lego",
+      "year": 2012,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "The End Of All You Know",
+      "year": 2011,
+      "label": "Fair Dinkum Records",
+      "role": "Main",
+      "format": "CD, Album"
+    },
+    {
+      "title": "The Last Ditch Redemption",
+      "year": 2008,
+      "label": "Prime Cuts Music",
+      "role": "Main",
+      "format": "CD, EP"
+    },
+    {
+      "title": "Murder Of Songs",
+      "year": 2007,
+      "label": "Prime Cuts Music",
+      "role": "Main",
+      "format": "CD, Album"
+    },
+    {
+      "title": "Blood Oath",
+      "year": 2003,
+      "label": "Roadrunner Records",
+      "role": "Main",
+      "format": "CD, Album"
+    },
+    {
+      "title": "The Loopholes & Great Excuses EP",
+      "year": 2001,
+      "label": "Dark Carnival",
+      "role": "Main",
+      "format": "CD, EP"
+    },
+    {
+      "title": "Devastation Vacation",
+      "year": 2001,
+      "label": "Dark Carnival",
+      "role": "Main",
+      "format": "CD-ROM, Promo, Smplr"
+    },
+    {
+      "title": "Greetings & Salutations",
+      "year": 1999,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Demo '97",
+      "year": 1997,
+      "label": "Not On Label",
+      "role": "Main",
+      "format": "14xFile, MP3, RE"
+    },
+    {
+      "title": "Blood Oath DVD",
+      "label": "Not On Label",
+      "role": "Main",
+      "format": "DVDr"
+    },
+    {
+      "title": "Victims",
+      "label": "Roadrunner Records",
+      "role": "Main",
+      "format": "VHS, Single, PAL"
+    },
+    {
+      "title": "Hello Tokyo...OMP - Are You Ready To Rock ? (Volume III)",
+      "year": 2017,
+      "label": "Maric Media, Online Metal Promo, Breath-Fresher",
+      "role": "TrackAppearance",
+      "format": "53xFile, MP3, Comp, VBR"
+    },
+    {
+      "title": "Streetteam.com Presents... Streetcult Loud Music Compilation Volume 18",
+      "year": 2012,
+      "label": "Streetcult Marketing",
+      "role": "TrackAppearance",
+      "format": "CD, Comp"
+    },
+    {
+      "title": "Cherryfest Sun 25 Nov 2012",
+      "year": 2012,
+      "label": "Not On Label",
+      "role": "TrackAppearance",
+      "format": "CD, Promo"
+    },
+    {
+      "title": "Street Metal Magazine - Issue No. 8",
+      "year": 2009,
+      "label": "Katzenjammer Records",
+      "role": "TrackAppearance",
+      "format": "CD, Comp"
+    },
+    {
+      "title": "The Euphony Fusion III",
+      "year": 2009,
+      "label": "Welkin Records",
+      "role": "TrackAppearance",
+      "format": "2xCD, Comp, Dig"
+    },
+    {
+      "title": "A Blaze In The Southern Skies",
+      "year": 2007,
+      "label": "Prime Cuts Music",
+      "role": "TrackAppearance",
+      "format": "2xCD, Comp"
+    },
+    {
+      "title": "Cut Throat Audio Productions",
+      "year": 2006,
+      "label": "Cut Throat Studios",
+      "role": "TrackAppearance",
+      "format": "CD, Comp"
+    },
+    {
+      "title": "Metal For The Brain MMV",
+      "year": 2005,
+      "label": "Faultline Records, Gorilla Music, Shock (2)",
+      "role": "TrackAppearance",
+      "format": "CD, Comp"
+    }
+  ],
+  "releaseCount": 41,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/1345690"
+  },
+  "_cachedAt": 1781888993297
+}

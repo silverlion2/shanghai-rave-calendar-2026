@@ -1,0 +1,22 @@
+{
+  "found": true,
+  "id": "d0a5656d-e5c5-4d53-86c0-79a54442d0a7",
+  "name": "The Kynd",
+  "sortName": "Kynd, The",
+  "type": "Group",
+  "gender": null,
+  "country": "GB",
+  "disambiguation": "British indie band",
+  "lifeSpan": {
+    "begin": "1991",
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 19953
+  },
+  "_cachedAt": 1781886542644
+}

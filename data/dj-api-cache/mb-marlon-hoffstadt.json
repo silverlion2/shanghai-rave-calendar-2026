@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "7377ee25-9240-4b50-a824-20c202e96da9",
+  "name": "Marlon Hoffstadt",
+  "sortName": "Hoffstadt, Marlon",
+  "type": "Person",
+  "gender": "male",
+  "country": "Berlin",
+  "disambiguation": "DJ & producer",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 262
+  },
+  "_cachedAt": 1781881208023
+}

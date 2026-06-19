@@ -1,0 +1,29 @@
+{
+  "found": true,
+  "id": "8f614665-3418-4ca8-aa6a-737b4636b995",
+  "name": "Carl Cox",
+  "sortName": "Cox, Carl",
+  "type": "Person",
+  "gender": "male",
+  "country": "Oldham",
+  "disambiguation": "techno DJ",
+  "lifeSpan": {
+    "begin": "1962-07-29",
+    "ended": null
+  },
+  "aliases": [
+    "Carl Andrew Cox"
+  ],
+  "tags": [
+    "british",
+    "uk",
+    "techno",
+    "english"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 9771
+  },
+  "_cachedAt": 1781881034932
+}

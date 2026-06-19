@@ -1,0 +1,32 @@
+{
+  "found": true,
+  "id": "cba77ba2-862d-4cee-a8f6-d3f9daf7211c",
+  "name": "Live",
+  "sortName": "Live",
+  "type": "Group",
+  "gender": null,
+  "country": "US",
+  "disambiguation": "US alt rock band",
+  "lifeSpan": {
+    "begin": "1990",
+    "ended": null
+  },
+  "aliases": [
+    "Live",
+    "Līve"
+  ],
+  "tags": [
+    "rock",
+    "alternative rock",
+    "american",
+    "post-grunge",
+    "pop rock",
+    "alternative-rock"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 7411
+  },
+  "_cachedAt": 1781889567997
+}

@@ -1,0 +1,30 @@
+{
+  "found": true,
+  "id": "14008378-5900-4370-831e-3d17f9749caf",
+  "name": "Sven Väth",
+  "sortName": "Väth, Sven",
+  "type": "Person",
+  "gender": "male",
+  "country": "DE",
+  "disambiguation": "",
+  "lifeSpan": {
+    "begin": "1964-10-26",
+    "ended": null
+  },
+  "aliases": [
+    "Svan Väth",
+    "Sven Vath",
+    "Sven Vaeth"
+  ],
+  "tags": [
+    "trance",
+    "electronic",
+    "techno"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 1692
+  },
+  "_cachedAt": 1781887450465
+}

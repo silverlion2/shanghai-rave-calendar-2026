@@ -1,0 +1,550 @@
+{
+  "found": true,
+  "id": 1328,
+  "name": "Sven Väth",
+  "profile": "Sven Väth (born: 26 October 1964 in Obertshausen, Germany), is one of Germany's most enduring and internationally known DJs / producers. Since he began DJ'ing at the famous [url=https://www.discogs.com/label/611374]Dorian Gray[/url] club at the age of 18, he co-founded trendsetting labels [l=Eye Q Records], [l=Harthouse] and [l=Cocoon Recordings]; he ran the clubs [url=https://www.discogs.com/label/1863909]OMEN[/url] and Cocoon Club. He's been considered the #1 German DJ for ages, by many. One of his trademarks are his vinyl-only marathon sets.",
+  "nameVariations": [
+    "S Väth",
+    "S. Vaeth",
+    "S. Vath",
+    "S. Väth",
+    "S.V.",
+    "S.Väth",
+    "SVäth",
+    "Sven",
+    "Sven Uath",
+    "Sven V4th",
+    "Sven Vaeth",
+    "Sven Varth",
+    "Sven Vath",
+    "Sven Væth",
+    "SvenVäth",
+    "Swen Vath",
+    "Vaeth",
+    "Varth",
+    "Vath",
+    "Väth",
+    "Väth, Sven",
+    "Свен Фэт",
+    "司凡維特"
+  ],
+  "members": [],
+  "groups": [
+    "Astral Pilot",
+    "Metal Master",
+    "Barbarella",
+    "The Essence Of Nature",
+    "Odyssee Of Noises",
+    "Mosaic",
+    "Off",
+    "Summerbreeze"
+  ],
+  "urls": [
+    "https://svenvaeth.bandcamp.com",
+    "https://www.facebook.com/SvenVaethOfficial",
+    "https://www.instagram.com/svenvaeth_official",
+    "https://x.com/svenvaeth",
+    "https://en.wikipedia.org/wiki/Sven_V%C3%A4th",
+    "https://www.youtube.com/channel/UC65i9IyVAW59S9C428ou8RA",
+    "https://soundcloud.com/svenvath-music"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/IzX9eCNLlzJu2tx-zB5uHOMWlbMJJ4G4nwvt4uf_fIU/rs:fit/g:sm/q:90/h:778/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTc4MDk1MzE0MS0x/NTg5LmpwZWc.jpeg",
+      "width": 600,
+      "height": 778
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/snFGnP88gCzr9vHIxqa334EW2v1RKYEKkAw7Z550XyA/rs:fit/g:sm/q:90/h:800/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTc1NzM3NzcyNS0z/OTcyLmpwZWc.jpeg",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/b-O8UWV8FLekVmKn23BtQUW4fKIGlKYiP1u64N_z86w/rs:fit/g:sm/q:90/h:623/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTYyMDEzNjg1Ni04/OTgzLmpwZWc.jpeg",
+      "width": 600,
+      "height": 623
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/GaGMaoKUHWyV0psh1tqKeUv8LnXZsHXzmVg-meZe98w/rs:fit/g:sm/q:90/h:400/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTE2MzA4ODQzNS5q/cGVn.jpeg",
+      "width": 600,
+      "height": 400
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/NbsB-4MSdqrrvK9azuUByPzPS0dAiIeVa-0GnYigeW8/rs:fit/g:sm/q:90/h:222/w:281/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTIxNjA4MTgyMy5q/cGVn.jpeg",
+      "width": 281,
+      "height": 222
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/xsdEyVUpQgPnti3nagqhX96Px_3Cibhf42s6KUHbr6s/rs:fit/g:sm/q:90/h:380/w:450/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTIxNjA4MTc2My5q/cGVn.jpeg",
+      "width": 450,
+      "height": 380
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/pvHnduMgNNgyQW9IH9YVTJRkgEezbCc4ca1BXTx5wyU/rs:fit/g:sm/q:90/h:542/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MDAzLmpwZw.jpeg",
+      "width": 400,
+      "height": 542
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/1EfC4KWbKOBoV573Qn4z7q20ByO8ajJoS8j7eRUd_Xc/rs:fit/g:sm/q:90/h:900/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTc0ODA4MzQ0My02/ODExLmpwZWc.jpeg",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/I54iwV-sVloiWErtFvj7Re3GxCjeGkQd_yGiSr-cllU/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTYyMDEzNjg1Mi03/ODE3LmpwZWc.jpeg",
+      "width": 400,
+      "height": 400
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/XsqCDJcSXtNJcNcmVXxWX6XUzKIDNfGX-PEVwFg7ZxQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTc0NTgyMDIwOS03/NTIwLmpwZWc.jpeg",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/XRIoyRmp82BFkV7bcRrx6YxoLhqos8XQYFviV41zRcs/rs:fit/g:sm/q:90/h:1001/w:550/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTc0NTgyMDQ1Mi01/OTM3LmpwZWc.jpeg",
+      "width": 550,
+      "height": 1001
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/bN_JKkJ661tMKWPR2QX37dcAgAOWbczQi1XFpN0JWsM/rs:fit/g:sm/q:90/h:680/w:547/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTUzMTgyNDU5MS0x/OTA4LmpwZWc.jpeg",
+      "width": 547,
+      "height": 680
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/29toFzTKOeMIP5LI_YJh8KEwS0E32CC06KKA7Z62Dno/rs:fit/g:sm/q:90/h:318/w:318/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTQ2NDAzNzgxNy04/OTE1LmpwZWc.jpeg",
+      "width": 318,
+      "height": 318
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/XNfr_X_Ff3eKv4BSyrsHQboW2RtYxAyZlM9F-PPFMRk/rs:fit/g:sm/q:90/h:255/w:286/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTEzMzE0ODAzOC5q/cGVn.jpeg",
+      "width": 286,
+      "height": 255
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/I0crXlArsgmBE7x6RhK3dLDLzGhIFrc_VocS0NoH7og/rs:fit/g:sm/q:90/h:585/w:450/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTIxNjA4MTIxMy5q/cGVn.jpeg",
+      "width": 450,
+      "height": 585
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/yfG-F3hhPw4_ut1Zehz6Cw73AjnCv_Pqw_EVqF3rZBc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTc2MDM4MzUxMi0y/MDU4LmpwZWc.jpeg",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/9axceedL0Aj3VWdoKMAAMHGU-di4X-q7YRIArilC5bo/rs:fit/g:sm/q:90/h:308/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTQ3NTA4ODk0NS02/NzMyLmpwZWc.jpeg",
+      "width": 600,
+      "height": 308
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/NGnx6pyrIIqHO86q0pQbOZ2fiKN6JRe3DMKZKCSrols/rs:fit/g:sm/q:90/h:260/w:554/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTM4Njg5MjA1Ni04/MDMzLmpwZWc.jpeg",
+      "width": 554,
+      "height": 260
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/wzkv370w0t-kmFdLPM8cqWZLTu4NXVEo3k98VqlA_6M/rs:fit/g:sm/q:90/h:464/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTIwNzA5NDM2OS5q/cGVn.jpeg",
+      "width": 600,
+      "height": 464
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/9dGqkzjohMo1pskfKxclb_kBy4gFkDauC2Dt7Z1BnRI/rs:fit/g:sm/q:90/h:600/w:390/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTMwMDE0MDA5Mi5q/cGVn.jpeg",
+      "width": 390,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/5U8tvCZQ2L0z7tYFdU7Ia_XBXUEjSWmCJV6fu_SScTA/rs:fit/g:sm/q:90/h:283/w:425/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MDAxLmpwZw.jpeg",
+      "width": 425,
+      "height": 283
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/YDFoJYblvfHmTRLJpLINSTA4aJ71UHJRx2hQ0qETs7g/rs:fit/g:sm/q:90/h:490/w:425/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTA3NTYzMzk0MC5q/cGc.jpeg",
+      "width": 425,
+      "height": 490
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/0sL6xuNMp_rYnCOJGevzUs92jmTLktGtO9ED_PfUXOE/rs:fit/g:sm/q:90/h:218/w:200/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTIxNjA4MTI4My5q/cGVn.jpeg",
+      "width": 200,
+      "height": 218
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/HYFkfkdAXGNjfXsYIDSvZA9-JsP7tHDQfW6eBj-sA_k/rs:fit/g:sm/q:90/h:220/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTIxNjA4MTEwNi5q/cGVn.jpeg",
+      "width": 300,
+      "height": 220
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/8qOjkWOpf_5Axtfjg-Q6DVQP_rY0zqUm-Sc_7iz6I2U/rs:fit/g:sm/q:90/h:371/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTIxNjA4MTkxNy5q/cGVn.jpeg",
+      "width": 300,
+      "height": 371
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/AcITLVtHMrl1-7did2_DsmmIHaR4-PXHWAFesP0nv-U/rs:fit/g:sm/q:90/h:525/w:350/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTIxNjA4MTk5MC5q/cGVn.jpeg",
+      "width": 350,
+      "height": 525
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/RGkGQB8q_31UL98_5ld3UCmp4ANVisZlS7UC17JKO3o/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTIxNjA4MjEyNC5q/cGVn.jpeg",
+      "width": 600,
+      "height": 450
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/vWvtsxwfpGVw0_tcKbSXVcpZJ82SIP2kdvh6sDjMgJI/rs:fit/g:sm/q:90/h:269/w:448/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTIxNjA4MTQyNC5q/cGVn.jpeg",
+      "width": 448,
+      "height": 269
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/9pK7L_ShOKhrEmn2js2AvWrSdzq4K98ks6j48a46GcM/rs:fit/g:sm/q:90/h:247/w:454/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTE1Njg5NzM3MC5q/cGVn.jpeg",
+      "width": 454,
+      "height": 247
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/2SO_82T2wZfwm7qoo45SY_aW5mRhFtYilfFCsI3to48/rs:fit/g:sm/q:90/h:180/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTIxNjA4MTA0OC5q/cGVn.jpeg",
+      "width": 300,
+      "height": 180
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/qnYhAz-HXTpFNePvjMjsos9yCKWF4xun1Jx5gD0HqSY/rs:fit/g:sm/q:90/h:337/w:390/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTIxNjA4MTk0NC5q/cGVn.jpeg",
+      "width": 390,
+      "height": 337
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/24vZADMBvZYjq2yB6giquhCDues3byOMkq0ZQB-MUUw/rs:fit/g:sm/q:90/h:336/w:560/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTIxNjA4MTgwMi5q/cGVn.jpeg",
+      "width": 560,
+      "height": 336
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/ljFiiCLUuU7z_3J_L8qyf3qaQvcaiJBQM0JppYIATWQ/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTIxNjA4MjIzOS5q/cGVn.jpeg",
+      "width": 600,
+      "height": 450
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/Im0TTgjXPQKCQUH6czx0iSBMXU47F2w9tcfmv05k0sM/rs:fit/g:sm/q:90/h:231/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTE1MzkzMTUyMi5q/cGVn.jpeg",
+      "width": 300,
+      "height": 231
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/bjygK5MU2cdc812hHYDWDSLOtKhKrVMK71hmBLl42FU/rs:fit/g:sm/q:90/h:360/w:480/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTA4MTAzNTI3Ni5q/cGc.jpeg",
+      "width": 480,
+      "height": 360
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/T6E8TeTSsQIdAIBjhSyG8LT-RWih0ngeRg_7SQ7CNxU/rs:fit/g:sm/q:90/h:188/w:250/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTA3Mjg5NDQ0Ni5q/cGc.jpeg",
+      "width": 250,
+      "height": 188
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/wlrAov2q72uvnr-oPnpoRcZjpkT_iTvPY99i4-JkBlY/rs:fit/g:sm/q:90/h:250/w:166/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTIxNjA4MTAzMS5q/cGVn.jpeg",
+      "width": 166,
+      "height": 250
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/1Pyhw8E7m_EURk9AiSqWYerHfWtJFycMpDdsza0T21M/rs:fit/g:sm/q:90/h:216/w:336/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTIxNjA4MTA2My5q/cGVn.jpeg",
+      "width": 336,
+      "height": 216
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/izTUCPq2dTKv8AX9fgkvGKen0-sgSbbIol9R1f6LQU0/rs:fit/g:sm/q:90/h:202/w:200/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTIxNjA4MTE4Mi5q/cGVn.jpeg",
+      "width": 200,
+      "height": 202
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/8kAd33Fwh1OIQ9G7ZP5Uyv8dXeBEo0Rg7-t0hxpDY_4/rs:fit/g:sm/q:90/h:768/w:510/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTIxNjA4MTYyNS5q/cGVn.jpeg",
+      "width": 510,
+      "height": 768
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/-FatfJwaZ0P3JYRQQeTKM71HsmkTbL2dXSMb9ZyOVsY/rs:fit/g:sm/q:90/h:915/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTczMDM5MDczMy0x/MTgyLmpwZWc.jpeg",
+      "width": 600,
+      "height": 915
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/W1z6d_hK0GbQ2fcr2Q909IsEwK7ELWayVLS8m6ABpiY/rs:fit/g:sm/q:90/h:165/w:220/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTczMDM5MDczMi05/Nzk1LmpwZWc.jpeg",
+      "width": 220,
+      "height": 165
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/4-sHOSOZgYRpVcqeIEERkEwcnL_pA1ETjGhcy1mWCNM/rs:fit/g:sm/q:90/h:449/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTczMDM5MDczMi05/NTI0LmpwZWc.jpeg",
+      "width": 600,
+      "height": 449
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/tkIN9tOfm-7V-vZpQtHfpisPraxs8vPncJt8FFVHuv0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTc0NTgyMTMxNi01/NzQwLmpwZWc.jpeg",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/lH5DsAbjC1cid_2EibmLwKLRY4F_W8w_4gtPSHnUb3A/rs:fit/g:sm/q:90/h:800/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTc2Njk5OTUwMC04/NjQwLmpwZWc.jpeg",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/i3BaO3lb89mWxotB5Kjofemc0K-9dNwdExWMr8eCVWo/rs:fit/g:sm/q:90/h:313/w:250/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTIxNjA4MTY0My5q/cGVn.jpeg",
+      "width": 250,
+      "height": 313
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/tTD_jeJKDkzwL4G0P5PKBM7PHlusv2JsJ9HNMbvUTK0/rs:fit/g:sm/q:90/h:399/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTIxNjA4MjI2NS5q/cGVn.jpeg",
+      "width": 600,
+      "height": 399
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/zGkRZLI3Dm-OUbGnxtQh_7zWv_pLu2FIhtFefhd8cak/rs:fit/g:sm/q:90/h:253/w:338/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTIxNjA4MTI5NS5q/cGVn.jpeg",
+      "width": 338,
+      "height": 253
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Not On Label (Nicolas Barnes Self-released)",
+    "Lehmann Audio",
+    "Cocoon Recordings",
+    "Groove",
+    "Stereo Deluxe",
+    "Resident Advisor",
+    "Circus Recordings",
+    "Virgin"
+  ],
+  "releases": [
+    {
+      "title": "Fusion",
+      "year": 2026,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Cala Llonga (Nicolas Barnes Edit)",
+      "year": 2025,
+      "label": "Not On Label (Nicolas Barnes Self-released)",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "Retrospective Collection",
+      "year": 2025,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Flashback",
+      "year": 2024,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Electrica Salsa / Feiern",
+      "year": 2023,
+      "label": "Lehmann Audio",
+      "role": "Main",
+      "format": "7\", Ltd"
+    },
+    {
+      "title": "What I Used To Play",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Catharsis (Remixes)",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Catharsis",
+      "year": 2022,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Mystic Voices",
+      "year": 2022,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Feiern",
+      "year": 2021,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "In The Mix (The Sound Of The 20th Season)",
+      "year": 2019,
+      "label": "Cocoon Recordings",
+      "role": "Main",
+      "format": "2xCD, Comp, Mixed"
+    },
+    {
+      "title": "In The Mix (The Sound Of The 19th Season)",
+      "year": 2018,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Summerväth",
+      "year": 2017,
+      "label": "Groove",
+      "role": "Main",
+      "format": "CD, Comp, Mixed"
+    },
+    {
+      "title": "In The Mix (The Sound Of The 18th Season)",
+      "year": 2017,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "In The Mix (The Sound Of The 17th Season)",
+      "year": 2016,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Electrica Salsa",
+      "year": 2016,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Accident In Paradise (Kink Rmx) / Robot (Kölsch Rmx)",
+      "year": 2016,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "In The Mix (The Sound Of The 16th Season)",
+      "year": 2015,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Coming Home",
+      "year": 2014,
+      "label": "Stereo Deluxe",
+      "role": "Main",
+      "format": "CD, Comp"
+    },
+    {
+      "title": "RA.EX200 Sven Väth",
+      "year": 2014,
+      "label": "Resident Advisor",
+      "role": "Main",
+      "format": "File, MP3, 320"
+    },
+    {
+      "title": "L'Esperanza (Âme Reinterpretation)",
+      "year": 2014,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "In The Mix (The Sound Of The 15th Season)",
+      "year": 2014,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "RA.369",
+      "year": 2013,
+      "label": "Resident Advisor",
+      "role": "Main",
+      "format": "File, MP3, Mixed, 160"
+    },
+    {
+      "title": "In The Mix (The Sound Of The 14th Season)",
+      "year": 2013,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "In The Mix (The Sound Of The 13th Season)",
+      "year": 2012,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Ballet Romance / Love Cry",
+      "year": 2011,
+      "label": "Circus Recordings",
+      "role": "Main",
+      "format": "12\", Ltd, Promo"
+    },
+    {
+      "title": "In The Mix (The Sound Of The 12th Season)",
+      "year": 2011,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "30 Years Of Sven Väth",
+      "year": 2011,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "In The Mix (The Sound Of The 11th Season)",
+      "year": 2010,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Cocoon Classics",
+      "year": 2009,
+      "label": null,
+      "role": "Main"
+    }
+  ],
+  "releaseCount": 50,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/1328"
+  },
+  "_cachedAt": 1781887461083
+}

@@ -1,0 +1,99 @@
+{
+  "found": true,
+  "id": 837509,
+  "name": "VJ (2)",
+  "profile": "",
+  "nameVariations": [
+    "V.J."
+  ],
+  "members": [],
+  "groups": [
+    "Decayed"
+  ],
+  "urls": [],
+  "images": [],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Hoth Records",
+    "Universal Tongue, Satanhades Productions",
+    "Impaler Of Trendies Productions",
+    "Luci Dist. Productions",
+    "Deekhaid Records"
+  ],
+  "releases": [
+    {
+      "title": "In Lustful Mayhem",
+      "year": 2023,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "13 Candles Of Doom",
+      "year": 2011,
+      "label": "Hoth Records",
+      "role": "Appearance",
+      "format": "CDr, Comp, Ltd"
+    },
+    {
+      "title": "Shadow-Land",
+      "year": 2010,
+      "label": "Universal Tongue, Satanhades Productions",
+      "role": "Appearance",
+      "format": "CD, Comp, Ltd"
+    },
+    {
+      "title": "Chaos Underground",
+      "year": 2010,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Live '95 EP",
+      "year": 2007,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Live 9/9/99",
+      "year": 2000,
+      "label": "Impaler Of Trendies Productions",
+      "role": "Appearance",
+      "format": "Cass, Ltd"
+    },
+    {
+      "title": "Ataque Infernal",
+      "year": 2000,
+      "label": "Luci Dist. Productions",
+      "role": "Appearance",
+      "format": "Cass, Comp"
+    },
+    {
+      "title": "A Sacrifice To Darkness",
+      "year": 1998,
+      "label": "Deekhaid Records",
+      "role": "Appearance",
+      "format": "CD"
+    },
+    {
+      "title": "Behold The Wrath",
+      "year": 1997,
+      "label": "Deekhaid Records",
+      "role": "Appearance",
+      "format": "7\", Ltd, Num"
+    },
+    {
+      "title": "Resurrectiónem Mortuórum",
+      "year": 1996,
+      "label": null,
+      "role": "Appearance"
+    }
+  ],
+  "releaseCount": 10,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/837509"
+  },
+  "_cachedAt": 1781885564009
+}

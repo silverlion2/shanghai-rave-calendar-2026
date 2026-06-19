@@ -1,0 +1,29 @@
+{
+  "found": true,
+  "id": "e7385b1f-6356-45e0-ae5e-f690f19ec508",
+  "name": "YUQI",
+  "sortName": "YUQI",
+  "type": "Person",
+  "gender": "female",
+  "country": "KR",
+  "disambiguation": "",
+  "lifeSpan": {
+    "begin": "1999-09-23",
+    "ended": null
+  },
+  "aliases": [
+    "宋雨琦",
+    "Yuqi",
+    "우기"
+  ],
+  "tags": [
+    "c-pop",
+    "k-pop"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 12
+  },
+  "_cachedAt": 1781889749284
+}

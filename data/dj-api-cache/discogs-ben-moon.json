@@ -1,0 +1,141 @@
+{
+  "found": true,
+  "id": 1729601,
+  "name": "Ben Moon",
+  "profile": "audio visual artist and technician based in London",
+  "nameVariations": [],
+  "members": [],
+  "groups": [
+    "Forest Creature",
+    "Sounding (2)"
+  ],
+  "urls": [
+    "http://www.avbenmoon.com/",
+    "http://twitter.com/AVbenmoon",
+    "http://vine.co/u/931627195120631808",
+    "http://instagram.com/avbenmoon",
+    "http://plus.google.com/105286792563059838048",
+    "http://avbenmoon.bigcartel.com/",
+    "http://myspace.com/ben_moon",
+    "http://www.last.fm/user/ben_moon",
+    "http://soundcloud.com/sounding-1",
+    "http://www.youtube.com/user/benmoon1",
+    "http://vimeo.com/avbenmoon",
+    "http://soundcloud.com/u-r-u-ss-b"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/jDZab4K1YGGxrSd39DFoAVcwOekF9DFx_4tewJ8fBQo/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE3Mjk2/MDEtMTQxMzk4MDQ0/MC02NTgzLmpwZWc.jpeg",
+      "width": 400,
+      "height": 400
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/P-2IhsIWBe7V4Y1_RRMMT44keXmCZZDFfa2ktQp3DHM/rs:fit/g:sm/q:90/h:370/w:370/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE3Mjk2/MDEtMTQxMzk4MDQ0/MC01MTk2LmpwZWc.jpeg",
+      "width": 370,
+      "height": 370
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/Q5a7E4eYzd09YLV2ZSc0cidQVsBzSqNlhU_5qtLI9vY/rs:fit/g:sm/q:90/h:370/w:370/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE3Mjk2/MDEtMTQxMzk4MDQz/OS02ODAwLmpwZWc.jpeg",
+      "width": 370,
+      "height": 370
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Denovali Records",
+    "Not On Label (Forest Creature Self-released)",
+    "Promo Only"
+  ],
+  "releases": [
+    {
+      "title": "Relationships Between Inner & Outer Space",
+      "year": 2017,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Moon Zero",
+      "year": 2015,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Tombs Loss",
+      "year": 2014,
+      "label": "Denovali Records",
+      "role": "Appearance",
+      "format": "2xCD, Comp"
+    },
+    {
+      "title": "Tombs",
+      "year": 2014,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Loss",
+      "year": 2014,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Mines",
+      "year": 2010,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "With Patrick Derbyshire",
+      "year": 2008,
+      "label": "Not On Label (Forest Creature Self-released)",
+      "role": "Appearance",
+      "format": "CDr, MiniAlbum, Ltd, Num"
+    },
+    {
+      "title": "Promo Only Rhythm Club: May 14",
+      "year": 2014,
+      "label": "Promo Only",
+      "role": "TrackAppearance",
+      "format": "CD, Comp, Promo"
+    },
+    {
+      "title": "Promo Only Rhythm Club: October 14",
+      "year": 2014,
+      "label": "Promo Only",
+      "role": "TrackAppearance",
+      "format": "CD, Comp, Promo"
+    },
+    {
+      "title": "Promo Only // Mainstream Club - January 2014",
+      "year": 2014,
+      "label": "Promo Only",
+      "role": "TrackAppearance",
+      "format": "2xCD, Comp, Promo"
+    },
+    {
+      "title": "Promo Only Rhythm Club: December 13",
+      "year": 2013,
+      "label": "Promo Only",
+      "role": "TrackAppearance",
+      "format": "CD, Comp, Promo"
+    },
+    {
+      "title": "Promo Only // Mainstream Club - May 2013",
+      "year": 2013,
+      "label": "Promo Only",
+      "role": "TrackAppearance",
+      "format": "2xCD, Comp, Promo"
+    }
+  ],
+  "releaseCount": 12,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/1729601"
+  },
+  "_cachedAt": 1781889091162
+}

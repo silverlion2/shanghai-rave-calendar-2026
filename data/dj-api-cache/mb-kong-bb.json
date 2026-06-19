@@ -1,0 +1,24 @@
+{
+  "found": true,
+  "id": "b59e0021-0b7f-4ed3-932d-c695e73e9c97",
+  "name": "Bernd Bogensdorfer",
+  "sortName": "Bogensdorfer, Bernd",
+  "type": "Person",
+  "gender": "male",
+  "country": "AT",
+  "disambiguation": "",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [
+    "B.B. Kong",
+    "BB Kong"
+  ],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 1790
+  },
+  "_cachedAt": 1781886359696
+}

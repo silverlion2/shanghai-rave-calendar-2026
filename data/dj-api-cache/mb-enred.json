@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "ecef9ca8-ce9d-4cc4-9d92-995f4a01985f",
+  "name": "EnRedaDos",
+  "sortName": "EnRedaDos",
+  "type": "Group",
+  "gender": null,
+  "country": null,
+  "disambiguation": "",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 7
+  },
+  "_cachedAt": 1781889524363
+}

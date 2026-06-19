@@ -1,0 +1,32 @@
+{
+  "found": true,
+  "id": "dcc5653c-3e3f-4666-a520-45fb032694a7",
+  "name": "Surgeon",
+  "sortName": "Surgeon",
+  "type": "Person",
+  "gender": "male",
+  "country": "GB",
+  "disambiguation": "UK electronic musician & DJ Anthony Child",
+  "lifeSpan": {
+    "begin": "1971-05-01",
+    "ended": null
+  },
+  "aliases": [
+    "The Surgeon"
+  ],
+  "tags": [
+    "birmingham sound",
+    "electronic",
+    "industrial techno",
+    "techno",
+    "uk",
+    "english",
+    "british"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 86
+  },
+  "_cachedAt": 1781887476966
+}

@@ -1,0 +1,290 @@
+{
+  "found": true,
+  "id": 252122,
+  "name": "Dio (2)",
+  "profile": "US Heavy Metal band formed by singer [a=Ronnie James Dio] and drummer [a=Vinny Appice] in 1982 following their depature from [a=Black Sabbath].  The line-up changed many times with RJD being the only constant member. \r\n\r\nActive between 1982–1991, and subsequently 1993–2009, until the death of Dio following a diagnosis of stomach cancer in late 2009.",
+  "nameVariations": [
+    "\"Dio\"",
+    "D10",
+    "Rainbow / Dio",
+    "Ronnie Dio",
+    "Ronnie James Dio",
+    "ДИО",
+    "Рони Джеймз Дио",
+    "ディオ",
+    "디오"
+  ],
+  "members": [
+    "Rudy Sarzo",
+    "Jens Johansson",
+    "Ronald Padavona",
+    "Jimmy Bain",
+    "Rowan Robertson",
+    "Vinny Appice",
+    "Jeff Pilson",
+    "Vivian Campbell",
+    "Claude Schnell",
+    "Scott Warren",
+    "Teddy Cook",
+    "Simon Wright (4)",
+    "Jerry Best",
+    "Craig Goldy",
+    "Doug Aldrich",
+    "Jake Williams (5)",
+    "Tracy Grijalva"
+  ],
+  "groups": [],
+  "urls": [
+    "https://ronniejamesdio.com/",
+    "https://myspace.com/dioofficial",
+    "https://en.wikipedia.org/wiki/Dio_(band)",
+    "https://www.facebook.com/share/1CV7FwunHJ/",
+    "https://www.instagram.com/_ronniejamesdio?igsh=MW5lMXFvajZwZ2RoeA==",
+    "https://on.soundcloud.com/p2GdjI4V58OAS9wmWU",
+    "https://x.com/OfficialRJDio",
+    "https://youtube.com/@ronniejamesdio?si=D2NjdiNuXCNX98jb"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/n6W5R9v-lvdJl-UNHQr9S9JINnFH9OSZy_cq2D9hxng/rs:fit/g:sm/q:90/h:399/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MjEy/Mi0xNzc3NzM5Mjg2/LTExODguanBlZw.jpeg",
+      "width": 600,
+      "height": 399
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/StX2SURjFAO_gQYfpecaJ2RAw22GkuFC8L1cs8HsvW0/rs:fit/g:sm/q:90/h:515/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MjEy/Mi0xNzc3NzM4OTg1/LTI3MjUuanBlZw.jpeg",
+      "width": 600,
+      "height": 515
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Vertigo, Vertigo, Universal Music Recordings, Universal Music Recordings, Mercury, Mercury, UMC, UMC",
+    "BMG, BMG",
+    "BMG",
+    "Rhino Records (2), Rhino Records (2), Warner Records, Warner Records",
+    "BMG 8-Track Classics Live!, BMG",
+    "UMC, Spectrum Music (2)",
+    "Mercury",
+    "MVD Audio",
+    "Wet Music (2)",
+    "Warner Bros. Records, Roadrunner Records",
+    "Niji Entertainment Group",
+    "Eagle Vision",
+    "Rhino Custom Products",
+    "Eagle Records",
+    "ST2 Records, Spitfire Records",
+    "Flashback Records",
+    "DA Records (2)",
+    "Connoisseur Collection"
+  ],
+  "releases": [
+    {
+      "title": "The Complete Albums 1983-1993",
+      "year": 2025,
+      "label": "Vertigo, Vertigo, Universal Music Recordings, Universal Music Recordings, Mercury, Mercury, UMC, UMC",
+      "role": "Main",
+      "format": "LP, Album, RE, RM, RP + LP, Album, RE, RM, RP + LP"
+    },
+    {
+      "title": "The Last In Live",
+      "year": 2024,
+      "label": "BMG, BMG",
+      "role": "Main",
+      "format": "12\", EP, RSD, Pic"
+    },
+    {
+      "title": "The Complete Donington Collection",
+      "year": 2024,
+      "label": "BMG",
+      "role": "Main",
+      "format": "Box, Comp, Ltd + 2xLP, Album, RE, 180 + 2xLP, S/Si"
+    },
+    {
+      "title": "Live In Fresno 1983",
+      "year": 2023,
+      "label": "Rhino Records (2), Rhino Records (2), Warner Records, Warner Records",
+      "role": "Main",
+      "format": "2xLP, Album, RSD, Num, Red"
+    },
+    {
+      "title": "Dreamers Never Die",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "The Studio Albums 1996 - 2004",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Double Dose Of Donington",
+      "year": 2022,
+      "label": "BMG",
+      "role": "Main",
+      "format": "12\", RSD, Pic"
+    },
+    {
+      "title": "Donington '83",
+      "year": 2022,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Donington '87",
+      "year": 2022,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "God Hates Heavy Metal",
+      "year": 2021,
+      "label": "BMG, BMG",
+      "role": "Main",
+      "format": "12\", RSD, Ltd, Pic"
+    },
+    {
+      "title": "Annica",
+      "year": 2020,
+      "label": "BMG, BMG",
+      "role": "Main",
+      "format": "12\", RSD, Pic"
+    },
+    {
+      "title": "Dream Evil",
+      "year": 2020,
+      "label": "BMG",
+      "role": "Main",
+      "format": "12\", RSD, Pic"
+    },
+    {
+      "title": "The Last In Line",
+      "year": 2019,
+      "label": "BMG",
+      "role": "Main",
+      "format": "12\", Shape, RSD, Ltd, Pic"
+    },
+    {
+      "title": "Rainbow In The Dark (Live) / Killing The Dragon",
+      "year": 2019,
+      "label": "BMG, BMG",
+      "role": "Main",
+      "format": "12\", RSD, Pic"
+    },
+    {
+      "title": "BMG 8-Track Classics Live!",
+      "year": 2019,
+      "label": "BMG 8-Track Classics Live!, BMG",
+      "role": "Main",
+      "format": "CD, Comp"
+    },
+    {
+      "title": "Live in Philadelphia 1984",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Holy Diver - Live At 35",
+      "year": 2018,
+      "label": "BMG",
+      "role": "Main",
+      "format": "10\", Shape, RSD, Single, Ltd, Pic"
+    },
+    {
+      "title": "5 Classic Albums",
+      "year": 2017,
+      "label": "UMC, Spectrum Music (2)",
+      "role": "Main",
+      "format": "CD, Album, RE + CD, Album, RE + CD, Album, RE + CD"
+    },
+    {
+      "title": "3 Original Albums",
+      "year": 2016,
+      "label": "Mercury",
+      "role": "Main",
+      "format": "Box, Comp + 3xCD, Album, RE"
+    },
+    {
+      "title": "From Heaven To Hell",
+      "year": 2016,
+      "label": "MVD Audio",
+      "role": "Main",
+      "format": "CD, Transcription"
+    },
+    {
+      "title": "Super Rock 85 In Japan / In Concert - Historical Live Performance / Live At Budokan Tokyo",
+      "year": 2016,
+      "label": "Wet Music (2)",
+      "role": "Main",
+      "format": "3xDVD-V"
+    },
+    {
+      "title": "A Decade Of Dio: 1983-1993",
+      "year": 2016,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Chasing Rainbows - Live At The Coliseum Washington 1984",
+      "year": 2015,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Live In London Hammersmith Apollo 1993",
+      "year": 2014,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Stand Up And Shout For Cancer",
+      "year": 2014,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Holy Diver",
+      "year": 2013,
+      "label": "Warner Bros. Records, Roadrunner Records",
+      "role": "Main",
+      "format": "7\", RSD, Single, Ltd, Oxb"
+    },
+    {
+      "title": "Snapshot",
+      "year": 2013,
+      "label": "Niji Entertainment Group",
+      "role": "Main",
+      "format": "CD, Comp"
+    },
+    {
+      "title": "Finding The Sacred Heart – Live In Philly 1986 –",
+      "year": 2013,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "The Very Beast Of Dio Vol. 2",
+      "year": 2012,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "The Singles Box Set (1983-1993)",
+      "year": 2012,
+      "label": null,
+      "role": "Main"
+    }
+  ],
+  "releaseCount": 50,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/252122"
+  },
+  "_cachedAt": 1781885013413
+}

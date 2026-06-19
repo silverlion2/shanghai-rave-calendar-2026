@@ -1,0 +1,28 @@
+{
+  "found": true,
+  "id": "c5af0c3f-e401-43ed-a096-b504606a05cb",
+  "name": "Ben Klock",
+  "sortName": "Klock, Ben",
+  "type": "Person",
+  "gender": "male",
+  "country": "DE",
+  "disambiguation": "German techno producer",
+  "lifeSpan": {
+    "begin": "1972",
+    "ended": null
+  },
+  "aliases": [
+    "Ben E. Clock",
+    "Benjamin Klock"
+  ],
+  "tags": [
+    "techno",
+    "minimal techno"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 19795
+  },
+  "_cachedAt": 1781887383825
+}

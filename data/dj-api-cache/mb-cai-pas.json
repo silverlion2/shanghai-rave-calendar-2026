@@ -1,0 +1,22 @@
+{
+  "found": true,
+  "id": "b58e8fff-5969-4d13-b774-367ff01cf164",
+  "name": "Cai",
+  "sortName": "Cai",
+  "type": "Group",
+  "gender": null,
+  "country": "ES",
+  "disambiguation": "Spanish group",
+  "lifeSpan": {
+    "end": "1982",
+    "ended": true
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 8064
+  },
+  "_cachedAt": 1781889259461
+}

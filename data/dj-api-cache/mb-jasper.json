@@ -1,0 +1,32 @@
+{
+  "found": true,
+  "id": "8dd7d6f8-8ede-4ecd-84a6-e40dd235c075",
+  "name": "Al Martino",
+  "sortName": "Martino, Al",
+  "type": "Person",
+  "gender": "male",
+  "country": "US",
+  "disambiguation": "singer & actor",
+  "lifeSpan": {
+    "begin": "1927-10-07",
+    "end": "2009-10-13",
+    "ended": true
+  },
+  "aliases": [
+    "Jasper Cini"
+  ],
+  "tags": [
+    "traditional pop",
+    "adult contemporary",
+    "1960s",
+    "crooner",
+    "easy listening",
+    "classic pop and rock"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 485
+  },
+  "_cachedAt": 1781886207824
+}

@@ -1,0 +1,29 @@
+{
+  "found": true,
+  "id": "5fab339d-5dd4-42b0-8d70-496a4493ed59",
+  "name": "moe.",
+  "sortName": "moe.",
+  "type": "Group",
+  "gender": null,
+  "country": "US",
+  "disambiguation": "US jam band",
+  "lifeSpan": {
+    "begin": "1989",
+    "ended": null
+  },
+  "aliases": [
+    "Moe"
+  ],
+  "tags": [
+    "rock",
+    "progressive rock",
+    "american",
+    "jam band"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 1459
+  },
+  "_cachedAt": 1781885159996
+}

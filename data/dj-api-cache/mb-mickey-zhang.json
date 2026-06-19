@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "115b5510-6eb5-48a2-abac-35900e299d10",
+  "name": "Mickey Zhang",
+  "sortName": "Mickey Zhang",
+  "type": "Person",
+  "gender": "male",
+  "country": "JP",
+  "disambiguation": "",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 1184
+  },
+  "_cachedAt": 1781884992913
+}

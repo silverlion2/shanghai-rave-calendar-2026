@@ -1,0 +1,24 @@
+{
+  "found": true,
+  "id": "82f2714c-f532-482a-859a-5b170901f9e9",
+  "name": "Nico Moreno",
+  "sortName": "Moreno, Nico",
+  "type": "Person",
+  "gender": "male",
+  "country": "FR",
+  "disambiguation": "French DJ",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [
+    "techno",
+    "industrial techno"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 6697
+  },
+  "_cachedAt": 1781881298378
+}

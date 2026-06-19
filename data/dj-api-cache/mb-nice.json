@@ -1,0 +1,22 @@
+{
+  "found": true,
+  "id": "7581c718-3c61-455e-87f2-151c35ec6774",
+  "name": "Nice Nice",
+  "sortName": "Nice Nice",
+  "type": "Group",
+  "gender": null,
+  "country": null,
+  "disambiguation": "",
+  "lifeSpan": {
+    "begin": "1999",
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 1372
+  },
+  "_cachedAt": 1781884962753
+}

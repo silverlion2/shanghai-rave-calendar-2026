@@ -1,0 +1,264 @@
+{
+  "found": true,
+  "id": 2596,
+  "name": "Christian Wünsch",
+  "profile": "Techno DJ, producer from Spain. Born in Monaco, he spent most of his life in the North of Spain. He started his own labels Tsunami Records and Nine Records.\r\n",
+  "nameVariations": [
+    "C. Wünsch",
+    "Chris Wunsch",
+    "Christian",
+    "Christian Wunch",
+    "Christian Wunsch",
+    "Christian Wünch",
+    "Cristian Wunsch",
+    "Wunsch, Christian",
+    "Wünsch"
+  ],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "https://www.facebook.com/ChWunsch/",
+    "https://www.mixcloud.com/discover/christian-wunsch/"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/mCHOD7dpDTOdBsG9vy7i0_pb_EebxEWhjYTp1eMA7oU/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1OTYt/MTYyMjM3NDc3Ni0y/NTYxLmpwZWc.jpeg",
+      "width": 500,
+      "height": 500
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/wjn-1zHV8qsCgk6nVig669y43cU6tSLtZOidNV893mQ/rs:fit/g:sm/q:90/h:300/w:244/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1OTYt/MTEwNDQ5MDIyNi5q/cGc.jpeg",
+      "width": 244,
+      "height": 300
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/WwluuOhJW4cv9khFTErWmY3KXfNpBnN5x9ksQ3A4PEw/rs:fit/g:sm/q:90/h:127/w:170/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1OTYt/MTI1Nzg5ODA1My5q/cGVn.jpeg",
+      "width": 170,
+      "height": 127
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/RXHHQHfyB8UZ5716VOmnB7c8Mp6Gw1F45sX_rWo5lAk/rs:fit/g:sm/q:90/h:419/w:253/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1OTYt/MDAxLmpwZw.jpeg",
+      "width": 253,
+      "height": 419
+    },
+    {
+      "type": "secondary",
+      "uri": "https://i.discogs.com/cef7rJEUL7aRqkyOSXJPIhe7m1sitYRCb2iwmSIhNtE/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1OTYt/MTEwNDQ5MDI0NC5q/cGc.jpeg",
+      "width": 600,
+      "height": 450
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Tsunami Records",
+    "Soma Quality Recordings",
+    "Ascend Recordings",
+    "Audiodrome",
+    "Sonido Denso S.L.",
+    "Resident Advisor Podcast"
+  ],
+  "releases": [
+    {
+      "title": "Black Sun ",
+      "year": 2023,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Introspective",
+      "year": 2020,
+      "label": "Tsunami Records",
+      "role": "Main",
+      "format": "2x12\", Album, Cle"
+    },
+    {
+      "title": "The End of the Monarchies",
+      "year": 2020,
+      "label": "Tsunami Records",
+      "role": "Main",
+      "format": "2xFile, MP3, 320"
+    },
+    {
+      "title": " Killing the Planet",
+      "year": 2019,
+      "label": "Tsunami Records",
+      "role": "Main",
+      "format": "3xFile, FLAC, EP, los"
+    },
+    {
+      "title": "Abnormal Behaviour EP",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Simulated Reality",
+      "year": 2019,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Modern Theories of Genetics",
+      "year": 2018,
+      "label": "Tsunami Records",
+      "role": "Main",
+      "format": "8xFile, MP3, EP, 320"
+    },
+    {
+      "title": "Multiverse",
+      "year": 2018,
+      "label": "Tsunami Records",
+      "role": "Main",
+      "format": "3xFile, MP3, 320"
+    },
+    {
+      "title": "Sadistic Rituals: The Remixes Part 1",
+      "year": 2018,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Sadistic Rituals",
+      "year": 2017,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "15 Years",
+      "year": 2016,
+      "label": "Tsunami Records",
+      "role": "Main",
+      "format": "2x12\", Comp"
+    },
+    {
+      "title": "Random Mutation",
+      "year": 2016,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Waves Propagation",
+      "year": 2015,
+      "label": "Soma Quality Recordings",
+      "role": "Main",
+      "format": "4xFile, MP3, 320"
+    },
+    {
+      "title": "Unknown Landscapes Vol II",
+      "year": 2014,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Internal Conversion",
+      "year": 2014,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Spectral Lines",
+      "year": 2013,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Magnetic Changes",
+      "year": 2012,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "False Flag",
+      "year": 2011,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Time Wave Zero - The Remakes",
+      "year": 2010,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Biometric Visas",
+      "year": 2010,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Selección Natural Parte 3",
+      "year": 2009,
+      "label": "Tsunami Records",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Las Semillas De Los Espíritus",
+      "year": 2008,
+      "label": "Tsunami Records",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "Newrhythmic 7",
+      "year": 2008,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Nature's Revenge",
+      "year": 2006,
+      "label": "Tsunami Records",
+      "role": "Main",
+      "format": "12\""
+    },
+    {
+      "title": "No Man's Land (The Remixes)",
+      "year": 2006,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "El Silencio Habla / Fully Sanctioned",
+      "year": 2005,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Food Of The Gods",
+      "year": 2004,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "The Damage Done Part 2",
+      "year": 2004,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Les Paradis Artificiels",
+      "year": 2004,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "The Damage Done",
+      "year": 2004,
+      "label": null,
+      "role": "Main"
+    }
+  ],
+  "releaseCount": 50,
+  "dataQuality": "Correct",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/2596"
+  },
+  "_cachedAt": 1781887712652
+}

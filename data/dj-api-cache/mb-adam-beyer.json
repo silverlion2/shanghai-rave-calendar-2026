@@ -1,0 +1,44 @@
+{
+  "found": true,
+  "id": "0d6daf47-0be9-44ee-a9e8-fb5a7b718538",
+  "name": "Adam Beyer",
+  "sortName": "Beyer, Adam",
+  "type": "Person",
+  "gender": "male",
+  "country": "SE",
+  "disambiguation": "",
+  "lifeSpan": {
+    "begin": "1976-05-15",
+    "ended": null
+  },
+  "aliases": [
+    "Adam Beyer & Bart Skils",
+    "Adam Thomas Beyer",
+    "Adam Bayer"
+  ],
+  "tags": [
+    "trance",
+    "electronic",
+    "pop",
+    "dance",
+    "techno",
+    "electronica",
+    "breakbeat",
+    "breaks",
+    "minimal techno",
+    "tech house",
+    "club",
+    "edm",
+    "tech-house",
+    "acid techno",
+    "melodic techno",
+    "melodic house",
+    "swedish techno"
+  ],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 6933
+  },
+  "_cachedAt": 1781881049117
+}

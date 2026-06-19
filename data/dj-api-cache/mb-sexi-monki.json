@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "id": "9a472a96-3e4e-47f1-bc55-395f91fe6e89",
+  "name": "Monki Monki",
+  "sortName": "Monki Monki",
+  "type": "Group",
+  "gender": null,
+  "country": null,
+  "disambiguation": "",
+  "lifeSpan": {
+    "ended": null
+  },
+  "aliases": [],
+  "tags": [],
+  "genres": [],
+  "raw": {
+    "score": 100,
+    "count": 50
+  },
+  "_cachedAt": 1781889363408
+}

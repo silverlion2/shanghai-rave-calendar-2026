@@ -1,0 +1,143 @@
+{
+  "found": true,
+  "id": 110343,
+  "name": "Steve B.",
+  "profile": "",
+  "nameVariations": [
+    "Steve B"
+  ],
+  "members": [],
+  "groups": [],
+  "urls": [],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/6RUdYD_Xc2cAKQraCRpRDYsgMe1Qvxp8xHjIbI3P1wo/rs:fit/g:sm/q:90/h:497/w:330/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTExMDM0/My0xNTEyOTkwODMw/LTMxNjEuanBlZw.jpeg",
+      "width": 330,
+      "height": 497
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Not On Label (David Banner Self-released)",
+    "Edsel Records",
+    "Solidwave Records",
+    "Slow Roast Records"
+  ],
+  "releases": [
+    {
+      "title": "Let Love Rule",
+      "year": 2017,
+      "label": null,
+      "role": "Mixed by"
+    },
+    {
+      "title": "Sex, Drugs & Video Games",
+      "year": 2012,
+      "label": "Not On Label (David Banner Self-released)",
+      "role": "Mixed by",
+      "format": "20xFile, MP3, 320"
+    },
+    {
+      "title": "Sex And The City 2 (Original Motion Picture Soundtrack)",
+      "year": 2010,
+      "label": null,
+      "role": "Mixed by"
+    },
+    {
+      "title": "UNI5: The World's Enemy",
+      "year": 2010,
+      "label": null,
+      "role": "Mixed by"
+    },
+    {
+      "title": "Hair Braider",
+      "year": 2008,
+      "label": null,
+      "role": "Mixed by"
+    },
+    {
+      "title": "Harlem's American Gangster",
+      "year": 2008,
+      "label": null,
+      "role": "Mixed by"
+    },
+    {
+      "title": "All Work, No Play",
+      "year": 1998,
+      "label": null,
+      "role": "Mixed by"
+    },
+    {
+      "title": "The Devil You Know",
+      "year": 1997,
+      "label": null,
+      "role": "Mixed by"
+    },
+    {
+      "title": "The Collection 1989 - 2003",
+      "year": 2014,
+      "label": "Edsel Records",
+      "role": "Appearance",
+      "format": "Box, Comp + 2xCD, Album, RE, RM + DVD-V, Comp, NTS"
+    },
+    {
+      "title": "Harlem's American Gangster",
+      "year": 2008,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Love Always",
+      "year": 2006,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Hurricane",
+      "year": 2005,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Base Ibiza 2004",
+      "year": 2004,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "The Anthem",
+      "year": 2001,
+      "label": "Solidwave Records",
+      "role": "Appearance",
+      "format": "CD, Album"
+    },
+    {
+      "title": "U.S. Crush",
+      "year": 2000,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "The Psycho Realm",
+      "year": 1997,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Tesseract EP",
+      "year": 2017,
+      "label": "Slow Roast Records",
+      "role": "TrackAppearance",
+      "format": "4xFile, AAC, EP"
+    }
+  ],
+  "releaseCount": 17,
+  "dataQuality": "Correct",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/110343"
+  },
+  "_cachedAt": 1781884959327
+}

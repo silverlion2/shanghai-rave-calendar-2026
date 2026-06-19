@@ -1,0 +1,73 @@
+{
+  "found": true,
+  "id": 3325191,
+  "name": "Huan",
+  "profile": "Alias of Catalan multi-instrumentalist, composer and producer Víctor Hurtado. Co-founder of psychedelic noise band [a=QA'A]. With his solo project Huan he has made collaborations with artists such as Les Aus, Hydra, Jochen Arbeit and Nurse With Wound. ",
+  "nameVariations": [],
+  "members": [],
+  "groups": [],
+  "urls": [
+    "http://www.magiaroja.net"
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "https://i.discogs.com/1977U7R5rbHc9nOIdWO4l_O3Q-jWkjkmkKT12kJEn9E/rs:fit/g:sm/q:90/h:404/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTMzMjUx/OTEtMTM4ODc3ODE0/OC04ODM2LmpwZWc.jpeg",
+      "width": 400,
+      "height": 404
+    }
+  ],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Màgia Roja",
+    "Wire Magazine"
+  ],
+  "releases": [
+    {
+      "title": "Jochen Arbeit & Huan",
+      "year": 2013,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Untitled",
+      "year": 2011,
+      "label": null,
+      "role": "Main"
+    },
+    {
+      "title": "Vells",
+      "year": 2009,
+      "label": "Màgia Roja",
+      "role": "Main",
+      "format": "CDr, Album"
+    },
+    {
+      "title": "Revolució Soterrada",
+      "year": 2015,
+      "label": null,
+      "role": "Producer"
+    },
+    {
+      "title": "Revolució Soterrada",
+      "year": 2015,
+      "label": null,
+      "role": "Mixed by"
+    },
+    {
+      "title": "The Wire Tapper 36",
+      "year": 2014,
+      "label": "Wire Magazine",
+      "role": "TrackAppearance",
+      "format": "CD, Comp"
+    }
+  ],
+  "releaseCount": 6,
+  "dataQuality": "Needs Vote",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/3325191"
+  },
+  "_cachedAt": 1781886070881
+}

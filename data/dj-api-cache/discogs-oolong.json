@@ -1,0 +1,52 @@
+{
+  "found": true,
+  "id": 2782293,
+  "name": "OoLong Smith",
+  "profile": "",
+  "nameVariations": [
+    "James Ooloong Smith"
+  ],
+  "members": [],
+  "groups": [],
+  "urls": [],
+  "images": [],
+  "genres": [],
+  "styles": [],
+  "labels": [
+    "Black Saint, Soul Note"
+  ],
+  "releases": [
+    {
+      "title": "The Complete Remastered Recordings On Black Saint & Soul Note",
+      "year": 2011,
+      "label": "Black Saint, Soul Note",
+      "role": "Appearance",
+      "format": "CD, Album, RE, RM + CD, Album, RE, RM + CD, Album,"
+    },
+    {
+      "title": "Body And Soul",
+      "year": 1993,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Morning Song",
+      "year": 1984,
+      "label": null,
+      "role": "Appearance"
+    },
+    {
+      "title": "Murray's Steps",
+      "year": 1983,
+      "label": null,
+      "role": "Appearance"
+    }
+  ],
+  "releaseCount": 4,
+  "dataQuality": "Needs Major Changes",
+  "thumb": null,
+  "raw": {
+    "discogs_url": "https://api.discogs.com/artists/2782293"
+  },
+  "_cachedAt": 1781888876026
+}
