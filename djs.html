@@ -2248,6 +2248,7 @@
     }
 
     function applyMasonryLayout() {
+      if (typeof getComputedStyle !== "function" || !rosterGrid || typeof rosterGrid.querySelectorAll !== "function") return;
       const style = getComputedStyle(rosterGrid);
       const rowHeight = parseFloat(style.gridAutoRows) || 8;
       const rowGap = parseFloat(style.rowGap) || 0;
@@ -2262,8 +2263,20 @@
     }
 
     function scheduleMasonryLayout() {
-      if (masonryFrame) cancelAnimationFrame(masonryFrame);
-      masonryFrame = requestAnimationFrame(() => {
+      if (typeof getComputedStyle !== "function") return;
+      const win = typeof window !== "undefined" ? window : {};
+      const requestFrame = typeof win.requestAnimationFrame === "function"
+        ? win.requestAnimationFrame.bind(win)
+        : (typeof requestAnimationFrame === "function" ? requestAnimationFrame : null);
+      const cancelFrame = typeof win.cancelAnimationFrame === "function"
+        ? win.cancelAnimationFrame.bind(win)
+        : (typeof cancelAnimationFrame === "function" ? cancelAnimationFrame : null);
+      if (!requestFrame) {
+        applyMasonryLayout();
+        return;
+      }
+      if (masonryFrame && cancelFrame) cancelFrame(masonryFrame);
+      masonryFrame = requestFrame(() => {
         applyMasonryLayout();
         masonryFrame = 0;
       });

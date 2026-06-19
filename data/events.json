@@ -8873,41 +8873,43 @@
       "sortDate": "2026-06-20",
       "date": "Jun 20",
       "time": "22:00-05:00",
-      "title": "Hardcore Melancholia: LOLALITA & BRENNT",
+      "title": "Hardcore Melancholia w. Lolalita & BRENNT(LIVE)",
       "venue": "Abyss Shanghai",
       "district": "Huangpu",
       "vibe": [
         "hard",
         "underground"
       ],
-      "genre": "hardcore, hard dance, rave, hard club",
+      "genre": "trance, hardcore",
       "confidence": "Medium",
       "status": "upcoming",
-      "price": "100 RMB (door)",
-      "age": "Check venue",
-      "source": "assets/posters/abyss-hardcore-melancholia-ticket.png",
-      "sourceLabel": "Yuyuan WeChat mini-program ticketing + Abyss June program screenshot",
+      "price": "100-120 RMB",
+      "age": "18+",
+      "source": "https://ra.co/events/2470462",
+      "sourceLabel": "Resident Advisor + Yuyuan ticketing screenshot",
       "imageTheme": "rose",
-      "description": "Abyss Saturday: Hardcore Melancholia with LOLALITA, BRENNT, XIWI, Not Your Daddy, and DJ LOVERBOY. Hardcore, hard dance, and high-bpm rave.",
+      "description": "Abyss Saturday Hardcore Melancholia with LOLALITA, BRENNT, XIWI, Not Your Daddy, and DJ LOVERBOY. RA tags the night as trance and hardcore; Yuyuan remains the local ticket-route evidence.",
       "kind": "event",
-      "sourceStatus": "wechat-miniprogram-ticketing",
+      "sourceStatus": "trusted-ra-and-wechat-ticketing",
       "address": "B1, TX Huaihai Youth Center, No. 523-527 Huaihai Road, Huangpu District, Shanghai",
       "organizer": "Abyss Shanghai",
+      "detailsUrl": "https://ra.co/events/2470462",
       "lastChecked": "2026-06-19",
-      "posterUrl": "assets/posters/abyss-hardcore-melancholia-cover.jpg",
+      "posterUrl": "assets/posters/abyss-hardcore-melancholia-ra-flyer.png",
       "posterEvidence": {
-        "type": "wechat-miniprogram-ticketing-screenshot",
-        "source": "Yuyuan WeChat mini-program ticketing screenshot manually confirmed by user, cross-checked against the Abyss June program screenshot",
-        "url": "assets/posters/abyss-hardcore-melancholia-ticket.png",
-        "status": "Ticketing screen confirms LOLALITA / BRENNT at Abyss on 2026-06-20 22:00 with price from 100 RMB, e-ticket, no-refund label, and abyss_service customer-service route. Poster wall uses the clean/cropped cover image without the lower ticketing menu; the original Yuyuan ticketing screenshot is retained as evidence. The Abyss monthly program screenshot supplies the Hardcore Melancholia event title and full lineup.",
+        "type": "resident-advisor-flyer-and-ticketing-screenshots",
+        "source": "Resident Advisor event page flyer, cross-checked against user-provided Yuyuan ticketing and Abyss June program screenshots",
+        "url": "https://ra.co/events/2470462",
+        "status": "RA exposes the same Hardcore Melancholia flyer supplied by the user and lists the event as Trance / Hardcore with LOLALITA, BRENNT, XIWI, Not Your Daddy, and DJ LOVERBOY. Yuyuan ticketing remains retained as local ticket-route evidence; RA lists 22:30-05:00, 120 RMB, and 18+, while Yuyuan screenshot evidence lists 22:00 and 100 RMB.",
         "localFiles": [
+          "assets/posters/abyss-hardcore-melancholia-ra-flyer.png",
           "assets/posters/abyss-hardcore-melancholia-cover.jpg",
           "assets/posters/abyss-hardcore-melancholia-clean-source.png",
           "assets/posters/abyss-hardcore-melancholia-ticket.png",
           "assets/posters/abyss-june-2026-program.png"
         ]
       },
-      "ticketStatus": "Yuyuan WeChat mini-program ticketing screenshot, manually confirmed by the user, shows 2026-06-20 22:00 at Abyss club, price from 100 RMB, e-ticket, no-refund label, and customer-service WeChat abyss_service. Direct public ticket URL and age policy were not captured.",
+      "ticketStatus": "RA lists 2026-06-20 22:30-05:00, 120 RMB, and 18+. The earlier user-confirmed Yuyuan ticketing screenshot lists 22:00 at Abyss club, price from 100 RMB, e-ticket, no-refund label, and customer-service WeChat abyss_service. Recheck RA/Yuyuan before planning around the exact opening time or final ticket tier.",
       "lineup": [
         {
           "name": "LOLALITA",
@@ -8932,6 +8934,13 @@
       ],
       "sources": [
         {
+          "label": "Resident Advisor - Hardcore Melancholia",
+          "url": "https://ra.co/events/2470462",
+          "status": "trusted-ra",
+          "lastChecked": "2026-06-19",
+          "verificationNote": "RA event detail confirms the public title, Sat Jun 20 2026 date, Abyss address, 22:30-05:00 time, LOLALITA / BRENNT / XIWI / Not Your Daddy / DJ LOVERBOY lineup, Trance and Hardcore genres, 120 RMB cost, 18+ age rule, and flyer front."
+        },
+        {
           "label": "Abyss June 2026 program screenshot",
           "url": "assets/posters/abyss-june-2026-program.png",
           "status": "official-social-screenshot",
@@ -8953,12 +8962,13 @@
           "verificationNote": "Venue context only: supports Abyss Club identity and Huaihai/TX location context. User-provided Yuyuan ticketing screenshots and the Abyss June program screenshot remain the event-level evidence."
         }
       ],
-      "recommendationReason": "Recommended because the Hardcore Melancholia title plus LOLALITA, BRENNT, XIWI, Not Your Daddy, and DJ LOVERBOY gives Abyss a clearly harder Saturday route for listeners who want fast, rough, high-impact club energy rather than polished house or lounge programming.",
-      "bestFor": "Best for people who want a high-BPM, hard-dance-leaning Abyss night and are comfortable with a heavier, less polished club texture.",
-      "verifyBeforeGoing": "Open the Yuyuan WeChat mini-program or contact abyss_service to confirm live inventory, final ticket tier, age policy, and running order before going.",
-      "sourceConfidence": "User-confirmed Yuyuan ticketing screenshot confirms title/date/time/venue/price/ticket state. The Abyss June program screenshot confirms the event title and full lineup. Direct public ticket URL, exact running order, and age policy remain unavailable.",
+      "recommendationReason": "Recommended because the trance/hardcore pressure and the LOLALITA, BRENNT, XIWI, Not Your Daddy, and DJ LOVERBOY bill make this the clearest hard Saturday Abyss route for fast, rough, high-impact club energy.",
+      "bestFor": "Best for people who want a trance-hardcore, high-BPM Abyss night and are comfortable with a heavier, less polished club texture.",
+      "verifyBeforeGoing": "Recheck RA or open the Yuyuan WeChat mini-program / contact abyss_service to confirm live inventory, exact opening time, final ticket tier, and running order before going.",
+      "sourceConfidence": "RA confirms the public event title, date, Abyss address, lineup, trance/hardcore genre tags, cost, age rule, and flyer. Yuyuan ticketing screenshot evidence confirms the local ticket route but conflicts with RA on opening time and price floor, so keep the practical details as verify-before-going.",
       "soundTags": [
-        "hard-techno"
+        "hard-techno",
+        "trance-adjacent"
       ],
       "decisionTags": [
         "strong techno fit",
@@ -25038,13 +25048,12 @@
       {
         "id": "abyss-hardcore-melancholia",
         "date": "2026-06-20",
-        "title": "Hardcore Melancholia: LOLALITA & BRENNT",
+        "title": "Hardcore Melancholia w. Lolalita & BRENNT(LIVE)",
         "venue": "Abyss Shanghai",
         "confidence": "Medium",
         "priority": "high",
         "fitScore": 3,
         "missingCoreFields": [
-          "age",
           "ticketUrl"
         ],
         "uncertainCoreFields": [],
@@ -26013,7 +26022,7 @@
             {
               "id": "abyss-hardcore-melancholia",
               "date": "2026-06-20",
-              "title": "Hardcore Melancholia: LOLALITA & BRENNT",
+              "title": "Hardcore Melancholia w. Lolalita & BRENNT(LIVE)",
               "venue": "Abyss Shanghai",
               "status": "upcoming",
               "confidence": "Medium"
@@ -28146,7 +28155,7 @@
           ],
           "genres": [
             "experimental, future beats, hip-hop",
-            "hardcore, hard dance, rave, hard club"
+            "trance, hardcore"
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 1,
@@ -28434,7 +28443,7 @@
             "Abyss Shanghai"
           ],
           "genres": [
-            "hardcore, hard dance, rave, hard club"
+            "trance, hardcore"
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 0,
@@ -29014,7 +29023,7 @@
             "Abyss Shanghai"
           ],
           "genres": [
-            "hardcore, hard dance, rave, hard club"
+            "trance, hardcore"
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 0,
@@ -29214,7 +29223,7 @@
             "Abyss Shanghai"
           ],
           "genres": [
-            "hardcore, hard dance, rave, hard club"
+            "trance, hardcore"
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 0,
@@ -29834,7 +29843,7 @@
             "Abyss Shanghai"
           ],
           "genres": [
-            "hardcore, hard dance, rave, hard club"
+            "trance, hardcore"
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 0,

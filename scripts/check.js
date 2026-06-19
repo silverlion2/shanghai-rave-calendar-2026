@@ -600,14 +600,21 @@ function optimizedPosterAsset(asset) {
   return path.posix.join(parsed.dir, `${parsed.name}-optimized.jpg`);
 }
 
-function projectFiles(dir = ROOT, skipDirs = new Set(["node_modules", ".git", ".vercel", "output"])) {
+function shouldSkipProjectFile(file) {
+  const relative = projectPath(file);
+  return /^_[^/]*\.html$/i.test(relative)
+    || /^scripts\/_tmp_.*\.js$/i.test(relative);
+}
+
+function projectFiles(dir = ROOT, skipDirs = new Set(["node_modules", ".git", ".vercel", ".local-model-cache", ".playwright-cli", ".tmp", "output"])) {
   const files = [];
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     if (skipDirs.has(entry.name)) continue;
+    if (/^\.chrome-headless/.test(entry.name)) continue;
     const fullPath = path.join(dir, entry.name);
     if (entry.isDirectory()) {
       files.push(...projectFiles(fullPath, skipDirs));
-    } else {
+    } else if (!shouldSkipProjectFile(fullPath)) {
       files.push(fullPath);
     }
   }
