@@ -1210,7 +1210,9 @@
       "district": "Changning",
       "vibe": [
         "underground",
-        "bass"
+        "bass",
+        "house",
+        "techno"
       ],
       "genre": "club, hip-hop, ghettotech, house, techno",
       "confidence": "Medium",
@@ -1272,7 +1274,8 @@
       "district": "Huangpu",
       "vibe": [
         "experimental",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "techno radio session",
       "confidence": "Medium",
@@ -1297,12 +1300,14 @@
       "soundTags": [
         "live-av",
         "industrial",
+        "jazz-electronic",
         "groovy"
       ],
       "decisionTags": [
         "techno-adjacent",
         "high intensity",
         "listening/live angle",
+        "jazz-electronic crossover",
         "ticket path"
       ],
       "decisionProfile": {
@@ -1358,12 +1363,14 @@
       "soundTags": [
         "trance-adjacent",
         "live-av",
-        "industrial"
+        "industrial",
+        "jazz-electronic"
       ],
       "decisionTags": [
         "strong techno fit",
         "high intensity",
         "listening/live angle",
+        "jazz-electronic crossover",
         "late room"
       ],
       "decisionProfile": {
@@ -1395,7 +1402,8 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "techno, trance",
       "confidence": "High",
@@ -1456,7 +1464,8 @@
       "district": "Changning",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "techno",
       "confidence": "High",
@@ -1517,7 +1526,8 @@
       "district": "Changning",
       "vibe": [
         "underground",
-        "bass"
+        "bass",
+        "techno"
       ],
       "genre": "techno, bass",
       "confidence": "High",
@@ -1577,7 +1587,8 @@
       "district": "Changning",
       "vibe": [
         "underground",
-        "experimental"
+        "experimental",
+        "techno"
       ],
       "genre": "Detroit techno, electro, machine funk",
       "confidence": "High",
@@ -1602,12 +1613,14 @@
       "soundTags": [
         "industrial",
         "groovy",
-        "live-av"
+        "live-av",
+        "jazz-electronic"
       ],
       "decisionTags": [
         "techno-adjacent",
         "high intensity",
         "listening/live angle",
+        "jazz-electronic crossover",
         "late room",
         "ticket path",
         "trusted source"
@@ -1640,7 +1653,9 @@
       "district": "Huangpu",
       "vibe": [
         "underground",
-        "date"
+        "date",
+        "house",
+        "techno"
       ],
       "genre": "techno, house",
       "confidence": "High",
@@ -1701,7 +1716,8 @@
       "venue": "POTENT",
       "district": "Huangpu",
       "vibe": [
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "electronic culture, techno-adjacent",
       "confidence": "Medium",
@@ -1761,7 +1777,8 @@
       "district": "Changning",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "industrial, dark hypnotic, acid, rave, experimental techno",
       "confidence": "Medium",
@@ -1823,7 +1840,8 @@
       "district": "Changning",
       "vibe": [
         "underground",
-        "experimental"
+        "experimental",
+        "techno"
       ],
       "genre": "techno-informed club music",
       "confidence": "Medium",
@@ -1849,12 +1867,14 @@
         "bass-hybrid",
         "industrial",
         "live-av",
+        "jazz-electronic",
         "groovy"
       ],
       "decisionTags": [
         "strong techno fit",
         "high intensity",
         "listening/live angle",
+        "jazz-electronic crossover",
         "late room",
         "ticket path"
       ],
@@ -1885,7 +1905,10 @@
       "venue": "The Sukhothai Shanghai",
       "district": "Jing'an",
       "vibe": [
-        "date"
+        "date",
+        "house",
+        "warehouse",
+        "techno"
       ],
       "genre": "techno, house",
       "confidence": "High",
@@ -1949,7 +1972,8 @@
       "district": "Changning",
       "vibe": [
         "bass",
-        "experimental"
+        "experimental",
+        "hard"
       ],
       "genre": "trance, club, hyperpop, hard dance",
       "confidence": "Medium",
@@ -1976,12 +2000,14 @@
         "trance-adjacent",
         "bass-hybrid",
         "industrial",
-        "live-av"
+        "live-av",
+        "jazz-electronic"
       ],
       "decisionTags": [
         "techno-adjacent",
         "high intensity",
         "listening/live angle",
+        "jazz-electronic crossover",
         "late room",
         "ticket path"
       ],
@@ -2013,7 +2039,9 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "warehouse",
+        "techno"
       ],
       "genre": "warehouse techno, trance, industrial rave",
       "confidence": "High",
@@ -2077,7 +2105,8 @@
       "district": "Changning",
       "vibe": [
         "bass",
-        "experimental"
+        "experimental",
+        "techno"
       ],
       "genre": "techno, bass",
       "confidence": "High",
@@ -2103,12 +2132,14 @@
         "bass-hybrid",
         "industrial",
         "live-av",
+        "jazz-electronic",
         "groovy"
       ],
       "decisionTags": [
         "strong techno fit",
         "high intensity",
         "listening/live angle",
+        "jazz-electronic crossover",
         "late room",
         "ticket path",
         "trusted source"
@@ -2140,7 +2171,8 @@
       "venue": "Sunland Boundless Park",
       "district": "Pudong",
       "vibe": [
-        "date"
+        "date",
+        "techno"
       ],
       "genre": "melodic techno, audiovisual show",
       "confidence": "High",
@@ -2203,7 +2235,8 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "experimental"
+        "experimental",
+        "techno"
       ],
       "genre": "techno, hardcore, black metal crossover",
       "confidence": "High",
@@ -2228,12 +2261,14 @@
       "soundTags": [
         "hard-techno",
         "industrial",
-        "live-av"
+        "live-av",
+        "jazz-electronic"
       ],
       "decisionTags": [
         "strong techno fit",
         "high intensity",
         "listening/live angle",
+        "jazz-electronic crossover",
         "late room",
         "ticket path",
         "trusted source"
@@ -2266,7 +2301,8 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "techno, hardcore, hardbass, hard trance",
       "confidence": "High",
@@ -2331,7 +2367,9 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "warehouse",
+        "techno"
       ],
       "genre": "techno",
       "confidence": "High",
@@ -2393,7 +2431,9 @@
       "district": "Central Shanghai",
       "vibe": [
         "warehouse",
-        "underground"
+        "underground",
+        "bass",
+        "techno"
       ],
       "genre": "techno, bass, club music",
       "confidence": "Medium",
@@ -2456,7 +2496,10 @@
       "district": "Changning",
       "vibe": [
         "date",
-        "underground"
+        "underground",
+        "house",
+        "hard",
+        "techno"
       ],
       "genre": "techno, house, tech house",
       "confidence": "High",
@@ -2519,7 +2562,10 @@
       "vibe": [
         "warehouse",
         "date",
-        "underground"
+        "underground",
+        "house",
+        "bass",
+        "techno"
       ],
       "genre": "house, techno, bass",
       "confidence": "High",
@@ -2584,7 +2630,9 @@
       "district": "Changning",
       "vibe": [
         "underground",
-        "date"
+        "date",
+        "house",
+        "techno"
       ],
       "genre": "techno, house, minimal, nu-disco",
       "confidence": "High",
@@ -2647,7 +2695,8 @@
       "district": "Changning",
       "vibe": [
         "underground",
-        "experimental"
+        "experimental",
+        "techno"
       ],
       "genre": "techno, funk/soul lineage",
       "confidence": "High",
@@ -2672,12 +2721,14 @@
       "soundTags": [
         "industrial",
         "groovy",
-        "live-av"
+        "live-av",
+        "jazz-electronic"
       ],
       "decisionTags": [
         "techno-adjacent",
         "high intensity",
         "listening/live angle",
+        "jazz-electronic crossover",
         "late room",
         "ticket path",
         "trusted source"
@@ -2711,7 +2762,8 @@
       "vibe": [
         "bass",
         "warehouse",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "techno, bass",
       "confidence": "High",
@@ -2773,7 +2825,8 @@
       "district": "Changning",
       "vibe": [
         "underground",
-        "experimental"
+        "experimental",
+        "techno"
       ],
       "genre": "ambient, deep techno",
       "confidence": "High",
@@ -2799,12 +2852,14 @@
         "hypnotic",
         "industrial",
         "live-av",
+        "jazz-electronic",
         "groovy"
       ],
       "decisionTags": [
         "strong techno fit",
         "high intensity",
         "listening/live angle",
+        "jazz-electronic crossover",
         "late room",
         "ticket path",
         "trusted source"
@@ -2859,23 +2914,23 @@
       "lineup": [
         {
           "name": "Siesta",
-          "note": "RA lists Siesta on the 19Hz lineup."
+          "note": "Siesta: drum & bass/ dubstep selection. RA lists Siesta on the 19Hz lineup."
         },
         {
           "name": "Kalapas",
-          "note": "RA lists Kalapas on the 19Hz lineup."
+          "note": "Kalapas: drum & bass/ dubstep selection. RA lists Kalapas on the 19Hz lineup."
         },
         {
           "name": "Fractale",
-          "note": "RA lists Fractale as the returning Italian DnB/Dubstep/Breaks guest."
+          "note": "Fractale: drum & bass/ dubstep selection. RA lists Fractale as the returning Italian DnB/Dubstep/Breaks guest."
         },
         {
           "name": "Aho",
-          "note": "RA lists Aho on the 19Hz lineup."
+          "note": "Aho: drum & bass/ dubstep selection. RA lists Aho on the 19Hz lineup."
         },
         {
           "name": "Yadong",
-          "note": "RA lists Yadong on the 19Hz lineup."
+          "note": "Yadong: drum & bass/ dubstep selection. RA lists Yadong on the 19Hz lineup."
         }
       ],
       "posterEvidence": {
@@ -3054,7 +3109,8 @@
       "district": "Changning",
       "vibe": [
         "club",
-        "bass"
+        "bass",
+        "hard"
       ],
       "genre": "club, bass, electronic",
       "confidence": "Medium",
@@ -3075,15 +3131,15 @@
       "lineup": [
         {
           "name": "Dean Chew",
-          "note": "RA lists Dean Chew on this Shanghai lineup."
+          "note": "Dean Chew: club/ bass selection. RA lists Dean Chew on this Shanghai lineup."
         },
         {
           "name": "OoLONG",
-          "note": "RA lists OoLONG on this Shanghai lineup."
+          "note": "OoLONG: club/ bass selection. RA lists OoLONG on this Shanghai lineup."
         },
         {
           "name": "Paradice Sinema",
-          "note": "RA lists Paradice Sinema on this Shanghai lineup."
+          "note": "Paradice Sinema: club/ bass selection. RA lists Paradice Sinema on this Shanghai lineup."
         }
       ],
       "ticketStatus": "RA confirms the date, venue, and lineup, but the indexed text does not expose price or age policy.",
@@ -3161,47 +3217,47 @@
       "lineup": [
         {
           "name": "MssingNo",
-          "note": "RA lists MssingNo on this Shanghai lineup."
+          "note": "MssingNo: bass/ grime selection. RA lists MssingNo on this Shanghai lineup."
         },
         {
           "name": "Kilo Vee",
-          "note": "RA lists Kilo Vee on this Shanghai lineup."
+          "note": "Kilo Vee: bass/ grime selection. RA lists Kilo Vee on this Shanghai lineup."
         },
         {
           "name": "Zean",
-          "note": "RA lists Zean on this Shanghai lineup."
+          "note": "Zean: bass/ grime selection. RA lists Zean on this Shanghai lineup."
         },
         {
           "name": "SAI G",
-          "note": "RA lists SAI G on this Shanghai lineup."
+          "note": "SAI G: bass/ grime selection. RA lists SAI G on this Shanghai lineup."
         },
         {
           "name": "Baadaam",
-          "note": "RA lists Baadaam on this Shanghai lineup."
+          "note": "Baadaam: bass/ grime selection. RA lists Baadaam on this Shanghai lineup."
         },
         {
           "name": "Jane",
-          "note": "RA lists Jane on this Shanghai lineup."
+          "note": "Jane: bass/ grime selection. RA lists Jane on this Shanghai lineup."
         },
         {
           "name": "Siesta",
-          "note": "RA lists Siesta on this Shanghai lineup."
+          "note": "Siesta: bass/ grime selection. RA lists Siesta on this Shanghai lineup."
         },
         {
           "name": "Tom yeti",
-          "note": "RA lists Tom yeti on this Shanghai lineup."
+          "note": "Tom yeti: bass/ grime selection. RA lists Tom yeti on this Shanghai lineup."
         },
         {
           "name": "Maguro",
-          "note": "RA lists Maguro on this Shanghai lineup."
+          "note": "Maguro: bass/ grime selection. RA lists Maguro on this Shanghai lineup."
         },
         {
           "name": "DJ EBP",
-          "note": "RA lists DJ EBP on this Shanghai lineup."
+          "note": "DJ EBP: bass/ grime selection. RA lists DJ EBP on this Shanghai lineup."
         },
         {
           "name": "DIIPSET",
-          "note": "RA lists DIIPSET on this Shanghai lineup."
+          "note": "DIIPSET: bass/ grime selection. RA lists DIIPSET on this Shanghai lineup."
         }
       ],
       "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+.",
@@ -3258,7 +3314,9 @@
       "district": "Changning",
       "vibe": [
         "club",
-        "underground"
+        "underground",
+        "house",
+        "hard"
       ],
       "genre": "house",
       "confidence": "Medium",
@@ -3279,27 +3337,27 @@
       "lineup": [
         {
           "name": "chuan",
-          "note": "RA lists chuan on this Shanghai lineup."
+          "note": "chuan: house selection. RA lists chuan on this Shanghai lineup."
         },
         {
           "name": "DJ Doggy",
-          "note": "RA lists DJ Doggy on this Shanghai lineup."
+          "note": "DJ Doggy: house selection. RA lists DJ Doggy on this Shanghai lineup."
         },
         {
           "name": "WATARU",
-          "note": "RA lists WATARU on this Shanghai lineup."
+          "note": "WATARU: house selection. RA lists WATARU on this Shanghai lineup."
         },
         {
           "name": "Oolong",
-          "note": "RA lists Oolong on this Shanghai lineup."
+          "note": "Oolong: house selection. RA lists Oolong on this Shanghai lineup."
         },
         {
           "name": "Marcos Godoy",
-          "note": "RA lists Marcos Godoy on this Shanghai lineup."
+          "note": "Marcos Godoy: house selection. RA lists Marcos Godoy on this Shanghai lineup."
         },
         {
           "name": "Nata Lee",
-          "note": "RA lists Nata Lee on this Shanghai lineup."
+          "note": "Nata Lee: house selection. RA lists Nata Lee on this Shanghai lineup."
         }
       ],
       "ticketStatus": "RA lists cost at 118 RMB; minimum age is not visible in the indexed text.",
@@ -3355,7 +3413,8 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "trance, techno-adjacent",
       "confidence": "High",
@@ -3415,15 +3474,15 @@
       "lineup": [
         {
           "name": "Stefano Dvt",
-          "note": "RA lists Stefano Dvt on this Shanghai lineup."
+          "note": "Stefano Dvt: trance/ techno-adjacent selection. RA lists Stefano Dvt on this Shanghai lineup."
         },
         {
           "name": "JANEIN",
-          "note": "RA lists JANEIN on this Shanghai lineup."
+          "note": "JANEIN: trance/ techno-adjacent selection. RA lists JANEIN on this Shanghai lineup."
         },
         {
           "name": "Peyotl",
-          "note": "RA lists Peyotl on this Shanghai lineup."
+          "note": "Peyotl: trance/ techno-adjacent selection. RA lists Peyotl on this Shanghai lineup."
         }
       ],
       "ticketStatus": "RA lists cost at 100 RMB and minimum age 18+.",
@@ -3448,7 +3507,9 @@
       "venue": "The Shanghai Edition",
       "district": "Huangpu",
       "vibe": [
-        "date"
+        "date",
+        "house",
+        "techno"
       ],
       "genre": "techno, house",
       "confidence": "High",
@@ -3504,15 +3565,15 @@
       "lineup": [
         {
           "name": "Juliano Allgayer",
-          "note": "RA lists Juliano Allgayer on the NIGHTWAVE lineup."
+          "note": "Juliano Allgayer: techno/ house selection. RA lists Juliano Allgayer on the NIGHTWAVE lineup."
         },
         {
           "name": "Ben Moon",
-          "note": "RA lists Ben Moon on the NIGHTWAVE lineup."
+          "note": "Ben Moon: techno/ house selection. RA lists Ben Moon on the NIGHTWAVE lineup."
         },
         {
           "name": "Odd",
-          "note": "RA lists Odd on the NIGHTWAVE lineup."
+          "note": "Odd: techno/ house selection. RA lists Odd on the NIGHTWAVE lineup."
         }
       ],
       "posterEvidence": {
@@ -3550,7 +3611,8 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "techno",
       "confidence": "High",
@@ -3651,7 +3713,8 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "techno",
       "confidence": "High",
@@ -3759,23 +3822,23 @@
       "lineup": [
         {
           "name": "Taidi",
-          "note": "RA lists Taidi on this Shanghai lineup."
+          "note": "Taidi: club/ electronic selection. RA lists Taidi on this Shanghai lineup."
         },
         {
           "name": "YKK",
-          "note": "RA lists YKK on this Shanghai lineup."
+          "note": "YKK: club/ electronic selection. RA lists YKK on this Shanghai lineup."
         },
         {
           "name": "DJ Wife",
-          "note": "RA lists DJ Wife on this Shanghai lineup."
+          "note": "DJ Wife: club/ electronic selection. RA lists DJ Wife on this Shanghai lineup."
         },
         {
           "name": "Luxixi (live)",
-          "note": "RA lists Luxixi (live) on this Shanghai lineup."
+          "note": "Luxixi (live): club/ electronic selection. RA lists Luxixi (live) on this Shanghai lineup."
         },
         {
           "name": "Devil's Hole",
-          "note": "RA lists Devil's Hole on this Shanghai lineup."
+          "note": "Devil's Hole: club/ electronic selection. RA lists Devil's Hole on this Shanghai lineup."
         }
       ],
       "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+.",
@@ -3834,7 +3897,8 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "techno, hardcore",
       "confidence": "High",
@@ -3989,7 +4053,10 @@
       "venue": "Fosun Art Foundation",
       "district": "Huangpu",
       "vibe": [
-        "date"
+        "date",
+        "house",
+        "hard",
+        "techno"
       ],
       "genre": "techno, house",
       "confidence": "High",
@@ -4045,19 +4112,19 @@
       "lineup": [
         {
           "name": "Tom Price",
-          "note": "RA lists Tom Price on the SUNKISSED lineup."
+          "note": "Tom Price: techno/ house selection. RA lists Tom Price on the SUNKISSED lineup."
         },
         {
           "name": "Simon Adams",
-          "note": "RA lists Simon Adams on the SUNKISSED lineup."
+          "note": "Simon Adams: techno/ house selection. RA lists Simon Adams on the SUNKISSED lineup."
         },
         {
           "name": "Cai Pas",
-          "note": "RA lists Cai Pas on the SUNKISSED lineup."
+          "note": "Cai Pas: techno/ house selection. RA lists Cai Pas on the SUNKISSED lineup."
         },
         {
           "name": "Martin Ma",
-          "note": "RA lists Martin Ma on the SUNKISSED lineup."
+          "note": "Martin Ma: techno/ house selection. RA lists Martin Ma on the SUNKISSED lineup."
         }
       ],
       "posterEvidence": {
@@ -4096,7 +4163,8 @@
       "vibe": [
         "hard",
         "underground",
-        "experimental"
+        "experimental",
+        "techno"
       ],
       "genre": "techno",
       "confidence": "High",
@@ -4122,12 +4190,14 @@
         "hypnotic",
         "hard-techno",
         "industrial",
-        "live-av"
+        "live-av",
+        "jazz-electronic"
       ],
       "decisionTags": [
         "strong techno fit",
         "high intensity",
         "listening/live angle",
+        "jazz-electronic crossover",
         "late room",
         "ticket path",
         "trusted source"
@@ -4169,8 +4239,7 @@
       "venue": "ZUP Pizza Bar",
       "district": "Jing'an",
       "vibe": [
-        "date",
-        "house"
+        "date"
       ],
       "genre": "house, disco, funk, hip-hop",
       "confidence": "Medium",
@@ -4191,23 +4260,23 @@
       "lineup": [
         {
           "name": "Dante",
-          "note": "RA lists Dante on this Shanghai lineup."
+          "note": "Dante: house/ disco selection. RA lists Dante on this Shanghai lineup."
         },
         {
           "name": "Nanotech",
-          "note": "RA lists Nanotech on this Shanghai lineup."
+          "note": "Nanotech: house/ disco selection. RA lists Nanotech on this Shanghai lineup."
         },
         {
           "name": "Koldo",
-          "note": "RA lists Koldo on this Shanghai lineup."
+          "note": "Koldo: house/ disco selection. RA lists Koldo on this Shanghai lineup."
         },
         {
           "name": "Sexi Monki",
-          "note": "RA lists Sexi Monki on this Shanghai lineup."
+          "note": "Sexi Monki: house/ disco selection. RA lists Sexi Monki on this Shanghai lineup."
         },
         {
           "name": "Finascia",
-          "note": "RA lists Finascia on this Shanghai lineup."
+          "note": "Finascia: house/ disco selection. RA lists Finascia on this Shanghai lineup."
         }
       ],
       "setTimes": [
@@ -4308,7 +4377,8 @@
       "district": "Changning",
       "vibe": [
         "underground",
-        "bass"
+        "bass",
+        "house"
       ],
       "genre": "house, hip-hop, groove, club",
       "confidence": "High",
@@ -4331,7 +4401,7 @@
         },
         {
           "name": "Dada (ES)",
-          "note": "RA-linked artist on the 23:30-00:30 slot."
+          "note": "Dada (ES): house/ hip-hop selection. RA-linked artist on the 23:30-00:30 slot."
         },
         {
           "name": "Soul Navigator",
@@ -4347,7 +4417,7 @@
         },
         {
           "name": "B2B",
-          "note": "RA lists a 03:30-late B2B closing slot without individual names."
+          "note": "B2B: house/ hip-hop selection. RA lists a 03:30-late B2B closing slot without individual names."
         }
       ],
       "setTimes": [
@@ -4459,7 +4529,8 @@
       "district": "Huangpu",
       "vibe": [
         "bass",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "techno, bass, UKG, dubstep, baile funk",
       "confidence": "High",
@@ -4512,19 +4583,19 @@
       "lineup": [
         {
           "name": "Onyx",
-          "note": "RA lists Onyx from 22:00 to 00:00 for the Dirty House opening slot."
+          "note": "Onyx: techno/ bass selection. RA lists Onyx from 22:00 to 00:00 for the Dirty House opening slot."
         },
         {
           "name": "NAKIN",
-          "note": "RA-linked artist listed from 00:00 to 01:30."
+          "note": "NAKIN: techno/ bass selection. RA-linked artist listed from 00:00 to 01:30."
         },
         {
           "name": "KOLLIN",
-          "note": "RA-linked headliner listed from 01:30 to 03:00 for a techno and bass-tagged PLAYGROUND night."
+          "note": "KOLLIN: techno/ bass selection. RA-linked headliner listed from 01:30 to 03:00 for a techno and bass-tagged PLAYGROUND night."
         },
         {
           "name": "Serpdren",
-          "note": "RA lists Serpdren from 03:00 to end."
+          "note": "Serpdren: techno/ bass selection. RA lists Serpdren from 03:00 to end."
         }
       ],
       "setTimes": [
@@ -4650,15 +4721,15 @@
         },
         {
           "name": "PRYMARA",
-          "note": "RA lists PRYMARA on the Lethal Distortion lineup."
+          "note": "PRYMARA: trance/ techno selection. RA lists PRYMARA on the Lethal Distortion lineup."
         },
         {
           "name": "WATARU",
-          "note": "RA lists WATARU on the Lethal Distortion lineup."
+          "note": "WATARU: trance/ techno selection. RA lists WATARU on the Lethal Distortion lineup."
         },
         {
           "name": "SITU",
-          "note": "RA lists SITU on the Lethal Distortion lineup."
+          "note": "SITU: trance/ techno selection. RA lists SITU on the Lethal Distortion lineup."
         }
       ],
       "posterEvidence": {
@@ -4684,7 +4755,10 @@
       "district": "Huangpu",
       "vibe": [
         "underground",
-        "date"
+        "date",
+        "house",
+        "bass",
+        "techno"
       ],
       "genre": "techno, house",
       "confidence": "High",
@@ -4774,7 +4848,8 @@
       "district": "Changning",
       "vibe": [
         "techno",
-        "underground"
+        "underground",
+        "hard"
       ],
       "genre": "techno, deep tech, progressive, psytech, hard techno",
       "confidence": "High",
@@ -4794,11 +4869,11 @@
       "lineup": [
         {
           "name": "Rabeat",
-          "note": "RA lists Rabeat on the PRGRM 021 lineup."
+          "note": "Rabeat: techno/ deep tech selection. RA lists Rabeat on the PRGRM 021 lineup."
         },
         {
           "name": "KOD!GO",
-          "note": "RA lists KOD!GO on the PRGRM 021 lineup."
+          "note": "KOD!GO: techno/ deep tech selection. RA lists KOD!GO on the PRGRM 021 lineup."
         },
         {
           "name": "iquid Mechanics",
@@ -4806,7 +4881,7 @@
         },
         {
           "name": "ZENKAI",
-          "note": "RA lists ZENKAI on the PRGRM 021 lineup."
+          "note": "ZENKAI: techno/ deep tech selection. RA lists ZENKAI on the PRGRM 021 lineup."
         }
       ],
       "ticketStatus": "RA lists cost at 108 RMB. Minimum age was not exposed in the indexed RA text.",
@@ -4891,12 +4966,14 @@
       ],
       "soundTags": [
         "industrial",
-        "live-av"
+        "live-av",
+        "jazz-electronic"
       ],
       "decisionTags": [
         "techno-adjacent",
         "high intensity",
         "listening/live angle",
+        "jazz-electronic crossover",
         "late room",
         "ticket path",
         "lineup visible"
@@ -4921,7 +4998,7 @@
       "lineup": [
         {
           "name": "Mamayo",
-          "note": "RA-linked lineup artist for FENGYUN Vol. 5."
+          "note": "Mamayo: club/ experimental electronic selection. RA-linked lineup artist for FENGYUN Vol. 5."
         },
         {
           "name": "Gooooose",
@@ -4929,11 +5006,11 @@
         },
         {
           "name": "COLA REN",
-          "note": "RA-linked lineup artist for FENGYUN Vol. 5."
+          "note": "COLA REN: club/ experimental electronic selection. RA-linked lineup artist for FENGYUN Vol. 5."
         },
         {
           "name": "DJ TRUCK",
-          "note": "RA-linked lineup artist for FENGYUN Vol. 5."
+          "note": "DJ TRUCK: club/ experimental electronic selection. RA-linked lineup artist for FENGYUN Vol. 5."
         },
         {
           "name": "meer.",
@@ -4962,7 +5039,9 @@
       "venue": "Pop Bar",
       "district": "The Bund",
       "vibe": [
-        "date"
+        "date",
+        "house",
+        "techno"
       ],
       "genre": "techno, house",
       "confidence": "High",
@@ -5017,11 +5096,11 @@
       "lineup": [
         {
           "name": "Erik Hagleton",
-          "note": "RA-linked French headliner for the Space Panda Horizon rooftop event."
+          "note": "Erik Hagleton: techno/ house selection. RA-linked French headliner for the Space Panda Horizon rooftop event."
         },
         {
           "name": "Litty Ritty",
-          "note": "RA-linked support artist on the Pop Bar rooftop lineup."
+          "note": "Litty Ritty: techno/ house selection. RA-linked support artist on the Pop Bar rooftop lineup."
         },
         {
           "name": "Enred",
@@ -5126,7 +5205,7 @@
       "lineup": [
         {
           "name": "Heatwolves",
-          "note": "RA lists Heatwolves as the lineup artist and event admin for this Love Bang dark-dance night."
+          "note": "Heatwolves: industrial/ italo disco selection. RA lists Heatwolves as the lineup artist and event admin for this Love Bang dark-dance night."
         }
       ],
       "posterEvidence": {
@@ -5152,7 +5231,10 @@
       "district": "Huangpu",
       "vibe": [
         "underground",
-        "date"
+        "date",
+        "house",
+        "hard",
+        "techno"
       ],
       "genre": "house, techno-adjacent",
       "confidence": "High",
@@ -5373,12 +5455,14 @@
         "bass-hybrid",
         "industrial",
         "live-av",
+        "jazz-electronic",
         "groovy"
       ],
       "decisionTags": [
         "techno-adjacent",
         "high intensity",
         "listening/live angle",
+        "jazz-electronic crossover",
         "late room",
         "ticket path",
         "trusted source",
@@ -5404,11 +5488,11 @@
       "lineup": [
         {
           "name": "DJ LOVERBOY",
-          "note": "RA lists DJ LOVERBOY from 22:00 to 23:30."
+          "note": "DJ LOVERBOY: experimental/ future beats selection. RA lists DJ LOVERBOY from 22:00 to 23:30."
         },
         {
           "name": "DJ EBP",
-          "note": "RA-linked artist listed from 23:30 to 01:00."
+          "note": "DJ EBP: experimental/ future beats selection. RA-linked artist listed from 23:30 to 01:00."
         },
         {
           "name": "Nosaj Thing",
@@ -5416,7 +5500,7 @@
         },
         {
           "name": "GaoQiao",
-          "note": "RA-linked closing artist listed from 03:00 to 05:00."
+          "note": "GaoQiao: experimental/ future beats selection. RA-linked closing artist listed from 03:00 to 05:00."
         }
       ],
       "posterEvidence": {
@@ -5442,7 +5526,8 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "hard techno, new trance",
       "confidence": "High",
@@ -5500,7 +5585,7 @@
         },
         {
           "name": "DISCIPLINE",
-          "note": "RA-linked lineup artist for TURBO's Abyss booking."
+          "note": "DISCIPLINE: hard techno/ new trance selection. RA-linked lineup artist for TURBO's Abyss booking."
         },
         {
           "name": "LaGlory",
@@ -5512,7 +5597,7 @@
         },
         {
           "name": "NAKIN",
-          "note": "RA-linked lineup artist for TURBO's Abyss booking."
+          "note": "NAKIN: hard techno/ new trance selection. RA-linked lineup artist for TURBO's Abyss booking."
         }
       ],
       "posterEvidence": {
@@ -5545,7 +5630,8 @@
       "district": "Changning",
       "vibe": [
         "experimental",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "electro, EBM, industrial, techno, IDM",
       "confidence": "High",
@@ -5570,12 +5656,14 @@
       "soundTags": [
         "industrial",
         "groovy",
-        "live-av"
+        "live-av",
+        "jazz-electronic"
       ],
       "decisionTags": [
         "techno-adjacent",
         "high intensity",
         "listening/live angle",
+        "jazz-electronic crossover",
         "late room",
         "ticket path",
         "trusted source",
@@ -5617,7 +5705,7 @@
         },
         {
           "name": "Illsee",
-          "note": "RA-linked event admin and lineup artist; exact set time was not published."
+          "note": "Illsee: electro/ EBM selection. RA-linked event admin and lineup artist; exact set time was not published."
         }
       ],
       "posterEvidence": {
@@ -5643,7 +5731,9 @@
       "district": "Jing'an",
       "vibe": [
         "warehouse",
-        "underground"
+        "underground",
+        "date",
+        "techno"
       ],
       "genre": "techno, club, multi-room pop-up",
       "confidence": "Watch",
@@ -5704,8 +5794,7 @@
       "venue": "ZUP Pizza Bar",
       "district": "Jing'an",
       "vibe": [
-        "date",
-        "house"
+        "date"
       ],
       "genre": "house, disco, funk, hip-hop",
       "confidence": "Medium",
@@ -5725,27 +5814,27 @@
       "lineup": [
         {
           "name": "RB//SH",
-          "note": "RA lists RB//SH in a B2B slot from 15:00 to 17:00."
+          "note": "RB//SH: house/ disco selection. RA lists RB//SH in a B2B slot from 15:00 to 17:00."
         },
         {
           "name": "Yogijazz",
-          "note": "RA lists Yogijazz in a B2B slot from 15:00 to 17:00."
+          "note": "Yogijazz: house/ disco selection. RA lists Yogijazz in a B2B slot from 15:00 to 17:00."
         },
         {
           "name": "Bolobolo",
-          "note": "RA lists Bolobolo from 17:00 to 18:00."
+          "note": "Bolobolo: house/ disco selection. RA lists Bolobolo from 17:00 to 18:00."
         },
         {
           "name": "Gabrielle Lin",
-          "note": "RA lists Gabrielle Lin from 18:00 to 19:00."
+          "note": "Gabrielle Lin: house/ disco selection. RA lists Gabrielle Lin from 18:00 to 19:00."
         },
         {
           "name": "Rain Ling",
-          "note": "RA lists Rain Ling from 19:00 to 20:00."
+          "note": "Rain Ling: house/ disco selection. RA lists Rain Ling from 19:00 to 20:00."
         },
         {
           "name": "FLOATING",
-          "note": "RA lists FLOATING from 20:00 to 21:00."
+          "note": "FLOATING: house/ disco selection. RA lists FLOATING from 20:00 to 21:00."
         }
       ],
       "setTimes": [
@@ -6049,7 +6138,8 @@
       "district": "Changning",
       "vibe": [
         "club",
-        "date"
+        "date",
+        "house"
       ],
       "genre": "house, hip-hop, dance battle",
       "confidence": "Medium",
@@ -6069,23 +6159,23 @@
       "lineup": [
         {
           "name": "Kaleidojazzlegs",
-          "note": "RA lists Kaleidojazzlegs as DJ for the Bloom Season 1 Grand Final."
+          "note": "Kaleidojazzlegs: house/ hip-hop selection. RA lists Kaleidojazzlegs as DJ for the Bloom Season 1 Grand Final."
         },
         {
           "name": "Yiyoo",
-          "note": "RA lists Yiyoo as MC for the Bloom Season 1 Grand Final."
+          "note": "Yiyoo: house/ hip-hop selection. RA lists Yiyoo as MC for the Bloom Season 1 Grand Final."
         },
         {
           "name": "Tevez",
-          "note": "RA lists Tevez as a judge."
+          "note": "Tevez: house/ hip-hop selection. RA lists Tevez as a judge."
         },
         {
           "name": "Kazane",
-          "note": "RA lists Kazane as a judge."
+          "note": "Kazane: house/ hip-hop selection. RA lists Kazane as a judge."
         },
         {
           "name": "DADA",
-          "note": "RA lists DADA as a judge."
+          "note": "DADA: house/ hip-hop selection. RA lists DADA as a judge."
         }
       ],
       "programHighlights": [
@@ -6124,7 +6214,7 @@
         "groovy"
       ],
       "decisionTags": [
-        "techno-adjacent",
+        "strong techno fit",
         "date route",
         "late room",
         "ticket path",
@@ -6284,17 +6374,18 @@
       "soundTags": [
         "live-av",
         "rooftop",
-        "industrial"
+        "industrial",
+        "jazz-electronic"
       ],
       "decisionTags": [
         "low techno fit",
         "high intensity",
         "date route",
         "listening/live angle",
+        "jazz-electronic crossover",
         "late room",
         "ticket path",
-        "trusted source",
-        "lineup visible"
+        "trusted source"
       ],
       "decisionProfile": {
         "intensity": "hard",
@@ -6383,15 +6474,15 @@
       "lineup": [
         {
           "name": "Solo",
-          "note": "RA lists Solo (UA) on the Cybionte lineup."
+          "note": "Solo: house/ club selection. RA lists Solo (UA) on the Cybionte lineup."
         },
         {
           "name": "YKK",
-          "note": "RA lists YKK (CN) on the Cybionte lineup."
+          "note": "YKK: house/ club selection. RA lists YKK (CN) on the Cybionte lineup."
         },
         {
           "name": "Heshang",
-          "note": "RA lists Heshang on the Cybionte lineup."
+          "note": "Heshang: house/ club selection. RA lists Heshang on the Cybionte lineup."
         },
         {
           "name": "Fat-K",
@@ -6466,7 +6557,8 @@
       "venue": "The Dome",
       "district": "Huangpu",
       "vibe": [
-        "date"
+        "date",
+        "house"
       ],
       "genre": "house, disco, feel-good classics, rooftop lounge",
       "confidence": "Watch",
@@ -6558,7 +6650,8 @@
       "vibe": [
         "hard",
         "experimental",
-        "underground"
+        "underground",
+        "bass"
       ],
       "genre": "experimental club, bass, hard club, deconstructed club",
       "confidence": "Medium",
@@ -6667,12 +6760,14 @@
         "bass-hybrid",
         "hard-techno",
         "industrial",
-        "live-av"
+        "live-av",
+        "jazz-electronic"
       ],
       "decisionTags": [
         "techno-adjacent",
         "high intensity",
         "listening/live angle",
+        "jazz-electronic crossover",
         "late room",
         "ticket path",
         "lineup visible"
@@ -6698,7 +6793,8 @@
       "district": "Jing'an",
       "vibe": [
         "underground",
-        "date"
+        "date",
+        "house"
       ],
       "genre": "house, club, electronic",
       "confidence": "Medium",
@@ -6732,19 +6828,19 @@
       "lineup": [
         {
           "name": "Golgol",
-          "note": "Heim poster and article screenshots list Golgol for LONG WAVE."
+          "note": "Golgol: house/ club selection. Heim poster and article screenshots list Golgol for LONG WAVE."
         },
         {
           "name": "SpaceReturn",
-          "note": "Heim poster and article screenshots list SpaceReturn for LONG WAVE."
+          "note": "SpaceReturn: house/ club selection. Heim poster and article screenshots list SpaceReturn for LONG WAVE."
         },
         {
           "name": "Sam Tbd",
-          "note": "Heim poster and article screenshots list Sam Tbd for LONG WAVE."
+          "note": "Sam Tbd: house/ club selection. Heim poster and article screenshots list Sam Tbd for LONG WAVE."
         },
         {
           "name": "Xiaolaba",
-          "note": "Heim poster/article text lists Xiaolaba / Xiao Laba for LONG WAVE."
+          "note": "Xiaolaba: house/ club selection. Heim poster/article text lists Xiaolaba / Xiao Laba for LONG WAVE."
         }
       ],
       "setTimes": [
@@ -6861,7 +6957,9 @@
       "district": "Changning",
       "vibe": [
         "underground",
-        "club"
+        "club",
+        "house",
+        "techno"
       ],
       "genre": "house, techno",
       "confidence": "Medium",
@@ -6900,19 +6998,19 @@
       "lineup": [
         {
           "name": "SLVN",
-          "note": "RA lists SLVN on the Minuit / MIRROR concept lineup."
+          "note": "SLVN: house/ techno selection. RA lists SLVN on the Minuit / MIRROR concept lineup."
         },
         {
           "name": "Olivier K",
-          "note": "RA lists Olivier K on the Minuit / MIRROR concept lineup."
+          "note": "Olivier K: house/ techno selection. RA lists Olivier K on the Minuit / MIRROR concept lineup."
         },
         {
           "name": "Olivier G",
-          "note": "RA lists Olivier G on the Minuit / MIRROR concept lineup."
+          "note": "Olivier G: house/ techno selection. RA lists Olivier G on the Minuit / MIRROR concept lineup."
         },
         {
           "name": "Chabuduo",
-          "note": "RA lists Chabuduo on the Minuit / MIRROR concept lineup."
+          "note": "Chabuduo: house/ techno selection. RA lists Chabuduo on the Minuit / MIRROR concept lineup."
         },
         {
           "name": "Live camera concept + VJing",
@@ -7224,7 +7322,8 @@
       "vibe": [
         "club",
         "experimental",
-        "underground"
+        "underground",
+        "hard"
       ],
       "genre": "club, hard dance, performance-led electronic",
       "confidence": "High",
@@ -7354,12 +7453,14 @@
       ],
       "soundTags": [
         "industrial",
-        "live-av"
+        "live-av",
+        "jazz-electronic"
       ],
       "decisionTags": [
         "strong techno fit",
         "high intensity",
         "listening/live angle",
+        "jazz-electronic crossover",
         "late room",
         "ticket path",
         "trusted source",
@@ -7390,7 +7491,8 @@
       "district": "Huangpu",
       "vibe": [
         "underground",
-        "date"
+        "date",
+        "house"
       ],
       "genre": "selector culture, house, club, electronic listening",
       "confidence": "Medium",
@@ -7516,7 +7618,8 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "hard techno, rave, high-bpm club",
       "confidence": "Medium",
@@ -7861,23 +7964,23 @@
       "lineup": [
         {
           "name": "MRD",
-          "note": "RA lists MRD (NO) as the headliner for TURBO at Dirty House."
+          "note": "MRD: trance/ techno selection. RA lists MRD (NO) as the headliner for TURBO at Dirty House."
         },
         {
           "name": "D_z",
-          "note": "RA lists D_z on the MRD x TURBO lineup."
+          "note": "D_z: trance/ techno selection. RA lists D_z on the MRD x TURBO lineup."
         },
         {
           "name": "Tiya Manson",
-          "note": "RA lists Tiya Manson on the MRD x TURBO lineup."
+          "note": "Tiya Manson: trance/ techno selection. RA lists Tiya Manson on the MRD x TURBO lineup."
         },
         {
           "name": "NAKIN",
-          "note": "RA lists NAKIN on the MRD x TURBO lineup."
+          "note": "NAKIN: trance/ techno selection. RA lists NAKIN on the MRD x TURBO lineup."
         },
         {
           "name": "Justease",
-          "note": "RA lists Justease on the MRD x TURBO lineup."
+          "note": "Justease: trance/ techno selection. RA lists Justease on the MRD x TURBO lineup."
         }
       ],
       "posterEvidence": {
@@ -7903,7 +8006,8 @@
       "district": "Huangpu",
       "vibe": [
         "house",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "house, techno-context",
       "confidence": "Medium",
@@ -7923,15 +8027,15 @@
       "lineup": [
         {
           "name": "Tofu",
-          "note": "RA lists Tofu on the Nikita Zabelin POTENT lineup."
+          "note": "Tofu: house/ techno-context selection. RA lists Tofu on the Nikita Zabelin POTENT lineup."
         },
         {
           "name": "Nikita Zabelin",
-          "note": "RA lists Nikita Zabelin on the POTENT lineup."
+          "note": "Nikita Zabelin: house/ techno-context selection. RA lists Nikita Zabelin on the POTENT lineup."
         },
         {
           "name": "HUAN HUAN",
-          "note": "RA lists HUAN HUAN on the POTENT lineup."
+          "note": "HUAN HUAN: house/ techno-context selection. RA lists HUAN HUAN on the POTENT lineup."
         }
       ],
       "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+.",
@@ -7990,7 +8094,8 @@
       "vibe": [
         "experimental",
         "underground",
-        "hard"
+        "hard",
+        "bass"
       ],
       "genre": "experimental club, deconstructed club, digital hardcore, bass",
       "confidence": "Medium",
@@ -8095,12 +8200,14 @@
         "bass-hybrid",
         "live-av",
         "industrial",
+        "jazz-electronic",
         "hard-techno"
       ],
       "decisionTags": [
         "techno-adjacent",
         "high intensity",
         "listening/live angle",
+        "jazz-electronic crossover",
         "late room",
         "ticket path",
         "lineup visible"
@@ -8146,31 +8253,31 @@
       "lineup": [
         {
           "name": "Mungk",
-          "note": "RA lists Mungk on the ONEFORTYASIA lineup."
+          "note": "Mungk: bass/ dubstep selection. RA lists Mungk on the ONEFORTYASIA lineup."
         },
         {
           "name": "Simbie",
-          "note": "RA lists Simbie on the ONEFORTYASIA lineup."
+          "note": "Simbie: bass/ dubstep selection. RA lists Simbie on the ONEFORTYASIA lineup."
         },
         {
           "name": "D8",
-          "note": "RA lists D8 on the ONEFORTYASIA lineup."
+          "note": "D8: bass/ dubstep selection. RA lists D8 on the ONEFORTYASIA lineup."
         },
         {
           "name": "Diipset",
-          "note": "RA lists Diipset on the ONEFORTYASIA lineup."
+          "note": "Diipset: bass/ dubstep selection. RA lists Diipset on the ONEFORTYASIA lineup."
         },
         {
           "name": "Sanli",
-          "note": "RA lists Sanli on the ONEFORTYASIA lineup."
+          "note": "Sanli: bass/ dubstep selection. RA lists Sanli on the ONEFORTYASIA lineup."
         },
         {
           "name": "Siesta",
-          "note": "RA lists Siesta on the ONEFORTYASIA lineup."
+          "note": "Siesta: bass/ dubstep selection. RA lists Siesta on the ONEFORTYASIA lineup."
         },
         {
           "name": "Somebodyyyy",
-          "note": "RA lists Somebodyyyy on the ONEFORTYASIA lineup."
+          "note": "Somebodyyyy: bass/ dubstep selection. RA lists Somebodyyyy on the ONEFORTYASIA lineup."
         }
       ],
       "promotionalLinks": [
@@ -8418,7 +8525,8 @@
       "district": "Changning",
       "vibe": [
         "listening",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "deep techno, industrial, psytrance, experimental",
       "confidence": "Medium",
@@ -8529,7 +8637,9 @@
       "district": "Changning",
       "vibe": [
         "underground",
-        "club"
+        "club",
+        "house",
+        "techno"
       ],
       "genre": "house, techno, underground house",
       "confidence": "High",
@@ -8776,27 +8886,27 @@
       "lineup": [
         {
           "name": "LEO MONIRA",
-          "note": "RA lists leomonira on the A.T.M lineup and describes an EBM, industrial techno, hard techno, and hardcore edge."
+          "note": "LEO MONIRA: techno/ hardcore selection. RA lists leomonira on the A.T.M lineup and describes an EBM, industrial techno, hard techno, and hardcore edge."
         },
         {
           "name": "QUAN",
-          "note": "RA lists QUAN on the A.T.M lineup."
+          "note": "QUAN: techno/ hardcore selection. RA lists QUAN on the A.T.M lineup."
         },
         {
           "name": "EXTREME JOHN",
-          "note": "RA lists EXTREME JOHN on the A.T.M lineup."
+          "note": "EXTREME JOHN: techno/ hardcore selection. RA lists EXTREME JOHN on the A.T.M lineup."
         },
         {
           "name": "Oil Nature",
-          "note": "RA lists Oil Nature on the A.T.M lineup."
+          "note": "Oil Nature: techno/ hardcore selection. RA lists Oil Nature on the A.T.M lineup."
         },
         {
           "name": "Jeff Chong",
-          "note": "RA lists Jeff Chong on the A.T.M lineup."
+          "note": "Jeff Chong: techno/ hardcore selection. RA lists Jeff Chong on the A.T.M lineup."
         },
         {
           "name": "Sunyoung",
-          "note": "RA lists Sunyoung on the A.T.M lineup."
+          "note": "Sunyoung: techno/ hardcore selection. RA lists Sunyoung on the A.T.M lineup."
         }
       ],
       "ticketStatus": "RA lists cost at 128 RMB and minimum age 18+.",
@@ -8875,11 +8985,11 @@
       "lineup": [
         {
           "name": "SOLO (Enchanted Night listing)",
-          "note": "RA lists SOLO on the Enchanted Night lineup; kept distinct from Solo (UA) until a profile source proves they are the same artist."
+          "note": "SOLO (Enchanted Night listing): disco/ pop selection. RA lists SOLO on the Enchanted Night lineup; kept distinct from Solo (UA) until a profile source proves they are the same artist."
         },
         {
           "name": "ALI RIBO",
-          "note": "RA lists ALI RIBO on the Enchanted Night lineup."
+          "note": "ALI RIBO: disco/ pop selection. RA lists ALI RIBO on the Enchanted Night lineup."
         }
       ],
       "ticketStatus": "RA does not expose price, age, or exact address details in the indexed text; verify with the venue before going.",
@@ -9060,7 +9170,9 @@
       "district": "Huangpu",
       "vibe": [
         "bass",
-        "underground"
+        "underground",
+        "house",
+        "techno"
       ],
       "genre": "techno-dubstep hybrid, house, club music",
       "confidence": "Watch",
@@ -9171,15 +9283,15 @@
       "lineup": [
         {
           "name": "Sylo",
-          "note": "Heim poster and monthly schedule screenshots list Sylo on the June 20 Heim Invites: Jasmin bill."
+          "note": "Sylo: techno-dubstep hybrid/ house selection. Heim poster and monthly schedule screenshots list Sylo on the June 20 Heim Invites: Jasmin bill."
         },
         {
           "name": "Jasmin",
-          "note": "Heim poster/monthly/article screenshots and SmartShanghai confirm Jasmin on the June 20 Heim bill; profile sources support the bass, DnB, and techno-adjacent lane."
+          "note": "Jasmin: techno-dubstep hybrid/ house selection. Heim poster/monthly/article screenshots and SmartShanghai confirm Jasmin on the June 20 Heim bill; profile sources support the bass, DnB, and techno-adjacent lane."
         },
         {
           "name": "Knopha",
-          "note": "Heim poster/monthly/article screenshots and SmartShanghai confirm Knopha as support; RA profile context supports China/Shanghai club relevance."
+          "note": "Knopha: techno-dubstep hybrid/ house selection. Heim poster/monthly/article screenshots and SmartShanghai confirm Knopha as support; RA profile context supports China/Shanghai club relevance."
         }
       ],
       "posterUrl": "assets/posters/heim-invites-jasmin-knopha.jpg",
@@ -9288,6 +9400,7 @@
         "minimal",
         "industrial",
         "live-av",
+        "jazz-electronic",
         "rooftop",
         "groovy"
       ],
@@ -9296,6 +9409,7 @@
         "high intensity",
         "date route",
         "listening/live angle",
+        "jazz-electronic crossover",
         "late room",
         "ticket path",
         "lineup visible"
@@ -9317,19 +9431,19 @@
       "lineup": [
         {
           "name": "Chingyi",
-          "note": "Liminal Dreams note screenshot describes Chingyi across ambient, drone, techno, downtempo, and uptempo, and says this is her third Liminal Dreams appearance."
+          "note": "Chingyi: ambient/ outer music selection. Liminal Dreams note screenshot describes Chingyi across ambient, drone, techno, downtempo, and uptempo, and says this is her third Liminal Dreams appearance."
         },
         {
           "name": "IIN",
-          "note": "Liminal Dreams note screenshot frames IIN as a Shanghai scene figure; keep biography restrained because the post does not provide a detailed public profile."
+          "note": "IIN: ambient/ outer music selection. Liminal Dreams note screenshot frames IIN as a Shanghai scene figure; keep biography restrained because the post does not provide a detailed public profile."
         },
         {
           "name": "Rainsoft",
-          "note": "Liminal Dreams note screenshot describes Rainsoft as a Shanghai-based musician/DJ drawing from deep ambient and techno, with a restrained and fluid atmosphere."
+          "note": "Rainsoft: ambient/ outer music selection. Liminal Dreams note screenshot describes Rainsoft as a Shanghai-based musician/DJ drawing from deep ambient and techno, with a restrained and fluid atmosphere."
         },
         {
           "name": "Toss",
-          "note": "Liminal Dreams note screenshot says Liminal Dreams member Toss will also be present for this Wigwam edition."
+          "note": "Toss: ambient/ outer music selection. Liminal Dreams note screenshot says Liminal Dreams member Toss will also be present for this Wigwam edition."
         }
       ],
       "address": "LG Floor, C.PARK, No. 658 Zhaohua Road, Changning District, Shanghai",
@@ -9434,12 +9548,14 @@
       "soundTags": [
         "bass-hybrid",
         "industrial",
-        "live-av"
+        "live-av",
+        "jazz-electronic"
       ],
       "decisionTags": [
         "techno-adjacent",
         "high intensity",
         "listening/live angle",
+        "jazz-electronic crossover",
         "late room",
         "ticket path",
         "lineup visible"
@@ -9466,7 +9582,8 @@
       "vibe": [
         "g-house",
         "tech-house",
-        "bass"
+        "bass",
+        "house"
       ],
       "genre": "G-house, bass house, tech house",
       "confidence": "High",
@@ -9545,7 +9662,9 @@
       "district": "Jing'an",
       "vibe": [
         "date",
-        "club"
+        "club",
+        "house",
+        "techno"
       ],
       "genre": "techno, house, hotel party",
       "confidence": "Medium",
@@ -9565,15 +9684,15 @@
       "lineup": [
         {
           "name": "Tom Kynd",
-          "note": "RA lists Tom Kynd as the headliner for NEON JUNGLE."
+          "note": "Tom Kynd: techno/ house selection. RA lists Tom Kynd as the headliner for NEON JUNGLE."
         },
         {
           "name": "Psyche",
-          "note": "RA lists Psyche on the NEON JUNGLE lineup."
+          "note": "Psyche: techno/ house selection. RA lists Psyche on the NEON JUNGLE lineup."
         },
         {
           "name": "Mr Chang",
-          "note": "RA lists Mr Chang on the NEON JUNGLE lineup."
+          "note": "Mr Chang: techno/ house selection. RA lists Mr Chang on the NEON JUNGLE lineup."
         }
       ],
       "promotionalLinks": [
@@ -9811,23 +9930,23 @@
       "lineup": [
         {
           "name": "Tsing",
-          "note": "RA lists Tsing on the FRIENDSSTANDout lineup."
+          "note": "Tsing: club/ electronic selection. RA lists Tsing on the FRIENDSSTANDout lineup."
         },
         {
           "name": "10000",
-          "note": "RA lists 10000 (CN) on the FRIENDSSTANDout lineup."
+          "note": "10000: club/ electronic selection. RA lists 10000 (CN) on the FRIENDSSTANDout lineup."
         },
         {
           "name": "YKK",
-          "note": "RA lists YKK (CN) on the FRIENDSSTANDout lineup."
+          "note": "YKK: club/ electronic selection. RA lists YKK (CN) on the FRIENDSSTANDout lineup."
         },
         {
           "name": "Taidi",
-          "note": "RA lists Taidi on the FRIENDSSTANDout lineup."
+          "note": "Taidi: club/ electronic selection. RA lists Taidi on the FRIENDSSTANDout lineup."
         },
         {
           "name": "DJ TRUCK",
-          "note": "RA lists DJ TRUCK on the FRIENDSSTANDout lineup."
+          "note": "DJ TRUCK: club/ electronic selection. RA lists DJ TRUCK on the FRIENDSSTANDout lineup."
         }
       ],
       "ticketStatus": "RA confirms date, 21:00-03:00 timing, venue, promoter, lineup, and flyer. Wigwam weekly schedule confirms the same June 21 FRIENDSSTAND Out listing as 21:00-late and Free Entry. Age policy remains unchecked.",
@@ -9919,27 +10038,27 @@
       "lineup": [
         {
           "name": "F-Mark",
-          "note": "RA lists F-Mark from 15:00 to 16:00."
+          "note": "F-Mark: house/ italo disco selection. RA lists F-Mark from 15:00 to 16:00."
         },
         {
           "name": "Skinny Brown",
-          "note": "RA lists Skinny Brown from 16:00 to 17:00."
+          "note": "Skinny Brown: house/ italo disco selection. RA lists Skinny Brown from 16:00 to 17:00."
         },
         {
           "name": "huiscat",
-          "note": "RA lists huiscat from 17:00 to 18:00."
+          "note": "huiscat: house/ italo disco selection. RA lists huiscat from 17:00 to 18:00."
         },
         {
           "name": "M!R4",
-          "note": "RA lists M!R4 from 18:00 to 19:00."
+          "note": "M!R4: house/ italo disco selection. RA lists M!R4 from 18:00 to 19:00."
         },
         {
           "name": "KOUGAR",
-          "note": "RA lists KOUGAR from 19:00 to 20:00."
+          "note": "KOUGAR: house/ italo disco selection. RA lists KOUGAR from 19:00 to 20:00."
         },
         {
           "name": "IANFABELAR",
-          "note": "RA lists IANFABELAR from 20:00 to 21:00."
+          "note": "IANFABELAR: house/ italo disco selection. RA lists IANFABELAR from 20:00 to 21:00."
         }
       ],
       "setTimes": [
@@ -10093,6 +10212,7 @@
         "acid",
         "live-av",
         "industrial",
+        "jazz-electronic",
         "rooftop"
       ],
       "decisionTags": [
@@ -10100,6 +10220,7 @@
         "high intensity",
         "date route",
         "listening/live angle",
+        "jazz-electronic crossover",
         "ticket path",
         "trusted source",
         "lineup visible"
@@ -10297,7 +10418,8 @@
       "district": "Huangpu",
       "vibe": [
         "underground",
-        "bass"
+        "bass",
+        "hard"
       ],
       "genre": "ambient, bass, trance, club",
       "confidence": "Medium",
@@ -10412,7 +10534,8 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "hard techno, industrial, rave, EBM",
       "confidence": "Medium",
@@ -10609,12 +10732,14 @@
       "soundTags": [
         "industrial",
         "minimal",
-        "live-av"
+        "live-av",
+        "jazz-electronic"
       ],
       "decisionTags": [
         "techno-adjacent",
         "high intensity",
         "listening/live angle",
+        "jazz-electronic crossover",
         "verify first"
       ],
       "decisionProfile": {
@@ -10875,7 +11000,9 @@
       "district": "Huangpu",
       "vibe": [
         "underground",
-        "date"
+        "date",
+        "house",
+        "techno"
       ],
       "genre": "techno, house",
       "confidence": "Watch",
@@ -10983,7 +11110,8 @@
       "district": "Huangpu",
       "vibe": [
         "hard",
-        "underground"
+        "underground",
+        "techno"
       ],
       "genre": "hard techno, rave, hard club, local support",
       "confidence": "Medium",
@@ -11097,7 +11225,8 @@
       "district": "Huangpu",
       "vibe": [
         "underground",
-        "date"
+        "date",
+        "house"
       ],
       "genre": "EBM, electro, trance, house",
       "confidence": "Medium",
@@ -11255,12 +11384,14 @@
       ],
       "soundTags": [
         "live-av",
-        "industrial"
+        "industrial",
+        "jazz-electronic"
       ],
       "decisionTags": [
         "techno-adjacent",
         "high intensity",
         "listening/live angle",
+        "jazz-electronic crossover",
         "lineup visible",
         "verify first",
         "details need check"
@@ -11313,7 +11444,8 @@
       "district": "Changning",
       "vibe": [
         "experimental",
-        "hard"
+        "hard",
+        "techno"
       ],
       "genre": "acid techno, metal crossover",
       "confidence": "Watch",
@@ -11360,12 +11492,14 @@
         "industrial",
         "acid",
         "live-av",
+        "jazz-electronic",
         "hard-techno"
       ],
       "decisionTags": [
         "strong techno fit",
         "high intensity",
         "listening/live angle",
+        "jazz-electronic crossover",
         "late room",
         "ticket path",
         "lineup visible",
@@ -11429,7 +11563,8 @@
       "district": "Changning",
       "vibe": [
         "bass",
-        "experimental"
+        "experimental",
+        "techno"
       ],
       "genre": "hyperpop, trance, techno",
       "confidence": "Watch",
@@ -11485,12 +11620,14 @@
         "bass-hybrid",
         "industrial",
         "live-av",
+        "jazz-electronic",
         "groovy"
       ],
       "decisionTags": [
         "strong techno fit",
         "high intensity",
         "listening/live angle",
+        "jazz-electronic crossover",
         "lineup visible",
         "verify first"
       ],
@@ -11716,7 +11853,8 @@
       "venue": "Skyline Dome | Sushi Rooftop & Lounge",
       "district": "Shanghai",
       "vibe": [
-        "date"
+        "date",
+        "house"
       ],
       "genre": "house",
       "confidence": "Watch",
@@ -11788,7 +11926,11 @@
       "district": "Changning",
       "vibe": [
         "underground",
-        "experimental"
+        "experimental",
+        "house",
+        "bass",
+        "warehouse",
+        "techno"
       ],
       "genre": "house, downtempo, minimal, ambient, techno, bass, trance",
       "confidence": "Watch",
@@ -11854,12 +11996,14 @@
         "bass-hybrid",
         "live-av",
         "industrial",
+        "jazz-electronic",
         "groovy"
       ],
       "decisionTags": [
         "strong techno fit",
         "high intensity",
         "listening/live angle",
+        "jazz-electronic crossover",
         "ticket path",
         "lineup visible",
         "verify first",
@@ -11986,7 +12130,8 @@
       "vibe": [
         "experimental",
         "dark",
-        "listening"
+        "listening",
+        "jazz-electronic"
       ],
       "genre": "dark wave, trip-hop, experimental rock, jazz/R&B crossover",
       "confidence": "Medium",
@@ -12076,12 +12221,14 @@
       "sourceConfidence": "Medium-confidence current event: ShowStart confirms the practical core fields and the user-provided Yuyintang screenshots add poster and sound context. Age policy and detailed running order remain unresolved; one WeChat article/ticket screenshot includes a conflicting lower ticket-block date.",
       "soundTags": [
         "live-av",
-        "industrial"
+        "industrial",
+        "jazz-electronic"
       ],
       "decisionTags": [
         "low techno fit",
         "high intensity",
         "listening/live angle",
+        "jazz-electronic crossover",
         "late room",
         "ticket path",
         "lineup visible"
@@ -12186,13 +12333,15 @@
       "soundTags": [
         "live-av",
         "rooftop",
-        "industrial"
+        "industrial",
+        "jazz-electronic"
       ],
       "decisionTags": [
         "low techno fit",
         "high intensity",
         "date route",
         "listening/live angle",
+        "jazz-electronic crossover",
         "ticket path",
         "verify first"
       ],
@@ -12318,12 +12467,14 @@
       "sourceConfidence": "Medium-confidence current event: ShowStart confirms date, time, venue, address, artist, price, ticket route, and ticket status; Yuyintang/SO.READY screenshots confirm the tour context. Age policy and support/running order remain unresolved.",
       "soundTags": [
         "industrial",
-        "live-av"
+        "live-av",
+        "jazz-electronic"
       ],
       "decisionTags": [
         "low techno fit",
         "high intensity",
         "listening/live angle",
+        "jazz-electronic crossover",
         "late room",
         "ticket path",
         "lineup visible"
@@ -12395,18 +12546,22 @@
       "verifyBeforeGoing": "Confirm ticket tier and availability via the SmartShanghai ticket page; age policy and running order were not visible in public sources. VAS est address is 3/F, Building 3, 2266 Longteng Dadao near Longwen Lu.",
       "sourceConfidence": "High-confidence current event: SmartShanghai event page confirms title, date, time, venue, address, price, and a substantial event description that names BBNG’s jazz/electronic/hip-hop identity and their collaborations with Kendrick Lamar, Tyler, the Creator, and Frank Ocean.",
       "soundTags": [
-        "jazz-electronic",
-        "live-band",
-        "hip-hop-jazz-crossover"
+        "bass-hybrid",
+        "live-av",
+        "jazz-electronic"
       ],
       "decisionTags": [
-        "jazz-electronic-crossover",
-        "mid-week-live",
-        "imported-show"
+        "techno-adjacent",
+        "listening/live angle",
+        "jazz-electronic crossover",
+        "late room",
+        "ticket path",
+        "trusted source",
+        "lineup visible"
       ],
       "decisionProfile": {
-        "intensity": "medium",
-        "credibility": "confirmed",
+        "intensity": "soft-to-medium",
+        "credibility": "solid",
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
@@ -12560,26 +12715,25 @@
       "verifyBeforeGoing": "Confirm ticket tier, start time, and seat selection via the SmartShanghai ticket page. Theatre YOUNG is at 1155 Kongjiang Lu in Yangpu, near Huangxing Rd station. Performance is in Czech with Chinese/Czech subtitles.",
       "sourceConfidence": "Medium-confidence current event: SmartShanghai confirms core fields (title, date, time, venue, price, lineup of Badfocus and Daniel Prazgk). Categorized as experimental electronic theatre rather than electronic dance music — a niche but genuine live-electronic calendar entry.",
       "soundTags": [
-        "experimental-electronic",
-        "live-dj-score",
+        "live-av",
         "theatre-electronic"
       ],
       "decisionTags": [
-        "experimental-performance",
-        "live-electronic-score",
-        "theatre-event"
+        "techno-adjacent",
+        "listening/live angle",
+        "experimental theatre electronic",
+        "ticket path",
+        "lineup visible",
+        "details need check"
       ],
       "decisionProfile": {
-        "intensity": "low-to-medium",
-        "credibility": "confirmed",
-        "lateRoom": true,
+        "intensity": "soft-to-medium",
+        "credibility": "solid",
+        "lateRoom": false,
         "ticketReady": true,
         "hasLineup": true,
         "hasPoster": true,
-        "riskFlags": [
-          "not-a-club-night",
-          "theatre-format"
-        ]
+        "riskFlags": []
       }
     },
     {
@@ -12613,11 +12767,11 @@
       "lineup": [
         {
           "name": "Shaun Soomro",
-          "note": "RA lists Shaun Soomro on the September 12 Shanghai lineup and links his artist profile; exact set time was not published."
+          "note": "Shaun Soomro: club/ electronic selection. RA lists Shaun Soomro on the September 12 Shanghai lineup and links his artist profile; exact set time was not published."
         },
         {
           "name": "DJ Serang",
-          "note": "RA lists DJ Serang on the September 12 Shanghai lineup; no separate artist profile was captured in this pass."
+          "note": "DJ Serang: club/ electronic selection. RA lists DJ Serang on the September 12 Shanghai lineup; no separate artist profile was captured in this pass."
         }
       ],
       "ticketStatus": "RA shows venue TBA, blank cost, no exposed age rule, and no direct ticket state in the indexed text; it also shows the event was last updated 10 months ago. Keep as Watch until RA/LMD publishes current practical details.",

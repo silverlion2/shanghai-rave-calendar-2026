@@ -477,8 +477,46 @@ $env:TESSDATA_PREFIX = $env:USERPROFILE
 
 ```powershell
 cd "D:\workspace\rave calendar"
-node -e "const j=require('./data/events.json');const q=process.argv[1];const r=j.events.filter(e=>JSON.stringify(e).toLowerCase().includes(q.toLowerCase()));console.log(JSON.stringify(r.map(e=>({id:e.id,title:e.title,date:e.date,venue:e.venue})),null,2));" "MALAA"
+node -e "const j=require('./data/events.json');const q=process.argv[1];const r=j.events.filter(e=>JSON.stringify(e).toLowerCase().includes(q.toLowerCase()));console.log(JSON.stringify(r.map(e=>({id:e.id,title:e.title,date:e.date,venue:e.v nue})),null,2));" "MALAA"
 ```
 
-**Report the match to the user and wait for confirmation** before
-proceeding to copy / crop / push.
+**Report the match to the user and wait for confirmation** before proceeding to copy / crop / push.
+
+## Remote-URL poster evidence pattern (no local upload needed)
+
+For imported events whose event page already exposes a direct event poster URL (e.g. SmartShanghai event pages that render a dedicated poster image like `images.smartshanghai.com.cn/uploads/repository/...`), we use the remote URL directly as `posterUrl` and embed it inside `posterEvidence` as a trusted source rather than copying a local image into `assets/posters/`. This is valid and preferred when:
+
+1. The image is served directly by the same domain as the event ticket/purchase page (SmartShanghai, not a random CDN).
+2. The image URL is stable and publicly linkable (not behind a login wall or short-lived signed URL).
+3. The event has a confirmed, current `event-ticketing-source` status (not a watchlist-only entry).
+
+**Data shape in `data/events.json`:**
+
+```json
+{
+  "posterUrl": "https://images.smartshanghai.com.cn/uploads/repository/2026/04/30/8d25bbe6-19ad-4a97-bfd2-45b7af357295.jpg",
+  "posterEvidence": {
+    "type": "venue-event-poster",
+    "source": "SmartShanghai event page for [Title]",
+    "url": "https://www.smartshanghai.com/event/[event-slug]",
+    "imageUrl": "https://images.smartshanghai.com.cn/uploads/repository/... (same as posterUrl)",
+    "lastChecked": "YYYY-MM-DD",
+    "verificationNote": "SmartShanghai event page confirms title, date, time, venue, price. Poster image was captured directly from the event page poster element — no local file copy needed, remote URL is stable and not behind a login wall."
+  }
+}
+```
+
+**When to use this pattern instead of the full poster-upload workflow:**
+
+| Scenario | Pattern |
+|----------|---------|
+| Imported event with a direct, stable poster image on SmartShanghai | Remote-URL evidence pattern (this section) |
+| User gives us a Weixin / 小红书 / 公众号 image that needs to be verified | Full OCR + copy + crop + upload workflow (steps 1-13 above) |
+| Event has no poster anywhere and no image from the user | Leave `hasPoster: false` in `decisionProfile`; do not invent a poster |
+
+**How to capture a remote poster URL:**
+1. Navigate to the event's SmartShanghai (or equivalent) event page.
+2. Find the main poster image (not a thumbnail). Look for `<img>` elements whose `src` contains a path like `/uploads/repository/` or similar.
+3. If the page is a SPA, use `browser_evaluate` to extract `document.querySelector(...)?.src` from the page DOM.
+4. Write the URL into `posterUrl` and mirror it inside `posterEvidence` with `type: "venue-event-poster"`.
+5. After saving `events.json`, re-run the event-tagging pipeline so `decisionProfile.hasPoster` flips to `true`.

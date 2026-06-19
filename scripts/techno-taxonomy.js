@@ -10,6 +10,8 @@ const SOUND_TAXONOMY = [
   { id: "house", label: "House", zh: "House", cues: ["house", "tech house", "tech-house", "deep house", "g-house", "bass house", "underground house", "minimal house", "afro house", "soul house", "funky house"] },
   { id: "bass-hybrid", label: "Bass hybrid", zh: "Bass 混合", cues: ["bass", "ukg", "dubstep", "ghettotech", "club music", "breaks", "jungle", "garage", "baile funk"] },
   { id: "live-av", label: "Live / A/V", zh: "Live / 影像", cues: ["live", "a/v", "visual", "av ", "radio session", "hardware", "synth"] },
+  { id: "jazz-electronic", label: "Jazz-electronic crossover", zh: "爵士电子", cues: ["jazz-electronic", "jazz/electronic", "jazz/electronic", "jazz/hip-hop", "jazz band electronic", "jazz trio electronic", "live electronic jazz", "crossover jazz", "jazz funk", "jazz fusion"] },
+  { id: "theatre-electronic", label: "Theatre / electronic score", zh: "剧场电子配乐", cues: ["electronic theatre", "electronic score", "dj-led", "dj set live", "live electronic score", "live electronic music", "live electronic during", "electronic music live during", "badfocus", "physical theatre", "contemporary performance", "theatre young"] },
   { id: "warehouse", label: "Warehouse", zh: "仓库", cues: ["warehouse", "secret location", "pop-up", "multi-room", "industrial grid", "system"] },
   { id: "rooftop", label: "Rooftop / open-air", zh: "露台", cues: ["rooftop", "open-air", "open air", "bund", "garden", "pavillon", "sunset", "skyline"] },
 ];
@@ -19,8 +21,10 @@ const BROAD_VIBE_TO_SOUND = {
   warehouse: ["warehouse"],
   bass: ["bass-hybrid"],
   date: ["rooftop"],
-  experimental: ["industrial", "live-av"],
+  experimental: ["industrial", "live-av", "jazz-electronic"],
   house: ["house"],
+  "jazz-electronic": ["jazz-electronic"],
+  "theatre-electronic": ["theatre-electronic"],
 };
 
 function unique(values) {
@@ -116,9 +120,9 @@ function technoFit(event = {}) {
   let score = 0;
   if (/(hard techno|acid techno|industrial techno|warehouse rave|abyss|system|turbo|lethal distortion)/.test(text)) score += 3;
   else if (/\b(techno|acid|industrial|ebm|electro|trance|house|breaks?|jungle|ukg|garage|dubstep|ghettotech|hard dance)\b/.test(text)) score += 2;
-  else if (/(club music|bass|experimental|ambient|a\/v|darkwave|minimal wave|cold wave|post-punk|minimal|nu-disco|baile funk)/.test(text)) score += 1;
-  if (/\b(abyss|potent|exit|illum|heim|dirty house|reactor|fenrir|wigwam|specters)\b/.test(text)) score += 1;
-  if (/(pool party|afrowave|afrobeats|amapiano|90s disco|rooftop lounge|soul|funk|jazz)/.test(text)) score -= 1;
+  else if (/(club music|bass|experimental|ambient|a\/v|darkwave|minimal wave|cold wave|post-punk|minimal|nu-disco|baile funk|jazz-electronic|jazz\/electronic|jazz\/hip-hop|live electronic score|dj-led|badfocus|physical theatre|electronic theatre)/.test(text)) score += 1;
+  if (/\b(abyss|potent|exit|illum|heim|dirty house|reactor|fenrir|wigwam|specters|vas est|theatre young)\b/.test(text)) score += 1;
+  if (/(pool party|afrowave|afrobeats|amapiano|90s disco|rooftop lounge|soul|funk)/.test(text)) score -= 1;
   if (/(lower techno fit|more listening-session than rave|not a rave|not techno)/.test(text)) score -= 1;
   return Math.max(0, Math.min(4, score));
 }
@@ -149,6 +153,8 @@ function decisionProfileForEvent(event = {}) {
   if (soundTags.includes("rooftop") || array(event.vibe).includes("date")) tags.push("date route");
   if (soundTags.includes("warehouse")) tags.push("warehouse signal");
   if (soundTags.includes("live-av")) tags.push("listening/live angle");
+  if (soundTags.includes("jazz-electronic")) tags.push("jazz-electronic crossover");
+  if (soundTags.includes("theatre-electronic")) tags.push("experimental theatre electronic");
   if (late) tags.push("late room");
   if (ticketReady) tags.push("ticket path");
   if (highSource) tags.push("trusted source");
@@ -160,9 +166,11 @@ function decisionProfileForEvent(event = {}) {
     ? "hard"
     : soundTags.includes("rooftop") || array(event.vibe).includes("date")
       ? "soft"
-      : soundTags.includes("bass-hybrid") || soundTags.includes("trance-adjacent")
-        ? "high"
-        : "medium";
+      : soundTags.includes("jazz-electronic") || soundTags.includes("theatre-electronic")
+        ? "soft-to-medium"
+        : soundTags.includes("bass-hybrid") || soundTags.includes("trance-adjacent")
+          ? "high"
+          : "medium";
 
   const credibility = highSource && fit >= 3
     ? "strong"

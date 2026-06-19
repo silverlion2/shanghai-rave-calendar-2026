@@ -37,6 +37,8 @@ Adds vibe labels based on genre + description:
 - **`date`** — rooftop / Bund / sunset / hotel / open-air / date-friendly
 - **`warehouse`** — warehouse / secret / pop-up / industrial-grid events
 - **`techno`** — default when genre contains "techno"
+- **`jazz-electronic`** — jazz/electronic crossover live bands (BBNG, etc.) that use electronic production and hip-hop breakbeat energy (detected from genre text like "jazz/electronic", "jazz/hip-hop", "crossover jazz", or vibe label `jazz-electronic`)
+- **`theatre-electronic`** — theatre productions scored by live DJ electronic music (e.g. Vivat Football at Theatre YOUNG). Not a traditional club night but legitimately uses live electronic sound as a core structural element.
 
 ### Step 4: Validation report
 Emits a report listing events with house tags, events with soundTags, and issues such as:

@@ -90,6 +90,8 @@ function extractStyleHint(event) {
       { pattern: /\bbass\b|dubstep|uk garage|ukg|breaks|jungle/i, label: 'bass/broken-beat' },
       { pattern: /\bdisco\b|nu-disco|soul|funk/i, label: 'disco/soul' },
       { pattern: /\bhip.hop|hip-hop|rap/i, label: 'hip-hop' },
+      { pattern: /jazz-electronic|jazz\/electronic|jazz\/hip-hop|crossover jazz|jazz funk|jazz fusion|jazz band electronic|live electronic jazz/i, label: 'jazz-electronic crossover' },
+      { pattern: /electronic theatre|physical theatre|live electronic score|dj-led|dj set live|badfocus|theatre young|contemporary performance/i, label: 'theatre-electronic score' },
     ];
     styleKeywords.forEach(kw => {
       if (kw.pattern.test(desc) && !parts.some(p => p.toLowerCase().includes(kw.label.toLowerCase().split('/')[0]))) {
@@ -211,6 +213,16 @@ function applySmartVibes(events, opts = {}) {
     // techno as default
     if (/\btechno\b/i.test(genre) && !(event.vibe || []).includes('techno')) {
       event.vibe = [...(event.vibe || []), 'techno'];
+    }
+
+    // jazz-electronic crossover (BADBADNOTGOOD-style live bands)
+    if (/jazz-electronic|jazz\/electronic|jazz\/hip-hop|crossover jazz|jazz funk|jazz fusion|jazz band electronic|live electronic jazz|jazz.*electronic|electronic.*jazz/i.test(genre + ' ' + desc)) {
+      if (!(event.vibe || []).includes('jazz-electronic')) event.vibe = [...(event.vibe || []), 'jazz-electronic'];
+    }
+
+    // theatre-electronic (Vivat Football-style: theatre with live DJ electronic score)
+    if (/electronic theatre|physical theatre|live electronic score|dj-led|dj set live|badfocus|theatre young|contemporary performance.*electronic/i.test(genre + ' ' + desc)) {
+      if (!(event.vibe || []).includes('theatre-electronic')) event.vibe = [...(event.vibe || []), 'theatre-electronic'];
     }
   });
 
