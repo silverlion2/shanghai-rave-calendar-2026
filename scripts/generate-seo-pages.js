@@ -37,6 +37,8 @@ const SITE_URL = siteStructure.site.baseUrl;
 const SITE_NAME = siteStructure.site.name;
 const STATIC_LASTMOD = siteStructure.site.staticLastmod;
 const TIMEZONE_OFFSET = siteStructure.site.timezoneOffset;
+const archiveCutoffHour = 6;
+const statusNow = new Date();
 
 const payload = JSON.parse(fs.readFileSync(DATA_FILE, "utf8"));
 const events = Array.isArray(payload) ? payload : payload.events;
@@ -95,8 +97,70 @@ function isFestival(event = {}) {
 }
 
 function formatLabel(event) {
-  if (isFestival(event)) return event.status === "watch" ? "festival watch" : "festival";
-  return event.status || "event";
+  return eventStatusLabel(event);
+}
+
+function eventArchiveCutoff(event) {
+  const sortDate = dateOnly(event?.sortDate);
+  if (!sortDate) return null;
+  const cutoff = new Date(`${sortDate}T${String(archiveCutoffHour).padStart(2, "0")}:00:00+08:00`);
+  cutoff.setUTCDate(cutoff.getUTCDate() + 1);
+  return cutoff;
+}
+
+function eventIsPastByCutoff(event, now = statusNow) {
+  if (String(event?.status || "").toLowerCase() === "past") return true;
+  const cutoff = eventArchiveCutoff(event);
+  if (!cutoff) return String(event?.status || "").toLowerCase() === "past";
+  return now.getTime() >= cutoff.getTime();
+}
+
+function eventTemporalStatus(event, now = statusNow) {
+  const rawStatus = String(event?.status || "").toLowerCase();
+  if (rawStatus === "past" || eventIsPastByCutoff(event, now)) return "past";
+  const sortDate = dateOnly(event?.sortDate);
+  const todayKey = shanghaiDateKey(now);
+  if (sortDate && todayKey && sortDate <= todayKey) return "current";
+  return "upcoming";
+}
+
+function eventIsWatchStatus(event) {
+  return String(event?.status || "").toLowerCase() === "watch"
+    || event?.confidence === "Watch"
+    || String(event?.sourceStatus || "").toLowerCase() === "watchlist";
+}
+
+function eventEffectiveStatus(event) {
+  const temporalStatus = eventTemporalStatus(event);
+  if (temporalStatus === "past") return "past";
+  if (eventIsWatchStatus(event)) return "watch";
+  return temporalStatus;
+}
+
+function eventStatusLabel(event) {
+  const temporalStatus = eventTemporalStatus(event);
+  const status = eventEffectiveStatus(event);
+  if (isFestival(event)) {
+    if (status === "watch") return temporalStatus === "current" ? "current festival watch" : "festival watch";
+    if (temporalStatus === "past") return "past festival";
+    if (temporalStatus === "current") return "current festival";
+    return "festival";
+  }
+  if (status === "watch" && temporalStatus === "current") return "current watch";
+  return status;
+}
+
+function shanghaiDateKey(now = new Date()) {
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: "Asia/Shanghai",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).formatToParts(now).reduce((acc, part) => {
+    if (part.type !== "literal") acc[part.type] = part.value;
+    return acc;
+  }, {});
+  return parts.year && parts.month && parts.day ? `${parts.year}-${parts.month}-${parts.day}` : "";
 }
 
 function programHighlights(event) {
@@ -164,10 +228,10 @@ function renderEventPage(event) {
           <span>/</span>
           <span>${escapeHtml(event.title)}</span>
         </nav>
-        <article class="event-detail ${isPublic ? "" : "watch-detail"} ${festival ? "festival-detail" : ""}">
+        <article class="event-detail ${isPublic ? "" : "watch-detail"} ${festival ? "festival-detail" : ""}" data-event-detail data-event-sort-date="${escapeAttr(event.sortDate || "")}" data-event-status="${escapeAttr(event.status || "")}" data-event-confidence="${escapeAttr(event.confidence || "")}" data-event-source-status="${escapeAttr(event.sourceStatus || "")}" data-event-kind="${festival ? "festival" : "event"}">
           <header class="event-hero">
             <div>
-              <p class="kicker">${escapeHtml(formatLabel(event))} / ${escapeHtml(event.confidence || "source checked")}</p>
+              <p class="kicker"><span data-event-status-label>${escapeHtml(formatLabel(event))}</span> / ${escapeHtml(event.confidence || "source checked")}</p>
               <h1>${escapeHtml(event.title)}</h1>
               <p class="lede">${escapeHtml(event.description || "Public event listing; confirm final details at the source before planning.")}</p>
               <div class="action-row">
@@ -206,6 +270,7 @@ function renderEventPage(event) {
           ${renderTrustLedger(event)}
         </article>
         ${sharedFooter("../")}
+        ${eventStatusScript()}
       </main>
     `,
   });
@@ -239,6 +304,86 @@ function nav(prefix = "") {
 
 function sharedFooter(prefix = "") {
   return renderBottomDispatchFooter(siteStructure, { prefix });
+}
+
+function eventStatusScript() {
+  return `<script>
+    (() => {
+      const root = document.querySelector("[data-event-detail]");
+      if (!root) return;
+      const archiveCutoffHour = 6;
+      const event = {
+        sortDate: root.dataset.eventSortDate || "",
+        status: root.dataset.eventStatus || "",
+        confidence: root.dataset.eventConfidence || "",
+        sourceStatus: root.dataset.eventSourceStatus || "",
+        kind: root.dataset.eventKind || "event"
+      };
+      const dateOnly = value => {
+        const match = String(value || "").match(/\\d{4}-\\d{2}-\\d{2}/);
+        return match ? match[0] : "";
+      };
+      const shanghaiDateKey = now => {
+        const parts = new Intl.DateTimeFormat("en-US", {
+          timeZone: "Asia/Shanghai",
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit"
+        }).formatToParts(now).reduce((acc, part) => {
+          if (part.type !== "literal") acc[part.type] = part.value;
+          return acc;
+        }, {});
+        return parts.year && parts.month && parts.day ? parts.year + "-" + parts.month + "-" + parts.day : "";
+      };
+      const eventArchiveCutoff = row => {
+        const sortDate = dateOnly(row.sortDate);
+        if (!sortDate) return null;
+        const cutoff = new Date(sortDate + "T" + String(archiveCutoffHour).padStart(2, "0") + ":00:00+08:00");
+        cutoff.setUTCDate(cutoff.getUTCDate() + 1);
+        return cutoff;
+      };
+      const eventIsPastByCutoff = (row, now) => {
+        if (String(row.status || "").toLowerCase() === "past") return true;
+        const cutoff = eventArchiveCutoff(row);
+        return cutoff ? now.getTime() >= cutoff.getTime() : false;
+      };
+      const eventTemporalStatus = (row, now) => {
+        const rawStatus = String(row.status || "").toLowerCase();
+        if (rawStatus === "past" || eventIsPastByCutoff(row, now)) return "past";
+        const sortDate = dateOnly(row.sortDate);
+        const todayKey = shanghaiDateKey(now);
+        if (sortDate && todayKey && sortDate <= todayKey) return "current";
+        return "upcoming";
+      };
+      const eventIsWatchStatus = row => (
+        String(row.status || "").toLowerCase() === "watch"
+        || row.confidence === "Watch"
+        || String(row.sourceStatus || "").toLowerCase() === "watchlist"
+      );
+      const eventEffectiveStatus = (row, now) => {
+        const temporalStatus = eventTemporalStatus(row, now);
+        if (temporalStatus === "past") return "past";
+        if (eventIsWatchStatus(row)) return "watch";
+        return temporalStatus;
+      };
+      const eventStatusLabel = (row, now) => {
+        const temporalStatus = eventTemporalStatus(row, now);
+        const status = eventEffectiveStatus(row, now);
+        if (String(row.kind || "").toLowerCase() === "festival") {
+          if (status === "watch") return temporalStatus === "current" ? "current festival watch" : "festival watch";
+          if (temporalStatus === "past") return "past festival";
+          if (temporalStatus === "current") return "current festival";
+          return "festival";
+        }
+        if (status === "watch" && temporalStatus === "current") return "current watch";
+        return status;
+      };
+      const label = eventStatusLabel(event, new Date());
+      document.querySelectorAll("[data-event-status-label]").forEach(node => {
+        node.textContent = label;
+      });
+    })();
+  </script>`;
 }
 
 function fact(label, value) {
@@ -372,7 +517,7 @@ function renderTrustLedger(event) {
 }
 
 function selectionBasis(event) {
-  if (event.sourceStatus === "watchlist" || event.status === "watch") {
+  if (eventIsWatchStatus(event)) {
     return "Watchlist lead kept visible for source monitoring; do not treat date, lineup, or ticketing as final until stronger evidence lands.";
   }
   const tags = Array.isArray(event.decisionTags) && event.decisionTags.length ? event.decisionTags.slice(0, 3).join(", ") : "";
@@ -385,7 +530,7 @@ function bestForFallback(event) {
   const tags = Array.isArray(event.decisionTags) ? event.decisionTags.join(" ").toLowerCase() : "";
   const sounds = Array.isArray(event.soundTags) ? event.soundTags.join(" ").toLowerCase() : "";
   const text = `${tags} ${sounds} ${event.genre || ""}`.toLowerCase();
-  if (event.status === "watch" || event.sourceStatus === "watchlist") return "Readers tracking leads who are comfortable verifying details before making plans.";
+  if (eventIsWatchStatus(event)) return "Readers tracking leads who are comfortable verifying details before making plans.";
   if (/hard|industrial|trance/.test(text)) return "Hard-rave and late-room listeners who want higher-pressure club programming.";
   if (/rooftop|date route|groovy|melodic/.test(text)) return "Date-night planners and readers who want a social route with lighter club pressure.";
   if (/live|listening|experimental|ambient/.test(text)) return "Listening-first readers and live-electronic crossover audiences.";
@@ -497,8 +642,8 @@ function renderSitemap(list) {
   const eventRoutes = list.filter(isPublicEvent).map(event => [
     `/events/${event.id}`,
     dateOnly(event.lastChecked || event.sortDate) || dataLastmod,
-    event.status === "past" ? "monthly" : "daily",
-    event.status === "past" ? "0.45" : "0.7",
+    eventEffectiveStatus(event) === "past" ? "monthly" : "daily",
+    eventEffectiveStatus(event) === "past" ? "0.45" : "0.7",
   ]);
   const urls = [...staticRoutes, ...eventRoutes];
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -514,7 +659,7 @@ ${urls.map(([loc, lastmod, changefreq, priority]) => `  <url>
 }
 
 function isPublicEvent(event) {
-  return event.status !== "watch" && event.sourceStatus !== "watchlist" && event.confidence !== "Watch";
+  return !eventIsWatchStatus(event);
 }
 
 function eventUrl(event) {
@@ -627,7 +772,7 @@ function parsePrice(value) {
 }
 
 function ticketLabel(event) {
-  if (event.status === "watch" || event.sourceStatus === "watchlist") return "Verify source";
+  if (eventIsWatchStatus(event)) return "Verify source";
   if (event.ticketUrl) return "Tickets";
   return "Source page";
 }

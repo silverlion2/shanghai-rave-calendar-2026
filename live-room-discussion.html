@@ -552,7 +552,7 @@
   <script src="assets/qrcode-generator.js"></script>
   <script src="assets/live-room-realtime.js?v=room-6am-close-20260614"></script>
 </head>
-<body data-current-date="2026-06-13">
+<body>
   <main class="shell dispatch-shell room-discussion-page">
     <nav class="site-nav" aria-label="Site navigation">
       <div class="nav-group">
@@ -689,7 +689,7 @@
     const downloadDiscussionCard = document.getElementById("downloadDiscussionCard");
     const roomDiscussionShareCard = document.getElementById("roomDiscussionShareCard");
     let events = [];
-    let today = dateForIso(document.body.dataset.currentDate || "2026-06-13");
+    let today = shanghaiToday("2026-06-13");
     let eventLiveRooms = [];
     let activeEventLiveRoomId = "";
     let eventLiveRoomMode = "local";

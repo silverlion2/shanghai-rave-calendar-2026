@@ -312,6 +312,19 @@
       text-transform: uppercase;
     }
 
+    .status-pin.status-current {
+      background: var(--gold);
+    }
+
+    .status-pin.status-watch {
+      background: var(--ember);
+    }
+
+    .status-pin.status-past {
+      color: var(--paper);
+      background: rgba(119, 116, 108, .92);
+    }
+
     .poster-gap-pin {
       position: absolute;
       left: 0;
@@ -674,6 +687,8 @@
     <section class="wall-controls" aria-label="Event filters">
       <input class="search" id="searchInput" type="search" placeholder="Filter events">
       <select class="select" id="statusFilter" aria-label="Status filter">
+        <option value="active">Current + upcoming events</option>
+        <option value="current">Current events</option>
         <option value="upcoming">Upcoming events</option>
         <option value="all">All event dates</option>
         <option value="past">Past archive</option>
@@ -766,7 +781,9 @@
   </div>
 
   <script>
-    const today = shanghaiToday();
+    const archiveCutoffHour = 6;
+    const statusNow = new Date();
+    const today = shanghaiToday(statusNow);
 
     const posterUrlOverrides = {
       "milo-cosmjn": "assets/posters/milo-cosmjn.jpg",
@@ -836,7 +853,15 @@
       return '<a class="trust-inline" href="trust.html">How we recommend</a>';
     }
 
-    function shanghaiToday() {
+    function pad2(value) {
+      return String(value).padStart(2, "0");
+    }
+
+    function isoDateKey(date) {
+      return `${date.getFullYear()}-${pad2(date.getMonth() + 1)}-${pad2(date.getDate())}`;
+    }
+
+    function shanghaiToday(now = new Date()) {
       const parts = new Intl.DateTimeFormat("en-CA", {
         timeZone: "Asia/Shanghai",
         year: "numeric",
@@ -946,8 +971,61 @@
     }
 
     function eventDate(event) {
-      const [year, month, day] = event.sortDate.split("-").map(Number);
+      const [year, month, day] = String(event?.sortDate || "").slice(0, 10).split("-").map(Number);
+      if (!year || !month || !day) return null;
       return new Date(year, month - 1, day);
+    }
+
+    function eventArchiveCutoff(event) {
+      const sortDate = String(event?.sortDate || "").slice(0, 10);
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(sortDate)) return null;
+      const cutoff = new Date(`${sortDate}T${String(archiveCutoffHour).padStart(2, "0")}:00:00+08:00`);
+      cutoff.setUTCDate(cutoff.getUTCDate() + 1);
+      return cutoff;
+    }
+
+    function eventIsPastByCutoff(event, now = statusNow) {
+      if (String(event?.status || "").toLowerCase() === "past") return true;
+      const cutoff = eventArchiveCutoff(event);
+      if (!cutoff) return String(event?.status || "").toLowerCase() === "past";
+      return now.getTime() >= cutoff.getTime();
+    }
+
+    function eventTemporalStatus(event, now = statusNow) {
+      const rawStatus = String(event?.status || "").toLowerCase();
+      if (rawStatus === "past" || eventIsPastByCutoff(event, now)) return "past";
+      const date = eventDate(event);
+      if (date && date <= today) return "current";
+      return "upcoming";
+    }
+
+    function eventIsWatchStatus(event) {
+      return String(event?.status || "").toLowerCase() === "watch" || event?.confidence === "Watch" || String(event?.sourceStatus || "").toLowerCase() === "watchlist";
+    }
+
+    function eventEffectiveStatus(event) {
+      const temporalStatus = eventTemporalStatus(event);
+      if (temporalStatus === "past") return "past";
+      if (eventIsWatchStatus(event)) return "watch";
+      return temporalStatus;
+    }
+
+    function eventStatusLabel(event) {
+      const temporalStatus = eventTemporalStatus(event);
+      const status = eventEffectiveStatus(event);
+      if (status === "watch" && temporalStatus === "current") return "current watch";
+      return status;
+    }
+
+    function eventMatchesStatus(event, status) {
+      if (!status || status === "all") return true;
+      const temporalStatus = eventTemporalStatus(event);
+      if (status === "active") return temporalStatus === "current" || temporalStatus === "upcoming";
+      if (status === "past") return temporalStatus === "past";
+      if (status === "current") return temporalStatus === "current";
+      if (status === "upcoming") return temporalStatus === "upcoming";
+      if (status === "watch") return temporalStatus !== "past" && eventIsWatchStatus(event);
+      return eventEffectiveStatus(event) === status;
     }
 
     function lineupItems(event) {
@@ -1039,9 +1117,7 @@
       const vibe = vibeFilter.value;
       return events
         .filter(event => {
-          const isPastStatus = String(event.status || "").toLowerCase() === "past";
-          if (status === "upcoming" && (eventDate(event) < today || isPastStatus)) return false;
-          if (status === "past" && eventDate(event) >= today && !isPastStatus) return false;
+          if (!eventMatchesStatus(event, status)) return false;
           if (vibe !== "all" && !(event.vibe || []).includes(vibe) && !eventSoundTags(event).includes(vibe) && !eventDecisionTags(event).includes(vibe)) return false;
           if (query && !searchable(event).includes(query)) return false;
           return true;
@@ -1063,7 +1139,7 @@
           <article class="wall-card ${visual.hasPoster ? "has-event-poster" : "has-default-poster"}" data-id="${escapeHtml(event.id)}" tabindex="0" role="button" aria-label="${escapeHtml(`Open ${event.title}, ${event.date}, ${event.venue}`)}">
             <div class="wall-card-poster">
               <img src="${escapeHtml(visual.src)}" alt="${escapeHtml(visual.alt)}" loading="lazy" decoding="async">
-              <span class="status-pin">${escapeHtml(event.status)}</span>
+              <span class="status-pin status-${escapeHtml(eventEffectiveStatus(event))}">${escapeHtml(eventStatusLabel(event))}</span>
               ${visual.hasPoster ? "" : '<span class="poster-gap-pin">No flyer saved yet</span>'}
             </div>
             <div class="wall-card-body">
@@ -1114,7 +1190,7 @@
         ["Age", escapeHtml(event.age || "Check source")],
         ["Sound", escapeHtml(event.genre)],
         ["Source", escapeHtml(publicText(event.sourceLabel || "Source logged"))],
-        ["Status", escapeHtml(`${event.status} / ${event.confidence}`)]
+        ["Status", escapeHtml(`${eventStatusLabel(event)} / ${event.confidence}`)]
       ].map(([label, value]) => `<div class="fact"><span>${escapeHtml(label)}</span><b>${value}</b></div>`).join("");
       document.getElementById("modalEventPage").href = `events/${encodeURIComponent(event.id)}.html`;
       const source = document.getElementById("modalSource");

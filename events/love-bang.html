@@ -160,10 +160,10 @@
           <span>/</span>
           <span>Love Bang: Baby Dance Machine</span>
         </nav>
-        <article class="event-detail  ">
+        <article class="event-detail  " data-event-detail data-event-sort-date="2026-01-02" data-event-status="past" data-event-confidence="Medium" data-event-source-status="secondary" data-event-kind="event">
           <header class="event-hero">
             <div>
-              <p class="kicker">past / Medium</p>
+              <p class="kicker"><span data-event-status-label>past</span> / Medium</p>
               <h1>Love Bang: Baby Dance Machine</h1>
               <p class="lede">Basement dive-bar release party energy with club music, house, techno, ghettotech, and rough-edged local flavor.</p>
               <div class="action-row">
@@ -257,6 +257,83 @@
     </footer>
     <a class="admin-corner" data-admin-corner href="../ops.html" aria-label="Admin sign in">admin</a>
 
+        <script>
+    (() => {
+      const root = document.querySelector("[data-event-detail]");
+      if (!root) return;
+      const archiveCutoffHour = 6;
+      const event = {
+        sortDate: root.dataset.eventSortDate || "",
+        status: root.dataset.eventStatus || "",
+        confidence: root.dataset.eventConfidence || "",
+        sourceStatus: root.dataset.eventSourceStatus || "",
+        kind: root.dataset.eventKind || "event"
+      };
+      const dateOnly = value => {
+        const match = String(value || "").match(/\d{4}-\d{2}-\d{2}/);
+        return match ? match[0] : "";
+      };
+      const shanghaiDateKey = now => {
+        const parts = new Intl.DateTimeFormat("en-US", {
+          timeZone: "Asia/Shanghai",
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit"
+        }).formatToParts(now).reduce((acc, part) => {
+          if (part.type !== "literal") acc[part.type] = part.value;
+          return acc;
+        }, {});
+        return parts.year && parts.month && parts.day ? parts.year + "-" + parts.month + "-" + parts.day : "";
+      };
+      const eventArchiveCutoff = row => {
+        const sortDate = dateOnly(row.sortDate);
+        if (!sortDate) return null;
+        const cutoff = new Date(sortDate + "T" + String(archiveCutoffHour).padStart(2, "0") + ":00:00+08:00");
+        cutoff.setUTCDate(cutoff.getUTCDate() + 1);
+        return cutoff;
+      };
+      const eventIsPastByCutoff = (row, now) => {
+        if (String(row.status || "").toLowerCase() === "past") return true;
+        const cutoff = eventArchiveCutoff(row);
+        return cutoff ? now.getTime() >= cutoff.getTime() : false;
+      };
+      const eventTemporalStatus = (row, now) => {
+        const rawStatus = String(row.status || "").toLowerCase();
+        if (rawStatus === "past" || eventIsPastByCutoff(row, now)) return "past";
+        const sortDate = dateOnly(row.sortDate);
+        const todayKey = shanghaiDateKey(now);
+        if (sortDate && todayKey && sortDate <= todayKey) return "current";
+        return "upcoming";
+      };
+      const eventIsWatchStatus = row => (
+        String(row.status || "").toLowerCase() === "watch"
+        || row.confidence === "Watch"
+        || String(row.sourceStatus || "").toLowerCase() === "watchlist"
+      );
+      const eventEffectiveStatus = (row, now) => {
+        const temporalStatus = eventTemporalStatus(row, now);
+        if (temporalStatus === "past") return "past";
+        if (eventIsWatchStatus(row)) return "watch";
+        return temporalStatus;
+      };
+      const eventStatusLabel = (row, now) => {
+        const temporalStatus = eventTemporalStatus(row, now);
+        const status = eventEffectiveStatus(row, now);
+        if (String(row.kind || "").toLowerCase() === "festival") {
+          if (status === "watch") return temporalStatus === "current" ? "current festival watch" : "festival watch";
+          if (temporalStatus === "past") return "past festival";
+          if (temporalStatus === "current") return "current festival";
+          return "festival";
+        }
+        if (status === "watch" && temporalStatus === "current") return "current watch";
+        return status;
+      };
+      const label = eventStatusLabel(event, new Date());
+      document.querySelectorAll("[data-event-status-label]").forEach(node => {
+        node.textContent = label;
+      });
+    })();
+  </script>
       </main>
 
 </body>

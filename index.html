@@ -2107,7 +2107,7 @@
   <script src="data/social-profiles.js"></script>
   <script src="assets/social-fusion.js"></script>
 </head>
-<body data-current-date="2026-06-13">
+<body>
   <canvas class="signal-canvas" id="signalCanvas" aria-hidden="true"></canvas>
   <main class="shell calendar-shell">
     <nav class="primary-nav" aria-label="Primary">
@@ -2213,6 +2213,7 @@
             <span>Status</span>
             <select class="select" id="statusFilter" aria-label="Status filter">
               <option value="all">All statuses</option>
+              <option value="current">Current</option>
               <option value="upcoming">Upcoming</option>
               <option value="past">Past archive</option>
               <option value="watch">Watchlist leads</option>
@@ -2319,8 +2320,9 @@
     const socialRegistry = socialFusion.createSocialRegistry ? socialFusion.createSocialRegistry(window.SOCIAL_PROFILE_DATA || {}) : null;
     const dayMs = 24 * 60 * 60 * 1000;
     const archiveCutoffHour = 6;
+    const statusNow = new Date();
     const today = (() => {
-      const now = new Date();
+      const now = statusNow;
       const parts = Object.fromEntries(new Intl.DateTimeFormat("en-US", {
         timeZone: "Asia/Shanghai",
         year: "numeric",
@@ -2331,6 +2333,9 @@
       const [year, month, day] = verified.split("-").map(Number);
       return new Date(year, month - 1, day);
     })();
+    if (document.body) {
+      document.body.dataset.currentDate = isoDateKey(today);
+    }
     const liveRoomHelper = window.LIVE_ROOM_REALTIME;
     const eventLiveRoomStorageKey = "shanghai-rave-event-live-room-reactions-v1";
     const eventLiveRoomReactionOptions = liveRoomHelper && typeof liveRoomHelper.eventRoomSignalOptions === "function"
@@ -3154,7 +3159,7 @@
     };
 
     const dateWindowLabels = {
-      future: "upcoming",
+      future: "current + upcoming",
       all: "full 2026",
       tonight: "tonight",
       weekend: "this weekend",
@@ -3385,8 +3390,15 @@
     }
 
     function formatStatusLabel(event) {
+      const temporalStatus = eventTemporalStatus(event);
       const status = eventEffectiveStatus(event);
-      if (isFestival(event)) return status === "watch" ? "FESTIVAL WATCH" : "FESTIVAL";
+      if (isFestival(event)) {
+        if (status === "watch") return temporalStatus === "current" ? "CURRENT FESTIVAL WATCH" : "FESTIVAL WATCH";
+        if (temporalStatus === "past") return "PAST FESTIVAL";
+        if (temporalStatus === "current") return "CURRENT FESTIVAL";
+        return "FESTIVAL";
+      }
+      if (status === "watch" && temporalStatus === "current") return "CURRENT WATCH";
       return status.toUpperCase();
     }
 
@@ -3533,18 +3545,40 @@
       return cutoff;
     }
 
-    function eventIsPastByCutoff(event, now = new Date()) {
+    function eventIsPastByCutoff(event, now = statusNow) {
+      if (String(event?.status || "").toLowerCase() === "past") return true;
       const cutoff = eventArchiveCutoff(event);
       if (!cutoff) return String(event?.status || "").toLowerCase() === "past";
       return now.getTime() >= cutoff.getTime();
     }
 
-    function eventEffectiveStatus(event) {
+    function eventTemporalStatus(event, now = statusNow) {
       const rawStatus = String(event?.status || "").toLowerCase();
-      if (eventIsPastByCutoff(event)) return "past";
-      if (rawStatus === "watch" || event?.confidence === "Watch") return "watch";
-      if (rawStatus && rawStatus !== "past") return rawStatus;
+      if (rawStatus === "past" || eventIsPastByCutoff(event, now)) return "past";
+      const date = eventDate(event);
+      if (date && date <= today) return "current";
       return "upcoming";
+    }
+
+    function eventIsWatchStatus(event) {
+      return String(event?.status || "").toLowerCase() === "watch" || event?.confidence === "Watch" || String(event?.sourceStatus || "").toLowerCase() === "watchlist";
+    }
+
+    function eventEffectiveStatus(event) {
+      const temporalStatus = eventTemporalStatus(event);
+      if (temporalStatus === "past") return "past";
+      if (eventIsWatchStatus(event)) return "watch";
+      return temporalStatus;
+    }
+
+    function eventMatchesStatus(event, status) {
+      if (!status || status === "all") return true;
+      const temporalStatus = eventTemporalStatus(event);
+      if (status === "past") return temporalStatus === "past";
+      if (status === "current") return temporalStatus === "current";
+      if (status === "upcoming") return temporalStatus === "upcoming" && !eventIsWatchStatus(event);
+      if (status === "watch") return temporalStatus !== "past" && eventIsWatchStatus(event);
+      return eventEffectiveStatus(event) === status;
     }
 
     function eventIsUpcomingPick(event) {
@@ -3574,7 +3608,7 @@
       const date = eventDate(event);
       if (!date) return true;
       if (dateWindow === "future") return !eventIsPastByCutoff(event);
-      if (dateWindow === "tonight") return sameDay(date, today) || (!eventIsPastByCutoff(event) && date < today);
+      if (dateWindow === "tonight") return !eventIsPastByCutoff(event) && (sameDay(date, today) || date < today);
       if (dateWindow === "weekend") {
         const [start, end] = thisWeekendRange();
         return date >= start && date <= end;
@@ -4793,7 +4827,7 @@
       const vibe = vibeFilter ? vibeFilter.value : "all";
       const haystack = searchableText(event);
       if (!dateWindowMatches(event)) return false;
-      if (status !== "all" && eventEffectiveStatus(event) !== status) return false;
+      if (!eventMatchesStatus(event, status)) return false;
       if (vibe !== "all" && !event.vibe.includes(vibe) && !eventSoundTags(event).includes(vibe) && !eventDecisionTags(event).includes(vibe)) return false;
       if (options.includeVenue !== false && !eventVenueGroupMatches(event, selectedVenueGroups)) return false;
       if (query && !haystack.includes(query)) return false;
@@ -5001,7 +5035,7 @@
     function monthCopy(code, count, watch) {
       if (count > 0) return `${count} matching sourced listing${count === 1 ? "" : "s"} in this week.`;
       if (watch && (dateWindow === "all" || dateWindow === "future")) return "Watchlist period: public rave and underground electronic calendars are not reliable enough yet.";
-      if (dateWindow === "future") return "No upcoming entries match the current filters.";
+      if (dateWindow === "future") return "No current or upcoming entries match the current filters.";
       return "No entries match the current view.";
     }
 
@@ -5014,7 +5048,7 @@
         <article class="event-card ${visual.hasPoster ? "has-event-poster" : "has-default-poster"} ${festival ? "festival-card" : ""}" data-id="${event.id}">
           <div class="poster">
             <img src="${escapeHtml(visual.src)}" alt="${escapeHtml(visual.alt)}" loading="${loading}" decoding="async" fetchpriority="low">
-            <span class="tag">${escapeHtml(formatStatusLabel(event))}</span>
+            <span class="tag status-${escapeHtml(eventEffectiveStatus(event))}">${escapeHtml(formatStatusLabel(event))}</span>
           </div>
           <div class="card-body">
             <div class="card-top"><span>${escapeHtml(event.date)}</span><span>${escapeHtml(event.time)}</span></div>

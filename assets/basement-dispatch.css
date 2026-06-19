@@ -912,6 +912,19 @@ input:focus {
   text-transform: uppercase;
 }
 
+.poster .tag.status-current {
+  background: var(--gold) !important;
+}
+
+.poster .tag.status-watch {
+  background: var(--ember) !important;
+}
+
+.poster .tag.status-past {
+  color: var(--paper) !important;
+  background: rgba(119, 116, 108, .92) !important;
+}
+
 .event-card h3,
 .card h3,
 .lead-title b,
