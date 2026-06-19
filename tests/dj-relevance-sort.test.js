@@ -44,7 +44,7 @@ function fixedDateClass() {
 function elementFor(id) {
   return {
     id,
-    value: ["soundFilter", "monthFilter", "statusFilter"].includes(id) ? "all" : "",
+    value: ["soundFilter", "monthFilter", "statusFilter", "depthFilter"].includes(id) ? "all" : "",
     textContent: "",
     innerHTML: "",
     dataset: {},
@@ -86,6 +86,7 @@ function loadProfilesFromDjPage() {
   vm.createContext(sandbox);
   [
     "data/dj-data.js",
+    "data/supabase-dj-data.js",
     "data/tracked-dj-itineraries.js",
     "data/social-profiles.js",
     "assets/social-fusion.js",
@@ -98,20 +99,28 @@ function loadProfilesFromDjPage() {
   return sandbox.window.__allProfiles || [];
 }
 
-test("DJ relevance sort prioritizes current Shanghai calendar value over global itinerary volume", () => {
+test("DJ relevance sort promotes photo-backed famous public-footprint profiles", () => {
   const profiles = loadProfilesFromDjPage();
   assert.ok(profiles.length > 0, "profiles should be built from real DJ data");
 
   const first = profiles[0];
-  assert.ok(first.upcomingCount + first.watchCount > 0, "top profile should have current Shanghai relevance");
+  assert.ok(first.imageUrl, "top profile should have a source image");
+  assert.equal(typeof first.fameScore, "number");
   assert.equal(typeof first.relevanceScore, "number");
+
+  const firstNoImageIndex = profiles.findIndex(profile => !profile.imageUrl);
+  assert.ok(firstNoImageIndex > 0, "fixture should include image and no-image profiles");
+  assert.ok(profiles.slice(0, firstNoImageIndex).every(profile => profile.imageUrl), "all photo-backed profiles should sort before no-image rows");
+
+  const topTwenty = profiles.slice(0, 20);
+  assert.ok(topTwenty.every(profile => profile.imageUrl), "top 20 should be photo-backed when enough images exist");
+  assert.ok(topTwenty.every(profile => profile.fameScore > 0), "top profiles should carry public-footprint fame scores");
 
   const anyma = profiles.find(profile => profile.slug === "anyma");
   const nakin = profiles.find(profile => profile.slug === "nakin");
   assert.ok(anyma, "Anyma fixture should exist");
   assert.ok(nakin, "NAKIN fixture should exist");
-  assert.ok(anyma.globalFutureCount > nakin.globalFutureCount, "fixture should cover global itinerary pressure");
-  assert.ok(nakin.upcomingCount > anyma.upcomingCount, "fixture should cover local Shanghai relevance");
-  assert.ok(nakin.relevanceScore > anyma.relevanceScore);
-  assert.ok(profiles.indexOf(nakin) < profiles.indexOf(anyma));
+  assert.ok(anyma.imageUrl, "Anyma fixture should have a source image");
+  assert.ok(anyma.fameScore > nakin.fameScore, "public-footprint scoring should rank the more famous image-backed fixture higher");
+  assert.ok(profiles.indexOf(anyma) < profiles.indexOf(nakin));
 });

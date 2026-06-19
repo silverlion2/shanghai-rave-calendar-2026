@@ -75,7 +75,6 @@ test("public pages link to the recommendation and correction policy", () => {
     "poster-wall.html",
     "love-wall.html",
     "venues.html",
-    "djs.html",
     "contribute.html",
     "live-room.html",
     "planner.html",
@@ -163,12 +162,12 @@ test("event descriptions expose an item-level recommendation policy link", () =>
   assert.match(wall, /id="modalTrustPolicy"/);
 });
 
-test("DJ descriptions expose an item-level recommendation policy link", () => {
+test("DJ descriptions keep recommendation policy links internal", () => {
   const djs = readSiteFile("djs.html");
 
-  assert.match(djs, /function djTrustLinkHtml/);
-  assert.match(djs, /<p class="profile-summary">\$\{escapeHtml\(publicText\(profile\.summary\)\)\}<\/p>\s*\$\{djTrustLinkHtml\(profile\)\}/);
-  assert.match(djs, /<p>\$\{escapeHtml\(publicText\(profile\.summary\)\)\}<\/p>\s*\$\{djTrustLinkHtml\(profile\)\}/);
+  assert.doesNotMatch(djs, /function djTrustLinkHtml/);
+  assert.doesNotMatch(djs, /How we recommend/i);
+  assert.doesNotMatch(djs, /trust-inline/);
 });
 
 test("trust page explains standards, corrections, and commercial labels", () => {
