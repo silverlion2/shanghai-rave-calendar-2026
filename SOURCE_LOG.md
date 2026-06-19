@@ -910,3 +910,102 @@ Validation:
 
 - `node scripts/check.js`: passed, 4018 local links across 137 HTML/CSS files and 46 inline scripts.
 - `node scripts/audit-events.js`: still fails on pre-existing stale-source audit debt across older Jun 14-16 checked future events. Tonight's edited canonical records are current, but secondary venue/profile sources such as Heim and ILLUM venue pages still inherit older source dates.
+
+## 2026-06-19 Hardcore Melancholia RA Poster and Genre Repair
+
+Updated `abyss-hardcore-melancholia` from the live Resident Advisor event page plus the user-supplied matching poster screenshot.
+
+Canonical update:
+
+- Event title is `Hardcore Melancholia w. Lolalita & BRENNT(LIVE)`.
+- Event genre is `trance, hardcore`, using RA's event-level genres and the poster context. Workflow rule: when event genre conflicts with DJ/artist profile genre, use the event genre first because artists can choose a different sound for a specific event.
+- Local poster source is `assets/posters/abyss-hardcore-melancholia-ra-flyer.png`; optimized archive display asset is `assets/posters/abyss-hardcore-melancholia-ra-flyer-optimized.jpg`.
+- RA source is `https://ra.co/events/2470462`; RA showed Abyss Shanghai, Sat Jun 20 2026, 22:30-05:00, Lolalita / BRENNT / XIWI / Not Your Daddy / DJ LOVERBOY, 120 RMB, and 18+.
+
+RA future-event poster/genre check:
+
+- Checked visible RA Shanghai future rows against poster and genre fields where RA exposed them. RA remains the primary source for event-level genre and flyer evidence.
+- Noted new RA future rows that should be handled by a broader ingest pass instead of silently changing this targeted repair: Antigen pres. KAVARI (`https://ra.co/events/2470329`, IDM / Industrial), BELLAGIO SUMMER ROOFTOP PARTY (`https://ra.co/events/2470446`, Techno / House), and Antigen pres. DJ Stingray 313 + Actress (`https://ra.co/events/2470387`, Techno / Experimental).
+- Noted one possible RA flyer/display mismatch during visual checking: Heim Invites Jasmín (`https://ra.co/events/2468308`) showed a visible event flyer on the page, but the opened image appeared to resolve to a Long Wave flyer. Recheck before replacing local poster assets.
+
+Validation:
+
+- `node scripts/optimize-posters.js --archive --all --allow-larger assets/posters/abyss-hardcore-melancholia-ra-flyer.png`: generated the optimized Hardcore Melancholia archive asset and refreshed `data/poster-archive.json`.
+- `npm run seo`: regenerated 117 event detail pages and `sitemap.xml`.
+- Targeted Node verification confirmed canonical event title, `trance, hardcore` genre, RA source URL, poster archive display/source asset, and generated HTML poster/genre/title references.
+- `node --test tests/trust-framework.test.js`: passed.
+- `node scripts/check.js`: passed, 4200 local links across 145 HTML/CSS files and 48 inline scripts.
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json`: still reports pre-existing sitewide audit debt unrelated to the Hardcore Melancholia repair (`events: 117`, `must_fix: 338`, `should_fix: 1`), dominated by unrelated missing event source URLs, local `/_vercel/insights/script.js` findings, and scratch HTML captures.
+
+## 2026-06-19 HOUSE OF ZUP Jun 21 RA Repair
+
+Updated `2026-06-21-house-of-zup-house-disco-hip-hop` from the user-supplied poster and the indexed Resident Advisor event page.
+
+Canonical update:
+
+- Replaced the SmartShanghai watch-level placeholder with RA-backed event facts for `HOUSE OF ZUP` on Sun Jun 21, 2026 at ZUP Pizza Bar.
+- Source is `https://ra.co/events/2470695`; SmartShanghai remains secondary local context.
+- Time is `15:00-21:00`.
+- Venue/address is ZUP Pizza Bar, 457 Shanxi Rd North, Bldg #4 Unit 101, Jing'an District, Shanghai.
+- Event genre is `house, italo disco`, using the event-level RA genres before any DJ/profile genre.
+- Lineup/running order is F-Mark 15:00-16:00, Skinny Brown 16:00-17:00, huiscat 17:00-18:00, M!R4 18:00-19:00, KOUGAR 19:00-20:00, and IANFABELAR 20:00-21:00.
+- RA does not expose cost or age, so price and age remain verify-before-going fields.
+
+Poster and source network:
+
+- Saved the user-supplied poster as `assets/posters/house-of-zup-2026-06-21-ra-flyer.png`.
+- Optimized display asset is `assets/posters/house-of-zup-2026-06-21-ra-flyer-optimized.jpg`.
+- Added the RA event to `config/ra-shanghai-coverage.json`.
+- Added ZUP Pizza Bar to `config/promotion-platform-network.json` with RA, SmartShanghai, XHS/Little Red Book, and Instagram public-index routes.
+
+Validation:
+
+- `node scripts/optimize-posters.js --archive --allow-larger assets/posters/house-of-zup-2026-06-21-ra-flyer.png`: generated the optimized poster and refreshed `data/poster-archive.json`.
+- `npm run seo`: regenerated 117 event detail pages and `sitemap.xml`.
+- Targeted Node verification confirmed title, `15:00-21:00` time, ZUP Pizza Bar venue, `house, italo disco` genre, RA source URL, poster archive display/source asset, generated HTML poster, generated HTML genre, and generated lineup text.
+- `node --test tests/trust-framework.test.js`: passed.
+- `node scripts/check.js`: passed, 4200 local links across 145 HTML/CSS files and 48 inline scripts.
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json`: still reports pre-existing sitewide audit debt (`events: 117`, `must_fix: 338`, `should_fix: 1`), dominated by unrelated missing event source URLs, local `/_vercel/insights/script.js` findings, and scratch HTML captures.
+
+## 2026-06-19 Automated Shanghai Source Sweep
+
+Ran the source-sweep-first workflow for the current/future Shanghai window with `SCRAPE_NOW=2026-06-19T12:00:00+08:00`, `SCRAPE_FETCH_TIMEOUT_MS=12000`, `SCRAPE_X_FETCH_TIMEOUT_MS=6000`, and `SCRAPE_MAX_DETAIL_PAGES=24`.
+
+Sweep output:
+
+- `npm run scrape`: rewrote canonical data with 117 events, 18 discovered links processed during the scrape pipeline, 0 remaining `discoveredLinks`, 77 promotion-platform routes, 85 Computer Use sources, 92 curated updates, and 40 tracked DJ itinerary rows.
+- The sweep expanded the active canonical set by five SmartShanghai-backed watch rows: `2026-06-19-italo-disco-shanghai-s-italian-roofto`, `2026-06-19-vibes-up-party-reggae-dancehall-hip-h`, `2026-06-20-nova-events-presents-sundown-char-bar`, `2026-06-21-house-of-zup-house-disco-hip-hop`, and `2026-06-27-white-party-shanghai-s-all-white-roof`.
+- Three older recurring/no-date variants were replaced by current dated canonical rows: `italo-disco-skyline-dome`, `house-of-zup-2026-06-21`, and `white-party-skyline-dome`.
+- No new tracked DJ profiles were added in this pass, and no new public-source-backed high-fit Shanghai techno activities were confirmed beyond the automated watch-row additions.
+- RA Shanghai coverage still appears complete in canonical data, but scripted RA remains browser-required and the saved RA coverage manifest still audits as stale (`2026-06-16`).
+
+Post-sweep metrics from `data/events.json` / `node scripts/audit-events.js`:
+
+- `events`: 117
+- `future`: 49
+- `futureWatch`: 20
+- `singleSourceWatch`: 9
+- `singleConfirmationWatch`: 13
+- `futureCoreFieldQueue`: 41
+- `futureMissingCoreFields`: 109
+- `futureUncertainCoreFields`: 1
+- `platformVerificationQueue`: 3
+- `trackedDjProfiles`: 175
+- `curatedDjSourceProfiles`: 171
+- `technoArtistSignals`: 184
+- `technoArtistSignalProfiles`: 137
+
+Highest-priority remaining public-source gaps after the sweep:
+
+- `jasmin-knopha` (`2026-06-20`): still missing `time`, `price`, `age`, and `ticketUrl`.
+- `anika-kunst` (`2026-06-27`): still missing `time`, `price`, `age`, `ticketUrl`, and a poster.
+- `truth-lies` (`2026-06-27`): still missing `time`, `price`, `age`, `ticketUrl`, and a poster.
+- `youshan-warmup` (`2026-06-27`): still missing `time`, `age`, `ticketUrl`, with lineup still uncertain.
+- `quality.platformVerificationQueue` stayed focused on `anika-kunst`, `youshan-warmup`, and `jasmin-knopha`.
+
+Derived regeneration and verification:
+
+- `node --test tests/trust-framework.test.js`: passed.
+- `node scripts/check.js`: passed.
+- `node scripts/audit-events.js`: still fails on broad stale `lastChecked` debt across current/future rows and supporting poster/social/profile sources.
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json`: still reports pre-existing sitewide audit debt, dominated by rows with missing event `source` URLs and repeated `/_vercel/insights/script.js` local-link findings.

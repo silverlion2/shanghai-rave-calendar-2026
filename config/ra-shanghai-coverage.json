@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-16",
+  "updatedAt": "2026-06-19",
   "timezone": "Asia/Shanghai",
   "cityListingUrl": "https://ra.co/events/cn/shanghai",
-  "scope": "Resident Advisor Shanghai city-listing coverage for the current visible/indexed RA window checked through 2026-06-16, including incremental EXIT repairs found through public RA indexed event text after scripted RA detail fetches returned 403.",
+  "scope": "Resident Advisor Shanghai city-listing coverage for the current visible/indexed RA window checked through 2026-06-19, including HOUSE OF ZUP Jun 21 poster/genre repair.",
   "access": {
     "plainHttp": "blocked",
     "observedStatus": 403,
@@ -65,7 +65,8 @@
     {
       "url": "https://ra.co/events/cn/shanghai?startDate=2026-06-21",
       "date": "2026-06-21",
-      "visibleDateCount": 1
+      "visibleDateCount": 2,
+      "note": "2026-06-19 repair added the indexed RA HOUSE OF ZUP Jun 21 row alongside FRIENDSSTANDout."
     },
     {
       "url": "https://ra.co/events/cn/shanghai?startDate=2026-06-26",
@@ -88,6 +89,24 @@
   ],
   "events": [
     {
+      "raEventId": "2458581",
+      "url": "https://ra.co/events/2458581",
+      "eventId": "19hz-fractale",
+      "date": "2026-06-05",
+      "title": "19Hz w. Fractale (IT) DNB/Dubstep/Breaks",
+      "venue": "TBA - DEFUN",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2450615",
+      "url": "https://ra.co/events/2450615",
+      "eventId": "dirty-beats",
+      "date": "2026-06-05",
+      "title": "dirty beats",
+      "venue": "Dirty House",
+      "coverageRole": "primary"
+    },
+    {
       "raEventId": "2437203",
       "url": "https://ra.co/events/2437203",
       "eventId": "darker-than-wax-dean-chew",
@@ -103,24 +122,6 @@
       "date": "2026-06-05",
       "title": "Gully Riddim 9 Year Anniversary pres. MssingNo",
       "venue": "Reactor Shanghai",
-      "coverageRole": "primary"
-    },
-    {
-      "raEventId": "2450615",
-      "url": "https://ra.co/events/2450615",
-      "eventId": "dirty-beats",
-      "date": "2026-06-05",
-      "title": "dirty beats",
-      "venue": "Dirty House",
-      "coverageRole": "primary"
-    },
-    {
-      "raEventId": "2458581",
-      "url": "https://ra.co/events/2458581",
-      "eventId": "19hz-fractale",
-      "date": "2026-06-05",
-      "title": "19Hz w. Fractale (IT) DNB/Dubstep/Breaks",
-      "venue": "TBA - DEFUN",
       "coverageRole": "primary"
     },
     {
@@ -349,6 +350,15 @@
       "coverageRole": "primary"
     },
     {
+      "raEventId": "2468150",
+      "url": "https://ra.co/events/2468150",
+      "eventId": "minuit-mirror-concept",
+      "date": "2026-06-18",
+      "title": "Minuit pres. MIRROR concept",
+      "venue": "EXIT",
+      "coverageRole": "primary"
+    },
+    {
       "raEventId": "2464178",
       "url": "https://ra.co/events/2464178",
       "eventId": "photocult-mask-desire-auction",
@@ -381,6 +391,15 @@
       "eventId": "onefortyasia-mungk-simbie",
       "date": "2026-06-19",
       "title": "ONEFORTYASIA Pres. MUNGK (UK) & SIMBIE (AU)",
+      "venue": "EXIT",
+      "coverageRole": "primary"
+    },
+    {
+      "raEventId": "2468159",
+      "url": "https://ra.co/events/2468159",
+      "eventId": "exit-298-steal-tapes",
+      "date": "2026-06-20",
+      "title": "298 pres. Steal Tapes",
       "venue": "EXIT",
       "coverageRole": "primary"
     },
@@ -430,6 +449,15 @@
       "coverageRole": "primary"
     },
     {
+      "raEventId": "2470695",
+      "url": "https://ra.co/events/2470695",
+      "eventId": "2026-06-21-house-of-zup-house-disco-hip-hop",
+      "date": "2026-06-21",
+      "title": "HOUSE OF ZUP",
+      "venue": "ZUP Pizza Bar",
+      "coverageRole": "primary"
+    },
+    {
       "raEventId": "2429023",
       "url": "https://ra.co/events/2429023",
       "eventId": "cyber-buddha",
@@ -454,24 +482,6 @@
       "date": "2026-09-12",
       "title": "Shaun Soomro, DJ Serang",
       "venue": "TBA",
-      "coverageRole": "primary"
-    },
-    {
-      "raEventId": "2468150",
-      "url": "https://ra.co/events/2468150",
-      "eventId": "minuit-mirror-concept",
-      "date": "2026-06-18",
-      "title": "Minuit pres. MIRROR concept",
-      "venue": "EXIT",
-      "coverageRole": "primary"
-    },
-    {
-      "raEventId": "2468159",
-      "url": "https://ra.co/events/2468159",
-      "eventId": "exit-298-steal-tapes",
-      "date": "2026-06-20",
-      "title": "298 pres. Steal Tapes",
-      "venue": "EXIT",
       "coverageRole": "primary"
     }
   ],

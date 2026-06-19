@@ -76,6 +76,7 @@ Add a short note with the screenshots when possible:
 6. Maintain `config/promotion-platform-network.json` with any newly confirmed venue/promoter/platform route. Store account names, search queries, route type, trust role, access mode, and anti-scrape policy; do not guess social deep links.
 7. For DJs with no standalone public source, add an event-role profile only. Keep the summary limited to the visible lineup role and do not invent biographies.
 8. For DJs with existing stronger profiles, add itinerary and screenshot sources without replacing their stronger source-backed summaries.
+9. If event-level genre conflicts with DJ or artist profile genre, use the event genre first for the event record. DJ and artist genres are background context, not an override for a specific booking.
 
 ## Recommendation Copy
 
