@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-18T05:06:21.280Z",
-  "verified": "2026-06-18",
+  "generatedAt": "2026-06-19T05:19:45.217Z",
+  "verified": "2026-06-19",
   "timezone": "Asia/Shanghai",
   "sourcePriority": [
     "Chrome + Computer Use for anti-bot, logged-in, app-only, image/poster, and mini-program sources",
@@ -42,7 +42,7 @@
       "checkedAt": "2026-06-18",
       "ok": true,
       "status": 200,
-      "eventLinks": 18
+      "eventLinks": 20
     },
     {
       "label": "X/Twitter keyword: \"Shanghai\" techno",
@@ -7033,13 +7033,30 @@
       "imageTheme": "cyan",
       "description": "Minuit brings its MIRROR concept to EXIT for an immersive house and tech-house night with SLVN, Olivier K, Olivier G, Chabuduo, and a live camera/VJing setup that projects the booth and crowd back into the room.",
       "kind": "event",
-      "sourceStatus": "trusted-ra",
+      "sourceStatus": "trusted-ra-and-user-poster",
       "address": "298 Xingfu Road, Changning District, Shanghai",
       "organizer": "Illsee / Minuit",
       "detailsUrl": "https://ra.co/events/2468150",
       "ticketUrl": "https://ra.co/events/2468150",
       "lastChecked": "2026-06-18",
-      "ticketStatus": "RA live event detail lists 2026-06-18, 22:00-05:00, EXIT at 298 Xingfu Road, house/techno tags, Illsee event admin, and 100 RMB cost. Age policy and live ticket state are still not visible.",
+      "posterUrl": "assets/posters/minuit-mirror-concept-2026-06-18.jpg",
+      "posterEvidence": {
+        "type": "user-provided-official-poster",
+        "source": "User-provided MIRROR poster",
+        "url": "assets/posters/minuit-mirror-concept-2026-06-18.jpg",
+        "asset": "assets/posters/minuit-mirror-concept-2026-06-18.jpg",
+        "lastChecked": "2026-06-18",
+        "visibleFacts": [
+          "MIRROR by minuit",
+          "Feat. SLVN, Olivier K, Olivier G and Chabuduo",
+          "Live camera concept + VJing",
+          "June 18th",
+          "EXIT",
+          "Xingfu Rd 298, Shanghai"
+        ],
+        "note": "User-provided poster image confirms MIRROR title, Minuit branding, lineup, live camera/VJing concept, Jun 18 date, EXIT, and Xingfu Road 298."
+      },
+      "ticketStatus": "RA live event detail lists 2026-06-18, 22:00-05:00, EXIT at 298 Xingfu Road, house/techno tags, Illsee event admin, and 100 RMB cost. User-provided MIRROR poster confirms title, Minuit branding, lineup, live camera/VJing concept, Jun 18 date, EXIT, and Xingfu Road 298. Age policy and live ticket state are still not visible.",
       "lineup": [
         {
           "name": "SLVN",
@@ -7070,6 +7087,13 @@
           "status": "trusted-ra",
           "lastChecked": "2026-06-18",
           "verificationNote": "Live RA detail page confirms title, EXIT venue/address, Thu Jun 18 2026 22:00-05:00, lineup SLVN / Olivier K / Olivier G / Chabuduo / live camera concept + VJing, house/techno genres, Illsee event admin, 100 RMB cost, and flyer visibility."
+        },
+        {
+          "label": "User-provided MIRROR poster",
+          "url": "assets/posters/minuit-mirror-concept-2026-06-18.jpg",
+          "status": "user-provided-official-poster",
+          "lastChecked": "2026-06-18",
+          "verificationNote": "Poster image says MIRROR by Minuit, feat. SLVN, Olivier K, Olivier G and Chabuduo, live camera concept + VJing, June 18th, EXIT, Xingfu Rd 298, Shanghai."
         }
       ],
       "soundTags": [
@@ -7090,13 +7114,13 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       },
       "recommendationReason": "Useful for readers who want EXIT in a lighter, groove-led house/techno lane with a visual-room concept: SLVN, Olivier K, Olivier G, Chabuduo, and live camera/VJing make this a compact late-room route.",
       "bestFor": "Best for readers tracking EXIT house/techno programming who can verify same-day details before committing.",
       "verifyBeforeGoing": "Recheck RA or EXIT/Minuit channels for ticket availability, age policy, flyer, and any set-time update before going.",
-      "sourceConfidence": "Single-source RA event detail: enough to list as current RA coverage with caveats, but still worth rechecking with EXIT/Minuit for age policy and live ticket state."
+      "sourceConfidence": "RA event detail and user-provided MIRROR poster agree on the title, date, EXIT venue/address, lineup, and live camera/VJing concept; age policy remains the only visible public-source gap."
     },
     {
       "id": "night-at-museum-90s-disco",
@@ -7200,7 +7224,7 @@
       "price": "168 RMB",
       "age": "18+",
       "source": "https://ra.co/events/2464178",
-      "sourceLabel": "Resident Advisor",
+      "sourceLabel": "Resident Advisor + user-provided MIRROR poster",
       "imageTheme": "acid",
       "description": "REACTOR Shanghai hosts PHOTOCULT's two-room Mask. Desire. Auction program at Reactor Shanghai, with DOME and POCKET room DJ sets plus desire-auction interludes.",
       "sourceStatus": "trusted-ra-and-official-instagram-lead",
@@ -8380,6 +8404,58 @@
         "hasLineup": true,
         "hasPoster": true,
         "riskFlags": []
+      }
+    },
+    {
+      "id": "italo-disco-skyline-dome",
+      "month": "Jun",
+      "sortDate": "2026-06-19",
+      "date": "Jun 19 (Weekly Fridays)",
+      "time": "21:00-02:00",
+      "title": "Italo Disco | Shanghai's Italian Rooftop Disco Experience",
+      "venue": "Skyline Dome",
+      "district": "Huangpu",
+      "vibe": [
+        "rooftop",
+        "disco",
+        "dance"
+      ],
+      "genre": "Italo Disco, Nu Disco, classic disco",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "TBA on door / RMB varies",
+      "age": "18+",
+      "source": "https://www.smartshanghai.com/event/italo-disco-shanghai-s-italian-rooftop-disco-experience",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "gold",
+      "description": "Skyline Dome transforms every Friday into a rooftop night inspired by the golden age of Italian nightlife, featuring Italo Disco classics, Nu Disco grooves, and modern disco with panoramic skyline views.",
+      "sourceStatus": "secondary",
+      "address": "Skyline Dome (Bund rooftop)",
+      "organizer": "Skyline Dome / SmartShanghai listed",
+      "detailsUrl": "https://www.smartshanghai.com/event/italo-disco-shanghai-s-italian-rooftop-disco-experience",
+      "ticketUrl": "https://www.smartshanghai.com/event/italo-disco-shanghai-s-italian-rooftop-disco-experience",
+      "lastChecked": "2026-06-19",
+      "lineup": [],
+      "promotionalLinks": [],
+      "ticketStatus": "Door or pre-sale via the venue; check event page for current pricing.",
+      "recommendationReason": "Weekly Friday rooftop disco with panoramic skyline views and Italo/nu disco music - good for date-night or casual dance readers.",
+      "bestFor": "Readers who want a rooftop disco night with panoramic skyline views and Itao/Nu Disco.",
+      "verifyBeforeGoing": "Recheck event page for exact start time, dress code, and ticket availability.",
+      "sourceConfidence": "SmartShanghai listing with poster image visible; date treated as weekly Friday starting Jun 19.",
+      "sources": [
+        {
+          "label": "SmartShanghai clubbing listing",
+          "url": "https://www.smartshanghai.com/event/italo-disco-shanghai-s-italian-rooftop-disco-experience",
+          "status": "secondary",
+          "lastChecked": "2026-06-19"
+        }
+      ],
+      "posterUrl": "assets/posters/italo-disco-skyline-dome.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "SmartShanghai event page",
+        "url": "https://images.smartshanghai.com.cn/uploads/repository/2026/06/18/a08e942b-dac0-4156-a045-1d3d9b17aaba.jpg",
+        "date": "2026-06-19"
       }
     },
     {
@@ -9672,6 +9748,110 @@
         "hasLineup": true,
         "hasPoster": true,
         "riskFlags": []
+      }
+    },
+    {
+      "id": "house-of-zup-2026-06-21",
+      "month": "Jun",
+      "sortDate": "2026-06-21",
+      "date": "Jun 21",
+      "time": "21:00-02:00",
+      "title": "House of Zup (House, Disco, Hip Hop)",
+      "venue": "Star@ Culture Center",
+      "district": "TBD",
+      "vibe": [
+        "neighborhood",
+        "casual",
+        "house"
+      ],
+      "genre": "house, disco, hip hop",
+      "confidence": "Low-Medium",
+      "status": "upcoming",
+      "price": "Free or door",
+      "age": "18+",
+      "source": "https://www.smartshanghai.com/event/house-of-zup-house-disco-hip-hop-2026-06-21",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "warm",
+      "description": "Neighborhood pizza bar ZUP hosts another edition of their Sunday night party with six DJs playing house, disco, hip hop, and more. Pizza available by the slice.",
+      "sourceStatus": "secondary",
+      "address": "Star@ Culture Center (venue by ZUP)",
+      "organizer": "ZUP",
+      "detailsUrl": "https://www.smartshanghai.com/event/house-of-zup-house-disco-hip-hop-2026-06-21",
+      "ticketUrl": "https://www.smartshanghai.com/event/house-of-zup-house-disco-hip-hop-2026-06-21",
+      "lastChecked": "2026-06-19",
+      "lineup": [],
+      "promotionalLinks": [],
+      "ticketStatus": "Door or free entry - check event page.",
+      "recommendationReason": "Six DJs playing house/disco/hip hop at a neighborhood pizza bar on Sunday - casual late-night option.",
+      "bestFor": "Readers looking for a low-pressure Sunday night house/disco/hip hop option with pizza.",
+      "verifyBeforeGoing": "Recheck event page for address, entry fee, and set times.",
+      "sourceConfidence": "SmartShanghai listing with poster image and date; venue name (Star@ Culture Center) needs local verification.",
+      "sources": [
+        {
+          "label": "SmartShanghai clubbing listing",
+          "url": "https://www.smartshanghai.com/event/house-of-zup-house-disco-hip-hop-2026-06-21",
+          "status": "secondary",
+          "lastChecked": "2026-06-19"
+        }
+      ],
+      "posterUrl": "assets/posters/house-of-zup-2026-06-21.png",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "SmartShanghai event page",
+        "url": "https://images.smartshanghai.com.cn/uploads/repository/2026/06/19/d0b2f8d3-58b8-4656-8c85-e7225ded72ac.png",
+        "date": "2026-06-19"
+      }
+    },
+    {
+      "id": "white-party-skyline-dome",
+      "month": "Jun",
+      "sortDate": "2026-06-21",
+      "date": "Weekly",
+      "time": "21:00-02:00",
+      "title": "White Party | Shanghai's All-White Rooftop Party",
+      "venue": "Skyline Dome",
+      "district": "Huangpu",
+      "vibe": [
+        "rooftop",
+        "elegant",
+        "cocktail"
+      ],
+      "genre": "house, disco, cocktail-bar music",
+      "confidence": "Low-Medium",
+      "status": "upcoming",
+      "price": "Door / RMB varies",
+      "age": "18+",
+      "source": "https://www.smartshanghai.com/event/white-party-shanghai-s-all-white-rooftop-party-at-skyline-dome-at-skyline-dome-sushi-rooftop-lounge",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "white",
+      "description": "Skyline Dome hosts an all-white rooftop night above the Bund, offering an elegant late-night experience with music, cocktails, and panoramic skyline views.",
+      "sourceStatus": "secondary",
+      "address": "Skyline Dome (Bund rooftop)",
+      "organizer": "Skyline Dome / Sushi Rooftop Lounge",
+      "detailsUrl": "https://www.smartshanghai.com/event/white-party-shanghai-s-all-white-rooftop-party-at-skyline-dome-at-skyline-dome-sushi-rooftop-lounge",
+      "ticketUrl": "https://www.smartshanghai.com/event/white-party-shanghai-s-all-white-rooftop-party-at-skyline-dome-at-skyline-dome-sushi-rooftop-lounge",
+      "lastChecked": "2026-06-19",
+      "lineup": [],
+      "promotionalLinks": [],
+      "ticketStatus": "Door or pre-sale - check event page for pricing and dress code.",
+      "recommendationReason": "All-white rooftop party with Bund views - an elegant late-night option at Skyline Dome.",
+      "bestFor": "Readers who want an elegant rooftop experience with cocktails and music above the Bund.",
+      "verifyBeforeGoing": "Recheck event page for exact date, dress code, and pricing.",
+      "sourceConfidence": "SmartShanghai listing with poster image; date treated as weekly at Skyline Dome.",
+      "sources": [
+        {
+          "label": "SmartShanghai clubbing listing",
+          "url": "https://www.smartshanghai.com/event/white-party-shanghai-s-all-white-rooftop-party-at-skyline-dome-at-skyline-dome-sushi-rooftop-lounge",
+          "status": "secondary",
+          "lastChecked": "2026-06-19"
+        }
+      ],
+      "posterUrl": "assets/posters/white-party-skyline-dome.jpg",
+      "posterEvidence": {
+        "type": "flyer-front",
+        "source": "SmartShanghai event page",
+        "url": "https://images.smartshanghai.com.cn/uploads/repository/2026/06/18/664ce1cb-e985-4ab9-8b14-49f880376079.jpg",
+        "date": "2026-06-19"
       }
     },
     {
@@ -24346,7 +24526,7 @@
   },
   "quality": {
     "auditDate": "2026-06-18",
-    "generatedAt": "2026-06-18T05:06:21.280Z",
+    "generatedAt": "2026-06-18T10:05:10.973Z",
     "freshnessPolicy": {
       "eventSourceMaxAgeDays": 2,
       "nearEventWindowDays": 1,
@@ -24366,10 +24546,10 @@
       "futureVenueWatch": 17,
       "futurePerformerProfiles": 157,
       "futurePerformerWatch": 23,
-      "singleSourceFuturePerformers": 53,
+      "singleSourceFuturePerformers": 48,
       "futurePerformerProfileSources": 109,
       "futurePerformerMissingProfileSources": 48,
-      "djSourceUpgradeQueue": 14,
+      "djSourceUpgradeQueue": 9,
       "trackedDjProfiles": 175,
       "curatedDjSourceProfiles": 171,
       "technoArtistSignals": 184,
@@ -24992,9 +25172,7 @@
           "age"
         ],
         "uncertainCoreFields": [],
-        "missingNonCoreFields": [
-          "poster"
-        ],
+        "missingNonCoreFields": [],
         "performerProfileGaps": [
           "SLVN",
           "Olivier K",
@@ -26675,7 +26853,7 @@
           "techno, funk/soul lineage",
           "house"
         ],
-        "sourceCount": 22,
+        "sourceCount": 23,
         "totalEvents": 16,
         "futureEvents": 4,
         "highConfidenceEvents": 11,
@@ -28270,7 +28448,7 @@
           "name": "Chabuduo",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 1,
+          "sourceCount": 2,
           "trackedProfileSourceCount": 0,
           "venues": [
             "EXIT"
@@ -28280,7 +28458,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 0,
-          "singleSourceFutureAppearances": 1,
+          "singleSourceFutureAppearances": 0,
           "fitScore": 3,
           "priority": "high",
           "nextDate": "2026-06-18"
@@ -28810,7 +28988,7 @@
           "name": "Live camera concept + VJing",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 1,
+          "sourceCount": 2,
           "trackedProfileSourceCount": 0,
           "venues": [
             "EXIT"
@@ -28820,7 +28998,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 0,
-          "singleSourceFutureAppearances": 1,
+          "singleSourceFutureAppearances": 0,
           "fitScore": 3,
           "priority": "high",
           "nextDate": "2026-06-18"
@@ -29050,7 +29228,7 @@
           "name": "Olivier G",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 1,
+          "sourceCount": 2,
           "trackedProfileSourceCount": 0,
           "venues": [
             "EXIT"
@@ -29060,7 +29238,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 0,
-          "singleSourceFutureAppearances": 1,
+          "singleSourceFutureAppearances": 0,
           "fitScore": 3,
           "priority": "high",
           "nextDate": "2026-06-18"
@@ -29070,7 +29248,7 @@
           "name": "Olivier K",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 1,
+          "sourceCount": 2,
           "trackedProfileSourceCount": 0,
           "venues": [
             "EXIT"
@@ -29080,7 +29258,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 0,
-          "singleSourceFutureAppearances": 1,
+          "singleSourceFutureAppearances": 0,
           "fitScore": 3,
           "priority": "high",
           "nextDate": "2026-06-18"
@@ -29290,7 +29468,7 @@
           "name": "SLVN",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 1,
+          "sourceCount": 2,
           "trackedProfileSourceCount": 0,
           "venues": [
             "EXIT"
@@ -29300,7 +29478,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 0,
-          "singleSourceFutureAppearances": 1,
+          "singleSourceFutureAppearances": 0,
           "fitScore": 3,
           "priority": "high",
           "nextDate": "2026-06-18"
@@ -30794,86 +30972,6 @@
       ],
       "sourceUpgradeQueue": [
         {
-          "slug": "chabuduo",
-          "name": "Chabuduo",
-          "priority": "high",
-          "fitScore": 3,
-          "futureEventCount": 1,
-          "singleSourceFutureAppearances": 1,
-          "nextDate": "2026-06-18",
-          "venues": [
-            "EXIT"
-          ],
-          "genres": [
-            "house, techno"
-          ],
-          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
-        },
-        {
-          "slug": "live-camera-concept-vjing",
-          "name": "Live camera concept + VJing",
-          "priority": "high",
-          "fitScore": 3,
-          "futureEventCount": 1,
-          "singleSourceFutureAppearances": 1,
-          "nextDate": "2026-06-18",
-          "venues": [
-            "EXIT"
-          ],
-          "genres": [
-            "house, techno"
-          ],
-          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
-        },
-        {
-          "slug": "olivier-g",
-          "name": "Olivier G",
-          "priority": "high",
-          "fitScore": 3,
-          "futureEventCount": 1,
-          "singleSourceFutureAppearances": 1,
-          "nextDate": "2026-06-18",
-          "venues": [
-            "EXIT"
-          ],
-          "genres": [
-            "house, techno"
-          ],
-          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
-        },
-        {
-          "slug": "olivier-k",
-          "name": "Olivier K",
-          "priority": "high",
-          "fitScore": 3,
-          "futureEventCount": 1,
-          "singleSourceFutureAppearances": 1,
-          "nextDate": "2026-06-18",
-          "venues": [
-            "EXIT"
-          ],
-          "genres": [
-            "house, techno"
-          ],
-          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
-        },
-        {
-          "slug": "slvn",
-          "name": "SLVN",
-          "priority": "high",
-          "fitScore": 3,
-          "futureEventCount": 1,
-          "singleSourceFutureAppearances": 1,
-          "nextDate": "2026-06-18",
-          "venues": [
-            "EXIT"
-          ],
-          "genres": [
-            "house, techno"
-          ],
-          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
-        },
-        {
           "slug": "malaa",
           "name": "MALAA",
           "priority": "medium",
@@ -31710,7 +31808,7 @@
         "ok": true,
         "checkedAt": "2026-06-18",
         "status": 200,
-        "eventLinks": 18
+        "eventLinks": 20
       },
       {
         "label": "X/Twitter keyword: \"Shanghai\" techno",

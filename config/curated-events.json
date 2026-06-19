@@ -1054,7 +1054,7 @@
       "price": "168 RMB",
       "age": "18+",
       "source": "https://ra.co/events/2464178",
-      "sourceLabel": "Resident Advisor",
+      "sourceLabel": "Resident Advisor + user-provided MIRROR poster",
       "imageTheme": "acid",
       "description": "REACTOR Shanghai hosts PHOTOCULT's two-room Mask. Desire. Auction program at Reactor Shanghai, with DOME and POCKET room DJ sets plus desire-auction interludes.",
       "sourceStatus": "trusted-ra-and-official-instagram-lead",
@@ -6407,13 +6407,30 @@
       "imageTheme": "cyan",
       "description": "Minuit brings its MIRROR concept to EXIT for an immersive house and tech-house night with SLVN, Olivier K, Olivier G, Chabuduo, and a live camera/VJing setup that projects the booth and crowd back into the room.",
       "kind": "event",
-      "sourceStatus": "trusted-ra",
+      "sourceStatus": "trusted-ra-and-user-poster",
       "address": "298 Xingfu Road, Changning District, Shanghai",
       "organizer": "Illsee / Minuit",
       "detailsUrl": "https://ra.co/events/2468150",
       "ticketUrl": "https://ra.co/events/2468150",
       "lastChecked": "2026-06-18",
-      "ticketStatus": "RA live event detail lists 2026-06-18, 22:00-05:00, EXIT at 298 Xingfu Road, house/techno tags, Illsee event admin, and 100 RMB cost. Age policy and live ticket state are still not visible.",
+      "posterUrl": "assets/posters/minuit-mirror-concept-2026-06-18.jpg",
+      "posterEvidence": {
+        "type": "user-provided-official-poster",
+        "source": "User-provided MIRROR poster",
+        "url": "assets/posters/minuit-mirror-concept-2026-06-18.jpg",
+        "asset": "assets/posters/minuit-mirror-concept-2026-06-18.jpg",
+        "lastChecked": "2026-06-18",
+        "visibleFacts": [
+          "MIRROR by minuit",
+          "Feat. SLVN, Olivier K, Olivier G and Chabuduo",
+          "Live camera concept + VJing",
+          "June 18th",
+          "EXIT",
+          "Xingfu Rd 298, Shanghai"
+        ],
+        "note": "User-provided poster image confirms MIRROR title, Minuit branding, lineup, live camera/VJing concept, Jun 18 date, EXIT, and Xingfu Road 298."
+      },
+      "ticketStatus": "RA live event detail lists 2026-06-18, 22:00-05:00, EXIT at 298 Xingfu Road, house/techno tags, Illsee event admin, and 100 RMB cost. User-provided MIRROR poster confirms title, Minuit branding, lineup, live camera/VJing concept, Jun 18 date, EXIT, and Xingfu Road 298. Age policy and live ticket state are still not visible.",
       "lineup": [
         {
           "name": "SLVN",
@@ -6444,6 +6461,13 @@
           "status": "trusted-ra",
           "lastChecked": "2026-06-18",
           "verificationNote": "Live RA detail page confirms title, EXIT venue/address, Thu Jun 18 2026 22:00-05:00, lineup SLVN / Olivier K / Olivier G / Chabuduo / live camera concept + VJing, house/techno genres, Illsee event admin, 100 RMB cost, and flyer visibility."
+        },
+        {
+          "label": "User-provided MIRROR poster",
+          "url": "assets/posters/minuit-mirror-concept-2026-06-18.jpg",
+          "status": "user-provided-official-poster",
+          "lastChecked": "2026-06-18",
+          "verificationNote": "Poster image says MIRROR by Minuit, feat. SLVN, Olivier K, Olivier G and Chabuduo, live camera concept + VJing, June 18th, EXIT, Xingfu Rd 298, Shanghai."
         }
       ],
       "soundTags": [
@@ -6455,7 +6479,7 @@
         "techno-adjacent",
         "late room",
         "ticket path",
-        "single-source"
+        "lineup visible"
       ],
       "decisionProfile": {
         "intensity": "high",
@@ -6463,17 +6487,15 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": [
-          "single event source",
-          "poster missing",
           "age policy not visible"
         ]
       },
       "recommendationReason": "Useful for readers who want EXIT in a lighter, groove-led house/techno lane with a visual-room concept: SLVN, Olivier K, Olivier G, Chabuduo, and live camera/VJing make this a compact late-room route.",
       "bestFor": "Best for readers tracking EXIT house/techno programming who can verify same-day details before committing.",
       "verifyBeforeGoing": "Recheck RA or EXIT/Minuit channels for ticket availability, age policy, flyer, and any set-time update before going.",
-      "sourceConfidence": "Single-source RA event detail: enough to list as current RA coverage with caveats, but still worth rechecking with EXIT/Minuit for age policy and live ticket state."
+      "sourceConfidence": "RA event detail and user-provided MIRROR poster agree on the title, date, EXIT venue/address, lineup, and live camera/VJing concept; age policy remains the only visible public-source gap."
     },
     {
       "id": "exit-298-steal-tapes",
