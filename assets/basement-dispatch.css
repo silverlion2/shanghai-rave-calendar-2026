@@ -4599,21 +4599,33 @@ body:has(.calendar-shell) .signal-canvas {
   }
 }
 
-/* --- Anti-Download Protections --- */
-img {
+/* --- Poster Download Deterrence --- */
+.poster,
+.wall-card-poster,
+.archive-poster,
+.poster-strip-card,
+.event-hero figure,
+.hero-picture,
+.modal.has-event-poster .modal-hero {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+img[data-poster-protected],
+img[src*="assets/posters/"],
+.poster img,
+.wall-card-poster img,
+.archive-poster img,
+.poster-strip-card img,
+.contribution-poster-grid img,
+.event-card.has-event-poster .poster img,
+html body #modalPoster,
+html body #modalImage {
   -webkit-user-drag: none;
   -khtml-user-drag: none;
   -moz-user-drag: none;
   -o-user-drag: none;
   user-drag: none;
-}
-
-/* Prevent context menu and drag for posters */
-.poster img,
-.archive-poster img,
-.poster-strip-card img,
-.contribution-poster-grid img,
-.event-card.has-event-poster .poster img,
-#modalImage {
   pointer-events: none;
 }

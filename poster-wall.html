@@ -29,6 +29,7 @@
     };
   </script>
   <script defer src="/_vercel/insights/script.js"></script>
+  <script defer src="assets/poster-protection.js?v=poster-protection-20260620"></script>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Shanghai Rave Index">
   <meta property="og:title" content="Events | Shanghai Rave Index">
@@ -1159,18 +1160,6 @@
           </article>
         `;
       }).join("");
-      wall.querySelectorAll(".wall-card").forEach(card => {
-        card.addEventListener("click", () => openModal(events.find(event => event.id === card.dataset.id)));
-        card.addEventListener("keydown", event => {
-          if (event.key === "Enter" || event.key === " ") {
-            event.preventDefault();
-            openModal(events.find(item => item.id === card.dataset.id));
-          }
-        });
-      });
-      wall.querySelectorAll(".venue-guide-link").forEach(link => {
-        link.addEventListener("click", event => event.stopPropagation());
-      });
     }
 
     function openModal(event) {
@@ -1206,6 +1195,19 @@
     [searchInput, statusFilter, vibeFilter].forEach(control => {
       control.addEventListener("input", render);
       control.addEventListener("change", render);
+    });
+    wall.addEventListener("click", event => {
+      if (event.target.closest("a")) return;
+      const card = event.target.closest(".wall-card");
+      if (!card || !wall.contains(card)) return;
+      openModal(events.find(item => item.id === card.dataset.id));
+    });
+    wall.addEventListener("keydown", event => {
+      if (event.target.closest("a") || (event.key !== "Enter" && event.key !== " ")) return;
+      const card = event.target.closest(".wall-card");
+      if (!card || !wall.contains(card)) return;
+      event.preventDefault();
+      openModal(events.find(item => item.id === card.dataset.id));
     });
     document.getElementById("posterModalBack").addEventListener("click", closeModal);
     document.getElementById("closeModal").addEventListener("click", closeModal);

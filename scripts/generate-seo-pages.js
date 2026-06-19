@@ -243,7 +243,7 @@ function renderEventPage(event) {
               </div>
             </div>
             <figure>
-              <img src="${escapeAttr(relativeImagePath(event))}" alt="${escapeAttr(`${event.title} event poster or Shanghai Rave Index preview`)}" loading="eager" decoding="async" fetchpriority="high">
+              <img src="${escapeAttr(relativeImagePath(event))}" alt="${escapeAttr(`${event.title} event poster or Shanghai Rave Index preview`)}" loading="eager" decoding="async" fetchpriority="high" data-poster-protected="true" draggable="false">
               <figcaption>${escapeHtml(event.sourceLabel || "Source")} / checked ${escapeHtml(event.lastChecked || dataLastmod)}</figcaption>
             </figure>
           </header>

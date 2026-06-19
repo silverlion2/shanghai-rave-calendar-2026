@@ -325,6 +325,15 @@
       background: rgba(8,8,6,.74);
     }
 
+    .control-header.is-compact {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0;
+      border: 0;
+      background: transparent;
+    }
+
     .control-kicker,
     .filter-field span {
       color: var(--dim);
@@ -1720,6 +1729,14 @@
         padding: 8px !important;
       }
 
+      .dispatch-shell .control-header.is-compact {
+        display: flex !important;
+        justify-content: flex-start !important;
+        padding: 0 !important;
+        border: 0 !important;
+        background: transparent !important;
+      }
+
       .dispatch-shell .control-title {
         font-size: 16px !important;
         line-height: 1.08 !important;
@@ -1769,22 +1786,11 @@
       <div>
         <div class="kicker">Supabase artist intelligence</div>
         <h1>DJ Database</h1>
-        <p class="subhead">A source-backed artist desk for deciding who is worth crossing town for. Supabase profiles sit beside Shanghai calendar appearances, releases, labels, photos, source confidence, and set-time status.</p>
-        <div class="source-note">
-          <span class="pill">405 Supabase artist rows</span>
-          <span class="pill">Rich, sourced, and lineup-only profiles separated</span>
-          <span class="pill">Real source photos only when available</span>
-          <span class="pill">Calendar and release context shown together</span>
-        </div>
       </div>
     </header>
 
     <section class="controls" aria-label="DJ database filters">
-      <div class="control-header">
-        <div>
-          <span class="control-kicker">Artist desk</span>
-          <h2 class="control-title">Filter by sound, profile depth, calendar timing, and source confidence</h2>
-        </div>
+      <div class="control-header is-compact">
         <div class="filter-summary" id="djSummary" aria-live="polite">Loading profiles</div>
       </div>
       <label class="filter-field">

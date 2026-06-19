@@ -18,6 +18,7 @@
 const fs = require('fs');
 const path = require('path');
 
+const ROOT = path.resolve(__dirname, '..');
 const EVENTS_JSON = 'data/events.json';
 const EVENTS_DIR = 'events';
 const ALTER_PAVILLON_FILE = path.join(EVENTS_DIR, 'alter-pavillon.html');
@@ -52,10 +53,36 @@ function encodeUrl(value) {
 }
 
 function posterUrlFor(event) {
-  if (event.posterUrl) return event.posterUrl;
+  const poster = bestDisplayPosterAsset(event);
+  if (poster) return poster;
   // Fallback to the poster listed for alter-pavillon since that's the
   // one that ships with the repo as a canonical default.
   return 'assets/posters/alter-pavillon-optimized.jpg';
+}
+
+function bestDisplayPosterAsset(event) {
+  const poster = normalizePosterAsset(event.posterUrl || '');
+  if (!poster) return '';
+
+  const posterFile = path.join(ROOT, poster);
+  if (!fs.existsSync(posterFile)) return '';
+  if (/-optimized\.jpg$/i.test(poster)) return poster;
+
+  const optimized = optimizedPosterAsset(poster);
+  const optimizedFile = path.join(ROOT, optimized);
+  if (!fs.existsSync(optimizedFile)) return poster;
+
+  return fs.statSync(optimizedFile).size <= fs.statSync(posterFile).size ? optimized : poster;
+}
+
+function normalizePosterAsset(asset) {
+  const normalized = String(asset || '').trim().replace(/\\/g, '/');
+  return /^assets\/posters\/[^/]+\.(?:jpe?g|png|webp)$/i.test(normalized) ? normalized : '';
+}
+
+function optimizedPosterAsset(asset) {
+  const parsed = path.posix.parse(asset);
+  return path.posix.join(parsed.dir, `${parsed.name}-optimized.jpg`);
 }
 
 function statusKicker(event) {
@@ -172,6 +199,7 @@ function renderPage(event) {
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
   </script>
   <script defer src="/_vercel/insights/script.js"></script>
+  <script defer src="../assets/poster-protection.js?v=poster-protection-20260620"></script>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Shanghai Rave Index">
   <meta property="og:title" content="${escapeHtml(title)} | Shanghai Rave Index">
@@ -296,7 +324,7 @@ function renderPage(event) {
           </div>
         </div>
         <figure>
-          <img src="../${escapeHtml(poster)}" alt="${escapeHtml(title)} event poster or Shanghai Rave Index preview" loading="eager" decoding="async" fetchpriority="high">
+          <img src="../${escapeHtml(poster)}" alt="${escapeHtml(title)} event poster or Shanghai Rave Index preview" loading="eager" decoding="async" fetchpriority="high" data-poster-protected="true" draggable="false">
           <figcaption>${escapeHtml(event.sourceLabel || 'Source')} / checked ${escapeHtml(lastChecked)}</figcaption>
         </figure>
       </header>

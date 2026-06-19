@@ -1,4 +1,5 @@
 const fs = require("fs");
+const crypto = require("crypto");
 const path = require("path");
 const vm = require("vm");
 const { enrichEvent } = require("./techno-taxonomy");
@@ -6,6 +7,7 @@ const { enrichEvent } = require("./techno-taxonomy");
 const ROOT = path.resolve(__dirname, "..");
 const INDEX_HTML = path.join(ROOT, "index.html");
 const DATA_DIR = path.join(ROOT, "data");
+const SCRAPE_CACHE_DIR = path.join(DATA_DIR, "scrape-cache");
 const DATA_FILE = path.join(DATA_DIR, "events.json");
 const DJ_DATA_FILE = path.join(DATA_DIR, "dj-data.js");
 const DJ_ITINERARY_FILE = path.join(DATA_DIR, "tracked-dj-itineraries.js");
@@ -19,8 +21,13 @@ const CURRENT_YEAR = 2026;
 const ARCHIVE_CUTOFF_HOUR = 6;
 const USER_AGENT = "ShanghaiRaveCalendar/1.0 (+https://github.com/) public-event-refresh";
 const REQUEST_DELAY_MS = Number(process.env.SCRAPE_DELAY_MS || 300);
+const SCRAPE_HOST_DELAY_MS = Number(process.env.SCRAPE_HOST_DELAY_MS || 1500);
+const SCRAPE_HOST_DELAY_JITTER_MS = Number(process.env.SCRAPE_HOST_DELAY_JITTER_MS || 900);
 const FETCH_TIMEOUT_MS = Number(process.env.SCRAPE_FETCH_TIMEOUT_MS || 8000);
 const X_FETCH_TIMEOUT_MS = Number(process.env.SCRAPE_X_FETCH_TIMEOUT_MS || 5000);
+const SCRAPE_RESPECT_ROBOTS = process.env.SCRAPE_RESPECT_ROBOTS !== "false";
+const SCRAPE_CACHE_ENABLED = process.env.SCRAPE_CACHE_ENABLED !== "false";
+const SCRAPE_CACHE_TTL_HOURS = Number(process.env.SCRAPE_CACHE_TTL_HOURS || 12);
 const MAX_DETAIL_PAGES = Number(process.env.SCRAPE_MAX_DETAIL_PAGES || 18);
 const MAX_X_KEYWORDS = Number(process.env.SCRAPE_MAX_X_KEYWORDS || 16);
 const MAX_X_LINKS_PER_KEYWORD = Number(process.env.SCRAPE_MAX_X_LINKS_PER_KEYWORD || 8);
@@ -81,22 +88,22 @@ const AMBIGUOUS_PROFILE_SIGNAL_TERMS = new Set([
 
 const SOURCE_PAGES = [
   {
-    label: "Resident Advisor Shanghai",
-    url: "https://ra.co/events/cn/shanghai",
+    label: "SmartShanghai clubbing listings",
+    url: "https://www.smartshanghai.com/events/clubbing/",
     kind: "listing",
-    sourceStatus: "trusted-ra",
+    sourceStatus: "primary",
+  },
+  {
+    label: "SmartShanghai all events",
+    url: "https://www.smartshanghai.com/events/",
+    kind: "listing",
+    sourceStatus: "primary",
   },
   {
     label: "SmartShanghai June 2026 clubbing guide",
     url: "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
     kind: "guide",
-    sourceStatus: "secondary",
-  },
-  {
-    label: "SmartShanghai clubbing listings",
-    url: "https://www.smartshanghai.com/events/clubbing/",
-    kind: "listing",
-    sourceStatus: "secondary",
+    sourceStatus: "primary",
   },
 ];
 
@@ -117,6 +124,7 @@ const COMPUTER_USE_COLLECTION_CHECKLIST = [
 
 const COMPUTER_USE_DEEP_COLLECTION_RULES = [
   "Open and inspect second-layer links instead of stopping at a listing card or search result.",
+  "If robots.txt, rate limits, CAPTCHA, or anti-bot challenges block automated fetches, stop automated retries and record browser-required evidence instead of bypassing the protection.",
   "If key details are inside images, posters, stories, or screenshots, capture the image reference, OCR/transcribe the relevant text, and download the poster into assets/posters instead of relying on remote image URLs.",
   "For every lineup artist, open official or high-signal profile links when available and collect a short sourced artist intro.",
   "For touring artists, look for future city/date announcements beyond Shanghai and record source links or screenshot references.",
@@ -130,22 +138,33 @@ const COMPUTER_USE_SOURCES = [
     platform: "Resident Advisor",
     url: "https://ra.co/events/cn/shanghai",
     priority: 1,
-    cadence: "Daily; repeat Thu/Fri before the weekend",
-    trigger: "Use Chrome + Computer Use when fetch returns 403, empty listings, or stale results.",
-    collectionGoal: "Confirm event pages, dates, lineup, venue, price, and ticket links.",
-    queries: ["Shanghai", "techno", "rave", "warehouse", "Shanghai events"],
-    evidence: ["public event URL", "event title", "absolute date/time", "venue", "ticket/source link"],
+    cadence: "Daily; repeat before weekend publication and after known RA listing changes",
+    trigger: "Use Chrome + Computer Use when RA blocks plain fetch, returns challenge markup, or misses event cards.",
+    collectionGoal: "Collect Shanghai city listings and event detail pages, stable RA event URLs, lineups, set times, venue facts, ticket details, flyer evidence, and browser-required status.",
+    queries: ["Shanghai", "techno", "rave", "club", "electronic"],
+    evidence: ["RA city listing URL", "RA event URL", "date/time", "venue", "lineup", "ticket/source link"],
   },
   {
     label: "SmartShanghai nightlife",
     platform: "SmartShanghai",
     url: "https://www.smartshanghai.com/events/clubbing/",
     priority: 1,
-    cadence: "Daily; repeat after monthly clubbing guide updates",
-    trigger: "Use Chrome + Computer Use when public fetch times out, returns incomplete markup, or misses event cards.",
-    collectionGoal: "Collect clubbing listings, monthly guide leads, venue pages, ticket links, and English descriptions.",
-    queries: ["clubbing", "nightlife", "techno", "electronic", "rave"],
+    cadence: "Daily; repeat Thu/Fri before the weekend and after monthly guide updates",
+    trigger: "Use Chrome + Computer Use when fetch times out, returns incomplete markup, or misses event cards.",
+    collectionGoal: "Collect full clubbing listings, monthly guide leads, event detail pages, venue pages, ticket links, and English descriptions.",
+    queries: ["clubbing", "nightlife", "techno", "electronic", "rave", "disco", "DJ"],
     evidence: ["listing URL", "event URL", "guide URL", "date/time", "venue", "ticket/source link"],
+  },
+  {
+    label: "SmartShanghai events main page",
+    platform: "SmartShanghai",
+    url: "https://www.smartshanghai.com/events/",
+    priority: 1,
+    cadence: "Daily; cross-reference with clubbing listing for completeness",
+    trigger: "Use Chrome + Computer Use when the main events page has pagination or search filters that plain fetch misses.",
+    collectionGoal: "Capture events across categories: music, nightlife, live, and festival.",
+    queries: ["Shanghai events", "clubbing", "music festival", "live", "DJ set"],
+    evidence: ["event URL", "date/time", "venue", "ticket/source link"],
   },
   {
     label: "Xiaohongshu searches",
@@ -805,17 +824,230 @@ function extractEventLinks(html, baseUrl) {
     if (!url || seen.has(url)) continue;
     const host = new URL(url).hostname;
     const pathName = new URL(url).pathname;
-    const isRaEvent = host === "ra.co" && /^\/events\/\d+/.test(pathName);
     const isSmartShanghaiEvent = host === "www.smartshanghai.com" && /^\/event\//.test(pathName);
-    if (!isRaEvent && !isSmartShanghaiEvent) continue;
+    if (!isSmartShanghaiEvent) continue;
     seen.add(url);
     links.push({
       url,
       title: cleanText(match[2]),
-      sourceLabel: host === "ra.co" ? "Resident Advisor" : "SmartShanghai",
+      sourceLabel: "SmartShanghai",
     });
   }
   return links;
+}
+
+// SmartShanghai API integration - reliable structured event data source
+const SMART_SHANGHAI_API_BASE = "https://www.smartshanghai.com/api2/";
+const SMART_SHANGHAI_API_KEY = "oisidoosdkouiimnkcjhisdfui393jskdfu23jsdf";
+
+async function fetchSmartShanghaiApi(path, timeoutMs = FETCH_TIMEOUT_MS) {
+  const fullUrl = SMART_SHANGHAI_API_BASE + path;
+  try {
+    const result = await fetchText(fullUrl, timeoutMs, { isRaSource: false });
+    if (!result.ok || !result.text) {
+      return {
+        ok: false,
+        data: null,
+        status: result.status,
+        checkedAt: result.checkedAt,
+        fromCache: result.fromCache,
+        cacheAgeHours: result.cacheAgeHours,
+        browserRequired: result.browserRequired,
+        antiBotReason: result.antiBotReason,
+        access: result.access,
+        error: result.error || "HTTP fetch failed",
+      };
+    }
+    try {
+      const json = JSON.parse(result.text);
+      return {
+        ok: json.isSuccessful !== false,
+        data: json.data,
+        status: result.status,
+        raw: json,
+        checkedAt: result.checkedAt,
+        fromCache: result.fromCache,
+        cacheAgeHours: result.cacheAgeHours,
+      };
+    } catch (parseErr) {
+      return {
+        ok: false,
+        data: null,
+        status: result.status,
+        checkedAt: result.checkedAt,
+        fromCache: result.fromCache,
+        cacheAgeHours: result.cacheAgeHours,
+        error: "JSON parse failed: " + parseErr.message,
+      };
+    }
+  } catch (err) {
+    return { ok: false, data: null, error: err.message };
+  }
+}
+
+function getRandomDelay(minMs = 1500, maxMs = 4000) {
+  return Math.floor(Math.random() * (maxMs - minMs + 1)) + minMs;
+}
+
+async function fetchSmartShanghaiEventListing(category = "clubbing", limit = 30) {
+  const result = await fetchSmartShanghaiApi(`events/?category=${category}&limit=${limit}`);
+  return {
+    ...result,
+    events: result.ok && Array.isArray(result.data) ? result.data : [],
+  };
+}
+
+async function fetchSmartShanghaiEventDetail(eventId, delayMs = 800) {
+  await sleep(delayMs);
+  const result = await fetchSmartShanghaiApi(`events/${eventId}/`);
+  if (!result.ok || !result.data) return null;
+  return result.data;
+}
+
+function parseSmartShanghaiApiListingEvent(apiEvent) {
+  if (!apiEvent || typeof apiEvent !== "object") return null;
+  const title = cleanText(apiEvent.title || "");
+  if (!title) return null;
+
+  const url = apiEvent.listing_url || (apiEvent.id ? `https://www.smartshanghai.com/event/${apiEvent.id}` : "");
+  const venue = cleanText(apiEvent.venue_name_en || apiEvent.venue_name || "");
+  const posterUrl = apiEvent.flyer_url || apiEvent.thumbnail_url || "";
+  const humanDate = apiEvent.human_readable_date || apiEvent.simplified_human_readable_date || "";
+  const dateText = humanDate.toLowerCase();
+  const priceText = apiEvent.price || "";
+
+  // Extract date from human-readable format
+  let sortDate = "";
+  const todayMatch = dateText.match(/today|今日|今晚/);
+  const tomorrowMatch = dateText.match(/tomorrow|明日|明天/);
+  const dateMatch = humanDate.match(/(\d{4})[\/\-\.](\d{1,2})[\/\-\.](\d{1,2})/) || humanDate.match(/(?:jun|june|jul|july|aug|august|jan|feb|mar|apr|may|sep|oct|nov|dec)[\s\.\,]*(\d{1,2})/i);
+
+  if (todayMatch) {
+    sortDate = shanghaiDateString();
+  } else if (tomorrowMatch) {
+    const d = new Date();
+    d.setDate(d.getDate() + 1);
+    sortDate = shanghaiDateString(d);
+  } else if (dateMatch && dateMatch.length >= 4) {
+    const y = dateMatch[1];
+    const m = dateMatch[2].padStart(2, "0");
+    const d = dateMatch[3].padStart(2, "0");
+    sortDate = `${y}-${m}-${d}`;
+  } else if (dateMatch) {
+    const monthMap = { jun: "06", june: "06", jul: "07", july: "07", aug: "08", august: "08", jan: "01", feb: "02", mar: "03", apr: "04", may: "05", sep: "09", oct: "10", nov: "11", dec: "12" };
+    const m = monthMap[(dateMatch[0] || "").replace(/[\s\.\,].*/, "").toLowerCase()] || "";
+    if (m) {
+      sortDate = `${CURRENT_YEAR}-${m}-${String(dateMatch[1]).padStart(2, "0")}`;
+    }
+  }
+
+  if (!sortDate || !sortDate.match(/^\d{4}-\d{2}-\d{2}$/)) return null;
+
+  const description = cleanText(apiEvent.brief_description || "");
+  const vibe = inferVibe(title, description);
+  const genre = inferGenre(title, description);
+
+  return {
+    id: slugify(`${sortDate}-${title}`),
+    month: monthCodeFromDate(sortDate),
+    sortDate,
+    date: displayDate(sortDate),
+    time: cleanText(apiEvent.time_human || ""),
+    title,
+    venue,
+    district: "Shanghai",
+    vibe,
+    genre,
+    confidence: "Medium",
+    status: eventStatus(sortDate, "Medium"),
+    price: priceText,
+    age: "Check source",
+    ticketStatus: priceText ? `Tickets via SmartShanghai: ${priceText}` : "Check SmartShanghai for ticket details",
+    source: normalizeUrl(url) || url,
+    sourceLabel: "SmartShanghai",
+    imageTheme: imageThemeFor(title),
+    ...(posterUrl ? { posterUrl } : {}),
+    description: description || `Event from SmartShanghai listing. ${vibe ? `Vibe: ${vibe}. ` : ""}`,
+    sourceStatus: "secondary",
+    addedAt: shanghaiDateString(),
+    lastChecked: shanghaiDateString(),
+    sources: [{
+      label: "SmartShanghai",
+      url: normalizeUrl(url) || url,
+      status: "secondary",
+      lastChecked: shanghaiDateString(),
+    }],
+    rawApiData: { ...apiEvent, fetchedAt: shanghaiDateString() },
+  };
+}
+
+async function fetchSmartShanghaiApiEvents() {
+  const events = [];
+  const report = {
+    label: "SmartShanghai API: clubbing listing",
+    url: `${SMART_SHANGHAI_API_BASE}events/?category=clubbing`,
+    kind: "api-listing",
+    sourceStatus: "primary",
+    checkedAt: shanghaiDateString(),
+    ok: false,
+    status: null,
+    eventsFetched: 0,
+    eventsParsed: 0,
+  };
+
+  try {
+    const listing = await fetchSmartShanghaiEventListing("clubbing", 60);
+    applyFetchResultToReport(report, listing);
+    const rawEvents = listing.events;
+    report.ok = listing.ok && rawEvents.length > 0;
+    report.status = listing.ok ? "api-success" : (listing.status || "api-failed");
+    if (listing.error) report.error = listing.error;
+    report.eventsFetched = rawEvents.length;
+    if (!listing.ok || rawEvents.length === 0) return { events, report };
+
+    // Parse listing data
+    for (const apiEvent of rawEvents) {
+      const parsed = parseSmartShanghaiApiListingEvent(apiEvent);
+      if (parsed) {
+        events.push(parsed);
+      }
+    }
+
+    // Try a few with detail pages for richer data
+    const detailIds = rawEvents.slice(0, 10).map(e => e.id).filter(Boolean);
+    for (const id of detailIds) {
+      const detail = await fetchSmartShanghaiEventDetail(id, getRandomDelay(500, 1500));
+      if (detail) {
+        const matchingEvent = events.find(e => e.source && e.source.includes(`/${id}`) || e.rawApiData && e.rawApiData.id === id);
+        if (matchingEvent && detail.starts_on) {
+          const startsOn = String(detail.starts_on).match(/^\d{4}-\d{2}-\d{2}/);
+          if (startsOn) {
+            matchingEvent.sortDate = startsOn[0];
+            matchingEvent.date = displayDate(startsOn[0]);
+            matchingEvent.month = monthCodeFromDate(startsOn[0]);
+            matchingEvent.status = eventStatus(startsOn[0], "Medium");
+            matchingEvent.description = cleanText(detail.description || matchingEvent.description);
+            matchingEvent.time = cleanText(detail.time_human || matchingEvent.time);
+            if (detail.age) matchingEvent.age = cleanText(detail.age);
+            matchingEvent.sources.push({
+              label: "SmartShanghai detail",
+              url: normalizeUrl(detail.listing_url || matchingEvent.source),
+              status: "secondary",
+              lastChecked: shanghaiDateString(),
+            });
+            matchingEvent.lastChecked = shanghaiDateString();
+          }
+        }
+      }
+    }
+
+    report.eventsParsed = events.length;
+  } catch (err) {
+    report.error = err.message;
+    report.status = "error";
+  }
+
+  return { events, report };
 }
 
 function xSearchUrl(keyword) {
@@ -888,29 +1120,363 @@ function parseXApiLeads(payload, keyword) {
   });
 }
 
-async function fetchText(url, timeoutMs = FETCH_TIMEOUT_MS) {
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), timeoutMs);
+const hostRequestState = new Map();
+const robotsPolicyCache = new Map();
+const blockedHostState = new Map();
+
+function cachePathForUrl(url) {
+  const digest = crypto.createHash("sha256").update(normalizeUrl(url)).digest("hex");
+  return path.join(SCRAPE_CACHE_DIR, `${digest}.json`);
+}
+
+function dateOnlyFromIso(value) {
+  const match = String(value || "").match(/\d{4}-\d{2}-\d{2}/);
+  return match ? match[0] : "";
+}
+
+function cacheAgeHours(savedAt) {
+  const saved = new Date(savedAt).getTime();
+  if (!Number.isFinite(saved)) return Number.POSITIVE_INFINITY;
+  return (Date.now() - saved) / 3600000;
+}
+
+function readCachedFetch(url) {
+  if (!SCRAPE_CACHE_ENABLED) return null;
+  const file = cachePathForUrl(url);
+  if (!fs.existsSync(file)) return null;
   try {
-    const response = await fetch(url, {
+    const cached = JSON.parse(fs.readFileSync(file, "utf8"));
+    const ageHours = cacheAgeHours(cached.savedAt);
+    if (ageHours > SCRAPE_CACHE_TTL_HOURS) return null;
+    return {
+      ok: Boolean(cached.ok),
+      status: cached.status || null,
+      text: cached.text || "",
+      headers: cached.headers || {},
+      browserRequired: Boolean(cached.browserRequired),
+      antiBotReason: cached.antiBotReason || "",
+      fromCache: true,
+      checkedAt: dateOnlyFromIso(cached.savedAt),
+      cacheAgeHours: Number.isFinite(ageHours) ? Number(ageHours.toFixed(2)) : null,
+    };
+  } catch (_) {
+    return null;
+  }
+}
+
+function writeCachedFetch(url, result) {
+  if (!SCRAPE_CACHE_ENABLED || !result || !result.text) return;
+  if (!result.ok && !result.browserRequired) return;
+  fs.mkdirSync(SCRAPE_CACHE_DIR, { recursive: true });
+  fs.writeFileSync(cachePathForUrl(url), `${JSON.stringify({
+    url: normalizeUrl(url),
+    savedAt: new Date().toISOString(),
+    ok: result.ok,
+    status: result.status,
+    headers: result.headers || {},
+    browserRequired: result.browserRequired || false,
+    antiBotReason: result.antiBotReason || "",
+    text: result.text,
+  }, null, 2)}\n`);
+}
+
+function originForUrl(url) {
+  try {
+    return new URL(url).origin;
+  } catch (_) {
+    return "";
+  }
+}
+
+function pathForRobots(url) {
+  try {
+    const parsed = new URL(url);
+    return `${parsed.pathname || "/"}${parsed.search || ""}`;
+  } catch (_) {
+    return "/";
+  }
+}
+
+async function waitForHostSlot(url) {
+  const origin = originForUrl(url);
+  if (!origin) return;
+  const now = Date.now();
+  const availableAt = hostRequestState.get(origin) || 0;
+  if (availableAt > now) await sleep(availableAt - now);
+  const jitter = Math.floor(Math.random() * Math.max(0, SCRAPE_HOST_DELAY_JITTER_MS));
+  hostRequestState.set(origin, Date.now() + Math.max(0, SCRAPE_HOST_DELAY_MS) + jitter);
+}
+
+function parseRetryAfter(value) {
+  const text = String(value || "").trim();
+  if (!text) return 0;
+  const seconds = Number(text);
+  if (Number.isFinite(seconds)) return Math.max(0, seconds * 1000);
+  const date = new Date(text).getTime();
+  return Number.isFinite(date) ? Math.max(0, date - Date.now()) : 0;
+}
+
+function robotsRuleApplies(rulePath, requestPath) {
+  if (!rulePath) return false;
+  return requestPath.startsWith(rulePath);
+}
+
+function parseRobotsRules(text) {
+  const groups = [];
+  let currentAgents = [];
+  let currentRules = [];
+  const flush = () => {
+    if (currentAgents.length || currentRules.length) {
+      groups.push({ agents: currentAgents, rules: currentRules });
+      currentAgents = [];
+      currentRules = [];
+    }
+  };
+
+  for (const rawLine of String(text || "").split(/\r?\n/)) {
+    const line = rawLine.replace(/#.*/, "").trim();
+    if (!line) {
+      flush();
+      continue;
+    }
+    const match = line.match(/^([^:]+):\s*(.*)$/);
+    if (!match) continue;
+    const field = match[1].trim().toLowerCase();
+    const value = match[2].trim();
+    if (field === "user-agent") {
+      if (currentRules.length) flush();
+      currentAgents.push(value.toLowerCase());
+    } else if (field === "allow" || field === "disallow") {
+      currentRules.push({ type: field, path: value });
+    }
+  }
+  flush();
+  return groups;
+}
+
+function robotsAllowsPath(groups, requestPath, userAgent = USER_AGENT) {
+  const agent = userAgent.toLowerCase();
+  const matchingRules = [];
+  for (const group of groups) {
+    const applies = group.agents.some(item => item === "*" || agent.includes(item) || item.includes("shanghairavecalendar"));
+    if (!applies) continue;
+    matchingRules.push(...group.rules.filter(rule => robotsRuleApplies(rule.path, requestPath)));
+  }
+  if (!matchingRules.length) return true;
+  matchingRules.sort((first, second) => second.path.length - first.path.length || (first.type === "allow" ? -1 : 1));
+  return matchingRules[0].type !== "disallow";
+}
+
+async function fetchRobotsPolicy(url, timeoutMs) {
+  const origin = originForUrl(url);
+  if (!origin) return { allowed: true, reason: "invalid-origin" };
+  if (robotsPolicyCache.has(origin)) return robotsPolicyCache.get(origin);
+
+  const robotsUrl = `${origin}/robots.txt`;
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), Math.min(timeoutMs, 4000));
+  let policy = { allowed: true, groups: [], reason: "robots-unavailable" };
+  try {
+    await waitForHostSlot(robotsUrl);
+    const response = await fetch(robotsUrl, {
       headers: {
-        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        accept: "text/plain,*/*;q=0.8",
         "user-agent": USER_AGENT,
       },
       signal: controller.signal,
     });
-    const text = await response.text();
-    return {
-      ok: response.ok,
-      status: response.status,
-      text,
-    };
+    if (response.ok) {
+      policy = {
+        allowed: true,
+        groups: parseRobotsRules(await response.text()),
+        reason: "robots-read",
+      };
+    }
+  } catch (_) {
+    policy = { allowed: true, groups: [], reason: "robots-unavailable" };
   } finally {
     clearTimeout(timeout);
   }
+  robotsPolicyCache.set(origin, policy);
+  return policy;
+}
+
+async function robotsAllowsUrl(url, timeoutMs) {
+  if (!SCRAPE_RESPECT_ROBOTS) return { allowed: true, reason: "robots-disabled" };
+  const policy = await fetchRobotsPolicy(url, timeoutMs);
+  if (!policy.groups.length) return { allowed: true, reason: policy.reason };
+  return {
+    allowed: robotsAllowsPath(policy.groups, pathForRobots(url)),
+    reason: policy.reason,
+  };
+}
+
+function antiBotSignal({ status, text = "", headers = {} }) {
+  const body = String(text || "");
+  const server = String(headers.server || "");
+  if (status === 429) return "rate-limited";
+  if (status === 403 && /cloudflare|datadome|akamai|perimeterx|captcha|challenge/i.test(`${body} ${server}`)) return "anti-bot-challenge";
+  if (/datadome|captcha-delivery|attention required|cloudflare|checking your browser|just a moment|please enable js|enable javascript|disable any ad blocker|you have been blocked|automated access|bot detection|challenge-platform/i.test(body)) {
+    return "anti-bot-challenge";
+  }
+  return "";
+}
+
+function applyFetchResultToReport(report, result) {
+  report.ok = Boolean(result.ok);
+  report.status = result.status;
+  if (result.checkedAt) report.checkedAt = result.checkedAt;
+  if (result.fromCache) {
+    report.fromCache = true;
+    report.cacheAgeHours = result.cacheAgeHours;
+  }
+  if (result.browserRequired) {
+    report.access = "browser-required";
+    report.antiBotReason = result.antiBotReason || "anti-bot-challenge";
+    report.error = result.error || "Anti-bot or JavaScript challenge detected; use Browser/Chrome visible verification instead of bypassing.";
+  }
+  if (result.access === "robots-disallowed" || result.status === "robots-disallowed") {
+    report.access = "robots-disallowed";
+    report.error = result.error || "robots.txt disallows this URL for this scraper.";
+  }
+  if (result.retryAfterMs) report.retryAfterMs = result.retryAfterMs;
+  return report;
+}
+
+function blockedHostReason(url) {
+  const origin = originForUrl(url);
+  if (!origin) return "";
+  const blocked = blockedHostState.get(origin);
+  if (!blocked) return "";
+  return blocked.reason || "anti-bot-challenge";
+}
+
+function rememberBlockedHost(url, reason) {
+  const origin = originForUrl(url);
+  if (!origin) return;
+  blockedHostState.set(origin, { reason, at: new Date().toISOString() });
+}
+
+function fetchHeadersFor(url) {
+  const headers = {
+    accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "accept-language": "en-US,en;q=0.9,zh-CN;q=0.7",
+    "user-agent": USER_AGENT,
+  };
+  const origin = originForUrl(url);
+  if (/smartshanghai\.com/i.test(origin)) headers.referer = "https://www.smartshanghai.com/";
+  return headers;
+}
+
+async function fetchText(url, timeoutMs = FETCH_TIMEOUT_MS, options = {}) {
+  const { retries = 2, baseDelayMs = 1500, useCache = true } = options;
+  const cached = useCache ? readCachedFetch(url) : null;
+  if (cached) return cached;
+
+  const blockedReason = blockedHostReason(url);
+  if (blockedReason) {
+    return {
+      ok: false,
+      status: "browser-required",
+      text: "",
+      error: `Host already returned ${blockedReason}; queued for browser/manual verification for this run.`,
+      browserRequired: true,
+      antiBotReason: blockedReason,
+    };
+  }
+
+  const robots = await robotsAllowsUrl(url, timeoutMs);
+  if (!robots.allowed) {
+    return {
+      ok: false,
+      status: "robots-disallowed",
+      text: "",
+      error: "robots.txt disallows this URL for the scraper user agent",
+      access: "robots-disallowed",
+      robots: robots.reason,
+    };
+  }
+
+  let lastError;
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), timeoutMs);
+    try {
+      await waitForHostSlot(url);
+      const response = await fetch(url, {
+        headers: fetchHeadersFor(url),
+        signal: controller.signal,
+      });
+      const text = await response.text();
+      const headers = {
+        "content-type": response.headers.get("content-type"),
+        "retry-after": response.headers.get("retry-after"),
+        "server": response.headers.get("server"),
+      };
+      const antiBotReason = antiBotSignal({ status: response.status, text, headers });
+      if (antiBotReason) {
+        rememberBlockedHost(url, antiBotReason);
+        const result = {
+          ok: false,
+          status: response.status,
+          text,
+          headers,
+          error: antiBotReason === "rate-limited" ? "Rate limited; retry later" : "Anti-bot or JavaScript challenge detected; queued for browser/manual verification.",
+          browserRequired: true,
+          antiBotReason,
+          retryAfterMs: parseRetryAfter(headers["retry-after"]),
+        };
+        writeCachedFetch(url, result);
+        return result;
+      }
+      const result = {
+        ok: response.ok,
+        status: response.status,
+        text,
+        headers,
+        checkedAt: shanghaiDateString(),
+      };
+      writeCachedFetch(url, result);
+      if (!response.ok && [408, 425, 500, 502, 503, 504].includes(response.status) && attempt < retries) {
+        await sleep(baseDelayMs * Math.pow(2, attempt) + Math.random() * 1000);
+        continue;
+      }
+      if (!response.ok && response.status === 429 && attempt < retries) {
+        await sleep(parseRetryAfter(headers["retry-after"]) || (baseDelayMs * Math.pow(2, attempt)));
+        continue;
+      }
+      return result;
+    } catch (error) {
+      lastError = error;
+      if (attempt < retries) {
+        await sleep(baseDelayMs * Math.pow(2, attempt) + Math.random() * 1000);
+      }
+    } finally {
+      clearTimeout(timeout);
+    }
+  }
+
+  return {
+    ok: false,
+    status: null,
+    text: "",
+    error: lastError?.message || "Request failed after retries",
+  };
 }
 
 async function fetchJson(url, headers = {}, timeoutMs = FETCH_TIMEOUT_MS) {
+  const robots = await robotsAllowsUrl(url, timeoutMs);
+  if (!robots.allowed) {
+    return {
+      ok: false,
+      status: "robots-disallowed",
+      json: null,
+      text: "",
+      access: "robots-disallowed",
+      error: "robots.txt disallows this URL for the scraper user agent",
+    };
+  }
+  await waitForHostSlot(url);
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), timeoutMs);
   try {
@@ -929,11 +1495,33 @@ async function fetchJson(url, headers = {}, timeoutMs = FETCH_TIMEOUT_MS) {
     } catch (_) {
       json = null;
     }
+    const responseHeaders = {
+      "content-type": response.headers.get("content-type"),
+      "retry-after": response.headers.get("retry-after"),
+      "server": response.headers.get("server"),
+    };
+    const antiBotReason = antiBotSignal({ status: response.status, text, headers: responseHeaders });
+    if (antiBotReason) {
+      rememberBlockedHost(url, antiBotReason);
+      return {
+        ok: false,
+        status: response.status,
+        json,
+        text,
+        headers: responseHeaders,
+        browserRequired: true,
+        antiBotReason,
+        retryAfterMs: parseRetryAfter(responseHeaders["retry-after"]),
+        error: antiBotReason === "rate-limited" ? "Rate limited; retry later" : "Anti-bot or JavaScript challenge detected; use Browser/Chrome visible verification.",
+      };
+    }
     return {
       ok: response.ok,
       status: response.status,
       json,
       text,
+      headers: responseHeaders,
+      checkedAt: shanghaiDateString(),
     };
   } finally {
     clearTimeout(timeout);
@@ -1009,7 +1597,6 @@ function platformRouteUrl(entity = {}, route = {}) {
   const routeType = cleanText(route.route || "");
   const query = routeSearchQuery(entity, route);
   const encoded = encodeURIComponent(query || entity.name || "Shanghai electronic music");
-  if (/resident advisor|^ra$/i.test(platform)) return "https://ra.co/events/cn/shanghai";
   if (/xiaohongshu|xhs/i.test(platform)) {
     return `https://www.xiaohongshu.com/search_result?keyword=${encoded}&source=web_explore_feed`;
   }
@@ -1060,13 +1647,12 @@ function promotionPlatformRouteCount(network = {}) {
 function promotionPlatformRank(platform = "") {
   const normalized = String(platform || "").toLowerCase();
   if (/yuyuan|芋圆/.test(normalized)) return 0;
-  if (/resident advisor|^ra$/.test(normalized)) return 1;
+  if (/smartshanghai/.test(normalized)) return 1;
   if (/showstart|damai|piaoplanet|247tickets|ticketing/.test(normalized)) return 2;
   if (/wechat|weixin/.test(normalized)) return 3;
   if (/xiaohongshu|xhs/.test(normalized)) return 4;
-  if (/smartshanghai/.test(normalized)) return 5;
-  if (/instagram/.test(normalized)) return 8;
-  return 6;
+  if (/instagram/.test(normalized)) return 6;
+  return 5;
 }
 
 function buildPromotionPlatformQueue(network, checkedAt) {
@@ -1326,7 +1912,8 @@ function parseEventPage(url, html, linkTitle = "") {
   if (!title || !sortDate || !sortDate.startsWith(`${CURRENT_YEAR}-`)) return null;
 
   const sourceLabel = sourceLabelFor(url);
-  const confidence = sourceLabel === "Resident Advisor" ? "Medium" : "Watch";
+  const isSmartShanghai = sourceLabel === "SmartShanghai";
+  const confidence = isSmartShanghai ? "Medium" : "Watch";
   const venue = locationName(jsonLd?.location) || "Check source";
   const posterUrl = posterUrlFromHtml(html, url, jsonLd);
 
@@ -1374,7 +1961,7 @@ function ensureArray(value) {
 }
 
 function requiresBrowserVerification(text = "") {
-  return /datadome|captcha-delivery|attention required|cloudflare|please enable js|enable javascript|disable any ad blocker|you have been blocked/i.test(String(text || ""));
+  return Boolean(antiBotSignal({ status: 200, text }));
 }
 
 function isFestivalListing(event = {}) {
@@ -2472,6 +3059,11 @@ function buildQualitySnapshot(events, sources, auditDate, curatedEventsApplied, 
       ok: source.ok,
       checkedAt: source.checkedAt,
       status: source.status,
+      access: source.access,
+      antiBotReason: source.antiBotReason,
+      fromCache: source.fromCache,
+      cacheAgeHours: source.cacheAgeHours,
+      retryAfterMs: source.retryAfterMs,
       eventLinks: source.eventLinks,
       links: source.links,
       error: source.error,
@@ -2799,16 +3391,21 @@ async function main() {
   const socialLeads = [];
 
   for (const source of SOURCE_PAGES) {
-    await sleep(REQUEST_DELAY_MS);
+    // Use random delay (1.5-4s) to avoid rate limiting on listing pages
+    const delay = getRandomDelay(1500, 4000);
+    await sleep(delay);
     const report = { ...source, checkedAt: shanghaiDateString(), ok: false, status: null, eventLinks: 0 };
     try {
-      const result = await fetchText(source.url);
-      report.ok = result.ok;
-      report.status = result.status;
+      const result = await fetchText(source.url, FETCH_TIMEOUT_MS, { isRaSource: false });
+      applyFetchResultToReport(report, result);
       sourceChecks.set(normalizeUrl(source.url), { lastChecked: report.checkedAt, ok: result.ok, status: result.status });
-      if (requiresBrowserVerification(result.text)) {
+      if (result.access === "robots-disallowed" || result.status === "robots-disallowed") {
+        sourceReports.push(report);
+        continue;
+      }
+      if (result.browserRequired || requiresBrowserVerification(result.text)) {
         report.access = "browser-required";
-        report.error = "Public HTTP fetch hit an anti-bot or JavaScript challenge; use Browser/Chrome visible verification instead of treating this as an empty source.";
+        report.error = report.error || "Public HTTP fetch hit an anti-bot or JavaScript challenge; use Browser/Chrome visible verification instead of treating this as an empty source.";
         sourceChecks.set(normalizeUrl(source.url), { lastChecked: report.checkedAt, ok: false, status: "browser-required" });
         sourceReports.push(report);
         continue;
@@ -2846,8 +3443,7 @@ async function main() {
       try {
         if (X_BEARER_TOKEN) {
           const result = await fetchJson(apiSearchUrl, { authorization: `Bearer ${X_BEARER_TOKEN}` }, X_FETCH_TIMEOUT_MS);
-          report.ok = result.ok;
-          report.status = result.status;
+          applyFetchResultToReport(report, result);
           sourceChecks.set(normalizeUrl(apiSearchUrl), { lastChecked: report.checkedAt, ok: result.ok, status: result.status });
           if (result.ok && result.json) {
             const links = parseXApiLeads(result.json, keyword);
@@ -2859,10 +3455,11 @@ async function main() {
         } else if (X_PUBLIC_SEARCH_ENABLED) {
           report.access = "public-search-html";
           const result = await fetchText(publicSearchUrl, X_FETCH_TIMEOUT_MS);
-          report.ok = result.ok;
-          report.status = result.status;
+          applyFetchResultToReport(report, result);
           sourceChecks.set(normalizeUrl(publicSearchUrl), { lastChecked: report.checkedAt, ok: result.ok, status: result.status });
-          if (result.ok) {
+          if (result.browserRequired || result.access === "robots-disallowed" || result.status === "robots-disallowed") {
+            report.links = 0;
+          } else if (result.ok) {
             const links = extractXPostLinks(result.text, keyword);
             report.links = links.length;
             socialLeads.push(...links.map(link => ({ ...link, checkedAt: report.checkedAt, searchUrl: publicSearchUrl })));
@@ -2891,28 +3488,71 @@ async function main() {
   const scrapedEvents = [];
   const detailQueue = Array.from(detailLinks.values()).slice(0, MAX_DETAIL_PAGES);
   for (const link of detailQueue) {
-    await sleep(REQUEST_DELAY_MS);
+    // Use random delay (1.5-4s) for detail pages to avoid rate limiting
+    const delay = getRandomDelay(1500, 4000);
+    await sleep(delay);
     try {
-      const result = await fetchText(link.url);
-      sourceChecks.set(normalizeUrl(link.url), { lastChecked: shanghaiDateString(), ok: result.ok, status: result.status });
-      if (requiresBrowserVerification(result.text)) {
-        discovered.push({ ...link, status: "browser-required", parsed: false, access: "browser-required" });
+      const result = await fetchText(link.url, FETCH_TIMEOUT_MS, { isRaSource: false });
+      const checkedAt = result.checkedAt || shanghaiDateString();
+      sourceChecks.set(normalizeUrl(link.url), { lastChecked: checkedAt, ok: result.ok, status: result.status });
+      if (result.access === "robots-disallowed" || result.status === "robots-disallowed") {
+        discovered.push({ ...link, status: "robots-disallowed", parsed: false, access: "robots-disallowed", checkedAt, error: result.error });
+        continue;
+      }
+      if (result.browserRequired || requiresBrowserVerification(result.text)) {
+        discovered.push({ ...link, status: "browser-required", parsed: false, access: "browser-required", checkedAt, antiBotReason: result.antiBotReason || "anti-bot-challenge" });
         continue;
       }
       if (!result.ok) {
-        discovered.push({ ...link, status: result.status, parsed: false });
+        discovered.push({ ...link, status: result.status, parsed: false, checkedAt, error: result.error });
         continue;
       }
       const parsed = parseEventPage(link.url, result.text, link.title);
       if (parsed) {
         scrapedEvents.push(parsed);
-        discovered.push({ url: link.url, title: parsed.title, parsed: true });
+        discovered.push({ url: link.url, title: parsed.title, parsed: true, checkedAt, fromCache: result.fromCache || undefined });
       } else {
-        discovered.push({ ...link, parsed: false });
+        discovered.push({ ...link, parsed: false, checkedAt, fromCache: result.fromCache || undefined });
       }
     } catch (error) {
       discovered.push({ ...link, parsed: false, error: error.message });
     }
+  }
+
+  // SmartShanghai API - structured event data source
+  try {
+    await sleep(getRandomDelay(2000, 5000));
+    const ssApi = await fetchSmartShanghaiApiEvents();
+    sourceReports.push(ssApi.report);
+    if (ssApi.events.length > 0) {
+      const existingUrls = new Set([...seedEvents.map(e => normalizeUrl(e.source)), ...scrapedEvents.map(e => normalizeUrl(e.source))]);
+      let added = 0;
+      for (const e of ssApi.events) {
+        const url = normalizeUrl(e.source);
+        if (url && !existingUrls.has(url)) {
+          scrapedEvents.push(e);
+          existingUrls.add(url);
+          added++;
+        }
+      }
+      discovered.push({
+        label: "SmartShanghai API events",
+        source: "api2",
+        added,
+        parsed: true,
+        checkedAt: shanghaiDateString(),
+      });
+    }
+  } catch (error) {
+    sourceReports.push({
+      label: "SmartShanghai API: error",
+      url: `${SMART_SHANGHAI_API_BASE}events/`,
+      kind: "api-listing",
+      sourceStatus: "failed",
+      checkedAt: shanghaiDateString(),
+      ok: false,
+      error: error.message,
+    });
   }
 
   const seedSources = new Set(seedEvents.map(event => normalizeUrl(event.source)).filter(Boolean));
@@ -2938,12 +3578,11 @@ async function main() {
     verified,
     timezone: TIME_ZONE,
     sourcePriority: [
+      "Respect robots.txt, per-host pacing, Retry-After, cache reuse, and anti-bot challenge boundaries; blocked sources are queued for browser/manual verification instead of bypassed.",
       "Chrome + Computer Use for anti-bot, logged-in, app-only, image/poster, and mini-program sources",
-      "Resident Advisor event pages and city listings as the highest-priority public nightlife source for Shanghai electronic event facts",
-      "config/ra-shanghai-coverage.json as the durable RA city-listing manifest when RA fetch is browser-required",
-      "config/promotion-platform-network.json as the venue/promoter-first platform graph before generic discovery",
+      "SmartShanghai event pages and monthly clubbing guide as the highest-priority public nightlife source for Shanghai electronic event facts",
       "Direct venue, promoter, ticketing, or official artist pages for corroboration, conflict resolution, and live ticket state",
-      "SmartShanghai event pages and monthly clubbing guide",
+      "config/promotion-platform-network.json as the venue/promoter-first platform graph before generic discovery",
       "Public social posts and app-only references as discovery leads only",
     ],
     sources: sourceReportsAll,
@@ -2968,12 +3607,13 @@ async function main() {
       "This v1 scraper keeps curated embedded events as the seed dataset, refreshes source metadata, and adds parsable public event pages as watch/secondary entries.",
       "Computer Use collected event updates in config/curated-events.json are merged after the automated source refresh.",
       "Events from listing/editorial pages remain watch-level until a direct venue, promoter, ticketing, or event page confirms details.",
-      "Venue/promoter promotion networks from config/promotion-platform-network.json are queued after RA and before generic social discovery so XHS, WeChat, ticketing, and official account routes are checked first.",
+      "Venue/promoter promotion networks from config/promotion-platform-network.json are queued before generic social discovery so XHS, WeChat, ticketing, and official account routes are checked first.",
       "New-event discovery uses complementary gates: event/source keyword fit plus tracked techno-related DJ profile and alias signals, so generic event pages can still enter the Watch queue when the lineup points to techno, hard techno, acid, industrial, EBM, electro, trance, rave, warehouse, hard dance, bass/club crossover, breaks, jungle, UKG, or experimental electronic context.",
       "X keyword searches are discovery-only social leads and never promote an event into the calendar without confirmation from a stronger source.",
       "Known anti-bot or app-only sources are queued for agent-operated Chrome + Computer Use collection instead of being scraped with plain fetch.",
+      "HTTP fetching uses a descriptive scraper user agent, robots checks, per-host pacing, retry-after/backoff, and a short local cache to avoid repeated requests during development.",
+      "Do not use proxy rotation, CAPTCHA solving, or challenge-bypass services; record antiBotReason/access fields and collect those facts through a visible, user-operated browser when allowed.",
       "Resident Advisor HTTP or headless-browser challenges are recorded as browser-required; do not treat challenge pages as empty listings.",
-      "RA Shanghai coverage completeness is audited against config/ra-shanghai-coverage.json and written to quality.raShanghaiCoverage.",
       "Computer Use collection must follow second-layer links and image/poster text to capture time, venue, lineup, poster evidence, artist introductions, future tour dates, and ticketing status.",
       "DJ itinerary overlays are regenerated from source-backed futureTourPlan fields while preserving curated worldwide overlays in data/tracked-dj-itineraries.js.",
     ],

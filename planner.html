@@ -29,6 +29,7 @@
     };
   </script>
   <script defer src="/_vercel/insights/script.js"></script>
+  <script defer src="assets/poster-protection.js?v=poster-protection-20260620"></script>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Shanghai Rave Index">
   <meta property="og:title" content="Shanghai Rave Index DJ Set-Time Planner">
@@ -716,7 +717,7 @@
         </div>
       </section>
       <figure class="hero-picture" aria-label="Basement Dispatch planning poster visual">
-        <img src="assets/posters/synth-crush-optimized.jpg" alt="Synth Crush poster detail">
+        <img src="assets/posters/synth-crush-optimized.jpg" alt="Synth Crush poster detail" loading="eager" decoding="async" fetchpriority="high">
         <figcaption>Planning tool / not official running order artwork</figcaption>
       </figure>
     </header>
@@ -878,6 +879,7 @@
     };
     const itineraryStorageKey = "shanghai-rave-calendar-itinerary-v1";
     let itinerarySlotKeys = new Set(loadItinerarySlotKeys());
+    let visibleSlotRowsByKey = new Map();
 
     const controls = {
       search: document.getElementById("searchInput"),
@@ -1309,6 +1311,8 @@
 
     function renderPlanner() {
       const rows = filteredRows();
+      const visibleRows = rows.slice(0, 160);
+      visibleSlotRowsByKey = new Map(visibleRows.map(row => [row.key, row]));
       renderStats(rows);
       resultCount.textContent = `${rows.length} shown`;
       if (filterSummary) {
@@ -1317,11 +1321,12 @@
         filterSummary.textContent = `${rows.length} rows / ${exact} exact / ${estimated} estimated / ${dateWindowLabels[dateWindow] || "current view"}`;
       }
       if (!rows.length) {
+        visibleSlotRowsByKey = new Map();
         slotList.innerHTML = `<div class="empty-state">No set-time rows match the current filters.</div>`;
         renderWatchList([]);
         return;
       }
-      slotList.innerHTML = rows.slice(0, 160).map(row => {
+      slotList.innerHTML = visibleRows.map(row => {
         const selected = itinerarySlotKeys.has(row.key);
         return `
           <article class="slot-row ${selected ? "selected" : ""}">
@@ -1341,10 +1346,6 @@
           </article>
         `;
       }).join("");
-      slotList.querySelectorAll("[data-slot-key]").forEach(button => {
-        const row = rows.find(item => item.key === button.dataset.slotKey);
-        if (row) button.addEventListener("click", () => toggleItinerarySlot(row.event, row.slot));
-      });
       renderWatchList(rows);
     }
 
@@ -1385,9 +1386,6 @@
           <button class="remove-button" type="button" data-remove-slot="${escapeHtml(row.key)}">Remove</button>
         </article>
       `).join("");
-      selectedItinerary.querySelectorAll("[data-remove-slot]").forEach(button => {
-        button.addEventListener("click", () => removeItinerarySlot(button.dataset.removeSlot));
-      });
     }
 
     function formatIcsLocal(date) {
@@ -1603,6 +1601,17 @@
           document.querySelectorAll("[data-window]").forEach(item => item.classList.toggle("active", item === button));
           renderPlanner();
         });
+      });
+      slotList.addEventListener("click", event => {
+        const button = event.target.closest("[data-slot-key]");
+        if (!button || !slotList.contains(button)) return;
+        const row = visibleSlotRowsByKey.get(button.dataset.slotKey);
+        if (row) toggleItinerarySlot(row.event, row.slot);
+      });
+      selectedItinerary.addEventListener("click", event => {
+        const button = event.target.closest("[data-remove-slot]");
+        if (!button || !selectedItinerary.contains(button)) return;
+        removeItinerarySlot(button.dataset.removeSlot);
       });
       downloadItineraryIcs.addEventListener("click", downloadSelectedItineraryIcs);
       exportItineraryImageButton.addEventListener("click", exportItineraryImage);

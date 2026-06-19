@@ -1699,7 +1699,10 @@
 // --- Anti-Download Protections ---
 if (typeof document !== "undefined") {
   document.addEventListener("contextmenu", function(e) {
-    if (e.target && e.target.tagName === "IMG") {
+    const target = e.target;
+    const image = target && target.closest && target.closest("img");
+    const src = image ? image.getAttribute("src") || image.currentSrc || "" : "";
+    if (image && (image.dataset.posterProtected === "true" || /(?:^|\/)assets\/posters\//i.test(src))) {
       e.preventDefault();
     }
   });

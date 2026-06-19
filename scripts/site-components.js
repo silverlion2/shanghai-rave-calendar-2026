@@ -3,7 +3,8 @@ const {
   rootThemeHref,
 } = require("./site-structure");
 
-const THEME_STYLESHEET_VERSION = "xhs-contact-20260613c";
+const THEME_STYLESHEET_VERSION = "poster-protection-20260620";
+const POSTER_PROTECTION_VERSION = "poster-protection-20260620";
 
 function renderHtmlDocument({ head, body }) {
   return `<!doctype html>
@@ -46,6 +47,7 @@ function renderSeoHead(structure, {
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 ${renderGoogleTag(structure.site.googleTagId)}
 ${renderVercelAnalytics()}
+  <script defer src="${escapeAttr(assetPrefix)}assets/poster-protection.js?v=${POSTER_PROTECTION_VERSION}"></script>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="${escapeAttr(structure.site.name)}">
   <meta property="og:title" content="${escapeAttr(ogTitle)}">

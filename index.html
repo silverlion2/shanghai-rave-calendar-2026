@@ -29,6 +29,7 @@
     };
   </script>
   <script defer src="/_vercel/insights/script.js"></script>
+  <script defer src="assets/poster-protection.js?v=poster-protection-20260620"></script>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Shanghai Rave Index">
   <meta property="og:title" content="Shanghai Rave Index">
@@ -5133,9 +5134,6 @@
           }).join("")}
         </div>
       `;
-      homePosterRail.querySelectorAll(".poster-strip-card").forEach(card => {
-        card.addEventListener("click", () => openModal(events.find(event => event.id === card.dataset.id)));
-      });
     }
 
     function highlightStartMinutes(event) {
@@ -5195,15 +5193,6 @@
           }).join("")}
         </div>
       `;
-      highlightWall.querySelectorAll(".highlight-card").forEach(card => {
-        card.addEventListener("click", () => openModal(events.find(event => event.id === card.dataset.id)));
-      });
-      const viewAll = highlightWall.querySelector(".highlight-view-all");
-      if (viewAll) {
-        viewAll.addEventListener("click", () => {
-          window.location.href = "poster-wall.html";
-        });
-      }
     }
 
     function openModal(event) {
@@ -5290,9 +5279,6 @@
           }).join("")}
         </div>
       `;
-      routeCard.querySelectorAll(".route-pick").forEach(button => {
-        button.addEventListener("click", () => openModal(events.find(event => event.id === button.dataset.id)));
-      });
     }
 
     function eventWindowLabel(event) {
@@ -5772,6 +5758,32 @@
           renderRoute(button.dataset.route);
         });
       });
+      if (homePosterRail) {
+        homePosterRail.addEventListener("click", event => {
+          const card = event.target.closest(".poster-strip-card");
+          if (!card || !homePosterRail.contains(card)) return;
+          openModal(events.find(item => item.id === card.dataset.id));
+        });
+      }
+      if (highlightWall) {
+        highlightWall.addEventListener("click", event => {
+          const viewAll = event.target.closest(".highlight-view-all");
+          if (viewAll && highlightWall.contains(viewAll)) {
+            window.location.href = "poster-wall.html";
+            return;
+          }
+          const card = event.target.closest(".highlight-card");
+          if (!card || !highlightWall.contains(card)) return;
+          openModal(events.find(item => item.id === card.dataset.id));
+        });
+      }
+      if (routeCard) {
+        routeCard.addEventListener("click", event => {
+          const button = event.target.closest(".route-pick");
+          if (!button || !routeCard.contains(button)) return;
+          openModal(events.find(item => item.id === button.dataset.id));
+        });
+      }
     }
 
     function drawSignal() {

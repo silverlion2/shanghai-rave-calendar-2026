@@ -15,6 +15,7 @@ const DEFAULTS = {
   quality: 78,
   skipUnderBytes: 120 * 1024,
   minSavingPercent: 3,
+  concurrency: 3,
 };
 
 main().catch(error => {
@@ -31,10 +32,11 @@ async function main() {
     return;
   }
 
-  const results = [];
-  for (const sourcePath of posterFiles) {
-    results.push(await optimizePoster(sourcePath, options));
-  }
+  const results = await runLimited(
+    posterFiles,
+    options.concurrency,
+    sourcePath => optimizePoster(sourcePath, options),
+  );
 
   printSummary(results, options);
 
@@ -59,6 +61,7 @@ function parseArgs(args) {
     quality: readPositiveInt(process.env.POSTER_JPEG_QUALITY, DEFAULTS.quality),
     skipUnderBytes: readPositiveInt(process.env.POSTER_SKIP_UNDER_BYTES, DEFAULTS.skipUnderBytes),
     minSavingPercent: readPositiveInt(process.env.POSTER_MIN_SAVING_PERCENT, DEFAULTS.minSavingPercent),
+    concurrency: readPositiveInt(process.env.POSTER_OPTIMIZE_CONCURRENCY, DEFAULTS.concurrency),
   };
 
   for (let index = 0; index < args.length; index += 1) {
@@ -75,6 +78,10 @@ function parseArgs(args) {
       index += 1;
       if (!args[index]) throw new Error(`${arg} requires a path`);
       options.inputs.push(args[index]);
+    } else if (arg === "--concurrency") {
+      index += 1;
+      if (!args[index]) throw new Error("--concurrency requires a positive integer");
+      options.concurrency = readPositiveInt(args[index], options.concurrency);
     } else if (arg.startsWith("--input=") || arg.startsWith("--file=")) {
       options.inputs.push(arg.slice(arg.indexOf("=") + 1));
     } else if (arg.startsWith("--max-width=")) {
@@ -85,6 +92,8 @@ function parseArgs(args) {
       options.quality = readPositiveInt(arg.slice("--quality=".length), options.quality);
     } else if (arg.startsWith("--skip-under-bytes=")) {
       options.skipUnderBytes = readPositiveInt(arg.slice("--skip-under-bytes=".length), options.skipUnderBytes);
+    } else if (arg.startsWith("--concurrency=")) {
+      options.concurrency = readPositiveInt(arg.slice("--concurrency=".length), options.concurrency);
     } else {
       options.inputs.push(arg);
     }
@@ -112,6 +121,7 @@ Options:
   --max-height=<px>         Default: ${DEFAULTS.maxHeight}
   --quality=<1-100>         Default: ${DEFAULTS.quality}
   --skip-under-bytes=<n>    Default: ${DEFAULTS.skipUnderBytes}
+  --concurrency=<n>         Parallel poster jobs. Default: ${DEFAULTS.concurrency}
 `);
 }
 
@@ -130,6 +140,22 @@ function findPosterFiles(inputs) {
   return walk(POSTERS_DIR)
     .filter(isPosterSource)
     .sort((a, b) => relative(a).localeCompare(relative(b)));
+}
+
+async function runLimited(items, limit, worker) {
+  const safeLimit = Math.max(1, Math.min(Number(limit) || 1, items.length));
+  const results = new Array(items.length);
+  let nextIndex = 0;
+
+  await Promise.all(Array.from({ length: safeLimit }, async () => {
+    while (nextIndex < items.length) {
+      const currentIndex = nextIndex;
+      nextIndex += 1;
+      results[currentIndex] = await worker(items[currentIndex], currentIndex);
+    }
+  }));
+
+  return results;
 }
 
 function resolvePosterInput(input) {
