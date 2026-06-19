@@ -1799,3 +1799,47 @@ Working tree caution:
 
 - This work originated locally on `codex/update-tonight-events` and is being merged into `main` with the rest of the pending branch work.
 - Scratch scrape captures and temporary helper scripts were kept out of the committed project files.
+
+## 2026-06-19 Shanghai Source Sweep Refresh
+
+Ran the source-sweep-first workflow again with `SCRAPE_NOW=2026-06-19T12:00:00+08:00`, `SCRAPE_FETCH_TIMEOUT_MS=12000`, `SCRAPE_X_FETCH_TIMEOUT_MS=6000`, and `SCRAPE_MAX_DETAIL_PAGES=24`.
+
+What changed:
+
+- Canonical event data expanded from 112 to 117 rows.
+- Five SmartShanghai-backed watch rows entered the active set: `2026-06-19-italo-disco-shanghai-s-italian-roofto`, `2026-06-19-vibes-up-party-reggae-dancehall-hip-h`, `2026-06-20-nova-events-presents-sundown-char-bar`, `2026-06-21-house-of-zup-house-disco-hip-hop`, and `2026-06-27-white-party-shanghai-s-all-white-roof`.
+- Three older recurring/no-date variants left the active set in favor of the new dated IDs: `italo-disco-skyline-dome`, `house-of-zup-2026-06-21`, and `white-party-skyline-dome`.
+- `trackedDjProfiles` did not gain new source-backed names in this pass; the movement was event refresh, not DJ-signal expansion.
+- `data/poster-archive.json`, `events/*.html`, and `sitemap.xml` were regenerated from the refreshed canonical data.
+
+Current post-sweep metrics:
+
+- `events`: 117
+- `future`: 49
+- `futureWatch`: 20
+- `futureCoreFieldQueue`: 41
+- `futureMissingCoreFields`: 109
+- `platformVerificationQueue`: 3
+- `trackedDjProfiles`: 175
+- `curatedDjSourceProfiles`: 171
+- `technoArtistSignals`: 184
+- `technoArtistSignalProfiles`: 137
+
+Validation state:
+
+- `node --test tests/trust-framework.test.js`: passed.
+- `node scripts/check.js`: passed.
+- `node scripts/audit-events.js`: still fails on stale `lastChecked` debt across many current/future rows and supporting poster/social/profile sources.
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json`: still reports long-running publish debt, mainly missing event `source` URLs and `/_vercel/insights/script.js` local-link findings.
+
+Highest-signal next manual targets remain `jasmin-knopha`, `anika-kunst`, `truth-lies`, and `youshan-warmup`, with platform-native XHS / WeChat / Yuyuan verification still needed for usable ticket/core-field upgrades.
+
+## 2026-06-19 Friday Xiaohongshu Weekend Screenshot Carousel
+
+Generated the Friday Xiaohongshu style guide in `assets/social/xhs-posts/2026-06-19-friday-style-guide/`.
+
+- Added HUSH Three-Year Anniversary w/DJ David to curated/database as a low-techno-fit hip-hop/edits social route.
+- Localized SmartShanghai event images for Italo Disco and Vibes Up, and corrected their visible times from the event pages.
+- Regenerated `data/events.json`, DJ data, SEO event pages, poster archive, and sitemap.
+- Output cards: `01-cover.png` through `08-calendar-site.png`, plus `contact-sheet.png`, `publish-copy.txt`, and `publish-kit.md`.
+- Final page uses the mobile website Calendar with the `Weekend` filter screenshot so it shows a fuller Fri/Sat/Sun weekend view instead of only tonight.

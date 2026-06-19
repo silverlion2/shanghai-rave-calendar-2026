@@ -171,6 +171,57 @@ function imageHref(file) {
   return `data:${mime};base64,${fs.readFileSync(file).toString("base64")}`;
 }
 
+function posterGhost(id, x, y, w, h, idx, opacity = 0.12, rotate = 0) {
+  const p = posterPath(id);
+  if (!p) return "";
+  const clip = `ghost-${id}-${idx}`;
+  return `
+  <g opacity="${opacity}" transform="rotate(${rotate} ${x + w / 2} ${y + h / 2})">
+    <clipPath id="${clip}"><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="2"/></clipPath>
+    <image x="${x}" y="${y}" width="${w}" height="${h}" href="${imageHref(p)}" preserveAspectRatio="xMidYMid slice" clip-path="url(#${clip})"/>
+    <rect x="${x}" y="${y}" width="${w}" height="${h}" fill="none" stroke="#f5ead8" stroke-width="2" stroke-opacity=".45"/>
+  </g>`;
+}
+
+function eventPosterMaterial(ids = []) {
+  if (!ids.length) return "";
+  const cover = ids.length > 3;
+  const layouts = cover
+    ? [
+        [-78, 486, 246, 344, -12, 0.16],
+        [826, 278, 244, 342, 9, 0.12],
+        [344, 610, 184, 260, -5, 0.09],
+        [906, 892, 214, 300, -9, 0.13],
+        [586, 112, 176, 238, 7, 0.08],
+        [156, 1112, 210, 286, -8, 0.11],
+      ]
+    : [
+        [-84, 346, 274, 382, -10, 0.15],
+        [858, 650, 268, 374, 8, 0.13],
+        [326, 1122, 206, 284, -7, 0.1],
+      ];
+  const ghosts = layouts
+    .map(([x, y, w, h, rotate, opacity], i) =>
+      posterGhost(ids[i % ids.length], x, y, w, h, `material-${i}`, opacity, rotate),
+    )
+    .join("\n");
+  const stamps = ids
+    .slice(0, cover ? 5 : 2)
+    .map((id, i) => {
+      const c = copy[id];
+      const y = cover ? 250 + i * 78 : 520 + i * 148;
+      const x = cover ? 620 : 616;
+      return `<text x="${x}" y="${y}" font-family="Impact, Arial Black, Microsoft YaHei, sans-serif" font-size="${cover ? 48 : 58}" font-weight="900" fill="#f5ead8" opacity=".055" transform="rotate(-4 ${x} ${y})">${esc(c.name.toUpperCase())}</text>`;
+    })
+    .join("\n");
+  return `
+  <g>
+    ${ghosts}
+    ${stamps}
+    <rect x="0" y="0" width="${W}" height="${H}" fill="#070806" opacity="${cover ? ".26" : ".32"}"/>
+  </g>`;
+}
+
 function defs() {
   return `
   <defs>
@@ -184,15 +235,82 @@ function defs() {
         <feFuncA type="table" tableValues="0 .18"/>
       </feComponentTransfer>
     </filter>
+    <pattern id="microdots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.6" fill="#f5ead8" opacity=".18"/>
+    </pattern>
+    <pattern id="warning-stripe" width="28" height="28" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="11" height="28" fill="#f2c84b" opacity=".72"/>
+    </pattern>
   </defs>`;
 }
 
-function background() {
+function materialLayer() {
+  const holes = Array.from({ length: 9 }, (_, i) => {
+    const y = 790 + i * 58;
+    return `<circle cx="26" cy="${y}" r="13" fill="#070806" stroke="#f5ead8" stroke-opacity=".54" stroke-width="3"/>`;
+  }).join("\n");
+  const crosshairs = [
+    [200, 250],
+    [968, 196],
+    [170, 1118],
+    [902, 1208],
+    [982, 642],
+  ]
+    .map(
+      ([x, y]) => `
+      <path d="M${x - 18} ${y}H${x + 18}M${x} ${y - 18}V${y + 18}" stroke="#d93128" stroke-width="2" opacity=".82"/>
+      <circle cx="${x}" cy="${y}" r="4" fill="none" stroke="#d93128" stroke-width="2" opacity=".82"/>`,
+    )
+    .join("\n");
+
+  return `
+  <path d="M0 226 C54 218 70 236 92 264 L58 754 C44 808 60 866 38 918 C24 964 56 1036 32 1088 L0 1128Z" fill="#f5ead8" opacity=".13"/>
+  <path d="M52 0V1440" stroke="#f5ead8" stroke-width="4" stroke-opacity=".18" stroke-dasharray="18 16"/>
+  ${holes}
+
+  <path d="M0 1018 L260 966 L304 1268 L0 1346 Z" fill="#f2c84b" opacity=".13"/>
+  <g opacity=".46">
+    <path d="M18 1168 C72 1132 118 1172 164 1148 S246 1168 302 1134 S416 1164 496 1138 S638 1168 748 1142 S920 1168 1044 1134" fill="none" stroke="#18c6d8" stroke-width="3"/>
+    <path d="M18 1204 C76 1174 126 1212 176 1188 S260 1212 328 1186 S448 1214 516 1192 S650 1212 744 1190 S908 1214 1042 1188" fill="none" stroke="#f5ead8" stroke-width="2" stroke-opacity=".65"/>
+  </g>
+
+  <g opacity=".5">
+    <path d="M100 1034 h220 v118 h-220 z" fill="none" stroke="#18c6d8" stroke-width="2" stroke-dasharray="8 10"/>
+    <path d="M116 1070 h188 M116 1104 h118 M116 1136 h168" stroke="#18c6d8" stroke-width="2" stroke-opacity=".72"/>
+    <text x="116" y="1058" font-family="Impact, Arial Black, sans-serif" font-size="18" fill="#18c6d8" opacity=".8">FREQ / ROOM</text>
+  </g>
+
+  <g opacity=".34">
+    <circle cx="94" cy="662" r="118" fill="none" stroke="#f5ead8" stroke-width="2"/>
+    <circle cx="94" cy="662" r="86" fill="none" stroke="#f5ead8" stroke-width="2" stroke-opacity=".52"/>
+    <circle cx="94" cy="662" r="48" fill="none" stroke="#f5ead8" stroke-width="2" stroke-opacity=".44"/>
+    <circle cx="94" cy="662" r="8" fill="#f5ead8" opacity=".5"/>
+  </g>
+
+  <g opacity=".44">
+    <rect x="842" y="1052" width="188" height="118" fill="#f5ead8" opacity=".14"/>
+    <rect x="864" y="1074" width="52" height="12" fill="#d93128"/>
+    <rect x="864" y="1100" width="132" height="6" fill="#f5ead8" opacity=".54"/>
+    <rect x="864" y="1120" width="100" height="6" fill="#f5ead8" opacity=".42"/>
+    <circle cx="998" cy="1080" r="10" fill="#070806"/>
+  </g>
+
+  <rect x="930" y="514" width="88" height="246" fill="url(#warning-stripe)" opacity=".28"/>
+  <rect x="702" y="84" width="86" height="86" fill="url(#microdots)" opacity=".65" transform="rotate(7 745 127)"/>
+  <rect x="792" y="1220" width="148" height="28" fill="#f5ead8" opacity=".22" transform="rotate(-11 866 1234)"/>
+  <rect x="142" y="980" width="126" height="28" fill="#d93128" opacity=".68" transform="rotate(-14 205 994)"/>
+  ${crosshairs}
+  `;
+}
+
+function background(materialIds = []) {
   return `
   ${defs()}
   <rect width="${W}" height="${H}" fill="#070806"/>
   <rect width="${W}" height="${H}" fill="url(#grid)"/>
   <rect width="${W}" height="${H}" filter="url(#paper)" opacity=".52"/>
+  ${materialLayer()}
+  ${eventPosterMaterial(materialIds)}
   <path d="M0 0H326L274 86L356 148L0 236Z" fill="#d93128" opacity=".76"/>
   <path d="M1080 1202V1440H794L880 1340L808 1284Z" fill="#d93128" opacity=".58"/>
   <rect x="0" y="0" width="${W}" height="${H}" fill="none" stroke="#f5ead8" stroke-opacity=".075" stroke-width="18"/>
@@ -222,7 +340,7 @@ function posterTile(id, x, y, w, h, idx, label = true) {
     return `
     <rect x="${x}" y="${y}" width="${w}" height="${h}" fill="#10110f" stroke="#f5ead8" stroke-opacity=".8" stroke-width="2"/>
     <path d="M${x + 18} ${y + 18}H${x + w - 18}V${y + h - 18}H${x + 18}Z" fill="none" stroke="#18c6d8" stroke-width="3" stroke-dasharray="10 12"/>
-    ${textBlock("NO POSTER", x + w / 2, y + h / 2 - 24, { size: 28, anchor: "middle", maxUnits: 10 })}
+    ${textBlock("TEXT TILE", x + w / 2, y + h / 2 - 24, { size: 28, anchor: "middle", maxUnits: 10 })}
     ${textBlock(c.name, x + w / 2, y + h / 2 + 26, { size: 28, color: "#f2c84b", anchor: "middle", maxUnits: 9, maxLines: 2, lineHeight: 34 })}`;
   }
   return `
@@ -233,8 +351,8 @@ function posterTile(id, x, y, w, h, idx, label = true) {
   ${textBlock(c.name, x + 14, y + h - 31, { size: 22, maxUnits: 11, maxLines: 2, lineHeight: 25 })}` : ""}`;
 }
 
-function svgFrame(inner) {
-  return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">${background()}${brand()}${inner}${footer()}</svg>`;
+function svgFrame(inner, materialIds = []) {
+  return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">${background(materialIds)}${brand()}${inner}${footer()}</svg>`;
 }
 
 function coverSvg() {
@@ -264,7 +382,7 @@ function coverSvg() {
     const y = 748 + Math.floor(i / 4) * 282;
     s += posterTile(id, x, y, 214, 254, i, true);
   });
-  return svgFrame(s);
+  return svgFrame(s, ids);
 }
 
 function eventPanel(id, x, y, w, h, accent, idx) {
@@ -289,7 +407,7 @@ function styleSvg(card) {
   s += `<path d="M76 338H990" stroke="${card.color}" stroke-width="8"/>`;
   s += eventPanel(card.events[0], 70, 408, 940, 398, card.color, 1);
   s += eventPanel(card.events[1], 70, 848, 940, 398, card.title === "HOUSE / GROOVE" ? "#18c6d8" : "#f2c84b", 2);
-  return svgFrame(s);
+  return svgFrame(s, card.events);
 }
 
 async function renderSvg(svg, file) {

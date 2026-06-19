@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T06:53:41.866Z",
+  "generatedAt": "2026-06-19T08:42:02.389Z",
   "sourceData": "data/events.json",
   "storagePolicy": {
     "mode": "static-json-plus-local-optimized-assets",
@@ -7,16 +7,16 @@
     "rule": "Use optimized display assets in the wall; keep raw poster files out of the default browsing path when the archive grows."
   },
   "stats": {
-    "posters": 77,
+    "posters": 80,
     "years": [
       2026
     ],
-    "venues": 36,
-    "optimizedCount": 74,
-    "displayBytes": 13663594,
-    "sourceBytes": 44410278,
-    "displayMegabytes": 13.03,
-    "sourceMegabytes": 42.35,
+    "venues": 39,
+    "optimizedCount": 77,
+    "displayBytes": 14111130,
+    "sourceBytes": 47141315,
+    "displayMegabytes": 13.46,
+    "sourceMegabytes": 44.96,
     "freeTierSoftCapBytes": 83886080,
     "freeTierSoftCapMegabytes": 80
   },
@@ -1406,6 +1406,97 @@
       "notes": "Abyss Friday booking for FaQ Pres. KIRK with Kirk, Shukai, Fischmonger, SHU, PASHRAWBOI, and Headrush b2b Nitta. The Yuyuan ticketing screenshot confirms the 22:00 start, Abyss club venue, 110 RMB+ ticket tier, e-ticket state, and no-refund label."
     },
     {
+      "id": "shanghai-2026-hush-three-year-anniversary-dj-david-2026-06-19",
+      "eventId": "hush-three-year-anniversary-dj-david-2026-06-19",
+      "title": "Hush Three-Year Anniversary w/DJ David",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 19",
+      "sortDate": "2026-06-19",
+      "time": "22:00-05:00",
+      "venue": "Hush (INS)",
+      "district": "Huangpu",
+      "sound": "trap, rage, hip hop, edits",
+      "tags": [
+        "watch",
+        "huangpu",
+        "hip-hop",
+        "social",
+        "trap",
+        "rage",
+        "hip hop",
+        "edits"
+      ],
+      "status": "watch",
+      "confidence": "Watch",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "SmartShanghai",
+        "url": "https://www.smartshanghai.com/event/hush-three-year-anniversary-w-dj-david-trap-rage-hip-hop-2026-06-19",
+        "posterEvidenceUrl": "https://images.smartshanghai.com.cn/uploads/repository/2026/06/16/fbc757ba-062a-4a40-98e6-e47e81b1a978.jpg",
+        "posterEvidenceSource": "SmartShanghai event page JSON-LD image",
+        "posterEvidenceStatus": "SmartShanghai exposes an event image for the June 19 HUSH listing; it appears to be an artist image rather than a dedicated event flyer."
+      },
+      "image": {
+        "thumbnail": "assets/posters/hush-three-year-anniversary-2026-06-19-optimized.jpg",
+        "display": "assets/posters/hush-three-year-anniversary-2026-06-19-optimized.jpg",
+        "sourceAsset": "assets/posters/hush-three-year-anniversary-2026-06-19.jpg",
+        "displayBytes": 29950,
+        "sourceBytes": 37374,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/hush-three-year-anniversary-dj-david-2026-06-19.html",
+      "notes": "Public event listing from SmartShanghai."
+    },
+    {
+      "id": "shanghai-2026-2026-06-19-italo-disco-shanghai-s-italian-roofto",
+      "eventId": "2026-06-19-italo-disco-shanghai-s-italian-roofto",
+      "title": "Italo Disco | Shanghai's Italian Rooftop Disco Experience",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 19",
+      "sortDate": "2026-06-19",
+      "time": "21:30-late",
+      "venue": "Skyline Dome | Sushi Rooftop & Lounge",
+      "district": "Huangpu",
+      "sound": "Italo disco, nu disco, uplifting house, rooftop social",
+      "tags": [
+        "watch",
+        "huangpu",
+        "date",
+        "rooftop",
+        "house",
+        "italo disco",
+        "nu disco",
+        "uplifting house",
+        "rooftop social"
+      ],
+      "status": "watch",
+      "confidence": "Watch",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "SmartShanghai",
+        "url": "https://www.smartshanghai.com/event/italo-disco-shanghai-s-italian-rooftop-disco-experience",
+        "posterEvidenceUrl": "https://images.smartshanghai.com.cn/uploads/repository/2026/06/18/b37f7365-1752-4f15-9692-1f29db64ed7a.jpg",
+        "posterEvidenceSource": "SmartShanghai event page JSON-LD image",
+        "posterEvidenceStatus": "SmartShanghai event page exposes this Italo Disco image for the recurring Friday listing."
+      },
+      "image": {
+        "thumbnail": "assets/posters/italo-disco-skyline-dome-2026-06-19-optimized.jpg",
+        "display": "assets/posters/italo-disco-skyline-dome-2026-06-19-optimized.jpg",
+        "sourceAsset": "assets/posters/italo-disco-skyline-dome-2026-06-19.jpg",
+        "displayBytes": 263618,
+        "sourceBytes": 597558,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/2026-06-19-italo-disco-shanghai-s-italian-roofto.html",
+      "notes": "Public event listing from SmartShanghai."
+    },
+    {
       "id": "shanghai-2026-mrd",
       "eventId": "mrd",
       "title": "MRD x TURBO",
@@ -1623,6 +1714,52 @@
       },
       "eventUrl": "events/oscar-l-mim-club.html",
       "notes": "西班牙知名DJ/制作人Oscar L登陆上海MiM CLUB。曾在Tomorrowland与Drumcode Festival等多个全球知名音乐节演出，作品发行于Drumcode和Stereo Production等顶级厂牌。"
+    },
+    {
+      "id": "shanghai-2026-2026-06-19-vibes-up-party-reggae-dancehall-hip-h",
+      "eventId": "2026-06-19-vibes-up-party-reggae-dancehall-hip-h",
+      "title": "Vibes Up Party (Reggae, Dancehall, Hip Hop)",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 19",
+      "sortDate": "2026-06-19",
+      "time": "22:00-04:00",
+      "venue": "C's",
+      "district": "Changning",
+      "sound": "reggae, dancehall, hip hop, basement party",
+      "tags": [
+        "watch",
+        "changning",
+        "bass",
+        "social",
+        "underground",
+        "reggae",
+        "dancehall",
+        "hip hop",
+        "basement party"
+      ],
+      "status": "watch",
+      "confidence": "Watch",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "SmartShanghai",
+        "url": "https://www.smartshanghai.com/event/vibes-up-party-reggae-dancehall-hip-hop-2026-06-19",
+        "posterEvidenceUrl": "https://images.smartshanghai.com.cn/uploads/repository/2026/06/17/8c0151e2-c1e6-454f-ac07-a06362f45a86.png",
+        "posterEvidenceSource": "SmartShanghai event page JSON-LD image",
+        "posterEvidenceStatus": "SmartShanghai event page exposes this Vibes Up Party image for the June 19 listing."
+      },
+      "image": {
+        "thumbnail": "assets/posters/vibes-up-party-cs-2026-06-19-optimized.jpg",
+        "display": "assets/posters/vibes-up-party-cs-2026-06-19-optimized.jpg",
+        "sourceAsset": "assets/posters/vibes-up-party-cs-2026-06-19.png",
+        "displayBytes": 153968,
+        "sourceBytes": 2096105,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/2026-06-19-vibes-up-party-reggae-dancehall-hip-h.html",
+      "notes": "Public event listing from SmartShanghai."
     },
     {
       "id": "shanghai-2026-wigwam-weekly-listening-wheon",
