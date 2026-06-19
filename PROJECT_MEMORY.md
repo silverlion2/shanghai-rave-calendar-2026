@@ -1722,3 +1722,36 @@ Push state:
 - Commit pushed to `origin/main`: `45288dc Enhance Sound Buddy indicators`.
 - Sound Buddy/history scope in that commit: `PROJECT_MEMORY.md`, `assets/sound-buddy.js`, `assets/sound-buddy-models/`, `sound-buddy.html`, and `tests/sound-buddy.test.js`.
 - Unrelated dirty event/data/poster/generated-page files remained local and were not included in the push.
+
+## 2026-06-19 Automatic Event Status Labels and GitHub Refresh
+
+The user asked whether the site could automatically label current and past events, then clarified they did not want to push every day and wanted GitHub to handle it directly.
+
+Implemented state:
+
+- Removed stale hard-coded `data-current-date="2026-06-13"` attributes from public status-aware pages.
+- Added Shanghai-time status derivation on the homepage/archive calendar, poster wall, account recommendations, live-room pages, and generated event detail pages.
+- Events now compute temporal state from `sortDate` and a next-day `06:00` Asia/Shanghai archive cutoff: `current` for today/overnight active rows, `past` after cutoff or explicit past rows, and `upcoming` for future rows.
+- Watchlist remains an editorial/source-confidence state layered over temporal state, so active watch rows can display as `CURRENT WATCH` without being treated as confirmed public events.
+- Added current/status filter behavior for the calendar and poster wall; poster wall now defaults to active `Current + upcoming events`.
+- Updated generated SEO event detail pages with `data-event-detail` attributes and a small browser-side status script so detail-page labels update on load.
+- Added `.github/workflows/refresh-event-status.yml` to run daily at `06:10` Asia/Shanghai, regenerate static event pages and `sitemap.xml`, validate status/trust surfaces, and commit only generated status refresh changes.
+- Updated the workflow to Node 24 and current official actions: `actions/checkout@v7.0.0` and `actions/setup-node@v6.4.0`.
+
+Validation:
+
+- `npm run seo` passed and generated 112 event detail pages from current `main` data.
+- `node --test tests/poster-wall-filters.test.js tests/trust-framework.test.js` passed.
+- `node --test tests/account-system.test.js tests/event-cross-links.test.js tests/home-highlights.test.js tests/live-room-realtime.test.js tests/live-room-page.test.js` passed.
+- `node scripts/check-site-structure.js` passed.
+- `node scripts/check.js` passed local link integrity and inline script syntax on the clean publish branch.
+- Live custom-domain smoke checks passed for `https://raveindexsh.top/` and `https://raveindexsh.top/events/health-maxxing-reactor-2026-06-19`.
+- Manual GitHub Actions workflow run passed cleanly: `https://github.com/silverlion2/shanghai-rave-calendar-2026/actions/runs/27809396449`.
+
+Push/deploy state:
+
+- `f5c9232 Automate event status labels` pushed to `origin/main`.
+- `a6c259e Use Node 24 for status refresh workflow` pushed to `origin/main`.
+- `1b147ce Update status refresh workflow actions` pushed to `origin/main`.
+- Vercel production deployment was `READY` for commit `1b147ce`, with production aliases including `raveindexsh.top`, `www.raveindexsh.top`, and `shanghai-rave-calendar-2026.vercel.app`.
+- The implementation was published from a separate clean worktree at `D:\workspace\rave-calendar-auto-status-main` to avoid unrelated dirty/conflicted files in the active local workspace.
