@@ -4,6 +4,9 @@
 .tmp/
 output/
 node_modules/
+.local-model-cache/
+_*.html
+scripts/_tmp_*.js
 .env
 .env.*
 !.env.example

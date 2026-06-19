@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Shenwave Inc — registered technology studio in Mississauga</title>
+<meta name="description" content="Shenwave is a registered technology studio in Mississauga building AI-assisted workflows, web projects, private digital products, and selected client work." />
+
+<link rel="canonical" href="https://shenwave.com/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://shenwave.com/" />
+<meta property="og:title" content="Shenwave Inc — registered technology studio in Mississauga" />
+<meta property="og:description" content="A registered technology studio building AI-assisted workflows, web projects, private digital products, and selected client work." />
+<meta property="og:image" content="https://shenwave.com/assets/og.png" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Shenwave Inc — registered technology studio in Mississauga" />
+<meta name="twitter:description" content="A registered technology studio building AI-assisted workflows, web projects, and private digital products." />
+
+<!-- Fonts (Instrument Serif + IBM Plex Mono, both free, both Google Fonts) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" href="/assets/css/main.css?v=20260501" />
+
+<!-- Structured data: Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Shenwave",
+  "legalName": "1001262597 Ontario Inc.",
+  "alternateName": "Shenwave Inc",
+  "url": "https://shenwave.com",
+  "email": "hello@shenwave.com",
+  "telephone": "+1-647-885-3470",
+  "foundingDate": "2025-06-16",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Mississauga",
+    "addressRegion": "ON",
+    "addressCountry": "CA"
+  },
+  "naics": "54151",
+  "identifier": [
+    { "@type": "PropertyValue", "name": "Ontario Corporation Number", "value": "1001262597" }
+  ],
+  "sameAs": []
+}
+</script>
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MPYDC7BWWE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MPYDC7BWWE');
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container topbar__inner">
+    <a href="/" class="brand"><span class="brand__mark"></span>Shenwave</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/" aria-current="page">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/projects.html">Projects</a>
+      <a href="/services.html">Services</a>
+      <a href="/mississauga-web-agency.html">Mississauga</a>
+    </nav>
+    <a href="/contact.html" class="nav__cta">Contact Shenwave</a>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__grid">
+      <div class="hero__copy">
+        <div class="hero__row">
+          <span>Registered in Ontario · based in Mississauga</span>
+          <span class="sep"></span>
+          <span>Technology studio</span>
+        </div>
+
+        <h1 class="h-display">
+          A Mississauga technology studio building private products, AI-assisted workflows, and selected web projects.
+        </h1>
+
+        <p class="hero__lead lead">
+          Shenwave supports ongoing product work, internal experiments, and focused client projects where small, practical technology work can move something forward.
+        </p>
+
+        <div class="hero__actions">
+          <a href="/projects.html" class="btn btn--ink">View active work</a>
+          <a href="/about.html" class="btn btn--light">Company details</a>
+        </div>
+
+        <div class="hero__proof" aria-label="Common engagement formats">
+          <div><strong>Ontario</strong><span>Registered trade name</span></div>
+          <div><strong>Active</strong><span>Product and client work</span></div>
+          <div><strong>Selective</strong><span>Web, AI, and prototype projects</span></div>
+        </div>
+      </div>
+
+      <aside class="hero-panel" aria-label="Studio activity summary">
+        <div class="hero-panel__top">
+          <span>Studio activity</span>
+          <strong>Active technology work</strong>
+        </div>
+        <div class="delivery-map">
+          <div class="delivery-step is-active">
+            <span>01</span>
+            <div>
+              <h3>Private AI platform work</h3>
+              <p>Ongoing product and technical work for a private AI platform.</p>
+            </div>
+          </div>
+          <div class="delivery-step">
+            <span>02</span>
+            <div>
+              <h3>Private iOS product experiment</h3>
+              <p>An early-stage mobile product exploring personal moments and lightweight organization.</p>
+            </div>
+          </div>
+          <div class="delivery-step">
+            <span>03</span>
+            <div>
+              <h3>Client and web projects</h3>
+              <p>Selected website, AI workflow, and prototype work for clients and internal experiments.</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-panel__footer">
+          <span>Based in</span>
+          <strong>Mississauga, Ontario</strong>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- STUDIO STATUS -->
+<section class="section section--tight offers-section" id="offers">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="h-2">A real operating studio, with room for selected client work.</h2>
+      <p>The site is built to make Shenwave easy to verify while still making it clear what kind of technology work we can take on.</p>
+    </div>
+  </div>
+
+  <div class="services">
+    <article class="service">
+      <span class="service__num">01 / Company record</span>
+      <h3 class="service__title">Registered Ontario business.</h3>
+      <p class="service__desc">Shenwave is a registered trade name of 1001262597 Ontario Inc., based in Mississauga and operating as a technology studio.</p>
+      <ul class="service__list">
+        <li>Legal entity <span class="badge">Ontario Inc.</span></li>
+        <li>Registered name <span class="badge">Shenwave</span></li>
+        <li>Founder <span class="badge">Yichen Shen</span></li>
+      </ul>
+      <a class="service__link" href="/about.html">See company details</a>
+    </article>
+
+    <article class="service">
+      <span class="service__num">02 / Active work</span>
+      <h3 class="service__title">Product, platform, and web work.</h3>
+      <p class="service__desc">The studio supports private AI platform work, an early iOS product experiment, client website work, and internal AI workflow experiments.</p>
+      <ul class="service__list">
+        <li>Private AI platform <span class="badge">ongoing</span></li>
+        <li>Private iOS product <span class="badge">in dev</span></li>
+        <li>Client website project <span class="badge">active</span></li>
+      </ul>
+      <a class="service__link" href="/projects.html">View projects</a>
+    </article>
+
+    <article class="service">
+      <span class="service__num">03 / Selected services</span>
+      <h3 class="service__title">Available for focused technology projects.</h3>
+      <p class="service__desc">Shenwave can help with AI workflow support, website and launch page builds, and early product prototype support when the scope is clear.</p>
+      <ul class="service__list">
+        <li>AI workflow support <span class="badge">selected</span></li>
+        <li>Website builds <span class="badge">selected</span></li>
+        <li>Prototype support <span class="badge">selected</span></li>
+      </ul>
+      <a class="service__link" href="/services.html">See services</a>
+    </article>
+  </div>
+</section>
+
+<!-- DELIVERY -->
+<section class="section delivery-section">
+  <div class="container">
+    <div class="delivery-grid">
+      <div>
+        <p class="eyebrow"><span class="dot"></span>Operating model</p>
+        <h2 class="h-2" style="margin-top: 24px;">Built for credibility first, leads second.</h2>
+        <p class="lead" style="margin-top: 24px;">
+          Shenwave is not positioned as a broad outsourcing shop. It is a small studio with active commercial and product work, open to focused projects that fit.
+        </p>
+      </div>
+      <div class="outcome-board">
+        <div class="outcome-row">
+          <span>Verify</span>
+          <p>Company identity, legal entity, founder, location, and contact information are easy to find.</p>
+        </div>
+        <div class="outcome-row">
+          <span>Operate</span>
+          <p>Active technology work is described without exposing private clients, contracts, or unreleased products.</p>
+        </div>
+        <div class="outcome-row">
+          <span>Lead</span>
+          <p>Potential clients can still understand where Shenwave can help: AI workflows, websites, and prototypes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="container">
+    <h2 class="h-2">Need to contact Shenwave?</h2>
+    <p class="lead" style="color: rgba(244,239,230,0.7); margin-top: 24px; max-width: 50ch;">
+      For company verification, project inquiries, or general contact, send a short note and we will reply from the studio inbox.
+    </p>
+    <div class="cta-band__row">
+      <a href="/contact.html" class="btn btn--primary">Contact Shenwave</a>
+      <a href="/cdn-cgi/l/email-protection#0c64696060634c7f6469627b6d7a69226f6361" class="btn btn--ghost"><span class="__cf_email__" data-cfemail="bed6dbd2d2d1fecdd6dbd0c9dfc8db90ddd1d3">[email&#160;protected]</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="container">
+    <div class="foot__grid">
+      <div class="foot__col foot__brand-col">
+        <div class="foot__brand">Shenwave</div>
+        <p style="max-width: 34ch; color: var(--ink-2);">Registered technology studio.<br/>Mississauga, Ontario · Canada.</p>
+      </div>
+      <div class="foot__col">
+        <h5>Work</h5>
+        <ul>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/mississauga-web-agency.html">Mississauga Web Agency</a></li>
+        </ul>
+      </div>
+      <div class="foot__col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/cdn-cgi/l/email-protection#c8a0ada4a4a788bba0ada6bfa9beade6aba7a5"><span class="__cf_email__" data-cfemail="046c6168686b44776c616a736572612a676b69">[email&#160;protected]</span></a></li>
+          <li><a href="tel:+16478853470">+1 (647) 885-3470</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__bottom">
+      <span>© 2026 Shenwave — a registered trade name of 1001262597 Ontario Inc.</span>
+      <span>Made in Mississauga, Ontario.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ElevenLabs ConvAI widget — uncomment when agent_id is ready
+<elevenlabs-convai agent-id="YOUR_AGENT_ID"></elevenlabs-convai>
+<script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+-->
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"b55d633327bf431c98cc0772e730a3cd","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

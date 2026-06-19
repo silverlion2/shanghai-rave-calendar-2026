@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T05:06:36.634Z",
+  "generatedAt": "2026-06-18T10:05:11.822Z",
   "sourceData": "data/events.json",
   "storagePolicy": {
     "mode": "static-json-plus-local-optimized-assets",
@@ -7,16 +7,16 @@
     "rule": "Use optimized display assets in the wall; keep raw poster files out of the default browsing path when the archive grows."
   },
   "stats": {
-    "posters": 75,
+    "posters": 76,
     "years": [
       2026
     ],
     "venues": 36,
-    "optimizedCount": 72,
-    "displayBytes": 13299761,
-    "sourceBytes": 41119959,
-    "displayMegabytes": 12.68,
-    "sourceMegabytes": 39.22,
+    "optimizedCount": 73,
+    "displayBytes": 13547786,
+    "sourceBytes": 41439429,
+    "displayMegabytes": 12.92,
+    "sourceMegabytes": 39.52,
     "freeTierSoftCapBytes": 83886080,
     "freeTierSoftCapMegabytes": 80
   },
@@ -1852,6 +1852,50 @@
       "notes": "Heim Thursday house-leaning Dragon Boat Festival special and Elevator Club reunion route with Golgol, SpaceReturn, Sam Tbd, and Xiaolaba. SmartShanghai confirms the 22:00-05:00 window and 88 RMB presale / 108 RMB door pricing."
     },
     {
+      "id": "shanghai-2026-minuit-mirror-concept",
+      "eventId": "minuit-mirror-concept",
+      "title": "Minuit pres. MIRROR concept",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 18",
+      "sortDate": "2026-06-18",
+      "time": "22:00-05:00",
+      "venue": "EXIT",
+      "district": "Changning",
+      "sound": "house, techno",
+      "tags": [
+        "upcoming",
+        "medium",
+        "changning",
+        "underground",
+        "club",
+        "house",
+        "techno"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2468150",
+        "posterEvidenceUrl": "assets/posters/minuit-mirror-concept-2026-06-18.jpg",
+        "posterEvidenceSource": "User-provided MIRROR poster",
+        "posterEvidenceStatus": ""
+      },
+      "image": {
+        "thumbnail": "assets/posters/minuit-mirror-concept-2026-06-18-optimized.jpg",
+        "display": "assets/posters/minuit-mirror-concept-2026-06-18-optimized.jpg",
+        "sourceAsset": "assets/posters/minuit-mirror-concept-2026-06-18.jpg",
+        "displayBytes": 248025,
+        "sourceBytes": 319470,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/minuit-mirror-concept.html",
+      "notes": "Minuit brings its MIRROR concept to EXIT for an immersive house and tech-house night with SLVN, Olivier K, Olivier G, Chabuduo, and a live camera/VJing setup that projects the booth and crowd back into the room."
+    },
+    {
       "id": "shanghai-2026-night-at-museum-90s-disco",
       "eventId": "night-at-museum-90s-disco",
       "title": "Night at the Museum: Back to the 90s Disco Night",
@@ -1918,7 +1962,7 @@
       "confidence": "High",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
-        "label": "Resident Advisor",
+        "label": "Resident Advisor + user-provided MIRROR poster",
         "url": "https://ra.co/events/2464178",
         "posterEvidenceUrl": "https://ra.co/events/2464178",
         "posterEvidenceSource": "Resident Advisor event page",

@@ -1755,3 +1755,47 @@ Push/deploy state:
 - `1b147ce Update status refresh workflow actions` pushed to `origin/main`.
 - Vercel production deployment was `READY` for commit `1b147ce`, with production aliases including `raveindexsh.top`, `www.raveindexsh.top`, and `shanghai-rave-calendar-2026.vercel.app`.
 - The implementation was published from a separate clean worktree at `D:\workspace\rave-calendar-auto-status-main` to avoid unrelated dirty/conflicted files in the active local workspace.
+
+## 2026-06-19 XHS Tonight Style Guide And MIRROR Poster
+
+The user asked to generate a Xiaohongshu tonight recommendation by style, include real event posters, add a supplied MIRROR concept poster into the database, and save the result to project history.
+
+Implemented state:
+
+- Added the user-provided MIRROR by Minuit poster as `assets/posters/minuit-mirror-concept-2026-06-18.jpg`.
+- Generated the optimized display asset `assets/posters/minuit-mirror-concept-2026-06-18-optimized.jpg`.
+- Updated `config/curated-events.json` for `minuit-mirror-concept`:
+  - Added `posterUrl`.
+  - Added structured `posterEvidence` with `source`, `url`, `asset`, visible poster facts, and `lastChecked`.
+  - Changed source status to `trusted-ra-and-user-poster`.
+  - Marked `decisionProfile.hasPoster` true and removed poster-missing risk flags.
+- Regenerated `data/events.json`, `data/dj-data.js`, `data/tracked-dj-itineraries.js`, `data/poster-archive.json`, event SEO pages, and `sitemap.xml`.
+- Created the Xiaohongshu carousel folder `assets/social/xhs-posts/2026-06-18-tonight-style-guide/`.
+- Generated five 1080x1440 upload cards:
+  - `01-cover.png`
+  - `02-techno.png`
+  - `03-bass-hard-club.png`
+  - `04-house-groove.png`
+  - `05-disco-social.png`
+- Generated `contact-sheet.png`, `publish-copy.txt`, and `publish-kit.md`.
+- The carousel groups tonight's events by style:
+  - TECHNO: PHOTOCULT, MIRROR concept
+  - BASS / HARD CLUB: State OFFF, Cybionte
+  - HOUSE / GROOVE: LONG WAVE, ALTER. Pavillon
+  - DISCO / SOCIAL: Night at the Museum, Girls Night Out
+- Updated the local `xhs-rave-calendar-carousel` skill to make the poster workflow explicit:
+  - Real official poster thumbnails must come from local `posterUrl` assets.
+  - GPT image prompt-only generation is only acceptable for style mockups, not exact official-poster placement.
+  - User-provided posters should be copied into `assets/posters`, entered into `config/curated-events.json`, optimized, and then used through regenerated `data/events.json`.
+
+Validation:
+
+- `node scripts/check.js` passed after regenerating SEO pages.
+- All five main XHS cards are `1080x1440`.
+- `contact-sheet.png` was visually inspected and shows the MIRROR poster in the cover poster wall and TECHNO page.
+- Generated copy was checked for unwanted leftovers such as `watch`, `recheck`, `verify`, `NO POSTER`, source-trace wording, and placeholder wording.
+
+Working tree caution:
+
+- This work originated locally on `codex/update-tonight-events` and is being merged into `main` with the rest of the pending branch work.
+- Scratch scrape captures and temporary helper scripts were kept out of the committed project files.
