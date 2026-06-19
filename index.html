@@ -3276,6 +3276,7 @@
       "milo-cosmjn": "assets/posters/milo-cosmjn.jpg",
       "fruitygroove-soul-navigator": "assets/posters/fruitygroove-soul-navigator.png",
       "matisa-limsum": "assets/posters/matisa-limsum.jpg",
+      "fengyun-5": "assets/posters/fengyun-5.jpg",
       "kollin": "assets/posters/kollin.jpg",
       "horizon": "assets/posters/horizon.jpg",
       "nosaj-thing": "assets/posters/nosaj-thing.png",
@@ -5043,7 +5044,7 @@
       const visual = eventVisual(event);
       const presenter = presenterFor(event);
       const festival = isFestival(event);
-      const loading = "lazy";
+      const loading = visual.hasPoster ? "eager" : "lazy";
       return `
         <article class="event-card ${visual.hasPoster ? "has-event-poster" : "has-default-poster"} ${festival ? "festival-card" : ""}" data-id="${event.id}">
           <div class="poster">
