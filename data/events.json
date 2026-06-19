@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T08:41:45.872Z",
+  "generatedAt": "2026-06-19",
   "verified": "2026-06-19",
   "timezone": "Asia/Shanghai",
   "sourcePriority": [
@@ -7239,7 +7239,7 @@
       "sourceStatus": "trusted-yuyuan-and-official-screenshot",
       "address": "Building D, C.PARK Haisu, Zhongdeqiao Road, Changning District, Shanghai",
       "organizer": "idk / REACTOR Shanghai",
-      "lastChecked": "2026-06-16",
+      "lastChecked": "2026-06-19",
       "posterUrl": "assets/posters/health-maxxing-reactor-2026-06-19-poster.jpg",
       "posterEvidence": {
         "type": "official-poster-ticketing-and-running-order-screenshots",
@@ -7405,7 +7405,7 @@
       "sourceStatus": "official-social-evidence",
       "address": "M101 Room, No. 462 Changle Road, Huangpu District, Shanghai",
       "organizer": "Heim Shanghai / Earworthy",
-      "lastChecked": "2026-06-15",
+      "lastChecked": "2026-06-19",
       "posterUrl": "assets/posters/heim-earworthy-selected-sound.jpg",
       "posterEvidence": {
         "type": "official-flyer-screenshot",
@@ -7531,7 +7531,7 @@
       "sourceStatus": "wechat-miniprogram-ticketing",
       "address": "B1, TX Huaihai Youth Center, No. 523-527 Huaihai Road, Huangpu District, Shanghai",
       "organizer": "FaQ / Abyss Shanghai",
-      "lastChecked": "2026-06-15",
+      "lastChecked": "2026-06-19",
       "posterUrl": "assets/posters/abyss-kirk-ticket-cover.jpg",
       "posterEvidence": {
         "type": "wechat-miniprogram-ticketing-screenshot",
@@ -7814,7 +7814,7 @@
       "description": "TURBO brings Norwegian artist MRD to Dirty House for a trance and techno night with D_z, Tiya Manson, NAKIN, and Justease.",
       "kind": "event",
       "sourceStatus": "secondary",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-19",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
@@ -7919,7 +7919,7 @@
       "organizer": "POTENT",
       "detailsUrl": "https://ra.co/events/2467512",
       "ticketUrl": "https://ra.co/events/2467512",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-19",
       "lineup": [
         {
           "name": "Tofu",
@@ -8005,7 +8005,7 @@
       "sourceStatus": "wechat-ticketing-and-official-screenshot",
       "address": "LG Floor, C PARK, No. 658 Zhaohua Road, Changning District, Shanghai",
       "organizer": "Normie Corporation / ILLUM Shanghai",
-      "lastChecked": "2026-06-16",
+      "lastChecked": "2026-06-19",
       "posterUrl": "assets/posters/illum-normie-10k99-2026-06-19-poster.jpg",
       "posterEvidence": {
         "type": "official-poster-screenshot",
@@ -8142,7 +8142,7 @@
       "organizer": "Spacepanda / ONEFORTYASIA",
       "detailsUrl": "https://ra.co/events/2466405",
       "ticketUrl": "https://ra.co/events/2466405",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-19",
       "lineup": [
         {
           "name": "Mungk",
@@ -8255,7 +8255,7 @@
       "sourceStatus": "ticketing-screenshot",
       "address": "上海.MiM CLUB",
       "organizer": "MiM CLUB",
-      "lastChecked": "2026-06-16",
+      "lastChecked": "2026-06-19",
       "lineup": [
         {
           "name": "Oscar L",
@@ -8433,7 +8433,7 @@
       "sourceStatus": "official-social-evidence",
       "address": "LG Floor, C.PARK, No. 658 Zhaohua Road, Changning District, Shanghai",
       "organizer": "Wigwam",
-      "lastChecked": "2026-06-15",
+      "lastChecked": "2026-06-19",
       "posterUrl": "assets/posters/wigwam-weekly-listening-wheon-2026-06-19.jpg",
       "posterEvidence": {
         "type": "official-flyer-screenshot",
@@ -8546,7 +8546,7 @@
       "organizer": "298 / Illsee / EXIT Shanghai",
       "detailsUrl": "https://ra.co/events/2468159",
       "ticketUrl": "https://ra.co/events/2468159",
-      "lastChecked": "2026-06-16",
+      "lastChecked": "2026-06-19",
       "posterUrl": "assets/posters/exit-steal-tapes-2026-06-20-poster.png",
       "posterEvidence": {
         "type": "official-poster-and-ticketing-screenshots",
@@ -8701,7 +8701,7 @@
       },
       "ticketStatus": "SmartShanghai says tickets are not currently available on SmartShanghai and points to QR-code availability in the event description.",
       "addedAt": "2026-06-08",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-19",
       "sources": [
         {
           "label": "SmartShanghai",
@@ -8772,7 +8772,7 @@
       "organizer": "A.T.M / REACTORSH",
       "detailsUrl": "https://ra.co/events/2466700",
       "ticketUrl": "https://ra.co/events/2466700",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-19",
       "lineup": [
         {
           "name": "LEO MONIRA",
@@ -8871,7 +8871,7 @@
       "organizer": "Artem",
       "detailsUrl": "https://ra.co/events/2451822",
       "ticketUrl": "https://ra.co/events/2451822",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-19",
       "lineup": [
         {
           "name": "SOLO (Enchanted Night listing)",
@@ -9073,7 +9073,7 @@
       "description": "Single-source lead for a textured Heim night joining Dutch producer/DJ Jasmin with Knopha.",
       "kind": "event",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-15",
+      "lastChecked": "2026-06-19",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
@@ -9219,7 +9219,7 @@
       "description": "Liminal Dreams x Wigwam with Chingyi, IIN, Rainsoft, and Toss. The supplied event poster confirms the date, lineup, address, and 20:00-late timing; the weekly schedule confirms free entry but lists the slot as 22:00-late, so readers should verify the exact start.",
       "kind": "event",
       "sourceStatus": "official-social-evidence",
-      "lastChecked": "2026-06-15",
+      "lastChecked": "2026-06-19",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
@@ -9374,7 +9374,7 @@
       "sourceStatus": "wechat-ticketing-and-official-screenshot",
       "address": "LG Floor, C PARK, No. 658 Zhaohua Road, Changning District, Shanghai",
       "organizer": "LIQUID DOLLS / ILLUM Shanghai",
-      "lastChecked": "2026-06-16",
+      "lastChecked": "2026-06-19",
       "posterUrl": "assets/posters/illum-soback-2026-06-20-poster.jpg",
       "posterEvidence": {
         "type": "official-poster-screenshot",
@@ -9480,7 +9480,7 @@
       "sourceStatus": "ticketing-screenshot",
       "address": "上海市黄浦区淮海中路98号金钟广场2-3F",
       "organizer": "MAX Shanghai",
-      "lastChecked": "2026-06-16",
+      "lastChecked": "2026-06-19",
       "lineup": [
         {
           "name": "MALAA",
@@ -9561,7 +9561,7 @@
       "organizer": "Spacepanda",
       "detailsUrl": "https://ra.co/events/2466422",
       "ticketUrl": "https://ra.co/events/2466422",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-19",
       "lineup": [
         {
           "name": "Tom Kynd",
@@ -9721,7 +9721,7 @@
       "organizer": "POTENT",
       "detailsUrl": "https://ra.co/events/2467511",
       "ticketUrl": "https://ra.co/events/2467511",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-19",
       "lineup": [
         {
           "name": "Thomas Futoso",
@@ -9807,7 +9807,7 @@
       "organizer": "MENSLIES",
       "detailsUrl": "https://ra.co/events/2455159",
       "ticketUrl": "https://ra.co/events/2455159",
-      "lastChecked": "2026-06-15",
+      "lastChecked": "2026-06-19",
       "lineup": [
         {
           "name": "Tsing",
@@ -10066,7 +10066,7 @@
       "description": "Electronic-world-music live show with The Hymmapan Electron, Taiga, and MICO. Not a club rave, but a strong experimental electronic listing.",
       "kind": "event",
       "sourceStatus": "secondary",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-19",
       "sources": [
         {
           "label": "SmartShanghai",
@@ -10189,7 +10189,7 @@
       "organizer": "PLAYGROUND",
       "detailsUrl": "https://ra.co/events/2462792",
       "ticketUrl": "https://ra.co/events/2462792",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-19",
       "lineup": [
         {
           "name": "D_z",
@@ -10312,7 +10312,7 @@
       "sourceStatus": "wechat-miniprogram-ticketing",
       "address": "M101 Room, No. 462 Changle Road, Huangpu District, Shanghai",
       "organizer": "Heim Shanghai",
-      "lastChecked": "2026-06-15",
+      "lastChecked": "2026-06-19",
       "posterUrl": "assets/posters/heim-dina-ticket-cover.jpg",
       "posterEvidence": {
         "type": "wechat-miniprogram-ticketing-screenshot",
@@ -10425,7 +10425,7 @@
       "description": "Abyss Jun 26 Obsesion Total with BOTOX FATAL (live), TUI, Kong BB, and Noodleprince. The new Yuyuan ticketing screenshot confirms the 22:00 start, Abyss club venue, 90 RMB+ ticket tier, e-ticket state, and no-refund label, upgrading the previous watch lead into a confirmed upcoming listing.",
       "kind": "event",
       "sourceStatus": "wechat-miniprogram-ticketing",
-      "lastChecked": "2026-06-15",
+      "lastChecked": "2026-06-19",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
@@ -10662,7 +10662,7 @@
       "sourceStatus": "user-screenshot",
       "address": "上海市长宁区昭化路658号 C·PARK LG层",
       "organizer": "贵州厨房",
-      "lastChecked": "2026-06-16",
+      "lastChecked": "2026-06-19",
       "lineup": [
         {
           "name": "Xingrui(VJ)",
@@ -10803,7 +10803,7 @@
       "ticketStatus": "Official Weibo mirror says presale opened May 31 at 19:00 through Damai, Maoyan, and Ticket Planet, with 298/398/498/698 RMB tiers. Sina lineup mirror and Trip.com corroborate the Jun 27 Qiantan Sports Park listing; recheck Damai, Maoyan, or Ticket Planet live inventory before any purchase CTA.",
       "contentOpportunity": "Use as a broad Jun 27 festival-search hook, then route readers to Youshan warmup, EXIT, POTENT, Abyss, or late-night underground alternatives.",
       "addedAt": "2026-06-13",
-      "lastChecked": "2026-06-15",
+      "lastChecked": "2026-06-19",
       "sources": [
         {
           "label": "Sina / official Weibo mirror",
@@ -10998,7 +10998,7 @@
       "sourceStatus": "wechat-miniprogram-ticketing",
       "address": "B1, TX Huaihai Youth Center, No. 523-527 Huaihai Road, Huangpu District, Shanghai",
       "organizer": "Abyss Shanghai",
-      "lastChecked": "2026-06-15",
+      "lastChecked": "2026-06-19",
       "posterUrl": "assets/posters/abyss-cum-chemical-love-cover.jpg",
       "posterEvidence": {
         "type": "wechat-miniprogram-ticketing-screenshot",
@@ -11112,7 +11112,7 @@
       "sourceStatus": "wechat-miniprogram-ticketing",
       "address": "M101 Room, No. 462 Changle Road, Huangpu District, Shanghai",
       "organizer": "Heim Shanghai / DiscChef",
-      "lastChecked": "2026-06-15",
+      "lastChecked": "2026-06-19",
       "posterUrl": "assets/posters/heim-discchef-roto-ticket-cover.jpg",
       "posterEvidence": {
         "type": "wechat-miniprogram-ticketing-screenshot",
@@ -11550,7 +11550,7 @@
       "sourceStatus": "trusted-yuyuan-and-poster-screenshot",
       "address": "4F, Fosun Art Center, 600 Zhongshan Dong Er Road, Huangpu District, Shanghai",
       "organizer": "Asylum / CLOUD.SU / PAS",
-      "lastChecked": "2026-06-16",
+      "lastChecked": "2026-06-19",
       "posterUrl": "assets/posters/le-youth-cloudsu-2026-06-27-poster.jpg",
       "posterEvidence": {
         "type": "official-poster-and-ticketing-screenshots",
@@ -11665,7 +11665,7 @@
       },
       "ticketStatus": "SmartShanghai lists tickets from 198 RMB and shows web, app, and WeChat buying routes.",
       "addedAt": "2026-06-08",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-19",
       "sources": [
         {
           "label": "SmartShanghai",
@@ -11938,7 +11938,7 @@
       "ticketStatus": "Official city guide confirms the festival name and broad May-Jul window only. Keep on Watch until venue, dates, lineup, and tickets are published.",
       "contentOpportunity": "Monitor as a Shanghai festival keyword and add to summer festival radar once date and genre details are public.",
       "addedAt": "2026-06-13",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-19",
       "sources": [
         {
           "label": "Shanghai major events guide",
@@ -12002,7 +12002,7 @@
       "sourceStatus": "showstart-plus-wechat-screenshots",
       "address": "B1/F, No. 658 Zhaohua Road, Changning District, Shanghai",
       "organizer": "Yuyintang",
-      "lastChecked": "2026-06-16",
+      "lastChecked": "2026-06-19",
       "posterUrl": "assets/posters/yuyintang-cooling-water-2026-07-03.jpg",
       "posterEvidence": {
         "type": "official-poster-screenshot",
@@ -12149,7 +12149,7 @@
       "ticketStatus": "City culture source says first-round ticket sales began Jun 3 at 13:00. Meet in Shanghai points readers to the Shanghai Symphony Orchestra website and WeChat account for tickets and additional information; recheck the specific program page before any purchase CTA.",
       "contentOpportunity": "Use for a Shanghai summer music calendar page and cross-over posts for film music, jazz, contemporary art, and date-night audiences.",
       "addedAt": "2026-06-13",
-      "lastChecked": "2026-06-15",
+      "lastChecked": "2026-06-19",
       "sources": [
         {
           "label": "Shanghai Municipal Administration of Culture and Tourism",
@@ -12241,7 +12241,7 @@
       "sourceStatus": "showstart-plus-wechat-screenshots",
       "address": "B1/F, Building D, C.PARK, No. 658 Zhaohua Road, Changning District, Shanghai",
       "organizer": "SO.READY / Yuyintang",
-      "lastChecked": "2026-06-16",
+      "lastChecked": "2026-06-19",
       "posterUrl": "assets/posters/lucrecia-dalt-yuyintang-2026-07-16.jpg",
       "posterEvidence": {
         "type": "official-poster-screenshot",
@@ -12383,7 +12383,7 @@
       "ticketStatus": "Month-level city lead only. Find a Gate M, promoter, ticketing, or venue page before promoting as a confirmed event.",
       "contentOpportunity": "Prebuild watch coverage for West Bund summer nights and update when the official lineup drops.",
       "addedAt": "2026-06-13",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-19",
       "sources": [
         {
           "label": "Shanghai Municipal Commission of Commerce",
@@ -12446,7 +12446,7 @@
       "organizer": "LMD",
       "detailsUrl": "https://ra.co/events/2232295",
       "ticketUrl": "https://ra.co/events/2232295",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-19",
       "lineup": [
         {
           "name": "Shaun Soomro",
@@ -12555,7 +12555,7 @@
       },
       "contentOpportunity": "Set a monitor and prep a watch page now. When official ticketing drops, publish 'Tomorrowland Shanghai 2026: lineup, tickets, afterparties, and underground alternatives' within hours.",
       "addedAt": "2026-06-13",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-19",
       "sources": [
         {
           "label": "Shanghai Municipal Commission of Commerce",
@@ -33244,5 +33244,11 @@
     "Resident Advisor HTTP or headless-browser challenges are recorded as browser-required; do not treat challenge pages as empty listings.",
     "Computer Use collection must follow second-layer links and image/poster text to capture time, venue, lineup, poster evidence, artist introductions, future tour dates, and ticketing status.",
     "DJ itinerary overlays are regenerated from source-backed futureTourPlan fields while preserving curated worldwide overlays in data/tracked-dj-itineraries.js."
-  ]
+  ],
+  "metadata": {
+    "lastUpdated": "2026-06-19",
+    "source": "SmartShanghai clubbing listings + monthly guide",
+    "totalEvents": 118,
+    "upcomingEvents": 50
+  }
 }
