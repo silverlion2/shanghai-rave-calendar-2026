@@ -1,6 +1,6 @@
 # Project Memory
 
-Last updated: 2026-06-19 Asia/Shanghai
+Last updated: 2026-06-20 Asia/Shanghai
 
 ## Project
 
@@ -1843,3 +1843,34 @@ Generated the Friday Xiaohongshu style guide in `assets/social/xhs-posts/2026-06
 - Regenerated `data/events.json`, DJ data, SEO event pages, poster archive, and sitemap.
 - Output cards: `01-cover.png` through `08-calendar-site.png`, plus `contact-sheet.png`, `publish-copy.txt`, and `publish-kit.md`.
 - Final page uses the mobile website Calendar with the `Weekend` filter screenshot so it shows a fuller Fri/Sat/Sun weekend view instead of only tonight.
+
+## 2026-06-20 Supabase DJ Page Rebuild
+
+The user asked to go over all DJ data in Supabase, remake the DJ page with Product Design, compact the mobile version, iterate the profile UI, then push to `main` and save the work to project history.
+
+What changed:
+
+- Added `scripts/export-supabase-djs.js` to export Supabase DJ/artist data into static client-safe files.
+- Added generated `data/supabase-dj-data.json` and `data/supabase-dj-data.js` with 405 artist rows, 63 rich profiles, 94 source-photo profiles, 237 source-backed profiles, 102 release-rich rows, and 15 cleanup flags.
+- Rebuilt `djs.html` around Supabase artist depth while preserving Shanghai calendar appearances, combined past/future itinerary rows, external links, releases, labels, listening/social links, profile facts, and calendar/event actions.
+- Reranked the default DJ order toward photo-backed and public-footprint-heavy artists. The top order now favors real source photos, rich profile depth, releases, labels, external URLs, source breadth, and global itinerary breadth.
+- Removed the duplicate `Calendar appearances` block and kept a single combined `Past / future itinerary` panel sorted newest-first.
+- Removed the large hero image and moved the statistics/data-health block to the bottom above the Basement Dispatch footer.
+- Simplified directory rows and roster cards to show only DJ name plus `top genre / nationality-base`.
+- Moved artist metadata into the top profile header: nationality/base, genre, sound, and labels or releases.
+- Simplified External artist links into a clickable favicon/source-logo grid.
+- Replaced detailed Supabase source rows with a single `Source: ...` sentence.
+- Hid internal recommendation-policy links from the DJ page (`How we recommend`, `.trust-inline`, and `trust.html` links).
+- Updated `tests/dj-relevance-sort.test.js` and `tests/trust-framework.test.js` for the new DJ ranking and internal-policy-link behavior.
+- Updated `design-qa.md` with Product Design verification notes and mobile/layout checks.
+
+Validation:
+
+- `node --test tests/dj-relevance-sort.test.js tests/trust-framework.test.js` passed.
+- `node --check scripts/export-supabase-djs.js` passed.
+- In-app browser checks on `http://localhost:4180/djs` confirmed no horizontal overflow, source-logo external links, one simple Source sentence, hidden internal trust links, bottom-positioned stats, no hero image, and top profile metadata.
+
+Pushed state:
+
+- Commit pushed to `origin/main`: `21ce187 feat: rebuild DJ page with Supabase profiles`.
+- Only the DJ/Supabase files and related tests/QA were staged for that push. Large unrelated dirty event/data changes remained uncommitted in the local working tree.
