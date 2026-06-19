@@ -1,12 +1,32 @@
+# Deployment/tool state
 .vercel/
 .chrome-headless*/
 .playwright-cli/
-.tmp/
-output/
+
+# Dependencies and generated output
 node_modules/
+output/
+
+# Local-only workspace
+local/
+.local/
 .local-model-cache/
-_*.html
-scripts/_tmp_*.js
+.tmp/
+tmp/
+.uploads/
+.trae/
+analysis/
+
+# Scraper/API caches and scratch captures
+data/dj-api-cache/
+/_*.html
+/_*.json
+/_tmp_*.js
+/scripts/_tmp_*.js
+/optimize-out.txt
+/test-*.js
+
+# Environment and OS files
 .env
 .env.*
 !.env.example

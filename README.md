@@ -26,6 +26,17 @@ npx serve .
 
 When served over HTTP, the calendar reads `data/events.json`. If that file is missing or blocked by a direct `file://` preview, the embedded fallback events in the HTML are used.
 
+## Local-only workspace
+
+Use `local/` for anything that should stay off GitHub:
+
+- `local/cache/dj-api/` is the default MusicBrainz/Discogs scraper cache. Override with `DJ_API_CACHE_DIR` when needed.
+- `local/source-dumps/` is for raw scraped HTML/JSON captures.
+- `local/scripts/` is for one-off scripts, smoke checks, and temporary helpers.
+- `local/exports/`, `local/uploads/`, and `local/analysis/` are for operator output, private uploads, and working notes.
+
+The repo also ignores `tmp/`, `.tmp/`, `.uploads/`, `.trae/`, `analysis/`, root `_*.html`/`_*.json` dumps, root `test-*.js` files, and `scripts/_tmp_*.js`.
+
 ## Account dispatch
 
 `account.html` provides a Supabase Auth registration/login wall for saved sounds, venues, budget mode, timing, source confidence, and event shortlists. Account tools require sign-in; the public calendar remains open. After login, the homepage reads the same preference profile into the `For you` dispatch panel.

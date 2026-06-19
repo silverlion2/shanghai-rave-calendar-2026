@@ -2,7 +2,9 @@ const fs = require("fs");
 const path = require("path");
 
 const ROOT = path.resolve(__dirname, "..");
-const CACHE_DIR = path.join(ROOT, "data", "dj-api-cache");
+const CACHE_DIR = process.env.DJ_API_CACHE_DIR
+  ? path.resolve(ROOT, process.env.DJ_API_CACHE_DIR)
+  : path.join(ROOT, "local", "cache", "dj-api");
 
 if (!fs.existsSync(CACHE_DIR)) {
   fs.mkdirSync(CACHE_DIR, { recursive: true });
