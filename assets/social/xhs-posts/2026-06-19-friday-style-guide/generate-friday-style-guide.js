@@ -62,6 +62,7 @@ const eventCopy = {
   },
   "2026-06-19-italo-disco-shanghai-s-italian-roofto": {
     short: "Italo Disco",
+    metaVenue: "Skyline Dome",
     displayTime: "21:30-late",
     lineup: "DJ UACA / DJ Rain",
     body: "如果今晚想轻一点，这条是 rooftop / disco / house 路线。外滩夜景、镜球和酒，比地下室友好。",
@@ -244,7 +245,7 @@ function tspans(lines, x, y, size, lineHeight, attrs = "") {
 }
 
 function metaFor(event) {
-  return `${event.venue} | 6/19 周五 | ${event.displayTime || event.time || "时间待定"}`;
+  return `${event.metaVenue || event.venue} | 6/19 周五 | ${event.displayTime || event.time || "时间待定"}`;
 }
 
 async function dataUri(file, width = 640, height = 880) {
@@ -345,13 +346,20 @@ function frameHeader(title, cn, accent, note) {
 }
 
 function eventTile(event, uri, x, y, w, h, accent, compact = false) {
-  const posterW = compact ? 168 : 190;
+  const posterW = compact ? 156 : 190;
   const posterH = h - 36;
   const tx = x + posterW + 34;
-  const contentW = w - posterW - 58;
-  const nameLines = wrapText(event.short || event.title, compact ? 16 : 19, 2);
-  const lineupLines = wrapText(event.lineup || "", compact ? 33 : 42, 2);
-  const bodyLines = wrapText(event.body || "", compact ? 26 : 33, compact ? 3 : 4);
+  const nameLines = wrapText(event.short || event.title, compact ? 24 : 19, compact ? 1 : 2);
+  const lineupLines = wrapText(event.lineup || "", compact ? 54 : 42, compact ? 1 : 2);
+  const bodyLines = wrapText(event.body || "", compact ? 34 : 33, compact ? 2 : 4);
+  const nameFont = compact ? 32 : 40;
+  const nameY = compact ? y + 48 : y + 54;
+  const nameLineHeight = compact ? 34 : 43;
+  const metaY = compact ? y + 88 : y + 146;
+  const lineupY = compact ? y + 120 : y + 188;
+  const bodyY = compact ? y + 158 : y + 262;
+  const bodyFont = compact ? 19 : 25;
+  const bodyLineHeight = compact ? 26 : 34;
 
   return `
     <g>
@@ -359,15 +367,15 @@ function eventTile(event, uri, x, y, w, h, accent, compact = false) {
       <rect x="${x + 14}" y="${y + 14}" width="${posterW}" height="${posterH}" fill="#111"/>
       <image href="${uri}" x="${x + 14}" y="${y + 14}" width="${posterW}" height="${posterH}" preserveAspectRatio="xMidYMid slice"/>
       <rect x="${x + 14}" y="${y + 14}" width="${posterW}" height="${posterH}" fill="none" stroke="#f5f0df" stroke-width="1" opacity="0.42"/>
-      <text class="sans" fill="#f5f0df" font-size="${compact ? 34 : 40}" font-weight="900">
-        ${tspans(nameLines, tx, y + 54, compact ? 34 : 40, compact ? 37 : 43)}
+      <text class="sans" fill="#f5f0df" font-size="${nameFont}" font-weight="900">
+        ${tspans(nameLines, tx, nameY, nameFont, nameLineHeight)}
       </text>
-      <text class="mono" x="${tx}" y="${y + (compact ? 132 : 146)}" fill="${accent}" font-size="${compact ? 19 : 21}" font-weight="700">${escapeXml(metaFor(event))}</text>
+      <text class="mono" x="${tx}" y="${metaY}" fill="${accent}" font-size="${compact ? 18 : 21}" font-weight="700">${escapeXml(metaFor(event))}</text>
       <text class="mono" fill="#d8d2bf" font-size="${compact ? 19 : 21}">
-        ${tspans(lineupLines, tx, y + (compact ? 170 : 188), compact ? 19 : 21, compact ? 24 : 27)}
+        ${tspans(lineupLines, tx, lineupY, compact ? 18 : 21, compact ? 23 : 27)}
       </text>
-      <text class="sans" fill="#f5f0df" opacity="0.93" font-size="${compact ? 23 : 25}">
-        ${tspans(bodyLines, tx, y + (compact ? 235 : 262), compact ? 23 : 25, compact ? 31 : 34)}
+      <text class="sans" fill="#f5f0df" opacity="0.93" font-size="${bodyFont}">
+        ${tspans(bodyLines, tx, bodyY, bodyFont, bodyLineHeight)}
       </text>
       <rect x="${x + w - 80}" y="${y + 18}" width="50" height="14" fill="${accent}"/>
       <rect x="${x + w - 120}" y="${y + h - 30}" width="90" height="4" fill="${accent}" opacity="0.75"/>
@@ -393,7 +401,6 @@ async function renderCover(events, posterUris) {
         <rect x="${x - 8}" y="${y - 8}" width="${thumbW + 16}" height="${thumbH + 16}" fill="#f5f0df" opacity="0.9"/>
         <image href="${posterUris[event.id]}" x="${x}" y="${y}" width="${thumbW}" height="${thumbH}" preserveAspectRatio="xMidYMid slice"/>
         <rect x="${x}" y="${y}" width="${thumbW}" height="${thumbH}" fill="none" stroke="#111" stroke-width="3"/>
-        <text class="sans" x="${x}" y="${y + thumbH + 34}" fill="#f5f0df" font-size="20" font-weight="800">${escapeXml((event.short || event.title).slice(0, 16))}</text>
       </g>`;
   }).join("");
 
@@ -402,13 +409,13 @@ async function renderCover(events, posterUris) {
     ${defs()}
     ${materialBackground("#22d7ee", Object.values(posterUris))}
     <g class="sans">
-      <text x="70" y="128" fill="#22d7ee" font-size="36" font-weight="900">上海今晚 6/19 周五</text>
-      <text x="66" y="248" fill="#f5f0df" font-size="118" font-weight="900" class="cond">TONIGHT</text>
-      <text x="66" y="348" fill="#f5f0df" font-size="86" font-weight="900" class="cond">按声音选</text>
+      <text x="70" y="128" fill="#22d7ee" font-size="36" font-weight="900">6/19 周五 · 端午夜</text>
+      <text x="66" y="248" fill="#f5f0df" font-size="92" font-weight="900" class="cond">电子音乐 PARTY</text>
+      <text x="66" y="348" fill="#f5f0df" font-size="104" font-weight="900" class="cond">LAST CALL</text>
       <rect x="72" y="385" width="330" height="10" fill="#ff3931"/>
       <rect x="424" y="385" width="145" height="10" fill="#f6c84b"/>
       <rect x="590" y="385" width="220" height="10" fill="#22d7ee"/>
-      <text x="72" y="452" fill="#f5f0df" font-size="31" font-weight="700">12 条路线 / 正式 poster / 直接按风格翻</text>
+      <text x="72" y="452" fill="#f5f0df" font-size="31" font-weight="700">12 条路线 / 正式 poster / 按风格翻</text>
       <text x="72" y="508" fill="#d8d2bf" font-size="27">techno、bass、house、disco、listening、hip-hop 都放进来了。</text>
       <text x="72" y="558" fill="#d8d2bf" font-size="27">今晚想去哪里，不用从一堆海报里硬猜。</text>
     </g>
@@ -435,24 +442,12 @@ async function renderStylePage(page, posterUris) {
     return eventTile(event, posterUris[event.id], x, y, tileW, tileH, page.color, compact);
   }).join("");
 
-  const chips = page.ids.map((id, index) => {
-    const event = cleanEvent(id);
-    const x = 72 + (index % 3) * 310;
-    const y = 1288 + Math.floor(index / 3) * 46;
-    return `
-      <g>
-        <rect x="${x}" y="${y - 28}" width="284" height="36" fill="#050606" stroke="${page.color}" opacity="0.9"/>
-        <text class="mono" x="${x + 14}" y="${y - 4}" fill="#f5f0df" font-size="18">${escapeXml((event.short || event.title).slice(0, 25))}</text>
-      </g>`;
-  }).join("");
-
   const svg = `
   <svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">
     ${defs()}
     ${materialBackground(page.color, page.ids.map((id) => posterUris[id]))}
     ${frameHeader(page.slug, page.cn, page.color, page.note)}
     ${tiles}
-    <g>${chips}</g>
     <text class="mono" x="72" y="1380" fill="${page.color}" font-size="24" font-weight="900">${SITE}</text>
   </svg>`;
 
