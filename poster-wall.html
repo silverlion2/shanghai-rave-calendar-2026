@@ -258,6 +258,18 @@
       padding-top: 10px;
     }
 
+    .wall-column {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .wall-column:nth-child(2) { padding-top: 26px; }
+    .wall-column:nth-child(3) { padding-top: 8px; }
+    .wall-column:nth-child(4) { padding-top: 38px; }
+    .wall-column:nth-child(5) { padding-top: 14px; }
+
     .wall-card {
       width: 100%;
       min-width: 0;
@@ -272,11 +284,6 @@
       cursor: pointer;
       transition: border-color .16s ease, transform .16s ease, box-shadow .16s ease;
     }
-
-    .wall-card:nth-child(10n+2) { margin-top: 26px; }
-    .wall-card:nth-child(10n+4) { margin-top: 14px; }
-    .wall-card:nth-child(10n+6) { margin-top: 38px; }
-    .wall-card:nth-child(10n+9) { margin-top: 22px; }
 
     .wall-card:hover,
     .wall-card:focus-visible {
@@ -297,7 +304,8 @@
       width: 100%;
       height: 100%;
       display: block;
-      object-fit: contain;
+      object-fit: cover;
+      object-position: center;
       filter: contrast(1.04) brightness(.92);
       transition: filter .16s ease, transform .16s ease;
     }
@@ -732,6 +740,7 @@
       .wall-head { grid-template-columns: 1fr; }
       .wall-controls { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .poster-waterfall { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+      .wall-column { gap: 8px; }
       .wall-card { grid-template-rows: auto 130px; }
       .wall-card-body { height: 130px; padding: 8px; gap: 5px; }
       .wall-card h2 { font-size: 20px; }
@@ -745,6 +754,9 @@
       .shell { width: min(100% - 18px, 520px); }
       .wall-controls { grid-template-columns: 1fr; }
       .poster-waterfall { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; }
+      .wall-column { gap: 7px; }
+      .wall-column:nth-child(2) { padding-top: 18px; }
+      .wall-column:nth-child(3) { padding-top: 8px; }
       .wall-card { grid-template-rows: auto 104px; }
       .wall-card-body { height: 104px; padding: 7px; gap: 4px; }
       .wall-card-kicker { font-size: 11px; gap: 5px; }
@@ -964,6 +976,7 @@
     const modalPoster = document.getElementById("modalPoster");
     const posterLightbox = document.getElementById("posterLightbox");
     const posterLightboxImage = document.getElementById("posterLightboxImage");
+    let posterWallResizeTimer = 0;
 
     function escapeHtml(value) {
       return String(value ?? "").replace(/[&<>"']/g, char => ({
@@ -1316,6 +1329,37 @@
         .sort((a, b) => a.sortDate.localeCompare(b.sortDate));
     }
 
+    function posterWallColumnCount() {
+      const width = window.innerWidth || document.documentElement.clientWidth || 1280;
+      if (width <= 560) return 3;
+      if (width <= 1180) return 4;
+      return 5;
+    }
+
+    function eventCardHtml(event) {
+      const visual = eventVisual(event);
+      const metaSound = String(event.genre || event.sound || "electronic").split(",")[0];
+      return `
+        <article class="wall-card ${visual.hasPoster ? "has-event-poster" : "has-default-poster"}" data-id="${escapeHtml(event.id)}" tabindex="0" role="button" aria-label="${escapeHtml(`Open ${event.title}, ${event.date}, ${event.venue}`)}">
+          <div class="wall-card-poster">
+            <img src="${escapeHtml(visual.src)}" alt="${escapeHtml(visual.alt)}" loading="lazy" decoding="async">
+            ${visual.hasPoster ? "" : '<span class="poster-gap-pin">No flyer saved yet</span>'}
+          </div>
+          <div class="wall-card-body">
+            <p class="wall-card-kicker"><span>${escapeHtml(event.date)}</span><span>${escapeHtml(event.time || "TBA")}</span></p>
+            <h2>${escapeHtml(event.title)}</h2>
+            <p class="wall-venue">${venueGuideLinkHtml(event.venue)} / ${escapeHtml(eventCity(event))}</p>
+            <p class="wall-card-meta"><span>${escapeHtml(metaSound)}</span><span>${escapeHtml(eventTemporalStatus(event) === "past" ? "Archive" : (event.price || "Tickets when listed"))}</span></p>
+            ${lineupPreviewHtml(event)}
+            <div class="wall-card-actions">
+              ${ticketActionHtml(event)}
+              <span>${escapeHtml(eventTemporalStatus(event) === "past" ? "Archive" : (event.price || "Details"))}</span>
+            </div>
+          </div>
+        </article>
+      `;
+    }
+
     function render() {
       const cards = filteredEvents();
       posterCount.textContent = cards.length;
@@ -1324,29 +1368,13 @@
         wall.innerHTML = `<div class="empty">No event cards match this filter.</div>`;
         return;
       }
-      wall.innerHTML = cards.map(event => {
-        const visual = eventVisual(event);
-        const metaSound = String(event.genre || event.sound || "electronic").split(",")[0];
-        return `
-          <article class="wall-card ${visual.hasPoster ? "has-event-poster" : "has-default-poster"}" data-id="${escapeHtml(event.id)}" tabindex="0" role="button" aria-label="${escapeHtml(`Open ${event.title}, ${event.date}, ${event.venue}`)}">
-            <div class="wall-card-poster">
-              <img src="${escapeHtml(visual.src)}" alt="${escapeHtml(visual.alt)}" loading="lazy" decoding="async">
-              ${visual.hasPoster ? "" : '<span class="poster-gap-pin">No flyer saved yet</span>'}
-            </div>
-            <div class="wall-card-body">
-              <p class="wall-card-kicker"><span>${escapeHtml(event.date)}</span><span>${escapeHtml(event.time || "TBA")}</span></p>
-              <h2>${escapeHtml(event.title)}</h2>
-              <p class="wall-venue">${venueGuideLinkHtml(event.venue)} / ${escapeHtml(eventCity(event))}</p>
-              <p class="wall-card-meta"><span>${escapeHtml(metaSound)}</span><span>${escapeHtml(eventTemporalStatus(event) === "past" ? "Archive" : (event.price || "Tickets when listed"))}</span></p>
-              ${lineupPreviewHtml(event)}
-              <div class="wall-card-actions">
-                ${ticketActionHtml(event)}
-                <span>${escapeHtml(eventTemporalStatus(event) === "past" ? "Archive" : (event.price || "Details"))}</span>
-              </div>
-            </div>
-          </article>
-        `;
-      }).join("");
+      const columns = Array.from({ length: posterWallColumnCount() }, () => []);
+      cards.forEach((event, index) => {
+        columns[index % columns.length].push(eventCardHtml(event));
+      });
+      wall.innerHTML = columns
+        .map((items, index) => `<div class="wall-column" data-wall-column="${index + 1}">${items.join("")}</div>`)
+        .join("");
     }
 
     function openModal(event) {
@@ -1387,6 +1415,10 @@
     [searchInput, statusFilter, cityFilter, vibeFilter].forEach(control => {
       control.addEventListener("input", render);
       control.addEventListener("change", render);
+    });
+    window.addEventListener("resize", () => {
+      window.clearTimeout(posterWallResizeTimer);
+      posterWallResizeTimer = window.setTimeout(render, 120);
     });
     wall.addEventListener("click", event => {
       if (event.target.closest("a")) return;
