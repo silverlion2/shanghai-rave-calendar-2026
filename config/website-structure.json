@@ -160,6 +160,17 @@
       "priority": "0.83"
     },
     {
+      "id": "support",
+      "label": "Support",
+      "file": "support.html",
+      "route": "/support",
+      "shell": "dispatch-shell",
+      "includeInSitemap": true,
+      "lastmod": "2026-06-20",
+      "changefreq": "monthly",
+      "priority": "0.72"
+    },
+    {
       "id": "venues",
       "label": "Venues",
       "file": "venues.html",
