@@ -5,6 +5,7 @@ const {
 
 const THEME_STYLESHEET_VERSION = "poster-protection-20260620";
 const POSTER_PROTECTION_VERSION = "poster-protection-20260620";
+const SUPPORT_BUTTON_VERSION = "coffee-20260620e";
 
 function renderHtmlDocument({ head, body }) {
   return `<!doctype html>
@@ -48,6 +49,7 @@ function renderSeoHead(structure, {
 ${renderGoogleTag(structure.site.googleTagId)}
 ${renderVercelAnalytics()}
   <script defer src="${escapeAttr(assetPrefix)}assets/poster-protection.js?v=${POSTER_PROTECTION_VERSION}"></script>
+  <script defer src="${escapeAttr(assetPrefix)}assets/support-button.js?v=${SUPPORT_BUTTON_VERSION}"></script>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="${escapeAttr(structure.site.name)}">
   <meta property="og:title" content="${escapeAttr(ogTitle)}">
