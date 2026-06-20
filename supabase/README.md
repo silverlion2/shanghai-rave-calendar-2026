@@ -99,6 +99,20 @@ npm run posters:upload
 
 This compresses every poster source into `assets/posters/*-optimized.jpg`, regenerates `data/poster-archive.json`, and upserts the updated metadata into Supabase. Supabase stores poster paths and metadata in `poster_archive` and imports optimized display paths into `events.poster_url`; image files are deployed from the static site.
 
+## Poster Wall Read Path
+
+`poster-wall.html` remains the single public event/poster browsing surface. The page loads `assets/poster-wall-data.js`, which first tries the read-only Supabase view `poster_wall_cards` and falls back to `data/events.json` plus `data/poster-archive.json` when Supabase is unavailable.
+
+The product is Shanghai-first in this phase:
+
+```js
+posterWallDefaultCity: "Shanghai"
+```
+
+The view can expose other accepted poster cities for uploads and archive browsing, but the default wall filter remains Shanghai.
+
+Images may still point to static `assets/posters/...` paths. Moving display and thumbnail assets to object storage can happen later without changing the wall renderer, as long as `poster_wall_cards.poster_display_url` and `poster_wall_cards.poster_thumbnail_url` return browser-readable URLs.
+
 ## Love Wall Client Config
 
 `npm run supabase:configure-client` updates `assets/love-wall-supabase-config.js` with the public project URL and anon/publishable key:
@@ -110,7 +124,12 @@ window.LOVE_WALL_SUPABASE = {
   anonKey: "your-publishable-or-anon-key",
   table: "love_wall_posts",
   reactionTable: "love_wall_reactions",
-  contributionTable: "community_contributions"
+  contributionTable: "community_contributions",
+  posterWallEnabled: true,
+  posterWallView: "poster_wall_cards",
+  posterWallDefaultCity: "Shanghai",
+  posterWallPageSize: 120,
+  posterWallTimeoutMs: 3500
 };
 ```
 
