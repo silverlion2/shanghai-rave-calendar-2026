@@ -606,7 +606,7 @@ function shouldSkipProjectFile(file) {
     || /^scripts\/_tmp_.*\.js$/i.test(relative);
 }
 
-function projectFiles(dir = ROOT, skipDirs = new Set(["node_modules", ".git", ".vercel", ".local-model-cache", ".playwright-cli", ".tmp", "output"])) {
+function projectFiles(dir = ROOT, skipDirs = new Set(["node_modules", ".git", ".vercel", ".local-model-cache", ".playwright-cli", ".tmp", "local", "output"])) {
   const files = [];
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     if (skipDirs.has(entry.name)) continue;
@@ -1117,6 +1117,24 @@ const posterArchiveRequirements = [
   { file: "package.json", text: "\"poster-archive\": \"npm run posters:prepare\"", label: "poster archive metadata prepare script" },
 ];
 
+const posterWallArchitectureRequirements = [
+  { file: "poster-wall.html", text: "assets/poster-wall-data.js", label: "poster wall data adapter script" },
+  { file: "poster-wall.html", text: "PosterWallData.loadPosterWallData", label: "poster wall shared data loader" },
+  { file: "poster-wall.html", text: 'id="cityFilter"', label: "poster wall city filter" },
+  { file: "poster-wall.html", text: "function eventEssentialFacts", label: "poster wall past archive essential facts helper" },
+  { file: "poster-wall.html", text: 'id="modalTicket"', label: "poster wall current/future ticket action" },
+  { file: "poster-wall.html", text: "function ticketActionHref", label: "poster wall ticket action helper" },
+  { file: "poster-wall.html", text: "function showTicketAction", label: "poster wall ticket visibility helper" },
+  { file: "assets/poster-wall-data.js", text: "poster_wall_cards", label: "poster wall default Supabase view" },
+  { file: "assets/poster-wall-data.js", text: "filterEventsByCity", label: "poster wall city filter helper" },
+  { file: "assets/poster-wall-data.js", text: "normalizeStaticPayload", label: "poster wall static fallback normalizer" },
+  { file: "assets/poster-wall-data.js", text: "normalizeSupabaseRows", label: "poster wall Supabase normalizer" },
+  { file: "assets/love-wall-supabase-config.js", text: 'posterWallDefaultCity: "Shanghai"', label: "poster wall Shanghai-default config" },
+  { file: "scripts/write-love-wall-config.js", text: 'posterWallView: "poster_wall_cards"', label: "poster wall generated view config" },
+  { file: "supabase/migrations/202606200001_poster_wall_cards_view.sql", text: "create or replace view public.poster_wall_cards", label: "poster wall cards view migration" },
+  { file: "supabase/migrations/202606200001_poster_wall_cards_view.sql", text: "where e.published = true", label: "poster wall published-row view filter" },
+];
+
 const everywhereRequirements = [
   { file: "index.html", text: 'href="rave-everywhere.html"', label: "calendar Rave Everywhere link" },
   { file: "shanghai-rave-calendar-2026.html", text: 'href="rave-everywhere.html"', label: "archive Rave Everywhere link" },
@@ -1316,7 +1334,7 @@ const accountGuideRequirements = accountGuidePages.flatMap(page => [
   { file: page.file, text: "assets/account-system.js", label: `${page.file} public account guide script` },
 ]);
 
-for (const requirement of [...itineraryRequirements, ...opsRequirements, ...adminCornerRequirements, ...scrapeRequirements, ...posterArchiveRequirements, ...everywhereRequirements, ...loveWallRequirements, ...liveRoomRequirements, ...listenCoachRequirements, ...accountRequirements, ...communityRequirements, ...accountGuideRequirements]) {
+for (const requirement of [...itineraryRequirements, ...opsRequirements, ...adminCornerRequirements, ...scrapeRequirements, ...posterArchiveRequirements, ...posterWallArchitectureRequirements, ...everywhereRequirements, ...loveWallRequirements, ...liveRoomRequirements, ...listenCoachRequirements, ...accountRequirements, ...communityRequirements, ...accountGuideRequirements]) {
   const html = fs.readFileSync(requirement.file, "utf8");
   if (!html.includes(requirement.text)) {
     throw new Error(`${requirement.file} missing feature marker: ${requirement.label}`);

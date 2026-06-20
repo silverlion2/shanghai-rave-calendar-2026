@@ -1874,3 +1874,14 @@ Pushed state:
 
 - Commit pushed to `origin/main`: `21ce187 feat: rebuild DJ page with Supabase profiles`.
 - Only the DJ/Supabase files and related tests/QA were staged for that push. Large unrelated dirty event/data changes remained uncommitted in the local working tree.
+
+## 2026-06-20 Shanghai Poster Wall Architecture
+
+- Kept `poster-wall.html` as the single public poster/event surface and redesigned it into a dense poster wall: desktop 5 columns, tablet 4 columns, mobile 3 columns, stable 3:4 poster areas, and fixed-height card info blocks.
+- Added `assets/poster-wall-data.js` as a dual-source loader: Supabase `poster_wall_cards` first, static `data/events.json` plus `data/poster-archive.json` fallback second.
+- Added the Supabase view `public.poster_wall_cards`; the UI defaults to Shanghai while allowing other accepted cities through the city filter.
+- Kept contribution intake Shanghai-first while preserving non-Shanghai city values for poster-backed review leads.
+- Kept source links internal while exposing current/future ticket/action URLs as `Tickets` only when available.
+- Simplified past poster archive display so expired events omit ticketing and entry-planning fields.
+- Added a Supabase read timeout so the wall falls back to static JSON instead of staying blank when the hosted view is slow or unavailable.
+- Verified poster wall rendering, modal behavior, city filtering, static fallback tests, and full `npm run check:code`.

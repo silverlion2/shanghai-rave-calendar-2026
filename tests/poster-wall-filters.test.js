@@ -37,6 +37,8 @@ function posterWallFiltersForTest() {
     "eventIsWatchStatus",
     "eventEffectiveStatus",
     "eventMatchesStatus",
+    "eventCity",
+    "eventMatchesCity",
     "filteredEvents",
   ].map(name => extractFunction(html, name)).join("\n");
   return Function(`
@@ -46,6 +48,7 @@ function posterWallFiltersForTest() {
     const today = new Date(2026, 5, 15);
     const searchInput = { value: "" };
     const statusFilter = { value: "active" };
+    const cityFilter = { value: "Shanghai" };
     const vibeFilter = { value: "all" };
     function eventSoundTags() {
       return [];
@@ -63,6 +66,9 @@ function posterWallFiltersForTest() {
       },
       setStatus(next) {
         statusFilter.value = next;
+      },
+      setCity(next) {
+        cityFilter.value = next;
       },
       filteredEvents,
     };
@@ -167,4 +173,55 @@ test("poster wall past archive includes both past dates and explicit past status
     filters.filteredEvents().map(event => event.id),
     ["past-date", "future-past-status"],
   );
+});
+
+test("poster wall city filter defaults to Shanghai and supports all cities", () => {
+  const filters = posterWallFiltersForTest();
+  filters.setEvents([
+    { id: "legacy-shanghai", title: "Legacy Shanghai", sortDate: "2026-06-16", status: "upcoming" },
+    { id: "explicit-shanghai", title: "Explicit Shanghai", city: "Shanghai", sortDate: "2026-06-17", status: "upcoming" },
+    { id: "hangzhou-upload", title: "Hangzhou Upload", city: "Hangzhou", sortDate: "2026-06-18", status: "upcoming" },
+  ]);
+
+  assert.deepEqual(
+    filters.filteredEvents().map(event => event.id),
+    ["legacy-shanghai", "explicit-shanghai"],
+  );
+
+  filters.setCity("all");
+  assert.deepEqual(
+    filters.filteredEvents().map(event => event.id),
+    ["legacy-shanghai", "explicit-shanghai", "hangzhou-upload"],
+  );
+});
+
+test("poster wall uses dense grid card layout across desktop tablet and mobile", () => {
+  const html = readSiteFile("poster-wall.html");
+  assert.match(html, /\.poster-waterfall\s*{\s*display: grid;/);
+  assert.match(html, /grid-template-columns: repeat\(5, minmax\(0, 1fr\)\)/);
+  assert.match(html, /grid-template-columns: repeat\(4, minmax\(0, 1fr\)\)/);
+  assert.match(html, /grid-template-columns: repeat\(3, minmax\(0, 1fr\)\)/);
+  assert.match(html, /\.wall-card\s*{[\s\S]*grid-template-rows: auto 162px/);
+  assert.match(html, /\.wall-card-body\s*{[\s\S]*height: 162px/);
+});
+
+test("poster wall keeps source UI hidden and exposes ticket actions separately", () => {
+  const html = readSiteFile("poster-wall.html");
+  assert.match(html, /id="modalTicket"/);
+  assert.match(html, /function ticketActionHref/);
+  assert.match(html, /function showTicketAction/);
+  assert.doesNotMatch(html, /id="modalSource"/);
+  assert.doesNotMatch(html, />Source<\/a>/);
+  assert.doesNotMatch(html, /Open the source link/);
+  assert.doesNotMatch(html, /Source first/);
+  assert.doesNotMatch(html, /Source confidence/);
+  assert.doesNotMatch(html, /\["Source",/);
+  assert.doesNotMatch(html, /event\.sourceLabel \|\| "Source"/);
+});
+
+test("poster wall loads through shared data adapter instead of direct JSON Promise.all", () => {
+  const html = readSiteFile("poster-wall.html");
+  assert.match(html, /assets\/poster-wall-data\.js/);
+  assert.match(html, /PosterWallData\.loadPosterWallData/);
+  assert.doesNotMatch(html, /Promise\.all\(\s*\[\s*fetch\("data\/events\.json"\)/);
 });

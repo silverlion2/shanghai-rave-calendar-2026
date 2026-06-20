@@ -158,7 +158,8 @@ test("event descriptions expose an item-level recommendation policy link", () =>
   assert.match(index, /id="modalTrustPolicy"/);
 
   assert.match(wall, /function eventTrustLinkHtml/);
-  assert.match(wall, /<p class="wall-description">\$\{escapeHtml\(publicText\(event\.description \|\| ""\)\)\}<\/p>\s*\$\{eventTrustLinkHtml\(\)\}/);
+  assert.match(wall, /document\.getElementById\("modalTrustPolicy"\)\.innerHTML = eventTrustLinkHtml\(\);/);
+  assert.doesNotMatch(wall, /class="wall-description"/);
   assert.match(wall, /id="modalTrustPolicy"/);
 });
 

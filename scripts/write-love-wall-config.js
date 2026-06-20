@@ -52,7 +52,12 @@ function main() {
   anonKey: ${JSON.stringify(anonKey)},
   table: "love_wall_posts",
   reactionTable: "love_wall_reactions",
-  contributionTable: "community_contributions"
+  contributionTable: "community_contributions",
+  posterWallEnabled: true,
+  posterWallView: "poster_wall_cards",
+  posterWallDefaultCity: "Shanghai",
+  posterWallPageSize: 120,
+  posterWallTimeoutMs: 3500
 };
 `;
 

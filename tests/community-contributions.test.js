@@ -39,6 +39,28 @@ test("recordFromPayload normalizes a source-backed contribution", () => {
   assert.equal(record.status, "pending");
 });
 
+test("recordFromPayload preserves non-Shanghai poster lead cities", () => {
+  const record = community.recordFromPayload({
+    contributionType: "event",
+    contributorRole: "fan",
+    title: "Basement night in Hangzhou",
+    city: "Hangzhou",
+    venueName: "Loopy",
+    sourceUrl: "https://example.com/hangzhou-poster",
+    details: "Official venue poster names the date, room, and lineup for a Hangzhou electronic night.",
+    posterUrl: "https://storage.example.com/contribution_posters/hangzhou.jpg",
+    consent: true,
+  });
+
+  assert.equal(record.city, "Hangzhou");
+  assert.equal(record.venueName, "Loopy");
+
+  const row = community.remoteRowFromRecord(record, null);
+  assert.equal(row.city, "Hangzhou");
+  assert.equal(row.venue_name, "Loopy");
+  assert.equal(row.poster_url, "https://storage.example.com/contribution_posters/hangzhou.jpg");
+});
+
 test("recordFromPayload can target an existing entry for enrichment", () => {
   const record = community.recordFromPayload({
     contributionMode: "existing",
