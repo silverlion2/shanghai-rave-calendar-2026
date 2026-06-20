@@ -203,6 +203,21 @@ test("poster wall uses dense grid card layout across desktop tablet and mobile",
   assert.match(html, /grid-template-columns: repeat\(3, minmax\(0, 1fr\)\)/);
   assert.match(html, /\.wall-card\s*{[\s\S]*grid-template-rows: auto 162px/);
   assert.match(html, /\.wall-card-body\s*{[\s\S]*height: 162px/);
+  assert.match(html, /object-fit: contain/);
+  assert.match(html, /\.wall-card:nth-child\(10n\+2\)/);
+  assert.doesNotMatch(html, /wall-stamp-row/);
+  assert.doesNotMatch(html, /status-pin/);
+  assert.doesNotMatch(html, /wall-date-stamp/);
+});
+
+test("poster wall detail view includes a large poster lightbox", () => {
+  const html = readSiteFile("poster-wall.html");
+  assert.match(html, /id="modalPosterOpen"/);
+  assert.match(html, /id="modalPosterLarge"/);
+  assert.match(html, /id="posterLightbox"/);
+  assert.match(html, /id="posterLightboxImage"/);
+  assert.match(html, /function openPosterLightbox/);
+  assert.match(html, /function closePosterLightbox/);
 });
 
 test("poster wall keeps source UI hidden and exposes ticket actions separately", () => {

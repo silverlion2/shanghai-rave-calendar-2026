@@ -255,6 +255,7 @@
       grid-template-columns: repeat(5, minmax(0, 1fr));
       gap: 10px;
       align-items: start;
+      padding-top: 10px;
     }
 
     .wall-card {
@@ -272,11 +273,16 @@
       transition: border-color .16s ease, transform .16s ease, box-shadow .16s ease;
     }
 
+    .wall-card:nth-child(10n+2) { margin-top: 26px; }
+    .wall-card:nth-child(10n+4) { margin-top: 14px; }
+    .wall-card:nth-child(10n+6) { margin-top: 38px; }
+    .wall-card:nth-child(10n+9) { margin-top: 22px; }
+
     .wall-card:hover,
     .wall-card:focus-visible {
       border-color: var(--cyan);
       outline: 0;
-      transform: translateY(-2px);
+      transform: translateY(-3px);
       box-shadow: 0 16px 34px rgba(0, 0, 0, .34);
     }
 
@@ -291,8 +297,8 @@
       width: 100%;
       height: 100%;
       display: block;
-      object-fit: cover;
-      filter: contrast(1.05) brightness(.88);
+      object-fit: contain;
+      filter: contrast(1.04) brightness(.92);
       transition: filter .16s ease, transform .16s ease;
     }
 
@@ -300,50 +306,6 @@
     .wall-card:focus-visible .wall-card-poster img {
       filter: contrast(1.12) brightness(.98);
       transform: scale(1.018);
-    }
-
-    .wall-stamp-row {
-      position: absolute;
-      inset: 0 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 8px;
-      padding: 7px;
-      pointer-events: none;
-    }
-
-    .wall-date-stamp,
-    .status-pin {
-      min-height: 28px;
-      display: inline-grid;
-      place-items: center;
-      padding: 5px 7px;
-      color: var(--void);
-      background: var(--paper);
-      font-family: var(--font-display);
-      font-size: 13px;
-      font-weight: 900;
-      line-height: 1;
-      text-transform: uppercase;
-      box-shadow: 0 7px 18px rgba(0, 0, 0, .3);
-    }
-
-    .status-pin {
-      background: var(--cyan);
-    }
-
-    .status-pin.status-current {
-      background: var(--gold);
-    }
-
-    .status-pin.status-watch {
-      background: var(--ember);
-    }
-
-    .status-pin.status-past {
-      color: var(--paper);
-      background: rgba(119, 116, 108, .92);
     }
 
     .poster-gap-pin {
@@ -366,9 +328,31 @@
       height: 162px;
       min-width: 0;
       display: grid;
-      grid-template-rows: auto auto auto 1fr auto;
+      grid-template-rows: auto auto auto auto 1fr auto;
       gap: 6px;
       padding: 10px;
+    }
+
+    .wall-card-kicker {
+      min-width: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin: 0;
+      color: var(--paper);
+      font-family: var(--font-display);
+      font-size: 15px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .wall-card-kicker span {
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
 
     .wall-card h2 {
@@ -558,10 +542,21 @@
       background: #070808;
     }
 
-    .modal-card img {
+    .modal-poster-button {
+      width: 100%;
+      min-height: 420px;
+      display: block;
+      border: 0;
+      padding: 0;
+      background: #020303;
+      cursor: zoom-in;
+    }
+
+    .modal-poster-button img {
       width: 100%;
       height: 100%;
-      min-height: 420px;
+      min-height: inherit;
+      display: block;
       object-fit: contain;
       background: #020303;
     }
@@ -688,6 +683,44 @@
       background: var(--cyan);
     }
 
+    .poster-lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 70;
+      display: none;
+      place-items: center;
+      padding: 22px;
+      background: rgba(0, 0, 0, .9);
+    }
+
+    .poster-lightbox.open { display: grid; }
+
+    .poster-lightbox img {
+      max-width: min(92vw, 880px);
+      max-height: 88vh;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      background: #020303;
+      box-shadow: 0 24px 70px rgba(0, 0, 0, .62);
+    }
+
+    .poster-lightbox-close {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      min-height: 38px;
+      border: 1px solid rgba(229, 222, 209, .38);
+      color: var(--paper);
+      background: rgba(5, 6, 6, .88);
+      padding: 9px 12px;
+      font-family: var(--font-display);
+      font-size: 15px;
+      font-weight: 900;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
     @media (max-width: 1180px) {
       .poster-waterfall { grid-template-columns: repeat(4, minmax(0, 1fr)); }
       .wall-controls { grid-template-columns: minmax(220px, 1fr) repeat(3, minmax(140px, 180px)); }
@@ -704,7 +737,7 @@
       .wall-card h2 { font-size: 20px; }
       .wall-chips { display: none; }
       .modal-card { grid-template-columns: 1fr; }
-      .modal-card img { min-height: 0; }
+      .modal-poster-button { min-height: min(70vh, 560px); }
     }
 
     @media (max-width: 560px) {
@@ -714,8 +747,7 @@
       .poster-waterfall { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; }
       .wall-card { grid-template-rows: auto 104px; }
       .wall-card-body { height: 104px; padding: 7px; gap: 4px; }
-      .wall-date-stamp,
-      .status-pin { min-height: 22px; padding: 4px 5px; font-size: 10px; }
+      .wall-card-kicker { font-size: 11px; gap: 5px; }
       .wall-card h2 { font-size: 16px; }
       .wall-venue,
       .wall-lineup,
@@ -851,7 +883,9 @@
 
   <div class="modal" id="posterModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modal-card">
-      <img id="modalPoster" src="assets/posters/santa-k-optimized.jpg" alt="">
+      <button class="modal-poster-button" type="button" id="modalPosterOpen" aria-label="Open large poster image">
+        <img id="modalPoster" src="assets/posters/santa-k-optimized.jpg" alt="">
+      </button>
       <div class="modal-body">
         <button class="modal-back-button" type="button" id="posterModalBack" aria-label="Back to events">&lt;- Back to events</button>
         <h2 id="modalTitle"></h2>
@@ -862,10 +896,16 @@
         <div class="modal-actions">
           <a class="button" id="modalEventPage" href="#">Event page</a>
           <a class="button primary" id="modalTicket" href="#" target="_blank" rel="noreferrer">Tickets</a>
+          <button class="button" type="button" id="modalPosterLarge">Large poster</button>
           <button class="button" type="button" id="closeModal">Close</button>
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="poster-lightbox" id="posterLightbox" role="dialog" aria-modal="true" aria-label="Large poster image">
+    <button class="poster-lightbox-close" type="button" id="posterLightboxClose">Close poster</button>
+    <img id="posterLightboxImage" src="assets/posters/santa-k-optimized.jpg" alt="">
   </div>
 
   <script>
@@ -921,6 +961,9 @@
     const posterCount = document.getElementById("posterCount");
     const posterScope = document.getElementById("posterScope");
     const modal = document.getElementById("posterModal");
+    const modalPoster = document.getElementById("modalPoster");
+    const posterLightbox = document.getElementById("posterLightbox");
+    const posterLightboxImage = document.getElementById("posterLightboxImage");
 
     function escapeHtml(value) {
       return String(value ?? "").replace(/[&<>"']/g, char => ({
@@ -1288,23 +1331,17 @@
           <article class="wall-card ${visual.hasPoster ? "has-event-poster" : "has-default-poster"}" data-id="${escapeHtml(event.id)}" tabindex="0" role="button" aria-label="${escapeHtml(`Open ${event.title}, ${event.date}, ${event.venue}`)}">
             <div class="wall-card-poster">
               <img src="${escapeHtml(visual.src)}" alt="${escapeHtml(visual.alt)}" loading="lazy" decoding="async">
-              <div class="wall-stamp-row">
-                <span class="wall-date-stamp">${escapeHtml(event.date)}</span>
-                <span class="status-pin status-${escapeHtml(eventEffectiveStatus(event))}">${escapeHtml(eventStatusLabel(event))}</span>
-              </div>
               ${visual.hasPoster ? "" : '<span class="poster-gap-pin">No flyer saved yet</span>'}
             </div>
             <div class="wall-card-body">
+              <p class="wall-card-kicker"><span>${escapeHtml(event.date)}</span><span>${escapeHtml(event.time || "TBA")}</span></p>
               <h2>${escapeHtml(event.title)}</h2>
-              <p class="wall-venue">${venueGuideLinkHtml(event.venue)} · ${escapeHtml(eventCity(event))}</p>
-              <p class="wall-card-meta"><span>${escapeHtml(event.time || "TBA")}</span><span>${escapeHtml(metaSound)}</span></p>
+              <p class="wall-venue">${venueGuideLinkHtml(event.venue)} / ${escapeHtml(eventCity(event))}</p>
+              <p class="wall-card-meta"><span>${escapeHtml(metaSound)}</span><span>${escapeHtml(eventTemporalStatus(event) === "past" ? "Archive" : (event.price || "Tickets when listed"))}</span></p>
               ${lineupPreviewHtml(event)}
-              <div class="wall-chips">
-                ${eventSignalChips(event, 4).map(tag => `<span class="wall-chip">${escapeHtml(tag)}</span>`).join("")}
-              </div>
               <div class="wall-card-actions">
                 ${ticketActionHtml(event)}
-                <span>${escapeHtml(eventTemporalStatus(event) === "past" ? "Archive" : (event.price || eventStatusLabel(event)))}</span>
+                <span>${escapeHtml(eventTemporalStatus(event) === "past" ? "Archive" : (event.price || "Details"))}</span>
               </div>
             </div>
           </article>
@@ -1315,8 +1352,10 @@
     function openModal(event) {
       if (!event) return;
       const visual = eventVisual(event);
-      document.getElementById("modalPoster").src = visual.src;
-      document.getElementById("modalPoster").alt = visual.alt;
+      modalPoster.src = visual.src;
+      modalPoster.alt = visual.alt;
+      posterLightboxImage.src = visual.src;
+      posterLightboxImage.alt = visual.alt;
       document.getElementById("modalTitle").textContent = event.title;
       document.getElementById("modalCopy").textContent = publicText(event.description || "");
       document.getElementById("modalTrustPolicy").innerHTML = eventTrustLinkHtml();
@@ -1334,6 +1373,15 @@
 
     function closeModal() {
       modal.classList.remove("open");
+    }
+
+    function openPosterLightbox() {
+      if (!modalPoster.src) return;
+      posterLightbox.classList.add("open");
+    }
+
+    function closePosterLightbox() {
+      posterLightbox.classList.remove("open");
     }
 
     [searchInput, statusFilter, cityFilter, vibeFilter].forEach(control => {
@@ -1355,11 +1403,22 @@
     });
     document.getElementById("posterModalBack").addEventListener("click", closeModal);
     document.getElementById("closeModal").addEventListener("click", closeModal);
+    document.getElementById("modalPosterOpen").addEventListener("click", openPosterLightbox);
+    document.getElementById("modalPosterLarge").addEventListener("click", openPosterLightbox);
+    document.getElementById("posterLightboxClose").addEventListener("click", closePosterLightbox);
     modal.addEventListener("click", event => {
       if (event.target === modal) closeModal();
     });
+    posterLightbox.addEventListener("click", event => {
+      if (event.target === posterLightbox) closePosterLightbox();
+    });
     document.addEventListener("keydown", event => {
-      if (event.key === "Escape") closeModal();
+      if (event.key !== "Escape") return;
+      if (posterLightbox.classList.contains("open")) {
+        closePosterLightbox();
+        return;
+      }
+      closeModal();
     });
 
     window.PosterWallData.loadPosterWallData({ win: window })
