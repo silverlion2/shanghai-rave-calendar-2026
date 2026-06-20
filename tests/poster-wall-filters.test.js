@@ -203,8 +203,11 @@ test("poster wall uses dense grid card layout across desktop tablet and mobile",
   assert.match(html, /grid-template-columns: repeat\(3, minmax\(0, 1fr\)\)/);
   assert.match(html, /\.wall-card\s*{[\s\S]*grid-template-rows: auto 162px/);
   assert.match(html, /\.wall-card-body\s*{[\s\S]*height: 162px/);
-  assert.match(html, /object-fit: contain/);
-  assert.match(html, /\.wall-card:nth-child\(10n\+2\)/);
+  assert.match(html, /\.wall-column\s*{[\s\S]*flex-direction: column/);
+  assert.match(html, /function posterWallColumnCount/);
+  assert.match(html, /\.wall-card-poster img\s*{[\s\S]*object-fit: cover/);
+  assert.match(html, /\.wall-column:nth-child\(2\)/);
+  assert.doesNotMatch(html, /\.wall-card:nth-child\(10n/);
   assert.doesNotMatch(html, /wall-stamp-row/);
   assert.doesNotMatch(html, /status-pin/);
   assert.doesNotMatch(html, /wall-date-stamp/);
