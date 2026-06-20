@@ -2107,6 +2107,8 @@
   <script src="assets/account-system.js?v=account-ux-20260616"></script>
   <script src="data/social-profiles.js"></script>
   <script src="assets/social-fusion.js"></script>
+  <script defer src="assets/support-button.js?v=coffee-20260620e"></script>
+  <script defer src="assets/collapsible-search.js?v=compact-search-20260620"></script>
 </head>
 <body>
   <canvas class="signal-canvas" id="signalCanvas" aria-hidden="true"></canvas>
@@ -3292,43 +3294,8 @@
       "youshan-warmup": "Youshan / Wigwam"
     };
 
-    const posterUrlOverrides = {
-      "milo-cosmjn": "assets/posters/milo-cosmjn.jpg",
-      "fruitygroove-soul-navigator": "assets/posters/fruitygroove-soul-navigator.png",
-      "matisa-limsum": "assets/posters/matisa-limsum.jpg",
-      "fengyun-5": "assets/posters/fengyun-5.jpg",
-      "kollin": "assets/posters/kollin.jpg",
-      "horizon": "assets/posters/horizon.jpg",
-      "nosaj-thing": "assets/posters/nosaj-thing.png",
-      "santa-k": "assets/posters/santa-k.png",
-      "synth-crush": "assets/posters/synth-crush.jpg",
-      "nova-sunset-sessions-flair": "assets/posters/nova-sunset-sessions-flair.jpg",
-      "alter-pavillon": "assets/posters/alter-pavillon.png",
-      "night-at-museum-90s-disco": "assets/posters/night-at-museum-90s-disco.jpg",
-      "photocult-mask-desire-auction": "assets/posters/photocult-mask-desire-auction.png",
-      "mrd": "assets/posters/mrd.png",
-      "afrowave-takeover-la-burg": "assets/posters/afrowave-takeover-la-burg.jpg",
-      "dark-room": "assets/posters/dark-room.jpg",
-      "nova-summer-splash-pool-party": "assets/posters/nova-summer-splash-pool-party.jpg",
-      "sunset-sundays-dome": "assets/posters/sunset-sundays-dome.jpg"
-    };
-    const optimizedPosterUrlOverrides = {
-      "assets/posters/alter-pavillon.png": "assets/posters/alter-pavillon-optimized.jpg",
-      "assets/posters/cltx-abyss.jpg": "assets/posters/cltx-abyss-optimized.jpg",
-      "assets/posters/cyber-buddha.jpg": "assets/posters/cyber-buddha-optimized.jpg",
-      "assets/posters/dark-room.jpg": "assets/posters/dark-room-optimized.jpg",
-      "assets/posters/fruitygroove-soul-navigator.png": "assets/posters/fruitygroove-soul-navigator-optimized.jpg",
-      "assets/posters/horizon.jpg": "assets/posters/horizon-optimized.jpg",
-      "assets/posters/kollin.jpg": "assets/posters/kollin-optimized.jpg",
-      "assets/posters/matisa-limsum.jpg": "assets/posters/matisa-limsum-optimized.jpg",
-      "assets/posters/milo-cosmjn.jpg": "assets/posters/milo-cosmjn-optimized.jpg",
-      "assets/posters/mrd.png": "assets/posters/mrd-optimized.jpg",
-      "assets/posters/nosaj-thing.png": "assets/posters/nosaj-thing-optimized.jpg",
-      "assets/posters/photocult-mask-desire-auction.png": "assets/posters/photocult-mask-desire-auction-optimized.jpg",
-      "assets/posters/santa-k.png": "assets/posters/santa-k-optimized.jpg",
-      "assets/posters/synth-crush.jpg": "assets/posters/synth-crush-optimized.jpg",
-      "assets/posters/the-woods.jpg": "assets/posters/the-woods-optimized.jpg"
-    };
+    // posterUrlOverrides removed: posters now served from Supabase via event.posterUrl
+    const optimizedPosterUrlOverrides = {};
 
     function escapeHtml(value) {
       return String(value).replace(/[&<>"']/g, char => ({
