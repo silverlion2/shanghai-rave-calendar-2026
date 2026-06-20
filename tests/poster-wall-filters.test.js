@@ -57,8 +57,8 @@ function posterWallFiltersForTest() {
     const optimizedPosterUrlOverrides = {};
     const posterDisplayByEventId = new Map();
     const searchInput = { value: "" };
-    const statusFilter = { value: "active" };
-    const cityFilter = { value: "Shanghai" };
+    const statusFilter = { value: "all" };
+    const cityFilter = { value: "all" };
     const vibeFilter = { value: "all" };
     const sortFilter = { value: "smart" };
     function eventSoundTags() {
@@ -105,7 +105,11 @@ function posterWallImagesForTest() {
   `)();
 }
 
-test("poster wall default active filter excludes past dates and past status rows", () => {
+test("poster wall default filters include past, current, watch, future, and all-city rows", () => {
+  const html = readSiteFile("poster-wall.html");
+  assert.match(html, /<select class="select" id="statusFilter"[\s\S]*?>\s*<option value="all">All dates<\/option>/);
+  assert.match(html, /<select class="select" id="cityFilter"[\s\S]*?>\s*<option value="all">All cities<\/option>/);
+
   const filters = posterWallFiltersForTest();
   filters.setEvents([
     { id: "past-date", title: "Past date", sortDate: "2026-06-14", status: "upcoming" },
@@ -114,11 +118,12 @@ test("poster wall default active filter excludes past dates and past status rows
     { id: "future-past-status", title: "Future past status", sortDate: "2026-06-16", status: "past" },
     { id: "future-watch", title: "Future watch", sortDate: "2026-06-17", status: "watch" },
     { id: "future-upcoming", title: "Future upcoming", sortDate: "2026-06-18", status: "upcoming" },
+    { id: "other-city", title: "Other city", city: "Hangzhou", sortDate: "2026-06-19", status: "upcoming" },
   ]);
 
   assert.deepEqual(
     filters.filteredEvents().map(event => event.id),
-    ["current-watch", "current-upcoming", "future-watch", "future-upcoming"],
+    ["current-watch", "current-upcoming", "future-watch", "future-upcoming", "other-city", "past-date", "future-past-status"],
   );
 });
 
@@ -189,7 +194,7 @@ test("poster wall past archive includes both past dates and explicit past status
   );
 });
 
-test("poster wall city filter defaults to Shanghai and supports all cities", () => {
+test("poster wall city filter defaults to all cities and can isolate Shanghai", () => {
   const filters = posterWallFiltersForTest();
   filters.setEvents([
     { id: "legacy-shanghai", title: "Legacy Shanghai", sortDate: "2026-06-16", status: "upcoming" },
@@ -199,13 +204,13 @@ test("poster wall city filter defaults to Shanghai and supports all cities", () 
 
   assert.deepEqual(
     filters.filteredEvents().map(event => event.id),
-    ["legacy-shanghai", "explicit-shanghai"],
+    ["legacy-shanghai", "explicit-shanghai", "hangzhou-upload"],
   );
 
-  filters.setCity("all");
+  filters.setCity("Shanghai");
   assert.deepEqual(
     filters.filteredEvents().map(event => event.id),
-    ["legacy-shanghai", "explicit-shanghai", "hangzhou-upload"],
+    ["legacy-shanghai", "explicit-shanghai"],
   );
 });
 

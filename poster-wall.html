@@ -769,15 +769,15 @@
     <section class="wall-controls" aria-label="Event filters">
       <input class="search" id="searchInput" type="search" placeholder="Filter events">
       <select class="select" id="statusFilter" aria-label="Status filter">
+        <option value="all">All dates</option>
         <option value="active">Now + next</option>
         <option value="current">Now</option>
         <option value="upcoming">Next</option>
-        <option value="all">All dates</option>
         <option value="past">Archive</option>
       </select>
       <select class="select" id="cityFilter" aria-label="City filter">
+        <option value="all">All cities</option>
         <option value="Shanghai">Shanghai</option>
-        <option value="all">Cities</option>
       </select>
       <select class="select" id="vibeFilter" aria-label="Vibe filter">
         <option value="all">Vibe</option>
@@ -1078,15 +1078,15 @@
     }
 
     function refreshCityFilterOptions() {
-      const selected = cityFilter.value || "Shanghai";
+      const selected = cityFilter.value || "all";
       const cities = [...new Set(events.map(eventCity))].sort((a, b) => a.localeCompare(b));
       const ordered = ["Shanghai", ...cities.filter(city => city !== "Shanghai")];
       cityFilter.innerHTML = [
-        '<option value="Shanghai">Shanghai</option>',
         '<option value="all">All cities</option>',
+        '<option value="Shanghai">Shanghai</option>',
         ...ordered.filter(city => city !== "Shanghai").map(city => `<option value="${escapeHtml(city)}">${escapeHtml(city)}</option>`)
       ].join("");
-      cityFilter.value = selected === "all" || ordered.includes(selected) ? selected : "Shanghai";
+      cityFilter.value = selected === "all" || ordered.includes(selected) ? selected : "all";
     }
 
     function eventDate(event) {
