@@ -42,6 +42,7 @@ function posterWallFiltersForTest() {
     "eventMatchesCity",
     "posterUrl",
     "eventHasPoster",
+    "eventMatchesPoster",
     "eventStartTimestamp",
     "eventTemporalRank",
     "compareEventText",
@@ -59,6 +60,7 @@ function posterWallFiltersForTest() {
     const searchInput = { value: "" };
     const statusFilter = { value: "all" };
     const cityFilter = { value: "all" };
+    const posterFilter = { value: "with-poster" };
     const vibeFilter = { value: "all" };
     const sortFilter = { value: "smart" };
     function eventSoundTags() {
@@ -80,6 +82,9 @@ function posterWallFiltersForTest() {
       },
       setCity(next) {
         cityFilter.value = next;
+      },
+      setPoster(next) {
+        posterFilter.value = next;
       },
       setSort(next) {
         sortFilter.value = next;
@@ -105,20 +110,22 @@ function posterWallImagesForTest() {
   `)();
 }
 
-test("poster wall default filters include past, current, watch, future, and all-city rows", () => {
+test("poster wall defaults to poster-backed rows while keeping dates and cities broad", () => {
   const html = readSiteFile("poster-wall.html");
   assert.match(html, /<select class="select" id="statusFilter"[\s\S]*?>\s*<option value="all">All dates<\/option>/);
   assert.match(html, /<select class="select" id="cityFilter"[\s\S]*?>\s*<option value="all">All cities<\/option>/);
+  assert.match(html, /<select class="select" id="posterFilter"[\s\S]*?>\s*<option value="with-poster">Has poster<\/option>/);
 
   const filters = posterWallFiltersForTest();
   filters.setEvents([
-    { id: "past-date", title: "Past date", sortDate: "2026-06-14", status: "upcoming" },
-    { id: "current-watch", title: "Current watch", sortDate: "2026-06-15", status: "watch" },
-    { id: "current-upcoming", title: "Current upcoming", sortDate: "2026-06-15", status: "upcoming" },
-    { id: "future-past-status", title: "Future past status", sortDate: "2026-06-16", status: "past" },
-    { id: "future-watch", title: "Future watch", sortDate: "2026-06-17", status: "watch" },
-    { id: "future-upcoming", title: "Future upcoming", sortDate: "2026-06-18", status: "upcoming" },
-    { id: "other-city", title: "Other city", city: "Hangzhou", sortDate: "2026-06-19", status: "upcoming" },
+    { id: "past-date", title: "Past date", sortDate: "2026-06-14", status: "upcoming", posterUrl: "assets/posters/past.jpg" },
+    { id: "current-watch", title: "Current watch", sortDate: "2026-06-15", status: "watch", posterUrl: "assets/posters/current-watch.jpg" },
+    { id: "current-upcoming", title: "Current upcoming", sortDate: "2026-06-15", status: "upcoming", posterUrl: "assets/posters/current-upcoming.jpg" },
+    { id: "future-past-status", title: "Future past status", sortDate: "2026-06-16", status: "past", posterUrl: "assets/posters/future-past.jpg" },
+    { id: "future-watch", title: "Future watch", sortDate: "2026-06-17", status: "watch", posterUrl: "assets/posters/future-watch.jpg" },
+    { id: "future-upcoming", title: "Future upcoming", sortDate: "2026-06-18", status: "upcoming", posterUrl: "assets/posters/future-upcoming.jpg" },
+    { id: "other-city", title: "Other city", city: "Hangzhou", sortDate: "2026-06-19", status: "upcoming", posterUrl: "assets/posters/other-city.jpg" },
+    { id: "no-poster", title: "No Poster", sortDate: "2026-06-20", status: "upcoming" },
   ]);
 
   assert.deepEqual(
@@ -127,14 +134,40 @@ test("poster wall default filters include past, current, watch, future, and all-
   );
 });
 
+test("poster wall poster filter can isolate missing poster rows or show all rows", () => {
+  const filters = posterWallFiltersForTest();
+  filters.setEvents([
+    { id: "with-poster", title: "With Poster", sortDate: "2026-06-16", status: "upcoming", posterUrl: "assets/posters/with.jpg" },
+    { id: "with-archive", title: "With Archive", sortDate: "2026-06-17", status: "upcoming", imageUrl: "assets/posters/archive.jpg" },
+    { id: "missing-poster", title: "Missing Poster", sortDate: "2026-06-18", status: "upcoming" },
+  ]);
+
+  assert.deepEqual(
+    filters.filteredEvents().map(event => event.id),
+    ["with-poster", "with-archive"],
+  );
+
+  filters.setPoster("no-poster");
+  assert.deepEqual(
+    filters.filteredEvents().map(event => event.id),
+    ["missing-poster"],
+  );
+
+  filters.setPoster("all");
+  assert.deepEqual(
+    filters.filteredEvents().map(event => event.id),
+    ["with-poster", "with-archive", "missing-poster"],
+  );
+});
+
 test("poster wall status filter can isolate current and future upcoming events", () => {
   const filters = posterWallFiltersForTest();
   filters.setEvents([
-    { id: "past-date", title: "Past date", sortDate: "2026-06-14", status: "upcoming" },
-    { id: "current-watch", title: "Current watch", sortDate: "2026-06-15", status: "watch" },
-    { id: "current-upcoming", title: "Current upcoming", sortDate: "2026-06-15", status: "upcoming" },
-    { id: "future-watch", title: "Future watch", sortDate: "2026-06-17", status: "watch" },
-    { id: "future-upcoming", title: "Future upcoming", sortDate: "2026-06-18", status: "upcoming" },
+    { id: "past-date", title: "Past date", sortDate: "2026-06-14", status: "upcoming", posterUrl: "assets/posters/past.jpg" },
+    { id: "current-watch", title: "Current watch", sortDate: "2026-06-15", status: "watch", posterUrl: "assets/posters/current-watch.jpg" },
+    { id: "current-upcoming", title: "Current upcoming", sortDate: "2026-06-15", status: "upcoming", posterUrl: "assets/posters/current-upcoming.jpg" },
+    { id: "future-watch", title: "Future watch", sortDate: "2026-06-17", status: "watch", posterUrl: "assets/posters/future-watch.jpg" },
+    { id: "future-upcoming", title: "Future upcoming", sortDate: "2026-06-18", status: "upcoming", posterUrl: "assets/posters/future-upcoming.jpg" },
   ]);
 
   filters.setStatus("current");
@@ -183,9 +216,9 @@ test("poster wall past archive includes both past dates and explicit past status
   const filters = posterWallFiltersForTest();
   filters.setStatus("past");
   filters.setEvents([
-    { id: "past-date", title: "Past date", sortDate: "2026-06-14", status: "past" },
-    { id: "future-past-status", title: "Future past status", sortDate: "2026-06-16", status: "past" },
-    { id: "future-watch", title: "Future watch", sortDate: "2026-06-17", status: "watch" },
+    { id: "past-date", title: "Past date", sortDate: "2026-06-14", status: "past", posterUrl: "assets/posters/past.jpg" },
+    { id: "future-past-status", title: "Future past status", sortDate: "2026-06-16", status: "past", posterUrl: "assets/posters/future-past.jpg" },
+    { id: "future-watch", title: "Future watch", sortDate: "2026-06-17", status: "watch", posterUrl: "assets/posters/future-watch.jpg" },
   ]);
 
   assert.deepEqual(
@@ -197,9 +230,9 @@ test("poster wall past archive includes both past dates and explicit past status
 test("poster wall city filter defaults to all cities and can isolate Shanghai", () => {
   const filters = posterWallFiltersForTest();
   filters.setEvents([
-    { id: "legacy-shanghai", title: "Legacy Shanghai", sortDate: "2026-06-16", status: "upcoming" },
-    { id: "explicit-shanghai", title: "Explicit Shanghai", city: "Shanghai", sortDate: "2026-06-17", status: "upcoming" },
-    { id: "hangzhou-upload", title: "Hangzhou Upload", city: "Hangzhou", sortDate: "2026-06-18", status: "upcoming" },
+    { id: "legacy-shanghai", title: "Legacy Shanghai", sortDate: "2026-06-16", status: "upcoming", posterUrl: "assets/posters/legacy.jpg" },
+    { id: "explicit-shanghai", title: "Explicit Shanghai", city: "Shanghai", sortDate: "2026-06-17", status: "upcoming", posterUrl: "assets/posters/explicit.jpg" },
+    { id: "hangzhou-upload", title: "Hangzhou Upload", city: "Hangzhou", sortDate: "2026-06-18", status: "upcoming", posterUrl: "assets/posters/hangzhou.jpg" },
   ]);
 
   assert.deepEqual(
@@ -216,6 +249,7 @@ test("poster wall city filter defaults to all cities and can isolate Shanghai", 
 
 test("poster wall default sort keeps nearby events first and promotes posters within the same date", () => {
   const filters = posterWallFiltersForTest();
+  filters.setPoster("all");
   filters.setEvents([
     { id: "tomorrow-poster", title: "Tomorrow Poster", sortDate: "2026-06-16", time: "20:00", status: "upcoming", posterUrl: "assets/posters/tomorrow.jpg" },
     { id: "today-no-poster", title: "Today No Poster", sortDate: "2026-06-15", time: "20:00", status: "upcoming" },
