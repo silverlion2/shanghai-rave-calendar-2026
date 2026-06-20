@@ -156,10 +156,10 @@
 
     .wall-head {
       display: grid;
-      grid-template-columns: minmax(280px, 390px) minmax(0, 1fr);
-      gap: 24px;
+      grid-template-columns: minmax(280px, 430px);
+      gap: 0;
       align-items: end;
-      margin-bottom: 20px;
+      margin-bottom: 12px;
     }
 
     .kicker {
@@ -197,30 +197,26 @@
       transform: rotate(-1deg);
     }
 
-    .wall-copy {
-      max-width: 760px;
-      margin: 0;
-      color: var(--paper);
-      font-size: 15px;
-      line-height: 1.45;
-    }
-
     .wall-controls {
       display: grid;
-      grid-template-columns: minmax(260px, 1fr) 190px 180px 190px;
-      gap: 14px;
-      margin: 22px 0 20px;
+      grid-template-columns: minmax(180px, 1fr) 112px 112px 116px 132px 36px;
+      gap: 6px;
+      align-items: center;
+      margin: 10px 0 12px;
     }
 
     .search,
     .select {
       width: 100%;
-      min-height: 46px;
+      min-height: 34px;
       border: 1px solid rgba(229, 222, 209, .35);
       border-radius: 0;
       color: var(--paper);
       background: rgba(5, 6, 6, .78);
-      padding: 0 12px;
+      padding: 0 9px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      text-transform: uppercase;
       outline: none;
     }
 
@@ -230,24 +226,28 @@
       box-shadow: 0 0 0 2px rgba(54, 199, 231, .18);
     }
 
-    .wall-meta {
-      display: flex;
+    .control-icon-link {
+      width: 36px;
+      min-height: 34px;
+      display: inline-flex;
       align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      margin-bottom: 12px;
-      border-top: 1px solid rgba(229, 222, 209, .22);
-      padding-top: 12px;
-      color: var(--muted);
-      font-size: 12px;
+      justify-content: center;
+      border: 1px solid rgba(54, 199, 231, .5);
+      color: var(--cyan);
+      background: rgba(54, 199, 231, .06);
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 900;
+      line-height: 1;
+      text-decoration: none;
       text-transform: uppercase;
     }
 
-    .wall-meta b {
-      color: var(--cyan);
-      font-family: var(--font-display);
-      font-size: 26px;
-      line-height: 1;
+    .control-icon-link:hover,
+    .control-icon-link:focus-visible {
+      color: var(--void);
+      background: var(--cyan);
+      outline: 0;
     }
 
     .poster-waterfall {
@@ -274,7 +274,7 @@
       width: 100%;
       min-width: 0;
       display: grid;
-      grid-template-rows: auto 162px;
+      grid-template-rows: auto 76px;
       overflow: hidden;
       border: 1px solid rgba(229, 222, 209, .22);
       background:
@@ -333,12 +333,12 @@
     }
 
     .wall-card-body {
-      height: 162px;
+      height: 76px;
       min-width: 0;
       display: grid;
-      grid-template-rows: auto auto auto auto 1fr auto;
-      gap: 6px;
-      padding: 10px;
+      grid-template-rows: auto 1fr auto auto;
+      gap: 4px;
+      padding: 8px;
     }
 
     .wall-card-kicker {
@@ -350,7 +350,7 @@
       margin: 0;
       color: var(--paper);
       font-family: var(--font-display);
-      font-size: 15px;
+      font-size: 10px;
       font-weight: 900;
       line-height: 1;
       text-transform: uppercase;
@@ -370,16 +370,15 @@
       color: var(--paper);
       display: -webkit-box;
       font-family: var(--font-display);
-      font-size: clamp(20px, 1.7vw, 27px);
+      font-size: clamp(13px, 1vw, 18px);
       font-weight: 900;
-      line-height: .92;
+      line-height: .94;
       text-transform: uppercase;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
     }
 
     .wall-venue,
-    .wall-lineup,
     .wall-card-meta {
       min-width: 0;
       margin: 0;
@@ -389,7 +388,7 @@
     .wall-venue {
       overflow: hidden;
       color: var(--cyan);
-      font-size: 11px;
+      font-size: 8px;
       text-overflow: ellipsis;
       text-transform: uppercase;
       white-space: nowrap;
@@ -404,19 +403,6 @@
     .venue-guide-link:hover {
       color: var(--paper);
       border-bottom-color: var(--paper);
-    }
-
-    .wall-lineup {
-      overflow: hidden;
-      color: var(--paper);
-      font-size: 11px;
-      text-overflow: ellipsis;
-      text-transform: uppercase;
-      white-space: nowrap;
-    }
-
-    .wall-lineup span {
-      color: var(--muted);
     }
 
     .trust-inline {
@@ -468,14 +454,13 @@
       font-weight: 900;
     }
 
-    .wall-card-meta,
-    .wall-card-actions {
+    .wall-card-meta {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-start;
       gap: 7px;
       color: var(--muted);
-      font-size: 10px;
+      font-size: 8px;
       text-transform: uppercase;
     }
 
@@ -484,41 +469,6 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-    }
-
-    .wall-card-actions {
-      border-top: 1px solid rgba(229, 222, 209, .14);
-      padding-top: 7px;
-    }
-
-    .wall-ticket-link,
-    .wall-card-detail {
-      min-width: 0;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 25px;
-      border: 1px solid rgba(229, 222, 209, .24);
-      padding: 5px 7px;
-      color: var(--paper);
-      text-decoration: none;
-      font-family: var(--font-display);
-      font-size: 12px;
-      font-weight: 900;
-      line-height: 1;
-      text-transform: uppercase;
-      white-space: nowrap;
-    }
-
-    .wall-ticket-link {
-      color: var(--void);
-      border-color: var(--cyan);
-      background: var(--cyan);
-    }
-
-    .wall-card-detail:hover,
-    .wall-ticket-link:hover {
-      filter: brightness(1.12);
     }
 
     .empty {
@@ -731,19 +681,22 @@
 
     @media (max-width: 1180px) {
       .poster-waterfall { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-      .wall-controls { grid-template-columns: minmax(220px, 1fr) repeat(3, minmax(140px, 180px)); }
+      .wall-controls { grid-template-columns: minmax(170px, 1fr) repeat(4, minmax(96px, 1fr)) 36px; }
     }
 
     @media (max-width: 820px) {
       .shell { width: min(100% - 28px, 720px); }
       .primary-nav { justify-content: flex-start; gap: 15px; overflow-x: auto; }
       .wall-head { grid-template-columns: 1fr; }
-      .wall-controls { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .wall-controls { grid-template-columns: minmax(0, 1fr) 112px 112px 36px; }
+      .control-icon-link { grid-column: 4; grid-row: 1; }
+      #vibeFilter { grid-column: 1 / 3; }
+      #sortFilter { grid-column: 3 / 5; }
       .poster-waterfall { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
       .wall-column { gap: 8px; }
-      .wall-card { grid-template-rows: auto 130px; }
-      .wall-card-body { height: 130px; padding: 8px; gap: 5px; }
-      .wall-card h2 { font-size: 20px; }
+      .wall-card { grid-template-rows: auto 62px; }
+      .wall-card-body { height: 62px; padding: 6px; gap: 2px; }
+      .wall-card h2 { font-size: 13px; }
       .wall-chips { display: none; }
       .modal-card { grid-template-columns: 1fr; }
       .modal-poster-button { min-height: min(70vh, 560px); }
@@ -752,22 +705,23 @@
     @media (max-width: 560px) {
       h1 { font-size: 64px; }
       .shell { width: min(100% - 18px, 520px); }
-      .wall-controls { grid-template-columns: 1fr; }
+      .wall-controls { grid-template-columns: repeat(2, minmax(0, 1fr)) 36px; }
+      .search { grid-column: 1 / 3; }
+      .control-icon-link { grid-column: 3; grid-row: 1; }
+      #statusFilter,
+      #cityFilter,
+      #vibeFilter,
+      #sortFilter { grid-column: span 1; }
       .poster-waterfall { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; }
       .wall-column { gap: 7px; }
       .wall-column:nth-child(2) { padding-top: 18px; }
       .wall-column:nth-child(3) { padding-top: 8px; }
-      .wall-card { grid-template-rows: auto 104px; }
-      .wall-card-body { height: 104px; padding: 7px; gap: 4px; }
-      .wall-card-kicker { font-size: 11px; gap: 5px; }
-      .wall-card h2 { font-size: 16px; }
+      .wall-card { grid-template-rows: auto 54px; }
+      .wall-card-body { height: 54px; padding: 5px; gap: 2px; }
+      .wall-card-kicker { font-size: 8px; gap: 4px; }
+      .wall-card h2 { font-size: 10px; }
       .wall-venue,
-      .wall-lineup,
-      .wall-card-meta { font-size: 9px; }
-      .wall-lineup { display: none; }
-      .wall-card-actions { padding-top: 5px; }
-      .wall-ticket-link,
-      .wall-card-detail { min-height: 22px; padding: 4px 5px; font-size: 10px; }
+      .wall-card-meta { font-size: 7px; }
       .modal-facts { grid-template-columns: 1fr; }
     }
     .nav-beta {
@@ -791,7 +745,7 @@
 <body>
   <main class="shell dispatch-shell">
     <nav class="primary-nav" aria-label="Primary">
-      <a class="nav-link active" href="poster-wall.html">Events</a>
+      <a class="nav-link active" href="poster-wall.html">Poster</a>
       <a class="nav-link" href="index.html">Calendar</a>
       <a class="nav-link" href="planner.html">Planner <small class="nav-beta">beta</small></a>
       <a class="nav-link" href="live-room.html">Tonight <small class="nav-beta">beta</small></a>
@@ -810,24 +764,23 @@
         <h1>Events</h1>
         <p class="dispatch-strip">Basement Dispatch / poster-backed cards</p>
       </div>
-      <p class="wall-copy">Scan Shanghai club posters in a dense wall. Current and future cards show the essentials first, with ticket routes only when a usable link exists.</p>
     </header>
 
     <section class="wall-controls" aria-label="Event filters">
       <input class="search" id="searchInput" type="search" placeholder="Filter events">
       <select class="select" id="statusFilter" aria-label="Status filter">
-        <option value="active">Current + upcoming events</option>
-        <option value="current">Current events</option>
-        <option value="upcoming">Upcoming events</option>
-        <option value="all">All event dates</option>
-        <option value="past">Past archive</option>
+        <option value="active">Now + next</option>
+        <option value="current">Now</option>
+        <option value="upcoming">Next</option>
+        <option value="all">All dates</option>
+        <option value="past">Archive</option>
       </select>
       <select class="select" id="cityFilter" aria-label="City filter">
         <option value="Shanghai">Shanghai</option>
-        <option value="all">All cities</option>
+        <option value="all">Cities</option>
       </select>
       <select class="select" id="vibeFilter" aria-label="Vibe filter">
-        <option value="all">All vibes</option>
+        <option value="all">Vibe</option>
         <option value="hard">Hard techno</option>
         <option value="hard-techno">Hard techno refined</option>
         <option value="industrial">Industrial</option>
@@ -847,15 +800,15 @@
         <option value="warehouse">Warehouse</option>
         <option value="rooftop">Rooftop / open-air</option>
       </select>
+      <select class="select" id="sortFilter" aria-label="Sort events">
+        <option value="smart">Soon + art</option>
+        <option value="soonest">Soonest</option>
+        <option value="poster-first">Art first</option>
+        <option value="latest">Latest</option>
+        <option value="venue">Venue A-Z</option>
+      </select>
+      <a class="control-icon-link" href="contribute.html" aria-label="Missing event" title="Missing event">+</a>
     </section>
-
-    <div class="wall-meta" aria-live="polite">
-      <div style="display: flex; gap: 16px; align-items: center;">
-        <span><b id="posterCount">0</b> event cards</span>
-        <span id="posterScope">loading</span>
-      </div>
-      <a href="contribute.html" style="color: var(--cyan); border: 1px solid rgba(54, 199, 231, .3); padding: 4px 12px; text-decoration: none; font-family: var(--font-display); font-size: 16px; background: rgba(54, 199, 231, .05); transition: border-color 0.2s;">Missing Event?</a>
-    </div>
 
     <section class="poster-waterfall" id="posterWall" aria-label="Event card list"></section>
 
@@ -971,8 +924,7 @@
     const statusFilter = document.getElementById("statusFilter");
     const cityFilter = document.getElementById("cityFilter");
     const vibeFilter = document.getElementById("vibeFilter");
-    const posterCount = document.getElementById("posterCount");
-    const posterScope = document.getElementById("posterScope");
+    const sortFilter = document.getElementById("sortFilter");
     const modal = document.getElementById("posterModal");
     const modalPoster = document.getElementById("modalPoster");
     const posterLightbox = document.getElementById("posterLightbox");
@@ -1258,16 +1210,17 @@
     }
 
     function eventEssentialFacts(event) {
+      const isPast = eventTemporalStatus(event) === "past";
       const rows = [
         ["Date", escapeHtml(`${event.date} / ${event.time}`)],
         ["City", escapeHtml(eventCity(event))],
         ["Venue", `${venueGuideLinkHtml(event.venue)} / ${escapeHtml(event.district)}`],
+        ["Price", escapeHtml(event.price || (isPast ? "Archived poster" : "Check details"))],
         ["Sound", escapeHtml(event.genre)],
         ["Status", escapeHtml(`${eventStatusLabel(event)} / ${event.confidence}`)]
       ];
-      if (eventTemporalStatus(event) !== "past") {
+      if (!isPast) {
         rows.splice(3, 0, ["Address", escapeHtml(cleanAddress(event.address) || "Check details")]);
-        rows.splice(4, 0, ["Price", escapeHtml(event.price || "Check details")]);
         rows.splice(5, 0, ["Age", escapeHtml(event.age || "Check details")]);
       }
       return rows;
@@ -1314,6 +1267,47 @@
       return [event.title, event.venue, event.district, event.genre, event.date, event.time, ...(event.vibe || []), ...eventSoundTags(event), ...eventDecisionTags(event)].join(" ").toLowerCase();
     }
 
+    function eventHasPoster(event) {
+      return Boolean(posterUrl(event));
+    }
+
+    function eventStartTimestamp(event) {
+      const sortDate = String(event?.sortDate || "").slice(0, 10);
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(sortDate)) return Number.MAX_SAFE_INTEGER;
+      const timeMatch = String(event?.time || "").match(/\b(\d{1,2}):(\d{2})\b/);
+      const hour = timeMatch ? Math.min(Number(timeMatch[1]), 23) : 23;
+      const minute = timeMatch ? Math.min(Number(timeMatch[2]), 59) : 59;
+      return new Date(`${sortDate}T${pad2(hour)}:${pad2(minute)}:00+08:00`).getTime();
+    }
+
+    function eventTemporalRank(event) {
+      const status = eventTemporalStatus(event);
+      if (status === "current") return 0;
+      if (status === "upcoming") return 1;
+      return 2;
+    }
+
+    function compareEventText(a, b, key) {
+      return String(a?.[key] || "").localeCompare(String(b?.[key] || ""), undefined, { sensitivity: "base" });
+    }
+
+    function compareEventsForSort(a, b) {
+      const sort = sortFilter.value || "smart";
+      const aHasPoster = eventHasPoster(a);
+      const bHasPoster = eventHasPoster(b);
+      const posterDiff = Number(bHasPoster) - Number(aHasPoster);
+      const soonDiff = eventStartTimestamp(a) - eventStartTimestamp(b);
+      const dateDiff = String(a?.sortDate || "").localeCompare(String(b?.sortDate || ""));
+      const fallback = compareEventText(a, b, "title");
+
+      if (sort === "soonest") return soonDiff || posterDiff;
+      if (sort === "poster-first") return posterDiff || soonDiff;
+      if (sort === "latest") return -soonDiff || posterDiff;
+      if (sort === "venue") return compareEventText(a, b, "venue") || soonDiff || posterDiff || fallback;
+
+      return (eventTemporalRank(a) - eventTemporalRank(b)) || dateDiff || posterDiff || soonDiff;
+    }
+
     function filteredEvents() {
       const query = searchInput.value.trim().toLowerCase();
       const status = statusFilter.value;
@@ -1327,7 +1321,7 @@
           if (query && !searchable(event).includes(query)) return false;
           return true;
         })
-        .sort((a, b) => a.sortDate.localeCompare(b.sortDate));
+        .sort(compareEventsForSort);
     }
 
     function posterWallColumnCount() {
@@ -1350,12 +1344,7 @@
             <p class="wall-card-kicker"><span>${escapeHtml(event.date)}</span><span>${escapeHtml(event.time || "TBA")}</span></p>
             <h2>${escapeHtml(event.title)}</h2>
             <p class="wall-venue">${venueGuideLinkHtml(event.venue)} / ${escapeHtml(eventCity(event))}</p>
-            <p class="wall-card-meta"><span>${escapeHtml(metaSound)}</span><span>${escapeHtml(eventTemporalStatus(event) === "past" ? "Archive" : (event.price || "Tickets when listed"))}</span></p>
-            ${lineupPreviewHtml(event)}
-            <div class="wall-card-actions">
-              ${ticketActionHtml(event)}
-              <span>${escapeHtml(eventTemporalStatus(event) === "past" ? "Archive" : (event.price || "Details"))}</span>
-            </div>
+            <p class="wall-card-meta"><span>${escapeHtml(metaSound)}</span></p>
           </div>
         </article>
       `;
@@ -1363,8 +1352,6 @@
 
     function render() {
       const cards = filteredEvents();
-      posterCount.textContent = cards.length;
-      posterScope.textContent = `${cityFilter.options[cityFilter.selectedIndex].text} / ${statusFilter.options[statusFilter.selectedIndex].text} / ${vibeFilter.options[vibeFilter.selectedIndex].text}`;
       if (!cards.length) {
         wall.innerHTML = `<div class="empty">No event cards match this filter.</div>`;
         return;
@@ -1413,7 +1400,7 @@
       posterLightbox.classList.remove("open");
     }
 
-    [searchInput, statusFilter, cityFilter, vibeFilter].forEach(control => {
+    [searchInput, statusFilter, cityFilter, vibeFilter, sortFilter].forEach(control => {
       control.addEventListener("input", render);
       control.addEventListener("change", render);
     });
