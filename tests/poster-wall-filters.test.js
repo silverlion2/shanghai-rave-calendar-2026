@@ -30,6 +30,7 @@ function extractFunction(source, name) {
 function posterWallFiltersForTest() {
   const html = readSiteFile("poster-wall.html");
   const helperSource = [
+    "pad2",
     "eventDate",
     "eventArchiveCutoff",
     "eventIsPastByCutoff",
@@ -39,6 +40,12 @@ function posterWallFiltersForTest() {
     "eventMatchesStatus",
     "eventCity",
     "eventMatchesCity",
+    "posterUrl",
+    "eventHasPoster",
+    "eventStartTimestamp",
+    "eventTemporalRank",
+    "compareEventText",
+    "compareEventsForSort",
     "filteredEvents",
   ].map(name => extractFunction(html, name)).join("\n");
   return Function(`
@@ -46,10 +53,14 @@ function posterWallFiltersForTest() {
     const archiveCutoffHour = 6;
     const statusNow = new Date("2026-06-15T12:00:00+08:00");
     const today = new Date(2026, 5, 15);
+    const posterUrlOverrides = {};
+    const optimizedPosterUrlOverrides = {};
+    const posterDisplayByEventId = new Map();
     const searchInput = { value: "" };
     const statusFilter = { value: "active" };
     const cityFilter = { value: "Shanghai" };
     const vibeFilter = { value: "all" };
+    const sortFilter = { value: "smart" };
     function eventSoundTags() {
       return [];
     }
@@ -69,6 +80,9 @@ function posterWallFiltersForTest() {
       },
       setCity(next) {
         cityFilter.value = next;
+      },
+      setSort(next) {
+        sortFilter.value = next;
       },
       filteredEvents,
     };
@@ -195,14 +209,34 @@ test("poster wall city filter defaults to Shanghai and supports all cities", () 
   );
 });
 
+test("poster wall default sort keeps nearby events first and promotes posters within the same date", () => {
+  const filters = posterWallFiltersForTest();
+  filters.setEvents([
+    { id: "tomorrow-poster", title: "Tomorrow Poster", sortDate: "2026-06-16", time: "20:00", status: "upcoming", posterUrl: "assets/posters/tomorrow.jpg" },
+    { id: "today-no-poster", title: "Today No Poster", sortDate: "2026-06-15", time: "20:00", status: "upcoming" },
+    { id: "today-poster", title: "Today Poster", sortDate: "2026-06-15", time: "21:00", status: "upcoming", posterUrl: "assets/posters/today.jpg" },
+  ]);
+
+  assert.deepEqual(
+    filters.filteredEvents().map(event => event.id),
+    ["today-poster", "today-no-poster", "tomorrow-poster"],
+  );
+
+  filters.setSort("poster-first");
+  assert.deepEqual(
+    filters.filteredEvents().map(event => event.id),
+    ["today-poster", "tomorrow-poster", "today-no-poster"],
+  );
+});
+
 test("poster wall uses dense grid card layout across desktop tablet and mobile", () => {
   const html = readSiteFile("poster-wall.html");
   assert.match(html, /\.poster-waterfall\s*{\s*display: grid;/);
   assert.match(html, /grid-template-columns: repeat\(5, minmax\(0, 1fr\)\)/);
   assert.match(html, /grid-template-columns: repeat\(4, minmax\(0, 1fr\)\)/);
   assert.match(html, /grid-template-columns: repeat\(3, minmax\(0, 1fr\)\)/);
-  assert.match(html, /\.wall-card\s*{[\s\S]*grid-template-rows: auto 162px/);
-  assert.match(html, /\.wall-card-body\s*{[\s\S]*height: 162px/);
+  assert.match(html, /\.wall-card\s*{[\s\S]*grid-template-rows: auto 76px/);
+  assert.match(html, /\.wall-card-body\s*{[\s\S]*height: 76px/);
   assert.match(html, /\.wall-column\s*{[\s\S]*flex-direction: column/);
   assert.match(html, /function posterWallColumnCount/);
   assert.match(html, /\.wall-card-poster img\s*{[\s\S]*object-fit: cover/);
@@ -211,6 +245,30 @@ test("poster wall uses dense grid card layout across desktop tablet and mobile",
   assert.doesNotMatch(html, /wall-stamp-row/);
   assert.doesNotMatch(html, /status-pin/);
   assert.doesNotMatch(html, /wall-date-stamp/);
+});
+
+test("poster wall keeps the page chrome compact around the visual wall", () => {
+  const html = readSiteFile("poster-wall.html");
+  assert.match(html, /class="control-icon-link"/);
+  assert.match(html, /Soon \+ art/);
+  assert.match(html, /href="poster-wall\.html">Poster<\/a>/);
+  assert.match(html, /<h1>Events<\/h1>/);
+  assert.doesNotMatch(html, /Scan Shanghai club posters in a dense wall/);
+  assert.doesNotMatch(html, /id="posterCount"/);
+  assert.doesNotMatch(html, /id="posterScope"/);
+  assert.doesNotMatch(html, /class="wall-meta"/);
+  assert.doesNotMatch(html, /event cards<\/span>/);
+});
+
+test("poster wall cards keep ticket price and lineup details out of wall mode", () => {
+  const html = readSiteFile("poster-wall.html");
+  const cardSource = extractFunction(html, "eventCardHtml");
+  assert.doesNotMatch(cardSource, /ticketActionHtml/);
+  assert.doesNotMatch(cardSource, /lineupPreviewHtml/);
+  assert.doesNotMatch(cardSource, /event\.price/);
+  assert.doesNotMatch(cardSource, /wall-card-actions/);
+  assert.match(extractFunction(html, "eventEssentialFacts"), /\["Price"/);
+  assert.match(extractFunction(html, "modalInsightsHtml"), /\["Lineup"/);
 });
 
 test("poster wall detail view includes a large poster lightbox", () => {

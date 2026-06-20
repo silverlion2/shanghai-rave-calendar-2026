@@ -75,7 +75,7 @@
     },
     {
       "id": "poster-wall",
-      "label": "Events",
+      "label": "Poster",
       "file": "poster-wall.html",
       "route": "/poster-wall",
       "shell": "dispatch-shell",

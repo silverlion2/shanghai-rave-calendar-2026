@@ -1885,3 +1885,14 @@ Pushed state:
 - Simplified past poster archive display so expired events omit ticketing and entry-planning fields.
 - Added a Supabase read timeout so the wall falls back to static JSON instead of staying blank when the hosted view is slow or unavailable.
 - Verified poster wall rendering, modal behavior, city filtering, static fallback tests, and full `npm run check:code`.
+
+## 2026-06-20 Poster Wall Visual-First Polish
+
+- Reworked the poster wall into an art-first column layout: only the first row staggers, later tiles tighten vertically within each column.
+- Removed poster-overlaid status labels and moved ticket, price, and lineup details into the event detail modal.
+- Added a large-poster lightbox from the detail modal while keeping wall tiles focused on poster art.
+- Added compact wall controls with short filter/sort labels and removed the explanatory copy plus event-count scope row from the page chrome.
+- Added sort modes for soonest, art-first, latest, and venue order. The default keeps nearby events first while promoting poster-backed events within the same date.
+- Reduced wall tile typography and information height so images remain the visual priority.
+- Renamed the poster-wall navigation label from `Events` to `Poster` while keeping the page hero title as `Events`.
+- Verified with `node --test tests/poster-wall-filters.test.js`, full `npm run check:code`, and in-app browser checks on `http://localhost:4173/poster-wall`.
