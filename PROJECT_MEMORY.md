@@ -1903,3 +1903,10 @@ Pushed state:
 - The poster wall currently tries Supabase `poster_wall_cards` first. If that view is missing or slow, `assets/poster-wall-data.js` falls back to paginated public `events` rows where `poster_url` is not null, using `posterWallPageSize: 60` to avoid large-query timeouts.
 - A wall count mismatch usually means one of three things: rows have `name` but no `title`, the public config page size is too large and timing out, or `poster_wall_cards` has not been migrated. Check `npm run posters:check-local`, then inspect browser requests for `/rest/v1/poster_wall_cards` followed by `/rest/v1/events`.
 - Production should show all uploaded poster-backed events after deploy; the local browser verification target is `http://localhost:4173/poster-wall`.
+
+## 2026-06-21 Poster Wall Duplicate Policy
+
+- Run `npm run posters:update-local` after Workbuddy, scraper, Supabase import, or manual poster updates. It repairs wall-critical fields and applies duplicate/variant policy before focused poster-wall tests.
+- True duplicates are rows with the same date plus same normalized title and venue, or same date plus same base title when one source adds descriptive parentheses. Keep the stronger event row by source quality, lineup depth, description, last-checked data, and poster availability.
+- Do not delete cross-city or undated tour/poster variants just because the base title matches. Keep non-Shanghai variants, but tag them with `other city` and the lowercase city name in both `tags` and `decisionTags`; examples include `POG with Kasra (Beijing)` and `POG with Eoin DJ (Shenzhen)`.
+- The poster wall data adapter also applies runtime dedupe/tagging to Supabase fallback rows, so production can hide same-date duplicate source rows like the Jun 21 `House of Zup` SmartShanghai/RA conflict while preserving different-date `House of Zup` series entries.

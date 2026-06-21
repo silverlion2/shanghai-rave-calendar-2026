@@ -12569,30 +12569,6 @@
       "notes": "Dirty Beats 为 Dirty House 固定月度派对，NAKIN 为上海本地 House 重要 DJ。"
     },
     {
-      "id": "2026-06-21-friendsstandout",
-      "name": "FRIENDSSTAND out",
-      "startDate": "2026-06-21",
-      "venue": "wigwam",
-      "venueName": "Wigwam",
-      "city": "Shanghai",
-      "country": "China",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/2026-06-21-friendsstandout.jpg",
-      "sourceUrl": "https://shypeople.cn/FRIENDSSTAND-out",
-      "sourcePlatform": "shypeople",
-      "description": "FRIENDSSTAND 聚齐五位京沪快线上的好朋友，在 wigwam 上海的沙发、地毯和绿植中间，发起一场轻松的跳舞音乐分享活动。Lineup: Tsing, DJ TRUCK, YKK, Taidi, 10000.",
-      "soundTags": [
-        "techno",
-        "house",
-        "dance"
-      ],
-      "genre": [
-        "techno",
-        "house"
-      ],
-      "price": "TBA",
-      "status": "published"
-    },
-    {
       "id": "2026-02-06-n3v3r1and-invites-roza-terenzi",
       "name": "N3V3R1AND Invites Roza Terenzi",
       "startDate": "2026-02-06",
@@ -12612,7 +12588,9 @@
         "techno",
         "electro"
       ],
-      "status": "published"
+      "status": "published",
+      "title": "N3V3R1AND Invites Roza Terenzi",
+      "sortDate": "2026-02-06"
     },
     {
       "id": "2026-01-16-shy-people-6th-anniversary",
@@ -12635,7 +12613,9 @@
         "techno",
         "house"
       ],
-      "status": "published"
+      "status": "published",
+      "title": "Shy People 6th Anniversary",
+      "sortDate": "2026-01-16"
     },
     {
       "id": "2024-05-17-zhao-dai",
@@ -12658,7 +12638,17 @@
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. menslies 24 shy peoeple",
       "createdAt": "2026-06-20T13:40:41.742Z",
-      "updatedAt": "2026-06-20T13:40:41.744Z"
+      "updatedAt": "2026-06-20T13:40:41.744Z",
+      "title": "menslies 24 shy peoeple",
+      "sortDate": "2024-05-17",
+      "tags": [
+        "other city",
+        "beijing"
+      ],
+      "decisionTags": [
+        "other city",
+        "beijing"
+      ]
     },
     {
       "id": "2023-04-28-shy-people",
@@ -12681,7 +12671,9 @@
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Shy People 2023-04-28",
       "createdAt": "2026-06-20T13:40:41.744Z",
-      "updatedAt": "2026-06-20T13:40:41.744Z"
+      "updatedAt": "2026-06-20T13:40:41.744Z",
+      "title": "Shy People 2023-04-28",
+      "sortDate": "2023-04-28"
     },
     {
       "id": "2023-04-30-shy-people",
@@ -12704,7 +12696,9 @@
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Shy People 2023-04-30",
       "createdAt": "2026-06-20T13:40:41.744Z",
-      "updatedAt": "2026-06-20T13:40:41.744Z"
+      "updatedAt": "2026-06-20T13:40:41.744Z",
+      "title": "Shy People 2023-04-30",
+      "sortDate": "2023-04-30"
     },
     {
       "id": "2023-06-02-shy-people",
@@ -12727,7 +12721,9 @@
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Shy People 2023-06-02",
       "createdAt": "2026-06-20T13:40:41.744Z",
-      "updatedAt": "2026-06-20T13:40:41.744Z"
+      "updatedAt": "2026-06-20T13:40:41.744Z",
+      "title": "Shy People 2023-06-02",
+      "sortDate": "2023-06-02"
     },
     {
       "id": "2023-06-03-shy-people",
@@ -12750,7 +12746,9 @@
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Shy People 2023-06-03",
       "createdAt": "2026-06-20T13:40:41.744Z",
-      "updatedAt": "2026-06-20T13:40:41.744Z"
+      "updatedAt": "2026-06-20T13:40:41.744Z",
+      "title": "Shy People 2023-06-03",
+      "sortDate": "2023-06-03"
     },
     {
       "id": "2023-06-10-shy-people",
@@ -12773,7 +12771,9 @@
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Shy People 2023-06-10",
       "createdAt": "2026-06-20T13:40:41.744Z",
-      "updatedAt": "2026-06-20T13:40:41.744Z"
+      "updatedAt": "2026-06-20T13:40:41.744Z",
+      "title": "Shy People 2023-06-10",
+      "sortDate": "2023-06-10"
     },
     {
       "id": "2023-06-30-shy-people",
@@ -12796,7 +12796,9 @@
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Shy People 2023-06-30",
       "createdAt": "2026-06-20T13:40:41.744Z",
-      "updatedAt": "2026-06-20T13:40:41.744Z"
+      "updatedAt": "2026-06-20T13:40:41.744Z",
+      "title": "Shy People 2023-06-30",
+      "sortDate": "2023-06-30"
     },
     {
       "id": "2023-08-11-shy-people",
@@ -12819,7 +12821,9 @@
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Shy People 2023-08-11",
       "createdAt": "2026-06-20T13:40:41.744Z",
-      "updatedAt": "2026-06-20T13:40:41.744Z"
+      "updatedAt": "2026-06-20T13:40:41.744Z",
+      "title": "Shy People 2023-08-11",
+      "sortDate": "2023-08-11"
     },
     {
       "id": "2023-09-23-shy-people",
@@ -12842,7 +12846,9 @@
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Shy People 2023-09-23",
       "createdAt": "2026-06-20T13:40:41.744Z",
-      "updatedAt": "2026-06-20T13:40:41.744Z"
+      "updatedAt": "2026-06-20T13:40:41.744Z",
+      "title": "Shy People 2023-09-23",
+      "sortDate": "2023-09-23"
     },
     {
       "id": "2023-09-29-shy-people",
@@ -12865,7 +12871,9 @@
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Shy People 2023-09-29",
       "createdAt": "2026-06-20T13:40:41.744Z",
-      "updatedAt": "2026-06-20T13:40:41.744Z"
+      "updatedAt": "2026-06-20T13:40:41.744Z",
+      "title": "Shy People 2023-09-29",
+      "sortDate": "2023-09-29"
     },
     {
       "id": "2023-11-03-shy-people",
@@ -12888,7 +12896,9 @@
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Shy People 2023-11-03",
       "createdAt": "2026-06-20T13:40:41.744Z",
-      "updatedAt": "2026-06-20T13:40:41.744Z"
+      "updatedAt": "2026-06-20T13:40:41.744Z",
+      "title": "Shy People 2023-11-03",
+      "sortDate": "2023-11-03"
     },
     {
       "id": "2023-12-15-shy-people",
@@ -12911,7 +12921,9 @@
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Shy People 2023-12-15",
       "createdAt": "2026-06-20T13:40:41.744Z",
-      "updatedAt": "2026-06-20T13:40:41.744Z"
+      "updatedAt": "2026-06-20T13:40:41.744Z",
+      "title": "Shy People 2023-12-15",
+      "sortDate": "2023-12-15"
     },
     {
       "id": "2023-12-16-shy-people",
@@ -12934,7 +12946,9 @@
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Shy People 2023-12-16",
       "createdAt": "2026-06-20T13:40:41.744Z",
-      "updatedAt": "2026-06-20T13:40:41.744Z"
+      "updatedAt": "2026-06-20T13:40:41.744Z",
+      "title": "Shy People 2023-12-16",
+      "sortDate": "2023-12-16"
     },
     {
       "id": "2024-05-01-zhao-dai",
@@ -12957,7 +12971,17 @@
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Zhao Dai 2024-05-01",
       "createdAt": "2026-06-20T13:40:41.744Z",
-      "updatedAt": "2026-06-20T13:40:41.744Z"
+      "updatedAt": "2026-06-20T13:40:41.744Z",
+      "title": "Zhao Dai 2024-05-01",
+      "sortDate": "2024-05-01",
+      "tags": [
+        "other city",
+        "beijing"
+      ],
+      "decisionTags": [
+        "other city",
+        "beijing"
+      ]
     },
     {
       "id": "2024-05-11-zhao-dai",
@@ -12980,7 +13004,17 @@
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Zhao Dai 2024-05-11",
       "createdAt": "2026-06-20T13:40:41.744Z",
-      "updatedAt": "2026-06-20T13:40:41.744Z"
+      "updatedAt": "2026-06-20T13:40:41.744Z",
+      "title": "Zhao Dai 2024-05-11",
+      "sortDate": "2024-05-11",
+      "tags": [
+        "other city",
+        "beijing"
+      ],
+      "decisionTags": [
+        "other city",
+        "beijing"
+      ]
     },
     {
       "id": "2024-05-17-zhao-dai",
@@ -13003,7 +13037,17 @@
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Zhao Dai 2024-05-17",
       "createdAt": "2026-06-20T13:40:41.744Z",
-      "updatedAt": "2026-06-20T13:40:41.744Z"
+      "updatedAt": "2026-06-20T13:40:41.744Z",
+      "title": "Zhao Dai 2024-05-17",
+      "sortDate": "2024-05-17",
+      "tags": [
+        "other city",
+        "beijing"
+      ],
+      "decisionTags": [
+        "other city",
+        "beijing"
+      ]
     },
     {
       "id": "2024-06-09-zhao-dai",
@@ -13026,7 +13070,17 @@
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Zhao Dai 2024-06-09",
       "createdAt": "2026-06-20T13:40:41.744Z",
-      "updatedAt": "2026-06-20T13:40:41.744Z"
+      "updatedAt": "2026-06-20T13:40:41.744Z",
+      "title": "Zhao Dai 2024-06-09",
+      "sortDate": "2024-06-09",
+      "tags": [
+        "other city",
+        "beijing"
+      ],
+      "decisionTags": [
+        "other city",
+        "beijing"
+      ]
     },
     {
       "id": "2024-07-20-zhao-dai",
@@ -13049,7 +13103,17 @@
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Zhao Dai 2024-07-20",
       "createdAt": "2026-06-20T13:40:41.744Z",
-      "updatedAt": "2026-06-20T13:40:41.744Z"
+      "updatedAt": "2026-06-20T13:40:41.744Z",
+      "title": "Zhao Dai 2024-07-20",
+      "sortDate": "2024-07-20",
+      "tags": [
+        "other city",
+        "beijing"
+      ],
+      "decisionTags": [
+        "other city",
+        "beijing"
+      ]
     },
     {
       "id": "2024-08-23-zhao-dai",
@@ -13072,7 +13136,17 @@
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Zhao Dai 2024-08-23",
       "createdAt": "2026-06-20T13:40:41.744Z",
-      "updatedAt": "2026-06-20T13:40:41.744Z"
+      "updatedAt": "2026-06-20T13:40:41.744Z",
+      "title": "Zhao Dai 2024-08-23",
+      "sortDate": "2024-08-23",
+      "tags": [
+        "other city",
+        "beijing"
+      ],
+      "decisionTags": [
+        "other city",
+        "beijing"
+      ]
     },
     {
       "id": "2024-oxygen-activation-shy-people",
@@ -13096,7 +13170,8 @@
       "description": "From Shy People MENSLIES poster archive. Artist: 444theGod",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.260Z",
-      "updatedAt": "2026-06-20T13:42:28.262Z"
+      "updatedAt": "2026-06-20T13:42:28.262Z",
+      "title": "Oxygen Activation"
     },
     {
       "id": "2024-kaleido-mirage-shy-people",
@@ -13120,7 +13195,8 @@
       "description": "From Shy People MENSLIES poster archive. Artist: Craone",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
-      "updatedAt": "2026-06-20T13:42:28.262Z"
+      "updatedAt": "2026-06-20T13:42:28.262Z",
+      "title": "Kaleido Mirage"
     },
     {
       "id": "2024-abyssal-callout-shy-people",
@@ -13144,7 +13220,8 @@
       "description": "From Shy People MENSLIES poster archive. Artist: EkII",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
-      "updatedAt": "2026-06-20T13:42:28.262Z"
+      "updatedAt": "2026-06-20T13:42:28.262Z",
+      "title": "ABYSSAL CALLOUT"
     },
     {
       "id": "2024-galloping-6-shy-people",
@@ -13168,7 +13245,8 @@
       "description": "From Shy People MENSLIES poster archive.",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
-      "updatedAt": "2026-06-20T13:42:28.262Z"
+      "updatedAt": "2026-06-20T13:42:28.262Z",
+      "title": "GALLOPING 6"
     },
     {
       "id": "2024-galloping-9-shy-people",
@@ -13192,7 +13270,8 @@
       "description": "From Shy People MENSLIES poster archive.",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
-      "updatedAt": "2026-06-20T13:42:28.262Z"
+      "updatedAt": "2026-06-20T13:42:28.262Z",
+      "title": "GALLOPING 9"
     },
     {
       "id": "2024-ginko-heim",
@@ -13216,7 +13295,8 @@
       "description": "From Shy People MENSLIES poster archive.",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
-      "updatedAt": "2026-06-20T13:42:28.262Z"
+      "updatedAt": "2026-06-20T13:42:28.262Z",
+      "title": "Ginko at Heim"
     },
     {
       "id": "2024-heim-last-night-sokol",
@@ -13240,7 +13320,8 @@
       "description": "From Shy People MENSLIES poster archive.",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
-      "updatedAt": "2026-06-20T13:42:28.262Z"
+      "updatedAt": "2026-06-20T13:42:28.262Z",
+      "title": "Heim Last Night with Sokol"
     },
     {
       "id": "2024-oofb-1-shy-people",
@@ -13264,7 +13345,8 @@
       "description": "From Shy People MENSLIES poster archive.",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
-      "updatedAt": "2026-06-20T13:42:28.262Z"
+      "updatedAt": "2026-06-20T13:42:28.262Z",
+      "title": "OOFB 1"
     },
     {
       "id": "2024-oofb-3-shy-people",
@@ -13288,7 +13370,8 @@
       "description": "From Shy People MENSLIES poster archive.",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
-      "updatedAt": "2026-06-20T13:42:28.262Z"
+      "updatedAt": "2026-06-20T13:42:28.262Z",
+      "title": "OOFB 3"
     },
     {
       "id": "2024-oofb-7-shy-people",
@@ -13312,7 +13395,8 @@
       "description": "From Shy People MENSLIES poster archive.",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
-      "updatedAt": "2026-06-20T13:42:28.262Z"
+      "updatedAt": "2026-06-20T13:42:28.262Z",
+      "title": "OOFB 7"
     },
     {
       "id": "2024-pog-eoin-beijing",
@@ -13336,7 +13420,16 @@
       "description": "From Shy People MENSLIES poster archive. Artist: Eoin",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
-      "updatedAt": "2026-06-20T13:42:28.262Z"
+      "updatedAt": "2026-06-20T13:42:28.262Z",
+      "title": "POG with Eoin DJ (Beijing)",
+      "tags": [
+        "other city",
+        "beijing"
+      ],
+      "decisionTags": [
+        "other city",
+        "beijing"
+      ]
     },
     {
       "id": "2024-pog-eoin-shanghai",
@@ -13360,7 +13453,8 @@
       "description": "From Shy People MENSLIES poster archive. Artist: Eoin",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
-      "updatedAt": "2026-06-20T13:42:28.262Z"
+      "updatedAt": "2026-06-20T13:42:28.262Z",
+      "title": "POG with Eoin DJ (Shanghai)"
     },
     {
       "id": "2024-pog-eoin-shenzhen",
@@ -13384,7 +13478,16 @@
       "description": "From Shy People MENSLIES poster archive. Artist: Eoin",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
-      "updatedAt": "2026-06-20T13:42:28.262Z"
+      "updatedAt": "2026-06-20T13:42:28.262Z",
+      "title": "POG with Eoin DJ (Shenzhen)",
+      "tags": [
+        "other city",
+        "shenzhen"
+      ],
+      "decisionTags": [
+        "other city",
+        "shenzhen"
+      ]
     },
     {
       "id": "2024-pog-kasra-beijing",
@@ -13408,7 +13511,16 @@
       "description": "From Shy People MENSLIES poster archive. Artist: Kasra",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
-      "updatedAt": "2026-06-20T13:42:28.262Z"
+      "updatedAt": "2026-06-20T13:42:28.262Z",
+      "title": "POG with Kasra (Beijing)",
+      "tags": [
+        "other city",
+        "beijing"
+      ],
+      "decisionTags": [
+        "other city",
+        "beijing"
+      ]
     },
     {
       "id": "2024-pog-kasra-shanghai",
@@ -13432,7 +13544,8 @@
       "description": "From Shy People MENSLIES poster archive. Artist: Kasra",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
-      "updatedAt": "2026-06-20T13:42:28.262Z"
+      "updatedAt": "2026-06-20T13:42:28.262Z",
+      "title": "POG with Kasra (Shanghai)"
     },
     {
       "id": "2024-tombola-1-shy-people",
@@ -13456,7 +13569,8 @@
       "description": "From Shy People MENSLIES poster archive.",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
-      "updatedAt": "2026-06-20T13:42:28.262Z"
+      "updatedAt": "2026-06-20T13:42:28.262Z",
+      "title": "Tombola 1"
     },
     {
       "id": "2024-tombola-2-shy-people",
@@ -13480,7 +13594,8 @@
       "description": "From Shy People MENSLIES poster archive.",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
-      "updatedAt": "2026-06-20T13:42:28.262Z"
+      "updatedAt": "2026-06-20T13:42:28.262Z",
+      "title": "Tombola 2"
     },
     {
       "id": "2025-zhao-dai-on-leave-25",
@@ -13504,7 +13619,16 @@
       "description": "From Shy People MENSLIES poster archive.",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
-      "updatedAt": "2026-06-20T13:42:28.262Z"
+      "updatedAt": "2026-06-20T13:42:28.262Z",
+      "title": "Zhao Dai on Leave 2025",
+      "tags": [
+        "other city",
+        "beijing"
+      ],
+      "decisionTags": [
+        "other city",
+        "beijing"
+      ]
     },
     {
       "id": "2024-zhao-dai-on-leave-24a",
@@ -13528,7 +13652,16 @@
       "description": "From Shy People MENSLIES poster archive.",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
-      "updatedAt": "2026-06-20T13:42:28.262Z"
+      "updatedAt": "2026-06-20T13:42:28.262Z",
+      "title": "Zhao Dai On Leave 24A",
+      "tags": [
+        "other city",
+        "beijing"
+      ],
+      "decisionTags": [
+        "other city",
+        "beijing"
+      ]
     },
     {
       "id": "2024-zhao-dai-on-leave-24b",
@@ -13552,29 +13685,16 @@
       "description": "From Shy People MENSLIES poster archive.",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
-      "updatedAt": "2026-06-20T13:42:28.262Z"
-    },
-    {
-      "id": "2026-01-16-shy-people",
-      "name": "Shy People 6th Anniversary",
-      "city": "Shanghai",
-      "venue": "Shy People",
-      "sortDate": "2026-01-16",
-      "needsDate": false,
-      "source": "poster-archive",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/2026-01-16-shy-people.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-21"
-    },
-    {
-      "id": "2026-02-06-n3v3r1and",
-      "name": "N3v3r1and Invites Roza Terenzi",
-      "city": "Shanghai",
-      "venue": "N3V3R1AND",
-      "sortDate": "2026-02-06",
-      "needsDate": false,
-      "source": "poster-archive",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/2026-02-06-n3v3r1and.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-21"
+      "updatedAt": "2026-06-20T13:42:28.262Z",
+      "title": "Zhao Dai On Leave 24B",
+      "tags": [
+        "other city",
+        "beijing"
+      ],
+      "decisionTags": [
+        "other city",
+        "beijing"
+      ]
     },
     {
       "id": "2025-03-01-abyss-shanghai",

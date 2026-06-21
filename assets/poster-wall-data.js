@@ -52,6 +52,90 @@
     return String(value ?? "").trim();
   }
 
+  function comparableText(value) {
+    return cleanText(value)
+      .toLowerCase()
+      .normalize("NFKD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/&/g, " and ")
+      .replace(/[^a-z0-9\u4e00-\u9fff]+/g, " ")
+      .trim()
+      .replace(/\s+/g, " ");
+  }
+
+  function compactTitle(value) {
+    return comparableText(value).replace(/\s+/g, "");
+  }
+
+  function compactBaseTitle(value) {
+    return comparableText(cleanText(value).replace(/\([^)]*\)/g, " ")).replace(/\s+/g, "");
+  }
+
+  function duplicateKeys(event) {
+    const date = cleanText(event.sortDate || event.date);
+    const venue = comparableText(event.venue);
+    const title = compactTitle(event.title);
+    const baseTitle = compactBaseTitle(event.title);
+    const keys = [];
+    if (date && venue && title) keys.push(["exact", date, venue, title].join("|"));
+    if (date && baseTitle && baseTitle.length >= 8) keys.push(["date-title", date, baseTitle].join("|"));
+    return keys;
+  }
+
+  function uniqueValues(values) {
+    return Array.from(new Set((values || []).map(value => cleanText(value)).filter(Boolean)));
+  }
+
+  function withOtherCityTags(values, city) {
+    const cityName = cleanText(city);
+    if (!cityName || cityName.toLowerCase() === DEFAULT_CITY.toLowerCase()) return asArray(values);
+    return uniqueValues([
+      ...asArray(values),
+      "other city",
+      cityName.toLowerCase(),
+    ]);
+  }
+
+  function eventQualityScore(event) {
+    const sourceLabel = comparableText(event.sourceLabel);
+    const hasStrongSource = cleanText(event.source) && sourceLabel !== "poster archive";
+    const cityScore = comparableText(event.city) === "shanghai" ? 20 : 0;
+    return [
+      cityScore,
+      hasStrongSource ? 50 : 0,
+      Array.isArray(event.lineup) ? event.lineup.length * 5 : 0,
+      cleanText(event.description) ? 6 : 0,
+      cleanText(event.sourceStatus) ? 4 : 0,
+      cleanText(event.lastChecked) ? 3 : 0,
+      cleanText(event.recommendationReason) ? 2 : 0,
+      cleanText(event.posterUrl) ? 1 : 0,
+    ].reduce((sum, value) => sum + value, 0);
+  }
+
+  function dedupeEvents(events) {
+    const byKey = new Map();
+    const result = [];
+    for (const event of events || []) {
+      const keys = duplicateKeys(event);
+      if (!keys.length) {
+        result.push(event);
+        continue;
+      }
+      const existingIndex = keys.map(key => byKey.get(key)).find(index => index !== undefined);
+      if (existingIndex === undefined) {
+        keys.forEach(key => byKey.set(key, result.length));
+        result.push(event);
+        continue;
+      }
+      const existing = result[existingIndex];
+      if (eventQualityScore(event) > eventQualityScore(existing)) {
+        result[existingIndex] = event;
+        keys.forEach(key => byKey.set(key, existingIndex));
+      }
+    }
+    return result;
+  }
+
   function normalizedConfig(win = root) {
     const source = (win && (win.POSTER_WALL_SUPABASE || win.LOVE_WALL_SUPABASE)) || {};
     const pageSize = Number.parseInt(source.posterWallPageSize, 10);
@@ -151,12 +235,12 @@
       posterSourceUrl: cleanText(row.poster_source_url || archiveImage?.sourceAsset || row.posterUrl || row.poster_url),
       imageTheme: cleanText(row.imageTheme || row.image_theme),
       vibe: asArray(row.vibe),
-      tags: asArray(row.tags),
+      tags: withOtherCityTags(row.tags, row.city),
       sources: asArray(row.sources),
       lineup: asArray(row.lineup),
       setTimes: asArray(row.setTimes || row.set_times),
       soundTags: asArray(row.soundTags || row.sound_tags),
-      decisionTags: asArray(row.decisionTags || row.decision_tags),
+      decisionTags: withOtherCityTags(row.decisionTags || row.decision_tags, row.city),
       recommendationReason: cleanText(row.recommendationReason || row.recommendation_reason),
       bestFor: cleanText(row.bestFor || row.best_for),
       verifyBeforeGoing: cleanText(row.verifyBeforeGoing || row.verify_before_going),
@@ -169,15 +253,15 @@
   function normalizeStaticPayload(eventsPayload, archivePayload) {
     const events = Array.isArray(eventsPayload) ? eventsPayload : eventsPayload?.events || [];
     const archiveByEvent = posterArchiveMap(archivePayload?.posters || []);
-    return events
+    return dedupeEvents(events
       .map(event => normalizeEvent(event, archiveByEvent.get(cleanText(event.id))))
-      .filter(event => event.id && event.title);
+      .filter(event => event.id && event.title));
   }
 
   function normalizeSupabaseRows(rows) {
-    return (rows || [])
+    return dedupeEvents((rows || [])
       .map(row => normalizeEvent(row))
-      .filter(event => event.id && event.title);
+      .filter(event => event.id && event.title));
   }
 
   async function fetchJson(fetcher, url, fallback) {
@@ -288,6 +372,7 @@
     canUseSupabase,
     filterEventsByCity,
     loadPosterWallData,
+    dedupeEvents,
     normalizeStaticPayload,
     normalizeSupabaseRows,
     normalizedConfig,

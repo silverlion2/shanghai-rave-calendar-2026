@@ -95,6 +95,109 @@ test("normalizes poster events that use name instead of title", () => {
   assert.equal(rows[0].posterUrl, "https://cdn.example.com/name-only.jpg");
 });
 
+test("deduplicates same-date same-venue poster rows with compact title variants", () => {
+  const module = loadModule();
+  const rows = module.normalizeStaticPayload({
+    events: [
+      {
+        id: "2026-06-21-friendsstandout",
+        title: "FRIENDSSTAND out",
+        city: "Shanghai",
+        sortDate: "2026-06-21",
+        venue: "Wigwam",
+        posterUrl: "https://cdn.example.com/workbuddy.jpg",
+        source: "https://shypeople.cn/FRIENDSSTAND-out",
+        sourceLabel: "poster-archive",
+      },
+      {
+        id: "friendsstandout",
+        title: "FRIENDSSTANDout",
+        city: "Shanghai",
+        sortDate: "2026-06-21",
+        venue: "Wigwam",
+        posterUrl: "https://cdn.example.com/ra.jpg",
+        source: "https://ra.co/events/2455159",
+        sourceLabel: "RA",
+        lineup: [
+          { name: "Tsing" },
+          { name: "YKK" },
+        ],
+      },
+      {
+        id: "same-room-different-party",
+        title: "Different Party",
+        city: "Shanghai",
+        sortDate: "2026-06-21",
+        venue: "Wigwam",
+      },
+    ],
+  }, { posters: [] });
+
+  assert.deepEqual(JSON.parse(JSON.stringify(rows.map(row => row.id))), ["friendsstandout", "same-room-different-party"]);
+  assert.equal(rows[0].source, "https://ra.co/events/2455159");
+  assert.deepEqual(rows[0].lineup, [{ name: "Tsing" }, { name: "YKK" }]);
+});
+
+test("deduplicates same-date series rows with descriptive title and venue drift", () => {
+  const module = loadModule();
+  const rows = module.normalizeSupabaseRows([
+    {
+      id: "house-of-zup-2026-06-21",
+      title: "House of Zup (House, Disco, Hip Hop)",
+      city: "Shanghai",
+      sort_date: "2026-06-21",
+      venue_name: "Star@ Culture Center",
+      source_url: "https://www.smartshanghai.com/event/house-of-zup-house-disco-hip-hop-2026-06-21",
+      source_label: "SmartShanghai",
+      poster_url: "https://cdn.example.com/smartshanghai.jpg",
+    },
+    {
+      id: "2026-06-21-house-of-zup-house-disco-hip-hop",
+      title: "HOUSE OF ZUP",
+      city: "Shanghai",
+      sort_date: "2026-06-21",
+      venue_name: "ZUP Pizza Bar",
+      source_url: "https://ra.co/events/2470695",
+      source_label: "Resident Advisor + SmartShanghai",
+      poster_url: "https://cdn.example.com/ra.jpg",
+      lineup: [{ name: "F-Mark" }, { name: "Skinny Brown" }],
+    },
+  ]);
+
+  assert.deepEqual(JSON.parse(JSON.stringify(rows.map(row => row.id))), ["2026-06-21-house-of-zup-house-disco-hip-hop"]);
+  assert.equal(rows[0].venue, "ZUP Pizza Bar");
+  assert.equal(rows[0].source, "https://ra.co/events/2470695");
+});
+
+test("keeps undated city-tour variants and tags non-Shanghai rows", () => {
+  const module = loadModule();
+  const rows = module.normalizeStaticPayload({
+    events: [
+      {
+        id: "2024-pog-kasra-beijing",
+        title: "POG with Kasra (Beijing)",
+        city: "Beijing",
+        venue: "Zhao Dai",
+        posterUrl: "https://cdn.example.com/beijing.jpg",
+        source: "https://shypeople.cn/",
+      },
+      {
+        id: "2024-pog-kasra-shanghai",
+        title: "POG with Kasra (Shanghai)",
+        city: "Shanghai",
+        venue: "Shy People",
+        posterUrl: "https://cdn.example.com/shanghai.jpg",
+        source: "https://shypeople.cn/",
+      },
+    ],
+  }, { posters: [] });
+
+  assert.deepEqual(JSON.parse(JSON.stringify(rows.map(row => row.id))), ["2024-pog-kasra-beijing", "2024-pog-kasra-shanghai"]);
+  assert.deepEqual(JSON.parse(JSON.stringify(rows[0].tags)), ["other city", "beijing"]);
+  assert.deepEqual(JSON.parse(JSON.stringify(rows[0].decisionTags)), ["other city", "beijing"]);
+  assert.deepEqual(JSON.parse(JSON.stringify(rows[1].tags)), []);
+});
+
 test("filters normalized events by city with Shanghai default and all-city option", () => {
   const module = loadModule();
   const rows = [
