@@ -2959,7 +2959,6 @@
           "note": "Yadong: drum & bass/ dubstep selection. RA lists Yadong on the 19Hz lineup."
         }
       ],
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "promotionalLinks": [
         {
           "label": "19Hz Shanghai Instagram exposed by RA",
@@ -3001,7 +3000,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "dirty-beats",
@@ -3073,7 +3073,6 @@
           "source": "https://ra.co/events/2450615"
         }
       ],
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "RA says to scan the WeChat mini-program QR code to purchase tickets and lists minimum age 18+. Price was not exposed in the indexed RA text.",
       "soundTags": [
         "groovy"
@@ -3106,7 +3105,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "darker-than-wax-dean-chew",
@@ -3166,7 +3166,6 @@
         }
       ],
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/darker-than-wax-dean-chew.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "soundTags": [
         "bass-hybrid",
         "groovy"
@@ -3186,7 +3185,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "gully-riddim-mssingno",
@@ -3277,7 +3277,6 @@
         }
       ],
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/gully-riddim-mssingno.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "soundTags": [
         "bass-hybrid"
       ],
@@ -3297,7 +3296,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "interzone-summer-time",
@@ -3370,7 +3370,6 @@
         }
       ],
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/interzone-summer-time.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "soundTags": [
         "house"
       ],
@@ -3389,7 +3388,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "janein",
@@ -3476,8 +3476,8 @@
       ],
       "ticketStatus": "RA lists cost at 100 RMB and minimum age 18+.",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/janein.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "nightwave",
@@ -3558,7 +3558,6 @@
           "note": "Odd: techno/ house selection. RA lists Odd on the NIGHTWAVE lineup."
         }
       ],
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "promotionalLinks": [
         {
           "label": "SmartShanghai ticket link exposed by RA",
@@ -3572,7 +3571,8 @@
         }
       ],
       "ticketStatus": "RA lists tickets from 108 RMB, minimum age 18+, and SmartShanghai/WeChat promotional links.",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "tham",
@@ -3666,8 +3666,8 @@
       ],
       "ticketStatus": "RA lists cost at 130 RMB and minimum age 18+.",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/tham.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "acierate-brvtalist",
@@ -3727,7 +3727,6 @@
         }
       ],
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/acierate-brvtalist.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "soundTags": [
         "hard-techno"
       ],
@@ -3748,7 +3747,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "butterfree-m101",
@@ -3815,7 +3815,6 @@
         }
       ],
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/butterfree-m101.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "soundTags": [
         "live-av",
         "groovy"
@@ -3837,7 +3836,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "caroline-roxy",
@@ -3900,8 +3900,8 @@
       "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
       "sourceConfidence": "Single public source from Resident Advisor; sufficient for archive visibility but still worth rechecking for live planning.",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/caroline-roxy.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "shanghai-tonight-night-festival-2026",
@@ -4074,7 +4074,6 @@
           "note": "Martin Ma: techno/ house selection. RA lists Martin Ma on the SUNKISSED lineup."
         }
       ],
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "promotionalLinks": [
         {
           "label": "SmartShanghai ticket link exposed by RA",
@@ -4088,7 +4087,8 @@
         }
       ],
       "ticketStatus": "RA lists tickets from 128 RMB, VIP/table package context, minimum age 18+, and SmartShanghai/WeChat promotional links.",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "techno-worlds",
@@ -4158,8 +4158,8 @@
       "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
       "sourceConfidence": "Single public source from Resident Advisor; sufficient for archive visibility but still worth rechecking for live planning.",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/techno-worlds.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "house-of-zup-jun7",
@@ -4267,7 +4267,6 @@
         }
       ],
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/house-of-zup-jun7.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "soundTags": [
         "groovy",
         "rooftop",
@@ -4288,7 +4287,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "fruitygroove-soul-navigator",
@@ -4394,7 +4394,6 @@
           "source": "https://ra.co/events/2454518"
         }
       ],
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "RA lists cost at 128 RMB and minimum age 18+. Final checkout availability should be checked before purchase.",
       "addedAt": "2026-06-08",
       "lastChecked": "2026-06-11",
@@ -4433,7 +4432,8 @@
       "bestFor": "Best for bass, breaks, dubstep, jungle, UKG, and high-energy club-adjacent listeners.",
       "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
       "sourceConfidence": "Single public source from Resident Advisor; sufficient for archive visibility but still worth rechecking for live planning.",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "kollin",
@@ -4549,10 +4549,10 @@
           "source": "https://ra.co/events/2460995"
         }
       ],
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "RA says to scan the WeChat mini-program code to purchase tickets and lists minimum age 18+.",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/kollin.jpg",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "cltx-abyss",
@@ -4642,10 +4642,10 @@
           "note": "SITU: trance/ techno selection. RA lists SITU on the Lethal Distortion lineup."
         }
       ],
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "RA lists cost at 140 RMB and minimum age 18+.",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/cltx-abyss.jpg",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "milo-cosmjn",
@@ -4728,10 +4728,10 @@
           "note": "Shanghai support on the RA-listed POTENT lineup; exact set time was not published."
         }
       ],
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "RA lists cost at 100 RMB and minimum age 18+. Final ticket route should be checked before publishing a direct purchase CTA.",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/milo-cosmjn.jpg",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "prgrm-021",
@@ -4794,7 +4794,6 @@
         }
       ],
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/prgrm-021.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "kind": "event",
       "soundTags": [
         "hard-techno",
@@ -4818,7 +4817,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "fengyun-5",
@@ -4908,8 +4908,8 @@
       ],
       "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+.",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/fengyun-5.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "horizon",
@@ -4993,7 +4993,6 @@
           "note": "RA-listed support artist; exact set time was not published."
         }
       ],
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "promotionalLinks": [
         {
           "label": "SmartShanghai ticket link exposed by RA",
@@ -5008,7 +5007,8 @@
       ],
       "ticketStatus": "RA lists tickets at 138-178 RMB with one drink, minimum age 18+, and SmartShanghai/WeChat promotional links.",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/horizon.jpg",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "the-woods",
@@ -5083,10 +5083,10 @@
           "note": "Heatwolves: industrial/ italo disco selection. RA lists Heatwolves as the lineup artist and event admin for this Love Bang dark-dance night."
         }
       ],
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "RA lists cost as 0 and minimum age 18+; event description says entry is free.",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/the-woods.jpg",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "matisa-limsum",
@@ -5168,10 +5168,10 @@
           "note": "Shanghai support on the RA-listed POTENT lineup; exact set time was not published."
         }
       ],
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+. Final ticket route should be checked before publishing a direct purchase CTA.",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/matisa-limsum.jpg",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "nova-sunset-sessions-flair",
@@ -5199,7 +5199,6 @@
       "organizer": "Nova Events",
       "detailsUrl": "https://www.smartshanghai.com/event/nova-events-presents-sunset-sessions-flair-rooftop-party-2026-06-13-2",
       "ticketUrl": "https://www.smartshanghai.com/event/nova-events-presents-sunset-sessions-flair-rooftop-party-2026-06-13-2",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "SmartShanghai lists tickets from 188 RMB and shows web, app, and WeChat buying routes.",
       "addedAt": "2026-06-08",
       "lastChecked": "2026-06-11",
@@ -5238,7 +5237,8 @@
       "bestFor": "Best for a more social, house-forward, rooftop, or date-friendly electronic route.",
       "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
       "sourceConfidence": "Single public source from SmartShanghai; sufficient for archive visibility but still worth rechecking for live planning.",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "nosaj-thing",
@@ -5360,10 +5360,10 @@
           "note": "GaoQiao: experimental/ future beats selection. RA-linked closing artist listed from 03:00 to 05:00."
         }
       ],
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "RA lists cost at 148 RMB and minimum age 18+.",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/nosaj-thing.jpg",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "santa-k",
@@ -5450,7 +5450,6 @@
           "note": "NAKIN: hard techno/ new trance selection. RA-linked lineup artist for TURBO's Abyss booking."
         }
       ],
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "promotionalLinks": [
         {
           "label": "Santa K Instagram",
@@ -5460,7 +5459,8 @@
       ],
       "ticketStatus": "RA lists cost at 120 RMB. Minimum age was not exposed in the fetched RA text, so confirm door policy with Abyss/TURBO before publishing.",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/santa-k.jpg",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "synth-crush",
@@ -5551,10 +5551,10 @@
           "note": "Illsee: electro/ EBM selection. RA-linked event admin and lineup artist; exact set time was not published."
         }
       ],
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "RA lists cost at 118 RMB. Age rule was not visible in the fetched RA text.",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/synth-crush.jpg",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "system-popup",
@@ -5740,7 +5740,6 @@
         }
       ],
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/house-of-zup.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "kind": "event",
       "soundTags": [
         "groovy",
@@ -5762,7 +5761,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "sunset-sundays-dome",
@@ -5802,7 +5802,6 @@
         "until": "2026-06-28",
         "source": "SmartShanghai"
       },
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "SmartShanghai says tickets are currently not available on SmartShanghai.",
       "addedAt": "2026-06-08",
       "lastChecked": "2026-06-14",
@@ -5842,7 +5841,8 @@
       "bestFor": "Best for a more social, house-forward, rooftop, or date-friendly electronic route.",
       "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
       "sourceConfidence": "Watch-level confidence from SmartShanghai; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence.",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "wigwam-weekly-listening-golgol",
@@ -5872,7 +5872,6 @@
       "organizer": "Wigwam",
       "lastChecked": "2026-06-15",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/wigwam-weekly-listening-golgol.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "Wigwam event poster and weekly schedule screenshots confirm Free Entry and 22:00-late timing for Golgol. No public web ticket URL or age policy was captured; check Wigwam same-day if the room is capacity-controlled.",
       "lineup": [
         {
@@ -5940,7 +5939,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "bloom-season-1-grand-final",
@@ -6014,7 +6014,6 @@
         }
       ],
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/bloom-season-1-grand-final.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "kind": "event",
       "soundTags": [
         "rooftop",
@@ -6036,7 +6035,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "wigwam-weekly-listening-xiaolaba",
@@ -6066,7 +6066,6 @@
       "organizer": "Wigwam",
       "lastChecked": "2026-06-15",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/wigwam-weekly-listening-xiaolaba.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "Wigwam event poster and weekly schedule screenshots confirm Free Entry and 22:00-late timing for Xiaolaba / 小喇叭. No public web ticket URL or age policy was captured; check Wigwam same-day if the room is capacity-controlled.",
       "lineup": [
         {
@@ -6134,7 +6133,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "alter-pavillon",
@@ -6232,10 +6232,10 @@
           "note": "SmartShanghai lists a one-hour acoustic-electronic live performance by Wang Meng + Yu Miao."
         }
       ],
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "SmartShanghai lists early bird, presale, and door tickets from 128 RMB with web, app, and WeChat buying routes.",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/alter-pavillon.jpg",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "cybionte-solo-ykk-heshang",
@@ -6312,7 +6312,6 @@
         }
       ],
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/cybionte-solo-ykk-heshang.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "kind": "event",
       "soundTags": [
         "house"
@@ -6332,7 +6331,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "girls-night-out-dome",
@@ -6377,7 +6377,6 @@
         "until": "2026-06-25",
         "source": "SmartShanghai"
       },
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "SmartShanghai says tickets are currently not available on SmartShanghai.",
       "addedAt": "2026-06-18",
       "lastChecked": "2026-06-18",
@@ -6419,7 +6418,8 @@
       "bestFor": "Best for a more social, house-forward, rooftop, or date-friendly electronic route.",
       "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
       "sourceConfidence": "Watch-level confidence from SmartShanghai; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence.",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "illum-gravity-stateofff",
@@ -6453,7 +6453,6 @@
       "ticketUrl": "https://www.smartshanghai.com/event/illum-presents-state-offf-gqom-club-music-bass-2026-06-18",
       "lastChecked": "2026-06-18",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/illum-gravity-stateofff.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "SmartShanghai lists 100 RMB presale / 120 RMB door. User-provided ILLUM ticketing screenshot also shows an 80 RMB early-bird tier, 2026-06-18 to 2026-06-19, 22:00-04:00, ILLUM, and Zhaohua Road 658 / C PARK LG floor. Age policy was not visible.",
       "lineup": [
         {
@@ -6553,7 +6552,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "heim-long-wave",
@@ -6586,7 +6586,6 @@
       "ticketUrl": "https://www.smartshanghai.com/event/long-wave-house-techno-disco-club-music-2026-06-18",
       "lastChecked": "2026-06-18",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/heim-long-wave.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "SmartShanghai lists 88 RMB presale / 108 RMB door and says tickets are currently not available on SmartShanghai. Heim screenshots confirm date, 22:00-late start, venue/address, and lineup; public Instagram indexing suggests 66 RMB early bird was sold out.",
       "lineup": [
         {
@@ -6708,7 +6707,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "minuit-mirror-concept",
@@ -6742,7 +6742,6 @@
       "ticketUrl": "https://ra.co/events/2468150",
       "lastChecked": "2026-06-18",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/minuit-mirror-concept.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "RA live event detail lists 2026-06-18, 22:00-05:00, EXIT at 298 Xingfu Road, house/techno tags, Illsee event admin, and 100 RMB cost. User-provided MIRROR poster confirms title, Minuit branding, lineup, live camera/VJing concept, Jun 18 date, EXIT, and Xingfu Road 298. Age policy and live ticket state are still not visible.",
       "lineup": [
         {
@@ -6808,7 +6807,8 @@
       "bestFor": "Best for readers tracking EXIT house/techno programming who can verify same-day details before committing.",
       "verifyBeforeGoing": "Recheck RA or EXIT/Minuit channels for ticket availability, age policy, flyer, and any set-time update before going.",
       "sourceConfidence": "RA event detail and user-provided MIRROR poster agree on the title, date, EXIT venue/address, lineup, and live camera/VJing concept; age policy remains the only visible public-source gap.",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "night-at-museum-90s-disco",
@@ -6836,7 +6836,6 @@
       "organizer": "Fotografiska",
       "detailsUrl": "https://www.smartshanghai.com/event/night-at-the-museum-back-to-the-90s-disco-night-2026-06-18",
       "ticketUrl": "https://www.247tickets.com/t/back-to-90s-disco-night",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "SmartShanghai and 247tickets both list Jun 18 at Fotografiska Shanghai. 247tickets shows a 21:00 session, 120 RMB regular e-ticket including one drink, and no cancellation notice; verify live checkout state before any purchase CTA.",
       "addedAt": "2026-06-08",
       "lastChecked": "2026-06-14",
@@ -6887,7 +6886,8 @@
       "bestFor": "Best for a more social, house-forward, rooftop, or date-friendly electronic route.",
       "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
       "sourceConfidence": "Watch-level confidence from SmartShanghai; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence.",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "photocult-mask-desire-auction",
@@ -7005,7 +7005,6 @@
           "note": "RA lists three desire-auction interludes in the DOME room between DJ sets."
         }
       ],
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "RA lists cost at 168 RMB and minimum age 18+. A June 18 public Instagram index from PHOTOCULT/REACTOR reposts the same Mask. Desire. Auction title, date, 22:00-04:00 window, dress-code cue, and DOME/POCKET room lineup.",
       "recommendationReason": "Recommended because the lineup (Josie, PASHRAWBOI, and 2 more listed artists) gives the night a clear techno-first club listening draw at Reactor Shanghai.",
       "bestFor": "Best for readers comparing Shanghai electronic rooms by sound, lineup, and room fit.",
@@ -7047,7 +7046,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "health-maxxing-reactor-2026-06-19",
@@ -7079,7 +7079,6 @@
       "organizer": "idk / REACTOR Shanghai",
       "lastChecked": "2026-06-19",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/health-maxxing-reactor-2026-06-19.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "Yuyuan ticket-home screenshot confirms 78 RMB+ starting price, electronic ticket, standing-room flag, and non-refundable flag. Reactor post screenshot says entry can be free before midnight after passing the body-test check; verify the rule, quota, and door policy before planning around free entry. Direct mini-program URL and age policy were not visible.",
       "lineup": [
         {
@@ -7208,7 +7207,8 @@
       "bestFor": "Best for dancers who like Reactor's experimental club programming, body-performance concepts, and a late DOME room that is adjacent to techno without being a straight hard-techno booking.",
       "verifyBeforeGoing": "Check Yuyuan or Reactor before going for live ticket inventory, age policy, and the exact free-entry-before-midnight body-test rule.",
       "sourceConfidence": "High-confidence user-screenshot event: the poster, Yuyuan ticket-home card, and Reactor running-order screenshot jointly confirm date, start time, venue, lineup, set times, price floor, and ticket state. No public shareable ticket URL or age policy was visible.",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "heim-earworthy-selected-sound",
@@ -7239,7 +7239,6 @@
       "organizer": "Heim Shanghai / Earworthy",
       "lastChecked": "2026-06-19",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/heim-earworthy-selected-sound.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "Heim WeChat poster/monthly/article screenshots confirm date, 16:00-02:00 time, venue/address, and lineup. Price, ticket route, and age policy were not captured.",
       "lineup": [
         {
@@ -7326,7 +7325,8 @@
           "ticket unclear"
         ]
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "abyss-faq-kirk",
@@ -7357,7 +7357,6 @@
       "organizer": "FaQ / Abyss Shanghai",
       "lastChecked": "2026-06-19",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/abyss-faq-kirk.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "Yuyuan WeChat mini-program ticketing screenshot, manually confirmed by the user, shows 2026-06-19 22:00 at Abyss club, price from 110 RMB, e-ticket, no-refund label, and customer-service WeChat abyss_service. Direct public ticket URL and age policy were not captured.",
       "lineup": [
         {
@@ -7431,7 +7430,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "hush-three-year-anniversary-dj-david-2026-06-19",
@@ -7460,7 +7460,6 @@
       "lastChecked": "2026-06-19",
       "addedAt": "2026-06-19",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/hush-three-year-anniversary-dj-david-2026-06-19.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "lineup": [
         {
           "name": "DJ David",
@@ -7509,7 +7508,8 @@
           "watchlist"
         ]
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "2026-06-19-italo-disco-shanghai-s-italian-roofto",
@@ -7539,7 +7539,6 @@
       "lastChecked": "2026-06-19",
       "addedAt": "2026-06-19",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/2026-06-19-italo-disco-shanghai-s-italian-roofto.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "lineup": [
         {
           "name": "DJ UACA",
@@ -7589,7 +7588,8 @@
           "ticket unclear"
         ]
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "mrd",
@@ -7681,10 +7681,10 @@
           "note": "Justease: trance/ techno selection. RA lists Justease on the MRD x TURBO lineup."
         }
       ],
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "RA lists cost at 128 RMB and minimum age 18+.",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/mrd.jpg",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "nikita-zabelin-potent",
@@ -7743,7 +7743,6 @@
         }
       ],
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/nikita-zabelin-potent.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "kind": "event",
       "soundTags": [
         "house",
@@ -7764,7 +7763,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "illum-normie-10k99",
@@ -7796,7 +7796,6 @@
       "organizer": "Normie Corporation / ILLUM Shanghai",
       "lastChecked": "2026-06-19",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/illum-normie-10k99.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "User-provided ILLUM ticketing screenshots show 2026-06-19 to 2026-06-20, 22:00-04:00, ILLUM, Zhaohua Road 658 / C PARK LG floor, and ticket tiers at 85 RMB early-bird, 95 RMB presale, and 110 RMB door. Direct public ticket URL and age policy were not visible.",
       "lineup": [
         {
@@ -7892,7 +7891,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "onefortyasia-mungk-simbie",
@@ -7978,7 +7978,6 @@
         }
       ],
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/onefortyasia-mungk-simbie.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "kind": "event",
       "soundTags": [
         "bass-hybrid"
@@ -7999,7 +7998,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "oscar-l-mim-club",
@@ -8033,7 +8033,6 @@
           "note": "Spanish DJ/producer, Drumcode artist, Tomorrowland performer."
         }
       ],
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "YuYuan mini-program screenshot shows 158 RMB starting price. Purchase through WeChat mini-program.",
       "sources": [
         {
@@ -8069,7 +8068,8 @@
       "bestFor": "Best for readers comparing Shanghai electronic rooms by sound, lineup, and room fit.",
       "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
       "sourceConfidence": "Single public source from YuYuan WeChat mini-program; sufficient for archive visibility but still worth rechecking for live planning.",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "2026-06-19-vibes-up-party-reggae-dancehall-hip-h",
@@ -8099,7 +8099,6 @@
       "lastChecked": "2026-06-19",
       "addedAt": "2026-06-19",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/2026-06-19-vibes-up-party-reggae-dancehall-hip-h.png",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "lineup": [
         {
           "name": "DJ F-Mark",
@@ -8162,7 +8161,8 @@
           "watchlist"
         ]
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "wigwam-weekly-listening-wheon",
@@ -8193,7 +8193,6 @@
       "organizer": "Wigwam",
       "lastChecked": "2026-06-19",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/wigwam-weekly-listening-wheon.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "Wigwam event poster and weekly schedule screenshots confirm Free Entry and 22:00-late timing for wheon. No public web ticket URL or age policy was captured; check Wigwam same-day if the room is capacity-controlled.",
       "lineup": [
         {
@@ -8264,7 +8263,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "exit-298-steal-tapes",
@@ -8298,7 +8298,6 @@
       "ticketUrl": "https://ra.co/events/2468159",
       "lastChecked": "2026-06-19",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/exit-298-steal-tapes.png",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "RA lists 2026-06-20, 22:00-05:00, EXIT at 298 Xingfu Road, house/techno genre tags, lineup Steal Tapes / Sam TBD. / Queenie. / Max Gross, and 118 RMB cost. User-provided ticketing screenshot shows a local Yuyuan ticket-home route with 88 RMB+ starting price, electronic tickets, non-refundable flag, and 2026-06-20 22:00. Direct mini-program URL and age policy were not visible.",
       "lineup": [
         {
@@ -8385,7 +8384,8 @@
       "bestFor": "Best for house-heads, techno-adjacent dancers, and EXIT regulars who want a late basement route with groove and label texture instead of peak hard-techno pressure.",
       "verifyBeforeGoing": "Confirm current ticket inventory, final price, age policy, and any door update through RA or the Yuyuan / EXIT ticket route before going. The visible sources disagree between 88 RMB+ starting price and RA 118 RMB indexed cost.",
       "sourceConfidence": "High-confidence RA plus user-screenshot event: RA confirms the core event fields and the user-provided EXIT / ticketing screenshots corroborate poster, date, start time, local ticket route, and 88 RMB+ starting price. Direct mini-program URL and age policy remain unresolved.",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "afrowave-takeover-la-burg",
@@ -8432,7 +8432,6 @@
           "source": "SmartShanghai event description"
         }
       ],
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "SmartShanghai says tickets are not currently available on SmartShanghai and points to QR-code availability in the event description.",
       "addedAt": "2026-06-08",
       "lastChecked": "2026-06-19",
@@ -8477,7 +8476,8 @@
       "bestFor": "Best for bass, breaks, dubstep, jungle, UKG, and high-energy club-adjacent listeners.",
       "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
       "sourceConfidence": "Watch-level confidence from SmartShanghai; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence.",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "atm-leo-monira",
@@ -8548,7 +8548,6 @@
         }
       ],
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/atm-leo-monira.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "kind": "event",
       "soundTags": [
         "hard-techno",
@@ -8571,7 +8570,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "enchanted-night-the-nest",
@@ -8624,7 +8624,6 @@
         }
       ],
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/enchanted-night-the-nest.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "kind": "event",
       "soundTags": [
         "rooftop"
@@ -8646,7 +8645,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "abyss-hardcore-melancholia",
@@ -8677,7 +8677,6 @@
       "detailsUrl": "https://ra.co/events/2470462",
       "lastChecked": "2026-06-19",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/abyss-hardcore-melancholia.png",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "RA lists 2026-06-20 22:30-05:00, 120 RMB, and 18+. The earlier user-confirmed Yuyuan ticketing screenshot lists 22:00 at Abyss club, price from 100 RMB, e-ticket, no-refund label, and customer-service WeChat abyss_service. Recheck RA/Yuyuan before planning around the exact opening time or final ticket tier.",
       "lineup": [
         {
@@ -8757,7 +8756,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "jasmin-knopha",
@@ -8895,8 +8895,8 @@
         }
       ],
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/jasmin-knopha.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "liminal-dreams",
@@ -9039,8 +9039,8 @@
       ],
       "address": "LG Floor, C.PARK, No. 658 Zhaohua Road, Changning District, Shanghai",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/liminal-dreams.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "illum-soback-liquid-dolls",
@@ -9071,7 +9071,6 @@
       "organizer": "LIQUID DOLLS / ILLUM Shanghai",
       "lastChecked": "2026-06-19",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/illum-soback-liquid-dolls.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "User-provided ILLUM ticketing screenshot shows 2026-06-20 to 2026-06-21, 22:00-04:00, ILLUM, Zhaohua Road 658 / C PARK LG floor, and ticket tiers at 88 RMB early-bird, 108 RMB presale, and 128 RMB door. Direct public ticket URL, age policy, and support lineup were not visible.",
       "lineup": [
         {
@@ -9140,7 +9139,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "malaa-max-shanghai",
@@ -9176,7 +9176,6 @@
           "note": "French masked DJ, Pardon My French member, G-house pioneer."
         }
       ],
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "YuYuan mini-program screenshot shows 188 RMB starting price. Purchase through WeChat mini-program.",
       "sources": [
         {
@@ -9214,7 +9213,8 @@
       "bestFor": "Best for bass, breaks, dubstep, jungle, UKG, and high-energy club-adjacent listeners.",
       "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
       "sourceConfidence": "Single public source from YuYuan WeChat mini-program; sufficient for archive visibility but still worth rechecking for live planning.",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "neon-jungle-tom-kynd",
@@ -9281,7 +9281,6 @@
         }
       ],
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/neon-jungle-tom-kynd.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "kind": "event",
       "soundTags": [
         "house",
@@ -9305,7 +9304,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "2026-06-20-nova-events-presents-sundown-char-bar",
@@ -9428,7 +9428,6 @@
         }
       ],
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/sciahri-potent.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "kind": "event",
       "soundTags": [
         "groovy"
@@ -9449,7 +9448,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "friendsstandout",
@@ -9529,7 +9529,6 @@
         }
       ],
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/friendsstandout.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "kind": "event",
       "soundTags": [],
       "decisionTags": [
@@ -9547,7 +9546,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "2026-06-21-house-of-zup-house-disco-hip-hop",
@@ -9671,7 +9671,6 @@
           "verificationNote": "Secondary local listing context for the same Jun 21 ZUP Sunday session; use RA as the event-level source for genre and running order."
         }
       ],
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "recommendationReason": "Included because the House / Italo Disco running order gives this ZUP Sunday a clear daytime social-dance lane: useful for house, disco, food-and-drinks, and low-pressure neighborhood plans rather than basement pressure.",
       "bestFor": "Best for a Sunday afternoon house and Italo disco hang with food, drinks, and an easy room feel.",
       "verifyBeforeGoing": "Recheck RA, SmartShanghai, or ZUP before going for entry policy, age rule, and whether the no-cover Sunday format still applies.",
@@ -9696,7 +9695,8 @@
         "riskFlags": []
       },
       "kind": "event",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "cyber-buddha",
@@ -9791,7 +9791,6 @@
           "note": "SmartShanghai describes MICO as an electronic traveler working across ambient, downtempo, IDM, and narrative soundscapes."
         }
       ],
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "promotionalLinks": [
         {
           "label": "ShowStart ticket route exposed by RA",
@@ -9811,7 +9810,8 @@
         "checked": "2026-06-14"
       },
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/cyber-buddha.jpg",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "dark-room",
@@ -9893,7 +9893,6 @@
           "source": "https://ra.co/events/2462792"
         }
       ],
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "RA says to scan the WeChat mini-program code to purchase tickets and lists minimum age 18+.",
       "recommendationReason": "Recommended because the lineup (D_z, MegaWatts, and 2 more listed artists) gives the night a clear techno-first club listening draw at Dirty House.",
       "bestFor": "Best for readers looking for a straightforward Dirty House techno night with a published late-room sequence.",
@@ -9928,7 +9927,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "heim-invites-dina",
@@ -9959,7 +9959,6 @@
       "organizer": "Heim Shanghai",
       "lastChecked": "2026-06-19",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/heim-invites-dina.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "Yuyuan WeChat mini-program ticketing screenshot, manually confirmed by the user, shows price from 66 RMB, 2026-06-26 22:00, Changle Road M101 Heim, e-ticket, standing event, and no-refund label. Direct shareable ticket URL was not captured; buy through Yuyuan or Heim customer-service route.",
       "lineup": [
         {
@@ -10034,7 +10033,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "botox-fatale",
@@ -10169,8 +10169,8 @@
       "address": "B1, TX Huaihai Youth Center, No. 523-527 Huaihai Road, Huangpu District, Shanghai",
       "organizer": "Abyss Shanghai",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/botox-fatale.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "devils-dancers",
@@ -10319,7 +10319,6 @@
           "note": "Poster-listed DJ artist."
         }
       ],
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "Poster shows presale at 60 RMB, door at 80 RMB, and special 50 RMB ticket for Guizhou residents with ID. No public ticket URL visible.",
       "sources": [
         {
@@ -10356,7 +10355,8 @@
       "bestFor": "Best for readers comparing Shanghai electronic rooms by sound, lineup, and room fit.",
       "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
       "sourceConfidence": "Single public source from User-provided poster; sufficient for archive visibility but still worth rechecking for live planning.",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "shanghai-mushroom-music-carnival-2026",
@@ -10449,7 +10449,6 @@
         }
       ],
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/shanghai-mushroom-music-carnival-2026.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "soundTags": [
         "live-av",
         "rooftop",
@@ -10478,7 +10477,8 @@
       "bestFor": "Best for a more social, house-forward, rooftop, or date-friendly electronic route.",
       "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
       "sourceConfidence": "Watch-level confidence from Sina / official Weibo mirror; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence.",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "anika-kunst",
@@ -10620,7 +10620,6 @@
       "organizer": "Abyss Shanghai",
       "lastChecked": "2026-06-19",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/abyss-cum-chemical-love.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "Yuyuan WeChat mini-program ticketing screenshot, manually confirmed by the user, shows 2026-06-27 22:00 at Abyss club, price from 90 RMB, e-ticket, no-refund label, and customer-service WeChat abyss_service. Direct public ticket URL and age policy were not captured.",
       "lineup": [
         {
@@ -10694,7 +10693,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "heim-discchef-roto-anniversary",
@@ -10725,7 +10725,6 @@
       "organizer": "Heim Shanghai / DiscChef",
       "lastChecked": "2026-06-19",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/heim-discchef-roto-anniversary.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "Yuyuan WeChat mini-program ticketing screenshot, manually confirmed by the user, shows price from 66 RMB, 2026-06-27 22:00, Changle Road M101 Heim, e-ticket, standing event, and no-refund label. Direct shareable ticket URL was not captured; buy through Yuyuan or Heim customer-service route.",
       "lineup": [
         {
@@ -10798,7 +10797,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "hexscape",
@@ -11015,8 +11015,8 @@
         }
       ],
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/jaal.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "truth-lies",
@@ -11156,7 +11156,6 @@
       "organizer": "Asylum / CLOUD.SU / PAS",
       "lastChecked": "2026-06-19",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/le-youth-cloudsu-2026-06-27.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "Yuyuan ticket-home screenshot confirms 228 RMB+ starting price, electronic ticket, standing-room flag, non-refundable flag, and a sold-out button state at screenshot time. Direct mini-program URL and age policy were not visible.",
       "lineup": [
         {
@@ -11225,7 +11224,8 @@
       "bestFor": "Best for melodic-house listeners, date-friendly rooftop plans, and readers who want polished electronic music without hard-rave intensity.",
       "verifyBeforeGoing": "Check Yuyuan or the organizer before going for any returned tickets, age policy, door rules, and weather/rooftop updates; the ticket screenshot showed sold out.",
       "sourceConfidence": "High-confidence user-screenshot event: clean poster and Yuyuan ticket-home screenshot jointly confirm event identity, date, time, venue/address, support lineup, price floor, ticket labels, and sold-out state. No public shareable ticket URL or age policy was visible.",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "nova-summer-splash-pool-party",
@@ -11253,7 +11253,6 @@
       "organizer": "Nova Events / Viva",
       "detailsUrl": "https://www.smartshanghai.com/event/nova-events-presents-summer-splash-pool-party-2026-06-27",
       "ticketUrl": "https://www.smartshanghai.com/event/nova-events-presents-summer-splash-pool-party-2026-06-27",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "SmartShanghai lists tickets from 198 RMB and shows web, app, and WeChat buying routes.",
       "addedAt": "2026-06-08",
       "lastChecked": "2026-06-19",
@@ -11296,7 +11295,8 @@
       "bestFor": "Best for a more social, house-forward, rooftop, or date-friendly electronic route.",
       "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
       "sourceConfidence": "Watch-level confidence from SmartShanghai; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence.",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "2026-06-27-white-party-shanghai-s-all-white-roof",
@@ -11607,7 +11607,6 @@
       "organizer": "Yuyintang",
       "lastChecked": "2026-06-19",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/yuyintang-cooling-water.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "ShowStart lists Cooling Water on 2026-07-03 from 20:00 to 23:00 at Yuyintang Music Park B Hall with 98 RMB presale, 128 RMB full-price, and 158 RMB pair tickets, and says sold tickets are non-refundable except for force-majeure cancellation/postponement. Age policy was not visible; verify venue policy before going.",
       "lineup": [
         {
@@ -11691,7 +11690,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "misa-shanghai-summer-music-festival-2026",
@@ -11771,7 +11771,6 @@
         }
       ],
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/misa-shanghai-summer-music-festival-2026.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "soundTags": [
         "live-av",
         "rooftop",
@@ -11803,7 +11802,8 @@
       "bestFor": "Best for hard-techno, industrial, acid, or late-room listeners.",
       "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
       "sourceConfidence": "Watch-level confidence from Shanghai Municipal Administration of Culture and Tourism; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence.",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "lucrecia-dalt-yuyintang",
@@ -11835,7 +11835,6 @@
       "organizer": "SO.READY / Yuyintang",
       "lastChecked": "2026-06-19",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/lucrecia-dalt-yuyintang.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "ShowStart lists Lucrecia Dalt on 2026-07-16 from 20:30 to 22:00 at Yuyintang Music Park C Hall with 180 RMB presale and 220 RMB full-price tickets, and says sold tickets are non-refundable except for force-majeure cancellation/postponement. Age policy was not visible; verify venue policy before going.",
       "lineup": [
         {
@@ -11921,7 +11920,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "badbadnotgood-2026-shanghai",
@@ -11952,7 +11952,6 @@
       "organizer": "VAS est / imported show",
       "lastChecked": "2026-06-20",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/badbadnotgood-2026-shanghai.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "SmartShanghai lists BADBADNOTGOOD on 2026-07-21 from 20:00 to 22:00 at VAS est with 368 RMB and 428 RMB ticket tiers. Age policy not visible in public sources; verify with VAS est before going.",
       "lineup": [
         {
@@ -11996,7 +11995,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "west-bund-dream-center-waterfront-music-festival-2026",
@@ -12109,7 +12109,6 @@
       "organizer": "Theatre YOUNG / imported performance",
       "lastChecked": "2026-06-20",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/vivat-football-electronic-theatre-2026.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "ticketStatus": "SmartShanghai lists Vivat Football on Aug 7 and Aug 8, 2026 at Theatre YOUNG with 180 RMB and 380 RMB ticket tiers. Show times 2pm and 7:30pm. Recommended for ages 6 and up. Performed in Czech with Chinese/Czech subtitles.",
       "lineup": [
         {
@@ -12159,7 +12158,8 @@
         "hasPoster": true,
         "riskFlags": []
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "shaun-soomro-dj-serang",
@@ -12213,7 +12213,6 @@
         }
       ],
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/shaun-soomro-dj-serang.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-20",
       "kind": "event",
       "soundTags": [],
       "decisionTags": [
@@ -12235,7 +12234,8 @@
           "watchlist"
         ]
       },
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "posterSyncStatus": "synced-to-supabase-2026-06-20"
     },
     {
       "id": "the-magic-of-tomorrowland-shanghai-2026-watch",
@@ -12354,10 +12354,7 @@
         "idm",
         "industrial"
       ],
-      "genre": [
-        "experimental",
-        "underground"
-      ],
+      "genre": "experimental, underground",
       "description": "Antigen 呈现 KAVARI（UK/XL Recordings）——过去几年中最杰出、最具娱乐性、最激烈的电子音乐发行之一（Aphex Twin 语）。支持艺人：Bi-NON、Vibekiller POCKET、Run、Krijka（FR/BIOME）、SpaceReturn。",
       "ticket": {
         "currency": "CNY",
@@ -12382,7 +12379,28 @@
       "decisionProfile": "underground",
       "isCurated": false,
       "isNew": true,
-      "notes": "KAVARI 为 XL Recordings 旗下艺人，Aphex Twin 高度评价。Reactor 主场活动。"
+      "notes": "KAVARI 为 XL Recordings 旗下艺人，Aphex Twin 高度评价。Reactor 主场活动。",
+      "month": "Jun",
+      "date": "Jun 26",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "hard",
+        "underground",
+        "experimental"
+      ],
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://ra.co/events/2470329",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "ember",
+      "recommendationReason": "Recommended because the sound and room fit gives the night a clear hard or peak-room club music draw at Reactor Shanghai.",
+      "bestFor": "Best for hard-techno, industrial, acid, or late-room listeners.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from Resident Advisor; sufficient for archive visibility but still worth rechecking for live planning.",
+      "ticketUrl": "https://ra.co/events/2470329"
     },
     {
       "id": "2026-06-26-drum-inferno-call-a-taxi-shanghao-meer",
@@ -12400,9 +12418,7 @@
         "dubstep",
         "breaks"
       ],
-      "genre": [
-        "underground"
-      ],
+      "genre": "underground",
       "description": "Drum Inferno 9周年派对，嘉宾：Call a Taxi、Shanghao、meer。",
       "ticket": {
         "currency": "CNY",
@@ -12427,7 +12443,27 @@
       "decisionProfile": "underground",
       "isCurated": false,
       "isNew": true,
-      "notes": "Drum Inferno 为上海 Drum & Bass 重要系列派对，9周年场。"
+      "notes": "Drum Inferno 为上海 Drum & Bass 重要系列派对，9周年场。",
+      "month": "Jun",
+      "date": "Jun 26",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "bass"
+      ],
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://ra.co/events/2469574",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "rose",
+      "recommendationReason": "Recommended because the sound and room fit gives the night a clear bass, breaks, or club-pressure music draw at POTENT Shanghai.",
+      "bestFor": "Best for bass, breaks, dubstep, jungle, UKG, and high-energy club-adjacent listeners.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from Resident Advisor; sufficient for archive visibility but still worth rechecking for live planning.",
+      "ticketUrl": "https://ra.co/events/2469574"
     },
     {
       "id": "2026-06-27-bellagio-summer-rooftop-party",
@@ -12445,10 +12481,7 @@
         "disco",
         "organic"
       ],
-      "genre": [
-        "open-air",
-        "day-party"
-      ],
+      "genre": "open-air, day-party",
       "description": "Bellagio 夏日屋顶派对，开放天空、日落、House 音乐。",
       "ticket": {
         "currency": "CNY",
@@ -12474,7 +12507,26 @@
       "decisionProfile": "open-air",
       "isCurated": false,
       "isNew": true,
-      "notes": "Bellagio 为上海知名屋顶派对场地，夏季系列。"
+      "notes": "Bellagio 为上海知名屋顶派对场地，夏季系列。",
+      "month": "Jun",
+      "date": "Jun 27",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "date"
+      ],
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://ra.co/events/2470219",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "cyan",
+      "recommendationReason": "Recommended because the sound and room fit gives the night a clear house, disco, or social dancefloor music draw at Bellagio Shanghai.",
+      "bestFor": "Best for a more social, house-forward, rooftop, or date-friendly electronic route.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from Resident Advisor; sufficient for archive visibility but still worth rechecking for live planning.",
+      "ticketUrl": "https://ra.co/events/2470219"
     },
     {
       "id": "2026-07-03-antigen-pres-dj-stingray-313-actress",
@@ -12492,10 +12544,7 @@
         "techno",
         "idm"
       ],
-      "genre": [
-        "underground",
-        "experimental"
-      ],
+      "genre": "underground, experimental",
       "description": "Antigen 呈现 DJ Stingray 313 + Actress（UK）——两位实验电子音乐传奇同台。支持艺人：Han、Max Shen。",
       "ticket": {
         "currency": "CNY",
@@ -12521,7 +12570,27 @@
       "decisionProfile": "underground",
       "isCurated": false,
       "isNew": true,
-      "notes": "DJ Stingray 313（Daniel Lopatin / Oneohtrix Point Never 关联项目）与 Actress 同台，重磅实验电子之夜。"
+      "notes": "DJ Stingray 313（Daniel Lopatin / Oneohtrix Point Never 关联项目）与 Actress 同台，重磅实验电子之夜。",
+      "month": "Jul",
+      "date": "Jul 3",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://ra.co/events/2470387",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "rose",
+      "recommendationReason": "Recommended because the sound and room fit gives the night a clear listening-first experimental electronics draw at Reactor Shanghai.",
+      "bestFor": "Best for readers comparing electronic rooms by sound, lineup, and room fit.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from Resident Advisor; sufficient for archive visibility but still worth rechecking for live planning.",
+      "ticketUrl": "https://ra.co/events/2470387"
     },
     {
       "id": "2026-07-03-dirty-beats-july-nakin",
@@ -12539,9 +12608,7 @@
         "dirty-house",
         "garage"
       ],
-      "genre": [
-        "underground"
-      ],
+      "genre": "underground",
       "description": "Dirty Beats 月度系列，7月场嘉宾：NAKIN。",
       "ticket": {
         "currency": "CNY",
@@ -12566,7 +12633,27 @@
       "decisionProfile": "underground",
       "isCurated": false,
       "isNew": true,
-      "notes": "Dirty Beats 为 Dirty House 固定月度派对，NAKIN 为上海本地 House 重要 DJ。"
+      "notes": "Dirty Beats 为 Dirty House 固定月度派对，NAKIN 为上海本地 House 重要 DJ。",
+      "month": "Jul",
+      "date": "Jul 3",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "date"
+      ],
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://ra.co/events/2471981",
+      "sourceLabel": "Resident Advisor",
+      "imageTheme": "ember",
+      "recommendationReason": "Recommended because the sound and room fit gives the night a clear bass, breaks, or club-pressure music draw at Dirty House Shanghai.",
+      "bestFor": "Best for bass, breaks, dubstep, jungle, UKG, and high-energy club-adjacent listeners.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from Resident Advisor; sufficient for archive visibility but still worth rechecking for live planning.",
+      "ticketUrl": "https://ra.co/events/2471981"
     },
     {
       "id": "2026-02-06-n3v3r1and-invites-roza-terenzi",
@@ -12584,13 +12671,28 @@
         "techno",
         "electro"
       ],
-      "genre": [
-        "techno",
-        "electro"
-      ],
+      "genre": "techno, electro",
       "status": "published",
       "title": "N3V3R1AND Invites Roza Terenzi",
-      "sortDate": "2026-02-06"
+      "sortDate": "2026-02-06",
+      "month": "Feb",
+      "date": "Feb 6",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Medium",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/Roza-Terenzi",
+      "sourceLabel": "shypeople",
+      "imageTheme": "ember",
+      "recommendationReason": "Included because the sound and room fit gives listening-first experimental electronics readers a concrete reason to consider it at Heim, even if it is not the hardest pick on the calendar.",
+      "bestFor": "Best for readers comparing electronic rooms by sound, lineup, and room fit.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from shypeople; sufficient for archive visibility but still worth rechecking for live planning."
     },
     {
       "id": "2026-01-16-shy-people-6th-anniversary",
@@ -12609,13 +12711,29 @@
         "house",
         "electro"
       ],
-      "genre": [
-        "techno",
-        "house"
-      ],
+      "genre": "techno, house",
       "status": "published",
       "title": "Shy People 6th Anniversary",
-      "sortDate": "2026-01-16"
+      "sortDate": "2026-01-16",
+      "month": "Jan",
+      "date": "Jan 16",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental",
+        "date"
+      ],
+      "confidence": "Medium",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/6",
+      "sourceLabel": "shypeople",
+      "imageTheme": "ember",
+      "recommendationReason": "Included because the sound and room fit gives house, disco, or social dancefloor music readers a concrete reason to consider it at Shy People, even if it is not the hardest pick on the calendar.",
+      "bestFor": "Best for a more social, house-forward, rooftop, or date-friendly electronic route.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from shypeople; sufficient for archive visibility but still worth rechecking for live planning."
     },
     {
       "id": "2024-05-17-zhao-dai",
@@ -12632,9 +12750,7 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. menslies 24 shy peoeple",
       "createdAt": "2026-06-20T13:40:41.742Z",
@@ -12648,7 +12764,25 @@
       "decisionTags": [
         "other city",
         "beijing"
-      ]
+      ],
+      "month": "May",
+      "date": "May 17",
+      "time": "Check source",
+      "district": "Beijing",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Medium",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "rose",
+      "recommendationReason": "Included because the sound and room fit gives listening-first experimental electronics readers a concrete reason to consider it at Zhao Dai, even if it is not the hardest pick on the calendar.",
+      "bestFor": "Best for readers comparing electronic rooms by sound, lineup, and room fit.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from shypeople; sufficient for archive visibility but still worth rechecking for live planning."
     },
     {
       "id": "2023-04-28-shy-people",
@@ -12665,15 +12799,31 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Shy People 2023-04-28",
       "createdAt": "2026-06-20T13:40:41.744Z",
       "updatedAt": "2026-06-20T13:40:41.744Z",
       "title": "Shy People 2023-04-28",
-      "sortDate": "2023-04-28"
+      "sortDate": "2023-04-28",
+      "month": "Apr",
+      "date": "Apr 28",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Medium",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "acid",
+      "recommendationReason": "Included because the sound and room fit gives listening-first experimental electronics readers a concrete reason to consider it at Shy People, even if it is not the hardest pick on the calendar.",
+      "bestFor": "Best for readers comparing electronic rooms by sound, lineup, and room fit.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from shypeople; sufficient for archive visibility but still worth rechecking for live planning."
     },
     {
       "id": "2023-04-30-shy-people",
@@ -12690,15 +12840,31 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Shy People 2023-04-30",
       "createdAt": "2026-06-20T13:40:41.744Z",
       "updatedAt": "2026-06-20T13:40:41.744Z",
       "title": "Shy People 2023-04-30",
-      "sortDate": "2023-04-30"
+      "sortDate": "2023-04-30",
+      "month": "Apr",
+      "date": "Apr 30",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Medium",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "rose",
+      "recommendationReason": "Included because the sound and room fit gives listening-first experimental electronics readers a concrete reason to consider it at Shy People, even if it is not the hardest pick on the calendar.",
+      "bestFor": "Best for readers comparing electronic rooms by sound, lineup, and room fit.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from shypeople; sufficient for archive visibility but still worth rechecking for live planning."
     },
     {
       "id": "2023-06-02-shy-people",
@@ -12715,15 +12881,31 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Shy People 2023-06-02",
       "createdAt": "2026-06-20T13:40:41.744Z",
       "updatedAt": "2026-06-20T13:40:41.744Z",
       "title": "Shy People 2023-06-02",
-      "sortDate": "2023-06-02"
+      "sortDate": "2023-06-02",
+      "month": "Jun",
+      "date": "Jun 2",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Medium",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "gold",
+      "recommendationReason": "Included because the sound and room fit gives listening-first experimental electronics readers a concrete reason to consider it at Shy People, even if it is not the hardest pick on the calendar.",
+      "bestFor": "Best for readers comparing electronic rooms by sound, lineup, and room fit.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from shypeople; sufficient for archive visibility but still worth rechecking for live planning."
     },
     {
       "id": "2023-06-03-shy-people",
@@ -12740,15 +12922,31 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Shy People 2023-06-03",
       "createdAt": "2026-06-20T13:40:41.744Z",
       "updatedAt": "2026-06-20T13:40:41.744Z",
       "title": "Shy People 2023-06-03",
-      "sortDate": "2023-06-03"
+      "sortDate": "2023-06-03",
+      "month": "Jun",
+      "date": "Jun 3",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Medium",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "acid",
+      "recommendationReason": "Included because the sound and room fit gives listening-first experimental electronics readers a concrete reason to consider it at Shy People, even if it is not the hardest pick on the calendar.",
+      "bestFor": "Best for readers comparing electronic rooms by sound, lineup, and room fit.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from shypeople; sufficient for archive visibility but still worth rechecking for live planning."
     },
     {
       "id": "2023-06-10-shy-people",
@@ -12765,15 +12963,31 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Shy People 2023-06-10",
       "createdAt": "2026-06-20T13:40:41.744Z",
       "updatedAt": "2026-06-20T13:40:41.744Z",
       "title": "Shy People 2023-06-10",
-      "sortDate": "2023-06-10"
+      "sortDate": "2023-06-10",
+      "month": "Jun",
+      "date": "Jun 10",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Medium",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "rose",
+      "recommendationReason": "Included because the sound and room fit gives listening-first experimental electronics readers a concrete reason to consider it at Shy People, even if it is not the hardest pick on the calendar.",
+      "bestFor": "Best for readers comparing electronic rooms by sound, lineup, and room fit.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from shypeople; sufficient for archive visibility but still worth rechecking for live planning."
     },
     {
       "id": "2023-06-30-shy-people",
@@ -12790,15 +13004,31 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Shy People 2023-06-30",
       "createdAt": "2026-06-20T13:40:41.744Z",
       "updatedAt": "2026-06-20T13:40:41.744Z",
       "title": "Shy People 2023-06-30",
-      "sortDate": "2023-06-30"
+      "sortDate": "2023-06-30",
+      "month": "Jun",
+      "date": "Jun 30",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Medium",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "acid",
+      "recommendationReason": "Included because the sound and room fit gives listening-first experimental electronics readers a concrete reason to consider it at Shy People, even if it is not the hardest pick on the calendar.",
+      "bestFor": "Best for readers comparing electronic rooms by sound, lineup, and room fit.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from shypeople; sufficient for archive visibility but still worth rechecking for live planning."
     },
     {
       "id": "2023-08-11-shy-people",
@@ -12815,15 +13045,31 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Shy People 2023-08-11",
       "createdAt": "2026-06-20T13:40:41.744Z",
       "updatedAt": "2026-06-20T13:40:41.744Z",
       "title": "Shy People 2023-08-11",
-      "sortDate": "2023-08-11"
+      "sortDate": "2023-08-11",
+      "month": "Aug",
+      "date": "Aug 11",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Medium",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "ember",
+      "recommendationReason": "Included because the sound and room fit gives listening-first experimental electronics readers a concrete reason to consider it at Shy People, even if it is not the hardest pick on the calendar.",
+      "bestFor": "Best for readers comparing electronic rooms by sound, lineup, and room fit.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from shypeople; sufficient for archive visibility but still worth rechecking for live planning."
     },
     {
       "id": "2023-09-23-shy-people",
@@ -12840,15 +13086,31 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Shy People 2023-09-23",
       "createdAt": "2026-06-20T13:40:41.744Z",
       "updatedAt": "2026-06-20T13:40:41.744Z",
       "title": "Shy People 2023-09-23",
-      "sortDate": "2023-09-23"
+      "sortDate": "2023-09-23",
+      "month": "Sep",
+      "date": "Sep 23",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Medium",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "acid",
+      "recommendationReason": "Included because the sound and room fit gives listening-first experimental electronics readers a concrete reason to consider it at Shy People, even if it is not the hardest pick on the calendar.",
+      "bestFor": "Best for readers comparing electronic rooms by sound, lineup, and room fit.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from shypeople; sufficient for archive visibility but still worth rechecking for live planning."
     },
     {
       "id": "2023-09-29-shy-people",
@@ -12865,15 +13127,31 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Shy People 2023-09-29",
       "createdAt": "2026-06-20T13:40:41.744Z",
       "updatedAt": "2026-06-20T13:40:41.744Z",
       "title": "Shy People 2023-09-29",
-      "sortDate": "2023-09-29"
+      "sortDate": "2023-09-29",
+      "month": "Sep",
+      "date": "Sep 29",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Medium",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "ember",
+      "recommendationReason": "Included because the sound and room fit gives listening-first experimental electronics readers a concrete reason to consider it at Shy People, even if it is not the hardest pick on the calendar.",
+      "bestFor": "Best for readers comparing electronic rooms by sound, lineup, and room fit.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from shypeople; sufficient for archive visibility but still worth rechecking for live planning."
     },
     {
       "id": "2023-11-03-shy-people",
@@ -12890,15 +13168,31 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Shy People 2023-11-03",
       "createdAt": "2026-06-20T13:40:41.744Z",
       "updatedAt": "2026-06-20T13:40:41.744Z",
       "title": "Shy People 2023-11-03",
-      "sortDate": "2023-11-03"
+      "sortDate": "2023-11-03",
+      "month": "Nov",
+      "date": "Nov 3",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Medium",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "ember",
+      "recommendationReason": "Included because the sound and room fit gives listening-first experimental electronics readers a concrete reason to consider it at Shy People, even if it is not the hardest pick on the calendar.",
+      "bestFor": "Best for readers comparing electronic rooms by sound, lineup, and room fit.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from shypeople; sufficient for archive visibility but still worth rechecking for live planning."
     },
     {
       "id": "2023-12-15-shy-people",
@@ -12915,15 +13209,31 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Shy People 2023-12-15",
       "createdAt": "2026-06-20T13:40:41.744Z",
       "updatedAt": "2026-06-20T13:40:41.744Z",
       "title": "Shy People 2023-12-15",
-      "sortDate": "2023-12-15"
+      "sortDate": "2023-12-15",
+      "month": "Dec",
+      "date": "Dec 15",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Medium",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "acid",
+      "recommendationReason": "Included because the sound and room fit gives listening-first experimental electronics readers a concrete reason to consider it at Shy People, even if it is not the hardest pick on the calendar.",
+      "bestFor": "Best for readers comparing electronic rooms by sound, lineup, and room fit.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from shypeople; sufficient for archive visibility but still worth rechecking for live planning."
     },
     {
       "id": "2023-12-16-shy-people",
@@ -12940,15 +13250,31 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Shy People 2023-12-16",
       "createdAt": "2026-06-20T13:40:41.744Z",
       "updatedAt": "2026-06-20T13:40:41.744Z",
       "title": "Shy People 2023-12-16",
-      "sortDate": "2023-12-16"
+      "sortDate": "2023-12-16",
+      "month": "Dec",
+      "date": "Dec 16",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Medium",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "ember",
+      "recommendationReason": "Included because the sound and room fit gives listening-first experimental electronics readers a concrete reason to consider it at Shy People, even if it is not the hardest pick on the calendar.",
+      "bestFor": "Best for readers comparing electronic rooms by sound, lineup, and room fit.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from shypeople; sufficient for archive visibility but still worth rechecking for live planning."
     },
     {
       "id": "2024-05-01-zhao-dai",
@@ -12965,9 +13291,7 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Zhao Dai 2024-05-01",
       "createdAt": "2026-06-20T13:40:41.744Z",
@@ -12981,7 +13305,25 @@
       "decisionTags": [
         "other city",
         "beijing"
-      ]
+      ],
+      "month": "May",
+      "date": "May 1",
+      "time": "Check source",
+      "district": "Beijing",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Medium",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "gold",
+      "recommendationReason": "Included because the sound and room fit gives listening-first experimental electronics readers a concrete reason to consider it at Zhao Dai, even if it is not the hardest pick on the calendar.",
+      "bestFor": "Best for readers comparing electronic rooms by sound, lineup, and room fit.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from shypeople; sufficient for archive visibility but still worth rechecking for live planning."
     },
     {
       "id": "2024-05-11-zhao-dai",
@@ -12998,9 +13340,7 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Zhao Dai 2024-05-11",
       "createdAt": "2026-06-20T13:40:41.744Z",
@@ -13014,40 +13354,25 @@
       "decisionTags": [
         "other city",
         "beijing"
-      ]
-    },
-    {
-      "id": "2024-05-17-zhao-dai",
-      "name": "Zhao Dai 2024-05-17",
-      "startDate": "2024-05-17",
-      "venue": "zhao-dai",
-      "venueName": "Zhao Dai",
-      "city": "Beijing",
-      "country": "China",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/2024-05-17-zhao-dai.jpg",
-      "sourceUrl": "https://shypeople.cn/",
-      "sourcePlatform": "shypeople",
-      "soundTags": [
-        "techno",
-        "electronic"
       ],
-      "genre": [
-        "techno"
+      "month": "May",
+      "date": "May 11",
+      "time": "Check source",
+      "district": "Beijing",
+      "vibe": [
+        "underground",
+        "experimental"
       ],
-      "status": "published",
-      "description": "From Shy People MENSLIES poster archive. Zhao Dai 2024-05-17",
-      "createdAt": "2026-06-20T13:40:41.744Z",
-      "updatedAt": "2026-06-20T13:40:41.744Z",
-      "title": "Zhao Dai 2024-05-17",
-      "sortDate": "2024-05-17",
-      "tags": [
-        "other city",
-        "beijing"
-      ],
-      "decisionTags": [
-        "other city",
-        "beijing"
-      ]
+      "confidence": "Medium",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "acid",
+      "recommendationReason": "Included because the sound and room fit gives listening-first experimental electronics readers a concrete reason to consider it at Zhao Dai, even if it is not the hardest pick on the calendar.",
+      "bestFor": "Best for readers comparing electronic rooms by sound, lineup, and room fit.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from shypeople; sufficient for archive visibility but still worth rechecking for live planning."
     },
     {
       "id": "2024-06-09-zhao-dai",
@@ -13064,9 +13389,7 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Zhao Dai 2024-06-09",
       "createdAt": "2026-06-20T13:40:41.744Z",
@@ -13080,7 +13403,25 @@
       "decisionTags": [
         "other city",
         "beijing"
-      ]
+      ],
+      "month": "Jun",
+      "date": "Jun 9",
+      "time": "Check source",
+      "district": "Beijing",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Medium",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "rose",
+      "recommendationReason": "Included because the sound and room fit gives listening-first experimental electronics readers a concrete reason to consider it at Zhao Dai, even if it is not the hardest pick on the calendar.",
+      "bestFor": "Best for readers comparing electronic rooms by sound, lineup, and room fit.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from shypeople; sufficient for archive visibility but still worth rechecking for live planning."
     },
     {
       "id": "2024-07-20-zhao-dai",
@@ -13097,9 +13438,7 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Zhao Dai 2024-07-20",
       "createdAt": "2026-06-20T13:40:41.744Z",
@@ -13113,7 +13452,25 @@
       "decisionTags": [
         "other city",
         "beijing"
-      ]
+      ],
+      "month": "Jul",
+      "date": "Jul 20",
+      "time": "Check source",
+      "district": "Beijing",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Medium",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "cyan",
+      "recommendationReason": "Included because the sound and room fit gives listening-first experimental electronics readers a concrete reason to consider it at Zhao Dai, even if it is not the hardest pick on the calendar.",
+      "bestFor": "Best for readers comparing electronic rooms by sound, lineup, and room fit.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from shypeople; sufficient for archive visibility but still worth rechecking for live planning."
     },
     {
       "id": "2024-08-23-zhao-dai",
@@ -13130,9 +13487,7 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Zhao Dai 2024-08-23",
       "createdAt": "2026-06-20T13:40:41.744Z",
@@ -13146,7 +13501,25 @@
       "decisionTags": [
         "other city",
         "beijing"
-      ]
+      ],
+      "month": "Aug",
+      "date": "Aug 23",
+      "time": "Check source",
+      "district": "Beijing",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Medium",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "ember",
+      "recommendationReason": "Included because the sound and room fit gives listening-first experimental electronics readers a concrete reason to consider it at Zhao Dai, even if it is not the hardest pick on the calendar.",
+      "bestFor": "Best for readers comparing electronic rooms by sound, lineup, and room fit.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from shypeople; sufficient for archive visibility but still worth rechecking for live planning."
     },
     {
       "id": "2024-oxygen-activation-shy-people",
@@ -13163,15 +13536,32 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Artist: 444theGod",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.260Z",
       "updatedAt": "2026-06-20T13:42:28.262Z",
-      "title": "Oxygen Activation"
+      "title": "Oxygen Activation",
+      "sortDate": "2024-01-01",
+      "month": "TBA",
+      "date": "2024 date TBA",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Watch",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "rose",
+      "recommendationReason": "Kept on watch because the artist billing (444theGod) points toward listening-first experimental electronics at Shy People; wait for firmer practical details before treating it as a pick.",
+      "bestFor": "Best as a watchlist lead for readers willing to verify final lineup, ticketing, and venue details.",
+      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
+      "sourceConfidence": "Watch-level confidence from shypeople; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
     },
     {
       "id": "2024-kaleido-mirage-shy-people",
@@ -13188,15 +13578,32 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Artist: Craone",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
       "updatedAt": "2026-06-20T13:42:28.262Z",
-      "title": "Kaleido Mirage"
+      "title": "Kaleido Mirage",
+      "sortDate": "2024-01-01",
+      "month": "TBA",
+      "date": "2024 date TBA",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Watch",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "ember",
+      "recommendationReason": "Kept on watch because the artist billing (Craone) points toward listening-first experimental electronics at Shy People; wait for firmer practical details before treating it as a pick.",
+      "bestFor": "Best as a watchlist lead for readers willing to verify final lineup, ticketing, and venue details.",
+      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
+      "sourceConfidence": "Watch-level confidence from shypeople; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
     },
     {
       "id": "2024-abyssal-callout-shy-people",
@@ -13213,15 +13620,33 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Artist: EkII",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
       "updatedAt": "2026-06-20T13:42:28.262Z",
-      "title": "ABYSSAL CALLOUT"
+      "title": "ABYSSAL CALLOUT",
+      "sortDate": "2024-01-01",
+      "month": "TBA",
+      "date": "2024 date TBA",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "hard",
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Watch",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "ember",
+      "recommendationReason": "Kept on watch because the artist billing (EkII) points toward hard or peak-room club music at Shy People; wait for firmer practical details before treating it as a pick.",
+      "bestFor": "Best for hard-techno, industrial, acid, or late-room listeners.",
+      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
+      "sourceConfidence": "Watch-level confidence from shypeople; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
     },
     {
       "id": "2024-galloping-6-shy-people",
@@ -13238,15 +13663,32 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive.",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
       "updatedAt": "2026-06-20T13:42:28.262Z",
-      "title": "GALLOPING 6"
+      "title": "GALLOPING 6",
+      "sortDate": "2024-01-01",
+      "month": "TBA",
+      "date": "2024 date TBA",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Watch",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "acid",
+      "recommendationReason": "Kept on watch because the sound and room fit points toward listening-first experimental electronics at Shy People; wait for firmer practical details before treating it as a pick.",
+      "bestFor": "Best as a watchlist lead for readers willing to verify final lineup, ticketing, and venue details.",
+      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
+      "sourceConfidence": "Watch-level confidence from shypeople; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
     },
     {
       "id": "2024-galloping-9-shy-people",
@@ -13263,15 +13705,32 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive.",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
       "updatedAt": "2026-06-20T13:42:28.262Z",
-      "title": "GALLOPING 9"
+      "title": "GALLOPING 9",
+      "sortDate": "2024-01-01",
+      "month": "TBA",
+      "date": "2024 date TBA",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Watch",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "rose",
+      "recommendationReason": "Kept on watch because the sound and room fit points toward listening-first experimental electronics at Shy People; wait for firmer practical details before treating it as a pick.",
+      "bestFor": "Best as a watchlist lead for readers willing to verify final lineup, ticketing, and venue details.",
+      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
+      "sourceConfidence": "Watch-level confidence from shypeople; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
     },
     {
       "id": "2024-ginko-heim",
@@ -13288,15 +13747,32 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive.",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
       "updatedAt": "2026-06-20T13:42:28.262Z",
-      "title": "Ginko at Heim"
+      "title": "Ginko at Heim",
+      "sortDate": "2024-01-01",
+      "month": "TBA",
+      "date": "2024 date TBA",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Watch",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "rose",
+      "recommendationReason": "Kept on watch because the sound and room fit points toward listening-first experimental electronics at Heim; wait for firmer practical details before treating it as a pick.",
+      "bestFor": "Best as a watchlist lead for readers willing to verify final lineup, ticketing, and venue details.",
+      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
+      "sourceConfidence": "Watch-level confidence from shypeople; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
     },
     {
       "id": "2024-heim-last-night-sokol",
@@ -13313,15 +13789,32 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive.",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
       "updatedAt": "2026-06-20T13:42:28.262Z",
-      "title": "Heim Last Night with Sokol"
+      "title": "Heim Last Night with Sokol",
+      "sortDate": "2024-01-01",
+      "month": "TBA",
+      "date": "2024 date TBA",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Watch",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "gold",
+      "recommendationReason": "Kept on watch because the sound and room fit points toward listening-first experimental electronics at Heim; wait for firmer practical details before treating it as a pick.",
+      "bestFor": "Best as a watchlist lead for readers willing to verify final lineup, ticketing, and venue details.",
+      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
+      "sourceConfidence": "Watch-level confidence from shypeople; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
     },
     {
       "id": "2024-oofb-1-shy-people",
@@ -13338,15 +13831,32 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive.",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
       "updatedAt": "2026-06-20T13:42:28.262Z",
-      "title": "OOFB 1"
+      "title": "OOFB 1",
+      "sortDate": "2024-01-01",
+      "month": "TBA",
+      "date": "2024 date TBA",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Watch",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "acid",
+      "recommendationReason": "Kept on watch because the sound and room fit points toward listening-first experimental electronics at Shy People; wait for firmer practical details before treating it as a pick.",
+      "bestFor": "Best as a watchlist lead for readers willing to verify final lineup, ticketing, and venue details.",
+      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
+      "sourceConfidence": "Watch-level confidence from shypeople; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
     },
     {
       "id": "2024-oofb-3-shy-people",
@@ -13363,15 +13873,32 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive.",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
       "updatedAt": "2026-06-20T13:42:28.262Z",
-      "title": "OOFB 3"
+      "title": "OOFB 3",
+      "sortDate": "2024-01-01",
+      "month": "TBA",
+      "date": "2024 date TBA",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Watch",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "cyan",
+      "recommendationReason": "Kept on watch because the sound and room fit points toward listening-first experimental electronics at Shy People; wait for firmer practical details before treating it as a pick.",
+      "bestFor": "Best as a watchlist lead for readers willing to verify final lineup, ticketing, and venue details.",
+      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
+      "sourceConfidence": "Watch-level confidence from shypeople; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
     },
     {
       "id": "2024-oofb-7-shy-people",
@@ -13388,15 +13915,32 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive.",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
       "updatedAt": "2026-06-20T13:42:28.262Z",
-      "title": "OOFB 7"
+      "title": "OOFB 7",
+      "sortDate": "2024-01-01",
+      "month": "TBA",
+      "date": "2024 date TBA",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Watch",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "ember",
+      "recommendationReason": "Kept on watch because the sound and room fit points toward listening-first experimental electronics at Shy People; wait for firmer practical details before treating it as a pick.",
+      "bestFor": "Best as a watchlist lead for readers willing to verify final lineup, ticketing, and venue details.",
+      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
+      "sourceConfidence": "Watch-level confidence from shypeople; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
     },
     {
       "id": "2024-pog-eoin-beijing",
@@ -13413,9 +13957,7 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Artist: Eoin",
       "needsDate": true,
@@ -13429,7 +13971,26 @@
       "decisionTags": [
         "other city",
         "beijing"
-      ]
+      ],
+      "sortDate": "2024-01-01",
+      "month": "TBA",
+      "date": "2024 date TBA",
+      "time": "Check source",
+      "district": "Beijing",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Watch",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "ember",
+      "recommendationReason": "Kept on watch because the artist billing (Eoin) points toward listening-first experimental electronics at Zhao Dai; wait for firmer practical details before treating it as a pick.",
+      "bestFor": "Best as a watchlist lead for readers willing to verify final lineup, ticketing, and venue details.",
+      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
+      "sourceConfidence": "Watch-level confidence from shypeople; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
     },
     {
       "id": "2024-pog-eoin-shanghai",
@@ -13446,15 +14007,32 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Artist: Eoin",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
       "updatedAt": "2026-06-20T13:42:28.262Z",
-      "title": "POG with Eoin DJ (Shanghai)"
+      "title": "POG with Eoin DJ (Shanghai)",
+      "sortDate": "2024-01-01",
+      "month": "TBA",
+      "date": "2024 date TBA",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Watch",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "rose",
+      "recommendationReason": "Kept on watch because the artist billing (Eoin) points toward listening-first experimental electronics at Shy People; wait for firmer practical details before treating it as a pick.",
+      "bestFor": "Best as a watchlist lead for readers willing to verify final lineup, ticketing, and venue details.",
+      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
+      "sourceConfidence": "Watch-level confidence from shypeople; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
     },
     {
       "id": "2024-pog-eoin-shenzhen",
@@ -13471,9 +14049,7 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Artist: Eoin",
       "needsDate": true,
@@ -13487,7 +14063,26 @@
       "decisionTags": [
         "other city",
         "shenzhen"
-      ]
+      ],
+      "sortDate": "2024-01-01",
+      "month": "TBA",
+      "date": "2024 date TBA",
+      "time": "Check source",
+      "district": "Shenzhen",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Watch",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "acid",
+      "recommendationReason": "Kept on watch because the artist billing (Eoin) points toward listening-first experimental electronics; wait for firmer practical details before treating it as a pick.",
+      "bestFor": "Best as a watchlist lead for readers willing to verify final lineup, ticketing, and venue details.",
+      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
+      "sourceConfidence": "Watch-level confidence from shypeople; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
     },
     {
       "id": "2024-pog-kasra-beijing",
@@ -13504,9 +14099,7 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Artist: Kasra",
       "needsDate": true,
@@ -13520,7 +14113,26 @@
       "decisionTags": [
         "other city",
         "beijing"
-      ]
+      ],
+      "sortDate": "2024-01-01",
+      "month": "TBA",
+      "date": "2024 date TBA",
+      "time": "Check source",
+      "district": "Beijing",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Watch",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "acid",
+      "recommendationReason": "Kept on watch because the artist billing (Kasra) points toward listening-first experimental electronics at Zhao Dai; wait for firmer practical details before treating it as a pick.",
+      "bestFor": "Best as a watchlist lead for readers willing to verify final lineup, ticketing, and venue details.",
+      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
+      "sourceConfidence": "Watch-level confidence from shypeople; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
     },
     {
       "id": "2024-pog-kasra-shanghai",
@@ -13537,15 +14149,32 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive. Artist: Kasra",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
       "updatedAt": "2026-06-20T13:42:28.262Z",
-      "title": "POG with Kasra (Shanghai)"
+      "title": "POG with Kasra (Shanghai)",
+      "sortDate": "2024-01-01",
+      "month": "TBA",
+      "date": "2024 date TBA",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Watch",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "cyan",
+      "recommendationReason": "Kept on watch because the artist billing (Kasra) points toward listening-first experimental electronics at Shy People; wait for firmer practical details before treating it as a pick.",
+      "bestFor": "Best as a watchlist lead for readers willing to verify final lineup, ticketing, and venue details.",
+      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
+      "sourceConfidence": "Watch-level confidence from shypeople; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
     },
     {
       "id": "2024-tombola-1-shy-people",
@@ -13562,15 +14191,32 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive.",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
       "updatedAt": "2026-06-20T13:42:28.262Z",
-      "title": "Tombola 1"
+      "title": "Tombola 1",
+      "sortDate": "2024-01-01",
+      "month": "TBA",
+      "date": "2024 date TBA",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Watch",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "gold",
+      "recommendationReason": "Kept on watch because the sound and room fit points toward listening-first experimental electronics at Shy People; wait for firmer practical details before treating it as a pick.",
+      "bestFor": "Best as a watchlist lead for readers willing to verify final lineup, ticketing, and venue details.",
+      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
+      "sourceConfidence": "Watch-level confidence from shypeople; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
     },
     {
       "id": "2024-tombola-2-shy-people",
@@ -13587,15 +14233,32 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive.",
       "needsDate": true,
       "createdAt": "2026-06-20T13:42:28.262Z",
       "updatedAt": "2026-06-20T13:42:28.262Z",
-      "title": "Tombola 2"
+      "title": "Tombola 2",
+      "sortDate": "2024-01-01",
+      "month": "TBA",
+      "date": "2024 date TBA",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Watch",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "acid",
+      "recommendationReason": "Kept on watch because the sound and room fit points toward listening-first experimental electronics at Shy People; wait for firmer practical details before treating it as a pick.",
+      "bestFor": "Best as a watchlist lead for readers willing to verify final lineup, ticketing, and venue details.",
+      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
+      "sourceConfidence": "Watch-level confidence from shypeople; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
     },
     {
       "id": "2025-zhao-dai-on-leave-25",
@@ -13612,9 +14275,7 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive.",
       "needsDate": true,
@@ -13628,7 +14289,26 @@
       "decisionTags": [
         "other city",
         "beijing"
-      ]
+      ],
+      "sortDate": "2025-01-01",
+      "month": "TBA",
+      "date": "2025 date TBA",
+      "time": "Check source",
+      "district": "Beijing",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Watch",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "acid",
+      "recommendationReason": "Kept on watch because the sound and room fit points toward listening-first experimental electronics at Zhao Dai; wait for firmer practical details before treating it as a pick.",
+      "bestFor": "Best as a watchlist lead for readers willing to verify final lineup, ticketing, and venue details.",
+      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
+      "sourceConfidence": "Watch-level confidence from shypeople; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
     },
     {
       "id": "2024-zhao-dai-on-leave-24a",
@@ -13645,9 +14325,7 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive.",
       "needsDate": true,
@@ -13661,7 +14339,26 @@
       "decisionTags": [
         "other city",
         "beijing"
-      ]
+      ],
+      "sortDate": "2024-01-01",
+      "month": "TBA",
+      "date": "2024 date TBA",
+      "time": "Check source",
+      "district": "Beijing",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Watch",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "gold",
+      "recommendationReason": "Kept on watch because the sound and room fit points toward listening-first experimental electronics at Zhao Dai; wait for firmer practical details before treating it as a pick.",
+      "bestFor": "Best as a watchlist lead for readers willing to verify final lineup, ticketing, and venue details.",
+      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
+      "sourceConfidence": "Watch-level confidence from shypeople; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
     },
     {
       "id": "2024-zhao-dai-on-leave-24b",
@@ -13678,9 +14375,7 @@
         "techno",
         "electronic"
       ],
-      "genre": [
-        "techno"
-      ],
+      "genre": "techno",
       "status": "published",
       "description": "From Shy People MENSLIES poster archive.",
       "needsDate": true,
@@ -13694,7 +14389,26 @@
       "decisionTags": [
         "other city",
         "beijing"
-      ]
+      ],
+      "sortDate": "2024-01-01",
+      "month": "TBA",
+      "date": "2024 date TBA",
+      "time": "Check source",
+      "district": "Beijing",
+      "vibe": [
+        "underground",
+        "experimental"
+      ],
+      "confidence": "Watch",
+      "price": "Check source",
+      "age": "Check venue",
+      "source": "https://shypeople.cn/",
+      "sourceLabel": "shypeople",
+      "imageTheme": "acid",
+      "recommendationReason": "Kept on watch because the sound and room fit points toward listening-first experimental electronics at Zhao Dai; wait for firmer practical details before treating it as a pick.",
+      "bestFor": "Best as a watchlist lead for readers willing to verify final lineup, ticketing, and venue details.",
+      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
+      "sourceConfidence": "Watch-level confidence from shypeople; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
     },
     {
       "id": "2025-03-01-abyss-shanghai",
@@ -13704,10 +14418,29 @@
       "venue": "Abyss Shanghai",
       "sortDate": "2025-03-01",
       "status": "past",
-      "source": "poster-archive",
+      "source": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/2025-03-01-abyss-shanghai.jpg",
       "kind": "event",
       "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/2025-03-01-abyss-shanghai.jpg",
-      "posterEvidence": "synced-to-supabase-2026-06-21"
+      "posterSyncStatus": "synced-to-supabase-2026-06-21",
+      "month": "Mar",
+      "date": "Mar 1",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "hard",
+        "underground"
+      ],
+      "genre": "techno",
+      "confidence": "Medium",
+      "price": "Check source",
+      "age": "Check venue",
+      "sourceLabel": "poster-archive",
+      "imageTheme": "acid",
+      "description": "Archive row for Abyss Adhd at Abyss Shanghai; practical details remain incomplete, so verify Source before using it for planning.",
+      "recommendationReason": "Included because the sound and room fit gives hard or peak-room club music readers a concrete reason to consider it at Abyss Shanghai, even if it is not the hardest pick on the calendar.",
+      "bestFor": "Best for hard-techno, industrial, acid, or late-room listeners.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from Source; sufficient for archive visibility but still worth rechecking for live planning."
     },
     {
       "id": "2025-04-18-abyss-shanghai",
@@ -13717,10 +14450,29 @@
       "venue": "Abyss Shanghai",
       "sortDate": "2025-04-18",
       "status": "past",
-      "source": "poster-archive",
+      "source": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/2025-04-18-abyss-shanghai.jpg",
       "kind": "event",
       "posterUrl": "",
-      "posterEvidence": "synced-to-supabase-2026-06-21"
+      "posterSyncStatus": "synced-to-supabase-2026-06-21",
+      "month": "Apr",
+      "date": "Apr 18",
+      "time": "Check source",
+      "district": "Shanghai",
+      "vibe": [
+        "hard",
+        "underground"
+      ],
+      "genre": "techno",
+      "confidence": "Medium",
+      "price": "Check source",
+      "age": "Check venue",
+      "sourceLabel": "poster-archive",
+      "imageTheme": "acid",
+      "description": "Archive row for Abyss Fast Frivolous at Abyss Shanghai; practical details remain incomplete, so verify Source before using it for planning.",
+      "recommendationReason": "Included because the sound and room fit gives hard or peak-room club music readers a concrete reason to consider it at Abyss Shanghai, even if it is not the hardest pick on the calendar.",
+      "bestFor": "Best for hard-techno, industrial, acid, or late-room listeners.",
+      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
+      "sourceConfidence": "Single public source from Source; sufficient for archive visibility but still worth rechecking for live planning."
     }
   ],
   "socialLeads": [],
