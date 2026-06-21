@@ -29,15 +29,31 @@ function extractFunction(source, name) {
 }
 
 function renderMonthGridForTest(html, code, events) {
+  const parseIsoDate = extractFunction(html, "parseIsoDate");
+  const addDays = extractFunction(html, "addDays");
+  const sameDay = extractFunction(html, "sameDay");
+  const isoDateKey = extractFunction(html, "isoDateKey");
+  const weekStartDate = extractFunction(html, "weekStartDate");
+  const weekStartKey = extractFunction(html, "weekStartKey");
+  const eventDate = extractFunction(html, "eventDate");
+  const dateRangeEndFromText = extractFunction(html, "dateRangeEndFromText");
+  const eventExplicitEndDate = extractFunction(html, "eventExplicitEndDate");
+  const clockToMinutes = extractFunction(html, "clockToMinutes");
+  const parseEventTimeWindow = extractFunction(html, "parseEventTimeWindow");
+  const parseEventDateTime = extractFunction(html, "parseEventDateTime");
+  const eventDisplayEndDate = extractFunction(html, "eventDisplayEndDate");
+  const eventActiveDateKeys = extractFunction(html, "eventActiveDateKeys");
+  const eventHasExplicitDateRange = extractFunction(html, "eventHasExplicitDateRange");
+  const eventCalendarDateKeysWithinWeek = extractFunction(html, "eventCalendarDateKeysWithinWeek");
   const renderMonthGrid = extractFunction(html, "renderMonthGrid");
   return Function(`
+    const verified = "2026-06-11";
     const months = [["Jan"], ["Feb"], ["Mar"], ["Apr"], ["May"], ["Jun"], ["Jul"], ["Aug"], ["Sep"], ["Oct"], ["Nov"], ["Dec"]];
+    function pad2(value) {
+      return String(value).padStart(2, "0");
+    }
     function monthIndex(code) {
       return months.findIndex(([monthCode]) => monthCode === code);
-    }
-    function eventDate(event) {
-      const [year, month, day] = String(event.sortDate).split("-").map(Number);
-      return new Date(year, month - 1, day);
     }
     function eventDay(event) {
       return eventDate(event).getDate();
@@ -75,9 +91,88 @@ function renderMonthGridForTest(html, code, events) {
     function escapeHtml(value) {
       return String(value || "");
     }
+    ${parseIsoDate}
+    ${addDays}
+    ${sameDay}
+    ${isoDateKey}
+    ${weekStartDate}
+    ${weekStartKey}
+    ${eventDate}
+    ${dateRangeEndFromText}
+    ${eventExplicitEndDate}
+    ${clockToMinutes}
+    ${parseEventTimeWindow}
+    ${parseEventDateTime}
+    ${eventDisplayEndDate}
+    ${eventActiveDateKeys}
+    ${eventHasExplicitDateRange}
+    ${eventCalendarDateKeysWithinWeek}
     ${renderMonthGrid}
     return renderMonthGrid;
   `)()(code, events);
+}
+
+function dateWindowMatchesForTest(html, windowName, event) {
+  const parseIsoDate = extractFunction(html, "parseIsoDate");
+  const addDays = extractFunction(html, "addDays");
+  const sameDay = extractFunction(html, "sameDay");
+  const isoDateKey = extractFunction(html, "isoDateKey");
+  const weekStartDate = extractFunction(html, "weekStartDate");
+  const weekStartKey = extractFunction(html, "weekStartKey");
+  const eventDate = extractFunction(html, "eventDate");
+  const dateRangeEndFromText = extractFunction(html, "dateRangeEndFromText");
+  const eventExplicitEndDate = extractFunction(html, "eventExplicitEndDate");
+  const clockToMinutes = extractFunction(html, "clockToMinutes");
+  const parseEventTimeWindow = extractFunction(html, "parseEventTimeWindow");
+  const parseEventDateTime = extractFunction(html, "parseEventDateTime");
+  const eventDisplayEndDate = extractFunction(html, "eventDisplayEndDate");
+  const eventActiveDateKeys = extractFunction(html, "eventActiveDateKeys");
+  const eventActiveWeekKeys = extractFunction(html, "eventActiveWeekKeys");
+  const eventCoversDate = extractFunction(html, "eventCoversDate");
+  const eventIntersectsDateRange = extractFunction(html, "eventIntersectsDateRange");
+  const eventCoversCurrentWeek = extractFunction(html, "eventCoversCurrentWeek");
+  const eventArchiveCutoff = extractFunction(html, "eventArchiveCutoff");
+  const eventIsPastByCutoff = extractFunction(html, "eventIsPastByCutoff");
+  const thisWeekendRange = extractFunction(html, "thisWeekendRange");
+  const dateWindowMatches = extractFunction(html, "dateWindowMatches");
+
+  return Function(`
+    const verified = "2026-06-11";
+    const dayMs = 24 * 60 * 60 * 1000;
+    const archiveCutoffHour = 6;
+    const statusNow = new Date("2026-06-21T22:30:00+08:00");
+    const today = new Date(2026, 5, 21);
+    let dateWindow = ${JSON.stringify(windowName)};
+    function pad2(value) {
+      return String(value).padStart(2, "0");
+    }
+    function isNewlyAdded() {
+      return false;
+    }
+    ${parseIsoDate}
+    ${addDays}
+    ${sameDay}
+    ${isoDateKey}
+    ${weekStartDate}
+    ${weekStartKey}
+    ${eventDate}
+    ${dateRangeEndFromText}
+    ${eventExplicitEndDate}
+    ${clockToMinutes}
+    ${parseEventTimeWindow}
+    ${parseEventDateTime}
+    ${eventDisplayEndDate}
+    ${eventActiveDateKeys}
+    ${eventActiveWeekKeys}
+    ${eventCoversDate}
+    ${eventIntersectsDateRange}
+    ${eventCoversCurrentWeek}
+    ${eventArchiveCutoff}
+    ${eventIsPastByCutoff}
+    ${thisWeekendRange}
+    ${dateWindowMatches}
+    return dateWindowMatches;
+  `)()(event);
 }
 
 test("DJ profile appearances link to local event detail pages", () => {
@@ -115,8 +210,10 @@ test("homepage calendar entries link to local event detail pages", () => {
 
 test("homepage calendar grid renders a complete selected week grouped by venue rows", () => {
   const weeklyEvents = [
+    { id: "may-sunday-overnight", sortDate: "2026-05-31", date: "May 31", time: "23:00-02:00", title: "Sunday into Monday", venue: "Room C" },
     { id: "june-tuesday", sortDate: "2026-06-02", title: "Tuesday room", venue: "Room A" },
     { id: "june-thursday", sortDate: "2026-06-04", title: "Thursday room", venue: "Room A" },
+    { id: "june-thursday-overnight", sortDate: "2026-06-04", date: "Jun 4", time: "23:00-02:00", title: "Thursday overnight", venue: "Room A" },
     { id: "june-saturday", sortDate: "2026-06-06", title: "Saturday room", venue: "Room B" },
     { id: "june-outside-week", sortDate: "2026-06-27", title: "Outside week", venue: "Room C" },
   ];
@@ -143,7 +240,49 @@ test("homepage calendar grid renders a complete selected week grouped by venue r
     assert.match(grid, /class="calendar-venue-copy"/);
     assert.equal((grid.match(/<b>Room A<\/b>/g) || []).length, 1);
     assert.equal((grid.match(/<b>Room B<\/b>/g) || []).length, 1);
+    assert.match(grid, /Sunday into Monday/);
+    assert.equal((grid.match(/<span class="calendar-event-title">Thursday overnight<\/span>/g) || []).length, 1);
     assert.doesNotMatch(grid, /Outside week/);
+  }
+});
+
+test("homepage date windows keep this week complete and include tonight events", () => {
+  for (const file of calendarFiles) {
+    const html = readSiteFile(file);
+
+    assert.equal(
+      dateWindowMatchesForTest(html, "future", {
+        id: "current-week-past",
+        sortDate: "2026-06-17",
+        date: "Jun 17",
+        time: "22:00-05:00",
+        status: "past"
+      }),
+      true,
+      `${file} should keep current-week archive rows in the default week view`,
+    );
+    assert.equal(
+      dateWindowMatchesForTest(html, "future", {
+        id: "previous-week-past",
+        sortDate: "2026-06-10",
+        date: "Jun 10",
+        time: "22:00-05:00",
+        status: "past"
+      }),
+      false,
+      `${file} should not re-open older archive weeks in the default week view`,
+    );
+    assert.equal(
+      dateWindowMatchesForTest(html, "tonight", {
+        id: "friendsstandout",
+        sortDate: "2026-06-21",
+        date: "Jun 21",
+        time: "21:00-03:00",
+        status: "upcoming"
+      }),
+      true,
+      `${file} should include Jun 21 cross-midnight events in Tonight`,
+    );
   }
 });
 

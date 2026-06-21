@@ -2201,7 +2201,7 @@
             <div class="filter-summary" id="filterSummary" aria-live="polite">Loading matches</div>
           </div>
           <div class="quick-actions" aria-label="Date and export shortcuts">
-            <button class="quick-filter active" type="button" data-window="future">Upcoming</button>
+            <button class="quick-filter active" type="button" data-window="future">This Week</button>
             <button class="quick-filter" type="button" data-window="all">Full 2026</button>
             <button class="quick-filter" type="button" data-window="tonight">Tonight</button>
             <button class="quick-filter" type="button" data-window="weekend">Weekend</button>
@@ -3179,7 +3179,7 @@
     };
 
     const dateWindowLabels = {
-      future: "current + upcoming",
+      future: "this week + upcoming",
       all: "full 2026",
       tonight: "tonight",
       weekend: "this weekend",
@@ -3292,7 +3292,7 @@
       "youshan-warmup": "Youshan / Wigwam"
     };
 
-    const posterUrlOverrides = {};
+    const posterUrlOverrides = Object.create(null);
     const optimizedPosterUrlOverrides = {};
 
     function escapeHtml(value) {
@@ -3523,10 +3523,141 @@
       return parseIsoDate(event.sortDate);
     }
 
+    function dateRangeEndFromText(text, startDate) {
+      const value = String(text || "");
+      if (!value || !startDate) return null;
+      const monthNumbers = {
+        jan: 0, january: 0,
+        feb: 1, february: 1,
+        mar: 2, march: 2,
+        apr: 3, april: 3,
+        may: 4,
+        jun: 5, june: 5,
+        jul: 6, july: 6,
+        aug: 7, august: 7,
+        sep: 8, sept: 8, september: 8,
+        oct: 9, october: 9,
+        nov: 10, november: 10,
+        dec: 11, december: 11
+      };
+      const sameRangeStart = rangeStart => rangeStart && sameDay(rangeStart, startDate);
+      const isoRange = value.match(/\b(\d{4}-\d{2}-\d{2})\b\s*(?:-|–|to|through)\s*(\d{4}-\d{2}-\d{2})\b/i);
+      if (isoRange) {
+        const rangeStart = parseIsoDate(isoRange[1]);
+        const rangeEnd = parseIsoDate(isoRange[2]);
+        if (sameRangeStart(rangeStart) && rangeEnd && rangeEnd >= rangeStart) return rangeEnd;
+      }
+
+      const monthPattern = "(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t|tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)";
+      const crossMonth = new RegExp(`\\b${monthPattern}\\s+(\\d{1,2})\\s*(?:-|–|to|through)\\s*${monthPattern}\\s+(\\d{1,2})\\b`, "i");
+      const crossMatch = value.match(crossMonth);
+      if (crossMatch) {
+        const startMonth = monthNumbers[crossMatch[1].toLowerCase()];
+        const startDay = Number(crossMatch[2]);
+        const endMonth = monthNumbers[crossMatch[3].toLowerCase()];
+        const endDay = Number(crossMatch[4]);
+        if (startMonth !== undefined && endMonth !== undefined && startDay && endDay) {
+          const rangeStart = new Date(startDate.getFullYear(), startMonth, startDay);
+          const endYear = endMonth < startMonth ? startDate.getFullYear() + 1 : startDate.getFullYear();
+          const rangeEnd = new Date(endYear, endMonth, endDay);
+          if (sameRangeStart(rangeStart) && rangeEnd >= rangeStart) return rangeEnd;
+        }
+      }
+
+      const sameMonth = new RegExp(`\\b${monthPattern}\\s+(\\d{1,2})\\s*(?:-|–|to|through)\\s*(\\d{1,2})\\b`, "i");
+      const sameMatch = value.match(sameMonth);
+      if (sameMatch) {
+        const startMonth = monthNumbers[sameMatch[1].toLowerCase()];
+        const startDay = Number(sameMatch[2]);
+        const endDay = Number(sameMatch[3]);
+        if (startMonth !== undefined && startDay && endDay) {
+          const rangeStart = new Date(startDate.getFullYear(), startMonth, startDay);
+          const rangeEnd = new Date(startDate.getFullYear(), startMonth, endDay);
+          if (sameRangeStart(rangeStart) && rangeEnd >= rangeStart) return rangeEnd;
+        }
+      }
+
+      return null;
+    }
+
+    function eventExplicitEndDate(event, startDate = eventDate(event)) {
+      if (!startDate) return null;
+      const directFields = [
+        event.endDate,
+        event.endSortDate,
+        event.dateEnd,
+        event.festival?.endDate,
+        event.festival?.endSortDate
+      ];
+      for (const field of directFields) {
+        const parsed = parseIsoDate(field);
+        if (parsed && parsed >= startDate) return parsed;
+      }
+      return dateRangeEndFromText([event.date, event.festival?.dateWindow].filter(Boolean).join(" "), startDate);
+    }
+
+    function eventDisplayEndDate(event, startDate = eventDate(event)) {
+      if (!startDate) return null;
+      const explicitEnd = eventExplicitEndDate(event, startDate);
+      const parsedWindow = parseEventDateTime(event);
+      const timedEnd = parsedWindow?.end ? new Date(parsedWindow.end.getTime() - 1) : startDate;
+      const timedEndDate = new Date(timedEnd.getFullYear(), timedEnd.getMonth(), timedEnd.getDate());
+      if (explicitEnd && explicitEnd > timedEndDate) return explicitEnd;
+      return timedEndDate >= startDate ? timedEndDate : startDate;
+    }
+
+    function eventActiveDateKeys(event) {
+      const start = eventDate(event);
+      if (!start) return [];
+      const end = eventDisplayEndDate(event, start) || start;
+      const keys = [];
+      for (let date = new Date(start), guard = 0; date <= end && guard < 45; date = addDays(date, 1), guard += 1) {
+        keys.push(isoDateKey(date));
+      }
+      return keys;
+    }
+
+    function eventHasExplicitDateRange(event) {
+      return Boolean(eventExplicitEndDate(event));
+    }
+
+    function eventActiveWeekKeys(event) {
+      return [...new Set(eventActiveDateKeys(event).map(key => weekStartKey(parseIsoDate(key))).filter(Boolean))];
+    }
+
+    function eventCoversDate(event, date) {
+      if (!date) return false;
+      return eventActiveDateKeys(event).includes(isoDateKey(date));
+    }
+
+    function eventIntersectsDateRange(event, start, end) {
+      if (!start || !end) return false;
+      const startKey = isoDateKey(start);
+      const endKey = isoDateKey(end);
+      return eventActiveDateKeys(event).some(key => key >= startKey && key <= endKey);
+    }
+
+    function eventCoversCurrentWeek(event) {
+      return eventActiveWeekKeys(event).includes(weekStartKey(today));
+    }
+
+    function eventCalendarDateKeysWithinWeek(event, weekDateKeys) {
+      const activeKeys = eventActiveDateKeys(event).filter(key => weekDateKeys.has(key));
+      if (!activeKeys.length) return [];
+      const start = eventDate(event);
+      const startKey = start ? isoDateKey(start) : "";
+      if (eventHasExplicitDateRange(event)) return activeKeys;
+      return weekDateKeys.has(startKey) ? [startKey] : activeKeys;
+    }
+
     function eventArchiveCutoff(event) {
       const sortDate = String(event?.sortDate || "").slice(0, 10);
       if (!/^\d{4}-\d{2}-\d{2}$/.test(sortDate)) return null;
-      const cutoff = new Date(`${sortDate}T${String(archiveCutoffHour).padStart(2, "0")}:00:00+08:00`);
+      const startDate = parseIsoDate(sortDate);
+      const explicitEnd = eventExplicitEndDate(event, startDate);
+      const cutoffDate = explicitEnd || startDate;
+      const cutoffKey = cutoffDate ? isoDateKey(cutoffDate) : sortDate;
+      const cutoff = new Date(`${cutoffKey}T${String(archiveCutoffHour).padStart(2, "0")}:00:00+08:00`);
       cutoff.setUTCDate(cutoff.getUTCDate() + 1);
       return cutoff;
     }
@@ -3593,13 +3724,13 @@
     function dateWindowMatches(event) {
       const date = eventDate(event);
       if (!date) return true;
-      if (dateWindow === "future") return !eventIsPastByCutoff(event);
-      if (dateWindow === "tonight") return !eventIsPastByCutoff(event) && (sameDay(date, today) || date < today);
+      if (dateWindow === "future") return !eventIsPastByCutoff(event) || eventCoversCurrentWeek(event);
+      if (dateWindow === "tonight") return !eventIsPastByCutoff(event) && eventCoversDate(event, today);
       if (dateWindow === "weekend") {
         const [start, end] = thisWeekendRange();
-        return date >= start && date <= end;
+        return eventIntersectsDateRange(event, start, end);
       }
-      if (dateWindow === "next30") return !eventIsPastByCutoff(event) && date <= addDays(today, 30);
+      if (dateWindow === "next30") return !eventIsPastByCutoff(event) && eventIntersectsDateRange(event, today, addDays(today, 30));
       if (dateWindow === "new") return isNewlyAdded(event);
       return true;
     }
@@ -4508,10 +4639,11 @@
       const dayHasEvent = weekDates.map(() => false);
       const groups = new Map();
       monthEvents.forEach(event => {
-        const date = eventDate(event);
-        if (!date || !weekDateKeys.has(keyFromDate(date))) return;
-        const weekdayIndex = (date.getDay() + 6) % 7;
-        dayHasEvent[weekdayIndex] = true;
+        const fallbackDate = eventDate(event);
+        const activeDayKeys = typeof eventCalendarDateKeysWithinWeek === "function"
+          ? eventCalendarDateKeysWithinWeek(event, weekDateKeys)
+          : (fallbackDate ? [keyFromDate(fallbackDate)].filter(key => weekDateKeys.has(key)) : []);
+        if (!activeDayKeys.length) return;
         const group = typeof calendarGroupFor === "function"
           ? calendarGroupFor(event)
           : { key: String(event.venue || "venue"), label: event.venue || "Venue TBA", meta: "" };
@@ -4520,9 +4652,14 @@
         }
         const row = groups.get(group.key);
         if ((event.sortDate || "9999-12-31") < row.firstSortDate) row.firstSortDate = event.sortDate || row.firstSortDate;
-        const dayKey = keyFromDate(date);
-        if (!row.eventsByDay.has(dayKey)) row.eventsByDay.set(dayKey, []);
-        row.eventsByDay.get(dayKey).push(event);
+        activeDayKeys.forEach(dayKey => {
+          const date = localParseIsoDate(dayKey);
+          if (!date) return;
+          const weekdayIndex = (date.getDay() + 6) % 7;
+          dayHasEvent[weekdayIndex] = true;
+          if (!row.eventsByDay.has(dayKey)) row.eventsByDay.set(dayKey, []);
+          row.eventsByDay.get(dayKey).push(event);
+        });
       });
       const visibleDayIndexes = weekDates.map((_, weekdayIndex) => weekdayIndex);
       const columnCount = Math.max(visibleDayIndexes.length, 1);
@@ -4564,7 +4701,7 @@
       }
 
       sortedGroups.forEach(group => {
-        const rowCount = [...group.eventsByDay.values()].reduce((sum, rows) => sum + rows.length, 0);
+        const rowCount = new Set([...group.eventsByDay.values()].flat().map(event => event.id || `${event.title}-${event.sortDate}`)).size;
         const groupLogo = group.logo || "";
         const groupMark = group.mark || groupLogoMark(group.label);
         const groupLogoHtml = groupLogo
@@ -4822,15 +4959,16 @@
 
     function eventMatches(event) {
       if (!eventMatchesWithoutWeek(event)) return false;
-      return eventWeekStartKey(event) === activeWeekStart;
+      return eventActiveWeekKeys(event).includes(activeWeekStart);
     }
 
     function weekCountsForCurrentFilters() {
       const counts = new Map();
       events.filter(event => eventMatchesWithoutWeek(event)).forEach(event => {
-        const key = eventWeekStartKey(event);
-        if (!key) return;
-        counts.set(key, (counts.get(key) || 0) + 1);
+        eventActiveWeekKeys(event).forEach(key => {
+          if (!key) return;
+          counts.set(key, (counts.get(key) || 0) + 1);
+        });
       });
       return counts;
     }
@@ -4848,7 +4986,12 @@
 
     function firstMatchingWeekForMonth(monthCode) {
       return weekKeysForCurrentFilters().find(key => {
-        return events.some(event => eventMatchesWithoutWeek(event) && event.month === monthCode && eventWeekStartKey(event) === key);
+        return events.some(event => {
+          if (!eventMatchesWithoutWeek(event) || !eventActiveWeekKeys(event).includes(key)) return false;
+          return event.month === monthCode
+            || monthCodeForWeek(key) === monthCode
+            || eventActiveDateKeys(event).some(dateKey => monthCodeFromSortDate(dateKey) === monthCode);
+        });
       });
     }
 
@@ -4992,8 +5135,8 @@
       if (mobileCalendarGrid && window.matchMedia("(max-width: 700px)").matches) {
         const weekDates = weekDatesFor(activeWeekStart);
         let focusIndex = weekDates.findIndex(date => sameDay(date, today));
-        if (focusIndex < 0 || !visibleEvents.some(event => sameDay(eventDate(event), weekDates[focusIndex]))) {
-          focusIndex = weekDates.findIndex(date => visibleEvents.some(event => sameDay(eventDate(event), date)));
+        if (focusIndex < 0 || !visibleEvents.some(event => eventCoversDate(event, weekDates[focusIndex]))) {
+          focusIndex = weekDates.findIndex(date => visibleEvents.some(event => eventCoversDate(event, date)));
         }
         const dayColumn = mobileCalendarGrid.querySelector(".calendar-day-name");
         const dayColumnWidth = dayColumn ? dayColumn.getBoundingClientRect().width : 112;
@@ -5519,10 +5662,9 @@
       const upcoming = events
         .filter(eventIsUpcomingPick)
         .sort((a, b) => a.sortDate.localeCompare(b.sortDate));
-      const tonight = upcoming.filter(event => eventDate(event).toDateString() === today.toDateString()).slice(0, 2);
+      const tonight = upcoming.filter(event => eventCoversDate(event, today)).slice(0, 2);
       const weekend = upcoming.filter(event => {
-        const diff = Math.round((eventDate(event) - today) / dayMs);
-        return diff >= 0 && diff <= 3;
+        return eventIntersectsDateRange(event, today, addDays(today, 3));
       }).slice(0, 4);
 
       tonightPanel.innerHTML = tonight.length
@@ -5689,6 +5831,7 @@
           setDateWindow(button.dataset.window);
           syncActiveMonthToMatches();
           renderCalendar();
+          if (window.matchMedia("(max-width: 700px)").matches) setMobileFilterOpen(false);
         });
       });
       document.querySelectorAll("[data-window-shortcut]").forEach(button => {
