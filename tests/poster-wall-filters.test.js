@@ -112,9 +112,9 @@ function posterWallImagesForTest() {
 
 test("poster wall defaults to poster-backed rows while keeping dates and cities broad", () => {
   const html = readSiteFile("poster-wall.html");
-  assert.match(html, /<select class="select" id="statusFilter"[\s\S]*?>\s*<option value="all">All dates<\/option>/);
-  assert.match(html, /<select class="select" id="cityFilter"[\s\S]*?>\s*<option value="all">All cities<\/option>/);
-  assert.match(html, /<select class="select" id="posterFilter"[\s\S]*?>\s*<option value="with-poster">Has poster<\/option>/);
+  assert.match(html, /<span class="wall-control-label">When<\/span>[\s\S]*?<option value="all">All event dates<\/option>/);
+  assert.match(html, /<span class="wall-control-label">City<\/span>[\s\S]*?<option value="all">Any city<\/option>/);
+  assert.match(html, /<span class="wall-control-label">Poster<\/span>[\s\S]*?<option value="with-poster">Only with poster<\/option>/);
 
   const filters = posterWallFiltersForTest();
   filters.setEvents([
@@ -289,7 +289,7 @@ test("poster wall uses dense grid card layout across desktop tablet and mobile",
 test("poster wall keeps the page chrome compact around the visual wall", () => {
   const html = readSiteFile("poster-wall.html");
   assert.match(html, /class="control-icon-link"/);
-  assert.match(html, /Soon \+ art/);
+  assert.match(html, /Date, posters first/);
   assert.match(html, /href="poster-wall\.html">Poster<\/a>/);
   assert.match(html, /<h1>Events<\/h1>/);
   assert.doesNotMatch(html, /Scan Shanghai club posters in a dense wall/);
@@ -297,17 +297,17 @@ test("poster wall keeps the page chrome compact around the visual wall", () => {
   assert.doesNotMatch(html, /id="posterScope"/);
   assert.doesNotMatch(html, /class="wall-meta"/);
   assert.doesNotMatch(html, /event cards<\/span>/);
+  assert.doesNotMatch(html, /Soon \+ art/);
+  assert.doesNotMatch(html, /Art first/);
 });
 
-test("poster wall collapsible search keeps mobile filters in usable grid columns", () => {
-  const css = readSiteFile("assets/basement-dispatch.css");
-  assert.match(css, /\.wall-controls\.has-collapsible-search\s*{\s*grid-template-columns: var\(--compact-search-size\) repeat\(5, minmax\(72px, 1fr\)\) 36px !important;/);
-  assert.match(css, /@media \(max-width: 560px\)[\s\S]*\.wall-controls\.has-collapsible-search\s*{\s*grid-template-columns: var\(--compact-search-size\) repeat\(2, minmax\(0, 1fr\)\) 36px !important;/);
-  assert.match(css, /#statusFilter\s*{[\s\S]*grid-column: 2 \/ 4 !important;/);
-  assert.match(css, /#cityFilter\s*{[\s\S]*grid-column: 1 \/ 3 !important;[\s\S]*grid-row: 2 !important;/);
-  assert.match(css, /#posterFilter\s*{[\s\S]*grid-column: 3 \/ 5 !important;[\s\S]*grid-row: 2 !important;/);
-  assert.match(css, /#vibeFilter\s*{[\s\S]*grid-column: 1 \/ 3 !important;[\s\S]*grid-row: 3 !important;/);
-  assert.match(css, /#sortFilter\s*{[\s\S]*grid-column: 3 \/ 5 !important;[\s\S]*grid-row: 3 !important;/);
+test("poster wall filters use visible labels and readable mobile columns", () => {
+  const html = readSiteFile("poster-wall.html");
+  assert.match(html, /data-collapsible-search-skip/);
+  assert.match(html, /class="wall-control wall-control-search"/);
+  assert.match(html, /<span class="wall-control-label">Sound<\/span>/);
+  assert.match(html, /<span class="wall-control-label">Sort<\/span>[\s\S]*?<option value="poster-first">Poster images first<\/option>/);
+  assert.match(html, /@media \(max-width: 560px\)[\s\S]*\.wall-control-when,[\s\S]*\.wall-control-sort\s*{[\s\S]*grid-column: 1 \/ 3;/);
 });
 
 test("poster wall cards keep ticket price and lineup details out of wall mode", () => {

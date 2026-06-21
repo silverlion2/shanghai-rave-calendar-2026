@@ -199,25 +199,72 @@
 
     .wall-controls {
       display: grid;
-      grid-template-columns: minmax(180px, 1fr) 112px 112px 116px 112px 132px 36px;
-      gap: 6px;
-      align-items: center;
+      grid-template-columns: minmax(220px, 1.35fr) repeat(5, minmax(136px, 1fr)) 42px;
+      gap: 8px;
+      align-items: end;
       margin: 10px 0 12px;
+    }
+
+    .wall-control {
+      min-width: 0;
+      display: grid;
+      gap: 5px;
+    }
+
+    .wall-control-label {
+      display: flex;
+      align-items: center;
+      min-height: 12px;
+      color: var(--cyan);
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .wall-control:focus-within .wall-control-label {
+      color: var(--paper);
     }
 
     .search,
     .select {
       width: 100%;
-      min-height: 34px;
+      min-width: 0;
+      min-height: 42px;
       border: 1px solid rgba(229, 222, 209, .35);
       border-radius: 0;
       color: var(--paper);
-      background: rgba(5, 6, 6, .78);
-      padding: 0 9px;
+      background-color: rgba(5, 6, 6, .78);
+      padding: 0 10px;
       font-family: var(--font-mono);
-      font-size: 11px;
-      text-transform: uppercase;
+      font-size: 12px;
+      line-height: 1.2;
+      text-transform: none;
       outline: none;
+    }
+
+    .select {
+      appearance: none;
+      cursor: pointer;
+      padding-right: 28px;
+      background-image:
+        linear-gradient(45deg, transparent 50%, var(--cyan) 50%),
+        linear-gradient(135deg, var(--cyan) 50%, transparent 50%);
+      background-position:
+        calc(100% - 15px) 50%,
+        calc(100% - 10px) 50%;
+      background-size: 5px 5px, 5px 5px;
+      background-repeat: no-repeat;
+    }
+
+    .select option {
+      color: var(--void);
+      background: var(--paper);
+    }
+
+    .search::placeholder {
+      color: rgba(229, 222, 209, .62);
     }
 
     .search:focus,
@@ -227,11 +274,12 @@
     }
 
     .control-icon-link {
-      width: 36px;
-      min-height: 34px;
+      width: 42px;
+      min-height: 42px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
+      align-self: end;
       border: 1px solid rgba(54, 199, 231, .5);
       color: var(--cyan);
       background: rgba(54, 199, 231, .06);
@@ -681,18 +729,39 @@
 
     @media (max-width: 1180px) {
       .poster-waterfall { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-      .wall-controls { grid-template-columns: minmax(170px, 1fr) repeat(5, minmax(92px, 1fr)) 36px; }
+      .wall-controls {
+        grid-template-columns: minmax(190px, 1.35fr) repeat(3, minmax(128px, 1fr)) 42px;
+      }
+      .wall-control-search { grid-column: 1 / 3; }
+      .wall-control-when { grid-column: 3; }
+      .wall-control-city { grid-column: 4; }
+      .wall-control-poster { grid-column: 1; }
+      .wall-control-sound { grid-column: 2 / 4; }
+      .wall-control-sort { grid-column: 4 / 6; }
+      .control-icon-link {
+        grid-column: 5;
+        grid-row: 1;
+      }
     }
 
     @media (max-width: 820px) {
       .shell { width: min(100% - 28px, 720px); }
       .primary-nav { justify-content: flex-start; gap: 15px; overflow-x: auto; }
       .wall-head { grid-template-columns: 1fr; }
-      .wall-controls { grid-template-columns: minmax(0, 1fr) 112px 112px 36px; }
-      .control-icon-link { grid-column: 4; grid-row: 1; }
-      #posterFilter { grid-column: 1 / 2; }
-      #vibeFilter { grid-column: 2 / 3; }
-      #sortFilter { grid-column: 3 / 5; }
+      .wall-controls { grid-template-columns: repeat(2, minmax(0, 1fr)) 42px; }
+      .wall-control-search {
+        grid-column: 1 / 3;
+        grid-row: 1;
+      }
+      .wall-control-when,
+      .wall-control-poster { grid-column: 1; }
+      .wall-control-city,
+      .wall-control-sound { grid-column: 2 / 4; }
+      .wall-control-sort { grid-column: 1 / 4; }
+      .control-icon-link {
+        grid-column: 3;
+        grid-row: 1;
+      }
       .poster-waterfall { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
       .wall-column { gap: 8px; }
       .wall-card { grid-template-rows: auto 62px; }
@@ -706,14 +775,24 @@
     @media (max-width: 560px) {
       h1 { font-size: 64px; }
       .shell { width: min(100% - 18px, 520px); }
-      .wall-controls { grid-template-columns: repeat(2, minmax(0, 1fr)) 36px; }
-      .search { grid-column: 1 / 3; }
-      .control-icon-link { grid-column: 3; grid-row: 1; }
-      #statusFilter,
-      #cityFilter,
-      #posterFilter,
-      #vibeFilter,
-      #sortFilter { grid-column: span 1; }
+      .wall-controls { grid-template-columns: minmax(0, 1fr) 42px; }
+      .wall-control-search {
+        grid-column: 1;
+        grid-row: 1;
+      }
+      .wall-control-when,
+      .wall-control-city,
+      .wall-control-poster,
+      .wall-control-sound,
+      .wall-control-sort {
+        grid-column: 1 / 3;
+      }
+      .control-icon-link {
+        grid-column: 2;
+        grid-row: 1;
+      }
+      .search,
+      .select { font-size: 11px; }
       .poster-waterfall { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; }
       .wall-column { gap: 7px; }
       .wall-column:nth-child(2) { padding-top: 18px; }
@@ -769,52 +848,70 @@
       </div>
     </header>
 
-    <section class="wall-controls" aria-label="Event filters">
-      <input class="search" id="searchInput" type="search" placeholder="Filter events">
-      <select class="select" id="statusFilter" aria-label="Status filter">
-        <option value="all">All dates</option>
-        <option value="active">Now + next</option>
-        <option value="current">Now</option>
-        <option value="upcoming">Next</option>
-        <option value="past">Archive</option>
-      </select>
-      <select class="select" id="cityFilter" aria-label="City filter">
-        <option value="all">All cities</option>
-        <option value="Shanghai">Shanghai</option>
-      </select>
-      <select class="select" id="posterFilter" aria-label="Poster filter">
-        <option value="with-poster">Has poster</option>
-        <option value="no-poster">No poster</option>
-        <option value="all">All posters</option>
-      </select>
-      <select class="select" id="vibeFilter" aria-label="Vibe filter">
-        <option value="all">Vibe</option>
-        <option value="hard">Hard techno</option>
-        <option value="hard-techno">Hard techno refined</option>
-        <option value="industrial">Industrial</option>
-        <option value="groovy">Groovy</option>
-        <option value="hypnotic">Hypnotic</option>
-        <option value="minimal">Minimal</option>
-        <option value="melodic">Melodic</option>
-        <option value="acid">Acid</option>
-        <option value="trance-adjacent">Trance-adjacent</option>
-        <option value="underground">Underground</option>
-        <option value="house">House / groove</option>
-        <option value="date">Date-friendly</option>
-        <option value="experimental">Experimental</option>
-        <option value="bass">Bass / club</option>
-        <option value="bass-hybrid">Bass hybrid</option>
-        <option value="live-av">Live / A/V</option>
-        <option value="warehouse">Warehouse</option>
-        <option value="rooftop">Rooftop / open-air</option>
-      </select>
-      <select class="select" id="sortFilter" aria-label="Sort events">
-        <option value="smart">Soon + art</option>
-        <option value="soonest">Soonest</option>
-        <option value="poster-first">Art first</option>
-        <option value="latest">Latest</option>
-        <option value="venue">Venue A-Z</option>
-      </select>
+    <section class="wall-controls" aria-label="Search, filter, and sort events">
+      <div class="wall-control wall-control-search">
+        <label class="wall-control-label" for="searchInput">Search</label>
+        <input class="search" id="searchInput" type="search" placeholder="Event, venue, sound" aria-label="Search events" data-collapsible-search-skip>
+      </div>
+      <label class="wall-control wall-control-when" for="statusFilter">
+        <span class="wall-control-label">When</span>
+        <select class="select" id="statusFilter" aria-label="Filter by date window">
+          <option value="all">All event dates</option>
+          <option value="active">Now and future</option>
+          <option value="current">Happening today</option>
+          <option value="upcoming">Future only</option>
+          <option value="past">Past archive</option>
+        </select>
+      </label>
+      <label class="wall-control wall-control-city" for="cityFilter">
+        <span class="wall-control-label">City</span>
+        <select class="select" id="cityFilter" aria-label="Filter by city">
+          <option value="all">Any city</option>
+          <option value="Shanghai">Shanghai</option>
+        </select>
+      </label>
+      <label class="wall-control wall-control-poster" for="posterFilter">
+        <span class="wall-control-label">Poster</span>
+        <select class="select" id="posterFilter" aria-label="Filter by poster availability">
+          <option value="with-poster">Only with poster</option>
+          <option value="no-poster">Missing poster</option>
+          <option value="all">With or without poster</option>
+        </select>
+      </label>
+      <label class="wall-control wall-control-sound" for="vibeFilter">
+        <span class="wall-control-label">Sound</span>
+        <select class="select" id="vibeFilter" aria-label="Filter by sound or mood">
+          <option value="all">Any sound or mood</option>
+          <option value="hard">Hard / peak-time</option>
+          <option value="hard-techno">Hard techno</option>
+          <option value="industrial">Industrial</option>
+          <option value="groovy">Groovy</option>
+          <option value="hypnotic">Hypnotic</option>
+          <option value="minimal">Minimal</option>
+          <option value="melodic">Melodic</option>
+          <option value="acid">Acid</option>
+          <option value="trance-adjacent">Trance-adjacent</option>
+          <option value="underground">Underground</option>
+          <option value="house">House / groove</option>
+          <option value="date">Easy night out</option>
+          <option value="experimental">Experimental</option>
+          <option value="bass">Bass / club</option>
+          <option value="bass-hybrid">Bass hybrid</option>
+          <option value="live-av">Live / A/V</option>
+          <option value="warehouse">Warehouse</option>
+          <option value="rooftop">Rooftop / open-air</option>
+        </select>
+      </label>
+      <label class="wall-control wall-control-sort" for="sortFilter">
+        <span class="wall-control-label">Sort</span>
+        <select class="select" id="sortFilter" aria-label="Sort events">
+          <option value="smart">Date, posters first</option>
+          <option value="soonest">Earliest start time</option>
+          <option value="poster-first">Poster images first</option>
+          <option value="latest">Latest date first</option>
+          <option value="venue">Venue name A-Z</option>
+        </select>
+      </label>
       <a class="control-icon-link" href="contribute.html" aria-label="Missing event" title="Missing event">+</a>
     </section>
 
@@ -1056,7 +1153,7 @@
       const cities = [...new Set(events.map(eventCity))].sort((a, b) => a.localeCompare(b));
       const ordered = ["Shanghai", ...cities.filter(city => city !== "Shanghai")];
       cityFilter.innerHTML = [
-        '<option value="all">All cities</option>',
+        '<option value="all">Any city</option>',
         '<option value="Shanghai">Shanghai</option>',
         ...ordered.filter(city => city !== "Shanghai").map(city => `<option value="${escapeHtml(city)}">${escapeHtml(city)}</option>`)
       ].join("");
