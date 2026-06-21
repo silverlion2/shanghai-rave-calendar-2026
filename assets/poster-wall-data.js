@@ -2,8 +2,43 @@
   const DEFAULT_CITY = "Shanghai";
   const ALL_CITIES = "all";
   const DEFAULT_VIEW = "poster_wall_cards";
+  const EVENTS_TABLE = "events";
+  const EVENTS_TABLE_COLUMNS = [
+    "id",
+    "slug",
+    "title",
+    "city",
+    "country",
+    "date_label",
+    "sort_date",
+    "time_label",
+    "venue_name",
+    "district",
+    "sound",
+    "genre",
+    "status",
+    "confidence",
+    "price",
+    "age",
+    "description",
+    "notes",
+    "source_url",
+    "source_label",
+    "source_status",
+    "last_checked",
+    "event_url",
+    "poster_url",
+    "image_theme",
+    "vibe",
+    "tags",
+    "sources",
+    "lineup",
+    "set_times",
+    "raw",
+  ].join(",");
   const DEFAULT_PAGE_SIZE = 120;
   const DEFAULT_TIMEOUT_MS = 3500;
+  const MAX_SUPABASE_PAGES = 8;
 
   function asArray(value) {
     if (Array.isArray(value)) return value;
@@ -88,7 +123,7 @@
     return {
       id: cleanText(row.id),
       slug: cleanText(row.slug || row.id),
-      title: cleanText(row.title),
+      title: cleanText(row.title || row.name),
       city: cleanText(row.city) || DEFAULT_CITY,
       country: cleanText(row.country) || "CN",
       date: cleanText(row.date || row.date_label || row.sort_date || row.sortDate),
@@ -163,12 +198,15 @@
     };
   }
 
-  async function loadSupabaseData(win, config, rangeStart = 0) {
-    const client = win.supabase.createClient(config.url, config.anonKey);
+  async function loadSupabaseRange(win, client, table, config, rangeStart = 0) {
     const rangeEnd = rangeStart + config.pageSize - 1;
-    const query = client
-      .from(config.view)
-      .select("*")
+    let query = client
+      .from(table)
+      .select(table === EVENTS_TABLE ? EVENTS_TABLE_COLUMNS : "*");
+    if (table === EVENTS_TABLE && typeof query.not === "function") {
+      query = query.not("poster_url", "is", null);
+    }
+    query = query
       .order("sort_date", { ascending: true, nullsFirst: false })
       .range(rangeStart, rangeEnd);
     const timer = win.setTimeout || root.setTimeout;
@@ -182,11 +220,42 @@
       : await query;
 
     if (result.error) throw new Error(result.error.message || "Supabase poster wall query failed");
+    return result.data || [];
+  }
+
+  async function loadSupabaseTableData(win, config, table, source) {
+    const client = win.supabase.createClient(config.url, config.anonKey);
+    const rows = [];
+    for (let page = 0; page < MAX_SUPABASE_PAGES; page += 1) {
+      const rangeStart = page * config.pageSize;
+      const pageRows = await loadSupabaseRange(win, client, table, config, rangeStart);
+      rows.push(...pageRows);
+      if (pageRows.length < config.pageSize) break;
+    }
     return {
-      source: "supabase",
+      source,
       posterArchive: { posters: [] },
-      events: normalizeSupabaseRows(result.data || []),
+      events: normalizeSupabaseRows(rows),
     };
+  }
+
+  function shouldTryEventsFallback(error) {
+    return Boolean(error);
+  }
+
+  async function loadSupabaseData(win, config) {
+    try {
+      return await loadSupabaseTableData(win, config, config.view, "supabase");
+    } catch (error) {
+      if (config.view !== EVENTS_TABLE && shouldTryEventsFallback(error)) {
+        const fallback = await loadSupabaseTableData(win, config, EVENTS_TABLE, "supabase-events-fallback");
+        return {
+          ...fallback,
+          error: error.message || String(error),
+        };
+      }
+      throw error;
+    }
   }
 
   async function loadPosterWallData(options = {}) {

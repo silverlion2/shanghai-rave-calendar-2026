@@ -134,6 +134,14 @@ When a human supplies WeChat, XHS, ticketing, venue, promoter, or poster screens
 
 Save raw poster files under `assets/posters/` and reference the raw local path in the event `posterUrl`, for example `assets/posters/event-slug.png`.
 
+After Workbuddy or a local poster batch updates `data/events.json`, run:
+
+```bash
+npm run posters:update-local
+```
+
+That command normalizes poster rows for the wall (`name` -> `title`, date-prefixed IDs -> `sortDate`) and then runs the focused poster-wall tests. Rows without a city are still treated as Shanghai by the wall. Use `npm run posters:check-local` before committing when you want the same checks without writing repairs.
+
 ```bash
 npm run posters:prepare
 ```

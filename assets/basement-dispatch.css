@@ -4785,7 +4785,42 @@ body .collapsible-search.has-value .collapsible-search-input {
 
 @media (max-width: 820px) {
   .wall-controls.has-collapsible-search {
-    grid-template-columns: var(--compact-search-size) minmax(0, 1fr) minmax(0, 1fr) 36px !important;
+    grid-template-columns: var(--compact-search-size) repeat(5, minmax(72px, 1fr)) 36px !important;
+  }
+
+  .wall-controls.has-collapsible-search > .collapsible-search {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+  }
+
+  .wall-controls.has-collapsible-search #statusFilter {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+  }
+
+  .wall-controls.has-collapsible-search #cityFilter {
+    grid-column: 3 !important;
+    grid-row: 1 !important;
+  }
+
+  .wall-controls.has-collapsible-search #posterFilter {
+    grid-column: 4 !important;
+    grid-row: 1 !important;
+  }
+
+  .wall-controls.has-collapsible-search #vibeFilter {
+    grid-column: 5 !important;
+    grid-row: 1 !important;
+  }
+
+  .wall-controls.has-collapsible-search #sortFilter {
+    grid-column: 6 !important;
+    grid-row: 1 !important;
+  }
+
+  .wall-controls.has-collapsible-search > .control-icon-link {
+    grid-column: 7 !important;
+    grid-row: 1 !important;
   }
 }
 
@@ -4799,6 +4834,41 @@ body .collapsible-search.has-value .collapsible-search-input {
   }
 
   .wall-controls.has-collapsible-search {
-    grid-template-columns: var(--compact-search-size) minmax(0, 1fr) 36px !important;
+    grid-template-columns: var(--compact-search-size) repeat(2, minmax(0, 1fr)) 36px !important;
+  }
+
+  .wall-controls.has-collapsible-search > .collapsible-search {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+  }
+
+  .wall-controls.has-collapsible-search #statusFilter {
+    grid-column: 2 / 4 !important;
+    grid-row: 1 !important;
+  }
+
+  .wall-controls.has-collapsible-search > .control-icon-link {
+    grid-column: 4 !important;
+    grid-row: 1 !important;
+  }
+
+  .wall-controls.has-collapsible-search #cityFilter {
+    grid-column: 1 / 3 !important;
+    grid-row: 2 !important;
+  }
+
+  .wall-controls.has-collapsible-search #posterFilter {
+    grid-column: 3 / 5 !important;
+    grid-row: 2 !important;
+  }
+
+  .wall-controls.has-collapsible-search #vibeFilter {
+    grid-column: 1 / 3 !important;
+    grid-row: 3 !important;
+  }
+
+  .wall-controls.has-collapsible-search #sortFilter {
+    grid-column: 3 / 5 !important;
+    grid-row: 3 !important;
   }
 }

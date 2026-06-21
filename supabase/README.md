@@ -128,7 +128,7 @@ window.LOVE_WALL_SUPABASE = {
   posterWallEnabled: true,
   posterWallView: "poster_wall_cards",
   posterWallDefaultCity: "Shanghai",
-  posterWallPageSize: 120,
+  posterWallPageSize: 60,
   posterWallTimeoutMs: 3500
 };
 ```

@@ -299,6 +299,17 @@ test("poster wall keeps the page chrome compact around the visual wall", () => {
   assert.doesNotMatch(html, /event cards<\/span>/);
 });
 
+test("poster wall collapsible search keeps mobile filters in usable grid columns", () => {
+  const css = readSiteFile("assets/basement-dispatch.css");
+  assert.match(css, /\.wall-controls\.has-collapsible-search\s*{\s*grid-template-columns: var\(--compact-search-size\) repeat\(5, minmax\(72px, 1fr\)\) 36px !important;/);
+  assert.match(css, /@media \(max-width: 560px\)[\s\S]*\.wall-controls\.has-collapsible-search\s*{\s*grid-template-columns: var\(--compact-search-size\) repeat\(2, minmax\(0, 1fr\)\) 36px !important;/);
+  assert.match(css, /#statusFilter\s*{[\s\S]*grid-column: 2 \/ 4 !important;/);
+  assert.match(css, /#cityFilter\s*{[\s\S]*grid-column: 1 \/ 3 !important;[\s\S]*grid-row: 2 !important;/);
+  assert.match(css, /#posterFilter\s*{[\s\S]*grid-column: 3 \/ 5 !important;[\s\S]*grid-row: 2 !important;/);
+  assert.match(css, /#vibeFilter\s*{[\s\S]*grid-column: 1 \/ 3 !important;[\s\S]*grid-row: 3 !important;/);
+  assert.match(css, /#sortFilter\s*{[\s\S]*grid-column: 3 \/ 5 !important;[\s\S]*grid-row: 3 !important;/);
+});
+
 test("poster wall cards keep ticket price and lineup details out of wall mode", () => {
   const html = readSiteFile("poster-wall.html");
   const cardSource = extractFunction(html, "eventCardHtml");

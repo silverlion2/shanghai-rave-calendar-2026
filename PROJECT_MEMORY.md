@@ -1896,3 +1896,10 @@ Pushed state:
 - Reduced wall tile typography and information height so images remain the visual priority.
 - Renamed the poster-wall navigation label from `Events` to `Poster` while keeping the page hero title as `Events`.
 - Verified with `node --test tests/poster-wall-filters.test.js`, full `npm run check:code`, and in-app browser checks on `http://localhost:4173/poster-wall`.
+
+## 2026-06-21 Poster Wall Workbuddy Update Guide
+
+- If Workbuddy uploads or creates a batch of poster rows, run `npm run posters:update-local` before testing or deploying. This normalizes wall-critical fields (`name` -> `title`, derivable date-prefixed IDs -> `sortDate`) and runs focused poster-wall tests.
+- The poster wall currently tries Supabase `poster_wall_cards` first. If that view is missing or slow, `assets/poster-wall-data.js` falls back to paginated public `events` rows where `poster_url` is not null, using `posterWallPageSize: 60` to avoid large-query timeouts.
+- A wall count mismatch usually means one of three things: rows have `name` but no `title`, the public config page size is too large and timing out, or `poster_wall_cards` has not been migrated. Check `npm run posters:check-local`, then inspect browser requests for `/rest/v1/poster_wall_cards` followed by `/rest/v1/events`.
+- Production should show all uploaded poster-backed events after deploy; the local browser verification target is `http://localhost:4173/poster-wall`.

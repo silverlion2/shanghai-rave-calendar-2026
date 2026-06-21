@@ -75,6 +75,26 @@ test("normalizes static events, keeps accepted cities, and prefers poster archiv
   assert.equal(otherCityRow.city, "Berlin");
 });
 
+test("normalizes poster events that use name instead of title", () => {
+  const module = loadModule();
+  const rows = module.normalizeStaticPayload({
+    events: [
+      {
+        id: "name-only-poster",
+        name: "Name Only Poster",
+        city: "Shanghai",
+        sortDate: "2026-06-21",
+        venue: "Shy People",
+        posterUrl: "https://cdn.example.com/name-only.jpg",
+      },
+    ],
+  }, { posters: [] });
+
+  assert.equal(rows.length, 1);
+  assert.equal(rows[0].title, "Name Only Poster");
+  assert.equal(rows[0].posterUrl, "https://cdn.example.com/name-only.jpg");
+});
+
 test("filters normalized events by city with Shanghai default and all-city option", () => {
   const module = loadModule();
   const rows = [
@@ -258,6 +278,124 @@ test("loads Supabase rows when client and config are available", async () => {
     ["select", "*"],
     ["order", "sort_date", { ascending: true, nullsFirst: false }],
     ["range", 0, 119],
+  ]);
+});
+
+test("loads every Supabase page when poster rows exceed one configured page", async () => {
+  const ranges = [];
+  const fakeWindow = {
+    LOVE_WALL_SUPABASE: {
+      enabled: true,
+      url: "https://example.supabase.co",
+      anonKey: "anon-key-with-enough-length",
+      posterWallView: "poster_wall_cards",
+      posterWallPageSize: 2,
+    },
+    supabase: {
+      createClient() {
+        return {
+          from() {
+            return {
+              select() { return this; },
+              order() { return this; },
+              range(from, to) {
+                ranges.push([from, to]);
+                const rows = [
+                  { id: "row-1", title: "Row 1", sort_date: "2026-06-21", poster_url: "poster-1.jpg" },
+                  { id: "row-2", title: "Row 2", sort_date: "2026-06-22", poster_url: "poster-2.jpg" },
+                  { id: "row-3", title: "Row 3", sort_date: "2026-06-23", poster_url: "poster-3.jpg" },
+                ].slice(from, to + 1);
+                return Promise.resolve({ data: rows, error: null });
+              },
+            };
+          },
+        };
+      },
+    },
+  };
+  const module = loadModule(fakeWindow);
+
+  const result = await module.loadPosterWallData({
+    win: module._testWindow,
+    fetcher: async () => {
+      throw new Error("static fallback should not be used");
+    },
+  });
+
+  assert.equal(result.source, "supabase");
+  assert.deepEqual(JSON.parse(JSON.stringify(result.events.map(event => event.id))), ["row-1", "row-2", "row-3"]);
+  assert.deepEqual(ranges, [[0, 1], [2, 3]]);
+});
+
+test("falls back to public Supabase events table when poster wall view is missing", async () => {
+  const queryCalls = [];
+  const fakeWindow = {
+    LOVE_WALL_SUPABASE: {
+      enabled: true,
+      url: "https://example.supabase.co",
+      anonKey: "anon-key-with-enough-length",
+      posterWallView: "poster_wall_cards",
+      posterWallDefaultCity: "Shanghai",
+      posterWallPageSize: 120,
+    },
+    supabase: {
+      createClient() {
+        return {
+          from(table) {
+            queryCalls.push(["from", table]);
+            return {
+              select(columns) {
+                queryCalls.push(["select", table, columns]);
+                return this;
+              },
+              order(column, options) {
+                queryCalls.push(["order", table, column, options]);
+                return this;
+              },
+              range(from, to) {
+                queryCalls.push(["range", table, from, to]);
+                if (table === "poster_wall_cards") {
+                  return Promise.resolve({
+                    data: null,
+                    error: { message: "Could not find the table 'public.poster_wall_cards' in the schema cache" },
+                  });
+                }
+                return Promise.resolve({
+                  data: [
+                    {
+                      id: "events-table-row",
+                      name: "Events Table Row",
+                      city: "Shanghai",
+                      sort_date: "2026-06-23",
+                      venue_name: "Abyss",
+                      poster_url: "https://cdn.example.com/events-table-row.jpg",
+                    },
+                  ],
+                  error: null,
+                });
+              },
+            };
+          },
+        };
+      },
+    },
+  };
+  const module = loadModule(fakeWindow);
+
+  const result = await module.loadPosterWallData({
+    win: module._testWindow,
+    fetcher: async () => {
+      throw new Error("static fallback should not be used");
+    },
+  });
+
+  assert.equal(result.source, "supabase-events-fallback");
+  assert.equal(result.events.length, 1);
+  assert.equal(result.events[0].title, "Events Table Row");
+  assert.equal(result.events[0].posterUrl, "https://cdn.example.com/events-table-row.jpg");
+  assert.deepEqual(queryCalls.filter(call => call[0] === "from").map(call => call[1]), [
+    "poster_wall_cards",
+    "events",
   ]);
 });
 
