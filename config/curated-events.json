@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-20",
+  "updatedAt": "2026-06-24",
   "timezone": "Asia/Shanghai",
   "collectionMethod": "Resident Advisor is treated as the highest-priority public nightlife source for Shanghai electronic event facts. RA HTTP/headless access can trigger anti-bot challenges, so canonical RA rows are based on visible/indexed RA city-listing and event-detail verification with source URLs preserved.",
   "events": [
@@ -76,11 +76,7 @@
           "status": "previous-edition-context",
           "lastChecked": "2026-06-14"
         }
-      ],
-      "recommendationReason": "Kept on watch because the sound and room fit points toward techno-first club listening at Hero Dome; wait for firmer practical details before treating it as a pick.",
-      "bestFor": "Best for a more social, house-forward, rooftop, or date-friendly electronic route.",
-      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
-      "sourceConfidence": "Watch-level confidence from Shanghai Municipal Commission of Commerce; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
+      ]
     },
     {
       "id": "shaun-soomro-dj-serang",
@@ -121,8 +117,8 @@
         }
       ],
       "ticketStatus": "RA shows venue TBA, blank cost, no exposed age rule, and no direct ticket state in the indexed text; it also shows the event was last updated 10 months ago. Keep as Watch until RA/LMD publishes current practical details.",
-      "recommendationReason": "Kept on watch because the lineup (Shaun Soomro, DJ Serang) points toward techno-first club listening; wait for firmer practical details before treating it as a pick.",
-      "bestFor": "Best as a watchlist lead for readers willing to verify final lineup, ticketing, and venue details.",
+      "recommendationReason": "Included for complete Resident Advisor Shanghai coverage; not promoted as a pick because venue, cost, ticket route, age rule, and current update state remain unresolved.",
+      "bestFor": "Readers tracking long-tail RA/LMD Shanghai listings and Shaun Soomro appearances, not readers planning a confirmed near-term night out.",
       "verifyBeforeGoing": "Reopen RA closer to September 12 and look for an updated venue, ticket route, age policy, promoter note, and any lineup or cancellation changes before planning around it.",
       "sourceConfidence": "RA confirms the title, September 12 date, 23:00-06:00 time, Shanghai/TBA venue label, LMD promoter, lineup, interested count, and last-updated state; it does not confirm venue address, price, age, or ticket route.",
       "sources": [
@@ -197,11 +193,7 @@
           "status": "watchlist",
           "lastChecked": "2026-06-14"
         }
-      ],
-      "recommendationReason": "Kept on watch because the sound and room fit points toward techno-first club listening at Gate M West Bund Dream Center; wait for firmer practical details before treating it as a pick.",
-      "bestFor": "Best for a more social, house-forward, rooftop, or date-friendly electronic route.",
-      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
-      "sourceConfidence": "Watch-level confidence from Shanghai Municipal Commission of Commerce; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
+      ]
     },
     {
       "id": "lucrecia-dalt-yuyintang",
@@ -407,11 +399,7 @@
         "localFiles": [
           "assets/posters/misa-shanghai-summer-music-festival-2026.jpg"
         ]
-      },
-      "recommendationReason": "Kept on watch because the sound and room fit points toward hard or peak-room club music at Shanghai Symphony Hall / citywide venues; wait for firmer practical details before treating it as a pick.",
-      "bestFor": "Best for hard-techno, industrial, acid, or late-room listeners.",
-      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
-      "sourceConfidence": "Watch-level confidence from Shanghai Municipal Administration of Culture and Tourism; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
+      }
     },
     {
       "id": "yuyintang-cooling-water",
@@ -581,11 +569,7 @@
           "status": "watchlist",
           "lastChecked": "2026-06-14"
         }
-      ],
-      "recommendationReason": "Kept on watch because the sound and room fit points toward techno-first club listening at Shanghai venue TBA; wait for firmer practical details before treating it as a pick.",
-      "bestFor": "Best for a more social, house-forward, rooftop, or date-friendly electronic route.",
-      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
-      "sourceConfidence": "Watch-level confidence from Shanghai major events guide; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
+      ]
     },
     {
       "id": "shanghai-mushroom-music-carnival-2026",
@@ -686,11 +670,7 @@
         "localFiles": [
           "assets/posters/shanghai-mushroom-music-carnival-2026.jpg"
         ]
-      },
-      "recommendationReason": "Kept on watch because the sound and room fit points toward listening-first experimental electronics at Qiantan Sports Park; wait for firmer practical details before treating it as a pick.",
-      "bestFor": "Best for a more social, house-forward, rooftop, or date-friendly electronic route.",
-      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
-      "sourceConfidence": "Watch-level confidence from Sina / official Weibo mirror; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
+      }
     },
     {
       "id": "abyss-cum-chemical-love",
@@ -1028,15 +1008,15 @@
         "date"
       ],
       "genre": "pool party, DJ music",
-      "confidence": "Watch",
-      "status": "watch",
-      "price": "198 early bird / 238 presale / 288 door, includes 1 drink",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "¥198 early bird / ¥238 presale / ¥288 door (includes 1 drink)",
       "age": "Not listed",
       "source": "https://www.smartshanghai.com/event/nova-events-presents-summer-splash-pool-party-2026-06-27",
       "sourceLabel": "SmartShanghai",
       "imageTheme": "cyan",
       "description": "Single-source low-techno-fit Watch lead for a daytime poolside Nova/Viva event at Radisson Blu Forest Manor Hongqiao. Check the ticket route, DJ/music brief, swim policy, and weather before treating it as useful club coverage.",
-      "sourceStatus": "watchlist",
+      "sourceStatus": "smartshanghai-detail",
       "address": "839 Jinfeng Lu, near Tianshan Xi Lu, Minhang District",
       "organizer": "Nova Events / Viva",
       "detailsUrl": "https://www.smartshanghai.com/event/nova-events-presents-summer-splash-pool-party-2026-06-27",
@@ -1049,33 +1029,32 @@
       ],
       "ticketStatus": "SmartShanghai lists tickets from 198 RMB and shows web, app, and WeChat buying routes.",
       "addedAt": "2026-06-08",
-      "lastChecked": "2026-06-14",
+      "lastChecked": "2026-06-24",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/nova-events-presents-summer-splash-pool-party-2026-06-27",
-          "status": "watchlist",
-          "lastChecked": "2026-06-14"
+          "status": "smartshanghai-detail",
+          "lastChecked": "2026-06-24"
         }
       ],
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/nova-summer-splash-pool-party.jpg",
-      "posterRemoteEvidence": {
-        "type": "event images",
+      "posterUrl": "assets/posters/nova-summer-splash.jpg",
+      "posterEvidence": {
+        "type": "flyer-front-only",
         "source": "SmartShanghai event page",
-        "url": "https://www.smartshanghai.com/event/nova-events-presents-summer-splash-pool-party-2026-06-27",
-        "status": "Event images and WeChat/App ticket QR references are visible on the detail page."
-      },
-      "recommendationReason": "Kept on watch because the lineup (DJ music TBA) points toward techno-first club listening at Radisson Blu Forest Manor Hongqiao; wait for firmer practical details before treating it as a pick.",
-      "bestFor": "Best for a more social, house-forward, rooftop, or date-friendly electronic route.",
-      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
-      "sourceConfidence": "Watch-level confidence from SmartShanghai; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
+        "url": "https://images.smartshanghai.com.cn/uploads/repository/2026/06/05/1efb19e6-f341-451f-a7bf-964282485639.jpg",
+        "status": "Poster downloaded locally from SmartShanghai.",
+        "localFiles": [
+          "assets/posters/nova-summer-splash.jpg"
+        ]
+      }
     },
     {
       "id": "2026-06-27-white-party-shanghai-s-all-white-roof",
       "month": "Jun",
       "sortDate": "2026-06-27",
       "date": "Jun 27",
-      "time": "00:00",
+      "time": "21:30-late",
       "title": "White Party | Shanghai's All-White Rooftop Party",
       "venue": "Skyline Dome | Sushi Rooftop & Lounge",
       "district": "Shanghai",
@@ -1083,25 +1062,24 @@
         "date"
       ],
       "genre": "house",
-      "confidence": "Watch",
-      "status": "watch",
-      "price": "Check source",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "TBA",
       "age": "Check venue",
       "ticketStatus": "Watchlist lead from SmartShanghai; verify ticket route, price tiers, availability, age policy, and venue details before planning.",
       "source": "https://www.smartshanghai.com/event/white-party-shanghai-s-all-white-rooftop-party-at-skyline-dome-at-skyline-dome-sushi-rooftop-lounge",
       "sourceLabel": "SmartShanghai",
       "imageTheme": "ember",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/2026-06-27-white-party-shanghai-s-all-white-roof.jpg",
       "description": "Skyline Dome hosts an all-white rooftop night above the Bund, offering an elegant late-night experience with music, cocktails, and panoramic skyline views. The evening features uplifting house sets from DJ Rain and DJ UACA, set against a backdrop of Shanghai’s Bund and Pudong skyline. You can dress in white for a stylish rooftop gathering designed for summer nights. Watchlist lead: verify lineup, ticketing, age policy, and venue details before planning.",
-      "sourceStatus": "watchlist",
+      "sourceStatus": "smartshanghai-detail",
       "addedAt": "2026-06-19",
-      "lastChecked": "2026-06-19",
+      "lastChecked": "2026-06-24",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/white-party-shanghai-s-all-white-rooftop-party-at-skyline-dome-at-skyline-dome-sushi-rooftop-lounge",
-          "status": "watchlist",
-          "lastChecked": "2026-06-19"
+          "status": "smartshanghai-detail",
+          "lastChecked": "2026-06-24"
         }
       ],
       "technoProfileSignals": [
@@ -1139,7 +1117,27 @@
       "recommendationReason": "Kept on Watch because the sound and room fit points toward social house, disco, or date-route electronic music at Skyline Dome | Sushi Rooftop & Lounge; wait for firmer practical details before treating it as a pick.",
       "bestFor": "Best for a more social, house-forward, rooftop, or date-friendly electronic route.",
       "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
-      "sourceConfidence": "Watch-level confidence from SmartShanghai; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence."
+      "sourceConfidence": "Watch-level confidence from SmartShanghai; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence.",
+      "lineup": [
+        {
+          "name": "DJ Rain",
+          "note": "Uplifting house"
+        },
+        {
+          "name": "DJ UACA",
+          "note": "Uplifting house"
+        }
+      ],
+      "posterUrl": "assets/posters/white-party-skyline.jpg",
+      "posterEvidence": {
+        "type": "flyer-front-only",
+        "source": "SmartShanghai event page",
+        "url": "https://images.smartshanghai.com.cn/uploads/repository/2026/06/24/7d2bfa3d-8a37-4e7c-ba3b-56db5827c677.jpg",
+        "status": "Poster downloaded locally from SmartShanghai.",
+        "localFiles": [
+          "assets/posters/white-party-skyline.jpg"
+        ]
+      }
     },
     {
       "id": "dark-room",
@@ -1231,7 +1229,7 @@
         ]
       },
       "ticketStatus": "RA says to scan the WeChat mini-program code to purchase tickets and lists minimum age 18+.",
-      "recommendationReason": "Recommended because the lineup (D_z, MegaWatts, NAKIN) gives the night a clear house, disco, or social dancefloor music draw at Dirty House.",
+      "recommendationReason": "Recommended because RA publishes the Dirty House date, techno running order, artist order, WeChat ticket route note, age rule, and flyer evidence.",
       "bestFor": "Best for readers looking for a straightforward Dirty House techno night with a published late-room sequence.",
       "verifyBeforeGoing": "Reopen RA and the WeChat mini-program route before going for live ticket state, final door price, and any running-order changes.",
       "sourceConfidence": "High-confidence public nightlife source: Resident Advisor carries the current event detail page, lineup, set times, ticket-route note, age rule, and flyer.",
@@ -1559,11 +1557,7 @@
           "verificationNote": "Poster confirms title, date, time, venue, address, full lineup, and three pricing tiers."
         }
       ],
-      "posterUrl": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg",
-      "recommendationReason": "Recommended because the lineup (Xingrui(VJ), Gips, Digital Jade) gives the night a clear techno-first club listening draw at C·PARK LG层.",
-      "bestFor": "Best for readers comparing electronic rooms by sound, lineup, and room fit.",
-      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
-      "sourceConfidence": "Single public source from User-provided poster; sufficient for archive visibility but still worth rechecking for live planning."
+      "posterUrl": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg"
     },
     {
       "id": "friendsstandout",
@@ -1616,7 +1610,7 @@
         }
       ],
       "ticketStatus": "RA confirms date, 21:00-03:00 timing, venue, promoter, lineup, and flyer. Wigwam weekly schedule confirms the same June 21 FRIENDSSTAND Out listing as 21:00-late and Free Entry. Age policy remains unchecked.",
-      "recommendationReason": "Included because the lineup (Tsing, 10000, YKK) gives techno-first club listening readers a concrete reason to consider it at Wigwam, even if it is not the hardest pick on the calendar.",
+      "recommendationReason": "Included because FRIENDSSTANDout has RA event-level confirmation and Wigwam schedule confirmation, with Tsing, DJ TRUCK, YKK, Taidi, and 10000 making it a practical free-entry local club route.",
       "bestFor": "Best for readers following Wigwam, MENSLIES, and local club-lineup context who want a free-entry Sunday night.",
       "verifyBeforeGoing": "Confirm age policy and same-day room status through RA or Wigwam before going; the latest Wigwam schedule lists free entry.",
       "sourceConfidence": "RA confirms date, time, venue, promoter, lineup, and flyer; Wigwam weekly and monthly screenshots confirm the local schedule slot and free-entry status. Age policy still needs venue confirmation.",
@@ -2003,18 +1997,7 @@
           "status": "watchlist",
           "lastChecked": "2026-06-14"
         }
-      ],
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/afrowave-takeover-la-burg.jpg",
-      "posterRemoteEvidence": {
-        "type": "event image",
-        "source": "SmartShanghai event page",
-        "url": "https://www.smartshanghai.com/event/a-full-afrowave-takeover-at-la-burg",
-        "status": "Event image is visible on the detail page."
-      },
-      "recommendationReason": "Kept on watch because the lineup (NJELIC) points toward bass, breaks, or club-pressure music at La Burg; wait for firmer practical details before treating it as a pick.",
-      "bestFor": "Best for bass, breaks, dubstep, jungle, UKG, and high-energy club-adjacent listeners.",
-      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
-      "sourceConfidence": "Watch-level confidence from SmartShanghai; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
+      ]
     },
     {
       "id": "atm-leo-monira",
@@ -2072,7 +2055,7 @@
         }
       ],
       "ticketStatus": "RA lists cost at 128 RMB and minimum age 18+.",
-      "recommendationReason": "Recommended because the lineup (LEO MONIRA, QUAN, EXTREME JOHN) gives the night a clear hard or peak-room club music draw at Reactor Shanghai.",
+      "recommendationReason": "Recommended as a high-pressure RA-backed option: hard/industrial techno language, late Reactor room, named lineup, and clear price.",
       "bestFor": "Hard-techno, industrial, and high-intensity late-room listeners.",
       "verifyBeforeGoing": "Confirm live ticket state, set order, and door policy through RA or Reactor before going.",
       "sourceConfidence": "High RA coverage: date, time, venue, lineup, genre, cost, age, artist framing, and flyer are visible on Resident Advisor. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
@@ -2133,7 +2116,7 @@
         }
       ],
       "ticketStatus": "RA does not expose price, age, or exact address details in the indexed text; verify with the venue before going.",
-      "recommendationReason": "Included because the lineup (SOLO (Enchanted Night listing), ALI RIBO) gives hard or peak-room club music readers a concrete reason to consider it at TBA - The Nest, even if it is not the hardest pick on the calendar.",
+      "recommendationReason": "Included only for complete RA coverage; low rave fit because the RA genre/description points to disco, pop, and 2000s nostalgia.",
       "bestFor": "Readers looking for a casual pop/disco party rather than underground electronic pressure.",
       "verifyBeforeGoing": "Confirm exact The Nest address, ticket price, age policy, and door state through RA or the organizer before going.",
       "sourceConfidence": "RA coverage: title, date, time, venue label, promoter, lineup, and genre are visible on Resident Advisor; price, age, and exact address need confirmation. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
@@ -2418,11 +2401,7 @@
           "verificationNote": "YuYuan mini-program confirms MALAA on Jun 20 at MAX Shanghai with 188 RMB starting price."
         }
       ],
-      "posterUrl": "assets/posters/malaa-max-shanghai-optimized.jpg",
-      "recommendationReason": "Recommended because the lineup (MALAA) gives the night a clear bass, breaks, or club-pressure music draw at MAX Shanghai.",
-      "bestFor": "Best for bass, breaks, dubstep, jungle, UKG, and high-energy club-adjacent listeners.",
-      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
-      "sourceConfidence": "Single public source from YuYuan WeChat mini-program; sufficient for archive visibility but still worth rechecking for live planning."
+      "posterUrl": "assets/posters/malaa-max-shanghai-optimized.jpg"
     },
     {
       "id": "neon-jungle-tom-kynd",
@@ -2474,7 +2453,7 @@
         }
       ],
       "ticketStatus": "RA lists cost at 128-168 RMB, minimum age 18+, and a ticket link.",
-      "recommendationReason": "Included because the lineup (Tom Kynd, Psyche, Mr Chang) gives bass, breaks, or club-pressure music readers a concrete reason to consider it at The Sukhothai Shanghai, even if it is not the hardest pick on the calendar.",
+      "recommendationReason": "Included for complete RA coverage; better for a hotel/date club route than for readers seeking basement pressure.",
       "bestFor": "Readers who want a polished hotel party with house/techno framing and clear ticket information.",
       "verifyBeforeGoing": "Confirm live ticket availability, drink/table inclusions, and door policy through RA before going.",
       "sourceConfidence": "RA coverage: date, time, venue, lineup, genres, cost, age, ticket link, and flyer are visible on Resident Advisor. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
@@ -2518,7 +2497,6 @@
       "source": "https://www.smartshanghai.com/event/sundown-char-bar-rooftop-opening-party-2026-06-20",
       "sourceLabel": "SmartShanghai",
       "imageTheme": "cyan",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/2026-06-20-nova-events-presents-sundown-char-bar.jpg",
       "description": "SUNDOWN marks the rooftop opening party at CHAR Bar, located on the 30th floor of Indigo Hotel Shanghai. Guests can enjoy panoramic skyline views, sunset scenery, and more than eight hours of music from Shanghai DJs while overlooking the city. Watchlist lead: verify lineup, ticketing, age policy, and venue details before planning.",
       "sourceStatus": "watchlist",
       "addedAt": "2026-06-19",
@@ -2604,8 +2582,8 @@
         }
       ],
       "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+.",
-      "recommendationReason": "Recommended because the lineup (Thomas Futoso, Sciahri, Luke Bye) gives the night a clear techno-first club listening draw at POTENT.",
-      "bestFor": "Best for readers comparing electronic rooms by sound, lineup, and room fit.",
+      "recommendationReason": "Recommended as a clear RA-backed techno entry in the current Shanghai batch, with late-room timing and a named POTENT lineup.",
+      "bestFor": "Techno-first readers comparing late-room options with clear source support.",
       "verifyBeforeGoing": "Confirm live ticket state and door policy through RA or POTENT before going.",
       "sourceConfidence": "High RA coverage: date, time, venue, lineup, genre, cost, age, and flyer are visible on Resident Advisor. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
       "sources": [
@@ -3247,11 +3225,7 @@
           "lastChecked": "2026-06-15"
         }
       ],
-      "posterUrl": "assets/posters/mrd.png",
-      "recommendationReason": "Recommended because the lineup (MRD, D_z, Tiya Manson) gives the night a clear hard or peak-room club music draw at Dirty House.",
-      "bestFor": "Best for hard-techno, industrial, acid, or late-room listeners.",
-      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
-      "sourceConfidence": "Source-backed with 2 attached public sources; key facts should still be checked close to the event date."
+      "posterUrl": "assets/posters/mrd.png"
     },
     {
       "id": "nikita-zabelin-potent",
@@ -3296,7 +3270,7 @@
         }
       ],
       "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+.",
-      "recommendationReason": "Included because the lineup (Tofu, Nikita Zabelin, HUAN HUAN) gives house, disco, or social dancefloor music readers a concrete reason to consider it at POTENT, even if it is not the hardest pick on the calendar.",
+      "recommendationReason": "Included for complete RA coverage; the artist context is stronger than the RA genre tag, so verify the actual room direction before treating it as a techno pick.",
       "bestFor": "Listeners tracking internationally connected underground bookings who are comfortable with a house-tagged POTENT night.",
       "verifyBeforeGoing": "Confirm set direction, ticket state, and door policy through RA or POTENT before going.",
       "sourceConfidence": "RA coverage: date, time, venue, lineup, genre, cost, age, and flyer are visible on Resident Advisor. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
@@ -3525,7 +3499,7 @@
         }
       ],
       "ticketStatus": "RA lists cost at 80-100 RMB, minimum age 18+, plus ticket and WeChat detail links.",
-      "recommendationReason": "Recommended because the lineup (Mungk, Simbie, D8) gives the night a clear bass, breaks, or club-pressure music draw at EXIT.",
+      "recommendationReason": "Recommended as the strongest bass/140 signal in the current RA Shanghai batch, with a clear EXIT room, lineup, price, and ticket route.",
       "bestFor": "Bass, dubstep, UKG, and 140 listeners who want a club-focused alternative to straight techno.",
       "verifyBeforeGoing": "Confirm live ticket availability and any WeChat detail updates through the RA ticket/detail links before going.",
       "sourceConfidence": "High RA coverage: date, time, venue, lineup, genres, cost, age, ticket/detail links, and flyer are visible on Resident Advisor. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
@@ -3600,11 +3574,7 @@
           "verificationNote": "YuYuan mini-program confirms Oscar L on Jun 19 at MiM CLUB with 158 RMB starting price."
         }
       ],
-      "posterUrl": "assets/posters/oscar-l-mim-club-optimized.jpg",
-      "recommendationReason": "Recommended because the lineup (Oscar L) gives the night a clear techno-first club listening draw at MiM CLUB.",
-      "bestFor": "Best for readers comparing electronic rooms by sound, lineup, and room fit.",
-      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
-      "sourceConfidence": "Single public source from YuYuan WeChat mini-program; sufficient for archive visibility but still worth rechecking for live planning."
+      "posterUrl": "assets/posters/oscar-l-mim-club-optimized.jpg"
     },
     {
       "id": "2026-06-19-vibes-up-party-reggae-dancehall-hip-h",
@@ -3864,18 +3834,7 @@
           "status": "secondary",
           "lastChecked": "2026-06-14"
         }
-      ],
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/alter-pavillon.jpg",
-      "posterRemoteEvidence": {
-        "type": "event images",
-        "source": "SmartShanghai event page",
-        "url": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
-        "status": "Event images are visible on the SmartShanghai detail page."
-      },
-      "recommendationReason": "Recommended because the lineup (Chingyi, Chuan, Xiaolaba) gives the night a clear listening-first experimental electronics draw at Beaufort Terrace.",
-      "bestFor": "Best for readers comparing electronic rooms by sound, lineup, and room fit.",
-      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
-      "sourceConfidence": "Single public source from SmartShanghai; sufficient for archive visibility but still worth rechecking for live planning."
+      ]
     },
     {
       "id": "cybionte-solo-ykk-heshang",
@@ -3932,7 +3891,7 @@
         }
       ],
       "ticketStatus": "RA lists cost at 100 RMB and minimum age 18+. POTENT's same-day Instagram public index says 2026-06-18 Thu, 22:30-late, with Room TENT and Room POTENT split; use the official account for final door time.",
-      "recommendationReason": "Included because the lineup (Solo, YKK, Heshang) gives house, disco, or social dancefloor music readers a concrete reason to consider it at POTENT, even if it is not the hardest pick on the calendar.",
+      "recommendationReason": "Included for complete RA coverage; a late POTENT house/club option with clear lineup but softer techno pressure.",
       "bestFor": "Late-room readers open to house and club selections at POTENT.",
       "verifyBeforeGoing": "Confirm live ticket state, final start time, room split, and door policy through RA or POTENT before going.",
       "sourceConfidence": "RA coverage confirms date, 23:59-06:00 listing, venue, core lineup, genre, cost, age, and flyer. POTENT's same-day Instagram public index suggests a broader two-room plan and earlier 22:30-late start, so preserve the conflict until the official poster is visually rechecked.",
@@ -4015,18 +3974,7 @@
           "lastChecked": "2026-06-18",
           "verificationNote": "SmartShanghai lists the Thursday series through Jun 25 with 21:30-01:30 hours, The Dome address, DJ Rain and DJ Stefano, and no SmartShanghai ticket inventory."
         }
-      ],
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/girls-night-out-dome.png",
-      "posterRemoteEvidence": {
-        "type": "event image",
-        "source": "SmartShanghai event page",
-        "url": "https://www.smartshanghai.com/event/girls-night-out-skyline-dome-at-the-dome",
-        "status": "Event image is visible on the detail page."
-      },
-      "recommendationReason": "Kept on watch because the lineup (DJ Rain, DJ Stefano) points toward house, disco, or social dancefloor music at The Dome; wait for firmer practical details before treating it as a pick.",
-      "bestFor": "Best for a more social, house-forward, rooftop, or date-friendly electronic route.",
-      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
-      "sourceConfidence": "Watch-level confidence from SmartShanghai; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
+      ]
     },
     {
       "id": "illum-gravity-stateofff",
@@ -4344,26 +4292,6 @@
       "detailsUrl": "https://ra.co/events/2468150",
       "ticketUrl": "https://ra.co/events/2468150",
       "lastChecked": "2026-06-18",
-      "posterUrl": "assets/posters/minuit-mirror-concept-2026-06-18.jpg",
-      "posterEvidence": {
-        "type": "user-provided-official-poster",
-        "source": "User-provided MIRROR poster",
-        "url": "assets/posters/minuit-mirror-concept-2026-06-18.jpg",
-        "asset": "assets/posters/minuit-mirror-concept-2026-06-18.jpg",
-        "lastChecked": "2026-06-18",
-        "visibleFacts": [
-          "MIRROR by minuit",
-          "Feat. SLVN, Olivier K, Olivier G and Chabuduo",
-          "Live camera concept + VJing",
-          "June 18th",
-          "EXIT",
-          "Xingfu Rd 298, Shanghai"
-        ],
-        "note": "User-provided poster image confirms MIRROR title, Minuit branding, lineup, live camera/VJing concept, Jun 18 date, EXIT, and Xingfu Road 298.",
-        "localFiles": [
-          "assets/posters/minuit-mirror-concept-2026-06-18.jpg"
-        ]
-      },
       "ticketStatus": "RA live event detail lists 2026-06-18, 22:00-05:00, EXIT at 298 Xingfu Road, house/techno tags, Illsee event admin, and 100 RMB cost. User-provided MIRROR poster confirms title, Minuit branding, lineup, live camera/VJing concept, Jun 18 date, EXIT, and Xingfu Road 298. Age policy and live ticket state are still not visible.",
       "lineup": [
         {
@@ -4481,18 +4409,7 @@
           "lastChecked": "2026-06-14",
           "verificationNote": "2026-06-14 247tickets page check confirmed Fotografiska Shanghai, 127 Guangfu Road, Jun 18 2026, Thu 9:00 PM, 120 RMB regular e-ticket including one drink, and no cancellation notice."
         }
-      ],
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/night-at-museum-90s-disco.jpg",
-      "posterRemoteEvidence": {
-        "type": "event images",
-        "source": "SmartShanghai event page",
-        "url": "https://www.smartshanghai.com/event/night-at-the-museum-back-to-the-90s-disco-night-2026-06-18",
-        "status": "Event images and WeChat/App ticket QR references are visible on the detail page."
-      },
-      "recommendationReason": "Kept on watch because the lineup (Multi-floor DJs TBA) points toward house, disco, or social dancefloor music at Fotografiska; wait for firmer practical details before treating it as a pick.",
-      "bestFor": "Best for a more social, house-forward, rooftop, or date-friendly electronic route.",
-      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
-      "sourceConfidence": "Watch-level confidence from SmartShanghai; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
+      ]
     },
     {
       "id": "photocult-mask-desire-auction",
@@ -4620,8 +4537,8 @@
         ]
       },
       "ticketStatus": "RA lists cost at 168 RMB and minimum age 18+. A June 18 public Instagram index from PHOTOCULT/REACTOR reposts the same Mask. Desire. Auction title, date, 22:00-04:00 window, dress-code cue, and DOME/POCKET room lineup.",
-      "recommendationReason": "Recommended because the lineup (Josie, PASHRAWBOI, howtodo) gives the night a clear techno-first club listening draw at Reactor Shanghai.",
-      "bestFor": "Best for readers comparing electronic rooms by sound, lineup, and room fit.",
+      "recommendationReason": "Recommended because RA publishes the date, venue, two-room lineup, exact running order, cost, age rule, and flyer evidence for a Reactor/PHOTOCULT techno program.",
+      "bestFor": "Best for readers who want a source-backed local techno room with published set times rather than a loose listing lead.",
       "verifyBeforeGoing": "Reopen the RA event page or PHOTOCULT/REACTOR Instagram before going for same-day ticket state, any room changes, and door policy.",
       "sourceConfidence": "High-confidence public nightlife source: Resident Advisor carries the event detail page, lineup, room split, set times, cost, age rule, and flyer. Same-day PHOTOCULT/REACTOR Instagram indexing supports the event still being active.",
       "sources": [
@@ -4698,7 +4615,7 @@
         }
       ],
       "ticketStatus": "RA lists cost at 150 RMB; no minimum age is exposed in the indexed text.",
-      "recommendationReason": "Included because the lineup (Kaleidojazzlegs, Yiyoo, Tevez) gives house, disco, or social dancefloor music readers a concrete reason to consider it at EXIT, even if it is not the hardest pick on the calendar.",
+      "recommendationReason": "Included for complete RA coverage and EXIT context; this is dance-culture programming, not a hard-techno pick.",
       "bestFor": "Readers following local dance battles, club-adjacent culture, and EXIT programming outside strict rave lanes.",
       "verifyBeforeGoing": "Confirm ticket availability, final running order, and door policy through RA before going.",
       "sourceConfidence": "RA coverage: event facts, lineup roles, cost, and flyer are visible through Resident Advisor indexed event text; direct HTTP fetch returned 403 on 2026-06-16, so use indexed RA text / browser-style verification rather than scripted fetch. Door policy still needs same-day verification. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
@@ -4907,7 +4824,7 @@
           "verificationNote": "SmartShanghai venue context supports Wigwam / C.PARK location and broad deeper-house, techno, dub, ambient, reggae, and live-electronic lane. Venue context only."
         }
       ],
-      "recommendationReason": "Included because the lineup (Golgol) gives listening-first experimental electronics readers a concrete reason to consider it at Wigwam, even if it is not the hardest pick on the calendar.",
+      "recommendationReason": "Included because Golgol gives Wigwam a source-backed listening-room route: textured electronic phrasing and low-frequency detail, useful for readers who want a calm but still club-aware midweek session.",
       "bestFor": "Best for readers who want a free-entry listening night rather than a peak-time rave.",
       "verifyBeforeGoing": "Check Wigwam before going for age policy, room/capacity status, and any late schedule change; no public ticket URL is attached because the event is listed as free entry.",
       "sourceConfidence": "User-provided Wigwam poster and weekly schedule screenshots confirm the event-level date, time, venue/address, free-entry status, and named DJ. Age policy and live room capacity remain unchecked.",
@@ -5031,7 +4948,7 @@
         }
       ],
       "ticketStatus": "RA does not expose a price or age rule in the indexed event text; verify with ZUP before planning around entry details.",
-      "recommendationReason": "Included because the lineup (RB//SH, Yogijazz, Bolobolo) gives hard or peak-room club music readers a concrete reason to consider it at ZUP Pizza Bar, even if it is not the hardest pick on the calendar.",
+      "recommendationReason": "Included for complete Resident Advisor Shanghai coverage; useful for a daylight house/disco hang, not a basement-rave recommendation.",
       "bestFor": "Readers looking for a low-pressure Sunday house/disco social rather than a late-room techno night.",
       "verifyBeforeGoing": "Recheck RA or ZUP for same-day timing, table/door policy, and whether the afternoon session is still running.",
       "sourceConfidence": "RA coverage: event title, date, time, venue, lineup, genres, and flyer are visible on Resident Advisor; price and age are not exposed in the indexed text. Local flyer assets are stored under assets/posters and recorded in posterEvidence.localFiles for audit and display.",
@@ -5103,18 +5020,7 @@
           "status": "watchlist",
           "lastChecked": "2026-06-14"
         }
-      ],
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/sunset-sundays-dome.jpg",
-      "posterRemoteEvidence": {
-        "type": "event image",
-        "source": "SmartShanghai event page",
-        "url": "https://www.smartshanghai.com/event/sunset-sundays-skyline-dome-at-the-dome",
-        "status": "Event image is visible on the detail page."
-      },
-      "recommendationReason": "Kept on watch because the lineup (DJ Rain) points toward house, disco, or social dancefloor music at The Dome; wait for firmer practical details before treating it as a pick.",
-      "bestFor": "Best for a more social, house-forward, rooftop, or date-friendly electronic route.",
-      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
-      "sourceConfidence": "Watch-level confidence from SmartShanghai; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
+      ]
     },
     {
       "id": "the-woods",
@@ -5174,11 +5080,7 @@
           "lastChecked": "2026-06-14"
         }
       ],
-      "posterUrl": "assets/posters/the-woods.jpg",
-      "recommendationReason": "Recommended because the lineup (Heatwolves) gives the night a clear hard or peak-room club music draw at Specters.",
-      "bestFor": "Best for hard-techno, industrial, acid, or late-room listeners.",
-      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
-      "sourceConfidence": "Source-backed with 2 attached public sources; key facts should still be checked close to the event date."
+      "posterUrl": "assets/posters/the-woods.jpg"
     },
     {
       "id": "potent-matisa",
@@ -5233,7 +5135,7 @@
         "trusted source",
         "techno"
       ],
-      "recommendationReason": "Recommended because the lineup (Matisa, Limsum, Max Shen) gives the night a clear house, disco, or social dancefloor music draw at POTENT.",
+      "recommendationReason": "Archived for complete RA Shanghai POTENT coverage. Verified on Resident Advisor.",
       "bestFor": "Readers tracking POTENT programming and Shanghai techno history.",
       "verifyBeforeGoing": "Past event; use the RA page for archive facts, not live ticket planning.",
       "sourceConfidence": "High RA archive coverage: title, date, lineup, venue, and event page verified on Resident Advisor.",
@@ -5245,7 +5147,7 @@
           "lastChecked": "2026-06-20"
         }
       ],
-      "time": "Check source"
+      "time": "TBA"
     },
     {
       "id": "nova-sunset-sessions-flair",
@@ -5289,18 +5191,7 @@
           "status": "secondary",
           "lastChecked": "2026-06-11"
         }
-      ],
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/nova-sunset-sessions-flair.jpg",
-      "posterRemoteEvidence": {
-        "type": "event images",
-        "source": "SmartShanghai event page",
-        "url": "https://www.smartshanghai.com/event/nova-events-presents-sunset-sessions-flair-rooftop-party-2026-06-13-2",
-        "status": "Event images and WeChat/App ticket QR references are visible on the detail page."
-      },
-      "recommendationReason": "Included because the lineup (9 DJs TBA) gives house, disco, or social dancefloor music readers a concrete reason to consider it at Flair Rooftop Restaurant & Bar, even if it is not the hardest pick on the calendar.",
-      "bestFor": "Best for a more social, house-forward, rooftop, or date-friendly electronic route.",
-      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
-      "sourceConfidence": "Single public source from SmartShanghai; sufficient for archive visibility but still worth rechecking for live planning."
+      ]
     },
     {
       "id": "fruitygroove-soul-navigator",
@@ -5425,11 +5316,7 @@
           "lastChecked": "2026-06-11"
         }
       ],
-      "posterUrl": "assets/posters/fruitygroove-soul-navigator.png",
-      "recommendationReason": "Recommended because the lineup (KaleidoJazzlegs, Dada (ES), Soul Navigator) gives the night a clear bass, breaks, or club-pressure music draw at Reactor Shanghai.",
-      "bestFor": "Best for bass, breaks, dubstep, jungle, UKG, and high-energy club-adjacent listeners.",
-      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
-      "sourceConfidence": "Single public source from Resident Advisor; sufficient for archive visibility but still worth rechecking for live planning."
+      "posterUrl": "assets/posters/fruitygroove-soul-navigator.png"
     },
     {
       "id": "cltx-abyss",
@@ -5501,11 +5388,7 @@
           "lastChecked": "2026-06-14"
         }
       ],
-      "posterUrl": "assets/posters/cltx-abyss.jpg",
-      "recommendationReason": "Recommended because the lineup (CLTX, PRYMARA, WATARU) gives the night a clear hard or peak-room club music draw at Abyss Shanghai.",
-      "bestFor": "Best for hard-techno, industrial, acid, or late-room listeners.",
-      "verifyBeforeGoing": "Recheck the source link before going for ticket availability, final set times, address, age rules, and door policy.",
-      "sourceConfidence": "Source-backed with 2 attached public sources; key facts should still be checked close to the event date."
+      "posterUrl": "assets/posters/cltx-abyss.jpg"
     },
     {
       "id": "potent-milo-cosmjn",
@@ -5560,7 +5443,7 @@
         "trusted source",
         "techno"
       ],
-      "recommendationReason": "Recommended because the lineup (Milo Raad, Cosmjn, GaoQiao) gives the night a clear techno-first club listening draw at POTENT.",
+      "recommendationReason": "Archived for complete RA Shanghai POTENT coverage. Verified on Resident Advisor.",
       "bestFor": "Readers tracking POTENT programming and Shanghai techno history.",
       "verifyBeforeGoing": "Past event; use the RA page for archive facts, not live ticket planning.",
       "sourceConfidence": "High RA archive coverage: title, date, lineup, venue, and event page verified on Resident Advisor.",
@@ -5572,7 +5455,7 @@
           "lastChecked": "2026-06-20"
         }
       ],
-      "time": "Check source"
+      "time": "TBA"
     },
     {
       "id": "prgrm-021",
@@ -5621,8 +5504,8 @@
         }
       ],
       "ticketStatus": "RA lists cost at 108 RMB. Minimum age was not exposed in the indexed RA text.",
-      "recommendationReason": "Recommended because the lineup (Rabeat, KOD!GO, iquid Mechanics) gives the night a clear hard or peak-room club music draw at EXIT.",
-      "bestFor": "Best for hard-techno, industrial, acid, or late-room listeners.",
+      "recommendationReason": "Archived for complete RA Shanghai coverage; useful as a source-backed EXIT/techno reference rather than a current recommendation.",
+      "bestFor": "Readers checking recent EXIT techno programming and PRGRM source history.",
       "verifyBeforeGoing": "Past event; use the RA page only for archive/source reference, not live ticket planning.",
       "sourceConfidence": "High RA archive coverage: date, time, venue, address, lineup, genre, cost, event admin, and flyer visibility are visible on Resident Advisor; age was not exposed in indexed text.",
       "sources": [
@@ -5738,7 +5621,7 @@
         }
       ],
       "ticketStatus": "RA does not expose a price or age rule in the indexed event text; use as archive coverage only.",
-      "recommendationReason": "Included because the lineup (Dante, Nanotech, Koldo) gives hard or peak-room club music readers a concrete reason to consider it at ZUP Pizza Bar, even if it is not the hardest pick on the calendar.",
+      "recommendationReason": "Included for complete RA Shanghai coverage; useful for a daylight house/disco social, not a basement-rave recommendation.",
       "bestFor": "Readers reviewing ZUP house/disco programming and Sunday social routes.",
       "verifyBeforeGoing": "Past event; use RA for archive facts and do not infer current ZUP policy.",
       "sourceConfidence": "RA confirms title, date, time, venue, lineup, set windows, genres, venue contact/social text, and flyer visibility; price and age are not visible in the indexed text.",
@@ -5806,7 +5689,7 @@
         }
       ],
       "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+.",
-      "recommendationReason": "Recommended because the lineup (QiuQiu, Acierate, The Brvtalist) gives the night a clear hard or peak-room club music draw at POTENT.",
+      "recommendationReason": "Archived as a strong RA-backed techno booking at POTENT.",
       "bestFor": "Readers researching recent POTENT techno bookings and harder European techno names.",
       "verifyBeforeGoing": "Past event; use RA for archive facts, not live ticket state.",
       "sourceConfidence": "RA confirms title, date, time, venue, promoter, lineup, genre, price, age, and flyer visibility.",
@@ -5881,7 +5764,7 @@
         }
       ],
       "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+.",
-      "recommendationReason": "Included because the lineup (Taidi, YKK, DJ Wife) gives listening-first experimental electronics readers a concrete reason to consider it at TBA - Room M101, even if it is not the hardest pick on the calendar.",
+      "recommendationReason": "Included for complete RA coverage and local M101/Butterfree tracking; moderate fit for club-oriented readers.",
       "bestFor": "Readers following local club and underground Shanghai lineups.",
       "verifyBeforeGoing": "Past event; use RA for archive facts and do not infer current venue policy.",
       "sourceConfidence": "RA confirms title, date, time, venue label/address, lineup, genre, price, age, event admin, last-updated state, and flyer visibility.",
@@ -5961,11 +5844,7 @@
           "status": "watchlist",
           "lastChecked": "2026-06-14"
         }
-      ],
-      "recommendationReason": "Kept on watch because the sound and room fit points toward listening-first experimental electronics at Commercial areas, waterfronts, parks, museums, and neighborhoods; wait for firmer practical details before treating it as a pick.",
-      "bestFor": "Best for a more social, house-forward, rooftop, or date-friendly electronic route.",
-      "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
-      "sourceConfidence": "Watch-level confidence from Shanghai Municipal Commission of Commerce; keep visible but verify with direct venue, promoter, ticketing, or artist evidence."
+      ]
     },
     {
       "id": "19hz-fractale",
@@ -6048,7 +5927,7 @@
         "trusted source",
         "archive"
       ],
-      "recommendationReason": "Recommended because the lineup (Siesta, Kalapas, Fractale) gives the night a clear bass, breaks, or club-pressure music draw at TBA - DEFUN.",
+      "recommendationReason": "Archived for complete RA Shanghai coverage; useful for the bass and breaks branch of the local underground map rather than a straight techno pick.",
       "bestFor": "Readers tracking DnB, dubstep, breaks, and 19Hz / DEFUN activity in Shanghai.",
       "verifyBeforeGoing": "Past event; use the RA page for archive facts, not live ticket planning.",
       "sourceConfidence": "High RA archive coverage: title, date, time, venue label, address text, promoter, lineup, genres, cost, age, promotional account, and flyer visibility are visible on Resident Advisor.",
@@ -6164,7 +6043,7 @@
         "trusted source",
         "archive"
       ],
-      "recommendationReason": "Recommended because the lineup (D_z, NAKIN, Tiya Manson) gives the night a clear house, disco, or social dancefloor music draw at Dirty House.",
+      "recommendationReason": "Archived for complete RA Shanghai coverage; useful for Dirty House techno programming history and source-backed lineup/set-time reference.",
       "bestFor": "Readers tracking Dirty House, PLAYGROUND, NAKIN, D_z, and recent local techno room programming.",
       "verifyBeforeGoing": "Past event; use the RA page for archive facts, not live ticket planning.",
       "sourceConfidence": "High RA archive coverage: title, date, time, venue, address, promoter, lineup, set times, genre, age, ticket instruction, and flyer visibility are visible on Resident Advisor; price was not exposed in indexed text.",
@@ -6221,7 +6100,7 @@
         }
       ],
       "ticketStatus": "RA confirms the date, venue, and lineup, but the indexed text does not expose price or age policy.",
-      "recommendationReason": "Included because the lineup (Dean Chew, OoLONG, Paradice Sinema) gives hard or peak-room club music readers a concrete reason to consider it at Wigwam, even if it is not the hardest pick on the calendar.",
+      "recommendationReason": "Included for complete RA Shanghai coverage and Wigwam club-culture context.",
       "bestFor": "Readers tracking bass, club, and label-anniversary context around Wigwam.",
       "verifyBeforeGoing": "Past event; use RA for archive facts and do not infer current ticket policy.",
       "sourceConfidence": "RA confirms title, date, time, venue, lineup, event admin, last-updated state, and flyer visibility; price and age are not visible in the indexed text.",
@@ -6320,7 +6199,7 @@
         }
       ],
       "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+.",
-      "recommendationReason": "Recommended because the lineup (MssingNo, Kilo Vee, Zean) gives the night a clear bass, breaks, or club-pressure music draw at Reactor Shanghai.",
+      "recommendationReason": "Archived as a high-signal RA-backed bass/grime event rather than a straight techno pick.",
       "bestFor": "Readers tracking bass, grime, and Reactor Shanghai club rooms.",
       "verifyBeforeGoing": "Past event; use the RA page for archive facts, not live ticket state.",
       "sourceConfidence": "RA confirms title, date, time, venue, promoters, lineup, genres, price, age, and flyer visibility.",
@@ -6399,7 +6278,7 @@
         }
       ],
       "ticketStatus": "RA lists cost at 118 RMB; minimum age is not visible in the indexed text.",
-      "recommendationReason": "Included because the lineup (chuan, DJ Doggy, WATARU) gives hard or peak-room club music readers a concrete reason to consider it at EXIT, even if it is not the hardest pick on the calendar.",
+      "recommendationReason": "Included for complete RA Shanghai coverage and EXIT house/club context.",
       "bestFor": "Readers comparing lighter house and club entries around EXIT.",
       "verifyBeforeGoing": "Past event; use RA for archive facts and do not infer current door policy.",
       "sourceConfidence": "RA confirms title, date, time, venue, lineup, genre, cost, event admin, and flyer visibility; age is not visible in the indexed text.",
@@ -6466,7 +6345,7 @@
         }
       ],
       "ticketStatus": "RA lists cost at 100 RMB and minimum age 18+.",
-      "recommendationReason": "Recommended because the lineup (Stefano Dvt, JANEIN, Peyotl) gives the night a clear hard or peak-room club music draw at POTENT.",
+      "recommendationReason": "Archived as a complete RA Shanghai row; useful for readers tracking POTENT and trance-adjacent late-room bookings.",
       "bestFor": "Readers researching recent POTENT techno/trance bookings rather than planning a current night out.",
       "verifyBeforeGoing": "Past event; use the RA page for archive facts, not live ticket state.",
       "sourceConfidence": "RA confirms title, date, time, venue, promoter, lineup, genre, price, age, and flyer visibility.",
@@ -6541,7 +6420,7 @@
         }
       ],
       "ticketStatus": "RA lists cost at 130 RMB and minimum age 18+.",
-      "recommendationReason": "Recommended because the lineup (Tham, Saturn, RO) gives the night a clear hard or peak-room club music draw at Abyss Shanghai.",
+      "recommendationReason": "Archived as a strong RA-backed hard-techno booking at Abyss.",
       "bestFor": "Readers researching recent fast techno and Abyss hard-room bookings.",
       "verifyBeforeGoing": "Past event; use the RA page for archive facts, not live ticket state.",
       "sourceConfidence": "RA confirms title, date, time, venue, lineup, genre, price, age, and flyer visibility.",
@@ -6616,7 +6495,7 @@
         "trusted source",
         "techno"
       ],
-      "recommendationReason": "Recommended because the lineup (Norman Nodge, Jeff Chong, GaoQiao) gives the night a clear techno-first club listening draw at POTENT.",
+      "recommendationReason": "Archived for complete RA Shanghai POTENT coverage. Verified on Resident Advisor.",
       "bestFor": "Readers tracking POTENT programming and Shanghai techno history.",
       "verifyBeforeGoing": "Past event; use the RA page for archive facts, not live ticket planning.",
       "sourceConfidence": "High RA archive coverage: title, date, lineup, venue, and event page verified on Resident Advisor.",
@@ -6628,7 +6507,7 @@
           "lastChecked": "2026-06-20"
         }
       ],
-      "time": "Check source"
+      "time": "TBA"
     },
     {
       "id": "potent-eric-cloutier",
@@ -6679,7 +6558,7 @@
         "trusted source",
         "techno"
       ],
-      "recommendationReason": "Recommended because the lineup (Eric Cloutier, NAXIN) gives the night a clear techno-first club listening draw at POTENT.",
+      "recommendationReason": "Archived for complete RA Shanghai POTENT coverage. Verified on Resident Advisor.",
       "bestFor": "Readers tracking POTENT programming and Shanghai techno history.",
       "verifyBeforeGoing": "Past event; use the RA page for archive facts, not live ticket planning.",
       "sourceConfidence": "High RA archive coverage: title, date, lineup, venue, and event page verified on Resident Advisor.",
@@ -6691,7 +6570,7 @@
           "lastChecked": "2026-06-20"
         }
       ],
-      "time": "Check source"
+      "time": "TBA"
     },
     {
       "id": "potent-irakli",
@@ -6741,7 +6620,7 @@
         "trusted source",
         "techno"
       ],
-      "recommendationReason": "Recommended because the lineup (Irakli, 10000 (CN)) gives the night a clear techno-first club listening draw at POTENT.",
+      "recommendationReason": "Archived for complete RA Shanghai POTENT coverage. Verified on Resident Advisor.",
       "bestFor": "Readers tracking POTENT programming and Shanghai techno history.",
       "verifyBeforeGoing": "Past event; use the RA page for archive facts, not live ticket planning.",
       "sourceConfidence": "High RA archive coverage: title, date, lineup, venue, and event page verified on Resident Advisor.",
@@ -6753,7 +6632,7 @@
           "lastChecked": "2026-06-20"
         }
       ],
-      "time": "Check source"
+      "time": "TBA"
     },
     {
       "id": "potent-30drop",
@@ -6803,7 +6682,7 @@
         "trusted source",
         "techno"
       ],
-      "recommendationReason": "Recommended because the lineup (30drop, Stefano Dvt) gives the night a clear techno-first club listening draw at POTENT.",
+      "recommendationReason": "Archived for complete RA Shanghai POTENT coverage. Verified on Resident Advisor.",
       "bestFor": "Readers tracking POTENT programming and Shanghai techno history.",
       "verifyBeforeGoing": "Past event; use the RA page for archive facts, not live ticket planning.",
       "sourceConfidence": "High RA archive coverage: title, date, lineup, venue, and event page verified on Resident Advisor.",
@@ -6815,7 +6694,7 @@
           "lastChecked": "2026-06-20"
         }
       ],
-      "time": "Check source"
+      "time": "TBA"
     },
     {
       "id": "potent-hadone",
@@ -6866,7 +6745,7 @@
         "trusted source",
         "techno"
       ],
-      "recommendationReason": "Recommended because the lineup (Hadone, DJ EBP) gives the night a clear hard or peak-room club music draw at POTENT.",
+      "recommendationReason": "Archived for complete RA Shanghai POTENT coverage. Verified on Resident Advisor.",
       "bestFor": "Readers tracking POTENT programming and Shanghai techno history.",
       "verifyBeforeGoing": "Past event; use the RA page for archive facts, not live ticket planning.",
       "sourceConfidence": "High RA archive coverage: title, date, lineup, venue, and event page verified on Resident Advisor.",
@@ -6878,7 +6757,7 @@
           "lastChecked": "2026-06-20"
         }
       ],
-      "time": "Check source"
+      "time": "TBA"
     },
     {
       "id": "potent-hwa",
@@ -6928,7 +6807,7 @@
         "trusted source",
         "techno"
       ],
-      "recommendationReason": "Recommended because the lineup (HWA, Peyötl) gives the night a clear listening-first experimental electronics draw at POTENT.",
+      "recommendationReason": "Archived for complete RA Shanghai POTENT coverage. Verified on Resident Advisor.",
       "bestFor": "Readers tracking POTENT programming and Shanghai techno history.",
       "verifyBeforeGoing": "Past event; use the RA page for archive facts, not live ticket planning.",
       "sourceConfidence": "High RA archive coverage: title, date, lineup, venue, and event page verified on Resident Advisor.",
@@ -6940,7 +6819,7 @@
           "lastChecked": "2026-06-20"
         }
       ],
-      "time": "Check source"
+      "time": "TBA"
     },
     {
       "id": "potent-linear-system",
@@ -6986,7 +6865,7 @@
         "trusted source",
         "techno"
       ],
-      "recommendationReason": "Recommended because the lineup (Linear System (CR)) gives the night a clear techno-first club listening draw at POTENT.",
+      "recommendationReason": "Archived for complete RA Shanghai POTENT coverage. Verified on Resident Advisor.",
       "bestFor": "Readers tracking POTENT programming and Shanghai techno history.",
       "verifyBeforeGoing": "Past event; use the RA page for archive facts, not live ticket planning.",
       "sourceConfidence": "High RA archive coverage: title, date, lineup, venue, and event page verified on Resident Advisor.",
@@ -6998,7 +6877,7 @@
           "lastChecked": "2026-06-20"
         }
       ],
-      "time": "Check source"
+      "time": "TBA"
     },
     {
       "id": "potent-drum-inferno",
@@ -7048,7 +6927,7 @@
         "trusted source",
         "techno"
       ],
-      "recommendationReason": "Recommended because the lineup (Shenghao, Luke Bye) gives the night a clear techno-first club listening draw at POTENT.",
+      "recommendationReason": "Archived for complete RA Shanghai POTENT coverage. Verified on Resident Advisor.",
       "bestFor": "Readers tracking POTENT programming and Shanghai techno history.",
       "verifyBeforeGoing": "Past event; use the RA page for archive facts, not live ticket planning.",
       "sourceConfidence": "High RA archive coverage: title, date, lineup, venue, and event page verified on Resident Advisor.",
@@ -7060,7 +6939,7 @@
           "lastChecked": "2026-06-20"
         }
       ],
-      "time": "Check source"
+      "time": "TBA"
     },
     {
       "id": "potent-club-night-may4",
@@ -7114,7 +6993,7 @@
         "trusted source",
         "techno"
       ],
-      "recommendationReason": "Recommended because the lineup (Solo (UA), GaoQiao, HUAN HUAN) gives the night a clear house, disco, or social dancefloor music draw at POTENT.",
+      "recommendationReason": "Archived for complete RA Shanghai POTENT coverage. Verified on Resident Advisor.",
       "bestFor": "Readers tracking POTENT programming and Shanghai techno history.",
       "verifyBeforeGoing": "Past event; use the RA page for archive facts, not live ticket planning.",
       "sourceConfidence": "High RA archive coverage: title, date, lineup, venue, and event page verified on Resident Advisor.",
@@ -7126,7 +7005,7 @@
           "lastChecked": "2026-06-20"
         }
       ],
-      "time": "Check source"
+      "time": "TBA"
     },
     {
       "id": "potent-farhan",
@@ -7172,7 +7051,7 @@
         "trusted source",
         "techno"
       ],
-      "recommendationReason": "Recommended because the lineup (Farhan) gives the night a clear techno-first club listening draw at POTENT.",
+      "recommendationReason": "Archived for complete RA Shanghai POTENT coverage. Verified on Resident Advisor.",
       "bestFor": "Readers tracking POTENT programming and Shanghai techno history.",
       "verifyBeforeGoing": "Past event; use the RA page for archive facts, not live ticket planning.",
       "sourceConfidence": "High RA archive coverage: title, date, lineup, venue, and event page verified on Resident Advisor.",
@@ -7184,7 +7063,7 @@
           "lastChecked": "2026-06-20"
         }
       ],
-      "time": "Check source"
+      "time": "TBA"
     },
     {
       "id": "potent-leeon",
@@ -7235,7 +7114,7 @@
         "trusted source",
         "techno"
       ],
-      "recommendationReason": "Recommended because the lineup (Leeon, YKK (CN)) gives the night a clear techno-first club listening draw at POTENT.",
+      "recommendationReason": "Archived for complete RA Shanghai POTENT coverage. Verified on Resident Advisor.",
       "bestFor": "Readers tracking POTENT programming and Shanghai techno history.",
       "verifyBeforeGoing": "Past event; use the RA page for archive facts, not live ticket planning.",
       "sourceConfidence": "High RA archive coverage: title, date, lineup, venue, and event page verified on Resident Advisor.",
@@ -7247,7 +7126,7 @@
           "lastChecked": "2026-06-20"
         }
       ],
-      "time": "Check source"
+      "time": "TBA"
     },
     {
       "id": "potent-mac-declos",
@@ -7298,7 +7177,7 @@
         "trusted source",
         "techno"
       ],
-      "recommendationReason": "Recommended because the lineup (Mac Declos, Max Shen) gives the night a clear hard or peak-room club music draw at POTENT.",
+      "recommendationReason": "Archived for complete RA Shanghai POTENT coverage. Verified on Resident Advisor.",
       "bestFor": "Readers tracking POTENT programming and Shanghai techno history.",
       "verifyBeforeGoing": "Past event; use the RA page for archive facts, not live ticket planning.",
       "sourceConfidence": "High RA archive coverage: title, date, lineup, venue, and event page verified on Resident Advisor.",
@@ -7310,7 +7189,7 @@
           "lastChecked": "2026-06-20"
         }
       ],
-      "time": "Check source"
+      "time": "TBA"
     },
     {
       "id": "potent-mystical",
@@ -7365,7 +7244,7 @@
         "trusted source",
         "techno"
       ],
-      "recommendationReason": "Recommended because the lineup (Jeff Chong, Stefano Dvt, Dora) gives the night a clear techno-first club listening draw at POTENT.",
+      "recommendationReason": "Archived for complete RA Shanghai POTENT coverage. Verified on Resident Advisor.",
       "bestFor": "Readers tracking POTENT programming and Shanghai techno history.",
       "verifyBeforeGoing": "Past event; use the RA page for archive facts, not live ticket planning.",
       "sourceConfidence": "High RA archive coverage: title, date, lineup, venue, and event page verified on Resident Advisor.",
@@ -7377,7 +7256,7 @@
           "lastChecked": "2026-06-20"
         }
       ],
-      "time": "Check source"
+      "time": "TBA"
     },
     {
       "id": "potent-ufo95",
@@ -7427,7 +7306,7 @@
         "trusted source",
         "techno"
       ],
-      "recommendationReason": "Recommended because the lineup (UFO95, GaoQiao) gives the night a clear techno-first club listening draw at POTENT.",
+      "recommendationReason": "Archived for complete RA Shanghai POTENT coverage. Verified on Resident Advisor.",
       "bestFor": "Readers tracking POTENT programming and Shanghai techno history.",
       "verifyBeforeGoing": "Past event; use the RA page for archive facts, not live ticket planning.",
       "sourceConfidence": "High RA archive coverage: title, date, lineup, venue, and event page verified on Resident Advisor.",
@@ -7439,7 +7318,7 @@
           "lastChecked": "2026-06-20"
         }
       ],
-      "time": "Check source"
+      "time": "TBA"
     },
     {
       "id": "potent-5year",
@@ -7505,7 +7384,7 @@
         "trusted source",
         "techno"
       ],
-      "recommendationReason": "Recommended because the lineup (Boris, Audrey Danza, Angioma) gives the night a clear techno-first club listening draw at POTENT.",
+      "recommendationReason": "Archived for complete RA Shanghai POTENT coverage. Verified on Resident Advisor.",
       "bestFor": "Readers tracking POTENT programming and Shanghai techno history.",
       "verifyBeforeGoing": "Past event; use the RA page for archive facts, not live ticket planning.",
       "sourceConfidence": "High RA archive coverage: title, date, lineup, venue, and event page verified on Resident Advisor.",
@@ -7517,7 +7396,7 @@
           "lastChecked": "2026-06-20"
         }
       ],
-      "time": "Check source"
+      "time": "TBA"
     },
     {
       "id": "milo-cosmjn",
@@ -8260,61 +8139,73 @@
     },
     {
       "id": "hexscape",
-      "lastChecked": "2026-06-15",
-      "sourceStatus": "watchlist",
+      "lastChecked": "2026-06-24",
+      "sourceStatus": "smartshanghai-detail",
       "ticketStatus": "SmartShanghai gives the current June 27 EXIT lead and names the A/V live pair plus DJ support. SmartShanghai venue context confirms the EXIT address, but the current event start time, price, ticket route, and age policy remain unpublished or not found in public sources. RA and BYYB/LocalHub rows only support Hexscape/Bi-NON scene context, not current ticketing. Keep as Watch.",
       "sources": [
         {
-          "label": "SmartShanghai June 2026 clubbing guide",
-          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
-          "status": "watchlist",
-          "lastChecked": "2026-06-15"
-        },
-        {
-          "label": "SmartShanghai EXIT venue context",
-          "url": "https://www.smartshanghai.com/venue/31776/exit",
-          "status": "venue-context",
-          "lastChecked": "2026-06-14",
-          "verificationNote": "SmartShanghai lists EXIT at 298 Xingfu Lu, near Pingwu Lu, Changning District, and describes it as a basement club with underground techno, house, and club programming. Venue context only; not June 27 ticket confirmation."
-        },
-        {
-          "label": "RA previous EXIT Bi-NON / g_sv lineup context",
-          "url": "https://es-mx.ra.co/events/2150088",
-          "status": "previous-lineup-context",
-          "lastChecked": "2026-06-14",
-          "verificationNote": "RA confirms Bi-NON on a previous EXIT experimental/club lineup; useful for artist/room context, not June 27 confirmation."
-        },
-        {
-          "label": "LocalHub BYYB Radio Bi-NON context",
-          "url": "https://localhub.to/shanghai/venue/byyb-radio/?lang=en",
-          "status": "radio-context",
-          "lastChecked": "2026-06-14",
-          "verificationNote": "LocalHub lists a March BYYB format.hq radio takeover with Bi-NON and a June onefortyasia radio takeover; context only, not current Hexscape ticket confirmation."
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/hexscape-pres-bi-non-xingrui-a-v-live-bass-post-club-hyperpop-footwork-2026-06-27",
+          "status": "smartshanghai-detail",
+          "lastChecked": "2026-06-24"
         }
       ],
       "lineup": [
         {
-          "name": "Bi-NON & chillchillshit",
-          "note": "SmartShanghai lists the pair as the A/V live core of the June 27 Hexscape night at EXIT."
+          "name": "Bi-NON",
+          "note": "DJ/producer. A/V performance."
+        },
+        {
+          "name": "Xingrui",
+          "note": "VJ. A/V Live performance."
         },
         {
           "name": "Chuan",
-          "note": "SmartShanghai lists Chuan as DJ support for the June 27 Hexscape night."
+          "note": "Support"
         },
         {
           "name": "Na$ty",
-          "note": "SmartShanghai lists Na$ty as DJ support for the June 27 Hexscape night."
+          "note": "Support"
         },
         {
           "name": "Toyn",
-          "note": "SmartShanghai lists Toyn as DJ support for the June 27 Hexscape night."
+          "note": "Support"
         }
       ],
       "recommendationReason": "Kept on Watch because SmartShanghai now gives the current lineup names, while practical details and a direct EXIT/promoter/ticketing source are still missing.",
       "bestFor": "Best for A/V-live and hypermodern club listeners who are comfortable waiting for final EXIT ticket details.",
       "verifyBeforeGoing": "Confirm EXIT start time, door price or ticket route, age policy, and whether Bi-NON & chillchillshit are billed as a live A/V set before planning around it.",
       "sourceConfidence": "Watchlist: SmartShanghai is still the only current event-level source; SmartShanghai venue context supports the address; RA and BYYB/LocalHub sources support artist or series context only. Start time, price, ticket route, and age policy are public-source gaps.",
-      "address": "298 Xingfu Lu, near Pingwu Lu, Changning District"
+      "address": "298 Xingfu Lu, near Pingwu Lu, Changning District",
+      "status": "upcoming",
+      "title": "Hexscape pres. Bi-NON & Xingrui A/V Live (Bass, Post-Club, Hyperpop)",
+      "time": "22:00-late",
+      "price": "¥98 presale / ¥128 door",
+      "source": "https://www.smartshanghai.com/event/hexscape-pres-bi-non-xingrui-a-v-live-bass-post-club-hyperpop-footwork-2026-06-27",
+      "sourceLabel": "SmartShanghai",
+      "confidence": "High",
+      "description": "Hexscape presents Bi-NON and Xingrui A/V Live, a DJ/producer/VJ duo delivering hypermodern sound and visuals. Bass, post-club, hyperpop, footwork. Support from Chuan, Na$ty, and Toyn. A pick for fans of the ALL Club sound.",
+      "posterUrl": "assets/posters/hexscape.jpg",
+      "posterEvidence": {
+        "type": "flyer-front-only",
+        "source": "SmartShanghai event page",
+        "url": "https://www.smartshanghai.com/event/hexscape-pres-bi-non-xingrui-a-v-live-bass-post-club-hyperpop-footwork-2026-06-27",
+        "status": "Poster downloaded locally from SmartShanghai.",
+        "localFiles": [
+          "assets/posters/hexscape.jpg"
+        ]
+      },
+      "soundTags": [
+        "bass",
+        "post-club",
+        "hyperpop",
+        "footwork"
+      ],
+      "decisionTags": [
+        "experimental-club fit",
+        "trusted source",
+        "av-live"
+      ]
     },
     {
       "id": "jaal",
@@ -8389,61 +8280,64 @@
     },
     {
       "id": "truth-lies",
-      "lastChecked": "2026-06-15",
-      "sourceStatus": "watchlist",
+      "lastChecked": "2026-06-24",
+      "sourceStatus": "smartshanghai-detail",
       "ticketStatus": "SmartShanghai is the only event-level source for KNOT: Truth and Lies Vol. 4 on June 27. Prior SmartShanghai KNOT/ILLUM listings confirm the series and venue pattern, while QQBBG and Luu.Qoo profile sources support the hyperpop, trance, and club context; no current ticket page, door price, or set times were found. Keep as Watch.",
       "recommendationReason": "Kept on Watch because SmartShanghai names the current Vol. 4 artists and prior KNOT/ILLUM context supports the series, but the June 27 ticket state and running order still need a direct source.",
       "verifyBeforeGoing": "Find the June 27 KNOT or ILLUM post, ticket page, start time, and door note before treating Truth and Lies Vol. 4 as confirmed.",
       "sourceConfidence": "Watchlist: SmartShanghai is the event-level source for date, venue, and lineup; previous-series and artist-profile rows support context but not current ticketing.",
       "sources": [
         {
-          "label": "SmartShanghai June 2026 clubbing guide",
-          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
-          "status": "watchlist",
-          "lastChecked": "2026-06-15",
-          "verificationNote": "SmartShanghai lists June 27 at ILLUM with KNOT Truth and Lies Vol. 4, QQBBG, Liu Qoo, and hyperpop/trance/techno framing."
-        },
-        {
-          "label": "SmartShanghai KNOT/ILLUM previous-series context",
-          "url": "https://www.smartshanghai.com/event/knot-presents-toryondacloud-live-hip-hop-club-music-and-twerking-2026-05-15",
-          "status": "previous-edition-context",
-          "lastChecked": "2026-06-14",
-          "verificationNote": "Prior listing confirms KNOT's Truth and Lies series at ILLUM and typical late club-night/ticket framing; not June 27 confirmation."
-        },
-        {
-          "label": "QQBBG Mixmag Asia profile context",
-          "url": "https://mixmag.asia/read/hong-kong-duo-qqbbg-kelvin-t-ai-core-new-releases",
-          "status": "artist-profile",
-          "lastChecked": "2026-06-14",
-          "verificationNote": "Profile context supports QQBBG's Hong Kong, Genome 6.66 Mbp, hardcore, breakcore, industrial, and kawaii-pop electronic lane."
-        },
-        {
-          "label": "Luu.Qoo Resident Advisor profile",
-          "url": "https://ra.co/dj/luu-au",
-          "status": "artist-profile",
-          "lastChecked": "2026-06-14",
-          "verificationNote": "RA lists Luu.Qoo as an alias of Taiwan-based LUU, matching the Liu Qoo/Luu.Qoo context; not event confirmation."
-        },
-        {
-          "label": "SmartShanghai ILLUM venue context",
-          "url": "https://www.smartshanghai.com/venue/34394/illum",
-          "status": "venue-context",
-          "lastChecked": "2026-06-14",
-          "verificationNote": "SmartShanghai lists ILLUM at LG-16, B1/F, C PARK, 658 Zhaohua Lu and describes a cutting-edge club, bass, live-performance, and post-everything lane. Venue context only; not event ticket confirmation."
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/knot-pres-qqbbg-kumanoi-soea-kawaii-hyper-pop-udg-industrial-rave-2026-06-27",
+          "status": "smartshanghai-detail",
+          "lastChecked": "2026-06-24"
         }
       ],
       "lineup": [
         {
           "name": "QQBBG",
-          "note": "SmartShanghai lists Hong Kong vocalist QQBBG for KNOT: Truth and Lies Vol. 4; profile sources support the high-energy electronic context."
+          "note": "Hong Kong, China kawaii pop idol."
         },
         {
-          "name": "Liu Qoo",
-          "note": "SmartShanghai lists Taipei's Liu Qoo for KNOT: Truth and Lies Vol. 4; RA profile context supports the Luu.Qoo/LUU alias link."
+          "name": "kumanoi",
+          "note": "Melodic UDG"
+        },
+        {
+          "name": "SoA",
+          "note": "Boiler Room Beijing breakout, 4.3M views. Industrial rave."
         }
       ],
-      "description": "Watch-level KNOT/ILLUM lead with QQBBG and Liu Qoo. The sound lane points toward hyperpop, trance, and club-rave pressure, but verify the June 27 ticket state, start time, and running order before recommending it as confirmed.",
-      "address": "LG-16, B1/F, C PARK, 658 Zhaohua Lu, near Zhongdeqiao Lu, Changning District"
+      "description": "KNOT returns to Illum for Episode 4 of their 15 Minutes of Truth and Lies series. Hong Kong kawaii pop idol QQBBG, melodic UDG enthusiast kumanoi, and SoA (Boiler Room Beijing breakout star, 4.3M views) join for kawaii hyper-pop, melodic UDG, and high-speed industrial rave.",
+      "address": "LG-16, B1/F, C PARK, 658 Zhaohua Lu, near Zhongdeqiao Lu, Changning District",
+      "status": "upcoming",
+      "title": "KNOT: 15 Min of Truth and Lies Vol. 4 ft. QQBBG, kumanoi, SoA",
+      "time": "22:00-late",
+      "price": "TBA",
+      "source": "https://www.smartshanghai.com/event/knot-pres-qqbbg-kumanoi-soea-kawaii-hyper-pop-udg-industrial-rave-2026-06-27",
+      "sourceLabel": "SmartShanghai",
+      "confidence": "High",
+      "soundTags": [
+        "hyperpop",
+        "industrial",
+        "rave",
+        "experimental-club"
+      ],
+      "decisionTags": [
+        "experimental-club fit",
+        "trusted source",
+        "local promoter pedigree"
+      ],
+      "posterUrl": "assets/posters/knot-truth-lies.jpg",
+      "posterEvidence": {
+        "type": "flyer-front-only",
+        "source": "SmartShanghai event page",
+        "url": "https://images.smartshanghai.com.cn/uploads/repository/2026/03/24/38175991-2cd6-46fb-9fc5-51f270be9a99.jpg",
+        "status": "Poster downloaded locally from SmartShanghai.",
+        "localFiles": [
+          "assets/posters/knot-truth-lies.jpg"
+        ]
+      }
     },
     {
       "id": "devils-dancers",
@@ -8495,69 +8389,78 @@
     },
     {
       "id": "youshan-warmup",
-      "lastChecked": "2026-06-15",
-      "sourceStatus": "watchlist",
+      "lastChecked": "2026-06-24",
+      "sourceStatus": "smartshanghai-detail",
       "ticketStatus": "Wigwam June calendar screenshot confirms a June 27 YOUSHAN 2026 warmup / Shanghai stop at Wigwam and marks it as Ticket. Start time, price tier, direct ticket route, age policy, and full lineup are not visible in the supplied Wigwam screenshot; keep this as Watch.",
       "recommendationReason": "Kept on Watch because the Wigwam monthly calendar now confirms the June 27 YOUSHAN warmup and ticketed status, while the main YOUSHAN festival is RA-backed; the Shanghai warmup still lacks visible start time, ticket route, price, and official full lineup.",
       "verifyBeforeGoing": "Wait for Wigwam or YOUSHAN to publish the June 27 warmup start time, ticket route, price tier, age policy, and full lineup before recommending it as a firm pick.",
       "sourceConfidence": "Wigwam monthly calendar screenshot confirms the warmup date and ticketed status. SmartShanghai and social-index leads support the route, but current-event practical details remain incomplete.",
       "sources": [
         {
-          "label": "SmartShanghai June 2026 clubbing guide",
-          "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
-          "status": "watchlist",
-          "lastChecked": "2026-06-15",
-          "verificationNote": "SmartShanghai lists June 27 at Wigwam as a YOUSHAN warmup and says lineup TBA."
-        },
-        {
-          "label": "YOUSHAN FESTIVAL 2026 Resident Advisor",
-          "url": "https://ra.co/events/2466267",
-          "status": "festival-context",
-          "lastChecked": "2026-06-14",
-          "verificationNote": "RA confirms the main festival dates, Secret Forest/Chongli location, techno/house genres, lineup, Showstart ticket link, 199-599 RMB cost, and 18+ age rule; not a Shanghai warmup confirmation."
-        },
-        {
-          "label": "Wigwam Instagram June 2026 program search preview",
-          "url": "https://www.instagram.com/wigwam.live/",
-          "status": "social-index-lead",
-          "lastChecked": "2026-06-14",
-          "verificationNote": "Public search-index preview for the official Wigwam account surfaced JUNE 27 @youshanmusicfestival in the June 2026 program context. This gives the platform-native verification route, but does not confirm the warmup lineup, start time, ticket route, door price, or age policy.",
-          "browserCheck": "2026-06-14 Playwright/Chrome public-session route: Instagram home exposed no usable search input; opening the official wigwam.live account timed out on DOMContentLoaded but showed the account title and image placeholders only. No visible June program post, lineup, start time, ticket route, door price, or age policy was confirmed; logged-in Chrome/Instagram, XHS, or WeChat platform search is required."
-        },
-        {
-          "label": "jay_sarayu Instagram Youshan pre-party index preview",
-          "url": "https://www.instagram.com/p/DZB981GAW_g/",
-          "status": "social-index-lead",
-          "lastChecked": "2026-06-14",
-          "verificationNote": "Public search-index preview surfaced `27.06: Youshan Festival Pre Party | Wigwam | Shanghai, CN` and appeared to reference Sarayu b2b Elaheh. Treat as an artist-side platform verification lead only: the visible result does not confirm official organizer approval, full lineup, start time, ticket route, door price, or age policy."
-        },
-        {
-          "label": "SmartShanghai Wigwam venue context",
-          "url": "https://www.smartshanghai.com/venue/31681/wigwam_cafe",
-          "status": "venue-context",
-          "lastChecked": "2026-06-14",
-          "verificationNote": "SmartShanghai lists Wigwam at LG-02, B1/F, C PARK, 658 Zhaohua Lu and describes an organic deeper-house, techno, dub, ambient, reggae, and live-electronic lane. Venue context only; not warmup ticket confirmation."
-        },
-        {
-          "label": "Wigwam June 2026 monthly calendar screenshot",
-          "url": "assets/posters/wigwam-june-2026-calendar.jpg",
-          "status": "official-wechat-screenshot",
-          "lastChecked": "2026-06-15",
-          "verificationNote": "Wigwam June calendar screenshot lists June 27 as YOUSHAN 2026 warmup / Shanghai stop at Wigwam and marks it as Ticket; it does not expose time, price, ticket route, age policy, or full lineup."
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/youshan-festival-warmup-party-house-techno-minimal-bass-2026-06-27",
+          "status": "smartshanghai-detail",
+          "lastChecked": "2026-06-24"
         }
       ],
       "address": "LG-02, B1/F, C PARK, 658 Zhaohua Lu, near Wuyi Lu, Changning District",
       "lineup": [
         {
           "name": "Sarayu",
-          "note": "Public jay_sarayu search-index preview appears to place Sarayu at the June 27 Youshan Festival Pre Party at Wigwam; platform-native visual confirmation is still required."
+          "note": "Bangkok-based headliner. House, techno, minimal, bass."
         },
         {
-          "name": "Elaheh",
-          "note": "Public jay_sarayu search-index preview appears to reference a b2b with Elaheh for the June 27 Wigwam pre-party; keep as a lineup lead until the post is visually verified."
+          "name": "Javis",
+          "note": "Support"
+        },
+        {
+          "name": "Howell",
+          "note": "Support"
+        },
+        {
+          "name": "Oolong",
+          "note": "Support"
+        },
+        {
+          "name": "Thomas Futoso",
+          "note": "Support"
+        },
+        {
+          "name": "Sam Tbd",
+          "note": "Support"
         }
       ],
-      "price": "Ticketed; price not visible"
+      "price": "¥100",
+      "status": "upcoming",
+      "title": "YOUSHAN Festival Warmup Party (House, Techno, Minimal, Bass)",
+      "sortDate": "2026-06-27",
+      "date": "Jun 27",
+      "venue": "Wigwam",
+      "time": "22:00-04:00",
+      "source": "https://www.smartshanghai.com/event/youshan-festival-warmup-party-house-techno-minimal-bass-2026-06-27",
+      "sourceLabel": "SmartShanghai",
+      "confidence": "High",
+      "description": "Warmup party for the second edition of YOUSHAN Festival, an electronic music festival happening July 17-19 in a secret forest in Hebei. Bangkok-based DJ Sarayu headlines, with Javis, Howell, Oolong, Thomas Futoso, and Sam Tbd. House, techno, minimal, bass and breaks.",
+      "posterUrl": "assets/posters/youshan-warmup.jpg",
+      "posterEvidence": {
+        "type": "flyer-front-only",
+        "source": "SmartShanghai event page",
+        "url": "https://www.smartshanghai.com/event/youshan-festival-warmup-party-house-techno-minimal-bass-2026-06-27",
+        "status": "Poster downloaded locally from SmartShanghai.",
+        "localFiles": [
+          "assets/posters/youshan-warmup.jpg"
+        ]
+      },
+      "soundTags": [
+        "house",
+        "techno",
+        "minimal",
+        "bass"
+      ],
+      "decisionTags": [
+        "house-techno fit",
+        "trusted source"
+      ]
     },
     {
       "id": "cyber-buddha",
@@ -8806,6 +8709,330 @@
         "status": "RA flyer front image was downloaded locally for reference through the public indexed image link.",
         "localFiles": [
           "assets/posters/techno-worlds.jpg"
+        ]
+      }
+    },
+    {
+      "id": "roam-resident-thursday-2026-06-25",
+      "kind": "event",
+      "month": "Jun",
+      "sortDate": "2026-06-25",
+      "date": "Jun 25",
+      "time": "22:00-03:00",
+      "title": "Resident Thursday w/ Di, Yyao, and Jill",
+      "venue": "Roam",
+      "district": "Jing'an",
+      "vibe": [
+        "techno",
+        "house"
+      ],
+      "genre": "house, techno, minimal, electro",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "Free",
+      "age": "TBA",
+      "source": "https://www.smartshanghai.com/event/resident-thursday-with-yyao-and-jill-house-music-techno-2026-06-25",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "cyan",
+      "description": "Roam reopened after a month-long pause and remodel. Residents Jill, Di, and Yyao play house, techno, minimal, and electro on the third floor dancezone. Free entry.",
+      "sourceStatus": "smartshanghai-detail",
+      "address": "909 Yan'an Zhong Lu, near Weihai Lu, Jing'an District",
+      "organizer": "Roam",
+      "lastChecked": "2026-06-24",
+      "lineup": [
+        {
+          "name": "Di",
+          "note": "Resident. House, techno, minimal."
+        },
+        {
+          "name": "Yyao",
+          "note": "Resident. House, techno, minimal."
+        },
+        {
+          "name": "Jill",
+          "note": "Resident. House, techno, minimal."
+        }
+      ],
+      "soundTags": [
+        "house",
+        "techno",
+        "minimal",
+        "electro"
+      ],
+      "decisionTags": [
+        "house-techno fit",
+        "trusted source"
+      ],
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/resident-thursday-with-yyao-and-jill-house-music-techno-2026-06-25",
+          "status": "smartshanghai-detail",
+          "lastChecked": "2026-06-24"
+        }
+      ],
+      "posterUrl": "",
+      "posterEvidence": {}
+    },
+    {
+      "id": "roam-sam-tbd-2026-06-26",
+      "kind": "event",
+      "month": "Jun",
+      "sortDate": "2026-06-26",
+      "date": "Jun 26",
+      "time": "22:00-04:00",
+      "title": "Roam Upstairs w/ Sam Tbd (Deeper House & Techno)",
+      "venue": "Roam",
+      "district": "Jing'an",
+      "vibe": [
+        "house",
+        "techno"
+      ],
+      "genre": "deeper house, techno, dub",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "TBA",
+      "age": "TBA",
+      "source": "https://www.smartshanghai.com/event/roam-upstairs-with-sam-tbd-2026-06-26",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "cyan",
+      "description": "Guest DJ/producer Sam Tbd (fka Mau Mau) plays a long set into the deeper and dubbier side of house and techno. Support from residents Bubble and Yyao.",
+      "sourceStatus": "smartshanghai-detail",
+      "address": "909 Yan'an Zhong Lu, near Weihai Lu, Jing'an District",
+      "organizer": "Roam",
+      "lastChecked": "2026-06-24",
+      "lineup": [
+        {
+          "name": "Sam Tbd",
+          "note": "fka Mau Mau. Deeper house, dub techno."
+        },
+        {
+          "name": "Bubble",
+          "note": "Resident support"
+        },
+        {
+          "name": "Yyao",
+          "note": "Resident support"
+        }
+      ],
+      "soundTags": [
+        "deep house",
+        "dub techno",
+        "house"
+      ],
+      "decisionTags": [
+        "house-techno fit",
+        "trusted source"
+      ],
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/roam-upstairs-with-sam-tbd-2026-06-26",
+          "status": "smartshanghai-detail",
+          "lastChecked": "2026-06-24"
+        }
+      ],
+      "posterUrl": "",
+      "posterEvidence": {}
+    },
+    {
+      "id": "roam-zhuo-feiyi-2026-06-27",
+      "kind": "event",
+      "month": "Jun",
+      "sortDate": "2026-06-27",
+      "date": "Jun 27",
+      "time": "22:00-04:00",
+      "title": "Roam Upstairs w/ Zhuo and Feiyi (Ambient, House, Experimental)",
+      "venue": "Roam",
+      "district": "Jing'an",
+      "vibe": [
+        "ambient",
+        "experimental"
+      ],
+      "genre": "ambient, house, experimental, downtempo",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "Free",
+      "age": "TBA",
+      "source": "https://www.smartshanghai.com/event/roam-upstairs-with-zhuo-and-feiyi-2026-06-27",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "cyan",
+      "description": "Guests Feiyi and Zhuo join resident DJ Jill for a journey into experimental, downtempo, ambient, and house on the third floor. Free entry.",
+      "sourceStatus": "smartshanghai-detail",
+      "address": "909 Yan'an Zhong Lu, near Weihai Lu, Jing'an District",
+      "organizer": "Roam",
+      "lastChecked": "2026-06-24",
+      "lineup": [
+        {
+          "name": "Feiyi",
+          "note": "Guest. Ambient, experimental."
+        },
+        {
+          "name": "Zhuo",
+          "note": "Guest. Ambient, experimental."
+        },
+        {
+          "name": "Jill",
+          "note": "Resident. House."
+        }
+      ],
+      "soundTags": [
+        "ambient",
+        "house",
+        "experimental",
+        "downtempo"
+      ],
+      "decisionTags": [
+        "experimental fit",
+        "trusted source"
+      ],
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/roam-upstairs-with-zhuo-and-feiyi-2026-06-27",
+          "status": "smartshanghai-detail",
+          "lastChecked": "2026-06-24"
+        }
+      ],
+      "posterUrl": "",
+      "posterEvidence": {}
+    },
+    {
+      "id": "2026-06-26-antigen-pres-kavari",
+      "kind": "event",
+      "month": "Jun",
+      "sortDate": "2026-06-26",
+      "date": "Jun 26",
+      "time": "22:00-late",
+      "title": "Antigen Pres. KAVARI",
+      "venue": "Reactor",
+      "district": "Changning",
+      "vibe": [
+        "experimental",
+        "industrial"
+      ],
+      "genre": "experimental, industrial, ambient, club, noise",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "¥118 presale / ¥158 door",
+      "age": "18+",
+      "source": "https://www.smartshanghai.com/event/kavari-intense-and-emotional-experimental-club-music-2026-06-26",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "red",
+      "description": "XL Recordings artist Kavari returns to Shanghai for a night of experimental club music blending industrial, ambient, club, and noise into emotional overload. Her date at Reactor comes just before upcoming shows with James Blake, Joy Orbison, Blawan, and Overmono. Support from Bi-Non, Vibekiller, Run, Krijka, and SpaceReturn.",
+      "sourceStatus": "smartshanghai-detail",
+      "address": "Building D, C PARK, 658 Zhaohua Lu, near Zhongdeqiao Lu, Changning District",
+      "organizer": "Antigen",
+      "posterUrl": "assets/posters/2026-06-26-antigen-pres-kavari.jpg",
+      "posterEvidence": {
+        "type": "flyer-front-only",
+        "source": "SmartShanghai event page",
+        "url": "https://www.smartshanghai.com/event/kavari-intense-and-emotional-experimental-club-music-2026-06-26",
+        "status": "Poster downloaded locally from SmartShanghai.",
+        "localFiles": [
+          "assets/posters/2026-06-26-antigen-pres-kavari.jpg"
+        ]
+      },
+      "lastChecked": "2026-06-24",
+      "lineup": [
+        {
+          "name": "KAVARI",
+          "note": "Headliner. XL Recordings. Industrial, ambient, club, noise."
+        },
+        {
+          "name": "Bi-Non",
+          "note": "Support"
+        },
+        {
+          "name": "Vibekiller",
+          "note": "Support"
+        },
+        {
+          "name": "Run",
+          "note": "Support"
+        },
+        {
+          "name": "Krijka",
+          "note": "Support"
+        },
+        {
+          "name": "SpaceReturn",
+          "note": "Support"
+        }
+      ],
+      "soundTags": [
+        "experimental",
+        "industrial",
+        "ambient",
+        "club"
+      ],
+      "decisionTags": [
+        "experimental-club fit",
+        "trusted source",
+        "xl-recordings artist"
+      ],
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/kavari-intense-and-emotional-experimental-club-music-2026-06-26",
+          "status": "smartshanghai-detail",
+          "lastChecked": "2026-06-24"
+        }
+      ]
+    },
+    {
+      "id": "2026-06-27-bellagio-summer-rooftop-party",
+      "kind": "event",
+      "month": "Jun",
+      "sortDate": "2026-06-27",
+      "date": "Jun 27",
+      "time": "16:00-01:00",
+      "title": "Space Panda Presents: Bellagio Summer Rooftop Party",
+      "venue": "Bellagio by MGM Shanghai",
+      "district": "Hongkou",
+      "vibe": [
+        "house",
+        "techno"
+      ],
+      "genre": "deep house, tech house, melodic techno",
+      "confidence": "High",
+      "status": "upcoming",
+      "price": "¥128 early bird / ¥158 presale / ¥188 door (includes 1 drink)",
+      "age": "18+",
+      "source": "https://www.smartshanghai.com/event/bellagio-summer-rooftop-party-at-bellagio-shanghai",
+      "sourceLabel": "SmartShanghai",
+      "imageTheme": "yellow",
+      "description": "Space Panda takes over the rooftop of Bellagio by MGM Shanghai for an extended summer party above the Bund. Sunset into night with deep, tech, and melodic electronic sets, followed by an after-party at Arcana on 1F.",
+      "sourceStatus": "smartshanghai-detail",
+      "address": "188 Beisuzhou Lu, near Zhapu Lu, Hongkou District",
+      "organizer": "Space Panda",
+      "lastChecked": "2026-06-24",
+      "soundTags": [
+        "deep house",
+        "tech house",
+        "melodic techno"
+      ],
+      "decisionTags": [
+        "house-techno fit",
+        "trusted source",
+        "rooftop party"
+      ],
+      "sources": [
+        {
+          "label": "SmartShanghai",
+          "url": "https://www.smartshanghai.com/event/bellagio-summer-rooftop-party-at-bellagio-shanghai",
+          "status": "smartshanghai-detail",
+          "lastChecked": "2026-06-24"
+        }
+      ],
+      "posterUrl": "assets/posters/bellagio-summer-rooftop.jpg",
+      "posterEvidence": {
+        "type": "flyer-front-only",
+        "source": "SmartShanghai event page",
+        "url": "https://images.smartshanghai.com.cn/uploads/repository/2026/06/22/129fb2e4-6aee-4d6c-b75c-9de80c15ecc5.jpg",
+        "status": "Poster downloaded locally from SmartShanghai.",
+        "localFiles": [
+          "assets/posters/bellagio-summer-rooftop.jpg"
         ]
       }
     }

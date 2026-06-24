@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T08:42:02.389Z",
+  "generatedAt": "2026-06-24T15:18:27.696Z",
   "sourceData": "data/events.json",
   "storagePolicy": {
     "mode": "static-json-plus-local-optimized-assets",
@@ -7,16 +7,16 @@
     "rule": "Use optimized display assets in the wall; keep raw poster files out of the default browsing path when the archive grows."
   },
   "stats": {
-    "posters": 80,
+    "posters": 78,
     "years": [
       2026
     ],
-    "venues": 39,
-    "optimizedCount": 77,
-    "displayBytes": 14111130,
-    "sourceBytes": 47141315,
-    "displayMegabytes": 13.46,
-    "sourceMegabytes": 44.96,
+    "venues": 37,
+    "optimizedCount": 75,
+    "displayBytes": 14818002,
+    "sourceBytes": 45652115,
+    "displayMegabytes": 14.13,
+    "sourceMegabytes": 43.54,
     "freeTierSoftCapBytes": 83886080,
     "freeTierSoftCapMegabytes": 80
   },
@@ -339,6 +339,51 @@
       "notes": "DiscChef two-year anniversary at Heim with Spanish artist Roto, plus 2Difficult and BIANBIAN; the Heim article frames it as EBM, electro, trance, and house crossover."
     },
     {
+      "id": "shanghai-2026-hexscape",
+      "eventId": "hexscape",
+      "title": "Hexscape pres. Bi-NON & Xingrui A/V Live (Bass, Post-Club, Hyperpop)",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 27",
+      "sortDate": "2026-06-27",
+      "time": "22:00-late",
+      "venue": "EXIT",
+      "district": "Changning",
+      "sound": "A/V live, hypermodern club, electronic",
+      "tags": [
+        "upcoming",
+        "high",
+        "changning",
+        "experimental",
+        "underground",
+        "a/v live",
+        "hypermodern club",
+        "electronic"
+      ],
+      "status": "upcoming",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "SmartShanghai",
+        "url": "https://www.smartshanghai.com/event/hexscape-pres-bi-non-xingrui-a-v-live-bass-post-club-hyperpop-footwork-2026-06-27",
+        "posterEvidenceUrl": "https://www.smartshanghai.com/event/hexscape-pres-bi-non-xingrui-a-v-live-bass-post-club-hyperpop-footwork-2026-06-27",
+        "posterEvidenceSource": "SmartShanghai event page",
+        "posterEvidenceStatus": "Poster downloaded locally from SmartShanghai."
+      },
+      "image": {
+        "thumbnail": "assets/posters/hexscape-optimized.jpg",
+        "display": "assets/posters/hexscape-optimized.jpg",
+        "sourceAsset": "assets/posters/hexscape.jpg",
+        "displayBytes": 274537,
+        "sourceBytes": 467862,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/hexscape.html",
+      "notes": "Hexscape presents Bi-NON and Xingrui A/V Live, a DJ/producer/VJ duo delivering hypermodern sound and visuals. Bass, post-club, hyperpop, footwork. Support from Chuan, Na$ty, and Toyn. A pick for fans of the ALL Club sound."
+    },
+    {
       "id": "shanghai-2026-jaal",
       "eventId": "jaal",
       "title": "JAAL The Machine live acid techno",
@@ -356,6 +401,7 @@
         "changning",
         "experimental",
         "hard",
+        "techno",
         "acid techno",
         "metal crossover"
       ],
@@ -380,6 +426,51 @@
       },
       "eventUrl": "events/jaal.html",
       "notes": "Two-source Watch lead for Fenrir's Endgame metal-crossover night: SmartShanghai frames it as live acid techno with Blood of Life, Chimera Cult, and Soulitude, while the Chinese listing gives time and ticket tiers. Strong for hard/experimental readers, but still verify the actual purchase route and JAAL set timing."
+    },
+    {
+      "id": "shanghai-2026-truth-lies",
+      "eventId": "truth-lies",
+      "title": "KNOT: 15 Min of Truth and Lies Vol. 4 ft. QQBBG, kumanoi, SoA",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 27",
+      "sortDate": "2026-06-27",
+      "time": "22:00-late",
+      "venue": "ILLUM",
+      "district": "Changning",
+      "sound": "hyperpop, trance, techno",
+      "tags": [
+        "upcoming",
+        "high",
+        "changning",
+        "bass",
+        "experimental",
+        "techno",
+        "hyperpop",
+        "trance"
+      ],
+      "status": "upcoming",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "SmartShanghai",
+        "url": "https://www.smartshanghai.com/event/knot-pres-qqbbg-kumanoi-soea-kawaii-hyper-pop-udg-industrial-rave-2026-06-27",
+        "posterEvidenceUrl": "https://images.smartshanghai.com.cn/uploads/repository/2026/03/24/38175991-2cd6-46fb-9fc5-51f270be9a99.jpg",
+        "posterEvidenceSource": "SmartShanghai event page",
+        "posterEvidenceStatus": "Poster downloaded locally from SmartShanghai."
+      },
+      "image": {
+        "thumbnail": "assets/posters/knot-truth-lies-optimized.jpg",
+        "display": "assets/posters/knot-truth-lies-optimized.jpg",
+        "sourceAsset": "assets/posters/knot-truth-lies.jpg",
+        "displayBytes": 203202,
+        "sourceBytes": 420425,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/truth-lies.html",
+      "notes": "KNOT returns to Illum for Episode 4 of their 15 Minutes of Truth and Lies series. Hong Kong kawaii pop idol QQBBG, melodic UDG enthusiast kumanoi, and SoA (Boiler Room Beijing breakout star, 4.3M views) join for kawaii hyper-pop, melodic UDG, and high-speed industrial rave."
     },
     {
       "id": "shanghai-2026-le-youth-cloudsu-2026-06-27",
@@ -441,33 +532,215 @@
       "district": "Minhang",
       "sound": "pool party, DJ music",
       "tags": [
-        "watch",
+        "upcoming",
+        "high",
         "minhang",
         "date",
         "pool party",
         "dj music"
       ],
-      "status": "watch",
-      "confidence": "Watch",
+      "status": "upcoming",
+      "confidence": "High",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
         "label": "SmartShanghai",
         "url": "https://www.smartshanghai.com/event/nova-events-presents-summer-splash-pool-party-2026-06-27",
-        "posterEvidenceUrl": "https://www.smartshanghai.com/event/nova-events-presents-summer-splash-pool-party-2026-06-27",
+        "posterEvidenceUrl": "https://images.smartshanghai.com.cn/uploads/repository/2026/06/05/1efb19e6-f341-451f-a7bf-964282485639.jpg",
         "posterEvidenceSource": "SmartShanghai event page",
-        "posterEvidenceStatus": "Event images and WeChat/App ticket QR references are visible on the detail page."
+        "posterEvidenceStatus": "Poster downloaded locally from SmartShanghai."
       },
       "image": {
-        "thumbnail": "assets/posters/nova-summer-splash-pool-party-optimized.jpg",
-        "display": "assets/posters/nova-summer-splash-pool-party-optimized.jpg",
-        "sourceAsset": "assets/posters/nova-summer-splash-pool-party.jpg",
-        "displayBytes": 40690,
-        "sourceBytes": 49495,
+        "thumbnail": "assets/posters/nova-summer-splash-optimized.jpg",
+        "display": "assets/posters/nova-summer-splash-optimized.jpg",
+        "sourceAsset": "assets/posters/nova-summer-splash.jpg",
+        "displayBytes": 239578,
+        "sourceBytes": 425643,
         "optimized": true,
         "mime": "image/jpeg"
       },
       "eventUrl": "events/nova-summer-splash-pool-party.html",
       "notes": "Single-source low-techno-fit Watch lead for a daytime poolside Nova/Viva event at Radisson Blu Forest Manor Hongqiao. Check the ticket route, DJ/music brief, swim policy, and weather before treating it as useful club coverage."
+    },
+    {
+      "id": "shanghai-2026-2026-06-27-bellagio-summer-rooftop-party",
+      "eventId": "2026-06-27-bellagio-summer-rooftop-party",
+      "title": "Space Panda Presents: Bellagio Summer Rooftop Party",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 27",
+      "sortDate": "2026-06-27",
+      "time": "16:00-01:00",
+      "venue": "Bellagio by MGM Shanghai",
+      "district": "Hongkou",
+      "sound": "deep house, tech house, melodic techno",
+      "tags": [
+        "upcoming",
+        "high",
+        "hongkou",
+        "house",
+        "techno",
+        "deep house",
+        "tech house",
+        "melodic techno"
+      ],
+      "status": "upcoming",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "SmartShanghai",
+        "url": "https://www.smartshanghai.com/event/bellagio-summer-rooftop-party-at-bellagio-shanghai",
+        "posterEvidenceUrl": "https://images.smartshanghai.com.cn/uploads/repository/2026/06/22/129fb2e4-6aee-4d6c-b75c-9de80c15ecc5.jpg",
+        "posterEvidenceSource": "SmartShanghai event page",
+        "posterEvidenceStatus": "Poster downloaded locally from SmartShanghai."
+      },
+      "image": {
+        "thumbnail": "assets/posters/bellagio-summer-rooftop-optimized.jpg",
+        "display": "assets/posters/bellagio-summer-rooftop-optimized.jpg",
+        "sourceAsset": "assets/posters/bellagio-summer-rooftop.jpg",
+        "displayBytes": 246922,
+        "sourceBytes": 401482,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/2026-06-27-bellagio-summer-rooftop-party.html",
+      "notes": "Space Panda takes over the rooftop of Bellagio by MGM Shanghai for an extended summer party above the Bund. Sunset into night with deep, tech, and melodic electronic sets, followed by an after-party at Arcana on 1F."
+    },
+    {
+      "id": "shanghai-2026-2026-06-27-white-party-shanghai-s-all-white-roof",
+      "eventId": "2026-06-27-white-party-shanghai-s-all-white-roof",
+      "title": "White Party | Shanghai's All-White Rooftop Party",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 27",
+      "sortDate": "2026-06-27",
+      "time": "21:30-late",
+      "venue": "Skyline Dome | Sushi Rooftop & Lounge",
+      "district": "Shanghai",
+      "sound": "house",
+      "tags": [
+        "upcoming",
+        "high",
+        "shanghai",
+        "date",
+        "house"
+      ],
+      "status": "upcoming",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "SmartShanghai",
+        "url": "https://www.smartshanghai.com/event/white-party-shanghai-s-all-white-rooftop-party-at-skyline-dome-at-skyline-dome-sushi-rooftop-lounge",
+        "posterEvidenceUrl": "https://images.smartshanghai.com.cn/uploads/repository/2026/06/24/7d2bfa3d-8a37-4e7c-ba3b-56db5827c677.jpg",
+        "posterEvidenceSource": "SmartShanghai event page",
+        "posterEvidenceStatus": "Poster downloaded locally from SmartShanghai."
+      },
+      "image": {
+        "thumbnail": "assets/posters/white-party-skyline-optimized.jpg",
+        "display": "assets/posters/white-party-skyline-optimized.jpg",
+        "sourceAsset": "assets/posters/white-party-skyline.jpg",
+        "displayBytes": 222297,
+        "sourceBytes": 1578017,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/2026-06-27-white-party-shanghai-s-all-white-roof.html",
+      "notes": "Skyline Dome hosts an all-white rooftop night above the Bund, offering an elegant late-night experience with music, cocktails, and panoramic skyline views. The evening features uplifting house sets from DJ Rain and DJ UACA, set against a backdrop of Shanghai’s Bund and Pudong skyline. You can dress in white for a stylish rooftop gathering designed for summer nights. Watchlist lead: verify lineup, ticketing, age policy, and venue details before planning."
+    },
+    {
+      "id": "shanghai-2026-youshan-warmup",
+      "eventId": "youshan-warmup",
+      "title": "YOUSHAN Festival Warmup Party (House, Techno, Minimal, Bass)",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 27",
+      "sortDate": "2026-06-27",
+      "time": "22:00-04:00",
+      "venue": "Wigwam",
+      "district": "Changning",
+      "sound": "house, downtempo, minimal, ambient, techno, bass, trance",
+      "tags": [
+        "upcoming",
+        "high",
+        "changning",
+        "underground",
+        "experimental",
+        "house",
+        "bass",
+        "warehouse",
+        "techno",
+        "downtempo",
+        "minimal",
+        "ambient"
+      ],
+      "status": "upcoming",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "SmartShanghai",
+        "url": "https://www.smartshanghai.com/event/youshan-festival-warmup-party-house-techno-minimal-bass-2026-06-27",
+        "posterEvidenceUrl": "https://www.smartshanghai.com/event/youshan-festival-warmup-party-house-techno-minimal-bass-2026-06-27",
+        "posterEvidenceSource": "SmartShanghai event page",
+        "posterEvidenceStatus": "Poster downloaded locally from SmartShanghai."
+      },
+      "image": {
+        "thumbnail": "assets/posters/youshan-warmup-optimized.jpg",
+        "display": "assets/posters/youshan-warmup-optimized.jpg",
+        "sourceAsset": "assets/posters/youshan-warmup.jpg",
+        "displayBytes": 264247,
+        "sourceBytes": 455781,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/youshan-warmup.html",
+      "notes": "Warmup party for the second edition of YOUSHAN Festival, an electronic music festival happening July 17-19 in a secret forest in Hebei. Bangkok-based DJ Sarayu headlines, with Javis, Howell, Oolong, Thomas Futoso, and Sam Tbd. House, techno, minimal, bass and breaks."
+    },
+    {
+      "id": "shanghai-2026-2026-06-26-antigen-pres-kavari",
+      "eventId": "2026-06-26-antigen-pres-kavari",
+      "title": "Antigen Pres. KAVARI",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 26",
+      "sortDate": "2026-06-26",
+      "time": "22:00-late",
+      "venue": "Reactor",
+      "district": "Changning",
+      "sound": "experimental, industrial, ambient, club, noise",
+      "tags": [
+        "upcoming",
+        "high",
+        "changning",
+        "experimental",
+        "industrial",
+        "ambient",
+        "club",
+        "noise"
+      ],
+      "status": "upcoming",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "SmartShanghai",
+        "url": "https://www.smartshanghai.com/event/kavari-intense-and-emotional-experimental-club-music-2026-06-26",
+        "posterEvidenceUrl": "https://www.smartshanghai.com/event/kavari-intense-and-emotional-experimental-club-music-2026-06-26",
+        "posterEvidenceSource": "SmartShanghai event page",
+        "posterEvidenceStatus": "Poster downloaded locally from SmartShanghai."
+      },
+      "image": {
+        "thumbnail": "assets/posters/2026-06-26-antigen-pres-kavari-optimized.jpg",
+        "display": "assets/posters/2026-06-26-antigen-pres-kavari-optimized.jpg",
+        "sourceAsset": "assets/posters/2026-06-26-antigen-pres-kavari.jpg",
+        "displayBytes": 94880,
+        "sourceBytes": 180064,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/2026-06-26-antigen-pres-kavari.html",
+      "notes": "XL Recordings artist Kavari returns to Shanghai for a night of experimental club music blending industrial, ambient, club, and noise into emotional overload. Her date at Reactor comes just before upcoming shows with James Blake, Joy Orbison, Blawan, and Overmono. Support from Bi-Non, Vibekiller, Run, Krijka, and SpaceReturn."
     },
     {
       "id": "shanghai-2026-cyber-buddha",
@@ -693,6 +966,49 @@
       "notes": "贵州厨房主题电子音乐派对，由Xingrui(VJ)、Gips、Digital Jade、ZhuoZhuo、badbadbadbad、PIBBYKILLSYOURDADDY带来多元电子音乐体验。"
     },
     {
+      "id": "shanghai-2026-2026-06-24-allan-marshall-house-disco-post-punk-",
+      "eventId": "2026-06-24-allan-marshall-house-disco-post-punk-",
+      "title": "Allan Marshall (House, Disco, Post-Punk, Left-Field)",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 24",
+      "sortDate": "2026-06-24",
+      "time": "00:00",
+      "venue": "Wugong Palace of Sound",
+      "district": "Shanghai",
+      "sound": "acid, house",
+      "tags": [
+        "upcoming",
+        "medium",
+        "shanghai",
+        "hard",
+        "acid",
+        "house"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "SmartShanghai",
+        "url": "https://www.smartshanghai.com/event/allan-marshall-house-disco-post-punk-left-field-2026-06-24",
+        "posterEvidenceUrl": "https://images.smartshanghai.com.cn/uploads/repository/2026/06/23/8da2bc07-def9-4b52-9f0c-b7f10ba7763a.jpg",
+        "posterEvidenceSource": "SmartShanghai JSON-LD",
+        "posterEvidenceStatus": "Poster downloaded locally from SmartShanghai."
+      },
+      "image": {
+        "thumbnail": "assets/posters/allan-marshall-optimized.jpg",
+        "display": "assets/posters/allan-marshall-optimized.jpg",
+        "sourceAsset": "assets/posters/allan-marshall.jpg",
+        "displayBytes": 161479,
+        "sourceBytes": 269527,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/2026-06-24-allan-marshall-house-disco-post-punk-.html",
+      "notes": "Former Shanghai mainstay and Yeti Out co-founder is BACK in the city for a bit and he’s playing at this neighborhood listening bar on Wednesday night. Allan Marshall has spent the last two decades moving between dance floors, festivals, studios and workshops across Australia, China and Japan, as a creative director, DJ, artist, and motorcycle enthusiast. As a DJ, he's known for digging deep and moving between disco, post punk, Afro, Acid, dub, Funk, house and the harder-to-classify records th..."
+    },
+    {
       "id": "shanghai-2026-friendsstandout",
       "eventId": "friendsstandout",
       "title": "FRIENDSSTANDout",
@@ -706,14 +1022,14 @@
       "district": "Changning",
       "sound": "club, electronic",
       "tags": [
-        "upcoming",
+        "past",
         "medium",
         "changning",
         "club",
         "underground",
         "electronic"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "Medium",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -749,7 +1065,7 @@
       "district": "Jing'an",
       "sound": "house, italo disco",
       "tags": [
-        "upcoming",
+        "past",
         "medium",
         "jing'an",
         "date",
@@ -757,7 +1073,7 @@
         "house",
         "italo disco"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "Medium",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -793,7 +1109,7 @@
       "district": "Changning",
       "sound": "house, techno, underground house",
       "tags": [
-        "upcoming",
+        "past",
         "high",
         "changning",
         "underground",
@@ -802,7 +1118,7 @@
         "techno",
         "underground house"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "High",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -825,50 +1141,6 @@
       "notes": "298 brings Italy-linked HouseHeadz Records artist Steal Tapes to EXIT with Sam TBD., Queenie., and Max Gross for a groove-led underground house / techno night. The practical watchpoint is price: visible ticket sources disagree between 88 RMB+ and 118 RMB."
     },
     {
-      "id": "shanghai-2026-afrowave-takeover-la-burg",
-      "eventId": "afrowave-takeover-la-burg",
-      "title": "A Full Afrowave Takeover",
-      "year": 2026,
-      "city": "Shanghai",
-      "country": "CN",
-      "date": "Jun 20",
-      "sortDate": "2026-06-20",
-      "time": "22:00",
-      "venue": "La Burg",
-      "district": "Putuo",
-      "sound": "amapiano, afrobeats, club",
-      "tags": [
-        "watch",
-        "putuo",
-        "bass",
-        "date",
-        "amapiano",
-        "afrobeats",
-        "club"
-      ],
-      "status": "watch",
-      "confidence": "Watch",
-      "collection": "Shanghai Rave Index seed archive",
-      "source": {
-        "label": "SmartShanghai",
-        "url": "https://www.smartshanghai.com/event/a-full-afrowave-takeover-at-la-burg",
-        "posterEvidenceUrl": "https://www.smartshanghai.com/event/a-full-afrowave-takeover-at-la-burg",
-        "posterEvidenceSource": "SmartShanghai event page",
-        "posterEvidenceStatus": "Event image is visible on the detail page."
-      },
-      "image": {
-        "thumbnail": "assets/posters/afrowave-takeover-la-burg-optimized.jpg",
-        "display": "assets/posters/afrowave-takeover-la-burg-optimized.jpg",
-        "sourceAsset": "assets/posters/afrowave-takeover-la-burg.jpg",
-        "displayBytes": 42200,
-        "sourceBytes": 37370,
-        "optimized": true,
-        "mime": "image/jpeg"
-      },
-      "eventUrl": "events/afrowave-takeover-la-burg.html",
-      "notes": "Single-source low-techno-fit Watch lead for NJELIC and the Afrowave China tour at La Burg. Useful for broader club coverage, but verify the live ticket route, exact start time, and event source before featuring it."
-    },
-    {
       "id": "shanghai-2026-atm-leo-monira",
       "eventId": "atm-leo-monira",
       "title": "A.T.M Pres. LEO MONIRA",
@@ -882,7 +1154,7 @@
       "district": "Changning",
       "sound": "techno, hardcore, industrial techno, EBM",
       "tags": [
-        "upcoming",
+        "past",
         "high",
         "changning",
         "techno",
@@ -892,7 +1164,7 @@
         "industrial techno",
         "ebm"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "High",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -928,7 +1200,7 @@
       "district": "Shanghai",
       "sound": "disco, pop, 2000s party",
       "tags": [
-        "upcoming",
+        "past",
         "medium",
         "shanghai",
         "date",
@@ -936,7 +1208,7 @@
         "pop",
         "2000s party"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "Medium",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -972,7 +1244,7 @@
       "district": "Huangpu",
       "sound": "trance, hardcore",
       "tags": [
-        "upcoming",
+        "past",
         "medium",
         "huangpu",
         "hard",
@@ -980,7 +1252,7 @@
         "trance",
         "hardcore"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "Medium",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -1016,15 +1288,17 @@
       "district": "Huangpu",
       "sound": "techno-dubstep hybrid, house, club music",
       "tags": [
+        "past",
         "watch",
         "huangpu",
         "bass",
         "underground",
-        "techno-dubstep hybrid",
         "house",
+        "techno",
+        "techno-dubstep hybrid",
         "club music"
       ],
-      "status": "watch",
+      "status": "past",
       "confidence": "Watch",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -1060,7 +1334,7 @@
       "district": "Changning",
       "sound": "ambient, outer music, electronic",
       "tags": [
-        "upcoming",
+        "past",
         "medium",
         "changning",
         "experimental",
@@ -1069,7 +1343,7 @@
         "outer music",
         "electronic"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "Medium",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -1105,7 +1379,7 @@
       "district": "Changning",
       "sound": "experimental club, bass, tour stop, left-field club",
       "tags": [
-        "upcoming",
+        "past",
         "medium",
         "changning",
         "experimental",
@@ -1115,7 +1389,7 @@
         "tour stop",
         "left-field club"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "Medium",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -1151,7 +1425,7 @@
       "district": "Huangpu",
       "sound": "G-house, bass house, tech house",
       "tags": [
-        "upcoming",
+        "past",
         "high",
         "huangpu",
         "g-house",
@@ -1160,7 +1434,7 @@
         "bass house",
         "tech house"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "High",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -1196,7 +1470,7 @@
       "district": "Jing'an",
       "sound": "techno, house, hotel party",
       "tags": [
-        "upcoming",
+        "past",
         "medium",
         "jing'an",
         "date",
@@ -1205,7 +1479,7 @@
         "house",
         "hotel party"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "Medium",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -1241,13 +1515,13 @@
       "district": "Huangpu",
       "sound": "techno",
       "tags": [
-        "upcoming",
+        "past",
         "high",
         "huangpu",
         "techno",
         "underground"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "High",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -1283,7 +1557,7 @@
       "district": "Changning",
       "sound": "club, hard dance, performance-led electronic",
       "tags": [
-        "upcoming",
+        "past",
         "high",
         "changning",
         "club",
@@ -1292,7 +1566,7 @@
         "hard dance",
         "performance-led electronic"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "High",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -1328,7 +1602,7 @@
       "district": "Huangpu",
       "sound": "selector culture, house, club, electronic listening",
       "tags": [
-        "upcoming",
+        "past",
         "medium",
         "huangpu",
         "underground",
@@ -1338,7 +1612,7 @@
         "club",
         "electronic listening"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "Medium",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -1374,7 +1648,7 @@
       "district": "Huangpu",
       "sound": "hard techno, rave, high-bpm club",
       "tags": [
-        "upcoming",
+        "past",
         "medium",
         "huangpu",
         "hard",
@@ -1383,7 +1657,7 @@
         "rave",
         "high-bpm club"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "Medium",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -1419,6 +1693,7 @@
       "district": "Huangpu",
       "sound": "trap, rage, hip hop, edits",
       "tags": [
+        "past",
         "watch",
         "huangpu",
         "hip-hop",
@@ -1428,7 +1703,7 @@
         "hip hop",
         "edits"
       ],
-      "status": "watch",
+      "status": "past",
       "confidence": "Watch",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -1448,7 +1723,7 @@
         "mime": "image/jpeg"
       },
       "eventUrl": "events/hush-three-year-anniversary-dj-david-2026-06-19.html",
-      "notes": "Public event listing from SmartShanghai."
+      "notes": "Hush marks its three-year anniversary at INS with DJ David, trap/rage/hip-hop/edits, and open-bar ticket tiers. Keep as a social route rather than a techno recommendation."
     },
     {
       "id": "shanghai-2026-2026-06-19-italo-disco-shanghai-s-italian-roofto",
@@ -1464,6 +1739,7 @@
       "district": "Huangpu",
       "sound": "Italo disco, nu disco, uplifting house, rooftop social",
       "tags": [
+        "past",
         "watch",
         "huangpu",
         "date",
@@ -1474,7 +1750,7 @@
         "uplifting house",
         "rooftop social"
       ],
-      "status": "watch",
+      "status": "past",
       "confidence": "Watch",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -1494,7 +1770,7 @@
         "mime": "image/jpeg"
       },
       "eventUrl": "events/2026-06-19-italo-disco-shanghai-s-italian-roofto.html",
-      "notes": "Public event listing from SmartShanghai."
+      "notes": "Skyline Dome runs a Friday Italo Disco rooftop route with DJ UACA and DJ Rain, leaning nu disco, uplifting house, and skyline social energy rather than basement techno."
     },
     {
       "id": "shanghai-2026-mrd",
@@ -1510,14 +1786,14 @@
       "district": "Huangpu",
       "sound": "trance, techno",
       "tags": [
-        "upcoming",
+        "past",
         "high",
         "huangpu",
         "techno",
         "hard",
         "trance"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "High",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -1553,14 +1829,14 @@
       "district": "Huangpu",
       "sound": "house, techno-context",
       "tags": [
-        "upcoming",
+        "past",
         "medium",
         "huangpu",
         "house",
         "underground",
         "techno-context"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "Medium",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -1596,7 +1872,7 @@
       "district": "Changning",
       "sound": "experimental club, deconstructed club, digital hardcore, bass",
       "tags": [
-        "upcoming",
+        "past",
         "medium",
         "changning",
         "experimental",
@@ -1607,7 +1883,7 @@
         "digital hardcore",
         "bass"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "Medium",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -1643,7 +1919,7 @@
       "district": "Changning",
       "sound": "bass, dubstep, UK garage",
       "tags": [
-        "upcoming",
+        "past",
         "high",
         "changning",
         "bass",
@@ -1651,7 +1927,7 @@
         "dubstep",
         "uk garage"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "High",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -1687,13 +1963,13 @@
       "district": "Unknown",
       "sound": "techno",
       "tags": [
-        "upcoming",
+        "past",
         "high",
         "unknown",
         "techno",
         "underground"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "High",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -1729,6 +2005,7 @@
       "district": "Changning",
       "sound": "reggae, dancehall, hip hop, basement party",
       "tags": [
+        "past",
         "watch",
         "changning",
         "bass",
@@ -1739,7 +2016,7 @@
         "hip hop",
         "basement party"
       ],
-      "status": "watch",
+      "status": "past",
       "confidence": "Watch",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -1759,7 +2036,7 @@
         "mime": "image/jpeg"
       },
       "eventUrl": "events/2026-06-19-vibes-up-party-reggae-dancehall-hip-h.html",
-      "notes": "Public event listing from SmartShanghai."
+      "notes": "C's hosts Vibes Up Party with DJ F-Mark, Shanghai Yard, Popasuda, and Dubshottas for a free-entry reggae, dancehall, and hip-hop basement route."
     },
     {
       "id": "shanghai-2026-wigwam-weekly-listening-wheon",
@@ -1775,7 +2052,7 @@
       "district": "Changning",
       "sound": "deep techno, industrial, psytrance, experimental",
       "tags": [
-        "upcoming",
+        "past",
         "medium",
         "changning",
         "listening",
@@ -1785,7 +2062,7 @@
         "psytrance",
         "experimental"
       ],
-      "status": "upcoming",
+      "status": "past",
       "confidence": "Medium",
       "collection": "Shanghai Rave Index seed archive",
       "source": {
@@ -1806,51 +2083,6 @@
       },
       "eventUrl": "events/wigwam-weekly-listening-wheon.html",
       "notes": "Free-entry Friday Weekly Listening at Wigwam with wheon, whose Wigwam profile points toward darkness, tribal pressure, industrial edges, deep techno, psytrance, and experimental motion."
-    },
-    {
-      "id": "shanghai-2026-alter-pavillon",
-      "eventId": "alter-pavillon",
-      "title": "ALTER. Pavillon",
-      "year": 2026,
-      "city": "Shanghai",
-      "country": "CN",
-      "date": "Jun 18",
-      "sortDate": "2026-06-18",
-      "time": "15:00-02:00",
-      "venue": "Beaufort Terrace",
-      "district": "Huangpu",
-      "sound": "electronic, DJ sets, live performance",
-      "tags": [
-        "past",
-        "high",
-        "huangpu",
-        "open-air",
-        "experimental",
-        "electronic",
-        "dj sets",
-        "live performance"
-      ],
-      "status": "past",
-      "confidence": "High",
-      "collection": "Shanghai Rave Index seed archive",
-      "source": {
-        "label": "SmartShanghai",
-        "url": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
-        "posterEvidenceUrl": "https://www.smartshanghai.com/event/alter-pavillon-2026-05-15",
-        "posterEvidenceSource": "SmartShanghai event page",
-        "posterEvidenceStatus": "Event images are visible on the SmartShanghai detail page."
-      },
-      "image": {
-        "thumbnail": "assets/posters/alter-pavillon-optimized.jpg",
-        "display": "assets/posters/alter-pavillon-optimized.jpg",
-        "sourceAsset": "assets/posters/alter-pavillon.png",
-        "displayBytes": 165010,
-        "sourceBytes": 2088009,
-        "optimized": true,
-        "mime": "image/jpeg"
-      },
-      "eventUrl": "events/alter-pavillon.html",
-      "notes": "ALTER. and byyb return to Yuyuan Garden for an 11-hour garden event at Beaufort Terrace with DJ sets, a Wang Meng + Yu Miao live performance, and a byyb.radio livestream."
     },
     {
       "id": "shanghai-2026-cybionte-solo-ykk-heshang",
@@ -1893,51 +2125,6 @@
       },
       "eventUrl": "events/cybionte-solo-ykk-heshang.html",
       "notes": "POTENT hosts Cybionte with Solo, YKK, and Heshang in a late house/club lane. RA confirms the 23:59-06:00 ticket listing, 100 RMB cost, and 18+ rule; a same-day official Instagram index from POTENT points to a 22:30-late start and a second POTENT-room support lineup."
-    },
-    {
-      "id": "shanghai-2026-girls-night-out-dome",
-      "eventId": "girls-night-out-dome",
-      "title": "Girls Night Out",
-      "year": 2026,
-      "city": "Shanghai",
-      "country": "CN",
-      "date": "Thursdays to Jun 25",
-      "sortDate": "2026-06-18",
-      "time": "21:30-01:30",
-      "venue": "The Dome",
-      "district": "Huangpu",
-      "sound": "house, disco, feel-good classics, rooftop lounge",
-      "tags": [
-        "past",
-        "watch",
-        "huangpu",
-        "date",
-        "house",
-        "disco",
-        "feel-good classics",
-        "rooftop lounge"
-      ],
-      "status": "past",
-      "confidence": "Watch",
-      "collection": "Shanghai Rave Index seed archive",
-      "source": {
-        "label": "SmartShanghai",
-        "url": "https://www.smartshanghai.com/event/girls-night-out-skyline-dome-at-the-dome",
-        "posterEvidenceUrl": "https://www.smartshanghai.com/event/girls-night-out-skyline-dome-at-the-dome",
-        "posterEvidenceSource": "SmartShanghai event page",
-        "posterEvidenceStatus": "Event image is visible on the detail page."
-      },
-      "image": {
-        "thumbnail": "assets/posters/girls-night-out-dome-2026-06-18-optimized.jpg",
-        "display": "assets/posters/girls-night-out-dome-2026-06-18-optimized.jpg",
-        "sourceAsset": "assets/posters/girls-night-out-dome-2026-06-18.png",
-        "displayBytes": 34616,
-        "sourceBytes": 493548,
-        "optimized": true,
-        "mime": "image/jpeg"
-      },
-      "eventUrl": "events/girls-night-out-dome.html",
-      "notes": "Low-fit Thursday rooftop social lead at The Dome: house, disco, feel-good classics, skyline views, and complimentary drinks for ladies from 22:00 to midnight. Useful as a date-route nightlife option, not as a techno recommendation."
     },
     {
       "id": "shanghai-2026-illum-gravity-stateofff",
@@ -2030,94 +2217,6 @@
       },
       "eventUrl": "events/heim-long-wave.html",
       "notes": "Heim Thursday house-leaning Dragon Boat Festival special and Elevator Club reunion route with Golgol, SpaceReturn, Sam Tbd, and Xiaolaba. SmartShanghai confirms the 22:00-05:00 window and 88 RMB presale / 108 RMB door pricing."
-    },
-    {
-      "id": "shanghai-2026-minuit-mirror-concept",
-      "eventId": "minuit-mirror-concept",
-      "title": "Minuit pres. MIRROR concept",
-      "year": 2026,
-      "city": "Shanghai",
-      "country": "CN",
-      "date": "Jun 18",
-      "sortDate": "2026-06-18",
-      "time": "22:00-05:00",
-      "venue": "EXIT",
-      "district": "Changning",
-      "sound": "house, techno",
-      "tags": [
-        "past",
-        "medium",
-        "changning",
-        "underground",
-        "club",
-        "house",
-        "techno"
-      ],
-      "status": "past",
-      "confidence": "Medium",
-      "collection": "Shanghai Rave Index seed archive",
-      "source": {
-        "label": "Resident Advisor",
-        "url": "https://ra.co/events/2468150",
-        "posterEvidenceUrl": "assets/posters/minuit-mirror-concept-2026-06-18.jpg",
-        "posterEvidenceSource": "User-provided MIRROR poster",
-        "posterEvidenceStatus": ""
-      },
-      "image": {
-        "thumbnail": "assets/posters/minuit-mirror-concept-2026-06-18-optimized.jpg",
-        "display": "assets/posters/minuit-mirror-concept-2026-06-18-optimized.jpg",
-        "sourceAsset": "assets/posters/minuit-mirror-concept-2026-06-18.jpg",
-        "displayBytes": 248025,
-        "sourceBytes": 319470,
-        "optimized": true,
-        "mime": "image/jpeg"
-      },
-      "eventUrl": "events/minuit-mirror-concept.html",
-      "notes": "Minuit brings its MIRROR concept to EXIT for an immersive house and tech-house night with SLVN, Olivier K, Olivier G, Chabuduo, and a live camera/VJing setup that projects the booth and crowd back into the room."
-    },
-    {
-      "id": "shanghai-2026-night-at-museum-90s-disco",
-      "eventId": "night-at-museum-90s-disco",
-      "title": "Night at the Museum: Back to the 90s Disco Night",
-      "year": 2026,
-      "city": "Shanghai",
-      "country": "CN",
-      "date": "Jun 18",
-      "sortDate": "2026-06-18",
-      "time": "21:00-late",
-      "venue": "Fotografiska",
-      "district": "Jing'an",
-      "sound": "disco, retro club, DJ sets",
-      "tags": [
-        "past",
-        "watch",
-        "jing'an",
-        "date",
-        "disco",
-        "retro club",
-        "dj sets"
-      ],
-      "status": "past",
-      "confidence": "Watch",
-      "collection": "Shanghai Rave Index seed archive",
-      "source": {
-        "label": "SmartShanghai",
-        "url": "https://www.smartshanghai.com/event/night-at-the-museum-back-to-the-90s-disco-night-2026-06-18",
-        "posterEvidenceUrl": "https://www.smartshanghai.com/event/night-at-the-museum-back-to-the-90s-disco-night-2026-06-18",
-        "posterEvidenceSource": "SmartShanghai event page",
-        "posterEvidenceStatus": "Event images and WeChat/App ticket QR references are visible on the detail page."
-      },
-      "image": {
-        "thumbnail": "assets/posters/night-at-museum-90s-disco-optimized.jpg",
-        "display": "assets/posters/night-at-museum-90s-disco-optimized.jpg",
-        "sourceAsset": "assets/posters/night-at-museum-90s-disco.jpg",
-        "displayBytes": 38348,
-        "sourceBytes": 32529,
-        "optimized": true,
-        "mime": "image/jpeg"
-      },
-      "eventUrl": "events/night-at-museum-90s-disco.html",
-      "notes": "Fotografiska's 90s-themed late-night disco event uses multi-floor DJ sets and museum space. SmartShanghai and 247tickets both confirm the Jun 18, 21:00, 120 RMB e-ticket listing; keep as Watch because individual DJ names are still unpublished and the sound is date-route disco rather than a high-fit techno night."
     },
     {
       "id": "shanghai-2026-photocult-mask-desire-auction",
@@ -2341,49 +2440,6 @@
       "notes": "RA lists HOUSE OF ZUP as a Sunday afternoon session at ZUP Pizza Bar, with house, disco, funk, hip-hop, food, drinks, and an easy crowd. Keep as RA coverage/context rather than a rave pick."
     },
     {
-      "id": "shanghai-2026-sunset-sundays-dome",
-      "eventId": "sunset-sundays-dome",
-      "title": "Sunset Sundays",
-      "year": 2026,
-      "city": "Shanghai",
-      "country": "CN",
-      "date": "Sundays to Jun 28",
-      "sortDate": "2026-06-14",
-      "time": "17:30",
-      "venue": "The Dome",
-      "district": "Huangpu",
-      "sound": "curated music, rooftop lounge",
-      "tags": [
-        "past",
-        "watch",
-        "huangpu",
-        "date",
-        "curated music",
-        "rooftop lounge"
-      ],
-      "status": "past",
-      "confidence": "Watch",
-      "collection": "Shanghai Rave Index seed archive",
-      "source": {
-        "label": "SmartShanghai",
-        "url": "https://www.smartshanghai.com/event/sunset-sundays-skyline-dome-at-the-dome",
-        "posterEvidenceUrl": "https://www.smartshanghai.com/event/sunset-sundays-skyline-dome-at-the-dome",
-        "posterEvidenceSource": "SmartShanghai event page",
-        "posterEvidenceStatus": "Event image is visible on the detail page."
-      },
-      "image": {
-        "thumbnail": "assets/posters/sunset-sundays-dome-optimized.jpg",
-        "display": "assets/posters/sunset-sundays-dome-optimized.jpg",
-        "sourceAsset": "assets/posters/sunset-sundays-dome.jpg",
-        "displayBytes": 39018,
-        "sourceBytes": 64854,
-        "optimized": true,
-        "mime": "image/jpeg"
-      },
-      "eventUrl": "events/sunset-sundays-dome.html",
-      "notes": "Low-intensity date-night Watch lead: The Dome runs Sunday sunset sessions with DJ Rain and skyline-bar context, but check the same-day weather, table/door policy, music brief, and whether the series still fits a club-music reader."
-    },
-    {
       "id": "shanghai-2026-fengyun-5",
       "eventId": "fengyun-5",
       "title": "FENGYUN Vol. 5",
@@ -2445,8 +2501,8 @@
         "high",
         "the bund",
         "date",
-        "techno",
-        "house"
+        "house",
+        "techno"
       ],
       "status": "past",
       "confidence": "High",
@@ -2517,93 +2573,6 @@
       "notes": "Love Bang brings The Woods to Specters for a dark dance night covering darkwave, dark italo, industrial, post-punk, EBM, sad dance music, and goth."
     },
     {
-      "id": "shanghai-2026-matisa-limsum",
-      "eventId": "matisa-limsum",
-      "title": "Matisa + Limsum",
-      "year": 2026,
-      "city": "Shanghai",
-      "country": "CN",
-      "date": "Jun 13",
-      "sortDate": "2026-06-13",
-      "time": "23:59-06:00",
-      "venue": "POTENT",
-      "district": "Huangpu",
-      "sound": "house, techno-adjacent",
-      "tags": [
-        "past",
-        "high",
-        "huangpu",
-        "underground",
-        "date",
-        "house",
-        "techno-adjacent"
-      ],
-      "status": "past",
-      "confidence": "High",
-      "collection": "Shanghai Rave Index seed archive",
-      "source": {
-        "label": "Resident Advisor",
-        "url": "https://ra.co/events/2461476",
-        "posterEvidenceUrl": "https://ra.co/events/2461476",
-        "posterEvidenceSource": "Resident Advisor event page",
-        "posterEvidenceStatus": "Flyer image is visible on the RA detail page."
-      },
-      "image": {
-        "thumbnail": "assets/posters/matisa-limsum-optimized.jpg",
-        "display": "assets/posters/matisa-limsum-optimized.jpg",
-        "sourceAsset": "assets/posters/matisa-limsum.jpg",
-        "displayBytes": 155130,
-        "sourceBytes": 1230377,
-        "optimized": true,
-        "mime": "image/jpeg"
-      },
-      "eventUrl": "events/matisa-limsum.html",
-      "notes": "Late POTENT booking with Matisa, Limsum, and Max Shen. More bright and rolling than hard, but a strong club pick."
-    },
-    {
-      "id": "shanghai-2026-nova-sunset-sessions-flair",
-      "eventId": "nova-sunset-sessions-flair",
-      "title": "Nova Events Presents: Sunset Sessions - Flair Rooftop Party",
-      "year": 2026,
-      "city": "Shanghai",
-      "country": "CN",
-      "date": "Jun 13",
-      "sortDate": "2026-06-13",
-      "time": "16:00-02:00",
-      "venue": "Flair Rooftop Restaurant & Bar",
-      "district": "Pudong",
-      "sound": "rooftop club, DJ sets",
-      "tags": [
-        "past",
-        "medium",
-        "pudong",
-        "date",
-        "rooftop club",
-        "dj sets"
-      ],
-      "status": "past",
-      "confidence": "Medium",
-      "collection": "Shanghai Rave Index seed archive",
-      "source": {
-        "label": "SmartShanghai",
-        "url": "https://www.smartshanghai.com/event/nova-events-presents-sunset-sessions-flair-rooftop-party-2026-06-13-2",
-        "posterEvidenceUrl": "https://www.smartshanghai.com/event/nova-events-presents-sunset-sessions-flair-rooftop-party-2026-06-13-2",
-        "posterEvidenceSource": "SmartShanghai event page",
-        "posterEvidenceStatus": "Event images and WeChat/App ticket QR references are visible on the detail page."
-      },
-      "image": {
-        "thumbnail": "assets/posters/nova-sunset-sessions-flair-optimized.jpg",
-        "display": "assets/posters/nova-sunset-sessions-flair-optimized.jpg",
-        "sourceAsset": "assets/posters/nova-sunset-sessions-flair.jpg",
-        "displayBytes": 31937,
-        "sourceBytes": 38798,
-        "optimized": true,
-        "mime": "image/jpeg"
-      },
-      "eventUrl": "events/nova-sunset-sessions-flair.html",
-      "notes": "Nova Events' 12-hour rooftop session at Flair, The Ritz-Carlton Shanghai, with panoramic Bund views and 9 DJs performing from sunset into late night."
-    },
-    {
       "id": "shanghai-2026-nosaj-thing",
       "eventId": "nosaj-thing",
       "title": "REACTOR pres. Nosaj Thing",
@@ -2667,6 +2636,7 @@
         "huangpu",
         "hard",
         "underground",
+        "techno",
         "hard techno",
         "new trance"
       ],
@@ -2711,10 +2681,10 @@
         "changning",
         "experimental",
         "underground",
+        "techno",
         "electro",
         "ebm",
         "industrial",
-        "techno",
         "idm"
       ],
       "status": "past",
@@ -2873,50 +2843,6 @@
       },
       "eventUrl": "events/cltx-abyss.html",
       "notes": "Abyss hosts Lethal Distortion with Parisian hard-techno artist CLTX, plus PRYMARA, WATARU, and SITU, for a trance and techno night at TX Huaihai."
-    },
-    {
-      "id": "shanghai-2026-milo-cosmjn",
-      "eventId": "milo-cosmjn",
-      "title": "Milo Raad + Cosmjn",
-      "year": 2026,
-      "city": "Shanghai",
-      "country": "CN",
-      "date": "Jun 12",
-      "sortDate": "2026-06-12",
-      "time": "23:59-06:00",
-      "venue": "POTENT",
-      "district": "Huangpu",
-      "sound": "techno, house",
-      "tags": [
-        "past",
-        "high",
-        "huangpu",
-        "underground",
-        "date",
-        "techno",
-        "house"
-      ],
-      "status": "past",
-      "confidence": "High",
-      "collection": "Shanghai Rave Index seed archive",
-      "source": {
-        "label": "Resident Advisor",
-        "url": "https://ra.co/events/2461478",
-        "posterEvidenceUrl": "https://ra.co/events/2461478",
-        "posterEvidenceSource": "Resident Advisor event page",
-        "posterEvidenceStatus": "Flyer image is visible on the RA detail page."
-      },
-      "image": {
-        "thumbnail": "assets/posters/milo-cosmjn-optimized.jpg",
-        "display": "assets/posters/milo-cosmjn-optimized.jpg",
-        "sourceAsset": "assets/posters/milo-cosmjn.jpg",
-        "displayBytes": 205296,
-        "sourceBytes": 1333551,
-        "optimized": true,
-        "mime": "image/jpeg"
-      },
-      "eventUrl": "events/milo-cosmjn.html",
-      "notes": "Late POTENT booking with Milo Raad, Cosmjn, and GaoQiao; useful for deeper rolling club music and after-midnight listening, with RA carrying the core date, venue, lineup, price, and age facts."
     },
     {
       "id": "shanghai-2026-prgrm-021",
@@ -3157,8 +3083,9 @@
         "high",
         "huangpu",
         "date",
-        "techno",
-        "house"
+        "house",
+        "hard",
+        "techno"
       ],
       "status": "past",
       "confidence": "High",
@@ -3504,8 +3431,8 @@
         "high",
         "huangpu",
         "date",
-        "techno",
-        "house"
+        "house",
+        "techno"
       ],
       "status": "past",
       "confidence": "High",
