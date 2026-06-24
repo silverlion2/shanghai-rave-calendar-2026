@@ -428,6 +428,26 @@ function extractEmbeddedEvents() {
   return context.module.exports;
 }
 
+function readCanonicalEvents() {
+  if (!fs.existsSync(DATA_FILE)) return [];
+  try {
+    const payload = JSON.parse(readText(DATA_FILE));
+    return Array.isArray(payload.events) ? payload.events : [];
+  } catch (_) {
+    return [];
+  }
+}
+
+function hasEventDate(event = {}) {
+  return Boolean(event.sortDate || event.start || event.startDate);
+}
+
+function extractSeedEvents() {
+  const canonicalEvents = readCanonicalEvents().filter(hasEventDate);
+  if (canonicalEvents.length) return canonicalEvents;
+  return extractEmbeddedEvents();
+}
+
 function findMatchingBracket(text, start) {
   let depth = 0;
   let quote = "";
@@ -2134,8 +2154,96 @@ function ensureRecommendationFields(event = {}) {
   return event;
 }
 
+function displayDateFromSortDate(sortDate) {
+  const match = String(sortDate || "").match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!match) return "";
+  const date = new Date(`${match[1]}-${match[2]}-${match[3]}T00:00:00+08:00`);
+  return new Intl.DateTimeFormat("en-US", {
+    timeZone: TIME_ZONE,
+    month: "short",
+    day: "numeric",
+  }).format(date);
+}
+
+function timeRangeFromStartEnd(start, end) {
+  const startMatch = String(start || "").match(/T(\d{2}:\d{2})/);
+  if (!startMatch) return "";
+  const endMatch = String(end || "").match(/T(\d{2}:\d{2})/);
+  return endMatch ? `${startMatch[1]}-${endMatch[1]}` : startMatch[1];
+}
+
+function displayPriceFromTicket(ticket = {}) {
+  if (!ticket || !Array.isArray(ticket.price) || !ticket.price.length) return "";
+  const prices = ticket.price.filter(value => value !== undefined && value !== null && value !== "");
+  if (!prices.length) return "";
+  return prices.length === 1 ? `${prices[0]} RMB` : `${prices[0]}-${prices[prices.length - 1]} RMB`;
+}
+
+function coerceEventShape(event = {}) {
+  const next = { ...event };
+  next.sortDate = next.sortDate || String(next.start || "").slice(0, 10);
+  next.title = next.title || next.name || next.id;
+  next.venue = next.venue || next.venueName || "TBA";
+  next.month = next.month || monthCodeFromDate(next.sortDate);
+  next.date = next.date || displayDateFromSortDate(next.sortDate);
+  next.time = next.time || timeRangeFromStartEnd(next.start, next.end) || "TBA";
+  next.district = next.district || next.city || "Shanghai";
+  next.vibe = ensureArray(next.vibe && next.vibe.length ? next.vibe : (next.soundTags || next.sound || next.decisionTags));
+  if (!next.vibe.length) next.vibe = ["electronic"];
+  next.genre = Array.isArray(next.genre) ? next.genre.join(", ") : (next.genre || (Array.isArray(next.sound) ? next.sound.join(", ") : ""));
+  next.genre = next.genre || next.vibe.join(", ") || "electronic";
+  next.confidence = next.confidence || (next.published ? "Watch" : "Watch");
+  next.status = next.status || eventStatus(next.sortDate, next.confidence, next.status);
+  next.price = next.price || displayPriceFromTicket(next.ticket) || "TBA";
+  next.age = next.age || "TBA";
+  next.source = next.source || next.sourceUrl;
+  if (next.source === "poster-archive" || next.source === "poster-archive.html") next.source = "https://raveindexsh.top/poster-archive.html";
+  next.sourceLabel = next.sourceLabel || sourceLabelFor(next.source);
+  next.imageTheme = next.imageTheme || imageThemeFor(next.title);
+  next.description = cleanText(next.description || next.notes || `Public event listing from ${next.sourceLabel}.`);
+  next.ticketUrl = next.ticketUrl || (next.ticket && next.ticket.link) || "";
+  next.ticketStatus = next.ticketStatus || (next.ticket && next.ticket.soldOut === false ? "Ticket source lists availability; verify before going." : "");
+  if (next.posterUrl && !String(next.posterUrl).startsWith("assets/posters/") && !String(next.posterUrl).includes("supabase.co")) {
+    delete next.posterUrl;
+    if (next.posterEvidence) delete next.posterEvidence;
+  }
+  if (!next.posterUrl && next.posterEvidence) {
+    const localFiles = Array.isArray(next.posterEvidence.localFiles) ? next.posterEvidence.localFiles : [];
+    const localPoster = localFiles.find(file => String(file || "").startsWith("assets/posters/"));
+    if (localPoster) {
+      next.posterUrl = localPoster;
+    } else {
+      delete next.posterEvidence;
+    }
+  }
+  return next;
+}
+
+function preserveArchiveEvent(event = {}) {
+  const next = coerceEventShape(event);
+  next.id = String(next.id || slugify(`${next.title || next.name || "archive-event"}`));
+  next.date = next.date || "Date TBA";
+  next.month = next.month || "Archive";
+  next.confidence = next.confidence || "Watch";
+  next.status = event.status || "archive";
+  next.kind = next.kind || "event";
+  next.source = next.source || next.sourceUrl || "";
+  if (next.source === "poster-archive" || next.source === "poster-archive.html") next.source = "https://raveindexsh.top/poster-archive.html";
+  next.sourceLabel = next.sourceLabel || sourceLabelFor(next.source);
+  next.lastChecked = next.lastChecked || String(next.updatedAt || next.createdAt || "").slice(0, 10) || "2026-06-20";
+  if (!Array.isArray(next.sources) || !next.sources.length) {
+    next.sources = next.source ? [{
+      label: next.sourceLabel,
+      url: next.source,
+      status: "archive",
+      lastChecked: next.lastChecked,
+    }] : [];
+  }
+  return ensureRecommendationFields(enrichEvent(next));
+}
+
 function normalizeEvent(event, sourceChecks) {
-  const normalized = { ...event };
+  const normalized = coerceEventShape(event);
   normalized.id = String(normalized.id || slugify(`${normalized.sortDate}-${normalized.title}`));
   normalized.kind = cleanText(normalized.kind || (normalized.festival ? "festival" : "event"));
   normalized.vibe = ensureArray(normalized.vibe);
@@ -2158,7 +2266,10 @@ function normalizeEvent(event, sourceChecks) {
     lastChecked: normalized.lastChecked,
   }];
   normalized.sources = normalized.sources.map(source => {
-    const url = normalizeUrl(source.url);
+    const sourceUrl = source.url === "poster-archive" || source.url === "poster-archive.html"
+      ? "https://raveindexsh.top/poster-archive.html"
+      : source.url;
+    const url = normalizeUrl(sourceUrl);
     const check = sourceChecks.get(url);
     return {
       ...source,
@@ -2198,15 +2309,22 @@ function normalizeEvent(event, sourceChecks) {
   return ensureRecommendationFields(enrichEvent(normalized));
 }
 
+function missingRequiredEventFields(event = {}) {
+  return REQUIRED_EVENT_FIELDS.filter(field => event[field] === undefined || event[field] === null || event[field] === "");
+}
+
 function mergeEvents(seedEvents, scrapedEvents) {
   const byKey = new Map();
+  const byId = new Set();
   const merged = [];
   const add = event => {
+    if (event.id && byId.has(event.id)) return;
     const sourceKey = normalizeUrl(event.source);
     const semanticKey = `${event.sortDate}|${String(event.title).toLowerCase()}|${String(event.venue).toLowerCase()}`;
     const key = sourceKey ? `${sourceKey}|${semanticKey}` : semanticKey;
     if (byKey.has(key)) return;
     byKey.set(key, event.id);
+    if (event.id) byId.add(event.id);
     merged.push(event);
   };
   seedEvents.forEach(add);
@@ -3087,6 +3205,11 @@ function applyCuratedEvents(events, curatedEvents, sourceChecks) {
   for (const curated of curatedEvents) {
     const index = curatedMatchIndex(next, curated);
     if (index === -1) {
+      const missingRequiredFields = missingRequiredEventFields(curated);
+      if (missingRequiredFields.length) {
+        console.warn(`Skipping incomplete unmatched curated event ${curated.id || curated.title}: missing ${missingRequiredFields.join(", ")}`);
+        continue;
+      }
       next.push(normalizeEvent(curated, sourceChecks));
       continue;
     }
@@ -3377,7 +3500,9 @@ function writeDjItineraryData(events) {
 }
 
 async function main() {
-  const seedEvents = extractEmbeddedEvents();
+  const canonicalEvents = readCanonicalEvents();
+  const preservedUndatedArchiveRows = canonicalEvents.filter(event => !hasEventDate(event)).map(preserveArchiveEvent);
+  const seedEvents = extractSeedEvents();
   const keywordConfig = readKeywordConfig();
   const curatedEvents = readCuratedEvents();
   const trackedDjProfiles = readTrackedDjProfiles();
@@ -3587,6 +3712,7 @@ async function main() {
     ],
     sources: sourceReportsAll,
     events,
+    undatedArchiveRows: preservedUndatedArchiveRows,
     socialLeads: socialLeads.slice(0, 80),
     discovered: discovered.slice(0, 80),
     promotionPlatformNetwork: {

@@ -129,7 +129,7 @@
           "lastChecked": "2026-06-14"
         }
       ],
-      "posterUrl": "assets/posters/shaun-soomro-dj-serang.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/shaun-soomro-dj-serang.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -224,7 +224,7 @@
       "address": "B1/F, Building D, C.PARK, No. 658 Zhaohua Road, Changning District, Shanghai",
       "organizer": "SO.READY / Yuyintang",
       "lastChecked": "2026-06-16",
-      "posterUrl": "assets/posters/lucrecia-dalt-yuyintang-2026-07-16.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/lucrecia-dalt-yuyintang.jpg",
       "posterEvidence": {
         "type": "official-poster-screenshot",
         "source": "User-provided Lucrecia Dalt China tour poster and Yuyintang ticket-info screenshots, cross-checked against the public ShowStart event page.",
@@ -390,7 +390,7 @@
           "verificationNote": "2026-06-14 page check provided detailed 2026 MISA program rows from the Jul 5 opening concert through mid-July performances."
         }
       ],
-      "posterUrl": "assets/posters/misa-shanghai-summer-music-festival-2026.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/misa-shanghai-summer-music-festival-2026.jpg",
       "posterEvidence": {
         "type": "festival-key-visual",
         "source": "Shanghai Municipal Administration of Culture and Tourism",
@@ -430,7 +430,7 @@
       "address": "B1/F, No. 658 Zhaohua Road, Changning District, Shanghai",
       "organizer": "Yuyintang",
       "lastChecked": "2026-06-16",
-      "posterUrl": "assets/posters/yuyintang-cooling-water-2026-07-03.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/yuyintang-cooling-water.jpg",
       "posterEvidence": {
         "type": "official-poster-screenshot",
         "source": "User-provided Yuyintang poster and official-account article screenshots, cross-checked against the public ShowStart event page.",
@@ -661,7 +661,7 @@
           "lastChecked": "2026-06-14"
         }
       ],
-      "posterUrl": "assets/posters/shanghai-mushroom-music-carnival-2026.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/shanghai-mushroom-music-carnival-2026.jpg",
       "posterEvidence": {
         "type": "lineup-poster",
         "source": "Sina / Weibo lineup mirror",
@@ -699,7 +699,7 @@
       "address": "B1, TX Huaihai Youth Center, No. 523-527 Huaihai Road, Huangpu District, Shanghai",
       "organizer": "Abyss Shanghai",
       "lastChecked": "2026-06-15",
-      "posterUrl": "assets/posters/abyss-cum-chemical-love-cover.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/abyss-cum-chemical-love.jpg",
       "posterEvidence": {
         "type": "wechat-miniprogram-ticketing-screenshot",
         "source": "Yuyuan WeChat mini-program ticketing screenshot manually confirmed by user, cross-checked against the Abyss June program screenshot",
@@ -807,7 +807,7 @@
       "address": "M101 Room, No. 462 Changle Road, Huangpu District, Shanghai",
       "organizer": "Heim Shanghai / DiscChef",
       "lastChecked": "2026-06-15",
-      "posterUrl": "assets/posters/heim-discchef-roto-ticket-cover.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/heim-discchef-roto-anniversary.jpg",
       "posterEvidence": {
         "type": "wechat-miniprogram-ticketing-screenshot",
         "source": "Yuyuan WeChat mini-program ticketing screenshot manually confirmed by user",
@@ -911,7 +911,7 @@
       "address": "4F, Fosun Art Center, 600 Zhongshan Dong Er Road, Huangpu District, Shanghai",
       "organizer": "Asylum / CLOUD.SU / PAS",
       "lastChecked": "2026-06-16",
-      "posterUrl": "assets/posters/le-youth-cloudsu-2026-06-27-poster.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/le-youth-cloudsu-2026-06-27.jpg",
       "posterEvidence": {
         "type": "official-poster-and-ticketing-screenshots",
         "source": "User-provided event poster and Yuyuan ticketing screenshot",
@@ -1038,7 +1038,7 @@
           "lastChecked": "2026-06-24"
         }
       ],
-      "posterUrl": "assets/posters/nova-summer-splash.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/nova-summer-splash-pool-party.jpg",
       "posterEvidence": {
         "type": "flyer-front-only",
         "source": "SmartShanghai event page",
@@ -1128,7 +1128,7 @@
           "note": "Uplifting house"
         }
       ],
-      "posterUrl": "assets/posters/white-party-skyline.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/2026-06-27-white-party-shanghai-s-all-white-roof.jpg",
       "posterEvidence": {
         "type": "flyer-front-only",
         "source": "SmartShanghai event page",
@@ -1241,7 +1241,7 @@
           "lastChecked": "2026-06-14"
         }
       ],
-      "posterUrl": "assets/posters/dark-room.jpg"
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/dark-room.jpg"
     },
     {
       "id": "heim-invites-dina",
@@ -1270,7 +1270,7 @@
       "address": "M101 Room, No. 462 Changle Road, Huangpu District, Shanghai",
       "organizer": "Heim Shanghai",
       "lastChecked": "2026-06-15",
-      "posterUrl": "assets/posters/heim-dina-ticket-cover.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/heim-invites-dina.jpg",
       "posterEvidence": {
         "type": "wechat-miniprogram-ticketing-screenshot",
         "source": "Yuyuan WeChat mini-program ticketing screenshot manually confirmed by user",
@@ -1458,7 +1458,7 @@
       "imageTheme": "steel",
       "kind": "event",
       "organizer": "Abyss Shanghai",
-      "posterUrl": "assets/posters/abyss-botox-fatal-ticket-cover.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/botox-fatale.jpg",
       "posterEvidence": {
         "type": "wechat-miniprogram-ticketing-screenshot",
         "source": "Yuyuan WeChat mini-program ticketing screenshot manually confirmed by user, cross-checked against the Abyss June program screenshot",
@@ -1557,7 +1557,7 @@
           "verificationNote": "Poster confirms title, date, time, venue, address, full lineup, and three pricing tiers."
         }
       ],
-      "posterUrl": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg"
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/suaner-lanv-guizhou-kitchen.jpg"
     },
     {
       "id": "friendsstandout",
@@ -1636,7 +1636,7 @@
           "verificationNote": "User-provided Wigwam June calendar screenshot lists the June program and confirms the relevant event dates at Wigwam."
         }
       ],
-      "posterUrl": "assets/posters/friendsstandout.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/friendsstandout.jpg",
       "posterEvidence": {
         "type": "flyer-front-back",
         "source": "Resident Advisor event page",
@@ -1671,7 +1671,7 @@
       "source": "https://ra.co/events/2470695",
       "sourceLabel": "Resident Advisor + SmartShanghai",
       "imageTheme": "ember",
-      "posterUrl": "assets/posters/house-of-zup-2026-06-21-ra-flyer.png",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/2026-06-21-house-of-zup-house-disco-hip-hop.png",
       "description": "RA lists HOUSE OF ZUP as a Sunday afternoon ZUP Pizza Bar session with house and Italo disco at the center, plus the venue's recurring pizza-bar social context. This is a daytime neighborhood route, not a late-room techno pick.",
       "sourceStatus": "trusted-ra-and-smartshanghai",
       "address": "457 Shanxi Rd North, Bldg #4 Unit 101, Jing'an District, Shanghai",
@@ -1837,7 +1837,7 @@
       "detailsUrl": "https://ra.co/events/2468159",
       "ticketUrl": "https://ra.co/events/2468159",
       "lastChecked": "2026-06-16",
-      "posterUrl": "assets/posters/exit-steal-tapes-2026-06-20-poster.png",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/exit-298-steal-tapes.png",
       "posterEvidence": {
         "type": "official-poster-and-ticketing-screenshots",
         "source": "User-provided EXIT Shanghai official-account and ticketing screenshots, plus RA flyer reference",
@@ -1997,7 +1997,8 @@
           "status": "watchlist",
           "lastChecked": "2026-06-14"
         }
-      ]
+      ],
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/afrowave-takeover-la-burg.jpg"
     },
     {
       "id": "atm-leo-monira",
@@ -2067,7 +2068,7 @@
           "lastChecked": "2026-06-14"
         }
       ],
-      "posterUrl": "assets/posters/atm-leo-monira.png",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/atm-leo-monira.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -2128,7 +2129,7 @@
           "lastChecked": "2026-06-14"
         }
       ],
-      "posterUrl": "assets/posters/enchanted-night-the-nest.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/enchanted-night-the-nest.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -2167,7 +2168,7 @@
       "organizer": "Abyss Shanghai",
       "detailsUrl": "https://ra.co/events/2470462",
       "lastChecked": "2026-06-19",
-      "posterUrl": "assets/posters/abyss-hardcore-melancholia-ra-flyer.png",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/abyss-hardcore-melancholia.png",
       "posterEvidence": {
         "type": "resident-advisor-flyer-and-ticketing-screenshots",
         "source": "Resident Advisor event page flyer, cross-checked against user-provided Yuyuan ticketing and Abyss June program screenshots",
@@ -2278,7 +2279,7 @@
       "address": "LG Floor, C PARK, No. 658 Zhaohua Road, Changning District, Shanghai",
       "organizer": "LIQUID DOLLS / ILLUM Shanghai",
       "lastChecked": "2026-06-16",
-      "posterUrl": "assets/posters/illum-soback-2026-06-20-poster.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/illum-soback-liquid-dolls.jpg",
       "posterEvidence": {
         "type": "official-poster-screenshot",
         "source": "User-provided ILLUM Shanghai poster and ticketing screenshots",
@@ -2401,7 +2402,7 @@
           "verificationNote": "YuYuan mini-program confirms MALAA on Jun 20 at MAX Shanghai with 188 RMB starting price."
         }
       ],
-      "posterUrl": "assets/posters/malaa-max-shanghai-optimized.jpg"
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/malaa-max-shanghai.jpg"
     },
     {
       "id": "neon-jungle-tom-kynd",
@@ -2465,7 +2466,7 @@
           "lastChecked": "2026-06-14"
         }
       ],
-      "posterUrl": "assets/posters/neon-jungle-tom-kynd.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/neon-jungle-tom-kynd.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -2537,7 +2538,8 @@
       "recommendationReason": "Kept on Watch because the sound and room fit points toward social house, disco, or date-route electronic music at Char; wait for firmer practical details before treating it as a pick.",
       "bestFor": "Best for a more social, house-forward, rooftop, or date-friendly electronic route.",
       "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
-      "sourceConfidence": "Watch-level confidence from SmartShanghai; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence."
+      "sourceConfidence": "Watch-level confidence from SmartShanghai; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence.",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/2026-06-20-nova-events-presents-sundown-char-bar.jpg"
     },
     {
       "id": "sciahri-potent",
@@ -2594,7 +2596,7 @@
           "lastChecked": "2026-06-14"
         }
       ],
-      "posterUrl": "assets/posters/sciahri-potent.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/sciahri-potent.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -2633,7 +2635,7 @@
       "address": "Building D, C.PARK Haisu, Zhongdeqiao Road, Changning District, Shanghai",
       "organizer": "idk / REACTOR Shanghai",
       "lastChecked": "2026-06-16",
-      "posterUrl": "assets/posters/health-maxxing-reactor-2026-06-19-poster.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/health-maxxing-reactor-2026-06-19.jpg",
       "posterEvidence": {
         "type": "official-poster-ticketing-and-running-order-screenshots",
         "source": "User-provided REACTOR official-account/poster and Yuyuan ticketing screenshots",
@@ -2802,7 +2804,7 @@
       "address": "M101 Room, No. 462 Changle Road, Huangpu District, Shanghai",
       "organizer": "Heim Shanghai / Earworthy",
       "lastChecked": "2026-06-15",
-      "posterUrl": "assets/posters/heim-earworthy-selected-sound.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/heim-earworthy-selected-sound.jpg",
       "posterEvidence": {
         "type": "official-flyer-screenshot",
         "source": "Heim Shanghai WeChat/user-provided official poster screenshot",
@@ -2919,7 +2921,7 @@
       "address": "B1, TX Huaihai Youth Center, No. 523-527 Huaihai Road, Huangpu District, Shanghai",
       "organizer": "FaQ / Abyss Shanghai",
       "lastChecked": "2026-06-15",
-      "posterUrl": "assets/posters/abyss-kirk-ticket-cover.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/abyss-faq-kirk.jpg",
       "posterEvidence": {
         "type": "wechat-miniprogram-ticketing-screenshot",
         "source": "Yuyuan WeChat mini-program ticketing screenshot manually confirmed by user, cross-checked against the Abyss June program screenshot",
@@ -3026,7 +3028,7 @@
       "organizer": "Hush (INS)",
       "lastChecked": "2026-06-19",
       "addedAt": "2026-06-19",
-      "posterUrl": "assets/posters/hush-three-year-anniversary-2026-06-19.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/hush-three-year-anniversary-dj-david-2026-06-19.jpg",
       "posterEvidence": {
         "type": "smartshanghai-event-image",
         "source": "SmartShanghai event page JSON-LD image",
@@ -3104,7 +3106,7 @@
       "organizer": "Skyline Dome | Sushi Rooftop & Lounge",
       "lastChecked": "2026-06-19",
       "addedAt": "2026-06-19",
-      "posterUrl": "assets/posters/italo-disco-skyline-dome-2026-06-19.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/2026-06-19-italo-disco-shanghai-s-italian-roofto.jpg",
       "posterEvidence": {
         "type": "smartshanghai-event-image",
         "source": "SmartShanghai event page JSON-LD image",
@@ -3225,7 +3227,7 @@
           "lastChecked": "2026-06-15"
         }
       ],
-      "posterUrl": "assets/posters/mrd.png"
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/mrd.jpg"
     },
     {
       "id": "nikita-zabelin-potent",
@@ -3282,7 +3284,7 @@
           "lastChecked": "2026-06-14"
         }
       ],
-      "posterUrl": "assets/posters/nikita-zabelin-potent.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/nikita-zabelin-potent.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -3321,7 +3323,7 @@
       "address": "LG Floor, C PARK, No. 658 Zhaohua Road, Changning District, Shanghai",
       "organizer": "Normie Corporation / ILLUM Shanghai",
       "lastChecked": "2026-06-16",
-      "posterUrl": "assets/posters/illum-normie-10k99-2026-06-19-poster.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/illum-normie-10k99.jpg",
       "posterEvidence": {
         "type": "official-poster-screenshot",
         "source": "User-provided ILLUM Shanghai poster and ticketing screenshots",
@@ -3511,7 +3513,7 @@
           "lastChecked": "2026-06-14"
         }
       ],
-      "posterUrl": "assets/posters/onefortyasia-mungk-simbie.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/onefortyasia-mungk-simbie.jpg",
       "posterEvidence": {
         "type": "flyer-front-back",
         "source": "Resident Advisor event page",
@@ -3574,7 +3576,7 @@
           "verificationNote": "YuYuan mini-program confirms Oscar L on Jun 19 at MiM CLUB with 158 RMB starting price."
         }
       ],
-      "posterUrl": "assets/posters/oscar-l-mim-club-optimized.jpg"
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/oscar-l-mim-club.jpg"
     },
     {
       "id": "2026-06-19-vibes-up-party-reggae-dancehall-hip-h",
@@ -3604,7 +3606,7 @@
       "organizer": "C's / Vibes Up Party",
       "lastChecked": "2026-06-19",
       "addedAt": "2026-06-19",
-      "posterUrl": "assets/posters/vibes-up-party-cs-2026-06-19.png",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/2026-06-19-vibes-up-party-reggae-dancehall-hip-h.png",
       "posterEvidence": {
         "type": "smartshanghai-event-image",
         "source": "SmartShanghai event page JSON-LD image",
@@ -3693,7 +3695,7 @@
       "address": "LG Floor, C.PARK, No. 658 Zhaohua Road, Changning District, Shanghai",
       "organizer": "Wigwam",
       "lastChecked": "2026-06-15",
-      "posterUrl": "assets/posters/wigwam-weekly-listening-wheon-2026-06-19.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/wigwam-weekly-listening-wheon.jpg",
       "posterEvidence": {
         "type": "official-flyer-screenshot",
         "source": "Wigwam WeChat/user-provided event poster screenshot",
@@ -3834,7 +3836,8 @@
           "status": "secondary",
           "lastChecked": "2026-06-14"
         }
-      ]
+      ],
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/alter-pavillon.jpg"
     },
     {
       "id": "cybionte-solo-ykk-heshang",
@@ -3910,7 +3913,7 @@
           "verificationNote": "Public profile/search index text for POTENT shows 6.18 CYBIONTE, 2026.6.18 Thu, 22:30-late, Room TENT Solo / YKK / Heshang, and Room POTENT Fat-K / Tayzo / Yomi. Platform-native visual confirmation is still needed."
         }
       ],
-      "posterUrl": "assets/posters/cybionte-solo-ykk-heshang.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/cybionte-solo-ykk-heshang.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -3974,7 +3977,8 @@
           "lastChecked": "2026-06-18",
           "verificationNote": "SmartShanghai lists the Thursday series through Jun 25 with 21:30-01:30 hours, The Dome address, DJ Rain and DJ Stefano, and no SmartShanghai ticket inventory."
         }
-      ]
+      ],
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/girls-night-out-dome.png"
     },
     {
       "id": "illum-gravity-stateofff",
@@ -4006,7 +4010,7 @@
       "detailsUrl": "https://www.smartshanghai.com/event/illum-presents-state-offf-gqom-club-music-bass-2026-06-18",
       "ticketUrl": "https://www.smartshanghai.com/event/illum-presents-state-offf-gqom-club-music-bass-2026-06-18",
       "lastChecked": "2026-06-18",
-      "posterUrl": "assets/posters/illum-gravity-2026-06-18-poster.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/illum-gravity-stateofff.jpg",
       "posterEvidence": {
         "type": "official-poster-screenshot",
         "source": "User-provided ILLUM Shanghai poster and ticketing screenshots",
@@ -4137,7 +4141,7 @@
       "detailsUrl": "https://www.smartshanghai.com/event/long-wave-house-techno-disco-club-music-2026-06-18",
       "ticketUrl": "https://www.smartshanghai.com/event/long-wave-house-techno-disco-club-music-2026-06-18",
       "lastChecked": "2026-06-18",
-      "posterUrl": "assets/posters/heim-long-wave.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/heim-long-wave.jpg",
       "posterEvidence": {
         "type": "official-flyer-screenshot",
         "source": "Heim Shanghai WeChat/user-provided official poster screenshot",
@@ -4357,7 +4361,8 @@
       "recommendationReason": "Useful for readers who want EXIT in a lighter, groove-led house/techno lane with a visual-room concept: SLVN, Olivier K, Olivier G, Chabuduo, and live camera/VJing make this a compact late-room route.",
       "bestFor": "Best for readers tracking EXIT house/techno programming who can verify same-day details before committing.",
       "verifyBeforeGoing": "Recheck RA or EXIT/Minuit channels for ticket availability, age policy, flyer, and any set-time update before going.",
-      "sourceConfidence": "RA event detail and user-provided MIRROR poster agree on the title, date, EXIT venue/address, lineup, and live camera/VJing concept; age policy remains the only visible public-source gap."
+      "sourceConfidence": "RA event detail and user-provided MIRROR poster agree on the title, date, EXIT venue/address, lineup, and live camera/VJing concept; age policy remains the only visible public-source gap.",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/minuit-mirror-concept.jpg"
     },
     {
       "id": "night-at-museum-90s-disco",
@@ -4409,7 +4414,8 @@
           "lastChecked": "2026-06-14",
           "verificationNote": "2026-06-14 247tickets page check confirmed Fotografiska Shanghai, 127 Guangfu Road, Jun 18 2026, Thu 9:00 PM, 120 RMB regular e-ticket including one drink, and no cancellation notice."
         }
-      ]
+      ],
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/night-at-museum-90s-disco.jpg"
     },
     {
       "id": "photocult-mask-desire-auction",
@@ -4556,7 +4562,7 @@
           "verificationNote": "Public search index text from PHOTOCULT/REACTOR on June 18 repeats Mask. Desire. Auction, 22:00-04:00, dress-code cue, and the DOME/POCKET lineup; platform-native visual check is still useful for final door details."
         }
       ],
-      "posterUrl": "assets/posters/photocult-mask-desire-auction.png"
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/photocult-mask-desire-auction.jpg"
     },
     {
       "id": "bloom-season-1-grand-final",
@@ -4628,7 +4634,7 @@
           "verificationNote": "2026-06-16 public search-index text for the RA event page confirmed title, EXIT venue/address, Wed Jun 17 2026 22:00-03:00, lineup roles, house/hip-hop tags, Illsee event admin, cost 150, and flyer visibility. Direct scripted HTTP fetch returned 403, so treat this as indexed RA text verification."
         }
       ],
-      "posterUrl": "assets/posters/bloom-season-1-grand-final.png",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/bloom-season-1-grand-final.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -4666,7 +4672,7 @@
       "address": "LG Floor, C.PARK, No. 658 Zhaohua Road, Changning District, Shanghai",
       "organizer": "Wigwam",
       "lastChecked": "2026-06-15",
-      "posterUrl": "assets/posters/wigwam-weekly-listening-xiaolaba-2026-06-17.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/wigwam-weekly-listening-xiaolaba.jpg",
       "posterEvidence": {
         "type": "official-flyer-screenshot",
         "source": "Wigwam WeChat/user-provided event poster screenshot",
@@ -4767,7 +4773,7 @@
       "address": "LG Floor, C.PARK, No. 658 Zhaohua Road, Changning District, Shanghai",
       "organizer": "Wigwam",
       "lastChecked": "2026-06-15",
-      "posterUrl": "assets/posters/wigwam-weekly-listening-golgol-2026-06-16.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/wigwam-weekly-listening-golgol.jpg",
       "posterEvidence": {
         "type": "official-flyer-screenshot",
         "source": "Wigwam WeChat/user-provided event poster screenshot",
@@ -4960,7 +4966,7 @@
           "lastChecked": "2026-06-14"
         }
       ],
-      "posterUrl": "assets/posters/house-of-zup.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/house-of-zup.jpg",
       "posterEvidence": {
         "type": "flyer-front-back",
         "source": "Resident Advisor event page",
@@ -5020,7 +5026,8 @@
           "status": "watchlist",
           "lastChecked": "2026-06-14"
         }
-      ]
+      ],
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/sunset-sundays-dome.jpg"
     },
     {
       "id": "the-woods",
@@ -5080,7 +5087,7 @@
           "lastChecked": "2026-06-14"
         }
       ],
-      "posterUrl": "assets/posters/the-woods.jpg"
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/the-woods.jpg"
     },
     {
       "id": "potent-matisa",
@@ -5191,7 +5198,8 @@
           "status": "secondary",
           "lastChecked": "2026-06-11"
         }
-      ]
+      ],
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/nova-sunset-sessions-flair.jpg"
     },
     {
       "id": "fruitygroove-soul-navigator",
@@ -5316,7 +5324,7 @@
           "lastChecked": "2026-06-11"
         }
       ],
-      "posterUrl": "assets/posters/fruitygroove-soul-navigator.png"
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/fruitygroove-soul-navigator.jpg"
     },
     {
       "id": "cltx-abyss",
@@ -5388,7 +5396,7 @@
           "lastChecked": "2026-06-14"
         }
       ],
-      "posterUrl": "assets/posters/cltx-abyss.jpg"
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/cltx-abyss.jpg"
     },
     {
       "id": "potent-milo-cosmjn",
@@ -5516,7 +5524,7 @@
           "lastChecked": "2026-06-14"
         }
       ],
-      "posterUrl": "assets/posters/prgrm-021.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/prgrm-021.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -5633,7 +5641,7 @@
           "lastChecked": "2026-06-14"
         }
       ],
-      "posterUrl": "assets/posters/house-of-zup-jun7.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/house-of-zup-jun7.jpg",
       "posterEvidence": {
         "type": "flyer-front-back",
         "source": "Resident Advisor event page",
@@ -5701,7 +5709,7 @@
           "lastChecked": "2026-06-14"
         }
       ],
-      "posterUrl": "assets/posters/acierate-brvtalist.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/acierate-brvtalist.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -5776,7 +5784,7 @@
           "lastChecked": "2026-06-14"
         }
       ],
-      "posterUrl": "assets/posters/butterfree-m101.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/butterfree-m101.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -5875,7 +5883,7 @@
       "detailsUrl": "https://ra.co/events/2458581",
       "ticketUrl": "https://ra.co/events/2458581",
       "lastChecked": "2026-06-14",
-      "posterUrl": "assets/posters/19hz-fractale.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/19hz-fractale.jpg",
       "lineup": [
         {
           "name": "Siesta",
@@ -5969,7 +5977,7 @@
       "detailsUrl": "https://ra.co/events/2450615",
       "ticketUrl": "https://ra.co/events/2450615",
       "lastChecked": "2026-06-14",
-      "posterUrl": "assets/posters/dirty-beats.png",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/dirty-beats.jpg",
       "lineup": [
         {
           "name": "D_z",
@@ -6112,7 +6120,7 @@
           "lastChecked": "2026-06-14"
         }
       ],
-      "posterUrl": "assets/posters/darker-than-wax-dean-chew.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/darker-than-wax-dean-chew.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -6211,7 +6219,7 @@
           "lastChecked": "2026-06-14"
         }
       ],
-      "posterUrl": "assets/posters/gully-riddim-mssingno.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/gully-riddim-mssingno.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -6290,7 +6298,7 @@
           "lastChecked": "2026-06-14"
         }
       ],
-      "posterUrl": "assets/posters/interzone-summer-time.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/interzone-summer-time.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -6357,7 +6365,7 @@
           "lastChecked": "2026-06-14"
         }
       ],
-      "posterUrl": "assets/posters/janein.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/janein.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -6432,7 +6440,7 @@
           "lastChecked": "2026-06-14"
         }
       ],
-      "posterUrl": "assets/posters/tham.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/tham.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -7437,7 +7445,7 @@
           "lastChecked": "2026-06-11"
         }
       ],
-      "posterUrl": "assets/posters/milo-cosmjn.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/milo-cosmjn.jpg",
       "description": "Late POTENT booking with Milo Raad, Cosmjn, and GaoQiao; useful for deeper rolling club music and after-midnight listening, with RA carrying the core date, venue, lineup, price, and age facts."
     },
     {
@@ -7517,7 +7525,7 @@
           "lastChecked": "2026-06-11"
         }
       ],
-      "posterUrl": "assets/posters/kollin.jpg"
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/kollin.jpg"
     },
     {
       "id": "matisa-limsum",
@@ -7558,7 +7566,7 @@
           "lastChecked": "2026-06-11"
         }
       ],
-      "posterUrl": "assets/posters/matisa-limsum.jpg"
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/matisa-limsum.jpg"
     },
     {
       "id": "santa-k",
@@ -7614,7 +7622,7 @@
           "lastChecked": "2026-06-11"
         }
       ],
-      "posterUrl": "assets/posters/santa-k.png"
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/santa-k.jpg"
     },
     {
       "id": "synth-crush",
@@ -7663,7 +7671,7 @@
           "lastChecked": "2026-06-11"
         }
       ],
-      "posterUrl": "assets/posters/synth-crush.jpg"
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/synth-crush.jpg"
     },
     {
       "id": "fengyun-5",
@@ -7703,7 +7711,7 @@
           "lastChecked": "2026-06-11"
         }
       ],
-      "posterUrl": "assets/posters/fengyun-5.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/fengyun-5.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -7769,7 +7777,7 @@
           "lastChecked": "2026-06-11"
         }
       ],
-      "posterUrl": "assets/posters/horizon.jpg"
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/horizon.jpg"
     },
     {
       "id": "nosaj-thing",
@@ -7814,7 +7822,7 @@
           "lastChecked": "2026-06-11"
         }
       ],
-      "posterUrl": "assets/posters/nosaj-thing.png"
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/nosaj-thing.jpg"
     },
     {
       "id": "system-popup",
@@ -7921,7 +7929,7 @@
       ],
       "source": "assets/posters/heim-invites-jasmin-knopha.jpg",
       "sourceLabel": "Heim Shanghai WeChat poster/article screenshots",
-      "posterUrl": "assets/posters/heim-invites-jasmin-knopha.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/jasmin-knopha.jpg",
       "posterEvidence": {
         "type": "official-flyer-screenshot",
         "source": "Heim Shanghai WeChat/user-provided official poster screenshot",
@@ -8047,7 +8055,7 @@
       "age": "Check venue",
       "source": "assets/posters/wigwam-liminal-dreams-2026-06-20.jpg",
       "sourceLabel": "Wigwam / Liminal Dreams poster and WeChat screenshots",
-      "posterUrl": "assets/posters/wigwam-liminal-dreams-2026-06-20.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/liminal-dreams.jpg",
       "posterEvidence": {
         "type": "official-flyer-screenshot",
         "source": "Wigwam/Liminal Dreams user-provided event poster screenshot",
@@ -8185,7 +8193,7 @@
       "sourceLabel": "SmartShanghai",
       "confidence": "High",
       "description": "Hexscape presents Bi-NON and Xingrui A/V Live, a DJ/producer/VJ duo delivering hypermodern sound and visuals. Bass, post-club, hyperpop, footwork. Support from Chuan, Na$ty, and Toyn. A pick for fans of the ALL Club sound.",
-      "posterUrl": "assets/posters/hexscape.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/hexscape.jpg",
       "posterEvidence": {
         "type": "flyer-front-only",
         "source": "SmartShanghai event page",
@@ -8267,7 +8275,7 @@
           "note": "SmartShanghai lists Soulitude on the Fenrir bill."
         }
       ],
-      "posterUrl": "assets/posters/jaal-endgame.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/jaal.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Dongfang Performance / ShowStart event listing",
@@ -8328,7 +8336,7 @@
         "trusted source",
         "local promoter pedigree"
       ],
-      "posterUrl": "assets/posters/knot-truth-lies.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/truth-lies.jpg",
       "posterEvidence": {
         "type": "flyer-front-only",
         "source": "SmartShanghai event page",
@@ -8441,7 +8449,7 @@
       "sourceLabel": "SmartShanghai",
       "confidence": "High",
       "description": "Warmup party for the second edition of YOUSHAN Festival, an electronic music festival happening July 17-19 in a secret forest in Hebei. Bangkok-based DJ Sarayu headlines, with Javis, Howell, Oolong, Thomas Futoso, and Sam Tbd. House, techno, minimal, bass and breaks.",
-      "posterUrl": "assets/posters/youshan-warmup.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/youshan-warmup.jpg",
       "posterEvidence": {
         "type": "flyer-front-only",
         "source": "SmartShanghai event page",
@@ -8534,7 +8542,7 @@
           "verificationNote": "247tickets lists Jun 26, 2026 at 20:00, Star@ Cultural Center Dream Hall, 179 Yichang Lu, and 188/228/288 RMB e-ticket tiers."
         }
       ],
-      "posterUrl": "assets/posters/cyber-buddha.jpg"
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/cyber-buddha.jpg"
     },
     {
       "id": "rui-ho",
@@ -8565,7 +8573,7 @@
       "detailsUrl": "https://ra.co/events/2457307",
       "ticketUrl": "https://ra.co/events/2457307",
       "lastChecked": "2026-06-14",
-      "posterUrl": "assets/posters/nightwave.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/nightwave.jpg",
       "lineup": [
         {
           "name": "Juliano Allgayer",
@@ -8629,7 +8637,7 @@
       "detailsUrl": "https://ra.co/events/2457326",
       "ticketUrl": "https://ra.co/events/2457326",
       "lastChecked": "2026-06-14",
-      "posterUrl": "assets/posters/sunkissed.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/sunkissed.jpg",
       "lineup": [
         {
           "name": "Tom Price",
@@ -8687,7 +8695,7 @@
     {
       "id": "caroline-roxy",
       "source": "https://ra.co/events/2458079",
-      "posterUrl": "assets/posters/caroline-roxy.png",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/caroline-roxy.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -8701,7 +8709,7 @@
     {
       "id": "techno-worlds",
       "source": "https://ra.co/events/2448375",
-      "posterUrl": "assets/posters/techno-worlds.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/techno-worlds.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -8923,7 +8931,7 @@
       "sourceStatus": "smartshanghai-detail",
       "address": "Building D, C PARK, 658 Zhaohua Lu, near Zhongdeqiao Lu, Changning District",
       "organizer": "Antigen",
-      "posterUrl": "assets/posters/2026-06-26-antigen-pres-kavari.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/2026-06-26-antigen-pres-kavari.jpg",
       "posterEvidence": {
         "type": "flyer-front-only",
         "source": "SmartShanghai event page",
@@ -9025,7 +9033,7 @@
           "lastChecked": "2026-06-24"
         }
       ],
-      "posterUrl": "assets/posters/bellagio-summer-rooftop.jpg",
+      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/2026-06-27-bellagio-summer-rooftop-party.jpg",
       "posterEvidence": {
         "type": "flyer-front-only",
         "source": "SmartShanghai event page",
