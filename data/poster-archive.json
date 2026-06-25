@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T15:18:27.696Z",
+  "generatedAt": "2026-06-25T08:08:37.466Z",
   "sourceData": "data/events.json",
   "storagePolicy": {
     "mode": "static-json-plus-local-optimized-assets",
@@ -7,16 +7,16 @@
     "rule": "Use optimized display assets in the wall; keep raw poster files out of the default browsing path when the archive grows."
   },
   "stats": {
-    "posters": 78,
+    "posters": 89,
     "years": [
       2026
     ],
-    "venues": 37,
-    "optimizedCount": 75,
-    "displayBytes": 14818002,
-    "sourceBytes": 45652115,
-    "displayMegabytes": 14.13,
-    "sourceMegabytes": 43.54,
+    "venues": 40,
+    "optimizedCount": 86,
+    "displayBytes": 17319965,
+    "sourceBytes": 53034934,
+    "displayMegabytes": 16.52,
+    "sourceMegabytes": 50.58,
     "freeTierSoftCapBytes": 83886080,
     "freeTierSoftCapMegabytes": 80
   },
@@ -63,6 +63,50 @@
       },
       "eventUrl": "events/shaun-soomro-dj-serang.html",
       "notes": "RA lists a far-dated September Shanghai TBA entry for Shaun Soomro and DJ Serang. Keep it for complete RA coverage and as a future watch/context item until venue, ticket route, age policy, and current update state are confirmed."
+    },
+    {
+      "id": "shanghai-2026-jai-wolf-vas-ear-2026-08-22",
+      "eventId": "jai-wolf-vas-ear-2026-08-22",
+      "title": "Jai Wolf 2026 Summer China Tour Shanghai",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Aug 22",
+      "sortDate": "2026-08-22",
+      "time": "21:00-01:00",
+      "venue": "VAS ear",
+      "district": "Putuo",
+      "sound": "electronic, indie electronic, future bass",
+      "tags": [
+        "upcoming",
+        "medium",
+        "putuo",
+        "electronic",
+        "live",
+        "indie electronic",
+        "future bass"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "User-provided Asylum / VAS ear poster screenshots",
+        "url": "assets/posters/jai-wolf-vas-ear-2026-08-22-poster.jpg",
+        "posterEvidenceUrl": "assets/posters/jai-wolf-vas-ear-2026-08-22-poster.jpg",
+        "posterEvidenceSource": "User-provided Asylum / VAS ear poster screenshots",
+        "posterEvidenceStatus": "Posters confirm Jai Wolf 2026 Summer China Tour, Saturday August 22, 21:00-01:00, VAS ear Shanghai, support AKANE and GUGU, and VAS ear address."
+      },
+      "image": {
+        "thumbnail": "assets/posters/jai-wolf-vas-ear-2026-08-22-poster-optimized.jpg",
+        "display": "assets/posters/jai-wolf-vas-ear-2026-08-22-poster-optimized.jpg",
+        "sourceAsset": "assets/posters/jai-wolf-vas-ear-2026-08-22-poster.jpg",
+        "displayBytes": 285933,
+        "sourceBytes": 346882,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/jai-wolf-vas-ear-2026-08-22.html",
+      "notes": "User-provided Asylum / VAS ear posters place Jai Wolf in Shanghai on August 22 for the 2026 Summer China Tour, with AKANE and GUGU support. Keep as a source-backed electronic listing while ticket route, price, and age policy remain public-source gaps."
     },
     {
       "id": "shanghai-2026-lucrecia-dalt-yuyintang",
@@ -247,6 +291,49 @@
       "notes": "Large Qiantan Sports Park pop festival with official ticket channels on Damai, Maoyan, and Ticket Planet. Date, venue, and pop lineup are now corroborated by multiple public rows; keep as Watch because the techno fit is low and live ticket inventory still needs platform recheck before any purchase CTA."
     },
     {
+      "id": "shanghai-2026-anika-kunst",
+      "eventId": "anika-kunst",
+      "title": "Anika Kunst",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 27",
+      "sortDate": "2026-06-27",
+      "time": "Check venue",
+      "venue": "POTENT",
+      "district": "Huangpu",
+      "sound": "techno, house",
+      "tags": [
+        "watch",
+        "huangpu",
+        "underground",
+        "date",
+        "house",
+        "techno"
+      ],
+      "status": "watch",
+      "confidence": "Watch",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "SmartShanghai",
+        "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+        "posterEvidenceUrl": "assets/posters/potent-anika-kunst-2026-06-27.jpg",
+        "posterEvidenceSource": "User-provided poster screenshot",
+        "posterEvidenceStatus": "User-provided POTENT poster confirms Anika Kunst on June 27 and visible lineup names 10000, Anika Kunst, DJ EBP, Chica, Fat-K, and Crystal Q."
+      },
+      "image": {
+        "thumbnail": "assets/posters/potent-anika-kunst-2026-06-27-optimized.jpg",
+        "display": "assets/posters/potent-anika-kunst-2026-06-27-optimized.jpg",
+        "sourceAsset": "assets/posters/potent-anika-kunst-2026-06-27.jpg",
+        "displayBytes": 214243,
+        "sourceBytes": 356850,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/anika-kunst.html",
+      "notes": "Watch-level POTENT lead: SmartShanghai names Anika Kunst with 10000 and DJ EBP, and RA profile context supports the techno/house fit, but verify the current POTENT ticket route and final set order before planning around it."
+    },
+    {
       "id": "shanghai-2026-abyss-cum-chemical-love",
       "eventId": "abyss-cum-chemical-love",
       "title": "C.U.M. Chemical Love",
@@ -322,16 +409,16 @@
       "source": {
         "label": "Yuyuan WeChat mini-program ticketing + Heim WeChat screenshots",
         "url": "assets/posters/heim-discchef-roto-ticket.jpg",
-        "posterEvidenceUrl": "assets/posters/heim-discchef-roto-ticket.jpg",
-        "posterEvidenceSource": "Yuyuan WeChat mini-program ticketing screenshot manually confirmed by user",
-        "posterEvidenceStatus": "Ticketing screen confirms DiscChef 2yrs Anniversary w/Roto, 2026-06-27 22:00, price from 66 RMB, Changle Road M101 Heim, e-ticket, standing event, and no-refund label. Poster wall uses the cropped upper cover image without the lower ticketing menu; the original Yuyuan ticketing screenshot is retained as evidence. No public web ticket URL was captured."
+        "posterEvidenceUrl": "assets/posters/heim-discchef-roto-anniversary-2026-06-27.jpg",
+        "posterEvidenceSource": "User-provided poster screenshot",
+        "posterEvidenceStatus": "User-provided DiscChef poster confirms June 27 at Heim, the 2nd anniversary party with Roto, BIANBIAN, and 2Difficult, plus M101 / 462 Changle Road address text."
       },
       "image": {
-        "thumbnail": "assets/posters/heim-discchef-roto-ticket-cover-optimized.jpg",
-        "display": "assets/posters/heim-discchef-roto-ticket-cover-optimized.jpg",
-        "sourceAsset": "assets/posters/heim-discchef-roto-ticket-cover.jpg",
-        "displayBytes": 149762,
-        "sourceBytes": 191692,
+        "thumbnail": "assets/posters/heim-discchef-roto-anniversary-2026-06-27-optimized.jpg",
+        "display": "assets/posters/heim-discchef-roto-anniversary-2026-06-27-optimized.jpg",
+        "sourceAsset": "assets/posters/heim-discchef-roto-anniversary-2026-06-27.jpg",
+        "displayBytes": 202291,
+        "sourceBytes": 460246,
         "optimized": true,
         "mime": "image/jpeg"
       },
@@ -560,6 +647,50 @@
       },
       "eventUrl": "events/nova-summer-splash-pool-party.html",
       "notes": "Single-source low-techno-fit Watch lead for a daytime poolside Nova/Viva event at Radisson Blu Forest Manor Hongqiao. Check the ticket route, DJ/music brief, swim policy, and weather before treating it as useful club coverage."
+    },
+    {
+      "id": "shanghai-2026-roam-zhuo-feiyi-2026-06-27",
+      "eventId": "roam-zhuo-feiyi-2026-06-27",
+      "title": "Roam Upstairs w/ Zhuo and Feiyi (Ambient, House, Experimental)",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 27",
+      "sortDate": "2026-06-27",
+      "time": "22:00-04:00",
+      "venue": "Roam",
+      "district": "Jing'an",
+      "sound": "ambient, house, experimental, downtempo",
+      "tags": [
+        "upcoming",
+        "high",
+        "jing'an",
+        "ambient",
+        "experimental",
+        "house",
+        "downtempo"
+      ],
+      "status": "upcoming",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "SmartShanghai",
+        "url": "https://www.smartshanghai.com/event/roam-upstairs-with-zhuo-and-feiyi-2026-06-27",
+        "posterEvidenceUrl": "assets/posters/roam-upstairs-lineup-bios-2026-06-25-to-27.jpg",
+        "posterEvidenceSource": "User-provided Roam lineup screenshot used as temporary poster",
+        "posterEvidenceStatus": "No dedicated Roam event poster was provided; using the lineup-bio screenshot as the temporary public poster. Weekly schedule evidence remains attached for date, address, and lineup confirmation."
+      },
+      "image": {
+        "thumbnail": "assets/posters/roam-upstairs-lineup-bios-2026-06-25-to-27-optimized.jpg",
+        "display": "assets/posters/roam-upstairs-lineup-bios-2026-06-25-to-27-optimized.jpg",
+        "sourceAsset": "assets/posters/roam-upstairs-lineup-bios-2026-06-25-to-27.jpg",
+        "displayBytes": 123612,
+        "sourceBytes": 563117,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/roam-zhuo-feiyi-2026-06-27.html",
+      "notes": "Guests Feiyi and Zhuo join resident DJ Jill for a journey into experimental, downtempo, ambient, and house on the third floor. Free entry."
     },
     {
       "id": "shanghai-2026-2026-06-27-bellagio-summer-rooftop-party",
@@ -831,6 +962,49 @@
       "notes": "PLAYGROUND presents Dark RoOm at Dirty House with an RA-published techno running order from D_z through MegaWatts, NAKIN, and Marcus."
     },
     {
+      "id": "shanghai-2026-2026-06-26-drum-inferno-call-a-taxi-shanghao-meer",
+      "eventId": "2026-06-26-drum-inferno-call-a-taxi-shanghao-meer",
+      "title": "Drum Inferno w/ Call a Taxi, Shanghao, and meer",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 26",
+      "sortDate": "2026-06-26",
+      "time": "22:00-05:00",
+      "venue": "POTENT Shanghai",
+      "district": "Shanghai",
+      "sound": "underground",
+      "tags": [
+        "watch",
+        "shanghai",
+        "drum-and-bass",
+        "dubstep",
+        "breaks",
+        "underground"
+      ],
+      "status": "watch",
+      "confidence": "Watch",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2469574",
+        "posterEvidenceUrl": "assets/posters/potent-drum-inferno-2026-06-26.jpg",
+        "posterEvidenceSource": "User-provided poster screenshot",
+        "posterEvidenceStatus": "User-provided POTENT poster confirms Drum Inferno on June 26 with Call a Taxi, Shenghao/Shanghao, meer., Yomi, Fat-K, and Yann visible on the flyer."
+      },
+      "image": {
+        "thumbnail": "assets/posters/potent-drum-inferno-2026-06-26-optimized.jpg",
+        "display": "assets/posters/potent-drum-inferno-2026-06-26-optimized.jpg",
+        "sourceAsset": "assets/posters/potent-drum-inferno-2026-06-26.jpg",
+        "displayBytes": 182925,
+        "sourceBytes": 329242,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/2026-06-26-drum-inferno-call-a-taxi-shanghao-meer.html",
+      "notes": "Drum Inferno 9th anniversary party with RA-listed guests Call a Taxi, Shanghao, and meer."
+    },
+    {
       "id": "shanghai-2026-heim-invites-dina",
       "eventId": "heim-invites-dina",
       "title": "Heim Invites: DINA",
@@ -859,16 +1033,16 @@
       "source": {
         "label": "Yuyuan WeChat mini-program ticketing + Heim WeChat screenshots",
         "url": "assets/posters/heim-dina-ticket.jpg",
-        "posterEvidenceUrl": "assets/posters/heim-dina-ticket.jpg",
-        "posterEvidenceSource": "Yuyuan WeChat mini-program ticketing screenshot manually confirmed by user",
-        "posterEvidenceStatus": "Ticketing screen confirms Heim Invites: DINA, 2026-06-26 22:00, price from 66 RMB, Changle Road M101 Heim, e-ticket, standing event, and no-refund label. Poster wall uses the cropped upper cover image without the lower ticketing menu; the original Yuyuan ticketing screenshot is retained as evidence. No public web ticket URL was captured."
+        "posterEvidenceUrl": "assets/posters/heim-invites-dina-2026-06-26.jpg",
+        "posterEvidenceSource": "User-provided poster screenshot",
+        "posterEvidenceStatus": "User-provided Heim poster confirms June 26, Heim Invites: DINA, and lineup DINA, Huizit, Kilo-Vee, and HeShang."
       },
       "image": {
-        "thumbnail": "assets/posters/heim-dina-ticket-cover-optimized.jpg",
-        "display": "assets/posters/heim-dina-ticket-cover-optimized.jpg",
-        "sourceAsset": "assets/posters/heim-dina-ticket-cover.jpg",
-        "displayBytes": 71836,
-        "sourceBytes": 89696,
+        "thumbnail": "assets/posters/heim-invites-dina-2026-06-26-optimized.jpg",
+        "display": "assets/posters/heim-invites-dina-2026-06-26-optimized.jpg",
+        "sourceAsset": "assets/posters/heim-invites-dina-2026-06-26.jpg",
+        "displayBytes": 148999,
+        "sourceBytes": 175106,
         "optimized": true,
         "mime": "image/jpeg"
       },
@@ -905,21 +1079,155 @@
       "source": {
         "label": "Yuyuan WeChat mini-program ticketing + Abyss June program screenshot",
         "url": "assets/posters/abyss-botox-fatal-ticket.png",
-        "posterEvidenceUrl": "assets/posters/abyss-botox-fatal-ticket.png",
-        "posterEvidenceSource": "Yuyuan WeChat mini-program ticketing screenshot manually confirmed by user, cross-checked against the Abyss June program screenshot",
-        "posterEvidenceStatus": "Ticketing screen confirms Obsesion Total / BOTOX FATAL at Abyss on 2026-06-26 22:00 with price from 90 RMB, e-ticket, no-refund label, and abyss_service customer-service route. Poster wall uses the cropped upper cover image without the lower ticketing menu; the original Yuyuan ticketing screenshot is retained as evidence. The Abyss monthly program screenshot supplies BOTOX FATAL (LIVE), TUI, Kong BB, and Noodleprince."
+        "posterEvidenceUrl": "assets/posters/botox-fatale-obsesion-total-2026-06-26.jpg",
+        "posterEvidenceSource": "User-provided poster screenshot",
+        "posterEvidenceStatus": "User-provided poster confirms Obsesion Total x Botox Fatal live on Friday June 26 and visible support names TUI, Kong BB, and Noodleprince. Existing Yuyuan/venue screenshots remain the practical source for Abyss, time, and price."
       },
       "image": {
-        "thumbnail": "assets/posters/abyss-botox-fatal-ticket-cover-optimized.jpg",
-        "display": "assets/posters/abyss-botox-fatal-ticket-cover-optimized.jpg",
-        "sourceAsset": "assets/posters/abyss-botox-fatal-ticket-cover.jpg",
-        "displayBytes": 76842,
-        "sourceBytes": 90730,
+        "thumbnail": "assets/posters/botox-fatale-obsesion-total-2026-06-26-optimized.jpg",
+        "display": "assets/posters/botox-fatale-obsesion-total-2026-06-26-optimized.jpg",
+        "sourceAsset": "assets/posters/botox-fatale-obsesion-total-2026-06-26.jpg",
+        "displayBytes": 319086,
+        "sourceBytes": 394773,
         "optimized": true,
         "mime": "image/jpeg"
       },
       "eventUrl": "events/botox-fatale.html",
       "notes": "Abyss Jun 26 Obsesion Total with BOTOX FATAL (live), TUI, Kong BB, and Noodleprince. The new Yuyuan ticketing screenshot confirms the 22:00 start, Abyss club venue, 90 RMB+ ticket tier, e-ticket state, and no-refund label, upgrading the previous watch lead into a confirmed upcoming listing."
+    },
+    {
+      "id": "shanghai-2026-roam-sam-tbd-2026-06-26",
+      "eventId": "roam-sam-tbd-2026-06-26",
+      "title": "Roam Upstairs w/ Sam Tbd (Deeper House & Techno)",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 26",
+      "sortDate": "2026-06-26",
+      "time": "22:00-04:00",
+      "venue": "Roam",
+      "district": "Jing'an",
+      "sound": "deeper house, techno, dub",
+      "tags": [
+        "upcoming",
+        "high",
+        "jing'an",
+        "house",
+        "techno",
+        "deeper house",
+        "dub"
+      ],
+      "status": "upcoming",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "SmartShanghai",
+        "url": "https://www.smartshanghai.com/event/roam-upstairs-with-sam-tbd-2026-06-26",
+        "posterEvidenceUrl": "assets/posters/roam-upstairs-lineup-bios-2026-06-25-to-27.jpg",
+        "posterEvidenceSource": "User-provided Roam lineup screenshot used as temporary poster",
+        "posterEvidenceStatus": "No dedicated Roam event poster was provided; using the lineup-bio screenshot as the temporary public poster. Weekly schedule evidence remains attached for date, address, and lineup confirmation."
+      },
+      "image": {
+        "thumbnail": "assets/posters/roam-upstairs-lineup-bios-2026-06-25-to-27-optimized.jpg",
+        "display": "assets/posters/roam-upstairs-lineup-bios-2026-06-25-to-27-optimized.jpg",
+        "sourceAsset": "assets/posters/roam-upstairs-lineup-bios-2026-06-25-to-27.jpg",
+        "displayBytes": 123612,
+        "sourceBytes": 563117,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/roam-sam-tbd-2026-06-26.html",
+      "notes": "Guest DJ/producer Sam Tbd (fka Mau Mau) plays a long set into the deeper and dubbier side of house and techno. Support from residents Bubble and Yyao."
+    },
+    {
+      "id": "shanghai-2026-devils-dancers",
+      "eventId": "devils-dancers",
+      "title": "The Devil's Dancers",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 26",
+      "sortDate": "2026-06-26",
+      "time": "22:00-03:00",
+      "venue": "Specters",
+      "district": "Changning",
+      "sound": "post-punk, cold wave, minimal wave, dark wave, shoegaze",
+      "tags": [
+        "watch",
+        "changning",
+        "experimental",
+        "underground",
+        "post-punk",
+        "cold wave",
+        "minimal wave",
+        "dark wave",
+        "shoegaze"
+      ],
+      "status": "watch",
+      "confidence": "Watch",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "SmartShanghai",
+        "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
+        "posterEvidenceUrl": "assets/posters/devils-dancers-specters-2026-06-26.jpg",
+        "posterEvidenceSource": "User-provided Specters poster and screenshots",
+        "posterEvidenceStatus": "User-provided Specters poster and screenshots confirm The Devil's Dancers on Friday June 26 at Specters, with DJ Velvet Robot, 22:00-03:00, no cover, and post-punk/minimal wave/EBM/shoegaze/indie-rock context."
+      },
+      "image": {
+        "thumbnail": "assets/posters/devils-dancers-specters-2026-06-26-optimized.jpg",
+        "display": "assets/posters/devils-dancers-specters-2026-06-26-optimized.jpg",
+        "sourceAsset": "assets/posters/devils-dancers-specters-2026-06-26.jpg",
+        "displayBytes": 205196,
+        "sourceBytes": 254866,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/devils-dancers.html",
+      "notes": "Watch-level dark-dance lead at Specters. Historical sources support The Devil's Dancers as a Velvet Robot/Specters post-punk and wave series, but verify the June 26 lineup, start time, and door state before featuring it."
+    },
+    {
+      "id": "shanghai-2026-exit-kitty-kill-2026-06-26",
+      "eventId": "exit-kitty-kill-2026-06-26",
+      "title": "WUHU: Kitty Kill",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 26",
+      "sortDate": "2026-06-26",
+      "time": "22:00-late",
+      "venue": "EXIT",
+      "district": "Changning",
+      "sound": "club, experimental electronic, bass",
+      "tags": [
+        "upcoming",
+        "medium",
+        "changning",
+        "club",
+        "experimental",
+        "experimental electronic",
+        "bass"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "User-provided EXIT poster screenshot",
+        "url": "assets/posters/exit-kitty-kill-2026-06-26.jpg",
+        "posterEvidenceUrl": "assets/posters/exit-kitty-kill-2026-06-26.jpg",
+        "posterEvidenceSource": "User-provided EXIT poster screenshot",
+        "posterEvidenceStatus": "Poster confirms WUHU: Kitty Kill, 2026-06-26, 22:00-late, EXIT, address, and visible lineup text."
+      },
+      "image": {
+        "thumbnail": "assets/posters/exit-kitty-kill-2026-06-26-optimized.jpg",
+        "display": "assets/posters/exit-kitty-kill-2026-06-26-optimized.jpg",
+        "sourceAsset": "assets/posters/exit-kitty-kill-2026-06-26.jpg",
+        "displayBytes": 387787,
+        "sourceBytes": 895831,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/exit-kitty-kill-2026-06-26.html",
+      "notes": "User-provided EXIT poster names WUHU: Kitty Kill on June 26 at EXIT, 22:00-late. Keep as a single-source experimental club lead until price, ticket route, and age policy are confirmed."
     },
     {
       "id": "shanghai-2026-suaner-lanv-guizhou-kitchen",
@@ -964,6 +1272,96 @@
       },
       "eventUrl": "events/suaner-lanv-guizhou-kitchen.html",
       "notes": "贵州厨房主题电子音乐派对，由Xingrui(VJ)、Gips、Digital Jade、ZhuoZhuo、badbadbadbad、PIBBYKILLSYOURDADDY带来多元电子音乐体验。"
+    },
+    {
+      "id": "shanghai-2026-exit-kasi-dixia-2026-06-25",
+      "eventId": "exit-kasi-dixia-2026-06-25",
+      "title": "Kasi2 Dixia",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 25",
+      "sortDate": "2026-06-25",
+      "time": "22:00-02:00",
+      "venue": "EXIT",
+      "district": "Changning",
+      "sound": "amapiano, deep house, gqom, Chinese ethnic sounds",
+      "tags": [
+        "upcoming",
+        "medium",
+        "changning",
+        "house",
+        "club",
+        "amapiano",
+        "deep house",
+        "gqom",
+        "chinese ethnic sounds"
+      ],
+      "status": "upcoming",
+      "confidence": "Medium",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "User-provided EXIT poster screenshot",
+        "url": "assets/posters/exit-kasi-dixia-2026-06-25.jpg",
+        "posterEvidenceUrl": "assets/posters/exit-kasi-dixia-2026-06-25.jpg",
+        "posterEvidenceSource": "User-provided EXIT poster screenshot",
+        "posterEvidenceStatus": "Poster confirms Kasi2 Dixia, EXIT, June 25 Thursday, amapiano/deep house/gqom/Chinese ethnic sounds, and visible running order."
+      },
+      "image": {
+        "thumbnail": "assets/posters/exit-kasi-dixia-2026-06-25-optimized.jpg",
+        "display": "assets/posters/exit-kasi-dixia-2026-06-25-optimized.jpg",
+        "sourceAsset": "assets/posters/exit-kasi-dixia-2026-06-25.jpg",
+        "displayBytes": 122681,
+        "sourceBytes": 287862,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/exit-kasi-dixia-2026-06-25.html",
+      "notes": "User-provided EXIT poster lists Kasi2 Dixia on June 25 with amapiano, deep house, gqom, and Chinese ethnic sounds. This is a broader club/electronic listing rather than a techno-first pick."
+    },
+    {
+      "id": "shanghai-2026-roam-resident-thursday-2026-06-25",
+      "eventId": "roam-resident-thursday-2026-06-25",
+      "title": "Resident Thursday w/ Di, Yyao, and Jill",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 25",
+      "sortDate": "2026-06-25",
+      "time": "22:00-03:00",
+      "venue": "Roam",
+      "district": "Jing'an",
+      "sound": "house, techno, minimal, electro",
+      "tags": [
+        "upcoming",
+        "high",
+        "jing'an",
+        "techno",
+        "house",
+        "minimal",
+        "electro"
+      ],
+      "status": "upcoming",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "SmartShanghai",
+        "url": "https://www.smartshanghai.com/event/resident-thursday-with-yyao-and-jill-house-music-techno-2026-06-25",
+        "posterEvidenceUrl": "assets/posters/roam-upstairs-lineup-bios-2026-06-25-to-27.jpg",
+        "posterEvidenceSource": "User-provided Roam lineup screenshot used as temporary poster",
+        "posterEvidenceStatus": "No dedicated Roam event poster was provided; using the lineup-bio screenshot as the temporary public poster. Weekly schedule evidence remains attached for date, address, and lineup confirmation."
+      },
+      "image": {
+        "thumbnail": "assets/posters/roam-upstairs-lineup-bios-2026-06-25-to-27-optimized.jpg",
+        "display": "assets/posters/roam-upstairs-lineup-bios-2026-06-25-to-27-optimized.jpg",
+        "sourceAsset": "assets/posters/roam-upstairs-lineup-bios-2026-06-25-to-27.jpg",
+        "displayBytes": 123612,
+        "sourceBytes": 563117,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/roam-resident-thursday-2026-06-25.html",
+      "notes": "Roam reopened after a month-long pause and remodel. Residents Jill, Di, and Yyao play house, techno, minimal, and electro on the third floor dancezone. Free entry."
     },
     {
       "id": "shanghai-2026-2026-06-24-allan-marshall-house-disco-post-punk-",
@@ -2573,6 +2971,48 @@
       "notes": "Love Bang brings The Woods to Specters for a dark dance night covering darkwave, dark italo, industrial, post-punk, EBM, sad dance music, and goth."
     },
     {
+      "id": "shanghai-2026-potent-matisa",
+      "eventId": "potent-matisa",
+      "title": "Matisa (IT) + Limsum (PH) at POTENT",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 13",
+      "sortDate": "2026-06-13",
+      "time": "TBA",
+      "venue": "POTENT",
+      "district": "Xuhui",
+      "sound": "techno, house",
+      "tags": [
+        "past",
+        "high",
+        "xuhui",
+        "techno",
+        "house"
+      ],
+      "status": "past",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2461476",
+        "posterEvidenceUrl": "assets/posters/matisa-limsum.jpg",
+        "posterEvidenceSource": "User-provided poster screenshot",
+        "posterEvidenceStatus": "User-provided POTENT poster confirms the June 13 Matisa/Limsum event and visible support names Max Shen, Chica, Fat-K, and Yann."
+      },
+      "image": {
+        "thumbnail": "assets/posters/matisa-limsum-optimized.jpg",
+        "display": "assets/posters/matisa-limsum-optimized.jpg",
+        "sourceAsset": "assets/posters/matisa-limsum.jpg",
+        "displayBytes": 155130,
+        "sourceBytes": 1230377,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/potent-matisa.html",
+      "notes": "Italian DJ/producer Matisa joins Limsum from the Philippines and POTENT resident Max Shen. Source: Resident Advisor archive. Visit https://ra.co/events/2461476 for full details."
+    },
+    {
       "id": "shanghai-2026-nosaj-thing",
       "eventId": "nosaj-thing",
       "title": "REACTOR pres. Nosaj Thing",
@@ -2843,6 +3283,48 @@
       },
       "eventUrl": "events/cltx-abyss.html",
       "notes": "Abyss hosts Lethal Distortion with Parisian hard-techno artist CLTX, plus PRYMARA, WATARU, and SITU, for a trance and techno night at TX Huaihai."
+    },
+    {
+      "id": "shanghai-2026-potent-milo-cosmjn",
+      "eventId": "potent-milo-cosmjn",
+      "title": "Milo Raad (RS) + Cosmjn (RO) at POTENT",
+      "year": 2026,
+      "city": "Shanghai",
+      "country": "CN",
+      "date": "Jun 12",
+      "sortDate": "2026-06-12",
+      "time": "TBA",
+      "venue": "POTENT",
+      "district": "Xuhui",
+      "sound": "minimal, techno",
+      "tags": [
+        "past",
+        "high",
+        "xuhui",
+        "techno",
+        "minimal"
+      ],
+      "status": "past",
+      "confidence": "High",
+      "collection": "Shanghai Rave Index seed archive",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/events/2461478",
+        "posterEvidenceUrl": "assets/posters/milo-cosmjn.jpg",
+        "posterEvidenceSource": "User-provided poster screenshot",
+        "posterEvidenceStatus": "User-provided POTENT poster confirms the June 12 Milo Raad/Cosmjn event and visible support names GaoQiao, Yomi, Fat-K, and Yann."
+      },
+      "image": {
+        "thumbnail": "assets/posters/milo-cosmjn-optimized.jpg",
+        "display": "assets/posters/milo-cosmjn-optimized.jpg",
+        "sourceAsset": "assets/posters/milo-cosmjn.jpg",
+        "displayBytes": 205296,
+        "sourceBytes": 1333551,
+        "optimized": true,
+        "mime": "image/jpeg"
+      },
+      "eventUrl": "events/potent-milo-cosmjn.html",
+      "notes": "Serbian DJ Milo Raad and Romanian producer Cosmjn bring minimal/techno sounds to POTENT with GaoQiao. Source: Resident Advisor archive. Visit https://ra.co/events/2461478 for full details."
     },
     {
       "id": "shanghai-2026-prgrm-021",

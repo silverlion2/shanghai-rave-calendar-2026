@@ -1009,3 +1009,120 @@ Derived regeneration and verification:
 - `node scripts/check.js`: passed.
 - `node scripts/audit-events.js`: still fails on broad stale `lastChecked` debt across current/future rows and supporting poster/social/profile sources.
 - `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json`: still reports pre-existing sitewide audit debt, dominated by rows with missing event `source` URLs and repeated `/_vercel/insights/script.js` local-link findings.
+
+## 2026-06-23 Source Sweep First
+
+Ran the source-sweep-first workflow with `SCRAPE_NOW=2026-06-23T00:00:00+08:00`, `SCRAPE_FETCH_TIMEOUT_MS=7000`, `SCRAPE_X_FETCH_TIMEOUT_MS=3000`, and `SCRAPE_MAX_DETAIL_PAGES=4`.
+
+Sweep output:
+
+- Refreshed `data/events.json`, `data/dj-data.js`, `data/tracked-dj-itineraries.js`, regenerated 161 event detail pages, and regenerated `sitemap.xml`.
+- Preserved dated archive rows while skipping incomplete unmatched curated overlays that are not standalone events.
+- Added scraper protections for canonical `data/events.json` seeding, duplicate IDs, sparse archive schema rows, remote poster URLs, and local poster contracts.
+- Normalized `config/curated-events.json` so public `posterUrl` values point to local `assets/posters/` files, or remain poster gaps when no local poster is available.
+- SmartShanghai detail discovery parsed 4 links: Allan Marshall, Cyber Budha, Disco Ball Wednesdays, and KAVARI.
+- No social leads were collected. X/Twitter keyword routes remain token-required; RA coverage remains browser-required/stale.
+
+Post-sweep metrics:
+
+- `events`: 161
+- `future`: 32
+- `futureWatch`: 19
+- `futureCoreFieldQueue`: 30
+- `futureMissingCoreFields`: 76
+- `futureUncertainCoreFields`: 1
+- `platformVerificationQueue`: 2
+- `failedSourceReports`: 17
+- `raShanghaiCoverage`: expected 44, covered 44, upcoming expected 13, upcoming covered 13, `updatedAt=2026-06-19`, listing-label mismatch still unresolved.
+
+Verification:
+
+- `node --test tests/trust-framework.test.js`: passed.
+- `node scripts/check.js`: passed.
+- `node --check scripts/scrape-events.js`: passed.
+- `node scripts/audit-events.js`: still fails on stale future `lastChecked` values, stale RA manifest label mismatch, and unresolved current/future source freshness gaps that require Browser/Chrome or platform-native verification.
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json`: still reports sitewide audit debt, mainly stale/current source issues plus local `/_vercel/insights/script.js` findings.
+
+## 2026-06-25 Weekly Source Sweep First
+
+Ran the Shanghai source-sweep-first workflow for the current week with `SCRAPE_NOW=2026-06-25T00:00:00+08:00`, `SCRAPE_FETCH_TIMEOUT_MS=8000`, `SCRAPE_X_FETCH_TIMEOUT_MS=3000`, and `SCRAPE_MAX_DETAIL_PAGES=8`.
+
+Sweep output:
+
+- Refreshed `data/events.json`, `data/dj-data.js`, and `data/tracked-dj-itineraries.js`; regenerated 164 event detail pages, `sitemap.xml`, and `data/poster-archive.json` with 78 poster records.
+- Current canonical metrics: 164 events, 34 future, 15 future High, 12 future Watch, 32 future core-field queue rows, 68 missing future core fields, 0 uncertain future core fields, 1 platform-verification row, 81 promotion-platform routes, 90 Computer Use sources, 120 curated updates, 40 tracked DJ itinerary rows, and 17 failed source reports.
+- SmartShanghai discovery/mapping inspected 8 current-week links: Resident Thursday, Cyber Budha, KAVARI, Roam Upstairs with Sam Tbd, Cypher Park, Botox Fatal, Nova Summer Splash, and Bellagio Summer Rooftop Party. No social leads were collected.
+- Added source-backed lineup for `2026-06-26-drum-inferno-call-a-taxi-shanghao-meer` from the RA title/details path: Call a Taxi, Shanghao, and meer. Remaining public-source gaps are age and performer profile sources.
+- Added Skyline Dome address context to `2026-06-27-white-party-shanghai-s-all-white-roof` from a prior SmartShanghai venue-context page for the same venue. Remaining public-source gaps are price, age, ticket URL, and DJ UACA profile source.
+- Normalized curated poster URLs to local `assets/posters/` files where local poster evidence exists, and updated the scraper so local poster evidence wins over remote poster URLs during future sweeps.
+- Corrected generated venue/DJ watch coverage aggregation so `futureVenueWatch` and `futurePerformerWatch` count only future Watch rows, matching `scripts/audit-events.js`.
+
+Verification:
+
+- `node --test tests/trust-framework.test.js`: passed, 10/10.
+- `node scripts/check.js`: passed, 6052 local links across 198 HTML/CSS files and 50 inline scripts.
+- `node scripts/audit-events.js`: still fails on stale current/future `lastChecked` values, stale RA Shanghai coverage manifest label mismatch, stale RA/SmartShanghai/poster/social support sources, and two High rows still lacking source-backed lineups (`nova-summer-splash-pool-party`, `2026-06-27-bellagio-summer-rooftop-party`).
+- `node C:\Users\T480S\.codex\skills\rave-calendar-editor\scripts\audit-rave-site.mjs --json`: still reports pre-existing sitewide debt (`events: 164`, `djProfiles: 171`, `must_fix: 192`, `should_fix: 54`), dominated by archive thin-description/watch caveat rows, missing event source URLs, `djs.html` trust-link findings, and local `/_vercel/insights/script.js` findings.
+
+Highest-priority remaining public-source gaps for 2026-06-25 through 2026-06-28:
+
+- `anika-kunst`: missing time, price, age, and ticket URL; platform queue remains Instagram-public/index only, so keep Watch until XHS/WeChat/ticketing or visible official source confirms practical facts.
+- `truth-lies`: missing price, age, ticket URL, and performer profile sources for kumanoi and SoA.
+- `heim-invites-dina`, `botox-fatale`, `abyss-cum-chemical-love`, `heim-discchef-roto-anniversary`, and `youshan-warmup`: age/ticket URL gaps remain public-source gaps after this sweep.
+- `devils-dancers`: still missing time, price, age, ticket URL, and source-backed lineup.
+- `nova-summer-splash-pool-party` and `2026-06-27-bellagio-summer-rooftop-party`: still need source-backed lineups before the audit will accept High confidence.
+
+## 2026-06-25 User-Provided Poster Ingest
+
+Imported user-provided WeChat/temp poster evidence for current-week and future Shanghai rows after the source sweep. The ingest updated local poster assets, canonical curated overlays, generated event pages, and the poster archive.
+
+Confirmed poster-backed updates:
+
+- Added or refreshed local poster evidence for current-week rows: `botox-fatale`, `heim-invites-dina`, `heim-discchef-roto-anniversary`, `2026-06-26-drum-inferno-call-a-taxi-shanghao-meer`, `anika-kunst`, `devils-dancers`, `roam-resident-thursday-2026-06-25`, `roam-sam-tbd-2026-06-26`, and `roam-zhuo-feiyi-2026-06-27`.
+- Added two archive poster links from already-local assets: `potent-matisa` and `potent-milo-cosmjn`.
+- Added three new poster-backed Shanghai rows from visible facts: `jai-wolf-vas-ear-2026-08-22`, `exit-kitty-kill-2026-06-26`, and `exit-kasi-dixia-2026-06-25`.
+- Preserved unresolved facts as public-source gaps where the poster did not publish them, especially ticket URL, price, exact time, and performer profile sources.
+
+Skipped or left unlinked:
+
+- Joshlane image: title/date visible, but venue/source route was not clear enough to create or update a canonical row.
+- Chain Reaction Party image: date/title were visible, but venue/time/source route were not clear enough for a canonical row.
+- Eternal Bass Night image: Suzhou poster, outside the Shanghai calendar scope.
+
+Post-ingest metrics:
+
+- `events`: 167
+- `future`: 37
+- Current-week rows: 25
+- Current-week rows missing posters: 0
+- `futureCoreFieldQueue`: 32
+- `futureMissingCoreFields`: 42
+- `data/poster-archive.json`: 89 poster records
+- `curatedEventsApplied`: 124
+
+Verification:
+
+- `node --test tests/trust-framework.test.js`: passed, 10/10.
+- `node scripts/check.js`: passed, 6165 local links across 201 HTML/CSS files and 50 inline scripts.
+- `node scripts/audit-events.js`: still fails on pre-existing stale current/future source freshness, stale RA Shanghai coverage label mismatch, stale RA/SmartShanghai/poster/social support sources, and two High rows lacking source-backed lineups (`nova-summer-splash-pool-party`, `2026-06-27-bellagio-summer-rooftop-party`).
+
+## 2026-06-25 Roam Temporary Poster Override
+
+Per user direction, switched the three current-week Roam/糊游 rows to use the lineup-bio screenshot as the temporary public poster because Roam has not provided dedicated event posters:
+
+- `roam-resident-thursday-2026-06-25`
+- `roam-sam-tbd-2026-06-26`
+- `roam-zhuo-feiyi-2026-06-27`
+
+The main `posterUrl` and `posterEvidence.url` for each row now point to `assets/posters/roam-upstairs-lineup-bios-2026-06-25-to-27.jpg`. The prior weekly/schedule images remain in `posterEvidence.localFiles` as event-fact evidence for dates, address, and lineups.
+
+Regenerated canonical data, DJ bundles, tracked itineraries, `data/poster-archive.json`, 167 event detail pages, and `sitemap.xml`.
+
+Verification:
+
+- `node scripts/scrape-events.js` with bounded 2026-06-25 sweep settings: passed, 167 events and 124 curated updates.
+- `npm run posters:prepare`: passed, 89 poster records.
+- `node scripts/generate-seo-pages.js`: passed, 167 event pages.
+- `node scripts/check.js`: passed, 6168 local links across 201 HTML/CSS files and 50 inline scripts.
+- `node --test tests/trust-framework.test.js`: passed, 10/10.
+- `node scripts/audit-events.js`: still fails only on the known pre-existing source freshness, RA coverage label, and two High-row lineup debts.

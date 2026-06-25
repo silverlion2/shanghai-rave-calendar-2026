@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T17:24:08.128Z",
+  "generatedAt": "2026-06-25T08:08:11.010Z",
   "verified": "2026-06-25",
   "timezone": "Asia/Shanghai",
   "sourcePriority": [
@@ -16,36 +16,36 @@
       "url": "https://www.smartshanghai.com/events/clubbing/",
       "kind": "listing",
       "sourceStatus": "primary",
-      "checkedAt": "2026-06-24",
+      "checkedAt": "2026-06-25",
       "ok": true,
       "status": 200,
       "eventLinks": 19,
       "fromCache": true,
-      "cacheAgeHours": 8.05
+      "cacheAgeHours": 4.14
     },
     {
       "label": "SmartShanghai all events",
       "url": "https://www.smartshanghai.com/events/",
       "kind": "listing",
       "sourceStatus": "primary",
-      "checkedAt": "2026-06-24",
+      "checkedAt": "2026-06-25",
       "ok": true,
       "status": 200,
       "eventLinks": 45,
       "fromCache": true,
-      "cacheAgeHours": 8.05
+      "cacheAgeHours": 4.14
     },
     {
       "label": "SmartShanghai June 2026 clubbing guide",
       "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
       "kind": "guide",
       "sourceStatus": "primary",
-      "checkedAt": "2026-06-24",
+      "checkedAt": "2026-06-25",
       "ok": true,
       "status": 200,
       "eventLinks": 0,
       "fromCache": true,
-      "cacheAgeHours": 8.05
+      "cacheAgeHours": 4.14
     },
     {
       "label": "X/Twitter keyword: \"Shanghai\" techno",
@@ -5830,7 +5830,7 @@
         "riskFlags": []
       },
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/19hz-fractale.jpg",
+      "posterUrl": "assets/posters/19hz-fractale.jpg",
       "posterEvidence": {
         "type": "flyer-front-back",
         "source": "Resident Advisor event page",
@@ -5944,7 +5944,7 @@
         "riskFlags": []
       },
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/dirty-beats.jpg",
+      "posterUrl": "assets/posters/dirty-beats.png",
       "posterEvidence": {
         "type": "flyer-front-back",
         "source": "Resident Advisor event page",
@@ -6032,7 +6032,7 @@
         "riskFlags": []
       },
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/darker-than-wax-dean-chew.jpg",
+      "posterUrl": "assets/posters/darker-than-wax-dean-chew.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -6151,7 +6151,7 @@
         "riskFlags": []
       },
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/gully-riddim-mssingno.jpg",
+      "posterUrl": "assets/posters/gully-riddim-mssingno.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -6249,7 +6249,7 @@
         "riskFlags": []
       },
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/interzone-summer-time.jpg",
+      "posterUrl": "assets/posters/interzone-summer-time.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -6344,7 +6344,7 @@
       ],
       "ticketStatus": "RA lists cost at 100 RMB and minimum age 18+.",
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/janein.jpg",
+      "posterUrl": "assets/posters/janein.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -6447,7 +6447,7 @@
       ],
       "ticketStatus": "RA lists tickets from 108 RMB, minimum age 18+, and SmartShanghai/WeChat promotional links.",
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/nightwave.jpg",
+      "posterUrl": "assets/posters/nightwave.jpg",
       "posterEvidence": {
         "type": "flyer-front-back",
         "source": "Resident Advisor event page",
@@ -6550,7 +6550,7 @@
       ],
       "ticketStatus": "RA lists cost at 130 RMB and minimum age 18+.",
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/tham.jpg",
+      "posterUrl": "assets/posters/tham.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -6638,7 +6638,7 @@
         "riskFlags": []
       },
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/acierate-brvtalist.jpg",
+      "posterUrl": "assets/posters/acierate-brvtalist.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -6735,7 +6735,7 @@
         "riskFlags": []
       },
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/butterfree-m101.jpg",
+      "posterUrl": "assets/posters/butterfree-m101.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -6809,7 +6809,7 @@
       "city": "Shanghai",
       "ticketUrl": "",
       "ticketStatus": "",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/caroline-roxy.jpg",
+      "posterUrl": "assets/posters/caroline-roxy.png",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -7005,7 +7005,7 @@
       ],
       "ticketStatus": "RA lists tickets from 128 RMB, VIP/table package context, minimum age 18+, and SmartShanghai/WeChat promotional links.",
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/sunkissed.jpg",
+      "posterUrl": "assets/posters/sunkissed.jpg",
       "posterEvidence": {
         "type": "flyer-front-back",
         "source": "Resident Advisor event page",
@@ -7087,7 +7087,7 @@
       "city": "Shanghai",
       "ticketUrl": "",
       "ticketStatus": "",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/techno-worlds.jpg",
+      "posterUrl": "assets/posters/techno-worlds.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -7225,7 +7225,7 @@
         "riskFlags": []
       },
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/house-of-zup-jun7.jpg",
+      "posterUrl": "assets/posters/house-of-zup-jun7.jpg",
       "posterEvidence": {
         "type": "flyer-front-back",
         "source": "Resident Advisor event page",
@@ -7387,7 +7387,7 @@
           "assets/posters/fruitygroove-soul-navigator.png"
         ]
       },
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/fruitygroove-soul-navigator.jpg"
+      "posterUrl": "assets/posters/fruitygroove-soul-navigator.png"
     },
     {
       "id": "kollin",
@@ -7514,7 +7514,7 @@
           "assets/posters/kollin.jpg"
         ]
       },
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/kollin.jpg"
+      "posterUrl": "assets/posters/kollin.jpg"
     },
     {
       "id": "cltx-abyss",
@@ -7615,7 +7615,7 @@
           "assets/posters/cltx-abyss.jpg"
         ]
       },
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/cltx-abyss.jpg"
+      "posterUrl": "assets/posters/cltx-abyss.jpg"
     },
     {
       "id": "potent-milo-cosmjn",
@@ -7641,13 +7641,20 @@
       "description": "Serbian DJ Milo Raad and Romanian producer Cosmjn bring minimal/techno sounds to POTENT with GaoQiao. Source: Resident Advisor archive. Visit https://ra.co/events/2461478 for full details.",
       "kind": "event",
       "sourceStatus": "trusted-ra",
-      "lastChecked": "2026-06-20",
+      "lastChecked": "2026-06-25",
       "sources": [
         {
           "label": "Resident Advisor",
           "url": "https://ra.co/events/2461478",
           "status": "trusted-ra",
           "lastChecked": "2026-06-20"
+        },
+        {
+          "label": "User-provided poster screenshot",
+          "url": "assets/posters/milo-cosmjn.jpg",
+          "status": "user-provided-poster-screenshot",
+          "lastChecked": "2026-06-25",
+          "verificationNote": "User-provided POTENT poster confirms the June 12 Milo Raad/Cosmjn event and visible support names GaoQiao, Yomi, Fat-K, and Yann."
         }
       ],
       "soundTags": [
@@ -7666,10 +7673,10 @@
         "lateRoom": false,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       },
-      "recommendationReason": "Recommended because the lineup (Milo Raad, Cosmjn, and 1 more listed artist) gives the night a clear techno-first club listening draw at POTENT.",
+      "recommendationReason": "Recommended because the lineup (Milo Raad, Cosmjn, and 2 more listed artists) gives the night a clear techno-first club listening draw at POTENT.",
       "bestFor": "Readers tracking POTENT programming and Shanghai techno history.",
       "verifyBeforeGoing": "Past event; use the RA page for archive facts, not live ticket planning.",
       "sourceConfidence": "High RA archive coverage: title, date, lineup, venue, and event page verified on Resident Advisor.",
@@ -7689,11 +7696,32 @@
         {
           "name": "GaoQiao",
           "note": "RA lists GaoQiao on the lineup."
+        },
+        {
+          "name": "Yomi",
+          "note": "User-provided POTENT poster lists Yomi on the archive poster."
+        },
+        {
+          "name": "Fat-K",
+          "note": "User-provided POTENT poster lists Fat-K on the archive poster."
+        },
+        {
+          "name": "Yann",
+          "note": "User-provided POTENT poster lists Yann on the archive poster."
         }
       ],
       "ticketStatus": "Check RA for pricing. RA listing confirms age 18+.",
-      "posterUrl": "",
-      "city": "Shanghai"
+      "posterUrl": "assets/posters/milo-cosmjn.jpg",
+      "city": "Shanghai",
+      "posterEvidence": {
+        "type": "user-provided-poster-screenshot",
+        "source": "User-provided poster screenshot",
+        "url": "assets/posters/milo-cosmjn.jpg",
+        "status": "User-provided POTENT poster confirms the June 12 Milo Raad/Cosmjn event and visible support names GaoQiao, Yomi, Fat-K, and Yann.",
+        "localFiles": [
+          "assets/posters/milo-cosmjn.jpg"
+        ]
+      }
     },
     {
       "id": "prgrm-021",
@@ -7778,7 +7806,7 @@
         "riskFlags": []
       },
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/prgrm-021.jpg",
+      "posterUrl": "assets/posters/prgrm-021.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -7877,7 +7905,7 @@
       ],
       "ticketStatus": "RA lists cost at 120 RMB and minimum age 18+.",
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/fengyun-5.jpg",
+      "posterUrl": "assets/posters/fengyun-5.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -7993,7 +8021,7 @@
           "assets/posters/horizon.jpg"
         ]
       },
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/horizon.jpg"
+      "posterUrl": "assets/posters/horizon.jpg"
     },
     {
       "id": "the-woods",
@@ -8079,7 +8107,7 @@
           "assets/posters/the-woods.jpg"
         ]
       },
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/the-woods.jpg"
+      "posterUrl": "assets/posters/the-woods.jpg"
     },
     {
       "id": "potent-matisa",
@@ -8105,13 +8133,20 @@
       "description": "Italian DJ/producer Matisa joins Limsum from the Philippines and POTENT resident Max Shen. Source: Resident Advisor archive. Visit https://ra.co/events/2461476 for full details.",
       "kind": "event",
       "sourceStatus": "trusted-ra",
-      "lastChecked": "2026-06-20",
+      "lastChecked": "2026-06-25",
       "sources": [
         {
           "label": "Resident Advisor",
           "url": "https://ra.co/events/2461476",
           "status": "trusted-ra",
           "lastChecked": "2026-06-20"
+        },
+        {
+          "label": "User-provided poster screenshot",
+          "url": "assets/posters/matisa-limsum.jpg",
+          "status": "user-provided-poster-screenshot",
+          "lastChecked": "2026-06-25",
+          "verificationNote": "User-provided POTENT poster confirms the June 13 Matisa/Limsum event and visible support names Max Shen, Chica, Fat-K, and Yann."
         }
       ],
       "soundTags": [
@@ -8130,10 +8165,10 @@
         "lateRoom": false,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       },
-      "recommendationReason": "Recommended because the lineup (Matisa, Limsum, and 1 more listed artist) gives the night a clear social house, disco, or date-route electronic music draw at POTENT.",
+      "recommendationReason": "Recommended because the lineup (Matisa, Limsum, and 2 more listed artists) gives the night a clear social house, disco, or date-route electronic music draw at POTENT.",
       "bestFor": "Readers tracking POTENT programming and Shanghai techno history.",
       "verifyBeforeGoing": "Past event; use the RA page for archive facts, not live ticket planning.",
       "sourceConfidence": "High RA archive coverage: title, date, lineup, venue, and event page verified on Resident Advisor.",
@@ -8153,11 +8188,32 @@
         {
           "name": "Max Shen",
           "note": "RA lists Max Shen on the lineup."
+        },
+        {
+          "name": "Chica",
+          "note": "User-provided POTENT poster lists Chica on the archive poster."
+        },
+        {
+          "name": "Fat-K",
+          "note": "User-provided POTENT poster lists Fat-K on the archive poster."
+        },
+        {
+          "name": "Yann",
+          "note": "User-provided POTENT poster lists Yann on the archive poster."
         }
       ],
       "ticketStatus": "Check RA for pricing. RA listing confirms age 18+.",
-      "posterUrl": "",
-      "city": "Shanghai"
+      "posterUrl": "assets/posters/matisa-limsum.jpg",
+      "city": "Shanghai",
+      "posterEvidence": {
+        "type": "user-provided-poster-screenshot",
+        "source": "User-provided poster screenshot",
+        "url": "assets/posters/matisa-limsum.jpg",
+        "status": "User-provided POTENT poster confirms the June 13 Matisa/Limsum event and visible support names Max Shen, Chica, Fat-K, and Yann.",
+        "localFiles": [
+          "assets/posters/matisa-limsum.jpg"
+        ]
+      }
     },
     {
       "id": "nova-sunset-sessions-flair",
@@ -8356,7 +8412,7 @@
           "assets/posters/nosaj-thing.png"
         ]
       },
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/nosaj-thing.jpg"
+      "posterUrl": "assets/posters/nosaj-thing.png"
     },
     {
       "id": "santa-k",
@@ -8461,7 +8517,7 @@
           "assets/posters/santa-k.png"
         ]
       },
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/santa-k.jpg"
+      "posterUrl": "assets/posters/santa-k.png"
     },
     {
       "id": "synth-crush",
@@ -8563,7 +8619,7 @@
           "assets/posters/synth-crush.jpg"
         ]
       },
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/synth-crush.jpg"
+      "posterUrl": "assets/posters/synth-crush.jpg"
     },
     {
       "id": "system-popup",
@@ -8774,7 +8830,7 @@
         "riskFlags": []
       },
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/house-of-zup.jpg",
+      "posterUrl": "assets/posters/house-of-zup.jpg",
       "posterEvidence": {
         "type": "flyer-front-back",
         "source": "Resident Advisor event page",
@@ -8961,7 +9017,7 @@
       },
       "city": "Shanghai",
       "ticketUrl": "",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/wigwam-weekly-listening-golgol.jpg",
+      "posterUrl": "assets/posters/wigwam-weekly-listening-golgol-2026-06-16.jpg",
       "posterEvidence": {
         "type": "official-flyer-screenshot",
         "source": "Wigwam WeChat/user-provided event poster screenshot",
@@ -9067,7 +9123,7 @@
         "riskFlags": []
       },
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/bloom-season-1-grand-final.jpg",
+      "posterUrl": "assets/posters/bloom-season-1-grand-final.png",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -9174,7 +9230,7 @@
       },
       "city": "Shanghai",
       "ticketUrl": "",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/wigwam-weekly-listening-xiaolaba.jpg",
+      "posterUrl": "assets/posters/wigwam-weekly-listening-xiaolaba-2026-06-17.jpg",
       "posterEvidence": {
         "type": "official-flyer-screenshot",
         "source": "Wigwam WeChat/user-provided event poster screenshot",
@@ -9382,7 +9438,7 @@
         "riskFlags": []
       },
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/cybionte-solo-ykk-heshang.jpg",
+      "posterUrl": "assets/posters/cybionte-solo-ykk-heshang.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -9608,7 +9664,7 @@
         "riskFlags": []
       },
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/illum-gravity-stateofff.jpg",
+      "posterUrl": "assets/posters/illum-gravity-2026-06-18-poster.jpg",
       "posterEvidence": {
         "type": "official-poster-screenshot",
         "source": "User-provided ILLUM Shanghai poster and ticketing screenshots",
@@ -9773,7 +9829,7 @@
         "riskFlags": []
       },
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/heim-long-wave.jpg",
+      "posterUrl": "assets/posters/heim-long-wave.jpg",
       "posterEvidence": {
         "type": "official-flyer-screenshot",
         "source": "Heim Shanghai WeChat/user-provided official poster screenshot",
@@ -10127,7 +10183,7 @@
           "assets/posters/photocult-mask-desire-auction.png"
         ]
       },
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/photocult-mask-desire-auction.jpg"
+      "posterUrl": "assets/posters/photocult-mask-desire-auction.png"
     },
     {
       "id": "health-maxxing-reactor-2026-06-19",
@@ -10287,7 +10343,7 @@
       "sourceConfidence": "High-confidence user-screenshot event: the poster, Yuyuan ticket-home card, and Reactor running-order screenshot jointly confirm date, start time, venue, lineup, set times, price floor, and ticket state. No public shareable ticket URL or age policy was visible.",
       "city": "Shanghai",
       "ticketUrl": "",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/health-maxxing-reactor-2026-06-19.jpg",
+      "posterUrl": "assets/posters/health-maxxing-reactor-2026-06-19-poster.jpg",
       "posterEvidence": {
         "type": "official-poster-ticketing-and-running-order-screenshots",
         "source": "User-provided REACTOR official-account/poster and Yuyuan ticketing screenshots",
@@ -10415,7 +10471,7 @@
       },
       "city": "Shanghai",
       "ticketUrl": "",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/heim-earworthy-selected-sound.jpg",
+      "posterUrl": "assets/posters/heim-earworthy-selected-sound.jpg",
       "posterEvidence": {
         "type": "official-flyer-screenshot",
         "source": "Heim Shanghai WeChat/user-provided official poster screenshot",
@@ -10530,7 +10586,7 @@
       },
       "city": "Shanghai",
       "ticketUrl": "",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/abyss-faq-kirk.jpg",
+      "posterUrl": "assets/posters/abyss-kirk-ticket-cover.jpg",
       "posterEvidence": {
         "type": "wechat-miniprogram-ticketing-screenshot",
         "source": "Yuyuan WeChat mini-program ticketing screenshot manually confirmed by user, cross-checked against the Abyss June program screenshot",
@@ -10621,7 +10677,7 @@
       },
       "city": "Shanghai",
       "ticketUrl": "",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/hush-three-year-anniversary-dj-david-2026-06-19.jpg",
+      "posterUrl": "assets/posters/hush-three-year-anniversary-2026-06-19.jpg",
       "posterEvidence": {
         "type": "smartshanghai-event-image",
         "source": "SmartShanghai event page JSON-LD image",
@@ -10711,7 +10767,7 @@
       },
       "city": "Shanghai",
       "ticketUrl": "",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/2026-06-19-italo-disco-shanghai-s-italian-roofto.jpg",
+      "posterUrl": "assets/posters/italo-disco-skyline-dome-2026-06-19.jpg",
       "posterEvidence": {
         "type": "smartshanghai-event-image",
         "source": "SmartShanghai event page JSON-LD image",
@@ -10823,7 +10879,7 @@
           "assets/posters/mrd.png"
         ]
       },
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/mrd.jpg"
+      "posterUrl": "assets/posters/mrd.png"
     },
     {
       "id": "nikita-zabelin-potent",
@@ -10901,7 +10957,7 @@
         "riskFlags": []
       },
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/nikita-zabelin-potent.jpg",
+      "posterUrl": "assets/posters/nikita-zabelin-potent.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -11037,7 +11093,7 @@
       },
       "city": "Shanghai",
       "ticketUrl": "",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/illum-normie-10k99.jpg",
+      "posterUrl": "assets/posters/illum-normie-10k99-2026-06-19-poster.jpg",
       "posterEvidence": {
         "type": "official-poster-screenshot",
         "source": "User-provided ILLUM Shanghai poster and ticketing screenshots",
@@ -11157,7 +11213,7 @@
         "riskFlags": []
       },
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/onefortyasia-mungk-simbie.jpg",
+      "posterUrl": "assets/posters/onefortyasia-mungk-simbie.jpg",
       "posterEvidence": {
         "type": "flyer-front-back",
         "source": "Resident Advisor event page",
@@ -11246,7 +11302,7 @@
           "assets/posters/oscar-l-mim-club-optimized.jpg"
         ]
       },
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/oscar-l-mim-club.jpg"
+      "posterUrl": "assets/posters/oscar-l-mim-club-optimized.jpg"
     },
     {
       "id": "2026-06-19-vibes-up-party-reggae-dancehall-hip-h",
@@ -11339,7 +11395,7 @@
       },
       "city": "Shanghai",
       "ticketUrl": "",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/2026-06-19-vibes-up-party-reggae-dancehall-hip-h.png",
+      "posterUrl": "assets/posters/vibes-up-party-cs-2026-06-19.png",
       "posterEvidence": {
         "type": "smartshanghai-event-image",
         "source": "SmartShanghai event page JSON-LD image",
@@ -11449,7 +11505,7 @@
       },
       "city": "Shanghai",
       "ticketUrl": "",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/wigwam-weekly-listening-wheon.jpg",
+      "posterUrl": "assets/posters/wigwam-weekly-listening-wheon-2026-06-19.jpg",
       "posterEvidence": {
         "type": "official-flyer-screenshot",
         "source": "Wigwam WeChat/user-provided event poster screenshot",
@@ -11579,7 +11635,7 @@
       "verifyBeforeGoing": "Confirm current ticket inventory, final price, age policy, and any door update through RA or the Yuyuan / EXIT ticket route before going. The visible sources disagree between 88 RMB+ starting price and RA 118 RMB indexed cost.",
       "sourceConfidence": "High-confidence RA plus user-screenshot event: RA confirms the core event fields and the user-provided EXIT / ticketing screenshots corroborate poster, date, start time, local ticket route, and 88 RMB+ starting price. Direct mini-program URL and age policy remain unresolved.",
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/exit-298-steal-tapes.png",
+      "posterUrl": "assets/posters/exit-steal-tapes-2026-06-20-poster.png",
       "posterEvidence": {
         "type": "official-poster-and-ticketing-screenshots",
         "source": "User-provided EXIT Shanghai official-account and ticketing screenshots, plus RA flyer reference",
@@ -11776,7 +11832,7 @@
         "riskFlags": []
       },
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/atm-leo-monira.jpg",
+      "posterUrl": "assets/posters/atm-leo-monira.png",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -11859,7 +11915,7 @@
         "riskFlags": []
       },
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/enchanted-night-the-nest.jpg",
+      "posterUrl": "assets/posters/enchanted-night-the-nest.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -11979,7 +12035,7 @@
       },
       "city": "Shanghai",
       "ticketUrl": "",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/abyss-hardcore-melancholia.png",
+      "posterUrl": "assets/posters/abyss-hardcore-melancholia-ra-flyer.png",
       "posterEvidence": {
         "type": "resident-advisor-flyer-and-ticketing-screenshots",
         "source": "Resident Advisor event page flyer, cross-checked against user-provided Yuyuan ticketing and Abyss June program screenshots",
@@ -12131,7 +12187,7 @@
       ],
       "city": "Shanghai",
       "ticketUrl": "",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/jasmin-knopha.jpg",
+      "posterUrl": "assets/posters/heim-invites-jasmin-knopha.jpg",
       "posterEvidence": {
         "type": "official-flyer-screenshot",
         "source": "Heim Shanghai WeChat/user-provided official poster screenshot",
@@ -12286,7 +12342,7 @@
       "address": "LG Floor, C.PARK, No. 658 Zhaohua Road, Changning District, Shanghai",
       "city": "Shanghai",
       "ticketUrl": "",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/liminal-dreams.jpg",
+      "posterUrl": "assets/posters/wigwam-liminal-dreams-2026-06-20.jpg",
       "posterEvidence": {
         "type": "official-flyer-screenshot",
         "source": "Wigwam/Liminal Dreams user-provided event poster screenshot",
@@ -12398,7 +12454,7 @@
       },
       "city": "Shanghai",
       "ticketUrl": "",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/illum-soback-liquid-dolls.jpg",
+      "posterUrl": "assets/posters/illum-soback-2026-06-20-poster.jpg",
       "posterEvidence": {
         "type": "official-poster-screenshot",
         "source": "User-provided ILLUM Shanghai poster and ticketing screenshots",
@@ -12491,7 +12547,7 @@
           "assets/posters/malaa-max-shanghai-optimized.jpg"
         ]
       },
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/malaa-max-shanghai.jpg"
+      "posterUrl": "assets/posters/malaa-max-shanghai-optimized.jpg"
     },
     {
       "id": "neon-jungle-tom-kynd",
@@ -12579,7 +12635,7 @@
         "riskFlags": []
       },
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/neon-jungle-tom-kynd.jpg",
+      "posterUrl": "assets/posters/neon-jungle-tom-kynd.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -12732,7 +12788,7 @@
         "riskFlags": []
       },
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/sciahri-potent.jpg",
+      "posterUrl": "assets/posters/sciahri-potent.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -12838,7 +12894,7 @@
         "riskFlags": []
       },
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/friendsstandout.jpg",
+      "posterUrl": "assets/posters/friendsstandout.jpg",
       "posterEvidence": {
         "type": "flyer-front-back",
         "source": "Resident Advisor event page",
@@ -12996,7 +13052,7 @@
       },
       "kind": "event",
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/2026-06-21-house-of-zup-house-disco-hip-hop.png",
+      "posterUrl": "assets/posters/house-of-zup-2026-06-21-ra-flyer.png",
       "posterEvidence": {
         "type": "resident-advisor-flyer-and-user-supplied-poster",
         "source": "Resident Advisor event page flyer, matched to the user-supplied poster screenshot",
@@ -13083,6 +13139,93 @@
       }
     },
     {
+      "id": "exit-kasi-dixia-2026-06-25",
+      "kind": "event",
+      "month": "Jun",
+      "sortDate": "2026-06-25",
+      "date": "Jun 25",
+      "time": "22:00-02:00",
+      "title": "Kasi2 Dixia",
+      "venue": "EXIT",
+      "district": "Changning",
+      "vibe": [
+        "house",
+        "club"
+      ],
+      "genre": "amapiano, deep house, gqom, Chinese ethnic sounds",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "TBA",
+      "age": "Age policy not published",
+      "source": "assets/posters/exit-kasi-dixia-2026-06-25.jpg",
+      "sourceLabel": "User-provided EXIT poster screenshot",
+      "sourceStatus": "user-provided-poster-screenshot",
+      "imageTheme": "gold",
+      "description": "User-provided EXIT poster lists Kasi2 Dixia on June 25 with amapiano, deep house, gqom, and Chinese ethnic sounds. This is a broader club/electronic listing rather than a techno-first pick.",
+      "address": "298 Xingfu Road, Changning District, Shanghai",
+      "organizer": "EXIT",
+      "lastChecked": "2026-06-25",
+      "lineup": [
+        {
+          "name": "KAY",
+          "note": "Poster lists KAY at 22:00-23:30."
+        },
+        {
+          "name": "TIEHAN",
+          "note": "Poster lists TIEHAN at 23:30-01:00."
+        },
+        {
+          "name": "B2B",
+          "note": "Poster lists B2B at 01:00-02:00; exact artists not visible."
+        }
+      ],
+      "ticketStatus": "Poster confirms date, venue, style lane, and running order. Price, ticket route, and age policy were not visible in the supplied poster.",
+      "recommendationReason": "Included because the lineup (KAY, TIEHAN, and 1 more listed artist) gives social house, disco, or date-route electronic music readers a concrete reason to consider it at EXIT, even if it is not the hardest pick on the calendar.",
+      "bestFor": "Best for readers open to amapiano, gqom, deep-house, and cross-cultural club sounds.",
+      "verifyBeforeGoing": "Confirm price, ticket route, age policy, and final B2B artists before going.",
+      "sourceConfidence": "Single-source user-provided poster evidence; visible event facts only.",
+      "soundTags": [
+        "house",
+        "groovy"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "late room",
+        "lineup visible"
+      ],
+      "posterUrl": "assets/posters/exit-kasi-dixia-2026-06-25.jpg",
+      "posterEvidence": {
+        "type": "user-provided-poster-screenshot",
+        "source": "User-provided EXIT poster screenshot",
+        "url": "assets/posters/exit-kasi-dixia-2026-06-25.jpg",
+        "status": "Poster confirms Kasi2 Dixia, EXIT, June 25 Thursday, amapiano/deep house/gqom/Chinese ethnic sounds, and visible running order.",
+        "localFiles": [
+          "assets/posters/exit-kasi-dixia-2026-06-25.jpg"
+        ]
+      },
+      "sources": [
+        {
+          "label": "User-provided EXIT poster screenshot",
+          "url": "assets/posters/exit-kasi-dixia-2026-06-25.jpg",
+          "status": "user-provided-poster-screenshot",
+          "lastChecked": "2026-06-25",
+          "verificationNote": "Poster confirms date, venue, style lane, and running order. Price, ticket route, and age policy are not visible."
+        }
+      ],
+      "ticketUrl": "",
+      "decisionProfile": {
+        "intensity": "medium",
+        "credibility": "solid",
+        "lateRoom": true,
+        "ticketReady": false,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": [
+          "ticket unclear"
+        ]
+      }
+    },
+    {
       "id": "roam-resident-thursday-2026-06-25",
       "month": "Jun",
       "sortDate": "2026-06-25",
@@ -13099,7 +13242,7 @@
       "confidence": "High",
       "status": "upcoming",
       "price": "Free",
-      "age": "TBA",
+      "age": "Age policy not published",
       "ticketStatus": "Parsed from SmartShanghai; recheck same-day ticket availability and door policy before planning.",
       "source": "https://www.smartshanghai.com/event/resident-thursday-with-yyao-and-jill-house-music-techno-2026-06-25",
       "sourceLabel": "SmartShanghai",
@@ -13107,13 +13250,27 @@
       "description": "Roam reopened after a month-long pause and remodel. Residents Jill, Di, and Yyao play house, techno, minimal, and electro on the third floor dancezone. Free entry.",
       "sourceStatus": "smartshanghai-detail",
       "addedAt": "2026-06-24",
-      "lastChecked": "2026-06-24",
+      "lastChecked": "2026-06-25",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/resident-thursday-with-yyao-and-jill-house-music-techno-2026-06-25",
           "status": "smartshanghai-detail",
-          "lastChecked": "2026-06-24"
+          "lastChecked": "2026-06-25"
+        },
+        {
+          "label": "User-provided Roam weekly poster and lineup screenshot",
+          "url": "assets/posters/roam-resident-thursday.jpg",
+          "status": "user-provided-poster-screenshot",
+          "lastChecked": "2026-06-25",
+          "verificationNote": "User-provided Roam weekly poster confirms the June 25 Resident Thursday lineup Yyao, Di, and Jill, plus the 909 Yanan Zhong Road address."
+        },
+        {
+          "label": "User-provided Roam lineup screenshot used as temporary poster",
+          "url": "assets/posters/roam-upstairs-lineup-bios-2026-06-25-to-27.jpg",
+          "status": "user-provided-lineup-screenshot",
+          "lastChecked": "2026-06-25",
+          "verificationNote": "No dedicated Roam event poster was provided; use the lineup-bio screenshot as the temporary public poster. The weekly schedule screenshot remains attached and confirms the June 25 Resident Thursday lineup Yyao, Di, and Jill, plus the 909 Yanan Zhong Road address."
         }
       ],
       "ticketUrl": "",
@@ -13136,7 +13293,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       },
       "recommendationReason": "Included because the sound and room fit gives bass, breaks, 140, or UKG readers a concrete reason to consider it at Roam, even if it is not the hardest pick on the calendar.",
@@ -13159,7 +13316,17 @@
           "note": "Resident. House, techno, minimal."
         }
       ],
-      "posterUrl": ""
+      "posterUrl": "assets/posters/roam-upstairs-lineup-bios-2026-06-25-to-27.jpg",
+      "posterEvidence": {
+        "type": "user-provided-lineup-screenshot",
+        "source": "User-provided Roam lineup screenshot used as temporary poster",
+        "url": "assets/posters/roam-upstairs-lineup-bios-2026-06-25-to-27.jpg",
+        "status": "No dedicated Roam event poster was provided; using the lineup-bio screenshot as the temporary public poster. Weekly schedule evidence remains attached for date, address, and lineup confirmation.",
+        "localFiles": [
+          "assets/posters/roam-upstairs-lineup-bios-2026-06-25-to-27.jpg",
+          "assets/posters/roam-resident-thursday.jpg"
+        ]
+      }
     },
     {
       "id": "2026-06-26-antigen-pres-kavari",
@@ -13236,7 +13403,7 @@
       "ticketStatus": "Ticket source lists availability; verify before going.",
       "kind": "event",
       "sourceStatus": "smartshanghai-detail",
-      "lastChecked": "2026-06-24",
+      "lastChecked": "2026-06-25",
       "sources": [
         {
           "label": "Resident Advisor",
@@ -13248,7 +13415,7 @@
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/kavari-intense-and-emotional-experimental-club-music-2026-06-26",
           "status": "smartshanghai-detail",
-          "lastChecked": "2026-06-24"
+          "lastChecked": "2026-06-25"
         }
       ],
       "recommendationReason": "Kept on Watch because the sound and room fit points toward listening-first experimental electronics at Reactor Shanghai; wait for firmer practical details before treating it as a pick.",
@@ -13282,7 +13449,7 @@
           "note": "Support"
         }
       ],
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/2026-06-26-antigen-pres-kavari.jpg",
+      "posterUrl": "assets/posters/2026-06-26-antigen-pres-kavari.jpg",
       "posterEvidence": {
         "type": "flyer-front-only",
         "source": "SmartShanghai event page",
@@ -13317,13 +13484,13 @@
       "description": "Electronic-world-music live show with The Hymmapan Electron, Taiga, and MICO. Not a club rave, but a strong experimental electronic listing.",
       "kind": "event",
       "sourceStatus": "secondary",
-      "lastChecked": "2026-06-24",
+      "lastChecked": "2026-06-25",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
           "status": "secondary",
-          "lastChecked": "2026-06-24"
+          "lastChecked": "2026-06-25"
         },
         {
           "label": "Resident Advisor",
@@ -13414,7 +13581,7 @@
           "assets/posters/cyber-buddha.jpg"
         ]
       },
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/cyber-buddha.jpg"
+      "posterUrl": "assets/posters/cyber-buddha.jpg"
     },
     {
       "id": "dark-room",
@@ -13539,7 +13706,7 @@
           "assets/posters/dark-room.jpg"
         ]
       },
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/dark-room.jpg"
+      "posterUrl": "assets/posters/dark-room.jpg"
     },
     {
       "id": "2026-06-26-drum-inferno-call-a-taxi-shanghao-meer",
@@ -13558,7 +13725,7 @@
         "breaks"
       ],
       "genre": "underground",
-      "description": "Drum Inferno 9周年派对，嘉宾：Call a Taxi、Shanghao、meer。",
+      "description": "Drum Inferno 9th anniversary party with RA-listed guests Call a Taxi, Shanghao, and meer.",
       "ticket": {
         "currency": "CNY",
         "price": [
@@ -13569,7 +13736,7 @@
         "link": "https://ra.co/events/2469574"
       },
       "sourceUrl": "https://ra.co/events/2469574",
-      "posterUrl": null,
+      "posterUrl": "assets/posters/potent-drum-inferno-2026-06-26.jpg",
       "published": true,
       "soundTags": [
         "bass-hybrid"
@@ -13578,6 +13745,7 @@
         "strong techno fit",
         "late room",
         "ticket path",
+        "lineup visible",
         "verify first"
       ],
       "decisionProfile": {
@@ -13585,11 +13753,10 @@
         "credibility": "unconfirmed",
         "lateRoom": true,
         "ticketReady": true,
-        "hasLineup": false,
-        "hasPoster": false,
+        "hasLineup": true,
+        "hasPoster": true,
         "riskFlags": [
-          "watchlist",
-          "lineup limited"
+          "watchlist"
         ]
       },
       "isCurated": false,
@@ -13607,7 +13774,7 @@
       "confidence": "Watch",
       "status": "watch",
       "price": "80-120 RMB",
-      "age": "TBA",
+      "age": "Age policy not published",
       "source": "https://ra.co/events/2469574",
       "sourceLabel": "Resident Advisor",
       "imageTheme": "rose",
@@ -13615,19 +13782,49 @@
       "ticketStatus": "Ticket source lists availability; verify before going.",
       "kind": "event",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-08",
+      "lastChecked": "2026-06-25",
       "sources": [
         {
           "label": "Resident Advisor",
           "url": "https://ra.co/events/2469574",
           "status": "watchlist",
           "lastChecked": "2026-06-08"
+        },
+        {
+          "label": "User-provided poster screenshot",
+          "url": "assets/posters/potent-drum-inferno-2026-06-26.jpg",
+          "status": "user-provided-poster-screenshot",
+          "lastChecked": "2026-06-25",
+          "verificationNote": "User-provided POTENT poster confirms Drum Inferno on June 26 with Call a Taxi, Shenghao/Shanghao, meer., Yomi, Fat-K, and Yann visible on the flyer."
         }
       ],
-      "recommendationReason": "Kept on Watch because the sound and room fit points toward bass, breaks, 140, or UKG at POTENT Shanghai; wait for firmer practical details before treating it as a pick.",
+      "recommendationReason": "Kept on Watch because the lineup (Call a Taxi, Shanghao, and 1 more listed artist) points toward bass, breaks, 140, or UKG at POTENT Shanghai; wait for firmer practical details before treating it as a pick.",
       "bestFor": "Best for bass, breaks, dubstep, jungle, UKG, and high-energy club-adjacent listeners.",
       "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
-      "sourceConfidence": "Watch-level confidence from Resident Advisor; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence."
+      "sourceConfidence": "Watch-level confidence from Resident Advisor; RA source text names the date, venue, ticket link, and guest artists, but direct venue/promoter confirmation, poster, and age policy are still public-source gaps.",
+      "lineup": [
+        {
+          "name": "Yomi",
+          "note": "User-provided POTENT poster lists Yomi on the June 26 Drum Inferno flyer."
+        },
+        {
+          "name": "Fat-K",
+          "note": "User-provided POTENT poster lists Fat-K on the June 26 Drum Inferno flyer."
+        },
+        {
+          "name": "Yann",
+          "note": "User-provided POTENT poster lists Yann on the June 26 Drum Inferno flyer."
+        }
+      ],
+      "posterEvidence": {
+        "type": "user-provided-poster-screenshot",
+        "source": "User-provided poster screenshot",
+        "url": "assets/posters/potent-drum-inferno-2026-06-26.jpg",
+        "status": "User-provided POTENT poster confirms Drum Inferno on June 26 with Call a Taxi, Shenghao/Shanghao, meer., Yomi, Fat-K, and Yann visible on the flyer.",
+        "localFiles": [
+          "assets/posters/potent-drum-inferno-2026-06-26.jpg"
+        ]
+      }
     },
     {
       "id": "heim-invites-dina",
@@ -13646,7 +13843,7 @@
       "confidence": "Medium",
       "status": "upcoming",
       "price": "66 RMB+",
-      "age": "Check venue",
+      "age": "Age policy not published",
       "source": "assets/posters/heim-dina-ticket.jpg",
       "sourceLabel": "Yuyuan WeChat mini-program ticketing + Heim WeChat screenshots",
       "imageTheme": "rose",
@@ -13655,7 +13852,7 @@
       "sourceStatus": "wechat-miniprogram-ticketing",
       "address": "M101 Room, No. 462 Changle Road, Huangpu District, Shanghai",
       "organizer": "Heim Shanghai",
-      "lastChecked": "2026-06-15",
+      "lastChecked": "2026-06-25",
       "ticketStatus": "Yuyuan WeChat mini-program ticketing screenshot, manually confirmed by the user, shows price from 66 RMB, 2026-06-26 22:00, Changle Road M101 Heim, e-ticket, standing event, and no-refund label. Direct shareable ticket URL was not captured; buy through Yuyuan or Heim customer-service route.",
       "lineup": [
         {
@@ -13703,6 +13900,13 @@
           "status": "venue-context",
           "lastChecked": "2026-06-15",
           "verificationNote": "Venue context only: supports Heim's public venue identity and location context, but the Yuyuan screenshot remains the event-level ticketing evidence."
+        },
+        {
+          "label": "User-provided poster screenshot",
+          "url": "assets/posters/heim-invites-dina-2026-06-26.jpg",
+          "status": "user-provided-poster-screenshot",
+          "lastChecked": "2026-06-25",
+          "verificationNote": "User-provided Heim poster confirms June 26, Heim Invites: DINA, and lineup DINA, Huizit, Kilo-Vee, and HeShang."
         }
       ],
       "recommendationReason": "Included because DINA gives Heim a spacious but club-forward Friday route: ambient pressure, heavy bass, and trance color, with Huizit, Kilo-Vee, and HeShang adding local support.",
@@ -13732,13 +13936,14 @@
       },
       "city": "Shanghai",
       "ticketUrl": "",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/heim-invites-dina.jpg",
+      "posterUrl": "assets/posters/heim-invites-dina-2026-06-26.jpg",
       "posterEvidence": {
-        "type": "wechat-miniprogram-ticketing-screenshot",
-        "source": "Yuyuan WeChat mini-program ticketing screenshot manually confirmed by user",
-        "url": "assets/posters/heim-dina-ticket.jpg",
-        "status": "Ticketing screen confirms Heim Invites: DINA, 2026-06-26 22:00, price from 66 RMB, Changle Road M101 Heim, e-ticket, standing event, and no-refund label. Poster wall uses the cropped upper cover image without the lower ticketing menu; the original Yuyuan ticketing screenshot is retained as evidence. No public web ticket URL was captured.",
+        "type": "user-provided-poster-screenshot",
+        "source": "User-provided poster screenshot",
+        "url": "assets/posters/heim-invites-dina-2026-06-26.jpg",
+        "status": "User-provided Heim poster confirms June 26, Heim Invites: DINA, and lineup DINA, Huizit, Kilo-Vee, and HeShang.",
         "localFiles": [
+          "assets/posters/heim-invites-dina-2026-06-26.jpg",
           "assets/posters/heim-dina-ticket-cover.jpg",
           "assets/posters/heim-dina-ticket.jpg",
           "assets/posters/heim-june-2026-schedule.jpg",
@@ -13763,20 +13968,20 @@
       "confidence": "Medium",
       "status": "upcoming",
       "price": "90 RMB+",
-      "age": "Check venue",
+      "age": "Age policy not published",
       "source": "assets/posters/abyss-botox-fatal-ticket.png",
       "sourceLabel": "Yuyuan WeChat mini-program ticketing + Abyss June program screenshot",
       "imageTheme": "steel",
       "description": "Abyss Jun 26 Obsesion Total with BOTOX FATAL (live), TUI, Kong BB, and Noodleprince. The new Yuyuan ticketing screenshot confirms the 22:00 start, Abyss club venue, 90 RMB+ ticket tier, e-ticket state, and no-refund label, upgrading the previous watch lead into a confirmed upcoming listing.",
       "kind": "event",
       "sourceStatus": "wechat-miniprogram-ticketing",
-      "lastChecked": "2026-06-15",
+      "lastChecked": "2026-06-25",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-24",
+          "lastChecked": "2026-06-25",
           "verificationNote": "SmartShanghai lists Abyss harder-end June bookings and Botox Fatale on June 26, but the guide does not expose ticket details."
         },
         {
@@ -13828,6 +14033,13 @@
           "lastChecked": "2026-06-14",
           "verificationNote": "Public search-index preview from the official Abyss account surfaced BOTOX FATAL (LIVE) with TUI, Kong BB, and Noodleprince, adjacent to a separate Saturday June 27 C.U.M listing. Use platform-native Instagram search from the Abyss account before treating the support lineup, date card, ticket route, or set times as confirmed.",
           "browserCheck": "2026-06-14 Playwright/Chrome public-session route: Instagram home exposed no usable search input; opening the official abyss_shanghai account timed out on DOMContentLoaded but showed the account title and image placeholders only. Follow-up platform checks: XHS search for Abyss + Botox Fatale + 6.26 + Shanghai redirected to a security-limit page with error 300012 / IP at risk; screenshot saved at output/playwright/xhs-botox-security-limit.png. Instagram platform search for Abyss Botox Fatale returned HTTP 429. No visible post text, date card, support lineup, ticket route, door price, or set times were confirmed; logged-in Chrome/Instagram, user-assisted XHS, or WeChat official-account search is required."
+        },
+        {
+          "label": "User-provided poster screenshot",
+          "url": "assets/posters/botox-fatale-obsesion-total-2026-06-26.jpg",
+          "status": "user-provided-poster-screenshot",
+          "lastChecked": "2026-06-25",
+          "verificationNote": "User-provided poster confirms Obsesion Total x Botox Fatal live on Friday June 26 and visible support names TUI, Kong BB, and Noodleprince. Existing Yuyuan/venue screenshots remain the practical source for Abyss, time, and price."
         }
       ],
       "soundTags": [
@@ -13879,13 +14091,14 @@
       "organizer": "Abyss Shanghai",
       "city": "Shanghai",
       "ticketUrl": "",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/botox-fatale.jpg",
+      "posterUrl": "assets/posters/botox-fatale-obsesion-total-2026-06-26.jpg",
       "posterEvidence": {
-        "type": "wechat-miniprogram-ticketing-screenshot",
-        "source": "Yuyuan WeChat mini-program ticketing screenshot manually confirmed by user, cross-checked against the Abyss June program screenshot",
-        "url": "assets/posters/abyss-botox-fatal-ticket.png",
-        "status": "Ticketing screen confirms Obsesion Total / BOTOX FATAL at Abyss on 2026-06-26 22:00 with price from 90 RMB, e-ticket, no-refund label, and abyss_service customer-service route. Poster wall uses the cropped upper cover image without the lower ticketing menu; the original Yuyuan ticketing screenshot is retained as evidence. The Abyss monthly program screenshot supplies BOTOX FATAL (LIVE), TUI, Kong BB, and Noodleprince.",
+        "type": "user-provided-poster-screenshot",
+        "source": "User-provided poster screenshot",
+        "url": "assets/posters/botox-fatale-obsesion-total-2026-06-26.jpg",
+        "status": "User-provided poster confirms Obsesion Total x Botox Fatal live on Friday June 26 and visible support names TUI, Kong BB, and Noodleprince. Existing Yuyuan/venue screenshots remain the practical source for Abyss, time, and price.",
         "localFiles": [
+          "assets/posters/botox-fatale-obsesion-total-2026-06-26.jpg",
           "assets/posters/abyss-botox-fatal-ticket-cover.jpg",
           "assets/posters/abyss-botox-fatal-ticket.png",
           "assets/posters/abyss-june-2026-program.png"
@@ -13909,7 +14122,7 @@
       "confidence": "High",
       "status": "upcoming",
       "price": "TBA",
-      "age": "TBA",
+      "age": "Age policy not published",
       "ticketStatus": "Parsed from SmartShanghai; recheck same-day ticket availability and door policy before planning.",
       "source": "https://www.smartshanghai.com/event/roam-upstairs-with-sam-tbd-2026-06-26",
       "sourceLabel": "SmartShanghai",
@@ -13917,13 +14130,27 @@
       "description": "Guest DJ/producer Sam Tbd (fka Mau Mau) plays a long set into the deeper and dubbier side of house and techno. Support from residents Bubble and Yyao.",
       "sourceStatus": "smartshanghai-detail",
       "addedAt": "2026-06-24",
-      "lastChecked": "2026-06-24",
+      "lastChecked": "2026-06-25",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/roam-upstairs-with-sam-tbd-2026-06-26",
           "status": "smartshanghai-detail",
-          "lastChecked": "2026-06-24"
+          "lastChecked": "2026-06-25"
+        },
+        {
+          "label": "User-provided Roam weekly poster and lineup screenshot",
+          "url": "assets/posters/roam-sam-tbd.jpg",
+          "status": "user-provided-poster-screenshot",
+          "lastChecked": "2026-06-25",
+          "verificationNote": "User-provided Roam weekly poster confirms the June 26 Guest Friday lineup with Sam TBD and resident DJs Yyao, Di, and Bubble; the lineup-bio screenshot adds Sam TBD, Bubble, Yyao, and Di context."
+        },
+        {
+          "label": "User-provided Roam lineup screenshot used as temporary poster",
+          "url": "assets/posters/roam-upstairs-lineup-bios-2026-06-25-to-27.jpg",
+          "status": "user-provided-lineup-screenshot",
+          "lastChecked": "2026-06-25",
+          "verificationNote": "No dedicated Roam event poster was provided; use the lineup-bio screenshot as the temporary public poster. The weekly schedule screenshot remains attached and confirms the June 26 Guest Friday lineup with Sam TBD and resident DJs Yyao, Di, and Bubble."
         }
       ],
       "technoProfileSignals": [
@@ -13951,7 +14178,7 @@
         "lateRoom": true,
         "ticketReady": false,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": [
           "ticket unclear"
         ]
@@ -13976,14 +14203,24 @@
           "note": "Resident support"
         }
       ],
-      "posterUrl": ""
+      "posterUrl": "assets/posters/roam-upstairs-lineup-bios-2026-06-25-to-27.jpg",
+      "posterEvidence": {
+        "type": "user-provided-lineup-screenshot",
+        "source": "User-provided Roam lineup screenshot used as temporary poster",
+        "url": "assets/posters/roam-upstairs-lineup-bios-2026-06-25-to-27.jpg",
+        "status": "No dedicated Roam event poster was provided; using the lineup-bio screenshot as the temporary public poster. Weekly schedule evidence remains attached for date, address, and lineup confirmation.",
+        "localFiles": [
+          "assets/posters/roam-upstairs-lineup-bios-2026-06-25-to-27.jpg",
+          "assets/posters/roam-sam-tbd.jpg"
+        ]
+      }
     },
     {
       "id": "devils-dancers",
       "month": "Jun",
       "sortDate": "2026-06-26",
       "date": "Jun 26",
-      "time": "Check venue",
+      "time": "22:00-03:00",
       "title": "The Devil's Dancers",
       "venue": "Specters",
       "district": "Changning",
@@ -13994,21 +14231,21 @@
       "genre": "post-punk, cold wave, minimal wave, dark wave, shoegaze",
       "confidence": "Watch",
       "status": "watch",
-      "price": "Check venue",
-      "age": "Check venue",
+      "price": "Free / no cover",
+      "age": "Age policy not published",
       "source": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
       "sourceLabel": "SmartShanghai",
       "imageTheme": "rose",
       "description": "Watch-level dark-dance lead at Specters. Historical sources support The Devil's Dancers as a Velvet Robot/Specters post-punk and wave series, but verify the June 26 lineup, start time, and door state before featuring it.",
       "kind": "event",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-24",
+      "lastChecked": "2026-06-25",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-24"
+          "lastChecked": "2026-06-25"
         },
         {
           "label": "SmartShanghai Specters venue context",
@@ -14037,6 +14274,13 @@
           "status": "artist-profile",
           "lastChecked": "2026-06-14",
           "verificationNote": "Profile supports Velvet Robot's post-punk/cold-wave/dark-wave/EBM/shoegaze lane and hosting role for The Devil's Dancers; not June 26 lineup confirmation."
+        },
+        {
+          "label": "User-provided Specters poster and screenshots",
+          "url": "assets/posters/devils-dancers-specters-2026-06-26.jpg",
+          "status": "user-provided-poster-screenshot",
+          "lastChecked": "2026-06-25",
+          "verificationNote": "User-provided Specters poster and screenshots confirm The Devil's Dancers on Friday June 26 at Specters, with DJ Velvet Robot, 22:00-03:00, no cover, and post-punk/minimal wave/EBM/shoegaze/indie-rock context."
         }
       ],
       "soundTags": [
@@ -14050,29 +14294,153 @@
         "high intensity",
         "listening/live angle",
         "jazz-electronic crossover",
+        "late room",
+        "ticket path",
+        "lineup visible",
         "verify first"
       ],
       "decisionProfile": {
         "intensity": "hard",
         "credibility": "unconfirmed",
-        "lateRoom": false,
-        "ticketReady": false,
-        "hasLineup": false,
-        "hasPoster": false,
+        "lateRoom": true,
+        "ticketReady": true,
+        "hasLineup": true,
+        "hasPoster": true,
         "riskFlags": [
-          "watchlist",
-          "ticket unclear",
-          "lineup limited"
+          "watchlist"
         ]
       },
-      "recommendationReason": "Kept on Watch because the sound and room fit points toward listening-first experimental electronics at Specters; wait for firmer practical details before treating it as a pick.",
+      "recommendationReason": "Kept on Watch because the lineup (Velvet Robot) points toward listening-first experimental electronics at Specters; wait for firmer practical details before treating it as a pick.",
       "bestFor": "Best as a dark-wave/post-punk monitoring lead rather than a techno-first pick.",
       "verifyBeforeGoing": "Confirm the June 26 Specters post, exact start time, door price, lineup, and whether Velvet Robot or other hosts are playing before making plans.",
-      "sourceConfidence": "Watchlist: one current event-level SmartShanghai guide lead plus venue-context address, historical SmartShanghai/BYYB context, and artist-profile context; not enough for a confirmed pick. Current lineup, start time, price, ticket route, and age policy are public-source gaps.",
-      "ticketStatus": "SmartShanghai is the current June 26 event-level lead, and SmartShanghai venue context confirms the Specters address. No same-day Specters, ticketing, or promoter detail page was found for the current lineup, start time, price, ticket route, or age policy. Prior SmartShanghai and BYYB/LocalHub rows support The Devil's Dancers as a recurring Specters/Velvet Robot dark-dance series; keep the June 26 item as Watch until those current details are direct-confirmed.",
+      "sourceConfidence": "User-provided Specters poster/screenshots confirm current date, venue, time, no-cover state, genre lane, and Velvet Robot role. Keep ticketUrl blank because no public ticket route is visible.",
+      "ticketStatus": "User-provided Specters screenshots show 22:00-03:00 and no cover for the June 26 edition. No public ticket URL is required or visible; age policy remains unpublished.",
       "address": "LG-21, B1/F, C PARK, 658 Zhaohua Lu, near Zhongdeqiao Lu, Changning District",
       "city": "Shanghai",
-      "ticketUrl": ""
+      "ticketUrl": "",
+      "posterUrl": "assets/posters/devils-dancers-specters-2026-06-26.jpg",
+      "posterEvidence": {
+        "type": "user-provided-poster-screenshot",
+        "source": "User-provided Specters poster and screenshots",
+        "url": "assets/posters/devils-dancers-specters-2026-06-26.jpg",
+        "status": "User-provided Specters poster and screenshots confirm The Devil's Dancers on Friday June 26 at Specters, with DJ Velvet Robot, 22:00-03:00, no cover, and post-punk/minimal wave/EBM/shoegaze/indie-rock context.",
+        "localFiles": [
+          "assets/posters/devils-dancers-specters-2026-06-26.jpg",
+          "assets/posters/devils-dancers-specters-details-2026-06-26.png",
+          "assets/posters/devils-dancers-velvet-robot-bio-2026-06-26.png"
+        ]
+      },
+      "lineup": [
+        {
+          "name": "Velvet Robot",
+          "note": "User-provided Specters screenshots identify Velvet Robot as the DJ for The Devil's Dancers."
+        }
+      ]
+    },
+    {
+      "id": "exit-kitty-kill-2026-06-26",
+      "kind": "event",
+      "month": "Jun",
+      "sortDate": "2026-06-26",
+      "date": "Jun 26",
+      "time": "22:00-late",
+      "title": "WUHU: Kitty Kill",
+      "venue": "EXIT",
+      "district": "Changning",
+      "vibe": [
+        "club",
+        "experimental"
+      ],
+      "genre": "club, experimental electronic, bass",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "TBA",
+      "age": "Age policy not published",
+      "source": "assets/posters/exit-kitty-kill-2026-06-26.jpg",
+      "sourceLabel": "User-provided EXIT poster screenshot",
+      "sourceStatus": "user-provided-poster-screenshot",
+      "imageTheme": "silver",
+      "description": "User-provided EXIT poster names WUHU: Kitty Kill on June 26 at EXIT, 22:00-late. Keep as a single-source experimental club lead until price, ticket route, and age policy are confirmed.",
+      "address": "298 Xingfu Road, Changning District, Shanghai",
+      "organizer": "EXIT / WUHU",
+      "lastChecked": "2026-06-25",
+      "lineup": [
+        {
+          "name": "Leekologist",
+          "note": "Name read from the user-provided EXIT poster; spelling should be rechecked against an official text source."
+        },
+        {
+          "name": "BX",
+          "note": "User-provided EXIT poster lineup."
+        },
+        {
+          "name": "uuto",
+          "note": "User-provided EXIT poster lineup."
+        },
+        {
+          "name": "sourmi",
+          "note": "Name read from the user-provided EXIT poster; spelling should be rechecked against an official text source."
+        },
+        {
+          "name": "DDJ",
+          "note": "User-provided EXIT poster lineup."
+        },
+        {
+          "name": "Qin_NUO",
+          "note": "Name read from the user-provided EXIT poster; spelling should be rechecked against an official text source."
+        }
+      ],
+      "ticketStatus": "Poster confirms date, time, venue, address, and lineup text. Price, ticket route, and age policy were not visible in the supplied poster.",
+      "recommendationReason": "Included because the lineup (Leekologist, BX, and 2 more listed artists) gives bass, breaks, 140, or UKG readers a concrete reason to consider it at EXIT, even if it is not the hardest pick on the calendar.",
+      "bestFor": "Best for bass, breaks, dubstep, jungle, UKG, and high-energy club-adjacent listeners.",
+      "verifyBeforeGoing": "Confirm price, entry policy, ticket route, and exact lineup spellings through EXIT or promoter channels before going.",
+      "sourceConfidence": "Single-source user-provided poster evidence; visible event facts only.",
+      "soundTags": [
+        "bass-hybrid",
+        "industrial",
+        "live-av",
+        "jazz-electronic"
+      ],
+      "decisionTags": [
+        "techno-adjacent",
+        "high intensity",
+        "listening/live angle",
+        "jazz-electronic crossover",
+        "late room",
+        "lineup visible",
+        "details need check"
+      ],
+      "posterUrl": "assets/posters/exit-kitty-kill-2026-06-26.jpg",
+      "posterEvidence": {
+        "type": "user-provided-poster-screenshot",
+        "source": "User-provided EXIT poster screenshot",
+        "url": "assets/posters/exit-kitty-kill-2026-06-26.jpg",
+        "status": "Poster confirms WUHU: Kitty Kill, 2026-06-26, 22:00-late, EXIT, address, and visible lineup text.",
+        "localFiles": [
+          "assets/posters/exit-kitty-kill-2026-06-26.jpg"
+        ]
+      },
+      "sources": [
+        {
+          "label": "User-provided EXIT poster screenshot",
+          "url": "assets/posters/exit-kitty-kill-2026-06-26.jpg",
+          "status": "user-provided-poster-screenshot",
+          "lastChecked": "2026-06-25",
+          "verificationNote": "Poster confirms date, time, venue, address, and lineup text. Ticket route, price, and age policy are not visible."
+        }
+      ],
+      "ticketUrl": "",
+      "decisionProfile": {
+        "intensity": "hard",
+        "credibility": "solid",
+        "lateRoom": true,
+        "ticketReady": false,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": [
+          "ticket unclear"
+        ]
+      }
     },
     {
       "id": "suaner-lanv-guizhou-kitchen",
@@ -14091,7 +14459,7 @@
       "confidence": "High",
       "status": "upcoming",
       "price": "预售 ¥60 / 现场 ¥80 / 老乡票 ¥50 (凭贵州身份证)",
-      "age": "Not listed",
+      "age": "Age policy not published",
       "source": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg",
       "sourceLabel": "User-provided poster",
       "imageTheme": "rose",
@@ -14172,7 +14540,7 @@
           "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg"
         ]
       },
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/suaner-lanv-guizhou-kitchen.jpg"
+      "posterUrl": "assets/posters/suaner-lanv-guizhou-kitchen-optimized.jpg"
     },
     {
       "id": "shanghai-mushroom-music-carnival-2026",
@@ -14191,7 +14559,7 @@
       "confidence": "Watch",
       "status": "watch",
       "price": "298 / 398 / 498 / 698 RMB",
-      "age": "Check ticketing",
+      "age": "Age policy not published",
       "source": "https://www.sina.cn/news/detail/5304003900477751.html",
       "sourceLabel": "Sina / official Weibo mirror",
       "imageTheme": "gold",
@@ -14293,7 +14661,7 @@
       "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
       "sourceConfidence": "Watch-level confidence from Sina / official Weibo mirror; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence.",
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/shanghai-mushroom-music-carnival-2026.jpg",
+      "posterUrl": "assets/posters/shanghai-mushroom-music-carnival-2026.jpg",
       "posterEvidence": {
         "type": "lineup-poster",
         "source": "Sina / Weibo lineup mirror",
@@ -14323,20 +14691,20 @@
       "confidence": "Watch",
       "status": "watch",
       "price": "Check POTENT",
-      "age": "Check venue",
+      "age": "Age policy not published",
       "source": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
       "sourceLabel": "SmartShanghai",
       "imageTheme": "gold",
       "description": "Watch-level POTENT lead: SmartShanghai names Anika Kunst with 10000 and DJ EBP, and RA profile context supports the techno/house fit, but verify the current POTENT ticket route and final set order before planning around it.",
       "kind": "event",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-24",
+      "lastChecked": "2026-06-25",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-24",
+          "lastChecked": "2026-06-25",
           "verificationNote": "SmartShanghai lists Anika Kunst at POTENT on June 27 with 10000 and DJ EBP support; no ticket price in the guide."
         },
         {
@@ -14366,6 +14734,13 @@
           "status": "venue-context",
           "lastChecked": "2026-06-14",
           "verificationNote": "RA lists POTENT at L3 TX Huaihai, 523 Huaihai Middle Road. Venue address context only; not June 27 event or ticket confirmation."
+        },
+        {
+          "label": "User-provided poster screenshot",
+          "url": "assets/posters/potent-anika-kunst-2026-06-27.jpg",
+          "status": "user-provided-poster-screenshot",
+          "lastChecked": "2026-06-25",
+          "verificationNote": "User-provided POTENT poster confirms Anika Kunst on June 27 and visible lineup names 10000, Anika Kunst, DJ EBP, Chica, Fat-K, and Crystal Q."
         }
       ],
       "soundTags": [
@@ -14387,13 +14762,13 @@
         "lateRoom": false,
         "ticketReady": false,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": [
           "watchlist",
           "ticket unclear"
         ]
       },
-      "recommendationReason": "Kept on Watch because the lineup (Anika Kunst, 10000, and 1 more listed artist) points toward social house, disco, or date-route electronic music at POTENT; wait for firmer practical details before treating it as a pick.",
+      "recommendationReason": "Kept on Watch because the lineup (Anika Kunst, 10000, and 2 more listed artists) points toward social house, disco, or date-route electronic music at POTENT; wait for firmer practical details before treating it as a pick.",
       "bestFor": "Best for a more social, house-forward, rooftop, or date-friendly electronic route.",
       "verifyBeforeGoing": "Confirm POTENT's event page, ticket route, door price, and final set order before planning around Anika Kunst.",
       "sourceConfidence": "Watchlist: SmartShanghai is the event-level source for date, venue, and lineup; RA/social sources support artist/context fit and the official POTENT social route, but not current ticketing.",
@@ -14410,11 +14785,33 @@
         {
           "name": "DJ EBP",
           "note": "SmartShanghai lists DJ EBP as POTENT support; RA profile context supports recurring Shanghai and China club appearances."
+        },
+        {
+          "name": "Chica",
+          "note": "User-provided POTENT poster lists Chica on the June 27 Anika Kunst bill."
+        },
+        {
+          "name": "Fat-K",
+          "note": "User-provided POTENT poster lists Fat-K on the June 27 Anika Kunst bill."
+        },
+        {
+          "name": "Crystal Q",
+          "note": "User-provided POTENT poster lists Crystal Q on the June 27 Anika Kunst bill."
         }
       ],
       "address": "L3 TX Huaihai, 523 Huaihai Middle Road, Huangpu District, Shanghai",
       "city": "Shanghai",
-      "ticketUrl": ""
+      "ticketUrl": "",
+      "posterUrl": "assets/posters/potent-anika-kunst-2026-06-27.jpg",
+      "posterEvidence": {
+        "type": "user-provided-poster-screenshot",
+        "source": "User-provided poster screenshot",
+        "url": "assets/posters/potent-anika-kunst-2026-06-27.jpg",
+        "status": "User-provided POTENT poster confirms Anika Kunst on June 27 and visible lineup names 10000, Anika Kunst, DJ EBP, Chica, Fat-K, and Crystal Q.",
+        "localFiles": [
+          "assets/posters/potent-anika-kunst-2026-06-27.jpg"
+        ]
+      }
     },
     {
       "id": "abyss-cum-chemical-love",
@@ -14433,7 +14830,7 @@
       "confidence": "Medium",
       "status": "upcoming",
       "price": "90 RMB+",
-      "age": "Check venue",
+      "age": "Age policy not published",
       "source": "assets/posters/abyss-cum-chemical-love-ticket.png",
       "sourceLabel": "Yuyuan WeChat mini-program ticketing + Abyss June program screenshot",
       "imageTheme": "acid",
@@ -14518,7 +14915,7 @@
       },
       "city": "Shanghai",
       "ticketUrl": "",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/abyss-cum-chemical-love.jpg",
+      "posterUrl": "assets/posters/abyss-cum-chemical-love-cover.jpg",
       "posterEvidence": {
         "type": "wechat-miniprogram-ticketing-screenshot",
         "source": "Yuyuan WeChat mini-program ticketing screenshot manually confirmed by user, cross-checked against the Abyss June program screenshot",
@@ -14549,7 +14946,7 @@
       "confidence": "Medium",
       "status": "upcoming",
       "price": "66 RMB+",
-      "age": "Check venue",
+      "age": "Age policy not published",
       "source": "assets/posters/heim-discchef-roto-ticket.jpg",
       "sourceLabel": "Yuyuan WeChat mini-program ticketing + Heim WeChat screenshots",
       "imageTheme": "acid",
@@ -14558,7 +14955,7 @@
       "sourceStatus": "wechat-miniprogram-ticketing",
       "address": "M101 Room, No. 462 Changle Road, Huangpu District, Shanghai",
       "organizer": "Heim Shanghai / DiscChef",
-      "lastChecked": "2026-06-15",
+      "lastChecked": "2026-06-25",
       "ticketStatus": "Yuyuan WeChat mini-program ticketing screenshot, manually confirmed by the user, shows price from 66 RMB, 2026-06-27 22:00, Changle Road M101 Heim, e-ticket, standing event, and no-refund label. Direct shareable ticket URL was not captured; buy through Yuyuan or Heim customer-service route.",
       "lineup": [
         {
@@ -14602,6 +14999,13 @@
           "status": "venue-context",
           "lastChecked": "2026-06-15",
           "verificationNote": "Venue context only: supports Heim's public venue identity and location context, but the Yuyuan screenshot remains the event-level ticketing evidence."
+        },
+        {
+          "label": "User-provided poster screenshot",
+          "url": "assets/posters/heim-discchef-roto-anniversary-2026-06-27.jpg",
+          "status": "user-provided-poster-screenshot",
+          "lastChecked": "2026-06-25",
+          "verificationNote": "User-provided DiscChef poster confirms June 27 at Heim, the 2nd anniversary party with Roto, BIANBIAN, and 2Difficult, plus M101 / 462 Changle Road address text."
         }
       ],
       "recommendationReason": "Included because Roto with 2Difficult and BIANBIAN points to EBM, electro, trance, and house crossover at Heim, a more dance-floor-specific reason to go than the anniversary label alone.",
@@ -14633,13 +15037,14 @@
       },
       "city": "Shanghai",
       "ticketUrl": "",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/heim-discchef-roto-anniversary.jpg",
+      "posterUrl": "assets/posters/heim-discchef-roto-anniversary-2026-06-27.jpg",
       "posterEvidence": {
-        "type": "wechat-miniprogram-ticketing-screenshot",
-        "source": "Yuyuan WeChat mini-program ticketing screenshot manually confirmed by user",
-        "url": "assets/posters/heim-discchef-roto-ticket.jpg",
-        "status": "Ticketing screen confirms DiscChef 2yrs Anniversary w/Roto, 2026-06-27 22:00, price from 66 RMB, Changle Road M101 Heim, e-ticket, standing event, and no-refund label. Poster wall uses the cropped upper cover image without the lower ticketing menu; the original Yuyuan ticketing screenshot is retained as evidence. No public web ticket URL was captured.",
+        "type": "user-provided-poster-screenshot",
+        "source": "User-provided poster screenshot",
+        "url": "assets/posters/heim-discchef-roto-anniversary-2026-06-27.jpg",
+        "status": "User-provided DiscChef poster confirms June 27 at Heim, the 2nd anniversary party with Roto, BIANBIAN, and 2Difficult, plus M101 / 462 Changle Road address text.",
         "localFiles": [
+          "assets/posters/heim-discchef-roto-anniversary-2026-06-27.jpg",
           "assets/posters/heim-discchef-roto-ticket-cover.jpg",
           "assets/posters/heim-discchef-roto-ticket.jpg",
           "assets/posters/heim-june-2026-schedule.jpg",
@@ -14664,7 +15069,7 @@
       "confidence": "High",
       "status": "upcoming",
       "price": "¥98 presale / ¥128 door",
-      "age": "Check venue",
+      "age": "Age policy not published",
       "source": "https://www.smartshanghai.com/event/hexscape-pres-bi-non-xingrui-a-v-live-bass-post-club-hyperpop-footwork-2026-06-27",
       "sourceLabel": "SmartShanghai",
       "imageTheme": "cyan",
@@ -14677,7 +15082,7 @@
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-24"
+          "lastChecked": "2026-06-25"
         },
         {
           "label": "SmartShanghai EXIT venue context",
@@ -14762,7 +15167,7 @@
       "address": "298 Xingfu Lu, near Pingwu Lu, Changning District",
       "city": "Shanghai",
       "ticketUrl": "",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/hexscape.jpg",
+      "posterUrl": "assets/posters/hexscape.jpg",
       "posterEvidence": {
         "type": "flyer-front-only",
         "source": "SmartShanghai event page",
@@ -14791,20 +15196,20 @@
       "confidence": "Watch",
       "status": "watch",
       "price": "80-140 RMB",
-      "age": "Check venue",
+      "age": "Age policy not published",
       "source": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
       "sourceLabel": "SmartShanghai",
       "imageTheme": "ember",
       "description": "Two-source Watch lead for Fenrir's Endgame metal-crossover night: SmartShanghai frames it as live acid techno with Blood of Life, Chimera Cult, and Soulitude, while the Chinese listing gives time and ticket tiers. Strong for hard/experimental readers, but still verify the actual purchase route and JAAL set timing.",
       "kind": "event",
       "sourceStatus": "watchlist",
-      "lastChecked": "2026-06-24",
+      "lastChecked": "2026-06-25",
       "sources": [
         {
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-24",
+          "lastChecked": "2026-06-25",
           "verificationNote": "SmartShanghai lists June 27 at Fenrir with JAAL The Machine plus Blood of Life, Chimera Cult, and Soulitude."
         },
         {
@@ -14882,7 +15287,7 @@
         }
       ],
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/jaal.jpg",
+      "posterUrl": "assets/posters/jaal-endgame.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Dongfang Performance / ShowStart event listing",
@@ -14911,7 +15316,7 @@
       "confidence": "High",
       "status": "upcoming",
       "price": "TBA",
-      "age": "Check venue",
+      "age": "Age policy not published",
       "source": "https://www.smartshanghai.com/event/knot-pres-qqbbg-kumanoi-soea-kawaii-hyper-pop-udg-industrial-rave-2026-06-27",
       "sourceLabel": "SmartShanghai",
       "imageTheme": "rose",
@@ -14924,7 +15329,7 @@
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-24",
+          "lastChecked": "2026-06-25",
           "verificationNote": "SmartShanghai lists June 27 at ILLUM with KNOT Truth and Lies Vol. 4, QQBBG, Liu Qoo, and hyperpop/trance/techno framing."
         },
         {
@@ -15013,7 +15418,7 @@
       "address": "LG-16, B1/F, C PARK, 658 Zhaohua Lu, near Zhongdeqiao Lu, Changning District",
       "city": "Shanghai",
       "ticketUrl": "",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/truth-lies.jpg",
+      "posterUrl": "assets/posters/knot-truth-lies.jpg",
       "posterEvidence": {
         "type": "flyer-front-only",
         "source": "SmartShanghai event page",
@@ -15042,7 +15447,7 @@
       "confidence": "High",
       "status": "upcoming",
       "price": "228 RMB+",
-      "age": "Check venue",
+      "age": "Age policy not published",
       "source": "assets/posters/le-youth-cloudsu-2026-06-27-poster.jpg",
       "sourceLabel": "Yuyuan ticketing screenshot + event poster",
       "imageTheme": "cyan",
@@ -15122,7 +15527,7 @@
       "sourceConfidence": "High-confidence user-screenshot event: clean poster and Yuyuan ticket-home screenshot jointly confirm event identity, date, time, venue/address, support lineup, price floor, ticket labels, and sold-out state. No public shareable ticket URL or age policy was visible.",
       "city": "Shanghai",
       "ticketUrl": "",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/le-youth-cloudsu-2026-06-27.jpg",
+      "posterUrl": "assets/posters/le-youth-cloudsu-2026-06-27-poster.jpg",
       "posterEvidence": {
         "type": "official-poster-and-ticketing-screenshots",
         "source": "User-provided event poster and Yuyuan ticketing screenshot",
@@ -15150,7 +15555,7 @@
       "confidence": "High",
       "status": "upcoming",
       "price": "¥198 early bird / ¥238 presale / ¥288 door (includes 1 drink)",
-      "age": "Not listed",
+      "age": "Age policy not published",
       "source": "https://www.smartshanghai.com/event/nova-events-presents-summer-splash-pool-party-2026-06-27",
       "sourceLabel": "SmartShanghai",
       "imageTheme": "cyan",
@@ -15162,13 +15567,13 @@
       "ticketUrl": "https://www.smartshanghai.com/event/nova-events-presents-summer-splash-pool-party-2026-06-27",
       "ticketStatus": "SmartShanghai lists tickets from 198 RMB and shows web, app, and WeChat buying routes.",
       "addedAt": "2026-06-08",
-      "lastChecked": "2026-06-24",
+      "lastChecked": "2026-06-25",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/nova-events-presents-summer-splash-pool-party-2026-06-27",
           "status": "smartshanghai-detail",
-          "lastChecked": "2026-06-24"
+          "lastChecked": "2026-06-25"
         }
       ],
       "kind": "event",
@@ -15201,7 +15606,7 @@
       "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
       "sourceConfidence": "Watch-level confidence from SmartShanghai; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence.",
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/nova-summer-splash-pool-party.jpg",
+      "posterUrl": "assets/posters/nova-summer-splash.jpg",
       "posterEvidence": {
         "type": "flyer-front-only",
         "source": "SmartShanghai event page",
@@ -15229,7 +15634,7 @@
       "confidence": "High",
       "status": "upcoming",
       "price": "Free",
-      "age": "TBA",
+      "age": "Age policy not published",
       "ticketStatus": "Parsed from SmartShanghai; recheck same-day ticket availability and door policy before planning.",
       "source": "https://www.smartshanghai.com/event/roam-upstairs-with-zhuo-and-feiyi-2026-06-27",
       "sourceLabel": "SmartShanghai",
@@ -15237,13 +15642,27 @@
       "description": "Guests Feiyi and Zhuo join resident DJ Jill for a journey into experimental, downtempo, ambient, and house on the third floor. Free entry.",
       "sourceStatus": "smartshanghai-detail",
       "addedAt": "2026-06-24",
-      "lastChecked": "2026-06-24",
+      "lastChecked": "2026-06-25",
       "sources": [
         {
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/roam-upstairs-with-zhuo-and-feiyi-2026-06-27",
           "status": "smartshanghai-detail",
           "lastChecked": "2026-06-24"
+        },
+        {
+          "label": "User-provided Roam weekly poster and lineup screenshot",
+          "url": "assets/posters/roam-zhuo-feiyi.jpg",
+          "status": "user-provided-poster-screenshot",
+          "lastChecked": "2026-06-25",
+          "verificationNote": "User-provided Roam weekly poster confirms the June 27 Guest Saturday lineup with Feiyi, Zhuo, and resident DJ Jill; the lineup-bio screenshot adds Feiyi, Zhuo, and Jill context."
+        },
+        {
+          "label": "User-provided Roam lineup screenshot used as temporary poster",
+          "url": "assets/posters/roam-upstairs-lineup-bios-2026-06-25-to-27.jpg",
+          "status": "user-provided-lineup-screenshot",
+          "lastChecked": "2026-06-25",
+          "verificationNote": "No dedicated Roam event poster was provided; use the lineup-bio screenshot as the temporary public poster. The weekly schedule screenshot remains attached and confirms the June 27 Guest Saturday lineup with Feiyi, Zhuo, and resident DJ Jill."
         }
       ],
       "ticketUrl": "",
@@ -15271,7 +15690,7 @@
         "lateRoom": true,
         "ticketReady": true,
         "hasLineup": true,
-        "hasPoster": false,
+        "hasPoster": true,
         "riskFlags": []
       },
       "recommendationReason": "Included because the sound and room fit gives bass, breaks, 140, or UKG readers a concrete reason to consider it at Roam, even if it is not the hardest pick on the calendar.",
@@ -15294,7 +15713,17 @@
           "note": "Resident. House."
         }
       ],
-      "posterUrl": ""
+      "posterUrl": "assets/posters/roam-upstairs-lineup-bios-2026-06-25-to-27.jpg",
+      "posterEvidence": {
+        "type": "user-provided-lineup-screenshot",
+        "source": "User-provided Roam lineup screenshot used as temporary poster",
+        "url": "assets/posters/roam-upstairs-lineup-bios-2026-06-25-to-27.jpg",
+        "status": "No dedicated Roam event poster was provided; using the lineup-bio screenshot as the temporary public poster. Weekly schedule evidence remains attached for date, address, and lineup confirmation.",
+        "localFiles": [
+          "assets/posters/roam-upstairs-lineup-bios-2026-06-25-to-27.jpg",
+          "assets/posters/roam-zhuo-feiyi.jpg"
+        ]
+      }
     },
     {
       "id": "2026-06-27-bellagio-summer-rooftop-party",
@@ -15371,7 +15800,7 @@
       "ticketStatus": "Ticket source lists availability; verify before going.",
       "kind": "event",
       "sourceStatus": "smartshanghai-detail",
-      "lastChecked": "2026-06-24",
+      "lastChecked": "2026-06-25",
       "sources": [
         {
           "label": "Resident Advisor",
@@ -15383,7 +15812,7 @@
           "label": "SmartShanghai",
           "url": "https://www.smartshanghai.com/event/bellagio-summer-rooftop-party-at-bellagio-shanghai",
           "status": "smartshanghai-detail",
-          "lastChecked": "2026-06-24"
+          "lastChecked": "2026-06-25"
         }
       ],
       "recommendationReason": "Kept on Watch because the sound and room fit points toward social house, disco, or date-route electronic music at Bellagio Shanghai; wait for firmer practical details before treating it as a pick.",
@@ -15391,7 +15820,7 @@
       "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
       "sourceConfidence": "Watch-level confidence from Resident Advisor; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence.",
       "organizer": "Space Panda",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/2026-06-27-bellagio-summer-rooftop-party.jpg",
+      "posterUrl": "assets/posters/bellagio-summer-rooftop.jpg",
       "posterEvidence": {
         "type": "flyer-front-only",
         "source": "SmartShanghai event page",
@@ -15418,7 +15847,7 @@
       "confidence": "High",
       "status": "upcoming",
       "price": "TBA",
-      "age": "Check venue",
+      "age": "Age policy not published",
       "ticketStatus": "Watchlist lead from SmartShanghai; verify ticket route, price tiers, availability, age policy, and venue details before planning.",
       "source": "https://www.smartshanghai.com/event/white-party-shanghai-s-all-white-rooftop-party-at-skyline-dome-at-skyline-dome-sushi-rooftop-lounge",
       "sourceLabel": "SmartShanghai",
@@ -15433,6 +15862,13 @@
           "url": "https://www.smartshanghai.com/event/white-party-shanghai-s-all-white-rooftop-party-at-skyline-dome-at-skyline-dome-sushi-rooftop-lounge",
           "status": "smartshanghai-detail",
           "lastChecked": "2026-06-24"
+        },
+        {
+          "label": "SmartShanghai Skyline Dome address context",
+          "url": "https://www.smartshanghai.com/event/italo-disco-shanghai-s-italian-rooftop-disco-experience",
+          "status": "venue-context",
+          "lastChecked": "2026-06-19",
+          "verificationNote": "Prior SmartShanghai Skyline Dome event page confirms the same venue address: 6/F, KS Tower, 1 Yan'an Dong Lu, near Zhongshan Dong Yi Lu, Huangpu District. Venue/address context only; not White Party ticket confirmation."
         }
       ],
       "technoProfileSignals": [
@@ -15462,8 +15898,7 @@
         "hasLineup": true,
         "hasPoster": true,
         "riskFlags": [
-          "ticket unclear",
-          "address/source check"
+          "ticket unclear"
         ]
       },
       "recommendationReason": "Kept on Watch because the sound and room fit points toward social house, disco, or date-route electronic music at Skyline Dome | Sushi Rooftop & Lounge; wait for firmer practical details before treating it as a pick.",
@@ -15482,7 +15917,7 @@
           "note": "Uplifting house"
         }
       ],
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/2026-06-27-white-party-shanghai-s-all-white-roof.jpg",
+      "posterUrl": "assets/posters/white-party-skyline.jpg",
       "posterEvidence": {
         "type": "flyer-front-only",
         "source": "SmartShanghai event page",
@@ -15491,7 +15926,8 @@
         "localFiles": [
           "assets/posters/white-party-skyline.jpg"
         ]
-      }
+      },
+      "address": "6/F, KS Tower, 1 Yan'an Dong Lu, near Zhongshan Dong Yi Lu, Huangpu District"
     },
     {
       "id": "youshan-warmup",
@@ -15514,7 +15950,7 @@
       "confidence": "High",
       "status": "upcoming",
       "price": "¥100",
-      "age": "Check venue",
+      "age": "Age policy not published",
       "source": "https://www.smartshanghai.com/event/youshan-festival-warmup-party-house-techno-minimal-bass-2026-06-27",
       "sourceLabel": "SmartShanghai",
       "imageTheme": "acid",
@@ -15527,7 +15963,7 @@
           "label": "SmartShanghai June 2026 clubbing guide",
           "url": "https://www.smartshanghai.com/articles/nightlife/the-shanghai-clubbing-guide-june-2026",
           "status": "watchlist",
-          "lastChecked": "2026-06-24",
+          "lastChecked": "2026-06-25",
           "verificationNote": "SmartShanghai lists June 27 at Wigwam as a YOUSHAN warmup and says lineup TBA."
         },
         {
@@ -15638,7 +16074,7 @@
       ],
       "city": "Shanghai",
       "ticketUrl": "",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/youshan-warmup.jpg",
+      "posterUrl": "assets/posters/youshan-warmup.jpg",
       "posterEvidence": {
         "type": "flyer-front-only",
         "source": "SmartShanghai event page",
@@ -15667,7 +16103,7 @@
       "confidence": "Watch",
       "status": "watch",
       "price": "TBA",
-      "age": "TBA",
+      "age": "Age policy not published",
       "source": "https://english.shanghai.gov.cn/en-EditorsPick-travelinshanghai/20260424/8cefc9d30b144345b2dadf8b40f4bb04.html",
       "sourceLabel": "Shanghai major events guide",
       "imageTheme": "ember",
@@ -15803,7 +16239,7 @@
       "confidence": "Watch",
       "status": "watch",
       "price": "158-188 RMB",
-      "age": "TBA",
+      "age": "Age policy not published",
       "source": "https://ra.co/events/2470387",
       "sourceLabel": "Resident Advisor",
       "imageTheme": "rose",
@@ -15843,7 +16279,7 @@
       "confidence": "Medium",
       "status": "upcoming",
       "price": "98 / 128 / 158 RMB",
-      "age": "Check venue",
+      "age": "Age policy not published",
       "ticketUrl": "https://www.showstart.com/event/300239",
       "source": "https://www.showstart.com/event/300239",
       "sourceLabel": "ShowStart listing + Yuyintang WeChat screenshots",
@@ -15938,7 +16374,7 @@
         "riskFlags": []
       },
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/yuyintang-cooling-water.jpg",
+      "posterUrl": "assets/posters/yuyintang-cooling-water-2026-07-03.jpg",
       "posterEvidence": {
         "type": "official-poster-screenshot",
         "source": "User-provided Yuyintang poster and official-account article screenshots, cross-checked against the public ShowStart event page.",
@@ -16017,7 +16453,7 @@
       "confidence": "Watch",
       "status": "watch",
       "price": "80-120 RMB",
-      "age": "TBA",
+      "age": "Age policy not published",
       "source": "https://ra.co/events/2471981",
       "sourceLabel": "Resident Advisor",
       "imageTheme": "ember",
@@ -16057,7 +16493,7 @@
       "confidence": "Watch",
       "status": "watch",
       "price": "Check MISA ticketing",
-      "age": "Check program",
+      "age": "Age policy not published",
       "source": "https://whlyj.sh.gov.cn/yshd/20260603/d869d0cd8b24484f935c5b7a9eead459.html",
       "sourceLabel": "Shanghai Municipal Administration of Culture and Tourism",
       "imageTheme": "cyan",
@@ -16148,7 +16584,7 @@
       "verifyBeforeGoing": "Confirm the latest event page, ticket availability, lineup, start time, and venue address before making plans.",
       "sourceConfidence": "Watch-level confidence from Shanghai Municipal Administration of Culture and Tourism; keep visible but verify with direct venue, promoter, ticketing, RA, or official artist evidence.",
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/misa-shanghai-summer-music-festival-2026.jpg",
+      "posterUrl": "assets/posters/misa-shanghai-summer-music-festival-2026.jpg",
       "posterEvidence": {
         "type": "festival-key-visual",
         "source": "Shanghai Municipal Administration of Culture and Tourism",
@@ -16177,7 +16613,7 @@
       "confidence": "Medium",
       "status": "upcoming",
       "price": "180 / 220 RMB",
-      "age": "Check venue",
+      "age": "Age policy not published",
       "ticketUrl": "https://www.showstart.com/event/300583",
       "source": "https://www.showstart.com/event/300583",
       "sourceLabel": "ShowStart listing + Yuyintang/SO.READY WeChat screenshots",
@@ -16274,7 +16710,7 @@
         "riskFlags": []
       },
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/lucrecia-dalt-yuyintang.jpg",
+      "posterUrl": "assets/posters/lucrecia-dalt-yuyintang-2026-07-16.jpg",
       "posterEvidence": {
         "type": "official-poster-screenshot",
         "source": "User-provided Lucrecia Dalt China tour poster and Yuyintang ticket-info screenshots, cross-checked against the public ShowStart event page.",
@@ -16306,7 +16742,7 @@
       "confidence": "High",
       "status": "upcoming",
       "price": "368 / 428 RMB",
-      "age": "Check venue",
+      "age": "Age policy not published",
       "source": "https://www.smartshanghai.com/event/badbadnotgood-live-in-shanghai-2026-2026-07-21",
       "sourceLabel": "SmartShanghai event page",
       "imageTheme": "amber",
@@ -16379,7 +16815,7 @@
       "confidence": "Watch",
       "status": "watch",
       "price": "TBA",
-      "age": "TBA",
+      "age": "Age policy not published",
       "source": "https://english.shanghai.gov.cn/en-PlanANightOut/20260608/6a9a6187e3f54378b534ec023a0b805a.html?watch=west-bund",
       "sourceLabel": "Shanghai Municipal Commission of Commerce",
       "imageTheme": "acid",
@@ -16524,6 +16960,95 @@
       "ticketUrl": ""
     },
     {
+      "id": "jai-wolf-vas-ear-2026-08-22",
+      "kind": "event",
+      "month": "Aug",
+      "sortDate": "2026-08-22",
+      "date": "Aug 22",
+      "time": "21:00-01:00",
+      "title": "Jai Wolf 2026 Summer China Tour Shanghai",
+      "venue": "VAS ear",
+      "district": "Putuo",
+      "vibe": [
+        "electronic",
+        "live"
+      ],
+      "genre": "electronic, indie electronic, future bass",
+      "confidence": "Medium",
+      "status": "upcoming",
+      "price": "TBA",
+      "age": "Age policy not published",
+      "source": "assets/posters/jai-wolf-vas-ear-2026-08-22-poster.jpg",
+      "sourceLabel": "User-provided Asylum / VAS ear poster screenshots",
+      "sourceStatus": "user-provided-poster-screenshot",
+      "imageTheme": "blue",
+      "description": "User-provided Asylum / VAS ear posters place Jai Wolf in Shanghai on August 22 for the 2026 Summer China Tour, with AKANE and GUGU support. Keep as a source-backed electronic listing while ticket route, price, and age policy remain public-source gaps.",
+      "address": "VAS ear 3F, Huxi Culture & Arts Center, No. 19 Wanhangdu Hou Road, Putuo District, Shanghai",
+      "organizer": "Asylum / VAS ear",
+      "lastChecked": "2026-06-25",
+      "lineup": [
+        {
+          "name": "Jai Wolf",
+          "note": "User-provided tour poster names Jai Wolf as the headliner."
+        },
+        {
+          "name": "AKANE",
+          "note": "User-provided tour poster lists AKANE as support."
+        },
+        {
+          "name": "GUGU",
+          "note": "User-provided tour poster lists GUGU as support."
+        }
+      ],
+      "ticketStatus": "Poster confirms date, time, venue, support lineup, and address. Public ticket route, price, and age policy were not visible in the supplied screenshots.",
+      "recommendationReason": "Included as a future electronic live/DJ listing from user-provided Asylum / VAS ear poster evidence; not promoted as a techno pick.",
+      "bestFor": "Best for readers tracking broader electronic and indie-electronic touring shows rather than basement techno.",
+      "verifyBeforeGoing": "Confirm ticket route, price tier, age policy, and live inventory before planning around it.",
+      "sourceConfidence": "Single-source user-provided poster evidence confirms the event facts visible in the image; ticketing facts remain unresolved.",
+      "soundTags": [
+        "bass-hybrid",
+        "live-av"
+      ],
+      "decisionTags": [
+        "low techno fit",
+        "listening/live angle",
+        "late room",
+        "lineup visible"
+      ],
+      "posterUrl": "assets/posters/jai-wolf-vas-ear-2026-08-22-poster.jpg",
+      "posterEvidence": {
+        "type": "user-provided-poster-screenshot",
+        "source": "User-provided Asylum / VAS ear poster screenshots",
+        "url": "assets/posters/jai-wolf-vas-ear-2026-08-22-poster.jpg",
+        "status": "Posters confirm Jai Wolf 2026 Summer China Tour, Saturday August 22, 21:00-01:00, VAS ear Shanghai, support AKANE and GUGU, and VAS ear address.",
+        "localFiles": [
+          "assets/posters/jai-wolf-vas-ear-2026-08-22-poster.jpg",
+          "assets/posters/jai-wolf-vas-ear-2026-08-22-crowd.jpg"
+        ]
+      },
+      "sources": [
+        {
+          "label": "User-provided Asylum / VAS ear poster screenshots",
+          "url": "assets/posters/jai-wolf-vas-ear-2026-08-22-poster.jpg",
+          "status": "user-provided-poster-screenshot",
+          "lastChecked": "2026-06-25",
+          "verificationNote": "Poster confirms title, date, time, venue, address, and support names; ticket route, price, and age policy are not visible."
+        }
+      ],
+      "ticketUrl": "",
+      "decisionProfile": {
+        "intensity": "high",
+        "credibility": "loose",
+        "lateRoom": true,
+        "ticketReady": false,
+        "hasLineup": true,
+        "hasPoster": true,
+        "riskFlags": [
+          "ticket unclear"
+        ]
+      }
+    },
+    {
       "id": "shaun-soomro-dj-serang",
       "month": "Sep",
       "sortDate": "2026-09-12",
@@ -16540,7 +17065,7 @@
       "confidence": "Watch",
       "status": "watch",
       "price": "Cost not listed on RA",
-      "age": "Not listed",
+      "age": "Age policy not published",
       "source": "https://ra.co/events/2232295",
       "sourceLabel": "Resident Advisor",
       "imageTheme": "cyan",
@@ -16596,7 +17121,7 @@
         ]
       },
       "city": "Shanghai",
-      "posterUrl": "https://hzosqhwwtbzczipqirgj.supabase.co/storage/v1/object/public/contribution_posters/events/shaun-soomro-dj-serang.jpg",
+      "posterUrl": "assets/posters/shaun-soomro-dj-serang.jpg",
       "posterEvidence": {
         "type": "flyer-front",
         "source": "Resident Advisor event page",
@@ -16625,7 +17150,7 @@
       "confidence": "Watch",
       "status": "watch",
       "price": "TBA",
-      "age": "TBA",
+      "age": "Age policy not published",
       "source": "https://english.shanghai.gov.cn/en-PlanANightOut/20260608/6a9a6187e3f54378b534ec023a0b805a.html?watch=tomorrowland",
       "sourceLabel": "Shanghai Municipal Commission of Commerce",
       "imageTheme": "gold",
@@ -16714,129 +17239,59 @@
   "socialLeads": [],
   "discovered": [
     {
-      "url": "https://www.smartshanghai.com/event/allan-marshall-house-disco-post-punk-left-field-2026-06-24",
-      "title": "Allan Marshall (House, Disco, Post-Punk, Left-Field)",
-      "parsed": true,
-      "checkedAt": "2026-06-24",
-      "fromCache": true
-    },
-    {
       "url": "https://www.smartshanghai.com/event/resident-thursday-with-yyao-and-jill-house-music-techno-2026-06-25",
       "title": "Resident Thursday with Di, Yyao, and Jill (House Music, Techno, Minimal)",
       "parsed": true,
-      "checkedAt": "2026-06-24",
+      "checkedAt": "2026-06-25",
       "fromCache": true
     },
     {
       "url": "https://www.smartshanghai.com/event/cyber-budha-the-hymmapan-electron-taiga-mico-2026-06-26-1",
       "title": "Cyber Budha Special Vol: Twilight in the Forbidden City with The Hymmapan Electron (TH), Taiga, and MICO",
       "parsed": true,
-      "checkedAt": "2026-06-24",
-      "fromCache": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/disco-ball-fridays-skyline-dome-at-the-dome",
-      "title": "Disco Ball Wednesdays",
-      "parsed": true,
-      "checkedAt": "2026-06-24",
+      "checkedAt": "2026-06-25",
       "fromCache": true
     },
     {
       "url": "https://www.smartshanghai.com/event/kavari-intense-and-emotional-experimental-club-music-2026-06-26",
       "title": "Kavari (Intense and Emotional Experimental Club Music)",
       "parsed": true,
-      "checkedAt": "2026-06-24",
+      "checkedAt": "2026-06-25",
       "fromCache": true
     },
     {
       "url": "https://www.smartshanghai.com/event/roam-upstairs-with-sam-tbd-2026-06-26",
       "title": "Roam Upstairs with Sam Tbd (Deeper House & Techno)",
       "parsed": true,
-      "checkedAt": "2026-06-24",
+      "checkedAt": "2026-06-25",
       "fromCache": true
     },
     {
       "url": "https://www.smartshanghai.com/event/cypher-park-live-hip-hop-house-pop-2026-06-26",
       "title": "Cypher Park (Live Hip Hop, House, Pop)",
       "parsed": true,
-      "checkedAt": "2026-06-24",
+      "checkedAt": "2026-06-25",
+      "fromCache": true
+    },
+    {
+      "url": "https://www.smartshanghai.com/event/botox-fatal-fast-dark-techno-rave-2026-06-26",
+      "title": "Botox Fatal (Fast, Dark Techno/Rave)",
+      "parsed": true,
+      "checkedAt": "2026-06-25",
       "fromCache": true
     },
     {
       "url": "https://www.smartshanghai.com/event/nova-events-presents-summer-splash-pool-party-2026-06-27",
       "title": "Nova Events Presents: Summer Splash Pool Party",
       "parsed": true,
-      "checkedAt": "2026-06-24",
+      "checkedAt": "2026-06-25",
       "fromCache": true
     },
     {
       "url": "https://www.smartshanghai.com/event/bellagio-summer-rooftop-party-at-bellagio-shanghai",
       "title": "Space Panda Presents: Bellagio Summer Rooftop Party",
       "parsed": true,
-      "checkedAt": "2026-06-24",
-      "fromCache": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/youshan-festival-warmup-party-house-techno-minimal-bass-2026-06-27",
-      "title": "YOUSHAN Festival Warmup Party (House, Techno, Minimal, Bass)",
-      "parsed": true,
-      "checkedAt": "2026-06-24",
-      "fromCache": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/dj-whoo-kid-hip-hop-2026-06-27",
-      "title": "DJ Whoo Kid (Hip Hop)",
-      "parsed": true,
-      "checkedAt": "2026-06-24",
-      "fromCache": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/hexscape-pres-bi-non-xingrui-a-v-live-bass-post-club-hyperpop-footwork-2026-06-27",
-      "title": "Hexscape pres. Bi-NON & Xingrui A/V Live (Bass, Post-Club, Hyperpop, Footwork)",
-      "parsed": true,
-      "checkedAt": "2026-06-24",
-      "fromCache": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/knot-pres-qqbbg-kumanoi-soea-kawaii-hyper-pop-udg-industrial-rave-2026-06-27",
-      "title": "KNOT Pres. QQBBG & kumanoi & SØA (Kawaii hyper-pop, UDG, Industrial Rave)",
-      "parsed": true,
-      "checkedAt": "2026-06-24",
-      "fromCache": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/roam-upstairs-with-zhuo-and-feiyi-2026-06-27",
-      "title": "Roam Upstairs with Zhuo and Feiyi (Ambient, House, Experimental)",
-      "parsed": true,
-      "checkedAt": "2026-06-24",
-      "fromCache": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/white-party-shanghai-s-all-white-rooftop-party-at-skyline-dome-at-skyline-dome-sushi-rooftop-lounge",
-      "title": "White Party | Shanghai's All-White Rooftop Party",
-      "parsed": true,
-      "checkedAt": "2026-06-24",
-      "fromCache": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/all-white-party-the-fellas-terrace-at-the-fellas",
-      "title": "All White Party",
-      "parsed": true,
-      "checkedAt": "2026-06-24",
-      "fromCache": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/girls-night-out-skyline-dome-at-the-dome",
-      "title": "Girls Night Out",
-      "parsed": true,
-      "checkedAt": "2026-06-24",
-      "fromCache": true
-    },
-    {
-      "url": "https://www.smartshanghai.com/event/sunset-sundays-skyline-dome-at-the-dome",
-      "title": "Sunset Sundays",
-      "parsed": true,
-      "checkedAt": "2026-06-24",
+      "checkedAt": "2026-06-25",
       "fromCache": true
     }
   ],
@@ -29600,7 +30055,7 @@
       ]
     }
   ],
-  "curatedEventsApplied": 120,
+  "curatedEventsApplied": 124,
   "djItineraryStats": {
     "profileCount": 175,
     "curatedProfileCount": 171,
@@ -29855,7 +30310,7 @@
   },
   "quality": {
     "auditDate": "2026-06-25",
-    "generatedAt": "2026-06-24T17:24:08.128Z",
+    "generatedAt": "2026-06-25T08:08:11.010Z",
     "freshnessPolicy": {
       "eventSourceMaxAgeDays": 2,
       "nearEventWindowDays": 1,
@@ -29864,32 +30319,32 @@
       "rule": "Future event sources are expected to be rechecked within the two-day scrape cadence; events within the near-event window use the stricter near-event freshness window. Profile-level DJ sources have a longer freshness window because they support identity/context, not live ticket state."
     },
     "totals": {
-      "events": 164,
-      "future": 34,
+      "events": 167,
+      "future": 37,
       "futureHigh": 15,
       "futureWatch": 12,
-      "singleSourceWatch": 5,
-      "singleConfirmationWatch": 7,
-      "venueProfiles": 57,
-      "futureVenueProfiles": 27,
-      "futureVenueWatch": 14,
-      "futurePerformerProfiles": 80,
-      "futurePerformerWatch": 11,
-      "singleSourceFuturePerformers": 25,
-      "futurePerformerProfileSources": 40,
-      "futurePerformerMissingProfileSources": 40,
-      "djSourceUpgradeQueue": 17,
+      "singleSourceWatch": 4,
+      "singleConfirmationWatch": 4,
+      "venueProfiles": 58,
+      "futureVenueProfiles": 28,
+      "futureVenueWatch": 11,
+      "futurePerformerProfiles": 98,
+      "futurePerformerWatch": 15,
+      "singleSourceFuturePerformers": 28,
+      "futurePerformerProfileSources": 41,
+      "futurePerformerMissingProfileSources": 57,
+      "djSourceUpgradeQueue": 22,
       "trackedDjProfiles": 175,
       "curatedDjSourceProfiles": 171,
       "technoArtistSignals": 184,
       "technoArtistSignalProfiles": 137,
       "eventsWithTechnoProfileSignals": 2,
       "trackedDjItineraryRows": 40,
-      "staleFuture": 20,
+      "staleFuture": 16,
       "missingTicketStatus": 0,
       "highMissingLineup": 2,
       "futureCoreFieldQueue": 32,
-      "futureMissingCoreFields": 70,
+      "futureMissingCoreFields": 42,
       "futureUncertainCoreFields": 0,
       "platformVerificationQueue": 1,
       "platformVerificationSources": 2,
@@ -29897,7 +30352,7 @@
       "promotionPlatformRoutes": 81,
       "promotionPlatformQueue": 81,
       "promotionPlatformUnmappedFutureVenues": 15,
-      "curatedEventsApplied": 120,
+      "curatedEventsApplied": 124,
       "failedSourceReports": 17
     },
     "watchQueue": [
@@ -29909,10 +30364,10 @@
         "priority": "high",
         "fitScore": 3,
         "sourceLabel": "Resident Advisor",
-        "sourceCount": 1,
-        "confirmationSourceCount": 1,
-        "reason": "single-source, lineup missing",
-        "nextAction": "Prioritize direct venue, promoter, ticketing, RA, or official artist evidence before promotion."
+        "sourceCount": 2,
+        "confirmationSourceCount": 2,
+        "reason": "watch-level confidence",
+        "nextAction": "Recheck ticket, lineup, and set-time details before promotion."
       },
       {
         "id": "anika-kunst",
@@ -29922,10 +30377,10 @@
         "priority": "high",
         "fitScore": 3,
         "sourceLabel": "SmartShanghai",
-        "sourceCount": 5,
-        "confirmationSourceCount": 1,
-        "reason": "single-confirmation-source",
-        "nextAction": "Prioritize direct venue, promoter, ticketing, RA, or official artist evidence before promotion."
+        "sourceCount": 6,
+        "confirmationSourceCount": 2,
+        "reason": "watch-level confidence",
+        "nextAction": "Recheck ticket, lineup, and set-time details before promotion."
       },
       {
         "id": "jaal",
@@ -29974,10 +30429,10 @@
         "priority": "medium",
         "fitScore": 2,
         "sourceLabel": "SmartShanghai",
-        "sourceCount": 5,
-        "confirmationSourceCount": 1,
-        "reason": "single-confirmation-source, lineup missing",
-        "nextAction": "Find a second source if it remains a likely techno-adjacent pick."
+        "sourceCount": 6,
+        "confirmationSourceCount": 2,
+        "reason": "watch-level confidence",
+        "nextAction": "Recheck practical details before featuring it."
       },
       {
         "id": "shanghai-mushroom-music-carnival-2026",
@@ -30152,14 +30607,15 @@
         "missingCoreFields": [
           "time",
           "price",
-          "age",
           "ticketUrl"
         ],
         "uncertainCoreFields": [],
-        "missingNonCoreFields": [
-          "poster"
+        "missingNonCoreFields": [],
+        "performerProfileGaps": [
+          "Chica",
+          "Fat-K",
+          "Crystal Q"
         ],
-        "performerProfileGaps": [],
         "coreFieldGapStatus": "public-source-gap",
         "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
         "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
@@ -30174,7 +30630,6 @@
         "fitScore": 3,
         "missingCoreFields": [
           "price",
-          "age",
           "ticketUrl"
         ],
         "uncertainCoreFields": [],
@@ -30188,27 +30643,6 @@
         "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
       },
       {
-        "id": "2026-06-26-drum-inferno-call-a-taxi-shanghao-meer",
-        "date": "2026-06-26",
-        "title": "Drum Inferno w/ Call a Taxi, Shanghao, and meer",
-        "venue": "POTENT Shanghai",
-        "confidence": "Watch",
-        "priority": "high",
-        "fitScore": 3,
-        "missingCoreFields": [
-          "age",
-          "lineup"
-        ],
-        "uncertainCoreFields": [],
-        "missingNonCoreFields": [
-          "poster"
-        ],
-        "performerProfileGaps": [],
-        "coreFieldGapStatus": "public-source-gap",
-        "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
-        "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
-      },
-      {
         "id": "heim-invites-dina",
         "date": "2026-06-26",
         "title": "Heim Invites: DINA",
@@ -30217,7 +30651,6 @@
         "priority": "high",
         "fitScore": 3,
         "missingCoreFields": [
-          "age",
           "ticketUrl"
         ],
         "uncertainCoreFields": [],
@@ -30240,7 +30673,6 @@
         "priority": "high",
         "fitScore": 3,
         "missingCoreFields": [
-          "age",
           "ticketUrl"
         ],
         "uncertainCoreFields": [],
@@ -30259,7 +30691,6 @@
         "priority": "high",
         "fitScore": 3,
         "missingCoreFields": [
-          "age",
           "ticketUrl"
         ],
         "uncertainCoreFields": [],
@@ -30280,7 +30711,6 @@
         "priority": "high",
         "fitScore": 3,
         "missingCoreFields": [
-          "age",
           "ticketUrl"
         ],
         "uncertainCoreFields": [],
@@ -30303,7 +30733,6 @@
         "priority": "high",
         "fitScore": 3,
         "missingCoreFields": [
-          "age",
           "ticketUrl"
         ],
         "uncertainCoreFields": [],
@@ -30326,7 +30755,6 @@
         "priority": "high",
         "fitScore": 3,
         "missingCoreFields": [
-          "age",
           "lineup"
         ],
         "uncertainCoreFields": [],
@@ -30347,31 +30775,12 @@
         "priority": "high",
         "fitScore": 3,
         "missingCoreFields": [
-          "age",
           "lineup"
         ],
         "uncertainCoreFields": [],
         "missingNonCoreFields": [
           "poster"
         ],
-        "performerProfileGaps": [],
-        "coreFieldGapStatus": "public-source-gap",
-        "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
-        "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
-      },
-      {
-        "id": "jaal",
-        "date": "2026-06-27",
-        "title": "JAAL The Machine live acid techno",
-        "venue": "Fenrir",
-        "confidence": "Watch",
-        "priority": "high",
-        "fitScore": 3,
-        "missingCoreFields": [
-          "age"
-        ],
-        "uncertainCoreFields": [],
-        "missingNonCoreFields": [],
         "performerProfileGaps": [],
         "coreFieldGapStatus": "public-source-gap",
         "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
@@ -30400,47 +30809,43 @@
         "nextAction": "Core fields usable; add performer profile sources before non-core enrichment."
       },
       {
-        "id": "devils-dancers",
+        "id": "2026-06-26-drum-inferno-call-a-taxi-shanghao-meer",
         "date": "2026-06-26",
-        "title": "The Devil's Dancers",
-        "venue": "Specters",
+        "title": "Drum Inferno w/ Call a Taxi, Shanghao, and meer",
+        "venue": "POTENT Shanghai",
         "confidence": "Watch",
-        "priority": "medium",
-        "fitScore": 2,
-        "missingCoreFields": [
-          "time",
-          "price",
-          "age",
-          "ticketUrl",
-          "lineup"
-        ],
+        "priority": "high",
+        "fitScore": 3,
+        "missingCoreFields": [],
         "uncertainCoreFields": [],
-        "missingNonCoreFields": [
-          "poster"
+        "missingNonCoreFields": [],
+        "performerProfileGaps": [
+          "Yomi",
+          "Fat-K",
+          "Yann"
         ],
-        "performerProfileGaps": [],
-        "coreFieldGapStatus": "public-source-gap",
-        "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
-        "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
+        "coreFieldGapStatus": "performer-profile-gap",
+        "sourceGapNote": "Event core fields are usable, but performer profile sources are still missing from the DJ inventory.",
+        "nextAction": "Core fields usable; add performer profile sources before non-core enrichment."
       },
       {
-        "id": "2026-06-27-white-party-shanghai-s-all-white-roof",
-        "date": "2026-06-27",
-        "title": "White Party | Shanghai's All-White Rooftop Party",
-        "venue": "Skyline Dome | Sushi Rooftop & Lounge",
-        "confidence": "High",
+        "id": "exit-kasi-dixia-2026-06-25",
+        "date": "2026-06-25",
+        "title": "Kasi2 Dixia",
+        "venue": "EXIT",
+        "confidence": "Medium",
         "priority": "medium",
         "fitScore": 2,
         "missingCoreFields": [
-          "address",
           "price",
-          "age",
           "ticketUrl"
         ],
         "uncertainCoreFields": [],
         "missingNonCoreFields": [],
         "performerProfileGaps": [
-          "DJ UACA"
+          "KAY",
+          "TIEHAN",
+          "B2B"
         ],
         "coreFieldGapStatus": "public-source-gap",
         "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
@@ -30456,16 +30861,60 @@
         "fitScore": 2,
         "missingCoreFields": [
           "price",
-          "age",
           "ticketUrl"
         ],
         "uncertainCoreFields": [],
-        "missingNonCoreFields": [
-          "poster"
-        ],
+        "missingNonCoreFields": [],
         "performerProfileGaps": [
           "Bubble",
           "Yyao"
+        ],
+        "coreFieldGapStatus": "public-source-gap",
+        "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
+        "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
+      },
+      {
+        "id": "exit-kitty-kill-2026-06-26",
+        "date": "2026-06-26",
+        "title": "WUHU: Kitty Kill",
+        "venue": "EXIT",
+        "confidence": "Medium",
+        "priority": "medium",
+        "fitScore": 2,
+        "missingCoreFields": [
+          "price",
+          "ticketUrl"
+        ],
+        "uncertainCoreFields": [],
+        "missingNonCoreFields": [],
+        "performerProfileGaps": [
+          "Leekologist",
+          "BX",
+          "uuto",
+          "sourmi",
+          "DDJ",
+          "Qin_NUO"
+        ],
+        "coreFieldGapStatus": "public-source-gap",
+        "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
+        "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
+      },
+      {
+        "id": "2026-06-27-white-party-shanghai-s-all-white-roof",
+        "date": "2026-06-27",
+        "title": "White Party | Shanghai's All-White Rooftop Party",
+        "venue": "Skyline Dome | Sushi Rooftop & Lounge",
+        "confidence": "High",
+        "priority": "medium",
+        "fitScore": 2,
+        "missingCoreFields": [
+          "price",
+          "ticketUrl"
+        ],
+        "uncertainCoreFields": [],
+        "missingNonCoreFields": [],
+        "performerProfileGaps": [
+          "DJ UACA"
         ],
         "coreFieldGapStatus": "public-source-gap",
         "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
@@ -30480,18 +30929,33 @@
         "priority": "medium",
         "fitScore": 2,
         "missingCoreFields": [
-          "age",
           "ticketUrl"
         ],
         "uncertainCoreFields": [],
-        "missingNonCoreFields": [
-          "poster"
-        ],
+        "missingNonCoreFields": [],
         "performerProfileGaps": [
           "Di",
           "Yyao",
           "Jill"
         ],
+        "coreFieldGapStatus": "public-source-gap",
+        "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
+        "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
+      },
+      {
+        "id": "devils-dancers",
+        "date": "2026-06-26",
+        "title": "The Devil's Dancers",
+        "venue": "Specters",
+        "confidence": "Watch",
+        "priority": "medium",
+        "fitScore": 2,
+        "missingCoreFields": [
+          "ticketUrl"
+        ],
+        "uncertainCoreFields": [],
+        "missingNonCoreFields": [],
+        "performerProfileGaps": [],
         "coreFieldGapStatus": "public-source-gap",
         "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
         "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
@@ -30505,8 +30969,7 @@
         "priority": "medium",
         "fitScore": 2,
         "missingCoreFields": [
-          "time",
-          "age"
+          "time"
         ],
         "uncertainCoreFields": [],
         "missingNonCoreFields": [],
@@ -30524,7 +30987,6 @@
         "priority": "medium",
         "fitScore": 2,
         "missingCoreFields": [
-          "age",
           "ticketUrl"
         ],
         "uncertainCoreFields": [],
@@ -30545,7 +31007,6 @@
         "priority": "medium",
         "fitScore": 2,
         "missingCoreFields": [
-          "age",
           "ticketUrl"
         ],
         "uncertainCoreFields": [],
@@ -30570,13 +31031,10 @@
         "priority": "medium",
         "fitScore": 2,
         "missingCoreFields": [
-          "age",
           "ticketUrl"
         ],
         "uncertainCoreFields": [],
-        "missingNonCoreFields": [
-          "poster"
-        ],
+        "missingNonCoreFields": [],
         "performerProfileGaps": [
           "Feiyi",
           "Zhuo",
@@ -30605,6 +31063,29 @@
         "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
       },
       {
+        "id": "jai-wolf-vas-ear-2026-08-22",
+        "date": "2026-08-22",
+        "title": "Jai Wolf 2026 Summer China Tour Shanghai",
+        "venue": "VAS ear",
+        "confidence": "Medium",
+        "priority": "low",
+        "fitScore": 1,
+        "missingCoreFields": [
+          "price",
+          "ticketUrl"
+        ],
+        "uncertainCoreFields": [],
+        "missingNonCoreFields": [],
+        "performerProfileGaps": [
+          "Jai Wolf",
+          "AKANE",
+          "GUGU"
+        ],
+        "coreFieldGapStatus": "public-source-gap",
+        "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
+        "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
+      },
+      {
         "id": "suaner-lanv-guizhou-kitchen",
         "date": "2026-06-26",
         "title": "酸儿辣女 - 贵州厨房 上海站",
@@ -30613,7 +31094,6 @@
         "priority": "low",
         "fitScore": 1,
         "missingCoreFields": [
-          "age",
           "ticketUrl"
         ],
         "uncertainCoreFields": [],
@@ -30639,26 +31119,7 @@
         "priority": "low",
         "fitScore": 1,
         "missingCoreFields": [
-          "age",
           "lineup"
-        ],
-        "uncertainCoreFields": [],
-        "missingNonCoreFields": [],
-        "performerProfileGaps": [],
-        "coreFieldGapStatus": "public-source-gap",
-        "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
-        "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
-      },
-      {
-        "id": "lucrecia-dalt-yuyintang",
-        "date": "2026-07-16",
-        "title": "Lucrecia Dalt 2026 China Tour",
-        "venue": "Yuyintang Music Park C Hall",
-        "confidence": "Medium",
-        "priority": "low",
-        "fitScore": 1,
-        "missingCoreFields": [
-          "age"
         ],
         "uncertainCoreFields": [],
         "missingNonCoreFields": [],
@@ -30701,8 +31162,7 @@
         "fitScore": 0,
         "missingCoreFields": [
           "time",
-          "price",
-          "age"
+          "price"
         ],
         "uncertainCoreFields": [],
         "missingNonCoreFields": [
@@ -30723,8 +31183,7 @@
         "fitScore": 0,
         "missingCoreFields": [
           "time",
-          "price",
-          "age"
+          "price"
         ],
         "uncertainCoreFields": [],
         "missingNonCoreFields": [
@@ -30745,8 +31204,7 @@
         "fitScore": 0,
         "missingCoreFields": [
           "venue",
-          "address",
-          "age"
+          "address"
         ],
         "uncertainCoreFields": [],
         "missingNonCoreFields": [
@@ -30767,8 +31225,7 @@
         "fitScore": 0,
         "missingCoreFields": [
           "time",
-          "price",
-          "age"
+          "price"
         ],
         "uncertainCoreFields": [],
         "missingNonCoreFields": [
@@ -30788,8 +31245,7 @@
         "priority": "low",
         "fitScore": 0,
         "missingCoreFields": [
-          "price",
-          "age"
+          "price"
         ],
         "uncertainCoreFields": [],
         "missingNonCoreFields": [],
@@ -30807,7 +31263,6 @@
         "priority": "low",
         "fitScore": 0,
         "missingCoreFields": [
-          "age",
           "ticketUrl"
         ],
         "uncertainCoreFields": [],
@@ -30817,24 +31272,6 @@
         "performerProfileGaps": [
           "BADBADNOTGOOD"
         ],
-        "coreFieldGapStatus": "public-source-gap",
-        "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
-        "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
-      },
-      {
-        "id": "yuyintang-cooling-water",
-        "date": "2026-07-03",
-        "title": "Cooling Water",
-        "venue": "Yuyintang Music Park B Hall",
-        "confidence": "Medium",
-        "priority": "low",
-        "fitScore": 0,
-        "missingCoreFields": [
-          "age"
-        ],
-        "uncertainCoreFields": [],
-        "missingNonCoreFields": [],
-        "performerProfileGaps": [],
         "coreFieldGapStatus": "public-source-gap",
         "sourceGapNote": "Missing or uncertain core fields were not found in current public sources; keep marked and recheck organizer, venue, ticketing, RA, SmartShanghai, WeChat, XHS, or Instagram platform search in the next pass.",
         "nextAction": "Mark missing/uncertain core fields as public-source gaps; recheck organizer or platform-native sources next pass before second-source promotion."
@@ -30848,12 +31285,12 @@
         "venue": "POTENT",
         "priority": "high",
         "fitScore": 3,
-        "confirmationSourceCount": 1,
+        "confirmationSourceCount": 2,
         "platformSourceCount": 2,
         "searchQueries": [
           "POTENT Anika Kunst 2026-06-27",
           "Anika Kunst 2026-06-27 Shanghai",
-          "POTENT Anika Kunst 10000 DJ EBP 2026-06-27"
+          "POTENT Anika Kunst 10000 DJ EBP Chica 2026-06-27"
         ],
         "platformSources": [
           {
@@ -30918,6 +31355,47 @@
       "priorityRule": "Run Resident Advisor first, then Yuyuan/local ticketing routes, then entity promotion-platform tasks sorted by route priority, entity priority, platform rank, and entity name before generic social keyword discovery.",
       "confirmationRule": "Entity network routes are collection paths. They confirm an event only after visible current-event facts are captured from RA, official venue/promoter, ticketing, or shareable source evidence.",
       "entityCoverage": [
+        {
+          "id": "exit-shanghai",
+          "type": "venue",
+          "name": "EXIT Shanghai",
+          "priority": 1,
+          "routeCount": 5,
+          "platforms": [
+            "Resident Advisor",
+            "WeChat",
+            "Xiaohongshu / XHS",
+            "Yuyuan WeChat mini-program",
+            "SmartShanghai"
+          ],
+          "futureEventCount": 3,
+          "futureEvents": [
+            {
+              "id": "exit-kasi-dixia-2026-06-25",
+              "date": "2026-06-25",
+              "title": "Kasi2 Dixia",
+              "venue": "EXIT",
+              "status": "upcoming",
+              "confidence": "Medium"
+            },
+            {
+              "id": "exit-kitty-kill-2026-06-26",
+              "date": "2026-06-26",
+              "title": "WUHU: Kitty Kill",
+              "venue": "EXIT",
+              "status": "upcoming",
+              "confidence": "Medium"
+            },
+            {
+              "id": "hexscape",
+              "date": "2026-06-27",
+              "title": "Hexscape pres. Bi-NON & Xingrui A/V Live (Bass, Post-Club, Hyperpop)",
+              "venue": "EXIT",
+              "status": "upcoming",
+              "confidence": "High"
+            }
+          ]
+        },
         {
           "id": "abyss-shanghai",
           "type": "venue",
@@ -31016,31 +31494,6 @@
           ]
         },
         {
-          "id": "exit-shanghai",
-          "type": "venue",
-          "name": "EXIT Shanghai",
-          "priority": 1,
-          "routeCount": 5,
-          "platforms": [
-            "Resident Advisor",
-            "WeChat",
-            "Xiaohongshu / XHS",
-            "Yuyuan WeChat mini-program",
-            "SmartShanghai"
-          ],
-          "futureEventCount": 1,
-          "futureEvents": [
-            {
-              "id": "hexscape",
-              "date": "2026-06-27",
-              "title": "Hexscape pres. Bi-NON & Xingrui A/V Live (Bass, Post-Club, Hyperpop)",
-              "venue": "EXIT",
-              "status": "upcoming",
-              "confidence": "High"
-            }
-          ]
-        },
-        {
           "id": "illum-shanghai",
           "type": "venue",
           "name": "ILLUM Shanghai",
@@ -31115,6 +31568,36 @@
           ],
           "futureEventCount": 0,
           "futureEvents": []
+        },
+        {
+          "id": "asylum",
+          "type": "promoter",
+          "name": "Asylum",
+          "priority": 2,
+          "routeCount": 2,
+          "platforms": [
+            "Yuyuan WeChat mini-program",
+            "Xiaohongshu / XHS"
+          ],
+          "futureEventCount": 2,
+          "futureEvents": [
+            {
+              "id": "le-youth-cloudsu-2026-06-27",
+              "date": "2026-06-27",
+              "title": "Le Youth 2026 China Tour Shanghai",
+              "venue": "CLOUD.SU Lounge Rooftop",
+              "status": "upcoming",
+              "confidence": "High"
+            },
+            {
+              "id": "jai-wolf-vas-ear-2026-08-22",
+              "date": "2026-08-22",
+              "title": "Jai Wolf 2026 Summer China Tour Shanghai",
+              "venue": "VAS ear",
+              "status": "upcoming",
+              "confidence": "Medium"
+            }
+          ]
         },
         {
           "id": "dirty-house",
@@ -31210,28 +31693,6 @@
               "venue": "Reactor Shanghai",
               "status": "watch",
               "confidence": "Watch"
-            }
-          ]
-        },
-        {
-          "id": "asylum",
-          "type": "promoter",
-          "name": "Asylum",
-          "priority": 2,
-          "routeCount": 2,
-          "platforms": [
-            "Yuyuan WeChat mini-program",
-            "Xiaohongshu / XHS"
-          ],
-          "futureEventCount": 1,
-          "futureEvents": [
-            {
-              "id": "le-youth-cloudsu-2026-06-27",
-              "date": "2026-06-27",
-              "title": "Le Youth 2026 China Tour Shanghai",
-              "venue": "CLOUD.SU Lounge Rooftop",
-              "status": "upcoming",
-              "confidence": "High"
             }
           ]
         },
@@ -31621,6 +32082,32 @@
     },
     "venueCoverage": [
       {
+        "venue": "EXIT",
+        "aliases": [],
+        "districts": [
+          "Changning"
+        ],
+        "genres": [
+          "techno",
+          "techno, bass",
+          "Detroit techno, electro, machine funk",
+          "industrial, dark hypnotic, acid, rave, experimental techno",
+          "techno, house, tech house",
+          "techno, house, minimal, nu-disco",
+          "techno, funk/soul lineage",
+          "house"
+        ],
+        "sourceCount": 26,
+        "totalEvents": 18,
+        "futureEvents": 3,
+        "highConfidenceEvents": 12,
+        "watchEvents": 0,
+        "fitScore": 3,
+        "priority": "high",
+        "nextEventDate": "2026-06-25",
+        "lastChecked": "2026-06-25"
+      },
+      {
         "venue": "Roam",
         "aliases": [],
         "districts": [
@@ -31631,7 +32118,7 @@
           "deeper house, techno, dub",
           "ambient, house, experimental, downtempo"
         ],
-        "sourceCount": 3,
+        "sourceCount": 7,
         "totalEvents": 3,
         "futureEvents": 3,
         "highConfidenceEvents": 3,
@@ -31639,7 +32126,7 @@
         "fitScore": 2,
         "priority": "medium",
         "nextEventDate": "2026-06-25",
-        "lastChecked": "2026-06-24"
+        "lastChecked": "2026-06-25"
       },
       {
         "venue": "POTENT",
@@ -31661,7 +32148,7 @@
           "techno, hard techno",
           "trance, techno-adjacent"
         ],
-        "sourceCount": 31,
+        "sourceCount": 35,
         "totalEvents": 25,
         "futureEvents": 2,
         "highConfidenceEvents": 20,
@@ -31669,7 +32156,7 @@
         "fitScore": 3,
         "priority": "high",
         "nextEventDate": "2026-06-26",
-        "lastChecked": "2026-06-24"
+        "lastChecked": "2026-06-25"
       },
       {
         "venue": "Abyss Shanghai",
@@ -31688,15 +32175,15 @@
           "techno, hardcore",
           "trance, techno"
         ],
-        "sourceCount": 22,
+        "sourceCount": 23,
         "totalEvents": 14,
         "futureEvents": 2,
         "highConfidenceEvents": 8,
-        "watchEvents": 2,
+        "watchEvents": 0,
         "fitScore": 3,
         "priority": "high",
         "nextEventDate": "2026-06-26",
-        "lastChecked": "2026-06-19"
+        "lastChecked": "2026-06-25"
       },
       {
         "venue": "Reactor Shanghai",
@@ -31725,7 +32212,7 @@
         "fitScore": 3,
         "priority": "high",
         "nextEventDate": "2026-06-26",
-        "lastChecked": "2026-06-24"
+        "lastChecked": "2026-06-25"
       },
       {
         "venue": "Heim Shanghai",
@@ -31746,15 +32233,15 @@
           "ambient, bass, trance, club",
           "EBM, electro, trance, house"
         ],
-        "sourceCount": 12,
+        "sourceCount": 14,
         "totalEvents": 6,
         "futureEvents": 2,
         "highConfidenceEvents": 0,
-        "watchEvents": 1,
+        "watchEvents": 0,
         "fitScore": 3,
         "priority": "high",
         "nextEventDate": "2026-06-26",
-        "lastChecked": "2026-06-18"
+        "lastChecked": "2026-06-25"
       },
       {
         "venue": "Dirty House",
@@ -31780,32 +32267,6 @@
         "priority": "high",
         "nextEventDate": "2026-06-26",
         "lastChecked": "2026-06-14"
-      },
-      {
-        "venue": "EXIT",
-        "aliases": [],
-        "districts": [
-          "Changning"
-        ],
-        "genres": [
-          "techno",
-          "techno, bass",
-          "Detroit techno, electro, machine funk",
-          "industrial, dark hypnotic, acid, rave, experimental techno",
-          "techno, house, tech house",
-          "techno, house, minimal, nu-disco",
-          "techno, funk/soul lineage",
-          "house"
-        ],
-        "sourceCount": 24,
-        "totalEvents": 16,
-        "futureEvents": 1,
-        "highConfidenceEvents": 12,
-        "watchEvents": 0,
-        "fitScore": 3,
-        "priority": "high",
-        "nextEventDate": "2026-06-27",
-        "lastChecked": "2026-06-24"
       },
       {
         "venue": "Wigwam",
@@ -31868,7 +32329,7 @@
           "industrial, italo disco, darkwave, EBM, goth",
           "post-punk, cold wave, minimal wave, dark wave, shoegaze"
         ],
-        "sourceCount": 6,
+        "sourceCount": 7,
         "totalEvents": 2,
         "futureEvents": 1,
         "highConfidenceEvents": 1,
@@ -31876,7 +32337,7 @@
         "fitScore": 3,
         "priority": "high",
         "nextEventDate": "2026-06-26",
-        "lastChecked": "2026-06-24"
+        "lastChecked": "2026-06-25"
       },
       {
         "venue": "Fenrir",
@@ -31895,7 +32356,7 @@
         "fitScore": 3,
         "priority": "high",
         "nextEventDate": "2026-06-27",
-        "lastChecked": "2026-06-24"
+        "lastChecked": "2026-06-25"
       },
       {
         "venue": "Skyline Dome | Sushi Rooftop & Lounge",
@@ -31912,7 +32373,7 @@
         "totalEvents": 2,
         "futureEvents": 1,
         "highConfidenceEvents": 1,
-        "watchEvents": 1,
+        "watchEvents": 0,
         "fitScore": 2,
         "priority": "medium",
         "nextEventDate": "2026-06-27",
@@ -31935,7 +32396,7 @@
         "fitScore": 2,
         "priority": "medium",
         "nextEventDate": "2026-06-27",
-        "lastChecked": "2026-06-24"
+        "lastChecked": "2026-06-25"
       },
       {
         "venue": "CLOUD.SU Lounge Rooftop",
@@ -31992,7 +32453,7 @@
         "fitScore": 2,
         "priority": "medium",
         "nextEventDate": "2026-06-26",
-        "lastChecked": "2026-06-24"
+        "lastChecked": "2026-06-25"
       },
       {
         "venue": "C·PARK LG层",
@@ -32030,7 +32491,7 @@
         "fitScore": 1,
         "priority": "low",
         "nextEventDate": "2026-06-27",
-        "lastChecked": "2026-06-24"
+        "lastChecked": "2026-06-25"
       },
       {
         "venue": "Theatre YOUNG",
@@ -32050,6 +32511,25 @@
         "priority": "low",
         "nextEventDate": "2026-08-07",
         "lastChecked": "2026-06-20"
+      },
+      {
+        "venue": "VAS ear",
+        "aliases": [],
+        "districts": [
+          "Putuo"
+        ],
+        "genres": [
+          "electronic, indie electronic, future bass"
+        ],
+        "sourceCount": 1,
+        "totalEvents": 1,
+        "futureEvents": 1,
+        "highConfidenceEvents": 0,
+        "watchEvents": 0,
+        "fitScore": 1,
+        "priority": "low",
+        "nextEventDate": "2026-08-22",
+        "lastChecked": "2026-06-25"
       },
       {
         "venue": "Yuyintang Music Park C Hall",
@@ -32236,7 +32716,7 @@
         "totalEvents": 1,
         "futureEvents": 0,
         "highConfidenceEvents": 0,
-        "watchEvents": 1,
+        "watchEvents": 0,
         "fitScore": 3,
         "priority": "high",
         "nextEventDate": "",
@@ -32293,7 +32773,7 @@
         "totalEvents": 1,
         "futureEvents": 0,
         "highConfidenceEvents": 0,
-        "watchEvents": 1,
+        "watchEvents": 0,
         "fitScore": 3,
         "priority": "high",
         "nextEventDate": "",
@@ -32332,7 +32812,7 @@
         "totalEvents": 13,
         "futureEvents": 0,
         "highConfidenceEvents": 0,
-        "watchEvents": 13,
+        "watchEvents": 0,
         "fitScore": 2,
         "priority": "medium",
         "nextEventDate": "",
@@ -32351,7 +32831,7 @@
         "totalEvents": 6,
         "futureEvents": 0,
         "highConfidenceEvents": 0,
-        "watchEvents": 6,
+        "watchEvents": 0,
         "fitScore": 2,
         "priority": "medium",
         "nextEventDate": "",
@@ -32428,7 +32908,7 @@
         "totalEvents": 1,
         "futureEvents": 0,
         "highConfidenceEvents": 0,
-        "watchEvents": 1,
+        "watchEvents": 0,
         "fitScore": 2,
         "priority": "medium",
         "nextEventDate": "",
@@ -32600,7 +33080,7 @@
         "totalEvents": 2,
         "futureEvents": 0,
         "highConfidenceEvents": 0,
-        "watchEvents": 2,
+        "watchEvents": 0,
         "fitScore": 1,
         "priority": "low",
         "nextEventDate": "",
@@ -32638,7 +33118,7 @@
         "totalEvents": 1,
         "futureEvents": 0,
         "highConfidenceEvents": 0,
-        "watchEvents": 1,
+        "watchEvents": 0,
         "fitScore": 1,
         "priority": "low",
         "nextEventDate": "",
@@ -32657,7 +33137,7 @@
         "totalEvents": 1,
         "futureEvents": 0,
         "highConfidenceEvents": 0,
-        "watchEvents": 1,
+        "watchEvents": 0,
         "fitScore": 1,
         "priority": "low",
         "nextEventDate": "",
@@ -32676,7 +33156,7 @@
         "totalEvents": 1,
         "futureEvents": 0,
         "highConfidenceEvents": 0,
-        "watchEvents": 1,
+        "watchEvents": 0,
         "fitScore": 1,
         "priority": "low",
         "nextEventDate": "",
@@ -32714,7 +33194,7 @@
         "totalEvents": 1,
         "futureEvents": 0,
         "highConfidenceEvents": 0,
-        "watchEvents": 1,
+        "watchEvents": 0,
         "fitScore": 0,
         "priority": "low",
         "nextEventDate": "",
@@ -32733,7 +33213,7 @@
         "totalEvents": 1,
         "futureEvents": 0,
         "highConfidenceEvents": 0,
-        "watchEvents": 1,
+        "watchEvents": 0,
         "fitScore": 0,
         "priority": "low",
         "nextEventDate": "",
@@ -32784,11 +33264,35 @@
       "trackedItineraryRows": 40,
       "futureProfiles": [
         {
+          "slug": "fat-k",
+          "name": "Fat-K",
+          "eventCount": 5,
+          "futureEventCount": 2,
+          "sourceCount": 14,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "POTENT",
+            "POTENT Shanghai"
+          ],
+          "genres": [
+            "minimal, techno",
+            "techno, house",
+            "house, club",
+            "underground"
+          ],
+          "watchAppearances": 2,
+          "highConfidenceAppearances": 2,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-26"
+        },
+        {
           "slug": "sam-tbd",
           "name": "Sam Tbd",
           "eventCount": 4,
           "futureEventCount": 2,
-          "sourceCount": 18,
+          "sourceCount": 20,
           "trackedProfileSourceCount": 3,
           "venues": [
             "Heim",
@@ -32804,7 +33308,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 3,
-          "singleSourceFutureAppearances": 1,
+          "singleSourceFutureAppearances": 0,
           "fitScore": 3,
           "priority": "high",
           "nextDate": "2026-06-26"
@@ -32836,7 +33340,7 @@
           "name": "Jill",
           "eventCount": 2,
           "futureEventCount": 2,
-          "sourceCount": 2,
+          "sourceCount": 5,
           "trackedProfileSourceCount": 0,
           "venues": [
             "Roam"
@@ -32847,7 +33351,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 2,
-          "singleSourceFutureAppearances": 2,
+          "singleSourceFutureAppearances": 0,
           "fitScore": 2,
           "priority": "medium",
           "nextDate": "2026-06-25"
@@ -32857,7 +33361,7 @@
           "name": "Yyao",
           "eventCount": 2,
           "futureEventCount": 2,
-          "sourceCount": 2,
+          "sourceCount": 5,
           "trackedProfileSourceCount": 0,
           "venues": [
             "Roam"
@@ -32868,7 +33372,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 2,
-          "singleSourceFutureAppearances": 2,
+          "singleSourceFutureAppearances": 0,
           "fitScore": 2,
           "priority": "medium",
           "nextDate": "2026-06-25"
@@ -32902,7 +33406,7 @@
           "name": "DJ EBP",
           "eventCount": 4,
           "futureEventCount": 1,
-          "sourceCount": 8,
+          "sourceCount": 9,
           "trackedProfileSourceCount": 1,
           "venues": [
             "POTENT",
@@ -33012,11 +33516,57 @@
           "nextDate": "2026-06-27"
         },
         {
+          "slug": "yann",
+          "name": "Yann",
+          "eventCount": 3,
+          "futureEventCount": 1,
+          "sourceCount": 6,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "POTENT",
+            "POTENT Shanghai"
+          ],
+          "genres": [
+            "minimal, techno",
+            "techno, house",
+            "underground"
+          ],
+          "watchAppearances": 1,
+          "highConfidenceAppearances": 2,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-26"
+        },
+        {
+          "slug": "yomi",
+          "name": "Yomi",
+          "eventCount": 3,
+          "futureEventCount": 1,
+          "sourceCount": 6,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "POTENT",
+            "POTENT Shanghai"
+          ],
+          "genres": [
+            "minimal, techno",
+            "house, club",
+            "underground"
+          ],
+          "watchAppearances": 1,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-26"
+        },
+        {
           "slug": "10000",
           "name": "10000",
           "eventCount": 2,
           "futureEventCount": 1,
-          "sourceCount": 8,
+          "sourceCount": 9,
           "trackedProfileSourceCount": 2,
           "venues": [
             "Wigwam",
@@ -33034,11 +33584,31 @@
           "nextDate": "2026-06-27"
         },
         {
+          "slug": "chica",
+          "name": "Chica",
+          "eventCount": 2,
+          "futureEventCount": 1,
+          "sourceCount": 8,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "POTENT"
+          ],
+          "genres": [
+            "techno, house"
+          ],
+          "watchAppearances": 1,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-27"
+        },
+        {
           "slug": "heshang",
           "name": "Heshang",
           "eventCount": 2,
           "futureEventCount": 1,
-          "sourceCount": 6,
+          "sourceCount": 7,
           "trackedProfileSourceCount": 1,
           "venues": [
             "POTENT",
@@ -33060,7 +33630,7 @@
           "name": "Kilo Vee",
           "eventCount": 2,
           "futureEventCount": 1,
-          "sourceCount": 5,
+          "sourceCount": 6,
           "trackedProfileSourceCount": 0,
           "venues": [
             "Reactor Shanghai",
@@ -33165,11 +33735,55 @@
           "nextDate": "2026-06-27"
         },
         {
+          "slug": "tiehan",
+          "name": "Tiehan",
+          "eventCount": 2,
+          "futureEventCount": 1,
+          "sourceCount": 5,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Heim",
+            "EXIT"
+          ],
+          "genres": [
+            "selector culture, house, club, electronic listening",
+            "amapiano, deep house, gqom, Chinese ethnic sounds"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-25"
+        },
+        {
+          "slug": "velvet-robot",
+          "name": "Velvet Robot [Live]",
+          "eventCount": 2,
+          "futureEventCount": 1,
+          "sourceCount": 7,
+          "trackedProfileSourceCount": 2,
+          "venues": [
+            "EXIT",
+            "Specters"
+          ],
+          "genres": [
+            "electro, EBM, industrial, techno, IDM",
+            "post-punk, cold wave, minimal wave, dark wave, shoegaze"
+          ],
+          "watchAppearances": 1,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-26"
+        },
+        {
           "slug": "2difficult",
           "name": "2Difficult",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 4,
+          "sourceCount": 5,
           "trackedProfileSourceCount": 0,
           "venues": [
             "Heim"
@@ -33189,7 +33803,7 @@
           "name": "Anika Kunst",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 5,
+          "sourceCount": 6,
           "trackedProfileSourceCount": 2,
           "venues": [
             "POTENT"
@@ -33209,7 +33823,7 @@
           "name": "BIANBIAN",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 4,
+          "sourceCount": 5,
           "trackedProfileSourceCount": 0,
           "venues": [
             "Heim"
@@ -33249,7 +33863,7 @@
           "name": "BOTOX FATAL",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 8,
+          "sourceCount": 9,
           "trackedProfileSourceCount": 6,
           "venues": [
             "Abyss Shanghai"
@@ -33285,11 +33899,31 @@
           "nextDate": "2026-06-27"
         },
         {
+          "slug": "crystal-q",
+          "name": "Crystal Q",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 6,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "POTENT"
+          ],
+          "genres": [
+            "techno, house"
+          ],
+          "watchAppearances": 1,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 3,
+          "priority": "high",
+          "nextDate": "2026-06-27"
+        },
+        {
           "slug": "dina",
           "name": "DINA",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 4,
+          "sourceCount": 5,
           "trackedProfileSourceCount": 0,
           "venues": [
             "Heim"
@@ -33389,7 +34023,7 @@
           "name": "Huizit",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 4,
+          "sourceCount": 5,
           "trackedProfileSourceCount": 0,
           "venues": [
             "Heim"
@@ -33469,7 +34103,7 @@
           "name": "Kong BB",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 8,
+          "sourceCount": 9,
           "trackedProfileSourceCount": 3,
           "venues": [
             "Abyss Shanghai"
@@ -33569,7 +34203,7 @@
           "name": "Noodleprince",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 8,
+          "sourceCount": 9,
           "trackedProfileSourceCount": 3,
           "venues": [
             "Abyss Shanghai"
@@ -33609,7 +34243,7 @@
           "name": "Roto",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 4,
+          "sourceCount": 5,
           "trackedProfileSourceCount": 0,
           "venues": [
             "Heim"
@@ -33709,7 +34343,7 @@
           "name": "TUI",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 8,
+          "sourceCount": 9,
           "trackedProfileSourceCount": 3,
           "venues": [
             "Abyss Shanghai"
@@ -33761,12 +34395,34 @@
             "Italo disco, nu disco, uplifting house, rooftop social",
             "house"
           ],
-          "watchAppearances": 3,
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-27"
+        },
+        {
+          "slug": "b2b",
+          "name": "B2B",
+          "eventCount": 2,
+          "futureEventCount": 1,
+          "sourceCount": 2,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "Reactor Shanghai",
+            "EXIT"
+          ],
+          "genres": [
+            "house, hip-hop, groove, club",
+            "amapiano, deep house, gqom, Chinese ethnic sounds"
+          ],
+          "watchAppearances": 0,
           "highConfidenceAppearances": 1,
           "singleSourceFutureAppearances": 1,
           "fitScore": 2,
           "priority": "medium",
-          "nextDate": "2026-06-27"
+          "nextDate": "2026-06-25"
         },
         {
           "slug": "dj-uaca",
@@ -33782,9 +34438,9 @@
             "Italo disco, nu disco, uplifting house, rooftop social",
             "house"
           ],
-          "watchAppearances": 1,
+          "watchAppearances": 0,
           "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
+          "singleSourceFutureAppearances": 0,
           "fitScore": 2,
           "priority": "medium",
           "nextDate": "2026-06-27"
@@ -33814,7 +34470,7 @@
           "name": "Bubble",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 1,
+          "sourceCount": 3,
           "trackedProfileSourceCount": 0,
           "venues": [
             "Roam"
@@ -33824,6 +34480,46 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 1,
+          "singleSourceFutureAppearances": 0,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-26"
+        },
+        {
+          "slug": "bx",
+          "name": "BX",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "EXIT"
+          ],
+          "genres": [
+            "club, experimental electronic, bass"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-26"
+        },
+        {
+          "slug": "ddj",
+          "name": "DDJ",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "EXIT"
+          ],
+          "genres": [
+            "club, experimental electronic, bass"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
           "singleSourceFutureAppearances": 1,
           "fitScore": 2,
           "priority": "medium",
@@ -33834,7 +34530,7 @@
           "name": "Di",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 1,
+          "sourceCount": 3,
           "trackedProfileSourceCount": 0,
           "venues": [
             "Roam"
@@ -33844,7 +34540,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
+          "singleSourceFutureAppearances": 0,
           "fitScore": 2,
           "priority": "medium",
           "nextDate": "2026-06-25"
@@ -33854,7 +34550,7 @@
           "name": "Feiyi",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 1,
+          "sourceCount": 3,
           "trackedProfileSourceCount": 0,
           "venues": [
             "Roam"
@@ -33864,7 +34560,7 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
+          "singleSourceFutureAppearances": 0,
           "fitScore": 2,
           "priority": "medium",
           "nextDate": "2026-06-27"
@@ -33890,6 +34586,26 @@
           "nextDate": "2026-06-27"
         },
         {
+          "slug": "kay",
+          "name": "KAY",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "EXIT"
+          ],
+          "genres": [
+            "amapiano, deep house, gqom, Chinese ethnic sounds"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-25"
+        },
+        {
           "slug": "le-youth",
           "name": "Le Youth",
           "eventCount": 1,
@@ -33908,6 +34624,26 @@
           "fitScore": 2,
           "priority": "medium",
           "nextDate": "2026-06-27"
+        },
+        {
+          "slug": "leekologist",
+          "name": "Leekologist",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "EXIT"
+          ],
+          "genres": [
+            "club, experimental electronic, bass"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-26"
         },
         {
           "slug": "mico",
@@ -33970,6 +34706,46 @@
           "nextDate": "2026-06-27"
         },
         {
+          "slug": "qin-nuo",
+          "name": "Qin_NUO",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "EXIT"
+          ],
+          "genres": [
+            "club, experimental electronic, bass"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-26"
+        },
+        {
+          "slug": "sourmi",
+          "name": "sourmi",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "EXIT"
+          ],
+          "genres": [
+            "club, experimental electronic, bass"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-26"
+        },
+        {
           "slug": "taiga",
           "name": "Taiga",
           "eventCount": 1,
@@ -34030,6 +34806,26 @@
           "nextDate": "2026-06-27"
         },
         {
+          "slug": "uuto",
+          "name": "uuto",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "EXIT"
+          ],
+          "genres": [
+            "club, experimental electronic, bass"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 2,
+          "priority": "medium",
+          "nextDate": "2026-06-26"
+        },
+        {
           "slug": "xingrui",
           "name": "Xingrui",
           "eventCount": 1,
@@ -34074,7 +34870,7 @@
           "name": "Zhuo",
           "eventCount": 1,
           "futureEventCount": 1,
-          "sourceCount": 1,
+          "sourceCount": 3,
           "trackedProfileSourceCount": 0,
           "venues": [
             "Roam"
@@ -34084,10 +34880,30 @@
           ],
           "watchAppearances": 0,
           "highConfidenceAppearances": 1,
-          "singleSourceFutureAppearances": 1,
+          "singleSourceFutureAppearances": 0,
           "fitScore": 2,
           "priority": "medium",
           "nextDate": "2026-06-27"
+        },
+        {
+          "slug": "akane",
+          "name": "AKANE",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "VAS ear"
+          ],
+          "genres": [
+            "electronic, indie electronic, future bass"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 1,
+          "priority": "low",
+          "nextDate": "2026-08-22"
         },
         {
           "slug": "badbadbadbad",
@@ -34188,6 +35004,46 @@
           "fitScore": 1,
           "priority": "low",
           "nextDate": "2026-06-26"
+        },
+        {
+          "slug": "gugu",
+          "name": "GUGU",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "VAS ear"
+          ],
+          "genres": [
+            "electronic, indie electronic, future bass"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 1,
+          "priority": "low",
+          "nextDate": "2026-08-22"
+        },
+        {
+          "slug": "jai-wolf",
+          "name": "Jai Wolf",
+          "eventCount": 1,
+          "futureEventCount": 1,
+          "sourceCount": 1,
+          "trackedProfileSourceCount": 0,
+          "venues": [
+            "VAS ear"
+          ],
+          "genres": [
+            "electronic, indie electronic, future bass"
+          ],
+          "watchAppearances": 0,
+          "highConfidenceAppearances": 0,
+          "singleSourceFutureAppearances": 1,
+          "fitScore": 1,
+          "priority": "low",
+          "nextDate": "2026-08-22"
         },
         {
           "slug": "lucrecia-dalt",
@@ -34432,117 +35288,166 @@
       ],
       "sourceUpgradeQueue": [
         {
-          "slug": "jill",
-          "name": "Jill",
-          "priority": "medium",
-          "fitScore": 2,
-          "futureEventCount": 2,
-          "singleSourceFutureAppearances": 2,
+          "slug": "tiehan",
+          "name": "Tiehan",
+          "priority": "high",
+          "fitScore": 3,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
           "nextDate": "2026-06-25",
           "venues": [
-            "Roam"
+            "Heim",
+            "EXIT"
           ],
           "genres": [
-            "house, techno, minimal, electro",
-            "ambient, house, experimental, downtempo"
+            "selector culture, house, club, electronic listening",
+            "amapiano, deep house, gqom, Chinese ethnic sounds"
           ],
           "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
         },
         {
-          "slug": "yyao",
-          "name": "Yyao",
-          "priority": "medium",
-          "fitScore": 2,
-          "futureEventCount": 2,
-          "singleSourceFutureAppearances": 2,
-          "nextDate": "2026-06-25",
-          "venues": [
-            "Roam"
-          ],
-          "genres": [
-            "house, techno, minimal, electro",
-            "deeper house, techno, dub"
-          ],
-          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
-        },
-        {
-          "slug": "dj-uaca",
-          "name": "DJ UACA",
+          "slug": "b2b",
+          "name": "B2B",
           "priority": "medium",
           "fitScore": 2,
           "futureEventCount": 1,
           "singleSourceFutureAppearances": 1,
-          "nextDate": "2026-06-27",
+          "nextDate": "2026-06-25",
           "venues": [
-            "Skyline Dome | Sushi Rooftop & Lounge"
+            "Reactor Shanghai",
+            "EXIT"
           ],
           "genres": [
-            "Italo disco, nu disco, uplifting house, rooftop social",
-            "house"
+            "house, hip-hop, groove, club",
+            "amapiano, deep house, gqom, Chinese ethnic sounds"
           ],
           "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
         },
         {
-          "slug": "bubble",
-          "name": "Bubble",
+          "slug": "bx",
+          "name": "BX",
           "priority": "medium",
           "fitScore": 2,
           "futureEventCount": 1,
           "singleSourceFutureAppearances": 1,
           "nextDate": "2026-06-26",
           "venues": [
-            "Roam"
+            "EXIT"
           ],
           "genres": [
-            "deeper house, techno, dub"
+            "club, experimental electronic, bass"
           ],
           "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
         },
         {
-          "slug": "di",
-          "name": "Di",
+          "slug": "ddj",
+          "name": "DDJ",
+          "priority": "medium",
+          "fitScore": 2,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-26",
+          "venues": [
+            "EXIT"
+          ],
+          "genres": [
+            "club, experimental electronic, bass"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "kay",
+          "name": "KAY",
           "priority": "medium",
           "fitScore": 2,
           "futureEventCount": 1,
           "singleSourceFutureAppearances": 1,
           "nextDate": "2026-06-25",
           "venues": [
-            "Roam"
+            "EXIT"
           ],
           "genres": [
-            "house, techno, minimal, electro"
+            "amapiano, deep house, gqom, Chinese ethnic sounds"
           ],
           "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
         },
         {
-          "slug": "feiyi",
-          "name": "Feiyi",
+          "slug": "leekologist",
+          "name": "Leekologist",
           "priority": "medium",
           "fitScore": 2,
           "futureEventCount": 1,
           "singleSourceFutureAppearances": 1,
-          "nextDate": "2026-06-27",
+          "nextDate": "2026-06-26",
           "venues": [
-            "Roam"
+            "EXIT"
           ],
           "genres": [
-            "ambient, house, experimental, downtempo"
+            "club, experimental electronic, bass"
           ],
           "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
         },
         {
-          "slug": "zhuo",
-          "name": "Zhuo",
+          "slug": "qin-nuo",
+          "name": "Qin_NUO",
           "priority": "medium",
           "fitScore": 2,
           "futureEventCount": 1,
           "singleSourceFutureAppearances": 1,
-          "nextDate": "2026-06-27",
+          "nextDate": "2026-06-26",
           "venues": [
-            "Roam"
+            "EXIT"
           ],
           "genres": [
-            "ambient, house, experimental, downtempo"
+            "club, experimental electronic, bass"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "sourmi",
+          "name": "sourmi",
+          "priority": "medium",
+          "fitScore": 2,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-26",
+          "venues": [
+            "EXIT"
+          ],
+          "genres": [
+            "club, experimental electronic, bass"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "uuto",
+          "name": "uuto",
+          "priority": "medium",
+          "fitScore": 2,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-06-26",
+          "venues": [
+            "EXIT"
+          ],
+          "genres": [
+            "club, experimental electronic, bass"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "akane",
+          "name": "AKANE",
+          "priority": "low",
+          "fitScore": 1,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-08-22",
+          "venues": [
+            "VAS ear"
+          ],
+          "genres": [
+            "electronic, indie electronic, future bass"
           ],
           "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
         },
@@ -34627,6 +35532,38 @@
           "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
         },
         {
+          "slug": "gugu",
+          "name": "GUGU",
+          "priority": "low",
+          "fitScore": 1,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-08-22",
+          "venues": [
+            "VAS ear"
+          ],
+          "genres": [
+            "electronic, indie electronic, future bass"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
+          "slug": "jai-wolf",
+          "name": "Jai Wolf",
+          "priority": "low",
+          "fitScore": 1,
+          "futureEventCount": 1,
+          "singleSourceFutureAppearances": 1,
+          "nextDate": "2026-08-22",
+          "venues": [
+            "VAS ear"
+          ],
+          "genres": [
+            "electronic, indie electronic, future bass"
+          ],
+          "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
+        },
+        {
           "slug": "petr-bohacy-and-mirenka-cechova",
           "name": "Petr Bohacy & Mirenka Cechova",
           "priority": "low",
@@ -34707,7 +35644,7 @@
           "nextAction": "Find an official artist, RA artist/event history, venue/promoter, radio, label, or public social source for this performer profile."
         }
       ],
-      "allProfileCount": 297
+      "allProfileCount": 310
     },
     "raShanghaiCoverage": {
       "configured": true,
@@ -35393,10 +36330,10 @@
         "kind": "listing",
         "sourceStatus": "primary",
         "ok": true,
-        "checkedAt": "2026-06-24",
+        "checkedAt": "2026-06-25",
         "status": 200,
         "fromCache": true,
-        "cacheAgeHours": 8.05,
+        "cacheAgeHours": 4.14,
         "eventLinks": 19
       },
       {
@@ -35404,10 +36341,10 @@
         "kind": "listing",
         "sourceStatus": "primary",
         "ok": true,
-        "checkedAt": "2026-06-24",
+        "checkedAt": "2026-06-25",
         "status": 200,
         "fromCache": true,
-        "cacheAgeHours": 8.05,
+        "cacheAgeHours": 4.14,
         "eventLinks": 45
       },
       {
@@ -35415,10 +36352,10 @@
         "kind": "guide",
         "sourceStatus": "primary",
         "ok": true,
-        "checkedAt": "2026-06-24",
+        "checkedAt": "2026-06-25",
         "status": 200,
         "fromCache": true,
-        "cacheAgeHours": 8.05,
+        "cacheAgeHours": 4.14,
         "eventLinks": 0
       },
       {

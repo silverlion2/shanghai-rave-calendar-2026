@@ -37,6 +37,7 @@ const EVENT_SOURCE_FRESHNESS_DAYS = Number(process.env.EVENT_SOURCE_FRESHNESS_DA
 const EVENT_NEAR_WINDOW_DAYS = Number(process.env.EVENT_NEAR_WINDOW_DAYS || 1);
 const EVENT_NEAR_SOURCE_FRESHNESS_DAYS = Number(process.env.EVENT_NEAR_SOURCE_FRESHNESS_DAYS || 1);
 const DJ_PROFILE_SOURCE_FRESHNESS_DAYS = Number(process.env.DJ_PROFILE_SOURCE_FRESHNESS_DAYS || 30);
+const DEFAULT_UNPUBLISHED_AGE = "Age policy not published";
 const RUN_NOW = process.env.SCRAPE_NOW ? new Date(process.env.SCRAPE_NOW) : new Date();
 
 if (Number.isNaN(RUN_NOW.getTime())) {
@@ -2203,20 +2204,31 @@ function coerceEventShape(event = {}) {
   next.description = cleanText(next.description || next.notes || `Public event listing from ${next.sourceLabel}.`);
   next.ticketUrl = next.ticketUrl || (next.ticket && next.ticket.link) || "";
   next.ticketStatus = next.ticketStatus || (next.ticket && next.ticket.soldOut === false ? "Ticket source lists availability; verify before going." : "");
+  const posterEvidenceLocalFiles = Array.isArray(next.posterEvidence?.localFiles) ? next.posterEvidence.localFiles : [];
+  const localPoster = posterEvidenceLocalFiles.find(file => String(file || "").startsWith("assets/posters/"));
+  if (localPoster) {
+    next.posterUrl = localPoster;
+  } else if (next.posterEvidence) {
+    delete next.posterEvidence;
+  }
   if (next.posterUrl && !String(next.posterUrl).startsWith("assets/posters/") && !String(next.posterUrl).includes("supabase.co")) {
     delete next.posterUrl;
-    if (next.posterEvidence) delete next.posterEvidence;
-  }
-  if (!next.posterUrl && next.posterEvidence) {
-    const localFiles = Array.isArray(next.posterEvidence.localFiles) ? next.posterEvidence.localFiles : [];
-    const localPoster = localFiles.find(file => String(file || "").startsWith("assets/posters/"));
-    if (localPoster) {
-      next.posterUrl = localPoster;
-    } else {
-      delete next.posterEvidence;
-    }
   }
   return next;
+}
+
+function isUnpublishedAgePlaceholder(value) {
+  const text = cleanText(value);
+  return !text || /^(?:check|tba|unknown|not listed)$/i.test(text) || /^(?:check|tba)\b/i.test(text);
+}
+
+function normalizeFutureAgeDefaults(events, auditDate) {
+  for (const event of events) {
+    if (String(event.sortDate || "") >= auditDate && isUnpublishedAgePlaceholder(event.age)) {
+      event.age = DEFAULT_UNPUBLISHED_AGE;
+    }
+  }
+  return events;
 }
 
 function preserveArchiveEvent(event = {}) {
@@ -2709,9 +2721,10 @@ function buildVenueCoverage(events, auditDate) {
     const profile = byVenue.get(key);
     profile.totalEvents += 1;
     profile.maxFitScore = Math.max(profile.maxFitScore, technoFitScore(event));
+    const isFuture = String(event.sortDate || "") >= auditDate;
     if (event.confidence === "High") profile.highConfidenceEvents += 1;
-    if (event.status === "watch" || event.confidence === "Watch") profile.watchEvents += 1;
-    if (String(event.sortDate || "") >= auditDate) {
+    if (isFuture && (event.status === "watch" || event.confidence === "Watch")) profile.watchEvents += 1;
+    if (isFuture) {
       profile.futureEvents += 1;
       if (!profile.nextEventDate || String(event.sortDate || "") < profile.nextEventDate) {
         profile.nextEventDate = event.sortDate;
@@ -2779,7 +2792,7 @@ function buildDjCoverage(events, auditDate, djItineraryStats = {}) {
       addToSet(profile.genres, event.genre);
       for (const url of eventUrls) profile.sources.add(url);
       if (event.confidence === "High") profile.highConfidenceAppearances += 1;
-      if (event.status === "watch" || event.confidence === "Watch") profile.watchAppearances += 1;
+      if (isFuture && (event.status === "watch" || event.confidence === "Watch")) profile.watchAppearances += 1;
       if (isFuture) {
         profile.futureEvents.add(event.id);
         if (eventSourceCount(event) <= 1) profile.singleSourceFutureAppearances += 1;
@@ -3690,11 +3703,12 @@ async function main() {
     .filter(event => isCalendarFit(event, technoArtistSignals))
     .map(event => normalizeEvent(event, sourceChecks));
   const events = applyCuratedEvents(mergeEvents(normalizedSeeds, normalizedScraped), curatedEvents, sourceChecks);
+  const verified = shanghaiDateString();
+  normalizeFutureAgeDefaults(events, verified);
 
   fs.mkdirSync(DATA_DIR, { recursive: true });
   const djItineraryStats = writeDjItineraryData(events);
   const generatedAt = new Date().toISOString();
-  const verified = shanghaiDateString();
   const promotionPlatformQueue = buildPromotionPlatformQueue(promotionPlatformNetwork, verified);
   const computerUseQueue = buildComputerUseQueue(verified, promotionPlatformQueue);
   const sourceReportsAll = [...sourceReports, ...computerUseSourceReports(computerUseQueue)];
